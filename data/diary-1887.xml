@@ -4,18 +4,36 @@
     <fileDesc>
       <titleStmt>
         <title>槻村清一郎日記 明治二十年（1887）</title>
-        <author>槻村清一郎（架空の人物）</author>
+        <author>槻村清一郎（つきむら せいいちろう・架空の人物）</author>
+        <editor>中村覚（教材作成）</editor>
       </titleStmt>
+      <editionStmt>
+        <edition>教材用現代語版（2026年7月）</edition>
+      </editionStmt>
       <publicationStmt>
-        <p>本コーパスは教材用に生成した架空の日記であり、登場する人物・出来事はすべて架空のものです。地名は実在のものを使用していますが、記述内容は史実ではありません。</p>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-11">2026年7月11日</date>
         <availability status="free">
           <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal — 権利者はいかなる権利も保持しません。自由に利用できます。</licence>
         </availability>
       </publicationStmt>
+      <notesStmt>
+        <note>本コーパスは教材用に生成した架空の日記であり、登場する人物・出来事はすべて架空のものです。地名は実在のものを使用していますが、記述内容は史実ではありません。</note>
+      </notesStmt>
       <sourceDesc>
-        <p>Born digital。Python スクリプト generate_tei_diary.py により固定シードで機械生成したものです。</p>
+        <p>Born digital。Python スクリプト generate_tei_diary.py により固定シードで機械生成したものです（原資料は存在しません）。</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語（本文は現代語、見出しは和暦表記）</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-10">教材用に初版を生成</change>
+      <change when="2026-07-11">本文を現代語化し、地名台帳（standOff/listPlace）を整備。teiHeader を拡充</change>
+    </revisionDesc>
   </teiHeader>
   <standOff>
     <listPlace>
