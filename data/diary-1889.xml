@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>槻村清一郎日記 明治二十二年（1889）</title>
+        <author>槻村清一郎（架空の人物）</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>本コーパスは教材用に生成した架空の日記であり、登場する人物・出来事はすべて架空のものです。地名は実在のものを使用していますが、記述内容は史実ではありません。</p>
+        <availability status="free">
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal — 権利者はいかなる権利も保持しません。自由に利用できます。</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital。Python スクリプト generate_tei_diary.py により固定シードで機械生成したものです。</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <standOff>
+    <listPlace>
+      <place xml:id="hongo">
+        <placeName>本郷</placeName>
+        <location><geo>35.7081 139.7620</geo></location>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.6918 139.7648</geo></location>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7141 139.7774</geo></location>
+      </place>
+      <place xml:id="yushima">
+        <placeName>湯島</placeName>
+        <location><geo>35.7074 139.7681</geo></location>
+      </place>
+      <place xml:id="asakusa">
+        <placeName>浅草</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+      </place>
+      <place xml:id="nihombashi">
+        <placeName>日本橋</placeName>
+        <location><geo>35.6840 139.7745</geo></location>
+      </place>
+      <place xml:id="ginza">
+        <placeName>銀座</placeName>
+        <location><geo>35.6717 139.7650</geo></location>
+      </place>
+      <place xml:id="ryogoku">
+        <placeName>両国</placeName>
+        <location><geo>35.6959 139.7935</geo></location>
+      </place>
+      <place xml:id="mukojima">
+        <placeName>向島</placeName>
+        <location><geo>35.7188 139.8060</geo></location>
+      </place>
+      <place xml:id="fukagawa">
+        <placeName>深川</placeName>
+        <location><geo>35.6726 139.7987</geo></location>
+      </place>
+      <place xml:id="oji">
+        <placeName>王子</placeName>
+        <location><geo>35.7528 139.7370</geo></location>
+      </place>
+      <place xml:id="yokohama">
+        <placeName>横浜</placeName>
+        <location><geo>35.4437 139.6380</geo></location>
+      </place>
+      <place xml:id="kamakura">
+        <placeName>鎌倉</placeName>
+        <location><geo>35.3192 139.5467</geo></location>
+      </place>
+      <place xml:id="nikko">
+        <placeName>日光</placeName>
+        <location><geo>36.7199 139.6982</geo></location>
+      </place>
+      <place xml:id="hakone">
+        <placeName>箱根</placeName>
+        <location><geo>35.2324 139.1069</geo></location>
+      </place>
+      <place xml:id="atami">
+        <placeName>熱海</placeName>
+        <location><geo>35.0960 139.0717</geo></location>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+      </place>
+      <place xml:id="nara">
+        <placeName>奈良</placeName>
+        <location><geo>34.6851 135.8048</geo></location>
+      </place>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="entry">
+        <head><date when="1889-01-02">明治二十二年一月二日</date></head>
+        <p>快晴なれど寒気甚だし。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<persName>綾瀬健吾</persName>来訪。近刊の雑誌のことなど語りて時を移す。妻と<placeName ref="#yushima">湯島</placeName>の社に初詣で。参道の人出おびただし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-03">明治二十二年一月三日</date></head>
+        <p>曇天。底冷えの一日なり。<placeName ref="#nihombashi">日本橋</placeName>の書肆に立ち寄り、『花月新誌』の旧号を求む。<persName>榊原杏平</persName>を<placeName ref="#yushima">湯島</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-04">明治二十二年一月四日</date></head>
+        <p>快晴なれど寒気甚だし。妻と共に<placeName ref="#hongo">本郷</placeName>に出づ。買物などして帰る。妻と<placeName ref="#yushima">湯島</placeName>の社に初詣で。参道の人出おびただし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-05">明治二十二年一月五日</date></head>
+        <p><persName>榊原杏平</persName>へ返書を認む。夜、『花月新誌』の旧号を読む。頁を措く能はず、気づけば夜半を過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-11">明治二十二年一月十一日</date></head>
+        <p>曇天。底冷えの一日なり。<persName>榊原杏平</persName>の病を見舞ふ。思ひのほか元気にて安堵す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-12">明治二十二年一月十二日</date></head>
+        <p>曇天。底冷えの一日なり。<persName>桐山千鶴</persName>より書簡届く。上京の日取りを告げ来る。<persName>峰岸竹雄</persName>を<placeName ref="#yushima">湯島</placeName>の寓居に訪ひ、俳諧の行方を論ず。妻と共に<placeName ref="#ueno">上野</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-20">明治二十二年一月二十日</date></head>
+        <p>曇天。底冷えの一日なり。<persName>波多野スエ</persName>を<placeName ref="#ueno">上野</placeName>の寓居に訪ひ、物価の高騰を論ず。妻と<placeName ref="#yushima">湯島</placeName>の社に初詣で。参道の人出おびただし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-21">明治二十二年一月二十一日</date></head>
+        <p>北風強く、火鉢を離れがたし。<placeName ref="#ginza">銀座</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-22">明治二十二年一月二十二日</date></head>
+        <p>快晴なれど寒気甚だし。亡父の命日。妻と墓参し、寺にて住職と語る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-23">明治二十二年一月二十三日</date></head>
+        <p>曇天。底冷えの一日なり。<persName>桐山千鶴</persName>を<placeName ref="#hongo">本郷</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。<placeName ref="#ueno">上野</placeName>の書肆に立ち寄り、地理書を求む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-26">明治二十二年一月二十六日</date></head>
+        <p>曇天。底冷えの一日なり。妻と共に<placeName ref="#hongo">本郷</placeName>に出づ。買物などして帰る。<placeName ref="#yushima">湯島</placeName>の書肆に立ち寄り、『花月新誌』の旧号を求む。妻と<placeName ref="#yushima">湯島</placeName>の社に初詣で。参道の人出おびただし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-28">明治二十二年一月二十八日</date></head>
+        <p>曇天。底冷えの一日なり。<placeName ref="#kanda">神田</placeName>の湯に浴す。身も心も軽くなる心地。<persName>桐山千鶴</persName>より書簡届く。転居の報なり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-01-29">明治二十二年一月二十九日</date></head>
+        <p>曇天。底冷えの一日なり。亡父の命日。妻と墓参し、寺にて住職と語る。妻と<placeName ref="#yushima">湯島</placeName>の社に初詣で。参道の人出おびただし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-02">明治二十二年二月二日</date></head>
+        <p>授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。寒稽古の声、朝の町に響く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-03">明治二十二年二月三日</date></head>
+        <p>晴。霜柱高し。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。<persName>綾瀬健吾</persName>を<placeName ref="#asakusa">浅草</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。雪解けの道悪しく、下駄の歯に泥のつくこと甚だし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-04">明治二十二年二月四日</date></head>
+        <p>晴。霜柱高し。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<placeName ref="#yushima">湯島</placeName>の梅、ちらほら咲き初むと聞く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-05">明治二十二年二月五日</date></head>
+        <p>朝より雪。庭一面白し。<placeName ref="#hongo">本郷</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。長崎に在る<persName>神代千代松</persName>より書簡届く。<placeName ref="#nagasaki">長崎</placeName>の港の賑はひなど、珍しきことのみ書き連ねてあり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-06">明治二十二年二月六日</date></head>
+        <p>朝より雪。庭一面白し。<persName>早瀬柳子</persName>と<placeName ref="#kanda">神田</placeName>の茶屋に憩ひ、四方山の話。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-11">明治二十二年二月十一日</date></head>
+        <p>北風強く、火鉢を離れがたし。夜、随筆「市中漫録」の稿を進める。筆渋りて捗らず。<placeName ref="#hongo">本郷</placeName>まで散歩。道すがら人力車の往来しきりなり。夜、地理書を読む。頁を措く能はず、気づけば夜半を過ぐ。<placeName ref="#yushima">湯島</placeName>の梅、ちらほら咲き初むと聞く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-13">明治二十二年二月十三日</date></head>
+        <p>朝より雪。庭一面白し。夜、洋書の文典を読む。頁を措く能はず、気づけば夜半を過ぐ。<persName>樋渡玄洋</persName>来訪。写生の法のことなど語りて時を移す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-14">明治二十二年二月十四日</date></head>
+        <p>北風強く、火鉢を離れがたし。月例の句会を我が家に開く。<persName>早瀬柳子</persName>の句、一同を感心せしむ。<persName>綾瀬健吾</persName>と<placeName ref="#ueno">上野</placeName>の茶屋に憩ひ、四方山の話。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。<placeName ref="#yushima">湯島</placeName>の梅、ちらほら咲き初むと聞く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-16">明治二十二年二月十六日</date></head>
+        <p>曇天。底冷えの一日なり。終日校務。会議長引きて、帰宅は日暮れなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-22">明治二十二年二月二十二日</date></head>
+        <p>晴。霜柱高し。<placeName ref="#ueno">上野</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-24">明治二十二年二月二十四日</date></head>
+        <p>北風強く、火鉢を離れがたし。<persName>早瀬柳子</persName>より雑誌の校正刷届く。灯下に朱を入れる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-25">明治二十二年二月二十五日</date></head>
+        <p><persName>氷川宗佑</persName>より書簡届く。上京の日取りを告げ来る。風邪の気味にて、終日臥床。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-27">明治二十二年二月二十七日</date></head>
+        <p>晴。霜柱高し。風邪の気味にて、終日臥床。<persName>早瀬柳子</persName>来訪。英学の流行のことなど語りて時を移す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-02-28">明治二十二年二月二十八日</date></head>
+        <p>夜、随筆「市中漫録」の稿を進める。筆渋りて捗らず。<persName>峰岸竹雄</persName>へ返書を認む。寒稽古の声、朝の町に響く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-02">明治二十二年三月二日</date></head>
+        <p>終日小雨。<placeName ref="#ueno">上野</placeName>まで散歩。道すがら新開の店の看板の奇抜なるに笑ふ。庭の椿、盛りを過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-05">明治二十二年三月五日</date></head>
+        <p>花曇りといふべき空なり。<persName>氷川宗佑</persName>より書簡届く。上京の日取りを告げ来る。<placeName ref="#kanda">神田</placeName>の書肆に立ち寄り、字書の類を求む。庭の椿、盛りを過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-06">明治二十二年三月六日</date></head>
+        <p><persName>綾瀬健吾</persName>より雑誌の校正刷届く。灯下に朱を入れる。深更まで机に向かふ。原稿の締切迫ればなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-07">明治二十二年三月七日</date></head>
+        <p><persName>氷川宗佑</persName>より書簡届く。句稿の添削を頼み来る。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。日ごとに日脚の伸びるを覚ゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-09">明治二十二年三月九日</date></head>
+        <p>花曇りといふべき空なり。<placeName ref="#asakusa">浅草</placeName>の書肆に立ち寄り、地理書を求む。<placeName ref="#yushima">湯島</placeName>の湯に浴す。身も心も軽くなる心地。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-15">明治二十二年三月十五日</date></head>
+        <p>夜、随筆「燈下小言」の稿を進める。筆渋りて捗らず。<persName>早瀬柳子</persName>を<placeName ref="#kanda">神田</placeName>の寓居に訪ひ、写生の法を論ず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-16">明治二十二年三月十六日</date></head>
+        <p>花曇りといふべき空なり。<persName>大郷りん</persName>を<placeName ref="#yushima">湯島</placeName>の寓居に訪ひ、英学の流行を論ず。庭の椿、盛りを過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-19">明治二十二年三月十九日</date></head>
+        <p>終日小雨。<placeName ref="#ueno">上野</placeName>まで散歩。道すがら露店の古本を漁る人の多きを見る。<placeName ref="#kanda">神田</placeName>の湯に浴す。身も心も軽くなる心地。<placeName ref="#ginza">銀座</placeName>の書肆に立ち寄り、『花月新誌』の旧号を求む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-22">明治二十二年三月二十二日</date></head>
+        <p>俸給を受く。帰途<placeName ref="#ueno">上野</placeName>にて筆墨を購ふ。妻と共に<placeName ref="#mukojima">向島</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-24">明治二十二年三月二十四日</date></head>
+        <p>終日小雨。妻と共に<placeName ref="#oji">王子</placeName>に出づ。買物などして帰る。日ごとに日脚の伸びるを覚ゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-27">明治二十二年三月二十七日</date></head>
+        <p><persName>氷川宗佑</persName>を<placeName ref="#kanda">神田</placeName>の寓居に訪ひ、英学の流行を論ず。<placeName ref="#ueno">上野</placeName>の湯に浴す。身も心も軽くなる心地。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-29">明治二十二年三月二十九日</date></head>
+        <p>うららかな春日和。夜、地理書を読む。頁を措く能はず、気づけば夜半を過ぐ。<persName>榊原杏平</persName>より書簡届く。新著の批評を請はるる由。彼岸につき、妻と墓参。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-03-31">明治二十二年三月三十一日</date></head>
+        <p>花曇りといふべき空なり。<placeName ref="#hongo">本郷</placeName>の書肆に立ち寄り、地理書を求む。日ごとに日脚の伸びるを覚ゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-02">明治二十二年四月二日</date></head>
+        <p>終日小雨。<placeName ref="#ginza">銀座</placeName>の湯に浴す。身も心も軽くなる心地。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-04">明治二十二年四月四日</date></head>
+        <p><persName>榊原杏平</persName>の病を見舞ふ。思ひのほか元気にて安堵す。<placeName ref="#kanda">神田</placeName>の書肆に立ち寄り、『西国立志編』を求む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-05">明治二十二年四月五日</date></head>
+        <p><persName>桐山千鶴</persName>来訪。学校の改革のことなど語りて時を移す。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。花の便りしきりにて、心落ち着かず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-06">明治二十二年四月六日</date></head>
+        <p>風あたたかし。<persName>榊原杏平</persName>と<placeName ref="#kanda">神田</placeName>の茶屋に憩ひ、四方山の話。<persName>氷川宗佑</persName>へ返書を認む。花の便りしきりにて、心落ち着かず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-07">明治二十二年四月七日</date></head>
+        <p>終日小雨。<placeName ref="#kanda">神田</placeName>の書肆に立ち寄り、『日本外史』を求む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-14">明治二十二年四月十四日</date></head>
+        <p>終日小雨。<persName>桐山千鶴</persName>来訪。郷里の様子のことなど語りて時を移す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-18">明治二十二年四月十八日</date></head>
+        <p>終日小雨。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<persName>氷川宗佑</persName>を<placeName ref="#kanda">神田</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。月例の句会を我が家に開く。<persName>榊原杏平</persName>の句、一同を感心せしむ。<placeName ref="#mukojima">向島</placeName>の堤を歩く。花吹雪の中を行くが如し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-20">明治二十二年四月二十日</date></head>
+        <p>風あたたかし。思ひ立ちて<placeName ref="#kamakura">鎌倉</placeName>へ小旅行。新橋停車場より汽車に乗る。車中、窓外の景色の移りゆくを飽かず眺む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-21">明治二十二年四月二十一日</date></head>
+        <p>風あたたかし。<placeName ref="#kamakura">鎌倉</placeName>泊。由比ヶ浜を歩く。波の音、耳を洗ふが如し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-22">明治二十二年四月二十二日</date></head>
+        <p><placeName ref="#yokohama">横浜</placeName>に移る。終日小雨。<placeName ref="#yokohama">横浜</placeName>泊。波止場に異国船の出入りを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-23">明治二十二年四月二十三日</date></head>
+        <p>花曇りといふべき空なり。帰途につく。車中にて旅の句を手帳に記す。夜更けて帰宅。わが家の灯のなつかしきこと。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-25">明治二十二年四月二十五日</date></head>
+        <p>風あたたかし。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<placeName ref="#yushima">湯島</placeName>の書肆に立ち寄り、洋書の文典を求む。終日校務。会議長引きて、帰宅は日暮れなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-27">明治二十二年四月二十七日</date></head>
+        <p>花曇りといふべき空なり。<placeName ref="#hongo">本郷</placeName>の湯に浴す。身も心も軽くなる心地。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-28">明治二十二年四月二十八日</date></head>
+        <p>花曇りといふべき空なり。妻と共に<placeName ref="#yushima">湯島</placeName>に出づ。買物などして帰る。夜、『花月新誌』の旧号を読む。頁を措く能はず、気づけば夜半を過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-29">明治二十二年四月二十九日</date></head>
+        <p>朝のうち雨、午後より晴る。俸給を受く。帰途<placeName ref="#nihombashi">日本橋</placeName>にて筆墨を購ふ。<placeName ref="#mukojima">向島</placeName>の堤を歩く。花吹雪の中を行くが如し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-04-30">明治二十二年四月三十日</date></head>
+        <p><persName>苅谷駒次郎</persName>を<placeName ref="#ueno">上野</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。<persName>榊原杏平</persName>へ返書を認む。終日家に在り。書を読み、庭の草を抜くなどして過ごす。<placeName ref="#mukojima">向島</placeName>の堤を歩く。花吹雪の中を行くが如し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-03">明治二十二年五月三日</date></head>
+        <p><placeName ref="#hongo">本郷</placeName>まで散歩。道すがら知らぬ横丁に迷ひ込みて存外の面白さ。妻と共に<placeName ref="#ueno">上野</placeName>に出づ。買物などして帰る。袷に着替ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-04">明治二十二年五月四日</date></head>
+        <p>終日小雨。俸給を受く。帰途<placeName ref="#kanda">神田</placeName>にて筆墨を購ふ。亡父の命日。妻と墓参し、寺にて住職と語る。端午の節句とて、町に幟の立つを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-08">明治二十二年五月八日</date></head>
+        <p>朝のうち雨、午後より晴る。月例の句会を我が家に開く。<persName>榊原杏平</persName>の句、一同を感心せしむ。夜、随筆「燈下小言」の稿を進める。筆渋りて捗らず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-10">明治二十二年五月十日</date></head>
+        <p><placeName ref="#ueno">上野</placeName>の湯に浴す。身も心も軽くなる心地。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-11">明治二十二年五月十一日</date></head>
+        <p>花曇りといふべき空なり。夜、『花月新誌』の旧号を読む。頁を措く能はず、気づけば夜半を過ぐ。深更まで机に向かふ。原稿の締切迫ればなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-12">明治二十二年五月十二日</date></head>
+        <p><placeName ref="#hongo">本郷</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。亡父の命日。妻と墓参し、寺にて住職と語る。端午の節句とて、町に幟の立つを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-13">明治二十二年五月十三日</date></head>
+        <p><placeName ref="#asakusa">浅草</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。端午の節句とて、町に幟の立つを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-15">明治二十二年五月十五日</date></head>
+        <p>花曇りといふべき空なり。<persName>苅谷駒次郎</persName>へ返書を認む。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<placeName ref="#mukojima">向島</placeName>の書肆に立ち寄り、『西国立志編』を求む。袷に着替ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-17">明治二十二年五月十七日</date></head>
+        <p>終日小雨。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-21">明治二十二年五月二十一日</date></head>
+        <p>花曇りといふべき空なり。<persName>榊原杏平</persName>へ返書を認む。妻と共に<placeName ref="#hongo">本郷</placeName>に出づ。買物などして帰る。新緑目にしみる頃となる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-22">明治二十二年五月二十二日</date></head>
+        <p>朝のうち雨、午後より晴る。俸給を受く。帰途<placeName ref="#hongo">本郷</placeName>にて筆墨を購ふ。妻と共に<placeName ref="#kanda">神田</placeName>に出づ。買物などして帰る。端午の節句とて、町に幟の立つを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-24">明治二十二年五月二十四日</date></head>
+        <p><persName>氷川宗佑</persName>を<placeName ref="#ueno">上野</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。<placeName ref="#hongo">本郷</placeName>の書肆に立ち寄り、洋書の文典を求む。夜、随筆「読書余滴」の稿を進める。筆渋りて捗らず。新緑目にしみる頃となる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-25">明治二十二年五月二十五日</date></head>
+        <p>月例の句会を我が家に開く。<persName>氷川宗佑</persName>の句、一同を感心せしむ。終日家に在り。書を読み、庭の草を抜くなどして過ごす。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-26">明治二十二年五月二十六日</date></head>
+        <p>風あたたかし。終日校務。会議長引きて、帰宅は日暮れなり。<placeName ref="#ginza">銀座</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。夜、随筆「読書余滴」の稿を進める。筆渋りて捗らず。袷に着替ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-05-29">明治二十二年五月二十九日</date></head>
+        <p>花曇りといふべき空なり。<placeName ref="#hongo">本郷</placeName>まで散歩。道すがら空の色ことのほか美し。端午の節句とて、町に幟の立つを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-01">明治二十二年六月一日</date></head>
+        <p>暑気甚だし。<persName>榊原杏平</persName>より書簡届く。新著の批評を請はるる由。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-02">明治二十二年六月二日</date></head>
+        <p>夕立ありて涼を得る。長崎に在る<persName>神代千代松</persName>より書簡届く。<placeName ref="#nagasaki">長崎</placeName>の港の賑はひなど、珍しきことのみ書き連ねてあり。<persName>桐山千鶴</persName>の病を見舞ふ。思ひのほか元気にて安堵す。梅雨の晴れ間を惜しみて庭に出る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-03">明治二十二年六月三日</date></head>
+        <p>曇りがちなれど風なく蒸す。終日校務。会議長引きて、帰宅は日暮れなり。紫陽花の色、日ごとに深し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-04">明治二十二年六月四日</date></head>
+        <p><persName>真壁蓮月</persName>、<persName>樋渡玄洋</persName>と三人にて句会。互選の結果に一同笑ふ。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-07">明治二十二年六月七日</date></head>
+        <p>夜、『日本外史』を読む。頁を措く能はず、気づけば夜半を過ぐ。深更まで机に向かふ。原稿の締切迫ればなり。入梅。連日の雨に飽く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-10">明治二十二年六月十日</date></head>
+        <p><persName>氷川宗佑</persName>を<placeName ref="#kanda">神田</placeName>の寓居に訪ひ、俳諧の行方を論ず。<persName>桐山千鶴</persName>来訪。写生の法のことなど語りて時を移す。<placeName ref="#ryogoku">両国</placeName>まで散歩。道すがら人力車の往来しきりなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-12">明治二十二年六月十二日</date></head>
+        <p><persName>氷川宗佑</persName>の病を見舞ふ。思ひのほか元気にて安堵す。<persName>榊原杏平</persName>、<persName>桐山千鶴</persName>と三人にて句会。互選の結果に一同笑ふ。妻と共に<placeName ref="#ueno">上野</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-13">明治二十二年六月十三日</date></head>
+        <p>蒸し暑く、夜も寝苦し。夜、随筆「燈下小言」の稿を進める。筆渋りて捗らず。夜、新刊の小説を読む。頁を措く能はず、気づけば夜半を過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-16">明治二十二年六月十六日</date></head>
+        <p>暑気甚だし。<persName>榊原杏平</persName>を<placeName ref="#ueno">上野</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。<persName>峰岸竹雄</persName>、<persName>桐山千鶴</persName>と三人にて句会。互選の結果に一同笑ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-18">明治二十二年六月十八日</date></head>
+        <p>曇りがちなれど風なく蒸す。深更まで机に向かふ。原稿の締切迫ればなり。<persName>氷川宗佑</persName>より雑誌の校正刷届く。灯下に朱を入れる。梅雨の晴れ間を惜しみて庭に出る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-24">明治二十二年六月二十四日</date></head>
+        <p>曇りがちなれど風なく蒸す。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。妻と共に<placeName ref="#hongo">本郷</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-06-25">明治二十二年六月二十五日</date></head>
+        <p><persName>早瀬柳子</persName>より雑誌の校正刷届く。灯下に朱を入れる。紫陽花の色、日ごとに深し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-02">明治二十二年七月二日</date></head>
+        <p>曇りがちなれど風なく蒸す。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<persName>榊原杏平</persName>へ返書を認む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-03">明治二十二年七月三日</date></head>
+        <p>朝より快晴。蝉の声しきりなり。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<persName>白鳥貞吉</persName>、<persName>榊原杏平</persName>と三人にて句会。互選の結果に一同笑ふ。土用に入り、暑さいよいよ厳し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-04">明治二十二年七月四日</date></head>
+        <p>曇りがちなれど風なく蒸す。<persName>榊原杏平</persName>来訪。写生の法のことなど語りて時を移す。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。土用に入り、暑さいよいよ厳し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-06">明治二十二年七月六日</date></head>
+        <p>終日校務。会議長引きて、帰宅は日暮れなり。深更まで机に向かふ。原稿の締切迫ればなり。朝顔の鉢を縁側に並べる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-07">明治二十二年七月七日</date></head>
+        <p><placeName ref="#kanda">神田</placeName>の書肆に立ち寄り、新刊の小説を求む。<placeName ref="#hongo">本郷</placeName>まで散歩。道すがら新開の店の看板の奇抜なるに笑ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-09">明治二十二年七月九日</date></head>
+        <p>学校にて授業。生徒の作文を閲するに、見どころある者二三あり。土用に入り、暑さいよいよ厳し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-11">明治二十二年七月十一日</date></head>
+        <p>蒸し暑く、夜も寝苦し。夜、随筆「燈下小言」の稿を進める。筆渋りて捗らず。<persName>早瀬柳子</persName>を<placeName ref="#ryogoku">両国</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。終日家に在り。書を読み、庭の草を抜くなどして過ごす。土用に入り、暑さいよいよ厳し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-13">明治二十二年七月十三日</date></head>
+        <p>夕立ありて涼を得る。<placeName ref="#hongo">本郷</placeName>まで散歩。道すがら空の色ことのほか美し。深更まで机に向かふ。原稿の締切迫ればなり。<persName>神代千代松</persName>来訪。英学の流行のことなど語りて時を移す。土用に入り、暑さいよいよ厳し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-16">明治二十二年七月十六日</date></head>
+        <p>朝より快晴。蝉の声しきりなり。<persName>早瀬柳子</persName>、<persName>綾瀬健吾</persName>と三人にて句会。互選の結果に一同笑ふ。<persName>桐山千鶴</persName>へ返書を認む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-20">明治二十二年七月二十日</date></head>
+        <p>夕立ありて涼を得る。<placeName ref="#ueno">上野</placeName>の湯に浴す。身も心も軽くなる心地。<placeName ref="#hongo">本郷</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。俸給を受く。帰途<placeName ref="#asakusa">浅草</placeName>にて筆墨を購ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-22">明治二十二年七月二十二日</date></head>
+        <p><persName>綾瀬健吾</persName>を<placeName ref="#ginza">銀座</placeName>の寓居に訪ひ、新聞の論説を論ず。終日家に在り。書を読み、庭の草を抜くなどして過ごす。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-23">明治二十二年七月二十三日</date></head>
+        <p><persName>榊原杏平</persName>より雑誌の校正刷届く。灯下に朱を入れる。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-25">明治二十二年七月二十五日</date></head>
+        <p>夕立ありて涼を得る。夜、随筆「湯島の四季」の稿を進める。筆渋りて捗らず。<persName>桐山千鶴</persName>の病を見舞ふ。思ひのほか元気にて安堵す。朝顔の鉢を縁側に並べる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-27">明治二十二年七月二十七日</date></head>
+        <p>蒸し暑く、夜も寝苦し。<persName>氷川宗佑</persName>へ返書を認む。夜、随筆「湯島の四季」の稿を進める。筆渋りて捗らず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-29">明治二十二年七月二十九日</date></head>
+        <p>曇りがちなれど風なく蒸す。<persName>早瀬柳子</persName>来訪。英学の流行のことなど語りて時を移す。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-30">明治二十二年七月三十日</date></head>
+        <p>蒸し暑く、夜も寝苦し。妻と共に<placeName ref="#ueno">上野</placeName>に出づ。買物などして帰る。終日校務。会議長引きて、帰宅は日暮れなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-07-31">明治二十二年七月三十一日</date></head>
+        <p><placeName ref="#nihombashi">日本橋</placeName>まで散歩。道すがら知らぬ横丁に迷ひ込みて存外の面白さ。夜、随筆「夏日雑記」の稿を進める。筆渋りて捗らず。<persName>峰岸竹雄</persName>を<placeName ref="#kanda">神田</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-01">明治二十二年八月一日</date></head>
+        <p>曇りがちなれど風なく蒸す。<persName>氷川宗佑</persName>の病を見舞ふ。思ひのほか元気にて安堵す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-06">明治二十二年八月六日</date></head>
+        <p>曇りがちなれど風なく蒸す。<persName>榊原杏平</persName>の病を見舞ふ。思ひのほか元気にて安堵す。夕暮、蜩の声を聞く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-12">明治二十二年八月十二日</date></head>
+        <p>蒸し暑く、夜も寝苦し。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。<persName>白鳥貞吉</persName>を<placeName ref="#kanda">神田</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。夜、随筆「読書余滴」の稿を進める。筆渋りて捗らず。西瓜を井戸に冷やして食ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-13">明治二十二年八月十三日</date></head>
+        <p>終日家に在り。書を読み、庭の草を抜くなどして過ごす。妻と共に<placeName ref="#hongo">本郷</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-20">明治二十二年八月二十日</date></head>
+        <p>俸給を受く。帰途<placeName ref="#yushima">湯島</placeName>にて筆墨を購ふ。長崎に在る<persName>神代千代松</persName>より書簡届く。<placeName ref="#nagasaki">長崎</placeName>の港の賑はひなど、珍しきことのみ書き連ねてあり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-23">明治二十二年八月二十三日</date></head>
+        <p>夕立ありて涼を得る。<persName>氷川宗佑</persName>より書簡届く。転居の報なり。夜、『日本外史』を読む。頁を措く能はず、気づけば夜半を過ぐ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-24">明治二十二年八月二十四日</date></head>
+        <p>蒸し暑く、夜も寝苦し。<persName>氷川宗佑</persName>の病を見舞ふ。思ひのほか元気にて安堵す。夜、随筆「燈下小言」の稿を進める。筆渋りて捗らず。<placeName ref="#hongo">本郷</placeName>の湯に浴す。身も心も軽くなる心地。西瓜を井戸に冷やして食ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-28">明治二十二年八月二十八日</date></head>
+        <p>暑気甚だし。<persName>白鳥貞吉</persName>と<placeName ref="#hongo">本郷</placeName>の茶屋に憩ひ、四方山の話。<persName>早瀬柳子</persName>の病を見舞ふ。思ひのほか元気にて安堵す。夕暮、蜩の声を聞く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-08-30">明治二十二年八月三十日</date></head>
+        <p><placeName ref="#hongo">本郷</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。終日家に在り。書を読み、庭の草を抜くなどして過ごす。<persName>榊原杏平</persName>を<placeName ref="#yushima">湯島</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-02">明治二十二年九月二日</date></head>
+        <p>終日雨。秋雨といふべし。<placeName ref="#kanda">神田</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<persName>榊原杏平</persName>より書簡届く。上京の日取りを告げ来る。虫の音、夜ごとに繁くなる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-05">明治二十二年九月五日</date></head>
+        <p>空高く澄みて気持よし。<persName>早瀬柳子</persName>と<placeName ref="#yushima">湯島</placeName>の茶屋に憩ひ、四方山の話。<placeName ref="#asakusa">浅草</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。俸給を受く。帰途<placeName ref="#mukojima">向島</placeName>にて筆墨を購ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-06">明治二十二年九月六日</date></head>
+        <p><persName>真壁蓮月</persName>より雑誌の校正刷届く。灯下に朱を入れる。野分一過、空高く澄む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-07">明治二十二年九月七日</date></head>
+        <p>終日雨。秋雨といふべし。<persName>榊原杏平</persName>より書簡届く。郷里の近況を報じ来る。<persName>白鳥貞吉</persName>、<persName>桐山千鶴</persName>と三人にて句会。互選の結果に一同笑ふ。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。野分一過、空高く澄む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-08">明治二十二年九月八日</date></head>
+        <p><persName>白鳥貞吉</persName>の病を見舞ふ。思ひのほか元気にて安堵す。<placeName ref="#kanda">神田</placeName>まで散歩。道すがら空の色ことのほか美し。<persName>峰岸竹雄</persName>を<placeName ref="#mukojima">向島</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-12">明治二十二年九月十二日</date></head>
+        <p>野分めいた風吹く。夜、随筆「湯島の四季」の稿を進める。筆渋りて捗らず。俸給を受く。帰途<placeName ref="#ginza">銀座</placeName>にて筆墨を購ふ。<persName>榊原杏平</persName>を<placeName ref="#hongo">本郷</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-14">明治二十二年九月十四日</date></head>
+        <p>朝夕はめっきり涼し。<placeName ref="#ueno">上野</placeName>まで散歩。道すがら新開の店の看板の奇抜なるに笑ふ。十五夜。妻と月を賞す。芒を活け、団子を供ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-20">明治二十二年九月二十日</date></head>
+        <p>朝夕はめっきり涼し。亡父の命日。妻と墓参し、寺にて住職と語る。虫の音、夜ごとに繁くなる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-21">明治二十二年九月二十一日</date></head>
+        <p><persName>大郷りん</persName>へ返書を認む。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。十五夜。妻と月を賞す。芒を活け、団子を供ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-22">明治二十二年九月二十二日</date></head>
+        <p>野分めいた風吹く。<persName>真壁蓮月</persName>より雑誌の校正刷届く。灯下に朱を入れる。<persName>桐山千鶴</persName>を<placeName ref="#kanda">神田</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。十五夜。妻と月を賞す。芒を活け、団子を供ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-23">明治二十二年九月二十三日</date></head>
+        <p>野分めいた風吹く。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-24">明治二十二年九月二十四日</date></head>
+        <p>朝夕はめっきり涼し。<placeName ref="#asakusa">浅草</placeName>まで散歩。道すがら露店の古本を漁る人の多きを見る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-25">明治二十二年九月二十五日</date></head>
+        <p>終日雨。秋雨といふべし。<placeName ref="#ginza">銀座</placeName>の書肆に立ち寄り、『日本外史』を求む。野分一過、空高く澄む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-27">明治二十二年九月二十七日</date></head>
+        <p>終日雨。秋雨といふべし。深更まで机に向かふ。原稿の締切迫ればなり。虫の音、夜ごとに繁くなる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-29">明治二十二年九月二十九日</date></head>
+        <p>月例の句会を我が家に開く。<persName>榊原杏平</persName>の句、一同を感心せしむ。終日家に在り。書を読み、庭の草を抜くなどして過ごす。<placeName ref="#ryogoku">両国</placeName>まで散歩。道すがら人力車の往来しきりなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-09-30">明治二十二年九月三十日</date></head>
+        <p>朝夕はめっきり涼し。俸給を受く。帰途<placeName ref="#kanda">神田</placeName>にて筆墨を購ふ。終日家に在り。書を読み、庭の草を抜くなどして過ごす。野分一過、空高く澄む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-01">明治二十二年十月一日</date></head>
+        <p><persName>桐山千鶴</persName>の病を見舞ふ。思ひのほか元気にて安堵す。夜、随筆「市中漫録」の稿を進める。筆渋りて捗らず。菊花の便り聞こゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-05">明治二十二年十月五日</date></head>
+        <p>野分めいた風吹く。<persName>峰岸竹雄</persName>より雑誌の校正刷届く。灯下に朱を入れる。深更まで机に向かふ。原稿の締切迫ればなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-07">明治二十二年十月七日</date></head>
+        <p>終日雨。秋雨といふべし。<placeName ref="#ueno">上野</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。<persName>氷川宗佑</persName>、<persName>大郷りん</persName>と三人にて句会。互選の結果に一同笑ふ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-08">明治二十二年十月八日</date></head>
+        <p>秋晴れの好日。夜、『花月新誌』の旧号を読む。頁を措く能はず、気づけば夜半を過ぐ。燈火親しむべき候となる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-10">明治二十二年十月十日</date></head>
+        <p><placeName ref="#nihombashi">日本橋</placeName>まで散歩。道すがら知らぬ横丁に迷ひ込みて存外の面白さ。<persName>桐山千鶴</persName>と<placeName ref="#kanda">神田</placeName>の茶屋に憩ひ、四方山の話。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-14">明治二十二年十月十四日</date></head>
+        <p>終日雨。秋雨といふべし。<persName>綾瀬健吾</persName>を<placeName ref="#hongo">本郷</placeName>の寓居に訪ひ、漢詩の平仄を論ず。燈火親しむべき候となる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-16">明治二十二年十月十六日</date></head>
+        <p>終日雨。秋雨といふべし。俸給を受く。帰途<placeName ref="#asakusa">浅草</placeName>にて筆墨を購ふ。秋晴れの好日続く。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-17">明治二十二年十月十七日</date></head>
+        <p>朝夕はめっきり涼し。<persName>氷川宗佑</persName>を<placeName ref="#ueno">上野</placeName>の寓居に訪ひ、俳諧の行方を論ず。<persName>榊原杏平</persName>を<placeName ref="#kanda">神田</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-18">明治二十二年十月十八日</date></head>
+        <p>終日雨。秋雨といふべし。終日家に在り。書を読み、庭の草を抜くなどして過ごす。<placeName ref="#hongo">本郷</placeName>の湯に浴す。身も心も軽くなる心地。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-19">明治二十二年十月十九日</date></head>
+        <p>終日雨。秋雨といふべし。俸給を受く。帰途<placeName ref="#kanda">神田</placeName>にて筆墨を購ふ。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-23">明治二十二年十月二十三日</date></head>
+        <p>空高く澄みて気持よし。<placeName ref="#kanda">神田</placeName>の湯に浴す。身も心も軽くなる心地。菊花の便り聞こゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-25">明治二十二年十月二十五日</date></head>
+        <p>終日雨。秋雨といふべし。<placeName ref="#ueno">上野</placeName>に古書の市が立つと聞き、出かける。掘出し物は無けれども目の保養なり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-26">明治二十二年十月二十六日</date></head>
+        <p>月例の句会を我が家に開く。<persName>桐山千鶴</persName>の句、一同を感心せしむ。<persName>氷川宗佑</persName>の病を見舞ふ。思ひのほか元気にて安堵す。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。燈火親しむべき候となる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-10-31">明治二十二年十月三十一日</date></head>
+        <p>野分めいた風吹く。月例の句会を我が家に開く。<persName>早瀬柳子</persName>の句、一同を感心せしむ。終日校務。会議長引きて、帰宅は日暮れなり。夜、随筆「市中漫録」の稿を進める。筆渋りて捗らず。燈火親しむべき候となる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-01">明治二十二年十一月一日</date></head>
+        <p>終日雨。秋雨といふべし。かねて約せし<placeName ref="#hakone">箱根</placeName>行きの旅に、<persName>榊原杏平</persName>と共に発つ。新橋停車場より汽車に乗る。車中、窓外の景色の移りゆくを飽かず眺む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-02">明治二十二年十一月二日</date></head>
+        <p>朝夕はめっきり涼し。<placeName ref="#hakone">箱根</placeName>泊。山道を駕籠にて上る。雲、脚下より湧く。夜、<persName>榊原杏平</persName>と宿にて酒を酌み、旅の話尽きず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-03">明治二十二年十一月三日</date></head>
+        <p>終日雨。秋雨といふべし。<placeName ref="#hakone">箱根</placeName>の宿にて目覚む。湯に浴すること三度。積年の疲れの抜くる心地。夜、<persName>榊原杏平</persName>と宿にて酒を酌み、旅の話尽きず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-04">明治二十二年十一月四日</date></head>
+        <p><placeName ref="#atami">熱海</placeName>に移る。空高く澄みて気持よし。<placeName ref="#atami">熱海</placeName>泊。海を眺めながら湯に浸る。命の洗濯とはこのことか。夜、<persName>榊原杏平</persName>と宿にて酒を酌み、旅の話尽きず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-05">明治二十二年十一月五日</date></head>
+        <p>野分めいた風吹く。帰途につく。車中にて旅の句を手帳に記す。夜更けて帰宅。わが家の灯のなつかしきこと。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-08">明治二十二年十一月八日</date></head>
+        <p>終日雨。秋雨といふべし。授業のかたはら、生徒に俳句を作らせてみる。存外の出来に驚く。<persName>桐山千鶴</persName>と<placeName ref="#fukagawa">深川</placeName>の茶屋に憩ひ、四方山の話。<placeName ref="#oji">王子</placeName>の滝野川に紅葉を見る。錦繍の谷といふべし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-10">明治二十二年十一月十日</date></head>
+        <p>野分めいた風吹く。<placeName ref="#ryogoku">両国</placeName>の書肆に立ち寄り、地理書を求む。<persName>桐山千鶴</persName>より雑誌の校正刷届く。灯下に朱を入れる。火鉢を出す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-12">明治二十二年十一月十二日</date></head>
+        <p>秋晴れの好日。<persName>真壁蓮月</persName>より雑誌の校正刷届く。灯下に朱を入れる。学校にて授業。生徒の作文を閲するに、見どころある者二三あり。木枯らしか、朝より風強し。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-13">明治二十二年十一月十三日</date></head>
+        <p>野分めいた風吹く。月例の句会を我が家に開く。<persName>榊原杏平</persName>の句、一同を感心せしむ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-14">明治二十二年十一月十四日</date></head>
+        <p><persName>波多野スエ</persName>来訪。郷里の様子のことなど語りて時を移す。火鉢を出す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-17">明治二十二年十一月十七日</date></head>
+        <p>俸給を受く。帰途<placeName ref="#hongo">本郷</placeName>にて筆墨を購ふ。<placeName ref="#oji">王子</placeName>の滝野川に紅葉を見る。錦繍の谷といふべし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-21">明治二十二年十一月二十一日</date></head>
+        <p>野分めいた風吹く。風邪の気味にて、終日臥床。<placeName ref="#oji">王子</placeName>の滝野川に紅葉を見る。錦繍の谷といふべし。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-22">明治二十二年十一月二十二日</date></head>
+        <p><placeName ref="#ueno">上野</placeName>まで散歩。道すがら学生の群れの元気なるを羨む。<persName>綾瀬健吾</persName>を<placeName ref="#ginza">銀座</placeName>の寓居に訪ひ、漢詩の平仄を論ず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-11-28">明治二十二年十一月二十八日</date></head>
+        <p>朝夕はめっきり涼し。<persName>榊原杏平</persName>へ返書を認む。月例の句会を我が家に開く。<persName>綾瀬健吾</persName>の句、一同を感心せしむ。火鉢を出す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-01">明治二十二年十二月一日</date></head>
+        <p><persName>氷川宗佑</persName>へ返書を認む。妻と共に<placeName ref="#ueno">上野</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-02">明治二十二年十二月二日</date></head>
+        <p>曇天。底冷えの一日なり。<persName>榊原杏平</persName>より雑誌の校正刷届く。灯下に朱を入れる。月例の句会を我が家に開く。<persName>桐山千鶴</persName>の句、一同を感心せしむ。餅搗きの音、町々に聞こゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-03">明治二十二年十二月三日</date></head>
+        <p>北風強く、火鉢を離れがたし。<placeName ref="#asakusa">浅草</placeName>の湯に浴す。身も心も軽くなる心地。深更まで机に向かふ。原稿の締切迫ればなり。餅搗きの音、町々に聞こゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-06">明治二十二年十二月六日</date></head>
+        <p><persName>白鳥貞吉</persName>の病を見舞ふ。思ひのほか元気にて安堵す。終日校務。会議長引きて、帰宅は日暮れなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-08">明治二十二年十二月八日</date></head>
+        <p>朝より雪。庭一面白し。終日家に在り。書を読み、庭の草を抜くなどして過ごす。<persName>峰岸竹雄</persName>より雑誌の校正刷届く。灯下に朱を入れる。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-09">明治二十二年十二月九日</date></head>
+        <p>北風強く、火鉢を離れがたし。<persName>氷川宗佑</persName>、<persName>早瀬柳子</persName>と三人にて句会。互選の結果に一同笑ふ。<persName>綾瀬健吾</persName>来訪。物価の高騰のことなど語りて時を移す。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-11">明治二十二年十二月十一日</date></head>
+        <p>学校にて授業。生徒の作文を閲するに、見どころある者二三あり。妻と共に<placeName ref="#kanda">神田</placeName>に出づ。買物などして帰る。この一年の日記を繰り返し読む。感慨少なからず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-13">明治二十二年十二月十三日</date></head>
+        <p>北風強く、火鉢を離れがたし。亡父の命日。妻と墓参し、寺にて住職と語る。<persName>波多野スエ</persName>へ返書を認む。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-14">明治二十二年十二月十四日</date></head>
+        <p>北風強く、火鉢を離れがたし。深更まで机に向かふ。原稿の締切迫ればなり。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-17">明治二十二年十二月十七日</date></head>
+        <p><placeName ref="#ueno">上野</placeName>の湯に浴す。身も心も軽くなる心地。この一年の日記を繰り返し読む。感慨少なからず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-18">明治二十二年十二月十八日</date></head>
+        <p>北風強く、火鉢を離れがたし。<persName>峰岸竹雄</persName>と<placeName ref="#yushima">湯島</placeName>の茶屋に憩ひ、四方山の話。妻と共に<placeName ref="#ryogoku">両国</placeName>に出づ。買物などして帰る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-20">明治二十二年十二月二十日</date></head>
+        <p>学校にて授業。生徒の作文を閲するに、見どころある者二三あり。<persName>真壁蓮月</persName>を<placeName ref="#nihombashi">日本橋</placeName>の寓居に訪ひ、近刊の雑誌を論ず。この一年の日記を繰り返し読む。感慨少なからず。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-22">明治二十二年十二月二十二日</date></head>
+        <p>快晴なれど寒気甚だし。<persName>氷川宗佑</persName>を<placeName ref="#kanda">神田</placeName>の寓居に訪ひ、漢詩の平仄を論ず。風邪の気味にて、終日臥床。<placeName ref="#ueno">上野</placeName>まで散歩。道すがら露店の古本を漁る人の多きを見る。餅搗きの音、町々に聞こゆ。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-27">明治二十二年十二月二十七日</date></head>
+        <p>終日校務。会議長引きて、帰宅は日暮れなり。<persName>榊原杏平</persName>より書簡届く。郷里の近況を報じ来る。</p>
+      </div>
+      <div type="entry">
+        <head><date when="1889-12-31">明治二十二年十二月三十一日</date></head>
+        <p><placeName ref="#hongo">本郷</placeName>の書肆に立ち寄り、洋書の文典を求む。<persName>氷川宗佑</persName>の病を見舞ふ。思ひのほか元気にて安堵す。<persName>榊原杏平</persName>を<placeName ref="#ueno">上野</placeName>に訪ふ。あいにく留守にて、名刺を置きて帰る。歳末の市の賑はひ、年ごとに増すやうなり。</p>
+      </div>
+    </body>
+  </text>
+</TEI>
