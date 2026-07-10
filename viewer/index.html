@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>TEI Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="CETEI.js"></script>
+</head>
+<body>
+  <div id="TEI">読み込み中…</div>
+  <script>
+    const ceteicean = new CETEI();
+    ceteicean.getHTML5("tei.xml", (data) => {
+      const container = document.getElementById("TEI");
+      container.innerHTML = "";
+      container.appendChild(data);
+    });
+  </script>
+</body>
+</html>

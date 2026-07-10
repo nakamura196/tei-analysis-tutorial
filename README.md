@@ -14,3 +14,10 @@
 
 - `tei_analysis.ipynb` — 分析ノートブック(人名・日付・地名の集計、グラフ、地図)
 - `data/` — 日記の TEI ファイル(明治20〜22年、CC0)
+- `viewer/` — TEI ビューアーづくりの開始ファイル(`tei.xml` / `index.html` / `style.css`)。教材『AIで作るTEIビューアー【Antigravity版】』で使います。次の URL で直接取得できます
+
+```text
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/tei.xml
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/index.html
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/style.css
+```

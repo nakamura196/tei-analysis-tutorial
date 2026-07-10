@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI/XML Encoding Guide / TEI/XMLエンコーディング入門</title>
+        <author>Sample</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Sample document for tutorial purposes.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Converted from a Word document.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="Title">TEI/XML Encoding Guide / TEI/XMLエンコーディング入門</titlePart>
+        </docTitle>
+      </titlePage>
+    </front>
+    <body>
+      <div>
+        <head>1. What is TEI? / TEIとは？</head>
+        <p xml:lang="en">The <hi rend="bold">Text Encoding Initiative (TEI)</hi> is an international standard for representing texts in digital form. It is widely used in libraries, museums, publishers, and academic research.<note place="foot" xml:id="ftn1" n="1">TEI was originally established in 1987 and has since become the de facto standard for text encoding in the digital humanities.</note></p>
+        <p xml:lang="ja"><hi rend="bold">TEI（Text Encoding Initiative）</hi>は、テキストをデジタル形式で表現するための国際標準です。図書館、博物館、出版社、学術研究で広く利用されています。</p>
+      </div>
+      <div>
+        <head>2. Basic Document Structure / 基本構造</head>
+        <p xml:lang="en">A TEI document consists of three main parts:</p>
+        <p xml:lang="ja">TEI文書は3つの主要部分から構成されます。</p>
+        <list rend="bulleted">
+          <item>TEI Header (teiHeader) — metadata / メタデータ</item>
+          <item>Front Matter (front) — title page, preface / 扉・序文</item>
+          <item>Body (body) — main content / 本文</item>
+        </list>
+        <div>
+          <head>2.1 The TEI Header / TEIヘッダー</head>
+          <p xml:lang="en">The <hi rend="italic">teiHeader</hi> contains bibliographic information, encoding description, and revision history. It is <hi rend="bold">required</hi> in every TEI document.<note place="foot" xml:id="ftn2" n="2">See the official TEI Guidelines at https://tei-c.org/guidelines/ for the complete specification.</note></p>
+          <p xml:lang="ja"><hi rend="italic">teiHeader</hi>には書誌情報、エンコーディングの説明、改訂履歴が含まれます。すべてのTEI文書で<hi rend="bold">必須</hi>の要素です。</p>
+        </div>
+      </div>
+      <div>
+        <head>3. Text Formatting / テキストの書式</head>
+        <p xml:lang="en">TEI supports various levels of text formatting:</p>
+        <list rend="numbered">
+          <item>Structural divisions / 構造的区分（章・節）</item>
+          <item>Paragraphs and line breaks / 段落と改行</item>
+          <item>Emphasis and highlighting / 強調とハイライト</item>
+          <item>Notes and annotations / 注釈とアノテーション</item>
+        </list>
+        <p xml:lang="en">For example, <hi rend="bold">bold text</hi> is encoded as &lt;hi rend="bold"&gt;, and <hi rend="italic">italic text</hi> as &lt;hi rend="italic"&gt;.</p>
+      </div>
+      <div>
+        <head>4. Advantages of TEI / TEIの利点</head>
+        <list rend="bulleted">
+          <item>Interoperability — texts can be shared across projects / 相互運用性</item>
+          <item>Longevity — XML-based format ensures long-term preservation / 長期保存性</item>
+          <item>Expressiveness — rich markup captures structure and semantics / 表現力</item>
+          <item>Community — large international community / コミュニティ</item>
+        </list>
+      </div>
+      <div>
+        <head>5. Conclusion / まとめ</head>
+        <p xml:lang="en">TEI is the de facto standard for digital text encoding in the humanities. By converting <hi rend="bold">Microsoft Word (.docx)</hi> documents into TEI/XML, researchers can ensure their texts are structured, searchable, and preserved for the long term.</p>
+        <p xml:lang="ja">TEIは人文学におけるデジタルテキストエンコーディングの事実上の標準です。<hi rend="bold">Microsoft Word (.docx)</hi> 文書をTEI/XMLに変換することで、テキストの構造化・検索可能性・長期保存を実現できます。</p>
+      </div>
+    </body>
+  </text>
+</TEI>
