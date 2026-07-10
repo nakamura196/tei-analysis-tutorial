@@ -1,0 +1,543 @@
+============================================================
+『AIで作るTEIビューアー【Antigravity版】 — 人文学研究者のための実践ガイド』
+コピー用テキスト集
+============================================================
+
+このファイルは、教材 PDF に出てくる「依頼文」や「コード」を、
+そのままコピーできる形でまとめたものです。
+
+PDF から直接コピーすると、行の折り返し位置に余分な改行が
+入ったり、前後の文字を巻き込んだりすることがあります。
+コピーは、PDF ではなくこのファイルから行ってください。
+
+各項目は「■ 第◯章 …」の見出しと点線で区切られています。
+点線の内側だけを選択してコピーしてください。
+
+============================================================
+● 第5章 エージェントにプロジェクトを準備させる
+============================================================
+
+■ 第5章 エージェントにプロジェクトを準備させる > ファイルのダウンロードをエージェントに依頼する (1)
+------------------------------------------------------------
+次の3つのURLからファイルをダウンロードして、作業フォルダの直下に、それぞれ tei.xml、index.html、style.css という名前で保存してください。内容は一切変更せず、そのまま保存してください。
+
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/tei.xml
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/index.html
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/style.css
+------------------------------------------------------------
+
+■ 第5章 エージェントにプロジェクトを準備させる > 1. tei.xml の内容 (2)
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI/XML Encoding Guide / TEI/XMLエンコーディング入門</title>
+        <author>Sample</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Sample document for tutorial purposes.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Converted from a Word document.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="Title">TEI/XML Encoding Guide / TEI/XMLエンコーディング入門</titlePart>
+        </docTitle>
+      </titlePage>
+    </front>
+    <body>
+      <div>
+        <head>1. What is TEI? / TEIとは？</head>
+        <p xml:lang="en">The <hi rend="bold">Text Encoding Initiative (TEI)</hi> is an international standard for representing texts in digital form. It is widely used in libraries, museums, publishers, and academic research.<note place="foot" xml:id="ftn1" n="1">TEI was originally established in 1987 and has since become the de facto standard for text encoding in the digital humanities.</note></p>
+        <p xml:lang="ja"><hi rend="bold">TEI（Text Encoding Initiative）</hi>は、テキストをデジタル形式で表現するための国際標準です。図書館、博物館、出版社、学術研究で広く利用されています。</p>
+      </div>
+      <div>
+        <head>2. Basic Document Structure / 基本構造</head>
+        <p xml:lang="en">A TEI document consists of three main parts:</p>
+        <p xml:lang="ja">TEI文書は3つの主要部分から構成されます。</p>
+        <list rend="bulleted">
+          <item>TEI Header (teiHeader) — metadata / メタデータ</item>
+          <item>Front Matter (front) — title page, preface / 扉・序文</item>
+          <item>Body (body) — main content / 本文</item>
+        </list>
+        <div>
+          <head>2.1 The TEI Header / TEIヘッダー</head>
+          <p xml:lang="en">The <hi rend="italic">teiHeader</hi> contains bibliographic information, encoding description, and revision history. It is <hi rend="bold">required</hi> in every TEI document.<note place="foot" xml:id="ftn2" n="2">See the official TEI Guidelines at https://tei-c.org/guidelines/ for the complete specification.</note></p>
+          <p xml:lang="ja"><hi rend="italic">teiHeader</hi>には書誌情報、エンコーディングの説明、改訂履歴が含まれます。すべてのTEI文書で<hi rend="bold">必須</hi>の要素です。</p>
+        </div>
+      </div>
+      <div>
+        <head>3. Text Formatting / テキストの書式</head>
+        <p xml:lang="en">TEI supports various levels of text formatting:</p>
+        <list rend="numbered">
+          <item>Structural divisions / 構造的区分（章・節）</item>
+          <item>Paragraphs and line breaks / 段落と改行</item>
+          <item>Emphasis and highlighting / 強調とハイライト</item>
+          <item>Notes and annotations / 注釈とアノテーション</item>
+        </list>
+        <p xml:lang="en">For example, <hi rend="bold">bold text</hi> is encoded as &lt;hi rend="bold"&gt;, and <hi rend="italic">italic text</hi> as &lt;hi rend="italic"&gt;.</p>
+      </div>
+      <div>
+        <head>4. Advantages of TEI / TEIの利点</head>
+        <list rend="bulleted">
+          <item>Interoperability — texts can be shared across projects / 相互運用性</item>
+          <item>Longevity — XML-based format ensures long-term preservation / 長期保存性</item>
+          <item>Expressiveness — rich markup captures structure and semantics / 表現力</item>
+          <item>Community — large international community / コミュニティ</item>
+        </list>
+      </div>
+      <div>
+        <head>5. Conclusion / まとめ</head>
+        <p xml:lang="en">TEI is the de facto standard for digital text encoding in the humanities. By converting <hi rend="bold">Microsoft Word (.docx)</hi> documents into TEI/XML, researchers can ensure their texts are structured, searchable, and preserved for the long term.</p>
+        <p xml:lang="ja">TEIは人文学におけるデジタルテキストエンコーディングの事実上の標準です。<hi rend="bold">Microsoft Word (.docx)</hi> 文書をTEI/XMLに変換することで、テキストの構造化・検索可能性・長期保存を実現できます。</p>
+      </div>
+    </body>
+  </text>
+</TEI>
+------------------------------------------------------------
+
+■ 第5章 エージェントにプロジェクトを準備させる > 2. index.html の内容 (3)
+------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>TEI Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="CETEI.js"></script>
+</head>
+<body>
+  <div id="TEI">読み込み中…</div>
+  <script>
+    const ceteicean = new CETEI();
+    ceteicean.getHTML5("tei.xml", (data) => {
+      const container = document.getElementById("TEI");
+      container.innerHTML = "";
+      container.appendChild(data);
+    });
+  </script>
+</body>
+</html>
+------------------------------------------------------------
+
+■ 第5章 エージェントにプロジェクトを準備させる > 3. style.css の内容 (4)
+------------------------------------------------------------
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  line-height: 1.7;
+  color: #2a2a2a;
+}
+
+header h1 {
+  font-size: 1.6em;
+  border-bottom: 3px solid #345;
+  padding-bottom: 0.3em;
+  margin-bottom: 1.5em;
+}
+
+section h2 {
+  color: #234;
+  margin-top: 2.2em;
+  font-size: 1.3em;
+}
+
+section h3 {
+  color: #456;
+  margin-top: 1.5em;
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+ul, ol {
+  margin: 0.8em 0;
+  padding-left: 2em;
+}
+
+.note-ref {
+  color: #c33;
+  font-size: 0.85em;
+  cursor: help;
+}
+
+
+/* ===== CETEIcean (tei-* カスタム要素) 用のスタイル ===== */
+
+/* teiHeader(書誌情報)は画面には表示しない */
+tei-teiheader {
+  display: none;
+}
+
+tei-div, tei-front, tei-body, tei-text, tei-titlepage {
+  display: block;
+}
+
+tei-titlepart {
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-bottom: 3px solid #345;
+  padding-bottom: 0.3em;
+  margin-bottom: 1.5em;
+}
+
+tei-head {
+  display: block;
+  color: #234;
+  margin-top: 2.2em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+tei-div tei-div tei-head {
+  color: #456;
+  margin-top: 1.5em;
+  font-size: 1.1em;
+}
+
+tei-p {
+  display: block;
+  margin: 0.8em 0;
+}
+
+tei-list {
+  display: block;
+  margin: 0.8em 0;
+  padding-left: 2em;
+}
+
+tei-item {
+  display: list-item;
+  list-style-type: disc;
+}
+
+tei-hi[rend="bold"], tei-hi[rend="strong"] {
+  font-weight: bold;
+}
+
+tei-hi[rend="italic"] {
+  font-style: italic;
+}
+
+tei-note {
+  color: #c33;
+  font-size: 0.85em;
+  cursor: help;
+  vertical-align: super;
+}
+------------------------------------------------------------
+
+■ 第5章 エージェントにプロジェクトを準備させる > CETEI.js をエージェントにダウンロードさせる (5)
+------------------------------------------------------------
+https://cdn.jsdelivr.net/npm/CETEIcean@1.9.5/dist/CETEI.js をダウンロードして、作業フォルダの直下に CETEI.js という名前で保存してください。
+------------------------------------------------------------
+
+■ 第5章 エージェントにプロジェクトを準備させる > 確認 (6)
+------------------------------------------------------------
+TEI-VIEWER
+├── CETEI.js
+├── index.html
+├── style.css
+└── tei.xml
+------------------------------------------------------------
+
+
+============================================================
+● 第6章 プレビューとエージェントによる検証
+============================================================
+
+■ 第6章 プレビューとエージェントによる検証 > 検証を依頼する (1)
+------------------------------------------------------------
+@index.html を Live Server で表示し、ブラウザでそのページを開いてスクリーンショットを撮ってください。
+タイトル見出し、節見出し、英日の段落、箇条書き、注（赤い小さな文字）が表示されているかを確認し、結果を教えてください。
+------------------------------------------------------------
+
+
+============================================================
+● 第7章 エージェントに見た目を調整させる
+============================================================
+
+■ 第7章 エージェントに見た目を調整させる > 編集対象をエージェントに伝える (1)
+------------------------------------------------------------
+@style.css
+------------------------------------------------------------
+
+■ 第7章 エージェントに見た目を調整させる > 最初の依頼: 見出しの色を変える (2)
+------------------------------------------------------------
+@style.css の見出し色（タイトルと節見出し）を、もう少し落ち着いた濃いグリーンに変更してください。
+変更後、ブラウザで表示してスクリーンショットを撮り、結果を見せてください。
+------------------------------------------------------------
+
+■ 第7章 エージェントに見た目を調整させる > 最初の依頼: 見出しの色を変える (3)
+------------------------------------------------------------
+もう少し明るい緑にしてください。森の若葉のような色合いで。
+------------------------------------------------------------
+
+■ 第7章 エージェントに見た目を調整させる > 二つ目の依頼: 段落の余白を広げる (4)
+------------------------------------------------------------
+@style.css 段落間の余白を今より少し広げ、本文がゆったり読めるようにしてください。
+------------------------------------------------------------
+
+■ 第7章 エージェントに見た目を調整させる > index.html への依頼: タイトル下に説明文を追加する (5)
+------------------------------------------------------------
+@index.html タイトルの直下に、「TEI/XML 入門ガイドのデモページ」という説明文を追加してください。灰色で控えめに表示されるようにしてください。
+------------------------------------------------------------
+
+
+============================================================
+● 第8章 機能を追加する
+============================================================
+
+■ 第8章 機能を追加する > 依頼文 (1)
+------------------------------------------------------------
+@index.html ページ上部に目次を自動生成する機能を追加してください。
+- tei.xml の読み込みが終わったあとに、すべての節見出し（tei-head 要素）を集めて、ulのリストにする
+- 各項目はクリックで該当の見出しまでスクロールする内部リンクにする
+- 目次は本文の先頭（タイトルの直後）に配置する
+- 目次のスタイルは @style.css 側に追加する
+------------------------------------------------------------
+
+■ 第8章 機能を追加する > うまく動かない場合の追加依頼 (2)
+------------------------------------------------------------
+階層がフラットになってしまっています。<div> の中の <div> にある <head> は、目次でも子項目として字下げ表示してください。
+------------------------------------------------------------
+
+■ 第8章 機能を追加する > 依頼文 (3)
+------------------------------------------------------------
+@style.css @index.html 注（tei-note）の表示を改善してください。
+- 現在は注の本文が、段落中にそのまま赤い小さな文字で表示されている
+- これを、本文中には注番号（n 属性の値）だけを [1] のような上付き表示にする
+- 注番号にマウスを乗せたときだけ、注の本文がツールチップとして現れるようにする
+- ツールチップは薄い黄色の背景、黒文字、角丸、影付きで、注番号の上にふわっと現れるようにする
+------------------------------------------------------------
+
+■ 第8章 機能を追加する > 注意点 (4)
+------------------------------------------------------------
+ツールチップが画面右端で見切れることがあります。位置を自動調整するか、最大幅を制限して折り返すようにしてください。
+------------------------------------------------------------
+
+■ 第8章 機能を追加する > 依頼文 (5)
+------------------------------------------------------------
+@index.html @style.css 英語と日本語を切り替えるボタンをページ右上に追加してください。
+- サンプル TEI の各 <p> には xml:lang="en" または xml:lang="ja" が付与されていて、CETEIcean が変換した tei-p 要素には lang 属性として引き継がれています
+- 切り替えはボタンクリックで JavaScript が body にクラスを付け替える方式にしてください
+- クラス名は body に対して lang-en、lang-ja、lang-both の3種
+- ボタンは「EN」「JA」「両方」の3つ
+- 必要なら新しいファイル app.js を作成してください
+------------------------------------------------------------
+
+■ 第8章 機能を追加する > 機能追加で詰まったときに有効な依頼 (6)
+------------------------------------------------------------
+今の @index.html では、目次がどう生成されているか説明してください。
+------------------------------------------------------------
+
+■ 第8章 機能を追加する > 機能追加で詰まったときに有効な依頼 (7)
+------------------------------------------------------------
+目次に「2.1 The TEI Header」が表示されません。階層構造の <div> 内の <head> を拾えていないように見えます。
+------------------------------------------------------------
+
+
+============================================================
+● 第9章 インターネットで公開する
+============================================================
+
+■ 第9章 インターネットで公開する > GitHub CLI のインストール (1)
+------------------------------------------------------------
+GitHub CLI（gh コマンド）を私のマシンにインストールしてください。私の OS は macOS（または Windows）です。
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > GitHub にログインする (2)
+------------------------------------------------------------
+gh コマンドで GitHub にログインしてください。対話的な質問はできるだけスキップし、ブラウザ認証で完了する設定でお願いします。
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > GitHub にログインする (3)
+------------------------------------------------------------
+gh auth login --hostname github.com --git-protocol https --web
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > エージェントに公開作業を任せる (4)
+------------------------------------------------------------
+このフォルダ（tei-viewer）を GitHub の新しい公開リポジトリとして作成し、ファイル一式を push して、GitHub Pages を有効化してください。リポジトリ名は tei-viewer です。必要なコマンドはあなた自身が Antigravity のターミナルで順に実行してください。エラーが出たら原因を判断して修正したうえで進めてください。
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > エージェントに公開作業を任せる (5)
+------------------------------------------------------------
+git status                              # 状態確認
+git init -b main                        # まだ git 管理されていなければ
+git add -A                              # ファイルをすべて追加
+git commit -m "Initial commit"          # 最初の版として記録
+gh repo create tei-viewer --public --source=. --remote=origin --push
+REPO=$(gh repo view --json nameWithOwner -q .nameWithOwner)
+gh api "repos/${REPO}/pages" -X POST -f 'source[branch]=main' -f 'source[path]=/'
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > エージェントに公開作業を任せる (6)
+------------------------------------------------------------
+https://(ユーザー名).github.io/tei-viewer/
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > .gitignore について (7)
+------------------------------------------------------------
+（公開の依頼文に続けて）あわせて、.DS_Store やエディタの設定フォルダを除外する .gitignore も作成してください。
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > コピペで段階的に進めたい場合（フォールバック） (8)
+------------------------------------------------------------
+このフォルダ（tei-viewer）を GitHub の新しい公開リポジトリとして作成し、ファイル一式を push して、GitHub Pages を有効化したいです。Antigravity のターミナルで順に実行すべきコマンドを教えてください。私の OS は macOS（または Windows）です。
+------------------------------------------------------------
+
+■ 第9章 インターネットで公開する > コピペで段階的に進めたい場合（フォールバック） (9)
+------------------------------------------------------------
+Antigravity のターミナルで次のコマンドを実行したらエラーになりました。私の OS は macOS（または Windows）です。原因と、修正したコマンドを教えてください。
+
+(コピーした内容をここに貼り付け)
+------------------------------------------------------------
+
+
+============================================================
+● 第10章 困ったときと、次のステップ
+============================================================
+
+■ 第10章 困ったときと、次のステップ > ブラウザの問題 (1)
+------------------------------------------------------------
+ブラウザのコンソールに次のエラーが出ています。修正してください。
+@index.html
+
+(エラーメッセージをここに貼り付け)
+------------------------------------------------------------
+
+■ 第10章 困ったときと、次のステップ > Antigravity の問題 (2)
+------------------------------------------------------------
+@style.css のみを編集対象としてください。他のファイルは触らないでください。
+(本来の依頼内容)
+------------------------------------------------------------
+
+■ 第10章 困ったときと、次のステップ > Antigravity の問題 (3)
+------------------------------------------------------------
+本書は CETEIcean（CETEI.js）で表示する構成です。XSLT や xml-stylesheet は使わず、index.html と style.css の範囲で対応してください。
+------------------------------------------------------------
+
+■ 第10章 困ったときと、次のステップ > 公式の最新例を見せてから依頼する (4)
+------------------------------------------------------------
+CETEIcean の公式トップページ https://teic.github.io/CETEIcean/ を参照したうえで、@tei.xml を表示する @index.html を作ってください。
+
+- script タグの src と、初期化のコードは、公式トップページの「Getting Started」と同じものを使ってください
+- URL や関数名を推測で書かないでください
+- 公式に書かれていない関数や設定が必要になる場合は、その理由を先に説明してください
+------------------------------------------------------------
+
+■ 第10章 困ったときと、次のステップ > 失敗の段階が画面に出る仕掛けを入れる (5)
+------------------------------------------------------------
+@index.html の表示処理に、次の3つの状態でそれぞれ違う日本語メッセージを画面に表示する仕組みを入れてください。
+
+1. ライブラリ本体が読み込めなかった場合（「ライブラリを読み込めませんでした。CDN を確認してください。」）
+2. tei.xml が読み込めなかった場合（「tei.xml を読み込めませんでした。ファイルの場所を確認してください。」）
+3. 変換処理中にエラーが出た場合（「変換中にエラーが発生しました: 」のあとにエラーメッセージ）
+
+通常どおり表示できたときは、これらのメッセージは出さないでください。
+------------------------------------------------------------
+
+■ 第10章 困ったときと、次のステップ > 自分の TEI ファイルへの差し替え (6)
+------------------------------------------------------------
+@style.css @tei.xml 私の TEI には <persName> や <placeName> といった要素が含まれていますが、現在は特別な表示をしていません。変換後の tei-persname や tei-placename の要素を、色分けして表示できるようにしてください。
+------------------------------------------------------------
+
+
+============================================================
+● 第11章 '付録: XSLTという選択肢 — 旧方式と、XSLTが現役の場所'
+============================================================
+
+■ 第11章 '付録: XSLTという選択肢 — 旧方式と、XSLTが現役の場所' > 旧方式の仕組み (1)
+------------------------------------------------------------
+<?xml-stylesheet type="text/xsl" href="tei.xsl"?>
+------------------------------------------------------------
+
+■ 第11章 '付録: XSLTという選択肢 — 旧方式と、XSLTが現役の場所' > tei.xsl の全文 (2)
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns="http://www.w3.org/1999/xhtml"
+  exclude-result-prefixes="tei">
+
+  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+
+  <xsl:template match="/">
+    <html lang="ja">
+      <head>
+        <meta charset="UTF-8"/>
+        <title><xsl:value-of select="//tei:titlePart"/></title>
+        <link rel="stylesheet" href="style.css"/>
+      </head>
+      <body>
+        <header>
+          <h1><xsl:value-of select="//tei:titlePart"/></h1>
+        </header>
+        <main>
+          <xsl:apply-templates select="//tei:body"/>
+        </main>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="tei:body">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="tei:div">
+    <section><xsl:apply-templates/></section>
+  </xsl:template>
+
+  <xsl:template match="tei:div/tei:div/tei:head">
+    <h3><xsl:apply-templates/></h3>
+  </xsl:template>
+
+  <xsl:template match="tei:head">
+    <h2><xsl:apply-templates/></h2>
+  </xsl:template>
+
+  <xsl:template match="tei:p">
+    <p><xsl:apply-templates/></p>
+  </xsl:template>
+
+  <xsl:template match="tei:hi[@rend='bold']">
+    <strong><xsl:apply-templates/></strong>
+  </xsl:template>
+
+  <xsl:template match="tei:hi[@rend='italic']">
+    <em><xsl:apply-templates/></em>
+  </xsl:template>
+
+  <xsl:template match="tei:list[@rend='bulleted']">
+    <ul><xsl:apply-templates/></ul>
+  </xsl:template>
+
+  <xsl:template match="tei:list[@rend='numbered']">
+    <ol><xsl:apply-templates/></ol>
+  </xsl:template>
+
+  <xsl:template match="tei:item">
+    <li><xsl:apply-templates/></li>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@place='foot']">
+    <sup class="note-ref" title="{normalize-space(.)}">[<xsl:value-of select="@n"/>]</sup>
+  </xsl:template>
+
+</xsl:stylesheet>
+------------------------------------------------------------
+

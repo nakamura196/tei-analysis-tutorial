@@ -21,3 +21,7 @@ https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/
 https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/index.html
 https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/viewer/style.css
 ```
+
+## コピー用テキスト
+
+教材 PDF の依頼文・コードは、[prompts フォルダ](prompts/)の各ファイルからコピーできます(PDF から直接コピーすると改行が乱れることがあるため)。
