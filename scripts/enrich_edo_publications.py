@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""data/edo_publications.csv に派生列を加えた edo_publications_enriched.csv を生成する。
+"""data/edo_publications.csv から前処理済みの派生 CSV を生成する。
+
+- edo_publications_enriched.csv        全627件に派生列2つを追加
+- edo_publications_enriched_known.csv  上記から出版地「不明」の行を除いたもの
 
 追加する列:
 - genre_norm: NDC 分類記号の先頭一致による統一ジャンル。genre_major の
@@ -54,7 +57,6 @@ def period(year: str) -> str:
 def main() -> None:
     data_dir = Path(__file__).resolve().parent.parent / "data"
     src = data_dir / "edo_publications.csv"
-    dst = data_dir / "edo_publications_enriched.csv"
 
     with src.open(encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
@@ -65,18 +67,23 @@ def main() -> None:
             row["period"] = period(row["year"])
             rows.append(row)
 
-    with dst.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-
-    print(f"{dst.name}: {len(rows)} rows, {len(fieldnames)} cols")
-    for col in ("genre_norm", "period"):
-        counts = {}
-        for row in rows:
-            counts[row[col]] = counts.get(row[col], 0) + 1
-        joined = " / ".join(f"{k} {v}" for k, v in sorted(counts.items(), key=lambda x: -x[1]))
-        print(f"  {col}: {joined}")
+    outputs = [
+        ("edo_publications_enriched.csv", rows),
+        ("edo_publications_enriched_known.csv",
+         [r for r in rows if r["location"] != "不明"]),
+    ]
+    for name, subset in outputs:
+        with (data_dir / name).open("w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(subset)
+        print(f"{name}: {len(subset)} rows, {len(fieldnames)} cols")
+        for col in ("genre_norm", "period"):
+            counts = {}
+            for row in subset:
+                counts[row[col]] = counts.get(row[col], 0) + 1
+            joined = " / ".join(f"{k} {v}" for k, v in sorted(counts.items(), key=lambda x: -x[1]))
+            print(f"  {col}: {joined}")
 
 
 if __name__ == "__main__":
