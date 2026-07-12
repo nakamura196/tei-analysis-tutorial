@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>形</title>
+        <author>菊池寛</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>形</title><author>菊池寛</author>
+          <note>青空文庫。底本：「恩讐の彼方に」角川文庫、角川書店。1957（昭和32）年4月30日初版発行。1989（平成元）年6月20日改版31版発行。入力：菅野朋子。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000083/card4306.html">https://www.aozora.gr.jp/cards/000083/card4306.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="nakamura-shinbei">
+        <persName>中村新兵衛</persName>
+        <note>摂津半国の主・松山新介の侍大将。猩々緋の服折と唐冠纓金の兜で『鎗中村』と呼ばれた大豪の士。主人公</note>
+      </person>
+      <person xml:id="matsuyama-shinsuke">
+        <persName>松山新介</persName>
+        <note>摂津半国の主。新兵衛の主君。史実の松山重治(新介)がモデルとされる</note>
+      </person>
+      <person xml:id="tsutsui-junkei">
+        <persName>筒井順慶</persName>
+        <note>大和の戦国武将(1549-1584)。作中では松山勢と鎬をけずる敵将</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="settsu">
+        <placeName>摂津</placeName>
+        <location><geo>34.75 135.42</geo></location>
+        <note>旧国名。現在の大阪府北中部・兵庫県南東部・概値</note>
+      </place>
+      <place xml:id="kinai">
+        <placeName>畿内</placeName>
+        <location><geo>34.7 135.7</geo></location>
+        <note>山城・大和・河内・和泉・摂津の五か国からなる地域・概値。本文の表記は「五畿内」「畿内」</note>
+      </place>
+      <place xml:id="chugoku">
+        <placeName>中国</placeName>
+        <location><geo>34.8 132.8</geo></location>
+        <note>中国地方(山陽・山陰)・概値。「五畿内中国に聞こえた」の文脈から日本の地域名</note>
+      </place>
+      <place xml:id="yamato">
+        <placeName>大和</placeName>
+        <location><geo>34.6851 135.8329</geo></location>
+        <note>旧国名。現在の奈良県・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>形</head>
+        <p><placeName ref="#settsu">摂津</placeName>半国の主であった<persName ref="#matsuyama-shinsuke">松山新介</persName>の侍大将<persName ref="#nakamura-shinbei">中村新兵衛</persName>は、<placeName ref="#kinai">五畿内</placeName><placeName ref="#chugoku">中国</placeName>に聞こえた大豪の士であった。</p>
+        <p>そのころ、<placeName ref="#kinai">畿内</placeName>を分領していた筒井、松永、荒木、和田、別所など大名小名の手の者で、『<persName ref="#nakamura-shinbei">鎗中村</persName>』を知らぬ者は、おそらく一人もなかっただろう。それほど、<persName ref="#nakamura-shinbei">新兵衛</persName>はその扱き出す三間柄の大身の鎗の鋒先で、さきがけ殿の功名を重ねていた。そのうえ、彼の武者姿は戦場において、水ぎわ立ったはなやかさを示していた。火のような猩々緋の服折を着て、唐冠纓金の兜をかぶった彼の姿は、敵味方の間に、輝くばかりのあざやかさをもっていた。</p>
+        <p>「ああ猩々緋よ唐冠よ」と敵の雑兵は、<persName ref="#nakamura-shinbei">新兵衛</persName>の鎗先を避けた。味方がくずれ立ったとき、激浪の中に立つ巌のように敵勢をささえている猩々緋の姿は、どれほど味方にとってたのもしいものであったかわからなかった。また嵐のように敵陣に殺到するとき、その先頭に輝いている唐冠の兜は、敵にとってどれほどの脅威であるかわからなかった。</p>
+        <p>こうして<persName ref="#nakamura-shinbei">鎗中村</persName>の猩々緋と唐冠の兜は、戦場の華であり敵に対する脅威であり味方にとっては信頼の的であった。</p>
+        <p>「<persName ref="#nakamura-shinbei">新兵衛</persName>どの、おり入ってお願いがある」と元服してからまだ間もないらしい美男の士は、<persName ref="#nakamura-shinbei">新兵衛</persName>の前に手を突いた。</p>
+        <p>「なにごとじゃ、そなたとわれらの間に、さような辞儀はいらぬぞ。望みというを、はよういうて見い」と育ぐくむような慈顔をもって、<persName ref="#nakamura-shinbei">新兵衛</persName>は相手を見た。</p>
+        <p>その若い士は、<persName ref="#nakamura-shinbei">新兵衛</persName>の主君<persName ref="#matsuyama-shinsuke">松山新介</persName>の側腹の子であった。そして、幼少のころから、<persName ref="#nakamura-shinbei">新兵衛</persName>が守り役として、わが子のようにいつくしみ育ててきたのであった。</p>
+        <p>「ほかのことでもおりない。明日はわれらの初陣じゃほどに、なんぞはなばなしい手柄をしてみたい。ついてはお身さまの猩々緋と唐冠の兜を借してたもらぬか。あの服折と兜とを着て、敵の眼をおどろかしてみとうござる」</p>
+        <p>「ハハハハ念もないことじゃ」<persName ref="#nakamura-shinbei">新兵衛</persName>は高らかに笑った。<persName ref="#nakamura-shinbei">新兵衛</persName>は、相手の子供らしい無邪気な功名心をこころよく受け入れることができた。</p>
+        <p>「が、申しておく、あの服折や兜は、申さば<persName ref="#nakamura-shinbei">中村新兵衛</persName>の形じゃわ。そなたが、あの品々を身に着けるうえは、われらほどの肝魂を持たいではかなわぬことぞ」と言いながら、<persName ref="#nakamura-shinbei">新兵衛</persName>はまた高らかに笑った。</p>
+        <p>そのあくる日、<placeName ref="#settsu">摂津</placeName>平野の一角で、松山勢は、<placeName ref="#yamato">大和</placeName>の<persName ref="#tsutsui-junkei">筒井順慶</persName>の兵と鎬をけずった。戦いが始まる前いつものように猩々緋の武者が唐冠の兜を朝日に輝かしながら、敵勢を尻目にかけて、大きく輪乗りをしたかと思うと、駒の頭を立てなおして、一気に敵陣に乗り入った。</p>
+        <p>吹き分けられるように、敵陣の一角が乱れたところを、猩々緋の武者は鎗をつけたかと思うと、早くも三、四人の端武者を、突き伏せて、またゆうゆうと味方の陣へ引き返した。</p>
+        <p>その日に限って、黒皮縅の冑を着て、南蛮鉄の兜をかぶっていた<persName ref="#nakamura-shinbei">中村新兵衛</persName>は、会心の微笑を含みながら、猩々緋の武者のはなばなしい武者ぶりをながめていた。そして自分の形だけすらこれほどの力をもっているということに、かなり大きい誇りを感じていた。</p>
+        <p>彼は二番鎗は、自分が合わそうと思ったので、駒を乗り出すと、一文字に敵陣に殺到した。</p>
+        <p>猩々緋の武者の前には、戦わずして浮き足立った敵陣が、<persName ref="#nakamura-shinbei">中村新兵衛</persName>の前には、ビクともしなかった。そのうえに彼らは猩々緋の『<persName ref="#nakamura-shinbei">鎗中村</persName>』に突きみだされたうらみを、この黒皮縅の武者の上に復讐せんとして、たけり立っていた。</p>
+        <p><persName ref="#nakamura-shinbei">新兵衛</persName>は、いつもとは、勝手が違っていることに気がついた。いつもは虎に向かっている羊のような怖気が、敵にあった。彼らは狼狽え血迷うところを突き伏せるのに、なんの雑作もなかった。今日は、彼らは戦いをする時のように、勇み立っていた。どの雑兵もどの雑兵も十二分の力を<persName ref="#nakamura-shinbei">新兵衛</persName>に対し発揮した。二、三人突き伏せることさえ容易ではなかった。敵の鎗の鋒先が、ともすれば身をかすった。<persName ref="#nakamura-shinbei">新兵衛</persName>は必死の力を振るった。平素の二倍もの力さえ振るった。が、彼はともすれば突き負けそうになった。手軽に兜や猩々緋を借したことを、後悔するような感じが頭の中をかすめたときであった。敵の突き出した鎗が、縅の裏をかいて彼の脾腹を貫いていた。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

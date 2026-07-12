@@ -1,0 +1,16 @@
+{
+  "slug": "sakuranomori",
+  "url": "https://www.aozora.gr.jp/cards/001095/files/42618_21410.html",
+  "card": "https://www.aozora.gr.jp/cards/001095/card42618.html",
+  "title": "桜の森の満開の下",
+  "author": "坂口安吾",
+  "fixes": {},
+  "persons": {},
+  "places": {
+    "suzuka-toge": ["鈴鹿峠", 34.8942, 136.3372, "三重県亀山市と滋賀県甲賀市の境にある旧東海道の峠（標高357m）。物語の舞台となる桜の森の所在地。作中の「鈴鹿の山」も同所を指すとみなして統合。概値"]
+  },
+  "tags": [
+    ["place", "鈴鹿峠", "suzuka-toge"],
+    ["place", "鈴鹿", "suzuka-toge"]
+  ]
+}

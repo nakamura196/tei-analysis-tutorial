@@ -1,0 +1,20 @@
+{
+  "slug": "hitofusanobudo",
+  "url": "https://www.aozora.gr.jp/cards/000025/files/211_20472.html",
+  "card": "https://www.aozora.gr.jp/cards/000025/card211.html",
+  "title": "一房の葡萄",
+  "author": "有島武郎",
+  "fixes": {},
+  "persons": {
+    "jim": ["ジム", "「僕」の学校友達の西洋人の少年。二つほど年上で身長が高い。舶来の上等の絵具を持っており、「僕」に盗まれるが、最後に和解して握手する"]
+  },
+  "places": {
+    "yokohama": ["横浜", 35.4437, 139.638, "神奈川県横浜市・概値"],
+    "yamanote": ["山の手", 35.439, 139.648, "横浜の山の手。西洋人居留地だった現・横浜市中区山手町付近・概値"]
+  },
+  "tags": [
+    ["pers", "ジム", "jim"],
+    ["place", "横浜", "yokohama"],
+    ["place", "山の手", "yamanote"]
+  ]
+}

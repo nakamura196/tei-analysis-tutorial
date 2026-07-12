@@ -1,0 +1,31 @@
+{
+  "slug": "katachi",
+  "url": "https://www.aozora.gr.jp/cards/000083/files/4306_19830.html",
+  "card": "https://www.aozora.gr.jp/cards/000083/card4306.html",
+  "title": "形",
+  "author": "菊池寛",
+  "fixes": {},
+  "persons": {
+    "nakamura-shinbei": ["中村新兵衛", "摂津半国の主・松山新介の侍大将。猩々緋の服折と唐冠纓金の兜で『鎗中村』と呼ばれた大豪の士。主人公"],
+    "matsuyama-shinsuke": ["松山新介", "摂津半国の主。新兵衛の主君。史実の松山重治(新介)がモデルとされる"],
+    "tsutsui-junkei": ["筒井順慶", "大和の戦国武将(1549-1584)。作中では松山勢と鎬をけずる敵将"]
+  },
+  "places": {
+    "settsu": ["摂津", 34.75, 135.42, "旧国名。現在の大阪府北中部・兵庫県南東部・概値"],
+    "kinai": ["畿内", 34.7, 135.7, "山城・大和・河内・和泉・摂津の五か国からなる地域・概値。本文の表記は「五畿内」「畿内」"],
+    "chugoku": ["中国", 34.8, 132.8, "中国地方(山陽・山陰)・概値。「五畿内中国に聞こえた」の文脈から日本の地域名"],
+    "yamato": ["大和", 34.6851, 135.8329, "旧国名。現在の奈良県・概値"]
+  },
+  "tags": [
+    ["pers", "中村新兵衛", "nakamura-shinbei"],
+    ["pers", "新兵衛", "nakamura-shinbei"],
+    ["pers", "鎗中村", "nakamura-shinbei"],
+    ["pers", "松山新介", "matsuyama-shinsuke"],
+    ["pers", "筒井順慶", "tsutsui-junkei"],
+    ["place", "摂津", "settsu"],
+    ["place", "五畿内", "kinai"],
+    ["place", "畿内", "kinai"],
+    ["place", "中国", "chugoku"],
+    ["place", "大和", "yamato"]
+  ]
+}

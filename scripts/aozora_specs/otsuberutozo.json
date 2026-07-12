@@ -1,0 +1,17 @@
+{
+  "slug": "otsuberutozo",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/466_42316.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card466.html",
+  "title": "オツベルと象",
+  "author": "宮沢賢治",
+  "fixes": {},
+  "persons": {
+    "otsubel": ["オツベル", "稲扱器械を六台据えた仕事場を営む地主。白象を働かせて搾取し、最後は象の群れに潰される"],
+    "santa-maria": ["サンタマリア", "聖母マリア。白象が月を見ながら繰り返し呼びかける宗教的存在(実在の信仰対象への言及)"]
+  },
+  "places": {},
+  "tags": [
+    ["pers", "オツベル", "otsubel"],
+    ["pers", "サンタマリア", "santa-maria"]
+  ]
+}

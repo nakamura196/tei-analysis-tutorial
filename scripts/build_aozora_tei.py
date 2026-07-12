@@ -486,6 +486,8 @@ def build_header(spec, bib_lines):
 
 
 def build_standoff(spec):
+    if not spec["persons"] and not spec["places"]:
+        return ""  # 空の standOff は TEI で不可
     lines = ["  <standOff>"]
     if spec["persons"]:
         lines.append("    <listPerson>")
@@ -532,7 +534,11 @@ def build_work(slug):
         body_lines.append("      </div>")
     body_lines += ["    </body>", "  </text>", "</TEI>"]
 
-    xml = "\n".join([build_header(spec, bib_lines), build_standoff(spec)] + body_lines) + "\n"
+    parts = [build_header(spec, bib_lines)]
+    standoff = build_standoff(spec)
+    if standoff:
+        parts.append(standoff)
+    xml = "\n".join(parts + body_lines) + "\n"
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / f"{slug}.xml"
     out.write_text(xml, encoding="utf-8")

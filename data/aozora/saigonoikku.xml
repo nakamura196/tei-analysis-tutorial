@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>最後の一句</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>最後の一句</title><author>森鴎外</author>
+          <note>青空文庫。底本：「山椒大夫・高瀬舟」岩波文庫。1938（昭和13）年7月1日第1刷発行。1967（昭和42）年6月16日第34刷改版発行。1998（平成10）年4月6日第77刷発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card45244.html">https://www.aozora.gr.jp/cards/000129/card45244.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="tarobe">
+        <persName>桂屋太郎兵衛</persName>
+        <note>大阪の居船頭「桂屋」の主人。難船した積み荷の残り米の代金を受け取ったことで死罪を宣告される</note>
+      </person>
+      <person xml:id="ichi">
+        <persName>いち</persName>
+        <note>桂屋の長女、十六歳。父の命乞いの願書を書いて西奉行所に出す。「最後の一句」を言う</note>
+      </person>
+      <person xml:id="matsu">
+        <persName>まつ</persName>
+        <note>桂屋の二女、十四歳。いちに従って願い出る</note>
+      </person>
+      <person xml:id="toku">
+        <persName>とく</persName>
+        <note>桂屋の三女、八歳</note>
+      </person>
+      <person xml:id="chotaro">
+        <persName>長太郎</persName>
+        <note>平野町の里方から赤子のうちにもらい受けた養子、十二歳。自分だけの願書を持参する</note>
+      </person>
+      <person xml:id="hatsugoro">
+        <persName>初五郎</persName>
+        <note>桂屋の末子、六歳。「死ぬるのか」と問われてかぶりを振る</note>
+      </person>
+      <person xml:id="shinshichi">
+        <persName>新七</persName>
+        <note>太郎兵衛の船の沖船頭。残り米の代金の着服を持ちかけ、発覚後に逃走する</note>
+      </person>
+      <person xml:id="sasa">
+        <persName>佐佐又四郎成意</persName>
+        <note>大坂西町奉行。新参。いちを取り調べる</note>
+      </person>
+      <person xml:id="inagaki">
+        <persName>稲垣淡路守種信</persName>
+        <note>大坂東町奉行</note>
+      </person>
+      <person xml:id="ota">
+        <persName>太田備中守資晴</persName>
+        <note>大坂城代</note>
+      </person>
+      <person xml:id="higashiyama-tenno">
+        <persName>東山天皇</persName>
+        <note>第113代天皇(1675–1710)。貞享四年に大嘗会の盛儀を行なった</note>
+      </person>
+      <person xml:id="sakuramachi-tenno">
+        <persName>桜町天皇</persName>
+        <note>第115代天皇(1720–1750)。元文三年十一月十九日に大嘗会を再興した</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kizugawaguchi">
+        <placeName>木津川口</placeName>
+        <location><geo>34.66 135.46</geo></location>
+        <note>江戸期の木津川河口の晒し場付近(現大阪市大正区周辺)・概値</note>
+      </place>
+      <place xml:id="minamigumi">
+        <placeName>南組</placeName>
+        <location><geo>34.674 135.501</geo></location>
+        <note>大坂三郷の南組(現中央区南部一帯)・概値</note>
+      </place>
+      <place xml:id="horiebashi">
+        <placeName>堀江橋</placeName>
+        <location><geo>34.6733 135.4967</geo></location>
+        <note>堀江川(埋立済)に架かっていた橋。現大阪市西区堀江付近・概値</note>
+      </place>
+      <place xml:id="hiranomachi">
+        <placeName>平野町</placeName>
+        <location><geo>34.6873 135.5054</geo></location>
+        <note>大坂船場の平野町(現中央区平野町)・概値</note>
+      </place>
+      <place xml:id="dewa">
+        <placeName>出羽国</placeName>
+        <location><geo>39.2 140.0</geo></location>
+        <note>旧国名(秋田・山形県)・概値</note>
+      </place>
+      <place xml:id="akita">
+        <placeName>秋田</placeName>
+        <location><geo>39.72 140.1026</geo></location>
+        <note>現秋田市・概値</note>
+      </place>
+      <place xml:id="nishi-bugyosho">
+        <placeName>西町奉行所</placeName>
+        <location><geo>34.685 135.513</geo></location>
+        <note>大坂西町奉行所。本町橋東詰(現中央区本町橋、マイドームおおさか付近)・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.685 139.7527</geo></location>
+        <note>現東京・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tenma">
+        <placeName>天満</placeName>
+        <location><geo>34.698 135.512</geo></location>
+        <note>大坂三郷の天満組(現北区天満周辺)・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>最後の一句</head>
+        <p><date when="1738">元文三年十一月二十三日</date>の事である。<placeName ref="#osaka">大阪</placeName>で、船乗り業<persName ref="#tarobe">桂屋太郎兵衛</persName>というものを、<placeName ref="#kizugawaguchi">木津川口</placeName>で三日間さらした上、斬罪に処すると、高札に書いて立てられた。市中至る所<persName ref="#tarobe">太郎兵衛</persName>のうわさばかりしている中に、それを最も痛切に感ぜなくてはならぬ<persName ref="#tarobe">太郎兵衛</persName>の家族は、<placeName ref="#minamigumi">南組</placeName><placeName ref="#horiebashi">堀江橋</placeName>際の家で、もう丸二年ほど、ほとんど全く世間との交通を絶って暮らしているのである。</p>
+        <p>この予期すべき出来事を、桂屋へ知らせに来たのは、ほど遠からぬ<placeName ref="#hiranomachi">平野町</placeName>に住んでいる<persName ref="#tarobe">太郎兵衛</persName>が女房の母であった。この白髪頭の媼の事を桂屋では<placeName ref="#hiranomachi">平野町</placeName>のおばあ様と言っている。おばあ様とは、桂屋にいる五人の子供がいつもいい物をおみやげに持って来てくれる祖母に名づけた名で、それを主人も呼び、女房も呼ぶようになったのである。</p>
+        <p>おばあ様を慕って、おばあ様にあまえ、おばあ様にねだる孫が、桂屋に五人いる。その四人は、おばあ様が十七になった娘を桂屋へよめによこしてから、ことし十六年目になるまでの間に生まれたのである。長女<persName ref="#ichi">いち</persName>が十六歳、二女<persName ref="#matsu">まつ</persName>が十四歳になる。その次に<persName ref="#tarobe">太郎兵衛</persName>が娘をよめに出す覚悟で、<placeName ref="#hiranomachi">平野町</placeName>の女房の里方から、赤子のうちにもらい受けた、<persName ref="#chotaro">長太郎</persName>という十二歳の男子がある。その次にまた生まれた<persName ref="#tarobe">太郎兵衛</persName>の娘は、<persName ref="#toku">とく</persName>と言って八歳になる。最後に<persName ref="#tarobe">太郎兵衛</persName>の始めて設けた男子の<persName ref="#hatsugoro">初五郎</persName>がいて、これが六歳になる。</p>
+        <p><placeName ref="#hiranomachi">平野町</placeName>の里方は有福なので、おばあ様のおみやげはいつも孫たちに満足を与えていた。それが一昨年<persName ref="#tarobe">太郎兵衛</persName>の入牢してからは、とかく孫たちに失望を起こさせるようになった。おばあ様が暮らし向きの用に立つ物をおもに持って来るので、おもちゃやお菓子は少なくなったからである。</p>
+        <p>しかしこれから生い立ってゆく子供の元気は盛んなもので、ただおばあ様のおみやげが乏しくなったばかりでなく、おっか様のふきげんになったのにも、ほどなく慣れて、格別しおれた様子もなく、相変わらず小さい争闘と小さい和睦との刻々に交代する、にぎやかな生活を続けている。そして「遠い遠い所へ行って帰らぬ」と言い聞かされた父の代わりに、このおばあ様の来るのを歓迎している。</p>
+        <p>これに反して、厄難に会ってからこのかた、いつも同じような悔恨と悲痛とのほかに、何物をも心に受け入れることのできなくなった<persName ref="#tarobe">太郎兵衛</persName>の女房は、手厚くみついでくれ、親切に慰めてくれる母に対しても、ろくろく感謝の意をも表することがない。母がいつ来ても、同じような繰り言を聞かせて帰すのである。</p>
+        <p>厄難に会った初めには、女房はただ茫然と目をみはっていて、食事も子供のために、器械的に世話をするだけで、自分はほとんど何も食わずに、しきりに咽がかわくと言っては、湯を少しずつ飲んでいた。夜は疲れてぐっすり寝たかと思うと、たびたび目をさましてため息をつく。それから起きて、夜なかに裁縫などをすることがある。そんな時は、そばに母の寝ていぬのに気がついて、最初に四歳になる<persName ref="#hatsugoro">初五郎</persName>が目をさます。次いで六歳になる<persName ref="#toku">とく</persName>が目をさます。女房は子供に呼ばれて床にはいって、子供が安心して寝つくと、また大きく目をあいてため息をついているのであった。それから二三日たって、ようよう泊まりがけに来ている母に繰り言を言って泣くことができるようになった。それから丸二年ほどの間、女房は器械的に立ち働いては、同じように繰り言を言い、同じように泣いているのである。</p>
+        <p>高札の立った日には、午過ぎに母が来て、女房に<persName ref="#tarobe">太郎兵衛</persName>の運命のきまったことを話した。しかし女房は、母の恐れたほど驚きもせず、聞いてしまって、またいつもと同じ繰り言を言って泣いた。母はあまり手ごたえのないのを物足らなく思うくらいであった。この時長女の<persName ref="#ichi">いち</persName>は、襖の陰に立って、おばあ様の話を聞いていた。</p>
+        <p>――――――――――――――――</p>
+        <p>桂屋にかぶさって来た厄難というのはこうである。主人<persName ref="#tarobe">太郎兵衛</persName>は船乗りとは言っても、自分が船に乗るのではない。北国通いの船を持っていて、それに<persName ref="#shinshichi">新七</persName>という男を乗せて、運送の業を営んでいる。<placeName ref="#osaka">大阪</placeName>ではこの<persName ref="#tarobe">太郎兵衛</persName>のような男を居船頭と言っていた。居船頭の<persName ref="#tarobe">太郎兵衛</persName>が沖船頭の<persName ref="#shinshichi">新七</persName>を使っているのである。</p>
+        <p><date when="1736">元文元年</date>の秋、<persName ref="#shinshichi">新七</persName>の船は、<placeName ref="#dewa">出羽国</placeName><placeName ref="#akita">秋田</placeName>から米を積んで出帆した。その船が不幸にも航海中に風波の難に会って、半難船の姿になって、横み荷の半分以上を流失した。<persName ref="#shinshichi">新七</persName>は残った米を売って金にして、<placeName ref="#osaka">大阪</placeName>へ持って帰った。</p>
+        <p>さて<persName ref="#shinshichi">新七</persName>が<persName ref="#tarobe">太郎兵衛</persName>に言うには、難船をしたことは港々で知っている。残った積み荷を売ったこの金は、もう米主に返すには及ぶまい。これはあとの船をしたてる費用に当てようじゃないかと言った。</p>
+        <p><persName ref="#tarobe">太郎兵衛</persName>はそれまで正直に営業していたのだが、営業上に大きい損失を見た直後に、現金を目の前に並べられたので、ふと良心の鏡が曇って、その金を受け取ってしまった。</p>
+        <p>すると、<placeName ref="#akita">秋田</placeName>の米主のほうでは、難船の知らせを得たのちに、残り荷のあったことやら、それを買った人のあったことやらを、人づてに聞いて、わざわざ人を調べに出した。そして<persName ref="#shinshichi">新七</persName>の手から<persName ref="#tarobe">太郎兵衛</persName>に渡った金高までを探り出してしまった。</p>
+        <p>米主は<placeName ref="#osaka">大阪</placeName>へ出て訴えた。<persName ref="#shinshichi">新七</persName>は逃走した。そこで<persName ref="#tarobe">太郎兵衛</persName>が入牢してとうとう死罪に行なわれることになったのである。</p>
+        <p>――――――――――――――――</p>
+        <p><placeName ref="#hiranomachi">平野町</placeName>のおばあ様が来て、恐ろしい話をするのを姉娘の<persName ref="#ichi">いち</persName>が立ち聞きをした晩の事である。桂屋の女房はいつも繰り言を言って泣いたあとで出る疲れが出て、ぐっすり寝入った。女房の両わきには、<persName ref="#hatsugoro">初五郎</persName>と、<persName ref="#toku">とく</persName>とが寝ている。<persName ref="#hatsugoro">初五郎</persName>の隣には<persName ref="#chotaro">長太郎</persName>が寝ている。<persName ref="#toku">とく</persName>の隣に<persName ref="#matsu">まつ</persName>、それに並んで<persName ref="#ichi">いち</persName>が寝ている。</p>
+        <p>しばらくたって、<persName ref="#ichi">いち</persName>が何やらふとんの中でひとり言を言った。「ああ、そうしよう。きっとできるわ」と、言ったようである。</p>
+        <p><persName ref="#matsu">まつ</persName>がそれを聞きつけた。そして「ねえさん、まだ寝ないの」と言った。</p>
+        <p>「大きい声をおしでない。わたしいい事を考えたから。」<persName ref="#ichi">いち</persName>はまずこう言って妹を制しておいて、それから小声でこういう事をささやいた。おとっさんはあさって殺されるのである。自分はそれを殺させぬようにすることができると思う。どうするかというと、願書というものを書いてお奉行様に出すのである。しかしただ殺さないでおいてくださいと言ったって、それではきかれない。おとっさんを助けて、その代わりにわたくしども子供を殺してくださいと言って頼むのである。それをお奉行様がきいてくだすって、おとっさんが助かれば、それでいい。子供はほんとうに皆殺されるやら、わたしが殺されて、小さいものは助かるやら、それはわからない。ただお願いをする時、<persName ref="#chotaro">長太郎</persName>だけはいっしょに殺してくださらないように書いておく。あれはおとっさんのほんとうの子でないから、死ななくてもいい。それにおとっさんがこの家の跡を取らせようと言っていらっしゃったのだから、殺されないほうがいいのである。<persName ref="#ichi">いち</persName>は妹にそれだけの事を話した。</p>
+        <p>「でもこわいわねえ」と、<persName ref="#matsu">まつ</persName>が言った。</p>
+        <p>「そんなら、おとっさんが助けてもらいたくないの。」</p>
+        <p>「それは助けてもらいたいわ。」</p>
+        <p>「それ御覧。<persName ref="#matsu">まつ</persName>さんはただわたしについて来て同じようにさえしていればいいのだよ。わたしが今夜願書を書いておいて、あしたの朝早く持っていきましょうね。」</p>
+        <p><persName ref="#ichi">いち</persName>は起きて、手習いの清書をする半紙に、平がなで願書を書いた。父の命を助けて、その代わりに自分と妹の<persName ref="#matsu">まつ</persName>、<persName ref="#toku">とく</persName>、弟の<persName ref="#hatsugoro">初五郎</persName>をおしおきにしていただきたい、実子でない<persName ref="#chotaro">長太郎</persName>だけはお許しくださるようにというだけの事ではあるが、どう書きつづっていいかわからぬので、幾度も書きそこなって、清書のためにもらってあった白紙が残り少なになった。しかしとうとう一番鶏の鳴くころに願書ができた。</p>
+        <p>願書を書いているうちに、<persName ref="#matsu">まつ</persName>が寝入ったので、<persName ref="#ichi">いち</persName>は小声で呼び起こして、床のわきに畳んであったふだん着に着かえさせた。そして自分もしたくをした。</p>
+        <p>女房と<persName ref="#hatsugoro">初五郎</persName>とは知らずに寝ていたが、<persName ref="#chotaro">長太郎</persName>が目をさまして、「ねえさん、もう夜が明けたの」と言った。</p>
+        <p><persName ref="#ichi">いち</persName>は<persName ref="#chotaro">長太郎</persName>の床のそばへ行ってささやいた。「まだ早いから、お前は寝ておいで。ねえさんたちは、おとっさんのだいじな御用で、そっと行って来る所があるのだからね。」</p>
+        <p>「そんならおいらもゆく」と言って、<persName ref="#chotaro">長太郎</persName>はむっくり起き上がった。</p>
+        <p><persName ref="#ichi">いち</persName>は言った。「じゃあ、お起き、着物を着せてあげよう。長さんは小さくても男だから、いっしょに行ってくれれば、そのほうがいいのよ」と言った。</p>
+        <p>女房は夢のようにあたりの騒がしいのを聞いて、少し不安になって寝がえりをしたが、目はさめなかった。</p>
+        <p>三人の子供がそっと家を抜け出したのは、二番鶏の鳴くころであった。戸の外は霜の暁であった。提灯を持って、拍子木をたたいて来る夜回りのじいさんに、お奉行様の所へはどう行ったらゆかれようと、<persName ref="#ichi">いち</persName>がたずねた。じいさんは親切な、物わかりのいい人で、子供の話をまじめに聞いて、月番の<placeName ref="#nishi-bugyosho">西奉行所</placeName>のある所を、丁寧に教えてくれた。当時の町奉行は、東が<persName ref="#inagaki">稲垣淡路守種信</persName>で、西が<persName ref="#sasa">佐佐又四郎成意</persName>である。そして<date when="--11">十一月</date>には西の<persName ref="#sasa">佐佐</persName>が月番に当たっていたのである。</p>
+        <p>じいさんが教えているうちに、それを聞いていた<persName ref="#chotaro">長太郎</persName>が、「そんなら、おいらの知った町だ」と言った。そこで姉妹は<persName ref="#chotaro">長太郎</persName>を先に立てて歩き出した。</p>
+        <p>ようよう<placeName ref="#nishi-bugyosho">西奉行所</placeName>にたどりついて見れば、門がまだ締まっていた。門番所の窓の下に行って、<persName ref="#ichi">いち</persName>が「もしもし」とたびたび繰り返して呼んだ。</p>
+        <p>しばらくして窓の戸があいて、そこへ四十格好の男の顔がのぞいた。「やかましい。なんだ。」</p>
+        <p>「お奉行様にお願いがあってまいりました」と、<persName ref="#ichi">いち</persName>が丁寧に腰をかがめて言った。</p>
+        <p>「ええ」と言ったが、男は容易にことばの意味を解しかねる様子であった。</p>
+        <p><persName ref="#ichi">いち</persName>はまた同じ事を言った。</p>
+        <p>男はようようわかったらしく、「お奉行様には子供が物を申し上げることはできない、親が出て来るがいい」と言った。</p>
+        <p>「いいえ、父はあしたおしおきになりますので、それについてお願いがございます。」</p>
+        <p>「なんだ。あしたおしおきになる。それじゃあ、お前は<persName ref="#tarobe">桂屋太郎兵衛</persName>の子か。」</p>
+        <p>「はい」と<persName ref="#ichi">いち</persName>が答えた。</p>
+        <p>「ふん」と言って、男は少し考えた。そして言った。「けしからん。子供までが上を恐れんと見える。お奉行様はお前たちにお会いはない。帰れ帰れ。」こう言って、窓を締めてしまった。</p>
+        <p><persName ref="#matsu">まつ</persName>が姉に言った。「ねえさん、あんなにしかるから帰りましょう。」</p>
+        <p><persName ref="#ichi">いち</persName>は言った。「黙っておいで。しかられたって帰るのじゃありません。ねえさんのするとおりにしておいで。」こう言って、<persName ref="#ichi">いち</persName>は門の前にしゃがんだ。<persName ref="#matsu">まつ</persName>と<persName ref="#chotaro">長太郎</persName>とはついてしゃがんだ。</p>
+        <p>三人の子供は門のあくのをだいぶ久しく待った。ようよう貫木をはずす音がして、門があいた。あけたのは、先に窓から顔を出した男である。</p>
+        <p><persName ref="#ichi">いち</persName>が先に立って門内に進み入ると、<persName ref="#matsu">まつ</persName>と<persName ref="#chotaro">長太郎</persName>とが後ろに続いた。</p>
+        <p><persName ref="#ichi">いち</persName>の態度があまり平気なので、門番の男は急にささえとどめようともせずにいた。そしてしばらく三人の子供の玄関のほうへ進むのを、目をみはって見送っていたが、ようよう我れに帰って、「これこれ」と声をかけた。</p>
+        <p>「はい」と言って、<persName ref="#ichi">いち</persName>はおとなしく立ち留まって振り返った。</p>
+        <p>「どこへゆくのだ。さっき帰れと言ったじゃないか。」</p>
+        <p>「そうおっしゃいましたが、わたくしどもはお願いを聞いていただくまでは、どうしても帰らないつもりでございます。」</p>
+        <p>「ふん。しぶといやつだな。とにかくそんな所へ行ってはいかん。こっちへ来い。」</p>
+        <p>子供たちは引き返して、門番の詰所へ来た。それと同時に玄関わきから、「なんだ、なんだ」と言って、二三人の詰衆が出て来て、子供たちを取り巻いた。<persName ref="#ichi">いち</persName>はほとんどこうなるのを待ち構えていたように、そこにうずくまって、懐中から書付を出して、まっ先にいる与力の前にさしつけた。<persName ref="#matsu">まつ</persName>と<persName ref="#chotaro">長太郎</persName>ともいっしょにうずくまって礼をした。</p>
+        <p>書付を前へ出された与力は、それを受け取ったものか、どうしたものかと迷うらしく、黙って<persName ref="#ichi">いち</persName>の顔を見おろしていた。</p>
+        <p>「お願いでございます」と、<persName ref="#ichi">いち</persName>が言った。</p>
+        <p>「こいつらは<placeName ref="#kizugawaguchi">木津川口</placeName>でさらし物になっている<persName ref="#tarobe">桂屋太郎兵衛</persName>の子供でございます。親の命乞いをするのだと言っています」と、門番がかたわらから説明した。</p>
+        <p>与力は同役の人たちを顧みて、「ではとにかく書付を預かっておいて、伺ってみることにしましょうかな」と言った。それにはたれも異議がなかった。</p>
+        <p>与力は願書を<persName ref="#ichi">いち</persName>の手から受け取って、玄関にはいった。</p>
+        <p>――――――――――――――――</p>
+        <p>西町奉行の<persName ref="#sasa">佐佐</persName>は、両奉行の中の新参で、<placeName ref="#osaka">大阪</placeName>に来てから、まだ一年たっていない。役向きの事はすべて同役の<persName ref="#inagaki">稲垣</persName>に相談して、城代に伺って処置するのであった。それであるから、<persName ref="#tarobe">桂屋太郎兵衛</persName>の公事について、前役の申し継ぎを受けてから、それを重要事件として気にかけていて、ようよう処刑の手続きが済んだのを重荷をおろしたように思っていた。</p>
+        <p>そこへけさになって、宿直の与力が出て、命乞いの願いに出たものがあると言ったので、<persName ref="#sasa">佐佐</persName>はまずせっかく運ばせた事に邪魔がはいったように感じた。</p>
+        <p>「参ったのはどんなものか。」<persName ref="#sasa">佐佐</persName>の声はふきげんであった。</p>
+        <p>「<persName ref="#tarobe">太郎兵衛</persName>の娘両人と伜とがまいりまして、年上の娘が願書をさし上げたいと申しますので、これに預かっております。御覧になりましょうか。」</p>
+        <p>「それは目安箱をもお設けになっておる御趣意から、次第によっては受け取ってもよろしいが、一応はそれぞれ手続きのあることを申し聞かせんではなるまい。とにかく預かっておるなら、内見しよう。」</p>
+        <p>与力は願書を<persName ref="#sasa">佐佐</persName>の前に出した。それをひらいて見て<persName ref="#sasa">佐佐</persName>は不審らしい顔をした。「<persName ref="#ichi">いち</persName>というのがその年上の娘であろうが、何歳になる。」</p>
+        <p>「取り調べはいたしませんが、十四五歳ぐらいに見受けまする。」</p>
+        <p>「そうか。」<persName ref="#sasa">佐佐</persName>はしばらく書付を見ていた。ふつつかなかな文字で書いてはあるが、条理がよく整っていて、おとなでもこれだけの短文に、これだけの事がらを書くのは、容易であるまいと思われるほどである。おとなが書かせたのではあるまいかという念が、ふときざした。続いて、上を偽る横着物の所為ではないかと思議した。それから一応の処置を考えた。<persName ref="#tarobe">太郎兵衛</persName>は明日の夕方までさらすことになっている。刑を執行するまでには、まだ時がある。それまでに願書を受理しようとも、すまいとも、同役に相談し、上役に伺うこともできる。またよしやその間に情偽があるとしても、相当の手続きをさせるうちには、それを探ることもできよう。とにかく子供を帰そうと、<persName ref="#sasa">佐佐</persName>は考えた。</p>
+        <p>そこで与力にはこう言った。この願書は内見したが、これは奉行に出されぬから、持って帰って町年寄に出せと言えと言った。</p>
+        <p>与力は、門番が帰そうとしたが、どうしても帰らなかったということを、<persName ref="#sasa">佐佐</persName>に言った。<persName ref="#sasa">佐佐</persName>は、そんなら菓子でもやって、すかして帰せ、それでもきかぬなら引き立てて帰せと命じた。</p>
+        <p>与力の座を立ったあとへ、城代<persName ref="#ota">太田備中守資晴</persName>がたずねて来た。正式の見回りではなく、私の用事があって来たのである。<persName ref="#ota">太田</persName>の用事が済むと、<persName ref="#sasa">佐佐</persName>はただ今かようかようの事があったと告げて自分の考えを述べ、さしずを請うた。</p>
+        <p><persName ref="#ota">太田</persName>は別に思案もないので、<persName ref="#sasa">佐佐</persName>に同意して、午過ぎに東町奉行<persName ref="#inagaki">稲垣</persName>をも出席させて、町年寄五人に<persName ref="#tarobe">桂屋太郎兵衛</persName>が子供を召し連れて出させることにした。情偽があろうかという、<persName ref="#sasa">佐佐</persName>の懸念ももっともだというので、白州へは責め道具を並べさせることにした。これは子供をおどして実を吐かせようという手段である。</p>
+        <p>ちょうどこの相談が済んだところへ、前の与力が出て、入り口に控えて気色を伺った。</p>
+        <p>「どうじゃ、子供は帰ったか」と、<persName ref="#sasa">佐佐</persName>が声をかけた。</p>
+        <p>「御意でござりまする。お菓子をつかわしまして帰そうといたしましたが、<persName ref="#ichi">いち</persName>と申す娘がどうしてもききませぬ。とうとう願書をふところへ押し込みまして、引き立てて帰しました。妹娘はしくしく泣きましたが、<persName ref="#ichi">いち</persName>は泣かずに帰りました。」</p>
+        <p>「よほど情のこわい娘と見えますな」と、<persName ref="#ota">太田</persName>が<persName ref="#sasa">佐佐</persName>を顧みて言った。</p>
+        <p>――――――――――――――――</p>
+        <p><date when="--11-24">十一月二十四日</date>の未の下刻である。<placeName ref="#nishi-bugyosho">西町奉行所</placeName>の白州ははればれしい光景を呈している。書院には両奉行が列座する。奥まった所には別席を設けて、表向きの出座ではないが、城代が取り調べの模様をよそながら見に来ている。縁側には取り調べを命ぜられた与力が、書役を従えて着座する。</p>
+        <p>同心らが三道具を突き立てて、いかめしく警固している庭に、拷問に用いる、あらゆる道具が並べられた。そこへ<persName ref="#tarobe">桂屋太郎兵衛</persName>の女房と五人の子供とを連れて、町年寄五人が来た。</p>
+        <p>尋問は女房から始められた。しかし名を問われ、年を問われた時に、かつがつ返事をしたばかりで、そのほかの事を問われても、「いっこうに存じませぬ」、「恐れ入りました」と言うよりほか、何一つ申し立てない。</p>
+        <p>次に長女<persName ref="#ichi">いち</persName>が調べられた。当年十六歳にしては、少し幼く見える、痩肉の小娘である。しかしこれはちとの臆する気色もなしに、一部始終の陳述をした。祖母の話を物陰から聞いた事、夜になって床に入ってから、出願を思い立った事、妹<persName ref="#matsu">まつ</persName>に打ち明けて勧誘した事、自分で願書を書いた事、<persName ref="#chotaro">長太郎</persName>が目をさましたので同行を許し、奉行所の町名を聞いてから、案内をさせた事、奉行所に来て門番と応対し、次いで詰衆の与力に願書の取次を頼んだ事、与力らに強要せられて帰った事、およそ前日来経歴した事を問われるままに、はっきり答えた。</p>
+        <p>「それでは<persName ref="#matsu">まつ</persName>のほかにはだれにも相談はいたさぬのじゃな」と、取調役が問うた。</p>
+        <p>「だれにも申しません。<persName ref="#chotaro">長太郎</persName>にもくわしい事は申しません。おとっさんを助けていただくように、お願いしに行くと申しただけでございます。お役所から帰りまして、年寄衆のお目にかかりました時、わたくしども四人の命をさしあげて、父をお助けくださるように願うのだと申しましたら、<persName ref="#chotaro">長太郎</persName>が、それでは自分も命がさしあけたいと申して、とうとうわたくしに自分だけのお願書を書かせて、持ってまいりました。」</p>
+        <p><persName ref="#ichi">いち</persName>がこう申し立てると、<persName ref="#chotaro">長太郎</persName>がふところから書付を出した。</p>
+        <p>取調役のさしずで、同心が一人<persName ref="#chotaro">長太郎</persName>の手から書付を受け取って、縁側に出した。</p>
+        <p>取調役はそれをひらいて、<persName ref="#ichi">いち</persName>の願書と引き比べた。<persName ref="#ichi">いち</persName>の願書は町年寄の手から、取り調べの始まる前に、出させてあったのである。</p>
+        <p><persName ref="#chotaro">長太郎</persName>の願書には、自分も姉や弟妹といっしょに、父の身代わりになって死にたいと、前の願書と同じ手跡で書いてあった。</p>
+        <p>取調役は「<persName ref="#matsu">まつ</persName>」と呼びかけた。しかし<persName ref="#matsu">まつ</persName>は呼ばれたのに気がつかなかった。<persName ref="#ichi">いち</persName>が「お呼びになったのだよ」と言った時、<persName ref="#matsu">まつ</persName>は始めておそるおそるうなだれていた頭をあげて、縁側の上の役人を見た。</p>
+        <p>「お前は姉といっしょに死にたいのだな」と、取調役が問うた。</p>
+        <p><persName ref="#matsu">まつ</persName>は「はい」と言ってうなずいた。</p>
+        <p>次に取調役は「<persName ref="#chotaro">長太郎</persName>」と呼びかけた。</p>
+        <p><persName ref="#chotaro">長太郎</persName>はすぐに「はい」と言った。</p>
+        <p>「お前は書付に書いてあるとおりに、兄弟いっしょに死にたいのじゃな。」</p>
+        <p>「みんな死にますのに、わたしが一人生きていたくはありません」と、<persName ref="#chotaro">長太郎</persName>ははっきり答えた。</p>
+        <p>「<persName ref="#toku">とく</persName>」と取調役が呼んだ。<persName ref="#toku">とく</persName>は姉や兄が順序に呼ばれたので、こん度は自分が呼ばれたのだと気がついた。そしてただ目をみはって役人の顔を仰ぎ見た。</p>
+        <p>「お前も死んでもいいのか。」</p>
+        <p><persName ref="#toku">とく</persName>は黙って顔を見ているうちに、くちびるに血色がなくなって、目に涙がいっぱいたまって来た。</p>
+        <p>「<persName ref="#hatsugoro">初五郎</persName>」と取調役が呼んだ。</p>
+        <p>ようよう六歳になる末子の<persName ref="#hatsugoro">初五郎</persName>は、これも黙って役人の顔を見たが、「お前はどうじゃ、死ぬるのか」と問われて、活発にかぶりを振った。書院の人々は覚えず、それを見てほほえんだ。</p>
+        <p>この時<persName ref="#sasa">佐佐</persName>が書院の敷居ぎわまで進み出て、「<persName ref="#ichi">いち</persName>」と呼んだ。</p>
+        <p>「はい。」</p>
+        <p>「お前の申し立てにはうそはあるまいな。もし少しでも申した事に間違いがあって、人に教えられたり、相談をしたりしたのなら、今すぐに申せ。隠して申さぬと、そこに並べてある道具で、誠の事を申すまで責めさせるぞ。」<persName ref="#sasa">佐佐</persName>は責め道具のある方角を指さした。</p>
+        <p><persName ref="#ichi">いち</persName>はさされた方角を一目見て、少しもたゆたわずに、「いえ、申した事に間違いはございません」と言い放った。その目は冷ややかで、そのことばは徐かであった。</p>
+        <p>「そんなら今一つお前に聞くが、身代わりをお聞き届けになると、お前たちはすぐに殺されるぞよ。父の顔を見ることはできぬが、それでもいいか。」</p>
+        <p>「よろしゅうございます」と、同じような、冷ややかな調子で答えたが、少し間を置いて、何か心に浮かんだらしく、「お上の事には間違いはございますまいから」と言い足した。</p>
+        <p><persName ref="#sasa">佐佐</persName>の顔には、不意打ちに会ったような、驚愕の色が見えたが、それはすぐに消えて、険しくなった目が、<persName ref="#ichi">いち</persName>の面に注がれた。憎悪を帯びた驚異の目とでも言おうか。しかし<persName ref="#sasa">佐佐</persName>は何も言わなかった。</p>
+        <p>次いで<persName ref="#sasa">佐佐</persName>は何やら取調役にささやいたが、まもなく取調役が町年寄に、「御用が済んだから、引き取れ」と言い渡した。</p>
+        <p>白州を下がる子供らを見送って<persName ref="#sasa">佐佐</persName>は<persName ref="#ota">太田</persName>と<persName ref="#inagaki">稲垣</persName>とに向いて、「生先の恐ろしいものでござりますな」と言った。心の中には、哀れな孝行娘の影も残らず、人に教唆せられた、おろかな子供の影も残らず、ただ氷のように冷ややかに、刃のように鋭い、<persName ref="#ichi">いち</persName>の最後のことばの最後の一句が反響しているのである。<date when="1736">元文</date>ごろの徳川家の役人は、もとより「マルチリウム」という洋語も知らず、また当時の辞書には献身という訳語もなかったので、人間の精神に、老若男女の別なく、罪人<persName ref="#tarobe">太郎兵衛</persName>の娘に現われたような作用があることを、知らなかったのは無理もない。しかし献身のうちに潜む反抗の鋒は、<persName ref="#ichi">いち</persName>とことばを交えた<persName ref="#sasa">佐佐</persName>のみではなく、書院にいた役人一同の胸をも刺した。</p>
+        <p>――――――――――――――――</p>
+        <p>城代も両奉行も<persName ref="#ichi">いち</persName>を「変な小娘だ」と感じて、その感じには物でも憑いているのではないかという迷信さえ加わったので、孝女に対する同情は薄かったが、当時の行政司法の、元始的な機関が自然に活動して、<persName ref="#ichi">いち</persName>の願意は期せずして貫徹した。<persName ref="#tarobe">桂屋太郎兵衛</persName>の刑の執行は、「<placeName ref="#edo">江戸</placeName>へ伺中日延」ということになった。これは取り調べのあった翌日、<date when="--11-25">十一月二十五日</date>に町年寄に達せられた。次いで<date when="1739">元文四年三月二日</date>に、「<placeName ref="#kyoto">京都</placeName>において大嘗会御執行相成り候てより日限も相立たざる儀につき、<persName ref="#tarobe">太郎兵衛</persName>事、死罪御赦免仰せいだされ、<placeName ref="#osaka">大阪</placeName>北、<placeName ref="#minamigumi">南組</placeName>、<placeName ref="#tenma">天満</placeName>の三口御構の上追放」ということになった。桂屋の家族は、再び<placeName ref="#nishi-bugyosho">西奉行所</placeName>に呼び出されて、父に別れを告げることができた。大嘗会というのは、<date when="1687">貞享四年</date>に<persName ref="#higashiyama-tenno">東山天皇</persName>の盛儀があってから、<persName ref="#tarobe">桂屋太郎兵衛</persName>の事を書いた高札の立った<date when="1738">元文三年十一月二十三日</date>の直前、同じ月の<date when="--11-19">十九日</date>に五十一年目に、<persName ref="#sakuramachi-tenno">桜町天皇</persName>が挙行したもうまで、中絶していたのである。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

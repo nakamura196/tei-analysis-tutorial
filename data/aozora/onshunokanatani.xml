@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>恩讐の彼方に</title>
+        <author>菊池寛</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>恩讐の彼方に</title><author>菊池寛</author>
+          <note>青空文庫。底本：「菊池寛　短編と戯曲」文芸春秋。1988（昭和63）年3月25日第1刷発行。入力：真先芳秋。校正：伊藤祥。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000083/card496.html">https://www.aozora.gr.jp/cards/000083/card496.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="ichikuro">
+        <persName>市九郎</persName>
+        <note>中川三郎兵衛の若党。主人を殺して出奔し、のち出家して了海と法名を名のる。樋田の刳貫(青の洞門)を掘り穿つ</note>
+      </person>
+      <person xml:id="oyumi">
+        <persName>お弓</persName>
+        <note>三郎兵衛の妾。けんぺき茶屋の女中上がり。市九郎と逐電し悪事をそそのかす</note>
+      </person>
+      <person xml:id="saburobei">
+        <persName>中川三郎兵衛</persName>
+        <note>浅草田原町の旗本。市九郎の主人。市九郎に殺害される</note>
+      </person>
+      <person xml:id="sanenosuke">
+        <persName>実之助</persName>
+        <note>三郎兵衛の一子。父の敵市九郎を求めて諸国を遍歴する</note>
+      </person>
+      <person xml:id="myohen">
+        <persName>明遍</persName>
+        <note>美濃大垣在浄願寺の現往(住持)の大徳。市九郎を教化し得度させる</note>
+      </person>
+      <person xml:id="kanzeon">
+        <persName>観世音菩薩</persName>
+        <note>仏教の菩薩。市九郎が槌を下す前に祈る</note>
+      </person>
+      <person xml:id="jiji-bosatsu">
+        <persName>持地菩薩</persName>
+        <note>仏教の菩薩。里人が了海をその再来と仰ぐ</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="asakusa-tawaramachi">
+        <placeName>浅草田原町</placeName>
+        <location><geo>35.7106 139.7946</geo></location>
+        <note>江戸浅草の田原町(現台東区雷門付近)・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>現東京・概値</note>
+      </place>
+      <place xml:id="tokaido">
+        <placeName>東海道</placeName>
+        <location><geo>34.97 138.39</geo></location>
+        <note>五畿七道の一(街道・地域名)。線状のため代表点(駿河付近)の概値</note>
+      </place>
+      <place xml:id="tosando">
+        <placeName>東山道</placeName>
+        <location><geo>36.06 138.05</geo></location>
+        <note>五畿七道の一(街道・地域名)。線状のため代表点(信濃付近)の概値</note>
+      </place>
+      <place xml:id="kamigata">
+        <placeName>上方</placeName>
+        <location><geo>34.8 135.5</geo></location>
+        <note>京坂地方の通称。地域名・概値</note>
+      </place>
+      <place xml:id="shinano">
+        <placeName>信州</placeName>
+        <location><geo>36.1 138.0</geo></location>
+        <note>旧国名(信濃・長野県)・概値</note>
+      </place>
+      <place xml:id="kiso">
+        <placeName>木曾</placeName>
+        <location><geo>35.85 137.7</geo></location>
+        <note>木曾谷(長野県西南部)。地域名・概値</note>
+      </place>
+      <place xml:id="okiso">
+        <placeName>小木曾</placeName>
+        <location><geo>35.94 137.78</geo></location>
+        <note>鳥居峠東麓の谷(現長野県木祖村小木曽付近)・概値</note>
+      </place>
+      <place xml:id="kiso-kaido">
+        <placeName>木曾街道</placeName>
+        <location><geo>35.9 137.78</geo></location>
+        <note>中山道の木曾路。線状のため代表点の概値</note>
+      </place>
+      <place xml:id="kisogawa">
+        <placeName>木曾川</placeName>
+        <location><geo>35.92 137.77</geo></location>
+        <note>木曾川上流部(藪原付近)・概値</note>
+      </place>
+      <place xml:id="yabuhara">
+        <placeName>藪原</placeName>
+        <location><geo>35.9394 137.7788</geo></location>
+        <note>中山道藪原宿(現長野県木祖村)・概値</note>
+      </place>
+      <place xml:id="torii-toge">
+        <placeName>鳥居峠</placeName>
+        <location><geo>35.95 137.79</geo></location>
+        <note>中山道の峠(奈良井宿と藪原宿の間)・概値</note>
+      </place>
+      <place xml:id="bishu">
+        <placeName>尾州</placeName>
+        <location><geo>35.2 136.9</geo></location>
+        <note>旧国名(尾張・愛知県西部)・概値</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後</placeName>
+        <location><geo>37.5 138.8</geo></location>
+        <note>旧国名(新潟県)・概値</note>
+      </place>
+      <place xml:id="etchu">
+        <placeName>越中</placeName>
+        <location><geo>36.7 137.2</geo></location>
+        <note>旧国名(富山県)・概値</note>
+      </place>
+      <place xml:id="kashiwazaki">
+        <placeName>柏崎</placeName>
+        <location><geo>37.3719 138.559</geo></location>
+        <note>越後柏崎(現新潟県柏崎市)・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都。表記は「京洛」とも</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大坂</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>現大阪・概値</note>
+      </place>
+      <place xml:id="mino">
+        <placeName>美濃</placeName>
+        <location><geo>35.4 136.8</geo></location>
+        <note>旧国名(岐阜県南部)・概値</note>
+      </place>
+      <place xml:id="ogaki">
+        <placeName>大垣</placeName>
+        <location><geo>35.3594 136.6129</geo></location>
+        <note>美濃大垣(現岐阜県大垣市)・概値</note>
+      </place>
+      <place xml:id="joganji">
+        <placeName>浄願寺</placeName>
+        <note>美濃大垣在の真言宗の僧録寺。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="kinai">
+        <placeName>畿内</placeName>
+        <location><geo>34.8 135.7</geo></location>
+        <note>五畿内。地域名・概値</note>
+      </place>
+      <place xml:id="chugoku">
+        <placeName>中国</placeName>
+        <location><geo>34.6 132.8</geo></location>
+        <note>中国地方。地域名・概値</note>
+      </place>
+      <place xml:id="sanindo">
+        <placeName>山陰</placeName>
+        <location><geo>35.3 133.3</geo></location>
+        <note>五畿七道の山陰道。地域名・概値</note>
+      </place>
+      <place xml:id="sanyodo">
+        <placeName>山陽</placeName>
+        <location><geo>34.5 133.5</geo></location>
+        <note>五畿七道の山陽道。地域名・概値</note>
+      </place>
+      <place xml:id="hokurikudo">
+        <placeName>北陸</placeName>
+        <location><geo>36.7 137.5</geo></location>
+        <note>五畿七道の北陸道。地域名・概値</note>
+      </place>
+      <place xml:id="nankaido">
+        <placeName>南海</placeName>
+        <location><geo>33.8 134.5</geo></location>
+        <note>五畿七道の南海道(紀伊・四国方面)。地域名・概値</note>
+      </place>
+      <place xml:id="akamagaseki">
+        <placeName>赤間ヶ関</placeName>
+        <location><geo>33.9578 130.9414</geo></location>
+        <note>現山口県下関市・概値</note>
+      </place>
+      <place xml:id="kokura">
+        <placeName>小倉</placeName>
+        <location><geo>33.8835 130.8752</geo></location>
+        <note>豊前小倉(現北九州市)・概値</note>
+      </place>
+      <place xml:id="buzen">
+        <placeName>豊前</placeName>
+        <location><geo>33.6 131.1</geo></location>
+        <note>旧国名(福岡県東部・大分県北部)・概値</note>
+      </place>
+      <place xml:id="usa-hachimangu">
+        <placeName>宇佐八幡宮</placeName>
+        <location><geo>33.5261 131.3746</geo></location>
+        <note>宇佐神宮(大分県宇佐市)</note>
+      </place>
+      <place xml:id="yokkaichi">
+        <placeName>四日市</placeName>
+        <location><geo>33.53 131.32</geo></location>
+        <note>豊前四日市(現大分県宇佐市四日市)・概値</note>
+      </place>
+      <place xml:id="yamakunigawa">
+        <placeName>山国川</placeName>
+        <location><geo>33.5 131.16</geo></location>
+        <note>大分・福岡県境を流れる川。中流部の代表点・概値</note>
+      </place>
+      <place xml:id="yamakunidani">
+        <placeName>山国谷</placeName>
+        <location><geo>33.45 131.13</geo></location>
+        <note>山国川の渓谷(耶馬渓)一帯。地域名・概値</note>
+      </place>
+      <place xml:id="rakanji">
+        <placeName>羅漢寺</placeName>
+        <location><geo>33.455 131.172</geo></location>
+        <note>耆闍崛山羅漢寺(現大分県中津市本耶馬渓町)・概値</note>
+      </place>
+      <place xml:id="mikuchi">
+        <placeName>三口</placeName>
+        <note>四日市から樋田へ向かう途中の地名。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="hotokezaka">
+        <placeName>仏坂</placeName>
+        <note>三口から樋田へ越える山道の坂。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="hida">
+        <placeName>樋田</placeName>
+        <location><geo>33.48 131.14</geo></location>
+        <note>現大分県中津市本耶馬渓町樋田。刳貫(青の洞門)の所在地・概値</note>
+      </place>
+      <place xml:id="kusaridoshi">
+        <placeName>鎖渡し</placeName>
+        <location><geo>33.4766 131.1417</geo></location>
+        <note>競秀峰の岨道の難所。青の洞門開削以前の桟道の伝承地・概値</note>
+      </place>
+      <place xml:id="kakisaka">
+        <placeName>柿坂</placeName>
+        <location><geo>33.43 131.12</geo></location>
+        <note>山国川上流の柿坂郷(現中津市耶馬溪町柿坂)・概値</note>
+      </place>
+      <place xml:id="nakatsu">
+        <placeName>中津</placeName>
+        <location><geo>33.5983 131.1883</geo></location>
+        <note>豊前中津(現大分県中津市)。中津藩の城下・概値</note>
+      </place>
+      <place xml:id="fukuoka">
+        <placeName>福岡</placeName>
+        <location><geo>33.5904 130.4017</geo></location>
+        <note>筑前福岡の城下(現福岡市)・概値</note>
+      </place>
+      <place xml:id="kyushu">
+        <placeName>九州</placeName>
+        <location><geo>32.8 131.0</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="tsukushi">
+        <placeName>筑紫</placeName>
+        <location><geo>33.5 130.6</geo></location>
+        <note>九州の古称。地域名・概値</note>
+      </place>
+      <place xml:id="gokuraku">
+        <placeName>極楽</placeName>
+        <note>仏教的世界観上の場所(座標なし)。表記は「極楽浄土」とも</note>
+      </place>
+      <place xml:id="shonetsu-jigoku">
+        <placeName>焦熱地獄</placeName>
+        <note>仏教の八大地獄の一(座標なし)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>恩讐の彼方に</head>
+        <p>一</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、主人の切り込んで来る太刀を受け損じて、左の頬から顎へかけて、微傷ではあるが、一太刀受けた。自分の罪を――たとえ向うから挑まれたとはいえ、主人の寵妾と非道な恋をしたという、自分の致命的な罪を、意識している<persName ref="#ichikuro">市九郎</persName>は、主人の振り上げた太刀を、必至な刑罰として、たとえその切先を避くるに努むるまでも、それに反抗する心持は、少しも持ってはいなかった。彼は、ただこうした自分の迷いから、命を捨てることが、いかにも惜しまれたので、できるだけは逃れてみたいと思っていた。それで、主人から不義をいい立てられて切りつけられた時、あり合せた燭台を、早速の獲物として主人の鋭い太刀先を避けていた。が、五十に近いとはいえ、まだ筋骨のたくましい主人が畳みかけて切り込む太刀を、攻撃に出られない悲しさには、いつとなく受け損じて、最初の一太刀を、左の頬に受けたのである。が、一旦血を見ると、<persName ref="#ichikuro">市九郎</persName>の心は、たちまちに変っていた。彼の分別のあった心は、闘牛者の槍を受けた牡牛のように荒んでしまった。どうせ死ぬのだと思うと、そこに世間もなければ主従もなかった。今までは、主人だと思っていた相手の男が、ただ自分の生命を、脅そうとしている一個の動物――それも凶悪な動物としか、見えなかった。彼は奮然として、攻撃に転じた。彼は「おうお」と叫きながら、持っていた燭台を、相手の面上を目がけて投げ打った。<persName ref="#ichikuro">市九郎</persName>が、防御のための防御をしているのを見て、気を許してかかっていた主人の<persName ref="#saburobei">三郎兵衛</persName>は、不意に投げつけられた燭台を受けかねて、その蝋受けの一角がしたたかに彼の右眼を打った。<persName ref="#ichikuro">市九郎</persName>は、相手のたじろぐ隙に、脇差を抜くより早く飛びかかった。</p>
+        <p>「おのれ、手向いするか！」と、<persName ref="#saburobei">三郎兵衛</persName>は激怒した。<persName ref="#ichikuro">市九郎</persName>は無言で付け入った。主人の三尺に近い太刀と、<persName ref="#ichikuro">市九郎</persName>の短い脇差とが、二、三度激しく打ち合うた。</p>
+        <p>主従が必死になって、十数合太刀を合わす間に、主人の太刀先が、二、三度低い天井をかすって、しばしば太刀を操る自由を失おうとした。<persName ref="#ichikuro">市九郎</persName>はそこへ付け入った。主人は、その不利に気がつくと、自由な戸外へ出ようとして、二、三歩後退りして縁の外へ出た。その隙に<persName ref="#ichikuro">市九郎</persName>が、なおも付け入ろうとするのを、主人は「えい」と、苛だって切り下した。が、苛だったあまりその太刀は、縁側と、座敷との間に垂れ下っている鴨居に、不覚にも二、三寸切り込まれた。</p>
+        <p>「しまった」と、<persName ref="#saburobei">三郎兵衛</persName>が太刀を引こうとする隙に、<persName ref="#ichikuro">市九郎</persName>は踏み込んで、主人の脇腹を思うさま横に薙いだのであった。</p>
+        <p>敵手が倒れてしまった瞬間に、<persName ref="#ichikuro">市九郎</persName>は我にかえった。今まで興奮して朦朧としていた意識が、ようやく落着くと、彼は、自分が主殺しの大罪を犯したことに気がついて、後悔と恐怖とのために、そこにへたばってしまった。</p>
+        <p>夜は初更を過ぎていた。母屋と、仲間部屋とは、遠く隔っているので、主従の恐ろしい格闘は、母屋に住んでいる女中以外、まだだれにも知られなかったらしい。その女中たちは、この激しい格闘に気を失い、一間のうちに集って、ただ身を震わせているだけであった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、深い悔恨にとらわれていた。一個の蕩児であり、無頼の若武士ではあったけれども、まだ悪事と名の付くことは、何もしていなかった。まして八逆の第一なる主殺しの大罪を犯そうとは、彼の思いも付かぬことだった。彼は、血の付いた脇差を取り直した。主人の妾と慇懃を通じて、そのために成敗を受けようとした時、かえってその主人を殺すということは、どう考えても、彼にいいところはなかった。彼は、まだびくびくと動いている主人の死体を尻眼にかけながら、静かに自殺の覚悟を固めていた。するとその時、次の間から、今までの大きい圧迫から逃れ出たような声がした。</p>
+        <p>「ほんとにまあ、どうなることかと思って心配したわ。お前がまっ二つにやられた後は、私の番じゃあるまいかと、さっきから、屏風の後で息を凝らして見ていたのさ。が、ほんとうにいい塩梅だったね。こうなっちゃ、一刻も猶予はしていられないから、有り金をさらって逃げるとしよう。まだ仲間たちは気がついていないようだから、逃げるなら今のうちさ。乳母や女中などは、台所の方でがたがた震えているらしいから、私が行って、じたばた騒がないようにいってこようよ。さあ！　お前は有り金を探して下さいよ」というその声は、確かに震えを帯びていた。が、そうした震えを、女性としての強い意地で抑制して、努めて平気を装っているらしかった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は――自分特有の動機を、すっかり失くしていた<persName ref="#ichikuro">市九郎</persName>は、女の声をきくと、蘇ったように活気づいた。彼は、自分の意志で働くというよりも、女の意志によって働く傀儡のように立ち上ると、座敷に置いてある桐の茶箪笥に手をかけた。そして、その真白い木目に、血に汚れた手形を付けながら、引出しをあちらこちらと探し始めた。が、女――主人の妾の<persName ref="#oyumi">お弓</persName>が帰ってくるまでに、<persName ref="#ichikuro">市九郎</persName>は、二朱銀の五両包をただ一つ見つけたばかりであった。<persName ref="#oyumi">お弓</persName>は、台所から引っ返してきて、その金を見ると、</p>
+        <p>「そんな端金が、どうなるものかね」と、いいながら、今度は自分で、やけに引出しを引掻き回した。しまいには鎧櫃の中まで探したが、小判は一枚も出てきはしなかった。</p>
+        <p>「名うての始末屋だから、瓶にでも入れて、土の中へでも埋めてあるのかも知れない」そう忌々しそうにいい切ると、金目のありそうな衣類や、印籠を、手早く風呂敷包にした。</p>
+        <p>こうして、この姦夫姦婦が、<placeName ref="#asakusa-tawaramachi">浅草田原町</placeName>の旗本、<persName ref="#saburobei">中川三郎兵衛</persName>の家を出たのは、<date when="1774">安永三年</date>の秋の初めであった。後には、当年三歳になる<persName ref="#saburobei">三郎兵衛</persName>の一子<persName ref="#sanenosuke">実之助</persName>が、父の非業の死も知らず、乳母の懐ろにすやすや眠っているばかりであった。</p>
+        <p>二</p>
+        <p><persName ref="#ichikuro">市九郎</persName>と<persName ref="#oyumi">お弓</persName>は、<placeName ref="#edo">江戸</placeName>を逐電してから、<placeName ref="#tokaido">東海道</placeName>はわざと避けて、人目を忍びながら、<placeName ref="#tosando">東山道</placeName>を<placeName ref="#kamigata">上方</placeName>へと志した。<persName ref="#ichikuro">市九郎</persName>は、主殺しの罪から、絶えず良心の苛責を受けていた。が、けんぺき茶屋の女中上がりの、莫連者の<persName ref="#oyumi">お弓</persName>は、<persName ref="#ichikuro">市九郎</persName>が少しでも沈んだ様子を見せると、</p>
+        <p>「どうせ凶状持ちになったからには、いくらくよくよしてもしようがないじゃないか。度胸を据えて世の中を面白く暮すのが上分別さ」と、<persName ref="#ichikuro">市九郎</persName>の心に、明け暮れ悪の拍車を加えた。が、<placeName ref="#shinano">信州</placeName>から<placeName ref="#kiso">木曾</placeName>の<placeName ref="#yabuhara">藪原</placeName>の宿まで来た時には、二人の路用の金は、百も残っていなかった。二人は、窮するにつれて、悪事を働かねばならなかった。最初はこうした男女の組合せとしては、最もなしやすい美人局を稼業とした。そうして<placeName ref="#shinano">信州</placeName>から<placeName ref="#bishu">尾州</placeName>へかけての宿々で、往来の町人百姓の路用の金を奪っていた。初めのほどは、女からの激しい教唆で、つい悪事を犯し始めていた<persName ref="#ichikuro">市九郎</persName>も、ついには悪事の面白さを味わい始めた。浪人姿をした<persName ref="#ichikuro">市九郎</persName>に対して、被害者の町人や百姓は、金を取られながら、すこぶる柔順であった。</p>
+        <p>悪事がだんだん進歩していった<persName ref="#ichikuro">市九郎</persName>は、美人局からもっと単純な、手数のいらぬ強請をやり、最後には、切取強盗を正当な稼業とさえ心得るようになった。</p>
+        <p>彼は、いつとなしに<placeName ref="#shinano">信濃</placeName>から<placeName ref="#kiso">木曾</placeName>へかかる<placeName ref="#torii-toge">鳥居峠</placeName>に土着した。そして昼は茶店を開き、夜は強盗を働いた。</p>
+        <p>彼はもうそうした生活に、なんの躊躇をも、不安をも感じないようになっていた。金のありそうな旅人を狙って、殺すと巧みにその死体を片づけた。一年に三、四度、そうした罪を犯すと、彼は優に一年の生活を支えることができた。</p>
+        <p>それは、彼らが<placeName ref="#edo">江戸</placeName>を出てから、三年目になる春の頃であった。参勤交代の北国大名の行列が、二つばかり続いて通ったため、<placeName ref="#kiso-kaido">木曾街道</placeName>の宿々は、近頃になく賑わった。ことにこの頃は、<placeName ref="#shinano">信州</placeName>を始め、<placeName ref="#echigo">越後</placeName>や<placeName ref="#etchu">越中</placeName>からの伊勢参宮の客が街道に続いた。その中には、<placeName ref="#kyoto">京</placeName>から<placeName ref="#osaka">大坂</placeName>へと、遊山の旅を延すのが多かった。<persName ref="#ichikuro">市九郎</persName>は、彼らの二、三人をたおして、その年の生活費を得たいと思っていた。<placeName ref="#kiso-kaido">木曾街道</placeName>にも、杉や檜に交って咲いた山桜が散り始める夕暮のことであった。<persName ref="#ichikuro">市九郎</persName>の店に男女二人の旅人が立ち寄った。それは明らかに夫婦であった。男は三十を越していた。女は二十三、四であっただろう。供を連れない気楽な旅に出た<placeName ref="#shinano">信州</placeName>の豪農の若夫婦らしかった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、二人の身形を見ると、彼はこの二人を今年の犠牲者にしようかと、思っていた。</p>
+        <p>「もう<placeName ref="#yabuhara">藪原</placeName>の宿まで、いくらもあるまいな」</p>
+        <p>こういいながら、男の方は、<persName ref="#ichikuro">市九郎</persName>の店の前で、草鞋の紐を結び直そうとした。<persName ref="#ichikuro">市九郎</persName>が、返事をしようとする前に、<persName ref="#oyumi">お弓</persName>が、台所から出てきながら、</p>
+        <p>「さようでございます、もうこの峠を降りますれば半道もございません。まあ、ゆっくり休んでからになさいませ」と、いった。<persName ref="#ichikuro">市九郎</persName>は、<persName ref="#oyumi">お弓</persName>のこの言葉を聞くと、<persName ref="#oyumi">お弓</persName>がすでに恐ろしい計画を、自分に勧めようとしているのを覚えた。<placeName ref="#yabuhara">藪原</placeName>の宿までにはまだ二里に余る道を、もう何ほどもないようにいいくるめて、旅人に気をゆるさせ、彼らの行程が夜に入るのに乗じて、間道を走って、宿の入口で襲うのが、<persName ref="#ichikuro">市九郎</persName>の常套の手段であった。その男は、<persName ref="#oyumi">お弓</persName>の言葉をきくと、</p>
+        <p>「それならば、茶なと一杯所望しようか」といいながら、もう彼らの第一の罠に陥ってしまった。女は赤い紐のついた旅の菅笠を取りはずしながら、夫のそばに寄り添うて、腰をかけた。</p>
+        <p>彼らは、ここで小半刻も、峠を登り切った疲れを休めると、鳥目を置いて、紫に暮れかかっている<placeName ref="#okiso">小木曾</placeName>の谷に向って、<placeName ref="#torii-toge">鳥居峠</placeName>を降りていった。</p>
+        <p>二人の姿が見えなくなると、<persName ref="#oyumi">お弓</persName>は、それとばかり合図をした。<persName ref="#ichikuro">市九郎</persName>は、獲物を追う猟師のように、脇差を腰にすると、一散に二人の後を追うた。本街道を右に折れて、<placeName ref="#kisogawa">木曾川</placeName>の流れに沿うて、険しい間道を急いだ。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>が、<placeName ref="#yabuhara">藪原</placeName>の宿手前の並木道に来た時は、春の長い日がまったく暮れて、十日ばかりの月が<placeName ref="#kiso">木曾</placeName>の山の彼方に登ろうとして、ほの白い月しろのみが、<placeName ref="#kiso">木曾</placeName>の山々を微かに浮ばせていた。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、街道に沿うて生えている、一叢の丸葉柳の下に身を隠しながら、夫婦の近づくのを、徐に待っていた。彼も心の底では、幸福な旅をしている二人の男女の生命を、不当に奪うということが、どんなに罪深いかということを、考えずにはいなかった。が、一旦なしかかった仕事を中止して帰ることは、<persName ref="#oyumi">お弓</persName>の手前、彼の心にまかせぬことであった。</p>
+        <p>彼は、この夫婦の血を流したくはなかった。なるべく相手が、自分の脅迫に二言もなく服従してくれればいいと、思っていた。もし彼らが路用の金と衣装とを出すなら、決して殺生はしまいと思っていた。</p>
+        <p>彼の決心がようやく固まった頃に、街道の彼方から、急ぎ足に近づいてくる男女の姿が見えた。</p>
+        <p>二人は、峠からの道が、覚悟のほかに遠かったため、疲れ切ったと見え、お互いに助け合いながら、無言のままに急いで来た。</p>
+        <p>二人が、丸葉柳の茂みに近づくと、<persName ref="#ichikuro">市九郎</persName>は、不意に街道の真ん中に突っ立った。そして、今までに幾度も口にし馴れている脅迫の言葉を浴せかけた。すると、男は必死になったらしく、道中差を抜くと、妻を後に庇いながら身構えした。<persName ref="#ichikuro">市九郎</persName>は、ちょっと出鼻を折られた。が、彼は声を励まして、「いやさ、旅の人、手向いしてあたら命を落すまいぞ。命までは取ろうといわぬのじゃ。有り金と衣類とをおとなしく出して行け！」と、叫んだ。その顔を、相手の男は、じいっと見ていたが、</p>
+        <p>「やあ！　先程の峠の茶屋の主人ではないか」と、その男は、必死になって飛びかかってきた。<persName ref="#ichikuro">市九郎</persName>は、もうこれまでと思った。自分の顔を見覚えられた以上、自分たちの安全のため、もうこの男女を生かすことはできないと思った。</p>
+        <p>相手が必死に切り込むのを、巧みに引きはずしながら、一刀を相手の首筋に浴びせた。見ると連れの女は、気を失ったように道の傍に蹲りながら、ぶるぶると震えていた。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、女を殺すに忍びなかった。が、彼は自分の危急には代えられぬと思った。男の方を殺して殺気立っている間にと思って、血刀を振りかざしながら、彼は女に近づいた。女は、両手を合わして、<persName ref="#ichikuro">市九郎</persName>に命を乞うた。<persName ref="#ichikuro">市九郎</persName>は、その瞳に見つめられると、どうしても刀を下ろせなかった。が、彼は殺さねばならぬと思った。この時<persName ref="#ichikuro">市九郎</persName>の欲心は、この女を切って女の衣装を台なしにしてはつまらないと思った。そう思うと、彼は腰に下げていた手拭をはずして女の首を絞った。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、二人を殺してしまうと、急に人を殺した恐怖を感じて、一刻もいたたまらないように思った。彼は、二人の胴巻と衣類とを奪うと、あたふたとしてその場から一散に逃れた。彼は、今まで十人に余る人殺しをしたものの、それは半白の老人とか、商人とか、そうした階級の者ばかりで、若々しい夫婦づれを二人まで自分の手にかけたことはなかった。</p>
+        <p>彼は、深い良心の苛責にとらわれながら、帰ってきた。そして家に入ると、すぐさま、男女の衣装と金とを、汚らわしいもののように、<persName ref="#oyumi">お弓</persName>の方へ投げやった。女は、悠然としてまず金の方を調べてみた。金は思ったより少なく、二十両をわずかに越しているばかりであった。</p>
+        <p><persName ref="#oyumi">お弓</persName>は殺された女の着物を手に取ると、「まあ、黄八丈の着物に紋縮緬の襦袢だね。だが、お前さん、この女の頭のものは、どうおしだい」と、彼女は詰問するように、<persName ref="#ichikuro">市九郎</persName>を顧みた。</p>
+        <p>「頭のもの！」と、<persName ref="#ichikuro">市九郎</persName>は半ば返事をした。</p>
+        <p>「そうだよ。頭のものだよ。黄八丈に紋縮緬の着付じゃ、頭のものだって、擬物の櫛や笄じゃあるまいじゃないか。わたしは、さっきあの女が菅笠を取った時に、ちらと睨んでおいたのさ。瑇瑁の揃いに相違なかったよ」と、<persName ref="#oyumi">お弓</persName>はのしかかるようにいった。殺した女の頭のもののことなどは、夢にも思っていなかった<persName ref="#ichikuro">市九郎</persName>は、なんとも答えるすべがなかった。</p>
+        <p>「お前さん！　まさか、取るのを忘れたのじゃあるまいね。瑇瑁だとすれば、七両や八両は確かだよ。駆け出しの泥棒じゃあるまいし、なんのために殺生をするのだよ。あれだけの衣装を着た女を、殺しておきながら、頭のものに気がつかないとは、お前は、いつから泥棒稼業におなりなのだえ。なんというどじをやる泥棒だろう。なんとか、いってごらん！」と、<persName ref="#oyumi">お弓</persName>は、威たけ高になって、<persName ref="#ichikuro">市九郎</persName>に食ってかかってきた。</p>
+        <p>二人の若い男女を殺してしまった悔いに、心の底まで冒されかけていた<persName ref="#ichikuro">市九郎</persName>は、女の言葉から深く傷つけられた。彼は頭のものを取ることを、忘れたという盗賊としての失策を、或いは無能を、悔ゆる心は少しもなかった。自分は、二人を殺したことを、悪いことと思えばこそ、殺すことに気も転動して、女がその頭に十両にも近い装飾を付けていることをまったく忘れていた。<persName ref="#ichikuro">市九郎</persName>は、今でも忘れていたことを後悔する心は起らなかった。強盗に身を落して、利欲のために人を殺しているものの、悪鬼のように相手の骨まではしゃぶらなかったことを考えると、<persName ref="#ichikuro">市九郎</persName>は悪い気持はしなかった。それにもかかわらず、<persName ref="#oyumi">お弓</persName>は自分の同性が無残にも殺されて、その身に付けた下衣までが、殺戮者に対する貢物として、自分の目の前に晒されているのを見ながら、なおその飽き足らない欲心は、さすが悪人の<persName ref="#ichikuro">市九郎</persName>の目をこぼれた頭のものにまで及んでいる、そう考えると、<persName ref="#ichikuro">市九郎</persName>は<persName ref="#oyumi">お弓</persName>に対して、いたたまらないような浅ましさを感じた。</p>
+        <p><persName ref="#oyumi">お弓</persName>は、<persName ref="#ichikuro">市九郎</persName>の心に、こうした激変が起っているのをまったく知らないで、</p>
+        <p>「さあ！　お前さん！　一走り行っておくれ。せっかく、こっちの手に入っているものを遠慮するには、当らないじゃないか」と、自分の言い分に十分な条理があることを信ずるように、勝ち誇った表情をした。</p>
+        <p>が、<persName ref="#ichikuro">市九郎</persName>は黙々として応じなかった。</p>
+        <p>「おや！　お前さんの仕事のあらを拾ったので、お気に触ったと見えるね。本当に、お前さんは行く気はないのかい。十両に近いもうけものを、みすみすふいにしてしまうつもりかい」と、<persName ref="#oyumi">お弓</persName>は幾度も<persName ref="#ichikuro">市九郎</persName>に迫った。</p>
+        <p>いつもは、<persName ref="#oyumi">お弓</persName>のいうことを、唯々としてきく<persName ref="#ichikuro">市九郎</persName>ではあったが、今彼の心は激しい動乱の中にあって、<persName ref="#oyumi">お弓</persName>の言葉などは耳に入らないほど、考え込んでいたのである。</p>
+        <p>「いくらいっても、行かないのだね。それじゃ、私が一走り行ってこようよ。場所はどこなの。やっぱりいつものところなのかい」と、<persName ref="#oyumi">お弓</persName>がいった。</p>
+        <p><persName ref="#oyumi">お弓</persName>に対して、抑えがたい嫌悪を感じ始めていた<persName ref="#ichikuro">市九郎</persName>は、<persName ref="#oyumi">お弓</persName>が一刻でも自分のそばにいなくなることを、むしろ欣んだ。</p>
+        <p>「知れたことよ。いつもの通り、<placeName ref="#yabuhara">藪原</placeName>の宿の手前の松並木さ」と、<persName ref="#ichikuro">市九郎</persName>は吐き出すようにいった。「じゃ、一走り行ってくるから。幸い月の夜でそとは明るいし……。ほんとうに、へまな仕事をするったら、ありゃしない」と、いいながら、<persName ref="#oyumi">お弓</persName>は裾をはしょって、草履をつっかけると駆け出した。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、<persName ref="#oyumi">お弓</persName>の後姿を見ていると、浅ましさで、心がいっぱいになってきた。死人の髪のものを剥ぐために、血眼になって駆け出していく女の姿を見ると、<persName ref="#ichikuro">市九郎</persName>はその女に、かつて愛情を持っていただけに、心の底から浅ましく思わずにはいられなかった。その上、自分が悪事をしている時、たとい無残にも人を殺している時でも、金を盗んでいる時でも、自分がしているということが、常に不思議な言い訳になって、その浅ましさを感ずることが少なかったが、一旦人が悪事をなしているのを、静かに傍観するとなると、その恐ろしさ、浅ましさが、あくまで明らかに、<persName ref="#ichikuro">市九郎</persName>の目に映らずにはいなかった。自分が、命を賭してまで得た女が、わずか五両か十両の瑇瑁のために、女性の優しさのすべてを捨てて、死骸に付く狼のように、殺された女の死骸を慕うて駆けて行くのを見ると、<persName ref="#ichikuro">市九郎</persName>は、もうこの罪悪の棲家に、この女と一緒に一刻もいたたまれなくなった。そう考え出すと、自分の今までに犯した悪事がいちいち蘇って自分の心を食い割いた。絞め殺した女の瞳や、血みどろになった繭商人の呻き声や、一太刀浴せかけた白髪の老人の悲鳴などが、一団になって<persName ref="#ichikuro">市九郎</persName>の良心を襲うてきた。彼は、一刻も早く自分の過去から逃れたかった。彼は、自分自身からさえも、逃れたかった。まして自分のすべての罪悪の萌芽であった女から、極力逃れたかった。彼は、決然として立ち上った。彼は、二、三枚の衣類を風呂敷に包んだ。さっきの男から盗った胴巻を、当座の路用として懐ろに入れたままで、支度も整えずに、戸外に飛び出した。が、十間ばかり走り出した時、ふと自分の持っている金も、衣類も、ことごとく盗んだものであるのに気がつくと、跳ね返されたように立ち戻って、自分の家の上り框へ、衣類と金とを、力一杯投げつけた。</p>
+        <p>彼は、<persName ref="#oyumi">お弓</persName>に会わないように、道でない道を<placeName ref="#kisogawa">木曾川</placeName>に添うて一散に走った。どこへ行くという当てもなかった。ただ自分の罪悪の根拠地から、一寸でも、一分でも遠いところへ逃れたかった。</p>
+        <p>三</p>
+        <p>二十里に余る道を、<persName ref="#ichikuro">市九郎</persName>は、山野の別なく唯一息に馳せて、明くる日の昼下り、<placeName ref="#mino">美濃</placeName>国の<placeName ref="#ogaki">大垣</placeName>在の<placeName ref="#joganji">浄願寺</placeName>に駆け込んだ。彼は、最初からこの寺を志してきたのではない。彼の遁走の中途、偶然この寺の前に出た時、彼の惑乱した懺悔の心は、ふと宗教的な光明に縋ってみたいという気になったのである。</p>
+        <p><placeName ref="#joganji">浄願寺</placeName>は、<placeName ref="#mino">美濃</placeName>一円真言宗の僧録であった。<persName ref="#ichikuro">市九郎</persName>は、現往<persName ref="#myohen">明遍</persName>大徳衲の袖に縋って、懺悔の真をいたした。上人はさすがに、この極重悪人をも捨てなかった。<persName ref="#ichikuro">市九郎</persName>が有司の下に自首しようかというのを止めて、</p>
+        <p>「重ね重ねの悪業を重ねた汝じゃから、有司の手によって身を梟木に晒され、現在の報いを自ら受くるのも一法じゃが、それでは未来永劫、<placeName ref="#shonetsu-jigoku">焦熱地獄</placeName>の苦艱を受けておらねばならぬぞよ。それよりも、仏道に帰依し、衆生済度のために、身命を捨てて人々を救うと共に、汝自身を救うのが肝心じゃ」と、教化した。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、上人の言葉をきいて、またさらに懺悔の火に心を爛らせて、当座に出家の志を定めた。彼は、上人の手によって得度して、<persName ref="#ichikuro">了海</persName>と法名を呼ばれ、ひたすら仏道修行に肝胆を砕いたが、道心勇猛のために、わずか半年に足らぬ修行に、行業は氷霜よりも皓く、朝には三密の行法を凝らし、夕には秘密念仏の安座を離れず、二行彬々として豁然智度の心萌し、天晴れの知識となりすました。彼は自分の道心が定まって、もう動かないのを自覚すると、師の坊の許しを得て、諸人救済の大願を起し、諸国雲水の旅に出たのであった。</p>
+        <p><placeName ref="#mino">美濃</placeName>の国を後にして、まず<placeName ref="#kyoto">京洛</placeName>の地を志した。彼は、幾人もの人を殺しながら、たとい僧形の姿なりとも、自分が生き永らえているのが心苦しかった。諸人のため、身を粉々に砕いて、自分の罪障の万分の一をも償いたいと思っていた。ことに自分が、<placeName ref="#kiso">木曾</placeName>山中にあって、行人をなやませたことを思うと、道中の人々に対して、償い切れぬ負担を持っているように思われた。</p>
+        <p>行住座臥にも、人のためを思わぬことはなかった。道路に難渋の人を見ると、彼は、手を引き、腰を押して、その道中を助けた。病に苦しむ老幼を負うて、数里に余る道を遠しとしなかったこともあった。本街道を離れた村道の橋でも、破壊されている時は、彼は自ら山に入って、木を切り、石を運んで修繕した。道の崩れたのを見れば、土砂を運び来って繕うた。かくして、<placeName ref="#kinai">畿内</placeName>から、<placeName ref="#chugoku">中国</placeName>を通して、ひたすら善根を積むことに腐心したが、身に重なれる罪は、空よりも高く、積む善根は土地よりも低きを思うと、彼は今更に、半生の悪業の深きを悲しんだ。<persName ref="#ichikuro">市九郎</persName>は、些細な善根によって、自分の極悪が償いきれぬことを知って、心を暗うした。逆旅の寝覚めにはかかる頼母しからぬ報償をしながら、なお生を貪っていることが、はなはだ腑甲斐ないように思われて、自ら殺したいと思ったことさえあった。が、そのたびごとに、不退転の勇を翻し、諸人救済の大業をなすべき機縁のいたらんことを祈念した。</p>
+        <p><date when="1724">享保九年</date>の秋であった。彼は、<placeName ref="#akamagaseki">赤間ヶ関</placeName>から<placeName ref="#kokura">小倉</placeName>に渡り、<placeName ref="#buzen">豊前</placeName>の国、<placeName ref="#usa-hachimangu">宇佐八幡宮</placeName>を拝し、<placeName ref="#yamakunigawa">山国川</placeName>をさかのぼって耆闍崛山<placeName ref="#rakanji">羅漢寺</placeName>に詣でんものと、<placeName ref="#yokkaichi">四日市</placeName>から南に赤土の茫々たる野原を過ぎ、道を<placeName ref="#yamakunigawa">山国川</placeName>の渓谷に添うて、辿った。</p>
+        <p><placeName ref="#tsukushi">筑紫</placeName>の秋は、駅路の宿りごとに更けて、雑木の森には櫨赤く爛れ、野には稲黄色く稔り、農家の軒には、この辺の名物の柿が真紅の珠を連ねていた。</p>
+        <p>それは<date when="--08">八月</date>に入って間もないある日であった。彼は秋の朝の光の輝く、<placeName ref="#yamakunigawa">山国川</placeName>の清冽な流れを右に見ながら、<placeName ref="#mikuchi">三口</placeName>から<placeName ref="#hotokezaka">仏坂</placeName>の山道を越えて、昼近き頃<placeName ref="#hida">樋田</placeName>の駅に着いた。淋しい駅で昼食の斎にありついた後、再び<placeName ref="#yamakunidani">山国谷</placeName>に添うて南を指した。<placeName ref="#hida">樋田</placeName>駅から出はずれると、道はまた<placeName ref="#yamakunigawa">山国川</placeName>に添うて、火山岩の河岸を伝うて走っていた。</p>
+        <p>歩みがたい石高道を、<persName ref="#ichikuro">市九郎</persName>は、杖を頼りに辿っていた時、ふと道のそばに、この辺の農夫であろう、四、五人の人々が罵り騒いでいるのを見た。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>が近づくと、その中の一人は、早くも<persName ref="#ichikuro">市九郎</persName>の姿を見つけて、</p>
+        <p>「これは、よいところへ来られた。非業の死を遂げた、哀れな亡者じゃ。通りかかられた縁に、一遍の回向をして下され」と、いった。</p>
+        <p>非業の死だときいた時、剽賊のためにあやめられた旅人の死骸ではあるまいかと思うて、<persName ref="#ichikuro">市九郎</persName>は過去の悪業を思い起して、刹那に湧く悔恨の心に、両脚の竦むのをおぼえた。</p>
+        <p>「見れば水死人のようじゃが、ところどころ皮肉の破れているのは、いかがした子細じゃ」と、<persName ref="#ichikuro">市九郎</persName>は、恐る恐るきいた。</p>
+        <p>「御出家は、旅の人と見えてご存じあるまいが、この川を半町も上れば、<placeName ref="#kusaridoshi">鎖渡し</placeName>という難所がある。<placeName ref="#yamakunidani">山国谷</placeName>第一の切所で、南北往来の人馬が、ことごとく難儀するところじゃが、この男はこの川上<placeName ref="#kakisaka">柿坂</placeName>郷に住んでいる馬子じゃが、今朝<placeName ref="#kusaridoshi">鎖渡し</placeName>の中途で、馬が狂うたため、五丈に近いところを真っ逆様に落ちて、見られる通りの無残な最期じゃ」と、その中の一人がいった。</p>
+        <p>「<placeName ref="#kusaridoshi">鎖渡し</placeName>と申せば、かねがね難所とは聞いていたが、かようなあわれを見ることは、たびたびござるのか」と、<persName ref="#ichikuro">市九郎</persName>は、死骸を見守りながら、打ちしめってきいた。</p>
+        <p>「一年に三、四人、多ければ十人も、思わぬ憂き目を見ることがある。無双の難所ゆえに、風雨に桟が朽ちても、修繕も思うにまかせぬのじゃ」と、答えながら、百姓たちは死骸の始末にかかっていた。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、この不幸な遭難者に一遍の経を読むと、足を早めてその<placeName ref="#kusaridoshi">鎖渡し</placeName>へと急いだ。</p>
+        <p>そこまでは、もう一町もなかった。見ると、川の左に聳える荒削りされたような山が、<placeName ref="#yamakunigawa">山国川</placeName>に臨むところで、十丈に近い絶壁に切り立たれて、そこに灰白色のぎざぎざした襞の多い肌を露出しているのであった。<placeName ref="#yamakunigawa">山国川</placeName>の水は、その絶壁に吸い寄せられたように、ここに慕い寄って、絶壁の裾を洗いながら、濃緑の色を湛えて、渦巻いている。</p>
+        <p>里人らが、<placeName ref="#kusaridoshi">鎖渡し</placeName>といったのはこれだろうと、彼は思った。道は、その絶壁に絶たれ、その絶壁の中腹を、松、杉などの丸太を鎖で連ねた桟道が、危げに伝っている。かよわい婦女子でなくとも、俯して五丈に余る水面を見、仰いで頭を圧する十丈に近い絶壁を見る時は、魂消え、心戦くも理りであった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、岩壁に縋りながら、戦く足を踏み締めて、ようやく渡り終ってその絶壁を振り向いた刹那、彼の心にはとっさに大誓願が、勃然として萌した。</p>
+        <p>積むべき贖罪のあまりに小さかった彼は、自分が精進勇猛の気を試すべき難業にあうことを祈っていた。今目前に行人が艱難し、一年に十に近い人の命を奪う難所を見た時、彼は、自分の身命を捨ててこの難所を除こうという思いつきが旺然として起ったのも無理ではなかった。二百余間に余る絶壁を掘貫いて道を通じようという、不敵な誓願が、彼の心に浮かんできたのである。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、自分が求め歩いたものが、ようやくここで見つかったと思った。一年に十人を救えば、十年には百人、百年、千年と経つうちには、千万の人の命を救うことができると思ったのである。</p>
+        <p>こう決心すると、彼は、一途に実行に着手した。その日から、<placeName ref="#rakanji">羅漢寺</placeName>の宿坊に宿りながら、<placeName ref="#yamakunigawa">山国川</placeName>に添うた村々を勧化して、隧道開鑿の大業の寄進を求めた。</p>
+        <p>が、何人もこの風来僧の言葉に、耳を傾ける者はなかった。</p>
+        <p>「三町をも超える大盤石を掘貫こうという風狂人じゃ、はははは」と、嗤うものは、まだよかった。「大騙りじゃ。針のみぞから天を覗くようなことを言い前にして、金を集めようという、大騙りじゃ」と、中には<persName ref="#ichikuro">市九郎</persName>の勧説に、迫害を加うる者さえあった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、十日の間、徒らな勧進に努めたが、何人もが耳を傾けぬのを知ると、奮然として、独力、この大業に当ることを決心した。彼は、石工の持つ槌と鑿とを手に入れて、この大絶壁の一端に立った。それは、一個のカリカチュアであった。削り落しやすい火山岩であるとはいえ、川を圧して聳え立つ蜿蜒たる大絶壁を、<persName ref="#ichikuro">市九郎</persName>は、己一人の力で掘貫こうとするのであった。</p>
+        <p>「とうとう気が狂った！」と、行人は、<persName ref="#ichikuro">市九郎</persName>の姿を指しながら嗤った。</p>
+        <p>が、<persName ref="#ichikuro">市九郎</persName>は屈しなかった。<placeName ref="#yamakunigawa">山国川</placeName>の清流に沐浴して、<persName ref="#kanzeon">観世音菩薩</persName>を祈りながら、渾身の力を籠めて第一の槌を下した。</p>
+        <p>それに応じて、ただ二、三片の砕片が、飛び散ったばかりであった。が、再び力を籠めて第二の槌を下した。更に二、三片の小塊が、巨大なる無限大の大塊から、分離したばかりであった。第三、第四、第五と、<persName ref="#ichikuro">市九郎</persName>は懸命に槌を下した。空腹を感ずれば、近郷を托鉢し、腹満つれば絶壁に向って槌を下した。懈怠の心を生ずれば、只真言を唱えて、勇猛の心を振い起した。一日、二日、三日、<persName ref="#ichikuro">市九郎</persName>の努力は間断なく続いた。旅人は、そのそばを通るたびに、嘲笑の声を送った。が、<persName ref="#ichikuro">市九郎</persName>の心は、そのために須臾も撓むことはなかった。嗤笑の声を聞けば、彼はさらに槌を持つ手に力を籠めた。</p>
+        <p>やがて、<persName ref="#ichikuro">市九郎</persName>は、雨露を凌ぐために、絶壁に近く木小屋を立てた。朝は、<placeName ref="#yamakunigawa">山国川</placeName>の流れが星の光を写す頃から起き出て、夕は瀬鳴の音が静寂の天地に澄みかえる頃までも、止めなかった。が、行路の人々は、なお嗤笑の言葉を止めなかった。</p>
+        <p>「身のほどを知らぬたわけじゃ」と、<persName ref="#ichikuro">市九郎</persName>の努力を眼中におかなかった。</p>
+        <p>が、<persName ref="#ichikuro">市九郎</persName>は一心不乱に槌を振った。槌を振っていさえすれば、彼の心には何の雑念も起らなかった。人を殺した悔恨も、そこには無かった。<placeName ref="#gokuraku">極楽</placeName>に生れようという、欣求もなかった。ただそこに、晴々した精進の心があるばかりであった。彼は出家して以来、夜ごとの寝覚めに、身を苦しめた自分の悪業の記憶が、日に薄らいでいくのを感じた。彼はますます勇猛の心を振い起して、ひたすら専念に槌を振った。</p>
+        <p>新しい年が来た。春が来て、夏が来て、早くも一年が経った。<persName ref="#ichikuro">市九郎</persName>の努力は、空しくはなかった。大絶壁の一端に、深さ一丈に近い洞窟が穿たれていた。それは、ほんの小さい洞窟ではあったが、<persName ref="#ichikuro">市九郎</persName>の強い意志は、最初の爪痕を明らかに止めていた。</p>
+        <p>が、近郷の人々はまた<persName ref="#ichikuro">市九郎</persName>を嗤った。</p>
+        <p>「あれ見られい！　狂人坊主が、あれだけ掘りおった。一年の間、もがいて、たったあれだけじゃ……」と、嗤った。が、<persName ref="#ichikuro">市九郎</persName>は自分の掘り穿った穴を見ると、涙の出るほど嬉しかった。それはいかに浅くとも、自分が精進の力の如実に現れているものに、相違なかった。<persName ref="#ichikuro">市九郎</persName>は年を重ねて、また更に振い立った。夜は如法の闇に、昼もなお薄暗い洞窟のうちに端座して、ただ右の腕のみを、狂気のごとくに振っていた。<persName ref="#ichikuro">市九郎</persName>にとって、右の腕を振ることのみが、彼の宗教的生活のすべてになってしまった。</p>
+        <p>洞窟の外には、日が輝き月が照り、雨が降り嵐が荒んだ。が、洞窟の中には、間断なき槌の音のみがあった。</p>
+        <p>二年の終わりにも、里人はなお嗤笑を止めなかった。が、それはもう、声にまでは出てこなかった。ただ、<persName ref="#ichikuro">市九郎</persName>の姿を見た後、顔を見合せて、互いに嗤い合うだけであった。が、更に一年経った。<persName ref="#ichikuro">市九郎</persName>の槌の音は<placeName ref="#yamakunigawa">山国川</placeName>の水声と同じく、不断に響いていた。村の人たちは、もうなんともいわなかった。彼らが嗤笑の表情は、いつの間にか驚異のそれに変っていた。<persName ref="#ichikuro">市九郎</persName>は梳らざれば、頭髪はいつの間にか伸びて双肩を覆い、浴せざれば、垢づきて人間とも見えなかった。が、彼は自分が掘り穿った洞窟のうちに、獣のごとく蠢きながら、狂気のごとくその槌を振いつづけていたのである。</p>
+        <p>里人の驚異は、いつの間にか同情に変っていた。<persName ref="#ichikuro">市九郎</persName>がしばしの暇を窃んで、托鉢の行脚に出かけようとすると、洞窟の出口に、思いがけなく一椀の斎を見出すことが多くなった。<persName ref="#ichikuro">市九郎</persName>はそのために、托鉢に費やすべき時間を、更に絶壁に向うことができた。</p>
+        <p>四年目の終りが来た。<persName ref="#ichikuro">市九郎</persName>の掘り穿った洞窟は、もはや五丈の深さに達していた。が、その三町を超ゆる絶壁に比ぶれば、そこになお、亡羊の嘆があった。里人は<persName ref="#ichikuro">市九郎</persName>の熱心に驚いたものの、いまだ、かくばかり見えすいた徒労に合力するものは、一人もなかった。<persName ref="#ichikuro">市九郎</persName>は、ただ独りその努力を続けねばならなかった。が、もう掘り穿つ仕事において、三昧に入った<persName ref="#ichikuro">市九郎</persName>は、ただ槌を振うほかは何の存念もなかった。ただ土鼠のように、命のある限り、掘り穿っていくほかには、何の他念もなかった。彼はただ一人拮々として掘り進んだ。洞窟の外には春去って秋来り、四時の風物が移り変ったが、洞窟の中には不断の槌の音のみが響いた。</p>
+        <p>「可哀そうな坊様じゃ。ものに狂ったとみえ、あの大盤石を穿っていくわ。十の一も穿ち得ないで、おのれが命を終ろうものを」と、行路の人々は、<persName ref="#ichikuro">市九郎</persName>の空しい努力を、悲しみ始めた。が、一年経ち二年経ち、ちょうど九年目の終りに、穴の入口より奥まで二十二間を計るまでに、掘り穿った。</p>
+        <p><placeName ref="#hida">樋田</placeName>郷の里人は、初めて<persName ref="#ichikuro">市九郎</persName>の事業の可能性に気がついた。一人の痩せた乞食僧が、九年の力でこれまで掘り穿ち得るものならば、人を増し歳月を重ねたならば、この大絶壁を穿ち貫くことも、必ずしも不思議なことではないという考えが、里人らの胸の中に銘ぜられてきた。九年前、<persName ref="#ichikuro">市九郎</persName>の勧進をこぞって斥けた<placeName ref="#yamakunigawa">山国川</placeName>に添う七郷の里人は、今度は自発的に開鑿の寄進に付いた。数人の石工が<persName ref="#ichikuro">市九郎</persName>の事業を援けるために雇われた。もう、<persName ref="#ichikuro">市九郎</persName>は孤独ではなかった。岩壁に下す多数の槌の音は、勇ましく賑やかに、洞窟の中から、もれ始めた。</p>
+        <p>が、翌年になって、里人たちが、工事の進み方を測った時、それがまだ絶壁の四分の一にも達していないのを発見すると、里人たちは再び落胆疑惑の声をもらした。</p>
+        <p>「人を増しても、とても成就はせぬことじゃ。あたら、<persName ref="#ichikuro">了海</persName>どのに騙かされて要らぬ物入りをした」と、彼らははかどらぬ工事に、いつの間にか倦ききっておった。<persName ref="#ichikuro">市九郎</persName>は、また独り取り残されねばならなかった。彼は、自分のそばに槌を振る者が、一人減り二人減り、ついには一人もいなくなったのに気がついた。が、彼は決して去る者を追わなかった。黙々として、自分一人その槌を振い続けたのみである。</p>
+        <p>里人の注意は、まったく<persName ref="#ichikuro">市九郎</persName>の身辺から離れてしまった。ことに洞窟が、深く穿たれれば穿たれるほど、その奥深く槌を振う<persName ref="#ichikuro">市九郎</persName>の姿は、行人の目から遠ざかっていった。人々は、闇のうちに閉された洞窟の中を透し見ながら、</p>
+        <p>「<persName ref="#ichikuro">了海</persName>さんは、まだやっているのかなあ」と、疑った。が、そうした注意も、しまいにはだんだん薄れてしまって、<persName ref="#ichikuro">市九郎</persName>の存在は、里人の念頭からしばしば消失せんとした。が、<persName ref="#ichikuro">市九郎</persName>の存在が、里人に対して没交渉であるがごとく、里人の存在もまた<persName ref="#ichikuro">市九郎</persName>に没交渉であった。彼にはただ、眼前の大岩壁のみが存在するばかりであった。</p>
+        <p>しかし、<persName ref="#ichikuro">市九郎</persName>は、洞窟の中に端座してからもはや十年にも余る間、暗澹たる冷たい石の上に座り続けていたために、顔は色蒼ざめ双の目が窪んで、肉は落ち骨あらわれ、この世に生ける人とも見えなかった。が、<persName ref="#ichikuro">市九郎</persName>の心には不退転の勇猛心がしきりに燃え盛って、ただ一念に穿ち進むほかは、何物もなかった。一分でも一寸でも、岸壁の削り取られるごとに、彼は歓喜の声を揚げた。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、ただ一人取り残されたままに、また三年を経た。すると、里人たちの注意は、再び<persName ref="#ichikuro">市九郎</persName>の上に帰りかけていた。彼らが、ほんの好奇心から、洞窟の深さを測ってみると、全長六十五間、川に面する岩壁には、採光の窓が一つ穿たれ、もはや、この大岩壁の三分の一は、主として<persName ref="#ichikuro">市九郎</persName>の瘠腕によって、貫かれていることが分かった。</p>
+        <p>彼らは、再び驚異の目を見開いた。彼らは、過去の無知を恥じた。<persName ref="#ichikuro">市九郎</persName>に対する尊崇の心は、再び彼らの心に復活した。やがて、寄進された十人に近い石工の槌の音が、再び<persName ref="#ichikuro">市九郎</persName>のそれに和した。</p>
+        <p>また一年経った。一年の月日が経つうちに、里人たちは、いつかしら目先の遠い出費を、悔い始めていた。</p>
+        <p>寄進の人夫は、いつの間にか、一人減り二人減って、おしまいには、<persName ref="#ichikuro">市九郎</persName>の槌の音のみが、洞窟の闇を、打ち震わしていた。が、そばに人がいても、いなくても、<persName ref="#ichikuro">市九郎</persName>の槌の力は変らなかった。彼は、ただ機械のごとく、渾身の力を入れて槌を挙げ、渾身の力をもってこれを振り降ろした。彼は、自分の一身をさえ忘れていた。主を殺したことも、剽賊を働いたことも、人を殺したことも、すべては彼の記憶のほかに薄れてしまっていた。</p>
+        <p>一年経ち、二年経った。一念の動くところ、彼の瘠せた腕は、鉄のごとく屈しなかった。ちょうど、十八年目の終りであった。彼は、いつの間にか、岩壁の二分の一を穿っていた。</p>
+        <p>里人は、この恐ろしき奇跡を見ると、もはや<persName ref="#ichikuro">市九郎</persName>の仕事を、少しも疑わなかった。彼らは、前二回の懈怠を心から恥じ、七郷の人々合力の誠を尽くし、こぞって<persName ref="#ichikuro">市九郎</persName>を援け始めた。その年、<placeName ref="#nakatsu">中津</placeName>藩の郡奉行が巡視して、<persName ref="#ichikuro">市九郎</persName>に対して、奇特の言葉を下した。近郷近在から、三十人に近い石工があつめられた。工事は、枯葉を焼く火のように進んだ。</p>
+        <p>人々は、衰残の姿いたいたしい<persName ref="#ichikuro">市九郎</persName>に、</p>
+        <p>「もはや、そなたは石工共の統領をなさりませ。自ら槌を振うには及びませぬ」と、勧めたが、<persName ref="#ichikuro">市九郎</persName>は頑として応じなかった。彼は、たおるれば槌を握ったままと、思っているらしかった。彼は、三十の石工がそばに働くのも知らぬように、寝食を忘れ、懸命の力を尽くすこと、少しも前と変らなかった。</p>
+        <p>が、人々が<persName ref="#ichikuro">市九郎</persName>に休息を勧めたのも、無理ではなかった。二十年にも近い間、日の光も射さぬ岩壁の奥深く、座り続けたためであろう。彼の両脚は長い端座に傷み、いつの間にか屈伸の自在を欠いていた。彼は、わずかの歩行にも杖に縋らねばならなかった。</p>
+        <p>その上、長い間、闇に座して、日光を見なかったためでもあろう。また不断に、彼の身辺に飛び散る砕けた石の砕片が、その目を傷つけたためでもあろう。彼の両目は、朦朧として光を失い、もののあいろもわきまえかねるようになっていた。</p>
+        <p>さすがに、不退転の<persName ref="#ichikuro">市九郎</persName>も、身に迫る老衰を痛む心はあった。身命に対する執着はなかったけれど、中道にしてたおれることを、何よりも無念と思ったからであった。</p>
+        <p>「もう二年の辛抱じゃ」と、彼は心のうちに叫んで、身の老衰を忘れようと、懸命に槌を振うのであった。</p>
+        <p>冒しがたき大自然の威厳を示して、<persName ref="#ichikuro">市九郎</persName>の前に立ち塞がっていた岩壁は、いつの間にか衰残の乞食僧一人の腕に貫かれて、その中腹を穿つ洞窟は、命ある者のごとく、一路その核心を貫かんとしているのであった。</p>
+        <p>四</p>
+        <p><persName ref="#ichikuro">市九郎</persName>の健康は、過度の疲労によって、痛ましく傷つけられていたが、彼にとって、それよりももっと恐ろしい敵が、彼の生命を狙っているのであった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>のために非業の横死を遂げた<persName ref="#saburobei">中川三郎兵衛</persName>は、家臣のために殺害されたため、家事不取締とあって、家は取り潰され、その時三歳であった一子<persName ref="#sanenosuke">実之助</persName>は、縁者のために養い育てられることになった。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、十三になった時、初めて自分の父が非業の死を遂げたことを聞いた。ことに、相手が対等の士人でなくして、自分の家に養われた奴僕であることを知ると、少年の心は、無念の憤りに燃えた。彼は即座に復讐の一義を、肝深く銘じた。彼は、馳せて柳生の道場に入った。十九の年に、免許皆伝を許されると、彼はただちに報復の旅に上ったのである。もし、首尾よく本懐を達して帰れば、一家再興の肝煎りもしようという、親類一同の激励の言葉に送られながら。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、馴れぬ旅路に、多くの艱難を苦しみながら、諸国を遍歴して、ひたすら敵<persName ref="#ichikuro">市九郎</persName>の所在を求めた。<persName ref="#ichikuro">市九郎</persName>をただ一度さえ見たこともない<persName ref="#sanenosuke">実之助</persName>にとっては、それは雲をつかむがごときおぼつかなき捜索であった。<placeName ref="#kinai">五畿内</placeName>、<placeName ref="#tokaido">東海</placeName>、<placeName ref="#tosando">東山</placeName>、<placeName ref="#sanindo">山陰</placeName>、<placeName ref="#sanyodo">山陽</placeName>、<placeName ref="#hokurikudo">北陸</placeName>、<placeName ref="#nankaido">南海</placeName>と、彼は漂泊の旅路に年を送り年を迎え、二十七の年まで空虚な遍歴の旅を続けた。敵に対する怨みも憤りも、旅路の艱難に消磨せんとすることたびたびであった。が、非業に殪れた父の無念を思い、中川家再興の重任を考えると、奮然と志を奮い起すのであった。</p>
+        <p><placeName ref="#edo">江戸</placeName>を立ってからちょうど九年目の春を、彼は<placeName ref="#fukuoka">福岡</placeName>の城下に迎えた。本土を空しく尋ね歩いた後に、辺陲の<placeName ref="#kyushu">九州</placeName>をも探ってみる気になったのである。</p>
+        <p><placeName ref="#fukuoka">福岡</placeName>の城下から<placeName ref="#nakatsu">中津</placeName>の城下に移った彼は、<date when="--02">二月</date>に入った一日、<placeName ref="#usa-hachimangu">宇佐八幡宮</placeName>に賽して、本懐の一日も早く達せられんことを祈念した。<persName ref="#sanenosuke">実之助</persName>は、参拝を終えてから境内の茶店に憩うた。その時に、ふと彼はそばの百姓体の男が、居合せた参詣客に、</p>
+        <p>「その御出家は、元は<placeName ref="#edo">江戸</placeName>から来たお人じゃげな。若い時に人を殺したのを懺悔して、諸人済度の大願を起したそうじゃが、今いうた<placeName ref="#hida">樋田</placeName>の刳貫は、この御出家一人の力でできたものじゃ」と語るのを耳にした。</p>
+        <p>この話を聞いた<persName ref="#sanenosuke">実之助</persName>は、九年この方いまだ感じなかったような興味を覚えた。彼はやや急き込みながら、「率爾ながら、少々ものを尋ねるが、その出家と申すは、年の頃はどれぐらいじゃ」と、きいた。その男は、自分の談話が武士の注意をひいたことを、光栄であると思ったらしく、</p>
+        <p>「さようでございますな。私はその御出家を拝んだことはございませぬが、人の噂では、もう六十に近いと申します」</p>
+        <p>「丈は高いか、低いか」と、<persName ref="#sanenosuke">実之助</persName>はたたみかけてきいた。</p>
+        <p>「それもしかとは、分かりませぬ。何様、洞窟の奥深くいられるゆえ、しかとは分かりませぬ」</p>
+        <p>「その者の俗名は、なんと申したか存ぜぬか」</p>
+        <p>「それも、とんと分かりませんが、お生れは<placeName ref="#echigo">越後</placeName>の<placeName ref="#kashiwazaki">柏崎</placeName>で、若い時に<placeName ref="#edo">江戸</placeName>へ出られたそうでござります」と、百姓は答えた。</p>
+        <p>ここまできいた<persName ref="#sanenosuke">実之助</persName>は、躍り上って欣んだ。彼が、<placeName ref="#edo">江戸</placeName>を立つ時に、親類の一人は、敵は<placeName ref="#echigo">越後</placeName><placeName ref="#kashiwazaki">柏崎</placeName>の生れゆえ、故郷へ立ち回るかも計りがたい、<placeName ref="#echigo">越後</placeName>は一入心を入れて探索せよという、注意を受けていたのであった。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、これぞ正しく<placeName ref="#usa-hachimangu">宇佐八幡宮</placeName>の神託なりと勇み立った。彼はその老僧の名と、<placeName ref="#yamakunidani">山国谷</placeName>に向う道をきくと、もはや八つ刻を過ぎていたにもかかわらず、必死の力を双脚に籠めて、敵の所在へと急いだ。その日の初更近く、<placeName ref="#hida">樋田</placeName>村に着いた<persName ref="#sanenosuke">実之助</persName>は、ただちに洞窟へ立ち向おうと思ったが、焦ってはならぬと思い返して、その夜は<placeName ref="#hida">樋田</placeName>駅の宿に焦慮の一夜を明かすと、翌日は早く起き出でて、軽装して<placeName ref="#hida">樋田</placeName>の刳貫へと向った。</p>
+        <p>刳貫の入口に着いた時、彼はそこに、石の砕片を運び出している石工に尋ねた。</p>
+        <p>「この洞窟の中に、<persName ref="#ichikuro">了海</persName>といわるる御出家がおわすそうじゃが、それに相違ないか」</p>
+        <p>「おわさないでなんとしょう。<persName ref="#ichikuro">了海</persName>様は、この洞の主も同様な方じゃ。はははは」と、石工は心なげに笑った。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、本懐を達すること、はや眼前にありと、欣び勇んだ。が、彼はあわててはならぬと思った。</p>
+        <p>「して、出入り口はここ一カ所か」と、きいた。敵に逃げられてはならぬと思ったからである。</p>
+        <p>「それは知れたことじゃ。向うへ口を開けるために、<persName ref="#ichikuro">了海</persName>様は塗炭の苦しみをなさっているのじゃ」と、石工が答えた。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、多年の怨敵が、嚢中の鼠のごとく、目前に置かれてあるのを欣んだ。たとい、その下に使わるる石工が幾人いようとも、切り殺すに何の造作もあるべきと、勇み立った。</p>
+        <p>「其方に少し頼みがある。<persName ref="#ichikuro">了海</persName>どのに御意得たいため、遥々と尋ねて参った者じゃと、伝えてくれ」と、いった。石工が、洞窟の中へはいった後で、<persName ref="#sanenosuke">実之助</persName>は一刀の目くぎを湿した。彼は、心のうちで、生来初めてめぐりあう敵の容貌を想像した。洞門の開鑿を統領しているといえば、五十は過ぎているとはいえ、筋骨たくましき男であろう。ことに若年の頃には、兵法に疎からざりしというのであるから、ゆめ油断はならぬと思っていた。</p>
+        <p>が、しばらくして<persName ref="#sanenosuke">実之助</persName>の面前へと、洞門から出てきた一人の乞食僧があった。それは、出てくるというよりも、蟇のごとく這い出てきたという方が、適当であった。それは、人間というよりも、むしろ、人間の残骸というべきであった。肉ことごとく落ちて骨あらわれ、脚の関節以下はところどころただれて、長く正視するに堪えなかった。破れた法衣によって、僧形とは知れるものの、頭髪は長く伸びて皺だらけの額をおおっていた。老僧は、灰色をなした目をしばたたきながら、<persName ref="#sanenosuke">実之助</persName>を見上げて、</p>
+        <p>「老眼衰えはてまして、いずれの方ともわきまえかねまする」と、いった。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>の、極度にまで、張り詰めてきた心は、この老僧を一目見た刹那たじたじとなってしまっていた。彼は、心の底から憎悪を感じ得るような悪僧を欲していた。しかるに彼の前には、人間とも死骸ともつかぬ、半死の老僧が蹲っているのである。<persName ref="#sanenosuke">実之助</persName>は、失望し始めた自分の心を励まして、</p>
+        <p>「そのもとが、<persName ref="#ichikuro">了海</persName>といわるるか」と、意気込んできいた。</p>
+        <p>「いかにも、さようでござります。してそのもとは」と、老僧は訝しげに<persName ref="#sanenosuke">実之助</persName>を見上げた。</p>
+        <p>「<persName ref="#ichikuro">了海</persName>とやら、いかに僧形に身をやつすとも、よも忘れはいたすまい。汝、<persName ref="#ichikuro">市九郎</persName>と呼ばれし若年の砌、主人<persName ref="#saburobei">中川三郎兵衛</persName>を打って立ち退いた覚えがあろう。某は、<persName ref="#saburobei">三郎兵衛</persName>の一子<persName ref="#sanenosuke">実之助</persName>と申すものじゃ。もはや、逃れぬところと覚悟せよ」</p>
+        <p>と、<persName ref="#sanenosuke">実之助</persName>の言葉は、あくまで落着いていたが、そこに一歩も、許すまじき厳正さがあった。</p>
+        <p>が、<persName ref="#ichikuro">市九郎</persName>は<persName ref="#sanenosuke">実之助</persName>の言葉をきいて、少しもおどろかなかった。</p>
+        <p>「いかさま、<persName ref="#saburobei">中川様</persName>の御子息、<persName ref="#sanenosuke">実之助</persName>様か。いやお父上を打って立ち退いた者、この<persName ref="#ichikuro">了海</persName>に相違ござりませぬ」と、彼は自分を敵と狙う者に会ったというよりも、旧主の遺児に会った親しさをもって答えたが、<persName ref="#sanenosuke">実之助</persName>は、<persName ref="#ichikuro">市九郎</persName>の声音に欺かれてはならぬと思った。</p>
+        <p>「主を打って立ち退いた非道の汝を討つために、十年に近い年月を艱難のうちに過したわ。ここで会うからは、もはや逃れぬところと尋常に勝負せよ」と、いった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、少しも悪怯れなかった。もはや期年のうちに成就すべき大願を見果てずして死ぬことが、やや悲しまれたが、それもおのれが悪業の報いであると思うと、彼は死すべき心を定めた。</p>
+        <p>「<persName ref="#sanenosuke">実之助</persName>様、いざお切りなされい。おきき及びもなされたろうが、これは<persName ref="#ichikuro">了海</persName>めが、罪亡しに掘り穿とうと存じた洞門でござるが、十九年の歳月を費やして、九分までは竣工いたした。<persName ref="#ichikuro">了海</persName>、身を果つとも、もはや年を重ねずして成り申そう。御身の手にかかり、この洞門の入口に血を流して人柱となり申さば、はや思い残すこともござりませぬ」と、いいながら、彼は見えぬ目をしばたたいたのである。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、この半死の老僧に接していると、親の敵に対して懐いていた憎しみが、いつの間にか、消え失せているのを覚えた。敵は、父を殺した罪の懺悔に、身心を粉に砕いて、半生を苦しみ抜いている。しかも、自分が一度名乗りかけると、唯々として命を捨てようとしているのである。かかる半死の老僧の命を取ることが、なんの復讐であるかと、<persName ref="#sanenosuke">実之助</persName>は考えたのである。が、しかしこの敵を打たざる限りは、多年の放浪を切り上げて、<placeName ref="#edo">江戸</placeName>へ帰るべきよすがはなかった。まして家名の再興などは、思いも及ばぬことであったのである。<persName ref="#sanenosuke">実之助</persName>は、憎悪よりも、むしろ打算の心からこの老僧の命を縮めようかと思った。が、激しい燃ゆるがごとき憎悪を感ぜずして、打算から人間を殺すことは、<persName ref="#sanenosuke">実之助</persName>にとって忍びがたいことであった。彼は、消えかかろうとする憎悪の心を励ましながら、打ち甲斐なき敵を打とうとしたのである。</p>
+        <p>その時であった。洞窟の中から走り出て来た五、六人の石工は、<persName ref="#ichikuro">市九郎</persName>の危急を見ると、挺身して彼を庇いながら「<persName ref="#ichikuro">了海</persName>様をなんとするのじゃ」と、<persName ref="#sanenosuke">実之助</persName>を咎めた。彼らの面には、仕儀によっては許すまじき色がありありと見えた。</p>
+        <p>「子細あって、その老僧を敵と狙い、端なくも今日めぐりおうて、本懐を達するものじゃ。妨げいたすと、余人なりとも容赦はいたさぬぞ」と、<persName ref="#sanenosuke">実之助</persName>は凜然といった。</p>
+        <p>が、そのうちに、石工の数は増え、行路の人々が幾人となく立ち止って、彼らは<persName ref="#sanenosuke">実之助</persName>を取り巻きながら、<persName ref="#ichikuro">市九郎</persName>の身体に指の一本も触れさせまいと、銘々にいきまき始めた。</p>
+        <p>「敵を討つ討たぬなどは、それはまだ世にあるうちのことじゃ。見らるる通り、<persName ref="#ichikuro">了海</persName>どのは、染衣薙髪の身である上に、この<placeName ref="#yamakunidani">山国谷</placeName>七郷の者にとっては、<persName ref="#jiji-bosatsu">持地菩薩</persName>の再来とも仰がれる方じゃ」と、そのうちのある者は、<persName ref="#sanenosuke">実之助</persName>の敵討ちを、叶わぬ非望であるかのようにいい張った。</p>
+        <p>が、こう周囲の者から妨げられると、<persName ref="#sanenosuke">実之助</persName>の敵に対する怒りはいつの間にか蘇っていた。彼は武士の意地として、手をこまねいて立ち去るべきではなかった。</p>
+        <p>「たとい沙門の身なりとも、主殺しの大罪は免れぬぞ。親の敵を討つ者を妨げいたす者は、一人も容赦はない」と、<persName ref="#sanenosuke">実之助</persName>は一刀の鞘を払った。<persName ref="#sanenosuke">実之助</persName>を囲う群衆も、皆ことごとく身構えた。すると、その時、<persName ref="#ichikuro">市九郎</persName>はしわがれた声を張り上げた。</p>
+        <p>「皆の衆、お控えなされい。<persName ref="#ichikuro">了海</persName>、討たるべき覚え十分ござる。この洞門を穿つことも、ただその罪滅ぼしのためじゃ。今かかる孝子のお手にかかり、半死の身を終ること、<persName ref="#ichikuro">了海</persName>が一期の願いじゃ。皆の衆妨げ無用じゃ」</p>
+        <p>こういいながら<persName ref="#ichikuro">市九郎</persName>は、身を挺して、<persName ref="#sanenosuke">実之助</persName>のそばにいざり寄ろうとした。かねがね、<persName ref="#ichikuro">市九郎</persName>の強剛なる意志を知りぬいている周囲の人々は、彼の決心を翻すべき由もないのを知った。<persName ref="#ichikuro">市九郎</persName>の命、ここに終るかと思われた。その時、石工の統領が、<persName ref="#sanenosuke">実之助</persName>の前に進み出でながら、</p>
+        <p>「御武家様も、おきき及びでもござろうが、この刳貫は<persName ref="#ichikuro">了海</persName>様、一生の大誓願にて、二十年に近き御辛苦に身心を砕かれたのじゃ。いかに、御自身の悪業とはいえ、大願成就を目前に置きながら、お果てなさるること、いかばかり無念であろう。我らのこぞってのお願いは、長くとは申さぬ、この刳貫の通じ申す間、<persName ref="#ichikuro">了海</persName>様のお命を、我らに預けては下さらぬか。刳貫さえ通じた節は、即座に<persName ref="#ichikuro">了海</persName>様を存分になさりませ」と、彼は誠を表して哀願した。群衆は口々に、</p>
+        <p>「ことわりじゃ、ことわりじゃ」と、賛成した。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>も、そういわれてみると、その哀願をきかぬわけにはいかなかった。今ここで敵を討とうとして、群衆の妨害を受けて不覚を取るよりも、刳通の竣工を待ったならば、今でさえ自ら進んで討たれようという<persName ref="#ichikuro">市九郎</persName>が、義理に感じて首を授けるのは、必定であると思った。またそうした打算から離れても、敵とはいいながらこの老僧の大誓願を遂げさしてやるのも、決して不快なことではなかった。<persName ref="#sanenosuke">実之助</persName>は、<persName ref="#ichikuro">市九郎</persName>と群衆とを等分に見ながら、</p>
+        <p>「<persName ref="#ichikuro">了海</persName>の僧形にめでてその願い許して取らそう。束えた言葉は忘れまいぞ」と、いった。</p>
+        <p>「念もないことでござる。一分の穴でも、一寸の穴でも、この刳貫が向う側へ通じた節は、その場を去らず<persName ref="#ichikuro">了海</persName>様を討たさせ申そう。それまではゆるゆると、この辺りに御滞在なされませ」と、石工の棟梁は、穏やかな口調でいった。</p>
+        <p><persName ref="#ichikuro">市九郎</persName>は、この紛擾が無事に解決が付くと、それによって徒費した時間がいかにも惜しまれるように、にじりながら洞窟の中へ入っていった。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、大切の場合に思わぬ邪魔が入って、目的が達し得なかったことを憤った。彼はいかんともしがたい鬱憤を抑えながら、石工の一人に案内せられて、木小屋のうちへ入った。自分一人になって考えると、敵を目前に置きながら、討ち得なかった自分の腑甲斐なさを、無念と思わずにはいられなかった。彼の心はいつの間にか苛だたしい憤りでいっぱいになっていた。彼は、もう刳貫の竣成を待つといったような、敵に対する緩かな心をまったく失ってしまった。彼は今宵にも洞窟の中へ忍び入って、<persName ref="#ichikuro">市九郎</persName>を討って立ち退こうという決心の臍を固めた。が、<persName ref="#sanenosuke">実之助</persName>が<persName ref="#ichikuro">市九郎</persName>の張り番をしているように、石工たちは<persName ref="#sanenosuke">実之助</persName>を見張っていた。</p>
+        <p>最初の二、三日を、心にもなく無為に過したが、ちょうど五日目の晩であった。毎夜のことなので、石工たちも警戒の目を緩めたと見え、丑に近い頃に何人もいぎたない眠りに入っていた。<persName ref="#sanenosuke">実之助</persName>は、今宵こそと思い立った。彼は、がばと起き上ると、枕元の一刀を引き寄せて、静かに木小屋の外に出た。それは早春の夜の月が冴えた晩であった。<placeName ref="#yamakunigawa">山国川</placeName>の水は月光の下に蒼く渦巻きながら流れていた。が、周囲の風物には目もくれず、<persName ref="#sanenosuke">実之助</persName>は、足を忍ばせてひそかに洞門に近づいた。削り取った石塊が、ところどころに散らばって、歩を運ぶたびごとに足を痛めた。</p>
+        <p>洞窟の中は、入口から来る月光と、ところどころに刳り明けられた窓から射し入る月光とで、ところどころほの白く光っているばかりであった。彼は右方の岩壁を手探り手探り奥へ奥へと進んだ。</p>
+        <p>入口から、二町ばかり進んだ頃、ふと彼は洞窟の底から、クワックワッと間を置いて響いてくる音を耳にした。彼は最初それがなんであるか分からなかった。が、一歩進むに従って、その音は拡大していって、おしまいには洞窟の中の夜の寂静のうちに、こだまするまでになった。それは、明らかに岩壁に向って鉄槌を下す音に相違なかった。<persName ref="#sanenosuke">実之助</persName>は、その悲壮な、凄みを帯びた音によって、自分の胸が激しく打たれるのを感じた。奥に近づくに従って、玉を砕くような鋭い音は、洞窟の周囲にこだまして、<persName ref="#sanenosuke">実之助</persName>の聴覚を、猛然と襲ってくるのであった。彼は、この音をたよりに這いながら近づいていった。この槌の音の主こそ、敵<persName ref="#ichikuro">了海</persName>に相違あるまいと思った。ひそかに一刀の鯉口を湿しながら、息を潜めて寄り添うた。その時、ふと彼は槌の音の間々に囁くがごとく、うめくがごとく、<persName ref="#ichikuro">了海</persName>が経文を誦する声をきいたのである。</p>
+        <p>そのしわがれた悲壮な声が、水を浴びせるように<persName ref="#sanenosuke">実之助</persName>に徹してきた。深夜、人去り、草木眠っている中に、ただ暗中に端座して鉄槌を振っている<persName ref="#ichikuro">了海</persName>の姿が、墨のごとき闇にあってなお、<persName ref="#sanenosuke">実之助</persName>の心眼に、ありありとして映ってきた。それは、もはや人間の心ではなかった。喜怒哀楽の情の上にあって、ただ鉄槌を振っている勇猛精進の菩薩心であった。<persName ref="#sanenosuke">実之助</persName>は、握りしめた太刀の柄が、いつの間にか緩んでいるのを覚えた。彼はふと、われに返った。すでに仏心を得て、衆生のために、砕身の苦を嘗めている高徳の聖に対し、深夜の闇に乗じて、ひはぎのごとく、獣のごとく、瞋恚の剣を抜きそばめている自分を顧ると、彼は強い戦慄が身体を伝うて流れるのを感じた。</p>
+        <p>洞窟を揺がせるその力強い槌の音と、悲壮な念仏の声とは、<persName ref="#sanenosuke">実之助</persName>の心を散々に打ち砕いてしまった。彼は、潔く竣成の日を待ち、その約束の果さるるのを待つよりほかはないと思った。</p>
+        <p><persName ref="#sanenosuke">実之助</persName>は、深い感激を懐きながら、洞外の月光を目指し、洞窟の外に這い出たのである。</p>
+        <p>そのことがあってから間もなく、刳貫の工事に従う石工のうちに、武家姿の<persName ref="#sanenosuke">実之助</persName>の姿が見られた。彼はもう、老僧を闇討ちにして立ち退こうというような険しい心は、少しも持っていなかった。<persName ref="#ichikuro">了海</persName>が逃げも隠れもせぬことを知ると、彼は好意をもって、<persName ref="#ichikuro">了海</persName>がその一生の大願を成就する日を、待ってやろうと思っていた。</p>
+        <p>が、それにしても、茫然と待っているよりも、自分もこの大業に一臂の力を尽くすことによって、いくばくかでも復讐の期日が短縮せられるはずであることを悟ると、<persName ref="#sanenosuke">実之助</persName>は自ら石工に伍して、槌を振い始めたのである。</p>
+        <p>敵と敵とが、相並んで槌を下した。<persName ref="#sanenosuke">実之助</persName>は、本懐を達する日の一日でも早かれと、懸命に槌を振った。<persName ref="#ichikuro">了海</persName>は<persName ref="#sanenosuke">実之助</persName>が出現してからは、一日も早く大願を成就して孝子の願いを叶えてやりたいと思ったのであろう。彼は、また更に精進の勇を振って、狂人のように岩壁を打ち砕いていた。</p>
+        <p>そのうちに、月が去り月が来た。<persName ref="#sanenosuke">実之助</persName>の心は、<persName ref="#ichikuro">了海</persName>の大勇猛心に動かされて、彼自ら刳貫の大業に讐敵の怨みを忘れようとしがちであった。</p>
+        <p>石工共が、昼の疲れを休めている真夜中にも、敵と敵とは相並んで、黙々として槌を振っていた。</p>
+        <p>それは、<persName ref="#ichikuro">了海</persName>が<placeName ref="#hida">樋田</placeName>の刳貫に第一の槌を下してから二十一年目、<persName ref="#sanenosuke">実之助</persName>が<persName ref="#ichikuro">了海</persName>にめぐりあってから一年六カ月を経た、<date when="1746-09-10">延享三年九月十日</date>の夜であった。この夜も、石工どもはことごとく小屋に退いて、<persName ref="#ichikuro">了海</persName>と<persName ref="#sanenosuke">実之助</persName>のみ、終日の疲労にめげず懸命に槌を振っていた。その夜九つに近き頃、<persName ref="#ichikuro">了海</persName>が力を籠めて振り下した槌が、朽木を打つがごとくなんの手答えもなく力余って、槌を持った右の掌が岩に当ったので、彼は「あっ」と、思わず声を上げた。その時であった。<persName ref="#ichikuro">了海</persName>の朦朧たる老眼にも、紛れなくその槌に破られたる小さき穴から、月の光に照らされたる<placeName ref="#yamakunigawa">山国川</placeName>の姿が、ありありと映ったのである。<persName ref="#ichikuro">了海</persName>は「おう」と、全身を震わせるような名状しがたき叫び声を上げたかと思うと、それにつづいて、狂したかと思われるような歓喜の泣笑が、洞窟をものすごく動揺めかしたのである。</p>
+        <p>「<persName ref="#sanenosuke">実之助</persName>どの。御覧なされい。二十一年の大誓願、端なくも今宵成就いたした」</p>
+        <p>こういいながら、<persName ref="#ichikuro">了海</persName>は<persName ref="#sanenosuke">実之助</persName>の手を取って、小さい穴から<placeName ref="#yamakunigawa">山国川</placeName>の流れを見せた。その穴の真下に黒ずんだ土の見えるのは、岸に添う街道に紛れもなかった。敵と敵とは、そこに手を執り合うて、大歓喜の涙にむせんだのである。が、しばらくすると<persName ref="#ichikuro">了海</persName>は身を退って、</p>
+        <p>「いざ、<persName ref="#sanenosuke">実之助</persName>殿、約束の日じゃ。お切りなされい。かかる法悦の真ん中に往生いたすなれば、<placeName ref="#gokuraku">極楽浄土</placeName>に生るること、必定疑いなしじゃ。いざお切りなされい。明日ともなれば、石工共が、妨げいたそう、いざお切りなされい」と、彼のしわがれた声が洞窟の夜の空気に響いた。が、<persName ref="#sanenosuke">実之助</persName>は、<persName ref="#ichikuro">了海</persName>の前に手を拱いて座ったまま、涙にむせんでいるばかりであった。心の底から湧き出ずる歓喜に泣く凋びた老僧を見ていると、彼を敵として殺すことなどは、思い及ばぬことであった。敵を討つなどという心よりも、このかよわい人間の双の腕によって成し遂げられた偉業に対する驚異と感激の心とで、胸がいっぱいであった。彼はいざり寄りながら、再び老僧の手をとった。二人はそこにすべてを忘れて、感激の涙にむせび合うたのであった。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

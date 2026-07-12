@@ -1,0 +1,20 @@
+{
+  "slug": "serohikinogoshu",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/470_15407.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card470.html",
+  "title": "セロ弾きのゴーシュ",
+  "author": "宮沢賢治",
+  "fixes": {},
+  "persons": {
+    "goshu": ["ゴーシュ", "町の活動写真館(金星音楽団)のセロ弾き。主人公。町はずれの水車小屋にひとりで住む"],
+    "schumann": ["シューマン", "ロベルト・シューマン(1810-1856)。ドイツの作曲家。三毛猫が「トロメライ」(トロイメライ)の演奏をせがむ場面で言及される実在人物"]
+  },
+  "places": {
+    "indo": ["印度", 20.5937, 78.9629, "インド。国名・概値。ゴーシュが弾く楽曲名「印度の虎狩」中の言及"]
+  },
+  "tags": [
+    ["pers", "ゴーシュ", "goshu"],
+    ["pers", "シューマン", "schumann"],
+    ["place", "印度", "indo"]
+  ]
+}

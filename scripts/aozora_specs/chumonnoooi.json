@@ -1,0 +1,19 @@
+{
+  "slug": "chumonnoooi",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card43754.html",
+  "title": "注文の多い料理店",
+  "author": "宮沢賢治",
+  "persons": {},
+  "places": {
+    "yamanekoken": ["山猫軒", null, null, "山猫が二人の紳士を捕えるために出現させた架空の西洋料理店(座標なし)。玄関の札には「RESTAURANT 西洋料理店 WILDCAT HOUSE 山猫軒」とあり、「WILDCAT HOUSE」は同一施設の英語表記"],
+    "igirisu": ["イギリス", 51.5074, -0.1278, "国名・概値(ロンドン)。冒頭で紳士の服装の形容として言及"],
+    "tokyo": ["東京", 35.6812, 139.7671, "概値(東京駅付近)"]
+  },
+  "tags": [
+    ["place", "WILDCAT HOUSE", "yamanekoken"],
+    ["place", "山猫軒", "yamanekoken"],
+    ["place", "イギリス", "igirisu"],
+    ["place", "東京", "tokyo"]
+  ]
+}
