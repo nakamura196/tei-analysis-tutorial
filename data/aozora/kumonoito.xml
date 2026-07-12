@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>蜘蛛の糸</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>蜘蛛の糸</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「芥川龍之介全集2」ちくま文庫、筑摩書房。1986（昭和61）年10月28日第1刷発行。1996（平成8）年7月15日第11刷発行。親本：筑摩全集類聚版芥川龍之介全集。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card92.html">https://www.aozora.gr.jp/cards/000879/card92.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="shaka">
+        <persName>御釈迦様</persName>
+        <note>釈迦。極楽から地獄を見下ろす</note>
+      </person>
+      <person xml:id="kandata">
+        <persName>犍陀多</persName>
+        <note>生前に蜘蛛を助けた大泥棒(カンダタ)</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="gokuraku">
+        <placeName>極楽</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="chinoike">
+        <placeName>血の池</placeName>
+        <note>地獄の血の池(座標なし)</note>
+      </place>
+      <place xml:id="harinoyama">
+        <placeName>針の山</placeName>
+        <note>地獄の針の山(座標なし)</note>
+      </place>
+      <place xml:id="sanzu">
+        <placeName>三途の河</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p>ある日の事でございます。<persName ref="#shaka">御釈迦様</persName>は<placeName ref="#gokuraku">極楽</placeName>の蓮池のふちを、独りでぶらぶら御歩きになっていらっしゃいました。池の中に咲いている蓮の花は、みんな玉のようにまっ白で、そのまん中にある金色の蕊からは、何とも云えない好い匂が、絶間なくあたりへ溢れて居ります。<placeName ref="#gokuraku">極楽</placeName>は丁度朝なのでございましょう。</p>
+        <p>やがて<persName ref="#shaka">御釈迦様</persName>はその池のふちに御佇みになって、水の面を蔽っている蓮の葉の間から、ふと下の容子を御覧になりました。この<placeName ref="#gokuraku">極楽</placeName>の蓮池の下は、丁度<placeName ref="#jigoku">地獄</placeName>の底に当って居りますから、水晶のような水を透き徹して、<placeName ref="#sanzu">三途の河</placeName>や<placeName ref="#harinoyama">針の山</placeName>の景色が、丁度覗き眼鏡を見るように、はっきりと見えるのでございます。</p>
+        <p>するとその<placeName ref="#jigoku">地獄</placeName>の底に、<persName ref="#kandata">犍陀多</persName>と云う男が一人、ほかの罪人と一しょに蠢いている姿が、御眼に止まりました。この<persName ref="#kandata">犍陀多</persName>と云う男は、人を殺したり家に火をつけたり、いろいろ悪事を働いた大泥坊でございますが、それでもたった一つ、善い事を致した覚えがございます。と申しますのは、ある時この男が深い林の中を通りますと、小さな蜘蛛が一匹、路ばたを這って行くのが見えました。そこで<persName ref="#kandata">犍陀多</persName>は早速足を挙げて、踏み殺そうと致しましたが、「いや、いや、これも小さいながら、命のあるものに違いない。その命を無暗にとると云う事は、いくら何でも可哀そうだ。」と、こう急に思い返して、とうとうその蜘蛛を殺さずに助けてやったからでございます。</p>
+        <p><persName ref="#shaka">御釈迦様</persName>は<placeName ref="#jigoku">地獄</placeName>の容子を御覧になりながら、この<persName ref="#kandata">犍陀多</persName>には蜘蛛を助けた事があるのを御思い出しになりました。そうしてそれだけの善い事をした報には、出来るなら、この男を<placeName ref="#jigoku">地獄</placeName>から救い出してやろうと御考えになりました。幸い、側を見ますと、翡翠のような色をした蓮の葉の上に、<placeName ref="#gokuraku">極楽</placeName>の蜘蛛が一匹、美しい銀色の糸をかけて居ります。<persName ref="#shaka">御釈迦様</persName>はその蜘蛛の糸をそっと御手に御取りになって、玉のような白蓮の間から、遥か下にある<placeName ref="#jigoku">地獄</placeName>の底へ、まっすぐにそれを御下しなさいました。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p>こちらは<placeName ref="#jigoku">地獄</placeName>の底の<placeName ref="#chinoike">血の池</placeName>で、ほかの罪人と一しょに、浮いたり沈んだりしていた<persName ref="#kandata">犍陀多</persName>でございます。何しろどちらを見ても、まっ暗で、たまにそのくら暗からぼんやり浮き上っているものがあると思いますと、それは恐しい<placeName ref="#harinoyama">針の山</placeName>の針が光るのでございますから、その心細さと云ったらございません。その上あたりは墓の中のようにしんと静まり返って、たまに聞えるものと云っては、ただ罪人がつく微な嘆息ばかりでございます。これはここへ落ちて来るほどの人間は、もうさまざまな<placeName ref="#jigoku">地獄</placeName>の責苦に疲れはてて、泣声を出す力さえなくなっているのでございましょう。ですからさすが大泥坊の<persName ref="#kandata">犍陀多</persName>も、やはり<placeName ref="#chinoike">血の池</placeName>の血に咽びながら、まるで死にかかった蛙のように、ただもがいてばかり居りました。</p>
+        <p>ところがある時の事でございます。何気なく<persName ref="#kandata">犍陀多</persName>が頭を挙げて、<placeName ref="#chinoike">血の池</placeName>の空を眺めますと、そのひっそりとした暗の中を、遠い遠い天上から、銀色の蜘蛛の糸が、まるで人目にかかるのを恐れるように、一すじ細く光りながら、するすると自分の上へ垂れて参るのではございませんか。<persName ref="#kandata">犍陀多</persName>はこれを見ると、思わず手を拍って喜びました。この糸に縋りついて、どこまでものぼって行けば、きっと<placeName ref="#jigoku">地獄</placeName>からぬけ出せるのに相違ございません。いや、うまく行くと、<placeName ref="#gokuraku">極楽</placeName>へはいる事さえも出来ましょう。そうすれば、もう<placeName ref="#harinoyama">針の山</placeName>へ追い上げられる事もなくなれば、<placeName ref="#chinoike">血の池</placeName>に沈められる事もある筈はございません。</p>
+        <p>こう思いましたから<persName ref="#kandata">犍陀多</persName>は、早速その蜘蛛の糸を両手でしっかりとつかみながら、一生懸命に上へ上へとたぐりのぼり始めました。元より大泥坊の事でございますから、こう云う事には昔から、慣れ切っているのでございます。</p>
+        <p>しかし<placeName ref="#jigoku">地獄</placeName>と<placeName ref="#gokuraku">極楽</placeName>との間は、何万里となくございますから、いくら焦って見た所で、容易に上へは出られません。ややしばらくのぼる中に、とうとう<persName ref="#kandata">犍陀多</persName>もくたびれて、もう一たぐりも上の方へはのぼれなくなってしまいました。そこで仕方がございませんから、まず一休み休むつもりで、糸の中途にぶら下りながら、遥かに目の下を見下しました。</p>
+        <p>すると、一生懸命にのぼった甲斐があって、さっきまで自分がいた<placeName ref="#chinoike">血の池</placeName>は、今ではもう暗の底にいつの間にかかくれて居ります。それからあのぼんやり光っている恐しい<placeName ref="#harinoyama">針の山</placeName>も、足の下になってしまいました。この分でのぼって行けば、<placeName ref="#jigoku">地獄</placeName>からぬけ出すのも、存外わけがないかも知れません。<persName ref="#kandata">犍陀多</persName>は両手を蜘蛛の糸にからみながら、ここへ来てから何年にも出した事のない声で、「しめた。しめた。」と笑いました。ところがふと気がつきますと、蜘蛛の糸の下の方には、数限もない罪人たちが、自分ののぼった後をつけて、まるで蟻の行列のように、やはり上へ上へ一心によじのぼって来るではございませんか。<persName ref="#kandata">犍陀多</persName>はこれを見ると、驚いたのと恐しいのとで、しばらくはただ、莫迦のように大きな口を開いたまま、眼ばかり動かして居りました。自分一人でさえ断れそうな、この細い蜘蛛の糸が、どうしてあれだけの人数の重みに堪える事が出来ましょう。もし万一途中で断れたと致しましたら、折角ここへまでのぼって来たこの肝腎な自分までも、元の<placeName ref="#jigoku">地獄</placeName>へ逆落しに落ちてしまわなければなりません。そんな事があったら、大変でございます。が、そう云う中にも、罪人たちは何百となく何千となく、まっ暗な<placeName ref="#chinoike">血の池</placeName>の底から、うようよと這い上って、細く光っている蜘蛛の糸を、一列になりながら、せっせとのぼって参ります。今の中にどうかしなければ、糸はまん中から二つに断れて、落ちてしまうのに違いありません。</p>
+        <p>そこで<persName ref="#kandata">犍陀多</persName>は大きな声を出して、「こら、罪人ども。この蜘蛛の糸は己のものだぞ。お前たちは一体誰に尋いて、のぼって来た。下りろ。下りろ。」と喚きました。</p>
+        <p>その途端でございます。今まで何ともなかった蜘蛛の糸が、急に<persName ref="#kandata">犍陀多</persName>のぶら下っている所から、ぷつりと音を立てて断れました。ですから<persName ref="#kandata">犍陀多</persName>もたまりません。あっと云う間もなく風を切って、独楽のようにくるくるまわりながら、見る見る中に暗の底へ、まっさかさまに落ちてしまいました。</p>
+        <p>後にはただ<placeName ref="#gokuraku">極楽</placeName>の蜘蛛の糸が、きらきらと細く光りながら、月も星もない空の中途に、短く垂れているばかりでございます。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p><persName ref="#shaka">御釈迦様</persName>は<placeName ref="#gokuraku">極楽</placeName>の蓮池のふちに立って、この一部始終をじっと見ていらっしゃいましたが、やがて<persName ref="#kandata">犍陀多</persName>が<placeName ref="#chinoike">血の池</placeName>の底へ石のように沈んでしまいますと、悲しそうな御顔をなさりながら、またぶらぶら御歩きになり始めました。自分ばかり<placeName ref="#jigoku">地獄</placeName>からぬけ出そうとする、<persName ref="#kandata">犍陀多</persName>の無慈悲な心が、そうしてその心相当な罰をうけて、元の<placeName ref="#jigoku">地獄</placeName>へ落ちてしまったのが、<persName ref="#shaka">御釈迦様</persName>の御目から見ると、浅間しく思召されたのでございましょう。</p>
+        <p>しかし<placeName ref="#gokuraku">極楽</placeName>の蓮池の蓮は、少しもそんな事には頓着致しません。その玉のような白い花は、<persName ref="#shaka">御釈迦様</persName>の御足のまわりに、ゆらゆら萼を動かして、そのまん中にある金色の蕊からは、何とも云えない好い匂が、絶間なくあたりへ溢れて居ります。<placeName ref="#gokuraku">極楽</placeName>ももう午に近くなったのでございましょう。</p>
+        <p>（大正七年四月十六日）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

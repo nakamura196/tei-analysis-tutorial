@@ -1,0 +1,472 @@
+#!/usr/bin/env python3
+"""青空文庫テキスト → 教材用 TEI/XML 変換(固有表現アノテーション付き)
+
+WORKS に登録した各作品について、青空文庫の XHTML から本文を抽出し、
+人名(persName)・地名(placeName)・日付(date)のアノテーションを付与した
+TEI P5 文書を data/aozora/<slug>.xml に生成する。
+
+- 底本情報は XHTML の bibliographical_information から自動転記する
+- ルビは親文字のみ残し、外字は Unicode 実字に置換、注記(［＃...］)は除去
+- 見出し(h3/h4)があれば章 div に分割、なければ全体を 1 つの div にする
+- 固有表現は作品ごとの対応表(表層形 → 台帳 ID)による辞書マッチ。
+  重なりは長い表層形を優先し、除外文脈(skip)で誤マッチを防ぐ
+
+使い方:
+    python3 scripts/build_aozora_tei.py [slug ...]
+    (slug 省略時は全作品。data/aozora/ に出力)
+"""
+
+import re
+import sys
+import urllib.request
+from html.parser import HTMLParser
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+OUT_DIR = REPO_ROOT / "data" / "aozora"
+
+# ---------------------------------------------------------------------------
+# 青空文庫 XHTML の抽出(汎用)
+# ---------------------------------------------------------------------------
+
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    raw = urllib.request.urlopen(req).read()
+    return raw.decode("shift_jis", errors="replace")
+
+
+def gaiji_char(desc):
+    m = re.search(r"U\+([0-9A-Fa-f]{4,6})", desc)
+    if m:
+        return chr(int(m.group(1), 16))
+    m = re.search(r"(\d)-(\d{1,2})-(\d{1,2})", desc)
+    if m:
+        men, ku, ten = map(int, m.groups())
+        try:
+            if men == 1:
+                b = bytes([ku + 0xA0, ten + 0xA0])
+            else:
+                b = bytes([0x8F, ku + 0xA0, ten + 0xA0])
+            return b.decode("euc_jis_2004")
+        except (UnicodeDecodeError, ValueError):
+            pass
+    return "〓"
+
+
+def gaiji_sub(t):
+    return re.sub(r"※［＃(「[^］]*)］", lambda m: gaiji_char(m.group(1)), t)
+
+
+def clean(t):
+    t = gaiji_sub(t)
+    t = re.sub(r"［＃[^］]*］", "", t)
+    return t
+
+
+class AozoraProse(HTMLParser):
+    """main_text 部を「見出し + 段落列」に線形化する汎用ウォーカー"""
+
+    SKIP_INLINE = {"rt", "rp"}
+
+    def __init__(self):
+        super().__init__()
+        self.sections = [{"head": None, "paras": []}]
+        self.buf = []
+        self.head_buf = None
+        self.skip = 0
+
+    def flush_para(self):
+        t = clean("".join(self.buf)).strip()
+        self.buf = []
+        if t:
+            self.sections[-1]["paras"].append(t)
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        cls = a.get("class", "") or ""
+        if tag in self.SKIP_INLINE:
+            self.skip += 1
+        elif tag == "br":
+            if not self.skip:
+                self.flush_para()
+        elif tag == "img":
+            if not self.skip and "gaiji" in cls:
+                self.buf.append(gaiji_char(a.get("alt", "")))
+        elif tag in ("h3", "h4") and "midashi" in cls:
+            self.flush_para()
+            self.head_buf = []
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP_INLINE and self.skip:
+            self.skip -= 1
+        elif tag in ("h3", "h4") and self.head_buf is not None:
+            head = clean("".join(self.head_buf)).strip()
+            self.head_buf = None
+            if head:
+                self.sections.append({"head": head, "paras": []})
+        elif tag == "div":
+            if not self.skip:
+                self.flush_para()
+
+    def handle_data(self, data):
+        if self.skip:
+            return
+        if self.head_buf is not None:
+            self.head_buf.append(data)
+        else:
+            self.buf.append(data)
+
+
+def extract(html):
+    """(sections, 底本情報の行リスト) を返す"""
+    m = re.search(r'<div class="main_text">(.*?)</div>\s*<div class="bibliographical_information">',
+                  html, re.S)
+    if not m:
+        m = re.search(r'<div class="main_text">(.*)<div class="bibliographical_information">',
+                      html, re.S)
+    walker = AozoraProse()
+    walker.feed(m.group(1))
+    walker.flush_para()
+    sections = [s for s in walker.sections if s["paras"]]
+
+    bib = re.search(r'<div class="bibliographical_information">(.*?)</div>', html, re.S)
+    bib_lines = []
+    if bib:
+        text = re.sub(r"<br\s*/?>", "\n", bib.group(1))
+        text = re.sub(r"<[^>]+>", "", text)
+        bib_lines = [l.strip() for l in text.splitlines() if l.strip()]
+    return sections, bib_lines
+
+# ---------------------------------------------------------------------------
+# 作品レジストリ
+#   persons: id -> (表示名, 注記)
+#   places:  id -> (表示名, 緯度 or None, 経度 or None, 注記)   ※座標は教材用の概値
+#   tags:    (種別, 表層形, 参照先)。長い表層形を優先してマッチ
+#   fixes:   抽出後の文字列置換(外字の手当てなど)
+# ---------------------------------------------------------------------------
+
+P, PR, D = "place", "pers", "date"
+
+WORKS = {
+    "melos": {
+        "url": "https://www.aozora.gr.jp/cards/000035/files/1567_14913.html",
+        "card": "https://www.aozora.gr.jp/cards/000035/card1567.html",
+        "title": "走れメロス",
+        "author": "太宰治",
+        "persons": {
+            "melos": ("メロス", "シラクスに住む妹思いの牧人。主人公"),
+            "selinuntius": ("セリヌンティウス", "シラクスの石工。メロスの竹馬の友"),
+            "dionys": ("ディオニス", "シラクスの王。人間不信の暴君"),
+            "philostratus": ("フィロストラトス", "セリヌンティウスの弟子"),
+            "zeus": ("ゼウス", "ギリシア神話の主神"),
+            "schiller": ("シルレル", "フリードリヒ・フォン・シラー(1759–1805)。本作の典拠となった詩の作者"),
+        },
+        "places": {
+            "syracuse": ("シラクス", 37.0755, 15.2866, "イタリア・シチリア島のシラクサ"),
+        },
+        "tags": [
+            (PR, "メロス", "melos"), (PR, "セリヌンティウス", "selinuntius"),
+            (PR, "ディオニス", "dionys"), (PR, "フィロストラトス", "philostratus"),
+            (PR, "ゼウス", "zeus"), (PR, "シルレル", "schiller"),
+            (P, "シラクス", "syracuse"),
+        ],
+    },
+    "rashomon": {
+        "url": "https://www.aozora.gr.jp/cards/000879/files/127_15260.html",
+        "card": "https://www.aozora.gr.jp/cards/000879/card127.html",
+        "title": "羅生門",
+        "author": "芥川龍之介",
+        "persons": {},
+        "places": {
+            "rashomon": ("羅生門", 34.9772, 135.7418, "平安京の羅城門。現在の京都市南区に跡碑"),
+            "kyoto": ("京都", 35.0116, 135.7681, None),
+            "suzakuoji": ("朱雀大路", 34.99, 135.744, "平安京の中央大路・概値"),
+        },
+        "tags": [
+            (P, "羅生門", "rashomon"), (P, "京都", "kyoto"),
+            (P, "洛中", "kyoto"), (P, "朱雀大路", "suzakuoji"),
+        ],
+    },
+    "kumonoito": {
+        "url": "https://www.aozora.gr.jp/cards/000879/files/92_14545.html",
+        "card": "https://www.aozora.gr.jp/cards/000879/card92.html",
+        "title": "蜘蛛の糸",
+        "author": "芥川龍之介",
+        "persons": {
+            "shaka": ("御釈迦様", "釈迦。極楽から地獄を見下ろす"),
+            "kandata": ("犍陀多", "生前に蜘蛛を助けた大泥棒(カンダタ)"),
+        },
+        "places": {
+            "gokuraku": ("極楽", None, None, "仏教的世界観上の場所(座標なし)"),
+            "jigoku": ("地獄", None, None, "仏教的世界観上の場所(座標なし)"),
+            "chinoike": ("血の池", None, None, "地獄の血の池(座標なし)"),
+            "harinoyama": ("針の山", None, None, "地獄の針の山(座標なし)"),
+            "sanzu": ("三途の河", None, None, "仏教的世界観上の場所(座標なし)"),
+        },
+        "tags": [
+            (PR, "御釈迦様", "shaka"), (PR, "犍陀多", "kandata"),
+            (P, "極楽", "gokuraku"), (P, "地獄", "jigoku"),
+            (P, "血の池", "chinoike"), (P, "針の山", "harinoyama"),
+            (P, "三途の河", "sanzu"),
+        ],
+    },
+    "sangetsuki": {
+        "url": "https://www.aozora.gr.jp/cards/000119/files/624_14544.html",
+        "card": "https://www.aozora.gr.jp/cards/000119/card624.html",
+        "title": "山月記",
+        "author": "中島敦",
+        "persons": {
+            "richo": ("李徴", "隴西出身の詩人。虎に変じる主人公"),
+            "ensan": ("袁傪", "李徴の旧友。監察御史"),
+        },
+        "places": {
+            "rosei": ("隴西", 35.00, 104.63, "中国甘粛省・概値"),
+            "konan": ("江南", 31.0, 120.0, "中国長江下流南岸の地域・概値"),
+            "kakuryaku": ("虢略", 34.52, 110.88, "中国河南省霊宝付近・概値"),
+            "josui": ("汝水", 33.0, 114.0, "中国河南省の川(汝河)・概値"),
+            "reinan": ("嶺南", 23.13, 113.26, "中国南部(広東方面)・概値"),
+            "choan": ("長安", 34.26, 108.94, "唐の都。現在の西安"),
+        },
+        "tags": [
+            (PR, "李徴", "richo"), (PR, "袁傪", "ensan"),
+            (P, "隴西", "rosei"), (P, "江南", "konan"),
+            (P, "虢略", "kakuryaku"), (P, "汝水", "josui"),
+            (P, "嶺南", "reinan"), (P, "長安", "choan"),
+            (D, "天宝の末年", "0755"),
+        ],
+    },
+    "maihime": {
+        "url": "https://www.aozora.gr.jp/cards/000129/files/2078_15963.html",
+        "card": "https://www.aozora.gr.jp/cards/000129/card2078.html",
+        "title": "舞姫",
+        "author": "森鴎外",
+        "fixes": {"〓": "鍤"},
+        "persons": {
+            "toyotaro": ("太田豊太郎", "語り手。ベルリンに留学した官吏"),
+            "elise": ("エリス", "エリス・ワイゲルト。ヰクトリア座の踊り子"),
+            "aizawa": ("相沢謙吉", "豊太郎の親友。天方伯の秘書官"),
+            "amakata": ("天方伯", "天方大臣。豊太郎を再び登用する"),
+            "schaumberg": ("シヤウムベルヒ", "ヰクトリア座の座頭"),
+            "weigert": ("エルンスト・ワイゲルト", "エリスの亡父。仕立物師"),
+        },
+        "places": {
+            "berlin": ("ベルリン", 52.5200, 13.4050, "表記は「伯林」とも"),
+            "unterdenlinden": ("ウンテル・デン・リンデン", 52.5170, 13.3889, "ベルリンの大通り"),
+            "brandenburg": ("ブランデンブルク門", 52.5163, 13.3777, None),
+            "tiergarten": ("獣苑", 52.5145, 13.3501, "ティーアガルテン"),
+            "monbijou": ("モンビシユウ街", 52.5236, 13.3986, "モンビジュー・概値"),
+            "kaiserhof": ("カイゼルホオフ", 52.5115, 13.3820, "ホテル・カイザーホーフ"),
+            "kloster": ("クロステル街", 52.5177, 13.4114, "クロスター通り。表記は「巷」とも"),
+            "victoria": ("ヰクトリア座", 52.512, 13.417, "ヴィクトリア劇場・概値"),
+            "tokyo": ("東京", 35.6812, 139.7671, None),
+            "yokohama": ("横浜", 35.4437, 139.6380, None),
+            "saigon": ("セイゴン", 10.7626, 106.6602, "サイゴン(現ホーチミン)"),
+            "brindisi": ("ブリンヂイシイ", 40.6327, 17.9418, "イタリア・ブリンディジ"),
+            "paris": ("巴里", 48.8566, 2.3522, "パリ"),
+            "russia": ("魯西亜", 55.7558, 37.6173, "ロシア・概値(モスクワ)"),
+            "germany": ("独逸", 51.0, 10.0, "国名・概値"),
+            "prussia": ("普魯西", 52.4, 13.0, "プロイセン・概値"),
+            "japan": ("日本", 36.0, 138.0, "国名・概値"),
+            "europe": ("欧羅巴", 50.0, 15.0, "地域名・概値"),
+            "stettin": ("ステツチン", 53.4285, 14.5528, "シュチェチン(現ポーランド)"),
+        },
+        "tags": [
+            (PR, "太田豊太郎", "toyotaro"), (PR, "豊太郎", "toyotaro"),
+            (PR, "太田", "toyotaro"),
+            (PR, "エリス", "elise"),
+            (PR, "相沢謙吉", "aizawa"), (PR, "相沢", "aizawa"),
+            (PR, "天方", "amakata"),
+            (PR, "シヤウムベルヒ", "schaumberg"),
+            (PR, "エルンスト、ワイゲルト", "weigert"),
+            (P, "ベルリン", "berlin"), (P, "伯林", "berlin"),
+            (P, "ウンテル、デン、リンデン", "unterdenlinden"),
+            (P, "ブランデンブルク門", "brandenburg"),
+            (P, "獣苑", "tiergarten"),
+            (P, "モンビシユウ街", "monbijou"),
+            (P, "カイゼルホオフ", "kaiserhof"),
+            (P, "クロステル巷", "kloster"), (P, "クロステル街", "kloster"),
+            (P, "ヰクトリア", "victoria"),
+            (P, "東京", "tokyo"), (P, "横浜", "yokohama"),
+            (P, "セイゴン", "saigon"), (P, "ブリンヂイシイ", "brindisi"),
+            (P, "巴里", "paris"), (P, "魯西亜", "russia"),
+            (P, "独逸", "germany"), (P, "普魯西", "prussia"),
+            (P, "日本", "japan"),
+            (P, "欧羅巴", "europe"), (P, "欧洲", "europe"),
+            (P, "ステツチン", "stettin"),
+            (D, "明治廿一年", "1888"), (D, "一月上旬", "1889-01"),
+            (D, "明治二十三年一月", "1890-01"),
+        ],
+    },
+}
+
+# ---------------------------------------------------------------------------
+# タグ付け(build_okunohosomichi_tei.py と同方式)
+# ---------------------------------------------------------------------------
+
+
+def xml_escape(t):
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def render_tag(kind, surface, ref):
+    inner = xml_escape(surface)
+    if kind == P:
+        return f'<placeName ref="#{ref}">{inner}</placeName>'
+    if kind == PR:
+        return f'<persName ref="#{ref}">{inner}</persName>'
+    return f'<date when="{ref}">{inner}</date>'
+
+
+def tag_string(text, tags, stats):
+    claimed = []
+
+    def overlaps(s, e):
+        return any(not (e <= cs or s >= ce) for cs, ce, _ in claimed)
+
+    for kind, surface, ref in sorted(tags, key=lambda t: -len(t[1])):
+        start = 0
+        while True:
+            i = text.find(surface, start)
+            if i < 0:
+                break
+            start = i + len(surface)
+            if overlaps(i, i + len(surface)):
+                continue
+            claimed.append((i, i + len(surface), render_tag(kind, surface, ref)))
+            stats[kind] += 1
+            stats["used"].add((kind, surface, ref))
+    claimed.sort()
+    out, pos = [], 0
+    for s, e, xmlfrag in claimed:
+        out.append(xml_escape(text[pos:s]))
+        out.append(xmlfrag)
+        pos = e
+    out.append(xml_escape(text[pos:]))
+    return "".join(out)
+
+
+# ---------------------------------------------------------------------------
+# TEI 生成
+# ---------------------------------------------------------------------------
+
+
+def build_header(spec, bib_lines):
+    bib_note = "。".join(bib_lines[:4])
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>{xml_escape(spec["title"])}</title>
+        <author>{xml_escape(spec["author"])}</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>{xml_escape(spec["title"])}</title><author>{xml_escape(spec["author"])}</author>
+          <note>青空文庫。{xml_escape(bib_note)}。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="{spec["card"]}">{spec["card"]}</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>"""
+
+
+def build_standoff(spec):
+    lines = ["  <standOff>"]
+    if spec["persons"]:
+        lines.append("    <listPerson>")
+        for pid, (name, note) in spec["persons"].items():
+            lines.append(f'      <person xml:id="{pid}">')
+            lines.append(f"        <persName>{xml_escape(name)}</persName>")
+            if note:
+                lines.append(f"        <note>{xml_escape(note)}</note>")
+            lines.append("      </person>")
+        lines.append("    </listPerson>")
+    if spec["places"]:
+        lines.append("    <listPlace>")
+        for plid, (name, lat, lon, note) in spec["places"].items():
+            lines.append(f'      <place xml:id="{plid}">')
+            lines.append(f"        <placeName>{xml_escape(name)}</placeName>")
+            if lat is not None:
+                lines.append(f"        <location><geo>{lat} {lon}</geo></location>")
+            if note:
+                lines.append(f"        <note>{xml_escape(note)}</note>")
+            lines.append("      </place>")
+        lines.append("    </listPlace>")
+    lines.append("  </standOff>")
+    return "\n".join(lines)
+
+
+def build_work(slug):
+    spec = WORKS[slug]
+    print(f"== {slug}: fetching {spec['url']}")
+    html = fetch(spec["url"])
+    sections, bib_lines = extract(html)
+    for old, new in spec.get("fixes", {}).items():
+        for s in sections:
+            s["paras"] = [p.replace(old, new) for p in s["paras"]]
+
+    stats = {P: 0, PR: 0, D: 0, "used": set()}
+    body_lines = ["  <text>", "    <body>"]
+    for i, sec in enumerate(sections):
+        head = sec["head"] or (spec["title"] if len(sections) == 1 else "")
+        body_lines.append(f'      <div type="chapter" xml:id="sec{i + 1:02d}" n="{i + 1}">')
+        if head:
+            body_lines.append(f"        <head>{xml_escape(head)}</head>")
+        for para in sec["paras"]:
+            body_lines.append(f"        <p>{tag_string(para, spec['tags'], stats)}</p>")
+        body_lines.append("      </div>")
+    body_lines += ["    </body>", "  </text>", "</TEI>"]
+
+    xml = "\n".join([build_header(spec, bib_lines), build_standoff(spec)] + body_lines) + "\n"
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out = OUT_DIR / f"{slug}.xml"
+    out.write_text(xml, encoding="utf-8")
+
+    unused = {(k, s, r) for k, s, r in spec["tags"]} - stats["used"]
+    for k, s, r in sorted(unused):
+        print(f"  [警告] 一度もマッチしなかったタグ: {k} {s!r} -> {r}")
+    for k, s, r in spec["tags"]:
+        table = spec["places"] if k == P else spec["persons"] if k == PR else None
+        if table is not None and r not in table:
+            print(f"  [警告] 台帳に無い参照: {k} {s} -> {r}")
+    total = sum(len(p) for s in sections for p in s["paras"])
+    print(f"  -> {out.relative_to(REPO_ROOT)}: {len(sections)}章 {total}字 / "
+          f"persName {stats[PR]} / placeName {stats[P]} / date {stats[D]}")
+
+
+def main():
+    slugs = sys.argv[1:] or list(WORKS)
+    for slug in slugs:
+        build_work(slug)
+
+
+if __name__ == "__main__":
+    main()
