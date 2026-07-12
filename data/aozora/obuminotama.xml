@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>半七捕物帳 01 お文の魂</title>
+        <author>岡本綺堂</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>半七捕物帳 01 お文の魂</title><author>岡本綺堂</author>
+          <note>青空文庫。底本：「時代推理小説　半七捕物帳（一）」光文社文庫、光文社。1985（昭和60）年11月20日初版1刷発行。1997（平成9）年3月25日20刷発行。入力：A.Morimine。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000082/card1293.html">https://www.aozora.gr.jp/cards/000082/card1293.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="hanshichi">
+        <persName>半七</persName>
+        <note>神田の岡っ引。本作の探偵役。妹は神田明神下の常磐津の師匠。晩年は赤坂の隠居所に住む</note>
+      </person>
+      <person xml:id="k">
+        <persName>Ｋ</persName>
+        <note>「Ｋのおじさん」。語り手の父の旧友で旗本の次男。Ｋは姓のイニシャル表記。「Ｋのおばさん」はその妻(Ｋは家名として同一台帳に束ねる)</note>
+      </person>
+      <person xml:id="matsumura">
+        <persName>松村彦太郎</persName>
+        <note>番町に屋敷を持つ三百石の旗本。蘭学ができ外国掛に出仕。お道の兄</note>
+      </person>
+      <person xml:id="omichi">
+        <persName>お道</persName>
+        <note>松村彦太郎の妹、二十一歳。四年前に小幡伊織に嫁ぎ、幽霊を口実に離縁を望む</note>
+      </person>
+      <person xml:id="obata">
+        <persName>小幡伊織</persName>
+        <note>小石川西江戸川端の小身の旗本。お道の夫。二十八歳</note>
+      </person>
+      <person xml:id="oharu">
+        <persName>お春</persName>
+        <note>小幡夫妻の娘、三歳。「ふみが来た」と叫ぶ</note>
+      </person>
+      <person xml:id="gozaemon">
+        <persName>五左衛門</persName>
+        <note>小幡家の用人、四十一歳。譜代の家来</note>
+      </person>
+      <person xml:id="ofumi">
+        <persName>お文</persName>
+        <note>草双紙『新編うす墨草紙』中の腰元の幽霊。お道が仮託した「おふみ」の正体</note>
+      </person>
+      <person xml:id="tamenaga-hyocho">
+        <persName>為永瓢長</persName>
+        <note>草双紙『新編うす墨草紙』の作者として記される戯作者名(架空)</note>
+      </person>
+      <person xml:id="watanabe-no-tsuna">
+        <persName>綱</persName>
+        <note>渡辺綱。源頼光四天王の一人(伝説上の人物への言及)</note>
+      </person>
+      <person xml:id="sakata-no-kintoki">
+        <persName>金時</persName>
+        <note>坂田金時。源頼光四天王の一人(伝説上の人物への言及)</note>
+      </person>
+      <person xml:id="minamoto-no-yorimitsu">
+        <persName>頼光</persName>
+        <note>源頼光。土蜘蛛退治などの説話で知られる武将(伝説上の人物への言及)</note>
+      </person>
+      <person xml:id="okiku">
+        <persName>お菊</persName>
+        <note>皿屋敷伝説の井戸の幽霊(伝説上の存在への言及)</note>
+      </person>
+      <person xml:id="sherlock-holmes">
+        <persName>シャアロック・ホームズ</persName>
+        <note>コナン・ドイルの探偵小説の主人公。半七を評する比喩として言及</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="bancho">
+        <placeName>番町</placeName>
+        <location><geo>35.689 139.74</geo></location>
+        <note>現千代田区番町一帯・概値</note>
+      </place>
+      <place xml:id="koishikawa">
+        <placeName>小石川</placeName>
+        <location><geo>35.72 139.744</geo></location>
+        <note>現文京区小石川一帯・概値</note>
+      </place>
+      <place xml:id="nishi-edogawabata">
+        <placeName>西江戸川端</placeName>
+        <location><geo>35.707 139.733</geo></location>
+        <note>旧江戸川(現神田川)西岸、現文京区水道・小日向付近・概値</note>
+      </place>
+      <place xml:id="edogawa">
+        <placeName>江戸川</placeName>
+        <location><geo>35.7076 139.732</geo></location>
+        <note>神田川中流部の旧称(現江戸川橋付近)・概値</note>
+      </place>
+      <place xml:id="shintomiza">
+        <placeName>新富座</placeName>
+        <location><geo>35.671 139.7717</geo></location>
+        <note>明治期の劇場。現中央区新富・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hamagurigomon">
+        <placeName>蛤御門</placeName>
+        <location><geo>35.0224 135.7599</geo></location>
+        <note>京都御所外郭の門。元治元年の禁門の変の戦場・概値</note>
+      </place>
+      <place xml:id="ichigaya">
+        <placeName>市ヶ谷</placeName>
+        <location><geo>35.6938 139.7354</geo></location>
+        <note>現新宿区市谷一帯・概値</note>
+      </place>
+      <place xml:id="otowa">
+        <placeName>音羽</placeName>
+        <location><geo>35.715 139.726</geo></location>
+        <note>現文京区音羽一帯・概値</note>
+      </place>
+      <place xml:id="sakaiya">
+        <placeName>堺屋</placeName>
+        <note>音羽の請宿。架空とみられる商家(座標なし)</note>
+      </place>
+      <place xml:id="tajimaya">
+        <placeName>田島屋</placeName>
+        <note>音羽の貸本屋。架空とみられる商家(座標なし)</note>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.6918 139.7708</geo></location>
+        <note>現千代田区神田一帯・概値</note>
+      </place>
+      <place xml:id="myojinshita">
+        <placeName>明神下</placeName>
+        <location><geo>35.701 139.7712</geo></location>
+        <note>神田明神下(現外神田)・概値</note>
+      </place>
+      <place xml:id="shitaya">
+        <placeName>下谷</placeName>
+        <location><geo>35.711 139.78</geo></location>
+        <note>旧下谷区一帯(現台東区西部)・概値</note>
+      </place>
+      <place xml:id="joenji">
+        <placeName>浄円寺</placeName>
+        <note>下谷にある小幡家の菩提寺。架空とみられる寺(座標なし)</note>
+      </place>
+      <place xml:id="hongo">
+        <placeName>本郷</placeName>
+        <location><geo>35.708 139.76</geo></location>
+        <note>現文京区本郷一帯・概値</note>
+      </place>
+      <place xml:id="ikenohata">
+        <placeName>池の端</placeName>
+        <location><geo>35.712 139.768</geo></location>
+        <note>不忍池畔の池之端(現台東区池之端)・概値</note>
+      </place>
+      <place xml:id="andozaka">
+        <placeName>安藤坂</placeName>
+        <location><geo>35.709 139.745</geo></location>
+        <note>現文京区春日・伝通院南の坂・概値</note>
+      </place>
+      <place xml:id="fukagawa">
+        <placeName>深川</placeName>
+        <location><geo>35.672 139.797</geo></location>
+        <note>現江東区深川一帯・概値</note>
+      </place>
+      <place xml:id="yanagibashi">
+        <placeName>柳橋</placeName>
+        <location><geo>35.697 139.786</geo></location>
+        <note>現台東区柳橋一帯・概値</note>
+      </place>
+      <place xml:id="akasaka">
+        <placeName>赤坂</placeName>
+        <location><geo>35.674 139.737</geo></location>
+        <note>現港区赤坂一帯・概値</note>
+      </place>
+      <place xml:id="enmeiin">
+        <placeName>延命院</placeName>
+        <location><geo>35.728 139.768</geo></location>
+        <note>谷中感応寺門前(現荒川区西日暮里)の寺。延命院事件(1803)への言及・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p>わたしの叔父は江戸の末期に生まれたので、その時代に最も多く行なわれた化け物屋敷の<ruby><rb>不入</rb><rt>いらず</rt></ruby>の間や、<ruby><rb>嫉</rb><rt>ねた</rt></ruby>み深い女の<ruby><rb>生霊</rb><rt>いきりょう</rt></ruby>や、執念深い男の死霊や、そうしたたぐいの陰惨な幽怪な伝説をたくさんに知っていた。しかも叔父は「武士たるものが<ruby><rb>妖怪</rb><rt>ようかい</rt></ruby>などを信ずべきものでない」という武士的教育の感化から、一切これを否認しようと努めていたらしい。その気風は<date when="1868">明治</date>以後になっても<ruby><rb>失</rb><rt>う</rt></ruby>せなかった。わたし達が子供のときに何か取り留めのない化け物話などを始めると、叔父はいつでも<ruby><rb>苦</rb><rt>にが</rt></ruby>い顔をして<ruby><rb>碌々</rb><rt>ろくろく</rt></ruby>相手にもなってくれなかった。</p>
+        <p>その叔父がただ一度こんなことを<ruby><rb>云</rb><rt>い</rt></ruby>った。</p>
+        <p>「しかし世の中には<ruby><rb>解</rb><rt>わか</rt></ruby>らないことがある。あの<persName ref="#ofumi">おふみ</persName>の一件なぞは……」</p>
+        <p><persName ref="#ofumi">おふみ</persName>の一件が何であるかは誰も知らなかった。叔父も自己の主張を裏切るような、この不可解の事実を発表するのが如何にも残念であったらしく、その以上には何も秘密を<ruby><rb>洩</rb><rt>も</rt></ruby>らさなかった。父に<ruby><rb>訊</rb><rt>き</rt></ruby>いても話してくれなかった。併しその事件の蔭には<persName ref="#k">Ｋ</persName>のおじさんが潜んでいるらしいことは、叔父の口ぶりに<ruby><rb>因</rb><rt>よ</rt></ruby>ってほぼ想像されたので、わたしの<ruby><rb>稚</rb><rt>おさな</rt></ruby>い好奇心はとうとう私を<ruby><rb>促</rb><rt>うなが</rt></ruby>して<persName ref="#k">Ｋ</persName>のおじさんのところへ<ruby><rb>奔</rb><rt>はし</rt></ruby>らせた。わたしはその時まだ十二であった。<persName ref="#k">Ｋ</persName>のおじさんは、肉縁の叔父ではない。父が<date when="1868">明治</date>以前から交際しているので、わたしは稚い時からこの人をおじさんと呼び<ruby><rb>慣</rb><rt>なら</rt></ruby>わしていたのである。</p>
+        <p>わたしの質問に対して、<persName ref="#k">Ｋ</persName>のおじさんも満足な返答をあたえてくれなかった。</p>
+        <p>「まあ、そんなことはどうでもいい。つまらない化け物の話なんぞすると、お父さんや叔父さんに叱られる」</p>
+        <p>ふだんから話し好きのおじさんも、この問題については堅く口を結んでいるので、わたしも押し返して<ruby><rb>詮索</rb><rt>せんさく</rt></ruby>する手がかりが無かった。学校で毎日のように物理学や数学をどしどし詰め込まれるのに忙がしい私の頭からは、<persName ref="#ofumi">おふみ</persName>という女の名も次第に煙りのように消えてしまった。それから二年ほど<ruby><rb>経</rb><rt>た</rt></ruby>って、なんでも<date when="--11">十一月</date>の末であったと記憶している。わたしが学校から帰る頃から寒い雨がそぼそぼと降り出して、日が暮れる頃には可なり強い降りになった。<persName ref="#k">Ｋ</persName>のおばさんは近所の人に誘われて、きょうは<ruby><rb>午前</rb><rt>ひるまえ</rt></ruby>から<placeName ref="#shintomiza">新富座</placeName>見物に出かけた<ruby><rb>筈</rb><rt>はず</rt></ruby>である。</p>
+        <p>「わたしは留守番だから、あしたの晩は遊びにおいでよ」と前の日に<persName ref="#k">Ｋ</persName>のおじさんが云った。わたしはその約束を守って、夕飯を済ますとすぐに<persName ref="#k">Ｋ</persName>のおじさんをたずねた。<persName ref="#k">Ｋ</persName>の家はわたしの家から直径にして四町ほどしか<ruby><rb>距</rb><rt>はな</rt></ruby>れていなかったが、場所は<placeName ref="#bancho">番町</placeName>で、その頃には江戸時代の形見という武家屋敷の古い建物がまだ取払われずに残っていて、晴れた日にも何だか<ruby><rb>陰</rb><rt>かげ</rt></ruby>ったような薄暗い町の影を作っていた。雨のゆうぐれは殊にわびしかった。<persName ref="#k">Ｋ</persName>のおじさんも<ruby><rb>或</rb><rt>あ</rt></ruby>る大名屋敷の門内に住んでいたが、おそらくその昔は家老とか用人とかいう身分の人の住居であったろう。ともかくも一軒建てになっていて、小さい庭には<ruby><rb>粗</rb><rt>あら</rt></ruby>い竹垣が結いまわしてあった。</p>
+        <p><persName ref="#k">Ｋ</persName>のおじさんは役所から帰って、もう夕飯をしまって、湯から帰っていた。おじさんは私を相手にして、ランプの前で一時間ほども他愛もない話などをしていた。時々に雨戸をなでる庭の八つ手の大きい葉に、雨音がぴしゃぴしゃときこえるのも、外の暗さを想わせるような夜であった。柱にかけてある時計が七時を打つと、おじさんはふと話をやめて外の雨に耳を傾けた。</p>
+        <p>「だいぶ降って来たな」</p>
+        <p>「おばさんは帰りに困るでしょう」</p>
+        <p>「なに、<ruby><rb>人力車</rb><rt>くるま</rt></ruby>を迎いにやったからいい」</p>
+        <p>こう云っておじさんは又黙って茶を<ruby><rb>喫</rb><rt>の</rt></ruby>んでいたが、やがて少しまじめになった。</p>
+        <p>「おい、いつかお前が訊いた<persName ref="#ofumi">おふみ</persName>の話を今夜聞かしてやろうか。化け物の話はこういう晩がいいもんだ。しかしお前は臆病だからなあ」</p>
+        <p>実際わたしは臆病であった。それでも<ruby><rb>怖</rb><rt>こわ</rt></ruby>い物見たさ聞きたさに、いつも小さいからだを固くして一生懸命に怪談を聞くのが好きであった。殊に年来の疑問になっている<persName ref="#ofumi">おふみ</persName>の一件を<ruby><rb>測</rb><rt>はか</rt></ruby>らずもおじさんの方から切り出したので、わたしは思わず眼をかがやかした。明るいランプの下ならどんな怪談でも怖くないというふうに、わざと肩をそびやかしておじさんの顔をきっとみあげると、しいて勇気をよそおうような私の子供らしい態度が、おじさんの眼にはおかしく見えたらしい。彼はしばらく黙ってにやにや笑っていた。</p>
+        <p>「そんなら話して聞かせるが、怖くって<ruby><rb>家</rb><rt>うち</rt></ruby>へ帰られなくなったから、今夜は泊めてくれなんて云うなよ」</p>
+        <p>まずこう<ruby><rb>嚇</rb><rt>おど</rt></ruby>して置いて、おじさんは<persName ref="#ofumi">おふみ</persName>の一件というのをしずかに話し出した。</p>
+        <p>「わたしが丁度<ruby><rb>二十歳</rb><rt>はたち</rt></ruby>の時だから、<date when="1864"><ruby><rb>元治</rb><rt>げんじ</rt></ruby>元年</date>――<placeName ref="#kyoto">京都</placeName>では<placeName ref="#hamagurigomon"><ruby><rb>蛤御門</rb><rt>はまぐりごもん</rt></ruby></placeName>のいくさがあった年のことだと思え」と、おじさんは先ず<ruby><rb>冒頭</rb><rt>まくら</rt></ruby>を置いた。</p>
+        <p>その頃この<placeName ref="#bancho">番町</placeName>に<persName ref="#matsumura">松村彦太郎</persName>という三百石の旗本が屋敷を持っていた。<persName ref="#matsumura">松村</persName>は相当に学問もあり、殊に蘭学が出来たので、<ruby><rb>外国掛</rb><rt>がいこくがかり</rt></ruby>の方へ<ruby><rb>出仕</rb><rt>しゅっし</rt></ruby>して、ちょっと羽振りの好い方であった。その妹の<persName ref="#omichi">お道</persName>というのは、四年前に<placeName ref="#koishikawa">小石川</placeName><placeName ref="#nishi-edogawabata">西江戸川端</placeName>の<persName ref="#obata"><ruby><rb>小幡</rb><rt>おばた</rt></ruby>伊織</persName>という旗本の屋敷へ縁付いて、<persName ref="#oharu">お春</persName>という今年三つの娘までもうけた。</p>
+        <p>すると、ある日のことであった。その<persName ref="#omichi">お道</persName>が<persName ref="#oharu">お春</persName>を連れて兄のところへ訪ねて来て、「もう<persName ref="#obata">小幡</persName>の屋敷にはいられませんから、暇を<ruby><rb>貰</rb><rt>もら</rt></ruby>って頂きとうございます」と、突然に飛んだことを云い出して、兄の<persName ref="#matsumura">松村</persName>をおどろかした。兄はその<ruby><rb>仔細</rb><rt>しさい</rt></ruby>を聞きただしたが、<persName ref="#omichi">お道</persName>は<ruby><rb>蒼</rb><rt>あお</rt></ruby>い顔をしているばかりで何も云わなかった。</p>
+        <p>「云わないで済むわけのものでない。その仔細をはっきりと云え。女が一旦他家へ嫁入りをした以上は、むやみに離縁なぞすべきものでも無し、されるべき筈のものでもない。<ruby><rb>唯</rb><rt>ただ</rt></ruby>だしぬけに暇を取ってくれでは<ruby><rb>判</rb><rt>わか</rt></ruby>らない。その仔細をよく聞いた上で、兄にも成程と<ruby><rb>得心</rb><rt>とくしん</rt></ruby>がまいったら、また掛け合いのしようもあろう。仔細を云え」</p>
+        <p>この場合、<persName ref="#matsumura">松村</persName>でなくても、まずこう云うよりほかはなかったが、<persName ref="#omichi">お道</persName>は強情に仔細を明かさなかった。もう一日もあの屋敷にはいられないから暇を貰ってくれと、ことし二十一になる武家の女房が、まるで駄々っ子のように、ただ同じことばかり繰り返しているので、堪忍強い兄もしまいには<ruby><rb>焦</rb><rt>じ</rt></ruby>れ出した。</p>
+        <p>「馬鹿、考えてもみろ、仔細も云わずに暇を貰いに行けると思うか。また、先方でも承知すると思うか。きのうや<ruby><rb>今日</rb><rt>きょう</rt></ruby>嫁に行ったのでは無し、もう足掛け四年にもなり、<persName ref="#oharu">お春</persName>という子までもある。<ruby><rb>舅</rb><rt>しうと</rt></ruby><ruby><rb>小姑</rb><rt>こじうと</rt></ruby>の面倒があるでは無し、主人の<persName ref="#obata">小幡</persName>は正直で物柔らかな人物。小身ながらも無事に<ruby><rb>上</rb><rt>かみ</rt></ruby>の御用も勤めている。なにが不足で暇を取りたいのか」</p>
+        <p>叱っても<ruby><rb>諭</rb><rt>さと</rt></ruby>しても<ruby><rb>手応</rb><rt>てごた</rt></ruby>えがないので、<persName ref="#matsumura">松村</persName>も考えた。よもやとは思うものの世間にためしが無いでもない。<persName ref="#obata">小幡</persName>の屋敷には若い侍がいる。近所となりの屋敷にも次三男の道楽者がいくらも遊んでいる。妹も若い身空であるから、もしや何かの心得違いでも<ruby><rb>仕出来</rb><rt>しでか</rt></ruby>して、自分から身をひかなければならないような破滅に陥ったのではあるまいか。こう思うと、兄の詮議はいよいよ厳重になった。どうしてもお前が仔細を明かさなければ、おれの方にも考えがある。これから<persName ref="#obata">小幡</persName>の屋敷へお前を連れて行って、主人の眼の前で何もかも云わしてみせる。さあ一緒に来いと、<ruby><rb>襟髪</rb><rt>えりがみ</rt></ruby>を取らぬばかりにして妹を引立てようとした。</p>
+        <p>兄の<ruby><rb>権幕</rb><rt>けんまく</rt></ruby>があまり激しいので、<persName ref="#omichi">お道</persName>もさすがに途方に暮れたらしく、そんなら申しますと泣いてあやまった。それから彼女が泣きながら訴えるのを聞くと、<persName ref="#matsumura">松村</persName>はまた驚かされた。</p>
+        <p>事件は今から七日前、娘の<persName ref="#oharu">お春</persName>が三つの節句の<ruby><rb>雛</rb><rt>ひな</rt></ruby>を片付けた晩のことであった。<persName ref="#omichi">お道</persName>の枕もとに散らし髪の若い女が真っ蒼な顔を出した。女は水でも浴びたように、頭から着物までびしょ<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れになっていた。その物腰は武家の奉公でもしたものらしく、行儀よく畳に手をついてお辞儀していた。女はなんにも云わなかった。また別に人をおびやかすような挙動も見せなかった。ただ黙っておとなしく<ruby><rb>其処</rb><rt>そこ</rt></ruby>にうずくまっているだけのことであったが、それが<ruby><rb>譬</rb><rt>たと</rt></ruby>えようもないほどに<ruby><rb>物凄</rb><rt>ものすご</rt></ruby>かった。<persName ref="#omichi">お道</persName>はぞっとして思わず<ruby><rb>衾</rb><rt>よぎ</rt></ruby>の袖にしがみ付くと、おそろしい夢は<ruby><rb>醒</rb><rt>さ</rt></ruby>めた。</p>
+        <p>これと同時に、自分と添い寝をしていた<persName ref="#oharu">お春</persName>もおなじく怖い夢にでもおそわれたらしく、急に火の付くように泣き出して、「<persName ref="#ofumi">ふみ</persName>が来た。<persName ref="#ofumi">ふみ</persName>が来た」と、つづけて叫んだ。濡れた女は幼い娘の夢をも驚かしたらしい。<persName ref="#oharu">お春</persName>が夢中で叫んだ<persName ref="#ofumi">ふみ</persName>というのは、おそらく彼女の名であろうと想像された。</p>
+        <p><persName ref="#omichi">お道</persName>はおびえた心持で一夜を明かした。武家に育って武家に縁付いた彼女は、夢のような幽霊ばなしを人に語るのを恥じて、その夜の出来ごとは夫にも秘していたが、濡れた女は次の夜にも、又その次の夜にも彼女の枕もとに真っ蒼な顔を出した。そのたびごとに幼い<persName ref="#oharu">お春</persName>も「<persName ref="#ofumi">ふみ</persName>が来た」と同じく叫んだ。気の弱い<persName ref="#omichi">お道</persName>はもう我慢が出来なくなったが、それでも夫に打ちあける勇気はなかった。</p>
+        <p>こういうことが四晩もつづいたので、<persName ref="#omichi">お道</persName>も不安と不眠とに疲れ果ててしまった。恥も遠慮も考えてはいられなくなったので、とうとう思い切って夫に訴えると、<persName ref="#obata">小幡</persName>は笑っているばかりで取り合わなかった。しかし濡れた女はその後も<persName ref="#omichi">お道</persName>の<ruby><rb>枕辺</rb><rt>まくらべ</rt></ruby>を去らなかった。<persName ref="#omichi">お道</persName>がなんと云っても、夫は受け付けてくれなかった。しまいには「武士の妻にもあるまじき」というような意味で、機嫌を悪くした。</p>
+        <p>「いくら武士でも、自分の妻が苦しんでいるのを、笑って<ruby><rb>観</rb><rt>み</rt></ruby>ている法はあるまい」</p>
+        <p><persName ref="#omichi">お道</persName>は夫の冷淡な態度を恨むようになって来た。こうした苦しみがいつまでも続いたら、自分は遅かれ<ruby><rb>速</rb><rt>はや</rt></ruby>かれ<ruby><rb>得体</rb><rt>えたい</rt></ruby>の知れない幽霊のために責め殺されてしまうかも知れない。もうこうなったら娘をかかえて<ruby><rb>一刻</rb><rt>いっとき</rt></ruby>も早くこんな化け物屋敷を逃げ出すよりほかあるまいと、<persName ref="#omichi">お道</persName>はもう夫のことも自分のことも振り返っている余裕がなくなった。</p>
+        <p>「そういう訳でございますから、あの屋敷にはどうしてもいられません。お察し下さい」</p>
+        <p>思い出してもぞっとすると云うように、<persName ref="#omichi">お道</persName>はこの話をする間にも時々に息を<ruby><rb>嚥</rb><rt>の</rt></ruby>んで身をおののかせていた。そのおどおどしている眼の色がいかにも偽りを包んでいるようには見えないので、兄は考えさせられた。</p>
+        <p>「そんな事がまったくあるかしらん」</p>
+        <p>どう考えても、そんなことが有りそうにも思われなかった。<persName ref="#obata">小幡</persName>が取り合わないのも無理はないと思った。<persName ref="#matsumura">松村</persName>も「馬鹿をいえ」と、頭から叱りつけてしまおうかとも思ったが、妹がこれほどに思い詰めているものを、唯いちがいに叱って追いやるのも何だか可哀そうのようでもあった。殊に妹はこんなことを云うものの、この事件の底にはまだほかに何かこみいった事情がひそんでいないとも限らない。いずれにしても<persName ref="#obata">小幡</persName>に一度<ruby><rb>逢</rb><rt>あ</rt></ruby>った上で、よくその事情を確かめてみようと決心した。</p>
+        <p>「お前の<ruby><rb>片口</rb><rt>かたくち</rt></ruby>ばかりでは判らん。ともかくも<persName ref="#obata">小幡</persName>に逢って、先方の<ruby><rb>料簡</rb><rt>りょうけん</rt></ruby>を訊いてみよう、万事はおれに任しておけ」</p>
+        <p>妹を自分の屋敷に残して置いて、<persName ref="#matsumura">松村</persName>は草履取り一人を連れて、すぐ<placeName ref="#nishi-edogawabata">西江戸川端</placeName>に出向いた。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p><persName ref="#obata">小幡</persName>の屋敷へゆく途中でも<persName ref="#matsumura">松村</persName>はいろいろに考えた。妹はいわゆる女子供のたぐいで、もとより論にも及ばぬが、自分は男一匹、しかも大小をたばさむ身の上である。武士と武士との掛け合いに、真顔になって幽霊の講釈でもあるまい。<persName ref="#matsumura">松村彦太郎</persName>、好い年をして馬鹿な<ruby><rb>奴</rb><rt>やつ</rt></ruby>だと、相手に腹を見られるのも残念である。なんとか巧い掛け合いの法はあるまいかと<ruby><rb>工夫</rb><rt>くふう</rt></ruby>を凝らしたが、問題があまり単純であるだけに、横からも縦からも話の持って行きようがなかった。</p>
+        <p><placeName ref="#nishi-edogawabata">西江戸川端</placeName>の屋敷には主人の<persName ref="#obata">小幡伊織</persName>が居合わせて、すぐに座敷に通された。時候の<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>などを終っても、<persName ref="#matsumura">松村</persName>は自分の用向きを云い出す機会をとらえるのに苦しんだ。どうで笑われると覚悟をして来たものの、さて相手の顔をみると、どうも幽霊の話は云い出しにくかった。そのうちに<persName ref="#obata">小幡</persName>の方から口を切った。</p>
+        <p>「<persName ref="#omichi">お道</persName>はきょう御屋敷へ伺いませんでしたか」</p>
+        <p>「まいりました」とは云ったが、<persName ref="#matsumura">松村</persName>はやはり後の句が<ruby><rb>継</rb><rt>つ</rt></ruby>げなかった。</p>
+        <p>「では、お話し申したか知らんが、女子供は馬鹿なもので、なにかこのごろ幽霊が出るとか申して、ははははは」</p>
+        <p><persName ref="#obata">小幡</persName>は笑っていた。<persName ref="#matsumura">松村</persName>も仕方がないので一緒に笑った。しかし、笑ってばかりいては済まない場合であるので、彼はこれを<ruby><rb>機</rb><rt>しお</rt></ruby>に思い切って<persName ref="#ofumi">おふみ</persName>の一件を話した。話してしまってから彼は汗を<ruby><rb>拭</rb><rt>ふ</rt></ruby>いた。こうなると、<persName ref="#obata">小幡</persName>も笑えなくなった。かれは困ったような顔をしかめて、しばらく黙っていた。単に幽霊が出るというだけの話ならば、馬鹿とも臆病とも叱っても笑っても済むが、問題がこう面倒になって兄が離縁の掛け合いめいた使に来るようでは、<persName ref="#obata">小幡</persName>もまじめになってこの幽霊問題を取り扱わなければならないことになった。</p>
+        <p>「なにしろ一応詮議して見ましょう」と<persName ref="#obata">小幡</persName>は云った。彼の意見としては、もしこの屋敷に幽霊が出る――俗にいう化け物屋敷であるならば、こんにちまでに誰かその不思議に出逢ったものが他にあるべき筈である。現に自分はこの屋敷に生まれて二十八年の月日を送っているが、自分は<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>のこと、誰からもそんな<ruby><rb>噂</rb><rt>うわさ</rt></ruby>すら聞いたことがない。自分が幼少のときに別れた祖父母も、八年前に死んだ父も、六年前に死んだ母も、かつてそんな話をしたこともなかった。それが四年前に他家から縁付いて来た<persName ref="#omichi">お道</persName>だけに見えるというのが、第一の不思議である。たとい何かの仔細があって、特に<persName ref="#omichi">お道</persName>だけに見えるとしても、ここへ来てから四年の後に初めて姿をあらわすというのも不思議である。しかしこの場合、ほかに詮議のしようもないから、差し当っては先ず屋敷じゅうの者どもを集めて問いただしてみようというのであった。</p>
+        <p>「なにぶんお願い申す」と、<persName ref="#matsumura">松村</persName>も同意した。<persName ref="#obata">小幡</persName>は先ず<ruby><rb>用人</rb><rt>ようにん</rt></ruby>の<persName ref="#gozaemon">五左衛門</persName>を呼び出して調べた。かれは今年四十一歳で譜代の家来であった。</p>
+        <p>「<ruby><rb>先</rb><rt>せん</rt></ruby>殿様の<ruby><rb>御代</rb><rt>おだい</rt></ruby>から、かつて左様な噂を承ったことはござりませぬ。父からも何の話も聞き及びませぬ」</p>
+        <p>彼は即座に云い切った。それから<ruby><rb>若党</rb><rt>わかとう</rt></ruby>や<ruby><rb>中間</rb><rt>ちゅうげん</rt></ruby>どもを調べたが、かれらは新参の渡り者で、勿論なんにも知らなかった。次に女中共も調べられたが、かれらは初めてそんな話を聞かされて唯ふるえ上がるばかりであった。詮議はすべて不得要領に終った。</p>
+        <p>「そんなら池を<ruby><rb>浚</rb><rt>さら</rt></ruby>ってみろ」と、<persName ref="#obata">小幡</persName>は命令した。<persName ref="#omichi">お道</persName>の枕辺にあらわれる女が濡れているというのを手がかりに、或いは池の底に何かの秘密が沈んでいるのではないかと考えられたからであった。<persName ref="#obata">小幡</persName>の屋敷には百坪ほどの古池があった。</p>
+        <p>あくる日は大勢の人足をあつめて、その古池の<ruby><rb>掻掘</rb><rt>かいぼり</rt></ruby>をはじめた。<persName ref="#obata">小幡</persName>も<persName ref="#matsumura">松村</persName>も立ち会って監視していたが、<ruby><rb>鮒</rb><rt>ふな</rt></ruby>や<ruby><rb>鯉</rb><rt>こい</rt></ruby>のほかには何の獲物もなかった。泥の底からは女の髪一と筋も見付からなかった。女の執念の残っていそうな<ruby><rb>櫛</rb><rt>くし</rt></ruby>やかんざしのたぐいも拾い出されなかった。<persName ref="#obata">小幡</persName>の発議で更に屋敷内の井戸をさらわせたが、深い井戸の底からは赤い<ruby><rb>泥鰌</rb><rt>どじょう</rt></ruby>が一匹浮び出て大勢を珍らしがらせただけで、これも骨折り損に終った。</p>
+        <p>詮議の<ruby><rb>蔓</rb><rt>つる</rt></ruby>はもう切れた。</p>
+        <p>今度は<persName ref="#matsumura">松村</persName>の発議で、<ruby><rb>忌</rb><rt>いや</rt></ruby>がる<persName ref="#omichi">お道</persName>を無理にこの屋敷へ呼び戻して、<persName ref="#oharu">お春</persName>と一緒にいつもの部屋に寝かすことにした。<persName ref="#matsumura">松村</persName>と<persName ref="#obata">小幡</persName>とは次の間に隠れて夜の<ruby><rb>更</rb><rt>ふ</rt></ruby>けるのを待っていた。</p>
+        <p>その晩は月の<ruby><rb>陰</rb><rt>くも</rt></ruby>った暖かい夜であった。神経の興奮し切っている<persName ref="#omichi">お道</persName>は、とても安らかに眠られそうもなかったが、なんにも知らない幼い娘はやがてすやすやと寝ついたかと思うと、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち針で<ruby><rb>眼球</rb><rt>めだま</rt></ruby>でも突かれたようにけたたましい悲鳴をあげた。そうして「<persName ref="#ofumi">ふみ</persName>が来た、<persName ref="#ofumi">ふみ</persName>が来た」と、低い声で<ruby><rb>唸</rb><rt>うな</rt></ruby>った。</p>
+        <p>「そら、来た」</p>
+        <p>待ち構えていた二人の侍は押っ取り刀でやにわに<ruby><rb>襖</rb><rt>ふすま</rt></ruby>をあけた。閉め込んだ部屋のなかには春の夜のなまあたたかい空気が重く沈んで、陰ったような<ruby><rb>行燈</rb><rt>あんどん</rt></ruby>の灯はまたたきもせずに<ruby><rb>母子</rb><rt>おやこ</rt></ruby>の枕もとを見つめていた。外からは風さえ流れ込んだ気配が見えなかった。<persName ref="#omichi">お道</persName>はわが子を<ruby><rb>犇</rb><rt>ひし</rt></ruby>と抱きしめて、枕に顔を押しつけていた。</p>
+        <p>現在にこの生きた証拠を見せつけられて、<persName ref="#matsumura">松村</persName>も<persName ref="#obata">小幡</persName>も顔を見合わせた。それにしても自分たちの眼にも見えない<ruby><rb>闖入者</rb><rt>ちんにゅうしゃ</rt></ruby>の名を、幼い<persName ref="#oharu">お春</persName>がどうして知っているのであろう。それが第一の疑問であった。<persName ref="#obata">小幡</persName>は<persName ref="#oharu">お春</persName>をすかしていろいろに問いただしたが、<ruby><rb>年弱</rb><rt>としよわ</rt></ruby>の三つでは<ruby><rb>碌々</rb><rt>ろくろく</rt></ruby>に口もまわらないので、ちっとも要領を得なかった。濡れた女は<persName ref="#oharu">お春</persName>の小さい魂に乗りうつって、自分の隠れた名を人に告げるのではないかとも思われた。刀を持っていた二人もなんだか薄気味悪くなって来た。</p>
+        <p>用人の<persName ref="#gozaemon">五左衛門</persName>も心配して、あくる日は<placeName ref="#ichigaya">市ヶ谷</placeName>で有名な<ruby><rb>売卜者</rb><rt>うらないしゃ</rt></ruby>をたずねた。売卜者は屋敷の西にある大きい椿の根を掘ってみろと教えた。とりあえずその椿を掘り倒してみたが、その結果はいたずらに売卜者の信用をおとすに過ぎなかった。</p>
+        <p>夜はとても眠れないというので、<persName ref="#omichi">お道</persName>は昼間寝床にはいることにした。<persName ref="#ofumi">おふみ</persName>もさすがに昼は襲って来なかった。これで少しはほっとしたものの、武家の妻が遊女かなんぞのように、夜は起きていて昼は寝る、こうした変則の生活状態をつづけてゆくのは甚だ迷惑でもあり、<ruby><rb>且</rb><rt>かつ</rt></ruby>は不便でもあった。なんとかして永久にこの幽霊を追いはらってしまうのでなければ、<persName ref="#obata">小幡</persName>一家の平和を保つことは<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ないように思われた。併しこんなことが世間に洩れては家の外聞にもかかわるというので、<persName ref="#matsumura">松村</persName>も勿論秘密を守っていた。<persName ref="#obata">小幡</persName>も家来どもの口を封じて置いた。それでも誰かの口から洩れたとみえて、けしからぬ噂がこの屋敷に出入りする人々の耳にささやかれた。</p>
+        <p>「<persName ref="#obata">小幡</persName>の屋敷に幽霊が出る。女の幽霊が出るそうだ」</p>
+        <p>蔭では<ruby><rb>尾鰭</rb><rt>おひれ</rt></ruby>をつけていろいろの噂をするものの、武士と武士との交際では、さすがに面と向って幽霊の詮議をする者もなかったが、その中に唯一人、すこぶる無遠慮な男があった。それが<ruby><rb>即</rb><rt>すなわ</rt></ruby>ち<persName ref="#obata">小幡</persName>の屋敷の近所に住んでいる<persName ref="#k">Ｋ</persName>のおじさんで、おじさんは旗本の次男であった。その噂を聴くと、すぐに<persName ref="#obata">小幡</persName>の屋敷に押し掛けて行って、事の<ruby><rb>実否</rb><rt>じっぴ</rt></ruby>を確かめた。</p>
+        <p>おじさんとは<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>から特に懇意にしているので、<persName ref="#obata">小幡</persName>も隠さず秘密を洩らした。そうして、なんとかしてこの幽霊の真相を探りきわめる工夫はあるまいかと相談した。旗本に限らず、御家人に限らず、江戸の侍の次三男などというものは、概して<ruby><rb>無役</rb><rt>むやく</rt></ruby>の<ruby><rb>閑人</rb><rt>ひまじん</rt></ruby>であった。長男は無論その家を<ruby><rb>嗣</rb><rt>つ</rt></ruby>ぐべく生まれたのであるが、次男三男に生まれたものは、自分に特殊の才能があって新規御召出しの特典をうけるか、あるいは他家の養子にゆくか、この二つの場合を除いては、<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど世に出る見込みもないのであった。かれらの多くは兄の屋敷に厄介になって、大小を横たえた一人前の男がなんの仕事もなしに日を暮らしているという、一面から見れば<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る<ruby><rb>呑気</rb><rt>のんき</rt></ruby>らしい、また一面から見れば、頗る悲惨な境遇に置かれていた。</p>
+        <p>こういう余儀ない事情はかれらを駆って<ruby><rb>放縦</rb><rt>ほうじゅう</rt></ruby><ruby><rb>懶惰</rb><rt>らんだ</rt></ruby>の高等遊民たらしめるよりほかはなかった。かれらの多くは道楽者であった。退屈しのぎに何か事あれかしと待ち構えている<ruby><rb>徒</rb><rt>やから</rt></ruby>であった。<persName ref="#k">Ｋ</persName>のおじさんも不運に生まれた一人で、こんな相談相手に選ばれるには<ruby><rb>屈竟</rb><rt>くっきょう</rt></ruby>の人間であった。おじさんは無論喜んで引き受けた。</p>
+        <p>そこで、おじさんは考えた。昔話の<persName ref="#watanabe-no-tsuna"><ruby><rb>綱</rb><rt>つな</rt></ruby></persName>や<persName ref="#sakata-no-kintoki"><ruby><rb>金時</rb><rt>きんとき</rt></ruby></persName>のように、<persName ref="#minamoto-no-yorimitsu"><ruby><rb>頼光</rb><rt>らいこう</rt></ruby></persName>の枕もとに物々しく<ruby><rb>宿直</rb><rt>とのい</rt></ruby>を<ruby><rb>仕</rb><rt>つかまつ</rt></ruby>るのはもう時代おくれである。まず第一にその<persName ref="#ofumi">おふみ</persName>という女の素姓を洗って、その女とこの屋敷との間にどんな糸が<ruby><rb>繋</rb><rt>つな</rt></ruby>がっているかということを探り出さなければいけないと思い付いた。</p>
+        <p>「御当家の縁者、又は召使などの中に、<persName ref="#ofumi">おふみ</persName>という女の心当りはござるまいか」</p>
+        <p>この問いに対して、<persName ref="#obata">小幡</persName>は一向に心当りがないと答えた。縁者には無論ない。召使はたびたび出代りをしているから一々に記憶していないが、近い頃にそんな名前の女を抱えたことはないと云った。更にだんだん調べてみると、<persName ref="#obata">小幡</persName>の屋敷では昔から二人の女を使っている。その一人は知行所の村から奉公に出て来るのが例で、ほかの一人は江戸の<ruby><rb>請宿</rb><rt>うけやど</rt></ruby>から随意に雇っていることが判った。請宿は<placeName ref="#otowa"><ruby><rb>音羽</rb><rt>おとわ</rt></ruby></placeName>の<placeName ref="#sakaiya">堺屋</placeName>というのが代々の出入りであった。</p>
+        <p><persName ref="#omichi">お道</persName>の話から考えると、幽霊はどうしても武家奉公の女らしく思われるので、<persName ref="#k">Ｋ</persName>のおじさんは遠い知行所を後廻しにして、まず手近かの<placeName ref="#sakaiya">堺屋</placeName>から詮索に取りかかろうと決心した。<persName ref="#obata">小幡</persName>が知らない遠い先代の頃に、<persName ref="#ofumi">おふみ</persName>という女が奉公していたことが無いとも限らないと思ったからであった。</p>
+        <p>「では、何分よろしく、しかしくれぐれも隠密にな」と、<persName ref="#obata">小幡</persName>は云った。</p>
+        <p>「承知しました」</p>
+        <p>二人は約束して別れた。それは<date when="--03">三月</date>の末の晴れた日で、<persName ref="#obata">小幡</persName>の屋敷の八重桜にも青い葉がもう目立っていた。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p><persName ref="#k">Ｋ</persName>のおじさんは<placeName ref="#otowa">音羽</placeName>の<placeName ref="#sakaiya">堺屋</placeName>へ出向いて、女の奉公人の出入り帳を調べた。代々の出入り先であるから、<placeName ref="#sakaiya">堺屋</placeName>から<persName ref="#obata">小幡</persName>の屋敷へ入れた奉公人の名前はことごとく帳面にしるされている筈であった。</p>
+        <p><persName ref="#obata">小幡</persName>の云った通り、最近の帳面には<persName ref="#ofumi">おふみ</persName>という名を見出すことは出来なかった。三年、五年、十年とだんだんにさかのぼって調べたが、おふゆ、おふく、おふさ、すべてふの字の付く女の名は一つも見えなかった。</p>
+        <p>「それでは知行所の方から来た女かな」</p>
+        <p>そうは思いながらも、おじさんはまだ<ruby><rb>強情</rb><rt>ごうじょう</rt></ruby>に古い帳面を片端から繰ってみた。<placeName ref="#sakaiya">堺屋</placeName>は今から三十年前の火事に古い帳面を焼いてしまって、その以前の分は一冊も残っていない。店にあらん限りの古い帳面を調べても、三十年前が行き止まりであった。おじさんは行き止まりに突きあたるまで調べ尽そうという意気込みで、<ruby><rb>煤</rb><rt>すす</rt></ruby>けた紙に残っている薄墨の筆のあとを<ruby><rb>根</rb><rt>こん</rt></ruby>好くたどって行った。</p>
+        <p>帳面はもちろん<persName ref="#obata">小幡</persName>家のために特に作ってあるわけではない。<placeName ref="#sakaiya">堺屋</placeName>出入りの諸屋敷の分は一切あつめて横綴じの厚い一冊に書き止めてあるのであるから、<persName ref="#obata">小幡</persName>という名を一々拾い出して行くだけでも、その面倒は容易でなかった。殊に長い年代にわたっているのであるから、筆跡も同一ではない。折れ釘のような男文字のなかに糸屑のような女文字もまじっている。殆ど仮名ばかりで<ruby><rb>小児</rb><rt>こども</rt></ruby>が書いたようなところもある。その折れ釘や糸屑の混雑を丁寧に見わけてゆくうちには、こっちの頭も眼もくらみそうになって来た。</p>
+        <p>おじさんもそろそろ飽きて来た。面白ずくで飛んだ事を引受けたという後悔の念も<ruby><rb>兆</rb><rt>きざ</rt></ruby>して来た。</p>
+        <p>「これは<placeName ref="#edogawa">江戸川</placeName>の若旦那。なにをお調べになるんでございます」</p>
+        <p>笑いながら店先へ腰を掛けたのは四十二三の<ruby><rb>痩</rb><rt>や</rt></ruby>せぎすの男で、縞の着物に縞の羽織を着て、だれの眼にも<ruby><rb>生地</rb><rt>きじ</rt></ruby>の<ruby><rb>堅気</rb><rt>かたぎ</rt></ruby>とみえる町人風であった。色のあさ黒い、鼻の高い、芸人か何ぞのように表情に富んだ眼をもっているのが、彼の細長い顔の著しい特徴であった。かれは<placeName ref="#kanda">神田</placeName>の<persName ref="#hanshichi">半七</persName>という岡っ引で、その妹は<placeName ref="#kanda">神田</placeName>の<placeName ref="#myojinshita">明神下</placeName>で常磐津の師匠をしている。<persName ref="#k">Ｋ</persName>のおじさんは時々その師匠のところへ遊びにゆくので、兄の<persName ref="#hanshichi">半七</persName>とも自然懇意になった。</p>
+        <p><persName ref="#hanshichi">半七</persName>は岡っ引の仲間でも幅利きであった。しかし、こんな稼業の者にはめずらしい正直な<ruby><rb>淡泊</rb><rt>あっさり</rt></ruby>した江戸っ子風の男で、御用をかさに着て弱い者をいじめるなどという悪い噂は、かつて聞えたことがなかった。彼は誰に対しても親切な男であった。</p>
+        <p>「相変らず忙がしいかね」と、おじさんは訊いた。</p>
+        <p>「へえ。きょうも御用でここへちょっとまいりました」</p>
+        <p>それから二つ三つ世間話をしている間に、おじさんは<ruby><rb>不図</rb><rt>ふと</rt></ruby>かんがえた。この<persName ref="#hanshichi">半七</persName>ならば秘密を明かしても差支えはあるまい、いっそ何もかも打明けて彼の知恵を借りることにしようかと思った。</p>
+        <p>「御用で忙がしいところを気の毒だが、少しお前に聞いて貰いたいことがあるんだが……」と、おじさんは左右を見まわすと、<persName ref="#hanshichi">半七</persName>は快くうなずいた。</p>
+        <p>「なんだか存じませんが、ともかくも伺いましょう。おい、おかみさん。二階をちょいと借りるぜ。好いかい」</p>
+        <p>彼は先に立って狭い二階にあがった。二階は六畳ひと間で、うす暗い隅には<ruby><rb>葛籠</rb><rt>つづら</rt></ruby>などが置いてあった。おじさんも後からつづいてあがって、<persName ref="#obata">小幡</persName>の屋敷の奇怪な出来事について詳しく話した。</p>
+        <p>「どうだろう。うまくその幽霊の正体を突き止める<ruby><rb>工夫</rb><rt>くふう</rt></ruby>はあるまいか。幽霊の<ruby><rb>身許</rb><rt>みもと</rt></ruby>が判って、その法事供養でもしてやれば、それでよかろうと思うんだが……」</p>
+        <p>「まあ、そうですねえ」と、<persName ref="#hanshichi">半七</persName>は首をかしげてしばらく考えていた。「ねえ、旦那。幽霊は、ほんとうに出るんでしょうか」</p>
+        <p>「さあ」と、おじさんも返事に困った。「まあ、出ると云うんだが……。私も見たわけじゃない」</p>
+        <p><persName ref="#hanshichi">半七</persName>はまた黙って煙草をすっていた。</p>
+        <p>「その幽霊というのは武家の召使らしい風をして、水だらけになっているんですね。早く云えば皿屋敷の<persName ref="#okiku">お菊</persName>をどうかしたような形なんですね」</p>
+        <p>「まあ、そうらしい」</p>
+        <p>「あの御屋敷では草双紙のようなものを御覧になりますか」と、<persName ref="#hanshichi">半七</persName>はだしぬけに、思いも付かないことを訊いた。</p>
+        <p>「主人は嫌いだが、奥では読むらしい。じきこの近所の<placeName ref="#tajimaya">田島屋</placeName>という貸本屋が出入りのようだ」</p>
+        <p>「あのお屋敷のお寺は……」</p>
+        <p>「<placeName ref="#shitaya">下谷</placeName>の<placeName ref="#joenji">浄円寺</placeName>だ」</p>
+        <p>「<placeName ref="#joenji">浄円寺</placeName>。へえ、そうですか」と、<persName ref="#hanshichi">半七</persName>はにっこり笑った。</p>
+        <p>「なにか心当りがあるかね」</p>
+        <p>「<persName ref="#obata">小幡</persName>の奥様はお美しいんですか」</p>
+        <p>「まあ、いい女の方だろう。年は二十一だ」</p>
+        <p>「そこで旦那。いかがでしょう」と、<persName ref="#hanshichi">半七</persName>は笑いながら云った。「お屋敷方の<ruby><rb>内輪</rb><rt>うちわ</rt></ruby>のことに、わたくしどもが首を突っ込んじゃあ悪うございますが、いっそこれはわたくしにお任せ下さいませんか。二、三日の内にきっと<ruby><rb>埒</rb><rt>らち</rt></ruby>をあけてお目にかけます。勿論、これはあなたとわたくしだけのことで、決して他言は致しませんから」</p>
+        <p><persName ref="#k">Ｋ</persName>のおじさんは<persName ref="#hanshichi">半七</persName>を信用して万事を頼むと云った。<persName ref="#hanshichi">半七</persName>も受け合った。しかし自分は飽くまでも蔭の人として働くので、表面はあなたが探索の役目を引き受けているのであるから、その結果を<persName ref="#obata">小幡</persName>の屋敷へ報告する都合上、御迷惑でも<ruby><rb>明日</rb><rt>あした</rt></ruby>からあなたも一緒に歩いてくれとのことであった。どうで<ruby><rb>閑</rb><rt>ひま</rt></ruby>の多い<ruby><rb>身体</rb><rt>からだ</rt></ruby>であるから、おじさんもじきに承知した。商売人の中でも、腕利きといわれている<persName ref="#hanshichi">半七</persName>がこの事件をどんなふうに扱うかと、おじさんは多大の興味を持って明日を待つことにした。その日は<persName ref="#hanshichi">半七</persName>に別れて、おじさんは<placeName ref="#fukagawa">深川</placeName>の某所に開かれる発句の<ruby><rb>運座</rb><rt>うんざ</rt></ruby>に行った。</p>
+        <p>その晩は遅く帰ったので、おじさんは明くる朝早く起きるのが辛かった。それでも約束の時刻に約束の場所で<persName ref="#hanshichi">半七</persName>に逢った。</p>
+        <p>「きょうは先ず何処へ行くんだね」</p>
+        <p>「貸本屋から先へ始めましょう」</p>
+        <p>二人は<placeName ref="#otowa">音羽</placeName>の<placeName ref="#tajimaya">田島屋</placeName>へ行った。おじさんの屋敷へも出入りするので、貸本屋の番頭はおじさんを<ruby><rb>能</rb><rt>よ</rt></ruby>く知っていた。<persName ref="#hanshichi">半七</persName>は番頭に逢って、<date when="--01">正月</date>以来かの<persName ref="#obata">小幡</persName>の屋敷へどんな本を貸し入れたかと訊いた。これは帳面に一々しるしてないので、番頭も早速の返事に困ったらしかったが、それでも記憶のなかから繰り出して二、三種の<ruby><rb>読本</rb><rt>よみほん</rt></ruby>や草双紙の名をならべた。</p>
+        <p>「そのほかに薄墨草紙という草双紙を貸したことはなかったかね」と、<persName ref="#hanshichi">半七</persName>は訊いた。</p>
+        <p>「ありました。たしか<date when="--02">二月</date>頃にお貸し申したように覚えています」</p>
+        <p>「ちょいと見せてくれないか」</p>
+        <p>番頭は棚を探して二冊つづきの草双紙を持ち出して来た。<persName ref="#hanshichi">半七</persName>は手に取ってその下の巻をあけて見ていたが、やがて七、八丁あたりのところを繰り拡げてそっとおじさんに見せた。その揷 絵は武家の奥方らしい女が座敷に坐っていると、その縁先に腰元風の若い女がしょんぼりと<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いているのであった。腰元はまさしく幽霊であった。庭先には<ruby><rb>杜若</rb><rt>かきつばた</rt></ruby>の咲いている池があって、腰元の幽霊はその池の底から浮き出したらしく、髪も着物もむごたらしく<ruby><rb>湿</rb><rt>ぬ</rt></ruby>れていた。幽霊の顔や形は女こどもをおびえさせるほどに物凄く描いてあった。</p>
+        <p>おじさんはぎょっとした。その幽霊の物凄いのに驚くよりも、それが自分の頭のなかに描いている<persName ref="#ofumi">おふみ</persName>の幽霊にそっくりであるのにおびやかされた。その草双紙を受取ってみると、<ruby><rb>外題</rb><rt>げだい</rt></ruby>は新編うす墨草紙、<persName ref="#tamenaga-hyocho">為永瓢長</persName>作と記してあった。</p>
+        <p>「あなた、借りていらっしゃい。面白い作ですぜ」と、<persName ref="#hanshichi">半七</persName>は例の眼で意味ありげに知らせた。</p>
+        <p>おじさんは二冊の草双紙をふところに入れて、ここを出た。</p>
+        <p>「わたくしもその草双紙を読んだことがあります。きのうあなたに幽霊のお話をうかがった時に、ふいとそれを思い出したんですよ」と、往来へ出てから<persName ref="#hanshichi">半七</persName>が云った。</p>
+        <p>「して見ると、この草双紙の絵を見て、怖い怖いと思ったもんだから、とうとうそれを夢に見るようになったのかも知れない」</p>
+        <p>「いいえ、まだそればかりじゃありますまい。まあ、これから<placeName ref="#shitaya">下谷</placeName>へ行って御覧なさい」</p>
+        <p><persName ref="#hanshichi">半七</persName>は先に立って歩いた。二人は<placeName ref="#andozaka">安藤坂</placeName>をのぼって、<placeName ref="#hongo">本郷</placeName>から<placeName ref="#shitaya">下谷</placeName>の<placeName ref="#ikenohata">池の端</placeName>へ出た。きょうは朝からちっとも風のない日で、暮春の空は<ruby><rb>碧</rb><rt>あお</rt></ruby>い玉を磨いたように晴れかがやいていた。</p>
+        <p>火の見<ruby><rb>櫓</rb><rt>やぐら</rt></ruby>の上には<ruby><rb>鳶</rb><rt>とんび</rt></ruby>が眠ったように止まっていた。少し汗ばんでいる馬を急がせてゆく、遠乗りらしい若侍の陣笠のひさしにも、もう夏らしい光りがきらきらと光っていた。</p>
+        <p><persName ref="#obata">小幡</persName>が菩提所の<placeName ref="#joenji">浄円寺</placeName>は、かなりに大きい寺であった。門をはいると、山吹が一ぱいに咲いているのが目についた。ふたりは住職に逢った。</p>
+        <p>住職は四十前後で、色の白い、<ruby><rb>髯</rb><rt>ひげ</rt></ruby>のあとの青い人であった。客の一人は侍、一人は御用聞きというので、住職も疎略に扱わなかった。</p>
+        <p>ここへ来る途中で、二人は十分に打合わせをしてあるので、おじさんは先ず口を切って、<persName ref="#obata">小幡</persName>の屋敷にはこの頃怪しいことがあると云った。奥さんの枕もとに女の幽霊が出ると話した。そうして、その幽霊を退散させるために何か<ruby><rb>加持祈祷</rb><rt>かじきとう</rt></ruby>のすべはあるまいかと相談した。</p>
+        <p>住職は黙って聴いていた。</p>
+        <p>「して、それは殿さま奥さまのお頼みでござりまするか。又あなた方の御相談でござりまするか」</p>
+        <p>と、住職は<ruby><rb>数珠</rb><rt>じゅず</rt></ruby>を<ruby><rb>爪繰</rb><rt>つまぐ</rt></ruby>りながら不安らしく訊いた。</p>
+        <p>「それはいずれでもよろしい。とにかく御承知下さるか、どうでしょう」</p>
+        <p>おじさんと<persName ref="#hanshichi">半七</persName>とは鋭い<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>のひかりを住職に投げ付けると、彼は蒼くなって少しくふるえた。</p>
+        <p>「<ruby><rb>修行</rb><rt>しゅぎょう</rt></ruby>の浅い我々でござれば、果たして<ruby><rb>奇特</rb><rt>きどく</rt></ruby>の有る無しはお受け合い申されぬが、ともかくも一心を凝らして<ruby><rb>得脱</rb><rt>とくだつ</rt></ruby>の祈祷をつかまつると致しましょう」</p>
+        <p>「なにぶんお願い申す」</p>
+        <p>やがて時分どきだというので、念の入った精進料理が出た。酒も出た。住職は一杯も飲まなかったが、二人は<ruby><rb>鱈腹</rb><rt>たらふく</rt></ruby>に飲んで食った。帰る時に住職は、「御駕籠でも申し付けるのでござるが……」と云って、紙につつんだものを<persName ref="#hanshichi">半七</persName>にそっと渡したが、彼は突き戻して出て来た。</p>
+        <p>「旦那、もうこれで宜しゅうございましょう。和尚め、ふるえていたようですから」と、<persName ref="#hanshichi">半七</persName>は笑っていた。住職の顔色の変ったのも、自分たちに<ruby><rb>鄭重</rb><rt>ていちょう</rt></ruby>な馳走をしたのも、無言のうちに彼の降伏を十分に証明していた。それでもおじさんは、まだよく<ruby><rb>腑</rb><rt>ふ</rt></ruby>に落ちないことがあった。</p>
+        <p>「それにしても小さい児がどうして、<persName ref="#ofumi">ふみ</persName>が来たなんて云うんだろう。判らないね」</p>
+        <p>「それはわたくしにも判りませんよ」と、<persName ref="#hanshichi">半七</persName>はやはり笑っていた。「子供が自然にそんなことを云う気遣いはないから、いずれ誰かが教えたんでしょうよ。唯、念のために申して置きますが、あの坊主は悪い奴で……<placeName ref="#enmeiin">延命院</placeName>の二の舞で、これまでにも悪い噂が度々あったんですよ。それですから、あなたとわたくしとが押掛けて行けば、こっちで何も云わなくっても、先方は<ruby><rb>脛</rb><rt>すね</rt></ruby>に<ruby><rb>疵</rb><rt>きず</rt></ruby>でふるえあがるんです。こうして釘をさして置けば、もう詰まらないことはしないでしょう。わたくしのお役はこれで済みました。これから先はあなたのお考え次第で、<persName ref="#obata">小幡</persName>の殿様へは宜しきようにお話しなすって下さいまし。では、これで御免を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>ります」</p>
+        <p>二人は<placeName ref="#ikenohata">池の端</placeName>で別れた。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>四</head>
+        <p>おじさんは<ruby><rb>帰途</rb><rt>かえり</rt></ruby>に<placeName ref="#hongo">本郷</placeName>の友達の<ruby><rb>家</rb><rt>うち</rt></ruby>へ寄ると、友達は自分の<ruby><rb>識</rb><rt>し</rt></ruby>っている踊りの師匠の<ruby><rb>大浚</rb><rt>おおさら</rt></ruby>いが<placeName ref="#yanagibashi">柳橋</placeName>の或るところに開かれて、これから義理に顔出しをしなければならないから、貴公も一緒に附き合えと云った。おじさんも幾らかの目録を持って一緒に行った。綺麗な娘子供の大勢あつまっている中で、<ruby><rb>燈火</rb><rt>あかり</rt></ruby>のつく頃までわいわい騒いで、おじさんは好い心持に酔って帰った。そんな訳で、その日は<persName ref="#obata">小幡</persName>の屋敷へ探索の結果を報告にゆくことが出来なかった。</p>
+        <p>あくる日<persName ref="#obata">小幡</persName>をたずねて、主人の<persName ref="#obata">伊織</persName>に逢った。<persName ref="#hanshichi">半七</persName>のことはなんにも云わずに、おじさんは自分ひとりで調べて来たような顔をして、草双紙と坊主との一条を自慢らしく報告した。それを聴いて、<persName ref="#obata">小幡</persName>の顔色は見る見る陰った。</p>
+        <p><persName ref="#omichi">お道</persName>はすぐに夫の前に呼び出された。新編うす墨草紙を眼の前に突き付けられて、おまえの夢に見る幽霊の正体はこれかと厳重に吟味された。<persName ref="#omichi">お道</persName>は色を失って一言もなかった。</p>
+        <p>「聞けば<placeName ref="#joenji">浄円寺</placeName>の住職は破戒の堕落僧だという。貴様も彼にたぶらかされて、なにか不埒を働いているのに相違あるまい。真っ直ぐに云え」</p>
+        <p>夫にいくら責められても、<persName ref="#omichi">お道</persName>は決して不埒を働いた覚えはないと泣いて抗弁した。しかし自分にも心得違いはある。それは重々恐れ入りますと云って、一切の秘密を夫とおじさんとの前で白状した。</p>
+        <p>「このお<date when="--01">正月</date>に<placeName ref="#joenji">浄円寺</placeName>に御参詣にまいりますと、和尚さまは別間でいろいろお話のあった末に、わたくしの顔をつくづく御覧になりまして、しきりに<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>をついておいでになりましたが、やがて低い声で『ああ、御運の悪い方だ』と独り言のように仰しゃいました。その日はそれでお別れ申しましたが、<date when="--02">二月</date>に又お詣りをいたしますと、和尚さまはわたくしの顔を見て、又同じようなことを云って溜息をついておいでになりますので、わたくしも何かと不安心になってまいりまして、『それはどうした訳でございましょう』と、こわごわ伺いますと、和尚さまは気の毒そうに、『どうもあなたは<ruby><rb>御相</rb><rt>ごそう</rt></ruby>がよろしくない。御亭主を持っていられると、今にお命にもかかわるような<ruby><rb>禍</rb><rt>わざわ</rt></ruby>いが来る。出来ることならば独り身におなり遊ばすとよいが、さもないとあなたばかりではない、お嬢さまにも、おそろしい災難が落ちて来るかも知れない』と<ruby><rb>諭</rb><rt>さと</rt></ruby>すように仰しゃいました。こう聞いて私もぞっとしました。自分はともあれ、せめて娘だけでも災難をのがれる<ruby><rb>工夫</rb><rt>くふう</rt></ruby>はございますまいかと押し返して伺いますと、和尚さまは『お気の毒であるが、<ruby><rb>母子</rb><rt>おやこ</rt></ruby>は一体、あなたが禍いを避ける工夫をしない限りは、お嬢さまも<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>のがれることはできない』と……。そう云われた時の……わたくしの心は……お察し下さいまし」と、<persName ref="#omichi">お道</persName>は声を立てて泣いた。</p>
+        <p>「今のお前たちが聞いたら、一と口に迷信とか馬鹿々々しいとか<ruby><rb>蔑</rb><rt>けな</rt></ruby>してしまうだろうが、その頃の人間、殊に女などはみんなそうしたものであったよ」と、おじさんはここで註を入れて、わたしに説明してくれた。</p>
+        <p>それを聴いてから<persName ref="#omichi">お道</persName>には暗い影がまつわって離れなかった。どんな禍いが降りかかって来ようとも、自分だけは前世の約束とも<ruby><rb>諦</rb><rt>あきら</rt></ruby>めよう。しかし可愛い娘にまでまきぞえの禍いを着せるということは、母の身として考えることさえも恐ろしかった。あまりに痛々しかった。<persName ref="#omichi">お道</persName>にとっては、夫も大切には相違なかったが、娘はさらに可愛かった。自分の命よりもいとおしかった。第一に娘を救い、あわせて自分の身を全うするには、飽きも飽かれもしない夫の家を去るよりほかにないと思った。</p>
+        <p>それでも彼女は幾たびか<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>した。そのうち<date when="--02">二月</date>も過ぎて、娘の<persName ref="#oharu">お春</persName>の節句が来た。<persName ref="#obata">小幡</persName>の家でも雛を飾った。緋桃白桃の影をおぼろにゆるがせる雛段の夜の灯を、<persName ref="#omichi">お道</persName>は悲しく見つめた。来年も再来年も無事に雛祭りが出来るであろうか。娘はいつまでも無事であろうか。<ruby><rb>呪</rb><rt>のろ</rt></ruby>われた母と娘とはどちらが先に禍いを受けるのであろうか。そんな恐れと悲しみとが彼女の胸一ぱいに拡がって、あわれなる母は今年の白酒に酔えなかった。</p>
+        <p><persName ref="#obata">小幡</persName>の家では<date when="--03-05">五日</date>の日に雛をかたづけた。今更ではないが雛の別れは寂しかった。その日の<ruby><rb>午</rb><rt>ひる</rt></ruby>すぎに<persName ref="#omichi">お道</persName>が貸本屋から借りた草双紙を読んでいると、<persName ref="#oharu">お春</persName>は母の膝に取りつきながらその揷 絵を無心にのぞいていた。草双紙は、かの薄墨草紙で、むごい主人の手討に逢って、<ruby><rb>杜若</rb><rt>かきつばた</rt></ruby>の咲く古池に沈められた<persName ref="#ofumi">お文</persName>という腰元の魂が、奥方のまえに形をあらわしてその恨みを訴えるというところで、その幽霊が物凄く描いてあった。稚い<persName ref="#oharu">お春</persName>もこれには余ほどおびやかされたらしく、その絵を指して「これ、なに」と、こわごわ訊いた。</p>
+        <p>「それは文という女のお化けです。お前もおとなしくしないと、庭のお池からこういう怖いお化けが出ますよ」</p>
+        <p><ruby><rb>嚇</rb><rt>おど</rt></ruby>すつもりでもなかったが、<persName ref="#omichi">お道</persName>は何心なくこう云って聞かせると、それが<persName ref="#oharu">お春</persName>の神経を強く刺戟したらしく、ひきつけたように真っ蒼になって母の膝にひしとしがみ付いてしまった。</p>
+        <p>その晩に<persName ref="#oharu">お春</persName>はおそわれたように叫んだ。</p>
+        <p>「<persName ref="#ofumi">ふみ</persName>が来た！」</p>
+        <p>明くる晩もまた叫んだ。</p>
+        <p>「<persName ref="#ofumi">ふみ</persName>が来た！」</p>
+        <p>飛んだことをしたと後悔して、<persName ref="#omichi">お道</persName>は早々にかの草双紙を返してしまった。<persName ref="#oharu">お春</persName>は三晩つづいて<persName ref="#ofumi">お文</persName>の名を呼んだ。後悔と心配とで、<persName ref="#omichi">お道</persName>も碌々に眠られなかった。そうして、これが<ruby><rb>彼</rb><rt>か</rt></ruby>の恐ろしい禍いの来る前触れではないかとも恐れられた。彼女の眼の前にも、<persName ref="#ofumi">お文</persName>の姿がまぼろしのように現われた。</p>
+        <p><persName ref="#omichi">お道</persName>もとうとう決心した。自分の信じている住職の教えにしたがって、ここの屋敷を立ち退くよりほかはないと決心した。無心の<ruby><rb>幼児</rb><rt>おさなご</rt></ruby>が<persName ref="#ofumi">お文</persName>の名を呼びつづけるのを利用して、かれは<ruby><rb>俄</rb><rt>にわか</rt></ruby>かに怪談の作者となった。その偽りの怪談を口実にして、夫の家を去ろうとしたのであった。</p>
+        <p>「馬鹿な奴め」と、<persName ref="#obata">小幡</persName>は自分の前に泣き伏している妻を<ruby><rb>呆</rb><rt>あき</rt></ruby>れるように叱った。しかし、こんな浅はかな女の巧みの底にも、人の母として我が子を思う愛の泉のひそんで流れていることを、<persName ref="#k">Ｋ</persName>のおじさんも認めないわけには行かなかった。おじさんの取りなしで、<persName ref="#omichi">お道</persName>はようように夫のゆるしを受けた。</p>
+        <p>「こんなことは<ruby><rb>義兄</rb><rt>あに</rt></ruby>の<persName ref="#matsumura">松村</persName>にも聞かしたくない。しかし義兄の手前、屋敷中の者どもの手前、なんとかおさまりを付けなければなるまいが、どうしたものでござろう」</p>
+        <p><persName ref="#obata">小幡</persName>から相談をうけて<persName ref="#k">Ｋ</persName>のおじさんも考えた。結局、おじさんの菩提寺の僧を頼んで、表向きは<ruby><rb>得体</rb><rt>えたい</rt></ruby>の知れない<persName ref="#ofumi">お文</persName>の魂のための追善供養を営むということにした。<persName ref="#oharu">お春</persName>は医師の療治をうけて夜<ruby><rb>啼</rb><rt>な</rt></ruby>きをやめた。追善供養の<ruby><rb>功力</rb><rt>くりき</rt></ruby>によって、<persName ref="#ofumi">お文</persName>の幽霊もその後は形を現わさなくなったと、まことしやかに伝えられた。</p>
+        <p>その秘密を知らない<persName ref="#matsumura">松村彦太郎</persName>は、世の中には理窟で説明のできない不思議なこともあるものだと首をかしげて、日頃自分と親しい二、三の人達にひそかに話した。わたしの叔父もそれを聴いた一人であった。</p>
+        <p><persName ref="#ofumi">お文</persName>の幽霊を草双紙のなかから見つけ出した<persName ref="#hanshichi">半七</persName>の鋭い眼力を、<persName ref="#k">Ｋ</persName>のおじさんは今更のように感服した。<placeName ref="#joenji">浄円寺</placeName>の住職はなんの目的で<persName ref="#omichi">お道</persName>に恐ろしい運命を予言したか、それに就いては<persName ref="#hanshichi">半七</persName>も余り詳しい註釈を加えるのを<ruby><rb>憚</rb><rt>はばか</rt></ruby>っているらしかったが、それから半年の後にその住職は<ruby><rb>女犯</rb><rt>にょぼん</rt></ruby>の罪で寺社方の手に捕われたのを聴いて、<persName ref="#omichi">お道</persName>は又ぞっとした。彼女は危い断崖の上に立っていたのを、幸いに<persName ref="#hanshichi">半七</persName>のために救われたのであった。</p>
+        <p>「今も云う通り、この秘密は<persName ref="#obata">小幡</persName>夫婦と私のほかには誰も知らないことだ。<persName ref="#obata">小幡</persName>夫婦はまだ生きている。<persName ref="#obata">小幡</persName>は維新後に官吏になって今は相当の地位にのぼっている。わたしが今夜話したことは誰にも<ruby><rb>吹聴</rb><rt>ふいちょう</rt></ruby>しない方がいいぞ」と、<persName ref="#k">Ｋ</persName>のおじさんは話の終りにこう付け加えた。</p>
+        <p>この話の済む頃には夜の雨もだんだん小降りになって、庭の八つ手の葉のざわめきも眠ったように鎮まった。</p>
+        <p>幼いわたしのあたまには、この話が非常に興味あるものとして刻み込まれた。併しあとで考えると、これらの探偵談は<persName ref="#hanshichi">半七</persName>としては朝飯前の仕事に過ぎないので、その以上の人を衝動するような彼の冒険仕事はまだまだほかにたくさんあった。彼は江戸時代に<ruby><rb>於</rb><rt>お</rt></ruby>ける隠れた<persName ref="#sherlock-holmes">シャアロック・ホームズ</persName>であった。</p>
+        <p>わたしが<persName ref="#hanshichi">半七</persName>によく逢うようになったのは、それから十年の後で、あたかも日清戦争が終りを告げた頃であった。<persName ref="#k">Ｋ</persName>のおじさんは、もう此の世にいなかった。<persName ref="#hanshichi">半七</persName>は七十を三つ越したとか云っていたが、まだ元気の好い、不思議なくらいに水々しいお爺さんであった。養子に<ruby><rb>唐物商</rb><rt>とうぶつや</rt></ruby>を開かせて、自分は楽隠居でぶらぶら遊んでいた。わたしは或る機会から、この<persName ref="#hanshichi">半七</persName>老人と懇意になって、<placeName ref="#akasaka">赤坂</placeName>の隠居所へたびたび遊びに行くようになった。老人はなかなか<ruby><rb>贅沢</rb><rt>ぜいたく</rt></ruby>で、上等の茶を<ruby><rb>淹</rb><rt>い</rt></ruby>れて旨い菓子を食わせてくれた。</p>
+        <p>その<ruby><rb>茶話</rb><rt>ちゃばなし</rt></ruby>のあいだに、わたしは彼の昔語りをいろいろ聴いた。一冊の手帳は殆ど彼の探偵物語でうずめられてしまった。その中から私が最も興味を感じたものをだんだんに拾い出して行こうと思う、時代の前後を問わずに――</p>
+      </div>
+    </body>
+  </text>
+</TEI>

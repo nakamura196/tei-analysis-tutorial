@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>おじいさんのランプ</title>
+        <author>新美南吉</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>おじいさんのランプ</title><author>新美南吉</author>
+          <note>青空文庫。底本：「新美南吉童話集」岩波文庫、岩波書店。1996（平成8）年７月16日発行第1刷。入力：浜野智。校正：浜野智。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000121/card635.html">https://www.aozora.gr.jp/cards/000121/card635.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="minosuke">
+        <persName>巳之助</persName>
+        <note>岩滑新田のみなしごの少年。ランプ屋として身を立て、電燈の時代の到来とともに店をたたみ本屋になる。東一君のおじいさん。「巳之さん」「巳之助さん」とも</note>
+      </person>
+      <person xml:id="toichi">
+        <persName>東一</persName>
+        <note>巳之助の孫。倉からランプを持ち出し、おじいさんの昔話を聞く。「東一君」「東坊」とも</note>
+      </person>
+      <person xml:id="sohachi">
+        <persName>宗八</persName>
+        <note>かくれんぼで鬼をしていた近所の子供。「宗八君」</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="yanabeshinden">
+        <placeName>岩滑新田</placeName>
+        <location><geo>34.905 136.905</geo></location>
+        <note>概値。愛知県半田市岩滑新田町付近。巳之助の住む村</note>
+      </place>
+      <place xml:id="ono">
+        <placeName>大野</placeName>
+        <location><geo>34.9243 136.8443</geo></location>
+        <note>概値。愛知県常滑市大野町(旧知多郡大野町)。巳之助がはじめてランプを見た海辺の町</note>
+      </place>
+      <place xml:id="handa">
+        <placeName>半田</placeName>
+        <location><geo>34.8918 136.9381</geo></location>
+        <note>概値。愛知県半田市中心部。名古屋からの客が汽車で着く町</note>
+      </place>
+      <place xml:id="nagoya">
+        <placeName>名古屋</placeName>
+        <location><geo>35.1815 136.9066</geo></location>
+        <note>概値。愛知県名古屋市</note>
+      </place>
+      <place xml:id="chitahanto">
+        <placeName>知多半島</placeName>
+        <location><geo>34.82 136.87</geo></location>
+        <note>概値。愛知県の知多半島(半島全域を指すため中央付近の座標)</note>
+      </place>
+      <place xml:id="shinmaiko">
+        <placeName>新舞子</placeName>
+        <location><geo>34.9346 136.8477</geo></location>
+        <note>概値。愛知県知多市新舞子。潮湯治の客が向かう海水浴地</note>
+      </place>
+      <place xml:id="handaike">
+        <placeName>半田池</placeName>
+        <note>岩滑新田から西の峠へさしかかるあたりにあった大きな溜池(現存せず)。正確な位置の比定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="fukatani">
+        <placeName>深谷</placeName>
+        <note>岩滑新田の南にあるとされる小さい村。現在の地名への比定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="ryugujo">
+        <placeName>竜宮城</placeName>
+        <note>伝説上の場所(大野の町の明るさの比喩として言及)。座標なし</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>おじいさんのランプ</head>
+        <p>かくれんぼで、倉の<ruby><rb>隅</rb><rt>すみ</rt></ruby>にもぐりこんだ<persName ref="#toichi"><ruby><rb>東一</rb><rt>とういち</rt></ruby>君</persName>がランプを持って出て来た。</p>
+        <p>それは珍らしい形のランプであった。八十<ruby><rb>糎</rb><rt>センチ</rt></ruby>ぐらいの太い竹の<ruby><rb>筒</rb><rt>つつ</rt></ruby>が台になっていて、その上にちょっぴり火のともる部分がくっついている、そしてほやは、細いガラスの筒であった。はじめて見るものにはランプとは思えないほどだった。</p>
+        <p>そこでみんなは、昔の鉄砲とまちがえてしまった。</p>
+        <p>「何だア、鉄砲かア」と鬼の<persName ref="#sohachi"><ruby><rb>宗八</rb><rt>そうはち</rt></ruby>君</persName>はいった。</p>
+        <p><persName ref="#toichi">東一君</persName>のおじいさんも、しばらくそれが何だかわからなかった。<ruby><rb>眼鏡</rb><rt>めがね</rt></ruby><ruby><rb>越</rb><rt>ご</rt></ruby>しにじっと見ていてから、はじめてわかったのである。</p>
+        <p>ランプであることがわかると、<persName ref="#toichi">東一君</persName>のおじいさんはこういって子供たちを<ruby><rb>叱</rb><rt>しか</rt></ruby>りはじめた。</p>
+        <p>「こらこら、お前たちは何を持出すか。まことに子供というものは、黙って遊ばせておけば何を持出すやらわけのわからん、油断もすきもない、ぬすっと<ruby><rb>猫</rb><rt>ねこ</rt></ruby>のようなものだ。こらこら、それはここへ持って来て、お前たちは外へ行って遊んで来い。外に行けば、<ruby><rb>電信柱</rb><rt>でんしんばしら</rt></ruby>でも何でも遊ぶものはいくらでもあるに」</p>
+        <p>こうして叱られると子供ははじめて、自分がよくない行いをしたことがわかるのである。そこで、ランプを持出した<persName ref="#toichi">東一君</persName>はもちろんのこと、何も持出さなかった近所の子供たちも、自分たちみんなで悪いことをしたような顔をして、すごすごと外の道へ出ていった。</p>
+        <p>外には、春の昼の風が、ときおり道のほこりを吹立ててすぎ、のろのろと牛車が通ったあとを、白い<ruby><rb>蝶</rb><rt>ちょう</rt></ruby>がいそがしそうに通ってゆくこともあった。なるほど電信柱があっちこっちに立っている。しかし子供たちは電信柱なんかで遊びはしなかった。<ruby><rb>大人</rb><rt>おとな</rt></ruby>が、こうして遊べといったことを、いわれたままに遊ぶというのは何となくばかげているように子供には思えるのである。</p>
+        <p>そこで子供たちは、ポケットの中のラムネ玉をカチカチいわせながら、広場の方へとんでいった。そしてまもなく自分たちの遊びで、さっきのランプのことは忘れてしまった。</p>
+        <p>日ぐれに<persName ref="#toichi">東一君</persName>は家へ帰って来た。奥の<ruby><rb>居間</rb><rt>いま</rt></ruby>のすみに、あのランプがおいてあった。しかし、ランプのことを何かいうと、またおじいさんにがみがみいわれるかも知れないので、黙っていた。</p>
+        <p>夕御飯のあとの退屈な時間が来た。<persName ref="#toichi">東一君</persName>はたんすにもたれて、ひき出しのかんをカタンカタンといわせていたり、店に出てひげを<ruby><rb>生</rb><rt>は</rt></ruby>やした農学校の先生が『<ruby><rb>大根</rb><rt>だいこん</rt></ruby>栽培の理論と実際』というような、むつかしい名前の本を番頭に注文するところを、じっと見ていたりした。</p>
+        <p>そういうことにも飽くと、また奥の居間にもどって来て、おじいさんがいないのを見すまして、ランプのそばへにじりより、そのほやをはずしてみたり、五銭<ruby><rb>白銅貨</rb><rt>はくどうか</rt></ruby>ほどのねじをまわして、ランプの<ruby><rb>芯</rb><rt>しん</rt></ruby>を出したりひっこめたりしていた。</p>
+        <p>すこしいっしょうけんめいになっていじくっていると、またおじいさんにみつかってしまった。けれどこんどはおじいさんは叱らなかった。ねえやにお茶をいいつけておいて、すっぽんと<ruby><rb>煙管筒</rb><rt>きせるづつ</rt></ruby>をぬきながら、こういった。</p>
+        <p>「<persName ref="#toichi">東坊</persName>、このランプはな、おじいさんにはとてもなつかしいものだ。長いあいだ忘れておったが、きょう<persName ref="#toichi">東坊</persName>が倉の隅から持出して来たので、また昔のことを思い出したよ。こうおじいさんみたいに年をとると、ランプでも何でも昔のものに出合うのがとても<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しいもんだ」</p>
+        <p><persName ref="#toichi">東一君</persName>はぽかんとしておじいさんの顔を見ていた。おじいさんはがみがみと叱りつけたから、<ruby><rb>怒</rb><rt>おこ</rt></ruby>っていたのかと思ったら、昔のランプに<ruby><rb>逢</rb><rt>あ</rt></ruby>うことができて喜んでいたのである。</p>
+        <p>「ひとつ昔の話をしてやるから、ここへ来て<ruby><rb>坐</rb><rt>すわ</rt></ruby>れ」</p>
+        <p>とおじいさんがいった。</p>
+        <p><persName ref="#toichi">東一君</persName>は話が好きだから、いわれるままにおじいさんの前へいって坐ったが、何だかお説教をされるときのようで、いごこちがよくないので、いつもうちで話をきくときにとる姿勢をとって聞くことにした。つまり、寝そべって両足をうしろへ立てて、ときどき足の裏をうちあわせる<ruby><rb>芸当</rb><rt>げいとう</rt></ruby>をしたのである。</p>
+        <p>おじいさんの話というのは次のようであった。</p>
+        <p>今から五十年ぐらいまえ、ちょうど日露戦争のじぶんのことである。<placeName ref="#yanabeshinden"><ruby><rb>岩滑新田</rb><rt>やなべしんでん</rt></ruby></placeName>の村に<persName ref="#minosuke"><ruby><rb>巳之助</rb><rt>みのすけ</rt></ruby></persName>という十三の少年がいた。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は、父母も兄弟もなく、<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>のものとて一人もない、まったくのみなしごであった。そこで<persName ref="#minosuke">巳之助</persName>は、よその家の走り使いをしたり、女の子のように<ruby><rb>子守</rb><rt>こもり</rt></ruby>をしたり、米を<ruby><rb>搗</rb><rt>つ</rt></ruby>いてあげたり、そのほか、<persName ref="#minosuke">巳之助</persName>のような少年にできることなら何でもして、村に置いてもらっていた。</p>
+        <p>けれども<persName ref="#minosuke">巳之助</persName>は、こうして村の人々の御世話で生きてゆくことは、ほんとうをいえばいやであった。子守をしたり、米を搗いたりして一生を送るとするなら、男とうまれた<ruby><rb>甲斐</rb><rt>かい</rt></ruby>がないと、つねづね思っていた。</p>
+        <p>男子は身を立てねばならない。しかしどうして身を立てるか。<persName ref="#minosuke">巳之助</persName>は毎日、ご飯を<ruby><rb>喰</rb><rt>た</rt></ruby>べてゆくのがやっとのことであった。本一冊買うお金もなかったし、またたといお金があって本を買ったとしても、読むひまがなかった。</p>
+        <p>身を立てるのによいきっかけがないものかと、<persName ref="#minosuke">巳之助</persName>はこころひそかに待っていた。</p>
+        <p>すると<ruby><rb>或</rb><rt>あ</rt></ruby>る夏の日のひるさがり、<persName ref="#minosuke">巳之助</persName>は<ruby><rb>人力車</rb><rt>じんりきしゃ</rt></ruby>の<ruby><rb>先綱</rb><rt>さきづな</rt></ruby>を頼まれた。</p>
+        <p>その<ruby><rb>頃</rb><rt>ころ</rt></ruby><placeName ref="#yanabeshinden">岩滑新田</placeName>には、いつも二、三人の<ruby><rb>人力曳</rb><rt>じんりきひき</rt></ruby>がいた。<ruby><rb>潮湯治</rb><rt>しおとうじ</rt></ruby>（海水浴のこと）に<placeName ref="#nagoya">名古屋</placeName>から来る客は、たいてい汽車で<placeName ref="#handa"><ruby><rb>半田</rb><rt>はんだ</rt></ruby></placeName>まで来て、<placeName ref="#handa">半田</placeName>から<placeName ref="#chitahanto"><ruby><rb>知多</rb><rt>ちた</rt></ruby>半島</placeName>西海岸の<placeName ref="#ono">大野</placeName>や<placeName ref="#shinmaiko">新舞子</placeName>まで人力車でゆられていったもので、<placeName ref="#yanabeshinden">岩滑新田</placeName>はちょうどその道すじにあたっていたからである。</p>
+        <p>人力車は人が曳くのだからあまり速くは走らない。それに、<placeName ref="#yanabeshinden">岩滑新田</placeName>と<placeName ref="#ono">大野</placeName>の間には<ruby><rb>峠</rb><rt>とうげ</rt></ruby>が一つあるから、よけい時間がかかる。おまけにその頃の人力車の輪は、ガラガラと鳴る重い<ruby><rb>鉄輪</rb><rt>かなわ</rt></ruby>だったのである。そこで、急ぎの客は、賃銀を<ruby><rb>倍</rb><rt>ばい</rt></ruby><ruby><rb>出</rb><rt>だ</rt></ruby>して、二人の人力曳にひいてもらうのであった。<persName ref="#minosuke">巳之助</persName>に先綱曳を頼んだのも、急ぎの避暑客であった。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は人力車のながえにつながれた綱を肩にかついで、夏の<ruby><rb>入陽</rb><rt>いりひ</rt></ruby>のじりじり照りつける道を、えいやえいやと走った。<ruby><rb>馴</rb><rt>な</rt></ruby>れないこととてたいそう苦しかった。しかし<persName ref="#minosuke">巳之助</persName>は苦しさなど気にしなかった。好奇心でいっぱいだった。なぜなら<persName ref="#minosuke">巳之助</persName>は、物ごころがついてから、村を一歩も出たことがなく、峠の向こうにどんな町があり、どんな人々が住んでいるか知らなかったからである。</p>
+        <p>日が暮れて青い<ruby><rb>夕闇</rb><rt>ゆうやみ</rt></ruby>の中を人々がほの白くあちこちする頃、人力車は<placeName ref="#ono">大野</placeName>の町にはいった。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はその町でいろいろな物をはじめて見た。<ruby><rb>軒</rb><rt>のき</rt></ruby>をならべて続いている大きい商店が、第一、<persName ref="#minosuke">巳之助</persName>には珍らしかった。<persName ref="#minosuke">巳之助</persName>の村にはあきないやとては一軒しかなかった。<ruby><rb>駄菓子</rb><rt>だがし</rt></ruby>、<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>、<ruby><rb>糸繰</rb><rt>いとく</rt></ruby>りの道具、<ruby><rb>膏薬</rb><rt>こうやく</rt></ruby>、<ruby><rb>貝殻</rb><rt>かいがら</rt></ruby>にはいった目薬、そのほか村で使うたいていの物を売っている小さな店が一軒きりしかなかったのである。</p>
+        <p>しかし<persName ref="#minosuke">巳之助</persName>をいちばんおどろかしたのは、その大きな商店が、一つ一つともしている、花のように明かるいガラスのランプであった。<persName ref="#minosuke">巳之助</persName>の村では夜はあかりなしの家が多かった。まっくらな家の中を、人々は盲のように手でさぐりながら、<ruby><rb>水甕</rb><rt>みずがめ</rt></ruby>や、<ruby><rb>石臼</rb><rt>いしうす</rt></ruby>や<ruby><rb>大黒柱</rb><rt>だいこくばしら</rt></ruby>をさぐりあてるのであった。すこしぜいたくな家では、おかみさんが<ruby><rb>嫁入</rb><rt>よめい</rt></ruby>りのとき持って来た<ruby><rb>行燈</rb><rt>あんどん</rt></ruby>を使うのであった。行燈は紙を四方に張りめぐらした中に、油のはいった<ruby><rb>皿</rb><rt>さら</rt></ruby>があって、その皿のふちにのぞいている<ruby><rb>燈心</rb><rt>とうしん</rt></ruby>に、桜の<ruby><rb>莟</rb><rt>つぼみ</rt></ruby>ぐらいの小さいほのおがともると、まわりの紙にみかん色のあたたかな光がさし、附近は少し明かるくなったのである。しかしどんな行燈にしろ、<persName ref="#minosuke">巳之助</persName>が<placeName ref="#ono">大野</placeName>の町で見たランプの明かるさにはとても及ばなかった。</p>
+        <p>それにランプは、その頃としてはまだ珍らしいガラスでできていた。<ruby><rb>煤</rb><rt>すす</rt></ruby>けたり、破れたりしやすい紙でできている行燈より、これだけでも<persName ref="#minosuke">巳之助</persName>にはいいもののように思われた。</p>
+        <p>このランプのために、<placeName ref="#ono">大野</placeName>の町ぜんたいが<placeName ref="#ryugujo">竜宮城</placeName>かなにかのように明かるく感じられた。もう<persName ref="#minosuke">巳之助</persName>は自分の村へ帰りたくないとさえ思った。人間は誰でも明かるいところから暗いところに帰るのを好まないのである。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は<ruby><rb>駄賃</rb><rt>だちん</rt></ruby>の十五銭を<ruby><rb>貰</rb><rt>もら</rt></ruby>うと、人力車とも別れてしまって、お酒にでも酔ったように、波の音のたえまないこの海辺の町を、珍らしい商店をのぞき、美しく明かるいランプに見とれて、さまよっていた。</p>
+        <p>呉服屋では、番頭さんが、<ruby><rb>椿</rb><rt>つばき</rt></ruby>の花を大きく染め出した<ruby><rb>反物</rb><rt>たんもの</rt></ruby>を、ランプの光の下にひろげて客に見せていた。<ruby><rb>穀屋</rb><rt>こくや</rt></ruby>では、小僧さんがランプの下で<ruby><rb>小豆</rb><rt>あずき</rt></ruby>のわるいのを一粒ずつ拾い出していた。また或る家では女の子が、ランプの光の下に白くひかる貝殻を散らしておはじきをしていた。また或る店ではこまかい<ruby><rb>珠</rb><rt>たま</rt></ruby>に糸を通して<ruby><rb>数珠</rb><rt>じゅず</rt></ruby>をつくっていた。ランプの青やかな光のもとでは、人々のこうした生活も、物語か<ruby><rb>幻燈</rb><rt>げんとう</rt></ruby>の世界でのように美しくなつかしく見えた。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は今までなんども、「文明開化で世の中がひらけた」ということをきいていたが、今はじめて文明開化ということがわかったような気がした。</p>
+        <p>歩いているうちに、<persName ref="#minosuke">巳之助</persName>は、様々なランプをたくさん<ruby><rb>吊</rb><rt>つる</rt></ruby>してある店のまえに来た。これはランプを売っている店にちがいない。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はしばらくその店のまえで十五銭を握りしめながらためらっていたが、やがて決心してつかつかとはいっていった。</p>
+        <p>「ああいうものを売っとくれや」</p>
+        <p>と<persName ref="#minosuke">巳之助</persName>はランプをゆびさしていった。まだランプという言葉を知らなかったのである。</p>
+        <p>店の人は、<persName ref="#minosuke">巳之助</persName>がゆびさした大きい<ruby><rb>吊</rb><rt>つり</rt></ruby>ランプをはずして来たが、それは十五銭では買えなかった。</p>
+        <p>「負けとくれや」</p>
+        <p>と<persName ref="#minosuke">巳之助</persName>はいった。</p>
+        <p>「そうは負からん」</p>
+        <p>と店の人は答えた。</p>
+        <p>「<ruby><rb>卸値</rb><rt>おろしね</rt></ruby>で売っとくれや」</p>
+        <p><persName ref="#minosuke">巳之助</persName>は村の雑貨屋へ、作った<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>を買ってもらいによく行ったので、物には卸値と<ruby><rb>小売値</rb><rt>こうりね</rt></ruby>があって、卸値は安いということを知っていた。たとえば、村の雑貨屋は、<persName ref="#minosuke">巳之助</persName>の作った<ruby><rb>瓢箪型</rb><rt>ひょうたんがた</rt></ruby>の草鞋を卸値の一銭五<ruby><rb>厘</rb><rt>りん</rt></ruby>で買いとって、<ruby><rb>人力曳</rb><rt>じんりきひき</rt></ruby>たちに小売値の二銭五厘で売っていたのである。</p>
+        <p>ランプ屋の主人は、見も知らぬどこかの小僧がそんなことをいったので、びっくりしてまじまじと<persName ref="#minosuke">巳之助</persName>の顔を見た。そしていった。</p>
+        <p>「卸値で売れって、そりゃ相手がランプを売る家なら卸値で売ってあげてもいいが、一人一人のお客に卸値で売るわけにはいかんな」</p>
+        <p>「ランプ屋なら卸値で売ってくれるだのイ？」</p>
+        <p>「ああ」</p>
+        <p>「そんなら、おれ、ランプ屋だ。卸値で売ってくれ」</p>
+        <p>店の人はランプを持ったまま笑い出した。</p>
+        <p>「おめえがランプ屋？　はッはッはッはッ」</p>
+        <p>「ほんとうだよ、おッつあん。おれ、ほんとうにこれからランプ屋になるんだ。な、だから頼むに、<ruby><rb>今日</rb><rt>きょう</rt></ruby>は一つだけンど卸値で売ってくれや。こんど来るときゃ、たくさん、いっぺんに買うで」</p>
+        <p>店の人ははじめ笑っていたが、<persName ref="#minosuke">巳之助</persName>の真剣なようすに動かされて、いろいろ<persName ref="#minosuke">巳之助</persName>の身の上をきいたうえ、</p>
+        <p>「よし、そんなら卸値でこいつを売ってやろう。ほんとは卸値でもこのランプは十五銭じゃ売れないけど、おめえの熱心なのに感心した。負けてやろう。そのかわりしっかりしょうばいをやれよ。うちのランプをどんどん持ってって売ってくれ」</p>
+        <p>といって、ランプを<persName ref="#minosuke">巳之助</persName>に渡した。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はランプのあつかい方を一通り教えてもらい、ついでに<ruby><rb>提燈</rb><rt>ちょうちん</rt></ruby>がわりにそのランプをともして、村へむかった。</p>
+        <p><ruby><rb>藪</rb><rt>やぶ</rt></ruby>や松林のうちつづく暗い峠道でも、<persName ref="#minosuke">巳之助</persName>はもう<ruby><rb>恐</rb><rt>こわ</rt></ruby>くはなかった。花のように明かるいランプをさげていたからである。</p>
+        <p><persName ref="#minosuke">巳之助</persName>の胸の中にも、もう一つのランプがともっていた。文明開化に遅れた自分の暗い村に、このすばらしい文明の利器を売りこんで、村人たちの生活を明かるくしてやろうという希望のランプが――</p>
+        <p><persName ref="#minosuke">巳之助</persName>の新しいしょうばいは、はじめのうちまるではやらなかった。百姓たちは何でも新しいものを信用しないからである。</p>
+        <p>そこで<persName ref="#minosuke">巳之助</persName>はいろいろ考えたあげく、村で一軒きりのあきないやへそのランプを持っていって、ただで貸してあげるからしばらくこれを使って下さいと頼んだ。</p>
+        <p>雑貨屋の<ruby><rb>婆</rb><rt>ばあ</rt></ruby>さんは、しぶしぶ承知して、店の天井に<ruby><rb>釘</rb><rt>くぎ</rt></ruby>を打ってランプを吊し、その晩からともした。</p>
+        <p>五日ほどたって、<persName ref="#minosuke">巳之助</persName>が草鞋を買ってもらいに行くと、雑貨屋の婆さんはにこにこしながら、こりゃたいへん便利で明かるうて、夜でもお客がよう来てくれるし、<ruby><rb>釣銭</rb><rt>つりせん</rt></ruby>をまちがえることもないので、気に入ったから買いましょう、といった。その上、ランプのよいことがはじめてわかった村人から、もう三つも注文のあったことを<persName ref="#minosuke">巳之助</persName>にきかしてくれた。<persName ref="#minosuke">巳之助</persName>はとびたつように喜んだ。</p>
+        <p>そこで雑貨屋の婆さんからランプの代と草鞋の代を受けとると、すぐその足で、走るようにして<placeName ref="#ono">大野</placeName>へいった。そしてランプ屋の主人にわけを話して、足りないところは貸してもらい、三つのランプを買って来て、注文した人に売った。</p>
+        <p>これから<persName ref="#minosuke">巳之助</persName>のしょうばいははやって来た。</p>
+        <p>はじめは注文をうけただけ<placeName ref="#ono">大野</placeName>へ買いにいっていたが、少し金がたまると、注文はなくてもたくさん買いこんで来た。</p>
+        <p>そして今はもう、よその家の走り使いや子守をすることはやめて、ただランプを売るしょうばいだけにうちこんだ。<ruby><rb>物干台</rb><rt>ものほしだい</rt></ruby>のようなわくのついた車をしたてて、それにランプやほやなどをいっぱい吊し、ガラスの触れあう涼しい音をさせながら、<persName ref="#minosuke">巳之助</persName>は自分の村や附近の村々へ売りにいった。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はお金も<ruby><rb>儲</rb><rt>もう</rt></ruby>かったが、それとは別に、このしょうばいがたのしかった。今まで暗かった家に、だんだん<persName ref="#minosuke">巳之助</persName>の売ったランプがともってゆくのである。暗い家に、<persName ref="#minosuke">巳之助</persName>は文明開化の明かるい火を一つ一つともしてゆくような気がした。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はもう青年になっていた。それまでは自分の家とてはなく、区長さんのところの軒のかたむいた<ruby><rb>納屋</rb><rt>なや</rt></ruby>に住ませてもらっていたのだが、小金がたまったので、自分の家もつくった。すると世話してくれる人があったのでお<ruby><rb>嫁</rb><rt>よめ</rt></ruby>さんももらった。</p>
+        <p><ruby><rb>或</rb><rt>あ</rt></ruby>るとき、よその村でランプの宣伝をしておって、「ランプの下なら<ruby><rb>畳</rb><rt>たたみ</rt></ruby>の上に新聞をおいて読むことが出来るのイ」と区長さんに以前きいていたことをいうと、お客さんの一人が「ほんとかン？」とききかえしたので、<ruby><rb>嘘</rb><rt>うそ</rt></ruby>のきらいな<persName ref="#minosuke">巳之助</persName>は、自分でためして見る気になり、区長さんのところから古新聞をもらって来て、ランプの下にひろげた。</p>
+        <p>やはり区長さんのいわれたことはほんとうであった。新聞のこまかい字がランプの光で一つ一つはっきり見えた。「わしは嘘をいってしょうばいをしたことにはならない」と<persName ref="#minosuke">巳之助</persName>はひとりごとをいった。しかし<persName ref="#minosuke">巳之助</persName>は、字がランプの光ではっきり見えても何にもならなかった。字を読むことができなかったからである。</p>
+        <p>「ランプで物はよく見えるようになったが、字が読めないじゃ、まだほんとうの文明開化じゃねえ」</p>
+        <p>そういって<persName ref="#minosuke">巳之助</persName>は、それから毎晩区長さんのところへ字を教えてもらいにいった。</p>
+        <p>熱心だったので一年もすると、<persName ref="#minosuke">巳之助</persName>は<ruby><rb>尋常科</rb><rt>じんじょうか</rt></ruby>を卒業した村人の誰にも負けないくらい読めるようになった。</p>
+        <p>そして<persName ref="#minosuke">巳之助</persName>は<ruby><rb>書物</rb><rt>しょもつ</rt></ruby>を読むことをおぼえた。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はもう、男ざかりの<ruby><rb>大人</rb><rt>おとな</rt></ruby>であった。家には子供が二人あった。「自分もこれでどうやらひとり立ちができたわけだ。まだ身を立てるというところまではいっていないけれども」と、ときどき思って見て、そのつど心に満足を覚えるのであった。</p>
+        <p>さて或る日、<persName ref="#minosuke">巳之助</persName>がランプの<ruby><rb>芯</rb><rt>しん</rt></ruby>を仕入れに<placeName ref="#ono">大野</placeName>の町へやって来ると、五、六人の<ruby><rb>人夫</rb><rt>にんぷ</rt></ruby>が道のはたに穴を堀り、太い長い柱を立てているのを見た。その柱の上の方には腕のような木が二本ついていて、その腕木には白い瀬戸物のだるまさんのようなものがいくつかのっていた。こんな奇妙なものを道のわきに立てて何にするのだろう、と思いながら少し先にゆくと、また道ばたに同じような高い柱が立っていて、それには<ruby><rb>雀</rb><rt>すずめ</rt></ruby>が腕木にとまって鳴いていた。</p>
+        <p>この奇妙な高い柱は五十<ruby><rb>米</rb><rt>メートル</rt></ruby>ぐらい間をおいては、道のわきに立っていた。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はついに、ひなたでうどんを<ruby><rb>乾</rb><rt>ほ</rt></ruby>している人にきいてみた。すると、うどんやは「電気とやらいうもんが今度ひけるだげな。そいでもう、ランプはいらんようになるだげな」と答えた。</p>
+        <p><persName ref="#minosuke">巳之助</persName>にはよくのみこめなかった。電気のことなどまるで知らなかったからだ。ランプの代りになるものらしいのだが、そうとすれば、電気というものはあかりにちがいあるまい。あかりなら、家の中にともせばいいわけで、何もあんなとてつもない柱を道のくろに何本もおっ立てることはないじゃないかと、<persName ref="#minosuke">巳之助</persName>は思ったのである。</p>
+        <p>それから<ruby><rb>一月</rb><rt>ひとつき</rt></ruby>ほどたって、<persName ref="#minosuke">巳之助</persName>がまた<placeName ref="#ono">大野</placeName>へ行くと、この間立てられた道のはたの太い柱には、黒い綱のようなものが数本わたされてあった。黒い綱は、柱の腕木にのっているだるまさんの頭を一まきして次の柱へわたされ、そこでまただるまさんの頭を一まきして次の柱にわたされ、こうしてどこまでもつづいていた。</p>
+        <p>注意してよく見ると、ところどころの柱から黒い綱が二本ずつだるまさんの頭のところで別れて、家の<ruby><rb>軒端</rb><rt>のきば</rt></ruby>につながれているのであった。</p>
+        <p>「へへえ、電気とやらいうもんはあかりがともるもんかと思ったら、これはまるで綱じゃねえか。雀や<ruby><rb>燕</rb><rt>つばめ</rt></ruby>のええ休み場というもんよ」</p>
+        <p>と<persName ref="#minosuke">巳之助</persName>が一人であざわらいながら、知合いの甘酒屋にはいってゆくと、いつも<ruby><rb>土間</rb><rt>どま</rt></ruby>のまん中の飯台の上に吊してあった大きなランプが、横の壁の辺に取りかたづけられて、あとにはそのランプをずっと小さくしたような、石油入れのついていない、変なかっこうのランプが、<ruby><rb>丈夫</rb><rt>じょうぶ</rt></ruby>そうな綱で天井からぶらさげられてあった。</p>
+        <p>「何だやい、変なものを吊したじゃねえか。あのランプはどこか悪くでもなったかやい」</p>
+        <p>と<persName ref="#minosuke">巳之助</persName>はきいた。すると甘酒屋が、</p>
+        <p>「ありゃ、こんどひけた電気というもんだ。火事の心配がのうて、明かるうて、マッチはいらぬし、なかなか便利なもんだ」</p>
+        <p>と答えた。</p>
+        <p>「ヘッ、へんてこれんなものをぶらさげたもんよ。これじゃ甘酒屋の店も何だか間がぬけてしまった。客もへるだろうよ」</p>
+        <p>甘酒屋は、相手がランプ売であることに気がついたので、電燈の便利なことはもういわなかった。</p>
+        <p>「なア、甘酒屋のとッつあん。見なよ、あの天井のとこを。ながねんのランプの<ruby><rb>煤</rb><rt>すす</rt></ruby>であそこだけ真黒になっとるに。ランプはもうあそこにいついてしまったんだ。今になって電気たらいう便利なもんができたからとて、あそこからはずされて、あんな壁のすみっこにひっかけられるのは、ランプがかわいそうよ」</p>
+        <p>こんなふうに<persName ref="#minosuke">巳之助</persName>はランプの肩をもって、電燈のよいことはみとめなかった。</p>
+        <p>ところでまもなく晩になって、誰もマッチ一本すらなかったのに、とつぜん甘酒屋の店が真昼のように明かるくなったので、<persName ref="#minosuke">巳之助</persName>はびっくりした。あまり明かるいので、<persName ref="#minosuke">巳之助</persName>は思わずうしろをふりむいて見たほどだった。</p>
+        <p>「<persName ref="#minosuke">巳之さん</persName>、これが電気だよ」</p>
+        <p><persName ref="#minosuke">巳之助</persName>は歯をくいしばって、ながいあいだ電燈を見つめていた。<ruby><rb>敵</rb><rt>かたき</rt></ruby>でも<ruby><rb>睨</rb><rt>にら</rt></ruby>んでいるようなかおつきであった。あまり見つめていて眼のたまが痛くなったほどだった。</p>
+        <p>「<persName ref="#minosuke">巳之さん</persName>、そういっちゃ何だが、とてもランプで<ruby><rb>太刀</rb><rt>たち</rt></ruby>うちはできないよ。ちょっと外へくびを出して町通りを見てごらんよ」</p>
+        <p><persName ref="#minosuke">巳之助</persName>はむっつりと入口の<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>をあけて、通りをながめた。どこの家どこの店にも、甘酒屋のと同じように明かるい電燈がともっていた。光は家の中にあまつて、道の上にまでこぼれ出ていた。ランプを見なれていた<persName ref="#minosuke">巳之助</persName>にはまぶしすぎるほどのあかりだった。<persName ref="#minosuke">巳之助</persName>は、くやしさに肩でいきをしながら、これも長い間ながめていた。</p>
+        <p>ランプの、てごわいかたきが出て来たわい、と思った。いぜんには文明開化ということをよく言っていた<persName ref="#minosuke">巳之助</persName>だったけれど、電燈がランプよりいちだん進んだ文明開化の利器であるということは分らなかった。りこうな人でも、自分が職を失うかどうかというようなときには、物事の判断が正しくつかなくなることがあるものだ。</p>
+        <p>その日から<persName ref="#minosuke">巳之助</persName>は、電燈が自分の村にもひかれるようになることを、心ひそかにおそれていた。電燈がともるようになれば、村人たちはみんなランプを、あの甘酒屋のしたように壁の隅につるすか、倉の二階にでもしまいこんでしまうだろう。ランプ屋のしょうばいはいらなくなるだろう。</p>
+        <p>だが、ランプでさえ村へはいって来るにはかなりめんどうだったから、電燈となっては村人たちはこわがって、なかなか寄せつけることではあるまい、と<persName ref="#minosuke">巳之助</persName>は、一方では安心もしていた。</p>
+        <p>しかし間もなく、「こんどの村会で、村に電燈を引くかどうかを決めるだげな」という<ruby><rb>噂</rb><rt>うわさ</rt></ruby>をきいたときには、<persName ref="#minosuke">巳之助</persName>は脳天に一撃をくらったような気がした。強敵いよいよござんなれ、と思った。</p>
+        <p>そこで<persName ref="#minosuke">巳之助</persName>は黙ってはいられなかった。村の人々の間に、電燈反対の意見をまくしたてた。</p>
+        <p>「電気というものは、長い線で山の奥からひっぱって来るもんだでのイ、その線をば夜中に<ruby><rb>狐</rb><rt>きつね</rt></ruby>や<ruby><rb>狸</rb><rt>たぬき</rt></ruby>がつたって来て、この<ruby><rb>近</rb><rt>きん</rt></ruby>ぺんの<ruby><rb>田畠</rb><rt>たはた</rt></ruby>を荒らすことはうけあいだね」</p>
+        <p>こういうばかばかしいことを<persName ref="#minosuke">巳之助</persName>は、自分の<ruby><rb>馴</rb><rt>な</rt></ruby>れたしょうばいを守るためにいうのであった。それをいうとき何かうしろめたい気がしたけれども。</p>
+        <p>村会がすんで、いよいよ<placeName ref="#yanabeshinden"><ruby><rb>岩滑新田</rb><rt>やなべしんでん</rt></ruby></placeName>の村にも電燈をひくことにきまったと聞かされたときにも、<persName ref="#minosuke">巳之助</persName>は脳天に一撃をくらったような気がした。こうたびたび一撃をくらってはたまらない、頭がどうかなってしまう、と思った。</p>
+        <p>その通りであった。頭がどうかなってしまった。村会のあとで三日間、<persName ref="#minosuke">巳之助</persName>は昼間もふとんをひっかぶって寝ていた。その間に頭の調子が狂ってしまったのだ。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は誰かを<ruby><rb>怨</rb><rt>うら</rt></ruby>みたくてたまらなかった。そこで村会で議長の役をした区長さんを怨むことにした。そして区長さんを怨まねばならぬわけをいろいろ考えた。へいぜいは頭のよい人でも、しょうばいを失うかどうかというようなせとぎわでは、正しい判断をうしなうものである。とんでもない怨みを<ruby><rb>抱</rb><rt>いだ</rt></ruby>くようになるものである。</p>
+        <p>菜の花ばたの、あたたかい月夜であった。どこかの村で春祭の<ruby><rb>支度</rb><rt>したく</rt></ruby>に打つ太鼓がとほとほと聞えて来た。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は道を通ってゆかなかった。みぞの中を<ruby><rb>鼬</rb><rt>いたち</rt></ruby>のように身をかがめて走ったり、<ruby><rb>藪</rb><rt>やぶ</rt></ruby>の中を捨犬のようにかきわけたりしていった。他人に見られたくないとき、人はこうするものだ。</p>
+        <p>区長さんの家には長い間やっかいになっていたので、よくその様子はわかっていた。火をつけるにいちばん都合のよいのは<ruby><rb>藁屋根</rb><rt>わらやね</rt></ruby>の牛小屋であることは、もう家を出るときから考えていた。</p>
+        <p><ruby><rb>母屋</rb><rt>おもや</rt></ruby>はもうひっそり寝しずまっていた。牛小屋もしずかだった。しずかだといって、牛は眠っているかめざめているかわかったもんじゃない。牛は起きていても寝ていてもしずかなものだから。もっとも牛が<ruby><rb>眼</rb><rt>め</rt></ruby>をさましていたって、火をつけるにはいっこうさしつかえないわけだけれども。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はマッチのかわりに、マッチがまだなかったじぶん使われていた<ruby><rb>火</rb><rt>ひ</rt></ruby><ruby><rb>打</rb><rt>うち</rt></ruby>の道具を持って来た。家を出るとき、かまどのあたりでマッチを<ruby><rb>探</rb><rt>さが</rt></ruby>したが、どうしたわけかなかなか見つからないので、手にあたったのをさいわい、火打の道具を持って来たのだった。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は火打で火を切りはじめた。火花は飛んだが、ほくちがしめっているのか、ちっとも燃えあがらないのであった。<persName ref="#minosuke">巳之助</persName>は火打というものは、あまり便利なものではないと思った。火が出ないくせにカチカチと大きな音ばかりして、これでは寝ている人が眼をさましてしまうのである。</p>
+        <p>「ちえッ」と<persName ref="#minosuke">巳之助</persName>は舌打ちしていった。「マッチを持って来りゃよかった。こげな火打みてえな古くせえもなア、いざというとき間にあわねえだなア」</p>
+        <p>そういってしまって<persName ref="#minosuke">巳之助</persName>は、ふと自分の言葉をききとがめた。</p>
+        <p>「古くせえもなア、いざというとき間にあわねえ、……古くせえもなア間にあわねえ……」</p>
+        <p>ちょうど月が出て空が明かるくなるように、<persName ref="#minosuke">巳之助</persName>の頭がこの言葉をきっかけにして明かるく晴れて来た。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は、今になって、自分のまちがっていたことがはっきりとわかった。――ランプはもはや古い道具になったのである。電燈という新しいいっそう便利な道具の世の中になったのである。それだけ世の中がひらけたのである。文明開化が進んだのである。<persName ref="#minosuke">巳之助</persName>もまた<placeName ref="#nihon">日本</placeName>のお国の人間なら、<placeName ref="#nihon">日本</placeName>がこれだけ進んだことを喜んでいいはずなのだ。古い自分のしょうばいが失われるからとて、世の中の進むのにじゃましようとしたり、何の怨みもない人を怨んで火をつけようとしたのは、男として何という見苦しいざまであったことか。世の中が進んで、古いしょうばいがいらなくなれば、男らしく、すっぱりそのしょうばいは<ruby><rb>棄</rb><rt>す</rt></ruby>てて、世の中のためになる新しいしょうばいにかわろうじゃないか。――</p>
+        <p><persName ref="#minosuke">巳之助</persName>はすぐ家へとってかえした。</p>
+        <p>そしてそれからどうしたか。</p>
+        <p>寝ているおかみさんを起して、今家にあるすべてのランプに石油をつがせた。</p>
+        <p>おかみさんは、こんな<ruby><rb>夜更</rb><rt>よふ</rt></ruby>けに何をするつもりか<persName ref="#minosuke">巳之助</persName>にきいたが、<persName ref="#minosuke">巳之助</persName>は自分がこれからしようとしていることをきかせれば、おかみさんが止めるにきまっているので、黙っていた。</p>
+        <p>ランプは大小さまざまのがみなで五十ぐらいあった。それにみな石油をついだ。そしていつもあきないに出るときと同じように、車にそれらのランプをつるして、外に出た。こんどはマッチを忘れずに持って。</p>
+        <p>道が西の<ruby><rb>峠</rb><rt>とうげ</rt></ruby>にさしかかるあたりに、<placeName ref="#handaike"><ruby><rb>半田池</rb><rt>はんだいけ</rt></ruby></placeName>という大きな池がある。春のことでいっぱいたたえた水が、月の下で銀盤のようにけぶり光っていた。池の岸にははんの木や柳が、水の中をのぞくようなかっこうで立っていた。</p>
+        <p><persName ref="#minosuke">巳之助</persName>は<ruby><rb>人気</rb><rt>ひとけ</rt></ruby>のないここを選んで来た。</p>
+        <p>さて<persName ref="#minosuke">巳之助</persName>はどうするというのだろう。</p>
+        <p><persName ref="#minosuke">巳之助</persName>はランプに火をともした。一つともしては、それを池のふちの木の枝に吊した。小さいのも大きいのも、とりまぜて、木にいっぱい吊した。一本の木で吊しきれないと、そのとなりの木に吊した。こうしてとうとうみんなのランプを三本の木に吊した。</p>
+        <p>風のない夜で、ランプは一つ一つがしずかにまじろがず、燃え、あたりは昼のように明かるくなった。あかりをしたって寄って来た魚が、水の中にきらりきらりとナイフのように光った。</p>
+        <p>「わしの、しょうばいのやめ方はこれだ」</p>
+        <p>と<persName ref="#minosuke">巳之助</persName>は一人でいった。しかし立去りかねて、ながいあいだ両手を<ruby><rb>垂</rb><rt>た</rt></ruby>れたままランプの鈴なりになった木を見つめていた。</p>
+        <p>ランプ、ランプ、なつかしいランプ。ながの年月なじんで来たランプ。</p>
+        <p>「わしの、しょうばいのやめ方はこれだ」</p>
+        <p>それから<persName ref="#minosuke">巳之助</persName>は池のこちら側の<ruby><rb>往還</rb><rt>おうかん</rt></ruby>に来た。まだランプは、向こう側の岸の上にみなともっていた。五十いくつがみなともっていた。そして水の上にも五十いくつの、さかさまのランプがともっていた。立ちどまって<persName ref="#minosuke">巳之助</persName>は、そこでもながく見つめていた。</p>
+        <p>ランプ、ランプ、なつかしいランプ。</p>
+        <p>やがて<persName ref="#minosuke">巳之助</persName>はかがんで、足もとから石ころを一つ拾った。そして、いちばん大きくともっているランプに<ruby><rb>狙</rb><rt>ねら</rt></ruby>いをさだめて、力いっぱい投げた。パリーンと音がして、大きい火がひとつ消えた。</p>
+        <p>「お前たちの<ruby><rb>時世</rb><rt>じせい</rt></ruby>はすぎた。世の中は進んだ」</p>
+        <p>と<persName ref="#minosuke">巳之助</persName>はいった。そしてまた一つ石ころを拾った。二番目に大きかったランプが、パリーンと鳴って消えた。</p>
+        <p>「世の中は進んだ。電気の時世になった」</p>
+        <p>三番目のランプを割ったとき、<persName ref="#minosuke">巳之助</persName>はなぜか涙がうかんで来て、もうランプに<ruby><rb>狙</rb><rt>ねら</rt></ruby>いを定めることができなかった。</p>
+        <p>こうして<persName ref="#minosuke">巳之助</persName>は今までのしょうばいをやめた。それから町に出て、新しいしょうばいをはじめた。本屋になったのである。</p>
+        <p>＊</p>
+        <p>「<persName ref="#minosuke">巳之助</persName>さんは今でもまだ本屋をしている。もっとも今じゃだいぶ年とったので、<ruby><rb>息子</rb><rt>むすこ</rt></ruby>が店はやっているがね」</p>
+        <p>と<persName ref="#toichi">東一君</persName>のおじいさんは話をむすんで、<ruby><rb>冷</rb><rt>さ</rt></ruby>めたお茶をすすった。<persName ref="#minosuke">巳之助</persName>さんというのは<persName ref="#toichi">東一君</persName>のおじいさんのことなので、<persName ref="#toichi">東一君</persName>はまじまじとおじいさんの顔を見た。いつの間にか<persName ref="#toichi">東一君</persName>はおじいさんのまえに坐りなおして、おじいさんのひざに手をおいたりしていたのである。</p>
+        <p>「そいじゃ、残りの四十七のランプはどうした？」</p>
+        <p>と<persName ref="#toichi">東一君</persName>はきいた。</p>
+        <p>「知らん。次の日、旅の人が見つけて持ってったかも知れない」</p>
+        <p>「そいじゃ、家にはもう一つもランプなしになっちゃった？」</p>
+        <p>「うん、ひとつもなし。この台ランプだけが残っていた」</p>
+        <p>とおじいさんは、ひるま<persName ref="#toichi">東一君</persName>が持出したランプを見ていった。</p>
+        <p>「損しちゃったね。四十七も誰かに持ってかれちゃって」</p>
+        <p>と<persName ref="#toichi">東一君</persName>がいった。</p>
+        <p>「うん損しちゃった。今から考えると、何もあんなことをせんでもよかったとわしも思う。<placeName ref="#yanabeshinden"><ruby><rb>岩滑新田</rb><rt>やなべしんでん</rt></ruby></placeName>に電燈がひけてからでも、まだ五十ぐらいのランプはけっこう売れたんだからな。<placeName ref="#yanabeshinden">岩滑新田</placeName>の南にある<placeName ref="#fukatani"><ruby><rb>深谷</rb><rt>ふかだに</rt></ruby></placeName>なんという小さい村じゃ、まだ今でもランプを使っているし、ほかにも、ずいぶんおそくまでランプを使っていた村は、あったのさ。しかし何しろわしもあの頃は元気がよかったんでな。思いついたら、深くも考えず、ぱっぱっとやってしまったんだ」</p>
+        <p>「馬鹿しちゃったね」</p>
+        <p>と<persName ref="#toichi">東一君</persName>は孫だからえんりょなしにいった。</p>
+        <p>「うん、馬鹿しちゃった。しかしね、<persName ref="#toichi">東坊</persName>――」</p>
+        <p>とおじいさんは、きせるを<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の上でぎゅッと握りしめていった。</p>
+        <p>「わしのやり方は少し馬鹿だったが、わしのしょうばいのやめ方は、自分でいうのもなんだが、なかなかりっぱだったと思うよ。わしの言いたいのはこうさ、<placeName ref="#nihon">日本</placeName>がすすんで、自分の古いしょうばいがお役に立たなくなったら、すっぱりそいつをすてるのだ。いつまでもきたなく古いしょうばいにかじりついていたり、自分のしょうばいがはやっていた昔の方がよかったといったり、世の中のすすんだことをうらんだり、そんな<ruby><rb>意気地</rb><rt>いくじ</rt></ruby>のねえことは決してしないということだ」</p>
+        <p><persName ref="#toichi">東一君</persName>は黙って、ながい間おじいさんの、小さいけれど意気のあらわれた顔をながめていた。やがて、いった。</p>
+        <p>「おじいさんはえらかったんだねえ」</p>
+        <p>そしてなつかしむように、かたわらの古いランプを見た。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

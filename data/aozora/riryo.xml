@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>李陵</title>
+        <author>中島敦</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>李陵</title><author>中島敦</author>
+          <note>青空文庫。底本：「李陵・山月記・弟子・名人伝」角川文庫、角川書店。1968（昭和43）年9月10日改版初版発行。1998（平成10）年5月30日改版52版発行。入力：佐野良二。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000119/card1737.html">https://www.aozora.gr.jp/cards/000119/card1737.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="riryo">
+        <persName>李陵</persName>
+        <note>漢の騎都尉。字は少卿。歩卒五千を率いて匈奴と戦い、力尽きて降った本作の主人公</note>
+      </person>
+      <person xml:id="sobu">
+        <persName>蘇武</persName>
+        <note>漢の中郎将。字は子卿。匈奴に十九年抑留されるも節を持し続けた</note>
+      </person>
+      <person xml:id="shibasen">
+        <persName>司馬遷</persName>
+        <note>太史令。李陵を弁護して宮刑に処され、『史記』を完成した</note>
+      </person>
+      <person xml:id="shibatan">
+        <persName>司馬談</persName>
+        <note>司馬遷の父。武帝に仕えた太史令</note>
+      </person>
+      <person xml:id="butei">
+        <persName>武帝</persName>
+        <note>前漢第7代皇帝(劉徹)</note>
+      </person>
+      <person xml:id="buntei">
+        <persName>文帝</persName>
+        <note>前漢第5代皇帝。武帝の祖父</note>
+      </person>
+      <person xml:id="keitei">
+        <persName>景帝</persName>
+        <note>前漢第6代皇帝</note>
+      </person>
+      <person xml:id="koso">
+        <persName>高祖</persName>
+        <note>前漢の初代皇帝(劉邦)</note>
+      </person>
+      <person xml:id="shotei">
+        <persName>昭帝</persName>
+        <note>前漢第8代皇帝。武帝の末子・太子弗陵</note>
+      </person>
+      <person xml:id="sentei">
+        <persName>宣帝</persName>
+        <note>前漢第10代皇帝</note>
+      </person>
+      <person xml:id="yodai">
+        <persName>煬帝</persName>
+        <note>隋の第2代皇帝。武帝の性格の比較として言及</note>
+      </person>
+      <person xml:id="shikotei">
+        <persName>始皇帝</persName>
+        <note>秦の初代皇帝</note>
+      </person>
+      <person xml:id="riko">
+        <persName>李広</persName>
+        <note>李陵の祖父。飛将軍と呼ばれた名将。衛青との衝突ののち自刎した</note>
+      </person>
+      <person xml:id="rikori">
+        <persName>李広利</persName>
+        <note>弐師将軍。李夫人の兄。大宛遠征で武名を挙げた</note>
+      </person>
+      <person xml:id="eisei">
+        <persName>衛青</persName>
+        <note>大将軍。匈奴討伐の名将</note>
+      </person>
+      <person xml:id="kakukyohei">
+        <persName>霍去病</persName>
+        <note>嫖騎将軍。衛青の甥</note>
+      </person>
+      <person xml:id="chohado">
+        <persName>趙破奴</persName>
+        <note>浞野侯。匈奴に生擒られ後に漢へ逃げ帰った</note>
+      </person>
+      <person xml:id="jojii">
+        <persName>徐自為</persName>
+        <note>光禄勲。朔北に城障を築いた</note>
+      </person>
+      <person xml:id="rohakutoku">
+        <persName>路博徳</persName>
+        <note>彊弩都尉。もと伏波将軍として南越を滅ぼした老将</note>
+      </person>
+      <person xml:id="chinhoraku">
+        <persName>陳歩楽</persName>
+        <note>李陵麾下の使者。吉報の使者として郎となったが自殺を強いられた</note>
+      </person>
+      <person xml:id="kosongo">
+        <persName>公孫敖</persName>
+        <note>因杅将軍。誤報により李陵一族族滅の因をつくった</note>
+      </person>
+      <person xml:id="kanennen">
+        <persName>韓延年</persName>
+        <note>成安侯・校尉。李陵とともに戦い戦死した</note>
+      </person>
+      <person xml:id="kankan">
+        <persName>管敢</persName>
+        <note>漢の軍侯。笞打たれたのを恨み匈奴に降って漢軍の内情を密告した</note>
+      </person>
+      <person xml:id="rikan">
+        <persName>李敢</persName>
+        <note>李広の次男(本文では一箇所「陵の従弟」とも)。霍去病に射殺された</note>
+      </person>
+      <person xml:id="shoteiko-zenu">
+        <persName>且鞮侯単于</persName>
+        <note>李陵を捕えて厚遇した匈奴の単于。呴犁湖単于の弟</note>
+      </person>
+      <person xml:id="korokuko-zenu">
+        <persName>狐鹿姑単于</persName>
+        <note>且鞮侯単于の長子。左賢王として李陵に師事し、のち単于を嗣いだ</note>
+      </person>
+      <person xml:id="kuriko-zenu">
+        <persName>呴犁湖単于</persName>
+        <note>且鞮侯単于の先代・兄</note>
+      </person>
+      <person xml:id="koentei-zenu">
+        <persName>壺衍鞮単于</persName>
+        <note>狐鹿姑単于の子</note>
+      </person>
+      <person xml:id="kokanya-zenu">
+        <persName>呼韓邪単于</persName>
+        <note>李陵の子が擁立した烏籍都尉と対抗した単于</note>
+      </person>
+      <person xml:id="eiritsu">
+        <persName>衛律</persName>
+        <note>漢から匈奴に降り丁霊王の位を得た近臣</note>
+      </person>
+      <person xml:id="risho">
+        <persName>李緒</persName>
+        <note>漢の降将。匈奴に軍略を授け、李陵と誤認された。李陵に刺殺される</note>
+      </person>
+      <person xml:id="riennen">
+        <persName>李延年</persName>
+        <note>協律都尉。衛律亡命のきっかけとなった</note>
+      </person>
+      <person xml:id="ninrissei">
+        <persName>任立政</persName>
+        <note>李陵の故人(旧友)。昭帝の使者として李陵に帰漢を勧めた</note>
+      </person>
+      <person xml:id="kakuko">
+        <persName>霍光</persName>
+        <note>字は子孟。侍中奉車都尉、のち大司馬大将軍として昭帝を輔けた</note>
+      </person>
+      <person xml:id="jokanketsu">
+        <persName>上官桀</persName>
+        <note>字は少叔。左将軍。李陵の故人</note>
+      </person>
+      <person xml:id="kosonga">
+        <persName>公孫賀</persName>
+        <note>武帝末期の丞相</note>
+      </person>
+      <person xml:id="toshu">
+        <persName>杜周</persName>
+        <note>御史大夫。酷吏として知られる</note>
+      </person>
+      <person xml:id="kyuan">
+        <persName>汲黯</persName>
+        <note>武帝に直言した硬骨の臣</note>
+      </person>
+      <person xml:id="risai">
+        <persName>李蔡</persName>
+        <note>武帝期に死罪に行なわれた丞相の一人</note>
+      </person>
+      <person xml:id="seikaku">
+        <persName>青霍</persName>
+        <note>武帝期に死罪に行なわれた丞相の一人(通行の史書の「荘青翟」に当たるか。底本の表記のまま)</note>
+      </person>
+      <person xml:id="choshu">
+        <persName>趙周</persName>
+        <note>武帝期に死罪に行なわれた丞相の一人</note>
+      </person>
+      <person xml:id="chotei">
+        <persName>趙弟</persName>
+        <note>太常。李陵断罪の議に列した</note>
+      </person>
+      <person xml:id="jokei">
+        <persName>常恵</persName>
+        <note>蘇武に従って胡地に抑留され、蘇武生存を漢使に知らせた</note>
+      </person>
+      <person xml:id="rifujin">
+        <persName>李夫人</persName>
+        <note>武帝の寵姫。李広利の妹</note>
+      </person>
+      <person xml:id="ritoko">
+        <persName>当戸</persName>
+        <note>李陵の父・李当戸。陵の生まれる数か月前に死んだ</note>
+      </person>
+      <person xml:id="kou">
+        <persName>項羽</persName>
+        <note>秦末の武将(項王)。『史記』項羽本紀の人物として言及</note>
+      </person>
+      <person xml:id="gubijin">
+        <persName>虞</persName>
+        <note>項羽の寵姫・虞美人。垓下の歌の引用中に登場</note>
+      </person>
+      <person xml:id="sui">
+        <persName>騅</persName>
+        <note>項羽の駿馬。垓下の歌の引用中に登場</note>
+      </person>
+      <person xml:id="hankai">
+        <persName>樊噲</persName>
+        <note>漢の功臣。『史記』の人物として言及</note>
+      </person>
+      <person xml:id="hanzo">
+        <persName>范増</persName>
+        <note>項羽の謀臣。『史記』の人物として言及</note>
+      </person>
+      <person xml:id="koshi">
+        <persName>孔子</persName>
+        <note>「述べて作らぬ」の典拠として言及</note>
+      </person>
+      <person xml:id="rochuren">
+        <persName>魯仲連</persName>
+        <note>戦国斉の弁士。『史記』の人物として言及</note>
+      </person>
+      <person xml:id="goshisho">
+        <persName>伍子胥</persName>
+        <note>春秋呉の忠臣。『史記』の人物として言及</note>
+      </person>
+      <person xml:id="rinshojo">
+        <persName>藺相如</persName>
+        <note>戦国趙の名臣。『史記』の人物として言及</note>
+      </person>
+      <person xml:id="taishitan">
+        <persName>太子丹</persName>
+        <note>燕の太子。荊軻を秦に送った</note>
+      </person>
+      <person xml:id="keika">
+        <persName>荊軻</persName>
+        <note>秦王暗殺を図った刺客</note>
+      </person>
+      <person xml:id="kutsugen">
+        <persName>屈原</persName>
+        <note>楚の詩人。汨羅に身を投じた</note>
+      </person>
+      <person xml:id="soou">
+        <persName>荘王</persName>
+        <note>春秋楚の荘王。『史記』の人物として言及</note>
+      </person>
+      <person xml:id="reitaishi">
+        <persName>戻太子</persName>
+        <note>武帝の太子・劉拠。巫蠱の獄で悲劇的な最期を遂げた</note>
+      </person>
+      <person xml:id="okyo">
+        <persName>王卿</persName>
+        <note>杜周の前任の御史大夫</note>
+      </person>
+      <person xml:id="kansetsu">
+        <persName>韓説</persName>
+        <note>游撃将軍</note>
+      </person>
+      <person xml:id="okeno">
+        <persName>於靬王</persName>
+        <note>匈奴の王。北海のほとりの蘇武に衣食を給した</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="sharyosho">
+        <placeName>遮虜鄣</placeName>
+        <location><geo>41.9 101.0</geo></location>
+        <note>居延附近に築かれた漢の辺塞・概値</note>
+      </place>
+      <place xml:id="altai">
+        <placeName>阿爾泰山脈</placeName>
+        <location><geo>48.0 90.0</geo></location>
+        <note>アルタイ山脈・概値</note>
+      </place>
+      <place xml:id="gobi">
+        <placeName>戈壁沙漠</placeName>
+        <location><geo>42.5 105.0</geo></location>
+        <note>ゴビ砂漠・概値</note>
+      </place>
+      <place xml:id="shunkeizan">
+        <placeName>浚稽山</placeName>
+        <location><geo>45.5 100.5</geo></location>
+        <note>漠北の山。モンゴル南部に比定されるが所在に諸説・概値</note>
+      </place>
+      <place xml:id="kyoen">
+        <placeName>居延</placeName>
+        <location><geo>42.3 101.1</geo></location>
+        <note>漢の辺塞。現在の内モンゴル・エチナ旗附近・概値</note>
+      </place>
+      <place xml:id="goen">
+        <placeName>五原</placeName>
+        <location><geo>41.1 108.3</geo></location>
+        <note>五原郡・概値</note>
+      </place>
+      <place xml:id="sakuho">
+        <placeName>朔方</placeName>
+        <location><geo>40.3 107.0</geo></location>
+        <note>朔方郡・概値</note>
+      </place>
+      <place xml:id="unchu">
+        <placeName>雲中</placeName>
+        <location><geo>40.4 111.4</geo></location>
+        <note>雲中郡・概値</note>
+      </place>
+      <place xml:id="jokoku">
+        <placeName>上谷</placeName>
+        <location><geo>40.4 115.5</geo></location>
+        <note>上谷郡・概値</note>
+      </place>
+      <place xml:id="ganmon">
+        <placeName>雁門</placeName>
+        <location><geo>39.3 112.9</geo></location>
+        <note>雁門郡・概値</note>
+      </place>
+      <place xml:id="taien">
+        <placeName>大宛</placeName>
+        <location><geo>40.4 71.8</geo></location>
+        <note>フェルガナ盆地の国・概値</note>
+      </place>
+      <place xml:id="shusen">
+        <placeName>酒泉</placeName>
+        <location><geo>39.74 98.51</geo></location>
+        <note>河西回廊の要地・概値</note>
+      </place>
+      <place xml:id="choeki">
+        <placeName>張掖</placeName>
+        <location><geo>38.93 100.45</geo></location>
+        <note>河西回廊の要地・概値</note>
+      </place>
+      <place xml:id="tenzan">
+        <placeName>天山</placeName>
+        <location><geo>42.0 85.0</geo></location>
+        <note>天山山脈・概値</note>
+      </place>
+      <place xml:id="biokyu">
+        <placeName>未央宮</placeName>
+        <location><geo>34.3 108.86</geo></location>
+        <note>長安城の宮殿・概値</note>
+      </place>
+      <place xml:id="butaiden">
+        <placeName>武台殿</placeName>
+        <location><geo>34.3 108.86</geo></location>
+        <note>未央宮内の殿舎。未央宮と同じ概値座標</note>
+      </place>
+      <place xml:id="seika">
+        <placeName>西河</placeName>
+        <location><geo>37.5 110.5</geo></location>
+        <note>西河郡・概値</note>
+      </place>
+      <place xml:id="ryurokusui">
+        <placeName>竜勒水</placeName>
+        <note>李陵への詔に見える川。所在未詳のため座標なし</note>
+      </place>
+      <place xml:id="jukojo">
+        <placeName>受降城</placeName>
+        <note>漢が匈奴の降者受け入れのため漠北に築いた城。所在に諸説のため座標なし</note>
+      </place>
+      <place xml:id="ordos">
+        <placeName>河南</placeName>
+        <location><geo>39.6 109.8</geo></location>
+        <note>黄河南岸のオルドス地方・概値</note>
+      </place>
+      <place xml:id="shikkyosui">
+        <placeName>郅居水</placeName>
+        <location><geo>49.5 102.0</geo></location>
+        <note>セレンゲ川に比定・概値</note>
+      </place>
+      <place xml:id="koshosui">
+        <placeName>姑且水</placeName>
+        <note>郅居水(セレンゲ川)の支流。オルホン川説など比定に諸説のため座標なし</note>
+      </place>
+      <place xml:id="choan">
+        <placeName>長安</placeName>
+        <location><geo>34.27 108.94</geo></location>
+        <note>前漢の都・概値</note>
+      </place>
+      <place xml:id="teikanzan">
+        <placeName>鞮汗山</placeName>
+        <note>李陵最後の戦地付近の山。所在未詳のため座標なし</note>
+      </place>
+      <place xml:id="ryujo">
+        <placeName>竜城</placeName>
+        <note>匈奴の祭祀の地。所在に諸説のため座標なし</note>
+      </place>
+      <place xml:id="bakuhoku">
+        <placeName>漠北</placeName>
+        <location><geo>46.5 103.0</geo></location>
+        <note>ゴビ砂漠以北のモンゴル高原。地域名・概値</note>
+      </place>
+      <place xml:id="bakunan">
+        <placeName>漠南</placeName>
+        <location><geo>41.5 108.0</geo></location>
+        <note>ゴビ砂漠以南の地域名・概値</note>
+      </place>
+      <place xml:id="nanetsu">
+        <placeName>南越</placeName>
+        <location><geo>23.13 113.26</geo></location>
+        <note>南越国(都は番禺=現在の広州)。国名・概値</note>
+      </place>
+      <place xml:id="gyokumonkan">
+        <placeName>玉門関</placeName>
+        <location><geo>40.35 93.86</geo></location>
+        <note>敦煌西方の関・概値</note>
+      </place>
+      <place xml:id="baikal">
+        <placeName>北海</placeName>
+        <location><geo>53.5 108.0</geo></location>
+        <note>バイカル湖。本文の割注に従う・概値</note>
+      </place>
+      <place xml:id="kerulen">
+        <placeName>余吾水</placeName>
+        <location><geo>47.5 111.0</geo></location>
+        <note>本文の割注に従いケルレン河とする(トーラ川説もある)・概値</note>
+      </place>
+      <place xml:id="tokenzan">
+        <placeName>兜銜山</placeName>
+        <note>本文割注に「額林達班嶺」。所在未詳のため座標なし</note>
+      </place>
+      <place xml:id="jogun">
+        <placeName>上郡</placeName>
+        <location><geo>36.6 109.5</geo></location>
+        <note>上郡(現在の陝西省北部)・概値</note>
+      </place>
+      <place xml:id="rosei">
+        <placeName>隴西</placeName>
+        <location><geo>35.0 104.6</geo></location>
+        <note>隴西郡。李陵の家の出身地・概値</note>
+      </place>
+      <place xml:id="kansenkyu">
+        <placeName>甘泉宮</placeName>
+        <location><geo>34.96 108.72</geo></location>
+        <note>漢の離宮。現在の陝西省淳化県・概値</note>
+      </place>
+      <place xml:id="yoryo">
+        <placeName>陽陵</placeName>
+        <location><geo>34.44 108.94</geo></location>
+        <note>景帝陵の陵邑・概値</note>
+      </place>
+      <place xml:id="keikojo">
+        <placeName>奚侯城</placeName>
+        <note>李緒が守った塞外の城。所在未詳のため座標なし</note>
+      </place>
+      <place xml:id="jorinen">
+        <placeName>上林苑</placeName>
+        <location><geo>34.2 108.75</geo></location>
+        <note>長安西南の御苑・概値</note>
+      </place>
+      <place xml:id="bekira">
+        <placeName>汨羅</placeName>
+        <location><geo>28.85 113.05</geo></location>
+        <note>汨羅江。屈原投身の地・概値</note>
+      </place>
+      <place xml:id="shunan">
+        <placeName>周南</placeName>
+        <location><geo>34.62 112.45</geo></location>
+        <note>洛陽附近の地・概値</note>
+      </place>
+      <place xml:id="taizan">
+        <placeName>泰山</placeName>
+        <location><geo>36.26 117.1</geo></location>
+        <note>山東の霊山・概値</note>
+      </place>
+      <place xml:id="so">
+        <placeName>楚</placeName>
+        <location><geo>31.0 112.2</geo></location>
+        <note>春秋戦国の楚。地域名「荊楚」も同じ台帳に統合・概値</note>
+      </place>
+      <place xml:id="shin-state">
+        <placeName>晋</placeName>
+        <location><geo>35.8 111.5</geo></location>
+        <note>春秋の晋。国名・概値</note>
+      </place>
+      <place xml:id="kanto">
+        <placeName>関東</placeName>
+        <location><geo>34.6 113.5</geo></location>
+        <note>函谷関以東の地域名・概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.0 138.0</geo></location>
+        <note>国名・概値(語り手の比較として言及)</note>
+      </place>
+      <place xml:id="chugoku">
+        <placeName>中国</placeName>
+        <location><geo>34.5 110.0</geo></location>
+        <note>中華(中原)の意の地域名。表層形「中国」「支那」を統合・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p><ruby><rb>漢</rb><rt>かん</rt></ruby>の<persName ref="#butei"><ruby><rb>武帝</rb><rt>ぶてい</rt></ruby></persName>の<date when="-0098-09"><ruby><rb>天漢</rb><rt>てんかん</rt></ruby>二年秋九月</date>、<ruby><rb>騎都尉</rb><rt>きとい</rt></ruby>・<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は歩卒五千を率い、<ruby><rb>辺塞<placeName ref="#sharyosho">遮虜鄣</placeName></rb><rt>へんさいしゃりょしょう</rt></ruby>を発して北へ向かった。<placeName ref="#altai"><ruby><rb>阿爾泰</rb><rt>アルタイ</rt></ruby>山脈</placeName>の東南端が<placeName ref="#gobi"><ruby><rb>戈壁沙漠</rb><rt>ゴビさばく</rt></ruby></placeName>に没せんとする辺の<ruby><rb>磽确</rb><rt>こうかく</rt></ruby>たる丘陵地帯を縫って北行すること三十日。<ruby><rb>朔風</rb><rt>さくふう</rt></ruby>は<ruby><rb>戎衣</rb><rt>じゅうい</rt></ruby>を吹いて寒く、いかにも万里孤軍来たるの感が深い。<placeName ref="#bakuhoku"><ruby><rb>漠北</rb><rt>ばくほく</rt></ruby></placeName>・<placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に至って軍はようやく止営した。すでに敵<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の勢力圏に深く進み入っているのである。秋とはいっても北地のこととて、<ruby><rb>苜蓿</rb><rt>うまごやし</rt></ruby>も枯れ、<ruby><rb>楡</rb><rt>にれ</rt></ruby>や<ruby><rb>檉柳</rb><rt>かわやなぎ</rt></ruby>の葉ももはや落ちつくしている。木の葉どころか、木そのものさえ（宿営地の<ruby><rb>近傍</rb><rt>きんぼう</rt></ruby>を除いては）、容易に見つからないほどの、ただ砂と岩と<ruby><rb>磧</rb><rt>かわら</rt></ruby>と、水のない河床との荒涼たる風景であった。極目人煙を見ず、まれに訪れるものとては<ruby><rb>曠野</rb><rt>こうや</rt></ruby>に水を求める<ruby><rb>羚羊</rb><rt>かもしか</rt></ruby>ぐらいのものである。<ruby><rb>突兀</rb><rt>とっこつ</rt></ruby>と秋空を<ruby><rb>劃</rb><rt>くぎ</rt></ruby>る遠山の上を高く<ruby><rb>雁</rb><rt>かり</rt></ruby>の列が南へ急ぐのを見ても、しかし、将卒一同<ruby><rb>誰</rb><rt>だれ</rt></ruby>一人として甘い懐郷の情などに<ruby><rb>唆</rb><rt>そそ</rt></ruby>られるものはない。それほどに、彼らの位置は危険<ruby><rb>極</rb><rt>きわ</rt></ruby>まるものだったのである。</p>
+        <p>騎兵を主力とする匈奴に向かって、一隊の騎馬兵をも連れずに歩兵ばかり（馬に<ruby><rb>跨</rb><rt>また</rt></ruby>がる者は、陵とその<ruby><rb>幕僚</rb><rt>ばくりょう</rt></ruby>数人にすぎなかった、）で奥地深く侵入することからして、無謀の<ruby><rb>極</rb><rt>きわ</rt></ruby>みというほかはない。その歩兵も<ruby><rb>僅</rb><rt>わず</rt></ruby>か五千、絶えて後援はなく、しかもこの<placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>は、最も近い<ruby><rb>漢塞</rb><rt>かんさい</rt></ruby>の<placeName ref="#kyoen"><ruby><rb>居延</rb><rt>きょえん</rt></ruby></placeName>からでも優に一千五百里（<placeName ref="#chugoku">支那</placeName>里程）は離れている。統率者<persName ref="#riryo">李陵</persName>への絶対的な信頼と心服とがなかったならとうてい続けられるような行軍ではなかった。</p>
+        <p>毎年秋風が立ちはじめると<ruby><rb>決</rb><rt>きま</rt></ruby>って漢の北辺には、<ruby><rb>胡馬</rb><rt>こば</rt></ruby>に<ruby><rb>鞭</rb><rt>むち</rt></ruby>うった<ruby><rb>剽悍</rb><rt>ひょうかん</rt></ruby>な侵略者の大部隊が現われる。辺吏が殺され、人民が<ruby><rb>掠</rb><rt>かす</rt></ruby>められ、家畜が奪略される。<placeName ref="#goen"><ruby><rb>五原</rb><rt>ごげん</rt></ruby></placeName>・<placeName ref="#sakuho"><ruby><rb>朔方</rb><rt>さくほう</rt></ruby></placeName>・<placeName ref="#unchu"><ruby><rb>雲中</rb><rt>うんちゅう</rt></ruby></placeName>・<placeName ref="#jokoku"><ruby><rb>上谷</rb><rt>じょうこく</rt></ruby></placeName>・<placeName ref="#ganmon"><ruby><rb>雁門</rb><rt>がんもん</rt></ruby></placeName>などが、その例年の被害地である。大将軍<persName ref="#eisei"><ruby><rb>衛青</rb><rt>えいせい</rt></ruby></persName>・<ruby><rb>嫖騎</rb><rt>ひょうき</rt></ruby>将軍<persName ref="#kakukyohei"><ruby><rb>霍去病</rb><rt>かくきょへい</rt></ruby></persName>の武略によって一時<placeName ref="#bakunan"><ruby><rb>漠南</rb><rt>ばくなん</rt></ruby></placeName>に王庭なしといわれた<date when="-0121"><ruby><rb>元狩</rb><rt>げんしゅ</rt></ruby></date>以後<date when="-0115"><ruby><rb>元鼎</rb><rt>げんてい</rt></ruby></date>へかけての数年を除いては、ここ三十年来欠かすことなくこうした北辺の災いがつづいていた。<persName ref="#kakukyohei"><ruby><rb>霍去病</rb><rt>かくきょへい</rt></ruby></persName>が死んでから十八年、<persName ref="#eisei"><ruby><rb>衛青</rb><rt>えいせい</rt></ruby></persName>が<ruby><rb>歿</rb><rt>ぼっ</rt></ruby>してから七年。<ruby><rb>浞野侯</rb><rt>さくやこう</rt></ruby><persName ref="#chohado"><ruby><rb>趙破奴</rb><rt>ちょうはど</rt></ruby></persName>は全軍を率いて<ruby><rb>虜</rb><rt>ろ</rt></ruby>に<ruby><rb>降</rb><rt>くだ</rt></ruby>り、<ruby><rb>光禄勲</rb><rt>こうろくくん</rt></ruby><persName ref="#jojii"><ruby><rb>徐自為</rb><rt>じょじい</rt></ruby></persName>の<ruby><rb>朔北</rb><rt>さくほく</rt></ruby>に築いた城障もたちまち破壊される。全軍の信頼を<ruby><rb>繋</rb><rt>つな</rt></ruby>ぐに足る<ruby><rb>将帥</rb><rt>しょうすい</rt></ruby>としては、わずかに先年<placeName ref="#taien"><ruby><rb>大宛</rb><rt>だいえん</rt></ruby></placeName>を遠征して武名を<ruby><rb>挙</rb><rt>あ</rt></ruby>げた<persName ref="#rikori"><ruby><rb>弐師</rb><rt>じし</rt></ruby>将軍</persName><persName ref="#rikori"><ruby><rb>李広利</rb><rt>りこうり</rt></ruby></persName>があるにすぎない。</p>
+        <p>その年――<date when="-0098-05">天漢二年夏五月</date>、――<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の侵略に先立って、<persName ref="#rikori">弐師将軍</persName>が三万騎に将として<placeName ref="#shusen"><ruby><rb>酒泉</rb><rt>しゅせん</rt></ruby></placeName>を出た。しきりに西辺を<ruby><rb>窺</rb><rt>うかが</rt></ruby>う匈奴の<ruby><rb>右賢王</rb><rt>うけんおう</rt></ruby>を<placeName ref="#tenzan">天山</placeName>に撃とうというのである。<persName ref="#butei">武帝</persName>は<persName ref="#riryo">李陵</persName>に命じてこの軍旅の<ruby><rb>輜重</rb><rt>しちょう</rt></ruby>のことに当たらせようとした。<placeName ref="#biokyu"><ruby><rb>未央宮</rb><rt>びおうきゅう</rt></ruby></placeName>の<placeName ref="#butaiden"><ruby><rb>武台殿</rb><rt>ぶだいでん</rt></ruby></placeName>に召見された<persName ref="#riryo">李陵</persName>は、しかし、極力その役を免ぜられんことを請うた。陵は、<persName ref="#riko"><ruby><rb>飛将軍</rb><rt>ひしょうぐん</rt></ruby></persName>と呼ばれた名将<persName ref="#riko"><ruby><rb>李広</rb><rt>りこう</rt></ruby></persName>の孫。つとに祖父の風ありといわれた<ruby><rb>騎射</rb><rt>きしゃ</rt></ruby>の名手で、数年前から<ruby><rb>騎都尉</rb><rt>きとい</rt></ruby>として西辺の<placeName ref="#shusen"><ruby><rb>酒泉</rb><rt>しゅせん</rt></ruby></placeName>・<placeName ref="#choeki"><ruby><rb>張掖</rb><rt>ちょうえき</rt></ruby></placeName>に<ruby><rb>在</rb><rt>あ</rt></ruby>って<ruby><rb>射</rb><rt>しゃ</rt></ruby>を教え兵を練っていたのである。年齢もようやく四十に近い血気盛りとあっては、<ruby><rb>輜重</rb><rt>しちょう</rt></ruby>の役はあまりに情けなかったに違いない。臣が辺境に養うところの兵は皆<placeName ref="#so"><ruby><rb>荊楚</rb><rt>けいそ</rt></ruby></placeName>の一騎当千の勇士なれば、願わくは彼らの一隊を率いて討って<ruby><rb>出</rb><rt>い</rt></ruby>で、側面から匈奴の軍を<ruby><rb>牽制</rb><rt>けんせい</rt></ruby>したいという陵の嘆願には、<persName ref="#butei">武帝</persName>も<ruby><rb>頷</rb><rt>うなず</rt></ruby>くところがあった。しかし、相つづく諸方への派兵のために、あいにく、陵の軍に<ruby><rb>割</rb><rt>さ</rt></ruby>くべき騎馬の余力がないのである。<persName ref="#riryo">李陵</persName>はそれでも構わぬといった。確かに無理とは思われたが、<ruby><rb>輜重</rb><rt>しちょう</rt></ruby>の役などに当てられるよりは、むしろ<ruby><rb>己</rb><rt>おのれ</rt></ruby>のために身命を惜しまぬ部下五千とともに危うきを<ruby><rb>冒</rb><rt>おか</rt></ruby>すほうを選びたかったのである。臣願わくは少をもって衆を撃たんといった陵の言葉を、<ruby><rb>派手</rb><rt>はで</rt></ruby>好きな<persName ref="#butei">武帝</persName>は大いに<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んで、その願いを<ruby><rb>容</rb><rt>い</rt></ruby>れた。<persName ref="#riryo">李陵</persName>は西、<placeName ref="#choeki"><ruby><rb>張掖</rb><rt>ちょうえき</rt></ruby></placeName>に戻って部下の兵を<ruby><rb>勒</rb><rt>ろく</rt></ruby>するとすぐに北へ向けて進発した。当時<placeName ref="#kyoen"><ruby><rb>居延</rb><rt>きょえん</rt></ruby></placeName>に<ruby><rb>屯</rb><rt>たむろ</rt></ruby>していた<ruby><rb>彊弩都尉</rb><rt>きょうどとい</rt></ruby><persName ref="#rohakutoku"><ruby><rb>路博徳</rb><rt>ろはくとく</rt></ruby></persName>が詔を受けて、陵の軍を中道まで迎えに出る。そこまではよかったのだが、それから先がすこぶる<ruby><rb>拙</rb><rt>まず</rt></ruby>いことになってきた。元来この<persName ref="#rohakutoku"><ruby><rb>路博徳</rb><rt>ろはくとく</rt></ruby></persName>という男は古くから<persName ref="#kakukyohei"><ruby><rb>霍去病</rb><rt>かくきょへい</rt></ruby></persName>の部下として軍に従い、<ruby><rb>邳離侯</rb><rt>ふりこう</rt></ruby>にまで封ぜられ、ことに十二年前には<ruby><rb>伏波</rb><rt>ふくは</rt></ruby>将軍として十万の兵を率いて<placeName ref="#nanetsu"><ruby><rb>南越</rb><rt>なんえつ</rt></ruby></placeName>を滅ぼした老将である。その後、法に<ruby><rb>坐</rb><rt>ざ</rt></ruby>して侯を失い現在の地位に<ruby><rb>堕</rb><rt>おと</rt></ruby>されて西辺を守っている。年齢からいっても、<persName ref="#riryo">李陵</persName>とは父子ほどに違う。かつては<ruby><rb>封侯</rb><rt>ほうこう</rt></ruby>をも得たその老将がいまさら若い<persName ref="#riryo">李陵</persName>ごときの<ruby><rb>後塵</rb><rt>こうじん</rt></ruby>を拝するのがなんとしても不愉快だったのである。彼は陵の軍を迎えると同時に、都へ使いをやって奏上させた。今まさに秋とて<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の馬は肥え、<ruby><rb>寡兵</rb><rt>かへい</rt></ruby>をもってしては、騎馬戦を得意とする彼らの<ruby><rb>鋭鋒</rb><rt>えいほう</rt></ruby>には<ruby><rb>些</rb><rt>いささ</rt></ruby>か当たりがたい。それゆえ、<persName ref="#riryo">李陵</persName>とともにここに越年し、春を待ってから、<placeName ref="#shusen"><ruby><rb>酒泉</rb><rt>しゅせん</rt></ruby></placeName>・<placeName ref="#choeki"><ruby><rb>張掖</rb><rt>ちょうえき</rt></ruby></placeName>の騎各五千をもって出撃したほうが得策と信ずるという上奏文である。もちろん、<persName ref="#riryo">李陵</persName>はこのことをしらない。<persName ref="#butei">武帝</persName>はこれを見ると<ruby><rb>酷</rb><rt>ひど</rt></ruby>く怒った。<persName ref="#riryo">李陵</persName>が<persName ref="#rohakutoku">博徳</persName>と相談の上での上書と考えたのである。わが前ではあのとおり広言しておきながら、いまさら辺地に行って急に<ruby><rb>怯気</rb><rt>おじけ</rt></ruby>づくとは何事ぞという。たちまち使いが都から<persName ref="#rohakutoku">博徳</persName>と陵の所に飛ぶ。<persName ref="#riryo">李陵</persName>は少をもって衆を撃たんとわが前で広言したゆえ、<ruby><rb>汝</rb><rt>なんじ</rt></ruby>はこれと協力する必要はない。今匈奴が<placeName ref="#seika"><ruby><rb>西河</rb><rt>せいが</rt></ruby></placeName>に侵入したとあれば、<ruby><rb>汝</rb><rt>なんじ</rt></ruby>はさっそく陵を残して<placeName ref="#seika">西河</placeName>に<ruby><rb>馳</rb><rt>は</rt></ruby>せつけ敵の道を<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>れ、というのが<persName ref="#rohakutoku">博徳</persName>への詔である。<persName ref="#riryo">李陵</persName>への詔には、ただちに<placeName ref="#bakuhoku"><ruby><rb>漠北</rb><rt>ばくほく</rt></ruby></placeName>に至り東は<placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>から南は<placeName ref="#ryurokusui"><ruby><rb>竜勒水</rb><rt>りょうろくすい</rt></ruby></placeName>の辺までを偵察観望し、もし異状なくんば、<ruby><rb>浞野侯</rb><rt>さくやこう</rt></ruby>の故道に従って<placeName ref="#jukojo"><ruby><rb>受降城</rb><rt>じゅこうじょう</rt></ruby></placeName>に至って士を休めよとある。<persName ref="#rohakutoku">博徳</persName>と相談してのあの上書はいったいなんたることぞ、という<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい<ruby><rb>詰問</rb><rt>きつもん</rt></ruby>のあったことは言うまでもない。<ruby><rb>寡兵</rb><rt>かへい</rt></ruby>をもって敵地に<ruby><rb>徘徊</rb><rt>はいかい</rt></ruby>することの危険を別としても、なお、指定されたこの数千里の行程は、騎馬を持たぬ軍隊にとってははなはだむずかしいものである。徒歩のみによる行軍の速度と、人力による車の<ruby><rb>牽引</rb><rt>けんいん</rt></ruby>力と、冬へかけての<ruby><rb>胡地</rb><rt>こち</rt></ruby>の気候とを考えれば、これは誰にも明らかであった。<persName ref="#butei">武帝</persName>はけっして<ruby><rb>庸王</rb><rt>ようおう</rt></ruby>ではなかったが、同じく庸王ではなかった<ruby><rb>隋</rb><rt>ずい</rt></ruby>の<persName ref="#yodai"><ruby><rb>煬帝</rb><rt>ようだい</rt></ruby></persName>や<persName ref="#shikotei"><ruby><rb>始皇帝</rb><rt>しこうてい</rt></ruby></persName>などと共通した長所と短所とを<ruby><rb>有</rb><rt>も</rt></ruby>っていた。<ruby><rb>愛寵</rb><rt>あいちょう</rt></ruby>比なき<persName ref="#rifujin"><ruby><rb>李</rb><rt>り</rt></ruby>夫人</persName>の兄たる<persName ref="#rikori"><ruby><rb>弐師</rb><rt>じし</rt></ruby>将軍</persName>にしてからが兵力不足のためいったん、<placeName ref="#taien"><ruby><rb>大宛</rb><rt>だいえん</rt></ruby></placeName>から引揚げようとして帝の<ruby><rb>逆鱗</rb><rt>げきりん</rt></ruby>にふれ、<placeName ref="#gyokumonkan"><ruby><rb>玉門関</rb><rt>ぎょくもんかん</rt></ruby></placeName>をとじられてしまった。その<placeName ref="#taien">大宛</placeName>征討も、たかだか善馬がほしいからとて思い立たれたものであった。帝が一度言出したら、どんな<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>でも絶対に通されねばならぬ。まして、<persName ref="#riryo">李陵</persName>の場合は、もともと<ruby><rb>自</rb><rt>みずか</rt></ruby>ら<ruby><rb>乞</rb><rt>こ</rt></ruby>うた役割でさえある。（ただ季節と距離とに相当に無理な注文があるだけで）<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>すべき理由はどこにもない。彼は、かくて、「騎兵を伴わぬ北征」に出たのであった。</p>
+        <p><placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>の山間には十日余<ruby><rb>留</rb><rt>とど</rt></ruby>まった。その間、日ごとに<ruby><rb>斥候</rb><rt>せっこう</rt></ruby>を遠く派して敵状を探ったのはもちろん、附近の山川地形を<ruby><rb>剰</rb><rt>あま</rt></ruby>すところなく図に写しとって都へ報告しなければならなかった。報告書は<ruby><rb>麾下</rb><rt>きか</rt></ruby>の<persName ref="#chinhoraku"><ruby><rb>陳歩楽</rb><rt>ちんほらく</rt></ruby></persName>という者が身に帯びて、単身都へ<ruby><rb>馳</rb><rt>は</rt></ruby>せるのである。選ばれた使者は、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>に<ruby><rb>一揖</rb><rt>いちゆう</rt></ruby>してから、十頭に足らぬ少数の馬の中の一匹に<ruby><rb>打跨</rb><rt>うちまたが</rt></ruby>ると、<ruby><rb>一鞭</rb><rt>ひとむち</rt></ruby>あてて丘を<ruby><rb>駈下</rb><rt>かけお</rt></ruby>りた。灰色に乾いた<ruby><rb>漠々</rb><rt>ばくばく</rt></ruby>たる風景の中に、その姿がしだいに小さくなっていくのを、一軍の将士は何か心細い気持で見送った。</p>
+        <p>十日の間、<placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>の東西三十里の中には一人の<ruby><rb>胡兵</rb><rt>こへい</rt></ruby>をも見なかった。</p>
+        <p>彼らに先だって夏のうちに<placeName ref="#tenzan">天山</placeName>へと出撃した<persName ref="#rikori"><ruby><rb>弐師</rb><rt>じし</rt></ruby>将軍</persName>はいったん<ruby><rb>右賢王</rb><rt>うけんおう</rt></ruby>を破りながら、その帰途別の<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の大軍に囲まれて<ruby><rb>惨敗</rb><rt>ざんぱい</rt></ruby>した。漢兵は十に六、七を討たれ、将軍の一身さえ危うかったという。その<ruby><rb>噂</rb><rt>うわさ</rt></ruby>は彼らの耳にも届いている。<persName ref="#rikori"><ruby><rb>李広利</rb><rt>りこうり</rt></ruby></persName>を破ったその敵の主力が今どのあたりにいるのか？　今、<ruby><rb>因杅</rb><rt>いんう</rt></ruby>将軍<persName ref="#kosongo"><ruby><rb>公孫敖</rb><rt>こうそんごう</rt></ruby></persName>が<placeName ref="#seika"><ruby><rb>西河</rb><rt>せいが</rt></ruby></placeName>・<placeName ref="#sakuho"><ruby><rb>朔方</rb><rt>さくほう</rt></ruby></placeName>の辺で<ruby><rb>禦</rb><rt>ふせ</rt></ruby>いでいる（<ruby><rb>陵</rb><rt>りょう</rt></ruby>と手を分かった<persName ref="#rohakutoku"><ruby><rb>路博徳</rb><rt>ろはくとく</rt></ruby></persName>はその応援に<ruby><rb>馳</rb><rt>は</rt></ruby>せつけて行ったのだが）という敵軍は、どうも、距離と時間とを計ってみるに、問題の敵の主力ではなさそうに思われる。<placeName ref="#tenzan">天山</placeName>から、そんなに早く、東方四千里の<placeName ref="#ordos"><ruby><rb>河南</rb><rt>かなん</rt></ruby></placeName>（<placeName ref="#ordos">オルドス</placeName>）の地まで行けるはずがないからである。どうしても<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の主力は現在、陵の軍の止営地から北方<placeName ref="#shikkyosui"><ruby><rb>郅居水</rb><rt>しっきょすい</rt></ruby></placeName>までの間あたりに<ruby><rb>屯</rb><rt>たむろ</rt></ruby>していなければならない勘定になる。<persName ref="#riryo">李陵</persName>自身毎日前山の頂に立って四方を<ruby><rb>眺</rb><rt>なが</rt></ruby>めるのだが、東方から南へかけてはただ<ruby><rb>漠々</rb><rt>ばくばく</rt></ruby>たる一面の<ruby><rb>平沙</rb><rt>へいさ</rt></ruby>、西から北へかけては樹木に乏しい丘陵性の山々が連なっているばかり、秋雲の間にときとして<ruby><rb>鷹</rb><rt>たか</rt></ruby>か<ruby><rb>隼</rb><rt>はやぶさ</rt></ruby>かと思われる鳥の影を見ることはあっても、地上には一騎の<ruby><rb>胡兵</rb><rt>こへい</rt></ruby>をも見ないのである。</p>
+        <p>山峡の疎林の<ruby><rb>外</rb><rt>はず</rt></ruby>れに兵車を並べて囲い、その中に<ruby><rb>帷幕</rb><rt>いばく</rt></ruby>を連ねた陣営である。夜になると、気温が急に下がった。士卒は乏しい木々を折取って<ruby><rb>焚</rb><rt>た</rt></ruby>いては暖をとった。十日もいるうちに月はなくなった。空気の乾いているせいか、ひどく星が美しい。黒々とした山影とすれすれに、夜ごと、<ruby><rb>狼星</rb><rt>ろうせい</rt></ruby>が、青白い<ruby><rb>光芒</rb><rt>こうぼう</rt></ruby>を斜めに<ruby><rb>曳</rb><rt>ひ</rt></ruby>いて輝いていた。十数日事なく過ごしたのち、明日はいよいよここを<ruby><rb>立退</rb><rt>たちの</rt></ruby>いて、指定された進路を東南へ向かって取ろうと決したその晩である。一人の<ruby><rb>歩哨</rb><rt>ほしょう</rt></ruby>が見るともなくこの<ruby><rb>爛々</rb><rt>らんらん</rt></ruby>たる<ruby><rb>狼星</rb><rt>ろうせい</rt></ruby>を見上げていると、突然、その星のすぐ下の所にすこぶる大きい赤黄色い星が現われた。オヤと思っているうちに、その見なれぬ<ruby><rb>巨</rb><rt>おお</rt></ruby>きな星が赤く太い尾を引いて動いた。と続いて、二つ三つ四つ五つ、同じような光がその周囲に現われて、動いた。思わず<ruby><rb>歩哨</rb><rt>ほしょう</rt></ruby>が声を立てようとしたとき、それらの遠くの<ruby><rb>灯</rb><rt>ひ</rt></ruby>はフッと一時に消えた。まるで今見たことが夢だったかのように。</p>
+        <p><ruby><rb>歩哨</rb><rt>ほしょう</rt></ruby>の報告に接した<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は、全軍に命じて、明朝天明とともにただちに戦闘に入るべき準備を整えさせた。外に出て一応各部署を点検し終わると、ふたたび幕営に入り、<ruby><rb>雷</rb><rt>らい</rt></ruby>のごとき<ruby><rb>鼾声</rb><rt>かんせい</rt></ruby>を立てて熟睡した。</p>
+        <p>翌朝<persName ref="#riryo">李陵</persName>が目を<ruby><rb>醒</rb><rt>さ</rt></ruby>まして外へ出て見ると、全軍はすでに昨夜の命令どおりの陣形をとり、静かに敵を待ち構えていた。全部が、兵車を並べた外側に出、<ruby><rb>戟</rb><rt>ほこ</rt></ruby>と<ruby><rb>盾</rb><rt>たて</rt></ruby>とを持った者が前列に、<ruby><rb>弓弩</rb><rt>きゅうど</rt></ruby>を手にした者が後列にと配置されているのである。この谷を<ruby><rb>挾</rb><rt>はさ</rt></ruby>んだ二つの山はまだ<ruby><rb>暁暗</rb><rt>ぎょうあん</rt></ruby>の中に<ruby><rb>森閑</rb><rt>しんかん</rt></ruby>とはしているが、そこここの<ruby><rb>巌蔭</rb><rt>いわかげ</rt></ruby>に何かのひそんでいるらしい<ruby><rb>気配</rb><rt>けはい</rt></ruby>がなんとなく感じられる。</p>
+        <p>朝日の影が谷合にさしこんでくると同時に、（<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>は、<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>がまず朝日を拝したのちでなければ事を発しないのであろう。）今まで何一つ見えなかった両山の頂から斜面にかけて、無数の人影が一時に<ruby><rb>湧</rb><rt>わ</rt></ruby>いた。天地を<ruby><rb>撼</rb><rt>ゆる</rt></ruby>がす<ruby><rb>喊声</rb><rt>かんせい</rt></ruby>とともに<ruby><rb>胡兵</rb><rt>こへい</rt></ruby>は山下に殺到した。胡兵の<ruby><rb>先登</rb><rt>せんとう</rt></ruby>が二十歩の距離に迫ったとき、それまで鳴りをしずめていた漢の陣営からはじめて<ruby><rb>鼓声</rb><rt>こせい</rt></ruby>が響く。たちまち<ruby><rb>千弩</rb><rt>せんど</rt></ruby>ともに発し、弦に応じて数百の<ruby><rb>胡兵</rb><rt>こへい</rt></ruby>はいっせいに倒れた。<ruby><rb>間髪</rb><rt>かんはつ</rt></ruby>を入れず、浮足立った残りの胡兵に向かって、漢軍前列の<ruby><rb>持戟者</rb><rt>じげきしゃ</rt></ruby>らが襲いかかる。<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の軍は完全に<ruby><rb>潰</rb><rt>つい</rt></ruby>えて、山上へ逃げ上った。漢軍これを追撃して<ruby><rb>虜首</rb><rt>りょしゅ</rt></ruby>を挙げること数千。</p>
+        <p><ruby><rb>鮮</rb><rt>あざ</rt></ruby>やかな勝ちっぷりではあったが、執念深い敵がこのままで退くことはけっしてない。今日の敵軍だけでも優に三万はあったろう。それに、山上に<ruby><rb>靡</rb><rt>なび</rt></ruby>いていた旗印から見れば、紛れもなく<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の親衛軍である。単于がいるものとすれば、八万や十万の<ruby><rb>後詰</rb><rt>ごづ</rt></ruby>めの軍は当然繰出されるものと覚悟せねばならぬ。<persName ref="#riryo">李陵</persName>は即刻この地を撤退して南へ移ることにした。それもここから東南二千里の<placeName ref="#jukojo"><ruby><rb>受降城</rb><rt>じゅこうじょう</rt></ruby></placeName>へという前日までの予定を変えて、半月前に<ruby><rb>辿</rb><rt>たど</rt></ruby>って来たその同じ道を南へ取って一日も早くもとの<ruby><rb><placeName ref="#kyoen">居延</placeName>塞</rb><rt>きょえんさい</rt></ruby>（それとて千数百里離れているが）に入ろうとしたのである。</p>
+        <p>南行三日めの<ruby><rb>午</rb><rt>ひる</rt></ruby>、漢軍の後方はるか北の地平線に、雲のごとく<ruby><rb>黄塵</rb><rt>こうじん</rt></ruby>の揚がるのが見られた。匈奴騎兵の追撃である。翌日はすでに八万の胡兵が騎馬の快速を利して、漢軍の前後左右を<ruby><rb>隙</rb><rt>すき</rt></ruby>もなく取囲んでしまっていた。ただし、前日の失敗に<ruby><rb>懲</rb><rt>こ</rt></ruby>りたとみえ、至近の距離にまでは近づいて来ない。南へ行進して行く漢軍を遠巻きにしながら、馬上から遠矢を射かけるのである。<persName ref="#riryo">李陵</persName>が全軍を<ruby><rb>停</rb><rt>と</rt></ruby>めて、戦闘の体形をとらせれば、敵は馬を駆って遠く退き、<ruby><rb>搏戦</rb><rt>はくせん</rt></ruby>を避ける。ふたたび行軍をはじめれば、また近づいて来て矢を射かける。行進の速度が著しく減ずるのはもとより、死傷者も一日ずつ確実に<ruby><rb>殖</rb><rt>ふ</rt></ruby>えていくのである。飢え疲れた旅人の後をつける<ruby><rb>曠野</rb><rt>こうや</rt></ruby>の狼のように、匈奴の兵はこの戦法を続けつつ執念深く追って来る。少しずつ傷つけていった<ruby><rb>揚句</rb><rt>あげく</rt></ruby>、いつかは最後の<ruby><rb>止</rb><rt>とど</rt></ruby>めを刺そうとその機会を<ruby><rb>窺</rb><rt>うかが</rt></ruby>っているのである。</p>
+        <p>かつ戦い、かつ退きつつ南行することさらに数日、ある山谷の中で漢軍は一日の休養をとった。負傷者もすでにかなりの数に上っている。<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は全員を点呼して、被害状況を調べたのち、傷の一か所にすぎぬ者には平生どおり兵器を<ruby><rb>執</rb><rt>と</rt></ruby>って闘わしめ、両創を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>る者にもなお兵車を助け<ruby><rb>推</rb><rt>お</rt></ruby>さしめ、三創にしてはじめて<ruby><rb>輦</rb><rt>れん</rt></ruby>に乗せて<ruby><rb>扶</rb><rt>たす</rt></ruby>け運ぶことに決めた。輸送力の欠乏から<ruby><rb>屍体</rb><rt>したい</rt></ruby>はすべて<ruby><rb>曠野</rb><rt>こうや</rt></ruby>に遺棄するほかはなかったのである。この夜、陣中視察のとき、<persName ref="#riryo">李陵</persName>はたまたまある<ruby><rb>輜重車</rb><rt>しちょうしゃ</rt></ruby>中に男の服を<ruby><rb>纏</rb><rt>まと</rt></ruby>うた女を発見した。全軍の<ruby><rb>車輛</rb><rt>しゃりょう</rt></ruby>について一々調べたところ、同様にしてひそんでいた十数人の女が捜し出された。往年<placeName ref="#kanto">関東</placeName>の群盗が一時に<ruby><rb>戮</rb><rt>りく</rt></ruby>に<ruby><rb>遇</rb><rt>あ</rt></ruby>ったとき、その妻子等が<ruby><rb>逐</rb><rt>お</rt></ruby>われて西辺に<ruby><rb>遷</rb><rt>うつ</rt></ruby>り住んだ。それら<ruby><rb>寡婦</rb><rt>かふ</rt></ruby>のうち衣食に窮するままに、辺境守備兵の妻となり、あるいは彼らを<ruby><rb>華客</rb><rt>とくい</rt></ruby>とする<ruby><rb>娼婦</rb><rt>しょうふ</rt></ruby>となり果てた者が少なくない。兵車中に隠れてはるばる<placeName ref="#bakuhoku"><ruby><rb>漠北</rb><rt>ばくほく</rt></ruby></placeName>まで従い来たったのは、そういう連中である。<persName ref="#riryo">李陵</persName>は軍吏に女らを<ruby><rb>斬</rb><rt>き</rt></ruby>るべくカンタンに命じた。彼女らを伴い来たった士卒については一言のふれるところもない。<ruby><rb>澗間</rb><rt>たにま</rt></ruby>の<ruby><rb>凹地</rb><rt>おうち</rt></ruby>に引出された女どもの<ruby><rb>疳高</rb><rt>かんだか</rt></ruby>い<ruby><rb>号泣</rb><rt>ごうきゅう</rt></ruby>がしばらくつづいた後、突然それが夜の沈黙に<ruby><rb>呑</rb><rt>の</rt></ruby>まれたようにフッと消えていくのを、軍幕の中の将士一同は<ruby><rb>粛然</rb><rt>しゅくぜん</rt></ruby>たる思いで聞いた。</p>
+        <p>翌朝、久しぶりで肉薄来襲した敵を迎えて漢の全軍は思いきり快戦した。敵の遺棄<ruby><rb>屍体</rb><rt>したい</rt></ruby>三千余。連日の<ruby><rb>執拗</rb><rt>しつよう</rt></ruby>なゲリラ戦術に久しくいらだち屈していた士気が<ruby><rb>俄</rb><rt>にわ</rt></ruby>かに<ruby><rb>奮</rb><rt>ふる</rt></ruby>い立った形である。次の日からまた、もとの<placeName ref="#ryujo"><ruby><rb>竜城</rb><rt>りゅうじょう</rt></ruby></placeName>の道に<ruby><rb>循</rb><rt>したが</rt></ruby>って、南方への退行が始まる。<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>はまたしても、元の遠巻き戦術に<ruby><rb>還</rb><rt>かえ</rt></ruby>った。五日め、漢軍は、<ruby><rb>平沙</rb><rt>へいさ</rt></ruby>の中にときに<ruby><rb>見出</rb><rt>みいだ</rt></ruby>される<ruby><rb>沼沢地</rb><rt>しょうたくち</rt></ruby>の一つに踏入った。水は半ば凍り、<ruby><rb>泥濘</rb><rt>でいねい</rt></ruby>も<ruby><rb>脛</rb><rt>はぎ</rt></ruby>を没する深さで、行けども行けども果てしない<ruby><rb>枯葦原</rb><rt>かれあしはら</rt></ruby>が続く。<ruby><rb>風上</rb><rt>かざかみ</rt></ruby>に<ruby><rb>廻</rb><rt>まわ</rt></ruby>った匈奴の一隊が火を放った。<ruby><rb>朔風</rb><rt>さくふう</rt></ruby>は<ruby><rb>焔</rb><rt>ほのお</rt></ruby>を<ruby><rb>煽</rb><rt>あお</rt></ruby>り、真昼の空の下に白っぽく輝きを失った火は、すさまじい速さで漢軍に迫る。<persName ref="#riryo">李陵</persName>はすぐに附近の<ruby><rb>葦</rb><rt>あし</rt></ruby>に迎え火を放たしめて、かろうじてこれを防いだ。火は防いだが、<ruby><rb>沮洳地</rb><rt>そじょち</rt></ruby>の車行の困難は言語に絶した。休息の地のないままに一夜<ruby><rb>泥濘</rb><rt>でいねい</rt></ruby>の中を歩き通したのち、翌朝ようやく丘陵地に<ruby><rb>辿</rb><rt>たど</rt></ruby>りついたとたんに、<ruby><rb>先廻</rb><rt>さきまわ</rt></ruby>りして待伏せていた敵の主力の襲撃に<ruby><rb>遭</rb><rt>あ</rt></ruby>った。人馬入乱れての<ruby><rb>搏兵</rb><rt>はくへい</rt></ruby>戦である。騎馬隊の<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい突撃を避けるため、<persName ref="#riryo">李陵</persName>は車を<ruby><rb>棄</rb><rt>す</rt></ruby>てて、<ruby><rb>山麓</rb><rt>さんろく</rt></ruby>の疎林の中に戦闘の場所を移し入れた。林間からの猛射はすこぶる効を奏した。たまたま陣頭に姿を現わした<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>とその親衛隊とに向かって、一時に<ruby><rb>連弩</rb><rt>れんど</rt></ruby>を発して乱射したとき、単于の白馬は前脚を高くあげて棒立ちとなり、<ruby><rb>青袍</rb><rt>せいほう</rt></ruby>をまとった<ruby><rb>胡主</rb><rt>こしゅ</rt></ruby>はたちまち地上に投出された。親衛隊の二騎が馬から下りもせず、左右からさっと単于を<ruby><rb>掬</rb><rt>すく</rt></ruby>い上げると、全隊がたちまちこれを中に囲んですばやく退いて行った。乱闘数刻ののちようやく<ruby><rb>執拗</rb><rt>しつよう</rt></ruby>な敵を撃退しえたが、確かに今までにない難戦であった。遺された敵の<ruby><rb>屍体</rb><rt>したい</rt></ruby>はまたしても数千を算したが、漢軍も千に近い戦死者を出したのである。</p>
+        <p>この日捕えた<ruby><rb>胡虜</rb><rt>こりょ</rt></ruby>の口から、敵軍の事情の一端を知ることができた。それによれば、<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>は漢兵の<ruby><rb>手強</rb><rt>てごわ</rt></ruby>さに驚嘆し、<ruby><rb>己</rb><rt>おのれ</rt></ruby>に二十倍する大軍をも<ruby><rb>怯</rb><rt>おそ</rt></ruby>れず日に日に南下して我を誘うかに見えるのは、あるいはどこか近くに、伏兵があって、それを<ruby><rb>恃</rb><rt>たの</rt></ruby>んでいるのではないかと疑っているらしい。前夜その疑いを単于が幹部の諸将に<ruby><rb>洩</rb><rt>も</rt></ruby>らして事を計ったところ、結局、そういう疑いも確かにありうるが、ともかくも、単于自ら数万騎を率いて漢の<ruby><rb>寡勢</rb><rt>かぜい</rt></ruby>を滅しえぬとあっては、我々の面目に係わるという主戦論が勝ちを制し、これより南四、五十里は山谷がつづくがその間力戦猛攻し、さて平地に出て一戦してもなお破りえないとなったそのときはじめて兵を北に<ruby><rb>還</rb><rt>かえ</rt></ruby>そうということに決まったという。これを聞いて、<ruby><rb>校尉</rb><rt>こうい</rt></ruby><persName ref="#kanennen"><ruby><rb>韓延年</rb><rt>かんえんねん</rt></ruby></persName>以下漢軍の<ruby><rb>幕僚</rb><rt>ばくりょう</rt></ruby>たちの頭に、あるいは助かるかもしれぬぞという希望のようなものが<ruby><rb>微</rb><rt>かす</rt></ruby>かに<ruby><rb>湧</rb><rt>わ</rt></ruby>いた。</p>
+        <p>翌日からの<ruby><rb>胡軍</rb><rt>こぐん</rt></ruby>の攻撃は猛烈を極めた。<ruby><rb>捕虜</rb><rt>ほりょ</rt></ruby>の言の中にあった最後の猛攻というのを始めたのであろう。襲撃は一日に十数回繰返された。<ruby><rb>手厳</rb><rt>てきび</rt></ruby>しい反撃を加えつつ漢軍は徐々に南に移って行く。三日<ruby><rb>経</rb><rt>た</rt></ruby>つと平地に出た。平地戦になると倍加される騎馬隊の威力にものを言わせ<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>らは<ruby><rb>遮二無二</rb><rt>しゃにむに</rt></ruby>漢軍を圧倒しようとかかったが、結局またも二千の<ruby><rb>屍体</rb><rt>したい</rt></ruby>を<ruby><rb>遺</rb><rt>のこ</rt></ruby>して退いた。捕虜の言が偽りでなければ、これで胡軍は追撃を打切るはずである。たかが一兵卒の言った言葉ゆえ、それほど信頼できるとは思わなかったが、それでも<ruby><rb>幕僚</rb><rt>ばくりょう</rt></ruby>一同<ruby><rb>些</rb><rt>いささ</rt></ruby>かホッとしたことは争えなかった。</p>
+        <p>その晩、漢の<ruby><rb>軍侯</rb><rt>ぐんこう</rt></ruby>、<persName ref="#kankan"><ruby><rb>管敢</rb><rt>かんかん</rt></ruby></persName>という者が陣を脱して匈奴の軍に<ruby><rb>亡</rb><rt>に</rt></ruby>げ<ruby><rb>降</rb><rt>くだ</rt></ruby>った。かつて<placeName ref="#choan"><ruby><rb>長安</rb><rt>ちょうあん</rt></ruby></placeName>都下の悪少年だった男だが、前夜<ruby><rb>斥候</rb><rt>せっこう</rt></ruby>上の手抜かりについて<ruby><rb>校尉</rb><rt>こうい</rt></ruby>・<ruby><rb>成安侯</rb><rt>せいあんこう</rt></ruby><persName ref="#kanennen"><ruby><rb>韓延年</rb><rt>かんえんねん</rt></ruby></persName>のために衆人の前で<ruby><rb>面罵</rb><rt>めんば</rt></ruby>され、<ruby><rb>笞</rb><rt>むち</rt></ruby>打たれた。それを含んでこの挙に出たのである。先日<ruby><rb>渓間</rb><rt>たにま</rt></ruby>で<ruby><rb>斬</rb><rt>ざん</rt></ruby>に遭った女どもの一人が彼の妻だったとも言う。<persName ref="#kankan">管敢</persName>は匈奴の捕虜の自供した言葉を知っていた。それゆえ、<ruby><rb>胡陣</rb><rt>こじん</rt></ruby>に<ruby><rb>亡</rb><rt>に</rt></ruby>げて<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の前に引出されるや、伏兵を<ruby><rb>懼</rb><rt>おそ</rt></ruby>れて引上げる必要のないことを力説した。言う、漢軍には後援がない。矢もほとんど尽きようとしている。負傷者も続出して行軍は<ruby><rb>難渋</rb><rt>なんじゅう</rt></ruby>を極めている。漢軍の中心をなすものは、<ruby><rb>李</rb><rt>り</rt></ruby>将軍および成安侯<persName ref="#kanennen">韓延年</persName>の率いる各八百人だが、それぞれ黄と白との<ruby><rb>幟</rb><rt>し</rt></ruby>をもって印としているゆえ、明日<ruby><rb>胡騎</rb><rt>こき</rt></ruby>の精鋭をしてそこに攻撃を集中せしめてこれを破ったなら、他は容易に<ruby><rb>潰滅</rb><rt>かいめつ</rt></ruby>するであろう、<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>。<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>は大いに喜んで厚く敢を遇し、ただちに北方への引上げ命令を取消した。</p>
+        <p>翌日、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName><persName ref="#kanennen"><ruby><rb>韓延年</rb><rt>かんえんねん</rt></ruby></persName><ruby><rb>速</rb><rt>すみや</rt></ruby>かに<ruby><rb>降</rb><rt>くだ</rt></ruby>れと<ruby><rb>疾呼</rb><rt>しっこ</rt></ruby>しつつ、胡軍の最精鋭は、黄白の<ruby><rb>幟</rb><rt>し</rt></ruby>を目ざして襲いかかった。その勢いに漢軍は、しだいに平地から西方の山地へと押されて行く。ついに本道から<ruby><rb>遙</rb><rt>はる</rt></ruby>かに離れた山谷の間に追込まれてしまった。四方の山上から敵は矢を雨のごとくに<ruby><rb>注</rb><rt>そそ</rt></ruby>いだ。それに応戦しようにも、今や矢が完全に尽きてしまった。<placeName ref="#sharyosho"><ruby><rb>遮虜鄣</rb><rt>しゃりょしょう</rt></ruby></placeName>を出るとき各人が百本ずつ携えた五十万本の矢がことごとく射尽くされたのである。矢ばかりではない。全軍の<ruby><rb>刀槍矛戟</rb><rt>とうそうぼうげき</rt></ruby>の類も半ばは折れ欠けてしまった。文字どおり刀折れ矢尽きたのである。それでも、<ruby><rb>戟</rb><rt>ほこ</rt></ruby>を失ったものは<ruby><rb>車輻</rb><rt>しゃふく</rt></ruby>を<ruby><rb>斬</rb><rt>き</rt></ruby>ってこれを持ち、<ruby><rb>軍吏</rb><rt>ぐんり</rt></ruby>は<ruby><rb>尺刀</rb><rt>せきとう</rt></ruby>を手にして防戦した。谷は奥へ進むに従っていよいよ<ruby><rb>狭</rb><rt>せま</rt></ruby>くなる。<ruby><rb>胡卒</rb><rt>こそつ</rt></ruby>は諸所の<ruby><rb>崖</rb><rt>がけ</rt></ruby>の上から大石を投下しはじめた。矢よりもこのほうが確実に漢軍の死傷者を増加させた。<ruby><rb>死屍</rb><rt>しし</rt></ruby>と<ruby><rb>纍石</rb><rt>るいせき</rt></ruby>とでもはや前進も不可能になった。</p>
+        <p>その夜、<persName ref="#riryo">李陵</persName>は<ruby><rb>小袖短衣</rb><rt>しょうしゅうたんい</rt></ruby>の<ruby><rb>便衣</rb><rt>べんい</rt></ruby>を着け、誰もついて来るなと禁じて独り幕営の外に出た。月が山の<ruby><rb>峡</rb><rt>かい</rt></ruby>から<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて谷間に<ruby><rb>堆</rb><rt>うずたか</rt></ruby>い<ruby><rb>屍</rb><rt>しかばね</rt></ruby>を照らした。<placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>の陣を撤するときは夜が暗かったのに、またも月が明るくなりはじめたのである。月光と満地の霜とで<ruby><rb>片岡</rb><rt>かたおか</rt></ruby>の斜面は水に<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れたように見えた。幕営の中に残った将士は、<persName ref="#riryo">李陵</persName>の服装からして、彼が単身敵陣を<ruby><rb>窺</rb><rt>うかが</rt></ruby>ってあわよくば単于と刺違える所存に違いないことを察した。<persName ref="#riryo">李陵</persName>はなかなか戻って来なかった。彼らは息をひそめてしばらく外の様子を<ruby><rb>窺</rb><rt>うかが</rt></ruby>った。遠く山上の敵塁から<ruby><rb>胡笳</rb><rt>こか</rt></ruby>の声が響く。かなり久しくたってから、音もなく<ruby><rb>帷</rb><rt>とばり</rt></ruby>をかかげて<persName ref="#riryo">李陵</persName>が幕の内にはいって来た。だめだ。と一言吐き出すように言うと、<ruby><rb>踞牀</rb><rt>きょしょう</rt></ruby>に腰を<ruby><rb>下</rb><rt>おろ</rt></ruby>した。全軍<ruby><rb>斬死</rb><rt>ざんし</rt></ruby>のほか、<ruby><rb>途</rb><rt>みち</rt></ruby>はないようだなと、またしばらくしてから、誰に向かってともなく言った。満座口を開く者はない。ややあって<ruby><rb>軍吏</rb><rt>ぐんり</rt></ruby>の一人が口を切り、先年<ruby><rb>浞野侯</rb><rt>さくやこう</rt></ruby><persName ref="#chohado"><ruby><rb>趙破奴</rb><rt>ちょうはど</rt></ruby></persName>が<ruby><rb>胡軍</rb><rt>こぐん</rt></ruby>のために<ruby><rb>生擒</rb><rt>いけど</rt></ruby>られ、数年後に漢に<ruby><rb>亡</rb><rt>に</rt></ruby>げ帰ったときも、<persName ref="#butei">武帝</persName>はこれを罰しなかったことを語った。この例から考えても、<ruby><rb>寡兵</rb><rt>かへい</rt></ruby>をもって、かくまで<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>を<ruby><rb>震駭</rb><rt>しんがい</rt></ruby>させた<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>であってみれば、たとえ都へのがれ帰っても、天子はこれを遇する<ruby><rb>途</rb><rt>みち</rt></ruby>を知りたもうであろうというのである。<persName ref="#riryo">李陵</persName>はそれを<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>って言う。陵一個のことはしばらく<ruby><rb>措</rb><rt>お</rt></ruby>け、とにかく、今数十矢もあれば一応は囲みを脱出することもできようが、一本の矢もないこの<ruby><rb>有様</rb><rt>ありさま</rt></ruby>では、明日の天明には全軍が<ruby><rb>坐</rb><rt>ざ</rt></ruby>して<ruby><rb>縛</rb><rt>ばく</rt></ruby>を受けるばかり。ただ、今夜のうちに囲みを突いて外に出、各自鳥獣と散じて走ったならば、その中にはあるいは<ruby><rb>辺塞</rb><rt>へんさい</rt></ruby>に<ruby><rb>辿</rb><rt>たど</rt></ruby>りついて、天子に軍状を報告しうる者もあるかもしれぬ。案ずるに現在の地点は<placeName ref="#teikanzan"><ruby><rb>鞮汗山</rb><rt>ていかんざん</rt></ruby></placeName>北方の山地に違いなく、<placeName ref="#kyoen"><ruby><rb>居延</rb><rt>きょえん</rt></ruby></placeName>まではなお数日の行程ゆえ、成否のほどはおぼつかないが、ともかく今となっては、そのほかに残された<ruby><rb>途</rb><rt>みち</rt></ruby>はないではないか。諸将僚もこれに<ruby><rb>頷</rb><rt>うなず</rt></ruby>いた。全軍の将卒に各二升の<ruby><rb>糒</rb><rt>ほしいい</rt></ruby>と一個の<ruby><rb>冰片</rb><rt>ひょうへん</rt></ruby>とが<ruby><rb>頒</rb><rt>わか</rt></ruby>たれ、<ruby><rb>遮二無二</rb><rt>しゃにむに</rt></ruby>、<placeName ref="#sharyosho"><ruby><rb>遮虜鄣</rb><rt>しゃりょしょう</rt></ruby></placeName>に向かって走るべき旨がふくめられた。さて、一方、ことごとく漢陣の<ruby><rb>旌旗</rb><rt>せいき</rt></ruby>を倒しこれを<ruby><rb>斬</rb><rt>き</rt></ruby>って地中に埋めたのち、武器兵車等の敵に利用されうる<ruby><rb>惧</rb><rt>おそ</rt></ruby>れのあるものも皆<ruby><rb>打毀</rb><rt>うちこわ</rt></ruby>した。夜半、<ruby><rb>鼓</rb><rt>こ</rt></ruby>して兵を起こした。<ruby><rb>軍鼓</rb><rt>ぐんこ</rt></ruby>の音も<ruby><rb>惨</rb><rt>さん</rt></ruby>として響かぬ。<persName ref="#riryo">李陵</persName>は<ruby><rb>韓校尉</rb><rt>かんこうい</rt></ruby>とともに馬に<ruby><rb>跨</rb><rt>また</rt></ruby>がり壮士十余人を従えて<ruby><rb>先登</rb><rt>せんとう</rt></ruby>に立った。この日追い込まれた<ruby><rb>峡谷</rb><rt>きょうこく</rt></ruby>の東の口を破って平地に出、それから南へ向けて走ろうというのである。</p>
+        <p>早い月はすでに落ちた。<ruby><rb>胡虜</rb><rt>こりょ</rt></ruby>の不意を<ruby><rb>衝</rb><rt>つ</rt></ruby>いて、ともかくも全軍の三分の二は予定どおり峡谷の裏口を突破した。しかしすぐに敵の騎馬兵の追撃に<ruby><rb>遭</rb><rt>あ</rt></ruby>った。徒歩の兵は大部分討たれあるいは捕えられたようだったが、混戦に乗じて敵の馬を奪った数十人は、その<ruby><rb>胡馬</rb><rt>こば</rt></ruby>に<ruby><rb>鞭</rb><rt>むち</rt></ruby>うって南方へ走った。敵の追撃をふり切って夜目にもぼっと白い<ruby><rb>平沙</rb><rt>へいさ</rt></ruby>の上を、のがれ去った部下の数を数えて、確かに百に余ることを確かめうると、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>はまた峡谷の入口の<ruby><rb>修羅場</rb><rt>しゅらば</rt></ruby>にとって返した。身には数創を帯び、<ruby><rb>自</rb><rt>みずか</rt></ruby>らの血と返り血とで、<ruby><rb>戎衣</rb><rt>じゅうい</rt></ruby>は重く<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れていた。彼と並んでいた<persName ref="#kanennen"><ruby><rb>韓延年</rb><rt>かんえんねん</rt></ruby></persName>はすでに討たれて戦死していた。<ruby><rb>麾下</rb><rt>きか</rt></ruby>を失い全軍を失って、もはや天子に<ruby><rb>見</rb><rt>まみ</rt></ruby>ゆべき面目はない。彼は<ruby><rb>戟</rb><rt>ほこ</rt></ruby>を取直すと、ふたたび乱軍の中に<ruby><rb>駈入</rb><rt>かけい</rt></ruby>った。暗い中で敵味方も分らぬほどの乱闘のうちに、<persName ref="#riryo">李陵</persName>の馬が<ruby><rb>流矢</rb><rt>ながれや</rt></ruby>に当たったとみえてガックリ前にのめった。それとどちらが早かったか、前なる敵を突こうと<ruby><rb>戈</rb><rt>ほこ</rt></ruby>を引いた<persName ref="#riryo">李陵</persName>は、突然背後から重量のある打撃を後頭部に<ruby><rb>喰</rb><rt>くら</rt></ruby>って失神した。馬から<ruby><rb>顛落</rb><rt>てんらく</rt></ruby>した彼の上に、<ruby><rb>生擒</rb><rt>いけど</rt></ruby>ろうと構えた<ruby><rb>胡兵</rb><rt>こへい</rt></ruby>どもが<ruby><rb>十重二十重</rb><rt>とえはたえ</rt></ruby>とおり重なって、とびかかった。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p><date when="--09">九月</date>に北へ立った五千の<ruby><rb>漢軍</rb><rt>かんぐん</rt></ruby>は、<date when="--11">十一月</date>にはいって、疲れ傷ついて将を失った四百足らずの敗兵となって<ruby><rb>辺塞</rb><rt>へんさい</rt></ruby>に<ruby><rb>辿</rb><rt>たど</rt></ruby>りついた。敗報はただちに<ruby><rb>駅伝</rb><rt>えきでん</rt></ruby>をもって<placeName ref="#choan"><ruby><rb>長安</rb><rt>ちょうあん</rt></ruby></placeName>の都に達した。</p>
+        <p><persName ref="#butei"><ruby><rb>武帝</rb><rt>ぶてい</rt></ruby></persName>は思いのほか腹を立てなかった。本軍たる<persName ref="#rikori"><ruby><rb>李広利</rb><rt>りこうり</rt></ruby></persName>の大軍さえ<ruby><rb>惨敗</rb><rt>ざんぱい</rt></ruby>しているのに、一支隊たる<persName ref="#riryo">李陵</persName>の<ruby><rb>寡軍</rb><rt>かぐん</rt></ruby>にたいした期待のもてよう道理がなかったから。それに彼は、<persName ref="#riryo">李陵</persName>が必ずや戦死しているに違いないとも思っていたのである。ただ、先ごろ<persName ref="#riryo">李陵</persName>の使いとして<placeName ref="#bakuhoku"><ruby><rb>漠北</rb><rt>ばくほく</rt></ruby></placeName>から「戦線異状なし、士気すこぶる<ruby><rb>旺盛</rb><rt>おうせい</rt></ruby>」の報をもたらした<persName ref="#chinhoraku"><ruby><rb>陳歩楽</rb><rt>ちんほらく</rt></ruby></persName>だけは（彼は吉報の使者として<ruby><rb>嘉</rb><rt>よみ</rt></ruby>せられ<ruby><rb>郎</rb><rt>ろう</rt></ruby>となってそのまま都に<ruby><rb>留</rb><rt>とど</rt></ruby>まっていた）成行上どうしても自殺しなければならなかった。哀れではあったが、これはやむを得ない。</p>
+        <p>翌、<date when="-0097"><ruby><rb>天漢</rb><rt>てんかん</rt></ruby>三年</date>の春になって、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は戦死したのではない。捕えられて<ruby><rb>虜</rb><rt>ろ</rt></ruby>に降ったのだという確報が届いた。<persName ref="#butei">武帝</persName>ははじめて<ruby><rb>嚇怒</rb><rt>かくど</rt></ruby>した。即位後四十余年。帝はすでに六十に近かったが、気象の<ruby><rb>烈</rb><rt>はげ</rt></ruby>しさは壮時に超えている。<ruby><rb>神仙</rb><rt>しんせん</rt></ruby>の説を好み<ruby><rb>方士巫覡</rb><rt>ほうしふげき</rt></ruby>の類を信じた彼は、それまでに<ruby><rb>己</rb><rt>おのれ</rt></ruby>の絶対に尊信する方士どもに幾度か<ruby><rb>欺</rb><rt>あざむ</rt></ruby>かれていた。漢の勢威の絶頂に当たって五十余年の間君臨したこの大皇帝は、その中年以後ずっと、霊魂の世界への不安な関心に<ruby><rb>執拗</rb><rt>しつよう</rt></ruby>につきまとわれていた。それだけに、その方面での失望は彼にとって大きな打撃となった。こうした打撃は、生来<ruby><rb>闊達</rb><rt>かったつ</rt></ruby>だった彼の心に、年とともに群臣への暗い<ruby><rb>猜疑</rb><rt>さいぎ</rt></ruby>を植えつけていった。<persName ref="#risai"><ruby><rb>李蔡</rb><rt>りさい</rt></ruby></persName>・<persName ref="#seikaku"><ruby><rb>青霍</rb><rt>せいかく</rt></ruby></persName>・<persName ref="#choshu"><ruby><rb>趙周</rb><rt>ちょうしゅう</rt></ruby></persName>と、<ruby><rb>丞相</rb><rt>じょうしょう</rt></ruby>たる者は相ついで死罪に行なわれた。現在の丞相たる<persName ref="#kosonga"><ruby><rb>公孫賀</rb><rt>こうそんが</rt></ruby></persName>のごとき、命を拝したときに<ruby><rb>己</rb><rt>おの</rt></ruby>が運命を恐れて帝の前で手離しで泣出したほどである。<ruby><rb>硬骨漢</rb><rt>こうこつかん</rt></ruby><persName ref="#kyuan"><ruby><rb>汲黯</rb><rt>きゅうあん</rt></ruby></persName>が退いた後は、帝を取巻くものは、<ruby><rb>佞臣</rb><rt>ねいしん</rt></ruby>にあらずんば<ruby><rb>酷吏</rb><rt>こくり</rt></ruby>であった。</p>
+        <p>さて、<persName ref="#butei">武帝</persName>は諸重臣を召して<persName ref="#riryo">李陵</persName>の処置について計った。<persName ref="#riryo">李陵</persName>の身体は都にはないが、その罪の決定によって、彼の妻子<ruby><rb>眷属</rb><rt>けんぞく</rt></ruby>家財などの処分が行なわれるのである。酷吏として聞こえた一<ruby><rb>廷尉</rb><rt>ていい</rt></ruby>が常に帝の顔色を<ruby><rb>窺</rb><rt>うかが</rt></ruby>い合法的に法を<ruby><rb>枉</rb><rt>ま</rt></ruby>げて帝の意を迎えることに巧みであった。ある人が法の権威を説いてこれを<ruby><rb>詰</rb><rt>なじ</rt></ruby>ったところ、これに答えていう。前主の<ruby><rb>是</rb><rt>ぜ</rt></ruby>とするところこれが<ruby><rb>律</rb><rt>りつ</rt></ruby>となり、後主の是とするところこれが<ruby><rb>令</rb><rt>りょう</rt></ruby>となる。当時の君主の意のほかになんの法があろうぞと。群臣皆この廷尉の類であった。<ruby><rb>丞相</rb><rt>じょうしょう</rt></ruby><persName ref="#kosonga"><ruby><rb>公孫賀</rb><rt>こうそんが</rt></ruby></persName>、<ruby><rb>御史大夫</rb><rt>ぎょしたいふ</rt></ruby><persName ref="#toshu"><ruby><rb>杜周</rb><rt>としゅう</rt></ruby></persName>、<ruby><rb>太常</rb><rt>たいじょう</rt></ruby>、<persName ref="#chotei"><ruby><rb>趙弟</rb><rt>ちょうてい</rt></ruby></persName>以下、誰一人として、帝の<ruby><rb>震怒</rb><rt>しんど</rt></ruby>を犯してまで陵のために弁じようとする者はない。口を極めて彼らは<persName ref="#riryo">李陵</persName>の売国的行為を<ruby><rb>罵</rb><rt>ののし</rt></ruby>る。陵のごとき<ruby><rb>変節漢</rb><rt>へんせつかん</rt></ruby>と肩を比べて<ruby><rb>朝</rb><rt>ちょう</rt></ruby>に仕えていたことを思うといまさらながら<ruby><rb>愧</rb><rt>は</rt></ruby>ずかしいと言出した。平生の陵の行為の一つ一つがすべて疑わしかったことに意見が一致した。陵の<ruby><rb>従弟</rb><rt>いとこ</rt></ruby>に当たる<persName ref="#rikan"><ruby><rb>李敢</rb><rt>りかん</rt></ruby></persName>が太子の<ruby><rb>寵</rb><rt>ちょう</rt></ruby>を頼んで<ruby><rb>驕恣</rb><rt>きょうし</rt></ruby>であることまでが、陵への<ruby><rb>誹謗</rb><rt>ひぼう</rt></ruby>の種子になった。口を<ruby><rb>緘</rb><rt>かん</rt></ruby>して意見を<ruby><rb>洩</rb><rt>も</rt></ruby>らさぬ者が、結局陵に対して最大の好意を<ruby><rb>有</rb><rt>も</rt></ruby>つものだったが、それも数えるほどしかいない。</p>
+        <p>ただ一人、苦々しい顔をしてこれらを見守っている男がいた。今口を極めて<persName ref="#riryo">李陵</persName>を<ruby><rb>讒誣</rb><rt>ざんぶ</rt></ruby>しているのは、数か月前<persName ref="#riryo">李陵</persName>が都を辞するときに<ruby><rb>盃</rb><rt>さかずき</rt></ruby>をあげて、その行を<ruby><rb>壮</rb><rt>さか</rt></ruby>んにした連中ではなかったか。<placeName ref="#bakuhoku"><ruby><rb>漠北</rb><rt>ばくほく</rt></ruby></placeName>からの使者が来て<persName ref="#riryo">李陵</persName>の軍の健在を伝えたとき、さすがは名将<persName ref="#riko"><ruby><rb>李広</rb><rt>りこう</rt></ruby></persName>の孫と<persName ref="#riryo">李陵</persName>の孤軍奮闘を<ruby><rb>讃</rb><rt>たた</rt></ruby>えたのもまた同じ連中ではないのか。<ruby><rb>恬</rb><rt>てん</rt></ruby>として既往を忘れたふりのできる<ruby><rb>顕官</rb><rt>けんかん</rt></ruby>連や、彼らの<ruby><rb>諂諛</rb><rt>てんゆ</rt></ruby>を見破るほどに<ruby><rb>聡明</rb><rt>そうめい</rt></ruby>ではありながらなお真実に耳を傾けることを<ruby><rb>嫌</rb><rt>きら</rt></ruby>う君主が、この男には不思議に思われた。いや、不思議ではない。人間がそういうものとは昔からいやになるほど知ってはいるのだが、それにしてもその不愉快さに変わりはないのである。<ruby><rb>下大夫</rb><rt>かたいふ</rt></ruby>の一人として<ruby><rb>朝</rb><rt>ちょう</rt></ruby>につらなっていたために彼もまた下問を受けた。そのとき、この男はハッキリと<persName ref="#riryo">李陵</persName>を<ruby><rb>褒</rb><rt>ほ</rt></ruby>め上げた。言う。陵の平生を見るに、親に<ruby><rb>事</rb><rt>つか</rt></ruby>えて孝、士と交わって信、常に奮って身を顧みずもって国家の急に殉ずるは<ruby><rb>誠</rb><rt>まこと</rt></ruby>に国士のふうありというべく、今不幸にして事一<ruby><rb>度</rb><rt>たび</rt></ruby>破れたが、身を全うし妻子を<ruby><rb>保</rb><rt>やす</rt></ruby>んずることをのみただ念願とする君側の<ruby><rb>佞人</rb><rt>ねいじん</rt></ruby>ばらが、この陵の<ruby><rb>一失</rb><rt>いっしつ</rt></ruby>を取上げてこれを誇大<ruby><rb>歪曲</rb><rt>わいきょく</rt></ruby>しもって<ruby><rb>上</rb><rt>しょう</rt></ruby>の聡明を<ruby><rb>蔽</rb><rt>おお</rt></ruby>おうとしているのは、<ruby><rb>遺憾</rb><rt>いかん</rt></ruby>この上もない。そもそも陵の今回の軍たる、五千にも満たぬ歩卒を率いて深く敵地に入り、<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>数万の師を<ruby><rb>奔命</rb><rt>ほんめい</rt></ruby>に疲れしめ、転戦千里、矢尽き道<ruby><rb>窮</rb><rt>きわ</rt></ruby>まるに至るもなお全軍<ruby><rb>空弩</rb><rt>くうど</rt></ruby>を張り、<ruby><rb>白刃</rb><rt>はくじん</rt></ruby>を冒して死闘している。部下の心を得てこれに死力を尽くさしむること、<ruby><rb>古</rb><rt>いにしえ</rt></ruby>の名将といえどもこれには過ぎまい。軍敗れたりとはいえ、その善戦のあとはまさに天下に顕彰するに足る。思うに、彼が死せずして<ruby><rb>虜</rb><rt>ろ</rt></ruby>に<ruby><rb>降</rb><rt>くだ</rt></ruby>ったというのも、ひそかにかの地にあって何事か漢に報いんと期してのことではあるまいか。……</p>
+        <p>並いる群臣は驚いた。こんなことのいえる男が世にいようとは考えなかったからである。彼らはこめかみを<ruby><rb>顫</rb><rt>ふる</rt></ruby>わせた<persName ref="#butei">武帝</persName>の顔を恐る恐る見上げた。それから、自分らをあえて<ruby><rb>全躯保妻子</rb><rt>くをまっとうしさいしをたもつ</rt></ruby>の臣と呼んだこの男を待つものが何であるかを考えて、ニヤリとするのである。</p>
+        <p>向こう見ずなその男――<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby>・<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>が君前を退くと、すぐに、「<ruby><rb>全躯保妻子</rb><rt>くをまっとうしさいしをたもつ</rt></ruby>の臣」の一人が、<ruby><rb>遷</rb><rt>せん</rt></ruby>と<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>との親しい関係について<persName ref="#butei">武帝</persName>の耳に入れた。太史令は<ruby><rb>故</rb><rt>ゆえ</rt></ruby>あって<persName ref="#rikori"><ruby><rb>弐師</rb><rt>じし</rt></ruby>将軍</persName>と<ruby><rb>隙</rb><rt>げき</rt></ruby>あり、遷が陵を<ruby><rb>褒</rb><rt>ほ</rt></ruby>めるのは、それによって、今度、陵に先立って<ruby><rb>出塞</rb><rt>しゅっさい</rt></ruby>して功のなかった<persName ref="#rikori">弐師将軍</persName>を<ruby><rb>陥</rb><rt>おとしい</rt></ruby>れんがためであると言う者も出てきた。ともかくも、たかが<ruby><rb>星暦卜祀</rb><rt>せいれきぼくし</rt></ruby>を<ruby><rb>司</rb><rt>つかさど</rt></ruby>るにすぎぬ太史令の身として、あまりにも<ruby><rb>不遜</rb><rt>ふそん</rt></ruby>な態度だというのが、一同の一致した意見である。おかしなことに、<persName ref="#riryo">李陵</persName>の家族よりも<persName ref="#shibasen">司馬遷</persName>のほうが先に罪せられることになった。翌日、彼は<ruby><rb>廷尉</rb><rt>ていい</rt></ruby>に下された。刑は<ruby><rb>宮</rb><rt>きゅう</rt></ruby>と決まった。</p>
+        <p><placeName ref="#chugoku"><ruby><rb>支那</rb><rt>しな</rt></ruby></placeName>で昔から行なわれた<ruby><rb>肉刑</rb><rt>にくけい</rt></ruby>の<ruby><rb>主</rb><rt>おも</rt></ruby>なるものとして、<ruby><rb>黥</rb><rt>けい</rt></ruby>、<ruby><rb>劓</rb><rt>ぎ</rt></ruby>（はなきる）、<ruby><rb>剕</rb><rt>ひ</rt></ruby>（あしきる）、<ruby><rb>宮</rb><rt>きゅう</rt></ruby>、の四つがある。<persName ref="#butei">武帝</persName>の祖父・<persName ref="#buntei"><ruby><rb>文帝</rb><rt>ぶんてい</rt></ruby></persName>のとき、この四つのうち三つまでは廃せられたが、<ruby><rb>宮刑</rb><rt>きゅうけい</rt></ruby>のみはそのまま残された。宮刑とはもちろん、男を男でなくする奇怪な刑罰である。これを一に<ruby><rb>腐刑</rb><rt>ふけい</rt></ruby>ともいうのは、その<ruby><rb>創</rb><rt>きず</rt></ruby>が腐臭を放つがゆえだともいい、あるいは、<ruby><rb>腐木</rb><rt>ふぼく</rt></ruby>の実を生ぜざるがごとき男と成り果てるからだともいう。この刑を受けた者を<ruby><rb>閹人</rb><rt>えんじん</rt></ruby>と称し、宮廷の<ruby><rb>宦官</rb><rt>かんがん</rt></ruby>の大部分がこれであったことは言うまでもない。人もあろうに<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>がこの刑に<ruby><rb>遭</rb><rt>あ</rt></ruby>ったのである。しかし、後代の我々が<ruby><rb>史記</rb><rt>しき</rt></ruby>の作者として知っている<persName ref="#shibasen">司馬遷</persName>は大きな名前だが、当時の<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby><persName ref="#shibasen">司馬遷</persName>は<ruby><rb>眇</rb><rt>びょう</rt></ruby>たる一文筆の<ruby><rb>吏</rb><rt>り</rt></ruby>にすぎない。頭脳の<ruby><rb>明晰</rb><rt>めいせき</rt></ruby>なことは確かとしてもその頭脳に自信をもちすぎた、人づき合いの悪い男、議論においてけっして<ruby><rb>他人</rb><rt>ひと</rt></ruby>に負けない男、たかだか強情我慢の<ruby><rb>偏窟人</rb><rt>へんくつじん</rt></ruby>としてしか知られていなかった。彼が<ruby><rb>腐刑</rb><rt>ふけい</rt></ruby>に<ruby><rb>遇</rb><rt>あ</rt></ruby>ったからとて別に驚く者はない。</p>
+        <p>司馬氏は<ruby><rb>元</rb><rt>もと</rt></ruby><ruby><rb>周</rb><rt>しゅう</rt></ruby>の史官であった。後、<placeName ref="#shin-state"><ruby><rb>晋</rb><rt>しん</rt></ruby></placeName>に入り、<ruby><rb>秦</rb><rt>しん</rt></ruby>に仕え、<ruby><rb>漢</rb><rt>かん</rt></ruby>の代となってから四代目の<persName ref="#shibatan"><ruby><rb>司馬談</rb><rt>しばたん</rt></ruby></persName>が<persName ref="#butei">武帝</persName>に仕えて<date when="-0139"><ruby><rb>建元</rb><rt>けんげん</rt></ruby>年間</date>に<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby>をつとめた。この談が遷の父である。専門たる<ruby><rb>律</rb><rt>りつ</rt></ruby>・<ruby><rb>暦</rb><rt>れき</rt></ruby>・<ruby><rb>易</rb><rt>えき</rt></ruby>のほかに<ruby><rb>道家</rb><rt>どうか</rt></ruby>の教えに<ruby><rb>精</rb><rt>くわ</rt></ruby>しくまた<ruby><rb>博</rb><rt>ひろ</rt></ruby>く<ruby><rb>儒</rb><rt>じゅ</rt></ruby>、<ruby><rb>墨</rb><rt>ぼく</rt></ruby>、<ruby><rb>法</rb><rt>ほう</rt></ruby>、<ruby><rb>名</rb><rt>めい</rt></ruby>、<ruby><rb>諸家</rb><rt>しょか</rt></ruby>の説にも通じていたが、それらをすべて一家の<ruby><rb>見</rb><rt>けん</rt></ruby>をもって<ruby><rb>綜</rb><rt>す</rt></ruby>べて自己のものとしていた。<ruby><rb>己</rb><rt>おのれ</rt></ruby>の頭脳や精神力についての自信の強さはそっくりそのまま<ruby><rb>息子</rb><rt>むすこ</rt></ruby>の遷に<ruby><rb>受嗣</rb><rt>うけつ</rt></ruby>がれたところのものである。彼が、息子に施した最大の教育は、諸学の伝授を終えてのちに、<ruby><rb>海内</rb><rt>かいだい</rt></ruby>の大旅行をさせたことであった。当時としては変わった教育法であったが、これが後年の歴史家<persName ref="#shibasen">司馬遷</persName>に資するところのすこぶる大であったことは、いうまでもない。</p>
+        <p><date when="-0109"><ruby><rb>元封</rb><rt>げんぽう</rt></ruby>元年</date>に<persName ref="#butei">武帝</persName>が東、<placeName ref="#taizan"><ruby><rb>泰山</rb><rt>たいざん</rt></ruby></placeName>に登って天を祭ったとき、たまたま<placeName ref="#shunan"><ruby><rb>周南</rb><rt>しゅうなん</rt></ruby></placeName>で病床にあった<ruby><rb>熱血漢</rb><rt>ねっけつかん</rt></ruby><persName ref="#shibatan"><ruby><rb>司馬談</rb><rt>しばたん</rt></ruby></persName>は、天子始めて漢家の<ruby><rb>封</rb><rt>ほう</rt></ruby>を建つるめでたきときに、<ruby><rb>己</rb><rt>おのれ</rt></ruby>一人従ってゆくことのできぬのを<ruby><rb>慨</rb><rt>なげ</rt></ruby>き、憤を発してそのために死んだ。古今を一貫せる<ruby><rb>通史</rb><rt>つうし</rt></ruby>の編述こそは彼の一生の念願だったのだが、単に材料の<ruby><rb>蒐集</rb><rt>しゅうしゅう</rt></ruby>のみで終わってしまったのである。その<ruby><rb>臨終</rb><rt>りんじゅう</rt></ruby>の光景は息子・<ruby><rb>遷</rb><rt>せん</rt></ruby>の筆によって詳しく<ruby><rb>史記</rb><rt>しき</rt></ruby>の最後の章に描かれている。それによると<persName ref="#shibatan">司馬談</persName>は己のまた<ruby><rb>起</rb><rt>た</rt></ruby>ちがたきを知るや遷を呼びその手を<ruby><rb>執</rb><rt>と</rt></ruby>って、<ruby><rb>懇</rb><rt>ねんご</rt></ruby>ろに<ruby><rb>修史</rb><rt>しゅうし</rt></ruby>の必要を説き、<ruby><rb>己</rb><rt>おのれ</rt></ruby><ruby><rb>太史</rb><rt>たいし</rt></ruby>となりながらこのことに着手せず、賢君忠臣の<ruby><rb>事蹟</rb><rt>じせき</rt></ruby>を<ruby><rb>空</rb><rt>むな</rt></ruby>しく地下に埋もれしめる<ruby><rb>不甲斐</rb><rt>ふがい</rt></ruby>なさを<ruby><rb>慨</rb><rt>なげ</rt></ruby>いて泣いた。「<ruby><rb>予</rb><rt>よ</rt></ruby>死せば<ruby><rb>汝</rb><rt>なんじ</rt></ruby>必ず太史とならん。太史とならばわが論著せんと欲するところを忘るるなかれ」といい、これこそ己に対する孝の最大なものだとて、<ruby><rb>爾</rb><rt>なんじ</rt></ruby>それ<ruby><rb>念</rb><rt>おも</rt></ruby>えやと繰返したとき、遷は<ruby><rb>俯首流涕</rb><rt>ふしゅりゅうてい</rt></ruby>してその命に<ruby><rb>背</rb><rt>そむ</rt></ruby>かざるべきを誓ったのである。</p>
+        <p>父が死んでから二年ののち、はたして、<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>は<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby>の職を継いだ。父の<ruby><rb>蒐集</rb><rt>しゅうしゅう</rt></ruby>した資料と、宮廷所蔵の秘冊とを用いて、すぐにも<ruby><rb>父子相伝</rb><rt>ふしそうでん</rt></ruby>の天職にとりかかりたかったのだが、任官後の彼にまず課せられたのは暦の改正という事業であった。この仕事に没頭することちょうど満四年。<date when="-0103"><ruby><rb>太初</rb><rt>たいしょ</rt></ruby>元年</date>にようやくこれを仕上げると、すぐに彼は<ruby><rb>史記</rb><rt>しき</rt></ruby>の<ruby><rb>編纂</rb><rt>へんさん</rt></ruby>に着手した。遷、ときに年四十二。</p>
+        <p>腹案はとうにでき上がっていた。その腹案による史書の形式は従来の史書のどれにも似ていなかった。彼は道義的批判の規準を示すものとしては<ruby><rb>春秋</rb><rt>しゅんじゅう</rt></ruby>を推したが、事実を伝える史書としてはなんとしてもあきたらなかった。もっと事実が欲しい。教訓よりも事実が。<ruby><rb>左伝</rb><rt>さでん</rt></ruby>や<ruby><rb>国語</rb><rt>こくご</rt></ruby>になると、なるほど事実はある。左伝の叙事の巧妙さに至っては感嘆のほかはない。しかし、その事実を作り上げる一人一人の人についての探求がない。事件の中における彼らの姿の描出は<ruby><rb>鮮</rb><rt>あざ</rt></ruby>やかであっても、そうしたことをしでかすまでに至る彼ら一人一人の<ruby><rb>身許</rb><rt>みもと</rt></ruby>調べの欠けているのが、<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>には不服だった。それに従来の史書はすべて、当代の者に既往をしらしめることが主眼となっていて、未来の者に当代を知らしめるためのものとしての用意があまりに欠けすぎているようである。要するに、<persName ref="#shibasen">司馬遷</persName>の欲するものは、在来の史には求めて得られなかった。どういう点で在来の史書があきたらぬかは、彼自身でも自ら欲するところを書上げてみてはじめて判然する<ruby><rb>底</rb><rt>てい</rt></ruby>のものと思われた。彼の胸中にあるモヤモヤと<ruby><rb>鬱積</rb><rt>うっせき</rt></ruby>したものを書き現わすことの要求のほうが、在来の史書に対する批判より先に立った。いや、彼の批判は、自ら新しいものを<ruby><rb>創</rb><rt>つく</rt></ruby>るという形でしか現われないのである。自分が長い間頭の中で<ruby><rb>画</rb><rt>えが</rt></ruby>いてきた構想が、史といえるものか、彼には自信はなかった。しかし、史といえてもいえなくても、とにかくそういうものが最も書かれなければならないものだ（世人にとって、後代にとって、なかんずく己自身にとって）という点については、自信があった。彼も<persName ref="#koshi"><ruby><rb>孔子</rb><rt>こうし</rt></ruby></persName>に<ruby><rb>倣</rb><rt>なら</rt></ruby>って、述べて作らぬ方針をとったが、しかし、<persName ref="#koshi">孔子</persName>のそれとはたぶんに内容を<ruby><rb>異</rb><rt>こと</rt></ruby>にした<ruby><rb>述而不作</rb><rt>のべてつくらず</rt></ruby>である、<persName ref="#shibasen">司馬遷</persName>にとって、単なる編年体の事件列挙はいまだ「述べる」の中にはいらぬものだったし、また、後世人の事実そのものを知ることを妨げるような、あまりにも道義的な断案は、むしろ「作る」の部類にはいるように思われた。</p>
+        <p>漢が天下を定めてからすでに五代・百年、<persName ref="#shikotei"><ruby><rb>始皇帝</rb><rt>しこうてい</rt></ruby></persName>の反文化政策によって<ruby><rb>湮滅</rb><rt>いんめつ</rt></ruby>しあるいは<ruby><rb>隠匿</rb><rt>いんとく</rt></ruby>されていた書物がようやく世に行なわれはじめ、文の<ruby><rb>興</rb><rt>おこ</rt></ruby>らんとする気運が<ruby><rb>鬱勃</rb><rt>うつぼつ</rt></ruby>として感じられた。漢の朝廷ばかりでなく、時代が、史の出現を要求しているときであった。<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>個人としては、父の<ruby><rb>遺嘱</rb><rt>いしょく</rt></ruby>による感激が学殖・観察眼・筆力の充実を伴ってようやく<ruby><rb>渾然</rb><rt>こんぜん</rt></ruby>たるものを生み出すべく<ruby><rb>醗酵</rb><rt>はっこう</rt></ruby>しかけてきていた。彼の仕事は実に気持よく進んだ。むしろ快調に行きすぎて困るくらいであった。というのは、初めの<ruby><rb>五帝本紀</rb><rt>ごていほんぎ</rt></ruby>から<ruby><rb>夏殷周秦</rb><rt>かいんしゅうしん</rt></ruby>本紀あたりまでは、彼も、材料を<ruby><rb>按排</rb><rt>あんばい</rt></ruby>して記述の正確厳密を期する一人の技師に過ぎなかったのだが、<persName ref="#shikotei">始皇帝</persName>を経て、<persName ref="#kou"><ruby><rb>項羽</rb><rt>こうう</rt></ruby></persName>本紀にはいるころから、その技術家の冷静さが怪しくなってきた。ともすれば、<persName ref="#kou">項羽</persName>が彼に、あるいは彼が<persName ref="#kou">項羽</persName>にのり移りかねないのである。</p>
+        <p><persName ref="#kou">項王</persName><ruby><rb>則</rb><rt>すなわ</rt></ruby>チ夜起キテ帳中ニ飲ス。美人有リ。名ハ<persName ref="#gubijin"><ruby><rb>虞</rb><rt>ぐ</rt></ruby></persName>。常ニ幸セラレテ従フ。<ruby><rb>駿馬</rb><rt>しゅんめ</rt></ruby>名ハ<persName ref="#sui"><ruby><rb>騅</rb><rt>すい</rt></ruby></persName>、常ニ<ruby><rb>之</rb><rt>これ</rt></ruby>ニ騎ス。<ruby><rb>是</rb><rt>ここ</rt></ruby>ニ<ruby><rb>於</rb><rt>おい</rt></ruby>テ<persName ref="#kou">項王</persName><ruby><rb>乃</rb><rt>すなわ</rt></ruby>チ悲歌<ruby><rb>慷慨</rb><rt>こうがい</rt></ruby>シ自ラ詩ヲ<ruby><rb>為</rb><rt>つく</rt></ruby>リテ<ruby><rb>曰</rb><rt>いわ</rt></ruby>ク「力山ヲ抜キ気世ヲ<ruby><rb>蓋</rb><rt>おお</rt></ruby>フ、時利アラズ<persName ref="#sui">騅</persName><ruby><rb>逝</rb><rt>ゆ</rt></ruby>カズ、<persName ref="#sui">騅</persName>逝カズ<ruby><rb>奈何</rb><rt>いかん</rt></ruby>スベキ、<persName ref="#gubijin">虞</persName>ヤ<persName ref="#gubijin">虞</persName>ヤ<ruby><rb>若</rb><rt>なんじ</rt></ruby>ヲ<ruby><rb>奈何</rb><rt>いか</rt></ruby>ニセン」ト。歌フコト数<ruby><rb>闋</rb><rt>けつ</rt></ruby>、美人之ニ和ス。<persName ref="#kou">項王</persName><ruby><rb>泣</rb><rt>なみだ</rt></ruby>数行下ル。左右皆泣キ、<ruby><rb>能</rb><rt>よ</rt></ruby>ク仰ギ<ruby><rb>視</rb><rt>み</rt></ruby>ルモノ<ruby><rb>莫</rb><rt>な</rt></ruby>シ……。</p>
+        <p>これでいいのか？　と<persName ref="#shibasen">司馬遷</persName>は疑う。こんな熱に浮かされたような書きっぷりでいいものだろうか？　彼は「作ル」ことを極度に警戒した。自分の仕事は「述ベル」ことに尽きる。事実、彼は述べただけであった。しかしなんと生気<ruby><rb>溌剌</rb><rt>はつらつ</rt></ruby>たる述べ方であったか？　異常な想像的視覚を<ruby><rb>有</rb><rt>も</rt></ruby>った者でなければとうてい不能な記述であった。彼は、ときに「作ル」ことを恐れるのあまり、すでに書いた部分を読返してみて、それあるがために史上の人物が現実の人物のごとくに躍動すると思われる字句を削る。すると確かにその人物はハツラツたる呼吸を<ruby><rb>止</rb><rt>や</rt></ruby>める。これで、「作ル」ことになる心配はないわけである。しかし、（と<persName ref="#shibasen">司馬遷</persName>が思うに）これでは<persName ref="#kou"><ruby><rb>項羽</rb><rt>こうう</rt></ruby></persName>が<persName ref="#kou">項羽</persName>でなくなるではないか。<persName ref="#kou">項羽</persName>も<persName ref="#shikotei"><ruby><rb>始皇帝</rb><rt>しこうてい</rt></ruby></persName>も<placeName ref="#so"><ruby><rb>楚</rb><rt>そ</rt></ruby></placeName>の<persName ref="#soou"><ruby><rb>荘王</rb><rt>そうおう</rt></ruby></persName>もみな同じ人間になってしまう。違った人間を同じ人間として記述することが、何が「述べる」だ？　「述べる」とは、違った人間は違った人間として述べることではないか。そう考えてくると、やはり彼は削った字句をふたたび生かさないわけにはいかない。元どおりに直して、さて一読してみて、彼はやっと落ちつく。いや、彼ばかりではない。そこにかかれた史上の人物が、<persName ref="#kou">項羽</persName>や<persName ref="#hankai"><ruby><rb>樊噲</rb><rt>はんかい</rt></ruby></persName>や<persName ref="#hanzo"><ruby><rb>范増</rb><rt>はんぞう</rt></ruby></persName>が、みんなようやく安心してそれぞれの場所に落ちつくように思われる。</p>
+        <p>調子のよいときの<persName ref="#butei"><ruby><rb>武帝</rb><rt>ぶてい</rt></ruby></persName>は<ruby><rb>誠</rb><rt>まこと</rt></ruby>に<ruby><rb>高邁闊達</rb><rt>こうまいかったつ</rt></ruby>な・理解ある文教の保護者だったし、<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby>という職が地味な特殊な技能を要するものだったために、官界につきものの<ruby><rb>朋党比周</rb><rt>ほうとうひしゅう</rt></ruby>の<ruby><rb>擠陥讒誣</rb><rt>せいかんざんぶ</rt></ruby>による地位（あるいは生命）の不安定からも免れることができた。</p>
+        <p>数年の間、<persName ref="#shibasen">司馬遷</persName>は充実した・幸福といっていい日々を送った。（当時の人間の考える幸福とは、現代人のそれと、ひどく内容の違うものだったが、それを求めることに変わりはない。）妥協性はなかったが、どこまでも陽性で、よく論じよく怒りよく笑いなかんずく論敵を<ruby><rb>完膚</rb><rt>かんぷ</rt></ruby>なきまでに説破することを最も得意としていた。</p>
+        <p>さて、そうした数年ののち、突然、この<ruby><rb>禍</rb><rt>わざわい</rt></ruby>が<ruby><rb>降</rb><rt>くだ</rt></ruby>ったのである。</p>
+        <p>薄暗い<ruby><rb>蚕室</rb><rt>さんしつ</rt></ruby>の中で――<ruby><rb>腐刑</rb><rt>ふけい</rt></ruby>施術後当分の間は風に当たることを避けねばならぬので、中に火を<ruby><rb>熾</rb><rt>おこ</rt></ruby>して暖かに保った・密閉した暗室を作り、そこに施術後の受刑者を数日の間入れて、身体を養わせる。暖かく暗いところが蚕を飼う部屋に似ているとて、それを蚕室と名づけるのである。――言語を絶した混乱のあまり彼は<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>と壁によりかかった。憤激よりも先に、驚きのようなものさえ感じていた。<ruby><rb>斬</rb><rt>ざん</rt></ruby>に<ruby><rb>遭</rb><rt>あ</rt></ruby>うこと、死を<ruby><rb>賜</rb><rt>たま</rt></ruby>うことに対してなら、彼にはもとより平生から覚悟ができている。<ruby><rb>刑死</rb><rt>けいし</rt></ruby>する<ruby><rb>己</rb><rt>おのれ</rt></ruby>の姿なら想像してみることもできるし、<persName ref="#butei">武帝</persName>の気に逆らって<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>を<ruby><rb>褒</rb><rt>ほ</rt></ruby>め上げたときもまかりまちがえば死を賜うようなことになるかもしれぬくらいの<ruby><rb>懸念</rb><rt>けねん</rt></ruby>は自分にもあったのである。ところが、刑罰も数ある中で、よりによって最も<ruby><rb>醜陋</rb><rt>しゅうろう</rt></ruby>な<ruby><rb>宮刑</rb><rt>きゅうけい</rt></ruby>にあおうとは！　<ruby><rb>迂闊</rb><rt>うかつ</rt></ruby>といえば迂闊だが、（というのは、死刑を予期するくらいなら当然、他のあらゆる刑罰も予期しなければならないわけだから）彼は自分の運命の中に、不測の死が待受けているかもしれぬとは考えていたけれども、このような醜いものが突然現われようとは、全然、頭から考えもしなかったのである。常々、彼は、人間にはそれぞれその人間にふさわしい事件しか起こらないのだという一種の確信のようなものを<ruby><rb>有</rb><rt>も</rt></ruby>っていた。これは長い間史実を扱っているうちに自然に養われた考えであった。同じ逆境にしても、<ruby><rb>慷慨</rb><rt>こうがい</rt></ruby>の士には激しい痛烈な苦しみが、軟弱の<ruby><rb>徒</rb><rt>と</rt></ruby>には緩慢なじめじめした醜い苦しみが、というふうにである。たとえ始めは一見ふさわしくないように見えても、少なくともその後の対処のし方によってその運命はその人間にふさわしいことが<ruby><rb>判</rb><rt>わか</rt></ruby>ってくるのだと。<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>は自分を男だと信じていた。文筆の<ruby><rb>吏</rb><rt>り</rt></ruby>ではあっても当代のいかなる<ruby><rb>武人</rb><rt>ぶじん</rt></ruby>よりも男であることを確信していた。自分でばかりではない。このことだけは、いかに彼に好意を寄せぬ者でも認めないわけにはいかないようであった。それゆえ、彼は自らの持論に従って、<ruby><rb>車裂</rb><rt>くるまざき</rt></ruby>の刑なら自分の行く手に思い<ruby><rb>画</rb><rt>えが</rt></ruby>くことができたのである。それが<ruby><rb>齢</rb><rt>よわい</rt></ruby>五十に近い身で、この<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめにあおうとは！　彼は、今自分が<ruby><rb>蚕室</rb><rt>さんしつ</rt></ruby>の中にいるということが夢のような気がした。夢だと思いたかった。しかし、壁によって閉じていた目を開くと、うす暗い中に、生気のない・魂までが抜けたような顔をした男が三、四人、だらしなく横たわったりすわったりしているのが目にはいった。あの姿が、つまり今の己なのだと思ったとき、<ruby><rb>嗚咽</rb><rt>おえつ</rt></ruby>とも<ruby><rb>怒号</rb><rt>どごう</rt></ruby>ともつかない叫びが彼の<ruby><rb>咽喉</rb><rt>のど</rt></ruby>を破った。</p>
+        <p>痛憤と<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>との数日のうちには、ときに、学者としての彼の習慣からくる思索が――反省が来た。いったい、今度の出来事の中で、何が――誰が――誰のどういうところが、悪かったのだという考えである。<placeName ref="#nihon">日本</placeName>の君臣道とは<ruby><rb>根柢</rb><rt>こんてい</rt></ruby>から異なった<ruby><rb>彼</rb><rt>か</rt></ruby>の国のこととて、当然、彼はまず、<persName ref="#butei">武帝</persName>を<ruby><rb>怨</rb><rt>うら</rt></ruby>んだ。一時はその<ruby><rb>怨懣</rb><rt>えんまん</rt></ruby>だけで、いっさい他を顧みる余裕はなかったというのが実際であった。しかし、しばらくの狂乱の時期の過ぎたあとには、歴史家としての彼が、目覚めてきた。<ruby><rb>儒者</rb><rt>じゅしゃ</rt></ruby>と違って、先王の価値にも歴史家的な割引をすることを知っていた彼は、後王たる<persName ref="#butei">武帝</persName>の評価の上にも、<ruby><rb>私怨</rb><rt>しえん</rt></ruby>のために狂いを来たさせることはなかった。なんといっても<persName ref="#butei">武帝</persName>は大君主である。そのあらゆる欠点にもかかわらず、この君がある限り、漢の天下は微動だもしない。<persName ref="#koso">高祖</persName>はしばらく<ruby><rb>措</rb><rt>お</rt></ruby>くとするも、<ruby><rb>仁君</rb><rt>じんくん</rt></ruby><persName ref="#buntei"><ruby><rb>文帝</rb><rt>ぶんてい</rt></ruby></persName>も名君<persName ref="#keitei"><ruby><rb>景帝</rb><rt>けいてい</rt></ruby></persName>も、この君に比べれば、やはり小さい。ただ大きいものは、その欠点までが大きく写ってくるのは、これはやむを得ない。<persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>は極度の<ruby><rb>憤怨</rb><rt>ふんえん</rt></ruby>のうちにあってもこのことを忘れてはいない。今度のことは要するに天の<ruby><rb>作</rb><rt>な</rt></ruby>せる疾風暴雨<ruby><rb>霹靂</rb><rt>へきれき</rt></ruby>に見舞われたものと思うほかはないという考えが、彼をいっそう絶望的な<ruby><rb>憤</rb><rt>いきどお</rt></ruby>りへと<ruby><rb>駆</rb><rt>か</rt></ruby>ったが、また一方、逆に<ruby><rb>諦観</rb><rt>ていかん</rt></ruby>へも向かわせようとする。<ruby><rb>怨恨</rb><rt>えんこん</rt></ruby>が長く君主に向かい得ないとなると、勢い、君側の<ruby><rb>姦臣</rb><rt>かんしん</rt></ruby>に向けられる。彼らが悪い。たしかにそうだ。しかし、この悪さは、すこぶる副次的な悪さである。それに、<ruby><rb>自矜心</rb><rt>じきょうしん</rt></ruby>の高い彼にとって、彼ら<ruby><rb>小人輩</rb><rt>しょうじんはい</rt></ruby>は、怨恨の対象としてさえ物足りない気がする。彼は、今度ほど好人物というものへの腹立ちを感じたことはない。これは<ruby><rb>姦臣</rb><rt>かんしん</rt></ruby>や<ruby><rb>酷吏</rb><rt>こくり</rt></ruby>よりも始末が悪い。少なくとも<ruby><rb>側</rb><rt>かたわら</rt></ruby>から見ていて腹が立つ。良心的に安っぽく安心しており、他にも安心させるだけ、いっそう<ruby><rb>怪</rb><rt>け</rt></ruby>しからぬのだ。弁護もしなければ<ruby><rb>反駁</rb><rt>はんばく</rt></ruby>もせぬ。心中、反省もなければ自責もない。<ruby><rb>丞相</rb><rt>じょうしょう</rt></ruby><persName ref="#kosonga"><ruby><rb>公孫賀</rb><rt>こうそんが</rt></ruby></persName>のごとき、その代表的なものだ。同じ<ruby><rb>阿諛</rb><rt>あゆ</rt></ruby><ruby><rb>迎合</rb><rt>げいごう</rt></ruby>を事としても、<persName ref="#toshu"><ruby><rb>杜周</rb><rt>としゅう</rt></ruby></persName>（最近この男は前任者<persName ref="#okyo"><ruby><rb>王卿</rb><rt>おうけい</rt></ruby></persName>を陥れてまんまと<ruby><rb>御史大夫</rb><rt>ぎょしたいふ</rt></ruby>となりおおせた）のような<ruby><rb>奴</rb><rt>やつ</rt></ruby>は自らそれと知っているに違いないがこのお人好しの丞相ときた日には、その自覚さえない。自分に<ruby><rb>全躯保妻子</rb><rt>くをまっとうしさいしをたもつ</rt></ruby>の臣といわれても、こういう手合いは、腹も立てないのだろう。こんな手合いは恨みを向けるだけの値打ちさえもない。</p>
+        <p><persName ref="#shibasen">司馬遷</persName>は最後に<ruby><rb>忿懣</rb><rt>ふんまん</rt></ruby>の持って行きどころを自分に求めようとする。実際、何ものかに対して腹を立てなければならぬとすれば、結局それは自分自身に対してのほかはなかったのである。だが、自分のどこが悪かったのか？　<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>のために弁じたこと、これはいかに考えてみてもまちがっていたとは思えない。方法的にも格別<ruby><rb>拙</rb><rt>まず</rt></ruby>かったとは考えぬ。<ruby><rb>阿諛</rb><rt>あゆ</rt></ruby>に<ruby><rb>堕</rb><rt>だ</rt></ruby>するに甘んじないかぎり、あれはあれでどうしようもない。それでは、自ら顧みてやましくなければ、そのやましくない行為が、どのような結果を来たそうとも、士たる者はそれを<ruby><rb>甘受</rb><rt>かんじゅ</rt></ruby>しなければならないはずだ。なるほどそれは一応そうに違いない。だから自分も<ruby><rb>肢解</rb><rt>しかい</rt></ruby>されようと<ruby><rb>腰斬</rb><rt>ようざん</rt></ruby>にあおうと、そういうものなら甘んじて受けるつもりなのだ。しかし、この<ruby><rb>宮刑</rb><rt>きゅうけい</rt></ruby>は――その結果かく成り果てたわが身の有様というものは、――これはまた別だ。同じ不具でも足を切られたり鼻を切られたりするのとは全然違った種類のものだ。士たる者の加えられるべき刑ではない。こればかりは、身体のこういう状態というものは、どういう角度から見ても、完全な悪だ。<ruby><rb>飾言</rb><rt>しょくげん</rt></ruby>の余地はない。そうして、心の傷だけならば時とともに<ruby><rb>癒</rb><rt>い</rt></ruby>えることもあろうが、<ruby><rb>己</rb><rt>おの</rt></ruby>が身体のこの醜悪な現実は死に至るまでつづくのだ。動機がどうあろうと、このような結果を招くものは、結局「悪かった」といわなければならぬ。しかし、どこが悪かった？　<ruby><rb>己</rb><rt>おのれ</rt></ruby>のどこが？　どこも悪くなかった。己は正しいことしかしなかった。<ruby><rb>強</rb><rt>し</rt></ruby>いていえば、ただ、「我あり」という事実だけが悪かったのである。</p>
+        <p><ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>とした<ruby><rb>虚脱</rb><rt>きょだつ</rt></ruby>の状態ですわっていたかと思うと、突然飛上り、傷ついた獣のごとくうめきながら暗く暖かい室の中を歩き<ruby><rb>廻</rb><rt>まわ</rt></ruby>る。そうしたしぐさを無意識に繰返しつつ、彼の考えもまた、いつも同じ所をぐるぐる廻ってばかりいて帰結するところを知らないのである。</p>
+        <p>我を忘れ壁に頭を打ちつけて血を流したその数回を除けば、彼は自らを殺そうと試みなかった。死にたかった。死ねたらどんなによかろう。それよりも数等恐ろしい恥辱が追立てるのだから死をおそれる気持は全然なかった。なぜ死ねなかったのか？　獄舎の中に、自らを殺すべき道具のなかったことにもよろう。しかし、それ以外に何かが内から彼をとめる。はじめ、彼はそれがなんであるかに気づかなかった。ただ狂乱と<ruby><rb>憤懣</rb><rt>ふんまん</rt></ruby>との中で、たえず<ruby><rb>発作</rb><rt>ほっさ</rt></ruby>的に死への誘惑を感じたにもかかわらず、一方彼の気持を自殺のほうへ向けさせたがらないものがあるのを<ruby><rb>漠然</rb><rt>ばくぜん</rt></ruby>と感じていた。何を忘れたのかはハッキリしないながら、とにかく何か忘れものをしたような気のすることがある。ちょうどそんなぐあいであった。</p>
+        <p>許されて自宅に帰り、そこで<ruby><rb>謹慎</rb><rt>きんしん</rt></ruby>するようになってから、はじめて、彼は、自分がこの<ruby><rb>一</rb><rt>ひと</rt></ruby>月狂乱にとり<ruby><rb>紛</rb><rt>まぎ</rt></ruby>れて<ruby><rb>己</rb><rt>おの</rt></ruby>が<ruby><rb>畢生</rb><rt>ひっせい</rt></ruby>の事業たる<ruby><rb>修史</rb><rt>しゅうし</rt></ruby>のことを忘れ果てていたこと、しかし、表面は忘れていたにもかかわらず、その仕事への無意識の関心が彼を自殺から<ruby><rb>阻</rb><rt>はば</rt></ruby>む役目を<ruby><rb>隠々</rb><rt>いんいん</rt></ruby>のうちにつとめていたことに気がついた。</p>
+        <p>十年前<ruby><rb>臨終</rb><rt>りんじゅう</rt></ruby>の<ruby><rb>床</rb><rt>とこ</rt></ruby>で自分の手をとり泣いて<ruby><rb>遺命</rb><rt>いめい</rt></ruby>した父の<ruby><rb>惻々</rb><rt>そくそく</rt></ruby>たる言葉は、今なお<ruby><rb>耳底</rb><rt>じてい</rt></ruby>にある。しかし、今<ruby><rb>疾痛</rb><rt>しっつう</rt></ruby><ruby><rb>惨怛</rb><rt>さんたん</rt></ruby>を<ruby><rb>極</rb><rt>きわ</rt></ruby>めた彼の心の中に<ruby><rb>在</rb><rt>あ</rt></ruby>ってなお修史の仕事を思い絶たしめないものは、その父の言葉ばかりではなかった。それは何よりも、その仕事そのものであった。仕事の魅力とか仕事への情熱とかいう<ruby><rb>怡</rb><rt>たの</rt></ruby>しい<ruby><rb>態</rb><rt>てい</rt></ruby>のものではない。修史という使命の自覚には違いないとしてもさらに<ruby><rb>昂然</rb><rt>こうぜん</rt></ruby>として自らを<ruby><rb>恃</rb><rt>じ</rt></ruby>する自覚ではない。恐ろしく<ruby><rb>我</rb><rt>が</rt></ruby>の強い男だったが、今度のことで、<ruby><rb>己</rb><rt>おのれ</rt></ruby>のいかにとるに足らぬものだったかをしみじみと考えさせられた。理想の抱負のと<ruby><rb>威張</rb><rt>いば</rt></ruby>ってみたところで、<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>己は牛にふみつぶされる<ruby><rb>道傍</rb><rt>みちばた</rt></ruby>の虫けらのごときものにすぎなかったのだ。「我」はみじめに踏みつぶされたが、修史という仕事の意義は疑えなかった。このような浅ましい身と成り果て、自信も<ruby><rb>自恃</rb><rt>じじ</rt></ruby>も失いつくしたのち、それでもなお世にながらえてこの仕事に従うということは、どう考えても<ruby><rb>怡</rb><rt>たの</rt></ruby>しいわけはなかった。それはほとんど、いかにいとわしくとも最後までその関係を絶つことの許されない人間同士のような宿命的な<ruby><rb>因縁</rb><rt>いんねん</rt></ruby>に近いものと、彼自身には感じられた。とにかくこの仕事のために自分は自らを殺すことができぬのだ（それも義務感からではなく、もっと肉体的な、この仕事との<ruby><rb>繋</rb><rt>つな</rt></ruby>がりによってである）ということだけはハッキリしてきた。</p>
+        <p>当座の盲目的な獣の<ruby><rb>呻</rb><rt>うめ</rt></ruby>き苦しみに代わって、より意識的な・人間の苦しみが始まった。困ったことに、自殺できないことが明らかになるにつれ、自殺によってのほかに苦悩と恥辱とから逃れる<ruby><rb>途</rb><rt>みち</rt></ruby>のないことがますます明らかになってきた。一個の<ruby><rb>丈夫</rb><rt>じょうふ</rt></ruby>たる<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby><persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>は<date when="-0097"><ruby><rb>天漢</rb><rt>てんかん</rt></ruby>三年</date>の春に死んだ。そして、そののちに、彼の書残した史をつづける者は、知覚も意識もない一つの書写機械にすぎぬ、――自らそう思い込む以外に<ruby><rb>途</rb><rt>みち</rt></ruby>はなかった。無理でも、彼はそう思おうとした。修史の仕事は必ず続けられねばならぬ。これは彼にとって絶対であった。修史の仕事のつづけられるためには、いかにたえがたくとも生きながらえねばならぬ。生きながらえるためには、どうしても、完全に身を<ruby><rb>亡</rb><rt>な</rt></ruby>きものと思い込む必要があったのである。</p>
+        <p><ruby><rb>五</rb><rt>いつ</rt></ruby>月ののち、<persName ref="#shibasen">司馬遷</persName>はふたたび筆を<ruby><rb>執</rb><rt>と</rt></ruby>った。<ruby><rb>歓</rb><rt>よろこ</rt></ruby>びも<ruby><rb>昂奮</rb><rt>こうふん</rt></ruby>もない・ただ仕事の完成への意志だけに<ruby><rb>鞭打</rb><rt>むちう</rt></ruby>たれて、傷ついた脚を<ruby><rb>引摺</rb><rt>ひきず</rt></ruby>りながら目的地へ向かう旅人のように、とぼとぼと稿を継いでいく。もはや太史令の役は免ぜられていた。<ruby><rb>些</rb><rt>いささ</rt></ruby>か後悔した<persName ref="#butei">武帝</persName>が、しばらく後に彼を<ruby><rb>中書令</rb><rt>ちゅうしょれい</rt></ruby>に取立てたが、官職の<ruby><rb>黜陟</rb><rt>ちゅっちょく</rt></ruby>のごときは、彼にとってもうなんの意味もない。以前の論客<persName ref="#shibasen">司馬遷</persName>は、一切口を開かずなった。笑うことも怒ることもない。しかし、けっして<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>たる姿ではなかった。むしろ、何か<ruby><rb>悪霊</rb><rt>あくりょう</rt></ruby>にでも取り<ruby><rb>憑</rb><rt>つ</rt></ruby>かれているようなすさまじさを、人々は<ruby><rb>緘黙</rb><rt>かんもく</rt></ruby>せる彼の<ruby><rb>風貌</rb><rt>ふうぼう</rt></ruby>の中に見て取った。夜眠る時間をも惜しんで彼は仕事をつづけた。一刻も早く仕事を完成し、そのうえで早く自殺の自由を得たいとあせっているもののように、家人らには思われた。</p>
+        <p><ruby><rb>凄惨</rb><rt>せいさん</rt></ruby>な努力を一年ばかり続けたのち、ようやく、生きることの<ruby><rb>歓</rb><rt>よろこ</rt></ruby>びを失いつくしたのちもなお表現することの歓びだけは生残りうるものだということを、彼は発見した。しかし、そのころになってもまだ、彼の完全な沈黙は破られなかったし、<ruby><rb>風貌</rb><rt>ふうぼう</rt></ruby>の中のすさまじさも全然<ruby><rb>和</rb><rt>やわ</rt></ruby>らげられはしない。稿をつづけていくうちに、<ruby><rb>宦者</rb><rt>かんじゃ</rt></ruby>とか<ruby><rb>閹奴</rb><rt>えんど</rt></ruby>とかいう文字を書かなければならぬところに来ると、彼は覚えず<ruby><rb>呻</rb><rt>うめ</rt></ruby>き声を発した。独り居室にいるときでも、夜、<ruby><rb>牀上</rb><rt>しょうじょう</rt></ruby>に横になったときでも、ふとこの屈辱の思いが<ruby><rb>萌</rb><rt>きざ</rt></ruby>してくると、たちまちカーッと、<ruby><rb>焼鏝</rb><rt>やきごて</rt></ruby>をあてられるような熱い<ruby><rb>疼</rb><rt>うず</rt></ruby>くものが全身を<ruby><rb>駈</rb><rt>か</rt></ruby>けめぐる。彼は思わず飛上り、奇声を発し、呻きつつ<ruby><rb>四辺</rb><rt>あたり</rt></ruby>を歩きまわり、さてしばらくしてから歯をくいしばって<ruby><rb>己</rb><rt>おのれ</rt></ruby>を落ちつけようと努めるのである。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p>乱軍の中に気を失った<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>が<ruby><rb>獣脂</rb><rt>じゅうし</rt></ruby>を<ruby><rb>灯</rb><rt>とも</rt></ruby>し<ruby><rb>獣糞</rb><rt>じゅうふん</rt></ruby>を<ruby><rb>焚</rb><rt>た</rt></ruby>いた<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の<ruby><rb>帳房</rb><rt>ちょうぼう</rt></ruby>の中で目を覚ましたとき、<ruby><rb>咄嗟</rb><rt>とっさ</rt></ruby>に彼は心を決めた。<ruby><rb>自</rb><rt>みずか</rt></ruby>ら首<ruby><rb>刎</rb><rt>は</rt></ruby>ねて<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめを免れるか、それとも今一応は敵に従っておいてそのうちに機を見て脱走する――敗軍の責を<ruby><rb>償</rb><rt>つぐな</rt></ruby>うに足る手柄を<ruby><rb>土産</rb><rt>みやげ</rt></ruby>として――か、この二つのほかに<ruby><rb>途</rb><rt>みち</rt></ruby>はないのだが、<persName ref="#riryo">李陵</persName>は、後者を選ぶことに心を決めたのである。</p>
+        <p><ruby><rb>単于</rb><rt>ぜんう</rt></ruby>は手ずから<persName ref="#riryo">李陵</persName>の<ruby><rb>縄</rb><rt>なわ</rt></ruby>を解いた。その後の待遇も<ruby><rb>鄭重</rb><rt>ていちょう</rt></ruby>を極めた。<persName ref="#shoteiko-zenu"><ruby><rb>且鞮侯</rb><rt>そていこう</rt></ruby>単于</persName>とて先代の<persName ref="#kuriko-zenu"><ruby><rb>呴犁湖</rb><rt>くりこ</rt></ruby>単于</persName>の弟だが、<ruby><rb>骨骼</rb><rt>こっかく</rt></ruby>の<ruby><rb>逞</rb><rt>たくま</rt></ruby>しい<ruby><rb>巨眼</rb><rt>きょがん</rt></ruby><ruby><rb>赭髯</rb><rt>しゃぜん</rt></ruby>の中年の<ruby><rb>偉丈夫</rb><rt>いじょうふ</rt></ruby>である。数代の単于に従って<ruby><rb>漢</rb><rt>かん</rt></ruby>と戦ってはきたが、まだ<persName ref="#riryo">李陵</persName>ほどの<ruby><rb>手強</rb><rt>てごわ</rt></ruby>い敵に<ruby><rb>遭</rb><rt>あ</rt></ruby>ったことはないと正直に語り、陵の祖父<persName ref="#riko"><ruby><rb>李広</rb><rt>りこう</rt></ruby></persName>の名を引合いに出して陵の善戦を<ruby><rb>讃</rb><rt>ほ</rt></ruby>めた。<ruby><rb>虎</rb><rt>とら</rt></ruby>を<ruby><rb>格殺</rb><rt>かくさつ</rt></ruby>したり岩に矢を立てたりした<persName ref="#riko"><ruby><rb>飛将軍</rb><rt>ひしょうぐん</rt></ruby></persName><persName ref="#riko">李広</persName>の<ruby><rb>驍名</rb><rt>ぎょうめい</rt></ruby>は今もなお<ruby><rb>胡地</rb><rt>こち</rt></ruby>にまで語り伝えられている。陵が厚遇を受けるのは、彼が強き者の子孫でありまた彼自身も強かったからである。食を<ruby><rb>頒</rb><rt>わ</rt></ruby>けるときも強壮者が美味をとり老弱者に余り物を与えるのが<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>のふうであった。ここでは、強き者が<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめられることはけっしてない。降将<persName ref="#riryo">李陵</persName>は一つの<ruby><rb>穹盧</rb><rt>きゅうろ</rt></ruby>と数十人の<ruby><rb>侍者</rb><rt>じしゃ</rt></ruby>とを与えられ<ruby><rb>賓客</rb><rt>ひんきゃく</rt></ruby>の礼をもって<ruby><rb>遇</rb><rt>ぐう</rt></ruby>せられた。</p>
+        <p><persName ref="#riryo">李陵</persName>にとって奇異な生活が始まった。家は<ruby><rb>絨帳</rb><rt>じゅうちょう</rt></ruby><ruby><rb>穹盧</rb><rt>きゅうろ</rt></ruby>、食物は<ruby><rb>羶肉</rb><rt>せんにく</rt></ruby>、飲物は<ruby><rb>酪漿</rb><rt>らくしょう</rt></ruby>と獣乳と<ruby><rb>乳醋酒</rb><rt>にゅうさくしゅ</rt></ruby>。着物は<ruby><rb>狼</rb><rt>おおかみ</rt></ruby>や羊や<ruby><rb>熊</rb><rt>くま</rt></ruby>の皮を<ruby><rb>綴</rb><rt>つづ</rt></ruby>り合わせた<ruby><rb>旃裘</rb><rt>せんきゅう</rt></ruby>。牧畜と狩猟と<ruby><rb>寇掠</rb><rt>こうりゃく</rt></ruby>と、このほかに彼らの生活はない。<ruby><rb>一望際涯</rb><rt>いちぼうさいがい</rt></ruby>のない高原にも、しかし、河や湖や山々による境界があって、<ruby><rb>単于</rb><rt>ぜんう</rt></ruby><ruby><rb>直轄地</rb><rt>ちょっかつち</rt></ruby>のほかは<ruby><rb>左賢王</rb><rt>さけんおう</rt></ruby>右賢王<ruby><rb>左谷蠡王</rb><rt>さろくりおう</rt></ruby>右谷蠡王以下の諸王侯の領地に分けられており、牧民の移住はおのおのその境界の中に限られているのである。城郭もなければ田畑もない国。村落はあっても、それが季節に従い水草を<ruby><rb>逐</rb><rt>お</rt></ruby>って土地を変える。</p>
+        <p><persName ref="#riryo">李陵</persName>には土地は与えられない。単于<ruby><rb>麾下</rb><rt>きか</rt></ruby>の諸将とともにいつも単于に従っていた。<ruby><rb>隙</rb><rt>すき</rt></ruby>があったら単于の首でも、と<persName ref="#riryo">李陵</persName>は<ruby><rb>狙</rb><rt>ねら</rt></ruby>っていたが、容易に機会が来ない。たとい、単于を討果たしたとしても、その首を持って脱出することは、非常な機会に恵まれないかぎり、まず不可能であった。<ruby><rb>胡地</rb><rt>こち</rt></ruby>にあって単于と刺違えたのでは、<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>は<ruby><rb>己</rb><rt>おのれ</rt></ruby>の不名誉を<ruby><rb>有耶無耶</rb><rt>うやむや</rt></ruby>のうちに葬ってしまうこと<ruby><rb>必定</rb><rt>ひつじょう</rt></ruby>ゆえ、おそらく漢に聞こえることはあるまい。<persName ref="#riryo">李陵</persName>は<ruby><rb>辛抱強</rb><rt>しんぼうづよ</rt></ruby>く、その不可能とも思われる機会の到来を待った。</p>
+        <p><ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の<ruby><rb>幕下</rb><rt>ばっか</rt></ruby>には、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>のほかにも漢の<ruby><rb>降人</rb><rt>こうじん</rt></ruby>が幾人かいた。その中の一人、<persName ref="#eiritsu"><ruby><rb>衛律</rb><rt>えいりつ</rt></ruby></persName>という男は軍人ではなかったが、<ruby><rb>丁霊王</rb><rt>ていれいおう</rt></ruby>の位を<ruby><rb>貰</rb><rt>もら</rt></ruby>って最も重く単于に用いられている。その父は<ruby><rb>胡人</rb><rt>こじん</rt></ruby>だが、<ruby><rb>故</rb><rt>ゆえ</rt></ruby>あって<persName ref="#eiritsu">衛律</persName>は漢の都で生まれ成長した。<persName ref="#butei">武帝</persName>に仕えていたのだが、先年<ruby><rb>協律都尉</rb><rt>きょうりつとい</rt></ruby><persName ref="#riennen"><ruby><rb>李延年</rb><rt>りえんねん</rt></ruby></persName>の事に<ruby><rb>坐</rb><rt>ざ</rt></ruby>するのを<ruby><rb>懼</rb><rt>おそ</rt></ruby>れて、<ruby><rb>亡</rb><rt>に</rt></ruby>げて<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>に<ruby><rb>帰</rb><rt>き</rt></ruby>したのである。血が血だけに<ruby><rb>胡風</rb><rt>こふう</rt></ruby>になじむことも速く、相当の才物でもあり、常に<persName ref="#shoteiko-zenu"><ruby><rb>且鞮侯</rb><rt>そていこう</rt></ruby><ruby><rb>単于</rb><rt>ぜんう</rt></ruby></persName>の<ruby><rb>帷幄</rb><rt>いあく</rt></ruby>に参じてすべての画策に<ruby><rb>与</rb><rt>あず</rt></ruby>かっていた。<persName ref="#riryo">李陵</persName>はこの<persName ref="#eiritsu">衛律</persName>を始め、<ruby><rb>漢人</rb><rt>かんじん</rt></ruby>の<ruby><rb>降</rb><rt>くだ</rt></ruby>って匈奴の中にあるものと、ほとんど口をきかなかった。彼の頭の中にある計画について事をともにすべき人物がいないと思われたのである。そういえば、他の漢人同士の間でもまた、互いに妙に気まずいものを感じるらしく、相互に親しく交わることがないようであった。</p>
+        <p>一度単于は<persName ref="#riryo">李陵</persName>を呼んで軍略上の示教を<ruby><rb>乞</rb><rt>こ</rt></ruby>うたことがある。それは<ruby><rb>東胡</rb><rt>とうこ</rt></ruby>に対しての戦いだったので、陵は快く<ruby><rb>己</rb><rt>おの</rt></ruby>が意見を述べた。次に単于が同じような相談を持ちかけたとき、それは漢軍に対する策戦についてであった。<persName ref="#riryo">李陵</persName>はハッキリと<ruby><rb>嫌</rb><rt>いや</rt></ruby>な表情をしたまま口を開こうとしなかった。単于も<ruby><rb>強</rb><rt>し</rt></ruby>いて返答を求めようとしなかった。それからだいぶ久しくたったころ、代・<placeName ref="#jogun">上郡</placeName>を<ruby><rb>寇掠</rb><rt>こうりゃく</rt></ruby>する軍隊の一将として南行することを求められた。このときは、漢に対する戦いには出られない旨を言ってキッパリ断わった。<ruby><rb>爾後</rb><rt>じご</rt></ruby>、単于は陵にふたたびこうした要求をしなくなった。待遇は依然として変わらない。他に利用する目的はなく、ただ士を遇するために士を遇しているのだとしか思われない。とにかくこの単于は男だと<persName ref="#riryo">李陵</persName>は感じた。</p>
+        <p>単于の長子・<ruby><rb>左賢王</rb><rt>さけんおう</rt></ruby>が妙に<persName ref="#riryo">李陵</persName>に好意を示しはじめた。好意というより尊敬といったほうが近い。二十歳を越したばかりの・<ruby><rb>粗野</rb><rt>そや</rt></ruby>ではあるが勇気のある<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>な青年である。強き者への<ruby><rb>讃美</rb><rt>さんび</rt></ruby>が、実に純粋で強烈なのだ。初め<persName ref="#riryo">李陵</persName>のところへ来て<ruby><rb>騎射</rb><rt>きしゃ</rt></ruby>を教えてくれという。騎射といっても騎のほうは陵に劣らぬほど<ruby><rb>巧</rb><rt>うま</rt></ruby>い。ことに、<ruby><rb>裸馬</rb><rt>らば</rt></ruby>を駆る技術に至っては<ruby><rb>遙</rb><rt>はる</rt></ruby>かに陵を<ruby><rb>凌</rb><rt>しの</rt></ruby>いでいるので、<persName ref="#riryo">李陵</persName>はただ<ruby><rb>射</rb><rt>しゃ</rt></ruby>だけを教えることにした。<ruby><rb>左賢王</rb><rt>さけんおう</rt></ruby>は、熱心な弟子となった。陵の祖父<persName ref="#riko"><ruby><rb>李広</rb><rt>りこう</rt></ruby></persName>の射における<ruby><rb>入神</rb><rt>にゅうしん</rt></ruby>の技などを語るとき、<ruby><rb>蕃族</rb><rt>ばんぞく</rt></ruby>の青年は<ruby><rb>眸</rb><rt>ひとみ</rt></ruby>をかがやかせて熱心に聞入るのである。よく二人して狩猟に出かけた。ほんの<ruby><rb>僅</rb><rt>わず</rt></ruby>かの<ruby><rb>供廻</rb><rt>ともまわ</rt></ruby>りを連れただけで二人は縦横に<ruby><rb>曠野</rb><rt>こうや</rt></ruby>を<ruby><rb>疾駆</rb><rt>しっく</rt></ruby>しては<ruby><rb>狐</rb><rt>きつね</rt></ruby>や<ruby><rb>狼</rb><rt>おおかみ</rt></ruby>や<ruby><rb>羚羊</rb><rt>かもしか</rt></ruby>や<ruby><rb>鵰</rb><rt>おおとり</rt></ruby>や<ruby><rb>雉子</rb><rt>きじ</rt></ruby>などを射た。あるときなど夕暮れ近くなって矢も尽きかけた二人が――二人の馬は供の者を<ruby><rb>遙</rb><rt>はる</rt></ruby>かに<ruby><rb>駈抜</rb><rt>かけぬ</rt></ruby>いていたので――一群の狼に囲まれたことがある。馬に<ruby><rb>鞭</rb><rt>むち</rt></ruby>うち全速力で狼群の中を駈け抜けて逃れたが、そのとき、<persName ref="#riryo">李陵</persName>の馬の<ruby><rb>尻</rb><rt>しり</rt></ruby>に飛びかかった一匹を、後ろに駈けていた青年左賢王が<ruby><rb>彎刀</rb><rt>わんとう</rt></ruby>をもって<ruby><rb>見事</rb><rt>みごと</rt></ruby>に<ruby><rb>胴斬</rb><rt>どうぎ</rt></ruby>りにした。あとで調べると二人の馬は狼どもに<ruby><rb>噛</rb><rt>か</rt></ruby>み裂かれて血だらけになっていた。そういう一日ののち、夜、<ruby><rb>天幕</rb><rt>てんまく</rt></ruby>の中で今日の獲物を<ruby><rb>羹</rb><rt>あつもの</rt></ruby>の中にぶちこんでフウフウ吹きながら<ruby><rb>啜</rb><rt>すす</rt></ruby>るとき、<persName ref="#riryo">李陵</persName>は<ruby><rb>火影</rb><rt>ほかげ</rt></ruby>に顔を<ruby><rb>火照</rb><rt>ほて</rt></ruby>らせた若い<ruby><rb>蕃王</rb><rt>ばんおう</rt></ruby>の息子に、ふと友情のようなものをさえ感じることがあった。</p>
+        <p><date when="-0097">天漢三年</date>の秋に<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>がまたもや<placeName ref="#ganmon"><ruby><rb>雁門</rb><rt>がんもん</rt></ruby></placeName>を犯した。これに<ruby><rb>酬</rb><rt>むく</rt></ruby>いるとて、翌四年、漢は<persName ref="#rikori"><ruby><rb>弐師</rb><rt>じし</rt></ruby>将軍</persName><persName ref="#rikori"><ruby><rb>李広利</rb><rt>りこうり</rt></ruby></persName>に騎六万歩七万の大軍を<ruby><rb>授</rb><rt>さず</rt></ruby>けて<placeName ref="#sakuho"><ruby><rb>朔方</rb><rt>さくほう</rt></ruby></placeName>を出でしめ、歩卒一万を率いた<ruby><rb>強弩都尉</rb><rt>きょうどとい</rt></ruby><persName ref="#rohakutoku"><ruby><rb>路博徳</rb><rt>ろはくとく</rt></ruby></persName>にこれを<ruby><rb>援</rb><rt>たす</rt></ruby>けしめた。ひいて<ruby><rb>因杅</rb><rt>いんう</rt></ruby>将軍<persName ref="#kosongo"><ruby><rb>公孫敖</rb><rt>こうそんごう</rt></ruby></persName>は騎一万歩三万をもって<placeName ref="#ganmon">雁門</placeName>を、<ruby><rb>游撃</rb><rt>ゆうげき</rt></ruby>将軍<persName ref="#kansetsu"><ruby><rb>韓説</rb><rt>かんせつ</rt></ruby></persName>は歩三万をもって<placeName ref="#goen"><ruby><rb>五原</rb><rt>ごげん</rt></ruby></placeName>を、それぞれ進発する。近来にない大<ruby><rb>北伐</rb><rt>ほくばつ</rt></ruby>である。<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>はこの報に接するや、ただちに婦女、老幼、畜群、資財の類をことごとく<placeName ref="#kerulen"><ruby><rb>余吾水</rb><rt>しょごすい</rt></ruby></placeName>（<placeName ref="#kerulen">ケルレン河</placeName>）北方の地に移し、<ruby><rb>自</rb><rt>みずか</rt></ruby>ら十万の精騎を率いて<persName ref="#rikori"><ruby><rb>李広利</rb><rt>りこうり</rt></ruby></persName>・<persName ref="#rohakutoku"><ruby><rb>路博徳</rb><rt>ろはくとく</rt></ruby></persName>の軍を<ruby><rb>水南</rb><rt>すいなん</rt></ruby>の大草原に<ruby><rb>邀</rb><rt>むか</rt></ruby>え撃った。連戦十余日。漢軍はついに退くのやむなきに至った。<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>に師事する若き<ruby><rb>左賢王</rb><rt>さけんおう</rt></ruby>は、別に一隊を率いて東方に向かい<ruby><rb>因杅</rb><rt>いんう</rt></ruby>将軍を迎えてさんざんにこれを破った。漢軍の左翼たる<persName ref="#kansetsu"><ruby><rb>韓説</rb><rt>かんせつ</rt></ruby></persName>の軍もまた得るところなくして兵を引いた。北征は完全な失敗である。<persName ref="#riryo">李陵</persName>は例によって漢との戦いには陣頭に現われず、水北に退いていたが、左賢王の戦績をひそかに<ruby><rb>気遣</rb><rt>きづか</rt></ruby>っている<ruby><rb>己</rb><rt>おのれ</rt></ruby>を発見して<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>とした。もちろん、全体としては漢軍の成功と<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の敗戦とを望んでいたには違いないが、どうやら左賢王だけは何か負けさせたくないと感じていたらしい。<persName ref="#riryo">李陵</persName>はこれに気がついて激しく己を責めた。</p>
+        <p>その左賢王に打破られた<persName ref="#kosongo"><ruby><rb>公孫敖</rb><rt>こうそんごう</rt></ruby></persName>が都に帰り、士卒を多く失って功がなかったとの<ruby><rb>廉</rb><rt>かど</rt></ruby>で<ruby><rb>牢</rb><rt>ろう</rt></ruby>に<ruby><rb>繋</rb><rt>つな</rt></ruby>がれたとき、妙な弁解をした。敵の<ruby><rb>捕虜</rb><rt>ほりょ</rt></ruby>が、匈奴軍の強いのは、漢から<ruby><rb>降</rb><rt>くだ</rt></ruby>った<ruby><rb>李</rb><rt>り</rt></ruby>将軍が常々兵を練り軍略を授けてもって漢軍に備えさせているからだと言ったというのである。だからといって自軍が<ruby><rb>敗</rb><rt>ま</rt></ruby>けたことの弁解にはならないから、もちろん、<ruby><rb>因杅</rb><rt>いんう</rt></ruby>将軍の罪は許されなかったが、これを聞いた<persName ref="#butei">武帝</persName>が、<persName ref="#riryo">李陵</persName>に対し激怒したことは言うまでもない。一度許されて家に戻っていた陵の一族はふたたび<ruby><rb>獄</rb><rt>ごく</rt></ruby>に収められ、今度は、陵の老母から妻・子・弟に至るまでことごとく殺された。軽薄なる世人の常とて、当時<placeName ref="#rosei"><ruby><rb>隴西</rb><rt>ろうせい</rt></ruby></placeName>（<persName ref="#riryo">李陵</persName>の家は<placeName ref="#rosei">隴西</placeName>の出である）の<ruby><rb>士大夫</rb><rt>したいふ</rt></ruby>ら皆李家を出したことを恥としたと記されている。</p>
+        <p>この知らせが<persName ref="#riryo">李陵</persName>の耳に入ったのは半年ほど後のこと、辺境から<ruby><rb>拉致</rb><rt>らち</rt></ruby>された一<ruby><rb>漢卒</rb><rt>かんそつ</rt></ruby>の口からである。それを聞いたとき、<persName ref="#riryo">李陵</persName>は立上がってその男の<ruby><rb>胸倉</rb><rt>むなぐら</rt></ruby>をつかみ、荒々しくゆすぶりながら、事の真偽を今一度たしかめた。たしかにまちがいのないことを知ると、彼は歯をくい<ruby><rb>縛</rb><rt>しば</rt></ruby>り、思わず力を両手にこめた。男は身をもがいて、<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>の<ruby><rb>呻</rb><rt>うめ</rt></ruby>きを<ruby><rb>洩</rb><rt>も</rt></ruby>らした。<ruby><rb>陵</rb><rt>りょう</rt></ruby>の手が無意識のうちにその男の<ruby><rb>咽喉</rb><rt>いんこう</rt></ruby>を<ruby><rb>扼</rb><rt>やく</rt></ruby>していたのである。陵が手を離すと、男はバッタリ地に倒れた。その姿に目もやらず、陵は<ruby><rb>帳房</rb><rt>ちょうぼう</rt></ruby>の外へ飛出した。</p>
+        <p>めちゃくちゃに彼は野を歩いた。激しい憤りが頭の中で<ruby><rb>渦</rb><rt>うず</rt></ruby>を巻いた。老母や幼児のことを考えると心は<ruby><rb>灼</rb><rt>や</rt></ruby>けるようであったが、涙は一滴も出ない。あまりに強い怒りは涙を<ruby><rb>涸渇</rb><rt>こかつ</rt></ruby>させてしまうのであろう。</p>
+        <p>今度の場合には限らぬ。今まで我が一家はそもそも漢から、どのような扱いを受けてきたか？　彼は祖父の<persName ref="#riko"><ruby><rb>李広</rb><rt>りこう</rt></ruby></persName>の<ruby><rb>最期</rb><rt>さいご</rt></ruby>を思った。（陵の父、<persName ref="#ritoko"><ruby><rb>当戸</rb><rt>とうこ</rt></ruby></persName>は、彼が生まれる数か月前に死んだ。陵はいわゆる、遺腹の児である。だから、少年時代までの彼を教育し鍛えあげたのは、有名なこの祖父であった。）名将<persName ref="#riko">李広</persName>は数次の北征に大功を<ruby><rb>樹</rb><rt>た</rt></ruby>てながら、君側の<ruby><rb>姦佞</rb><rt>かんねい</rt></ruby>に妨げられて何一つ恩賞にあずからなかった。部下の諸将がつぎつぎに<ruby><rb>爵位</rb><rt>しゃくい</rt></ruby><ruby><rb>封侯</rb><rt>ほうこう</rt></ruby>を得て行くのに、<ruby><rb>廉潔</rb><rt>れんけつ</rt></ruby>な将軍だけは封侯はおろか、終始変わらぬ<ruby><rb>清貧</rb><rt>せいひん</rt></ruby>に甘んじなければならなかった。最後に彼は大将軍<persName ref="#eisei"><ruby><rb>衛青</rb><rt>えいせい</rt></ruby></persName>と衝突した。さすがに<persName ref="#eisei">衛青</persName>にはこの老将をいたわる気持はあったのだが、その<ruby><rb>幕下</rb><rt>ばっか</rt></ruby>の一<ruby><rb>軍吏</rb><rt>ぐんり</rt></ruby>が<ruby><rb>虎</rb><rt>とら</rt></ruby>の<ruby><rb>威</rb><rt>い</rt></ruby>を借りて<persName ref="#riko">李広</persName>を<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめた。憤激した老名将はすぐその場で――陣営の中で<ruby><rb>自</rb><rt>みずか</rt></ruby>ら首<ruby><rb>刎</rb><rt>は</rt></ruby>ねたのである。祖父の死を聞いて声をあげてないた少年の日の自分を、陵はいまだにハッキリと<ruby><rb>憶</rb><rt>おぼ</rt></ruby>えている。……</p>
+        <p>陵の叔父（<persName ref="#riko">李広</persName>の次男）<persName ref="#rikan"><ruby><rb>李敢</rb><rt>りかん</rt></ruby></persName>の最後はどうか。彼は父将軍の<ruby><rb>惨</rb><rt>みじ</rt></ruby>めな死について<persName ref="#eisei">衛青</persName>を<ruby><rb>怨</rb><rt>うら</rt></ruby>み、自ら大将軍の邸に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>いてこれを<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめた。大将軍の<ruby><rb>甥</rb><rt>おい</rt></ruby>にあたる<ruby><rb>嫖騎</rb><rt>ひょうき</rt></ruby>将軍<persName ref="#kakukyohei"><ruby><rb>霍去病</rb><rt>かくきょへい</rt></ruby></persName>がそれを憤って、<placeName ref="#kansenkyu"><ruby><rb>甘泉宮</rb><rt>かんせんきゅう</rt></ruby></placeName>の猟のときに<persName ref="#rikan">李敢</persName>を射殺した。<persName ref="#butei">武帝</persName>はそれを知りながら、嫖騎将軍をかばわんがために、<persName ref="#rikan">李敢</persName>は<ruby><rb>鹿</rb><rt>しか</rt></ruby>の角に触れて死んだと発表させたのだ。……。</p>
+        <p><persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>の場合と違って、<persName ref="#riryo">李陵</persName>のほうは簡単であった。<ruby><rb>憤怒</rb><rt>ふんぬ</rt></ruby>がすべてであった。（無理でも、もう少し早くかねての計画――<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の首でも持って<ruby><rb>胡地</rb><rt>こち</rt></ruby>を脱するという――を実行すればよかったという悔いを除いては、）ただそれをいかにして現わすかが問題であるにすぎない。彼は先刻の男の言葉「<ruby><rb>胡地</rb><rt>こち</rt></ruby>にあって李将軍が兵を教え漢に備えていると聞いて陛下が激怒され<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>」を思出した。ようやく思い当たったのである。もちろん彼自身にはそんな覚えはないが、同じ漢の降将に<persName ref="#risho"><ruby><rb>李緒</rb><rt>りしょ</rt></ruby></persName>という者がある。元、<ruby><rb>塞外都尉</rb><rt>さいがいとい</rt></ruby>として<placeName ref="#keikojo"><ruby><rb>奚侯城</rb><rt>けいこうじょう</rt></ruby></placeName>を守っていた男だが、これが<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>に<ruby><rb>降</rb><rt>くだ</rt></ruby>ってから常に<ruby><rb>胡軍</rb><rt>こぐん</rt></ruby>に軍略を授け兵を練っている。現に半年前の軍にも、単于に従って、（問題の<persName ref="#kosongo"><ruby><rb>公孫敖</rb><rt>こうそんごう</rt></ruby></persName>の軍とではないが）漢軍と戦っている。これだと<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は思った。同じ<ruby><rb>李</rb><rt>り</rt></ruby>将軍で、<persName ref="#risho"><ruby><rb>李緒</rb><rt>りしょ</rt></ruby></persName>とまちがえられたに違いないのである。</p>
+        <p>その晩、彼は単身、<persName ref="#risho">李緒</persName>の<ruby><rb>帳幕</rb><rt>ちょうばく</rt></ruby>へと<ruby><rb>赴</rb><rt>おもむ</rt></ruby>いた。一言も言わぬ、一言も言わせぬ。ただの一刺しで<persName ref="#risho">李緒</persName>は<ruby><rb>斃</rb><rt>たお</rt></ruby>れた。</p>
+        <p>翌朝<persName ref="#riryo">李陵</persName>は単于の前に出て事情を打明けた。心配は<ruby><rb>要</rb><rt>い</rt></ruby>らぬと単于は言う。だが母の<ruby><rb>大閼</rb><rt>たいえん</rt></ruby>氏が少々うるさいから――というのは、相当の老齢でありながら、単于の母は<persName ref="#risho">李緒</persName>と醜関係があったらしい。単于はそれを承知していたのである。<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の風習によれば、父が死ぬと、長子たる者が、亡父の<ruby><rb>妻妾</rb><rt>さいしょう</rt></ruby>のすべてをそのまま引きついで<ruby><rb>己</rb><rt>おの</rt></ruby>が妻妾とするのだが、さすがに生母だけはこの中にはいらない。生みの母に対する尊敬だけは極端に男尊女卑の彼らでも<ruby><rb>有</rb><rt>も</rt></ruby>っているのである――今しばらく北方へ隠れていてもらいたい、ほとぼりがさめたころに迎えを<ruby><rb>遣</rb><rt>や</rt></ruby>るから、とつけ加えた。その言葉に従って、<persName ref="#riryo">李陵</persName>は一時従者どもをつれ、西北の<placeName ref="#tokenzan"><ruby><rb>兜銜山</rb><rt>とうかんざん</rt></ruby></placeName>（<placeName ref="#tokenzan"><ruby><rb>額林達班嶺</rb><rt>がくりんたっぱんれい</rt></ruby></placeName>）の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に身を避けた。</p>
+        <p>まもなく問題の<ruby><rb>大閼</rb><rt>たいえん</rt></ruby>氏が病死し、<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の<ruby><rb>庭</rb><rt>てい</rt></ruby>に呼戻されたとき、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は人間が変わったように見えた。というのは、今まで漢に対する軍略にだけは絶対に<ruby><rb>与</rb><rt>あずか</rt></ruby>らなかった彼が、<ruby><rb>自</rb><rt>みずか</rt></ruby>ら進んでその相談に乗ろうと言出したからである。単于はこの変化を見て大いに喜んだ。彼は陵を<ruby><rb>右校王</rb><rt>うこうおう</rt></ruby>に任じ、<ruby><rb>己</rb><rt>おの</rt></ruby>が娘の一人をめあわせた。娘を妻にという話は以前にもあったのだが、今まで断わりつづけてきた。それを今度は<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>なく妻としたのである。ちょうど<placeName ref="#shusen"><ruby><rb>酒泉</rb><rt>しゅせん</rt></ruby></placeName><placeName ref="#choeki"><ruby><rb>張掖</rb><rt>ちょうえき</rt></ruby></placeName>の辺を<ruby><rb>寇掠</rb><rt>こうりゃく</rt></ruby>すべく南に出て行く一軍があり、陵は自ら請うてその軍に従った。しかし、西南へと取った進路がたまたま<placeName ref="#shunkeizan"><ruby><rb>浚稽山</rb><rt>しゅんけいざん</rt></ruby></placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>を<ruby><rb>過</rb><rt>よぎ</rt></ruby>ったとき、さすがに陵の心は曇った。かつてこの地で<ruby><rb>己</rb><rt>おのれ</rt></ruby>に従って死戦した部下どものことを考え、彼らの骨が埋められ彼らの血の<ruby><rb>染</rb><rt>し</rt></ruby>み込んだその砂の上を歩きながら、今の己が身の上を思うと、彼はもはや南行して漢兵と闘う勇気を失った。病と称して彼は独り北方へ馬を返した。</p>
+        <p>翌、<date when="-0095"><ruby><rb>太始</rb><rt>たいし</rt></ruby>元年</date>、<persName ref="#shoteiko-zenu"><ruby><rb>且鞮侯</rb><rt>そていこう</rt></ruby><ruby><rb>単于</rb><rt>ぜんう</rt></ruby></persName>が死んで、陵と親しかった<ruby><rb>左賢王</rb><rt>さけんおう</rt></ruby>が後を<ruby><rb>嗣</rb><rt>つ</rt></ruby>いだ。<persName ref="#korokuko-zenu"><ruby><rb>狐鹿姑</rb><rt>ころくこ</rt></ruby>単于</persName>というのがこれである。</p>
+        <p><ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の<ruby><rb>右校王</rb><rt>うこうおう</rt></ruby>たる<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>の心はいまだにハッキリしない。母妻子を<ruby><rb>族滅</rb><rt>ぞくめつ</rt></ruby>された<ruby><rb>怨</rb><rt>うら</rt></ruby>みは<ruby><rb>骨髄</rb><rt>こつずい</rt></ruby>に徹しているものの、<ruby><rb>自</rb><rt>みずか</rt></ruby>ら兵を率いて漢と戦うことができないのは、先ごろの経験で明らかである。ふたたび漢の地を踏むまいとは誓ったが、この匈奴の俗に化して終生安んじていられるかどうかは、新単于への友情をもってしても、まださすがに自信がない。考えることの<ruby><rb>嫌</rb><rt>きら</rt></ruby>いな彼は、イライラしてくると、いつも独り<ruby><rb>駿馬</rb><rt>しゅんめ</rt></ruby>を駆って<ruby><rb>曠野</rb><rt>こうや</rt></ruby>に飛び出す。<ruby><rb>秋天一碧</rb><rt>しゅうてんいっぺき</rt></ruby>の下、<ruby><rb>嘎々</rb><rt>かつかつ</rt></ruby>と<ruby><rb>蹄</rb><rt>ひづめ</rt></ruby>の音を響かせて草原となく丘陵となく狂気のように馬を駆けさせる。何十里かぶっとばした後、馬も人もようやく疲れてくると、高原の中の小川を求めてその<ruby><rb>滸</rb><rt>ほとり</rt></ruby>に下り、馬に<ruby><rb>飲</rb><rt>みず</rt></ruby>かう。それから<ruby><rb>己</rb><rt>おのれ</rt></ruby>は草の上に<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>けにねころんで快い疲労感にウットリと見上げる<ruby><rb>碧落</rb><rt>へきらく</rt></ruby>の<ruby><rb>潔</rb><rt>きよ</rt></ruby>さ、高さ、広さ。ああ我もと天地間の<ruby><rb>一粒子</rb><rt>いちりゅうし</rt></ruby>のみ、なんぞまた漢と<ruby><rb>胡</rb><rt>こ</rt></ruby>とあらんやとふとそんな気のすることもある。一しきり休むとまた馬に<ruby><rb>跨</rb><rt>また</rt></ruby>がり、がむしゃらに<ruby><rb>駈</rb><rt>か</rt></ruby>け出す。終日乗り疲れ<ruby><rb>黄雲</rb><rt>こううん</rt></ruby>が<ruby><rb>落暉</rb><rt>らっき</rt></ruby>に<ruby><rb>曛</rb><rt>くん</rt></ruby>ずるころになってようやく彼は<ruby><rb>幕営</rb><rt>ばくえい</rt></ruby>に戻る。疲労だけが彼のただ一つの救いなのである。</p>
+        <p><persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>が<ruby><rb>陵</rb><rt>りょう</rt></ruby>のために弁じて罪をえたことを伝える者があった。<persName ref="#riryo">李陵</persName>は別にありがたいとも気の毒だとも思わなかった。<persName ref="#shibasen">司馬遷</persName>とは互いに顔は知っているし<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>をしたことはあっても、特に交を結んだというほどの間柄ではなかった。むしろ、<ruby><rb>厭</rb><rt>いや</rt></ruby>に議論ばかりしてうるさいやつだくらいにしか感じていなかったのである。それに現在の<persName ref="#riryo">李陵</persName>は、他人の不幸を実感するには、あまりに自分一個の苦しみと<ruby><rb>闘</rb><rt>たたか</rt></ruby>うのに懸命であった。よけいな世話とまでは感じなかったにしても、特に済まないと感じることがなかったのは事実である。</p>
+        <p>初め一概に<ruby><rb>野卑</rb><rt>やひ</rt></ruby><ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>としか<ruby><rb>映</rb><rt>うつ</rt></ruby>らなかった<ruby><rb>胡地</rb><rt>こち</rt></ruby>の風俗が、しかし、その地の実際の風土・気候等を背景として考えてみるとけっして野卑でも不合理でもないことが、しだいに<persName ref="#riryo">李陵</persName>にのみこめてきた。厚い皮革製の<ruby><rb>胡服</rb><rt>こふく</rt></ruby>でなければ<ruby><rb>朔北</rb><rt>さくほく</rt></ruby>の冬は<ruby><rb>凌</rb><rt>しの</rt></ruby>げないし、肉食でなければ胡地の寒冷に<ruby><rb>堪</rb><rt>た</rt></ruby>えるだけの精力を<ruby><rb>貯</rb><rt>たくわ</rt></ruby>えることができない。固定した家屋を築かないのも彼らの生活形態から来た必然で、頭から低級と<ruby><rb>貶</rb><rt>けな</rt></ruby>し去るのは当たらない。漢人のふうをあくまで<ruby><rb>保</rb><rt>たも</rt></ruby>とうとするなら、胡地の自然の中での生活は一日といえども続けられないのである。</p>
+        <p>かつて先代の<persName ref="#shoteiko-zenu"><ruby><rb>且鞮侯</rb><rt>そていこう</rt></ruby><ruby><rb>単于</rb><rt>ぜんう</rt></ruby></persName>の言った言葉を<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は<ruby><rb>憶</rb><rt>おぼ</rt></ruby>えている。漢の人間が二言めには、<ruby><rb>己</rb><rt>おの</rt></ruby>が国を礼儀の国といい、<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の行ないをもって<ruby><rb>禽獣</rb><rt>きんじゅう</rt></ruby>に近いと<ruby><rb>看做</rb><rt>みな</rt></ruby>すことを難じて、単于は言った。漢人のいう礼儀とは何ぞ？　醜いことを表面だけ美しく飾り立てる虚飾の<ruby><rb>謂</rb><rt>いい</rt></ruby>ではないか。利を好み人を<ruby><rb>嫉</rb><rt>ねた</rt></ruby>むこと、漢人と<ruby><rb>胡人</rb><rt>こじん</rt></ruby>といずれかはなはだしき？　色に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>り財を<ruby><rb>貪</rb><rt>むさぼ</rt></ruby>ること、またいずれかはなはだしき？　<ruby><rb>表</rb><rt>うわ</rt></ruby>べを<ruby><rb>剥</rb><rt>は</rt></ruby>ぎ去れば<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>なんらの違いはないはず。ただ漢人はこれをごまかし飾ることを知り、我々はそれを知らぬだけだ、と。漢初以来の<ruby><rb>骨肉</rb><rt>こつにく</rt></ruby><ruby><rb>相</rb><rt>あい</rt></ruby><ruby><rb>喰</rb><rt>は</rt></ruby>む内乱や功臣連の<ruby><rb>排斥</rb><rt>はいせき</rt></ruby><ruby><rb>擠陥</rb><rt>せいかん</rt></ruby>の跡を例に引いてこう言われたとき、<persName ref="#riryo">李陵</persName>はほとんど返す言葉に窮した。実際、<ruby><rb>武人</rb><rt>ぶじん</rt></ruby>たる彼は今までにも、<ruby><rb>煩瑣</rb><rt>はんさ</rt></ruby>な礼のための礼に対して疑問を感じたことが一再ならずあったからである。たしかに、<ruby><rb>胡俗</rb><rt>こぞく</rt></ruby>の<ruby><rb>粗野</rb><rt>そや</rt></ruby>な正直さのほうが、美名の影に隠れた漢人の陰険さより<ruby><rb>遙</rb><rt>はる</rt></ruby>かに好ましい場合がしばしばあると思った。<ruby><rb>諸夏</rb><rt>しょか</rt></ruby>の俗を正しきもの、<ruby><rb>胡俗</rb><rt>こぞく</rt></ruby>を卑しきものと頭から決めてかかるのは、あまりにも漢人的な偏見ではないかと、しだいに<persName ref="#riryo">李陵</persName>にはそんな気がしてくる。たとえば今まで人間には名のほかに<ruby><rb>字</rb><rt>あざな</rt></ruby>がなければならぬものと、ゆえもなく信じ切っていたが、考えてみれば字が絶対に必要だという理由はどこにもないのであった。</p>
+        <p>彼の妻はすこぶる<ruby><rb>大人</rb><rt>おとな</rt></ruby>しい女だった。いまだに主人の前に出るとおずおずしてろくに口も<ruby><rb>利</rb><rt>き</rt></ruby>けない。しかし、彼らの間にできた男の児は、少しも父親を恐れないで、ヨチヨチと<persName ref="#riryo">李陵</persName>の<ruby><rb>膝</rb><rt>ひざ</rt></ruby>に<ruby><rb>匍上</rb><rt>はいあ</rt></ruby>がって来る。その児の顔に見入りながら、数年前<placeName ref="#choan"><ruby><rb>長安</rb><rt>ちょうあん</rt></ruby></placeName>に残してきた――そして結局母や祖母とともに殺されてしまった――子供の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>をふと思いうかべて<persName ref="#riryo">李陵</persName>は我しらず<ruby><rb>憮然</rb><rt>ぶぜん</rt></ruby>とするのであった。</p>
+        <p>陵が<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>に<ruby><rb>降</rb><rt>くだ</rt></ruby>るよりも早く、ちょうどその一年前から、漢の<ruby><rb>中郎将</rb><rt>ちゅうろうしょう</rt></ruby><persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>が<ruby><rb>胡地</rb><rt>こち</rt></ruby>に引留められていた。</p>
+        <p>元来<persName ref="#sobu">蘇武</persName>は平和の使節として<ruby><rb>捕虜</rb><rt>ほりょ</rt></ruby>交換のために<ruby><rb>遣</rb><rt>つか</rt></ruby>わされたのである。ところが、その副使某がたまたま匈奴の<ruby><rb>内紛</rb><rt>ないふん</rt></ruby>に関係したために、使節団全員が<ruby><rb>囚</rb><rt>とら</rt></ruby>えられることになってしまった。<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>は彼らを殺そうとはしないで、死をもって<ruby><rb>脅</rb><rt>おびや</rt></ruby>かしてこれを<ruby><rb>降</rb><rt>くだ</rt></ruby>らしめた。ただ<persName ref="#sobu">蘇武</persName>一人は降服を<ruby><rb>肯</rb><rt>がえ</rt></ruby>んじないばかりか、<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめを避けようと<ruby><rb>自</rb><rt>みずか</rt></ruby>ら剣を取って<ruby><rb>己</rb><rt>おの</rt></ruby>が胸を貫いた。<ruby><rb>昏倒</rb><rt>こんとう</rt></ruby>した<persName ref="#sobu">蘇武</persName>に対する<ruby><rb>胡毉</rb><rt>こい</rt></ruby>の手当てというのがすこぶる変わっていた。地を掘って<ruby><rb>坎</rb><rt>あな</rt></ruby>をつくり<ruby><rb>熅火</rb><rt>うんか</rt></ruby>を入れて、その上に傷者を寝かせその背中を<ruby><rb>蹈</rb><rt>ふ</rt></ruby>んで血を出させたと<ruby><rb>漢書</rb><rt>かんじょ</rt></ruby>には<ruby><rb>誌</rb><rt>しる</rt></ruby>されている。この荒療治のおかげで、不幸にも<persName ref="#sobu">蘇武</persName>は半日<ruby><rb>昏絶</rb><rt>こんぜつ</rt></ruby>したのちにまた息を吹返した。<persName ref="#shoteiko-zenu"><ruby><rb>且鞮侯</rb><rt>そていこう</rt></ruby>単于</persName>はすっかり彼に<ruby><rb>惚</rb><rt>ほ</rt></ruby>れ込んだ。数旬ののちようやく<persName ref="#sobu">蘇武</persName>の身体が<ruby><rb>恢復</rb><rt>かいふく</rt></ruby>すると、例の近臣<persName ref="#eiritsu"><ruby><rb>衛律</rb><rt>えいりつ</rt></ruby></persName>をやってまた熱心に降をすすめさせた。<persName ref="#eiritsu">衛律</persName>は<persName ref="#sobu">蘇武</persName>が鉄火の<ruby><rb>罵詈</rb><rt>ばり</rt></ruby>に<ruby><rb>遭</rb><rt>あ</rt></ruby>い、すっかり恥をかいて手を引いた。その後<persName ref="#sobu">蘇武</persName>が<ruby><rb>窖</rb><rt>あなぐら</rt></ruby>の中に<ruby><rb>幽閉</rb><rt>ゆうへい</rt></ruby>されたとき<ruby><rb>旃毛</rb><rt>せんもう</rt></ruby>を雪に和して<ruby><rb>喰</rb><rt>くら</rt></ruby>いもって飢えを<ruby><rb>凌</rb><rt>しの</rt></ruby>いだ話や、ついに<placeName ref="#baikal"><ruby><rb>北海</rb><rt>ほっかい</rt></ruby></placeName>（<placeName ref="#baikal">バイカル湖</placeName>）のほとり人なき所に<ruby><rb>徙</rb><rt>うつ</rt></ruby>されて<ruby><rb>牡羊</rb><rt>おひつじ</rt></ruby>が乳を出さば帰るを許さんと言われた話は、<ruby><rb>持節</rb><rt>じせつ</rt></ruby>十九年の彼の名とともに、あまりにも有名だから、ここには述べない。とにかく、<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>が<ruby><rb>悶々</rb><rt>もんもん</rt></ruby>の余生を<ruby><rb>胡地</rb><rt>こち</rt></ruby>に埋めようとようやく決心せざるを得なくなったころ、<persName ref="#sobu">蘇武</persName>は、すでに久しく<placeName ref="#baikal">北海</placeName>のほとりで独り羊を牧していたのである。</p>
+        <p><persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>にとって<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>は二十年来の友であった。かつて時を同じゅうして<ruby><rb>侍中</rb><rt>じちゅう</rt></ruby>を勤めていたこともある。片意地でさばけないところはあるにせよ、確かにまれに見る硬骨の士であることは疑いないと陵は思っていた。<date when="-0099">天漢元年</date>に<persName ref="#sobu">蘇武</persName>が北へ立ってからまもなく、武の老母が病死したときも、陵は<placeName ref="#yoryo"><ruby><rb>陽陵</rb><rt>ようりょう</rt></ruby></placeName>までその葬を送った。<persName ref="#sobu">蘇武</persName>の妻が<ruby><rb>良人</rb><rt>おっと</rt></ruby>のふたたび帰る見込みなしと知って、去って他家に<ruby><rb>嫁</rb><rt>か</rt></ruby>した<ruby><rb>噂</rb><rt>うわさ</rt></ruby>を聞いたのは、陵の北征出発直前のことであった。そのとき、陵は友のためにその妻の浮薄をいたく憤った。</p>
+        <p>しかし、はからずも自分が<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>に<ruby><rb>降</rb><rt>くだ</rt></ruby>るようになってからのちは、もはや<persName ref="#sobu">蘇武</persName>に会いたいとは思わなかった。武が<ruby><rb>遙</rb><rt>はる</rt></ruby>か北方に<ruby><rb>遷</rb><rt>うつ</rt></ruby>されていて顔を合わせずに済むことをむしろ助かったと感じていた。ことに、<ruby><rb>己</rb><rt>おのれ</rt></ruby>の家族が<ruby><rb>戮</rb><rt>りく</rt></ruby>せられてふたたび漢に戻る気持を失ってからは、いっそうこの「漢節を持した牧羊者」との面接を避けたかった。</p>
+        <p><persName ref="#korokuko-zenu"><ruby><rb>狐鹿姑</rb><rt>ころくこ</rt></ruby><ruby><rb>単于</rb><rt>ぜんう</rt></ruby></persName>が父の<ruby><rb>後</rb><rt>あと</rt></ruby>を<ruby><rb>嗣</rb><rt>つ</rt></ruby>いでから数年後、一時<persName ref="#sobu">蘇武</persName>が生死不明との<ruby><rb>噂</rb><rt>うわさ</rt></ruby>が伝わった。父単于がついに降服させることのできなかったこの不屈の漢使の存在を思出した<persName ref="#korokuko-zenu">狐鹿姑単于</persName>は、<persName ref="#sobu">蘇武</persName>の安否を確かめるとともに、もし健在ならば今一度降服を勧告するよう、<persName ref="#riryo">李陵</persName>に頼んだ。陵が武の友人であることを聞いていたのである。やむを得ず陵は北へ向かった。</p>
+        <p><placeName ref="#koshosui"><ruby><rb>姑且水</rb><rt>こじょすい</rt></ruby></placeName>を北に<ruby><rb>溯</rb><rt>さかのぼ</rt></ruby>り<placeName ref="#shikkyosui"><ruby><rb>郅居水</rb><rt>しっきょすい</rt></ruby></placeName>との合流点からさらに西北に森林地帯を突切る。まだ所々に雪の残っている川岸を進むこと数日、ようやく<placeName ref="#baikal"><ruby><rb>北海</rb><rt>ほっかい</rt></ruby></placeName>の<ruby><rb>碧</rb><rt>あお</rt></ruby>い水が森と野との向こうに見え出したころ、この地方の住民なる<ruby><rb>丁霊族</rb><rt>ていれいぞく</rt></ruby>の案内人は<persName ref="#riryo">李陵</persName>の一行を一軒の哀れな丸太<ruby><rb>小舎</rb><rt>ごや</rt></ruby>へと導いた。小舎の住人が珍しい人声に驚かされて、弓矢を手に表へ出て来た、頭から毛皮を<ruby><rb>被</rb><rt>かぶ</rt></ruby>った<ruby><rb>鬚</rb><rt>ひげ</rt></ruby>ぼうぼうの<ruby><rb>熊</rb><rt>くま</rt></ruby>のような山男の顔の中に、<persName ref="#riryo">李陵</persName>がかつての<ruby><rb>移中厩監</rb><rt>いちゅうきゅうかん</rt></ruby><persName ref="#sobu"><ruby><rb>蘇子卿</rb><rt>そしけい</rt></ruby></persName>の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>を見出してからも、先方がこの<ruby><rb>胡服</rb><rt>こふく</rt></ruby>の大官を<ruby><rb>前</rb><rt>さき</rt></ruby>の<ruby><rb>騎都尉</rb><rt>きとい</rt></ruby><persName ref="#riryo"><ruby><rb>李少卿</rb><rt>りしょうけい</rt></ruby></persName>と認めるまでにはなおしばらくの時間が必要であった。<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>のほうでは陵が<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>に<ruby><rb>事</rb><rt>つか</rt></ruby>えていることも全然聞いていなかったのである。</p>
+        <p>感動が、陵の内に<ruby><rb>在</rb><rt>あ</rt></ruby>って今まで武との会見を避けさせていたものを一瞬圧倒し去った。二人とも初めほとんどものが言えなかった。</p>
+        <p>陵の<ruby><rb>供廻</rb><rt>ともまわ</rt></ruby>りどもの<ruby><rb>穹廬</rb><rt>きゅうろ</rt></ruby>がいくつか、あたりに組立てられ、無人の境が急に<ruby><rb>賑</rb><rt>にぎ</rt></ruby>やかになった。用意してきた酒食がさっそく<ruby><rb>小舎</rb><rt>こや</rt></ruby>に運び入れられ、夜は珍しい歓笑の声が森の鳥獣を驚かせた。滞在は数日に<ruby><rb>亙</rb><rt>わた</rt></ruby>った。</p>
+        <p><ruby><rb>己</rb><rt>おの</rt></ruby>が胡服を<ruby><rb>纏</rb><rt>まと</rt></ruby>うに至った事情を話すことは、さすがに<ruby><rb>辛</rb><rt>つら</rt></ruby>かった。しかし、<persName ref="#riryo">李陵</persName>は少しも弁解の調子を交えずに事実だけを語った。<persName ref="#sobu">蘇武</persName>がさりげなく語るその数年間の生活はまったく<ruby><rb>惨憺</rb><rt>さんたん</rt></ruby>たるものであったらしい。何年か以前に匈奴の<persName ref="#okeno"><ruby><rb>於靬王</rb><rt>おけんおう</rt></ruby></persName>が猟をするとてたまたまここを過ぎ<persName ref="#sobu">蘇武</persName>に同情して、三年間つづけて衣服食糧等を給してくれたが、その<persName ref="#okeno">於靬王</persName>の死後は、<ruby><rb>凍</rb><rt>い</rt></ruby>てついた大地から<ruby><rb>野鼠</rb><rt>のねずみ</rt></ruby>を掘出して、飢えを<ruby><rb>凌</rb><rt>しの</rt></ruby>がなければならない始末だと言う。彼の生死不明の<ruby><rb>噂</rb><rt>うわさ</rt></ruby>は彼の養っていた畜群が<ruby><rb>剽盗</rb><rt>ひょうとう</rt></ruby>どものために一匹残らずさらわれてしまったことの<ruby><rb>訛伝</rb><rt>かでん</rt></ruby>らしい。陵は<persName ref="#sobu">蘇武</persName>の母の死んだことだけは告げたが、妻が子を<ruby><rb>棄</rb><rt>す</rt></ruby>てて他家へ行ったことはさすがに言えなかった。</p>
+        <p>この男は何を目あてに生きているのかと<persName ref="#riryo">李陵</persName>は怪しんだ。いまだに漢に帰れる日を待ち望んでいるのだろうか。<persName ref="#sobu">蘇武</persName>の口うらから察すれば、いまさらそんな期待は少しももっていないようである。それではなんのためにこうした<ruby><rb>惨憺</rb><rt>さんたん</rt></ruby>たる日々をたえ忍んでいるのか？　<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>に降服を申出れば重く用いられることは<ruby><rb>請合</rb><rt>うけあ</rt></ruby>いだが、それをする<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>でないことは初めから分り切っている。陵の怪しむのは、なぜ早く<ruby><rb>自</rb><rt>みずか</rt></ruby>ら生命を絶たないのかという意味であった。<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>自身が希望のない生活を自らの手で断ち切りえないのは、いつのまにかこの地に根を<ruby><rb>下</rb><rt>おろ</rt></ruby>して<ruby><rb>了</rb><rt>しま</rt></ruby>った数々の恩愛や義理のためであり、またいまさら死んでも格別漢のために義を立てることにもならないからである。<persName ref="#sobu">蘇武</persName>の場合は違う。彼にはこの地での<ruby><rb>係累</rb><rt>けいるい</rt></ruby>もない。漢朝に対する忠信という点から考えるなら、いつまでも<ruby><rb>節旄</rb><rt>せつぼう</rt></ruby>を持して<ruby><rb>曠野</rb><rt>こうや</rt></ruby>に飢えるのと、ただちに節旄を焼いてのち自ら首<ruby><rb>刎</rb><rt>は</rt></ruby>ねるのとの間に、別に差異はなさそうに思われる。はじめ捕えられたとき、いきなり自分の胸を刺した<persName ref="#sobu">蘇武</persName>に、今となって急に死を恐れる心が<ruby><rb>萌</rb><rt>きざ</rt></ruby>したとは考えられない。<persName ref="#riryo">李陵</persName>は、若いころの<persName ref="#sobu">蘇武</persName>の片意地を――<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>なくらい強情な<ruby><rb>痩我慢</rb><rt>やせがまん</rt></ruby>を思出した。<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>は栄華を<ruby><rb>餌</rb><rt>え</rt></ruby>に極度の<ruby><rb>困窮</rb><rt>こんきゅう</rt></ruby>の中から<persName ref="#sobu">蘇武</persName>を<ruby><rb>釣</rb><rt>つ</rt></ruby>ろうと試みる。餌につられるのはもとより、苦難に<ruby><rb>堪</rb><rt>た</rt></ruby>ええずして自ら殺すこともまた、単于に（あるいはそれによって象徴される運命に）負けることになる。<persName ref="#sobu">蘇武</persName>はそう考えているのではなかろうか。運命と意地の張合いをしているような<persName ref="#sobu">蘇武</persName>の姿が、しかし、<persName ref="#riryo">李陵</persName>には滑稽や<ruby><rb>笑止</rb><rt>しょうし</rt></ruby>には見えなかった。想像を絶した困苦・欠乏・酷寒・孤独を、（しかもこれから死に至るまでの長い間を）平然と笑殺していかせるものが、意地だとすれば、この意地こそは<ruby><rb>誠</rb><rt>まこと</rt></ruby>に<ruby><rb>凄</rb><rt>すさま</rt></ruby>じくも壮大なものと言わねばならぬ。昔の多少は<ruby><rb>大人</rb><rt>おとな</rt></ruby>げなく見えた<persName ref="#sobu">蘇武</persName>の<ruby><rb>痩我慢</rb><rt>やせがまん</rt></ruby>が、かかる大我慢にまで成長しているのを見て<persName ref="#riryo">李陵</persName>は驚嘆した。しかもこの男は自分の行ないが漢にまで知られることを予期していない。自分がふたたび漢に迎えられることはもとより、自分がかかる無人の地で困苦と戦いつつあることを漢はおろか<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の単于にさえ伝えてくれる人間の出て来ることをも期待していなかった。誰にもみとられずに独り死んでいくに違いないその最後の日に、<ruby><rb>自</rb><rt>みずか</rt></ruby>ら顧みて最後まで運命を笑殺しえたことに満足して死んでいこうというのだ。誰一人<ruby><rb>己</rb><rt>おの</rt></ruby>が<ruby><rb>事蹟</rb><rt>じせき</rt></ruby>を知ってくれなくともさしつかえないというのである。<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>は、かつて先代<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の首を<ruby><rb>狙</rb><rt>ねら</rt></ruby>いながら、その目的を果たすとも、自分がそれをもって<ruby><rb>匈土</rb><rt>きょうど</rt></ruby>の地を脱走しえなければ、せっかくの行為が<ruby><rb>空</rb><rt>むな</rt></ruby>しく、漢にまで聞こえないであろうことを恐れて、ついに決行の機を見出しえなかった。人に知られざることを憂えぬ<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>を前にして、彼はひそかに冷汗の出る思いであった。</p>
+        <p>最初の感動が過ぎ、二日三日とたつうちに、<persName ref="#riryo">李陵</persName>の中にやはり一種のこだわりができてくるのをどうすることもできなかった。何を語るにつけても、<ruby><rb>己</rb><rt>おのれ</rt></ruby>の過去と<persName ref="#sobu">蘇武</persName>のそれとの対比がいちいちひっかかってくる。<persName ref="#sobu">蘇武</persName>は<ruby><rb>義人</rb><rt>ぎじん</rt></ruby>、自分は<ruby><rb>売国奴</rb><rt>ばいこくど</rt></ruby>と、それほどハッキリ考えはしないけれども、森と野と水との沈黙によって多年の間鍛え上げられた<persName ref="#sobu">蘇武</persName>の<ruby><rb>厳</rb><rt>きび</rt></ruby>しさの前には己の行為に対する唯一の弁明であった今までのわが苦悩のごときは<ruby><rb>一溜</rb><rt>ひとたま</rt></ruby>りもなく圧倒されるのを感じないわけにいかない。それに、気のせいか、<ruby><rb>日</rb><rt>ひ</rt></ruby>にちが立つにつれ、<persName ref="#sobu">蘇武</persName>の己に対する態度の中に、何か富者が貧者に対するときのような――己の優越を知ったうえで相手に寛大であろうとする者の態度を感じはじめた。どことハッキリはいえないが、どうかした<ruby><rb>拍子</rb><rt>ひょうし</rt></ruby>にひょいとそういうものの感じられることがある。<ruby><rb>繿縷</rb><rt>ぼろ</rt></ruby>をまとうた<persName ref="#sobu">蘇武</persName>の目の中に、ときとして浮かぶかすかな<ruby><rb>憐愍</rb><rt>れんびん</rt></ruby>の色を、<ruby><rb>豪奢</rb><rt>ごうしゃ</rt></ruby>な<ruby><rb>貂裘</rb><rt>ちょうきゅう</rt></ruby>をまとうた<ruby><rb>右校王</rb><rt>うこうおう</rt></ruby><persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>はなによりも恐れた。</p>
+        <p>十日ばかり滞在したのち、<persName ref="#riryo">李陵</persName>は旧友に別れて、<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>と南へ去った。食糧衣服の類は充分に森の丸木<ruby><rb>小舎</rb><rt>ごや</rt></ruby>に残してきた。</p>
+        <p><persName ref="#riryo">李陵</persName>は<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>からの<ruby><rb>依嘱</rb><rt>いしょく</rt></ruby>たる降服勧告についてはとうとう口を切らなかった。<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>の答えは問うまでもなく明らかであるものを、何もいまさらそんな勧告によって<persName ref="#sobu">蘇武</persName>をも自分をも<ruby><rb>辱</rb><rt>はずかし</rt></ruby>めるには当たらないと思ったからである。</p>
+        <p>南に帰ってからも、<persName ref="#sobu">蘇武</persName>の存在は一日も彼の頭から去らなかった。離れて考えるとき、<persName ref="#sobu">蘇武</persName>の姿はかえっていっそうきびしく彼の前に<ruby><rb>聳</rb><rt>そび</rt></ruby>えているように思われる。</p>
+        <p><persName ref="#riryo">李陵</persName>自身、<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>への降服という<ruby><rb>己</rb><rt>おのれ</rt></ruby>の行為をよしとしているわけではないが、自分の故国につくした跡と、それに対して故国の己に<ruby><rb>酬</rb><rt>むく</rt></ruby>いたところとを考えるなら、いかに無情な批判者といえども、なお、その「やむを得なかった」ことを認めるだろうとは信じていた。ところが、ここに一人の男があって、いかに「やむを得ない」と思われる事情を前にしても、断じて、自らにそれは「やむを得ぬのだ」という考えかたを許そうとしないのである。</p>
+        <p>飢餓も寒苦も孤独の苦しみも、祖国の冷淡も、己の苦節がついに<ruby><rb>何人</rb><rt>なんぴと</rt></ruby>にも知られないだろうというほとんど確定的な事実も、この男にとって、平生の節義を改めなければならぬほどのやむを得ぬ事情ではないのだ。</p>
+        <p><persName ref="#sobu">蘇武</persName>の存在は彼にとって、崇高な<ruby><rb>訓誡</rb><rt>くんかい</rt></ruby>でもあり、いらだたしい悪夢でもあった。ときどき彼は人を<ruby><rb>遣</rb><rt>つか</rt></ruby>わして<persName ref="#sobu">蘇武</persName>の安否を問わせ、食品、牛羊、<ruby><rb>絨氈</rb><rt>じゅうせん</rt></ruby>を贈った。<persName ref="#sobu">蘇武</persName>をみたい気持と避けたい気持とが彼の中で常に闘っていた。</p>
+        <p>数年後、今一度<persName ref="#riryo">李陵</persName>は<placeName ref="#baikal"><ruby><rb>北海</rb><rt>ほっかい</rt></ruby></placeName>のほとりの丸木<ruby><rb>小舎</rb><rt>ごや</rt></ruby>を<ruby><rb>訪</rb><rt>たず</rt></ruby>ねた。そのとき途中で<placeName ref="#unchu"><ruby><rb>雲中</rb><rt>うんちゅう</rt></ruby></placeName>の北方を<ruby><rb>戍</rb><rt>まも</rt></ruby>る<ruby><rb>衛兵</rb><rt>えいへい</rt></ruby>らに会い、彼らの口から、近ごろ漢の辺境では<ruby><rb>太守</rb><rt>たいしゅ</rt></ruby>以下<ruby><rb>吏民</rb><rt>りみん</rt></ruby>が皆白服をつけていることを聞いた。人民がことごとく服を白くしているとあれば天子の<ruby><rb>喪</rb><rt>も</rt></ruby>に相違ない。<persName ref="#riryo">李陵</persName>は<persName ref="#butei"><ruby><rb>武帝</rb><rt>ぶてい</rt></ruby></persName>の<ruby><rb>崩</rb><rt>ほう</rt></ruby>じたのを知った。<placeName ref="#baikal">北海</placeName>の<ruby><rb>滸</rb><rt>ほとり</rt></ruby>に<ruby><rb>到</rb><rt>いた</rt></ruby>ってこのことを告げたとき、<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>は南に向かって<ruby><rb>号哭</rb><rt>ごうこく</rt></ruby>した。<ruby><rb>慟哭</rb><rt>どうこく</rt></ruby>数日、ついに血を<ruby><rb>嘔</rb><rt>は</rt></ruby>くに至った。その有様を見ながら、<persName ref="#riryo">李陵</persName>はしだいに暗く沈んだ気持になっていった。彼はもちろん<persName ref="#sobu">蘇武</persName>の慟哭の<ruby><rb>真摯</rb><rt>しんし</rt></ruby>さを疑うものではない。その純粋な<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい悲嘆には心を動かされずにはいられない。だが、自分には今一滴の涙も<ruby><rb>泛</rb><rt>うか</rt></ruby>んでこないのである。<persName ref="#sobu">蘇武</persName>は、<persName ref="#riryo">李陵</persName>のように一族を<ruby><rb>戮</rb><rt>りく</rt></ruby>せられることこそなかったが、それでも彼の兄は天子の行列にさいしてちょっとした交通事故を起こしたために、また、彼の弟はある犯罪者を捕ええなかったことのために、ともに責を負うて自殺させられている。どう考えても漢の<ruby><rb>朝</rb><rt>ちょう</rt></ruby>から厚遇されていたとは称しがたいのである。それを知ってのうえで、今目の前に<persName ref="#sobu">蘇武</persName>の純粋な<ruby><rb>痛哭</rb><rt>つうこく</rt></ruby>を見ているうちに、以前にはただ<persName ref="#sobu">蘇武</persName>の強烈な意地とのみ見えたものの底に、実は、<ruby><rb>譬</rb><rt>たと</rt></ruby>えようもなく<ruby><rb>清洌</rb><rt>せいれつ</rt></ruby>な純粋な漢の国土への愛情（それは義とか節とかいう外から押しつけられたものではなく、<ruby><rb>抑</rb><rt>おさ</rt></ruby>えようとして抑えられぬ、こんこんと常に<ruby><rb>湧出</rb><rt>わきで</rt></ruby>る最も親身な自然な愛情）が<ruby><rb>湛</rb><rt>たた</rt></ruby>えられていることを、<persName ref="#riryo">李陵</persName>ははじめて発見した。</p>
+        <p><persName ref="#riryo">李陵</persName>は<ruby><rb>己</rb><rt>おのれ</rt></ruby>と友とを隔てる根本的なものにぶつかっていやでも<ruby><rb>己</rb><rt>おのれ</rt></ruby>自身に対する暗い懐疑に追いやられざるをえないのである。</p>
+        <p><persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>の所から南へ帰って来ると、ちょうど、漢からの使者が到着したところであった。<persName ref="#butei"><ruby><rb>武帝</rb><rt>ぶてい</rt></ruby></persName>の死と<persName ref="#shotei"><ruby><rb>昭帝</rb><rt>しょうてい</rt></ruby></persName>の即位とを報じてかたがた当分の友好関係を――常に一年とは続いたことのない友好関係だったが――結ぶための平和の使節である。その使いとしてやって来たのが、はからずも<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>の<ruby><rb>故人</rb><rt>とも</rt></ruby>・<placeName ref="#rosei"><ruby><rb>隴西</rb><rt>ろうせい</rt></ruby></placeName>の<persName ref="#ninrissei"><ruby><rb>任立政</rb><rt>じんりっせい</rt></ruby></persName>ら三人であった。</p>
+        <p>その年の<date when="--02">二月</date><persName ref="#butei">武帝</persName>が崩じて、<ruby><rb>僅</rb><rt>わず</rt></ruby>か八歳の太子<persName ref="#shotei"><ruby><rb>弗陵</rb><rt>ふつりょう</rt></ruby></persName>が位を<ruby><rb>嗣</rb><rt>つ</rt></ruby>ぐや、<ruby><rb>遺詔</rb><rt>いじょう</rt></ruby>によって<ruby><rb>侍中奉車都尉</rb><rt>じちゅうほうしゃとい</rt></ruby><persName ref="#kakuko"><ruby><rb>霍光</rb><rt>かくこう</rt></ruby></persName>が<ruby><rb>大司馬</rb><rt>だいしば</rt></ruby>大将軍として<ruby><rb>政</rb><rt>まつりごと</rt></ruby>を<ruby><rb>輔</rb><rt>たす</rt></ruby>けることになった。<persName ref="#kakuko">霍光</persName>はもと、<persName ref="#riryo">李陵</persName>と親しかったし、左将軍となった<persName ref="#jokanketsu"><ruby><rb>上官桀</rb><rt>じょうかんけつ</rt></ruby></persName>もまた陵の故人であった。この二人の間に陵を呼返そうとの相談ができ上がったのである。今度の使いにわざわざ陵の昔の友人が選ばれたのはそのためであった。</p>
+        <p><ruby><rb>単于</rb><rt>ぜんう</rt></ruby>の前で使者の表向きの用が済むと、盛んな酒宴が張られる。いつもは<persName ref="#eiritsu"><ruby><rb>衛律</rb><rt>えいりつ</rt></ruby></persName>がそうした場合の接待役を引受けるのだが、今度は<persName ref="#riryo">李陵</persName>の友人が来た場合とて彼も引張り出されて宴につらなった。<persName ref="#ninrissei">任立政</persName>は陵を見たが、<ruby><rb>匈奴</rb><rt>きょうど</rt></ruby>の大官連の並んでいる前で、漢に帰れとは言えない。席を隔てて<persName ref="#riryo">李陵</persName>を見ては目配せをし、しばしば<ruby><rb>己</rb><rt>おのれ</rt></ruby>の<ruby><rb>刀環</rb><rt>とうかん</rt></ruby>を<ruby><rb>撫</rb><rt>な</rt></ruby>でて暗にその意を伝えようとした。陵はそれを見た。先方の伝えんとするところもほぼ察した。しかし、いかなるしぐさをもって<ruby><rb>応</rb><rt>こた</rt></ruby>えるべきかを知らない。</p>
+        <p>公式の宴が終わった後で、<persName ref="#riryo">李陵</persName>・<persName ref="#eiritsu">衛律</persName>らばかりが残って牛酒と<ruby><rb>博戯</rb><rt>ばくぎ</rt></ruby>とをもって漢使をもてなした。そのとき<persName ref="#ninrissei">任立政</persName>が陵に向かって言う。漢ではいまや<ruby><rb>大赦令</rb><rt>たいしゃれい</rt></ruby>が降り万民は太平の<ruby><rb>仁政</rb><rt>じんせい</rt></ruby>を楽しんでいる。新帝はいまだ幼少のこととて君が故旧たる<persName ref="#kakuko"><ruby><rb>霍子孟</rb><rt>かくしもう</rt></ruby></persName>・<persName ref="#jokanketsu"><ruby><rb>上官少叔</rb><rt>じょうかんしょうしゅく</rt></ruby></persName>が主上を<ruby><rb>輔</rb><rt>たす</rt></ruby>けて天下の事を用いることとなったと。<persName ref="#ninrissei">立政</persName>は、<persName ref="#eiritsu"><ruby><rb>衛律</rb><rt>えいりつ</rt></ruby></persName>をもって完全に<ruby><rb>胡人</rb><rt>こじん</rt></ruby>になり切ったものと<ruby><rb>見做</rb><rt>みな</rt></ruby>して――事実それに違いなかったが――その前では明らさまに陵に説くのを<ruby><rb>憚</rb><rt>はばか</rt></ruby>った。ただ<persName ref="#kakuko"><ruby><rb>霍光</rb><rt>かくこう</rt></ruby></persName>と<persName ref="#jokanketsu"><ruby><rb>上官桀</rb><rt>じょうかんけつ</rt></ruby></persName>との名を<ruby><rb>挙</rb><rt>あ</rt></ruby>げて陵の心を<ruby><rb>惹</rb><rt>ひ</rt></ruby>こうとしたのである。陵は<ruby><rb>黙</rb><rt>もく</rt></ruby>して答えない。しばらく<persName ref="#ninrissei"><ruby><rb>立政</rb><rt>りっせい</rt></ruby></persName>を熟視してから、<ruby><rb>己</rb><rt>おの</rt></ruby>が髪を<ruby><rb>撫</rb><rt>な</rt></ruby>でた。その髪も<ruby><rb>椎結</rb><rt>ついけい</rt></ruby>とてすでに<placeName ref="#chugoku">中国</placeName>のふうではない。ややあって<persName ref="#eiritsu">衛律</persName>が服を<ruby><rb>更</rb><rt>か</rt></ruby>えるために座を退いた。初めて隔てのない調子で<persName ref="#ninrissei">立政</persName>が陵の<ruby><rb>字</rb><rt>あざな</rt></ruby>を呼んだ。<persName ref="#riryo"><ruby><rb>少卿</rb><rt>しょうけい</rt></ruby></persName>よ、多年の苦しみはいかばかりだったか。<persName ref="#kakuko"><ruby><rb>霍子孟</rb><rt>かくしもう</rt></ruby></persName>と<persName ref="#jokanketsu"><ruby><rb>上官少叔</rb><rt>じょうかんしょうしゅく</rt></ruby></persName>からよろしくとのことであったと。その二人の安否を問返す陵のよそよそしい言葉におっかぶせるようにして<persName ref="#ninrissei">立政</persName>がふたたび言った。<persName ref="#riryo">少卿</persName>よ、帰ってくれ。<ruby><rb>富貴</rb><rt>ふうき</rt></ruby>などは言うに足りぬではないか。どうか何もいわずに帰ってくれ。<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>の所から戻ったばかりのこととて<persName ref="#riryo">李陵</persName>も友の切なる言葉に心が動かぬではない。しかし、考えてみるまでもなく、それはもはやどうにもならぬことであった。「帰るのは<ruby><rb>易</rb><rt>やす</rt></ruby>い。だが、また<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめを見るだけのことではないか？　<ruby><rb>如何</rb><rt>いかん</rt></ruby>？」言葉半ばにして<persName ref="#eiritsu">衛律</persName>が座に<ruby><rb>還</rb><rt>かえ</rt></ruby>ってきた。二人は口を<ruby><rb>噤</rb><rt>つぐ</rt></ruby>んだ。</p>
+        <p>会が散じて別れ去るとき、<persName ref="#ninrissei">任立政</persName>はさりげなく陵のそばに寄ると、低声で、ついに帰るに意なきやを今一度尋ねた。陵は頭を横にふった。<ruby><rb>丈夫</rb><rt>じょうふ</rt></ruby>ふたたび辱めらるるあたわずと答えた。その言葉がひどく元気のなかったのは、<persName ref="#eiritsu">衛律</persName>に聞こえることを<ruby><rb>惧</rb><rt>おそ</rt></ruby>れたためではない。</p>
+        <p>後五年、<persName ref="#shotei">昭帝</persName>の<date when="-0080"><ruby><rb>始元</rb><rt>しげん</rt></ruby>六年</date>の夏、このまま人に知られず北方に<ruby><rb>窮死</rb><rt>きゅうし</rt></ruby>すると思われた<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>が偶然にも漢に帰れることになった。漢の天子が<placeName ref="#jorinen"><ruby><rb>上林苑</rb><rt>じょうりんえん</rt></ruby></placeName>中で得た<ruby><rb>雁</rb><rt>かり</rt></ruby>の足に<persName ref="#sobu">蘇武</persName>の<ruby><rb>帛書</rb><rt>はくしょ</rt></ruby>がついていた<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>というあの有名な話は、もちろん、<persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>の死を主張する<ruby><rb>単于</rb><rt>ぜんう</rt></ruby>を説破するためのでたらめである。十九年前<persName ref="#sobu">蘇武</persName>に従って<ruby><rb>胡地</rb><rt>こち</rt></ruby>に来た<persName ref="#jokei"><ruby><rb>常恵</rb><rt>じょうけい</rt></ruby></persName>という者が漢使に<ruby><rb>遭</rb><rt>あ</rt></ruby>って<persName ref="#sobu">蘇武</persName>の生存を知らせ、この<ruby><rb>嘘</rb><rt>うそ</rt></ruby>をもって<ruby><rb>武</rb><rt>ぶ</rt></ruby>を<ruby><rb>救出</rb><rt>すくいだ</rt></ruby>すように教えたのであった。さっそく<placeName ref="#baikal"><ruby><rb>北海</rb><rt>ほっかい</rt></ruby></placeName>の上に使いが飛び、<persName ref="#sobu">蘇武</persName>は単于の<ruby><rb>庭</rb><rt>てい</rt></ruby>につれ出された。<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>の心はさすがに動揺した。ふたたび漢に戻れようと戻れまいと<persName ref="#sobu">蘇武</persName>の偉大さに変わりはなく、したがって陵の心の<ruby><rb>笞</rb><rt>しもと</rt></ruby>たるに変わりはないに違いないが、しかし、天はやっぱり見ていたのだという考えが<persName ref="#riryo">李陵</persName>をいたく打った。見ていないようでいて、やっぱり天は見ている。彼は<ruby><rb>粛然</rb><rt>しゅくぜん</rt></ruby>として<ruby><rb>懼</rb><rt>おそ</rt></ruby>れた。今でも、<ruby><rb>己</rb><rt>おのれ</rt></ruby>の過去をけっして非なりとは思わないけれども、なおここに<persName ref="#sobu">蘇武</persName>という男があって、無理ではなかったはずの己の過去をも恥ずかしく思わせることを堂々とやってのけ、しかも、その跡が今や天下に<ruby><rb>顕彰</rb><rt>けんしょう</rt></ruby>されることになったという事実は、なんとしても<persName ref="#riryo">李陵</persName>にはこたえた。胸をかきむしられるような<ruby><rb>女々</rb><rt>めめ</rt></ruby>しい己の気持が<ruby><rb>羨望</rb><rt>せんぼう</rt></ruby>ではないかと、<persName ref="#riryo">李陵</persName>は極度に<ruby><rb>惧</rb><rt>おそ</rt></ruby>れた。</p>
+        <p>別れに臨んで<persName ref="#riryo">李陵</persName>は友のために宴を張った。いいたいことは山ほどあった。しかし結局それは、<ruby><rb>胡</rb><rt>こ</rt></ruby>に<ruby><rb>降</rb><rt>くだ</rt></ruby>ったときの<ruby><rb>己</rb><rt>おのれ</rt></ruby>の志が<ruby><rb>那辺</rb><rt>なへん</rt></ruby>にあったかということ。その志を行なう前に故国の一族が<ruby><rb>戮</rb><rt>りく</rt></ruby>せられて、もはや帰るに由なくなった事情とに尽きる。それを言えば<ruby><rb>愚痴</rb><rt>ぐち</rt></ruby>になってしまう。彼は一言もそれについてはいわなかった。ただ、宴<ruby><rb>酣</rb><rt>たけなわ</rt></ruby>にして堪えかねて立上がり、舞いかつ歌うた。</p>
+        <p><ruby><rb>径万里兮度沙幕</rb><rt>ばんりをゆきすぎさばくをわたる</rt></ruby></p>
+        <p><ruby><rb>為君将兮奮匈奴</rb><rt>きみのためしょうとなってきょうどにふるう</rt></ruby></p>
+        <p><ruby><rb>路窮絶兮矢刃摧</rb><rt>みちきゅうぜつししじんくだけ</rt></ruby></p>
+        <p><ruby><rb>士衆滅兮名已隤</rb><rt>ししゅうほろびなすでにおつ</rt></ruby></p>
+        <p><ruby><rb>老母已死</rb><rt>ろうぼすでにしす</rt></ruby><ruby><rb>雖欲報恩将安帰</rb><rt>おんにむくいんとほっするもまたいずくにかかえらん</rt></ruby></p>
+        <p>歌っているうちに、声が<ruby><rb>顫</rb><rt>ふる</rt></ruby>え涙が<ruby><rb>頬</rb><rt>ほお</rt></ruby>を伝わった。<ruby><rb>女々</rb><rt>めめ</rt></ruby>しいぞと<ruby><rb>自</rb><rt>みずか</rt></ruby>ら<ruby><rb>叱</rb><rt>しか</rt></ruby>りながら、どうしようもなかった。</p>
+        <p><persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>は十九年ぶりで祖国に帰って行った。</p>
+        <p><persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>はその後も<ruby><rb>孜々</rb><rt>しし</rt></ruby>として書き続けた。</p>
+        <p>この世に生きることをやめた彼は書中の人物としてのみ<ruby><rb>活</rb><rt>い</rt></ruby>きていた。現実の生活ではふたたび開かれることのなくなった彼の口が、<persName ref="#rochuren"><ruby><rb>魯仲連</rb><rt>ろちゅうれん</rt></ruby></persName>の<ruby><rb>舌端</rb><rt>ぜったん</rt></ruby>を借りてはじめて<ruby><rb>烈々</rb><rt>れつれつ</rt></ruby>と火を噴くのである。あるいは<persName ref="#goshisho"><ruby><rb>伍子胥</rb><rt>ごししょ</rt></ruby></persName>となって<ruby><rb>己</rb><rt>おの</rt></ruby>が眼を<ruby><rb>抉</rb><rt>えぐ</rt></ruby>らしめ、あるいは<persName ref="#rinshojo"><ruby><rb>藺相如</rb><rt>りんしょうじょ</rt></ruby></persName>となって<ruby><rb>秦王</rb><rt>しんおう</rt></ruby>を<ruby><rb>叱</rb><rt>しっ</rt></ruby>し、あるいは<persName ref="#taishitan"><ruby><rb>太子丹</rb><rt>たいしたん</rt></ruby></persName>となって泣いて<persName ref="#keika"><ruby><rb>荊軻</rb><rt>けいか</rt></ruby></persName>を送った。<placeName ref="#so"><ruby><rb>楚</rb><rt>そ</rt></ruby></placeName>の<persName ref="#kutsugen"><ruby><rb>屈原</rb><rt>くつげん</rt></ruby></persName>の<ruby><rb>憂憤</rb><rt>うっぷん</rt></ruby>を叙して、そのまさに<placeName ref="#bekira"><ruby><rb>汨羅</rb><rt>べきら</rt></ruby></placeName>に身を投ぜんとして作るところの<ruby><rb>懐沙之賦</rb><rt>かいさのふ</rt></ruby>を長々と引用したとき、<persName ref="#shibasen">司馬遷</persName>にはその賦がどうしても<ruby><rb>己</rb><rt>おのれ</rt></ruby>自身の作品のごとき気がしてしかたがなかった。</p>
+        <p>稿を起こしてから十四年、<ruby><rb>腐刑</rb><rt>ふけい</rt></ruby>の<ruby><rb>禍</rb><rt>わざわい</rt></ruby>に<ruby><rb>遭</rb><rt>あ</rt></ruby>ってから八年。都では<ruby><rb>巫蠱</rb><rt>ふこ</rt></ruby>の獄が起こり<persName ref="#reitaishi"><ruby><rb>戻太子</rb><rt>れいたいし</rt></ruby></persName>の悲劇が行なわれていたころ、<ruby><rb>父子相伝</rb><rt>ふしそうでん</rt></ruby>のこの著述がだいたい最初の構想どおりの<ruby><rb>通史</rb><rt>つうし</rt></ruby>がひととおりでき上がった。これに増補<ruby><rb>改刪</rb><rt>かいさん</rt></ruby><ruby><rb>推敲</rb><rt>すいこう</rt></ruby>を加えているうちにまた数年がたった。<ruby><rb>史記</rb><rt>しき</rt></ruby>百三十巻、五十二万六千五百字が完成したのは、すでに<persName ref="#butei"><ruby><rb>武帝</rb><rt>ぶてい</rt></ruby></persName>の<ruby><rb>崩御</rb><rt>ほうぎょ</rt></ruby>に近いころであった。</p>
+        <p><ruby><rb>列伝</rb><rt>れつでん</rt></ruby>第七十<ruby><rb>太史公</rb><rt>たいしこう</rt></ruby>自序の最後の筆を<ruby><rb>擱</rb><rt>お</rt></ruby>いたとき、<persName ref="#shibasen">司馬遷</persName>は<ruby><rb>几</rb><rt>き</rt></ruby>に<ruby><rb>凭</rb><rt>よ</rt></ruby>ったまま<ruby><rb>惘然</rb><rt>ぼうぜん</rt></ruby>とした。深い<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>が腹の底から出た。目は庭前の<ruby><rb>槐樹</rb><rt>えんじゅ</rt></ruby>の茂みに向かってしばらくはいたが、実は何ものをも見ていなかった。うつろな耳で、それでも彼は庭のどこからか聞こえてくる一匹の<ruby><rb>蝉</rb><rt>せみ</rt></ruby>の声に耳をすましているようにみえた。<ruby><rb>歓</rb><rt>よろこ</rt></ruby>びがあるはずなのに気の抜けた<ruby><rb>漠然</rb><rt>ばくぜん</rt></ruby>とした寂しさ、不安のほうが先に来た。</p>
+        <p>完成した著作を官に納め、父の墓前にその報告をするまではそれでもまだ気が張っていたが、それらが終わると急に<ruby><rb>酷</rb><rt>ひど</rt></ruby>い虚脱の状態が来た。<ruby><rb>憑依</rb><rt>ひょうい</rt></ruby>の去った<ruby><rb>巫者</rb><rt>ふしゃ</rt></ruby>のように、身も心もぐったりとくずおれ、まだ六十を出たばかりの彼が急に十年も年をとったように<ruby><rb>耄</rb><rt>ふ</rt></ruby>けた。<persName ref="#butei">武帝</persName>の<ruby><rb>崩御</rb><rt>ほうぎょ</rt></ruby>も<persName ref="#shotei">昭帝</persName>の即位もかつてのさきの<ruby><rb>太史令</rb><rt>たいしれい</rt></ruby><persName ref="#shibasen"><ruby><rb>司馬遷</rb><rt>しばせん</rt></ruby></persName>の<ruby><rb>脱殻</rb><rt>ぬけがら</rt></ruby>にとってはもはやなんの意味ももたないように見えた。</p>
+        <p>前に述べた<persName ref="#ninrissei"><ruby><rb>任立政</rb><rt>じんりっせい</rt></ruby></persName>らが<ruby><rb>胡地</rb><rt>こち</rt></ruby>に<persName ref="#riryo"><ruby><rb>李陵</rb><rt>りりょう</rt></ruby></persName>を<ruby><rb>訪</rb><rt>たず</rt></ruby>ねて、ふたたび都に戻って来たころは、<persName ref="#shibasen">司馬遷</persName>はすでにこの世に<ruby><rb>亡</rb><rt>な</rt></ruby>かった。</p>
+        <p><persName ref="#sobu"><ruby><rb>蘇武</rb><rt>そぶ</rt></ruby></persName>と別れた後の<persName ref="#riryo">李陵</persName>については、何一つ正確な記録は残されていない。<date when="-0073"><ruby><rb>元平</rb><rt>げんぺい</rt></ruby>元年</date>に<ruby><rb>胡地</rb><rt>こち</rt></ruby>で死んだということのほかは。</p>
+        <p>すでに早く、彼と親しかった<persName ref="#korokuko-zenu"><ruby><rb>狐鹿姑</rb><rt>ころくこ</rt></ruby><ruby><rb>単于</rb><rt>ぜんう</rt></ruby></persName>は死に、その子<persName ref="#koentei-zenu"><ruby><rb>壺衍鞮</rb><rt>こえんてい</rt></ruby>単于</persName>の代となっていたが、その即位にからんで<ruby><rb>左賢王</rb><rt>さけんおう</rt></ruby>、<ruby><rb>右谷蠡王</rb><rt>うろくりおう</rt></ruby>の内紛があり、<ruby><rb>閼氏</rb><rt>えんし</rt></ruby>や<persName ref="#eiritsu"><ruby><rb>衛律</rb><rt>えいりつ</rt></ruby></persName>らと対抗して<persName ref="#riryo">李陵</persName>も心ならずも、その紛争にまきこまれたろうことは想像に<ruby><rb>難</rb><rt>かた</rt></ruby>くない。</p>
+        <p><ruby><rb>漢書</rb><rt>かんじょ</rt></ruby>の<ruby><rb>匈奴伝</rb><rt>きょうどでん</rt></ruby>には、その後、<persName ref="#riryo">李陵</persName>の胡地で<ruby><rb>儲</rb><rt>もう</rt></ruby>けた子が<ruby><rb>烏籍都尉</rb><rt>うせきとい</rt></ruby>を立てて単于とし、<persName ref="#kokanya-zenu"><ruby><rb>呼韓邪</rb><rt>こかんや</rt></ruby><ruby><rb>単于</rb><rt>ぜんう</rt></ruby></persName>に対抗してついに失敗した旨が記されている。<persName ref="#sentei"><ruby><rb>宣帝</rb><rt>せんてい</rt></ruby></persName>の<date when="-0055"><ruby><rb>五鳳</rb><rt>ごほう</rt></ruby>二年</date>のことだから、<persName ref="#riryo">李陵</persName>が死んでからちょうど十八年めにあたる。<persName ref="#riryo">李陵</persName>の子とあるだけで、名前は記されていない。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

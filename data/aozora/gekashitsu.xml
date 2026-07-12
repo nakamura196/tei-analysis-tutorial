@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>外科室</title>
+        <author>泉鏡花</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>外科室</title><author>泉鏡花</author>
+          <note>青空文庫。底本：「高野聖」角川文庫、角川書店。1971（昭和46）年4月20日改版初版発行。1979（昭和54）年11月30日改版第14刷発行。入力：今中一時。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000050/card360.html">https://www.aozora.gr.jp/cards/000050/card360.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="takamine">
+        <persName>高峰</persName>
+        <note>医学士・外科科長。貴船伯爵夫人の手術の執刀者。九年前は医科大学の学生で、小石川植物園で夫人と行き逢った</note>
+      </person>
+      <person xml:id="kifune-fujin">
+        <persName>貴船伯爵夫人</persName>
+        <note>手術を受ける病者。痲酔剤を拒み、胸中の秘密を守って手術台上で果てる。九年前に小石川植物園で高峰と行き逢った婦人</note>
+      </person>
+      <person xml:id="kifune">
+        <persName>貴船伯爵</persName>
+        <note>夫人の夫。手術に立ち会う。「貴船伯」「貴船」(侯爵からの呼びかけ)とも</note>
+      </person>
+      <person xml:id="genkichi">
+        <persName>源吉</persName>
+        <note>小石川植物園で貴婦人たちを見て語り合う商人体の壮者の一人。連れから「吉さん」とも呼ばれる</note>
+      </person>
+      <person xml:id="kan-uncho">
+        <persName>関雲長</persName>
+        <note>中国三国時代の武将・関羽(字は雲長)。麻酔なしに骨を削る療治に平然と耐えた故事(刮骨療毒)への言及</note>
+      </person>
+      <person xml:id="konpira">
+        <persName>金毘羅</persName>
+        <note>金毘羅権現。海上守護などで信仰される神仏習合の神。壮者の願掛け(北廓断ち)の対象としての言及</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="tokyo">
+        <placeName>東京府</placeName>
+        <location><geo>35.6804 139.769</geo></location>
+        <note>旧東京府(現東京都)・概値。手術の行われた病院の所在</note>
+      </place>
+      <place xml:id="koishikawa">
+        <placeName>小石川</placeName>
+        <location><geo>35.72 139.745</geo></location>
+        <note>旧東京市小石川区(現文京区西部)・概値</note>
+      </place>
+      <place xml:id="shokubutsuen">
+        <placeName>植物園</placeName>
+        <location><geo>35.7195 139.7476</geo></location>
+        <note>小石川植物園(現東京大学大学院理学系研究科附属植物園)。九年前の邂逅の場</note>
+      </place>
+      <place xml:id="asakusa">
+        <placeName>浅草</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+        <note>東京浅草(現台東区)・概値</note>
+      </place>
+      <place xml:id="hokkaku">
+        <placeName>北廓</placeName>
+        <location><geo>35.7242 139.7935</geo></location>
+        <note>「北廓」は吉原遊廓の異称。旧新吉原(現台東区千束)・概値</note>
+      </place>
+      <place xml:id="aoyama">
+        <placeName>青山</placeName>
+        <location><geo>35.6699 139.7205</geo></location>
+        <note>青山墓地(現青山霊園、東京都港区)・概値。本文の「青山の墓地」</note>
+      </place>
+      <place xml:id="yanaka">
+        <placeName>谷中</placeName>
+        <location><geo>35.7256 139.7686</geo></location>
+        <note>谷中墓地(現谷中霊園、東京都台東区)・概値。本文の「谷中の墓地」</note>
+      </place>
+      <place xml:id="ika-daigaku">
+        <placeName>医科大学</placeName>
+        <location><geo>35.7126 139.7621</geo></location>
+        <note>帝国大学医科大学(本郷、現東京大学医学部)・概値。高峰が学んだ学校</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>上</head>
+        <p>実は好奇心のゆえに、しかれども予は予が<ruby><rb>画師</rb><rt>えし</rt></ruby>たるを利器として、ともかくも口実を設けつつ、予と兄弟もただならざる医学士<persName ref="#takamine">高峰</persName>をしいて、<ruby><rb>某</rb><rt>それ</rt></ruby>の日<placeName ref="#tokyo">東京府</placeName>下の<ruby><rb>一</rb><rt>ある</rt></ruby>病院において、<ruby><rb>渠</rb><rt>かれ</rt></ruby>が<ruby><rb>刀</rb><rt>とう</rt></ruby>を下すべき、<persName ref="#kifune-fujin"><ruby><rb>貴船</rb><rt>きふね</rt></ruby>伯爵夫人</persName>の手術をば予をして見せしむることを余儀なくしたり。</p>
+        <p>その日午前九時過ぐるころ家を<ruby><rb>出</rb><rt>い</rt></ruby>でて病院に<ruby><rb>腕車</rb><rt>わんしゃ</rt></ruby>を飛ばしつ。直ちに外科室の<ruby><rb>方</rb><rt>かた</rt></ruby>に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>くとき、むこうより戸を排してすらすらと出で来たれる華族の小間使とも見ゆる<ruby><rb>容目</rb><rt>みめ</rt></ruby>よき<ruby><rb>婦人</rb><rt>おんな</rt></ruby>二、三人と、廊下の半ばに行き違えり。</p>
+        <p>見れば渠らの間には、被布着たる<ruby><rb>一個</rb><rt>いっこ</rt></ruby>七、八歳の娘を擁しつ、見送るほどに見えずなれり。これのみならず玄関より外科室、外科室より二階なる病室に通うあいだの長き廊下には、フロックコート着たる紳士、制服着けたる武官、あるいは羽織<ruby><rb>袴</rb><rt>はかま</rt></ruby>の<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>の人物、その他、貴婦人令嬢等いずれもただならず気高きが、あなたに行き違い、こなたに落ち合い、あるいは歩し、あるいは停し、往復あたかも織るがごとし。予は今門前において見たる<ruby><rb>数台</rb><rt>すだい</rt></ruby>の馬車に思い合わせて、ひそかに心に<ruby><rb>頷</rb><rt>うなず</rt></ruby>けり。渠らのある者は沈痛に、ある者は<ruby><rb>憂慮</rb><rt>きづか</rt></ruby>わしげに、はたある者はあわただしげに、いずれも顔色穏やかならで、<ruby><rb>忙</rb><rt>せわ</rt></ruby>しげなる小刻みの<ruby><rb>靴</rb><rt>くつ</rt></ruby>の音、<ruby><rb>草履</rb><rt>ぞうり</rt></ruby>の響き、一種<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>たる病院の高き天井と、広き建具と、長き廊下との間にて、異様の<ruby><rb>跫音</rb><rt>きょうおん</rt></ruby>を響かしつつ、うたた陰惨の趣をなせり。</p>
+        <p>予はしばらくして外科室に入りぬ。</p>
+        <p>ときに予と相目して、<ruby><rb>脣辺</rb><rt>しんぺん</rt></ruby>に微笑を浮かべたる医学士は、両手を組みてややあおむけに<ruby><rb>椅子</rb><rt>いす</rt></ruby>に<ruby><rb>凭</rb><rt>よ</rt></ruby>れり。今にはじめぬことながら、ほとんどわが国の上流社会全体の喜憂に関すべき、この大いなる責任を<ruby><rb>荷</rb><rt>にな</rt></ruby>える身の、あたかも<ruby><rb>晩餐</rb><rt>ばんさん</rt></ruby>の<ruby><rb>筵</rb><rt>むしろ</rt></ruby>に望みたるごとく、平然としてひややかなること、おそらく渠のごときはまれなるべし。助手三人と、立ち会いの医博士一人と、別に赤十字の看護婦五名あり。看護婦その者にして、胸に勲章帯びたるも見受けたるが、あるやんごとなきあたりより特に下したまえるもありぞと思わる。他に<ruby><rb>女性</rb><rt>にょしょう</rt></ruby>とてはあらざりし。なにがし公と、なにがし侯と、なにがし伯と、みな立ち会いの親族なり。しかして一種形容すべからざる<ruby><rb>面色</rb><rt>おももち</rt></ruby>にて、愁然として立ちたるこそ、病者の夫の伯爵なれ。</p>
+        <p>室内のこの人々に<ruby><rb>瞻</rb><rt>みまも</rt></ruby>られ、室外のあのかたがたに<ruby><rb>憂慮</rb><rt>きづか</rt></ruby>われて、<ruby><rb>塵</rb><rt>ちり</rt></ruby>をも数うべく、明るくして、しかもなんとなくすさまじく侵すべからざるごとき観あるところの外科室の中央に据えられたる、手術台なる伯爵夫人は、純潔なる<ruby><rb>白衣</rb><rt>びゃくえ</rt></ruby>を<ruby><rb>絡</rb><rt>まと</rt></ruby>いて、<ruby><rb>死骸</rb><rt>しがい</rt></ruby>のごとく横たわれる、顔の色あくまで白く、鼻高く、<ruby><rb>頤</rb><rt>おとがい</rt></ruby>細りて手足は<ruby><rb>綾羅</rb><rt>りょうら</rt></ruby>にだも堪えざるべし。<ruby><rb>脣</rb><rt>くちびる</rt></ruby>の色少しく<ruby><rb>褪</rb><rt>あ</rt></ruby>せたるに、玉のごとき前歯かすかに見え、<ruby><rb>眼</rb><rt>め</rt></ruby>は固く閉ざしたるが、<ruby><rb>眉</rb><rt>まゆ</rt></ruby>は思いなしか<ruby><rb>顰</rb><rt>ひそ</rt></ruby>みて見られつ。わずかに<ruby><rb>束</rb><rt>つか</rt></ruby>ねたる頭髪は、ふさふさと<ruby><rb>枕</rb><rt>まくら</rt></ruby>に乱れて、台の上にこぼれたり。</p>
+        <p>そのかよわげに、かつ気高く、清く、<ruby><rb>貴</rb><rt>とうと</rt></ruby>く、うるわしき病者の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>を一目見るより、予は<ruby><rb>慄然</rb><rt>りつぜん</rt></ruby>として寒さを感じぬ。</p>
+        <p>医学士はと、ふと見れば、渠は露ほどの感情をも動かしおらざるもののごとく、虚心に平然たる<ruby><rb>状</rb><rt>さま</rt></ruby><ruby><rb>露</rb><rt>あら</rt></ruby>われて、椅子に<ruby><rb>坐</rb><rt>すわ</rt></ruby>りたるは室内にただ渠のみなり。そのいたく落ち着きたる、これを頼もしと<ruby><rb>謂</rb><rt>い</rt></ruby>わば謂え、伯爵夫人の<ruby><rb>爾</rb><rt>しか</rt></ruby>き容体を見たる予が眼よりはむしろ心憎きばかりなりしなり。</p>
+        <p>おりからしとやかに戸を排して、静かにここに入り来たれるは、<ruby><rb>先刻</rb><rt>さき</rt></ruby>に廊下にて行き逢いたりし三人の腰元の中に、ひときわ目立ちし<ruby><rb>婦人</rb><rt>おんな</rt></ruby>なり。</p>
+        <p>そと<persName ref="#kifune">貴船伯</persName>に打ち向かいて、沈みたる音調もて、</p>
+        <p>「<ruby><rb>御前</rb><rt>ごぜん</rt></ruby>、<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>はようようお泣き<ruby><rb>止</rb><rt>や</rt></ruby>みあそばして、別室におとなしゅういらっしゃいます」</p>
+        <p>伯はものいわで<ruby><rb>頷</rb><rt>うなず</rt></ruby>けり。</p>
+        <p>看護婦はわが医学士の前に進みて、</p>
+        <p>「それでは、あなた」</p>
+        <p>「よろしい」</p>
+        <p>と一言答えたる医学士の声は、このとき少しく震いを帯びてぞ予が耳には達したる。その顔色はいかにしけん、にわかに少しく変わりたり。</p>
+        <p>さてはいかなる医学士も、<ruby><rb>驚破</rb><rt>すわ</rt></ruby>という場合に望みては、さすがに懸念のなからんやと、予は同情を<ruby><rb>表</rb><rt>ひょう</rt></ruby>したりき。</p>
+        <p>看護婦は医学士の旨を領してのち、かの腰元に立ち向かいて、</p>
+        <p>「もう、なんですから、あのことを、ちょっと、あなたから」</p>
+        <p>腰元はその意を得て、手術台に<ruby><rb>擦</rb><rt>す</rt></ruby>り寄りつ、優に<ruby><rb>膝</rb><rt>ひざ</rt></ruby>のあたりまで両手を下げて、しとやかに立礼し、</p>
+        <p>「<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>、ただいま、お薬を差し上げます。どうぞそれを、お聞きあそばして、いろはでも、数字でも、お<ruby><rb>算</rb><rt>かぞ</rt></ruby>えあそばしますように」</p>
+        <p>伯爵夫人は答なし。</p>
+        <p>腰元は恐る恐る繰り返して、</p>
+        <p>「お聞き済みでございましょうか」</p>
+        <p>「ああ」とばかり答えたまう。</p>
+        <p>念を推して、</p>
+        <p>「それではよろしゅうございますね」</p>
+        <p>「何かい、<ruby><rb>痲酔剤</rb><rt>ねむりぐすり</rt></ruby>をかい」</p>
+        <p>「はい、手術の済みますまで、ちょっとの間でございますが、<ruby><rb>御寝</rb><rt>げし</rt></ruby>なりませんと、いけませんそうです」</p>
+        <p>夫人は黙して考えたるが、</p>
+        <p>「いや、よそうよ」と<ruby><rb>謂</rb><rt>い</rt></ruby>える声は判然として聞こえたり。一同顔を見合わせぬ。</p>
+        <p>腰元は、<ruby><rb>諭</rb><rt>さと</rt></ruby>すがごとく、</p>
+        <p>「それでは<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>、御療治ができません」</p>
+        <p>「はあ、できなくってもいいよ」</p>
+        <p>腰元は言葉はなくて、顧みて伯爵の色を伺えり。伯爵は前に進み、</p>
+        <p>「奥、そんな無理を謂ってはいけません。できなくってもいいということがあるものか。わがままを謂ってはなりません」</p>
+        <p>侯爵はまたかたわらより口を挟めり。</p>
+        <p>「あまり、無理をお謂やったら、<ruby><rb>姫</rb><rt>ひい</rt></ruby>を連れて来て見せるがいいの。<ruby><rb>疾</rb><rt>はや</rt></ruby>くよくならんでどうするものか」</p>
+        <p>「はい」</p>
+        <p>「それでは御得心でございますか」</p>
+        <p>腰元はその間に周旋せり。夫人は重げなる<ruby><rb>頭</rb><rt>かぶり</rt></ruby>を<ruby><rb>掉</rb><rt>ふ</rt></ruby>りぬ。看護婦の一人は優しき声にて、</p>
+        <p>「なぜ、そんなにおきらいあそばすの、ちっともいやなもんじゃございませんよ。うとうとあそばすと、すぐ済んでしまいます」</p>
+        <p>このとき夫人の<ruby><rb>眉</rb><rt>まゆ</rt></ruby>は動き、口は<ruby><rb>曲</rb><rt>ゆが</rt></ruby>みて、瞬間苦痛に堪えざるごとくなりし。半ば目を<ruby><rb>睜</rb><rt>みひら</rt></ruby>きて、</p>
+        <p>「そんなに<ruby><rb>強</rb><rt>し</rt></ruby>いるなら仕方がない。私はね、心に一つ秘密がある。<ruby><rb>痲酔剤</rb><rt>ねむりぐすり</rt></ruby>は<ruby><rb>譫言</rb><rt>うわごと</rt></ruby>を<ruby><rb>謂</rb><rt>い</rt></ruby>うと申すから、それがこわくってなりません。どうぞもう、眠らずにお療治ができないようなら、もうもう<ruby><rb>快</rb><rt>なお</rt></ruby>らんでもいい、よしてください」</p>
+        <p>聞くがごとくんば、伯爵夫人は、意中の秘密を<ruby><rb>夢現</rb><rt>ゆめうつつ</rt></ruby>の間に人に<ruby><rb>呟</rb><rt>つぶや</rt></ruby>かんことを恐れて、死をもてこれを守ろうとするなり。<ruby><rb>良人</rb><rt>おっと</rt></ruby>たる者がこれを聞ける胸中いかん。この<ruby><rb>言</rb><rt>ことば</rt></ruby>をしてもし平生にあらしめば必ず一条の<ruby><rb>紛紜</rb><rt>ふんぬん</rt></ruby>を<ruby><rb>惹</rb><rt>ひ</rt></ruby>き起こすに相違なきも、病者に対して看護の地位に立てる者はなんらのこともこれを不問に帰せざるべからず。しかもわが口よりして、あからさまに秘密ありて人に聞かしむることを得ずと、<ruby><rb>断乎</rb><rt>だんこ</rt></ruby>として謂い出だせる、夫人の胸中を推すれば。</p>
+        <p>伯爵は<ruby><rb>温乎</rb><rt>おんこ</rt></ruby>として、</p>
+        <p>「わしにも、聞かされぬことなんか。え、奥」</p>
+        <p>「はい。だれにも聞かすことはなりません」</p>
+        <p>夫人は決然たるものありき。</p>
+        <p>「何も<ruby><rb>痲酔剤</rb><rt>ますいざい</rt></ruby>を<ruby><rb>嗅</rb><rt>か</rt></ruby>いだからって、譫言を謂うという、<ruby><rb>極</rb><rt>き</rt></ruby>まったこともなさそうじゃの」</p>
+        <p>「いいえ、このくらい思っていれば、きっと謂いますに違いありません」</p>
+        <p>「そんな、また、無理を謂う」</p>
+        <p>「もう、御免くださいまし」</p>
+        <p>投げ棄つるがごとくかく謂いつつ、伯爵夫人は寝返りして、横に<ruby><rb>背</rb><rt>そむ</rt></ruby>かんとしたりしが、病める身のままならで、歯を鳴らす音聞こえたり。</p>
+        <p>ために顔の色の動かざる者は、ただあの医学士一人あるのみ。渠は<ruby><rb>先刻</rb><rt>さき</rt></ruby>にいかにしけん、ひとたびその平生を<ruby><rb>失</rb><rt>しっ</rt></ruby>せしが、いまやまた自若となりたり。</p>
+        <p>侯爵は渋面造りて、</p>
+        <p>「<persName ref="#kifune">貴船</persName>、こりゃなんでも<ruby><rb>姫</rb><rt>ひい</rt></ruby>を連れて来て、見せることじゃの、なんぼでも<ruby><rb>児</rb><rt>こ</rt></ruby>のかわいさには<ruby><rb>我</rb><rt>が</rt></ruby>折れよう」</p>
+        <p>伯爵は頷きて、</p>
+        <p>「これ、<ruby><rb>綾</rb><rt>あや</rt></ruby>」</p>
+        <p>「は」と腰元は振り返る。</p>
+        <p>「何を、姫を連れて来い」</p>
+        <p>夫人は<ruby><rb>堪</rb><rt>たま</rt></ruby>らず<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>りて、</p>
+        <p>「綾、連れて来んでもいい。なぜ、眠らなけりゃ、療治はできないか」</p>
+        <p>看護婦は窮したる<ruby><rb>微笑</rb><rt>えみ</rt></ruby>を含みて、</p>
+        <p>「お胸を少し切りますので、お動きあそばしちゃあ、<ruby><rb>危険</rb><rt>けんのん</rt></ruby>でございます」</p>
+        <p>「なに、わたしゃ、じっとしている。動きゃあしないから、切っておくれ」</p>
+        <p>予はそのあまりの無邪気さに、覚えず森寒を禁じ得ざりき。おそらく<ruby><rb>今日</rb><rt>きょう</rt></ruby>の切開術は、眼を開きてこれを見るものあらじとぞ思えるをや。</p>
+        <p>看護婦はまた謂えり。</p>
+        <p>「それは<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>、いくらなんでもちっとはお痛みあそばしましょうから、<ruby><rb>爪</rb><rt>つめ</rt></ruby>をお取りあそばすとは違いますよ」</p>
+        <p>夫人はここにおいてぱっちりと眼を<ruby><rb>睜</rb><rt>ひら</rt></ruby>けり。気もたしかになりけん、声は<ruby><rb>凛</rb><rt>りん</rt></ruby>として、</p>
+        <p>「<ruby><rb>刀</rb><rt>とう</rt></ruby>を取る先生は、<persName ref="#takamine">高峰</persName>様だろうね！」</p>
+        <p>「はい、外科科長です。いくら<persName ref="#takamine">高峰</persName>様でも痛くなくお切り申すことはできません」</p>
+        <p>「いいよ、痛かあないよ」</p>
+        <p>「<ruby><rb>夫人</rb><rt>ふじん</rt></ruby>、あなたの御病気はそんな手軽いのではありません。肉を<ruby><rb>殺</rb><rt>そ</rt></ruby>いで、骨を削るのです。ちっとの間御辛抱なさい」</p>
+        <p>臨検の医博士はいまはじめてかく謂えり。これとうてい<persName ref="#kan-uncho">関雲長</persName>にあらざるよりは、堪えうべきことにあらず。しかるに夫人は驚く色なし。</p>
+        <p>「そのことは存じております。でもちっともかまいません」</p>
+        <p>「あんまり大病なんで、どうかしおったと思われる」</p>
+        <p>と伯爵は愁然たり。侯爵は、かたわらより、</p>
+        <p>「ともかく、今日はまあ見合わすとしたらどうじゃの。あとでゆっくりと謂い聞かすがよかろう」</p>
+        <p>伯爵は一議もなく、衆みなこれに同ずるを見て、かの医博士は遮りぬ。</p>
+        <p>「<ruby><rb>一時</rb><rt>ひととき</rt></ruby><ruby><rb>後</rb><rt>おく</rt></ruby>れては、取り返しがなりません。いったい、あなたがたは病を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>しておらるるから<ruby><rb>埒</rb><rt>らち</rt></ruby>あかん。感情をとやかくいうのは<ruby><rb>姑息</rb><rt>こそく</rt></ruby>です。看護婦ちょっとお押え申せ」</p>
+        <p>いと<ruby><rb>厳</rb><rt>おごそ</rt></ruby>かなる命のもとに五名の看護婦はバラバラと夫人を囲みて、その手と足とを押えんとせり。渠らは服従をもって責任とす。単に、医師の命をだに奉ずればよし、あえて他の感情を顧みることを要せざるなり。</p>
+        <p>「綾！　来ておくれ。あれ！」</p>
+        <p>と夫人は絶え入る<ruby><rb>呼吸</rb><rt>いき</rt></ruby>にて、腰元を呼びたまえば、<ruby><rb>慌</rb><rt>あわ</rt></ruby>てて看護婦を遮りて、</p>
+        <p>「まあ、ちょっと待ってください。<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>、どうぞ、御堪忍あそばして」と優しき腰元はおろおろ声。</p>
+        <p>夫人の面は<ruby><rb>蒼然</rb><rt>そうぜん</rt></ruby>として、</p>
+        <p>「どうしても<ruby><rb>肯</rb><rt>き</rt></ruby>きませんか。それじゃ<ruby><rb>全快</rb><rt>なお</rt></ruby>っても死んでしまいます。いいからこのままで手術をなさいと申すのに」</p>
+        <p>と真白く細き手を動かし、かろうじて<ruby><rb>衣紋</rb><rt>えもん</rt></ruby>を少し<ruby><rb>寛</rb><rt>くつろ</rt></ruby>げつつ、玉のごとき胸部を<ruby><rb>顕</rb><rt>あら</rt></ruby>わし、</p>
+        <p>「さ、殺されても痛かあない。ちっとも動きやしないから、だいじょうぶだよ。切ってもいい」</p>
+        <p>決然として言い放てる、辞色ともに動かすべからず。さすが高位の御身とて、威厳あたりを払うにぞ、満堂<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく声を<ruby><rb>呑</rb><rt>の</rt></ruby>み、高き<ruby><rb>咳</rb><rt>しわぶき</rt></ruby>をも漏らさずして、<ruby><rb>寂然</rb><rt>せきぜん</rt></ruby>たりしその瞬間、<ruby><rb>先刻</rb><rt>さき</rt></ruby>よりちとの身動きだもせで、死灰のごとく、見えたる<persName ref="#takamine">高峰</persName>、軽く見を起こして<ruby><rb>椅子</rb><rt>いす</rt></ruby>を離れ、</p>
+        <p>「看護婦、メスを」</p>
+        <p>「ええ」と看護婦の一人は、目を<ruby><rb>睜</rb><rt>みは</rt></ruby>りて<ruby><rb>猶予</rb><rt>ためら</rt></ruby>えり。一同斉しく<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>として、医学士の面を<ruby><rb>瞻</rb><rt>みまも</rt></ruby>るとき、他の一人の看護婦は少しく震えながら、消毒したるメスを取りてこれを<persName ref="#takamine">高峰</persName>に渡したり。</p>
+        <p>医学士は取るとそのまま、<ruby><rb>靴音</rb><rt>くつおと</rt></ruby>軽く歩を移してつと手術台に近接せり。</p>
+        <p>看護婦はおどおどしながら、</p>
+        <p>「先生、このままでいいんですか」</p>
+        <p>「ああ、いいだろう」</p>
+        <p>「じゃあ、お押え申しましょう」</p>
+        <p>医学士はちょっと手を<ruby><rb>挙</rb><rt>あ</rt></ruby>げて、軽く押し<ruby><rb>留</rb><rt>とど</rt></ruby>め、</p>
+        <p>「なに、それにも及ぶまい」</p>
+        <p>謂う時<ruby><rb>疾</rb><rt>はや</rt></ruby>くその手はすでに病者の胸を<ruby><rb>掻</rb><rt>か</rt></ruby>き<ruby><rb>開</rb><rt>あ</rt></ruby>けたり。夫人は両手を肩に組みて身動きだもせず。</p>
+        <p>かかりしとき医学士は、誓うがごとく、深重厳粛たる音調もて、</p>
+        <p>「夫人、責任を負って手術します」</p>
+        <p>ときに<persName ref="#takamine">高峰</persName>の<ruby><rb>風采</rb><rt>ふうさい</rt></ruby>は一種神聖にして犯すべからざる異様のものにてありしなり。</p>
+        <p>「どうぞ」と一言<ruby><rb>答</rb><rt>いら</rt></ruby>えたる、夫人が蒼白なる両の<ruby><rb>頬</rb><rt>ほお</rt></ruby>に<ruby><rb>刷</rb><rt>は</rt></ruby>けるがごとき紅を潮しつ。じっと<persName ref="#takamine">高峰</persName>を見詰めたるまま、胸に臨めるナイフにも<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を<ruby><rb>塞</rb><rt>ふさ</rt></ruby>がんとはなさざりき。</p>
+        <p>と見れば雪の寒紅梅、<ruby><rb>血汐</rb><rt>ちしお</rt></ruby>は胸よりつと流れて、さと<ruby><rb>白衣</rb><rt>びゃくえ</rt></ruby>を染むるとともに、夫人の顔はもとのごとく、いと<ruby><rb>蒼白</rb><rt>あおじろ</rt></ruby>くなりけるが、はたせるかな自若として、足の指をも動かさざりき。</p>
+        <p>ことのここに及べるまで、医学士の挙動<ruby><rb>脱兎</rb><rt>だっと</rt></ruby>のごとく神速にしていささか<ruby><rb>間</rb><rt>かん</rt></ruby>なく、伯爵夫人の胸を<ruby><rb>割</rb><rt>さ</rt></ruby>くや、一同はもとよりかの医博士に<ruby><rb>到</rb><rt>いた</rt></ruby>るまで、<ruby><rb>言</rb><rt>ことば</rt></ruby>を<ruby><rb>挟</rb><rt>さしはさ</rt></ruby>むべき<ruby><rb>寸隙</rb><rt>すんげき</rt></ruby>とてもなかりしなるが、ここにおいてか、わななくあり、面を<ruby><rb>蔽</rb><rt>おお</rt></ruby>うあり、<ruby><rb>背向</rb><rt>そがい</rt></ruby>になるあり、あるいは<ruby><rb>首</rb><rt>こうべ</rt></ruby>を<ruby><rb>低</rb><rt>た</rt></ruby>るるあり、予のごとき、われを忘れて、ほとんど心臓まで寒くなりぬ。</p>
+        <p>三<ruby><rb>秒</rb><rt>セコンド</rt></ruby>にして渠が手術は、ハヤその佳境に進みつつ、メス骨に達すと覚しきとき、</p>
+        <p>「あ」と深刻なる声を絞りて、二十日以来寝返りさえもえせずと聞きたる、夫人は<ruby><rb>俄然</rb><rt>がぜん</rt></ruby>器械のごとく、その半身を跳ね起きつつ、<ruby><rb>刀</rb><rt>とう</rt></ruby>取れる<persName ref="#takamine">高峰</persName>が<ruby><rb>右手</rb><rt>めて</rt></ruby>の<ruby><rb>腕</rb><rt>かいな</rt></ruby>に両手をしかと取り<ruby><rb>縋</rb><rt>すが</rt></ruby>りぬ。</p>
+        <p>「痛みますか」</p>
+        <p>「いいえ、あなただから、あなただから」</p>
+        <p>かく言い<ruby><rb>懸</rb><rt>か</rt></ruby>けて伯爵夫人は、がっくりと<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>きつつ、<ruby><rb>凄冷</rb><rt>せいれい</rt></ruby><ruby><rb>極</rb><rt>きわ</rt></ruby>まりなき最後の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>に、<ruby><rb>国手</rb><rt>こくしゅ</rt></ruby>をじっと<ruby><rb>瞻</rb><rt>みまも</rt></ruby>りて、</p>
+        <p>「でも、あなたは、あなたは、<ruby><rb>私</rb><rt>わたくし</rt></ruby>を知りますまい！」</p>
+        <p>謂うとき<ruby><rb>晩</rb><rt>おそ</rt></ruby>し、<persName ref="#takamine">高峰</persName>が手にせるメスに片手を添えて、乳の下深く掻き切りぬ。医学士は<ruby><rb>真蒼</rb><rt>まっさお</rt></ruby>になりて<ruby><rb>戦</rb><rt>おのの</rt></ruby>きつつ、</p>
+        <p>「忘れません」</p>
+        <p>その声、その<ruby><rb>呼吸</rb><rt>いき</rt></ruby>、その姿、その声、その呼吸、その姿。伯爵夫人はうれしげに、いとあどけなき<ruby><rb>微笑</rb><rt>えみ</rt></ruby>を含みて<persName ref="#takamine">高峰</persName>の手より手をはなし、ばったり、枕に伏すとぞ見えし、<ruby><rb>脣</rb><rt>くちびる</rt></ruby>の色変わりたり。</p>
+        <p>そのときの二人が<ruby><rb>状</rb><rt>さま</rt></ruby>、あたかも二人の身辺には、天なく、地なく、社会なく、全く人なきがごとくなりし。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>下</head>
+        <p>数うれば、はや九年前なり。<persName ref="#takamine">高峰</persName>がそのころはまだ<placeName ref="#ika-daigaku">医科大学</placeName>に学生なりしみぎりなりき。<ruby><rb>一日</rb><rt>あるひ</rt></ruby>予は<ruby><rb>渠</rb><rt>かれ</rt></ruby>とともに、<placeName ref="#koishikawa">小石川</placeName>なる<placeName ref="#shokubutsuen">植物園</placeName>に散策しつ。<date when="--05-05">五月五日</date><ruby><rb>躑躅</rb><rt>つつじ</rt></ruby>の花盛んなりし。渠とともに手を携え、芳草の間を出つ、入りつ、園内の公園なる池を<ruby><rb>繞</rb><rt>めぐ</rt></ruby>りて、咲き<ruby><rb>揃</rb><rt>そろ</rt></ruby>いたる<ruby><rb>藤</rb><rt>ふじ</rt></ruby>を見つ。</p>
+        <p>歩を転じてかしこなる躑躅の丘に上らんとて、池に添いつつ歩めるとき、かなたより来たりたる、一群れの観客あり。</p>
+        <p><ruby><rb>一個</rb><rt>ひとり</rt></ruby>洋服の<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>にて煙突帽を<ruby><rb>戴</rb><rt>いただ</rt></ruby>きたる<ruby><rb>蓄髯</rb><rt>ちくぜん</rt></ruby>の<ruby><rb>漢</rb><rt>おとこ</rt></ruby>前衛して、中に三人の婦人を囲みて、<ruby><rb>後</rb><rt>あと</rt></ruby>よりもまた<ruby><rb>同一</rb><rt>おなじ</rt></ruby>様なる漢来れり。渠らは貴族の御者なりし。中なる三人の<ruby><rb>婦人等</rb><rt>おんなたち</rt></ruby>は、一様に深張りの<ruby><rb>涼傘</rb><rt>ひがさ</rt></ruby>を指し<ruby><rb>翳</rb><rt>かざ</rt></ruby>して、<ruby><rb>裾捌</rb><rt>すそさば</rt></ruby>きの音いとさやかに、するすると練り来たれる、と行き違いざま<persName ref="#takamine">高峰</persName>は、思わず後を見返りたり。</p>
+        <p>「見たか」</p>
+        <p><persName ref="#takamine">高峰</persName>は<ruby><rb>頷</rb><rt>うなず</rt></ruby>きぬ。「むむ」</p>
+        <p>かくて丘に上りて躑躅を見たり。躑躅は美なりしなり。されどただ赤かりしのみ。</p>
+        <p>かたわらのベンチに<ruby><rb>腰懸</rb><rt>こしか</rt></ruby>けたる、<ruby><rb>商人</rb><rt>あきゅうど</rt></ruby>体の<ruby><rb>壮者</rb><rt>わかもの</rt></ruby>あり。</p>
+        <p>「<persName ref="#genkichi">吉さん</persName>、今日はいいことをしたぜなあ」</p>
+        <p>「そうさね、たまにゃおまえの謂うことを聞くもいいかな、<placeName ref="#asakusa">浅草</placeName>へ行ってここへ来なかったろうもんなら、拝まれるんじゃなかったっけ」</p>
+        <p>「なにしろ、三人とも揃ってらあ、どれが桃やら桜やらだ」</p>
+        <p>「一人は<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>じゃあないか」</p>
+        <p>「どのみちはや御相談になるんじゃなし、丸髷でも、束髪でも、ないししゃぐまでもなんでもいい」</p>
+        <p>「ところでと、あのふうじゃあ、ぜひ、<ruby><rb>高島田</rb><rt>ぶんきん</rt></ruby>とくるところを、<ruby><rb>銀杏</rb><rt>いちょう</rt></ruby>と出たなあどういう気だろう」</p>
+        <p>「銀杏、<ruby><rb>合点</rb><rt>がてん</rt></ruby>がいかぬかい」</p>
+        <p>「ええ、わりい<ruby><rb>洒落</rb><rt>しゃれ</rt></ruby>だ」</p>
+        <p>「なんでも、あなたがたがお忍びで、目立たぬようにという<ruby><rb>肚</rb><rt>はら</rt></ruby>だ。ね、それ、まん中の水ぎわが立ってたろう。いま一人が影武者というのだ」</p>
+        <p>「そこでお召し物はなんと踏んだ」</p>
+        <p>「藤色と踏んだよ」</p>
+        <p>「え、藤色とばかりじゃ、本読みが納まらねえぜ。<ruby><rb>足下</rb><rt>そこ</rt></ruby>のようでもないじゃないか」</p>
+        <p>「<ruby><rb>眩</rb><rt>まばゆ</rt></ruby>くってうなだれたね、おのずと<ruby><rb>天窓</rb><rt>あたま</rt></ruby>が上がらなかった」</p>
+        <p>「そこで帯から下へ目をつけたろう」</p>
+        <p>「ばかをいわっし、もったいない。見しやそれとも分かぬ間だったよ。ああ残り惜しい」</p>
+        <p>「あのまた、<ruby><rb>歩行</rb><rt>あるき</rt></ruby>ぶりといったらなかったよ。ただもう、すうっとこう<ruby><rb>霞</rb><rt>かすみ</rt></ruby>に乗って行くようだっけ。裾捌き、<ruby><rb>褄</rb><rt>つま</rt></ruby>はずれなんということを、なるほどと見たは今日がはじめてよ。どうもお育ちがらはまた格別違ったもんだ。ありゃもう自然、天然と<ruby><rb>雲上</rb><rt>うんじょう</rt></ruby>になったんだな。どうして下界のやつばらが<ruby><rb>真似</rb><rt>まね</rt></ruby>ようたってできるものか」</p>
+        <p>「ひどくいうな」</p>
+        <p>「ほんのこったがわっしゃそれご存じのとおり、<placeName ref="#hokkaku"><ruby><rb>北廓</rb><rt>なか</rt></ruby></placeName>を三年が間、<persName ref="#konpira"><ruby><rb>金毘羅</rb><rt>こんぴら</rt></ruby></persName>様に<ruby><rb>断</rb><rt>た</rt></ruby>ったというもんだ。ところが、なんのこたあない。<ruby><rb>肌</rb><rt>はだ</rt></ruby>守りを懸けて、夜中に<ruby><rb>土堤</rb><rt>どて</rt></ruby>を通ろうじゃあないか。罰のあたらないのが不思議さね。もうもう今日という今日は発心切った。あの<ruby><rb>醜婦</rb><rt>すべった</rt></ruby>どもどうするものか。見なさい、アレアレちらほらとこうそこいらに、赤いものがちらつくが、どうだ。まるでそら、<ruby><rb>芥塵</rb><rt>ごみ</rt></ruby>か、<ruby><rb>蛆</rb><rt>うじ</rt></ruby>が<ruby><rb>蠢</rb><rt>うご</rt></ruby>めいているように見えるじゃあないか。ばかばかしい」</p>
+        <p>「これはきびしいね」</p>
+        <p>「<ruby><rb>串戯</rb><rt>じょうだん</rt></ruby>じゃあない。あれ見な、やっぱりそれ、手があって、足で立って、着物も羽織もぞろりとお召しで、おんなじような<ruby><rb>蝙蝠傘</rb><rt>こうもりがさ</rt></ruby>で立ってるところは、<ruby><rb>憚</rb><rt>はばか</rt></ruby>りながらこれ人間の女だ。しかも女の<ruby><rb>新造</rb><rt>しんぞ</rt></ruby>だ。女の新造に違いはないが、今拝んだのと<ruby><rb>較</rb><rt>くら</rt></ruby>べて、どうだい。まるでもって、くすぶって、なんといっていいか<ruby><rb>汚</rb><rt>よご</rt></ruby>れ切っていらあ。あれでもおんなじ女だっさ、へん、聞いて<ruby><rb>呆</rb><rt>あき</rt></ruby>れらい」</p>
+        <p>「おやおや、どうした大変なことを謂い出したぜ。しかし全くだよ。私もさ、今まではこう、ちょいとした女を見ると、ついそのなんだ。いっしょに歩くおまえにも、ずいぶん迷惑を懸けたっけが、今のを見てからもうもう胸がすっきりした。なんだかせいせいとする、以来女はふっつりだ」</p>
+        <p>「それじゃあ<ruby><rb>生涯</rb><rt>しょうがい</rt></ruby>ありつけまいぜ。<persName ref="#genkichi">源吉</persName>とやら、みずからは、とあの<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>が、言いそうもないからね」</p>
+        <p>「罰があたらあ、あてこともない」</p>
+        <p>「でも、あなたやあ、ときたらどうする」</p>
+        <p>「正直なところ、わっしは<ruby><rb>遁</rb><rt>に</rt></ruby>げるよ」</p>
+        <p>「<ruby><rb>足下</rb><rt>そこ</rt></ruby>もか」</p>
+        <p>「え、君は」</p>
+        <p>「私も遁げるよ」と目を合わせつ。しばらく<ruby><rb>言</rb><rt>ことば</rt></ruby>途絶えたり。</p>
+        <p>「<persName ref="#takamine">高峰</persName>、ちっと歩こうか」</p>
+        <p>予は<persName ref="#takamine">高峰</persName>とともに立ち上がりて、遠くかの<ruby><rb>壮佼</rb><rt>わかもの</rt></ruby>を離れしとき、<persName ref="#takamine">高峰</persName>はさも感じたる<ruby><rb>面色</rb><rt>おももち</rt></ruby>にて、</p>
+        <p>「ああ、真の美の人を動かすことあのとおりさ、君はお手のものだ、勉強したまえ」</p>
+        <p>予は画師たるがゆえに動かされぬ。行くこと<ruby><rb>数</rb><rt>す</rt></ruby>百歩、あの<ruby><rb>樟</rb><rt>くす</rt></ruby>の大樹の<ruby><rb>鬱蓊</rb><rt>うつおう</rt></ruby>たる<ruby><rb>木</rb><rt>こ</rt></ruby>の<ruby><rb>下蔭</rb><rt>したかげ</rt></ruby>の、やや薄暗きあたりを行く藤色の<ruby><rb>衣</rb><rt>きぬ</rt></ruby>の端を遠くよりちらとぞ見たる。</p>
+        <p>園を<ruby><rb>出</rb><rt>い</rt></ruby>ずれば<ruby><rb>丈</rb><rt>たけ</rt></ruby>高く肥えたる馬二頭立ちて、<ruby><rb>磨</rb><rt>す</rt></ruby>りガラス入りたる馬車に、<ruby><rb>三個</rb><rt>みたり</rt></ruby>の<ruby><rb>馬丁</rb><rt>べっとう</rt></ruby>休らいたりき。その後九年を経て病院のかのことありしまで、<persName ref="#takamine">高峰</persName>はかの婦人のことにつきて、予にすら<ruby><rb>一言</rb><rt>こと</rt></ruby>をも語らざりしかど、年齢においても、地位においても、<persName ref="#takamine">高峰</persName>は室あらざるべからざる身なるにもかかわらず、家を納むる夫人なく、しかも渠は学生たりし時代より品行いっそう謹厳にてありしなり。予は多くを謂わざるべし。</p>
+        <p><placeName ref="#aoyama">青山</placeName>の墓地と、<placeName ref="#yanaka"><ruby><rb>谷中</rb><rt>やなか</rt></ruby></placeName>の墓地と所こそは変わりたれ、<ruby><rb>同一</rb><rt>おなじ</rt></ruby>日に前後して相<ruby><rb>逝</rb><rt>ゆ</rt></ruby>けり。</p>
+        <p>語を寄す、天下の宗教家、渠ら二人は罪悪ありて、天に行くことを得ざるべきか。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

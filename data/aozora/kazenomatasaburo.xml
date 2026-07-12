@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>風の又三郎</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>風の又三郎</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：岩波文庫『童話集　風の又三郎』。1951（昭和26）年4月25日　第1刷発行。1967（昭和42）年7月16日　第24刷改版発行。入力：柴田卓治。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card462.html">https://www.aozora.gr.jp/cards/000081/card462.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="saburo">
+        <persName>高田三郎</persName>
+        <note>主人公の転校生。北海道の学校から来た赤い髪の少年。父はモリブデン鉱床調査の技師として上の野原の入り口に滞在。子供たちから伝説の風の精の名「又三郎」で呼ばれ、少年と風の精のイメージが重ねられる。表記: 三郎/又三郎/高田三郎/高田</note>
+      </person>
+      <person xml:id="amesaburo">
+        <persName>雨三郎</persName>
+        <note>子供たちの唱え歌「雨はざっこざっこ雨三郎、風はどっこどっこ又三郎」に現れる雨の精。伝説上の存在</note>
+      </person>
+      <person xml:id="ichiro">
+        <persName>一郎</persName>
+        <note>六年生。子供たちのまとめ役。三郎(又三郎)に強い関心を寄せ、物語の終わりに転校を先生から聞く</note>
+      </person>
+      <person xml:id="kasuke">
+        <persName>嘉助</persName>
+        <note>五年生。一郎の親友。三郎を「風の又三郎」だと言い出す。上の野原で霧に迷い、ガラスのマントの又三郎の幻を見る</note>
+      </person>
+      <person xml:id="sataro">
+        <persName>佐太郎</persName>
+        <note>四年生。かよの兄。妹の鉛筆を取り上げ、三郎に鉛筆をもらう。発破の後に毒もみ(魚とり)を試みる</note>
+      </person>
+      <person xml:id="kosuke">
+        <persName>耕助</persName>
+        <note>少年の一人。葡萄蔓とりで三郎にしずくを掛けられて怒り、「風などあ世界じゅうになくてもいい」と言い合いになる</note>
+      </person>
+      <person xml:id="etsuji">
+        <persName>悦治</persName>
+        <note>少年の一人。上の野原行きに同行し、三郎を「馬おっかながる」とはやす。宿題帳を忘れた一人</note>
+      </person>
+      <person xml:id="goro">
+        <persName>五郎</persName>
+        <note>少年の一人。始業日の朝、耕助に足の指を踏まれてけんかになる</note>
+      </person>
+      <person xml:id="kichiro">
+        <persName>吉郎</persName>
+        <note>少年の一人。さいかち淵の鬼ごっこで三郎につかまり、足についた粘土のために泣き出す</note>
+      </person>
+      <person xml:id="shosuke">
+        <persName>庄助</persName>
+        <note>下流の坑夫。さいかち淵で発破をかけて魚をとる大人</note>
+      </person>
+      <person xml:id="pekichi">
+        <persName>ぺ吉</persName>
+        <note>さいかち淵で泳ぐ子供の一人</note>
+      </person>
+      <person xml:id="kikko">
+        <persName>キッコ</persName>
+        <note>始業日の朝、「うな通信簿持って来たが」と呼びかけられる子供</note>
+      </person>
+      <person xml:id="sano">
+        <persName>さの</persName>
+        <note>始業日の朝、「木ペン借せ」と呼びかけられる子供</note>
+      </person>
+      <person xml:id="shokichi">
+        <persName>承吉</persName>
+        <note>二年生。葡萄とりに連れて行ってとせがむ</note>
+      </person>
+      <person xml:id="yuji">
+        <persName>勇治</persName>
+        <note>宿題帳を忘れた生徒の一人</note>
+      </person>
+      <person xml:id="ryosaku">
+        <persName>良作</persName>
+        <note>宿題帳を忘れた生徒の一人</note>
+      </person>
+      <person xml:id="kizo">
+        <persName>喜蔵</persName>
+        <note>四年生。板書を写した一人</note>
+      </person>
+      <person xml:id="kosuke2">
+        <persName>甲助</persName>
+        <note>四年生。板書を写した一人</note>
+      </person>
+      <person xml:id="kosuke3">
+        <persName>小助</persName>
+        <note>一年生。煙草畑のそばの家の子</note>
+      </person>
+      <person xml:id="kisaku">
+        <persName>喜作</persName>
+        <note>さいかち淵の鬼ごっこで悦治に押えられた少年</note>
+      </person>
+      <person xml:id="kiyo">
+        <persName>きよ</persName>
+        <note>教室で嘉助のうしろの席にいる子供。三郎はその間に立たされた</note>
+      </person>
+      <person xml:id="kasuga-myojin">
+        <persName>春日明神</persName>
+        <note>春日大社に祀られる神格。三郎が上の野原から見えた川を「春日明神さんの帯のよう」とたとえる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="hokkaido">
+        <placeName>北海道</placeName>
+        <location><geo>43.42 142.86</geo></location>
+        <note>三郎が前にいた学校のある土地。道域の概値</note>
+      </place>
+      <place xml:id="uenohara">
+        <placeName>上の野原</placeName>
+        <note>谷川の上流にある高原の放牧地。三郎の父が入り口でモリブデン鉱床を調べている。作中の架空(特定不能)の地名のため座標なし</note>
+      </place>
+      <place xml:id="saikachibuchi">
+        <placeName>さいかち淵</placeName>
+        <note>子供たちが泳ぐ川の淵。岸に皀莢(さいかち)の木がある。作中の架空(特定不能)の地名のため座標なし。花巻近郊の淵がモデルとされるが特定できない</note>
+      </place>
+      <place xml:id="isado">
+        <placeName>伊佐戸</placeName>
+        <note>子供たちの噂話に出る町(「伊佐戸の町の、電気工夫の童」)。実在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="sasanagane">
+        <placeName>笹長根</placeName>
+        <note>上の野原周辺の尾根の地名。霧に迷った嘉助が行き着いた「笹長根のおり口」。作中の架空(特定不能)の地名のため座標なし</note>
+      </place>
+      <place xml:id="torakoyama">
+        <placeName>虎こ山</placeName>
+        <note>上の野原周辺の山。嘉助を捜しに出たおじいさんの言葉「おれも虎こ山の下まで行って見で来た」に現れる。作中の(特定不能の)地名のため座標なし</note>
+      </place>
+      <place xml:id="tasukarora-kaiko">
+        <placeName>タスカロラ海溝</placeName>
+        <location><geo>44.92 152.43</geo></location>
+        <note>北西太平洋の海溝(タスカロラ海淵。現在の千島・カムチャツカ海溝〜日本海溝北部にあたる旧称)。一郎が想像する風の行き先として言及。1874年タスカロラ号測深点付近の概値</note>
+      </place>
+      <place xml:id="alps">
+        <placeName>アルプス</placeName>
+        <location><geo>45.8326 6.8652</geo></location>
+        <note>ヨーロッパ・アルプス山脈。「アルプスの探検みたいな姿勢」という比喩中の言及。山脈のためモンブラン付近の概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>風の又三郎</head>
+        <p>どっどど　どどうど　どどうど　どどう</p>
+        <p>青いくるみも吹きとばせ</p>
+        <p>すっぱいかりんも吹きとばせ</p>
+        <p>どっどど　どどうど　どどうど　どどう</p>
+        <p>谷川の岸に小さな学校がありました。</p>
+        <p>教室はたった一つでしたが生徒は三年生がないだけで、あとは一年から六年までみんなありました。運動場もテニスコートのくらいでしたが、すぐうしろは<ruby><rb>栗</rb><rt>くり</rt></ruby>の木のあるきれいな草の山でしたし、運動場のすみにはごぼごぼつめたい水を<ruby><rb>噴</rb><rt>ふ</rt></ruby>く岩穴もあったのです。</p>
+        <p>さわやかな<date when="--09-01">九月一日</date>の朝でした。青ぞらで風がどうと鳴り、日光は運動場いっぱいでした。黒い<ruby><rb>雪袴</rb><rt>ゆきばかま</rt></ruby>をはいた二人の一年生の子がどてをまわって運動場にはいって来て、まだほかにだれも来ていないのを見て、「ほう、おら一等だぞ。一等だぞ。」とかわるがわる叫びながら大よろこびで門をはいって来たのでしたが、ちょっと教室の中を見ますと、<ruby><rb>二人</rb><rt>ふたり</rt></ruby>ともまるでびっくりして棒立ちになり、それから顔を見合わせてぶるぶるふるえましたが、ひとりはとうとう泣き出してしまいました。というわけは、そのしんとした朝の教室のなかにどこから来たのか、まるで顔も知らないおかしな赤い髪の子供がひとり、いちばん前の机にちゃんとすわっていたのです。そしてその机といったらまったくこの泣いた子の自分の机だったのです。</p>
+        <p>もひとりの子ももう半分泣きかけていましたが、それでもむりやり目をりんと張って、そっちのほうをにらめていましたら、ちょうどそのとき、川上から、</p>
+        <p>「ちょうはあ　かぐり　ちょうはあ　かぐり。」と高く叫ぶ声がして、それからまるで大きなからすのように、<persName ref="#kasuke"><ruby><rb>嘉助</rb><rt>かすけ</rt></ruby></persName>がかばんをかかえてわらって運動場へかけて来ました。と思ったらすぐそのあとから<persName ref="#sataro"><ruby><rb>佐太郎</rb><rt>さたろう</rt></ruby></persName>だの<persName ref="#kosuke"><ruby><rb>耕助</rb><rt>こうすけ</rt></ruby></persName>だのどやどややってきました。</p>
+        <p>「なして泣いでら、うなかもたのが。」<persName ref="#kasuke">嘉助</persName>が泣かないこどもの肩をつかまえて言いました。するとその子もわあと泣いてしまいました。おかしいとおもってみんながあたりを見ると、教室の中にあの赤毛のおかしな子がすまして、しゃんとすわっているのが目につきました。</p>
+        <p>みんなはしんとなってしまいました。だんだんみんな女の子たちも集まって来ましたが、だれもなんとも言えませんでした。</p>
+        <p>赤毛の子どもはいっこうこわがるふうもなくやっぱりちゃんとすわって、じっと黒板を見ています。すると六年生の<persName ref="#ichiro"><ruby><rb>一郎</rb><rt>いちろう</rt></ruby></persName>が来ました。<persName ref="#ichiro">一郎</persName>はまるでおとなのようにゆっくり大またにやってきて、みんなを見て、</p>
+        <p>「<ruby><rb>何</rb><rt>なに</rt></ruby>した。」とききました。</p>
+        <p>みんなははじめてがやがや声をたててその教室の中の変な子を指さしました。<persName ref="#ichiro">一郎</persName>はしばらくそっちを見ていましたが、やがて<ruby><rb>鞄</rb><rt>かばん</rt></ruby>をしっかりかかえて、さっさと窓の下へ行きました。</p>
+        <p>みんなもすっかり元気になってついて行きました。</p>
+        <p>「だれだ、時間にならないに教室へはいってるのは。」<persName ref="#ichiro">一郎</persName>は窓へはいのぼって教室の中へ顔をつき出して言いました。</p>
+        <p>「お天気のいい時教室さはいってるづど先生にうんとしからえるぞ。」窓の下の<persName ref="#kosuke">耕助</persName>が言いました。</p>
+        <p>「しからえでもおら知らないよ。」<persName ref="#kasuke">嘉助</persName>が言いました。</p>
+        <p>「早ぐ出はって<ruby><rb>来</rb><rt>こ</rt></ruby>、出はって来。」<persName ref="#ichiro">一郎</persName>が言いました。けれどもそのこどもはきょろきょろ<ruby><rb>室</rb><rt>へや</rt></ruby>の中やみんなのほうを見るばかりで、やっぱりちゃんとひざに手をおいて腰掛けにすわっていました。</p>
+        <p>ぜんたいその形からが実におかしいのでした。変てこなねずみいろのだぶだぶの上着を着て、白い半ずぼんをはいて、それに赤い<ruby><rb>革</rb><rt>かわ</rt></ruby>の<ruby><rb>半靴</rb><rt>はんぐつ</rt></ruby>をはいていたのです。</p>
+        <p>それに顔といったらまるで熟したりんごのよう、ことに目はまん丸でまっくろなのでした。いっこう言葉が通じないようなので<persName ref="#ichiro">一郎</persName>も全く困ってしまいました。</p>
+        <p>「あいづは外国人だな。」</p>
+        <p>「学校さはいるのだな。」みんなはがやがやがやがや言いました。ところが五年生の<persName ref="#kasuke">嘉助</persName>がいきなり、</p>
+        <p>「ああ三年生さはいるのだ。」と叫びましたので、</p>
+        <p>「ああそうだ。」と小さいこどもらは思いましたが、<persName ref="#ichiro">一郎</persName>はだまってくびをまげました。</p>
+        <p>変なこどもはやはりきょろきょろこっちを見るだけ、きちんと腰掛けています。</p>
+        <p>そのとき風がどうと吹いて来て教室のガラス戸はみんながたがた鳴り、学校のうしろの山の<ruby><rb>萱</rb><rt>かや</rt></ruby>や<ruby><rb>栗</rb><rt>くり</rt></ruby>の木はみんな変に青じろくなってゆれ、教室のなかのこどもはなんだかにやっとわらってすこしうごいたようでした。</p>
+        <p>すると<persName ref="#kasuke">嘉助</persName>がすぐ叫びました。</p>
+        <p>「ああわかった。あいつは風の<persName ref="#saburo"><ruby><rb>又三郎</rb><rt>またさぶろう</rt></ruby></persName>だぞ。」</p>
+        <p>そうだっとみんなもおもったとき、にわかにうしろのほうで<persName ref="#goro">五郎</persName>が、</p>
+        <p>「わあ、痛いぢゃあ。」と叫びました。</p>
+        <p>みんなそっちへ振り向きますと、<persName ref="#goro">五郎</persName>が<persName ref="#kosuke">耕助</persName>に足のゆびをふまれて、まるでおこって<persName ref="#kosuke">耕助</persName>をなぐりつけていたのです。すると<persName ref="#kosuke">耕助</persName>もおこって、</p>
+        <p>「わあ、われ悪くてでひと<ruby><rb>撲</rb><rt>はだ</rt></ruby>いだなあ。」と言ってまた<persName ref="#goro">五郎</persName>をなぐろうとしました。</p>
+        <p><persName ref="#goro">五郎</persName>はまるで顔じゅう涙だらけにして<persName ref="#kosuke">耕助</persName>に組み付こうとしました。そこで<persName ref="#ichiro">一郎</persName>が間へはいって<persName ref="#kasuke">嘉助</persName>が<persName ref="#kosuke">耕助</persName>を押えてしまいました。</p>
+        <p>「わあい、けんかするなったら、先生あちゃんと職員室に来てらぞ。」と<persName ref="#ichiro">一郎</persName>が言いながらまた教室のほうを見ましたら、<persName ref="#ichiro">一郎</persName>はにわかにまるでぽかんとしてしまいました。</p>
+        <p>たったいままで教室にいたあの変な子が影もかたちもないのです。みんなもまるでせっかく友だちになった子うまが遠くへやられたよう、せっかく<ruby><rb>捕</rb><rt>と</rt></ruby>った<ruby><rb>山雀</rb><rt>やまがら</rt></ruby>に逃げられたように思いました。</p>
+        <p>風がまたどうと吹いて来て窓ガラスをがたがた言わせ、うしろの山の<ruby><rb>萱</rb><rt>かや</rt></ruby>をだんだん上流のほうへ青じろく波だてて行きました。</p>
+        <p>「わあ、うなだけんかしたんだがら<persName ref="#saburo">又三郎</persName>いなぐなったな。」<persName ref="#kasuke">嘉助</persName>がおこって言いました。</p>
+        <p>みんなもほんとうにそう思いました。<persName ref="#goro">五郎</persName>はじつに申しわけないと思って、足の痛いのも忘れてしょんぼり肩をすぼめて立ったのです。</p>
+        <p>「やっぱりあいつは風の<persName ref="#saburo">又三郎</persName>だったな。」</p>
+        <p>「<date when="--09-01">二百十日</date>で来たのだな。」</p>
+        <p>「<ruby><rb>靴</rb><rt>くつ</rt></ruby>はいでだたぞ。」</p>
+        <p>「服も着でだたぞ。」</p>
+        <p>「髪赤くておかしやづだったな。」</p>
+        <p>「ありゃありゃ、<persName ref="#saburo">又三郎</persName>おれの机の上さ石かけ乗せでったぞ。」二年生の子が言いました。見るとその子の机の上にはきたない石かけが乗っていたのです。</p>
+        <p>「そうだ、ありゃ。あそごのガラスもぶっかしたぞ。」</p>
+        <p>「そだないであ。あいづあ休み前に<persName ref="#kasuke">嘉助</persName>石ぶっつけだのだな。」</p>
+        <p>「わあい。そだないであ。」と言っていたとき、これはまたなんというわけでしょう。先生が玄関から出て来たのです。先生はぴかぴか光る呼び子を右手にもって、もう集まれのしたくをしているのでしたが、そのすぐうしろから、さっきの赤い髪の子が、まるで<ruby><rb>権現</rb><rt>ごんげん</rt></ruby>さまの<ruby><rb>尾</rb><rt>お</rt></ruby>っぱ持ちのようにすまし込んで、白いシャッポをかぶって、先生についてすぱすぱとあるいて来たのです。</p>
+        <p>みんなはしいんとなってしまいました。やっと<persName ref="#ichiro">一郎</persName>が「先生お早うございます。」と言いましたのでみんなもついて、</p>
+        <p>「先生お早うございます。」と言っただけでした。</p>
+        <p>「みなさん。お早う。どなたも元気ですね。では並んで。」先生は呼び子をビルルと吹きました。それはすぐ谷の向こうの山へひびいてまたビルルルと低く<ruby><rb>戻</rb><rt>もど</rt></ruby>ってきました。</p>
+        <p>すっかりやすみの前のとおりだとみんなが思いながら六年生は一人、五年生は七人、四年生は六人、一二年生は十二人、組ごとに一列に縦にならびました。</p>
+        <p>二年は八人、一年生は四人前へならえをしてならんだのです。</p>
+        <p>するとその間あのおかしな子は、何かおかしいのかおもしろいのか奥歯で横っちょに舌をかむようにして、じろじろみんなを見ながら先生のうしろに立っていたのです。すると先生は、<persName ref="#saburo"><ruby><rb>高田</rb><rt>たかだ</rt></ruby></persName>さんこっちへおはいりなさいと言いながら五年生の列のところへ連れて行って、<ruby><rb>丈</rb><rt>たけ</rt></ruby>を<persName ref="#kasuke">嘉助</persName>とくらべてから<persName ref="#kasuke">嘉助</persName>とそのうしろの<persName ref="#kiyo">きよ</persName>の間へ立たせました。</p>
+        <p>みんなはふりかえってじっとそれを見ていました。</p>
+        <p>先生はまた玄関の前に戻って、</p>
+        <p>「前へならえ。」と号令をかけました。</p>
+        <p>みんなはもう一ぺん前へならえをしてすっかり列をつくりましたが、じつはあの変な子がどういうふうにしているのか見たくて、かわるがわるそっちをふりむいたり横目でにらんだりしたのでした。するとその子はちゃんと前へならえでもなんでも知ってるらしく平気で両腕を前へ出して、指さきを<persName ref="#kasuke">嘉助</persName>のせなかへやっと届くくらいにしていたものですから、<persName ref="#kasuke">嘉助</persName>はなんだかせなかがかゆく、くすぐったいというふうにもじもじしていました。</p>
+        <p>「直れ。」先生がまた号令をかけました。</p>
+        <p>「一年から順に前へおい。」そこで一年生はあるき出し、まもなく二年生もあるき出してみんなの前をぐるっと通って、右手の<ruby><rb>下駄箱</rb><rt>げたばこ</rt></ruby>のある入り口にはいって行きました。四年生があるき出すとさっきの子も<persName ref="#kasuke">嘉助</persName>のあとへついて大威張りであるいて行きました。前へ行った子もときどきふりかえって見、あとの者もじっと見ていたのです。</p>
+        <p>まもなくみんなははきものを<ruby><rb>下駄箱</rb><rt>げたばこ</rt></ruby>に入れて教室へはいって、ちょうど外へならんだときのように組ごとに一列に机にすわりました。さっきの子もすまし込んで<persName ref="#kasuke">嘉助</persName>のうしろにすわりました。ところがもう大さわぎです。</p>
+        <p>「わあ、おらの机さ石かけはいってるぞ。」</p>
+        <p>「わあ、おらの机代わってるぞ。」</p>
+        <p>「<persName ref="#kikko">キッコ</persName>、<persName ref="#kikko">キッコ</persName>、うな通信簿持って来たが。おら忘れで来たぢゃあ。」</p>
+        <p>「わあい、<persName ref="#sano">さの</persName>、木ペン借せ、木ペン借せったら。」</p>
+        <p>「わあがない。ひとの雑記帳とってって。」</p>
+        <p>そのとき先生がはいって来ましたのでみんなもさわぎながらとにかく立ちあがり、<persName ref="#ichiro">一郎</persName>がいちばんうしろで、</p>
+        <p>「礼。」と言いました。</p>
+        <p>みんなはおじぎをする間はちょっとしんとなりましたが、それからまたがやがやがやがや言いました。</p>
+        <p>「しずかに、みなさん。しずかにするのです。」先生が言いました。</p>
+        <p>「しっ、<persName ref="#etsuji"><ruby><rb>悦治</rb><rt>えつじ</rt></ruby></persName>、やがましったら、<persName ref="#kasuke">嘉助</persName>え、<ruby><rb>喜</rb><rt>き</rt></ruby>っこう。わあい。」と<persName ref="#ichiro">一郎</persName>がいちばんうしろからあまりさわぐものを一人ずつしかりました。</p>
+        <p>みんなはしんとなりました。</p>
+        <p>先生が言いました。</p>
+        <p>「みなさん、長い夏のお休みはおもしろかったですね。みなさんは朝から水泳ぎもできたし、林の中で<ruby><rb>鷹</rb><rt>たか</rt></ruby>にも負けないくらい高く叫んだり、またにいさんの草刈りについて<placeName ref="#uenohara"><ruby><rb>上</rb><rt>うえ</rt></ruby>の野原</placeName>へ行ったりしたでしょう。けれどももうきのうで休みは終わりました。これからは第二学期で秋です。むかしから秋はいちばんからだもこころもひきしまって、勉強のできる時だといってあるのです。ですから、みなさんもきょうからまたいっしょにしっかり勉強しましょう。それからこのお休みの間にみなさんのお友だちが一人ふえました。それはそこにいる<persName ref="#saburo">高田</persName>さんです。そのかたのおとうさんはこんど会社のご用で<placeName ref="#uenohara">上の野原</placeName>の入り口へおいでになっていられるのです。<persName ref="#saburo">高田</persName>さんはいままでは<placeName ref="#hokkaido">北海道</placeName>の学校におられたのですが、きょうからみなさんのお友だちになるのですから、みなさんは学校で勉強のときも、また<ruby><rb>栗拾</rb><rt>くりひろ</rt></ruby>いや<ruby><rb>魚</rb><rt>さかな</rt></ruby>とりに行くときも、<persName ref="#saburo">高田</persName>さんをさそうようにしなければなりません。わかりましたか。わかった人は手をあげてごらんなさい。」</p>
+        <p>すぐみんなは手をあげました。その<persName ref="#saburo">高田</persName>とよばれた子も勢いよく手をあげましたので、ちょっと先生はわらいましたが、すぐ、</p>
+        <p>「わかりましたね、ではよし。」と言いましたので、みんなは火の消えたように一ぺんに手をおろしました。</p>
+        <p>ところが<persName ref="#kasuke">嘉助</persName>がすぐ、</p>
+        <p>「先生。」といってまた手をあげました。</p>
+        <p>「はい。」先生は<persName ref="#kasuke">嘉助</persName>を指さしました。</p>
+        <p>「<persName ref="#saburo">高田</persName>さん名はなんて言うべな。」</p>
+        <p>「<persName ref="#saburo">高田<ruby><rb>三郎</rb><rt>さぶろう</rt></ruby></persName>さんです。」</p>
+        <p>「わあ、うまい、そりゃ、やっぱり<persName ref="#saburo">又三郎</persName>だな。」<persName ref="#kasuke">嘉助</persName>はまるで手をたたいて机の中で踊るようにしましたので、大きなほうの子どもらはどっと笑いましたが、下の子どもらは何かこわいというふうにしいんとして<persName ref="#saburo">三郎</persName>のほうを見ていたのです。</p>
+        <p>先生はまた言いました。</p>
+        <p>「きょうはみなさんは通信簿と宿題をもってくるのでしたね。持って来た人は机の上へ出してください。私がいま集めに行きますから。」</p>
+        <p>みんなはばたばた<ruby><rb>鞄</rb><rt>かばん</rt></ruby>をあけたりふろしきをといたりして、通信簿と宿題を机の上に出しました。そして先生が一年生のほうから順にそれを集めはじめました。そのときみんなはぎょっとしました。というわけはみんなのうしろのところにいつか一人の<ruby><rb>大人</rb><rt>おとな</rt></ruby>が立っていたのです。その人は白いだぶだぶの麻服を着て黒いてかてかしたはんけちをネクタイの代わりに首に巻いて、手には白い扇をもって軽くじぶんの顔を<ruby><rb>扇</rb><rt>あお</rt></ruby>ぎながら少し笑ってみんなを見おろしていたのです。さあみんなはだんだんしいんとなって、まるで堅くなってしまいました。</p>
+        <p>ところが先生は別にその人を気にかけるふうもなく、順々に通信簿を集めて<persName ref="#saburo">三郎</persName>の席まで行きますと、<persName ref="#saburo">三郎</persName>は通信簿も宿題帳もないかわりに両手をにぎりこぶしにして二つ机の上にのせていたのです。先生はだまってそこを通りすぎ、みんなのを集めてしまうとそれを両手でそろえながらまた教壇に戻りました。</p>
+        <p>「では宿題帳はこの次の土曜日に直して渡しますから、きょう持って来なかった人は、あしたきっと忘れないで持って来てください。それは<persName ref="#etsuji">悦治</persName>さんと<persName ref="#yuji"><ruby><rb>勇治</rb><rt>ゆうじ</rt></ruby></persName>さんと<persName ref="#ryosaku"><ruby><rb>良作</rb><rt>りょうさく</rt></ruby></persName>さんとですね。ではきょうはここまでです。あしたからちゃんといつものとおりのしたくをしておいでなさい。それから四年生と六年生の人は、先生といっしょに教室のお<ruby><rb>掃除</rb><rt>そうじ</rt></ruby>をしましょう。ではここまで。」</p>
+        <p><persName ref="#ichiro">一郎</persName>が気をつけ、と言いみんなは一ぺんに立ちました。うしろの<ruby><rb>大人</rb><rt>おとな</rt></ruby>も扇を下にさげて立ちました。</p>
+        <p>「礼。」先生もみんなも礼をしました。うしろの大人も軽く頭を下げました。それからずうっと下の組の子どもらは一目散に教室を飛び出しましたが、四年生の子どもらはまだもじもじしていました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>はさっきのだぶだぶの白い服の人のところへ行きました。先生も教壇をおりてその人のところへ行きました。</p>
+        <p>「いやどうもご苦労さまでございます。」その大人はていねいに先生に礼をしました。</p>
+        <p>「じきみんなとお友だちになりますから。」先生も礼を返しながら言いました。</p>
+        <p>「何ぶんどうかよろしくおねがいいたします。それでは。」その人はまたていねいに礼をして目で<persName ref="#saburo">三郎</persName>に合図すると、自分は玄関のほうへまわって外へ出て待っていますと、<persName ref="#saburo">三郎</persName>はみんなの見ている中を目をりんとはってだまって昇降口から出て行って追いつき、二人は運動場を通って川下のほうへ歩いて行きました。</p>
+        <p>運動場を出るときその子はこっちをふりむいて、じっと学校やみんなのほうをにらむようにすると、またすたすた白服の<ruby><rb>大人</rb><rt>おとな</rt></ruby>について歩いて行きました。</p>
+        <p>「先生、あの人は<persName ref="#saburo">高田</persName>さんのとうさんですか。」<persName ref="#ichiro">一郎</persName>が<ruby><rb>箒</rb><rt>ほうき</rt></ruby>をもちながら先生にききました。</p>
+        <p>「そうです。」</p>
+        <p>「なんの用で来たべ。」</p>
+        <p>「<placeName ref="#uenohara">上の野原</placeName>の入り口にモリブデンという鉱石ができるので、それをだんだん掘るようにするためだそうです。」</p>
+        <p>「どこらあだりだべな。」</p>
+        <p>「私もまだよくわかりませんが、いつもみなさんが馬をつれて行くみちから、少し川下へ寄ったほうなようです。」</p>
+        <p>「モリブデン何にするべな。」</p>
+        <p>「それは鉄とまぜたり、薬をつくったりするのだそうです。」</p>
+        <p>「そだら<persName ref="#saburo">又三郎</persName>も掘るべが。」<persName ref="#kasuke">嘉助</persName>が言いました。</p>
+        <p>「<persName ref="#saburo">又三郎</persName>だない。<persName ref="#saburo">高田三郎</persName>だぢゃ。」<persName ref="#sataro">佐太郎</persName>が言いました。</p>
+        <p>「<persName ref="#saburo">又三郎</persName>だ<persName ref="#saburo">又三郎</persName>だ。」<persName ref="#kasuke">嘉助</persName>が顔をまっ<ruby><rb>赤</rb><rt>か</rt></ruby>にしてがん張りました。</p>
+        <p>「<persName ref="#kasuke">嘉助</persName>、うなも残ってらば<ruby><rb>掃除</rb><rt>そうじ</rt></ruby>してすけろ。」<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>「わあい。やんたぢゃ。きょう四年生ど六年生だな。」</p>
+        <p><persName ref="#kasuke">嘉助</persName>は大急ぎで教室をはねだして逃げてしまいました。</p>
+        <p>風がまた吹いて来て窓ガラスはまたがたがた鳴り、ぞうきんを入れたバケツにも小さな黒い波をたてました。</p>
+        <p>次の日<persName ref="#ichiro">一郎</persName>はあのおかしな子供が、きょうからほんとうに学校へ来て本を読んだりするかどうか早く見たいような気がして、いつもより早く<persName ref="#kasuke">嘉助</persName>をさそいました。ところが<persName ref="#kasuke">嘉助</persName>のほうは<persName ref="#ichiro">一郎</persName>よりもっとそう考えていたと見えて、とうにごはんもたべ、ふろしきに包んだ本ももって家の前へ出て<persName ref="#ichiro">一郎</persName>を待っていたのでした。二人は途中もいろいろその子のことを話しながら学校へ来ました。すると運動場には小さな子供らがもう七八人集まっていて、棒かくしをしていましたが、その子はまだ来ていませんでした。またきのうのように教室の中にいるのかと思って中をのぞいて見ましたが、教室の中はしいんとしてだれもいず、黒板の上にはきのう掃除のときぞうきんでふいた跡がかわいてぼんやり白い<ruby><rb>縞</rb><rt>しま</rt></ruby>になっていました。</p>
+        <p>「きのうのやつまだ来てないな。」<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>「うん。」<persName ref="#kasuke">嘉助</persName>も言ってそこらを見まわしました。</p>
+        <p><persName ref="#ichiro">一郎</persName>はそこで鉄棒の下へ行って、じゃみ上がりというやり方で、無理やりに鉄棒の上にのぼり両腕をだんだん寄せて右の腕木に行くと、そこへ腰掛けてきのう<persName ref="#saburo">三郎</persName>の行ったほうをじっと見おろして待っていました。谷川はそっちのほうへきらきら光ってながれて行き、その下の山の上のほうでは風も吹いているらしく、ときどき<ruby><rb>萱</rb><rt>かや</rt></ruby>が白く波立っていました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>もやっぱりその柱の下でじっとそっちを見て待っていました。ところが二人はそんなに長く待つこともありませんでした。それは突然<persName ref="#saburo">三郎</persName>がその下手のみちから灰いろの<ruby><rb>鞄</rb><rt>かばん</rt></ruby>を右手にかかえて走るようにして出て来たのです。</p>
+        <p>「来たぞ。」と<persName ref="#ichiro">一郎</persName>が思わず下にいる<persName ref="#kasuke">嘉助</persName>へ叫ぼうとしていますと、早くも<persName ref="#saburo">三郎</persName>はどてをぐるっとまわって、どんどん正門をはいって来ると、</p>
+        <p>「お早う。」とはっきり言いました。みんなはいっしょにそっちをふり向きましたが、一人も返事をしたものがありませんでした。</p>
+        <p>それは返事をしないのではなくて、みんなは先生にはいつでも「お早うございます。」というように習っていたのですが、お互いに「お早う。」なんて言ったことがなかったのに<persName ref="#saburo">三郎</persName>にそう言われても、<persName ref="#ichiro">一郎</persName>や<persName ref="#kasuke">嘉助</persName>はあんまりにわかで、また勢いがいいのでとうとう<ruby><rb>臆</rb><rt>おく</rt></ruby>してしまって<persName ref="#ichiro">一郎</persName>も<persName ref="#kasuke">嘉助</persName>も口の中でお早うというかわりに、もにゃもにゃっと言ってしまったのでした。</p>
+        <p>ところが<persName ref="#saburo">三郎</persName>のほうはべつだんそれを苦にするふうもなく、二三歩また前へ進むとじっと立って、そのまっ黒な目でぐるっと運動場じゅうを見まわしました。そしてしばらくだれか遊ぶ相手がないかさがしているようでした。けれどもみんなきょろきょろ<persName ref="#saburo">三郎</persName>のほうはみていても、やはり忙しそうに棒かくしをしたり<persName ref="#saburo">三郎</persName>のほうへ行くものがありませんでした。<persName ref="#saburo">三郎</persName>はちょっと具合が悪いようにそこにつっ立っていましたが、また運動場をもう一度見まわしました。</p>
+        <p>それからぜんたいこの運動場は<ruby><rb>何間</rb><rt>なんげん</rt></ruby>あるかというように、正門から玄関まで大またに歩数を数えながら歩きはじめました。<persName ref="#ichiro">一郎</persName>は急いで鉄棒をはねおりて<persName ref="#kasuke">嘉助</persName>とならんで、息をこらしてそれを見ていました。</p>
+        <p>そのうち<persName ref="#saburo">三郎</persName>は向こうの玄関の前まで行ってしまうと、こっちへ向いてしばらく暗算をするように少し首をまげて立っていました。</p>
+        <p>みんなはやはりきろきろそっちを見ています。<persName ref="#saburo">三郎</persName>は少し困ったように両手をうしろへ組むと向こう側の土手のほうへ職員室の前を通って歩きだしました。</p>
+        <p>その時風がざあっと吹いて来て土手の草はざわざわ波になり、運動場のまん中でさあっと<ruby><rb>塵</rb><rt>ちり</rt></ruby>があがり、それが玄関の前まで行くと、きりきりとまわって小さなつむじ風になって、黄いろな塵は<ruby><rb>瓶</rb><rt>びん</rt></ruby>をさかさまにしたような形になって屋根より高くのぼりました。</p>
+        <p>すると<persName ref="#kasuke">嘉助</persName>が突然高く言いました。</p>
+        <p>「そうだ。やっぱりあいづ<persName ref="#saburo">又三郎</persName>だぞ。あいづ何かするときっと風吹いてくるぞ。」</p>
+        <p>「うん。」<persName ref="#ichiro">一郎</persName>はどうだかわからないと思いながらもだまってそっちを見ていました。<persName ref="#saburo">三郎</persName>はそんなことにはかまわず土手のほうへやはりすたすた歩いて行きます。</p>
+        <p>そのとき先生がいつものように呼び子をもって玄関を出て来たのです。</p>
+        <p>「お早うございます。」小さな子どもらはみんな集まりました。</p>
+        <p>「お早う。」先生はちらっと運動場を見まわしてから、「ではならんで。」と言いながらビルルッと笛を吹きました。</p>
+        <p>みんなは集まってきてきのうのとおりきちんとならびました。<persName ref="#saburo">三郎</persName>もきのう言われた所へちゃんと立っています。</p>
+        <p>先生はお日さまがまっ正面なのですこしまぶしそうにしながら号令をだんだんかけて、とうとうみんなは昇降口から教室へはいりました。そして礼がすむと先生は、</p>
+        <p>「ではみなさんきょうから勉強をはじめましょう。みなさんはちゃんとお道具をもってきましたね。では一年生（と二年生）の人はお習字のお手本と<ruby><rb>硯</rb><rt>すずり</rt></ruby>と紙を出して、二年生と四年生の人は算術帳と雑記帳と鉛筆を出して、五年生と六年生の人は国語の本を出してください。」</p>
+        <p>さあするとあっちでもこっちでも大さわぎがはじまりました。中にも<persName ref="#saburo">三郎</persName>のすぐ横の四年生の机の<persName ref="#sataro">佐太郎</persName>が、いきなり手をのばして二年生のかよの鉛筆をひらりととってしまったのです。かよは<persName ref="#sataro">佐太郎</persName>の妹でした。するとかよは、</p>
+        <p>「うわあ、<ruby><rb>兄</rb><rt>あい</rt></ruby>な、木ペン<ruby><rb>取</rb><rt>と</rt></ruby>てわかんないな。」と言いながら取り返そうとしますと<persName ref="#sataro">佐太郎</persName>が、</p>
+        <p>「わあ、こいつおれのだなあ。」と言いながら鉛筆をふところの中へ入れて、あとはシナ人がおじぎするときのように両手を<ruby><rb>袖</rb><rt>そで</rt></ruby>へ入れて、机へぴったり胸をくっつけました。するとかよは立って来て、</p>
+        <p>「<ruby><rb>兄</rb><rt>あい</rt></ruby>な、兄なの木ペンはきのう小屋でなくしてしまったけなあ。よこせったら。」と言いながら一生けん命とり返そうとしましたが、どうしてももう<persName ref="#sataro">佐太郎</persName>は机にくっついた大きな<ruby><rb>蟹</rb><rt>かに</rt></ruby>の化石みたいになっているので、とうとうかよは立ったまま口を大きくまげて泣きだしそうになりました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は国語の本をちゃんと机にのせて困ったようにしてこれを見ていましたが、かよがとうとうぼろぼろ涙をこぼしたのを見ると、だまって右手に持っていた半分ばかりになった鉛筆を<persName ref="#sataro">佐太郎</persName>の目の前の机に置きました。</p>
+        <p>すると<persName ref="#sataro">佐太郎</persName>はにわかに元気になって、むっくり起き上がりました。そして、</p>
+        <p>「くれる？」と<persName ref="#saburo">三郎</persName>にききました。<persName ref="#saburo">三郎</persName>はちょっとまごついたようでしたが覚悟したように、「うん。」と言いました。すると<persName ref="#sataro">佐太郎</persName>はいきなりわらい出してふところの鉛筆をかよの小さな赤い手に持たせました。</p>
+        <p>先生は向こうで一年生の子の<ruby><rb>硯</rb><rt>すずり</rt></ruby>に水をついでやったりしていましたし、<persName ref="#kasuke">嘉助</persName>は<persName ref="#saburo">三郎</persName>の前ですから知りませんでしたが、<persName ref="#ichiro">一郎</persName>はこれをいちばんうしろでちゃんと見ていました。そしてまるでなんと言ったらいいかわからない、変な気持ちがして歯をきりきり言わせました。</p>
+        <p>「では二年生のひとはお休みの前にならった引き算をもう一ぺん習ってみましょう。これを勘定してごらんなさい。」先生は黒板にと書きました。二年生のこどもらはみんな一生けん命にそれを雑記帳にうつしました。かよも頭を雑記帳へくっつけるようにしています。「四年生の人はこれを置いて。」と書きました。</p>
+        <p>四年生は<persName ref="#sataro">佐太郎</persName>をはじめ<persName ref="#kizo">喜蔵</persName>も<persName ref="#kosuke2"><ruby><rb>甲助</rb><rt>こうすけ</rt></ruby></persName>もみんなそれをうつしました。</p>
+        <p>「五年生の人は<ruby><rb>読本</rb><rt>とくほん</rt></ruby>の（二字空白）ページの（二字空白）課をひらいて声をたてないで読めるだけ読んでごらんなさい。わからない字は雑記帳へ拾っておくのです。」五年生もみんな言われたとおりしはじめました。</p>
+        <p>「<persName ref="#ichiro">一郎</persName>さんは読本の（二字空白）ページをしらべてやはり知らない字を書き抜いてください。」</p>
+        <p>それがすむと先生はまた教壇をおりて、一年生の習字を一人一人見てあるきました。</p>
+        <p><persName ref="#saburo">三郎</persName>は両手で本をちゃんと机の上へもって、言われたところを息もつかずじっと読んでいました。けれども雑記帳へは字を一つも書き抜いていませんでした。それはほんとうに知らない字が一つもないのか、たった一本の鉛筆を<persName ref="#sataro">佐太郎</persName>にやってしまったためか、どっちともわかりませんでした。</p>
+        <p>そのうち先生は教壇へ戻って二年生と四年生の算術の計算をして見せてまた新しい問題を出すと、今度は五年生の生徒の雑記帳へ書いた知らない字を黒板へ書いて、それにかなとわけをつけました。そして、</p>
+        <p>「では<persName ref="#kasuke">嘉助</persName>さん、ここを読んで。」と言いました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>は二三度ひっかかりながら先生に教えられて読みました。</p>
+        <p><persName ref="#saburo">三郎</persName>もだまって聞いていました。</p>
+        <p>先生も本をとって、じっと聞いていましたが、十行ばかり読むと、</p>
+        <p>「そこまで。」と言ってこんどは先生が読みました。</p>
+        <p>そうして一まわり済むと、先生はだんだんみんなの道具をしまわせました。</p>
+        <p>それから「ではここまで。」と言って教壇に立ちますと<persName ref="#ichiro">一郎</persName>がうしろで、</p>
+        <p>「気をつけい。」と言いました。そして礼がすむと、みんな順に外へ出てこんどは外へならばずにみんな別れ別れになって遊びました。</p>
+        <p>二時間目は一年生から六年生までみんな唱歌でした。そして先生がマンドリンを持って出て来て、みんなはいままでに習ったのを先生のマンドリンについて五つもうたいました。</p>
+        <p><persName ref="#saburo">三郎</persName>もみんな知っていて、みんなどんどん歌いました。そしてこの時間はたいへん早くたってしまいました。</p>
+        <p>三時間目になるとこんどは二年生と四年生が国語で、五年生と六年生が数学でした。先生はまた黒板に問題を書いて五年生と六年生に計算させました。しばらくたって<persName ref="#ichiro">一郎</persName>が答えを書いてしまうと、<persName ref="#saburo">三郎</persName>のほうをちょっと見ました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は、どこから出したか小さな消し炭で雑記帳の上へがりがりと大きく運算していたのです。</p>
+        <p>次の朝、空はよく晴れて谷川はさらさら鳴りました。<persName ref="#ichiro">一郎</persName>は途中で<persName ref="#kasuke">嘉助</persName>と<persName ref="#sataro">佐太郎</persName>と<persName ref="#etsuji">悦治</persName>をさそっていっしょに<persName ref="#saburo">三郎</persName>のうちのほうへ行きました。</p>
+        <p>学校の少し下流で谷川をわたって、それから岸で<ruby><rb>楊</rb><rt>やなぎ</rt></ruby>の枝をみんなで一本ずつ折って、青い皮をくるくるはいで<ruby><rb>鞭</rb><rt>むち</rt></ruby>をこしらえて手でひゅうひゅう振りながら、<placeName ref="#uenohara">上の野原</placeName>への道をだんだんのぼって行きました。みんなは早くも登りながら息をはあはあしました。</p>
+        <p>「<persName ref="#saburo">又三郎</persName>ほんとにあそごのわき水まで来て待ぢでるべが。」</p>
+        <p>「待ぢでるんだ。<persName ref="#saburo">又三郎</persName>うそこがないもな。」</p>
+        <p>「ああ暑う、風吹げばいいな。」</p>
+        <p>「どごがらだが風吹いでるぞ。」</p>
+        <p>「<persName ref="#saburo">又三郎</persName>吹がせでらべも。」</p>
+        <p>「なんだがお日さんぼやっとして来たな。」</p>
+        <p>空に少しばかりの白い雲が出ました。そしてもうだいぶのぼっていました。谷のみんなの家がずうっと下に見え、<persName ref="#ichiro">一郎</persName>のうちの木小屋の屋根が白く光っています。</p>
+        <p>道が林の中に入り、しばらく道はじめじめして、あたりは見えなくなりました。そしてまもなくみんなは約束のわき水の近くに来ました。するとそこから、</p>
+        <p>「おうい。みんな来たかい。」と<persName ref="#saburo">三郎</persName>の高く叫ぶ声がしました。</p>
+        <p>みんなはまるでせかせかと走ってのぼりました。向こうの曲がり<ruby><rb>角</rb><rt>かど</rt></ruby>の所に<persName ref="#saburo">三郎</persName>が小さなくちびるをきっと結んだまま、三人のかけ上って来るのを見ていました。</p>
+        <p>三人はやっと<persName ref="#saburo">三郎</persName>の前まで来ました。けれどもあんまり息がはあはあしてすぐには何も言えませんでした。<persName ref="#kasuke">嘉助</persName>などはあんまりもどかしいもんですから、空へ向いて「ホッホウ。」と叫んで早く息を吐いてしまおうとしました。すると<persName ref="#saburo">三郎</persName>は大きな声で笑いました。</p>
+        <p>「ずいぶん待ったぞ。それにきょうは雨が降るかもしれないそうだよ。」</p>
+        <p>「そだら早ぐ行ぐべすさ。おらまんつ水飲んでぐ。」三人は汗をふいてしゃがんで、まっ白な岩からごぼごぼ<ruby><rb>噴</rb><rt>ふ</rt></ruby>きだす冷たい水を何べんもすくってのみました。</p>
+        <p>「ぼくのうちはここからすぐなんだ。ちょうどあの谷の上あたりなんだ。みんなで帰りに寄ろうねえ。」</p>
+        <p>「うん。まんつ野原さ行ぐべすさ。」</p>
+        <p>みんながまたあるきはじめたときわき水は何かを知らせるようにぐうっと鳴り、そこらの木もなんだかざあっと鳴ったようでした。</p>
+        <p>五人は林のすその<ruby><rb>藪</rb><rt>やぶ</rt></ruby>の間を行ったり岩かけの小さくくずれる所を何べんも通ったりして、もう<placeName ref="#uenohara">上の野原</placeName>の入り口に近くなりました。</p>
+        <p>みんなはそこまで来ると来たほうからまた西のほうをながめました。</p>
+        <p>光ったりかげったり幾通りにも重なったたくさんの丘の向こうに、川に沿ったほんとうの野原がぼんやり<ruby><rb>碧</rb><rt>あお</rt></ruby>くひろがっているのでした。</p>
+        <p>「ありゃ、あいづ川だぞ。」</p>
+        <p>「<persName ref="#kasuga-myojin"><ruby><rb>春日明神</rb><rt>かすがみょうじん</rt></ruby></persName>さんの帯のようだな。」<persName ref="#saburo">三郎</persName>が言いました。</p>
+        <p>「何のようだど。」<persName ref="#ichiro">一郎</persName>がききました。</p>
+        <p>「<persName ref="#kasuga-myojin">春日明神</persName>さんの帯のようだ。」</p>
+        <p>「うな神さんの帯見だごとあるが。」</p>
+        <p>「ぼく<placeName ref="#hokkaido">北海道</placeName>で見たよ。」</p>
+        <p>みんなはなんのことだかわからずだまってしまいました。</p>
+        <p>ほんとうにそこはもう<placeName ref="#uenohara">上の野原</placeName>の入り口で、きれいに刈られた草の中に一本の大きな<ruby><rb>栗</rb><rt>くり</rt></ruby>の木が立って、その幹は根もとの所がまっ黒に焦げて大きな<ruby><rb>洞</rb><rt>ほら</rt></ruby>のようになり、その枝には古い<ruby><rb>繩</rb><rt>なわ</rt></ruby>や、切れたわらじなどがつるしてありました。</p>
+        <p>「もう少し行ぐづどみんなして草刈ってるぞ。それから馬のいるどごもあるぞ。」<persName ref="#ichiro">一郎</persName>は言いながら先に立って刈った草のなかの一ぽんみちをぐんぐん歩きました。</p>
+        <p><persName ref="#saburo">三郎</persName>はその次に立って、</p>
+        <p>「ここには<ruby><rb>熊</rb><rt>くま</rt></ruby>いないから馬をはなしておいてもいいなあ。」と言って歩きました。</p>
+        <p>しばらく行くとみちばたの大きな<ruby><rb>楢</rb><rt>なら</rt></ruby>の木の下に、繩で編んだ袋が投げ出してあって、たくさんの草たばがあっちにもこっちにもころがっていました。</p>
+        <p>せなかに草束をしょった二匹の馬が、<persName ref="#ichiro">一郎</persName>を見て鼻をぷるぷる鳴らしました。</p>
+        <p>「<ruby><rb>兄</rb><rt>あい</rt></ruby>な、いるが。<ruby><rb>兄</rb><rt>あい</rt></ruby>な、来たぞ。」<persName ref="#ichiro">一郎</persName>は汗をぬぐいながら叫びました。</p>
+        <p>「おおい。ああい。そこにいろ。今行ぐぞ。」ずうっと向こうのくぼみで、<persName ref="#ichiro">一郎</persName>のにいさんの声がしました。</p>
+        <p>日はぱっと明るくなり、にいさんがそっちの草の中から笑って出て来ました。</p>
+        <p>「<ruby><rb>善</rb><rt>ゆ</rt></ruby>ぐ来たな。みんなも連れで来たのが。<ruby><rb>善</rb><rt>ゆ</rt></ruby>ぐ来た。戻りに馬こ連れでてけろな。きょうあ<ruby><rb>午</rb><rt>ひる</rt></ruby>まがらきっと曇る。おらもう少し草集めて<ruby><rb>仕舞</rb><rt>しむ</rt></ruby>がらな、うなだ遊ばばあの土手の中さはいってろ。まだ牧馬の馬二十匹ばかりはいるがらな。」</p>
+        <p>にいさんは向こうへ行こうとして、振り向いてまた言いました。</p>
+        <p>「土手がら外さ出はるなよ。迷ってしまうづどあぶないがらな。<ruby><rb>午</rb><rt>ひる</rt></ruby>まになったらまた来るがら。」</p>
+        <p>「うん。土手の中にいるがら。」</p>
+        <p>そして<persName ref="#ichiro">一郎</persName>のにいさんは行ってしまいました。</p>
+        <p>空にはうすい雲がすっかりかかり、太陽は白い鏡のようになって、雲と反対に<ruby><rb>馳</rb><rt>は</rt></ruby>せました。風が出て来てまだ刈っていない草は一面に波を立てます。<persName ref="#ichiro">一郎</persName>はさきにたって小さなみちをまっすぐに行くと、まもなくどてになりました。その土手の一とこちぎれたところに二本の丸太の棒を横にわたしてありました。<persName ref="#etsuji">悦治</persName>がそれをくぐろうとしますと、<persName ref="#kasuke">嘉助</persName>が、</p>
+        <p>「おらこったなものはずせだぞ。」と言いながら片っぽうのはじをぬいて下におろしましたのでみんなはそれをはね越えて中にはいりました。</p>
+        <p>向こうの少し小高いところにてかてか光る茶いろの馬が七匹ばかり集まって、しっぽをゆるやかにばしゃばしゃふっているのです。</p>
+        <p>「この馬みんな千円以上するづもな。来年がらみんな競馬さも出はるのだづぢゃい。」<persName ref="#ichiro">一郎</persName>はそばへ行きながら言いました。</p>
+        <p>馬はみんないままでさびしくってしようなかったというように<persName ref="#ichiro">一郎</persName>たちのほうへ寄ってきました。そして鼻づらをずうっとのばして何かほしそうにするのです。</p>
+        <p>「ははあ、塩をけろづのだな。」みんなは言いながら手を出して馬になめさせたりしましたが、<persName ref="#saburo">三郎</persName>だけは馬になれていないらしく気味わるそうに手をポケットへ入れてしまいました。</p>
+        <p>「わあ、<persName ref="#saburo">又三郎</persName>馬おっかながるぢゃい。」と<persName ref="#etsuji">悦治</persName>が言いました。すると<persName ref="#saburo">三郎</persName>は、</p>
+        <p>「こわくなんかないやい。」と言いながらすぐポケットの手を馬の鼻づらへのばしましたが、馬が首をのばして舌をべろりと出すと、さっと顔いろを変えてすばやくまた手をポケットへ入れてしまいました。</p>
+        <p>「わあい、<persName ref="#saburo">又三郎</persName>馬おっかながるぢゃい。」<persName ref="#etsuji">悦治</persName>がまた言いました。すると<persName ref="#saburo">三郎</persName>はすっかり顔を赤くしてしばらくもじもじしていましたが、</p>
+        <p>「そんなら、みんなで競馬やるか。」と言いました。</p>
+        <p>競馬ってどうするのかとみんな思いました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は、</p>
+        <p>「ぼく競馬何べんも見たぞ。けれどもこの馬みんな<ruby><rb>鞍</rb><rt>くら</rt></ruby>がないから乗れないや。みんなで一匹ずつ馬を追って、はじめに向こうの、そら、あの大きな木のところに着いたものを一等にしよう。」</p>
+        <p>「そいづおもしろいな。」<persName ref="#kasuke">嘉助</persName>が言いました。</p>
+        <p>「しからえるぞ。牧夫に見つけらえでがら。」</p>
+        <p>「大丈夫だよ。競馬に出る馬なんか練習をしていないといけないんだい。」<persName ref="#saburo">三郎</persName>が言いました。</p>
+        <p>「よしおらこの馬だぞ。」</p>
+        <p>「おらこの馬だ。」</p>
+        <p>「そんならぼくはこの馬でもいいや。」みんなは<ruby><rb>楊</rb><rt>やなぎ</rt></ruby>の枝や<ruby><rb>萱</rb><rt>かや</rt></ruby>の穂でしゅうと言いながら馬を軽く打ちました。</p>
+        <p>ところが馬はちっともびくともしませんでした。やはり下へ首をたれて草をかいだり、首をのばしてそこらのけしきをもっとよく見るというようにしているのです。</p>
+        <p><persName ref="#ichiro">一郎</persName>がそこで両手をぴしゃんと打ち合わせて、だあ、と言いました。</p>
+        <p>するとにわかに七匹ともまるでたてがみをそろえてかけ出したのです。</p>
+        <p>「うまあい。」<persName ref="#kasuke">嘉助</persName>ははね上がって走りました。けれどもそれはどうも競馬にはならないのでした。</p>
+        <p>第一、馬はどこまでも顔をならべて走るのでしたし、それにそんなに競馬するくらい早く走るのでもなかったのです。それでもみんなはおもしろがって、だあだと言いながら一生けん命そのあとを追いました。</p>
+        <p>馬はすこし行くと立ちどまりそうになりました。みんなもすこしはあはあしましたが、こらえてまた馬を追いました。するといつか馬はぐるっとさっきの小高いところをまわって、さっき五人ではいって来たどての切れた所へ来たのです。</p>
+        <p>「あ、馬出はる、馬出はる。押えろ　押えろ。」<persName ref="#ichiro">一郎</persName>はまっ<ruby><rb>青</rb><rt>さお</rt></ruby>になって叫びました。じっさい馬はどての外へ出たのらしいのでした。どんどん走って、もうさっきの丸太の棒を越えそうになりました。</p>
+        <p><persName ref="#ichiro">一郎</persName>はまるであわてて、</p>
+        <p>「どう、どう、どうどう。」と言いながら一生けん命走って行って、やっとそこへ着いてまるでころぶようにしながら手をひろげたときは、そのときはもう二匹は<ruby><rb>柵</rb><rt>さく</rt></ruby>の外へ出ていたのです。</p>
+        <p>「早ぐ来て押えろ。早ぐ来て。」<persName ref="#ichiro">一郎</persName>は息も切れるように叫びながら丸太棒をもとのようにしました。</p>
+        <p>四人は走って行って急いで丸太をくぐって外へ出ますと、二匹の馬はもう走るでもなく、どての外に立って草を口で引っぱって抜くようにしています。</p>
+        <p>「そろそろど押えろよ。そろそろど。」と言いながら<persName ref="#ichiro">一郎</persName>は一ぴきのくつわについた札のところをしっかり押えました。<persName ref="#kasuke">嘉助</persName>と<persName ref="#saburo">三郎</persName>がもう一匹を押えようとそばへ寄りますと、馬はまるでおどろいたようにどてへ沿って一目散に南のほうへ走ってしまいました。</p>
+        <p>「<ruby><rb>兄</rb><rt>あい</rt></ruby>な、馬あ逃げる、馬あ逃げる。<ruby><rb>兄</rb><rt>あい</rt></ruby>な、馬逃げる。」とうしろで<persName ref="#ichiro">一郎</persName>が一生けん命叫んでいます。<persName ref="#saburo">三郎</persName>と<persName ref="#kasuke">嘉助</persName>は一生けん命馬を追いました。</p>
+        <p>ところが馬はもう今度こそほんとうに逃げるつもりらしかったのです。まるで<ruby><rb>丈</rb><rt>たけ</rt></ruby>ぐらいある草をわけて高みになったり低くなったり、どこまでも走りました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>はもう足がしびれてしまって、どこをどう走っているのかわからなくなりました。</p>
+        <p>それからまわりがまっ<ruby><rb>蒼</rb><rt>さお</rt></ruby>になって、ぐるぐる回り、とうとう深い草の中に倒れてしまいました。馬の赤いたてがみと、あとを追って行く<persName ref="#saburo">三郎</persName>の白いシャッポが終わりにちらっと見えました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>は、仰向けになって空を見ました。空がまっ白に光って、ぐるぐる回り、そのこちらを薄いねずみ色の雲が、速く速く走っています。そしてカンカン鳴っています。</p>
+        <p><persName ref="#kasuke">嘉助</persName>はやっと起き上がって、せかせか息しながら馬の行ったほうに歩き出しました。草の中には、今馬と<persName ref="#saburo">三郎</persName>が通った跡らしく、かすかな道のようなものがありました。<persName ref="#kasuke">嘉助</persName>は笑いました。そして、（ふん、なあに馬どこかでこわくなってのっこり立ってるさ、）と思いました。</p>
+        <p>そこで<persName ref="#kasuke">嘉助</persName>は、一生懸命それをつけて行きました。</p>
+        <p>ところがその跡のようなものは、まだ百歩も行かないうちに、おとこえしや、すてきに背の高いあざみの中で、二つにも三つにも分かれてしまって、どれがどれやらいっこうわからなくなってしまいました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>は「おうい。」と叫びました。</p>
+        <p>「おう。」とどこかで<persName ref="#saburo">三郎</persName>が叫んでいるようです。思い切って、そのまん中のを進みました。</p>
+        <p>けれどもそれも、時々切れたり、馬の歩かないような急な所を横ざまに過ぎたりするのでした。</p>
+        <p>空はたいへん暗く重くなり、まわりがぼうっとかすんで来ました。冷たい風が、草を渡りはじめ、もう雲や霧が切れ切れになって目の前をぐんぐん通り過ぎて行きました。</p>
+        <p>（ああ、こいつは悪くなって来た。みんな悪いことはこれから<ruby><rb>集</rb><rt>たが</rt></ruby>ってやって来るのだ。）と<persName ref="#kasuke">嘉助</persName>は思いました。全くそのとおり、にわかに馬の通った跡は草の中でなくなってしまいました。</p>
+        <p>（ああ、悪くなった、悪くなった。）<persName ref="#kasuke">嘉助</persName>は胸をどきどきさせました。</p>
+        <p>草がからだを曲げて、パチパチ言ったり、さらさら鳴ったりしました。霧がことに<ruby><rb>滋</rb><rt>しげ</rt></ruby>くなって、着物はすっかりしめってしまいました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>は<ruby><rb>咽喉</rb><rt>のど</rt></ruby>いっぱい叫びました。</p>
+        <p>「<persName ref="#ichiro">一郎</persName>、<persName ref="#ichiro">一郎</persName>、こっちさ来う。」ところがなんの返事も聞こえません。黒板から降る白墨の粉のような、暗い冷たい霧の粒が、そこら一面踊りまわり、あたりがにわかにシインとして、陰気に陰気になりました。草からは、もうしずくの音がポタリポタリと聞こえて来ます。</p>
+        <p><persName ref="#kasuke">嘉助</persName>は、もう早く<persName ref="#ichiro">一郎</persName>たちの所へ戻ろうとして急いで引っ返しました。けれどもどうも、それは前に来た所とは違っていたようでした。第一、あざみがあんまりたくさんありましたし、それに草の底にさっきなかった岩かけが、たびたびころがっていました。そしてとうとう聞いたこともない大きな谷が、いきなり目の前に現われました。すすきがざわざわざわっと鳴り、向こうのほうは底知れずの谷のように、霧の中に消えているではありませんか。</p>
+        <p>風が来ると、すすきの穂は細いたくさんの手をいっぱいのばして、忙しく振って、</p>
+        <p>「あ、西さん、あ、東さん、あ、西さん、あ、南さん、あ、西さん。」なんて言っているようでした。</p>
+        <p><persName ref="#kasuke">嘉助</persName>はあんまり見っともなかったので、目をつむって横を向きました。そして急いで引っ返しました。小さな黒い道がいきなり草の中に出て来ました。それはたくさんの馬のひづめの跡でできあがっていたのです。<persName ref="#kasuke">嘉助</persName>は夢中で短い笑い声をあげて、その道をぐんぐん歩きました。</p>
+        <p>けれども、たよりのないことは、みちのはばが五寸ぐらいになったり、また三尺ぐらいに変わったり、おまけになんだかぐるっと回っているように思われました。そして、とうとう大きなてっぺんの焼けた<ruby><rb>栗</rb><rt>くり</rt></ruby>の木の前まで来た時、ぼんやり幾つにも別れてしまいました。</p>
+        <p>そこはたぶんは、野馬の集まり場所であったでしょう。霧の中に丸い広場のように見えたのです。</p>
+        <p><persName ref="#kasuke">嘉助</persName>はがっかりして、黒い道をまた戻りはじめました。知らない草穂が静かにゆらぎ、少し強い風が来る時は、どこかで何かが合図をしてでもいるように、一面の草が、それ来たっとみなからだを伏せて避けました。</p>
+        <p>空が光ってキインキインと鳴っています。</p>
+        <p>それからすぐ目の前の霧の中に、家の形の大きな黒いものがあらわれました。<persName ref="#kasuke">嘉助</persName>はしばらく自分の目を疑って立ちどまっていましたが、やはりどうしても家らしかったので、こわごわもっと近寄って見ますと、それは冷たい大きな黒い岩でした。</p>
+        <p>空がくるくるくるっと白く揺らぎ、草がバラッと一度にしずくを払いました。</p>
+        <p>（間違って原の向こう側へおりれば、<persName ref="#saburo">又三郎</persName>もおれも、もう死ぬばかりだ。）と<persName ref="#kasuke">嘉助</persName>は半分思うように半分つぶやくようにしました。それから叫びました。</p>
+        <p>「<persName ref="#ichiro">一郎</persName>、<persName ref="#ichiro">一郎</persName>、いるが。<persName ref="#ichiro">一郎</persName>。」</p>
+        <p>また明るくなりました。草がみないっせいによろこびの息をします。</p>
+        <p>「<placeName ref="#isado"><ruby><rb>伊佐戸</rb><rt>いさど</rt></ruby></placeName>の町の、電気工夫の<ruby><rb>童</rb><rt>わらす</rt></ruby>あ、山男に手足いしばらえてたふだ。」といつかだれかの話した言葉が、はっきり耳に聞こえて来ます。</p>
+        <p>そして、黒い道がにわかに消えてしまいました。あたりがほんのしばらくしいんとなりました。それから非常に強い風が吹いて来ました。</p>
+        <p>空が旗のようにぱたぱた光って飜り、火花がパチパチパチッと燃えました。<persName ref="#kasuke">嘉助</persName>はとうとう草の中に倒れてねむってしまいました。</p>
+        <p>＊</p>
+        <p>そんなことはみんなどこかの遠いできごとのようでした。</p>
+        <p>もう<persName ref="#saburo">又三郎</persName>がすぐ目の前に足を投げだしてだまって空を見あげているのです。いつかいつものねずみいろの上着の上にガラスのマントを着ているのです。それから光るガラスの<ruby><rb>靴</rb><rt>くつ</rt></ruby>をはいているのです。</p>
+        <p><persName ref="#saburo">又三郎</persName>の肩には<ruby><rb>栗</rb><rt>くり</rt></ruby>の木の影が青く落ちています。<persName ref="#saburo">又三郎</persName>の影は、また青く草に落ちています。そして風がどんどんどんどん吹いているのです。</p>
+        <p><persName ref="#saburo">又三郎</persName>は笑いもしなければ物も言いません。ただ小さなくちびるを強そうにきっと結んだまま黙ってそらを見ています。いきなり<persName ref="#saburo">又三郎</persName>はひらっとそらへ飛びあがりました。ガラスのマントがギラギラ光りました。</p>
+        <p>＊</p>
+        <p>ふと<persName ref="#kasuke">嘉助</persName>は目をひらきました。灰いろの霧が速く速く飛んでいます。</p>
+        <p>そして馬がすぐ目の前にのっそりと立っていたのです。その目は<persName ref="#kasuke">嘉助</persName>を恐れて横のほうを向いていました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>ははね上がって馬の名札を押えました。そのうしろから<persName ref="#saburo">三郎</persName>がまるで色のなくなったくちびるをきっと結んでこっちへ出てきました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>はぶるぶるふるえました。</p>
+        <p>「おうい。」霧の中から<persName ref="#ichiro">一郎</persName>のにいさんの声がしました。雷もごろごろ鳴っています。</p>
+        <p>「おおい、<persName ref="#kasuke">嘉助</persName>。いるが。<persName ref="#kasuke">嘉助</persName>。」<persName ref="#ichiro">一郎</persName>の声もしました。<persName ref="#kasuke">嘉助</persName>はよろこんでとびあがりました。</p>
+        <p>「おおい。いる、いる。<persName ref="#ichiro">一郎</persName>。おおい。」</p>
+        <p><persName ref="#ichiro">一郎</persName>のにいさんと<persName ref="#ichiro">一郎</persName>が、とつぜん目の前に立ちました。<persName ref="#kasuke">嘉助</persName>はにわかに泣き出しました。</p>
+        <p>「捜したぞ。あぶながったぞ。すっかりぬれだな。どう。」<persName ref="#ichiro">一郎</persName>のにいさんはなれた手つきで馬の首を抱いて、もってきたくつわをすばやく馬のくちにはめました。</p>
+        <p>「さあ、あべさ。」</p>
+        <p>「<persName ref="#saburo">又三郎</persName>びっくりしたべあ。」<persName ref="#ichiro">一郎</persName>が<persName ref="#saburo">三郎</persName>に言いました。<persName ref="#saburo">三郎</persName>はだまって、やっぱりきっと口を結んでうなずきました。</p>
+        <p>みんなは<persName ref="#ichiro">一郎</persName>のにいさんについて、ゆるい傾斜を二つほどのぼり降りしました。それから、黒い大きな道について、しばらく歩きました。</p>
+        <p>稲光りが二度ばかり、かすかに白くひらめきました。草を焼くにおいがして、霧の中を煙がぼうっと流れています。</p>
+        <p><persName ref="#ichiro">一郎</persName>のにいさんが叫びました。</p>
+        <p>「おじいさん。いだ、いだ。みんないだ。」</p>
+        <p>おじいさんは霧の中に立っていて、</p>
+        <p>「ああ心配した、心配した。ああよがった。おお<persName ref="#kasuke">嘉助</persName>。寒がべあ、さあはいれ。」と言いました。<persName ref="#kasuke">嘉助</persName>は<persName ref="#ichiro">一郎</persName>と同じようにやはりこのおじいさんの孫なようでした。</p>
+        <p>半分に焼けた大きな<ruby><rb>栗</rb><rt>くり</rt></ruby>の木の根もとに、草で作った小さな囲いがあって、チョロチョロ赤い火が燃えていました。</p>
+        <p><persName ref="#ichiro">一郎</persName>のにいさんは馬を<ruby><rb>楢</rb><rt>なら</rt></ruby>の木につなぎました。</p>
+        <p>馬もひひんと鳴いています。</p>
+        <p>「おおむぞやな。な。なんぼが泣いだがな。そのわろは金山掘りのわろだな。さあさあみんな団子たべろ。食べろ。な、今こっちを焼ぐがらな。全体どこまで行ってだった。」</p>
+        <p>「<placeName ref="#sasanagane"><ruby><rb>笹長根</rb><rt>ささながね</rt></ruby></placeName>のおり口だ。」と<persName ref="#ichiro">一郎</persName>のにいさんが答えました。</p>
+        <p>「あぶないがった。あぶないがった。向こうさ降りだら馬も人もそれっ切りだったぞ。さあ<persName ref="#kasuke">嘉助</persName>、団子食べろ。このわろもたべろ。さあさあ、こいづも食べろ。」</p>
+        <p>「おじいさん。馬置いでくるが。」と<persName ref="#ichiro">一郎</persName>のにいさんが言いました。</p>
+        <p>「うんうん。牧夫来るどまだやがましがらな、したども、も少し待で。またすぐ晴れる。ああ心配した。おれも<placeName ref="#torakoyama"><ruby><rb>虎</rb><rt>とら</rt></ruby>こ<ruby><rb>山</rb><rt>やま</rt></ruby></placeName>の下まで行って見で来た。はあ、まんつよがった。雨も晴れる。」</p>
+        <p>「けさほんとに天気よがったのにな。」</p>
+        <p>「うん。またよぐなるさ、あ、雨漏って来たな。」</p>
+        <p><persName ref="#ichiro">一郎</persName>のにいさんが出て行きました。天井がガサガサガサガサ言います。おじいさんが笑いながらそれを見上げました。</p>
+        <p>にいさんがまたはいって来ました。</p>
+        <p>「おじいさん。明るぐなった。雨あ<ruby><rb>霽</rb><rt>は</rt></ruby>れだ。」</p>
+        <p>「うんうん、そうが。さあみんなよっく火にあだれ、おらまた草刈るがらな。」</p>
+        <p>霧がふっと切れました。日の光がさっと流れてはいりました。その太陽は、少し西のほうに寄ってかかり、幾片かの<ruby><rb>蝋</rb><rt>ろう</rt></ruby>のような霧が、逃げおくれてしかたなしに光りました。</p>
+        <p>草からはしずくがきらきら落ち、すべての葉も茎も花も、ことしの終わりの日の光を吸っています。</p>
+        <p>はるかな西の<ruby><rb>碧</rb><rt>あお</rt></ruby>い野原は、今泣きやんだようにまぶしく笑い、向こうの<ruby><rb>栗</rb><rt>くり</rt></ruby>の木は青い後光を放ちました。</p>
+        <p>みんなはもう疲れて<persName ref="#ichiro">一郎</persName>をさきに野原をおりました。わき水のところで<persName ref="#saburo">三郎</persName>はやっぱりだまって、きっと口を結んだままみんなに別れて、じぶんだけおとうさんの小屋のほうへ帰って行きました。</p>
+        <p>帰りながら<persName ref="#kasuke">嘉助</persName>が言いました。</p>
+        <p>「あいづやっぱり風の神だぞ。風の神の子っ子だぞ。あそごさ二人して巣食ってるんだぞ。」</p>
+        <p>「そだないよ。」<persName ref="#ichiro">一郎</persName>が高く言いました。</p>
+        <p>次の日は朝のうちは雨でしたが、二時間目からだんだん明るくなって三時間目の終わりの十分休みにはとうとうすっかりやみ、あちこちに削ったような青ぞらもできて、その下をまっ白なうろこ雲がどんどん東へ走り、山の<ruby><rb>萱</rb><rt>かや</rt></ruby>からも栗の木からも残りの雲が湯げのように立ちました。</p>
+        <p>「下がったら<ruby><rb>葡萄蔓</rb><rt>えびづる</rt></ruby>とりに行がないが。」<persName ref="#kosuke">耕助</persName>が<persName ref="#kasuke">嘉助</persName>にそっと言いました。</p>
+        <p>「行ぐ行ぐ。<persName ref="#saburo">三郎</persName>も行がないが。」<persName ref="#kasuke">嘉助</persName>がさそいました。<persName ref="#kosuke">耕助</persName>は、</p>
+        <p>「わあい、あそご<persName ref="#saburo">三郎</persName>さ教えるやないぢゃ。」と言いましたが<persName ref="#saburo">三郎</persName>は知らないで、</p>
+        <p>「行くよ。ぼくは<placeName ref="#hokkaido">北海道</placeName>でもとったぞ。ぼくのおかあさんは<ruby><rb>樽</rb><rt>たる</rt></ruby>へ二っつ<ruby><rb>漬</rb><rt>つ</rt></ruby>けたよ。」と言いました。</p>
+        <p>「<ruby><rb>葡萄</rb><rt>ぶどう</rt></ruby>とりにおらも連れでがないが。」二年生の<persName ref="#shokichi"><ruby><rb>承吉</rb><rt>しょうきち</rt></ruby></persName>も言いました。</p>
+        <p>「わがないぢゃ。うなどさ教えるやないぢゃ。おら去年な新しいどご見つけだぢゃ。」</p>
+        <p>みんなは学校の済むのが待ち遠しかったのでした。五時間目が終わると、<persName ref="#ichiro">一郎</persName>と<persName ref="#kasuke">嘉助</persName>と<persName ref="#sataro">佐太郎</persName>と<persName ref="#kosuke">耕助</persName>と<persName ref="#etsuji">悦治</persName>と<persName ref="#saburo">三郎</persName>と六人で学校から上流のほうへ登って行きました。少し行くと一けんの<ruby><rb>藁</rb><rt>わら</rt></ruby>やねの家があって、その前に小さなたばこ畑がありました。たばこの木はもう下のほうの葉をつんであるので、その青い茎が林のようにきれいにならんでいかにもおもしろそうでした。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>はいきなり、</p>
+        <p>「なんだい、この葉は。」と言いながら葉を一枚むしって<persName ref="#ichiro">一郎</persName>に見せました。すると<persName ref="#ichiro">一郎</persName>はびっくりして、</p>
+        <p>「わあ、<persName ref="#saburo">又三郎</persName>、たばごの葉とるづど専売局にうんとしかられるぞ。わあ、<persName ref="#saburo">又三郎</persName>何してとった。」と少し顔いろを悪くして言いました。みんなも口々に言いました。</p>
+        <p>「わあい。専売局であ、この葉一枚ずつ数えで帳面さつけでるだ。おら知らないぞ。」</p>
+        <p>「おらも知らないぞ。」</p>
+        <p>「おらも知らないぞ。」みんな口をそろえてはやしました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は顔をまっ<ruby><rb>赤</rb><rt>か</rt></ruby>にして、しばらくそれを振り回して何か言おうと考えていましたが、</p>
+        <p>「おら知らないでとったんだい。」とおこったように言いました。</p>
+        <p>みんなはこわそうに、だれか見ていないかというように向こうの家を見ました。たばこばたけからもうもうとあがる湯げの向こうで、その家はしいんとしてだれもいたようではありませんでした。</p>
+        <p>「あの家一年生の<persName ref="#kosuke3"><ruby><rb>小助</rb><rt>こすけ</rt></ruby></persName>の家だぢゃい。」<persName ref="#kasuke">嘉助</persName>が少しなだめるように言いました。ところが<persName ref="#kosuke">耕助</persName>ははじめからじぶんの見つけた<ruby><rb>葡萄藪</rb><rt>ぶどうやぶ</rt></ruby>へ、<persName ref="#saburo">三郎</persName>だのみんなあんまり来ておもしろくなかったもんですから、意地悪くもいちど<persName ref="#saburo">三郎</persName>に言いました。</p>
+        <p>「わあ、<persName ref="#saburo">三郎</persName>なんぼ知らないたってわがないんだぢゃ。わあい、<persName ref="#saburo">三郎</persName>もどのとおりにしてまゆんだであ。」</p>
+        <p><persName ref="#saburo">三郎</persName>は困ったようにしてまたしばらくだまっていましたが、</p>
+        <p>「そんなら、おいらここへ置いてくからいいや。」と言いながらさっきの木の根もとへそっとその葉を置きました。すると<persName ref="#ichiro">一郎</persName>は、</p>
+        <p>「早くあべ。」と言って先にたってあるきだしましたのでみんなもついて行きましたが、<persName ref="#kosuke">耕助</persName>だけはまだ残って「ほう、おら知らないぞ。ありゃ、<persName ref="#saburo">又三郎</persName>の置いた葉、あすごにあるぢゃい。」なんて言っているのでしたが、みんながどんどん歩きだしたので<persName ref="#kosuke">耕助</persName>もやっとついて来ました。</p>
+        <p>みんなは<ruby><rb>萱</rb><rt>かや</rt></ruby>の間の小さなみちを山のほうへ少しのぼりますと、その南側に向いたくぼみに<ruby><rb>栗</rb><rt>くり</rt></ruby>の木があちこち立って、下には葡萄がもくもくした大きな<ruby><rb>藪</rb><rt>やぶ</rt></ruby>になっていました。</p>
+        <p>「こごおれ見っつけだのだがらみんなあんまりとるやないぞ。」<persName ref="#kosuke">耕助</persName>が言いました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は、</p>
+        <p>「おいら栗のほうをとるんだい。」といって石を拾って一つの枝へ投げました。青いいがが一つ落ちました。</p>
+        <p><persName ref="#saburo">三郎</persName>はそれを棒きれでむいて、まだ白い栗を二つとりました。みんなは<ruby><rb>葡萄</rb><rt>ぶどう</rt></ruby>のほうへ一生けん命でした。</p>
+        <p>そのうち<persName ref="#kosuke">耕助</persName>がも一つの<ruby><rb>藪</rb><rt>やぶ</rt></ruby>へ行こうと一本の<ruby><rb>栗</rb><rt>くり</rt></ruby>の木の下を通りますと、いきなり上からしずくが一ぺんにざっと落ちてきましたので、<persName ref="#kosuke">耕助</persName>は肩からせなかから水へはいったようになりました。<persName ref="#kosuke">耕助</persName>はおどろいて口をあいて上を見ましたら、いつか木の上に<persName ref="#saburo">三郎</persName>がのぼっていて、なんだか少しわらいながらじぶんも<ruby><rb>袖</rb><rt>そで</rt></ruby>ぐちで顔をふいていたのです。</p>
+        <p>「わあい、<persName ref="#saburo">又三郎</persName>何する。」<persName ref="#kosuke">耕助</persName>はうらめしそうに木を見あげました。</p>
+        <p>「風が吹いたんだい。」<persName ref="#saburo">三郎</persName>は上でくつくつわらいながら言いました。</p>
+        <p><persName ref="#kosuke">耕助</persName>は木の下をはなれてまた別の藪で葡萄をとりはじめました。もう<persName ref="#kosuke">耕助</persName>はじぶんでも持てないくらいあちこちへためていて、口も紫いろになってまるで大きく見えました。</p>
+        <p>「さあ、このくらい持って戻らないが。」<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>「おら、もっと取ってぐぢゃ。」<persName ref="#kosuke">耕助</persName>が言いました。</p>
+        <p>そのとき<persName ref="#kosuke">耕助</persName>はまた頭からつめたいしずくをざあっとかぶりました。<persName ref="#kosuke">耕助</persName>はまたびっくりしたように木を見上げましたが今度は<persName ref="#saburo">三郎</persName>は木の上にはいませんでした。</p>
+        <p>けれども木の向こう側に<persName ref="#saburo">三郎</persName>のねずみいろのひじも見えていましたし、くつくつ笑う声もしましたから、<persName ref="#kosuke">耕助</persName>はもうすっかりおこってしまいました。</p>
+        <p>「わあい<persName ref="#saburo">又三郎</persName>、まだひとさ水掛げだな。」</p>
+        <p>「風が吹いたんだい。」</p>
+        <p>みんなはどっと笑いました。</p>
+        <p>「わあい<persName ref="#saburo">又三郎</persName>、うなそごで木ゆすったけあなあ。」</p>
+        <p>みんなはどっとまた笑いました。</p>
+        <p>すると<persName ref="#kosuke">耕助</persName>はうらめしそうにしばらくだまって<persName ref="#saburo">三郎</persName>の顔を見ながら、</p>
+        <p>「うあい<persName ref="#saburo">又三郎</persName>、<ruby><rb>汝</rb><rt>うな</rt></ruby>などあ世界になくてもいいなあ。」</p>
+        <p>すると<persName ref="#saburo">三郎</persName>はずるそうに笑いました。</p>
+        <p>「やあ<persName ref="#kosuke">耕助</persName>君、失敬したねえ。」</p>
+        <p><persName ref="#kosuke">耕助</persName>は何かもっと別のことを言おうと思いましたが、あんまりおこってしまって考え出すことができませんでしたのでまた同じように叫びました。</p>
+        <p>「うあい、うあいだ、<persName ref="#saburo">又三郎</persName>、うなみだいな<ruby><rb>風</rb><rt>かぜ</rt></ruby>など世界じゅうになくてもいいなあ、うわあい。」</p>
+        <p>「失敬したよ、だってあんまりきみもぼくへ意地悪をするもんだから。」<persName ref="#saburo">三郎</persName>は少し目をパチパチさせて気の毒そうに言いました。けれども<persName ref="#kosuke">耕助</persName>のいかりはなかなか解けませんでした。そして三度同じことをくりかえしたのです。</p>
+        <p>「うわい<persName ref="#saburo">又三郎</persName>、風などあ世界じゅうになくてもいいな、うわい。」</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は少しおもしろくなったようでまたくつくつ笑いだしてたずねました。</p>
+        <p>「風が世界じゅうになくってもいいってどういうんだい。いいと箇条をたてていってごらん。そら。」<persName ref="#saburo">三郎</persName>は先生みたいな顔つきをして指を一本だしました。</p>
+        <p><persName ref="#kosuke">耕助</persName>は試験のようだし、つまらないことになったと思ってたいへんくやしかったのですが、しかたなくしばらく考えてから言いました。</p>
+        <p>「<ruby><rb>汝</rb><rt>うな</rt></ruby>など<ruby><rb>悪戯</rb><rt>わるさ</rt></ruby>ばりさな、<ruby><rb>傘</rb><rt>かさ</rt></ruby>ぶっこわしたり。」</p>
+        <p>「それからそれから。」<persName ref="#saburo">三郎</persName>はおもしろそうに一足進んで言いました。</p>
+        <p>「それがら木折ったり転覆したりさな。」</p>
+        <p>「それから、それからどうだい。」</p>
+        <p>「家もぶっこわさな。」</p>
+        <p>「それから。それから、あとはどうだい。」</p>
+        <p>「あかしも消さな。」</p>
+        <p>「それからあとは？　それからあとは？　どうだい。」</p>
+        <p>「シャップもとばさな。」</p>
+        <p>「それから？　それからあとは？　あとはどうだい。」</p>
+        <p>「<ruby><rb>笠</rb><rt>かさ</rt></ruby>もとばさな。」</p>
+        <p>「それからそれから。」</p>
+        <p>「それがら、ラ、ラ、電信ばしらも倒さな。」</p>
+        <p>「それから？　それから？　それから？」</p>
+        <p>「それがら屋根もとばさな。」</p>
+        <p>「アアハハハ、屋根は家のうちだい。どうだいまだあるかい。それから、それから？」</p>
+        <p>「それだがら、ララ、それだからランプも消さな。」</p>
+        <p>「アアハハハハ、ランプはあかしのうちだい。けれどそれだけかい。え、おい。それから？　それからそれから。」</p>
+        <p><persName ref="#kosuke">耕助</persName>はつまってしまいました。たいていもう言ってしまったのですから、いくら考えてももうできませんでした。</p>
+        <p><persName ref="#saburo">三郎</persName>はいよいよおもしろそうに指を一本立てながら、</p>
+        <p>「それから？　それから？　ええ？　それから？」と言うのでした。</p>
+        <p><persName ref="#kosuke">耕助</persName>は顔を赤くしてしばらく考えてからやっと答えました。</p>
+        <p>「風車もぶっこわさな。」</p>
+        <p>すると<persName ref="#saburo">三郎</persName>はこんどこそはまるで飛び上がって笑ってしまいました。みんなも笑いました。笑って笑って笑いました。</p>
+        <p><persName ref="#saburo">三郎</persName>はやっと笑うのをやめて言いました。</p>
+        <p>「そらごらん、とうとう風車などを言っちゃったろう。風車なら風を悪く思っちゃいないんだよ。もちろん時々こわすこともあるけれども回してやる時のほうがずっと多いんだ。風車ならちっとも風を悪く思っていないんだ。それに第一お前のさっきからの数えようはあんまりおかしいや。ララ、ララ、ばかり言ったんだろう。おしまいにとうとう風車なんか数えちゃった。ああおかしい。」</p>
+        <p><persName ref="#saburo">三郎</persName>はまた涙の出るほど笑いました。</p>
+        <p><persName ref="#kosuke">耕助</persName>もさっきからあんまり困ったためにおこっていたのもだんだん忘れて来ました。そしてつい<persName ref="#saburo">三郎</persName>といっしょに笑い出してしまったのです。すると<persName ref="#saburo">三郎</persName>もすっかりきげんを直して、</p>
+        <p>「<persName ref="#kosuke">耕助</persName>君、いたずらをして済まなかったよ。」と言いました。</p>
+        <p>「さあそれであ行ぐべな。」と<persName ref="#ichiro">一郎</persName>は言いながら<persName ref="#saburo">三郎</persName>にぶどうを五ふさばかりくれました。</p>
+        <p><persName ref="#saburo">三郎</persName>は白い<ruby><rb>栗</rb><rt>くり</rt></ruby>をみんなに二つずつ分けました。そしてみんなは下のみちまでいっしょにおりて、あとはめいめいのうちへ帰ったのです。</p>
+        <p>次の朝は霧がじめじめ降って学校のうしろの山もぼんやりしか見えませんでした。ところがきょうも二時間目ころからだんだん晴れてまもなく空はまっ<ruby><rb>青</rb><rt>さお</rt></ruby>になり、日はかんかん照って、お<ruby><rb>午</rb><rt>ひる</rt></ruby>になって一、二年が下がってしまうとまるで夏のように暑くなってしまいました。</p>
+        <p>ひるすぎは先生もたびたび教壇で汗をふき、四年生の習字も五年生六年生の図画もまるでむし暑くて、書きながらうとうとするのでした。</p>
+        <p>授業が済むとみんなはすぐ川下のほうへそろって出かけました。<persName ref="#kasuke">嘉助</persName>が、</p>
+        <p>「<persName ref="#saburo">又三郎</persName>、水泳ぎに行がないが。小さいやづど今ころみんな行ってるぞ。」と言いましたので<persName ref="#saburo">三郎</persName>もついて行きました。</p>
+        <p>そこはこの前<placeName ref="#uenohara">上の野原</placeName>へ行ったところよりも、も少し下流で右のほうからも一つの谷川がはいって来て、少し広い河原になり、すぐ下流は大きなさいかちの木のはえた<ruby><rb>崖</rb><rt>がけ</rt></ruby>になっているのでした。</p>
+        <p>「おおい。」とさきに来ているこどもらがはだかで両手をあげて叫びました。<persName ref="#ichiro">一郎</persName>やみんなは、河原のねむの木の間をまるで徒競走のように走って、いきなりきものをぬぐとすぐどぶんどぶんと水に飛び込んで両足をかわるがわる曲げて、だあんだあんと水をたたくようにしながら斜めにならんで向こう岸へ泳ぎはじめました。前にいたこどもらもあとから追い付いて泳ぎはじめました。<persName ref="#saburo">三郎</persName>もきものをぬいでみんなのあとから泳ぎはじめましたが、途中で声をあげてわらいました。すると向こう岸についた<persName ref="#ichiro">一郎</persName>が、髪をあざらしのようにしてくちびるを紫にしてわくわくふるえながら、</p>
+        <p>「わあ<persName ref="#saburo">又三郎</persName>、何してわらった。」と言いました。</p>
+        <p><persName ref="#saburo">三郎</persName>はやっぱりふるえながら水からあがって、</p>
+        <p>「この川冷たいなあ。」と言いました。</p>
+        <p>「<persName ref="#saburo">又三郎</persName>何してわらった？」<persName ref="#ichiro">一郎</persName>はまたききました。</p>
+        <p><persName ref="#saburo">三郎</persName>は、</p>
+        <p>「おまえたちの泳ぎ方はおかしいや。なぜ足をだぶだぶ鳴らすんだい。」と言いながらまた笑いました。</p>
+        <p>「うわあい。」と<persName ref="#ichiro">一郎</persName>は言いましたが、なんだかきまりが悪くなったように、</p>
+        <p>「石取りさないが。」と言いながら白い丸い石をひろいました。</p>
+        <p>「するする。」こどもらがみんな叫びました。</p>
+        <p>「おれそれであ、あの木の上がら落とすがらな。」と<persName ref="#ichiro">一郎</persName>は言いながら<ruby><rb>崖</rb><rt>がけ</rt></ruby>の中ごろから出ているさいかちの木へするするのぼって行きました。そして、</p>
+        <p>「さあ落とすぞ。一二三。」と言いながらその白い石をどぶん、と<ruby><rb>淵</rb><rt>ふち</rt></ruby>へ落としました。</p>
+        <p>みんなはわれ勝ちに岸からまっさかさまに水にとび込んで、青白いらっこのような形をして底へもぐって、その石をとろうとしました。</p>
+        <p>けれどもみんな底まで行かないに息がつまって浮かびだして来て、かわるがわるふうとそこらへ霧をふきました。</p>
+        <p><persName ref="#saburo">三郎</persName>はじっとみんなのするのを見ていましたが、みんなが浮かんできてからじぶんもどぶんとはいって行きました。けれどもやっぱり底まで届かずに浮いてきたのでみんなはどっと笑いました。そのとき向こうの河原のねむの木のところを<ruby><rb>大人</rb><rt>おとな</rt></ruby>が四人、<ruby><rb>肌</rb><rt>はだ</rt></ruby>ぬぎになったり、網をもったりしてこっちへ来るのでした。</p>
+        <p>すると<persName ref="#ichiro">一郎</persName>は木の上でまるで声をひくくしてみんなに叫びました。</p>
+        <p>「おお、<ruby><rb>発破</rb><rt>はっぱ</rt></ruby>だぞ。知らないふりしてろ。石とりやめで早ぐみんな<ruby><rb>下流</rb><rt>しも</rt></ruby>ささがれ。」そこでみんなは、なるべくそっちを見ないふりをしながら、いっしょに<ruby><rb>砥石</rb><rt>といし</rt></ruby>をひろったり、<ruby><rb>鶺鴒</rb><rt>せきれい</rt></ruby>を追ったりして、発破のことなぞ、すこしも気がつかないふりをしていました。</p>
+        <p>すると向こうの<ruby><rb>淵</rb><rt>ふち</rt></ruby>の岸では、下流の坑夫をしていた<persName ref="#shosuke"><ruby><rb>庄助</rb><rt>しょうすけ</rt></ruby></persName>が、しばらくあちこち見まわしてから、いきなりあぐらをかいて<ruby><rb>砂利</rb><rt>じゃり</rt></ruby>の上へすわってしまいました。それからゆっくり腰からたばこ入れをとって、きせるをくわえてぱくぱく煙をふきだしました。奇体だと思っていましたら、また腹かけから何か出しました。</p>
+        <p>「<ruby><rb>発破</rb><rt>はっぱ</rt></ruby>だぞ、発破だぞ。」とみんな叫びました。</p>
+        <p><persName ref="#ichiro">一郎</persName>は手をふってそれをとめました。<persName ref="#shosuke">庄助</persName>は、きせるの火をしずかにそれへうつしました。うしろにいた一人はすぐ水にはいって網をかまえました。<persName ref="#shosuke">庄助</persName>はまるで落ちついて、立って一あし水にはいるとすぐその持ったものを、さいかちの木の下のところへ投げこみました。するとまもなく、ぼおというようなひどい音がして水はむくっと盛りあがり、それからしばらくそこらあたりがきいんと鳴りました。</p>
+        <p>向こうの<ruby><rb>大人</rb><rt>おとな</rt></ruby>たちはみんな水へはいりました。</p>
+        <p>「さあ、流れて来るぞ。みんなとれ。」と<persName ref="#ichiro">一郎</persName>が言いました。まもなく<persName ref="#kosuke">耕助</persName>は小指ぐらいの茶いろなかじかが横向きになって流れて来たのをつかみましたし、そのうしろでは<persName ref="#kasuke">嘉助</persName>が、まるで<ruby><rb>瓜</rb><rt>うり</rt></ruby>をすするときのような声を出しました。それは六寸ぐらいある<ruby><rb>鮒</rb><rt>ふな</rt></ruby>をとって、顔をまっ<ruby><rb>赤</rb><rt>か</rt></ruby>にしてよろこんでいたのです。それからみんなとって、わあわあよろこびました。</p>
+        <p>「だまってろ、だまってろ。」<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>そのとき向こうの白い河原を<ruby><rb>肌</rb><rt>はだ</rt></ruby>ぬぎになったり、シャツだけ着たりした大人が五六人かけて来ました。そのうしろからはちょうど活動写真のように、一人の網シャツを着た人が、はだか馬に乗ってまっしぐらに走って来ました。みんな発破の音を聞いて見に来たのです。</p>
+        <p><persName ref="#shosuke">庄助</persName>はしばらく腕を組んでみんなのとるのを見ていましたが、</p>
+        <p>「さっぱりいないな。」と言いました。すると<persName ref="#saburo">三郎</persName>がいつのまにか<persName ref="#shosuke">庄助</persName>のそばへ行っていました。そして中くらいの鮒を二匹、</p>
+        <p>「<ruby><rb>魚</rb><rt>さかな</rt></ruby>返すよ。」といって河原へ投げるように置きました。すると<persName ref="#shosuke">庄助</persName>が、</p>
+        <p>「なんだこの<ruby><rb>童</rb><rt>わらす</rt></ruby>あ、きたいなやづだな。」と言いながらじろじろ<persName ref="#saburo">三郎</persName>を見ました。</p>
+        <p><persName ref="#saburo">三郎</persName>はだまってこっちへ帰ってきました。</p>
+        <p><persName ref="#shosuke">庄助</persName>は変な顔をしてみています。みんなはどっとわらいました。</p>
+        <p><persName ref="#shosuke">庄助</persName>はだまってまた<ruby><rb>上流</rb><rt>かみ</rt></ruby>へ歩きだしました。ほかのおとなたちもついて行き、網シャツの人は馬に乗って、またかけて行きました。<persName ref="#kosuke">耕助</persName>が泳いで行って<persName ref="#saburo">三郎</persName>の置いて来た魚を持ってきました。みんなはそこでまたわらいました。</p>
+        <p>「<ruby><rb>発破</rb><rt>はっぱ</rt></ruby>かけだら、<ruby><rb>雑魚</rb><rt>ざこ</rt></ruby><ruby><rb>撒</rb><rt>ま</rt></ruby>かせ。」<persName ref="#kasuke">嘉助</persName>が河原の砂っぱの上で、ぴょんぴょんはねながら高く叫びました。</p>
+        <p>みんなはとった魚を石で囲んで、小さな生け州をこしらえて、生きかえってももう逃げて行かないようにして、また上流のさいかちの木へのぼりはじめました。</p>
+        <p>ほんとうに暑くなって、ねむの木もまるで夏のようにぐったり見えましたし、空もまるで底なしの<ruby><rb>淵</rb><rt>ふち</rt></ruby>のようになりました。</p>
+        <p>そのころだれかが、</p>
+        <p>「あ、生け州ぶっこわすとこだぞ。」と叫びました。見ると一人の変に鼻のとがった、洋服を着てわらじをはいた人が、手にはステッキみたいなものをもって、みんなの魚をぐちゃぐちゃかきまわしているのでした。</p>
+        <p>その男はこっちへびちゃびちゃ岸をあるいて来ました。</p>
+        <p>「あ、あいづ専売局だぞ。専売局だぞ。」<persName ref="#sataro">佐太郎</persName>が言いました。</p>
+        <p>「<persName ref="#saburo">又三郎</persName>、うなのとった<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>の葉めっけたんだで、うな、連れでぐさ来たぞ。」<persName ref="#kasuke">嘉助</persName>が言いました。</p>
+        <p>「なんだい。こわくないや。」<persName ref="#saburo">三郎</persName>はきっと口をかんで言いました。</p>
+        <p>「みんな<persName ref="#saburo">又三郎</persName>のごと囲んでろ、囲んでろ。」と<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>そこでみんなは<persName ref="#saburo">三郎</persName>をさいかちの木のいちばん中の枝に置いて、まわりの枝にすっかり腰かけました。</p>
+        <p>「来た来た、来た来た。来たっ。」とみんなは息をこらしました。</p>
+        <p>ところがその男は別に<persName ref="#saburo">三郎</persName>をつかまえるふうでもなく、みんなの前を通りこして、それから<ruby><rb>淵</rb><rt>ふち</rt></ruby>のすぐ上流の浅瀬を渡ろうとしました。それもすぐに川をわたるでもなく、いかにもわらじや<ruby><rb>脚絆</rb><rt>きゃはん</rt></ruby>のきたなくなったのをそのまま洗うというふうに、もう何べんも行ったり来たりするもんですから、みんなはだんだんこわくなくなりましたが、そのかわり気持ちが悪くなってきました。</p>
+        <p>そこでとうとう<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>「お、おれ先に叫ぶから、みんなあとから、一二三で叫ぶこだ。いいか。</p>
+        <p>あんまり川を濁すなよ、</p>
+        <p>いつでも<ruby><rb>先生</rb><rt>せんせ</rt></ruby>言うでないか。一、二い、三。」</p>
+        <p>「あんまり川を濁すなよ、</p>
+        <p>いつでも先生言うでないか。」</p>
+        <p>その人はびっくりしてこっちを見ましたけれども、何を言ったのかよくわからないというようすでした。そこでみんなはまた言いました。</p>
+        <p>「あんまり川を濁すなよ、</p>
+        <p>いつでも先生、言うでないか。」</p>
+        <p>鼻のとがった人はすぱすぱと、<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を吸うときのような口つきで言いました。</p>
+        <p>「この水飲むのか、ここらでは。」</p>
+        <p>「あんまり川をにごすなよ、</p>
+        <p>いつでも先生言うでないか。」</p>
+        <p>鼻のとがった人は少し困ったようにして、また言いました。</p>
+        <p>「川をあるいてわるいのか。」</p>
+        <p>「あんまり川をにごすなよ、</p>
+        <p>いつでも先生言うでないか。」</p>
+        <p>その人はあわてたのをごまかすように、わざとゆっくり川をわたって、それから<placeName ref="#alps">アルプス</placeName>の探検みたいな姿勢をとりながら、青い粘土と<ruby><rb>赤砂利</rb><rt>あかじゃり</rt></ruby>の<ruby><rb>崖</rb><rt>がけ</rt></ruby>をななめにのぼって、崖の上のたばこ畑へはいってしまいました。</p>
+        <p>すると<persName ref="#saburo">三郎</persName>は、</p>
+        <p>「なんだい、ぼくを連れにきたんじゃないや。」と言いながらまっさきにどぶんと<ruby><rb>淵</rb><rt>ふち</rt></ruby>へとび込みました。</p>
+        <p>みんなもなんだか、その男も<persName ref="#saburo">三郎</persName>も気の毒なようなおかしながらんとした気持ちになりながら、一人ずつ木からはねおりて、河原に泳ぎついて、<ruby><rb>魚</rb><rt>さかな</rt></ruby>を手ぬぐいにつつんだり、手にもったりして家に帰りました。</p>
+        <p>次の朝、授業の前みんなが運動場で鉄棒にぶらさがったり、棒かくしをしたりしていますと、少し遅れて<persName ref="#sataro">佐太郎</persName>が何かを入れた<ruby><rb>笊</rb><rt>ざる</rt></ruby>をそっとかかえてやって来ました。</p>
+        <p>「なんだ、なんだ。なんだ。」とすぐみんな走って行ってのぞき込みました。</p>
+        <p>すると<persName ref="#sataro">佐太郎</persName>は<ruby><rb>袖</rb><rt>そで</rt></ruby>でそれをかくすようにして、急いで学校の裏の岩穴のところへ行きました。そしてみんなはいよいよあとを追って行きました。</p>
+        <p><persName ref="#ichiro">一郎</persName>がそれをのぞくと、思わず顔いろを変えました。</p>
+        <p>それは魚の毒もみにつかう<ruby><rb>山椒</rb><rt>さんしょ</rt></ruby>の粉で、それを使うと<ruby><rb>発破</rb><rt>はっぱ</rt></ruby>と同じように巡査に押えられるのでした。ところが<persName ref="#sataro">佐太郎</persName>はそれを岩穴の横の<ruby><rb>萱</rb><rt>かや</rt></ruby>の中へかくして、知らない顔をして運動場へ帰りました。</p>
+        <p>そこでみんなはひそひそと、時間になるまでいつまでもその話ばかりしていました。</p>
+        <p>その日も十時ごろからやっぱりきのうのように暑くなりました。みんなはもう授業の済むのばかり待っていました。</p>
+        <p>二時になって五時間目が終わると、もうみんな一目散に飛びだしました。<persName ref="#sataro">佐太郎</persName>もまた笊をそっと袖でかくして、<persName ref="#kosuke">耕助</persName>だのみんなに囲まれて河原へ行きました。<persName ref="#saburo">三郎</persName>は<persName ref="#kasuke">嘉助</persName>と行きました。みんなは町の祭りのときのガスのようなにおいの、むっとするねむの河原を急いで抜けて、いつもの<placeName ref="#saikachibuchi">さいかち<ruby><rb>淵</rb><rt>ぶち</rt></ruby></placeName>に着きました。すっかり夏のような立派な雲の峰が東でむくむく盛りあがり、さいかちの木は青く光って見えました。</p>
+        <p>みんな急いで着物をぬいで淵の岸に立つと、<persName ref="#sataro">佐太郎</persName>が<persName ref="#ichiro">一郎</persName>の顔を見ながら言いました。</p>
+        <p>「ちゃんと一列にならべ。いいか、<ruby><rb>魚</rb><rt>さかな</rt></ruby>浮いて来たら泳いで行ってとれ。とったくらい<ruby><rb>与</rb><rt>や</rt></ruby>るぞ。いいか。」</p>
+        <p>小さなこどもらはよろこんで、顔を赤くして押しあったりしながらぞろっと<ruby><rb>淵</rb><rt>ふち</rt></ruby>を囲みました。</p>
+        <p><persName ref="#pekichi">ぺ<ruby><rb>吉</rb><rt>きち</rt></ruby></persName>だの三四人はもう泳いで、さいかちの木の下まで行って待っていました。</p>
+        <p><persName ref="#sataro">佐太郎</persName>が大威張りで、上流の瀬に行って<ruby><rb>笊</rb><rt>ざる</rt></ruby>をじゃぶじゃぶ水で洗いました。</p>
+        <p>みんなしいんとして、水をみつめて立っていました。</p>
+        <p><persName ref="#saburo">三郎</persName>は水を見ないで向こうの雲の峰の上を通る黒い鳥を見ていました。<persName ref="#ichiro">一郎</persName>も河原にすわって石をこちこちたたいていました。</p>
+        <p>ところが、それからよほどたっても魚は浮いて来ませんでした。</p>
+        <p><persName ref="#sataro">佐太郎</persName>はたいへんまじめな顔で、きちんと立って水を見ていました。きのう<ruby><rb>発破</rb><rt>はっぱ</rt></ruby>をかけたときなら、もう十匹もとっていたんだとみんなは思いました。またずいぶんしばらくみんなしいんとして待ちました。けれどもやっぱり魚は一ぴきも浮いて来ませんでした。</p>
+        <p>「さっぱり魚、浮かばないな。」<persName ref="#kosuke">耕助</persName>が叫びました。<persName ref="#sataro">佐太郎</persName>はびくっとしましたけれども、まだ一心に水を見ていました。</p>
+        <p>「<ruby><rb>魚</rb><rt>さかな</rt></ruby>さっぱり浮かばないな。」<persName ref="#pekichi">ぺ吉</persName>がまた向こうの木の下で言いました。するともう、みんなはがやがやと言い出して、みんな水に飛び込んでしまいました。</p>
+        <p><persName ref="#sataro">佐太郎</persName>はしばらくきまり悪そうに、しゃがんで水を見ていましたけれど、とうとう立って、</p>
+        <p>「鬼っこしないか。」と言いました。</p>
+        <p>「する、する。」みんなは叫んで、じゃんけんをするために、水の中から手を出しました。泳いでいたものは急いでせいの立つところまで行って手を出しました。</p>
+        <p><persName ref="#ichiro">一郎</persName>も河原から来て手を出しました。そして<persName ref="#ichiro">一郎</persName>ははじめに、きのうあの変な鼻のとがった人の上って行った<ruby><rb>崖</rb><rt>がけ</rt></ruby>の下の、青いぬるぬるした粘土のところを根っこにきめました。そこに取りついていれば、鬼は押えることができないというのでした。それから、はさみ無しの一人まけかちでじゃんけんをしました。</p>
+        <p>ところが<persName ref="#etsuji">悦治</persName>はひとりはさみを出したので、みんなにうんとはやされたほかに鬼になりました。<persName ref="#etsuji">悦治</persName>は、くちびるを紫いろにして河原を走って、<persName ref="#kisaku"><ruby><rb>喜作</rb><rt>きさく</rt></ruby></persName>を押えたので鬼は二人になりました。それからみんなは、砂っぱの上や<ruby><rb>淵</rb><rt>ふち</rt></ruby>を、あっちへ行ったりこっちへ来たり、押えたり押えられたり、何べんも鬼っこをしました。</p>
+        <p>しまいにとうとう<persName ref="#saburo">三郎</persName>一人が鬼になりました。<persName ref="#saburo">三郎</persName>はまもなく<persName ref="#kichiro"><ruby><rb>吉郎</rb><rt>きちろう</rt></ruby></persName>をつかまえました。みんなはさいかちの木の下にいてそれを見ていました。すると<persName ref="#saburo">三郎</persName>が、</p>
+        <p>「<persName ref="#kichiro">吉郎</persName>君、きみは<ruby><rb>上流</rb><rt>かみ</rt></ruby>から追って来るんだよ。いいか。」と言いながら、じぶんはだまって立って見ていました。</p>
+        <p><persName ref="#kichiro">吉郎</persName>は口をあいて手をひろげて、上流から粘土の上を追って来ました。</p>
+        <p>みんなは<ruby><rb>淵</rb><rt>ふち</rt></ruby>へ飛び込むしたくをしました。<persName ref="#ichiro">一郎</persName>は<ruby><rb>楊</rb><rt>やなぎ</rt></ruby>の木にのぼりました。そのとき<persName ref="#kichiro">吉郎</persName>が、あの上流の粘土が足についていたために、みんなの前ですべってころんでしまいました。</p>
+        <p>みんなは、わあわあ叫んで、<persName ref="#kichiro">吉郎</persName>をはねこえたり、水にはいったりして、上流の青い粘土の根に上がってしまいました。</p>
+        <p>「<persName ref="#saburo">又三郎</persName>、<ruby><rb>来</rb><rt>こ</rt></ruby>。」<persName ref="#kasuke">嘉助</persName>は立って口を大きくあいて、手をひろげて<persName ref="#saburo">三郎</persName>をばかにしました。すると<persName ref="#saburo">三郎</persName>はさっきからよっぽどおこっていたと見えて、</p>
+        <p>「ようし、見ていろよ。」と言いながら本気になって、ざぶんと水に飛び込んで、一生けん命、そっちのほうへ泳いで行きました。</p>
+        <p><persName ref="#saburo">三郎</persName>の髪の毛が赤くてばしゃばしゃしているのに、あんまり長く水につかってくちびるもすこし紫いろなので、子どもらはすっかりこわがってしまいました。</p>
+        <p>第一、その粘土のところはせまくて、みんながはいれなかったのに、それにたいへんつるつるすべる坂になっていましたから、下のほうの四五人などは上の人につかまるようにして、やっと川へすべり落ちるのをふせいでいたのでした。<persName ref="#ichiro">一郎</persName>だけが、いちばん上で落ちついて、さあみんな、とかなんとか相談らしいことをはじめました。みんなもそこで頭をあつめて聞いています。<persName ref="#saburo">三郎</persName>はぼちゃぼちゃ、もう近くまで行きました。</p>
+        <p>みんなはひそひそはなしています。すると<persName ref="#saburo">三郎</persName>は、いきなり両手でみんなへ水をかけ出しました。みんなが、ばたばた防いでいましたら、だんだん粘土がすべって来て、なんだかすこうし下へずれたようになりました。</p>
+        <p><persName ref="#saburo">三郎</persName>はよろこんで、いよいよ水をはねとばしました。</p>
+        <p>すると、みんなはぼちゃんぼちゃんと一度にすべって落ちました。<persName ref="#saburo">三郎</persName>はそれを片っぱしからつかまえました。<persName ref="#ichiro">一郎</persName>もつかまりました。<persName ref="#kasuke">嘉助</persName>がひとり、上をまわって泳いで逃げましたら、<persName ref="#saburo">三郎</persName>はすぐに追い付いて押えたほかに、腕をつかんで四五へんぐるぐる引っぱりまわしました。<persName ref="#kasuke">嘉助</persName>は水を飲んだと見えて、霧をふいてごぼごぼむせて、</p>
+        <p>「おいらもうやめた。こんな鬼っこもうしない。」と言いました。小さな子どもらはみんな<ruby><rb>砂利</rb><rt>じゃり</rt></ruby>に上がってしまいました。</p>
+        <p><persName ref="#saburo">三郎</persName>はひとりさいかちの木の下に立ちました。</p>
+        <p>ところが、そのときはもうそらがいっぱいの黒い雲で、<ruby><rb>楊</rb><rt>やなぎ</rt></ruby>も変に白っぽくなり、山の草はしんしんとくらくなり、そこらはなんとも言われない恐ろしい景色にかわっていました。</p>
+        <p>そのうちに、いきなり<placeName ref="#uenohara">上の野原</placeName>のあたりで、ごろごろごろと雷が鳴り出しました。と思うと、まるで山つなみのような音がして、一ぺんに夕立がやって来ました。風までひゅうひゅう吹きだしました。</p>
+        <p><ruby><rb>淵</rb><rt>ふち</rt></ruby>の水には、大きなぶちぶちがたくさんできて、水だか石だかわからなくなってしまいました。</p>
+        <p>みんなは河原から着物をかかえて、ねむの木の下へ逃げこみました。すると<persName ref="#saburo">三郎</persName>もなんだかはじめてこわくなったと見えて、さいかちの木の下からどぼんと水へはいってみんなのほうへ泳ぎだしました。</p>
+        <p>すると、だれともなく、</p>
+        <p>「雨はざっこざっこ<persName ref="#amesaburo">雨三郎</persName>、</p>
+        <p>風はどっこどっこ<persName ref="#saburo">又三郎</persName>。」と叫んだものがありました。</p>
+        <p>みんなもすぐ声をそろえて叫びました。</p>
+        <p>「雨はざっこざっこ<persName ref="#amesaburo">雨三郎</persName>、</p>
+        <p>風はどっこどっこ<persName ref="#saburo">又三郎</persName>。」</p>
+        <p><persName ref="#saburo">三郎</persName>はまるであわてて、何かに足をひっぱられるようにして<ruby><rb>淵</rb><rt>ふち</rt></ruby>からとびあがって、一目散にみんなのところに走って来て、がたがたふるえながら、</p>
+        <p>「いま叫んだのはおまえらだちかい。」とききました。</p>
+        <p>「そでない、そでない。」みんないっしょに叫びました。</p>
+        <p><persName ref="#pekichi">ぺ吉</persName>がまた一人出て来て、</p>
+        <p>「そでない。」と言いました。</p>
+        <p><persName ref="#saburo">三郎</persName>は気味悪そうに川のほうを見ていましたが、色のあせたくちびるを、いつものようにきっとかんで、「なんだい。」と言いましたが、からだはやはりがくがくふるえていました。</p>
+        <p>そしてみんなは、雨のはれ間を待って、めいめいのうちへ帰ったのです。</p>
+        <p>どっどど　どどうど　どどうど　どどう</p>
+        <p>青いくるみも吹きとばせ</p>
+        <p>すっぱいかりんも吹きとばせ</p>
+        <p>どっどど　どどうど　どどうど　どどう</p>
+        <p>どっどど　どどうど　どどうど　どどう</p>
+        <p>先ごろ、<persName ref="#saburo">三郎</persName>から聞いたばかりのあの歌を<persName ref="#ichiro">一郎</persName>は夢の中でまたきいたのです。</p>
+        <p>びっくりしてはね起きて見ると、外ではほんとうにひどく風が吹いて、林はまるでほえるよう、あけがた近くの青ぐろいうすあかりが、障子や<ruby><rb>棚</rb><rt>たな</rt></ruby>の上のちょうちん箱や、家じゅういっぱいでした。<persName ref="#ichiro">一郎</persName>はすばやく帯をして、そして<ruby><rb>下駄</rb><rt>げた</rt></ruby>をはいて土間をおり、馬屋の前を通ってくぐりをあけましたら、風がつめたい雨の粒といっしょにどっとはいって来ました。</p>
+        <p>馬屋のうしろのほうで何か戸がばたっと倒れ、馬はぶるっと鼻を鳴らしました。</p>
+        <p><persName ref="#ichiro">一郎</persName>は風が胸の底までしみ込んだように思って、はあと息を強く吐きました。そして外へかけだしました。</p>
+        <p>外はもうよほど明るく、土はぬれておりました。家の前の<ruby><rb>栗</rb><rt>くり</rt></ruby>の木の列は変に青く白く見えて、それがまるで風と雨とで今<ruby><rb>洗濯</rb><rt>せんたく</rt></ruby>をするとでもいうように激しくもまれていました。</p>
+        <p>青い葉も幾枚も吹き飛ばされ、ちぎられた青い栗のいがは黒い地面にたくさん落ちていました。空では雲がけわしい灰色に光り、どんどんどんどん北のほうへ吹きとばされていました。</p>
+        <p>遠くのほうの林はまるで海が荒れているように、ごとんごとんと鳴ったりざっと聞こえたりするのでした。<persName ref="#ichiro">一郎</persName>は顔いっぱいに冷たい雨の粒を投げつけられ、風に着物をもって行かれそうになりながら、だまってその音をききすまし、じっと空を見上げました。</p>
+        <p>すると胸がさらさらと波をたてるように思いました。けれどもまたじっとその鳴ってほえてうなって、かけて行く風をみていますと、今度は胸がどかどかとなってくるのでした。</p>
+        <p>きのうまで丘や野原の空の底に澄みきってしんとしていた風が、けさ夜あけ方にわかにいっせいにこう動き出して、どんどんどんどん<placeName ref="#tasukarora-kaiko">タスカロラ<ruby><rb>海溝</rb><rt>かいこう</rt></ruby></placeName>の北のはじをめがけて行くことを考えますと、もう<persName ref="#ichiro">一郎</persName>は顔がほてり、息もはあはあとなって、自分までがいっしょに空を<ruby><rb>翔</rb><rt>か</rt></ruby>けて行くような気持ちになって、大急ぎでうちの中へはいると胸を一ぱいはって、息をふっと吹きました。</p>
+        <p>「ああひで風だ。きょうは<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>も<ruby><rb>栗</rb><rt>くり</rt></ruby>もすっかりやらえる。」と<persName ref="#ichiro">一郎</persName>のおじいさんがくぐりのところに立って、ぐっと空を見ています。<persName ref="#ichiro">一郎</persName>は急いで井戸からバケツに水を一ぱいくんで台所をぐんぐんふきました。</p>
+        <p>それから<ruby><rb>金</rb><rt>かな</rt></ruby>だらいを出して顔をぶるぶる洗うと、<ruby><rb>戸棚</rb><rt>とだな</rt></ruby>から冷たいごはんと<ruby><rb>味噌</rb><rt>みそ</rt></ruby>をだして、まるで夢中でざくざく食べました。</p>
+        <p>「<persName ref="#ichiro">一郎</persName>、いまお<ruby><rb>汁</rb><rt>しる</rt></ruby>できるから少し待ってだらよ。<ruby><rb>何</rb><rt>な</rt></ruby>してけさそったに早く学校へ行がないやないがべ。」おかあさんは馬にやる（不詳）を煮るかまどに木を入れながらききました。</p>
+        <p>「うん。<persName ref="#saburo">又三郎</persName>は飛んでったがもしれないもや。」</p>
+        <p>「<persName ref="#saburo">又三郎</persName>って何だてや。鳥こだてが。」</p>
+        <p>「うん。<persName ref="#saburo">又三郎</persName>っていうやづよ。」<persName ref="#ichiro">一郎</persName>は急いでごはんをしまうと、<ruby><rb>椀</rb><rt>わん</rt></ruby>をこちこち洗って、それから台所の<ruby><rb>釘</rb><rt>くぎ</rt></ruby>にかけてある<ruby><rb>油合羽</rb><rt>あぶらがっぱ</rt></ruby>を着て、<ruby><rb>下駄</rb><rt>げた</rt></ruby>はもってはだしで<persName ref="#kasuke">嘉助</persName>をさそいに行きました。</p>
+        <p><persName ref="#kasuke">嘉助</persName>はまだ起きたばかりで、</p>
+        <p>「いまごはんをたべて行ぐがら。」と言いましたので、<persName ref="#ichiro">一郎</persName>はしばらくうまやの前で待っていました。</p>
+        <p>まもなく<persName ref="#kasuke">嘉助</persName>は小さい<ruby><rb>簑</rb><rt>みの</rt></ruby>を着て出て来ました。</p>
+        <p>はげしい風と雨にぐしょぬれになりながら二人はやっと学校へ来ました。昇降口からはいって行きますと教室はまだしいんとしていましたが、ところどころの窓のすきまから雨がはいって板はまるでざぶざぶしていました。<persName ref="#ichiro">一郎</persName>はしばらく教室を見まわしてから、</p>
+        <p>「<persName ref="#kasuke">嘉助</persName>、二人して水掃ぐべな。」と言ってしゅろ<ruby><rb>箒</rb><rt>ぼうき</rt></ruby>をもって来て水を窓の下の<ruby><rb>穴</rb><rt>あな</rt></ruby>へはき寄せていました。</p>
+        <p>するともうだれか来たのかというように奥から先生が出てきましたが、ふしぎなことは先生があたりまえの<ruby><rb>単衣</rb><rt>ひとえ</rt></ruby>をきて赤いうちわをもっているのです。</p>
+        <p>「たいへん早いですね。あなたがた<ruby><rb>二人</rb><rt>ふたり</rt></ruby>で教室の<ruby><rb>掃除</rb><rt>そうじ</rt></ruby>をしているのですか。」先生がききました。</p>
+        <p>「先生お早うございます。」<persName ref="#ichiro">一郎</persName>が言いました。</p>
+        <p>「先生お早うございます。」と<persName ref="#kasuke">嘉助</persName>も言いましたが、すぐ、</p>
+        <p>「先生、<persName ref="#saburo">又三郎</persName>きょう来るのすか。」とききました。</p>
+        <p>先生はちょっと考えて、</p>
+        <p>「<persName ref="#saburo">又三郎</persName>って<persName ref="#saburo">高田</persName>さんですか。ええ、<persName ref="#saburo">高田</persName>さんはきのうおとうさんといっしょにもうほかへ行きました。日曜なのでみなさんにご<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>するひまがなかったのです。」</p>
+        <p>「先生飛んで行ったのですか。」<persName ref="#kasuke">嘉助</persName>がききました。</p>
+        <p>「いいえ、おとうさんが会社から電報で呼ばれたのです。おとうさんはもいちどちょっとこっちへ戻られるそうですが、<persName ref="#saburo">高田</persName>さんはやっぱり向こうの学校にはいるのだそうです。向こうにはおかあさんもおられるのですから。」</p>
+        <p>「<ruby><rb>何</rb><rt>な</rt></ruby>して会社で呼ばったべす。」と<persName ref="#ichiro">一郎</persName>がききました。</p>
+        <p>「ここのモリブデンの鉱脈は当分手をつけないことになったためなそうです。」</p>
+        <p>「そうだないな。やっぱりあいづは風の<persName ref="#saburo">又三郎</persName>だったな。」<persName ref="#kasuke">嘉助</persName>が高く叫びました。</p>
+        <p>宿直室のほうで何かごとごと鳴る音がしました。先生は赤いうちわをもって急いでそっちへ行きました。</p>
+        <p>二人はしばらくだまったまま、相手がほんとうにどう思っているか探るように顔を見合わせたまま立ちました。</p>
+        <p>風はまだやまず、窓ガラスは雨つぶのために曇りながら、またがたがた鳴りました。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

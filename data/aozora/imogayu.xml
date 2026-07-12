@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>芋粥</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>芋粥</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「現代日本文学大系43芥川龍之介集」筑摩書房。1968（昭和43）年8月25日初版第1刷発行。初出：「新小説」。1916（大正5）年9月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card55.html">https://www.aozora.gr.jp/cards/000879/card55.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="mototsune">
+        <persName>藤原基経</persName>
+        <note>平安前期の公卿・摂政。五位が仕える主人。実在人物</note>
+      </person>
+      <person xml:id="toshihito">
+        <persName>藤原利仁</persName>
+        <note>民部卿時長の子。五位を敦賀へ連れて行く武人。実在人物(利仁将軍)への言及</note>
+      </person>
+      <person xml:id="arihito">
+        <persName>藤原有仁</persName>
+        <note>敦賀の豪族で利仁の舅。『今昔物語集』では有仁として登場</note>
+      </person>
+      <person xml:id="tokinaga">
+        <persName>時長</persName>
+        <note>民部卿時長。利仁の父。実在人物(藤原時長)への言及</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>平安京。概値</note>
+      </place>
+      <place xml:id="suzaku-oji">
+        <placeName>朱雀大路</placeName>
+        <location><geo>34.997 135.7414</geo></location>
+        <note>平安京の中央大路。概値(大路の中点付近)</note>
+      </place>
+      <place xml:id="sanjo-bomon">
+        <placeName>三条坊門</placeName>
+        <location><geo>35.0106 135.76</geo></location>
+        <note>平安京の三条坊門小路(現在の御池通付近)。概値</note>
+      </place>
+      <place xml:id="shinsenen">
+        <placeName>神泉苑</placeName>
+        <location><geo>35.0117 135.7443</geo></location>
+        <note>平安京の禁苑。現存する神泉苑の位置・概値</note>
+      </place>
+      <place xml:id="kamogawa">
+        <placeName>加茂川</placeName>
+        <location><geo>35.0167 135.7714</geo></location>
+        <note>鴨川(賀茂川)。概値(京都市中心部の河原付近)</note>
+      </place>
+      <place xml:id="higashiyama">
+        <placeName>東山</placeName>
+        <location><geo>35.0037 135.7787</geo></location>
+        <note>京都東山。概値</note>
+      </place>
+      <place xml:id="awataguchi">
+        <placeName>粟田口</placeName>
+        <location><geo>35.0064 135.7885</geo></location>
+        <note>京都から東海道へ出る口。概値</note>
+      </place>
+      <place xml:id="yamashina">
+        <placeName>山科</placeName>
+        <location><geo>34.9716 135.8123</geo></location>
+        <note>京都山科。概値</note>
+      </place>
+      <place xml:id="sekiyama">
+        <placeName>関山</placeName>
+        <location><geo>34.9938 135.8478</geo></location>
+        <note>逢坂の関のある逢坂山とみられる。概値(逢坂関跡付近)</note>
+      </place>
+      <place xml:id="miidera">
+        <placeName>三井寺</placeName>
+        <location><geo>35.0134 135.8527</geo></location>
+        <note>園城寺(三井寺)。概値</note>
+      </place>
+      <place xml:id="biwako">
+        <placeName>琵琶湖</placeName>
+        <location><geo>35.33 136.1</geo></location>
+        <note>概値(湖の中央付近)</note>
+      </place>
+      <place xml:id="takashima">
+        <placeName>高島</placeName>
+        <location><geo>35.3 136.029</geo></location>
+        <note>琵琶湖西岸の高島(現・滋賀県高島市)。概値</note>
+      </place>
+      <place xml:id="omi">
+        <placeName>近江</placeName>
+        <location><geo>35.0045 135.8686</geo></location>
+        <note>旧近江国。国名・概値(大津付近)</note>
+      </place>
+      <place xml:id="uji">
+        <placeName>宇治</placeName>
+        <location><geo>34.8844 135.7997</geo></location>
+        <note>山城国宇治。概値</note>
+      </place>
+      <place xml:id="hiei">
+        <placeName>比叡の山</placeName>
+        <location><geo>35.0705 135.8407</geo></location>
+        <note>比叡山。概値(山頂付近)</note>
+      </place>
+      <place xml:id="sakamoto">
+        <placeName>阪本</placeName>
+        <location><geo>35.07 135.865</geo></location>
+        <note>近江国坂本(現・滋賀県大津市坂本)。比叡山東麓。狐の産地として言及。概値</note>
+      </place>
+      <place xml:id="tanba">
+        <placeName>丹波の国</placeName>
+        <location><geo>35.013 135.573</geo></location>
+        <note>旧丹波国。国名・概値(亀岡付近)</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前</placeName>
+        <location><geo>36.0641 136.2196</geo></location>
+        <note>旧越前国。国名・概値(福井市付近)</note>
+      </place>
+      <place xml:id="tsuruga">
+        <placeName>敦賀</placeName>
+        <location><geo>35.645 136.0555</geo></location>
+        <note>越前国敦賀(現・福井県敦賀市)。概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>芋粥</head>
+        <p><date when="0877"><ruby><rb>元慶</rb><rt>ぐわんぎやう</rt></ruby></date>の末か、<date when="0885"><ruby><rb>仁和</rb><rt>にんな</rt></ruby></date>の始にあつた話であらう。どちらにしても時代はさして、この話に大事な役を、勤めてゐない。読者は唯、平安朝と云ふ、遠い昔が背景になつてゐると云ふ事を、知つてさへゐてくれれば、よいのである。――その頃、<ruby><rb>摂政</rb><rt>せつしやう</rt></ruby><persName ref="#mototsune">藤原<ruby><rb>基経</rb><rt>もとつね</rt></ruby></persName>に仕へてゐる<ruby><rb>侍</rb><rt>さむらひ</rt></ruby>の中に、<ruby><rb>某</rb><rt>なにがし</rt></ruby>と云ふ五位があつた。</p>
+        <p>これも、某と書かずに、何の誰と、ちやんと姓名を明にしたいのであるが、<ruby><rb>生憎</rb><rt>あいにく</rt></ruby>旧記には、それが伝はつてゐない。恐らくは、実際、伝はる資格がない程、平凡な男だつたのであらう。一体旧記の著者などと云ふ者は、平凡な人間や話に、余り興味を持たなかつたらしい。この点で、彼等と、日本の自然派の作家とは、大分ちがふ。王朝時代の小説家は、存外、<ruby><rb>閑人</rb><rt>ひまじん</rt></ruby>でない。――兎に角、摂政<persName ref="#mototsune">藤原基経</persName>に仕へてゐる侍の中に、某と云ふ五位があつた。これが、この話の主人公である。</p>
+        <p>五位は、風采の<ruby><rb>甚</rb><rt>はなはだ</rt></ruby><ruby><rb>揚</rb><rt>あが</rt></ruby>らない男であつた。第一背が低い。それから赤鼻で、眼尻が下つてゐる。口髭は勿論薄い。頬が、こけてゐるから、<ruby><rb>頤</rb><rt>あご</rt></ruby>が、人並はづれて、細く見える。唇は――一々、数へ立ててゐれば、際限はない。我五位の外貌はそれ程、非凡に、だらしなく、出来上つてゐたのである。</p>
+        <p>この男が、<ruby><rb>何時</rb><rt>いつ</rt></ruby>、どうして、<persName ref="#mototsune">基経</persName>に仕へるやうになつたのか、それは誰も知つてゐない。が、余程以前から、同じやうな色の<ruby><rb>褪</rb><rt>さ</rt></ruby>めた<ruby><rb>水干</rb><rt>すゐかん</rt></ruby>に、同じやうな<ruby><rb>萎々</rb><rt>なえなえ</rt></ruby>した<ruby><rb>烏帽子</rb><rt>ゑぼし</rt></ruby>をかけて、同じやうな役目を、飽きずに、毎日、繰返してゐる事だけは、確である。その結果であらう、今では、誰が見ても、この男に若い時があつたとは思はれない。（五位は四十を越してゐた。）その代り、生れた時から、あの通り寒むさうな赤鼻と、形ばかりの口髭とを、<placeName ref="#suzaku-oji"><ruby><rb>朱雀大路</rb><rt>すざくおほぢ</rt></ruby></placeName>の<ruby><rb>衢風</rb><rt>ちまたかぜ</rt></ruby>に、吹かせてゐたと云ふ気がする。<ruby><rb>上</rb><rt>かみ</rt></ruby>は主人の<persName ref="#mototsune">基経</persName>から、<ruby><rb>下</rb><rt>しも</rt></ruby>は牛飼の童児まで、無意識ながら、<ruby><rb>悉</rb><rt>ことごとく</rt></ruby>さう信じて疑ふ者がない。</p>
+        <p>かう云ふ風采を具へた男が、周囲から受ける待遇は、恐らく書くまでもないことであらう。<ruby><rb>侍所</rb><rt>さぶらひどころ</rt></ruby>にゐる連中は、五位に対して、殆ど<ruby><rb>蠅</rb><rt>はへ</rt></ruby>程の注意も払はない。<ruby><rb>有位</rb><rt>うゐ</rt></ruby><ruby><rb>無位</rb><rt>むゐ</rt></ruby>、併せて二十人に近い下役さへ、彼の出入りには、不思議な位、冷淡を極めてゐる。五位が何か云ひつけても、決して彼等同志の雑談をやめた事はない。彼等にとつては、空気の存在が見えないやうに、五位の存在も、眼を<ruby><rb>遮</rb><rt>さへぎ</rt></ruby>らないのであらう。下役でさへさうだとすれば、別当とか、侍所の<ruby><rb>司</rb><rt>つかさ</rt></ruby>とか云ふ上役たちが頭から彼を相手にしないのは、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ自然の<ruby><rb>数</rb><rt>すう</rt></ruby>である。彼等は、五位に対すると、殆ど、子供らしい無意味な悪意を、冷然とした表情の後に隠して、何を云ふのでも、手真似だけで用を足した。人間に、言語があるのは、偶然ではない。従つて、彼等も手真似では用を弁じない事が、時々ある。が、彼等は、それを全然五位の悟性に、欠陥があるからだと、思つてゐるらしい。そこで彼等は用が足りないと、この男の歪んだ<ruby><rb>揉</rb><rt>もみ</rt></ruby>烏帽子の先から、切れかかつた<ruby><rb>藁草履</rb><rt>わらざうり</rt></ruby>の尻まで、万遍なく見上げたり、見下したりして、それから、鼻で<ruby><rb>哂</rb><rt>わら</rt></ruby>ひながら、急に後を向いてしまふ。それでも、五位は、腹を立てた事がない。彼は、一切の不正を、不正として感じない程、意気地のない、臆病な人間だつたのである。</p>
+        <p>所が、同僚の侍たちになると、進んで、彼を<ruby><rb>飜弄</rb><rt>ほんろう</rt></ruby>しようとした。年かさの同僚が、彼れの振はない風采を材料にして、古い<ruby><rb>洒落</rb><rt>しやれ</rt></ruby>を聞かせようとする如く、年下の同僚も、亦それを機会にして、<ruby><rb>所謂</rb><rt>いはゆる</rt></ruby><ruby><rb>興言利口</rb><rt>きようげんりこう</rt></ruby>の練習をしようとしたからである。彼等は、この五位の面前で、その鼻と口髭と、烏帽子と水干とを、<ruby><rb>品隲</rb><rt>ひんしつ</rt></ruby>して飽きる事を知らなかつた。そればかりではない。彼が五六年前に別れたうけ<ruby><rb>唇</rb><rt>くち</rt></ruby>の女房と、その女房と関係があつたと云ふ酒のみの法師とも、<ruby><rb>屡</rb><rt>しばしば</rt></ruby>彼等の話題になつた。その上、どうかすると、彼等は<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>、<ruby><rb>性質</rb><rt>たち</rt></ruby>の悪い<ruby><rb>悪戯</rb><rt>いたづら</rt></ruby>さへする。それを今一々、列記する事は出来ない。が、彼の<ruby><rb>篠枝</rb><rt>ささえ</rt></ruby>の酒を飲んで、<ruby><rb>後</rb><rt>あと</rt></ruby>へ<ruby><rb>尿</rb><rt>いばり</rt></ruby>を入れて置いたと云ふ事を書けば、その外は<ruby><rb>凡</rb><rt>およそ</rt></ruby>、想像される事だらうと思ふ。</p>
+        <p>しかし、五位はこれらの<ruby><rb>揶揄</rb><rt>やゆ</rt></ruby>に対して、全然無感覚であつた。少くもわき眼には、無感覚であるらしく思はれた。彼は何を云はれても、顔の色さへ変へた事がない。黙つて例の薄い口髭を撫でながら、するだけの事をしてすましてゐる。唯、同僚の悪戯が、<ruby><rb>嵩</rb><rt>かう</rt></ruby>じすぎて、<ruby><rb>髷</rb><rt>まげ</rt></ruby>に紙切れをつけたり、<ruby><rb>太刀</rb><rt>たち</rt></ruby>の<ruby><rb>鞘</rb><rt>さや</rt></ruby>に草履を結びつけたりすると、彼は笑ふのか、泣くのか、わからないやうな笑顔をして、「いけぬのう、お身たちは。」と云ふ。その顔を見、その声を聞いた者は、誰でも一時或いぢらしさに打たれてしまふ。（彼等にいぢめられるのは、一人、この赤鼻の五位だけではない、彼等の知らない誰かが――多数の誰かが、彼の顔と声とを借りて、彼等の無情を責めてゐる。）――さう云ふ気が、<ruby><rb>朧</rb><rt>おぼろ</rt></ruby>げながら、彼等の心に、一瞬の間、しみこんで来るからである。唯その時の心もちを、何時までも持続ける者は甚少い。その少い中の一人に、或無位の侍があつた。これは<placeName ref="#tanba"><ruby><rb>丹波</rb><rt>たんば</rt></ruby>の国</placeName>から来た男で、まだ柔かい口髭が、やつと鼻の下に、生えかかつた位の青年である。勿論、この男も始めは皆と一しよに、何の理由もなく、赤鼻の五位を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>した。所が、或日何かの折に、「いけぬのう、お身たちは」と云ふ声を聞いてからは、どうしても、それが頭を離れない。それ以来、この男の眼にだけは、五位が全く別人として、映るやうになつた。栄養の不足した、血色の悪い、間のぬけた五位の顔にも、世間の迫害にべそを掻いた、「人間」が覗いてゐるからである。この無位の侍には、五位の事を考へる度に、世の中のすべてが急に本来の下等さを<ruby><rb>露</rb><rt>あらは</rt></ruby>すやうに思はれた。さうしてそれと同時に霜げた赤鼻と数へる程の口髭とが何となく<ruby><rb>一味</rb><rt>いちみ</rt></ruby>の慰安を自分の心に伝へてくれるやうに思はれた。……</p>
+        <p>しかし、それは、唯この男一人に、限つた事である。かう云ふ例外を除けば、五位は、依然として周囲の軽蔑の中に、犬のやうな生活を続けて行かなければならなかつた。第一彼には着物らしい着物が一つもない。<ruby><rb>青鈍</rb><rt>あをにび</rt></ruby>の水干と、同じ色の<ruby><rb>指貫</rb><rt>さしぬき</rt></ruby>とが一つづつあるのが、今ではそれが<ruby><rb>上白</rb><rt>うはじろ</rt></ruby>んで、<ruby><rb>藍</rb><rt>あゐ</rt></ruby>とも紺とも、つかないやうな色に、なつてゐる。水干はそれでも、肩が少し落ちて、丸組の緒や<ruby><rb>菊綴</rb><rt>きくとぢ</rt></ruby>の色が怪しくなつてゐるだけだが、指貫になると、裾のあたりのいたみ方が一通りでない。その指貫の中から、下の袴もはかない、細い足が出てゐるのを見ると、口の悪い同僚でなくとも、痩公卿の車を<ruby><rb>牽</rb><rt>ひ</rt></ruby>いてゐる、痩牛の歩みを見るやうな、みすぼらしい心もちがする。それに<ruby><rb>佩</rb><rt>は</rt></ruby>いてゐる太刀も、頗る<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ない物で、<ruby><rb>柄</rb><rt>つか</rt></ruby>の金具も<ruby><rb>如何</rb><rt>いかが</rt></ruby>はしければ、黒鞘の塗も剥げかかつてゐる。これが例の赤鼻で、だらしなく草履をひきずりながら、唯でさへ猫背なのを、一層寒空の下に背ぐくまつて、もの欲しさうに、左右を眺め眺め、きざみ足に歩くのだから、通りがかりの物売りまで<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>にするのも、無理はない。現に、かう云ふ事さへあつた。……</p>
+        <p>或る日、五位が<placeName ref="#sanjo-bomon">三条坊門</placeName>を<placeName ref="#shinsenen">神泉苑</placeName>の方へ行く所で、子供が六七人、路ばたに集つて、何かしてゐるのを見た事がある。「こまつぶり」でも、廻してゐるのかと思つて、後ろから覗いて見ると、<ruby><rb>何処</rb><rt>どこ</rt></ruby>かから迷つて来た、<ruby><rb>尨犬</rb><rt>むくいぬ</rt></ruby>の首へ繩をつけて、打つたり<ruby><rb>殴</rb><rt>たた</rt></ruby>いたりしてゐるのであつた。臆病な五位は、これまで何かに同情を寄せる事があつても、あたりへ気を兼ねて、まだ一度もそれを行為に現はしたことがない。が、この時だけは相手が子供だと云ふので、幾分か勇気が出た。そこで出来るだけ、笑顔をつくりながら、年かさらしい子供の肩を叩いて、「もう、堪忍してやりなされ。犬も打たれれば、痛いでのう」と声をかけた。すると、その子供はふりかへりながら、上眼を使つて、<ruby><rb>蔑</rb><rt>さげ</rt></ruby>すむやうに、ぢろぢろ五位の姿を見た。云はば侍所の別当が用の通じない時に、この男を見るやうな顔をして、見たのである。「いらぬ世話はやかれたうもない。」その子供は一足下りながら、高慢な唇を反らせて、かう云つた。「何ぢや、この鼻赤めが。」五位はこの<ruby><rb>語</rb><rt>ことば</rt></ruby>が自分の顔を打つたやうに感じた。が、それは悪態をつかれて、腹が立つたからでは毛頭ない。云はなくともいい事を云つて、恥をかいた自分が、情なくなつたからである。彼は、きまりが悪いのを苦しい笑顔に隠しながら、黙つて、又、<placeName ref="#shinsenen">神泉苑</placeName>の方へ歩き出した。後では、子供が、六七人、肩を寄せて、「べつかつかう」をしたり、舌を出したりしてゐる。勿論彼はそんな事を知らない。知つてゐたにしても、それが、この意気地のない五位にとつて、何であらう。……</p>
+        <p>では、この話の主人公は、唯、軽蔑される為にのみ生れて来た人間で、別に何の希望も持つてゐないかと云ふと、さうでもない。五位は五六年前から<ruby><rb>芋粥</rb><rt>いもがゆ</rt></ruby>と云ふ物に、異常な執着を持つてゐる。芋粥とは山の芋を中に切込んで、それを<ruby><rb>甘葛</rb><rt>あまづら</rt></ruby>の汁で煮た、粥の事を云ふのである。当時はこれが、無上の佳味として、上は<ruby><rb>万乗</rb><rt>ばんじよう</rt></ruby>の君の食膳にさへ、上せられた。従つて、吾五位の如き人間の口へは、年に一度、臨時の客の折にしか、はいらない。その時でさへ、飲めるのは僅に<ruby><rb>喉</rb><rt>のど</rt></ruby>を<ruby><rb>沾</rb><rt>うるほ</rt></ruby>すに足る程の少量である。そこで芋粥を飽きる程飲んで見たいと云ふ事が、久しい前から、彼の唯一の欲望になつてゐた。勿論、彼は、それを誰にも話した事がない。いや彼自身さへそれが、彼の一生を貫いてゐる欲望だとは、明白に意識しなかつた事であらう。が事実は彼がその為に、生きてゐると云つても、<ruby><rb>差支</rb><rt>さしつかへ</rt></ruby>ない程であつた。――人間は、時として、充されるか充されないか、わからない欲望の為に、一生を捧げてしまふ。その愚を<ruby><rb>哂</rb><rt>わら</rt></ruby>ふ者は、<ruby><rb>畢竟</rb><rt>ひつきやう</rt></ruby>、人生に対する路傍の人に過ぎない。</p>
+        <p>しかし、五位が夢想してゐた、「芋粥に飽かむ」事は、存外容易に事実となつて現れた。その始終を書かうと云ふのが、芋粥の話の目的なのである。</p>
+        <p>―――――――――――――――――</p>
+        <p>或年の<date when="--01-02">正月二日</date>、<persName ref="#mototsune">基経</persName>の<ruby><rb>第</rb><rt>だい</rt></ruby>に、<ruby><rb>所謂</rb><rt>いはゆる</rt></ruby>臨時の客があつた時の事である。（臨時の客は<ruby><rb>二宮</rb><rt>にぐう</rt></ruby>の<ruby><rb>大饗</rb><rt>だいきやう</rt></ruby>と同日に摂政関白家が、大臣以下の<ruby><rb>上達部</rb><rt>かんだちめ</rt></ruby>を招いて催す饗宴で、大饗と別に変りがない。）五位も、外の侍たちにまじつて、その<ruby><rb>残肴</rb><rt>ざんかう</rt></ruby>の<ruby><rb>相伴</rb><rt>しやうばん</rt></ruby>をした。当時はまだ、<ruby><rb>取食</rb><rt>とりば</rt></ruby>みの習慣がなくて、残肴は、その家の侍が一堂に集まつて、食ふ事になつてゐたからである。<ruby><rb>尤</rb><rt>もつと</rt></ruby>も、大饗に等しいと云つても昔の事だから、品数の多い割りに碌な物はない、餅、<ruby><rb>伏菟</rb><rt>ふと</rt></ruby>、<ruby><rb>蒸鮑</rb><rt>むしあはび</rt></ruby>、<ruby><rb>干鳥</rb><rt>ほしどり</rt></ruby>、<placeName ref="#uji">宇治</placeName>の<ruby><rb>氷魚</rb><rt>ひを</rt></ruby>、<placeName ref="#omi"><ruby><rb>近江</rb><rt>あふみ</rt></ruby></placeName>の<ruby><rb>鮒</rb><rt>ふな</rt></ruby>、鯛の<ruby><rb>楚割</rb><rt>すはやり</rt></ruby>、鮭の<ruby><rb>内子</rb><rt>こごもり</rt></ruby>、<ruby><rb>焼蛸</rb><rt>やきだこ</rt></ruby>、<ruby><rb>大海老</rb><rt>おほえび</rt></ruby>、<ruby><rb>大柑子</rb><rt>おほかうじ</rt></ruby>、小柑子、橘、串柿などの<ruby><rb>類</rb><rt>たぐひ</rt></ruby>である。唯、その中に、例の芋粥があつた。五位は毎年、この芋粥を楽しみにしてゐる。が、何時も人数が多いので、自分が飲めるのは、いくらもない。それが今年は、特に、少かつた。さうして気のせゐか、何時もより、余程味が好い。そこで、彼は飲んでしまつた後の椀をしげしげと眺めながら、うすい口髭についてゐる<ruby><rb>滴</rb><rt>しづく</rt></ruby>を、掌で拭いて誰に云ふともなく、「何時になつたら、これに飽ける事かのう」と、かう云つた。</p>
+        <p>「大夫殿は、芋粥に飽かれた事がないさうな。」</p>
+        <p>五位の<ruby><rb>語</rb><rt>ことば</rt></ruby>が<ruby><rb>完</rb><rt>をは</rt></ruby>らない中に、誰かが、<ruby><rb>嘲笑</rb><rt>あざわら</rt></ruby>つた。<ruby><rb>錆</rb><rt>さび</rt></ruby>のある、<ruby><rb>鷹揚</rb><rt>おうやう</rt></ruby>な、武人らしい声である。五位は、猫背の首を挙げて、臆病らしく、その人の方を見た。声の主は、その頃同じ<persName ref="#mototsune">基経</persName>の<ruby><rb>恪勤</rb><rt>かくごん</rt></ruby>になつてゐた、民部卿<persName ref="#tokinaga">時長</persName>の子<persName ref="#toshihito">藤原<ruby><rb>利仁</rb><rt>としひと</rt></ruby></persName>である。肩幅の広い、<ruby><rb>身長</rb><rt>みのたけ</rt></ruby>の群を抜いた<ruby><rb>逞</rb><rt>たくま</rt></ruby>しい大男で、これは、<ruby><rb>煠栗</rb><rt>ゆでぐり</rt></ruby>を噛みながら、<ruby><rb>黒酒</rb><rt>くろき</rt></ruby>の<ruby><rb>杯</rb><rt>さかづき</rt></ruby>を重ねてゐた。もう大分酔がまはつてゐるらしい。</p>
+        <p>「お気の毒な事ぢやの。」<persName ref="#toshihito">利仁</persName>は、五位が顔を挙げたのを見ると、軽蔑と<ruby><rb>憐憫</rb><rt>れんびん</rt></ruby>とを一つにしたやうな声で、語を継いだ。「お望みなら、<persName ref="#toshihito">利仁</persName>がお飽かせ申さう。」</p>
+        <p>始終、いぢめられてゐる犬は、たまに肉を貰つても容易によりつかない。五位は、例の笑ふのか、泣くのか、わからないやうな笑顔をして、<persName ref="#toshihito">利仁</persName>の顔と、<ruby><rb>空</rb><rt>から</rt></ruby>の椀とを等分に見比べてゐた。</p>
+        <p>「おいやかな。」</p>
+        <p>「……」</p>
+        <p>「どうぢや。」</p>
+        <p>「……」</p>
+        <p>五位は、その中に、衆人の視線が、自分の上に、集まつてゐるのを感じ出した。答へ方一つで、又、一同の嘲弄を、受けなければならない。或は、どう答へても、結局、<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>にされさうな気さへする。彼は<ruby><rb>躊躇</rb><rt>ちうちよ</rt></ruby>した。もし、その時に、相手が、少し面倒臭そうな声で、「おいやなら、たつてとは申すまい」と云はなかつたなら、五位は、<ruby><rb>何時</rb><rt>いつ</rt></ruby>までも、椀と<persName ref="#toshihito">利仁</persName>とを、見比べてゐた事であらう。</p>
+        <p>彼は、それを聞くと、<ruby><rb>慌</rb><rt>あわただ</rt></ruby>しく答へた。</p>
+        <p>「いや……<ruby><rb>忝</rb><rt>かたじけな</rt></ruby>うござる。」</p>
+        <p>この問答を聞いてゐた者は、皆、一時に、失笑した。「いや……忝うござる。」――かう云つて、五位の答を、真似る者さへある。所謂、<ruby><rb>橙黄橘紅</rb><rt>とうくわうきつこう</rt></ruby>を盛つた<ruby><rb>窪坏</rb><rt>くぼつき</rt></ruby>や高坏の上に多くの<ruby><rb>揉</rb><rt>もみ</rt></ruby>烏帽子や<ruby><rb>立</rb><rt>たて</rt></ruby>烏帽子が、笑声と共に一しきり、波のやうに動いた。中でも、<ruby><rb>最</rb><rt>もつとも</rt></ruby>、大きな声で、機嫌よく、笑つたのは、<persName ref="#toshihito">利仁</persName>自身である。</p>
+        <p>「では、その中に、御誘ひ申さう。」さう云ひながら、彼は、ちよいと顔をしかめた。こみ上げて来る笑と今飲んだ酒とが、喉で一つになつたからである。「……しかと、よろしいな。」</p>
+        <p>「忝うござる。」</p>
+        <p>五位は赤くなつて、<ruby><rb>吃</rb><rt>ども</rt></ruby>りながら、又、前の答を繰返した。一同が今度も、笑つたのは、云ふまでもない。それが云はせたさに、わざわざ念を押した当の<persName ref="#toshihito">利仁</persName>に至つては、前よりも一層<ruby><rb>可笑</rb><rt>をか</rt></ruby>しさうに広い肩をゆすつて、<ruby><rb>哄笑</rb><rt>こうせう</rt></ruby>した。この<ruby><rb>朔北</rb><rt>さくほく</rt></ruby>の野人は、生活の方法を二つしか心得てゐない。一つは酒を飲む事で、他の一つは笑ふ事である。</p>
+        <p>しかし<ruby><rb>幸</rb><rt>さいはひ</rt></ruby>に談話の中心は、程なく、この二人を離れてしまつた。これは事によると、外の連中が、たとひ嘲弄にしろ、一同の注意をこの赤鼻の五位に集中させるのが、不快だつたからかも知れない。兎に角、<ruby><rb>談柄</rb><rt>だんぺい</rt></ruby>はそれからそれへと移つて、酒も<ruby><rb>肴</rb><rt>さかな</rt></ruby>も<ruby><rb>残少</rb><rt>のこりずくな</rt></ruby>になつた時分には、<ruby><rb>某</rb><rt>なにがし</rt></ruby>と云ふ侍<ruby><rb>学生</rb><rt>がくしやう</rt></ruby>が、<ruby><rb>行縢</rb><rt>むかばき</rt></ruby>の片皮へ、両足を入れて馬に乗らうとした話が、一座の興味を集めてゐた。が、五位だけは、まるで外の話が聞えないらしい。恐らく芋粥の二字が、彼のすべての思量を支配してゐるからであらう。前に<ruby><rb>雉子</rb><rt>きぎす</rt></ruby>の<ruby><rb>炙</rb><rt>や</rt></ruby>いたのがあつても、箸をつけない。黒酒の杯があつても、口を触れない。彼は、唯、両手を膝の上に置いて、見合ひをする娘のやうに霜に犯されかかつた<ruby><rb>鬢</rb><rt>びん</rt></ruby>の辺まで、<ruby><rb>初心</rb><rt>うぶ</rt></ruby>らしく上気しながら、何時までも空になつた黒塗の椀を見つめて、多愛もなく、微笑してゐるのである。……</p>
+        <p>―――――――――――――――――</p>
+        <p>それから、四五日たつた日の午前、<placeName ref="#kamogawa">加茂川</placeName>の河原に沿つて、<placeName ref="#awataguchi"><ruby><rb>粟田口</rb><rt>あはたぐち</rt></ruby></placeName>へ通ふ街道を、静に馬を進めてゆく二人の男があつた。一人は濃い<ruby><rb>縹</rb><rt>はなだ</rt></ruby>の<ruby><rb>狩衣</rb><rt>かりぎぬ</rt></ruby>に同じ色の袴をして、<ruby><rb>打出</rb><rt>うちで</rt></ruby>の太刀を<ruby><rb>佩</rb><rt>は</rt></ruby>いた「鬚黒く<ruby><rb>鬢</rb><rt>びん</rt></ruby>ぐきよき」男である。もう一人は、みすぼらしい<ruby><rb>青鈍</rb><rt>あをにび</rt></ruby>の水干に、薄綿の<ruby><rb>衣</rb><rt>きぬ</rt></ruby>を二つばかり重ねて着た、四十恰好の侍で、これは、帯のむすび方のだらしのない<ruby><rb>容子</rb><rt>ようす</rt></ruby>と云ひ、赤鼻でしかも穴のあたりが、<ruby><rb>洟</rb><rt>はな</rt></ruby>にぬれてゐる容子と云ひ、身のまはり万端のみすぼらしい事<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しい。尤も、馬は二人とも、前のは<ruby><rb>月毛</rb><rt>つきげ</rt></ruby>、後のは<ruby><rb>蘆毛</rb><rt>あしげ</rt></ruby>の三歳駒で、道をゆく物売りや侍も、振向いて見る程の駿足である。その後から又二人、馬の歩みに遅れまいとして<ruby><rb>随</rb><rt>つ</rt></ruby>いて行くのは、調度掛と<ruby><rb>舎人</rb><rt>とねり</rt></ruby>とに相違ない。――これが、<persName ref="#toshihito">利仁</persName>と五位との一行である事は、わざわざ、ここに断るまでもない話であらう。</p>
+        <p>冬とは云ひながら、物静に晴れた日で、白けた河原の石の間、<ruby><rb>潺湲</rb><rt>せんくわん</rt></ruby>たる水の<ruby><rb>辺</rb><rt>ほとり</rt></ruby>に立枯れてゐる<ruby><rb>蓬</rb><rt>よもぎ</rt></ruby>の葉を、ゆする程の風もない。川に臨んだ背の低い柳は、葉のない枝に<ruby><rb>飴</rb><rt>あめ</rt></ruby>の如く滑かな日の光りをうけて、<ruby><rb>梢</rb><rt>こずゑ</rt></ruby>にゐる<ruby><rb>鶺鴒</rb><rt>せきれい</rt></ruby>の尾を動かすのさへ、鮮かに、それと、影を街道に落してゐる。<placeName ref="#higashiyama">東山</placeName>の暗い緑の上に、霜に焦げた<ruby><rb>天鵞絨</rb><rt>びろうど</rt></ruby>のやうな肩を、丸々と出してゐるのは、大方、<placeName ref="#hiei"><ruby><rb>比叡</rb><rt>ひえい</rt></ruby>の山</placeName>であらう。二人はその中に<ruby><rb>鞍</rb><rt>くら</rt></ruby>の<ruby><rb>螺鈿</rb><rt>らでん</rt></ruby>を、まばゆく日にきらめかせながら鞭をも加へず悠々と、<placeName ref="#awataguchi">粟田口</placeName>を指して行くのである。</p>
+        <p>「どこでござるかな、手前をつれて行つて、やらうと仰せられるのは。」五位が馴れない手に手綱をかいくりながら、云つた。</p>
+        <p>「すぐ、そこぢや。お案じになる程遠くはない。」</p>
+        <p>「すると、<placeName ref="#awataguchi">粟田口</placeName>辺でござるかな。」</p>
+        <p>「まづ、さう思はれたがよろしからう。」</p>
+        <p><persName ref="#toshihito">利仁</persName>は今朝五位を誘ふのに、<placeName ref="#higashiyama">東山</placeName>の近くに湯の湧いてゐる所があるから、そこへ行かうと云つて出て来たのである。赤鼻の五位は、それを<ruby><rb>真</rb><rt>ま</rt></ruby>にうけた。久しく湯にはいらないので、体中がこの間からむづ<ruby><rb>痒</rb><rt>がゆ</rt></ruby>い。芋粥の馳走になつた上に、入湯が出来れば、願つてもない仕合せである。かう思つて、<ruby><rb>予</rb><rt>あらかじ</rt></ruby>め<persName ref="#toshihito">利仁</persName>が牽かせて来た、蘆毛の馬に<ruby><rb>跨</rb><rt>またが</rt></ruby>つた。所が、<ruby><rb>轡</rb><rt>くつわ</rt></ruby>を並べて此処まで来て見ると、どうも<persName ref="#toshihito">利仁</persName>はこの近所へ来るつもりではないらしい。現に、さうかうしてゐる中に、<placeName ref="#awataguchi">粟田口</placeName>は通りすぎた。</p>
+        <p>「<placeName ref="#awataguchi">粟田口</placeName>では、ござらぬのう。」</p>
+        <p>「いかにも、もそつと、あなたでな。」</p>
+        <p><persName ref="#toshihito">利仁</persName>は、微笑を含みながら、わざと、五位の顔を見ないやうにして、静に馬を歩ませてゐる。両側の人家は、次第に稀になつて、今は、広々とした冬田の上に、餌をあさる<ruby><rb>鴉</rb><rt>からす</rt></ruby>が見えるばかり、山の陰に消残つて、雪の色も<ruby><rb>仄</rb><rt>ほのか</rt></ruby>に青く煙つてゐる。晴れながら、とげとげしい<ruby><rb>櫨</rb><rt>はじ</rt></ruby>の梢が、眼に痛く空を刺してゐるのさへ、何となく肌寒い。</p>
+        <p>「では、<placeName ref="#yamashina"><ruby><rb>山科</rb><rt>やましな</rt></ruby></placeName>辺ででもござるかな。」</p>
+        <p>「<placeName ref="#yamashina">山科</placeName>は、これぢや。もそつと、さきでござるよ。」</p>
+        <p>成程、さう云ふ中に、<placeName ref="#yamashina">山科</placeName>も通りすぎた。それ所ではない。何かとする中に、<placeName ref="#sekiyama">関山</placeName>も後にして、<ruby><rb>彼是</rb><rt>かれこれ</rt></ruby>、<ruby><rb>午</rb><rt>ひる</rt></ruby>少しすぎた時分には、とうとう<placeName ref="#miidera">三井寺</placeName>の前へ来た。<placeName ref="#miidera">三井寺</placeName>には、<persName ref="#toshihito">利仁</persName>の懇意にしてゐる僧がある。二人はその僧を訪ねて、<ruby><rb>午餐</rb><rt>ひるげ</rt></ruby>の馳走になつた。それがすむと、又、馬に乗つて、途を急ぐ。行手は今まで来た路に比べると遙に人煙が少ない。殊に当時は盗賊が四方に横行した、物騒な時代である。――五位は猫背を一層低くしながら、<persName ref="#toshihito">利仁</persName>の顔を見上げるやうにして訊ねた。</p>
+        <p>「まだ、さきでござるのう。」</p>
+        <p><persName ref="#toshihito">利仁</persName>は微笑した。<ruby><rb>悪戯</rb><rt>いたづら</rt></ruby>をして、それを見つけられさうになつた子供が、年長者に向つてするやうな微笑である。鼻の先へよせた<ruby><rb>皺</rb><rt>しわ</rt></ruby>と、眼尻にたたへた筋肉のたるみとが、笑つてしまはうか、しまふまいかとためらつてゐるらしい。さうして、とうとう、かう云つた。</p>
+        <p>「実はな、<placeName ref="#tsuruga"><ruby><rb>敦賀</rb><rt>つるが</rt></ruby></placeName>まで、お連れ申さうと思うたのぢや。」笑ひながら、<persName ref="#toshihito">利仁</persName>は鞭を挙げて遠くの空を指さした。その鞭の下には、<ruby><rb>的皪</rb><rt>てきれき</rt></ruby>として、午後の日を受けた<placeName ref="#omi"><ruby><rb>近江</rb><rt>あふみ</rt></ruby></placeName>の湖が光つてゐる。</p>
+        <p>五位は、<ruby><rb>狼狽</rb><rt>らうばい</rt></ruby>した。</p>
+        <p>「<placeName ref="#tsuruga">敦賀</placeName>と申すと、あの<placeName ref="#echizen"><ruby><rb>越前</rb><rt>ゑちぜん</rt></ruby></placeName>の<placeName ref="#tsuruga">敦賀</placeName>でござるかな。あの<placeName ref="#echizen">越前</placeName>の――」</p>
+        <p><persName ref="#toshihito">利仁</persName>が、<placeName ref="#tsuruga">敦賀</placeName>の人、<persName ref="#arihito">藤原<ruby><rb>有仁</rb><rt>ありひと</rt></ruby></persName>の<ruby><rb>女婿</rb><rt>ぢよせい</rt></ruby>になつてから、多くは<placeName ref="#tsuruga">敦賀</placeName>に住んでゐると云ふ事も、日頃から聞いてゐない事はない。が、その<placeName ref="#tsuruga">敦賀</placeName>まで自分をつれて行く気だらうとは、今の今まで思はなかつた。第一、幾多の山河を隔ててゐる<placeName ref="#echizen">越前</placeName>の国へ、この通り、僅二人の<ruby><rb>伴人</rb><rt>ともびと</rt></ruby>をつれただけで、どうして無事に行かれよう。ましてこの頃は、<ruby><rb>往来</rb><rt>ゆきき</rt></ruby>の旅人が、盗賊の為に殺されたと云ふ<ruby><rb>噂</rb><rt>うはさ</rt></ruby>さへ、諸方にある。――五位は歎願するやうに、<persName ref="#toshihito">利仁</persName>の顔を見た。</p>
+        <p>「それは又、滅相な、<placeName ref="#higashiyama">東山</placeName>ぢやと心得れば、<placeName ref="#yamashina">山科</placeName>。<placeName ref="#yamashina">山科</placeName>ぢやと心得れば、<placeName ref="#miidera">三井寺</placeName>。揚句が<placeName ref="#echizen">越前</placeName>の<placeName ref="#tsuruga">敦賀</placeName>とは、一体どうしたと云ふ事でござる。始めから、さう仰せられうなら、下人共なりと、召つれようものを。――<placeName ref="#tsuruga">敦賀</placeName>とは、滅相な。」</p>
+        <p>五位は、殆どべそを掻かないばかりになつて、<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いた。もし「芋粥に飽かむ」事が、彼の勇気を鼓舞しなかつたとしたら、彼は恐らく、そこから別れて、<placeName ref="#kyoto">京都</placeName>へ独り帰つて来た事であらう。</p>
+        <p>「<persName ref="#toshihito">利仁</persName>が一人居るのは、千人ともお思ひなされ。路次の心配は、御無用ぢや。」</p>
+        <p>五位の狼狽するのを見ると、<persName ref="#toshihito">利仁</persName>は、少し眉を<ruby><rb>顰</rb><rt>しか</rt></ruby>めながら、<ruby><rb>嘲笑</rb><rt>あざわら</rt></ruby>つた。さうして調度掛を呼寄せて、持たせて来た<ruby><rb>壺胡籙</rb><rt>つぼやなぐひ</rt></ruby>を背に負ふと、やはり、その手から、<ruby><rb>黒漆</rb><rt>こくしつ</rt></ruby>の<ruby><rb>真弓</rb><rt>まゆみ</rt></ruby>をうけ取つて、それを鞍上に横へながら、先に立つて、馬を進めた。かうなる以上、意気地のない五位は、<persName ref="#toshihito">利仁</persName>の意志に盲従するより外に仕方がない。それで、彼は心細さうに、荒涼とした周囲の原野を眺めながら、うろ覚えの<ruby><rb>観音経</rb><rt>くわんおんぎやう</rt></ruby>を口の中に念じ念じ、例の赤鼻を鞍の前輪にすりつけるやうにして、覚束ない馬の歩みを、<ruby><rb>不相変</rb><rt>あひかはらず</rt></ruby>とぼとぼと進めて行つた。</p>
+        <p>馬蹄の反響する野は、茫々たる<ruby><rb>黄茅</rb><rt>くわうばう</rt></ruby>に<ruby><rb>蔽</rb><rt>おほ</rt></ruby>はれて、その所々にある<ruby><rb>行潦</rb><rt>みづたまり</rt></ruby>も、つめたく、青空を映したまま、この冬の午後を、何時かそれなり凍つてしまふかと疑はれる。その<ruby><rb>涯</rb><rt>はて</rt></ruby>には、一帯の山脈が、日に背いてゐるせゐか、かがやく可き残雪の光もなく、紫がかつた暗い色を、長々となすつてゐるが、それさへ<ruby><rb>蕭条</rb><rt>せうでう</rt></ruby>たる<ruby><rb>幾叢</rb><rt>いくむら</rt></ruby>の<ruby><rb>枯薄</rb><rt>かれすすき</rt></ruby>に<ruby><rb>遮</rb><rt>さへぎ</rt></ruby>られて、二人の従者の眼には、はいらない事が多い。――すると、<persName ref="#toshihito">利仁</persName>が、突然、五位の方をふりむいて、声をかけた。</p>
+        <p>「あれに、よい使者が参つた。<placeName ref="#tsuruga">敦賀</placeName>への言づけを申さう。」</p>
+        <p>五位は<persName ref="#toshihito">利仁</persName>の云ふ意味が、よくわからないので、<ruby><rb>怖々</rb><rt>こはごは</rt></ruby>ながら、その弓で指さす方を、眺めて見た。元より人の姿が見えるやうな所ではない。唯、<ruby><rb>野葡萄</rb><rt>のぶだう</rt></ruby>か何かの<ruby><rb>蔓</rb><rt>つる</rt></ruby>が、灌木の一むらにからみついてゐる中を、一疋の狐が、暖かな毛の色を、傾きかけた日に<ruby><rb>曝</rb><rt>さら</rt></ruby>しながら、のそりのそり歩いて行く。――と思ふ中に、狐は、<ruby><rb>慌</rb><rt>あわ</rt></ruby>ただしく身を跳らせて、一散に、どこともなく走り出した。<persName ref="#toshihito">利仁</persName>が急に、鞭を鳴らせて、その方へ馬を飛ばし始めたからである。五位も、われを忘れて、<persName ref="#toshihito">利仁</persName>の後を、<ruby><rb>逐</rb><rt>お</rt></ruby>つた。従者も勿論、遅れてはゐられない。しばらくは、石を蹴る馬蹄の音が、<ruby><rb>戞々</rb><rt>かつかつ</rt></ruby>として、曠野の静けさを破つてゐたが、やがて<persName ref="#toshihito">利仁</persName>が、馬を止めたのを見ると、何時、捕へたのか、もう狐の後足を<ruby><rb>掴</rb><rt>つか</rt></ruby>んで、<ruby><rb>倒</rb><rt>さかさま</rt></ruby>に、鞍の側へ、ぶら下げてゐる。狐が、走れなくなるまで、追ひつめた所で、それを馬の下に敷いて、手取りにしたものであらう。五位は、うすい髭にたまる汗を、慌しく拭きながら、<ruby><rb>漸</rb><rt>やうやく</rt></ruby>、その傍へ馬を乗りつけた。</p>
+        <p>「これ、狐、よう聞けよ。」<persName ref="#toshihito">利仁</persName>は、狐を高く眼の前へつるし上げながら、わざと物々しい声を出してかう云つた。「其方、今夜の中に、<placeName ref="#tsuruga">敦賀</placeName>の<persName ref="#toshihito">利仁</persName>が<ruby><rb>館</rb><rt>やかた</rt></ruby>へ参つて、かう申せ。『<persName ref="#toshihito">利仁</persName>は、唯今<ruby><rb>俄</rb><rt>にはか</rt></ruby>に客人を具して下らうとする所ぢや。明日、<ruby><rb>巳時</rb><rt>みのとき</rt></ruby>頃、<placeName ref="#takashima">高島</placeName>の辺まで、男たちを迎ひに<ruby><rb>遣</rb><rt>つか</rt></ruby>はし、それに、鞍置馬二疋、牽かせて参れ。』よいか忘れるなよ。」</p>
+        <p>云ひ<ruby><rb>畢</rb><rt>をは</rt></ruby>ると共に、<persName ref="#toshihito">利仁</persName>は、一ふり振つて狐を、遠くの<ruby><rb>叢</rb><rt>くさむら</rt></ruby>の中へ、<ruby><rb>抛</rb><rt>はふ</rt></ruby>り出した。</p>
+        <p>「いや、走るわ。走るわ。」</p>
+        <p>やつと、追ひついた二人の従者は、逃げてゆく狐の行方を眺めながら、手を<ruby><rb>拍</rb><rt>う</rt></ruby>つて<ruby><rb>囃</rb><rt>はや</rt></ruby>し立てた。落葉のやうな色をしたその獣の背は、夕日の中を、まつしぐらに、木の根石くれの嫌ひなく、何処までも、走つて行く。それが一行の立つてゐる所から、手にとるやうによく見えた。狐を追つてゐる中に、何時か彼等は、曠野が<ruby><rb>緩</rb><rt>ゆる</rt></ruby>い斜面を作つて、水の涸れた川床と一つになる、その丁度上の所へ、出てゐたからである。</p>
+        <p>「<ruby><rb>広量</rb><rt>くわうりやう</rt></ruby>の御使でござるのう。」</p>
+        <p>五位は、ナイイヴな尊敬と讃嘆とを洩らしながら、この狐さへ<ruby><rb>頤使</rb><rt>いし</rt></ruby>する野育ちの武人の顔を、今更のやうに、仰いで見た。自分と<persName ref="#toshihito">利仁</persName>との間に、どれ程の懸隔があるか、そんな事は、考へる暇がない。唯、<persName ref="#toshihito">利仁</persName>の意志に、支配される範囲が広いだけに、その意志の中に包容される自分の意志も、それだけ自由が利くやうになつた事を、心強く感じるだけである。――<ruby><rb>阿諛</rb><rt>あゆ</rt></ruby>は、恐らく、かう云ふ時に、<ruby><rb>最</rb><rt>もつとも</rt></ruby>自然に生れて来るものであらう。読者は、今後、赤鼻の五位の態度に、<ruby><rb>幇間</rb><rt>ほうかん</rt></ruby>のやうな何物かを見出しても、それだけで<ruby><rb>妄</rb><rt>みだり</rt></ruby>にこの男の人格を、疑ふ可きではない。</p>
+        <p>抛り出された狐は、なぞへの斜面を、転げるやうにして、駈け下りると、水の無い河床の石の間を、器用に、ぴよいぴよい、飛び越えて、今度は、向うの斜面へ、勢よく、すぢかひに駈け上つた。駈け上りながら、ふりかへつて見ると、自分を手捕りにした侍の一行は、まだ遠い傾斜の上に馬を並べて立つてゐる。それが皆、指を揃へた程に、小さく見えた。殊に入日を浴びた、月毛と蘆毛とが、霜を含んだ空気の中に、描いたよりもくつきりと、浮き上つてゐる。</p>
+        <p>狐は、頭をめぐらすと、又枯薄の中を、風のやうに走り出した。</p>
+        <p>―――――――――――――――――</p>
+        <p>一行は、予定通り翌日の<ruby><rb>巳時</rb><rt>みのとき</rt></ruby>ばかりに、<placeName ref="#takashima">高島</placeName>の辺へ来た。此処は<placeName ref="#biwako">琵琶湖</placeName>に臨んだ、ささやかな部落で、昨日に似ず、どんよりと曇つた空の下に、幾戸の<ruby><rb>藁屋</rb><rt>わらや</rt></ruby>が、<ruby><rb>疎</rb><rt>まばら</rt></ruby>にちらばつてゐるばかり、岸に生えた松の樹の間には、灰色の<ruby><rb>漣漪</rb><rt>さざなみ</rt></ruby>をよせる湖の水面が、磨くのを忘れた鏡のやうに、さむざむと開けてゐる。――此処まで来ると<persName ref="#toshihito">利仁</persName>が、五位を顧みて云つた。</p>
+        <p>「あれを<ruby><rb>御覧</rb><rt>ごらう</rt></ruby>じろ。男どもが、迎ひに参つたげでござる。」</p>
+        <p>見ると、成程、二疋の鞍置馬を牽いた、二三十人の男たちが、馬に跨がつたのもあり<ruby><rb>徒歩</rb><rt>かち</rt></ruby>のもあり、皆水干の袖を寒風に翻へして、湖の岸、松の間を、一行の方へ急いで来る。やがてこれが、間近くなつたと思ふと、馬に乗つてゐた連中は、慌ただしく鞍を下り、徒歩の連中は、路傍に<ruby><rb>蹲踞</rb><rt>そんきよ</rt></ruby>して、いづれも恭々しく、<persName ref="#toshihito">利仁</persName>の来るのを、待ちうけた。</p>
+        <p>「やはり、あの狐が、使者を勤めたと見えますのう。」</p>
+        <p>「<ruby><rb>生得</rb><rt>しやうとく</rt></ruby>、<ruby><rb>変化</rb><rt>へんげ</rt></ruby>ある獣ぢやて、あの位の用を勤めるのは、何でもござらぬ。」</p>
+        <p>五位と<persName ref="#toshihito">利仁</persName>とが、こんな話をしてゐる中に、一行は、<ruby><rb>郎等</rb><rt>らうどう</rt></ruby>たちの待つてゐる所へ来た。「大儀ぢや。」と、<persName ref="#toshihito">利仁</persName>が声をかける。蹲踞してゐた連中が、忙しく立つて、二人の馬の口を取る。急に、すべてが陽気になつた。</p>
+        <p>「夜前、<ruby><rb>稀有</rb><rt>けう</rt></ruby>な事が、ございましてな。」</p>
+        <p>二人が、馬から下りて、敷皮の上へ、腰を下すか下さない中に、<ruby><rb>檜皮色</rb><rt>ひはだいろ</rt></ruby>の水干を着た、白髪の郎等が、<persName ref="#toshihito">利仁</persName>の前へ来て、かう云つた。「何ぢや。」<persName ref="#toshihito">利仁</persName>は、郎等たちの持つて来た<ruby><rb>篠枝</rb><rt>ささえ</rt></ruby>や<ruby><rb>破籠</rb><rt>わりご</rt></ruby>を、五位にも勧めながら、<ruby><rb>鷹揚</rb><rt>おうやう</rt></ruby>に問ひかけた。</p>
+        <p>「さればでございまする。夜前、<ruby><rb>戌時</rb><rt>いぬのとき</rt></ruby>ばかりに、奥方が<ruby><rb>俄</rb><rt>にはか</rt></ruby>に、<ruby><rb>人心地</rb><rt>ひとごこち</rt></ruby>をお失ひなされましてな。『おのれは、<placeName ref="#sakamoto">阪本</placeName>の狐ぢや。今日、殿の仰せられた事を、<ruby><rb>言伝</rb><rt>ことづ</rt></ruby>てせうほどに、近う寄つて、よう聞きやれ。』と、かう<ruby><rb>仰有</rb><rt>おつしや</rt></ruby>るのでございまする。さて、一同がお前に参りますると、奥方の仰せられまするには、『殿は唯今俄に客人を具して、下られようとする所ぢや。明日巳時頃、<placeName ref="#takashima">高島</placeName>の辺まで、男どもを迎ひに遺はし、それに鞍置馬二疋牽かせて参れ。』と、かう<ruby><rb>御意</rb><rt>ぎよい</rt></ruby>遊ばすのでございまする。」</p>
+        <p>「それは、又、<ruby><rb>稀有</rb><rt>けう</rt></ruby>な事でござるのう。」五位は<persName ref="#toshihito">利仁</persName>の顔と、郎等の顔とを、仔細らしく見比べながら、両方に満足を与へるやうな、<ruby><rb>相槌</rb><rt>あひづち</rt></ruby>を打つた。</p>
+        <p>「それも唯、仰せられるのではございませぬ。さも、恐ろしさうに、わなわなとお震へになりましてな、『遅れまいぞ。遅れれば、おのれが、殿の御勘当をうけねばならぬ。』と、しつきりなしに、お泣きになるのでございまする。」</p>
+        <p>「して、それから、<ruby><rb>如何</rb><rt>いかが</rt></ruby>した。」</p>
+        <p>「それから、多愛なく、お休みになりましてな。手前共の出て参りまする時にも、まだ、お眼覚にはならぬやうで、ございました。」</p>
+        <p>「如何でござるな。」郎等の話を聞き<ruby><rb>完</rb><rt>をは</rt></ruby>ると、<persName ref="#toshihito">利仁</persName>は五位を見て、得意らしく云つた。「<persName ref="#toshihito">利仁</persName>には、<ruby><rb>獣</rb><rt>けもの</rt></ruby>も使はれ申すわ。」</p>
+        <p>「何とも驚き入る外は、ござらぬのう。」五位は、赤鼻を掻きながら、ちよいと、頭を下げて、それから、わざとらしく、呆れたやうに、口を開いて見せた。口髭には、今飲んだ酒が、<ruby><rb>滴</rb><rt>しづく</rt></ruby>になつて、くつついてゐる。</p>
+        <p>―――――――――――――――――</p>
+        <p>その日の夜の事である。五位は、<persName ref="#toshihito">利仁</persName>の<ruby><rb>館</rb><rt>やかた</rt></ruby>の<ruby><rb>一間</rb><rt>ひとま</rt></ruby>に、切燈台の灯を眺めるともなく、眺めながら、寝つかれない長の夜をまぢまぢして、<ruby><rb>明</rb><rt>あか</rt></ruby>してゐた。すると、夕方、此処へ着くまでに、<persName ref="#toshihito">利仁</persName>や<persName ref="#toshihito">利仁</persName>の従者と、談笑しながら、越えて来た松山、小川、枯野、或は、草、木の葉、石、野火の煙のにほひ、――さう云ふものが、一つづつ、五位の心に、浮んで来た。殊に、<ruby><rb>雀色時</rb><rt>すずめいろどき</rt></ruby>の<ruby><rb>靄</rb><rt>もや</rt></ruby>の中を、やつと、この館へ<ruby><rb>辿</rb><rt>たど</rt></ruby>りついて、<ruby><rb>長櫃</rb><rt>ながびつ</rt></ruby>に起してある、炭火の赤い焔を見た時の、ほつとした心もち、――それも、今かうして、寝てゐると、遠い昔にあつた事としか、思はれない。五位は綿の四五寸もはいつた、黄いろい<ruby><rb>直垂</rb><rt>ひたたれ</rt></ruby>の下に、楽々と、足をのばしながら、ぼんやり、われとわが寝姿を見廻した。</p>
+        <p>直垂の下に<persName ref="#toshihito">利仁</persName>が貸してくれた、<ruby><rb>練色</rb><rt>ねりいろ</rt></ruby>の<ruby><rb>衣</rb><rt>きぬ</rt></ruby>の<ruby><rb>綿厚</rb><rt>わたあつ</rt></ruby>なのを、二枚まで重ねて、着こんでゐる。それだけでも、どうかすると、汗が出かねない程、暖かい。そこへ、夕飯の時に一杯やつた、酒の酔が手伝つてゐる。枕元の<ruby><rb>蔀</rb><rt>しとみ</rt></ruby>一つ隔てた向うは、霜の冴えた広庭だが、それも、かう陶然としてゐれば、少しも苦にならない。万事が、<placeName ref="#kyoto">京都</placeName>の自分の<ruby><rb>曹司</rb><rt>ざうし</rt></ruby>にゐた時と比べれば、雲泥の相違である。が、それにも係はらず、我五位の心には、何となく釣合のとれない不安があつた。第一、時間のたつて行くのが、待遠い。しかもそれと同時に、夜の明けると云ふ事が、――芋粥を食ふ時になると云ふ事が、さう早く、来てはならないやうな心もちがする。さうして又、この矛盾した二つの感情が、互に剋し合ふ後には、境遇の急激な変化から来る、落着かない気分が、今日の天気のやうに、うすら寒く控へてゐる。それが、皆、邪魔になつて、折角の暖かさも、容易に、眠りを誘ひさうもない。</p>
+        <p>すると、外の広庭で、誰か大きな声を出してゐるのが、耳にはいつた。声がらでは、どうも、今日、途中まで迎へに出た、白髪の郎等が何か<ruby><rb>告</rb><rt>ふ</rt></ruby>れてゐるらしい。その<ruby><rb>乾</rb><rt>ひ</rt></ruby>からびた声が、霜に響くせゐか、<ruby><rb>凛々</rb><rt>りんりん</rt></ruby>として<ruby><rb>凩</rb><rt>こがらし</rt></ruby>のやうに、一語づつ五位の骨に、応へるやうな気さへする。</p>
+        <p>「この辺の下人、承はれ。殿の御意遊ばさるるには、明朝、<ruby><rb>卯時</rb><rt>うのとき</rt></ruby>までに、切口三寸、長さ五尺の山の芋を、<ruby><rb>老若各</rb><rt>おのおの</rt></ruby>、一筋づつ、持つて参る様にとある。忘れまいぞ、卯時までにぢや。」</p>
+        <p>それが、二三度、繰返されたかと思ふと、やがて、人のけはひが止んで、あたりは<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち元のやうに、静な冬の夜になつた。その静な中に、切燈台の油が鳴る。赤い真綿のやうな火が、ゆらゆらする。五位は<ruby><rb>欠伸</rb><rt>あくび</rt></ruby>を一つ、噛みつぶして、又、とりとめのない、思量に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>り出した。――山の芋と云ふからには、勿論芋粥にする気で、持つて来させるのに相違ない。さう思ふと、一時、外に注意を集中したおかげで忘れてゐた、さつきの不安が、何時の間にか、心に帰つて来る。殊に、前よりも、一層強くなつたのは、あまり早く芋粥にありつきたくないと云ふ心もちで、それが意地悪く、思量の中心を離れない。どうもかう容易に「芋粥に飽かむ」事が、事実となつて現れては、折角今まで、何年となく、辛抱して待つてゐたのが、如何にも、無駄な骨折のやうに、見えてしまふ。出来る事なら、突然何か故障が起つて一旦、芋粥が飲めなくなつてから、又、その故障がなくなつて、今度は、やつとこれにありつけると云ふやうな、そんな手続きに、万事を運ばせたい。――こんな考へが、「こまつぶり」のやうに、ぐるぐる一つ所を廻つてゐる中に、何時か、五位は、旅の疲れで、ぐつすり、熟睡してしまつた。</p>
+        <p>翌朝、眼がさめると、<ruby><rb>直</rb><rt>すぐ</rt></ruby>に、昨夜の山の芋の一件が、気になるので、五位は、何よりも先に部屋の<ruby><rb>蔀</rb><rt>しとみ</rt></ruby>をあげて見た。すると、知らない中に、寝すごして、もう<ruby><rb>卯時</rb><rt>うのとき</rt></ruby>をすぎてゐたのであらう。広庭へ敷いた、四五枚の<ruby><rb>長筵</rb><rt>ながむしろ</rt></ruby>の上には、丸太のやうな物が、<ruby><rb>凡</rb><rt>およ</rt></ruby>そ、二三千本、斜につき出した、<ruby><rb>檜皮葺</rb><rt>ひはだぶき</rt></ruby>の軒先へつかへる程、山のやうに、積んである。見るとそれが、悉く、切口三寸、長さ五尺の途方もなく大きい、山の芋であつた。</p>
+        <p>五位は、寝起きの眼をこすりながら、殆ど周章に近い<ruby><rb>驚愕</rb><rt>きやうがく</rt></ruby>に襲はれて、<ruby><rb>呆然</rb><rt>ばうぜん</rt></ruby>と、周囲を見廻した。広庭の所々には、新しく打つたらしい杭の上に<ruby><rb>五斛納釜</rb><rt>ごくなふがま</rt></ruby>を五つ六つ、かけ連ねて、白い布の<ruby><rb>襖</rb><rt>あを</rt></ruby>を着た若い<ruby><rb>下司女</rb><rt>げすをんな</rt></ruby>が、何十人となく、そのまはりに動いてゐる。火を焚きつけるもの、灰を掻くもの、或は、新しい白木の<ruby><rb>桶</rb><rt>をけ</rt></ruby>に、「あまづらみせん」を汲んで釜の中へ入れるもの、皆芋粥をつくる準備で、眼のまはる程忙しい。釜の下から上る煙と、釜の中から湧く湯気とが、まだ消え残つてゐる明方の靄と一つになつて、広庭一面、はつきり物も見定められない程、灰色のものが<ruby><rb>罩</rb><rt>こ</rt></ruby>めた中で、赤いのは、烈々と燃え上る釜の下の焔ばかり、眼に見るもの、耳に聞くもの悉く、戦場か火事場へでも行つたやうな騒ぎである。五位は、今更のやうに、この巨大な山の芋が、この巨大な五斛納釜の中で、芋粥になる事を考へた。さうして、自分が、その芋粥を食ふ為に<placeName ref="#kyoto">京都</placeName>から、わざわざ、<placeName ref="#echizen">越前</placeName>の<placeName ref="#tsuruga">敦賀</placeName>まで旅をして来た事を考へた。考へれば考へる程、何一つ、情無くならないものはない。我五位の同情すべき食慾は、実に、此時もう、一半を<ruby><rb>減却</rb><rt>げんきやく</rt></ruby>してしまつたのである。</p>
+        <p>それから、一時間の後、五位は<persName ref="#toshihito">利仁</persName>や<ruby><rb>舅</rb><rt>しうと</rt></ruby>の<persName ref="#arihito"><ruby><rb>有仁</rb><rt>ありひと</rt></ruby></persName>と共に、朝飯の膳に向つた。前にあるのは、<ruby><rb>銀</rb><rt>しろがね</rt></ruby>の<ruby><rb>提</rb><rt>ひさげ</rt></ruby>の一斗ばかりはいるのに、なみなみと海の如くたたへた、恐るべき芋粥である。五位はさつき、あの軒まで積上げた山の芋を、何十人かの若い男が、薄刃を器用に動かしながら、片端から削るやうに、勢よく切るのを見た。それからそれを、あの下司女たちが、右往左往に馳せちがつて、一つのこらず、五斛納釜へすくつては入れ、すくつては入れするのを見た。最後に、その山の芋が、一つも長筵の上に見えなくなつた時に、芋のにほひと、<ruby><rb>甘葛</rb><rt>あまづら</rt></ruby>のにほひとを含んだ、<ruby><rb>幾道</rb><rt>いくだう</rt></ruby>かの湯気の柱が、<ruby><rb>蓬々然</rb><rt>ほうほうぜん</rt></ruby>として、釜の中から、晴れた朝の空へ、舞上つて行くのを見た。これを、<ruby><rb>目</rb><rt>ま</rt></ruby>のあたりに見た彼が、今、提に入れた芋粥に対した時、まだ、口をつけない中から、既に、満腹を感じたのは、恐らく、無理もない次第であらう。――五位は、提を前にして、間の悪さうに、額の汗を拭いた。</p>
+        <p>「芋粥に飽かれた事が、ござらぬげな。どうぞ、遠慮なく召上つて下され。」</p>
+        <p>舅の<persName ref="#arihito">有仁</persName>は、童児たちに云ひつけて、更に幾つかの銀の提を膳の上に並べさせた。中にはどれも芋粥が、<ruby><rb>溢</rb><rt>あふ</rt></ruby>れんばかりにはいつてゐる。五位は眼をつぶつて、唯でさへ赤い鼻を、一層赤くしながら、提に半分ばかりの芋粥を大きな<ruby><rb>土器</rb><rt>かはらけ</rt></ruby>にすくつて、いやいやながら飲み干した。</p>
+        <p>「父も、さう申すぢやて。<ruby><rb>平</rb><rt>ひら</rt></ruby>に、遠慮は御無用ぢや。」</p>
+        <p><persName ref="#toshihito">利仁</persName>も側から、新な提をすすめて、意地悪く笑ひながらこんな事を云ふ。弱つたのは五位である。遠慮のない所を云へば、始めから芋粥は、一椀も吸ひたくない。それを今、我慢して、やつと、提に半分だけ平げた。これ以上、飲めば、喉を越さない中にもどしてしまふ、さうかと云つて、飲まなければ、<persName ref="#toshihito">利仁</persName>や<persName ref="#arihito">有仁</persName>の厚意を無にするのも、同じである。そこで、彼は又眼をつぶつて、残りの半分を三分の一程飲み干した。もう後は一口も吸ひやうがない。</p>
+        <p>「何とも、忝うござつた。もう十分頂戴致したて。――いやはや、何とも忝うござつた。」</p>
+        <p>五位は、しどろもどろになつて、かう云つた。余程弱つたと見えて、口髭にも、鼻の先にも、冬とは思はれない程、汗が玉になつて、垂れてゐる。</p>
+        <p>「これは又、御少食ぢや。客人は、遠慮をされると見えたぞ。それそれその方ども、何を致して居る。」</p>
+        <p>童児たちは、<persName ref="#arihito">有仁</persName>の語につれて、新な提の中から、芋粥を、<ruby><rb>土器</rb><rt>かはらけ</rt></ruby>に汲まうとする。五位は、両手を蠅でも逐ふやうに動かして、平に、辞退の意を示した。</p>
+        <p>「いや、もう、十分でござる。……失礼ながら、十分でござる。」</p>
+        <p>もし、此時、<persName ref="#toshihito">利仁</persName>が、突然、向うの家の軒を指して、「あれを<ruby><rb>御覧</rb><rt>ごらう</rt></ruby>じろ」と云はなかつたなら、<persName ref="#arihito">有仁</persName>は<ruby><rb>猶</rb><rt>なほ</rt></ruby>、五位に、芋粥をすすめて、止まなかつたかも知れない。が、幸ひにして、<persName ref="#toshihito">利仁</persName>の声は、一同の注意を、その軒の方へ持つて行つた。<ruby><rb>檜皮葺</rb><rt>ひはだぶき</rt></ruby>の軒には、丁度、朝日がさしてゐる。さうして、そのまばゆい光に、<ruby><rb>光沢</rb><rt>つや</rt></ruby>のいい毛皮を洗はせながら、一疋の獣が、おとなしく、坐つてゐる。見るとそれは<ruby><rb>一昨日</rb><rt>をととひ</rt></ruby>、<persName ref="#toshihito">利仁</persName>が枯野の路で手捕りにした、あの<placeName ref="#sakamoto">阪本</placeName>の野狐であつた。</p>
+        <p>「狐も、芋粥が欲しさに、見参したさうな。男ども、しやつにも、物を食はせてつかはせ。」</p>
+        <p><persName ref="#toshihito">利仁</persName>の命令は、<ruby><rb>言下</rb><rt>ごんか</rt></ruby>に行はれた。軒からとび下りた狐は、直に広庭で芋粥の馳走に、<ruby><rb>与</rb><rt>あづか</rt></ruby>つたのである。</p>
+        <p>五位は、芋粥を飲んでゐる狐を眺めながら、此処へ来ない前の彼自身を、なつかしく、心の中でふり返つた。それは、多くの侍たちに愚弄されてゐる彼である。<ruby><rb>京童</rb><rt>きやうわらべ</rt></ruby>にさへ「何ぢや。この鼻赤めが」と、罵られてゐる彼である。色のさめた水干に、<ruby><rb>指貫</rb><rt>さしぬき</rt></ruby>をつけて、飼主のない<ruby><rb>尨犬</rb><rt>むくいぬ</rt></ruby>のやうに、<placeName ref="#suzaku-oji">朱雀大路</placeName>をうろついて歩く、憐む可き、孤独な彼である。しかし、同時に又、芋粥に飽きたいと云ふ慾望を、唯一人大事に守つてゐた、幸福な彼である。――彼は、この上芋粥を飲まずにすむと云ふ安心と共に、満面の汗が次第に、鼻の先から、乾いてゆくのを感じた。晴れてはゐても、<placeName ref="#tsuruga">敦賀</placeName>の朝は、身にしみるやうに、風が寒い。五位は慌てて、鼻をおさへると同時に<ruby><rb>銀</rb><rt>しろがね</rt></ruby>の提に向つて大きな<ruby><rb>嚔</rb><rt>くさめ</rt></ruby>をした。</p>
+        <p>（大正五年八月）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

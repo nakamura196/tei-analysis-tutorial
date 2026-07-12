@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>蒲団</title>
+        <author>田山花袋</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>蒲団</title><author>田山花袋</author>
+          <note>青空文庫。底本：「蒲団・重右衛門の最後」新潮文庫、新潮社。1952（昭和27）年3月15日発行。1997（平成9）年5月25日72刷。初出：「新小説」春陽堂書店。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000214/card1669.html">https://www.aozora.gr.jp/cards/000214/card1669.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="tokio">
+        <persName>竹中時雄</persName>
+        <note>主人公。中年の小説家・地理書編集者。筆名は竹中古城</note>
+      </person>
+      <person xml:id="yoshiko">
+        <persName>横山芳子</persName>
+        <note>時雄の女弟子。備中新見町出身、神戸女学院に学んだ女学生。父の言葉では「芳」、姉の言葉では「芳さん」とも</note>
+      </person>
+      <person xml:id="hideo">
+        <persName>田中秀夫</persName>
+        <note>芳子の恋人。同志社の学生、神戸教会の秀才。21歳</note>
+      </person>
+      <person xml:id="hyozo">
+        <persName>横山兵蔵</persName>
+        <note>芳子の父。備中国新見町の豪家の主、元県会議員</note>
+      </person>
+      <person xml:id="otsuru">
+        <persName>お鶴</persName>
+        <note>時雄の家の下女</note>
+      </person>
+      <person xml:id="kozu">
+        <persName>神津</persName>
+        <note>神戸の信者。田中に学資を出していた恩人（姓のみ言及）</note>
+      </person>
+      <person xml:id="tagawa">
+        <persName>田川</persName>
+        <note>時雄の姉の婚家の姓。芳子が寄寓した麹町土手三番町の家</note>
+      </person>
+      <person xml:id="turgenev">
+        <persName>ツルゲネーフ</persName>
+        <note>イワン・ツルゲーネフ（1818–1883）。ロシアの小説家。「ファースト」「プニンとバブリン」全集などが言及される</note>
+      </person>
+      <person xml:id="maupassant">
+        <persName>モウパッサン</persName>
+        <note>ギ・ド・モーパッサン（1850–1893）。フランスの小説家。「死よりも強し」「父」が言及される</note>
+      </person>
+      <person xml:id="hauptmann">
+        <persName>ハウプトマン</persName>
+        <note>ゲアハルト・ハウプトマン（1862–1946）。ドイツの劇作家。「寂しき人々」の作者</note>
+      </person>
+      <person xml:id="sudermann">
+        <persName>ズウデルマン</persName>
+        <note>ヘルマン・ズーダーマン（1857–1928）。ドイツの劇作家。『故郷』のマグダが言及される</note>
+      </person>
+      <person xml:id="ibsen">
+        <persName>イブセン</persName>
+        <note>ヘンリック・イプセン（1828–1906）。ノルウェーの劇作家。『人形の家』のノラが言及される</note>
+      </person>
+      <person xml:id="johannes">
+        <persName>ヨハンネス</persName>
+        <note>ヨハンネス・フォケラート。ハウプトマン「寂しき人々」の主人公（架空の人物）</note>
+      </person>
+      <person xml:id="anna">
+        <persName>アンナ</persName>
+        <note>アンナ・マール。ハウプトマン「寂しき人々」の登場人物（架空の人物）</note>
+      </person>
+      <person xml:id="magda">
+        <persName>マグダ</persName>
+        <note>ズーダーマン『故郷』の主人公（架空の人物）</note>
+      </person>
+      <person xml:id="nora">
+        <persName>ノラ</persName>
+        <note>イプセン『人形の家』の主人公（架空の人物）</note>
+      </person>
+      <person xml:id="elene">
+        <persName>エレネ</persName>
+        <note>ツルゲーネフ『その前夜』の主人公エレーナ（架空の人物）</note>
+      </person>
+      <person xml:id="jehovah">
+        <persName>エホバ</persName>
+        <note>旧約聖書の神。芳子の父（キリスト教信者）の言葉に現れる</note>
+      </person>
+      <person xml:id="sesshu">
+        <persName>雪舟</persName>
+        <note>雪舟等楊（1420–1506）。室町時代の画僧。父親の書画道楽の列挙中の言及</note>
+      </person>
+      <person xml:id="okyo">
+        <persName>応挙</persName>
+        <note>円山応挙（1733–1795）。江戸中期の画家</note>
+      </person>
+      <person xml:id="yosai">
+        <persName>容斎</persName>
+        <note>菊池容斎（1788–1878）。幕末明治の画家</note>
+      </person>
+      <person xml:id="rai-sanyo">
+        <persName>山陽</persName>
+        <note>頼山陽（1780–1832）。江戸後期の儒学者・書家</note>
+      </person>
+      <person xml:id="chikuden">
+        <persName>竹田</persName>
+        <note>田能村竹田（1777–1835）。江戸後期の文人画家・書家</note>
+      </person>
+      <person xml:id="kaioku">
+        <persName>海屋</persName>
+        <note>貫名海屋（1778–1863）。江戸後期の儒学者・書家</note>
+      </person>
+      <person xml:id="chazan">
+        <persName>茶山</persName>
+        <note>菅茶山（1748–1827）。江戸後期の儒学者・漢詩人・書家</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kobe">
+        <placeName>神戸</placeName>
+        <location><geo>34.6901 135.1955</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kobe-jogakuin">
+        <placeName>神戸女学院</placeName>
+        <location><geo>34.697 135.185</geo></location>
+        <note>芳子の母校。当時は神戸市山本通にあった（西宮移転は1933年）・概値。作中では単に「女学院」とも</note>
+      </place>
+      <place xml:id="kobe-kyokai">
+        <placeName>神戸教会</placeName>
+        <location><geo>34.6906 135.183</geo></location>
+        <note>神戸市の教会（現・日本基督教団神戸教会、下山手通）・概値</note>
+      </place>
+      <place xml:id="suma">
+        <placeName>須磨</placeName>
+        <location><geo>34.6432 135.113</geo></location>
+        <note>神戸市須磨。芳子と田中が落ち合った海水浴・日曜学校の地・概値</note>
+      </place>
+      <place xml:id="shimbashi">
+        <placeName>新橋</placeName>
+        <location><geo>35.6669 139.763</geo></location>
+        <note>新橋停車場（汐留、現・港区東新橋）・概値</note>
+      </place>
+      <place xml:id="tsuboya">
+        <placeName>壺屋</placeName>
+        <location><geo>35.6669 139.763</geo></location>
+        <note>新橋停車場二階の売店。停車場と同位置の概値</note>
+      </place>
+      <place xml:id="kojimachi">
+        <placeName>麹町</placeName>
+        <location><geo>35.684 139.74</geo></location>
+        <note>旧・麹町区（現・千代田区）・概値</note>
+      </place>
+      <place xml:id="dote-sanbancho">
+        <placeName>土手三番町</placeName>
+        <location><geo>35.6935 139.7405</geo></location>
+        <note>麹町区の町名。外濠の土手沿い（現・千代田区五番町付近）。時雄の姉（田川家）の家＝芳子の寄寓先。本文では「三番町」とも略記（「三番町の姉の家」等）。田中の宿（麹町三番町通の安旅人宿）への言及も同じ界隈としてこの id に統合・概値</note>
+      </place>
+      <place xml:id="ushigome">
+        <placeName>牛込</placeName>
+        <location><geo>35.701 139.735</geo></location>
+        <note>旧・牛込区（現・新宿区）・概値</note>
+      </place>
+      <place xml:id="yaraicho">
+        <placeName>矢来町</placeName>
+        <location><geo>35.7031 139.7332</geo></location>
+        <note>牛込矢来町（現・新宿区矢来町）。時雄の自宅・概値</note>
+      </place>
+      <place xml:id="kagurazaka">
+        <placeName>神楽坂</placeName>
+        <location><geo>35.7014 139.7407</geo></location>
+        <note>牛込の坂・繁華街（現・新宿区）・概値</note>
+      </place>
+      <place xml:id="ichigaya">
+        <placeName>市ヶ谷</placeName>
+        <location><geo>35.6938 139.7357</geo></location>
+        <note>現・新宿区市谷・概値</note>
+      </place>
+      <place xml:id="ichigaya-mitsuke">
+        <placeName>市ヶ谷見附</placeName>
+        <location><geo>35.6913 139.7377</geo></location>
+        <note>江戸城外郭門跡（現・千代田区／新宿区境）・概値</note>
+      </place>
+      <place xml:id="ichigaya-hachiman">
+        <placeName>市ヶ谷八幡</placeName>
+        <location><geo>35.6917 139.7357</geo></location>
+        <note>市谷亀岡八幡宮（現・新宿区市谷八幡町）・概値</note>
+      </place>
+      <place xml:id="shikan-gakko">
+        <placeName>士官学校</placeName>
+        <location><geo>35.6934 139.728</geo></location>
+        <note>陸軍士官学校（市ヶ谷台、現・防衛省の地）・概値</note>
+      </place>
+      <place xml:id="nakanezaka">
+        <placeName>中根坂</placeName>
+        <location><geo>35.696 139.733</geo></location>
+        <note>牛込の坂（現・新宿区市谷加賀町〜納戸町付近）・概値</note>
+      </place>
+      <place xml:id="sanaizaka">
+        <placeName>佐内坂</placeName>
+        <location><geo>35.6925 139.7333</geo></location>
+        <note>市谷佐内坂（現・新宿区市谷左内町）・概値</note>
+      </place>
+      <place xml:id="koishikawa">
+        <placeName>小石川</placeName>
+        <location><geo>35.7203 139.746</geo></location>
+        <note>旧・小石川区（現・文京区）。時雄の勤める書籍会社（社）がある・概値</note>
+      </place>
+      <place xml:id="kirishitanzaka">
+        <placeName>切支丹坂</placeName>
+        <location><geo>35.7139 139.7396</geo></location>
+        <note>小石川の坂（現・文京区小日向）・概値</note>
+      </place>
+      <place xml:id="gokurakusui">
+        <placeName>極楽水</placeName>
+        <location><geo>35.7146 139.7442</geo></location>
+        <note>小石川の湧水にちなむ地名（現・文京区小石川、宗慶寺付近）・概値</note>
+      </place>
+      <place xml:id="hisakatacho">
+        <placeName>久堅町</placeName>
+        <location><geo>35.719 139.744</geo></location>
+        <note>小石川区久堅町（現・文京区小石川・白山付近）・概値</note>
+      </place>
+      <place xml:id="kyobashi">
+        <placeName>京橋</placeName>
+        <location><geo>35.6767 139.77</geo></location>
+        <note>現・中央区京橋。芳子の父が宿を取った旅館がある・概値</note>
+      </place>
+      <place xml:id="hibiya">
+        <placeName>日比谷</placeName>
+        <location><geo>35.6743 139.7597</geo></location>
+        <note>現・千代田区日比谷・概値</note>
+      </place>
+      <place xml:id="yamashitamon">
+        <placeName>山下門</placeName>
+        <location><geo>35.6705 139.7625</geo></location>
+        <note>江戸城外郭門跡（現・千代田区内幸町〜銀座西付近）。市電の停留所名・概値</note>
+      </place>
+      <place xml:id="ueno-toshokan">
+        <placeName>上野図書館</placeName>
+        <location><geo>35.7186 139.7745</geo></location>
+        <note>帝国図書館（上野公園、現・国際子ども図書館）・概値</note>
+      </place>
+      <place xml:id="nakano">
+        <placeName>中野</placeName>
+        <location><geo>35.7075 139.6637</geo></location>
+        <note>現・中野区・概値</note>
+      </place>
+      <place xml:id="yotsuya">
+        <placeName>四谷</placeName>
+        <location><geo>35.6866 139.7301</geo></location>
+        <note>旧・四谷区（現・新宿区）・概値</note>
+      </place>
+      <place xml:id="maruzen">
+        <placeName>丸善</placeName>
+        <location><geo>35.6817 139.7714</geo></location>
+        <note>日本橋の丸善書店・概値</note>
+      </place>
+      <place xml:id="kobu">
+        <placeName>甲武</placeName>
+        <note>甲武鉄道（現・JR中央線の前身）。市街線の電車・貨物列車が土手下を通る（線状のため座標なし）</note>
+      </place>
+      <place xml:id="kozu-machi">
+        <placeName>国府津</placeName>
+        <location><geo>35.2846 139.215</geo></location>
+        <note>神奈川県国府津（現・小田原市）。田中の端書の消印・概値</note>
+      </place>
+      <place xml:id="gotemba">
+        <placeName>御殿場</placeName>
+        <location><geo>35.3087 138.9346</geo></location>
+        <note>静岡県御殿場。父親の車中談に言及・概値</note>
+      </place>
+      <place xml:id="sano">
+        <placeName>佐野</placeName>
+        <note>父親の車中談に御殿場と並んで言及。東海道線佐野駅（現・裾野駅）かとされるが確証がないため座標なし</note>
+      </place>
+      <place xml:id="tsuruya">
+        <placeName>つるや</placeName>
+        <note>停車場前の旅館。田中の宿。どの停車場か特定できないため座標なし</note>
+      </place>
+      <place xml:id="bitchu">
+        <placeName>備中</placeName>
+        <location><geo>34.8 133.6</geo></location>
+        <note>旧国名（備中国、現・岡山県西部）。作中表記は「備中国」とも・概値</note>
+      </place>
+      <place xml:id="chugoku">
+        <placeName>中国</placeName>
+        <location><geo>35.0 133.0</geo></location>
+        <note>中国地方。地域名・概値</note>
+      </place>
+      <place xml:id="niimimachi">
+        <placeName>新見町</placeName>
+        <location><geo>34.9772 133.4702</geo></location>
+        <note>岡山県阿哲郡新見町（現・新見市）。芳子の郷里・概値</note>
+      </place>
+      <place xml:id="okayama-ken">
+        <placeName>岡山県</placeName>
+        <location><geo>34.8 133.8</geo></location>
+        <note>県名・概値（県域中央）</note>
+      </place>
+      <place xml:id="atetsu-gun">
+        <placeName>阿哲郡</placeName>
+        <location><geo>34.95 133.48</geo></location>
+        <note>岡山県阿哲郡（旧郡域、現・新見市周辺）・概値</note>
+      </place>
+      <place xml:id="takahashigawa">
+        <placeName>高梁川</placeName>
+        <location><geo>34.85 133.55</geo></location>
+        <note>岡山県西部の河川・概値（中流域）</note>
+      </place>
+      <place xml:id="sanyo-line">
+        <placeName>山陽線</placeName>
+        <note>山陽鉄道（現・JR山陽本線。線状のため座標なし）</note>
+      </place>
+      <place xml:id="saga">
+        <placeName>嵯峨</placeName>
+        <location><geo>35.017 135.674</geo></location>
+        <note>京都嵯峨（現・京都市右京区嵯峨）。芳子と田中が遊んだ地・概値</note>
+      </place>
+      <place xml:id="zeze">
+        <placeName>膳所</placeName>
+        <location><geo>34.999 135.893</geo></location>
+        <note>近江膳所（現・滋賀県大津市膳所）。琵琶湖畔・概値</note>
+      </place>
+      <place xml:id="tonegawa">
+        <placeName>利根川</placeName>
+        <location><geo>36.2 139.2</geo></location>
+        <note>河川。作中は上武国境付近の河畔。「利根河畔」「利根の河畔」とも・概値</note>
+      </place>
+      <place xml:id="jobu">
+        <placeName>上武</placeName>
+        <location><geo>36.2 139.15</geo></location>
+        <note>上野国と武蔵国の境の地域名（現・群馬／埼玉県境付近）・概値</note>
+      </place>
+      <place xml:id="doshisha">
+        <placeName>同志社</placeName>
+        <location><geo>35.0302 135.7602</geo></location>
+        <note>京都の同志社（現・同志社大学）。田中が学ぶ・概値</note>
+      </place>
+      <place xml:id="doshisha-jogakko">
+        <placeName>同志社女学校</placeName>
+        <location><geo>35.03 135.763</geo></location>
+        <note>京都の同志社女学校（現・同志社女子大学）。芳子の母の母校・概値</note>
+      </place>
+      <place xml:id="japan">
+        <placeName>日本</placeName>
+        <location><geo>36.2 138.25</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="russia">
+        <placeName>露西亜</placeName>
+        <location><geo>55.7558 37.6173</geo></location>
+        <note>国名・概値（モスクワ）</note>
+      </place>
+      <place xml:id="germany">
+        <placeName>独逸</placeName>
+        <location><geo>52.52 13.405</geo></location>
+        <note>国名・概値（ベルリン）</note>
+      </place>
+      <place xml:id="england">
+        <placeName>英国</placeName>
+        <location><geo>51.5074 -0.1278</geo></location>
+        <note>国名・概値（ロンドン）</note>
+      </place>
+      <place xml:id="musashino">
+        <placeName>武蔵野</placeName>
+        <location><geo>35.7 139.45</geo></location>
+        <note>武蔵野（武蔵野台地）の地域名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p><placeName ref="#koishikawa">小石川</placeName>の<placeName ref="#kirishitanzaka"><ruby><rb>切支丹坂</rb><rt>きりしたんざか</rt></ruby></placeName>から<placeName ref="#gokurakusui"><ruby><rb>極楽水</rb><rt>ごくらくすい</rt></ruby></placeName>に出る道のだらだら坂を下りようとして<ruby><rb>渠</rb><rt>かれ</rt></ruby>は考えた。「これで自分と彼女との関係は一段落を告げた。三十六にもなって、子供も三人あって、あんなことを考えたかと思うと、馬鹿々々しくなる。けれど……けれど……本当にこれが事実だろうか。あれだけの愛情を自身に注いだのは単に愛情としてのみで、恋ではなかったろうか」</p>
+        <p>数多い感情ずくめの手紙――二人の関係はどうしても尋常ではなかった。妻があり、子があり、世間があり、師弟の関係があればこそ<ruby><rb>敢</rb><rt>あえ</rt></ruby>て<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい恋に落ちなかったが、語り合う胸の<ruby><rb>轟</rb><rt>とどろき</rt></ruby>、相見る眼の光、その底には確かに<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい<ruby><rb>暴風</rb><rt>あらし</rt></ruby>が潜んでいたのである。機会に<ruby><rb>遭遇</rb><rt>でっくわ</rt></ruby>しさえすれば、その底の底の暴風は<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち勢を得て、妻子も世間も道徳も師弟の関係も一挙にして破れて<ruby><rb>了</rb><rt>しま</rt></ruby>うであろうと思われた。少くとも男はそう信じていた。それであるのに、二三日来のこの出来事、これから考えると、女は確かにその感情を偽り売ったのだ。自分を欺いたのだと男は幾度も思った。けれど文学者だけに、この男は自ら自分の心理を客観するだけの余裕を<ruby><rb>有</rb><rt>も</rt></ruby>っていた。年若い女の心理は容易に判断し得られるものではない、かの<ruby><rb>温</rb><rt>あたたか</rt></ruby>い<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しい愛情は、単に女性特有の自然の発展で、美しく見えた眼の表情も、やさしく感じられた態度も<ruby><rb>都</rb><rt>すべ</rt></ruby>て無意識で、無意味で、自然の花が見る人に一種の<ruby><rb>慰藉</rb><rt>なぐさみ</rt></ruby>を与えたようなものかも知れない。一歩を譲って女は自分を愛して恋していたとしても、自分は師、かの女は門弟、自分は妻あり子ある身、かの女は妙齢の美しい花、そこに互に意識の加わるのを<ruby><rb>如何</rb><rt>いかん</rt></ruby>ともすることは出来まい。いや、更に一歩を進めて、あの熱烈なる一封の手紙、陰に陽にその胸の<ruby><rb>悶</rb><rt>もだえ</rt></ruby>を訴えて、丁度自然の力がこの身を圧迫するかのように、最後の情を伝えて来た時、その<ruby><rb>謎</rb><rt>なぞ</rt></ruby>をこの身が解いて<ruby><rb>遣</rb><rt>や</rt></ruby>らなかった。女性のつつましやかな<ruby><rb>性</rb><rt>さが</rt></ruby>として、その上に<ruby><rb>猶</rb><rt>なお</rt></ruby><ruby><rb>露</rb><rt>あら</rt></ruby>わに迫って来ることがどうして出来よう。そういう心理からかの女は失望して、今回のような事を起したのかも知れぬ。</p>
+        <p>「とにかく時機は過ぎ去った。かの女は既に<ruby><rb>他人</rb><rt>ひと</rt></ruby>の<ruby><rb>所有</rb><rt>もの</rt></ruby>だ！」</p>
+        <p>歩きながら<ruby><rb>渠</rb><rt>かれ</rt></ruby>はこう絶叫して頭髪をむしった。</p>
+        <p><ruby><rb>縞</rb><rt>しま</rt></ruby>セルの背広に、<ruby><rb>麦稈帽</rb><rt>むぎわらぼう</rt></ruby>、<ruby><rb>藤蔓</rb><rt>ふじづる</rt></ruby>の<ruby><rb>杖</rb><rt>ステッキ</rt></ruby>をついて、やや前のめりにだらだらと坂を下りて行く。時は<date when="--09">九月</date>の中旬、残暑はまだ<ruby><rb>堪</rb><rt>た</rt></ruby>え難く暑いが、空には既に清涼の秋気が<ruby><rb>充</rb><rt>み</rt></ruby>ち渡って、深い<ruby><rb>碧</rb><rt>みどり</rt></ruby>の色が<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って人の感情を動かした。<ruby><rb>肴屋</rb><rt>さかなや</rt></ruby>、酒屋、雑貨店、その向うに寺の門やら<ruby><rb>裏店</rb><rt>うらだな</rt></ruby>の長屋やらが<ruby><rb>連</rb><rt>つらな</rt></ruby>って、<placeName ref="#hisakatacho"><ruby><rb>久堅町</rb><rt>ひさかたまち</rt></ruby></placeName>の低い地には<ruby><rb>数多</rb><rt>あまた</rt></ruby>の工場の<ruby><rb>煙筒</rb><rt>えんとつ</rt></ruby>が黒い煙を<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>らしていた。</p>
+        <p>その数多い工場の一つ、西洋風の二階の一室、それが渠の毎日<ruby><rb>正午</rb><rt>ひる</rt></ruby>から通う処で、十畳敷ほどの広さの<ruby><rb>室</rb><rt>へや</rt></ruby>の<ruby><rb>中央</rb><rt>まんなか</rt></ruby>には、大きい一脚の<ruby><rb>卓</rb><rt>テーブル</rt></ruby>が据えてあって、傍に高い西洋風の本箱、この中には<ruby><rb>総</rb><rt>すべ</rt></ruby>て種々の地理書が一杯入れられてある。渠はある書籍会社の嘱託を受けて地理書の<ruby><rb>編輯</rb><rt>へんしゅう</rt></ruby>の手伝に従っているのである。文学者に地理書の編輯！　渠は自分が地理の趣味を有っているからと称して進んでこれに従事しているが、内心これに<ruby><rb>甘</rb><rt>あまん</rt></ruby>じておらぬことは言うまでもない。<ruby><rb>後</rb><rt>おく</rt></ruby>れ勝なる文学上の閲歴、断篇のみを作って<ruby><rb>未</rb><rt>いま</rt></ruby>だに全力の試みをする機会に遭遇せぬ<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>、青年雑誌から月毎に受ける<ruby><rb>罵評</rb><rt>ばひょう</rt></ruby>の苦痛、<ruby><rb>渠</rb><rt>かれ</rt></ruby>自らはその他日成すあるべきを意識してはいるものの、中心これを苦に病まぬ訳には行かなかった。社会は<ruby><rb>日増</rb><rt>ひまし</rt></ruby>に進歩する。電車は<placeName ref="#tokyo">東京</placeName>市の交通を一変させた。女学生は勢力になって、もう自分が恋をした頃のような旧式の娘は見たくも見られなくなった。青年はまた青年で、恋を説くにも、文学を談ずるにも、政治を語るにも、その態度が総て一変して、自分等とは永久に相触れることが出来ないように感じられた。</p>
+        <p>で、毎日機械のように同じ道を通って、同じ大きい門を入って、輪転機関の<ruby><rb>屋</rb><rt>いえ</rt></ruby>を<ruby><rb>撼</rb><rt>うごか</rt></ruby>す音と職工の臭い汗との交った細い間を通って、事務室の人々に軽く<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>して、こつこつと長い狭い<ruby><rb>階梯</rb><rt>はしご</rt></ruby>を登って、さてその<ruby><rb>室</rb><rt>へや</rt></ruby>に入るのだが、東と南に明いたこの室は、午後の烈しい日影を受けて、実に堪え難く暑い。それに小僧が無精で<ruby><rb>掃除</rb><rt>そうじ</rt></ruby>をせぬので、卓の上には白い<ruby><rb>埃</rb><rt>ほこり</rt></ruby>がざらざらと心地悪い。渠は椅子に腰を掛けて、<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を一服吸って、立上って、厚い統計書と地図と案内記と地理書とを本箱から出して、さて静かに昨日の続きの筆を執り始めた。けれど二三日来、<ruby><rb>頭脳</rb><rt>あたま</rt></ruby>がむしゃくしゃしているので、筆が容易に進まない。一行書いては筆を留めてその事を思う。また一行書く、また留める、又書いてはまた留めるという風。そしてその間に頭脳に浮んで来る考は総て断片的で、猛烈で、急激で、絶望的の分子が多い。ふとどういう<ruby><rb>聯想</rb><rt>れんそう</rt></ruby>か、<persName ref="#hauptmann">ハウプトマン</persName>の「<ruby><rb>寂</rb><rt>さび</rt></ruby>しき人々」を思い出した。こうならぬ前に、この戯曲をかの女の日課として教えて遣ろうかと思ったことがあった。<persName ref="#johannes">ヨハンネス・フォケラート</persName>の心事と悲哀とを教えて遣りたかった。この戯曲を渠が読んだのは今から三年以前、まだかの女のこの世にあることをも夢にも知らなかった頃であったが、その頃から渠は<ruby><rb>淋</rb><rt>さび</rt></ruby>しい人であった。敢て<persName ref="#johannes">ヨハンネス</persName>にその身を比そうとは<ruby><rb>為</rb><rt>し</rt></ruby>なかったが、<persName ref="#anna">アンナ</persName>のような女がもしあったなら、そういう<ruby><rb>悲劇</rb><rt>トラジディ</rt></ruby>に陥るのは当然だとしみじみ同情した。今はその<persName ref="#johannes">ヨハンネス</persName>にさえなれぬ身だと思って長嘆した。</p>
+        <p>さすがに「寂しき人々」をかの女に教えなかったが、<persName ref="#turgenev">ツルゲネーフ</persName>の「ファースト」という短篇を教えたことがあった。<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>の光<ruby><rb>明</rb><rt>あきら</rt></ruby>かなる四畳半の書斎、かの女の若々しい心は色彩ある恋物語に<ruby><rb>憧</rb><rt>あこが</rt></ruby>れ渡って、表情ある眼は更に深い深い意味を<ruby><rb>以</rb><rt>もっ</rt></ruby>て輝きわたった。ハイカラな<ruby><rb>庇髪</rb><rt>ひさしがみ</rt></ruby>、<ruby><rb>櫛</rb><rt>くし</rt></ruby>、リボン、洋燈の光線がその半身を照して、一巻の書籍に顔を近く寄せると、言うに言われぬ香水のかおり、肉のかおり、女のかおり――書中の主人公が昔の恋人に「ファースト」を読んで聞かせる段を講釈する時には男の声も烈しく<ruby><rb>戦</rb><rt>ふる</rt></ruby>えた。</p>
+        <p>「けれど、もう駄目だ！」</p>
+        <p>と、渠は再び<ruby><rb>頭髪</rb><rt>かみ</rt></ruby>をむしった。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p><ruby><rb>渠</rb><rt>かれ</rt></ruby>は名を<persName ref="#tokio">竹中時雄</persName>と<ruby><rb>謂</rb><rt>い</rt></ruby>った。</p>
+        <p>今より三年前、三人目の子が細君の腹に出来て、新婚の快楽などはとうに<ruby><rb>覚</rb><rt>さ</rt></ruby>め尽した頃であった。世の中の忙しい事業も意味がなく、<ruby><rb>一生作</rb><rt>ライフワーク</rt></ruby>に力を尽す勇気もなく、日常の生活――朝起きて、出勤して、午後四時に帰って来て、同じように細君の顔を見て、飯を食って眠るという単調なる生活につくづく<ruby><rb>倦</rb><rt>あ</rt></ruby>き果てて<ruby><rb>了</rb><rt>しま</rt></ruby>った。家を引越歩いても面白くない、友人と語り合っても面白くない、外国小説を読み<ruby><rb>渉猟</rb><rt>あさ</rt></ruby>っても満足が出来ぬ。いや、<ruby><rb>庭樹</rb><rt>にわき</rt></ruby>の<ruby><rb>繁</rb><rt>しげ</rt></ruby>り、雨の<ruby><rb>点滴</rb><rt>てんてき</rt></ruby>、花の開落などいう自然の状態さえ、平凡なる生活をして更に平凡ならしめるような気がして、身を置くに処は無いほど淋しかった。道を歩いて常に見る若い美しい女、出来るならば新しい恋を為たいと痛切に思った。</p>
+        <p>三十四五、実際この頃には誰にでもある<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>で、この年頃に<ruby><rb>賤</rb><rt>いや</rt></ruby>しい女に戯るるものの多いのも、<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>その淋しさを<ruby><rb>医</rb><rt>いや</rt></ruby>す為めである。世間に妻を離縁するものもこの年頃に多い。</p>
+        <p>出勤する途上に、毎朝<ruby><rb>邂逅</rb><rt>であ</rt></ruby>う美しい女教師があった。渠はその頃この女に<ruby><rb>逢</rb><rt>あ</rt></ruby>うのをその日その日の唯一の楽みとして、その女に就いていろいろな空想を<ruby><rb>逞</rb><rt>たくましゅ</rt></ruby>うした。恋が成立って、<placeName ref="#kagurazaka"><ruby><rb>神楽坂</rb><rt>かぐらざか</rt></ruby></placeName>あたりの小待合に連れて行って、人目を忍んで楽しんだらどう……。細君に知れずに、二人近郊を散歩したらどう……。いや、それどころではない、その時、細君が懐妊しておったから、不図難産して死ぬ、その後にその女を入れるとしてどうであろう。……平気で後妻に入れることが出来るだろうかどうかなどと考えて歩いた。</p>
+        <p><placeName ref="#kobe">神戸</placeName>の<placeName ref="#kobe-jogakuin">女学院</placeName>の生徒で、生れは<placeName ref="#bitchu"><ruby><rb>備中</rb><rt>びっちゅう</rt></ruby></placeName>の<placeName ref="#niimimachi"><ruby><rb>新見町</rb><rt>にいみまち</rt></ruby></placeName>で、渠の著作の崇拝者で、名を<persName ref="#yoshiko">横山芳子</persName>という女から崇拝の情を以て充された一通の手紙を受取ったのはその頃であった。<persName ref="#tokio">竹中古城</persName>と謂えば、美文的小説を書いて、多少世間に聞えておったので、地方から来る崇拝者<ruby><rb>渇仰者</rb><rt>かつごうしゃ</rt></ruby>の手紙はこれまでにも随分多かった。やれ文章を直してくれの、<ruby><rb>弟子</rb><rt>でし</rt></ruby>にしてくれのと一々取合ってはいられなかった。だからその女の手紙を受取っても、別に返事を出そうとまでその好奇心は募らなかった。けれど同じ人の熱心なる手紙を三通まで<ruby><rb>貰</rb><rt>もら</rt></ruby>っては、さすがの<persName ref="#tokio">時雄</persName>も注意をせずにはいられなかった。年は十九だそうだが、手紙の文句から<ruby><rb>推</rb><rt>お</rt></ruby>して、その表情の巧みなのは驚くべきほどで、いかなることがあっても先生の門下生になって、一生文学に従事したいとの切なる<ruby><rb>願望</rb><rt>のぞみ</rt></ruby>。文字は走り書のすらすらした字で、余程ハイカラの女らしい。返事を書いたのは、例の工場の二階の室で、その日は毎日の課業の地理を二枚書いて<ruby><rb>止</rb><rt>よ</rt></ruby>して、長い数尺に余る手紙を<persName ref="#yoshiko">芳子</persName>に送った。その手紙には女の身として文学に携わることの不心得、女は生理的に母たるの義務を尽さなければならぬ理由、処女にして文学者たるの危険などを<ruby><rb>縷々</rb><rt>るる</rt></ruby>として説いて、幾らか<ruby><rb>罵倒</rb><rt>ばとう</rt></ruby>的の文辞をも<ruby><rb>陳</rb><rt>なら</rt></ruby>べて、これならもう<ruby><rb>愛想</rb><rt>あいそ</rt></ruby>をつかして<ruby><rb>断念</rb><rt>あきら</rt></ruby>めて<ruby><rb>了</rb><rt>しま</rt></ruby>うであろうと<persName ref="#tokio">時雄</persName>は思って微笑した。そして本箱の中から<placeName ref="#okayama-ken">岡山県</placeName>の地図を捜して、<placeName ref="#atetsu-gun"><ruby><rb>阿哲郡</rb><rt>あてつぐん</rt></ruby></placeName><placeName ref="#niimimachi">新見町</placeName>の所在を研究した。<placeName ref="#sanyo-line">山陽線</placeName>から<placeName ref="#takahashigawa"><ruby><rb>高梁川</rb><rt>たかはしがわ</rt></ruby></placeName>の谷を<ruby><rb>遡</rb><rt>さかのぼ</rt></ruby>って奥十数里、こんな山の中にもこんなハイカラの女があるかと思うと、それでも何となくなつかしく、<persName ref="#tokio">時雄</persName>はその附近の地形やら山やら川やらを<ruby><rb>仔細</rb><rt>しさい</rt></ruby>に見た。</p>
+        <p>で、これで返辞をよこすまいと思ったら、それどころか、四日目には更に厚い封書が届いて、紫インキで、青い<ruby><rb>罫</rb><rt>けい</rt></ruby>の入った西洋紙に横に細字で三枚、どうか将来見捨てずに弟子にしてくれという意味が返す返すも書いてあって、父母に願って許可を得たならば、<placeName ref="#tokyo">東京</placeName>に出て、<ruby><rb>然</rb><rt>しか</rt></ruby>るべき学校に入って、完全に忠実に文学を学んでみたいとのことであった。<persName ref="#tokio">時雄</persName>は女の志に感ぜずにはいられなかった。<placeName ref="#tokyo">東京</placeName>でさえ――女学校を卒業したものでさえ、文学の<ruby><rb>価値</rb><rt>ねうち</rt></ruby>などは解らぬものなのに、何もかもよく知っているらしい手紙の文句、<ruby><rb>早速</rb><rt>さっそく</rt></ruby>返事を出して師弟の関係を結んだ。</p>
+        <p>それから<ruby><rb>度々</rb><rt>たびたび</rt></ruby>の手紙と文章、文章はまだ幼稚な点はあるが、癖の無い、すらすらした、将来発達の見込は十分にあると<persName ref="#tokio">時雄</persName>は思った。で一度は一度より段々互の気質が知れて、<persName ref="#tokio">時雄</persName>はその手紙の来るのを待つようになった。ある時などは写真を送れと言って<ruby><rb>遣</rb><rt>や</rt></ruby>ろうと思って、手紙の<ruby><rb>隅</rb><rt>すみ</rt></ruby>に小さく書いて、そしてまたこれを黒々と塗って了った。女性には<ruby><rb>容色</rb><rt>きりょう</rt></ruby>と<ruby><rb>謂</rb><rt>い</rt></ruby>うものが是非必要である。容色のわるい女はいくら才があっても男が相手に為ない。<persName ref="#tokio">時雄</persName>も内々胸の中で、どうせ文学を遣ろうというような女だから、<ruby><rb>不容色</rb><rt>ぶきりょう</rt></ruby>に相違ないと思った。けれどなるべくは見られる位の女であって欲しいと思った。</p>
+        <p><persName ref="#yoshiko">芳子</persName>が父母に<ruby><rb>許可</rb><rt>ゆるし</rt></ruby>を得て、父に<ruby><rb>伴</rb><rt>つ</rt></ruby>れられて、<persName ref="#tokio">時雄</persName>の門を<ruby><rb>訪</rb><rt>おとの</rt></ruby>うたのは翌年の二月で、丁度<persName ref="#tokio">時雄</persName>の三番目の男の児の生れた七夜の日であった。座敷の隣の室は細君の<ruby><rb>産褥</rb><rt>さんじょく</rt></ruby>で、細君は手伝に来ている姉から若い女門下生の美しい容色であることを聞いて少なからず<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>した。姉もああいう若い美しい女を弟子にしてどうする気だろうと心配した。<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>と父とを並べて、<ruby><rb>縷々</rb><rt>るる</rt></ruby>として文学者の境遇と目的とを語り、女の結婚問題に就いて<ruby><rb>予</rb><rt>あらかじ</rt></ruby>め父親の説を<ruby><rb>叩</rb><rt>たた</rt></ruby>いた。<persName ref="#yoshiko">芳子</persName>の家は<placeName ref="#niimimachi">新見町</placeName>でも第三とは下らぬ豪家で、父も母も厳格なる<ruby><rb>基督教信者</rb><rt>クリスチャン</rt></ruby>、母は<ruby><rb>殊</rb><rt>こと</rt></ruby>にすぐれた信者で、<ruby><rb>曽</rb><rt>かつ</rt></ruby>ては<placeName ref="#doshisha-jogakko">同志社女学校</placeName>に学んだこともあるという。総領の兄は<placeName ref="#england">英国</placeName>へ洋行して、帰朝後は某官立学校の教授となっている。<persName ref="#yoshiko">芳子</persName>は町の小学校を卒業するとすぐ、<placeName ref="#kobe">神戸</placeName>に出て<placeName ref="#kobe">神戸</placeName>の<placeName ref="#kobe-jogakuin">女学院</placeName>に入り、<ruby><rb>其処</rb><rt>そこ</rt></ruby>でハイカラな女学校生活を送った。<ruby><rb>基督</rb><rt>キリスト</rt></ruby>教の女学校は他の女学校に比して、文学に対して<ruby><rb>総</rb><rt>すべ</rt></ruby>て自由だ。その頃こそ「魔風恋風」や「<ruby><rb>金色夜叉</rb><rt>こんじきやしゃ</rt></ruby>」などを読んではならんとの規定も出ていたが、文部省で干渉しない以前は、教場でさえなくば何を読んでも<ruby><rb>差支</rb><rt>さしつかえ</rt></ruby>なかった。学校に附属した教会、其処で<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>の尊いこと、クリスマスの晩の面白いこと、理想を養うということの味をも知って、人間の<ruby><rb>卑</rb><rt>いや</rt></ruby>しいことを隠して美しいことを<ruby><rb>標榜</rb><rt>ひょうぼう</rt></ruby>するという<ruby><rb>群</rb><rt>むれ</rt></ruby>の仲間となった。母の<ruby><rb>膝下</rb><rt>ひざもと</rt></ruby>が恋しいとか、<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>が<ruby><rb>懐</rb><rt>なつ</rt></ruby>かしいとか言うことは、来た当座こそ切実に<ruby><rb>辛</rb><rt>つら</rt></ruby>く感じもしたが、やがては全く忘れて、女学生の寄宿生活をこの上なく面白く思うようになった。<ruby><rb>旨味</rb><rt>おいし</rt></ruby>い<ruby><rb>南瓜</rb><rt>かぼちゃ</rt></ruby>を食べさせないと云っては、お<ruby><rb>鉢</rb><rt>はち</rt></ruby>の飯に<ruby><rb>醤油</rb><rt>しょうゆ</rt></ruby>を<ruby><rb>懸</rb><rt>か</rt></ruby>けて<ruby><rb>賄方</rb><rt>まかないかた</rt></ruby>を<ruby><rb>酷</rb><rt>いじ</rt></ruby>めたり、舎監のひねくれた老婦の顔色を見て、<ruby><rb>陰陽</rb><rt>かげひなた</rt></ruby>に物を言ったりする女学生の群の中に入っていては、家庭に養われた少女のように、単純に物を見ることがどうして出来よう。美しいこと、理想を養うこと、虚栄心の高いこと――こういう傾向をいつとなしに受けて、<persName ref="#yoshiko">芳子</persName>は明治の女学生の長所と短所とを遺憾なく備えていた。</p>
+        <p><ruby><rb>尠</rb><rt>すくな</rt></ruby>くとも<persName ref="#tokio">時雄</persName>の孤独なる生活はこれによって破られた。昔の恋人――今の細君。<ruby><rb>曽</rb><rt>かつ</rt></ruby>ては恋人には相違なかったが、今は時勢が移り変った。四五年来の女子教育の<ruby><rb>勃興</rb><rt>ぼっこう</rt></ruby>、女子大学の設立、<ruby><rb>庇髪</rb><rt>ひさしがみ</rt></ruby>、<ruby><rb>海老茶袴</rb><rt>えびちゃばかま</rt></ruby>、男と並んで歩くのをはにかむようなものは一人も無くなった。この世の中に、旧式の<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>、<ruby><rb>泥鴨</rb><rt>あひる</rt></ruby>のような歩き振、温順と貞節とより<ruby><rb>他</rb><rt>ほか</rt></ruby>に何物をも有せぬ細君に甘んじていることは<persName ref="#tokio">時雄</persName>には何よりも情けなかった。<ruby><rb>路</rb><rt>みち</rt></ruby>を行けば、美しい<ruby><rb>今様</rb><rt>いまよう</rt></ruby>の細君を連れての<ruby><rb>睦</rb><rt>むつま</rt></ruby>じい散歩、友を訪えば夫の席に出て<ruby><rb>流暢</rb><rt>りゅうちょう</rt></ruby>に会話を<ruby><rb>賑</rb><rt>にぎや</rt></ruby>かす若い細君、ましてその身が骨を折って書いた小説を読もうでもなく、夫の<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>煩悶には全く風馬牛で、子供さえ満足に育てれば好いという自分の細君に対すると、どうしても孤独を叫ばざるを得なかった。「寂しき人々」の<persName ref="#johannes">ヨハンネス</persName>と共に、家妻というものの無意味を感ぜずにはいられなかった。これが――この孤独が<persName ref="#yoshiko">芳子</persName>に<ruby><rb>由</rb><rt>よ</rt></ruby>って破られた。ハイカラな新式な美しい女門下生が、先生！　先生！　と世にも<ruby><rb>豪</rb><rt>えら</rt></ruby>い人のように渇仰して来るのに胸を動かさずに誰がおられようか。</p>
+        <p>最初の一月ほどは<persName ref="#tokio">時雄</persName>の家に<ruby><rb>仮寓</rb><rt>かぐう</rt></ruby>していた。<ruby><rb>華</rb><rt>はな</rt></ruby>やかな声、<ruby><rb>艶</rb><rt>あで</rt></ruby>やかな姿、今までの孤独な淋しいかれの生活に、何等の対照！　産褥から出たばかりの細君を助けて、靴下を編む、<ruby><rb>襟巻</rb><rt>えりまき</rt></ruby>を編む、着物を縫う、子供を遊ばせるという生々した態度、<persName ref="#tokio">時雄</persName>は新婚当座に再び帰ったような気がして、家門近く来るとそそるように胸が動いた。門をあけると、玄関にはその美しい笑顔、色彩に富んだ姿、夜も今までは子供と共に細君がいぎたなく眠って了って、六畳の室に<ruby><rb>徒</rb><rt>いたずら</rt></ruby>に明らかな<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>も、<ruby><rb>却</rb><rt>かえ</rt></ruby>って<ruby><rb>侘</rb><rt>わび</rt></ruby>しさを増すの種であったが、今は<ruby><rb>如何</rb><rt>いか</rt></ruby>に<ruby><rb>夜更</rb><rt>よふ</rt></ruby>けて帰って来ても、洋燈の下には白い手が巧に編物の針を動かして、<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の上に色ある毛糸の丸い玉！　賑かな笑声が<placeName ref="#ushigome">牛込</placeName>の奥の<ruby><rb>小柴垣</rb><rt>こしばがき</rt></ruby>の中に充ちた。</p>
+        <p>けれど一月ならずして<persName ref="#tokio">時雄</persName>はこの愛すべき女弟子をその家に置く事の不可能なのを覚った。従順なる家妻は敢てその事に不服をも唱えず、それらしい様子も見せなかったが、しかもその<ruby><rb>気色</rb><rt>きしょく</rt></ruby>は次第に悪くなった。限りなき笑声の中に限りなき不安の情が充ち渡った。妻の里方の<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>間などには現に一問題として講究されつつあることを知った。</p>
+        <p><persName ref="#tokio">時雄</persName>は<ruby><rb>種々</rb><rt>いろいろ</rt></ruby>に煩悶した後、細君の姉の家――軍人の未亡人で恩給と裁縫とで暮している姉の家に寄寓させて、<ruby><rb>其処</rb><rt>そこ</rt></ruby>から<placeName ref="#kojimachi"><ruby><rb>麹町</rb><rt>こうじまち</rt></ruby></placeName>の某<ruby><rb>女塾</rb><rt>じょじゅく</rt></ruby>に通学させることにした。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p>それから今回の事件まで一年半の年月が経過した。</p>
+        <p>その間二度<persName ref="#yoshiko">芳子</persName>は故郷を<ruby><rb>省</rb><rt>せい</rt></ruby>した。短篇小説を五種、長篇小説を一種、その他美文、新体詩を数十篇作った。某女塾では英語は優等の出来で、<persName ref="#tokio">時雄</persName>の選択で、<persName ref="#turgenev">ツルゲネーフ</persName>の全集を<placeName ref="#maruzen">丸善</placeName>から買った。初めは、暑中休暇に帰省、二度目は、神経衰弱で、時々<ruby><rb>癪</rb><rt>しゃく</rt></ruby>のような<ruby><rb>痙攣</rb><rt>けいれん</rt></ruby>を起すので、<ruby><rb>暫</rb><rt>しば</rt></ruby>し故山の静かな処に帰って休養する方が好いという医師の勧めに従ったのである。</p>
+        <p>その寓していた家は<placeName ref="#kojimachi">麹町</placeName>の<placeName ref="#dote-sanbancho">土手三番町</placeName>、<placeName ref="#kobu"><ruby><rb>甲武</rb><rt>こうぶ</rt></ruby></placeName>の電車の通る<ruby><rb>土手際</rb><rt>どてぎわ</rt></ruby>で、<persName ref="#yoshiko">芳子</persName>の書斎はその家での客座敷、八畳の一間、前に往来の<ruby><rb>頻繁</rb><rt>ひんぱん</rt></ruby>な道路があって、がやがやと往来の人やら子供やらで<ruby><rb>喧</rb><rt>やかま</rt></ruby>しい。<persName ref="#tokio">時雄</persName>の書斎にある西洋本箱を小さくしたような本箱が<ruby><rb>一閑張</rb><rt>いっかんばり</rt></ruby>の机の傍にあって、その上には鏡と、<ruby><rb>紅皿</rb><rt>べにざら</rt></ruby>と、<ruby><rb>白粉</rb><rt>おしろい</rt></ruby>の<ruby><rb>罎</rb><rt>びん</rt></ruby>と、今一つシュウソカリの入った大きな罎がある。これは神経過敏で、<ruby><rb>頭脳</rb><rt>あたま</rt></ruby>が痛くって<ruby><rb>為方</rb><rt>しかた</rt></ruby>が無い時に飲むのだという。本箱には<ruby><rb>紅葉</rb><rt>こうよう</rt></ruby>全集、近松<ruby><rb>世話浄瑠璃</rb><rt>せわじょうるり</rt></ruby>、英語の教科書、ことに新しく買った<persName ref="#turgenev">ツルゲネーフ</persName>全集が際立って目に附く。で、未来の<ruby><rb>閨秀</rb><rt>けいしゅう</rt></ruby>作家は学校から帰って来ると、机に向って文を書くというよりは、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ多く手紙を書くので、男の友達も随分多い。男文字の手紙も随分来る。中にも高等師範の学生に一人、<ruby><rb>早稲田</rb><rt>わせだ</rt></ruby>大学の学生に一人、それが時々遊びに来たことがあったそうだ。</p>
+        <p><placeName ref="#kojimachi">麹町</placeName><placeName ref="#dote-sanbancho">土手三番町</placeName>の一角には、女学生もそうハイカラなのが沢山居ない。それに、<placeName ref="#ichigaya-mitsuke">市ヶ谷見附</placeName>の<ruby><rb>彼方</rb><rt>あちら</rt></ruby>には<persName ref="#tokio">時雄</persName>の妻君の里の家があるのだが、この附近は殊に昔風の商家の娘が多い。で、<ruby><rb>尠</rb><rt>すくな</rt></ruby>くとも<persName ref="#yoshiko">芳子</persName>の<placeName ref="#kobe">神戸</placeName>仕込のハイカラはあたりの人の目を<ruby><rb>聳</rb><rt>そばだ</rt></ruby>たしめた。<persName ref="#tokio">時雄</persName>は姉の言葉として、妻から常に次のようなことを聞される。</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さんにも困ったものですねと姉が今日も言っていましたよ、男の友達が来るのは好いけれど、夜など一緒に二七（不動）に出かけて、遅くまで帰って来ないことがあるんですって。そりゃ<persName ref="#yoshiko">芳子</persName>さんはそんなことは無いのに決っているけれど、世間の口が<ruby><rb>喧</rb><rt>やかま</rt></ruby>しくって<ruby><rb>為方</rb><rt>しかた</rt></ruby>が無いと云っていました」</p>
+        <p>これを聞くと<persName ref="#tokio">時雄</persName>は<ruby><rb>定</rb><rt>きま</rt></ruby>って<persName ref="#yoshiko">芳子</persName>の肩を持つので、「お前達のような旧式の人間には<persName ref="#yoshiko">芳子</persName>の<ruby><rb>遣</rb><rt>や</rt></ruby>ることなどは<ruby><rb>判</rb><rt>わか</rt></ruby>りやせんよ。男女が二人で歩いたり話したりさえすれば、すぐあやしいとか変だとか思うのだが、一体、そんなことを思ったり、言ったりするのが旧式だ、今では女も自覚しているから、為ようと思うことは勝手にするさ」</p>
+        <p>この議論を<persName ref="#tokio">時雄</persName>はまた得意になって<persName ref="#yoshiko">芳子</persName>にも説法した。「女子ももう自覚せんければいかん。昔の女のように依頼心を持っていては駄目だ。<persName ref="#sudermann">ズウデルマン</persName>の<persName ref="#magda">マグダ</persName>の言った通り、父の手からすぐに夫の手に移るような意気地なしでは為方が無い。<placeName ref="#japan">日本</placeName>の新しい婦人としては、自ら考えて自ら行うようにしなければいかん」こう言っては、<persName ref="#ibsen">イブセン</persName>の<persName ref="#nora">ノラ</persName>の話や、<persName ref="#turgenev">ツルゲネーフ</persName>の<persName ref="#elene">エレネ</persName>の話や、<placeName ref="#russia"><ruby><rb>露西亜</rb><rt>ロシア</rt></ruby></placeName>、<placeName ref="#germany"><ruby><rb>独逸</rb><rt>ドイツ</rt></ruby></placeName>あたりの婦人の意志と感情と共に富んでいることを話し、さて、「けれど自覚と云うのは、自省ということをも含んでおるですからな、<ruby><rb>無闇</rb><rt>むやみ</rt></ruby>に意志や自我を振廻しては困るですよ。自分の遣ったことには自分が全責任を帯びる覚悟がなくては」</p>
+        <p><persName ref="#yoshiko">芳子</persName>にはこの<persName ref="#tokio">時雄</persName>の教訓が何より意味があるように聞えて、渇仰の念が<ruby><rb>愈〻</rb><rt>いよいよ</rt></ruby>加わった。<ruby><rb>基督</rb><rt>キリスト</rt></ruby>教の教訓より自由でそして権威があるように考えられた。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は女学生としては<ruby><rb>身装</rb><rt>みなり</rt></ruby>が派手過ぎた。<ruby><rb>黄金</rb><rt>きん</rt></ruby>の指環をはめて、流行を<ruby><rb>趁</rb><rt>お</rt></ruby>った美しい帯をしめて、すっきりとした立姿は、路傍の人目を<ruby><rb>惹</rb><rt>ひ</rt></ruby>くに十分であった。美しい顔と云うよりは表情のある顔、非常に美しい時もあれば何だか醜い時もあった。眼に光りがあってそれが非常によく働いた。四五年前までの女は感情を<ruby><rb>顕</rb><rt>あら</rt></ruby>わすのに<ruby><rb>極</rb><rt>きわ</rt></ruby>めて単純で、怒った<ruby><rb>容</rb><rt>かたち</rt></ruby>とか笑った容とか、三種、四種位しかその感情を表わすことが出来なかったが、今では情を巧に顔に表わす女が多くなった。<persName ref="#yoshiko">芳子</persName>もその一人であると<persName ref="#tokio">時雄</persName>は常に思った。</p>
+        <p><persName ref="#yoshiko">芳子</persName>と<persName ref="#tokio">時雄</persName>との関係は単に師弟の間柄としては余りに親密であった。この二人の様子を観察したある第三者の女の一人が妻に向って、「<persName ref="#yoshiko">芳子</persName>さんが来てから<persName ref="#tokio">時雄</persName>さんの様子はまるで変りましたよ。二人で話しているところを見ると、魂は二人ともあくがれ渡っているようで、それは本当に油断がなりませんよ」と言った。<ruby><rb>他</rb><rt>はた</rt></ruby>から見れば、無論そう見えたに相違なかった。けれど二人は果してそう親密であったか、どうか。</p>
+        <p>若い女のうかれ勝な心、うかれるかと思えばすぐ沈む。<ruby><rb>些細</rb><rt>ささい</rt></ruby>なことにも胸を動かし、つまらぬことにも心を痛める。恋でもない、恋でなくも無いというようなやさしい態度、<persName ref="#tokio">時雄</persName>は絶えず思い惑った。道義の力、習俗の力、機会一度至ればこれを破るのは<ruby><rb>帛</rb><rt>きぬ</rt></ruby>を裂くよりも容易だ。<ruby><rb>唯</rb><rt>ただ</rt></ruby>、容易に<ruby><rb>来</rb><rt>きた</rt></ruby>らぬはこれを破るに至る機会である。</p>
+        <p>この機会がこの一年の間に<ruby><rb>尠</rb><rt>すくな</rt></ruby>くとも二度近寄ったと<persName ref="#tokio">時雄</persName>は自分だけで思った。一度は<persName ref="#yoshiko">芳子</persName>が厚い封書を寄せて、自分の<ruby><rb>不束</rb><rt>ふつつか</rt></ruby>なこと、先生の高恩に報ゆることが出来ぬから自分は故郷に帰って農夫の妻になって<ruby><rb>田舎</rb><rt>いなか</rt></ruby>に埋れて<ruby><rb>了</rb><rt>しま</rt></ruby>おうということを涙交りに書いた時、一度は或る夜<persName ref="#yoshiko">芳子</persName>が一人で留守番をしているところへゆくりなく<persName ref="#tokio">時雄</persName>が行って訪問した時、この二度だ。初めの時は<persName ref="#tokio">時雄</persName>はその手紙の意味を明かに了解した。その返事をいかに書くべきかに就いて一夜眠らずに<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>した。穏かに眠れる妻の顔、それを幾度か<ruby><rb>窺</rb><rt>うかが</rt></ruby>って自己の良心のいかに<ruby><rb>麻痺</rb><rt>まひ</rt></ruby>せるかを自ら責めた。そしてあくる朝贈った手紙は、<ruby><rb>厳乎</rb><rt>げんこ</rt></ruby>たる師としての態度であった。二度目はそれから二月ほど<ruby><rb>経</rb><rt>た</rt></ruby>った春の夜、ゆくりなく<persName ref="#tokio">時雄</persName>が訪問すると、<persName ref="#yoshiko">芳子</persName>は<ruby><rb>白粉</rb><rt>おしろい</rt></ruby>をつけて、美しい顔をして、<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>の前にぽつねんとしていた。</p>
+        <p>「どうしたの」と<ruby><rb>訊</rb><rt>き</rt></ruby>くと、</p>
+        <p>「お留守番ですの」</p>
+        <p>「姉は<ruby><rb>何処</rb><rt>どこ</rt></ruby>へ行った？」</p>
+        <p>「<placeName ref="#yotsuya">四谷</placeName>へ買物に」</p>
+        <p>と言って、じっと<persName ref="#tokio">時雄</persName>の顔を見る。いかにも<ruby><rb>艶</rb><rt>なまめ</rt></ruby>かしい。<persName ref="#tokio">時雄</persName>はこの力ある<ruby><rb>一瞥</rb><rt>いちべつ</rt></ruby>に意気地なく胸を<ruby><rb>躍</rb><rt>おど</rt></ruby>らした。<ruby><rb>二語三語</rb><rt>ふたことみこと</rt></ruby>、普通のことを語り合ったが、その平凡なる物語が更に平凡でないことを互に思い知ったらしかった。この時、今十五分も一緒に話し合ったならば、どうなったであろうか。女の表情の眼は輝き、言葉は<ruby><rb>艶</rb><rt>なま</rt></ruby>めき、態度がいかにも<ruby><rb>尋常</rb><rt>よのつね</rt></ruby>でなかった。</p>
+        <p>「今夜は大変<ruby><rb>綺麗</rb><rt>きれい</rt></ruby>にしてますね？」</p>
+        <p>男は<ruby><rb>態</rb><rt>わざ</rt></ruby>と軽く出た。</p>
+        <p>「え、先程、湯に入りましたのよ」</p>
+        <p>「大変に白粉が白いから」</p>
+        <p>「あらまア先生！」と言って、笑って体を<ruby><rb>斜</rb><rt>はす</rt></ruby>に<ruby><rb>嬌態</rb><rt>きょうたい</rt></ruby>を呈した。</p>
+        <p><persName ref="#tokio">時雄</persName>はすぐ帰った。まア好いでしょうと<persName ref="#yoshiko">芳子</persName>はたって留めたが、どうしても帰ると言うので、<ruby><rb>名残</rb><rt>なごり</rt></ruby>惜しげに月の夜を<ruby><rb>其処</rb><rt>そこ</rt></ruby>まで送って来た。その白い顔には確かにある深い神秘が<ruby><rb>籠</rb><rt>こ</rt></ruby>められてあった。</p>
+        <p><date when="--04">四月</date>に入ってから、<persName ref="#yoshiko">芳子</persName>は多病で<ruby><rb>蒼白</rb><rt>あおじろ</rt></ruby>い顔をして神経過敏に陥っていた。シュウソカリを余程多量に服してもどうも眠られぬとて困っていた。絶えざる欲望と生殖の力とは年頃の女を誘うのに<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>しない。<persName ref="#yoshiko">芳子</persName>は多く薬に親しんでいた。</p>
+        <p><date when="--04">四月</date>末に帰国、<date when="--09">九月</date>に上京、そして<ruby><rb>今回</rb><rt>こんど</rt></ruby>の事件が起った。</p>
+        <p>今回の事件とは<ruby><rb>他</rb><rt>ほか</rt></ruby>でも無い。<persName ref="#yoshiko">芳子</persName>は恋人を得た。そして上京の途次、恋人と相携えて<placeName ref="#kyoto">京都</placeName><placeName ref="#saga"><ruby><rb>嵯峨</rb><rt>さが</rt></ruby></placeName>に遊んだ。その遊んだ二日の日数が出発と着京との時日に符合せぬので、<placeName ref="#tokyo">東京</placeName>と<placeName ref="#bitchu">備中</placeName>との間に手紙の往復があって、詰問した結果は恋愛、神聖なる恋愛、二人は決して罪を犯してはおらぬが、将来は<ruby><rb>如何</rb><rt>いか</rt></ruby>にしてもこの恋を遂げたいとの切なる<ruby><rb>願望</rb><rt>ねがい</rt></ruby>。<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>の師として、この恋の証人として一面<ruby><rb>月下氷人</rb><rt>げっかひょうじん</rt></ruby>の役目を余儀なくさせられたのであった。</p>
+        <p><persName ref="#yoshiko">芳子</persName>の恋人は<placeName ref="#doshisha">同志社</placeName>の学生、<placeName ref="#kobe-kyokai">神戸教会</placeName>の秀才、<persName ref="#hideo">田中秀夫</persName>、年二十一。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は師の前にその恋の神聖なるを神懸けて誓った。故郷の親達は、学生の身で、ひそかに男と<placeName ref="#saga">嵯峨</placeName>に遊んだのは、既にその精神の堕落であると云ったが、決してそんな<ruby><rb>汚</rb><rt>けが</rt></ruby>れた行為はない。互に恋を自覚したのは、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ<placeName ref="#kyoto">京都</placeName>で別れてからで、<placeName ref="#tokyo">東京</placeName>に帰って来てみると、男から熱烈なる手紙が来ていた。それで始めて将来の約束をしたような次第で、決して罪を犯したようなことは無いと女は涙を流して言った。<persName ref="#tokio">時雄</persName>は胸に至大の犠牲を感じながらも、その二人の<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>神聖なる恋の為めに力を尽すべく余儀なくされた。</p>
+        <p><persName ref="#tokio">時雄</persName>は<ruby><rb>悶</rb><rt>もだ</rt></ruby>えざるを得なかった。わが愛するものを奪われたということは<ruby><rb>甚</rb><rt>はなは</rt></ruby>だしくその心を暗くした。元より進んでその女弟子を自分の恋人にする考は無い。そういう明らかな定った考があれば前に既に二度までも近寄って来た機会を<ruby><rb>攫</rb><rt>つか</rt></ruby>むに<ruby><rb>於</rb><rt>おい</rt></ruby>て<ruby><rb>敢</rb><rt>あえ</rt></ruby>て<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>するところは無い<ruby><rb>筈</rb><rt>はず</rt></ruby>だ。けれどその愛する女弟子、<ruby><rb>淋</rb><rt>さび</rt></ruby>しい生活に美しい色彩を添え、限りなき力を添えてくれた<persName ref="#yoshiko">芳子</persName>を、突然人の奪い去るに任すに忍びようか。機会を二度まで攫むことは躊躇したが、三度来る機会、四度来る機会を待って、<ruby><rb>新</rb><rt>あらた</rt></ruby>なる運命と新なる生活を作りたいとはかれの心の底の底の<ruby><rb>微</rb><rt>かす</rt></ruby>かなる願であった。<persName ref="#tokio">時雄</persName>は悶えた、思い乱れた。<ruby><rb>妬</rb><rt>ねた</rt></ruby>みと惜しみと<ruby><rb>悔恨</rb><rt>くやみ</rt></ruby>との念が一緒になって旋風のように<ruby><rb>頭脳</rb><rt>あたま</rt></ruby>の中を回転した。師としての道義の念もこれに交って、<ruby><rb>益〻</rb><rt>ますます</rt></ruby>炎を<ruby><rb>熾</rb><rt>さか</rt></ruby>んにした。わが愛する女の幸福の為めという犠牲の念も加わった。で、夕暮の<ruby><rb>膳</rb><rt>ぜん</rt></ruby>の上の酒は<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しく量を加えて、<ruby><rb>泥鴨</rb><rt>あひる</rt></ruby>の<ruby><rb>如</rb><rt>ごと</rt></ruby>く酔って寝た。</p>
+        <p>あくる日は日曜日の雨、裏の森にざんざん降って、<persName ref="#tokio">時雄</persName>の為めには一倍に<ruby><rb>侘</rb><rt>わび</rt></ruby>しい。<ruby><rb>欅</rb><rt>けやき</rt></ruby>の古樹に降りかかる雨の<ruby><rb>脚</rb><rt>あし</rt></ruby>、それが実に長く、限りない空から限りなく降っているとしか思われない。<persName ref="#tokio">時雄</persName>は読書する勇気も無い、筆を執る勇気もない。もう秋で<ruby><rb>冷々</rb><rt>ひえびえ</rt></ruby>と背中の冷たい<ruby><rb>籐椅子</rb><rt>とういす</rt></ruby>に身を<ruby><rb>横</rb><rt>よこた</rt></ruby>えつつ、雨の長い脚を見ながら、今回の事件からその身の半生のことを考えた。かれの経験にはこういう経験が幾度もあった。一歩の相違で運命の唯中に入ることが出来ずに、いつも圏外に立たせられた淋しい<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>、その苦しい味をかれは常に<ruby><rb>味</rb><rt>あじわ</rt></ruby>った。文学の側でもそうだ、社会の側でもそうだ。恋、恋、恋、今になってもこんな消極的な運命に漂わされているかと思うと、その身の意気地なしと運命のつたないことがひしひしと胸に迫った。<persName ref="#turgenev">ツルゲネーフ</persName>のいわゆる Superfluous man ! だと思って、その主人公の<ruby><rb>儚</rb><rt>はかな</rt></ruby>い一生を胸に繰返した。</p>
+        <p><ruby><rb>寂寥</rb><rt>さびしさ</rt></ruby>に堪えず、<ruby><rb>午</rb><rt>ひる</rt></ruby>から酒を飲むと言出した。細君の支度の為ようが遅いのでぶつぶつ言っていたが、膳に<ruby><rb>載</rb><rt>の</rt></ruby>せられた<ruby><rb>肴</rb><rt>さかな</rt></ruby>がまずいので、遂に<ruby><rb>癇癪</rb><rt>かんしゃく</rt></ruby>を起して、<ruby><rb>自棄</rb><rt>やけ</rt></ruby>に酒を飲んだ。一本、二本と徳利の数は<ruby><rb>重</rb><rt>かさな</rt></ruby>って、<persName ref="#tokio">時雄</persName>は時の<ruby><rb>間</rb><rt>ま</rt></ruby>に泥の如く酔った。細君に対する不平ももう言わなくなった。徳利に酒が無くなると、只、酒、酒と言うばかりだ。そしてこれをぐいぐいと<ruby><rb>呷</rb><rt>あお</rt></ruby>る。気の弱い下女はどうしたことかと<ruby><rb>呆</rb><rt>あき</rt></ruby>れて見ておった。男の児の五歳になるのを始めは<ruby><rb>頻</rb><rt>しき</rt></ruby>りに可愛がって抱いたり<ruby><rb>撫</rb><rt>な</rt></ruby>でたり<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>したりしていたが、どうしたはずみでか泣出したのに腹を立てて、ピシャピシャとその尻を乱打したので、三人の子供は<ruby><rb>怖</rb><rt>こわ</rt></ruby>がって、遠巻にして、<ruby><rb>平生</rb><rt>ふだん</rt></ruby>に似もやらぬ父親の赤く酔った顔を不思議そうに見ていた。一升近く飲んでそのまま其処に酔倒れて、お膳の<ruby><rb>筋斗</rb><rt>とんぼ</rt></ruby>がえりを打つのにも<ruby><rb>頓着</rb><rt>とんちゃく</rt></ruby>しなかったが、やがて不思議なだらだらした節で、十年も前にはやった幼稚な新体詩を歌い出した。</p>
+        <p>君が<ruby><rb>門辺</rb><rt>かどべ</rt></ruby>をさまよふは</p>
+        <p><ruby><rb>巷</rb><rt>ちまた</rt></ruby>の<ruby><rb>塵</rb><rt>ちり</rt></ruby>を吹き立つる</p>
+        <p><ruby><rb>嵐</rb><rt>あらし</rt></ruby>のみとやおぼすらん。</p>
+        <p>その嵐よりいやあれに</p>
+        <p>その塵よりも乱れたる</p>
+        <p>恋のかばねを暁の</p>
+        <p>歌を半ばにして、細君の<ruby><rb>被</rb><rt>か</rt></ruby>けた<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>を着たまま、すっくと立上って、座敷の方へ小山の如く動いて行った。何処へ？　何処へいらっしゃるんです？　と細君は気が気でなくその後を追って行ったが、それにも<ruby><rb>関</rb><rt>かま</rt></ruby>わず、蒲団を着たまま、<ruby><rb>厠</rb><rt>かわや</rt></ruby>の中に入ろうとした。細君は<ruby><rb>慌</rb><rt>あわ</rt></ruby>てて、</p>
+        <p>「<ruby><rb>貴郎</rb><rt>あなた</rt></ruby>、貴郎、酔っぱらってはいやですよ。そこは<ruby><rb>手水場</rb><rt>ちょうずば</rt></ruby>ですよ」</p>
+        <p><ruby><rb>突如</rb><rt>いきなり</rt></ruby>蒲団を後から引いたので、蒲団は厠の入口で細君の手に残った。<persName ref="#tokio">時雄</persName>はふらふらと危く小便をしていたが、それがすむと、<ruby><rb>突如</rb><rt>いきなり</rt></ruby><ruby><rb>鞺</rb><rt>どう</rt></ruby>と厠の中に横に寝てしまった。細君が<ruby><rb>汚</rb><rt>きたな</rt></ruby>がって<ruby><rb>頻</rb><rt>しき</rt></ruby>りに<ruby><rb>揺</rb><rt>ゆす</rt></ruby>ったり何かしたが、<persName ref="#tokio">時雄</persName>は動こうとも立とうとも為ない。そうかと云って眠ったのではなく、赤土のような顔に大きい鋭い目を<ruby><rb>明</rb><rt>あ</rt></ruby>いて、<ruby><rb>戸外</rb><rt>おもて</rt></ruby>に降り<ruby><rb>頻</rb><rt>しき</rt></ruby>る雨をじっと見ていた。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>四</head>
+        <p><persName ref="#tokio">時雄</persName>は例刻をてくてくと<placeName ref="#ushigome">牛込</placeName><placeName ref="#yaraicho">矢来町</placeName>の自宅に帰って来た。</p>
+        <p><ruby><rb>渠</rb><rt>かれ</rt></ruby>は三日間、その<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>と戦った。渠は性として<ruby><rb>惑溺</rb><rt>わくでき</rt></ruby>することが出来ぬ或る一種の力を<ruby><rb>有</rb><rt>も</rt></ruby>っている。この力の為めに支配されるのを常に口惜しく思っているのではあるが、それでもいつか負けて<ruby><rb>了</rb><rt>しま</rt></ruby>う。征服されて了う。これが為め渠はいつも運命の圏外に立って苦しい味を<ruby><rb>嘗</rb><rt>な</rt></ruby>めさせられるが、世間からは正しい人、信頼するに足る人と信じられている。三日間の苦しい<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>、これでとにかく渠はその前途を見た。二人の間の関係は一段落を告げた。これからは、師としての責任を尽して、わが愛する女の幸福の為めを<ruby><rb>謀</rb><rt>はか</rt></ruby>るばかりだ。これはつらい、けれどつらいのが<ruby><rb>人生</rb><rt>ライフ</rt></ruby>だ！　と思いながら帰って来た。</p>
+        <p>門をあけて入ると、細君が迎えに出た。残暑の日はまだ暑く、洋服の<ruby><rb>下襦袢</rb><rt>したじゅばん</rt></ruby>がびっしょり汗にぬれている。それを<ruby><rb>糊</rb><rt>のり</rt></ruby>のついた白地の<ruby><rb>単衣</rb><rt>ひとえ</rt></ruby>に着替えて、茶の間の<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>の前に坐ると、細君はふと思い附いたように、<ruby><rb>箪笥</rb><rt>たんす</rt></ruby>の上の一封の手紙を取出し、</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さんから」</p>
+        <p>と言って渡した。</p>
+        <p>急いで封を切った。巻紙の厚いのを見ても、その事件に関しての用事に相違ない。<persName ref="#tokio">時雄</persName>は熱心に読下した。</p>
+        <p>言文一致で、すらすらとこの上ない達筆。</p>
+        <p>先生――</p>
+        <p>実は御相談に上りたいと存じましたが、余り急でしたものでしたから、独断で実行致しました。</p>
+        <p>昨日四時に<persName ref="#hideo">田中</persName>から電報が参りまして、六時に<placeName ref="#shimbashi">新橋</placeName>の停車場に着くとのことですもの、私はどんなに驚きましたか知れません。</p>
+        <p>何事も無いのに出て来るような、そんな軽率な男でないと信じておりますだけに、一層<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>しく気を<ruby><rb>揉</rb><rt>も</rt></ruby>みました。先生、許して下さい。私はその時刻に迎えに参りましたのです。<ruby><rb>逢</rb><rt>あ</rt></ruby>って聞きますと、私の<ruby><rb>一伍一什</rb><rt>いちぶしじゅう</rt></ruby>を書いた手紙を見て、非常に心配して、もしこの事があった為め万一郷里に<ruby><rb>伴</rb><rt>つ</rt></ruby>れて帰られるようなことがあっては、自分が済まぬと言うので、学事をも捨てて出京して、先生にすっかりお打明申して、お<ruby><rb>詫</rb><rt>わび</rt></ruby>も申上げ、お情にも<ruby><rb>縋</rb><rt>すが</rt></ruby>って、万事円満に参るようにと、そういう目的で急に出て参ったとのことで御座います。それから、私は先生にお話し申した一伍一什、先生のお情深い言葉、将来までも私等二人の神聖な<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>な恋の証人とも保護者ともなって下さるということを話しましたところ、非常に先生の御情に感激しまして、感謝の涙に暮れました次第で御座います。</p>
+        <p><persName ref="#hideo">田中</persName>は私の余りに<ruby><rb>狼狽</rb><rt>ろうばい</rt></ruby>した手紙に非常に驚いたとみえまして、十分覚悟をして、万一破壊の暁にはと言った風なことも決心して参りましたので御座います。万一の時にはあの時<placeName ref="#saga"><ruby><rb>嵯峨</rb><rt>さが</rt></ruby></placeName>に一緒に参った友人を証人にして、二人の間が決して<ruby><rb>汚</rb><rt>けが</rt></ruby>れた関係の無いことを弁明し、別れて後互に感じた二人の恋愛をも打明けて、先生にお縋り申して郷里の父母の方へも<ruby><rb>逐一</rb><rt>ちくいち</rt></ruby>言って頂こうと決心して参りましたそうです。けれどこの間の私の無謀で郷里の父母の感情を破っている矢先、どうしてそんなことを申して<ruby><rb>遣</rb><rt>つか</rt></ruby>わされましょう。今は<ruby><rb>少時</rb><rt>しばらく</rt></ruby>沈黙して、お互に希望を持って、専心勉学に志し、いつか折を見て――<ruby><rb>或</rb><rt>あるい</rt></ruby>は五年、十年の後かも知れません――打明けて願う方が得策だと存じまして、そういうことに致しました。先生のお話をも一切話して聞かせました。で、用事が済んだ上は帰した方が好いのですけれど、非常に疲れている様子を見ましては、さすがに直ちに引返すようにとも申兼ねました。（私の弱いのを御許し下さいまし）勉学中、実際問題に触れてはならぬとの先生の御教訓は身にしみて守るつもりで御座いますが、<ruby><rb>一先</rb><rt>ひとまず</rt></ruby>、<ruby><rb>旅籠屋</rb><rt>はたごや</rt></ruby>に落着かせまして、折角出て来たものですから、一日位見物しておいでなさいと、つい申して了いました。どうか先生、お許し下さいまし。私共も激しい感情の中に、理性も御座いますから、<placeName ref="#kyoto">京都</placeName>でしたような、仮りにも常識を<ruby><rb>外</rb><rt>はず</rt></ruby>れた、他人から誤解されるようなことは致しません。誓って、決して致しません。末ながら奥様にも<ruby><rb>宜</rb><rt>よろ</rt></ruby>しく申上げて下さいまし。</p>
+        <p><persName ref="#yoshiko">芳子</persName></p>
+        <p>先生　御もと</p>
+        <p>この一通の手紙を読んでいる中、さまざまの感情が<persName ref="#tokio">時雄</persName>の胸を火のように燃えて通った。その<persName ref="#hideo">田中</persName>という二十一の青年が現にこの<placeName ref="#tokyo">東京</placeName>に来ている。<persName ref="#yoshiko">芳子</persName>が迎えに行った。何をしたか解らん。この間言ったこともまるで<ruby><rb>虚言</rb><rt>うそ</rt></ruby>かも知れぬ。この夏期の休暇に<placeName ref="#suma"><ruby><rb>須磨</rb><rt>すま</rt></ruby></placeName>で落合った時から出来ていて、<placeName ref="#kyoto">京都</placeName>での行為もその望を満す為め、今度も恋しさに<ruby><rb>堪</rb><rt>た</rt></ruby>え兼ねて女の後を追って上京したのかも知れん。手を握ったろう。胸と胸とが相触れたろう。人が見ていぬ旅籠屋の二階、何を為ているか解らぬ。汚れる汚れぬのも<ruby><rb>刹那</rb><rt>せつな</rt></ruby>の間だ。こう思うと<persName ref="#tokio">時雄</persName>は<ruby><rb>堪</rb><rt>たま</rt></ruby>らなくなった。「監督者の責任にも関する！」と腹の中で絶叫した。こうしてはおかれぬ、こういう自由を精神の定まらぬ女に与えておくことは出来ん。監督せんければならん、保護せんけりゃならん。私共は熱情もあるが理性がある！　私共とは何だ！　<ruby><rb>何故</rb><rt>なぜ</rt></ruby>私とは書かぬ、何故複数を用いた？　<persName ref="#tokio">時雄</persName>の胸は<ruby><rb>嵐</rb><rt>あらし</rt></ruby>のように乱れた。着いたのは昨日の六時、姉の家に行って聞き<ruby><rb>糺</rb><rt>ただ</rt></ruby>せば昨夜何時頃に帰ったか解るが、今日はどうした、今はどうしている？</p>
+        <p>細君の心を尽した<ruby><rb>晩餐</rb><rt>ばんさん</rt></ruby>の<ruby><rb>膳</rb><rt>ぜん</rt></ruby>には、<ruby><rb>鮪</rb><rt>まぐろ</rt></ruby>の新鮮な刺身に、<ruby><rb>青紫蘇</rb><rt>あおじそ</rt></ruby>の薬味を添えた<ruby><rb>冷豆腐</rb><rt>ひややっこ</rt></ruby>、それを味う余裕もないが、<ruby><rb>一盃</rb><rt>いっぱい</rt></ruby>は一盃と<ruby><rb>盞</rb><rt>さかずき</rt></ruby>を重ねた。</p>
+        <p>細君は末の児を寝かして、火鉢の前に来て坐ったが、<persName ref="#yoshiko">芳子</persName>の手紙の夫の傍にあるのに眼を附けて、</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さん、何て言って来たのです？」</p>
+        <p><persName ref="#tokio">時雄</persName>は黙って手紙を投げて<ruby><rb>遣</rb><rt>や</rt></ruby>った、細君はそれを受取りながら、夫の顔をじろりと見て、暴風の前に来る雲行の甚だ急なのを知った。</p>
+        <p>細君は手紙を読終って巻きかえしながら、</p>
+        <p>「出て来たのですね」</p>
+        <p>「うむ」</p>
+        <p>「ずっと<placeName ref="#tokyo">東京</placeName>に居るんでしょうか」</p>
+        <p>「手紙に書いてあるじゃないか、すぐ帰すッて……」</p>
+        <p>「帰るでしょうか」</p>
+        <p>「そんなこと誰が知るものか」</p>
+        <p>夫の語気が<ruby><rb>烈</rb><rt>はげ</rt></ruby>しいので、細君は口を<ruby><rb>噤</rb><rt>つぐ</rt></ruby>んで了った。<ruby><rb>少時</rb><rt>しばらく</rt></ruby><ruby><rb>経</rb><rt>た</rt></ruby>ってから、</p>
+        <p>「だから、本当に<ruby><rb>厭</rb><rt>いや</rt></ruby>さ、若い娘の身で、小説家になるなんぞッて、望む本人も本人なら、よこす親達も親達ですからね」</p>
+        <p>「でも、お前は安心したろう」と言おうとしたが、それは<ruby><rb>止</rb><rt>よ</rt></ruby>して、</p>
+        <p>「まア、そんなことはどうでも好いさ、どうせお前達には解らんのだから……それよりも酌でもしたらどうだ」</p>
+        <p>温順な細君は徳利を取上げて、京焼の<ruby><rb>盃</rb><rt>さかずき</rt></ruby>に波々と注ぐ。</p>
+        <p><persName ref="#tokio">時雄</persName>は<ruby><rb>頻</rb><rt>しき</rt></ruby>りに酒を<ruby><rb>呷</rb><rt>あお</rt></ruby>った。酒でなければこの<ruby><rb>鬱</rb><rt>うつ</rt></ruby>を遣るに堪えぬといわぬばかりに。三本目に、妻は心配して、</p>
+        <p>「この頃はどうか為ましたね」</p>
+        <p>「何故？」</p>
+        <p>「酔ってばかりいるじゃありませんか」</p>
+        <p>「酔うということがどうかしたのか」</p>
+        <p>「そうでしょう、何か気に懸ることがあるからでしょう。<persName ref="#yoshiko">芳子</persName>さんのことなどはどうでも好いじゃありませんか」</p>
+        <p>「馬鹿！」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は一<ruby><rb>喝</rb><rt>かつ</rt></ruby>した。</p>
+        <p>細君はそれにも懲りずに、</p>
+        <p>「だって、余り飲んでは毒ですよ、もう好い加減になさい、また<ruby><rb>手水場</rb><rt>ちょうずば</rt></ruby>にでも入って寝ると、<ruby><rb>貴郎</rb><rt>あなた</rt></ruby>は大きいから、私と、<persName ref="#otsuru">お鶴</persName>（下女）の手ぐらいではどうにもなりやしませんからさ」</p>
+        <p>「まア、好いからもう一本」</p>
+        <p>で、もう一本を半分位飲んだ。もう酔は余程廻ったらしい。顔の色は<ruby><rb>赤銅色</rb><rt>しゃくどういろ</rt></ruby>に染って眼が少しく据っていた。急に立上って、</p>
+        <p>「おい、帯を出せ！」</p>
+        <p>「<ruby><rb>何処</rb><rt>どこ</rt></ruby>へいらっしゃる」</p>
+        <p>「<placeName ref="#dote-sanbancho">三番町</placeName>まで行って来る」</p>
+        <p>「姉の処？」</p>
+        <p>「うむ」</p>
+        <p>「およしなさいよ、<ruby><rb>危</rb><rt>あぶ</rt></ruby>ないから」</p>
+        <p>「何アに大丈夫だ、人の娘を預って監督せずに<ruby><rb>投遣</rb><rt>なげやり</rt></ruby>にしてはおかれん。男がこの<placeName ref="#tokyo">東京</placeName>に来て一緒に歩いたり何かしているのを見ぬ振をしてはおかれん。<persName ref="#tagawa">田川</persName>（姉の家の姓）に預けておいても不安心だから、今日、行って、早かったら、<persName ref="#yoshiko">芳子</persName>を家に連れて来る。二階を掃除しておけ」</p>
+        <p>「家に置くんですか、また……」</p>
+        <p>「<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>」</p>
+        <p>細君は容易に帯と着物とを出そうともせぬので、</p>
+        <p>「よし、よし、着物を出さんのなら、これで好い」と、白地の<ruby><rb>単衣</rb><rt>ひとえ</rt></ruby>に<ruby><rb>唐縮緬</rb><rt>とうちりめん</rt></ruby>の汚れたへこ帯、帽子も<ruby><rb>被</rb><rt>かぶ</rt></ruby>らずに、そのままに急いで戸外へ出た。「今出しますから……本当に困って了う」という細君の声が後に聞えた。</p>
+        <p>夏の日はもう暮れ懸っていた。矢来の酒井の森には<ruby><rb>烏</rb><rt>からす</rt></ruby>の声が<ruby><rb>喧</rb><rt>やかま</rt></ruby>しく聞える。どの家でも夕飯が済んで、門口に若い娘の白い顔も見える。ボールを投げている少年もある。官吏らしい<ruby><rb>鰌髭</rb><rt>どじょうひげ</rt></ruby>の紳士が<ruby><rb>庇髪</rb><rt>ひさしがみ</rt></ruby>の若い細君を<ruby><rb>伴</rb><rt>つ</rt></ruby>れて、<placeName ref="#kagurazaka"><ruby><rb>神楽坂</rb><rt>かぐらざか</rt></ruby></placeName>に散歩に出懸けるのにも幾組か<ruby><rb>邂逅</rb><rt>でっくわ</rt></ruby>した。<persName ref="#tokio">時雄</persName>は<ruby><rb>激昂</rb><rt>げっこう</rt></ruby>した心と泥酔した身体とに<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく漂わされて、<ruby><rb>四辺</rb><rt>あたり</rt></ruby>に見ゆるものが皆な別の世界のもののように思われた。両側の家も動くよう、地も脚の下に陥るよう、天も頭の上に<ruby><rb>蔽</rb><rt>おお</rt></ruby>い<ruby><rb>冠</rb><rt>かぶ</rt></ruby>さるように感じた。元からさ程強い酒量でないのに、<ruby><rb>無闇</rb><rt>むやみ</rt></ruby>にぐいぐいと<ruby><rb>呷</rb><rt>あお</rt></ruby>ったので、一時に酔が発したのであろう。ふと<placeName ref="#russia"><ruby><rb>露西亜</rb><rt>ロシア</rt></ruby></placeName>の<ruby><rb>賤民</rb><rt>せんみん</rt></ruby>の酒に酔って路傍に倒れて寝ているのを思い出した。そしてある友人と<placeName ref="#russia">露西亜</placeName>の人間はこれだから<ruby><rb>豪</rb><rt>えら</rt></ruby>い、<ruby><rb>惑溺</rb><rt>わくでき</rt></ruby>するなら<ruby><rb>飽</rb><rt>あく</rt></ruby>まで惑溺せんければ駄目だと言ったことを思いだした。馬鹿な！　恋に師弟の別があって堪るものかと口へ出して言った。</p>
+        <p><placeName ref="#nakanezaka">中根坂</placeName>を上って、<placeName ref="#shikan-gakko">士官学校</placeName>の裏門から<placeName ref="#sanaizaka">佐内坂</placeName>の上まで来た頃は、日はもうとっぷりと暮れた。白地の<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>がぞろぞろと通る。<ruby><rb>煙草屋</rb><rt>たばこや</rt></ruby>の前に若い細君が出ている。氷屋の<ruby><rb>暖簾</rb><rt>のれん</rt></ruby>が涼しそうに夕風に<ruby><rb>靡</rb><rt>なび</rt></ruby>く。<persName ref="#tokio">時雄</persName>はこの夏の夜景を<ruby><rb>朧</rb><rt>おぼろ</rt></ruby>げに眼には見ながら、電信柱に突当って倒れそうにしたり、浅い<ruby><rb>溝</rb><rt>みぞ</rt></ruby>に落ちて<ruby><rb>膝頭</rb><rt>ひざがしら</rt></ruby>をついたり、職工<ruby><rb>体</rb><rt>てい</rt></ruby>の男に、「<ruby><rb>酔漢奴</rb><rt>よっぱらいめ</rt></ruby>！　しっかり歩け！」と<ruby><rb>罵</rb><rt>ののし</rt></ruby>られたりした。急に自ら思いついたらしく、坂の上から右に折れて、<placeName ref="#ichigaya-hachiman">市ヶ谷八幡</placeName>の境内へと入った。境内には人の影もなく<ruby><rb>寂寞</rb><rt>ひっそり</rt></ruby>としていた。大きい古い<ruby><rb>欅</rb><rt>けやき</rt></ruby>の樹と松の樹とが蔽い冠さって、左の<ruby><rb>隅</rb><rt>すみ</rt></ruby>に<ruby><rb>珊瑚樹</rb><rt>さんごじゅ</rt></ruby>の大きいのが<ruby><rb>繁</rb><rt>しげ</rt></ruby>っていた。処々の常夜燈はそろそろ光を放ち始めた。<persName ref="#tokio">時雄</persName>はいかにしても苦しいので、<ruby><rb>突如</rb><rt>いきなり</rt></ruby>その珊瑚樹の蔭に身を<ruby><rb>躱</rb><rt>かく</rt></ruby>して、その根本の地上に身を<ruby><rb>横</rb><rt>よこた</rt></ruby>えた。興奮した心の状態、奔放な情と悲哀の快感とは、極端までその力を発展して、一方痛切に<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>の念に<ruby><rb>駆</rb><rt>か</rt></ruby>られながら、一方冷淡に自己の状態を客観した。</p>
+        <p>初めて恋するような熱烈な情は無論なかった。盲目にその運命に従うと<ruby><rb>謂</rb><rt>い</rt></ruby>うよりは、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ<ruby><rb>冷</rb><rt>ひやや</rt></ruby>かにその運命を批判した。熱い主観の情と冷めたい客観の批判とが<ruby><rb>絡</rb><rt>よ</rt></ruby>り合せた糸のように固く結び着けられて、一種異様の心の状態を呈した。</p>
+        <p>悲しい、実に痛切に悲しい。この悲哀は<ruby><rb>華</rb><rt>はな</rt></ruby>やかな青春の悲哀でもなく、単に男女の恋の上の悲哀でもなく、人生の<ruby><rb>最奥</rb><rt>さいおう</rt></ruby>に<ruby><rb>秘</rb><rt>ひそ</rt></ruby>んでいるある大きな悲哀だ。行く水の流、咲く花の<ruby><rb>凋落</rb><rt>ちょうらく</rt></ruby>、この自然の底に<ruby><rb>蟠</rb><rt>わだかま</rt></ruby>れる抵抗すべからざる力に触れては、人間ほど<ruby><rb>儚</rb><rt>はかな</rt></ruby>い<ruby><rb>情</rb><rt>なさけ</rt></ruby>ないものはない。</p>
+        <p><ruby><rb>汪然</rb><rt>おうぜん</rt></ruby>として涙は<persName ref="#tokio">時雄</persName>の<ruby><rb>鬚面</rb><rt>ひげづら</rt></ruby>を伝った。</p>
+        <p>ふとある事が胸に<ruby><rb>上</rb><rt>のぼ</rt></ruby>った。<persName ref="#tokio">時雄</persName>は立上って歩き出した。もう全く夜になった。境内の処々に立てられた<ruby><rb>硝子燈</rb><rt>ガラスとう</rt></ruby>は光を放って、その表面の常夜燈という三字がはっきり見える。この常夜燈という三字、これを見てかれは胸を<ruby><rb>衝</rb><rt>つ</rt></ruby>いた。この三字をかれは<ruby><rb>曽</rb><rt>かつ</rt></ruby>て深い<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>を以て見たことは無いだろうか。今の細君が大きい<ruby><rb>桃割</rb><rt>ももわれ</rt></ruby>に結って、このすぐ下の家に娘で居た時、<ruby><rb>渠</rb><rt>かれ</rt></ruby>はその<ruby><rb>微</rb><rt>かす</rt></ruby>かな琴の<ruby><rb>音</rb><rt>ね</rt></ruby>の<ruby><rb>髣髴</rb><rt>ほうふつ</rt></ruby>をだに得たいと思ってよくこの八幡の高台に登った。かの女を得なければ<ruby><rb>寧</rb><rt>いっ</rt></ruby>そ南洋の植民地に漂泊しようというほどの熱烈な心を<ruby><rb>抱</rb><rt>いだ</rt></ruby>いて、<ruby><rb>華表</rb><rt>とりい</rt></ruby>、長い<ruby><rb>石階</rb><rt>いしだん</rt></ruby>、社殿、俳句の<ruby><rb>懸行燈</rb><rt>かけあんどん</rt></ruby>、この常夜燈の三字にはよく見入って物を思ったものだ。その下には依然たる家屋、電車の<ruby><rb>轟</rb><rt>とどろき</rt></ruby>こそおりおり<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>を破って通るが、その妻の実家の窓には昔と同じように、明かに燈の光が輝いていた。何たる節操なき心ぞ、<ruby><rb>僅</rb><rt>わず</rt></ruby>かに八年の年月を<ruby><rb>閲</rb><rt>けみ</rt></ruby>したばかりであるのに、こうも変ろうとは誰が思おう。その桃割姿を<ruby><rb>丸髷姿</rb><rt>まるまげすがた</rt></ruby>にして、楽しく暮したその生活がどうしてこういう荒涼たる生活に変って、どうしてこういう新しい恋を感ずるようになったか。<persName ref="#tokio">時雄</persName>は我ながら時の力の恐ろしいのを痛切に胸に覚えた。けれどその胸にある現在の事実は不思議にも何等の動揺をも受けなかった。</p>
+        <p>「矛盾でもなんでも<ruby><rb>為方</rb><rt>しかた</rt></ruby>がない、その矛盾、その無節操、これが事実だから為方がない、事実！　事実！」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は胸の中に繰返した。</p>
+        <p><persName ref="#tokio">時雄</persName>は堪え難い自然の力の圧迫に圧せられたもののように、再び傍のロハ台に長い身を横えた。ふと見ると、<ruby><rb>赤銅</rb><rt>しゃくどう</rt></ruby>のような色をした<ruby><rb>光芒</rb><rt>ひかり</rt></ruby>の無い大きな月が、お<ruby><rb>濠</rb><rt>ほり</rt></ruby>の松の上に音も無く昇っていた。その色、その<ruby><rb>状</rb><rt>かたち</rt></ruby>、その姿がいかにも<ruby><rb>侘</rb><rt>わび</rt></ruby>しい。その侘しさがその身の今の侘しさによく<ruby><rb>適</rb><rt>かな</rt></ruby>っていると<persName ref="#tokio">時雄</persName>は思って、また堪え難い哀愁がその胸に<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>り渡った。</p>
+        <p>酔は既に<ruby><rb>醒</rb><rt>さ</rt></ruby>めた。夜露は置始めた。</p>
+        <p><placeName ref="#dote-sanbancho">土手三番町</placeName>の家の前に来た。</p>
+        <p><ruby><rb>覗</rb><rt>のぞ</rt></ruby>いてみたが、<persName ref="#yoshiko">芳子</persName>の室に燈火の光が見えぬ。まだ帰って来ぬとみえる。<persName ref="#tokio">時雄</persName>の胸はまた燃えた。この夜、この暗い夜に恋しい男と二人！　何をしているか解らぬ。こういう常識を欠いた行為を<ruby><rb>敢</rb><rt>あえ</rt></ruby>てして、神聖なる恋とは何事？　汚れたる行為の無いのを弁明するとは何事？</p>
+        <p>すぐ家に入ろうとしたが、まだ当人が帰っておらぬのに上っても為方が無いと思って、その前を<ruby><rb>真直</rb><rt>まっすぐ</rt></ruby>に通り抜けた。女と<ruby><rb>摩違</rb><rt>すれちが</rt></ruby>う<ruby><rb>度</rb><rt>たび</rt></ruby>に、<persName ref="#yoshiko">芳子</persName>ではないかと顔を覗きつつ歩いた。土手の上、松の木蔭、街道の曲り角、往来の人に怪まるるまで<ruby><rb>彼方此方</rb><rt>あっちこっち</rt></ruby>を<ruby><rb>徘徊</rb><rt>はいかい</rt></ruby>した。もう九時、十時に近い。いかに夏の夜であるからと言って、そう遅くまで出歩いている<ruby><rb>筈</rb><rt>はず</rt></ruby>が無い。もう帰ったに相違ないと思って、引返して姉の家に行ったが、矢張りまだ帰っていない。</p>
+        <p><persName ref="#tokio">時雄</persName>は家に入った。</p>
+        <p>奥の六畳に通るや否、</p>
+        <p>「<persName ref="#yoshiko">芳さん</persName>はどうしました？」</p>
+        <p>その答より何より、姉は<persName ref="#tokio">時雄</persName>の着物に<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しく泥の着いているのに驚いて、</p>
+        <p>「まア、どうしたんです、<persName ref="#tokio">時雄</persName>さん」</p>
+        <p>明かな<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>の光で見ると、なるほど、白地の<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>に、肩、<ruby><rb>膝</rb><rt>ひざ</rt></ruby>、腰の<ruby><rb>嫌</rb><rt>きら</rt></ruby>いなく、<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しい<ruby><rb>泥痕</rb><rt>どろあと</rt></ruby>！</p>
+        <p>「何アに、<ruby><rb>其処</rb><rt>そこ</rt></ruby>でちょっと転んだものだから」</p>
+        <p>「だッて、肩まで<ruby><rb>粘</rb><rt>つ</rt></ruby>いているじゃありませんか。また、酔ッぱらったんでしょう」</p>
+        <p>「何アに……」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は<ruby><rb>強</rb><rt>し</rt></ruby>いて笑ってまぎらした。</p>
+        <p>さて時を移さず、</p>
+        <p>「<persName ref="#yoshiko">芳さん</persName>、何処に行ったんです」</p>
+        <p>「今朝、ちょっと<placeName ref="#nakano">中野</placeName>の方にお友達と散歩に行って来ると行って出たきりですがね、もう帰って来るでしょう。何か用？」</p>
+        <p>「え、少し……」と言って、「昨日は帰りは遅かったですか」</p>
+        <p>「いいえ、お友達を<placeName ref="#shimbashi">新橋</placeName>に迎えに行くんだって、四時過に出かけて、八時頃に帰って来ましたよ」</p>
+        <p><persName ref="#tokio">時雄</persName>の顔を見て、</p>
+        <p>「どうかしたのですの？」</p>
+        <p>「何アに……けれどねえ姉さん」と<persName ref="#tokio">時雄</persName>の声は改まった。「実は姉さんにおまかせしておいても、この間の<placeName ref="#kyoto">京都</placeName>のようなことが又あると困るですから、<persName ref="#yoshiko">芳子</persName>を私の家において、十分監督しようと思うんですがね」</p>
+        <p>「そう、それは<ruby><rb>好</rb><rt>い</rt></ruby>いですよ。本当に<persName ref="#yoshiko">芳子</persName>さんはああいうしっかり者だから、私みたいな無教育のものでは……」</p>
+        <p>「いや、そういう訳でも無いですがね。余り自由にさせ過ぎても、<ruby><rb>却</rb><rt>かえ</rt></ruby>って当人の為にならんですから、一つ家に置いて、十分監督してみようと思うんです」</p>
+        <p>「それが好いですよ。本当に、<persName ref="#yoshiko">芳子</persName>さんにもね……何処と悪いことのない、発明な、利口な、今の世には珍らしい方ですけれど、一つ悪いことがあってね、男の友達と平気で夜歩いたりなんかするんですからね。それさえ止すと好いんだけれどとよく言うのですの。すると<persName ref="#yoshiko">芳子</persName>さんはまた小母さんの旧弊が始まったって、笑っているんだもの。いつかなぞも余り男と一緒に歩いたり何かするものだから、<ruby><rb>角</rb><rt>かど</rt></ruby>の交番でね、不審にしてね、<ruby><rb>角袖</rb><rt>かくそで</rt></ruby>巡査が家の前に立っていたことがあったと云いますよ。それはそんなことは無いんだから、構いはしませんけどもね……」</p>
+        <p>「それはいつのことです？」</p>
+        <p>「昨年の暮でしたかね」</p>
+        <p>「どうもハイカラ過ぎて困る」と<persName ref="#tokio">時雄</persName>は言ったが、時計の針の既に十時半の処を指すのを見て、「それにしてもどうしたんだろう。若い身空で、こう遅くまで一人で出て歩くと言うのは？」</p>
+        <p>「もう帰って来ますよ」</p>
+        <p>「こんなことは幾度もあるんですか」</p>
+        <p>「いいえ、<ruby><rb>滅多</rb><rt>めった</rt></ruby>にありはしませんよ。夏の夜だから、まだ宵の口位に思って歩いているんですよ」</p>
+        <p>姉は話しながら<ruby><rb>裁縫</rb><rt>しごと</rt></ruby>の針を止めぬのである。前に<ruby><rb>鴨脚</rb><rt>いちょう</rt></ruby>の大きい<ruby><rb>裁物板</rb><rt>たちものいた</rt></ruby>が据えられて、<ruby><rb>彩絹</rb><rt>きぬ</rt></ruby>の<ruby><rb>裁片</rb><rt>たちきれ</rt></ruby>や糸や<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>やが順序なく<ruby><rb>四面</rb><rt>あたり</rt></ruby>に乱れている。女物の美しい色に、<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>の光が明かに照り渡った。<date when="--09">九月</date>中旬の夜は<ruby><rb>更</rb><rt>ふ</rt></ruby>けて、<ruby><rb>稍々</rb><rt>やや</rt></ruby><ruby><rb>肌</rb><rt>はだ</rt></ruby>寒く、裏の土手下を<placeName ref="#kobu">甲武</placeName>の貨物汽車がすさまじい地響を立てて通る。</p>
+        <p>下駄の音がする<ruby><rb>度</rb><rt>たび</rt></ruby>に、今度こそは！　今度こそは！　と待渡ったが、十一時が打って間もなく、小きざみな、軽い<ruby><rb>後歯</rb><rt>あとば</rt></ruby>の音が静かな夜を遠く響いて来た。</p>
+        <p>「今度のこそ、<persName ref="#yoshiko">芳子</persName>さんですよ」</p>
+        <p>と姉は言った。</p>
+        <p>果してその足音が家の入口の前に留って、がらがらと<ruby><rb>格子</rb><rt>こうし</rt></ruby>が開く。</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さん？」</p>
+        <p>「ええ」</p>
+        <p>と<ruby><rb>艶</rb><rt>あで</rt></ruby>やかな声がする。</p>
+        <p>玄関から<ruby><rb>丈</rb><rt>たけ</rt></ruby>の高い<ruby><rb>庇髪</rb><rt>ひさしがみ</rt></ruby>の美しい姿がすっと入って来たが、</p>
+        <p>「あら、まア、先生！」</p>
+        <p>と声を立てた。その声には<ruby><rb>驚愕</rb><rt>おどろき</rt></ruby>と当惑の調子が十分に<ruby><rb>籠</rb><rt>こも</rt></ruby>っていた。</p>
+        <p>「大変遅くなって……」と言って、座敷と居間との間の<ruby><rb>閾</rb><rt>しきい</rt></ruby>の処に来て、半ば坐って、ちらりと電光のように<persName ref="#tokio">時雄</persName>の<ruby><rb>顔色</rb><rt>かおつき</rt></ruby>を<ruby><rb>窺</rb><rt>うかが</rt></ruby>ったが、すぐ紫の<ruby><rb>袱紗</rb><rt>ふくさ</rt></ruby>に何か包んだものを出して、黙って姉の方に<ruby><rb>押遣</rb><rt>おしや</rt></ruby>った。</p>
+        <p>「何ですか……お<ruby><rb>土産</rb><rt>みやげ</rt></ruby>？　いつもお気の毒ね？」</p>
+        <p>「いいえ、私も召上るんですもの」</p>
+        <p>と<persName ref="#yoshiko">芳子</persName>は快活に言った。そして次の間へ行こうとしたのを、無理に<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>の明るい<ruby><rb>眩</rb><rt>まぶ</rt></ruby>しい居間の<ruby><rb>一隅</rb><rt>かたすみ</rt></ruby>に坐らせた。美しい姿、当世流の<ruby><rb>庇髪</rb><rt>ひさしがみ</rt></ruby>、派手なネルにオリイヴ色の夏帯を形よく<ruby><rb>緊</rb><rt>し</rt></ruby>めて、少し<ruby><rb>斜</rb><rt>はす</rt></ruby>に坐った艶やかさ。<persName ref="#tokio">時雄</persName>はその姿と相対して、一種<ruby><rb>状</rb><rt>じょう</rt></ruby>すべからざる満足を胸に感じ、今までの<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>と苦痛とを半ば忘れて了った。有力な敵があっても、その恋人をだに占領すれば、それで心の安まるのは恋する者の常態である。</p>
+        <p>「大変に遅くなって了って……」</p>
+        <p>いかにも<ruby><rb>遣瀬</rb><rt>やるせ</rt></ruby>ないというように<ruby><rb>微</rb><rt>かす</rt></ruby>かに弁解した。</p>
+        <p>「<placeName ref="#nakano">中野</placeName>へ散歩に行ったッて？」</p>
+        <p><persName ref="#tokio">時雄</persName>は突如として問うた。</p>
+        <p>「ええ……」<persName ref="#yoshiko">芳子</persName>は<persName ref="#tokio">時雄</persName>の顔色をまたちらりと見た。</p>
+        <p>姉は茶を<ruby><rb>淹</rb><rt>い</rt></ruby>れる。土産の包を開くと、姉の好きな好きなシュウクリーム。これはマアお<ruby><rb>旨</rb><rt>い</rt></ruby>しいと姉の声。で、<ruby><rb>暫</rb><rt>しばら</rt></ruby>く一座はそれに気を取られた。</p>
+        <p><ruby><rb>少時</rb><rt>しばらく</rt></ruby>してから、<persName ref="#yoshiko">芳子</persName>が、</p>
+        <p>「先生、私の帰るのを待っていて下さったの？」</p>
+        <p>「ええ、ええ、一時間半位待ったのよ」</p>
+        <p>と姉が<ruby><rb>傍</rb><rt>そば</rt></ruby>から言った。</p>
+        <p>で、その話が出て、都合さえよくば今夜からでも――荷物は後からでも好いから――一緒に<ruby><rb>伴</rb><rt>つ</rt></ruby>れて行く積りで来たということを話した。<persName ref="#yoshiko">芳子</persName>は下を向いて、<ruby><rb>点頭</rb><rt>うなず</rt></ruby>いて聞いていた。無論、その胸には一種の圧迫を感じたに相違ないけれど、<persName ref="#yoshiko">芳子</persName>の心にしては、絶対に信頼して――今回の恋のことにも全心を挙げて同情してくれた師の家に行って住むことは別に<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>しい苦痛でも無かった。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ以前からこの昔風の家に同居しているのを不快に思って、出来るならば、初めのように先生の家にと願っていたのであるから、今の場合でなければ、かえって<ruby><rb>大</rb><rt>おおい</rt></ruby>に喜んだのであろうに……</p>
+        <p><persName ref="#tokio">時雄</persName>は一刻も早くその恋人のことを<ruby><rb>聞糺</rb><rt>ききただ</rt></ruby>したかった。今、その男は<ruby><rb>何処</rb><rt>どこ</rt></ruby>にいる？　<ruby><rb>何時</rb><rt>いつ</rt></ruby><placeName ref="#kyoto">京都</placeName>に帰るか？　これは<persName ref="#tokio">時雄</persName>に取っては実に重大な問題であった。けれど何も知らぬ姉の前で、打明けて問う訳にも行かぬので、この夜は露ほどもそのことを口に出さなかった。一座は平凡な物語に<ruby><rb>更</rb><rt>ふ</rt></ruby>けた。</p>
+        <p>今夜にもと<persName ref="#tokio">時雄</persName>の言出したのを、だって、もう十二時だ、明日にした方が<ruby><rb>宜</rb><rt>よ</rt></ruby>かろうとの姉の注意。で、<persName ref="#tokio">時雄</persName>は一人で<placeName ref="#ushigome">牛込</placeName>に帰ろうとしたが、どうも不安心で為方がないような気がしたので、夜の更けたのを口実に、姉の家に泊って、明朝早く一緒に行くことにした。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は八畳に、<persName ref="#tokio">時雄</persName>は六畳に姉と床を並べて寝た。やがて姉の小さい<ruby><rb>鼾</rb><rt>いびき</rt></ruby>が聞えた。時計は一時をカンと鳴った。八畳では寝つかれぬと覚しく、おりおり高い<ruby><rb>長大息</rb><rt>ためいき</rt></ruby>の<ruby><rb>気勢</rb><rt>けはい</rt></ruby>がする。<placeName ref="#kobu">甲武</placeName>の貨物列車が<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい地響を立てて、この深夜を<ruby><rb>独</rb><rt>ひと</rt></ruby>り通る。<persName ref="#tokio">時雄</persName>も久しく眠られなかった。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>五</head>
+        <p>翌朝<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>を自宅に伴った。二人になるより早く、<persName ref="#tokio">時雄</persName>は昨日の消息を知ろうと思ったけれど、<persName ref="#yoshiko">芳子</persName>が<ruby><rb>低頭勝</rb><rt>うつむきがち</rt></ruby>に<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>として後について来るのを見ると、何となく<ruby><rb>可哀</rb><rt>かわい</rt></ruby>そうになって、胸に<ruby><rb>苛々</rb><rt>いらいら</rt></ruby>する思を畳みながら、黙して歩いた。</p>
+        <p><placeName ref="#sanaizaka">佐内坂</placeName>を登り<ruby><rb>了</rb><rt>おわ</rt></ruby>ると、人通りが少くなった。<persName ref="#tokio">時雄</persName>はふと振返って、「それでどうしたの？」と突如として<ruby><rb>訊</rb><rt>たず</rt></ruby>ねた。</p>
+        <p>「え？」</p>
+        <p>反問した<persName ref="#yoshiko">芳子</persName>は顔を曇らせた。</p>
+        <p>「昨日の話さ、まだ居るのかね」</p>
+        <p>「今夜の六時の急行で帰ります」</p>
+        <p>「それじゃ送って行かなくってはいけないじゃないか」</p>
+        <p>「いいえ、もう好いんですの」</p>
+        <p>これで話は途絶えて、二人は黙って歩いた。</p>
+        <p><placeName ref="#yaraicho">矢来町</placeName>の<persName ref="#tokio">時雄</persName>の宅、今まで物置にしておいた二階の三畳と六畳、これを<ruby><rb>綺麗</rb><rt>きれい</rt></ruby>に掃除して、<persName ref="#yoshiko">芳子</persName>の<ruby><rb>住居</rb><rt>すまい</rt></ruby>とした。久しく物置――子供の遊び場にしておいたので、<ruby><rb>塵埃</rb><rt>ちり</rt></ruby>が山のように積っていたが、<ruby><rb>箒</rb><rt>ほうき</rt></ruby>をかけ<ruby><rb>雑巾</rb><rt>ぞうきん</rt></ruby>をかけ、雨のしみの附いた破れた障子を<ruby><rb>貼</rb><rt>は</rt></ruby>り更えると、こうも変るものかと思われるほど明るくなって、裏の酒井の<ruby><rb>墓塋</rb><rt>はか</rt></ruby>の大樹の<ruby><rb>繁茂</rb><rt>しげり</rt></ruby>が心地よき<ruby><rb>空翠</rb><rt>みどり</rt></ruby>をその一室に<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>らした。隣家の<ruby><rb>葡萄棚</rb><rt>ぶどうだな</rt></ruby>、打捨てて手を入れようともせぬ庭の雑草の中に美人草の美しく交って咲いているのも今更に目につく。<persName ref="#tokio">時雄</persName>はさる画家の描いた朝顔の<ruby><rb>幅</rb><rt>ふく</rt></ruby>を選んで床に懸け、<ruby><rb>懸花瓶</rb><rt>けんかびん</rt></ruby>には<ruby><rb>後</rb><rt>おく</rt></ruby>れ<ruby><rb>咲</rb><rt>ざき</rt></ruby>の<ruby><rb>薔薇</rb><rt>ばら</rt></ruby>の花を<ruby><rb>揷</rb><rt>さ</rt></ruby>した。<ruby><rb>午頃</rb><rt>ひるごろ</rt></ruby>に荷物が着いて、大きな<ruby><rb>支那鞄</rb><rt>しなかばん</rt></ruby>、<ruby><rb>柳行李</rb><rt>やなぎごうり</rt></ruby>、信玄袋、本箱、机、夜具、これを二階に運ぶのには中々骨が折れる。<persName ref="#tokio">時雄</persName>はこの手伝いに一日社を休むべく余儀なくされたのである。</p>
+        <p>机を南の窓の下、本箱をその左に、上に鏡やら<ruby><rb>紅皿</rb><rt>べにざら</rt></ruby>やら<ruby><rb>罎</rb><rt>びん</rt></ruby>やらを順序よく並べた。押入の一方には支那鞄、柳行李、<ruby><rb>更紗</rb><rt>さらさ</rt></ruby>の<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>夜具の一組を他の一方に入れようとした時、女の<ruby><rb>移香</rb><rt>うつりが</rt></ruby>が鼻を<ruby><rb>撲</rb><rt>う</rt></ruby>ったので、<persName ref="#tokio">時雄</persName>は変な気になった。</p>
+        <p>午後二時頃には一室が<ruby><rb>一先</rb><rt>ひとま</rt></ruby>ず<ruby><rb>整頓</rb><rt>せいとん</rt></ruby>した。</p>
+        <p>「どうです、<ruby><rb>此処</rb><rt>ここ</rt></ruby>も居心は悪くないでしょう」<persName ref="#tokio">時雄</persName>は得意そうに笑って、「此処に居て、まア<ruby><rb>緩</rb><rt>ゆっ</rt></ruby>くり勉強するです。本当に実際問題に触れてつまらなく苦労したって為方がないですからねえ」</p>
+        <p>「え……」と<persName ref="#yoshiko">芳子</persName>は頭を垂れた。</p>
+        <p>「後で詳しく聞きましょうが、今の<ruby><rb>中</rb><rt>うち</rt></ruby>は二人共じっとして勉強していなくては、為方がないですからね」</p>
+        <p>「え……」と言って、<persName ref="#yoshiko">芳子</persName>は顔を挙げて、「それで先生、私達もそう思って、今はお互に勉強して、将来に希望を持って、親の<ruby><rb>許諾</rb><rt>ゆるし</rt></ruby>をも得たいと存じておりますの！」</p>
+        <p>「それが好いです。今、余り騒ぐと、人にも親にも誤解されて了って、折角の真面目な希望も遂げられなくなりますから」</p>
+        <p>「ですから、ね、先生、私は一心になって勉強しようと思いますの。<persName ref="#hideo">田中</persName>もそう申しておりました。それから、先生に是非お目にかかってお礼を申上げなければ済まないと申しておりましたけれど……よく申上げてくれッて……」</p>
+        <p>「いや……」</p>
+        <p><persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>の言葉の中に、「私共」と複数を<ruby><rb>遣</rb><rt>つか</rt></ruby>うのと、もう公然<ruby><rb>許嫁</rb><rt>いいなずけ</rt></ruby>の約束でもしたかのように言うのとを不快に思った。まだ、十九か二十の妙齢の処女が、こうした言葉を口にするのを怪しんだ。<persName ref="#tokio">時雄</persName>は時代の<ruby><rb>推移</rb><rt>おしうつ</rt></ruby>ったのを今更のように感じた。当世の女学生<ruby><rb>気質</rb><rt>かたぎ</rt></ruby>のいかに自分等の恋した時代の処女気質と異っているかを思った。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>、この女学生気質を<persName ref="#tokio">時雄</persName>は主義の上、趣味の上から喜んで見ていたのは事実である。昔のような教育を受けては、到底今の明治の男子の妻としては立って行かれぬ。女子も立たねばならぬ、意志の力を十分に養わねばならぬとはかれの持論である。この持論をかれは<persName ref="#yoshiko">芳子</persName>に向っても<ruby><rb>尠</rb><rt>すくな</rt></ruby>からず鼓吹した。けれどこの新派のハイカラの実行を見てはさすがに<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を<ruby><rb>顰</rb><rt>ひそ</rt></ruby>めずにはいられなかった。</p>
+        <p>男からは<placeName ref="#kozu-machi"><ruby><rb>国府津</rb><rt>こうづ</rt></ruby></placeName>の消印で帰途に<ruby><rb>就</rb><rt>つ</rt></ruby>いたという<ruby><rb>端書</rb><rt>はがき</rt></ruby>が着いて翌日<placeName ref="#dote-sanbancho">三番町</placeName>の姉の家から届けて来た。居間の二階には<persName ref="#yoshiko">芳子</persName>が居て、呼べば直ぐ返事をして下りて来る。食事には三度三度膳を並べて<ruby><rb>団欒</rb><rt>だんらん</rt></ruby>して食う。夜は明るい<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>を取巻いて、<ruby><rb>賑</rb><rt>にぎ</rt></ruby>わしく面白く語り合う。靴下は編んでくれる。美しい笑顔を絶えず見せる。<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>を全く占領して、とにかく安心もし満足もした。細君も<persName ref="#yoshiko">芳子</persName>に恋人があるのを知ってから、危険の念、不安の念を全く去った。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は恋人に別れるのが<ruby><rb>辛</rb><rt>つら</rt></ruby>かった。成ろうことなら一緒に<placeName ref="#tokyo">東京</placeName>に居て、時々顔をも見、言葉をも交えたかった。けれど今の際それは出来難いことを知っていた。二年、三年、男が<placeName ref="#doshisha">同志社</placeName>を卒業するまでは、たまさかの<ruby><rb>雁</rb><rt>かり</rt></ruby>の<ruby><rb>音信</rb><rt>おとずれ</rt></ruby>をたよりに、一心不乱に勉強しなければならぬと思った。で、午後からは、以前の如く<placeName ref="#kojimachi"><ruby><rb>麹町</rb><rt>こうじまち</rt></ruby></placeName>の某英学塾に通い、<persName ref="#tokio">時雄</persName>も<placeName ref="#koishikawa">小石川</placeName>の社に通った。</p>
+        <p><persName ref="#tokio">時雄</persName>は夜などおりおり<persName ref="#yoshiko">芳子</persName>を自分の書斎に呼んで、文学の話、小説の話、それから恋の話をすることがある。そして<persName ref="#yoshiko">芳子</persName>の為めにその将来の注意を与えた。その時の態度は公平で、率直で、同情に富んでいて、決して泥酔して<ruby><rb>厠</rb><rt>かわや</rt></ruby>に寝たり、地上に横たわったりした人とは思われない。さればと言って、<persName ref="#tokio">時雄</persName>はわざとそういう態度にするのではない、女に<ruby><rb>対</rb><rt>むか</rt></ruby>っている<ruby><rb>刹那</rb><rt>せつな</rt></ruby>――その愛した女の歓心を得るには、いかなる犠牲も甚だ高価に過ぎなかった。</p>
+        <p>で、<persName ref="#yoshiko">芳子</persName>は師を信頼した。時期が来て、父母にこの恋を告ぐる時、旧思想と新思想と衝突するようなことがあっても、この恵深い師の承認を得さえすればそれで沢山だとまで思った。</p>
+        <p><date when="--09">九月</date>は<date when="--10">十月</date>になった。さびしい風が裏の森を鳴らして、空の色は深く<ruby><rb>碧</rb><rt>あお</rt></ruby>く、日の光は<ruby><rb>透通</rb><rt>すきとお</rt></ruby>った空気に<ruby><rb>射渡</rb><rt>さしわた</rt></ruby>って、夕の影が濃くあたりを<ruby><rb>隈</rb><rt>くま</rt></ruby>どるようになった。取り残した<ruby><rb>芋</rb><rt>いも</rt></ruby>の葉に雨は終日<ruby><rb>降頻</rb><rt>ふりしき</rt></ruby>って、<ruby><rb>八百屋</rb><rt>やおや</rt></ruby>の店には<ruby><rb>松茸</rb><rt>まつたけ</rt></ruby>が並べられた。垣の虫の声は露に衰えて、庭の<ruby><rb>桐</rb><rt>きり</rt></ruby>の葉も<ruby><rb>脆</rb><rt>もろ</rt></ruby>くも落ちた。午前の中の一時間、九時より十時までを、<persName ref="#turgenev">ツルゲネーフ</persName>の小説の解釈、<persName ref="#yoshiko">芳子</persName>は師のかがやく眼の下に、机に<ruby><rb>斜</rb><rt>はす</rt></ruby>に坐って、「オン、ゼ、イブ」の長い長い物語に耳を傾けた。<persName ref="#elene">エレネ</persName>の感情に<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく意志の強い性格と、その悲しい悲壮なる末路とは<ruby><rb>如何</rb><rt>いか</rt></ruby>にかの女を動かしたか。<persName ref="#yoshiko">芳子</persName>は<persName ref="#elene">エレネ</persName>の恋物語を自分に引くらべて、その身を小説の中に置いた。恋の運命、恋すべき人に恋する機会がなく、思いも懸けぬ人にその一生を任した運命、実際<persName ref="#yoshiko">芳子</persName>の当時の心情そのままであった。<placeName ref="#suma">須磨</placeName>の浜で、ゆくりなく受取った<ruby><rb>百合</rb><rt>ゆり</rt></ruby>の花の一葉の端書、それがこうした運命になろうとは夢にも思い知らなかったのである。</p>
+        <p>雨の森、闇の森、月の森に向って、<persName ref="#yoshiko">芳子</persName>はさまざまにその事を思った。<placeName ref="#kyoto">京都</placeName>の夜汽車、<placeName ref="#saga"><ruby><rb>嵯峨</rb><rt>さが</rt></ruby></placeName>の月、<placeName ref="#zeze"><ruby><rb>膳所</rb><rt>ぜぜ</rt></ruby></placeName>に遊んだ時には湖水に夕日が美しく射渡って、旅館の中庭に、<ruby><rb>萩</rb><rt>はぎ</rt></ruby>が絵のように咲乱れていた。その二日の遊は実に夢のようであったと思った。続いてまだその人を恋せぬ前のこと、<placeName ref="#suma">須磨</placeName>の海水浴、故郷の山の中の月、病気にならぬ以前、<ruby><rb>殊</rb><rt>こと</rt></ruby>にその時の<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>を考えると、<ruby><rb>頬</rb><rt>ほお</rt></ruby>がおのずから<ruby><rb>赧</rb><rt>あか</rt></ruby>くなった。</p>
+        <p>空想から空想、その空想はいつか長い手紙となって<placeName ref="#kyoto">京都</placeName>に行った。<placeName ref="#kyoto">京都</placeName>からも<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど隔日のように厚い厚い封書が届いた。書いても書いても尽くされぬ二人の情――余りその文通の<ruby><rb>頻繁</rb><rt>ひんぱん</rt></ruby>なのに<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>の不在を<ruby><rb>窺</rb><rt>うかが</rt></ruby>って、監督という口実の下にその良心を抑えて、こっそり机の<ruby><rb>抽出</rb><rt>ひきだし</rt></ruby>やら<ruby><rb>文箱</rb><rt>ふばこ</rt></ruby>やらをさがした。捜し出した二三通の男の手紙を走り読みに読んだ。</p>
+        <p>恋人のするような甘ったるい言葉は到る処に満ちていた。けれど<persName ref="#tokio">時雄</persName>はそれ以上にある秘密を捜し出そうと苦心した。<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>の<ruby><rb>痕</rb><rt>あと</rt></ruby>、性慾の痕が何処かに<ruby><rb>顕</rb><rt>あら</rt></ruby>われておりはせぬか。神聖なる恋以上に二人の間は進歩しておりはせぬか、けれど手紙にも解らぬのは恋のまことの消息であった。</p>
+        <p>一カ月は過ぎた。</p>
+        <p>ところが、ある日、<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>に宛てた一通の端書を受取った。英語で書いてある端書であった。何気なく読むと、一月ほどの生活費は準備して行く、あとは<placeName ref="#tokyo">東京</placeName>で衣食の職業が見附かるかどうかという意味、<placeName ref="#kyoto">京都</placeName><persName ref="#hideo">田中</persName>としてあった。<persName ref="#tokio">時雄</persName>は胸を<ruby><rb>轟</rb><rt>とどろ</rt></ruby>かした。平和は一時にして破れた。</p>
+        <p><ruby><rb>晩餐</rb><rt>ばんさん</rt></ruby>後、<persName ref="#yoshiko">芳子</persName>はその事を問われたのである。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は困ったという風で、「先生、本当に困って<ruby><rb>了</rb><rt>しま</rt></ruby>ったんですの。<persName ref="#hideo">田中</persName>が<placeName ref="#tokyo">東京</placeName>に出て来ると云うのですもの、私は二度、三度まで止めて遣ったんですけれど、何だか、宗教に従事して、虚偽に生活してることが、今度の動機で、すっかり<ruby><rb>厭</rb><rt>いや</rt></ruby>になって了ったとか何とかで、どうしても<placeName ref="#tokyo">東京</placeName>に出て来るッて言うんですよ」</p>
+        <p>「<placeName ref="#tokyo">東京</placeName>に来て、何をするつもりなんだ？」</p>
+        <p>「文学を遣りたいと――」</p>
+        <p>「文学？　文学ッて、何だ。小説を書こうと言うのか」</p>
+        <p>「え、そうでしょう……」</p>
+        <p>「馬鹿な！」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は一<ruby><rb>喝</rb><rt>かつ</rt></ruby>した。</p>
+        <p>「本当に困って了うんですの」</p>
+        <p>「<ruby><rb>貴嬢</rb><rt>あなた</rt></ruby>はそんなことを勧めたんじゃないか」</p>
+        <p>「いいえ」と烈しく首を振って、「私はそんなこと……私は今の場合困るから、せめて<placeName ref="#doshisha">同志社</placeName>だけでも卒業してくれッて、この間初めに申して来た時に<ruby><rb>達</rb><rt>た</rt></ruby>って止めて遣ったんですけれど……もうすっかり独断でそうして了ったんですッて。今更取かえしがつかぬようになって了ったんですッて」</p>
+        <p>「どうして？」</p>
+        <p>「<placeName ref="#kobe">神戸</placeName>の信者で、<placeName ref="#kobe">神戸</placeName>の教会の為めに、<persName ref="#hideo">田中</persName>に学資を出してくれている<persName ref="#kozu"><ruby><rb>神津</rb><rt>こうづ</rt></ruby></persName>という人があるのですの。その人に、<persName ref="#hideo">田中</persName>が宗教は自分には出来ぬから、将来文学で立とうと思う。どうか<placeName ref="#tokyo">東京</placeName>に出してくれと言って遣ったんですの。すると大層怒って、それならもう構わぬ、勝手にしろと言われて、すっかり支度をしてしまったんですって、本当に困って了いますの」</p>
+        <p>「馬鹿な！」</p>
+        <p>と言ったが、「今一度留めて遣んなさい。小説で立とうなんて思ったッて、とても駄目だ、全く空想だ、空想の極端だ。それに、<persName ref="#hideo">田中</persName>が<ruby><rb>此方</rb><rt>こっち</rt></ruby>に出て来ていては、貴嬢の監督上、私が非常に困る。貴嬢の世話も出来んようになるから、<ruby><rb>厳</rb><rt>きび</rt></ruby>しく止めて遣んなさい！」</p>
+        <p><persName ref="#yoshiko">芳子</persName>は<ruby><rb>愈〻</rb><rt>いよいよ</rt></ruby>困ったという風で、「止めてはやりますけれど、手紙が行違いになるかも知れませんから」</p>
+        <p>「行違い？　それじゃもう来るのか」</p>
+        <p><persName ref="#tokio">時雄</persName>は眼を<ruby><rb>睜</rb><rt>みは</rt></ruby>った。</p>
+        <p>「今来た手紙に、もう手紙をよこしてくれても行違いになるからと言ってよこしたんですから」</p>
+        <p>「今来た手紙ッて、さっきの端書の又後に来たのか」</p>
+        <p><persName ref="#yoshiko">芳子</persName>は<ruby><rb>点頭</rb><rt>うなず</rt></ruby>いた。</p>
+        <p>「困ったね。だから若い空想家は駄目だと言うんだ」</p>
+        <p>平和は再び<ruby><rb>攪乱</rb><rt>かきみだ</rt></ruby>さるることとなった。</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>六</head>
+        <p>一日置いて今夜の六時に<placeName ref="#shimbashi">新橋</placeName>に着くという電報があった。電報を持って、<persName ref="#yoshiko">芳子</persName>はまごまごしていた。けれど夜ひとり若い女を出して遣る訳に行かぬので、<placeName ref="#shimbashi">新橋</placeName>へ迎えに行くことは許さなかった。</p>
+        <p>翌日は逢って<ruby><rb>達</rb><rt>た</rt></ruby>って<ruby><rb>諌</rb><rt>いさ</rt></ruby>めてどうしても<placeName ref="#kyoto">京都</placeName>に<ruby><rb>還</rb><rt>かえ</rt></ruby>らせるようにすると言って、<persName ref="#yoshiko">芳子</persName>はその恋人の<ruby><rb>許</rb><rt>もと</rt></ruby>を<ruby><rb>訪</rb><rt>と</rt></ruby>うた。その男は停車場前の<placeName ref="#tsuruya">つるや</placeName>という<ruby><rb>旅館</rb><rt>はたごや</rt></ruby>に<ruby><rb>宿</rb><rt>とま</rt></ruby>っているのである。</p>
+        <p><persName ref="#tokio">時雄</persName>が社から帰った時には、まだとても帰るまいと思った<persName ref="#yoshiko">芳子</persName>が既にその笑顔を玄関にあらわしていた。聞くと<persName ref="#hideo">田中</persName>は既にこうして出て来た以上、どうしても<placeName ref="#kyoto">京都</placeName>には帰らぬとのことだ。で、<persName ref="#yoshiko">芳子</persName>は<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>をするまでに争ったが、矢張<ruby><rb>断</rb><rt>だん</rt></ruby>として<ruby><rb>可</rb><rt>き</rt></ruby>かぬ。先生を<ruby><rb>頼</rb><rt>たよ</rt></ruby>りにして出京したのではあるが、そう聞けば、なるほど<ruby><rb>御尤</rb><rt>ごもっとも</rt></ruby>である。監督上都合の悪いというのもよく解りました。けれど今更帰れませぬから、自分で<ruby><rb>如何</rb><rt>いか</rt></ruby>ようにしても自活の道を求めて目的地に進むより<ruby><rb>他</rb><rt>ほか</rt></ruby>はないとまで言ったそうだ。<persName ref="#tokio">時雄</persName>は不快を感じた。</p>
+        <p><persName ref="#tokio">時雄</persName>は一時は勝手にしろと思った。放っておけとも思った。けれど圏内の一員たるかれにどうして全く<ruby><rb>風馬牛</rb><rt>ふうばぎゅう</rt></ruby>たることを得ようぞ。<persName ref="#yoshiko">芳子</persName>はその後二三日訪問した形跡もなく、学校の時間には正確に帰って来るが、学校に行くと称して恋人の許に寄りはせぬかと思うと、胸は疑惑と<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>とに燃えた。</p>
+        <p><persName ref="#tokio">時雄</persName>は<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>した。その心は日に幾遍となく変った。ある時は全く犠牲になって二人の為めに尽そうと思った。ある時はこの<ruby><rb>一伍一什</rb><rt>いちぶしじゅう</rt></ruby>を国に報じて一挙に破壊して了おうかと思った。けれどこの<ruby><rb>何</rb><rt>いず</rt></ruby>れをも<ruby><rb>敢</rb><rt>あえ</rt></ruby>てすることの出来ぬのが今の心の状態であった。</p>
+        <p>細君が、ふと、<persName ref="#tokio">時雄</persName>に<ruby><rb>耳語</rb><rt>じご</rt></ruby>した。</p>
+        <p>「あなた、二階では、これよ」と針で着物を縫う<ruby><rb>真似</rb><rt>まね</rt></ruby>をして、小声で、「きっと……上げるんでしょう。<ruby><rb>紺絣</rb><rt>こんがすり</rt></ruby>の書生羽織！　白い木綿の長い<ruby><rb>紐</rb><rt>ひも</rt></ruby>も買ってありますよ」</p>
+        <p>「本当か？」</p>
+        <p>「え」</p>
+        <p>と細君は笑った。</p>
+        <p><persName ref="#tokio">時雄</persName>は笑うどころではなかった。</p>
+        <p><persName ref="#yoshiko">芳子</persName>が今日は先生少し遅くなりますからと顔を<ruby><rb>赧</rb><rt>あか</rt></ruby>くして言った。「<ruby><rb>彼処</rb><rt>あすこ</rt></ruby>に行くのか」と問うと、「いいえ！　<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>友達の処に用があって寄って来ますから」</p>
+        <p>その夕暮、<persName ref="#tokio">時雄</persName>は思切って、<persName ref="#yoshiko">芳子</persName>の恋人の下宿を訪問した。</p>
+        <p>「まことに、先生にはよう申訳がありまえんのやけれど……」長い演説調の雄弁で、形式的の申訳をした後、<persName ref="#hideo">田中</persName>という<ruby><rb>中脊</rb><rt>ちゅうぜい</rt></ruby>の、少し肥えた、色の白い男が<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>をする時のような眼色をして、さも同情を求めるように言った。</p>
+        <p><persName ref="#tokio">時雄</persName>は熱していた。「<ruby><rb>然</rb><rt>しか</rt></ruby>し、君、解ったら、そうしたら好いじゃありませんか、僕は君等の将来を思って言うのです。<persName ref="#yoshiko">芳子</persName>は僕の<ruby><rb>弟子</rb><rt>でし</rt></ruby>です。僕の責任として、<persName ref="#yoshiko">芳子</persName>に廃学させるには忍びん。君が<placeName ref="#tokyo">東京</placeName>にどうしてもいると言うなら、<persName ref="#yoshiko">芳子</persName>を国に帰すか、この関係を父母に打明けて許可を<ruby><rb>乞</rb><rt>こ</rt></ruby>うか、二つの中一つを選ばんければならん。君は君の愛する女を君の為めに山の中に埋もらせるほどエゴイスチックな人間じゃありますまい。君は宗教に従事することが今度の事件の為めに<ruby><rb>厭</rb><rt>いや</rt></ruby>になったと<ruby><rb>謂</rb><rt>い</rt></ruby>うが、それは一種の考えで、君は忍んで、<placeName ref="#kyoto">京都</placeName>に居りさえすれば、万事円満に、二人の間柄も将来希望があるのですから」</p>
+        <p>「よう解っております……」</p>
+        <p>「けれど出来んですか」</p>
+        <p>「どうも済みませんけど……制服も帽子も売ってしもうたで、今更帰るにも帰れまえんという次第で……」</p>
+        <p>「それじゃ<persName ref="#yoshiko">芳子</persName>を国に帰すですか」</p>
+        <p>かれは黙っている。</p>
+        <p>「国に言って遣りましょうか」</p>
+        <p>矢張黙っていた。</p>
+        <p>「私の<placeName ref="#tokyo">東京</placeName>に参りましたのは、そういうことには<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ関係しない<ruby><rb>積</rb><rt>つもり</rt></ruby>でおます。別段こちらに居りましても、二人の間にはどうという……」</p>
+        <p>「それは君はそう言うでしょう。けれど、それでは私は監督は出来ん。恋はいつ<ruby><rb>惑溺</rb><rt>わくでき</rt></ruby>するかも解らん」</p>
+        <p>「私はそないなことは無いつもりですけどナ」</p>
+        <p>「誓い得るですか」</p>
+        <p>「静かに、勉強して行かれさえすれァナ、そないなことありませんけどナ」</p>
+        <p>「だから困るのです」</p>
+        <p>こういう会話――要領を得ない会話を繰返して長く相対した。<persName ref="#tokio">時雄</persName>は将来の希望という点、男子の犠牲という点、事件の進行という点からいろいろさまざまに帰国を勧めた。<persName ref="#tokio">時雄</persName>の眼に映じた<persName ref="#hideo">田中秀夫</persName>は、想像したような一箇秀麗な<ruby><rb>丈夫</rb><rt>じょうふ</rt></ruby>でもなく天才肌の人とも見えなかった。<placeName ref="#kojimachi"><ruby><rb>麹町</rb><rt>こうじまち</rt></ruby></placeName><placeName ref="#dote-sanbancho">三番町</placeName>通の<ruby><rb>安</rb><rt>やす</rt></ruby><ruby><rb>旅人宿</rb><rt>はたご</rt></ruby>、三方壁でしきられた暑い室に初めて相対した時、<ruby><rb>先</rb><rt>ま</rt></ruby>ずかれの身に迫ったのは、<ruby><rb>基督</rb><rt>キリスト</rt></ruby>教に養われた、いやに取澄ました、年に似合わぬ老成な、厭な不愉快な態度であった。<placeName ref="#kyoto">京都</placeName><ruby><rb>訛</rb><rt>なまり</rt></ruby>の言葉、色の白い顔、やさしいところはいくらかはあるが、多い青年の中からこうした男を特に選んだ<persName ref="#yoshiko">芳子</persName>の気が知れなかった。殊に<persName ref="#tokio">時雄</persName>が最も厭に感じたのは、天真流露という率直なところが<ruby><rb>微塵</rb><rt>みじん</rt></ruby>もなく、自己の罪悪にも弱点にも<ruby><rb>種々</rb><rt>いろいろ</rt></ruby>の理由を<ruby><rb>強</rb><rt>し</rt></ruby>いてつけて、これを弁解しようとする形式的態度であった。とは言え、実を言えば、<persName ref="#tokio">時雄</persName>の激しい<ruby><rb>頭脳</rb><rt>あたま</rt></ruby>には、それがすぐ直覚的に明かに映ったと云うではなく、座敷の<ruby><rb>隅</rb><rt>すみ</rt></ruby>に置かれた小さい<ruby><rb>旅鞄</rb><rt>たびかばん</rt></ruby>や<ruby><rb>憐</rb><rt>あわ</rt></ruby>れにもしおたれた白地の<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>などを見ると、青年空想の昔が思い出されて、こうした恋の為め、<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>もし、懊悩もしているかと思って、<ruby><rb>憐憫</rb><rt>れんびん</rt></ruby>の情も起らぬではなかった。</p>
+        <p>この暑い一室に相対して、<ruby><rb>趺坐</rb><rt>あぐら</rt></ruby>をもかかず、二人は<ruby><rb>尠</rb><rt>すくな</rt></ruby>くとも一時間以上語った。話は遂に要領を得なかった。「先ず今一度考え直して見給え」くらいが最後で、<persName ref="#tokio">時雄</persName>は別れて帰途に就いた。</p>
+        <p>何だか馬鹿らしいような気がした。愚なる行為をしたように感じられて、自らその身を<ruby><rb>嘲笑</rb><rt>ちょうしょう</rt></ruby>した。心にもないお世辞をも言い、自分の胸の底の秘密を<ruby><rb>蔽</rb><rt>おお</rt></ruby>う為めには、二人の恋の温情なる保護者となろうとまで言ったことを思い出した。安<ruby><rb>飜訳</rb><rt>ほんやく</rt></ruby>の仕事を周旋して<ruby><rb>貰</rb><rt>もら</rt></ruby>う為め、某氏に紹介の労を執ろうと言ったことをも思い出した。そして自分ながら自分の意気地なく好人物なのを<ruby><rb>罵</rb><rt>ののし</rt></ruby>った。</p>
+        <p><persName ref="#tokio">時雄</persName>は幾度か考えた。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ国に報知して遣ろうか、と。けれどそれを報知するに、どういう態度を以てしようかというのが大問題であった。二人の恋の<ruby><rb>関鍵</rb><rt>かぎ</rt></ruby>を自ら握っていると信ずるだけそれだけ<persName ref="#tokio">時雄</persName>は責任を重く感じた。その身の不当の嫉妬、不正の恋情の為めに、その愛する女の熱烈なる恋を犠牲にするには忍びぬと共に、自ら言った「温情なる保護者」として、道徳家の如く身を処するにも堪えなかった。また一方にはこの事が国に知れて<persName ref="#yoshiko">芳子</persName>が父母の為めに伴われて帰国するようになるのを恐れた。</p>
+        <p><persName ref="#yoshiko">芳子</persName>が<persName ref="#tokio">時雄</persName>の書斎に来て、頭を垂れ、声を低うして、その希望を述べたのはその翌日の夜であった。<ruby><rb>如何</rb><rt>いか</rt></ruby>に説いても男は帰らぬ。さりとて国へ報知すれば、父母の許さぬのは知れたこと、<ruby><rb>時宜</rb><rt>じぎ</rt></ruby>に<ruby><rb>由</rb><rt>よ</rt></ruby>れば<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち迎いに来ぬとも限らぬ。男も折角ああして出て来たことでもあり二人の間も世の中の男女の恋のように浅く思い浅く恋した訳でもないから、決して汚れた行為などはなく、惑溺するようなことは誓って為ない。文学は<ruby><rb>難</rb><rt>むず</rt></ruby>かしい道、小説を書いて一家を成そうとするのは<persName ref="#hideo">田中</persName>のようなものには出来ぬかも知れねど、同じく将来を進むなら、共に好む道に携わりたい。どうか<ruby><rb>暫</rb><rt>しばら</rt></ruby>くこのままにして<placeName ref="#tokyo">東京</placeName>に置いてくれとの頼み。<persName ref="#tokio">時雄</persName>はこの余儀なき頼みをすげなく<ruby><rb>却</rb><rt>しりぞ</rt></ruby>けることは出来なかった。<persName ref="#tokio">時雄</persName>は<placeName ref="#kyoto">京都</placeName><placeName ref="#saga"><ruby><rb>嵯峨</rb><rt>さが</rt></ruby></placeName>に<ruby><rb>於</rb><rt>お</rt></ruby>ける女の行為にその節操を疑ってはいるが、一方には又その弁解をも信じて、この若い二人の間にはまだそんなことはあるまいと思っていた。自分の青年の経験に照らしてみても、神聖なる霊の恋は成立っても肉の恋は決してそう容易に実行されるものではない。で、<persName ref="#tokio">時雄</persName>は惑溺せぬものならば、暫くこのままにしておいて好いと言って、そして<ruby><rb>縷々</rb><rt>るる</rt></ruby>として霊の恋愛、肉の恋愛、恋愛と人生との関係、教育ある新しい女の<ruby><rb>当</rb><rt>まさ</rt></ruby>に守るべきことなどに就いて、切実にかつ<ruby><rb>真摯</rb><rt>しんし</rt></ruby>に教訓した。古人が女子の節操を<ruby><rb>誡</rb><rt>いまし</rt></ruby>めたのは社会道徳の制裁よりは、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ女子の独立を保護する為であるということ、一度肉を男子に許せば女子の自由が全く破れるということ、西洋の女子はよくこの間の消息を解しているから、男女交際をして不都合がないということ、<placeName ref="#japan">日本</placeName>の新しい婦人も是非ともそうならなければならぬということなど<ruby><rb>主</rb><rt>おも</rt></ruby>なる教訓の題目であったが、殊に新派の女子ということに就いて痛切に語った。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は<ruby><rb>低頭</rb><rt>うつむ</rt></ruby>いてきいていた。</p>
+        <p><persName ref="#tokio">時雄</persName>は興に乗じて、</p>
+        <p>「そして一体、どうして生活しようというのです？」</p>
+        <p>「少しは準備もして来たんでしょう、一月位は好いでしょうけれど……」</p>
+        <p>「何か<ruby><rb>旨</rb><rt>うま</rt></ruby>い口でもあると好いけれど」と<persName ref="#tokio">時雄</persName>は言った。</p>
+        <p>「実は先生に<ruby><rb>御縋</rb><rt>おすが</rt></ruby>り申して、誰も知ってるものがないのに出て参りましたのですから、大層失望しましたのですけれど」</p>
+        <p>「だッて余り突飛だ。一昨日逢ってもそう思ったが、どうもあれでも困るね」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は笑った。</p>
+        <p>「どうか又御心配下さるように……この上御心配かけては申訳がありませんけれど」と<persName ref="#yoshiko">芳子</persName>は縋るようにして顔を<ruby><rb>赧</rb><rt>あから</rt></ruby>めた。</p>
+        <p>「心配せん方が好い、どうかなるよ」</p>
+        <p><persName ref="#yoshiko">芳子</persName>が出て行った後、<persName ref="#tokio">時雄</persName>は急に<ruby><rb>険</rb><rt>けわ</rt></ruby>しい難かしい顔に成った。「自分に……自分に、この恋の世話が出来るだろうか」と<ruby><rb>独</rb><rt>ひと</rt></ruby>りで胸に反問した。「若い鳥は若い鳥でなくては駄目だ。自分等はもうこの若い鳥を引く美しい羽を持っていない」こう思うと、言うに言われぬ寂しさがひしと胸を襲った。「妻と子――家庭の快楽だと人は言うが、それに何の意味がある。子供の為めに生存している妻は生存の意味があろうが、妻を子に奪われ、子を妻に奪われた夫はどうして<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>たらざるを得るか」<persName ref="#tokio">時雄</persName>はじっと<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>を見た。</p>
+        <p>机の上には<persName ref="#maupassant">モウパッサン</persName>の「死よりも強し」が開かれてあった。</p>
+        <p>二三日<ruby><rb>経</rb><rt>た</rt></ruby>って後、<persName ref="#tokio">時雄</persName>は例刻に社から帰って<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>の前に坐ると、細君が小声で、</p>
+        <p>「今日来てよ」</p>
+        <p>「誰が」</p>
+        <p>「二階の……そら<persName ref="#yoshiko">芳子</persName>さんの好い人」</p>
+        <p>細君は笑った。</p>
+        <p>「そうか……」</p>
+        <p>「今日一時頃、御免なさいと玄関に来た人があるですから、私が出て見ると、顔の丸い、<ruby><rb>絣</rb><rt>かすり</rt></ruby>の羽織を着た、<ruby><rb>白縞</rb><rt>しろしま</rt></ruby>の<ruby><rb>袴</rb><rt>はかま</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>いた書生さんが居るじゃありませんか。また、原稿でも持って来た書生さんかと思ったら、<persName ref="#yoshiko">横山さん</persName>は<ruby><rb>此方</rb><rt>こちら</rt></ruby>においでですかと言うじゃありませんか。はて、不思議だと思ったけれど、名を聞きますと、<persName ref="#hideo">田中</persName>……。はア、それでその人だナと思ったんですよ。厭な人ねえ、あんな人を、あんな書生さんを恋人にしないたッて、いくらも好いのがあるでしょうに。<persName ref="#yoshiko">芳子</persName>さんは余程物好きね。あれじゃとても望みはありませんよ」</p>
+        <p>「それでどうした？」</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さんは<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しいんでしょうけど、何だか<ruby><rb>極</rb><rt>きま</rt></ruby>りが悪そうでしたよ。私がお茶を持って行って上げると、<persName ref="#yoshiko">芳子</persName>さんは机の前に坐っている。その前にその人が居て、今まで何か話していたのを急に止して黙ってしまった。私は変だからすぐ下りて来たですがね、……何だか変ね、……今の若い人はよくああいうことが出来てね、私のその頃には男に見られるのすら恥かしくって恥かしくって<ruby><rb>為方</rb><rt>しかた</rt></ruby>がなかったものですのに……」</p>
+        <p>「時代が違うからナ」</p>
+        <p>「いくら時代が違っても、余り新派過ぎると思いましたよ。堕落書生と同じですからね。それゃうわべが似ているだけで、心はそんなことはないでしょうけれど、何だか変ですよ」</p>
+        <p>「そんなことはどうでも好い。それでどうした？」</p>
+        <p>「<persName ref="#otsuru">お鶴</persName>（下女）が行って上げると言うのに、好いと言って、御自分で出かけて、<ruby><rb>餅菓子</rb><rt>もちがし</rt></ruby>と<ruby><rb>焼芋</rb><rt>やきいも</rt></ruby>を買って来て、<ruby><rb>御馳走</rb><rt>ごちそう</rt></ruby>してよ。……<persName ref="#otsuru">お鶴</persName>も笑っていましたよ。お湯をさしに上ると、二人でお<ruby><rb>旨</rb><rt>い</rt></ruby>しそうにおさつを食べているところでしたッて……」</p>
+        <p><persName ref="#tokio">時雄</persName>も笑わざるを得なかった。</p>
+        <p>細君は<ruby><rb>猶</rb><rt>なお</rt></ruby>語り<ruby><rb>続</rb><rt>つ</rt></ruby>いだ。「そして随分長く高い声で話していましたよ。議論みたいなことも言って、<persName ref="#yoshiko">芳子</persName>さんもなかなか負けない様子でした」</p>
+        <p>「そしていつ帰った？」</p>
+        <p>「もう少し<ruby><rb>以前</rb><rt>さっき</rt></ruby>」</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>は居るか」</p>
+        <p>「いいえ、<ruby><rb>路</rb><rt>みち</rt></ruby>が分からないから、一緒に<ruby><rb>其処</rb><rt>そこ</rt></ruby>まで送って行って来るッて<ruby><rb>出懸</rb><rt>でか</rt></ruby>けて行ったんですよ」</p>
+        <p><persName ref="#tokio">時雄</persName>は顔を曇らせた。</p>
+        <p>夕飯を食っていると、裏口から<persName ref="#yoshiko">芳子</persName>が帰って来た。急いで走って来たと覚しく、せいせい息を切っている。</p>
+        <p>「<ruby><rb>何処</rb><rt>どこ</rt></ruby>まで行らしった？」</p>
+        <p>と細君が問うと、</p>
+        <p>「<placeName ref="#kagurazaka"><ruby><rb>神楽坂</rb><rt>かぐらざか</rt></ruby></placeName>まで」と答えたが、いつもする「おかえりなさいまし」を<persName ref="#tokio">時雄</persName>に向って言って、そのままばたばたと二階へ上った。すぐ下りて来るかと思うに、なかなか下りて来ない。「<persName ref="#yoshiko">芳子</persName>さん、<persName ref="#yoshiko">芳子</persName>さん」と三度ほど細君が呼ぶと、「はアーい」という長い返事が聞えて、矢張下りて来ない。<persName ref="#otsuru">お鶴</persName>が迎いに行って<ruby><rb>漸</rb><rt>ようや</rt></ruby>く二階を下りて来たが、準備した夕飯の膳を<ruby><rb>他所</rb><rt>よそ</rt></ruby>に、柱に近く、<ruby><rb>斜</rb><rt>はす</rt></ruby>に坐った。</p>
+        <p>「御飯は？」</p>
+        <p>「もう食べたくないの、<ruby><rb>腹</rb><rt>おなか</rt></ruby>が一杯で」</p>
+        <p>「余りおさつを召上った<ruby><rb>故</rb><rt>せい</rt></ruby>でしょう」</p>
+        <p>「あら、まア、<ruby><rb>酷</rb><rt>ひど</rt></ruby>い奥さん。いいわ、奥さん」</p>
+        <p>と<ruby><rb>睨</rb><rt>にら</rt></ruby>む<ruby><rb>真似</rb><rt>まね</rt></ruby>をする。</p>
+        <p>細君は笑って、</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さん、何だか変ね」</p>
+        <p>「<ruby><rb>何故</rb><rt>なぜ</rt></ruby>？」と長く引張る。</p>
+        <p>「何故も無いわ」</p>
+        <p>「いいことよ、奥さん」</p>
+        <p>と又睨んだ。</p>
+        <p><persName ref="#tokio">時雄</persName>は黙ってこの<ruby><rb>嬌態</rb><rt>きょうたい</rt></ruby>に対していた。胸の騒ぐのは無論である。不快の情はひしと押し寄せて来た。<persName ref="#yoshiko">芳子</persName>はちらと<persName ref="#tokio">時雄</persName>の顔を<ruby><rb>覗</rb><rt>うかが</rt></ruby>ったが、その<ruby><rb>不機嫌</rb><rt>ふきげん</rt></ruby>なのが一目で解った。で、すぐ態度を改めて、</p>
+        <p>「先生、今日<persName ref="#hideo">田中</persName>が参りましてね」</p>
+        <p>「そうだってね」</p>
+        <p>「お目にかかってお礼を申上げなければならんのですけれども、又改めて上がりますからッて……よろしく申上げて……」</p>
+        <p>「そうか」</p>
+        <p>と言ったが、そのままふいと立って書斎に入って了った。</p>
+        <p>その恋人が<placeName ref="#tokyo">東京</placeName>に居ては、<ruby><rb>仮令</rb><rt>たとい</rt></ruby>自分が<persName ref="#yoshiko">芳子</persName>をその二階に置いて監督しても、<persName ref="#tokio">時雄</persName>は心を安んずる暇はなかった。二人の相逢うことを妨げることは絶対に不可能である。手紙は無論差留めることは出来ぬし、「今日ちょっと<persName ref="#hideo">田中</persName>に寄って参りますから、一時間遅くなります」と公然と断って行くのをどうこう言う訳には行かなかった。またその男が訪問して来るのを非常に不快に思うけれど、今更それを謝絶することも出来なかった。<persName ref="#tokio">時雄</persName>はいつの間にか、この二人からその恋に対しての「温情の保護者」として認められて了った。</p>
+        <p><persName ref="#tokio">時雄</persName>は常に<ruby><rb>苛々</rb><rt>いらいら</rt></ruby>していた。書かなければならぬ原稿が幾種もある。<ruby><rb>書肆</rb><rt>しょし</rt></ruby>からも催促される。金も<ruby><rb>欲</rb><rt>ほ</rt></ruby>しい。けれどどうしても筆を執って文を<ruby><rb>綴</rb><rt>つづ</rt></ruby>るような<ruby><rb>沈着</rb><rt>おちつ</rt></ruby>いた心の状態にはなれなかった。<ruby><rb>強</rb><rt>し</rt></ruby>いて試みてみることがあっても、考が<ruby><rb>纒</rb><rt>まとま</rt></ruby>らない。本を読んでも二<ruby><rb>頁</rb><rt>ページ</rt></ruby>も続けて読む気になれない。二人の恋の温かさを見る<ruby><rb>度</rb><rt>たび</rt></ruby>に、胸を<ruby><rb>燃</rb><rt>もや</rt></ruby>して、罪もない細君に当り散らして酒を飲んだ。<ruby><rb>晩餐</rb><rt>ばんさん</rt></ruby>の菜が気に入らぬと云って、<ruby><rb>御膳</rb><rt>おぜん</rt></ruby>を<ruby><rb>蹴飛</rb><rt>けとば</rt></ruby>した。夜は十二時過に酔って帰って来ることもあった。<persName ref="#yoshiko">芳子</persName>はこの乱暴な不調子な<persName ref="#tokio">時雄</persName>の行為に<ruby><rb>尠</rb><rt>すく</rt></ruby>なからず心を痛めて、「私がいろいろ御心配を懸けるもんですからね、私が悪いんですよ」と<ruby><rb>詫</rb><rt>わ</rt></ruby>びるように細君に言った。<persName ref="#yoshiko">芳子</persName>はなるたけ手紙の往復を人に見せぬようにし、訪問も三度に一度は学校を休んでこっそり行くようにした。<persName ref="#tokio">時雄</persName>はそれに気が附いて一層懊悩の度を増した。</p>
+        <p>野は秋も暮れて<ruby><rb>木枯</rb><rt>こがらし</rt></ruby>の風が立った。裏の森の<ruby><rb>銀杏樹</rb><rt>いちょう</rt></ruby>も<ruby><rb>黄葉</rb><rt>もみじ</rt></ruby>して夕の空を美しく<ruby><rb>彩</rb><rt>いろど</rt></ruby>った。垣根道には<ruby><rb>反</rb><rt>そり</rt></ruby>かえった落葉ががさがさと<ruby><rb>転</rb><rt>ころ</rt></ruby>がって行く。<ruby><rb>鵙</rb><rt>もず</rt></ruby>の<ruby><rb>鳴音</rb><rt>なきごえ</rt></ruby>がけたたましく聞える。若い二人の恋が<ruby><rb>愈〻</rb><rt>いよいよ</rt></ruby>人目に余るようになったのはこの頃であった。<persName ref="#tokio">時雄</persName>は監督上見るに見かねて、<persName ref="#yoshiko">芳子</persName>を<ruby><rb>説勧</rb><rt>ときすす</rt></ruby>めて、この<ruby><rb>一伍一什</rb><rt>いちぶしじゅう</rt></ruby>を故郷の父母に報ぜしめた。そして<persName ref="#tokio">時雄</persName>もこの恋に関しての長い手紙を<persName ref="#yoshiko">芳子</persName>の父に寄せた。この場合にも<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>の感謝の情を十分に<ruby><rb>贏</rb><rt>か</rt></ruby>ち得るように<ruby><rb>勉</rb><rt>つと</rt></ruby>めた。<persName ref="#tokio">時雄</persName>は心を欺いて、――悲壮なる犠牲と称して、この「恋の温情なる保護者」となった。</p>
+        <p><placeName ref="#bitchu"><ruby><rb>備中</rb><rt>びっちゅう</rt></ruby></placeName>の山中から数通の手紙が来た。</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>七</head>
+        <p>その翌年の一月には、<persName ref="#tokio">時雄</persName>は地理の用事で、<placeName ref="#jobu">上武</placeName>の境なる<placeName ref="#tonegawa"><ruby><rb>利根</rb><rt>とね</rt></ruby></placeName><ruby><rb>河畔</rb><rt>かはん</rt></ruby>に出張していた。彼は昨年の年末からこの地に来ているので、家のこと――<persName ref="#yoshiko">芳子</persName>のことが<ruby><rb>殊</rb><rt>こと</rt></ruby>に心配になる。さりとて公務を<ruby><rb>如何</rb><rt>いかん</rt></ruby>ともすることが出来なかった。<date when="--01">正月</date>になって二日にちょっと帰京したが、その時は次男が歯を病んで、妻と<persName ref="#yoshiko">芳子</persName>とが<ruby><rb>頻</rb><rt>しき</rt></ruby>りにそれを介抱していた。妻に聞くと、<persName ref="#yoshiko">芳子</persName>の恋は更に<ruby><rb>惑溺</rb><rt>わくでき</rt></ruby>の度を加えた様子。<date when="--12-31"><ruby><rb>大晦日</rb><rt>おおみそか</rt></ruby></date>の晩に、<persName ref="#hideo">田中</persName>が生活のたつきを得ず、下宿に帰ることも出来ずに、終夜運転の電車に一夜を過したということ、余り<ruby><rb>頻繁</rb><rt>ひんぱん</rt></ruby>に二人が往来するので、それをそれとなしに注意して<persName ref="#yoshiko">芳子</persName>と口争いをしたということ、その他種々のことを聞いた。困ったことだと思った。一晩泊って再び<placeName ref="#tonegawa">利根</placeName>の河畔に戻った。</p>
+        <p>今は五日の夜であった。<ruby><rb>茫</rb><rt>ぼう</rt></ruby>とした空に月が<ruby><rb>暈</rb><rt>かさ</rt></ruby>を帯びて、その光が川の中央にきらきらと金を砕いていた。<persName ref="#tokio">時雄</persName>は机の上に一通の封書を<ruby><rb>展</rb><rt>ひら</rt></ruby>いて、深くその事を考えていた。その手紙は今少し前、旅館の下女が置いて行った<persName ref="#yoshiko">芳子</persName>の筆である。</p>
+        <p>先生、</p>
+        <p>まことに、申訳が御座いません。先生の同情ある御恩は決して一生<ruby><rb>経</rb><rt>た</rt></ruby>っても忘るることでなく、今もそのお心を思うと、涙が<ruby><rb>滴</rb><rt>こぼ</rt></ruby>るるのです。</p>
+        <p>父母はあの通りです。先生があのように<ruby><rb>仰</rb><rt>おっ</rt></ruby>しゃって下すっても、<ruby><rb>旧風</rb><rt>むかしふう</rt></ruby>の<ruby><rb>頑固</rb><rt>かたくな</rt></ruby>で、私共の心を<ruby><rb>汲</rb><rt>く</rt></ruby>んでくれようとも致しませず、泣いて訴えましたけれど、許してくれません。母の手紙を見れば泣かずにはおられませんけれど、少しは私の心も汲んでくれても好いと思います。恋とはこう苦しいものかと今つくづく思い当りました。先生、私は決心致しました。聖書にも女は親に離れて夫に従うと御座います通り、私は<persName ref="#hideo">田中</persName>に従おうと存じます。</p>
+        <p><persName ref="#hideo">田中</persName>は<ruby><rb>未</rb><rt>いま</rt></ruby>だに生活のたつきを得ませず、準備した金は既に尽き、昨年の暮れは、うらぶれの悲しい生活を送ったので御座います。私はもう見ているに忍びません。国からの補助を受けませんでも、私等は私等二人で出来るまでこの世に生きてみようと思います。先生に御心配を懸けるのは、まことに済みません。監督上、御心配なさるのも<ruby><rb>御尤</rb><rt>ごもっと</rt></ruby>もです。けれど折角先生があのように私等の為めに国の父母をお説き下すったにも<ruby><rb>係</rb><rt>かかわ</rt></ruby>らず、父母は唯無意味に怒ってばかりいて、取合ってくれませんのは、余りと申せば無慈悲です、<ruby><rb>勘当</rb><rt>かんどう</rt></ruby>されても<ruby><rb>為方</rb><rt>しかた</rt></ruby>が御座いません。堕落々々と申して、<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど<ruby><rb>歯</rb><rt>よわい</rt></ruby>せぬばかりに申しておりますが、私達の恋はそんなに<ruby><rb>不真面目</rb><rt>ふまじめ</rt></ruby>なもので御座いましょうか。それに、家の門地々々と申しますが、私は恋を父母の都合によって致すような旧式の女でないことは先生もお許し下さるでしょう。</p>
+        <p>先生、</p>
+        <p>私は決心致しました。昨日<placeName ref="#ueno-toshokan">上野図書館</placeName>で女の見習生が入用だという広告がありましたから、応じてみようと思います。二人して一生懸命に働きましたら、まさかに<ruby><rb>餓</rb><rt>う</rt></ruby>えるようなことも御座いますまい。先生のお家にこうして居ますればこそ、先生にも奥様にも御心配を懸けて済まぬので御座います。どうか先生、私の決心をお許し下さい。</p>
+        <p><persName ref="#yoshiko">芳子</persName></p>
+        <p>先生　おんもとへ</p>
+        <p>恋の力は遂に二人を深い<ruby><rb>惑溺</rb><rt>わくでき</rt></ruby>の<ruby><rb>淵</rb><rt>ふち</rt></ruby>に沈めたのである。<persName ref="#tokio">時雄</persName>はもうこうしてはおかれぬと思った。<persName ref="#tokio">時雄</persName>が<persName ref="#yoshiko">芳子</persName>の歓心を得る為めに取った「温情の保護者」としての態度を考えた。<placeName ref="#bitchu">備中</placeName>の父親に寄せた手紙、その手紙には、極力二人の恋を<ruby><rb>庇保</rb><rt>ひほ</rt></ruby>して、どうしてもこの恋を許して<ruby><rb>貰</rb><rt>もら</rt></ruby>わねばならぬという主旨であった。<persName ref="#tokio">時雄</persName>は父母の到底これを承知せぬことを知っていた。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ父母の極力反対することを希望していた。父母は果して極力反対して来た。言うことを聞かぬなら勘当するとまで言って来た。二人はまさに受くべき恋の報酬を受けた。<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>の為めに<ruby><rb>飽</rb><rt>あく</rt></ruby>まで弁明し、汚れた目的の為めに行われたる恋でないことを言い、父母の中一人、是非出京してこの問題を解決して貰いたいと言い送った。けれど故郷の父母は、監督なる<persName ref="#tokio">時雄</persName>がそういう主張であるのと、到底その口から許可することが出来ぬのとで、上京しても無駄であると云って出て来なかった。</p>
+        <p><persName ref="#tokio">時雄</persName>は今、<persName ref="#yoshiko">芳子</persName>の手紙に対して考えた。</p>
+        <p>二人の状態は最早一刻も猶予すべからざるものとなっている。<persName ref="#tokio">時雄</persName>の監督を離れて二人一緒に暮したいという大胆な言葉、その言葉の中には警戒すべき分子の多いのを思った。いや、既に一歩を進めているかも知れぬと思った。又一面にはこれほどその為めに尽力しているのに、その好意を無にして、こういう決心をするとは義理知らず、情知らず、勝手にするが好いとまで激した。</p>
+        <p><persName ref="#tokio">時雄</persName>は胸の<ruby><rb>轟</rb><rt>とどろ</rt></ruby>きを静める為め、月<ruby><rb>朧</rb><rt>おぼろ</rt></ruby>なる<placeName ref="#tonegawa">利根川</placeName>の堤の上を散歩した。月が<ruby><rb>暈</rb><rt>かさ</rt></ruby>を帯びた夜は冬ながらやや暖かく、土手下の家々の窓には平和な燈火が静かに輝いていた。川の上には薄い<ruby><rb>靄</rb><rt>もや</rt></ruby>が懸って、おりおり通る船の<ruby><rb>艫</rb><rt>ろ</rt></ruby>の音がギイと聞える。下流でおーいと渡しを呼ぶものがある。舟橋を渡る車の音がとどろに響いてそして又一時静かになる。<persName ref="#tokio">時雄</persName>は土手を歩きながら種々のことを考えた。<persName ref="#yoshiko">芳子</persName>のことよりは一層痛切に自己の家庭のさびしさということが胸を往来した。三十五六歳の男女の最も<ruby><rb>味</rb><rt>あじわ</rt></ruby>うべき生活の苦痛、事業に対する<ruby><rb>煩悩</rb><rt>ぼんのう</rt></ruby>、性慾より起る不満足等が<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい力でその胸を圧迫した。<persName ref="#yoshiko">芳子</persName>はかれの為めに平凡なる生活の花でもあり又<ruby><rb>糧</rb><rt>かて</rt></ruby>でもあった。<persName ref="#yoshiko">芳子</persName>の美しい力に由って、荒野の<ruby><rb>如</rb><rt>ごと</rt></ruby>き胸に花咲き、<ruby><rb>錆</rb><rt>さ</rt></ruby>び果てた鐘は再び鳴ろうとした。<persName ref="#yoshiko">芳子</persName>の為めに、復活の活気は新しく鼓吹された。であるのに再び<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>荒涼たる以前の平凡なる生活にかえらなければならぬとは……。不平よりも、<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>よりも、熱い熱い涙がかれの<ruby><rb>頬</rb><rt>ほお</rt></ruby>を伝った。</p>
+        <p>かれは真面目に<persName ref="#yoshiko">芳子</persName>の恋とその一生とを考えた。二人<ruby><rb>同棲</rb><rt>どうせい</rt></ruby>して後の<ruby><rb>倦怠</rb><rt>けんたい</rt></ruby>、疲労、冷酷を自己の経験に照らしてみた。そして一たび男子に身を任せて後の女子の境遇の<ruby><rb>憐</rb><rt>あわれ</rt></ruby>むべきを思い<ruby><rb>遣</rb><rt>や</rt></ruby>った。自然の<ruby><rb>最奥</rb><rt>さいおう</rt></ruby>に秘める暗黒なる力に対する<ruby><rb>厭世</rb><rt>えんせい</rt></ruby>の情は今彼の胸を<ruby><rb>簇々</rb><rt>むらむら</rt></ruby>として襲った。</p>
+        <p>真面目なる解決を施さなければならぬという気になった。今までの自分の<ruby><rb>行為</rb><rt>おこない</rt></ruby>の<ruby><rb>甚</rb><rt>はなは</rt></ruby>だ不自然で不真面目であるのに思いついた。<persName ref="#tokio">時雄</persName>はその夜、<placeName ref="#bitchu">備中</placeName>の山中にある<persName ref="#yoshiko">芳子</persName>の父母に寄する手紙を熱心に書いた。<persName ref="#yoshiko">芳子</persName>の手紙をその中に巻込んで、二人の近況を詳しく記し、最後に、</p>
+        <p>父たる貴下と師たる小生と当事者たる二人と相対して、<ruby><rb>此</rb><rt>こ</rt></ruby>の問題を真面目に議すべき時節到来せりと<ruby><rb>存候</rb><rt>ぞんじそうろう</rt></ruby>、貴下は父としての主張あるべく、<persName ref="#yoshiko">芳子</persName>は<persName ref="#yoshiko">芳子</persName>としての自由あるべく、小生また師としての意見<ruby><rb>有之</rb><rt>これあり</rt></ruby>候、御多忙の際には有之候えども、是非々々御出京下され<ruby><rb>度</rb><rt>たく</rt></ruby>、幾重にも希望<ruby><rb>仕</rb><rt>つかまつり</rt></ruby>候。</p>
+        <p>と書いて筆を結んだ。封筒に収めて<placeName ref="#bitchu">備中国</placeName><placeName ref="#niimimachi"><ruby><rb>新見町</rb><rt>にいみまち</rt></ruby></placeName><persName ref="#hyozo">横山兵蔵</persName>様と書いて、傍に置いて、じっとそれを見入った。この一通が運命の手だと思った。思いきって<ruby><rb>婢</rb><rt>おんな</rt></ruby>を呼んで渡した。</p>
+        <p>一日二日、<persName ref="#tokio">時雄</persName>はその手紙の<placeName ref="#bitchu">備中</placeName>の山中に運ばれて行くさまを想像した。四面山で囲まれた小さな<ruby><rb>田舎町</rb><rt>いなかまち</rt></ruby>、その中央にある大きな白壁造、そこに郵便脚夫が配達すると、店に居た男がそれを奥へ持って行く。<ruby><rb>丈</rb><rt>たけ</rt></ruby>の高い、<ruby><rb>髯</rb><rt>ひげ</rt></ruby>のある主人がそれを読む――運命の力は一刻毎に迫って来た。</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>八</head>
+        <p><date when="---10">十日</date>に<persName ref="#tokio">時雄</persName>は<placeName ref="#tokyo">東京</placeName>に帰った。</p>
+        <p>その翌日、<placeName ref="#bitchu">備中</placeName>から返事があって、二三日の中に父親が出発すると報じて来た。</p>
+        <p><persName ref="#yoshiko">芳子</persName>も<persName ref="#hideo">田中</persName>も今の際、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろそれを希望しているらしく、別にこれと云って驚いた様子も無かった。</p>
+        <p>父親が<placeName ref="#tokyo">東京</placeName>に着いて、<ruby><rb>先</rb><rt>ま</rt></ruby>ず<placeName ref="#kyobashi">京橋</placeName>に宿を取って、<placeName ref="#ushigome">牛込</placeName>の<persName ref="#tokio">時雄</persName>の宅を訪問したのは<date when="---16">十六日</date>の午前十一時頃であった。丁度日曜で、<persName ref="#tokio">時雄</persName>は宅に居た。父親はフロックコートを着て、中高帽を<ruby><rb>冠</rb><rt>かぶ</rt></ruby>って、長途の旅行に疲れたという風であった。</p>
+        <p><persName ref="#yoshiko">芳子</persName>はその日医師へ行っていた。三日程前から<ruby><rb>風邪</rb><rt>かぜ</rt></ruby>を引いて、熱が少しあった。頭痛がすると言っていた。間もなく帰って来たが、裏口から何の気なしに入ると、細君が、「<persName ref="#yoshiko">芳子</persName>さん、<persName ref="#yoshiko">芳子</persName>さん、大変よ、お父さんが来てよ」</p>
+        <p>「お父さん」</p>
+        <p>と<persName ref="#yoshiko">芳子</persName>もさすがにはっとした。</p>
+        <p>そのまま二階に上ったが下りて来ない。</p>
+        <p>奥で、「<persName ref="#yoshiko">芳子</persName>は？」と呼ぶので、細君が下から呼んでみたが返事がない。登って行って見ると、<persName ref="#yoshiko">芳子</persName>は机の上に<ruby><rb>打伏</rb><rt>うつぶ</rt></ruby>している。</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>さん」</p>
+        <p>返事が無い。</p>
+        <p>傍に行って又呼ぶと、<persName ref="#yoshiko">芳子</persName>は青い神経性の顔を<ruby><rb>擡</rb><rt>もた</rt></ruby>げた。</p>
+        <p>「奥で呼んでいますよ」</p>
+        <p>「でもね、奥さん、私はどうして父に<ruby><rb>逢</rb><rt>あ</rt></ruby>われるでしょう」</p>
+        <p>泣いているのだ。</p>
+        <p>「だッて、父様に久し振じゃありませんか。どうせ逢わないわけには行かんのですもの。何アにそんな心配をすることはありませんよ、大丈夫ですよ」</p>
+        <p>「だッて、奥さん」</p>
+        <p>「本当に大丈夫ですから、しっかりなさいよ、よくあなたの心を父様にお話しなさいよ。本当に大丈夫ですよ」</p>
+        <p><persName ref="#yoshiko">芳子</persName>は遂に父親の前に出た。<ruby><rb>鬚</rb><rt>ひげ</rt></ruby>多く、威厳のある中に<ruby><rb>何処</rb><rt>どこ</rt></ruby>となく優しいところのある<ruby><rb>懐</rb><rt>なつ</rt></ruby>かしい顔を見ると、<persName ref="#yoshiko">芳子</persName>は涙の<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>るのを<ruby><rb>禁</rb><rt>とど</rt></ruby>め得なかった。旧式な<ruby><rb>頑固</rb><rt>がんこ</rt></ruby>な<ruby><rb>爺</rb><rt>おやじ</rt></ruby>、若いものの心などの解らぬ爺、それでもこの父は優しい父であった。母親は万事に気が附いて、よく面倒を見てくれたけれど、何故か<persName ref="#yoshiko">芳子</persName>には母よりもこの父の方が好かった。その身の今の窮迫を訴え、泣いてこの恋の真面目なのを訴えたら父親もよもや動かされぬことはあるまいと思った。</p>
+        <p>「<persName ref="#yoshiko">芳子</persName>、<ruby><rb>暫</rb><rt>しばら</rt></ruby>くじゃッたのう……体は丈夫かの？」</p>
+        <p>「お父さま……」<persName ref="#yoshiko">芳子</persName>は後を言い得なかった。</p>
+        <p>「今度来ます時に……」と父親は傍に坐っている<persName ref="#tokio">時雄</persName>に語った。「<placeName ref="#sano">佐野</placeName>と<placeName ref="#gotemba">御殿場</placeName>でしたかナ、汽車に故障がありましてナ、二時間ほど待ちました。機関が破裂しましてナ」</p>
+        <p>「それは……」</p>
+        <p>「全速力で進行している中に、<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい音がしたと思いましたけえ、汽車が<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しく傾斜してだらだらと逆行しましてナ、何事かと思いました。機関が破裂して火夫が二人とか即死した……」</p>
+        <p>「それは危険でしたナ」</p>
+        <p>「沼津から機関車を持って来てつけるまで二時間も待ちましたけえ、その間もナ、思いまして……これの為めにこうして<placeName ref="#tokyo">東京</placeName>に来ている途中、もしもの事があったら、<persName ref="#yoshiko">芳</persName>（と今度は娘の方を見て）お前も兄弟に申訳が無かろうと思ったじゃわ」</p>
+        <p><persName ref="#yoshiko">芳子</persName>は頭を垂れて黙っていた。</p>
+        <p>「それは危険でした。それでも別にお怪我もなくって結構でした」</p>
+        <p>「え、まア」</p>
+        <p>父親と<persName ref="#tokio">時雄</persName>は暫くその機関破裂のことに就いて語り合った。<ruby><rb>不図</rb><rt>ふと</rt></ruby>、<persName ref="#yoshiko">芳子</persName>は、</p>
+        <p>「お父様、家では皆な変ることは御座いません？」</p>
+        <p>「うむ、皆な達者じゃ」</p>
+        <p>「母さんも……」</p>
+        <p>「うむ、今度も私が忙しいけえナ、母に来て貰うように言うてじゃったが、矢張、私の方が好いじゃろうと思って……」</p>
+        <p>「兄さんも御達者？」</p>
+        <p>「うむ、あれもこの頃は少し落附いている」</p>
+        <p>かれこれする中に、<ruby><rb>午飯</rb><rt>ひるめし</rt></ruby>の膳が出た。<persName ref="#yoshiko">芳子</persName>は自分の室に戻った。食事を終って、茶を飲みながら、<persName ref="#tokio">時雄</persName>は前からのその問題を語り<ruby><rb>続</rb><rt>つ</rt></ruby>いだ。</p>
+        <p>「で、<ruby><rb>貴方</rb><rt>あなた</rt></ruby>はどうしても不賛成？」</p>
+        <p>「賛成しようにもしまいにも、まだ問題になりおりませんけえ。今、仮に許して、二人一緒にするに致しても、男が二十二で、<placeName ref="#doshisha">同志社</placeName>の三年生では……」</p>
+        <p>「それは、そうですが、人物を御覧の上、将来の約束でも……」</p>
+        <p>「いや、約束などと、そんなことは致しますまい。私は人物を見たわけでありませんけえ、よく知りませんけどナ、女学生の上京の途次を要して途中に泊らせたり、年来の恩ある<placeName ref="#kobe-kyokai">神戸教会</placeName>の恩人を一朝にして捨て去ったりするような男ですけえ、とても話にはならぬと思いますじゃ。この間、<persName ref="#yoshiko">芳</persName>から母へよこした手紙に、その男が苦しんでおるじゃで、どうか御察し下すって、私の学費を少くしても好いから、<ruby><rb>早稲田</rb><rt>わせだ</rt></ruby>に通う位の金を出してくれと書いてありましたげな、何かそういう計画で<persName ref="#yoshiko">芳</persName>がだまされておるんではないですかな」</p>
+        <p>「そんなことは無いでしょうと思うですが……」</p>
+        <p>「どうも怪しいことがあるです。<persName ref="#yoshiko">芳子</persName>と約束が出来て、すぐ宗教が<ruby><rb>厭</rb><rt>いや</rt></ruby>になって文学が好きになったと言うのも<ruby><rb>可笑</rb><rt>おか</rt></ruby>しし、その後をすぐ追って出て来て、貴方などの御説諭も聞かずに、衣食に苦しんでまでもこの<placeName ref="#tokyo">東京</placeName>に居るなども意味がありそうですわい」</p>
+        <p>「それは恋の惑溺であるかも知れませんから善意に解釈することも出来ますが」</p>
+        <p>「それにしても許可するのせぬのとは問題になりませんけえ、結婚の約束は大きなことでして……。それにはその者の身分も調べて、<ruby><rb>此方</rb><rt>こっち</rt></ruby>の身分との釣合も考えなければなりませんし、血統を調べなければなりません。それに人物が第一です。貴方の御覧になるところでは、秀才だとか<ruby><rb>仰</rb><rt>おっ</rt></ruby>しゃってですが……」</p>
+        <p>「いや、そう言うわけでも無かったです」</p>
+        <p>「一体、人物はどういう……」</p>
+        <p>「それは<ruby><rb>却</rb><rt>かえ</rt></ruby>って母さんなどが御存じだと言うことですが」</p>
+        <p>「何アに、<placeName ref="#suma"><ruby><rb>須磨</rb><rt>すま</rt></ruby></placeName>の日曜学校で一二度会ったことがある位、妻もよく知らんそうですけえ。何でも<placeName ref="#kobe">神戸</placeName>では多少秀才とか何とか言われた男で、<persName ref="#yoshiko">芳</persName>は<placeName ref="#kobe-jogakuin">女学院</placeName>に居る頃から知っておるのでしょうがナ。説教や<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>などを<ruby><rb>遣</rb><rt>や</rt></ruby>らせると、大人も及ばぬような巧いことを遣りおったそうですけえ」</p>
+        <p>「それで話が演説調になるのだ、形式的になるのだ、あの厭な上目を使うのは、祈祷をする時の表情だ」と<persName ref="#tokio">時雄</persName>は心の中に<ruby><rb>合点</rb><rt>がてん</rt></ruby>した。あの厭な表情で若い女を迷わせるのだなと続いて思って厭な気がした。</p>
+        <p>「それにしても、結局はどうしましょう？　<persName ref="#yoshiko">芳子</persName>さんを<ruby><rb>伴</rb><rt>つ</rt></ruby>れてお帰りになりますか」</p>
+        <p>「されば……なるたけは連れて帰りたくないと思いますがナ。村に娘を伴れて突然帰ると、どうも<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って面白くありません。私も妻も種々村の慈善事業や名誉職などを遣っておりますけえ、今度のことなどがぱっとしますと、非常に困る場合もあるです……。で、私は、貴方の<ruby><rb>仰</rb><rt>おっ</rt></ruby>しゃる通り、出来得べくば、男を元の<placeName ref="#kyoto">京都</placeName>に帰して、<ruby><rb>此処</rb><rt>ここ</rt></ruby>一二年、娘は<ruby><rb>猶</rb><rt>なお</rt></ruby>お世話になりたいと存じておりますじゃが……」</p>
+        <p>「それが好いですな」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は言った。</p>
+        <p>二人の間柄に就いての談話も一二あった。<persName ref="#tokio">時雄</persName>は<placeName ref="#kyoto">京都</placeName><placeName ref="#saga"><ruby><rb>嵯峨</rb><rt>さが</rt></ruby></placeName>の事情、その以後の経過を話し、二人の間には神聖の霊の恋のみ成立っていて、<ruby><rb>汚</rb><rt>きたな</rt></ruby>い関係は無いであろうと言った。父親はそれを聴いて<ruby><rb>点頭</rb><rt>うなず</rt></ruby>きはしたが、「でもまア、その方の関係もあるものとして見なければなりますまい」と言った。</p>
+        <p>父親の胸には今更娘に就いての悔恨の情が多かった。<ruby><rb>田舎</rb><rt>いなか</rt></ruby>ものの虚栄心の為めに<placeName ref="#kobe-jogakuin">神戸女学院</placeName>のような、ハイカラな学校に入れて、その寄宿舎生活を行わせたことや、娘の切なる希望を<ruby><rb>容</rb><rt>い</rt></ruby>れて小説を学ぶべく<placeName ref="#tokyo">東京</placeName>に出したことや、多病の為めに言うがままにして余り検束を加えなかったことや、いろいろなことが<ruby><rb>簇々</rb><rt>むらむら</rt></ruby>と胸に浮んだ。</p>
+        <p>一時間後にはわざわざ迎いに遣った<persName ref="#hideo">田中</persName>がこの室に来ていた。<persName ref="#yoshiko">芳子</persName>もその<ruby><rb>傍</rb><rt>そば</rt></ruby>に<ruby><rb>庇髪</rb><rt>ひさしがみ</rt></ruby>を<ruby><rb>俛</rb><rt>た</rt></ruby>れて談話を聞いていた。父親の眼に映じた<persName ref="#hideo">田中</persName>は元より気に入った人物ではなかった。その<ruby><rb>白縞</rb><rt>しろしま</rt></ruby>の<ruby><rb>袴</rb><rt>はかま</rt></ruby>を着け、紺がすりの羽織を着た書生姿は、<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>の念と<ruby><rb>憎悪</rb><rt>ぞうお</rt></ruby>の念とをその胸に<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>らしめた。その所有物を奪った憎むべき男という感は、<ruby><rb>曽</rb><rt>か</rt></ruby>つて<persName ref="#tokio">時雄</persName>がその下宿でこの男を見た時の感と甚だよく似ていた。</p>
+        <p><persName ref="#hideo">田中</persName>は袴の<ruby><rb>襞</rb><rt>ひだ</rt></ruby>を正して、しゃんと坐ったまま、多く二尺先位の畳をのみ見ていた。服従という態度よりも反抗という態度が<ruby><rb>歴々</rb><rt>ありあり</rt></ruby>としていた。どうも少し固くなり過ぎて、<persName ref="#yoshiko">芳子</persName>を自分の自由にする或る権利を持っているという風に見えていた。</p>
+        <p>談話は<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>にかつ烈しかった。父親はその<ruby><rb>破廉恥</rb><rt>はれんち</rt></ruby>を<ruby><rb>敢</rb><rt>あえ</rt></ruby>て正面から責めはしないが、おりおり<ruby><rb>苦</rb><rt>にが</rt></ruby>い皮肉をその言葉の中に交えた。初めは<persName ref="#tokio">時雄</persName>が口を切ったが、中頃から<ruby><rb>重</rb><rt>おも</rt></ruby>に父親と<persName ref="#hideo">田中</persName>とが語った。父親は県会議員をした人だけあって、言葉の<ruby><rb>抑揚</rb><rt>よくよう</rt></ruby><ruby><rb>頓挫</rb><rt>とんざ</rt></ruby>が中々巧みであった。演説に慣れた<persName ref="#hideo">田中</persName>も時々沈黙させられた。二人の恋の許可不許可も問題に上ったが、それは今研究すべき題目でないとして<ruby><rb>却</rb><rt>しりぞ</rt></ruby>けられ、当面の<placeName ref="#kyoto">京都</placeName>帰還問題が論ぜられた。</p>
+        <p>恋する二人――<ruby><rb>殊</rb><rt>こと</rt></ruby>に男に取っては、この分離は甚だ<ruby><rb>辛</rb><rt>つら</rt></ruby>いらしかった。男は宗教的資格を全く失ったということ、帰るべく家をも国をも持たぬということ、二三月来<ruby><rb>飄零</rb><rt>ひょうれい</rt></ruby>の結果<ruby><rb>漸</rb><rt>ようや</rt></ruby>く<placeName ref="#tokyo">東京</placeName>に前途の光明を認め始めたのに、それを捨てて去るに忍びぬということなぞを<ruby><rb>楯</rb><rt>たて</rt></ruby>として、頻りに帰国の不可能を主張した。</p>
+        <p>父親は懇々として説いた。</p>
+        <p>「今更<placeName ref="#kyoto">京都</placeName>に帰れないという、それは帰れないに違いない。けれど今の場合である。愛する女子ならその女子の為めに犠牲になれぬということはあるまいじゃ。<placeName ref="#kyoto">京都</placeName>に帰れないから田舎に帰る。帰れば自分の目的が達せられぬというが、其処を言うのじゃ。其処を犠牲になっても好かろうと言うのじゃ」</p>
+        <p><persName ref="#hideo">田中</persName>は黙して下を向いた。容易に<ruby><rb>諾</rb><rt>だく</rt></ruby>しそうにも無い。</p>
+        <p>先程から黙って聞いていた<persName ref="#tokio">時雄</persName>は、男が余りに頑固なのに、急に声を<ruby><rb>励</rb><rt>はげま</rt></ruby>して、「君、僕は先程から聞いていたが、あれほどに言うお父さんの言葉が解らんですか。お父さんは、君の罪をも問わず、破廉恥をも問わず、将来もし縁があったら、この恋愛を承諾せぬではない。君もまだ年が若い、<persName ref="#yoshiko">芳子</persName>さんも今修業最中である。だから二人は今暫くこの恋愛問題を未解決の<ruby><rb>中</rb><rt>うち</rt></ruby>にそのままにしておいて、そしてその行末を見ようと言うのが解らんですか。今の場合、二人はどうしても一緒には置かれぬ。<ruby><rb>何方</rb><rt>どっち</rt></ruby>かこの<placeName ref="#tokyo">東京</placeName>を去らなくってはならん。この<placeName ref="#tokyo">東京</placeName>を去るということに就いては、君が先ず去るのが至当だ。何故かと<ruby><rb>謂</rb><rt>い</rt></ruby>えば、君は<persName ref="#yoshiko">芳子</persName>の後を追うて来たのだから」</p>
+        <p>「よう解っております」と<persName ref="#hideo">田中</persName>は答えた。「私が万事悪いのでございますから、私が一番に去らなければなりません。先生は今、この恋愛を承諾して下されぬではないと<ruby><rb>仰</rb><rt>おっ</rt></ruby>しゃったが、お父様の先程の御言葉では、まだ満足致されぬような訳でして……」</p>
+        <p>「どういう意味です」</p>
+        <p>と<persName ref="#tokio">時雄</persName>は反問した。</p>
+        <p>「本当に約束せぬというのが不満だと言うのですじゃろう」と、父親は言葉を入れて、「けれど、これは先程もよく話した<ruby><rb>筈</rb><rt>はず</rt></ruby>じゃけえ。今の場合、許可、不許可という事は出来ぬじゃ。独立することも出来ぬ修業中の身で、二人一緒にこの世の中に立って行こうと<ruby><rb>言</rb><rt>い</rt></ruby>やるは、どうも不信用じゃ。だから私は今三四年はお互に勉強するが好いじゃと思う。真面目ならば、こうまで言った話は解らんけりゃならん。私が一時を<ruby><rb>瞞着</rb><rt>まんちゃく</rt></ruby>して、<persName ref="#yoshiko">芳</persName>を<ruby><rb>他</rb><rt>よそ</rt></ruby>に<ruby><rb>嫁</rb><rt>かたづ</rt></ruby>けるとか言うのやなら、それは不満足じゃろう。けれど私は神に誓って言う、先生を前に置いて言う、三年は<persName ref="#yoshiko">芳</persName>を私から進んで嫁にやるようなことはせんじゃ。人の世は<persName ref="#jehovah">エホバ</persName>の<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>次第、罪の多い人間はその力ある<ruby><rb>審判</rb><rt>さばき</rt></ruby>を待つより<ruby><rb>他</rb><rt>ほか</rt></ruby>に<ruby><rb>為方</rb><rt>しかた</rt></ruby>が無いけえ、私は<persName ref="#yoshiko">芳</persName>は君に進ずるとまでは言うことは出来ん。今の心が許さんけえ、今度のことは、神の思召に<ruby><rb>適</rb><rt>かな</rt></ruby>っていないと思うけえ。三年<ruby><rb>経</rb><rt>た</rt></ruby>って、神の思召に適うかどうか、それは今から予言は出来んが、君の心が、真実真面目で誠実であったなら、必ず神の思召に適うことと思うじゃ」</p>
+        <p>「あれほどお父さんが解っていらっしゃる」と<persName ref="#tokio">時雄</persName>は父親の言葉を受けて、「三年、君が為めに待つ。君を信用するに足りる三年の時日を君に与えると言われたのは、実にこの上ない<ruby><rb>恩恵</rb><rt>めぐみ</rt></ruby>でしょう。人の娘を誘惑するような<ruby><rb>奴</rb><rt>やつ</rt></ruby>には真面目に話をする必要がないといって、このまま<persName ref="#yoshiko">芳子</persName>をつれて帰られても、君は一言も恨むせきはないのですのに、三年待とう、君の真心の見えるまでは、<persName ref="#yoshiko">芳子</persName>を他に嫁けるようなことはすまいと言う。実に恩恵ある言葉だ。許可すると言ったより一層恩義が深い。君はこれが解らんですか」</p>
+        <p><persName ref="#hideo">田中</persName>は<ruby><rb>低頭</rb><rt>うつむ</rt></ruby>いて顔をしかめると思ったら、涙がはらはらとその<ruby><rb>頬</rb><rt>ほお</rt></ruby>を伝った。</p>
+        <p>一座は水を打ったように静かになった。</p>
+        <p><persName ref="#hideo">田中</persName>は<ruby><rb>溢</rb><rt>あふ</rt></ruby>れ<ruby><rb>出</rb><rt>い</rt></ruby>ずる涙を手の<ruby><rb>拳</rb><rt>こぶし</rt></ruby>で<ruby><rb>拭</rb><rt>ぬぐ</rt></ruby>った。<persName ref="#tokio">時雄</persName>は今ぞ時と、</p>
+        <p>「どうです、返事を<ruby><rb>為給</rb><rt>したま</rt></ruby>え」</p>
+        <p>「私などはどうなっても好うおます。田舎に埋れても構わんどす！」</p>
+        <p>また涙を拭った。</p>
+        <p>「それではいかん。そう反抗的に言ったって為方がない。腹の底を打明けて、互に不満足のないようにしようとする為めのこの会合です。君は<ruby><rb>達</rb><rt>た</rt></ruby>って、田舎に帰るのが<ruby><rb>厭</rb><rt>いや</rt></ruby>だとならば、<persName ref="#yoshiko">芳子</persName>を国に帰すばかりです」</p>
+        <p>「二人一緒に<placeName ref="#tokyo">東京</placeName>に居ることは出来んですか？」</p>
+        <p>「それは出来ん。監督上出来ん。二人の将来の為めにも出来ん」</p>
+        <p>「それでは田舎に埋れてもようおます！」</p>
+        <p>「いいえ、私が帰ります」と<persName ref="#yoshiko">芳子</persName>も涙に声を震わして、「私は女……女です……貴方さえ成功して下されば、私は田舎に埋れても構やしません、私が帰ります」</p>
+        <p>一座はまた沈黙に落ちた。</p>
+        <p>暫くしてから、<persName ref="#tokio">時雄</persName>は調子を改めて、</p>
+        <p>「それにしても、君はどうして<placeName ref="#kyoto">京都</placeName>に帰れんのです。<placeName ref="#kobe">神戸</placeName>の恩人に<ruby><rb>一伍一什</rb><rt>いちぶしじゅう</rt></ruby>を話して、今までの不心得を謝して、<placeName ref="#doshisha">同志社</placeName>に戻ったら好いじゃありませんか。<persName ref="#yoshiko">芳子</persName>さんが文学志願だから、君も文学家にならんければならんというようなことはない。宗教家として、神学者として、牧師として<ruby><rb>大</rb><rt>おおい</rt></ruby>に立ったなら好いでしょう」</p>
+        <p>「宗教家にはもうとてもようなりまへん。人に<ruby><rb>対</rb><rt>むか</rt></ruby>って教を説くような<ruby><rb>豪</rb><rt>えら</rt></ruby>い人間ではないでおますで。……それに、残念ですのは、三月の間苦労しまして、実は<ruby><rb>漸</rb><rt>ようや</rt></ruby>くある親友の世話で、衣食の道が開けましたで、……田舎に埋れるには忍びまへんで」</p>
+        <p>三人は<ruby><rb>猶</rb><rt>なお</rt></ruby>語った。話は遂に一小段落を告げた。<persName ref="#hideo">田中</persName>は今夜親友に相談して、明日か明後日までに<ruby><rb>確乎</rb><rt>かっこ</rt></ruby>たる返事を<ruby><rb>齎</rb><rt>もた</rt></ruby>らそうと言って、<ruby><rb>一先</rb><rt>ひとま</rt></ruby>ず帰った。時計はもう午後四時、冬の日は暮近く、今まで室の一隅に照っていた日影もいつか消えて<ruby><rb>了</rb><rt>しま</rt></ruby>った。</p>
+        <p>一室は父親と<persName ref="#tokio">時雄</persName>と二人になった。</p>
+        <p>「どうも煮えきらない男ですわい」と父親はそれとなく言った。</p>
+        <p>「どうも形式的で、甚だ要領を得んです。もう少し打明けて、ざっくばらんに話してくれると好いですけれど……」</p>
+        <p>「どうも<placeName ref="#chugoku">中国</placeName>の人間はそうは行かんですけえ、人物が小さくって、小細工で、すぐ人の<ruby><rb>股</rb><rt>また</rt></ruby>を<ruby><rb>潜</rb><rt>くぐ</rt></ruby>ろうとするですわい。関東から東北の人はまるで違うですがナア。悪いのは悪い、好いのは好いと、真情を吐露して了うけえ、好いですけどもナ。どうもいかん。小細工で、<ruby><rb>小理窟</rb><rt>こりくつ</rt></ruby>で、めそめそ泣きおった……」</p>
+        <p>「どうもそういうところがありますナ」</p>
+        <p>「見ていさっしゃい、明日きっと快諾しゃあせんけえ、何のかのと理窟をつけて、帰るまいとするけえ」</p>
+        <p><persName ref="#tokio">時雄</persName>の胸に、ふと二人の関係に就いての疑惑が起った。男の<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい主張と<persName ref="#yoshiko">芳子</persName>を<ruby><rb>己</rb><rt>おの</rt></ruby>が所有とする権利があるような態度とは、<persName ref="#tokio">時雄</persName>にこの疑惑を起さしむるの動機となったのである。</p>
+        <p>「で、二人の間の関係をどう御観察なすったです」</p>
+        <p><persName ref="#tokio">時雄</persName>は父親に問うた。</p>
+        <p>「そうですな。関係があると思わんけりゃなりますまい」</p>
+        <p>「今の際、確めておく必要があると思うですが、<persName ref="#yoshiko">芳子</persName>さんに、<ruby><rb><placeName ref="#saga">嵯峨</placeName>行</rb><rt>さがゆき</rt></ruby>の弁解をさせましょうか。今度の恋は<placeName ref="#saga">嵯峨</placeName>行の後に始めて感じたことだと言うてましたから、その証拠になる手紙があるでしょうから」</p>
+        <p>「まア、其処までせんでも……」</p>
+        <p>父親は関係を信じつつもその事実となるのを恐れるらしい。</p>
+        <p>運悪く其処に<persName ref="#yoshiko">芳子</persName>は茶を運んで来た。</p>
+        <p><persName ref="#tokio">時雄</persName>は呼留めて、その証拠になる手紙があるだろう、その身の潔白を証する為めに、その前後の手紙を見せ給えと迫った。</p>
+        <p>これを聞いた<persName ref="#yoshiko">芳子</persName>の顔は<ruby><rb>俄</rb><rt>にわ</rt></ruby>かに<ruby><rb>赧</rb><rt>あか</rt></ruby>くなった。さも困ったという風が<ruby><rb>歴々</rb><rt>ありあり</rt></ruby>として顔と態度とに<ruby><rb>顕</rb><rt>あら</rt></ruby>われた。</p>
+        <p>「あの頃の手紙はこの間皆な焼いて了いましたから」その声は低かった。</p>
+        <p>「焼いた？」</p>
+        <p>「ええ」</p>
+        <p><persName ref="#yoshiko">芳子</persName>は顔を<ruby><rb>俛</rb><rt>た</rt></ruby>れた。</p>
+        <p>「焼いた？　そんなことは無いでしょう」</p>
+        <p><persName ref="#yoshiko">芳子</persName>の顔は<ruby><rb>愈〻</rb><rt>いよいよ</rt></ruby><ruby><rb>赧</rb><rt>あか</rt></ruby>くなった。<persName ref="#tokio">時雄</persName>は激さざるを得なかった。事実は恐しい力でかれの胸を刺した。</p>
+        <p><persName ref="#tokio">時雄</persName>は立って<ruby><rb>厠</rb><rt>かわや</rt></ruby>に行った。胸は<ruby><rb>苛々</rb><rt>いらいら</rt></ruby>して、<ruby><rb>頭脳</rb><rt>あたま</rt></ruby>は<ruby><rb>眩惑</rb><rt>げんわく</rt></ruby>するように感じた。欺かれたという念が烈しく心頭を<ruby><rb>衝</rb><rt>つ</rt></ruby>いて起った。厠を出ると、其処に――障子の外に、<persName ref="#yoshiko">芳子</persName>はおどおどした様子で立っている。</p>
+        <p>「先生――本当に、私は焼いて了ったのですから」</p>
+        <p>「うそをお言いなさい」と、<persName ref="#tokio">時雄</persName>は<ruby><rb>叱</rb><rt>しか</rt></ruby>るように言って、障子を烈しく閉めて室内に入った。</p>
+      </div>
+      <div type="chapter" xml:id="sec09" n="9">
+        <head>九</head>
+        <p>父親は夕飯の<ruby><rb>馳走</rb><rt>ちそう</rt></ruby>になって旅宿に帰った。<persName ref="#tokio">時雄</persName>のその夜の<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>は非常であった。欺かれたと思うと、<ruby><rb>業</rb><rt>ごう</rt></ruby>が煮えて為方がない。否、<persName ref="#yoshiko">芳子</persName>の霊と肉――その全部を一書生に奪われながら、とにかくその恋に就いて<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>に尽したかと思うと腹が立つ。その位なら、――あの男に身を任せていた位なら、何もその処女の節操を尊ぶには当らなかった。自分も大胆に手を出して、性慾の満足を買えば好かった。こう思うと、今まで上天の<ruby><rb>境</rb><rt>きょう</rt></ruby>に置いた美しい<persName ref="#yoshiko">芳子</persName>は、<ruby><rb>売女</rb><rt>ばいじょ</rt></ruby>か何ぞのように思われて、その体は愚か、美しい態度も表情も卑しむ気になった。で、その夜は<ruby><rb>悶</rb><rt>もだ</rt></ruby>え悶えて<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど眠られなかった。様々の感情が黒雲のように胸を通った。その胸に手を当てて<persName ref="#tokio">時雄</persName>は考えた。いっそこうしてくれようかと思うた。どうせ、男に身を任せて汚れているのだ。このままこうして、男を<placeName ref="#kyoto">京都</placeName>に帰して、その弱点を利用して、自分の自由にしようかと思った。と、<ruby><rb>種々</rb><rt>いろいろ</rt></ruby>なことが<ruby><rb>頭脳</rb><rt>あたま</rt></ruby>に浮ぶ。<persName ref="#yoshiko">芳子</persName>がその二階に泊って寝ていた時、もし自分がこっそりその二階に登って行って、<ruby><rb>遣瀬</rb><rt>やるせ</rt></ruby>なき恋を語ったらどうであろう。<ruby><rb>危座</rb><rt>きざ</rt></ruby>して自分を<ruby><rb>諌</rb><rt>いさ</rt></ruby>めるかも知れぬ。声を立てて人を呼ぶかも知れぬ。それとも又せつない自分の情を<ruby><rb>汲</rb><rt>く</rt></ruby>んで犠牲になってくれるかも知れぬ。さて犠牲になったとして、翌朝はどうであろう、明かな日光を見ては、さすがに顔を合せるにも忍びぬに相違ない。日<ruby><rb>長</rb><rt>た</rt></ruby>けるまで、朝飯をも食わずに寝ているに相違ない。その時、<persName ref="#maupassant">モウパッサン</persName>の「父」という短篇を思い出した。ことに少女が男に身を任せて後烈しく泣いたことの書いてあるのを痛切に感じたが、それを又今思い出した。かと思うと、この暗い想像に抵抗する力が他の一方から出て、<ruby><rb>盛</rb><rt>さかん</rt></ruby>にそれと争った。で、<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>又煩悶、<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>また懊悩、寝返を幾度となく打って二時、三時の時計の音をも聞いた。</p>
+        <p><persName ref="#yoshiko">芳子</persName>も煩悶したに相違なかった。朝起きた時は<ruby><rb>蒼</rb><rt>あお</rt></ruby>い顔を<ruby><rb>為</rb><rt>し</rt></ruby>ていた。朝飯をも一<ruby><rb>椀</rb><rt>わん</rt></ruby>で止した。なるたけ<persName ref="#tokio">時雄</persName>の顔に逢うのを避けている様子であった。<persName ref="#yoshiko">芳子</persName>の煩悶はその秘密を知られたというよりも、それを隠しておいた非を悟った煩悶であったらしい。午後にちょっと出て来たいと言ったが、社へも行かずに家に居た<persName ref="#tokio">時雄</persName>はそれを許さなかった。一日はかくて過ぎた。<persName ref="#hideo">田中</persName>から何等の返事もなかった。</p>
+        <p><persName ref="#yoshiko">芳子</persName>は<ruby><rb>午飯</rb><rt>ひるめし</rt></ruby>も夕飯も食べたくないとて食わない。<ruby><rb>陰鬱</rb><rt>いんうつ</rt></ruby>な気が一家に<ruby><rb>充</rb><rt>み</rt></ruby>ちた。細君は夫の<ruby><rb>機嫌</rb><rt>きげん</rt></ruby>の悪いのと、<persName ref="#yoshiko">芳子</persName>の煩悶しているのに胸を痛めて、どうしたことかと思った。昨日の話の模様では、万事円満に収まりそうであったのに……。細君は一椀なりと召上らなくては、お腹が<ruby><rb>空</rb><rt>す</rt></ruby>いて<ruby><rb>為方</rb><rt>しかた</rt></ruby>があるまいと、それを<ruby><rb>侑</rb><rt>すす</rt></ruby>めに二階へ行った。<persName ref="#tokio">時雄</persName>はわびしい薄暮を<ruby><rb>苦</rb><rt>にが</rt></ruby>い顔をして酒を飲んでいた。やがて細君が下りて来た。どうしていたと<persName ref="#tokio">時雄</persName>は聞くと、薄暗い室に<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>も<ruby><rb>点</rb><rt>つ</rt></ruby>けず、書き懸けた手紙を机に置いて<ruby><rb>打伏</rb><rt>うつぶ</rt></ruby>していたとの話。手紙？　誰に<ruby><rb>遣</rb><rt>や</rt></ruby>る手紙？　<persName ref="#tokio">時雄</persName>は激した。そんな手紙を書いたって駄目だと宣告しようと思って、足音高く二階に上った。</p>
+        <p>「先生、<ruby><rb>後生</rb><rt>ごしょう</rt></ruby>ですから」</p>
+        <p>と祈るような声が聞えた。机の上に打伏したままである。「先生、後生ですから、もう、少し待って下さい。手紙に書いて、さし上げますから」</p>
+        <p><persName ref="#tokio">時雄</persName>は二階を下りた。暫くして下女は細君に命ぜられて、二階に<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>を点けに行ったが、下りて来る時、一通の手紙を持って来て、<persName ref="#tokio">時雄</persName>に渡した。</p>
+        <p><persName ref="#tokio">時雄</persName>は渇したる心を以て読んだ。</p>
+        <p>先生、</p>
+        <p>私は堕落女学生です。私は先生の御厚意を利用して、先生を欺きました。その罪はいくらお<ruby><rb>詫</rb><rt>わ</rt></ruby>びしても許されませぬほど大きいと思います。先生、どうか弱いものと思ってお<ruby><rb>憐</rb><rt>あわれ</rt></ruby>み下さい。先生に教えて頂いた新しい明治の女子としての務め、それを私は行っておりませんでした。矢張私は旧派の女、新しい思想を行う勇気を持っておりませんでした。私は<persName ref="#hideo">田中</persName>に相談しまして、どんなことがあってもこの事ばかりは人に打明けまい。過ぎたことは為方が無いが、これからは清浄な恋を続けようと約束したのです。けれど、先生、先生の御煩悶が皆な私の至らない為であると思いますと、じっとしてはいられません。今日は終日そのことで胸を痛めました。どうか先生、この憐れなる女をお憐み下さいまし。先生にお<ruby><rb>縋</rb><rt>すが</rt></ruby>り申すより他、私には道が無いので御座います。</p>
+        <p><persName ref="#yoshiko">芳子</persName></p>
+        <p>先生　おもと</p>
+        <p><persName ref="#tokio">時雄</persName>は今更に地の底にこの身を沈めらるるかと思った。手紙を持って立上った。その激した心には、<persName ref="#yoshiko">芳子</persName>がこの<ruby><rb>懺悔</rb><rt>ざんげ</rt></ruby>を<ruby><rb>敢</rb><rt>あえ</rt></ruby>てした理由――<ruby><rb>総</rb><rt>すべ</rt></ruby>てを打明けて縋ろうとした態度を解釈する余裕が無かった。二階の<ruby><rb>階梯</rb><rt>はしご</rt></ruby>をけたたましく踏鳴らして上って、<persName ref="#yoshiko">芳子</persName>の打伏している机の傍に厳然として坐った。</p>
+        <p>「こうなっては、もう為方がない。私はもうどうすることも出来ぬ。この手紙はあなたに返す、この事に就いては、誓って何人にも沈黙を守る。とにかく、あなたが師として私を信頼した態度は新しい<placeName ref="#japan">日本</placeName>の女として恥しくない。けれどこうなっては、あなたが国に帰るのが至当だ。今夜――これから直ぐ父様の処に行きましょう、そして<ruby><rb>一伍一什</rb><rt>いちぶしじゅう</rt></ruby>を話して、早速、国に帰るようにした方が好い」</p>
+        <p>で、飯を食い<ruby><rb>了</rb><rt>おわ</rt></ruby>るとすぐ、支度をして家を出た。<persName ref="#yoshiko">芳子</persName>の胸にさまざまの不服、不平、悲哀が<ruby><rb>溢</rb><rt>あふ</rt></ruby>れたであろうが、しかも<persName ref="#tokio">時雄</persName>の<ruby><rb>厳</rb><rt>おごそ</rt></ruby>かなる命令に<ruby><rb>背</rb><rt>そむ</rt></ruby>くわけには行かなかった。<placeName ref="#ichigaya">市ヶ谷</placeName>から電車に乗った。二人相並んで座を取ったが、しかも一語をも言葉を交えなかった。<placeName ref="#yamashitamon">山下門</placeName>で下りて、<placeName ref="#kyobashi">京橋</placeName>の旅館に行くと、父親は都合よく在宅していた。一伍一什――父親は特に怒りもしなかった。唯同行して帰国するのをなるべく避けたいらしかったが、しかもそれより他に<ruby><rb>路</rb><rt>みち</rt></ruby>は無かった。<persName ref="#yoshiko">芳子</persName>は泣きも笑いもせず、唯、運命の<ruby><rb>奇</rb><rt>く</rt></ruby>しきに<ruby><rb>呆</rb><rt>あき</rt></ruby>るるという風であった。<persName ref="#tokio">時雄</persName>は捨てた積りで<persName ref="#yoshiko">芳子</persName>を自分に任せることは出来ぬかと言ったが、父親は当人が親を捨ててもというならばいざ知らず、普通の状態に於いては無論許そうとは為なかった。<persName ref="#yoshiko">芳子</persName>もまた親を捨ててまでも、帰国を拒むほどの決心が附いておらなかった。で、<persName ref="#tokio">時雄</persName>は<persName ref="#yoshiko">芳子</persName>を父親に預けて帰宅した。</p>
+      </div>
+      <div type="chapter" xml:id="sec10" n="10">
+        <head>十</head>
+        <p><persName ref="#hideo">田中</persName>は翌朝<persName ref="#tokio">時雄</persName>を訪うた。かれは<ruby><rb>大勢</rb><rt>たいせい</rt></ruby>の既に定まったのを知らずに、己の事情の帰国に適せぬことを<ruby><rb>縷々</rb><rt>るる</rt></ruby>として説こうとした。霊肉共に許した恋人の<ruby><rb>例</rb><rt>ならい</rt></ruby>として、いかようにしても離れまいとするのである。</p>
+        <p><persName ref="#tokio">時雄</persName>の顔には得意の色が<ruby><rb>上</rb><rt>のぼ</rt></ruby>った。</p>
+        <p>「いや、もうその問題は決着したです。<persName ref="#yoshiko">芳子</persName>が一伍一什をすっかり話した。君等は僕を欺いていたということが解った。大変な神聖な恋でしたナ」</p>
+        <p><persName ref="#hideo">田中</persName>の顔は<ruby><rb>俄</rb><rt>にわ</rt></ruby>かに変った。<ruby><rb>羞恥</rb><rt>しゅうち</rt></ruby>の念と<ruby><rb>激昂</rb><rt>げっこう</rt></ruby>の情と絶望の<ruby><rb>悶</rb><rt>もだえ</rt></ruby>とがその胸を<ruby><rb>衝</rb><rt>つ</rt></ruby>いた。かれは言うところを知らなかった。</p>
+        <p>「もう、止むを得んです」と<persName ref="#tokio">時雄</persName>は言葉を<ruby><rb>続</rb><rt>つ</rt></ruby>いで、「僕はこの恋に関係することが出来ません。いや、もう<ruby><rb>厭</rb><rt>いや</rt></ruby>です。<persName ref="#yoshiko">芳子</persName>を父親の監督に移したです」</p>
+        <p>男は黙って坐っていた。<ruby><rb>蒼</rb><rt>あお</rt></ruby>いその顔には肉の<ruby><rb>戦慄</rb><rt>せんりつ</rt></ruby>が<ruby><rb>歴々</rb><rt>ありあり</rt></ruby>と見えた。<ruby><rb>不図</rb><rt>ふと</rt></ruby>、急に、辞儀をして、こうしてはいられぬという態度で、<ruby><rb>此処</rb><rt>ここ</rt></ruby>を出て行った。</p>
+        <p>午前十時頃、父親は<persName ref="#yoshiko">芳子</persName>を伴うて来た。<ruby><rb>愈〻</rb><rt>いよいよ</rt></ruby>今夜六時の<placeName ref="#kobe">神戸</placeName>急行で帰国するので、大体の荷物は後から送って<ruby><rb>貰</rb><rt>もら</rt></ruby>うとして、手廻の物だけ<ruby><rb>纒</rb><rt>まと</rt></ruby>めて行こうというのであった。<persName ref="#yoshiko">芳子</persName>は自分の二階に上って、そのまま荷物の整理に取懸った。</p>
+        <p><persName ref="#tokio">時雄</persName>の胸は激してはおったが、以前よりは軽快であった。二百余里の山川を隔てて、もうその美しい表情をも見ることが出来なくなると思うと、言うに言われぬ<ruby><rb>侘</rb><rt>わび</rt></ruby>しさを感ずるが、その恋せる女を競争者の手から父親の手に移したことは<ruby><rb>尠</rb><rt>すくな</rt></ruby>くとも愉快であった。で、<persName ref="#tokio">時雄</persName>は父親と<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ快活に種々なる物語に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>った。父親は田舎の紳士によく見るような書画道楽、<persName ref="#sesshu">雪舟</persName>、<persName ref="#okyo">応挙</persName>、<persName ref="#yosai">容斎</persName>の絵画、<persName ref="#rai-sanyo">山陽</persName>、<persName ref="#chikuden"><ruby><rb>竹田</rb><rt>ちくでん</rt></ruby></persName>、<persName ref="#kaioku"><ruby><rb>海屋</rb><rt>かいおく</rt></ruby></persName>、<persName ref="#chazan"><ruby><rb>茶山</rb><rt>さざん</rt></ruby></persName>の書を愛し、その名幅を無数に蔵していた。話は<ruby><rb>自</rb><rt>おのずか</rt></ruby>らそれに移った。平凡なる書画物語は、この一室に一時栄えた。</p>
+        <p><persName ref="#hideo">田中</persName>が来て、<persName ref="#tokio">時雄</persName>に逢いたいと言った。八畳と六畳との中じきりを閉めて、八畳で逢った。父親は六畳に居た。<persName ref="#yoshiko">芳子</persName>は二階の一室に居た。</p>
+        <p>「御帰国になるんでしょうか」</p>
+        <p>「え、どうせ、帰るんでしょう」</p>
+        <p>「<persName ref="#yoshiko">芳さん</persName>も一緒に」</p>
+        <p>「それはそうでしょう」</p>
+        <p>「<ruby><rb>何時</rb><rt>いつ</rt></ruby>ですか、お話下されますまいか」</p>
+        <p>「どうも今の場合、お話することは出来ませんナ」</p>
+        <p>「それでは<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>でも……<persName ref="#yoshiko">芳さん</persName>に逢わせて頂く訳には参りますまいか」</p>
+        <p>「それは駄目でしょう」</p>
+        <p>「では、お父様は何方へお泊りですか、一寸番地をうかがいたいですが」</p>
+        <p>「それも僕には教えて好いか悪いか解らんですから」</p>
+        <p>取附く島がない。<persName ref="#hideo">田中</persName>は黙って<ruby><rb>暫</rb><rt>しば</rt></ruby>し坐っていたが、そのまま辞儀をして去った。</p>
+        <p>昼飯の<ruby><rb>膳</rb><rt>ぜん</rt></ruby>がやがて八畳に並んだ。これがお別れだと云うので、細君は<ruby><rb>殊</rb><rt>こと</rt></ruby>に注意して<ruby><rb>酒肴</rb><rt>さけさかな</rt></ruby>を<ruby><rb>揃</rb><rt>そろ</rt></ruby>えた。<persName ref="#tokio">時雄</persName>も別れのしるしに、三人相並んで会食しようとしたのである。けれど<persName ref="#yoshiko">芳子</persName>はどうしても食べたくないという。細君が<ruby><rb>説勧</rb><rt>ときすす</rt></ruby>めても来ない。<persName ref="#tokio">時雄</persName>は自身二階に上った。</p>
+        <p>東の窓を一枚明けたばかり、暗い一室には本やら、雑誌やら、着物やら、帯やら、<ruby><rb>罎</rb><rt>びん</rt></ruby>やら、<ruby><rb>行李</rb><rt>こうり</rt></ruby>やら、<ruby><rb>支那鞄</rb><rt>しなかばん</rt></ruby>やらが足の<ruby><rb>踏</rb><rt>ふ</rt></ruby>み<ruby><rb>度</rb><rt>ど</rt></ruby>も無い程に散らばっていて、<ruby><rb>塵埃</rb><rt>ほこり</rt></ruby>の香が<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しく鼻を<ruby><rb>衝</rb><rt>つ</rt></ruby>く中に、<persName ref="#yoshiko">芳子</persName>は眼を<ruby><rb>泣腫</rb><rt>なきはら</rt></ruby>して荷物の整理を為ていた。三年前、青春の希望<ruby><rb>湧</rb><rt>わ</rt></ruby>くがごとき心を<ruby><rb>抱</rb><rt>いだ</rt></ruby>いて<placeName ref="#tokyo">東京</placeName>に出て来た時のさまに比べて、何等の悲惨、何等の暗黒であろう。すぐれた作品一つ得ず、こうして田舎に帰る運命かと思うと、堪らなく悲しくならずにはいられまい。</p>
+        <p>「折角支度したから、食ったらどうです。もう暫くは一緒に飯も食べられんから」</p>
+        <p>「先生――」</p>
+        <p>と、<persName ref="#yoshiko">芳子</persName>は泣出した。</p>
+        <p><persName ref="#tokio">時雄</persName>も胸を<ruby><rb>衝</rb><rt>つ</rt></ruby>いた。師としての温情と責任とを尽したかと烈しく反省した。かれも泣きたいほど<ruby><rb>侘</rb><rt>わび</rt></ruby>しくなった。光線の暗い一室、行李や書籍の散逸せる中に、恋せる女の帰国の涙、これを慰むる言葉も無かった。</p>
+        <p>午後三時、車が三台来た。玄関に出した行李、支那鞄、信玄袋を車夫は運んで車に乗せた。<persName ref="#yoshiko">芳子</persName>は<ruby><rb>栗梅</rb><rt>くりうめ</rt></ruby>の<ruby><rb>被布</rb><rt>ひふ</rt></ruby>を着て、白いリボンを髪に<ruby><rb>揷</rb><rt>さ</rt></ruby>して、眼を<ruby><rb>泣腫</rb><rt>なきはら</rt></ruby>していた。送って出た細君の手を堅く握って、</p>
+        <p>「奥さん、左様なら……私、またきっと来てよ、きっと来てよ、来ないでおきはしないわ」</p>
+        <p>「本当にね、又出ていらっしゃいよ。一年位したら、きっとね」</p>
+        <p>と、細君も堅く手を握りかえした。その眼には涙が<ruby><rb>溢</rb><rt>あふ</rt></ruby>れた。女心の弱く、同情の念はその小さい胸に<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>り渡ったのである。</p>
+        <p>冬の日のやや薄寒き<placeName ref="#ushigome">牛込</placeName>の屋敷町、<ruby><rb>最先</rb><rt>まっさき</rt></ruby>に父親、次に<persName ref="#yoshiko">芳子</persName>、次に<persName ref="#tokio">時雄</persName>という順序で車は走り出した。細君と下婢とは<ruby><rb>名残</rb><rt>なごり</rt></ruby>を惜んでその車の後影を見送っていた。その後に隣の細君がこの<ruby><rb>俄</rb><rt>にわ</rt></ruby>かの出立を何事かと思って見ていた。猶その後の小路の曲り角に、茶色の帽子を<ruby><rb>被</rb><rt>かぶ</rt></ruby>った男が立っていた。<persName ref="#yoshiko">芳子</persName>は二度、三度まで振返った。</p>
+        <p>車が<placeName ref="#kojimachi"><ruby><rb>麹町</rb><rt>こうじまち</rt></ruby></placeName>の通を<placeName ref="#hibiya">日比谷</placeName>へ向う時、<persName ref="#tokio">時雄</persName>の胸に、今の女学生ということが浮んだ。前に行く車上の<persName ref="#yoshiko">芳子</persName>、高い二百三高地巻、白いリボン、やや猫背勝なる姿、こういう形をして、こういう事情の下に、荷物と共に父に<ruby><rb>伴</rb><rt>つ</rt></ruby>れられて帰国する女学生はさぞ多いことであろう。<persName ref="#yoshiko">芳子</persName>、あの意志の強い<persName ref="#yoshiko">芳子</persName>でさえこうした運命を得た。教育家の<ruby><rb>喧</rb><rt>やかま</rt></ruby>しく女子問題を言うのも無理はない。<persName ref="#tokio">時雄</persName>は父親の苦痛と<persName ref="#yoshiko">芳子</persName>の涙とその身の荒涼たる生活とを思った。路行く人の中にはこの荷物を満載して、父親と中年の男子に保護されて行く花の如き女学生を意味ありげに見送るものもあった。</p>
+        <p><placeName ref="#kyobashi">京橋</placeName>の旅館に着いて、荷物を<ruby><rb>纒</rb><rt>まと</rt></ruby>め、会計を済ました。この家は三年前、<persName ref="#yoshiko">芳子</persName>が始めて父に伴れられて出京した時泊った旅館で、<persName ref="#tokio">時雄</persName>は此処に二人を訪問したことがあった。三人はその時と今とを胸に比較して感慨多端であったが、しかも互に避けて<ruby><rb>面</rb><rt>おもて</rt></ruby>にあらわさなかった。五時には<placeName ref="#shimbashi">新橋</placeName>の停車場に行って、二等待合室に入った。</p>
+        <p>混雑また混雑、群衆また群衆、行く人送る人の心は皆<ruby><rb>空</rb><rt>そら</rt></ruby>になって、天井に響く物音が更に旅客の胸に反響した。<ruby><rb>悲哀</rb><rt>かなしみ</rt></ruby>と<ruby><rb>喜悦</rb><rt>よろこび</rt></ruby>と好奇心とが停車場の到る処に<ruby><rb>巴渦</rb><rt>うず</rt></ruby>を巻いていた。一刻毎に集り来る人の群、殊に六時の<placeName ref="#kobe">神戸</placeName>急行は乗客が多く、二等室も時の間に<ruby><rb>肩摩轂撃</rb><rt>けんまこくげき</rt></ruby>の光景となった。<persName ref="#tokio">時雄</persName>は二階の<placeName ref="#tsuboya"><ruby><rb>壺屋</rb><rt>つぼや</rt></ruby></placeName>からサンドウィッチを二箱買って<persName ref="#yoshiko">芳子</persName>に渡した。切符と入場切符も買った。手荷物のチッキも貰った。今は時刻を待つばかりである。</p>
+        <p>この群集の中に、もしや<persName ref="#hideo">田中</persName>の姿が見えはせぬかと三人皆思った。けれどその姿は見えなかった。</p>
+        <p>ベルが鳴った。群集はぞろぞろと改札口に集った。一刻も早く乗込もうとする心が燃えて、<ruby><rb>焦立</rb><rt>いらだ</rt></ruby>って、その混雑は一通りでなかった。三人はその間を<ruby><rb>辛</rb><rt>かろ</rt></ruby>うじて抜けて、広いプラットホオムに出た。そして最も近い二等室に入った。</p>
+        <p>後からも続々と旅客が入って来た。長い旅を寝て行こうとする商人もあった。<ruby><rb>呉</rb><rt>くれ</rt></ruby>あたりに帰るらしい軍人の佐官もあった。大阪言葉を露骨に、<ruby><rb>喋々</rb><rt>ちょうちょう</rt></ruby>と雑話に<ruby><rb>耽</rb><rt>ふ</rt></ruby>ける女連もあった。父親は白い毛布を長く敷いて、傍に小さい鞄を置いて、<persName ref="#yoshiko">芳子</persName>と相並んで腰を掛けた。電気の光が車内に差渡って、<persName ref="#yoshiko">芳子</persName>の白い顔がまるで浮彫のように見えた。父親は窓際に来て、幾度も厚意のほどを謝し、後に残ることに就いて、万事を<ruby><rb>嘱</rb><rt>しょく</rt></ruby>した。<persName ref="#tokio">時雄</persName>は茶色の中折帽、<ruby><rb>七子</rb><rt>ななこ</rt></ruby>の<ruby><rb>三紋</rb><rt>みつもん</rt></ruby>の羽織という<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>で、窓際に立尽していた。</p>
+        <p>発車の時間は刻々に迫った。<persName ref="#tokio">時雄</persName>は二人のこの旅を思い、<persName ref="#yoshiko">芳子</persName>の将来のことを思った。その身と<persName ref="#yoshiko">芳子</persName>とは尽きざる<ruby><rb>縁</rb><rt>えにし</rt></ruby>があるように思われる。妻が無ければ、無論自分は<persName ref="#yoshiko">芳子</persName>を貰ったに相違ない。<persName ref="#yoshiko">芳子</persName>もまた喜んで自分の妻になったであろう。理想の生活、文学的の生活、堪え難き創作の<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>をも慰めてくれるだろう。今の荒涼たる胸をも救ってくれる事が出来るだろう。「何故、もう少し早く生れなかったでしょう、私も奥様時分に生れていれば面白かったでしょうに……」と妻に言った<persName ref="#yoshiko">芳子</persName>の言葉を思い出した。この<persName ref="#yoshiko">芳子</persName>を妻にするような運命は永久その身に来ぬであろうか。この父親を自分の<ruby><rb>舅</rb><rt>しゅうと</rt></ruby>と呼ぶような時は来ぬだろうか。人生は長い、運命は<ruby><rb>奇</rb><rt>く</rt></ruby>しき力を持っている。処女でないということが――一度節操を破ったということが、<ruby><rb>却</rb><rt>かえ</rt></ruby>って年多く子供ある自分の妻たることを容易ならしむる条件となるかも知れぬ。運命、人生――<ruby><rb>曽</rb><rt>かつ</rt></ruby>て<persName ref="#yoshiko">芳子</persName>に教えた<persName ref="#turgenev">ツルゲネーフ</persName>の「プニンとバブリン」が<persName ref="#tokio">時雄</persName>の胸に<ruby><rb>上</rb><rt>のぼ</rt></ruby>った。<placeName ref="#russia"><ruby><rb>露西亜</rb><rt>ロシア</rt></ruby></placeName>の<ruby><rb>卓</rb><rt>すぐ</rt></ruby>れた作家の描いた人生の意味が今更のように胸を<ruby><rb>撲</rb><rt>う</rt></ruby>った。</p>
+        <p><persName ref="#tokio">時雄</persName>の後に、一群の見送人が居た。その蔭に、柱の傍に、いつ来たか、一箇の古い中折帽を冠った男が立っていた。<persName ref="#yoshiko">芳子</persName>はこれを認めて胸を<ruby><rb>轟</rb><rt>とどろ</rt></ruby>かした。父親は不快な感を抱いた。けれど、空想に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>って立尽した<persName ref="#tokio">時雄</persName>は、その後にその男が居るのを夢にも知らなかった。</p>
+        <p>車掌は発車の笛を吹いた。</p>
+        <p>汽車は動き出した。</p>
+      </div>
+      <div type="chapter" xml:id="sec11" n="11">
+        <head>十一</head>
+        <p>さびしい生活、荒涼たる生活は再び<persName ref="#tokio">時雄</persName>の家に<ruby><rb>音信</rb><rt>おとず</rt></ruby>れた。子供を持てあまして<ruby><rb>喧</rb><rt>やかま</rt></ruby>しく<ruby><rb>叱</rb><rt>しか</rt></ruby>る細君の声が耳について、不愉快な感を<persName ref="#tokio">時雄</persName>に与えた。</p>
+        <p>生活は三年前の<ruby><rb>旧</rb><rt>むかし</rt></ruby>の<ruby><rb>轍</rb><rt>わだち</rt></ruby>にかえったのである。</p>
+        <p>五日目に、<persName ref="#yoshiko">芳子</persName>から手紙が来た。いつもの人<ruby><rb>懐</rb><rt>なつ</rt></ruby>かしい言文一致でなく、礼儀正しい<ruby><rb>候文</rb><rt>そうろうぶん</rt></ruby>で、</p>
+        <p>「昨夜<ruby><rb>恙</rb><rt>つつが</rt></ruby>なく帰宅致し候<ruby><rb>儘</rb><rt>まま</rt></ruby>御安心<ruby><rb>被下度</rb><rt>くだされたく</rt></ruby>、<ruby><rb>此</rb><rt>こ</rt></ruby>の<ruby><rb>度</rb><rt>たび</rt></ruby>はまことに御忙しき折柄種々御心配ばかり相懸け候うて申訳も<ruby><rb>無之</rb><rt>これなく</rt></ruby>、幾重にも<ruby><rb>御詫</rb><rt>おわび</rt></ruby>申上候、御前に御高恩をも謝し奉り、<ruby><rb>御詫</rb><rt>おわび</rt></ruby>も致し度候いしが、<ruby><rb>兎角</rb><rt>とかく</rt></ruby>は胸迫りて最後の会合すら<ruby><rb>辞</rb><rt>いな</rt></ruby>み候心、お察し被下度候、<placeName ref="#shimbashi">新橋</placeName>にての別離、<ruby><rb>硝子戸</rb><rt>ガラスど</rt></ruby>の前に立ち候毎に、茶色の帽子うつり候ようの心地致し、今<ruby><rb>猶</rb><rt>なお</rt></ruby>まざまざと御姿見るのに候、山北辺より雪降り候うて、<ruby><rb>湛井</rb><rt>たたい</rt></ruby>よりの山道十五里、悲しきことのみ思い<ruby><rb>出</rb><rt>い</rt></ruby>で、かの一茶が『これがまアつひの住家か雪五尺』の名句痛切に身にしみ申候、父よりいずれ御礼の文奉り度<ruby><rb>存居</rb><rt>ぞんじおり</rt></ruby>候えども今日は町の<ruby><rb>市日</rb><rt>いちび</rt></ruby>にて手引き難く、<ruby><rb>乍失礼</rb><rt>しつれいながら</rt></ruby>私より<ruby><rb>宜敷</rb><rt>よろしく</rt></ruby>御礼申上候、まだまだ御目汚し度きこと沢山に有之候えども激しく胸騒ぎ致し候まま今日はこれにて筆<ruby><rb>擱</rb><rt>お</rt></ruby>き申候」と書いてあった。</p>
+        <p><persName ref="#tokio">時雄</persName>は雪の深い十五里の山道と雪に埋れた山中の田舎町とを思い<ruby><rb>遣</rb><rt>や</rt></ruby>った。別れた後そのままにして置いた二階に上った。懐かしさ、恋しさの余り、<ruby><rb>微</rb><rt>かす</rt></ruby>かに残ったその人の<ruby><rb>面影</rb><rt>おもかげ</rt></ruby>を<ruby><rb>偲</rb><rt>しの</rt></ruby>ぼうと思ったのである。<placeName ref="#musashino"><ruby><rb>武蔵野</rb><rt>むさしの</rt></ruby></placeName>の寒い風の<ruby><rb>盛</rb><rt>さかん</rt></ruby>に吹く日で、裏の古樹には潮の鳴るような音が<ruby><rb>凄</rb><rt>すさま</rt></ruby>じく聞えた。別れた日のように東の窓の雨戸を一枚明けると、光線は流るるように射し込んだ。机、本箱、<ruby><rb>罎</rb><rt>びん</rt></ruby>、<ruby><rb>紅皿</rb><rt>べにざら</rt></ruby>、依然として元のままで、恋しい人はいつもの様に学校に行っているのではないかと思われる。<persName ref="#tokio">時雄</persName>は机の<ruby><rb>抽斗</rb><rt>ひきだし</rt></ruby>を明けてみた。古い油の染みたリボンがその中に捨ててあった。<persName ref="#tokio">時雄</persName>はそれを取って<ruby><rb>匂</rb><rt>にお</rt></ruby>いを<ruby><rb>嗅</rb><rt>か</rt></ruby>いだ。<ruby><rb>暫</rb><rt>しばら</rt></ruby>くして立上って襖を明けてみた。大きな柳行李が三箇細引で送るばかりに<ruby><rb>絡</rb><rt>から</rt></ruby>げてあって、その向うに、<persName ref="#yoshiko">芳子</persName>が常に用いていた<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>――<ruby><rb>萌黄唐草</rb><rt>もえぎからくさ</rt></ruby>の敷蒲団と、綿の厚く入った同じ模様の夜着とが重ねられてあった。<persName ref="#tokio">時雄</persName>はそれを引出した。女のなつかしい油の匂いと汗のにおいとが言いも知らず<persName ref="#tokio">時雄</persName>の胸をときめかした。夜着の<ruby><rb>襟</rb><rt>えり</rt></ruby>の<ruby><rb>天鵞絨</rb><rt>びろうど</rt></ruby>の<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って汚れているのに顔を押附けて、心のゆくばかりなつかしい女の匂いを<ruby><rb>嗅</rb><rt>か</rt></ruby>いだ。</p>
+        <p>性慾と悲哀と絶望とが<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち<persName ref="#tokio">時雄</persName>の胸を襲った。<persName ref="#tokio">時雄</persName>はその蒲団を敷き、夜着をかけ、冷めたい汚れた天鵞絨の襟に顔を埋めて泣いた。</p>
+        <p>薄暗い一室、戸外には風が<ruby><rb>吹暴</rb><rt>ふきあ</rt></ruby>れていた。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

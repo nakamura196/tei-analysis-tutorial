@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>やまなし</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>やまなし</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「新編風の又三郎」新潮文庫、新潮社。1989（平成元）年2月25日発行。1989（平成元）年6月10日2刷。初出：「岩手毎日新聞」岩手毎日新聞社。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card46605.html">https://www.aozora.gr.jp/cards/000081/card46605.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="kurambon">
+        <persName>クラムボン</persName>
+        <note>蟹の子供らの会話に現れる正体不明の存在。わらい、死に、殺されたと語られる。作者の造語で実体は諸説あるが、固有の名を持つ存在として登場する</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="isado">
+        <placeName>イサド</placeName>
+        <note>お父さんの蟹が子供らを連れて行くと言う場所。作者の造語による架空(所在不明)の地名のため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <p>小さな谷川の底を写した二枚の青い<ruby><rb>幻燈</rb><rt>げんとう</rt></ruby>です。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>一、五月</head>
+        <p>二<ruby><rb>疋</rb><rt>ひき</rt></ruby>の<ruby><rb>蟹</rb><rt>かに</rt></ruby>の子供らが青じろい水の底で話していました。</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>はわらったよ。』</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>はかぷかぷわらったよ。』</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>は<ruby><rb>跳</rb><rt>は</rt></ruby>ねてわらったよ。』</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>はかぷかぷわらったよ。』</p>
+        <p>上の方や横の方は、青くくらく<ruby><rb>鋼</rb><rt>はがね</rt></ruby>のように見えます。そのなめらかな<ruby><rb>天井</rb><rt>てんじょう</rt></ruby>を、つぶつぶ暗い<ruby><rb>泡</rb><rt>あわ</rt></ruby>が流れて行きます。</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>はわらっていたよ。』</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>はかぷかぷわらったよ。』</p>
+        <p>『それならなぜ<persName ref="#kurambon">クラムボン</persName>はわらったの。』</p>
+        <p>『知らない。』</p>
+        <p>つぶつぶ泡が流れて行きます。蟹の子供らもぽっぽっぽっとつづけて五六<ruby><rb>粒</rb><rt>つぶ</rt></ruby>泡を<ruby><rb>吐</rb><rt>は</rt></ruby>きました。それはゆれながら水銀のように光って<ruby><rb>斜</rb><rt>なな</rt></ruby>めに上の方へのぼって行きました。</p>
+        <p>つうと銀のいろの腹をひるがえして、一疋の魚が頭の上を過ぎて行きました。</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>は死んだよ。』</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>は殺されたよ。』</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>は死んでしまったよ………。』</p>
+        <p>『殺されたよ。』</p>
+        <p>『それならなぜ殺された。』兄さんの蟹は、その右側の四本の<ruby><rb>脚</rb><rt>あし</rt></ruby>の中の二本を、弟の平べったい頭にのせながら<ruby><rb>云</rb><rt>い</rt></ruby>いました。</p>
+        <p>『わからない。』</p>
+        <p>魚がまたツウと<ruby><rb>戻</rb><rt>もど</rt></ruby>って下流のほうへ行きました。</p>
+        <p>『<persName ref="#kurambon">クラムボン</persName>はわらったよ。』</p>
+        <p>『わらった。』</p>
+        <p>にわかにパッと明るくなり、日光の<ruby><rb>黄金</rb><rt>きん</rt></ruby>は<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>のように水の中に降って来ました。</p>
+        <p>波から来る光の<ruby><rb>網</rb><rt>あみ</rt></ruby>が、底の白い<ruby><rb>磐</rb><rt>いわ</rt></ruby>の上で美しくゆらゆらのびたりちぢんだりしました。泡や小さなごみからはまっすぐな<ruby><rb>影</rb><rt>かげ</rt></ruby>の棒が、斜めに水の中に<ruby><rb>並</rb><rt>なら</rt></ruby>んで立ちました。</p>
+        <p>魚がこんどはそこら中の<ruby><rb>黄金</rb><rt>きん</rt></ruby>の光をまるっきりくちゃくちゃにしておまけに自分は鉄いろに変に底びかりして、<ruby><rb>又</rb><rt>また</rt></ruby><ruby><rb>上流</rb><rt>かみ</rt></ruby>の方へのぼりました。</p>
+        <p>『お魚はなぜああ行ったり来たりするの。』</p>
+        <p>弟の蟹がまぶしそうに<ruby><rb>眼</rb><rt>め</rt></ruby>を動かしながらたずねました。</p>
+        <p>『何か悪いことをしてるんだよとってるんだよ。』</p>
+        <p>『とってるの。』</p>
+        <p>『うん。』</p>
+        <p>そのお魚がまた<ruby><rb>上流</rb><rt>かみ</rt></ruby>から戻って来ました。今度はゆっくり落ちついて、ひれも<ruby><rb>尾</rb><rt>お</rt></ruby>も動かさずただ水にだけ流されながらお口を<ruby><rb>環</rb><rt>わ</rt></ruby>のように円くしてやって来ました。その影は黒くしずかに底の光の網の上をすべりました。</p>
+        <p>『お魚は……。』</p>
+        <p>その時です。<ruby><rb>俄</rb><rt>にわか</rt></ruby>に天井に白い泡がたって、青びかりのまるでぎらぎらする<ruby><rb>鉄砲弾</rb><rt>てっぽうだま</rt></ruby>のようなものが、いきなり<ruby><rb>飛込</rb><rt>とびこ</rt></ruby>んで来ました。</p>
+        <p>兄さんの蟹ははっきりとその青いもののさきがコンパスのように黒く<ruby><rb>尖</rb><rt>とが</rt></ruby>っているのも見ました。と思ううちに、魚の白い腹がぎらっと光って一ぺんひるがえり、上の方へのぼったようでしたが、それっきりもう青いものも魚のかたちも見えず光の<ruby><rb>黄金</rb><rt>きん</rt></ruby>の網はゆらゆらゆれ、泡はつぶつぶ流れました。</p>
+        <p>二疋はまるで声も出ず居すくまってしまいました。</p>
+        <p>お父さんの蟹が出て来ました。</p>
+        <p>『どうしたい。ぶるぶるふるえているじゃないか。』</p>
+        <p>『お父さん、いまおかしなものが来たよ。』</p>
+        <p>『どんなもんだ。』</p>
+        <p>『青くてね、光るんだよ。はじがこんなに黒く尖ってるの。それが来たらお魚が上へのぼって行ったよ。』</p>
+        <p>『そいつの眼が赤かったかい。』</p>
+        <p>『わからない。』</p>
+        <p>『ふうん。しかし、そいつは鳥だよ。かわせみと云うんだ。<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>だ、安心しろ。おれたちはかまわないんだから。』</p>
+        <p>『お父さん、お魚はどこへ行ったの。』</p>
+        <p>『魚かい。魚はこわい所へ行った』</p>
+        <p>『こわいよ、お父さん。』</p>
+        <p>『いいいい、大丈夫だ。心配するな。そら、<ruby><rb>樺</rb><rt>かば</rt></ruby>の花が流れて来た。ごらん、きれいだろう。』</p>
+        <p>泡と<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に、白い樺の花びらが天井をたくさんすべって来ました。</p>
+        <p>『こわいよ、お父さん。』弟の蟹も云いました。</p>
+        <p>光の網はゆらゆら、のびたりちぢんだり、花びらの影はしずかに砂をすべりました。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>二、十二月</head>
+        <p>蟹の子供らはもうよほど大きくなり、底の景色も夏から秋の間にすっかり変りました。</p>
+        <p>白い<ruby><rb>柔</rb><rt>やわら</rt></ruby>かな<ruby><rb>円石</rb><rt>まるいし</rt></ruby>もころがって来、小さな<ruby><rb>錐</rb><rt>きり</rt></ruby>の形の<ruby><rb>水晶</rb><rt>すいしょう</rt></ruby>の粒や、<ruby><rb>金雲母</rb><rt>きんうんも</rt></ruby>のかけらもながれて来てとまりました。</p>
+        <p>そのつめたい水の底まで、ラムネの<ruby><rb>瓶</rb><rt>びん</rt></ruby>の月光がいっぱいに<ruby><rb>透</rb><rt>すき</rt></ruby>とおり天井では波が青じろい火を、燃したり消したりしているよう、あたりはしんとして、ただいかにも遠くからというように、その波の音がひびいて来るだけです。</p>
+        <p>蟹の子供らは、あんまり月が明るく水がきれいなので<ruby><rb>睡</rb><rt>ねむ</rt></ruby>らないで外に出て、しばらくだまって泡をはいて天上の方を見ていました。</p>
+        <p>『やっぱり<ruby><rb>僕</rb><rt>ぼく</rt></ruby>の泡は大きいね。』</p>
+        <p>『兄さん、わざと大きく吐いてるんだい。僕だってわざとならもっと大きく吐けるよ。』</p>
+        <p>『吐いてごらん。おや、たったそれきりだろう。いいかい、兄さんが吐くから見ておいで。そら、ね、大きいだろう。』</p>
+        <p>『大きかないや、おんなじだい。』</p>
+        <p>『近くだから自分のが大きく見えるんだよ。そんなら一緒に吐いてみよう。いいかい、そら。』</p>
+        <p>『やっぱり僕の方大きいよ。』</p>
+        <p>『本当かい。じゃ、も一つはくよ。』</p>
+        <p>『だめだい、そんなにのびあがっては。』</p>
+        <p>またお父さんの蟹が出て来ました。</p>
+        <p>『もうねろねろ。<ruby><rb>遅</rb><rt>おそ</rt></ruby>いぞ、あした<placeName ref="#isado">イサド</placeName>へ連れて行かんぞ。』</p>
+        <p>『お父さん、僕たちの泡どっち大きいの』</p>
+        <p>『それは兄さんの方だろう』</p>
+        <p>『そうじゃないよ、僕の方大きいんだよ』弟の蟹は泣きそうになりました。</p>
+        <p>そのとき、トブン。</p>
+        <p>黒い円い大きなものが、天井から落ちてずうっとしずんで又上へのぼって行きました。キラキラッと<ruby><rb>黄金</rb><rt>きん</rt></ruby>のぶちがひかりました。</p>
+        <p>『かわせみだ』子供らの蟹は<ruby><rb>頸</rb><rt>くび</rt></ruby>をすくめて云いました。</p>
+        <p>お父さんの蟹は、遠めがねのような両方の眼をあらん限り延ばして、よくよく見てから云いました。</p>
+        <p>『そうじゃない、あれはやまなしだ、流れて行くぞ、ついて行って見よう、ああいい<ruby><rb>匂</rb><rt>にお</rt></ruby>いだな』</p>
+        <p>なるほど、そこらの月あかりの水の中は、やまなしのいい匂いでいっぱいでした。</p>
+        <p>三疋はぼかぼか流れて行くやまなしのあとを追いました。</p>
+        <p>その横あるきと、底の黒い三つの<ruby><rb>影法師</rb><rt>かげぼうし</rt></ruby>が、合せて六つ<ruby><rb>踊</rb><rt>おど</rt></ruby>るようにして、やまなしの円い影を追いました。</p>
+        <p>間もなく水はサラサラ鳴り、天井の波はいよいよ青い<ruby><rb>焔</rb><rt>ほのお</rt></ruby>をあげ、やまなしは横になって木の<ruby><rb>枝</rb><rt>えだ</rt></ruby>にひっかかってとまり、その上には月光の<ruby><rb>虹</rb><rt>にじ</rt></ruby>がもかもか集まりました。</p>
+        <p>『どうだ、やっぱりやまなしだよ、よく熟している、いい匂いだろう。』</p>
+        <p>『おいしそうだね、お父さん』</p>
+        <p>『待て待て、もう二日ばかり待つとね、こいつは下へ<ruby><rb>沈</rb><rt>しず</rt></ruby>んで来る、それからひとりでにおいしいお酒ができるから、さあ、もう帰って<ruby><rb>寝</rb><rt>ね</rt></ruby>よう、おいで』</p>
+        <p>親子の蟹は三疋自分<ruby><rb>等</rb><rt>ら</rt></ruby>の穴に帰って行きます。</p>
+        <p>波はいよいよ青じろい焔をゆらゆらとあげました、それは又<ruby><rb>金剛石</rb><rt>こんごうせき</rt></ruby>の粉をはいているようでした。</p>
+        <p>＊</p>
+        <p>私の幻燈はこれでおしまいであります。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

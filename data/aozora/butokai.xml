@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>舞踏会</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>舞踏会</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「現代日本文学大系　43　芥川龍之介集」筑摩書房。1968（昭和43）年8月25日初版第1刷発行。入力：j.utiyama。校正：野口英司。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card28.html">https://www.aozora.gr.jp/cards/000879/card28.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="akiko">
+        <persName>明子</persName>
+        <note>主人公。明治十九年の鹿鳴館の舞踏会に父と臨んだ十七歳の令嬢。後年(大正七年)のＨ老夫人と同一人物</note>
+      </person>
+      <person xml:id="loti">
+        <persName>ピエル・ロテイ</persName>
+        <note>ピエール・ロチ(Pierre Loti、本名 Julien Viaud、1850–1923)。フランスの海軍士官・作家。『お菊夫人』の著者。第一章の「仏蘭西の海軍将校」その人とされる</note>
+      </person>
+      <person xml:id="watteau">
+        <persName>ワツトオ</persName>
+        <note>ジャン＝アントワーヌ・ワトー(Jean-Antoine Watteau、1684–1721)。フランスのロココ期の画家</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="rokumeikan">
+        <placeName>鹿鳴館</placeName>
+        <location><geo>35.6705 139.757</geo></location>
+        <note>東京府麹町区内山下町(現・千代田区内幸町)にあった洋館。1940年取り壊し。跡地・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="paris">
+        <placeName>巴里</placeName>
+        <location><geo>48.8566 2.3522</geo></location>
+        <note>フランス・パリ。概値</note>
+      </place>
+      <place xml:id="kamakura">
+        <placeName>鎌倉</placeName>
+        <location><geo>35.3192 139.5467</geo></location>
+        <note>神奈川県鎌倉市・概値</note>
+      </place>
+      <place xml:id="china">
+        <placeName>支那</placeName>
+        <location><geo>35.8617 104.1954</geo></location>
+        <note>中国。国名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>舞踏会</head>
+        <p>一</p>
+        <p><date when="1886-11-03">明治十九年十一月三日</date>の夜であつた。当時十七歳だつた――<ruby><rb>家</rb><rt>け</rt></ruby>の令嬢<persName ref="#akiko"><ruby><rb>明子</rb><rt>あきこ</rt></ruby></persName>は、頭の禿げた父親と一しよに、今夜の舞踏会が催さるべき<placeName ref="#rokumeikan"><ruby><rb>鹿鳴館</rb><rt>ろくめいくあん</rt></ruby></placeName>の階段を上つて行つた。<ruby><rb>明</rb><rt>あかる</rt></ruby>い<ruby><rb>瓦斯</rb><rt>ガス</rt></ruby>の光に照らされた、幅の広い階段の両側には、<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>人工に近い大輪の菊の花が、三重の<ruby><rb>籬</rb><rt>まがき</rt></ruby>を造つてゐた。菊は一番奥のがうす<ruby><rb>紅</rb><rt>べに</rt></ruby>、中程のが濃い黄色、一番前のがまつ白な花びらを<ruby><rb>流蘇</rb><rt>ふさ</rt></ruby>の如く乱してゐるのであつた。さうしてその菊の籬の尽きるあたり、階段の上の舞踏室からは、もう陽気な管絃楽の音が、抑へ難い幸福の吐息のやうに、休みなく溢れて来るのであつた。</p>
+        <p><persName ref="#akiko">明子</persName>は<ruby><rb>夙</rb><rt>つと</rt></ruby>に<ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby>語と舞踏との教育を受けてゐた。が、正式の舞踏会に臨むのは、今夜がまだ生まれて始めてであつた。だから彼女は馬車の中でも、折々話しかける父親に、<ruby><rb>上</rb><rt>うは</rt></ruby>の空の返事ばかり与へてゐた。それ程彼女の胸の中には、愉快なる不安とでも形容すべき、一種の落着かない心もちが根を張つてゐたのであつた。彼女は馬車が<placeName ref="#rokumeikan">鹿鳴館</placeName>の前に止るまで、何度いら立たしい眼を挙げて、窓の外に流れて行く<placeName ref="#tokyo">東京</placeName>の町の乏しい<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>を、見つめた事だか知れなかつた。</p>
+        <p>が、<placeName ref="#rokumeikan">鹿鳴館</placeName>の中へはひると、間もなく彼女はその不安を忘れるやうな事件に遭遇した。と云ふのは階段の丁度中程まで来かかつた時、二人は一足先に上つて行く<placeName ref="#china">支那</placeName>の大官に追ひついた。すると大官は肥満した体を開いて、二人を先へ通らせながら、<ruby><rb>呆</rb><rt>あき</rt></ruby>れたやうな視線を<persName ref="#akiko">明子</persName>へ投げた。<ruby><rb>初々</rb><rt>うひうひ</rt></ruby>しい薔薇色の舞踏服、品好く頸へかけた水色のリボン、それから濃い髪に匂つてゐるたつた一輪の薔薇の花――実際その夜の<persName ref="#akiko">明子</persName>の姿は、この長い<ruby><rb>辮髪</rb><rt>べんぱつ</rt></ruby>を垂れた<placeName ref="#china">支那</placeName>の大官の眼を驚かすべく、開化の日本の少女の美を<ruby><rb>遺憾</rb><rt>ゐかん</rt></ruby>なく具へてゐたのであつた。と思ふと又階段を急ぎ足に下りて来た、若い燕尾服の日本人も、途中で二人にすれ違ひながら、反射的にちよいと振り返つて、やはり<ruby><rb>呆</rb><rt>あき</rt></ruby>れたやうな<ruby><rb>一瞥</rb><rt>いちべつ</rt></ruby>を<persName ref="#akiko">明子</persName>の後姿に浴せかけた。それから何故か思ひついたやうに、白い<ruby><rb>襟飾</rb><rt>ネクタイ</rt></ruby>へ手をやつて見て、又菊の中を忙しく玄関の方へ下りて行つた。</p>
+        <p>二人が階段を上り切ると、二階の舞踏室の入口には、半白の<ruby><rb>頬鬚</rb><rt>ほほひげ</rt></ruby>を蓄へた主人役の伯爵が、胸間に幾つかの勲章を帯びて、<ruby><rb>路易</rb><rt>ルイ</rt></ruby>十五世式の装ひを<ruby><rb>凝</rb><rt>こ</rt></ruby>らした年上の伯爵夫人と一しよに、<ruby><rb>大様</rb><rt>おほやう</rt></ruby>に客を迎へてゐた。<persName ref="#akiko">明子</persName>はこの伯爵でさへ、彼女の姿を見た時には、その<ruby><rb>老獪</rb><rt>らうくあい</rt></ruby>らしい顔の何処かに、一瞬間無邪気な驚嘆の色が去来したのを見のがさなかつた。人の好い<persName ref="#akiko">明子</persName>の父親は、嬉しさうな微笑を浮べながら、伯爵とその夫人とへ<ruby><rb>手短</rb><rt>てみじか</rt></ruby>に娘を紹介した。彼女は<ruby><rb>羞恥</rb><rt>しうち</rt></ruby>と得意とを<ruby><rb>交</rb><rt>かは</rt></ruby>る<ruby><rb>交</rb><rt>がは</rt></ruby>る味つた。が、その暇にも<ruby><rb>権高</rb><rt>けんだか</rt></ruby>な伯爵夫人の顔だちに、一点下品な気があるのを感づくだけの余裕があつた。</p>
+        <p>舞踏室の中にも至る所に、菊の花が美しく咲き乱れてゐた。さうして又至る所に、相手を待つてゐる婦人たちのレエスや花や象牙の扇が、爽かな香水の匂の中に、音のない波の如く動いてゐた。<persName ref="#akiko">明子</persName>はすぐに父親と分れて、その<ruby><rb>綺羅</rb><rt>きら</rt></ruby>びやかな婦人たちの或一団と一しよになつた。それは皆同じやうな水色や薔薇色の舞踏服を着た、同年輩らしい少女であつた。彼等は彼女を迎へると、小鳥のやうにさざめき立つて、口口に今夜の彼女の姿が美しい事を褒め立てたりした。</p>
+        <p>が、彼女がその仲間へはひるや否や、見知らない<ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby>の海軍将校が、何処からか静に歩み寄つた。さうして両腕を垂れた儘、叮嚀に日本風の<ruby><rb>会釈</rb><rt>ゑしやく</rt></ruby>をした。<persName ref="#akiko">明子</persName>はかすかながら血の色が、頬に上つて来るのを意識した。しかしその会釈が何を意味するかは、問ふまでもなく明かだつた。だから彼女は手にしてゐた扇を預つて貰ふべく、隣に立つてゐる水色の舞踏服の令嬢をふり返つた。と同時に意外にも、その仏蘭西の海軍将校は、ちらりと頬に微笑の影を浮べながら、異様なアクサンを帯びた日本語で、はつきりと彼女にかう云つた。</p>
+        <p>「一しよに踊つては下さいませんか。」</p>
+        <p>間もなく<persName ref="#akiko">明子</persName>は、その仏蘭西の海軍将校と、「美しく青きダニウブ」のヴアルスを踊つてゐた。相手の将校は、頬の日に焼けた、眼鼻立ちの<ruby><rb>鮮</rb><rt>あざやか</rt></ruby>な、濃い口髭のある男であつた。彼女はその相手の軍服の左の肩に、長い手袋を<ruby><rb>嵌</rb><rt>は</rt></ruby>めた手を預くべく、余りに背が低かつた。が、場馴れてゐる海軍将校は、巧に彼女をあしらつて、軽々と群集の中を舞ひ歩いた。さうして時々彼女の耳に、愛想の好い仏蘭西語の御世辞さへも<ruby><rb>囁</rb><rt>ささや</rt></ruby>いた。</p>
+        <p>彼女はその優しい言葉に、恥しさうな微笑を酬いながら、時々彼等が踊つてゐる舞踏室の周囲へ眼を投げた。皇室の御紋章を染め抜いた紫<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の<ruby><rb>幔幕</rb><rt>まんまく</rt></ruby>や、爪を張つた<ruby><rb>蒼竜</rb><rt>さうりゆう</rt></ruby>が身をうねらせてゐる<placeName ref="#china">支那</placeName>の国旗の下には、花瓶々々の菊の花が、或は軽快な銀色を、或は<ruby><rb>陰欝</rb><rt>いんうつ</rt></ruby>な金色を、人波の間にちらつかせてゐた。しかもその人波は、<ruby><rb>三鞭酒</rb><rt>シヤンパアニユ</rt></ruby>のやうに湧き立つて来る、花々しい<ruby><rb>独逸</rb><rt>ドイツ</rt></ruby>管絃楽の旋律の風に煽られて、暫くも目まぐるしい動揺を止めなかつた。<persName ref="#akiko">明子</persName>はやはり踊つてゐる友達の一人と眼を合はすと、互に愉快さうな<ruby><rb>頷</rb><rt>うなづ</rt></ruby>きを忙しい中に送り合つた。が、その瞬間には、もう違つた踊り手が、まるで大きな<ruby><rb>蛾</rb><rt>が</rt></ruby>が狂ふやうに、何処からか其処へ現れてゐた。</p>
+        <p>しかし<persName ref="#akiko">明子</persName>はその間にも、相手の仏蘭西の海軍将校の眼が、彼女の一挙一動に注意してゐるのを知つてゐた。それは全くこの日本に慣れない外国人が、如何に彼女の快活な舞踏ぶりに、興味があつたかを語るものであつた。こんな美しい令嬢も、やはり紙と竹との家の中に、人形の如く住んでゐるのであらうか。さうして細い金属の箸で、青い花の描いてある手のひら程の茶碗から、米粒を挾んで食べてゐるのであらうか。――彼の眼の中にはかう云ふ疑問が、何度も人懐しい微笑と共に往来するやうであつた。<persName ref="#akiko">明子</persName>にはそれが<ruby><rb>可笑</rb><rt>をか</rt></ruby>しくもあれば、同時に又誇らしくもあつた。だから彼女の<ruby><rb>華奢</rb><rt>きやしや</rt></ruby>な薔薇色の踊り靴は、物珍しさうな相手の視線が折々足もとへ落ちる度に、一層身軽く<ruby><rb>滑</rb><rt>なめらか</rt></ruby>な床の上を<ruby><rb>辷</rb><rt>すべ</rt></ruby>つて行くのであつた。</p>
+        <p>が、やがて相手の将校は、この児猫のやうな令嬢の疲れたらしいのに気がついたと見えて、<ruby><rb>劬</rb><rt>いたは</rt></ruby>るやうに顔を覗きこみながら、</p>
+        <p>「もつと続けて踊りませうか。」</p>
+        <p>「ノン・メルシイ。」</p>
+        <p><persName ref="#akiko">明子</persName>は息をはずませながら、今度ははつきりとかう答へた。</p>
+        <p>するとその仏蘭西の海軍将校は、まだヴアルスの歩みを続けながら、前後左右に動いてゐるレエスや花の波を縫つて、<ruby><rb>壁側</rb><rt>かべぎは</rt></ruby>の花瓶の菊の方へ、悠々と彼女を連れて行つた。さうして最後の一廻転の後、其処にあつた椅子の上へ、<ruby><rb>鮮</rb><rt>あざやか</rt></ruby>に彼女を掛けさせると、自分は一旦軍服の胸を張つて、それから又前のやうに<ruby><rb>恭</rb><rt>うやうや</rt></ruby>しく日本風の会釈をした。</p>
+        <p>その後又ポルカやマズユルカを踊つてから、<persName ref="#akiko">明子</persName>はこの仏蘭西の海軍将校と腕を組んで、白と黄とうす紅と三重の菊の<ruby><rb>籬</rb><rt>まがき</rt></ruby>の間を、階下の広い部屋へ下りて行つた。</p>
+        <p>此処には燕尾服や白い肩がしつきりなく去来する中に、銀や<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>の食器類に<ruby><rb>蔽</rb><rt>おほ</rt></ruby>はれた幾つかの食卓が、或は肉と<ruby><rb>松露</rb><rt>しようろ</rt></ruby>との山を盛り上げたり、或はサンドウイツチとアイスクリイムとの塔を<ruby><rb>聳</rb><rt>そばだ</rt></ruby>てたり、或は又<ruby><rb>柘榴</rb><rt>ざくろ</rt></ruby>と<ruby><rb>無花果</rb><rt>いちじゆく</rt></ruby>との三角塔を築いたりしてゐた。殊に菊の花が埋め残した、部屋の一方の壁上には、巧な人工の<ruby><rb>葡萄蔓</rb><rt>ぶだうつる</rt></ruby>が青々とからみついてゐる、美しい金色の格子があつた。さうしてその葡萄の葉の間には、蜂の巣のやうな葡萄の房が、<ruby><rb>累々</rb><rt>るゐるゐ</rt></ruby>と紫に下つてゐた。<persName ref="#akiko">明子</persName>はその金色の格子の前に、頭の禿げた彼女の父親が、同年輩の紳士と並んで、葉巻を<ruby><rb>啣</rb><rt>くは</rt></ruby>へてゐるのに遇つた。父親は<persName ref="#akiko">明子</persName>の姿を見ると、満足さうにちよいと頷いたが、それぎり連れの方を向いて、又葉巻を<ruby><rb>燻</rb><rt>くゆ</rt></ruby>らせ始めた。</p>
+        <p>仏蘭西の海軍将校は、<persName ref="#akiko">明子</persName>と食卓の一つへ行つて、一しよにアイスクリイムの<ruby><rb>匙</rb><rt>さじ</rt></ruby>を取つた。彼女はその間も相手の眼が、折々彼女の手や髪や水色のリボンを掛けた<ruby><rb>頸</rb><rt>くび</rt></ruby>へ注がれてゐるのに気がついた。それは勿論彼女にとつて、不快な事でも何でもなかつた。が、或刹那には女らしい疑ひも<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>かずにはゐられなかつた。そこで黒い<ruby><rb>天鵞絨</rb><rt>びろうど</rt></ruby>の胸に赤い椿の花をつけた、独逸人らしい若い女が二人の傍を通つた時、彼女はこの疑ひを<ruby><rb>仄</rb><rt>ほの</rt></ruby>めかせる為に、かう云ふ感歎の言葉を発明した。</p>
+        <p>「西洋の女の方はほんたうに御美しうございますこと。」</p>
+        <p>海軍将校はこの言葉を聞くと、思ひの外真面目に首を振つた。</p>
+        <p>「日本の女の方も美しいです。殊にあなたなぞは――」</p>
+        <p>「そんな事はこざいませんわ。」</p>
+        <p>「いえ、御世辞ではありません。その儘すぐに<placeName ref="#paris"><ruby><rb>巴里</rb><rt>パリ</rt></ruby></placeName>の舞踏会へも出られます。さうしたら皆が驚くでせう。<persName ref="#watteau">ワツトオ</persName>の画の中の御姫様のやうですから。」</p>
+        <p><persName ref="#akiko">明子</persName>は<persName ref="#watteau">ワツトオ</persName>を知らなかつた。だから海軍将校の言葉が呼び起した、美しい過去の幻も――仄暗い森の噴水と<ruby><rb>凋</rb><rt>すが</rt></ruby>れて行く薔薇との幻も、一瞬の後には名残りなく消え失せてしまはなければならなかつた。が、人一倍感じの鋭い彼女は、アイスクリイムの匙を動かしながら、僅にもう一つ残つてゐる話題に<ruby><rb>縋</rb><rt>すが</rt></ruby>る事を忘れなかつた。</p>
+        <p>「私も<placeName ref="#paris">巴里</placeName>の舞踏会へ参つて見たうございますわ。」</p>
+        <p>「いえ、<placeName ref="#paris">巴里</placeName>の舞踏会も全くこれと同じ事です。」</p>
+        <p>海軍将校はかう云ひながら、二人の食卓を<ruby><rb>繞</rb><rt>めぐ</rt></ruby>つてゐる人波と菊の花とを見廻したが、忽ち皮肉な微笑の波が瞳の底に動いたと思ふと、アイスクリイムの匙を止めて、</p>
+        <p>「<placeName ref="#paris">巴里</placeName>ばかりではありません。舞踏会は何処でも同じ事です。」と半ば独り語のやうにつけ加へた。</p>
+        <p>一時間の後、<persName ref="#akiko">明子</persName>と<ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby>の海軍将校とは、やはり腕を組んだ儘、大勢の日本人や外国人と一しよに、舞踏室の外にある星月夜の露台に佇んでゐた。</p>
+        <p>欄干一つ<ruby><rb>隔</rb><rt>へだ</rt></ruby>てた露台の向うには、広い庭園を埋めた針葉樹が、ひつそりと枝を交し合つて、その<ruby><rb>梢</rb><rt>こずゑ</rt></ruby>に点々と<ruby><rb>鬼灯提燈</rb><rt>ほほづきぢやうちん</rt></ruby>の火を<ruby><rb>透</rb><rt>す</rt></ruby>かしてゐた。しかも冷かな空気の底には、下の庭園から上つて来る苔の匂や落葉の匂が、かすかに寂しい秋の呼吸を漂はせてゐるやうであつた。が、すぐ後の舞踏室では、やはりレエスや花の波が、十六菊を染め抜いた紫<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の幕の下に、休みない動揺を続けてゐた。さうして又調子の高い管絃楽のつむじ風が、<ruby><rb>相不変</rb><rt>あひかはらず</rt></ruby>その人間の海の上へ、<ruby><rb>用捨</rb><rt>ようしや</rt></ruby>もなく鞭を加へてゐた。</p>
+        <p>勿論この露台の上からも、絶えず賑な話し声や笑ひ声が夜気を<ruby><rb>揺</rb><rt>ゆす</rt></ruby>つてゐた。まして暗い針葉樹の空に美しい花火が揚る時には、<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>人どよめきにも近い音が、一同の口から洩れた事もあつた。その中に交つて立つてゐた<persName ref="#akiko">明子</persName>も、其処にゐた懇意の令嬢たちとは、さつきから気軽な雑談を交換してゐた。が、やがて気がついて見ると、あの仏蘭西の海軍将校は、<persName ref="#akiko">明子</persName>に腕を借した儘、庭園の上の星月夜へ<ruby><rb>黙然</rb><rt>もくねん</rt></ruby>と眼を注いでゐた。彼女にはそれが何となく、郷愁でも感じてゐるやうに見えた。そこで<persName ref="#akiko">明子</persName>は彼の顔をそつと下から覗きこんで、</p>
+        <p>「御国の事を思つていらつしやるのでせう。」と半ば甘えるやうに尋ねて見た。</p>
+        <p>すると海軍将校は相不変微笑を含んだ眼で、静かに<persName ref="#akiko">明子</persName>の方へ振り返つた。さうして「ノン」と答へる代りに、子供のやうに首を振つて見せた。</p>
+        <p>「でも何か考へていらつしやるやうでございますわ。」</p>
+        <p>「何だか当てて御覧なさい。」</p>
+        <p>その時露台に集つてゐた人々の間には、又一しきり風のやうなざわめく音が起り出した。<persName ref="#akiko">明子</persName>と海軍将校とは云ひ合せたやうに話をやめて、庭園の針葉樹を圧してゐる夜空の方へ眼をやつた。其処には丁度赤と青との花火が、<ruby><rb>蜘蛛手</rb><rt>くもで</rt></ruby>に闇を<ruby><rb>弾</rb><rt>はじ</rt></ruby>きながら、<ruby><rb>将</rb><rt>まさ</rt></ruby>に消えようとする所であつた。<persName ref="#akiko">明子</persName>には何故かその花火が、殆悲しい気を起させる程それ程美しく思はれた。</p>
+        <p>「私は花火の事を考へてゐたのです。我々の<ruby><rb>生</rb><rt>ヴイ</rt></ruby>のやうな花火の事を。」</p>
+        <p>暫くして仏蘭西の海軍将校は、優しく<persName ref="#akiko">明子</persName>の顔を見下しながら、教へるやうな調子でかう云つた。</p>
+        <p>二</p>
+        <p><date when="1918">大正七年</date>の秋であつた。当年の<persName ref="#akiko">明子</persName>は<placeName ref="#kamakura">鎌倉</placeName>の別荘へ<ruby><rb>赴</rb><rt>おもむ</rt></ruby>く途中、一面識のある青年の小説家と、偶然汽車の中で一しよになつた。青年はその時編棚の上に、<placeName ref="#kamakura">鎌倉</placeName>の知人へ贈るべき菊の花束を載せて置いた。すると当年の<persName ref="#akiko">明子</persName>――今の<persName ref="#akiko">Ｈ老夫人</persName>は、菊の花を見る度に思ひ出す話があると云つて、詳しく彼に<placeName ref="#rokumeikan">鹿鳴館</placeName>の舞踏会の思ひ出を話して聞かせた。青年はこの人自身の口からかう云ふ思出を聞く事に、多大の興味を感ぜずにはゐられなかつた。</p>
+        <p>その話が終つた時、青年は<persName ref="#akiko">Ｈ老夫人</persName>に何気なくかう云ふ質問をした。</p>
+        <p>「奥様はその仏蘭西の海軍将校の名を御存知ではございませんか。」</p>
+        <p>すると<persName ref="#akiko">Ｈ老夫人</persName>は思ひがけない返事をした。</p>
+        <p>「存じて居りますとも。<persName ref="#loti">Julien Viaud</persName> と<ruby><rb>仰有</rb><rt>おつしや</rt></ruby>る方でございました。」</p>
+        <p>「では <persName ref="#loti">Loti</persName> だつたのでございますね。あの『お菊夫人』を書いた<persName ref="#loti">ピエル・ロテイ</persName>だつたのでございますね。」</p>
+        <p>青年は愉快な興奮を感じた。が、<persName ref="#akiko">Ｈ老夫人</persName>は不思議さうに青年の顔を見ながら何度もかう<ruby><rb>呟</rb><rt>つぶや</rt></ruby>くばかりであつた。</p>
+        <p>「いえ、<persName ref="#loti">ロテイ</persName>と仰有る方ではございませんよ。<persName ref="#loti">ジュリアン・ヴイオ</persName>と仰有る方でございますよ。」</p>
+        <p>（<date when="1919-12">大正八年十二月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

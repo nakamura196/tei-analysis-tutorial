@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>忘れえぬ人々</title>
+        <author>国木田独歩</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>忘れえぬ人々</title><author>国木田独歩</author>
+          <note>青空文庫。底本：「武蔵野」岩波文庫、岩波書店。1939（昭和14）年2月15日第1刷発行。1972（昭和47）年8月16日第37刷改版発行。2002（平成14）年4月5日第77刷発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000038/card1409.html">https://www.aozora.gr.jp/cards/000038/card1409.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="otsu-benjiro">
+        <persName>大津弁二郎</persName>
+        <note>無名の文学者。原稿『忘れ得ぬ人々』の書き手で本作の主人公</note>
+      </person>
+      <person xml:id="akiyama-matsunosuke">
+        <persName>秋山松之助</persName>
+        <note>無名の画家。溝口の旅人宿・亀屋で大津と初めて出会い一夜語り合う</note>
+      </person>
+      <person xml:id="kichizo">
+        <persName>吉蔵</persName>
+        <note>亀屋の主人の家の子供。名前で呼ばれる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="tamagawa">
+        <placeName>多摩川</placeName>
+        <location><geo>35.62 139.58</geo></location>
+        <note>河川・概値（中流域）</note>
+      </place>
+      <place xml:id="futako">
+        <placeName>二子</placeName>
+        <location><geo>35.611 139.627</geo></location>
+        <note>二子の渡し付近（現・世田谷区玉川／川崎市高津区二子）・概値</note>
+      </place>
+      <place xml:id="mizonokuchi">
+        <placeName>溝口</placeName>
+        <location><geo>35.5997 139.6106</geo></location>
+        <note>大山街道の宿場・溝口宿（現・川崎市高津区溝口）・概値</note>
+      </place>
+      <place xml:id="kameya">
+        <placeName>亀屋</placeName>
+        <note>溝口宿の旅人宿。実在の旅籠がモデルとされるが所在地の確証がないため座標なし</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hachioji">
+        <placeName>八王子</placeName>
+        <location><geo>35.6664 139.316</geo></location>
+        <note>現・八王子市・概値</note>
+      </place>
+      <place xml:id="kawasaki">
+        <placeName>川崎</placeName>
+        <location><geo>35.5308 139.7029</geo></location>
+        <note>東海道の宿場・川崎宿（現・川崎市川崎区）・概値</note>
+      </place>
+      <place xml:id="musashino">
+        <placeName>武蔵野</placeName>
+        <location><geo>35.7 139.5</geo></location>
+        <note>東京西郊に広がる地域名・概値</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="setouchi">
+        <placeName>瀬戸内</placeName>
+        <location><geo>34.2 133.2</geo></location>
+        <note>瀬戸内海。海域・概値</note>
+      </place>
+      <place xml:id="kyushu">
+        <placeName>九州</placeName>
+        <location><geo>32.8 130.9</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="kumamoto">
+        <placeName>熊本</placeName>
+        <location><geo>32.8032 130.7079</geo></location>
+        <note>現・熊本市・概値</note>
+      </place>
+      <place xml:id="tateno">
+        <placeName>立野</placeName>
+        <location><geo>32.8836 130.9895</geo></location>
+        <note>阿蘇外輪山西縁の宿場（現・熊本県南阿蘇村立野）・概値</note>
+      </place>
+      <place xml:id="aso-jinja">
+        <placeName>阿蘇神社</placeName>
+        <location><geo>32.8846 131.0782</geo></location>
+        <note>文脈から阿蘇山上の社（現・阿蘇山上神社）。麓の阿蘇神社（一の宮）ではない・概値</note>
+      </place>
+      <place xml:id="aso">
+        <placeName>阿蘇山</placeName>
+        <location><geo>32.8811 131.0853</geo></location>
+        <note>活火山。作中表記は「阿蘇山」「阿蘇」・概値（中岳火口付近）</note>
+      </place>
+      <place xml:id="takadake">
+        <placeName>高嶽</placeName>
+        <location><geo>32.8844 131.1039</geo></location>
+        <note>阿蘇五岳の最高峰・高岳。底本表記は「高嶽」・概値</note>
+      </place>
+      <place xml:id="higo">
+        <placeName>肥後</placeName>
+        <location><geo>32.8 130.7</geo></location>
+        <note>旧国名（現・熊本県）・概値</note>
+      </place>
+      <place xml:id="kujurei">
+        <placeName>九重嶺</placeName>
+        <location><geo>33.086 131.249</geo></location>
+        <note>くじゅう連山（大分県）。底本表記は「九重嶺」・概値</note>
+      </place>
+      <place xml:id="nantaisan">
+        <placeName>男体山</placeName>
+        <location><geo>36.7651 139.4906</geo></location>
+        <note>栃木県日光の火山・概値</note>
+      </place>
+      <place xml:id="chuzenjiko">
+        <placeName>中禅寺湖</placeName>
+        <location><geo>36.7326 139.4636</geo></location>
+        <note>栃木県日光の湖・概値</note>
+      </place>
+      <place xml:id="miyaji">
+        <placeName>宮地</placeName>
+        <location><geo>32.9469 131.1218</geo></location>
+        <note>阿蘇谷の宿駅（現・熊本県阿蘇市一の宮町宮地）・概値</note>
+      </place>
+      <place xml:id="shikoku">
+        <placeName>四国</placeName>
+        <location><geo>33.75 133.5</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="mitsugahama">
+        <placeName>三津が浜</placeName>
+        <location><geo>33.8672 132.7013</geo></location>
+        <note>伊予の港・三津浜（現・松山市三津）・概値</note>
+      </place>
+      <place xml:id="matsuyama">
+        <placeName>松山</placeName>
+        <location><geo>33.8392 132.7658</geo></location>
+        <note>現・愛媛県松山市・概値</note>
+      </place>
+      <place xml:id="hokkaido">
+        <placeName>北海道</placeName>
+        <location><geo>43.2 142.5</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="utashinai">
+        <placeName>歌志内</placeName>
+        <location><geo>43.5258 142.05</geo></location>
+        <note>空知の炭鉱町（現・北海道歌志内市）・概値</note>
+      </place>
+      <place xml:id="dairenwan">
+        <placeName>大連湾</placeName>
+        <location><geo>38.95 121.75</geo></location>
+        <note>遼東半島の湾（現・中国遼寧省大連市）・概値</note>
+      </place>
+      <place xml:id="banjogawa">
+        <placeName>番匠川</placeName>
+        <location><geo>32.96 131.85</geo></location>
+        <note>大分県佐伯を流れる河川・概値（中流域）</note>
+      </place>
+      <place xml:id="tohoku">
+        <placeName>東北</placeName>
+        <location><geo>38.5 140.8</geo></location>
+        <note>東北地方。地域名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>忘れえぬ人々</head>
+        <p><placeName ref="#tamagawa"><ruby><rb>多摩川</rb><rt>たまがわ</rt></ruby></placeName>の<placeName ref="#futako"><ruby><rb>二子</rb><rt>ふたこ</rt></ruby></placeName>の渡しをわたって少しばかり行くと<placeName ref="#mizonokuchi"><ruby><rb>溝口</rb><rt>みぞのくち</rt></ruby></placeName>という宿場がある。その中ほどに<placeName ref="#kameya"><ruby><rb>亀屋</rb><rt>かめや</rt></ruby></placeName>という<ruby><rb>旅人宿</rb><rt>はたごや</rt></ruby>がある。ちょうど<date when="--03">三月の初め</date>のころであった、この日は大空かき曇り北風強く吹いて、さなきだにさびしいこの町が一段と物さびしい<ruby><rb>陰鬱</rb><rt>いんうつ</rt></ruby>な寒そうな光景を呈していた。<ruby><rb>昨日</rb><rt>きのう</rt></ruby>降った雪がまだ残っていて高低定まらぬ<ruby><rb>茅屋根</rb><rt>わらやね</rt></ruby>の南の軒先からは<ruby><rb>雨滴</rb><rt>あまだれ</rt></ruby>が風に吹かれて舞うて落ちている。<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>の<ruby><rb>足痕</rb><rt>あしあと</rt></ruby>にたまった泥水にすら寒そうな<ruby><rb>漣</rb><rt>さざなみ</rt></ruby>が立っている。日が暮れると間もなく大概の店は戸を<ruby><rb>閉</rb><rt>し</rt></ruby>めてしまった。<ruby><rb>闇</rb><rt>くら</rt></ruby>い<ruby><rb>一筋町</rb><rt>ひとすじまち</rt></ruby>がひっそりとしてしまった。<ruby><rb>旅人宿</rb><rt>はたごや</rt></ruby>だけに<placeName ref="#kameya">亀屋</placeName>の店の<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>には<ruby><rb>燈火</rb><rt>あかり</rt></ruby>が<ruby><rb>明</rb><rt>あか</rt></ruby>く<ruby><rb>射</rb><rt>さ</rt></ruby>していたが、<ruby><rb>今宵</rb><rt>こよい</rt></ruby>は客もあまりないと見えて内もひっそりとして、おりおり<ruby><rb>雁頸</rb><rt>がんくび</rt></ruby>の太そうな<ruby><rb>煙管</rb><rt>きせる</rt></ruby>で<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>の<ruby><rb>縁</rb><rt>ふち</rt></ruby>をたたく音がするばかりである。</p>
+        <p><ruby><rb>突然</rb><rt>だしぬけ</rt></ruby>に障子をあけて<ruby><rb>一人</rb><rt>ひとり</rt></ruby>の男がのっそり<ruby><rb>入</rb><rt>はい</rt></ruby>ッて来た。長火鉢に寄っかかッて<ruby><rb>胸算用</rb><rt>むなさんよう</rt></ruby>に余念もなかった<ruby><rb>主人</rb><rt>あるじ</rt></ruby>が驚いてこちらを向く暇もなく、広い<ruby><rb>土間</rb><rt>どま</rt></ruby>を<ruby><rb>三歩</rb><rt>みあし</rt></ruby>ばかりに<ruby><rb>大股</rb><rt>おおまた</rt></ruby>に歩いて、<ruby><rb>主人</rb><rt>あるじ</rt></ruby>の鼻先に突ったッた男は年ごろ三十にはまだ二ツ三ツ足らざるべく、洋服、<ruby><rb>脚絆</rb><rt>きゃはん</rt></ruby>、<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>の<ruby><rb>旅装</rb><rt>なり</rt></ruby>で鳥打ち帽をかぶり、右の手に<ruby><rb>蝙蝠傘</rb><rt>こうもり</rt></ruby>を携え、左に小さな<ruby><rb>革包</rb><rt>かばん</rt></ruby>を持ってそれをわきに抱いていた。</p>
+        <p>『一晩厄介になりたい。』</p>
+        <p><ruby><rb>主人</rb><rt>あるじ</rt></ruby>は客の<ruby><rb>風采</rb><rt>みなり</rt></ruby>を<ruby><rb>視</rb><rt>み</rt></ruby>ていてまだ何とも言わない、その時奥で手の鳴る音がした。</p>
+        <p>『六番でお手が鳴るよ。』</p>
+        <p>ほえるような声で<ruby><rb>主人</rb><rt>あるじ</rt></ruby>は叫んだ。</p>
+        <p>『どちらさまでございます。』</p>
+        <p><ruby><rb>主人</rb><rt>あるじ</rt></ruby>は火鉢に寄っかかったままで問うた。客は肩をそびやかしてちょっと顔をしがめたが、たちまち口の<ruby><rb>辺</rb><rt>ほとり</rt></ruby>に<ruby><rb>微笑</rb><rt>ほほえみ</rt></ruby>をもらして、</p>
+        <p>『僕か、僕は<placeName ref="#tokyo">東京</placeName>。』</p>
+        <p>『それでどちらへお越しでございますナ。』</p>
+        <p>『<placeName ref="#hachioji">八王子</placeName>へ行くのだ。』</p>
+        <p>と答えて客はそこに腰を掛け<ruby><rb>脚絆</rb><rt>きゃはん</rt></ruby>の<ruby><rb>緒</rb><rt>ひも</rt></ruby>を解きにかかった。</p>
+        <p>『<ruby><rb>旦那</rb><rt>だんな</rt></ruby>、<placeName ref="#tokyo">東京</placeName>から<placeName ref="#hachioji">八王子</placeName>なら道が変でございますねエ。』</p>
+        <p><ruby><rb>主人</rb><rt>あるじ</rt></ruby>は不審そうに客のようすを今さらのようにながめて、何か言いたげな口つきをした。客はすぐ気が付いた。</p>
+        <p>『いや僕は<placeName ref="#tokyo">東京</placeName>だが、<ruby><rb>今日</rb><rt>きょう</rt></ruby><placeName ref="#tokyo">東京</placeName>から来たのじゃアない、今日は<ruby><rb>晩</rb><rt>おそ</rt></ruby>くなって<placeName ref="#kawasaki">川崎</placeName>を<ruby><rb>出発</rb><rt>たっ</rt></ruby>て来たからこんなに暮れてしまったのさ、ちょっと湯をおくれ。』</p>
+        <p>『早くお湯を持って来ないか。ヘエ随分今日はお寒かったでしょう、<placeName ref="#hachioji">八王子</placeName>の方はまだまだ寒うございます。』</p>
+        <p>という<ruby><rb>主人</rb><rt>あるじ</rt></ruby>の言葉はあいそがあっても一体の<ruby><rb>風</rb><rt>ふう</rt></ruby>つきはきわめて<ruby><rb>無愛嬌</rb><rt>ぶあいきょう</rt></ruby>である。年は六十ばかり、<ruby><rb>肥満</rb><rt>ふと</rt></ruby>った<ruby><rb>体躯</rb><rt>からだ</rt></ruby>の上に綿の多い<ruby><rb>半纒</rb><rt>はんてん</rt></ruby>を着ているので肩からじきに太い頭が出て、幅の広い<ruby><rb>福々</rb><rt>ふくぶく</rt></ruby>しい顔の<ruby><rb>目</rb><rt>まな</rt></ruby>じりが下がっている。それでどこかに気むずかしいところが見えている。しかし正直なお<ruby><rb>爺</rb><rt>やじ</rt></ruby>さんだなと客はすぐ思った。</p>
+        <p>客が足を洗ッてしまッて、まだふききらぬうち、<ruby><rb>主人</rb><rt>あるじ</rt></ruby>は、</p>
+        <p>『七番へご案内申しな！』</p>
+        <p>と怒鳴ッた。それぎりで客へは何の<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>もしない、その後ろ姿を見送りもしなかった。真っ黒な<ruby><rb>猫</rb><rt>ねこ</rt></ruby>が<ruby><rb>厨房</rb><rt>くりや</rt></ruby>の方から来て、そッと<ruby><rb>主人</rb><rt>あるじ</rt></ruby>の高い<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の上にはい上がって丸くなった。<ruby><rb>主人</rb><rt>あるじ</rt></ruby>はこれを知っているのかいないのか、じっと目をふさいでいる。しばらくすると、右の手が<ruby><rb>煙草箱</rb><rt>たばこいれ</rt></ruby>の方へ動いてその太い指が煙草を丸めだした。</p>
+        <p>『六番さんのお<ruby><rb>浴湯</rb><rt>ゆ</rt></ruby>がすんだら七番のお客さんをご案内申しな！』</p>
+        <p>膝の猫がびっくりして飛び<ruby><rb>下</rb><rt>お</rt></ruby>りた。</p>
+        <p>『ばか！　<ruby><rb>貴様</rb><rt>きさま</rt></ruby>に言ったのじゃないわ。』</p>
+        <p>猫はあわてて<ruby><rb>厨房</rb><rt>くりや</rt></ruby>の方へ駆けていってしまった。柱時計がゆるやかに八時を打った。</p>
+        <p>『お<ruby><rb>婆</rb><rt>ばあ</rt></ruby>さん、<persName ref="#kichizo">吉蔵</persName>が眠そうにしているじゃあないか、早く<ruby><rb>被中炉</rb><rt>あんか</rt></ruby>を入れてやってお寝かしな、かわいそうに。』</p>
+        <p><ruby><rb>主人</rb><rt>あるじ</rt></ruby>の声の方が眠そうである、<ruby><rb>厨房</rb><rt>くりや</rt></ruby>の方で、</p>
+        <p>『<persName ref="#kichizo">吉蔵</persName>はここで本を<ruby><rb>復習</rb><rt>さらっ</rt></ruby>ていますじゃないかね。』</p>
+        <p>お<ruby><rb>婆</rb><rt>ばあ</rt></ruby>さんの声らしかった。</p>
+        <p>『そうかな。<persName ref="#kichizo">吉蔵</persName>もうお寝よ、朝早く起きてお<ruby><rb>復習</rb><rt>さら</rt></ruby>いな。お婆さん早く<ruby><rb>被中炉</rb><rt>あんか</rt></ruby>を入れておやんな。』</p>
+        <p>『今すぐ入れてやりますよ。』</p>
+        <p>勝手の方で<ruby><rb>下婢</rb><rt>かひ</rt></ruby>とお婆さんと顔を見合わしてくすくすと笑った。店の方で大きなあくびの声がした。</p>
+        <p>『自分が眠いのだよ。』</p>
+        <p>五十を五つ六つ越えたらしい小さな老母が<ruby><rb>煤</rb><rt>くす</rt></ruby>ぶった<ruby><rb>被中炉</rb><rt>あんか</rt></ruby>に火を入れながらつぶやいた。</p>
+        <p>店の障子が風に吹かれてがたがたすると思うとパラパラと雨を吹きつける音が<ruby><rb>微</rb><rt>かす</rt></ruby>かにした。</p>
+        <p>『もう店の戸を引き寄せて置きな、』と<ruby><rb>主人</rb><rt>あるじ</rt></ruby>は怒鳴って、舌打ちをして、</p>
+        <p>『また降って来やあがった。』</p>
+        <p>と<ruby><rb>独言</rb><rt>ひとりごと</rt></ruby>のようにつぶやいた。なるほど風が<ruby><rb>大分</rb><rt>だいぶ</rt></ruby>強くなって雨さえ降りだしたようである。</p>
+        <p>春先とはいえ、寒い寒い<ruby><rb>霙</rb><rt>みぞれ</rt></ruby>まじりの風が広い<placeName ref="#musashino"><ruby><rb>武蔵野</rb><rt>むさしの</rt></ruby></placeName>を荒れに荒れて<ruby><rb>終夜</rb><rt>よもすがら</rt></ruby>、<ruby><rb>真</rb><rt>ま</rt></ruby>っ<ruby><rb>闇</rb><rt>くら</rt></ruby>な<placeName ref="#mizonokuchi"><ruby><rb>溝口</rb><rt>みぞのくち</rt></ruby></placeName>の町の上をほえ狂った。</p>
+        <p>七番の座敷では十二時過ぎてもまだランプが<ruby><rb>耿々</rb><rt>こうこう</rt></ruby>と輝いている。<placeName ref="#kameya">亀屋</placeName>で起きている者といえばこの座敷の真ん中で、差し向かいで話している二人の客ばかりである。<ruby><rb>戸外</rb><rt>そと</rt></ruby>は風雨の声いかにもすさまじく、雨戸が絶えず鳴っていた。</p>
+        <p>『この模様では<ruby><rb>明日</rb><rt>あした</rt></ruby>のお立ちは無理ですぜ。』</p>
+        <p>と一人が相手の顔を見て言った。これは六番の客である。</p>
+        <p>『何、別に用事はないのだから<ruby><rb>明日</rb><rt>あした</rt></ruby>一日くらいここで暮らしてもいいんです。』</p>
+        <p>二人とも顔を赤くして鼻の先を光らしている。そばの<ruby><rb>膳</rb><rt>ぜん</rt></ruby>の上には<ruby><rb>煖陶</rb><rt>かんびん</rt></ruby>が三本乗っていて、<ruby><rb>杯</rb><rt>さかずき</rt></ruby>には酒が残っている。二人とも心地よさそうに<ruby><rb>体</rb><rt>からだ</rt></ruby>をくつろげて、あぐらをかいて、火鉢を中にして煙草を吹かしている、六番の客は<ruby><rb>袍巻</rb><rt>かいまき</rt></ruby>の<ruby><rb>袖</rb><rt>そで</rt></ruby>から白い腕を<ruby><rb>臂</rb><rt>ひじ</rt></ruby>まで出して巻煙草の灰を落としては、<ruby><rb>喫</rb><rt>す</rt></ruby>っている。二人の話しぶりはきわめて卒直であるものの<ruby><rb>今宵</rb><rt>こよい</rt></ruby>初めてこの<ruby><rb>宿舎</rb><rt>やど</rt></ruby>で出合って、何かの<ruby><rb>口緒</rb><rt>いとぐち</rt></ruby>から、二口三口<ruby><rb>襖越</rb><rt>ふすまご</rt></ruby>しの話があって、あまりのさびしさに六番の客から押しかけて来て、名刺の交換が済むや、酒を命じ、<ruby><rb>談話</rb><rt>はなし</rt></ruby>に実が入って来るや、いつしか丁寧な言葉とぞんざいな言葉とを半混ぜに使うようになったものに違いない。</p>
+        <p>七番の客の名刺には<persName ref="#otsu-benjiro"><ruby><rb>大津弁二郎</rb><rt>おおつべんじろう</rt></ruby></persName>とある、別に何の肩書きもない。六番の客の名刺には<persName ref="#akiyama-matsunosuke">秋山松之助</persName>とあって、これも肩書きがない。</p>
+        <p><persName ref="#otsu-benjiro">大津</persName>とはすなわち日が暮れて着いた洋服の男である。やせ<ruby><rb>形</rb><rt>がた</rt></ruby>な、すらりとして色の白いところは相手の<persName ref="#akiyama-matsunosuke">秋山</persName>とはまるで違っている。<persName ref="#akiyama-matsunosuke">秋山</persName>は二十五か六という年輩で、丸く肥えて赤ら顔で、目元に<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>があって、いつもにこにこしているらしい。<persName ref="#otsu-benjiro">大津</persName>は無名の文学者で、<persName ref="#akiyama-matsunosuke">秋山</persName>は無名の画家で不思議にも同種類の青年がこの<ruby><rb>田舎</rb><rt>いなか</rt></ruby>の<ruby><rb>旅宿</rb><rt>はたごや</rt></ruby>で落ち合ったのであった。</p>
+        <p>『もう寝ようかねエ。随分<ruby><rb>悪口</rb><rt>あっこう</rt></ruby>も言いつくしたようだ。』</p>
+        <p>美術論から文学論から宗教論まで二人はかなり勝手にしゃべって、<ruby><rb>現今</rb><rt>いま</rt></ruby>の文学者や画家の大家を手ひどく批評して十一時が打ったのに気が付かなかったのである。</p>
+        <p>『まだいいさ。どうせ<ruby><rb>明日</rb><rt>あした</rt></ruby>はだめでしょうから夜通し話したってかまわないさ。』</p>
+        <p>画家の<persName ref="#akiyama-matsunosuke">秋山</persName>はにこにこしながら言った。</p>
+        <p>『しかし<ruby><rb>何時</rb><rt>いくじ</rt></ruby>でしょう。』</p>
+        <p>と<persName ref="#otsu-benjiro">大津</persName>は投げ出してあった時計を見て、</p>
+        <p>『おやもう十一時過ぎだ。』</p>
+        <p>『どうせ徹夜でさあ。』</p>
+        <p><persName ref="#akiyama-matsunosuke">秋山</persName>は一向平気である。杯を見つめて、</p>
+        <p>『しかし君が眠けりゃあ寝てもいい。』</p>
+        <p>『眠くはちっともない、君が疲れているだろうと思ってさ。僕は<ruby><rb>今日</rb><rt>きょう</rt></ruby><ruby><rb>晩</rb><rt>おそ</rt></ruby>く<placeName ref="#kawasaki">川崎</placeName>を立って三里半ばかしの道を歩いただけだから何ともないけれど。』</p>
+        <p>『なに僕だって何ともないさ、君が寝るならこれを借りていって読んで見ようと思うだけです。』</p>
+        <p><persName ref="#akiyama-matsunosuke">秋山</persName>は半紙十枚ばかりの原稿らしいものを取り上げた。その表紙には『忘れ得ぬ人々』と書いてある。</p>
+        <p>『それはほんとにだめですよ。つまり君の方でいうと鉛筆で書いたスケッチと<ruby><rb>同</rb><rt>おんな</rt></ruby>じことで<ruby><rb>他人</rb><rt>ひと</rt></ruby>にはわからないのだから。』</p>
+        <p>といっても<persName ref="#otsu-benjiro">大津</persName>は<persName ref="#akiyama-matsunosuke">秋山</persName>の手からその原稿を取ろうとはしなかった。<persName ref="#akiyama-matsunosuke">秋山</persName>は一枚二枚<ruby><rb>開</rb><rt>あ</rt></ruby>けて見てところどころ読んで見て、</p>
+        <p>『スケッチにはスケッチだけのおもしろ味があるから少し拝見したいねエ。』</p>
+        <p>『まアちょっと借して見たまえ。』</p>
+        <p>と<persName ref="#otsu-benjiro">大津</persName>は<persName ref="#akiyama-matsunosuke">秋山</persName>の手から原稿を取って、ところどころあけて見ていたが、二人はしばらく無言であった。<ruby><rb>戸外</rb><rt>そと</rt></ruby>の風雨の声がこの時今さらのように二人の耳に入った。<persName ref="#otsu-benjiro">大津</persName>は自分の書いた原稿を見つめたままじっと耳を傾けて<ruby><rb>夢心地</rb><rt>ゆめごこち</rt></ruby>になった。</p>
+        <p>『こんな晩は君の領分だねエ。』</p>
+        <p><persName ref="#akiyama-matsunosuke">秋山</persName>の声は<persName ref="#otsu-benjiro">大津</persName>の耳に<ruby><rb>入</rb><rt>い</rt></ruby>らないらしい。返事もしないでいる。風雨の音を聞いているのか、原稿を見ているのか、はた遠く百里のかなたの人を<ruby><rb>憶</rb><rt>おも</rt></ruby>っているのか、<persName ref="#akiyama-matsunosuke">秋山</persName>は心のうちで、<persName ref="#otsu-benjiro">大津</persName>の今の顔、今の目元はわが領分だなと思った。</p>
+        <p>『君がこれを読むよりか、僕がこの題で話した方がよさそうだ。どうです、君は<ruby><rb>聴</rb><rt>き</rt></ruby>きますか。この原稿はほんの<ruby><rb>大要</rb><rt>あらまし</rt></ruby>を書き止めて置いたのだから読んだってわからないからねエ。』</p>
+        <p>夢からさめたような目つきをして<persName ref="#otsu-benjiro">大津</persName>は目を<persName ref="#akiyama-matsunosuke">秋山</persName>の方に転じた。</p>
+        <p>『詳しく話して聞かされるならなおのことさ。』</p>
+        <p>と<persName ref="#akiyama-matsunosuke">秋山</persName>が<persName ref="#otsu-benjiro">大津</persName>の目を見ると、<persName ref="#otsu-benjiro">大津</persName>の目は少し涙にうるんでいて、異様な光を放っていた。</p>
+        <p>『僕はなるべく詳しく話すよ、おもしろくないと思ったら、遠慮なく注意してくれたまえ。その代わり僕も遠慮なく話すよ。なんだか僕の方で聞いてもらいたいような心持ちになって来たから妙じゃあないか。』</p>
+        <p><persName ref="#akiyama-matsunosuke">秋山</persName>は火鉢に炭をついで、<ruby><rb>鉄瓶</rb><rt>てつびん</rt></ruby>の中へ冷めた<ruby><rb>煖陶</rb><rt>かんびん</rt></ruby>を突っ込んだ。</p>
+        <p>『忘れ得ぬ人は必ずしも忘れてかなうまじき人にあらず、見たまえ僕のこの原稿の<ruby><rb>劈頭</rb><rt>へきとう</rt></ruby>第一に書いてあるのはこの句である。』</p>
+        <p><persName ref="#otsu-benjiro">大津</persName>はちょっと<persName ref="#akiyama-matsunosuke">秋山</persName>の前にその原稿を差しいだした。</p>
+        <p>『ね。それで僕はまずこの句の説明をしようと思う。そうすればおのずからこの文の題意がわかるだろうから。しかし君には大概わかっていると思うけれど。』</p>
+        <p>『そんなことを言わないで、ずんずんやりたまえよ。僕は世間の読者のつもりで聴いているから。失敬、横になって聴くよ。』</p>
+        <p><persName ref="#akiyama-matsunosuke">秋山</persName>は煙草をくわえて横になった。右の手で頭を<ruby><rb>支</rb><rt>ささ</rt></ruby>えて<persName ref="#otsu-benjiro">大津</persName>の顔を見ながら目元に微笑をたたえている。</p>
+        <p>『親とか子とかまたは<ruby><rb>朋友</rb><rt>ほうゆう</rt></ruby>知己そのほか自分の世話になった教師先輩のごときは、つまり単に忘れ得ぬ人とのみはいえない。忘れてかなうまじき人といわなければならない、そこでここに恩愛の契りもなければ義理もない、ほんの赤の他人であって、本来をいうと忘れてしまったところで人情をも義理をも欠かないで、しかもついに忘れてしまうことのできない人がある。世間一般の者にそういう人があるとは言わないが少なくとも僕にはある。恐らくは君にもあるだろう。』</p>
+        <p><persName ref="#akiyama-matsunosuke">秋山</persName>は黙ってうなずいた。</p>
+        <p>『僕が十九の<ruby><rb>歳</rb><rt>とし</rt></ruby>の春の<ruby><rb>半</rb><rt>なか</rt></ruby>ごろと記憶しているが、少し<ruby><rb>体躯</rb><rt>からだ</rt></ruby>の具合が悪いのでしばらく保養する気で<placeName ref="#tokyo">東京</placeName>の学校を<ruby><rb>退</rb><rt>ひ</rt></ruby>いて国へ帰る、その<ruby><rb>帰途</rb><rt>かえりみち</rt></ruby>のことであった。<placeName ref="#osaka">大阪</placeName>から例の<ruby><rb><placeName ref="#setouchi">瀬戸内</placeName>通</rb><rt>せとうちがよ</rt></ruby>いの汽船に乗って<ruby><rb>春海</rb><rt>しゅんかい</rt></ruby>波平らかな<ruby><rb>内海</rb><rt>うちうみ</rt></ruby>を航するのであるが、ほとんど一昔も前の事であるから、僕もその時の乗合の客がどんな人であったやら、船長がどんな男であったやら、<ruby><rb>茶菓</rb><rt>ちゃか</rt></ruby>を運ぶボーイの顔がどんなであったやら、そんなことは少しも<ruby><rb>憶</rb><rt>おぼ</rt></ruby>えていない。多分僕に茶を<ruby><rb>注</rb><rt>つ</rt></ruby>いでくれた客もあったろうし、甲板の上でいろいろと話しかけた人もあったろうが、何にも記憶に止まっていない。</p>
+        <p>『ただその時は健康が思わしくないからあまり浮き浮きしないで物思いに沈んでいたに違いない。絶えず甲板の上に<ruby><rb>出</rb><rt>い</rt></ruby>で<ruby><rb>将来</rb><rt>ゆくすえ</rt></ruby>の夢を描いてはこの世における人の身の上のことなどを思いつづけていたことだけは記憶している。もちろん若いものの癖でそれも不思議はないが。そこで僕は、春の日ののどかな光が油のような海面に<ruby><rb>融</rb><rt>と</rt></ruby>けほとんど<ruby><rb>漣</rb><rt>さざなみ</rt></ruby>も立たぬ中を船の<ruby><rb>船首</rb><rt>へさき</rt></ruby>が心地よい音をさせて水を切って進行するにつれて、<ruby><rb>霞</rb><rt>かすみ</rt></ruby>たなびく島々を迎えては送り、<ruby><rb>右舷</rb><rt>うげん</rt></ruby><ruby><rb>左舷</rb><rt>さげん</rt></ruby>の<ruby><rb>景色</rb><rt>けしき</rt></ruby>をながめていた。菜の花と麦の青葉とで<ruby><rb>錦</rb><rt>にしき</rt></ruby>を敷いたような島々がまるで霞の奥に浮いているように見える。そのうち船がある小さな島を右舷に見てその<ruby><rb>磯</rb><rt>いそ</rt></ruby>から十町とは離れないところを通るので僕は欄に寄り<ruby><rb>何心</rb><rt>なにげ</rt></ruby>なくその島をながめていた。山の根がたのかしこここに背の低い松が<ruby><rb>小杜</rb><rt>こもり</rt></ruby>を作っているばかりで、見たところ<ruby><rb>畑</rb><rt>はた</rt></ruby>もなく家らしいものも見えない。しんとしてさびしい磯の<ruby><rb>退潮</rb><rt>ひきしお</rt></ruby>の<ruby><rb>痕</rb><rt>あと</rt></ruby>が日に<ruby><rb>輝</rb><rt>ひか</rt></ruby>って、小さな波が<ruby><rb>水際</rb><rt>みぎわ</rt></ruby>をもてあそんでいるらしく長い<ruby><rb>線</rb><rt>すじ</rt></ruby>が<ruby><rb>白刃</rb><rt>しらは</rt></ruby>のように光っては消えている。<ruby><rb>無人島</rb><rt>むにんとう</rt></ruby>でない事はその山よりも高い空で<ruby><rb>雲雀</rb><rt>ひばり</rt></ruby>が<ruby><rb>啼</rb><rt>な</rt></ruby>いているのが<ruby><rb>微</rb><rt>かす</rt></ruby>かに聞こえるのでわかる。田畑ある島と知れけりあげ雲雀、これは僕の<ruby><rb>老父</rb><rt>おやじ</rt></ruby>の句であるが、山のむこうには人家があるに相違ないと僕は思うた。と見るうち<ruby><rb>退潮</rb><rt>ひきしお</rt></ruby>の<ruby><rb>痕</rb><rt>あと</rt></ruby>の日に<ruby><rb>輝</rb><rt>ひか</rt></ruby>っているところに一人の人がいるのが目についた。たしかに男である、また<ruby><rb>小供</rb><rt>こども</rt></ruby>でもない。何かしきりに拾っては<ruby><rb>籠</rb><rt>かご</rt></ruby>か<ruby><rb>桶</rb><rt>おけ</rt></ruby>かに入れているらしい。<ruby><rb>二三歩</rb><rt>ふたあしみあし</rt></ruby>あるいてはしゃがみ、そして何か拾っている。自分はこのさびしい島かげの小さな磯を<ruby><rb>漁</rb><rt>あさ</rt></ruby>っているこの人をじっとながめていた。船が進むにつれて人影が黒い点のようになってしまった、そのうち磯も山も島全体が<ruby><rb>霞</rb><rt>かすみ</rt></ruby>のかなたに消えてしまった。その後<ruby><rb>今日</rb><rt>きょう</rt></ruby>が日までほとんど十年の間、僕は何度この島かげの顔も知らないこの人を<ruby><rb>憶</rb><rt>おも</rt></ruby>い起こしたろう。これが僕の「忘れ得ぬ人々」の一人である。</p>
+        <p>『その次は今から五年ばかり以前、<date when="--01-01">正月<ruby><rb>元旦</rb><rt>がんたん</rt></ruby></date>を父母の<ruby><rb>膝下</rb><rt>ひざもと</rt></ruby>で祝ってすぐ<placeName ref="#kyushu">九州</placeName>旅行に出かけて、<placeName ref="#kumamoto"><ruby><rb>熊本</rb><rt>くまもと</rt></ruby></placeName>から<ruby><rb>大分</rb><rt>おおいた</rt></ruby>へと<placeName ref="#kyushu">九州</placeName>を横断した時のことであった。</p>
+        <p>『僕は朝早く弟と共に<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby><ruby><rb>脚絆</rb><rt>きゃはん</rt></ruby>で元気よく<placeName ref="#kumamoto">熊本</placeName>を<ruby><rb>出発</rb><rt>た</rt></ruby>った。その日はまだ日が高いうちに<placeName ref="#tateno"><ruby><rb>立野</rb><rt>たての</rt></ruby></placeName>という宿場まで歩いてそこに一泊した。次の日のまだ登らないうち<placeName ref="#tateno">立野</placeName>を立って、かねての願いで、<placeName ref="#aso"><ruby><rb>阿蘇山</rb><rt>あそさん</rt></ruby></placeName>の<ruby><rb>白煙</rb><rt>はくえん</rt></ruby>を目がけて霜を踏み桟橋を渡り、路を間違えたりしてようやく<ruby><rb>日中</rb><rt>おひる</rt></ruby>時分に絶頂近くまで登り、噴火口に達したのは一時過ぎでもあッただろうか。<placeName ref="#kumamoto">熊本</placeName>地方は温暖であるがうえに、風のないよく晴れた日だから、冬ながら六千尺の高山もさまでは寒く感じない。<placeName ref="#takadake"><ruby><rb>高嶽</rb><rt>たかたけ</rt></ruby></placeName>の<ruby><rb>絶頂</rb><rt>いただき</rt></ruby>は噴火口から吐き出す水蒸気が凝って白くなっていたがそのほかは満山ほとんど雪を見ないで、ただ枯れ草白く風にそよぎ、焼け土のあるいは赤きあるいは黒きが旧噴火口の<ruby><rb>名残</rb><rt>なごり</rt></ruby>をかしこここに止めて<ruby><rb>断崖</rb><rt>だんがい</rt></ruby>をなし、その荒涼たる、光景は、筆も口もかなわない、これを描くのはまず君の領分だと思う。</p>
+        <p>『僕らは一度噴火口の<ruby><rb>縁</rb><rt>ふち</rt></ruby>まで登って、しばらくはすさまじい穴をのぞき込んだり四方の大観をほしいままにしたりしていたが、さすがに<ruby><rb>頂</rb><rt>いただき</rt></ruby>は風が寒くってたまらないので、穴から少し<ruby><rb>下</rb><rt>お</rt></ruby>りると<placeName ref="#aso-jinja">阿蘇神社</placeName>があるそのそばに小さな小屋があって番茶くらいはのませてくれる、そこへ逃げ込んで<ruby><rb>団飯</rb><rt>むすび</rt></ruby>をかじって元気をつけて、また噴火口まで登った。</p>
+        <p>『その時は日がもうよほど傾いて<placeName ref="#higo">肥後</placeName>の<ruby><rb>平野</rb><rt>へいや</rt></ruby>を立てこめている<ruby><rb>霧靄</rb><rt>もや</rt></ruby>が焦げて赤くなってちょうどそこに見える旧噴火口の断崖と同じような色に染まった。<ruby><rb>円錐形</rb><rt>えんすいけい</rt></ruby>にそびえて高く群峰を抜く<placeName ref="#kujurei">九重嶺</placeName>の<ruby><rb>裾野</rb><rt>すその</rt></ruby>の高原数里の枯れ草が一面に<ruby><rb>夕陽</rb><rt>せきよう</rt></ruby>を帯び、空気が水のように澄んでいるので人馬の行くのも見えそうである。天地<ruby><rb>寥廓</rb><rt>りょうかく</rt></ruby>、しかも足もとではすさまじい響きをして白煙<ruby><rb>濛々</rb><rt>もうもう</rt></ruby>と立ちのぼりまっすぐに空を<ruby><rb>衝</rb><rt>つ</rt></ruby>き急に折れて<placeName ref="#takadake"><ruby><rb>高嶽</rb><rt>たかたけ</rt></ruby></placeName>を<ruby><rb>掠</rb><rt>かす</rt></ruby>め天の一方に消えてしまう。壮といわんか美といわんか<ruby><rb>惨</rb><rt>さん</rt></ruby>といわんか、僕らは黙ったまま一<ruby><rb>言</rb><rt>ごん</rt></ruby>も出さないでしばらく石像のように立っていた。この時天地<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>の感、人間存在の不思議の念などが心の底からわいて来るのは自然のことだろうと思う。</p>
+        <p>『ところでもっとも僕らの感を<ruby><rb>惹</rb><rt>ひ</rt></ruby>いたものは<placeName ref="#kujurei">九重嶺</placeName>と<placeName ref="#aso">阿蘇山</placeName>との間の<ruby><rb>一大窪地</rb><rt>いちだいくぼち</rt></ruby>であった。これはかねて世界最大の噴火口の旧跡と聞いていたがなるほど、<placeName ref="#kujurei">九重嶺</placeName>の高原が急に<ruby><rb>頽</rb><rt>おち</rt></ruby>こんでいて数里にわたる絶壁がこの窪地の西を<ruby><rb>回</rb><rt>めぐ</rt></ruby>っているのが眼下によく見える。<ruby><rb><placeName ref="#nantaisan">男体山</placeName>麓</rb><rt>なんたいさんろく</rt></ruby>の噴火口は<ruby><rb>明媚幽邃</rb><rt>めいびゆうすい</rt></ruby>の<placeName ref="#chuzenjiko">中禅寺湖</placeName>と変わっているがこの大噴火口はいつしか五穀実る数千町歩の田園とかわって村落幾個の樹林や麦畑が今しも斜陽静かに輝いている。僕らがその夜、疲れた足を踏みのばして罪のない夢を結ぶを楽しんでいる<placeName ref="#miyaji"><ruby><rb>宮地</rb><rt>みやじ</rt></ruby></placeName>という宿駅もこの窪地にあるのである。</p>
+        <p>『いっそのこと山上の小屋に一泊して噴火の夜の光景を見ようかという説も二人の間に出たが、先が急がれるのでいよいよ山を下ることに決めて<placeName ref="#miyaji">宮地</placeName>を<ruby><rb>指</rb><rt>さ</rt></ruby>して<ruby><rb>下</rb><rt>お</rt></ruby>りた。<ruby><rb>下</rb><rt>くだ</rt></ruby>りは登りよりかずっと<ruby><rb>勾配</rb><rt>こうばい</rt></ruby>が<ruby><rb>緩</rb><rt>ゆる</rt></ruby>やかで、山の尾や谷間の枯れ草の間を<ruby><rb>蛇</rb><rt>へび</rt></ruby>のようにうねっている路をたどって急ぐと、村に近づくにつれて枯れ草を着けた馬をいくつか<ruby><rb>逐</rb><rt>お</rt></ruby>いこした。あたりを見るとかしこここの山の尾の<ruby><rb>小路</rb><rt>こみち</rt></ruby>をのどかな鈴の音夕陽を帯びて人馬いくつとなく<ruby><rb>麓</rb><rt>ふもと</rt></ruby>をさして帰りゆくのが数えられる、馬はどれもみな枯れ草を着けている。麓はじきそこに見えていても容易には村へ出ないので、日は暮れかかるし僕らは大急ぎに急いでしまいには走って下りた。</p>
+        <p>『村に出た時はもう日が暮れて<ruby><rb>夕闇</rb><rt>ゆうやみ</rt></ruby>ほのぐらいころであった。村の夕暮れのにぎわいは格別で、壮年<ruby><rb>男女</rb><rt>なんにょ</rt></ruby>は一日の仕事のしまいに忙しく子供は薄暗い<ruby><rb>垣根</rb><rt>かきね</rt></ruby>の陰や<ruby><rb>竈</rb><rt>かまど</rt></ruby>の火の見える軒先に集まって笑ったり歌ったり泣いたりしている、これはどこの<ruby><rb>田舎</rb><rt>いなか</rt></ruby>も同じことであるが、僕は荒涼たる<placeName ref="#aso">阿蘇</placeName>の草原から駆け下りて突然、この<ruby><rb>人寰</rb><rt>じんかん</rt></ruby>に投じた時ほど、これらの光景に<ruby><rb>搏</rb><rt>う</rt></ruby>たれたことはない。二人は疲れた足をひきずって、日暮れて<ruby><rb>路</rb><rt>みち</rt></ruby>遠きを感じながらも、<ruby><rb>懐</rb><rt>なつ</rt></ruby>かしいような心持ちで<placeName ref="#miyaji">宮地</placeName>を<ruby><rb>今宵</rb><rt>こよい</rt></ruby>の当てに歩いた。</p>
+        <p>『一<ruby><rb>村</rb><rt>むら</rt></ruby>離れて林や<ruby><rb>畑</rb><rt>はた</rt></ruby>の間をしばらく行くと日はとっぷり暮れて二人の影がはっきりと地上に印するようになった。振り向いて西の空を仰ぐと<placeName ref="#aso">阿蘇</placeName>の分派の一峰の右に新月がこの窪地一帯の村落を<ruby><rb>我物顔</rb><rt>わがものがお</rt></ruby>に澄んで<ruby><rb>蒼味</rb><rt>あおみ</rt></ruby>がかった水のような光を放っている。二人は気がついてすぐ頭の上を仰ぐと、昼間は真っ白に立ちのぼる噴煙が月の光を受けて灰色に染まって<ruby><rb>碧瑠璃</rb><rt>へきるり</rt></ruby>の大空を<ruby><rb>衝</rb><rt>つ</rt></ruby>いているさまが、いかにもすさまじくまた美しかった。長さよりも幅の方が長い橋にさしかかったから、幸いとその欄に<ruby><rb>倚</rb><rt>よ</rt></ruby>っかかって疲れきった足を休めながら二人は噴煙のさまのさまざまに変化するをながめたり、聞くともなしに村落の人語の遠くに聞こゆるを聞いたりしていた。すると二人が今来た道の方から<ruby><rb>空車</rb><rt>からぐるま</rt></ruby>らしい荷車の音が林などに反響して<ruby><rb>虚空</rb><rt>こくう</rt></ruby>に響き渡って次第に近づいて来るのが手に取るように聞こえだした。</p>
+        <p>『しばらくすると<ruby><rb>朗々</rb><rt>ほがらか</rt></ruby>な<ruby><rb>澄</rb><rt>す</rt></ruby>んだ声で流して歩く<ruby><rb>馬子唄</rb><rt>まごうた</rt></ruby>が空車の音につれて<ruby><rb>漸々</rb><rt>ぜんぜん</rt></ruby>と近づいて来た。僕は噴煙をながめたままで耳を傾けて、この声の近づくのを待つともなしに待っていた。</p>
+        <p>『人影が見えたと思うと「<placeName ref="#miyaji">宮地</placeName>ゃよいところじゃ<placeName ref="#aso">阿蘇山</placeName>ふもと」という<ruby><rb>俗謡</rb><rt>うた</rt></ruby>を長く引いてちょうど僕らが立っている橋の少し手前まで流して来たその<ruby><rb>俗謡</rb><rt>うた</rt></ruby>の<ruby><rb>意</rb><rt>こころ</rt></ruby>と悲壮な声とがどんなに僕の<ruby><rb>情</rb><rt>こころ</rt></ruby>を動かしたろう。二十四、五かと思われる屈強な<ruby><rb>壮漢</rb><rt>わかもの</rt></ruby>が<ruby><rb>手綱</rb><rt>たづな</rt></ruby>を<ruby><rb>牽</rb><rt>ひ</rt></ruby>いて僕らの方を見向きもしないで通ってゆくのを僕はじっとみつめていた。夕月の光を背にしていたからその横顔もはっきりとは知れなかったがそのたくましげな<ruby><rb>体躯</rb><rt>からだ</rt></ruby>の黒い輪郭が今も僕の目の底に残っている。</p>
+        <p>『僕は<ruby><rb>壮漢</rb><rt>わかもの</rt></ruby>の後ろ影をじっと見送って、そして<placeName ref="#aso">阿蘇</placeName>の噴煙を見あげた。「忘れ得ぬ人々」の一人はすなわちこの<ruby><rb>壮漢</rb><rt>わかもの</rt></ruby>である。</p>
+        <p>『その次は<placeName ref="#shikoku">四国</placeName>の<placeName ref="#mitsugahama">三津が浜</placeName>に一泊して汽船<ruby><rb>便</rb><rt>びん</rt></ruby>を待った時のことであった。夏の初めと記憶しているが僕は朝早く<ruby><rb>旅宿</rb><rt>やど</rt></ruby>を出て汽船の来るのは午後と聞いたのでこの港の浜や町を散歩した。奥に<placeName ref="#matsuyama">松山</placeName>を控えているだけこの港の<ruby><rb>繁盛</rb><rt>はんじょう</rt></ruby>は格別で、分けても朝は<ruby><rb>魚市</rb><rt>うおいち</rt></ruby>が立つので魚市場の近傍の雑踏は非常なものであった。大空は<ruby><rb>名残</rb><rt>なごり</rt></ruby>なく晴れて朝日<ruby><rb>麗</rb><rt>うらら</rt></ruby>かに輝き、光る物には反射を与え、色あるものには光を添えて雑踏の光景をさらに<ruby><rb>殷々</rb><rt>にぎにぎ</rt></ruby>しくしていた。叫ぶもの呼ぶもの、笑声<ruby><rb>嬉々</rb><rt>きき</rt></ruby>としてここに起これば、歓呼<ruby><rb>怒罵</rb><rt>どば</rt></ruby>乱れてかしこにわくというありさまで、売るもの買うもの、<ruby><rb>老若男女</rb><rt>ろうにゃくなんにょ</rt></ruby>、いずれも忙しそうにおもしろそうにうれしそうに、駆けたり追ったりしている。<ruby><rb>露店</rb><rt>ろてん</rt></ruby>が並んで立ち食いの客を待っている。売っている<ruby><rb>品</rb><rt>もの</rt></ruby>は言わずもがなで、食ってる人は大概<ruby><rb>船頭</rb><rt>せんどう</rt></ruby><ruby><rb>船方</rb><rt>ふなかた</rt></ruby>の<ruby><rb>類</rb><rt>たぐい</rt></ruby>にきまっている。<ruby><rb>鯛</rb><rt>たい</rt></ruby>や<ruby><rb>比良目</rb><rt>ひらめ</rt></ruby>や<ruby><rb>海鰻</rb><rt>あなご</rt></ruby>や<ruby><rb>章魚</rb><rt>たこ</rt></ruby>が、そこらに投げ出してある。なまぐさい<ruby><rb>臭</rb><rt>にお</rt></ruby>いが人々の立ち騒ぐ<ruby><rb>袖</rb><rt>そで</rt></ruby>や<ruby><rb>裾</rb><rt>すそ</rt></ruby>にあおられて鼻を打つ。</p>
+        <p>『僕は全くの<ruby><rb>旅客</rb><rt>りょかく</rt></ruby>でこの土地には縁もゆかりもない身だから、知る顔もなければ見覚えの<ruby><rb>禿</rb><rt>は</rt></ruby>げ頭もない。そこで何となくこれらの光景が異様な感を起こさせて、世のさまを一段<ruby><rb>鮮</rb><rt>あざ</rt></ruby>やかにながめるような心地がした。僕はほとんど<ruby><rb>自己</rb><rt>おのれ</rt></ruby>をわすれてこの雑踏の<ruby><rb>中</rb><rt>うち</rt></ruby>をぶらぶらと歩き、やや物静かなる<ruby><rb>街</rb><rt>ちまた</rt></ruby>の<ruby><rb>一端</rb><rt>はし</rt></ruby>に出た。</p>
+        <p>『するとすぐ僕の耳に入ったのは<ruby><rb>琵琶</rb><rt>びわ</rt></ruby>の<ruby><rb>音</rb><rt>ね</rt></ruby>であった。そこの店先に一人の琵琶僧が立っていた。<ruby><rb>歳</rb><rt>とし</rt></ruby>のころ四十を五ツ六ツも越えたらしく、幅の広い四角な顔の<ruby><rb>丈</rb><rt>たけ</rt></ruby>の低い肥えた<ruby><rb>漢子</rb><rt>おとこ</rt></ruby>であった。その顔の色、その目の光はちょうど悲しげな琵琶の音にふさわしく、あの<ruby><rb>咽</rb><rt>むせ</rt></ruby>ぶような糸の音につれて<ruby><rb>謡</rb><rt>うた</rt></ruby>う声が沈んで濁って<ruby><rb>淀</rb><rt>よど</rt></ruby>んでいた。<ruby><rb>巷</rb><rt>ちまた</rt></ruby>の人は一人もこの僧を顧みない、家々の者はたれもこの琵琶に耳を傾けるふうも見せない。朝日は輝く浮世はせわしい。</p>
+        <p>『しかし僕はじっとこの琵琶僧をながめて、その琵琶の音に耳を傾けた。この道幅の狭い<ruby><rb>軒端</rb><rt>のきば</rt></ruby>のそろわない、しかもせわしそうな<ruby><rb>巷</rb><rt>ちまた</rt></ruby>の光景がこの琵琶僧とこの琵琶の音とに調和しないようでしかもどこかに深い約束があるように感じられた。あの<ruby><rb>嗚咽</rb><rt>おえつ</rt></ruby>する琵琶の音が巷の軒から軒へと漂うて勇ましげな売り声や、かしましい<ruby><rb>鉄砧</rb><rt>かなしき</rt></ruby>の音と<ruby><rb>雑</rb><rt>ま</rt></ruby>ざって、別に一<ruby><rb>道</rb><rt>どう</rt></ruby>の清泉が<ruby><rb>濁波</rb><rt>だくは</rt></ruby>の間を<ruby><rb>潜</rb><rt>くぐ</rt></ruby>って流れるようなのを聞いていると、うれしそうな、浮き浮きした、おもしろそうな、忙しそうな顔つきをしている巷の人々の心の底の糸が自然の調べをかなでているように思われた、「忘れえぬ人々」の一人はすなわちこの琵琶僧である。』</p>
+        <p>ここまで話して来て<persName ref="#otsu-benjiro">大津</persName>は静かにその原稿を下に置いてしばらく考え込んでいた。<ruby><rb>戸外</rb><rt>そと</rt></ruby>の雨風の響きは少しも衰えない。<persName ref="#akiyama-matsunosuke">秋山</persName>は起き直って、</p>
+        <p>『それから。』</p>
+        <p>『もうよそう、あまりふけるから。まだいくらもある。<placeName ref="#hokkaido">北海道</placeName><placeName ref="#utashinai"><ruby><rb>歌志内</rb><rt>うたしな</rt></ruby></placeName>の鉱夫、<placeName ref="#dairenwan"><ruby><rb>大連</rb><rt>だいれん</rt></ruby>湾</placeName>頭の青年漁夫、<placeName ref="#banjogawa"><ruby><rb>番匠川</rb><rt>ばんしょうがわ</rt></ruby></placeName>の<ruby><rb>瘤</rb><rt>こぶ</rt></ruby>ある<ruby><rb>舟子</rb><rt>ふなこ</rt></ruby>など僕が一々この原稿にあるだけを詳しく話すなら夜が明けてしまうよ。とにかく、僕がなぜこれらの人々を忘るることができないかという、それは<ruby><rb>憶</rb><rt>おも</rt></ruby>い起こすからである。なぜ僕が憶い起こすだろうか。僕はそれを君に話して見たいがね。</p>
+        <p>『要するに僕は絶えず人生の問題に苦しんでいながらまた自己将来の<ruby><rb>大望</rb><rt>たいもう</rt></ruby>に圧せられて自分で苦しんでいる<ruby><rb>不幸</rb><rt>ふしあわせ</rt></ruby>な男である。</p>
+        <p>『そこで僕は<ruby><rb>今夜</rb><rt>こよい</rt></ruby>のような晩に<ruby><rb>独</rb><rt>ひと</rt></ruby>り夜ふけて<ruby><rb>燈</rb><rt>ともしび</rt></ruby>に向かっているとこの生の孤立を感じて<ruby><rb>堪</rb><rt>た</rt></ruby>え難いほどの哀情を催して来る。その時僕の主我の<ruby><rb>角</rb><rt>つの</rt></ruby>がぼきり折れてしまって、なんだか<ruby><rb>人懐</rb><rt>ひとなつ</rt></ruby>かしくなって来る。いろいろの古い事や友の上を考えだす。その時<ruby><rb>油然</rb><rt>ゆぜん</rt></ruby>として僕の心に浮かんで来るのはすなわちこれらの人々である。そうでない、これらの人々を見た時の周囲の光景の<ruby><rb>裡</rb><rt>うち</rt></ruby>に立つこれらの人々である。われと他と何の相違があるか、みなこれこの生を天の一方地の一角に<ruby><rb>享</rb><rt>う</rt></ruby>けて<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>たる行路をたどり、相携えて無窮の天に帰る者ではないか、というような感が心の底から起こって来てわれ知らず涙が<ruby><rb>頬</rb><rt>ほお</rt></ruby>をつたうことがある。その時は実に<ruby><rb>我</rb><rt>われ</rt></ruby>もなければ<ruby><rb>他</rb><rt>ひと</rt></ruby>もない、ただたれもかれも懐かしくって、忍ばれて来る、</p>
+        <p>『僕はその時ほど心の平穏を感ずることはない、その時ほど自由を感ずることはない、その時ほど<ruby><rb>名利</rb><rt>めいり</rt></ruby>競争の俗念消えてすべての物に対する同情の念の深い時はない。</p>
+        <p>『僕はどうにかしてこの題目で僕の思う存分に書いて見たいと思うている。僕は天下必ず同感の士あることと信ずる。』</p>
+        <p>その後二年<ruby><rb>経</rb><rt>た</rt></ruby>った。</p>
+        <p><persName ref="#otsu-benjiro">大津</persName>は<ruby><rb>故</rb><rt>ゆえ</rt></ruby>あって<placeName ref="#tohoku">東北</placeName>のある地方に住まっていた。<placeName ref="#mizonokuchi"><ruby><rb>溝口</rb><rt>みぞのくち</rt></ruby></placeName>の<ruby><rb>旅宿</rb><rt>やど</rt></ruby>で初めてあった<persName ref="#akiyama-matsunosuke">秋山</persName>との交際は全く絶えた。ちょうど、<persName ref="#otsu-benjiro">大津</persName>が<placeName ref="#mizonokuchi">溝口</placeName>に泊まった時の時候であったが、雨の降る晩のこと。<persName ref="#otsu-benjiro">大津</persName>は<ruby><rb>独</rb><rt>ひと</rt></ruby>り机に向かって<ruby><rb>瞑想</rb><rt>めいそう</rt></ruby>に沈んでいた。机の上には二年<ruby><rb>前</rb><rt>まえ</rt></ruby><persName ref="#akiyama-matsunosuke">秋山</persName>に示した原稿と同じの『忘れ得ぬ人々』が置いてあって、その最後に書き加えてあったのは『<placeName ref="#kameya"><ruby><rb>亀屋</rb><rt>かめや</rt></ruby></placeName>の<ruby><rb>主人</rb><rt>あるじ</rt></ruby>』であった。</p>
+        <p>『<persName ref="#akiyama-matsunosuke">秋山</persName>』ではなかった。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

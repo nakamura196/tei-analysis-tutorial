@@ -1,0 +1,18 @@
+{
+  "slug": "yamanashi",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/46605_31178.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card46605.html",
+  "title": "やまなし",
+  "author": "宮沢賢治",
+  "fixes": {},
+  "persons": {
+    "kurambon": ["クラムボン", "蟹の子供らの会話に現れる正体不明の存在。わらい、死に、殺されたと語られる。作者の造語で実体は諸説あるが、固有の名を持つ存在として登場する"]
+  },
+  "places": {
+    "isado": ["イサド", null, null, "お父さんの蟹が子供らを連れて行くと言う場所。作者の造語による架空(所在不明)の地名のため座標なし"]
+  },
+  "tags": [
+    ["pers", "クラムボン", "kurambon"],
+    ["place", "イサド", "isado"]
+  ]
+}

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>野菊の墓</title>
+        <author>伊藤左千夫</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>野菊の墓</title><author>伊藤左千夫</author>
+          <note>青空文庫。底本：「日本文学全集別巻1　現代名作集」河出書房。1969（昭和44）年。初出：「ホトトギス」。1906（明治39）年1月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000058/card647.html">https://www.aozora.gr.jp/cards/000058/card647.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="masao">
+        <persName>政夫</persName>
+        <note>斎藤政夫。語り手・主人公。矢切の旧家斎藤家の息子で数え15歳。「政さん」「政や」「政」とも</note>
+      </person>
+      <person xml:id="tamiko">
+        <persName>民子</persName>
+        <note>政夫の従姉で2歳年上(数え17歳)の少女。市川の戸村家の娘。政夫の母の看護のため斎藤家に来ていた。「民さん」「民や」とも</note>
+      </person>
+      <person xml:id="omasu">
+        <persName>お増</persName>
+        <note>斎藤家の作おんな(奉公人)。人のよい親切な女。のちに政夫へ民子の顛末を語る</note>
+      </person>
+      <person xml:id="tsunekichi">
+        <persName>常吉</persName>
+        <note>村の男。山畑の近くで政夫と民子をひやかす。「常さん」とも</note>
+      </person>
+      <person xml:id="ohama">
+        <persName>お浜</persName>
+        <note>「向うの」家の娘。村祭を見にゆく近所の女の一人</note>
+      </person>
+      <person xml:id="osen">
+        <persName>お仙</persName>
+        <note>隣家の娘。村祭を見にゆく近所の女の一人</note>
+      </person>
+      <person xml:id="kane">
+        <persName>かね</persName>
+        <note>戸村家の奉公人。お祖母さんに「かねや」と呼ばれる</note>
+      </person>
+      <person xml:id="tomi">
+        <persName>とみ</persName>
+        <note>戸村家の奉公人。お祖母さんに「とみや」と呼ばれる</note>
+      </person>
+      <person xml:id="saito">
+        <persName>斎藤</persName>
+        <note>政夫の生家の家名。矢切の旧家(里見の残党の土着と伝える)</note>
+      </person>
+      <person xml:id="tomura">
+        <persName>戸村</persName>
+        <note>民子の生家の家名。市川の家</note>
+      </person>
+      <person xml:id="satomi">
+        <persName>里見</persName>
+        <note>戦国期の房総の大名里見氏。その残党が矢切に土着したと語られる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="yagiri">
+        <placeName>矢切</placeName>
+        <location><geo>35.752 139.906</geo></location>
+        <note>千葉県松戸市矢切(下矢切付近)。政夫の家のある村。概値</note>
+      </place>
+      <place xml:id="yagiri-no-watashi">
+        <placeName>矢切の渡</placeName>
+        <location><geo>35.759 139.887</geo></location>
+        <note>江戸川の渡し場(矢切の渡し)。現存する渡船場付近の概値</note>
+      </place>
+      <place xml:id="onagasaku">
+        <placeName>大長柵</placeName>
+        <note>政夫の家の山畑のある所(おおながさく)。矢切の在から一里余の丘陵地の字名とみられるが、正確な位置が特定できないため座標なし</note>
+      </place>
+      <place xml:id="matsudo">
+        <placeName>松戸</placeName>
+        <location><geo>35.7876 139.9032</geo></location>
+        <note>千葉県松戸市の中心部(旧松戸宿)。概値</note>
+      </place>
+      <place xml:id="ichikawa">
+        <placeName>市川</placeName>
+        <location><geo>35.7289 139.9078</geo></location>
+        <note>千葉県市川市の中心部(旧市川の町)。民子の生家と嫁ぎ先のある町。概値</note>
+      </place>
+      <place xml:id="chiba">
+        <placeName>千葉</placeName>
+        <location><geo>35.6073 140.1063</geo></location>
+        <note>千葉の町(現・千葉市中心部)。政夫の通う中学の所在地。概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京。概値</note>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7148 139.7737</geo></location>
+        <note>東京・上野の森(上野公園付近)。概値</note>
+      </place>
+      <place xml:id="tonegawa">
+        <placeName>利根川</placeName>
+        <location><geo>35.77 139.889</geo></location>
+        <note>作中で矢切の高台から見える川筋。当時の呼称で、現在の江戸川を指すとされる。概値</note>
+      </place>
+      <place xml:id="nakagawa">
+        <placeName>中川</placeName>
+        <location><geo>35.75 139.828</geo></location>
+        <note>東京東部低地を流れる中川。概値</note>
+      </place>
+      <place xml:id="musashi">
+        <placeName>武蔵</placeName>
+        <location><geo>35.8 139.5</geo></location>
+        <note>旧国名(武蔵国)。国名・概値</note>
+      </place>
+      <place xml:id="chichibu">
+        <placeName>秩父</placeName>
+        <location><geo>35.9918 139.0855</geo></location>
+        <note>秩父地方(秩父山地)。概値</note>
+      </place>
+      <place xml:id="ashigara">
+        <placeName>足柄</placeName>
+        <location><geo>35.3325 139.0106</geo></location>
+        <note>足柄山地(足柄峠付近)。概値</note>
+      </place>
+      <place xml:id="hakone">
+        <placeName>箱根</placeName>
+        <location><geo>35.2323 139.1069</geo></location>
+        <note>箱根の山々(神奈川県箱根町)。概値</note>
+      </place>
+      <place xml:id="fuji">
+        <placeName>富士</placeName>
+        <location><geo>35.3606 138.7274</geo></location>
+        <note>富士山。山頂の概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>野菊の墓</head>
+        <p><ruby><rb>後</rb><rt>のち</rt></ruby>の月という時分が来ると、どうも思わずには居られない。幼い<ruby><rb>訣</rb><rt>わけ</rt></ruby>とは思うが何分にも忘れることが出来ない。もはや十年<ruby><rb>余</rb><rt>よ</rt></ruby>も過去った昔のことであるから、細かい事実は多くは覚えて居ないけれど、心持だけは今なお昨日の如く、その時の事を考えてると、全く当時の心持に立ち返って、涙が留めどなく湧くのである。悲しくもあり楽しくもありというような状態で、忘れようと思うこともないではないが、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ繰返し繰返し考えては、夢幻的の興味を<ruby><rb>貪</rb><rt>むさぼ</rt></ruby>って居る事が多い。そんな訣から<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>物に書いて置こうかという気になったのである。</p>
+        <p>僕の家というのは、<placeName ref="#matsudo">松戸</placeName>から二里ばかり下って、<placeName ref="#yagiri-no-watashi"><ruby><rb>矢切</rb><rt>やぎり</rt></ruby>の<ruby><rb>渡</rb><rt>わたし</rt></ruby></placeName>を東へ渡り、小高い岡の上でやはり<placeName ref="#yagiri">矢切村</placeName>と云ってる所。<placeName ref="#yagiri">矢切</placeName>の<persName ref="#saito">斎藤</persName>と云えば、この<ruby><rb>界隈</rb><rt>かいわい</rt></ruby>での旧家で、<persName ref="#satomi">里見</persName>の崩れが二三人ここへ落ちて百姓になった内の一人が<persName ref="#saito">斎藤</persName>と云ったのだと祖父から聞いて居る。屋敷の西側に一丈五六尺も廻るような<ruby><rb>椎</rb><rt>しい</rt></ruby>の樹が四五本重なり合って立って居る。村一番の<ruby><rb>忌森</rb><rt>いもり</rt></ruby>で村じゅうから<ruby><rb>羨</rb><rt>うらや</rt></ruby>ましがられて居る。昔から何ほど<ruby><rb>暴風</rb><rt>あらし</rt></ruby>が吹いても、この椎森のために、僕の家ばかりは屋根を<ruby><rb>剥</rb><rt>は</rt></ruby>がれたことはただの一度もないとの話だ。家なども随分と古い、柱が残らず椎の木だ。それがまた<ruby><rb>煤</rb><rt>すす</rt></ruby>やら<ruby><rb>垢</rb><rt>あか</rt></ruby>やらで何の木か見別けがつかぬ位、奥の間の最も煙に遠いとこでも、天井板がまるで油炭で塗った様に、板の<ruby><rb>木目</rb><rt>もくめ</rt></ruby>も判らぬほど黒い。それでも建ちは割合に高くて、簡単な欄間もあり銅の<ruby><rb>釘隠</rb><rt>くぎかくし</rt></ruby>なども打ってある。その釘隠が馬鹿に大きい<ruby><rb>雁</rb><rt>がん</rt></ruby>であった。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>一寸見たのでは木か金かも知れないほど古びている。</p>
+        <p>僕の母なども先祖の言い伝えだからといって、この戦国時代の遺物的古家を、大へんに自慢されていた。その頃母は血の道で久しく<ruby><rb>煩</rb><rt>わずら</rt></ruby>って居られ、黒塗的な奥の一間がいつも母の<ruby><rb>病褥</rb><rt>びょうじょく</rt></ruby>となって居た。その次の十畳の間の<ruby><rb>南隅</rb><rt>みなみすみ</rt></ruby>に、二畳の小座敷がある。僕が居ない時は<ruby><rb>機織場</rb><rt>はたおりば</rt></ruby>で、僕が居る内は僕の読書室にしていた。<ruby><rb>手摺窓</rb><rt>てすりまど</rt></ruby>の障子を明けて頭を出すと、椎の枝が青空を<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>って北を<ruby><rb>掩</rb><rt>おお</rt></ruby>うている。</p>
+        <p>母が永らくぶらぶらして居たから、<placeName ref="#ichikawa">市川</placeName>の親類で僕には縁の<ruby><rb>従妹</rb><rt>いとこ</rt></ruby>になって居る、<persName ref="#tamiko">民子</persName>という女の児が仕事の手伝やら母の看護やらに来て居った。僕が今忘れることが出来ないというのは、その<persName ref="#tamiko">民子</persName>と僕との関係である。その関係と云っても、僕は<persName ref="#tamiko">民子</persName>と下劣な関係をしたのではない。</p>
+        <p>僕は小学校を卒業したばかりで十五歳、月を数えると十三歳何ヶ月という頃、<persName ref="#tamiko">民子</persName>は十七だけれどそれも生れが<ruby><rb>晩</rb><rt>おそ</rt></ruby>いから、十五と少しにしかならない。<ruby><rb>痩</rb><rt>や</rt></ruby>せぎすであったけれども顔は丸い方で、透き徹るほど白い皮膚に<ruby><rb>紅味</rb><rt>あかみ</rt></ruby>をおんだ、誠に<ruby><rb>光沢</rb><rt>つや</rt></ruby>の好い児であった。いつでも<ruby><rb>活々</rb><rt>いきいき</rt></ruby>として元気がよく、その癖気は弱くて憎気の少しもない児であった。</p>
+        <p>勿論僕とは大の仲好しで、座敷を掃くと云っては僕の所をのぞく、障子をはたくと云っては僕の座敷へ<ruby><rb>這入</rb><rt>はい</rt></ruby>ってくる、私も本が読みたいの手習がしたいのと云う、たまにはハタキの柄で僕の背中を突いたり、僕の耳を摘まんだりして逃げてゆく。僕も<persName ref="#tamiko">民子</persName>の姿を見れば来い来いと云うて二人で遊ぶのが何より面白かった。</p>
+        <p>母からいつでも叱られる。</p>
+        <p>「また<persName ref="#tamiko">民</persName>やは<persName ref="#masao">政</persName>の所へ<ruby><rb>這入</rb><rt>はい</rt></ruby>ってるナ。コラァさっさと掃除をやってしまえ。これからは<persName ref="#masao">政</persName>の読書の邪魔などしてはいけません。<persName ref="#tamiko">民</persName>やは年上の癖に……」</p>
+        <p>などと<ruby><rb>頻</rb><rt>しき</rt></ruby>りに小言を云うけれど、その<ruby><rb>実</rb><rt>じつ</rt></ruby>母も<persName ref="#tamiko">民子</persName>をば非常に可愛がって居るのだから、一向に小言がきかない。私にも少し手習をさして……などと時々<persName ref="#tamiko">民子</persName>はだだをいう。そういう時の母の小言もきまっている。</p>
+        <p>「お前は手習よか裁縫です。着物が満足に縫えなくては女<ruby><rb>一人前</rb><rt>いちにんまえ</rt></ruby>として嫁にゆかれません」</p>
+        <p>この頃僕に一点の邪念が無かったは勿論であれど、<persName ref="#tamiko">民子</persName>の方にも、いやな考えなどは少しも無かったに相違ない。しかし母がよく小言を云うにも<ruby><rb>拘</rb><rt>かかわ</rt></ruby>らず、<persName ref="#tamiko">民子</persName>はなお朝の御飯だ昼の御飯だというては僕を呼びにくる。呼びにくる度に、急いで這入って来て、本を見せろの筆を借せのと云ってはしばらく遊んでいる。その間にも母の薬を持ってきた帰りや、母の用を<ruby><rb>達</rb><rt>た</rt></ruby>した帰りには、きっと僕の所へ這入ってくる。僕も<persName ref="#tamiko">民子</persName>がのぞかない日は何となく淋しく物足らず思われた。今日は<persName ref="#tamiko">民さん</persName>は何をしているかナと思い出すと、ふらふらッと書室を出る。<persName ref="#tamiko">民子</persName>を見にゆくというほどの心ではないが、一寸<persName ref="#tamiko">民子</persName>の姿が目に触れれば気が落着くのであった。何のこったやっぱり<persName ref="#tamiko">民子</persName>を見に来たんじゃないかと、自分で自分を<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>った様なことがしばしばあったのである。</p>
+        <p>村の或家さ<ruby><rb>瞽女</rb><rt>ごぜ</rt></ruby>がとまったから聴きにゆかないか、<ruby><rb>祭文</rb><rt>さいもん</rt></ruby>がきたから聴きに行こうのと近所の女共が誘うても、<persName ref="#tamiko">民子</persName>は何とか断りを云うて決して家を出ない。隣村の祭で花火や飾物があるからとの事で、例の向うの<persName ref="#ohama">お浜</persName>や隣の<persName ref="#osen">お仙</persName>等が大騒ぎして見にゆくというに、内のものらまで<persName ref="#tamiko">民さん</persName>も一所に行って見てきたらと云うても、<persName ref="#tamiko">民子</persName>は母の病気を言い前にして行かない。僕も余りそんな所へ出るは<ruby><rb>嫌</rb><rt>いや</rt></ruby>であったから家に居る。<persName ref="#tamiko">民子</persName>は<ruby><rb>狐鼠狐鼠</rb><rt>こそこそ</rt></ruby>と僕の所へ這入ってきて、小声で、私は内に居るのが一番面白いわと云ってニッコリ笑う。僕も何となし<persName ref="#tamiko">民子</persName>をばそんな所へやりたくなかった。</p>
+        <p>僕が三日置き四日置きに母の薬を取りに<placeName ref="#matsudo">松戸</placeName>へゆく。どうかすると帰りが晩くなる。<persName ref="#tamiko">民子</persName>は三度も四度も裏坂の上まで出て渡しの方を見ていたそうで、いつでも家中のものに冷かされる。<persName ref="#tamiko">民子</persName>は<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>になって、お母さんが心配して、見てお<ruby><rb>出</rb><rt>い</rt></ruby>で見てお出でというからだと云い<ruby><rb>訣</rb><rt>わけ</rt></ruby>をする。家の者は皆ひそひそ笑っているとの話であった。</p>
+        <p>そういう次第だから、作おんなの<persName ref="#omasu">お増</persName>などは、<ruby><rb>無上</rb><rt>むしょう</rt></ruby>と<persName ref="#tamiko">民子</persName>を<ruby><rb>小面</rb><rt>こづら</rt></ruby>憎がって、何かというと、</p>
+        <p>「<persName ref="#tamiko">民子</persName>さんは<persName ref="#masao">政夫</persName>さんとこへ許り行きたがる、<ruby><rb>隙</rb><rt>ひま</rt></ruby>さえあれば<persName ref="#masao">政夫</persName>さんにこびりついている」</p>
+        <p>などと頻りに云いはやしたらしく、隣の<persName ref="#osen">お仙</persName>や向うの<persName ref="#ohama">お浜</persName>等までかれこれ噂をする。これを聞いてか<ruby><rb>嫂</rb><rt>あによめ</rt></ruby>が母に注意したらしく、或日母は常になくむずかしい顔をして、二人を枕もとへ呼びつけ意味有り気な小言を云うた。</p>
+        <p>「男も女も十五六になればもはや<ruby><rb>児供</rb><rt>こども</rt></ruby>ではない。お前等二人が余り仲が好過ぎるとて人がかれこれ云うそうじゃ。気をつけなくてはいけない。<persName ref="#tamiko">民子</persName>が年かさの癖によくない。これからはもう決して<persName ref="#masao">政</persName>の所へなど行くことはならぬ。<ruby><rb>吾子</rb><rt>わがこ</rt></ruby>を許すではないが<persName ref="#masao">政</persName>は未だ児供だ。<persName ref="#tamiko">民</persName>やは十七ではないか。つまらぬ噂をされるとお前の体に<ruby><rb>疵</rb><rt>きず</rt></ruby>がつく。<persName ref="#masao">政夫</persName>だって気をつけろ……。来月から<placeName ref="#chiba">千葉</placeName>の中学へ行くんじゃないか」</p>
+        <p><persName ref="#tamiko">民子</persName>は年が多いし<ruby><rb>且</rb><rt>かつ</rt></ruby>は意味あって僕の所へゆくであろうと思われたと気がついたか、非常に<ruby><rb>愧</rb><rt>は</rt></ruby>じ入った様子に、顔真赤にして<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いている。常は母に少し位小言云われても随分だだをいうのだけれど、この日はただ両手をついて俯向いたきり一言もいわない。何の<ruby><rb>疚</rb><rt>やま</rt></ruby>しい所のない僕は<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る不平で、</p>
+        <p>「お母さん、そりゃ余り御無理です。人が何と云ったって、私等は何の訣もないのに、何か大変悪いことでもした様なお小言じゃありませんか。お母さんだっていつもそう云ってたじゃありませんか。<persName ref="#tamiko">民子</persName>とお前とは兄弟も同じだ、お母さんの眼からはお前も<persName ref="#tamiko">民子</persName>も少しも隔てはない、仲よくしろよといつでも云ったじゃありませんか」</p>
+        <p>母の心配も道理のあることだが、僕等もそんないやらしいことを云われようとは少しも思って居なかったから、僕の不平もいくらかの理はある。母は<ruby><rb>俄</rb><rt>にわか</rt></ruby>にやさしくなって、</p>
+        <p>「お前達に何の訣もないことはお母さんも知ってるがネ、人の口がうるさいから、ただこれから少し気をつけてと云うのです」</p>
+        <p>色青ざめた母の顔にもいつしか僕等を真から可愛がる笑みが<ruby><rb>湛</rb><rt>たた</rt></ruby>えて居る。やがて、</p>
+        <p>「<persName ref="#tamiko">民</persName>やはあのまた薬を持ってきて、それから縫掛けの<ruby><rb>袷</rb><rt>あわせ</rt></ruby>を今日中に仕上げてしまいなさい……。<persName ref="#masao">政</persName>は立った<ruby><rb>次手</rb><rt>ついで</rt></ruby>に花を<ruby><rb>剪</rb><rt>き</rt></ruby>って仏壇へ<ruby><rb>捧</rb><rt>あ</rt></ruby>げて下さい。菊はまだ咲かないか、そんなら<ruby><rb>紫苑</rb><rt>しおん</rt></ruby>でも切ってくれよ」</p>
+        <p>本人達は何の気なしであるのに、人がかれこれ云うのでかえって無邪気でいられない様にしてしまう。僕は母の小言も一日しか覚えていない。二三日たって<persName ref="#tamiko">民さん</persName>はなぜ近頃は来ないのか知らんと思った位であったけれど、<persName ref="#tamiko">民子</persName>の方では、それからというものは様子がからっと変ってしもうた。</p>
+        <p><persName ref="#tamiko">民子</persName>はその後僕の所へは一切顔出ししないばかりでなく、座敷の内で行逢っても、人のいる前などでは容易に物も云わない。何となく<ruby><rb>極</rb><rt>きま</rt></ruby>りわるそうに、まぶしい様な風で急いで通り過ぎて終う。<ruby><rb>拠処</rb><rt>よんどころ</rt></ruby>なく物を云うにも、今までの無遠慮に隔てのない風はなく、いやに丁寧に改まって口をきくのである。時には僕が余り俄に改まったのを<ruby><rb>可笑</rb><rt>おか</rt></ruby>しがって笑えば、<persName ref="#tamiko">民子</persName>も遂には袖で笑いを隠して逃げてしまうという風で、とにかく一重の垣が二人の間に結ばれた様な気合になった。</p>
+        <p>それでも或日の四時過ぎに、母の云いつけで僕が背戸の<ruby><rb>茄子畑</rb><rt>なすばたけ</rt></ruby>に茄子をもいで居ると、いつのまにか<persName ref="#tamiko">民子</persName>が<ruby><rb>笊</rb><rt>ざる</rt></ruby>を手に持って、僕の後にきていた。</p>
+        <p>「<persName ref="#masao">政夫</persName>さん……」</p>
+        <p>出し抜けに呼んで笑っている。</p>
+        <p>「私もお母さんから云いつかって来たのよ。今日の縫物は肩が<ruby><rb>凝</rb><rt>こ</rt></ruby>ったろう、少し休みながら茄子をもいできてくれ。明日<ruby><rb>麹漬</rb><rt>こうじづけ</rt></ruby>をつけるからって、お母さんがそう云うから、私飛んできました」</p>
+        <p><persName ref="#tamiko">民子</persName>は非常に嬉しそうに元気一パイで、僕が、</p>
+        <p>「それでは僕が先にきているのを<persName ref="#tamiko">民さん</persName>は知らないで来たの」</p>
+        <p>と云うと<persName ref="#tamiko">民子</persName>は、</p>
+        <p>「知らなくてサ」</p>
+        <p>にこにこしながら茄子を採り始める。</p>
+        <p>茄子畑というは、椎森の下から一重の<ruby><rb>藪</rb><rt>やぶ</rt></ruby>を通り抜けて、家より西北に当る裏の<ruby><rb>前栽畑</rb><rt>せんざいばたけ</rt></ruby>。<ruby><rb>崖</rb><rt>がけ</rt></ruby>の上になってるので、<placeName ref="#tonegawa">利根川</placeName>は勿論<placeName ref="#nakagawa">中川</placeName>までもかすかに見え、<placeName ref="#musashi">武蔵</placeName>一えんが見渡される。<placeName ref="#chichibu">秩父</placeName>から<placeName ref="#ashigara">足柄</placeName><placeName ref="#hakone">箱根</placeName>の山山、<placeName ref="#fuji">富士</placeName>の<ruby><rb>高峯</rb><rt>たかね</rt></ruby>も見える。<placeName ref="#tokyo">東京</placeName>の<placeName ref="#ueno">上野</placeName>の森だと云うのもそれらしく見える。水のように澄みきった秋の空、日は一間半ばかりの辺に傾いて、僕等二人が立って居る茄子畑を正面に照り返して居る。あたり一体にシンとしてまた<ruby><rb>如何</rb><rt>いか</rt></ruby>にもハッキリとした景色、吾等二人は真に画中の人である。</p>
+        <p>「マア何という好い景色でしょう」</p>
+        <p><persName ref="#tamiko">民子</persName>もしばらく手をやめて立った。</p>
+        <p>僕はここで白状するが、この時の僕は<ruby><rb>慥</rb><rt>たしか</rt></ruby>に十日以前の僕ではなかった。二人は決してこの時無邪気な友達ではなかった。いつの間にそういう心持が起って居たか、自分には少しも判らなかったが、やはり母に叱られた頃から、僕の胸の中にも小さな恋の卵が<ruby><rb>幾個</rb><rt>いくつ</rt></ruby>か湧きそめて居ったに違いない。僕の精神状態がいつの間にか変化してきたは、隠すことの出来ない事実である。この日初めて<persName ref="#tamiko">民子</persName>を女として思ったのが、僕に邪念の<ruby><rb>萌芽</rb><rt>めざし</rt></ruby>ありし何よりの証拠じゃ。</p>
+        <p><persName ref="#tamiko">民子</persName>が体をくの字にかがめて、茄子をもぎつつあるその横顔を見て、今更のように<persName ref="#tamiko">民子</persName>の美しく可愛らしさに気がついた。これまでにも可愛らしいと思わぬことはなかったが、今日はしみじみとその美しさが身にしみた。しなやかに<ruby><rb>光沢</rb><rt>つや</rt></ruby>のある<ruby><rb>鬢</rb><rt>びん</rt></ruby>の毛につつまれた耳たぼ、豊かな頬の白く鮮かな、<ruby><rb>顎</rb><rt>あご</rt></ruby>のくくしめの愛らしさ、<ruby><rb>頸</rb><rt>くび</rt></ruby>のあたり如何にも清げなる、藤色の<ruby><rb>半襟</rb><rt>はんえり</rt></ruby>や花染の<ruby><rb>襷</rb><rt>たすき</rt></ruby>や、それらが<ruby><rb>悉</rb><rt>ことごと</rt></ruby>く優美に眼にとまった。そうなると恐ろしいもので、物を云うにも思い切った<ruby><rb>言</rb><rt>こと</rt></ruby>は云えなくなる、<ruby><rb>羞</rb><rt>はず</rt></ruby>かしくなる、極りが悪くなる、皆例の卵の作用から起ることであろう。</p>
+        <p>ここ十日ほど仲垣の隔てが出来て、ロクロク話もせなかったから、これも今までならば無論そんなこと考えもせぬにきまって居るが、今日はここで何か話さねばならぬ様な気がした。僕は初め無造作に<persName ref="#tamiko">民さん</persName>と呼んだけれど、跡は無造作に<ruby><rb>詞</rb><rt>ことば</rt></ruby>が継がない。おかしく<ruby><rb>喉</rb><rt>のど</rt></ruby>がつまって声が出ない。<persName ref="#tamiko">民子</persName>は茄子を一つ手に持ちながら体を起して、</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、なに……」</p>
+        <p>「何でもないけど<persName ref="#tamiko">民さん</persName>は近頃へんだからさ。僕なんかすっかり嫌いになったようだもの」</p>
+        <p><persName ref="#tamiko">民子</persName>はさすがに<ruby><rb>女性</rb><rt>にょしょう</rt></ruby>で、そういうことには僕などより遙に神経が鋭敏になっている。さも<ruby><rb>口惜</rb><rt>くや</rt></ruby>しそうな顔して、つと僕の側へ寄ってきた。</p>
+        <p>「<persName ref="#masao">政夫</persName>さんはあんまりだわ。私がいつ<persName ref="#masao">政夫</persName>さんに隔てをしました……」</p>
+        <p>「何さ、この頃<persName ref="#tamiko">民さん</persName>は、すっかり変っちまって、僕なんかに用はないらしいからよ。それだって<persName ref="#tamiko">民さん</persName>に不足を云う訣ではないよ」</p>
+        <p><persName ref="#tamiko">民子</persName>はせきこんで、</p>
+        <p>「そんな事いうはそりゃ<persName ref="#masao">政夫</persName>さんひどいわ、御無理だわ。この間は二人を並べて置いて、お母さんにあんなに叱られたじゃありませんか。あなたは男ですから平気でお出でだけど、私は年は多いし女ですもの、あァ云われては実に面目がないじゃありませんか。それですから、私は一生懸命になってたしなんで居るんでさ。それを<persName ref="#masao">政夫</persName>さん隔てるの嫌になったろうのと云うんだもの、私はほんとにつまらない……」</p>
+        <p><persName ref="#tamiko">民子</persName>は泣き出しそうな顔つきで僕の顔をじいッと<ruby><rb>視</rb><rt>み</rt></ruby>ている。僕もただ話の小口にそう云うたまでであるから、<persName ref="#tamiko">民子</persName>に泣きそうになられては、かわいそうに気の毒になって、</p>
+        <p>「僕は腹を立って言ったでは無いのに、<persName ref="#tamiko">民さん</persName>は腹を立ったの……僕はただ<persName ref="#tamiko">民さん</persName>が俄に変って、逢っても口もきかず、遊びにも来ないから、いやに淋しく悲しくなっちまったのさ。それだからこれからも時時は遊びにお出でよ。お母さんに叱られたら僕が<ruby><rb>咎</rb><rt>とが</rt></ruby>を背負うから……人が何と云ったってよいじゃないか」</p>
+        <p>何というても児供だけに無茶なことをいう。無茶なことを云われて<persName ref="#tamiko">民子</persName>は心配やら嬉しいやら、嬉しいやら心配やら、心配と嬉しいとが胸の中で、ごったになって争うたけれど、とうとう嬉しい方が勝を占めて終った。なお三言四言話をするうちに、<persName ref="#tamiko">民子</persName>は鮮かな曇りのない元の元気になった。僕も勿論愉快が<ruby><rb>溢</rb><rt>あふ</rt></ruby>れる……、宇宙間にただ二人きり居るような心持にお互になったのである。やがて二人は茄子のもぎくらをする。大きな畑だけれど、<date when="--10">十月</date>の半過ぎでは、茄子もちらほらしかなって居ない。二人で<ruby><rb>漸</rb><rt>ようや</rt></ruby>く二升ばかり<ruby><rb>宛</rb><rt>ずつ</rt></ruby>を採り得た。</p>
+        <p>「まァ<persName ref="#tamiko">民さん</persName>、御覧なさい、入日の立派なこと」</p>
+        <p><persName ref="#tamiko">民子</persName>はいつしか笊を下へ置き、両手を鼻の先に合せて太陽を拝んでいる。西の方の空は一体に薄紫にぼかした様な色になった。ひた赤く赤いばかりで光線の出ない太陽が今その半分を山に埋めかけた処、僕は<persName ref="#tamiko">民子</persName>が一心入日を拝むしおらしい姿が永く眼に残ってる。</p>
+        <p>二人が余念なく話をしながら帰ってくると、背戸口の四つ目垣の外に<persName ref="#omasu">お増</persName>がぼんやり立って、こっちを見て居る。<persName ref="#tamiko">民子</persName>は小声で、</p>
+        <p>「<persName ref="#omasu">お増</persName>がまた何とか云いますよ」</p>
+        <p>「二人共お母さんに云いつかって来たのだから、<persName ref="#omasu">お増</persName>なんか何と云ったって、かまやしないさ」</p>
+        <p>一事件を<ruby><rb>経</rb><rt>ふ</rt></ruby>る度に二人が胸中に湧いた恋の卵は<ruby><rb>層</rb><rt>かさ</rt></ruby>を増してくる。機に触れて交換する双方の意志は、<ruby><rb>直</rb><rt>ただち</rt></ruby>に互いの胸中にある例の卵に至大な養分を給与する。今日の日暮はたしかにその機であった。ぞっと身振いをするほど、著しき徴候を現したのである。しかし何というても二人の関係は卵時代で<ruby><rb>極</rb><rt>きわ</rt></ruby>めて取りとめがない。人に見られて見苦しい様なこともせず、顧みて自ら<ruby><rb>疚</rb><rt>やま</rt></ruby>しい様なこともせぬ。従ってまだまだ<ruby><rb>暢気</rb><rt>のんき</rt></ruby>なもので、人前を<ruby><rb>繕</rb><rt>つくろ</rt></ruby>うと云う様な心持は極めて少なかった。僕と<persName ref="#tamiko">民子</persName>との関係も、この位でお終いになったならば、十年忘れられないというほどにはならなかっただろうに。</p>
+        <p>親というものはどこの親も同じで、吾子をいつまでも児供のように思うている。僕の母などもその一人に漏れない。<persName ref="#tamiko">民子</persName>はその後時折僕の書室へやってくるけれど、よほど人目を計らって気ぼねを折ってくる様な風で、いつきても少しも落着かない。先に僕に<ruby><rb>厭味</rb><rt>いやみ</rt></ruby>を云われたから仕方なしにくるかとも思われたが、それは間違っていた。僕等二人の精神状態は二三日と云われぬほど著しき変化を遂げている。僕の変化は最も<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>しい。三日前には、お母さんが叱れば私が<ruby><rb>科</rb><rt>とが</rt></ruby>を背負うから遊びにきてとまで無茶を云うた僕が、今日はとてもそんな訣のものでない。<persName ref="#tamiko">民子</persName>が少し長居をすると、もう気が咎めて心配でならなくなった。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、またお<ruby><rb>出</rb><rt>いで</rt></ruby>よ、余り長く居ると人がつまらぬことを云うから」</p>
+        <p><persName ref="#tamiko">民子</persName>も心持は同じだけれど、僕にもう行けと云われると妙にすねだす。</p>
+        <p>「あレあなたは先日何と云いました。人が何と云ったッてよいから遊びに来いと云いはしませんか。私はもう人に笑われてもかまいませんの」</p>
+        <p>困った事になった。二人の関係が密接するほど、人目を恐れてくる。人目を恐れる様になっては、もはや罪悪を犯しつつあるかの如く、心もおどおどするのであった。母は口でこそ、男も女も十五六になれば児供ではないと云っても、それは理窟の上のことで、心持ではまだまだ二人をまるで児供の様に思っているから、その後<persName ref="#tamiko">民子</persName>が僕の<ruby><rb>室</rb><rt>へや</rt></ruby>へきて本を見たり話をしたりしているのを、直ぐ前を通りながら一向気に留める様子もない。この間の小言も実は<ruby><rb>嫂</rb><rt>あによめ</rt></ruby>が言うから出たまでで、ほんとうに腹から出た小言ではない。母の方はそうであったけれど、兄や嫂や<persName ref="#omasu">お増</persName>などは、盛に蔭言をいうて笑っていたらしく、村中の評判には、二つも年の多いのを嫁にする気かしらんなどと<ruby><rb>専</rb><rt>もっぱら</rt></ruby>いうているとの話。それやこれやのことが薄々二人に知れたので、僕から言いだして当分二人は遠ざかる相談をした。</p>
+        <p>人間の心持というものは不思議なもの。二人が少しも隔意なき得心上の相談であったのだけれど、僕の方から言い出したばかりに、<persName ref="#tamiko">民子</persName>は妙に<ruby><rb>鬱</rb><rt>ふさ</rt></ruby>ぎ込んで、まるで元気がなくなり、<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>としているのである。それを見ると僕もまたたまらなく気の毒になる。感情の一進一退はこんな風にもつれつつ危くなるのである。とにかく二人は表面だけは立派に遠ざかって四五日を経過した。</p>
+        <p>陰暦の<date when="--09-13">九月十三日</date>、今夜が豆の月だという日の朝、露霜が降りたと思うほどつめたい。その代り天気はきらきらしている。十五日がこの村の祭で明日は宵祭という<ruby><rb>訣故</rb><rt>わけゆえ</rt></ruby>、野の仕事も今日一渡り<ruby><rb>極</rb><rt>きま</rt></ruby>りをつけねばならぬ所から、家中手分けをして野へ出ることになった。それで甘露的恩命が僕等<ruby><rb>両人</rb><rt>ふたり</rt></ruby>に下ったのである。兄夫婦と<persName ref="#omasu">お増</persName>と外に男一人とは<ruby><rb>中稲</rb><rt>なかて</rt></ruby>の刈残りを是非刈って<ruby><rb>終</rb><rt>しま</rt></ruby>わねばならぬ。<persName ref="#tamiko">民子</persName>は僕を手伝いとして山畑の<ruby><rb>棉</rb><rt>わた</rt></ruby>を採ってくることになった。これはもとより母の指図で誰にも異議は云えない。</p>
+        <p>「マアあの二人を山の畑へ遣るッて、親というものよッぽどお目出たいものだ」</p>
+        <p>奥底のない<persName ref="#omasu">お増</persName>と意地曲りの嫂とは口を揃えてそう云ったに違いない。僕等二人はもとより心の底では嬉しいに相違ないけれど、この場合二人で山畑へゆくとなっては、人に顔を見られる様な気がして大いに極りが悪い。義理にも進んで行きたがる様な素振りは出来ない。僕は朝飯前は書室を出ない。<persName ref="#tamiko">民子</persName>も何か愚図愚図して支度もせぬ様子。もう嬉しがってと云われるのが口惜しいのである。母は起きてきて、</p>
+        <p>「<persName ref="#masao">政夫</persName>も支度しろ。<persName ref="#tamiko">民</persName>やもさっさと支度して早く行け。二人でゆけば一日には楽な仕事だけれど、道が遠いのだから、早く行かないと帰りが夜になる。なるたけ日の暮れない内に帰ってくる様によ。<persName ref="#omasu">お増</persName>は二人の弁当を<ruby><rb>拵</rb><rt>こしら</rt></ruby>えてやってくれ。お菜はこれこれの物で……」</p>
+        <p>まことに親のこころだ。<persName ref="#tamiko">民子</persName>に弁当を拵えさせては、自分のであるから、お菜などはロクな物を持って行かないと気がついて、ちゃんと<persName ref="#omasu">お増</persName>に命じて拵えさせたのである。僕はズボン下に<ruby><rb>足袋</rb><rt>たび</rt></ruby><ruby><rb>裸足</rb><rt>はだし</rt></ruby><ruby><rb>麦藁帽</rb><rt>むぎわらぼう</rt></ruby>という出で立ち、<persName ref="#tamiko">民子</persName>は<ruby><rb>手指</rb><rt>てさし</rt></ruby>を<ruby><rb>佩</rb><rt>は</rt></ruby>いて<ruby><rb>股引</rb><rt>ももひき</rt></ruby>も佩いてゆけと母が云うと、手指ばかり佩いて股引佩くのにぐずぐずしている。<persName ref="#tamiko">民子</persName>は僕のところへきて、股引佩かないでもよい様にお母さんにそう云ってくれと云う。僕は<persName ref="#tamiko">民さん</persName>がそう云いなさいと云う。押問答をしている内に、母はききつけて笑いながら、</p>
+        <p>「<persName ref="#tamiko">民</persName>やは<ruby><rb>町場者</rb><rt>まちばもの</rt></ruby>だから、股引佩くのは極りが悪いかい。私はまたお前が柔かい手足へ、<ruby><rb>茨</rb><rt>いばら</rt></ruby>や<ruby><rb>薄</rb><rt>すすき</rt></ruby>で傷をつけるが可哀相だから、そう云ったんだが、いやだと云うならお前のすきにするがよいさ」</p>
+        <p>それで<persName ref="#tamiko">民子</persName>は、例の<ruby><rb>襷</rb><rt>たすき</rt></ruby>に前掛姿で麻裏草履という支度。二人が一斗笊<ruby><rb>一個宛</rb><rt>ひとつずつ</rt></ruby>を持ち、僕が別に<ruby><rb>番</rb><rt>ばん</rt></ruby>ニョ<ruby><rb>片籠</rb><rt>かたかご</rt></ruby>と<ruby><rb>天秤</rb><rt>てんびん</rt></ruby>とを肩にして出掛ける。<persName ref="#tamiko">民子</persName>が跡から<ruby><rb>菅笠</rb><rt>すげがさ</rt></ruby>を<ruby><rb>被</rb><rt>かむ</rt></ruby>って出ると、母が笑声で呼びかける。</p>
+        <p>「<persName ref="#tamiko">民</persName>や、お前が菅笠を被って歩くと、ちょうど木の子が歩くようで見っともない。編笠がよかろう。新らしいのが一つあった筈だ」</p>
+        <p>稲刈連は出てしまって別に笑うものもなかったけれど、<persName ref="#tamiko">民子</persName>はあわてて菅笠を脱いで、顔を赤くしたらしかった。今度は編笠を被らずに手に持って、それじゃお母さんいってまいりますと挨拶して走って出た。</p>
+        <p>村のものらもかれこれいうと聞いてるので、二人揃うてゆくも人前恥かしく、急いで村を通抜けようとの考えから、僕は一足先になって出掛ける。村はずれの坂の<ruby><rb>降口</rb><rt>おりくち</rt></ruby>の大きな<ruby><rb>銀杏</rb><rt>いちょう</rt></ruby>の樹の根で<persName ref="#tamiko">民子</persName>のくるのを待った。ここから見おろすと少しの<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>がある。色よく黄ばんだ<ruby><rb>晩稲</rb><rt>おくて</rt></ruby>に露をおんで、シットリと打伏した光景は、気のせいか殊に<ruby><rb>清々</rb><rt>すがすが</rt></ruby>しく、胸のすくような眺めである。<persName ref="#tamiko">民子</persName>はいつの間にか来ていて、昨日の雨で洗い流した赤土の上に、二葉三葉銀杏の葉の落ちるのを拾っている。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、もうきたかい。この天気のよいことどうです。ほんとに心持のよい朝だねイ」</p>
+        <p>「ほんとに天気がよくて嬉しいわ。このまア銀杏の葉の綺麗なこと。さア出掛けましょう」</p>
+        <p><persName ref="#tamiko">民子</persName>の美しい手で持ってると銀杏の葉も殊に綺麗に見える。二人は坂を降りてようやく窮屈な場所から広場へ出た気になった。今日は大いそぎで棉を採り片付け、さんざん面白いことをして遊ぼうなどと相談しながら歩く。道の真中は乾いているが、両側の田についている所は、露にしとしとに<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れて、いろいろの草が花を開いてる。タウコギは<ruby><rb>末枯</rb><rt>うらが</rt></ruby>れて、<ruby><rb>水蕎麦蓼</rb><rt>みずそばたで</rt></ruby>など一番多く繁っている。都草も黄色く花が見える。野菊がよろよろと咲いている。<persName ref="#tamiko">民さん</persName>これ野菊がと僕は吾知らず足を留めたけれど、<persName ref="#tamiko">民子</persName>は聞えないのかさっさと先へゆく。僕は一寸<ruby><rb>脇</rb><rt>わき</rt></ruby>へ物を置いて、野菊の花を一握り採った。</p>
+        <p><persName ref="#tamiko">民子</persName>は一町ほど先へ行ってから、気がついて振り返るや否や、あれッと叫んで駆け戻ってきた。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>はそんなに戻ってきないッたって僕が行くものを……」</p>
+        <p>「まア<persName ref="#masao">政夫</persName>さんは何をしていたの。私びッくりして……まア綺麗な野菊、<persName ref="#masao">政夫</persName>さん、私に半分おくれッたら、私ほんとうに野菊が好き」</p>
+        <p>「僕はもとから野菊がだい好き。<persName ref="#tamiko">民さん</persName>も野菊が好き……」</p>
+        <p>「私なんでも野菊の生れ返りよ。野菊の花を見ると身振いの出るほど<ruby><rb>好</rb><rt>この</rt></ruby>もしいの。どうしてこんなかと、自分でも思う位」</p>
+        <p>「<persName ref="#tamiko">民さん</persName>はそんなに野菊が好き……道理でどうやら<persName ref="#tamiko">民さん</persName>は野菊のような人だ」</p>
+        <p><persName ref="#tamiko">民子</persName>は分けてやった半分の野菊を顔に押しあてて嬉しがった。二人は歩きだす。</p>
+        <p>「<persName ref="#masao">政夫</persName>さん……私野菊の様だってどうしてですか」</p>
+        <p>「さアどうしてということはないけど、<persName ref="#tamiko">民さん</persName>は何がなし野菊の様な風だからさ」</p>
+        <p>「それで<persName ref="#masao">政夫</persName>さんは野菊が好きだって……」</p>
+        <p>「僕大好きさ」</p>
+        <p><persName ref="#tamiko">民子</persName>はこれからはあなたが先になってと云いながら、自らは後になった。今の偶然に起った簡単な問答は、お互の胸に強く有意味に感じた。<persName ref="#tamiko">民子</persName>もそう思った事はその素振りで解る。ここまで話が迫ると、もうその先を言い出すことは出来ない。話は一寸途切れてしまった。</p>
+        <p>何と言っても幼い両人は、今罪の神に<ruby><rb>翻弄</rb><rt>ほんろう</rt></ruby>せられつつあるのであれど、野菊の様な人だと云った詞についで、その野菊を僕はだい好きだと云った時すら、僕は既に胸に<ruby><rb>動悸</rb><rt>どうき</rt></ruby>を起した位で、直ぐにそれ以上を言い出すほどに、まだまだずうずうしくはなっていない。<persName ref="#tamiko">民子</persName>も同じこと、物に突きあたった様な心持で強くお互に感じた時に声はつまってしまったのだ。二人はしばらく無言で歩く。</p>
+        <p><ruby><rb>真</rb><rt>まこと</rt></ruby>に<persName ref="#tamiko">民子</persName>は野菊の様な児であった。<persName ref="#tamiko">民子</persName>は全くの田舎風ではあったが、決して粗野ではなかった。<ruby><rb>可憐</rb><rt>かれん</rt></ruby>で優しくてそうして品格もあった。厭味とか憎気とかいう所は爪の<ruby><rb>垢</rb><rt>あか</rt></ruby>ほどもなかった。どう見ても野菊の風だった。</p>
+        <p>しばらくは黙っていたけれど、いつまで話もしないでいるはなおおかしい様に思って、無理と話を考え出す。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>はさっき何を考えてあんなに脇見もしないで歩いていたの」</p>
+        <p>「わたし何も考えていやしません」</p>
+        <p>「<persName ref="#tamiko">民さん</persName>はそりゃ嘘だよ。何か考えごとでもしなくてあんな風をする訣はないさ。どんなことを考えていたのか知らないけれど、隠さないだってよいじゃないか」</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、済まない。私さっきほんとに<ruby><rb>考事</rb><rt>かんがえごと</rt></ruby>していました。私つくづく考えて情なくなったの。わたしはどうして<persName ref="#masao">政夫</persName>さんよか年が多いんでしょう。私は十七だと言うんだもの、ほんとに情なくなるわ……」</p>
+        <p>「<persName ref="#tamiko">民さん</persName>は何のこと言うんだろう。先に生れたから年が多い、十七年育ったから十七になったのじゃないか。十七だから何で情ないのですか。僕だって、さ来年になれば十七歳さ。<persName ref="#tamiko">民さん</persName>はほんとに妙なことを云う人だ」</p>
+        <p>僕も今<persName ref="#tamiko">民子</persName>が言ったことの心を解せぬほど児供でもない。解ってはいるけど、わざと戯れの様に聞きなして、振りかえって見ると、<persName ref="#tamiko">民子</persName>は真に考え込んでいる様であったが、僕と顔合せて極りわるげににわかに<ruby><rb>側</rb><rt>わき</rt></ruby>を向いた。</p>
+        <p>こうなってくると何をいうても、直ぐそこへ持ってくるので話がゆきつまってしまう。二人の内でどちらか一人が、すこうしほんの僅かにでも押が強ければ、こんなに話がゆきつまるのではない。お互に心持は奥底まで解っているのだから、吉野紙を突破るほどにも力がありさえすれば、話の一歩を進めてお互に明放してしまうことが出来るのである。しかしながら真底からおぼこな二人は、その吉野紙を破るほどの押がないのである。またここで話の皮を切ってしまわねばならぬと云う様な、はっきりした意識も勿論ないのだ。言わば<ruby><rb>未</rb><rt>ま</rt></ruby>だ取止めのない卵的の恋であるから、少しく心の力が必要な所へくると話がゆきつまってしまうのである。</p>
+        <p>お互に自分で話し出しては自分が極りわるくなる様なことを繰返しつつ幾町かの道を歩いた。詞数こそ少なけれ、その詞の奥には二人共に無量の思いを包んで、極りがわるい感情の中には何とも云えない深き愉快を湛えて居る。それでいわゆる足も空に、いつしか田圃も通りこし、山路へ這入った。今度は<persName ref="#tamiko">民子</persName>が心を取り直したらしく鮮かな声で、</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、もう半分道来ましてしょうか。<placeName ref="#onagasaku"><ruby><rb>大長柵</rb><rt>おおながさく</rt></ruby></placeName>へは一里に遠いッて云いましたねイ」</p>
+        <p>「そうです、一里半には近いそうだが、もう半分の余来ましたろうよ。少し休みましょうか」</p>
+        <p>「わたし休まなくとも、ようございますが、早速お母さんの罰があたって、<ruby><rb>薄</rb><rt>すすき</rt></ruby>の葉でこんなに手を切りました。ちょいとこれで結わえて下さいな」</p>
+        <p>親指の中ほどで<ruby><rb>疵</rb><rt>きず</rt></ruby>は少しだが、血が意外に出た。僕は早速紙を裂いて結わえてやる。<persName ref="#tamiko">民子</persName>が両手を赤くしているのを見た時非常にかわいそうであった。こんな山の中で休むより、畑へ<ruby><rb>往</rb><rt>い</rt></ruby>ってから休もうというので、今度は<persName ref="#tamiko">民子</persName>を先に僕が後になって急ぐ。八時少し過ぎと思う時分に<placeName ref="#onagasaku">大長柵</placeName>の畑へ着いた。</p>
+        <p>十年許り前に<ruby><rb>親父</rb><rt>おやじ</rt></ruby>が未だ達者な時分、隣村の親戚から頼まれて余儀なく買ったのだそうで、畑が八反と山林が二町ほどここにあるのである。この辺一体に高台は皆山林でその間の柵が畑になって居る。<ruby><rb>越石</rb><rt>こしこく</rt></ruby>を持っていると云えば、世間体はよいけど、手間ばかり掛って割に合わないといつも母が言ってる畑だ。</p>
+        <p>三方林で囲まれ、南が開いて<ruby><rb>余所</rb><rt>よそ</rt></ruby>の畑とつづいている。北が高く南が低い<ruby><rb>傾斜</rb><rt>こうばい</rt></ruby>になっている。母の推察通り、棉は末にはなっているが、風が吹いたら溢れるかと思うほど棉はえんでいる。点々として畑中白くなっているその棉に朝日がさしていると<ruby><rb>目</rb><rt>ま</rt></ruby>ぶしい様に綺麗だ。</p>
+        <p>「まアよくえんでること。今日採りにきてよい事しました」</p>
+        <p><persName ref="#tamiko">民子</persName>は女だけに、棉の綺麗にえんでるのを見て嬉しそうにそう云った。畑の真中ほどに桐の樹が二本繁っている。葉が落ちかけて居るけれど、<date when="--10">十月</date>の熱を<ruby><rb>凌</rb><rt>しの</rt></ruby>ぐには十分だ。ここへあたりの<ruby><rb>黍殻</rb><rt>きびがら</rt></ruby>を寄せて二人が陣どる。弁当包みを枝へ釣る。天気のよいのに山路を急いだから、汗ばんで熱い。着物を一枚ずつ脱ぐ。風を<ruby><rb>懐</rb><rt>ふところ</rt></ruby>へ入れ足を<ruby><rb>展</rb><rt>のば</rt></ruby>して休む。青ぎった空に<ruby><rb>翠</rb><rt>みどり</rt></ruby>の松林、<ruby><rb>百舌</rb><rt>もず</rt></ruby>もどこかで鳴いている。声の響くほど山は静かなのだ。天と地との間で広い畑の真ン中に二人が話をしているのである。</p>
+        <p>「ほんとに<persName ref="#tamiko">民子</persName>さん、きょうというきょうは極楽の様な日ですねイ」</p>
+        <p>顔から頸から汗を拭いた跡のつやつやしさ、今更に<persName ref="#tamiko">民子</persName>の横顔を見た。</p>
+        <p>「そうですねイ、わたし何だか夢の様な気がするの。今朝<ruby><rb>家</rb><rt>うち</rt></ruby>を出る時はほんとに極りが悪くて……<ruby><rb>嫂</rb><rt>ねえ</rt></ruby>さんには変な眼つきで視られる、<persName ref="#omasu">お増</persName>には冷かされる、私はのぼせてしまいました。<persName ref="#masao">政夫</persName>さんは平気でいるから憎らしかったわ」</p>
+        <p>「僕だって平気なもんですか。村の奴らに逢うのがいやだから、僕は一足先に出て銀杏の下で<persName ref="#tamiko">民さん</persName>を待っていたんでさア。それはそうと、<persName ref="#tamiko">民さん</persName>、今日はほんとに面白く遊ぼうね。僕は来月は学校へ行くんだし、今月とて十五日しかないし、二人でしみじみ話の出来る様なことはこれから先はむずかしい。あわれッぽいこと云うようだけど、二人の中も今日だけかしらと思うのよ。ねイ<persName ref="#tamiko">民さん</persName>……」</p>
+        <p>「そりゃア<persName ref="#masao">政夫</persName>さん、私は道々そればかり考えて来ました。私がさっきほんとに情なくなってと言ったら、<persName ref="#masao">政夫</persName>さんは笑っておしまいなしたけど……」</p>
+        <p>面白く遊ぼう遊ぼう言うても、話を始めると直ぐにこうなってしまう。<persName ref="#tamiko">民子</persName>は涙を拭うた様であった。ちょうどよくそこへ馬が見えてきた。西側の山路から、がさがさ笹にさわる音がして、<ruby><rb>薪</rb><rt>たきぎ</rt></ruby>をつけた馬を引いて<ruby><rb>頬冠</rb><rt>ほおかむり</rt></ruby>の男が出て来た。よく見ると意外にも村の<persName ref="#tsunekichi">常吉</persName>である。この奴はいつか向うの<persName ref="#ohama">お浜</persName>に<persName ref="#tamiko">民子</persName>を遊びに連れだしてくれと<ruby><rb>頻</rb><rt>しき</rt></ruby>りに頼んだという奴だ。いやな野郎がきやがったなと思うていると、</p>
+        <p>「や<persName ref="#masao">政夫</persName>さん。コンチャどうも結構なお天気ですな。今日は御夫婦で棉採りかな。<ruby><rb>洒落</rb><rt>しゃ</rt></ruby>れてますね。アハハハハハ」</p>
+        <p>「オウ<persName ref="#tsunekichi">常さん</persName>、今日は駄賃かな。大変早く御精が出ますね」</p>
+        <p>「ハア吾々なんざア駄賃取りでもして<ruby><rb>適</rb><rt>たま</rt></ruby>に<ruby><rb>一盃</rb><rt>いっぱい</rt></ruby>やるより外に楽しみもないんですからな。<persName ref="#tamiko">民子</persName>さん、いやに見せつけますね。<ruby><rb>余</rb><rt>あんま</rt></ruby>り罪ですぜ。アハハハハハ」</p>
+        <p>この野郎失敬なと思ったけれど、吾々も余り威張れる身でもなし、笑いとぼけて<persName ref="#tsunekichi">常吉</persName>をやり過ごした。</p>
+        <p>「馬鹿野郎、実に厭なやつだ。さア<persName ref="#tamiko">民さん</persName>、始めましょう。ほんとに<persName ref="#tamiko">民さん</persName>、元気をお直しよ。そんなにくよくよおしでないよ。僕は学校へ行ったて<placeName ref="#chiba">千葉</placeName>だもの、盆正月の外にも来ようと思えば土曜の晩かけて日曜に来られるさ……」</p>
+        <p>「ほんとに済みません。<ruby><rb>泣面</rb><rt>なきつら</rt></ruby>などして。あの<persName ref="#tsunekichi">常さん</persName>て男、何といういやな人でしょう」</p>
+        <p><persName ref="#tamiko">民子</persName>は襷掛け僕はシャツに肩を脱いで一心に採って三時間ばかりの間に七分通り片づけてしまった。もう跡はわけがないから弁当にしようということにして桐の蔭に戻る。僕はかねて用意の水筒を持って、</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、僕は水を<ruby><rb>汲</rb><rt>く</rt></ruby>んで来ますから、留守番を頼みます。帰りに『えびづる』や『あけび』をうんと<ruby><rb>土産</rb><rt>みやげ</rt></ruby>に採って来ます」</p>
+        <p>「私は一人で居るのはいやだ。<persName ref="#masao">政夫</persName>さん、一所に連れてって下さい。さっきの様な人にでも来られたら大変ですもの」</p>
+        <p>「だって<persName ref="#tamiko">民さん</persName>、向うの山を一つ越して先ですよ、<ruby><rb>清水</rb><rt>しみず</rt></ruby>のある所は。道という様な道もなくて、それこそ<ruby><rb>茨</rb><rt>いばら</rt></ruby>や<ruby><rb>薄</rb><rt>すすき</rt></ruby>で足が疵だらけになりますよ。水がなくちゃ弁当が食べられないから、困ったなア、<persName ref="#tamiko">民さん</persName>、待っていられるでしょう」</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、後生だから連れて行って下さい。あなたが歩ける道なら私にも歩けます。一人でここにいるのはわたしゃどうしても……」</p>
+        <p>「<persName ref="#tamiko">民さん</persName>は山へ来たら大変だだッ児になりましたネー。それじゃ一所に行きましょう」</p>
+        <p>弁当は棉の中へ隠し、着物はてんでに着てしまって出掛ける。<persName ref="#tamiko">民子</persName>は頻りに、にこにこしている。<ruby><rb>端</rb><rt>はた</rt></ruby>から見たならば、馬鹿馬鹿しくも見苦しくもあろうけれど、本人同志の身にとっては、そのらちもなき押問答の内にも限りなき嬉しみを感ずるのである。高くもないけど道のない所をゆくのであるから、笹原を押分け樹の根につかまり、崖を<ruby><rb>攀</rb><rt>よ</rt></ruby>ずる。しばしば<persName ref="#tamiko">民子</persName>の手を採って<ruby><rb>曳</rb><rt>ひ</rt></ruby>いてやる。</p>
+        <p>近く二三日以来の二人の感情では、<persName ref="#tamiko">民子</persName>が求めるならば僕はどんなことでも拒まれない、また僕が求めるならやはりどんなことでも<persName ref="#tamiko">民子</persName>は決して拒みはしない。そういう間柄でありつつも、飽くまで臆病に飽くまで気の小さな<ruby><rb>両人</rb><rt>ふたり</rt></ruby>は、<ruby><rb>嘗</rb><rt>かつ</rt></ruby>て一度も有意味に手などを採ったことはなかった。しかるに今日は偶然の事から屡手を採り合うに至った。<ruby><rb>這辺</rb><rt>このへん</rt></ruby>の一種云うべからざる愉快な感情は経験ある人にして初めて語ることが出来る。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、ここまでくれば、清水はあすこに見えます。これから僕が一人で行ってくるからここに待って居なさい。僕が見えて居たら居られるでしょう」</p>
+        <p>「ほんとに<persName ref="#masao">政夫</persName>さんの御厄介ですね……そんなにだだを言っては済まないから、ここで待ちましょう。あらア<ruby><rb>野葡萄</rb><rt>えびづる</rt></ruby>があった」</p>
+        <p>僕は水を汲んでの帰りに、水筒は腰に結いつけ、あたりを少し許り探って、『あけび』四五十と野葡萄一もくさを採り、<ruby><rb>竜胆</rb><rt>りんどう</rt></ruby>の花の美しいのを五六本見つけて帰ってきた。帰りは下りだから無造作に二人で降りる。畑へ出口で僕は<ruby><rb>春蘭</rb><rt>しゅんらん</rt></ruby>の大きいのを見つけた。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、僕は一寸『アックリ』を掘ってゆくから、この『あけび』と『えびづる』を持って行って下さい」</p>
+        <p>「『アックリ』てなにい。あらア春蘭じゃありませんか」</p>
+        <p>「<persName ref="#tamiko">民さん</persName>は町場もんですから、春蘭などと品のよいこと<ruby><rb>仰</rb><rt>おっ</rt></ruby>しゃるのです。<placeName ref="#yagiri">矢切</placeName>の百姓なんぞは『アックリ』と申しましてね、<ruby><rb>皸</rb><rt>あかぎれ</rt></ruby>の薬に致します。ハハハハ」</p>
+        <p>「あらア口の悪いこと。<persName ref="#masao">政夫</persName>さんは、きょうはほんとに口が悪くなったよ」</p>
+        <p>山の弁当と云えば、土地の者は一般に楽しみの一つとしてある。何か生理上の理由でもあるか知らんが、とにかく、山の仕事をしてやがてたべる弁当が不思議とうまいことは誰も云う所だ。今吾々二人は新らしき清水を汲み来り母の心を<ruby><rb>籠</rb><rt>こ</rt></ruby>めた弁当を分けつつたべるのである。興味の尋常でないは言うも<ruby><rb>愚</rb><rt>おろか</rt></ruby>な次第だ。僕は『あけび』を好み<persName ref="#tamiko">民子</persName>は野葡萄をたべつつしばらく話をする。</p>
+        <p><persName ref="#tamiko">民子</persName>は笑いながら、</p>
+        <p>「<persName ref="#masao">政夫</persName>さんは皸の薬に『アックリ』とやらを採ってきて学校へお持ちになるの。学校で皸がきれたらおかしいでしょうね……」</p>
+        <p>僕は真面目に、</p>
+        <p>「なアにこれは<persName ref="#omasu">お増</persName>にやるのさ。<persName ref="#omasu">お増</persName>はもうとうに皸を切らしているでしょう。この間も湯に這入る時に<persName ref="#omasu">お増</persName>が火を<ruby><rb>焚</rb><rt>た</rt></ruby>きにきて非常に皸を痛がっているから、その内に僕が山へ行ったら『アックリ』を採ってきてやると言ったのさ」</p>
+        <p>「まアあなたは親切な人ですことね……<persName ref="#omasu">お増</persName>は<ruby><rb>蔭日向</rb><rt>かげひなた</rt></ruby>のない憎気のない女ですから、私も仲好くしていたんですが、この頃は何となし私に突き当る様な事ばかし言って、何でもわたしを憎んでいますよ」</p>
+        <p>「アハハハ、それは<persName ref="#omasu">お増</persName>どんが焼餅をやくのでさ。つまらんことにもすぐ焼餅を焼くのは、女の癖さ。僕がそら『アックリ』を採っていって<persName ref="#omasu">お増</persName>にやると云えば、<persName ref="#tamiko">民さん</persName>がすぐに、まアあなたは親切な人とか何とか云うのと同じ<ruby><rb>訣</rb><rt>わけ</rt></ruby>さ」</p>
+        <p>「この人はいつのまにこんなに口がわるくなったのでしょう。何を言っても<persName ref="#masao">政夫</persName>さんにはかないやしない。いくら私だって<persName ref="#omasu">お増</persName>が根も底もない焼もちだ位は承知していますよ……」</p>
+        <p>「実は<persName ref="#omasu">お増</persName>も<ruby><rb>不憫</rb><rt>ふびん</rt></ruby>な女よ。両親があんなことになりさえせねば、奉公人とまでなるのではない。親父は戦争で死ぬ、お袋はこれを嘆いたがもとでの病死、一人の兄がはずれものという訣で、とうとうあの始末。国家のために死んだ人の娘だもの、<persName ref="#tamiko">民さん</persName>、いたわってやらねばならない。あれでも<persName ref="#tamiko">民さん</persName>、あなたをば大変ほめているよ。意地曲りの嫂にこきつかわれるのだから一層かわいそうでさ」</p>
+        <p>「そりゃ<persName ref="#masao">政夫</persName>さん私もそう思って居ますさ。お母さんもよくそうおっしゃいました。つまらないものですけど何とかかとか分けてやってますが、また<persName ref="#masao">政夫</persName>さんの様に情深くされると……」</p>
+        <p><persName ref="#tamiko">民子</persName>は云いさしてまた話を詰らしたが、桐の葉に包んで置いた竜胆の花を手に採って、急に話を転じた。</p>
+        <p>「こんな美しい花、いつ採ってお出でなして。りんどうはほんとによい花ですね。わたしりんどうがこんなに美しいとは知らなかったわ。わたし急にりんどうが好きになった。おオえエ花……」</p>
+        <p>花好きな<persName ref="#tamiko">民子</persName>は例の癖で、色白の顔にその紫紺の花を押しつける。やがて何を思いだしてか、ひとりでにこにこ笑いだした。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、なんです、そんなにひとりで笑って」</p>
+        <p>「<persName ref="#masao">政夫</persName>さんはりんどうの様な人だ」</p>
+        <p>「どうして」</p>
+        <p>「さアどうしてということはないけど、<persName ref="#masao">政夫</persName>さんは何がなし竜胆の様な風だからさ」</p>
+        <p><persName ref="#tamiko">民子</persName>は言い終って顔をかくして笑った。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>もよっぽど人が悪くなった。それでさっきの<ruby><rb>仇討</rb><rt>あだうち</rt></ruby>という訣ですか。口真似なんか恐入りますナ。しかし<persName ref="#tamiko">民さん</persName>が野菊で僕が竜胆とは面白い対ですね。僕は<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んでりんどうになります。それで<persName ref="#tamiko">民さん</persName>がりんどうを好きになってくれればなお嬉しい」</p>
+        <p>二人はこんならちもなき事いうて悦んでいた。秋の日足の短さ、日はようやく傾きそめる。さアとの掛声で棉もぎにかかる。午後の分は僅であったから一時間半ばかりでもぎ終えた。何やかやそれぞれまとめて番ニョに乗せ、二人で差しあいにかつぐ。<persName ref="#tamiko">民子</persName>を先に僕が後に、とぼとぼ畑を出掛けた時は、日は早く松の梢をかぎりかけた。</p>
+        <p>半分道も来たと思う頃は十三夜の月が、<ruby><rb>木</rb><rt>こ</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>から影をさして尾花にゆらぐ風もなく、露の置くさえ見える様な夜になった。今朝は気がつかなかったが、道の西手に一段低い畑には、<ruby><rb>蕎麦</rb><rt>そば</rt></ruby>の花が薄絹を曳き渡したように白く見える。こおろぎが寒げに鳴いているにも心とめずにはいられない。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>、くたぶれたでしょう。どうせおそくなったんですから、この景色のよい所で少し休んで行きましょう」</p>
+        <p>「こんなにおそくなるなら、今少し急げばよかったに。家の人達にきっと何とか言われる。<persName ref="#masao">政夫</persName>さん、私はそれが心配になるわ」</p>
+        <p>「今更心配しても<ruby><rb>追</rb><rt>おっ</rt></ruby>つかないから、まア少し休みましょう。こんなに景色のよいことは<ruby><rb>滅多</rb><rt>めった</rt></ruby>にありません。そんなに人に申訣のない様な悪いことはしないもの、<persName ref="#tamiko">民さん</persName>、心配することはないよ」</p>
+        <p>月あかりが斜にさしこんでいる道端の松の切株に二人は腰をかけた。目の先七八間の所は木の蔭で薄暗いがそれから向うは畑一ぱいに月がさして、蕎麦の花が<ruby><rb>際</rb><rt>きわ</rt></ruby>立って白い。</p>
+        <p>「何というえい景色でしょう。<persName ref="#masao">政夫</persName>さん歌とか俳句とかいうものをやったら、こんなときに面白いことが云えるでしょうね。私ら様な無筆でもこんな時には心配も何も忘れますもの。<persName ref="#masao">政夫</persName>さん、あなた歌をおやんなさいよ」</p>
+        <p>「僕は実は少しやっているけど、むずかしくて容易に出来ないのさ。山畑の蕎麦の花に月がよくて、こおろぎが鳴くなどは実にえいですなア。<persName ref="#tamiko">民さん</persName>、これから二人で歌をやりましょうか」</p>
+        <p>お互に一つの心配を持つ身となった二人は、内に思うことが多くてかえって話は少ない。何となく<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ない二人の行末、ここで少しく話をしたかったのだ。<persName ref="#tamiko">民子</persName>は勿論のこと、僕よりも一層話したかったに相違ないが、年の至らぬのと浮いた心のない二人は、なかなか差向いでそんな話は出来なかった。しばらくは無言でぼんやり時間を過ごすうちに、一列の<ruby><rb>雁</rb><rt>がん</rt></ruby>が二人を促すかの様に空近く鳴いて通る。</p>
+        <p>ようやく田圃へ降りて銀杏の木が見えた時に、二人はまた同じ様に一種の感情が胸に湧いた。それは外でもない、何となく家に<ruby><rb>這入</rb><rt>はい</rt></ruby>りづらいと言う心持である。這入りづらい訣はないと思うても、どうしても這入りづらい。<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>する暇もない、<ruby><rb>忽</rb><rt>たちまち</rt></ruby>門前近く来てしまった。</p>
+        <p>「<persName ref="#masao">政夫</persName>さん……あなた先になって下さい。私<ruby><rb>極</rb><rt>きま</rt></ruby>りわるくてしょうがないわ」</p>
+        <p>「よしとそれじゃ僕が先になろう」</p>
+        <p>僕は<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る勇気を<ruby><rb>鼓</rb><rt>こ</rt></ruby>し殊に平気な風を装うて門を這入った。家の人達は今夕飯最中で盛んに話が湧いているらしい。庭場の雨戸は未だ開いたなりに月が軒口までさし込んでいる。僕が<ruby><rb>咳払</rb><rt>せきばらい</rt></ruby>を一ツやって庭場へ這入ると、台所の話はにわかに止んでしまった。<persName ref="#tamiko">民子</persName>は指の先で僕の肩を<ruby><rb>撞</rb><rt>つ</rt></ruby>いた。僕も承知しているのだ、今御膳会議で二人の噂が<ruby><rb>如何</rb><rt>いか</rt></ruby>に盛んであったか。</p>
+        <p>宵祭ではあり十三夜ではあるので、家中表座敷へ<ruby><rb>揃</rb><rt>そろ</rt></ruby>うた時、母も奥から起きてきた。母は一通り二人の余り遅かったことを咎めて深くは言わなかったけれど、常とは全く違っていた。何か思っているらしく、少しも打解けない。これまでは口には小言を言うても、心中に疑わなかったのだが、今夜は口には余り言わないが、心では十分に二人に疑いを起したに違いない。<persName ref="#tamiko">民子</persName>はいよいよ小さくなって座敷<ruby><rb>中</rb><rt>なか</rt></ruby>へは出ない。僕は山から採ってきた、あけびや<ruby><rb>野葡萄</rb><rt>えびづる</rt></ruby>やを沢山座敷<ruby><rb>中</rb><rt>じゅう</rt></ruby>へ並べ立てて、暗に僕がこんな事をして居たから遅くなったのだとの意を示し無言の弁解をやっても何のききめもない。誰一人それをそうと見るものはない。今夜は何の話にも僕等二人は<ruby><rb>除</rb><rt>の</rt></ruby>けものにされる始末で、もはや二人は全く罪あるものと黙決されてしまったのである。</p>
+        <p>「お母さんがあんまり甘過ぎる。あアして居る二人を一所に山畑へやるとは目のないにもほどがある。はたでいくら心配してもお母さんがあれでは駄目だ」</p>
+        <p>これが台所会議の決定であったらしい。母の方でもいつまで児供と思っていたが誤りで、自分が悪かったという様な考えに今夜はなったのであろう。今更二人を叱って見ても仕方がない。なに<persName ref="#masao">政夫</persName>を学校へ<ruby><rb>遣</rb><rt>や</rt></ruby>ってしまいさえせば<ruby><rb>仔細</rb><rt>しさい</rt></ruby>はないと母の心はちゃんときまって居るらしく、</p>
+        <p>「<persName ref="#masao">政</persName>や、お前はナ<date when="--11">十一月</date>へ入って直ぐ学校へやる積りであったけれど、そうしてぶらぶらして居ても為にならないから、お祭が終ったら、もう学校へゆくがよい。<date when="---17">十七日</date>にゆくとしろ……えいか、そのつもりで小支度して置け」</p>
+        <p>学校へゆくは固より僕の願い、十日や二十日早くとも遅くともそれに仔細はないが、この場合しかも今夜<ruby><rb>言渡</rb><rt>いいわたし</rt></ruby>があって見ると、二人は既に罪を犯したものと定められての仕置であるから、<persName ref="#tamiko">民子</persName>は勿論僕に取ってもすこぶる心苦しい処がある。実際二人はそれほどに堕落した訣でないから、頭からそうときめられては、<ruby><rb>聊</rb><rt>いささ</rt></ruby>か妙な心持がする。さりとて弁解の出来ることでもなし、また強いことを言える資格も実は無いのである。これが一ヶ月前であったらば、それはお母さん御無理だ、学校へ行くのは望みであるけど、<ruby><rb>科</rb><rt>とが</rt></ruby>を着せられての仕置に学校へゆけとはあんまりでしょう……などと直ぐだだを言うのであるが、今夜はそんな<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>を言えるほど無邪気ではない。全くの処、恋に陥ってしまっている。</p>
+        <p>あれほど可愛がられた一人の母に隠立てをする、何となく隔てを作って心のありたけを言い得ぬまでになっている。おのずから人前を<ruby><rb>憚</rb><rt>はばか</rt></ruby>り、人前では殊更に二人がうとうとしく取りなす様になっている。かくまで<ruby><rb>私心</rb><rt>わたくしごころ</rt></ruby>が長じてきてどうして立派な口がきけよう。僕はただ<ruby><rb>一言</rb><rt>いちごん</rt></ruby>、</p>
+        <p>「はア……」</p>
+        <p>と答えたきりなんにも言わず、母の言いつけに盲従する外はなかった。</p>
+        <p>「僕は学校へ往ってしまえばそれでよいけど、<persName ref="#tamiko">民さん</persName>は跡でどうなるだろうか」</p>
+        <p><ruby><rb>不図</rb><rt>ふと</rt></ruby>そう思って、そっと<persName ref="#tamiko">民子</persName>の方を見ると、<persName ref="#omasu">お増</persName>が枝豆をあさってる後に、<persName ref="#tamiko">民子</persName>はうつむいて膝の上に<ruby><rb>襷</rb><rt>たすき</rt></ruby>をこねくりつつ沈黙している。如何にも元気のない風で夜のせいか顔色も青白く見えた。<persName ref="#tamiko">民子</persName>の風を見て僕も俄に悲しくなって泣きたくなった。涙は<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>を伝って眼が曇った。なぜ悲しくなったか理由は<ruby><rb>判然</rb><rt>はっきり</rt></ruby>しない。ただ<persName ref="#tamiko">民子</persName>が可哀相でならなくなったのである。<persName ref="#tamiko">民子</persName>と僕との楽しい関係もこの日の夜までは続かなく、<date when="---13">十三日</date>の昼の光と共に全く消えうせてしまった。嬉しいにつけても思いのたけは語りつくさず、憂き悲しいことについては勿論百分の一だも語りあわないで、二人の関係は<ruby><rb>闇</rb><rt>やみ</rt></ruby>の幕に這入ってしまったのである。</p>
+        <p><date when="---14">十四日</date>は祭の初日でただ物せわしく日がくれた。お互に気のない風はしていても、手にせわしい仕事のあるばかりに、とにかく思い紛らすことが出来た。</p>
+        <p>十五日と<date when="---16">十六日</date>とは、食事の外用事もないままに、書室へ<ruby><rb>籠</rb><rt>こも</rt></ruby>りとおしていた。ぼんやり机にもたれたなり何をするでもなく、また二人の関係をどうしようかという様なことすらも考えてはいない。ただ<persName ref="#tamiko">民子</persName>のことが頭に充ちているばかりで、極めて単純に<persName ref="#tamiko">民子</persName>を思うている外に考えは働いて居らぬ。この二日の間に<persName ref="#tamiko">民子</persName>と三四回は逢ったけれど、話も出来ず微笑を交換する元気もなく、うら淋しい心持を互に目に訴うるのみであった。二人の心持が今少しませて居ったならば、この二日の間にも将来の事など随分話し合うことが出来たのであろうけれど、しぶとい心持などは毛ほどもなかった二人には、その場合になかなかそんな事は出来なかった。それでも僕は<date when="---16">十六日</date>の午後になって、何とはなしに以下のような事を巻紙へ書いて、日暮に一寸来た<persName ref="#tamiko">民子</persName>に僕が居なくなってから見てくれと云って渡した。</p>
+        <p>朝からここへ這入ったきり、何をする気にもならない。外へ出る気にもならず、本を読む気にもならず、ただ繰返し繰返し<persName ref="#tamiko">民さん</persName>の事ばかり思って居る。<persName ref="#tamiko">民さん</persName>と一所に居れば神様に抱かれて雲にでも乗って居る様だ。僕はどうしてこんなになったんだろう。学問をせねばならない身だから、学校へは行くけれど、心では<persName ref="#tamiko">民さん</persName>と離れたくない。<persName ref="#tamiko">民さん</persName>は自分の年の多いのを気にしているらしいが、僕はそんなことは何とも思わない。僕は<persName ref="#tamiko">民さん</persName>の思うとおりになるつもりですから、<persName ref="#tamiko">民さん</persName>もそう思っていて下さい。明日は早く立ちます。冬期の休みには帰ってきて<persName ref="#tamiko">民さん</persName>に逢うのを楽しみにして居ります。</p>
+        <p><date when="--10-16">十月十六日</date></p>
+        <p><persName ref="#masao">政夫</persName></p>
+        <p><persName ref="#tamiko">民子</persName>様</p>
+        <p>学校へ行くとは云え、罪があって早くやられると云う境遇であるから、人の笑声話声にも一々ひがみ心が起きる。皆二人に対する嘲笑かの様に聞かれる。いっそ早く学校へ行ってしまいたくなった。決心が定まれば元気も<ruby><rb>恢復</rb><rt>かいふく</rt></ruby>してくる。この夜は頭も少しくさえて夕飯も心持よくたべた。学校のこと何くれとなく母と話をする。やがて寝に就いてからも、</p>
+        <p>「何だ馬鹿馬鹿しい、十五かそこらの小僧の癖に、女のことなどばかりくよくよ考えて……そうだそうだ、<ruby><rb>明朝</rb><rt>あした</rt></ruby>は早速学校へ行こう。<persName ref="#tamiko">民子</persName>は可哀相だけれど……もう考えまい、考えたって仕方がない、学校学校……」</p>
+        <p><ruby><rb>独口</rb><rt>ひとりぐち</rt></ruby>ききつつ眠りに入った様な訣であった。</p>
+        <p>船で河から<placeName ref="#ichikawa">市川</placeName>へ出るつもりだから、<date when="---17">十七日</date>の朝、小雨の降るのに、一切の持物をカバン<ruby><rb>一個</rb><rt>ひとつ</rt></ruby>につめ込み<persName ref="#tamiko">民子</persName>と<persName ref="#omasu">お増</persName>に送られて<placeName ref="#yagiri-no-watashi">矢切の渡</placeName>へ降りた。村の者の荷船に便乗する訣でもう船は来て居る。僕は<persName ref="#tamiko">民さん</persName>それじゃ……と言うつもりでも<ruby><rb>咽</rb><rt>のど</rt></ruby>がつまって声が出ない。<persName ref="#tamiko">民子</persName>は僕に包を渡してからは、自分の手のやりばに困って胸を<ruby><rb>撫</rb><rt>な</rt></ruby>でたり<ruby><rb>襟</rb><rt>えり</rt></ruby>を撫でたりして、下ばかり向いている。眼にもつ涙を<persName ref="#omasu">お増</persName>に見られまいとして、体を脇へそらしている、<persName ref="#tamiko">民子</persName>があわれな姿を見ては僕も涙が抑え切れなかった。<persName ref="#tamiko">民子</persName>は今日を別れと思ってか、髪はさっぱりとした<ruby><rb>銀杏返</rb><rt>いちょうがえ</rt></ruby>しに薄く化粧をしている。<ruby><rb>煤色</rb><rt>すすいろ</rt></ruby>と紺の細かい<ruby><rb>弁慶縞</rb><rt>べんけいじま</rt></ruby>で、羽織も長着も同じい<ruby><rb>米沢紬</rb><rt>よねざわつむぎ</rt></ruby>に、品のよい<ruby><rb>友禅縮緬</rb><rt>ゆうぜんちりめん</rt></ruby>の帯をしめていた。襷を掛けた<persName ref="#tamiko">民子</persName>もよかったけれど今日の<persName ref="#tamiko">民子</persName>はまた一層引立って見えた。</p>
+        <p>僕の気のせいででもあるか、<persName ref="#tamiko">民子</persName>は<date when="---13">十三日</date>の夜からは<ruby><rb>一日</rb><rt>ひとひ</rt></ruby>一日とやつれてきて、この日のいたいたしさ、僕は泣かずには居られなかった。虫が知らせるとでもいうのか、これが生涯の別れになろうとは、僕は勿論<persName ref="#tamiko">民子</persName>とて、よもやそうは思わなかったろうけれど、この時のつらさ悲しさは、とても他人に話しても信じてくれるものはないと思う位であった。</p>
+        <p><ruby><rb>尤</rb><rt>もっと</rt></ruby>も<persName ref="#tamiko">民子</persName>の思いは僕より深かったに相違ない。僕は中学校を卒業するまでにも、四五年間のある体であるのに、<persName ref="#tamiko">民子</persName>は十七で今年の内にも縁談の話があって両親からそう言われれば、無造作に拒むことの出来ない身であるから、行末のことをいろいろ考えて見ると心配の多い訣である。当時の僕はそこまでは考えなかったけれど、親しく目に<ruby><rb>染</rb><rt>し</rt></ruby>みた<persName ref="#tamiko">民子</persName>のいたいたしい姿は幾年経っても昨日の事のように眼に浮んでいるのである。</p>
+        <p>余所から見たならば、若いうちによくあるいたずらの勝手な泣面と見苦しくもあったであろうけれど、二人の身に取っては、真にあわれに悲しき別れであった。互に手を取って後来を語ることも出来ず、小雨のしょぼしょぼ降る渡場に、泣きの涙も人目を<ruby><rb>憚</rb><rt>はばか</rt></ruby>り、一言の<ruby><rb>詞</rb><rt>ことば</rt></ruby>もかわし得ないで永久の別れをしてしまったのである。無情の舟は流を下って早く、十分間と経たぬ内に、五町と下らぬ内に、お互の姿は雨の曇りに隔てられてしまった。物も言い得ないで、しょんぼりと<ruby><rb>悄</rb><rt>しお</rt></ruby>れていた<ruby><rb>不憫</rb><rt>ふびん</rt></ruby>な<persName ref="#tamiko">民さん</persName>の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>、どうして忘れることが出来よう。<persName ref="#tamiko">民さん</persName>を思うために神の怒りに触れて即座に打殺さるる様なことがあるとても僕には<persName ref="#tamiko">民さん</persName>を思わずに居られない。年をとっての後の考えから言えば、あアもしたらこうもしたらと思わぬこともなかったけれど、当時の若い<ruby><rb>同志</rb><rt>どうし</rt></ruby>の思慮には何らの工夫も無かったのである。八百屋お七は家を焼いたらば、<ruby><rb>再度</rb><rt>ふたたび</rt></ruby>思う人に逢われることと工夫をしたのであるが、吾々二人は妻戸一枚を忍んで開けるほどの<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>も出なかった。それほどに無邪気な可憐な恋でありながら、なお親に<ruby><rb>怖</rb><rt>お</rt></ruby>じ兄弟に憚り、他人の前にて涙も拭き得なかったのは如何に気の弱い同志であったろう。</p>
+        <p>僕は学校へ行ってからも、とかく<persName ref="#tamiko">民子</persName>のことばかり思われて仕方がない。学校に居ってこんなことを考えてどうするものかなどと、自分で自分を叱り励まして見ても何の甲斐もない。そういう詞の尻からすぐ<persName ref="#tamiko">民子</persName>のことが湧いてくる。多くの人中に居ればどうにか紛れるので、日の中はなるたけ一人で居ない様に心掛けて居た。夜になっても寝ると仕方がないから、なるたけ人中で騒いで居て疲れて寝る工夫をして居た。そういう始末でようやく年もくれ冬期休業になった。</p>
+        <p>僕が<date when="--12-25">十二月二十五日</date>の午前に帰って見ると、庭一面に<ruby><rb>籾</rb><rt>もみ</rt></ruby>を干してあって、母は前の縁側に<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>を敷いて日向ぼっこをしていた。近頃はよほど体の工合もよい。今日は兄夫婦と男と<persName ref="#omasu">お増</persName>とは山へ<ruby><rb>落葉</rb><rt>くず</rt></ruby>をはきに行ったとの話である。僕は<persName ref="#tamiko">民さん</persName>はと口の先まで出たけれど<ruby><rb>遂</rb><rt>つい</rt></ruby>に言い切らなかった。母も意地悪く何とも言わない。僕は帰り早々<persName ref="#tamiko">民子</persName>のことを問うのが如何にも極り悪く、そのまま例の書室を片づけてここに落着いた。しかし日暮までには<persName ref="#tamiko">民子</persName>も帰ってくることと思いながら、おろおろして待って居る。皆が帰っていよいよ夕飯ということになっても<persName ref="#tamiko">民子</persName>の姿は見えない、誰もまた<persName ref="#tamiko">民子</persName>のことを一言も言うものもない。僕はもう<persName ref="#tamiko">民子</persName>は<placeName ref="#ichikawa">市川</placeName>へ帰ったものと察して、人に問うのもいまいましいから、外の話もせず、飯がすむとそれなり書室へ這入ってしまった。</p>
+        <p>今日は必ず<persName ref="#tamiko">民子</persName>に逢われることと一方ならず楽しみにして帰って来たのに、この始末で何とも言えず力が落ちて淋しかった。さりとて誰にこの<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>を話しようもなく、<persName ref="#tamiko">民子</persName>の写真などを取出して見て居ったけれど、ちっとも気が晴れない。またあの奴<persName ref="#tamiko">民子</persName>が居ないから考え込んで居やがると思われるも<ruby><rb>口惜</rb><rt>くや</rt></ruby>しく、ようやく心を取直し、母の枕元へいって夜遅くまで学校の話をして聞かせた。</p>
+        <p><ruby><rb>翌</rb><rt>あ</rt></ruby>くる日は九時頃にようやく起きた。母は未だ寝ている。台所へ出て見ると外の者は皆また山へ往ったとかで、<persName ref="#omasu">お増</persName>が一人台所片づけに残っている。僕は顔を洗ったなり飯も食わずに、背戸の畑へ出てしまった。この秋、<persName ref="#tamiko">民子</persName>と二人で<ruby><rb>茄子</rb><rt>なす</rt></ruby>をとった畑が今は青々と菜がほきている。僕はしばらく立って<ruby><rb>何所</rb><rt>いずこ</rt></ruby>を眺めるともなく、<persName ref="#tamiko">民子</persName>の俤を脳中にえがきつつ思いに沈んでいる。</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、何をそんなに考えているの」</p>
+        <p><persName ref="#omasu">お増</persName>が出し抜けに後からそいって、近くへ寄ってきた。僕がよい加減なことを一言二言いうと、<persName ref="#omasu">お増</persName>はいきなり僕の手をとって、も少しこっちへきてここへ腰を掛けなさいまアと言いつつ、<ruby><rb>藁</rb><rt>わら</rt></ruby>を積んである所へ自分も腰をかけて僕にも掛けさせた。</p>
+        <p>「<persName ref="#masao">政夫</persName>さん……お<persName ref="#tamiko">民さん</persName>はほんとに可哀相でしたよ。うちの姉さんたらほんとに意地曲りですからネ。何という根性の悪い人だか、私もはアここのうちに居るのは厭になってしまった。昨日<persName ref="#masao">政夫</persName>さんが来るのは解りきって居るのに、姉さんがいろんなことを云って、一昨日お<persName ref="#tamiko">民さん</persName>を<placeName ref="#ichikawa">市川</placeName>へ帰したんですよ。待つ人があるだっぺとか逢いたい人が待ちどおかっぺとか、当こすりを云ってお<persName ref="#tamiko">民さん</persName>を泣かせたりしてネ、お母さんにも何でもいろいろなこと言ったらしい、とうとう一昨日お昼前に帰してしまったのでさ。<persName ref="#masao">政夫</persName>さんが一昨日きたら逢われたんですよ。<persName ref="#masao">政夫</persName>さん、私はお<persName ref="#tamiko">民さん</persName>が可哀相で可哀相でならないだよ。何だってあなたが居なくなってからはまるで泣きの涙で日を暮らして居るんだもの、<persName ref="#masao">政夫</persName>さんに手紙をやりたいけれど、それがよく自分には出来ないから口惜しいと云ってネ。私の部屋へ三晩も<ruby><rb>硯</rb><rt>すずり</rt></ruby>と紙を持ってきては泣いて居ました。お<persName ref="#tamiko">民さん</persName>も始まりは私にも隠していたけれど、後には隠して居られなくなったのさ。私もお<persName ref="#tamiko">民さん</persName>のためにいくら泣いたか知れない……」</p>
+        <p>見れば<persName ref="#omasu">お増</persName>はもうぽろぽろ涙をこぼしている。一体<persName ref="#omasu">お増</persName>はごく人のよい親切な女で、僕と<persName ref="#tamiko">民子</persName>が目の前で仲好い風をすると、<ruby><rb>嫉妬心</rb><rt>しっとしん</rt></ruby>を起すけれど、もとより執念深い性でないから、<persName ref="#tamiko">民子</persName>が一人になれば<persName ref="#tamiko">民子</persName>と仲が好く、僕が一人になれば僕を大騒ぎするのである。</p>
+        <p>それからなお<persName ref="#omasu">お増</persName>は、僕が居ない跡で<persName ref="#tamiko">民子</persName>が非常に母に叱られたことなどを話した。それは概略こうである。意地悪の<ruby><rb>嫂</rb><rt>あによめ</rt></ruby>が何を言うても、母が<persName ref="#tamiko">民子</persName>を愛することは少しも変らないけれど、二つも年の多い<persName ref="#tamiko">民子</persName>を僕の嫁にすることはどうしてもいけぬと云うことになったらしく、それには嫂もいろいろ言うて、嫁にしないとすれば、二人の仲はなるたけ裂く様な工夫をせねばならぬ。母も嫂もそういう心持になって居るから、<persName ref="#tamiko">民子</persName>に対する仕向けは、<persName ref="#masao">政夫</persName>のことを思うて居ても到底駄目であると遠廻しに<ruby><rb>諷示</rb><rt>ふうじ</rt></ruby>して居た。そこへきて<persName ref="#tamiko">民子</persName>が明けてもくれてもくよくよして、人の眼にもとまるほどであるから、時々は物忘れをしたり、呼んでも返辞が遅かったりして、母の<ruby><rb>疳癪</rb><rt>かんしゃく</rt></ruby>にさわったことも度々あった。僕が居なくなってから二十日許り経って<date when="--11">十一月</date>の月初めの頃、<persName ref="#tamiko">民子</persName>も外の者と野へ出ることとなって、母が<persName ref="#tamiko">民子</persName>にお前は一足跡になって、座敷のまわりを<ruby><rb>雑巾掛</rb><rt>ぞうきんがけ</rt></ruby>してそれから庭に広げてある<ruby><rb>蓆</rb><rt>むしろ</rt></ruby>を倉へ片づけてから野へゆけと言いつけた。<persName ref="#tamiko">民子</persName>は雑巾がけをしてからうっかり忘れてしまって、蓆を入れずに野へ出た処、間がわるくその日雨が降ったから、その蓆十枚ばかりを濡らしてしまった。<persName ref="#tamiko">民子</persName>は雨が降ってから気がついたけれど、もう間に合わない。うちへ帰って早速母に<ruby><rb>詫</rb><rt>わ</rt></ruby>びたけれど母は平日の事が胸にあるから、</p>
+        <p>「何も十枚ばかりの蓆が惜しいではないけれど、一体私の言いつけを<ruby><rb>疎</rb><rt>おろそ</rt></ruby>かに聞いているから起ったことだ。もとの<persName ref="#tamiko">民子</persName>はそうでなかった。得手勝手な考えごとなどしているから、人の言うことも耳へ<ruby><rb>這入</rb><rt>はい</rt></ruby>らないのだ……」</p>
+        <p>という様な随分痛い小言を云った。<persName ref="#tamiko">民子</persName>は母の枕元近くへいって、どうか私が悪かったのですから<ruby><rb>堪忍</rb><rt>かんにん</rt></ruby>して……と両手をついてあやまった。そうすると母はまたそう何も他人らしく改まってあやまらなくともだと叱ったそうで、<persName ref="#tamiko">民子</persName>はたまらなくなってワッと泣き伏した。そのまま<persName ref="#tamiko">民子</persName>が泣きやんでしまえば何のこともなく済んだであろうが、<persName ref="#tamiko">民子</persName>はとうとう一晩中泣きとおしたので翌朝は眼を赤くして居た。母も夜時々眼をさましてみると、<persName ref="#tamiko">民子</persName>はいつでも、すくすく泣いている声がしていたというので、今度は母が非常に立腹して、<persName ref="#omasu">お増</persName>と<persName ref="#tamiko">民子</persName>と二人呼んで母が<ruby><rb>顫声</rb><rt>ふるえごえ</rt></ruby>になって云うには、</p>
+        <p>「<ruby><rb>相対</rb><rt>あいたい</rt></ruby>では私がどんな我儘なことを云うかも知れないから<persName ref="#omasu">お増</persName>は<ruby><rb>聞人</rb><rt>ききて</rt></ruby>になってくれ。<persName ref="#tamiko">民子</persName>はゆうべ一晩中泣きとおした。定めし私に云われたことが無念でたまらなかったからでしょう」</p>
+        <p><persName ref="#tamiko">民子</persName>はここで私はそうでありませんと泣声でいうたけれど、母は耳にもかけずに、</p>
+        <p>「なるほど私の小言も少し云い過ぎかも知れないが、<persName ref="#tamiko">民子</persName>だって何もそれほど<ruby><rb>口惜</rb><rt>くや</rt></ruby>しがってくれなくてもよさそうなものじゃないか。私はほんとに考えると情なくなってしまった。かわいがったのを恩に着せるではないが、もとを云えば他人だけれど、<ruby><rb>乳呑児</rb><rt>ちのみご</rt></ruby>の時から、<persName ref="#tamiko">民子</persName>はしょっちゅう家へきて居て今の<persName ref="#masao">政夫</persName>と二つの乳房を一つ<ruby><rb>宛</rb><rt>ずつ</rt></ruby>含ませて居た位、<persName ref="#omasu">お増</persName>がきてからもあの通りで、二つのものは一つ宛四つのものは二つ宛、着物を拵えてもあれに一枚これに一枚と少しも分け隔てをせないできた。<persName ref="#tamiko">民子</persName>も真の親の様に思ってくれ私も吾子と思って余所の人は誰だって二人を兄弟と思わないものはなかったほどであるのに、あとにも先にも一度の小言をあんなに悔しがって夜中泣いて呉れなくともよさそうなもの。<placeName ref="#ichikawa">市川</placeName>の人達に聞かれたらば、<persName ref="#saito">斎藤</persName>の<ruby><rb>婆</rb><rt>ばあ</rt></ruby>がどんな<ruby><rb>非度</rb><rt>ひど</rt></ruby>いことを云ったかと思うだろう。十何年という間我子の様に思ってきたこともただ一度の小言で忘れられてしまったかと思うと私は口惜しい。人間というものはそうしたものかしら。<persName ref="#omasu">お増</persName>、よく聞いてくれ、私が無理か<persName ref="#tamiko">民子</persName>が無理か。なア<persName ref="#omasu">お増</persName>」</p>
+        <p>母は眼に涙を一ぱいに溜めてそういった。<persName ref="#tamiko">民子</persName>は身も世もあらぬさまでいきなりに<persName ref="#omasu">お増</persName>の膝へすがりついて泣き泣き、</p>
+        <p>「<persName ref="#omasu">お増</persName>や、お母さんに申訣をしておくれ。私はそんなだいそれた<ruby><rb>了簡</rb><rt>りょうけん</rt></ruby>ではない。ゆんべあんなに泣いたは全く私が悪かったから、全く私がとどかなかったのだから、<persName ref="#omasu">お増</persName>や、お前がよく申訣をそういっておくれ……」</p>
+        <p>それから<persName ref="#omasu">お増</persName>が、</p>
+        <p>「お母さんの御立腹も御尤もですけれど、私が思うにャお母さんも少し勘違いをして御いでなさいます。お母さんは永年お<persName ref="#tamiko">民さん</persName>をかわいがって御いでですから、お<persName ref="#tamiko">民さん</persName>の<ruby><rb>気質</rb><rt>きだて</rt></ruby>は解って居りましょう。私もこうして一年御厄介になって居てみれば、お<persName ref="#tamiko">民さん</persName>はほんと優しい<ruby><rb>温和</rb><rt>おとな</rt></ruby>しい人です。お母さんに少し許り叱られたって、それを悔しがって泣いたりなんぞする様な人ではありますまい。私がこんなことを申してはおかしいですが、<persName ref="#masao">政夫</persName>さんとお<persName ref="#tamiko">民さん</persName>とは、あアして仲好くして居たのを、何かの御都合で急にお別れなさったもんですから、それからというもの、お<persName ref="#tamiko">民さん</persName>は可哀相なほど元気がないのです。木の葉のそよぐにも<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>をつき<ruby><rb>烏</rb><rt>からす</rt></ruby>の鳴くにも涙ぐんで、さわれば泣きそうな風でいたところへ、お母さんから少しきつく叱られたから<ruby><rb>留度</rb><rt>とめど</rt></ruby>なく泣いたのでしょう。お母さん、私は全くそう思いますわ。お<persName ref="#tamiko">民さん</persName>は決してあなたに叱られたとて悔しがるような人ではありません。お<persName ref="#tamiko">民さん</persName>の様な温和しい人を、お母さんの様にあアいって叱っては、あんまり可哀相ですわ」</p>
+        <p><persName ref="#omasu">お増</persName>が共泣きをして言訣をいうたので、もとより<persName ref="#tamiko">民子</persName>は憎くない母だから、俄に顔色を直して、</p>
+        <p>「なるほど<persName ref="#omasu">お増</persName>がそういえば、私も少し勘違いをしていました。よく<persName ref="#omasu">お増</persName>そういうてくれた。私はもうすっかり心持がなおった。<persName ref="#tamiko">民</persName>や、だまっておくれ、もう泣いてくれるな。<persName ref="#tamiko">民</persName>やも可哀相であった。なに<persName ref="#masao">政夫</persName>は学校へ行ったんじゃないか、暮には帰ってくるよ。なア<persName ref="#omasu">お増</persName>、お前は今日は仕事を休んで、うまい物でも<ruby><rb>拵</rb><rt>こしら</rt></ruby>えてくれ」</p>
+        <p>その日は三人がいく度もよりあって、いろいろな物を拵えては茶ごとをやり、一日面白く話をした。<persName ref="#tamiko">民子</persName>はこの日はいつになく高笑いをし元気よく遊んだ。何と云っても母の方は直ぐ話が解るけれど、嫂が<ruby><rb>間</rb><rt>ま</rt></ruby>がな<ruby><rb>隙</rb><rt>すき</rt></ruby>がな<ruby><rb>種々</rb><rt>いろいろ</rt></ruby>なことを言うので、とうとう僕の帰らない内に<persName ref="#tamiko">民子</persName>を<placeName ref="#ichikawa">市川</placeName>へ帰したとの話であった。<persName ref="#omasu">お増</persName>は長い話を終るや否やすぐ家へ帰った。</p>
+        <p>なるほどそうであったか、姉は勿論母までがそういう心になったでは、か弱い望も絶えたも同様。心細さの<ruby><rb>遣瀬</rb><rt>やるせ</rt></ruby>がなく、泣くより外に<ruby><rb>詮</rb><rt>せん</rt></ruby>がなかったのだろう。そんなに母に叱られたか……一晩中泣きとおした……なるほどなどと思うと、再び熱い涙が<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>り出してとめどがない。僕はしばらくの間、涙の出るがままにそこにぼんやりして居った。その日はとうとう朝飯もたべず、昼過ぎまで畑のあたりをうろついてしまった。</p>
+        <p>そうなると<ruby><rb>俄</rb><rt>にわか</rt></ruby>に家に居るのが厭でたまらない。出来るならば暮の内に学校へ帰ってしまいたかったけれど、そうもならないでようやくこらえて、年を越し<date when="--01-01">元日</date>一日置いて<date when="--01-02">二日の日</date>には朝早く学校へ立ってしまった。</p>
+        <p>今度は陸路<placeName ref="#ichikawa">市川</placeName>へ出て、<placeName ref="#ichikawa">市川</placeName>から汽車に乗ったから、<persName ref="#tamiko">民子</persName>の近所を通ったのであれど、僕は極りが悪くてどうしても<persName ref="#tamiko">民子</persName>の家へ寄れなかった。また僕に寄られたらば、<persName ref="#tamiko">民子</persName>が困るだろうとも思って、いくたび寄ろうと思ったけれどついに寄らなかった。</p>
+        <p>思えば実に人の境遇は変化するものである。その一年前までは、<persName ref="#tamiko">民子</persName>が僕の所へ来て居なければ、僕は日曜のたびに<persName ref="#tamiko">民子</persName>の家へ行ったのである。僕は<persName ref="#tamiko">民子</persName>の家へ行っても外の人には用はない。いつでも、</p>
+        <p>「お祖母さん、<persName ref="#tamiko">民さん</persName>は」</p>
+        <p>そら「<persName ref="#tamiko">民さん</persName>は」が来たといわれる位で、或る時などは僕がゆくと、<persName ref="#tamiko">民子</persName>は庭に菊の花を摘んで居た。僕は<persName ref="#tamiko">民さん</persName><ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>御出でと無理に背戸へ引張って行って、<ruby><rb>二間梯子</rb><rt>にけんばしご</rt></ruby>を二人で<ruby><rb>荷</rb><rt>にな</rt></ruby>い出し、柿の木へ掛けたのを<persName ref="#tamiko">民子</persName>に抑えさせ、僕が登って柿を<ruby><rb>六個</rb><rt>むっつ</rt></ruby>許りとる。<persName ref="#tamiko">民子</persName>に半分やれば<persName ref="#tamiko">民子</persName>は一つで沢山というから、僕はその五つを持ってそのまま裏から抜けて帰ってしまった。さすがにこの時は<persName ref="#tomura">戸村</persName>の家でも家中で僕を悪く言ったそうだけれど、<persName ref="#tamiko">民子</persName>一人はただにこにこ笑って居て、決して<persName ref="#masao">政夫</persName>さん悪いとは言わなかったそうだ。これ位隔てなくした間柄だに、恋ということ覚えてからは、<placeName ref="#ichikawa">市川</placeName>の町を通るすら<ruby><rb>恥</rb><rt>はず</rt></ruby>かしくなったのである。</p>
+        <p>この年の暑中休みには家に帰らなかった。暮にも帰るまいと思ったけれど、年の暮だから一日でも二日でも帰れというて母から手紙がきた故、<date when="--12-31"><ruby><rb>大三十日</rb><rt>おおみそか</rt></ruby></date>の夜帰ってきた。<persName ref="#omasu">お増</persName>も今年きりで<ruby><rb>下</rb><rt>さが</rt></ruby>ったとの話でいよいよ話相手もないから、また<date when="--01-01">元日</date>一日で<date when="--01-02">二日の日</date>に出掛けようとすると、母がお前にも言うて置くが<persName ref="#tamiko">民子</persName>は嫁に<ruby><rb>往</rb><rt>い</rt></ruby>った、去年の<date when="--11">霜月</date>やはり<placeName ref="#ichikawa">市川</placeName>の内で、大変裕福な家だそうだ、と簡単にいうのであった。僕ははアそうですかと無造作に答えて出てしまった。</p>
+        <p><persName ref="#tamiko">民子</persName>は嫁に往った。この一語を聞いた時の僕の心持は自分ながら不思議と思うほどの平気であった。僕が<persName ref="#tamiko">民子</persName>を思っている感情に何らの動揺を起さなかった。これには何か相当の理由があるかも知れねど、ともかくも事実はそうである。僕はただ理窟なしに<persName ref="#tamiko">民子</persName>は如何な境涯に入ろうとも、僕を思っている心は決して変らぬものと信じている。嫁にいこうがどうしようが、<persName ref="#tamiko">民子</persName>は依然<persName ref="#tamiko">民子</persName>で、僕が<persName ref="#tamiko">民子</persName>を思う心に寸分の変りない様に<persName ref="#tamiko">民子</persName>にも決して変りない様に思われて、その観念は殆ど大石の上に坐して居る様で毛の先ほどの<ruby><rb>危惧心</rb><rt>きぐしん</rt></ruby>もない。それであるから<persName ref="#tamiko">民子</persName>は嫁に往ったと聞いても少しも驚かなかった。しかしその頃から今までにない考えも出て来た。<persName ref="#tamiko">民子</persName>はただただ少しも元気がなく、<ruby><rb>痩</rb><rt>やせ</rt></ruby>衰えて<ruby><rb>鬱</rb><rt>ふさ</rt></ruby>いで許り居るだろうとのみ思われてならない。可哀相な<persName ref="#tamiko">民さん</persName>という観念ばかり高まってきたのである。そういう訣であるから、学校へ往っても以前とは殆ど反対になって、以前は勉めて人中へ這入って、苦悶を紛らそうとしたけれど、今度はなるべく人を避けて、一人で<persName ref="#tamiko">民子</persName>の上に思いを<ruby><rb>馳</rb><rt>は</rt></ruby>せて楽しんで居った。茄子畑の事や<ruby><rb>棉畑</rb><rt>わたばたけ</rt></ruby>の事や、<date when="---13">十三日</date>の晩の淋しい風や、また<placeName ref="#yagiri-no-watashi">矢切の渡</placeName>で別れた時の事やを、繰返し繰返し考えては独り慰めて居った。<persName ref="#tamiko">民子</persName>の事さえ考えればいつでも気分がよくなる。勿論悲しい心持になることがしばしばあるけれど、さんざん涙を出せばやはり跡は気分がよくなる。<persName ref="#tamiko">民子</persName>の事を思って居ればかえって学課の成績も悪くないのである。これらも不思議の一つで、如何なる理由か知らねど、僕は実際そうであった。</p>
+        <p>いつしか月も経って、忘れもせぬ<date when="--06-22">六月二十二日</date>、僕が算術の解題に苦んで考えて居ると、小使が<persName ref="#saito">斎藤</persName>さんおうちから電報です、と云って机の端へ置いて去った。例のスグカエレであるから、早速舎監に話をして即日帰省した。何事が起ったかと胸に動悸をはずませて帰って見ると、<ruby><rb>宵闇</rb><rt>よいやみ</rt></ruby>の家の有様は意外に静かだ。台所で家中夕飯時であったが、ただそこに母が見えない許り、何の変った様子もない。僕は台所へは顔も出さず、直ぐと母の寝所へきた。<ruby><rb>行燈</rb><rt>あんどん</rt></ruby>の<ruby><rb>灯</rb><rt>ひ</rt></ruby>も薄暗く、母はひったり枕に就いて<ruby><rb>臥</rb><rt>ふ</rt></ruby>せって居る。</p>
+        <p>「お母さん、どうかしましたか」</p>
+        <p>「あア<persName ref="#masao">政夫</persName>、よく早く帰ってくれた。今私も起きるからお前御飯前なら御飯を済ましてしまえ」</p>
+        <p>僕は何のことか<ruby><rb>頻</rb><rt>しき</rt></ruby>りに気になるけれど、母がそういうままに早々に飯をすまして再び母の所へくる。母は帯を<ruby><rb>結</rb><rt>ゆ</rt></ruby>うて蒲団の上に起きていた。僕が前に坐ってもただ無言でいる。見ると母は雨の様な涙を落して<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いている。</p>
+        <p>「お母さん、まアどうしたんでしょう」</p>
+        <p>僕の詞に励まされて母はようやく涙を拭き、</p>
+        <p>「<persName ref="#masao">政夫</persName>、堪忍してくれ……<persName ref="#tamiko">民子</persName>は死んでしまった……私が殺した様なものだ……」</p>
+        <p>「そりゃいつです。どうして<persName ref="#tamiko">民さん</persName>は死んだんです」</p>
+        <p>僕が夢中になって問返すと、母は<ruby><rb>嗚咽</rb><rt>むせ</rt></ruby>び返って顔を抑えて居る。</p>
+        <p>「始終をきいたら、定めし<ruby><rb>非度</rb><rt>ひど</rt></ruby>い親だと思うだろうが、こらえてくれ、<persName ref="#masao">政夫</persName>……お前に一言の話もせず、たっていやだと言う<persName ref="#tamiko">民子</persName>を無理に勧めて嫁にやったのが、こういうことになってしまった……たとい女の方が年上であろうとも本人同志が得心であらば、何も親だからとて余計な口出しをせなくもよいのに、この母が年<ruby><rb>甲斐</rb><rt>がい</rt></ruby>もなく親だてらにいらぬお世話を焼いて、取返しのつかぬことをしてしまった。<persName ref="#tamiko">民子</persName>は私が手を掛けて殺したも同じ。どうぞ堪忍してくれ、<persName ref="#masao">政夫</persName>……私は<persName ref="#tamiko">民子</persName>の跡追ってゆきたい……」</p>
+        <p>母はもうおいおいおいおい声を立てて泣いている。<persName ref="#tamiko">民子</persName>の死ということだけは判ったけれど、何が何やら更に判らぬ。僕とて<persName ref="#tamiko">民子</persName>の死と聞いて、失神するほどの思いであれど、今目の前で母の嘆きの一通りならぬを見ては、泣くにも泣かれず、僕がおろおろしている所へ兄夫婦が出てきた。</p>
+        <p>「お母さん、まアそう泣いたって仕方がない」</p>
+        <p>と云えば母は、かまわずに泣かしておくれ泣かしておくれと云うのである、どうしようもない。</p>
+        <p>その間で嫂が<ruby><rb>僅</rb><rt>わずか</rt></ruby>に話す所を聞けば、<placeName ref="#ichikawa">市川</placeName>の<ruby><rb>某</rb><rt>それがし</rt></ruby>という家で先の男の気性も知れているに財産も<persName ref="#tomura">戸村</persName>の家に倍以上であり、それで向うから<persName ref="#tamiko">民子</persName>を<ruby><rb>強</rb><rt>た</rt></ruby>っての所望、<ruby><rb>媒妁人</rb><rt>なこうど</rt></ruby>というのも<persName ref="#tomura">戸村</persName>が世話になる人である、是非やりたい是非往ってくれということになった。<persName ref="#tamiko">民子</persName>はどうでもいやだと云う。<persName ref="#tamiko">民子</persName>のいやだという<ruby><rb>精神</rb><rt>こころ</rt></ruby>はよく判っているけれど、<persName ref="#masao">政夫</persName>さんの方は年も違い先の永いことだから、どうでも某の家へやりたいとは、<persName ref="#tomura">戸村</persName>の人達は勿論親類までの希望であった。それでいよいよ<persName ref="#saito">斎藤</persName>のおッ母さんに意見をして貰うということに相談が極り、それで家のお母さんが<persName ref="#tamiko">民子</persName>に幾度意見をしても泣いてばかり承知しないから、とどのつまり、お前がそう剛情はるのも<persName ref="#masao">政夫</persName>の処へきたい考えからだろうけれど、それはこの母が不承知でならないよ、お前はそれでも今度の縁談が不承知か。こんな風に言われたから、<persName ref="#tamiko">民子</persName>はすっかり自分をあきらめたらしく、とうとう皆様のよい様にといって承知をした。それからは何もかも<ruby><rb>他</rb><rt>ひと</rt></ruby>の言うなりになって、<date when="--11">霜月</date><ruby><rb>半</rb><rt>なかば</rt></ruby>に祝儀をしたけれど、<persName ref="#tamiko">民子</persName>の心持がほんとうの承知でないから、向うでもいくらかいや気になり、<persName ref="#tamiko">民子</persName>は身持になったが、<ruby><rb>六月</rb><rt>むつき</rt></ruby>でおりてしまった。跡の肥立ちが非常に悪くついに<date when="--06-19">六月十九日</date>に息を引き取った。病中僕に知らせようとの話もあったが、今更<persName ref="#masao">政夫</persName>に知らせる顔もないという訣から知らせなかった。家のお母さんは<persName ref="#tamiko">民子</persName>が未だ口をきく時から、<placeName ref="#ichikawa">市川</placeName>へ往って居って、<persName ref="#tamiko">民子</persName>がいけなくなると、もう泣いて泣いて泣きぬいた。一口まぜに、<persName ref="#tamiko">民子</persName>は私が殺した様なものだ、とばかりいって居て、<placeName ref="#ichikawa">市川</placeName>へ置いたではどうなるか知れぬという訣から、昨日車で家へ送られてきたのだ。話さえすれば泣く、泣けば私が悪かった悪かったと云って居る。誰にも仕様がないから、<persName ref="#masao">政夫</persName>さんの所へ電報を打った。<persName ref="#tamiko">民子</persName>も可哀相だしお母さんも可哀相だし、飛んだことになってしまった。<persName ref="#masao">政夫</persName>さん、どうしたらよいでしょう。</p>
+        <p><ruby><rb>嫂</rb><rt>あによめ</rt></ruby>の話で大方は判ったけれど、僕もどうしてよいやら殆ど途方にくれた。母はもう半気違いだ。何しろここでは母の心を静めるのが第一とは思ったけれど、慰めようがない。僕だっていっそ気違いになってしまったらと思った位だから、母を慰めるほどの気力はない。そうこうしている内にようやく母も少し落着いてきて、また話し出した。</p>
+        <p>「<persName ref="#masao">政夫</persName>や、聞いてくれ。私はもう自分の悪党にあきれてしまった。何だってあんな<ruby><rb>非度</rb><rt>ひど</rt></ruby>いことを<persName ref="#tamiko">民子</persName>に言ったっけかしら。今更なんぼ悔いても仕方がないけど、私は<persName ref="#masao">政夫</persName>……<persName ref="#tamiko">民子</persName>にこう云ったんだ。<persName ref="#masao">政夫</persName>と夫婦にすることはこの母が不承知だからおまえは外へ嫁に往け。なるほど<persName ref="#tamiko">民子</persName>は私にそう云われて見れば自分の身を<ruby><rb>諦</rb><rt>あきら</rt></ruby>める外はない訣だ。どうしてあんな<ruby><rb>酷</rb><rt>むご</rt></ruby>たらしいことを云ったのだろう。ああ可哀相な事をしてしまった。全く私が悪党を云うた為に<persName ref="#tamiko">民子</persName>は死んだ。お前はネ、<ruby><rb>明朝</rb><rt>あした</rt></ruby>は夜が明けたら直ぐに往ってよオく<persName ref="#tamiko">民子</persName>の墓に参ってくれ。それでお母さんの悪かったことをよく詫びてくれ。ねイ<persName ref="#masao">政夫</persName>」</p>
+        <p>僕もようやく泣くことが出来た。たといどういう都合があったにせよ、いよいよ見込がなくなった時には逢わせてくれてもよかったろうに、死んでから知らせるとは随分非度い訣だ。<persName ref="#tamiko">民さん</persName>だって僕には逢いたかったろう。嫁に往ってしまっては申訣がなく思ったろうけれど、それでもいよいよの<ruby><rb>真際</rb><rt>まぎわ</rt></ruby>になっては僕に逢いたかったに違いない。実に情ない事だ。考えて見れば僕もあんまり児供であった。その後<placeName ref="#ichikawa">市川</placeName>を三回も通りながらたずねなかったは、今更残念でならぬ。僕は<persName ref="#tamiko">民子</persName>が嫁にゆこうがゆくまいが、ただ<persName ref="#tamiko">民子</persName>に逢いさえせばよいのだ。今一目逢いたかった……次から次と果てしなく思いは溢れてくる。しかし母にそういうことを言えば、今度は僕が母を殺す様なことになるかも知れない。僕は<ruby><rb>屹</rb><rt>きっ</rt></ruby>と心を取り直した。</p>
+        <p>「お母さん、<ruby><rb>真</rb><rt>ほんと</rt></ruby>に<persName ref="#tamiko">民子</persName>は可哀相でありました。しかし取って返らぬことをいくら悔んでも仕方がないですから、跡の事を<ruby><rb>懇</rb><rt>ねんごろ</rt></ruby>にしてやる外はない。お母さんはただただ御自分の悪い様にばかりとっているけれど、お母さんとて<ruby><rb>精神</rb><rt>こころ</rt></ruby>はただ<persName ref="#tamiko">民子</persName>のため<persName ref="#masao">政夫</persName>のためと一筋に思ってくれた事ですから、よしそれが思う様にならなかったとて、<persName ref="#tamiko">民子</persName>や私等が何とてお母さんを恨みましょう。お母さんの精神はどこまでも<ruby><rb>情心</rb><rt>なさけごころ</rt></ruby>でしたものを、<persName ref="#tamiko">民子</persName>も決して恨んではいやしまい。何もかもこうなる運命であったのでしょう。私はもう諦めました。どうぞこの上お母さんも諦めて下さい。明日の朝は夜があけたら直ぐ<placeName ref="#ichikawa">市川</placeName>へ参ります」</p>
+        <p>母はなお詞を次いで、</p>
+        <p>「なるほど何もかもこうなる運命かも知らねど今度という今度私はよくよく後悔しました。俗に親馬鹿という事があるが、その親馬鹿が飛んでもない悪いことをした。親がいつまでも物の解ったつもりで居るが、大へんな間違いであった。自分は<ruby><rb>阿弥陀</rb><rt>あみだ</rt></ruby>様におすがり申して救うて頂く外に助かる道はない。<persName ref="#masao">政夫</persName>や、お前は体を大事にしてくれ。思えば<persName ref="#tamiko">民子</persName>はなが年の間にもついぞ私にさからったことはなかった、おとなしい児であっただけ、自分のした事が悔いられてならない、どうしても可哀相でたまらない。<persName ref="#tamiko">民子</persName>が今はの時の事もお前に話して聞かせたいけれど私にはとてもそれが出来ない」</p>
+        <p>などとまた声をくもらしてきた。もう話せば話すほど悲しくなるからとて<ruby><rb>強</rb><rt>し</rt></ruby>いて一同寝ることにした。</p>
+        <p>母の手前兄夫婦の手前、泣くまいとこらえてようやくこらえていた僕は、自分の<ruby><rb>蚊帳</rb><rt>かや</rt></ruby>へ這入り蒲団に倒れると、もうたまらなく一度にこみ上げてくる。口へは手拭を噛んで、涙を絞った。どれだけ涙が出たか、隣室の母から夜が明けた様だよと声を掛けられるまで、少しも止まず涙が出た。着たままで寝ていた僕はそのまま起きて顔を洗うや否や、未だほの<ruby><rb>闇</rb><rt>ぐら</rt></ruby>いのに家を出る。夢のように二里の路を走って、太陽がようやく地平線に現われた時分に<persName ref="#tomura">戸村</persName>の家の門前まで来た。この家の<ruby><rb>竃</rb><rt>かまど</rt></ruby>のある所は庭から正面に見透して見える。<ruby><rb>朝炊</rb><rt>あさだ</rt></ruby>きに麦藁を<ruby><rb>焚</rb><rt>た</rt></ruby>いてパチパチ音がする。僕が前の縁先に立つと奥に居たお<ruby><rb>祖母</rb><rt>ばあ</rt></ruby>さんが、<ruby><rb>目敏</rb><rt>めざと</rt></ruby>く見つけて出てくる。</p>
+        <p>「<persName ref="#kane">かねや</persName>、<persName ref="#kane">かねや</persName>、<persName ref="#tomi">とみや</persName>……<persName ref="#masao">政夫</persName>さんが来ました。まア<persName ref="#masao">政夫</persName>さんよく来てくれました。大そう早く。さアお上んなさい。起き抜きでしょう。さア……<persName ref="#kane">かねや</persName>……」</p>
+        <p><persName ref="#tamiko">民子</persName>のお父さんとお母さん、<persName ref="#tamiko">民子</persName>の姉さんも来た。</p>
+        <p>「まアよく来てくれました。あなたの来るのを待ってました。とにかくに上って御飯をたべて……」</p>
+        <p>僕は上りもせず腰もかけず、しばらく無言で立っていた。ようやくと、</p>
+        <p>「<persName ref="#tamiko">民さん</persName>のお墓に参りにきました」</p>
+        <p>切なる様は目に余ったと見え、<ruby><rb>四人</rb><rt>よつたり</rt></ruby>とも口がきけなくなってしまった。……やがてお父さんが、</p>
+        <p>「それでもまア一寸御飯を済して往ったら……あアそうですか。それでは皆して参ってくるがよかろう……いや着物など着替えんでよいじゃないか」</p>
+        <p>女達は、もう<ruby><rb>鼻啜</rb><rt>はなすす</rt></ruby>りをしながら、それじゃアとて立ちあがる。水を持ち、線香を持ち、庭の花を沢山に採る。小田巻草千日草<ruby><rb>天竺牡丹</rb><rt>てんじくぼたん</rt></ruby>と<ruby><rb>各々</rb><rt>めいめい</rt></ruby>手にとり別けて出かける。柿の木の下から背戸へ抜け<ruby><rb>槇屏</rb><rt>まきべい</rt></ruby>の裏門を出ると松林である。桃畑梨畑の間をゆくと僅の田がある。その先の松林の片隅に雑木の森があって<ruby><rb>数多</rb><rt>あまた</rt></ruby>の墓が見える。<persName ref="#tomura">戸村</persName>家の墓地は<ruby><rb>冬青</rb><rt>もちのき</rt></ruby>四五本を中心として六坪許りを区別けしてある。そのほどよい所の<ruby><rb>新墓</rb><rt>にいはか</rt></ruby>が<persName ref="#tamiko">民子</persName>が<ruby><rb>永久</rb><rt>とわ</rt></ruby>の<ruby><rb>住家</rb><rt>すみか</rt></ruby>であった。<ruby><rb>葬</rb><rt>ほうむ</rt></ruby>りをしてから雨にも逢わないので、ほんの新らしいままで、<ruby><rb>力紙</rb><rt>ちからがみ</rt></ruby>なども今結んだ様である。お祖母さんが先に出でて、</p>
+        <p>「さア<persName ref="#masao">政夫</persName>さん、何もかもあなたの手でやって下さい。<persName ref="#tamiko">民子</persName>のためには<ruby><rb>真</rb><rt>ほん</rt></ruby>に千僧の供養にまさるあなたの<ruby><rb>香花</rb><rt>こうげ</rt></ruby>、どうぞ<persName ref="#masao">政夫</persName>さん、よオくお参りをして下さい……今日は<persName ref="#tamiko">民子</persName>も定めて草葉の蔭で嬉しかろう……なあ此人にせめて一度でも、目をねむらない<persName ref="#tamiko">民子</persName>に……まアせめて一度でも逢わせてやりたかった……」</p>
+        <p>三人は眼をこすっている様子。僕は香を上げ花を上げ水を注いでから、前に<ruby><rb>蹲</rb><rt>つくば</rt></ruby>って心のゆくまで拝んだ。<ruby><rb>真</rb><rt>しん</rt></ruby>に情ない訣だ。寿命で死ぬは致方ないにしても、長く<ruby><rb>煩</rb><rt>わずら</rt></ruby>って居る間に、あア見舞ってやりたかった、一目逢いたかった。僕も<persName ref="#tamiko">民さん</persName>に逢いたかったもの、<persName ref="#tamiko">民さん</persName>だって僕に逢いたかったに違いない。無理無理に<ruby><rb>強</rb><rt>し</rt></ruby>いられたとは云え、嫁に往っては僕に合わせる顔がないと思ったに違いない。思えばそれが<ruby><rb>愍然</rb><rt>あわれ</rt></ruby>でならない。あんな<ruby><rb>温和</rb><rt>おとな</rt></ruby>しい<persName ref="#tamiko">民さん</persName>だもの、両親から親類中かかって強いられ、どうしてそれが拒まれよう。<persName ref="#tamiko">民さん</persName>が気の強い人ならきっと自殺をしたのだけれど、温和しい人だけにそれも出来なかったのだ。<persName ref="#tamiko">民さん</persName>は嫁に往っても僕の心に変りはないと、せめて僕の口から一言いって死なせたかった。世の中に情ないといってこういう情ないことがあろうか。もう私も生きて居たくない……吾知らず声を出して僕は両<ruby><rb>膝</rb><rt>ひざ</rt></ruby>と両手を地べたへ突いてしまった。</p>
+        <p>僕の様子を見て、後に居た人がどんなに泣いたか。僕も吾一人でないに気がついてようやく立ちあがった。三人の中の誰がいうのか、</p>
+        <p>「なんだって<persName ref="#tamiko">民子</persName>は、<persName ref="#masao">政夫</persName>さんということをば一言も言わなかったのだろう……」</p>
+        <p>「それほどに思い合ってる仲と知ったらあんなに勧めはせぬものを」</p>
+        <p>「うすうすは知れて居たのだに、この人の胸も聞いて見ず、<persName ref="#tamiko">民子</persName>もあれほどいやがったものを……いくら若いからとてあんまりであった……可哀相に……」</p>
+        <p>三人も香花を<ruby><rb>手向</rb><rt>たむ</rt></ruby>け水を注いだ。お祖母さんがまた、</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、あなた力紙を結んで下さい。沢山結んで下さい。<persName ref="#tamiko">民子</persName>はあなたが情の力を便りにあの世へゆきます。南無阿弥陀仏、南無阿弥陀仏」</p>
+        <p>僕は<ruby><rb>懐</rb><rt>ふところ</rt></ruby>にあった紙の有りたけを力杖に結ぶ。この時ふっと気がついた。<persName ref="#tamiko">民さん</persName>は野菊が大変好きであったに野菊を掘ってきて植えればよかった。いや直ぐ掘ってきて植えよう。こう考えてあたりを見ると、不思議に野菊が繁ってる。弔いの人に踏まれたらしいがなお茎立って青々として居る。<persName ref="#tamiko">民さん</persName>は野菊の中へ葬られたのだ。僕はようやく少し落着いて人々と共に墓場を辞した。</p>
+        <p>僕は何にもほしくありません。御飯は勿論茶もほしくないです、このままお暇願います、明日はまた早く上りますからといって帰ろうとすると、<ruby><rb>家中</rb><rt>うちじゅう</rt></ruby>で引留める。<persName ref="#tamiko">民子</persName>のお母さんはもうたまらなそうな風で、</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、あなたにそうして帰られては私等は居ても起ってもいられません。あなたが面白くないお心持は重々察しています。考えてみれば私どもの届かなかったために、<persName ref="#tamiko">民子</persName>にも<ruby><rb>不憫</rb><rt>ふびん</rt></ruby>な死にようをさせ、<persName ref="#masao">政夫</persName>さんにも申訣のないことをしたのです。私共は如何様にもあなたにお詫びを致します。<persName ref="#tamiko">民子</persName>可哀相と<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>したら、どうぞ<persName ref="#tamiko">民子</persName>が今はの話も聞いて行って下さいな。あなたがお<ruby><rb>出</rb><rt>い</rt></ruby>でになったら、お話し申すつもりで、今日はお出でか明日はお出でかと、実は家中がお待ち申したのですからどうぞ……」</p>
+        <p>そう言われては僕も帰る訣にゆかず、母もそう言ったのに気がついて座敷へ上った。茶や御飯やと出されたけれども真似ばかりで済ます。その内に人々皆奥へ集りお祖母さんが話し出した。</p>
+        <p>「<persName ref="#masao">政夫</persName>さん、<persName ref="#tamiko">民子</persName>の事については、私共一同誠に申訣がなく、あなたに合せる顔はないのです。あなたに色々御無念な処もありましょうけれど、どうぞ<persName ref="#masao">政夫</persName>さん、過ぎ去った事と諦めて、御勘弁を願います。あなたにお詫びをするのが何より<persName ref="#tamiko">民子</persName>の供養になるのです」</p>
+        <p>僕はただもう胸一ぱいで何も言うことが出来ない。お祖母さんは話を続ける。</p>
+        <p>「実はと申すと、あなたのお母さん始め、私また<persName ref="#tamiko">民子</persName>の両親とも、あなたと<persName ref="#tamiko">民子</persName>がそれほど深い<ruby><rb>間</rb><rt>なか</rt></ruby>であったとは知らなかったもんですから」</p>
+        <p>僕はここで一言いいだす。</p>
+        <p>「<persName ref="#tamiko">民さん</persName>と私と深い間とおっしゃっても、<persName ref="#tamiko">民さん</persName>と私とはどうもしやしません」</p>
+        <p>「いイえ、あなたと<persName ref="#tamiko">民子</persName>がどうしたと申すではないのです。もとからあなたと<persName ref="#tamiko">民子</persName>は非常な仲好しでしたから、それが判らなかったんです。それに<persName ref="#tamiko">民子</persName>はあの通りの内気な児でしたから、あなたの事は一言も口に出さない。それはまるきり知らなかったとは申されません。それですからお詫びを申す様な訣……」</p>
+        <p>僕は皆さんにそんなにお詫びを云われる訣はないという。<persName ref="#tamiko">民子</persName>のお父さんはお詫びを言わしてくれという。</p>
+        <p>「そりゃ<persName ref="#masao">政夫</persName>さんのいうのは御もっともです、私共が勝手なことをして、勝手なことをお前さんに言うというものですが、<persName ref="#masao">政夫</persName>さん聞いて下さい、理窟の上のことではないです。男親の口からこんなことをいうも<ruby><rb>如何</rb><rt>いかが</rt></ruby>ですが、<persName ref="#tamiko">民子</persName>は命に替えられない思いを捨てて両親の希望に従ったのです。親のいいつけで<ruby><rb>背</rb><rt>そむ</rt></ruby>かれないと思うても、道理で感情を抑えるは無理な処もありましょう。<persName ref="#tamiko">民子</persName>の死は全くそれ故ですから、親の身になって見ると、どうも残念でありまして、どうもしやしませんと<persName ref="#masao">政夫</persName>さんが言う通り、お前さん<ruby><rb>等</rb><rt>たち</rt></ruby>二人に何の罪もないだけ、親の目からは不憫が一層でな。あの通り<ruby><rb>温和</rb><rt>おとな</rt></ruby>しかった<persName ref="#tamiko">民子</persName>は、自分の死ぬのは心柄とあきらめてか、ついぞ一度不足らしい風も見せなかったです。それやこれやを思いますとな、どう考えてもちと親が無慈悲であった様で……。<persName ref="#masao">政夫</persName>さん、察して下さい。見る通り家中がもう、悲しみの闇に<ruby><rb>鎖</rb><rt>とざ</rt></ruby>されて居るのです。愚かなことでしょうがこの場合お前さんに<persName ref="#tamiko">民子</persName>の話を聞いて貰うのが何よりの<ruby><rb>慰藉</rb><rt>いしゃ</rt></ruby>に思われますから、年がいもないこと申す様だが、どうぞ聞いて下さい」</p>
+        <p>お祖母さんがまた話を続ける。結婚の話からいよいよむずかしくなったまでの話は嫂が家での話と同じで、今はという日の話はこうであった。</p>
+        <p>「<date when="--06-17">六月十七日</date>の午後に医者がきて、もう一日二日の処だから、親類などに知らせるならば今日中にも知らせるがよいと言いますから、それではとて<ruby><rb>取敢</rb><rt>とりあえ</rt></ruby>ずあなたのお母さんに告げると<date when="---18">十八日</date>の朝飛んできました。その日は<persName ref="#tamiko">民子</persName>は顔色がよく、はっきりと話も致しました。あなたのおっかさんがきまして、<persName ref="#tamiko">民</persName>や、決して気を弱くしてはならないよ、どうしても今一度なおる気になっておくれよ、<persName ref="#tamiko">民</persName>や……<persName ref="#tamiko">民子</persName>はにっこり笑顔さえ見せて、<placeName ref="#yagiri"><ruby><rb>矢切</rb><rt>やぎり</rt></ruby></placeName>のお母さん、いろいろ有難う御座います。長長可愛がって頂いた御恩は死んでも忘れません。私も、もう長いことはありますまい……。<persName ref="#tamiko">民</persName>や、そんな気の弱いことを思ってはいけない。決してそんなことはないから、しっかりしなくてはいけないと、あなたのお母さんが云いましたら、<persName ref="#tamiko">民子</persName>はしばらくたって、<placeName ref="#yagiri">矢切</placeName>のお母さん、私は死ぬが本望であります、死ねばそれでよいのです……といいましてからなお口の内で何か言った様で、何でも、<persName ref="#masao">政夫</persName>さん、あなたの事を言ったに違いないですが、よく聞きとれませんでした。それきり口はきかないで、その夜の明方に息を引取りました……。それから<persName ref="#masao">政夫</persName>さん、こういう訣です……夜が明けてから、枕を直させます時、あれの母が見つけました、<persName ref="#tamiko">民子</persName>は左の手に<ruby><rb>紅絹</rb><rt>もみ</rt></ruby>の切れに包んだ小さな物を握ってその手を胸へ乗せているのです。それで家中の人が皆集って、それをどうしようかと相談しましたが、可哀相なような気持もするけれど、見ずに置くのも気にかかる、とにかく開いて見るがよいと、あれの父が言い出しまして、皆の居る中であけました。それが<persName ref="#masao">政さん</persName>、あなたの写真とあなたのお手紙でありまして……」</p>
+        <p>お祖母さんが、泣き出して、そこにいた人皆涙を拭いている。僕は一心に畳を見つめていた。やがてお祖母さんがようよう話を次ぐ。</p>
+        <p>「そのお手紙をお富が読みましたから、誰も彼も一度に声を立って泣きました。あれの父は男ながら大声して泣くのです。あなたのお母さんは、気がふれはしないかと思うほど、<ruby><rb>口説</rb><rt>くど</rt></ruby>いて泣く。お前達二人がこれほどの語らいとは知らずに、無理無体に勧めて嫁にやったは悪かった。あア悪いことをした、不憫だった。<persName ref="#tamiko">民</persName>や、堪忍して、私は悪かったから堪忍してくれ。<ruby><rb>俄</rb><rt>にわか</rt></ruby>の騒ぎですから、近隣の人達が、どうしましたと云って尋ねにきた位でありました。それであなたのお母さんはどうしても泣き止まないです。体に<ruby><rb>障</rb><rt>さわ</rt></ruby>ってはと思いまして葬式が済むと車で御送り申した次第です。身を諦めた<persName ref="#tamiko">民子</persName>の心持が、こう判って見ると、誰も彼も同じことで今更の様に無理に嫁にやった事が後悔され、たまらないですよ。考えれば考えるほどあの児が可哀相で可哀相で居ても<ruby><rb>起</rb><rt>た</rt></ruby>っても居られない……せめてあなたに来て頂いて、皆が悪かったことを十分あなたにお<ruby><rb>詫</rb><rt>わ</rt></ruby>びをし、またあれの墓にも<ruby><rb>香花</rb><rt>こうげ</rt></ruby>をあなたの手から手向けて頂いたら、少しは家中の心持も休まるかと思いまして……今日のことをなんぼう待ちましたろ。<persName ref="#masao">政夫</persName>さん、どうぞ聞き分けて下さい。ねイ<persName ref="#tamiko">民子</persName>はあなたにはそむいては居ません。どうぞ不憫と思うてやって下さい……」</p>
+        <p>一語一句皆涙で、僕も一時泣きふしてしまった。<persName ref="#tamiko">民子</persName>は死ぬのが本望だと云ったか、そういったか……家の母があんなに身を責めて泣かれるのも、その筈であった。僕は、</p>
+        <p>「お祖母さん、よく判りました。私は<persName ref="#tamiko">民さん</persName>の心持はよく知っています。去年の春、<persName ref="#tamiko">民さん</persName>が嫁にゆかれたと聞いた時でさえ、私は<persName ref="#tamiko">民さん</persName>を毛ほども疑わなかったですもの。どの様なことがあろうとも、私が<persName ref="#tamiko">民さん</persName>を思う心持は変りません。家の母などもただそればかり言って嘆いて居ますが、それも皆悪気があっての<ruby><rb>業</rb><rt>わざ</rt></ruby>でないのですから、私は勿論<persName ref="#tamiko">民さん</persName>だって決して恨みに思やしません。何もかも定まった縁と諦めます。私は当分毎日お墓へ参ります……」</p>
+        <p>話しては泣き泣いては話し、甲一語乙一語いくら泣いても果てしがない。僕は母のことも気にかかるので、もうお昼だという時分に<persName ref="#tomura">戸村</persName>の家を辞した。<persName ref="#tomura">戸村</persName>のお母さんは、<persName ref="#tamiko">民子</persName>の墓の前で僕の素振りが余り痛わしかったから、途中が心配になるとて、自分で<placeName ref="#yagiri">矢切</placeName>の入口まで送ってきてくれた。<persName ref="#tamiko">民子</persName>の<ruby><rb>愍然</rb><rt>あわれ</rt></ruby>なことはいくら思うても思いきれない。いくら泣いても泣ききれない。しかしながらまた目の前の母が、悔悟の念に攻められ、自ら大罪を犯したと信じて嘆いている<ruby><rb>愍然</rb><rt>あわれ</rt></ruby>さを見ると、僕はどうしても今は<persName ref="#tamiko">民子</persName>を泣いては居られない。僕がめそめそして居ったでは、母の苦しみは増すばかりと気がついた。それから一心に自分で自分を励まし、元気をよそおうてひたすら母を慰める工夫をした。それでも心にない事は仕方のないもの、母はいつしかそれと気がついてる様子、そうなっては僕が家に居ないより外はない。</p>
+        <p>毎日<ruby><rb>七日</rb><rt>なぬか</rt></ruby>の間<placeName ref="#ichikawa">市川</placeName>へ通って、<persName ref="#tamiko">民子</persName>の墓の周囲には野菊が一面に植えられた。その<ruby><rb>翌</rb><rt>あ</rt></ruby>くる日に僕は十分母の精神の休まる様に自分の心持を話して、決然学校へ出た。</p>
+        <p>＊　　　　　　＊　　　　　　＊</p>
+        <p><persName ref="#tamiko">民子</persName>は余儀なき結婚をして遂に世を去り、僕は余儀なき結婚をして長らえている。<persName ref="#tamiko">民子</persName>は僕の写真と僕の手紙とを胸を離さずに持って居よう。幽明<ruby><rb>遙</rb><rt>はる</rt></ruby>けく隔つとも僕の心は一日も<persName ref="#tamiko">民子</persName>の上を去らぬ。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

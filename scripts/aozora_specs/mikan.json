@@ -1,0 +1,17 @@
+{
+  "slug": "mikan",
+  "url": "https://www.aozora.gr.jp/cards/000879/files/43017_17431.html",
+  "card": "https://www.aozora.gr.jp/cards/000879/card43017.html",
+  "title": "蜜柑",
+  "author": "芥川龍之介",
+  "fixes": {},
+  "persons": {},
+  "places": {
+    "yokosuka": ["横須賀", 35.2858, 139.6650, "神奈川県横須賀市。汽車の始発地(横須賀駅付近)・概値"],
+    "yokosuka-line": ["横須賀線", null, null, "大船と横須賀を結ぶ鉄道路線(1889年開業)。線状のため座標なし"]
+  },
+  "tags": [
+    ["place", "横須賀線", "yokosuka-line"],
+    ["place", "横須賀", "yokosuka"]
+  ]
+}

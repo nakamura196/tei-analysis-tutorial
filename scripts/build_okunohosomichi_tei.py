@@ -7,7 +7,7 @@
 付与した data/okunohosomichi.xml を生成する。
 
 - 章段構成・見出しは底本(杉浦校註版)に従う。杉浦の脚註・解説・凡例は収録しない
-- ルビ・返り点は省略、外字は Unicode 実字に置換
+- ルビは TEI の <ruby> として保持(固有表現と入れ子)、返り点は省略、外字は Unicode 実字に置換
 - 各章段の日付(@when、グレゴリオ暦)は本文中の日付表記と『曾良旅日記』に
   基づく推定行程による。旧暦→新暦の換算は元禄2年(1689)の各月朔日対照表による
 - 地名は standOff/listPlace の地名台帳(座標つき)に @ref で紐づける。
@@ -28,6 +28,14 @@ import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
 
+# ルビの取り扱い(マーカー方式のパースと、固有表現との入れ子レンダリング)は
+# 汎用パイプラインと共通。
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_aozora_tei import (  # noqa: E402
+    RUBY_S, RB_E, RUBY_E, MARKERS, gaiji_char, gaiji_sub, parse_ruby, strip_edges,
+    _render, wrap_ne,
+)
+
 AOZORA_URL = "https://www.aozora.gr.jp/cards/002240/files/61619_78128.html"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_PATH = REPO_ROOT / "data" / "okunohosomichi.xml"
@@ -43,29 +51,6 @@ def fetch_aozora_html():
     return raw.decode("shift_jis", errors="replace")
 
 
-def gaiji_char(desc):
-    """外字注記(alt 属性や ［＃...］ 注記)から Unicode 実字を得る"""
-    m = re.search(r"U\+([0-9A-Fa-f]{4,6})", desc)
-    if m:
-        return chr(int(m.group(1), 16))
-    m = re.search(r"(\d)-(\d{1,2})-(\d{1,2})", desc)
-    if m:
-        men, ku, ten = map(int, m.groups())
-        try:
-            if men == 1:
-                b = bytes([ku + 0xA0, ten + 0xA0])
-            else:
-                b = bytes([0x8F, ku + 0xA0, ten + 0xA0])
-            return b.decode("euc_jis_2004")
-        except (UnicodeDecodeError, ValueError):
-            pass
-    return "〓"
-
-
-def gaiji_sub(t):
-    return re.sub(r"※［＃(「[^］]*)］", lambda m: gaiji_char(m.group(1)), t)
-
-
 class AozoraWalker(HTMLParser):
     """main_text 部を線形走査して章段(title, blocks)を組み立てる。
 
@@ -76,7 +61,7 @@ class AozoraWalker(HTMLParser):
     """
 
     SKIP_DIV = ("sho1", "jizume")
-    SKIP_INLINE = {"rt", "rp", "sub", "sup"}
+    SKIP_INLINE = {"rp", "sub", "sup"}  # rt はルビとして拾う
 
     def __init__(self):
         super().__init__()
@@ -88,6 +73,8 @@ class AozoraWalker(HTMLParser):
         self.h4_buf = []
         self.verse_buf = []
         self.attr_buf = None
+        self.in_ruby = False
+        self.rb_closed = False
 
     def skipping(self):
         return any(s[2] for s in self.stack)
@@ -100,25 +87,28 @@ class AozoraWalker(HTMLParser):
         self.buf = []
         t = gaiji_sub(t)
         t = re.sub(r"［＃[^］]*］", "", t)
-        t = re.sub(r"\n+", "\n", t).strip()
-        if t and self.cur_sec is not None:
-            for para in t.split("\n"):
-                para = para.strip()
-                if para:
-                    self.cur_sec["blocks"].append({"type": "p", "text": para})
+        if self.cur_sec is None:
+            return
+        # マーカーは改行をまたがないので、行に割ってから読みを取り出せる
+        for chunk in t.split("\n"):
+            text, spans = strip_edges(*parse_ruby(chunk))
+            if text:
+                self.cur_sec["blocks"].append({"type": "p", "text": text, "ruby": spans})
 
     def flush_verse_line(self):
-        t = "".join(self.verse_buf).strip()
+        t = "".join(self.verse_buf)
         self.verse_buf = []
         t = gaiji_sub(t)
         t = re.sub(r"［＃[^］]*］", "", t)
-        if t and self.cur_sec is not None:
+        text, spans = strip_edges(*parse_ruby(t))
+        if text and self.cur_sec is not None:
             blocks = self.cur_sec["blocks"]
             if blocks and blocks[-1]["type"] == "verse":
-                blocks[-1]["lines"].append(t)
+                blocks[-1]["lines"].append(text)
+                blocks[-1]["ruby"].append(spans)
                 blocks[-1]["by"].append(None)
             else:
-                blocks.append({"type": "verse", "lines": [t], "by": [None]})
+                blocks.append({"type": "verse", "lines": [text], "ruby": [spans], "by": [None]})
 
     def emit(self, ch):
         if self.attr_buf is not None:
@@ -144,6 +134,13 @@ class AozoraWalker(HTMLParser):
             if not self.skipping() and "gaiji" in cls:
                 self.emit(gaiji_char(a.get("alt", "")))
             return
+        if tag == "ruby" and not self.skipping():
+            self.emit(RUBY_S)
+            self.in_ruby, self.rb_closed = True, False
+        elif tag == "rt" and not self.skipping():
+            if self.in_ruby and not self.rb_closed:
+                self.emit(RB_E)
+                self.rb_closed = True
         skip = False
         if tag == "div" and any(k in cls for k in self.SKIP_DIV):
             skip = True
@@ -166,9 +163,15 @@ class AozoraWalker(HTMLParser):
     def handle_endtag(self, tag):
         if tag in ("br", "img"):
             return
+        if tag == "rb" and self.in_ruby and not self.rb_closed and not self.skipping():
+            self.emit(RB_E)
+            self.rb_closed = True
+        elif tag == "ruby" and self.in_ruby and not self.skipping():
+            self.emit(RUBY_E)
+            self.in_ruby = False
         if tag == "h4" and self.in_h4:
             self.in_h4 = False
-            title = gaiji_sub("".join(self.h4_buf)).strip()
+            title = parse_ruby(gaiji_sub("".join(self.h4_buf)))[0].strip()
             if title:
                 if self.cur_sec is not None:
                     self.flush_verse_line()
@@ -179,7 +182,8 @@ class AozoraWalker(HTMLParser):
             if t == tag:
                 if t == "div" and "chitsuki" in cls and self.attr_buf is not None:
                     at = gaiji_sub("".join(self.attr_buf))
-                    at = re.sub(r"［＃[^］]*］", "", at).strip()
+                    at = re.sub(r"［＃[^］]*］", "", at)
+                    at = parse_ruby(at)[0].strip()
                     self.attr_buf = None
                     if at and self.cur_sec is not None and self.cur_sec["blocks"]:
                         last = self.cur_sec["blocks"][-1]
@@ -814,25 +818,16 @@ def xml_escape(t):
     return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def render_tag(kind, surface, ref):
-    inner = xml_escape(surface)
-    if kind == P:
-        return f'<placeName ref="#{ref}">{inner}</placeName>'
-    if kind == PR:
-        return f'<persName ref="#{ref}">{inner}</persName>'
-    return f'<date when="{ref}">{inner}</date>'
-
-
-def tag_string(text, tags, counters, stats):
-    """text 中の表層形をタグ付けして XML 文字列を返す。
+def tag_string(text, tags, counters, stats, ruby_spans=()):
+    """text 中の表層形をタグ付けし、ルビと入れ子にして XML 文字列を返す。
 
     counters は章段内で表層形ごとの出現番号を数える(occs 指定の判定用)。
     先に長い表層形から処理し、重複領域はタグ付けしない。
     """
-    claimed = []  # (start, end, xml)
+    ne = []  # (start, end, kind, ref)
 
     def overlaps(s, e):
-        return any(not (e <= cs or s >= ce) for cs, ce, _ in claimed)
+        return any(not (e <= cs or s >= ce) for cs, ce, _, _ in ne)
 
     for tag in sorted(tags, key=lambda t: -len(t[1])):
         kind, surface, ref = tag[0], tag[1], tag[2]
@@ -849,18 +844,26 @@ def tag_string(text, tags, counters, stats):
             counters[(kind, surface, ref)] = n + 1
             if occs is not None and n not in occs:
                 continue
-            claimed.append((i, i + len(surface), render_tag(kind, surface, ref)))
+            ne.append((i, i + len(surface), kind, ref))
             stats[kind] += 1
             stats["used"].add((kind, surface, ref))
-    claimed.sort()
-    out = []
-    pos = 0
-    for s, e, xml in claimed:
-        out.append(xml_escape(text[pos:s]))
-        out.append(xml)
-        pos = e
-    out.append(xml_escape(text[pos:]))
-    return "".join(out)
+
+    # 固有表現の境界をまたぐルビは入れ子にできないので落とす
+    kept = []
+    for rs, re_, reading in ruby_spans:
+        crossing = any(
+            rs < ne_e and ns < re_ and not ((ns <= rs and re_ <= ne_e) or (rs <= ns and ne_e <= re_))
+            for ns, ne_e, _, _ in ne
+        )
+        if crossing:
+            stats["ruby_dropped"] += 1
+        else:
+            kept.append((rs, re_, reading))
+            stats["ruby"] += 1
+
+    ranges = [(s, e, 0, (kind, ref)) for s, e, kind, ref in ne]
+    ranges += [(s, e, 1, reading) for s, e, reading in kept]
+    return _render(text, ranges, 0, len(text))
 
 
 # ---------------------------------------------------------------------------
@@ -943,29 +946,30 @@ def render_verse_block(block, tags, counters, stats):
     """verse ブロックを <cit><quote><lg>...</lg></quote>[<bibl>]</cit> 列に変換"""
     out = []
     lines = block["lines"]
+    rubies = block["ruby"]
     bys = block["by"]
     i = 0
     pending_head = None
     while i < len(lines):
         line, by = lines[i], bys[i]
         if is_kotobagaki(line):
-            pending_head = tag_string(line, tags, counters, stats)
+            pending_head = tag_string(line, tags, counters, stats, rubies[i])
             i += 1
             continue
-        unit_lines = [line]
+        unit = [(line, rubies[i])]
         unit_by = by
         if (i + 1 < len(lines)
                 and (line, lines[i + 1]) in WAKA_PAIRS):
-            unit_lines.append(lines[i + 1])
+            unit.append((lines[i + 1], rubies[i + 1]))
             unit_by = bys[i + 1] or by
             i += 1
-        lg_type = "waka" if len(unit_lines) > 1 else "hokku"
+        lg_type = "waka" if len(unit) > 1 else "hokku"
         parts = [f'<cit><quote><lg type="{lg_type}">']
         if pending_head:
             parts.append(f"<head>{pending_head}</head>")
             pending_head = None
-        for ul in unit_lines:
-            parts.append(f"<l>{tag_string(ul, tags, counters, stats)}</l>")
+        for ul, ur in unit:
+            parts.append(f"<l>{tag_string(ul, tags, counters, stats, ur)}</l>")
         parts.append("</lg></quote>")
         if unit_by:
             pid = ATTRIB_PERSON.get(unit_by)
@@ -989,8 +993,9 @@ def build_body(sections, stats):
         if meta["title"] == "跋":
             lines.append(f'      <div type="postscript" xml:id="sec{idx:02d}" n="{idx}">')
             lines.append(f"        <head>{xml_escape(sec['title'])}</head>")
-            paras = [b["text"] for b in sec["blocks"] if b["type"] == "p"]
-            body_xml = "<lb/>".join(tag_string(t, tags, counters, stats) for t in paras)
+            paras = [b for b in sec["blocks"] if b["type"] == "p"]
+            body_xml = "<lb/>".join(
+                tag_string(b["text"], tags, counters, stats, b["ruby"]) for b in paras)
             lines.append(f"        <p>{body_xml}</p>")
             lines.append("        <closer><date when=\"1694-05\">元祿七年初夏</date>"
                          "　<signed><persName ref=\"#soryu\">素龍</persName>書</signed></closer>")
@@ -1008,7 +1013,7 @@ def build_body(sections, stats):
         chunks = []
         for block in sec["blocks"]:
             if block["type"] == "p":
-                chunks.append(tag_string(block["text"], tags, counters, stats))
+                chunks.append(tag_string(block["text"], tags, counters, stats, block["ruby"]))
             else:
                 chunks.extend(render_verse_block(block, tags, counters, stats))
         lines.append(f"        <p>{'<lb/>'.join(chunks)}</p>")
@@ -1025,7 +1030,7 @@ def main():
     sections = extract_sections(html)
     assert len(sections) == len(SECTION_META), (len(sections), len(SECTION_META))
 
-    stats = {P: 0, PR: 0, D: 0, "used": set()}
+    stats = {P: 0, PR: 0, D: 0, "ruby": 0, "ruby_dropped": 0, "used": set()}
     body = build_body(sections, stats)
     xml = "\n".join([TEI_HEADER, build_standoff(), body]) + "\n"
     OUT_PATH.write_text(xml, encoding="utf-8")
@@ -1042,8 +1047,9 @@ def main():
             if t[0] == PR and t[2] not in PERSONS:
                 print(f"  [警告] 人物台帳に無い参照: {t}")
     print(f"出力: {OUT_PATH}")
+    dropped = f" (交差のため不採用 {stats['ruby_dropped']})" if stats["ruby_dropped"] else ""
     print(f"  章段: {len(sections)} / persName: {stats[PR]} / "
-          f"placeName: {stats[P]} / date: {stats[D]}")
+          f"placeName: {stats[P]} / date: {stats[D]} / ruby: {stats['ruby']}{dropped}")
     print(f"  人物台帳: {len(PERSONS)} 人 / 地名台帳: {len(PLACES)} 箇所")
 
 
