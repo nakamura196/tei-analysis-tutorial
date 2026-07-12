@@ -298,6 +298,63 @@ WORKS = {
             (D, "明治二十三年一月", "1890-01"),
         ],
     },
+    "toshishun": {
+        "url": "https://www.aozora.gr.jp/cards/000879/files/43015_17432.html",
+        "card": "https://www.aozora.gr.jp/cards/000879/card43015.html",
+        "title": "杜子春",
+        "author": "芥川龍之介",
+        "persons": {
+            "toshishun": ("杜子春", "洛陽の若者。主人公"),
+            "tekkanshi": ("鉄冠子", "峨眉山に住む仙人"),
+            "enma": ("閻魔大王", "地獄の王"),
+        },
+        "places": {
+            "rakuyo": ("洛陽", 34.62, 112.45, "唐の都のひとつ。中国河南省"),
+            "nishimon": ("洛陽の西の門", 34.62, 112.42, "概値"),
+            "gabisan": ("峨眉山", 29.52, 103.33, "中国四川省の霊山"),
+            "taizan": ("泰山", 36.26, 117.10, "中国山東省の霊山"),
+            "tang": ("唐", 34.26, 108.94, "王朝名・概値(都の長安)"),
+            "jigoku": ("地獄", None, None, "仏教的世界観上の場所(座標なし)"),
+            "shinraden": ("森羅殿", None, None, "閻魔大王の御殿(座標なし)"),
+            "chikushodo": ("畜生道", None, None, "仏教的世界観上の場所(座標なし)"),
+        },
+        "tags": [
+            (PR, "杜子春", "toshishun"), (PR, "鉄冠子", "tekkanshi"),
+            (PR, "閻魔大王", "enma"),
+            (P, "洛陽", "rakuyo"), (P, "西の門", "nishimon"),
+            (P, "峨眉山", "gabisan"), (P, "泰山", "taizan"),
+            (P, "唐", "tang"), (P, "地獄", "jigoku"),
+            (P, "森羅殿", "shinraden"), (P, "畜生道", "chikushodo"),
+        ],
+    },
+    "takasebune": {
+        "url": "https://www.aozora.gr.jp/cards/000129/files/45245_22007.html",
+        "card": "https://www.aozora.gr.jp/cards/000129/card45245.html",
+        "title": "高瀬舟",
+        "author": "森鴎外",
+        "persons": {
+            "kisuke": ("喜助", "弟殺しの罪で遠島になる罪人"),
+            "shobei": ("羽田庄兵衛", "高瀬舟を護送する同心"),
+            "sadanobu": ("白河楽翁", "松平定信(1759–1829)。寛政の改革を主導"),
+        },
+        "places": {
+            "takasegawa": ("高瀬川", 35.005, 135.770, "京都の運河"),
+            "kyoto": ("京都", 35.0116, 135.7681, None),
+            "shimogyo": ("下京", 34.99, 135.76, "概値"),
+            "kamogawa": ("加茂川", 35.00, 135.772, "鴨川・概値"),
+            "osaka": ("大阪", 34.6937, 135.5023, None),
+            "chionin": ("智恩院", 35.0056, 135.7844, "知恩院"),
+        },
+        "tags": [
+            (PR, "喜助", "kisuke"),
+            (PR, "羽田庄兵衛", "shobei"), (PR, "庄兵衛", "shobei"), (PR, "羽田", "shobei"),
+            (PR, "白河楽翁", "sadanobu"),
+            (P, "高瀬川", "takasegawa"), (P, "京都", "kyoto"),
+            (P, "下京", "shimogyo"), (P, "加茂川", "kamogawa"),
+            (P, "大阪", "osaka"), (P, "智恩院", "chionin"),
+            (D, "寛政", "1789"),
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------

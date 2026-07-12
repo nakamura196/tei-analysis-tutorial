@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/ok
 ```
 
 - `data/aozora/` — 青空文庫の有名作品の教材用 TEI(同じ方式の固有表現アノテーション付き)。`scripts/build_aozora_tei.py` で生成
-  - `melos.xml` 太宰治『走れメロス』 / `rashomon.xml` 芥川龍之介『羅生門』 / `kumonoito.xml` 芥川龍之介『蜘蛛の糸』 / `sangetsuki.xml` 中島敦『山月記』 / `maihime.xml` 森鴎外『舞姫』
+  - `melos.xml` 太宰治『走れメロス』 / `rashomon.xml` 芥川龍之介『羅生門』 / `kumonoito.xml` 芥川龍之介『蜘蛛の糸』 / `toshishun.xml` 芥川龍之介『杜子春』 / `sangetsuki.xml` 中島敦『山月記』 / `maihime.xml` 森鴎外『舞姫』 / `takasebune.xml` 森鴎外『高瀬舟』
   - 登場人物は standOff の人物台帳に @ref で紐づき、地名は座標つき地名台帳に紐づく(『舞姫』はベルリンの街路レベル、『山月記』は中国の地名。『蜘蛛の糸』の極楽・地獄のような架空の場所は座標なし)
   - 『羅生門』は登場人物が全員無名(下人・老婆)のため persName が 0 件 — 「固有表現が無い」ことも分析結果になる例
 
@@ -34,6 +34,8 @@ https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/ao
 https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/aozora/kumonoito.xml
 https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/aozora/sangetsuki.xml
 https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/aozora/maihime.xml
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/aozora/toshishun.xml
+https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/aozora/takasebune.xml
 ```
 
 『おくのほそ道』では同じ場所が「白川の關」「白河の關」のように違う表記で登場するため、地名の集計には表層形(`el.text`)ではなく `@ref` 属性で台帳に紐づける方法が確実です:
