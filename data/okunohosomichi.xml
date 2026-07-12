@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>おくのほそ道</title>
+        <author>松尾芭蕉</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>各章段の日付（date/@when、グレゴリオ暦）は、本文中の日付表記と『曾良旅日記』に基づく推定行程から教材用に付与したものである。旧暦から新暦への換算は元禄2年（1689）の各月朔日対照表による。本作品は文学作品であり、日付や叙述順は実際の行程と一致しない場合がある。</note>
+        <note>地名台帳（standOff/listPlace）の座標は教材用の概値であり、歌枕など所在に諸説ある地は伝承地等によった。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>おくのほそ道</title><author>松尾芭蕉</author><editor>杉浦正一郎（校註）</editor>
+          <note>青空文庫（図書カード No.61619）。底本:「芭蕉　おくのほそ道」岩波版ほるぷ図書館文庫、岩波書店、1975年。底本の親本:「おくのほそ道」岩波文庫。素龍清書本の翻刻にあたる本文のみを収録し、脚註・解説・凡例・ルビ・返り点は収録しない。外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/002240/card61619.html">https://www.aozora.gr.jp/cards/002240/card61619.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語（近世の文語。旧字・歴史的仮名遣い）</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="sora">
+        <persName>曾良</persName>
+        <note>河合曾良(1649–1710)。芭蕉の門人で本旅の随行者</note>
+      </person>
+      <person xml:id="sampu">
+        <persName>杉風</persName>
+        <note>杉山杉風(1647–1732)。江戸の門人・魚問屋</note>
+      </person>
+      <person xml:id="sodo">
+        <persName>素堂</persName>
+        <note>山口素堂(1642–1716)。俳人</note>
+      </person>
+      <person xml:id="anteki">
+        <persName>原安適</persName>
+        <note>江戸の歌人・医師</note>
+      </person>
+      <person xml:id="jokushi">
+        <persName>濁子</persName>
+        <note>中川濁子。江戸の門人</note>
+      </person>
+      <person xml:id="kukai">
+        <persName>空海</persName>
+        <note>空海(774–835)。真言宗開祖</note>
+      </person>
+      <person xml:id="konohana">
+        <persName>木の花さくや姫</persName>
+        <note>木花咲耶姫。記紀神話の女神</note>
+      </person>
+      <person xml:id="hohodemi">
+        <persName>火々出見のみこと</persName>
+        <note>彦火火出見尊。記紀神話の神</note>
+      </person>
+      <person xml:id="gozaemon">
+        <persName>佛五左衞門</persName>
+        <note>日光の宿の主人</note>
+      </person>
+      <person xml:id="buccho">
+        <persName>佛頂和尚</persName>
+        <note>仏頂禅師(1642–1715)。芭蕉参禅の師</note>
+      </person>
+      <person xml:id="myozenji">
+        <persName>妙禪師</persName>
+        <note>高峰原妙(1238–1295)。中国宋代の禅僧</note>
+      </person>
+      <person xml:id="houn">
+        <persName>法雲法師</persName>
+        <note>法雲(467–529)。中国梁代の僧</note>
+      </person>
+      <person xml:id="tamamo">
+        <persName>玉藻の前</persName>
+        <note>伝説上の妖狐</note>
+      </person>
+      <person xml:id="yoichi">
+        <persName>與市</persName>
+        <note>那須与一宗隆。屋島の合戦で扇の的を射た武士</note>
+      </person>
+      <person xml:id="josui">
+        <persName>淨坊寺何がし</persName>
+        <note>浄法寺高勝(桃雪)。黒羽城代家老・俳人</note>
+      </person>
+      <person xml:id="tosui">
+        <persName>桃翠</persName>
+        <note>鹿子畑翠桃。桃雪の弟・俳人</note>
+      </person>
+      <person xml:id="kiyosuke">
+        <persName>清輔</persName>
+        <note>藤原清輔(1104–1177)。歌人・歌学者</note>
+      </person>
+      <person xml:id="tokyu">
+        <persName>等窮</persName>
+        <note>相楽等窮(1638–1715)。須賀川の俳人</note>
+      </person>
+      <person xml:id="noin">
+        <persName>能因法師</persName>
+        <note>能因(988–?)。平安中期の歌人</note>
+      </person>
+      <person xml:id="yoshitsune">
+        <persName>義經</persName>
+        <note>源義経(1159–1189)</note>
+      </person>
+      <person xml:id="benkei">
+        <persName>辨慶</persName>
+        <note>武蔵坊弁慶。義経の郎党</note>
+      </person>
+      <person xml:id="satoshoji">
+        <persName>佐藤庄司</persName>
+        <note>佐藤基治。義経に仕えた佐藤継信・忠信兄弟の父</note>
+      </person>
+      <person xml:id="sanekata">
+        <persName>藤中將實方</persName>
+        <note>藤原実方(?–999)。歌人。陸奥に左遷され客死</note>
+      </person>
+      <person xml:id="kaemon">
+        <persName>加右衞門</persName>
+        <note>北野屋加右衛門。仙台の画工・俳人</note>
+      </person>
+      <person xml:id="azumahito">
+        <persName>大野朝臣東人</persName>
+        <note>大野東人(?–742)。多賀城を築いた将軍</note>
+      </person>
+      <person xml:id="asakari">
+        <persName>惠美朝臣𤢥</persName>
+        <note>恵美朝狩。藤原仲麻呂の子。多賀城を修造</note>
+      </person>
+      <person xml:id="shomu">
+        <persName>聖武皇帝</persName>
+        <note>聖武天皇(701–756)</note>
+      </person>
+      <person xml:id="izumisaburo">
+        <persName>和泉三郎</persName>
+        <note>藤原忠衡(1167–1189)。秀衡の三男</note>
+      </person>
+      <person xml:id="ungo">
+        <persName>雲居禪師</persName>
+        <note>雲居希膺(1582–1659)。瑞巌寺中興の禅僧</note>
+      </person>
+      <person xml:id="heishiro">
+        <persName>眞壁の平四郎</persName>
+        <note>法身性西。鎌倉期の禅僧、瑞巌寺開山と伝わる</note>
+      </person>
+      <person xml:id="kenbutsu">
+        <persName>見仏聖</persName>
+        <note>見仏上人。松島雄島で法華経を読誦した聖</note>
+      </person>
+      <person xml:id="hidehira">
+        <persName>秀衡</persName>
+        <note>藤原秀衡(?–1187)。奥州藤原氏三代</note>
+      </person>
+      <person xml:id="yasuhira">
+        <persName>康衡</persName>
+        <note>藤原泰衡(1155–1189)。本文の表記は「康衡」</note>
+      </person>
+      <person xml:id="kanefusa">
+        <persName>兼房</persName>
+        <note>増尾十郎兼房。義経最期の伝説上の老臣</note>
+      </person>
+      <person xml:id="jikaku">
+        <persName>慈覺大師</persName>
+        <note>円仁(794–864)。天台宗三世座主・立石寺開基</note>
+      </person>
+      <person xml:id="seifu">
+        <persName>清風</persName>
+        <note>鈴木清風(1651–1721)。尾花沢の紅花問屋・俳人</note>
+      </person>
+      <person xml:id="sakichi">
+        <persName>圖司左吉</persName>
+        <note>図司呂丸(?–1693)。羽黒山麓手向の染物屋・俳人</note>
+      </person>
+      <person xml:id="egaku">
+        <persName>會覺阿闍利</persName>
+        <note>会覚。羽黒山別当代</note>
+      </person>
+      <person xml:id="nojo">
+        <persName>能除大師</persName>
+        <note>能除太子。羽黒山開祖と伝わる</note>
+      </person>
+      <person xml:id="gyoson">
+        <persName>行尊僧正</persName>
+        <note>行尊(1055–1135)。天台座主・歌人</note>
+      </person>
+      <person xml:id="kansho">
+        <persName>干將</persName>
+        <note>干将。中国春秋時代の刀工</note>
+      </person>
+      <person xml:id="bakuya">
+        <persName>莫耶</persName>
+        <note>莫耶。干将の妻</note>
+      </person>
+      <person xml:id="shigeyuki">
+        <persName>長山氏重行</persName>
+        <note>長山重行。鶴岡藩士・俳人</note>
+      </person>
+      <person xml:id="fugyoku">
+        <persName>淵庵不玉</persName>
+        <note>伊東不玉(1648–1697)。酒田の医師・俳人</note>
+      </person>
+      <person xml:id="saigyo">
+        <persName>西行</persName>
+        <note>西行法師(1118–1190)。歌人。本旅は西行五百回忌の年</note>
+      </person>
+      <person xml:id="jingu">
+        <persName>神功后宮</persName>
+        <note>神功皇后</note>
+      </person>
+      <person xml:id="seishi">
+        <persName>西施</persName>
+        <note>中国春秋時代の越の美女</note>
+      </person>
+      <person xml:id="teiji">
+        <persName>低耳</persName>
+        <note>宮部低耳。美濃の商人・俳人</note>
+      </person>
+      <person xml:id="issho">
+        <persName>一笑</persName>
+        <note>小杉一笑(1653–1688)。金沢の俳人。前年に没</note>
+      </person>
+      <person xml:id="kasho">
+        <persName>何處</persName>
+        <note>金沢に通う大坂の商人・俳人</note>
+      </person>
+      <person xml:id="sanemori">
+        <persName>眞盛</persName>
+        <note>斎藤別当実盛(?–1183)。篠原の合戦で討死</note>
+      </person>
+      <person xml:id="yoshitomo">
+        <persName>義朝公</persName>
+        <note>源義朝(1123–1160)</note>
+      </person>
+      <person xml:id="yoshinaka">
+        <persName>木曾義仲</persName>
+        <note>源義仲(1154–1184)</note>
+      </person>
+      <person xml:id="higuchi">
+        <persName>樋口の次郎</persName>
+        <note>樋口兼光。義仲四天王の一人</note>
+      </person>
+      <person xml:id="kazan">
+        <persName>花山の法皇</persName>
+        <note>花山法皇(968–1008)。西国三十三所巡礼を再興</note>
+      </person>
+      <person xml:id="kumenosuke">
+        <persName>久米之助</persName>
+        <note>泉屋久米之助。山中温泉の宿の主人(俳号桃妖)</note>
+      </person>
+      <person xml:id="teishitsu">
+        <persName>貞室</persName>
+        <note>安原貞室(1610–1673)。京の俳人</note>
+      </person>
+      <person xml:id="teitoku">
+        <persName>貞徳</persName>
+        <note>松永貞徳(1571–1654)。貞門俳諧の祖</note>
+      </person>
+      <person xml:id="dogen">
+        <persName>道元禪師</persName>
+        <note>道元(1200–1253)。曹洞宗開祖・永平寺開山</note>
+      </person>
+      <person xml:id="tosai">
+        <persName>等栽</persName>
+        <note>神戸洞哉。福井の隠士・俳人</note>
+      </person>
+      <person xml:id="hokushi">
+        <persName>北枝</persName>
+        <note>立花北枝(?–1718)。金沢の門人</note>
+      </person>
+      <person xml:id="chuai">
+        <persName>仲哀天皇</persName>
+        <note>仲哀天皇。氣比神宮祭神</note>
+      </person>
+      <person xml:id="yugyo">
+        <persName>遊行二世の上人</persName>
+        <note>他阿真教(1237–1319)。時宗遊行二世</note>
+      </person>
+      <person xml:id="amaya">
+        <persName>天屋何某</persName>
+        <note>天屋五郎右衛門。敦賀の廻船問屋・俳人</note>
+      </person>
+      <person xml:id="rotsu">
+        <persName>露通</persName>
+        <note>八十村路通(1649?–1738)。門人</note>
+      </person>
+      <person xml:id="etsujin">
+        <persName>越人</persName>
+        <note>越智越人(1656–?)。尾張の門人</note>
+      </person>
+      <person xml:id="joko">
+        <persName>如行</persName>
+        <note>近藤如行(?–1708)。大垣の門人</note>
+      </person>
+      <person xml:id="zensen">
+        <persName>前川子</persName>
+        <note>津田前川。大垣藩士・俳人</note>
+      </person>
+      <person xml:id="keiko">
+        <persName>荊口</persName>
+        <note>宮崎荊口。大垣藩士・俳人</note>
+      </person>
+      <person xml:id="kasane">
+        <persName>かさね</persName>
+        <note>那須野で馬の後を追ってきた農家の少女</note>
+      </person>
+      <person xml:id="tonobe">
+        <persName>戸部某</persName>
+        <note>芦野資俊(俳号桃酔)。芦野の領主</note>
+      </person>
+      <person xml:id="oyamazumi">
+        <persName>大山ずみ</persName>
+        <note>大山祇神。記紀神話の山の神</note>
+      </person>
+      <person xml:id="soryu">
+        <persName>素龍</persName>
+        <note>柏木素龍(?–1716)。能書家。素龍清書本の筆者</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="fuji">
+        <placeName>富士山</placeName>
+        <location><geo>35.3606 138.7274</geo></location>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7141 139.7774</geo></location>
+        <note>江戸・上野</note>
+      </place>
+      <place xml:id="yanaka">
+        <placeName>谷中</placeName>
+        <location><geo>35.728 139.7672</geo></location>
+      </place>
+      <place xml:id="senju">
+        <placeName>千住</placeName>
+        <location><geo>35.7496 139.8046</geo></location>
+        <note>旅立ちの地</note>
+      </place>
+      <place xml:id="soka">
+        <placeName>草加</placeName>
+        <location><geo>35.8254 139.8055</geo></location>
+      </place>
+      <place xml:id="muronoyashima">
+        <placeName>室の八島</placeName>
+        <location><geo>36.4066 139.7401</geo></location>
+        <note>大神神社(栃木市)</note>
+      </place>
+      <place xml:id="nikko">
+        <placeName>日光</placeName>
+        <location><geo>36.758 139.5986</geo></location>
+        <note>日光山・東照宮</note>
+      </place>
+      <place xml:id="kurokamiyama">
+        <placeName>黒髪山</placeName>
+        <location><geo>36.7652 139.4906</geo></location>
+        <note>男体山の古名</note>
+      </place>
+      <place xml:id="urami">
+        <placeName>裏見の滝</placeName>
+        <location><geo>36.7412 139.5629</geo></location>
+      </place>
+      <place xml:id="kurobane">
+        <placeName>黒羽</placeName>
+        <location><geo>36.8557 140.1211</geo></location>
+      </place>
+      <place xml:id="nasuno">
+        <placeName>那須野</placeName>
+        <location><geo>36.93 140.05</geo></location>
+        <note>那須野が原・概値</note>
+      </place>
+      <place xml:id="nasuhachiman">
+        <placeName>那須神社</placeName>
+        <location><geo>36.8785 140.1258</geo></location>
+        <note>本文の「八幡宮」</note>
+      </place>
+      <place xml:id="komyoji">
+        <placeName>修験光明寺跡</placeName>
+        <location><geo>36.87 140.13</geo></location>
+        <note>大田原市余瀬・概値</note>
+      </place>
+      <place xml:id="unganji">
+        <placeName>雲巌寺</placeName>
+        <location><geo>36.7891 140.2103</geo></location>
+      </place>
+      <place xml:id="sesshoseki">
+        <placeName>殺生石</placeName>
+        <location><geo>37.0967 139.9758</geo></location>
+      </place>
+      <place xml:id="ashino">
+        <placeName>芦野</placeName>
+        <location><geo>36.9958 140.1683</geo></location>
+        <note>遊行柳の里</note>
+      </place>
+      <place xml:id="shirakawaseki">
+        <placeName>白河の関</placeName>
+        <location><geo>36.9367 140.228</geo></location>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>本文の「都」「洛」</note>
+      </place>
+      <place xml:id="abukuma">
+        <placeName>阿武隈川</placeName>
+        <location><geo>36.98 140.44</geo></location>
+        <note>渡河点付近・概値</note>
+      </place>
+      <place xml:id="bandai">
+        <placeName>磐梯山</placeName>
+        <location><geo>37.6014 140.0728</geo></location>
+        <note>本文の「會津根」</note>
+      </place>
+      <place xml:id="iwaki">
+        <placeName>岩城</placeName>
+        <location><geo>37.0505 140.8877</geo></location>
+        <note>磐城平・概値</note>
+      </place>
+      <place xml:id="soma">
+        <placeName>相馬</placeName>
+        <location><geo>37.7967 140.9195</geo></location>
+      </place>
+      <place xml:id="miharu">
+        <placeName>三春</placeName>
+        <location><geo>37.4411 140.4931</geo></location>
+      </place>
+      <place xml:id="hitachi">
+        <placeName>常陸</placeName>
+        <location><geo>36.3418 140.4468</geo></location>
+        <note>国名・概値(水戸)</note>
+      </place>
+      <place xml:id="shimotsuke">
+        <placeName>下野</placeName>
+        <location><geo>36.5551 139.8828</geo></location>
+        <note>国名・概値(宇都宮)</note>
+      </place>
+      <place xml:id="kagenuma">
+        <placeName>かげ沼</placeName>
+        <location><geo>37.3 140.36</geo></location>
+        <note>須賀川近郊・概値</note>
+      </place>
+      <place xml:id="sukagawa">
+        <placeName>須賀川</placeName>
+        <location><geo>37.2861 140.3728</geo></location>
+      </place>
+      <place xml:id="hiwada">
+        <placeName>日和田</placeName>
+        <location><geo>37.4586 140.3711</geo></location>
+        <note>本文の「檜皮の宿」</note>
+      </place>
+      <place xml:id="asakayama">
+        <placeName>安積山</placeName>
+        <location><geo>37.4614 140.3672</geo></location>
+      </place>
+      <place xml:id="nihonmatsu">
+        <placeName>二本松</placeName>
+        <location><geo>37.5847 140.4314</geo></location>
+      </place>
+      <place xml:id="kurozuka">
+        <placeName>黒塚</placeName>
+        <location><geo>37.5772 140.4468</geo></location>
+        <note>安達ヶ原</note>
+      </place>
+      <place xml:id="fukushima">
+        <placeName>福島</placeName>
+        <location><geo>37.7608 140.4747</geo></location>
+      </place>
+      <place xml:id="shinobu">
+        <placeName>信夫の里</placeName>
+        <location><geo>37.7702 140.515</geo></location>
+        <note>文知摺石の所在地</note>
+      </place>
+      <place xml:id="tsukinowa">
+        <placeName>月の輪の渡し</placeName>
+        <location><geo>37.79 140.49</geo></location>
+        <note>阿武隈川の渡し・概値</note>
+      </place>
+      <place xml:id="senoue">
+        <placeName>瀬の上</placeName>
+        <location><geo>37.8092 140.4858</geo></location>
+      </place>
+      <place xml:id="iizuka">
+        <placeName>飯塚</placeName>
+        <location><geo>37.8236 140.4453</geo></location>
+        <note>現在の飯坂温泉</note>
+      </place>
+      <place xml:id="sabano">
+        <placeName>鯖野</placeName>
+        <location><geo>37.8095 140.4432</geo></location>
+        <note>医王寺</note>
+      </place>
+      <place xml:id="maruyama">
+        <placeName>丸山</placeName>
+        <location><geo>37.8219 140.4369</geo></location>
+        <note>大鳥城跡</note>
+      </place>
+      <place xml:id="koori">
+        <placeName>桑折</placeName>
+        <location><geo>37.8471 140.5183</geo></location>
+      </place>
+      <place xml:id="dateokido">
+        <placeName>伊達の大木戸</placeName>
+        <location><geo>37.877 140.553</geo></location>
+        <note>国見町・概値</note>
+      </place>
+      <place xml:id="abumizuri">
+        <placeName>鐙摺</placeName>
+        <location><geo>37.94 140.65</geo></location>
+        <note>白石市斎川付近・概値</note>
+      </place>
+      <place xml:id="shiroishi">
+        <placeName>白石</placeName>
+        <location><geo>38.0025 140.6197</geo></location>
+      </place>
+      <place xml:id="kasajima">
+        <placeName>笠島</placeName>
+        <location><geo>38.156 140.837</geo></location>
+        <note>名取市愛島笠島・概値</note>
+      </place>
+      <place xml:id="minowa">
+        <placeName>箕輪</placeName>
+        <location><geo>38.16 140.83</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="iwanuma">
+        <placeName>岩沼</placeName>
+        <location><geo>38.1043 140.8702</geo></location>
+      </place>
+      <place xml:id="takekuma">
+        <placeName>武隈の松</placeName>
+        <location><geo>38.1096 140.8661</geo></location>
+        <note>二木の松</note>
+      </place>
+      <place xml:id="natorigawa">
+        <placeName>名取川</placeName>
+        <location><geo>38.17 140.88</geo></location>
+        <note>渡河点付近・概値</note>
+      </place>
+      <place xml:id="sendai">
+        <placeName>仙台</placeName>
+        <location><geo>38.2682 140.8694</geo></location>
+      </place>
+      <place xml:id="miyagino">
+        <placeName>宮城野</placeName>
+        <location><geo>38.263 140.91</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tamada">
+        <placeName>玉田</placeName>
+        <location><geo>38.272 140.935</geo></location>
+        <note>歌枕・概値</note>
+      </place>
+      <place xml:id="yokono">
+        <placeName>横野</placeName>
+        <location><geo>38.268 140.925</geo></location>
+        <note>歌枕・概値</note>
+      </place>
+      <place xml:id="tsutsujigaoka">
+        <placeName>榴ヶ岡</placeName>
+        <location><geo>38.2603 140.8935</geo></location>
+      </place>
+      <place xml:id="konoshita">
+        <placeName>木の下</placeName>
+        <location><geo>38.2528 140.9284</geo></location>
+      </place>
+      <place xml:id="yakushido">
+        <placeName>薬師堂</placeName>
+        <location><geo>38.2531 140.9289</geo></location>
+        <note>陸奥国分寺薬師堂</note>
+      </place>
+      <place xml:id="tenjin">
+        <placeName>榴岡天満宮</placeName>
+        <location><geo>38.2648 140.8952</geo></location>
+        <note>本文の「天神の御社」</note>
+      </place>
+      <place xml:id="okuhosomichi">
+        <placeName>おくの細道</placeName>
+        <location><geo>38.298 140.958</geo></location>
+        <note>岩切付近の歌枕・概値</note>
+      </place>
+      <place xml:id="tagajo">
+        <placeName>多賀城</placeName>
+        <location><geo>38.3061 140.9887</geo></location>
+      </place>
+      <place xml:id="tsubonoishibumi">
+        <placeName>壺の碑</placeName>
+        <location><geo>38.3044 140.9886</geo></location>
+        <note>多賀城碑</note>
+      </place>
+      <place xml:id="nodatamagawa">
+        <placeName>野田の玉川</placeName>
+        <location><geo>38.297 141.006</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="okinoishi">
+        <placeName>沖の石</placeName>
+        <location><geo>38.2958 141.0064</geo></location>
+      </place>
+      <place xml:id="suenomatsuyama">
+        <placeName>末の松山</placeName>
+        <location><geo>38.2972 141.0087</geo></location>
+      </place>
+      <place xml:id="shiogama">
+        <placeName>塩竈</placeName>
+        <location><geo>38.3178 141.0217</geo></location>
+      </place>
+      <place xml:id="magakigashima">
+        <placeName>籬が島</placeName>
+        <location><geo>38.3169 141.0355</geo></location>
+      </place>
+      <place xml:id="shiogamajinja">
+        <placeName>鹽竈神社</placeName>
+        <location><geo>38.3196 141.0107</geo></location>
+      </place>
+      <place xml:id="matsushima">
+        <placeName>松島</placeName>
+        <location><geo>38.3688 141.0632</geo></location>
+      </place>
+      <place xml:id="ojima">
+        <placeName>雄島</placeName>
+        <location><geo>38.3639 141.0608</geo></location>
+      </place>
+      <place xml:id="dotei">
+        <placeName>洞庭湖</placeName>
+        <location><geo>29.32 112.9</geo></location>
+        <note>中国湖南省</note>
+      </place>
+      <place xml:id="seiko">
+        <placeName>西湖</placeName>
+        <location><geo>30.243 120.15</geo></location>
+        <note>中国杭州</note>
+      </place>
+      <place xml:id="sekko">
+        <placeName>浙江</placeName>
+        <location><geo>30.25 120.17</geo></location>
+        <note>銭塘江</note>
+      </place>
+      <place xml:id="matsugaurashima">
+        <placeName>松が浦島</placeName>
+        <location><geo>38.31 141.06</geo></location>
+        <note>七ヶ浜・概値</note>
+      </place>
+      <place xml:id="zuiganji">
+        <placeName>瑞巌寺</placeName>
+        <location><geo>38.3721 141.0597</geo></location>
+      </place>
+      <place xml:id="hiraizumi">
+        <placeName>平泉</placeName>
+        <location><geo>38.9856 141.114</geo></location>
+      </place>
+      <place xml:id="anewa">
+        <placeName>姉歯の松</placeName>
+        <location><geo>38.85 141.02</geo></location>
+        <note>栗原市金成・概値</note>
+      </place>
+      <place xml:id="odae">
+        <placeName>緒絶えの橋</placeName>
+        <location><geo>38.5771 140.9551</geo></location>
+        <note>大崎市古川</note>
+      </place>
+      <place xml:id="ishinomaki">
+        <placeName>石巻</placeName>
+        <location><geo>38.4344 141.3028</geo></location>
+      </place>
+      <place xml:id="kinkasan">
+        <placeName>金華山</placeName>
+        <location><geo>38.2999 141.5641</geo></location>
+      </place>
+      <place xml:id="sode">
+        <placeName>袖の渡り</placeName>
+        <location><geo>38.428 141.303</geo></location>
+        <note>石巻・概値</note>
+      </place>
+      <place xml:id="obuchi">
+        <placeName>尾ぶちの牧</placeName>
+        <location><geo>38.52 141.3</geo></location>
+        <note>伝承地・概値</note>
+      </place>
+      <place xml:id="mano">
+        <placeName>真野の萱原</placeName>
+        <location><geo>38.45 141.33</geo></location>
+        <note>石巻市真野・概値</note>
+      </place>
+      <place xml:id="naganuma">
+        <placeName>長沼</placeName>
+        <location><geo>38.7 141.1</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="toima">
+        <placeName>登米</placeName>
+        <location><geo>38.6919 141.1876</geo></location>
+        <note>本文の「戸伊广」</note>
+      </place>
+      <place xml:id="takadachi">
+        <placeName>高館</placeName>
+        <location><geo>38.9903 141.1218</geo></location>
+        <note>義経堂</note>
+      </place>
+      <place xml:id="kitakami">
+        <placeName>北上川</placeName>
+        <location><geo>38.99 141.13</geo></location>
+        <note>平泉付近</note>
+      </place>
+      <place xml:id="nanbu">
+        <placeName>南部</placeName>
+        <location><geo>39.7036 141.1527</geo></location>
+        <note>地域名・概値(盛岡)</note>
+      </place>
+      <place xml:id="koromogawa">
+        <placeName>衣川</placeName>
+        <location><geo>38.998 141.104</geo></location>
+      </place>
+      <place xml:id="izumigajo">
+        <placeName>和泉が城</placeName>
+        <location><geo>38.995 141.12</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="koromogaseki">
+        <placeName>衣が関</placeName>
+        <location><geo>38.993 141.1</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kinkeizan">
+        <placeName>金鶏山</placeName>
+        <location><geo>38.9878 141.1046</geo></location>
+      </place>
+      <place xml:id="konjikido">
+        <placeName>光堂</placeName>
+        <location><geo>38.9942 141.0998</geo></location>
+        <note>中尊寺金色堂</note>
+      </place>
+      <place xml:id="kyodo">
+        <placeName>経堂</placeName>
+        <location><geo>38.9941 141.1001</geo></location>
+        <note>中尊寺経蔵</note>
+      </place>
+      <place xml:id="iwadeyama">
+        <placeName>岩出山</placeName>
+        <location><geo>38.6494 140.8711</geo></location>
+        <note>本文の「岩手の里」</note>
+      </place>
+      <place xml:id="ogurosaki">
+        <placeName>小黒崎</placeName>
+        <location><geo>38.638 140.771</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="mizunokojima">
+        <placeName>美豆の小島</placeName>
+        <location><geo>38.636 140.765</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="naruko">
+        <placeName>鳴子温泉</placeName>
+        <location><geo>38.7383 140.7167</geo></location>
+      </place>
+      <place xml:id="shitomae">
+        <placeName>尿前の関</placeName>
+        <location><geo>38.727 140.697</geo></location>
+      </place>
+      <place xml:id="dewa">
+        <placeName>出羽</placeName>
+        <location><geo>38.7 140.1</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="mogamisho">
+        <placeName>最上の庄</placeName>
+        <location><geo>38.76 140.3</geo></location>
+        <note>新庄付近・概値</note>
+      </place>
+      <place xml:id="obanazawa">
+        <placeName>尾花沢</placeName>
+        <location><geo>38.6006 140.4064</geo></location>
+      </place>
+      <place xml:id="yamagata">
+        <placeName>山形</placeName>
+        <location><geo>38.2554 140.3396</geo></location>
+      </place>
+      <place xml:id="risshakuji">
+        <placeName>立石寺</placeName>
+        <location><geo>38.3126 140.4358</geo></location>
+        <note>山寺</note>
+      </place>
+      <place xml:id="mogamigawa">
+        <placeName>最上川</placeName>
+        <location><geo>38.59 140.37</geo></location>
+        <note>大石田付近</note>
+      </place>
+      <place xml:id="oishida">
+        <placeName>大石田</placeName>
+        <location><geo>38.5906 140.3722</geo></location>
+      </place>
+      <place xml:id="goten">
+        <placeName>碁点</placeName>
+        <location><geo>38.477 140.385</geo></location>
+        <note>村山・概値</note>
+      </place>
+      <place xml:id="hayabusa">
+        <placeName>隼</placeName>
+        <location><geo>38.49 140.39</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="itajikiyama">
+        <placeName>板敷山</placeName>
+        <location><geo>38.68 140.12</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="sakata">
+        <placeName>酒田</placeName>
+        <location><geo>38.9146 139.8364</geo></location>
+      </place>
+      <place xml:id="shiraito">
+        <placeName>白糸の滝</placeName>
+        <location><geo>38.755 140.062</geo></location>
+        <note>最上峡・概値</note>
+      </place>
+      <place xml:id="sennindo">
+        <placeName>仙人堂</placeName>
+        <location><geo>38.757 140.075</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="haguro">
+        <placeName>羽黒山</placeName>
+        <location><geo>38.7057 139.9843</geo></location>
+      </place>
+      <place xml:id="minamidani">
+        <placeName>南谷</placeName>
+        <location><geo>38.7 139.982</geo></location>
+        <note>羽黒山南谷・概値</note>
+      </place>
+      <place xml:id="gassan">
+        <placeName>月山</placeName>
+        <location><geo>38.5489 140.0272</geo></location>
+      </place>
+      <place xml:id="yudono">
+        <placeName>湯殿山</placeName>
+        <location><geo>38.535 139.9891</geo></location>
+      </place>
+      <place xml:id="kaneiji">
+        <placeName>東叡山寛永寺</placeName>
+        <location><geo>35.7203 139.7745</geo></location>
+        <note>本文の「武江東叡」</note>
+      </place>
+      <place xml:id="ryusen">
+        <placeName>龍泉</placeName>
+        <location><geo>28.08 119.14</geo></location>
+        <note>中国浙江省</note>
+      </place>
+      <place xml:id="tsuruoka">
+        <placeName>鶴岡</placeName>
+        <location><geo>38.7275 139.8267</geo></location>
+      </place>
+      <place xml:id="atsumiyama">
+        <placeName>温海岳</placeName>
+        <location><geo>38.6 139.62</geo></location>
+        <note>本文の「あつみ山」・概値</note>
+      </place>
+      <place xml:id="fukura">
+        <placeName>吹浦</placeName>
+        <location><geo>39.055 139.868</geo></location>
+      </place>
+      <place xml:id="kisakata">
+        <placeName>象潟</placeName>
+        <location><geo>39.2028 139.9028</geo></location>
+      </place>
+      <place xml:id="chokai">
+        <placeName>鳥海山</placeName>
+        <location><geo>39.0989 140.0489</geo></location>
+      </place>
+      <place xml:id="noinjima">
+        <placeName>能因島</placeName>
+        <location><geo>39.205 139.905</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kanmanju">
+        <placeName>蚶満寺</placeName>
+        <location><geo>39.2036 139.9064</geo></location>
+        <note>本文の「干滿珠寺」</note>
+      </place>
+      <place xml:id="uyamuya">
+        <placeName>有耶無耶の関</placeName>
+        <location><geo>39.135 139.875</geo></location>
+        <note>三崎峠・概値</note>
+      </place>
+      <place xml:id="akita">
+        <placeName>秋田</placeName>
+        <location><geo>39.7186 140.1024</geo></location>
+      </place>
+      <place xml:id="shiogoshi">
+        <placeName>汐越</placeName>
+        <location><geo>39.21 139.9</geo></location>
+        <note>象潟・概値</note>
+      </place>
+      <place xml:id="nezu">
+        <placeName>鼠ヶ関</placeName>
+        <location><geo>38.5569 139.5486</geo></location>
+        <note>念珠関</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後</placeName>
+        <location><geo>37.5 138.8</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="etchu">
+        <placeName>越中</placeName>
+        <location><geo>36.7 137.21</geo></location>
+        <note>国名・概値(富山)</note>
+      </place>
+      <place xml:id="ichiburi">
+        <placeName>市振</placeName>
+        <location><geo>36.9636 137.6389</geo></location>
+      </place>
+      <place xml:id="sado">
+        <placeName>佐渡</placeName>
+        <location><geo>38.0186 138.3672</geo></location>
+      </place>
+      <place xml:id="oyashirazu">
+        <placeName>親不知</placeName>
+        <location><geo>37.0228 137.7139</geo></location>
+        <note>子不知等を含む難所</note>
+      </place>
+      <place xml:id="niigata">
+        <placeName>新潟</placeName>
+        <location><geo>37.9161 139.0364</geo></location>
+      </place>
+      <place xml:id="ise">
+        <placeName>伊勢</placeName>
+        <location><geo>34.4551 136.7254</geo></location>
+        <note>伊勢神宮</note>
+      </place>
+      <place xml:id="kurobe">
+        <placeName>黒部川</placeName>
+        <location><geo>36.87 137.44</geo></location>
+        <note>黒部四十八ヶ瀬・概値</note>
+      </place>
+      <place xml:id="nago">
+        <placeName>那古の浦</placeName>
+        <location><geo>36.778 137.067</geo></location>
+        <note>奈呉の浦(射水市)</note>
+      </place>
+      <place xml:id="tako">
+        <placeName>担籠の藤波</placeName>
+        <location><geo>36.83 136.99</geo></location>
+        <note>氷見・概値</note>
+      </place>
+      <place xml:id="kaga">
+        <placeName>加賀</placeName>
+        <location><geo>36.45 136.55</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="ariso">
+        <placeName>有磯海</placeName>
+        <location><geo>36.85 137.25</geo></location>
+        <note>富山湾・概値</note>
+      </place>
+      <place xml:id="kanazawa">
+        <placeName>金沢</placeName>
+        <location><geo>36.5613 136.6562</geo></location>
+      </place>
+      <place xml:id="unohanayama">
+        <placeName>卯の花山</placeName>
+        <location><geo>36.67 136.88</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kurikara">
+        <placeName>倶利伽羅峠</placeName>
+        <location><geo>36.6706 136.8636</geo></location>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大坂</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+      </place>
+      <place xml:id="komatsu">
+        <placeName>小松</placeName>
+        <location><geo>36.4086 136.4453</geo></location>
+      </place>
+      <place xml:id="tadajinja">
+        <placeName>多太神社</placeName>
+        <location><geo>36.402 136.452</geo></location>
+        <note>実盛の甲を蔵する</note>
+      </place>
+      <place xml:id="yamanaka">
+        <placeName>山中温泉</placeName>
+        <location><geo>36.2519 136.3786</geo></location>
+      </place>
+      <place xml:id="hakusan">
+        <placeName>白山</placeName>
+        <location><geo>36.1553 136.7715</geo></location>
+        <note>本文の「白根が嶽」</note>
+      </place>
+      <place xml:id="nata">
+        <placeName>那谷寺</placeName>
+        <location><geo>36.3161 136.4256</geo></location>
+      </place>
+      <place xml:id="nachi">
+        <placeName>那智</placeName>
+        <location><geo>33.6687 135.89</geo></location>
+      </place>
+      <place xml:id="tanigumi">
+        <placeName>谷汲</placeName>
+        <location><geo>35.66 136.6</geo></location>
+        <note>華厳寺。本文の「谷組」</note>
+      </place>
+      <place xml:id="nagashima">
+        <placeName>伊勢長島</placeName>
+        <location><geo>35.077 136.735</geo></location>
+        <note>桑名市長島町</note>
+      </place>
+      <place xml:id="daishoji">
+        <placeName>大聖寺</placeName>
+        <location><geo>36.3054 136.3122</geo></location>
+      </place>
+      <place xml:id="zenshoji">
+        <placeName>全昌寺</placeName>
+        <location><geo>36.303 136.31</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前</placeName>
+        <location><geo>35.95 136.18</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="yoshizaki">
+        <placeName>吉崎</placeName>
+        <location><geo>36.2554 136.2262</geo></location>
+      </place>
+      <place xml:id="shiogoshimatsu">
+        <placeName>汐越の松</placeName>
+        <location><geo>36.247 136.235</geo></location>
+        <note>北潟湖畔・概値</note>
+      </place>
+      <place xml:id="tenryuji">
+        <placeName>天龍寺</placeName>
+        <location><geo>36.093 136.297</geo></location>
+        <note>本文は「丸岡」とするが松岡(永平寺町)</note>
+      </place>
+      <place xml:id="eiheiji">
+        <placeName>永平寺</placeName>
+        <location><geo>36.0561 136.3555</geo></location>
+      </place>
+      <place xml:id="fukui">
+        <placeName>福井</placeName>
+        <location><geo>36.0641 136.2196</geo></location>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+      </place>
+      <place xml:id="tsuruga">
+        <placeName>敦賀</placeName>
+        <location><geo>35.6544 136.0637</geo></location>
+      </place>
+      <place xml:id="hinagatake">
+        <placeName>日野山</placeName>
+        <location><geo>35.855 136.205</geo></location>
+        <note>本文の「比那が嵩」・概値</note>
+      </place>
+      <place xml:id="asamuzu">
+        <placeName>浅水</placeName>
+        <location><geo>35.985 136.215</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tamae">
+        <placeName>玉江</placeName>
+        <location><geo>36.058 136.208</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="uguisu">
+        <placeName>鶯の関</placeName>
+        <location><geo>35.8 136.19</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="yunoo">
+        <placeName>湯尾峠</placeName>
+        <location><geo>35.79 136.19</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hiuchi">
+        <placeName>燧ヶ城</placeName>
+        <location><geo>35.7702 136.2022</geo></location>
+        <note>今庄</note>
+      </place>
+      <place xml:id="kaeruyama">
+        <placeName>かへる山</placeName>
+        <location><geo>35.75 136.17</geo></location>
+        <note>鹿蒜山・概値</note>
+      </place>
+      <place xml:id="kehi">
+        <placeName>氣比神宮</placeName>
+        <location><geo>35.6547 136.0745</geo></location>
+        <note>本文の「けいの明神」</note>
+      </place>
+      <place xml:id="ironohama">
+        <placeName>色ヶ浜</placeName>
+        <location><geo>35.6879 135.9557</geo></location>
+        <note>本文の「種の濱」</note>
+      </place>
+      <place xml:id="suma">
+        <placeName>須磨</placeName>
+        <location><geo>34.6394 135.1133</geo></location>
+      </place>
+      <place xml:id="mino">
+        <placeName>美濃</placeName>
+        <location><geo>35.55 136.75</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="ogaki">
+        <placeName>大垣</placeName>
+        <location><geo>35.3671 136.6184</geo></location>
+        <note>むすびの地</note>
+      </place>
+      <place xml:id="futami">
+        <placeName>二見</placeName>
+        <location><geo>34.51 136.79</geo></location>
+        <note>二見浦</note>
+      </place>
+      <place xml:id="michinoku">
+        <placeName>みちのく</placeName>
+        <location><geo>39.0 141.0</geo></location>
+        <note>地域名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="entry" xml:id="sec00" n="0">
+        <head>冒頭　<date when="1689-05-16">元祿二年三月二十七日（旅立の日を付す）</date></head>
+        <p>月日は百代の過客にして、行かふ年も又旅人也。舟の上に生涯をうかべ馬の口とらえて老をむかふる物は、日〻旅にして旅を栖とす。古人も多く旅に死せるあり。予もいづれの年よりか、片雲の風にさそはれて、漂泊の思ひやまず海濱にさすらへ、去年の秋江上の破屋に蜘の古巣をはらひて、やゝ年も暮春立る霞の空に<placeName ref="#shirakawaseki">白川の關</placeName>こえんと、そゞろ神の物につきて心をくるはせ、道祖神のまねきにあひて取もの手につかず、もゝ引の破をつゞり笠の緒付かえて、三里に灸すゆるより<placeName ref="#matsushima">松嶋</placeName>の月先心にかゝりて、住る方は人に讓り<persName ref="#sampu">杉風</persName>が別墅に移るに、<lb/><cit><quote><lg type="hokku"><l>草の戸も住替る代ぞひなの家</l></lg></quote></cit><lb/>面八句を庵の柱に懸置。</p>
+      </div>
+      <div type="entry" xml:id="sec01" n="1">
+        <head>旅立　<date when="1689-05-16">元祿二年三月二十七日</date></head>
+        <p><date when="1689-05-16">彌生も末の七日</date>、明ぼのゝ空朧〻として、月は在明にて光おさまれる物から、<placeName ref="#fuji">不二の峯</placeName>幽にみえて、<placeName ref="#ueno">上野</placeName><placeName ref="#yanaka">谷中</placeName>の花の梢又いつかはと心ぼそし。むつましきかぎりは宵よりつどひて、舟に乘て送る。<placeName ref="#senju">千じゆ</placeName>と云所にて船をあがれば、前途三千里のおもひ胸にふさがりて、幻のちまたに離別の泪をそゝく。<lb/><cit><quote><lg type="hokku"><l>行春や鳥啼魚の目は泪</l></lg></quote></cit><lb/>是を矢立の初として行道なをすゝまず。人〻は途中に立ならびて、後かげのみゆる迄はと見送なるべし。</p>
+      </div>
+      <div type="entry" xml:id="sec02" n="2">
+        <head>草加　<date when="1689-05-16">元祿二年三月二十七日</date></head>
+        <p>ことし<date when="1689">元祿二とせ</date>にや、奧羽長途の行脚只かりそめに思ひたちて、呉天に白髮の恨を重ぬといへ共、耳にふれていまだめに見ぬさかひ、若生て歸らばと定なき頼の末をかけ、其日漸<placeName ref="#soka">早加</placeName>と云宿にたどり着にけり。痩骨の肩にかゝれる物先くるしむ。只身すがらにと出立侍を、紙子一衣は夜の防ぎ、ゆかた・雨具・墨筆のたぐひ、あるはさりがたき餞などしたるは、さすがに打捨がたくて路次の煩となれるこそわりなけれ。</p>
+      </div>
+      <div type="entry" xml:id="sec03" n="3">
+        <head>室の八嶋　<date when="1689-05-18">元祿二年三月二十九日</date></head>
+        <p><placeName ref="#muronoyashima">室の八嶋</placeName>に詣す。同行<persName ref="#sora">曾良</persName>が曰、「此神は<persName ref="#konohana">木の花さくや姫</persName>の神と申て<placeName ref="#fuji">冨士</placeName>一躰也。無戸室に入て燒給ふちかひのみ中に、<persName ref="#hohodemi">火〻出見のみこと</persName>生れ給ひしより<placeName ref="#muronoyashima">室の八嶋</placeName>と申。又煙を讀習し侍もこの謂也。」將このしろといふ魚を禁ず縁記の旨世に傳ふ事も侍し。</p>
+      </div>
+      <div type="entry" xml:id="sec04" n="4">
+        <head>佛五左衞門　<date when="1689-05-18">元祿二年三月二十九日（本文は「卅日」とする）</date></head>
+        <p><date when="1689-05-18">卅日</date><placeName ref="#nikko">日光山</placeName>の麓に泊る。あるじの云けるやう、「我名を<persName ref="#gozaemon">佛五左衞門</persName>と云。萬正直を旨とする故に、人かくは申侍まゝ一夜の草の枕も打解て休み給へ」と云。いかなる佛の濁世塵土に示現して、かゝる桑門の乞食順禮ごときの人をたすけ給ふにやと、あるじのなす事に心をとゞめてみるに、唯無智無分別にして正直偏固の者也。剛毅木訥の仁に近きたぐひ、氣稟の清質尤尊ぶべし。</p>
+      </div>
+      <div type="entry" xml:id="sec05" n="5">
+        <head>日光　<date when="1689-05-19">元祿二年四月一日</date></head>
+        <p><date when="1689-05-19">卯月朔日</date>、御山に詣拜す。往昔此御山を<placeName ref="#nikko">二荒山</placeName>と書しを、<persName ref="#kukai">空海大師</persName>開基の時<placeName ref="#nikko">日光</placeName>と改給ふ。千歳未來をさとり給ふにや、今此御光一天にかゝやきて恩澤八荒にあふれ、四民安堵の栖穩なり。猶憚多くて筆をさし置ぬ。<lb/><cit><quote><lg type="hokku"><l>あらたうと青葉若葉の日の光</l></lg></quote></cit><lb/><placeName ref="#kurokamiyama">黒髮山</placeName>は霞かゝりて雪いまだ白し。<lb/><cit><quote><lg type="hokku"><l>剃捨て<placeName ref="#kurokamiyama">黒髮山</placeName>に衣更</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit><lb/><persName ref="#sora">曾良</persName>は河合氏にして、<persName ref="#sora">惣五郎</persName>と云へり。芭蕉の下葉に軒をならべて、予が薪水の勞をたすく。このたび<placeName ref="#matsushima">松しま</placeName><placeName ref="#kisakata">象㵼</placeName>の眺共にせん事を悦び、且は羈旅の難をいたはらんと、旅立曉髮を剃て墨染にさまをかえ、<persName ref="#sora">惣五</persName>を改て<persName ref="#sora">宗悟</persName>とす。仍て<placeName ref="#kurokamiyama">墨髮山</placeName>の句有。衣更の二字力ありてきこゆ。<lb/>廿餘丁山を登つて瀧有。岩洞の頂より飛流して百尺千岩の碧潭に落たり。岩窟に身をひそめ入て瀧の裏よりみれば、<placeName ref="#urami">うらみの瀧</placeName>と申傳え侍る也。<lb/><cit><quote><lg type="hokku"><l>暫時は瀧に籠るや夏の初</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec06" n="6">
+        <head>那須　<date when="1689-05-20">元祿二年四月二日</date></head>
+        <p><placeName ref="#kurobane">那須の黒ばね</placeName>と云所に知人あれば、是より野越にかゝりて直道をゆかんとす。遙に一村を見かけて行に雨降日暮る。農夫の家に一夜をかりて、明れば又野中を行。そこに野飼の馬あり。草刈おのこになげきよれば、野夫といへどもさすがに情しらぬには非ず、「いかゞすべきや、されども此野は縱横にわかれて、うゐ／＼敷旅人の道ふみたがえんあやしう侍れば、此馬のとゞまる所にて馬を返し給へ」とかし侍ぬ。ちいさき者ふたり馬の跡したひてはしる。獨は小姫にて名を<persName ref="#kasane">かさね</persName>と云。聞なれぬ名のやさしかりければ、<lb/><cit><quote><lg type="hokku"><l><persName ref="#kasane">かさね</persName>とは八重撫子の名成べし</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit><lb/>頓て人里に至れば、あたひを鞍つぼに結付て馬を返しぬ。</p>
+      </div>
+      <div type="entry" xml:id="sec07" n="7">
+        <head>黒羽　<date when="1689-05-21">元祿二年四月三日</date></head>
+        <p><placeName ref="#kurobane">黒羽</placeName>の舘代<persName ref="#josui">淨坊寺何がし</persName>の方に音信る。思ひかけぬあるじの悦び、日夜語つゞけて、其弟<persName ref="#tosui">桃翠</persName>など云が朝夕勤とぶらひ、自の家にも伴ひて、親屬の方にもまねかれ日をふるまゝに、ひとひ郊外に逍遙して犬追物の跡を一見し、<placeName ref="#nasuno">那須の篠原</placeName>をわけて<persName ref="#tamamo">玉藻の前</persName>の古墳をとふ。それより<placeName ref="#nasuhachiman">八幡宮</placeName>に詣。<persName ref="#yoichi">與市</persName>扇の的を射し時、別しては我國氏神正八まんとちかひしも、此神社にて侍と聞ば、感應殊しきりに覺えらる。暮れば<persName ref="#tosui">桃翠</persName>宅に歸る。<lb/><placeName ref="#komyoji">修驗光明寺</placeName>と云有。そこにまねかれて行者堂を拜す。<lb/><cit><quote><lg type="hokku"><l>夏山に足駄を拜む首途哉</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec08" n="8">
+        <head>雲岩寺　<date when="1689-05-23">元祿二年四月五日</date></head>
+        <p>當國<placeName ref="#unganji">雲岸寺</placeName>のおくに<persName ref="#buccho">佛頂和尚</persName>山居跡あり。<lb/><cit><quote><lg type="hokku"><l>竪横の五尺にたらぬ草の庵</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>むすぶもくやし雨なかりせば</l></lg></quote></cit><lb/>と松の炭して岩に書付侍り、といつぞや聞え給ふ。其跡みんと<placeName ref="#unganji">雲岸寺</placeName>に杖を曳ば、人〻すゝんで共にいざなひ、若き人おほく道のほど打さはぎて、おぼえず彼麓に到る。山はおくあるけしきにて、谷道遙に松杉黒く苔したゞりて、<date when="1689-05">卯月</date>の天今猶寒し。十景盡る所、橋をわたつて山門に入。<lb/>さてかの跡はいづくのほどにやと、後の山によぢのぼれば、石上の小庵岩窟にむすびかけたり。<persName ref="#myozenji">妙禪師</persName>の死關、<persName ref="#houn">法雲法師</persName>の石室をみるがごとし。<lb/><cit><quote><lg type="hokku"><l>木啄も庵はやぶらず夏木立</l></lg></quote></cit><lb/>ととりあへぬ一句を柱に殘侍し。</p>
+      </div>
+      <div type="entry" xml:id="sec09" n="9">
+        <head>殺生石・遊行柳　<date when="1689-06-06">元祿二年四月十九日</date></head>
+        <p>是より<placeName ref="#sesshoseki">殺生石</placeName>に行。舘代より馬にて送らる。此口付のおのこ、短册得させよと乞。やさしき事を望侍るものかなと、<lb/><cit><quote><lg type="hokku"><l>野を横に馬牽むけよほとゝぎす</l></lg></quote></cit><lb/><placeName ref="#sesshoseki">殺生石</placeName>は温泉の出る山陰にあり。石の毒氣いまだほろびず、蜂・蝶のたぐひ眞砂の色の見えぬほどかさなり死す。又、清水ながるゝの柳は<placeName ref="#ashino">蘆野の里</placeName>にありて田の畔に殘る。此所の郡守<persName ref="#tonobe">戸部某</persName>の此柳みせばやなと折／＼にの給ひ聞え給ふを、いづくのほどにやと思ひしを、今日此柳のかげにこそ立より侍つれ。<lb/><cit><quote><lg type="hokku"><l>田一枚植て立去る柳かな</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec10" n="10">
+        <head>白川の關　<date when="1689-06-07">元祿二年四月二十日</date></head>
+        <p>心許なき日かず重るまゝに、<placeName ref="#shirakawaseki">白川の關</placeName>にかゝりて旅心定りぬ。いかで<placeName ref="#kyoto">都</placeName>へと便求しも斷也。中にも此關は三關の一にして、風𮪚の人心をとゞむ。秋風を耳に殘し、紅葉を俤にして、青葉の梢猶あはれ也。卯の花の白妙に、茨の花の咲そひて、雪にもこゆる心地ぞする。古人冠を正し衣裝を改し事など、<persName ref="#kiyosuke">清輔</persName>の筆にもとゞめ置れしとぞ。<lb/><cit><quote><lg type="hokku"><l>卯の花をかざしに關の晴着かな</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit></p>
+      </div>
+      <div type="entry" xml:id="sec11" n="11">
+        <head>須賀川　<date when="1689-06-09">元祿二年四月二十二日</date></head>
+        <p>とかくして越行まゝに、<placeName ref="#abukuma">あぶくま川</placeName>を渡る。左に<placeName ref="#bandai">會津根</placeName>高く、右に<placeName ref="#iwaki">岩城</placeName>・<placeName ref="#soma">相馬</placeName>・<placeName ref="#miharu">三春</placeName>の庄、<placeName ref="#hitachi">常陸</placeName>・<placeName ref="#shimotsuke">下野</placeName>の地をさかひて山つらなる。<placeName ref="#kagenuma">かげ沼</placeName>と云所を行に、今日は空曇て物影うつらず。<lb/><placeName ref="#sukagawa">すか川</placeName>の驛に<persName ref="#tokyu">等窮</persName>といふものを尋て、四五日とゞめらる。先、<placeName ref="#shirakawaseki">白河の關</placeName>いかにこえつるやと問。長途のくるしみ身心つかれ、且は風景に魂うばゝれ懷旧に腸を斷て、はか／″＼しう思ひめぐらさず。<lb/><cit><quote><lg type="hokku"><l>風流の初やおくの田植うた</l></lg></quote></cit><lb/>無下にこえんもさすがにと語れば、脇・第三とつゞけて三卷となしぬ。<lb/>此宿の傍に、大きなる栗の木陰をたのみて、世をいとふ僧有。橡ひろふ太山もかくやと間に覺られて、ものに書付侍る。其詞、<lb/><cit><quote><lg type="hokku"><l>世の人の見付ぬ花や軒の栗</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec12" n="12">
+        <head>あさか沼　<date when="1689-06-17">元祿二年五月一日</date></head>
+        <p><persName ref="#tokyu">等窮</persName>が宅を出て五里斗、<placeName ref="#hiwada">檜皮の宿</placeName>を離れて<placeName ref="#asakayama">あさか山</placeName>有。路より近し。此あたり沼多し。かつみ刈比もやゝ近うなれば、いづれの草を花かつみとは云ぞと、人〻に尋侍れども、更知人なし。沼を尋、人にとひ、かつみ／＼と尋ありきて、日は山の端にかゝりぬ。<placeName ref="#nihonmatsu">二本松</placeName>より右にきれて、<placeName ref="#kurozuka">黒塚</placeName>の岩屋一見し、<placeName ref="#fukushima">福嶋</placeName>に宿る。</p>
+      </div>
+      <div type="entry" xml:id="sec13" n="13">
+        <head>しのぶの里　<date when="1689-06-18">元祿二年五月二日</date></head>
+        <p>あくればしのぶもぢ摺の石を尋て<placeName ref="#shinobu">忍ぶのさと</placeName>に行。遙山陰の小里に、石半土に埋てあり。里の童卩の來りて教ける。「昔は此山の上に侍しを、往來の人の麥草をあらして此石を試侍をにくみて、此谷につき落せば、石の面下ざまにふしたり」と云。さもあるべき事にや。<lb/><cit><quote><lg type="hokku"><l>早苗とる手もとや昔しのぶ摺</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec14" n="14">
+        <head>佐藤庄司の舊跡　<date when="1689-06-18">元祿二年五月二日</date></head>
+        <p><placeName ref="#tsukinowa">月の輪のわたし</placeName>を越て、<placeName ref="#senoue">瀬の上</placeName>と云宿に出づ。<persName ref="#satoshoji">佐藤庄司</persName>が旧跡は左の山際一里半斗に有。<placeName ref="#iizuka">飯塚の里</placeName><placeName ref="#sabano">鯖野</placeName>と聞て尋／＼行に、<placeName ref="#maruyama">丸山</placeName>と云に尋あたる。是<persName ref="#satoshoji">庄司</persName>が旧舘也、麓に大手の跡など人の教ゆるにまかせて泪を落し、又かたはらの古寺に一家の石碑を殘す。中にも二人の嫁がしるし先哀也。女なれどもかひ／″＼しき名の世に聞えつる物かなと袂をぬらしぬ。墜涙の石碑も遠きにあらず。寺に入て茶を乞へば、爰に<persName ref="#yoshitsune">義經</persName>の太刀<persName ref="#benkei">辨慶</persName>が笈をとゞめて什物とす、<lb/><cit><quote><lg type="hokku"><l>笈も太刀も五月にかざれ紙幟</l></lg></quote></cit><lb/><date when="1689-06-17">五月朔日</date>の事也。</p>
+      </div>
+      <div type="entry" xml:id="sec15" n="15">
+        <head>飯塚　<date when="1689-06-18">元祿二年五月二日</date></head>
+        <p>其夜<placeName ref="#iizuka">飯塚</placeName>にとまる。温泉あれば湯に入て宿をかるに、土坐に莚を敷てあやしき貧家也。灯もなければゐろりの火かげに寢所をまうけて臥す。夜に入て雷鳴雨しきりに降て臥る上よりもり、蚤蚊にせゝられて眠らず。持病さへおこりて消入斗になん。短夜の空もやう／＼明れば、又旅立ぬ。猶夜の余波心すゝまず、馬かりて<placeName ref="#koori">桑折</placeName>の驛に出る。遙なる行末をかゝえて、斯る病覺束なしといへど、羇旅邊土の行脚、捨身無常の觀念、道路にしなん、是天の命なりと氣力聊とり直し、路縱横に踏で<placeName ref="#dateokido">伊達の大木戸</placeName>をこす。</p>
+      </div>
+      <div type="entry" xml:id="sec16" n="16">
+        <head>笠嶋　<date when="1689-06-20">元祿二年五月四日</date></head>
+        <p><placeName ref="#abumizuri">鐙摺</placeName>・<placeName ref="#shiroishi">白石</placeName>の城を過、<placeName ref="#kasajima">笠嶋</placeName>の郡に入れば、<persName ref="#sanekata">藤中將實方</persName>の塚はいづくのほどならんと人にとへば、是より遙右に見ゆる山際の里を<placeName ref="#minowa">みのわ</placeName>・<placeName ref="#kasajima">笠嶋</placeName>と云、道祖神の社、かた見の薄今にありと教ゆ。此比の五月雨に道いとあしく身つかれ侍れば、よそながら眺やりて過るに、<placeName ref="#minowa">蓑輪</placeName>・<placeName ref="#kasajima">笠嶋</placeName>も五月雨の折にふれたりと、<lb/><cit><quote><lg type="hokku"><l><placeName ref="#kasajima">笠嶋</placeName>はいづこさ月のぬかり道</l></lg></quote></cit><lb/><placeName ref="#iwanuma">岩沼</placeName>に宿る。</p>
+      </div>
+      <div type="entry" xml:id="sec17" n="17">
+        <head>武隈　<date when="1689-06-20">元祿二年五月四日</date></head>
+        <p><placeName ref="#takekuma">武隈の松</placeName>にこそめ覺る心地はすれ。根は土際より二木にわかれて、昔の姿うしなはずとしらる。先<persName ref="#noin">能因法師</persName>思ひ出。往昔むつのかみにて下りし人、此木を伐て<placeName ref="#natorigawa">名取川</placeName>の橋杭にせられたる事などあればにや、松は此たび跡もなしとは詠たり。代〻あるは伐、あるひは植繼などせしと聞に、今將千歳のかたちとゝのほひて、めでたき松のけしきになん侍し。<lb/><cit><quote><lg type="hokku"><l>櫻より松は二木を三月越</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec18" n="18">
+        <head>宮城野　<date when="1689-06-21">元祿二年五月五日</date></head>
+        <p><placeName ref="#natorigawa">名取川</placeName>を渡て<placeName ref="#sendai">仙臺</placeName>に入。あやめふく日也。旅宿をもとめて四五日逗留す。爰に畫工<persName ref="#kaemon">加右衞門</persName>と云ものあり。聊心ある者と聞て知る人になる。この者、年比さだかならぬ名どころを考置侍ればとて、一日案内す。<placeName ref="#miyagino">宮城野</placeName>の萩茂りあひて秋の氣色思ひやらるゝ。<placeName ref="#tamada">玉田</placeName>・<placeName ref="#yokono">よこ野</placeName>、<placeName ref="#tsutsujigaoka">つゝじが岡</placeName>はあせび咲ころ也。日影ももらぬ松の林に入て、爰を<placeName ref="#konoshita">木の下</placeName>と云とぞ。昔もかく露ふかければこそ、みさぶらひみかさとはよみたれ。<placeName ref="#yakushido">藥師堂</placeName>・<placeName ref="#tenjin">天神の御社</placeName>など拜て、其日はくれぬ。猶、<placeName ref="#matsushima">松嶋</placeName>・<placeName ref="#shiogama">塩がま</placeName>の所〻畫に書て送る。且、紺の染緒つけたる草鞋二足餞す。さればこそ風流のしれもの、爰に至りて其實を顯す。<lb/><cit><quote><lg type="hokku"><l>あやめ草足に結ん草鞋の緒</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec19" n="19">
+        <head>壺の碑　<date when="1689-06-24">元祿二年五月八日</date></head>
+        <p>かの畫圖にまかせてたどり行ば、<placeName ref="#okuhosomichi">おくの細道</placeName>の山際に十苻の菅有。今も年々十苻の菅菰を調て國守に獻ずと云り。<lb/><placeName ref="#tsubonoishibumi">つぼの石ぶみ</placeName>は、高サ六尺餘、横三尺斗歟。苔を穿て文字幽也。四維國界之數里をしるす。「此城、<date when="0724">神龜元年</date>、按察使鎭守苻將軍<persName ref="#azumahito">大野朝臣東人</persName>之所里也。<date when="0762">天平宝字六年</date>、參議東海東山莭度使同將軍<persName ref="#asakari">惠美朝臣𤢥</persName>修造而十二月朔日」と有。<persName ref="#shomu">聖武皇帝</persName>の御時に當れり。むかしよりよみ置る哥枕、おほく語傳ふといへども、山崩川流て道あらたまり、石は埋て土にかくれ、木は老て若木にかはれば、時移り代變じて、其跡たしかならぬ事のみを、爰に至りて疑なき千歳の記念、今眼前に古人の心を閲す。行脚の一徳、存命の悦び、羇旅の勞をわすれて泪も落るばかり也。</p>
+      </div>
+      <div type="entry" xml:id="sec20" n="20">
+        <head>末の松山　<date when="1689-06-24">元祿二年五月八日</date></head>
+        <p>それより<placeName ref="#nodatamagawa">野田の玉川</placeName>・<placeName ref="#okinoishi">沖の石</placeName>を尋ぬ。<placeName ref="#suenomatsuyama">末の松山</placeName>は寺を造て<placeName ref="#suenomatsuyama">末松山</placeName>といふ。松のあひ／＼皆墓はらにて、はねをかはし枝をつらぬる契の末も、終はかくのごときと悲しさも増りて、<placeName ref="#shiogama">塩がまの浦</placeName>に入相のかねを聞。五月雨の空聊はれて、夕月夜幽に<placeName ref="#magakigashima">籬が嶋</placeName>もほど近し。蜑の小舟こぎつれて肴わかつ聲／″＼に、つなでかなしもとよみけん心もしられて、いとゞ哀也。其夜、目盲法師の琵琶をならして奧上るりと云ものをかたる。平家にもあらず舞にもあらず、ひなびたる調子うち上て、枕ちかうかしましけれど、さすがに邊土の遺風忘れざるものから殊勝に覺らる。</p>
+      </div>
+      <div type="entry" xml:id="sec21" n="21">
+        <head>鹽釜　<date when="1689-06-25">元祿二年五月九日</date></head>
+        <p>早朝<placeName ref="#shiogamajinja">塩がまの明神</placeName>に詣。國守再興せられて、宮柱ふとしく彩椽きらびやかに、石の階九仞に重り、朝日あけの玉がきをかゝやかす。かゝる道の果塵土の境まで、神靈あらたにましますこそ、吾國の風俗なれといと貴けれ。神前に古き宝燈有。かねの戸びらの面に「<date when="1187">文治三年</date><persName ref="#izumisaburo">和泉三郎</persName>奇進」と有。五百年來の俤、今目の前にうかびてそゞろに珍し。渠は勇義忠孝の士也。佳命今に至りてしたはずといふ事なし。誠人能道を勤、義を守べし。名もまた是にしたがふと云り。</p>
+      </div>
+      <div type="entry" xml:id="sec22" n="22">
+        <head>松嶋　<date when="1689-06-25">元祿二年五月九日</date></head>
+        <p>日既午にちかし。船をかりて<placeName ref="#matsushima">松嶋</placeName>にわたる。其間二里餘、<placeName ref="#ojima">雄嶋の磯</placeName>につく。<lb/>抑ことふりにたれど、<placeName ref="#matsushima">松嶋</placeName>は扶桑第一の好風にして、凡<placeName ref="#dotei">洞庭</placeName>・<placeName ref="#seiko">西湖</placeName>を恥ず。東南より海を入て、江の中三里、<placeName ref="#sekko">浙江</placeName>の潮をたゝふ。嶋／″＼の數を盡して、欹ものは天を指、ふすものは波に匍匐。あるは二重にかさなり三重に疊みて、左にわかれ右につらなる。負るあり抱るあり。兒孫愛すがごとし。松の緑こまやかに、枝葉汐風に吹たはめて、屈曲をのづからためたるがごとし。其氣色窅然として美人の顏を粧ふ。ちはや振神のむかし、<persName ref="#oyamazumi">大山ずみ</persName>のなせるわざにや。造化の天工、いづれの人か筆をふるひ詞を盡さむ。<lb/><placeName ref="#ojima">雄嶋が磯</placeName>は地つゞきて海に出たる嶋也。<persName ref="#ungo">雲居禪師</persName>の別室の跡、坐禪石など有。將、松の木陰に世をいとふ人も稀／＼見え侍りて、落穗・松笠など打けぶりたる草の庵閑に住なし、いかなる人とはしられずながら、先なつかしく立寄ほどに、月海にうつりて晝のながめ又あらたむ。江上に歸りて宿を求れば、窓をひらき二階を作て、風雲の中に旅寢するこそ、あやしきまで妙なる心地はせらるれ。<lb/><cit><quote><lg type="hokku"><l><placeName ref="#matsushima">松嶋</placeName>や靍に身をかれほとゝぎす</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit><lb/>予は口をとぢて眠らんとしていねられず。旧庵をわかるゝ時、<persName ref="#sodo">素堂</persName><placeName ref="#matsushima">松嶋</placeName>の詩あり。<persName ref="#anteki">原安適</persName><placeName ref="#matsugaurashima">松がうらしま</placeName>の和哥を贈らる。袋を解てこよひの友とす。且<persName ref="#sampu">杉風</persName>・<persName ref="#jokushi">濁子</persName>が發句あり。</p>
+      </div>
+      <div type="entry" xml:id="sec23" n="23">
+        <head>瑞巖寺　<date when="1689-06-27">元祿二年五月十一日</date></head>
+        <p><date when="1689-06-27">十一日</date>、<placeName ref="#zuiganji">瑞岩寺</placeName>に詣。當寺三十二世の昔、<persName ref="#heishiro">眞壁の平四郎</persName>出家して、入唐歸朝の後開山す。其後に<persName ref="#ungo">雲居禪師</persName>の徳化に依て、七堂甍改りて、金壁莊嚴光を輝、仏土成就の大伽監とはなれりける。彼<persName ref="#kenbutsu">見仏聖</persName>の寺はいづくにやとしたはる。</p>
+      </div>
+      <div type="entry" xml:id="sec24" n="24">
+        <head>平泉　<date when="1689-06-29">元祿二年五月十三日</date></head>
+        <p><date when="1689-06-28">十二日</date>、<placeName ref="#hiraizumi">平和泉</placeName>と心ざし、<placeName ref="#anewa">あねはの松</placeName>・<placeName ref="#odae">緒だえの橋</placeName>など聞傳て、人跡稀に雉兎蒭蕘の往かふ道そこともわかず、終に路ふみたがえて<placeName ref="#ishinomaki">石の卷</placeName>といふ湊に出。こがね花咲とよみて奉たる<placeName ref="#kinkasan">金花山</placeName>海上に見わたし、數百の𢌞船入江につどひ、人家地をあらそひて竈の煙立つゞけたり。思ひかけず斯る所にも來れる哉と、宿からんとすれど更に宿かす人なし。漸まどしき小家に一夜をあかして、明れば又しらぬ道まよひ行。<placeName ref="#sode">袖のわたり</placeName>・<placeName ref="#obuchi">尾ぶちの牧</placeName>・<placeName ref="#mano">まのゝ萱はら</placeName>などよそめにみて、遙なる堤を行。心細き<placeName ref="#naganuma">長沼</placeName>にそふて、<placeName ref="#toima">戸伊广</placeName>と云所に一宿して<placeName ref="#hiraizumi">平泉</placeName>に到る。其間廿余里ほどゝおぼゆ。<lb/>三代の榮耀一睡の中にして、大門の跡は一里こなたに有。<persName ref="#hidehira">秀衡</persName>が跡は田野に成て、<placeName ref="#kinkeizan">金鷄山</placeName>のみ形を殘す。先<placeName ref="#takadachi">高舘</placeName>にのぼれば、<placeName ref="#kitakami">北上川</placeName><placeName ref="#nanbu">南部</placeName>より流るゝ大河也。<placeName ref="#koromogawa">衣川</placeName>は<placeName ref="#izumigajo">和泉が城</placeName>をめぐりて、<placeName ref="#takadachi">高舘</placeName>の下にて大河に落入。<persName ref="#yasuhira">康衡</persName>等が旧跡は、<placeName ref="#koromogaseki">衣が關</placeName>を隔て<placeName ref="#nanbu">南部</placeName>口をさし堅め、夷をふせぐとみえたり。偖も義臣すぐつて此城にこもり、功名一時の叢となる。「國破れて山河あり、城春にして草青みたり」と笠打敷て時のうつるまで泪を落し侍りぬ。<lb/><cit><quote><lg type="hokku"><l>夏草や兵どもが夢の跡</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>卯の花に<persName ref="#kanefusa">兼房</persName>みゆる白毛かな</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit><lb/>兼て耳驚したる二堂開帳す。<placeName ref="#kyodo">經堂</placeName>は三將の像をのこし、<placeName ref="#konjikido">光堂</placeName>は三代の棺を納め、三尊の佛を安置す。七宝散うせて珠の扉風にやぶれ、金の柱霜雪に朽て、既頽廢空虚の叢と成べきを、四面新に圍て、甍を覆て風雨を凌。暫時千歳の記念とはなれり。<lb/><cit><quote><lg type="hokku"><l>五月雨の降のこしてや<placeName ref="#konjikido">光堂</placeName></l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec25" n="25">
+        <head>尿前の關　<date when="1689-07-01">元祿二年五月十五日</date></head>
+        <p>南卩道遙にみやりて、<placeName ref="#iwadeyama">岩手の里</placeName>に泊る。<placeName ref="#ogurosaki">小黒崎</placeName>・<placeName ref="#mizunokojima">みづの小嶋</placeName>を過て、<placeName ref="#naruko">なるごの湯</placeName>より<placeName ref="#shitomae">尿前の關</placeName>にかゝりて、<placeName ref="#dewa">出羽の國</placeName>に越んとす。此路旅人稀なる所なれば、關守にあやしめられて漸として關をこす。大山をのぼつて日既暮ければ、封人の家を見かけて舍を求む。三日風雨あれてよしなき山中に逗留す。<lb/><cit><quote><lg type="hokku"><l>蚤虱馬の尿する枕もと</l></lg></quote></cit><lb/>あるじの云、是より<placeName ref="#dewa">出羽の國</placeName>に大山を隔て、道さだかならざれば、道しるべの人を頼て越べきよしを申。さらばと云て人を頼侍れば、究竟の若者反脇指をよこたえ、樫の杖を携て我／＼が先に立て行。けふこそ必あやうきめにもあふべき日なれと、辛き思ひをなして後について行。あるじの云にたがはず、高山森〻として一鳥聲きかず、木の下闇茂りあひて夜る行がごとし。雲端につちふる心地して、篠の中踏分／＼水をわたり岩に蹶て、肌につめたき汗を流して<placeName ref="#mogamisho">最上の庄</placeName>に出づ。かの案内せしおのこの云やう、「此みち必不用の事有。恙なうをくりまいらせて仕合したり」と、よろこびてわかれぬ。跡に聞てさへ胸とゞろくのみ也。</p>
+      </div>
+      <div type="entry" xml:id="sec26" n="26">
+        <head>尾花澤　<date when="1689-07-03">元祿二年五月十七日</date></head>
+        <p><placeName ref="#obanazawa">尾花澤</placeName>にて<persName ref="#seifu">清風</persName>と云者を尋ぬ。かれは富るものなれども、志いやしからず。<placeName ref="#kyoto">都</placeName>にも折〻かよひて、さすがに旅の情をも知たれば、日比とゞめて長途のいたはりさま／″＼にもてなし侍る。<lb/><cit><quote><lg type="hokku"><l>凉しさを我宿にしてねまる也</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>這出よかひやが下のひきの聲</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>まゆはきを俤にして紅粉の花</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>蠶飼する人は古代のすがた哉</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit></p>
+      </div>
+      <div type="entry" xml:id="sec27" n="27">
+        <head>立石寺　<date when="1689-07-13">元祿二年五月二十七日</date></head>
+        <p><placeName ref="#yamagata">山形</placeName>領に<placeName ref="#risshakuji">立石寺</placeName>と云山寺あり。<persName ref="#jikaku">慈覺大師</persName>の開基にして、殊清閑の地也。一見すべきよし、人〻のすゝむるに依て、<placeName ref="#obanazawa">尾花澤</placeName>よりとつて返し、其間七里ばかり也。日いまだ暮ず。麓の坊に宿かり置て、山上の堂にのぼる。岩に巖を重て山とし、松柏年旧、土石老て苔滑に、岩上の院〻扉を閉て物の音きこえず。岸をめぐり岩を這て佛閣を拜し、佳景寂莫として心すみ行のみおぼゆ。<lb/><cit><quote><lg type="hokku"><l>閑さや岩にしみ入蝉の聲</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec28" n="28">
+        <head>最上川　<date when="1689-07-14">元祿二年五月二十八日</date></head>
+        <p><placeName ref="#mogamigawa">最上川</placeName>のらんと、<placeName ref="#oishida">大石田</placeName>と云所に日和を待。爰に古き誹諧の種こぼれて、忘れぬ花のむかしをしたひ、芦角一聲の心をやはらげ、此道にさぐりあしして新古ふた道にふみまよふといへども、みちしるべする人しなければと、わりなき一卷殘しぬ。このたびの風流爰に至れり。<lb/><placeName ref="#mogamigawa">最上川</placeName>は<placeName ref="#michinoku">みちのく</placeName>より出て、<placeName ref="#yamagata">山形</placeName>を水上とす。<placeName ref="#goten">ごてん</placeName>・<placeName ref="#hayabusa">はやぶさ</placeName>など云おそろしき難所有。<placeName ref="#itajikiyama">板敷山</placeName>の北を流て、果は<placeName ref="#sakata">酒田</placeName>の海に入。左右山覆ひ、茂みの中に船を下す。是に稻つみたるをやいな船といふならし。<placeName ref="#shiraito">白糸の瀧</placeName>は青葉の隙／＼に落て、<placeName ref="#sennindo">仙人堂</placeName>岸に臨て立。水みなぎつて舟あやうし。<lb/><cit><quote><lg type="hokku"><l>五月雨をあつめて早し<placeName ref="#mogamigawa">最上川</placeName></l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec29" n="29">
+        <head>羽黒　<date when="1689-07-19">元祿二年六月三日</date></head>
+        <p><date when="1689-07-19">六月三日</date>、<placeName ref="#haguro">羽黒山</placeName>に登る。<persName ref="#sakichi">圖司左吉</persName>と云者を尋て、別當代<persName ref="#egaku">會覺阿闍利</persName>に謁す。<placeName ref="#minamidani">南谷</placeName>の別院に舍して憐愍の情こまやかにあるじせらる。<lb/><date when="1689-07-20">四日</date>、本坊にをゐて誹諧興行。<lb/><cit><quote><lg type="hokku"><l>有難や雪をかほらす<placeName ref="#minamidani">南谷</placeName></l></lg></quote></cit><lb/><date when="1689-07-21">五日</date>、權現に詣。當山開闢<persName ref="#nojo">能除大師</persName>はいづれの代の人と云事をしらず。延喜式に<placeName ref="#haguro">羽州里山</placeName>の神社と有。書寫、黒の字を里山となせるにや。<placeName ref="#haguro">羽州黒山</placeName>を中略して<placeName ref="#haguro">羽黒山</placeName>と云にや。<placeName ref="#dewa">出羽</placeName>といへるは、鳥の毛羽を此國の貢に献ると風土記に侍とやらん。<placeName ref="#gassan">月山</placeName>・<placeName ref="#yudono">湯殿</placeName>を合て三山とす。當寺<placeName ref="#kaneiji">武江東叡</placeName>に屬して、天台止觀の月明らかに、圓頓融通の法の灯かゝげそひて、僧坊棟をならべ、修驗行法を勵し、灵山靈地の驗效、人貴且恐る。繁榮長にしてめで度御山と謂つべし。<lb/><date when="1689-07-24">八日</date>、<placeName ref="#gassan">月山</placeName>にのぼる。木綿しめ身に引かけ、寶冠に頭を包、強力と云ものに道びかれて、雲霧山氣の中に氷雪を踏でのぼる事八里、更に日月行道の雲關に入かとあやしまれ、息絶身こゞえて頂上に臻れば日沒て月顯る。笹を舖、篠を枕として、臥て明るを待。日出て雲消れば<placeName ref="#yudono">湯殿</placeName>に下る。<lb/>谷の傍に鍛冶小屋と云有。此國の鍛冶、靈水を撰て爰に潔齋して𨥁を打、終月山と銘を切て世に賞せらる。彼<placeName ref="#ryusen">龍泉</placeName>に釗を淬とかや。<persName ref="#kansho">干將</persName>・<persName ref="#bakuya">莫耶</persName>のむかしをしたふ。道に勘能の執あさからぬ事しられたり。岩に腰かけてしばしやすらふほど、三尺ばかりなる櫻のつぼみ半ばひらけるあり。ふり積雪の下に埋て春を忘れぬ遲ざくらの花の心わりなし。炎天の梅花爰にかほるがごとし。<persName ref="#gyoson">行尊僧正</persName>の哥の哀も爰に思ひ出て、猶まさりて覺ゆ。惣而此山中の微細、行者の法式として他言する事を禁ず。仍て筆をとゞめて記さず。坊に歸れば、<persName ref="#egaku">阿闍𮤠</persName>の需に依て、三山順礼の句〻短册に書。<lb/><cit><quote><lg type="hokku"><l>凉しさやほの三か月の<placeName ref="#haguro">羽黒山</placeName></l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>雲の峰幾つ崩て<placeName ref="#gassan">月の山</placeName></l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>語られぬ<placeName ref="#yudono">湯殿</placeName>にぬらす袂かな</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l><placeName ref="#yudono">湯殿山</placeName>錢ふむ道の泪かな</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit></p>
+      </div>
+      <div type="entry" xml:id="sec30" n="30">
+        <head>酒田　<date when="1689-07-29">元祿二年六月十三日</date></head>
+        <p><placeName ref="#haguro">羽黒</placeName>を立て<placeName ref="#tsuruoka">鶴が岡</placeName>の城下、<persName ref="#shigeyuki">長山氏重行</persName>と云物のふの家にむかへられて、誹諧一卷有。<persName ref="#sakichi">左吉</persName>も共に送りぬ。川舟に乘て<placeName ref="#sakata">酒田</placeName>の湊に下る。<persName ref="#fugyoku">淵庵不玉</persName>と云醫師の許を宿とす。<lb/><cit><quote><lg type="hokku"><l><placeName ref="#atsumiyama">あつみ山</placeName>や<placeName ref="#fukura">吹浦</placeName>かけて夕すゞみ</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>暑き日を海にいれたり<placeName ref="#mogamigawa">最上川</placeName></l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec31" n="31">
+        <head>象㵼　<date when="1689-08-01">元祿二年六月十六日</date></head>
+        <p>江山水陸の風光數を盡して、今<placeName ref="#kisakata">象㵼</placeName>に方寸を責。<placeName ref="#sakata">酒田</placeName>の湊より東北の方、山を越磯を傳ひ、いさごをふみて其際十里、日影やゝかたぶく比、汐風眞砂を吹上、雨朦朧として<placeName ref="#chokai">鳥海</placeName>の山かくる。闇中に莫作して、雨も又奇也とせば、雨後の晴色又頼母敷と、蜑の笘屋に膝をいれて雨の晴を待。<lb/>其朝、天能霽て朝日花やかにさし出る程に、<placeName ref="#kisakata">象㵼</placeName>に舟をうかぶ。先<placeName ref="#noinjima">能因嶌</placeName>に舟をよせて、三年幽居の跡をとぶらひ、むかふの岸に舟をあがれば、花の上こぐとよまれし櫻の老木、<persName ref="#saigyo">西行法師</persName>の記念をのこす。江上に御陵あり、<persName ref="#jingu">神功后宮</persName>の御墓と云。寺を<placeName ref="#kanmanju">干滿珠寺</placeName>と云。此處に行幸ありし事いまだ聞ず。いかなる事にや。此寺の方丈に座して簾を捲ば、風景一眼の中に盡て、南に<placeName ref="#chokai">鳥海</placeName>天をさゝえ、其陰うつりて江にあり。西は<placeName ref="#uyamuya">むや／＼の關</placeName>路をかぎり、東に堤を築て<placeName ref="#akita">秋田</placeName>にかよふ道遙に、海北にかまえて浪打入る所を<placeName ref="#shiogoshi">汐ごし</placeName>と云。江の縱横一里ばかり、俤<placeName ref="#matsushima">松嶋</placeName>にかよひて又異なり。<placeName ref="#matsushima">松嶋</placeName>は笑ふが如く、<placeName ref="#kisakata">象㵼</placeName>はうらむがごとし。寂しさに悲しみをくはえて、地勢魂をなやますに似たり。<lb/><cit><quote><lg type="hokku"><l><placeName ref="#kisakata">象㵼</placeName>や雨に<persName ref="#seishi">西施</persName>がねぶの花</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l><placeName ref="#shiogoshi">汐越</placeName>や鶴はぎぬれて海凉し</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><head>祭禮</head><l><placeName ref="#kisakata">象㵼</placeName>や料理何くふ神祭</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit><lb/><cit><quote><lg type="hokku"><l>蜑の家や戸板を敷て夕凉</l></lg></quote><bibl><persName ref="#teiji">低耳</persName></bibl></cit><lb/><cit><quote><lg type="hokku"><head>岩上に睢鳩の巣をみる</head><l>波こえぬ契ありてやみさごの巣</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit></p>
+      </div>
+      <div type="entry" xml:id="sec32" n="32">
+        <head>越後路　<date when="1689-08-18">元祿二年七月四日</date></head>
+        <p><placeName ref="#sakata">酒田</placeName>の余波日を重て、北陸道の雲に望。遙〻のおもひ胸をいたましめて、<placeName ref="#kanazawa">加賀の府</placeName>まで百卅里と聞、<placeName ref="#nezu">鼠の關</placeName>をこゆれば<placeName ref="#echigo">越後</placeName>の地に歩行を改て、<placeName ref="#etchu">越中の國</placeName><placeName ref="#ichiburi">一ぶりの關</placeName>に到る。此間九日、暑濕の勞に神をなやまし、病おこりて事をしるさず。<lb/><cit><quote><lg type="hokku"><l><date when="1689-08">文月</date>や六日も常の夜には似ず</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>荒海や<placeName ref="#sado">佐渡</placeName>によこたふ天河</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec33" n="33">
+        <head>市振　<date when="1689-08-26">元祿二年七月十二日</date></head>
+        <p>今日は<placeName ref="#oyashirazu">親しらず</placeName>・<placeName ref="#oyashirazu">子しらず</placeName>・<placeName ref="#oyashirazu">犬もどり</placeName>・<placeName ref="#oyashirazu">駒返し</placeName>など云北國一の難所を越てつかれ侍れば、枕引よせて寢たるに、一間隔て面の方に、若き女の聲二人斗ときこゆ。年老たるおのこの聲も交て物語するをきけば、<placeName ref="#echigo">越後の國</placeName><placeName ref="#niigata">新潟</placeName>と云所の遊女成し。<placeName ref="#ise">伊勢</placeName>參宮するとて、此關までおのこ送りてあすは古郷にかへす文したゝめて、はかなき言傳などしやる也。白浪のよする汀に身をはふらかし、あまのこの世をあさましう下りて、定めなき契、日〻の業因いかにつたなしと、物云をきく／＼寢入て、あした旅立に、我／＼にむかひて、「行衞しらぬ旅路のうさ、あまり覺束なう悲しく侍れば、見えがくれにも御跡をしたひ侍ん、衣の上の御情に大慈のめぐみをたれて結縁せさせ給へ」と泪を落す。「不便の事には侍れども、我／＼は所〻にてとゞまる方おほし。只人の行にまかせて行べし。神明の加護かならず恙なかるべし」と云捨て出つゝ、哀さしばらくやまざりけらし。<lb/><cit><quote><lg type="hokku"><l>一家に遊女もねたり萩と月</l></lg></quote></cit><lb/><persName ref="#sora">曾良</persName>にかたれば書とゞめ侍る。</p>
+      </div>
+      <div type="entry" xml:id="sec34" n="34">
+        <head>加賀の國　<date when="1689-08-28">元祿二年七月十四日</date></head>
+        <p><placeName ref="#kurobe">くろべ四十八か瀬</placeName>とかや、數しらぬ川をわたりて<placeName ref="#nago">那古</placeName>と云浦に出。<placeName ref="#tako">擔籠の藤浪</placeName>は春ならずとも、初秋の哀とふべきものをと人に尋れば、「是より五里いそ傳ひしてむかふの山陰にいり、蜑の苫ぶきかすかなれば蘆の一夜の宿かすものあるまじ」といひをどされて、<placeName ref="#kaga">かゞの國</placeName>に入。<lb/><cit><quote><lg type="hokku"><l>わせの香や分入右は<placeName ref="#ariso">有磯海</placeName></l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec35" n="35">
+        <head>金澤　<date when="1689-08-29">元祿二年七月十五日</date></head>
+        <p><placeName ref="#unohanayama">卯の花山</placeName>・<placeName ref="#kurikara">くりからが谷</placeName>をこえて、<placeName ref="#kanazawa">金澤</placeName>は<date when="1689-08-29">七月中の五日</date>也。爰に<placeName ref="#osaka">大坂</placeName>よりかよふ商人<persName ref="#kasho">何處</persName>と云者有。それが旅宿をともにす。<lb/><persName ref="#issho">一笑</persName>と云ものは、此道にすける名のほの／″＼聞えて、世に知人も侍しに、去年の冬早世したりとて、其兄追善を催すに、<lb/><cit><quote><lg type="hokku"><l>塚も動け我泣聲は秋の風</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><head>ある草庵にいざなはれて</head><l>秋凉し手毎にむけや瓜茄子</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><head>途中唫</head><l>あか／＼と日は難面もあきの風</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><head><placeName ref="#komatsu">小松</placeName>と云所にて</head><l>しほらしき名や<placeName ref="#komatsu">小松</placeName>吹萩すゝき</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec36" n="36">
+        <head>太田神社　<date when="1689-09-08">元祿二年七月二十五日</date></head>
+        <p>此所<placeName ref="#tadajinja">太田の神社</placeName>に詣。<persName ref="#sanemori">眞盛</persName>が甲・錦の切あり。往昔、源氏に屬せし時<persName ref="#yoshitomo">義朝公</persName>より給はらせ給とかや。げにも平士のものにあらず。目庇より吹返しまで、菊から草のほりもの金をちりばめ、龍頭に鍬形打たり。<persName ref="#sanemori">眞盛</persName>討死の後、<persName ref="#yoshinaka">木曾義仲</persName>願状にそへて此社にこめられ侍よし、<persName ref="#higuchi">樋口の次郎</persName>が使せし事共、まのあたり縁紀にみえたり。<lb/><cit><quote><lg type="hokku"><l>むざんやな甲の下のきり／″＼す</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec37" n="37">
+        <head>那谷　<date when="1689-09-10">元祿二年七月二十七日</date></head>
+        <p><placeName ref="#yamanaka">山中の温泉</placeName>に行ほど、<placeName ref="#hakusan">白根が嶽</placeName>跡にみなしてあゆむ。左の山際に觀音堂あり。<persName ref="#kazan">花山の法皇</persName>三十三所の順禮とげさせ給ひて後、大慈大悲の像を安置し給ひて、<placeName ref="#nata">那谷</placeName>と名付給ふと也。<placeName ref="#nachi">那智</placeName><placeName ref="#tanigumi">谷組</placeName>の二字をわかち侍しとぞ。奇石さま／″＼に古松植ならべて、萱ぶきの小堂岩の上に造りかけて殊勝の土地也。<lb/><cit><quote><lg type="hokku"><l>石山の石より白し秋の風</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec38" n="38">
+        <head>山中　<date when="1689-09-10">元祿二年七月二十七日</date></head>
+        <p>温泉に浴す。其功有明に次と云。<lb/><cit><quote><lg type="hokku"><l><placeName ref="#yamanaka">山中</placeName>や菊はたおらぬ湯の匂</l></lg></quote></cit><lb/>あるじとする物は<persName ref="#kumenosuke">久米之助</persName>とていまだ小童也。かれが父誹諧を好み、<placeName ref="#kyoto">洛</placeName>の<persName ref="#teishitsu">貞室</persName>若輩のむかし爰に來りし比、風雅に辱しめられて<placeName ref="#kyoto">洛</placeName>に歸て<persName ref="#teitoku">貞徳</persName>の門人となつて世にしらる。功名の後、此一村判詞の料を請ずと云。今更むかし語とはなりぬ。<lb/><persName ref="#sora">曾良</persName>は腹を病て、<placeName ref="#nagashima">伊勢の國長嶋</placeName>と云所にゆかりあれば、先立て行に、<lb/><cit><quote><lg type="hokku"><l>行／＼てたふれ伏とも萩の原</l></lg></quote><bibl><persName ref="#sora">曾良</persName></bibl></cit><lb/>と書置たり。行ものゝ悲しみ、殘ものゝうらみ、隻鳧のわかれて雲にまよふがごとし。予も又、<lb/><cit><quote><lg type="hokku"><l>今日よりや書付消さん笠の露</l></lg></quote></cit></p>
+      </div>
+      <div type="entry" xml:id="sec39" n="39">
+        <head>全昌寺　<date when="1689-09-19">元祿二年八月六日（推定）</date></head>
+        <p><placeName ref="#daishoji">大聖持</placeName>の城外、<placeName ref="#zenshoji">全昌寺</placeName>といふ寺にとまる。猶<placeName ref="#kaga">加賀</placeName>の地也。<persName ref="#sora">曾良</persName>も前の夜、此寺に泊て、<lb/><cit><quote><lg type="hokku"><l>終宵秋風聞やうらの山</l></lg></quote></cit><lb/>と殘す。一夜の隔千里に同じ。吾も秋風を聞て衆寮に臥ば、明ぼのゝ空近う讀經聲すむまゝに、鐘板鳴て食堂に入。けふは<placeName ref="#echizen">越前の國</placeName>へと心早卒にして堂下に下るを、若き僧ども紙硯をかゝえ、階のもとまで追來る。折節庭中の柳散れば、<lb/><cit><quote><lg type="hokku"><l>庭掃て出ばや寺に散柳</l></lg></quote></cit><lb/>とりあへぬさまして草鞋ながら書捨つ。</p>
+      </div>
+      <div type="entry" xml:id="sec40" n="40">
+        <head>汐越の松・天龍寺・永平寺　<date when="1689-09-21">元祿二年八月八日（推定）</date></head>
+        <p><placeName ref="#echizen">越前</placeName>の境、<placeName ref="#yoshizaki">吉崎</placeName>の入江を舟に棹して<placeName ref="#shiogoshimatsu">汐越の松</placeName>を尋ぬ。<lb/><cit><quote><lg type="waka"><l>終宵嵐に波をはこばせて</l><l>月をたれたる<placeName ref="#shiogoshimatsu">汐越の松</placeName></l></lg></quote><bibl><persName ref="#saigyo">西行</persName></bibl></cit><lb/>此一首にて數景盡たり。もし一辨を加るものは無用の指を立るがごとし。<lb/><placeName ref="#tenryuji">丸岡天龍寺</placeName>の長老、古き因あれば尋ぬ。又<placeName ref="#kanazawa">金澤</placeName>の<persName ref="#hokushi">北枝</persName>といふもの、かりそめに見送りて此處までしたひ來る。所〻の風景過さず思ひつゞけて、折節あはれなる作意など聞ゆ。今既別に望みて、<lb/><cit><quote><lg type="hokku"><l>物書て扇引さく餘波哉</l></lg></quote></cit><lb/>五十丁山に入て<placeName ref="#eiheiji">永平寺</placeName>を礼す。<persName ref="#dogen">道元禪師</persName>の御寺也。邦機千里を避て、かゝる山陰に跡をのこし給ふも、貴きゆへ有とかや。</p>
+      </div>
+      <div type="entry" xml:id="sec41" n="41">
+        <head>福井　<date when="1689-09-23">元祿二年八月十日（推定）</date></head>
+        <p><placeName ref="#fukui">福井</placeName>は三里計なれば、夕飯したゝめて出るに、たそかれの路たど／＼し。爰に<persName ref="#tosai">等栽</persName>と云古き隱士有。いづれの年にか<placeName ref="#edo">江戸</placeName>に來りて予を尋。遙十とせ餘り也。いかに老さらぼひて有にや、將死けるにやと人に尋侍れば、いまだ存命してそこ／＼と教ゆ。市中ひそかに引入て、あやしの小家に夕㒵・へちまのはえかゝりて、鷄頭はゝ木ゞに戸ぼそをかくす。さては此うちにこそと門を扣ば侘しげなる女の出て、「いづくよりわたり給ふ道心の御坊にや。あるじは此あたり何がしと云ものゝ方に行ぬ。もし用あらば尋給へ」といふ。かれが妻なるべしとしらる。むかし物がたりにこそかゝる風情は侍れと、やがて尋あひて、その家に二夜とまりて、名月は<placeName ref="#tsuruga">つるが</placeName>のみなとにとたび立。<persName ref="#tosai">等栽</persName>も共に送らんと、裾おかしうからげて路の枝折とうかれ立。</p>
+      </div>
+      <div type="entry" xml:id="sec42" n="42">
+        <head>敦賀　<date when="1689-09-27">元祿二年八月十四日</date></head>
+        <p>漸、<placeName ref="#hakusan">白根が嶽</placeName>かくれて<placeName ref="#hinagatake">比那が嵩</placeName>あらはる。<placeName ref="#asamuzu">あさむづ</placeName>の橋をわたりて、<placeName ref="#tamae">玉江</placeName>の蘆は穗に出にけり。<placeName ref="#uguisu">鶯の關</placeName>を過て<placeName ref="#yunoo">湯尾峠</placeName>を越れば、<placeName ref="#hiuchi">燧が城</placeName>、<placeName ref="#kaeruyama">かへるやま</placeName>に初鴈を聞て、<date when="1689-09-27">十四日</date>の夕ぐれ<placeName ref="#tsuruga">つるが</placeName>の津に宿をもとむ。その夜、月殊晴たり。「あすの夜もかくあるべきにや」といへば、「越路の習ひ、猶明夜の陰晴はかりがたし」と。あるじに酒すゝめられて、<placeName ref="#kehi">けいの明神</placeName>に夜參す。<persName ref="#chuai">仲哀天皇</persName>の御廟也。社頭神さびて、松の木の間に月のもり入たる、おまへの白砂霜を敷るがごとし。往昔、<persName ref="#yugyo">遊行二世の上人</persName>大願發起の事ありて、みづから草を刈、土石を荷ひ泥渟をかはかせて參詣往來の煩なし。古例今にたえず、神前に眞砂を荷ひ給ふ。「これを<persName ref="#yugyo">遊行</persName>の砂持と申侍る」と亭主のかたりける。<lb/><cit><quote><lg type="hokku"><l>月清し<persName ref="#yugyo">遊行</persName>のもてる砂の上</l></lg></quote></cit><lb/><date when="1689-09-28">十五日</date>、亭主の詞にたがはず雨降。<lb/><cit><quote><lg type="hokku"><l>名月や北國日和定なき</l></lg></quote></cit><lb/><date when="1689-09-29">十六日</date>、空霽たれば、ますほの小貝ひろはんと<placeName ref="#ironohama">種の濱</placeName>に舟を走す。海上七里あり。<persName ref="#amaya">天屋何某</persName>と云もの、破籠・小竹筒などこまやかにしたゝめさせ、僕あまた舟にとりのせて、追風時のまに吹着ぬ。濱はわづかなる海士の小家にて、侘しき法花寺あり。爰に茶を飮酒をあたゝめて、夕ぐれのさびしさ感に堪たり。<lb/><cit><quote><lg type="hokku"><l>寂しさや<placeName ref="#suma">須广</placeName>にかちたる濱の秋</l></lg></quote></cit><lb/><cit><quote><lg type="hokku"><l>浪の間や小貝にまじる萩の塵</l></lg></quote></cit><lb/>其日のあらまし<persName ref="#tosai">等栽</persName>に筆をとらせて寺に殘す。</p>
+      </div>
+      <div type="entry" xml:id="sec43" n="43">
+        <head>大垣　<date when="1689-10-04">元祿二年八月二十一日（推定）</date></head>
+        <p><persName ref="#rotsu">露通</persName>も此みなとまで出むかひて、<placeName ref="#mino">みのゝ國</placeName>へと伴ふ。駒にたすけられて<placeName ref="#ogaki">大垣</placeName>の庄に入ば、<persName ref="#sora">曾良</persName>も<placeName ref="#ise">伊勢</placeName>より來り合、<persName ref="#etsujin">越人</persName>も馬をとばせて<persName ref="#joko">如行</persName>が家に入集る。<persName ref="#zensen">前川子</persName>・<persName ref="#keiko">荊口</persName>父子、其外したしき人〻日夜とぶらひて、蘇生のものにあふがごとく、且悦び且いたはる。旅の物うさもいまだやまざるに、<date when="1689-10-18">長月六日</date>になれば、<placeName ref="#ise">伊勢</placeName>の迁宮おがまんと、又舟にのりて、<lb/><cit><quote><lg type="hokku"><l>蛤の<placeName ref="#futami">ふたみ</placeName>にわかれ行秋ぞ</l></lg></quote></cit></p>
+      </div>
+      <div type="postscript" xml:id="sec44" n="44">
+        <head>跋</head>
+        <p>からびたるも、艶なるも、たくましきも、はかなげなるも、おくの細みちみもて行に、おぼえずたちて手たゝき、伏て村肝を刻む。一般は簑をきる／＼かゝる旅せまほしと思立、一たびは坐してまのあたり奇景をあまんず。かくて百般の情に鮫人が玉を翰にしめしたり。旅なる哉、器なるかな。只なげかしきは、かうやうの人のいとかよはげにて眉の霜のをきそふぞ。</p>
+        <closer><date when="1694-05">元祿七年初夏</date>　<signed><persName ref="#soryu">素龍</persName>書</signed></closer>
+      </div>
+    </body>
+  </text>
+</TEI>
