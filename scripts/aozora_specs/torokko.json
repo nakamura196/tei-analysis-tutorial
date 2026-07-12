@@ -1,0 +1,27 @@
+{
+  "slug": "torokko",
+  "url": "https://www.aozora.gr.jp/cards/000879/files/43016_16836.html",
+  "card": "https://www.aozora.gr.jp/cards/000879/card43016.html",
+  "title": "トロッコ",
+  "author": "芥川龍之介",
+  "fixes": {},
+  "persons": {
+    "ryohei": ["良平", "主人公。八歳で軽便鉄道の工事場に通い、二十六歳で上京して雑誌社の校正係となる"]
+  },
+  "places": {
+    "odawara": ["小田原", 35.2646, 139.1522, "神奈川県小田原市・概値"],
+    "atami": ["熱海", 35.0961, 139.0716, "静岡県熱海市・概値"],
+    "iwamura": ["岩村", 35.1633, 139.1350, "旧足柄下郡岩村。現在の神奈川県真鶴町岩付近・概値"],
+    "higanesan": ["日金山", 35.1044, 139.0219, "熱海市と函南町の境の山(十国峠)・概値"],
+    "tokyo": ["東京", 35.6812, 139.7671, "概値"]
+  },
+  "tags": [
+    ["pers", "良平", "ryohei"],
+    ["place", "小田原", "odawara"],
+    ["place", "熱海", "atami"],
+    ["place", "岩村", "iwamura"],
+    ["place", "日金山", "higanesan"],
+    ["place", "東京", "tokyo"],
+    ["date", "二月の初旬", "--02"]
+  ]
+}

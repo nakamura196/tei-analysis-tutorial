@@ -11,11 +11,14 @@ TEI P5 文書を data/aozora/<slug>.xml に生成する。
 - 固有表現は作品ごとの対応表(表層形 → 台帳 ID)による辞書マッチ。
   重なりは長い表層形を優先し、除外文脈(skip)で誤マッチを防ぐ
 
+作成方針・固有表現の基準・検証手順は docs/aozora-tei-guidelines.md を参照。
+
 使い方:
     python3 scripts/build_aozora_tei.py [slug ...]
     (slug 省略時は全作品。data/aozora/ に出力)
 """
 
+import json
 import re
 import sys
 import urllib.request
@@ -357,6 +360,33 @@ WORKS = {
     },
 }
 
+# 追加作品は scripts/aozora_specs/<slug>.json でも登録できる(WORKS と同スキーマ。
+# persons/places の値は配列、tags は [種別, 表層形, 参照] の配列)。
+SPEC_DIR = Path(__file__).resolve().parent / "aozora_specs"
+
+
+def load_json_specs():
+    if not SPEC_DIR.is_dir():
+        return
+    for f in sorted(SPEC_DIR.glob("*.json")):
+        spec = json.loads(f.read_text(encoding="utf-8"))
+        slug = spec["slug"]
+        entry = {
+            "url": spec["url"],
+            "card": spec["card"],
+            "title": spec["title"],
+            "author": spec["author"],
+            "persons": {k: (v[0], v[1] if len(v) > 1 else None)
+                        for k, v in spec.get("persons", {}).items()},
+            "places": {k: (v[0], v[1], v[2], v[3] if len(v) > 3 else None)
+                       for k, v in spec.get("places", {}).items()},
+            "tags": [tuple(t) for t in spec.get("tags", [])],
+        }
+        if spec.get("fixes"):
+            entry["fixes"] = spec["fixes"]
+        WORKS[slug] = entry
+
+
 # ---------------------------------------------------------------------------
 # タグ付け(build_okunohosomichi_tei.py と同方式)
 # ---------------------------------------------------------------------------
@@ -520,6 +550,7 @@ def build_work(slug):
 
 
 def main():
+    load_json_specs()
     slugs = sys.argv[1:] or list(WORKS)
     for slug in slugs:
         build_work(slug)

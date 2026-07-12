@@ -1,0 +1,33 @@
+{
+  "slug": "gongitsune",
+  "url": "https://www.aozora.gr.jp/cards/000121/files/628_14895.html",
+  "card": "https://www.aozora.gr.jp/cards/000121/card628.html",
+  "title": "ごん狐",
+  "author": "新美南吉",
+  "fixes": {},
+  "persons": {
+    "gon": ["ごん", "一人ぼっちの小狐。主人公。「ごん狐」とも"],
+    "hyoju": ["兵十", "おっ母と二人暮らしだった貧しい百姓。ごんを撃つ"],
+    "kasuke": ["加助", "兵十の話し相手のお百姓。栗を「神さまのしわざ」と言う"],
+    "mohei": ["茂平", "語り手が小さいときに話を聞かせてくれた村のおじいさん"],
+    "yasuke": ["弥助", "お百姓。家内がおはぐろをつけていた"],
+    "shinbee": ["新兵衛", "鍛冶屋。家内が髪をすいていた"],
+    "kichibee": ["吉兵衛", "お百姓。家でおねんぶつの寄り合いが開かれる"],
+    "nakayama-sama": ["中山さま", "中山の小さなお城のおとのさま。伝承では城主中山氏とされる"]
+  },
+  "places": {
+    "nakayama": ["中山", 34.9092, 136.911, "伝承地・概値。愛知県半田市岩滑の新美南吉記念館「童話の森」付近に中山城跡が比定される"]
+  },
+  "tags": [
+    ["pers", "ごん狐", "gon"],
+    ["pers", "ごん", "gon"],
+    ["pers", "兵十", "hyoju"],
+    ["pers", "加助", "kasuke"],
+    ["pers", "茂平", "mohei"],
+    ["pers", "弥助", "yasuke"],
+    ["pers", "新兵衛", "shinbee"],
+    ["pers", "吉兵衛", "kichibee"],
+    ["pers", "中山さま", "nakayama-sama"],
+    ["place", "中山", "nakayama"]
+  ]
+}

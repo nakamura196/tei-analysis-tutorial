@@ -23,7 +23,7 @@
 https://raw.githubusercontent.com/nakamura196/tei-analysis-tutorial/main/data/okunohosomichi.xml
 ```
 
-- `data/aozora/` — 青空文庫の有名作品の教材用 TEI(同じ方式の固有表現アノテーション付き)。`scripts/build_aozora_tei.py` で生成
+- `data/aozora/` — 青空文庫の有名作品の教材用 TEI(同じ方式の固有表現アノテーション付き)。`scripts/build_aozora_tei.py` で生成。**作成方針・品質基準は [docs/aozora-tei-guidelines.md](docs/aozora-tei-guidelines.md) を参照**(作品追加は `scripts/aozora_specs/<slug>.json` を足すだけ)
   - `melos.xml` 太宰治『走れメロス』 / `rashomon.xml` 芥川龍之介『羅生門』 / `kumonoito.xml` 芥川龍之介『蜘蛛の糸』 / `toshishun.xml` 芥川龍之介『杜子春』 / `sangetsuki.xml` 中島敦『山月記』 / `maihime.xml` 森鴎外『舞姫』 / `takasebune.xml` 森鴎外『高瀬舟』
   - 登場人物は standOff の人物台帳に @ref で紐づき、地名は座標つき地名台帳に紐づく(『舞姫』はベルリンの街路レベル、『山月記』は中国の地名。『蜘蛛の糸』の極楽・地獄のような架空の場所は座標なし)
   - 『羅生門』は登場人物が全員無名(下人・老婆)のため persName が 0 件 — 「固有表現が無い」ことも分析結果になる例
