@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>空を飛ぶパラソル</title>
+        <author>夢野久作</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>空を飛ぶパラソル</title><author>夢野久作</author>
+          <note>青空文庫。底本：「夢野久作全集4」ちくま文庫、筑摩書房。1992（平成4）年9月24日第1刷発行。底本の親本：「冗談に殺す」春陽堂。1933（昭和8）年5月15日発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000096/card1088.html">https://www.aozora.gr.jp/cards/000096/card1088.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="yoshiko">
+        <persName>時枝ヨシ子</persName>
+        <note>佐賀県神野村の富豪・時枝茂左衛門の第五女(二〇)。家出して九大眼科の看護婦となり、早川と関係して姙娠。筥崎駅附近で轢死する。本文の「時枝ヨシ子」「早川ヨシ子」(名刺)「ヨシ子」を @ref で統合</note>
+      </person>
+      <person xml:id="hayakawa">
+        <persName>早川</persName>
+        <note>九大医学部・寺山内科の医学士(三〇)。記者仲間に知られた色魔。ヨシ子と大浜の下宿に同棲していたが、轢死後は関係を否認する</note>
+      </person>
+      <person xml:id="aneha">
+        <persName>姉歯</persName>
+        <note>産婆学校長の医学士。早川をそそのかして女を姙娠させ、相手の親から手切金と堕胎料を二重に取る「黒幕」。本文では「姉歯なにがし」「姉歯某」「姉歯医学士」とも</note>
+      </person>
+      <person xml:id="otsuka">
+        <persName>大塚</persName>
+        <note>筥崎署の警部。「私」とは飲み仲間で、事件の裏側を明かしつつ「私」に手証集めを持ちかける。本文では一貫して「大塚警部」</note>
+      </person>
+      <person xml:id="terayama">
+        <persName>寺山</persName>
+        <note>九大医学部の内科部長(博士)。早川が属する「寺山内科」の主任で、新聞社へ記事の打ち消しに来る</note>
+      </person>
+      <person xml:id="ushio">
+        <persName>潮</persName>
+        <note>九大医学部眼科の教授。寺山博士が代理として時枝ヨシ子の在職について釈明する</note>
+      </person>
+      <person xml:id="tokieda-mozaemon">
+        <persName>時枝茂左衛門</persName>
+        <note>佐賀県神野村の富豪・多額納税者。ヨシ子の父。屍体を「うちの娘では御座らぬ」と否認する。本文では姓のみで「時枝のおやじ」「時枝のオヤジ」「時枝の娘」「佐賀の時枝」とも呼ばれ、これらの「時枝」を @ref で統合</note>
+      </person>
+      <person xml:id="yanagawa-yoshie">
+        <persName>柳川ヨシエ</persName>
+        <note>質札の名宛・写真の受取人に使われた名。早川は「別れた別の女」だと主張し、女の身元を宙吊りにする。実在の別人か、ヨシ子の偽名かは作中で決着しない</note>
+      </person>
+      <person xml:id="keigo">
+        <persName>花房敬吾</persName>
+        <note>福岡の電燈会社の工夫。妻ツヤ子と死産の男児の墓に鯉幟を立て、貯金を引き出して失踪。「私」の記事を読んで自殺する。本文の「花房敬吾」「敬吾」を @ref で統合</note>
+      </person>
+      <person xml:id="tsuyako">
+        <persName>花房ツヤ子</persName>
+        <note>花房敬吾の妻。チブスに罹り、五月目の男児を死産して死ぬ(行年二十三歳)。本文の「花房ツヤ子」「ツヤ子」「オツヤ」を @ref で統合</note>
+      </person>
+      <person xml:id="oshino">
+        <persName>オシノ</persName>
+        <note>花房敬吾の祖母。嘉永生れの高齢者で、嫁のツヤ子と睦まじかった。新聞記事を見た後、蚊帳の釣手で縊死する</note>
+      </person>
+      <person xml:id="wada">
+        <persName>和田</persName>
+        <note>「私」(福岡時報の遊撃記者)が花房家を訪ねた際、とっさに名乗った偽名。作中で「私」が持つ唯一の固有名</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="fukuoka">
+        <placeName>福岡市</placeName>
+        <location><geo>33.5902 130.4017</geo></location>
+        <note>福岡県福岡市・概値。本文の「福岡」「福岡市」を統合。新聞社「福岡時報」は紙名なので skip で除外</note>
+      </place>
+      <place xml:id="hakozaki">
+        <placeName>筥崎</placeName>
+        <location><geo>33.6156 130.4194</geo></location>
+        <note>福岡市(外)筥崎町。現在の福岡市東区箱崎・概値。「筥崎町」「筥崎署」「筥崎馬出」「筥崎の町役場」の筥崎を含む</note>
+      </place>
+      <place xml:id="hakozaki-eki">
+        <placeName>筥崎駅</placeName>
+        <location><geo>33.6172 130.4192</geo></location>
+        <note>鹿児島本線の駅。現在のJR箱崎駅・概値。ヨシ子が轢死する場所</note>
+      </place>
+      <place xml:id="hakozakigu">
+        <placeName>筥崎八幡宮</placeName>
+        <location><geo>33.6178 130.4225</geo></location>
+        <note>筥崎宮(福岡市東区箱崎)・概値。本文の「筥崎八幡宮」「八幡様」を @ref で統合</note>
+      </place>
+      <place xml:id="kyudai">
+        <placeName>九大</placeName>
+        <location><geo>33.6247 130.4258</geo></location>
+        <note>九州帝国大学。当時の箱崎キャンパス(工学部・医学部・法文学部)・概値</note>
+      </place>
+      <place xml:id="wakasugiyama">
+        <placeName>若杉山</placeName>
+        <location><geo>33.5747 130.5233</geo></location>
+        <note>福岡県糟屋郡篠栗町の若杉山・概値</note>
+      </place>
+      <place xml:id="jizomatsubara">
+        <placeName>地蔵松原</placeName>
+        <location><geo>33.63 130.43</geo></location>
+        <note>多々羅川の鉄橋と筥崎駅の間にある松原。作中の墓原(花房ツヤ子の墓)がある。現在の福岡市東区名島〜箱崎の間と推定される・推定概値</note>
+      </place>
+      <place xml:id="tataragawa">
+        <placeName>多々羅川</placeName>
+        <location><geo>33.6367 130.43</geo></location>
+        <note>本文の表記は「多々羅川」。実在の多々良川(福岡市東区)の鉄橋付近・概値</note>
+      </place>
+      <place xml:id="kashiimura">
+        <placeName>香椎村</placeName>
+        <location><geo>33.6606 130.4453</geo></location>
+        <note>福岡県糟屋郡香椎村。現在の福岡市東区香椎・概値。「私」が新世帯を構えた地</note>
+      </place>
+      <place xml:id="kashiigata">
+        <placeName>香椎潟</placeName>
+        <location><geo>33.665 130.43</geo></location>
+        <note>香椎の海岸(博多湾東部)・概値。歌枕としても知られる</note>
+      </place>
+      <place xml:id="saga">
+        <placeName>佐賀</placeName>
+        <location><geo>33.2494 130.2988</geo></location>
+        <note>佐賀県・佐賀市・概値。本文の「佐賀」「佐賀県」を統合(「佐賀署」「佐賀版」の佐賀も同地を指す)</note>
+      </place>
+      <place xml:id="konomura">
+        <placeName>神野村</placeName>
+        <location><geo>33.268 130.2905</geo></location>
+        <note>佐賀県佐賀郡神野村。現在の佐賀市神野・概値。ヨシ子の原籍地</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値。ヨシ子が家出の際にあこがれた地</note>
+      </place>
+      <place xml:id="hakataeki">
+        <placeName>博多駅</placeName>
+        <location><geo>33.5897 130.4206</geo></location>
+        <note>福岡市の博多駅・概値。「博多帯」の博多は織物名なのでタグ対象外</note>
+      </place>
+      <place xml:id="oohama">
+        <placeName>大浜</placeName>
+        <location><geo>33.599 130.4014</geo></location>
+        <note>福岡市大浜(現在の福岡市博多区)・概値。早川の下宿と金佐商店のある「大浜竪町」を含む</note>
+      </place>
+      <place xml:id="yanagimachi">
+        <placeName>柳町</placeName>
+        <location><geo>33.5829 130.4008</geo></location>
+        <note>福岡の遊廓。1910年に博多柳町から新柳町(現在の福岡市中央区清川)へ移転しており、作中は移転後を指すとみられる・概値</note>
+      </place>
+      <place xml:id="higashinakasu">
+        <placeName>東中洲</placeName>
+        <location><geo>33.594 130.4064</geo></location>
+        <note>福岡市中洲の東部(現在の福岡市博多区中洲)・概値。カフェーがある</note>
+      </place>
+      <place xml:id="imagawabashi">
+        <placeName>今川橋</placeName>
+        <location><geo>33.5836 130.3705</geo></location>
+        <note>福岡市今川(現在の福岡市中央区今川)の橋・電車停留場・概値。「私」の下宿がある</note>
+      </place>
+      <place xml:id="ebisudori">
+        <placeName>恵比須通り</placeName>
+        <note>福岡市内の通り。写真屋がある。現在のどの通りを指すか特定できないため座標なし</note>
+      </place>
+      <place xml:id="mimasu">
+        <placeName>三桝質店</placeName>
+        <note>筥崎馬出にあるとされる質店。作中の店で実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="kanesa">
+        <placeName>金佐商店</placeName>
+        <note>福岡市大浜竪町にあるとされる履物商。作中の店で実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="umaidashi">
+        <placeName>馬出</placeName>
+        <location><geo>33.606 130.4155</geo></location>
+        <note>福岡市馬出(現在の福岡市東区馬出)・概値。本文は「筥崎馬出」</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>その一　空を飛ぶパラソル</head>
+        <p>水蒸気を一パイに含んだ<ruby><rb>梅雨</rb><rt>つゆ</rt></ruby>晴れの空から、白い<ruby><rb>眩</rb><rt>まぶ</rt></ruby>しい太陽が、パッと照り落ちて来る朝であった。</p>
+        <p>ちょうど農繁期で、地方新聞の読者がズンズン減って行くばかりでなく、新聞<ruby><rb>記事</rb><rt>だね</rt></ruby>の夏枯れ<ruby><rb>季節</rb><rt>どき</rt></ruby>に入りかけた時分なので、私のいる福岡時報は勿論のこと、その他の各社とも何かしら読者を惹き付ける大記事は無いか……<ruby><rb>洪水</rb><rt>おおみず</rt></ruby>は出ないか……炭坑は爆発しないか……どこかに<ruby><rb>特別記事</rb><rt>とくだね</rt></ruby>は転がっていないか……と<ruby><rb>鵜</rb><rt>う</rt></ruby>の目<ruby><rb>鷹</rb><rt>たか</rt></ruby>の目になっていた。そんなようなタヨリナイ苛立たしい競争の圧迫を、編輯長と同じ程度に感じていた遊撃記者の私は、ツイこの頃、<placeName ref="#kyudai">九大</placeName>工学部に起ったチョットした事件を物にすべく、<placeName ref="#fukuoka">福岡市</placeName>外<ruby><rb><placeName ref="#hakozaki">筥崎</placeName>町</rb><rt>はこざきちょう</rt></ruby>の出外れに在る赤<ruby><rb>煉瓦</rb><rt>れんが</rt></ruby>の正門を、ブラリブラリと<ruby><rb>這入</rb><rt>はい</rt></ruby>りかけていたのであったが、あんまり暑いので、阿弥陀にしていた<ruby><rb>麦稈</rb><rt>むぎわら</rt></ruby>帽子を冠り直しながら、何の気もなく<ruby><rb>背後</rb><rt>うしろ</rt></ruby>をふり帰ると、ハッとして立ち止まった。</p>
+        <p>工学部の正門前は、広い道路を隔てて、二三里の南に在る<placeName ref="#wakasugiyama">若杉山</placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>まで、一面の水田になっていて、はてしもなく<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>り輝く<ruby><rb>濁水</rb><rt>にごりみず</rt></ruby>の中に、田植笠が数限りなく散らばっている。その田の中の<ruby><rb>畦道</rb><rt>あぜみち</rt></ruby>を、眼の前の道路から一町ばかり向うの鉄道線路まで、パラソルを片手に捧げて、危なっかしい足取りで渡って行く一人の盛装の女がいる。</p>
+        <p>そのパラソルは一口に云えば空色であるが、よく見ると<ruby><rb>群青</rb><rt>ぐんじょう</rt></ruby>と、<ruby><rb>淡紅色</rb><rt>ときいろ</rt></ruby>の、ステキに派手なダンダラ模様であった。<ruby><rb>小倉縮</rb><rt>こくらちぢみ</rt></ruby>らしいハッキリした<ruby><rb>縞柄</rb><rt>しまがら</rt></ruby>の下から、肉付きのいい手足と、薄赤いものを透きとおらして、左手にビーズ入りのキラキラ光るバッグを<ruby><rb>提</rb><rt>さ</rt></ruby>げて、白<ruby><rb>足袋</rb><rt>たび</rt></ruby>に、表付きの<ruby><rb>中歯</rb><rt>ちゅうば</rt></ruby>の下駄を<ruby><rb>穿</rb><rt>は</rt></ruby>いていたが、<ruby><rb>霖雨</rb><rt>ながあめ</rt></ruby>でぬかるむ青草まじりの<ruby><rb>畦道</rb><rt>あぜみち</rt></ruby>を、綱渡りをするように、ユラユラと踊りながら急いで行くと、オールバックの下から見える、白い首すじと手足とが、逆光線を反射しながら、しなやかに伸びたり縮んだりする。その都度に、華やかな<ruby><rb>洋傘</rb><rt>パラソル</rt></ruby>の<ruby><rb>尖端</rb><rt>さき</rt></ruby>が、大きい、小さい<ruby><rb>円</rb><rt>まる</rt></ruby>や弧を、<ruby><rb>空</rb><rt>くう</rt></ruby>に描いて行くのであった。</p>
+        <p>そこいらの田に<ruby><rb>蠢</rb><rt>うご</rt></ruby>めいていた田植笠が、一つ二つ持ち上って、不思議そうにその女の姿に<ruby><rb>見惚</rb><rt>みと</rt></ruby>れはじめた。……と見るうちに、左手の<placeName ref="#jizomatsubara">地蔵松原</placeName>の向うから、<placeName ref="#tataragawa"><ruby><rb>多々羅</rb><rt>たたら</rt></ruby>川</placeName>の鉄橋を渡って、右手の<placeName ref="#hakozaki-eki">筥崎駅</placeName>へ、一直線に驀進して来る下り列車の音が、<ruby><rb>轟々</rb><rt>ごうごう</rt></ruby>と近づいて来る気はいである。それにつれて女の足取りも、心持ち小刻みに急ぎ始めたように見えた……。</p>
+        <p>……私は今一度ハッと胸を躍らした。思わず、</p>
+        <p>「……止めろッ……<ruby><rb>轢死</rb><rt>れきし</rt></ruby>だッ……」</p>
+        <p>と叫びかけたが、その次の瞬間に私は又、グッと<ruby><rb>唾</rb><rt>つば</rt></ruby>を<ruby><rb>嚥</rb><rt>の</rt></ruby>み込んだ。……これは新聞<ruby><rb>記事</rb><rt>だね</rt></ruby>になるな……と思った次の瞬間にはもう正門前の道路を、女の行く畦道と直角の方向に引返していた。</p>
+        <p>そうしてその<ruby><rb>取付</rb><rt>とっつ</rt></ruby>きの百姓家の蔭から、田に添うた桑畑の若い葉の間を、女と並行した方向に曲り込むと、急に身を伏せて、獲物を狙う<ruby><rb>獣</rb><rt>けもの</rt></ruby>のように、線路の方へ走り出したが、桑畑と線路との境目に在る、狭い小川を飛び越えた時には、スッカリ汗まみれになって、動悸が高まって、眼が<ruby><rb>眩</rb><rt>くら</rt></ruby>みそうになっていた。</p>
+        <p>女はもうその時に田の畦を渡りつくして、半町ばかり向うの線路に出ていたが、<ruby><rb>軌条</rb><rt>レール</rt></ruby>の横の狭い砂まじりの赤土道を、汽車の来る方向に、さり気なく、気取った<ruby><rb>風付</rb><rt>ふうつ</rt></ruby>きで歩いて行くようすである。</p>
+        <p>勢込んで来た私は、そうした女の態度を見ると、ちょっと躊躇して立ち止まった。覚悟の轢死じゃないのかしら……と思って……。</p>
+        <p>……と思う間もなく、<ruby><rb>真正面</rb><rt>まっしょうめん</rt></ruby>に横たわる松原の緑の波の中から、真黒な汽鑵車が、狂気のように白い汽笛を吹き立てつつ、全速力で飛び出して来た。機関手が女の姿を発見したに違いないのだ。</p>
+        <p>それと見た女は<ruby><rb>洋傘</rb><rt>パラソル</rt></ruby>を、線路の傍の草の上に、拡げたままソッと置いた。下駄を脱ぎ揃えて、その上にビーズ入りのバッグを静かに載せた。そうして右手で襟元を<ruby><rb>繕</rb><rt>つくろ</rt></ruby>いながら、左手で前裾をシッカリと掴むと、白足袋を横すじかいに<ruby><rb>閃</rb><rt>ひら</rt></ruby>めかして、汽鑵車の前に飛び込もうとしたが、線路の横の砂利に<ruby><rb>躓</rb><rt>つまず</rt></ruby>いて、バッタリと横向きに倒れた。その拍子に右手で<ruby><rb>軌条</rb><rt>レール</rt></ruby>を掴んで起き上りかけたが、何故か又グッタリとなって、<ruby><rb>軌条</rb><rt>レール</rt></ruby>のすぐ横の枕木の上に突伏した。そのまま白い両手を向うむきに投げ出して、肩を大きく波打たして、深いため息を一つしたように見えた。</p>
+        <p>私はそれを石のように固くなったまま見とれていたように思う。身動きは愚か、瞬き一つ出来ないままに……と思う間もなく女の全身に、真黒な汽鑵車の<ruby><rb>投影</rb><rt>かげ</rt></ruby>が、矢のように蔽いかかった。するとその<ruby><rb>投影</rb><rt>かげ</rt></ruby>の中から、<ruby><rb>群青</rb><rt>ぐんじょう</rt></ruby>と<ruby><rb>淡紅色</rb><rt>ときいろ</rt></ruby>のパラソルが、<ruby><rb>人魂</rb><rt>ひとだま</rt></ruby>か何ぞのようにフウーウと美しく浮き出して、二三間高さの空中を左手の方へ、フワリフワリと舞い上って行ったが、その方にチラリと眼を奪われた瞬間に、虚空を<ruby><rb>劈</rb><rt>つんざ</rt></ruby>く非常汽笛と、大地を震撼する真黒い音響とが、私の一尺横を<ruby><rb>暴風</rb><rt>はやて</rt></ruby>のように通過した。</p>
+        <p>思わず耳と眼を<ruby><rb>塞</rb><rt>ふさ</rt></ruby>いで立ち<ruby><rb>竦</rb><rt>すく</rt></ruby>んでいた私は、その音響が通過すると直ぐに又、新聞記者の本能に立帰った。<ruby><rb>編上靴</rb><rt>あみあげぐつ</rt></ruby>を宙に踊らせて、二十間ばかり向うに投げ出されている、屍体の傍へ駈けつけた。線路の左右の田の中から、訳のわからない叫び声があとからあとから起るのを聞き流しながら……。</p>
+        <p>まだ生きているのと同様に温かい女の屍体を、仰向けに引っくり返して見ると、どんな風にして車輪にかかったものか、頭部に残っているのは片っ方の耳と綺麗な襟筋だけである。あとは<ruby><rb>髪毛</rb><rt>かみのけ</rt></ruby>と血の<ruby><rb>和</rb><rt>あ</rt></ruby>え<ruby><rb>物</rb><rt>もの</rt></ruby>みたようになったのが、線路の<ruby><rb>一側</rb><rt>ひとかわ</rt></ruby>を十間ばかりの間に、ダラダラと引き散らされて来ている。その途中の処々に<ruby><rb>鶏</rb><rt>にわとり</rt></ruby>の肺臓みたようなものが、ギラギラと太陽の光を反射しているのは脳味噌であろうか。右の手首は、車輪に<ruby><rb>附着</rb><rt>くっつ</rt></ruby>いて行ったものか見当らず、プッツリと切断された傷口から、鮮血がドクリドクリと<ruby><rb>迸</rb><rt>ほとば</rt></ruby>しり出て、線路の横に茂り合った<ruby><rb>蓬</rb><rt>よもぎ</rt></ruby>の葉を染めている。その他の足袋の底と着物の裾に、すこしばかり泥が附いているだけで、<ruby><rb>轢死体</rb><rt>れきしたい</rt></ruby>としては珍らしく<ruby><rb>無疵</rb><rt>むきず</rt></ruby>な肉体が、草の中にあおのけに寝て、<ruby><rb>左手</rb><rt>ゆんで</rt></ruby>はまだシッカリと前裾を掴んでいた。</p>
+        <p>私はチラリと汽車の方をふり返りながら、その左手を着物から引き離して<ruby><rb>検</rb><rt>あらた</rt></ruby>めてみた。手の甲も、<ruby><rb>掌</rb><rt>てのひら</rt></ruby>もチットも荒れていないようであるが、中指の頭にヨディムチンキが黒々と塗ってあるのに、そこいらが格別<ruby><rb>腫</rb><rt>は</rt></ruby>れても傷ついてもいないところを見ると、<ruby><rb>刺</rb><rt>とげ</rt></ruby>か何かを抜いたあとを消毒したものであろう。して見ればこの女は看護婦かな……と思い思い手早く胸を掻き開いてみると、白く水々しく光る乳房と、黒い、紫がかった乳首があらわれたが、その上を、もう、一匹の大きな黒蟻が狼狽して駈けまわっていた。</p>
+        <p>さては……と私は息を詰めた。すぐに安物らしい白地の博多帯をさぐってみると……どうだ……ムクリムクリ……ヒクリヒクリと蠢く胎動がわかるではないか……たしかに姙娠五箇月以上である。なお<ruby><rb>序</rb><rt>ついで</rt></ruby>に、<ruby><rb>袂</rb><rt>たもと</rt></ruby>と、帯の間を撫でまわしてみると、<placeName ref="#hakozaki">筥崎</placeName>から<placeName ref="#saga">佐賀</placeName>までの赤切符の未改札が一枚と、小型の名刺に「<persName ref="#yoshiko">早川ヨシ子</persName>」「<persName ref="#yoshiko">時枝ヨシ子</persName>」と別々に印刷したのが十枚ばかりずつ白紙に包んだのが、帯の間から出て来た。</p>
+        <p>その名刺をポケットに落し込みながら、私は取りあえず凱歌を揚げた。<persName ref="#hayakawa">早川</persName>というのは<placeName ref="#kyudai">九大</placeName>医学部の<persName ref="#terayama">寺山</persName>内科に居る、医学士の医員で、記者仲間に通った色魔に相違なかった。その背後には<persName ref="#aneha"><ruby><rb>姉歯</rb><rt>あねば</rt></ruby></persName>なにがしという産科医がいて、何かしら糸を操っているという噂まで、小耳に挟んでいる。又、<persName ref="#yoshiko">時枝ヨシ子</persName>というのは、これも同大学の眼科に居る有名な美人看護婦ではないか。……二人の関係は二三箇月前にチラリと聞いた事があるにはあったが、評判の美人と色魔だけに、いい加減に結び付けた噂だろう……なぞと余計なカンを<ruby><rb>廻</rb><rt>ま</rt></ruby>わしていたのが悪かった。もうここまで進んでいたのか……と思い思い今度は下駄を裏返してみると、まだ<ruby><rb>卸</rb><rt>おろ</rt></ruby>し立てのホヤホヤで、<placeName ref="#fukuoka">福岡市</placeName><ruby><rb><placeName ref="#oohama">大浜</placeName>竪町</rb><rt>おおはまたてちょう</rt></ruby><placeName ref="#kanesa"><ruby><rb>金佐</rb><rt>かねさ</rt></ruby>商店</placeName>という<ruby><rb>商標</rb><rt>マーク</rt></ruby>が貼ってあって、<ruby><rb>踵</rb><rt>かかと</rt></ruby>の処に┐と刻印が打ち込んである。次にビーズ入りのバッグを開いてみると、新しいハンカチが二枚と、六円二十何銭入りの<ruby><rb>蟇口</rb><rt>がまぐち</rt></ruby>と、すこしばかりの化粧道具を入れた底の方から、<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>という<ruby><rb>名宛</rb><rt>なあて</rt></ruby>の質札が二枚出た。お<ruby><rb>召</rb><rt>めし</rt></ruby>のコートと、羽織と、<ruby><rb>瓦斯</rb><rt>ガス</rt></ruby>の<ruby><rb>矢絣</rb><rt>やがすり</rt></ruby>の<ruby><rb>単衣物</rb><rt>ひとえもの</rt></ruby>と、女持のプラチナの腕時計の四点を、合計十八円也で、<ruby><rb>昨日</rb><rt>きのう</rt></ruby>と、<ruby><rb>一昨日</rb><rt>おととい</rt></ruby>の二日にわけて、<placeName ref="#hakozaki">筥崎</placeName><placeName ref="#umaidashi"><ruby><rb>馬出</rb><rt>まいだし</rt></ruby></placeName>の<placeName ref="#mimasu"><ruby><rb>三桝</rb><rt>みます</rt></ruby>質店</placeName>に入れたものである。</p>
+        <p>私は又も、その質札をポケットに突込みながら、二度目の凱歌を揚げた。……これだけのタネを握り込んで、三段や四段の特別記事が書けなければ、俺は新聞記者じゃない……むろん警察や、<ruby><rb>同業</rb><rt>なかま</rt></ruby>の奴等は指一本だって指せやしないだろう……占めたナ……と奥歯を噛み締めながらも、何喰わぬ顔を上げて、そこいらを見まわした。</p>
+        <p>私の周囲には二三人の<ruby><rb>田植連</rb><rt>たうえれん</rt></ruby>が、<ruby><rb>魘</rb><rt>おび</rt></ruby>えた顔をして立っているきりである。一気に<placeName ref="#hakozaki-eki">筥崎駅</placeName>へ駈け込んだ列車の窓からは、旅客の顔が<ruby><rb>鈴生</rb><rt>すずな</rt></ruby>りに突き出ていて、そこから飛び降りた二三人の制服制帽が、線路づたいに走って来るのが見える。その外にもう一人、サアベルを掴んだ警官らしい姿も、<ruby><rb>後</rb><rt>おく</rt></ruby>れ<ruby><rb>馳</rb><rt>ば</rt></ruby>せにプラットホームから駈け降りて来るようであるが、しかしまだ四五町の距離があるから、私の顔を見知られる心配はない。</p>
+        <p>私は靴の踵に粘り付いた女の血を、<ruby><rb>蓬</rb><rt>よもぎ</rt></ruby>の葉で拭いながら悠々と立ち上った。はるか向うの青田の中に落ちたパラソルを見かえりもせずに、今しがた女が伝って来た畦道の、下駄の<ruby><rb>痕</rb><rt>あと</rt></ruby>を踏み付け踏み付け、平気な顔で工学部の前に引返した。みるみる<ruby><rb>殖</rb><rt>ふ</rt></ruby>えて行く、線路の上の人だかりを横眼に見ながら、手近い法文科の門を潜って、生徒がウロウロしている地下室を通り抜けて、人通りのすくない<ruby><rb>海門戸</rb><rt>かいもんど</rt></ruby>に出ると、やっと上衣を脱いで汗を拭いた。ここまで来れば、もう捕まる心配は無いからである。ついでに腕時計を見るとチョウド十時半であった。</p>
+        <p>……夕刊の締切りまでアト二時間半キッカリ……その<ruby><rb>中</rb><rt>うち</rt></ruby>で記事を書く時間をザット一時間と見ると……質屋にまわり込む時間は先ずあるまい……プラチナの腕時計がチットおかしいとは思うけれど……。</p>
+        <p>……色魔の<persName ref="#hayakawa">早川</persName>や、黒幕の<persName ref="#aneha"><ruby><rb>姉歯</rb><rt>あねば</rt></ruby></persName>にも会わない方が上策だろう……わざわざ泣き付かれに行くようなもんだからナ……。一つ抜き討ちを<ruby><rb>喰</rb><rt>くら</rt></ruby>わして驚かしてくれよう……。</p>
+        <p>……帰り着くまで降り出さなけあいいが……。</p>
+        <p>と腹の中で勘定をつけながら、とりあえずバットを<ruby><rb>啣</rb><rt>くわ</rt></ruby>えてマッチを擦った。</p>
+        <p>それから数時間の<ruby><rb>後</rb><rt>のち</rt></ruby>、私は<placeName ref="#imagawabashi">今川橋</placeName>行きの電車の中で、<placeName ref="#fukuoka">福岡市</placeName>に二つある新聞の夕刊の市内版を見比べて<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>んでいた。ほかの新聞には「又も轢死女」という四号<ruby><rb>標題</rb><rt>みだし</rt></ruby>で、身元不明の若い女の轢死が五行ばかり報道してあるだけで、姙娠の事実すら書いてないのに反して、私の新聞の方には初号三段抜きの<ruby><rb>大標題</rb><rt>おおみだし</rt></ruby>で、<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>を着た<persName ref="#hayakawa">早川</persName>医学士と、<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>に結った<persName ref="#yoshiko">時枝ヨシ子</persName>の二人が並んで撮った鮮明な写真まで入れて、次のような記事が長々と掲載されていた。</p>
+        <p>▼<ruby><rb>標題</rb><rt>みだし</rt></ruby>……「田植連中の環視の中で……姙娠美人の鉄道自殺……けさ十時頃、<placeName ref="#hakozaki-eki">筥崎駅</placeName>附近で……相手は<placeName ref="#kyudai">九大</placeName>名うての色魔……女は<placeName ref="#saga">佐賀県</placeName>随一の富豪……時枝家の家出娘」……「両親へ詫びに帰る途中……思い迫ったものか……この悲惨事」……</p>
+        <p>▲記事……（上略）……<persName ref="#yoshiko">時枝ヨシ子</persName>（二〇）が<placeName ref="#tokyo">東京</placeName>にあこがれて家出をしたのは、四年前の事であったが、<ruby><rb>何故</rb><rt>なにゆえ</rt></ruby>か<placeName ref="#tokyo">東京</placeName>へは行かずに、<placeName ref="#hakataeki">博多駅</placeName>で下車し、<placeName ref="#fukuoka">福岡</placeName>の知人を<ruby><rb>便</rb><rt>たよ</rt></ruby>って、<placeName ref="#kyudai">九大</placeName>の眼科に看護婦となって入り込んだ。これを聞いた<persName ref="#yoshiko">ヨシ子</persName>の両親は非常に立腹し、直ちに<ruby><rb>勘当</rb><rt>かんどう</rt></ruby>を申し渡したとの事であるが、美人の評判が高いままに、あらゆる誘惑と闘いつつ、無事にこの四年間をつとめて来たものであった。……（中略）……<ruby><rb>流石</rb><rt>さすが</rt></ruby>の色魔、<persName ref="#hayakawa">早川</persName>医学士（三〇）も<persName ref="#yoshiko">ヨシ子</persName>と関係して、現在の<placeName ref="#oohama">大浜</placeName>の下宿に同棲するようになってからは、人間が違ったように素行を謹しんだばかりでなく、得意の玉突さえもやめてしまって、ひたすら彼女との恋に精進するように見えた。彼女<persName ref="#yoshiko">ヨシ子</persName>の<persName ref="#hayakawa">早川</persName>に対する愛着が、それ以上であった事は云う迄もない。……（中略）……かくて姙娠七箇月になった<persName ref="#yoshiko">ヨシ子</persName>は、<persName ref="#hayakawa">早川</persName>医学士と、その友人で、兼てから二人の事に<ruby><rb>就</rb><rt>つ</rt></ruby>いて何くれとなく心配していた<persName ref="#aneha">姉歯</persName>某とが、極力制止するをも<ruby><rb>諾</rb><rt>き</rt></ruby>かず、<ruby><rb>窃</rb><rt>ひそ</rt></ruby>かに旅費をこしらえて、単身人眼を避けつつ、<placeName ref="#saga">佐賀</placeName>の両親の許に行くべく決心した……（中略）……わざと<placeName ref="#hakataeki">博多駅</placeName>より二つ手前の<placeName ref="#hakozaki-eki">筥崎駅</placeName>から、<placeName ref="#saga">佐賀</placeName>までの赤切符を買ったが、その列車を待ち合わせている間に、色々と身の行く末を考えて極度に運命を悲観したものらしく、遂に自分が乗って行く筈であった下り四二一号列車の<ruby><rb>轍</rb><rt>わだち</rt></ruby>にかかって、かくも無残の……云々……</p>
+        <p>ここまで読んで来ると私は、内心大得意の顔を上げて、電車の中を見まわした。当てもない咳払いを一つして<ruby><rb>反</rb><rt>そ</rt></ruby>り<ruby><rb>身</rb><rt>み</rt></ruby>になった。</p>
+        <p>ところがその翌る日のこと……。</p>
+        <p><ruby><rb>昨日</rb><rt>きのう</rt></ruby>取り損ねた<placeName ref="#kyudai">九大</placeName>工学部の記事を、<ruby><rb>漁</rb><rt>あさ</rt></ruby>りなおしに行くべく、<placeName ref="#imagawabashi">今川橋</placeName>の下宿から、電車で<placeName ref="#hakozaki">筥崎</placeName>の終点へ行く途中、医学部前の停留場を通過すると、<ruby><rb>職業</rb><rt>しょうばい</rt></ruby>柄懇意にしている<placeName ref="#hakozaki">筥崎</placeName>署の<persName ref="#otsuka">大塚</persName>警部が飛び乗って来たので、<ruby><rb>脛</rb><rt>すね</rt></ruby>に傷持つ私はちょっとドキンとさせられた。</p>
+        <p><persName ref="#otsuka">大塚</persName>警部は私よりも十五六ぐらい年上で、二三度一緒に飲みに行ってからというもの、同輩みたように<ruby><rb>交際</rb><rt>つきあ</rt></ruby>っている。かなり<ruby><rb>狡</rb><rt>ずる</rt></ruby>いところのある男であるが、殆んど空っぽになっている電車の片隅に、私の姿を発見すると、ビックリした表情をしながら、ツカツカと私の横に来て、二十貫目あるという大きな図体をドタリと<ruby><rb>卸</rb><rt>おろ</rt></ruby>した。それからサアベルを股倉に挟んで、帽子を阿弥陀にして赤ッ<ruby><rb>面</rb><rt>つら</rt></ruby>の汗を拭き拭き、<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る緊張した表情で、内ポケットから新聞を引き出すと、無言のまま、私の鼻の先に突きつけた。見ると私が書いた昨日の夕刊記事の全部に、毒々しい赤線が引いてある。</p>
+        <p>私はわざとニッコリしてうなずいた。その私の顔を<persName ref="#otsuka">大塚</persName>警部はニガリ切って<ruby><rb>白眼</rb><rt>にら</rt></ruby>み据えた。</p>
+        <p>「困るじゃないか……こんな事をしちゃ……僕等を出し抜いて……」</p>
+        <p>「フフン、何もしやしない。工学部の正門を這入ろうとしたら、鉄道線路の上に真黒な人ダカリがしていた。行って見たらこの轢死だった……というだけの事さ……」</p>
+        <p>「女の身元はどうして洗った」</p>
+        <p>「屍体の左手の中指の先にヨディムチンキが塗ってあった。別段腫れても、傷ついてもいないところを見ると、<ruby><rb>刺</rb><rt>とげ</rt></ruby>か何かを抜いたアトを消毒したものらしいが、ヨディムチンキをそんな風に使う女なら、差し詰め医師の家族か、看護婦だろう」</p>
+        <p>「……フーム……ソンナモンカナ」</p>
+        <p>「ところで服装を見ると看護婦は動かぬところだろう。同時に下駄のマークを見ると、<persName ref="#hayakawa">早川</persName>の下宿の近所で買っている。そこで取りあえず<placeName ref="#kyudai">九大</placeName>の看護婦寄宿舎の名簿を引っくり返してみたら、時枝という有名なシャンが<ruby><rb>三月</rb><rt>みつき</rt></ruby>ばかり前から休んでいる。もしやと思って原籍を調べたら驚いたね。<placeName ref="#saga">佐賀県</placeName><placeName ref="#konomura"><ruby><rb>神野</rb><rt>かんの</rt></ruby>村</placeName>の<persName ref="#tokieda-mozaemon">時枝茂左衛門</persName>、第五女と来ているじゃないか」</p>
+        <p>「それだけで見当つけたんか」</p>
+        <p>「失敬な……<ruby><rb>憚</rb><rt>はばか</rt></ruby>りながら君等みたいな見込捜索はやらないよ。体格検査簿にチャンと書いてあるんだ。身長五尺二寸、体量十四貫七百というのが昨年の秋の事だ。ちょうど屍体と見合っているじゃないか。姙娠七箇月は無論当てズッポウだが、胎児の動き工合から考えても多分三月か四月目から休んだ事になるだろうよ……」</p>
+        <p>「……フーン……よく知っとるんだナア、何でも……」</p>
+        <p>「大学の外交記者を半年やれあ、大抵の医者は<ruby><rb>烟</rb><rt>けむ</rt></ruby>に捲けるぜ。……しかし念のために、吾輩を崇拝している二三の看護婦に当って見ると、内科の<persName ref="#hayakawa">早川</persName>さんと<date when="--01">正月</date>頃からコレコレと云うんだ。<persName ref="#hayakawa">早川</persName>が<persName ref="#terayama">寺山</persName>博士のお気に入りで、みんな反感を持っている事までわかった。どうだい。……恐れ入ったろう……」</p>
+        <p>「フーム、それじゃ写真はどうして手に入れた」</p>
+        <p>「……訊問するんなら署でやってくれ給え、絶対に白状しないから」</p>
+        <p>「アハハハハ。イヤ、実は非常に参考になるからヨ。……腹を立ててくれては困るが……正直のところを云うとこの記事はソノ……素人が見たらこれでええかも知れんがネ。僕等の立場から見ると不思議な事だらけなんだ」</p>
+        <p>「ウン。そんなら云おう。その写真はやっぱり看護婦仲間の噂から<ruby><rb>手繰</rb><rt>たぐ</rt></ruby>り出したのさ。アノ<placeName ref="#ebisudori">恵比須通り</placeName>の写真屋には、大学の看護婦がよく行くからね。二人で<ruby><rb>秘密</rb><rt>ないしょ</rt></ruby>で撮ったのを見るかドウかしたんだろう。そんな写真があるという事をチラリと聞いたから、試しに当って見ると図星だったのだ。受取人は<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>という偽名でネ。チャンと種板まで取ってあった……そん時の嬉しさったらなかったよ」</p>
+        <p>「いかにもナア。……それじゃアノ<persName ref="#aneha">姉歯</persName>という産婆学校長の医学士が、一生懸命で二人の世話を焼いとる事実は、どうして探り出したんか」</p>
+        <p>「内科の医局での話さ。<persName ref="#aneha">姉歯</persName>という産婆学校長が、この頃よく内科の医局へ遊びに来て、<persName ref="#hayakawa">早川</persName>とヒソヒソ話をする。何でも<persName ref="#yoshiko">ヨシ子</persName>がこの頃急に<placeName ref="#saga">佐賀</placeName>へ帰ると云って<ruby><rb>駄々</rb><rt>だだ</rt></ruby>をこね出したので、二人が困っているという噂があるんだ。……ドウダイ……事実とピッタリ一致するじゃないか」</p>
+        <p>「相変らず素早いんだね君は……」</p>
+        <p>「これ位はお茶の子さ。それよりも今度はアベコベに訊問するが、アノ<persName ref="#aneha">姉歯</persName>という男が、産婆学校長の医学士だという事を君はどうして知っている。新聞にはわざと伏せておいたのに……」</p>
+        <p>「ソ……そいつは勘弁してくれ」</p>
+        <p>と<persName ref="#otsuka">大塚</persName>警部は眼を丸くしながら、慌てて手を振って飛び<ruby><rb>退</rb><rt>の</rt></ruby>いた。苦笑しいしいハンカチで顔をコスリ廻わした。私は<ruby><rb>儼然</rb><rt>げんぜん</rt></ruby>として坐り直した。</p>
+        <p>「ウム……君がその了簡ならこっちにも考えがある」</p>
+        <p>「……マ……マ……待ってくれ。考えるから……」</p>
+        <p>「考えるまでもないだろう。僕は今日まで一度も君等の仕事の邪魔をしたおぼえはない。秘密は秘密でチャンと守っているし、握ったタネでも君等の方へ先に知らせた事さえある。現に今だって……」</p>
+        <p>「イヤ。それは重々……」</p>
+        <p>「まあ聞き給え……現に今だって、自分の書いた記事を肯定しているじゃないか。本当を云うと編輯長以外の人間には、自分の書いた記事の内容を絶対に知らせないのが、新聞記者仲間の不文律なんだぜ、<ruby><rb>況</rb><rt>いわ</rt></ruby>んやその記事を取った筋道まで割って……」</p>
+        <p>「イヤ。それはわかっとる。重々感謝しとる……」</p>
+        <p>「感謝してもらわなくともいいから信用してもらいたいね。<persName ref="#aneha">姉歯</persName>という医学士が、善玉か悪玉かぐらい話してくれたって……」</p>
+        <p>「ウン、話そう」</p>
+        <p><persName ref="#otsuka">大塚</persName>警部は又汗を拭いた。帽子を冠り直して一層<ruby><rb>身体</rb><rt>からだ</rt></ruby>をスリ寄せた。小さな眼をキラキラ光らして声を落した。</p>
+        <p>「……エエカ。こいつが<ruby><rb>曝露</rb><rt>ばれ</rt></ruby>たら<ruby><rb>署員</rb><rt>ぶか</rt></ruby>が承知せん話じゃがな……<persName ref="#aneha">姉歯</persName>という奴は<persName ref="#hayakawa">早川</persName>よりも<ruby><rb>上手</rb><rt>うわて</rt></ruby>の悪玉なんだ。エエカ……<persName ref="#hayakawa">早川</persName>をそそのかして、女を<ruby><rb>膨</rb><rt>ふく</rt></ruby>らましては自分で引き受けて、相手の親から金を絞るのを、片手間の商売にしとるんだ。つまり手切金と、堕胎料と、二重に取って、<persName ref="#hayakawa">早川</persName>にはイクラも廻わさないらしいのだ。僕の管轄でもかなりの被害者があると見えて、時々猛烈な事を書いた投書が来る」</p>
+        <p>「ありがとう、それで何もかもわかった。<persName ref="#yoshiko">ヨシ子</persName>が駄々をこねて、<ruby><rb>単身</rb><rt>ひとり</rt></ruby>で<placeName ref="#saga">佐賀</placeName>へ行きかけたのは、どうも少々オカシイと思ったが……そこいらの消息を薄々感付いたんだナ」</p>
+        <p>「ウン。それに違いないのだ。ちょうど<persName ref="#aneha">姉歯</persName><persName ref="#hayakawa">早川</persName>組の<ruby><rb>奸計</rb><rt>かんけい</rt></ruby>と、両親の<ruby><rb>勘当</rb><rt>かんどう</rt></ruby>とで、板挟みになって死んだ訳だナ」</p>
+        <p>「書きてえナア畜生……夕刊に……大受けに受けるんだがナア……」</p>
+        <p>「イカンイカン。まだ絶対に新聞に書いちゃいかん」</p>
+        <p>「アハハハハハ書きゃしないよ。……しかし君等はナゼ<persName ref="#aneha">姉歯</persName>をフン縛らない」</p>
+        <p><persName ref="#otsuka">大塚</persName>警部は苦笑した。二三本<ruby><rb>白髪</rb><rt>しらが</rt></ruby>の<ruby><rb>交</rb><rt>まじ</rt></ruby>った赤い鬚を、<ruby><rb>自烈度</rb><rt>じれった</rt></ruby>そうにひねりまわした。</p>
+        <p>「<ruby><rb>手証</rb><rt>てしょう</rt></ruby>が上らないからさ。あの<persName ref="#aneha">姉歯</persName>という奴は、大学の婦人科に<ruby><rb>居</rb><rt>お</rt></ruby>った時分から、主任教授に化けて大学前の旅館に乗り込んで、姙婦を診察して金を取った形跡がある。今開いとる産婆学校も、生徒は三四人しか居らんので、内実は堕胎専門に違いないと睨んどるんじゃが、<persName ref="#aneha">姉歯</persName>の奴トテモ<ruby><rb>敏捷</rb><rt>はしっこ</rt></ruby>くて、頭が良過ぎて手におえん。噂や投書で縛れるものなら縛って見よという準備を、チャンとしとるに違いないのだ」</p>
+        <p>「フーム。この辺の医者の<ruby><rb>摺</rb><rt>す</rt></ruby>れっ<ruby><rb>枯</rb><rt>か</rt></ruby>らしにしてはチット出来過ぎているな」</p>
+        <p>「そうかも知れん。殊に今度の事件などは、相手が<placeName ref="#saga">佐賀</placeName>一の金満家と来とるから、<persName ref="#aneha">姉歯</persName>も腕に<ruby><rb>縒</rb><rt>より</rt></ruby>をかけとるという投書があった。むろん十が十まで当てにはならんが、<ruby><rb>彼奴</rb><rt>きゃつ</rt></ruby>のやりそうな事だと思うて前から睨んではおったんだ」</p>
+        <p>「投書の<ruby><rb>出所</rb><rt>でどころ</rt></ruby>はわからないか」</p>
+        <p>「ハッキリとはわからんが、大学部内の奴の仕事という事はアラカタ見当がついとる。<persName ref="#hayakawa">早川</persName>の今の下宿を世話した奴が、<persName ref="#aneha">姉歯</persName>だという事もチャンとわかっとる。何にしても<persName ref="#yoshiko">ヨシ子</persName>が子供さえ生めば、<persName ref="#aneha">姉歯</persName>の奴、本仕事にかかるに違いない。二人をかくまっておいて、<persName ref="#tokieda-mozaemon">時枝</persName>のおやじを<ruby><rb>脅喝</rb><rt>いたぶ</rt></ruby>ろうという寸法だ。だからその時に<placeName ref="#saga">佐賀</placeName>署と連絡を取って、ネタを押えてフン縛ろうと思うておったのを、スッカリ<ruby><rb>打</rb><rt>ぶ</rt></ruby>ち<ruby><rb>毀</rb><rt>こわ</rt></ruby>されて弱っとるところだ」</p>
+        <p>「アハハハハ、<ruby><rb>大切</rb><rt>だいじ</rt></ruby>の玉が死んだからナ」</p>
+        <p>「ソ……そうじゃない。君がこの記事を書いたからサ。実に乱暴だよ君は……」</p>
+        <p>「別に乱暴な事は一つも書いていないじゃないか。事実か事実でないかは、色んな話をきいているうちに直覚的にわかるからね。第一この写真が一切の事実を裏書きしているじゃないか」</p>
+        <p>「そうかも知れん……が、しかしこの記事は軽率だよ」</p>
+        <p>「<ruby><rb>怪</rb><rt>け</rt></ruby>しからん。事実と違うところでもあるのか」</p>
+        <p>「……大ありだ……」</p>
+        <p>「エッ……」</p>
+        <p>「しかも今のところでは全然事実無根だ」</p>
+        <p>私はドキンとして飛び上りそうになった。……<persName ref="#hayakawa">早川</persName>に直接当らなかったのが手落ちだったかナ……と思うと、立っても居てもいられないような気持ちになった。<persName ref="#otsuka">大塚</persName>警部も困惑した顔になって、サアベルの頭をヤケに押し廻したが、やがて私の顔とスレスレに赤い顔を近付けると、酒臭いにおいをプーンとさした。</p>
+        <p>「実は僕も弱っとるんだ。……というのは……こいつも絶対に書いては困るがね。この記事を夕刊の<placeName ref="#saga">佐賀</placeName>版で見た<persName ref="#tokieda-mozaemon">時枝</persName>のおやじが、<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>のうちに<placeName ref="#saga">佐賀</placeName>から自動車を飛ばして来て、<ruby><rb>今朝</rb><rt>けさ</rt></ruby>暗いうちに僕をタタキ起したんだ。人品のいい、落付いた老人だったので、僕もうっかり信用して、ちょうどええところだから大学の解剖室へ行って、お嬢さんの屍体を見て来て下さい。<ruby><rb>貴下</rb><rt>あなた</rt></ruby>のお子さんときまれば、解剖をしないでそのまんま、お引き渡しをしてもええからというので、巡査を附けてやった訳だ」</p>
+        <p>「なるほど……それから……」</p>
+        <p>「ところがそのおやじが、轢死当時の所持品や何かを詳しく調べた<ruby><rb>揚句</rb><rt>あげく</rt></ruby>に、娘の屍体を一眼見ると、これはうちの娘では御座らぬと云い出したもんだ」</p>
+        <p>「……フーン……その理由は……」</p>
+        <p>「その理由というのはこうだ。……うちの娘は元来勝気な娘で、<placeName ref="#tokyo">東京</placeName>へ行って独身で身を立てる、女権拡張に努力するという置手紙をして出て行った位で、そんな<ruby><rb>不品行</rb><rt>ふしだら</rt></ruby>をするような女じゃない。新聞の写真もイクラカ似とるようだが、<persName ref="#yoshiko">ヨシ子</persName>では絶対にありませぬ。家出したのは四年前じゃが、チャンとした見覚えがあるから、間違いは御座らぬと云い切って、サッサと帰って行きおった」</p>
+        <p>「……馬鹿な。そんな事でゴマ化せるものか……」</p>
+        <p>「……涙一滴こぼさず。顔色一つかえずに、僕の前でそう云うたぞ」</p>
+        <p>「ウーン。ヒドイ奴だな。それから……」</p>
+        <p>「ウン。それからこれは昨日の事だが、女の下駄を売った<placeName ref="#oohama">大浜</placeName>の<placeName ref="#kanesa">金佐商店</placeName>に当らせて見ると、売った奴は店の小僧で、しかも昨日の朝早くだったので、服装や顔立ちがサッパリ要領を得ない。あとから新聞の写真を持って行って見せると、<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>になっとるもんだからイヨイヨ首をひねるんだ」</p>
+        <p>「フーン。困るな」</p>
+        <p>「それから<persName ref="#hayakawa">早川</persName>の下宿のお<ruby><rb>神</rb><rt>かみ</rt></ruby>も新聞の写真を見て、<persName ref="#hayakawa">早川</persName>さんの方は間違いないが、女の方は誰だかわからんようです……とウヤムヤな事を云いおるんだ。念のために<placeName ref="#saga">佐賀</placeName>署へ電話をかけて聞いて見ると、時枝の家族も口を揃えて、あの写真は家出した<persName ref="#yoshiko">ヨシ子</persName>さんではないと云うとるゲナ。しかし市中では君の新聞が引張り凧になっとるチウゾ」</p>
+        <p>「そうだろうとも……フフン……」</p>
+        <p>「つまり<persName ref="#tokieda-mozaemon">時枝</persName>のおやじは、屍体の顔がメチャメチャになっとるのを幸いに、家の名誉を思うて、娘を抹殺しようと思うとるんだね」</p>
+        <p>「フーン。そんなに名誉ってものは大切なものかな」</p>
+        <p>「何しろ<placeName ref="#saga">佐賀県</placeName>随一の多額納税だからナ」</p>
+        <p>「なおの事残酷じゃないか」</p>
+        <p>「もっとヒドイのはこっちの連中だ。第一色魔の<persName ref="#hayakawa">早川</persName>を昨夜下宿で引っ捕えて見ると、そんな女と関係した事は無い。夕刊に載っている女は、昨夜手切れの金を遣って別れた<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>というので、自分と関係する以前に姙娠しとった事が判明したから追い出したものだが、どこの生れだか本当の事はわからん。ホンの一時の関係だと強弁するし、産婆学校長の<persName ref="#aneha">姉歯</persName>医学士も、そんな世話をした覚えは絶対に無いと突き放すのだ」</p>
+        <p>「ダラシがないんだナ君等の仕事は……」</p>
+        <p>「証拠が無い以上、ドウにも仕様がないじゃないか。おまけに<ruby><rb>今朝</rb><rt>けさ</rt></ruby>になってから、<persName ref="#hayakawa">早川</persName>の下宿のお神の奴が、御叮嚀に<placeName ref="#hakozaki">筥崎</placeName>署へ電話をかけて、新聞の写真の<persName ref="#yoshiko">時枝ヨシ子</persName>さんは、<persName ref="#hayakawa">早川</persName>さんと一緒に居た<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>さんに違いありませんが、時枝という苗字ではありません。その<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>さんは、昨日<persName ref="#hayakawa">早川</persName>さんと別れ話が済んで、どこかへ行かれましたそうです。いずれにしても<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>さんを私が、時枝のお嬢さんと云ったおぼえはありませんから、ドウゾそのおつもりで……という白々しい口上だったそうだ。まるで警察が、寄ってたかって冷かしものにされとるようなあんばいだ」</p>
+        <p>「<persName ref="#hayakawa">早川</persName>医学士と、<persName ref="#tokieda-mozaemon">時枝</persName>のおやじと、轢死女の血を取って胎児の血液と比較すれば、すぐにわかる話じゃないか」</p>
+        <p>「他殺か何かなら、それ位のことをやって見る張り合いがあるけども、自殺じゃ詰らんからネエ……まだ他に事件が<ruby><rb>沢山</rb><rt>うん</rt></ruby>とあるもんだからトテも忙がしくて……」</p>
+        <p>「<persName ref="#hayakawa">早川</persName>や<persName ref="#aneha">姉歯</persName>は今どうしている」</p>
+        <p>「どうもしとらんさ。そのうちに<persName ref="#yanagawa-yoshie">柳川ヨシエ</persName>の行先がわかったら知らせます……そうしたら轢死女と違うかどうか、おわかりになりましょう……とか何とか<ruby><rb>吐</rb><rt>ぬ</rt></ruby>かしおって……」</p>
+        <p>「君の方じゃそれ以上突込まないのか」</p>
+        <p>「突込んでも無駄だと思うんだ。おれの睨んどるところでは、みんな昨日から昨夜のうちに、いくらか<ruby><rb>宛</rb><rt>ずつ</rt></ruby>、<persName ref="#tokieda-mozaemon">時枝</persName>のおやじに掴ませられとるらしいんだ。その黒幕はやっぱりアノ<persName ref="#aneha">姉歯</persName>の奴で、君の書いた夕刊を見るなり、<placeName ref="#saga">佐賀</placeName>の<persName ref="#tokieda-mozaemon">時枝</persName>へ電話か何か掛けおったんだろう」</p>
+        <p>「そうだ。それに違いないよ」</p>
+        <p>「君の新聞に書かれる前に、<ruby><rb>警察</rb><rt>こっち</rt></ruby>の手で引っぱたけば一も二もなかったんだが、すっかり手を廻しくさって……口を揃えて新聞記事を事実無根だと<ruby><rb>吐</rb><rt>ぬか</rt></ruby>すんだ」</p>
+        <p>「失敬な……」</p>
+        <p>と云いさして私は唇を噛んだ。気がつくと二人はいつの間にか工科前の終点で電車を降りて、往来のまん中で立話をしているのであったが、そういう私の顔をジッと見ていた<persName ref="#otsuka">大塚</persName>警部はチョット<ruby><rb>四囲</rb><rt>あたり</rt></ruby>を見まわすと、黄色い白眼をキラキラ光らせながら、一層顔を近付けた。</p>
+        <p>「君の手で確かな<ruby><rb>手証</rb><rt>てしょう</rt></ruby>を挙げてくれんか……エエ？……推定でない具体的な奴を……そいつを新聞に書く前に、僕の手に渡してくれれば、スッカリタタキ上げて君の方の<ruby><rb>特別記事</rb><rt>とくだね</rt></ruby>に提供するがね。君の手から出たタネだという事も、絶対秘密にするのは無論の事、将来キット恩に着るよ。あの記事が<ruby><rb>虚構</rb><rt>うそ</rt></ruby>となったら君の新聞でも困るじゃろう」</p>
+        <p>私は<ruby><rb>唸</rb><rt>うな</rt></ruby>り出したいほどジリジリするのを押えつけて、無理に微笑した。</p>
+        <p>「ウン……いずれ編輯長と相談して研究して見よう」</p>
+        <p>「ウン、是非頼むよ。ドウセイ<persName ref="#tokieda-mozaemon">時枝</persName>の娘に間違いはないんだから……話がきまったら電話をかけて<ruby><rb>呉給</rb><rt>くれたま</rt></ruby>え。屍体でも何でも見せるから……ウンウン……」</p>
+        <p><persName ref="#otsuka">大塚</persName>警部は一人で承知したように、形式だけ片手をあげると、クルリと私に背中を向けて、サッサと<placeName ref="#hakozaki">筥崎</placeName>署の方へ歩いて行った。そのうしろ姿を見送りながら私は、昨日のまま<ruby><rb>上衣</rb><rt>うわぎ</rt></ruby>のポケットに這入っている、<persName ref="#yoshiko">ヨシ子</persName>の名刺と質札を、汗ばむ程握り締めた。いつの間にか私自身が、<persName ref="#otsuka">大塚</persName>警部の手中に握り込まれていることに気が付いて……。</p>
+        <p>私は急に身を飜すと、案内知った法文学部の地下室へ駈け込んで、交換嬢に本社の編輯長を呼び出してもらった。</p>
+        <p>「モシモシ。僕は今法文学部の交換室からかけているんですがね。昨日の夕刊の記事ですね。あれは取消を申込んで来る奴があっても、絶対に受け付けないで下さい」</p>
+        <p>編輯長の上機嫌の声が受話機に響いた。</p>
+        <p>「ああ。わかっている。今朝六時頃にネエ。<placeName ref="#saga">佐賀</placeName>の<persName ref="#tokieda-mozaemon">時枝</persName>のオヤジが僕の処へ駈け込んで、取消しの記事を頼んだよ。それから<placeName ref="#kyudai">九大</placeName>の<persName ref="#terayama">寺山</persName>博士がツイ今しがた<ruby><rb>本社</rb><rt>ここ</rt></ruby>へやって来て、<persName ref="#hayakawa">早川</persName>という男は自分の処に居るには居るが、色魔云々の事実は無いようである。それから、これは眼科の<persName ref="#ushio"><ruby><rb>潮</rb><rt>うしお</rt></ruby></persName>教授の代理として云うのだが、時枝という看護婦が眼科に居た事もたしかだが、四箇月ばかり前からやめているので、新聞の写真と同一人であるかどうかは不明だ……といったような下らない事をクドクド云っていたが、どっちもいい加減にあしらって追い返しておいたよ」</p>
+        <p>「感謝します」</p>
+        <p>「あとの記事は無いかい」</p>
+        <p>「……あります……<persName ref="#tokieda-mozaemon">時枝</persName>のおやじと<placeName ref="#kyudai">九大</placeName>内科部長があなたの処へ<ruby><rb>揉</rb><rt>も</rt></ruby>み消しに来た事実があります」</p>
+        <p>「アハハハ、一本参ったナ。しかし何かそのほかに<persName ref="#tokieda-mozaemon">時枝</persName>の娘に相違ないという確証はないかい」</p>
+        <p>「あります……ここに持っています。死んだ娘が悲鳴をあげる奴を……」</p>
+        <p>「そいつは新聞に出せないかい」</p>
+        <p>「出してもいいですけど屍体を掻きまわして掴んで来たものなんです。検事局へ引っぱられるのはイヤですからネエ」</p>
+        <p>「いいじゃないか。あとは引受けるよ」</p>
+        <p>「……でも……あなたと一緒に飲めなくなりますから……」</p>
+        <p>「アハハハハ。そうかそうか。サヨナラ……」</p>
+        <p>「……サヨナラ……」</p>
+        <p>それから三四十日経った或る蒸し暑い晩の事、私は<placeName ref="#higashinakasu"><ruby><rb>東中洲</rb><rt>ひがしなかす</rt></ruby></placeName>のカフェーで偶然に私服を着た<persName ref="#otsuka">大塚</persName>警部に<ruby><rb>出会</rb><rt>でっくわ</rt></ruby>した。警部は誰かを探しているらしかったが、私が声をかけると、すぐに私の<ruby><rb>卓子</rb><rt>テーブル</rt></ruby>に来てビールを呼んだ。その顔を見ているうちにフト思い出して尋ねて見た。</p>
+        <p>「時にどうしたい……アノ事件は……」</p>
+        <p>「……アノ事件？……ウンあの事件か。あれあアノマンマサ。医学士は二人とも君のお筆先に驚いたと見えて、その後神妙にしているよ」</p>
+        <p>「イヤ。女の身許の一件さ」</p>
+        <p>「ウン。あれもそのまんまさ。今頃は共同墓地で骨になっているだろうよ。可哀相に君のお蔭で親に見棄てられた上に、恋人にまで見離された無名の骨が一つ出来たわけだ」</p>
+        <p>「……………………」</p>
+        <p>「何でも女が線路にブッ倒れてから間もなく、色男の医学士らしい、洋服の男が馳けつけて、懐中や帯の間を掻きまわして、証拠になるものを<ruby><rb>浚</rb><rt>さら</rt></ruby>って行ったという噂も聞いたが、その時刻にはその色男は、チャント下宿に居ったというからね。どうもおかしいんだ」</p>
+        <p>「……ウーン……おかしいね……」</p>
+        <p>「……とにかくあの<ruby><rb>別嬪</rb><rt>べっぴん</rt></ruby>は、君が抹殺したようなものだぜ。その色男というのは君だったかも知れんがネ……ハッハッハッまあええわ。久し振りに飲もうじゃないか」</p>
+        <p>二人はそれから盛んにビールを飲んだが、私は妙に<persName ref="#otsuka">大塚</persName>警部の云った事が気にかかって、どうしても酔えなかった。しまいには<ruby><rb>自棄気味</rb><rt>やけぎみ</rt></ruby>になって、警部が出て行くのを待ちかねてウイスキーを二三杯、立て続けに引っかけると、ヤット睡くなって来たが、ウトウトすると間もなく眼の底の空間に、空色のパラソルが一本、美しく光りながら浮き出した。そうしてフワリフワリと舞い上りつつ左手の方へ遠く遠く、小さく小さく消えて行った……と思うと又一つ同じパラソルがもとの処にホッカリと浮かみ出したが、それがだんだんと小さくなって、左手の方へ消えて行くのを見送るたんびに、私は何ともいえない、<ruby><rb>滅入</rb><rt>めい</rt></ruby>り込むような恐怖を感じはじめた。</p>
+        <p>私はハッと眼を見開いて、キョロキョロとそこいらを見まわした。そうしてその恐ろしさを打ち消すために、もう一杯、又一杯とグラスを重ねたが、飲めばのむ程その幻影がハッキリして来るのであった。しまいには美しいパラソルが、あとからあとから浮き出して、数限りなく空間を乱れ飛ぶようになった。</p>
+        <p>そのめまぐるしい空間を凝視しながら、私はガタガタとふるえ出した。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>その二　濡れた鯉のぼり</head>
+        <p>前のパラソル事件以来、私はピッタリと盃を手にしなくなった。それでも時折りはたまらなく<ruby><rb>咽喉</rb><rt>のど</rt></ruby>が鳴るのであったが、飲めば必ず酔う……酔えばキット空色のパラソルの<ruby><rb>幻影</rb><rt>イリュージョン</rt></ruby>を見る……ガタガタと慄え出す……という不可抗力のつながりに脅かされて、とうとう絶対の禁酒状態に陥ってしまったので、そんな事を知らない<ruby><rb>連中</rb><rt>みんな</rt></ruby>を、かなり不思議がらせたらしい。何しろ飲み<ruby><rb>旺</rb><rt>さか</rt></ruby>っている絶頂だったので、以前の飲み仲間なぞは、一時真剣に心配したり冷かしたりして、手を換え品を換えて詰問したものであるが、私は唯ニヤニヤと笑うばかりで一言も説明らしい説明をしなかった……否、説明したくなかった……というのが本当の説明であったろう。そうしてそのお蔭という訳でもないが、事実はやはりそのおかげに違いなかったであろう、私は間もなく社長の<ruby><rb>媒妁</rb><rt>ばいしゃく</rt></ruby>で妻を迎えたのであった。</p>
+        <p>私の禁酒を不思議がっていた連中は、そこでやっと訳がわかったような顔をして、盛んに私を冷かしたものであった。けれども私は依然としてニヤニヤのまま押し通した。そうして<placeName ref="#fukuoka">福岡</placeName>から二里半ばかり東北の<placeName ref="#kashiimura"><ruby><rb>香椎</rb><rt>かしい</rt></ruby>村</placeName>に、二人切りの新世帯を作って、そこから汽車で<placeName ref="#fukuoka">福岡</placeName>へ通勤することにしたが、しかし私は、その新妻から尋ねられた時にも、やはりニヤニヤと笑った切り「酒が飲めなくなったわけ」を説明しないで済ましたのであった……パラソルの女を見殺しにしたお蔭で、お前と結婚した……という結論になるのが、何となくイヤでたまらなかったので……。</p>
+        <p>ところがそれから一年足らず経過した、翌年の<date when="--05-10">五月十日</date>の或る曇った朝のこと……九州本線の下り列車は、いつもの通り風光明媚な<placeName ref="#kashiigata">香椎潟</placeName>を横断して、<placeName ref="#tataragawa"><ruby><rb>多々羅</rb><rt>たたら</rt></ruby>川</placeName>の鉄橋を越えて、前の事件の<ruby><rb>背景</rb><rt>バック</rt></ruby>になった、<placeName ref="#jizomatsubara">地蔵松原</placeName>の入口で大曲りをすると、一直線に<placeName ref="#hakozaki-eki">筥崎駅</placeName>まで、ステキに気持ちのいいスピードをかけるのであったが、その線路の南側に展開する麦畑や、菜種畑のモザイクを、松原越しに眺めるともなく眺めて行くうちに、フト妙なものが私の眼に止まった。</p>
+        <p>松原の中に一町四方ばかりの<ruby><rb>墓原</rb><rt>はかはら</rt></ruby>がある。その南の端の、すこし離れた処に在る、小さな白木の墓標の前に、赤と、青と、黒と、大小三匹の鯉を繋いだ、低い<ruby><rb>幟棹</rb><rt>のぼりざお</rt></ruby>が立っている……と思ううちにその光景は、松の幹の重り合った蔭になってしまった。</p>
+        <p>……この頃死んだ男の子の墓だな……と思うと、私は何とも云えないイヤナ気持ちになった。ジッと眼を閉じると間もなく、薄暗く、ダラリと垂れた<ruby><rb>鯉幟</rb><rt>こいのぼり</rt></ruby>の姿が、又もアリアリと<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>の内側に現われたので、思わず頭を強く振った。</p>
+        <p>しかし<placeName ref="#hakozaki-eki">筥崎駅</placeName>で汽車が停ると、私は妙に降りて見たくなった。それでも暫く躊躇して考えていたが、発車間際に思い切って飛び降りて見ると、今度は是が非でも今一度、あの墓原へ行かなければならないような気持になった。それは一種の新聞記者本能で、あの墓原の鯉幟が、何かしら面白い記事になりそうに直感されたからでもあったろう……が……一方から考えるとこの時既に、アノ鯉のぼりが象徴している不可思議な、悪魔的な魅力が、グングンと私の心を引き寄せていたのかも知れない。とうとう社へ出るのを後まわしにして、鉄道線路を十五六町程引返すと、最前の墓原へやって来た。</p>
+        <p>幟棹は墓地の最南端の、麦畑や村落を見晴らした処に<ruby><rb>樹</rb><rt>た</rt></ruby>てられていた。二間ばかりの細い杉丸太の根元を、砂の中に埋めたもので、大小三匹の紙製の鯉は、いずれも数日前からブラ下っていたものらしく、上の方の一番大きな<ruby><rb>緋鯉</rb><rt>ひごい</rt></ruby>も、その次の青も、その下の小さな黒鯉も、雨や夜露に打たれて色が<ruby><rb>剥</rb><rt>は</rt></ruby>げ落ちたまま、互いにピシャンコになってヘバリ附き合っている。その中でも一番下の黒鯉は、半分以上白鯉になっているのに、上の二匹から滴り落ちた赤と青のインキをダラダラと浴びて、さながら血まみれになっているようで、白い砂の上に引きずった尾の<ruby><rb>周囲</rb><rt>まわり</rt></ruby>は勿論のこと、幟棹の根元から、白木の墓標の横腹へかけていろんな毒々しい、気味わるい色の<ruby><rb>飛沫</rb><rt>したたり</rt></ruby>を一パイに<ruby><rb>撒</rb><rt>ま</rt></ruby>き散らしたまま、ダラリと静まり返っている。ただ、棹の上に取り付けてある<ruby><rb>矢</rb><rt>や</rt></ruby>の<ruby><rb>羽型</rb><rt>はがた</rt></ruby>の風車が、これも彩色を無くしたまま、時折り、あるか無いかの風を受けて廻転しかけては、ク――ック――ッと陰気な音を立てているばかり……空は一面の灰色に曇って、今にも降り出しそうである。</p>
+        <p>私は白砂の染まった処を踏まないように、グルリと遠まわりをして、小さな松の角材で建てられた、墓標の表面を覗いて見たが、又も奇怪な事実を発見したので、思わず<ruby><rb>唾</rb><rt>つば</rt></ruby>を嚥み込んだ……<ruby><rb>真黒々</rb><rt>まっくろぐろ</rt></ruby>になるほど<ruby><rb>浸</rb><rt>し</rt></ruby>み流れた墨汁の中に「<persName ref="#tsuyako">花房ツヤ子</persName>之墓」と書いた<ruby><rb>拙</rb><rt>まず</rt></ruby>い楷書が威張っている。裏の文字を見ると「……<date when="--04">四月三十一日</date>卒……行年二十三歳……」とある……ツイ十日ばかり前に出来た仏様である。</p>
+        <p>……若い女の墓と……鯉幟と……心の中で繰り返しつつ、私は暫くの間石のように立ち<ruby><rb>竦</rb><rt>すく</rt></ruby>んでいたが、やがて思い出したように横を向いて唾を吐いた。</p>
+        <p>それから二十分程経つと、私は<placeName ref="#hakozaki">筥崎</placeName>の町役場へ行って死亡届を調べていた。そうして、それから又、十分ばかりの後には、<placeName ref="#hakozakigu">筥崎八幡宮</placeName>の裏手の森蔭に「<persName ref="#keigo">花房敬吾</persName>」と標札を打った、長屋風の格子戸の前に突立っていた。</p>
+        <p>「……御免下さい……お頼み申します……御免下さい……」</p>
+        <p>と二三度繰り返すと、何の返事も無いままに、格子の中の玄関の破れ<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>がガタガタと<ruby><rb>開</rb><rt>あ</rt></ruby>いた。</p>
+        <p>「……<persName ref="#keigo">敬吾</persName>かえ……」</p>
+        <p>と云うシャガレた声が聞えると間もなく、一人の老婆が、障子に<ruby><rb>縋</rb><rt>すが</rt></ruby>り付くようにして這い出して来た。</p>
+        <p>私は又もやドキンとさせられた。古い格子越しに見ると、その老婆は、黄色い<ruby><rb>胡麻塩</rb><rt>ごましお</rt></ruby>頭が<ruby><rb>蓬々</rb><rt>ほうほう</rt></ruby>と乱れて、全身が死人のように生白く、ドンヨリと霞んだ青い瞳を二ツ見開いて、一本も歯の無い白茶気た口を、サモ嬉しそうにダラリと<ruby><rb>開</rb><rt>あ</rt></ruby>いている。<ruby><rb>身体</rb><rt>からだ</rt></ruby>には垢だらけの手拭<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>を着て、赤い細帯を捲きつけていたが、帽子を取った私の顔を見上げると、みるみる暗い、<ruby><rb>萎</rb><rt>しな</rt></ruby>び込んだ表情にかわってしまった。</p>
+        <p>「ドナタサマデ……アナタ……」</p>
+        <p>と頭を下げつつゴックリと唾を呑んだ。</p>
+        <p>私は返事するのを躊躇した。この<ruby><rb>新聞材料</rb><rt>たね</rt></ruby>にぶつかった最初から受け続けている、何とも云えないイヤナ感じを、ここでもっと突込んでみようか……それともこの辺で思い切ってしまって、もっと明るいキビキビした、ほかの<ruby><rb>材料</rb><rt>たね</rt></ruby>に乗り換えようかと、一瞬間思い迷った。けれどもその時に私は、今までの惰力とでもいうべき一種の気持ちに押されて、ツイ間に合わせの返事をしてしまった。</p>
+        <p>「……エエ……<persName ref="#keigo">敬吾</persName>君と以前御交際を願っておりました……<persName ref="#wada">和田</persName>というものですが……」</p>
+        <p>「オオオオ、それはそれは。まあお這入り下さいまし。お上り下さいまし。……アナタ……」</p>
+        <p>と云ううちに老婆は、古ぼけた畳の上を、赤ん坊のようにベタベタと這いながら引込んで行った。そのあとを見送って考えていた私は、やがて又、思い切って格子戸を開いた。</p>
+        <p>家は二畳の玄関と、一坪ほどの台所と便所と、八畳の座敷に押入れと床の間という、古ぼけた長屋みたような<ruby><rb>瓦落多普請</rb><rt>がらくたぶしん</rt></ruby>であるが、家具らしいものはあまり見えない。座敷は両側とも雨戸を閉めて、<ruby><rb>蚊帳</rb><rt>かや</rt></ruby>が一パイに釣ってあるので、化物屋敷のように暗い上に、<ruby><rb>黴臭</rb><rt>かびくさ</rt></ruby>いような、小便臭いような<ruby><rb>臭気</rb><rt>におい</rt></ruby>が、足を踏み込むと同時にムッとした。しかし老婆は暗闇に慣れていると見えて、平気で蚊帳の裾を這いながら、縁側から台所の方へまわって行った。私もそのあとから蚊帳を<ruby><rb>押</rb><rt>お</rt></ruby>し<ruby><rb>除</rb><rt>の</rt></ruby>け押し除けして、雨戸の内側の縁側の板張りへ出たが、そのついでに蚊帳の中を覗いてみると、寝床が三ツ敷いてあって、床の間の前に<ruby><rb>括</rb><rt>くく</rt></ruby>り枕が一つと、台所側に高枕が二つ並べてある。その高枕と括り枕との間に、新らしいメリンスの小さな布団と、赤い枕がキチンと置いてあるのは赤ん坊の寝床であろう。夫婦と老婆が寝ていたものとも思われるが、妻女は死んでいる筈だから、寝床が三つあるのはヘンテコである。しかも役場の戸籍面には妻女の死亡が届け出てあるだけで、赤ん坊の事は何とも書いてないのに……アノ鯉幟……この小さな新しい布団……おまけに今は真ッ昼間ではないか……。</p>
+        <p>私は進退<ruby><rb>谷</rb><rt>きわ</rt></ruby>まったような気持ちで、帽子を持ったまま縁側に<ruby><rb>跼</rb><rt>しゃが</rt></ruby>んだ。<ruby><rb>白昼</rb><rt>ひるま</rt></ruby>でありながらソンナ気がチットモしない。雨戸を洩れる光線が、月の光りのように白く見えて、ヒッソリとした静けさが身に迫って来る。今にも突然に老婆がワアと云って振り返ったら……なぞとあられもない事を考えているうちに、台所に首を突込んでゴソゴソやっていた老婆は、片手に茶碗を持ちながらヨタヨタと這いもどって来た。</p>
+        <p>「ヘイ……つめたいお茶を一ツ……おあてものも御座いませんで……アナタ……」</p>
+        <p>「……ヤッ……どうもありがとう……どうぞお構いなく……」</p>
+        <p>と大きな声で云いながら、私は余儀なく板張りに坐り込んだ。老婆も私とさし向いに坐ったが、瘠せ枯れた白い手で襟元を直して、<ruby><rb>蓬々</rb><rt>ほうほう</rt></ruby>と<ruby><rb>逆立</rb><rt>さかだ</rt></ruby>った<ruby><rb>髪毛</rb><rt>かみ</rt></ruby>を撫で上げた。戸籍面によるとこの老婆は<persName ref="#oshino">オシノ</persName>といって、<persName ref="#keigo">敬吾</persName>の祖母に当る<date when="1848">嘉永</date>生れの高齢者であるが、耳も眼もシッカリしているようで、気持ちも存外確からしい。</p>
+        <p>私は心安いような態度で茶碗を口に近づけて、<ruby><rb>一</rb><rt>ひ</rt></ruby>ト口飲む真似をした。そうしてブッキラボーに口を利いた。</p>
+        <p>「<persName ref="#keigo">敬吾</persName>君はいつ頃お帰りで……」</p>
+        <p>老婆は眼をショボショボとしばたたいた。右の眼の下の<ruby><rb>皺</rb><rt>しわ</rt></ruby>を、口と一緒に<ruby><rb>歪</rb><rt>ゆが</rt></ruby>まして、ペロリと一つ舌なめずりをしたが、やがて又、淋しい、たよりないシャガレ声を出して、</p>
+        <p>「……ハ――イ。もう帰る頃と思いますが……アナタ……」</p>
+        <p>と云いつつ私を見詰めると、モクモクと口を動かした。その疑うような白い眼付きを見ると、私はたまらない程奇妙な気持ちになったので、新聞の事も何も忘れてしまって、取って附けたようにお辞儀をした。</p>
+        <p>「それじゃ……いずれ又……」</p>
+        <p>「……ア……さようで……アナタ……」</p>
+        <p>そう云いながら老婆は、何かもっと云いたいような顔付きをしたが、又モクモクと口を動かすと、黙り込んでしまった。</p>
+        <p>「ドウゾお構いなく、いずれ又そのうちに……どうぞ<ruby><rb>宜</rb><rt>よろ</rt></ruby>しく……」</p>
+        <p>と切れ切れに云い云い玄関に出て、靴に足を突込むや否や表に飛び出して、格子戸をピシャリと閉めた。<persName ref="#oshino">オシノ</persName>婆さんが這いずりながら、追っかけて来るような気がしたので……。</p>
+        <p>それから一町ばかりのあいだを、スッカリ失望した気持ちになって、小急ぎに歩いた私は、<ruby><rb>八幡</rb><rt>はちまん</rt></ruby>前の賑やかな通りへ出る四五軒手前の荒物屋の前まで来ると、フト立ち止ってその店の中へ這入った。</p>
+        <p>「バットがありますか」</p>
+        <p>「<ruby><rb>入</rb><rt>い</rt></ruby>らっしゃいませ」</p>
+        <p>とステキに明るい声が奥の方からして、デブデブに肥った四十恰好のお<ruby><rb>神</rb><rt>かみ</rt></ruby>さんが、乳呑み児を横すじかいに引っ抱えながら出て来た。その<ruby><rb>脂切</rb><rt>あぶらぎ</rt></ruby>った笑い顔を見ると、私はホッと救われたような気持ちになって、バットを<ruby><rb>三個</rb><rt>みっつ</rt></ruby>ばかり受け取ったが、とりあえず一本引き出して吸口をつけながら、こころみに聞いて見た。</p>
+        <p>「この向うに花房って<ruby><rb>家</rb><rt>うち</rt></ruby>がありますね」</p>
+        <p>「ヘエ……」</p>
+        <p>と私の顔を見たお神さんは、急に笑い顔をやめて、大きくうなずいた。</p>
+        <p>「あの<ruby><rb>家</rb><rt>うち</rt></ruby>のお嫁さんは死んだんですか」</p>
+        <p>「ヘエ……」</p>
+        <p>と云いながらお神さんは、一層<ruby><rb>魘</rb><rt>おび</rt></ruby>えた表情になって、唾をグッと<ruby><rb>嚥</rb><rt>の</rt></ruby>み込んだ、私は<ruby><rb>占</rb><rt>し</rt></ruby>めたと思いながら帳場に近づいて、火鉢の<ruby><rb>炭団</rb><rt>たどん</rt></ruby>にバットを押しつけた。</p>
+        <p>「マッチでお<ruby><rb>点</rb><rt>つ</rt></ruby>けなさいまっせえ。炭団では火がつき<ruby><rb>悪</rb><rt>にく</rt></ruby>う御座いますけん」</p>
+        <p>と云ううちにお神さんは、私の横にベッタリと腰をかけて、マッチの箱をさし出した。このお神さんはあの<ruby><rb>家</rb><rt>うち</rt></ruby>の事を<ruby><rb>喋舌</rb><rt>しゃべ</rt></ruby>りたがっているナ……と私は直覚した。</p>
+        <p>それから根掘り葉掘りして、私一流の質問を続けてみると、果してお神さんの説明は、一々興味深い新聞種になって行った。但、筋は極めて単純であった。</p>
+        <p><persName ref="#keigo">花房</persName>というのは現在、<placeName ref="#fukuoka">福岡</placeName>の電燈会社の工夫をやっている男で、昨年の春に<persName ref="#oshino">オシノ</persName>という高齢の祖母と、若い<ruby><rb>嫁女</rb><rt>よめじょ</rt></ruby>の<persName ref="#tsuyako">ツヤ子</persName>を連れて、この町内の現在の家に引越して来た者であるが、夫婦仲は云うまでもなく、<persName ref="#oshino">オシノ</persName>婆さんと嫁女の<persName ref="#tsuyako">オツヤ</persName>との仲が、親身の間柄でも珍らしいくらい睦まじいので、近所の評判になっていた。<persName ref="#keigo">敬吾</persName>がつとめに出かけた留守中に、嫁女の<persName ref="#tsuyako">ツヤ子</persName>が<persName ref="#oshino">オシノ</persName>婆さんの手を引いて、程近い<placeName ref="#hakozakigu">八幡様</placeName>の境内を散歩させたり、お湯に連れて行く光景などを、近くの人はよく見かけた。<persName ref="#keigo">敬吾</persName>が一時やめていた晩酌を、<persName ref="#oshino">オシノ</persName>婆さんが嫁女にすすめて、無理に又はじめさせたというような噂までも伝わった。</p>
+        <p>ところがそのうちに嫁女が姙娠したことがわかると、<persName ref="#oshino">オシノ</persName>婆さんは<placeName ref="#hakozakigu">八幡様</placeName>へ<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>しなくなった。</p>
+        <p>「お前が転びでもすると私が<persName ref="#keigo">敬吾</persName>に申訳けがない。<ruby><rb>孩児</rb><rt>ややこ</rt></ruby>の着物も私が縫うてやるけに、成るだけ無理をせんようにしなさい。その代りキット男の子を生みなさいよ」</p>
+        <p>と寝ても醒めても云っていた。嫁女も素直に笑いながら、</p>
+        <p>「ハイ……キット男の子を生みます」</p>
+        <p>と請け合っている……という話を、亭主の<persName ref="#keigo">敬吾</persName>が煙草を買いに来たついでに、お神さんに話して聞かせた。</p>
+        <p>するとそのうちに嫁女がチブスに<ruby><rb>罹</rb><rt>かか</rt></ruby>って、今から十日ばかり前の事、五月目の男の子を死産して死ぬると、亭主の<persName ref="#keigo">敬吾</persName>は何と思ったか、通夜の晩から、大酒を飲んで<ruby><rb>管</rb><rt>くだ</rt></ruby>を捲きはじめた。</p>
+        <p>「……<ruby><rb>嬶</rb><rt>かかあ</rt></ruby>は死ぬが死ぬまで<ruby><rb>譫言</rb><rt>うわごと</rt></ruby>に、鯉幟のことばかり云うとったから、法事が済んだら一つ素晴らしいのをお墓に立ててやろうと思う。それが一番のお供養だナアお祖母さん」</p>
+        <p>と大声で何遍も何遍も繰り返すので、通夜に来ていた近所の人々は、ジッとしていられないような気持になった。胎児と母親の野辺送りをした帰りがけにも、<persName ref="#keigo">敬吾</persName>はトロンとした眼で、白木の墓標をふりかえって、</p>
+        <p>「もうじきに大きな奴を立ててやるぞ。アハハハハハ」</p>
+        <p>と高笑いをしたので皆、顔をそむけたという。</p>
+        <p>けれども<persName ref="#keigo">敬吾</persName>は、その帰り道にどう気がかわったものか、郵便局に残っていた二百円ばかりの貯金を引き出すと、その<ruby><rb>夜</rb><rt>よ</rt></ruby>から行方を<ruby><rb>晦</rb><rt>くら</rt></ruby>ましてしまった。何しろ<ruby><rb>家</rb><rt>うち</rt></ruby>には高齢の<persName ref="#oshino">オシノ</persName>婆さんが置き去りにして在るので、近所の者も心配して、二三人手を分けて行方を探しているが、今のところ皆目わからない。<placeName ref="#yanagimachi">柳町</placeName>の遊廓で見かけたという者もあるが、それも今では当てにはならなくなっている。一方に<persName ref="#oshino">オシノ</persName>婆さんは、少しばかり残っている米で<ruby><rb>粥</rb><rt>かゆ</rt></ruby>を作って喰べているが、近所の人が同情をして物を呉れても、</p>
+        <p>「いずれ近いうちに<persName ref="#keigo">敬吾</persName>が帰って来ましょうから、お構い下さいませんように……ヘエ……アナタ……」</p>
+        <p>と云って突返すので、</p>
+        <p>「<ruby><rb>折角</rb><rt>せっかく</rt></ruby>ヒトが心配してやっているのに……」</p>
+        <p>と<ruby><rb>面憎</rb><rt>つらに</rt></ruby>くがっている者もある。……ところがこの婆さんは、チョット見たところシッカリしているようであるが、実はもうすっかり<ruby><rb>耄碌</rb><rt>もうろく</rt></ruby>しているので、雨戸の隙間から覗いてみると、夜も昼も蚊帳を釣り放して、いつもの通りに床を取った上に、自分が縫った「<ruby><rb>孩児</rb><rt>やや</rt></ruby>さんの赤い布団」まで並べて待っている様子なので、近所の者はトテモ気味悪がっている。ことに依ると夫婦と子供三人で、出かけたあとの留守番をしているつもりかも知れないが、誰もそんな事を尋ねて見るものは無い。何にしても当り前でない婆さんが、タッタ一人で<ruby><rb>煮焚</rb><rt>にた</rt></ruby>きをするので、まことに不要心だから、警察に届けようか、どうしようかと相談しいしい今日まで来ている。<ruby><rb>尤</rb><rt>もっと</rt></ruby>も、もう二三日すると<ruby><rb>二七日</rb><rt>ふたなぬか</rt></ruby>が来るから、事に依ると<persName ref="#keigo">敬吾</persName>が帰って来るかも知れぬが……というのがお神さんの話の概要であった。</p>
+        <p>私は礼を云って荒物屋を出ると又引っかえして、花房の近所をまわって、二三の事実を確かめてから本社へ帰った。</p>
+        <p>「……死んだ愛妻と胎児の墓に、鯉幟を立てて行方を<ruby><rb>晦</rb><rt>くら</rt></ruby>ました男……あとに餓死を待つ高齢の祖母……」</p>
+        <p>といったような記事が、その墓の鯉幟と、蚊帳の前に坐った老婆の写真と一緒に出たのは、あくる日の朝刊であった。それを台所で読んだ私の妻が、</p>
+        <p>「マア。誰がこんなイヤな記事を書いたんでしょう」</p>
+        <p>と云ったので私は思わず苦笑させられた。</p>
+        <p>『記者様――</p>
+        <p>私ハ、アナタノ新聞ノ記事ヲ読ンデカラ眼ガ醒メマシタ。私ハ妻子ヲ失ッタ悲シサノタメニ酒色ニ溺レテ、恵ミ深イ大恩アル祖母ノ事ヲ忘レテオリマシタ。<placeName ref="#yanagimachi">柳町</placeName>、<placeName ref="#oohama">大浜</placeName>ト飲ミマワッテ、化粧ノ女ト遊ビ狂ウテオリマシタ。ソウシテ、アノ新聞記事ヲ見マシテカラ、ヤット昨晩、家ニ帰ッテ見マシタラ、祖母ハ蚊帳ノ釣手ニ、妻ノ赤イ細帯ヲカケテ、首ヲククッテ死ンデオリマシタ。足ノ下ニ<ruby><rb>御社</rb><rt>おんしゃ</rt></ruby>ノ新聞ノ、アノ写真ノトコロガ拡ゲテ置イテアリマシタ。誰カ近所ノ親切ナ人ガ投ゲ込ンデ下サッタノデショウ。</p>
+        <p>記者様――</p>
+        <p>アノ鯉幟ノ棹ハ、私ガ酔ッタ勢イデ立テタモノデスガ、ソレガ記者様ノオ眼ニ止マッテ、コンナ不孝ナ恥ヲ<ruby><rb>晒</rb><rt>さら</rt></ruby>ソウトハ夢ニモ思イマセンデシタ。シカシ私ハ、ドナタ様モ怨ミマセン。何モカモ、私ガ修養ガ足リナイタメニ、起ッタ事デス。私ハ皆様ニ対シテ申訳アリマセンカラ自殺シマス。ドウゾコノ大馬鹿者ノ最期ヲ、アナタノ筆デ、デキルダケ大キク世間ニ発表シテ下サイ。御社ノ御繁栄ヲ祈リマス。</p>
+        <p><date when="--05-11">五月十一日</date><persName ref="#keigo">花房敬吾</persName></p>
+        <p>福岡時報　記者様』</p>
+        <p>編輯長は、洋半紙に鉛筆で書いたこの手紙を、私の前に投げ出しながらフフンと笑った。</p>
+        <p>「ツイ今しがた来たんだ。その男はその手紙をポストに入れると、<ruby><rb>嬶</rb><rt>かかあ</rt></ruby>の墓に参って、幟の細引を首に捲いて、鯉と一緒にブランコ往生をしていたんだ。二時間ばかり前に、あの松原を通った下り列車の乗客が見つけたんだがね、足下にウイスキーの小瓶がタタキ付けたったそうだよ……ハハハハハ」</p>
+        <p>私は茫然として編輯長の顔を凝視した。編輯長はやはり冷笑を浮めながら云った。</p>
+        <p>「君の筆もだいぶ立つようになったね」</p>
+        <p>私は笑いもドウもし得ないまま、何がなしにうなだれてしまった。帽子を片手にスゴスゴと編輯室を出て、一気に階段を駈け降りた。</p>
+        <p><placeName ref="#higashinakasu">東中洲</placeName>のカフェーに飛び込むと、昔なじみの女給連中が、<ruby><rb>鬨</rb><rt>とき</rt></ruby>の声をあげて立ち上って来た。</p>
+        <p>「……まあ……めずらしいじゃないの……まあ……」</p>
+        <p>「どうしたの……あんたは……この頃……」</p>
+        <p>「いらっしゃアアい」</p>
+        <p>私は薄暗い<ruby><rb>雪洞</rb><rt>ぼんぼり</rt></ruby>の蔭から、眼を据えて睨み付けた。</p>
+        <p>「<ruby><rb>八釜</rb><rt>やかま</rt></ruby>しい……ウイスキーを持って来るんだ」</p>
+        <p>そう怒鳴り付けた私の眼の前に、早くもあの鯉幟の幻影が浮かみあらわれた。黒と、緑と、赤の<ruby><rb>滴雫</rb><rt>したたり</rt></ruby>を、そこいら中に引きずり散らした……ダラリと垂れ下がった……。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,19 @@
+{
+  "slug": "saruakani",
+  "url": "https://www.aozora.gr.jp/cards/000879/files/140_15196.html",
+  "card": "https://www.aozora.gr.jp/cards/000879/card140.html",
+  "title": "猿蟹合戦",
+  "author": "芥川龍之介",
+  "fixes": {},
+  "persons": {
+    "kropotkin": ["クロポトキン", "ピョートル・クロポトキン(1842-1921)。ロシアの思想家。『相互扶助論』の著者として言及される実在人物"]
+  },
+  "places": {
+    "tengoku": ["天国", null, null, "宗教的世界観上の場所。死刑執行後に関係者が夢に見た「天国の門」として言及される(座標なし)"]
+  },
+  "tags": [
+    ["pers", "クロポトキン", "kropotkin"],
+    ["place", "天国", "tengoku"],
+    ["date", "大正十二年二月", "1923-02"]
+  ]
+}

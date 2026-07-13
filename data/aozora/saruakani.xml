@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>猿蟹合戦</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>猿蟹合戦</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「芥川龍之介全集5」ちくま文庫、筑摩書房。1987（昭和62）年2月24日第1刷発行。1995（平成7）年4月10日第6刷発行。底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card140.html">https://www.aozora.gr.jp/cards/000879/card140.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="kropotkin">
+        <persName>クロポトキン</persName>
+        <note>ピョートル・クロポトキン(1842-1921)。ロシアの思想家。『相互扶助論』の著者として言及される実在人物</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="tengoku">
+        <placeName>天国</placeName>
+        <note>宗教的世界観上の場所。死刑執行後に関係者が夢に見た「天国の門」として言及される(座標なし)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>猿蟹合戦</head>
+        <p><ruby><rb>蟹</rb><rt>かに</rt></ruby>の握り飯を奪った<ruby><rb>猿</rb><rt>さる</rt></ruby>はとうとう蟹に<ruby><rb>仇</rb><rt>かたき</rt></ruby>を取られた。蟹は<ruby><rb>臼</rb><rt>うす</rt></ruby>、<ruby><rb>蜂</rb><rt>はち</rt></ruby>、卵と共に、<ruby><rb>怨敵</rb><rt>おんてき</rt></ruby>の猿を殺したのである。――その話はいまさらしないでも<ruby><rb>好</rb><rt>よ</rt></ruby>い。ただ猿を仕止めた<ruby><rb>後</rb><rt>のち</rt></ruby>、蟹を始め同志のものはどう云う運命に<ruby><rb>逢着</rb><rt>ほうちゃく</rt></ruby>したか、それを話すことは必要である。なぜと云えばお<ruby><rb>伽噺</rb><rt>とぎばなし</rt></ruby>は全然このことは話していない。</p>
+        <p>いや、話していないどころか、あたかも蟹は穴の中に、臼は台所の<ruby><rb>土間</rb><rt>どま</rt></ruby>の隅に、蜂は<ruby><rb>軒先</rb><rt>のきさき</rt></ruby>の蜂の巣に、卵は<ruby><rb>籾殻</rb><rt>もみがら</rt></ruby>の箱の中に、太平無事な生涯でも送ったかのように<ruby><rb>装</rb><rt>よそお</rt></ruby>っている。</p>
+        <p>しかしそれは<ruby><rb>偽</rb><rt>いつわり</rt></ruby>である。彼等は<ruby><rb>仇</rb><rt>かたき</rt></ruby>を取った後、警官の<ruby><rb>捕縛</rb><rt>ほばく</rt></ruby>するところとなり、ことごとく<ruby><rb>監獄</rb><rt>かんごく</rt></ruby>に投ぜられた。しかも<ruby><rb>裁判</rb><rt>さいばん</rt></ruby>を重ねた結果、<ruby><rb>主犯</rb><rt>しゅはん</rt></ruby>蟹は死刑になり、臼、蜂、卵等の共犯は無期徒刑の宣告を受けたのである。お<ruby><rb>伽噺</rb><rt>とぎばなし</rt></ruby>のみしか知らない読者はこう云う彼等の運命に、<ruby><rb>怪訝</rb><rt>かいが</rt></ruby>の念を持つかも知れない。が、これは事実である。<ruby><rb>寸毫</rb><rt>すんごう</rt></ruby>も疑いのない事実である。</p>
+        <p><ruby><rb>蟹</rb><rt>かに</rt></ruby>は蟹自身の言によれば、握り飯と<ruby><rb>柿</rb><rt>かき</rt></ruby>と交換した。が、猿は<ruby><rb>熟柿</rb><rt>じゅくし</rt></ruby>を与えず、<ruby><rb>青柿</rb><rt>あおがき</rt></ruby>ばかり与えたのみか、蟹に傷害を加えるように、さんざんその柿を投げつけたと云う。しかし蟹は猿との<ruby><rb>間</rb><rt>あいだ</rt></ruby>に、一通の証書も取り<ruby><rb>換</rb><rt>か</rt></ruby>わしていない。よしまたそれは<ruby><rb>不問</rb><rt>ふもん</rt></ruby>に附しても、握り飯と柿と交換したと云い、熟柿とは特に<ruby><rb>断</rb><rt>ことわ</rt></ruby>っていない。最後に青柿を投げつけられたと云うのも、猿に悪意があったかどうか、その<ruby><rb>辺</rb><rt>へん</rt></ruby>の証拠は不十分である。だから蟹の弁護に立った、雄弁の名の高い某弁護士も、裁判官の同情を乞うよりほかに、策の出づるところを知らなかったらしい。その弁護士は気の毒そうに、蟹の泡を拭ってやりながら、「あきらめ給え」と云ったそうである。もっともこの「あきらめ給え」は、死刑の宣告を下されたことをあきらめ給えと云ったのだか、弁護士に<ruby><rb>大金</rb><rt>たいきん</rt></ruby>をとられたことをあきらめ給えと云ったのだか、それは誰にも決定出来ない。</p>
+        <p>その上新聞雑誌の<ruby><rb>輿論</rb><rt>よろん</rt></ruby>も、蟹に同情を寄せたものはほとんど一つもなかったようである。蟹の猿を殺したのは<ruby><rb>私憤</rb><rt>しふん</rt></ruby>の結果にほかならない。しかもその私憤たるや、<ruby><rb>己</rb><rt>おのれ</rt></ruby>の無知と<ruby><rb>軽卒</rb><rt>けいそつ</rt></ruby>とから猿に利益を占められたのを<ruby><rb>忌々</rb><rt>いまいま</rt></ruby>しがっただけではないか？　優勝劣敗の世の中にこう云う私憤を<ruby><rb>洩</rb><rt>も</rt></ruby>らすとすれば、愚者にあらずんば狂者である。――と云う非難が多かったらしい。現に商業会議所会頭某<ruby><rb>男爵</rb><rt>だんしゃく</rt></ruby>のごときは大体<ruby><rb>上</rb><rt>かみ</rt></ruby>のような意見と共に、蟹の猿を殺したのも多少は流行の危険思想にかぶれたのであろうと論断した。そのせいか蟹の<ruby><rb>仇打</rb><rt>かたきう</rt></ruby>ち以来、某男爵は壮士のほかにも、ブルドッグを十頭<ruby><rb>飼</rb><rt>か</rt></ruby>ったそうである。</p>
+        <p>かつまた蟹の仇打ちはいわゆる識者の<ruby><rb>間</rb><rt>あいだ</rt></ruby>にも、<ruby><rb>一向</rb><rt>いっこう</rt></ruby>好評を博さなかった。大学教授某<ruby><rb>博士</rb><rt>はかせ</rt></ruby>は倫理学上の見地から、蟹の猿を殺したのは<ruby><rb>復讐</rb><rt>ふくしゅう</rt></ruby>の意志に<ruby><rb>出</rb><rt>で</rt></ruby>たものである、復讐は善と称し難いと云った。それから社会主義の某首領は蟹は柿とか握り飯とか云う私有財産を<ruby><rb>難有</rb><rt>ありがた</rt></ruby>がっていたから、臼や蜂や卵なども反動的思想を持っていたのであろう、事によると<ruby><rb>尻押</rb><rt>しりお</rt></ruby>しをしたのは<ruby><rb>国粋会</rb><rt>こくすいかい</rt></ruby>かも知れないと云った。それから<ruby><rb>某宗</rb><rt>ぼうしゅう</rt></ruby>の管長某師は蟹は<ruby><rb>仏慈悲</rb><rt>ぶつじひ</rt></ruby>を知らなかったらしい、たとい青柿を投げつけられたとしても、仏慈悲を知っていさえすれば、猿の所業を憎む代りに、<ruby><rb>反</rb><rt>かえ</rt></ruby>ってそれを憐んだであろう。ああ、思えば一度でも<ruby><rb>好</rb><rt>い</rt></ruby>いから、わたしの説教を聴かせたかったと云った。それから――また各方面にいろいろ批評する名士はあったが、いずれも蟹の仇打ちには<ruby><rb>不賛成</rb><rt>ふさんせい</rt></ruby>の声ばかりだった。そう云う中にたった一人、蟹のために気を吐いたのは<ruby><rb>酒豪</rb><rt>しゅごう</rt></ruby>兼詩人の某代議士である。代議士は蟹の仇打ちは武士道の精神と一致すると云った。しかしこんな時代遅れの議論は誰の耳にも<ruby><rb>止</rb><rt>とま</rt></ruby>るはずはない。のみならず新聞のゴシップによると、その代議士は数年以前、動物園を見物中、猿に<ruby><rb>尿</rb><rt>いばり</rt></ruby>をかけられたことを<ruby><rb>遺恨</rb><rt>いこん</rt></ruby>に思っていたそうである。</p>
+        <p>お<ruby><rb>伽噺</rb><rt>とぎばなし</rt></ruby>しか知らない読者は、悲しい蟹の運命に同情の涙を落すかも知れない。しかし蟹の死は当然である。それを気の毒に思いなどするのは、婦女童幼のセンティメンタリズムに過ぎない。天下は蟹の死を<ruby><rb>是</rb><rt>ぜ</rt></ruby>なりとした。現に死刑の行われた<ruby><rb>夜</rb><rt>よ</rt></ruby>、判事、検事、弁護士、<ruby><rb>看守</rb><rt>かんしゅ</rt></ruby>、死刑執行人、<ruby><rb>教誨師</rb><rt>きょうかいし</rt></ruby>等は四十八時間熟睡したそうである。その上皆夢の中に、<placeName ref="#tengoku">天国</placeName>の門を見たそうである。<placeName ref="#tengoku">天国</placeName>は彼等の話によると、封建時代の城に似たデパアトメント・ストアらしい。</p>
+        <p>ついでに蟹の死んだ<ruby><rb>後</rb><rt>のち</rt></ruby>、蟹の家庭はどうしたか、それも少し書いて置きたい。蟹の妻は<ruby><rb>売笑婦</rb><rt>ばいしょうふ</rt></ruby>になった。なった動機は貧困のためか、彼女自身の性情のためか、どちらか<ruby><rb>未</rb><rt>いまだ</rt></ruby>に判然しない。蟹の長男は父の没後、新聞雑誌の用語を使うと、「<ruby><rb>飜然</rb><rt>ほんぜん</rt></ruby>と心を改めた。」今は何でもある株屋の番頭か何かしていると云う。この蟹はある時自分の穴へ、同類の肉を食うために、<ruby><rb>怪我</rb><rt>けが</rt></ruby>をした仲間を引きずりこんだ。<persName ref="#kropotkin">クロポトキン</persName>が<ruby><rb>相互扶助論</rb><rt>そうごふじょろん</rt></ruby>の中に、蟹も同類を<ruby><rb>劬</rb><rt>いたわ</rt></ruby>ると云う実例を引いたのはこの蟹である。次男の蟹は小説家になった。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>小説家のことだから、女に<ruby><rb>惚</rb><rt>ほ</rt></ruby>れるほかは何もしない。ただ父蟹の一生を例に、善は悪の<ruby><rb>異名</rb><rt>いみょう</rt></ruby>であるなどと、<ruby><rb>好</rb><rt>い</rt></ruby>い<ruby><rb>加減</rb><rt>かげん</rt></ruby>な皮肉を並べている。三男の蟹は<ruby><rb>愚物</rb><rt>ぐぶつ</rt></ruby>だったから、蟹よりほかのものになれなかった。それが<ruby><rb>横這</rb><rt>よこば</rt></ruby>いに歩いていると、握り飯が一つ落ちていた。握り飯は彼の好物だった。彼は大きい<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>の先にこの<ruby><rb>獲物</rb><rt>えもの</rt></ruby>を拾い上げた。すると高い柿の木の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>に<ruby><rb>虱</rb><rt>しらみ</rt></ruby>を取っていた猿が一匹、――その先は話す必要はあるまい。</p>
+        <p>とにかく猿と戦ったが最後、蟹は必ず天下のために殺されることだけは事実である。語を天下の読者に寄す。君たちもたいてい蟹なんですよ。</p>
+        <p>（<date when="1923-02">大正十二年二月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>高瀬舟縁起</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>高瀬舟縁起</title><author>森鴎外</author>
+          <note>青空文庫。底本：「山椒大夫・高瀬舟」岩波文庫。1938（昭和13）年7月1日第1刷発行。1967（昭和42）年6月16日第34刷改版発行。1998（平成10）年4月6日第77刷発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card46234.html">https://www.aozora.gr.jp/cards/000129/card46234.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="suminokura-ryoi">
+        <persName>角倉了以</persName>
+        <note>角倉了以(1554-1614)。京都の豪商・土木家。高瀬川を開削した人物として、本文冒頭で言及される</note>
+      </person>
+      <person xml:id="ikebe-yoshikata">
+        <persName>池辺義象</persName>
+        <note>池辺義象(1861-1923)。国文学者。神沢杜口『翁草』の校訂活字本を刊行しており、鴎外はその本で高瀬舟の話を読んだと述べる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都市・概値</note>
+      </place>
+      <place xml:id="takasegawa">
+        <placeName>高瀬川</placeName>
+        <location><geo>35.0034 135.77</geo></location>
+        <note>京都市中心部を南流する運河(二条〜伏見)。角倉了以が開削。流路中間点の概値</note>
+      </place>
+      <place xml:id="nijo">
+        <placeName>二条</placeName>
+        <location><geo>35.0116 135.7702</geo></location>
+        <note>京都の二条通。高瀬川の起点(木屋町二条)付近・概値</note>
+      </place>
+      <place xml:id="gojo">
+        <placeName>五条</placeName>
+        <location><geo>34.9968 135.766</geo></location>
+        <note>京都の五条通。高瀬川と交わる地点付近・概値</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>大阪市・概値。遠島を申し渡された罪人が高瀬舟で回された先</note>
+      </place>
+      <place xml:id="nishijin">
+        <placeName>西陣</placeName>
+        <location><geo>35.0303 135.7452</geo></location>
+        <note>京都市上京区の織物業地区・概値。兄弟が空引きに雇われていた場所</note>
+      </place>
+      <place xml:id="chikuhakuen-bunko">
+        <placeName>竹柏園文庫</placeName>
+        <note>歌人・国文学者 佐佐木信綱の号「竹柏園」に由来する蔵書(私設文庫)。鴎外はここから『和漢船用集』を借覧した。所在(信綱の東京の居宅)を特定できないため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>高瀬舟縁起</head>
+        <p><placeName ref="#kyoto">京都</placeName>の<placeName ref="#takasegawa"><ruby><rb>高瀬川</rb><rt>たかせがわ</rt></ruby></placeName>は、<placeName ref="#gojo">五条</placeName>から南は<date when="1587">天正十五年</date>に、<placeName ref="#nijo">二条</placeName>から<placeName ref="#gojo">五条</placeName>までは<date when="1612">慶長十七年</date>に、<persName ref="#suminokura-ryoi"><ruby><rb>角倉了以</rb><rt>すみのくらりょうい</rt></ruby></persName>が掘ったものだそうである。そこを通う舟は<ruby><rb>曳舟</rb><rt>ひきふね</rt></ruby>である。元来たかせは舟の名で、その舟の通う川を高瀬川と言うのだから、同名の川は諸国にある。しかし舟は曳舟には限らぬので、『<ruby><rb>和名鈔</rb><rt>わみょうしょう</rt></ruby>』には<ruby><rb>釈名</rb><rt>しゃくめい</rt></ruby>の「<ruby><rb>艇小而深者曰舼</rb><rt>ていしょうにしてふかきものをきょうという</rt></ruby>」とある<ruby><rb>舼</rb><rt>きょう</rt></ruby>の字をたかせに当ててある。<placeName ref="#chikuhakuen-bunko"><ruby><rb>竹柏園文庫</rb><rt>ちくはくえんぶんこ</rt></ruby></placeName>の『和漢船用集』を借覧するに、「おもて高く、とも、よこともにて、低く平らなるものなり」と言ってある。そして図には<ruby><rb>篙</rb><rt>さお</rt></ruby>で<ruby><rb>行</rb><rt>や</rt></ruby>る舟がかいてある。</p>
+        <p>徳川時代には<placeName ref="#kyoto">京都</placeName>の罪人が遠島を言い渡されると、高瀬舟で<placeName ref="#osaka">大阪</placeName>へ回されたそうである。それを護送してゆく<placeName ref="#kyoto">京都</placeName><ruby><rb>町奉行付</rb><rt>まちぶぎょうづき</rt></ruby>の<ruby><rb>同心</rb><rt>どうしん</rt></ruby>が悲しい話ばかり聞かせられる。あるときこの舟に載せられた兄弟殺しの<ruby><rb>科</rb><rt>とが</rt></ruby>を犯した男が、少しも悲しがっていなかった。その子細を尋ねると、これまで<ruby><rb>食</rb><rt>しょく</rt></ruby>を<ruby><rb>得</rb><rt>う</rt></ruby>ることに困っていたのに、遠島を言い渡された時、銅銭二百<ruby><rb>文</rb><rt>もん</rt></ruby>をもらったが、<ruby><rb>銭</rb><rt>ぜに</rt></ruby>を使わずに持っているのは始めだと答えた。また人殺しの科はどうして犯したかと問えば、兄弟は<placeName ref="#nishijin">西陣</placeName>に雇われて、<ruby><rb>空引</rb><rt>そらび</rt></ruby>きということをしていたが、給料が少なくて暮らしが立ちかねた、そのうち同胞が自殺をはかったが、死に切れなかった、そこで同胞が<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>助からぬから殺してくれと頼むので殺してやったと言った。</p>
+        <p>この話は『<ruby><rb>翁草</rb><rt>おきなぐさ</rt></ruby>』に出ている。<persName ref="#ikebe-yoshikata"><ruby><rb>池辺義象</rb><rt>いけべよしかた</rt></ruby></persName>さんの校訂した活字本で一ペエジ余に書いてある。私はこれを読んで、その中に二つの大きい問題が含まれていると思った。一つは財産というものの観念である。<ruby><rb>銭</rb><rt>ぜに</rt></ruby>を待ったことのない人の銭を持った喜びは、銭の多少には関せない。人の欲には限りがないから、銭を持ってみると、いくらあればよいという限界は見いだされないのである。二百<ruby><rb>文</rb><rt>もん</rt></ruby>を財産として喜んだのがおもしろい。今一つは死にかかっていて死なれずに苦しんでいる人を、死なせてやるという事である。人を死なせてやれば、すなわち殺すということになる。どんな場合にも人を殺してはならない。『翁草』にも、教えのない民だから、悪意がないのに人殺しになったというような、批評のことばがあったように記憶する。しかしこれはそう容易に<ruby><rb>杓子定木</rb><rt>しゃくしじょうぎ</rt></ruby>で決してしまわれる問題ではない。ここに病人があって死に<ruby><rb>瀕</rb><rt>ひん</rt></ruby>して苦しんでいる。それを救う手段は全くない。そばからその苦しむのを見ている人はどう思うであろうか。たとい教えのある人でも、どうせ死ななくてはならぬものなら、あの苦しみを長くさせておかずに、早く死なせてやりたいという<ruby><rb>情</rb><rt>じょう</rt></ruby>は必ず起こる。ここに麻酔薬を与えてよいか悪いかという疑いが生ずるのである。その薬は致死量でないにしても、薬を与えれば、多少死期を早くするかもしれない。それゆえやらずにおいて苦しませていなくてはならない。従来の道徳は苦しませておけと命じている。しかし医学社会には、これを非とする論がある。すなわち死に<ruby><rb>瀕</rb><rt>ひん</rt></ruby>して苦しむものがあったら、らくに死なせて、その苦を救ってやるがいいというのである。これをユウタナジイという。らくに死なせるという意味である。高瀬舟の罪人は、ちょうどそれと同じ場合にいたように思われる。私にはそれがひどくおもしろい。</p>
+        <p>こう思って私は「高瀬舟」という話を書いた。『中央公論』で公にしたのがそれである。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

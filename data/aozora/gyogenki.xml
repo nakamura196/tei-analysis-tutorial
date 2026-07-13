@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>魚玄機</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>魚玄機</title><author>森鴎外</author>
+          <note>青空文庫。底本：「森鴎外全集5」ちくま文庫、筑摩書房。1995（平成7）年10月24日第1刷発行。入力：清角克由。校正：ちはる。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card2051.html">https://www.aozora.gr.jp/cards/000129/card2051.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="gyogenki">
+        <persName>魚玄機</persName>
+        <note>唐の女詩人(844頃–868)。長安の倡家に生れ、温庭筠に詩を学ぶ。李億の側室となった後、咸宜観の女道士となり、婢の緑翹を殺して咸通九年に斬られた。本作の主人公。作中では「玄機」「魚」とも記され、字は幼微、また蕙蘭とも称した</note>
+      </person>
+      <person xml:id="onki">
+        <persName>温庭筠</persName>
+        <note>晩唐の詩人(温岐、812頃–866頃)。字は飛卿。醜怪な容貌から「温鍾馗」、八叉手で八韻を成すことから「温八叉」の諢名がある。玄機の詩の師</note>
+      </person>
+      <person xml:id="shoki">
+        <persName>鍾馗</persName>
+        <note>疫鬼を退治する伝説上の存在。その醜怪な容貌から温庭筠の諢名となった</note>
+      </person>
+      <person xml:id="reikoto">
+        <persName>令狐綯</persName>
+        <note>晩唐の宰相(795–872)。大中四年に宰相となり、大中十三年に罷めて揚州刺史となる。作中では「綯」とも記される</note>
+      </person>
+      <person xml:id="reikokaku">
+        <persName>令狐滈</persName>
+        <note>令狐綯の子。旗亭に妓を呼ぶ貴公子。作中では「令狐」とも記される</note>
+      </person>
+      <person xml:id="hisei">
+        <persName>斐誠</persName>
+        <note>令狐滈の遊び仲間の貴公子。作中では「斐」とも記される</note>
+      </person>
+      <person xml:id="rioku">
+        <persName>李億</persName>
+        <note>素封家。温庭筠の友人で、玄機を側室に迎えるが、妻の実家に責められて玄機を逐う。作中では「李」とも記される</note>
+      </person>
+      <person xml:id="rihaku">
+        <persName>李白</persName>
+        <note>盛唐の詩人(701–762)。「隴西の李白」として言及される</note>
+      </person>
+      <person xml:id="toho">
+        <persName>杜甫</persName>
+        <note>盛唐の詩人(712–770)。「襄陽の杜甫」として言及される</note>
+      </person>
+      <person xml:id="hakukyoi">
+        <persName>白居易</persName>
+        <note>中唐の詩人(772–846)。長恨歌・琵琶行の作者として言及される</note>
+      </person>
+      <person xml:id="genbishi">
+        <persName>元微之</persName>
+        <note>元稹(779–831)。白居易と名を斉しくした詩人として言及される</note>
+      </person>
+      <person xml:id="rishoin">
+        <persName>李商隠</persName>
+        <note>晩唐の詩人(813頃–858)。温庭筠と並ぶ当代の詩人として言及される</note>
+      </person>
+      <person xml:id="danseishiki">
+        <persName>段成式</persName>
+        <note>晩唐の文人(803頃–863)。『酉陽雑俎』の著者。李商隠・温庭筠と併せて三名家と称された。作中では「段」とも記される</note>
+      </person>
+      <person xml:id="roshi">
+        <persName>老子</persName>
+        <note>道家の祖とされる人物。唐の王室が李姓であることから先祖と称された。作中では「老君」とも記される</note>
+      </person>
+      <person xml:id="soshi">
+        <persName>荘子</persName>
+        <note>荘周。道家の思想家、およびその書『荘子』(=南華真経)。令狐綯が席上で問うた故事の出典として言及される</note>
+      </person>
+      <person xml:id="senso">
+        <persName>宣宗</persName>
+        <note>唐の第16代皇帝(810–859、在位846–859)。温庭筠の才を認めながらその人を鄙んだ</note>
+      </person>
+      <person xml:id="iso">
+        <persName>懿宗</persName>
+        <note>唐の第17代皇帝(833–873、在位859–873)。咸通九年、上奏を容れて玄機を斬に処した</note>
+      </person>
+      <person xml:id="shinjun">
+        <persName>沈詢</persName>
+        <note>晩唐の官人。知挙(科挙の試験官)として温庭筠を別席に隔離した</note>
+      </person>
+      <person xml:id="chosen">
+        <persName>趙顓</persName>
+        <note>温庭筠の姉の夫。姉は弟のために要路に懇請した</note>
+      </person>
+      <person xml:id="chorenshi">
+        <persName>趙錬師</persName>
+        <note>李億と交わりのあった道士。玄機を咸宜観に受け入れ、道書を授ける。作中では「趙」とも記される</note>
+      </person>
+      <person xml:id="cho-hien">
+        <persName>趙飛燕</persName>
+        <note>前漢成帝の皇后。痩身の美人の典型。「趙痩」と圧縮した形で玄機の容姿の対比に引かれる</note>
+      </person>
+      <person xml:id="yokihi">
+        <persName>楊貴妃</persName>
+        <note>唐の玄宗の妃(719–756)。豊満な美人の典型。「楊肥」と圧縮した形で玄機の容姿に擬せられる</note>
+      </person>
+      <person xml:id="yoshu">
+        <persName>楊収</persName>
+        <note>晩唐の宰相(?–868)。温庭筠の上書を聴かず、方城に遣った。作中では「楊」とも記される</note>
+      </person>
+      <person xml:id="josho">
+        <persName>徐商</persName>
+        <note>晩唐の官人・宰相。襄陽で温庭筠を小吏に用い、後に宰相として温を庇護した。作中では「徐」とも記される</note>
+      </person>
+      <person xml:id="saihin">
+        <persName>采蘋</persName>
+        <note>咸宜観の女道士。玄機と親しく交わったが、旅の工人とともに失踪する。趙錬師の言では「蘋」</note>
+      </person>
+      <person xml:id="ryokugyo">
+        <persName>緑翹</persName>
+        <note>玄機に仕えた十八歳の婢。陳との仲を疑われ、玄機に扼殺される</note>
+      </person>
+      <person xml:id="chinbo">
+        <persName>陳某</persName>
+        <note>楽人の少年。玄機の情人となる。作中では「陳」とも記される</note>
+      </person>
+      <person xml:id="ken">
+        <persName>憲</persName>
+        <note>温庭筠の子。咸通中に官に擢でられた</note>
+      </person>
+      <person xml:id="teiko">
+        <persName>庭皓</persName>
+        <note>温庭筠の弟。咸通中に官に擢でられたが、龐勛の乱に徐州で殺された</note>
+      </person>
+      <person xml:id="hokun">
+        <persName>龐勛</persName>
+        <note>咸通九年に徐州で乱を起こした唐末の反乱指導者(?–869)</note>
+      </person>
+      <person xml:id="hakuraku">
+        <persName>伯楽</persName>
+        <note>春秋時代の馬の名鑑定家。名馬を見出す者の典型として、玄機が温庭筠に擬えて言及する</note>
+      </person>
+      <person xml:id="sogyoku">
+        <persName>宋玉</persName>
+        <note>戦国楚の文人。玄機の詩「贈隣女」に美男の典型として詠まれる</note>
+      </person>
+      <person xml:id="osho">
+        <persName>王昌</persName>
+        <note>唐詩に美男の典型として詠まれる人物。玄機の詩「贈隣女」に見える</note>
+      </person>
+      <person xml:id="onsho">
+        <persName>温璋</persName>
+        <note>唐の京兆尹(?–870)。衙卒の訴により魚玄機を逮捕させた</note>
+      </person>
+      <person xml:id="keiko">
+        <persName>嵇康</persName>
+        <note>三国魏の文人(223–262)。竹林の七賢の一人。書札を書くのに無精であったことで知られ、玄機の詩「寄飛卿」に「嵇君」として詠まれ、温庭筠に擬せられる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="chogan">
+        <placeName>長安</placeName>
+        <location><geo>34.2658 108.9541</geo></location>
+        <note>唐の都(現・陝西省西安市)・概値。「京師」も同じ場所を指す</note>
+      </place>
+      <place xml:id="rakuyo">
+        <placeName>洛陽</placeName>
+        <location><geo>34.6197 112.454</geo></location>
+        <note>唐の東都(現・河南省洛陽市)・概値</note>
+      </place>
+      <place xml:id="keicho">
+        <placeName>京兆</placeName>
+        <location><geo>34.2658 108.9541</geo></location>
+        <note>唐の京兆府。長安を中心とする首都圏。長安の座標で代用・概値</note>
+      </place>
+      <place xml:id="to">
+        <placeName>唐</placeName>
+        <note>唐王朝(国名・時代名)。特定の地点を持たないため座標なし</note>
+      </place>
+      <place xml:id="rosei">
+        <placeName>隴西</placeName>
+        <location><geo>35.0032 104.6343</geo></location>
+        <note>現・甘粛省定西市隴西県一帯・概値。李白の出身地として言及される</note>
+      </place>
+      <place xml:id="joyo">
+        <placeName>襄陽</placeName>
+        <location><geo>32.009 112.122</geo></location>
+        <note>現・湖北省襄陽市・概値。杜甫の出身地、また温庭筠が小吏として勤めた地</note>
+      </place>
+      <place xml:id="taigen">
+        <placeName>太原</placeName>
+        <location><geo>37.8706 112.5489</geo></location>
+        <note>現・山西省太原市・概値。白居易・温庭筠の本貫として言及される</note>
+      </place>
+      <place xml:id="yangzhou">
+        <placeName>揚州</placeName>
+        <location><geo>32.3947 119.4127</geo></location>
+        <note>現・江蘇省揚州市・概値。令狐綯が刺史となり、温庭筠が虞候に打たれた地</note>
+      </place>
+      <place xml:id="hojo">
+        <placeName>方城</placeName>
+        <location><geo>33.254 112.992</geo></location>
+        <note>現・河南省南陽市方城県・概値。温庭筠が吏務に服した地</note>
+      </place>
+      <place xml:id="zuiken">
+        <placeName>隋県</placeName>
+        <location><geo>31.69 113.38</geo></location>
+        <note>唐の随県(現・湖北省随州市)・概値。温庭筠が遷されて没した地</note>
+      </place>
+      <place xml:id="joshu">
+        <placeName>徐州</placeName>
+        <location><geo>34.261 117.185</geo></location>
+        <note>現・江蘇省徐州市・概値。龐勛の乱で温庭皓が殺された地</note>
+      </place>
+      <place xml:id="kangikan">
+        <placeName>咸宜観</placeName>
+        <note>長安城内にあった道観。魚玄機が女道士として住み、緑翹を殺した場所。城内の坊の位置に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="sushinkan">
+        <placeName>崇真観</placeName>
+        <note>長安城内にあった道観。玄機が南楼の及第題名を見て詩を賦した場所。城内の坊の位置に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="taiseikyu">
+        <placeName>太清宮</placeName>
+        <note>長安に置かれた道教の宮(玄元皇帝廟)。城内の位置に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="taibikyu">
+        <placeName>太微宮</placeName>
+        <note>洛陽に置かれた道教の宮。城内の位置に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="shikyokukyu">
+        <placeName>紫極宮</placeName>
+        <note>唐代に諸都会ごとに置かれた道観の名。特定の地点を指さないため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>魚玄機</head>
+        <p><persName ref="#gyogenki"><ruby><rb>魚玄機</rb><rt>ぎょげんき</rt></ruby></persName>が人を殺して獄に下った。風説は<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち<placeName ref="#chogan">長安</placeName>人士の間に流伝せられて、一人として事の意表に出でたのに驚かぬものはなかった。</p>
+        <p><placeName ref="#to"><ruby><rb>唐</rb><rt>とう</rt></ruby></placeName>の<ruby><rb>代</rb><rt>よ</rt></ruby>には道教が盛であった。それは<ruby><rb>道士等</rb><rt>どうしら</rt></ruby>が王室の<ruby><rb>李</rb><rt>り</rt></ruby>姓であるのを奇貨として、<persName ref="#roshi">老子</persName>を先祖だと言い<ruby><rb>做</rb><rt>な</rt></ruby>し、<persName ref="#roshi">老君</persName>に仕うること<ruby><rb>宗廟</rb><rt>そうびょう</rt></ruby>に仕うるが<ruby><rb>如</rb><rt>ごと</rt></ruby>くならしめたためである。<date when="0742">天宝</date>以来西の京の<placeName ref="#chogan">長安</placeName>には<placeName ref="#taiseikyu"><ruby><rb>太清宮</rb><rt>たいせいきゅう</rt></ruby></placeName>があり、東の京の<placeName ref="#rakuyo"><ruby><rb>洛陽</rb><rt>らくよう</rt></ruby></placeName>には<placeName ref="#taibikyu"><ruby><rb>太微宮</rb><rt>たいびきゅう</rt></ruby></placeName>があった。その<ruby><rb>外</rb><rt>ほか</rt></ruby>都会ごとに<placeName ref="#shikyokukyu"><ruby><rb>紫極宮</rb><rt>しきょくきゅう</rt></ruby></placeName>があって、どこでも日を定めて厳かな祭が行われるのであった。<placeName ref="#chogan">長安</placeName>には<placeName ref="#taiseikyu">太清宮</placeName>の<ruby><rb>下</rb><rt>しも</rt></ruby>に<ruby><rb>許多</rb><rt>いくた</rt></ruby>の楼観がある。道教に観があるのは、仏教に寺があるのと同じ事で、寺には<ruby><rb>僧侶</rb><rt>そうりょ</rt></ruby>が<ruby><rb>居</rb><rt>お</rt></ruby>り、観には道士が居る。その観の一つを<placeName ref="#kangikan"><ruby><rb>咸宜観</rb><rt>かんぎかん</rt></ruby></placeName>と云って<ruby><rb>女道士</rb><rt>じょどうし</rt></ruby><persName ref="#gyogenki">魚玄機</persName>はそこに住んでいたのである。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は久しく美人を以て聞えていた。<persName ref="#cho-hien"><ruby><rb>趙痩</rb><rt>ちょうそう</rt></ruby></persName>と云わむよりは、むしろ<persName ref="#yokihi"><ruby><rb>楊肥</rb><rt>ようひ</rt></ruby></persName>と云うべき女である。それが女道士になっているから、脂粉の顔色を<ruby><rb>涴</rb><rt>けが</rt></ruby>すを嫌っていたかと云うと、そうではない。平生<ruby><rb>粧</rb><rt>よそおい</rt></ruby>を<ruby><rb>凝</rb><rt>こら</rt></ruby>し<ruby><rb>容</rb><rt>かたち</rt></ruby>を<ruby><rb>冶</rb><rt>かざ</rt></ruby>っていたのである。獄に下った時は<persName ref="#iso"><ruby><rb>懿宗</rb><rt>いそう</rt></ruby></persName>の<date when="0868"><ruby><rb>咸通</rb><rt>かんつう</rt></ruby>九年</date>で、<persName ref="#gyogenki">玄機</persName>は<ruby><rb>恰</rb><rt>あたか</rt></ruby>も二十六歳になっていた。</p>
+        <p><persName ref="#gyogenki">玄機</persName>が<placeName ref="#chogan">長安</placeName>人士の間に知られていたのは、独り美人として知られていたのみではない。この女は詩を<ruby><rb>善</rb><rt>よ</rt></ruby>くした。詩が<placeName ref="#to">唐</placeName>の代に最も隆盛であったことは言を待たない。<placeName ref="#rosei"><ruby><rb>隴西</rb><rt>ろうせい</rt></ruby></placeName>の<persName ref="#rihaku"><ruby><rb>李白</rb><rt>りはく</rt></ruby></persName>、<placeName ref="#joyo"><ruby><rb>襄陽</rb><rt>じょうよう</rt></ruby></placeName>の<persName ref="#toho"><ruby><rb>杜甫</rb><rt>とほ</rt></ruby></persName>が出て、天下の能事を尽した後に<placeName ref="#taigen"><ruby><rb>太原</rb><rt>たいげん</rt></ruby></placeName>の<persName ref="#hakukyoi"><ruby><rb>白居易</rb><rt>はくきょい</rt></ruby></persName>が<ruby><rb>踵</rb><rt>つ</rt></ruby>いで起って、古今の人情を<ruby><rb>曲尽</rb><rt>きょくじん</rt></ruby>し、<ruby><rb>長恨歌</rb><rt>ちょうこんか</rt></ruby>や<ruby><rb>琵琶行</rb><rt>びわこう</rt></ruby>は戸ごとに<ruby><rb>誦</rb><rt>そら</rt></ruby>んぜられた。<persName ref="#hakukyoi">白居易</persName>の亡くなった<persName ref="#senso"><ruby><rb>宣宗</rb><rt>せんそう</rt></ruby></persName>の<date when="0847"><ruby><rb>大中</rb><rt>たいちゅう</rt></ruby>元年</date>に、<persName ref="#gyogenki">玄機</persName>はまだ五歳の女児であったが、ひどく<ruby><rb>怜悧</rb><rt>れいり</rt></ruby>で、<persName ref="#hakukyoi">白居易</persName>は<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>、それと名を<ruby><rb>斉</rb><rt>ひとし</rt></ruby>ゅうしていた<persName ref="#genbishi"><ruby><rb>元微之</rb><rt>げんびし</rt></ruby></persName>の詩をも、多く暗記して、その数は古今体を通じて数十篇に及んでいた。十三歳の時<persName ref="#gyogenki">玄機</persName>は始て七言絶句を作った。それから十五歳の時には、もう魚家の少女の詩と云うものが<ruby><rb>好事者</rb><rt>こうずしゃ</rt></ruby>の間に写し伝えられることがあったのである。</p>
+        <p>そう云う美しい女詩人が人を殺して獄に下ったのだから、当時世間の視聴を<ruby><rb>聳動</rb><rt>しょうどう</rt></ruby>したのも無理はない。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#gyogenki">魚玄機</persName>の生れた家は、<placeName ref="#chogan">長安</placeName>の大道から横に曲がって行く小さい街にあった。<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby><ruby><rb>狭邪</rb><rt>きょうしゃ</rt></ruby>の地でどの家にも<ruby><rb>歌女</rb><rt>かじょ</rt></ruby>を養っている。魚家もその<ruby><rb>倡家</rb><rt>しょうか</rt></ruby>の一つである。<persName ref="#gyogenki">玄機</persName>が詩を学びたいと言い出した時、両親が快く諾して、隣街の<ruby><rb>窮措大</rb><rt>きゅうそだい</rt></ruby>を家に招いて、<ruby><rb>平仄</rb><rt>ひょうそく</rt></ruby>や押韻の法を教えさせたのは、他日この子を<ruby><rb>揺金樹</rb><rt>ようきんじゅ</rt></ruby>にしようと云う願があったからである。</p>
+        <p><date when="0857">大中十一年</date>の春であった。魚家の<ruby><rb>妓</rb><rt>ぎ</rt></ruby>数人が度々ある<ruby><rb>旗亭</rb><rt>きてい</rt></ruby>から呼ばれた。客は宰相<persName ref="#reikoto"><ruby><rb>令狐綯</rb><rt>れいことう</rt></ruby></persName>の家の公子で<persName ref="#reikokaku"><ruby><rb>令狐滈</rb><rt>れいこかく</rt></ruby></persName>と云う人である。貴公子仲間の<persName ref="#hisei"><ruby><rb>斐誠</rb><rt>ひせい</rt></ruby></persName>がいつも一しょに来る。それに今一人の相伴があって、この人は<ruby><rb><persName ref="#onki">温</persName>姓</rb><rt>おんせい</rt></ruby>で、<persName ref="#reikokaku">令狐</persName>や<persName ref="#hisei">斐</persName>に<persName ref="#shoki"><ruby><rb>鍾馗</rb><rt>しょうき</rt></ruby></persName>々々と呼ばれている。公子二人は美服しているのに、<persName ref="#onki">温</persName>は独り汚れ<ruby><rb>垢</rb><rt>あか</rt></ruby>ついた<ruby><rb>衣</rb><rt>きぬ</rt></ruby>を着ていて、<ruby><rb>兎角</rb><rt>とかく</rt></ruby>公子等に<ruby><rb>頤使</rb><rt>いし</rt></ruby>せられるので、妓等は初め<ruby><rb>僮僕</rb><rt>どうぼく</rt></ruby>ではないかと思った。<ruby><rb>然</rb><rt>しか</rt></ruby>るに酒<ruby><rb>酣</rb><rt>たけなわ</rt></ruby>に耳熱して来ると、<persName ref="#onki">温鍾馗</persName>は二公子を白眼に<ruby><rb>視</rb><rt>み</rt></ruby>て、<ruby><rb>叱咤</rb><rt>しった</rt></ruby>怒号する。それから妓に琴を弾かせ、笛を吹かせて歌い出す。かつて聞いたことのない、美しい<ruby><rb>詞</rb><rt>ことば</rt></ruby>を朗かな声で歌うのに、その音調が好く整っていて、しろう<ruby><rb>人</rb><rt>と</rt></ruby>とは思われぬ程である。<persName ref="#shoki">鍾馗</persName>の<ruby><rb>諢名</rb><rt>あだな</rt></ruby>のある<ruby><rb>于思盱目</rb><rt>うさいかんもく</rt></ruby>の<persName ref="#onki">温</persName>が、二人の白面郎に侮られるのを見て、<ruby><rb>嘲謔</rb><rt>ちょうぎゃく</rt></ruby>の目標にしていた妓等は、この時<persName ref="#onki">温</persName>の<ruby><rb>傍</rb><rt>そば</rt></ruby>に一人寄り二人寄って、とうとう<persName ref="#onki">温</persName>を囲んで傾聴した。この時から妓等は<persName ref="#onki">温</persName>と親しくなった。<persName ref="#onki">温</persName>は妓の琴を借りて弾いたり、笛を借りて吹いたりする。<ruby><rb>吹弾</rb><rt>すいたん</rt></ruby>の技も妓等の及ぶ所ではない。</p>
+        <p>妓等が魚家に帰って、<ruby><rb>頻</rb><rt>しきり</rt></ruby>に<persName ref="#onki">温</persName>の<ruby><rb>噂</rb><rt>うわさ</rt></ruby>をするので、<persName ref="#gyogenki">玄機</persName>がそれを聞いて師匠にしている措大に話すと、その男が驚いて云った。「<persName ref="#onki">温鍾馗</persName>と云うのは、恐らくは<placeName ref="#taigen">太原</placeName>の<persName ref="#onki"><ruby><rb>温岐</rb><rt>おんき</rt></ruby></persName>の事だろう。またの名は<persName ref="#onki"><ruby><rb>庭筠</rb><rt>ていいん</rt></ruby></persName>、<ruby><rb>字</rb><rt>あざな</rt></ruby>は<persName ref="#onki"><ruby><rb>飛卿</rb><rt>ひけい</rt></ruby></persName>である。挙場にあって八たび手を<ruby><rb>叉</rb><rt>こまぬ</rt></ruby>けば八韻の詩が成るので、<persName ref="#onki"><ruby><rb>温八叉</rb><rt>おんはっしゃ</rt></ruby></persName>と云う諢名もある。<persName ref="#shoki">鍾馗</persName>と云うのは、<ruby><rb>容貌</rb><rt>ようぼう</rt></ruby>が醜怪だから言うのだ。当今の詩人では<persName ref="#rishoin"><ruby><rb>李商隠</rb><rt>りしょういん</rt></ruby></persName>を除いて、あの人の右に出るものはない。この二人に<persName ref="#danseishiki"><ruby><rb>段成式</rb><rt>だんせいしき</rt></ruby></persName>を加えて三名家と云っているが、<persName ref="#danseishiki">段</persName>はやや劣っている」と云った。</p>
+        <p>それを聞いてからは、妓等が<persName ref="#reikokaku">令狐</persName>の<ruby><rb>筵会</rb><rt>えんかい</rt></ruby>から帰る<ruby><rb>毎</rb><rt>ごと</rt></ruby>に、<persName ref="#gyogenki">玄機</persName>が<persName ref="#onki">温</persName>の事を問う。妓等もまた<persName ref="#onki">温</persName>に<ruby><rb>逢</rb><rt>あ</rt></ruby>う毎に<persName ref="#gyogenki">玄機</persName>の事を語るようになった。そしてとうとうある日<persName ref="#onki">温</persName>が魚家に訪ねて来た。美しい少女が詩を作ると云う話に、好奇心を起したのである。</p>
+        <p><persName ref="#onki">温</persName>と<persName ref="#gyogenki">玄機</persName>とが対面した。<persName ref="#onki">温</persName>の目に映じた<persName ref="#gyogenki">玄機</persName>は<ruby><rb>将</rb><rt>まさ</rt></ruby>に開かむとする<ruby><rb>牡丹</rb><rt>ぼたん</rt></ruby>の花のような少女である。<persName ref="#onki">温</persName>は貴公子連と遊んではいるが、もう年は四十に達して、<persName ref="#shoki">鍾馗</persName>の名に<ruby><rb>負</rb><rt>そむ</rt></ruby>かぬ容貌をしている。<date when="0836">開成</date>の初に妻を迎えて、家には<persName ref="#gyogenki">玄機</persName>とほとんど同年になる<persName ref="#ken">憲</persName>と云う子がいる。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は<ruby><rb>襟</rb><rt>えり</rt></ruby>を正して<ruby><rb>恭</rb><rt>うやうやし</rt></ruby>く<persName ref="#onki">温</persName>を迎えた。初め妓等に接するが如き態度を以て接しようとした<persName ref="#onki">温</persName>は、覚えず<ruby><rb>容</rb><rt>かたち</rt></ruby>を改めた。さて語を交えて見て、<persName ref="#onki">温</persName>は直に<persName ref="#gyogenki">玄機</persName>が尋常の女でないことを知った。<ruby><rb>何故</rb><rt>なぜ</rt></ruby>と云うに、この花の如き十五歳の少女には、<ruby><rb>些</rb><rt>ちと</rt></ruby>の<ruby><rb>嬌羞</rb><rt>きょうしゅう</rt></ruby>の色もなく、その<ruby><rb>口吻</rb><rt>こうふん</rt></ruby>は男子に似ていたからである。</p>
+        <p><persName ref="#onki">温</persName>は云った。「<ruby><rb>卿</rb><rt>けい</rt></ruby>の詩を善くすることを聞いた。近業があるなら見せて下さい」と云った。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は答えた。「<ruby><rb>児</rb><rt>じ</rt></ruby>は不幸にして<ruby><rb>未</rb><rt>いま</rt></ruby>だ良師を得ません。どうして近業の言うに足るものがありましょう。今<persName ref="#hakuraku"><ruby><rb>伯楽</rb><rt>はくらく</rt></ruby></persName>の一顧を得て、<ruby><rb>奔踶</rb><rt>ほんてい</rt></ruby>して千里を致すの思があります。願わくは題を課してお試み下さい」と云ったのである。</p>
+        <p><persName ref="#onki">温</persName>は微笑を禁じ得なかった。この少女が<ruby><rb>良驥</rb><rt>りょうき</rt></ruby>を以て自ら比するのは、いかにもふさわしくないように感じたからである。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は<ruby><rb>起</rb><rt>た</rt></ruby>って筆墨を<persName ref="#onki">温</persName>の前に置いた。<persName ref="#onki">温</persName>は率然「江辺柳」の三字を書して示した。<persName ref="#gyogenki">玄機</persName>が<ruby><rb>暫</rb><rt>しばら</rt></ruby>く考えて<ruby><rb>占出</rb><rt>せんしゅつ</rt></ruby>した詩はこうである。</p>
+        <p>賦得江辺柳</p>
+        <p><ruby><rb>翠色連荒岸</rb><rt>すゐしよくくわうがんにつらなり</rt></ruby>。　<ruby><rb>烟姿入遠楼</rb><rt>えんしゑんろうにいる</rt></ruby>。</p>
+        <p><ruby><rb>影鋪秋水面</rb><rt>かげはしうすゐのおもてにのべ</rt></ruby>。　<ruby><rb>花落釣人頭</rb><rt>はなはつりびとのかうべにおつ</rt></ruby>。</p>
+        <p><ruby><rb>根老蔵魚窟</rb><rt>ねはおいてぎよくつかくれ</rt></ruby>。　<ruby><rb>枝低繋客舟</rb><rt>えだはひくくきやくしうつながる</rt></ruby>。</p>
+        <p><ruby><rb>蕭々風雨夜</rb><rt>せうせうたりふううのよ</rt></ruby>。　<ruby><rb>驚夢復添愁</rb><rt>ゆめよりさめてまたうれひをそふ</rt></ruby>。</p>
+        <p><persName ref="#onki">温</persName>は一<ruby><rb>誦</rb><rt>しょう</rt></ruby>して<ruby><rb>善</rb><rt>よ</rt></ruby>しと称した。<persName ref="#onki">温</persName>はこれまで七たび挙場に入った。そして<ruby><rb>毎</rb><rt>つね</rt></ruby>に堂々たる男子が苦索して一句を成し得ないのを見た。<ruby><rb>彼輩</rb><rt>かのはい</rt></ruby>は皆遠くこの少女に及ばぬのである。</p>
+        <p>此を始として<persName ref="#onki">温</persName>は度々魚家を訪ねた。二人の間には<ruby><rb>詩筒</rb><rt>しとう</rt></ruby>の<ruby><rb>往反</rb><rt>おうへん</rt></ruby>織るが如くになった。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#onki">温</persName>は<date when="0847">大中元年</date>に、三十歳で<placeName ref="#taigen"><ruby><rb>太原</rb><rt>たいげん</rt></ruby></placeName>から出て、始て進士の<ruby><rb>試</rb><rt>し</rt></ruby>に応じた。自己の詩文は<ruby><rb>燭</rb><rt>しょく</rt></ruby>一寸を<ruby><rb>燃</rb><rt>もや</rt></ruby>さぬうちに成ったので、隣席のものが<ruby><rb>呻吟</rb><rt>しんぎん</rt></ruby>するのを見て、これに手を<ruby><rb>仮</rb><rt>か</rt></ruby>して<ruby><rb>遣</rb><rt>や</rt></ruby>った。その後挙場に入る毎に七八人のために詩文を作る。その中には及第するものがある。ただ<persName ref="#onki">温</persName>のみはいつまでも及第しない。</p>
+        <p>これに反して場外の名は<placeName ref="#chogan"><ruby><rb>京師</rb><rt>けいし</rt></ruby></placeName>に騒いで、<date when="0850">大中四年</date>に宰相になった<persName ref="#reikoto">令狐綯</persName>も、<persName ref="#onki">温</persName>を引見して度々筵席に列せしめた。ある日席上で<persName ref="#reikoto">綯</persName>が一の故事を問うた。それは<persName ref="#soshi"><ruby><rb>荘子</rb><rt>そうし</rt></ruby></persName>に出ている事であった。<persName ref="#onki">温</persName>が直ちに答えたのは<ruby><rb>好</rb><rt>い</rt></ruby>いが、その<ruby><rb>詞</rb><rt>ことば</rt></ruby>は<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る不謹慎であった。「それは<persName ref="#soshi">南華</persName>に出ております。余り<ruby><rb>僻書</rb><rt>へきしょ</rt></ruby>ではございません。<ruby><rb>相公</rb><rt>しょうこう</rt></ruby>も<ruby><rb>爕理</rb><rt>しょうり</rt></ruby>の<ruby><rb>暇</rb><rt>いとま</rt></ruby>には、時々読書をもなさるが<ruby><rb>宜</rb><rt>よろ</rt></ruby>しゅうございましょう」と云ったのである。</p>
+        <p>また<persName ref="#senso">宣宗</persName>が<ruby><rb>菩薩蛮</rb><rt>ぼさつばん</rt></ruby>の詞を愛するので、<persName ref="#reikoto">綯</persName>が<ruby><rb>填詞</rb><rt>てんし</rt></ruby>して<ruby><rb>上</rb><rt>たてまつ</rt></ruby>った。実は<persName ref="#onki">温</persName>に代作させて口止をして置いたのである。然るに<persName ref="#onki">温</persName>は酔ってその事を人に漏した。その上かつて「<ruby><rb>中書堂内坐将軍</rb><rt>ちゆうしよだうないしやうぐんをざせしむ</rt></ruby>」と云ったことがある。<persName ref="#reikoto">綯</persName>が無学なのを<ruby><rb>譏</rb><rt>そし</rt></ruby>ったのである。</p>
+        <p><persName ref="#onki">温</persName>の名は<ruby><rb>遂</rb><rt>つい</rt></ruby>に<persName ref="#senso">宣宗</persName>にも聞えた。それはある時<persName ref="#senso">宣宗</persName>が一句を得て対を挙人中に求めると、<persName ref="#onki">温</persName>は<persName ref="#senso">宣宗</persName>の「<ruby><rb>金歩揺</rb><rt>きんほよう</rt></ruby>」に対するに「<ruby><rb>玉条脱</rb><rt>ぎよくじようだつ</rt></ruby>」を以てして、帝に激賞せられたのである。然るに<persName ref="#senso">宣宗</persName>は微行をする癖があって、<persName ref="#onki">温</persName>の名を<ruby><rb>識</rb><rt>し</rt></ruby>ってから間もなく、旗亭で<persName ref="#onki">温</persName>に<ruby><rb>邂逅</rb><rt>かいこう</rt></ruby>した。<persName ref="#onki">温</persName>は帝の顔を識らぬので、暫く語を交えているうちに<ruby><rb>傲慢</rb><rt>ごうまん</rt></ruby>無礼の言をなした。</p>
+        <p>既にして挙場では、<persName ref="#shinjun"><ruby><rb>沈詢</rb><rt>ちんじゅん</rt></ruby></persName>が知挙になってから、<persName ref="#onki">温</persName>を別席に居らせて、隣に空席を置くことになった。詩名はいよいよ高く、帝も宰相もその才を愛しながら、その人を<ruby><rb>鄙</rb><rt>いやし</rt></ruby>んだ。<persName ref="#chosen"><ruby><rb>趙顓</rb><rt>ちょうせん</rt></ruby></persName>の妻になっている<persName ref="#onki">温</persName>の姉などは、弟のために要路に懇請したが、何の<ruby><rb>甲斐</rb><rt>かい</rt></ruby>もなかった。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#onki">温</persName>の友に<persName ref="#rioku"><ruby><rb>李億</rb><rt>りおく</rt></ruby></persName>と云う素封家があった。年は<persName ref="#onki">温</persName>より十ばかりも少くて<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る<ruby><rb>詞賦</rb><rt>しふ</rt></ruby>を解していた。</p>
+        <p><date when="0860"><ruby><rb>咸通</rb><rt>かんつう</rt></ruby>元年</date>の春であった。久しく<placeName ref="#joyo"><ruby><rb>襄陽</rb><rt>じょうよう</rt></ruby></placeName>に往っていた<persName ref="#onki">温</persName>が<placeName ref="#chogan">長安</placeName>に<ruby><rb>還</rb><rt>かえ</rt></ruby>ったので、<persName ref="#rioku">李</persName>がその<ruby><rb>寓居</rb><rt>ぐうきょ</rt></ruby>を訪ねた。<placeName ref="#joyo">襄陽</placeName>では、<persName ref="#onki">温</persName>は<ruby><rb>刺史</rb><rt>しし</rt></ruby><persName ref="#josho"><ruby><rb>徐商</rb><rt>じょしょう</rt></ruby></persName>の<ruby><rb>下</rb><rt>もと</rt></ruby>で小吏になって、やや久しく勤めていたが、<ruby><rb>終</rb><rt>つい</rt></ruby>に<ruby><rb>厭倦</rb><rt>えんけん</rt></ruby>を生じて<ruby><rb>罷</rb><rt>や</rt></ruby>めたのである。</p>
+        <p><persName ref="#onki">温</persName>の机の上に<persName ref="#gyogenki">玄機</persName>の詩稿があった。<persName ref="#rioku">李</persName>はそれを見て<ruby><rb>歎称</rb><rt>たんしょう</rt></ruby>した。そしてどんな女かと云った。<persName ref="#onki">温</persName>は三年前から詩を教えている、花の如き少女だと告げた。それを聞くと、<persName ref="#rioku">李</persName>は<ruby><rb>精</rb><rt>くわ</rt></ruby>しく魚家のある<ruby><rb>街</rb><rt>まち</rt></ruby>を問うて、何か思うことありげに、急いで座を起った。</p>
+        <p><persName ref="#rioku">李</persName>は<persName ref="#onki">温</persName>の所を辞して、<ruby><rb>径</rb><rt>ただ</rt></ruby>ちに魚家に<ruby><rb>往</rb><rt>い</rt></ruby>って、<persName ref="#gyogenki">玄機</persName>を<ruby><rb>納</rb><rt>い</rt></ruby>れて側室にしようと云った。<persName ref="#gyogenki">玄機</persName>の両親は<ruby><rb>幣</rb><rt>へい</rt></ruby>の厚いのに動された。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は<ruby><rb>出</rb><rt>いで</rt></ruby>て<persName ref="#rioku">李</persName>と相見た。今年はもう十八歳になっている。その容貌の美しさは、<persName ref="#onki">温</persName>の初て逢った時の比ではない。<persName ref="#rioku">李</persName>もまた<ruby><rb>白皙</rb><rt>はくせき</rt></ruby>の<ruby><rb>美丈夫</rb><rt>びじょうふ</rt></ruby>である。<persName ref="#rioku">李</persName>は切に請い、<persName ref="#gyogenki">玄機</persName>は必ずしも拒まぬので、約束は即時に成就して、数日の後に、<persName ref="#rioku">李</persName>は<persName ref="#gyogenki">玄機</persName>を城外の<ruby><rb>林亭</rb><rt>りんてい</rt></ruby>に迎え入れた。</p>
+        <p>この時<persName ref="#rioku">李</persName>は<ruby><rb>遽</rb><rt>にわか</rt></ruby>に発した願が遽に<ruby><rb>愜</rb><rt>かな</rt></ruby>ったように思った。しかしそこに意外の<ruby><rb>障礙</rb><rt>しょうがい</rt></ruby>が生じた。それは<persName ref="#rioku">李</persName>が身を以て、<ruby><rb>近</rb><rt>ちかづ</rt></ruby>こうとすれば、<persName ref="#gyogenki">玄機</persName>は回避して、強いて<ruby><rb>逼</rb><rt>せま</rt></ruby>れば号泣するのである。林亭は<persName ref="#rioku">李</persName>が<ruby><rb>夕</rb><rt>ゆうべ</rt></ruby>に望を<ruby><rb>懐</rb><rt>いだ</rt></ruby>いて往き、<ruby><rb>朝</rb><rt>あした</rt></ruby>に興を失って還るの<ruby><rb>処</rb><rt>ところ</rt></ruby>となった。</p>
+        <p><persName ref="#rioku">李</persName>は<persName ref="#gyogenki">玄機</persName>が不具ではないかと疑って見た。しかしもしそうなら、初に<ruby><rb>聘</rb><rt>へい</rt></ruby>を<ruby><rb>卻</rb><rt>しりぞ</rt></ruby>けたはずである。<persName ref="#rioku">李</persName>は<persName ref="#gyogenki">玄機</persName>に嫌われているとも思うことが出来ない。<persName ref="#gyogenki">玄機</persName>は泣く時に、<ruby><rb>一旦</rb><rt>いったん</rt></ruby>避けた身を<persName ref="#rioku">李</persName>に<ruby><rb>靠</rb><rt>もた</rt></ruby>せ掛けてさも苦痛に堪えぬらしく泣くのである。</p>
+        <p><persName ref="#rioku">李</persName>はしばしば催してかつて遂げぬ欲望のために、徒らに精神を<ruby><rb>銷磨</rb><rt>しょうま</rt></ruby>して、<ruby><rb>行住座臥</rb><rt>こうじゅうざが</rt></ruby>の間、<ruby><rb>恍惚</rb><rt>こうこつ</rt></ruby>として失する所あるが如くになった。</p>
+        <p><persName ref="#rioku">李</persName>には妻がある。妻は夫の動作が常に異なるのを見て、その去住に意を注いだ。そして<ruby><rb>僮僕</rb><rt>どうぼく</rt></ruby>に<ruby><rb>啗</rb><rt>くら</rt></ruby>わしめて、<persName ref="#gyogenki">玄機</persName>の林亭にいることを知った。夫妻は反目した。ある日岳父が<ruby><rb>婿</rb><rt>むこ</rt></ruby>の家に来て<persName ref="#rioku">李</persName>を面責し、<persName ref="#rioku">李</persName>は遂に<persName ref="#gyogenki">玄機</persName>を<ruby><rb>逐</rb><rt>お</rt></ruby>うことを誓った。</p>
+        <p><persName ref="#rioku">李</persName>は林亭に往って、<persName ref="#gyogenki">玄機</persName>に魚家に帰ることを勧めた。しかし<persName ref="#gyogenki">魚</persName>は聴かなかった。<ruby><rb>縦令</rb><rt>たとい</rt></ruby><ruby><rb>二親</rb><rt>ふたおや</rt></ruby>は寛仮するにしても、<ruby><rb>女伴</rb><rt>じょはん</rt></ruby>の<ruby><rb>侮</rb><rt>あなどり</rt></ruby>を受けるに堪えないと云うのである。そこで<persName ref="#rioku">李</persName>は<ruby><rb>兼</rb><rt>かね</rt></ruby>て交っていた道士<persName ref="#chorenshi"><ruby><rb>趙錬師</rb><rt>ちょうれんし</rt></ruby></persName>を<ruby><rb>請待</rb><rt>しょうだい</rt></ruby>して、<persName ref="#gyogenki">玄機</persName>の身の上を託した。<persName ref="#gyogenki">玄機</persName>が<placeName ref="#kangikan">咸宜観</placeName>に入って女道士になったのは、こうした因縁である。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#gyogenki">玄機</persName>は才智に<ruby><rb>長</rb><rt>た</rt></ruby>けた女であった。その詩には人に優れた<ruby><rb>剪裁</rb><rt>せんさい</rt></ruby>の<ruby><rb>工</rb><rt>たくみ</rt></ruby>があった。<persName ref="#onki">温</persName>を師として詩を学ぶことになってからは、一面には典籍の渉猟に努力し、一面には字句の<ruby><rb>錘錬</rb><rt>ついれん</rt></ruby>に苦心して、ほとんど寝食を忘れる程であった。それと同時に詩名を求める念が<ruby><rb>漸</rb><rt>ようや</rt></ruby>く増長した。</p>
+        <p><persName ref="#rioku">李</persName>に聘せられる前の事である。ある日<persName ref="#gyogenki">玄機</persName>は<placeName ref="#sushinkan"><ruby><rb>崇真観</rb><rt>しゅうしんかん</rt></ruby></placeName>に往って、南楼に<ruby><rb>状元</rb><rt>じょうげん</rt></ruby>以下の進士等が名を題したのを見て、慨然として詩を<ruby><rb>賦</rb><rt>ふ</rt></ruby>した。</p>
+        <p><ruby><rb>遊<placeName ref="#sushinkan">崇真観</placeName>南楼</rb><rt>しゆうしんくわんのなんろうにあそび</rt></ruby>。<ruby><rb>覩新及第題名処</rb><rt>しんきふだいのなをだいせしところをみる</rt></ruby>。</p>
+        <p><ruby><rb>雲峯満目放春晴</rb><rt>うんぽうまんもくしゆんせいをはなち</rt></ruby>。　<ruby><rb>歴々銀鈎指下生</rb><rt>れきれきたるぎんこうかせいをさす</rt></ruby>。</p>
+        <p><ruby><rb>自恨羅衣掩詩句</rb><rt>みづからうらむらいのしくをおほふを</rt></ruby>。　<ruby><rb>挙頭空羨榜中名</rb><rt>かうべをあげてむなしくばうちゆうのなをうらやむ</rt></ruby>。</p>
+        <p><persName ref="#gyogenki">玄機</persName>が女子の<ruby><rb>形骸</rb><rt>けいがい</rt></ruby>を以て、男子の心情を有していたことは、この詩を見ても推知することが出来る。しかしその形骸が女子であるから、<ruby><rb>吉士</rb><rt>きっし</rt></ruby>を<ruby><rb>懐</rb><rt>おも</rt></ruby>うの情がないことはない。ただそれは<ruby><rb>蔓草</rb><rt>つるくさ</rt></ruby>が木の幹に<ruby><rb>纏</rb><rt>まと</rt></ruby>い附こうとするような心であって、<ruby><rb>房帷</rb><rt>ぼうい</rt></ruby>の欲ではない。<persName ref="#gyogenki">玄機</persName>は彼があったから、<persName ref="#rioku">李</persName>の聘に応じたのである。<ruby><rb>此</rb><rt>これ</rt></ruby>がなかったから、林亭の夜は<ruby><rb>索莫</rb><rt>さくばく</rt></ruby>であったのである。</p>
+        <p>既にして<persName ref="#gyogenki">玄機</persName>は<placeName ref="#kangikan">咸宜観</placeName>に入った。<persName ref="#rioku">李</persName>が別に臨んで、衣食に窮せぬだけの財を<ruby><rb>餽</rb><rt>おく</rt></ruby>ったので、<persName ref="#gyogenki">玄機</persName>は安んじて観内で暮らすことが出来た。<persName ref="#chorenshi">趙</persName>が道書を授けると、<persName ref="#gyogenki">玄機</persName>は喜んでこれを読んだ。この女のためには<ruby><rb>経</rb><rt>けい</rt></ruby>を講じ史を読むのは、家常の茶飯であるから、道家の言が<ruby><rb>却</rb><rt>かえ</rt></ruby>ってその新を<ruby><rb>趁</rb><rt>お</rt></ruby>い奇を求める心を<ruby><rb>悦</rb><rt>よろこ</rt></ruby>ばしめたのである。</p>
+        <p>当時道家には中気真術と云うものを行う<ruby><rb>習</rb><rt>ならい</rt></ruby>があった。毎月<ruby><rb>朔望</rb><rt>さくぼう</rt></ruby>の二度、予め三日の<ruby><rb>斎</rb><rt>ものいみ</rt></ruby>をして、<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>四目四鼻孔<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>の法を修するのである。<persName ref="#gyogenki">玄機</persName>は<ruby><rb>逭</rb><rt>のが</rt></ruby>るべからざる規律の<ruby><rb>下</rb><rt>もと</rt></ruby>にこれを修すること一年余にして<ruby><rb>忽然</rb><rt>こつぜん</rt></ruby>悟入する所があった。<persName ref="#gyogenki">玄機</persName>は真に女子になって、<persName ref="#rioku">李</persName>の林亭にいた日に知らなかった事を知った。これが<date when="0861">咸通二年</date>の春の事である。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#gyogenki">玄機</persName>は共に修行する女道士中のやや文字ある一人と親しくなって、これと寝食を同じゅうし、これに心胸を<ruby><rb>披瀝</rb><rt>ひれき</rt></ruby>した。この女は名を<persName ref="#saihin"><ruby><rb>采蘋</rb><rt>さいひん</rt></ruby></persName>と云った。ある日<persName ref="#gyogenki">玄機</persName>が<persName ref="#saihin">采蘋</persName>に書いて<ruby><rb>遣</rb><rt>や</rt></ruby>った詩がある。</p>
+        <p><ruby><rb>贈隣女</rb><rt>りんぢよにおくる</rt></ruby></p>
+        <p><ruby><rb>羞日遮羅袖</rb><rt>ひをさけてらしうもてさへぎる</rt></ruby>。　　　<ruby><rb>愁春懶起粧</rb><rt>はるをうれひてきしやうするにものうし</rt></ruby>。</p>
+        <p><ruby><rb>易求無価宝</rb><rt>もとめやすきはあたひなきたから</rt></ruby>。　　　<ruby><rb>難得有心郎</rb><rt>えがたきはこゝろあるらう</rt></ruby>。</p>
+        <p><ruby><rb>枕上潜垂涙</rb><rt>ちんじやうひそかになみだをながし</rt></ruby>。　　　<ruby><rb>花間暗断腸</rb><rt>くわかんひそかにはらわたをたつ</rt></ruby>。</p>
+        <p><ruby><rb>自能窺<persName ref="#sogyoku">宋玉</persName></rb><rt>みづからよくそうぎよくをうかゞふ</rt></ruby>。　　　<ruby><rb>何必恨<persName ref="#osho">王昌</persName></rb><rt>なんぞかならずしもわうしやうをうらまん</rt></ruby>。</p>
+        <p><persName ref="#saihin">采蘋</persName>は体が小くて軽率であった。それに年が十六で、もう十九になっている<persName ref="#gyogenki">玄機</persName>よりは<ruby><rb>少</rb><rt>わか</rt></ruby>いので、始終<ruby><rb>沈重</rb><rt>ちんちょう</rt></ruby>な<persName ref="#gyogenki">玄機</persName>に<ruby><rb>制馭</rb><rt>せいぎょ</rt></ruby>せられていた。そして二人で争うと、いつも<persName ref="#saihin">采蘋</persName>が負けて泣いた。そう云う事は日毎にあった。しかし二人は<ruby><rb>直</rb><rt>ただち</rt></ruby>にまた<ruby><rb>和睦</rb><rt>わぼく</rt></ruby>する。女道士仲間では、こう云う風に親しくするのを対食と名づけて、<ruby><rb>傍</rb><rt>かたわら</rt></ruby>から<ruby><rb>揶揄</rb><rt>やゆ</rt></ruby>する。それには<ruby><rb>羨</rb><rt>せん</rt></ruby>と<ruby><rb>妬</rb><rt>と</rt></ruby>とも<ruby><rb>交</rb><rt>まじ</rt></ruby>っているのである。</p>
+        <p>秋になって<persName ref="#saihin">采蘋</persName>は<ruby><rb>忽</rb><rt>たちまち</rt></ruby><ruby><rb>失踪</rb><rt>しっそう</rt></ruby>した。それは<persName ref="#chorenshi">趙</persName>の所で塑像を造っていた旅の工人が、<ruby><rb>暇</rb><rt>いとま</rt></ruby>を告げて去ったのと同時であった。前に対食を<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>った女等が、<persName ref="#chorenshi">趙</persName>に<persName ref="#gyogenki">玄機</persName>の寂しがっていることを話すと、<persName ref="#chorenshi">趙</persName>は笑って「<ruby><rb><persName ref="#saihin">蘋</persName>也飄蕩</rb><rt>ひんやへうたう</rt></ruby>、<ruby><rb><persName ref="#gyogenki">蕙</persName>也幽独</rb><rt>けいやいうどく</rt></ruby>」と云った。<persName ref="#gyogenki">玄機</persName>は<ruby><rb>字</rb><rt>あざな</rt></ruby>を<persName ref="#gyogenki">幼微</persName>と云い、また<persName ref="#gyogenki"><ruby><rb>蕙蘭</rb><rt>けいらん</rt></ruby></persName>とも云ったからである。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#chorenshi">趙</persName>は修法の時に規律を以て束縛するばかりで、楼観の出入などを厳にすることはなかった。<persName ref="#gyogenki">玄機</persName>の所へは、詩名が次第に高くなったために、書を<ruby><rb>索</rb><rt>もと</rt></ruby>めに来る人が多かった。そう云う人は<persName ref="#gyogenki">玄機</persName>に金を遣ることもある。物を遣ることもある。中には<persName ref="#gyogenki">玄機</persName>の美しいことを聞いて、名を索書に<ruby><rb>藉</rb><rt>か</rt></ruby>りて<ruby><rb>訪</rb><rt>と</rt></ruby>うものもある。ある士人は酒を携えて来て<persName ref="#gyogenki">玄機</persName>に飲ませようとすると、<persName ref="#gyogenki">玄機</persName>は<ruby><rb>僮僕</rb><rt>どうぼく</rt></ruby>を呼んで、その人を門外に<ruby><rb>逐</rb><rt>お</rt></ruby>い出させたそうである。</p>
+        <p>然るに<persName ref="#saihin">采蘋</persName>が失踪した後、<persName ref="#gyogenki">玄機</persName>の態度は一変して、やや文字を識る士人が来て詩を<ruby><rb>乞</rb><rt>こ</rt></ruby>い書を求めると、それを<ruby><rb>留</rb><rt>とど</rt></ruby>めて茶を供し、<ruby><rb>笑語晷</rb><rt>しょうごひかげ</rt></ruby>を移すことがある。一たび<ruby><rb>欵待</rb><rt>かんたい</rt></ruby>せられたものは、友を<ruby><rb>誘</rb><rt>いざな</rt></ruby>って再び来る。<persName ref="#gyogenki">玄機</persName>が<ruby><rb>客</rb><rt>かく</rt></ruby>を好むと云う風聞は、<ruby><rb>幾</rb><rt>いくばく</rt></ruby>もなくして<placeName ref="#chogan">長安</placeName>人士の間に伝わった。もう酒を載せて尋ねても、逐われる<ruby><rb>虞</rb><rt>おそれ</rt></ruby>はなくなったのである。</p>
+        <p>これに反して<ruby><rb>徒</rb><rt>いたずら</rt></ruby>に美人の名に誘われて、目に<ruby><rb>丁字</rb><rt>ていじ</rt></ruby>なしと云う<ruby><rb>輩</rb><rt>やから</rt></ruby>が来ると、<persName ref="#gyogenki">玄機</persName>は<ruby><rb>毫</rb><rt>ごう</rt></ruby>も仮借せずに、これに侮辱を加えて逐い出してしまう。<ruby><rb>熟客</rb><rt>じゅっかく</rt></ruby>と共に来た無学の<ruby><rb>貴介子弟</rb><rt>きかいしてい</rt></ruby>などは、<ruby><rb>幸</rb><rt>さいわい</rt></ruby>にして<ruby><rb>謾罵</rb><rt>まんば</rt></ruby>を免れることが出来ても、坐客があるいは句を<ruby><rb>聯</rb><rt>つら</rt></ruby>ねあるいは曲を度する間にあって、<ruby><rb>自</rb><rt>みずか</rt></ruby>ら<ruby><rb>視</rb><rt>み</rt></ruby>て欠然たる処から、独り<ruby><rb>窃</rb><rt>ひそか</rt></ruby>に席を逃れて帰るのである。</p>
+        <p>――――――――――――――――――――</p>
+        <p>客と共に<ruby><rb>謔浪</rb><rt>ぎゃくろう</rt></ruby>した<persName ref="#gyogenki">玄機</persName>は、客の散じた後に、<ruby><rb>怏々</rb><rt>おうおう</rt></ruby>として楽まない。夜が更けても眠らずに、目に涙を<ruby><rb>湛</rb><rt>たた</rt></ruby>えている。そう云う夜旅中の<persName ref="#onki">温</persName>に寄せる詩を作ったことがある。</p>
+        <p><ruby><rb>寄<persName ref="#onki">飛卿</persName></rb><rt>ひけいによす</rt></ruby></p>
+        <p><ruby><rb>堦砌乱蛩鳴</rb><rt>かいぜいらんきようなき</rt></ruby>。　<ruby><rb>庭柯烟露清</rb><rt>ていかえんろきよし</rt></ruby>。</p>
+        <p><ruby><rb>月中隣楽響</rb><rt>げつちゆうりんがくひゞき</rt></ruby>。　<ruby><rb>楼上遠山明</rb><rt>ろうじやうゑんざんあきらかなり</rt></ruby>。</p>
+        <p><ruby><rb>珍簟涼風到</rb><rt>ちんてんにりやうふういたり</rt></ruby>。　<ruby><rb>瑶琴寄恨生</rb><rt>えうきんにきこんうまる</rt></ruby>。</p>
+        <p><ruby><rb><persName ref="#keiko">嵇君</persName>懶書札</rb><rt>けいくんしよさつにものうし</rt></ruby>。　<ruby><rb>底物慰秋情</rb><rt>なにごとぞしうじやうをなぐさめん</rt></ruby>。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は詩筒を発した後、日夜<persName ref="#onki">温</persName>の書の<ruby><rb>来</rb><rt>きた</rt></ruby>るのを待った。さて日を経て<persName ref="#onki">温</persName>の書が来ると、<persName ref="#gyogenki">玄機</persName>は失望したように見えた。これは<persName ref="#onki">温</persName>の書の罪ではない。<persName ref="#gyogenki">玄機</persName>は求むる所のものがあって、自らその何物なるかを知らぬのである。</p>
+        <p>ある夜<persName ref="#gyogenki">玄機</persName>は例の如く、<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の<ruby><rb>下</rb><rt>もと</rt></ruby>に眉を<ruby><rb>蹙</rb><rt>ひそ</rt></ruby>めて沈思していたが、<ruby><rb>漸</rb><rt>ようや</rt></ruby>く不安になって席を起ち、あちこち室内を歩いて、机の上の物を取っては、また<ruby><rb>直</rb><rt>すぐ</rt></ruby>に放下しなどしていた。やや久しゅうして後、<persName ref="#gyogenki">玄機</persName>は紙を<ruby><rb>展</rb><rt>の</rt></ruby>べて詩を書いた。それは楽人<persName ref="#chinbo"><ruby><rb>陳某</rb><rt>ちんぼう</rt></ruby></persName>に寄せる詩であった。<persName ref="#chinbo">陳某</persName>は十日ばかり前に、二三人の貴公子と共にただ一度<persName ref="#gyogenki">玄機</persName>の所に来たのである。体格が雄偉で、<ruby><rb>面貌</rb><rt>めんぼう</rt></ruby>の柔和な少年で、多く語らずに、始終微笑を帯びて<persName ref="#gyogenki">玄機</persName>の挙止を凝視していた。年は<persName ref="#gyogenki">玄機</persName>より<ruby><rb>少</rb><rt>わか</rt></ruby>いのである。</p>
+        <p><ruby><rb>感懐寄人</rb><rt>かんくわいひとによす</rt></ruby></p>
+        <p><ruby><rb>恨寄朱絃上</rb><rt>うらみをしゆげんのうへによせ</rt></ruby>。　<ruby><rb>含情意不任</rb><rt>じやうをふくめどもいまかせず</rt></ruby>。　<ruby><rb>早知雲雨会</rb><rt>はやくもしるうんうのくわいするを</rt></ruby>。</p>
+        <p><ruby><rb>未起蕙蘭心</rb><rt>いまだおこさずけいらんのこゝろ</rt></ruby>。　<ruby><rb>灼々桃兼李</rb><rt>しやく／＼たるもゝとすもゝ</rt></ruby>。　<ruby><rb>無妨国士尋</rb><rt>こくしのたづぬるをさまたぐるなし</rt></ruby>。</p>
+        <p><ruby><rb>蒼々松与桂</rb><rt>さう／＼たるまつとかつら</rt></ruby>。　<ruby><rb>仍羨世人欽</rb><rt>なほうらやむよのひとのあふぐを</rt></ruby>。　<ruby><rb>月色庭階浄</rb><rt>げつしよくていかいにきよく</rt></ruby>。</p>
+        <p><ruby><rb>歌声竹院深</rb><rt>かせいちくゐんにふかし</rt></ruby>。　<ruby><rb>門前紅葉地</rb><rt>もんぜんこうえふのち</rt></ruby>。　<ruby><rb>不掃待知音</rb><rt>はらはずちいんをまつ</rt></ruby>。</p>
+        <p><persName ref="#chinbo">陳</persName>は翌日詩を得て、<ruby><rb>直</rb><rt>ただち</rt></ruby>に<placeName ref="#kangikan">咸宜観</placeName>に来た。<persName ref="#gyogenki">玄機</persName>は人を<ruby><rb>屏</rb><rt>しりぞ</rt></ruby>けて引見し、僮僕に客を謝することを命じた。<persName ref="#gyogenki">玄機</persName>の書斎からはただ<ruby><rb>微</rb><rt>かす</rt></ruby>かに低語の声が聞えるのみであった。初夜を過ぎて<persName ref="#chinbo">陳</persName>は辞し去った。これからは<persName ref="#chinbo">陳</persName>は姓名を通ぜずに<persName ref="#gyogenki">玄機</persName>の書斎に入ることになり、<persName ref="#gyogenki">玄機</persName>は<persName ref="#chinbo">陳</persName>を迎える度に客を謝することになった。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#chinbo">陳</persName>の<persName ref="#gyogenki">玄機</persName>を<ruby><rb>訪</rb><rt>と</rt></ruby>うことが<ruby><rb>頻</rb><rt>しきり</rt></ruby>なので、客は多く<ruby><rb>卻</rb><rt>しりぞ</rt></ruby>けられるようになった。書を<ruby><rb>索</rb><rt>もと</rt></ruby>めるものは、ただ金を贈って書を得るだけで、満足しなくてはならぬことになったのである。</p>
+        <p>一月ばかり後に、<persName ref="#gyogenki">玄機</persName>は僮僕に<ruby><rb>暇</rb><rt>いとま</rt></ruby>を<ruby><rb>遣</rb><rt>や</rt></ruby>って、<ruby><rb>老婢</rb><rt>ろうひ</rt></ruby>一人を使うことにした。この醜悪な、いつも不機嫌な<ruby><rb>媼</rb><rt>おうな</rt></ruby>はほとんど人に物を言うこともないので、観内の状況は世間に知られることが少く、<persName ref="#gyogenki">玄機</persName>と<persName ref="#chinbo">陳</persName>とは余り人に<ruby><rb>煩聒</rb><rt>はんかつ</rt></ruby>せられずにいることが出来た。</p>
+        <p><persName ref="#chinbo">陳</persName>は時々旅行することがある。<persName ref="#gyogenki">玄機</persName>はそう云う時にも客を迎えずに、<ruby><rb>籠居</rb><rt>ろうきょ</rt></ruby>して多く詩を作り、それを<persName ref="#onki">温</persName>に送って政を乞うた。<persName ref="#onki">温</persName>はこの詩を受けて読む毎に、語中に<ruby><rb>閨人</rb><rt>けいじん</rt></ruby>の<ruby><rb>柔情</rb><rt>じゅうじょう</rt></ruby>が漸く多く、道家の逸思がほとんど無いのを見て、<ruby><rb>訝</rb><rt>いぶか</rt></ruby>しげに首を傾けた。<persName ref="#gyogenki">玄機</persName>が<persName ref="#rioku">李</persName>の<ruby><rb>妾</rb><rt>しょう</rt></ruby>になって、<ruby><rb>幾</rb><rt>いくばく</rt></ruby>もなく<persName ref="#rioku">李</persName>と別れ、<placeName ref="#kangikan">咸宜観</placeName>に入って女道士になった<ruby><rb>顛末</rb><rt>てんまつ</rt></ruby>は、<ruby><rb>悉</rb><rt>ことごと</rt></ruby>く<persName ref="#rioku">李</persName>の口から<persName ref="#onki">温</persName>の耳に入っていたのである。</p>
+        <p>――――――――――――――――――――</p>
+        <p>七年程の月日が無事に立った。その時夢にも想わぬ災害が<persName ref="#gyogenki">玄機</persName>の身の上に起って来た。</p>
+        <p><date when="0867">咸通八年</date>の暮に、<persName ref="#chinbo">陳</persName>が旅行をした。<persName ref="#gyogenki">玄機</persName>は跡に残って寂しく時を送った。その<ruby><rb>頃</rb><rt>ころ</rt></ruby><persName ref="#onki">温</persName>に寄せた詩の中に、「<ruby><rb>満庭木葉愁風起</rb><rt>まんていのこのはしうふうおこり</rt></ruby>、<ruby><rb>透幌紗窓惜月沈</rb><rt>くわうしやのまどをとほしつきのしづむををしむ</rt></ruby>」と云う、例に無い<ruby><rb>悽惨</rb><rt>せいさん</rt></ruby>な句がある。</p>
+        <p><date when="0868">九年</date>の初春に、まだ<persName ref="#chinbo">陳</persName>が帰らぬうちに、老婢が死んだ。<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>の<ruby><rb>恃</rb><rt>たの</rt></ruby>むべきものもない媼は、<ruby><rb>兼</rb><rt>かね</rt></ruby>て棺材まで準備していたので、<persName ref="#gyogenki">玄機</persName>は送葬の事を計らって遣った。その跡へ<persName ref="#ryokugyo"><ruby><rb>緑翹</rb><rt>りょくぎょう</rt></ruby></persName>と云う十八歳の婢が来た。顔は美しくはないが、<ruby><rb>聡慧</rb><rt>そうけい</rt></ruby>で<ruby><rb>媚態</rb><rt>びたい</rt></ruby>があった。</p>
+        <p><persName ref="#chinbo">陳</persName>が<placeName ref="#chogan">長安</placeName>に帰って<placeName ref="#kangikan">咸宜観</placeName>に来たのは、艶陽<date when="--03">三月</date>の天であった。<persName ref="#gyogenki">玄機</persName>がこれを迎える情は、渇した人が泉に臨むようであった。暫らくは<persName ref="#chinbo">陳</persName>がほとんど虚日のないように来た。その間に<persName ref="#gyogenki">玄機</persName>は、度々<persName ref="#chinbo">陳</persName>が<persName ref="#ryokugyo">緑翹</persName>を<ruby><rb>揶揄</rb><rt>やゆ</rt></ruby>するのを見た。しかし<persName ref="#gyogenki">玄機</persName>は初め意に介せなかった。なぜと云うに、<persName ref="#gyogenki">玄機</persName>の目中には女子としての<persName ref="#ryokugyo">緑翹</persName>はないと云って<ruby><rb>好</rb><rt>よ</rt></ruby>い位であったからである。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は今年二十六歳になっている。<ruby><rb>眉目</rb><rt>びもく</rt></ruby>端正な顔が、迫り<ruby><rb>視</rb><rt>み</rt></ruby>るべからざる程の気高い美しさを具えて、<ruby><rb>新</rb><rt>あらた</rt></ruby>に浴を出た時には、<ruby><rb>琥珀色</rb><rt>こはくいろ</rt></ruby>の光を放っている。豊かな肌は<ruby><rb>瑕</rb><rt>きず</rt></ruby>のない玉のようである。<persName ref="#ryokugyo">緑翹</persName>は額の低い、<ruby><rb>頤</rb><rt>おとがい</rt></ruby>の短い<ruby><rb>猧子</rb><rt>かし</rt></ruby>に似た顔で、手足は粗大である。<ruby><rb>領</rb><rt>えり</rt></ruby>や肘はいつも<ruby><rb>垢膩</rb><rt>こうじ</rt></ruby>に<ruby><rb>汚</rb><rt>けが</rt></ruby>れている。<persName ref="#gyogenki">玄機</persName>に<persName ref="#ryokugyo">緑翹</persName>を忌む心のなかったのは無理もない。</p>
+        <p>そのうち三人の関係が少しく紛糾して来た。これまでは<persName ref="#gyogenki">玄機</persName>の挙措が意に満たぬ時、<persName ref="#chinbo">陳</persName>は寡言になったり、または全く口を<ruby><rb>噤</rb><rt>つぐ</rt></ruby>んでいたりしたのに、今は<persName ref="#chinbo">陳</persName>がそう云う時、多く<persName ref="#ryokugyo">緑翹</persName>と語った。その上そう云う時の<persName ref="#chinbo">陳</persName>の<ruby><rb>詞</rb><rt>ことば</rt></ruby>は<ruby><rb>極</rb><rt>きわめ</rt></ruby>て温和である。<persName ref="#gyogenki">玄機</persName>はそれを聞く度に胸を刺されるように感じた。</p>
+        <p>ある日<persName ref="#gyogenki">玄機</persName>は女道士仲間に招かれて、某の楼観に往った。書斎を出る時、<persName ref="#ryokugyo">緑翹</persName>にその観の名を教えて置いたのである。さて夕方になって帰ると、<persName ref="#ryokugyo">緑翹</persName>が<ruby><rb>門</rb><rt>かど</rt></ruby>に出迎えて云った。「お留守に<persName ref="#chinbo">陳</persName>さんがお<ruby><rb>出</rb><rt>いで</rt></ruby>なさいました。お出になった先を申しましたら、そうかと云ってお帰なさいました」と云った。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は色を変じた。これまで留守の間に<persName ref="#chinbo">陳</persName>の来たことは度々あるが、いつも<persName ref="#chinbo">陳</persName>は書斎に入って待っていた。それに今日は程近い所にいるのを知っていて、待たずに帰ったと云う。<persName ref="#gyogenki">玄機</persName>は<persName ref="#chinbo">陳</persName>と<persName ref="#ryokugyo">緑翹</persName>との間に何等かの秘密があるらしく感じたのである。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は黙って書斎に入って、暫く<ruby><rb>坐</rb><rt>ざ</rt></ruby>して沈思していた。<ruby><rb>猜疑</rb><rt>さいぎ</rt></ruby>は次第に深くなり、<ruby><rb>忿恨</rb><rt>ふんこん</rt></ruby>は次第に盛んになった。門に迎えた<persName ref="#ryokugyo">緑翹</persName>の顔に、常に無い<ruby><rb>侮蔑</rb><rt>ぶべつ</rt></ruby>の色が見えたようにも思われて来る。温言を以て<persName ref="#ryokugyo">緑翹</persName>を<ruby><rb>賺</rb><rt>すか</rt></ruby>す<persName ref="#chinbo">陳</persName>の声が歴々として耳に響くようにも思われて来る。</p>
+        <p>そこへ<persName ref="#ryokugyo">緑翹</persName>が<ruby><rb>燈</rb><rt>ともしび</rt></ruby>に火を点じて持って来た。何気なく見える女の顔を、<persName ref="#gyogenki">玄機</persName>は甚だしく陰険なように看取した。<persName ref="#gyogenki">玄機</persName>は突然起って扉に<ruby><rb>鎖</rb><rt>じょう</rt></ruby>を下した。そして<ruby><rb>震</rb><rt>ふる</rt></ruby>う声で詰問しはじめた。女はただ「存じません、存じません」と云った。<persName ref="#gyogenki">玄機</persName>にはそれが甚しく<ruby><rb>狡獪</rb><rt>こうかい</rt></ruby>なように感ぜられた。<persName ref="#gyogenki">玄機</persName>は床の上に<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>いている女を押し倒した。女は<ruby><rb>懾</rb><rt>おそ</rt></ruby>れて目を<ruby><rb>睜</rb><rt>みは</rt></ruby>っている。「なぜ白状しないか」と叫んで<persName ref="#gyogenki">玄機</persName>は女の<ruby><rb>吭</rb><rt>のど</rt></ruby>を<ruby><rb>扼</rb><rt>やく</rt></ruby>した。女はただ手足をもがいている。<persName ref="#gyogenki">玄機</persName>が手を放して見ると、女は死んでいた。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#gyogenki">玄機</persName>の<persName ref="#ryokugyo">緑翹</persName>を殺したことは、やや久しく発覚せずにいた。殺した翌日<persName ref="#chinbo">陳</persName>の来た時には、<persName ref="#gyogenki">玄機</persName>は<persName ref="#chinbo">陳</persName>が<persName ref="#ryokugyo">緑翹</persName>の事を問うだろうと予期していた。しかし<persName ref="#chinbo">陳</persName>は問わなかった。<persName ref="#gyogenki">玄機</persName>がとうとう「あの<persName ref="#ryokugyo">緑翹</persName>がゆうべからいなくなりましたが」と云って<persName ref="#chinbo">陳</persName>の顔色を<ruby><rb>覗</rb><rt>うかが</rt></ruby>うと、<persName ref="#chinbo">陳</persName>は「そうかい」と云っただけで、別に意に介せぬらしく見えた。<persName ref="#gyogenki">玄機</persName>は前夜のうちに観の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に土を取った穴のある処へ、<persName ref="#ryokugyo">緑翹</persName>の<ruby><rb>屍</rb><rt>かばね</rt></ruby>を抱いて往って、穴の中へ推し<ruby><rb>墜</rb><rt>おと</rt></ruby>して、上から土を掛けて置いたのである。</p>
+        <p><persName ref="#gyogenki">玄機</persName>は「生ける秘密」のために、数年前から客を謝していた。然るに今は「死せる秘密」のために<ruby><rb>懼</rb><rt>おそれ</rt></ruby>を<ruby><rb>懐</rb><rt>いだ</rt></ruby>いて、もし客を謝したら、<persName ref="#ryokugyo">緑翹</persName>の<ruby><rb>踪跡</rb><rt>そうせき</rt></ruby>を尋ねるものが、観内に目を<ruby><rb>著</rb><rt>つ</rt></ruby>けはすまいかと思った。そこで<ruby><rb>切</rb><rt>せつ</rt></ruby>に会見を求めるものがあると、強いて拒まぬことにした。</p>
+        <p>初夏の頃に、ある日二三人の客があった。その中の一人が涼を求めて観の背後に出ると、土を取った跡らしい穴の底に新しい土が<ruby><rb>填</rb><rt>う</rt></ruby>まっていて、その上に緑色に光る<ruby><rb>蠅</rb><rt>はえ</rt></ruby>が群がり集まっていた。その人はただなんとなく<ruby><rb>訝</rb><rt>いぶか</rt></ruby>しく思って、深い思慮をも費さずに、これを自己の従者に語った。従者はまたこれを兄に語った。兄は府の<ruby><rb>衙卒</rb><rt>がそつ</rt></ruby>を勤めているものである。この卒は数年前に、<persName ref="#chinbo">陳</persName>が払暁に<placeName ref="#kangikan">咸宜観</placeName>から出るのを認めたことがある。そこで奇貨<ruby><rb>措</rb><rt>お</rt></ruby>くべしとなして、<persName ref="#gyogenki">玄機</persName>を<ruby><rb>脅</rb><rt>おびやか</rt></ruby>して金を<ruby><rb>獲</rb><rt>え</rt></ruby>ようとしたが、<persName ref="#gyogenki">玄機</persName>は笑って顧みなかった。卒はそれから<persName ref="#gyogenki">玄機</persName>を怨んでいた。今弟の<ruby><rb>語</rb><rt>ことば</rt></ruby>を聞いて、<ruby><rb>小婢</rb><rt>しょうひ</rt></ruby>の失踪したのと、土穴に<ruby><rb>腥羶</rb><rt>せいせん</rt></ruby>の気があるのとの間に、何等かの関係があるように思った。そして同班の卒数人と共に、<ruby><rb>鍤</rb><rt>すき</rt></ruby>を持って<placeName ref="#kangikan">咸宜観</placeName>に突入して、穴の底を掘った。<persName ref="#ryokugyo">緑翹</persName>の屍は一尺に足らぬ土の下に埋まっていたのである。</p>
+        <p><placeName ref="#keicho"><ruby><rb>京兆</rb><rt>けいちょう</rt></ruby></placeName>の<ruby><rb>尹</rb><rt>いん</rt></ruby><persName ref="#onsho"><ruby><rb>温璋</rb><rt>おんしょう</rt></ruby></persName>は衙卒の訴に<ruby><rb>本</rb><rt>もと</rt></ruby>づいて<persName ref="#gyogenki">魚玄機</persName>を逮捕させた。<persName ref="#gyogenki">玄機</persName>は<ruby><rb>毫</rb><rt>ごう</rt></ruby>も<ruby><rb>弁疏</rb><rt>べんそ</rt></ruby>することなくして罪に服した。楽人<persName ref="#chinbo">陳某</persName>は<ruby><rb>鞠問</rb><rt>きくもん</rt></ruby>を受けたが、情を知らざるものとして<ruby><rb>釈</rb><rt>ゆる</rt></ruby>された。</p>
+        <p><persName ref="#rioku">李億</persName>を<ruby><rb>始</rb><rt>はじめ</rt></ruby>として、かつて<persName ref="#gyogenki">玄機</persName>を識っていた朝野の人士は、皆その才を惜んで救おうとした。ただ<persName ref="#onki">温岐</persName>一人は<placeName ref="#hojo">方城</placeName>の吏になって、遠く<placeName ref="#chogan"><ruby><rb>京師</rb><rt>けいし</rt></ruby></placeName>を離れていたので、<persName ref="#gyogenki">玄機</persName>がために力を致すことが出来なかった。</p>
+        <p><placeName ref="#keicho">京兆</placeName>の尹は、事が余りにあらわになったので、法を<ruby><rb>枉</rb><rt>ま</rt></ruby>げることが出来なくなった。立秋の頃に至って、<ruby><rb>遂</rb><rt>つい</rt></ruby>に<persName ref="#iso"><ruby><rb>懿宗</rb><rt>いそう</rt></ruby></persName>に上奏して、<persName ref="#gyogenki">玄機</persName>を<ruby><rb>斬</rb><rt>ざん</rt></ruby>に処した。</p>
+        <p>――――――――――――――――――――</p>
+        <p><persName ref="#gyogenki">玄機</persName>の刑せられたのを哀むものは多かったが、最も深く心を傷めたものは、<placeName ref="#hojo">方城</placeName>にいる<persName ref="#onki">温岐</persName>であった。</p>
+        <p><persName ref="#gyogenki">玄機</persName>が刑せられる二年前に、<persName ref="#onki">温</persName>は流離して<placeName ref="#yangzhou"><ruby><rb>揚州</rb><rt>ようしゅう</rt></ruby></placeName>に往っていた。<placeName ref="#yangzhou">揚州</placeName>は<date when="0859">大中十三年</date>に宰相を<ruby><rb>罷</rb><rt>や</rt></ruby>めた<persName ref="#reikoto">令狐綯</persName>が<ruby><rb>刺史</rb><rt>しし</rt></ruby>になっている地である。<persName ref="#onki">温</persName>は<persName ref="#reikoto">綯</persName>が自己を知っていながら用いなかったのを怨んで名刺をも出さずにいるうちに、ある夜<ruby><rb>妓院</rb><rt>ぎいん</rt></ruby>に酔って<ruby><rb>虞候</rb><rt>ぐこう</rt></ruby>に撃たれ、<ruby><rb>面</rb><rt>おもて</rt></ruby>に<ruby><rb>創</rb><rt>きず</rt></ruby>を負い前歯を折られたので、怒ってこれを訴えた。<persName ref="#reikoto">綯</persName>が<persName ref="#onki">温</persName>と虞候とを対決させると、虞候は盛んに<persName ref="#onki">温</persName>の<ruby><rb>汙行</rb><rt>おこう</rt></ruby>を陳述して、自己は無罪と判決せられた。事は<placeName ref="#chogan">京師</placeName>に聞えた。<persName ref="#onki">温</persName>は自ら<placeName ref="#chogan">長安</placeName>に入って、要路に上書して<ruby><rb>分疏</rb><rt>ぶんそ</rt></ruby>した。この時<persName ref="#josho">徐商</persName>と<persName ref="#yoshu"><ruby><rb>楊収</rb><rt>ようしゅう</rt></ruby></persName>とが宰相に列していて、<persName ref="#josho">徐</persName>は<persName ref="#onki">温</persName>を庇護したが<persName ref="#yoshu">楊</persName>が聴かずに、<persName ref="#onki">温</persName>を<placeName ref="#hojo">方城</placeName>に遣って吏務に服せしめたのである。その<ruby><rb>制辞</rb><rt>せいじ</rt></ruby>は「<ruby><rb>孔門以徳行為先</rb><rt>こうもんはとくかうをもつてさきとなし</rt></ruby>、<ruby><rb>文章為末</rb><rt>ぶんしやうをすゑとなす</rt></ruby>、<ruby><rb>爾既徳行無取</rb><rt>なんぢすでにとくかうのとるなし</rt></ruby>、<ruby><rb>文章何以称焉</rb><rt>ぶんしやうなんぞもつてしようせられんや</rt></ruby>、<ruby><rb>徒負不羈之才</rb><rt>いたづらにふきのさいをおふ</rt></ruby>、<ruby><rb>罕有適時之用</rb><rt>てきじのようあることまれなり</rt></ruby>」と云うのであった。<persName ref="#onki">温</persName>は後に<placeName ref="#zuiken"><ruby><rb>隋県</rb><rt>ずいけん</rt></ruby></placeName>に<ruby><rb>遷</rb><rt>うつ</rt></ruby>されて死んだ。子の<persName ref="#ken">憲</persName>も弟の<persName ref="#teiko"><ruby><rb>庭皓</rb><rt>ていこう</rt></ruby></persName>も、<date when="0860">咸通中</date>に官に<ruby><rb>擢</rb><rt>ぬきん</rt></ruby>でられたが、<persName ref="#teiko">庭皓</persName>は<persName ref="#hokun"><ruby><rb>龐勛</rb><rt>ほうくん</rt></ruby></persName>の乱に、<placeName ref="#joshu">徐州</placeName>で殺された。<persName ref="#gyogenki">玄機</persName>が斬られてから三月の後の事である。</p>
+        <p>参照</p>
+        <p>其一　<persName ref="#gyogenki">魚玄機</persName></p>
+        <p>三水小牘　　　　　　　南部新書</p>
+        <p>太平広記　　　　　　　<ruby><rb>北夢瑣言</rb><rt>ほくむさげん</rt></ruby></p>
+        <p>続談助　　　　　　　　唐才子伝</p>
+        <p>唐詩紀事　　　　　　　全唐詩（姓名下小伝）</p>
+        <p>全唐詩話　　　　　　　唐女郎魚玄機詩</p>
+        <p>其二　<persName ref="#onki">温飛卿</persName></p>
+        <p>旧唐書　　　　　　　　<ruby><rb>漁隠叢話</rb><rt>ぎょいんそうわ</rt></ruby></p>
+        <p>新唐書　　　　　　　　北夢瑣言</p>
+        <p>全唐詩話　　　　　　　<ruby><rb>桐薪</rb><rt>どうしん</rt></ruby></p>
+        <p>唐詩紀事　　　　　　　玉泉子</p>
+        <p>六一詩話　　　　　　　南部新書</p>
+        <p><ruby><rb>滄浪</rb><rt>そうろう</rt></ruby>詩話　　　　　　　<ruby><rb>握蘭集</rb><rt>あくらんしゆう</rt></ruby></p>
+        <p><ruby><rb>彦周</rb><rt>げんしゆう</rt></ruby>詩話　　　　　　　<ruby><rb>金筌集</rb><rt>きんせんしゆう</rt></ruby></p>
+        <p>三山老人語録　　　　　漢南真稿</p>
+        <p><ruby><rb>雪浪斎</rb><rt>せつろうさい</rt></ruby>日記　　　　　　温飛卿詩集</p>
+        <p>（<date when="1915-04">大正四年四月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

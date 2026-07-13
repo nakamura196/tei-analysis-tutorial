@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>富士に就いて</title>
+        <author>太宰治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>富士に就いて</title><author>太宰治</author>
+          <note>青空文庫。底本：「太宰治全集10」ちくま文庫、筑摩書房。1989（平成元）年6月27日第1刷発行。底本の親本：「筑摩全集類聚版太宰治全集第十巻」筑摩書房。1977（昭和52）年2月25日初版第1刷発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000035/card1594.html">https://www.aozora.gr.jp/cards/000035/card1594.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="adachi-kenzo">
+        <persName>安達謙蔵</persName>
+        <note>政治家・書家（1864–1948）。御坂トンネル入口の「天下第一」の大文字に署名した人物として言及</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="fuji">
+        <placeName>富士山</placeName>
+        <location><geo>35.3606 138.7274</geo></location>
+        <note>作中表記はすべて「富士」。概値</note>
+      </place>
+      <place xml:id="misaka-toge">
+        <placeName>御坂峠</placeName>
+        <location><geo>35.5514 138.7433</geo></location>
+        <note>山梨県の旧御坂峠。概値</note>
+      </place>
+      <place xml:id="tenka-chaya">
+        <placeName>天下茶屋</placeName>
+        <location><geo>35.5507 138.7442</geo></location>
+        <note>御坂峠頂上の茶店。「正しくは、天下一茶屋」と作中で言い換えられる。概値</note>
+      </place>
+      <place xml:id="kawaguchiko">
+        <placeName>河口湖</placeName>
+        <location><geo>35.517 138.753</geo></location>
+        <note>富士五湖のひとつ。御坂峠から見下ろす。概値</note>
+      </place>
+      <place xml:id="koshu">
+        <placeName>甲州</placeName>
+        <location><geo>35.6 138.6</geo></location>
+        <note>旧国名（甲斐国）＝現在の山梨県。国名・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kegon-no-taki">
+        <placeName>華厳の滝</placeName>
+        <location><geo>36.7386 139.5028</geo></location>
+        <note>栃木県日光市の滝。「天下第一」の風景の対比として言及。作中では「華厳」とも略記。概値</note>
+      </place>
+      <place xml:id="tohoku">
+        <placeName>東北</placeName>
+        <location><geo>39.5 140.5</geo></location>
+        <note>東北地方。「私は、東北の生れであるが」（太宰の出身地・青森を含む広域の地方名）。地方名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>富士に就いて</head>
+        <p><placeName ref="#koshu">甲州</placeName>の<placeName ref="#misaka-toge"><ruby><rb>御坂峠</rb><rt>みさかとうげ</rt></ruby></placeName>の頂上に、<placeName ref="#tenka-chaya">天下茶屋</placeName>という、ささやかな茶店がある。私は、<date when="--09-13">九月の十三日</date>から、この茶店の二階を借りて少しずつ、まずしい仕事をすすめている。この茶店の人たちは、親切である。私は、当分、ここにいて、仕事にはげむつもりである。</p>
+        <p><placeName ref="#tenka-chaya">天下茶屋</placeName>、正しくは、<placeName ref="#tenka-chaya">天下一茶屋</placeName>というのだそうである。すぐちかくのトンネルの入口にも「天下第一」という大文字が彫り込まれていて、<persName ref="#adachi-kenzo">安達謙蔵</persName>、と署名されてある。この辺のながめは、天下第一である、という意味なのであろう。ここへ茶店を建てるときにも、ずいぶん<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい競争があったと聞いている。<placeName ref="#tokyo">東京</placeName>からの遊覧の客も、必ずここで一休みする。バスから降りて、まず崖の上から立小便して、それから、ああいいながめだ、と讃嘆の声を放つのである。</p>
+        <p>遊覧客たちの、そんな嘆声に接して、私は二階で仕事がくるしく、ごろり寝ころんだまま、その天下第一のながめを、横目で見るのだ。<placeName ref="#fuji">富士</placeName>が、手に取るように近く見えて、<placeName ref="#kawaguchiko">河口湖</placeName>が、その足下に冷く白くひろがっている。なんということもない。私は、かぶりを振って<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>を吐く。これも私の、無風流のせいであろうか。</p>
+        <p>私は、この風景を、拒否している。近景の秋の山々が両袖からせまって、その奥に湖水、そうして、蒼空に<placeName ref="#fuji">富士</placeName>の秀峰、この風景の切りかたには、何か仕様のない恥かしさがありはしないか。これでは、まるで、風呂屋のペンキ画である。芝居の書きわりである。あまりにも註文とおりである。<placeName ref="#fuji">富士</placeName>があって、その下に白く湖、なにが天下第一だ、と言いたくなる。<ruby><rb>巧</rb><rt>たくみ</rt></ruby>すぎた落ちがある。完成され切ったいやらしさ。そう感ずるのも、これも、私の若さのせいであろうか。</p>
+        <p><ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>「天下第一」の風景にはつねに驚きが伴わなければならぬ。私は、その意味で、<placeName ref="#kegon-no-taki"><ruby><rb>華厳</rb><rt>けごん</rt></ruby>の滝</placeName>を推す。「<placeName ref="#kegon-no-taki">華厳</placeName>」とは、よくつけた、と思った。いたずらに、烈しさ、強さを求めているのでは、無い。私は、<placeName ref="#tohoku">東北</placeName>の生れであるが、<ruby><rb>咫尺</rb><rt>しせき</rt></ruby>を弁ぜぬ吹雪の荒野を、まさか絶景とは言わぬ。人間に無関心な自然の精神、自然の宗教、そのようなものが、美しい風景にもやはり絶対に必要である、と思っているだけである。</p>
+        <p><placeName ref="#fuji">富士</placeName>を、白扇さかしまなど形容して、まるでお座敷芸にまるめてしまっているのが、不服なのである。<placeName ref="#fuji">富士</placeName>は、熔岩の山である。あかつきの<placeName ref="#fuji">富士</placeName>を見るがいい。こぶだらけの山肌が朝日を受けて、あかがね色に光っている。私は、かえって、そのような<placeName ref="#fuji">富士</placeName>の姿に、崇高を覚え、天下第一を感ずる。茶店で<ruby><rb>羊羹</rb><rt>ようかん</rt></ruby>食いながら、白扇さかしまなど、気の毒に思うのである。なお、この一文、茶屋の人たちには、読ませたくないものだ。私が、ずいぶん親切に、世話を受けているのだから。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

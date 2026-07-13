@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>虔十公園林</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>虔十公園林</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「新編風の又三郎」新潮文庫、新潮社。1989（平成元）年2月25日発行。1989（平成元）年6月10日2刷。入力：蒋龍。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card46601.html">https://www.aozora.gr.jp/cards/000081/card46601.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="kenju">
+        <persName>虔十</persName>
+        <note>主人公。いつもわらっている「少し足りない」と思われていた若者。家の裏の野原に杉苗七百本を植え、その秋チブスで死ぬ。林はのちに彼の名を冠した公園林として保存される</note>
+      </person>
+      <person xml:id="heiji">
+        <persName>平二</persName>
+        <note>野原の北側に畑を持つ男。百姓のほかに「人にいやがられるようなこと」も生業とする。日影になると言って杉を伐れと迫り虔十を殴る。虔十の死の十日ばかり前に同じ病気で死ぬ</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kenjukoenrin">
+        <placeName>虔十公園林</placeName>
+        <note>虔十の植えた杉林。若い博士の発案で命名され、青い橄欖岩の碑が建てられる。作品題名でもある。作中の(モデルは花巻周辺とされるが特定できない)場所のため座標なし</note>
+      </place>
+      <place xml:id="tokyokaido">
+        <placeName>東京街道</placeName>
+        <note>子供らが杉の列に付けた並木道の名の一つ。虔十の林の中の呼び名で実在の街道ではないため座標なし</note>
+      </place>
+      <place xml:id="roshiyakaido">
+        <placeName>ロシヤ街道</placeName>
+        <note>子供らが杉の列に付けた並木道の名の一つ。虔十の林の中の呼び名で実在の街道ではないため座標なし</note>
+      </place>
+      <place xml:id="seiyokaido">
+        <placeName>西洋街道</placeName>
+        <note>子供らが杉の列に付けた並木道の名の一つ。虔十の林の中の呼び名で実在の街道ではないため座標なし</note>
+      </place>
+      <place xml:id="amerika">
+        <placeName>アメリカ</placeName>
+        <location><geo>37.0902 -95.7129</geo></location>
+        <note>国名・概値。故郷を出た若い博士が「今アメリカのある大学の教授になっている」と語られる</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>虔十公園林</head>
+        <p><persName ref="#kenju">虔十</persName>はいつも<ruby><rb>縄</rb><rt>なわ</rt></ruby>の帯をしめてわらって<ruby><rb>杜</rb><rt>もり</rt></ruby>の中や畑の間をゆっくりあるいているのでした。</p>
+        <p>雨の中の青い<ruby><rb>藪</rb><rt>やぶ</rt></ruby>を見てはよろこんで目をパチパチさせ青ぞらをどこまでも<ruby><rb>翔</rb><rt>か</rt></ruby>けて行く<ruby><rb>鷹</rb><rt>たか</rt></ruby>を見付けてははねあがって手をたたいてみんなに知らせました。</p>
+        <p>けれどもあんまり子供らが<persName ref="#kenju">虔十</persName>をばかにして笑うものですから<persName ref="#kenju">虔十</persName>はだんだん笑わないふりをするようになりました。</p>
+        <p>風がどうと<ruby><rb>吹</rb><rt>ふ</rt></ruby>いてぶなの葉がチラチラ光るときなどは<persName ref="#kenju">虔十</persName>はもううれしくてうれしくてひとりでに笑えて仕方ないのを、無理やり大きく口をあき、はあはあ息だけついてごまかしながらいつまでもいつまでもそのぶなの木を見上げて立っているのでした。</p>
+        <p>時にはその大きくあいた口の横わきをさも<ruby><rb>痒</rb><rt>かゆ</rt></ruby>いようなふりをして指でこすりながらはあはあ息だけで笑いました。</p>
+        <p>なるほど遠くから見ると<persName ref="#kenju">虔十</persName>は口の横わきを<ruby><rb>掻</rb><rt>か</rt></ruby>いているか<ruby><rb>或</rb><rt>ある</rt></ruby>いは<ruby><rb>欠伸</rb><rt>あくび</rt></ruby>でもしているかのように見えましたが近くではもちろん笑っている息の音も聞えましたし<ruby><rb>唇</rb><rt>くちびる</rt></ruby>がピクピク動いているのもわかりましたから子供らはやっぱりそれもばかにして笑いました。</p>
+        <p>おっかさんに<ruby><rb>云</rb><rt>い</rt></ruby>いつけられると<persName ref="#kenju">虔十</persName>は水を五百<ruby><rb>杯</rb><rt>ぱい</rt></ruby>でも<ruby><rb>汲</rb><rt>く</rt></ruby>みました。一日一杯畑の草もとりました。けれども<persName ref="#kenju">虔十</persName>のおっかさんもおとうさんも仲々そんなことを<persName ref="#kenju">虔十</persName>に云いつけようとはしませんでした。</p>
+        <p>さて、<persName ref="#kenju">虔十</persName>の家のうしろに丁度大きな運動場ぐらいの野原がまだ畑にならないで残っていました。</p>
+        <p>ある年、山がまだ雪でまっ白く野原には新らしい草も芽を出さない時、<persName ref="#kenju">虔十</persName>はいきなり田打ちをしていた家の人<ruby><rb>達</rb><rt>たち</rt></ruby>の前に走って来て云いました。</p>
+        <p>「お<ruby><rb>母</rb><rt>があ</rt></ruby>、おらさ<ruby><rb>杉苗</rb><rt>すぎなえ</rt></ruby>七百本、買って<ruby><rb>呉</rb><rt>け</rt></ruby>ろ。」</p>
+        <p><persName ref="#kenju">虔十</persName>のおっかさんはきらきらの<ruby><rb>三本鍬</rb><rt>さんぼんぐわ</rt></ruby>を動かすのをやめてじっと<persName ref="#kenju">虔十</persName>の顔を見て云いました。</p>
+        <p>「杉苗七百ど、どごさ植ぇらぃ。」</p>
+        <p>「家のうしろの野原さ。」</p>
+        <p>そのとき<persName ref="#kenju">虔十</persName>の兄さんが云いました。</p>
+        <p>「<persName ref="#kenju">虔十</persName>、あそごは杉植ぇでも<ruby><rb>成長</rb><rt>おが</rt></ruby>らなぃ<ruby><rb>処</rb><rt>ところ</rt></ruby>だ。それより少し田でも打って<ruby><rb>助</rb><rt>す</rt></ruby>けろ。」</p>
+        <p><persName ref="#kenju">虔十</persName>はきまり悪そうにもじもじして下を向いてしまいました。</p>
+        <p>すると<persName ref="#kenju">虔十</persName>のお父さんが向うで<ruby><rb>汗</rb><rt>あせ</rt></ruby>を<ruby><rb>拭</rb><rt>ふ</rt></ruby>きながらからだを延ばして</p>
+        <p>「買ってやれ、買ってやれ。<persName ref="#kenju">虔十</persName>ぁ今まで何一つだて<ruby><rb>頼</rb><rt>たの</rt></ruby>んだごとぁ無ぃがったもの。買ってやれ。」と云いましたので<persName ref="#kenju">虔十</persName>のお母さんも安心したように笑いました。</p>
+        <p><persName ref="#kenju">虔十</persName>はまるでよろこんですぐにまっすぐに家の方へ走りました。</p>
+        <p>そして<ruby><rb>納屋</rb><rt>なや</rt></ruby>から<ruby><rb>唐鍬</rb><rt>とうぐわ</rt></ruby>を持ち出してぽくりぽくりと<ruby><rb>芝</rb><rt>しば</rt></ruby>を起して杉苗を植える穴を<ruby><rb>掘</rb><rt>ほ</rt></ruby>りはじめました。</p>
+        <p><persName ref="#kenju">虔十</persName>の兄さんがあとを追って来てそれを見て云いました。</p>
+        <p>「<persName ref="#kenju"><ruby><rb>虔十</rb><rt>けんじゅう</rt></ruby></persName>、杉ぁ植える時、掘らなぃばわがなぃんだじゃ。明日まで待て。おれ、苗買って来てやるがら。」</p>
+        <p><persName ref="#kenju">虔十</persName>はきまり悪そうに鍬を置きました。</p>
+        <p>次の日、空はよく晴れて山の雪はまっ白に光りひばりは高く高くのぼってチーチクチーチクやりました。そして<persName ref="#kenju">虔十</persName>はまるでこらえ切れないようににこにこ笑って兄さんに教えられたように今度は北の方の<ruby><rb>堺</rb><rt>さかい</rt></ruby>から杉苗の穴を掘りはじめました。実にまっすぐに実に<ruby><rb>間隔</rb><rt>かんかく</rt></ruby>正しくそれを掘ったのでした。<persName ref="#kenju">虔十</persName>の兄さんがそこへ一本ずつ苗を植えて行きました。</p>
+        <p>その時野原の北側に畑を<ruby><rb>有</rb><rt>も</rt></ruby>っている<persName ref="#heiji">平二</persName>がきせるをくわえてふところ手をして寒そうに<ruby><rb>肩</rb><rt>かた</rt></ruby>をすぼめてやって来ました。<persName ref="#heiji">平二</persName>は<ruby><rb>百姓</rb><rt>ひゃくしょう</rt></ruby>も少しはしていましたが実はもっと別の、人にいやがられるようなことも仕事にしていました。<persName ref="#heiji">平二</persName>は<persName ref="#kenju">虔十</persName>に云いました。</p>
+        <p>「やぃ。<persName ref="#kenju">虔十</persName>、<ruby><rb>此処</rb><rt>ここ</rt></ruby>さ杉植えるなんてやっぱり<ruby><rb>馬鹿</rb><rt>ばか</rt></ruby>だな。第一おらの畑ぁ<ruby><rb>日影</rb><rt>ひかげ</rt></ruby>にならな。」</p>
+        <p><persName ref="#kenju">虔十</persName>は顔を赤くして何か云いたそうにしましたが云えないでもじもじしました。</p>
+        <p>すると<persName ref="#kenju">虔十</persName>の兄さんが、</p>
+        <p>「<persName ref="#heiji">平二</persName>さん、お早うがす。」と云って向うに立ちあがりましたので<persName ref="#heiji">平二</persName>はぶつぶつ云いながら<ruby><rb>又</rb><rt>また</rt></ruby>のっそりと向うへ行ってしまいました。</p>
+        <p>その芝原へ杉を植えることを<ruby><rb>嘲笑</rb><rt>わら</rt></ruby>ったものは決して<persName ref="#heiji">平二</persName>だけではありませんでした。あんな処に杉など育つものでもない、底は<ruby><rb>硬</rb><rt>かた</rt></ruby>い<ruby><rb>粘土</rb><rt>ねんど</rt></ruby>なんだ、やっぱり馬鹿は馬鹿だとみんなが云って<ruby><rb>居</rb><rt>お</rt></ruby>りました。</p>
+        <p>それは全くその通りでした。杉は五年までは緑いろの<ruby><rb>心</rb><rt>しん</rt></ruby>がまっすぐに空の方へ延びて行きましたがもうそれからはだんだん頭が円く変って七年目も八年目もやっぱり<ruby><rb>丈</rb><rt>たけ</rt></ruby>が九尺ぐらいでした。</p>
+        <p>ある朝<persName ref="#kenju">虔十</persName>が林の前に立っていますとひとりの百姓が<ruby><rb>冗談</rb><rt>じょうだん</rt></ruby>に云いました。</p>
+        <p>「おおい、<persName ref="#kenju">虔十</persName>。あの杉ぁ<ruby><rb>枝打</rb><rt>えだう</rt></ruby>ぢさなぃのか。」</p>
+        <p>「枝打ぢていうのは何だぃ。」</p>
+        <p>「枝打ぢつのは下の方の枝山刀で落すのさ。」</p>
+        <p>「おらも枝打ぢするべがな。」</p>
+        <p><persName ref="#kenju">虔十</persName>は走って行って山刀を持って来ました。</p>
+        <p>そして片っぱしからぱちぱち杉の下枝を<ruby><rb>払</rb><rt>はら</rt></ruby>いはじめました。ところがただ九尺の杉ですから<persName ref="#kenju">虔十</persName>は少しからだをまげて杉の木の下にくぐらなければなりませんでした。</p>
+        <p>夕方になったときはどの木も上の方の枝をただ三四本ぐらいずつ残してあとはすっかり払い落されていました。</p>
+        <p><ruby><rb>濃</rb><rt>こ</rt></ruby>い緑いろの枝はいちめんに下草を<ruby><rb>埋</rb><rt>う</rt></ruby>めその小さな林はあかるくがらんとなってしまいました。</p>
+        <p><persName ref="#kenju">虔十</persName>は一ぺんにあんまりがらんとなったのでなんだか気持ちが悪くて胸が痛いように思いました。</p>
+        <p>そこへ丁度<persName ref="#kenju">虔十</persName>の兄さんが畑から帰ってやって来ましたが林を見て思わず笑いました。そしてぼんやり立っている<persName ref="#kenju">虔十</persName>にきげんよく云いました。</p>
+        <p>「おう、枝集めべ、いい<ruby><rb>焚</rb><rt>た</rt></ruby>ぎものうんと出来だ。林も立派になったな。」</p>
+        <p>そこで<persName ref="#kenju">虔十</persName>もやっと安心して兄さんと<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に杉の木の下にくぐって落した枝をすっかり集めました。</p>
+        <p>下草はみじかくて<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>でまるで<ruby><rb>仙人</rb><rt>せんにん</rt></ruby>たちが<ruby><rb>碁</rb><rt>ご</rt></ruby>でもうつ処のように見えました。</p>
+        <p>ところが次の日<persName ref="#kenju">虔十</persName>は納屋で<ruby><rb>虫喰</rb><rt>むしく</rt></ruby>い<ruby><rb>大豆</rb><rt>まめ</rt></ruby>を拾っていましたら林の方でそれはそれは大さわぎが聞えました。</p>
+        <p>あっちでもこっちでも号令をかける声ラッパのまね、足ぶみの音それからまるでそこら中の鳥も飛びあがるようなどっと起るわらい声、<persName ref="#kenju">虔十</persName>はびっくりしてそっちへ行って見ました。</p>
+        <p>すると<ruby><rb>愕</rb><rt>おど</rt></ruby>ろいたことは学校帰りの子供らが五十人も集って一列になって歩調をそろえてその杉の木の間を行進しているのでした。</p>
+        <p>全く杉の列はどこを通っても<ruby><rb>並木道</rb><rt>なみきみち</rt></ruby>のようでした。それに青い服を着たような杉の木の方も列を組んであるいているように見えるのですから子供らのよろこび加減と云ったらとてもありません、みんな顔をまっ赤にしてもずのように<ruby><rb>叫</rb><rt>さけ</rt></ruby>んで杉の列の間を歩いているのでした。</p>
+        <p>その杉の列には、<placeName ref="#tokyokaido">東京<ruby><rb>街道</rb><rt>かいどう</rt></ruby></placeName><placeName ref="#roshiyakaido">ロシヤ街道</placeName>それから<placeName ref="#seiyokaido">西洋街道</placeName>というようにずんずん名前がついて行きました。</p>
+        <p><persName ref="#kenju">虔十</persName>もよろこんで杉のこっちにかくれながら口を大きくあいてはあはあ笑いました。</p>
+        <p>それからはもう毎日毎日子供らが集まりました。</p>
+        <p>ただ子供らの来ないのは雨の日でした。</p>
+        <p>その日はまっ白なやわらかな空からあめのさらさらと降る中で<persName ref="#kenju">虔十</persName>がただ一人からだ中ずぶぬれになって林の外に立っていました。</p>
+        <p>「<persName ref="#kenju">虔十</persName>さん。今日も林の立番だなす。」</p>
+        <p><ruby><rb>簑</rb><rt>みの</rt></ruby>を着て通りかかる人が笑って云いました。その杉には<ruby><rb>鳶色</rb><rt>とびいろ</rt></ruby>の実がなり立派な緑の枝さきからはすきとおったつめたい雨のしずくがポタリポタリと垂れました。<persName ref="#kenju">虔十</persName>は口を大きくあけてはあはあ息をつきからだからは雨の中に湯気を立てながらいつまでもいつまでもそこに立っているのでした。</p>
+        <p>ところがある<ruby><rb>霧</rb><rt>きり</rt></ruby>のふかい朝でした。</p>
+        <p><persName ref="#kenju">虔十</persName>は<ruby><rb>萱場</rb><rt>かやば</rt></ruby>で<persName ref="#heiji">平二</persName>といきなり行き会いました。</p>
+        <p><persName ref="#heiji">平二</persName>はまわりをよく見まわしてからまるで<ruby><rb>狼</rb><rt>おおかみ</rt></ruby>のようないやな顔をしてどなりました。</p>
+        <p>「<persName ref="#kenju">虔十</persName>、<ruby><rb>貴</rb><rt>き</rt></ruby>さんどごの杉<ruby><rb>伐</rb><rt>き</rt></ruby>れ。」</p>
+        <p>「<ruby><rb>何</rb><rt>な</rt></ruby>してな。」</p>
+        <p>「おらの畑ぁ日かげにならな。」</p>
+        <p><persName ref="#kenju">虔十</persName>はだまって下を向きました。<persName ref="#heiji">平二</persName>の畑が日かげになると云ったって杉の影がたかで五寸もはいってはいなかったのです。おまけに杉はとにかく南から来る強い風を防いでいるのでした。</p>
+        <p>「伐れ、伐れ。伐らなぃが。」</p>
+        <p>「伐らなぃ。」<persName ref="#kenju">虔十</persName>が顔をあげて少し<ruby><rb>怖</rb><rt>こわ</rt></ruby>そうに云いました。その<ruby><rb>唇</rb><rt>くちびる</rt></ruby>はいまにも泣き出しそうにひきつっていました。実にこれが<persName ref="#kenju">虔十</persName>の一生の間のたった一つの人に対する逆らいの<ruby><rb>言</rb><rt>ことば</rt></ruby>だったのです。</p>
+        <p>ところが<persName ref="#heiji">平二</persName>は人のいい<persName ref="#kenju">虔十</persName>などにばかにされたと思ったので急に<ruby><rb>怒</rb><rt>おこ</rt></ruby>り出して肩を張ったと思うといきなり<persName ref="#kenju">虔十</persName>の<ruby><rb>頬</rb><rt>ほお</rt></ruby>をなぐりつけました。どしりどしりとなぐりつけました。</p>
+        <p><persName ref="#kenju">虔十</persName>は手を頬にあてながら<ruby><rb>黙</rb><rt>だま</rt></ruby>ってなぐられていましたがとうとうまわりがみんなまっ青に見えてよろよろしてしまいました。すると<persName ref="#heiji">平二</persName>も少し気味が悪くなったと見えて急いで<ruby><rb>腕</rb><rt>うで</rt></ruby>を組んでのしりのしりと霧の中へ歩いて行ってしまいました。</p>
+        <p>さて<persName ref="#kenju">虔十</persName>はその秋チブスにかかって死にました。<persName ref="#heiji">平二</persName>も丁度その十日ばかり前にやっぱりその病気で死んでいました。</p>
+        <p>ところがそんなことには一向構わず林にはやはり毎日毎日子供らが集まりました。</p>
+        <p>お話はずんずん急ぎます。</p>
+        <p>次の年その村に鉄道が通り<persName ref="#kenju">虔十</persName>の家から三町ばかり東の方に停車場ができました。あちこちに大きな<ruby><rb>瀬戸物</rb><rt>せともの</rt></ruby>の工場や製糸場ができました。そこらの畑や田はずんずん<ruby><rb>潰</rb><rt>つぶ</rt></ruby>れて家がたちました。いつかすっかり町になってしまったのです。その中に<persName ref="#kenju">虔十</persName>の林だけはどう云うわけかそのまま残って居りました。その杉もやっと一丈ぐらい、子供らは毎日毎日集まりました。学校がすぐ近くに建っていましたから子供らはその林と林の南の芝原とをいよいよ自分らの運動場の続きと思ってしまいました。</p>
+        <p><persName ref="#kenju">虔十</persName>のお父さんももうかみがまっ白でした。まっ白な<ruby><rb>筈</rb><rt>はず</rt></ruby>です。<persName ref="#kenju">虔十</persName>が死んでから二十年近くなるではありませんか。</p>
+        <p>ある日<ruby><rb>昔</rb><rt>むかし</rt></ruby>のその村から出て今<placeName ref="#amerika">アメリカ</placeName>のある大学の教授になっている若い博士が十五年ぶりで故郷へ帰って来ました。</p>
+        <p>どこに昔の畑や森のおもかげがあったでしょう。町の人たちも大ていは新らしく外から来た人たちでした。</p>
+        <p>それでもある日博士は小学校から頼まれてその講堂でみんなに向うの国の話をしました。</p>
+        <p>お話がすんでから博士は校長さんたちと運動場に出てそれからあの<persName ref="#kenju">虔十</persName>の林の方へ行きました。</p>
+        <p>すると若い博士は<ruby><rb>愕</rb><rt>おど</rt></ruby>ろいて何べんも<ruby><rb>眼鏡</rb><rt>めがね</rt></ruby>を直していましたがとうとう半分ひとりごとのように云いました。</p>
+        <p>「ああ、ここはすっかりもとの通りだ。木まですっかりもとの通りだ。木は<ruby><rb>却</rb><rt>かえ</rt></ruby>って小さくなったようだ。みんなも遊んでいる。ああ、あの中に私や私の昔の友達が居ないだろうか。」</p>
+        <p>博士は<ruby><rb>俄</rb><rt>にわ</rt></ruby>かに気がついたように笑い顔になって校長さんに云いました。</p>
+        <p>「ここは今は学校の運動場ですか。」</p>
+        <p>「いいえ。ここはこの向うの家の地面なのですが家の人たちが一向かまわないで子供らの集まるままにして置くものですから、まるで学校の<ruby><rb>附属</rb><rt>ふぞく</rt></ruby>の運動場のようになってしまいましたが実はそうではありません。」</p>
+        <p>「それは不思議な方ですね、一体どう云うわけでしょう。」</p>
+        <p>「ここが町になってからみんなで売れ売れと申したそうですが年よりの方がここは<persName ref="#kenju">虔十</persName>のただ一つのかたみだからいくら困っても、これをなくすることはどうしてもできないと答えるそうです。」</p>
+        <p>「ああそうそう、ありました、ありました。その<persName ref="#kenju">虔十</persName>という人は少し足りないと私らは思っていたのです。いつでもはあはあ笑っている人でした。毎日丁度この辺に立って私らの遊ぶのを見ていたのです。この杉もみんなその人が植えたのだそうです。ああ全くたれがかしこくたれが<ruby><rb>賢</rb><rt>かしこ</rt></ruby>くないかはわかりません。ただどこまでも<ruby><rb>十力</rb><rt>じゅうりき</rt></ruby>の作用は不思議です。ここはもういつまでも子供たちの美しい公園地です。どうでしょう。ここに<placeName ref="#kenjukoenrin">虔十公園林</placeName>と名をつけていつまでもこの通り保存するようにしては。」</p>
+        <p>「これは全くお考えつきです。そうなれば子供らもどんなにしあわせか知れません。」</p>
+        <p>さてみんなその通りになりました。</p>
+        <p><ruby><rb>芝生</rb><rt>しばふ</rt></ruby>のまん中、子供らの林の前に</p>
+        <p>「<placeName ref="#kenjukoenrin">虔十公園林</placeName>」と<ruby><rb>彫</rb><rt>ほ</rt></ruby>った青い<ruby><rb>橄欖岩</rb><rt>かんらんがん</rt></ruby>の<ruby><rb>碑</rb><rt>ひ</rt></ruby>が建ちました。</p>
+        <p>昔のその学校の生徒、今はもう立派な検事になったり将校になったり海の向うに小さいながら農園を<ruby><rb>有</rb><rt>も</rt></ruby>ったりしている人たちから<ruby><rb>沢山</rb><rt>たくさん</rt></ruby>の手紙やお金が学校に集まって来ました。</p>
+        <p><persName ref="#kenju">虔十</persName>のうちの人たちはほんとうによろこんで泣きました。</p>
+        <p>全く全くこの公園林の杉の黒い立派な緑、さわやかな<ruby><rb>匂</rb><rt>におい</rt></ruby>、夏のすずしい<ruby><rb>陰</rb><rt>かげ</rt></ruby>、月光色の芝生がこれから何千人の人たちに本当のさいわいが何だかを教えるか数えられませんでした。</p>
+        <p>そして林は<persName ref="#kenju">虔十</persName>の居た時の通り雨が降ってはすき<ruby><rb>徹</rb><rt>とお</rt></ruby>る冷たい<ruby><rb>雫</rb><rt>しずく</rt></ruby>をみじかい草にポタリポタリと落しお日さまが<ruby><rb>輝</rb><rt>かがや</rt></ruby>いては新らしい奇麗な空気をさわやかにはき出すのでした。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

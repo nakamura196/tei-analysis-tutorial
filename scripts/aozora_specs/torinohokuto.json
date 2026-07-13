@@ -1,0 +1,23 @@
+{
+  "slug": "torinohokuto",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/43755_17660.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card43755.html",
+  "title": "烏の北斗七星",
+  "author": "宮沢賢治",
+  "fixes": {},
+  "persons": {},
+  "places": {
+    "majieru": ["マジエル", null, null, "烏たちが「マジエル様」と呼ぶ北斗七星(作中の「烏の北斗七星」)。「マジエルの星」「七つのマジエルの星」とも呼ばれ、烏の大尉と砲艦の烏が祈りを捧げる崇拝対象でもある。天体(かつ架空の信仰対象)のため座標なし"],
+    "mashirii": ["マシリイ", null, null, "烏仲間が「マシリイ」と呼ぶ銀の一つ星。夕方、西の山の上の天の淵にひらめきはじめる(宵の明星に相当するとみられる)。天体のため座標なし"],
+    "nidanatora": ["ニダナトラ", null, null, "「この前のニダナトラの戦役」として言及される戦場。烏の艦隊の負傷兵の由来として語られる架空の地名のため座標なし"],
+    "sepira-no-toge": ["セピラの峠", null, null, "烏の大尉が敵の山烏を発見・撃破した峠。大尉の報告に「セピラの峠の上に敵艦の碇泊を認めました」とある架空の地名のため座標なし"]
+  },
+  "tags": [
+    ["place", "烏の北斗七星", "majieru"],
+    ["place", "マジエル様", "majieru"],
+    ["place", "マジエル", "majieru"],
+    ["place", "マシリイ", "mashirii"],
+    ["place", "ニダナトラ", "nidanatora"],
+    ["place", "セピラの峠", "sepira-no-toge"]
+  ]
+}
