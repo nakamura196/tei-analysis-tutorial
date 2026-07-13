@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>夜の靴</title>
+        <author>横光利一</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>夜の靴</title><author>横光利一</author>
+          <note>青空文庫。底本：「夜の靴・微笑」講談社文芸文庫、講談社。1995（平成7）年1月10日第1刷発行。底本の親本：「定本横光利一全集　第十一巻」河出書房新社。1982（昭和57）年5月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000168/card3511.html">https://www.aozora.gr.jp/cards/000168/card3511.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="sanuemon">
+        <persName>参右衛門</persName>
+        <note>「私」が一室を借りた本家の農家の主人(仮名)。四十八歳の巨漢で酒乱、怠け者だが人好きのする人物。清江の夫、天作の父</note>
+      </person>
+      <person xml:id="kyuzaemon">
+        <persName>久左衛門</persName>
+        <note>参右衛門の別家の老農(六十八歳)。日露戦争の負傷恩給を元手に村一の現金所有者となった米作りの名人。「私」に部屋を世話した。村では「闇左衛門」とも呼ばれる</note>
+      </person>
+      <person xml:id="kiyoe">
+        <persName>清江</persName>
+        <note>参右衛門の妻(細君・妻女)。寡黙で驚異的な働き手。村で最も賞められる婦人。実家は実行組合長・兵衛門の家。終章でおばこ節を謡う</note>
+      </person>
+      <person xml:id="tensaku">
+        <persName>天作</persName>
+        <note>参右衛門の次男(二十三歳)。「白痴」とされ白土工場で働き一家の生計を支える。作品の重要なモチーフ</note>
+      </person>
+      <person xml:id="rie">
+        <persName>利枝</persName>
+        <note>参右衛門の家に生れ由良の漁村へ嫁いだ老婆(七十歳)。久左衛門の妻お弓の姉。末子を沖縄戦で失う。「私」が美しいと感嘆する人物</note>
+      </person>
+      <person xml:id="soza-emon">
+        <persName>宗左衛門</persName>
+        <note>隣家の農家。作中では主にその寡婦(「宗左衛門のあば」「宗左衛門の婆さん」)への言及として現れる</note>
+      </person>
+      <person xml:id="oyumi">
+        <persName>お弓</persName>
+        <note>久左衛門の妻(主婦・妻女)。利枝の妹で、参右衛門の母の妹にもあたる</note>
+      </person>
+      <person xml:id="setsu">
+        <persName>せつ</persName>
+        <note>久左衛門の末娘(十九歳)。村一番の美人といわれる。新庄在の青年と結婚する。作中表記はせつ・せつ子・おせつ・おせっちゃん</note>
+      </person>
+      <person xml:id="yaube">
+        <persName>弥兵衛</persName>
+        <note>村一番の大地主の家。八十になる長老が村の実権を握る。参右衛門の末娘が奉公している</note>
+      </person>
+      <person xml:id="hyoe-mon">
+        <persName>兵衛門</persName>
+        <note>実行組合長。米の供出完納を主導したため村中の非難を浴びる。清江の実家</note>
+      </person>
+      <person xml:id="yuki">
+        <persName>ゆき</persName>
+        <note>参右衛門の末娘(十七歳)。弥兵衛の家に奉公している</note>
+      </person>
+      <person xml:id="sugai-kodo">
+        <persName>菅井胡堂</persName>
+        <note>釈迦堂のある寺の和尚。闊達で僧侶臭のない名僧。「私」に机や食物を贈る。長男は台湾へ出征中</note>
+      </person>
+      <person xml:id="matsuura-shokichi">
+        <persName>松浦正吉</persName>
+        <note>隣村の十八九の青年。「私」の妻子に洋傘を貸した。横浜の工場から帰郷し村の刷新を志す</note>
+      </person>
+      <person xml:id="ishizuka-tomoji">
+        <persName>石塚友二</persName>
+        <note>俳人・小説家(1906–1986)。新潟の水原在に疎開しており、鎌倉文庫入社の報を葉書で寄こす</note>
+      </person>
+      <person xml:id="kawabata-yasunari">
+        <persName>川端康成</persName>
+        <note>小説家(1899–1972)。鎌倉文庫の「紋章」前金として三千円を送ってくれる</note>
+      </person>
+      <person xml:id="kobayashi-hideo">
+        <persName>小林秀雄</persName>
+        <note>評論家(1902–1983)。「私」に芭蕉論を書けと奨める</note>
+      </person>
+      <person xml:id="matsuo-basho">
+        <persName>芭蕉</persName>
+        <note>松尾芭蕉(1644–1694)。作中表記は「芭蕉さん」。句「荒海や佐渡によこたふ天の川」の作者としても言及</note>
+      </person>
+      <person xml:id="yosa-buson">
+        <persName>蕪村</persName>
+        <note>与謝蕪村(1716–1784)。句「愁ひつつ丘にのぼれば花茨」の作者</note>
+      </person>
+      <person xml:id="kakinomoto-no-hitomaro">
+        <persName>人麿</persName>
+        <note>柿本人麻呂。歌「淡海のみゆふなみちどり…」の作者</note>
+      </person>
+      <person xml:id="minamoto-no-yoshitsune">
+        <persName>義経</persName>
+        <note>源義経。京の白河から平泉へ落ちる途中この地を通ったとの伝承で言及</note>
+      </person>
+      <person xml:id="musashibo-benkei">
+        <persName>弁慶</persName>
+        <note>武蔵坊弁慶。峠に「弁慶の泉」が残るとして言及</note>
+      </person>
+      <person xml:id="yoshida-kenko">
+        <persName>兼好</persName>
+        <note>兼好法師(吉田兼好)。「勝とうと思うな。負けないように気をつけよ」の言として引かれる</note>
+      </person>
+      <person xml:id="confucius">
+        <persName>孔子</persName>
+        <note>儒家の祖。支那哲学の書の記述で言及</note>
+      </person>
+      <person xml:id="dogen">
+        <persName>道元</persName>
+        <note>曹洞宗の開祖(1200–1253)。「心不可得」「道元集」「道元禅書」として言及</note>
+      </person>
+      <person xml:id="mazu">
+        <persName>馬祖</persName>
+        <note>馬祖道一。唐代の禅僧。「我あるに非らざれど」の語で言及</note>
+      </person>
+      <person xml:id="shigetsu-zenji">
+        <persName>指月禅師</persName>
+        <note>本作の副題「木人夜穿靴去、石女暁冠帽帰」の作者とされる禅師。表題「夜の靴」の由来</note>
+      </person>
+      <person xml:id="shakyamuni">
+        <persName>釈迦</persName>
+        <note>釈迦牟尼。村の釈迦堂の本尊。「天上天下唯我独尊」の語で言及。作中表記は釈迦・釈尊</note>
+      </person>
+      <person xml:id="kisshoten">
+        <persName>吉祥天</persName>
+        <note>仏教の女神。久左衛門の長男の嫁の姿の比喩として言及</note>
+      </person>
+      <person xml:id="abe-no-sadato">
+        <persName>貞任</persName>
+        <note>安倍貞任。前九年の役の武将。参右衛門の相貌に宿る古戦場の霊魂の列挙で言及</note>
+      </person>
+      <person xml:id="eto-sokuo">
+        <persName>衛藤</persName>
+        <note>衛藤即応(1888–1958)。仏教学者。岩波版道元集の校訂者。新潟在に疎開中</note>
+      </person>
+      <person xml:id="sakurazawa-yukikazu">
+        <persName>桜沢如一</persName>
+        <note>桜沢如一(1893–1966)。食養・マクロビオティックの提唱者。米から日本の敗北を予言したとして言及</note>
+      </person>
+      <person xml:id="tojo-hideki">
+        <persName>東条英機</persName>
+        <note>東条英機(1884–1948)。首相。「私」と町会が同じで、玉川附近の土地を買った逸話で言及</note>
+      </person>
+      <person xml:id="yonai-mitsumasa">
+        <persName>米内</persName>
+        <note>米内光政(1880–1948)。首相・海軍大将。「東北人」の総理の列挙で言及</note>
+      </person>
+      <person xml:id="koiso-kuniaki">
+        <persName>小磯</persName>
+        <note>小磯国昭(1880–1950)。首相。「東北人」の総理の列挙で言及</note>
+      </person>
+      <person xml:id="iwanami-shigeo">
+        <persName>岩波茂雄</persName>
+        <note>岩波茂雄(1881–1946)。岩波書店創業者。温海の座談会で医者が名を挙げる</note>
+      </person>
+      <person xml:id="sato-masaaki">
+        <persName>佐藤正彰</persName>
+        <note>佐藤正彰(1905–1975)。フランス文学者。父は漢学者の佐藤正範</note>
+      </person>
+      <person xml:id="sato-masanori">
+        <persName>正範</persName>
+        <note>佐藤正範。漢学の大家。説文(文字の起源)の研究に達して没した</note>
+      </person>
+      <person xml:id="inoue-matsutaro">
+        <persName>井上松太郎</persName>
+        <note>新庄の醤油醸造家。数千坪の邸宅で座談会を催す</note>
+      </person>
+      <person xml:id="wada-ushinosuke">
+        <persName>和田牛之助</persName>
+        <note>由良で「私」が「機械」を書いた下宿の家主。十八年前に死去。作中表記は和田牛之助・牛之助</note>
+      </person>
+      <person xml:id="kishida-ryusei">
+        <persName>岸田劉生</persName>
+        <note>岸田劉生(1891–1929)。画家。多介屋で果物図の軸物を見る</note>
+      </person>
+      <person xml:id="ito-hirobumi">
+        <persName>伊藤博文</persName>
+        <note>伊藤博文(1841–1909)。菅井和尚の風貌の喩えとして言及</note>
+      </person>
+      <person xml:id="tokugawa-musei">
+        <persName>徳川夢声</persName>
+        <note>徳川夢声(1894–1971)。弁士・漫談家。和尚の哄笑の喩えとして言及</note>
+      </person>
+      <person xml:id="yokomitsu-riichi">
+        <persName>横光利一</persName>
+        <note>作者自身。ラヂオの放送予告と、大阪で見た「横光利一集」の逸話で名が現れる</note>
+      </person>
+      <person xml:id="a-kun">
+        <persName>Ａ君</persName>
+        <note>「私」のもとへ出入りしていた青年。桜沢如一に私淑し敗戦を予言、のち武術の習練者となる。鶴岡で再会する。作中表記はＡ君・Ａ</note>
+      </person>
+      <person xml:id="s-san">
+        <persName>Ｓさん</persName>
+        <note>文壇の老大家。「私」の尊敬する作家。自転車で米を借りに行ったという逸話で言及。作中表記はＳさん・Ｓ氏</note>
+      </person>
+      <person xml:id="m-kun">
+        <persName>Ｍ君</persName>
+        <note>Ｓ氏の知人の若い作家。Ｓ氏の米借りの逸話を「私」に伝える</note>
+      </person>
+      <person xml:id="h-san">
+        <persName>Ｈ</persName>
+        <note>東京の家の留守居を託した人物</note>
+      </person>
+      <person xml:id="i-san">
+        <persName>Ｉ</persName>
+        <note>東京の家の留守居を託した人物</note>
+      </person>
+      <person xml:id="sasaki-katsuyoshi">
+        <persName>佐々木</persName>
+        <note>鶴岡の書店「多介屋」の主人・佐々木剋嘉。「私」を新庄へ案内する。作中表記は佐々木剋嘉君・佐々木君・佐々木氏</note>
+      </person>
+      <person xml:id="sasaki-kuni">
+        <persName>佐々木邦</persName>
+        <note>佐々木邦(1883–1964)。ユーモア小説家。温海の座談会に来ていた</note>
+      </person>
+      <person xml:id="nero">
+        <persName>ネロ</persName>
+        <note>ローマ皇帝ネロ。「私」が田川温泉で書いた「笑った皇后」の登場人物</note>
+      </person>
+      <person xml:id="otho">
+        <persName>オソー</persName>
+        <note>オト(オトー)。ネロの友人とされるローマの人物。「笑った皇后」の作中人物</note>
+      </person>
+      <person xml:id="petronius">
+        <persName>ペトロニユス</persName>
+        <note>ペトロニウス。ネロに死を命じられたローマの文人</note>
+      </person>
+      <person xml:id="paul-valery">
+        <persName>ヴァレリイ</persName>
+        <note>ポール・ヴァレリー(1871–1945)。「生まのままの真は偽せよりも偽せだ」の語で繰り返し言及</note>
+      </person>
+      <person xml:id="mallarme">
+        <persName>マラルメ</persName>
+        <note>ステファヌ・マラルメ(1842–1898)。象徴主義の詩人</note>
+      </person>
+      <person xml:id="descartes">
+        <persName>デカルト</persName>
+        <note>ルネ・デカルト(1596–1650)。知性の象徴として言及</note>
+      </person>
+      <person xml:id="pascal">
+        <persName>パスカル</persName>
+        <note>ブレーズ・パスカル(1623–1662)。感情を神の恩寵物とする説で言及</note>
+      </person>
+      <person xml:id="millet">
+        <persName>ミレー</persName>
+        <note>ジャン=フランソワ・ミレー(1814–1875)。「晩鐘」の版画で言及</note>
+      </person>
+      <person xml:id="newton">
+        <persName>ニュートン</persName>
+        <note>アイザック・ニュートン(1643–1727)。温海の座談会で医者が引用する</note>
+      </person>
+      <person xml:id="bergson">
+        <persName>ベルグソン</persName>
+        <note>アンリ・ベルクソン(1859–1941)。「笑いの哲学」で言及</note>
+      </person>
+      <person xml:id="tolstoy">
+        <persName>トルストイ</persName>
+        <note>レフ・トルストイ(1828–1910)。コーカサスの山脈への感歎で言及</note>
+      </person>
+      <person xml:id="socrates">
+        <persName>ソクラテス</persName>
+        <note>ソクラテス。「汝自身を知れ」以来の課題として言及</note>
+      </person>
+      <person xml:id="goethe">
+        <persName>ゲーテ</persName>
+        <note>ヨハン・ヴォルフガング・フォン・ゲーテ(1749–1832)。「従僕に英雄なし」の語で言及</note>
+      </person>
+      <person xml:id="chopin">
+        <persName>ショパン</persName>
+        <note>フレデリック・ショパン(1810–1849)。新庄の井上邸で練習曲が聞こえる</note>
+      </person>
+      <person xml:id="irene">
+        <persName>イレエネ</persName>
+        <note>ハンガリヤの踊子。「私」のネクタイを賞めた娘</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="nishime">
+        <placeName>西目</placeName>
+        <location><geo>38.7314 139.7229</geo></location>
+        <note>「私」の疎開先の村(山形県鶴岡市西目)。羽前水沢駅から半里ほどの山あいの村。概値</note>
+      </place>
+      <place xml:id="mizusawa">
+        <placeName>水沢</placeName>
+        <location><geo>38.7139 139.7327</geo></location>
+        <note>羽越本線の羽前水沢駅と周辺(鶴岡市大広・水沢)。作中表記は羽前水沢駅・水沢。概値</note>
+      </place>
+      <place xml:id="tsuruoka">
+        <placeName>鶴岡</placeName>
+        <location><geo>38.7272 139.8266</geo></location>
+        <note>山形県鶴岡市。妻の郷里で、「私」が汽車で出かける街。概値</note>
+      </place>
+      <place xml:id="yura">
+        <placeName>由良</placeName>
+        <location><geo>38.7205 139.6965</geo></location>
+        <note>鶴岡市由良の漁村。利枝の嫁ぎ先。十七八年前「私」が「機械」を書き上げた地。概値</note>
+      </place>
+      <place xml:id="yunohama">
+        <placeName>湯の浜</placeName>
+        <location><geo>38.7829 139.7536</geo></location>
+        <note>湯野浜温泉(鶴岡市湯野浜)。電車の終点の海際の湯。概値</note>
+      </place>
+      <place xml:id="atsumi">
+        <placeName>温海</placeName>
+        <location><geo>38.6217 139.5628</geo></location>
+        <note>あつみ温泉(鶴岡市湯温海)。「私」が家族と泊り座談会に引き出される温泉場。概値</note>
+      </place>
+      <place xml:id="tagawa-onsen">
+        <placeName>田川温泉</placeName>
+        <location><geo>38.697 139.7645</geo></location>
+        <note>本文表記は「田川温泉」。鶴岡市の湯田川温泉とみられる。「笑った皇后」を書いた宿がある。概値</note>
+      </place>
+      <place xml:id="kyoden">
+        <placeName>京田</placeName>
+        <location><geo>38.7518 139.8075</geo></location>
+        <note>鶴岡市京田。長男が代用教員をしていた村。概値</note>
+      </place>
+      <place xml:id="oyama">
+        <placeName>大山</placeName>
+        <location><geo>38.7486 139.7638</geo></location>
+        <note>鶴岡市大山。荷主の客が廻ると言う地。概値</note>
+      </place>
+      <place xml:id="hiuchizaki">
+        <placeName>火燧崎</placeName>
+        <note>村から小一里の泥田の中の岬。温泉宿がある。正確な位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="kuranori">
+        <placeName>鞍乗</placeName>
+        <note>村の背後の山の尾根(鞍乗り・鞍乗峠)。平野と海を一望する絶景の地。正確な位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="sakata">
+        <placeName>酒田</placeName>
+        <location><geo>38.9143 139.8365</geo></location>
+        <note>山形県酒田市。最上川の河口。捕虜収容所があった。概値</note>
+      </place>
+      <place xml:id="shinjo">
+        <placeName>新庄</placeName>
+        <location><geo>38.7647 140.3017</geo></location>
+        <note>山形県新庄市。せつの婿の在所、井上邸の座談会の地。概値</note>
+      </place>
+      <place xml:id="amarume">
+        <placeName>余目</placeName>
+        <location><geo>38.8383 139.9083</geo></location>
+        <note>山形県東田川郡庄内町余目。概値</note>
+      </place>
+      <place xml:id="mogamigawa">
+        <placeName>最上川</placeName>
+        <note>河川(線状のため座標なし)</note>
+      </place>
+      <place xml:id="arakurayama">
+        <placeName>荒倉山</placeName>
+        <location><geo>38.7363 139.711</geo></location>
+        <note>村の正面に見える山(鶴岡市西目の荒倉山)。概値</note>
+      </place>
+      <place xml:id="chokaisan">
+        <placeName>鳥海山</placeName>
+        <location><geo>39.0994 140.0489</geo></location>
+        <note>山形・秋田県境の山。概値</note>
+      </place>
+      <place xml:id="gassan">
+        <placeName>月山</placeName>
+        <location><geo>38.5486 140.0272</geo></location>
+        <note>出羽三山の一。概値</note>
+      </place>
+      <place xml:id="yudono">
+        <placeName>湯殿</placeName>
+        <location><geo>38.5306 139.9942</geo></location>
+        <note>湯殿山。出羽三山の一。概値</note>
+      </place>
+      <place xml:id="haguro">
+        <placeName>羽黒</placeName>
+        <location><geo>38.7053 139.9756</geo></location>
+        <note>羽黒山。出羽三山の一。概値</note>
+      </place>
+      <place xml:id="dewa-sanzan">
+        <placeName>出羽三山</placeName>
+        <location><geo>38.62 140.0</geo></location>
+        <note>羽黒山・月山・湯殿山の総称。作中表記は出羽三山・三山。代表点の概値</note>
+      </place>
+      <place xml:id="higashi-haguro">
+        <placeName>東羽黒</placeName>
+        <location><geo>38.7053 139.9756</geo></location>
+        <note>平野をへだてた東方の羽黒(羽黒山)。西羽黒を滅ぼしたとされる。羽黒山の概値</note>
+      </place>
+      <place xml:id="nishi-haguro">
+        <placeName>西羽黒</placeName>
+        <location><geo>38.7363 139.711</geo></location>
+        <note>「私」の村にあった伽藍堂塔三十五堂の跡。荒倉山山頂の荒倉神社(鶴岡市西目荒倉口)が中世に「西羽黒」と称された。東羽黒に敗れ滅亡したという。伝承地・概値</note>
+      </place>
+      <place xml:id="shakado">
+        <placeName>釈迦堂</placeName>
+        <note>西目の村の寺の釈迦堂。菅井和尚の寺。参拝人の絶えぬ釈迦仏を祀る。正確な位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="kaidan-in">
+        <placeName>戒壇院</placeName>
+        <note>釈迦堂に近年建った一室。檀家七十家の位牌を並べる。座標なし</note>
+      </place>
+      <place xml:id="takesukeya">
+        <placeName>多介屋</placeName>
+        <note>鶴岡の書店(本屋)。主人は佐々木剋嘉。正確な位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="takinoya">
+        <placeName>滝の屋</placeName>
+        <note>温海の宿屋。座標なし</note>
+      </place>
+      <place xml:id="shonai">
+        <placeName>庄内</placeName>
+        <location><geo>38.83 139.83</geo></location>
+        <note>山形県北西部の庄内平野・庄内地方。代表点の概値</note>
+      </place>
+      <place xml:id="yamagata-ken">
+        <placeName>山形県</placeName>
+        <location><geo>38.4 140.3</geo></location>
+        <note>県。代表点の概値</note>
+      </place>
+      <place xml:id="toyama-ken">
+        <placeName>富山県</placeName>
+        <location><geo>36.6953 137.2113</geo></location>
+        <note>県。代表点の概値</note>
+      </place>
+      <place xml:id="niigata">
+        <placeName>新潟</placeName>
+        <location><geo>37.75 139.0</geo></location>
+        <note>新潟県。本文の「新潟在」「新潟の水原在」も県内の意。作中表記は新潟県・新潟。代表点の概値</note>
+      </place>
+      <place xml:id="suibara">
+        <placeName>水原</placeName>
+        <location><geo>37.8383 139.22</geo></location>
+        <note>新潟県阿賀野市水原。石塚友二の疎開先。概値</note>
+      </place>
+      <place xml:id="fukushima">
+        <placeName>福島</placeName>
+        <location><geo>37.75 140.47</geo></location>
+        <note>福島県。代表点の概値</note>
+      </place>
+      <place xml:id="koriyama">
+        <placeName>郡山</placeName>
+        <location><geo>37.4 140.36</geo></location>
+        <note>福島県郡山市。石塚友二の葉書の発信地。概値</note>
+      </place>
+      <place xml:id="hida">
+        <placeName>飛騨地方</placeName>
+        <location><geo>36.24 137.19</geo></location>
+        <note>岐阜県北部。白痴を尊崇する土地として言及。代表点の概値</note>
+      </place>
+      <place xml:id="tohoku">
+        <placeName>東北</placeName>
+        <location><geo>39.5 141.0</geo></location>
+        <note>東北地方。「東北人」など属性的用例を含む。代表点の概値</note>
+      </place>
+      <place xml:id="honshu">
+        <placeName>本州</placeName>
+        <location><geo>36.5 138.0</geo></location>
+        <note>島。代表点の概値</note>
+      </place>
+      <place xml:id="shimonoseki">
+        <placeName>下関</placeName>
+        <location><geo>33.9578 130.941</geo></location>
+        <note>山口県下関市。外国から帰ったときの上陸地。概値</note>
+      </place>
+      <place xml:id="joetsu-sen">
+        <placeName>上越線</placeName>
+        <note>鉄道路線(線状のため座標なし)</note>
+      </place>
+      <place xml:id="nihonkai">
+        <placeName>日本海</placeName>
+        <location><geo>39.0 134.0</geo></location>
+        <note>海域。代表点の概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名。「日本人」「日本一」など属性的用例を含む。代表点の概値</note>
+      </place>
+      <place xml:id="toyo">
+        <placeName>東洋</placeName>
+        <note>東洋(アジア)。「東洋人」の用例を含む。広域・観念的な地域名のため座標なし</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>「私」の本宅のある地。「東京地方」の用例を含む。概値</note>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7141 139.7774</geo></location>
+        <note>東京の上野(駅)。概値</note>
+      </place>
+      <place xml:id="ginza">
+        <placeName>銀座</placeName>
+        <location><geo>35.6717 139.765</geo></location>
+        <note>東京の銀座。ミレーの晩鐘を見た洋食店がある。概値</note>
+      </place>
+      <place xml:id="shibuya">
+        <placeName>渋谷</placeName>
+        <location><geo>35.658 139.7016</geo></location>
+        <note>東京の渋谷。帝都線のプラットで空襲に遭う。概値</note>
+      </place>
+      <place xml:id="tamagawa">
+        <placeName>玉川</placeName>
+        <location><geo>35.61 139.63</geo></location>
+        <note>東京の多摩川沿い(世田谷区玉川あたり)。義弟の住む地。概値</note>
+      </place>
+      <place xml:id="hachimanyama">
+        <placeName>八幡山</placeName>
+        <note>玉川附近の、むかしの神社跡の小高い丘。東条英機の建築敷地となる。正確な位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="yokohama">
+        <placeName>横浜</placeName>
+        <location><geo>35.4437 139.638</geo></location>
+        <note>松浦正吉が働いていた工場のある地。概値</note>
+      </place>
+      <place xml:id="kamakura">
+        <placeName>鎌倉</placeName>
+        <location><geo>35.3192 139.5467</geo></location>
+        <note>神奈川県鎌倉市。石塚友二の向かう先。概値(「鎌倉時代」「鎌倉文庫」は地名ではないので除外した)</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>大阪市。作中表記は大阪市・大阪。概値</note>
+      </place>
+      <place xml:id="dojima">
+        <placeName>堂島</placeName>
+        <location><geo>34.695 135.495</geo></location>
+        <note>大阪の堂島。「横光利一集」の散乱を見た場所。概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都。作中表記は京都・京(「京の白河」「京から来ている」)。概値</note>
+      </place>
+      <place xml:id="shirakawa-kyoto">
+        <placeName>白河</placeName>
+        <location><geo>35.021 135.788</geo></location>
+        <note>京の白河(京都市左京区)。義経が平泉へ落ちる出発地として言及。概値</note>
+      </place>
+      <place xml:id="yamashina">
+        <placeName>山科</placeName>
+        <location><geo>34.97 135.82</geo></location>
+        <note>京都市山科区。「私」が十九で東京へ出た地。概値</note>
+      </place>
+      <place xml:id="nara">
+        <placeName>奈良</placeName>
+        <location><geo>34.6851 135.8048</geo></location>
+        <note>奈良。仏像の喩えで言及。概値</note>
+      </place>
+      <place xml:id="keijo">
+        <placeName>京城</placeName>
+        <location><geo>37.5665 126.978</geo></location>
+        <note>現ソウル(当時の呼称)。父が「南北」を読んで没した地。概値</note>
+      </place>
+      <place xml:id="nagoya">
+        <placeName>名古屋</placeName>
+        <location><geo>35.1815 136.9066</geo></location>
+        <note>アメリカの俘虜が工場を見たという地。概値</note>
+      </place>
+      <place xml:id="hiraizumi">
+        <placeName>平泉</placeName>
+        <location><geo>38.988 141.113</geo></location>
+        <note>岩手県平泉。義経の落ちて行った先。概値</note>
+      </place>
+      <place xml:id="iga">
+        <placeName>伊賀</placeName>
+        <location><geo>34.77 136.13</geo></location>
+        <note>旧国名(現三重県西部)。芭蕉の郷里として言及。概値</note>
+      </place>
+      <place xml:id="tsuge">
+        <placeName>柘植</placeName>
+        <location><geo>34.783 136.233</geo></location>
+        <note>三重県伊賀市柘植。本文は芭蕉を「伊賀の柘植の人」とする。概値</note>
+      </place>
+      <place xml:id="ryojun">
+        <placeName>旅順</placeName>
+        <location><geo>38.81 121.26</geo></location>
+        <note>中国遼寧省旅順。久左衛門が日露戦争で負傷した地。概値</note>
+      </place>
+      <place xml:id="okinawa">
+        <placeName>沖縄</placeName>
+        <location><geo>26.5 127.95</geo></location>
+        <note>沖縄県。「沖縄戦」の用例を含む。代表点の概値</note>
+      </place>
+      <place xml:id="karafuto">
+        <placeName>樺太</placeName>
+        <location><geo>50.0 143.0</geo></location>
+        <note>サハリン(当時の呼称)。参右衛門の長男の出征先、久左衛門の長女の嫁ぎ先。代表点の概値</note>
+      </place>
+      <place xml:id="chosen">
+        <placeName>朝鮮</placeName>
+        <location><geo>37.5 127.5</geo></location>
+        <note>朝鮮半島。「朝鮮人」および鴨緑江節の歌詞の用例を含む。代表点の概値</note>
+      </place>
+      <place xml:id="nansen">
+        <placeName>南鮮</placeName>
+        <location><geo>36.0 127.8</geo></location>
+        <note>朝鮮半島南部(当時の呼称)。引き上げて来た婦人たちの語り。代表点の概値</note>
+      </place>
+      <place xml:id="shina">
+        <placeName>支那</placeName>
+        <location><geo>35.0 105.0</geo></location>
+        <note>中国(当時の呼称)。代表点の概値</note>
+      </place>
+      <place xml:id="taiwan">
+        <placeName>台湾</placeName>
+        <location><geo>23.7 121.0</geo></location>
+        <note>台湾。菅井和尚の長男の出征先。代表点の概値</note>
+      </place>
+      <place xml:id="manshu">
+        <placeName>満洲</placeName>
+        <note>中国東北部の旧称。広域のため座標なし</note>
+      </place>
+      <place xml:id="oryokko">
+        <placeName>鴨緑江</placeName>
+        <note>河川(線状のため座標なし)。参右衛門・清江の謡う「鴨緑江節」の歌詞に現れる(曲名としての『鴨緑江節』は地名ではないので除外した)</note>
+      </place>
+      <place xml:id="sado">
+        <placeName>佐渡</placeName>
+        <location><geo>38.05 138.4</geo></location>
+        <note>新潟県佐渡島。芭蕉の句「荒海や佐渡によこたふ天の川」。概値</note>
+      </place>
+      <place xml:id="omi">
+        <placeName>淡海</placeName>
+        <location><geo>35.25 136.09</geo></location>
+        <note>近江の海(琵琶湖)。人麿の歌「淡海のみゆふなみちどり…」。概値</note>
+      </place>
+      <place xml:id="amanohashidate">
+        <placeName>天の橋立</placeName>
+        <location><geo>35.5686 135.1897</geo></location>
+        <note>京都府宮津市の天橋立。鞍乗の尾根の眺めの喩え。概値</note>
+      </place>
+      <place xml:id="s-shi">
+        <placeName>Ｓ市</placeName>
+        <note>嫁見立に来る青年たちの出身地。伏字のため特定できず座標なし</note>
+      </place>
+      <place xml:id="france">
+        <placeName>フランス</placeName>
+        <location><geo>46.6 2.5</geo></location>
+        <note>国名。「フランス語」「フランス革命」など属性的用例を含む。概値</note>
+      </place>
+      <place xml:id="america">
+        <placeName>アメリカ</placeName>
+        <location><geo>39.8283 -98.5795</geo></location>
+        <note>アメリカ合衆国。国名・概値</note>
+      </place>
+      <place xml:id="england">
+        <placeName>イギリス</placeName>
+        <location><geo>54.0 -2.0</geo></location>
+        <note>イギリス。「イギリス兵」の用例。国名・概値</note>
+      </place>
+      <place xml:id="soviet">
+        <placeName>ソビエット</placeName>
+        <location><geo>61.524 105.3188</geo></location>
+        <note>ソビエト連邦。国名・概値</note>
+      </place>
+      <place xml:id="burma">
+        <placeName>ビルマ</placeName>
+        <location><geo>21.9162 95.956</geo></location>
+        <note>ビルマ(ミャンマー)。釈迦仏の風貌の形容で言及。国名・概値</note>
+      </place>
+      <place xml:id="greece">
+        <placeName>ギリシャ</placeName>
+        <location><geo>39.0742 21.8243</geo></location>
+        <note>ギリシャ。国名・概値</note>
+      </place>
+      <place xml:id="rome">
+        <placeName>ローマ</placeName>
+        <location><geo>41.9028 12.4964</geo></location>
+        <note>ローマ。ネロの時代への言及。概値</note>
+      </place>
+      <place xml:id="hungary">
+        <placeName>ハンガリヤ</placeName>
+        <location><geo>47.1625 19.5033</geo></location>
+        <note>ハンガリー。イレエネと踊った地。国名・概値</note>
+      </place>
+      <place xml:id="danube">
+        <placeName>ダニューブ</placeName>
+        <note>ドナウ川(河川・線状のため座標なし)</note>
+      </place>
+      <place xml:id="tyrol">
+        <placeName>チロル</placeName>
+        <location><geo>47.25 11.4</geo></location>
+        <note>チロル(アルプスの牧野)。牧場の喩えで言及。代表点の概値</note>
+      </place>
+      <place xml:id="caucasus">
+        <placeName>コーカサス</placeName>
+        <location><geo>42.5 44.0</geo></location>
+        <note>コーカサス山脈。トルストイの感歎で言及。代表点の概値</note>
+      </place>
+      <place xml:id="moscow">
+        <placeName>モスコウ</placeName>
+        <location><geo>55.7558 37.6173</geo></location>
+        <note>モスクワ。「モスコウ人」の用例。概値</note>
+      </place>
+      <place xml:id="delphi">
+        <placeName>デルフォイ</placeName>
+        <location><geo>38.4824 22.501</geo></location>
+        <note>デルフォイの神殿。「汝自身を知れ」。概値</note>
+      </place>
+      <place xml:id="potsdam">
+        <placeName>ポツダム</placeName>
+        <location><geo>52.3906 13.0645</geo></location>
+        <note>ドイツのポツダム。「ポツダム宣言」中の用例のみ。概値</note>
+      </place>
+      <place xml:id="teito-sen">
+        <placeName>帝都線</placeName>
+        <note>渋谷の帝都線(現・京王井の頭線)。鉄道路線(線状のため座標なし)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>夜の靴</head>
+        <p><date when="--08">八月――日</date></p>
+        <p>駈けて来る<ruby><rb>足駄</rb><rt>あしだ</rt></ruby>の音が庭石に<ruby><rb>躓</rb><rt>つまず</rt></ruby>いて一度よろけた。すると、柿の木の下へ顕れた義弟が真っ赤な顔で、「休戦休戦。」という。借り物らしい足駄でまたそこで躓いた。躓きながら、「<placeName ref="#potsdam">ポツダム</placeName>宣言全部承認。」という。</p>
+        <p>「ほんとかな。」</p>
+        <p>「ほんと。今ラヂオがそう云った。」</p>
+        <p>私はどうと倒れたように片手を畳につき、庭の斜面を見ていた。なだれ下った夏菊の懸崖が<ruby><rb>焔</rb><rt>ほのお</rt></ruby>の色で燃えている。その背後の山が無言のどよめきを上げ、今にも崩れかかって来そうな西日の底で、幾つもの火の丸が狂めき返っている。</p>
+        <p>「とにかく、こんなときは山へでも行きましょうよ。」</p>
+        <p>「いや、今日はもう……」</p>
+        <p>義弟の足駄の音が去っていってから、私は柱に背を<ruby><rb>凭</rb><rt>もた</rt></ruby>せかけ膝を組んで庭を見つづけた。敗けた。――いや、見なければ分らない。しかし、何処を見るのだ。この村はむかしの古戦場の跡でそれだけだ。野山に汎濫した西日の総勢が、右往左往によじれあい流れの末を知らぬようだ。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>柱時計を捲く音、ぱしゃッと水音がする。見ると、池へ垂れ下っている菊の弁を、四五疋の鯉が口をよせ、跳ねあがって喰っている。茎のひょろ長い白い<ruby><rb>干瓢</rb><rt>かんぴょう</rt></ruby>の花がゆれている。私はこの花が好きだ。眼はいつもここで停ると心は休まる。敗戦の憂きめをじっと、このか細い花茎だけが支えてくれているようだ。私にとって、今はその他の何ものでもないただ一本の白い花。それもその茎のうす青い、今にも消え入りそうな長細い部分がだ。――風はもう秋風だ。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>小牛が病気になって草を喰べないので、この家のものは心配でたまらぬらしい。黒豆を薬湯で煮て飲まそうとしているが、今日は山羊も<ruby><rb>凋</rb><rt>しお</rt></ruby>れて悲しげである。めい、もう、と互いに鳴き合い、一方が庭へ出されると残った方が暴れ出したほどの仲良さだったのも、<ruby><rb>孰方</rb><rt>いずれ</rt></ruby>もしょんぼりとしている。しかし、山羊と小牛だけではない。見るもの一切がしょんぼりとしているようだ。汽車通学をしている私の次男の中学一年生が帰って来て、</p>
+        <p>「校長さんがみなを集めて今日ね、君たちは可哀そうで可哀そうでたまらない、と云ったよ。涙をぽろぽろ流していたよ。」という。</p>
+        <p>「汽車の中はどうだった？」</p>
+        <p>「どこでも喧嘩ばかりしていたよ。大人って喧嘩するもんだね。どうしてだろう。」</p>
+        <p>私が山中の峠を歩いていたときも、自転車を草の中に伏せた男が、ひとり弁当を食べながら、一兵まで、一兵まで……とそんなことを云っていたが、傍を通る私に<ruby><rb>咬</rb><rt>か</rt></ruby>みつきそうな眼を向けた。そして、がちゃりとアルミの蓋を合せて立ち上ると、またひらりと自転車に乗ってどっかへ去っていく。</p>
+        <p>十七歳のときここの家から峠を越して海浜の村へ嫁入した老婆、<persName ref="#rie">利枝</persName>が来て、生家の棟を見上げている。今年七十歳だが、古戦場の残す匂いのような、稀に見る美しい老婆で笑う口もとから洩れる歯が、ある感動を吸いよせ視線をそらすことが出来ない。私はこの老婆の微笑を見ると、ふッと吹かれて飛ぶ塵あとの、あの一点の清潔な明るさを感じる。<placeName ref="#okinawa">沖縄</placeName>戦で末子が潜水艦に乗りくみ戦死したばかりである。もし婦人というものに老醜なく、すべてがこのようになるものなら、人生はしばらく狂言を変えることだろうと思う。そのような顔だ。とにかく、今まで私の一度も見たことのない老婆の種類だ。漁師村の何んでもない、白髪をたばねた、わごわごした腰の、拭き掃除ばかしして来た老婆だのに、――あちらを歩き、こちらを歩きしながら、幼児の思い出を<ruby><rb>辿</rb><rt>たど</rt></ruby>る風な面差しで、棟を見上げ見降ろし、倦怠を感じる様子もない。その最後の生の眺めのごとき曲った後姿に、しきりに蝉の声が降って来る。庭の古い石の上を白い蝶の飛びたわむれている午後の日ざし、――昼顔の伸び悪い垣の愁い。</p>
+        <p>この村は平野をへだてた<placeName ref="#higashi-haguro">東羽黒</placeName>と対立し、伽藍堂塔三十五堂立ち並んだ<placeName ref="#nishi-haguro">西羽黒</placeName>のむかしの跡だが、当時の<ruby><rb>殷盛</rb><rt>いんせい</rt></ruby>をうかべた地表のさまは、背後の山の姿や、山裾の流れの落ち消えた田の中に、点点と島のように<ruby><rb>泛</rb><rt>う</rt></ruby>き残っている丘陵の高まりで窺われる。浮雲のただよう下、崩れた土から喰み出ている石塊のおもむき蒼樸たる古情、小川の縁の石垣ふかく、光陰のしめり刻んだなめらかさ、今も掘り出される矢の根石など、<placeName ref="#higashi-haguro">東羽黒</placeName>に追い詰められて滅亡した僧兵らの<ruby><rb>辷</rb><rt>すべ</rt></ruby>り下り、走り上った山路も、峠を一つ登れば下は海だ。朴の葉や、柏の葉、杉、栗、楢、の雑木林にとり包まれた、下へ下へと平野の中へ低まっていく山懐の村である。<persName ref="#minamoto-no-yoshitsune">義経</persName>が<placeName ref="#kyoto">京</placeName>の<placeName ref="#shirakawa-kyoto">白河</placeName>から<placeName ref="#hiraizumi">平泉</placeName>へ落ちて行く途中も、多分ここを通って、一夜をここの山堂の中で眠ったことだろう。峠の中に今も<persName ref="#musashibo-benkei">弁慶</persName>の泉というのもある。</p>
+        <p>この村の人で、私の職業を誰一人知っているもののないのが気楽である。私にここの室を世話してくれた人も知らなければ、またこの家のものも私については何も知らない。通りすがりに、ただふらりと来た私は偶然一室を借りられたそれだけの縁で、とにかくここをしばらく仮の<ruby><rb>棲家</rb><rt>すみか</rt></ruby>とすることが出来たのは幸いである。一人の知人もなく、親類もない周囲とまったく交渉の糸の断たれた生活は、戦時の物資不足の折、危険不便は多いにちがいないが、これも振りあてられ追い詰められた最後の地であれば、自分にとっては何処よりも貴重な地だ。今はその他にどこにもないと思い、私は家族四人のものをひきつれて、この山中の農家の六畳の一室へ移ることにしたのである。すると、移って三日目に終戦になった。荷物の片づけさえもまだしてないときだ。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>（仮名）のこの家は、農家としては大きな家だ。炉間が十畳、次ぎは十二畳、その奥は十畳、その一番奥は六畳、この部屋が私の家族の室であるが、畳もなく電灯もない。炉間から背後の一列の部屋は、ここの家族たち四人の寝室で、私は<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いたことはないが、多分、十二畳と八畳の二室であろう。それから玄関横に六畳の別室があり、ここは出征中の長男の嫁の部屋になっている。勝手の板の間が二十畳ほど。すべてどの部屋にも壁がなく、柾目の通った杉戸でしきり、全体の感じは鎌倉時代そのままといって良い。私のいる奥の室には縁があって、前には<ruby><rb>孟宗竹</rb><rt>もうそうちく</rt></ruby>の生えた石組の庭が泉水に<ruby><rb>対</rb><rt>むか</rt></ruby>ってなだれ下っている。私の部屋代については、<persName ref="#sanuemon">参右衛門</persName>は一向に云おうとしないので、これには私たちも困った。何回私は部屋代を定めてくれと頼んでも、</p>
+        <p>「おれは金ほしくて貸したのではないからのう。ただでも良い。その代り、おれは貧乏だぜ、米のことと、野菜と、塩、醤油、味噌、このことだけは、一切云わないで貰いたい。それだけは、おれの家は知らん。お前たちにあげられるものは、薪と柴だけだ。これなら幾らでもあるで心配はさせん。」</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>の云い方は、見ず知らずの者にははっきりしている。彼の家の横の空地、三間をへだてた路傍に、別家の<persName ref="#kyuzaemon">久左衛門</persName>の家がある。このあばらやのような別家が、私たちに、ここの本家の<persName ref="#sanuemon">参右衛門</persName>の一室を世話してくれた農家だが、これも通りすがりの私らに対しては、何んらそれ以上のするべき責任もない。しかし、部屋を世話したからは、困らせるようなことをおれはせん、と、<persName ref="#kyuzaemon">久左衛門</persName>が、ふと小さな声でひと言云ったのを私の妻は覚えていた。</p>
+        <p>「そんなこと云ったのかい。」と私は笑った。</p>
+        <p>「ええ、ちょっと云ったわ。」</p>
+        <p>「じゃ、そのちょっとが、ここへ僕らをひきつけたわけだな。聞きぞこないじゃないのか。」</p>
+        <p>「でも、たしかに<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>いったようよ。」</p>
+        <p>「ふむ。」</p>
+        <p>ふむ、と私の云ったのは、そんな赤の他人の呟いたひと言に、今の私たち全部を支えている心が、どこかの一点で頼っているのかもしれないと、ふと私は考えたからである。たしかに、もし<persName ref="#kyuzaemon">久左衛門</persName>の家が傍になかったら、私らの生活の手段を何らかの方法で私は変えねばならぬにちがいない。野菜、米、味噌、醤油、塩、これら必需品を求める手がかりは、皆目まだ眼鼻も立っていない。しかし、今は、私は八方手をつくして、部屋の借り得られる村村を探し、その<ruby><rb>尽</rb><rt>ことごと</rt></ruby>くに失敗した後、ようやく独力で探しあてた一室である。必需品のことなど考えられない場合だった。移って来た夕方、薄暗くなって来ると、妻は部屋の隅のまだ解かない荷物にもたれかかって泣いていた。</p>
+        <p>「どうするんでしょうね。これから。」</p>
+        <p>「どうするって。当分こうしているわけさ。」</p>
+        <p>「そんなことで良いのかしら。」</p>
+        <p>「暗くなって来たからそんなことを考えるんだよ。明日の朝になれば何もかも分る。まア、明日の朝まで辛抱することだ。」</p>
+        <p>「あたし、帰りたい。」そして、また妻は泣いた。</p>
+        <p>「明日のことは思い煩うことなかれ、ってことあるじゃないか。」</p>
+        <p>「あなたはただそうじっとしてらっしゃればいいから、そんなこと仰言るのよ。今あたし、お勝手もとへ行ってみたら、真っ暗で、何一つ見えやしないんですもの。水一つ汲もうにも手さぐりで、やっと分ったほどですのよ。毎日毎日こんなんじゃ、あたし、どうしたら良いかしら。」</p>
+        <p>十室ちかくある家全体で、小さな電灯がただ一つよりない。それも炉間にぶら下ったまま光は私らの部屋までは届かない。電気屋を呼ぼうにも、<persName ref="#sanuemon">参右衛門</persName>の家が長く電気代滞納のため、もう来てくれないという。</p>
+        <p>「六畳一室に四人暮しで、電灯がないとすると、相当困るね。」</p>
+        <p>しかし、私にはまた別の考えが泛んでいた。まったく私には一新した生活で、私一人にとっては自然に襲って来た新しさだ。何より好都合と思うべきことばかりだが、それだけは口外すべからざる個人的興味のこと。私はただ黙って皆を<ruby><rb>引摺</rb><rt>ひきず</rt></ruby>ってゆけば良いのだ。</p>
+        <p>「<placeName ref="#tokyo">東京</placeName>にいたときのことを思いなさい。あれよりはまだましだ。」と私は云った。</p>
+        <p>「でも、あのときは、もう死ぬんだと思っていたんですもの。何んだって辛抱出来たわ。」</p>
+        <p>「それもそうだ。」</p>
+        <p>ここなら先ず安心だと思ったから一層不安が増して来たという理由は、たしかに今の私たちにはあった。死ぬ覚悟というものは、そのときよりも、後で分ることの方が多いということも、たびたび今までに感じていたことだのに、それが再びここまで来てまた明瞭になったのは、よほど私たちの気持ちも不安のなくなった証拠である。</p>
+        <p>「あのときは、おかしかったね。お前の病気の夜さ。」と私は云った。</p>
+        <p>「そうそう。あのときは、おかしかったわ。」と妻も思わず顔を上げて笑った。</p>
+        <p>厳寒の空襲のあったある夜、私と妻とはどちらも病気で、別別の部屋に寝たきり起きられず、子供たち二人を外の防空壕へ入れて置いた夜のことである。私は四十度も熱のある妻の傍へ、私の部屋から見舞いに出て傍についていたが、照明弾の落ちて来る<ruby><rb>耀</rb><rt>かがや</rt></ruby>きで、ぱッと部屋の明るくなるたびに、私は座蒲団を頭からひっ冠り、寝ている妻の裾へひれ伏した。すると、家の中の私たちのことが心配になったと見え、次男の方がのこのこ壕から出て来て、雨戸の外から恐わそうな声で、「お母アさん。」とひと声呼んだ。</p>
+        <p>あまり真近い声だったので、「こらッ。危いッ。」と座蒲団の下から私が叱りつけた。子供は壕の中へまた這入ったらしかったが、続いて落ちて来る照明弾の音響で、またのこのこ出て来ると、</p>
+        <p>「お母アさん。」</p>
+        <p>「こらッ。来るなッ。」</p>
+        <p><ruby><rb>呶鳴</rb><rt>どな</rt></ruby>るたびに雨戸の外から足音は遠のいたが、いよいよ今夜は無事ではすむまいと私は思った。私は一週間ほど前から心臓が悪く、二階<ruby><rb>梯子</rb><rt>ばしご</rt></ruby>も昇れない苦しみのつづいていた折で、妻など抱いては壕へ這入れず、今夜空襲があれば、宿運そのまま二人は吹き飛ばされようと思っていたその夜である。私は少しふざけたくなった。</p>
+        <p>「もう駄目かもしれんぞ。云っとくことはないかい。」私は子供の足音が消えると<ruby><rb>訊</rb><rt>たず</rt></ruby>ねた。</p>
+        <p>「あるわ。」</p>
+        <p>「云いなさい。」</p>
+        <p>「でも、もう云わない。」</p>
+        <p>爆発する音響がだんだん身近く迫って来る様子の底だった。</p>
+        <p>「それなら、よしッ。」</p>
+        <p>と、私は照明弾の明るさで、最後の妻の顔をひと眼見て置こうと思い、次ぎの爆発するのを待って起き上った。</p>
+        <p>「お母さん。」また声がする。</p>
+        <p>「出て来ちゃ、いかん。大丈夫だよ。」</p>
+        <p>私は大きな声で云いながらも、あの壕の中の二人さえ助かれば、後は、――と思った。すると、また一弾、ガラスが<ruby><rb>皺</rb><rt>しわ</rt></ruby>を立てて揺れ動く音がした。</p>
+        <p>「後はどうにかなるさ。」</p>
+        <p>「そうね。」</p>
+        <p><ruby><rb>水腫</rb><rt>みずば</rt></ruby>れのように熱し、ふくれて見える妻のそういう<ruby><rb>貌</rb><rt>かお</rt></ruby>が、空の耀きでちらッと見えた。心配そうというよりも、どこかへ突き刺さったままさ迷うような視線である。今ごろここで妻がおかしかったと云うのは、そのとき妻の見た私の座蒲団姿のことを云うのだが、私のおかしかったというのは、危険の迫るたびに、のこのこ壕の中から出て来た子供のことである。私はその危険だった夜から四日目の夜、妻と子供を無理矢理に<placeName ref="#tohoku">東北</placeName>へ疎開させ、私一人が残っていた。私の心臓はまだ怪しいときだったが、傍に妻子にいられる心配よりも、一人身の空襲下の起居の方が安らかさを取り戻すに都合は良く、食物の困難なら、庭の野草の緑の見える限りさほどのことではあるまいと思い、居残りを決行したのだ。私はまだ雨戸を開ける力もなかったから、寝床から出て、飯を炊き、煮えて来るとまた<ruby><rb>匐</rb><rt>は</rt></ruby>い込む。ぼんやり坐ったり、寝たり起きたり、そんなことをしている一週間ほどたったとき、折よく強制疎開で立ちのく友人が来てくれた。今度は二人の男の生活が始まった。自分の家もいずれは焼けるにちがいないから、私はせめてその焼けるところを見届けて見たかった。疎開をするならそれから後にしても良い。焼けた後では何の役にも立つまいが、それにしても、長らく自分を守ってくれた家である。つい家情も出て来て動く気もなく、私が飯を炊き、友人は味噌汁と茶碗という番で、互いに上手な方をひき受けて生活をしてみると、これはまたのどかで、朝起きて茶を飲む二人の一時間ほど楽しいときは、またと得られそうもない幸福を感じる時間になった。しかし、そんなことを云っても妻には分ろう筈もない。</p>
+        <p>「とにかく、自分の家が焼けなかったということは、何より結構じゃないか。あの大きな<placeName ref="#tokyo">東京</placeName>は、もうないのだからね。お前は見ていないから、知らないのだよ。」と私は云った。</p>
+        <p>「そうね、あたし、知らないんだわ。それだからね。ぶつぶついうの。」</p>
+        <p>妻はさしうつ向き、よく考えこむ眼つきである。</p>
+        <p>そういえば、この村の人たちも空襲の恐怖や戦火の惨状というものについては、無感動というよりも、全然知らない。このことに関して共通の想いを忍ばせるスタンダアドとなるべき一点がないということは、今は異国人も同様の際だった。たしかに、知らせようにも方法のない村民たちと物をいうにも、も早や、どうでも良いことばかりの心の部分で、話さねばならぬ忍耐が必要だ。この判然と分れた心の距離、胸中はっきり引かれた境界線というものは、こちらには分っているだけで、向うには分らない。人情、非人情というような、人間的なものではなく、ふかい谷間のような、不通線だ。農民のみとは限らず、一般人の間にも生じているこの不通線は、焼けたもの、焼け残り、出征者や、居残り組、疎開者や受入れ家族、など幾多の間に生じている無感動さの錯綜、重複、混乱が、ひん曲り、捻じあい、噛みつきあって、<ruby><rb>喚</rb><rt>わめ</rt></ruby>きちらしているのが現在だ。呶鳴ったかと思うと、笑ったり、ぺこぺこお辞儀したかと思うと、ふん反り返り、泣き出したかと思うと、鼻唄で闊歩する。信頼をしあうにも、寸断された心の砕片を手に受けて、これがおのれの心かと思うと、ぱッと捨てる。このようなとき、道念というようなものは、先ず自分自身に立腹すること以外手がかりはないものだ。腹立ちまぎれにうっかり呶鳴ると、他人に怒る。何の関係もないものに。――実際、人の心は今は他人に怒っているのではない。誰も彼もほおけた不通線に怒っているのだ。まったくこれは新しい、生れたばかりのものである。間もなくこれは絶望に変るだろう。次ぎには希望に。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p><ruby><rb>南瓜</rb><rt>かぼちゃ</rt></ruby>の尻から滴り落ちる雨の雫。雨を含んだ孟宗竹のしなやかさ。白瓜のすんなり垂れた肌ざわり。瞬間から瞬間へと濃度を変える峯のオレンヂ色。その上にはっきり顕れた虹の明るさ。乳色に流れる霧の中にほの見える竹林。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>ここへ移ってから一番自分を悩ますものは<ruby><rb>蚤</rb><rt>のみ</rt></ruby>だ。昼間も食事をしている唇へまで跳びこんで来る。大げさにいえば、顔を撫でると、ぼろぼろと指間からこぼれ落ちそうな気配で、眉毛にも跳びかかる。まして夜など眠れたものではない。どたんばたんと、あちらでもこちらでも足音がする。</p>
+        <p>「これなら、空襲の方がまだましだ。」と先ず、私は悲鳴をあげた。</p>
+        <p>「ほんとにどうでしょう。いることいること。」</p>
+        <p>「しかし、これだけ人間を苦しめる奴がいるに拘らず、誰も蚤を問題にしたものがいないというのは、何んということだろう。おれはまだ蚤の評論というのを見たことがないね。」</p>
+        <p>妻は私の云うことなど聞えない。八方へぴょんぴょん跳ぶ蚤を追っかけて夢中である。これは夜中の光景だが、これから毎夜つづくこの苦痛を考えると、他の重要なことなどすべて空しく飛び散るから不思議だ。そこがまた、おかしいのかもしれぬ。しかし、これほど苦痛なことが、おかしいとは、またどうしたことだろう。この蚤に悩まされている最中の自分と妻は、厳粛この上もない苦痛の極点で、歎声さえ発しているに拘らず、おかしいとは、何たる不真面目な客観性が自分たちの中にあるのだろう。笑いの哲学とは、<ruby><rb>流石</rb><rt>さすが</rt></ruby>に軽妙<ruby><rb>洒脱</rb><rt>しゃだつ</rt></ruby>な<persName ref="#bergson">ベルグソン</persName>の着想だ。こうでなくては哲学は意味をなさぬ。ここを忘れて人間性を<ruby><rb>云云</rb><rt>うんぬん</rt></ruby>したところで、――しかし、おかしい。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>翌朝、私は<persName ref="#sanuemon">参右衛門</persName>と対い合って炉に坐った。そして、その巨きな平然とした体躯を眺めた。いったい、この人物は、蚤について一言も発せぬが、果して何の<ruby><rb>痛痒</rb><rt>つうよう</rt></ruby>も感じないのだろうか。もしそれなら、この人物は自分たちには不思議な存在だと思った。雲集して来る蚤の真っただ中へ、どたりと身を横たえて<ruby><rb>鼾声</rb><rt>かんせい</rt></ruby>をあげている肉体。思ってみても痛快だが、しかし蚤にも狂わぬ神経で、精神を支えている調法さというものは、――子供のときから幾多の訓練をへたとはいえ、――それなればこそ、私らの苦痛がも早や何の問題でもない地点にいられる軍隊のような健康さに、私らはいったい何をいうべきか。たしかに、誰もは私らの方を不健康というだろう。しかし、果してそこに間違いはないか。その健康そうに見える陰から覗いた衰弱の徴候に。――これは蚤だけに関したことではない。人人のおそれ<ruby><rb>戦</rb><rt>おの</rt></ruby>のく対象物の相違が、こんなに違ったまま世の中が廻っていて、――プロペラの廻転を停めるように、私は一度、ぴたりと停った世の中というものを見てみたい。これだけはまだ誰一人も見たことのないものだが。</p>
+        <p>私は農村というものを映す高速度の映写機を、一度ためしに使ってみたい。完全な廻転に用する歯車は完全な円形では駄目だという法則がある。高速度映写機もその学理を応用している。ＡはＢと相等しく、ＢはＣと相等しい場合に、ＡはＣと相等し、という数学上の定理が、今はそうではなく、ＡとＣとは等しからず、という、新しい数法が生じて来たそうだ。これを半順序概念というそうだが、他の何事よりもこれは大革命の端緒となるもの――としても、それはさて置き等しきものは何もないというこの美しさ。おそらくどこの農村も、農村の存するところすべてが異っていることだろうが、高速度機もこうなると必要だ。一疋の蚤も、半順序概念のＡとして、この農村を計量する何ものか、私の円形ならざる歯車の一つにならば幸いだ。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>夜の明けない前に草刈りに出ていった娘たちが、山から帰って来る。自分の背丈の二倍もある高さの草束を背負う姿は青草の底から顔を出した家畜に似ている。それが二人三人と続いて山路を降りて来ると、小山が揺れ動いて来るようだ。そんなことなど忘れてから、ふとまた視線がそちらへ向くたびに、おや、風かなと思う。よく見ると、また続いて降りて来る娘たちの草の山だ。</p>
+        <p>「日が射して来てから家を出るのは、もう仕事じゃないのう。」と、<persName ref="#kyuzaemon">久左衛門</persName>が云った。</p>
+        <p>「おれは人の二人前は、いつのときでも働いた。前には村で一番の貧乏だったが、今では先から五番になった。」</p>
+        <p>「この村の人は、女の方がずっとよく働きますね。」</p>
+        <p>「ははははは、そういえば、そうかのう。」と、この老人は笑ってから、一寸このとき考え込んだ。</p>
+        <p>六十八歳の老人が、今まで一度も、そんなことを考えてみたこともなかったということ。――やはり、人は自分のことを一番に考えて、それから答えるのだ。しかし、私もまた<ruby><rb>迂闊</rb><rt>うかつ</rt></ruby>なことを訊ねたものだ。村で働きがないと云われることは、都会のものが感じるよりも、幾そう倍の侮辱になる、という衝撃については、甚だ残念ながら手落ちはこちらだ。ははははと笑った老人の初めの笑声は、ただの笑いではあるまい。おそらく六十八年の歳月の笑いであろう。</p>
+        <p>私はこの<persName ref="#kyuzaemon">久左衛門</persName>という特殊な老農に注意を向けた。何ぜかというと、この平野は陸羽百三十二号という米を作る本場であること。この米は一般から<placeName ref="#nihon">日本</placeName>で最上とされているのに、この平野の中でも、特にこの村の米は平野のものから美味だといわれていること、ところが、<persName ref="#kyuzaemon">久左衛門</persName>の家の米は、この村の中でも一番美味であるということなどを考えると、――彼は<placeName ref="#nihon">日本</placeName>一の米作りの名人ということになりそうだ。まだ誰も、そんなことを云ったのではない。しかし、押しせばめて来てみると、他に適当な論法のない限りは、そう思ってみる方が、私だけには興味がある。たしかに、同じ注意を向けてみるなら、ひそかに私はそう思うことにしてみたい。</p>
+        <p>「おれは小さいときから算術が好きでのう。」</p>
+        <p>と<persName ref="#kyuzaemon">久左衛門</persName>は云った。「今の若いもののやることを見ていても、おれよりは下手だのう。おれは算術より他に、頼りになるものは、ないように思うて来たが、やっぱりあれより無いものだ。」</p>
+        <p>またこの老人はこうも云った。</p>
+        <p>「みんな人が働くのは、子供のためだの。おれもそうだった。」</p>
+        <p><ruby><rb>禿</rb><rt>は</rt></ruby>げた頭の鉢は大きく開き、耳の後ろから眼尻にかけて貫通した流弾の<ruby><rb>疵痕</rb><rt>きずあと</rt></ruby>が残っている。二十二のとき日露の役に出征し、<placeName ref="#ryojun">旅順</placeName>でうけた負傷の疵だが、このときの恩給が唯一の資本となり、峠を越した漁村の<persName ref="#rie">利枝</persName>の家へ、縄と<ruby><rb>筵</rb><rt>むしろ</rt></ruby>を売りに通った極貧の暮しも、以来<ruby><rb>鰻</rb><rt>うなぎ</rt></ruby>のぼりに上騰した。彼の妻の<persName ref="#oyumi">お弓</persName>は<persName ref="#rie">利枝</persName>の妹で、本家の<persName ref="#sanuemon">参右衛門</persName>の母の妹にもなる。<persName ref="#kyuzaemon">久左衛門</persName>は隣村から養子に来たとはいえ、前から本家とは親戚で遠慮の不要な間柄だ。</p>
+        <p>「この村は二十八軒あるが、<persName ref="#sanuemon">参右衛門</persName>の家は一番の大元だ。前には財産も一番だったが、今はその反対だのう。みなあれが飲んだのだ。はははは。」<persName ref="#kyuzaemon">久左衛門</persName>はそう云ってから私に声をひそめて、「あんたに一言いうて置かねばならぬことがあるが、一つだけ気をつけておくれんか。あの<persName ref="#sanuemon">参右衛門</persName>は人の良い男だが、飲んだら駄目だから、そのときはそっと座を脱して隠れて下され。あれはひどい酒乱でのう。おれは殴られた殴られた。もういくら殴られたかしれん。おれはじっと我慢をし通して来たが、あの大男の力持ちに殴られちゃ、<ruby><rb>敵</rb><rt>かな</rt></ruby>うもんじゃない。恐しい力持ちじゃ。」</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>は四十八だ。巨漢である。いつも炉端に寝そべっていて働かないが、<ruby><rb>無精鬚</rb><rt>ぶしょうひげ</rt></ruby>がのびて来ると、堂堂たる総大将の風貌であたりを不平そうに眺めている。<ruby><rb>剃刀</rb><rt>かみそり</rt></ruby>をあてると、青い剃りあとに酒乱の痕跡の泛び出た美男になる。農夫とは思われぬ<ruby><rb>伊達</rb><rt>だて</rt></ruby>な<ruby><rb>顎</rb><rt>あご</rt></ruby>や口元が、若若しい精気に満ち、およそ田畑とは縁遠い、ぬらりとした気詰りで、<ruby><rb>半被</rb><rt>はっぴ</rt></ruby>を肩に朝湯にでも行きそうだ。</p>
+        <p>「おれは金はない。金はないが、あんなものは入らん。食えれば良いでのう。こうしておっても食ってゆかれる。どうじゃ、あんたはそう思わんか。」</p>
+        <p>と、<persName ref="#sanuemon">参右衛門</persName>は云ったことがある。初めは冗談かと私は思って黙っていると、意外に真面目な眼差しで彼は問いつめ、じっと視線を放そうとしなかった。</p>
+        <p>「実は僕もその方でね。」と私は苦笑した。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>は酒代で財を<ruby><rb>潰</rb><rt>つぶ</rt></ruby>した自分自身の過去に、少しも後悔していなかった。彼は思うことを実行してみたのである。そして、来るべきことに突きあたったその底から、鋭い表情を上げているのだ。しかし、<persName ref="#kyuzaemon">久左衛門</persName>は彼とは反対だった。あるとき、彼は私に、</p>
+        <p>「何というても金がなければ駄目なもんだ。」とひと言<ruby><rb>洩</rb><rt>もら</rt></ruby>したことがある。これも自分の思うことを実行してみて、結果はそのままに現れて来たのだ。</p>
+        <p>この<persName ref="#kyuzaemon">久左衛門</persName>と<persName ref="#sanuemon">参右衛門</persName>が、まったく地位の転倒した別家と本家の関係にあり、それも三間の空地をへだてた隣家で、酒を飲み交している場では、定めし酒乱の殴打はなみなみならぬ響きが籠っていたことだろう。</p>
+        <p>「おれと<persName ref="#sanuemon">参右衛門</persName>と仲が悪うなると、村のものは喜ぶ。仲が戻ると、いやそうな顔をする。この頃は<persName ref="#sanuemon">参右衛門</persName>も、おれのいう通りになるので、村のものには面白うないのじゃ。はははは。」と<persName ref="#kyuzaemon">久左衛門</persName>は眼尻を細めて笑った。一度も激したことのないような笑顔である。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>雨過山房の午後――鎌<ruby><rb>研</rb><rt>と</rt></ruby>ぐ姿、その<ruby><rb>蓑</rb><rt>みの</rt></ruby>からたれた雨の雫。縄なう機械の踏み動く音、庭石の苔の間を流れる雨の細流。空が徐徐に<ruby><rb>霽</rb><rt>は</rt></ruby>れるに随い、竹林の雫の中から蝉の声が聞えて来る。群り飛びまう蝿の渦巻――</p>
+        <p>この二十八戸の村から十七人出征している。そのうち二人だけが帰って来た。先日、<placeName ref="#yunohama">湯の浜</placeName>へ行ったときのことだが、汽車から降りて来て、今しも故郷へ入って行こうとしている復員の兵士が二人、電車の昇降口で話していた。どちらも勇敢そうな、<ruby><rb>逞</rb><rt>たくま</rt></ruby>しい身体で、見ていても気持ちの良くなる青年である。</p>
+        <p>「あーあ、半年おれは、ぐっすり寝たいな。」と一人が、電車の継目の欄干にもたれ、顔に真正面からかッと日を浴びて云った。</p>
+        <p>「弾の下くぐることなら、あんなことは平気だが、眠いのはのう。」と背の高い美男子の一人が云った。</p>
+        <p>そこへその兵士の故郷の知人らしい老人が乗って来た。顔が合うと、美男の兵の方が、</p>
+        <p>「敗残兵が帰って来たア。」</p>
+        <p>と、いきなり云って笑った。老人は、「わッはッはッ。」と笑ってから、肩を一つぽんと叩いた。それでおしまいだった。<placeName ref="#nihon">日本</placeName>人らしい笑いだ。</p>
+        <p>電車が稲の花の中を走り出し、次ぎの停留所まで来たとき、またその兵士の知人らしい、美しい若い婦人が、小さな子供をつれて乗り込んで来た。</p>
+        <p>「あら、お久しぶりですのう。」と婦人は、にこにこして嬉しそうに兵士に云った。その笑顔のどこかに、むかしの恋人にちかい<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>すらあった。</p>
+        <p>「敗残兵が帰って来たア。」</p>
+        <p>と、また兵士は同じことを繰り返して笑った。すると、今までにこにこしていた婦人は、急に笑顔を消し、<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いたまま、</p>
+        <p>「どうしようもありませんでのう。」</p>
+        <p>と、悲しそうに云ったきり、もう顔を上げようとしなかった。兵士の方も的を射すぎた不手際な苦しさで、眼をぱちぱちさせて<ruby><rb>外</rb><rt>そ</rt></ruby>っぽを向いたまま、これも何も云わなかった。</p>
+        <p>三度目の停留所まで来たとき、そこでもこの兵士の知合いが乗り込んで来たが、このとき兵士は、</p>
+        <p>「やア、お暑う。」と云って、軽く頭を下げたきりだった。</p>
+        <p>横にいた別の兵士はどこまでも黙黙として一語も発せず、笑いもしなかったが、彼の降りる停留所まで来たとき、ぎっしり詰った重い軍袋を足で蹴りつけ、プラットへ突き落した。日に耀いた<placeName ref="#chokaisan">鳥海山</placeName>が美しく裾を海の方へ曳いている。稲の花の満ちている出羽の平野も、このような会話を聞いたことは、おそらく一度もなかったことだろう。</p>
+        <p>私は海際にあるその電車の終点の<placeName ref="#yunohama">湯の浜</placeName>で兵士と一緒に降りた。袋を背負い、人のいない砂丘を越して自分の家の方へ消えて行く兵士の後姿を見ながら、私もまた一人で、その丘を登った。<ruby><rb>浜茄子</rb><rt>はまなす</rt></ruby>の花の濃い紅色が、海の碧さを背景に点点と咲いている。腰を降して私は膝を組んだ。ここは私が妻と結婚したその夏、二人で来た同じ砂丘で、そのときは電車はなかったが、こうしてここで浜茄子の花も見た。それから二十年の年月紅色の花にうつろう愁いは、今もまだ私に残っているが、もうむかしのようなものではない。私は砂丘の向うにある兵士の家を想像し、その入口へ這人って行くときに、最初にいう彼の言葉も分っている。すべてが私らと無関係なことではない。私は人のいない大衆浴場へそれから行って服を脱ぎ、木目のとび出た板にお尻をつけた。風呂へ入るにも、私は汽車に乗り、またそれから電車でここまで来て、そして、ようやく一風呂浴びられるのだが、私にとって、今はこの痛い木目の板へ坐るのが、一週一度の何よりの楽しみだ。ぽちゃぽちゃ一人でやっていると、心はなまけた潤おいに満たされ、空腹も忘れてしまう。何とかして煙草を一本吸いたいと思うが、山から採って来たいたどりばかりで、これで二週間目だ。ふと、家の<persName ref="#sanuemon">参右衛門</persName>のなまけ癖が、<ruby><rb>廂</rb><rt>ひさし</rt></ruby>からの日ざしを受けたお<ruby><rb>臍</rb><rt>へそ</rt></ruby>のあたりにへこんで見えて、垢を擦る。しかし、敗戦の日の私の物思いは、こんなことでは片附きそうもない。私は、今は何も云いたくはない。</p>
+        <p>この浴場の屋根の上に露台がある。そこから右の砂丘の向うに、煙筒のかすかに並んだ岬の見えるのが、<placeName ref="#mogamigawa">最上川</placeName>の河口である。そこが<placeName ref="#sakata">酒田</placeName>だ。捕虜収容所もあの煙筒の下の方にある。終戦の前日まで、そこで捕虜を使っていた日通のある人が云ったこと――</p>
+        <p>「軍人という奴は、どいつもこ奴も、無頼漢ばかりだ。」</p>
+        <p>またか、と初めは思って、私にこの話をした青年は、聞くのを<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>したそうだ。この青年も復員軍人だ。</p>
+        <p>「捕虜に食わせる食い物なんて、あれや無茶だ。人の食う物じゃない。気の毒で気の毒で、もう見ちゃおれん。」と、日通は云った。</p>
+        <p>軍人を攻撃するのは田舎でも流行だが、これは少し流行から脱れた権幕である。罵倒も飛び脱れた大声だと、反感を忘れ、どういうものかふと人はまた耳を傾ける。</p>
+        <p>この日通の人の使っている下働きの荷車曳きに、この地方特有の<ruby><rb>敦樸</rb><rt>とんぼく</rt></ruby>な者がいた。この若ものは仕事からの帰途、毎夜一緒に働いている捕虜をこっそり自分の家へ連れ込んで、食べたいだけ物を食べさせてやっていた。そのうち若ものは出征した。ところが、出征すると間もなく終戦になったので、今度は捕虜との位置が逆になった。自由な身になった捕虜は、若ものが今日帰るか明日帰るかと、毎日ひとり停車場まで出迎えにいっていた。そのところへ、ある日ひょっこり汽車から降りて来た復員姿の若者を見つけると、「おう、」と進み二人は思わず手を握った。聞いていて私は涙が出た。</p>
+        <p><placeName ref="#america">アメリカ</placeName>の飛行機は、まだ<placeName ref="#sakata">酒田</placeName>の上空まで飛んで来て、下にいる捕虜たちに食物を落している。私はこれらの飛行機もここの露台から眺めたことがあるが、家を突き抜いた食物で圧死した捕虜もある。例の捕虜は自分へ落ちて来た分の食物を、若ものの家へ運んでは食べよ食べよといって、承知しないということだ。以上の話には感想は不要だが、ここには、そのままに捨て置きがたい、見事な光をあげているものが沢山ある。それとは違う別の<placeName ref="#england">イギリス</placeName>兵の捕虜の一人も、本国へ帰るとき、</p>
+        <p>「<placeName ref="#sakata">酒田</placeName>へはもう一度、必ず来る。」</p>
+        <p>と、そう一言いって帰ったそうである。</p>
+        <p><date when="--08">八月――日</date></p>
+        <p>別家の<persName ref="#kyuzaemon">久左衛門</persName>の主婦は今日はめっきり心配顔だ。長女が<placeName ref="#karafuto">樺太</placeName>に嫁いでいる折、引上げ家族を乗せた船を、国籍不明の潜水艦が撃沈したという噂が拡がって来たからだが、本家の<persName ref="#sanuemon">参右衛門</persName>の家の長男も<placeName ref="#karafuto">樺太</placeName>にいる。両家の今日の憂鬱さはひとしおふかい。</p>
+        <p>「もう朝飯も食べられない。今日は堪忍しておくれのう。愛想の悪いのは、お前さんたち悪う思うてじゃないでのう。」</p>
+        <p>畠の中の<ruby><rb>茄子</rb><rt>なす</rt></ruby>、<ruby><rb>唐黍</rb><rt>とうもろこし</rt></ruby>、南瓜の実にとり包まれた別家の主婦は、そう云って<ruby><rb>跼</rb><rt>かが</rt></ruby>み込んだ。背中に射した日光が秋の色で、浮雲がゆるく沼の上に流れている。一日一日と頭を垂れていく稲の穂。初めの颱風も無事にのがれた稲の波は後続する花房を満たして重い。栗のいがの柔かさ――</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>の細君の<persName ref="#kiyoe">清江</persName>は、これはまたいつも黙っていて、心配を顕さない。<placeName ref="#karafuto">樺太</placeName>へ出征している長男が、帰れるものやら、奥の陸地へ連れて行かれたものやら、噂は二つで、頭も二つの間に挟まれ<ruby><rb>踠</rb><rt>もが</rt></ruby>いてはいるのだが。</p>
+        <p>「いや、きっと帰れるさ。相手は<placeName ref="#soviet">ソビエット</placeName>だもんのう。おれたち貧乏人の<ruby><rb>忰</rb><rt>せがれ</rt></ruby>を、殺すなんてことはせんもんだ。」</p>
+        <p>と、<persName ref="#sanuemon">参右衛門</persName>は云う。彼も一度は<placeName ref="#karafuto">樺太</placeName>へ出稼ぎに行って、石炭を掘ったこともあり、そこの景色は直ちに泛んで来る様子だ。<persName ref="#kyuzaemon">久左衛門</persName>の主婦の<persName ref="#oyumi">お弓</persName>は、ひき吊ったような顔で本家へ来て、共通の憂鬱さを吐きまぎらせる。</p>
+        <p>「本人が帰って、門口へ立って見てからでないと、何んにも分ったことではないのう。」</p>
+        <p>と<persName ref="#kiyoe">清江</persName>は一言小声で洩しただけである。この婦人は、働くこと以外に夢を持たぬ堅実さで、私は来たその当夜、一瞥して感服したが、それは以後ずっと続いている。人の噂を聞き集めてみても、この<persName ref="#kiyoe">清江</persName>のことを賞讃しないものはない。<persName ref="#sanuemon">参右衛門</persName>はまことに妻運の良い男というべきだ。この点私は彼によほど負けている。</p>
+        <p>「どうもここの細君みたいな婦人は、一寸、見たことないね。それに顔立だって、よく見てみなさい。紋服でも着せて出そうものなら、<placeName ref="#tokyo">東京</placeName>のどこの式場へ出したって、じっと底光りして来るよ。」と私は妻に云った。</p>
+        <p>「そうね、あたしもそう思うわ。」</p>
+        <p>「ここにいる機会に、お前も少し勉強をするんだね。お前なんか、僕のあら探しで一生を費しちゃったんだが、そんなことせんもんだ。」と、私も田舎言葉になったりする。</p>
+        <p>「ほんと、あたしあなたのあらばかしより見えないんですもの。あなたは、あらばかしの人だわ。良いとこあるのかしら。」この批評家はうす笑いをもらしている。</p>
+        <p>「おれはこのごろ、人生はこういうものかと、少しばかり分って来たような気がするんだがね。辛いぞなかなか人生は――おれは毎日毎日、批評家からやっつけられ、右からも、左からもやっつけられ、内からは、またお前から毎日毎日だ。おれの身体は、穴だらけで、満足なところは、いったいどこにあるんだろうと思う。まったくだよ。人の非難するところを全部おれは、受け入れる性質だからね。こいつを全部受け入れて見なさい。おれは零以下の人間だ。そのくせ人は、おれにまだ何か書け書けだ。どういうことだろうこれは。どっかに一つ、良いところがなくちゃならんじゃないか。」</p>
+        <p>私は少し感傷的になったのが、それが悲しかった。</p>
+        <p>「どっかしら。――ないわね。」と妻は黙っていてから云った。</p>
+        <p>「いや、一つだけある。」</p>
+        <p>「どういうとこ？」</p>
+        <p>「おれは、人に感心する性質だよ。おれは自分が悪いと思えばこそ人に感心するのだ。これが風雅というものさ。<persName ref="#matsuo-basho">芭蕉</persName>さんのとは少しばかり違う。僕のはね。」</p>
+        <p>「<persName ref="#matsuo-basho">芭蕉</persName>さんのはどういうの？」</p>
+        <p>「あの風雅は、まだ花や鳥に慰められている無事なところがあってね。そこが繁栄する理由だよ。<persName ref="#matsuo-basho">芭蕉</persName>さん、きっと自分のそこがいやだったんじゃないかなア。あの人は<placeName ref="#iga">伊賀</placeName>の<placeName ref="#tsuge"><ruby><rb>柘植</rb><rt>つげ</rt></ruby></placeName>の人だから、おれと同じ村だ。それだから、おれにはあの人の心持ちがよく分る。<persName ref="#kobayashi-hideo">小林秀雄</persName>はそこを知ってるもんだから、おれに<persName ref="#matsuo-basho">芭蕉</persName>論をやれやれと、奨めるのさ。」</p>
+        <p>「<persName ref="#kobayashi-hideo">小林</persName>さんが？」妻は顔を上げた。</p>
+        <p>「うむ。しかし、<persName ref="#kobayashi-hideo">小林</persName>の方が<persName ref="#matsuo-basho">芭蕉</persName>さんより一寸ばかし進歩しているね。おれの見たところではだ。」</p>
+        <p>「…………」</p>
+        <p>「それはそうと、<persName ref="#kobayashi-hideo">小林</persName>はいつかお前を賞めてたことがあるよ。君の細君はいいね、ぼッとしていて、阿呆みたいでって。」</p>
+        <p>「まア、失礼ね。」妻は赧い顔をした。</p>
+        <p>「しかし、阿呆なところを賞められるようじゃなくちゃ、女は駄目なもんだよ。賢いところなら誰だって賞める。そんなのは、賞める方も賞められる方もまだまだ駄目だ。おれにしたってだ。」</p>
+        <p>妻は笑いが止まらなくなった様子でくすくす俯向いて笑っている。しかし、私の方はそれどころではない。非常な難問が増して来た。もう妻なんかに<ruby><rb>介意</rb><rt>かま</rt></ruby>ってはおれぬ。今しばらくは斬り捨てだ。</p>
+        <p>一万米の高空でする戦闘と、地上百米の低空でする戦闘の相違について――これは飛行機のことではない。各人、だれでも一日に一度は必ずしなければならぬ平和裡の戦闘だ。妻と、友人と、親戚と、知人と、未知の人間と、その他、一瞥の瞬間に擦れちがって去りゆくものと。また自分と。戦法は先ず度を合して照準を定めることだが、照準器はめちゃくちゃだ。度が合ったときのその嬉しさ、そこからのみ愛情は通じるのだ。</p>
+        <p>ある日のことを私は思い出す。それは晴れた冬の日のこと、<placeName ref="#shibuya">渋谷</placeName>の<placeName ref="#teito-sen">帝都線</placeName>のプラットで群衆と一緒に電車を待っているとき、空襲のサイレンが鳴った。間もなく、Ｂ29一機が頭上に顕れた。高射砲が鳴り出した。ぱッと一発、翼すれすれの高度で弾が開いた。すると、私の横にいた見知らぬ青年が、</p>
+        <p>「あッ、いい高度だな。」とひと声もらした。</p>
+        <p>話はそれだけのことだが、そのひと声が、晴れた空と調和をもった、一種奇妙な美しさをもっていた。<ruby><rb>敵愾心</rb><rt>てきがいしん</rt></ruby>もなく、戦闘心もない、粋な観賞精神が、思わず弾と一緒に開いた響きである。私はこの世界を上げての戦争はもう戦争ではないと思った。批評精神が高度の空中で、淡淡と死闘を演じているだけだ。地上の公衆と心の繋がりは断たれている。それにも拘らず、観衆は連絡もなく不意にころころ死んでゆく今日明日。たしかに死ぬことだけは戦争だが、しかし、戦争の中核をなすものは、何といっても敵愾心だ。いったい、今度の長い戦争中で、敵と呼ぶべきものに対して敵愾心を抱いていたものは誰があっただろうか。事、この度の戦争に関する限り、この中核を見ずして、他のいかなることにペンを用いようとも無駄である。</p>
+        <p>愛国心は誰にもあり、敵愾心は誰にもないという長い戦争。そして、自分の身体をこの二つの心のどちらかへ組み入れねば生きられぬという場合、人は必ず何ものかに希願をこめていただろう。何ものにこめたかそれだけは人にも分らず、自分も知らぬ秘密のものだ。しかし、人は身の安全のためにそうしたのではない。たとえそれは間違ったものに祈ったとしても、そこに間違いなどという不潔なものなど、も早や介在なし得ない心でしたのである。それは狐にしようと狸にしようと、それ以外には無いのだから通すところのものはどうでも良い、有るものを通して天上のものへしていたのにちがいないのだ。ここに何ものも無い筈はない。</p>
+        <p>おそらく以後進駐軍が何をどのようにしようとも、<placeName ref="#nihon">日本</placeName>人は柔順にこれにつき随ってゆくことだろう。思い残すことのない静かな心で、次ぎの何かを待っている。それが罰であろうと何んであろうと、まだ見たこともないものに胸とどろかせ、自分の運命をさえ忘れている。この強い<placeName ref="#nihon">日本</placeName>を負かしたものは、いったい、いかなるやつかと。これを汚なさ、無気力さというわけにはいかぬ。道義地に落ちたりというべきものでもない。しかし、戦争で過誤を重ね、戦後は戦後でまた重ねる、そういう重たい真ん中を何ものかが通っていくのもまた事実だ。それは分らぬものだが、たしかに誰もの胸中を透っていく明るさは、敗戦してみて分った意想外な驚愕であろう。それにしても人の後から考えたことすべて間違いだと思う苦しさからは、まだ容易に脱けきれるものでもない。</p>
+        <p>防空壕に溜った枯葉の上へ、降り込む氷雨のかさかさ鳴る音を聞きながら、私は杜甫を一つ最後に読もうと思って持ち込んだこともある今年の冬だ。しかし、今は、戦争は停止している。私のここで見たものは一人の白痴だ。</p>
+        <p>この白痴は<persName ref="#sanuemon">参右衛門</persName>の次男である。先ずその日その日が食べられるというだけの、貧農のこの家の生活を支えているのは、二十三歳になるこの白痴だ。名は<persName ref="#tensaku">天作</persName>、彼は朝早く半里もある駅の傍の白土工場へ通い、百円の賃金を貰っている。<persName ref="#sanuemon">参右衛門</persName>の怠けていられるのもこのためだ。<persName ref="#tensaku">天作</persName>は身体が父に似ていて巨漢である。無口で柔順で、稀な孝行もので、良く働き、何の不快さもない静な性質だ。およそ他人に害を与えない人物でこれほど神に近いものはないだろう。彼の仕事も三人力で、山から白土を掘り出すのだが、この土は武田製薬の胃薬の原料になるものだ。戦時中も今と同様に働き通したが、<persName ref="#tensaku">天作</persName>の掘り出した白土は、どれほど多くの人の胃袋へ入ったことだろう。あの酒を吸収して酔漢をなくするノルモザンがこの白土だ。<persName ref="#tensaku">天作</persName>は白痴のため戦争など知らない。自分の得た賃金を<persName ref="#sanuemon">参右衛門</persName>の酒代にすっかり出し、代りに彼から煙草を四五本ケースへ入れて貰うと、ほくほくする。たまの休日には庭の草ひき、草刈り、庭掃除で、小牛と山羊をひっ張り廻して遊ぶのが何より愉しみなようである。弟の十二になるのが何か悪さをすると、<persName ref="#tensaku">天作</persName>のしたことにして知らぬふりだ。そして、代りに<persName ref="#tensaku">天作</persName>が<persName ref="#sanuemon">参右衛門</persName>から叱られる。私は五時に起きるがときどき同じ白土工場へ出ている隣家の少年が、</p>
+        <p>「<persName ref="#tensaku">天作</persName>どーん。」</p>
+        <p>と垣根の外から誘う声がする。すると、</p>
+        <p>「おう。」</p>
+        <p>と、応える<persName ref="#tensaku">天作</persName>の元気な声は、一日一度の発声のようで朝霧をついて来る。何の不平もない幸福そうな、実に穏かな<persName ref="#tensaku">天作</persName>のその眼を見るのは、また私には愉しみだ。これは地べたの上を<ruby><rb>匐</rb><rt>は</rt></ruby>い廻っている人間の中、もっとも怨恨のない一生活だ。他は<ruby><rb>悉</rb><rt>ことごと</rt></ruby>くといってもいい、誰かに、どこかで恨みの片影を持って生活しているときに、上空では自己を忘れた精密な死闘を演じ、下のここでは、戦争を忘れた平和な胃薬掘りの一白痴図が潜んでいたのだ。</p>
+        <p><placeName ref="#hida">飛騨地方</placeName>では白痴が生れると、神さまが生れたといって尊崇するということだが、そういう地方も一つは在って良いものだ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>別家、<persName ref="#kyuzaemon">久左衛門</persName>の家には、機械工として熟練抜群の次男が工場解散となって都会から帰って遊んでいる。年は本家の白痴と同年だ。白痴の<persName ref="#tensaku">天作</persName>が一家の生計を支えた中心であるときに、別家では反対であるということが、二家の間に少し均衡を失いかけて見える。<persName ref="#kyuzaemon">久左衛門</persName>の次男は、十三のとき以来ひとり都会に出ていたので、農事を今からすることは不可能だ。長男がこの弟の無職を憂い顔で、砂利を積んだ牛車を運び、駅からの真直ぐな路を往ったり来たりしている。麻疹で亡くした子供の初盆をすませたばかりの頬に、鬚がのびている。若い嫁は柔順に壁土を足でこね、ひたひたと鳴るその足音の冷やかさに驟雨が襲って来る。虫の声声が昂まる。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>の広い家には誰も人がいない。薪のくすぶっている炉の傍に、薬湯がかかっていて、蝿が荒筵の<ruby><rb>条目</rb><rt>すじめ</rt></ruby>を斜めに匐っているばかりだ。梨の炉縁の焼け焦げた窪みに、湯呑が一つ傾いたまま置いてある。よく洗濯された、継ぎ剥ぎだらけの紺の上衣が、手擦れで光った厚い戸にかかり、電灯がかすかに風に揺れている。槽に蔭干しされた種子類が格子の傍に並べてあって、水壺の明り取りから柿の生ま生ましい青色が、べっとりした絵具色で鮮明に滲み出ている。蝿の飛びまう羽音。馬鈴薯の転がった板の間の笹目から喰み出した夏菜類の瑞瑞しい葉脈――雨が霽れたり降ったりしている。</p>
+        <p>寺の和尚、<persName ref="#sugai-kodo">菅井胡堂</persName>氏がおはぎを持って来てくれた。私の部屋――この<persName ref="#sanuemon">参右衛門</persName>の奥の一室は和尚が少童のころまだこの家の豪勢なときに誦経に来て以来五十年ぶりらしく、庭を眺め、「ほほう。」という。</p>
+        <p>すると、突然、泉水の上に突き出た竿の先に、眼の高さでただ一つぶら下った<ruby><rb>剽軽</rb><rt>ひょうきん</rt></ruby>な南瓜を見て、</p>
+        <p>「はッはッははッ。」と哄笑した。</p>
+        <p><persName ref="#sugai-kodo">胡堂</persName>氏の話によると、村には二つとない、見事だったこの庭の良石と植木は、隣村の何兵衛に<ruby><rb>瞞</rb><rt>だま</rt></ruby>され<ruby><rb>尽</rb><rt>ことごと</rt></ruby>く持ち去られたとのことである。今、壊されたその跡に、ぶらりと垂れた南瓜の表情は、和尚には、何事か自然のユーモアとなって実り下った、真の笑いだったにちがいない。私はこういう笑いを聞いたのは初めてだ。ナンセンスの高級さ、ふかさは、このような孤独な南瓜のぶらりと下ったお尻の大きさをいうのだろう。これはまた、<persName ref="#tokugawa-musei">徳川夢声</persName>の、芸に似ている。まことに<persName ref="#tokugawa-musei">夢声</persName>の芸の洒脱さは、破れた<placeName ref="#nihon">日本</placeName>の滴りのようなものである。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>初めて<ruby><rb>西瓜</rb><rt>すいか</rt></ruby>を割る。今年は例年よりも二十日気候が遅れているとのことだ。<persName ref="#kyuzaemon">久左衛門</persName>は、毎朝九時ごろになると必ず私に会いにやって来る。何の用もない、ただ遊びに来るだけだ。私は<placeName ref="#tokyo">東京</placeName>にいても、この朝の時間を潰されることほど苦しいことはない。それもこの老人が現れると、<ruby><rb>定</rb><rt>きま</rt></ruby>って十二時まで動かない。私は一番自分にとって苦痛なことを、ここでは忍耐しているのだ。私は人が朝来たときは、その日一日死んだつもりになるのが習慣だったが、ここではそれが毎日だ。そこで、このごろ私は講習会に出席したつもりになって、この老人から農業について学ぶことにした。それにしても、これから以後ここにいる限り、この教授の出席が毎日続くのかと思うと溜息が出る。</p>
+        <p>「お困りなら今勉強中だといって、お断りしなさいよ。」と、妻は私のひそかな溜息を見て云った。</p>
+        <p>「僕は気が弱いんだね。どうも、それだけは云いかねるよ。あのにこにこした顔を見ちゃ、ひとつこの爺さんに殺されてやれ、と思うから不思議だ。お前断ってくれ。」</p>
+        <p>「じゃ、今度見えたら云いますわ。」</p>
+        <p>「しかし、一寸待ってくれ。あの爺さんの云うことは、こっそりノートをとって置きたくなることもあるんだが、ノートをその場でとると、こっちの職業がすぐ分っちまうからね。そいつが困るんだよ。細かい数字のことになると、どうも僕は忘れてばかりだ。」</p>
+        <p>「でも、そんなに面白ければ、お会いになってもいいじゃありませんか。」</p>
+        <p>「しかし、夜はこの部屋へは電気が来ないし、眠るとなると、この蚤で眠れたもんじゃない。朝になると、昼まであの爺さんが動かぬし、やっと午後から昼寝の時間を見つけると、これは眠っているんだから、おれの時間じゃない。おれは、もう生死不明だ。生きているなと思うときは、朝起きて、茄子の漬物の色を見た瞬間だけだね。あのときは、はッとなるよ。」</p>
+        <p>「ほんとに蚤には、あたしも困ったわ。一日だけでいいから、どっか蚤のいない所で眠ってみたいわ。」</p>
+        <p>こんな会話を二人でひそひそ洩しているときでも、私たちには今一つ、別の不安が沁み込んで来ていた。それは<date when="--04">四月</date>に疎開してきた妻が、<ruby><rb>僅</rb><rt>わず</rt></ruby>かよりない私たちの銀行の預金帳を、銀行焼失のためこちらで他の<placeName ref="#tokyo">東京</placeName>の銀行へ移管させたのが、<date when="--04">四月</date>以来いまだに<placeName ref="#tokyo">東京</placeName>から返送して来ないことだった。<date when="--04">四月</date>から<date when="--09">九月</date>まで、一銭の金銭も取れぬということと、それがまだいつまで続くか不明の故に、一家四人をひきつれて所持金なしの旅の空は、乞食同様で、考えたら最後ぞっと寒気がする。私の持って来た金銭がも早やいくばくもない折だ。この蚤から逃れる方法は、今のところ見当がつきかねる。誰も同様に困っているときとて、他人から借りる工夫もなりかねるこの不安さに対しては、援けなど求めようがない。赤の他人ばかりの中の、その日、その日の雨多いこのごろだ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>米の配給日――この日は心が明るくなる筈だのに、私ら一家は反対だ。配給所まで一里あって、そこを二斗の米を背負って来ることは不可能である。人夫を頼もうにも、暇のあるものは一人もない手不足だ。駅まで半道、それからまた半道、長男と妻と二人で行く。その留守に私は<persName ref="#dogen">道元</persName>の「心不可得」の部を読む。岩波版の<persName ref="#eto-sokuo">衛藤</persName>氏編中のものだが、この<persName ref="#eto-sokuo">衛藤</persName>氏は<placeName ref="#niigata">新潟</placeName>在に疎開中で、そこからときおり夫人が<persName ref="#sugai-kodo">菅井</persName>和尚の寺まで見えるとのことだ。<persName ref="#dogen">道元</persName>集も、私が和尚から貰ったもので、和尚も著者から貰ったもの。</p>
+        <p>「奥さんが先日も来られて、一度でいいから、白い御飯をお腹いっぱい食べてみたいと私に云われましたよ。あの<placeName ref="#nihon">日本</placeName>一の豪い仏教学者を食うに困らせるとは、何という仏教界の恥だろう。」と、<persName ref="#sugai-kodo">菅井</persName>和尚は私に憤慨を洩したことがある。私の妻は蚤に、この夫人は米に悩まされている最中だ。</p>
+        <p>私は<persName ref="#dogen">道元</persName>禅書の中からノートへ「<ruby><rb>夏臘</rb><rt>げろう</rt></ruby>」という二字を書き写した。叢林に夏安居して修業したる年数をいう、と末尾に註釈がある。他に、</p>
+        <p>奇拝――（弟子の三拝九拝に対して師の一拝の挨拶）<ruby><rb>有漏</rb><rt>うろう</rt></ruby>――（煩悩のこと）器界――（世界のこと）秋方――（西の方）</p>
+        <p>私は以上の五つを書き抜いてみて、次の随筆集の題を選びたく、思い迷っているとそこへまた<persName ref="#kyuzaemon">久左衛門</persName>が現れた。私は本を伏せまた二人で庭の竹林に<ruby><rb>対</rb><rt>むか</rt></ruby>い、しばらく黙って竹の節を眺めていた。「夏臘」という字と、「有漏」という字が、節の間を往ったり来たりする。そのうち、だんだん、「有漏」の方が面白く押して来たので、ひそかに舌の端に乗せてみながら、私は<persName ref="#kyuzaemon">久左衛門</persName>の顔を見た。</p>
+        <p>「和尚さんのことで、一寸。」と<persName ref="#kyuzaemon">久左衛門</persName>がいう。</p>
+        <p>今日は<persName ref="#sugai-kodo">菅井</persName>和尚の使いで来たのだ。この<persName ref="#kyuzaemon">久左衛門</persName>は前から、和尚の寺の<placeName ref="#shakado">釈迦堂</placeName>へ遠近から来る参拝人に、本堂の横の小舎で汁と笹巻ちまきを売っていた。それが資本となり彼が財を成した原因である。それ故和尚にだけは<persName ref="#kyuzaemon">久左衛門</persName>も頭が上らない。その和尚が私の所へ、おはぎを携げて遊びに見えてからは、<persName ref="#kyuzaemon">久左衛門</persName>も幾らか私への待遇が変って来て、今までは崩した膝を両手で組んでいたのも、このごろは、揃えた膝の上へ両手を乗せるまでになって来た。これは<placeName ref="#shakado">釈迦堂</placeName>のお蔭である。そういえば、この<persName ref="#sugai-kodo">菅井</persName>和尚の寺の<placeName ref="#shakado">釈迦堂</placeName>からは、私たち一家は思わぬ手びきを受けている。私の妻がまだ一度も行ったことのないこの村の<placeName ref="#shakado">釈迦堂</placeName>へ、実家のある街から汽車に乗り、参拝に来て、<persName ref="#kyuzaemon">久左衛門</persName>の小舎の笹巻を買ったついでに、このあたりに部屋を貸す農家はないものかとふと訊ねたのが、私にこの六畳を与えられた初めだ。私は今も山を廻った所にある<placeName ref="#shakado">釈迦堂</placeName>の上を通る度に、「よく見よこの村を」と、そっと<ruby><rb>囁</rb><rt>ささや</rt></ruby>かれているように思うのだが、一つはそのためもあって、早く<placeName ref="#tokyo">東京</placeName>へ戻ろうという気持ちは起って来ない。</p>
+        <p>「和尚さんはのう、あなたの家をこの村へ建てようじゃないかと、おれに云わしゃるのじゃがのう。どっか気に入った場所を探して、そういうて下され。そうしたら、村のものらでそこへ建てますでのう。」</p>
+        <p>甚だ話が突然なので私は答えに窮した。しかし、それだけでもう充分結構なことだ、深謝して辞退したきこと、<persName ref="#kyuzaemon">久左衛門</persName>にいう。しかし、この村には眺望絶佳の場所が一つある。そこが眼から放れない。その一点、不思議な光を放っている一点の場所が、前から私を牽きつけている。</p>
+        <p>それは私の部屋から背後の山へ登ること十分、<placeName ref="#kuranori">鞍乗</placeName>りと呼ぶ場所だ。そこは丁度馬の背に<ruby><rb>跨</rb><rt>また</rt></ruby>がった感じの眺望で、右手に平野を越して<placeName ref="#dewa-sanzan">出羽三山</placeName>、<placeName ref="#haguro">羽黒</placeName>、<placeName ref="#yudono">湯殿</placeName>、<placeName ref="#gassan">月山</placeName>が笠形に連なり、前方に<placeName ref="#chokaisan">鳥海山</placeName>が聳えている。そして左手の真下にある海が、ふかく喰い入った峡谷に見える三角形の楔姿で、両翼に張った草原から成る断崖の間から覗いている。この海のこちらを覗いた表情が特に私の心を牽くのだが、――千二百年ほどの前、大きな仏像の首がただ一つ、うきうきと漂い流れ、この覗いた海岸へ着いた。それに高さ一丈ほどの<persName ref="#shakyamuni">釈迦</persName>仏として体をつけたのが始まりとなり、以来この<placeName ref="#nishime">西目</placeName>の村の<placeName ref="#shakado">釈迦堂</placeName>に納ったのみならず、汽車で遠近から参拝の絶えぬ仏となった。どこか<placeName ref="#burma">ビルマ</placeName>系の風貌だが、この仏を信仰するものは米に困らぬという伝説があって、平和なときには毎日堂いっぱいの参拝人だとのことである。米作りの名人<persName ref="#kyuzaemon">久左衛門</persName>の小舎の笹巻の味もこの仏像の余光を受けて繁昌した。それもこれも、すべてはこの海の表情の中に包み秘められている絶景だ。<placeName ref="#mizusawa">羽前水沢駅</placeName>で降りて半里、私はここの<placeName ref="#kuranori">鞍乗</placeName>りの一箇所へ、炉のある部屋をひとつ自費で建てたくもなって来た。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>妻に部屋を建てる話をすると、私よりも乗り気である。しかし、ここでは、大工の賃金を米で支払わねばならぬとのことだ。それならも早や部屋も半ば断念した。野菜もこの村は自家の用を足すだけより作っていない。米作専門の農家ばかりで野菜を買うにはひと苦労である。魚は山越しの海から売りに来るが、米欲しさの漁夫たちの事故、先ず農家へ米と交換で売り、残りを私たちに持って来る。</p>
+        <p>ある朝、私が縁側で蚤を取っていると、裏からいきなり這入って来た農婦が、何やら意味の通じぬことを私に喋ったことがある。妻に翻訳させると、子供を白土工場へ入社させたいので、その履歴書を私に書いてくれという意味だった。その場で書いてやった返礼に、米一升をどさりと縁側に<ruby><rb>抛</rb><rt>ほう</rt></ruby>り出して農婦は帰っていったが、私の文筆が生活の資に役立ったのはこれが初めてだ。朝早く隣りから<persName ref="#tensaku">天作</persName>を誘う少年は私の書いた履歴書の主である。その声が寝床へ聞えると私も起きるようになった。またそこから野菜も頒けて貰えるようになったりした。米も無くなれば一升や二升はただでやるという。この農婦のことを<persName ref="#soza-emon">宗左衛門</persName>のあばというが、金を出すから米を売って貰いたいと妻が頼むと、手を横に振り振り、</p>
+        <p>「金は要らん要らん。米はやるやる。」</p>
+        <p>と、あばは云う。話のあまり良すぎることは、こちらもそれに乗るわけにもいかないだけ、この福運はこれで断ち消えになったも同様である。</p>
+        <p>「困ったわね。ああ云われちゃ、お米も買えないわ。」と妻は歎いた。</p>
+        <p>しかし、人の懐勘定をするように先ずあそこには米があるのだと、ちらりと覗いたことになって、ますます私は自分の文筆の力を妻に誇って笑った。</p>
+        <p>「でも、履歴書ならあたしだって書けるわ。」と妻は無念そうだ。</p>
+        <p>「しかし、何んだかあの男は字が書けそうな人だと、僕のことを<ruby><rb>睨</rb><rt>にら</rt></ruby>んだのだよ。あのあばは。睨ませたのはこの僕だ。これで小説を書くなんてことを知られちゃ、もう米も貰えないがね。」</p>
+        <p>「そうしたら、どうすればいいでしょう。お金も銀行から、いつ来るか分らないし、着物だって無くなって来たし、あたし困ったわ。」</p>
+        <p>「金が無くなれば<persName ref="#kawabata-yasunari">川端</persName>に電報を打ってやる。まだあるだろう。」</p>
+        <p>妻はほッとしたようだ。</p>
+        <p>この村に困ったことが起っている。去年、米の供出の場合、村割当量が個人割当に変ったとき、供出せられるだけすべし、すれば一日四合分配給すると命ぜられたことがある。皆そのつもりになって、どこの村より真先にある限り完納した。ところが、四合どころか全然配給なしになった。結果は米を作らせられただけで自身たち食う米がなくなり、そのため村全体でない家を救いあうという始末だ、そして、今はその余力の続き得る限界まで来かかった米不足の声声が、満ちて来ている。ただ望むは秋の新米の生れることばかりで、「勝つために」という標語を掲げて瞞着した供出振りに対し、名誉を得たのは、ただ一人供出係りの実行組合長だけだという実感で、非難をその名誉に向けて放っている。非難の的の組合長は、<persName ref="#sanuemon">参右衛門</persName>の妻の実家だ。またこの組合長は村で五位の、<persName ref="#kyuzaemon">久左衛門</persName>と税金が同額で、何にかにつけ敵に廻って来ていた折の今年になり、ついに<persName ref="#kyuzaemon">久左衛門</persName>から抜かれて来た。</p>
+        <p>「おれは何もかも知っとる。」と<persName ref="#kyuzaemon">久左衛門</persName>は私に云った。「あの組合長の<persName ref="#hyoe-mon">兵衛門</persName>は、駐在所へおれのことを、密告してのう。寺で笹巻売るというて、おれは駐在所へ呼びつけられた。おれは寺で笹巻売っても良いというから、完納してから売っていたのじゃ。はい、売りました、とおれは云うと、駐在所はのう、おれに同情してくれて、そんなこと今ごろするな、誰が報らせに来たか、お前には分っとるだろう、と云わしゃるから、はい、分っとります、とおれは云うた。はははは――密告したのじゃ。おれは、村のもののしていることを、何もかも知っとるでのう。おれだけが知っとるのじゃ。おれは、村の精米所の台帳を預っておるので、それを別に細かにみんな書き写して持っとる。どこにどれだけ米があるか、ないか、どこが無いような顔して匿しとるか、みんな知っとるのは、おれ一人じゃ、はははは――おれはいつでも黙って、知らぬ顔を通して来ているが、神も仏もあるものじゃ。それでおれは、みんながおれの悪口をいうと、いつか分る、おれが死んだら何もかも分る、そう云うて他は一切云わぬのじゃ。はははは。」</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>は笑ってからまた後で、</p>
+        <p>「神も仏もあるものじゃ。」と繰り返した。そして、顔を上げると、「おれは嫌われておるのでのう。おれの悪口ばかりみなは云うが、おれのことを分るときがきっと来る。おれは、何もかも細かに書いて仕舞っとる。」</p>
+        <p>この老人の長所は何より自信のあることだ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>夜の明けない前に、<persName ref="#kiyoe">清江</persName>の刈って来た真直ぐな萱の束を、小牛と小山羊が喰っている。強烈な匂いを放った刈草の解けた束に朝日が射し込み、獣の口の中へ、鋭くめり入る折れた葉の青さ。云いがたい新鮮さで歯を洗う草の露。――堆肥の上から湯気が立ち、その間から見える穂を垂れた稲の大群の見事さ。家の周囲をめぐっている水音。青柿の葉裏にちらちら揺れる水面の照り返し。台所には、里芋の葉で一ぴきの赤えいが伏せてある。</p>
+        <p>霽れたかと思うと海の方から降って来る。<ruby><rb>蓑</rb><rt>みの</rt></ruby>を着て庭掃除をしている農婦。あなごやえいの籠を背負い、栗の木のある峠を降りてくる漁婦の姿。これらが雨の中で、米と交換の売買をしている魚籠を、一人二人と集り覗く農婦の輪。もうどこも米がなくなって来ているので、がっかりした漁婦は私たちの縁側へ廻って来て、最後に魚籠をひろげた。</p>
+        <p>「銭でもええわのう。糸があれば、なおええが。」と悲しそうな声で漁婦はいう。</p>
+        <p>私たちは、あなごや赤えいを買い入れ、それを持って汽車で<placeName ref="#tsuruoka">鶴岡</placeName>の街まで出て、そこの親戚から交換で青物を貰って来るのだ。ここでは村と街とが反対の土産物だが、それほど金銭では野菜の入手が困難だ。米は勿論、味噌も醤油も金銭では買えない。それにも拘らず、ほそぼそながら一家四人が野菜を喰べていられるというのは、不意に近所から貰ったり、<persName ref="#kiyoe">清江</persName>が知っていて、そっと私たちにくれるからである。妻は毎日あちらに礼をいい、こちらに礼をのべ、ひそかに私が聞いていると、一日中礼ばかり云っている。あんなに礼ばかり云っていては、心の在りかが無くなって、却って自分を苦しめることになるだろう。実際、物乞いのようにただ乞わないだけのことで、事実は貰った物で食っている生活である。人の親切は有難いが、これが続けばそれを予想し、心は腐ってくるものだ。</p>
+        <p>「ほんとにお金で買えれば、どんなに良いかしら。あたし、お礼をいうのにもう疲れたわ。」と、ある日も妻は私に歎息した。</p>
+        <p>物をくれるのに別に人情を押しつけて来るのではない。ただ自然な美しさでくれるのだが、それなればこそ一層私たちは困るのだ。一度頭を昂然とあげて歩きたい。</p>
+        <p>「困るようなことはさせんでのう。」</p>
+        <p>と、このように呟いた<persName ref="#kyuzaemon">久左衛門</persName>の言は、今やまったく反対の意味で嘘になって来たわけだ。思いが現実から放れる喜びというものは、たしかに人にはあるものだ。恩を忘れる喜びを人に与えたものこそ、真に恩を与えたものの美しさだろう。間もなく私は<placeName ref="#tokyo">東京</placeName>へ戻り、忘恩の徒となり、そしてますます彼らに感謝することだろう。</p>
+        <p>農家のものの働きを知るためには、ある特定の人物を定め、これにもっぱら視線を集中して見る方が良いように思う。私は<persName ref="#kiyoe">清江</persName>の行動に気をつけているのだが、この婦人は一日中、休む暇もなく動いている。今は収穫前の農閑期だのに、<persName ref="#kiyoe">清江</persName>はもう冬の準備の漬物に手をかけたり、醤油を作る用意の大豆を大鍋で<ruby><rb>煎</rb><rt>い</rt></ruby>ったり、そうかと思うと草刈り、畠に肥料をやり、広い家中の拭き掃除をし、食事の用意、一家のものの溜った洗濯物、それに夜は遅くまで修繕物だ。自分の髪を<ruby><rb>梳</rb><rt>す</rt></ruby>くのは夜中の三時半ごろで、それを終ると、<ruby><rb>竈</rb><rt>かまど</rt></ruby>に焚きつけ、朝食の仕度、見ていると眠る暇は三時間か多くて四時間である。驚くべき労働だ。</p>
+        <p>「少し遊びなさいよ。」</p>
+        <p>と私は冗談を云って茶を出すことがあるが、茶は嫌いだと<persName ref="#kiyoe">清江</persName>はいう。農家のものの働きに今さら感心することが、おかしいことだと人はいう。定ったことだからだ。しかし、定ったことに感心し直さないようなら定ったことは腐る。よく働くことを当然だと思う心が非常な残酷心だと思い直さねば、生というものは感じることは出来ない。都会が農村から復讐を受けているといわれる現在、善いことは復讐を感じたその心の動揺であろう。不安、動揺、混乱は、まだ失われぬ都会人の初初しい徳義心の顕れだ。それにしても、私は眠い。蚤のために私は一日三時間より眠っていない。</p>
+        <p>私たちペンを持つものの労働は遊ぶ形の労働だが、人はいまだにこれを労働と思わない。まことに遊ぶ形の労働なくして抽象はどこから起り得られるだろう。また、その抽象なくして、どこに近代の自由は育つ技術を得ることが出来るだろうか。私は感歎すべき農家の労働にときどき自分の労働を対立させて考えてみることがあるが、いや、自分の労働は彼らに負けてはいないと思うこともたまにはある。</p>
+        <p><placeName ref="#chosen">朝鮮</placeName>のある作家に、ある日、文学の極北の観念として、私は<persName ref="#mallarme">マラルメ</persName>の詩論の感想を洩したことがある。独立問題の喧しくなって来ていた折のことだ。</p>
+        <p>「<persName ref="#mallarme">マラルメ</persName>は、たとえ全人類が滅んでもこの詩ただ一行残れば、人類は生きた甲斐がある、とそうひそかに思っていたそうですよ。それが象徴主義の立ち姿なんですからね、もし芸術を人間のそんな象徴と解したときに、君にとって独立ということは、あれははっきり政治ということになるでしょう。」</p>
+        <p><placeName ref="#chosen">朝鮮</placeName>の作家は眼を耀かせて黙っていた。しかし、この作家はもう<placeName ref="#chosen">朝鮮</placeName>へ去っている。</p>
+        <p><placeName ref="#nihon">日本</placeName>の全部をあげて汗水たらして働いているのも、いつの日か、誰か一人の詩人に、ほんの一行の生きたしるしを書かしめるためかもしれない、と思うことは誤りだろうか。</p>
+        <p><placeName ref="#omi">淡海</placeName>のみゆふなみちどりながなけば心もしぬにいにしへ思ほゆ（<persName ref="#kakinomoto-no-hitomaro">人麿</persName>）</p>
+        <p>何と美しい一行の詩だろう。これを越した詩はかつて一行でもあっただろうか。たとえこのまま国が滅ぼうとも、これで生きた証拠になったと思われるものは、この他に何があるだろう。これに並ぶものに、</p>
+        <p>荒海や<placeName ref="#sado">佐渡</placeName>によこたふ天の川（<persName ref="#matsuo-basho">芭蕉</persName>）</p>
+        <p>今やこの詩は実にさみしく美しい。去年までとはこれ程も美しく違うものかと私は思う。</p>
+        <p>こういうときふと自分のことを思うと、他人を見てどんなに感動しているときであろうとも、直ちに私は悲しみに襲われる。文士に憑きもののこの悲しさは、どんな山中にいようとも、どれほど人から物を貰おうとも、慰められることはさらにない。さみしさ、まさり来るばかりでただ日を送っているのみだ。何だか私には突き刺さっているものがある。</p>
+        <p>愁ひつつ丘にのぼれば花茨（<persName ref="#yosa-buson">蕪村</persName>）</p>
+        <p>と誰も口誦むのは理由がある。この句は人と共に滅ぶものだ。耕し、愛し、眠り、食らうものらと共に滅んでゆくものでは、まだ美しさ以外のものではない。人の姿などかき消えた世界で、次ぎに来るものに異様な光りを放って謎を示す爪跡のような象徴を、がんと一つ残すもの。それはまだまだ<placeName ref="#nihon">日本</placeName>には出ていない。人のいた限り、古代文字というものはどこかに少しはあったにちがいなかろうが。</p>
+        <p>しかし、私は米のことを書こう。滅ぼうとしてもまだここに人人が喰い下ってやまぬ米のことを。どんなに人人が自身に嫌悪を感じようとも、まだ眼を放さず見詰めている米のことを。これは農村のことではない。谷から、川から、<ruby><rb>山襞</rb><rt>やまひだ</rt></ruby>から、鬼気立ちのぼっている焔のことだ。私は地獄谷を書きたい。今ほどの地獄はまたとないときに、その焔の色も色別せず米を逐う人人の姿は、たしかに人が焔だからだ。自身の中から燃えるものの無くなるまで、火は火を映しあうだろう。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>雨だ。こんな日の雨天は、稲の花が結実しようとしている刻刻のころだから、朝夕が涼しく、日中がかッと暑くなくてはならぬものだ、と<persName ref="#kyuzaemon">久左衛門</persName>が私にいう。もし今日のように雨天なら、実の粒が小さくて、一升五万粒を良とすべきところも、七万粒なくては一升にならぬ。これは不作だと。</p>
+        <p>一粒の米を地に播くと三百粒の実をつける。一升五万粒を得るためには、百六十六粒の種子が必要となるわけだが、一反で二石の収穫を普通とするここでは、供出量を一反につき二石と命ぜられたとのことである。それなら来年度の種子米さえないわけだ。しかしながら、二石とり得られるのはすべての家からではない。一反につき一石七八斗の家が多い。良くて二石二三斗。それだと供出をするのに、どうしても無い家はある家から、不足の分二三斗を借りねばならず、そうして完納をすませた結果は、良くとれた家の米を無くしてしまい、現在のこの村の悲鳴となって来たのである。その上に約束の配給がないとすれば、日日自分の喰う米を借り歩くのも、どこから借りるかが問題だ。ところが、人手があって勉強をしたものの家は、二石五六斗も採れたのが中にはある。この家だけが供出もすませ、人にも貸し、なお二三斗を残して自分の生活を楽にしたのだが、今はこれをさえ人人は狙い始めた。この狙われているのが、別家の<persName ref="#kyuzaemon">久左衛門</persName>だ。本家の<persName ref="#sanuemon">参右衛門</persName>の方は借り歩き組の代表格で、貧農派はここの炉端を集会所にしている関係上、不平はいつもこの炉端の火の色を中心に起っている。</p>
+        <p>「もうじきに共産主義になるそうじゃ、そうなれば面白いぞ。」</p>
+        <p>と、こういう声もときどき、誰か分らぬながら、この火の傍から聞えて来る。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>の家へ集るものは、自作組で上流派だ。この家は酒の配給所をもかねているから、集る炉の中の火の色も、燃え方が<persName ref="#sanuemon">参右衛門</persName>の家のとは違っている。ここは酒あり米ありの城砦だ。今は<persName ref="#kyuzaemon">久左衛門</persName>の物小舎は、この上流組からも狙われているのである。酔い声が少しでもここから洩れて来ると、どこの炉端の鼻もすぐその方へひん曲る。</p>
+        <p>「ふん、どこへ匿してあるのかの。」</p>
+        <p>と、<persName ref="#sanuemon">参右衛門</persName>の方の集りは、いら立たしげだ。私はよく雨天のこんな所を目撃したが、そのときの男たちの眼の色は、米のときとは少し違って狂的だ。</p>
+        <p>「あの調子だと、朝から続けて飲んどるのう。」と一人がいう。黙り込んで聴き耳を立てていてから、また一人が、「ようあるこったのう。」とぶつりという。</p>
+        <p>もううずうずしている別の一人が、<ruby><rb>自棄</rb><rt>やけ</rt></ruby>に茶ばかり飲んでいる傍で、<persName ref="#sanuemon">参右衛門</persName>は、煙管を炉縁へ叩きつけてばかりいる。酔い声が少し高まって聞えると、彼の顔は苦味走って青くなり、額の下で吊り上った眼尻にやにが溜る。不機嫌なときの<persName ref="#sanuemon">参右衛門</persName>ほど露骨に不満を泛べる我ままな顔は少いであろう。しかし、これが一旦和らぐと、子供も匐いよりそうな温和な顔に変って来る。鬼瓦と仏顔が一つの相の中で揉みあっている彼の表情の底には、<persName ref="#abe-no-sadato">貞任</persName>や、山伏や、親王や、山賊やが雑然とあぐらをかいて鎮座した、<placeName ref="#nishi-haguro">西羽黒</placeName>権現の何ものかを残している。ここは古戦場だが、彼の表情も、争われず霊魂入り交った古戦場だ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>十米の眼前に雨が降りつつもこちらは照り輝いている空。山から幕のように張り辷って来る驟雨。稲の穂の波波うち伏した幾段階。――釣の一団が竿を揃え、山越えに行く足なみ。その尖がった竿の先がぶるぶる震えつつ日にあたっている。白く粉をふいた青竹の節節の間を、ゆれ過ぎてゆく釣竿の一団の中に、私の子供も一人混っている。この子はいま釣に夢中だが、ほとんど釣れたことがないに拘らず、餌の海老ばかり買っては盗られている。魚が盗るのか、人が盗るのか、答えはいたって不明瞭なので、ある夜、私はこれを煮て食べてみると、これは磯の魚よりはるかに美味だった。以来ときどき盗人になるのはこの私だ。野菜が少なかろうと、海で山越しの魚がなかろうと、もう恐るるに足りない。実際、これさえあれば――私は全くこんなことに興奮するほど、日日の生活が不安だったのだろうか。しかし、たしかに、釣餌の小海老を発見してからは私は勇気が出て来た。手で受ける半透明の海老一寸のこの長さは、焔を鎮める小仏に似て見える。何と私はこのごろ汎神論的に物が仏と映るのだろう。<placeName ref="#nihon">日本</placeName>の思想はいつもここで停止して来たようだ。</p>
+        <p>今、この村にとってもっとも必要なものはだい一に米、以外には塩と布切れだ。<persName ref="#kiyoe">清江</persName>が今朝早くから家を出たまま、一度も姿を見せぬのは、隣村の早米の田を持つある家へ、稲刈に行っているからだと、妻は云った。</p>
+        <p>「もう稲刈か。」と私はおどろいて訊ねた。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>たちには食べる米がないので、自分の家の収穫時まで喰いつなぐ米を、早米の田を持つ家の稲を刈り、そしてそこから借りるのだとの事である。なるほど、そういう自由な借米法があれば、<ruby><rb>周章</rb><rt>あわ</rt></ruby>てずともすむわけだと思った。無理な供出の不足を補うために、こうして他人の田の厄介になりつつある農家は非常に多いそうだが、それはとにかく、今年の米は早くも田から出て来たのだ。敗戦の底から地のいのちの早や噴き湧いて来ている目前の田畑が、無言のどよめきを揚げ、互いに呼びあうように見える。まだ去年までなかったものが生れているのだ。のっそりと<ruby><rb>噯</rb><rt>おくび</rt></ruby>をしたり、眼をぱちくりさせたり、<ruby><rb>鬣</rb><rt>たてがみ</rt></ruby>を振ってみたり、――それにもう刈りとられて仕舞うその早さ。あくなき人の残酷さ。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>は脚に瘍が出来て一晩眠れずに苦しみ通し、今日は遠方まで医者通いだ。<persName ref="#kyuzaemon">久左衛門</persName>は、茄子畑へ<ruby><rb>明礬</rb><rt>みょうばん</rt></ruby>を撒けば来年も連作が出来るので、茄子にしようか、馬鈴薯にしようかと朝から迷っている風だ。</p>
+        <p>この夜、砂糖二十匁ずつ配給。夕方の六時から十一時まで、皆を並ばせた前で、計ってみたり減らしてみたり、最後に五百匁が足りなくなると、また皆のを取り上げ、計り換えて減らしたり。村へ甘さ一滴落ちて来るとこんなものだ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>馬の足跡にしみ込んだ雨水に浮雲の映っている泥路、この泥路を一里、大豆の配給を受けに妻と私と二人で行く。配給所へ着いてもまだ肝心の豆が着いていない。群衆は居眠りして待っている。すると、そのとき野末の遠い泥濘の真ん中で、大豆を積んで来た牛車が立往生して動かないのが見えた。「あれだあれだ。」という声声にみな眼を醒して望む。しかし牛は突いても打っても動く様子がない。しびれを切らした群衆は、牛が動いては停るたびに、いら立ち騒ぎ、手んでに牛をぶっ叩く真似をする。牛車はちょっと動いたかと思うと、またすぐ停る。「えーい、もう、腹が立つう。」と叫ぶ農婦があった。「歯がいいッ。」と、足をばたばたさせるもんぺがある。自転車で飛び出すもの。空腹で帰って行くもの。皆ぷんぷん膨れ返って待っている中を、牛はのたりのたりと、至極ゆっくり動いてくる。前後待つこと三時間、ようやく私と妻は五升の豆を袋に入れ、また一里の泥路を帰って来た。この路は眼を遮ぎるもののない真直ぐな路のため、歩けど歩けど縮らぬ。十時に家を出て帰り着いたのが三時半だ。昨日夕食を摂ってからまだ私は何も食べていない空腹に、ひどく砂の混った屑豆は怨めしい。それに、もう虫の奴がさきに半分も喰ってしまっている。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>の長男の嫁は無口でよく働く。昨旦二里ほどある実家の秋祭に帰ったが、一晩宿りで百合根、もち米、あずき、あられ、とち餅、白餅などを背負いこんで戻って来ると、こっそり裏口から持って来てくれた。妻はほくほくして礼を云うついでに、紙包を渡そうとしたが、どうしても受けとらない。黙って跣足で来て、どさりと縁側へ転がして、また黙ってすたすた帰っていった。いつも頬がぼっと赭く、円顔で、<persName ref="#kisshoten">吉祥天</persName>のような胸のふくらみ、瑞瑞しい新鮮な足首だ。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>の家の長男の嫁は、良人が出征のため夜だけは寝に来るが、昼間は朝から実家へ帰りきりである。<persName ref="#kiyoe">清江</persName>が嫁の実家へ行ってみると、誰もいない家の中で、嫁ひとり腹痛で七転八倒している最中だとの事である。嫁競争、息子競争の本家、別家を通じて、今のところ第一等を占めつづけているのは白痴の<persName ref="#tensaku">天作</persName>であろう。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>青柿いよいよ膨れてくる。雨滴に打たれて絶えず葉を震わせている<ruby><rb>羊歯</rb><rt>しだ</rt></ruby>。水かさを増した川で鮒釣りする蓑姿。山鳩のホーホーと鳴く声。板の間に転っている茄子に映った昼間の電灯。森の中から荷馬車で帰ってゆく疎開者の荷が見える。雨の庭石の上を飛ぶ蛙。鯉が背を半ばもっこり水面から<ruby><rb>擡</rb><rt>もた</rt></ruby>げたまま、雨の波紋の中を泳ぎ廻っている――</p>
+        <p>千年の古さを保った貴品ある面面の石塊。どの屋根の上にも五つ六つの千木を打ち違え、それを泛き上らせた霧雨がぼけ<ruby><rb>靡</rb><rt>なび</rt></ruby>いて竹林に籠っている。木を挽く音。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>雨はやまない。この雨で稲は打撃だ。ここで一時間でも良いさっと照らないと、稲は実にならず、茎ばかり肥る憂いあり。困ったことだという憂色が全村に満ちている。</p>
+        <p>主婦の<persName ref="#kiyoe">清江</persName>は板の間の入口で、明るみの方を向いて坐り、<ruby><rb>田螺</rb><rt>たにし</rt></ruby>を針でほぜくっている。<persName ref="#sanuemon">参右衛門</persName>は朝から憂鬱そうに寝室に入って寝てしまう。山鳩のホッホー、ホッホーと鳴く声に、牛がまた丁度、空襲のサイレンと同じ高まりで鳴きつづける。</p>
+        <p>午後――雨に濡れた青紫蘇をいっぱいに積み上げた中で、<persName ref="#kiyoe">清江</persName>はその葉を一枚ずつむしりとる。芳香があたりに漂っていて、窓から射すうす明りに葉は濡れ光っている。紫蘇の青さが雨滴を板の間にしみ拡げてゆく夕暮、雨蛙が鳴き、<ruby><rb>笊</rb><rt>ざる</rt></ruby>につもった紫蘇の実の重い湿りにあたりが洗われ、匂いつつ夜になる。ホッホー、ホッホーと、山鳩のまだ鳴く雨だ。穏かでない、重苦しい夜の雨――</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>どこの農家もますます米が無くなって来た様子だ。馬鈴薯と南瓜で食べつなぐ家が多くなる。こんなとき芋を売る家は、米があるからだとすぐ分る。去年の供出に際して、持っているのに無い顔を装ったものの、露われてゆくのも今だ。米が無いということは、一種の誇りになり変って来ているのも今だ、各自の米を借り歩く不平貌に、ある物まで伏せてみせねばならぬ、急がわしげな歩調の悩みもある。明らかに有ることの分っている家へ集まる恨みから、超然とはしがたい苦しさや、いや、たしかに自分の家だけは無いという堅苦しい表情など、それらが雨の中をさ迷い歩く暇の間も、村の共同精米所だけは、どこにどれだけあるか、無いかを<ruby><rb>睥</rb><rt>にら</rt></ruby>んだ静けさで、ひっそりと戸を閉めつづけている無気味さだ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>早朝の空を見上げ、雲間から晴れの徴候を見てとると、いつも黙っている<persName ref="#kiyoe">清江</persName>もひと声、</p>
+        <p>「もやもやしてるのう。天気だ。」</p>
+        <p>と云う。しかし、それも間もなくかき曇って来る。</p>
+        <p>二三日前からの悪天とともに続いて来ている不平が、村をかく苦しみに落した実行組合長の<persName ref="#hyoe-mon">兵衛門</persName>に対い、集中して来た。<persName ref="#sanuemon">参右衛門</persName>の家の炉端に集った貧農組も、口口に彼に悪態をついている。<persName ref="#kiyoe">清江</persName>の実家の攻撃されているこの苦境を切り抜けようとする<persName ref="#sanuemon">参右衛門</persName>の苦策は、誰より先に、自分自身が彼を攻撃することだ。妻と村とに絞めつけられた脂肪が、赭黒く顔に滲み出し、髭も伸び放題だ。</p>
+        <p>「もう死ぬ。もう死ぬ。」</p>
+        <p>そんな声も、米の無い借り歩き組の主婦の口から洩れて来る。<persName ref="#kyuzaemon">久左衛門</persName>の門口や裏口は、こんな主婦たちに攻められ通しだが、今はもう誇張ではない、雨の中の<ruby><rb>呻</rb><rt>うめ</rt></ruby>きになった「もう死ぬ。」だ。</p>
+        <p>夜中から暴風になる気配がつよく、ざわめく空の怪しげな生ぬるさ、べとついた夜風が部屋の底を匐っている。眠ってしまって誰もいない炉灰の中から、埋めてある薪がまたゆらゆらとひとり燃え始めた。起きているのはその焔ばかりだ。広い仏壇の間では、宵に<persName ref="#kiyoe">清江</persName>の摘み終えた紫蘇の葉が、縮れた窪みにまだ水気を溜めて青青と匂っている。</p>
+        <p>私は眠れぬので幾度も起きて雨雲を見た。ますます暗くなるばかりの雲の迅さ、黒い速度のような鈍い<ruby><rb>唸</rb><rt>うな</rt></ruby>りをあげて通る風に背を向け、炉端にひとり坐っていると、いつか読んだ、「<ruby><rb>生</rb><rt>な</rt></ruby>まのままの真は、<ruby><rb>偽</rb><rt>に</rt></ruby>せよりも偽せだ。」という<persName ref="#paul-valery">ヴァレリイ</persName>の言葉がふと泛んで来た。何という激しい爆裂弾だろうか。いよいよ来るぞと私は思った。何が来るのか分らぬながら、とにかく来ると思って、焔を見ながら坐っていた。</p>
+        <p>生まのままの真は偽せよりも偽せだ。（<persName ref="#paul-valery">ヴァレリイ</persName>）――この言葉はたしかに高級な真実である。しかし、この高級さに達するためには、どれほど多くの嘘を僕らは云い、また、多くの人の真実らしいその嘘を、真実と思わねばならぬか計り知れぬ。それにしても、<persName ref="#paul-valery">ヴァレリイ</persName>は死んだと聞く。真偽は分らぬが、風の便りだ。嘘だと良いが。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>暴風で竹林が叫び、杉木立が風穴をほって捻じまがっている。山肌が裏葉をひんめくらせて右に左に揺れ動き、密雲の垂れ込んだ平野の稲は最後の叫びをあげている。頭が重く痛い。牛のもうもう鳴きつづけているのが警笛のようだ。炉の中では、焚火が灰の上を匐い廻って鍋が煮えない。開けた雨戸をまた閉める音。<ruby><rb>喚</rb><rt>わめ</rt></ruby>き狂う風で、雨も吹っち切れて戸にあたらない。</p>
+        <p>農村だのにどこもかしこも米がなくなっていて、もう死ぬ、もう死ぬと、露骨にそういう声声の聞えているところへこの雨だ。私のいる家の亭主は長男の嫁の家へ米借りに出かけて行く。労働の出来ないこんな悪日を利用して、主婦の<persName ref="#kiyoe">清江</persName>は味噌取りに駅まで行き、一日がかりでその傍の、仏の口というものを聞きに行く。春秋二度、毎年ある巫女から、自分の思いためらう心配事について聞き質しに行くのだ。この<persName ref="#kiyoe">清江</persName>の心ひそかな心配事というのは、およそ私に想像はついているが、帰ればそっと妻に<ruby><rb>訊</rb><rt>き</rt></ruby>かせてみたい。私には<persName ref="#kiyoe">清江</persName>も云わないだろうから。</p>
+        <p>他人の心の奥底の心配ごとをこっそり覗きたいと思う悪心は、この主婦の<persName ref="#kiyoe">清江</persName>に限って私は働かせてみたいのだ。この主婦の思い願うものは驚くほど質実単純なことにちがいないのだが、その心の底から、私は鎌倉時代の女性の心をまともに感じてみたいのだ。ここはすべてが鎌倉時代とは変っていない。風俗、習慣、制度、言語、建築、等等さえも――ただ変っているのは、精米所と電灯があるぐらいのことだろう。今どきにしてはまことに珍らしい村だ。</p>
+        <p>暴風が鎮って来ると、真っ先に活動し始めたのは蝉だ。それがまだ羽根の具合が悪いのかぴたりと停ると、別のがずっと高い旋律で鳴き出した。そのうち、あちこちからまた蝉の声が満ちて来て、すっかり風雨もやんだ。池は濁っていて鯉が水面に浮いている。しかし、それもしばらくだ。午後からの暴風は、<placeName ref="#tokyo">東京</placeName>地方から<placeName ref="#toyama-ken">富山県</placeName>下を廻り、<placeName ref="#nihonkai">日本海</placeName>に添ってこの<placeName ref="#shonai">庄内地方</placeName>へも廻って来たと、ラヂオは報じている。</p>
+        <p>屋根の煙抜きの吹き飛ぶ家。電線がふっ切れ、立木が根から抜け倒れる。乱舞する木の葉、枝ごとち切れ飛ぶ青柿。真垣は捻じ倒され、ごうごうと鳴りつづける森林。実をつけた桐が倒れる。池の水面は青落葉でいっぱいになって、鯉も見えない。</p>
+        <p>いよいよ今年は不作だ。この決定的な暴風の中でまた米の問題が色濃くなる。朝から米を借り歩いている農夫らが、私のいる<persName ref="#sanuemon">参右衛門</persName>の炉端へ、木の葉のように落ち溜って来る。雨戸を閉じきったうす暗い部屋の中で、また毎日のようにいつもの不平をぶつぶつと呟きつづける。どこそこは米が有るのに、無いような顔をして借り歩いているとか、いや、あそこは事実ないと弁解してやるもの。しかし、あ奴は米がないと云ってるくせに、豆の配給となると、米より豆の方が良いといって、第一番に跳んで行くではないかと怪しむもの。いや、あそこへ米を借りに行ったら、兄だのに二升の米さえ弟に渡さなかったという。それで<persName ref="#sanuemon">参右衛門</persName>は気の毒がって、自分がいま嫁の実家から借りて来たばかりの一斗分を、二升それに貸してやる。</p>
+        <p>「このごろのようなことは、この村始まってからないことじゃ、良い語り草になるじゃろう。」と一人がいう。</p>
+        <p>雨戸や板戸へ<ruby><rb>敲</rb><rt>たた</rt></ruby>きつけられる木の枝。樹木のめりめり倒れる音。鳴きつづける山鳩の憂鬱な声。右往左往して揺れ暴れる稲の穂波。割れ裂けるガラス窓。水面の青葉をひっ冠ったまま跳ね上る鯉。</p>
+        <p>そこへ私にここ<persName ref="#sanuemon">参右衛門</persName>の一室を世話してくれた別家の<persName ref="#kyuzaemon">久左衛門</persName>が這入ってくる。この老人の完納者は、朝から米を借りにくるものらを断りつづけ、疲れはてた様子で、いつもより早口になっている。声も高い。</p>
+        <p>「死ぬ、死ぬ、いうて、朝からもう、来るわ来るわ。米を貸してやるのは人情だ。けれども、毎年貸してばかりで、借りる方は、借りるのを当然だと思うて有難がりもしやしない。今年も貸してやるとなると、借りたものが助かって、貸したものが死ぬじゃないか。死ぬなら共倒れになりたいものじゃ。借りたものだけ助かって、おれだけ死ぬのはおれはいやだ。」</p>
+        <p>「それはそうだのう。」と一人がぼんやりした声でいう。</p>
+        <p>「もうこうなれば、誰も米がないということにするより仕様がない。あれがある、これがないといっていたんでは、始まらないじゃないか。あっちから貸せ、こっちから貸せでは、もうおれの米だって、いくらもないわ。新米が出たら返すというが、古米を貸して新米で返されたんじゃ、一升五合と一升二合との替えことで、話にもなるまい。古米は古米で返して貰わねば、ま尺に合わぬわ。」</p>
+        <p>なるほど、新米一升と古米一升では、炊き増えする古米を貸したものの方が、はるかに損をするということ。これは私には分らなかった。外から観ていただけでは分らぬ多くのことが、山積している日日だ。</p>
+        <p>「だいいち、実行組合長がこんなことは分っていた筈だろ。」</p>
+        <p>と<persName ref="#sanuemon">参右衛門</persName>がいう。この組合長は彼の妻の実家だ。妻の<persName ref="#kiyoe">清江</persName>を守る意味でも、<persName ref="#sanuemon">参右衛門</persName>から先だって大きな声で攻めねばならぬ義理があるのだ。</p>
+        <p>「組合長が米を出せ出せというて、みんな出させたからには、責任を負う覚悟があっていうべきだ。それに自分が借りられると、米がないから出せぬというのは、実行が伴なわぬじゃないか。自分の食うべきものまでやってこそ、人にも出せといえるのだ。自分だけが損をせず、村に完納させた名誉だけを取ろうとするのは、虫が良すぎるというものだ。誰もこの村で食えないものは、一人もなかった。」</p>
+        <p>「そうだ、そんな貧乏なものはいなかった。」とまた一人がいう。</p>
+        <p>「それならば、自分だけ損をしないように工夫するのは不法というものじゃ。人に損をさすなら、自分もそれだけ損するが良いのじゃ。」</p>
+        <p>そこへ、主婦の<persName ref="#kiyoe">清江</persName>が仏の口を聞きに行って帰って来る。また実家の組合長が矢の表面に立たされていると感じたか、炉の傍へは近よらない。</p>
+        <p>農家のものらは、少ない言葉で抜きさしならぬ理窟をいう。自分の領分以外は世界のない綿密さだ。遠い過去からの集団の結集した総能力の中へ埋没した訓練で、自分の手がけた土地の実状に関しては、厳密な設定と等しい計算力を持っている。この頭の良さは、小さな米粒の点と、田の線からなる幾何学とをせずにはいられぬ代代の習慣により、自然に研ぎ磨かれて来ているためであろう。農家を愚鈍と思うものは、ここの言葉の不必要さを知らずに愚鈍としてすます、習慣の誤りだ。空想が少しもなく、天候の示す方向に対して実証を重んじ、土壌の化学と種子の選定以外にはあまり表情を動かさない着実さが、心理の隅隅にまで行きわたっている。まことに言葉以上の記号で生活している最上級の音楽形式がここにある。これを泥臭とばかりに見ていた自然主義は、自身の眼が根柢に於てあまりに自然主義だったというべきだ。</p>
+        <p>都会人は農家をけちんぼだと、誰も云って来た習慣があるが、それも誤りだ。都会人の握って来た一銭と、農家のものの握った一銭とは、金銭の通用額は同じだとしても、質が違っている。ここのは真実を実証した肉体の機械のごとき一銭で、投機心から得た混濁したものは何もない。おそらく、都会人の一円と農家の一銭とを同額としてみて、初めて、ようやぐ金銭に対する心遣いに均衡ある判断が下せるかもしれない。農家にとって、金銭は天候の甘露であり、幾何学の重みであり、筋肉に咲いた花であり、祭壇に飾る神聖な象徴物であろう。あるいは、神かもしれない。これを粗末に扱えるものではなく、けちんぼにならざるを得ぬ崇高なものをここに見ぬ限り、農村論は実際は不可能だ。</p>
+        <p>本家の<persName ref="#sanuemon">参右衛門</persName>の妻の<persName ref="#kiyoe">清江</persName>が、別家の<persName ref="#kyuzaemon">久左衛門</persName>をひそかに攻撃する理由は、百姓のくせに笹巻などを売って商売をするから悪いという。商売して金銭を貯めるなら誰でも溜める。それで威張られては農村のしきたりを<ruby><rb>紊</rb><rt>みだ</rt></ruby>すだけだと、暗に憤りを私の妻にほのめかすことがある。また、<persName ref="#kiyoe">清江</persName>の実家の組合長がみなの攻撃を受けているのに対しても、みなが組合長になれなれというからなったので、厭だというのを無理にしたのだと弁護する。しかし、今は、村のものは、誰かを攻撃していなければ、じっとしていられないときである。これはどこでも同じであろう。正、不正などということではない。夫婦喧嘩一つでさえも、眼に見えたほんの些細な、悪結果の一つ手前の原因だけを追窮して、事足れりとするものだ。やっつけられる番のものは、現在では、人の気持ちをそれだけ救っていることになっているのだ。私は組合長の人柄について知るところは少しもないが、おそらく悪い人ではないだろう。あるいは、この村では一番豪い人物かもしれないと想像されるふしも感じる。一度調査してみよう。</p>
+        <p>仏の口を聞きに行った<persName ref="#kiyoe">清江</persName>の心中というのを妻に聞かせた。<persName ref="#kiyoe">清江</persName>の長男のこと、音信のまったくない<placeName ref="#karafuto">樺太</placeName>に出征中の長男は、<date when="--08">八月</date>に負傷して今病院に入院中だが、<date when="--10">十月</date>になれば帰って来るという。次ぎに、先日預り主に返した小牛の病気について、――この小牛は糞が牛らしくなく固くて、胃腸が駄目だという。このようなことを巫女の口を通した言葉として<persName ref="#kiyoe">清江</persName>が言うとき、それを傍で聞いている末の子供の十二になるのが、恐がって、ぴったり<persName ref="#kiyoe">清江</persName>の膝に喰っついたまま離れない。電灯の消えた部屋は真暗で、炉の火だけ明明と揺れている。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>暴風はすんだ。稲は倒れてしまったが、雨が風に吹き込んでいたために、穂に重みが加わり、頭をふかく垂れ下げて互いに刺さり込みあったその結果、実が風に擦り落されずに済んだ。これが風だけだと擦れあい激しく、実が地に落ちてしまって去年のようになるという。しかし、稲の代りに野菜類の実がやられた。稲さえ無事なら先ず今年の米は不作としても、危機だけは切りぬけられたというものだ。</p>
+        <p>暴風の後は上天気だ。米のない連中は早稲の刈り入れにかかっている。すでに刈り入れをすませてあった早稲の分は、充分だったといわれなくとも、何とか米にはなる程度に乾いている。少しの量だが、新米の出るまでの喰いつなぎには役立つほどだ。これで村から、死ぬ死ぬという声だけは聞かずともすむ。</p>
+        <p>「去年よりはまだましだ、去年は風ばかしだったでのう。」</p>
+        <p>と、空を見上げ田を眺めて洩す明るい笑顔が見える。次ぎの雨の来ない今のうちに刈り取らねば――</p>
+        <p>「ああ、今年は早稲の勝ちだ。暴風にあわずにすんだのは早稲だけだ。」</p>
+        <p>とそういうものもある。解除の軍隊の眠むそうな顔いっぱい満たした汽車が、ひれ伏した稲穂の中を通ってゆく。</p>
+        <p>紫苑の花、暴風で吹きち切れた柿の葉の間から、実が眼立って顕れてくる。つらなる山脈のうす水色の美しさ。</p>
+        <p>「農業の労働はたいへんな労働だが、始終やっているものには、そう特にむずかしいものではないのう。そんでも、やったことのないものには、これは、とても出来ることではないね。」と<persName ref="#kyuzaemon">久左衛門</persName>がいう。</p>
+        <p>一冊の本さえ満足にある家は少ない。読みたいと思うよりも、そんな興味を感じる閑はないのだ。そのくせ細かい話も、話し方ではよく通じる。私はあるとき、これで村に一台新しい農具の機械が必要だという場合、どんなことに使う機械が一番必要かと訊ねたことがあるが、すると六十八にもなるこの無学な<persName ref="#kyuzaemon">久左衛門</persName>は、</p>
+        <p>「それは検討せねばならぬことだのう。」</p>
+        <p>と、言って暫く考え込んだ。検討という言葉は、辞苑を引いても書いてない新しい言葉だ。またこの老農は、社会上の出来事にもなかなか興味をもっていて、あるとき、</p>
+        <p>「おれは幾ら聞いても分らんことが一つあるが、労農党と社会党ということだ。あれだけは、どこがどう違うのか、さっぱり分らん。」と云ったことがある。私もこの二つの違いを説明するのに骨折れた。</p>
+        <p>このあたりの農夫は、自分たちを労働者だとは思ってはいない。むしろ、米を製造する製作者で、家主という大将だと思っている。それは小作人でもそうだ。ただ村には共有の山林があって、先祖伝来のこれが財産だが、共同の山林であるから、その所有権を有っている先祖伝来派は利益の別け前に預るが、分家だけは除外されて来ているために、村内の同じ株内でも、母屋と分家との二派の対立が生じている。殊に村外から入って来た別家の<persName ref="#kyuzaemon">久左衛門</persName>などは、この限りに非ずである。分家派たちは、村の共同事業のすべてには同じように金を出させられ、山林からの収入の恩恵だけは別というのが、話が分らぬという不平がある。実行組合長は、この点に対しても、別家派の<persName ref="#kyuzaemon">久左衛門</persName>と対立し、先祖伝来派の旗頭で、随って本家の<persName ref="#sanuemon">参右衛門</persName>と共通の権威を主張して譲らない。<persName ref="#kyuzaemon">久左衛門</persName>が、田畑や山林で頭を抑えて来るこの強敵に対して、力を養うためには、も早や金銭という現金の所有でたち対う以外に法もない。そこを<persName ref="#kiyoe">清江</persName>のように、<persName ref="#kyuzaemon">久左衛門</persName>の商才を攻撃するのは、やはり伝来派の嫉妬と見ても良いわけで、ここにも、新興勢力の擡頭を抑える無言の蔑視が、労農という神聖な姿を通してさえ流れている。</p>
+        <p>一つの大事件がある。この村にとってのことだが、そうとばかりはいえないことだ。この村の<placeName ref="#shakado">釈迦堂</placeName>に<placeName ref="#kaidan-in">戒壇院</placeName>という一室がある。これは近年建ったこの寺の別室で、檀家七十家の位牌ばかり並べる室だ。建築費は当然村から出したが、費用は一様ではない。そのため、各家の木牌を安置する場所を定めるのに、先祖の古い順序に随うというわけにはいかなくなった。意見は、各家の出費の額に応じて順位を定めねば落ちつかなくなり、入札式を採用して、各自の献納額を紙に書かせ、他人には分らぬよう厳封のまま納めることにした。村にとっては非常な大事件だ。先祖の位置が金銭で決定されることであるから、ひそかに、出すべき基底の額を相談し合う寄りあいが、あちこちで行われた。このときも<persName ref="#kyuzaemon">久左衛門</persName>は、後のもつれを明察して、誰より真先きに、一人勝手に百円を納めた。村の一同は、まだごてごてと一円から十円の間を、上ったり下ったりしているときである。いずれにしても、<persName ref="#kyuzaemon">久左衛門</persName>には先祖がなく、自分が新しい先祖になる場合だ。どこの先祖をも追い越して、新興の意気を見せねば、生きて来た自分の努力の甲斐がない。</p>
+        <p>蓋を開けた結果は、<persName ref="#kyuzaemon">久左衛門</persName>が断然一等になっていた。生きながら彼はいま<placeName ref="#kaidan-in">戒壇院</placeName>を<ruby><rb>睥睨</rb><rt>へいげい</rt></ruby>しているわけである。ここのこの木牌室ほど県下で立派なものはないということだが、私も一度見た。金色<ruby><rb>燦爛</rb><rt>さんらん</rt></ruby>たる部屋である。</p>
+        <p>私のいる家の<persName ref="#sanuemon">参右衛門</persName>は、本来ならば<placeName ref="#kaidan-in">戒壇院</placeName>の最高段に位置する家柄である。しかし、彼一代に酒癖のため貧農になり下った結果は、まんまと別家の<persName ref="#kyuzaemon">久左衛門</persName>に位置をとって替られ、危く死者の位置まで落しかけたが、村の一同の納金五円が普通のところを、彼は十円出すと云い張り、ようやく中壇で踏みとまらせた。</p>
+        <p>「いや早や、あのときは大騒動だったのう。」</p>
+        <p>と<persName ref="#sanuemon">参右衛門</persName>が私に云ったりした。</p>
+        <p>農家がせっせと汗水たらして働き通す生涯の労働の大部分は、<placeName ref="#kaidan-in">戒壇院</placeName>の位牌の位置を現在のまま維持するためか、もしくは、自分の代に前より一段とも上にあげたいがためといって良い。仏の前で、先祖の位置を辱しめるということは、この山川の恵みを落すことになるという、伝来の観念は、農家の根柢から脱けるものではない。無限の労働力は、遠く死者から吹きのぼって来ている力で、これを断ち切ると、みな彼らは新しい先祖となり、都会工場の労働者になることだろう。神仏はもう彼らから逃げ、頭を占めていくものは唯物論の体系となって、再び農村の<placeName ref="#kaidan-in">戒壇院</placeName>へ逆流し、これを破壊していく。単純のことであるだけに複雑な難問、これ以上のことは今の問題中めったにあるまい。</p>
+        <p><placeName ref="#nihon">日本</placeName>の労働力には、周知のごとく仏から動いて来る労働力と、科学から揺れて来るものとの二種類が、歴史と自然の関係のように攻め合っている。<placeName ref="#france">フランス</placeName>革命が祭壇から神を引き摺り落して、代りに<persName ref="#descartes">デカルト</persName>の知性を祭壇に祭りあげたことから端を発したような、何かそれに似たものが、こんな所にも這入っている。工場で働いたものらは、農業に従事することはもう出来ない歎きが、この村のどこの隅にもあって、<persName ref="#kyuzaemon">久左衛門</persName>の次男の二十三歳になる優秀工なども、農事を手伝おうと努めているとはいえ、力はあり余っているに拘らず、気息<ruby><rb>奄奄</rb><rt>えんえん</rt></ruby>と動いている。知性と感性の相対は知識階級の個人の中のみに限ったことではなく、今やわが国の山川の襞の中にもふかく浸み込みつつある状態だ。ここでも、<persName ref="#descartes">デカルト</persName>と<persName ref="#pascal">パスカル</persName>の抗争したものが、異形のまま、片鱗人知れず音を立てている。</p>
+        <p>集団労働というものがあって、各学校の生徒の団体が、田植、稲刈に農家の田畠の中へ這入っていく。たしかに、このため農家の労働力は援助されてはいるが、これは農村機械化の初めである。もし誰か、ふと頭を上げて考えれば、もう<placeName ref="#kaidan-in">戒壇院</placeName>に火の燃え移っていることを見るだろう。しかし、それぞれ人間は年をとっていく。誰も若さをそのまま持ちつづけていることは出来ない。とすれば、米を喰いつづけて生きた<ruby><rb>標印</rb><rt>しるし</rt></ruby>を、木牌一つに残したく思う祈願は人人から消えぬだろう。人に生きた標印をただ一つ許すことぐらいの寛大さは、いかなる非情な主知主義者といえども持ち合せているにちがいないその感情――感情を<persName ref="#pascal">パスカル</persName>は神の恩寵物だという。そして、知性よりもこれを上段に置くのであってみれば、人に死のある限りはこの感情も消え失せまい。生ある限り知は消えぬごとくにだ。しかし、これらはすべて自分の緊急な問題に還って来るところ、農村の問題であるよりも個性の中の設問だろう。</p>
+        <p>私は毎日、農村研究をしているのだが、実は、私の目的はやはり人間研究をしているのだ。毎日毎日よく働く農夫に混り、働いても見ずして、農民研究は不可能である。私が働かないという弱点をもって眺め暮していることは、しかし、一つの大きな良い結果を私に<ruby><rb>齎</rb><rt>もたら</rt></ruby>している。それは私はこのため農民を尊敬しているということだ。この尊敬を自分から失わない工夫をするには、先ず彼らと共に働かない方が良い。正当な批判というものはあり得ないというある種の公理が、公理らしくもある以上、これもそれ故に間違っているかもしれないが、一応先ずそれはそれとしてみても、比較的正しさに近づく方法としてでも、傍観の徳ということは有り得るのである。何も傍観することを徳として、自分の味方たらしめようとするわけではない。しかし、人の労働する真ん中で、一人遊んでいる心というものは、誰からも攻撃せられるにちがいない立場であるだけに、少しでも味方を得たいものである。いったい、誰を味方に引き入れれば良いのであろうと考えると、やはり自分よりないものだ。そこで私は自分を私の味方とする。私はこれがいつでも嫌いなのだが、嫌いな奴まで<ruby><rb>手馴</rb><rt>てな</rt></ruby>ずける工夫だって、これで容易ならざる努力がいるのである。傍観の苦しさには、働いているものには分ろう筈がない徳義心がここに必要で、私の愉しみはここから何か少しずつ芽の出てくるのを感じ、それの伸びるのを育て眺める愉しみだ。それにしても、眼に見える現象界のことなど、米を喰いあったり、引っ張ったりすることなどには、もう幾らか私も退屈した。これを疎かにする次第ではないが、ときどきうんざりするのは、これはどうした性癖の理由だろう。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>見ていると、農村は何もかもが習慣で動いている。考えることも、働くことも、人の悪口をいうことも。何か一つは習慣ならざることはないものかと見ているが、いまだに一つも私は発見することが出来ない。ただ一つ、米の値が十円に騰って来たこと、これには誰も驚愕置くところを知らずという表情だ。二十銭だったものが十円になったということは、も早や想像を絶したことなのだ。しかし、これも、やがて習慣になるだろう。これが習慣になれば、他の一切の現象界の習慣は<ruby><rb>顛覆</rb><rt>てんぷく</rt></ruby>していく。あるいは、農民の心の中の習慣は、これで何もかも顛覆しているのかもしれない。物の値段が百五十倍も騰って来ていて、心の値段がむかしの二十銭で踏みとまっていられるという強さは、人には赦されているかどうか。何ぜかというと、人にはそんな習慣がないからだ。</p>
+        <p>まことに考えるということは面白い。毎日毎日しているに拘らず、一つ習慣を破った出来事に突きあたると、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち混乱する考えというもの――習慣になった考えで、習慣ならざることについて考える狼狽さ、これが今の私や人人に起っていて、そのまま有耶無耶に捨て去り、またどこかへかき消えていこうとしている現在というもの。なかなか答案は難儀になった。百五十倍の難儀さだが、しかし、まアせいぜい二十倍ぐらいの難儀さとしてすませて置きたい頭の性格。――しかも、事実は百五十倍の複雑さで展開しているという場合に、人人はいったいいかなることを仕様というのだろうか。</p>
+        <p>とにかく、人が休息したくてたまらぬときに、そこを見込んで働きたくて仕方のないのがいることも事実である。<placeName ref="#tokyo">東京</placeName>からの通信では、米一升が六十円になったという。誰がどこで幾らで売ったか、いつ、どこへ、幾らで買いに来たか、という噂について、日夜耳を<ruby><rb>聳立</rb><rt>そばだ</rt></ruby>てている農民に、こんな<placeName ref="#tokyo">東京</placeName>の話は聞かされたものではない。十円でびっくりしているものらに、六十円の真相を告げては、――それも、ただほんの噂だけで米の値がそれだけ跳ねあがる喜びに、呆然としているときだ。どこでも、人の集りの中では、話はひそひそ話ばかりである。私らの足音がすると、ぴたりと話は停り炉の火ばかりめらめら燃えている。草の中に跼み込み、何か呟きあっている二人ものがあるかと思うと、汚ならしい笑顔で、薄黄色い歯を出して外っ方を向く。</p>
+        <p>稲刈りが始まったので、村の農家から狙われていた別家<persName ref="#kyuzaemon">久左衛門</persName>の米倉も、ようやく視線を解かれた形だが、ほっとする暇もなく、今度は野菜専門に作っていた遠方の村の親戚から狙われ出した。暴風で野菜がことごとく<ruby><rb>毮</rb><rt>も</rt></ruby>ぎ落された親戚たちは、米と交換する材料が無くなって来たのである。それに、復員で若ものの帰って来た漁村の<persName ref="#rie">利枝</persName>（<persName ref="#kyuzaemon">久左衛門</persName>の義姉）の家が、米不足を来している。彼女にとっては妹の、この<persName ref="#kyuzaemon">久左衛門</persName>の米倉を見詰めない筈はない。おまけに、私もここの米倉には一方ならぬ魅力を感じているのだ。私の攻め道具は衣類だが、<persName ref="#rie">利枝</persName>の家は魚でだ。またこの村一番の大地主の<persName ref="#yaube">弥兵衛</persName>の家が、金はいくらでも出すから米をくれ、と<persName ref="#kyuzaemon">久左衛門</persName>に云って来ている。</p>
+        <p>「はははは、おれんちに、物があるのは、金が欲しゅうないからじゃ。」</p>
+        <p>と、<persName ref="#kyuzaemon">久左衛門</persName>は頭の良いことを云って私を笑わせた。頭の使い方を知っている老人だ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>焼け出されて<placeName ref="#niigata">新潟</placeName>の<placeName ref="#suibara">水原</placeName>在の実家に疎開していた<persName ref="#ishizuka-tomoji">石塚友二</persName>君から葉書が来る。発信地は<placeName ref="#fukushima">福島</placeName>の<placeName ref="#koriyama">郡山</placeName>からだが、<persName ref="#kawabata-yasunari">川端康成</persName>から鎌倉文庫へ入社の奨めをうけ、目前明らむ思いで今汽車に乗っているところとある。胸に灯火をかかげ、<placeName ref="#kamakura">鎌倉</placeName>へ向って進行していく夜汽車が眼に泛ぶ。だんだん灯の点いていく希望ほど美しいものはない。暗黒の運命の底にも駅駅があり、そこを通過して縫いすすむ夜汽車の窓よ。元気を失うことなかれ。</p>
+        <p>どんなことが世の中に起ろうとも、例えば、現在のように世界がひっくり返ろうと、何の痛痒も感じない人物がいるものだ。農家の中には、ときどきそのようなものもある。まるで働く場所そのものの田畑以外は、世界は彼らにとって幽霊のようなものだ。いや、むしろ、<placeName ref="#nihon">日本</placeName>が敗けたがために彼らは儲けているという苦しみと喜び。しかし、それとはまったく別に、敗戦を喜ぶ苦痛もあるにはある。そして、それらの心が喜びを抱いて現れて来つつあるということの苦しい裏には、人間よりも、人類を愛することだと思い得られる、ある不可思議な未来に対する論法をひっ下げていることだ。今のところ土産はまだ論法であって、人間ではない。世界をあげての人間性の復活に際して、人間性を消滅させたこの人類論法の袋の中から、まだ幾多の土産物が続続とくり拡げられてくることだろう。それが善いか悪しいかは、残念なことにまだ私には分らない。ただ私に分ることは、何となく残念なことだけだ。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>現在のわが国の文学者は、自分の心のどの部分で外界と繋がっているのであろうかということ。自分らは<placeName ref="#nihon">日本</placeName>人なりという定義と、自分らは<placeName ref="#toyo">東洋</placeName>人なりという定義と、自分らは世界人なりという定義と、自分らは敗戦国なりという定義と、これらの四種の定義が出されている。そして、その中の一つを選定してそれぞれ幾何学をしなければならぬという場合が起れば、文学者の心はどの定義を選ぶかという問題だ。</p>
+        <p>勿論、文学は幾何学ではない。それなら、定義は無限に初めへ逆のぼって、文学とは定義そのものだと云わねばなるまい。「<placeName ref="#potsdam">ポツダム</placeName>宣言を承諾す。」という厳然明白な定義。この定義一つで<placeName ref="#nihon">日本</placeName>全員の生命は救われたのだ。それぞれの幾何学は、ここから無数に展開して、われわれは民主主義国民なりという命題の証明にかからねばならぬとすれば、この際、証明するとは、その命題の意味する実行にかかることか、それとも、すでに国民の中に有るものを探求して明示することか、という二通の論証方法があるわけだが、しかし、それはともかく、人間は生活せねばならぬという条件の上で、これを開明する必要に迫られるとなると、過去や未来を考えても駄目だ。一応は現在を考えてみるということ、いつも生活の実質は現在にあるのだから、何よりも今を見ることが一番だ。今は、農民と労働者は王侯のごときものである。これに対して頭の上るものはない。すでに現在がかくのごとく民主主義に徹底しているときはまたとなかったが、ただ今は、これに統一を与える精神がないだけだ。みな誰も一番探しているものは、米と精神だのに、これを<ruby><rb>紊</rb><rt>みだ</rt></ruby>しているのは金である。しかし、不思議なことに、米というものは、少し手に入ると、忽ち人はこれを忘れてしまうのが習慣だ。有っても無くてもどうでも良いものの一つの中で、長らく人間にとって一番どうでも良かったものは、米と神とだ。云い換えるなら、物と精神の二つの代表である。この二つを忘れて人間はどうなるか、というところまで来てみて、やっと米だけ、物だけが眼についた。今度は何んだって物さえあれば、追っかけ引っかけするうちに、物はなくなる。次ぎには精神。しかし、これだけはどこにあるのか今もって分らない。分らなくなると、一つの顔を悪いという。誰も彼もその一つの顔で血刀を拭こうとする。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>稲刈りがすすんでいる。海浜の村から老婆の<persName ref="#rie">利枝</persName>がやって来る。<placeName ref="#okinawa">沖縄</placeName>で戦死した末子の霊を呼び出してもらいに、例の仏の口を聞きに来たのだが、ついでに、妹の<persName ref="#kyuzaemon">久左衛門</persName>の妻に米の相談にも来たのである。空の雲行を見上げながら、姉妹揃って仏の口のいる駅の方へ出かけて行く姿が見える。姉は七十、妹は六十一だ。妹の方は死んだ孫に会いたくて出かけて行くのだが、初盆以来、初めて孫に会えるのでいそいそとしている。秋空はよく晴れ、稲の穂が路の両側へ伏しなびき、遠山の重なる線がいのち毛で描かれた波のようだ。生きながら霊魂の歩くには適した美しい黄金色の耀く路一本を、間もなく自分が死ねば、こうして子供らも会いに来てくれるにちがいないと信じきった二人の姿だ。秋風が吹く。</p>
+        <p>私は沼の周囲の路をひとり歩いてみる。今朝<placeName ref="#tsuruoka">鶴岡</placeName>まで早く出て行った妻が帰って来るところだ。汽車が遠くの稲の中を通り過ぎてから三十分もたっている。とすると、あの汽車に相違ない。半里もある駅からの野路を、向うから黒い一点の影がただ一つ動いて来る。多分あれだろうと見ながら距離を縮めて行くうち、向うもそうだろうと思う風で近よって来る。見わたす広い平野の中で、自分に食わせる食物をせっせと探してくれている一人の人間が、あれかと思う。無能な自分と一緒に生活したのが彼女の運のつきだ。向うも一人、こちらも一人でだんだん照れた表情がはっきりして来たとき、ちょうど木橋の上でばったり会った。</p>
+        <p>「そうだと思ったわ。ふふふ。」</p>
+        <p>風呂敷の端から南瓜の肌をはみ出させて妻が笑う。川の水が二人の足下を流れている。二十年も前のある日、まだ結婚もしていなかったときのこと、こんなことが一度あったようにふと思ったが、どちらも焔に追いまくられ、もうひどく疲れている二人になった。</p>
+        <p><date when="--09">九月――日</date></p>
+        <p>燐光のように鋭く黄色に光る黒猫の眼。人のいない部屋の蝿の群り飛ぶ中でひっそりと鳴る柱時計。<ruby><rb>翳</rb><rt>かげ</rt></ruby>ったり射したりする日光。格子の間から並べた南瓜の朱に射しこむ光線。風がぴたりと停まるたびに、炉にかかった薬鑵が妙に鳴り出しては沸いてくる。</p>
+        <p>村では、ある家の稲の早い田を共同で借り、稲刈を共同でして、自分の田の稲刈までの食い量に当てるため、今日からそこでとれた米の精米にかかっている。連日の雨で膝まで泥に没する稲刈だが、夜など精米所の電光の下では、凛凛たる物具つけた武士のように勇みたった農夫らの勢揃いだ。どっかへ夜討ちに出かける前刻のような凄じい沈黙で並んでいる。一年一度の最高潮に達した緊張にちがいない。実に美しい姿で、一ぷくの煙草を美味そうに夜気の中へ吐き流している若ものの姿も見えた。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>農家の<ruby><rb>竈</rb><rt>かまど</rt></ruby>にはどこのも少し新米が入った。これは炊き増えしないためでもあって、四人で一日二升五合で足りていた<persName ref="#sanuemon">参右衛門</persName>の家では、新米になった今日から四升を少し超過して、まだ不足だとの事だ。</p>
+        <p>朝夕はうす寒く、火鉢に炭火が要るようになったが、この村には薪ばかりで炭がどこにもなく、消炭ばかりだ。</p>
+        <p>新米のみずみずしい重さ、しっとりと手に受けたときの湿り具合、蝋色のほの明るい光沢の底からぼっと曙がさして来る。たしかに新米のこの匂いには抒情がある。無限の歴史のうなりが波の音のように掌の上に乗りうつって来て、私は感傷的になるのだが。</p>
+        <p>「ああ、もう<placeName ref="#nihon">日本</placeName>の米には生命力がなくなった。こん度の戦争は敗けだ。」</p>
+        <p>と、そんなに呟いた玄米研究家が一人あった。日華事変の戦争の最中に、そんな予言をして山中へ隠れてしまった人だ。私はいまその人のことをふと思い出した。人間の天才は二十五で、誰も天才としての生命力は消えてしまうものだといわれている。米にもこれに似た天才力はあるのかもしれない。曙色をしている米の天才は消え失せたかもしれないが、努力の天才ということもまだ残っている。天才とは何ものでもない、愚者を建造してその中に棲むだけだと云った人もある。米もどうやら愚者を建造して来たばかりに近い悲しみをひそめている。そういえば涙の形をしているのも、いまは皮肉なことではない実相のようだ。</p>
+        <p>「今年の新米は、おれには嬉しいのか悲しいのか分らないね。これ見なさい。」</p>
+        <p>私は傍へ来た妻に云って掌の上の新米を出した。</p>
+        <p>「でも、美しいわ、きらきらしていること、ほら、こんなにきらきらと。」</p>
+        <p>「もうこれで、生命力はないというのだからね。<placeName ref="#nihon">日本</placeName>の米は。」</p>
+        <p>「<persName ref="#sakurazawa-yukikazu">桜沢</persName>さんね、あの方、どうしてらっしゃるかしら。あたしもう一度お会いしてみたいわ。」</p>
+        <p>妻は<persName ref="#sakurazawa-yukikazu">桜沢如一</persName>氏の愛読者で、一度講演も聴きに行ったこともあって、<placeName ref="#nihon">日本</placeName>の敗北を予言したその人の存在が、今ごろ興味を呼び起して来たらしい様子である。私のところへ来る青年の中にも二人ばかり、<persName ref="#sakurazawa-yukikazu">桜沢</persName>氏のもとへ出入りしていたものもあったが、ある日、太平洋戦争になったころその中の一人の<persName ref="#a-kun">Ａ君</persName>が来て云うには、</p>
+        <p>「今度の戦争はどうしても敗ける、米に出ていると、<persName ref="#sakurazawa-yukikazu">桜沢</persName>氏がいうのですよ。大変だと思って、私はもう蒼くなってしまった。どうしたら良いでしょう。本当でしょうかね。」</p>
+        <p>私は答えなかった。米から判断した思想というものは窺い知れざる奥ぶかく物凄いものがある。幾千年も食いつづけて来た物の中から、未来の姿の何らかを読みとどけることも出来ぬ眼力というのは、何かもう不足なもののあることぐらい気が附くべきときだ。と、私は自分のことを思って黙っていた。しかし、気がついたところで仕方がない。後の祭りだ。</p>
+        <p>「勝とうと思うな。負けないように気をつけよ。」と云ったのは<persName ref="#yoshida-kenko">兼好</persName>法師だが、これは五百年も前のことだ。それにしても、この<persName ref="#a-kun">Ａ</persName>という青年は、それ以来住所不定となって全国をふらふらさ迷うようになり、ときどき意外なところがら風のような葉書をぽつりとくれるようになったりした。</p>
+        <p>外国から帰って来たとき、<placeName ref="#shimonoseki">下関</placeName>から上陸して、ずっと<placeName ref="#honshu">本州</placeName>を汽車で縦断し、<placeName ref="#tokyo">東京</placeName>から<placeName ref="#joetsu-sen">上越線</placeName>で<placeName ref="#niigata">新潟県</placeName>を通過して、<placeName ref="#yamagata-ken">山形県</placeName>の<placeName ref="#shonai">庄内平野</placeName>へ這入って来たが、初めて私は、ああここが一番<placeName ref="#nihon">日本</placeName>らしい風景だと思ったことがある。見渡して一望、稲ばかり植ったところは、ここ以外にどこにもなかったからだった。その他の土地の田畑には、稲田は広くつづいても中に種種雑多なものが眼についたが、穂波を揃えた稲ばかりというところはここだけだった。この平野の、<placeName ref="#mizusawa">羽前水沢駅</placeName>という札の立った最初の寒駅に汽車が停車したとき、私は涙が流れんばかりに稲の穂波の美しさに感激して深呼吸をしたのを覚えている。ところが、私は今そこにいるのだ。あのときは何の縁もないところのこととて、よもやここに自分が身を沈めようとは思わなかったのに、まったく十年の後に行くところのなくなった私は、偶然こんなところへ吹きよせられようとは、これが私にとっての戦争の結果だった。そして、私は初めてここで新米を手に受けてみて、米はどこに沢山あろうともこれに代るものは、世界広しといえどもどこにもないのだと思った。</p>
+        <p>「もう生命力がないのかね、これが。――そんな馬鹿な。」</p>
+        <p>つい私もそう云わざるを得なくなって、何となく立ち外へ出た。外では稲刈のまっ最中だ。精米所の開け放された戸口からは粉が吹き散って白くあたりの樹の幹で廻っている。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>ここから三里ばかり離れた<placeName ref="#kyoden">京田</placeName>という村で、代用教員をしている私の長男は、正教員が復員で帰って来たので解雇された。生徒たちは別れに、</p>
+        <p>「先生、<placeName ref="#tokyo">東京</placeName>へ帰るのか。もうちっといてくれエ。ぼた餅やるよう。」と云ったという。</p>
+        <p>十九で人生の悲しさを知った長男は、鼻緒を切らした足駄で、真暗な泥路を夜遅く帰って来てから、初めて月給を貰い、すぐ<ruby><rb>馘</rb><rt>くび</rt></ruby>になった渋い辛さの表現の仕様がないらしい。</p>
+        <p>「悲しいかい。やっぱり。」と私は訊ねて笑った。</p>
+        <p>「そうだね、生徒と別れるのは、何んだか悲しいなア。教員室はいやだけど。」</p>
+        <p>「ちょっと、月給袋を見せた。」</p>
+        <p><ruby><rb>羞</rb><rt>はずか</rt></ruby>しがって隠していた状袋を私は開くと、巻いた袋の重い底がずるずる下へ垂れてきて、中からしかつめらしい紙幣が出て来た。七十円ばかり入っている。</p>
+        <p>「沢山あるんだね。なかなか。」</p>
+        <p>「そう、宿直手当もあるんだよ。月給だけだと三十五円だけど。」</p>
+        <p>私は自分がある大学の教師をしていたとき、月給四十二円を貰った最初の日の貴重な瞬間のことを思い出した。あのときは、月給というものは金銭ではないと思ったが、長男の月給はなおさらだ。</p>
+        <p>「一回月給を貰って、忽ち馘とは、これはまた無常迅速なものだね。しかし、おれのときよりお前の方が多いから、豪いもんだ。」</p>
+        <p>私は嬉しくなったので妻に<persName ref="#sanuemon">参右衛門</persName>の仏壇へ状袋を上げてくれと頼んだ。</p>
+        <p>「あたしもそう思っていたんですのよ。でも、ここのは他家のお仏壇でしょう。かまわないかしら。」</p>
+        <p>「どこでも同じさ。」</p>
+        <p>私はやはり死んだ父に最初の子供の月給は見せたくて、こんなときは誰もするようなことを、争われず自分もするものだなと思った。そのくせ自分が最初に貰ったときは、家に仏壇もあるのに帰途忽ち使ってしまったが、子供の月給となると、そうも簡単になりかねて、眼の向くところほくほくして来るのは、何とも知れぬ動物くさい喜びで気羞しいのは、これはまたどうしたことだろうか。</p>
+        <p>「お前は夜おそく毎日帰って来たからな。あの長い真暗な泥路よく帰れたもんだ。」</p>
+        <p>私はそんなことは云わないが、どうも内心絶えずそう云っているようで、ふとまた自分の父のことも思い出したりした。私の父も表面さも冷淡くさく何事も色に出したことはなかったが、私の二十五歳のとき、「南北」という作品を私が初めて「人間」へ出してもらって父に送ってみると、<placeName ref="#keijo">京城</placeName>でそれを読んだ父は、嬉しさのあまりその晩脳溢血でころりと死んだ。私の「南北」は発表後さんざんな悪評で、一度でぺちゃんと私は叩き落された。以来私にとって「人間」は人生喜劇の道場となり、いまだにここは鬼門だが、鬼こそ仏と思うようになったのは、それから二十年も後のことである。歳月のままの表情というものは涙でもなければ笑いでもない。</p>
+        <p>「お前その月給何に使うんだい。」と私は子供に訊ねた。</p>
+        <p>「僕これで<placeName ref="#tokyo">東京</placeName>へ帰るんだよ。早く帰って、ピアノ弾きたいなア。いいでしょう、さきに帰ったって。」</p>
+        <p>「うむ。」</p>
+        <p>「この間お小遣いもらったの、十円だけ返しとこうか。」</p>
+        <p>何を云い出すやら。私はぽかんとして見ていると、</p>
+        <p>「だって僕、早く返しとかないと、使っちまうよ、一枚だけね。」</p>
+        <p>「まアまア、大変なことになったわね。」と妻は傍で聞きながらそう云って、仏壇からまた降ろして来た袋を子供に渡した。</p>
+        <p>「はい。十円。」</p>
+        <p>子供は一枚出して私にくれてから、また残りを大切そうに服のボタンの間に押し込んだが、受けとってはみたものの、失敗った、私は一度も父へはそんなことをした覚えのないのが、今さら突然に悲しくなった。私の子供は何も知らずに今こんなことを私の前でしているのだが、知らずにしているということが、一番したことになっているのだ。私のは知りもしなければ、為もしなかった。これが一層痛く胸を打って来て、こ奴はおれよりも見どころのある奴だと私は思った。実際、私は論にもならぬことに感服しているらしい。とはいえ、父、子、孫、という三代には、自らそれ相当の行為の転調というものがあるものだ。人は三代より直接見ることは出来ないばかりか、それも五十にならねば分らぬことがいろいろある。年寄りじみたことながらも、これで年代の相違ということは年とともに私には面白くなって来る。</p>
+        <p>「ああ早く、ピアノ弾きたいなア。」</p>
+        <p>と子供はそんなことを仰向きに倒れてまだ云っている。</p>
+        <p>「明日<placeName ref="#tokyo">東京</placeName>へ行ったらいい。」</p>
+        <p>「ほんと。嬉しいなア。ああ嬉し。」子供は蒲団を頭からひっ冠り、すぐまたぬッと頭を出すと、</p>
+        <p>「お母アさん、パパ<placeName ref="#tokyo">東京</placeName>へ明日行けって、いい、行っても？」まるでまだ子供だ。</p>
+        <p>私の十九のときは、私もその年初めて<placeName ref="#tokyo">東京</placeName>へ出て来たのだが、父にはそれまでひと言も行きたい学校さえ話さず、父からも聞きもしなかった。そして出発の前の日母に、明日<placeName ref="#tokyo">東京</placeName>へ行きます、とただそれだけ私は云っただけで、何の反対もされず<placeName ref="#kyoto">京都</placeName>の<placeName ref="#yamashina">山科</placeName>から行李を一つ持って出てしまった。思うに私の父は私よりはるかに良い父であったばかりか、私の子供も子としての私よりは、子供らしい点では優っているように思う。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>足さきが冷えてくる。栗のいがはまだ柔かい。雨に濡れた薪の燃え<ruby><rb>悪</rb><rt>にく</rt></ruby>く鍋の煮えの遅い日だ。野路の中の立話にも自家の田の出来の悪さを吹聴し合う嘘も混っていて、正直さは天候の加減で少しずつ違ってくるようだ。今日などこの雨だと架に掛った稲が腐ってくるおそれもある。照るかと思うと驟雨、激しく変る光と影。一分ごとに照ったり曇ったりで、蝿だけおびただしく群れている。</p>
+        <p>しかし、ここに村民に嘘をつかしめるもので、天候にことよせしめる別のものがひそんでいる。元来からそんなに嘘をつかぬ人人が、嘘の表情をたたえるのだから、至って下手で、同情せざるを得ない原因というのは、いつもはもうある筈の米の供出量の割当の決定が、今年はいまだにないことだ。その無気味な沈黙に疑いの影が濃厚になり、防禦のまずい身ぶりがこのようになっている。とにかく、この村はどの村よりも真正直に第一番に立派な完納をして来たため、他の村村よりも米が無くなり大騒動をしている村だ。今年こそは何としても嘘をつかなければ、と思うのこそ当然な感情というべきだ。実際、私の見たところでは、この村はよほど稀な良い村で、善良という点では第一等の村にちがいないと思われるが、それでも幾らかの濁りのあるのを思うと、他の村落のことはおよそ想像してそんなに誤りはないだろう。私は<placeName ref="#nihon">日本</placeName>でもっとも誇りとなるものの一つは農民だと思っているが、もしこれが悪くなればもう<placeName ref="#nihon">日本</placeName>は駄目だといっても良い。</p>
+        <p>「不作不作というが、そんなに不作ですかね。どうもおかしいところがあると思うが。」と私は<persName ref="#kyuzaemon">久左衛門</persName>に訊ねてみた。</p>
+        <p>「そうだのう。このへんはそんなでもないのう。」と彼は小さな声で云う。「新聞が不作不作と書きたてるので、米が騰る。黙っておれば良いのにのう。」</p>
+        <p>「しかし、村にとってはその方が良いわけだな、僕らには困るが。」</p>
+        <p>「はははは、それはそうじゃ。」</p>
+        <p>こんな露骨な話の出来るようになったのは、一つは<persName ref="#kyuzaemon">久左衛門</persName>がいつも、私に、高い米を買わぬが良い、無くなれば何とかするというからだ。何とかされるのだと思うと油断をして、それならさっそく米を分けてくれとはいえぬもので、いまだに私らはそれも云えずに困っている。疎開者が地方を乱す原因だということは事実である。こっそり米を買い込む算段ならすれば出来るが、私も内心この村の批評をしたい食指いまだに失うことが出来ないので、批評をするからは、やはり少しは欲を抑える忍耐が必要になって力が要る。なかなかこれは疲れるが、私もまた作家の端くれであってみれば、験しに一度はどんと当ってみるつもりの用意も失っていないくせに、そこにはそこがあり、人の思うようには愚かなことを愚には思えぬ苦心がぬけきれないのである。別に善人ぶるわけではない。おそらく、僕らの多くの友人たちも、そこここでこんな苦労は必ずひそかに<ruby><rb>舐</rb><rt>な</rt></ruby>めさせられていることにちがいあるまい。</p>
+        <p>「神も仏もあるものじゃ。」</p>
+        <p>こんなことを<persName ref="#kyuzaemon">久左衛門</persName>が口癖のように私にいうのも、やはりいつも気にかかるのは、神や仏のことからなのだろう。米はやる米はやるといいながら、一度もくれず、その後で、「神や仏は気持ちじゃ、人の気持ちというものじゃ。」とこうもいったりする。</p>
+        <p>おそらく今ほど人人は神仏のことについて考えているときはないだろうが、神を気持ちといったのは、私も自然な説教を聴くようで彼から米を貰うよりはどことなく気持ちも良かった。</p>
+        <p>「もう僕はあなたから米はもらいたくはない。」とひそかに心中で私は云っている。皮肉ではない。私が彼に米をやりたくなって来るのだから。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>透明な光線の中を風が騒ぐ。眉へ突きあたる蝿のかたまり。樹の幹を辷り降りてくる蛇の首。畑にのびて来た白菜。はげしく群れ飛ぶ<ruby><rb>赤蜻蛉</rb><rt>あかとんぼ</rt></ruby>の水平動。集り散っていった食卓の菜類の中でまだ青紫蘇だけが変らず出てくる。</p>
+        <p>稲刈――このごろの稲刈は中手だ。この中手は先日の暴風にあって実りが悪い。稲の穂の垂れ曲った方向に風が吹かず、逆に吹きつけられたそのために、茎から折れ、以後の天候の良さも結実には役立つこと少い。全国的な不作と判明する。供出の命令がいまだに方向さえ明さずじっと沈黙している無気味さ。これに随って農家もしだいに沈黙を守って来た睨み合い、この間で、温泉場からの闇買いがどんな値で忍びよるか。触覚は繊細な震動をつづけている。表面鈍感さを装っているとはいえ、内外刻刻の多忙な変化に応じ、ひそかに沈黙のまま色を変えてゆきつつもあるようだ。</p>
+        <p>滅多に人のことを賞めないこの村で、誰からも賞められているものは、私のいる家の<persName ref="#sanuemon">参右衛門</persName>の妻女の<persName ref="#kiyoe">清江</persName>と、別家の<persName ref="#kyuzaemon">久左衛門</persName>の長男の嫁とである。この二人は、私も見るたびに賞めてやりたくなって、妻と二人きりのときは、こっそりこの二人のことをどちらからともなく賞めている。<persName ref="#kiyoe">清江</persName>は稲刈からちょっと帰って来るとその暇を見て、自分の長男の嫁の新しい<ruby><rb>藁蒲団</rb><rt>わらぶとん</rt></ruby>を作りかえてやっている。実に手早い。</p>
+        <p>「おれの嫁のときは、姑から随分大切にされたでのう、自分の嫁も大切にせんとすまんでのう。」とこういう。</p>
+        <p>嫁にも嫁の伝統があるものだ。妻は私の傍へ来て、</p>
+        <p>「あたしもお姑さんがほしかったわ。」と、神妙な顔で云った。</p>
+        <p>どういう了簡か私も笑い出した。「まア、そしたら三日だね。」</p>
+        <p>「そうかしら。でも、あたしはそしたら、こんなに我ままにならなかったと思うわ。」</p>
+        <p>「嫁の苦労なんて、人生で一番つらいことの一つだよ。最たるものかもしれないね。」</p>
+        <p>「いえ、あたしはやってみせる。」</p>
+        <p>私は唖然として妻の顔をみていた。しかし、姑がなくて倖せだったと云われるよりもまだましだ。辛抱出来るかな、出来ないね、とまた私は思った。</p>
+        <p>「しかし、あれを辛抱し通せるような人なら、女としてはまア八十点だ。」</p>
+        <p>「でも、そんなことぐらい……」</p>
+        <p>「お前は亭主を尻にしく傾向があるから、ひょっとすると出来るかもしれないなア。しかし、男にとって何が辛いと云って、<ruby><rb>阿母</rb><rt>おふくろ</rt></ruby>と細君とに<ruby><rb>啀</rb><rt>いが</rt></ruby>み合われるほど辛いことはないものだ。あれは鋸の歯の間で寝ているようなものだよ。お前の苦労なんてものは、僕が毎日傍にいることぐらいなもんじゃないか。」</p>
+        <p>「ほんと、あたしはあなたがどこかへお勤めしていて下されば、どんなにいいかしらと思うわ。もう毎日毎日、傍にいられる苦労には、あたし、それを思うと、もうぞっとしてくるの。疲れるのよそれはそれは。」妻のいつもの歎きが始まったのだ。</p>
+        <p>ここから見える隣家の<persName ref="#soza-emon">宗左衛門</persName>のあばの家では、長男が結婚した翌日出征して、嫁が義母と一緒に今もいるが、夫婦はただの一日一緒にいたきりである。私の妻も同時にそれを思い出したと見えて、</p>
+        <p>「あそこでは、たった一日よ御一緒。どうでしょう。」と一寸首を縮めて私を見た。</p>
+        <p>私は戦争中のある日、<placeName ref="#ginza">銀座</placeName>のある洋食店で夕食を摂ろうとして、料理の出るまで一人ぼんやり壁を見ていたひとときの事をふと思い出した。壁には<persName ref="#millet">ミレー</persName>の晩鐘の版画がかかっていた。私は日ごろからこのバルビゾン派の画類には一度も感動を覚えたことがなかったに拘らず、野末の向うに見える寺院の尖塔を背景に、黙祷をささげている若い夫婦の農衣姿の慎しやかな美しさに、突然われを忘れた感動を覚えたことがあった。私は自分の生活して来た記憶の絵の中から、これと似たことがどこにあったかと考えてみたが、暫くは、容易に私には泛ばなかった。しかし、何ぜまたこれほどの簡単な幸福と清浄さが私にも人にも得られないのだろうか。何の特殊な難しさでもないものをと私はそのとき考え込んだ。良い宗教がないからか。自分らそれぞれの不心得のためからか。それとも世の中というものの成立が悪いからというべきか。おそらくそんなことではないだろう。いま、一寸首を縮めて私を見た妻の眼差は、実は、そういう幸福に似たものではなかったろうか。</p>
+        <p>人は幸福の海の上に浮いている舟のようで、腹だけ水につけ、頭を水から上げているから、無常の風に面を打たれて漂うのかもしれないと思った。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>別家の<persName ref="#kyuzaemon">久左衛門</persName>の長男の嫁は、四つになる一粒種の男の子をこの<date when="--05">五月</date>に亡くして以来、次ぎがまだ産れそうな気配がないので、もう爺さん夫婦から睨まれている。いつ離縁になるか分らぬ不安ながらも、このごろは嫁もよほど覚悟が定って来たらしい働きぶりだ。ところが、本家のここの<persName ref="#sanuemon">参右衛門</persName>の家では、<placeName ref="#karafuto">樺太</placeName>出征中の長男の帰りがいまだに分らぬので、嫁は実家へ帰りきりである。夜だけ寝にここへ戻って来るときの、その嫁の大切にされることは女王のごときものだが、いつ嫁に去られるものか気配も相当に不安な模様に、<persName ref="#sanuemon">参右衛門</persName>夫婦のひそひそ話もいつもここへ落ちて来る。静な気立の良い嫁であっても、まだ実家の云うままに動く娘のままで、村で二番の裕福なその家から、一番の貧農のこの家の嫁になっている現在の情況から想像すると、<persName ref="#sanuemon">参右衛門</persName>の不在の長男は稀に見る立派な青年らしい。「あそこの長男は豪い。あんなの一人もいない。」と村のものらはいう。</p>
+        <p>応召の際、父に頼んで、毎夜その日の支出費だけ必ずつけてくれと、云い残しただけだとの事である。酒で家を潰した父に対する釘としては、もっとも確実な打ち方だ。</p>
+        <p>青柿が枝のまま風に騒いでいる。夕映えの流れた平野の上を走る雲足に木立が冷たい。濡れた青草を積み、農具の光ったリヤカーを引いて戻って来た<persName ref="#kyuzaemon">久左衛門</persName>の長男の嫁は、川の流の傍で私に丁寧なお辞儀をした。健康に赤らんだ円い顔で、黙って立って礼をする夕暮どきの透明さ。私も思わず<persName ref="#millet">ミレー</persName>になったような清浄な気持ちを覚え、彼女の幸福ならんことを願って礼をした。やはり晩鐘の美しさは誰にも一日に一度は来ているのだ。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>の家へ入ると、彼は風呂から出たばかりで、ふんわりと丹前をかけ炉の前に坐っている。<placeName ref="#shina">支那</placeName>の学者のような穏かな顔になったり、厳しいリアリストの眼になったりする彼の表情を見ながら、この<persName ref="#kyuzaemon">久左衛門</persName>は、六十八で、今一生のうち一番幸福の絶頂にいるのではないかと私は思った。不足なものは何一つない。子供たちの誰もが出征せず、持ち物の値は騰るのみだ。極貧からとにかく現金の所有にかけては村一番になっている。村の秘密を知っているものも彼ただ一人だ。経済のことに関する限り、彼を除いて村には知力を働かせるものもない。すること為すこと当っていって、他人が馬鹿に見えて仕方のない落ちつきで、じろりじろりと嫁を睨んでいれば良いだけだ。肩から引っかけた丹前の裾の、富士形になだれたのどかな様子が今の彼には似合っている。</p>
+        <p>「明日から大工が<ruby><rb>廂</rb><rt>ひさし</rt></ruby>を上げに来るのでのう。工賃を米でくれというので、それじゃ、どっちも丸公にしょうというたばかりじゃ。はははは。米を持ってると、何んでも公正価でいけるでのう。」</p>
+        <p>私は三間とはへだたぬ<persName ref="#kyuzaemon">久左衛門</persName>のこの炉端へ、殆ど来ないので、少からず彼には不服のようだった。彼から私は今いる部屋を世話せられ、私係りは<persName ref="#kyuzaemon">久左衛門</persName>だと村のものから思われているのに拘らず、その私が遠ざかっているのだから、彼とて少しは不機嫌にならざるを得なかろう。村のものらの<persName ref="#kyuzaemon">久左衛門</persName>に向っている烈しい悪口が、私の耳へも届いていると思っていることには間違いなくとも、そんなことはどうでも良い。私には、道路の傍の彼のこの炉端は人の集りが多いので、自然に足が動かぬだけである。それも集るものに村の有力者が多いので、なおさら私の足は重くなる。</p>
+        <p>「<persName ref="#kyuzaemon">久左衛門</persName>さんにお米のこと頼んでみて下さらない。もううちには無いんですもの。」</p>
+        <p>妻は私の出がけにそんなことまで耳打ちしたが、米のことなど私は彼には云いたくない。いや、何一つ<persName ref="#kyuzaemon">久左衛門</persName>には私は頼まぬつもりだ。また今までとても、まだ私からは物資のことなど彼に相談した覚えはない。</p>
+        <p>「お前んとこ、ここの村へ<persName ref="#kyuzaemon">闇左衛門</persName>の世話で来たのかの。」</p>
+        <p>と、こんなことを、ある日近所の娘が妻に訊ねたこともある。<persName ref="#kyuzaemon">久左衛門</persName>のことを、<persName ref="#kyuzaemon">闇左衛門</persName>と云ったりしたことなどから察しても、おそらく私たちまで怪しげな眼で見られているのかもしれないが、まだ私は特に彼から不愉快な思いをさせられたこともないので、彼を信用するしないは後のことだ。けれども、ここへ来てから一ヵ月、日をへるに随って彼の悪い噂ばかりを耳にする。善いことなど一度も聞いたことはない。農夫にしては稀に鋭い頭脳で、着眼の非凡さは、およそ他の者など絶えず<ruby><rb>蹌踉</rb><rt>よろ</rt></ruby>めかせられて来つづけたことも、想像してあまりある。しかし、そんなことも知れたものだ。</p>
+        <p>「旅愁って、何のことですかの。」</p>
+        <p>と、<persName ref="#kyuzaemon">久左衛門</persName>は急にまたそんなことを私に訊ねた。昨夜、私の旅愁が放送せられたそのことを云うのだろうが、ラヂオはこの家だけにあって私は聞いてない。私が黙っていると、また<persName ref="#kyuzaemon">久左衛門</persName>は、</p>
+        <p>「物語、<persName ref="#yokomitsu-riichi">横光利一</persName>としてあった。第二放送というのはどうしたら聞けるのか知らんので。」という。</p>
+        <p>私は自分の職業を知られたくはなく隠すように努めているが、ときどきこのようなのっぴきならぬ眼にあわされる。あるときも、厠の箱に投げこまれている古新聞に私の作の大きな活字が眼につき引き破ったことがある。ここでの事ではなく別にあるとき、<placeName ref="#osaka">大阪市</placeName>中での出来事もふとまた私は思い出したりした。それは<placeName ref="#dojima">堂島</placeName>の橋の手前で、朝日の前あたりだったが、私が歩いていると、前を大きな箱を積んだリヤカーが走り脱けた。その途端、電車の前部に突きあたり、箱ごと眼の前でリヤカーがぶっ倒れた。あッと思うその瞬間、箱の中から、<persName ref="#yokomitsu-riichi">横光利一</persName>集と書いた書籍ばかりが散乱して、電車がごとごとその上を辷っていくのを見たときの呆然とした自分。また汽車の中で空席を見つけたとき、前にいる客が私の著作集を傍目もふらず読んでいる最中だったりしたときのことなど、こういうときの作者の感情は、得意というより悲惨に近いものがある。何ぜだろうか。私は<persName ref="#kyuzaemon">久左衛門</persName>の所からも、その夕何の要領も得ず帰って来た。</p>
+        <p>「どうでしたお米。」と妻は笑顔でよって来て訊ねた。</p>
+        <p>「米のことは、おれは知らん。気持ちじゃ。」</p>
+        <p>「そうだと思ったわ。」妻はがっかりした風で、もうあきれたらしい。こういうことのみならず、私はどこか阿呆なところがあって、戦争中はひどく皆を困らせたが、見ていると、私の妻もまたそうだ。</p>
+        <p>「お前がいえば良いだろう。そんな米のことは、女のすべきことじゃないか。」</p>
+        <p>「お米のことは、男のするべきことですよ。どこだってそうだわ。」</p>
+        <p>「そんな男ろくな奴か。」</p>
+        <p>「だって、<persName ref="#s-san">Ｓさん</persName>のようなお豪い方でも、自転車でいらしたというじゃありませんか。」</p>
+        <p>云うかもしれないな、と私の思っていたことをまたうまく云い出したものだと、私も弱った。<persName ref="#s-san">Ｓ氏</persName>は文壇の老大家で私の尊敬している作家だが、その人が知人の若い<persName ref="#m-kun">Ｍ君</persName>の所へ自転車で米借りに乗りつけられたというリュック姿のことを、<persName ref="#m-kun">Ｍ君</persName>から聞いた折、私はその直截的な行為に自分を顧みて感服したことがあった。</p>
+        <p>「<persName ref="#kyuzaemon">闇左衛門</persName>と<persName ref="#m-kun">Ｍ君</persName>とは違うからな。」と私は苦しく云った。</p>
+        <p>「どうしましょう、ほんとうにもうないわ。」</p>
+        <p><ruby><rb>米櫃</rb><rt>こめびつ</rt></ruby>の蓋をとって<ruby><rb>枡</rb><rt>ます</rt></ruby>で計ってみている妻の手つきがかたかた寒い音を立てている。私は一日に四杯、他のものは十杯ずつ三人、併せて一升と少しで足りるのに、私のいる家の<persName ref="#sanuemon">参右衛門</persName>の所では同数の家族だのに四升でまだ足りぬ。私はいつか一日四杯だと話すと、「ふうッ。」と呼吸を吐いた<persName ref="#sanuemon">参右衛門</persName>、じろじろ私の顔を眺めていてから、「人じゃないの。」と云ったことがある。</p>
+        <p>ところが二三日前の朝のことだが、どんぶり鉢が炉端で転がる激しい音を立てたことがある。同時に、</p>
+        <p>「二升<ruby><rb>米</rb><rt>まい</rt></ruby>食うやつあるか。」と<persName ref="#sanuemon">参右衛門</persName>は<ruby><rb>呶鳴</rb><rt>どな</rt></ruby>りつけた。</p>
+        <p>訳を訊くと、次男の二十三になる白痴の<persName ref="#tensaku">天作</persName>が、新米に代った日、思わず二升ひとりで食べたということだった。運悪くその前夜<persName ref="#kyuzaemon">久左衛門</persName>が来て、<placeName ref="#osaka">大阪</placeName>の商人で一俵千円で村の米を買ったという話のあった折だった。五円が村の相場となっているときの千円の値は、驚倒すべき事件で、そのときから米価は鰻のぼりに騰って来たが、まだ<placeName ref="#tokyo">東京</placeName>の値など村のものには話せない。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>出払って誰も人のいない家の中に、拭き磨かれた板の間が黒く光っていて、そこを山羊がことこと爪音を立てて歩いている。追おうかと思ったが私はやめて見ていた。純白の毛が広い板の間の光沢に泛き出し、貴族の館のような品位であたりが貴重な彫刻を見るようだ。蚤と蝿とに苦しめられている時の私には、思わぬひっそりとした朝の一刻の独居だ。誰か歯形を白くつけたままの柿の実が樹に成っている。山腹の木の葉が紅葉しかけている。私は炉に火を焚きつけて湯をかけた。</p>
+        <p>そこへ、白痴の<persName ref="#tensaku">天作</persName>がひとり早く白土工場から帰って来た。<persName ref="#tensaku">天作</persName>と二人きりになるのは私には初めてだ。炉端に坐らせ、私は彼に茶を出した。</p>
+        <p>「どうです。」</p>
+        <p>「うむ。」と<persName ref="#tensaku">天作</persName>は云ったままごくりと一口に飲んだ。胸からはだけ出た逞しい筋肉だ。</p>
+        <p>「どうです。」とまたもう一杯。</p>
+        <p>それも忽ちひと舐めだ。どこか薄笑いの漂ったいつもの顔で、多少は照れるのか横を向き、あぐらをかいている。人から茶など出されたことは二十三歳初めてと見えて、さらに一杯注ぐと、「もうええ。」と云った。</p>
+        <p>「工場は休み。」</p>
+        <p>「うむ、硫酸がない云うてたの。」</p>
+        <p>これでは、人の云うほど<persName ref="#tensaku">天作</persName>は白痴ではなさそうだが、一日に二升を食べる彼を思うと、「人ではないの。」とつい私も云いたくなった。一日四杯と、二升とこっそり<ruby><rb>対</rb><rt>む</rt></ruby>き合っているこの朝の景色は、至極のどかだ。格子から見える山の上に一本高く楢の木が見えていて、そこへ群落して来た<ruby><rb>鶸</rb><rt>ひわ</rt></ruby>が澄んだ空に点点と留っている。<persName ref="#tensaku">天作</persName>はいつもする癖が出て敷居を枕に横になった。足の裏が私の方を向いているので、</p>
+        <p>足のうら黒き農夫を見てをれば流れ行く雲日を洩しけり</p>
+        <p>そんな短歌が一つ出来た。私には初めての歌である。</p>
+        <p>一つの家に二家族が棲んでいると、何とかして一人きりになるときばかりを探すものだが、稀に落ちて来るそんな好運なときに限って、これはまた必ず<persName ref="#kyuzaemon">久左衛門</persName>がのっそりとやって来る。彼に来られるのはこのごろ一種の恐怖になっている。しかし彼の機嫌をそこねたなら私はもうこの好きな村にはいられそうもない。それかといって、他に行ったところで、私のような労働力のない人間は、行くところすべてを苦しめるだけなので、人人にとって私は非常な荷厄介な人物だ。家人にとっても米一つ買えない主人というものは、どういうものかおよそ私には想像がついている。私の誇り得られることといえば、ただ僅に一日四杯より食べぬということだ。このため私に配給される分の二合一勺の中、五勺ぐらいは誰か他のものの分になっており、これだけはどこへ行こうとも私は人人に恵んでいるわけだが、それも習慣になると何の効きめもない。私は駅まで半里の道を歩くとき、両側の波うつ稲の穂を眺め、外国から帰ったときここで胸うち上って来た感動を思い出して、この道は、今さら額に汗せぬものに与えられた厳しい罰を感じる道になったと思った。</p>
+        <p>今も私は<persName ref="#kyuzaemon">久左衛門</persName>の来ない間にと、家をぬけ出て、醤油をとりに駅の方へ、またいつものその道を歩いた。半里、平面ばかりで家一つない真一文字の道だ。どういうものか、真っ直ぐな道というものは、物を考えるより仕様のない退屈なものである。私はこの道でどれほど色んなことを考えたか知れない。またこの村の人たちが意外に頭の良いのは、自然にこの道で日ごろの考えを整えさせているからではあるまいか、とも思ったりする。</p>
+        <p>「神や仏はあるものじゃ。」</p>
+        <p>こんなことを<persName ref="#kyuzaemon">久左衛門</persName>が云ったりすることも、この長い道が訓えたからではあるまいか。私も人から受けた恩のことを考えたり、友人の有難さや、人生の厳しさや、夫婦の愛や、子供の教育や、神のことなぞ、次ぎから次ぎと考えつづけて停めることの出来なかったのもここで、妻や子供がよく、</p>
+        <p>「あの道はたまらないわ。長くって。」</p>
+        <p>と云ったり、「そうだねえ。」と子供が云ったりするのも、何か矢っ張り各自に考えさせられているのである。ここを一度通って来ると、昨日の自分はもう今日の自分ではなくなっていて、その日はその日なりに人は文学をして来るのだ。そして、ふと頭を道から上げたとき、遠空に連った山脈の何と威厳をもった美しさか。</p>
+        <p>「ああ、あの山山は。」と、<persName ref="#tolstoy">トルストイ</persName>が<placeName ref="#caucasus">コーカサス</placeName>の山脈を見て、こう感歎したのは、平坦な草原ばかりを見ていた<placeName ref="#moscow">モスコウ</placeName>人のせいだけではないだろう。</p>
+        <p>「汝自身を知れ。」と<placeName ref="#delphi">デルフォイ</placeName>の神殿に銘された文字が哲学の発生なら、私らのここの山山には何があるのか。「人間であるということは何を意味するのか。」</p>
+        <p>雲の映った泥濘の中の水溜りを跳び跳び、<persName ref="#socrates">ソクラテス</persName>以来のこの課題に悩まされた多くの哲学者たちの答案の結果が、ついに原子爆弾という天蓋垂れた下の人間の表情となって来た現在。この<placeName ref="#greece">ギリシャ</placeName>以来の精神の連続と、私という人間と、どこにいったい関係があったのかと私は考えた。何にもない。かの山山は、物部、蘇我二族の<ruby><rb>殺戮</rb><rt>さつりく</rt></ruby>しあう血族の祈りだけだった。神は一度も通った様子のない憂鬱な山脈のところどころの窪みに、仏が巣をちょぴりと結んだだけではなかったか。そして、私はまだ絶望さえしていない。</p>
+        <p>広い平野の稲の中から突然<placeName ref="#france">フランス</placeName>語に似た発音で、</p>
+        <p>「ダダ、どこへ行く。」</p>
+        <p>と、呼ぶ声が聞えた。見ると、<persName ref="#soza-emon">宗左衛門</persName>のあばだ。くるくるした、いつもの驚いたような眼が私の方を見て懐しそうに笑っている。円顔の嫁も手甲を額にあてて一緒だ。</p>
+        <p>うす紫の<placeName ref="#chokaisan">鳥海山</placeName>を背にし、あばは光った鎌の刃で駅の方をさした。</p>
+        <p>「あっちか。」</p>
+        <p>「そうだ。」と私は<ruby><rb>頷</rb><rt>うなず</rt></ruby>いた。この村で向うから話しかけてくる人は、この五十すぎの農婦だけだ。この寡婦は変人で嫌いなものには傍にいても言葉一つかけないそうだが、<ruby><rb>蝗</rb><rt>いなご</rt></ruby>の飛ぶ中から呼ばれる気持ちは、日を仰ぐように明るく爽爽しい。しばらくは、後から稲の穂波がまだ<ruby><rb>囁</rb><rt>ささや</rt></ruby>きかけ追っかけて来るような余韻を吹かせてくる。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>寝ながらあちこちで話す村人の会話を聞いていると、このあたりの発音は、ますます<placeName ref="#france">フランス</placeName>語に似て聞える。この谷間だけかもしれないが、意味が分らぬから<placeName ref="#france">フランス</placeName>の田舎にいるようで、私はうっとりと寝床の中で聴き惚れている。私の妻に云わせると、この村の言葉はこの国でも特殊な発音だとのことだが、まことにリズミカルで柔かい。起き出して夢破れるのはいやだから、なるべく、このような朝は朝寝をして、ここだけめぐる山懐に<placeName ref="#france">フランス</placeName>が落ち溜っている愉しみで、じっと耳を澄ませている。人人の中でも<persName ref="#soza-emon">宗左衛門</persName>のあばと<persName ref="#sanuemon">参右衛門</persName>の発音が、一番<placeName ref="#france">フランス</placeName>語に近い。</p>
+        <p>妻は真暗なうち一番の汽車で<placeName ref="#tsuruoka">鶴岡</placeName>へ出かけて行っていない。今日は煙草をどうかして手に入れたいと思い、私も<placeName ref="#tsuruoka">鶴岡</placeName>の<placeName ref="#takesukeya">多介屋</placeName>へひとつ行って、本物の煙草を一ぷく喫ってみたくて堪らなくなると、跳び起きた。三番は十一時だ。</p>
+        <p>三時ごろ<placeName ref="#takesukeya">多介屋</placeName>本店へ着いた。主人の<persName ref="#sasaki-katsuyoshi">佐々木</persName>君が不在である。しばらく主人の帰りを店さきに腰かけて待っていると、入れ代り立ち代り本買いの客が来る。沢山なその中に混って一人、いつ来たのか、うすい丹前を着た、すらりと蒼い浪人風の品のある男が立って棚の本を眺めている。横から見ると、どう見ても<persName ref="#a-kun">Ａ君</persName>だが、<persName ref="#a-kun">Ａ</persName>がまさかこんな<placeName ref="#tsuruoka">鶴岡</placeName>あたりに今ごろ来ている筈もないので、どうしているか今ごろは、定めし国の敗れたことを歎き悲しんでいることだろう。そう思っていると、やはり<persName ref="#a-kun">Ａ君</persName>だった。彼は私を見つけて<ruby><rb>愕</rb><rt>おどろ</rt></ruby>いたらしかったが、前からこういうときでも少しも表情に顕れない彼だった。すッと進んで来ていう。彼はある種の武術の習練者である。</p>
+        <p>「お元気で何よりでした。」</p>
+        <p>「ああ、実に珍らしいところで会ったもんだ。どうしました？」</p>
+        <p>一ヵ月前から来ていること、ここで新妻を貰ったこと、沢山あった<placeName ref="#tokyo">東京</placeName>の彼の持ち家が全部焼けたことなど<persName ref="#a-kun">Ａ君</persName>は語ったが、いつか私に話した米の生命力の予言の的中したことだけは一言も云わなかった。私もまた云うのは不快だった。</p>
+        <p>「またどうして、今日は？」と<persName ref="#a-kun">Ａ君</persName>は訊ねた。私は長く切れていた煙草のことや、今いる山里のことなど云って笑った。</p>
+        <p>「ほおう。」</p>
+        <p>終戦前まで半年ばかり彼が兵営にいたこともまた私は知ったが、敗戦のことに関しては、<persName ref="#a-kun">Ａ</persName>はやはり話を触れようとしなかった。実際、予言というものは的中するとひどく価値が薄れるもので、あんなことなど信じて何になったのかと、今さらどちらも思いあう味けなさだ。何ともならぬことを信じてさ迷っていた間<persName ref="#a-kun">Ａ</persName>は何をしていたのだろうか。</p>
+        <p>「私のやっている術には、天上派と堕落派と二つがむかしからありましてね。」</p>
+        <p>と、彼はいつか、<placeName ref="#nihon">日本</placeName>最古の武道だといわれる、相手に触れずに敵を倒すその術について私に語ったことがある。それによると、天上派は女人を一切身の傍へ近づけず、滝に打たれ霞を呼吸して山中で技を磨くのに対し、堕落派の方は女から女を渡り歩いて技を磨くのだとの事で、またこの二つは決して仕合をしないということ、それ故にどちらが優っているかいまだに誰にも分っていないということなど語ったが、このときも<persName ref="#a-kun">Ａ</persName>は自分がどちらに属しているか一切云わなかったようだった。またこの術を研究し始めてからの彼は、それまで夢中になって読んでいた<persName ref="#paul-valery">ヴァレリイ</persName>のことについても、ぱったり口にしなくなったばかりか、ひどく人間が真面目になり、私の応接室用の煙草を三本吸うと、その日帰ってから別に三本持って返しにわざわざ来たりした。おそらく彼は天上派だったのであろう。</p>
+        <p>「しかし、天上派も堕落派もどちらも決して使ってはならぬという封じ手が一つあるのです。相手の背のある部分を軽くぽんと叩く手ですがね。これをやると、やられたものは何時間か後で、ぱったり死んでしまうのです。」</p>
+        <p>そうも云ってから<persName ref="#a-kun">Ａ</persName>はまた、ある堕落派の天才で一人、<placeName ref="#osaka">大阪</placeName>で誰からとも分らず斬り殺されたもののあったことを話した。それは非常な天才で、それが人から斬られるということは習練者ら一同の理解し兼ねることだったが、あるとき謎が解けた。その男は<placeName ref="#manshu">満洲</placeName>を渡っているとき、人知れず<ruby><rb>苦力</rb><rt>クーリー</rt></ruby>の背に封じ手を使ってみて、後からひそかに<ruby><rb>蹤</rb><rt>つ</rt></ruby>いて行くと、やはりぱったりと<ruby><rb>仆</rb><rt>たお</rt></ruby>れたまま死んだという。</p>
+        <p>「リアリストの最期か。」</p>
+        <p>と、そのとき二人は笑ったことがある。国にも思想にも文学にも、封じ手はあるものだと、いま私はそんなことを思っている。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>三日間家をあけていた。村へ帰ったときは相当に疲れが出て、痔病がひどく悪くなったが、この洞窟のような奥まった六畳の部屋も体を崩すには足る。薄煙りが炉の方から流れて来ているのもわが家らしい。私は妻をからかいたくなる話を一つ溜めて戻って来ているので、それを一つと思うと自然ににやにやなって来た。話の材料というのはただの笑話にすぎぬものだが、もしかしたら、私が誰かに<ruby><rb>冗戯</rb><rt>ふざ</rt></ruby>けられていることかもしれない廻転の深さも含んでいる。</p>
+        <p>一昨日<placeName ref="#tsuruoka">鶴岡</placeName>の<placeName ref="#takesukeya">多介屋</placeName>で一泊している折のこと、さて今朝は帰ろうと思って腰を上げかけると、<placeName ref="#s-shi">Ｓ市</placeName>から二人の有望な大地主の青年が嫁見立に来る。間もなく来ることだろうから、私にもその見立てに参加して意見をきかせてくれと頼まれた。待っていると正午ごろ来た。二人とも、見るからに一鞭あてて今や疾走しそうな<ruby><rb>溌剌</rb><rt>はつらつ</rt></ruby>たる騎手のごとき軽快な青年だ。この嫁になるものは仕合せだと私は思った。一人は兵隊から帰ったばかりで眼が明るく大きな体をのびのびとさせている。それが花婿だ。他の一人は眉目きらめき立った才能の溢れた豊かな青年でこれは助手役に来たらしい。どちらも私の見知らぬ人のこととて私はただ黙って傍で話を聞いていると、候補者となっている娘が選定の結果二人となり、そのどちらと先に会うべきかが苦心の模様で、先方の家庭の事情や娘の素質をあれこれと話し合っている。ところが、幸運な花嫁になろうとしている娘の方は、どうも私とどこかで縁のありそうな気配が立ち籠って来始め、思わず私も他人事ならず胸のときめきを覚えるようになった。そのときのことを私は同じく<placeName ref="#tsuruoka">鶴岡</placeName>育ちの妻に話して云った。</p>
+        <p>「おい、その嫁になる娘の一人というのは、誰だと思う。例の、そら、お前の結婚する筈になっていた船問屋の、あの人物の娘だ。僕は知らぬ素振りでいたがね。」</p>
+        <p>妻はさも無関心らしく、「あら、そう。」と云う。これも知らぬ素ぶりだ。しかし、私には、もし私がその船問屋だったら、ほんの些細なことからそうならなかったまでのことなのだが、自分の娘が第一候補の矢を立てられているのと同じ場であった。興味の起らぬ筈はない、私の妻がかつてはその船問屋から第一候補の矢を立てられて逃げたのである。そして、今、私はその男の娘を見立てようとしている稀な情景だ。</p>
+        <p>「まア、あの娘なら満点だ。親父はちょっと自慢しいで何んだが、娘はなかなか立派だ。」</p>
+        <p>と、こんな話を中に立った<placeName ref="#takesukeya">多介屋</placeName>主人が一昨日青年に話していたのを思い出し、私はそれもその通りに妻に話してみた。</p>
+        <p>「そう、あの人の娘さんならいい人ですよ。それは良い児だということですわ。」</p>
+        <p>妻はそう云ってからそのとき、ふと声を落して黙った。自分の子供の、その娘のようには自慢になりそうにもないことを思い出したらしい、悲しげなその様子を見て、急に私はもう話をそれ以上つづける勇気を失った。女の幸不幸の大部分は子供にあることぐらい、もう知りすぎている二人だった。寝てからも、しかし、私は一昨日の結婚談がうまく整ってくれることをひそかに希望した。</p>
+        <p>罪滅ぼしの気持ちも多分にある。私はついに候補者のだれとも会わずに帰って来たのだが、その日、それから青年たちを混え、男ばかり五人で<placeName ref="#tagawa-onsen">田川温泉</placeName>へ行って一泊した。帰りはいつまで待っても自動車が来なかったのでやむなく、炭輸送車の真黒な箱へ乗せてもらったが、炭の中で揺れている花婿を見て、私は、</p>
+        <p>「ああ、花咲けり。」と思った。私から刻刻過ぎゆくものをこのときほどまだつよく感じたことはない。がたりとメートル器の針の揺れ動くのを見る思いで、黒い輸送車の中の、丁度私の眼の高さにある青年の胸の<ruby><rb>釦</rb><rt>ボタン</rt></ruby>を満開の花弁のように瑞瑞しく眺めていた。</p>
+        <p>しかし、この炭箱の中で私は負けてばかりもいられなかった。私にも、<placeName ref="#tagawa-onsen">田川温泉</placeName>の思い出には少しは匂やかな秘めごともあるにはある。それもこの青年のような年のころで、まだ私が妻と結婚し立ての春のこと、――私は初めて妻の実家へ来て、妻の父から仕事場には鹿のいる<placeName ref="#tagawa-onsen">田川温泉</placeName>が良かろうということになり、ここで中央公論へ出す「笑った皇后」という作を書いていた。<persName ref="#nero">ネロ</persName>皇帝の妻のことを書いているのだが、そのときにも、実家からときどき妻は鹿のいる私の宿へ会いに来だ。ある日、妻の見えない日で、私がただ一人男の湯舟にひたっていると、隣りの女の湯舟にも誰か来て、これもただ一人で湯の音を立てていた。初めは気附かずに私は、<persName ref="#nero">ネロ</persName>が友人<persName ref="#otho">オソー</persName>の妻を口説く科白を考えながら、少し滑稽にしないと<persName ref="#nero">ネロ</persName>の性格がよく出ないので、「お前の足は、お前の足は。」と、そんな文句を呟いているときである。私の足のあたりで湯がしきりに揺れ動くのを感じた。ふと下を見ると、ここの湯舟は隣室とのへだてが板壁だけで、下の湯水は一つに続いて断ってなく、午さがりの光線の射し込んだ透明な湯の底から、隣室の女の足のくの字に揺れる白い綾を見た。実に美しい。顔や姿がまったく見えずに、伸びたり縮んだりする足だけ見える湯の妖艶さは、遠い記憶の底から、揺らめきのぼって来る貴重な断片の翻える羽毛のような官能的な柔軟さに溢れている。これはここの湯舟だけであろうか。<persName ref="#nero">ネロ</persName>に攻められ、侍女と二人で湯に浸りつつ<persName ref="#petronius">ペトロニユス</persName>の死んでゆくときのあの<placeName ref="#rome">ローマ</placeName>も、このような湯の中の美しさはなかったであろうと感慨も豊かになり、私はなお女の足を見ながら、時間は相当前からつづいていたのだからもっと早くから眺めていれば良かったと残念に思っていた。</p>
+        <p>「あなた、お分りになって。」</p>
+        <p>そのとき突然、隣室からそう呼んだ。声はたしかに妻のようだった。どうもおかしい。私はしばらく黙っていてから「お前かい。」と訊ねてみた。</p>
+        <p>「ええ。そう。」と妻は壁の向うで答えた。</p>
+        <p>「何んだ、いつ来た。」</p>
+        <p>「さっき、一時のバスで。お待ちしてましたのよ。」</p>
+        <p>「ふむ、もう少し脚を見せなさい。」</p>
+        <p>「いや。」と云って、妻はすぐ脚をひっ込めた。</p>
+        <p>「お前の脚は、夜の鹿のようにすらりとしている。」と、とうとう<persName ref="#nero">ネロ</persName>にこんな形容詞を私は云わせて了う始末になったが、このとき湯の底で覗いた透明な脚の白さは、二十年なお私の眼底に残っている鹿の斑のような哀感ある花である。恐らく私の前の青年も第一候補と整えばこうしてここへ再び来ることだろうが、もう今はどの浴槽も<placeName ref="#rome">ローマ</placeName>の湯のように文明になっている。</p>
+        <p>夜、家人がみな寝てしまったころ、長男がひょっこり<placeName ref="#tokyo">東京</placeName>から帰って来た。自家の畑で採れたさつま芋をリュックに一杯つめていて、ひどく疲れている様子だ。今年初めて採れた畑の芋なので私は袋の口を開け、芋の頭を一寸撫でてから寝た。</p>
+        <p>「どうだった<placeName ref="#tokyo">東京</placeName>。」妻は起きてきて子供に訊ねた。</p>
+        <p>「面白いよ、ジープがぶうぶう通っている。」</p>
+        <p>「餓え死にしてる人、沢山いて？」</p>
+        <p>「そうだね。僕、朝からピアノばかり弾いていて外へなんか出なかったから、分らない。」</p>
+        <p>「つまらないこと、<placeName ref="#tokyo">東京</placeName>のお話たったそれだけね。」</p>
+        <p>私と妻は、<placeName ref="#tokyo">東京</placeName>から来た客ということだけで、子供まで別人になったように見ている人間に、いつの間にかなっている。そろそろ私一人だけでも帰ろうと思う。ただ私としては収穫時を見終ってしまいたいと思うだけだが、村人の親切さに対してこれ以上、観るという心でいることに耐えられそうにもない。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>ときどき我ながらいやな気持ちが起って来る。私が疎開者同様のくせにどこか疎開者らしくない気持ちの起ることだ。事実、私はまだ<placeName ref="#tokyo">東京</placeName>の所帯主でここでは私の妻が所帯主になっている。妻と子供が疎開者で私だけはそうではなく、研究心をもって来ていることが、一つの義務だと思うある観想の仕わざのためだ。これでも初めに比べればよほど私も謙遜になっているのを感じるが、妻がこの村に対して感謝しきっている心とは、まだよほど私の方は好ましからざるものがあるようだ。</p>
+        <p><date when="--05-24">五月二十四日</date>の空襲のときは群長として役目をすませ、私でも町会から十円の賞を貰って<placeName ref="#tokyo">東京</placeName>を立った。立つときも留守居の<persName ref="#h-san">Ｈ</persName>と<persName ref="#i-san">Ｉ</persName>とに依頼し、炭焼を研究して来たいと思うがすぐ帰ると云って出て来たので、私には疎開者だと思う気持ちはいまだにない。それが悪く邪魔をしている。倦くまで研究心を失いたくはないと思う虚剛と、人間らしからざる観察者の気持ちを伏せ折りたくもあって、個人の中のこの政治は甚だ調和を失って醜い。私はまだ文学に勝ってはいないのだ。先ず第一にこれに打ち勝つことが肝要かと思う。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>雨がよく降るようになった。昨日も今日も大雨だ。ラヂオでは全国的な雨で汽車も停った報道が各線に見られるようだ。実のない稲、腐る稲、流される稲、砂をかむってとれぬ稲――米は不作どころではないかもしれぬという予想が、どこの農家にも拡がった。これでは、ここでとれた僅かな米も、どのような運命にあわされるか知れたものではないという恐怖も一緒になった。</p>
+        <p>雑草の中の水音が高い。竹林の先端が重く垂れ、その滴りの下で鯉が白い髭をぴんと上げて泳いでいる。</p>
+        <p>人が集るときは、必ず実行組合長<persName ref="#hyoe-mon">兵衛門</persName>の悪口を云う。いつものことだが、このごろは特にそれが激しくなって来た。攻撃の仕方は千篇一律、よくあのように同じことを繰返し云えるものだと思うほどで、そのねばりっ気が恐ろしい。ねっちねちと、ぶつぶつと、官能さえ昏ますようだ。</p>
+        <p>「米を出せ出せと云って、皆出させ、村の者の喰う米をみなとり上げて置いて、名誉を一人で独占した。」とこういう。</p>
+        <p>これは一種の合唱にまでなっており、慰めでもあり、病的な愚痴の吐きどころだが、雨が降ると、かく愚痴が困苦の思い出とも変るらしい。ところが、この実行組合長<persName ref="#hyoe-mon">兵衛門</persName>の母親という人は、こっそり私のところへ野菜をくれる。<persName ref="#sanuemon">参右衛門</persName>の妻女の<persName ref="#kiyoe">清江</persName>が、私たちの困っていることを自分の実家のこととて話したらしい。いつかここから味噌漬も貰ったことがある。その漬物の美味だったこと、私はこのような漬物を食べたことはまだなかった。村民総がかりの悪口の中から掘りあてた、見事な宝玉を味わう思いで私はこれを口中に入れ愉しんだ。</p>
+        <p>味噌と大根との本来の味が、互いに不純物を排除しあい、そのどちらでもない純粋な化合物となって、半透明な<ruby><rb>琅玕</rb><rt>ろうかん</rt></ruby>色に、およそ味という味のうち、最も高度な結晶を示している天来の妙味、絶妙ともいうべきその一片を口にしたとき、塩辛さの極点滲じむがごとき甘さとなっているその香味は、古代密祖に接しているような快感を感じたが、誰か人間も人漬けの結果、このような見事な化合物となっている人物はないものかと、私はしばらく考えにふけった。大根だってこれだけの味を出せるものなら、人は容易に死にきれたものではない。それとも、そんな人間を味い得る人間がいないのかもしれぬ。</p>
+        <p>「<persName ref="#hyoe-mon">兵衛門</persName>のことを人はみな悪口ばかりいうが、あの人だって、組合長になりたくないというのを、皆が引っ張り出して、ならせたのだからのう。」</p>
+        <p>と、<persName ref="#kiyoe">清江</persName>は私の妻に、自分の実家をこっそり弁明した。</p>
+        <p>「いやだいやだ云うのに、無理矢理にならせての、――お上のいう通りにしたのが悪いのなら、どうしようもないだろうに。」</p>
+        <p>私はこの<persName ref="#hyoe-mon">兵衛門</persName>を一度だけ見たことがある。四十過ぎの、愁いのあるひき緊った美男で、格子の外からちらりと眼に映ったばかりの感じでは、運の悪そうな人である。</p>
+        <p>この村の近くの村に、供出係りで、供出量が不足し責任を感じ自殺したものが一人いる。長い戦争中、このような責任観念のつよかった供出係りは全国に一人もなかったことは、これは<placeName ref="#tokyo">東京</placeName>の新聞も報じて有名なことだが、私のいるこの村も、それと似たところもある、どこの村より真っ先かけの立派な完納ぶりが、敗戦の結果、今になった米不足で、組合長だけ攻撃されて来たのである。</p>
+        <p>「あなたはどこにいらっしゃる。」</p>
+        <p>と私は<placeName ref="#tsuruoka">鶴岡</placeName>の街で人からよく訊ねられるが、<placeName ref="#nishime">西目</placeName>だと答えると、ああ、あの村は良い村だと誰もいう。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p><ruby><rb>葱</rb><rt>ねぎ</rt></ruby>の白根の冴え揃った朝の雨。ミルク色に立ちこめた雨の中から、組み合った糸杉の群りすすんで来るような朝の雨だ。峠を越えて魚売りの娘の降りて来る<ruby><rb>赤襷</rb><rt>あかだすき</rt></ruby>。その素足、――<persName ref="#sanuemon">参右衛門</persName>の炉端へ人が集っている。どうやらこのごろになって、村民は私をも隣組の一員として取扱ってくれるようになって来た。私も観察を止めよう。またそれも出来そうになって来ている。組長がこの集りの炉端へ役場からの報告を持って来て、云うには、――</p>
+        <p>国旗は命じたときでなければ出してはならぬ、道路は左側通行の厳守、十四歳以下の子に牛馬を曳かしてはならぬ、武器刀剣ことごとく提出すべし、以上、進駐軍からの命令だとの事だ。そして、組長は、</p>
+        <p>「これに違犯すれば、どう罰を食うか分らんぞよ。」という。</p>
+        <p>「そうか、そんなら、こうはしてはおれん。」</p>
+        <p>さっそく<persName ref="#sanuemon">参右衛門</persName>は立ち上り、竹筒から、<ruby><rb>竿</rb><rt>さお</rt></ruby>に縛りつけたままの国旗の小さいのをとり脱した。それから床間にかかった武運長久の掛軸も脱して巻いてしまう。</p>
+        <p>「やアやア、ひどいことになったわい。天子さまの写真だけは、良かろうのう。」</p>
+        <p>と、鴨居の上の御真影を見上げていて、これだけは脱そうとしなかった。</p>
+        <p>「ああ、負けた負けた。」と、一人がいう。</p>
+        <p>「供出のさせ方が、おれらを瞞したから負けたのだ。」とまた別の一人。</p>
+        <p>「米をおれらに作らせて、作ったものが、自分の米も食えずに死にかけて、そのよなことがあるもんか。今年は何んというても、出すものか。おれは出さぬ。」と、また一人。</p>
+        <p>「おれも出さぬ。また瞞されて、出させた奴が名誉をもろうてさ。そのよな馬鹿な。」</p>
+        <p>「そんだそんだ、そのよなことを通して、今年の米を何というて出させるつもりか、聞いてやろ。」</p>
+        <p>敗戦の直接の影響が、こうしてこの村へ入って来たこれが初めてだ。それから暫く人人の話は、この<placeName ref="#yamagata-ken">山形県</placeName>下へ顕れた聯合軍の噂に花が咲いたが、どういうものか、それら持ちよりの噂はどれも良い方面のことが多い。私は悪い方面のことを一つもまだ聞かないが、<placeName ref="#nihon">日本</placeName>でもっとも両者の間の善く廻っているのは、この<placeName ref="#yamagata-ken">山形県</placeName>下だということも、警察の人から聞いたことがある。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>百合根の味噌汁がつづいて美味い。しかし、今日もまた大雨だ。昨日まで天候の模様を見ていた農家のものらも、もう躊躇の余地はない。今は人より稲を救わねばならぬ。</p>
+        <p>そこへ米の供出方法が定められた。農家の議論はまた昂って来たようだ。去年は、定められた供出量の努力に対して、それを保証する意味の保証金が農家に下った。それが今年は、農家の努力に対してではなく、生産量に対して生産奨励金が下るという。どこがそれでは違うかというと、今年の供出量は去年のようには一定せず、生産量に従って定められるという寸法に変化して来たのである。これは去年に比較して不明なところがあるだけに、含んだ凄味が物をいっていて、睨みの幅が大きく深さがあった。一見、供出するものに同情ある様子ながらも、<ruby><rb>悪狡</rb><rt>わるずる</rt></ruby>く逃げるものは逃がして置き、その後で絞め上げて見せようという<ruby><rb>肚</rb><rt>はら</rt></ruby>も見え、なかなか油断のならぬ方法である。</p>
+        <p>「はい、はい、云うて置くのだな。何んでもかまわぬ。そして、出さなけれやそれで良い。」と、一人いうものがあった。</p>
+        <p>「生産額に従ってというんだの。個人割当なら話は分るが、村全体の生産額に従うなら、そんなら、真ん中のものの生産額に従うより仕様がないじゃないか。」と一人がいう。</p>
+        <p>「じゃ、真ん中以下のものは、また喰えなくなるぞ。同じことじゃ。」と、貧農らしい一人が云う。</p>
+        <p>「何しろ、去年の保証金も奨励金も、まだどっちも貰っちゃおらんじゃないか。政府は出したというし、おれたちは貰っちゃおらぬし、取り上げるだけは取り上げといて、くれるものは一つもくれぬのに、もう、今年の新米のさいそくとは、あんまり無茶じゃのう。なっちゃおらん。ほっとけほっとけ。」</p>
+        <p>そういうものらの云い方を綜合してみていて、私も少し去年から今年への推移が分って面白かった。すると、その横のものは、</p>
+        <p>「生れただけの米は、どう隠そうたって、隠せるものじゃないさ。ぴっちり分る。分る以上は、出してしまって、後の分は村内じゃ、どう闇をしようが、しまいが、かまわぬということにすれば良かろう。」</p>
+        <p>こう云ったものは、おそらく私のような農家に関係のないものが傍で話を聞いていたからだろう。もしこれで私がこんな炉端にいなければ、どのような話がひそひそ進められたか甚だ私は気の毒な思いがする。どちらか云うと、私はいつも彼らの味方をしているので、悪いことも良いように解釈をしている傾きもあり、心覚えも要心しいしいというところがある。冷たい心で歴史を書くのが正しいか、愛情で歴史を見るのが正しいかはいつの場合もむつかしいことの根本だが、実相を危くして物的真実を追求するという手は、私はいつも嫌いだ。これは真実から遠のくことだ。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>はじけたあけびの実の口から落ちてくる雫。風に揺れた栗の下枝の間を、胸をはだけ雨に打たせて駈廻っている子供たち。磯釣の餌にする海老を手に入れた喜びで、眼を耀かせ、青竹の長さをくらべては栗の実を叩き落す子供たち。海から襲って来る密雲が低く垂れて霽れ間も見えない。加わって来る寒気つよく、稲刈に出ていたものらも午後にはどこも帰って来たが、<persName ref="#sanuemon">参右衛門</persName>の妻女の<persName ref="#kiyoe">清江</persName>だけは帰らない。黄ばんだ糸杉の下枝が濡れた屋根を包んでいる。森に雨が煙りこみ、つけ放したままの電灯にたかった蝿もじっと動かない。</p>
+        <p>暮れ方になってから<persName ref="#kiyoe">清江</persName>が帰って来た。<ruby><rb>薙刀</rb><rt>なぎなた</rt></ruby>でも使って来たように白鉢巻をしている。が、それも取ろうとせず、蓑を脱いで、びしょ濡れになった袖を戸口で絞り水をきっている。雨の中の稲刈で、腹帯まで水が沁みとおったらしい。覚えのない冷えた指を撫で撫で、上から脱いだ仕事着を一枚ずつ炉の上の棚へかけていく。</p>
+        <p>「こんな寒い稲刈は初めてだよ、ほら――」</p>
+        <p>子の前へ<persName ref="#kiyoe">清江</persName>はかじかんだ手を見せてそう云うが、今日は、若いときの美しさも想像出来るなごやかな眼差で、いつもより嬉しそうだ。<persName ref="#kiyoe">清江</persName>の後から主人の<persName ref="#sanuemon">参右衛門</persName>も濡れて帰って来た。田へは殆ど出ない彼だが、何ぜだか彼も今日はにこにこ笑って這入って来る。</p>
+        <p>「芽出たいぞ、今日はうちの稲の中に鳥が巣をくっていた。卵もあったぞ。」</p>
+        <p>稲の中に鳥が巣を作ると家運の興隆するきっかけを意味して、このあたりの農家では羨望され、餅を<ruby><rb>搗</rb><rt>つ</rt></ruby>いて祝うものだとの事だ。夜も<persName ref="#sanuemon">参右衛門</persName>は来るものににこにこして炉端で鳥の巣の話をした。</p>
+        <p>「御苦労が報われたんでしょう。」と私の妻は云った。</p>
+        <p>「そうだと良いがの。」</p>
+        <p>「あなたの御苦労じゃありませんよ。小母さんのよ。」</p>
+        <p>「おれは苦労をかけた方かな。」</p>
+        <p>何を云われても<persName ref="#sanuemon">参右衛門</persName>は嬉しそうだった。<persName ref="#kiyoe">清江</persName>はぼろぼろに歪んだ編笠の破れ目に青笹の葉をあて、繕いながら、</p>
+        <p>「まだ指さきがしびれての。真直ぐにのびないんだよ。こんなだ、ほら。」</p>
+        <p>炉の方へ足を向けて寝ていた<persName ref="#kiyoe">清江</persName>の末の子が、薪の火の舌が廻って来るたびに、眠っていてもぴりぴり足を縮めている。上機嫌のこんな一家の夜は近来ない。思わず私もその炉の傍で夜ふかしする。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>降ったりやんだりしている天気だ。風も出て来た。およそこれほど悪天の続くところはあるものだろうか。ほんの二三分間密雲が破れて日が照ったかと思うと、また雨になり風になる。激しい変化ながら、海の方にある山が次第に明るみを加えて来た。</p>
+        <p>「こんな雨の多い秋はないもんだのう。」と<persName ref="#kyuzaemon">久左衛門</persName>は来て云う。</p>
+        <p>顔を雨に濡らした子供たちは、山の樹に絡まったあけびの実を懐いっぱい詰め込んで来て、ごろごろッと炉の傍へ投げ出した。そして、味噌を中につめ、油を皮に塗って火で焼いて、うめいぞ、これはという。どこの農家も人が出払っている留守の炉に、火だけは燃えている。猫が背を丸めた閑散な午後になったと思っていると、また強くなった風に木の葉が飛び廻り、色づき始めた柿の実が葉の吹っ切れた枝から、目立って顕れて来る。見定めなき一日の天候。</p>
+        <p>この夜、自分らの田を全部刈り上げた<persName ref="#sanuemon">参右衛門</persName>夫妻が、鳥の巣をもって帰って来て仏壇にそなえた。穂のついたままの新藁が、納豆の包みのようにふくれた中に三つ小さな卵がある。久しく見えなかった空に星が出ている。騒がしく鳴る竹林の風の音を聞きつつ、<persName ref="#sanuemon">参右衛門</persName>と<persName ref="#kiyoe">清江</persName>は、明日から稲刈の手伝いに出て行くさきの相談をした。主人の方は長男の嫁の実家へ、<persName ref="#kiyoe">清江</persName>の方は、自分の実家の組合長の家の田へと。いつもよりこの夜二人は早く寝室へ這入っていった。むかしは人から手伝って貰わなければ刈れなかった彼らの広い稲刈だったのに、今はその反対で、鳥の巣の夢を抱いたようなさみしさがしっとり夜をこめている。何となく、しんと淋しい夜だ。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>久しぶりの好天だ。風がまだ残っているので、高い梢の桐の実が真っさきに乾いていく。野葡萄の汁が瓶の中で酒の匂いをたてている。酢を作る青柿の皮が樽につめられた。納豆の粘液をためす火箸が藁の中へ刺さり、天井の明り口は煙を吸い上げ、塗戸の杉の目が炉の焔の色を映して明るい。</p>
+        <p>私は妻と二人で裏の山へ柴刈りに出かけた。二人の目的は十二三分で登れる<placeName ref="#kuranori">鞍乗</placeName>りの峠まで行くことだが、この峠までの坂は息苦しい。焚木を拾い拾い登ると一歩ごとに、平野は眼の下に稀に見る美しい全貌を顕して来る。私は煙草用のいたどりを採りに一人でよくここへは来たものだが、妻は初めて登るので、なるたけ柴より景色を見せてやりたい希望を持って来ているのに、この女人はどういうものかまた柴ばかり探している。そのうち私は少し腹が立って来た。</p>
+        <p>「たまに来たんじゃないか。もっと景色を見なさい景色を。」</p>
+        <p>「だって、もう見たんですもの。」</p>
+        <p>「これだけの景色は、そうざらに有るもんじゃないよ。絶景といってもいい。」</p>
+        <p>「絶景だ絶景だと仰言るもんだから、どんなにいいかしらと思っていたわ。こんなの、山と田ばかしじゃありませんか。」</p>
+        <p>しかし、景色というものはそういうものかもしれないと私は思った。どこが良いのかと考え出したが最後、どのような景色だってもう駄目なものである。</p>
+        <p>「お前は小さいときからこのへんの山の景色に見馴れているから、珍らしくないのだよ。他国人の僕がお前の国の景色に感心してやってるのに、心の分らない女だなア。柴より頭だ。」</p>
+        <p>「いいえ、あたしは柴柴。」</p>
+        <p>自分の一生は何んだかふとこれに似たことばかしのような気がして来たが、しかし、私はこれで良いのだと思った。谷間いっぱいに生えているいたどりはもう黄色く枯れかかっている。私は随分これで煙草の代用として助かったのだが、今のうち採って置かぬと用にはならぬかもしれない。峠まで登ったところで、下に秋の冴えた海が見えて来た。馬の背に跨がった感じのこの<placeName ref="#kuranori">鞍乗峠</placeName>はいつ見ても眺望は優れている。私はもう夫婦喧嘩はやめにした。ほとんど垂直になだれ下った草原の断崖に挟まれた海面は、今日は穏かだ。右手の平野を越して、<placeName ref="#haguro">羽黒</placeName>、<placeName ref="#yudono">湯殿</placeName>、<placeName ref="#gassan">月山</placeName>、<placeName ref="#dewa-sanzan">三山</placeName>の重なりを見ていると、それと自然に対抗したくなって来る<placeName ref="#kuranori">鞍乗</placeName>り心地で、むかしこの地を本陣とした<placeName ref="#nishi-haguro">西羽黒</placeName>の対立心が、向うの<placeName ref="#higashi-haguro">東羽黒</placeName>に敗れ、滅亡の因を作ったことも<ruby><rb>頷</rb><rt>うなず</rt></ruby>かれる眺望である。前方の<placeName ref="#chokaisan">鳥海山</placeName>も今日は見事な晴れ姿だ。</p>
+        <p>「海がこうして見えて来ないと、あたしにはいい景色には見えないんですもの。ここだといいわ。ほんと、素晴しいわ。」</p>
+        <p>「今ごろ云ったってもう駄目だ。」</p>
+        <p>柴を背におい、<placeName ref="#kuranori">鞍乗</placeName>の尾根路を左に登りながら、妻はここの海の見える所へ家を一つ建てたいとまた云い出した。しかし、ここでは水を下から運ばねばなるまい。海からの風も激しくあたることを予想しなければならぬ。</p>
+        <p>「僕はここから海までの草原の傾斜を牧場にすれば、いい牧場になると思うが、と話したことがあるんだ。そうしたら、<persName ref="#sugai-kodo">菅井</persName>の和尚さん、専門家がいつか来たときも、ここは牧場としては理想的だといったそうだ。」</p>
+        <p>自慢の形になったが、その実、<placeName ref="#tyrol">チロル</placeName>の草原でこのような所に鈴を首につけた牛がひとり歩いていたのを思い出し、牧場の専門家も同様な所を見て来たのであろうと私は思ったりした。</p>
+        <p>「やっぱりここは絶景だよ。こういうのを絶景といわずに、いい景色はないものだ。」</p>
+        <p>私はもう柴など拾いたくはなく、縄を腰にくくりつけたまま灌木の間をぶらぶらした。鮮紅の茨の実が滴り落ちた秘玉のようで、秋の空がその実の上であくまで碧く澄んでいる。もしこれで右手の入りこんだ平野が海だったら<placeName ref="#amanohashidate">天の橋立</placeName>という感じになるここの尾根だ。しかし、海であるより平野のこの方が変化があって私には好ましい。</p>
+        <p>今から十七八年も前のある夏、ここから一里ほど左方の<placeName ref="#yura">由良</placeName>という漁村へ海水浴に来て、私は機械という作をそこで書き上げたことがある。先日も<placeName ref="#yura">由良</placeName>はここから近いと聞いてなつかしくなり、峠越えに出かけてみた。終戦後二日目、私も元気がなく思い出を辿るばかりだったが、私の借りていた二階の部屋を下の路から見上げると、その窓から見知らぬ疎開者の女が一人、これも頬杖ついたまま行くさき分らぬ思案貌で私を見降ろしていた。十八年前の家主の<persName ref="#wada-ushinosuke">和田牛之助</persName>は死んでいて、そのときは、私は中へも入らずそのまま夕暮の漁村を素通りして来た。私のいまいる家の<persName ref="#sanuemon">参右衛門</persName>の所で生れた老婆の<persName ref="#rie">利枝</persName>は、この<placeName ref="#yura">由良</placeName>へ嫁入って来ているので、その日私は<persName ref="#rie">利枝</persName>の家で魚の御馳走になったりした。</p>
+        <p>「<placeName ref="#yura">由良</placeName>の婆さん、来るといいね。」</p>
+        <p>「もうそろそろ、いらっしゃるころよ。」</p>
+        <p>と妻はいう。この老婆の<persName ref="#rie">利枝</persName>は私も妻も好きで、子供たちも老婆の声がすると、「そら来た。」と跳び出て行くほどだが、私が<persName ref="#wada-ushinosuke">牛之助</persName>の二階にいたあの当時同じ浪を見ながら、老婆は何をしていたものだろう。私と妻はむかしの夏の海水浴の日のことを今日も柴を探しながら灌木の間で話した。<ruby><rb>紅</rb><rt>くれない</rt></ruby>の茨の実はそっと耳を立てているようだ。ぴっちり詰った海水着の水に浸る音を聞く風なその眼差し。――ああ、こ奴――</p>
+        <p>柴は相当に出来たので暫く二人は海を見ていてから、山を降りることにした。</p>
+        <p>「よっこらしょ。」と、妻は云って柴を背中に<ruby><rb>舁</rb><rt>か</rt></ruby>いだ。どういうものか柴を背負うと急に自分の年を思い出す。どっちも姿を見合いながら、</p>
+        <p>「もう駄目らしいぞ。お前もおれも、爺さん婆さんになったもんだ。」と私たちは笑い合った。</p>
+        <p>「しっかりしましょうよ。元気を出して下さいね。」</p>
+        <p>「いや、もうおれは諦めた。」</p>
+        <p>「でも、もう一度若くなるのは、あたしいやだわ。あんなこと、もうこれで沢山沢山。」</p>
+        <p>栃の実の降っている谷間を見降ろしながら、坂はだだ下りの笑いで一気に終りになってしまった。</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>晴れたかと思うとこの日も驟雨だ。遠山に包まれた平野の<ruby><rb>架</rb><rt>はさ</rt></ruby>の棒に刺さった稲束が、捧げつつをした数十万の勢揃いで、見渡すかぎり溢れた大軍のその中に降り込む驟雨。くっきり完璧の半円を描いた虹に収穫を飾られた大空の美しさ。本家の<persName ref="#sanuemon">参右衛門</persName>の家では、夕暮から<ruby><rb>餅搗</rb><rt>もちつ</rt></ruby>きをやり出した。例の鳥の巣の祝いである。大力の<persName ref="#tensaku">天作</persName>が搗くのでたちまち一臼が出来上り、私たちも鳥の巣餅を食べる。さみしい希望――</p>
+        <p><date when="--10">十月――日</date></p>
+        <p>山頂に一本高く見える楢の木に、日ごとに多く<placeName ref="#nihonkai">日本海</placeName>の方から<ruby><rb>鶸</rb><rt>ひわ</rt></ruby>の群が渡って来て止る。谷間の樹の根に溜り込んだ栗の実。一雨ごとに落ちた胡桃が籠に積ったまま触れるもののない板の間で、魚の匂いを嗅ぎ廻っている黒猫。花序を白ませた紫苑の丈が垣根に添い崩れて来る。</p>
+        <p>別家、<persName ref="#kyuzaemon">久左衛門</persName>の家の末娘の<persName ref="#setsu">せつ</persName>に縁談が起った。それがどちらも好調の様子で、仏の口という例の巫女からもこれは良縁と折紙がついて、彼の家はこのごろとみに色めき立っている。婿は<placeName ref="#shinjo">新庄</placeName>在の青年で牧場の種馬つけとかいう。大兵肥満の厚い唇の、この青年は、もう遠い<placeName ref="#shinjo">新庄</placeName>から汽車で来ており、<persName ref="#kyuzaemon">久左衛門</persName>の家から一向に帰って行く様子もない。どちらも初めて見合いしてから日数もたたず、まだ結婚の決定さえ見ぬ今のうちから泊り込んでいる。一種不思議な縁談の進行だ。</p>
+        <p>「<persName ref="#setsu">おせっちゃん</persName>は、この村一番の美人だと云うことですよ。」</p>
+        <p>と妻はあるとき私に云った。この末娘の<persName ref="#setsu">せつ</persName>は、<placeName ref="#yura">由良</placeName>の<persName ref="#rie">利枝</persName>の末の子と結婚する筈だったのに、それが<placeName ref="#okinawa">沖縄</placeName>戦で戦死して、これも日のたたぬ躊躇の折、責任を感じた<persName ref="#rie">利枝</persName>は自らすすんでこの<placeName ref="#shinjo">新庄</placeName>の婿との間を取りもった。<persName ref="#setsu">せつ</persName>は十九、ものに動じぬませた美しさのある娘で、父親に似ていてどこか冷たいリアリストの眼で、唇が赭く柔順だ。</p>
+        <p>「あの<persName ref="#kyuzaemon">久左衛門</persName>の家は、いまに罰があたるのう。」</p>
+        <p>とは、村のものの云うことだが、理由は寺で参詣人に物を売って儲けたからだそうである。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>今日は豪雨になった。橋は腹まで水に浸り、田も水底に見えず道路だけ、橋のように長く水上に浮いている。色を増した紅葉の間から、鮮やかな曲りで瑠璃色のあけびの実が垂れ、小豆の粒の艶麗な光沢と、毛ばだった<ruby><rb>牛蒡</rb><rt>ごぼう</rt></ruby>の種とが板の間に並ぶ。口を開いた<ruby><rb>無花果</rb><rt>いちじく</rt></ruby>畑の方向から山鳩の湿った声が、ホッホー、ホッホーとする。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p><ruby><rb>茗荷</rb><rt>みょうが</rt></ruby>のうす紅い芽に日が射している。雨は過ぎたらしい。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>の家へ<placeName ref="#yura">由良</placeName>から<persName ref="#rie">利枝</persName>が出て来た。<persName ref="#setsu">せつ</persName>の結婚の日が定ったからであるが、新しい婿を自分が取りもったとはいえ、戦死の子と結ばるべき縁だった<persName ref="#setsu">せつ子</persName>であれば、浮き足だった喜びに満ちている<persName ref="#kyuzaemon">久左衛門</persName>の家には居づらいらしく、暇を見ては生家の<persName ref="#sanuemon">参右衛門</persName>の炉端へ来て、愚痴をこぼしている。ところが、嫁入道具を見せる習慣があると見えて、私の妻も<persName ref="#kyuzaemon">久左衛門</persName>の家から呼ばれて行くと、今度は、<persName ref="#setsu">せつ</persName>の姉が<persName ref="#sanuemon">参右衛門</persName>の炉端へそっと脱け出て来て、これが自分の嫁入の際の無一物だった貧しさをこぼし、妹の豪華さを羨望して泣いている。</p>
+        <p>「なかなかお調度立派でしたよ。だけど、あちらはにこにこだし、こちらはめそめそだし、今日はあたしまで急がしいこと。」</p>
+        <p>妻はそう云いながら私のいる部屋へ来てから、突然、</p>
+        <p>「馬の種つけ係りって、何のことですか。」と訊ねた。</p>
+        <p>なるほど、そういう職業は知らないかもしれない。しかし、私は口に出して説明する気は起らなかった。この年になっても妻と話せぬことは、ときどきこれであるものだと思った。妻も私が黙っているので察したらしく、すぐ別のことを云う。</p>
+        <p>「あそこの家のことだと、どうしてみなが、あんなに悪口を云うんでしょうね。お婿さんになる人もさんざんよ。唇がでれりと下っているだとか、むっつりふくれ返って、言葉一つ云やしないとか、相撲取みたいだとかって。それにまた、大地主だっていうふれ込みだのに、蔵がないんだそうですよ。蔵のない地主ってあるものかどうか、というので、ぼそぼそ皆の人悪口いうんですの。」</p>
+        <p>「云ったところで、もう遅いだろ。あの<persName ref="#kyuzaemon">久左衛門</persName>にぬかりはあるものか。」</p>
+        <p>そういえば、これで三日も<persName ref="#kyuzaemon">久左衛門</persName>と私は会っていない。午前中は必ずやって来て、彼に午前の時間をつぶされる苦しさから、やっと逃れた好日だのに、どういうものか、この爺さんの顔が見えなくなるとやはり私は淋しくなる。私にとっては、この<persName ref="#kyuzaemon">久左衛門</persName>という老人はこの村で唯一の話の通じる人物になっているのだ。いつの間にか、私は私流の話の通じ口を一つだけこの村に掘りあてて、そこから毎日話の水を流し込んでいたようなものだったが、――おそらく、彼が私の時間を邪魔していたのではなく私が彼の時間を奪うようにしていたのかも分らない。</p>
+        <p>「あなたと話してると、どういうもんか面白うて面白うて――」</p>
+        <p>と、そんなにふと<persName ref="#kyuzaemon">久左衛門</persName>は呟いたこともある。米のこともいまだ私の方から依頼したことのないのも、一つはあまり毎日二人で話しすぎた結果であろう。私は彼に会うと、何の意もなく自然に話は私の見て来た他県のあれこれに関することになるのだが、私はもうこれで、いつの間にか、全国で行かない県はないまでになっている。自然にその地方の食物ならおよそどこのも見逃さずに食べて来てみた。話につれてその地の景色も眼に泛ぶが、ここの<placeName ref="#kuranori">鞍乗</placeName>りからの平野や海の眺め、米の美味さ、鯛と<ruby><rb>小鰈</rb><rt>こがれい</rt></ruby>の味の好さは、ここならではと思われるものがあっていつも話はそこで停り、<persName ref="#kyuzaemon">久左衛門</persName>の自信を強める結果になっているのだ。</p>
+        <p>「<placeName ref="#tokyo">東京</placeName>へは日露戦争のとき、出征するので一度通ったきりだ。」</p>
+        <p>とこういう<persName ref="#kyuzaemon">久左衛門</persName>には、私のする<placeName ref="#tokyo">東京</placeName>の話も興味をひくのも<ruby><rb>尤</rb><rt>もっと</rt></ruby>もなことにちがいない。中でも<persName ref="#tojo-hideki">東条英機</persName>という人の話は、私と町会が同じだと知ってからは、ひどくこの老人の興味をそそった風である。</p>
+        <p>「あの人は家を建てたとかで、一時はここでも悪ういわれたもんだがのう。」</p>
+        <p>「その家が実はおかしいことがあった。」</p>
+        <p>と、私もつい云わずも良いことを思い出し話してしまったことがある。私は外国から帰った直後のこと、何とかしてじかに一度土地というものへの愛情を感じて見たくなり、少し自分で持ってみたいと思ったことがあって、義弟のいる<placeName ref="#tamagawa">玉川</placeName>附近を二人で歩き廻ったある日のこと、むかしの神社の跡で<placeName ref="#hachimanyama">八幡山</placeName>という小高い丘の前へ立った。</p>
+        <p>「いいな、ここは。」と私は云った。</p>
+        <p>私はそこを買いたかった。赤松が沢山生えている傾斜地で、手ごろなここの空地は日をよく浴び草も柔かった。</p>
+        <p>「いいけれども、この赤松で首吊りがあったのですよ。」と義弟は一本の枝ぶりの良い松をさして云った。</p>
+        <p>ふと文句なく私は不快になった。</p>
+        <p>「じゃ、駄目だ。」</p>
+        <p>しかし、惜しい傾斜の中ごろのところで、その一本の赤松だけ不相応に延び下った枝で体を傾け、滑かな肌に日をよく浴びて美しかった。それから一二年の後再びその小丘の前に立ってみると、そこだけ縄張りのしてある中に、<persName ref="#tojo-hideki">東条英機</persName>建築敷地という立札が建ててあった。いやな所を買ったものだ、僕さえ止めたところだのにと思っていると、間もなくそのあたりは美しく切り開かれ、眼醒めるばかりの広闊な場所に変っていた。</p>
+        <p>「ところが、どういうものか、結果はこんな風になってしまって、もし僕がそのときあそこを買って置いたら。」</p>
+        <p>私が笑うと<persName ref="#kyuzaemon">久左衛門</persName>は、「ほう、ほう。」と鳥の啼くような声を出してから、</p>
+        <p>「首吊りはのう。」と云って黙った。</p>
+        <p>「二代目はピストルだが、やはり、首のところだ。」</p>
+        <p>しかし、<persName ref="#kyuzaemon">久左衛門</persName>には話はそこで止めねばならぬ不便もあった。何ぜかというと、彼は人の云うように、寺で物を売って儲けた人だからである。どうでも良いようなものの、それはやはり、どことなく云い難いものがあった。つまりはそこが彼の不幸な部分というべきものだろう。やはり、このような保守的な、限りもない習慣ばかりの村では、悲劇の種類も自ら違って来るのだ。そこがいつも話していてむつかしいところである。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>稲刈はまだ終ってはいない。悪天の連続でどの田の進行も遅遅としている。私は農家の収穫を見おさめれば<placeName ref="#tokyo">東京</placeName>へ帰ろうと思っているが、雁が空を渡っていく夕暮どきなど、むかしこの出羽に流された人人も恐らくこのような気持ちだったであろうと思われて、<placeName ref="#tokyo">東京</placeName>の空が千里の遠きに見え、帰心しきりに起ることがある。しかし、妻は反対で、このままここで埋もれてもいい、どこへも行きたくないという。</p>
+        <p>「しかし、いつまでもここにいたって仕方がなかろう。」</p>
+        <p>「じゃ、あなたはそんなにお帰りになりたいんですか。」</p>
+        <p>「特に帰りたいというわけでもないが、僕はここの冬は知らないからね。」</p>
+        <p>冬のことに話が落ちると妻も黙る。出羽で育った妻の実家の一族も遠い時代は<placeName ref="#kyoto">京</placeName>から来ている模様なので、冬の来るたびに夫婦の間で繰り返されたこんな言葉も、終生つづいたことだろう。また<placeName ref="#tokyo">東京</placeName>の冬は一年のうちでも一番良く、雨も風も少くて光線はうらうらとして柔かい。冬の<placeName ref="#tokyo">東京</placeName>を思うと私はもうたまらなく懐しいが、こんなとき<persName ref="#kyuzaemon">久左衛門</persName>はやってくると、一丈もつもるここの吹雪のことを云ってから、</p>
+        <p>「ここの<ruby><rb>鱈</rb><rt>たら</rt></ruby>は美味い。ここの冬の鱈は格別じゃ。」</p>
+        <p>と、ただ一つだけ良いことを云っては、食い物でつい私の決心を鈍らせる。私はまた寒鱈が至って好きだ。それも良いなア、とふと思ったりする。</p>
+        <p>こんな気がふと起るとなかなか後が厄介だが、半道の長い駅までの吹雪の中を一番の汽車に間に合せて、それから三駅<placeName ref="#tsuruoka">鶴岡</placeName>まで通う中学一年の私の子供のことを思えば、私より一層この冬は子供にとっては難事なことだ。</p>
+        <p>「ここにいるのは、幾らいてもらっても良いでのう。」と、<persName ref="#kyuzaemon">久左衛門</persName>は私に云うが、<persName ref="#sanuemon">参右衛門</persName>はそうすると、</p>
+        <p>「いられんと思うの。初めてのものには、冬は無理じゃ。」という。</p>
+        <p>一つの家に他家族との雑居は、どこまでこちらが他の方を邪魔しているのか程度が分らず、その不分明な心の領域がときどき権利を主張してみて暗影を投げる。影は事の大小に拘らず心中の投影であるから、互いの表情に生じる無理が傷をつけあう。しかし、こういうことはここの農家ではあまり生じない。<persName ref="#sanuemon">参右衛門</persName>の無作法さや我ままは怠け方同様に傍若無人で立派である。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>自分はいったいいつまで続く自分だろうか、よくも自分であることに退屈せぬものだ、と私はあきれる。外では、ひと雨ごとに葉を落していく山の木。茂みは隙間をひろげて紅葉を増し山は明るい。部屋に並べてある種子箱で、小豆が<ruby><rb>臙脂</rb><rt>えんじ</rt></ruby>色のなまめかしい光沢を放っている。毛ば立った皮からむき出た<ruby><rb>牛蒡</rb><rt>ごぼう</rt></ruby>の種の表面には、蒔絵に似た模様が巧緻な雲形の線を入れ、蝋燭豆のとろりと白い肌の傍に、<ruby><rb>隠元</rb><rt>いんげん</rt></ruby>が黒黒とした光沢で並んでいる。しかし、これらももう私の憂鬱な眼には、ただ時の経過を静に支えていてくれる河床の石のように見える。</p>
+        <p>赤襷の娘が秋雨の降りこむ紅葉の山越え、魚を売りに来る。海の色の乗り越えて来るような迅さで、<ruby><rb>鰈</rb><rt>かれい</rt></ruby>や<ruby><rb>烏賊</rb><rt>いか</rt></ruby>、えい、ほっけを入れた笊籠はどこの家の板の間にも転がり、白菜の見事な葉脈の高く積っているあたりから、刈上げ餅を搗く杵音がぼたん、ぼたん、と聞える。白む大根の冴えた山肌、濡れた樹の幹――</p>
+        <p><placeName ref="#yura">由良</placeName>の老婆の<persName ref="#rie">利枝</persName>は稲刈に出払っている<persName ref="#kyuzaemon">久左衛門</persName>の家の食事万端を一人でしており、</p>
+        <p>「もう<placeName ref="#yura">由良</placeName>へ帰らずに、うちの嫁になってくれんかの。」と調法がられている。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>家の<persName ref="#setsu">せつ</persName>は婿の田舎へ母につれられて二泊して帰って来ても、また婿も一緒である。二人は結婚式も済まさぬのに寝室を一つにしているらしい。のんきな皆の中で、これには<persName ref="#rie">利枝</persName>だけがいらいらして、<persName ref="#sanuemon">参右衛門</persName>の炉端へ逃げて来てはこう歎息する。</p>
+        <p>「おれらの嫁のときは、羞しくて婿と口もきけなかったのに、あの子は何という子だろうのう。ぺちゃくちゃ婿と喋ったり、今ごろから二人で一緒に散歩したり、部屋も閉め切って、一日二人が中から出て来やしない。式もあげずに何をしてるものだかのう。」</p>
+        <p>戦死した自分の子の幻影が泛ぶのであろうか。老婆は一晩愚痴をこぼしづめだ。そのため<persName ref="#sanuemon">参右衛門</persName>の妻女はいつまでも眠れないで弱りきり、今度は私の妻に睡眠の不足を訴えるが、新婚の夢の描く波紋はどうやら私の胸まで来てやっと止ったようである。私にはも早やそんなことは無用のようだ。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>来る日も来る日も同じことを繰り返している農業という労働。しかし、仔細に見ていると少しずつ労働の種類は変化している。もう忘れた日にして置いた働きが芽を伸ばし、日日結果となって直接あらわれて来ているものを採り入れ、次ぎの仕度の準備であったり、仕事にリズムがあって倦怠を感じる暇もない。他に娯楽といっては何もなさそうだが、そんなものは祭だけで充分忍耐の出来ることにちがいない。特に都会化さえしなければ農業自身の働きの中に娯楽性がひそんでいそうである。</p>
+        <p>私は<placeName ref="#tokyo">東京</placeName>から一冊の本も、一枚の原稿用紙も持って来ていない。職業上の必需品を携帯しなかったのは、どれほど職業から隔離され得られるものか験しても見たかったのだが、ときどき子供の鞄の中から活字類の紙片が見つかると、水を飲むように私は引き摺り出して読んだりする。中に抽象的な文章があったりすると急に頭は眠けから醒めて、生甲斐を感じて来る。も早や私には観念的な言葉は薬物に変っているらしく、周囲を取り包む労働の世界は夢、幻のように見えたりする。どういうものか。生物は自己の群から脱れると死滅していくという法則は私にも確実に作用し始めているのであろう。――こういうときには、私は振り落されそうな混雑した汽車に乗り<placeName ref="#tsuruoka">鶴岡</placeName>の街まで出て行くのだ。私の労働は汽車の昇降口で右を向いたり左に廻されたり、捻じ廻されることであって、これは相当に私には愉しみだ。</p>
+        <p>私は昨夜<placeName ref="#tsuruoka">鶴岡</placeName>の<placeName ref="#takesukeya">多介屋</placeName>で一泊させて貰ったが、そのとき主人の<persName ref="#sasaki-katsuyoshi">佐々木</persName>氏が<persName ref="#kishida-ryusei">岸田劉生</persName>の果物図の軸物を懸けてくれた。淡彩の墨絵だが、しばらく芸術品から遠ざかっていた近ごろの生活中、一点ぽとりと滴り落ちて来た天の美禄を承けた気持ちで、日ごろ眼にする山川は私の眼から消え失せた。美を感じる歓びの能力が知性の根源だという新しい説には、私は賛成するものだ。旧哲学の顛覆していく場所もここからだろう。</p>
+        <p>帰って来て見ると、<placeName ref="#yura">由良</placeName>の老婆の<persName ref="#rie">利枝</persName>は、<persName ref="#kyuzaemon">久左衛門</persName>の台所から、妹が宝のように隠してあった三年<ruby><rb>諸味</rb><rt>もろみ</rt></ruby>の味噌を持ち出して、<persName ref="#sanuemon">参右衛門</persName>の台所へ、どさりと置いた。そして、食べよ食べよと云いながら、</p>
+        <p>「あの婆アは慾ふかだでのう。こうして盗ってやらねば、くれたりするもんか。」</p>
+        <p>この三年諸味は<persName ref="#kiyoe">清江</persName>が欲しくて、<persName ref="#kyuzaemon">久左衛門</persName>の妻女に幾度頼んでもくれようとしなかったものである。また夕暮になってから、<persName ref="#rie">利枝</persName>は駈け込んで来て、</p>
+        <p>「あの婿は、おれを飯炊き婆と思うてるんだよ。挨拶一つもしてくれやしない。一口ぐらい物いうてくれて良さそうなものじゃないか。」</p>
+        <p>こうも云っては暴れている。ひどく悲しいらしい。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>雨は降りつづく。刈上げをすませた農家も雨で取り入れが出来ない。このため収穫時のさ中に意外な閑がどの家にも生じて来たので、農事の他の仕事、街へ出て行ったり、実家へ戻ったり、遠い田舎の親戚間との往復など、どこの炉端もそんな出入が頻繁になって来た。このような人の交流が旺んになると、より合う話はまた自然に物の値段の噂話となり、それだけ値の低い村の物価が揺れのぼっていく結果となるのみだ。</p>
+        <p>酒一升を三十円で買いとった疎開者らが、それを都会へ持ち運んで三百円で売っているという話、米一升を十円で買い集めては、それを七十円で売り<ruby><rb>捌</rb><rt>さば</rt></ruby>いている疎開者の話、うっかり図にのって米を買い集められた人の好い村では、そのため米が無くなり逆に疎開者から高値の米を買わされているという滑稽な話など、そんな山奥生活の話も聞えて来てどの炉端も哄笑が起っている。</p>
+        <p>「都会のものはどれほど金を持ってるものやら、もう分らない。幾らでも持ってるもんだ。」</p>
+        <p>と、こういう村のものらの結論は今はどこでもらしく、私などの所持金もうすうす皆は見当をつけているのであろうが、中に一軒、疎開者を置いているある農家のもので、うちの疎開者は少しもうちから物を買ってくれたことがないと云ってこぼしているのもある。私としては、他で金を落すものならこの村で落して行きたいと思っているのだが、買いたいと思うと、「おれんとこは商売はしたことがないでのう。」と、暗に私係りの<persName ref="#kyuzaemon">久左衛門</persName>に当ったことを云ったりする。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p><persName ref="#kawabata-yasunari">川端康成</persName>から三千円送ってくれた。鎌倉文庫の「紋章」の前金だが、一度も催促したこともないのに、見当をつけたようにぴたりと好都合な送金で感謝した。これでひと先ず帰り仕度は出来たとはいえ、終戦以来最初の入金のためか、再び活動をし始めた文壇の最初の一息のようで、貴重な感じがする。</p>
+        <p>立ちこもった霧雨の中から糸杉、槙の葉、栗の枝が影絵のように浮き出ている。<persName ref="#sanuemon">参右衛門</persName>の家では今日は刈上げ餅を夕方から搗き始めた。夜のお祝いに私たち一家のものも隣室の仏壇の間で御馳走になった。中央の大鍋いっぱいにとろりと溶け崩れた小豆餅、中鍋には、白い澄し餅がいっぱい。そして、楕円形の見事な大櫃には盛り上った白飯が置かれ、それを包んで並んだ膳には、主人の<persName ref="#sanuemon">参右衛門</persName>がこの日磯釣りして来たあぶらこという魚が盛ってある。主人の横に、まだ復員しない長男の蔭膳が置かれてあって、これとその嫁の膳と並んで二つだけ高膳である。</p>
+        <p>私ら一家疎開者の客には、粒粒辛苦一年の結実ならざるなき膳部が尽く光り耀くごとき思いがした。厚い鉄鍋で時間をかけて煮た汁や餅は実に美味だ。あぶらこという魚は長さ四五寸の小さなものだが、このあたりではこの魚を非常に珍重する。なまずを淡泊にした細かい味のものだ。</p>
+        <p>その他、醤油も味噌も、そば、納豆、菜類、これらは皆、ここの<persName ref="#kiyoe">清江</persName>一人の労働で作ったもので、「雨の日も風の日も」と、人の謡うのも道理だと思った。<placeName ref="#yura">由良</placeName>の老婆もこの夜は私の前の膳について神妙に食べている。<persName ref="#sanuemon">参右衛門</persName>はどこで手に入れたものだか珍らしく私に一献酒を注いでくれた。久しぶりの酒である。いつも祭日より帰って来ない<persName ref="#sanuemon">参右衛門</persName>の末娘の<persName ref="#yuki">ゆき</persName>も来ている。この村の一番の大地主の所へ奉公している十七の娘だが、長男の嫁と二人並ぶと仏間も艶めき、その傍ら忽ち平げていく<persName ref="#tensaku">天作</persName>の手つきも鮮やかだ。初めはどうしてこれだけの餅と飯と汁とを食べるだろうと思っていると、見る間に八方から延び出る手で減っていくその迅さ、私の食慾などというものは生存の価値なきがごときものだ。やはり私は見るために生れて来た人間だとつくづくと思った。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>澄み重なった山脈のその重なりの間に浮いた白雲。刈田の上を群れわたっていく渡鳥。谷間で栃の実がひそかに降っている。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>は田の中でまだ稲刈をしている若者を見ながらいう。</p>
+        <p>「おれの若いときは一時間に二百五十束もしたもんだ。ところが、今の若いものは、よく出来るもんでも百二十束だのう。ほら、あの通り、掴んで刈った束の置き方も知らんのじゃ。掴んで切りとったのをすぐ横に置く。あれは縦に置かぬと駄目なものじゃて。」</p>
+        <p>「あなたの田はまだ刈り上らないんですか。」と私は訊ねた。</p>
+        <p>「今年は三週間も遅れている。稲が乾かぬのじゃ。奥手はこれからだのう。」</p>
+        <p>少し日の目を見ると<ruby><rb>架</rb><rt>はさ</rt></ruby>の稲を一枚ずつ裏返して干している。田の稲を刈っても米になるまでには三週間もかかるというとき、早米の収穫でようやく補給をつけていた農家も、稲の乾きの遅さでまた食糧を借り歩くようになり、<persName ref="#kyuzaemon">久左衛門</persName>の家の貯蔵米がまたしても人人から狙われて来たということだ。一度退散した<persName ref="#kyuzaemon">久左衛門</persName>の気苦労は再び増して来始めた風である。</p>
+        <p>「ないのも困るが、有るのも困ったものじゃ。」と彼はとうとうそんな音をあげた。</p>
+        <p><placeName ref="#yura">由良</placeName>の老婆の<persName ref="#rie">利枝</persName>はまだ<persName ref="#kyuzaemon">久左衛門</persName>の所から帰らないが、今日も<persName ref="#sanuemon">参右衛門</persName>の炉端へ駈けこんで来て、</p>
+        <p>「とうとう婆アと喧嘩してやった。姉妹だというのに、もう米も貸してくれやせんわ。剛っ腹だぜ、そら、持って来てやった、食べよ食べよ。」</p>
+        <p>と云いながら、前垂の下から野菜や芋の煮つけを出す。<persName ref="#kiyoe">清江</persName>は笑っているだけだ。<placeName ref="#yura">由良</placeName>の漁場では<placeName ref="#tokyo">東京</placeName>の網元が焼失してしまっており、網の修繕が出来ず、油も高くて来ないところへ、復員の子が一人増し、米は何としても<persName ref="#kyuzaemon">久左衛門</persName>の家から都合をつけずにはいられない。<persName ref="#setsu">せつ子</persName>の結婚式用の魚を揃える約束で今から米を催促している老婆の苦労は、こうして朝毎の姉妹喧嘩となって、台所をばたばたと活気づけるのだが、この<persName ref="#rie">利枝</persName>は来るたびにまた板の間を、拭く癖がある。</p>
+        <p>「ここはおれの生れた家だでのう。こうしてふき掃除して美しゅうして置かんと、来た気がせんわ。」</p>
+        <p>別に私たちへの当てつけではない。私の部屋の縁先まで拭きつづけてくれては、一寸休むと庭の竹林を眺めている。</p>
+        <p>「むかしは美しかったがのう、ここの庭は。それにもう石も樹も、ありゃしない。」</p>
+        <p>この老婆は立てつづけにべらべらと無邪気に喋り散らすかと思うと、すぐ炉端でい眠っている。七十年間、一里半向うの漁村とこの村との間より往き来をせず、その二村のことなら何事も知っていて、人が聞こうと聞くまいと、のべつ幕なしに話すので、およそのこと、誰が誰から幾ら儲けたとか、誰が誰を口説いて嫁にしたとか、狐が誰にひっついたとか、――私の子供までが知ってしまう。<persName ref="#kiyoe">清江</persName>はにこにこして聞いているが、</p>
+        <p>「あれで家へ帰れば、嫁に虐められるのだがのう。」と私の妻にそっという。</p>
+        <p>しかし、いつ見てもこの<placeName ref="#yura">由良</placeName>の老婆は美しい。私にもしこんな老婆が一人あったなら良かっただろうと思う。いっか一度、<persName ref="#sanuemon">参右衛門</persName>たちの集っているところで、「あのお婆さんは美しい人だなア。」と、ふと私が洩すと、一同急に眼を見張って私の方を見た。そして、意外なことを云うものだと不思議そうに黙ったことがあるが、漁村の白毛の老婆の美醜などいままで誰も気にとめたことはなかったのだろう。この老婆のいるために、私にはこの村や山川がどれほど引き立ち、農家の藁屋根や田畑が精彩を放って見えているか知れない。そういえば、<persName ref="#sanuemon">参右衛門</persName>の怠けぶりもまたそうだ。彼が徹底した怠けものであるところが、何となくこの村に滑稽でゆとりのある、落ちついた風味を与えている。配給物の抽籤のとき彼はいつも一等を引きあてるが、どういうものか、それがまた人人の笑いを波立てる。</p>
+        <p>夜になると、炉端で<persName ref="#kiyoe">清江</persName>が畑から切って来た<ruby><rb>砂糖黍</rb><rt>さとうきび</rt></ruby>の茎を叩いている。この寒国でも今年から砂糖黍を植え始め、自家製の砂糖を作るのだが、それも今夜が初めてで炉端もために賑やかだ。一尺ほどの長さに切った茎を大きな<ruby><rb>俎</rb><rt>まないた</rt></ruby>の上で叩き潰しては、大鍋の中へ投げ入れ投げ入れして、</p>
+        <p>「ほう、これや甘い。なるほど、これなら砂糖になるかもしれないや。」</p>
+        <p>太股をはじけ出した<persName ref="#sanuemon">参右衛門</persName>は、糖黍の青茎を<ruby><rb>噛</rb><rt>かじ</rt></ruby>ってみてはふッふ、ふッふと笑っている。少し鍋が煮えて来ると、蓋を取ってみて、汁を一寸指につけては、</p>
+        <p>「ほう、甘い甘い。今にのう、ぼた餅につけて、うんと美味いの食べさせてやるぞ。」</p>
+        <p>と、私の子供らにいう。子供らは面白がって庖丁ですぽりすぽりと糖黍を切り落していく。<persName ref="#sanuemon">参右衛門</persName>は<ruby><rb>杓子</rb><rt>しゃくし</rt></ruby>で<ruby><rb>攪</rb><rt>か</rt></ruby>き廻しているうち、鍋の汁は次第にとろりとした飴色の粘液に変って来る。</p>
+        <p>「ほう、これは美味い。砂糖だ。」</p>
+        <p>相好を崩してそういう<persName ref="#sanuemon">参右衛門</persName>の髭面へ、鍋炭が二本灼痕のように長くついていて、味噌や醤油を作る夜とはだいぶ様子が違っている。大人に見えるのは<persName ref="#kiyoe">清江</persName>一人だ。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>路の両側から露れて来た茨の実。回復して来た空に高く耀く柿の実。紅葉の中から飛び立つ雉子の空谷にひびき透る羽音。農家はこうしてまた急がしくなって来たようだ。朝霧の中で揺れている馬の<ruby><rb>鬣</rb><rt>たてがみ</rt></ruby>。霜の降り始めた路の上で鳴りきしむ<ruby><rb>轍</rb><rt>わだち</rt></ruby>の音――</p>
+        <p>一俵千五百円で二十五俵を都合をつけてくれという闇師が、先日からこの村へ潜入して来ている。<placeName ref="#tokyo">東京</placeName>までトラックで運ぶということ、そんなことは出来るものではないという結論で、これは<ruby><rb>纏</rb><rt>まとま</rt></ruby>らなかった様子だが、そのときから米の値は一躍騰った。一升が四十円ほどになって来たのだ。<placeName ref="#tokyo">東京</placeName>からの通信では六十円から七十円になっている。一升五円以上の値で売るものなどこの村にはないのうと、そう<persName ref="#kyuzaemon">久左衛門</persName>の云っていたのは夏のことだ。それが二十円になったときには村のものらは眼を見張ったものだが、今は誰もが、暴れ放された<ruby><rb>駻馬</rb><rt>かんば</rt></ruby>を見るように田の面を見ているばかりである。</p>
+        <p>「これじゃ、この冬は餓え死するものは多いのう。」</p>
+        <p>と、<persName ref="#kyuzaemon">久左衛門</persName>は気の毒そうにいう。</p>
+        <p>「もうこんなになっちゃ、<placeName ref="#tokyo">東京</placeName>へ帰って隣組の人達と一緒に、餓え死する方がよござんすわ。帰りましょうよ。」</p>
+        <p>と、妻は私にそっという。帰る決心のついたことは良いことだ。この夜、妻は衣類を巻いて隣家の<persName ref="#soza-emon">宗左衛門</persName>のあばの家へ裏からこっそり出ていった。そして、戻って来てから、</p>
+        <p>「<persName ref="#soza-emon">宗左衛門</persName>の婆さん、<persName ref="#soza-emon">宗左衛門</persName>の婆さん。」と嬉しそうに呟いている。話はこうだ。妻が一俵四百円で米を売ってはくれまいかと頼むと、この寡婦は眼を丸くぱちぱちさせていてから、暫くして、</p>
+        <p>「罰があたる、罰があたる。」とそう二言いって顔を横に振ったそうだ。「そんな高い金では売られない。供出すると六十円だぞ。それに四百円――罰があたる、罰があたる。」とまた云った。</p>
+        <p>「それだって、お米が買えなけれやあたしたち、餓え死するわ。売って下さいよ、四百円でね。」</p>
+        <p>「売られん売られん。この間も常会で、二百円までなら闇じゃないということになったでのう。おれは闇は大嫌いだ。百五十円なら一俵だけだと、何とかなるが。」</p>
+        <p>「でもそれじゃあんまりだわ。じゃ、三百円。」と妻は云った。</p>
+        <p>横から、<placeName ref="#tokyo">東京</placeName>へ嫁入して手伝いに戻っている娘が聞いていて、妻の持って来た衣類を見ると、「欲しいのう。おれの着物にしてくれ。」と云い出した。そこで話は、米は売らぬが足らぬ前だけ少しずつならやるという相談になったらしい。</p>
+        <p>「今どきこんな人もいるのかしらと思ったわ。あたし、帰りに二度も転んで、ああ痛ッ、ここ打って――ああ痛ッ。」</p>
+        <p>妻は横に身体を崩し今ごろ腰を撫でている。上には上があり、下には下があるものだと私は思った。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>山峡から山の頂へかけて一段と色を増して来た紅葉。ゆるぎ出て来たように山肌に幕を張りめぐらせた紅葉は、人のいない静かな祭典を見るようだ。鮮やかなその紅葉の中に日が射したり、驟雨が降りこんだりする間も、葉を払い落した柿の枝に実があかあかと照り映え、稲がその下で米に変っていく晩秋。朝夕の冷たさの中から咲き出して来た菊。どの家の仏間にも新藁の俵が匂いを放っていて、炉端の集団は活き活きした全盛の呼吸を満たして来る。</p>
+        <p><persName ref="#sanuemon">参右衛門</persName>の仏間の十畳も、新藁でしっかり胴を縛った米俵が重重しく床板を曲らせて積み上り、先ず主婦の<persName ref="#kiyoe">清江</persName>の労苦も報われた見事な一年の収穫だ。確実に手に取り上げてみた事実の集積で、心身の潔まるような新しい匂いが部屋に籠っている。明るい。――しかし、まだ出征している<persName ref="#kiyoe">清江</persName>の長男は帰って来ない。遠山にもう雪がかかっているのに。</p>
+        <p>銀杏の実が降って来る。唐芋という里芋と同じ芋は、ここでは泥田の中で作っているが、<persName ref="#kiyoe">清江</persName>はこれを掘りに朝からもう泥の中へ浸ってがぼがぼ攪き廻している。私は感動より恐怖を覚えた。もうこの婦人は労働マニアになっているのではあるまいか。</p>
+        <p>私は沼の周囲の路をまた一人で歩いてみる。この路は平坦で人のいたことは一度もない。垂れ下った栗の林に包まれ落葉が積っているので、つい私はここへ来て一人になる。そうすると、いつも定って私の胃には酸が下って来て腹痛になり、木の切株に休みながら沼に密集した菱の実を見降ろしてじっとしている。自然に埋没してしまう自分の頭が堪らない陰鬱さで動かず、振り立てようにもどうともならぬ無感動な気持ちで、<ruby><rb>湮滅</rb><rt>いんめつ</rt></ruby>していった<placeName ref="#nishi-haguro">西羽黒</placeName>の堂塔の跡を眺め廻しているだけだ。</p>
+        <p>人間全体に目的なんてない。――私は突然そんなことを思う。それなら手段もないのだ。生を愉しむべきだと思っても酸が下って来ては死が内部から近づいて来ているようなものである。びいどろ色をした、<ruby><rb>葛餅</rb><rt>くずもち</rt></ruby>色の重なった山脈の頂に日が射していて、そこだけほの明るく神のいたまうような気配すらあるが、私の胃の襞に酸が下って来て停らない。眼に映る山襞が胃の内部にまで縛りつづいて来ているように見える、ある何かの<ruby><rb>紐帯</rb><rt>ちゅうたい</rt></ruby>を感じる刻刻の呼吸で、山波の襞も浸蝕されつつあるように痛んで来る。切断されようとしている神――木の雫に濡れた落葉の路の上で栗のいがが湿っている。沼岸の雑草の中を匐い歩く一疋の山羊だけ、動き停らない。縛られた綱の張り切った半径で円を描きながら、めいめい鳴き叫び草を蹴っている山羊の白さは、遠山の雪のひっ切れた<ruby><rb>藻掻</rb><rt>もが</rt></ruby>き苦しむ純白の一塊に見えて、動かぬ沼の水面はますます鮮かな静けさを増して来る夕暮どき――</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p><placeName ref="#amarume">余目</placeName>から<placeName ref="#mogamigawa">最上川</placeName>に添って<placeName ref="#shinjo">新庄</placeName>まで行く。<placeName ref="#mogamigawa">最上川</placeName>の紅葉はつきる所がない。万灯の列の中を過ぎ行くように明るい。傍に<placeName ref="#nansen">南鮮</placeName>から引き上げて来たばかりの三人の婦人が語っている哀れな話も、紅葉の色に照り映って哀音には響かず、汽車は混雑しながらいよいよ<ruby><rb>錦繍</rb><rt>きんしゅう</rt></ruby>の美に映えてすすむ。妻の亡父がこのあたりの汽車から見える滝のあたりに、自分の山のあることを話していたのを私は思い出し、注意して見ているうち、対岸の断崖から紅葉の裏を突き通して流れ落ちている滝が見えた。ここだなと思う。</p>
+        <p>「現金なものですね。毎日したしく話していた<placeName ref="#chosen">朝鮮</placeName>人も、その日からぱったり私らと話さなくなったんですよ。お金も家も何もかも奪られてしまうし。」と一人がいう。</p>
+        <p>「あたしはそうじゃなかった。あなたここで<placeName ref="#chosen">朝鮮</placeName>人になってしまいなさいって、そういってくれるんです。なってやろうかなと、あたしは思った。今さら郷里へ帰ったってねえ。」</p>
+        <p>こういう声を後にして三時に<placeName ref="#shinjo">新庄</placeName>へ着いた。醤油醸造家の<persName ref="#inoue-matsutaro">井上松太郎</persName>氏の邸宅へ向う。この夜ここで催される座談会に私は出席するためである。</p>
+        <p><persName ref="#inoue-matsutaro">井上</persName>氏の庭は数千坪の見事なもので、廊下でつながった別棟の数軒に囲まれた広い庭の中央に、大きな池があり、根元から五つに岐れた<ruby><rb>榧</rb><rt>かや</rt></ruby>の大木が枝を張っている。島にかかった俎形の石橋が美しく、左端の池辺にのぞんだ私たちに当てられた部屋には日光室もある。小雨が降って来て、濡れた落葉の漂う庭の向うから<persName ref="#chopin">ショパン</persName>の練習曲が聞えて来る。疎開して来ている大審院の検事総長の部屋のピアノだとのことだ。落葉の静かな池辺によく似合った曲で、晩秋の<placeName ref="#tokyo">東京</placeName>の美しさがこういう所へ移って来ているのを感じた。</p>
+        <p>夕食に<placeName ref="#mogamigawa">最上川</placeName>で獲れた鮭が出る。見事な味で、その他、鮪、豆腐、なめこ、黄菊、<ruby><rb>天麩羅</rb><rt>てんぷら</rt></ruby>、生菓子、いくら等。</p>
+        <p>座談会に集った人たちは二三十人で、私は昨夜考えて来た田園都市と文化人と題し、重苦しいテーマ二十ばかりを出して概略を述べてみた。</p>
+        <p>「私たちの階級では、諦めということが何よりの訓練とされておりまして。」と、こう云った婦人が一人あった。私の階級とはどのような階級か私には分らなかったが、人人が帰った後でその婦人は、この地方の旧大名の夫人だと判明した。その後で、またこの地方の大地主三人がしきりに小作人問題で討論していた。ここの地主階級では諦めの訓練が不足しているようだと、ふとそんなことを私は思った。</p>
+        <p><placeName ref="#tsuruoka">鶴岡</placeName>から私を案内して来てくれた<persName ref="#sasaki-katsuyoshi">佐々木剋嘉</persName>君とここで一泊して、翌日二人は四時の列車で帰る。<placeName ref="#amarume">余目</placeName>まで来たとき、大きな五升入の醤油樽を背負っている<persName ref="#sasaki-katsuyoshi">佐々木</persName>君が、</p>
+        <p>「これをどうして<placeName ref="#mizusawa">水沢</placeName>まで持って帰られますか。」と訊ねた。</p>
+        <p>「その樽は私のですか。」</p>
+        <p>「そうです。<persName ref="#inoue-matsutaro">井上</persName>君があなたにと云ってお土産にくれたものですよ。」</p>
+        <p>重い醤油を始終背負ってくれながら、長い間今まで黙っていてくれた<persName ref="#sasaki-katsuyoshi">佐々木</persName>君に私は恐縮した。この夜は、<placeName ref="#tsuruoka">鶴岡</placeName>の同君の所で厄介になり、二度の恐縮である。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>一年を通じて<date when="--11">十一月</date>の路ほど悪い路はないと、私のいる村では云うが、まったくこの月の路は路ではない。<persName ref="#sanuemon">参右衛門</persName>は山へ<ruby><rb>自然薯</rb><rt>じねんじょ</rt></ruby>を掘りに行く。彼のする仕事の中でこれほど愉しみなことはないそうだ。私の妻は腹痛で寝ており、<persName ref="#sanuemon">参右衛門</persName>の妻はまた泥田の中で唐芋を掻き廻している。冬越しをするには無くてはならぬ食料だ。空気は冷えて来て濡れた山肌に大根の白さが冴え静まり、揺り動かすように落葉だけ散って来る。</p>
+        <p><persName ref="#sasaki-katsuyoshi">佐々木</persName>君の所から<placeName ref="#shina">支那</placeName>哲学の書を買って来たのを読み終ったが、少しも要領を得ない。<persName ref="#confucius">孔子</persName>の次ぎの時代に<placeName ref="#greece">ギリシャ</placeName>のソフィストに似た一群の隠者たちの思想に、私のまだ知らなかったものが多かった。文明を支えていたこれらの名も知れぬ高度の知性は、その高級さのために滅んでいき、吾吾に残されて来たものは概念の強い平凡な骨だけだということ。しかし、この骨を叩いてみて肉の音を知るには、よほどの年月を必要とすることだろう。先日、<persName ref="#sato-masaaki">佐藤正彰</persName>君が<placeName ref="#tokyo">東京</placeName>から見えた折の話だが、同君の父君は漢学の大家の<persName ref="#sato-masanori">正範</persName>氏で先年七十幾歳で亡くなった学者――この学者は専門七十年の漢学の末、説文と称する文字の起源を調べる学問に達して亡くなられたが、これはまだ殆ど誰も手をつけたことのない学問の部とされている。</p>
+        <p>「あなたの専門の<placeName ref="#france">フランス</placeName>語も七十年もかかりますか。」と私は訊ねてみた。</p>
+        <p>「それや、かかるでしょう。」</p>
+        <p>「じゃ、文学は一番かからないというわけになりそうだが、かかるかな。」</p>
+        <p>「それや、かかる。」</p>
+        <p>「じゃ、まだ僕は二十年だ。」</p>
+        <p>よろし、もう二十年、と、こんなところでどちらも笑ってから、その後で<persName ref="#kyuzaemon">久左衛門</persName>に会ったとき、農家の仕事のうちで何が一番難しいかと私が訊ねると、</p>
+        <p>「種を選ぶことだの。」と即座に答えた。</p>
+        <p>どの田畑にどの種を選んで播くかということの難しさは、六十八歳になった達人<persName ref="#kyuzaemon">久左衛門</persName>も、これだけはまだ分らぬとの事だ。おそらく一生かかっても分りそうにもないという。私らも連作してはならぬ茄子だったり、トマトだったりしているのであろうが、誰も訓えてくれるものではない。自分を工夫するとはどうすることか、それさえ誰も云ったものはない。いや、自分がトマトか南瓜かそれも分らぬ。七十年、百年たっても――。ただ一生の間にちらりと蝶の来てくれること、そればかり待っているのだ。<placeName ref="#shina">支那</placeName>の隠者たちは空しく死んでいったのであろうか。<ruby><rb>篆刻</rb><rt>てんこく</rt></ruby>の美は、死の海に泛んだ生の美の象徴ではなかったか。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>農家はどこも三日間刈り取り祭だ。盆、正月以外ではこれが最も大きな祝い日である。隣組のどの家からも餅を貰う。夕刻六畳の私の部屋は並んだ餅で半分点点と白くなった。家家に随って餅には個性がある。見ていると篆刻のようで、家の盛衰も餅の円形に顕れている。これはどこ、それはあそこ、と私は想像で当てるとほとんど的中したが、現在というものが餅に姿を顕しているのも、手で作った円形という最も簡単で、難しい威厳あるものを無意識で作ったからであろうと思う。祈りは餅に出るものだ。</p>
+        <p>昼食を私一人が<persName ref="#kyuzaemon">久左衛門</persName>の家で御馳走になる。<persName ref="#setsu">せつ</persName>の新婿も一緒だが、この婿は終始少しも喋らず無愛相な顔で、ぺろぺろと食い、最後に一言だけ、突然、</p>
+        <p>「嫁をもらうまでは、おれは女を、買った買った。」と妙なことを云った。</p>
+        <p>そして、「おい、<persName ref="#setsu">おせつ</persName>、火つけてくれ。」と云ったかと思うと、部屋の一隅に二間ほど離れている<persName ref="#setsu">せつ</persName>の所へ、一本煙草を投げつけた。別に怪しむものもない。愛情を示した見栄のこの荒荒しい挙動がも早や普通のこととなっている二人の生活だ。それも種馬つけという天然の破壊を行う作業が、また二人の間でも物柔かな紐帯で行われている日日を、ふと私も普通の生活のように思い込み一緒に箸を動かしているのである。</p>
+        <p>すると、夕食には、私は<persName ref="#sanuemon">参右衛門</persName>のところから呼ばれて、いつもの仏間で馳走になった。このときには、私の前に、特攻隊から帰還して来たばかりで、いま一台で飛び立つ間際に終戦になったという青年が、客となって来ていた。これは生命の破壊を事もなげに、一瞬の間にやり終る訓練に身を捧げた若ものである。</p>
+        <p>「ああ、もう、助かったのか死んだのか、分らん分らん。」</p>
+        <p>とそんなことを云いつつ、実に<ruby><rb>暢気</rb><rt>のんき</rt></ruby>に、傍にいる父から酒を注がれている。先日から煮溜めた砂糖黍の液汁に浸した小豆餅が、大鍋の中で溶けているのももう忘れ、私の妻は、特攻隊員だと聞かされてからは、突然戦争が眼前に展開されているのを見るように、表情が変った。そして、</p>
+        <p>「死ぬこと恐くありませんでした。」</p>
+        <p>と、恐わ恐わ訊ねた。</p>
+        <p>「あんなこと、何んでもない。分らんのだもの。」</p>
+        <p>こういう青年の傍でも、どういうものか、私はまた全く普通のことのように思いつつ箸を動かしているのである。恐るべき速度で何事か皆かき消えて進んでいるのだった。速度の方が恐ろしい、茫然としたこの痴漢のような自分の中で、何が行われているのか私ももう知らない。特攻隊は鼻謡を唄いながら、ケースをポケットから出し、抜き取った煙草を一本ぽんと叩いて、今夜これから寺で芝居をして来るのだと云っている。異常なことが日常のありふれた事に尽く見えてしまっている今日この頃の心情は、われも人も同様に沸騰した新しさだ。私は自分がどれほど新しくなっているのかそれさえも分らぬが、これを表現する言葉は誰にもない。おそらく、誰も自身の心情を表現し得るということはもう出来ないのにちがいない。すべてを普通のこととしてしまう本能の自然さといえども、今までは、そこにまだ連絡した心理があった。しかし、今はそれもない。人生にはいつも幕間が用意されているものだが、この幕間は人のものか神のものか分らぬながらも、どこかの一ヵ所だけ森閑とした部分がある。そこでひそひそ声がしているようだが、おそらく、それは人の声ではないのだろう。</p>
+        <p>そら芝居が始まった、と云って、子供らは<placeName ref="#shakado">釈迦堂</placeName>の方へ駈け出ていく。特攻隊も出ていった。その後で、<persName ref="#sanuemon">参右衛門</persName>と青年の父親とがなお二人で飲み続け、舌の廻りも怪しくなって来るのを私は隣室で聞いていると、いつまでも絡み合っていてきりがない。<persName ref="#sanuemon">参右衛門</persName>は濁酒を作ってくれと頼まれて、お礼をすると云われたのが気に喰わぬ、水臭いと云って怒っている。それをまた特攻隊の親父が弁解する。この二人の酔漢の芝居が止み間もないその中に、寺の芝居は済んで特攻隊が戻って来たが、<persName ref="#sanuemon">参右衛門</persName>ら仏間の「水臭さ」劇は止まる様子もない。とうとう一時だ。そして、最後の二人の科白は――</p>
+        <p>「もうじき、共産主義になるそうじゃ、面白いのう。あはははは――」</p>
+        <p>「とにこうに、おれは、礼をされて作るとあれば、いやじゃ、そんなのは、おれは――」</p>
+        <p>「共産主義になったところで、おれらには、何もないでのう。あはははは。」</p>
+        <p>「とにこうに――」</p>
+        <p>「あはははは、おれは、酔っぱらう奴は大嫌いじゃ。」</p>
+        <p>「いや、礼をされて――」</p>
+        <p>と、このような調子である。冗漫さというものも度を越すと面白い。これで人生は退屈しないのだ。間もなく、一人がその場へ眠ると、次ぎも眠った。私は眼が冴えいよいよ蚤との苦闘はこれから始まるところだが、この百ヵ日にあまる無益な苦しみは、想像を絶して苦しい私の劇だ。私は、今は蚤のことあるばかりで退屈をしない模様である。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>祝いがつづいた二日目、隣家の<persName ref="#soza-emon">宗左衛門</persName>のあばは、軒の<ruby><rb>葱</rb><rt>ねぎ</rt></ruby>をひき抜きながら、</p>
+        <p>「あーあ、退屈だのう。」</p>
+        <p>とそう呟くのが、私の立っている縁側まで聞えた。二日目にこの寡婦は、もう遊ぶことに退屈しているのだ。この家の裏の家では、今日は、私のいる隣組の娘たち全部と、若い嫁たちが集って、持ちよりの品で一日自由に食べくらし、遊び暮す。当番に当っているその家から、賑かに出入する娘らの声がよく聞える。娘たちの娯楽といえばたったそれだけだそうだが、他人目から見ればつまらなそうな遊びながらも、本人にしてみればおそらくこれほど愉快な娯楽はあるまい。厳しい老人たちの眼から離れ、ぺちゃくちゃ喋る話の中には、この村一の美人といわれる<persName ref="#setsu">せつ</persName>の新婿の職業は、異様な花を咲かせてさざめき返っていることだろう。</p>
+        <p><persName ref="#sugai-kodo">菅井</persName>和尚が見えた。この<placeName ref="#shakado">釈迦堂</placeName>の和尚が見えると、いつも<persName ref="#sanuemon">参右衛門</persName>は家の中から姿を消す。おかしいほど彼には和尚が苦手らしく、小学校の生徒が先生の姿を見て逃げ出す足と同様にすごく迅い。私はこの和尚から机を貸してもらい、おはぎを貰い、柿を貰い、<ruby><rb>馬鈴薯</rb><rt>ばれいしょ</rt></ruby>を貰った。僧侶くさみの少しもない闊達な老人で、ここから十里あまりへだてた<placeName ref="#atsumi">温海</placeName>という温泉場では、この和尚のことを、ああ、あの名僧かと人はいう。ところが、私の今いるここの村では、僧侶臭のないところが有難味がないと見えて、悪くは云わぬが、にやにやと笑うだけだ。従僕に英雄なしという<persName ref="#goethe">ゲーテ</persName>の言葉ならずとも、傍にいるものには、いかなる傑物も凡人に見える作用をここでもしている。一里ごとに変っている和尚の自由な行動に対する世間の批評は、円周の外波の響ほど真実であるか。人は死ねば、その彼の伝うる響は、距離とは違い、時とともにまた異なるだろうが、結局、人の存在価値は、傍にいても分らなければ、外にいても分らない。時たってもまた同様だ。小空、中空、大空、空空、無空、というような言葉は、徹底するとついに天上天下唯我独存、（尊ではない）存すというところに落ちつくのも、<persName ref="#sugai-kodo">菅井</persName>和尚の<placeName ref="#shakado">釈迦堂</placeName>の<persName ref="#shakyamuni">釈尊</persName>の首一個の存在がよく語っているようだ。そういえば、<persName ref="#shakyamuni">釈迦</persName>が天上天下唯我独尊と唇から発した日は、<date when="--12-08">十二月八日</date>だった。太平洋戦争も同一の日だが、まもなくその日はやって来る。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>預金帳が無事に着いた。<date when="--04">四月</date>から半年以上も行衛不明で、<placeName ref="#tokyo">東京</placeName>の銀行の方を調べて貰うと、銀行の女事務員が今まで握り潰していたということが判明した。何事にも腹を立てないということは、要するに堕落しているのだ。しかし、どこへも私は怒りようがない。せめて家族の者を温泉へでもつれて行ってやりたくなって、急にこの日の土曜を利用し<placeName ref="#atsumi">温海</placeName>へ行くことにした。次男の方がまだ学校から戻らず、やむなく三時まで待ったがそれでも来ない。長男に、それでは明日後から次男をつれて来るように<ruby><rb>呍咐</rb><rt>いいつ</rt></ruby>け、私は妻と二人で先きに立つことにした。</p>
+        <p>「何んだか、子供から逃げて行くようですわね。」</p>
+        <p>と妻はしょんぼりしていう。</p>
+        <p>「たまにはいいだろう。温泉行きも十年ぶりだからね。しかし、宿屋はやっているかどうだか分らないから、それが少少心配だ。」</p>
+        <p>駅まで泥路を跳び跳び行くのにも二人は何となく気も軽くなったが、降ったりやんだりしている雨の中で、開業不明の行く先きの宿を思うと少し無謀だったかと思う。それでも子供たちから逃げて行く感情は、妙に捨てがたい新鮮なものがある。</p>
+        <p>「今日は悪る親だねどっちも。」</p>
+        <p>「そうね。何だか、おかしいわ。」</p>
+        <p>金錆汁の流れ出た駅までの泥路も、二人で逃げるのだと思うとそんなに遠くはないものだ。醤油と味噌と米とを下げているのに、それもそんなに重くはない。</p>
+        <p>「残った二人は、鬼のいない間の洗濯で、今夜はさぞ凱歌をあげることだろうな。」</p>
+        <p>「そうよ、嬉しくってたまらないでしょうきっと。」</p>
+        <p>上り汽車はすぐ来たが非常な混雑だった。そこへ無理に捻じこむように妻を乗せ、遅れて私が乗ろうとすると、中から私の脇腹を擦りぬけて一人跳び出て来た小僧がいる。見ると次男だった。背後から肩をぴしゃりと一つ打って、</p>
+        <p>「おいおい。」</p>
+        <p>跳び降りた次男は振り向いたが、そのときもう発車し始めた。</p>
+        <p>「おい。明日来るんだよ。」と私は云った。</p>
+        <p><placeName ref="#atsumi">温海</placeName>行をまだ知らぬ次男は何のことか分らぬらしくプラットに突き立ったままこちらを見ている。混雑と汽車の音で聞えぬらしい。顔が蒼くなっている。</p>
+        <p>「来るんだよ明日。」</p>
+        <p>またそう云っても一層子供には聞えぬ風で、汽車は離れていった。</p>
+        <p><placeName ref="#atsumi">温海</placeName>へ着いたのは五時すぎだった。バスはどれも満員でやっと来たのは故障だ。雨の中をまた二人で歩いて<placeName ref="#takinoya">滝の屋</placeName>まで行った。もう真暗だった。この宿屋は戦前私たちは毎夏来たのだがそれから十年もたっている。私はこの温泉が好きで何度も書いたことがあるのに一度も名を入れたことがない。戦争で定めし荒れたことだろうと思っていたが、今さきまで海軍の傷病兵の宿舎にあてられて満員だったのが、今朝から開放されて空だということであった。部屋も川添いの良い部屋があてられた。</p>
+        <p>「あなたさん方が初めてのお客さんですよ。運の良いお方です。」</p>
+        <p>と、主婦は云う。この主婦とも十年も見ないが一向に年とった模様はない。ともかく良かった。疲労でぐったりした上に空腹で動けない。薬品の匂いがぷんとするのでよく見ると看護婦部屋だったらしい。婦人の好きそうな覚悟を定めた和歌二三首が短冊で壁に貼ってある。妻がすぐ湯舟へ降りて行った間、服を脱ぐのも面倒でひとり火鉢に手を<ruby><rb>焙</rb><rt>あぶ</rt></ruby>っていると、そこへもう電話があった。座談会をこれからすぐやるので是非出てくれとの文化部からの交渉である。宿へ坐ってからまだ十分もたっていないのに忽ちこれだ。<persName ref="#sasaki-kuni">佐々木邦</persName>氏が見えているので是非とのことだが、この今の場合のおつき合いは苦しく、夫婦揃って初めての夕食さえ出来ない歎息が出る。そこへ文化部の人が直接来てまた督促が始まった。「鶏を潰したのですよ。それを御馳走しますから――もう間もなく煮えるころでしょう。ひとつ今夜は、思うこと云いたいこと、何んだって云える時代になりましたから、云いたい会というのですよ。」</p>
+        <p>「云いたいことが、あんまり云えて、何も云えないでしょう。」</p>
+        <p>と私は苦笑した。結局、この人にその場から引き立てられ連行された。湯から上って来た妻はぼんやりと見ているだけだ。今日の昼間、子供がプラットで私を見てぼんやり立っていたのと同じ表情だ。</p>
+        <p>この座談会ほど馬鹿げた座談会に会ったのは初めてだが、それが一種の面白さだったというべきものも、またあった。</p>
+        <p>「今夜は鴨が来ましてね、急に夕暮から一羽の鴨がやって来て――」</p>
+        <p>文化部の人の紹介の後、私は広間の寒い一隅に坐らせられ、この町のある医者の科学談を聴衆と一緒に聴かされつづけただけである。</p>
+        <p>「先日も<persName ref="#iwanami-shigeo">岩波茂雄</persName>君が<placeName ref="#tokyo">東京</placeName>から私のところへ来ましたが、君のその話は面白いから、是非書けとすすめてくれました。」と医者は名調子で聴衆に対い、自分の原稿を立って読み上げる。およそ一時間、でっぷり太った栄養の良い赭顔で、朗朗たる弁舌の科学談だ。酔っている。とにかく人は今は酔いたいらしい。酔えるものなら何んであろうと<ruby><rb>介意</rb><rt>かま</rt></ruby>ってはいられぬときかもしれない。</p>
+        <p>「浜の真砂は尽きるとも、真理の真砂は尽きぬであろうと云った<persName ref="#newton">ニュートン</persName>の偉大さ。あの<persName ref="#newton">ニュートン</persName>は――」</p>
+        <p>百人ばかりの聴衆は私と佐々木氏とに気の毒そうに黙り、しょぼしょぼ俯向いているだけだ。私はいつかこの医者が、盲腸患者の腹を切開したとき、鋏を腹の中へ置き忘れたまま縫い上げて、また周章てて腹を破ったが死んだという話を思い出した。これはこの地方で有名な逸話である。浜の真砂とひとしい多くの追憶の中に一粒の毒石があるなら、真砂の浜は血で染っている筈だろうが、科学上の<ruby><rb>磊落</rb><rt>らいらく</rt></ruby>な過失というものは、<placeName ref="#toyo">東洋</placeName>人、殊に<placeName ref="#nihon">日本</placeName>人は滑稽な偶然事として赦す寛大さを持って生れているのかもしれない。この医者は流行している。</p>
+        <p>会が終ってから、私を連行して来た人は私にこう云った。</p>
+        <p>「<placeName ref="#tohoku">東北</placeName>人というものは、どうしてこう馬鹿なんだろうか思いますよ。だって、<persName ref="#tojo-hideki">東条</persName>、<persName ref="#yonai-mitsumasa">米内</persName>、<persName ref="#koiso-kuniaki">小磯</persName>と三代も、一番馬鹿な、誰もひき受け手のないときに担がれて、まんまとその手に乗せられて総理大臣になる阿呆さ加減というものは、あったもんじゃありませんよ。みなあれは<placeName ref="#tohoku">東北</placeName>人だ。」</p>
+        <p>私はまたそれとは別のことを考えていた。誰も逃げ廻るところを引き受けた誠実さを認めずに、他のどこをあの人人から認めようとするのかと。しかし、これは今後の問題でむずかしくなることの一つである。誰からも一大危機と分っているとき、逃げ廻る狡猾さと坐り込む諦念と。危機でなくともこれは毎日人には来ていることだ。今夜も私は襲われて鴨にされ、こうして十年目に巡って来た一刻の夫婦の夕さえ失った。宿へ帰ったときは妻はもう寝ていたが起きて来た。</p>
+        <p>「どうでした。今夜のここのお料理は、それはおいしかったですよ。」</p>
+        <p>「僕の方は、あの有名な医者が出てひとり演説だ。おれはあの人の科学談を拝聴しに行っただけだよ。」</p>
+        <p>あの医者といえばもう分る。</p>
+        <p>「ああ、あの人ね、あの人ならそうでしょう。<placeName ref="#tsuruoka">鶴岡</placeName>にむかしいた人ですの。ほら、お腹の中へ、鋏を置き忘れたという人。」</p>
+        <p>妻もすぐ思い出したと見え、そう云ってくつくつ笑った。妙な人気である。しかし、宿へ帰ってこうして落ちついてみると、不思議な面白さが湧いて来るのを覚え、後が愉快だった。実に田舎らしい頓間な空気の中に溶けこんだ、あの医者の粗忽な逸話の醸す酔いのためかもしれない。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>子供たちは正午ごろどやどやと部屋へ這入って来た。すると、もう服を脱ぎにかかって湯へ飛び込む。先ず一ぷく、などということのないのが、ぴちぴち跳ねる鱗の周囲にいるように感じて、私の一ぷくが一層休息らしく思われて来る。<persName ref="#kyuzaemon">久左衛門</persName>の妻女が持たせてくれたという食用の黄菊の花を沢山袋につめて来たので、温泉の湯口の熱湯で茹でて食べる。妻は番頭が持って来た新九谷の茶器の湯呑が気に入ったといっては、それを眺めてばかりいる。</p>
+        <p>「あたし、このお茶碗を見にだけでも、もう一度ここへ来たいわ。いいこと。ほら。」</p>
+        <p>久しぶりに美に接した慶びでためつすがめつしているが、私は火鉢の炭火の消える方が気にかかった。昨夜文化部からお礼に届けてくれた酒一升も、もう酒を飲まなくなっている私には興少く、誰かこの酒と煙草とを交換してくれる客はないものかと、番頭に訊ね廻らせてみたが駄目だった。ここでは酒よりも煙草の方が少いと見える。午後から冷えて来て寒い。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>朝の十一時のバスで帰ることにした。妻はまだ宿の湯呑茶碗と別れることを惜しがって、立ちかねているのが、おかしくあわれだ。</p>
+        <p>「こっそり一つ譲ってくれないものかしら、<placeName ref="#tokyo">東京</placeName>にだって、こんなのないわ。」</p>
+        <p>掌の上へ載せてみては、買えるものなら幾ら高価でもいいと呟いている。</p>
+        <p>「譲ってくれないなら、一つだけこっそり貰って帰ろうかしら。」</p>
+        <p>「おいおい、盗るなよ。」</p>
+        <p>「まさか。」</p>
+        <p>ふざけて、そんなことを云ってみたりまでしているが、私にはそれほど魅力もない茶碗だ。妻はやっと部屋の隅へ五つ揃えて茶碗を片づけてから、</p>
+        <p>「さア、行きましょう。」と云って立った。</p>
+        <p>バスの待っている方へ歩きながら、私は、まだそれほど一つの茶器に執心する感動を失ってはいない妻から、ある新鮮な興味を覚えて、妻とは別の感動に揺られていた。私はまだ長い疎開生活中それほど執心したものは一つもなく、僅に村里の人人の心だけ持ち去りたい自分だと思った。しかし、これで私は、今まで会って来た多くの人人の心をどれほど身に持ち廻っているかしれないと思った。自分という一個の人間は、あるいは、そういうものかもしれないのである。自分というものは一つもなく、人の心ばかりを持ち溜めて歩いている一個の袋かもしれない。私の死ぬときは、そういう意味では人人の心も死ぬときだと、そんなことを思ったりしてバスに揺られていた。このバスはひどく揺れた。一番奥まった座席にいるので押し詰った人の塊りで外が見えず、身をひねってちらりと見ると、外では、高い断崖の真下で、浪の打ちよせている白い皺に日が耀いていた。屈曲し、弾みがあり、転転としていく自分らのバスは、相当に危険な崖の上を風に吹かれて<ruby><rb>蹌踉</rb><rt>よろ</rt></ruby>めいているらしい。</p>
+        <p><placeName ref="#mizusawa">水沢</placeName>で降りたのが二時である。小川の流れている泥路に立って、そこで四人が握り弁当を食べることにした。指の股につく飯粒を舐めて、一家をひき連れた漂泊の一生をつづけているような、行く手の長い泥路を思うと、ここで荷を軽くして置く必要があったからだった。</p>
+        <p>どの田の稲も刈られている。見渡す平野の真正面、一里の向うに私たちの今いる姿の良い山が見える。そこまで一文字の泥路を歩くのだが、三日も見ないとやはりもう懐しくなっている<placeName ref="#arakurayama">荒倉山</placeName>である。位のある良い山の姿だと思った。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>朝起きて炉の前に坐った。ふといつも眼のいく山の上に一本あった<ruby><rb>楢</rb><rt>なら</rt></ruby>の樹が截られてない。百円で売れたのだという。もう渡り鳥の留るのも見られなくなることだろう。</p>
+        <p>夕暮から薄雪が降って来る。洗いあげた大根の輪に包まれた<persName ref="#kiyoe">清江</persName>がまだ水の傍に跼んでいる。どの家も大根の白さの中に立った壮観で、冬はいよいよこの山里に来始めたようだ。背をよせる柱の冷たさ。二股大根の岐れ目に沁みこむ夕暮どきの裾寒さ。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>見知らぬ十八九の青年が来たので、留守をしている私が出た。身だしなみの良い、眼が丸く活き活きした青年だ。私は用を察し奥から借用の洋傘を持って来てみた。</p>
+        <p>「これでしょう、家のものがお借りしたの。どうも、どうも。」</p>
+        <p>先日、駅から雨の中を傘なしで妻と子供が帰って来たとき、後から来た見たこともない青年が、絹張りの上等の洋傘を渡した。そして、さして行けといってきかないので借りて来たが、名をいくら訊ねても隣村のものだというだけで云わない。傘は自分の方から取りに行くといって私たちの住所だけ訊ねたということだった。今どき知らぬ他人に名も告げず、上等の洋傘など貸せるものではない。この青年の眼には、そんな危険を逡巡することなくする立派な緊張があって、美しく澄んでいる。私から傘を突き出された青年は、「そうです。」と云っただけで、名を訊ねても答える様子もなく、ようやく、「<persName ref="#matsuura-shokichi">松浦正吉</persName>です。」と低い声で云うと、礼など受けつけず、すぐ姿が見えなくなった。文明を支えている青年というべきだ。間もなく<placeName ref="#tokyo">東京</placeName>へ帰ろうとしている私には何よりの土産である。私がもしこの青年に会わなかったなら、<placeName ref="#tohoku">東北</placeName>に来ていて、まだ<placeName ref="#tohoku">東北</placeName>の青年らしい青年の一人にも会わなかったことになる。健康な精神で、一人突き立つ青年があれば、百人の堕落に休息を与えることが出来るものだ。</p>
+        <p>夜から雪が積った。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p><placeName ref="#chokaisan">鳥海山</placeName>も<placeName ref="#gassan">月山</placeName>も真白である。<placeName ref="#tohoku">東北</placeName>に雪の降るのを見るのは私にはこれが初めてだ。もう長靴がなくては生活が出来ない。午後、<persName ref="#sugai-kodo">菅井</persName>和尚が見え、<placeName ref="#shakado">釈迦堂</placeName>で農会の人たちと座談会をしたいから出席せよとの事だ。私は承諾してから<persName ref="#matsuura-shokichi">松浦正吉</persName>君について和尚に訊ねた。<persName ref="#matsuura-shokichi">正吉</persName>青年は<placeName ref="#yokohama">横浜</placeName>の工場から帰国後、村の因循姑息な風習を見て慨歎し、何とか青年の力で村を溌剌たらしめたいと念じている一人だとの事だが、どこから手をつけて良いのか企画の端緒が見つからない。和尚も青年たちの情熱には大いに賛成らしく、このままあの青年たちを腐らせたくはないという。</p>
+        <p>和尚の帰ったあとで、<persName ref="#sanuemon">参右衛門</persName>は、青年たちの新しい意気についてこういう。</p>
+        <p>「あんな、十九や二十のあんちゃんら、何にやったて、駄目なもんだ。ふん。」</p>
+        <p>これは五十歳前後の年齢線のいうことだが、村では、五十歳の壮年でも実権は彼らにはなく、先ず六十歳から七十歳の老人連で、それも村一番の地主の<persName ref="#yaube">弥兵衛</persName>の家の、八十になる長老一人にあるらしい。</p>
+        <p>「あの人がうんと云わねば、何一つ出来やしない。他のものらは、一升でも二升でも、ただ余けいに取ろうと思うてるだけなもんだ。その他のことは、何にも分りやせん。」</p>
+        <p>落葉の降り溜るように、それはそのようになってきたものがあったからだろう。その他のことを要求するには、<persName ref="#matsuura-shokichi">正吉</persName>青年のようにするだけのことをしていこうとしなければならぬ。私の妻に洋傘を貸したのもその発心の顕れであろうが、たしかに日常時のこのような些細なことから初めて落葉は燃え、土壌は肥料を増していくのだ。</p>
+        <p>長老のこの<persName ref="#yaube">弥兵衛</persName>の家の中は混乱している。妻女は後妻だが、私のところへこの婦人は魚を売りに来ることがある。前には<placeName ref="#yura">由良</placeName>の<persName ref="#rie">利枝</persName>と同村で料亭の酌婦をしていたのを、長老の漁色の網にひき上げられて坐ってみたものの、一家の経済の実権は六十過ぎの先妻の息子にあるから、こうして<placeName ref="#yura">由良</placeName>から魚を取りよせひそかに売り貯えているらしい。一見しても、格式ある立派な老杉が周囲をめぐっていて、神宮のような建物の長老らしい家である。そこから隠れて魚を売りに出て来る後妻の、でっぷりと肥えた皮膚の下に、むかしの生活の<ruby><rb>澱</rb><rt>よど</rt></ruby>んだ憂鬱な下半白の眼は、幸福ではなさそうだ。長老はまた後妻の代りのも一人立てている風評も、杉木立の隙から私らの耳にもれて来ている。<persName ref="#sanuemon">参右衛門</persName>の末の娘はこの家に奉公しているが、前には、<persName ref="#yaube">弥兵衛</persName>と同格の名門であった彼のこの没落には、人の同情を誘ういたましいものはない。むしろ、人を失笑せしめる明朗なものがあって、そこが<persName ref="#sanuemon">参右衛門</persName>の味ある人柄というべきところだろう。</p>
+        <p>「何んという阿呆かのう<persName ref="#sanuemon">参右衛門</persName>は。遊んでばかりいて、飲んだくれて、家をこんなに潰してしもて。」</p>
+        <p>叔母にあたる<persName ref="#kyuzaemon">久左衛門</persName>の妻女の<persName ref="#oyumi">お弓</persName>がこういうのも、言葉の裏の対象には、いつも<persName ref="#yaube">弥兵衛</persName>の家が隠れている。祭日には<persName ref="#sanuemon">参右衛門</persName>の末の娘はここから自分の家へ帰って来る。そして、餅など食べているのを私はよく見るが、今夜は家で泊って行きたいと娘が云うときも、</p>
+        <p>「お前は奉公してるんだからのう。やっぱり、大屋さんへ帰って寝るもんだ。良いか、今夜は帰れよ。」</p>
+        <p>と、<persName ref="#sanuemon">参右衛門</persName>はこう静に娘をさとしている。娘は泣き顔で戻って行くが、負けん気の<persName ref="#sanuemon">参右衛門</persName>も、このようなときは、さすがに声は低く娘に詫びを云うように悄気ている。殊に、後三四日もすれば、別家の<persName ref="#kyuzaemon">久左衛門</persName>の十九の<persName ref="#setsu">せつ</persName>女の結婚式が迫っているからには、十七の自分の娘の身の上も、そろそろ考えてやらねばなるまい。私は出来る限り、同じ金銭を落すものなら、ここの家へ落して帰りたいと思っているのだが、</p>
+        <p>「おれは金はいらん、あんなものは――」</p>
+        <p>と、<persName ref="#kyuzaemon">久左衛門</persName>への対抗か、むかしの旦那風の名残りは、手出しの仕様もない。実際、金を少しは欲しがってくれる人間もいてくれねば、不便なことが多くて困るものだ。私たちはこの<persName ref="#sanuemon">参右衛門</persName>の家にいて、まだここから一升の米さえ買っていない。無論、貰ったこともない。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>突然のことだが、意外なことが起って来た。<placeName ref="#tokyo">東京</placeName>から農具を買い集めに来た見知らぬ一人の男が、<persName ref="#sanuemon">参右衛門</persName>の所へ薪買いに来て、<placeName ref="#tokyo">東京</placeName>へ貨車を買切りで帰るのだが、荷の<ruby><rb>噸</rb><rt>トン</rt></ruby>数が不足して貨車が出ない。誰か帰る者の荷物を貸す世話をして貰いたいというのだ。そこで私たちにその荷の相談があった。その客というのは、私も知らないばかりか<persName ref="#sanuemon">参右衛門</persName>も知らない。まったく知らないその男の荷として、私の荷物を送る冒険譚になって来たのだ。しかし、このような雪ぶかい中から私らが動き出すためには、こんな唐突なことでもない限り容易に腰は上りそうもない。先ずその客という人間にひと眼あい、私は人相で決めたいのだが、荷を積み込む日は後三日の中だという。</p>
+        <p>しかし、私にはまた妙な癖があって、人の運命というものは人から動いて来るものだと思えないところがいつもあるのだ。もう、そろそろ帰らねばならぬときだと思っているときに、まったく偶然こんな好都合な話が持ち上って来たということは、人よりもその機縁の方を信じる癖で、私はもう客の人相よりそれ以前の事の起りの方に重きを置いて考えている。これは、ひょっとすると荷を動かしてしまいそうだという気がする。何ものにも捉われぬ判断力というものは有り得るものかどうか。私は自分の癖に捉われている。これは生理作用だ。</p>
+        <p>「その薪買いの客という男を、お前は見たのか。」と私は妻に訊ねた。</p>
+        <p>「一寸見ましたわ。」</p>
+        <p>「信用は出来そうか。」</p>
+        <p>「そうね。悪い人ではなさそうでしたね。でも、何んだか、そわそわばかりしていて、ちっとも落ちつきがないんですのよ。何んだってあんなに、そわそわばかりしてるんでしょうかしら。それが分らないんですの。」</p>
+        <p>「じゃ、人は善さそうなんだね。」</p>
+        <p>「ええ。そんな変なことしそうな人じゃありませんでしたわ。」</p>
+        <p>よし、会おう。明日もう一度来るという。そろそろ荷物の整理をし始めるよう私は妻に頼んだ。このような渡りに船のことを、むかしは仏が来たと人人は思ったものだが、そう思えば、明日この人に会うのが私には楽しみだ。私もこの地のようにだんだん鎌倉時代に戻っているのであろう。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>十時に例の客が蓑を着て来た。私のこの仏は、三十過ぎのビリケン頭をした、眼の細く吊り上っている、気の弱そうな正直くさい童顔の男であった。大きな軍靴を穿いているところを見ると復員らしい。円顔で、おとなしい口もとが少し出ていて、疑いを抱かぬまめまめしい身動きは、なるほど、こんな仏像は<placeName ref="#nara">奈良</placeName>や<placeName ref="#kyoto">京都</placeName>の寺でよく私は見たことがある。炉に対いあっている間も、私に見詰められるのが辛そうな様子で、絶えず横を向いて話している。</p>
+        <p>「これから<placeName ref="#tokyo">東京</placeName>への土産に荷車を買いに行くんですよ。それから<placeName ref="#haguro">羽黒</placeName>へ行って、帰ってから<placeName ref="#oyama">大山</placeName>へ廻って――何が何んだかもう分らない、急がしくって――」</p>
+        <p>こういうことを云うときも、そわそわし、ひょこひょこしつづけている。客の今日一日に歩き廻る円囲を頭に泛べてみても十五里ほどの円だ。私はこの人を仏だと思ってみていることが、何んだか非常に面白くなって来たようだ。</p>
+        <p>「一日で出来るのですか、そんなこと。」と私は訊ねた。</p>
+        <p>「この間まで兵隊へ行ってたものだから、まア、こんなことはね。<placeName ref="#tokyo">東京</placeName>へ帰って百姓をしなくちゃならんものだから、農具を買い集めているんですよ。なかなか無くってね、それに有っても高いことをいう。」</p>
+        <p>とにかく、生れはこの近村で自分は養子であること、養父が<placeName ref="#hiuchizaki">火燧崎</placeName>に来ているから、一度荷物の相談をその人としてくれと客は私にいう。<persName ref="#sugai-kodo">菅井</persName>和尚から貰った<ruby><rb>小豆餅</rb><rt>あずきもち</rt></ruby>を出すと、喜んですぐ食べた。積みこむ荷の整理から買い集めまで一切この人一人でやるらしく、瞬時の暇もないらしい多忙さは気の毒なほどである。</p>
+        <p>「私は荷と一緒に<placeName ref="#tokyo">東京</placeName>へ帰りますが、またすぐ、もう一ぺん引き返して来るんですよ。」と客はいう。</p>
+        <p>この混雑の列車の中を、帰るだけが私にやっとだが、この人は、私のやろうとすることの十数倍のことをやろうとしている。帰って行くときのこの客の後姿を見ていると、横っちょに引っかけた蓑が飛ぶような迅さだ。あれなら十五里は今日中にやれそうだと思った。</p>
+        <p>私は小一里もある野路を<placeName ref="#hiuchizaki">火燧崎</placeName>まで出かけた。山裾の入り組みが田の中へ複雑な線で入り浸っている。行く路はそれに随い海岸のように曲りうねっていて、<ruby><rb>霙</rb><rt>みぞれ</rt></ruby>の降っているその突端の岬に見える所が<placeName ref="#hiuchizaki">火燧崎</placeName>だ。このあたりは古戦場だから多分ここから火を打ちかけたものだろう。家の一軒もない泥田の中に、ぼつりと一つ農家があり、それが温泉宿で、一ヵ月も水を変えない沸し湯のどろどろした汚れ湯が神経痛によいという。泥のような中から裸体の農婦の背中や腰が白い肌を見せている。そこの勝手元に私の訪ねる人は、どてらを着て炉の前に坐った六十過ぎの男であった。眼のぎろりと大きい、養子とは反対の太っ腹なむっつりした男で、垢と泥とでどす黒く見える懐の中から、すっきりとした外国製の煙草を一本抜き出した。悪く見ると山賊の親分で、善く見ると大道具の親方という風貌だが、向うも相手を誤ったと思ったらしく、不機嫌な様子で押し黙っている。背景の宿が宿で、私はまだこんな温泉宿というものを見たことがない。泥宿めいた混雑の中にこうしている男が、私の荷主になるのかと思うと、少し私も躊躇した。誤れば私の財産の半分はこれで失うのだ。</p>
+        <p>「荷物が<placeName ref="#tokyo">東京</placeName>へ着いてから、私の家まで運送するのが面倒で、それに困っているのですがね、運送屋をお世話願えませんか。」と私は云ってみた。</p>
+        <p>「ええ、しましょう。」と、一言ぼつりという。</p>
+        <p>それだけだ。一つ<placeName ref="#tokyo">東京</placeName>の住所をここへ書いて貰いたいと私は云って手帖を出した。男は鉛筆を受けとりすらすらと名と住所とを書きつけた。意外に良い字だ。悪い男はこのような字を書けるものではない。私は多少それで、この男は見かけによらぬ善良な人物だと信用する気になった。</p>
+        <p>貨車賃を等分にし、駅までの運搬その他、必要事項を定めるときにも、</p>
+        <p>「貨車賃は要りませんよ。どうせ、わたしの方は送るついでですから。」とそう男がいう。</p>
+        <p>炉の中で枯松葉が良い匂いを立てている。その匂いがまた善かった。私は帰ろうとして立ちかけると、</p>
+        <p>「米は？」と男は訊ねた。</p>
+        <p>「米は入れてないですよ。」</p>
+        <p>「どうして？」いぶかしそうにまた訊ねる。</p>
+        <p>「買う暇もなし、何とかなるでしょう。」</p>
+        <p>男は前にいる宿の主人と顔を見合せて黙っていた。貨車に荷を積み込むときや、着いてからまた荷別けのとき、その他私らの立会いでするべきことも、皆私はしないつもりであるから、荷の<ruby><rb>目標</rb><rt>めじる</rt></ruby>しをしておかなければならぬ。</p>
+        <p>「荷の着くころ私は<placeName ref="#tokyo">東京</placeName>へ行ってるつもりですが、ひと先ずあなたのお宅へ私のも預けてもらえませんか。それでないと、<placeName ref="#tokyo">東京</placeName>の方の運搬事情は、終戦後どうなっているか、さっぱり僕には分りませんからね。」</p>
+        <p>「そうしときましょう。」</p>
+        <p>これも不安なほど簡単だ。とにかく向うにとってはどうでも良いことばかりだが、私にとっては運命のある部分を賭けたようなものである。乗ったが最後ひき摺られ通しは私の方だ。しかし、人の人相は戦争でみな悪くなっているので私は字の方を信用する。これなら私はあまり今まで間違ったことはない。</p>
+        <p>薄雪が沼の上に降ってくる。私は自分の荷物を失うまいとして、人を仏と見ようとしている自分の利己心について、沼の傍の路上を歩きながら、ときには利己心も良いものだと思った。もし私にこんな利己心がなかったら、一生、人をただの人間とばかり思いつづけたかもしれない。それにしても、人間を人間と思うことは誰に教わったことだろう。そして、これがそもそも一番の幻影ではないのか。自分というものが幻影で満ちているときに。まことに、我あるに非らざれど、という<persName ref="#mazu">馬祖</persName>はもうこれから脱け出ている。しかし、私はこの幻影を信じる。二者選一の場合に於ても、つねに私は自分の排する方に心をひかれる小説家だった。たしかに私は賢者ではない。万法明らかに私の中にも棲みたまう筈だのに、私は愚者にちかい。</p>
+        <p><ruby><rb>断</rb><rt>き</rt></ruby>り通しの赭土の傍に立って私は<placeName ref="#hiuchizaki">火燧崎</placeName>の方を振り返ってみた。僧兵の殺戮し合った場所は、あのあたりから、このあたりにかけてであろうが、念念刻刻死に迫る泥中の思いにも薄雪はこうして降っていたことだろう――</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>荷は十一包みも出来あがった。<persName ref="#sanuemon">参右衛門</persName>が縛りあげてくれたものだが、日ごろの習練が効きすぎどれも米俵のようになる。</p>
+        <p>「じゃ、あたしたちも、いよいよ帰るのね。」</p>
+        <p>妻は荷を見ながら名残り惜しげだ。喜んでいるのは子供らだけである。私もさみしい気持ちでがらんと空いて来た部屋の中を見廻した。鯉もふかく水中に沈んでいる。</p>
+        <p>「毎年いくら飼っても盗まれるんだが、今年はお前さんたちがここにいるので、鯉も盗まれずにすんだのう。」</p>
+        <p>と<persName ref="#sanuemon">参右衛門</persName>は云って喜んだ。彼は私の注文した薪を取りに山へ<persName ref="#kiyoe">清江</persName>と二人で出かけて行く。<placeName ref="#tokyo">東京</placeName>の留守宅から手紙が来た。食い物の入手の困難なこと、強盗がさかんに出るので帰ることを見合すようにと書いてある。もう遅い。しかし、妻はその手紙を見て急に恐怖を覚えて来たらしい。</p>
+        <p>「いやね。<placeName ref="#tokyo">東京</placeName>強盗ばかりですって。」</p>
+        <p>「しかし、もう駄目だ。」</p>
+        <p>「<placeName ref="#hiuchizaki">火燧崎</placeName>の人、どんな人でしたの。大丈夫かしら。」</p>
+        <p><placeName ref="#tokyo">東京</placeName>から来ているということで、<placeName ref="#hiuchizaki">火燧崎</placeName>まで強盗に見え出して来るのも、今は輸送の安全率が皆目私らには見当がつかぬからだ。現に預金帳の握り潰しで半年以上も苦しめられた直後である。その無政府状態の真っただ中へ、見も知らぬ人の荷物として投げ出すこれら私の荷の行衛については、考え出せばきりなく不安だ。一点たりとも安心出来る部分はどこにもない。しかし、疑心群れ襲って来る怪雲のごとき底から、じっと澄み冴えて来るのは正しい彼の書体であった。それだけは、打ち消しがたくしっかと何かを支えている。篆刻のごとき美しさだ。あれが生の象徴だ。私は<placeName ref="#toyo">東洋</placeName>を信じる。<placeName ref="#nihon">日本</placeName>を信じる。人みな美し、とそう思った。</p>
+        <p>「大丈夫だよ。この荷物は無事に着く。」と私は云った。</p>
+        <p>「そうかしら、でも、一つ無くしてももう買えないものばかしですのよ。」</p>
+        <p>「いや、大丈夫だ。」</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>が来た。そして妻にこう云う。</p>
+        <p>「<persName ref="#setsu">せつ</persName>の結婚式が明日なもので、急がしゅうて来れなんだが、何んでも、お前さんたち知らぬものに荷物を頼んだいうことだでのう。心配で見に来た。そんなことはせん方がええぞ。せっかく今までおれはお世話して来て無事だったのに、今になって危いことがあっては、おれも困るでのう。」</p>
+        <p>とにかく、急なことで一言の相談もせず荷を造ったことは、重重失礼したと妻は詫びを云った。私はまた彼にそんなことを云い出せば、せっかくの<persName ref="#sanuemon">参右衛門</persName>の好意をもみ消しそうで、この二人の間に挟まれての行動は、目立たぬところでうるさいことの多かったのも、今までから度度感じていた。</p>
+        <p>「うまくいけば良いがのう。おれも知らん人間だぜ。大切な品物は出さん方がええ。<persName ref="#sanuemon">参右衛門</persName>も知らん男だというから、どうしたことでそんなことするものかと思うて、それが心配での――」</p>
+        <p>たしかに<persName ref="#kyuzaemon">久左衛門</persName>のいうことは道理である。このこととは限らず、私たちを彼はひどく愛してくれており、特に私に示してくれた彼の愛情にはなみならぬものがある。</p>
+        <p>人を見ると、直ちに自分の利益になる人間かどうかを直覚して、それから人を世話するのが<persName ref="#kyuzaemon">久左衛門</persName>の悪癖だと、隣人からそんな批評を浴びせられているのも私は知らぬこともない。<persName ref="#sanuemon">参右衛門</persName>が私たちに冷淡な様子を示すのも、<persName ref="#kyuzaemon">久左衛門</persName>への礼儀もあるであろうが、反感もこれでないとは限らない。しかし、人を見て、打算に終る人物としてみても、<persName ref="#kyuzaemon">久左衛門</persName>は少し私は違っていると思っている。彼の打算は彼自身の生活の律法で、その神聖さを彼とて容易に犯すことは出来ぬ。しかし、<persName ref="#kyuzaemon">久左衛門</persName>にとっては愛情はまた律法とは自ら別物に感じているところがある。用談の際の駈け引き、応対の寛容、瞬時に損得を見極めたリズムある美しい要点の受け応え、不鮮明な認識の流れはそのまま横に流して朦朧たらしめる<ruby><rb>訥弁</rb><rt>とつべん</rt></ruby>で、適度の要領ある次ぎの展開の緒を掴む鋭敏な探索力など、彼の政治力は数字と離れて成り立たないものだ。それも緩急自在な芸術性さえ備えている。その稀な計算力の才腕には、たしかに天才的なところがあって、周囲のものにはただ打算に見えるだけの抜きん出た悲劇性さえ持っている。</p>
+        <p>「おれの悪口をみなは云うが、おれが死ねば何もかも分る。」</p>
+        <p>こう<persName ref="#kyuzaemon">久左衛門</persName>が云うところを見ても、彼なら、分るようにしてあるにちがいあるまい。彼は、この村で農業というものにうち勝った唯一の人物だ。その上、私に神のことさえ口走ったのは打算でいう必要などどこにもない。まさか神まで私に売ろうとは彼とて思ってはいなかろう。</p>
+        <p>「神は気持ちじゃ、人の気持ちというものじゃ。」</p>
+        <p>六十八年伝統との苦闘の後、ついに掴んだ<persName ref="#kyuzaemon">久左衛門</persName>の本当の財宝はそういうものであったのだ。後はただ死ねばもう彼は良いのだ。</p>
+        <p><date when="--11">十一月――日</date></p>
+        <p>雪が舞っている。私の荷の出る時間が迫って来た。結婚式のある<persName ref="#kyuzaemon">久左衛門</persName>の裏口から出て来た<persName ref="#sanuemon">参右衛門</persName>は、袴をつけたまま、荷物を荷馬車の上に<ruby><rb>舁</rb><rt>かつ</rt></ruby>ぎこんだ。馬子が手綱で一つひっ叩くと、<ruby><rb>鬣</rb><rt>たてがみ</rt></ruby>を振り上げた馬は躍り上り、車が動いていった。私の荷は薄雪の中に見えなくなった。人より荷の方がつよく生きぬいて来たように見えるのは、どうしたことだろう。私は雪の中に立って轍の音の遠ざかるのを淋しく聞きながら、家の中へ這入った。</p>
+        <p><persName ref="#setsu">せつ</persName>の式は<placeName ref="#shinjo">新庄</placeName>の婿の家で挙げられている。<persName ref="#kyuzaemon">久左衛門</persName>の宅では留守式で、<persName ref="#kiyoe">清江</persName>や私の妻は手伝いに行ききりだったが、夜になって、祝いが崩れ、乱酔した<persName ref="#sanuemon">参右衛門</persName>の声が炉端から聞えて来た。妻や子供たちは恐れをなして早くから寝た。酒乱癖の彼の酔った夜は、<persName ref="#kiyoe">清江</persName>はあたりの物をすべて取り片附けて傍へは近よらない。<ruby><rb>鉄瓶</rb><rt>てつびん</rt></ruby>、<ruby><rb>薬鑵</rb><rt>やかん</rt></ruby>、どんぶり鉢、何んでも手あたり次第に<persName ref="#kiyoe">清江</persName>に投げつけ、「出て行け、帰れ。」といいつづける<persName ref="#sanuemon">参右衛門</persName>の口癖も、今夜は結婚式で上機嫌に歌を謡っている。袴をつけた大きな顔をにこにこさせ、暫く皆を笑わせてはいるが、後はどうなるものか分らない。</p>
+        <p>「<persName ref="#sanuemon">参右衛門</persName>が酔ったら、そっと座を脱して下されや。恐ろしい力持ちじゃ。おれはあれから殴られた殴られた。」</p>
+        <p>と、こう私に注意した<persName ref="#kyuzaemon">久左衛門</persName>のこともある。子供たちが<persName ref="#sanuemon">参右衛門</persName>の下手な歌を面白がってときどき蒲団から頭を上げるが、</p>
+        <p>「そうら、来るわ。」と妻に云われると、ぺたりとまたすっ込む。</p>
+        <p>しかし、隣家が結婚式だと思うと、誰でも自分らのそのときの事を思い出す。おそらく<persName ref="#sanuemon">参右衛門</persName>の酔いにも、<persName ref="#kiyoe">清江</persName>の幻影が泛んだり消えたりしていることだろう。二人は同級生で、卒業式の写真の中に一緒に二人の写っていたのを私も見た。</p>
+        <p>「これ、こ奴がおれの女房になろうとは、思わんだのう。それに、こ奴が――」</p>
+        <p>そう云っては幾度も突ッついた跡が、写真の<persName ref="#kiyoe">清江</persName>の顔にぶつぶつとついている。家を飲み潰し、妻子を残して<placeName ref="#karafuto">樺太</placeName>へ出稼ぎに十年、浮き上ろうにもすでに遅い、五十に手の届いた私と同年の<persName ref="#sanuemon">参右衛門</persName>の幻影は、節の脱れた鴨緑江節に変っている</p>
+        <p>「<placeName ref="#chosen">朝鮮</placeName>とオ、<placeName ref="#shina">支那</placeName>とさかいの、あの、<placeName ref="#oryokko">鴨緑江</placeName>オ――おい、おいお前もやれよ。やれってば――」</p>
+        <p>足をばたつかせて<persName ref="#kiyoe">清江</persName>にいう<persName ref="#sanuemon">参右衛門</persName>も、ここの炉端で一人児として生れ、旅をして、またもとの生れた炉端で前後不覚に謡っている。暴れようと投げようと、人の知ったことではない。どう藻掻こうと鍋炭のかなしさは取れぬのだ。外では雪が降っている。</p>
+        <p>深夜になってから<persName ref="#sanuemon">参右衛門</persName>は寝室へ這入った。そこは私の寝ている部屋と杉戸一枚へだてているだけで一層私に近くなった。彼の足の先は私の頭のところにありそうだが、寝てくれて静まったと思うと、またすぐ彼は歌を謡い出した。それも炉端のときと同じ歌のくり返しで私は眠れないが、同年のおもいは年月の深みに手をさし入れているようで、彼の脈の温くみが私にも伝わって来る。</p>
+        <p>「もっとやれ、いいぞ。」と私は云っている。</p>
+        <p>自分らの青春の夢は、<date when="1868">明治</date>と<date when="1926">昭和</date>に挟み打ちに合った<date when="1912">大正</date>で、以後通用しそうなときはもうないのだ。</p>
+        <p>「<placeName ref="#chosen">朝鮮</placeName>とオ、<placeName ref="#shina">支那</placeName>の……流す<ruby><rb>筏</rb><rt>いかだ</rt></ruby>は……おい、お前やれよ、おい、やれってば。」</p>
+        <p><ruby><rb>呂律</rb><rt>ろれつ</rt></ruby>の怪しい歌を一寸やめては、<persName ref="#sanuemon">参右衛門</persName>は<persName ref="#kiyoe">清江</persName>の枕を揺り動かすようだ。それが二三度つづいたときだった。</p>
+        <p>「おおばこ来たかやと……</p>
+        <p>たんぼのはんずれまで、出てみたば……」</p>
+        <p><persName ref="#kiyoe">清江</persName>の歌が聞えて来た。彼女の眼のような、ふかい穏かに澄んだ声である。それも、もう羞しそうではなかった。<persName ref="#sanuemon">参右衛門</persName>は、よもや<persName ref="#kiyoe">清江</persName>が歌うまいと思っていたらしく、この予期に反した妻の歌には虚を衝かれた形で、暫くは彼も音無しくしていた。が、「うまい、うまい、うまい。」と、急に途中で云って彼は手を叩いた。しかし、もう<persName ref="#kiyoe">清江</persName>は、そんなことなどどうでも良いという風に、</p>
+        <p>「おばこ来もせず、用のない、</p>
+        <p>たんばこ売りなど、ふれて来る。」</p>
+        <p>おそらく<persName ref="#kiyoe">清江</persName>の歌など聞いたのは<persName ref="#sanuemon">参右衛門</persName>も、初めてなのではあるまいかと、私は思った。およそ歌など謡いそうに思えぬ<persName ref="#kiyoe">清江</persName>である。<persName ref="#kiyoe">清江</persName>が謡いやめると<persName ref="#sanuemon">参右衛門</persName>は自分も一寸後から真似て謡ってみたが、これはダミ声でとても聞けたものではなかった。彼はまたすぐ<persName ref="#kiyoe">清江</persName>にやれやれと迫った。すると、また<persName ref="#kiyoe">清江</persName>は謡った。</p>
+        <p>夜半のしんとした冷気にふさわしい、透明な、品のある歌声だった。調子にも狂いが少しもなかった。静かだが底張りのある、おばこ節であった。それも初めは、良人を慰めるつもりだったのも、いつか、若い日の自分の姿を思い描く哀調を、つと立たしめた、臆する色のない、澄み冴えた歌声に変った。私は聞いていて、自分と<persName ref="#sanuemon">参右衛門</persName>と落伍しているのに代って、<persName ref="#kiyoe">清江</persName>がひとりきりりと立ち、自分らの時代を見事に背負った舞い姿で、押しよせる若さの群れにうち<ruby><rb>対</rb><rt>むか</rt></ruby>ってくれているように思われた。</p>
+        <p>「うまい、うまい、うまい、うまいぞオ。」</p>
+        <p>と、<persName ref="#sanuemon">参右衛門</persName>は喜んでまた手を叩いたが、暗闇で打ち合わす手は半分脱れていた。しかし、そうなると、謡い終った<persName ref="#kiyoe">清江</persName>を<persName ref="#sanuemon">参右衛門</persName>はもう赦しそうになかった。<persName ref="#kiyoe">清江</persName>は彼にせがまれてまた謡った。</p>
+        <p>「<placeName ref="#chosen">朝鮮</placeName>とオ、<placeName ref="#shina">支那</placeName>とさかいの、あの、<placeName ref="#oryokko">鴨緑江</placeName>オ――」</p>
+        <p>鴨緑江節となっては、<persName ref="#sanuemon">参右衛門</persName>ももう我慢が出来なくなったらしく、「流す筏は……」その後を今度は夫婦揃ってやり始めた。私もひどく愉快になった。そして、もうこのまま一緒にこの良い夜を明そうと思い、隣室で寝ながら二人の歌を愉しく聞いた。若さがしだいに蘇って来るようだった。</p>
+        <p><date when="--12">十二月――日</date></p>
+        <p>雪が積っていてまだ<ruby><rb>歇</rb><rt>や</rt></ruby>まなかった。私は<ruby><rb>筧</rb><rt>かけひ</rt></ruby>の水で顔を洗い終ってからも昨夜のことを思うと、石に垂れた氷柱の根の太さが気持ち良かった。久しく崩れていた元気も沸いて来た。今日の午後から農会の人たちと<placeName ref="#shakado">釈迦堂</placeName>であうことになっていたのが、それが先日から気がすすまずいやだったのも、よし会おうと乗り出る気にもなったりした。</p>
+        <p>私は三ヵ月ぶりに手鏡を前に剃刀をあててみた。刃のあとから芽の出て来る姿勢で、雪にしだれた孟宗竹のふかぶかした庭に対い、私はネクタイの若やいだのを締めてみた。</p>
+        <p>「いつまでも、こうはしちゃおれぬからね。」</p>
+        <p>ふと私は意味の分らぬことを妻に口走った。先からの私の素ぶりで妻は何か察したようだった。</p>
+        <p>「そうですよ。まだお若いんですもの。そのネクタイはあたしも好きですわ。」</p>
+        <p>「これか。」</p>
+        <p>これは<placeName ref="#hungary">ハンガリヤ</placeName>で一人の踊子、<persName ref="#irene">イレエネ</persName>といったが、その娘からいま妻が洩したのと同じような口ぶりで、賞められたことのあるネクタイだった。あの<placeName ref="#danube">ダニューブ</placeName>の夜は愉しく私は<persName ref="#irene">イレエネ</persName>から、手を取られて習った<placeName ref="#hungary">ハンガリヤ</placeName>の踊りの足踏みをつま先に感じ、攻め襲って来るような雪の若い群れを見渡しながら、用意はこちらも出来ている自信で私は穏かになった。そして、いよいよ自分の出番になったと思った。一陣は<persName ref="#sanuemon">参右衛門</persName>で昨夜は失敗、次ぎが<persName ref="#kiyoe">清江</persName>でこれは立派な成績、その次ぎが私のこれからだった。眼ざす私の舞台は漠として分らなかったが、それは今日の農会の人の集りのようでもあれば、強盗横行の<placeName ref="#tokyo">東京</placeName>のようでもあり、そのどちらでもない、荒れ狂った濁流の世の若さが、今見る雪の飛び交うさまに見えたりしているようでもあった。</p>
+        <p>午後家を出てから長靴で、雪を踏むときも、つねになく私は元気であった。<placeName ref="#shakado">釈迦堂</placeName>まで行く参道の両側の杉が太く雪の中に幹を連ねて昇っている。石畳のゆるい傾斜の途中に山門が一つあって、左手に谷のように低まった平野が雪で<ruby><rb>掩</rb><rt>おお</rt></ruby>われている。いま私の会おうとしている人たちは、この広い平野全面の村村に設計を与え、実行に押しすすめ、危機に応じる対策を練り、土地と人との生活の一切に号令を下している本部である。私と何の関係もない人人であるが、私はこの健康な人人の意志の片鱗をただ一言覗けば良い。この人たちの私に需めるものは、おそらく批評であろう。それらの人人の失望することは疑いないが、私にはただ利益あるのみであった。</p>
+        <p>集りは本堂の北端にある和尚の書院だ。清潔な趣味に禅宗の和尚の人柄が匂い出ていて<ruby><rb>抹香</rb><rt>まっこう</rt></ruby>臭なく、<ruby><rb>紫檀</rb><rt>したん</rt></ruby>の棚の光沢が畳の条目と正しく調和している。正面の床間の一端に、学生服の美しい鋭敏な青年の写真が懸けてある。私はそれを振り仰いで<persName ref="#ito-hirobumi">伊藤博文</persName>に似た貌の和尚に訊ねると、長男で電信員として<placeName ref="#taiwan">台湾</placeName>へ出征中、死亡の疑い濃くなって来ているとの事である。すでに私は大きな悲劇の座敷の中央にいつの間にか坐っていたのだ。</p>
+        <p>「しかし、<placeName ref="#taiwan">台湾</placeName>なら、まだ……」</p>
+        <p>と、私が云いかけると、</p>
+        <p>「いや、途中の船でやられたらしいのです。調べて貰いましたがね、もう駄目なようでした。」</p>
+        <p>朝からの若やいだ私の気持ちが急にぺたんと折れ崩れて坐った。背面の山のなだれが背に冷え込むのを覚え、襲って来ている若い時代が傷つき<ruby><rb>仆</rb><rt>たお</rt></ruby>れた荒涼とした原野の若木に見えて来た。今さらここで何の批評の口を切ろうとするのだろう。私はもう昨日の深夜、雪を掘り起した底から格調ある歌を聞いてしまっている。あれが時を忘れた深夜の<persName ref="#kiyoe">清江</persName>の祈りではなかったか。</p>
+        <p>谷間から暗く夕暮れが来て人も揃った。私の横に村長、その横が前村長、順次に左右へ農会の技師、みなで十人ばかりの人たちだが、寒さは寺の畳の冷えからではなさそうだった。公益を重んじて来た老人たちの眼の冴え光っている慎しさに、しばらく部屋が鳴りをひそめ<ruby><rb>焙</rb><rt>あぶ</rt></ruby>る手さきだけ温かい。そのうち膳部が出た。一番悲しみの深い<persName ref="#sugai-kodo">菅井</persName>和尚が一番暢気な笑いを立てて、適当な話を出しているが、地平より高く巻き返して来ている災厄の津浪を望んで、目下の方寸誰が何を云えようか。も早や一座の人人は、何もかも知りきっているその後の会話で、今夜は私を慰めてやろうという好意ある会合と分った。</p>
+        <p>清酒が温まる程度に出て、刺身、いくら、鳥雑煮、しるこ、等、禅堂の曇らぬ美しい椀と箸の食事となって、切り口を揃えた菜の青いひたし物が雪の夜の歯を清めた。私は本当にこの食事に感謝した。感謝のしるしに何か、と思うと、何もないかなしさに瞬間襲われたが、また胸中駈けめぐって見ても何もない。ほッとそのとき出て来たのが、</p>
+        <p>「昨夜は面白かったですよ。深夜にね。」</p>
+        <p>という醜態になった。ところが、この<persName ref="#sanuemon">参右衛門</persName>夫婦の短い昨夜の饗宴の話は、ひどく皆を慶ばせた。特に老人たちは一層慶びにほころび、和尚はたいへんな感動の仕方で、</p>
+        <p>「それは珍らしいお話だ。ふむ、それは良いところを御覧になりましたね、ふーむ。」</p>
+        <p>と云うと、それから話に花が咲き始め、座は急に賑かになっていった。</p>
+        <p>これらの雑談の中で、いつも黙っていた一人の農業技師だけは笑わなかった。<persName ref="#sanuemon">参右衛門</persName>夫婦の話は、老人でなければ興趣の薄らぐ種類にちがいないが、若いこの技師の胸中で鳴りつづけていたものは、他にあった。この人は一言何かぼつりと口を開くと、同じことばかりを繰り返した。</p>
+        <p>「目下農家に行わせることは、ただ一つ、三度の米の食事を二度にして、中の一度だけ何か米より美味いものを作らせ、これを代用にする、そして、一食分だけの米を増やすことですが。」</p>
+        <p>技師にとっては、平野を隅から隅まで点検してみた結果の行い得られる緊急の処置は、これだけらしい口調だ。おそらくそうだろう。</p>
+        <p>「しかし、米に代る美味いものというと―――」</p>
+        <p>「まア、麦でしょうが。」</p>
+        <p>「しかし、それは米には敵わぬでしょう。」</p>
+        <p>「そうだと困るのですが。しかし、まア、それよりありませんから。」</p>
+        <p>「しかし、現在の状態で、麦にしたって、これより以上の収穫を上げるということは、出来るものでしょうかね。」</p>
+        <p>「出来ませんね。ですから、一ヵ村につき五町歩平均に新しく開墾させる計画をしております。そして、そこへ麦を植えさせます――」</p>
+        <p>「五町歩ならどこも可能なわけですか。」</p>
+        <p>「それは出来ます。」</p>
+        <p>具体的な実行案が出来ている以上は、もう中心の話題はこれで済んだことになる。その他の話題は――鹿爪らしく切り出せば、土地整理問題、耕作地の半分は地主の所有地であるこの村の小作状況、それに起って来る経済の問題。そして、これらが<placeName ref="#nihon">日本</placeName>経済の枠の中から商工業に引摺られ当然に転換せられる世界経済の波の中での浮き沈み、ということなど、予想はどこまでも切りがない。しかし、私の云う可からざることで、ひそかに知りたいと思うことは、まだ生じていない農民組合の卵のことであった。いずれこの村にもそれはちかく発生して来ることだけは確実だ。この組合を作る卵の敵とするところのものは、当然地主の多い今夜のここの集りとなることも必然的なことであろう。それならいったい、それはこの平野の中のどのあたりから発生して来るものだろうか。卵はいつでも自分が卵であることを知らずにいるものだが、おそらく、それはあの傘を私らに貸してくれた、<persName ref="#matsuura-shokichi">正吉</persName>青年たちの集りではなかろうか。いずれにしても、農会が開墾に着手するのもその組合のまだ発生しない今のうちである。</p>
+        <p>「あなたはこの村を御覧になって、どういうことをお感じになりましたか。」</p>
+        <p>いよいよ来た私への最初の老人の質問だった。直せば直る水質の悪さ、絶景を放置してある道路の悪さ、牧畜への無関心さ、など幾らか私にも感想はあった。</p>
+        <p>「しかし、今は細かいことは、申し上げられないですね。何ぜかと云いますと、私は農業にくらいばかりじゃなく、現在の農業は素人眼にも、抜き差しならぬ集約状態の飽和点に達しているように見受けられるものですから、一ヵ所を改革すれば、全面的に微妙な変化を及ぼしていくのじゃありませんか。しかし、現状のままのとき先ず最初に用いる農具として新しい機械が一つ入用という場合、これはいずれ必ず起ってくる問題でしょうが、ここではどのような機械なものでしょうかね。」</p>
+        <p>答えはなかった。私の質問は少し難問すぎるきらいはある。しかし、どんな政府が出現して、どのような革命が来ようとも、遅かれ早かれこの問題だけはさし迫って来ることだ。</p>
+        <p>「三食を二食にして、中の一食だけ米を抜く、その代りにいま何を作るかということで――」</p>
+        <p>と、農業技師はまた云った。これが出ると尤もすぎて話はそこで停止する。実際、今はこの技師の云うこと以外、無益なことばかりだからだ。</p>
+        <p>「私は役場のものですが、私は文化を農村へ注入したいのですよ。それにはどういうことが良いと思われますか。」と、一人の若い<ruby><rb>剽悍</rb><rt>ひょうかん</rt></ruby>な人が訊ねた。</p>
+        <p>「それは私からもお訊ねしたいことですが、文化の中のどういうことを、ここの人人が一番求めているのか、それも僕の知って置きたいことの一つです。実は何もそんなものを、欲しいとは思っちゃいないのかも知れないのだし、入らざるものを注入して、やたらに都会化させるということは考えねばならぬと思うのです。いったい、欲しがっているのですか村の人人は。私のいる隣家のお神さんは、休日が二日つづいたら、あーあ、退屈だのうと、独り言いってたですよ。」</p>
+        <p>「私の文化を注入したいという意味は、つまり、人が<ruby><rb>団扇</rb><rt>うちわ</rt></ruby>を使っているときに、それはただ暑いから使っているんじゃなくて、それは一種の風流なことだと思わせたい、いかにも心に余裕のある、ゆったりしたことだと思わせたい、そういった風な意味なんですよ。」</p>
+        <p>なるほど、その表現の仕方は、郷土を愛しているものでなくては云えない深さから出て来ているものだと私は感心した。</p>
+        <p>「とにかく、それにしても、労働時間が長すぎて、過労している風ですね。働きすぎるんじゃないですか。」</p>
+        <p>こう云いながらも、私はわが国の農業は労働教という一つの宗教だと思った。そしてこの神は米だ。西洋の農業は遊牧教ともいうべきもので、この神はあるいは音楽かもしれないと思ったが、それだけは大胆にすぎ私は口へ出すのをさしひかえた。</p>
+        <p>「<placeName ref="#america">アメリカ</placeName>の農業専門家が<placeName ref="#nihon">日本</placeName>の農業の視察に来たときの感想は、こんなの、これは農業じゃない園芸だといったそうですよ。一本一本手で草をひいてるのを見ちゃ、笑わざるを得ないでしょうからね。<placeName ref="#america">アメリカ</placeName>の俘虜に<placeName ref="#nagoya">名古屋</placeName>の一番大きな工場を見せたら、これは工業じゃない手工業だと云ったともいいます。しかし、そういう外国と<placeName ref="#nihon">日本</placeName>との違いは、農業と工業とに限っちゃいない、何んだってそうです。芝居と演劇との違いだとか、文芸と文学との違いだとか、軍隊にしたって、<placeName ref="#nihon">日本</placeName>のはあれは宗教でしょう。官吏だって学者だって、美術だって、どういうものか<placeName ref="#nihon">日本</placeName>のはみな宗教の形をとって、より固ってしまう癖がありますね。戦争に敗けた原因の一つもたしかに、こんな癖が結ぼれあって、各宗派が戦い合った結果かもしれませんよ。敵は自分の中だったのです。」</p>
+        <p>私はこう云ってから一寸<placeName ref="#nihon">日本</placeName>の左翼も宗派の形をとって進行していると思った。科学も文学もまたそうだ。そして、自分はどうだろうか。――</p>
+        <p>「僕らにしてもそうですが、しかし、宗教の形をとって進んでいることの良い点だってありましょう。宗教なら各団体の理想は何んと云おうと、人を救うということが目的ですから、どんな悪い団体にしたって、根柢にはその理想が何らかの形で流れていると、僕はそんな風に思うんです。ですから今は、道徳が失われたのではなくって、本当の徳念をより建てようとしている姿の混乱だと僕は見ています。実際、皆は苦しみましたからね。」</p>
+        <p>ふとそのとき、ここは禅寺だと私は思った。禅では殺すことだって救うことではなかったか。自分を木石と見て殺し、習錬する法ではなかっただろうか。そして、日常人と人とが接した場合、<placeName ref="#nihon">日本</placeName>人の肉体からどんなに沢山の火花がこの禅の形で飛び散ったことかと思った。またそれは無意識の習慣にまでなっている根の深さを思うと、<placeName ref="#nihon">日本</placeName>人の不可解さはそこにもあると思わざるを得なかった。皆が黙ってしまったとき、</p>
+        <p>「<persName ref="#sanuemon">参右衛門</persName>のお神さん、歌を謡ったのは面白いなア、ふーむ、面白いお話だなア。」</p>
+        <p>と、和尚はまたそう云って腕を組んで感心した。私はこの和尚はやはりこれは一種の名僧だと思った。</p>
+        <p>私一人は今夜の客であったから、皆より一人さきに座を立って帰った。太い杉の参道はまったくの無灯で長かった。柄の折れた洋傘を杖に、寸余も見えない石畳を探り探り降りて行く私の靴音だけが頼りだった。谷間の雪が幹の切れ目からときどき白く見えていた。</p>
+        <p>木人夜穿靴去</p>
+        <p>石女暁冠帽帰</p>
+        <p>こつこつ鳴る靴音から<persName ref="#shigetsu-zenji">指月禅師</persName>のそんな詩句が泥んで来る。夜の靴というこの詩の題も、木石になった人間の孤独な音の美しさを漂わせていて私は好きであった。石畳が村道に変ってからも灯はどこにも見えなかった。雪明りで道は幾らか<ruby><rb>朧</rb><rt>おぼろ</rt></ruby>ろになったが、踏み砕ける雪の下から水が足首まで滲み上り、ごぼごぼ鳴った。</p>
+        <p><date when="--12">十二月――日</date></p>
+        <p>廂の日に耀いた氷柱から雫が垂れている。峠をくだって来る雪路に魚売り娘の来るのが見えると、迅い速度でたちまち私のいる縁側へ現れ籠をどさりと降ろした。妻が今夜<placeName ref="#tokyo">東京</placeName>へ発つ長男に持たせるために魚を買っているところへ、火燧崎が来て荷を無事に発送させたと報告した。その荷を逐うようにして午後四時長男が出発する。駅まで送っていった妻が帰って来てから、「もう大変な混雑ですよ。四時のならあなたお一人では帰れませんわ。」という。</p>
+        <p>私の出発は荷の着くころを狙って行くのだが、私は朝の一番にするつもりだ。その汽車だと駅前のどこかで前晩から泊っていなければ、駅までの夜の泥路は通れない。</p>
+        <p>夜はまた雪が降って来る。半分に荷の減った部屋の中では、子供の寝床も一つ無くなり隙間が一層拡がった。</p>
+        <p><date when="--12">十二月――日</date></p>
+        <p>雪が解けて来た。傾いた村道に水が流れ底から小石がむき出ている。五六日は<placeName ref="#tokyo">東京</placeName>へ帰る準備で私は日を費していたが、さて身を起して出発しようとすると、意外なふかさで自分の根の土に張っているのを感じた。おそらく私はもう一度この村へ来ることはあるまい。そう思うと、石の間を流れる細流の曲りも靴を洗ってくれているようだ。</p>
+        <p>私は手荷物を用意してから、竹林の孟宗の節を眺め、降りて来る薄闇の中の山を見ていた。炉端から柴を折る音がしている。どういうものか私は庭の鯉が見たくなって覗くと、夕暮れの石垣の根に鯉は沈んでいてよく見えない。</p>
+        <p>「<persName ref="#kyuzaemon">久左衛門</persName>さんがもうお見えになりましたよ。」と妻が云った。</p>
+        <p>黒い釣鐘マントを着た<persName ref="#kyuzaemon">久左衛門</persName>が庭に立っていて、もう私の荷物を下げていた。私は炉端へ行って<persName ref="#sanuemon">参右衛門</persName>夫妻に別れの挨拶をした。<persName ref="#sanuemon">参右衛門</persName>の丸い膝頭が白くはみ出ている前で、礼をする私の眼から涙が出て来た。炉の煙が低く<ruby><rb>匐</rb><rt>はらば</rt></ruby>い流れている<ruby><rb>筵</rb><rt>むしろ</rt></ruby>へ<persName ref="#kiyoe">清江</persName>も並んでいる。</p>
+        <p>「一週間もすれば家内らも立ちましょうから、それまで宜敷く願います。」</p>
+        <p>出立といっても、今夜は、<persName ref="#kyuzaemon">久左衛門</persName>が取って置いてくれた駅前の<ruby><rb>蕎麦</rb><rt>そば</rt></ruby>屋で私は泊ることになっていて時間を気にする要もなかったが、待っていてくれる<persName ref="#kyuzaemon">久左衛門</persName>に私もゆっくりは出来なかった。それに間もなく夜路は見えなくなる。</p>
+        <p>私は<persName ref="#soza-emon">宗左衛門</persName>のあばにも挨拶に廻った。脚絆をつけた嫁が出て来たが、あばは留守だった。外へ出てから<persName ref="#kyuzaemon">久左衛門</persName>の長男の所へ私は挨拶にまた行った。<placeName ref="#yura">由良</placeName>の老婆も裏口へ出ていた。私が別家の長男に表口から挨拶をしようとすると、裏口に私が皆と一緒にいると思ったらしい長男は裏へ廻った。外で見ている長男の嫁や老婆が表だ表だというと、今度は表へ廻ったらしい。しかし、そのときには私は裏口へ長男の廻っている様子を察してまた裏へ廻っていた。見ているものらには両方が分るので<ruby><rb>鼬鼠</rb><rt>いたち</rt></ruby>ごっこの二人を見て、あはあは笑いながら表だ裏だという。どちらが裏か表か分らず二人はますます困るばかりだった。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>は駅までのいつもの路を選ばず、山添いに<placeName ref="#shakado">釈迦堂</placeName>の方の路を選んで歩いた。少し遠いが路はその方が良いそうだ。<persName ref="#tensaku">天作</persName>が毎朝暗いうちから白土を掘り出しに通う路で、また<placeName ref="#yura">由良</placeName>から老婆が通って来る路でもある。<placeName ref="#shakado">釈迦堂</placeName>の下まで来たとき、<persName ref="#kyuzaemon">久左衛門</persName>に下で待っていてもらって私一人<placeName ref="#shakado">釈迦堂</placeName>へ参拝した。堂までの参道を登る石畳は長いが、この良い村を暫くの間私に与えられた好運を私は感謝したかった。</p>
+        <p>湿った杉枝の落ちている石畳に靴が鳴り谷間に響いた。もうあたりが暗く、正面の堂の閉った扉が隙間を一寸ほど開けている。観音開きになった扉の厚い合せ目に下から手をかけて引いてみるのに、中から鍵が降りていてかたかた隙間が鳴るだけだった。私は閉ったままの扉の外から拝した。そして、少し戻って来たとき、今どき山中の怪しげな私の靴音を聞いたものか、方丈の戸が開いて間へ和尚の半身が顕れた。</p>
+        <p>「どなたです。」</p>
+        <p>もう傍へよらねば分らぬ暗さの中で、私は黙って和尚の方へ近よって行った。</p>
+        <p>「ああ、あなたでしたか。どうぞどうぞ。」</p>
+        <p>愕いている和尚に、私は立ったままそこで別れの礼をのべて、下で人を待たせてある理由を云ってすぐ引き返した。山際に残った雪が杉の幹の間から白く見えている。その下の村道に、両足をきちんと揃えた<persName ref="#kyuzaemon">久左衛門</persName>が前の姿勢を崩さずに立っていた。</p>
+        <p>うねうねした泥路を二人が行くうちまったく周囲は見えなくなって来た。彼は馬の蹄の跡を踏むようにして泥を渡って行った。どれも同じように見える刈田ばかり続いた闇夜の底を一本細い路が真直ぐに延びていて、その中ごろまで来たとき、<persName ref="#kyuzaemon">久左衛門</persName>はぴたりと立ち停って田を見ていた。</p>
+        <p>「ここが<ruby><rb>自宅</rb><rt>うち</rt></ruby>の田だ。」という。</p>
+        <p>「この真暗な中でよく分りますね。」とそう私が云うと、刈り株の切り口で分るものだという。</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>の妻女が三人田へ児を産み落して死なしたということをふと私は思い出した。中の一人はここの田かも知れない素ぶりで、彼は、闇夜のそこからじっと暫く足を動かそうとしなかった。</p>
+        <p>「これで、今年の米が出来上るのは、正月を越すのう。」と<persName ref="#kyuzaemon">久左衛門</persName>は云う。</p>
+        <p>駅までは遠かった。蕎麦屋の清潔でよく拭かれた二階へ上ったときは、夕食ごろをもうよほど過ぎていた。ここでも床の間に戦死した長男の写真が大きな額に懸けてある。その下で二人は火鉢に対き合って夕飯を待ったが、私の行く家家に戦争の災厄の降り下っている点点とした傷痕が眼について、この平野も収穫をすませたといえ、今は痕だらけの刈田となって横たわっているのみだと思った。そう思うと、窓硝子の向うに迫っている闇が大幅の寒さで身にこたえた。</p>
+        <p>食事には酒も出た。<persName ref="#kyuzaemon">久左衛門</persName>は酔いが少し廻って来ると聞きとり難い口調で、何かひとりぼつぼつこぼしている。</p>
+        <p>「おれはのう、殴られた殴られた。もうあの<persName ref="#sanuemon">参右衛門</persName>から、幾ら殴られたかしれん。」二度と私と会うこともなかろうと察しているらしい彼は、過去の忍耐のすべてを呟いてしまいたい口ごもりである。「お前さんも、あの男の傍じゃ気苦労で辛かったでしょうのう。それでも、あの男は人は好い。おれがあの男の別家のくせに、金を儲けたというては、おれを殴るのじゃが、あれは良い男じゃ。」</p>
+        <p><persName ref="#kyuzaemon">久左衛門</persName>はこう云ってから今度は、自分の死なした初孫がどんなに利巧だったかということをくどくこぼし始めた。やはり、彼の一番の悲しさは孫を失ったことらしい。次ぎには、私の時間をいつも奪って邪魔したことを謝罪した。</p>
+        <p>「あんたとお話してると、面白うて面白うて、何んぼう邪魔しようまいと思うてひかえても、面白うてのう、行かずにいると淋しゅうなるのじゃ。おれは、あんな面白いお話は聞いたことがない。」</p>
+        <p>彼から一番困らされたことは、たしかに私の方が悪いことを私は認めている。他人の時間を奪う盗人がこの世にいない限り、自分の空間は廻らぬのだ。これについては、私はもっと後で考えることとして彼に酒を注ぎ注ぎお礼を云った。</p>
+        <p>十時すぎに二人は寝床を二つ造って貰って寝た。手織木綿の固い雪国の蒲団で重く私は一枚だけはねて寝たが、<persName ref="#kyuzaemon">久左衛門</persName>は横になるともう眠っていた。私はいつまでも眠れなかった。駅を通る貨物が来ては去り来ては去っていく。明日一日中私は汽車の中で、夜十二時に<placeName ref="#ueno">上野</placeName>へ着くとすると、朝までそこで夜明しだ。そして、私が自宅の門へ這入って行くのは<date when="--12-08">十二月八日</date>だった。</p>
+        <p>眠れないので私はときどき電気をつけて<persName ref="#kyuzaemon">久左衛門</persName>の顔を覗いた。彼は寝息も立てずによく眠っている。見るたびに真直ぐに仰向いた正しい姿勢で、少し開いた口もとの微笑が、「おれは働いた働いた。」といっている。土台の骨が笑っている寝顔だ。<placeName ref="#kaidan-in">戒壇院</placeName>の最上段から見降している<persName ref="#kyuzaemon">久左衛門</persName>の位牌は、こうして寝ている銃貫創の跡つけた彼の額の上に置かれることも、そう遠い日のことではないだろう。そして、私は二度とこの顔を見ることも、おそらくもうあるまい。夜汽車が木枯の中を通って行く。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

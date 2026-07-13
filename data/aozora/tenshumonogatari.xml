@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>天守物語</title>
+        <author>泉鏡花</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>天守物語</title><author>泉鏡花</author>
+          <note>青空文庫。底本：「泉鏡花集成7」ちくま文庫、筑摩書房。1995（平成7）年12月4日第1刷発行。底本の親本：「鏡花全集　第二十六卷」岩波書店。1942（昭和17）年10月15日発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000050/card3065.html">https://www.aozora.gr.jp/cards/000050/card3065.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="tomihime">
+        <persName>富姫</persName>
+        <note>姫路白鷺城の天守第五重に住む天守夫人。本文には「富姫」「富」(自称「それは姫路の、富だもの」)の2形。話者標示は「夫人」(役割語のため本文中の「夫人」は不採用)</note>
+      </person>
+      <person xml:id="kamehime">
+        <persName>亀姫</persName>
+        <note>岩代国猪苗代・亀ヶ城(千畳敷)の主。富姫の妹分で、手鞠をつきに天守を訪ねる。「お亀様」とも</note>
+      </person>
+      <person xml:id="zusho">
+        <persName>姫川図書之助</persName>
+        <note>武田播磨守に仕える若き鷹匠。白鷹をそらした咎で天守五重の見届けを命ぜられ、富姫と結ばれる。話者標示は「図書」</note>
+      </person>
+      <person xml:id="harima">
+        <persName>武田播磨守</persName>
+        <note>姫路城主。五十万石の大名。鷹狩の帰りに図書之助を逆賊として討たせる。「播磨守」「播磨」とも</note>
+      </person>
+      <person xml:id="emonnosuke">
+        <persName>武田衛門之介</persName>
+        <note>猪苗代亀ヶ城の主で播磨守の兄弟。亀姫に殺され、その生首が土産として天守に運ばれる</note>
+      </person>
+      <person xml:id="shuri">
+        <persName>小田原修理</persName>
+        <note>姫路城主武田播磨守の家臣。討手の一人で、青獅子の由来を語る</note>
+      </person>
+      <person xml:id="kuhei">
+        <persName>山隅九平</persName>
+        <note>姫路城主武田播磨守の家臣。討手の一人</note>
+      </person>
+      <person xml:id="shunoban">
+        <persName>朱の盤坊</persName>
+        <note>十文字ヶ原の朱の盤坊。亀姫の供頭で奥州変化の先達、大山伏の扮装をした赭ら顔の妖怪。話者標示は「朱の盤」</note>
+      </person>
+      <person xml:id="shitanaga-uba">
+        <persName>舌長姥</persName>
+        <note>茅野ヶ原の舌長姥。亀姫の眷属で、三尺の長い舌で生首の血を舐める。話者標示は「舌長姥」(役割語のため本文中の「姥」は不採用)</note>
+      </person>
+      <person xml:id="tomoroku">
+        <persName>近江之丞桃六</persName>
+        <note>丹波の国の工人(楊枝削り)。獅子頭とさし櫛を彫った作者で、終幕に現れて獅子の眼を鑿で開ける</note>
+      </person>
+      <person xml:id="kikyo">
+        <persName>桔梗</persName>
+        <note>富姫の侍女五人の一人。名は秋草に因む</note>
+      </person>
+      <person xml:id="hagi">
+        <persName>萩</persName>
+        <note>富姫の侍女五人の一人。名は秋草に因む</note>
+      </person>
+      <person xml:id="kuzu">
+        <persName>葛</persName>
+        <note>富姫の侍女五人の一人。名は秋草に因む</note>
+      </person>
+      <person xml:id="ominaeshi">
+        <persName>女郎花</persName>
+        <note>富姫の侍女五人の一人。名は秋草に因む</note>
+      </person>
+      <person xml:id="nadeshiko">
+        <persName>撫子</persName>
+        <note>富姫の侍女五人の一人。名は秋草に因む</note>
+      </person>
+      <person xml:id="susuki">
+        <persName>薄</persName>
+        <note>富姫に仕える奥女中。侍女たちより年かさ。名は秋草に因む</note>
+      </person>
+      <person xml:id="oyuki">
+        <persName>お雪</persName>
+        <note>越前国大野郡・夜叉ヶ池の主(大池のぬし)。富姫の頼みで雨風を起こし鷹狩を追い崩す。戯曲『夜叉ヶ池』の白雪姫にあたる</note>
+      </person>
+      <person xml:id="hozuki">
+        <persName>鬼灯</persName>
+        <note>富姫に仕える女の童(禿)の一人</note>
+      </person>
+      <person xml:id="tombo">
+        <persName>蜻蛉</persName>
+        <note>富姫に仕える女の童(禿)の一人</note>
+      </person>
+      <person xml:id="hideyoshi">
+        <persName>秀吉</persName>
+        <note>豊臣秀吉(1537-1598)。実在人物への言及(「秀吉時分から見馴れていながら」)</note>
+      </person>
+      <person xml:id="kimura-nagatonokami">
+        <persName>木村長門守</persName>
+        <note>木村重成(1593?-1615)。大坂夏の陣で討死した実在の武将。兜の話の中での言及</note>
+      </person>
+      <person xml:id="tenjin">
+        <persName>天神様</persName>
+        <note>天満天神(菅原道真)。童唄「通りゃんせ」中の神。実在の場所ではなく祈願の対象として言及される</note>
+      </person>
+      <person xml:id="kichijoten">
+        <persName>吉祥天女</persName>
+        <note>吉祥天。福徳を司る仏教の女神。朱の盤坊が侍女たちを称えて言う</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="banshu">
+        <placeName>播州</placeName>
+        <location><geo>34.85 134.7</geo></location>
+        <note>播磨国(現兵庫県南西部)の別称・概値</note>
+      </place>
+      <place xml:id="himeji">
+        <placeName>姫路</placeName>
+        <location><geo>34.8394 134.6939</geo></location>
+        <note>兵庫県姫路市・概値。本文には「姫路」「姫路野」の2形</note>
+      </place>
+      <place xml:id="shirasagijo">
+        <placeName>白鷺城</placeName>
+        <location><geo>34.8394 134.6939</geo></location>
+        <note>姫路城(白鷺城)・概値。本作の舞台となる天守第五重がある。本文には「白鷺城」「姫路城」の2形</note>
+      </place>
+      <place xml:id="iwashiro">
+        <placeName>岩代国</placeName>
+        <location><geo>37.5 140.1</geo></location>
+        <note>旧国名(現福島県中通り・会津地方)・概値</note>
+      </place>
+      <place xml:id="inawashiro">
+        <placeName>猪苗代</placeName>
+        <location><geo>37.5644 140.1069</geo></location>
+        <note>福島県耶麻郡猪苗代町・概値。亀姫の在所</note>
+      </place>
+      <place xml:id="kamegajo">
+        <placeName>亀ヶ城</placeName>
+        <location><geo>37.5628 140.1147</geo></location>
+        <note>猪苗代城(亀ヶ城)。福島県耶麻郡猪苗代町の城跡・概値。本文には「亀の城」「亀ヶ城」の2形</note>
+      </place>
+      <place xml:id="senjojiki">
+        <placeName>千畳敷</placeName>
+        <note>亀ヶ城内の広間の名。亀姫は「千畳敷の主」と称される。城内の一室のため座標なし</note>
+      </place>
+      <place xml:id="yamagun">
+        <placeName>麻耶郡</placeName>
+        <location><geo>37.6 139.95</geo></location>
+        <note>耶麻郡(現福島県耶麻郡)・概値。底本の表記は「麻耶郡」</note>
+      </place>
+      <place xml:id="aizugun">
+        <placeName>会津郡</placeName>
+        <location><geo>37.35 139.9</geo></location>
+        <note>岩代国会津郡(現福島県会津地方)・概値</note>
+      </place>
+      <place xml:id="jumonjigahara">
+        <placeName>十文字ヶ原</placeName>
+        <note>朱の盤坊の出所とされる原。会津の伝承地で所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="aogorin">
+        <placeName>青五輪</placeName>
+        <note>十文字ヶ原の中の地名。所在不詳のため座標なし</note>
+      </place>
+      <place xml:id="jodonodate">
+        <placeName>允殿館</placeName>
+        <note>朱の盤坊が主とする館。会津の伝承地で所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="chinogahara">
+        <placeName>茅野ヶ原</placeName>
+        <note>舌長姥の出所とされる原。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="yashagaike">
+        <placeName>夜叉ヶ池</placeName>
+        <location><geo>35.6858 136.4108</geo></location>
+        <note>福井県南越前町と岐阜県揖斐川町の境にある池・概値。作中では越前国大野郡の設定(鏡花の戯曲『夜叉ヶ池』と同じ)</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前国</placeName>
+        <location><geo>36.0 136.2</geo></location>
+        <note>旧国名(現福井県北東部)・概値</note>
+      </place>
+      <place xml:id="ono-gun">
+        <placeName>大野郡</placeName>
+        <location><geo>35.98 136.49</geo></location>
+        <note>越前国大野郡(現福井県大野市周辺)・概値</note>
+      </place>
+      <place xml:id="bandaisan">
+        <placeName>磐梯山</placeName>
+        <location><geo>37.6014 140.0725</geo></location>
+        <note>福島県の磐梯山(1816m)・概値</note>
+      </place>
+      <place xml:id="murasagi">
+        <placeName>群鷺ヶ峰</placeName>
+        <note>姫路城下はずれの山。地主神の宮があり、青獅子の由来の地とされる。作中の地名で所在不詳のため座標なし。本文には「群鷺ヶ峰」「群鷺山」の2形</note>
+      </place>
+      <place xml:id="osakajo">
+        <placeName>大阪城</placeName>
+        <location><geo>34.6873 135.5259</geo></location>
+        <note>大坂城(現大阪市中央区)・概値。大坂の陣の言及</note>
+      </place>
+      <place xml:id="suruga">
+        <placeName>駿河</placeName>
+        <location><geo>35.1 138.5</geo></location>
+        <note>旧国名(現静岡県中部)・概値。鞠唄の中の言及</note>
+      </place>
+      <place xml:id="fuchu">
+        <placeName>府中</placeName>
+        <location><geo>34.9756 138.3828</geo></location>
+        <note>駿河府中(駿府、現静岡市葵区)・概値。鞠唄の中の言及</note>
+      </place>
+      <place xml:id="kakegawa">
+        <placeName>掛川</placeName>
+        <location><geo>34.769 138.0148</geo></location>
+        <note>遠江・掛川宿(現静岡県掛川市)・概値。鞠唄の中の言及</note>
+      </place>
+      <place xml:id="shitaya">
+        <placeName>下谷</placeName>
+        <location><geo>35.7128 139.7785</geo></location>
+        <note>東京・下谷(現台東区)・概値。鞠唄の中の言及</note>
+      </place>
+      <place xml:id="tamba">
+        <placeName>丹波</placeName>
+        <location><geo>35.15 135.4</geo></location>
+        <note>旧国名(現京都府中部・兵庫県東部)・概値。桃六の出身地</note>
+      </place>
+      <place xml:id="oshu">
+        <placeName>奥州</placeName>
+        <location><geo>39.5 141.0</geo></location>
+        <note>陸奥国(東北地方)・概値。広域名のため中央付近の概値</note>
+      </place>
+      <place xml:id="meido">
+        <placeName>冥土</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>天守物語</head>
+        <p>時　　不詳。ただし封建時代――晩秋。日没前より深更にいたる。</p>
+        <p>所　　<placeName ref="#banshu">播州</placeName><placeName ref="#himeji">姫路</placeName>。<placeName ref="#shirasagijo">白鷺城</placeName>の天守、第五重。</p>
+        <p>登場人物</p>
+        <p>天守夫人、<persName ref="#tomihime">富姫</persName>。（打見は二十七八）<placeName ref="#iwashiro">岩代国</placeName><placeName ref="#inawashiro">猪苗代</placeName>、<placeName ref="#kamegajo">亀の城</placeName>、<persName ref="#kamehime">亀姫</persName>。（二十ばかり）<persName ref="#zusho">姫川図書之助</persName>。（わかき鷹匠）<persName ref="#shuri">小田原修理</persName>。<persName ref="#kuhei">山隅九平</persName>。（ともに<placeName ref="#shirasagijo">姫路城</placeName>主<persName ref="#harima">武田播磨守</persName>家臣）<placeName ref="#jumonjigahara">十文字ヶ原</placeName>、<persName ref="#shunoban">朱の盤坊</persName>。<placeName ref="#chinogahara">茅野ヶ原</placeName>の<persName ref="#shitanaga-uba">舌長姥</persName>。（ともに<persName ref="#kamehime">亀姫</persName>の眷属）<persName ref="#tomoroku">近江之丞桃六</persName>。（工人）<persName ref="#kikyo">桔梗</persName>。<persName ref="#hagi">萩</persName>。<persName ref="#kuzu">葛</persName>。<persName ref="#ominaeshi">女郎花</persName>。<persName ref="#nadeshiko">撫子</persName>。（いずれも<persName ref="#tomihime">富姫</persName>の侍女）<persName ref="#susuki">薄</persName>。（おなじく奥女中）女の童、禿、五人。武士、討手、大勢。</p>
+        <p>舞台。天守の五重。左右に柱、向って三方を<ruby><rb>廻廊下</rb><rt>まわりろうか</rt></ruby>のごとく余して、一面に高く<ruby><rb>高麗</rb><rt>こうらい</rt></ruby>べりの畳を敷く。<ruby><rb>紅</rb><rt>くれない</rt></ruby>の鼓の緒、処々に蝶結びして<ruby><rb>一条</rb><rt>ひとすじ</rt></ruby>、これを欄干のごとく取りまわして柱に渡す。おなじ鼓の緒のひかえづなにて、向って右、廻廊の奥に<ruby><rb>階子</rb><rt>はしご</rt></ruby>を設く。階子は天井に高く通ず。左の<ruby><rb>方</rb><rt>かた</rt></ruby>廻廊の奥に、また階子の上下の口あり。奥の正面、及び右なる廻廊の半ばより厚き壁にて、広き<ruby><rb>矢狭間</rb><rt>やざま</rt></ruby>、<ruby><rb>狭間</rb><rt>はざま</rt></ruby>を設く。外面は山岳の<ruby><rb>遠見</rb><rt>とおみ</rt></ruby>、秋の雲。壁に出入りの扉あり。鼓の緒の欄干<ruby><rb>外</rb><rt>そと</rt></ruby>、左の一方、<ruby><rb>棟甍</rb><rt>むながわら</rt></ruby>、並びに<ruby><rb>樹立</rb><rt>こだち</rt></ruby>の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>を見す。正面おなじく<ruby><rb>森々</rb><rt>しんしん</rt></ruby>たる樹木の梢。</p>
+        <p><ruby><rb>女童</rb><rt>めのわらわ</rt></ruby>三人――合唱――</p>
+        <p>ここはどこの細道じゃ、細道じゃ、</p>
+        <p><persName ref="#tenjin">天神様</persName>の細道じゃ、細道じゃ。</p>
+        <p>――うたいつつ幕<ruby><rb>開</rb><rt>あ</rt></ruby>く――</p>
+        <p>侍女五人。<persName ref="#kikyo"><ruby><rb>桔梗</rb><rt>ききょう</rt></ruby></persName>、<persName ref="#ominaeshi"><ruby><rb>女郎花</rb><rt>おみなえし</rt></ruby></persName>、<persName ref="#hagi"><ruby><rb>萩</rb><rt>はぎ</rt></ruby></persName>、<persName ref="#kuzu"><ruby><rb>葛</rb><rt>くず</rt></ruby></persName>、<persName ref="#nadeshiko"><ruby><rb>撫子</rb><rt>なでしこ</rt></ruby></persName>。<ruby><rb>各</rb><rt>おのおの</rt></ruby>名にそぐえる姿、鼓の緒の欄干に、あるいは立ち、あるいは<ruby><rb>坐</rb><rt>い</rt></ruby>て、手に手に<ruby><rb>五色</rb><rt>ごしき</rt></ruby>の絹糸を巻きたる糸枠に、<ruby><rb>金色</rb><rt>きんしょく</rt></ruby>銀色の細き<ruby><rb>棹</rb><rt>さお</rt></ruby>を通し、糸を松杉の高き梢を<ruby><rb>潜</rb><rt>くぐ</rt></ruby>らして、<ruby><rb>釣</rb><rt>つり</rt></ruby>の姿す。</p>
+        <p>女童三人は、<ruby><rb>緋</rb><rt>ひ</rt></ruby>のきつけ、唄いつづく。――<ruby><rb>冴</rb><rt>さ</rt></ruby>えて且つ寂しき声。</p>
+        <p>少し通して下さんせ、下さんせ。</p>
+        <p>ごようのないもな通しません、通しません。</p>
+        <p><persName ref="#tenjin">天神様</persName>へ願掛けに、願掛けに。</p>
+        <p>通らんせ、通らんせ。</p>
+        <p>唄いつつその遊戯をす。</p>
+        <p><persName ref="#susuki"><ruby><rb>薄</rb><rt>すすき</rt></ruby></persName>、天守の壁の<ruby><rb>裡</rb><rt>うち</rt></ruby>より出づ。壁の一<ruby><rb>劃</rb><rt>かく</rt></ruby>はあたかも扉のごとく、自由に開く、この<ruby><rb>婦</rb><rt>おんな</rt></ruby>やや年かさ。<ruby><rb>鼈甲</rb><rt>べっこう</rt></ruby>の突通し、御殿奥女中のこしらえ。</p>
+        <p><persName ref="#susuki">薄</persName>　<persName ref="#hozuki"><ruby><rb>鬼灯</rb><rt>ほおずき</rt></ruby></persName>さん、<persName ref="#tombo"><ruby><rb>蜻蛉</rb><rt>とんぼ</rt></ruby></persName>さん。</p>
+        <p>女童一　ああい。</p>
+        <p><persName ref="#susuki">薄</persName>　<ruby><rb>静</rb><rt>しずか</rt></ruby>になさいよ、お掃除が済んだばかりだから。</p>
+        <p>女童二　あの、釣を見ましょうね。</p>
+        <p>女童三　そうね。</p>
+        <p>いたいけに<ruby><rb>頷</rb><rt>うなず</rt></ruby>きあいつつ、侍女等の中に、はらはらと袖を<ruby><rb>交</rb><rt>まじ</rt></ruby>う。</p>
+        <p><persName ref="#susuki">薄</persName>　（<ruby><rb>四辺</rb><rt>あたり</rt></ruby>を<ruby><rb>眗</rb><rt>みまわ</rt></ruby>す）これは、まあ、まことに、いい見晴しでございますね。</p>
+        <p><persName ref="#kuzu">葛</persName>　あの、<placeName ref="#inawashiro"><ruby><rb>猪苗代</rb><rt>いなわしろ</rt></ruby></placeName>のお姫様がお遊びにおいででございますから。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　お<ruby><rb>鬱陶</rb><rt>うっと</rt></ruby>しかろうと思いまして。それには、申分のございませんお日和でございますし、遠山はもう、もみじいたしましたから。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　矢狭間も、物見も、お目触りな、泥や、鉄の、重くるしい、<ruby><rb>外囲</rb><rt>そとがこい</rt></ruby>は、ちょっと取払っておきました。</p>
+        <p><persName ref="#susuki">薄</persName>　成程、成程、よくおなまけ遊ばす方たちにしては、感心にお気のつきましたことでございます。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　あれ、人ぎきの悪いことを。――いつ私たちがなまけましたえ。</p>
+        <p><persName ref="#susuki">薄</persName>　まあ、そうお言いの口の下で、何をしておいでだろう。二階から目薬とやらではあるまいし、お天守の五重から釣をするものがありますかえ。天の川は芝を流れはいたしません。<persName ref="#tomihime">富姫</persName>様が、よそへお出掛け遊ばして、いくら<ruby><rb>間</rb><rt>ひま</rt></ruby>があると申したって、<ruby><rb>串戯</rb><rt>じょうだん</rt></ruby>ではありません。</p>
+        <p><persName ref="#nadeshiko">撫子</persName>　いえ、魚を釣るのではございません。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　旦那様の<ruby><rb>御前</rb><rt>おまえ</rt></ruby>に、ちょうど<ruby><rb>活</rb><rt>い</rt></ruby>けるのがございませんから、<ruby><rb>皆</rb><rt>みんな</rt></ruby>で取って差上げようと存じまして、花を……あの、秋草を釣りますのでございますよ。</p>
+        <p><persName ref="#susuki">薄</persName>　花を、秋草をえ。はて、これは珍しいことを承ります。そして何かい、釣れますかえ。</p>
+        <p><ruby><rb>女童</rb><rt>めのわらわ</rt></ruby>の一人の肩に、袖でつかまって<ruby><rb>差覗</rb><rt>さしのぞ</rt></ruby>く。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　ええ、釣れますとも、もっとも、新発明でございます。</p>
+        <p><persName ref="#susuki">薄</persName>　高慢なことをお言いでない。――が、つきましては、念のために伺いますが、お用いになります。……<ruby><rb>餌</rb><rt>えさ</rt></ruby>の儀でござんすがね。</p>
+        <p><persName ref="#nadeshiko">撫子</persName>　はい、それは白露でございますわ。</p>
+        <p><persName ref="#kuzu">葛</persName>　千草八千草秋草が、それはそれは、今頃は、露を<ruby><rb>沢山</rb><rt>たんと</rt></ruby>欲しがるのでございますよ。刻限も七つ時、まだ夕露も夜露もないのでございますもの。（隣を<ruby><rb>視</rb><rt>み</rt></ruby>る）御覧なさいまし、<persName ref="#ominaeshi">女郎花</persName>さんは、もう、あんなにお釣りなさいました。</p>
+        <p><persName ref="#susuki">薄</persName>　ああ、ほんにねえ。まったく草花が釣れるとなれば、さて、これは<ruby><rb>静</rb><rt>しずか</rt></ruby>にして拝見をいたしましょう。釣をするのに<ruby><rb>饒舌</rb><rt>しゃべ</rt></ruby>っては悪いと云うから。……<ruby><rb>一番</rb><rt>いっち</rt></ruby>だまっておとなしい<persName ref="#ominaeshi">女郎花</persName>さんがよく釣った、争われないものじゃないかね。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　いいえ、お魚とは違いますから、声を出しても、唄いましても構いません。――ただ、風が騒ぐと<ruby><rb>下可</rb><rt>いけ</rt></ruby>ませんわ。……餌の露が、ぱらぱらこぼれてしまいますから。ああ、釣れました。</p>
+        <p><persName ref="#susuki">薄</persName>　お見事。</p>
+        <p>と云う時、<persName ref="#ominaeshi">女郎花</persName>、<ruby><rb>棹</rb><rt>さお</rt></ruby>ながらくるくると枠を巻戻す、糸につれて秋草、欄干に上り<ruby><rb>来</rb><rt>きた</rt></ruby>る。さきに<ruby><rb>傍</rb><rt>かたわら</rt></ruby>に置きたる花とともに、女童の手に渡す。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　釣れました。（おなじく糸を巻戻す。）</p>
+        <p><persName ref="#hagi">萩</persName>　あれ、私も……</p>
+        <p>花につれて、黄と、白、紫の<ruby><rb>胡蝶</rb><rt>こちょう</rt></ruby>の<ruby><rb>群</rb><rt>むれ</rt></ruby>、ひらひらと舞上る。</p>
+        <p><persName ref="#kuzu">葛</persName>　それそれ私も――まあ、しおらしい。</p>
+        <p><persName ref="#susuki">薄</persName>　<persName ref="#kikyo">桔梗</persName>さん、棹をお貸しな、私も釣ろう、まことに感心、おつだことねえ。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　お待ち遊ばせ、大層風が出て参りました、餌が糸にとまりますまい。</p>
+        <p><persName ref="#susuki">薄</persName>　意地の悪い、急に激しい風になったよ。</p>
+        <p><persName ref="#hagi">萩</persName>　ああ、<ruby><rb>内廓</rb><rt>うちぐるわ</rt></ruby>の秋草が、美しい波を打ちます。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　そう云ううちに、色もかくれて、<ruby><rb>薄</rb><rt>すすき</rt></ruby>ばかりが<ruby><rb>真白</rb><rt>まっしろ</rt></ruby>に、水のように流れて来ました。</p>
+        <p><persName ref="#kuzu">葛</persName>　空は<ruby><rb>黒雲</rb><rt>くろくも</rt></ruby>が走りますよ。</p>
+        <p><persName ref="#susuki">薄</persName>　<ruby><rb>先刻</rb><rt>さっき</rt></ruby>から、野も山も、不思議に暗いと思っていた、これは<ruby><rb>酷</rb><rt>ひど</rt></ruby>い降りになりますね。</p>
+        <p>舞台暗くなる、電光<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>く。</p>
+        <p><persName ref="#nadeshiko">撫子</persName>　<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>は、どこへおいで遊ばしたのでございますえ。早くお帰り遊ばせば<ruby><rb>可</rb><rt>よ</rt></ruby>うございますね。</p>
+        <p><persName ref="#susuki">薄</persName>　<ruby><rb>平時</rb><rt>いつも</rt></ruby>のように、どこへとも何ともおっしゃらないで、ふいとお出ましになったもの。</p>
+        <p><persName ref="#hagi">萩</persName>　お迎いにも参られませんねえ。</p>
+        <p><persName ref="#susuki">薄</persName>　お客様、<persName ref="#kamehime">亀姫</persName>様のおいでの時刻を、それでも御含みでいらっしゃるから、ほどなくお帰りでござんしょう。――皆さんが、御心入れの<ruby><rb>御馳走</rb><rt>ごちそう</rt></ruby>、何、秋草を、早くお供えなさるが<ruby><rb>可</rb><rt>よ</rt></ruby>いね。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　それこそ露の散らぬ<ruby><rb>間</rb><rt>ま</rt></ruby>に。――</p>
+        <p>正面奥の中央、丸柱の<ruby><rb>傍</rb><rt>かたわら</rt></ruby>に<ruby><rb>鎧櫃</rb><rt>よろいびつ</rt></ruby>を据えて、上に、<ruby><rb>金色</rb><rt>こんじき</rt></ruby>の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>、<ruby><rb>白銀</rb><rt>しろがね</rt></ruby>の<ruby><rb>牙</rb><rt>きば</rt></ruby>、色は<ruby><rb>藍</rb><rt>あい</rt></ruby>のごとき<ruby><rb>獅子頭</rb><rt>ししがしら</rt></ruby>、<ruby><rb>萌黄錦</rb><rt>もえぎにしき</rt></ruby>の<ruby><rb>母衣</rb><rt>ほろ</rt></ruby>、朱の渦まきたる尾を装いたるまま、荘重にこれを据えたり。</p>
+        <p>――侍女等、女童とともにその前に<ruby><rb>行</rb><rt>ゆ</rt></ruby>き、<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>きて、手に手に秋草を花籠に挿す。色のその美しき蝶の群、<ruby><rb>斉</rb><rt>ひとし</rt></ruby>く飛連れてあたりに舞う。<ruby><rb>雷</rb><rt>らい</rt></ruby>やや聞ゆ。雨<ruby><rb>来</rb><rt>きた</rt></ruby>る。</p>
+        <p><persName ref="#susuki">薄</persName>　（薄暗き中に）御覧、両眼<ruby><rb>赫燿</rb><rt>かくよう</rt></ruby>と、牙も動くように見えること。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　花も<ruby><rb>胡蝶</rb><rt>ちょう</rt></ruby>もお気に入って、お嬉しいんでございましょう。</p>
+        <p>時に<ruby><rb>閃電</rb><rt>せんでん</rt></ruby>す。光の<ruby><rb>裡</rb><rt>うち</rt></ruby>を、<ruby><rb>衝</rb><rt>つ</rt></ruby>と流れて、<ruby><rb>胡蝶</rb><rt>こちょう</rt></ruby>の<ruby><rb>彼処</rb><rt>かしこ</rt></ruby>に流るる処、ほとんど天井を貫きたる高き天守の棟に通ずる<ruby><rb>階子</rb><rt>はしご</rt></ruby>。――侍女等、飛ぶ蝶の行方につれて、ともに<ruby><rb>其方</rb><rt>そなた</rt></ruby>に目を注ぐ。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　あれ、<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>がお帰りでございますよ。</p>
+        <p>はらはらとその壇の<ruby><rb>許</rb><rt>もと</rt></ruby>に、振袖、詰袖、揃って手をつく。階子の上より、まず水色の<ruby><rb>衣</rb><rt>きぬ</rt></ruby>の<ruby><rb>褄</rb><rt>つま</rt></ruby>、<ruby><rb>裳</rb><rt>もすそ</rt></ruby>を引く。すぐに<ruby><rb>蓑</rb><rt>みの</rt></ruby>を<ruby><rb>被</rb><rt>かつ</rt></ruby>ぎたる姿見ゆ。<ruby><rb>長</rb><rt>たけ</rt></ruby>なす黒髪、片手に竹笠、半ば<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>蔽</rb><rt>おお</rt></ruby>いたる、美しく気高き<ruby><rb>貴女</rb><rt>きじょ</rt></ruby>、天守夫人、<persName ref="#tomihime">富姫</persName>。</p>
+        <p>夫人　（その姿に舞い<ruby><rb>縋</rb><rt>すが</rt></ruby>る蝶々の三つ二つを、蓑を開いて片袖に受く）出迎えかい、御苦労だね。（蝶に云う。）</p>
+        <p>――お帰り遊ばせ、――お帰り遊ばせ――侍女等、口々に言迎う。――</p>
+        <p>夫人　時々、ふいと気まかせに、<ruby><rb>野分</rb><rt>のわき</rt></ruby>のような<ruby><rb>出歩行</rb><rt>である</rt></ruby>きを、……</p>
+        <p>ハタと竹笠を落す。<persName ref="#ominaeshi">女郎花</persName>、これを受け取る。貴女の<ruby><rb>面</rb><rt>おもて</rt></ruby>、<ruby><rb>凄</rb><rt>すご</rt></ruby>きばかり白く<ruby><rb>﨟長</rb><rt>ろうた</rt></ruby>けたり。</p>
+        <p>露も散らさぬお前たち、花の姿に気の毒だね。（下りかかりて壇に弱腰、廊下に<ruby><rb>裳</rb><rt>もすそ</rt></ruby>。）</p>
+        <p><persName ref="#susuki">薄</persName>　<ruby><rb>勿体</rb><rt>もったい</rt></ruby>ないことを御意遊ばす。――まあ、お前様、あんなものを召しまして。</p>
+        <p>夫人　似合ったかい。</p>
+        <p><persName ref="#susuki">薄</persName>　なおその上に、<ruby><rb>御前様</rb><rt>ごぜんさま</rt></ruby>、お<ruby><rb>痩</rb><rt>や</rt></ruby>せ遊ばしておがまれます。柳よりもお優しい、すらすらと雨の<ruby><rb>刈萱</rb><rt>かるかや</rt></ruby>を、お<ruby><rb>被</rb><rt>か</rt></ruby>け遊ばしたようにござります。</p>
+        <p>夫人　嘘ばっかり。小山田の、<ruby><rb>案山子</rb><rt>かかし</rt></ruby>に借りて来たのだものを。</p>
+        <p><persName ref="#susuki">薄</persName>　いいえ、それでも<ruby><rb>貴女</rb><rt>あなた</rt></ruby>がめしますと、玉、<ruby><rb>白銀</rb><rt>しろがね</rt></ruby>、<ruby><rb>揺</rb><rt>ゆるぎ</rt></ruby>の糸の、<ruby><rb>鎧</rb><rt>よろい</rt></ruby>のようにもおがまれます。</p>
+        <p>夫人　<ruby><rb>賞</rb><rt>ほ</rt></ruby>められてちっと重くなった。（蓑を脱ぐ）取っておくれ。</p>
+        <p><persName ref="#nadeshiko">撫子</persName>、立ち、うけて欄干にひらりと掛く。</p>
+        <p>蝶の数、その蓑に翼を憩う。……夫人、獅子頭に会釈しつつ、座に、<ruby><rb>褥</rb><rt>しとね</rt></ruby>に着く。<ruby><rb>脇息</rb><rt>きょうそく</rt></ruby>。</p>
+        <p>侍女たちかしずく。</p>
+        <p>少し<ruby><rb>草臥</rb><rt>くたび</rt></ruby>れましたよ。……<persName ref="#kamehime">お亀様</persName>はまだお見えではなかったろうね。</p>
+        <p><persName ref="#susuki">薄</persName>　はい、お<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>は、やがてお<ruby><rb>入</rb><rt>い</rt></ruby>りでござりましょう。それにつけましても、お前様おかえりを、お待ち申上げました。――そしてまあ、いずれへお越し遊ばしました。</p>
+        <p>夫人　<placeName ref="#yashagaike"><ruby><rb>夜叉</rb><rt>やしゃ</rt></ruby>ヶ<ruby><rb>池</rb><rt>いけ</rt></ruby></placeName>まで参ったよ。</p>
+        <p><persName ref="#susuki">薄</persName>　おお、<placeName ref="#echizen">越前国</placeName><placeName ref="#ono-gun"><ruby><rb>大野郡</rb><rt>おおのごおり</rt></ruby></placeName>、人跡絶えました山奥の。</p>
+        <p><persName ref="#hagi">萩</persName>　あの、<placeName ref="#yashagaike">夜叉ヶ池</placeName>まで。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　お遊びに。</p>
+        <p>夫人　まあ、遊びと言えば遊びだけれども、大池のぬしの<persName ref="#oyuki">お雪様</persName>に、ちっと……頼みたい事があって。</p>
+        <p><persName ref="#susuki">薄</persName>　<ruby><rb>私</rb><rt>わたくし</rt></ruby>はじめ、ここに<ruby><rb>居</rb><rt>お</rt></ruby>ります、誰ぞお使いをいたしますもの、御自分おいで遊ばして、何と、雨にお<ruby><rb>逢</rb><rt>あ</rt></ruby>いなさいましてさ。</p>
+        <p>夫人　その雨を頼みに<ruby><rb>行</rb><rt>ゆ</rt></ruby>きました。――今日はね、この<placeName ref="#himeji">姫路</placeName>の城……ここから<ruby><rb>視</rb><rt>み</rt></ruby>れば長屋だが、……長屋の主人、それ、<persName ref="#harima"><ruby><rb>播磨守</rb><rt>はりまのかみ</rt></ruby></persName>が、秋の野山へ<ruby><rb>鷹狩</rb><rt>たかがり</rt></ruby>に、大勢で出掛けました。<ruby><rb>皆</rb><rt>みんな</rt></ruby>知っておいでだろう。空は高し、渡鳥、色鳥の鳴く<ruby><rb>音</rb><rt>ね</rt></ruby>は嬉しいが、田畑と言わず<ruby><rb>駈廻</rb><rt>かけまわ</rt></ruby>って、きゃっきゃっと飛騒ぐ、知行とりども人間の大声は騒がしい。まだ、それも鷹ばかりなら我慢もする。近頃は不作法な、弓矢、鉄砲で荒立つから、うるささもうるさしさ。何よりお前、私のお客、この大空の霧を渡って<ruby><rb>輿</rb><rt>かご</rt></ruby>でおいでの<persName ref="#kamehime">お亀様</persName>にも、途中失礼だと思ったから、雨風と、はたた神で、鷹狩の行列を追崩す。――あの、それを、<placeName ref="#yashagaike">夜叉ヶ池</placeName>の<persName ref="#oyuki">お雪様</persName>にお頼み申しに参ったのだよ。</p>
+        <p><persName ref="#susuki">薄</persName>　道理こそ時ならぬ、急な雨と存じました。</p>
+        <p>夫人　この<ruby><rb>辺</rb><rt>あたり</rt></ruby>は雨だけかい。それは、ほんの吹降りの<ruby><rb>余波</rb><rt>なごり</rt></ruby>であろう。鷹狩が遠出をした、<placeName ref="#himeji">姫路野</placeName>の一里塚のあたりをお見な。<ruby><rb>暗夜</rb><rt>やみよ</rt></ruby>のような黒い雲、<ruby><rb>眩</rb><rt>まばゆ</rt></ruby>いばかりの<ruby><rb>電光</rb><rt>いなびかり</rt></ruby>、<ruby><rb>可恐</rb><rt>おそろし</rt></ruby>い<ruby><rb>雹</rb><rt>ひょう</rt></ruby>も降りました。鷹狩の連中は、<ruby><rb>曠野</rb><rt>あらの</rt></ruby>の、塚の<ruby><rb>印</rb><rt>しるし</rt></ruby>の松の根に、<ruby><rb>澪</rb><rt>みお</rt></ruby>に寄った<ruby><rb>鮒</rb><rt>ふな</rt></ruby>のように、うようよ<ruby><rb>集</rb><rt>たか</rt></ruby>って、あぶあぶして、あやい笠が泳ぐやら、陣羽織が流れるやら。大小をさしたものが、ちっとは雨にも濡れたが<ruby><rb>可</rb><rt>い</rt></ruby>い。慌てる紋は<ruby><rb>泡沫</rb><rt>あぶく</rt></ruby>のよう。<ruby><rb>野袴</rb><rt>のばかま</rt></ruby>の<ruby><rb>裾</rb><rt>すそ</rt></ruby>を<ruby><rb>端折</rb><rt>はしょ</rt></ruby>って、<ruby><rb>灸</rb><rt>きゅう</rt></ruby>のあとを出すのがある。おお、おかしい。（<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>む）<ruby><rb>粟粒</rb><rt>あわつぶ</rt></ruby>を一つ二つと<ruby><rb>算</rb><rt>かぞ</rt></ruby>えて拾う雀でも、<ruby><rb>俄雨</rb><rt>にわかあめ</rt></ruby>には<ruby><rb>容子</rb><rt>ようす</rt></ruby>が可い。五百石、三百石、千石一人で<ruby><rb>食</rb><rt>は</rt></ruby>むものが、その笑止さと言ってはない。おかしいやら、気の毒やら、ねえ、お前。</p>
+        <p><persName ref="#susuki">薄</persName>　はい。</p>
+        <p>夫人　私はね、<placeName ref="#murasagi"><ruby><rb>群鷺</rb><rt>むらさぎ</rt></ruby>ヶ<ruby><rb>峰</rb><rt>みね</rt></ruby></placeName>の山の<ruby><rb>端</rb><rt>は</rt></ruby>に、<ruby><rb>掛稲</rb><rt>かけいね</rt></ruby>を<ruby><rb>楯</rb><rt>たて</rt></ruby>にして、<ruby><rb>戻道</rb><rt>もどりみち</rt></ruby>で、そっと立って<ruby><rb>視</rb><rt>なが</rt></ruby>めていた。そこには昼の月があって、<ruby><rb>雁金</rb><rt>かりがね</rt></ruby>のように（その水色の袖を<ruby><rb>圧</rb><rt>おさ</rt></ruby>う）その袖に影が映った。影が、結んだ玉ずさのようにも見えた。――<placeName ref="#yashagaike">夜叉ヶ池</placeName>の<persName ref="#oyuki">お雪様</persName>は、<ruby><rb>激</rb><rt>はげし</rt></ruby>いなかにお<ruby><rb>床</rb><rt>ゆか</rt></ruby>しい、野はその<ruby><rb>黒雲</rb><rt>くろくも</rt></ruby>、<ruby><rb>尾上</rb><rt>おのえ</rt></ruby>は<ruby><rb>瑠璃</rb><rt>るり</rt></ruby>、皆、あの方のお計らい。それでも鷹狩の足も腰も留めさせずに、大風と大雨で、城まで追返しておくれの約束。鷹狩たちが遠くから、松を離れて、その曠野を、黒雲の走る下に、泥川のように流れてくるに従って、<ruby><rb>追手</rb><rt>おいて</rt></ruby>の風の<ruby><rb>横吹</rb><rt>よこしぶき</rt></ruby>。私が見ていたあたりへも、一<ruby><rb>村雨</rb><rt>むらさめ</rt></ruby><ruby><rb>颯</rb><rt>さっ</rt></ruby>とかかったから、歌も読まずに蓑をかりて、案山子の笠をさして来ました。ああ、そこの<persName ref="#tombo"><ruby><rb>蜻蛉</rb><rt>とんぼ</rt></ruby></persName>と<persName ref="#hozuki"><ruby><rb>鬼灯</rb><rt>ほおずき</rt></ruby></persName>たち、<ruby><rb>小児</rb><rt>こども</rt></ruby>に持たして後ほどに返しましょう。</p>
+        <p><persName ref="#susuki">薄</persName>　何の、それには及びますまいと存じます。</p>
+        <p>夫人　いえいえ、農家のものは大切だから、<ruby><rb>等閑</rb><rt>なおざり</rt></ruby>にはなりません。</p>
+        <p><persName ref="#susuki">薄</persName>　その儀は<ruby><rb>畏</rb><rt>かしこま</rt></ruby>りました。お前様、まあ、それよりも、おめしかえを遊ばしまし、おめしものが濡れまして、お気味が悪うござりましょう。</p>
+        <p>夫人　おかげで濡れはしなかった。気味の悪い事もないけれど、隔てぬ中の女同士も、<persName ref="#kamehime">お亀様</persName>に、このままでは失礼だろう。（立つ）着換えましょうか。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　ついでに、お<ruby><rb>髪</rb><rt>ぐし</rt></ruby>も、<ruby><rb>夫人様</rb><rt>だんなさま</rt></ruby></p>
+        <p>夫人　ああ、あげてもらおうよ。</p>
+        <p>夫人に続いて、一同、壁の扉に隠る。<ruby><rb>女童</rb><rt>めのわらわ</rt></ruby>のこりて、合唱す――</p>
+        <p>ここはどこの細道じゃ、細道じゃ。</p>
+        <p><persName ref="#tenjin">天神様</persName>の細道じゃ、細道じゃ。</p>
+        <p>時に棟に通ずる<ruby><rb>件</rb><rt>くだん</rt></ruby>の<ruby><rb>階子</rb><rt>はしご</rt></ruby>を棟よりして<ruby><rb>入来</rb><rt>いりきた</rt></ruby>る、<placeName ref="#iwashiro"><ruby><rb>岩代国</rb><rt>いわしろのくに</rt></ruby></placeName><placeName ref="#yamagun"><ruby><rb>麻耶郡</rb><rt>まやごおり</rt></ruby></placeName><placeName ref="#inawashiro">猪苗代</placeName>の城、<placeName ref="#senjojiki">千畳敷</placeName>の<ruby><rb>主</rb><rt>ぬし</rt></ruby>、<persName ref="#kamehime">亀姫</persName>の<ruby><rb>供頭</rb><rt>ともがしら</rt></ruby>、<persName ref="#shunoban">朱の盤坊</persName>、大山伏の<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>、頭に<ruby><rb>犀</rb><rt>さい</rt></ruby>のごとき角一つあり、<ruby><rb>眼</rb><rt>まなこ</rt></ruby><ruby><rb>円</rb><rt>つぶら</rt></ruby>かに<ruby><rb>面</rb><rt>つら</rt></ruby>の色朱よりも赤く、手と脚、<ruby><rb>瓜</rb><rt>うり</rt></ruby>に似て青し。<ruby><rb>白布</rb><rt>しろぬの</rt></ruby>にて<ruby><rb>蔽</rb><rt>おお</rt></ruby>うたる一個の<ruby><rb>小桶</rb><rt>こおけ</rt></ruby>を小脇に、柱をめぐりて、内を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>き、女童の<ruby><rb>戯</rb><rt>たわむ</rt></ruby>るるを<ruby><rb>視</rb><rt>み</rt></ruby>つつ破顔して笑う</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　かちかちかちかち。</p>
+        <p>歯を<ruby><rb>噛鳴</rb><rt>かみな</rt></ruby>らす音をさす。女童等、走り<ruby><rb>近</rb><rt>ちかづ</rt></ruby>く時、<ruby><rb>面</rb><rt>つら</rt></ruby>を差寄せ、大口<ruby><rb>開</rb><rt>あ</rt></ruby>く。</p>
+        <p>もおう！（獣の<ruby><rb>吠</rb><rt>ほ</rt></ruby>ゆる真似して<ruby><rb>威</rb><rt>おど</rt></ruby>す。）</p>
+        <p>女董一　<ruby><rb>可厭</rb><rt>いや</rt></ruby>な、<ruby><rb>小父</rb><rt>おじ</rt></ruby>さん。</p>
+        <p>女童二　<ruby><rb>可恐</rb><rt>こわ</rt></ruby>くはありませんよ。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　だだだだだ。（濁れる<ruby><rb>笑</rb><rt>わらい</rt></ruby>）いや、さすがは<placeName ref="#himeji">姫路</placeName>お天守の、<persName ref="#tomihime">富姫</persName>御前の<ruby><rb>禿</rb><rt>かむろ</rt></ruby>たち、<ruby><rb>変化心</rb><rt>へんげごころ</rt></ruby>備わって、<placeName ref="#oshu">奥州</placeName>第一の<ruby><rb>赭面</rb><rt>あかつら</rt></ruby>に、びくともせぬは<ruby><rb>我折</rb><rt>がお</rt></ruby>れ申す。――さて、<ruby><rb>更</rb><rt>あらた</rt></ruby>めて<ruby><rb>内方</rb><rt>うちかた</rt></ruby>へ、ものも、案内を頼みましょう。</p>
+        <p>女童三　屋根から入った小父さんはえ？</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　これはまた<ruby><rb>御挨拶</rb><rt>ごあいさつ</rt></ruby>だ。ただ、<placeName ref="#inawashiro">猪苗代</placeName>から参ったと、ささ、取次、取次。</p>
+        <p>女童一　知らん。</p>
+        <p>女童三　べいい。（赤べろする。）</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　これは、いかな事――（立直る。大音に）ものも案内。</p>
+        <p><persName ref="#susuki">薄</persName>　どうれ。（壁より出迎う）いずれから。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　これは<placeName ref="#iwashiro">岩代国</placeName><placeName ref="#aizugun"><ruby><rb>会津郡</rb><rt>あいづごおり</rt></ruby></placeName><placeName ref="#jumonjigahara">十文字ヶ原</placeName><placeName ref="#aogorin"><ruby><rb>青五輪</rb><rt>あおごわ</rt></ruby></placeName>のあたりに<ruby><rb>罷在</rb><rt>まかりあ</rt></ruby>る、<placeName ref="#oshu">奥州</placeName>変化の<ruby><rb>先達</rb><rt>せんだつ</rt></ruby>、<placeName ref="#jodonodate"><ruby><rb>允殿館</rb><rt>いんでんかん</rt></ruby></placeName>のあるじ<persName ref="#shunoban">朱の盤坊</persName>でござる。すなわち<placeName ref="#inawashiro">猪苗代</placeName>の城、<persName ref="#kamehime">亀姫</persName>君の御供をいたし<ruby><rb>罷出</rb><rt>まかりで</rt></ruby>ました。当お天守<persName ref="#tomihime">富姫</persName>様へ御取次を願いたい。</p>
+        <p><persName ref="#susuki">薄</persName>　お供御苦労に存じ上げます。あなた、お<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>は。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　（<ruby><rb>真仰向</rb><rt>あおむ</rt></ruby>けに<ruby><rb>承塵</rb><rt>てんじょう</rt></ruby>を仰ぐ）屋の棟に、すでに<ruby><rb>輿</rb><rt>かご</rt></ruby>をばお控えなさるる。</p>
+        <p><persName ref="#susuki">薄</persName>　<ruby><rb>夫人</rb><rt>うちかた</rt></ruby>も、お待兼ねでございます。</p>
+        <p>手を<ruby><rb>敲</rb><rt>たた</rt></ruby>く。音につれて、侍女三人出づ。<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく手をつく。</p>
+        <p>早や、<ruby><rb>御入</rb><rt>おんい</rt></ruby>らせ下さりませ。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　（空へ云う）<ruby><rb>輿傍</rb><rt>かごわき</rt></ruby>へ申す。<ruby><rb>此方</rb><rt>こなた</rt></ruby>にもお<ruby><rb>待</rb><rt>まち</rt></ruby>うけじゃ。――姫君、これへお<ruby><rb>入</rb><rt>い</rt></ruby>りのよう、<persName ref="#shitanaga-uba"><ruby><rb>舌長姥</rb><rt>したながうば</rt></ruby></persName>、取次がっせえ。</p>
+        <p><ruby><rb>階子</rb><rt>はしご</rt></ruby>の上より、<ruby><rb>真先</rb><rt>まっさき</rt></ruby>に、<ruby><rb>切禿</rb><rt>きりかむろ</rt></ruby>の女童、うつくしき<ruby><rb>手鞠</rb><rt>てまり</rt></ruby>を両袖に捧げて出づ。</p>
+        <p><persName ref="#kamehime">亀姫</persName>、振袖、<ruby><rb>裲襠</rb><rt>うちがけ</rt></ruby>、文金の<ruby><rb>高髷</rb><rt>たかまげ</rt></ruby>、扇子を手にす。また女童、うしろに<ruby><rb>守刀</rb><rt>まもりがたな</rt></ruby>を捧ぐ。あと<ruby><rb>圧</rb><rt>おさ</rt></ruby>えに<persName ref="#shitanaga-uba">舌長姥</persName>、古びて黄ばめる<ruby><rb>練衣</rb><rt>ねりぎぬ</rt></ruby>、<ruby><rb>褪</rb><rt>あ</rt></ruby>せたる<ruby><rb>紅</rb><rt>あか</rt></ruby>の<ruby><rb>袴</rb><rt>はかま</rt></ruby>にて従い<ruby><rb>来</rb><rt>きた</rt></ruby>る。</p>
+        <p>天守夫人、侍女を従え出で、設けの座に着く。</p>
+        <p><persName ref="#susuki">薄</persName>　（そと<persName ref="#kamehime">亀姫</persName>を仰ぐ）お<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>。</p>
+        <p>出むかえたる侍女等、皆ひれ伏す。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　お許し。</p>
+        <p>しとやかに通り座につく。と、夫人と<ruby><rb>面</rb><rt>おもて</rt></ruby>を合すとともに、双方よりひたと<ruby><rb>褥</rb><rt>しとね</rt></ruby>の膝を寄す。</p>
+        <p>夫人　（親しげに<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>む）<persName ref="#kamehime">お亀様</persName>。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>、おなつかしい。</p>
+        <p>夫人　私もお<ruby><rb>可懐</rb><rt>なつかし</rt></ruby>い。――</p>
+        <p>――（間。）</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　<ruby><rb>夫人</rb><rt>おくさま</rt></ruby>。（と<ruby><rb>長煙管</rb><rt>ながぎせる</rt></ruby>にて<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を捧ぐ。）</p>
+        <p>夫人　（取って吸う。そのまま吸口を姫に渡す）この頃は、めしあがるそうだね。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　ええ、どちらも。（うけて、その煙草を吸いつつ、左の手にて杯の真似をす。）</p>
+        <p>夫人　困りましたねえ。（また<ruby><rb>打笑</rb><rt>うちえ</rt></ruby>む。）</p>
+        <p><persName ref="#kamehime">亀姫</persName>　ほほほ、<ruby><rb>貴女</rb><rt>あなた</rt></ruby>を旦那様にはいたすまいし。</p>
+        <p>夫人　憎らしい口だ。よく、それで、<placeName ref="#inawashiro">猪苗代</placeName>から、この<placeName ref="#himeji">姫路</placeName>まで――道中五百里はあろうねえ、……お年寄。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　御意にござります。……海も山もさしわたしに、風でお運び遊ばすゆえに、半日<ruby><rb>路</rb><rt>じ</rt></ruby>には足りませぬが、<ruby><rb>宿々</rb><rt>しゅくじゅく</rt></ruby>を<ruby><rb>歩</rb><rt>ひろ</rt></ruby>いましたら、五百里……されば五百三十里、もそっともござりましょうぞ。</p>
+        <p>夫人　ああね。（<persName ref="#kamehime">亀姫</persName>に）よく、それで、手鞠をつきに、わざわざここまでおいでだね。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　でございますから、お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>は、私がお<ruby><rb>可愛</rb><rt>かわゆ</rt></ruby>うございましょう。</p>
+        <p>夫人　いいえ、お憎らしい。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　御勝手。（扇子を落す。）</p>
+        <p>夫人　やっぱりお可愛い。（その背を<ruby><rb>抱</rb><rt>いだ</rt></ruby>き、見返して、姫に附添える女童に）どれ、お見せ。（手鞠を取る）まあ、綺麗な、私にも持って来て下されば<ruby><rb>可</rb><rt>よ</rt></ruby>いものを。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　ははッ。（その白布の包を<ruby><rb>出</rb><rt>いだ</rt></ruby>し）姫君より、貴女様へ、お心入れの土産がこれに。申すは、差出がましゅうござるなれど、これは格別、奥方様の<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>しにかないましょう。…何と、姫君。（色を伺う。）</p>
+        <p><persName ref="#kamehime">亀姫</persName>　ああ、お開き。お姉様の<ruby><rb>許</rb><rt>とこ</rt></ruby>だから、遠慮はない。</p>
+        <p>夫人　それはそれは、お嬉しい。が、<persName ref="#kamehime">お亀様</persName>は人が悪い、中は<placeName ref="#bandaisan"><ruby><rb>磐梯山</rb><rt>ばんだいさん</rt></ruby></placeName>の峰の煙か、<ruby><rb>虚空蔵</rb><rt>こくうぞう</rt></ruby>の<ruby><rb>人魂</rb><rt>ひとだま</rt></ruby>ではないかい。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　似たもの。ほほほほほ。</p>
+        <p>夫人　要りません、そんなもの。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　上げません。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　いやまず、（手を挙げて制す）おなかがよくてお争い、お言葉の花が蝶のように飛びまして、お美しい事でござる。……さて、<ruby><rb>此方</rb><rt>こなた</rt></ruby>より申す儀ではなけれども、奥方様、この品ばかりはお<ruby><rb>可厭</rb><rt>いや</rt></ruby>ではござるまい。</p>
+        <p>包を開く、<ruby><rb>首桶</rb><rt>くびおけ</rt></ruby>。中より、色白き男の生首を出し、もとどりを<ruby><rb>掴</rb><rt>つか</rt></ruby>んで、ずうんと据う。</p>
+        <p>や、<ruby><rb>不重宝</rb><rt>ぶちょうほう</rt></ruby>、途中<ruby><rb>揺溢</rb><rt>ゆりこぼ</rt></ruby>いて、これは<ruby><rb>汁</rb><rt>つゆ</rt></ruby>が出ました。（その首、血だらけ）これ、<ruby><rb>姥</rb><rt>うば</rt></ruby>殿、姥殿。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　あいあい、あいあい。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　御進物が汚れたわ。<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>の落ちた<ruby><rb>鱸</rb><rt>すずき</rt></ruby>の<ruby><rb>鰭</rb><rt>ひれ</rt></ruby>を真水で洗う、手の悪い魚売人には似たれども、その儀では決してない。姥殿、<ruby><rb>此方</rb><rt>こなた</rt></ruby>、<ruby><rb>一拭</rb><rt>ひとぬぐ</rt></ruby>い、清めた上で進ぜまいかの。</p>
+        <p>夫人　（煙管を手に<ruby><rb>支</rb><rt>つ</rt></ruby>き、<ruby><rb>面</rb><rt>おもて</rt></ruby>正しく<ruby><rb>屹</rb><rt>きっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>て）気遣いには及びません、血だらけなは、なおおいしかろう。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　こぼれた<ruby><rb>羹</rb><rt>あつもの</rt></ruby>は、<ruby><rb>埃溜</rb><rt>はきだめ</rt></ruby>の汁でござるわの、お<ruby><rb>塩梅</rb><rt>あんばい</rt></ruby>には寄りませぬ。<ruby><rb>汚穢</rb><rt>むさ</rt></ruby>や、見た目に、汚穢や。どれどれ掃除して参らしょうぞ。（<ruby><rb>紅</rb><rt>あか</rt></ruby>の<ruby><rb>袴</rb><rt>はかま</rt></ruby>にて<ruby><rb>膝行</rb><rt>いざ</rt></ruby>り出で、桶を<ruby><rb>皺手</rb><rt>しわで</rt></ruby>にひしと<ruby><rb>圧</rb><rt>おさ</rt></ruby>え、<ruby><rb>白髪</rb><rt>しらが</rt></ruby>を、ざっと<ruby><rb>捌</rb><rt>さば</rt></ruby>き、染めたる歯を<ruby><rb>角</rb><rt>けた</rt></ruby>に開け、三尺ばかりの長き舌にて生首の顔の血をなめる）汚穢や、（ぺろぺろ）汚穢やの。（ぺろぺろ）汚穢やの、汚穢やの、ああ、<ruby><rb>甘味</rb><rt>うま</rt></ruby>やの、汚穢やの、ああ、汚穢いぞの、やれ、甘味いぞのう。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　（<ruby><rb>慌</rb><rt>あわただ</rt></ruby>しく遮る）やあ、<ruby><rb>姥</rb><rt>ばあ</rt></ruby>さん、歯を当てまい、御馳走が減りはせぬか。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　何のいの。（ぐったりと<ruby><rb>衣紋</rb><rt>えもん</rt></ruby>を抜く）取る年の<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しさ、近頃は歯が悪うて、人間の首や、<ruby><rb>沢庵</rb><rt>たくあん</rt></ruby>の<ruby><rb>尻尾</rb><rt>しっぽ</rt></ruby>はの、かくやにせねば<ruby><rb>咽喉</rb><rt>のど</rt></ruby>へは通らぬ。そのままの形では、金花糖の鯛でさえ、<ruby><rb>横噛</rb><rt>よこかじ</rt></ruby>りにはならぬ事よ。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　後生らしい事を言うまい、彼岸は過ぎたぞ。――いや、奥方様、この姥が<ruby><rb>件</rb><rt>くだん</rt></ruby>の舌にて<ruby><rb>舐</rb><rt>な</rt></ruby>めますると、<ruby><rb>鳥獣</rb><rt>とりけもの</rt></ruby>も人間も、とろとろと消えて骨ばかりになりますわ。……そりゃこそ、申さぬことではなかった。お土産の顔つきが、時の<ruby><rb>間</rb><rt>ま</rt></ruby>に、細長うなりました。なれども、<ruby><rb>過失</rb><rt>あやまち</rt></ruby>の功名、死んで変りました人相が、かえって、もとの<ruby><rb>面体</rb><rt>めんてい</rt></ruby>に戻りました。……姫君も御覧ぜい。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　（扇子を顔に、透かし見る）ああ、ほんになあ。</p>
+        <p>侍女等一同、瞬きもせず<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>る。誰も一口食べたそう。</p>
+        <p><persName ref="#susuki">薄</persName>　お前様――あの、皆さんも御覧なさいまし、<persName ref="#kamehime">亀姫</persName>様お持たせのこの首は、もし、この<placeName ref="#himeji">姫路</placeName>の城の殿様の顔に、よく似ているではござんせぬか。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　<ruby><rb>真</rb><rt>ほん</rt></ruby>に、瓜二つでございますねえ。</p>
+        <p>夫人　（<ruby><rb>打頷</rb><rt>うちうなず</rt></ruby>く）<persName ref="#kamehime">お亀様</persName>、このお土産は、これは、たしか……</p>
+        <p><persName ref="#kamehime">亀姫</persName>　はい、私が<ruby><rb>廂</rb><rt>ひさし</rt></ruby>を貸す、<placeName ref="#inawashiro">猪苗代</placeName><placeName ref="#kamegajo">亀ヶ<ruby><rb>城</rb><rt>しろ</rt></ruby></placeName>の主、<persName ref="#emonnosuke">武田<ruby><rb>衛門之介</rb><rt>えもんのすけ</rt></ruby></persName>の首でございますよ。</p>
+        <p>夫人　まあ、<ruby><rb>貴女</rb><rt>あなた</rt></ruby>。（間）私のために、そんな事を。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　構いません、それに、私がいたしたとは、誰も知りはしませんもの。私が城を出ます時はね、まだこの<persName ref="#emonnosuke">衛門之介</persName>はお<ruby><rb>妾</rb><rt>めかけ</rt></ruby>の膝に<ruby><rb>凭掛</rb><rt>よりかか</rt></ruby>って、酒を飲んでおりました。お大名の癖に意地が汚くってね、<ruby><rb>鯉汁</rb><rt>こいこく</rt></ruby>を一口に食べますとね、魚の<ruby><rb>腸</rb><rt>はらわた</rt></ruby>に針があって、それが、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>へささって、それで亡くなるのでございますから、今頃ちょうどそのお膳が出たぐらいでございますよ。（ふと驚く。扇子を落す）まあ、うっかりして、この咽喉に針がある。（もとどりを取って上ぐ）大変なことをした、お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>に刺さったらどうしよう。</p>
+        <p>夫人　しばらく！　折角、あなたのお土産を、いま、それをお抜きだと、<persName ref="#emonnosuke">衛門之介</persName>も針が抜けて、<ruby><rb>蘇返</rb><rt>よみがえ</rt></ruby>ってしまいましょう。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　いかさまな。</p>
+        <p>夫人　私が気をつけます。<ruby><rb>可</rb><rt>よ</rt></ruby>うござんす。（扇子を添えて首を受取る）お前たち、瓜を二つは知れたこと、この人はね、この<placeName ref="#himeji">姫路</placeName>の城の主、<persName ref="#harima">播磨守</persName>とは、血を分けた兄弟よ。</p>
+        <p>侍女等目と目を見合わす。</p>
+        <p>ちょっと、獅子にお供え申そう。</p>
+        <p>みずから、獅子頭の前に供う。獅子、その<ruby><rb>牙</rb><rt>きば</rt></ruby>を開き、首を<ruby><rb>呑</rb><rt>の</rt></ruby>む。首、その口に隠る。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　（<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>る）お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>、お<ruby><rb>羨</rb><rt>うらやま</rt></ruby>しい。</p>
+        <p>夫人　え。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　旦那様が、おいで遊ばす。</p>
+        <p>間。――夫人、姫と顔を合す、互に<ruby><rb>莞爾</rb><rt>かんじ</rt></ruby>とす。</p>
+        <p>夫人　嘘が<ruby><rb>真</rb><rt>まこと</rt></ruby>に。……お互に……</p>
+        <p><persName ref="#kamehime">亀姫</persName>　何の不足はないけれど、</p>
+        <p>夫人　こんな男が<ruby><rb>欲</rb><rt>ほし</rt></ruby>いねえ。――ああ、男と云えば、<persName ref="#kamehime">お亀様</persName>、あなたに見せるものがある。――<persName ref="#kikyo">桔梗</persName>さん。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　はい。</p>
+        <p>夫人　あれを、ちょっと。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　<ruby><rb>畏</rb><rt>かしこ</rt></ruby>まりました。（立つ。）</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　（不意に）や、姥殿、獅子のお頭に<ruby><rb>見惚</rb><rt>みと</rt></ruby>れまい。<ruby><rb>尾籠</rb><rt>びろう</rt></ruby>千万。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　（時に、うしろ向きに乗出して、獅子頭を<ruby><rb>視</rb><rt>なが</rt></ruby>めつつあり）<ruby><rb>老人</rb><rt>としより</rt></ruby>じゃ、当<ruby><rb>館</rb><rt>やかた</rt></ruby>奥方様も御許され。見惚れるに無理はないわいの。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　いやさ、見惚れるに<ruby><rb>仔細</rb><rt>しさい</rt></ruby>はないが、姥殿、姥殿はそこに居て舌が届く。（<ruby><rb>苦笑</rb><rt>にがわらい</rt></ruby>す。）</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>思わず正面にその口を<ruby><rb>蔽</rb><rt>おお</rt></ruby>う。侍女等忍びやかに皆笑う。<persName ref="#kikyo">桔梗</persName>、<ruby><rb>鍬形</rb><rt>くわがた</rt></ruby>打ったる五枚<ruby><rb>錣</rb><rt>しころ</rt></ruby>、金の<ruby><rb>竜頭</rb><rt>たつがしら</rt></ruby>の<ruby><rb>兜</rb><rt>かぶと</rt></ruby>を捧げて出づ。夫人と<persName ref="#kamehime">亀姫</persName>の前に置く。</p>
+        <p>夫人　貴女、この兜はね、この城の、<persName ref="#harima">播磨守</persName>が、先祖代々の家の宝で、十七の<ruby><rb>奥蔵</rb><rt>おくぐら</rt></ruby>に、五枚錣に九ツの<ruby><rb>錠</rb><rt>じょう</rt></ruby>を<ruby><rb>下</rb><rt>おろ</rt></ruby>して、大切に秘蔵をしておりますのをね、今日お見えの嬉しさに、実は、貴女に上げましょうと思って取出しておきました。けれども、<ruby><rb>御心入</rb><rt>おこころいり</rt></ruby>の貴女のお<ruby><rb>土産</rb><rt>みや</rt></ruby>で、私のはお恥しくなりました。それだから、ただ思っただけの、申訳に、お目に掛けますばかり。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　いいえ、結構、まあ、お目覚しい。</p>
+        <p>夫人　差上げません。第一、あとで気がつきますとね、久しく<ruby><rb>蔵込</rb><rt>しまいこ</rt></ruby>んであって、かび臭い。<ruby><rb>蘭麝</rb><rt>らんじゃ</rt></ruby>の<ruby><rb>薫</rb><rt>かおり</rt></ruby>も何にもしません。<placeName ref="#osakajo">大阪城</placeName>の落ちた時の、<persName ref="#kimura-nagatonokami">木村長門守</persName>の思切ったようなのだと<ruby><rb>可</rb><rt>い</rt></ruby>いけれど、……<ruby><rb>勝戦</rb><rt>かちいくさ</rt></ruby>のうしろの方で、矢玉の<ruby><rb>雨宿</rb><rt>あまやどり</rt></ruby>をしていた、ぬくいのらしい。御覧なさい。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　（<ruby><rb>鉢金</rb><rt>はちがね</rt></ruby>の輝く裏を返す）ほんに、討死をした兜ではありませんね。</p>
+        <p>夫人　だから、およしなさいまし、<persName ref="#kuzu">葛</persName>や、しばらくそこへ。</p>
+        <p>指図のまま、<persName ref="#kuzu">葛</persName>、その兜を獅子頭の<ruby><rb>傍</rb><rt>かたえ</rt></ruby>に置く。</p>
+        <p>お帰りまでに、きっとお気に入るものを調えて上げますよ。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　それよりか、お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>、早く、あのお約束の<ruby><rb>手鞠</rb><rt>てまり</rt></ruby>を突いて遊びましょうよ。</p>
+        <p>夫人　ああ、遊びましょう。――あちらへ。――城の<ruby><rb>主人</rb><rt>あるじ</rt></ruby>の鷹狩が、雨風に追われ追われて、もうやがて大手さきに帰る時分、貴女は<ruby><rb>沢山</rb><rt>たんと</rt></ruby>お声がいいから、この天守から美しい声が響くと、また立騒いでお<ruby><rb>煩</rb><rt>うるさ</rt></ruby>い。</p>
+        <p><persName ref="#kamehime">亀姫</persName>のかしずきたち、皆立ちかかる。</p>
+        <p>いや、御先達、お山伏は、女たちとここで<ruby><rb>一献</rb><rt>いっこん</rt></ruby>お<ruby><rb>汲</rb><rt>く</rt></ruby>みがよいよ。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　<persName ref="#kichijoten">吉祥天女</persName>、御功徳でござる。（<ruby><rb>肱</rb><rt>ひじ</rt></ruby>を張って<ruby><rb>叩頭</rb><rt>こうとう</rt></ruby>す。）</p>
+        <p><persName ref="#kamehime">亀姫</persName>　ああ、姥、お前も大事ない、ここに居てお相伴をしや。――お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>に、私から<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>をしますから。</p>
+        <p>夫人　もっともさ。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　もし、<ruby><rb>通草</rb><rt>あけび</rt></ruby>、山ぐみ、山葡萄、手造りの猿の酒、山蜂の蜜、蟻の甘露、<ruby><rb>諸白</rb><rt>もろはく</rt></ruby>もござります、が、お二人様のお手鞠は、唄を聞きますばかりでも寿命の薬と承る。かように年を取りますと、<ruby><rb>慾</rb><rt>よく</rt></ruby>も、得も、はは、覚えませぬ。ただもう、<ruby><rb>長生</rb><rt>ながいき</rt></ruby>がしとうござりましてのう。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　や、姥殿、その上のまた慾があるかい。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　憎まれ山伏、これ、帰り<ruby><rb>途</rb><rt>みち</rt></ruby>に<ruby><rb>舐</rb><rt>な</rt></ruby>められさっしゃるな。（とぺろりと舌。）</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　（頭を抱う）わあ、助けてくれ、角が縮まる。</p>
+        <p>侍女たち笑う。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　さ、お供をいたしましょうの。</p>
+        <p>夫人を先に、<persName ref="#kamehime">亀姫</persName>、<persName ref="#susuki">薄</persName>と<ruby><rb>女</rb><rt>め</rt></ruby>の<ruby><rb>童</rb><rt>わらわ</rt></ruby>等、<ruby><rb>皆行</rb><rt>ゆ</rt></ruby>く。五人の侍女と<persName ref="#shunoban">朱の盤</persName>あり。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　お先達、さあさあ、お<ruby><rb>寛</rb><rt>くつろ</rt></ruby>ぎなさいまし。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　寛がいで何とする。やあ、えいとな。</p>
+        <p><persName ref="#hagi">萩</persName>　もし、面白いお話を聞かして下さいましな。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　聞かさいで何とする。（扇を<ruby><rb>笏</rb><rt>しゃく</rt></ruby>に）それ、山伏と言っぱ山伏なり。<ruby><rb>兜巾</rb><rt>ときん</rt></ruby>と云っぱ兜巾なり。お腰元と言っぱ美人なり。恋路と言っぱ<ruby><rb>闇夜</rb><rt>やみよ</rt></ruby>なり。野道<ruby><rb>山路</rb><rt>やまみち</rt></ruby><ruby><rb>厭</rb><rt>いと</rt></ruby>いなく、修行積んだる<ruby><rb>某</rb><rt>それがし</rt></ruby>が、このいら高の<ruby><rb>数珠</rb><rt>じゅず</rt></ruby>に掛け、いで一祈り祈るならば、などか<ruby><rb>利験</rb><rt>りげん</rt></ruby>のなかるべき。橋の下の<ruby><rb>菖蒲</rb><rt>しょうぶ</rt></ruby>は、誰が植えた菖蒲ぞ、ぼろぼん、ぼろぼん、ぼろぼんのぼろぼん。</p>
+        <p>侍女等わざとはらはらと逃ぐ、<persName ref="#shunoban">朱の盤</persName>五人を追廻す。</p>
+        <p>ぼろぼんぼろぼん、ぼろぼんぼろぼん。（やがて侍女に突かれて<ruby><rb>摚</rb><rt>どう</rt></ruby>と倒る）などか利験のなかるべき。</p>
+        <p><persName ref="#kuzu">葛</persName>　利験はござんしょうけれどな、そんな話は面白うござんせぬ。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　（首を振って）ぼろぼん、ぼろぼん。</p>
+        <p>鞠唄聞ゆ。</p>
+        <p>――<ruby><rb>私</rb><rt>わし</rt></ruby>が<ruby><rb>姉</rb><rt>あね</rt></ruby>さん三人ござる、一人姉さん鼓が上手。</p>
+        <p>一人姉さん太鼓が上手。</p>
+        <p>いっちよいのが<placeName ref="#shitaya"><ruby><rb>下谷</rb><rt>したや</rt></ruby></placeName>にござる。</p>
+        <p><placeName ref="#shitaya">下谷</placeName>一番<ruby><rb>達</rb><rt>だて</rt></ruby>しゃでござる。二両で帯買うて、</p>
+        <p>三両で<ruby><rb>括</rb><rt>く</rt></ruby>けて、括けめ括けめに<ruby><rb>七総</rb><rt>ななふさ</rt></ruby>さげて、</p>
+        <p>折りめ折りめに、いろはと書いて。――</p>
+        <p><persName ref="#kuzu">葛</persName>　さあ、お先達、よしの葉の、よい女郎衆ではござんせぬが、参ってお酌。（扇を開く。）</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　ぼろぼんぼろぼん。（同じく扇子にうく）おとととと、ちょうどあるちょうどある。いで、お<ruby><rb>肴</rb><rt>さかな</rt></ruby>を所望しょう。……などか利験のなかるべき。</p>
+        <p><persName ref="#kikyo">桔梗</persName>　その利験ならござんしょう。<persName ref="#ominaeshi">女郎花</persName>さん、<persName ref="#nadeshiko">撫子</persName>さん、ちょっと、お立ちなさいまし。</p>
+        <p><ruby><rb>両女</rb><rt>ふたり</rt></ruby>立つ。</p>
+        <p>ここをどこぞと、もし人問わば、ここは<placeName ref="#suruga"><ruby><rb>駿河</rb><rt>するが</rt></ruby></placeName>の</p>
+        <p><placeName ref="#fuchu">府中</placeName>の宿よ、人に<ruby><rb>情</rb><rt>なさけ</rt></ruby>を<placeName ref="#kakegawa">掛川</placeName>の宿よ。<ruby><rb>雉子</rb><rt>きじ</rt></ruby>の<ruby><rb>雌鳥</rb><rt>めんどり</rt></ruby></p>
+        <p>ほろりと落いて、打ちきせて、しめて、しょのしょの</p>
+        <p>いとしよの、そぞろいとしゅうて、<ruby><rb>遣瀬</rb><rt>やるせ</rt></ruby>なや。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　やんややんや。</p>
+        <p><persName ref="#ominaeshi">女郎花</persName>　今度はお先達、さあ。</p>
+        <p><persName ref="#kuzu">葛</persName>　<ruby><rb>貴方</rb><rt>あなた</rt></ruby>がお立ちなさいまし。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　ぼろぼん、ぼろぼん。<ruby><rb>此方</rb><rt>こなた</rt></ruby>衆<ruby><rb>思</rb><rt>おもい</rt></ruby>ざしを受きょうならば。</p>
+        <p>侍女五人扇子を開く、<persName ref="#shunoban">朱の盤</persName>杯を一順す。すなわち立つ。腰なる太刀をすらりと抜き、以前の兜を<ruby><rb>切先</rb><rt>きっさき</rt></ruby>にかけて、<ruby><rb>衝</rb><rt>つ</rt></ruby>と天井に<ruby><rb>翳</rb><rt>かざ</rt></ruby>し、<ruby><rb>高脛</rb><rt>たかずね</rt></ruby>に拍子を踏んで――</p>
+        <p><ruby><rb>戈鋋剣戟</rb><rt>かせんけんげき</rt></ruby>を降らすこと電光の如くなり。</p>
+        <p><ruby><rb>盤石</rb><rt>ばんじゃく</rt></ruby><ruby><rb>巌</rb><rt>いわお</rt></ruby>を飛ばすこと春の雨に相同じ。</p>
+        <p><ruby><rb>然</rb><rt>しか</rt></ruby>りとはいえども、天帝の身には近づかで、</p>
+        <p>修羅かれがために破らる。</p>
+        <p>――お立ち――、（陰より<ruby><rb>諸声</rb><rt>もろごえ</rt></ruby>。）</p>
+        <p>手早く太刀を納め、兜をもとに直す、一同つい居る。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>、今度は貴方が、私へ。</p>
+        <p>夫人　はい。</p>
+        <p><persName ref="#shitanaga-uba">舌長姥</persName>　お早々と。</p>
+        <p>夫人　（<ruby><rb>頷</rb><rt>うなず</rt></ruby>きつつ、連れて廻廊にかかる。目の下<ruby><rb>遥</rb><rt>はるか</rt></ruby>に<ruby><rb>瞰下</rb><rt>みおろ</rt></ruby>す）ああ、鷹狩が帰って来た。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　（ともに、瞰下す）<ruby><rb>先刻</rb><rt>さっき</rt></ruby>私が参る時は、蟻のような行列が、その鉄砲で、松並木を走っていました。ああ、首に似た殿様が、馬に乗って<ruby><rb>反返</rb><rt>そりかえ</rt></ruby>って、威張って、本丸へ入って来ますね。</p>
+        <p>夫人　<persName ref="#harima">播磨守</persName>さ。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　まあ、翼の、白い羽の雪のような、いい鷹を持っているよ。</p>
+        <p>夫人　おお。（軽く胸を打つ）貴女。（間）あの鷹を取って上げましょうね。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　まあ、どうしてあれを。</p>
+        <p>夫人　見ておいで、、それは<placeName ref="#himeji">姫路</placeName>の、<persName ref="#tomihime">富</persName>だもの。</p>
+        <p><ruby><rb>蓑</rb><rt>みの</rt></ruby>を取って肩に装う、美しき<ruby><rb>胡蝶</rb><rt>こちょう</rt></ruby>の群、ひとしく蓑に舞う。<ruby><rb>颯</rb><rt>さっ</rt></ruby>と翼を開く風情す。</p>
+        <p>それ、人間の目には、羽衣を<ruby><rb>被</rb><rt>き</rt></ruby>た鶴に見える。</p>
+        <p>ひらりと落す特、一羽の白鷹<ruby><rb>颯</rb><rt>さっ</rt></ruby>と飛んで天守に上るを、手に捕う。</p>
+        <p>――わっと云う声、地より響く――</p>
+        <p><persName ref="#kamehime">亀姫</persName>　お涼しい、お<ruby><rb>姉様</rb><rt>あねえさま</rt></ruby>。</p>
+        <p>夫人　この鷹ならば、鞠を投げてもとりましょう。――<ruby><rb>沢山</rb><rt>たんと</rt></ruby>お遊びなさいまし。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　あい。（嬉しげに袖に<ruby><rb>抱</rb><rt>いだ</rt></ruby>く。そのまま、<ruby><rb>真先</rb><rt>まっさき</rt></ruby>に<ruby><rb>階子</rb><rt>はしご</rt></ruby>を上る。二三段、と振返りて、<ruby><rb>衝</rb><rt>つ</rt></ruby>と鷹を雪の手に据うるや否や）虫が来た。</p>
+        <p>云うとともに、袖を払って一筋の<ruby><rb>征矢</rb><rt>そや</rt></ruby>をカラリと落す。矢は鷹狩の<ruby><rb>中</rb><rt>うち</rt></ruby>より射掛けたるなり。</p>
+        <p>夫人　（<ruby><rb>斉</rb><rt>ひと</rt></ruby>しくともに）む。（と肩をかわし、身を<ruby><rb>捻</rb><rt>ひね</rt></ruby>って<ruby><rb>背向</rb><rt>そがい</rt></ruby>になる、舞台に<ruby><rb>面</rb><rt>おもて</rt></ruby>を返す時、口に<ruby><rb>一条</rb><rt>ひとすじ</rt></ruby>の征矢、手にまた一条の矢を取る。下より射たるを受けたるなり）推参な。</p>
+        <p>――たちまち鉄砲の音、あまたたび――</p>
+        <p><persName ref="#susuki">薄</persName>　それ、皆さん。</p>
+        <p>侍女等、身を垣にす。</p>
+        <p><persName ref="#shunoban">朱の盤</persName>　姥殿、<ruby><rb>確</rb><rt>しっか</rt></ruby>り。（姫を<ruby><rb>庇</rb><rt>かぼ</rt></ruby>うて大手を開く。）</p>
+        <p><persName ref="#kamehime">亀姫</persName>　大事ない、大事ない。</p>
+        <p>夫人　（打笑む）ほほほ、皆が花火線香をお<ruby><rb>焚</rb><rt>た</rt></ruby>き――そうすると、鉄砲の火で、この天守が燃えると思って、<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>して打たなくなるから。</p>
+        <p>――舞台やや暗し。鉄砲の音<ruby><rb>止</rb><rt>や</rt></ruby>む――――</p>
+        <p>夫人、<persName ref="#kamehime">亀姫</persName>と声を合せて笑う、ほほほほほ。</p>
+        <p>夫人　それ、御覧、ついでにその火で、焼けそうな処を二三<ruby><rb>処</rb><rt>ヶしょ</rt></ruby><ruby><rb>焚</rb><rt>や</rt></ruby>くが<ruby><rb>可</rb><rt>い</rt></ruby>い、<persName ref="#kamehime">お亀様</persName>の<ruby><rb>路</rb><rt>みち</rt></ruby>の<ruby><rb>松明</rb><rt>たいまつ</rt></ruby>にしようから。</p>
+        <p>舞台暗し。</p>
+        <p><persName ref="#kamehime">亀姫</persName>　お心づくしお嬉しや。さらば。</p>
+        <p>夫人　さらばや。</p>
+        <p><ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>、やがて<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>の影に、うつくしき夫人の姿。舞台にただ一人のみ見ゆ。夫人うしろむきにて、獅子頭に対し、机に向い巻ものを読みつつあり。<ruby><rb>間</rb><rt>ま</rt></ruby>を置き、<persName ref="#ominaeshi">女郎花</persName>、清らかなる<ruby><rb>小掻巻</rb><rt>こがいまき</rt></ruby>を持ち出で、<ruby><rb>静</rb><rt>しずか</rt></ruby>に夫人の<ruby><rb>背</rb><rt>せな</rt></ruby>に置き、手をつかえて、のち去る。――</p>
+        <p>ここはどこの細道じゃ、細道じゃ。</p>
+        <p><persName ref="#tenjin">天神様</persName>の細道じゃ、細道じゃ。</p>
+        <p>舞台一方の片隅に、下の四重に通ずべき<ruby><rb>階子</rb><rt>はしご</rt></ruby>の口あり。その口より、まず<ruby><rb>一</rb><rt>ひとつ</rt></ruby>の<ruby><rb>雪洞</rb><rt>ぼんぼり</rt></ruby><ruby><rb>顕</rb><rt>あらわ</rt></ruby>れ、一廻りあたりを照す。やがて<ruby><rb>衝</rb><rt>つ</rt></ruby>と<ruby><rb>翳</rb><rt>かざ</rt></ruby>すとともに、美丈夫、秀でたる眉に勇壮の気満つ。黒羽二重の<ruby><rb>紋着</rb><rt>もんつき</rt></ruby>、<ruby><rb>萌黄</rb><rt>もえぎ</rt></ruby>の<ruby><rb>袴</rb><rt>はかま</rt></ruby>、<ruby><rb>臘鞘</rb><rt>ろざや</rt></ruby>の大小にて、<persName ref="#zusho">姫川<ruby><rb>図書之助</rb><rt>ずしょのすけ</rt></ruby></persName>登場。唄をききつつ<ruby><rb>低徊</rb><rt>ていかい</rt></ruby>し、天井を仰ぎ、廻廊を<ruby><rb>窺</rb><rt>うかが</rt></ruby>い、やがて<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の影を<ruby><rb>視</rb><rt>み</rt></ruby>て、やや驚く。ついで<ruby><rb>几帳</rb><rt>きちょう</rt></ruby>を認む。彼が<ruby><rb>入</rb><rt>い</rt></ruby>るべき<ruby><rb>方</rb><rt>かた</rt></ruby>に几帳を立つ。<persName ref="#zusho">図書</persName>は<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>の後決然として進む。<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>を定めて、夫人の姿を認む。<ruby><rb>剣夾</rb><rt>つか</rt></ruby>に手を掛け、気構えたるが、じりじりと<ruby><rb>退</rb><rt>さが</rt></ruby>る。</p>
+        <p>夫人　（間）誰。</p>
+        <p><persName ref="#zusho">図書</persName>　はっ。（と思わず膝を<ruby><rb>支</rb><rt>つ</rt></ruby>く）<ruby><rb>某</rb><rt>それがし</rt></ruby>。</p>
+        <p>夫人　（<ruby><rb>面</rb><rt>おもて</rt></ruby>のみ振向く、――無言。）</p>
+        <p><persName ref="#zusho">図書</persName>　<ruby><rb>私</rb><rt>わたくし</rt></ruby>は、当城の大守に仕うる、武士の<ruby><rb>一人</rb><rt>いちにん</rt></ruby>でございます。</p>
+        <p>夫人　何しに見えた。</p>
+        <p><persName ref="#zusho">図書</persName>　百年以来、二重三重までは格別、当お天守五重までは、<ruby><rb>生</rb><rt>しょう</rt></ruby>あるものの参った<ruby><rb>例</rb><rt>ためし</rt></ruby>はありませぬ。今宵、大殿の仰せに依って、<ruby><rb>私</rb><rt>わたくし</rt></ruby>、見届けに参りました。</p>
+        <p>夫人　それだけの事か。</p>
+        <p><persName ref="#zusho">図書</persName>　且つまた、大殿様、御秘蔵の、日本一の鷹がそれまして、お天守のこのあたりへ隠れました。行方を求めよとの御意でございます。</p>
+        <p>夫人　翼あるものは、人間ほど不自由ではない。千里、五百里、勝手な処へ飛ぶ、とお言いなさるが<ruby><rb>可</rb><rt>よ</rt></ruby>い。――用はそれだけか。</p>
+        <p><persName ref="#zusho">図書</persName>　別に余の儀は承りませぬ。</p>
+        <p>夫人　五重に参って、見届けた上、いかが計らえとも言われなかったか。</p>
+        <p><persName ref="#zusho">図書</persName>　いや、承りませぬ。</p>
+        <p>夫人　そして、お前も、こう見届けた上に、どうしようとも思いませぬか。</p>
+        <p><persName ref="#zusho">図書</persName>　お天守は、殿様のものでございます。いかなる事がありましょうとも、<ruby><rb>私</rb><rt>わたくし</rt></ruby>一存にて、何と計らおうとも決して存じませぬ。</p>
+        <p>夫人　お待ち。この天守は私のものだよ。</p>
+        <p><persName ref="#zusho">図書</persName>　それは、<ruby><rb>貴方</rb><rt>あなた</rt></ruby>のものかも知れませぬ。また殿様は殿様で、御自分のものだと御意遊ばすかも知れませぬ。しかし、いずれにいたせ、<ruby><rb>私</rb><rt>わたくし</rt></ruby>のものでないことは<ruby><rb>確</rb><rt>たしか</rt></ruby>でございます。自分のものでないものを、殿様の仰せも待たずに、どうしようとも思いませぬ。</p>
+        <p>夫人　すずしい言葉だね、その心なれば、ここを無事で帰られよう。私も無事に帰してあげます。</p>
+        <p><persName ref="#zusho">図書</persName>　<ruby><rb>冥加</rb><rt>みょうが</rt></ruby>に存じます。</p>
+        <p>夫人　今度は、<persName ref="#harima">播磨</persName>が申しきけても、決して来てはなりません。ここは人間の来る処ではないのだから。――また誰も参らぬように。</p>
+        <p><persName ref="#zusho">図書</persName>　いや、<ruby><rb>私</rb><rt>わたくし</rt></ruby>が参らぬ以上は、五十万石の御家中、誰一人参りますものはございますまい。皆<ruby><rb>生命</rb><rt>いのち</rt></ruby>が大切でございますから。</p>
+        <p>夫人　お前は、そして、生命は欲しゅうなかったのか。</p>
+        <p><persName ref="#zusho">図書</persName>　<ruby><rb>私</rb><rt>わたくし</rt></ruby>は、<ruby><rb>仔細</rb><rt>しさい</rt></ruby>あって、殿様の御不興を受け、お<ruby><rb>目通</rb><rt>めどおり</rt></ruby>を遠ざけられ閉門の処、誰もお天守へ<ruby><rb>上</rb><rt>あが</rt></ruby>りますものがないために、急にお呼出しでございました。その御上使は、実は<ruby><rb>私</rb><rt>わたくし</rt></ruby>に切腹仰せつけの処を、急に御模様がえになったのでございます。</p>
+        <p>夫人　では、この役目が済めば、切腹は許されますか。</p>
+        <p><persName ref="#zusho">図書</persName>　そのお約束でございました。</p>
+        <p>夫人　人の<ruby><rb>生死</rb><rt>いきしに</rt></ruby>は構いませんが、切腹はさしたくない。私は武士の切腹は嫌いだから。しかし、思い<ruby><rb>掛</rb><rt>がけ</rt></ruby>なく、お前の<ruby><rb>生命</rb><rt>いのち</rt></ruby>を助けました。……悪い事ではない。今夜はいい<ruby><rb>夜</rb><rt>よ</rt></ruby>だ。それではお帰り。</p>
+        <p><persName ref="#zusho">図書</persName>　姫君。</p>
+        <p>夫人　まだ、居ますか。</p>
+        <p><persName ref="#zusho">図書</persName>　は、恐入ったる次第ではございますが、御姿を見ました事を、主人に申まして差支えはございませんか。</p>
+        <p>夫人　<ruby><rb>確</rb><rt>たしか</rt></ruby>にお言いなさいまし。留守でなければ、いつでも居るから。</p>
+        <p><persName ref="#zusho">図書</persName>　武士の面目に存じます――御免。</p>
+        <p><ruby><rb>雪洞</rb><rt>ぼんぼり</rt></ruby>を取って<ruby><rb>静</rb><rt>しずか</rt></ruby>に退座す。夫人<ruby><rb>長煙管</rb><rt>ながぎせる</rt></ruby>を取って、<ruby><rb>払</rb><rt>はた</rt></ruby>く音に、<persName ref="#zusho">図書</persName>板敷にて一度<ruby><rb>留</rb><rt>とど</rt></ruby>まり、直ちに<ruby><rb>階子</rb><rt>はしご</rt></ruby>の口にて、<ruby><rb>燈</rb><rt>ともしび</rt></ruby>を下に、壇に隠る。</p>
+        <p>鐘の音。</p>
+        <p>時に一体の大入道、<ruby><rb>面</rb><rt>つら</rt></ruby>も<ruby><rb>法衣</rb><rt>ころも</rt></ruby>も<ruby><rb>真黒</rb><rt>まっくろ</rt></ruby>なるが、もの陰より<ruby><rb>甍</rb><rt>いらか</rt></ruby>を渡り<ruby><rb>梢</rb><rt>こずえ</rt></ruby>を伝うがごとくにして、舞台の片隅を伝い<ruby><rb>行</rb><rt>ゆ</rt></ruby>き、花道なる切穴の口に<ruby><rb>踞</rb><rt>うずく</rt></ruby>まる。</p>
+        <p>鐘の音。</p>
+        <p><persName ref="#zusho">図書</persName>、その切穴より<ruby><rb>立顕</rb><rt>たちあらわ</rt></ruby>る。</p>
+        <p>夫人すっと座を立ち、正面、鼓の緒の欄干に立ち<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>る時、<persName ref="#zusho">図書</persName>、雪洞を<ruby><rb>翳</rb><rt>かざ</rt></ruby>して高く天守を見返す、トタンに大入道さし<ruby><rb>覗</rb><rt>のぞ</rt></ruby>きざまに雪洞をふっと消す。<persName ref="#zusho">図書</persName><ruby><rb>身構</rb><rt>みがまえ</rt></ruby>す。大入道、大手を拡げてその<ruby><rb>前途</rb><rt>ゆくて</rt></ruby>を遮る。</p>
+        <p>鐘の音。</p>
+        <p>侍女等、<ruby><rb>凜々</rb><rt>りり</rt></ruby>しき<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>、揚幕より、懐剣、<ruby><rb>薙刀</rb><rt>なぎなた</rt></ruby>を構えて出づ。<persName ref="#zusho">図書</persName>扇子を抜持ち、大入道を払い、懐剣に身を<ruby><rb>躱</rb><rt>かわ</rt></ruby>し、薙刀と<ruby><rb>丁</rb><rt>ちょう</rt></ruby>と合わす。かくて一同を追込み、揚幕際に扇を揚げ、<ruby><rb>屹</rb><rt>きっ</rt></ruby>と天守を仰ぐ。</p>
+        <p>鐘の音。</p>
+        <p>夫人、<ruby><rb>従容</rb><rt>しょうよう</rt></ruby>として座に返る。<persName ref="#zusho">図書</persName>、手探りつつもとの切穴を<ruby><rb>捜</rb><rt>さぐ</rt></ruby>る。（間）その切穴に没す。しばらくして舞台なる以前の階子の口より出づ。<ruby><rb>猶予</rb><rt>ためら</rt></ruby>わず夫人に近づき、手をつく。</p>
+        <p>夫人　（先んじて声を掛く。<ruby><rb>穏</rb><rt>おだやか</rt></ruby>に）また見えたか。</p>
+        <p><persName ref="#zusho">図書</persName>　はっ、夜陰と申し、再度<ruby><rb>御左右</rb><rt>おそう</rt></ruby>を騒がせ、まことに恐入りました。</p>
+        <p>夫人　何しに来ました。</p>
+        <p><persName ref="#zusho">図書</persName>　御天守の三階中壇まで戻りますと、<ruby><rb>鳶</rb><rt>とび</rt></ruby>ばかり<ruby><rb>大</rb><rt>おおき</rt></ruby>さの、<ruby><rb>野衾</rb><rt>のぶすま</rt></ruby>かと存じます、<ruby><rb>大蝙蝠</rb><rt>おおこうもり</rt></ruby>の黒い翼に、<ruby><rb>燈</rb><rt>ともしび</rt></ruby>を<ruby><rb>煽</rb><rt>あお</rt></ruby>ぎ消されまして、いかにとも、進退度を失いましたにより、灯を頂きに参りました。</p>
+        <p>夫人　ただそれだけの事に。……二度とおいででないと申した、私の言葉を忘れましたか。</p>
+        <p><persName ref="#zusho">図書</persName>　針ばかり<ruby><rb>片割月</rb><rt>かたわれづき</rt></ruby>の影もささず、下に向えば真の<ruby><rb>暗黒</rb><rt>やみ</rt></ruby>。男が、足を踏みはずし、壇を転がり落ちまして、<ruby><rb>不具</rb><rt>かたわ</rt></ruby>になどなりましては、<ruby><rb>生効</rb><rt>いきがい</rt></ruby>もないと存じます。上を見れば五重のここより、<ruby><rb>幽</rb><rt>かすか</rt></ruby>にお<ruby><rb>燈</rb><rt>あかり</rt></ruby>がさしました。お<ruby><rb>咎</rb><rt>とが</rt></ruby>めをもって生命をめさりょうとも、男といたし、階子から落ちて<ruby><rb>怪我</rb><rt>けが</rt></ruby>をするよりはと存じ、<ruby><rb>御戒</rb><rt>おんいましめ</rt></ruby>をも<ruby><rb>憚</rb><rt>はばか</rt></ruby>らず推参いたしてございます。</p>
+        <p>夫人　（<ruby><rb>莞爾</rb><rt>にっこり</rt></ruby>と笑む）ああ、<ruby><rb>爽</rb><rt>さわや</rt></ruby>かなお心、そして、貴方はお<ruby><rb>勇</rb><rt>いさま</rt></ruby>しい。<ruby><rb>燈</rb><rt>あかり</rt></ruby>を<ruby><rb>点</rb><rt>つ</rt></ruby>けて上げましょうね。（座を寄す。）</p>
+        <p><persName ref="#zusho">図書</persName>　いや、お手ずからは恐多い。<ruby><rb>私</rb><rt>わたくし</rt></ruby>が。</p>
+        <p>夫人　いえいえ、この<ruby><rb>燈</rb><rt>ともしび</rt></ruby>は、明星、北斗星、竜の燈、玉の光もおなじこと、お前の手では、<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>には<ruby><rb>点</rb><rt>つ</rt></ruby>きません。</p>
+        <p><persName ref="#zusho">図書</persName>　ははッ。（瞳を<ruby><rb>凝</rb><rt>こら</rt></ruby>す。）</p>
+        <p>夫人、世話めかしく、<ruby><rb>雪洞</rb><rt>ぼんぼり</rt></ruby>の蝋を抜き、<ruby><rb>短檠</rb><rt>たんけい</rt></ruby>の灯を移す。<ruby><rb>燭</rb><rt>しょく</rt></ruby>をとって、<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<persName ref="#zusho">図書</persName>の<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>視</rb><rt>み</rt></ruby>る、<ruby><rb>恍惚</rb><rt>うっとり</rt></ruby>とす。</p>
+        <p>夫人　（蝋燭を手にしたるまま）帰したくなくなった、もう帰すまいと私は思う。</p>
+        <p><persName ref="#zusho">図書</persName>　ええ。</p>
+        <p>夫人　貴方は、<persName ref="#harima">播磨</persName>が貴方に、切腹を申しつけたと言いました。それは何の罪でございます。</p>
+        <p><persName ref="#zusho">図書</persName>　<ruby><rb>私</rb><rt>わたくし</rt></ruby>が<ruby><rb>拳</rb><rt>こぶし</rt></ruby>に据えました、殿様が日本一とて御秘蔵の、白い鷹を、このお天守へ<ruby><rb>逸</rb><rt>そら</rt></ruby>しました、その<ruby><rb>越度</rb><rt>おちど</rt></ruby>、その罪過でございます。</p>
+        <p>夫人　何、鷹をそらした、その越度、その罪過、ああ人間というものは不思議な<ruby><rb>咎</rb><rt>とが</rt></ruby>を<ruby><rb>被</rb><rt>おお</rt></ruby>せるものだね。その鷹は貴方が勝手に鳥に合せたのではありますまい。天守の棟に、世にも美しい鳥を<ruby><rb>視</rb><rt>み</rt></ruby>て、それが欲しさに、<persName ref="#harima">播磨守</persName>が、自分で貴方にいいつけて、勝手に自分でそらしたものを、貴方の罪にしますのかい。</p>
+        <p><persName ref="#zusho">図書</persName>　<ruby><rb>主</rb><rt>しゅう</rt></ruby>と家来でございます。仰せのまま<ruby><rb>生命</rb><rt>いのち</rt></ruby>をさし出しますのが臣たる道でございます。</p>
+        <p>夫人　その道は曲っていましょう。間違ったいいつけに従うのは、主人に間違った道を踏ませるのではありませんか。</p>
+        <p><persName ref="#zusho">図書</persName>　けれども、鷹がそれました。</p>
+        <p>夫人　ああ、主従とかは<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しい。鷹とあの人間の<ruby><rb>生命</rb><rt>いのち</rt></ruby>とを<ruby><rb>取</rb><rt>とり</rt></ruby>かえるのでございますか。よしそれも、貴方が、貴方の<ruby><rb>過失</rb><rt>あやまち</rt></ruby>なら、君と臣というもののそれが道なら仕方がない。けれども、<persName ref="#harima">播磨</persName>がさしずなら、それは<persName ref="#harima">播磨</persName>の過失というもの。第一、鷹を失ったのは、貴方ではありません。あれは私が取りました。</p>
+        <p><persName ref="#zusho">図書</persName>　やあ、貴方が。</p>
+        <p>夫人　まことに。</p>
+        <p><persName ref="#zusho">図書</persName>　ええ、お<ruby><rb>怨</rb><rt>うら</rt></ruby>み申上ぐる。（刀に手を掛く。）</p>
+        <p>夫人　鷹は第一、誰のものだと思います。鷹には鷹の世界がある。露霜の清い林、朝嵐夕風の爽かな空があります。決して人間の持ちものではありません。<ruby><rb>諸侯</rb><rt>だいみょう</rt></ruby>なんどというものが、思上った行過ぎな、あの、鷹を、ただ一人じめに自分のものと、つけ上りがしています。貴方はそうは思いませんか。</p>
+        <p><persName ref="#zusho">図書</persName>　（沈思す、間）美しく、気高い、そして計り知られぬ威のある、姫君。――貴方にはお答が出来かねます。</p>
+        <p>夫人　いえ、いえ、かどだてて<ruby><rb>言籠</rb><rt>いいこ</rt></ruby>めるのではありません。私の申すことが、少しなりともお分りになりましたら、あのその筋道の分らない二三の丸、本丸、<ruby><rb>太閤丸</rb><rt>たいこうまる</rt></ruby>、<ruby><rb>廓内</rb><rt>くるわうち</rt></ruby>、御家中の世間へなど、もうお帰りなさいますな。<ruby><rb>白銀</rb><rt>しろがね</rt></ruby>、<ruby><rb>黄金</rb><rt>こがね</rt></ruby>、球、<ruby><rb>珊瑚</rb><rt>さんご</rt></ruby>、千石万石の知行より、私が身を捧げます。腹を切らせる殿様のかわりに、私の心を差上げます、私の<ruby><rb>生命</rb><rt>いのち</rt></ruby>を上げましょう。貴方お帰りなさいますな。</p>
+        <p><persName ref="#zusho">図書</persName>　迷いました、姫君。殿に金鉄の我が心も、波打つばかり悩乱をいたします。が、決心が出来ません。<ruby><rb>私</rb><rt>わたくし</rt></ruby>は親にも聞きたし、師にも教えられたし、書もつにも聞かねばなりません。お<ruby><rb>暇</rb><rt>いとま</rt></ruby>を申上げます。</p>
+        <p>夫人　（歎息す）ああ、まだ貴方は、世の中に未練がある。それではお帰りなさいまし。（この時蝋燭を雪洞に）はい。</p>
+        <p><persName ref="#zusho">図書</persName>　途方に暮れつつ参ります。<ruby><rb>迷</rb><rt>まよい</rt></ruby>の多い人間を、あわれとばかり思召せ。</p>
+        <p>夫人　ああ、優しいそのお言葉で、なお帰したくなくなった。（<ruby><rb>袂</rb><rt>たもと</rt></ruby>を取る。）</p>
+        <p><persName ref="#zusho">図書</persName>　（<ruby><rb>屹</rb><rt>きっ</rt></ruby>として袖を払う）強いて、たって、お帰しなくば、お<ruby><rb>抵抗</rb><rt>てむかい</rt></ruby>をいたします。</p>
+        <p>夫人　（<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>み）あの私に。</p>
+        <p><persName ref="#zusho">図書</persName>　おんでもない事。</p>
+        <p>夫人　まあ、お勇ましい、<ruby><rb>凜</rb><rt>りり</rt></ruby>々しい。あの、獅子に似た若いお方、お名が聞きたい。</p>
+        <p><persName ref="#zusho">図書</persName>　夢のような仰せなれば、名のありなしも覚えませぬが、<persName ref="#zusho">姫川図書之助</persName>と申します。</p>
+        <p>夫人　<ruby><rb>可懐</rb><rt>なつかし</rt></ruby>い、嬉しいお名、忘れません。</p>
+        <p><persName ref="#zusho">図書</persName>　以後、お天守<ruby><rb>下</rb><rt>した</rt></ruby>の<ruby><rb>往</rb><rt>ゆき</rt></ruby>かいには、誓って礼拝をいたします。――御免。（<ruby><rb>衝</rb><rt>つっ</rt></ruby>と立つ。）</p>
+        <p>夫人　ああ、<persName ref="#zusho">図書</persName>様、しばらく。</p>
+        <p><persName ref="#zusho">図書</persName>　是非もない、<ruby><rb>所詮</rb><rt>しょせん</rt></ruby><ruby><rb>活</rb><rt>い</rt></ruby>けてはお帰しない<ruby><rb>掟</rb><rt>おきて</rt></ruby>なのでございますか。</p>
+        <p>夫人　ほほほ、<persName ref="#harima">播磨守</persName>の家中とは違います。ここは私の心一つ、掟なぞは何にもない。</p>
+        <p><persName ref="#zusho">図書</persName>　それを、お呼留め遊ばしたは。</p>
+        <p>夫人　おはなむけがあるのでござんす。――人間は疑深い。<ruby><rb>卑怯</rb><rt>ひきょう</rt></ruby>な、<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>な、<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>な、殿様などはなおの事。貴方がこの五重へ上って、この私を認めたことを誰もほんとうにはせぬであろう。清い、爽かな貴方のために、<ruby><rb>記念</rb><rt>しるし</rt></ruby>の品をあげましょう。（<ruby><rb>静</rb><rt>しずか</rt></ruby>に以前の<ruby><rb>兜</rb><rt>かぶと</rt></ruby>を取る）――これを、その<ruby><rb>記念</rb><rt>しるし</rt></ruby>にお持ちなさいまし。</p>
+        <p><persName ref="#zusho">図書</persName>　存じも寄らぬ<ruby><rb>御</rb><rt>おん</rt></ruby>たまもの、姫君に向い、御辞退はかえって失礼。余り尊い、<ruby><rb>天晴</rb><rt>あっぱれ</rt></ruby>な<ruby><rb>御兜</rb><rt>おんかぶと</rt></ruby>。</p>
+        <p>夫人　金銀は<ruby><rb>堆</rb><rt>うずたか</rt></ruby>けれど、そんなにいい細工ではありません。しかし、武田には大切な道具。――貴方、見覚えがありますか。</p>
+        <p><persName ref="#zusho">図書</persName>　（<ruby><rb>疑</rb><rt>うたがい</rt></ruby>の目を<ruby><rb>凝</rb><rt>こら</rt></ruby>しつつあり）まさかとは存ずるなり、<ruby><rb>私</rb><rt>わたくし</rt></ruby>とても年に一度、虫干の外には拝しませぬが、ようも似ました、お家の<ruby><rb>重宝</rb><rt>ちょうほう</rt></ruby>、青竜の御兜。</p>
+        <p>夫人　まったく、それに違いありません。</p>
+        <p><persName ref="#zusho">図書</persName>　（<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>とす。急に）これにこそ足の<ruby><rb>爪立</rb><rt>つまだ</rt></ruby>つばかり、心急ぎがいたします、<ruby><rb>御暇</rb><rt>おいとま</rt></ruby>を申うけます。</p>
+        <p>夫人　今度来ると帰しません。</p>
+        <p><persName ref="#zusho">図書</persName>　誓って、――仰せまでもありません。</p>
+        <p>夫人　さらば。</p>
+        <p><persName ref="#zusho">図書</persName>　はっ。（兜を捧げ、やや急いで<ruby><rb>階子</rb><rt>はしご</rt></ruby>に隠る。）</p>
+        <p>夫人　（ひとりもの思い、机に<ruby><rb>頬杖</rb><rt>ほおづえ</rt></ruby>つき、獅子にもの言う）貴方、あの方を――<ruby><rb>私</rb><rt>わたくし</rt></ruby>に下さいまし。</p>
+        <p><persName ref="#susuki">薄</persName>　（静に出づ）お前様。</p>
+        <p>夫人　<persName ref="#susuki">薄</persName>か。</p>
+        <p><persName ref="#susuki">薄</persName>　立派な方でございます。</p>
+        <p>夫人　今まで、あの人を知らなかった、目の及ばなかった私は恥かしいよ。</p>
+        <p><persName ref="#susuki">薄</persName>　かねてのお望みに<ruby><rb>叶</rb><rt>かの</rt></ruby>うた方を、何でお帰しなさいました。</p>
+        <p>夫人　<ruby><rb>生命</rb><rt>いのち</rt></ruby>が<ruby><rb>欲</rb><rt>ほし</rt></ruby>い。<ruby><rb>抵抗</rb><rt>てむかい</rt></ruby>をすると云うもの。</p>
+        <p><persName ref="#susuki">薄</persName>　御一所に、ここにお置き遊ばすまで、何の、<ruby><rb>生命</rb><rt>いのち</rt></ruby>をお取り遊ばすのではございませんのに。</p>
+        <p>夫人　あの人たちの目から見ると、ここに居るのは<ruby><rb>活</rb><rt>い</rt></ruby>きたものではないのだと思います。</p>
+        <p><persName ref="#susuki">薄</persName>　それでは、貴方の<ruby><rb>御容色</rb><rt>ごきりょう</rt></ruby>と、そのお力で、無理にもお引留めが<ruby><rb>可</rb><rt>よ</rt></ruby>うございますのに。何の、<ruby><rb>抵抗</rb><rt>てむかい</rt></ruby>をしました処で。</p>
+        <p>夫人　いや、<ruby><rb>容色</rb><rt>きりょう</rt></ruby>はこちらからは見せたくない。力で、人を強いるのは、<persName ref="#harima">播磨守</persName>なんぞの事、<ruby><rb>真</rb><rt>まこと</rt></ruby>の恋は、心と心、……（軽く）<persName ref="#susuki">薄</persName>や。</p>
+        <p><persName ref="#susuki">薄</persName>　は。</p>
+        <p>夫人　しかし、そうは云うものの、白鷹を据えた、<ruby><rb>鷹匠</rb><rt>たかじょう</rt></ruby>だと申すよ。――縁だねえ。</p>
+        <p><persName ref="#susuki">薄</persName>　きっと御縁がござりますよ。</p>
+        <p>夫人　私もどうやら、そう思うよ。</p>
+        <p><persName ref="#susuki">薄</persName>　奥様、いくら貴女のお言葉でも、これはちと<ruby><rb>痛入</rb><rt>いたみい</rt></ruby>りました。</p>
+        <p>夫人　私も痛入りました。</p>
+        <p><persName ref="#susuki">薄</persName>　これはまた御挨拶でござります――あれ、何やら、御天守下が騒がしい。（立って欄干に出づ、<ruby><rb>遥</rb><rt>はるか</rt></ruby>に下を<ruby><rb>覗込</rb><rt>のぞきこ</rt></ruby>む）……まあ、御覧なさいまし。</p>
+        <p>夫人　（座のまま）何だえ。</p>
+        <p><persName ref="#susuki">薄</persName>　武士が大勢で、<ruby><rb>篝</rb><rt>かがり</rt></ruby>を<ruby><rb>焚</rb><rt>た</rt></ruby>いております。ああ、<persName ref="#harima">武田播磨守</persName>殿、御出張、<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>に<ruby><rb>掛</rb><rt>かか</rt></ruby>ってお控えだ。おぬるくて、のろい癖に、もの見高な、せっかちで、お天守見届けのお使いの帰るのを待兼ねて、<ruby><rb>推出</rb><rt>おしだ</rt></ruby>したのでござります。もしえもしえ、<persName ref="#zusho">図書</persName>様のお姿が小さく見えます。奥様、おたまじゃくしの<ruby><rb>真中</rb><rt>まんなか</rt></ruby>で、<ruby><rb>御紋着</rb><rt>ごもんつき</rt></ruby>の御紋も<ruby><rb>河骨</rb><rt>こうぼね</rt></ruby>、すっきり花が咲いたような、水際立ってお美しい。……奥様。</p>
+        <p>夫人　知らないよ。</p>
+        <p><persName ref="#susuki">薄</persName>　おお、兜あらためがはじまりました。おや、<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>した。あの、殿様の漆みたいな太い眉毛が、びくびくと動きますこと。<ruby><rb>先刻</rb><rt>さっき</rt></ruby>の<persName ref="#kamehime">亀姫</persName>様のお土産の、兄弟の、あの首を見せたら、どうでございましょう。ああ、御家老が居ます。あの<ruby><rb>親仁</rb><rt>おやじ</rt></ruby>も大分百姓を痛めて<ruby><rb>溜込</rb><rt>ためこ</rt></ruby>みましたね。そのかわり頭が<ruby><rb>兀</rb><rt>は</rt></ruby>げた。まあ、<ruby><rb>皆</rb><rt>みんな</rt></ruby>が<persName ref="#zusho">図書</persName>様を取巻いて、お手柄にあやかるのかしら。おや、<ruby><rb>追取刀</rb><rt>おっとりがたな</rt></ruby>だ。何、何、何、まあ、まあ、奥様々々。</p>
+        <p>夫人　もう可い。</p>
+        <p><persName ref="#susuki">薄</persName>　ええ、もう可いではございません。<persName ref="#zusho">図書</persName>様を賊だ、と言います。御秘蔵の兜を盗んだ<ruby><rb>謀逆人</rb><rt>むほんにん</rt></ruby>、謀逆人、殿様のお首に手を掛けたも同然な逆賊でございますとさ。お<ruby><rb>庇</rb><rt>かげ</rt></ruby>で兜が戻ったのに。――何てまあ、人間というものは。――あれ、<ruby><rb>捕手</rb><rt>とりて</rt></ruby>が<ruby><rb>掛</rb><rt>かか</rt></ruby>った。忠義と知行で、てむかいはなさらぬかしら。しめた、投げた、嬉しい。そこだ。御家老が<ruby><rb>肩衣</rb><rt>かたぎぬ</rt></ruby>を<ruby><rb>撥</rb><rt>はね</rt></ruby>ましたよ。大勢が抜連れた。あれ危い。<ruby><rb>豪</rb><rt>えら</rt></ruby>い。<persName ref="#zusho">図書</persName>様抜合せた。……一人腕が落ちた。あら、<ruby><rb>胴切</rb><rt>どうぎり</rt></ruby>。また何も働かずとも可いことを、五両<ruby><rb>二人扶持</rb><rt>ににんぶち</rt></ruby>らしいのが、あら、<ruby><rb>可哀相</rb><rt>かわいそう</rt></ruby>に、首が飛びます。</p>
+        <p>夫人　<persName ref="#hideyoshi">秀吉</persName>時分から、<ruby><rb>見馴</rb><rt>みな</rt></ruby>れていながら、何だねえ、騒々しい。</p>
+        <p><persName ref="#susuki">薄</persName>　騒がずにはいられません。多勢に一人、あら切抜けた、<persName ref="#zusho">図書</persName>様がお天守に<ruby><rb>遁込</rb><rt>にげこ</rt></ruby>みました。追掛けますよ。<ruby><rb>槍</rb><rt>やり</rt></ruby>まで持出した。（欄干をするすると）<persName ref="#zusho">図書</persName>様が、二重へ<ruby><rb>駈上</rb><rt>かけあが</rt></ruby>っておいでなさいます。大勢が追詰めて。</p>
+        <p>夫人　（片膝立つ）<ruby><rb>可</rb><rt>よ</rt></ruby>し、お手伝い申せ。</p>
+        <p><persName ref="#susuki">薄</persName>　お腰元衆、お腰元衆。――（呼びつつ<ruby><rb>忙</rb><rt>せわ</rt></ruby>しく<ruby><rb>階子</rb><rt>はしご</rt></ruby>を下り行く。）</p>
+        <p>夫人、片手を掛けつつ几帳越に階子の方を<ruby><rb>瞰下</rb><rt>みおろ</rt></ruby>す。</p>
+        <p>――や、や、や、――激しき人声、もの音、<ruby><rb>足蹈</rb><rt>あしぶみ</rt></ruby>。――</p>
+        <p><persName ref="#zusho">図書</persName>、もとどりを放ち、衣服に血を浴ぶ。刀を<ruby><rb>振</rb><rt>ふる</rt></ruby>って階子の口に、一度<ruby><rb>屹</rb><rt>きつ</rt></ruby>と下を見込む。肩に波打ち、はっと息して<ruby><rb>摚</rb><rt>どう</rt></ruby>となる。</p>
+        <p>夫人　<persName ref="#zusho">図書</persName>様。</p>
+        <p><persName ref="#zusho">図書</persName>　（心づき、<ruby><rb>蹌踉</rb><rt>よろよろ</rt></ruby>と、且つ<ruby><rb>呼吸</rb><rt>いき</rt></ruby>せいて急いで寄る）姫君、お言葉をも顧みず、三度の推参をお許し下さい。<ruby><rb>私</rb><rt>わたくし</rt></ruby>を賊……賊……<ruby><rb>謀逆人</rb><rt>むほんにん</rt></ruby>、逆賊と申して。</p>
+        <p>夫人　よく存じておりますよ。昨日今日、今までも、お互に友と呼んだ人たちが、いかに殿の仰せとて、手の裏を<ruby><rb>反</rb><rt>かえ</rt></ruby>すように、ようまあ、あなたに<ruby><rb>刃</rb><rt>やいば</rt></ruby>を向けます。</p>
+        <p><persName ref="#zusho">図書</persName>　はい、<ruby><rb>微塵</rb><rt>みじん</rt></ruby>も知らない罪のために、人間同志に殺されましては、おなじ人間、<ruby><rb>断念</rb><rt>あきら</rt></ruby>められない。<ruby><rb>貴女</rb><rt>あなた</rt></ruby>のお手に<ruby><rb>掛</rb><rt>かか</rt></ruby>ります。――<ruby><rb>御禁制</rb><rt>ごきんぜい</rt></ruby>を破りました、御約束を背きました、その罪に伏します。<ruby><rb>速</rb><rt>すみやか</rt></ruby>に<ruby><rb>生命</rb><rt>いのち</rt></ruby>をお取り下されたい。</p>
+        <p>夫人　ええ、<ruby><rb>武士</rb><rt>さむらい</rt></ruby>たちの<ruby><rb>夥間</rb><rt>なかま</rt></ruby>ならば、貴方のお生命を取りましょう。私と一所には、いつまでもお活きなさいまし。</p>
+        <p><persName ref="#zusho">図書</persName>　（<ruby><rb>急</rb><rt>せ</rt></ruby>きつつ）お<ruby><rb>情</rb><rt>なさけ</rt></ruby>余る、お言葉ながら、活きようとて、討手の<ruby><rb>奴儕</rb><rt>やつばら</rt></ruby>、決して活かしておきません。早くお手に掛け下さいまし。貴女に生命を取らるれば、もうこの上のない本望、彼等に討たるるのは<ruby><rb>口惜</rb><rt>くちおし</rt></ruby>い。（夫人の膝に手を掛く）さ、<ruby><rb>生命</rb><rt>いのち</rt></ruby>を、生命を――こう云う<ruby><rb>中</rb><rt>うち</rt></ruby>にも取詰めて参ります。</p>
+        <p>夫人　いいえ、ここまでは来ますまい。</p>
+        <p><persName ref="#zusho">図書</persName>　五重の、その壇、その階子を、鼠のごとく、<ruby><rb>上</rb><rt>あが</rt></ruby>りつ下りついたしおる。……かねての風説、<ruby><rb>鬼神</rb><rt>おにがみ</rt></ruby>より、魔よりも、ここを恐しと存じておるゆえ、いささか<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>はいたしますが、既に、<ruby><rb>私</rb><rt>わたくし</rt></ruby>の、かく参ったを、認めております。こう云う中にも、たった今。</p>
+        <p>夫人　ああ、それもそう、何より<ruby><rb>前</rb><rt>さき</rt></ruby>に、貴方をおかくまい申しておこう。（獅子頭を取る、<ruby><rb>母衣</rb><rt>ほろ</rt></ruby>を開いて、<persName ref="#zusho">図書</persName>の上に<ruby><rb>蔽</rb><rt>おお</rt></ruby>いながら）この中へ……この中へ――</p>
+        <p><persName ref="#zusho">図書</persName>　や、金城鉄壁。</p>
+        <p>夫人　いいえ、柔い。</p>
+        <p><persName ref="#zusho">図書</persName>　<ruby><rb>仰</rb><rt>おおせ</rt></ruby>の通り、真綿よりも。</p>
+        <p>夫人　そして、<ruby><rb>確</rb><rt>しっ</rt></ruby>かり、私におつかまりなさいまし。</p>
+        <p><persName ref="#zusho">図書</persName>　失礼御免。</p>
+        <p>夫人の<ruby><rb>背</rb><rt>せな</rt></ruby>よりその袖に<ruby><rb>縋</rb><rt>すが</rt></ruby>る。縋る、と見えて、<ruby><rb>身体</rb><rt>からだ</rt></ruby>その母衣の<ruby><rb>裾</rb><rt>すそ</rt></ruby>なる<ruby><rb>方</rb><rt>かた</rt></ruby>にかくる。獅子頭を捧げつつ、夫人の<ruby><rb>面</rb><rt>おもて</rt></ruby>、なお母衣の外に見ゆ。</p>
+        <p>討手どやどやと<ruby><rb>入込</rb><rt>いりこ</rt></ruby>み、と見てわっと一度退く時、夫人も母衣に隠る。ただ一頭青面の獅子猛然として舞台にあり。</p>
+        <p>討手。<persName ref="#shuri">小田原<ruby><rb>修理</rb><rt>しゅり</rt></ruby></persName>、<persName ref="#kuhei">山隅<ruby><rb>九平</rb><rt>くへい</rt></ruby></persName>、その他。<ruby><rb>抜身</rb><rt>ぬきみ</rt></ruby>の<ruby><rb>槍</rb><rt>やり</rt></ruby>、刀。中には仰山に小具足をつけたるもあり。大勢。</p>
+        <p><persName ref="#kuhei">九平</persName>　（<ruby><rb>雪洞</rb><rt>ぼんぼり</rt></ruby>を寄す）やあ、<ruby><rb>怪</rb><rt>あや</rt></ruby>しく、<ruby><rb>凄</rb><rt>すご</rt></ruby>く、美しい、<ruby><rb>婦</rb><rt>おんな</rt></ruby>の立姿と見えたはこれだ。</p>
+        <p><persName ref="#shuri">修理</persName>　<ruby><rb>化</rb><rt>ばけ</rt></ruby>るわ化るわ。御城の<ruby><rb>瑞兆</rb><rt>ずいちょう</rt></ruby>、天人のごとき鶴を御覧あって、殿様、鷹を合せたまえば、鷹はそれて<ruby><rb>破蓑</rb><rt>やれみの</rt></ruby>を投落す、……言語道断。</p>
+        <p><persName ref="#kuhei">九平</persName>　<ruby><rb>他</rb><rt>ほか</rt></ruby>にない、<persName ref="#zusho">姫川図書</persName>め、<ruby><rb>死</rb><rt>しに</rt></ruby>ものぐるいに、確にそれなる獅子母衣に潜ったに相違なし。やあ、上意だ、逆賊<ruby><rb>出合</rb><rt>いであ</rt></ruby>え。<persName ref="#kuhei">山隅九平</persName>向うたり。</p>
+        <p><persName ref="#shuri">修理</persName>　待て、<persName ref="#kuhei">山隅</persName>、先方で潜った<ruby><rb>奴</rb><rt>やつ</rt></ruby>だ。呼んだって出やしない。取って押え、<ruby><rb>引摺出</rb><rt>ひきずりだ</rt></ruby>せ。</p>
+        <p><persName ref="#kuhei">九平</persName>　それ、面々。</p>
+        <p><persName ref="#shuri">修理</persName>　気を着けい、うかつにかかると怪我をいたす。元来この<ruby><rb>青獅子</rb><rt>あおじし</rt></ruby>が、並大抵のものではないのだ。伝え聞く。な、以前これは御城下はずれ、<placeName ref="#murasagi"><ruby><rb>群鷺山</rb><rt>むらさぎやま</rt></ruby></placeName>の<ruby><rb>地主神</rb><rt>じしゅじん</rt></ruby>の宮に飾ってあった。二代以前の当城殿様、お鷹狩の馬上から――一人<ruby><rb>町里</rb><rt>まちさと</rt></ruby>には思いも寄らぬ、<ruby><rb>都方</rb><rt>みやこがた</rt></ruby>と見えて、世にも<ruby><rb>艶麗</rb><rt>あでやか</rt></ruby>な女の、一行を<ruby><rb>颯</rb><rt>さっ</rt></ruby>と避けて、その宮へかくれたのを――とろんこの目で<ruby><rb>御覧</rb><rt>ごろう</rt></ruby>じたわ。<ruby><rb>此方</rb><rt>こなた</rt></ruby>は鷹狩、もみじ山だが、いずれ<ruby><rb>戦</rb><rt>いくさ</rt></ruby>に負けた国の、<ruby><rb>上﨟</rb><rt>じょうろう</rt></ruby>、貴女、貴夫人たちの<ruby><rb>落人</rb><rt>おちうど</rt></ruby>だろう。絶世の美女だ。しゃつ<ruby><rb>掴出</rb><rt>つかみいだ</rt></ruby>いて奉れ、とある。御近習、宮の中へ<ruby><rb>闖入</rb><rt>ちんにゅう</rt></ruby>し、人妻なればと、いなむを捕えて、手取足取しようとしたれば、舌を<ruby><rb>噛</rb><rt>か</rt></ruby>んで<ruby><rb>真俯向</rb><rt>まうつむ</rt></ruby>けに倒れて死んだ。その時にな、この獅子頭を<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>て、あわれ獅子や、名誉の作かな。わらわにかばかりの力あらば、<ruby><rb>虎狼</rb><rt>とらおおかみ</rt></ruby>の手にかかりはせじ、と<ruby><rb>吐</rb><rt>ほざ</rt></ruby>いた、とな。続いて三年、毎年、秋の大洪水よ。何が、<ruby><rb>死骸</rb><rt>しがい</rt></ruby>取片づけの山神主が見た、と申すには、獅子が<ruby><rb>頭</rb><rt>かしら</rt></ruby>を<ruby><rb>逆</rb><rt>さかしま</rt></ruby>にして、その<ruby><rb>婦</rb><rt>おんな</rt></ruby>の血を<ruby><rb>舐</rb><rt>な</rt></ruby>め舐め、目から涙を流いたというが<ruby><rb>触出</rb><rt>ふれだ</rt></ruby>しでな。打続く洪水は、その<ruby><rb>婦</rb><rt>おんな</rt></ruby>の<ruby><rb>怨</rb><rt>うらみ</rt></ruby>だと、国中の<ruby><rb>是沙汰</rb><rt>これざた</rt></ruby>だ。<ruby><rb>婦</rb><rt>おんな</rt></ruby>が前髪にさしたのが、死ぬ時、髪をこぼれ落ちたというを拾って来て、近習が復命をした、白木に刻んだ三輪<ruby><rb>牡丹高彫</rb><rt>ぼたんたかぼり</rt></ruby>のさし<ruby><rb>櫛</rb><rt>ぐし</rt></ruby>をな、その時の馬上の殿様は、<ruby><rb>澄</rb><rt>すま</rt></ruby>して<ruby><rb>袂</rb><rt>たもと</rt></ruby>へお入れなさった。<ruby><rb>祟</rb><rt>たたり</rt></ruby>を恐れぬ荒気の大名。おもしろい、水を出さば、天守の五重を<ruby><rb>浸</rb><rt>ひた</rt></ruby>して見よ、とそれ、<ruby><rb>生捉</rb><rt>いけど</rt></ruby>って来てな、ここへ打上げたその獅子頭だ。以来、奇異<ruby><rb>妖変</rb><rt>ようへん</rt></ruby>さながら魔所のように沙汰する天守、まさかとは思うたが、<ruby><rb>目</rb><rt>ま</rt></ruby>のあたり不思議を見るわ。――心してかかれ。</p>
+        <p><persName ref="#kuhei">九平</persName>　心得た、槍をつけろ。</p>
+        <p>討手、槍にて立ちかかる。獅子狂う。討手<ruby><rb>辟易</rb><rt>へきえき</rt></ruby>す。<persName ref="#shuri">修理</persName>、<persName ref="#kuhei">九平</persName>等、抜連れ抜連れ一同<ruby><rb>立掛</rb><rt>たちかか</rt></ruby>る。獅子狂う。また辟易す。</p>
+        <p><persName ref="#shuri">修理</persName>　木彫にも精がある。<ruby><rb>活</rb><rt>い</rt></ruby>きた獣も同じ事だ。目を<ruby><rb>狙</rb><rt>ねら</rt></ruby>え、目を狙え。</p>
+        <p><persName ref="#kuhei">九平</persName>、<persName ref="#shuri">修理</persName>、力を合せて、<ruby><rb>一刀</rb><rt>ひとたち</rt></ruby>ずつ目を<ruby><rb>傷</rb><rt>きずつ</rt></ruby>く、獅子伏す。討手その<ruby><rb>頭</rb><rt>かしら</rt></ruby>をおさう。</p>
+        <p><persName ref="#zusho">図書</persName>　（<ruby><rb>母衣</rb><rt>ほろ</rt></ruby>を<ruby><rb>撥退</rb><rt>はねの</rt></ruby>け刀を<ruby><rb>揮</rb><rt>ふる</rt></ruby>って出づ。口々に<ruby><rb>罵</rb><rt>ののし</rt></ruby>る討手と、一刀合すと<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく）ああ、目が見えない。（押倒され、取って伏せらる）無念。</p>
+        <p>夫人　（獅子の頭をあげつつ、すっくと立つ。黒髪乱れて<ruby><rb>面</rb><rt>おもて</rt></ruby><ruby><rb>凄</rb><rt>すご</rt></ruby>し。手に以前の生首の、もとどりを取って提ぐ）誰の首だ、お前たち、目のあるものは、よっく見よ。（どっしと投ぐ。）</p>
+        <p>――討手わッと退き、<persName ref="#shuri">修理</persName>、恐る恐るこれを拾う。</p>
+        <p><persName ref="#shuri">修理</persName>　<ruby><rb>南無三宝</rb><rt>なむさんぽう</rt></ruby>。</p>
+        <p><persName ref="#kuhei">九平</persName>　殿様の首だ。<persName ref="#harima">播磨守</persName><ruby><rb>様御首</rb><rt>みしるし</rt></ruby>だ。</p>
+        <p><persName ref="#shuri">修理</persName>　一大事とも言いようなし。御同役、お互に首はあるか。</p>
+        <p><persName ref="#kuhei">九平</persName>　<ruby><rb>可恐</rb><rt>おそろし</rt></ruby>い魔ものだ。うかうかして、こんな処に居べきでない。</p>
+        <p>討手一同、立つ足もなく、生首をかこいつつ、乱れて退く。</p>
+        <p><persName ref="#zusho">図書</persName>　姫君、どこにおいでなさいます。姫君。</p>
+        <p>夫人、<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>として、立ちたるまま、もの言わず。</p>
+        <p><persName ref="#zusho">図書</persName>　（あわれに寂しく手探り）姫君、どこにおいでなさいます。<ruby><rb>私</rb><rt>わたくし</rt></ruby>は目が見えなくなりました。姫君。</p>
+        <p>夫人　（忍び泣きに泣く）貴方、私も目が見えなくなりました。</p>
+        <p><persName ref="#zusho">図書</persName>　ええ。</p>
+        <p>夫人　<ruby><rb>侍女</rb><rt>こしもと</rt></ruby>たち、侍女たち。――せめては<ruby><rb>燈</rb><rt>あかり</rt></ruby>を――</p>
+        <p>――皆、<ruby><rb>盲目</rb><rt>めくら</rt></ruby>になりました。誰も目が見えませんのでございます。――（口々に一同はっと泣く声、壁の<ruby><rb>彼方</rb><rt>かなた</rt></ruby>に聞ゆ。）</p>
+        <p>夫人　（獅子頭とともにハタと<ruby><rb>崩折</rb><rt>くずお</rt></ruby>る）獅子が両眼を傷つけられました。この<ruby><rb>精霊</rb><rt>しょうりょう</rt></ruby>で活きましたものは、一人も見えなくなりました。<persName ref="#zusho">図書</persName>様、……どこに。</p>
+        <p><persName ref="#zusho">図書</persName>　姫君、どこに。</p>
+        <p>さぐり寄りつつ、やがて手を触れ、はっと泣き、<ruby><rb>相抱</rb><rt>あいいだ</rt></ruby>く。</p>
+        <p>夫人　何と申そうようもない。貴方お覚悟をなさいまし。今持たせてやった首も、天守を出れば消えましょう。討手は直ぐに引返して参ります。私一人は、雲に乗ります、風に飛びます、<ruby><rb>虹</rb><rt>にじ</rt></ruby>の橋も渡ります。<persName ref="#zusho">図書</persName>様には出来ません。ああ<ruby><rb>口惜</rb><rt>くやし</rt></ruby>い。あれら討手のものの目に、蓑笠着ても天人の二人揃った姿を見せて、日の出、月の出、夕日影にも、おがませようと思ったのに、私の方が盲目になっては、ただお<ruby><rb>生命</rb><rt>いのち</rt></ruby>さえ助けられない。堪忍して下さいまし。</p>
+        <p><persName ref="#zusho">図書</persName>　くやみません！　姫君、あなたのお手に掛けて下さい。</p>
+        <p>夫人　ええ、人手には掛けますまい。そのかわり私も生きてはおりません、お天守の<ruby><rb>塵</rb><rt>ちり</rt></ruby>、<ruby><rb>煤</rb><rt>すす</rt></ruby>ともなれ、落葉になって朽ちましょう。</p>
+        <p><persName ref="#zusho">図書</persName>　やあ、何のために貴女が、美しい姫の、この世にながらえておわすを土産に、<placeName ref="#meido"><ruby><rb>冥土</rb><rt>めいど</rt></ruby></placeName>へ<ruby><rb>行</rb><rt>ゆ</rt></ruby>くのでございます。</p>
+        <p>夫人　いいえ、私も本望でございます、貴方のお手にかかるのが。</p>
+        <p><persName ref="#zusho">図書</persName>　真実のお声か、姫君。</p>
+        <p>夫人　ええ何の。――そうおっしゃる、お顔が見たい、ただ一目。……<ruby><rb>千歳</rb><rt>ちとせ</rt></ruby><ruby><rb>百歳</rb><rt>ももとせ</rt></ruby>にただ一度、たった一度の恋だのに。</p>
+        <p><persName ref="#zusho">図書</persName>　ああ、<ruby><rb>私</rb><rt>わたくし</rt></ruby>も、もう一目、あの、気高い、美しいお顔が見たい。（<ruby><rb>相縋</rb><rt>あいすが</rt></ruby>る。）</p>
+        <p>夫人　前世も<ruby><rb>後世</rb><rt>ごせ</rt></ruby>も要らないが、せめてこうして居とうござんす。</p>
+        <p><persName ref="#zusho">図書</persName>　や、天守下で叫んでいる。</p>
+        <p>夫人　（<ruby><rb>屹</rb><rt>きっ</rt></ruby>となる）<ruby><rb>口惜</rb><rt>くや</rt></ruby>しい、もう、せめて<ruby><rb>一時</rb><rt>いっとき</rt></ruby><ruby><rb>隙</rb><rt>ひま</rt></ruby>があれば、<placeName ref="#yashagaike">夜叉ヶ池</placeName>の<persName ref="#oyuki">お雪様</persName>、遠い<placeName ref="#inawashiro">猪苗代</placeName>の妹分に、手伝を頼もうものを。</p>
+        <p><persName ref="#zusho">図書</persName>　覚悟をしました。姫君、<ruby><rb>私</rb><rt>わたくし</rt></ruby>を。……</p>
+        <p>夫人　私は貴方に未練がある。いいえ、助けたい未練がある。</p>
+        <p><persName ref="#zusho">図書</persName>　猶予をすると討手の<ruby><rb>奴</rb><rt>やつ</rt></ruby>、人間なかまに<ruby><rb>屠</rb><rt>ほふ</rt></ruby>られます、貴女が手に掛けて下さらずば、自分、我が手で。――（一刀を取直す。）</p>
+        <p>夫人　切腹はいけません。ああ、是非もない。それでは私が<ruby><rb>御介錯</rb><rt>ごかいしゃく</rt></ruby>、舌を<ruby><rb>噛切</rb><rt>かみき</rt></ruby>ってあげましょう。それと一所に、<ruby><rb>胆</rb><rt>きも</rt></ruby>のたばねを――この私の胸を一思いに。</p>
+        <p><persName ref="#zusho">図書</persName>　せめてその、ものをおっしゃる、貴方の、ほのかな、<ruby><rb>口許</rb><rt>くちもと</rt></ruby>だけも、見えたらばな。</p>
+        <p>夫人　貴方の<ruby><rb>睫毛</rb><rt>まつげ</rt></ruby>一筋なりと。（声を立ててともに泣く。）</p>
+        <p>奥なる柱の中に、大音あり。――</p>
+        <p>――待て、泣くな泣くな。――</p>
+        <p>工人、<persName ref="#tomoroku"><ruby><rb>近江之丞桃六</rb><rt>おうみのじょうとうろく</rt></ruby></persName>、<ruby><rb>六十</rb><rt>むそ</rt></ruby>じばかりの柔和なる老人。<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>、<ruby><rb>裁着</rb><rt>たッつけ</rt></ruby>、火打袋を腰に、扇を使うて<ruby><rb>顕</rb><rt>あらわ</rt></ruby>る。</p>
+        <p><persName ref="#tomoroku">桃六</persName>　美しい人たち泣くな。（つかつかと寄って獅子の<ruby><rb>頭</rb><rt>かしら</rt></ruby>を<ruby><rb>撫</rb><rt>な</rt></ruby>で）まず、目をあけて進ぜよう。</p>
+        <p>火打袋より<ruby><rb>一挺</rb><rt>ちょう</rt></ruby>の<ruby><rb>鑿</rb><rt>のみ</rt></ruby>を抜き、双の獅子の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>に<ruby><rb>当</rb><rt>あ</rt></ruby>つ。</p>
+        <p>――夫人、<persName ref="#zusho">図書</persName>とともに、あっと云う――</p>
+        <p><persName ref="#tomoroku">桃六</persName>　どうだ、の、それ、見えよう。はははは、ちゃんと<ruby><rb>開</rb><rt>あ</rt></ruby>いた。嬉しそうに開いた。おお、もう笑うか。<ruby><rb>誰</rb><rt>た</rt></ruby>がよ誰がよ、あっはっはっ。</p>
+        <p>夫人　お<ruby><rb>爺様</rb><rt>じいさん</rt></ruby>。</p>
+        <p><persName ref="#zusho">図書</persName>　御老人、あなたは。</p>
+        <p><persName ref="#tomoroku">桃六</persName>　されば、誰かの<ruby><rb>櫛</rb><rt>くし</rt></ruby>に<ruby><rb>牡丹</rb><rt>ぼたん</rt></ruby>も刻めば、この獅子頭も彫った、<persName ref="#tomoroku">近江之丞桃六</persName>と云う、<placeName ref="#tamba"><ruby><rb>丹波</rb><rt>たんば</rt></ruby></placeName>の国の<ruby><rb>楊枝削</rb><rt>ようじけずり</rt></ruby>よ。</p>
+        <p>夫人　まあ、（<persName ref="#zusho">図書</persName>と身を寄せたる姿を心づぐ）こんな姿を、恥かしい。</p>
+        <p><persName ref="#zusho">図書</persName>も、ともに<ruby><rb>母衣</rb><rt>ほろ</rt></ruby>を<ruby><rb>被</rb><rt>かつ</rt></ruby>ぎて姿を<ruby><rb>蔽</rb><rt>おお</rt></ruby>う。</p>
+        <p><persName ref="#tomoroku">桃六</persName>　むむ、見える、恥しそうに見える、<ruby><rb>極</rb><rt>きま</rt></ruby>りの悪そうに見える、がやっぱり嬉しそうに見える、はっはっはっはっ。<ruby><rb>睦</rb><rt>むつま</rt></ruby>じいな、若いもの。（石を切って、ほくちをのぞませ、<ruby><rb>煙管</rb><rt>きせる</rt></ruby>を<ruby><rb>横銜</rb><rt>よこぐわ</rt></ruby>えに<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を、すぱすぱ）気苦労の挙句は休め、安らかに一<ruby><rb>寝入</rb><rt>ねいり</rt></ruby>さっせえ。そのうちに、もそっと、その上にも<ruby><rb>清</rb><rt>すずし</rt></ruby>い目にして進ぜよう。</p>
+        <p><ruby><rb>鑿</rb><rt>のみ</rt></ruby>を試む。月影さす。</p>
+        <p>そりゃ光がさす、月の光あれ、眼玉。（鑿を試み、小耳を傾け、<ruby><rb>鬨</rb><rt>とき</rt></ruby>のごとく叫ぶ天守下の声を聞く）</p>
+        <p>世は<ruby><rb>戦</rb><rt>いくさ</rt></ruby>でも、<ruby><rb>胡蝶</rb><rt>ちょう</rt></ruby>が舞う、<ruby><rb>撫子</rb><rt>なでしこ</rt></ruby>も<ruby><rb>桔梗</rb><rt>ききょう</rt></ruby>も咲くぞ。――馬鹿めが。（<ruby><rb>呵々</rb><rt>からから</rt></ruby>と笑う）ここに獅子がいる。お<ruby><rb>祭礼</rb><rt>まつり</rt></ruby>だと思って騒げ。（鑿を当てつつ）槍、刀、弓矢、鉄砲、城の<ruby><rb>奴等</rb><rt>やつら</rt></ruby>。</p>
+        <p>――幕――</p>
+        <p><date when="1917-09">大正六（一九一七）年九月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>
