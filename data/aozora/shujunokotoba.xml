@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>侏儒の言葉</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>侏儒の言葉</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「昭和文学全集　第1巻」小学館。1987（昭和62）年5月1日初版第1刷発行。（「序」は、筑摩書房刊　ちくま文庫『芥川龍之介全集７』）。親本：岩波書店刊「芥川龍之介全集」。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card158.html">https://www.aozora.gr.jp/cards/000879/card158.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="cleopatra">
+        <persName>クレオパトラ</persName>
+        <note>クレオパトラ7世(前69–前30)。エジプト最後の女王。「鼻」の章で言及</note>
+      </person>
+      <person xml:id="pascal">
+        <persName>パスカル</persName>
+        <note>ブレーズ・パスカル(1623–1662)。「クレオパトラの鼻」の警句の作者として言及</note>
+      </person>
+      <person xml:id="antonius">
+        <persName>アントニイ</persName>
+        <note>マルクス・アントニウス(前83–前30)。クレオパトラの恋人</note>
+      </person>
+      <person xml:id="jesus">
+        <persName>耶蘇</persName>
+        <note>イエス・キリスト。「耶蘇」「クリスト」の二表記で言及(宗教上の存在)</note>
+      </person>
+      <person xml:id="adam">
+        <persName>アダム</persName>
+        <note>旧約聖書「創世記」の最初の人間(宗教・伝説上の存在)</note>
+      </person>
+      <person xml:id="darwin">
+        <persName>ダアウイン</persName>
+        <note>チャールズ・ダーウィン(1809–1882)。進化論の提唱者</note>
+      </person>
+      <person xml:id="jehovah">
+        <persName>エホバ</persName>
+        <note>旧約聖書の神ヤハウェ(宗教上の存在)</note>
+      </person>
+      <person xml:id="einstein">
+        <persName>アインシュタイン</persName>
+        <note>アルベルト・アインシュタイン(1879–1955)。1922年の来日と相対性原理の歓迎に言及</note>
+      </person>
+      <person xml:id="yamamoto-sanehiko">
+        <persName>山本</persName>
+        <note>山本実彦(1885–1952)。雑誌「改造」社主。アインシュタイン招聘者として言及</note>
+      </person>
+      <person xml:id="swedenborg">
+        <persName>スウエデンボルグ</persName>
+        <note>エマヌエル・スヴェーデンボリ(1688–1772)。スウェーデンの神秘思想家</note>
+      </person>
+      <person xml:id="boehme">
+        <persName>ベエメ</persName>
+        <note>ヤコブ・ベーメ(1575–1624)。ドイツの神秘思想家</note>
+      </person>
+      <person xml:id="seishi">
+        <persName>西施</persName>
+        <note>西施。春秋時代の越の美女(伝説的人物)</note>
+      </person>
+      <person xml:id="ryuyokun">
+        <persName>竜陽君</persName>
+        <note>竜陽君。戦国時代の魏王の男色の寵臣(『戦国策』)</note>
+      </person>
+      <person xml:id="buko">
+        <persName>武后</persName>
+        <note>則天武后(624–705)。唐の女帝</note>
+      </person>
+      <person xml:id="ri-keigyo">
+        <persName>李敬業</persName>
+        <note>李敬業(?–684)。則天武后に対して挙兵した唐の武将</note>
+      </person>
+      <person xml:id="rakuhinno">
+        <persName>駱賓王</persName>
+        <note>駱賓王(640頃–684頃)。初唐の詩人。李敬業の乱で武后討伐の檄文を書いた</note>
+      </person>
+      <person xml:id="duc-de-bourgogne">
+        <persName>Duc de Bourgogne</persName>
+        <note>ブルゴーニュ公ルイ(1682–1712)。ルイ14世の孫</note>
+      </person>
+      <person xml:id="abbe-choisy">
+        <persName>アベ・ショアズイ</persName>
+        <note>アベ・ド・ショワジー(1644–1724)。フランスの聖職者・著述家。「Abbé Choisy」「アベ」の表記でも言及</note>
+      </person>
+      <person xml:id="charles-vi">
+        <persName>シャルル六世</persName>
+        <note>シャルル6世(1368–1422)。狂気に陥ったフランス王</note>
+      </person>
+      <person xml:id="cho-ohoku">
+        <persName>趙甌北</persName>
+        <note>趙翼(号は甌北、1727–1814)。清の詩人・史家。七絶「論詩」を引用</note>
+      </person>
+      <person xml:id="anatole-france">
+        <persName>アナトオル・フランス</persName>
+        <note>アナトール・フランス(1844–1924)。フランスの作家</note>
+      </person>
+      <person xml:id="rousseau">
+        <persName>ルッソオ</persName>
+        <note>ジャン=ジャック・ルソー(1712–1778)。「告白(懺悔録)」の作者</note>
+      </person>
+      <person xml:id="merimee">
+        <persName>メリメ</persName>
+        <note>プロスペル・メリメ(1803–1870)。「コロンバ」の作者</note>
+      </person>
+      <person xml:id="ishiguro-teiichi">
+        <persName>石黒定一</persName>
+        <note>石黒定一。「人生」の章の献辞の宛先</note>
+      </person>
+      <person xml:id="koizumi-yakumo">
+        <persName>小泉八雲</persName>
+        <note>小泉八雲(ラフカディオ・ハーン、1850–1904)</note>
+      </person>
+      <person xml:id="ri-taihaku">
+        <persName>李太白</persName>
+        <note>李白(701–762)。唐の詩人</note>
+      </person>
+      <person xml:id="schopenhauer">
+        <persName>ショオペンハウエル</persName>
+        <note>アルトゥル・ショーペンハウアー(1788–1860)。厭世観への言及</note>
+      </person>
+      <person xml:id="william-james">
+        <persName>ウイルヤム・ジェエムス</persName>
+        <note>ウィリアム・ジェームズ(1842–1910)。アメリカの哲学者・心理学者</note>
+      </person>
+      <person xml:id="rembrandt">
+        <persName>レムブラント</persName>
+        <note>レンブラント・ファン・レイン(1606–1669)。自画像・肖像画への言及</note>
+      </person>
+      <person xml:id="swift">
+        <persName>スウィフト</persName>
+        <note>ジョナサン・スウィフト(1667–1745)。「Swift」の原綴でも言及</note>
+      </person>
+      <person xml:id="leopardi">
+        <persName>レオパルディ</persName>
+        <note>ジャコモ・レオパルディ(1798–1837)。イタリアの厭世詩人</note>
+      </person>
+      <person xml:id="shakyamuni">
+        <persName>悉達多</persName>
+        <note>釈迦(ゴータマ・シッダールタ)。「悉達多」「釈迦無二仏」「仏陀」の表記で言及(宗教上の存在)</note>
+      </person>
+      <person xml:id="channa">
+        <persName>車匿</persName>
+        <note>チャンナ(車匿)。悉達多の出城に随った御者(仏伝上の人物)</note>
+      </person>
+      <person xml:id="yashodhara">
+        <persName>耶輸陀羅</persName>
+        <note>ヤショーダラー(耶輸陀羅)。悉達多の妃(仏伝上の人物)</note>
+      </person>
+      <person xml:id="nandabala">
+        <persName>難陀婆羅</persName>
+        <note>ナンダバーラー(難陀婆羅)。成道前の釈迦に乳糜を供養した牧牛の少女(仏伝上の人物)</note>
+      </person>
+      <person xml:id="napoleon">
+        <persName>ナポレオン</persName>
+        <note>ナポレオン・ボナパルト(1769–1821)</note>
+      </person>
+      <person xml:id="maupassant">
+        <persName>モオパスサン</persName>
+        <note>ギ・ド・モーパッサン(1850–1893)。「恋は死よりも強し」の作者として言及</note>
+      </person>
+      <person xml:id="madame-bovary">
+        <persName>ボヴァリイ夫人</persName>
+        <note>エンマ・ボヴァリー。フローベール「ボヴァリー夫人」の主人公(架空の人物)</note>
+      </person>
+      <person xml:id="byakuren">
+        <persName>白蓮</persName>
+        <note>柳原白蓮(1885–1967)。歌人。1921年の「白蓮事件」の当事者</note>
+      </person>
+      <person xml:id="arishima">
+        <persName>有島</persName>
+        <note>有島武郎(1878–1923)。作家。1923年の心中事件(「有島事件」)への言及</note>
+      </person>
+      <person xml:id="mushanokoji">
+        <persName>武者小路</persName>
+        <note>武者小路実篤(1885–1976)。作家。「武者小路事件」への言及</note>
+      </person>
+      <person xml:id="gourmont">
+        <persName>グルモン</persName>
+        <note>レミ・ド・グールモン(1858–1915)。フランスの批評家</note>
+      </person>
+      <person xml:id="ninomiya-sontoku">
+        <persName>二宮尊徳</persName>
+        <note>二宮尊徳(1787–1856)。「尊徳」の略称でも言及。小学読本の立志譚への言及</note>
+      </person>
+      <person xml:id="plato">
+        <persName>プラトオン</persName>
+        <note>プラトン(前427–前347)。「国家(共和国)」への言及</note>
+      </person>
+      <person xml:id="kanpo">
+        <persName>管鮑</persName>
+        <note>管仲と鮑叔牙の併称。「管鮑の交り」の故事(『史記』)</note>
+      </person>
+      <person xml:id="basho">
+        <persName>芭蕉</persName>
+        <note>松尾芭蕉(1644–1694)。古池の句への言及</note>
+      </person>
+      <person xml:id="chekhov">
+        <persName>チエホフ</persName>
+        <note>アントン・チェーホフ(1860–1904)。手記からの引用</note>
+      </person>
+      <person xml:id="keikichi">
+        <persName>啓吉</persName>
+        <note>啓吉。菊池寛「啓吉の誘惑」の主人公(架空の人物)</note>
+      </person>
+      <person xml:id="kikuchi-kan">
+        <persName>菊池寛</persName>
+        <note>菊池寛(1888–1948)。作家・「文芸春秋」創刊者</note>
+      </person>
+      <person xml:id="kaibara-ekiken">
+        <persName>貝原益軒</persName>
+        <note>貝原益軒(1630–1714)。儒学者・本草学者。「益軒」の略称でも言及</note>
+      </person>
+      <person xml:id="s-m">
+        <persName>Ｓ・Ｍ</persName>
+        <note>「Ｓ・Ｍの智慧」の章に「友人Ｓ・Ｍ」として現れる人物。頭文字のみで、本文からは特定できない</note>
+      </person>
+      <person xml:id="marie-stopes">
+        <persName>メリイ・ストオプス夫人</persName>
+        <note>マリー・ストープス(1880–1958)。イギリスの産児制限運動家・著述家</note>
+      </person>
+      <person xml:id="blanqui">
+        <persName>ブランキ</persName>
+        <note>ルイ・オーギュスト・ブランキ(1805–1881)。フランスの革命家。獄中の宇宙論「天体による永遠」への言及。「Blanqui」の原綴でも言及</note>
+      </person>
+      <person xml:id="miyamoto-musashi">
+        <persName>宮本武蔵</persName>
+        <note>宮本武蔵(1584頃–1645)。「宮本武蔵伝読後」として言及</note>
+      </person>
+      <person xml:id="hugo">
+        <persName>ユウゴオ</persName>
+        <note>ヴィクトル・ユゴー(1802–1885)</note>
+      </person>
+      <person xml:id="dostoevsky">
+        <persName>ドストエフスキイ</persName>
+        <note>フョードル・ドストエフスキー(1821–1881)</note>
+      </person>
+      <person xml:id="flaubert">
+        <persName>フロオベル</persName>
+        <note>ギュスターヴ・フローベール(1821–1880)</note>
+      </person>
+      <person xml:id="poe">
+        <persName>ポオ</persName>
+        <note>エドガー・アラン・ポー(1809–1849)</note>
+      </person>
+      <person xml:id="mori-ogai">
+        <persName>森鴎外</persName>
+        <note>森鴎外(1862–1922)。「鴎外先生」としても言及</note>
+      </person>
+      <person xml:id="sasaki-mosaku">
+        <persName>佐佐木茂索</persName>
+        <note>佐佐木茂索(1894–1966)。作家・のち文藝春秋社社長。「佐佐木君」「佐佐木氏」としても言及</note>
+      </person>
+      <person xml:id="mephistopheles">
+        <persName>Mephistopheles</persName>
+        <note>メフィストフェレス。ゲーテ「ファウスト」の悪魔(伝説・文学上の存在)</note>
+      </person>
+      <person xml:id="kant">
+        <persName>Kant</persName>
+        <note>イマヌエル・カント(1724–1804)。「Kritik(批判)」への言及</note>
+      </person>
+      <person xml:id="george-moore">
+        <persName>ジョオジ・ムアア</persName>
+        <note>ジョージ・ムーア(1852–1933)。アイルランドの作家。「ムアア」の略称でも言及</note>
+      </person>
+      <person xml:id="michelangelo">
+        <persName>ミケル・アンジェロ</persName>
+        <note>ミケランジェロ・ブオナローティ(1475–1564)。「最後の審判」への言及</note>
+      </person>
+      <person xml:id="shaw">
+        <persName>ショウ</persName>
+        <note>ジョージ・バーナード・ショー(1856–1950)。「人と超人と」への言及</note>
+      </person>
+      <person xml:id="mei-lanfang">
+        <persName>梅蘭芳</persName>
+        <note>梅蘭芳(1894–1961)。京劇の女形俳優</note>
+      </person>
+      <person xml:id="songo">
+        <persName>孫呉</persName>
+        <note>孫子と呉子の併称。兵法家二人への言及</note>
+      </person>
+      <person xml:id="kinren">
+        <persName>金蓮</persName>
+        <note>京劇「董家山」の女主人公(架空の人物)</note>
+      </person>
+      <person xml:id="keiei">
+        <persName>桂英</persName>
+        <note>京劇「轅門斬子」の女主人公(架空の人物)</note>
+      </person>
+      <person xml:id="kintei">
+        <persName>金定</persName>
+        <note>京劇「双鎖山」の女主人公(架空の人物)</note>
+      </person>
+      <person xml:id="rika">
+        <persName>梨花</persName>
+        <note>京劇「馬上縁」の女主人公(架空の人物)</note>
+      </person>
+      <person xml:id="hu-shih">
+        <persName>胡適</persName>
+        <note>胡適(1891–1962)。中国の思想家・文学者</note>
+      </person>
+      <person xml:id="achilles">
+        <persName>アキレス</persName>
+        <note>アキレウス。ギリシア神話の英雄(神話上の存在)</note>
+      </person>
+      <person xml:id="kunikida-doppo">
+        <persName>国木田独歩</persName>
+        <note>国木田独歩(1871–1908)</note>
+      </person>
+      <person xml:id="o-seitei">
+        <persName>王世貞</persName>
+        <note>王世貞(1526–1590)。明の文人</note>
+      </person>
+      <person xml:id="sharaku">
+        <persName>東洲斎写楽</persName>
+        <note>東洲斎写楽(生没年不詳、1794–95年に活動)。「写楽」の略称でも言及</note>
+      </person>
+      <person xml:id="alcock">
+        <persName>サア・ルサアフォオド・オルコック</persName>
+        <note>ラザフォード・オールコック(1809–1897)。初代駐日英国公使。「日本に於ける三年間」の著者</note>
+      </person>
+      <person xml:id="lenin">
+        <persName>レニン</persName>
+        <note>ウラジーミル・レーニン(1870–1924)</note>
+      </person>
+      <person xml:id="sarutahiko">
+        <persName>猿田彦命</persName>
+        <note>猿田彦命。記紀神話の神(神話上の存在)</note>
+      </person>
+      <person xml:id="carmen">
+        <persName>カルメン</persName>
+        <note>カルメン。メリメの小説・ビゼーの歌劇の主人公(架空の人物)</note>
+      </person>
+      <person xml:id="werther">
+        <persName>ウエルテル</persName>
+        <note>ウェルテル。ゲーテ「若きウェルテルの悩み」の主人公(架空の人物)</note>
+      </person>
+      <person xml:id="romeo">
+        <persName>ロミオ</persName>
+        <note>ロミオ。シェイクスピア「ロミオとジュリエット」の主人公(架空の人物)</note>
+      </person>
+      <person xml:id="tristan">
+        <persName>トリスタン</persName>
+        <note>トリスタン。中世伝説「トリスタンとイゾルデ」の騎士(伝説上の人物)</note>
+      </person>
+      <person xml:id="balzac">
+        <persName>バルザック</persName>
+        <note>オノレ・ド・バルザック(1799–1850)</note>
+      </person>
+      <person xml:id="hanska">
+        <persName>ハンスカ伯爵夫人</persName>
+        <note>エヴェリーナ・ハンスカ(1801–1882)。バルザックの文通相手、のち妻</note>
+      </person>
+      <person xml:id="marx">
+        <persName>マルクス</persName>
+        <note>カール・マルクス(1818–1883)。唯物史観への言及</note>
+      </person>
+      <person xml:id="copernicus">
+        <persName>コペルニクス</persName>
+        <note>ニコラウス・コペルニクス(1473–1543)。地動説への言及</note>
+      </person>
+      <person xml:id="mussolini">
+        <persName>ムッソリニ</persName>
+        <note>ベニート・ムッソリーニ(1883–1945)</note>
+      </person>
+      <person xml:id="chogyu">
+        <persName>樗牛</persName>
+        <note>高山樗牛(1871–1902)。評論家。「文は人なり」への言及</note>
+      </person>
+      <person xml:id="natsume-soseki">
+        <persName>夏目漱石</persName>
+        <note>夏目漱石(1867–1916)。本文では「夏目先生」。「振っている」「高等遊民」等の語の出自として言及</note>
+      </person>
+      <person xml:id="kume-masao">
+        <persName>久米正雄</persName>
+        <note>久米正雄(1891–1952)。作家。「微苦笑」の造語者として言及</note>
+      </person>
+      <person xml:id="uno-koji">
+        <persName>宇野浩二</persName>
+        <note>宇野浩二(1891–1961)。作家</note>
+      </person>
+      <person xml:id="ike-no-taiga">
+        <persName>池大雅</persName>
+        <note>池大雅(1723–1776)。文人画家。「大雅」の略称でも言及</note>
+      </person>
+      <person xml:id="gyokuran">
+        <persName>玉瀾</persName>
+        <note>池玉瀾(1727–1784)。池大雅の妻。画家・歌人</note>
+      </person>
+      <person xml:id="ogyu-sorai">
+        <persName>荻生徂徠</persName>
+        <note>荻生徂徠(1666–1728)。儒学者</note>
+      </person>
+      <person xml:id="voltaire">
+        <persName>ヴォルテェル</persName>
+        <note>ヴォルテール(1694–1778)。「カンディード」の作者</note>
+      </person>
+      <person xml:id="goethe">
+        <persName>ゲエテ</persName>
+        <note>ヨハン・ヴォルフガング・フォン・ゲーテ(1749–1832)</note>
+      </person>
+      <person xml:id="maeterlinck">
+        <persName>メエテルリンク</persName>
+        <note>モーリス・メーテルリンク(1862–1949)。「知恵と運命」の作者</note>
+      </person>
+      <person xml:id="montaigne">
+        <persName>モンテェエヌ</persName>
+        <note>ミシェル・ド・モンテーニュ(1533–1592)。自殺論への言及</note>
+      </person>
+      <person xml:id="mainlander">
+        <persName>マインレンデル</persName>
+        <note>フィリップ・マインレンダー(1841–1876)。ドイツの厭世哲学者</note>
+      </person>
+      <person xml:id="jupiter">
+        <persName>ジュピタア</persName>
+        <note>ユピテル(ゼウス)。ローマ・ギリシア神話の主神(神話上の存在)</note>
+      </person>
+      <person xml:id="shakespeare">
+        <persName>シェクスピイア</persName>
+        <note>ウィリアム・シェイクスピア(1564–1616)</note>
+      </person>
+      <person xml:id="chikamatsu">
+        <persName>近松門左衛門</persName>
+        <note>近松門左衛門(1653–1725)</note>
+      </person>
+      <person xml:id="biryukov">
+        <persName>ビュルコフ</persName>
+        <note>パーヴェル・ビリュコーフ(1860–1931)。トルストイの伝記作者</note>
+      </person>
+      <person xml:id="tolstoy">
+        <persName>トルストイ</persName>
+        <note>レフ・トルストイ(1828–1910)。「わが懺悔」「わが宗教」への言及</note>
+      </person>
+      <person xml:id="strindberg">
+        <persName>ストリントベリイ</persName>
+        <note>アウグスト・ストリンドベリ(1849–1912)。「伝説」への言及</note>
+      </person>
+      <person xml:id="satomi-ton">
+        <persName>里見弴</persName>
+        <note>里見弴(1888–1983)。作家。「里見君」としても言及</note>
+      </person>
+      <person xml:id="koro">
+        <persName>黄老</persName>
+        <note>黄帝と老子の併称。道家(黄老思想)を指す。「黄老の学者」として言及</note>
+      </person>
+      <person xml:id="person-t">
+        <persName>Ｔ</persName>
+        <note>「実例」として現れる人物。頭文字のみで、本文からは特定できない</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="japan">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>日本。国名・概値</note>
+      </place>
+      <place xml:id="china">
+        <placeName>支那</placeName>
+        <location><geo>35.8617 104.1954</geo></location>
+        <note>中国(本文の表記は「支那」)。国名・概値</note>
+      </place>
+      <place xml:id="france">
+        <placeName>仏蘭西</placeName>
+        <location><geo>46.6034 1.8883</geo></location>
+        <note>フランス。「仏蘭西」「フランス」の二表記で言及。国名・概値</note>
+      </place>
+      <place xml:id="england">
+        <placeName>英吉利</placeName>
+        <location><geo>52.3555 -1.1743</geo></location>
+        <note>イギリス(イングランド)。国名・概値</note>
+      </place>
+      <place xml:id="greece">
+        <placeName>希臘</placeName>
+        <location><geo>39.0742 21.8243</geo></location>
+        <note>ギリシア。国名・概値</note>
+      </place>
+      <place xml:id="egypt">
+        <placeName>エジプト</placeName>
+        <location><geo>26.8206 30.8025</geo></location>
+        <note>エジプト。クレオパトラの王国としての言及。国名・概値</note>
+      </place>
+      <place xml:id="america">
+        <placeName>亜米利加</placeName>
+        <location><geo>37.0902 -95.7129</geo></location>
+        <note>アメリカ合衆国。国名・概値</note>
+      </place>
+      <place xml:id="panama">
+        <placeName>パナマ</placeName>
+        <location><geo>8.538 -80.7821</geo></location>
+        <note>パナマ。日本人労働者の退去命令への言及。国名・概値</note>
+      </place>
+      <place xml:id="italy">
+        <placeName>伊太利</placeName>
+        <location><geo>41.8719 12.5674</geo></location>
+        <note>イタリア。国名・概値</note>
+      </place>
+      <place xml:id="soviet">
+        <placeName>ソヴィエット</placeName>
+        <location><geo>55.7558 37.6173</geo></location>
+        <note>ソヴィエト連邦。モスクワを代表点とする概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京。関東大震災の被災地としての言及。東京駅付近を代表点とする概値</note>
+      </place>
+      <place xml:id="ginza">
+        <placeName>銀座</placeName>
+        <location><geo>35.6717 139.765</geo></location>
+        <note>東京・銀座。概値</note>
+      </place>
+      <place xml:id="senju">
+        <placeName>千住</placeName>
+        <location><geo>35.75 139.802</geo></location>
+        <note>東京・千住(現在の足立区・荒川区の境界付近)。概値</note>
+      </place>
+      <place xml:id="mitsukoshi">
+        <placeName>三越</placeName>
+        <location><geo>35.6862 139.7735</geo></location>
+        <note>三越(日本橋本店)。概値</note>
+      </place>
+      <place xml:id="yushukan">
+        <placeName>遊就館</placeName>
+        <location><geo>35.6947 139.744</geo></location>
+        <note>遊就館。靖国神社境内の軍事博物館。概値</note>
+      </place>
+      <place xml:id="tozenji">
+        <placeName>東禅寺</placeName>
+        <location><geo>35.6337 139.7405</geo></location>
+        <note>東禅寺(東京都港区高輪)。幕末に英国公使館が置かれ、1861年に浪士の襲撃(東禅寺事件)を受けた。概値</note>
+      </place>
+      <place xml:id="ninnaji">
+        <placeName>仁和寺</placeName>
+        <location><geo>35.031 135.7137</geo></location>
+        <note>仁和寺(京都市右京区)。『徒然草』の「仁和寺の法師」への言及。概値</note>
+      </place>
+      <place xml:id="rakuyo">
+        <placeName>洛陽</placeName>
+        <location><geo>34.6197 112.454</geo></location>
+        <note>洛陽(中国河南省)。概値</note>
+      </place>
+      <place xml:id="rozan">
+        <placeName>廬山</placeName>
+        <location><geo>29.55 115.9833</geo></location>
+        <note>廬山(中国江西省)。概値</note>
+      </place>
+      <place xml:id="tonko">
+        <placeName>敦煌</placeName>
+        <location><geo>40.1421 94.6618</geo></location>
+        <note>敦煌(中国甘粛省)。発掘品への言及。概値</note>
+      </place>
+      <place xml:id="nazareth">
+        <placeName>ナザレ</placeName>
+        <location><geo>32.6996 35.3035</geo></location>
+        <note>ナザレ(イスラエル)。「ナザレの大工の子」=イエスへの言及。概値</note>
+      </place>
+      <place xml:id="marengo">
+        <placeName>マレンゴオ</placeName>
+        <location><geo>44.8667 8.6667</geo></location>
+        <note>マレンゴ(イタリア・ピエモンテ州)。1800年のマレンゴの戦いの古戦場。概値</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="gakido">
+        <placeName>餓鬼道</placeName>
+        <note>仏教的世界観上の場所(六道の一つ)。座標なし</note>
+      </place>
+      <place xml:id="harinoyama">
+        <placeName>針の山</placeName>
+        <note>地獄の針の山。仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="chinoike">
+        <placeName>血の池</placeName>
+        <note>地獄の血の池。仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="tengoku">
+        <placeName>天国</placeName>
+        <note>宗教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="keihan">
+        <placeName>京阪</placeName>
+        <location><geo>34.85 135.63</geo></location>
+        <note>京阪(京都・大阪地方)。本文は「京阪辺」。地域名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>侏儒の言葉</head>
+        <p>「<ruby><rb>侏儒</rb><rt>しゅじゅ</rt></ruby>の言葉」の序</p>
+        <p>「侏儒の言葉」は<ruby><rb>必</rb><rt>かならず</rt></ruby>しもわたしの思想を伝えるものではない。唯わたしの思想の変化を時々<ruby><rb>窺</rb><rt>うかが</rt></ruby>わせるのに過ぎぬものである。一本の草よりも一すじの<ruby><rb>蔓草</rb><rt>つるくさ</rt></ruby>、――しかもその蔓草は幾すじも蔓を伸ばしているかも知れない。</p>
+        <p>星</p>
+        <p>太陽の下に新しきことなしとは古人の道破した言葉である。しかし新しいことのないのは独り太陽の下ばかりではない。</p>
+        <p>天文学者の説によれば、ヘラクレス星群を発した光は我我の地球へ達するのに三万六千年を要するそうである。が、ヘラクレス星群と<ruby><rb>雖</rb><rt>いえど</rt></ruby>も、永久に輝いていることは出来ない。何時か一度は冷灰のように、美しい光を失ってしまう。のみならず死は何処へ行っても常に生を<ruby><rb>孕</rb><rt>はら</rt></ruby>んでいる。光を失ったヘラクレス星群も無辺の天をさまよう内に、都合の好い機会を得さえすれば、一団の星雲と変化するであろう。そうすれば又新しい星は続々と其処に生まれるのである。</p>
+        <p>宇宙の大に比べれば、太陽も一点の<ruby><rb>燐火</rb><rt>りんか</rt></ruby>に過ぎない。<ruby><rb>況</rb><rt>いわん</rt></ruby>や我我の地球をやである。しかし遠い宇宙の極、銀河のほとりに起っていることも、実はこの泥団の上に起っていることと変りはない。生死は運動の方則のもとに、絶えず循環しているのである。そう云うことを考えると、天上に散在する無数の星にも多少の同情を禁じ得ない。いや、明滅する星の光は我我と同じ感情を表わしているようにも思われるのである。この点でも詩人は何ものよりも先に高々と真理をうたい上げた。</p>
+        <p><ruby><rb>真砂</rb><rt>まさご</rt></ruby>なす数なき星のその中に<ruby><rb>吾</rb><rt>われ</rt></ruby>に向ひて光る星あり</p>
+        <p>しかし星も我我のように流転を<ruby><rb>閲</rb><rt>けみ</rt></ruby>すると云うことは――<ruby><rb>兎</rb><rt>と</rt></ruby>に<ruby><rb>角</rb><rt>かく</rt></ruby>退屈でないことはあるまい。</p>
+        <p>鼻</p>
+        <p><persName ref="#cleopatra">クレオパトラ</persName>の鼻が曲っていたとすれば、世界の歴史はその為に一変していたかも知れないとは名高い<persName ref="#pascal">パスカル</persName>の警句である。しかし恋人と云うものは滅多に実相を見るものではない。いや、我我の自己<ruby><rb>欺瞞</rb><rt>ぎまん</rt></ruby>は一たび恋愛に陥ったが最後、最も完全に行われるのである。</p>
+        <p><persName ref="#antonius">アントニイ</persName>もそう云う例に<ruby><rb>洩</rb><rt>も</rt></ruby>れず、<persName ref="#cleopatra">クレオパトラ</persName>の鼻が曲っていたとすれば、努めてそれを見まいとしたであろう。又見ずにはいられない場合もその短所を補うべき何か他の長所を探したであろう。何か他の長所と云えば、天下に我我の恋人位、無数の長所を<ruby><rb>具</rb><rt>そな</rt></ruby>えた女性は一人もいないのに相違ない。<persName ref="#antonius">アントニイ</persName>もきっと我我同様、<persName ref="#cleopatra">クレオパトラ</persName>の眼とか唇とかに、あり余る償いを見出したであろう。その上又例の「彼女の心」！　実際我我の愛する女性は古往今来飽き飽きする程、素ばらしい心の持ち主である。のみならず彼女の服装とか、或は彼女の財産とか、或は又彼女の社会的地位とか、――それらも長所にならないことはない。更に甚しい場合を挙げれば、以前或名士に愛されたと云う事実<ruby><rb>乃至</rb><rt>ないし</rt></ruby>風評さえ、長所の一つに数えられるのである。しかもあの<persName ref="#cleopatra">クレオパトラ</persName>は<ruby><rb>豪奢</rb><rt>ごうしゃ</rt></ruby>と神秘とに<ruby><rb>充</rb><rt>み</rt></ruby>ち<ruby><rb>満</rb><rt>み</rt></ruby>ちた<placeName ref="#egypt">エジプト</placeName>の最後の女王ではないか？　香の煙の立ち昇る中に、冠の珠玉でも光らせながら、<ruby><rb>蓮</rb><rt>はす</rt></ruby>の花か何か<ruby><rb>弄</rb><rt>もてあそ</rt></ruby>んでいれば、多少の鼻の曲りなどは何人の眼にも触れなかったであろう。況や<persName ref="#antonius">アントニイ</persName>の眼をやである。</p>
+        <p>こう云う我我の自己欺瞞はひとり恋愛に限ったことではない。我々は多少の相違さえ除けば、大抵我我の欲するままに、いろいろ実相を塗り変えている。たとえば歯科医の看板にしても、それが我我の眼にはいるのは看板の存在そのものよりも、看板のあることを欲する心、――<ruby><rb>牽</rb><rt>ひ</rt></ruby>いては我々の歯痛ではないか？　<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>我我の歯痛などは世界の歴史には没交渉であろう。しかしこう云う自己欺瞞は民心を知りたがる政治家にも、敵状を知りたがる軍人にも、或は又財況を知りたがる実業家にも同じようにきっと起るのである。わたしはこれを修正すべき理智の存在を否みはしない。同時に又百般の人事を<ruby><rb>統</rb><rt>す</rt></ruby>べる「偶然」の存在も認めるものである。が、あらゆる熱情は理性の存在を忘れ易い。「偶然」は云わば神意である。すると我我の自己欺瞞は世界の歴史を左右すべき、最も永久な力かも知れない。</p>
+        <p>つまり二千余年の歴史は<ruby><rb>眇</rb><rt>びょう</rt></ruby>たる一<persName ref="#cleopatra">クレオパトラ</persName>の鼻の如何に<ruby><rb>依</rb><rt>よ</rt></ruby>ったのではない。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ地上に遍満した我我の<ruby><rb>愚昧</rb><rt>ぐまい</rt></ruby>に依ったのである。<ruby><rb>哂</rb><rt>わら</rt></ruby>うべき、――しかし壮厳な我我の愚昧に依ったのである。</p>
+        <p>修身</p>
+        <p>道徳は便宜の異名である。「左側通行」と似たものである。</p>
+        <p>＊</p>
+        <p>道徳の与えたる恩恵は時間と労力との節約である。道徳の与える損害は完全なる良心の<ruby><rb>麻痺</rb><rt>まひ</rt></ruby>である。</p>
+        <p>＊</p>
+        <p><ruby><rb>妄</rb><rt>みだり</rt></ruby>に道徳に反するものは経済の念に乏しいものである。妄に道徳に屈するものは<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>ものか怠けものである。</p>
+        <p>＊</p>
+        <p>我我を支配する道徳は資本主義に毒された封建時代の道徳である。我我は<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど損害の外に、何の恩恵にも浴していない。</p>
+        <p>＊</p>
+        <p>強者は道徳を<ruby><rb>蹂躙</rb><rt>じゅうりん</rt></ruby>するであろう。弱者は又道徳に<ruby><rb>愛撫</rb><rt>あいぶ</rt></ruby>されるであろう。道徳の迫害を受けるものは常に強弱の中間者である。</p>
+        <p>＊</p>
+        <p>道徳は常に古着である。</p>
+        <p>＊</p>
+        <p>良心は我我の<ruby><rb>口髭</rb><rt>くちひげ</rt></ruby>のように年齢と共に生ずるものではない。我我は良心を得る為にも若干の訓練を要するのである。</p>
+        <p>＊</p>
+        <p>一国民の九割強は一生良心を持たぬものである。</p>
+        <p>＊</p>
+        <p>我我の悲劇は年少の為、或は訓練の足りない為、まだ良心を<ruby><rb>捉</rb><rt>とら</rt></ruby>え得ぬ前に、破廉恥漢の非難を受けることである。</p>
+        <p>我我の喜劇は年少の為、或は訓練の足りない為、破廉恥漢の非難を受けた後に、やっと良心を捉えることである。</p>
+        <p>＊</p>
+        <p>良心とは厳粛なる趣味である。</p>
+        <p>＊</p>
+        <p>良心は道徳を造るかも知れぬ。しかし道徳は<ruby><rb>未</rb><rt>いま</rt></ruby>だ<ruby><rb>甞</rb><rt>かつ</rt></ruby>て、良心の良の字も造ったことはない。</p>
+        <p>＊</p>
+        <p>良心もあらゆる趣味のように、病的なる愛好者を持っている。そう云う愛好者は十中八九、<ruby><rb>聡明</rb><rt>そうめい</rt></ruby>なる貴族か富豪かである。</p>
+        <p>好悪</p>
+        <p>わたしは古い酒を愛するように、古い快楽説を愛するものである。我我の行為を決するものは善でもなければ悪でもない。<ruby><rb>唯</rb><rt>ただ</rt></ruby>我我の好悪である。或は我我の快不快である。そうとしかわたしには考えられない。</p>
+        <p>ではなぜ我我は極寒の天にも、<ruby><rb>将</rb><rt>まさ</rt></ruby>に<ruby><rb>溺</rb><rt>おぼ</rt></ruby>れんとする幼児を見る時、進んで水に入るのであるか？　救うことを快とするからである。では水に入る不快を避け、幼児を救う快を取るのは何の尺度に<ruby><rb>依</rb><rt>よ</rt></ruby>ったのであろう？　より大きい快を選んだのである。しかし肉体的快不快と精神的快不快とは同一の尺度に依らぬ<ruby><rb>筈</rb><rt>はず</rt></ruby>である。いや、この二つの快不快は全然<ruby><rb>相容</rb><rt>あいい</rt></ruby>れぬものではない。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ<ruby><rb>鹹水</rb><rt>かんすい</rt></ruby>と淡水とのように、一つに<ruby><rb>融</rb><rt>と</rt></ruby>け<ruby><rb>合</rb><rt>あ</rt></ruby>っているものである。現に精神的教養を受けない<placeName ref="#keihan">京阪</placeName>辺の紳士諸君はすっぽんの汁を<ruby><rb>啜</rb><rt>すす</rt></ruby>った後、鰻を菜に飯を食うさえ、無上の快に数えているではないか？　<ruby><rb>且</rb><rt>かつ</rt></ruby>又水や寒気などにも肉体的享楽の存することは寒中水泳の示すところである。なおこの間の消息を疑うものはマソヒズムの場合を考えるが好い。あの<ruby><rb>呪</rb><rt>のろ</rt></ruby>うべきマソヒズムはこう云う肉体的快不快の外見上の倒錯に常習的傾向の加わったものである。わたしの信ずるところによれば、或は柱頭の苦行を喜び、或は火裏の殉教を愛した<ruby><rb>基督教</rb><rt>キリストきょう</rt></ruby>の聖人たちは大抵マソヒズムに<ruby><rb>罹</rb><rt>かか</rt></ruby>っていたらしい。</p>
+        <p>我我の行為を決するものは昔の<ruby><rb>希臘人</rb><rt>ギリシアじん</rt></ruby>の云った通り、好悪の外にないのである。我我は人生の泉から、最大の味を<ruby><rb>汲</rb><rt>く</rt></ruby>み<ruby><rb>取</rb><rt>と</rt></ruby>らねばならぬ。『パリサイの徒の如く、悲しき面もちをなすこと<ruby><rb>勿</rb><rt>なか</rt></ruby>れ。』<persName ref="#jesus"><ruby><rb>耶蘇</rb><rt>やそ</rt></ruby></persName>さえ既にそう云ったではないか。賢人とは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby><ruby><rb>荊蕀</rb><rt>けいきょく</rt></ruby>の<ruby><rb>路</rb><rt>みち</rt></ruby>にも、<ruby><rb>薔薇</rb><rt>ばら</rt></ruby>の花を咲かせるもののことである。</p>
+        <p>侏儒の祈り</p>
+        <p>わたしはこの<ruby><rb>綵衣</rb><rt>さいい</rt></ruby>を<ruby><rb>纏</rb><rt>まと</rt></ruby>い、この<ruby><rb>筋斗</rb><rt>きんと</rt></ruby>の戯を献じ、この太平を楽しんでいれば不足のない<ruby><rb>侏儒</rb><rt>しゅじゅ</rt></ruby>でございます。どうかわたしの願いをおかなえ下さいまし。</p>
+        <p>どうか一粒の米すらない程、貧乏にして下さいますな。どうか又<ruby><rb>熊掌</rb><rt>ゆうしょう</rt></ruby>にさえ飽き足りる程、富裕にもして下さいますな。</p>
+        <p>どうか採桑の農婦すら嫌うようにして下さいますな。どうか又後宮の麗人さえ愛するようにもして下さいますな。</p>
+        <p>どうか<ruby><rb>菽麦</rb><rt>しゅくばく</rt></ruby>すら弁ぜぬ程、<ruby><rb>愚昧</rb><rt>ぐまい</rt></ruby>にして下さいますな。どうか又雲気さえ察する程、<ruby><rb>聡明</rb><rt>そうめい</rt></ruby>にもして下さいますな。</p>
+        <p>とりわけどうか勇ましい英雄にして下さいますな。わたしは現に時とすると、<ruby><rb>攀</rb><rt>よ</rt></ruby>じ難い<ruby><rb>峯</rb><rt>みね</rt></ruby>の頂を窮め、越え難い海の<ruby><rb>浪</rb><rt>なみ</rt></ruby>を渡り――云わば不可能を可能にする夢を見ることがございます。そう云う夢を見ている時程、空恐しいことはございません。わたしは竜と闘うように、この夢と闘うのに苦しんで居ります。どうか英雄とならぬように――英雄の志を起さぬように力のないわたしをお守り下さいまし。</p>
+        <p>わたしはこの春酒に酔い、この<ruby><rb>金鏤</rb><rt>きんる</rt></ruby>の歌を<ruby><rb>誦</rb><rt>しょう</rt></ruby>し、この好日を喜んでいれば不足のない侏儒でございます。</p>
+        <p>神秘主義</p>
+        <p>神秘主義は文明の為に衰退し去るものではない。寧ろ文明は神秘主義に長足の進歩を与えるものである。</p>
+        <p>古人は我々人間の先祖は<persName ref="#adam">アダム</persName>であると信じていた。と云う意味は創世記を信じていたと云うことである。今人は既に中学生さえ、猿であると信じている。と云う意味は<persName ref="#darwin">ダアウイン</persName>の著書を信じていると云うことである。つまり書物を信ずることは今人も古人も変りはない。その上古人は少くとも創世記に目を<ruby><rb>曝</rb><rt>さ</rt></ruby>らしていた。今人は少数の専門家を除き、<persName ref="#darwin">ダアウイン</persName>の著書も読まぬ癖に、<ruby><rb>恬然</rb><rt>てんぜん</rt></ruby>とその説を信じている。猿を先祖とすることは<persName ref="#jehovah">エホバ</persName>の息吹きのかかった土、――<persName ref="#adam">アダム</persName>を先祖とすることよりも、光彩に富んだ信念ではない。しかも今人は<ruby><rb>悉</rb><rt>ことごとく</rt></ruby>こう云う信念に安んじている。</p>
+        <p>これは進化論ばかりではない。地球は円いと云うことさえ、ほんとうに知っているものは少数である。大多数は何時か教えられたように、円いと一図に信じているのに過ぎない。なぜ円いかと問いつめて見れば、上愚は総理大臣から下愚は腰弁に至る迄、説明の出来ないことは事実である。</p>
+        <p>次ぎにもう一つ例を挙げれば、今人は誰も古人のように幽霊の実在を信ずるものはない。しかし幽霊を見たと云う話は<ruby><rb>未</rb><rt>いまだ</rt></ruby>に時々伝えられる。ではなぜその話を信じないのか？　幽霊などを見る者は迷信に<ruby><rb>囚</rb><rt>とら</rt></ruby>われて居るからである。ではなぜ迷信に捉われているのか？　幽霊などを見るからである。こう云う今人の論法は<ruby><rb>勿論</rb><rt>もちろん</rt></ruby><ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>循環論法に過ぎない。</p>
+        <p><ruby><rb>況</rb><rt>いわん</rt></ruby>や更にこみ入った問題は全然信念の上に立脚している。我々は理性に耳を借さない。いや、理性を超越した何物かのみに耳を借すのである。何物かに、――わたしは「何物か」と云う以前に、ふさわしい名前さえ発見出来ない。もし強いて名づけるとすれば、<ruby><rb>薔薇</rb><rt>ばら</rt></ruby>とか魚とか<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>とか、象徴を用うるばかりである。たとえば我々の帽子でも好い。我々は羽根のついた帽子をかぶらず、ソフトや中折をかぶるように、祖先の猿だったことを信じ、幽霊の実在しないことを信じ、地球の円いことを信じている。もし<ruby><rb>嘘</rb><rt>うそ</rt></ruby>と思う人は<placeName ref="#japan">日本</placeName>に於ける<persName ref="#einstein">アインシュタイン</persName>博士、或はその相対性原理の歓迎されたことを考えるが好い。あれは神秘主義の祭である。不可解なる荘厳の儀式である。何の為に熱狂したのかは「改造」社主の<persName ref="#yamamoto-sanehiko">山本</persName>氏さえ知らない。</p>
+        <p>すると偉大なる神秘主義者は<persName ref="#swedenborg">スウエデンボルグ</persName>だの<persName ref="#boehme">ベエメ</persName>だのではない。実は我々文明の民である。同時に又我々の信念も<placeName ref="#mitsukoshi">三越</placeName>の飾り窓と選ぶところはない。我々の信念を支配するものは常に捉え難い流行である。或は神意に似た好悪である。実際又<persName ref="#seishi"><ruby><rb>西施</rb><rt>せいし</rt></ruby></persName>や<persName ref="#ryuyokun"><ruby><rb>竜陽君</rb><rt>りゅうようくん</rt></ruby></persName>の祖先もやはり猿だったと考えることは多少の満足を与えないでもない。</p>
+        <p>自由意志と宿命と</p>
+        <p><ruby><rb>兎</rb><rt>と</rt></ruby>に<ruby><rb>角</rb><rt>かく</rt></ruby>宿命を信ずれば、罪悪なるものの存在しない為に懲罰と云う意味も失われるから、罪人に対する我我の態度は寛大になるのに相違ない。同時に又自由意志を信ずれば責任の観念を生ずる為に、良心の<ruby><rb>麻痺</rb><rt>まひ</rt></ruby>を免れるから、我我自身に対する我我の態度は厳粛になるのに相違ない。ではいずれに従おうとするのか？</p>
+        <p>わたしは恬然と答えたい。半ばは自由意志を信じ、半ばは宿命を信ずべきである。或は半ばは自由意志を疑い、半ばは宿命を疑うべきである。なぜと云えば我我は我我に負わされた宿命により、我我の妻を<ruby><rb>娶</rb><rt>めと</rt></ruby>ったではないか？　同時に又我我は我我に恵まれた自由意志により、必ずしも妻の注文通り、羽織や帯を買ってやらぬではないか？</p>
+        <p>自由意志と宿命とに関らず、神と悪魔、美と醜、勇敢と<ruby><rb>怯懦</rb><rt>きょうだ</rt></ruby>、理性と信仰、――その他あらゆる<ruby><rb>天秤</rb><rt>てんびん</rt></ruby>の両端にはこう云う態度をとるべきである。古人はこの態度を中庸と呼んだ。中庸とは<ruby><rb>英吉利語</rb><rt>イギリスご</rt></ruby>の good sense である。わたしの信ずるところによれば、グッドセンスを待たない限り、如何なる幸福も得ることは出来ない。もしそれでも得られるとすれば、炎天に炭火を<ruby><rb>擁</rb><rt>よう</rt></ruby>したり、大寒に<ruby><rb>団扇</rb><rt>うちわ</rt></ruby>を<ruby><rb>揮</rb><rt>ふる</rt></ruby>ったりする<ruby><rb>痩</rb><rt>や</rt></ruby>せ我慢の幸福ばかりである。</p>
+        <p>小児</p>
+        <p>軍人は小児に近いものである。英雄らしい身振を喜んだり、所謂光栄を好んだりするのは今更此処に云う必要はない。機械的訓練を貴んだり、動物的勇気を重んじたりするのも小学校にのみ見得る現象である。<ruby><rb>殺戮</rb><rt>さつりく</rt></ruby>を何とも思わぬなどは一層小児と選ぶところはない。殊に小児と似ているのは<ruby><rb>喇叭</rb><rt>らっぱ</rt></ruby>や軍歌に皷舞されれば、何の為に戦うかも問わず、<ruby><rb>欣然</rb><rt>きんぜん</rt></ruby>と敵に当ることである。</p>
+        <p>この故に軍人の誇りとするものは必ず小児の玩具に似ている。<ruby><rb>緋縅</rb><rt>ひおどし</rt></ruby>の<ruby><rb>鎧</rb><rt>よろい</rt></ruby>や<ruby><rb>鍬形</rb><rt>くわがた</rt></ruby>の<ruby><rb>兜</rb><rt>かぶと</rt></ruby>は成人の趣味にかなった者ではない。勲章も――わたしには実際不思議である。なぜ軍人は酒にも酔わずに、勲章を下げて歩かれるのであろう？</p>
+        <p>武器</p>
+        <p>正義は武器に似たものである。武器は金を出しさえすれば、敵にも味方にも買われるであろう。正義も理窟をつけさえすれば、敵にも味方にも買われるものである。古来「正義の敵」と云う名は砲弾のように投げかわされた。しかし修辞につりこまれなければ、どちらがほんとうの「正義の敵」だか、滅多に判然したためしはない。</p>
+        <p>日本人の労働者は単に日本人と生まれたが故に、<placeName ref="#panama">パナマ</placeName>から退去を命ぜられた。これは正義に反している。<placeName ref="#america"><ruby><rb>亜米利加</rb><rt>アメリカ</rt></ruby></placeName>は新聞紙の伝える通り、「正義の敵」と云わなければならぬ。しかし支那人の労働者も単に支那人と生まれたが故に、<placeName ref="#senju"><ruby><rb>千住</rb><rt>せんじゅ</rt></ruby></placeName>から退去を命ぜられた。これも正義に反している。<placeName ref="#japan">日本</placeName>は新聞紙の伝える通り、――いや、<placeName ref="#japan">日本</placeName>は二千年来、常に「正義の味方」である。正義はまだ<placeName ref="#japan">日本</placeName>の利害と一度も矛盾はしなかったらしい。</p>
+        <p>武器それ自身は恐れるに足りない。恐れるのは武人の<ruby><rb>技倆</rb><rt>ぎりょう</rt></ruby>である。正義それ自身も恐れるに足りない。恐れるのは<ruby><rb>煽動家</rb><rt>せんどうか</rt></ruby>の雄弁である。<persName ref="#buko"><ruby><rb>武后</rb><rt>ぶこう</rt></ruby></persName>は人天を顧みず、冷然と正義を<ruby><rb>蹂躙</rb><rt>じゅうりん</rt></ruby>した。しかし<persName ref="#ri-keigyo"><ruby><rb>李敬業</rb><rt>りけいぎょう</rt></ruby></persName>の乱に当り、<persName ref="#rakuhinno"><ruby><rb>駱賓王</rb><rt>らくひんのう</rt></ruby></persName>の<ruby><rb>檄</rb><rt>げき</rt></ruby>を読んだ時には色を失うことを免れなかった。「一抔土未乾　六尺孤安在」の双句は天成のデマゴオクを待たない限り、発し得ない名言だったからである。</p>
+        <p>わたしは歴史を翻えす度に、<placeName ref="#yushukan">遊就館</placeName>を<ruby><rb>想</rb><rt>おも</rt></ruby>うことを禁じ得ない。過去の廊下には薄暗い中にさまざまの正義が陳列してある。青竜刀に似ているのは<ruby><rb>儒教</rb><rt>じゅきょう</rt></ruby>の教える正義であろう。騎士の<ruby><rb>槍</rb><rt>やり</rt></ruby>に似ているのは<ruby><rb>基督教</rb><rt>キリストきょう</rt></ruby>の教える正義であろう。此処に太い<ruby><rb>棍棒</rb><rt>こんぼう</rt></ruby>がある。これは社会主義者の正義であろう。彼処に房のついた長剣がある。あれは国家主義者の正義であろう。わたしはそう云う武器を見ながら、幾多の戦いを想像し、おのずから<ruby><rb>心悸</rb><rt>しんき</rt></ruby>の高まることがある、しかしまだ幸か不幸か、わたし自身その武器の一つを<ruby><rb>執</rb><rt>と</rt></ruby>りたいと思った記憶はない。</p>
+        <p>尊王</p>
+        <p>十七世紀の<placeName ref="#france"><ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby></placeName>の話である。或日 <persName ref="#duc-de-bourgogne">Duc de Bourgogne</persName> が <persName ref="#abbe-choisy">Abbé Choisy</persName> にこんなことを尋ねた。<persName ref="#charles-vi">シャルル六世</persName>は気違いだった。その意味を<ruby><rb>婉曲</rb><rt>えんきょく</rt></ruby>に伝える為には、何と云えば好いのであろう？　<persName ref="#abbe-choisy">アベ</persName>は言下に返答した。「わたしならば<ruby><rb>唯</rb><rt>ただ</rt></ruby>こう申します。<persName ref="#charles-vi">シャルル六世</persName>は気違いだったと。」<persName ref="#abbe-choisy">アベ・ショアズイ</persName>はこの答を一生の冒険の中に数え、後のちまでも自慢にしていたそうである。</p>
+        <p>十七世紀の<placeName ref="#france">仏蘭西</placeName>はこう云う逸話の残っている程、尊王の精神に富んでいたと云う。しかし二十世紀の<placeName ref="#japan">日本</placeName>も尊王の精神に富んでいることは当時の<placeName ref="#france">仏蘭西</placeName>に劣らなそうである。まことに、――<ruby><rb>欣幸</rb><rt>きんこう</rt></ruby>の至りに堪えない。</p>
+        <p>創作</p>
+        <p>芸術家は何時も意識的に彼の作品を作るのかも知れない。しかし作品そのものを見れば、作品の美醜の一半は芸術家の意識を超越した神秘の世界に存している。一半？　或は大半と云っても好い。</p>
+        <p>我我は妙に問うに落ちず、語るに落ちるものである。我我の魂はおのずから作品に<ruby><rb>露</rb><rt>あらわ</rt></ruby>るることを免れない。一刀一拝した古人の用意はこの無意識の境に対する<ruby><rb>畏怖</rb><rt>いふ</rt></ruby>を語ってはいないであろうか？</p>
+        <p>創作は常に冒険である。<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>は人力を尽した後、天命に<ruby><rb>委</rb><rt>ま</rt></ruby>かせるより仕方はない。</p>
+        <p>少時学語苦難円　唯道工夫半未全</p>
+        <p>到老始知非力取　三分人事七分天</p>
+        <p><persName ref="#cho-ohoku"><ruby><rb>趙甌北</rb><rt>ちょうおうほく</rt></ruby></persName>の「論詩」の七絶はこの間の消息を伝えたものであろう。芸術は妙に底の知れない<ruby><rb>凄</rb><rt>すご</rt></ruby>みを帯びているものである。我我も金を欲しがらなければ、又名聞を好まなければ、最後に<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど病的な創作熱に苦しまなければ、この無気味な芸術などと格闘する勇気は起らなかったかも知れない。</p>
+        <p>鑑賞</p>
+        <p>芸術の鑑賞は芸術家自身と鑑賞家との協力である。云わば鑑賞家は一つの作品を課題に彼自身の創作を試みるのに過ぎない。この故に如何なる時代にも名声を失わない作品は必ず種々の鑑賞を可能にする特色を<ruby><rb>具</rb><rt>そな</rt></ruby>えている。しかし種々の鑑賞を可能にすると云う意味は<persName ref="#anatole-france">アナトオル・フランス</persName>の云うように、何処か<ruby><rb>曖昧</rb><rt>あいまい</rt></ruby>に出来ている為、どう云う解釈を加えるのもたやすいと云う意味ではあるまい。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ<placeName ref="#rozan"><ruby><rb>廬山</rb><rt>ろざん</rt></ruby></placeName>の<ruby><rb>峯々</rb><rt>みねみね</rt></ruby>のように、種々の立ち場から鑑賞され得る多面性を具えているのであろう。</p>
+        <p>古典</p>
+        <p>古典の作者の幸福なる<ruby><rb>所以</rb><rt>ゆえん</rt></ruby>は<ruby><rb>兎</rb><rt>と</rt></ruby>に<ruby><rb>角</rb><rt>かく</rt></ruby>彼等の死んでいることである。</p>
+        <p>又</p>
+        <p>我我の――或は諸君の幸福なる所以も兎に角彼等の死んでいることである。</p>
+        <p>幻滅した芸術家</p>
+        <p>或一群の芸術家は幻滅の世界に住している。彼等は愛を信じない。良心なるものをも信じない。唯昔の苦行者のように無何有の砂漠を家としている。その点は成程気の毒かも知れない。しかし美しい<ruby><rb>蜃気楼</rb><rt>しんきろう</rt></ruby>は砂漠の天にのみ生ずるものである。百般の人事に幻滅した彼等も大抵芸術には幻滅していない。いや、芸術と云いさえすれば、常人の知らない金色の夢は<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち空中に出現するのである。彼等も実は思いの外、幸福な瞬間を持たぬ<ruby><rb>訣</rb><rt>わけ</rt></ruby>ではない。</p>
+        <p>告白</p>
+        <p>完全に自己を告白することは何人にも出来ることではない。同時に又自己を告白せずには如何なる表現も出来るものではない。</p>
+        <p><persName ref="#rousseau">ルッソオ</persName>は告白を好んだ人である。しかし赤裸々の彼自身は<ruby><rb>懺悔録</rb><rt>ざんげろく</rt></ruby>の中にも発見出来ない。<persName ref="#merimee">メリメ</persName>は告白を嫌った人である。しかし「コロンバ」は<ruby><rb>隠約</rb><rt>いんやく</rt></ruby>の間に彼自身を語ってはいないであろうか？　所詮告白文学とその他の文学との境界線は見かけほどはっきりはしていないのである。</p>
+        <p>人生</p>
+        <p>――<persName ref="#ishiguro-teiichi">石黒定一</persName>君に――</p>
+        <p>もし<ruby><rb>游泳</rb><rt>ゆうえい</rt></ruby>を学ばないものに泳げと命ずるものがあれば、何人も無理だと思うであろう。もし又ランニングを学ばないものに<ruby><rb>駈</rb><rt>か</rt></ruby>けろと命ずるものがあれば、やはり理不尽だと思わざるを得まい。しかし我我は生まれた時から、こう云う<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>げた命令を負わされているのも同じことである。</p>
+        <p>我我は母の胎内にいた時、人生に処する道を学んだであろうか？　しかも胎内を離れるが早いか、兎に角大きい競技場に似た人生の中に踏み入るのである。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>游泳を学ばないものは満足に泳げる理窟はない。同様にランニングを学ばないものは大抵人後に落ちそうである。すると我我も<ruby><rb>創痍</rb><rt>そうい</rt></ruby>を負わずに人生の競技場を出られる<ruby><rb>筈</rb><rt>はず</rt></ruby>はない。</p>
+        <p>成程世人は云うかも知れない。「前人の跡を見るが好い。あそこに君たちの手本がある」と。しかし百の<ruby><rb>游泳者</rb><rt>ゆうえいしゃ</rt></ruby>や千のランナアを眺めたにしろ、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち游泳を覚えたり、ランニングに通じたりするものではない。のみならずその游泳者は<ruby><rb>悉</rb><rt>ことごと</rt></ruby>く水を飲んでおり、その又ランナアは一人残らず競技場の土にまみれている。見給え、世界の名選手さへ大抵は得意の微笑のかげに渋面を隠しているではないか？</p>
+        <p>人生は狂人の主催に成ったオリムピック大会に似たものである。我我は人生と闘いながら、人生と闘うことを学ばねばならぬ。こう云うゲエムの<ruby><rb>莫迦莫迦</rb><rt>ばかばか</rt></ruby>しさに憤慨を禁じ得ないものはさっさと<ruby><rb>埒外</rb><rt>らちがい</rt></ruby>に歩み去るが好い。自殺も亦確かに一便法である。しかし人生の競技場に踏み止まりたいと思うものは創痍を恐れずに闘わなければならぬ。</p>
+        <p>又</p>
+        <p>人生は一箱のマッチに似ている。重大に扱うのは莫迦莫迦しい。重大に扱わなければ危険である。</p>
+        <p>又</p>
+        <p>人生は落丁の多い書物に似ている。一部を成すとは称し難い。しかし<ruby><rb>兎</rb><rt>と</rt></ruby>に<ruby><rb>角</rb><rt>かく</rt></ruby>一部を成している。</p>
+        <p>或自警団員の言葉</p>
+        <p>さあ、自警の部署に<ruby><rb>就</rb><rt>つ</rt></ruby>こう。今夜は星も木木の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>に涼しい光を放っている。微風もそろそろ通い出したらしい。さあ、この<ruby><rb>籐</rb><rt>とう</rt></ruby>の<ruby><rb>長椅子</rb><rt>ながいす</rt></ruby>に寝ころび、この一本のマニラに火をつけ、夜もすがら気楽に警戒しよう。もし<ruby><rb>喉</rb><rt>のど</rt></ruby>の渇いた時には水筒のウイスキイを傾ければ好い。幸いまだポケットにはチョコレエトの棒も残っている。</p>
+        <p>聴き給え、高い木木の梢に何か寝鳥の騒いでいるのを。鳥は今度の大地震にも困ると云うことを知らないであろう。しかし我我人間は衣食住の便宜を失った為にあらゆる苦痛を味わっている。いや、衣食住どころではない。一杯のシトロンの飲めぬ為にも少からぬ不自由を忍んでいる。人間と云う二足の獣は何と云う情けない動物であろう。我我は文明を失ったが最後、それこそ風前の灯火のように<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ない命を守らなければならぬ。見給え。鳥はもう静かに<ruby><rb>寐入</rb><rt>ねい</rt></ruby>っている。羽根<ruby><rb>蒲団</rb><rt>ぶとん</rt></ruby>や<ruby><rb>枕</rb><rt>まくら</rt></ruby>を知らぬ鳥は！</p>
+        <p>鳥はもう静かに寝入っている。夢も我我より安らかであろう。鳥は現在にのみ生きるものである。しかし我我人間は過去や未来にも生きなければならぬ。と云う意味は悔恨や憂慮の苦痛をも<ruby><rb>甞</rb><rt>な</rt></ruby>めなければならぬ。殊に今度の大地震はどの位我我の未来の上へ寂しい暗黒を投げかけたであろう。<placeName ref="#tokyo">東京</placeName>を焼かれた我我は今日の<ruby><rb>餓</rb><rt>うえ</rt></ruby>に苦しみ<ruby><rb>乍</rb><rt>なが</rt></ruby>ら、明日の餓にも苦しんでいる。鳥は幸いにこの苦痛を知らぬ、いや、鳥に限ったことではない。三世の苦痛を知るものは我我人間のあるばかりである。</p>
+        <p><persName ref="#koizumi-yakumo">小泉八雲</persName>は人間よりも蝶になりたいと云ったそうである。蝶――と云えばあの蟻を見給え。もし幸福と云うことを苦痛の少ないことのみとすれば、蟻も亦我我よりは幸福であろう。けれども我我人間は蟻の知らぬ快楽をも心得ている。蟻は破産や失恋の為に自殺をする患はないかも知れぬ。が、我我と同じように楽しい希望を持ち得るであろうか？　僕は未だに覚えている。月明りの<ruby><rb>仄</rb><rt>ほの</rt></ruby>めいた<placeName ref="#rakuyo"><ruby><rb>洛陽</rb><rt>らくよう</rt></ruby></placeName>の廃都に、<persName ref="#ri-taihaku"><ruby><rb>李太白</rb><rt>りたいはく</rt></ruby></persName>の詩の一行さえ知らぬ無数の蟻の群を<ruby><rb>憐</rb><rt>あわれ</rt></ruby>んだことを！</p>
+        <p>しかし<persName ref="#schopenhauer">ショオペンハウエル</persName>は、――まあ、哲学はやめにし給え。我我は兎に角あそこへ来た蟻と大差のないことだけは確かである。もしそれだけでも確かだとすれば、人間らしい感情の全部は一層大切にしなければならぬ。自然は<ruby><rb>唯</rb><rt>ただ</rt></ruby>冷然と我我の苦痛を眺めている。我我は互に憐まなければならぬ。<ruby><rb>況</rb><rt>いわん</rt></ruby>や<ruby><rb>殺戮</rb><rt>さつりく</rt></ruby>を喜ぶなどは、――<ruby><rb>尤</rb><rt>もっと</rt></ruby>も相手を絞め殺すことは議論に勝つよりも手軽である。</p>
+        <p>我我は互に憐まなければならぬ。<persName ref="#schopenhauer">ショオペンハウエル</persName>の<ruby><rb>厭世観</rb><rt>えんせいかん</rt></ruby>の我我に与えた教訓もこう云うことではなかったであろうか？</p>
+        <p>夜はもう十二時を過ぎたらしい。星も<ruby><rb>相不変</rb><rt>あいかわらず</rt></ruby>頭の上に涼しい光を放っている。さあ、君はウイスキイを傾け給え。僕は長椅子に寐ころんだままチョコレエトの棒でも<ruby><rb>噛</rb><rt>かじ</rt></ruby>ることにしよう。</p>
+        <p>地上楽園</p>
+        <p>地上楽園の光景は<ruby><rb>屡</rb><rt>しばしば</rt></ruby>詩歌にもうたわれている。が、わたしはまだ残念ながら、そう云う詩人の地上楽園に住みたいと思った覚えはない。<ruby><rb>基督教徒</rb><rt>キリストきょうと</rt></ruby>の地上楽園は<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>退屈なるパノラマである。<persName ref="#koro">黄老</persName>の学者の地上楽園もつまりは索漠とした支那料理屋に過ぎない。況んや近代のユウトピアなどは――<persName ref="#william-james">ウイルヤム・ジェエムス</persName>の<ruby><rb>戦慄</rb><rt>せんりつ</rt></ruby>したことは何びとの記憶にも残っているであろう。</p>
+        <p>わたしの夢みている地上楽園はそう云う天然の温室ではない。同時に又そう云う学校を兼ねた食糧や衣服の配給所でもない。唯此処に住んでいれば、両親は子供の成人と共に必ず息を引取るのである。それから男女の兄弟はたとい悪人に生まれるにもしろ、莫迦には決して生まれない結果、少しも迷惑をかけ合わないのである。それから女は妻となるや否や、家畜の魂を宿す為に従順そのものに変るのである。それから子供は男女を問わず、両親の意志や感情通りに、一日のうちに何回でも聾と唖と腰ぬけと盲目とになることが出来るのである。それから甲の友人は乙の友人よりも貧乏にならず、同時に又乙の友人は甲の友人よりも金持ちにならず、互いに相手を褒め合うことに無上の満足を感ずるのである。それから――ざっとこう云う処を思えば好い。</p>
+        <p>これは何もわたし一人の地上楽園たるばかりではない。同時に又天下に充満した善男善女の地上楽園である。唯古来の詩人や学者はその金色の<ruby><rb>瞑想</rb><rt>めいそう</rt></ruby>の中にこう云う光景を夢みなかった。夢みなかったのは別に不思議ではない。こう云う光景は夢みるにさえ、余りに真実の幸福に<ruby><rb>溢</rb><rt>あふ</rt></ruby>れすぎているからである。</p>
+        <p>附記　わたしの甥は<persName ref="#rembrandt">レムブラント</persName>の肖像画を買うことを夢みている。しかし彼の小遣いを十円貰うことは夢みていない。これも十円の小遣いは余りに真実の幸福に溢れすぎているからである。</p>
+        <p>暴力</p>
+        <p>人生は常に複雑である。複雑なる人生を簡単にするものは暴力より外にある筈はない。この故に往往石器時代の脳髄しか持たぬ文明人は論争より殺人を愛するのである。</p>
+        <p>しかし亦権力も畢竟はパテントを得た暴力である。我我人間を支配する為にも、暴力は常に必要なのかも知れない。或は又必要ではないのかも知れない。</p>
+        <p>「人間らしさ」</p>
+        <p>わたしは不幸にも「人間らしさ」に礼拝する勇気は持っていない。いや、屡「人間らしさ」に<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>を感ずることは事実である。しかし又常に「人間らしさ」に愛を感ずることも事実である。愛を？――或は愛よりも<ruby><rb>憐憫</rb><rt>れんびん</rt></ruby>かも知れない。が、兎に角「人間らしさ」にも動かされぬようになったとすれば、人生は到底住するに堪えない精神病院に変りそうである。<persName ref="#swift">Swift</persName> の<ruby><rb>畢</rb><rt>つい</rt></ruby>に発狂したのも当然の結果と云う外はない。</p>
+        <p><persName ref="#swift">スウィフト</persName>は発狂する少し前に、<ruby><rb>梢</rb><rt>こずえ</rt></ruby>だけ枯れた木を見ながら、「おれはあの木とよく似ている。頭から先に参るのだ」と<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いたことがあるそうである。この逸話は思い出す度にいつも<ruby><rb>戦慄</rb><rt>せんりつ</rt></ruby>を伝えずには置かない。わたしは<persName ref="#swift">スウィフト</persName>ほど頭の好い一代の鬼才に生まれなかったことをひそかに幸福に思っている。</p>
+        <p>椎の葉</p>
+        <p>完全に幸福になり得るのは白痴にのみ与えられた特権である。如何なる楽天主義者にもせよ、笑顔に終始することの出来るものではない。いや、もし真に楽天主義なるものの存在を許し得るとすれば、それは<ruby><rb>唯</rb><rt>ただ</rt></ruby>如何に幸福に絶望するかと云うことのみである。</p>
+        <p>「<ruby><rb>家</rb><rt>いへ</rt></ruby>にあれば<ruby><rb>笥</rb><rt>け</rt></ruby>にもる<ruby><rb>飯</rb><rt>いひ</rt></ruby>を草まくら旅にしあれば椎の葉にもる」とは行旅の情をうたったばかりではない。我我は常に「ありたい」ものの代りに「あり得る」ものと妥協するのである。学者はこの椎の葉にさまざまの美名を与えるであろう。が、無遠慮に手に取って見れば、椎の葉はいつも椎の葉である。</p>
+        <p>椎の葉の椎の葉たるを<ruby><rb>歎</rb><rt>たん</rt></ruby>ずるのは椎の葉の笥たるを主張するよりも確かに尊敬に価している。しかし椎の葉の椎の葉たるを一笑し去るよりも退屈であろう。少くとも生涯同一の歎を繰り返すことに<ruby><rb>倦</rb><rt>う</rt></ruby>まないのは<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>であると共に不道徳である。実際又偉大なる<ruby><rb>厭世</rb><rt>えんせい</rt></ruby>主義者は渋面ばかり作ってはいない。不治の病を負った<persName ref="#leopardi">レオパルディ</persName>さえ、時には<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめた<ruby><rb>薔薇</rb><rt>ばら</rt></ruby>の花に寂しい<ruby><rb>頬笑</rb><rt>ほほえ</rt></ruby>みを浮べている。……</p>
+        <p>追記　不道徳とは過度の異名である。</p>
+        <p><persName ref="#shakyamuni">仏陀</persName></p>
+        <p><persName ref="#shakyamuni"><ruby><rb>悉達多</rb><rt>しったるた</rt></ruby></persName>は王城を忍び出た後六年の間苦行した。六年の間苦行した<ruby><rb>所以</rb><rt>ゆえん</rt></ruby>は<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>王城の生活の<ruby><rb>豪奢</rb><rt>ごうしゃ</rt></ruby>を極めていた<ruby><rb>祟</rb><rt>たた</rt></ruby>りであろう。その証拠には<placeName ref="#nazareth">ナザレ</placeName>の大工の子は、四十日の断食しかしなかったようである。</p>
+        <p>又</p>
+        <p><persName ref="#shakyamuni">悉達多</persName>は<persName ref="#channa"><ruby><rb>車匿</rb><rt>しゃのく</rt></ruby></persName>に<ruby><rb>馬轡</rb><rt>ばひ</rt></ruby>を<ruby><rb>執</rb><rt>と</rt></ruby>らせ、<ruby><rb>潜</rb><rt>ひそ</rt></ruby>かに王城を後ろにした。が、彼の思弁癖は<ruby><rb>屡</rb><rt>しばしば</rt></ruby>彼をメランコリアに沈ましめたと云うことである。すると王城を忍び出た後、ほっと一息ついたものは実際将来の<persName ref="#shakyamuni"><ruby><rb>釈迦無二仏</rb><rt>しゃかむにぶつ</rt></ruby></persName>だったか、それとも彼の妻の<persName ref="#yashodhara"><ruby><rb>耶輸陀羅</rb><rt>やすだら</rt></ruby></persName>だったか、容易に断定は出来ないかも知れない。</p>
+        <p>又</p>
+        <p><persName ref="#shakyamuni">悉達多</persName>は六年の苦行の後、<ruby><rb>菩提樹</rb><rt>ぼだいじゅ</rt></ruby>下に<ruby><rb>正覚</rb><rt>しょうがく</rt></ruby>に達した。彼の成道の伝説は如何に物質の精神を支配するかを語るものである。彼はまず水浴している。それから<ruby><rb>乳糜</rb><rt>にゅうび</rt></ruby>を食している。最後に<persName ref="#nandabala"><ruby><rb>難陀婆羅</rb><rt>なんだばら</rt></ruby></persName>と伝えられる牧牛の少女と話している。</p>
+        <p>政治的天才</p>
+        <p>古来政治的天才とは民衆の意志を彼自身の意志とするもののように思われていた。が、これは正反対であろう。<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ政治的天才とは彼自身の意志を民衆の意志とするもののことを云うのである。少くとも民衆の意志であるかのように信ぜしめるものを云うのである。この故に政治的天才は俳優的天才を伴うらしい。<persName ref="#napoleon">ナポレオン</persName>は「荘厳と滑稽との差は<ruby><rb>僅</rb><rt>わず</rt></ruby>かに一歩である」と云った。この言葉は帝王の言葉と云うよりも名優の言葉にふさわしそうである。</p>
+        <p>又</p>
+        <p>民衆は大義を信ずるものである。が、政治的天才は常に大義そのものには一文の銭をも<ruby><rb>抛</rb><rt>なげう</rt></ruby>たないものである。唯民衆を支配する為には大義の仮面を用いなければならぬ。しかし一度用いたが最後、大義の仮面は永久に脱することを得ないものである。もし又強いて脱そうとすれば、如何なる政治的天才も<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち非命に<ruby><rb>仆</rb><rt>たお</rt></ruby>れる外はない。つまり帝王も王冠の為におのずから支配を受けているのである。この故に政治的天才の悲劇は必ず喜劇をも兼ねぬことはない。たとえば昔<placeName ref="#ninnaji"><ruby><rb>仁和寺</rb><rt>にんなじ</rt></ruby></placeName>の法師の<ruby><rb>鼎</rb><rt>かなえ</rt></ruby>をかぶって舞ったと云う「つれづれ草」の喜劇をも兼ねぬことはない。</p>
+        <p>恋は死よりも強し</p>
+        <p>「恋は死よりも強し」と云うのは<persName ref="#maupassant">モオパスサン</persName>の小説にもある言葉である。が、死よりも強いものは勿論天下に恋ばかりではない。たとえばチブスの患者などのビスケットを一つ食った為に知れ切った往生を遂げたりするのは食慾も死よりは強い証拠である。食慾の外にも数え挙げれば、愛国心とか、宗教的感激とか、人道的精神とか、利慾とか、名誉心とか、犯罪的本能とか――まだ死よりも強いものは沢山あるのに相違ない。つまりあらゆる情熱は死よりも強いものなのであろう。（勿論死に対する情熱は例外である。）<ruby><rb>且</rb><rt>か</rt></ruby>つ又恋はそう云うもののうちでも、特に死よりも強いかどうか、<ruby><rb>迂濶</rb><rt>うかつ</rt></ruby>に断言は出来ないらしい。一見、死よりも強い恋と<ruby><rb>見做</rb><rt>みな</rt></ruby>され易い場合さえ、実は我我を支配しているのは<ruby><rb>仏蘭西人</rb><rt>フランスじん</rt></ruby>の<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>ボヴァリスムである。我我自身を伝奇の中の恋人のように空想する<persName ref="#madame-bovary">ボヴァリイ夫人</persName>以来の感傷主義である。</p>
+        <p><placeName ref="#jigoku">地獄</placeName></p>
+        <p>人生は<placeName ref="#jigoku">地獄</placeName>よりも地獄的である。<placeName ref="#jigoku">地獄</placeName>の与える苦しみは一定の法則を破ったことはない。たとえば<placeName ref="#gakido">餓鬼道</placeName>の苦しみは目前の飯を食おうとすれば飯の上に火の燃えるたぐいである。しかし人生の与える苦しみは不幸にもそれほど単純ではない。目前の飯を食おうとすれば、火の燃えることもあると同時に、又存外楽楽と食い得ることもあるのである。のみならず楽楽と食い得た後さえ、<ruby><rb>腸加太児</rb><rt>ちょうカタル</rt></ruby>の起ることもあると同時に、又存外楽楽と消化し得ることもあるのである。こう云う無法則の世界に順応するのは何びとにも容易に出来るものではない。もし<placeName ref="#jigoku">地獄</placeName>に<ruby><rb>堕</rb><rt>お</rt></ruby>ちたとすれば、わたしは必ず<ruby><rb>咄嗟</rb><rt>とっさ</rt></ruby>の間に<placeName ref="#gakido">餓鬼道</placeName>の飯も<ruby><rb>掠</rb><rt>かす</rt></ruby>め得るであろう。<ruby><rb>況</rb><rt>いわん</rt></ruby>や<placeName ref="#harinoyama">針の山</placeName>や<placeName ref="#chinoike">血の池</placeName>などは二三年其処に住み慣れさえすれば格別<ruby><rb>跋渉</rb><rt>ばっしょう</rt></ruby>の苦しみを感じないようになってしまう<ruby><rb>筈</rb><rt>はず</rt></ruby>である。</p>
+        <p>醜聞</p>
+        <p>公衆は醜聞を愛するものである。<ruby><rb><persName ref="#byakuren">白蓮</persName>事件</rb><rt>びゃくれんじけん</rt></ruby>、<persName ref="#arishima">有島</persName>事件、<persName ref="#mushanokoji">武者小路</persName>事件――公衆は如何にこれらの事件に無上の満足を見出したであろう。ではなぜ公衆は醜聞を――殊に世間に名を知られた他人の醜聞を愛するのであろう？　<persName ref="#gourmont">グルモン</persName>はこれに答えている。――</p>
+        <p>「隠れたる自己の醜聞も当り前のように見せてくれるから。」</p>
+        <p><persName ref="#gourmont">グルモン</persName>の答は<ruby><rb>中</rb><rt>あた</rt></ruby>っている。が、必ずしもそればかりではない。醜聞さえ起し得ない俗人たちはあらゆる名士の醜聞の中に彼等の<ruby><rb>怯懦</rb><rt>きょうだ</rt></ruby>を弁解する好個の武器を見出すのである。同時に又実際には存しない彼等の優越を樹立する、好個の台石を見出すのである。「わたしは<persName ref="#byakuren">白蓮</persName>女史ほど美人ではない。しかし<persName ref="#byakuren">白蓮</persName>女史よりも貞淑である。」「わたしは<persName ref="#arishima">有島</persName>氏ほど才子ではない。しかし<persName ref="#arishima">有島</persName>氏よりも世間を知っている。」「わたしは<persName ref="#mushanokoji">武者小路</persName>氏ほど……」――公衆は如何にこう云った後、豚のように幸福に熟睡したであろう。</p>
+        <p>又</p>
+        <p>天才の一面は明らかに醜聞を起し得る才能である。</p>
+        <p>輿論</p>
+        <p><ruby><rb>輿論</rb><rt>よろん</rt></ruby>は常に私刑であり、私刑は又常に娯楽である。たといピストルを用うる代りに新聞の記事を用いたとしても。</p>
+        <p>又</p>
+        <p>輿論の存在に価する理由は<ruby><rb>唯</rb><rt>ただ</rt></ruby>輿論を<ruby><rb>蹂躙</rb><rt>じゅうりん</rt></ruby>する興味を与えることばかりである。</p>
+        <p>敵意</p>
+        <p>敵意は寒気と選ぶ所はない。適度に感ずる時は<ruby><rb>爽快</rb><rt>そうかい</rt></ruby>であり、<ruby><rb>且</rb><rt>かつ</rt></ruby>又健康を保つ上には何びとにも絶対に必要である。</p>
+        <p>ユウトピア</p>
+        <p>完全なるユウトピアの生れない<ruby><rb>所以</rb><rt>ゆえん</rt></ruby>は大体下の通りである。――人間性そのものを変えないとすれば、完全なるユウトピアの生まれる<ruby><rb>筈</rb><rt>はず</rt></ruby>はない。人間性そのものを変えるとすれば、完全なるユウトピアと思ったものも<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち不完全に感ぜられてしまう。</p>
+        <p>危険思想</p>
+        <p>危険思想とは常識を実行に移そうとする思想である。</p>
+        <p>悪</p>
+        <p>芸術的気質を持った青年の「人間の悪」を発見するのは誰よりも遅いのを常としている。</p>
+        <p><persName ref="#ninomiya-sontoku">二宮尊徳</persName></p>
+        <p>わたしは小学校の読本の中に<persName ref="#ninomiya-sontoku">二宮尊徳</persName>の少年時代の大書してあったのを覚えている。貧家に人となった<persName ref="#ninomiya-sontoku">尊徳</persName>は昼は農作の手伝いをしたり、夜は<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>を造ったり、大人のように働きながら、<ruby><rb>健気</rb><rt>けなげ</rt></ruby>にも独学をつづけて行ったらしい。これはあらゆる<ruby><rb>立志譚</rb><rt>りっしたん</rt></ruby>のように――と云うのはあらゆる通俗小説のように、感激を与え易い物語である。実際又十五歳に足らぬわたしは<persName ref="#ninomiya-sontoku">尊徳</persName>の意気に感激すると同時に、<persName ref="#ninomiya-sontoku">尊徳</persName>ほど貧家に生まれなかったことを不仕合せの一つにさえ考えていた。……</p>
+        <p>けれどもこの立志譚は<persName ref="#ninomiya-sontoku">尊徳</persName>に名誉を与える代りに、当然<persName ref="#ninomiya-sontoku">尊徳</persName>の両親には不名誉を与える物語である。彼等は<persName ref="#ninomiya-sontoku">尊徳</persName>の教育に<ruby><rb>寸毫</rb><rt>すんごう</rt></ruby>の便宜をも与えなかった。いや、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ与えたものは<ruby><rb>障碍</rb><rt>しょうがい</rt></ruby>ばかりだった位である。これは両親たる責任上、明らかに恥辱と云わなければならぬ。しかし我々の両親や教師は無邪気にもこの事実を忘れている。<persName ref="#ninomiya-sontoku">尊徳</persName>の両親は酒飲みでも或は又<ruby><rb>博奕</rb><rt>ばくち</rt></ruby>打ちでも好い。問題は唯<persName ref="#ninomiya-sontoku">尊徳</persName>である。どう云う<ruby><rb>艱難辛苦</rb><rt>かんなんしんく</rt></ruby>をしても独学を廃さなかった<persName ref="#ninomiya-sontoku">尊徳</persName>である。我我少年は<persName ref="#ninomiya-sontoku">尊徳</persName>のように勇猛の志を養わなければならぬ。</p>
+        <p>わたしは彼等の利己主義に驚嘆に近いものを感じている。成程彼等には<persName ref="#ninomiya-sontoku">尊徳</persName>のように下男をも兼ねる少年は都合の好い息子に違いない。のみならず後年声誉を博し、大いに父母の名を<ruby><rb>顕</rb><rt>あら</rt></ruby>わしたりするのは好都合の上にも好都合である。しかし十五歳に足らぬわたしは<persName ref="#ninomiya-sontoku">尊徳</persName>の意気に感激すると同時に、<persName ref="#ninomiya-sontoku">尊徳</persName>ほど貧家に生まれなかったことを不仕合せの一つにさえ考えていた。丁度鎖に<ruby><rb>繋</rb><rt>つな</rt></ruby>がれた奴隷のもっと太い鎖を欲しがるように。</p>
+        <p>奴隷</p>
+        <p>奴隷廃止と云うことは唯奴隷たる自意識を廃止すると云うことである。我我の社会は奴隷なしには一日も安全を保し難いらしい。現にあの<persName ref="#plato">プラトオン</persName>の共和国さえ、奴隷の存在を予想しているのは必ずしも偶然ではないのである。</p>
+        <p>又</p>
+        <p>暴君を暴君と呼ぶことは危険だったのに違いない。が、今日は暴君以外に奴隷を奴隷と呼ぶこともやはり甚だ危険である。</p>
+        <p>悲劇</p>
+        <p>悲劇とはみずから<ruby><rb>羞</rb><rt>は</rt></ruby>ずる所業を<ruby><rb>敢</rb><rt>あえ</rt></ruby>てしなければならぬことである。この故に万人に共通する悲劇は<ruby><rb>排泄</rb><rt>はいせつ</rt></ruby>作用を行うことである。</p>
+        <p>強弱</p>
+        <p>強者とは敵を恐れぬ代りに友人を恐れるものである。一撃に敵を打ち倒すことには何の<ruby><rb>痛痒</rb><rt>つうよう</rt></ruby>も感じない代りに、<ruby><rb>知</rb><rt>し</rt></ruby>らず<ruby><rb>識</rb><rt>し</rt></ruby>らず友人を傷つけることには児女に似た恐怖を感ずるものである。</p>
+        <p>弱者とは友人を恐れぬ代りに、敵を恐れるものである。この故に又至る処に架空の敵ばかり発見するものである。</p>
+        <p><persName ref="#s-m">Ｓ・Ｍ</persName>の智慧</p>
+        <p>これは友人<persName ref="#s-m">Ｓ・Ｍ</persName>のわたしに話した言葉である。</p>
+        <p>弁証法の功績。――<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>何ものも<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>げていると云う結論に到達せしめたこと。</p>
+        <p>少女。――どこまで行っても<ruby><rb>清冽</rb><rt>せいれつ</rt></ruby>な浅瀬。</p>
+        <p>早教育。――ふむ、それも結構だ。まだ幼稚園にいるうちに智慧の悲しみを知ることには責任を持つことにも当らないからね。</p>
+        <p>追憶。――地平線の遠い風景画。ちゃんと仕上げもかかっている。</p>
+        <p>女。――<persName ref="#marie-stopes">メリイ・ストオプス夫人</persName>によれば女は少くとも二週間に一度、夫に情欲を感ずるほど貞節に出来ているものらしい。</p>
+        <p>年少時代。――年少時代の<ruby><rb>憂欝</rb><rt>ゆううつ</rt></ruby>は全宇宙に対する<ruby><rb>驕慢</rb><rt>きょうまん</rt></ruby>である。</p>
+        <p>艱難<ruby><rb>汝</rb><rt>なんじ</rt></ruby>を玉にす。――艱難汝を玉にするとすれば、日常生活に、思慮深い男は到底玉になれない筈である。</p>
+        <p>我等如何に生くべき<ruby><rb>乎</rb><rt>か</rt></ruby>。――未知の世界を少し残して置くこと。</p>
+        <p>社交</p>
+        <p>あらゆる社交はおのずから虚偽を必要とするものである。もし寸毫の虚偽をも加えず、我我の友人知己に対する我我の本心を吐露するとすれば、<ruby><rb>古</rb><rt>いにし</rt></ruby>えの<persName ref="#kanpo"><ruby><rb>管鮑</rb><rt>かんぽう</rt></ruby></persName>の交りと<ruby><rb>雖</rb><rt>いえど</rt></ruby>も<ruby><rb>破綻</rb><rt>はたん</rt></ruby>を生ぜずにはいなかったであろう。<persName ref="#kanpo">管鮑</persName>の交りは少時問わず、我我は皆多少にもせよ、我我の親密なる友人知己を憎悪し或は<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>している。が、憎悪も利害の前には<ruby><rb>鋭鋒</rb><rt>えいほう</rt></ruby>を収めるのに相違ない。<ruby><rb>且</rb><rt>かつ</rt></ruby>又軽蔑は多々益々<ruby><rb>恬然</rb><rt>てんぜん</rt></ruby>と虚偽を吐かせるものである。この故に我我の友人知己と最も親密に交る為めには、互に利害と軽蔑とを最も完全に<ruby><rb>具</rb><rt>そな</rt></ruby>えなければならぬ。これは<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>何びとにも甚だ困難なる条件である。さもなければ我我はとうの昔に礼譲に富んだ紳士になり、世界も亦とうの昔に黄金時代の平和を現出したであろう。</p>
+        <p>瑣事</p>
+        <p>人生を幸福にする為には、日常の<ruby><rb>瑣事</rb><rt>さじ</rt></ruby>を愛さなければならぬ。雲の光り、竹の<ruby><rb>戦</rb><rt>そよ</rt></ruby>ぎ、<ruby><rb>群雀</rb><rt>むらすずめ</rt></ruby>の声、行人の顔、――あらゆる日常の瑣事の中に無上の甘露味を感じなければならぬ。</p>
+        <p>人生を幸福にする為には？――しかし瑣事を愛するものは瑣事の為に苦しまなければならぬ。庭前の古池に飛びこんだ蛙は百年の愁を破ったであろう。が、古池を飛び出した蛙は百年の愁を与えたかも知れない。いや、<persName ref="#basho">芭蕉</persName>の一生は享楽の一生であると共に、誰の目にも受苦の一生である。我我も微妙に楽しむ為には、やはり又微妙に苦しまなければならぬ。</p>
+        <p>人生を幸福にする為には、日常の<ruby><rb>瑣事</rb><rt>さじ</rt></ruby>に苦しまなければならぬ。雲の光り、竹の<ruby><rb>戦</rb><rt>そよ</rt></ruby>ぎ、<ruby><rb>群雀</rb><rt>むらすずめ</rt></ruby>の声、行人の顔、――あらゆる日常の瑣事の中に堕地獄の苦痛を感じなければならぬ。</p>
+        <p>神</p>
+        <p>あらゆる神の属性中、最も神の為に同情するのは神には自殺の出来ないことである。</p>
+        <p>又</p>
+        <p>我我は神を罵殺する無数の理由を発見している。が、不幸にも日本人は罵殺するのに価いするほど、全能の神を信じていない。</p>
+        <p>民衆</p>
+        <p>民衆は穏健なる保守主義者である。制度、思想、芸術、宗教、――何ものも民衆に愛される為には、前時代の古色を帯びなければならぬ。<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>民衆芸術家の民衆の為に愛されないのは必ずしも彼等の罪ばかりではない。</p>
+        <p>又</p>
+        <p>民衆の愚を発見するのは必ずしも誇るに足ることではない。が、我我自身も亦民衆であることを発見するのは<ruby><rb>兎</rb><rt>と</rt></ruby>も<ruby><rb>角</rb><rt>かく</rt></ruby>も誇るに足ることである。</p>
+        <p>又</p>
+        <p>古人は民衆を愚にすることを治国の大道に数えていた。丁度まだこの上にも愚にすることの出来るように。――或は又どうかすれば賢にでもすることの出来るように。</p>
+        <p><persName ref="#chekhov">チエホフ</persName>の言葉</p>
+        <p><persName ref="#chekhov">チエホフ</persName>はその手記の中に男女の差別を論じている。――「女は年をとると共に、益々女の事に従うものであり、男は年をとると共に、益々女の事から離れるものである。」</p>
+        <p>しかしこの<persName ref="#chekhov">チエホフ</persName>の言葉は男女とも年をとると共に、おのずから異性との交渉に立ち入らないと云うのも同じことである。これは三歳の童児と<ruby><rb>雖</rb><rt>いえど</rt></ruby>もとうに知っていることと云わなければならぬ。のみならず男女の差別よりも<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ男女の無差別を示しているものと云わなければならぬ。</p>
+        <p>服装</p>
+        <p>少くとも女人の服装は女人自身の一部である。<persName ref="#keikichi">啓吉</persName>の誘惑に陥らなかったのは<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>道念にも<ruby><rb>依</rb><rt>よ</rt></ruby>ったのであろう。が、彼を誘惑した女人は<persName ref="#keikichi">啓吉</persName>の妻の借着をしている。もし借着をしていなかったとすれば、<persName ref="#keikichi">啓吉</persName>もさほど楽々とは誘惑の外に出られなかったかも知れない。</p>
+        <p>註　<persName ref="#kikuchi-kan">菊池寛</persName>氏の「<persName ref="#keikichi">啓吉</persName>の誘惑」を見よ。</p>
+        <p>処女崇拝</p>
+        <p>我我は処女を妻とする為にどの位妻の選択に<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>なる失敗を重ねて来たか、もうそろそろ処女崇拝には背中を向けても好い時分である。</p>
+        <p>又</p>
+        <p>処女崇拝は処女たる事実を知った後に始まるものである。即ち卒直なる感情よりも零細なる知識を重んずるものである。この故に処女崇拝者は恋愛上の<ruby><rb>衒学者</rb><rt>げんがくしゃ</rt></ruby>と云わなければならぬ。あらゆる処女崇拝者の何か厳然と構えているのも或は偶然ではないかも知れない。</p>
+        <p>又</p>
+        <p>勿論処女らしさ崇拝は処女崇拝以外のものである。この二つを同義語とするものは恐らく女人の俳優的才能を余りに軽々に見ているものであろう。</p>
+        <p>礼法</p>
+        <p>或女学生はわたしの友人にこう云う事を尋ねたそうである。</p>
+        <p>「一体<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>をする時には目をつぶっているものなのでしょうか？　それともあいているものなのでしょうか？」</p>
+        <p>あらゆる女学校の教課の中に恋愛に関する礼法のないのはわたしもこの女学生と共に甚だ遺憾に思っている。</p>
+        <p><persName ref="#kaibara-ekiken">貝原益軒</persName></p>
+        <p>わたしはやはり小学時代に<persName ref="#kaibara-ekiken"><ruby><rb>貝原益軒</rb><rt>かいばらえきけん</rt></ruby></persName>の逸事を学んだ。<persName ref="#kaibara-ekiken">益軒</persName>は<ruby><rb>嘗</rb><rt>かつ</rt></ruby>て乗合船の中に一人の書生と一しょになった。書生は才力に誇っていたと見え、<ruby><rb>滔々</rb><rt>とうとう</rt></ruby>と古今の学芸を論じた。が、<persName ref="#kaibara-ekiken">益軒</persName>は一言も加えず、静かに傾聴するばかりだった。その内に船は岸に泊した。船中の客は別れるのに臨んで姓名を告げるのを例としていた。書生は始めて<persName ref="#kaibara-ekiken">益軒</persName>を知り、この一代の大儒の前に<ruby><rb>忸怩</rb><rt>じくじ</rt></ruby>として先刻の無礼を謝した。――こう云う逸事を学んだのである。</p>
+        <p>当時のわたしはこの逸事の中に謙譲の美徳を発見した。少くとも発見する為に努力したことは事実である。しかし今は不幸にも<ruby><rb>寸毫</rb><rt>すんごう</rt></ruby>の教訓さえ発見出来ない。この逸事の今のわたしにも多少の興味を与えるは<ruby><rb>僅</rb><rt>わず</rt></ruby>かに下のように考えるからである。――</p>
+        <p>一　無言に終始した<persName ref="#kaibara-ekiken">益軒</persName>の<ruby><rb>侮蔑</rb><rt>ぶべつ</rt></ruby>は如何に<ruby><rb>辛辣</rb><rt>しんらつ</rt></ruby>を極めていたか！</p>
+        <p>二　書生の恥じるのを<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んだ同船の客の<ruby><rb>喝采</rb><rt>かっさい</rt></ruby>は如何に俗悪を極めていたか！</p>
+        <p>三　<persName ref="#kaibara-ekiken">益軒</persName>の知らぬ新時代の精神は年少の書生の放論の中にも如何に<ruby><rb>溌溂</rb><rt>はつらつ</rt></ruby>と鼓動していたか！</p>
+        <p>或弁護</p>
+        <p>或新時代の評論家は「<ruby><rb>蝟集</rb><rt>いしゅう</rt></ruby>する」と云う意味に「門前<ruby><rb>雀羅</rb><rt>じゃくら</rt></ruby>を張る」の成語を用いた。「門前雀羅を張る」の成語は支那人の作ったものである。それを日本人の用うるのに必ずしも支那人の用法を踏襲しなければならぬと云う法はない。もし通用さえするならば、たとえば、「彼女の<ruby><rb>頬笑</rb><rt>ほほえ</rt></ruby>みは門前雀羅を張るようだった」と形容しても好い<ruby><rb>筈</rb><rt>はず</rt></ruby>である。</p>
+        <p>もし通用さえするならば、――万事はこの不可思議なる「通用」の上に懸っている。たとえば「わたくし小説」もそうではないか？　Ich-Roman と云う意味は一人称を用いた小説である。必ずしもその「わたくし」なるものは作家自身と定まってはいない。が、<placeName ref="#japan">日本</placeName>の「わたくし」小説は常にその「わたくし」なるものを作家自身とする小説である。いや、時には作家自身の閲歴談と見られたが最後、三人称を用いた小説さえ「わたくし」小説と呼ばれているらしい。これは勿論<ruby><rb>独逸人</rb><rt>ドイツじん</rt></ruby>の――或は全西洋人の用法を無視した新例である。しかし全能なる「通用」はこの新例に生命を与えた。「門前雀羅を張る」の成語もいつかはこれと同じように意外の新例を生ずるかも知れない。</p>
+        <p>すると或評論家は特に学識に乏しかったのではない。<ruby><rb>唯</rb><rt>ただ</rt></ruby><ruby><rb>聊</rb><rt>いささ</rt></ruby>か時流の外に新例を求むるのに急だったのである。その評論家の<ruby><rb>揶揄</rb><rt>やゆ</rt></ruby>を受けたのは、――兎に角あらゆる先覚者は常に薄命に甘んじなければならぬ。</p>
+        <p>制限</p>
+        <p>天才もそれぞれ乗り越え難い或制限に拘束されている。その制限を発見することは多少の寂しさを与えぬこともない。が、それはいつの間にか<ruby><rb>却</rb><rt>かえ</rt></ruby>って親しみを与えるものである。丁度竹は竹であり、<ruby><rb>蔦</rb><rt>つた</rt></ruby>は蔦である事を知ったように。</p>
+        <p>火星</p>
+        <p>火星の住民の有無を問うことは我我の五感に感ずることの出来る住民の有無を問うことである。しかし生命は必ずしも我我の五感に感ずることの出来る条件を<ruby><rb>具</rb><rt>そな</rt></ruby>えるとは限っていない。もし火星の住民も我我の五感を超越した存在を保っているとすれば、彼等の一群は今夜も亦<ruby><rb>篠懸</rb><rt>すずかけ</rt></ruby>を黄ばませる秋風と共に<placeName ref="#ginza">銀座</placeName>へ来ているかも知れないのである。</p>
+        <p><persName ref="#blanqui">Blanqui</persName> の夢</p>
+        <p>宇宙の大は無限である。が、宇宙を造るものは六十幾つかの元素である。<ruby><rb>是等</rb><rt>これら</rt></ruby>の元素の結合は如何に多数を極めたとしても、<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>有限を脱することは出来ない。すると是等の元素から無限大の宇宙を造る為には、あらゆる結合を試みる外にも、その又あらゆる結合を無限に反覆して行かなければならぬ。して見れば我我の<ruby><rb>棲息</rb><rt>せいそく</rt></ruby>する地球も、――是等の結合の一つたる地球も太陽系中の一惑星に限らず、無限に存在している<ruby><rb>筈</rb><rt>はず</rt></ruby>である。この地球上の<persName ref="#napoleon">ナポレオン</persName>は<placeName ref="#marengo">マレンゴオ</placeName>の戦に大勝を博した。が、<ruby><rb>茫々</rb><rt>ぼうぼう</rt></ruby>たる大虚に浮んだ他の地球上の<persName ref="#napoleon">ナポレオン</persName>は同じ<placeName ref="#marengo">マレンゴオ</placeName>の戦に大敗を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>っているかも知れない。……</p>
+        <p>これは六十七歳の<persName ref="#blanqui">ブランキ</persName>の夢みた宇宙観である。議論の是非は問う所ではない。<ruby><rb>唯</rb><rt>ただ</rt></ruby><persName ref="#blanqui">ブランキ</persName>は<ruby><rb>牢獄</rb><rt>ろうごく</rt></ruby>の中にこう云う夢をペンにした時、あらゆる革命に絶望していた。このことだけは今日もなお何か我我の心の底へ<ruby><rb>滲</rb><rt>し</rt></ruby>み渡る寂しさを蓄えている。夢は既に地上から去った。我我も慰めを求める為には何万億<ruby><rb>哩</rb><rt>マイル</rt></ruby>の天上へ、――宇宙の夜に懸った第二の地球へ輝かしい夢を移さなければならぬ。</p>
+        <p>庸才</p>
+        <p><ruby><rb>庸才</rb><rt>ようさい</rt></ruby>の作品は大作にもせよ、必ず窓のない部屋に似ている。人生の展望は少しも利かない。</p>
+        <p>機智</p>
+        <p>機智とは三段論法を欠いた思想であり、彼等の<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>「思想」とは思想を欠いた三段論法である。</p>
+        <p>又</p>
+        <p>機智に対する嫌悪の念は人類の疲労に根ざしている。</p>
+        <p>政治家</p>
+        <p>政治家の我我素人よりも政治上の知識を誇り得るのは紛紛たる事実の知識だけである。畢竟某党の某首領はどう言う帽子をかぶっているかと言うのと大差のない知識ばかりである。</p>
+        <p>又</p>
+        <p>所謂「床屋政治家」とはこう言う知識のない政治家である。<ruby><rb>若</rb><rt>も</rt></ruby>し<ruby><rb>夫</rb><rt>そ</rt></ruby>れ識見を論ずれば必ずしも政治家に劣るものではない。<ruby><rb>且</rb><rt>かつ</rt></ruby>又利害を超越した情熱に富んでいることは常に政治家よりも高尚である。</p>
+        <p>事実</p>
+        <p>しかし紛紛たる事実の知識は常に民衆の愛するものである。彼等の最も知りたいのは愛とは何かと言うことではない。<persName ref="#jesus">クリスト</persName>は私生児かどうかと言うことである。</p>
+        <p>武者修業</p>
+        <p>わたしは従来武者修業とは四方の剣客と手合せをし、武技を磨くものだと思っていた。が、今になって見ると、実は己ほど強いものの余り天下にいないことを発見する為にするものだった。――<persName ref="#miyamoto-musashi">宮本武蔵</persName>伝読後。</p>
+        <p><persName ref="#hugo">ユウゴオ</persName></p>
+        <p>全<placeName ref="#france">フランス</placeName>を<ruby><rb>蔽</rb><rt>おお</rt></ruby>う一片のパン。しかもバタはどう考えても、余りたっぷりはついていない。</p>
+        <p><persName ref="#dostoevsky">ドストエフスキイ</persName></p>
+        <p><persName ref="#dostoevsky">ドストエフスキイ</persName>の小説はあらゆる戯画に<ruby><rb>充</rb><rt>み</rt></ruby>ち<ruby><rb>満</rb><rt>み</rt></ruby>ちている。<ruby><rb>尤</rb><rt>もっと</rt></ruby>もその又戯画の大半は悪魔をも<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>にするに違いない。</p>
+        <p><persName ref="#flaubert">フロオベル</persName></p>
+        <p><persName ref="#flaubert">フロオベル</persName>のわたしに教えたものは美しい退屈もあると言うことである。</p>
+        <p><persName ref="#maupassant">モオパスサン</persName></p>
+        <p><persName ref="#maupassant">モオパスサン</persName>は氷に似ている。尤も時には氷砂糖にも似ている。</p>
+        <p><persName ref="#poe">ポオ</persName></p>
+        <p><persName ref="#poe">ポオ</persName>はスフィンクスを作る前に解剖学を研究した。<persName ref="#poe">ポオ</persName>の後代を<ruby><rb>震駭</rb><rt>しんがい</rt></ruby>した秘密はこの研究に潜んでいる。</p>
+        <p><persName ref="#mori-ogai">森鴎外</persName></p>
+        <p>畢竟<persName ref="#mori-ogai">鴎外</persName>先生は軍服に剣を下げた<ruby><rb>希臘人</rb><rt>ギリシアじん</rt></ruby>である。</p>
+        <p>或資本家の論理</p>
+        <p>「芸術家の芸術を売るのも、わたしの<ruby><rb>蟹</rb><rt>かに</rt></ruby>の<ruby><rb>鑵詰</rb><rt>かんづ</rt></ruby>めを売るのも、格別変りのある筈はない。しかし芸術家は芸術と言えば、天下の宝のように思っている。ああ言う芸術家の<ruby><rb>顰</rb><rt>ひそ</rt></ruby>みに<ruby><rb>傚</rb><rt>なら</rt></ruby>えば、わたしも亦一鑵六十銭の蟹の鑵詰めを自慢しなければならぬ。不肖行年六十一、まだ一度も芸術家のように<ruby><rb>莫迦莫迦</rb><rt>ばかばか</rt></ruby>しい<ruby><rb>己惚</rb><rt>うぬぼ</rt></ruby>れを起したことはない。」</p>
+        <p>批評学</p>
+        <p>――<persName ref="#sasaki-mosaku">佐佐木茂索</persName>君に――</p>
+        <p>或天気の好い午前である。博士に化けた <persName ref="#mephistopheles">Mephistopheles</persName> は或大学の講壇に批評学の講義をしていた。尤もこの批評学は <persName ref="#kant">Kant</persName> の Kritik や何かではない。<ruby><rb>只</rb><rt>ただ</rt></ruby>如何に小説や戯曲の批評をするかと言う学問である。</p>
+        <p>「諸君、先週わたしの申し上げた所は御理解になったかと思いますから、今日は更に一歩進んだ『半肯定論法』のことを申し上げます。『半肯定論法』とは何かと申すと、これは読んで字の通り、或作品の芸術的価値を半ば肯定する論法であります。しかしその『半ば』なるものは『より悪い半ば』でなければなりません。『より善い半ば』を肯定することは<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>るこの論法には危険であります。</p>
+        <p>「たとえば<placeName ref="#japan">日本</placeName>の桜の花の上にこの論法を用いて御覧なさい。桜の花の『より善い半ば』は色や形の美しさであります。けれどもこの論法を用うるためには『より善い半ば』よりも『より悪い半ば』――即ち桜の花の<ruby><rb>匂</rb><rt>にお</rt></ruby>いを肯定しなければなりません。つまり『匂いは正にある。が、畢竟それだけだ』と断案を下してしまうのであります。若し又万一『より悪い半ば』の代りに『より善い半ば』を肯定したとすれば、どう言う<ruby><rb>破綻</rb><rt>はたん</rt></ruby>を生じますか？　『色や形は正に美しい。が、<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>それだけだ』――これでは少しも桜の花を<ruby><rb>貶</rb><rt>けな</rt></ruby>したことにはなりません。</p>
+        <p>「<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>批評学の問題は如何に或小説や戯曲を貶すかと言うことに関しています。しかしこれは今更のように申し上げる必要はありますまい。</p>
+        <p>「ではこの『より善い半ば』や『より悪い半ば』は何を標準に区別しますか？　こう言う問題を解決する為には、これも度たび申し上げた価値論へ<ruby><rb>溯</rb><rt>さかのぼ</rt></ruby>らなければなりません。価値は古来信ぜられたように作品そのものの中にある訳ではない、作品を鑑賞する我我の心の中にあるものであります。すると『より善い半ば』や『より悪い半ば』は我我の心を標準に、――或は一時代の民衆の何を愛するかを標準に区別しなければなりません。</p>
+        <p>「たとえば今日の民衆は日本風の草花を愛しません。即ち日本風の草花は悪いものであります。又今日の民衆はブラジル珈琲を愛しています。即ちブラジル珈琲は善いものに違いありません。或作品の芸術的価値の『より善い半ば』や『より悪い半ば』も当然こう言う例のように区別しなければなりません。</p>
+        <p>「この標準を用いずに、美とか真とか善とか言う他の標準を求めるのは最も<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>な時代錯誤であります。諸君は赤らんだ<ruby><rb>麦藁帽</rb><rt>むぎわらぼう</rt></ruby>のように旧時代を捨てなければなりません。善悪は好悪を超越しない、好悪は即ち善悪である、愛憎は即ち善悪である、――これは『半肯定論法』に限らず、<ruby><rb>苟</rb><rt>いやし</rt></ruby>くも批評学に志した諸君の忘れてはならぬ法則であります。</p>
+        <p>「<ruby><rb>扨</rb><rt>さて</rt></ruby>『半肯定論法』とは大体上の通りでありますが、最後に御注意を促したいのは『それだけだ』と言う言葉であります。この『それだけだ』と言う言葉は是非使わなければなりません。第一『それだけだ』と言う以上、『それ』即ち『より悪い半ば』を肯定していることは確かであります。しかし又第二に『それ』以外のものを否定していることも確かであります。即ち『それだけだ』と言う言葉は<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る一揚一抑の趣に富んでいると申さなければなりません。が、更に微妙なことには第三に『それ』の芸術的価値さえ、隠約の間に否定しています。勿論否定していると言っても、なぜ否定するかと言うことは説明も何もしていません。<ruby><rb>只</rb><rt>ただ</rt></ruby>言外に否定している、――これはこの『それだけだ』と言う言葉の最も著しい特色であります。<ruby><rb>顕</rb><rt>けん</rt></ruby>にして<ruby><rb>晦</rb><rt>かい</rt></ruby>、肯定にして否定とは正に『それだけだ』の<ruby><rb>謂</rb><rt>いい</rt></ruby>でありましょう。</p>
+        <p>「この『半肯定論法』は『全否定論法』或は『木に<ruby><rb>縁</rb><rt>よ</rt></ruby>って魚を求むる論法』よりも信用を博し易いかと思います。『全否定論法』或は『木に縁って魚を求むる論法』とは先週申し上げた通りでありますが、念の為めにざっと繰り返すと、或作品の芸術的価値をその芸術的価値そのものにより、全部否定する論法であります。たとえば或悲劇の芸術的価値を否定するのに、悲惨、不快、<ruby><rb>憂欝</rb><rt>ゆううつ</rt></ruby>等の非難を加える事と思えばよろしい。又この非難を逆に用い、幸福、愉快、軽妙等を欠いていると<ruby><rb>罵</rb><rt>ののし</rt></ruby>ってもかまいません。一名『木に縁って魚を求むる論法』と申すのは後に挙げた場合を指したのであります。『全否定論法』或は『木に縁って魚を求むる論法』は痛快を極めている代りに、時には<ruby><rb>偏頗</rb><rt>へんぱ</rt></ruby>の疑いを招かないとも限りません。しかし『半肯定論法』は<ruby><rb>兎</rb><rt>と</rt></ruby>に<ruby><rb>角</rb><rt>かく</rt></ruby>或作品の芸術的価値を半ばは認めているのでありますから、容易に公平の看を与え得るのであります。</p>
+        <p>「<ruby><rb>就</rb><rt>つ</rt></ruby>いては演習の題目に<persName ref="#sasaki-mosaku">佐佐木茂索</persName>氏の新著『春の<ruby><rb>外套</rb><rt>がいとう</rt></ruby>』を出しますから、来週までに<persName ref="#sasaki-mosaku">佐佐木</persName>氏の作品へ『半肯定論法』を加えて来て下さい。（この時若い聴講生が一人、「先生、『全否定論法』を加えてはいけませんか？」と質問する）いや、『全否定論法』を加えることは少くとも当分の間は見合せなければなりません。<persName ref="#sasaki-mosaku">佐佐木</persName>氏は兎に角声名のある新進作家でありますから、やはり『半肯定論法』位を加えるのに限ると思います。……」</p>
+        <p>＊　＊　＊　＊　＊</p>
+        <p>一週間たった後、最高点を採った答案は下に掲げる通りである。</p>
+        <p>「正に器用には書いている。が、畢竟それだけだ。」</p>
+        <p>親子</p>
+        <p>親は子供を養育するのに適しているかどうかは疑問である。成種牛馬は親の為に養育されるのに違いない。しかし自然の名のもとにこの旧習の弁護するのは確かに親の<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>である。<ruby><rb>若</rb><rt>も</rt></ruby>し自然の名のもとに如何なる旧習も弁護出来るならば、まず我我は未開人種の<ruby><rb>掠奪</rb><rt>りゃくだつ</rt></ruby>結婚を弁護しなければならぬ。</p>
+        <p>又</p>
+        <p>子供に対する母親の愛は最も利己心のない愛である。が、利己心のない愛は必ずしも子供の養育に最も適したものではない。この愛の子供に与える影響は――少くとも影響の大半は暴君にするか、弱者にするかである。</p>
+        <p>又</p>
+        <p>人生の悲劇の第一幕は親子となったことにはじまっている。</p>
+        <p>又</p>
+        <p>古来如何に大勢の親はこう言う言葉を繰り返したであろう。――「わたしは畢竟失敗者だった。しかしこの子だけは成功させなければならぬ。」</p>
+        <p>可能</p>
+        <p>我々はしたいことの出来るものではない。只出来ることをするものである。これは我我個人ばかりではない。我我の社会も同じことである。恐らくは神も希望通りにこの世界を造ることは出来なかったであろう。</p>
+        <p><persName ref="#george-moore">ムアア</persName>の言葉</p>
+        <p><persName ref="#george-moore">ジョオジ・ムアア</persName>は「我死せる自己の備忘録」の中にこう言う言葉を挟んでいる。――「偉大なる画家は名前を入れる場所をちゃんと心得ているものである。又決して同じ所に二度と名前を入れぬものである。」</p>
+        <p>勿論「決して同じ所に二度と名前を入れぬこと」は如何なる画家にも不可能である。しかしこれは<ruby><rb>咎</rb><rt>とが</rt></ruby>めずとも好い。わたしの意外に感じたのは「偉大なる画家は名前を入れる場所をちゃんと心得ている」と言う言葉である。東洋の画家には<ruby><rb>未</rb><rt>いま</rt></ruby>だ<ruby><rb>甞</rb><rt>かつ</rt></ruby>て<ruby><rb>落款</rb><rt>らくかん</rt></ruby>の場所を軽視したるものはない。落款の場所に注意せよなどと言うのは<ruby><rb>陳套語</rb><rt>ちんとうご</rt></ruby>である。それを特筆する<persName ref="#george-moore">ムアア</persName>を思うと、<ruby><rb>坐</rb><rt>そぞ</rt></ruby>ろに東西の差を感ぜざるを得ない。</p>
+        <p>大作</p>
+        <p>大作を傑作と混同するものは確かに鑑賞上の物質主義である。大作は手間賃の問題にすぎない。わたしは<persName ref="#michelangelo">ミケル・アンジェロ</persName>の「最後の審判」の壁画よりも<ruby><rb>遥</rb><rt>はる</rt></ruby>かに六十何歳かの<persName ref="#rembrandt">レムブラント</persName>の自画像を愛している。</p>
+        <p>わたしの愛する作品</p>
+        <p>わたしの愛する作品は、――文芸上の作品は畢竟作家の人間を感ずることの出来る作品である。人間を――頭脳と心臓と官能とを一人前に<ruby><rb>具</rb><rt>そな</rt></ruby>えた人間を。しかし不幸にも大抵の作家はどれか一つを欠いた片輪である。（<ruby><rb>尤</rb><rt>もっと</rt></ruby>も時には偉大なる片輪に敬服することもない<ruby><rb>訣</rb><rt>わけ</rt></ruby>ではない。）</p>
+        <p>「虹霓関」を見て</p>
+        <p>男の女を猟するのではない。女の男を猟するのである。――<persName ref="#shaw">ショウ</persName>は「人と超人と」の中にこの事実を戯曲化した。しかしこれを戯曲化したものは必しも<persName ref="#shaw">ショウ</persName>にはじまるのではない。わたくしは<persName ref="#mei-lanfang"><ruby><rb>梅蘭芳</rb><rt>メイランファン</rt></ruby></persName>の「<ruby><rb>虹霓関</rb><rt>こうげいかん</rt></ruby>」を見、<placeName ref="#china">支那</placeName>にも既にこの事実に注目した戯曲家のあるのを知った。のみならず「戯考」は「虹霓関」の外にも、女の男を<ruby><rb>捉</rb><rt>とら</rt></ruby>えるのに<persName ref="#songo">孫呉</persName>の兵機と<ruby><rb>剣戟</rb><rt>けんげき</rt></ruby>とを用いた幾多の物語を伝えている。</p>
+        <p>「<ruby><rb>董家山</rb><rt>とうかざん</rt></ruby>」の女主人公<persName ref="#kinren">金蓮</persName>、「<ruby><rb>轅門斬子</rb><rt>えんもんざんし</rt></ruby>」の女主人公<persName ref="#keiei">桂英</persName>、「<ruby><rb>双鎖山</rb><rt>そうさざん</rt></ruby>」の女主人公<persName ref="#kintei">金定</persName>等は<ruby><rb>悉</rb><rt>ことごとく</rt></ruby>こう言う女傑である。更に「馬上縁」の女主人公<persName ref="#rika">梨花</persName>を見れば彼女の愛する少年将軍を馬上に<ruby><rb>俘</rb><rt>とりこ</rt></ruby>にするばかりではない。彼の妻にすまぬと言うのを無理に結婚してしまうのである。<persName ref="#hu-shih"><ruby><rb>胡適</rb><rt>こてき</rt></ruby></persName>氏はわたしにこう言った。――「わたしは『四進士』を除きさえすれば、全京劇の価値を否定したい。」しかし是等の京劇は少くとも甚だ哲学的である。哲学者<persName ref="#hu-shih">胡適</persName>氏はこの価値の前に多少氏の<ruby><rb>雷霆</rb><rt>らいてい</rt></ruby>の怒を和げる<ruby><rb>訣</rb><rt>わけ</rt></ruby>には行かないであろうか？</p>
+        <p>経験</p>
+        <p>経験ばかりにたよるのは消化力を考えずに食物ばかりにたよるものである。同時に又経験を<ruby><rb>徒</rb><rt>いたず</rt></ruby>らにしない能力ばかりにたよるのもやはり食物を考えずに消化力ばかりにたよるものである。</p>
+        <p><persName ref="#achilles">アキレス</persName></p>
+        <p><placeName ref="#greece"><ruby><rb>希臘</rb><rt>ギリシア</rt></ruby></placeName>の英雄<persName ref="#achilles">アキレス</persName>は<ruby><rb>踵</rb><rt>かかと</rt></ruby>だけ不死身ではなかったそうである。――即ち<persName ref="#achilles">アキレス</persName>を知る為には<persName ref="#achilles">アキレス</persName>の踵を知らなければならぬ。</p>
+        <p>芸術家の幸福</p>
+        <p>最も幸福な芸術家は晩年に名声を得る芸術家である。<persName ref="#kunikida-doppo">国木田独歩</persName>もそれを思えば、必しも不幸な芸術家ではない。</p>
+        <p>好人物</p>
+        <p>女は常に好人物を夫に持ちたがるものではない。しかし男は好人物を常に友だちに持ちたがるものである。</p>
+        <p>又</p>
+        <p>好人物は何よりも先に天上の神に似たものである。第一に歓喜を語るのに好い。第二に不平を訴えるのに好い。第三に――いてもいないでも好い。</p>
+        <p>罪</p>
+        <p>「その罪を憎んでその人を憎まず」とは<ruby><rb>必</rb><rt>かならず</rt></ruby>しも行うに難いことではない。大抵の子は大抵の親にちゃんとこの格言を実行している。</p>
+        <p>桃李</p>
+        <p>「<ruby><rb>桃李</rb><rt>とうり</rt></ruby>言わざれども、下<ruby><rb>自</rb><rt>おのずか</rt></ruby>ら<ruby><rb>蹊</rb><rt>けい</rt></ruby>を成す」とは確かに知者の言である。<ruby><rb>尤</rb><rt>もっと</rt></ruby>も「桃李言わざれども」ではない。実は「桃李言わざれば」である。</p>
+        <p>偉大</p>
+        <p>民衆は人格や事業の偉大に<ruby><rb>籠絡</rb><rt>ろうらく</rt></ruby>されることを愛するものである。が、偉大に直面することは有史以来愛したことはない。</p>
+        <p>広告</p>
+        <p>「<ruby><rb>侏儒</rb><rt>しゅじゅ</rt></ruby>の言葉」十二月号の「<persName ref="#sasaki-mosaku">佐佐木茂索</persName>君の為に」は<persName ref="#sasaki-mosaku">佐佐木</persName>君を<ruby><rb>貶</rb><rt>けな</rt></ruby>したのではありません。<persName ref="#sasaki-mosaku">佐佐木</persName>君を認めない批評家を<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>ったものであります。こう言うことを広告するのは「文芸春秋」の読者の頭脳を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>することになるのかも知れません。しかし実際或批評家は<persName ref="#sasaki-mosaku">佐佐木</persName>君を貶したものと思いこんでいたそうであります。<ruby><rb>且</rb><rt>かつ</rt></ruby>又この批評家の亜流も少くないように聞き及びました。その為に一言広告します。尤もこれを公にするのはわたくしの発意ではありません。実は先輩<persName ref="#satomi-ton"><ruby><rb>里見弴</rb><rt>さとみとん</rt></ruby></persName>君の<ruby><rb>煽動</rb><rt>せんどう</rt></ruby>によった結果であります。どうかこの広告に憤る読者は<persName ref="#satomi-ton">里見</persName>君に非難を加えて下さい。「侏儒の言葉」の作者。</p>
+        <p>追加広告</p>
+        <p>前掲の広告中、「<persName ref="#satomi-ton">里見</persName>君に非難を加えて下さい」と言ったのは<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>わたしの<ruby><rb>常談</rb><rt>じょうだん</rt></ruby>であります。実際は非難を加えずともよろしい。わたしは或批評家の代表する一団の天才に敬服した余り、どうも多少ふだんよりも神経質になったようであります。同上</p>
+        <p>再追加広告</p>
+        <p>前掲の追加広告中、「或批評家の代表する一団の天才に敬服した」と言うのは勿論反語と言うものであります。同上</p>
+        <p>芸術</p>
+        <p>画力は三百年、書力は五百年、文章の力は千古無窮とは<persName ref="#o-seitei"><ruby><rb>王世貞</rb><rt>おうせいてい</rt></ruby></persName>の言う所である。しかし<placeName ref="#tonko"><ruby><rb>敦煌</rb><rt>とんこう</rt></ruby></placeName>の発掘品等に徴すれば、書画は五百年を<ruby><rb>閲</rb><rt>けみ</rt></ruby>した後にも依然として力を保っているらしい。のみならず文章も千古無窮に力を保つかどうかは疑問である。観念も時の支配の外に超然としていることの出来るものではない。我我の祖先は「神」と言う言葉に衣冠束帯の人物を<ruby><rb>髣髴</rb><rt>ほうふつ</rt></ruby>していた。しかし我我は同じ言葉に<ruby><rb>髯</rb><rt>ひげ</rt></ruby>の長い西洋人を髣髴している。これはひとり神に限らず、何ごとにも起り得るものと思わなければならぬ。</p>
+        <p>又</p>
+        <p>わたしはいつか<persName ref="#sharaku"><ruby><rb>東洲斎写楽</rb><rt>とうしゅうさいしゃらく</rt></ruby></persName>の似顔画を見たことを覚えている。その画中の人物は緑いろの<ruby><rb>光琳波</rb><rt>こうりんは</rt></ruby>を描いた扇面を胸に開いていた。それは全体の色彩の効果を強めているのに違いなかった。が、<ruby><rb>廓大鏡</rb><rt>かくだいきょう</rt></ruby>に<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて見ると、緑いろをしているのは<ruby><rb>緑青</rb><rt>ろくしょう</rt></ruby>を生じた金いろだった。わたしはこの一枚の<persName ref="#sharaku">写楽</persName>に美しさを感じたのは事実である。けれどもわたしの感じたのは<persName ref="#sharaku">写楽</persName>の<ruby><rb>捉</rb><rt>とら</rt></ruby>えた美しさと異っていたのも事実である。こう言う変化は文章の上にもやはり起るものと思わなければならぬ。</p>
+        <p>又</p>
+        <p>芸術も女と同じことである。最も美しく見える為には一時代の精神的雰囲気或は流行に包まれなければならぬ。</p>
+        <p>又</p>
+        <p>のみならず芸術は空間的にもやはり<ruby><rb>軛</rb><rt>くびき</rt></ruby>を負わされている。一国民の芸術を愛する為には一国民の生活を知らなければならぬ。<placeName ref="#tozenji">東禅寺</placeName>に浪士の襲撃を受けた<placeName ref="#england"><ruby><rb>英吉利</rb><rt>イギリス</rt></ruby></placeName>の特命全権公使<persName ref="#alcock">サア・ルサアフォオド・オルコック</persName>は我我日本人の音楽にも騒音を感ずる<ruby><rb>許</rb><rt>ばか</rt></ruby>りだった。彼の「日本に於ける三年間」はこう言う一節を含んでいる。――「我我は坂を登る途中、ナイティンゲエルの声に近い<ruby><rb>鶯</rb><rt>うぐいす</rt></ruby>の声を耳にした。日本人は鶯に歌を教えたと言うことである。それは<ruby><rb>若</rb><rt>も</rt></ruby>しほんとうとすれば、驚くべきことに違いない。元来日本人は音楽と言うものを自ら教えることも知らないのであるから。」（第二巻第二十九章）</p>
+        <p>天才</p>
+        <p>天才とは<ruby><rb>僅</rb><rt>わず</rt></ruby>かに我我と一歩を隔てたもののことである。<ruby><rb>只</rb><rt>ただ</rt></ruby>この一歩を理解する為には百里の半ばを九十九里とする超数学を知らなければならぬ。</p>
+        <p>又</p>
+        <p>天才とは僅かに我我と一歩を隔てたもののことである。同時代は常にこの一歩の千里であることを理解しない。後代は又この千里の一歩であることに盲目である。同時代はその為に天才を殺した。後代は又その為に天才の前に香を<ruby><rb>焚</rb><rt>た</rt></ruby>いている。</p>
+        <p>又</p>
+        <p>民衆も天才を認めることに<ruby><rb>吝</rb><rt>やぶさ</rt></ruby>かであるとは信じ難い。しかしその認めかたは常に<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>である。</p>
+        <p>又</p>
+        <p>天才の悲劇は「小ぢんまりした、居心の好い名声」を与えられることである。</p>
+        <p>又</p>
+        <p><persName ref="#jesus"><ruby><rb>耶蘇</rb><rt>やそ</rt></ruby></persName>「我笛吹けども、<ruby><rb>汝等</rb><rt>なんじら</rt></ruby>踊らず。」</p>
+        <p>彼等「我等踊れども、汝足らわず。」</p>
+        <p>譃</p>
+        <p>我我は如何なる場合にも、我我の利益を擁護せぬものに「清き一票」を投ずる<ruby><rb>筈</rb><rt>はず</rt></ruby>はない。この「我我の利益」の代りに「天下の利益」を置き換えるのは全共和制度の<ruby><rb>譃</rb><rt>うそ</rt></ruby>である。この譃だけは<placeName ref="#soviet">ソヴィエット</placeName>の治下にも消滅せぬものと思わなければならぬ。</p>
+        <p>又</p>
+        <p>一体になった二つの観念を採り、その接触点を吟味すれば、諸君は如何に多数の譃に養われているかを発見するであろう。あらゆる成語はこの故に常に一つの問題である。</p>
+        <p>又</p>
+        <p>我我の社会に合理的外観を与えるものは実はその不合理の――その余りに甚しい不合理の為ではないであろうか？</p>
+        <p><persName ref="#lenin">レニン</persName></p>
+        <p>わたしの最も驚いたのは<persName ref="#lenin">レニン</persName>の余りに当り前の英雄だったことである。</p>
+        <p>賭博</p>
+        <p>偶然即ち神と闘うものは常に神秘的威厳に満ちている。<ruby><rb>賭博者</rb><rt>とばくしゃ</rt></ruby>も亦この例に<ruby><rb>洩</rb><rt>も</rt></ruby>れない。</p>
+        <p>又</p>
+        <p>古来賭博に熱中した<ruby><rb>厭世</rb><rt>えんせい</rt></ruby>主義者のないことは如何に賭博の人生に酷似しているかを示すものである。</p>
+        <p>又</p>
+        <p>法律の賭博を禁ずるのは賭博に<ruby><rb>依</rb><rt>よ</rt></ruby>る富の分配法そのものを非とする為ではない。実は<ruby><rb>唯</rb><rt>ただ</rt></ruby>その経済的ディレッタンティズムを非とする為である。</p>
+        <p>懐疑主義</p>
+        <p>懐疑主義も一つの信念の上に、――疑うことは疑わぬと言う信念の上に立つものである。成程それは矛盾かも知れない。しかし懐疑主義は同時に又少しも信念の上に立たぬ哲学のあることをも疑うものである。</p>
+        <p>正直</p>
+        <p>若し正直になるとすれば、我我は<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち何びとも正直になられぬことを見出すであろう。この故に我我は正直になることに不安を感ぜずにはいられぬのである。</p>
+        <p>虚偽</p>
+        <p>わたしは或譃つきを知っていた。彼女は誰よりも幸福だった。が、余りに譃の巧みだった為にほんとうのことを話している時さえ譃をついているとしか思われなかった。それだけは確かに誰の目にも彼女の悲劇に違いなかった。</p>
+        <p>又</p>
+        <p>わたしも亦あらゆる芸術家のように<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ譃には巧みだった。が、いつも彼女には<ruby><rb>一籌</rb><rt>いっちゅう</rt></ruby>を<ruby><rb>輸</rb><rt>ゆ</rt></ruby>する外はなかった。彼女は実に去年の譃をも五分前の譃のように覚えていた。</p>
+        <p>又</p>
+        <p>わたしは不幸にも知っている。時には譃に依る外は語られぬ真実もあることを。</p>
+        <p>諸君</p>
+        <p>諸君は青年の芸術の為に堕落することを恐れている。しかしまず安心し給え。諸君ほどは容易に堕落しない。</p>
+        <p>又</p>
+        <p>諸君は芸術の国民を毒することを恐れている。しかしまず安心し給え。少くとも諸君を毒することは絶対に芸術には不可能である。二千年来芸術の魅力を理解せぬ諸君を毒することは。</p>
+        <p>忍従</p>
+        <p>忍従はロマンティックな卑屈である。</p>
+        <p>企図</p>
+        <p>成すことは必しも困難ではない。が、欲することは常に困難である。少くとも成すに足ることを欲するのは。</p>
+        <p>又</p>
+        <p>彼等の大小を知らんとするものは彼等の成したことに依り、彼等の成さんとしたことを見なければならぬ。</p>
+        <p>兵卒</p>
+        <p>理想的兵卒は<ruby><rb>苟</rb><rt>いやし</rt></ruby>くも上官の命令には絶対に服従しなければならぬ。絶対に服従することは絶対に批判を加えぬことである。即ち理想的兵卒はまず理性を失わなければならぬ。</p>
+        <p>又</p>
+        <p>理想的兵卒は苟くも上官の命令には絶対に服従しなければならぬ。絶対に服従することは絶対に責任を負わぬことである。即ち理想的兵卒はまず無責任を好まなければならぬ。</p>
+        <p>軍事教育</p>
+        <p>軍事教育と言うものは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby><ruby><rb>只</rb><rt>ただ</rt></ruby>軍事用語の知識を与えるばかりである。その他の知識や訓練は何も特に軍事教育を待った後に得られるものではない。現に海陸軍の学校さえ、機械学、物理学、応用化学、語学等は<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>、剣道、柔道、水泳等にもそれぞれ専門家を<ruby><rb>傭</rb><rt>やと</rt></ruby>っているではないか？　しかも更に考えて見れば、軍事用語も学術用語と違い、大部分は通俗的用語である。すると軍事教育と言うものは事実上ないものと言わなければならぬ。事実上ないものの利害得失は勿論問題にはならぬ<ruby><rb>筈</rb><rt>はず</rt></ruby>である。</p>
+        <p>勤倹尚武</p>
+        <p>「勤倹尚武」と言う成語位、無意味を極めているものはない。尚武は国際的<ruby><rb>奢侈</rb><rt>しゃし</rt></ruby>である。現に列強は軍備の為に大金を費しているではないか？　<ruby><rb>若</rb><rt>も</rt></ruby>し「勤倹尚武」と言うことも痴人の談でないとすれば、「勤倹<ruby><rb>遊蕩</rb><rt>ゆうとう</rt></ruby>」と言うこともやはり通用すると言わなければならぬ。</p>
+        <p>日本人</p>
+        <p>我我日本人の二千年来君に忠に親に孝だったと思うのは<persName ref="#sarutahiko"><ruby><rb>猿田彦命</rb><rt>さるたひこのみこと</rt></ruby></persName>もコスメ・ティックをつけていたと思うのと同じことである。もうそろそろありのままの歴史的事実に徹して見ようではないか？</p>
+        <p>倭寇</p>
+        <p><ruby><rb>倭寇</rb><rt>わこう</rt></ruby>は我我日本人も優に列強に<ruby><rb>伍</rb><rt>ご</rt></ruby>するに足る能力のあることを示したものである。我我は盗賊、<ruby><rb>殺戮</rb><rt>さつりく</rt></ruby>、<ruby><rb>姦淫</rb><rt>かんいん</rt></ruby>等に於ても、決して「黄金の島」を探しに来た<ruby><rb>西班牙人</rb><rt>スペインじん</rt></ruby>、<ruby><rb>葡萄牙人</rb><rt>ポルトガルじん</rt></ruby>、<ruby><rb>和蘭人</rb><rt>オランダじん</rt></ruby>、<ruby><rb>英吉利人</rb><rt>イギリスじん</rt></ruby>等に劣らなかった。</p>
+        <p>つれづれ草</p>
+        <p>わたしは度たびこう言われている。――「つれづれ草などは定めしお好きでしょう？」しかし不幸にも「つれづれ草」などは<ruby><rb>未嘗</rb><rt>いまだかつて</rt></ruby>愛読したことはない。正直な所を白状すれば「つれづれ草」の名高いのもわたしには<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど不可解である。中学程度の教科書に便利であることは認めるにもしろ。</p>
+        <p>徴候</p>
+        <p>恋愛の徴候の一つは彼女は過去に何人の男を愛したか、或はどう言う男を愛したかを考え、その架空の何人かに漠然とした<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>を感ずることである。</p>
+        <p>又</p>
+        <p>又恋愛の徴候の一つは彼女に似た顔を発見することに極度に鋭敏になることである。</p>
+        <p>恋愛と死と</p>
+        <p>恋愛の死を想わせるのは進化論的根拠を持っているのかも知れない。<ruby><rb>蜘蛛</rb><rt>くも</rt></ruby>や蜂は交尾を終ると、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち雄は雌の為に刺し殺されてしまうのである。わたしは<placeName ref="#italy"><ruby><rb>伊太利</rb><rt>イタリア</rt></ruby></placeName>の旅役者の歌劇「カルメン」を演ずるのを見た時、どうも<persName ref="#carmen">カルメン</persName>の一挙一動に蜂を感じてならなかった。</p>
+        <p>身代り</p>
+        <p>我我は彼女を愛する為に往々彼女の外の女人を彼女の身代りにするものである。こう言う羽目に陥るのは<ruby><rb>必</rb><rt>かならず</rt></ruby>しも彼女の我我を<ruby><rb>却</rb><rt>しりぞ</rt></ruby>けた場合に限る<ruby><rb>訣</rb><rt>わけ</rt></ruby>ではない。我我は時には<ruby><rb>怯懦</rb><rt>きょうだ</rt></ruby>の為に、時には又美的要求の為にこの残酷な慰安の相手に一人の女人を使い兼ねぬのである。</p>
+        <p>結婚</p>
+        <p>結婚は性慾を調節することには有効である。が、恋愛を調節することには有効ではない。</p>
+        <p>又</p>
+        <p>彼は二十代に結婚した後、一度も恋愛関係に陥らなかった。何と言う俗悪さ加減！</p>
+        <p>多忙</p>
+        <p>我我を恋愛から救うものは理性よりも<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ多忙である。恋愛も亦完全に行われる為には何よりも時間を持たなければならぬ。<persName ref="#werther">ウエルテル</persName>、<persName ref="#romeo">ロミオ</persName>、<persName ref="#tristan">トリスタン</persName>――古来の恋人を考えて見ても、彼等は皆<ruby><rb>閑人</rb><rt>ひまじん</rt></ruby>ばかりである。</p>
+        <p>男子</p>
+        <p>男子は由来恋愛よりも仕事を尊重するものである。若しこの事実を疑うならば、<persName ref="#balzac">バルザック</persName>の手紙を読んで見るが好い。<persName ref="#balzac">バルザック</persName>は<persName ref="#hanska">ハンスカ伯爵夫人</persName>に「この手紙も原稿料に換算すれば、何フランを越えている」と書いている。</p>
+        <p>行儀</p>
+        <p>昔わたしの家に出入りした男まさりの女髪結は娘を一人持っていた。わたしは未だに<ruby><rb>蒼白</rb><rt>あおじろ</rt></ruby>い顔をした十二三の娘を覚えている。女髪結はこの娘に行儀を教えるのにやかましかった。殊に<ruby><rb>枕</rb><rt>まくら</rt></ruby>をはずすことにはその都度<ruby><rb>折檻</rb><rt>せっかん</rt></ruby>を加えていたらしい。が、近頃ふと聞いた話によれば、娘はもう震災前に芸者になったとか言うことである。わたしはこの話を聞いた時、ちょっともの哀れに感じたものの、微笑しない訣には行かなかった。彼女は定めし芸者になっても、厳格な母親の<ruby><rb>躾</rb><rt>しつ</rt></ruby>け通り、枕だけははずすまいと思っているであろう。……</p>
+        <p>自由</p>
+        <p>誰も自由を求めぬものはない。が、それは外見だけである。実は誰も<ruby><rb>肚</rb><rt>はら</rt></ruby>の底では少しも自由を求めていない。その証拠には人命を奪うことに少しも<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>しない無頼漢さえ、<ruby><rb>金甌無欠</rb><rt>きんおうむけつ</rt></ruby>の国家の為に某某を殺したと言っているではないか？　しかし自由とは我我の行為に何の拘束もないことであり、即ち神だの道徳だの或は又社会的習慣だのと連帯責任を負うことを潔しとしないものである。</p>
+        <p>又</p>
+        <p>自由は<ruby><rb>山巓</rb><rt>さんてん</rt></ruby>の空気に似ている。どちらも弱い者には堪えることは出来ない。</p>
+        <p>又</p>
+        <p>まことに自由を眺めることは直ちに神々の顔を見ることである。</p>
+        <p>又</p>
+        <p>自由主義、自由恋愛、自由貿易、――どの「自由」も<ruby><rb>生憎</rb><rt>あいにく</rt></ruby>杯の中に多量の水を混じている。しかも大抵はたまり水を。</p>
+        <p>言行一致</p>
+        <p>言行一致の美名を得る為にはまず自己弁護に長じなければならぬ。</p>
+        <p>方便</p>
+        <p>一人を欺かぬ聖賢はあっても、天下を欺かぬ聖賢はない。仏家の<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>善巧方便とは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>精神上のマキアヴェリズムである。</p>
+        <p>芸術至上主義者</p>
+        <p>古来熱烈なる芸術至上主義者は大抵芸術上の去勢者である。丁度熱烈なる国家主義者は大抵亡国の民であるように――我我は誰でも我我自身の持っているものを欲しがるものではない。</p>
+        <p>唯物史観</p>
+        <p><ruby><rb>若</rb><rt>も</rt></ruby>し如何なる小説家も<persName ref="#marx">マルクス</persName>の唯物史観に立脚した人生を写さなければならぬならば、同様に又如何なる詩人も<persName ref="#copernicus">コペルニクス</persName>の地動説に立脚した日月山川を歌わなければならぬ。が、「太陽は西に沈み」と言う代りに「地球は何度何分<ruby><rb>廻転</rb><rt>かいてん</rt></ruby>し」と言うのは必しも常に優美ではあるまい。</p>
+        <p><placeName ref="#china">支那</placeName></p>
+        <p>蛍の幼虫は<ruby><rb>蝸牛</rb><rt>かたつむり</rt></ruby>を食う時に全然蝸牛を殺してはしまわぬ。いつも新らしい肉を食う為に蝸牛を<ruby><rb>麻痺</rb><rt>まひ</rt></ruby>させてしまうだけである。我日本帝国を始め、列強の<placeName ref="#china">支那</placeName>に対する態度は畢竟この蝸牛に対する蛍の態度と選ぶ所はない。</p>
+        <p>又</p>
+        <p>今日の<placeName ref="#china">支那</placeName>の最大の悲劇は無数の国家的<ruby><rb>羅曼</rb><rt>ローマン</rt></ruby>主義者即ち「若き<placeName ref="#china">支那</placeName>」の為に鉄の如き訓練を与えるに足る一人の<persName ref="#mussolini">ムッソリニ</persName>もいないことである。</p>
+        <p>小説</p>
+        <p>本当らしい小説とは単に事件の発展に偶然性の少ないばかりではない。恐らくは人生に於けるよりも偶然性の少ない小説である。</p>
+        <p>文章</p>
+        <p>文章の中にある言葉は辞書の中にある時よりも美しさを加えていなければならぬ。</p>
+        <p>又</p>
+        <p>彼等は皆<persName ref="#chogyu"><ruby><rb>樗牛</rb><rt>ちょぎゅう</rt></ruby></persName>のように「文は人なり」と称している。が、いずれも内心では「人は文なり」と思っているらしい。</p>
+        <p>女の顔</p>
+        <p>女は情熱に駆られると、不思議にも少女らしい顔をするものである。<ruby><rb>尤</rb><rt>もっと</rt></ruby>もその情熱なるものはパラソルに対する情熱でも差支えない。</p>
+        <p>世間智</p>
+        <p>消火は放火ほど容易ではない。こう言う世間智の代表的所有者は確かに「ベル・アミ」の主人公であろう。彼は恋人をつくる時にもちゃんともう絶縁することを考えている。</p>
+        <p>又</p>
+        <p>単に世間に処するだけならば、情熱の不足などは患わずとも好い。それよりも<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ危険なのは明らかに冷淡さの不足である。</p>
+        <p>恒産</p>
+        <p>恒産のないものに恒心のなかったのは二千年ばかり昔のことである。今日では恒産のあるものは寧ろ恒心のないものらしい。</p>
+        <p>彼等</p>
+        <p>わたしは実は彼等夫婦の恋愛もなしに相抱いて暮らしていることに驚嘆していた。が、彼等はどう云う<ruby><rb>訣</rb><rt>わけ</rt></ruby>か、恋人同志の相抱いて死んでしまったことに驚嘆している。</p>
+        <p>作家所生の言葉</p>
+        <p>「振っている」「高等遊民」「露悪家」「月並み」等の言葉の文壇に行われるようになったのは<persName ref="#natsume-soseki">夏目</persName>先生から始まっている。こう言う作家<ruby><rb>所生</rb><rt>しょせい</rt></ruby>の言葉は<persName ref="#natsume-soseki">夏目</persName>先生以後にもない訣ではない。<persName ref="#kume-masao">久米正雄</persName>君所生の「微苦笑」「強気弱気」などはその最たるものであろう。なお又「等、等、等」と書いたりするのも<persName ref="#uno-koji">宇野浩二</persName>君所生のものである。我我は常に意識して帽子を脱いでいるものではない。のみならず時には意識的には敵とし、怪物とし、犬となすものにもいつか帽子を脱いでいるものである。或作家を<ruby><rb>罵</rb><rt>ののし</rt></ruby>る文章の中にもその作家の作った言葉の出るのは必ずしも偶然ではないかも知れない。</p>
+        <p>幼児</p>
+        <p>我我は一体何の為に幼い子供を愛するのか？　その理由の一半は少くとも幼い子供にだけは欺かれる心配のない為である。</p>
+        <p>又</p>
+        <p>我我の<ruby><rb>恬然</rb><rt>てんぜん</rt></ruby>と我我の愚を公にすることを恥じないのは幼い子供に対する時か、――或は、犬猫に対する時だけである。</p>
+        <p><persName ref="#ike-no-taiga">池大雅</persName></p>
+        <p>「<persName ref="#ike-no-taiga"><ruby><rb>大雅</rb><rt>たいが</rt></ruby></persName>は余程<ruby><rb>呑気</rb><rt>のんき</rt></ruby>な人で、世情に疎かった事は、其室<persName ref="#gyokuran"><ruby><rb>玉瀾</rb><rt>ぎょくらん</rt></ruby></persName>を迎えた時に夫婦の交りを知らなかったと云うので<ruby><rb>略</rb><rt>ほぼ</rt></ruby>其人物が察せられる。」</p>
+        <p>「<persName ref="#ike-no-taiga">大雅</persName>が妻を迎えて夫婦の道を知らなかったと云う様な話も、人間離れがしていて面白いと云えば、面白いと云えるが、丸で常識のない愚かな事だと云えば、そうも云えるだろう。」</p>
+        <p>こう言う伝説を信ずる人はここに引いた文章の示すように今日もまだ芸術家や美術史家の間に残っている。<persName ref="#ike-no-taiga">大雅</persName>は<persName ref="#gyokuran">玉瀾</persName>を<ruby><rb>娶</rb><rt>めと</rt></ruby>った時に交合のことを行わなかったかも知れない。しかしその故に交合のことを知らずにいたと信ずるならば、――<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>その人はその人自身<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい性欲を持っている余り、<ruby><rb>苟</rb><rt>いやし</rt></ruby>くもちゃんと知っている以上、行わずにすませられる<ruby><rb>筈</rb><rt>はず</rt></ruby>はないと確信している為であろう。</p>
+        <p><persName ref="#ogyu-sorai">荻生徂徠</persName></p>
+        <p><persName ref="#ogyu-sorai"><ruby><rb>荻生徂徠</rb><rt>おぎゅうそらい</rt></ruby></persName>は<ruby><rb>煎</rb><rt>い</rt></ruby>り<ruby><rb>豆</rb><rt>まめ</rt></ruby>を<ruby><rb>噛</rb><rt>か</rt></ruby>んで古人を罵るのを快としている。わたしは彼の煎り豆を噛んだのは倹約の為と信じていたものの、彼の古人を罵ったのは何の為か一向わからなかった。しかし今日考えて見れば、それは今人を罵るよりも確かに当り障りのなかった為である。</p>
+        <p>若楓</p>
+        <p><ruby><rb>若楓</rb><rt>わかかえで</rt></ruby>は幹に手をやっただけでも、もう<ruby><rb>梢</rb><rt>こずえ</rt></ruby>に<ruby><rb>簇</rb><rt>むらが</rt></ruby>った芽を神経のように震わせている。植物と言うものの気味の悪さ！</p>
+        <p>蟇</p>
+        <p>最も美しい<ruby><rb>石竹色</rb><rt>せきちくいろ</rt></ruby>は確かに<ruby><rb>蟇</rb><rt>ひきがえる</rt></ruby>の舌の色である。</p>
+        <p>鴉</p>
+        <p>わたしは或<ruby><rb>雪霽</rb><rt>ゆきばれ</rt></ruby>の薄暮、隣の屋根に止まっていた、まっ青な<ruby><rb>鴉</rb><rt>からす</rt></ruby>を見たことがある。</p>
+        <p>作家</p>
+        <p>文を作るのに欠くべからざるものは何よりも創作的情熱である。その又創作的情熱を燃え立たせるのに欠くべからざるものは何よりも或程度の健康である。<ruby><rb>瑞典</rb><rt>スエーデン</rt></ruby>式体操、菜食主義、複方ジアスタアゼ等を軽んずるのは文を作らんとするものの志ではない。</p>
+        <p>又</p>
+        <p>文を作らんとするものは如何なる都会人であるにしても、その魂の奥底には野蛮人を一人持っていなければならぬ。</p>
+        <p>又</p>
+        <p>文を作らんとするものの彼自身を恥ずるのは罪悪である。彼自身を恥ずる心の上には如何なる独創の芽も生えたことはない。</p>
+        <p>又</p>
+        <p><ruby><rb>百足</rb><rt>むかで</rt></ruby>　ちっとは足でも歩いて見ろ。</p>
+        <p>蝶　ふん、ちっとは羽根でも飛んで見ろ。</p>
+        <p>又</p>
+        <p>気韻は作家の後頭部である。作家自身には見えるものではない。<ruby><rb>若</rb><rt>も</rt></ruby>し又無理に見ようとすれば、<ruby><rb>頸</rb><rt>くび</rt></ruby>の骨を折るのに<ruby><rb>了</rb><rt>おわ</rt></ruby>るだけであろう。</p>
+        <p>又</p>
+        <p>批評家　君は勤め人の生活しか書けないね？</p>
+        <p>作家　誰か何でも書けた人がいたかね？</p>
+        <p>又</p>
+        <p>あらゆる古来の天才は、我我凡人の手のとどかない壁上の<ruby><rb>釘</rb><rt>くぎ</rt></ruby>に帽子をかけている。<ruby><rb>尤</rb><rt>もっと</rt></ruby>も踏み台はなかった<ruby><rb>訣</rb><rt>わけ</rt></ruby>ではない。</p>
+        <p>又</p>
+        <p>しかしああ言う踏み台だけはどこの古道具屋にも転がっている。</p>
+        <p>又</p>
+        <p>あらゆる作家は一面には<ruby><rb>指物師</rb><rt>さしものし</rt></ruby>の面目を<ruby><rb>具</rb><rt>そな</rt></ruby>えている。が、それは恥辱ではない。あらゆる指物師も一面には作家の面目を具えている。</p>
+        <p>又</p>
+        <p>のみならず又あらゆる作家は一面には店を開いている。何、わたしは作品は売らない？　それは君、買い手のない時にはね。或は売らずとも好い時にはね。</p>
+        <p>又</p>
+        <p>俳優や歌手の幸福は彼等の作品ののこらぬことである。――と思うこともない訣ではない。</p>
+        <p>侏儒の言葉（遺稿）</p>
+        <p>弁護</p>
+        <p>他人を弁護するよりも自己を弁護するのは困難である。疑うものは弁護士を見よ。</p>
+        <p>女人</p>
+        <p>健全なる理性は命令している。――「<ruby><rb>爾</rb><rt>なんじ</rt></ruby>、女人を近づくる<ruby><rb>勿</rb><rt>なか</rt></ruby>れ。」</p>
+        <p>しかし健全なる本能は全然反対に命令している。――「爾、女人を避くる勿れ。」</p>
+        <p>又</p>
+        <p>女人は我我男子には正に人生そのものである。即ち諸悪の根源である。</p>
+        <p>理性</p>
+        <p>わたしは<persName ref="#voltaire">ヴォルテェル</persName>を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>している。若し理性に終始するとすれば、我我は我我の存在に<ruby><rb>満腔</rb><rt>まんこう</rt></ruby>の<ruby><rb>呪咀</rb><rt>じゅそ</rt></ruby>を加えなければならぬ。しかし世界の<ruby><rb>賞讃</rb><rt>しょうさん</rt></ruby>に酔った Candide の作者の幸福さは！</p>
+        <p>自然</p>
+        <p>我我の自然を愛する<ruby><rb>所以</rb><rt>ゆえん</rt></ruby>は、――少くともその所以の一つは自然は我我人間のように<ruby><rb>妬</rb><rt>ねた</rt></ruby>んだり欺いたりしないからである。</p>
+        <p>処世術</p>
+        <p>最も賢い処世術は社会的因襲を軽蔑しながら、しかも社会的因襲と矛盾せぬ生活をすることである。</p>
+        <p>女人崇拝</p>
+        <p>「永遠に女性なるもの」を崇拝した<persName ref="#goethe">ゲエテ</persName>は確かに仕合せものの一人だった。が、Yahoo の<ruby><rb>牝</rb><rt>めす</rt></ruby>を軽蔑した<persName ref="#swift">スウィフト</persName>は狂死せずにはいなかったのである。これは女性の<ruby><rb>呪</rb><rt>のろ</rt></ruby>いであろうか？　或は又理性の呪いであろうか？</p>
+        <p>理性</p>
+        <p>理性のわたしに教えたものは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>理性の無力だった。</p>
+        <p>運命</p>
+        <p>運命は偶然よりも必然である。「運命は性格の中にある」と云う言葉は決して等閑に生まれたものではない。</p>
+        <p>教授</p>
+        <p>若し医家の用語を借りれば、<ruby><rb>苟</rb><rt>いやし</rt></ruby>くも文芸を講ずるには臨床的でなければならぬ<ruby><rb>筈</rb><rt>はず</rt></ruby>である。しかも彼等は<ruby><rb>未</rb><rt>いま</rt></ruby>だ<ruby><rb>嘗</rb><rt>かつ</rt></ruby>て人生の<ruby><rb>脈搏</rb><rt>みゃくはく</rt></ruby>に触れたことはない。殊に彼等の或るものは英仏の文芸には通じても彼等を生んだ祖国の文芸には通じていないと称している。</p>
+        <p>知徳合一</p>
+        <p>我我は我我自身さえ知らない。<ruby><rb>況</rb><rt>いわん</rt></ruby>や我我の知ったことを行に移すのは困難である。「<ruby><rb>知慧</rb><rt>ちえ</rt></ruby>と運命」を書いた<persName ref="#maeterlinck">メエテルリンク</persName>も知慧や運命を知らなかった。</p>
+        <p>芸術</p>
+        <p>最も困難な芸術は自由に人生を送ることである。<ruby><rb>尤</rb><rt>もっと</rt></ruby>も「自由に」と云う意味は必ずしも厚顔にと云う意味ではない。</p>
+        <p>自由思想家</p>
+        <p>自由思想家の弱点は自由思想家であることである。彼は到底狂信者のように<ruby><rb>獰猛</rb><rt>どうもう</rt></ruby>に戦うことは出来ない。</p>
+        <p>宿命</p>
+        <p>宿命は後悔の子かも知れない。――或は後悔は宿命の子かも知れない。</p>
+        <p>彼の幸福</p>
+        <p>彼の幸福は彼自身の教養のないことに存している。同時に又彼の不幸も、――ああ、何と云う退屈さ加減！</p>
+        <p>小説家</p>
+        <p>最も善い小説家は「<ruby><rb>世故</rb><rt>せこ</rt></ruby>に通じた詩人」である。</p>
+        <p>言葉</p>
+        <p>あらゆる言葉は銭のように必ず両面を<ruby><rb>具</rb><rt>そな</rt></ruby>えている。例えば「敏感な」と云う言葉の一面は<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>「<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>な」と云うことに過ぎない。</p>
+        <p>或物質主義者の信条</p>
+        <p>「わたしは神を信じていない。しかし神経を信じている。」</p>
+        <p>阿呆</p>
+        <p>阿呆はいつも彼以外の人人を<ruby><rb>悉</rb><rt>ことごと</rt></ruby>く阿呆と考えている。</p>
+        <p>処世的才能</p>
+        <p>何と言っても「憎悪する」ことは処世的才能の一つである。</p>
+        <p>懺悔</p>
+        <p>古人は神の前に<ruby><rb>懺悔</rb><rt>ざんげ</rt></ruby>した。今人は社会の前に懺悔している。すると阿呆や悪党を除けば、何びとも何かに懺悔せずには<ruby><rb>娑婆苦</rb><rt>しゃばく</rt></ruby>に堪えることは出来ないのかも知れない。</p>
+        <p>又</p>
+        <p>しかしどちらの懺悔にしても、どの位信用出来るかと云うことはおのずから又別問題である。</p>
+        <p>「新生」読後</p>
+        <p>果して「新生」はあったであろうか？</p>
+        <p><persName ref="#tolstoy">トルストイ</persName></p>
+        <p><persName ref="#biryukov">ビュルコフ</persName>の<persName ref="#tolstoy">トルストイ</persName>伝を読めば、<persName ref="#tolstoy">トルストイ</persName>の「わが懺悔」や「わが宗教」の<ruby><rb>譃</rb><rt>うそ</rt></ruby>だったことは明らかである。しかしこの譃を話しつづけた<persName ref="#tolstoy">トルストイ</persName>の心ほど傷ましいものはない。彼の譃は余人の真実よりもはるかに紅血を滴らしている。</p>
+        <p>二つの悲劇</p>
+        <p><persName ref="#strindberg">ストリントベリイ</persName>の生涯の悲劇は「観覧随意」だった悲劇である。が、<persName ref="#tolstoy">トルストイ</persName>の生涯の悲劇は不幸にも「観覧随意」ではなかった。従って後者は前者よりも一層悲劇的に終ったのである。</p>
+        <p><persName ref="#strindberg">ストリントベリイ</persName></p>
+        <p>彼は何でも知っていた。しかも彼の知っていたことを何でも無遠慮にさらけ出した。何でも無遠慮に、――いや、彼も亦我我のように多少の打算はしていたであろう。</p>
+        <p>又</p>
+        <p><persName ref="#strindberg">ストリントベリイ</persName>は「伝説」の中に死は苦痛か否かと云う実験をしたことを語っている。しかしこう云う実験は遊戯的に出来るものではない。彼も亦「死にたいと思いながら、しかも死ねなかった」一人である。</p>
+        <p>或理想主義者</p>
+        <p>彼は彼自身の現実主義者であることに少しも疑惑を抱いたことはなかった。しかしこう云う彼自身は畢竟理想化した彼自身だった。</p>
+        <p>恐怖</p>
+        <p>我我に武器を<ruby><rb>執</rb><rt>と</rt></ruby>らしめるものはいつも敵に対する恐怖である。しかも<ruby><rb>屡</rb><rt>しばしば</rt></ruby>実在しない架空の敵に対する恐怖である。</p>
+        <p>我我</p>
+        <p>我我は皆我我自身を恥じ、同時に又彼等を恐れている。が、誰も卒直にこう云う事実を語るものはない。</p>
+        <p>恋愛</p>
+        <p>恋愛は<ruby><rb>唯</rb><rt>ただ</rt></ruby>性慾の詩的表現を受けたものである。少くとも詩的表現を受けない性慾は恋愛と呼ぶに価いしない。</p>
+        <p>或老練家</p>
+        <p>彼はさすがに老練家だった。醜聞を起さぬ時でなければ、恋愛さえ滅多にしたことはない。</p>
+        <p>自殺</p>
+        <p>万人に共通した唯一の感情は死に対する恐怖である。道徳的に自殺の不評判であるのは必ずしも偶然ではないかも知れない。</p>
+        <p>又</p>
+        <p>自殺に対する<persName ref="#montaigne">モンテェエヌ</persName>の弁護は幾多の真理を含んでいる。自殺しないものはしないのではない。自殺することの出来ないのである。</p>
+        <p>又</p>
+        <p>死にたければいつでも死ねるからね。</p>
+        <p>ではためしにやって見給え。</p>
+        <p>革命</p>
+        <p>革命の上に革命を加えよ。<ruby><rb>然</rb><rt>しか</rt></ruby>らば我等は今日よりも合理的に娑婆苦を<ruby><rb>嘗</rb><rt>な</rt></ruby>むることを得べし。</p>
+        <p>死</p>
+        <p><persName ref="#mainlander">マインレンデル</persName>は<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る正確に死の魅力を記述している。実際我我は何かの拍子に死の魅力を感じたが最後、容易にその圏外に逃れることは出来ない。のみならず同心円をめぐるようにじりじり死の前へ歩み寄るのである。</p>
+        <p>「いろは」短歌</p>
+        <p>我我の生活に欠くべからざる思想は或は「いろは」短歌に尽きているかも知れない。</p>
+        <p>運命</p>
+        <p>遺伝、境遇、偶然、――我我の運命を司るものは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>この三者である。自ら喜ぶものは喜んでも善い。しかし他を云々するのは<ruby><rb>僣越</rb><rt>せんえつ</rt></ruby>である。</p>
+        <p>嘲けるもの</p>
+        <p>他を<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>るものは同時に又他に嘲られることを恐れるものである。</p>
+        <p>或日本人の言葉</p>
+        <p>我にスウィツルを与えよ。<ruby><rb>然</rb><rt>しか</rt></ruby>らずんば言論の自由を与えよ。</p>
+        <p>人間的な、余りに人間的な</p>
+        <p>人間的な、余りに人間的なものは大抵は確かに動物的である。</p>
+        <p>或才子</p>
+        <p>彼は悪党になることは出来ても、阿呆になることは出来ないと信じていた。が、何年かたって見ると、少しも悪党になれなかったばかりか、いつも<ruby><rb>唯</rb><rt>ただ</rt></ruby>阿呆に終始していた。</p>
+        <p>希臘人</p>
+        <p><ruby><rb>復讐</rb><rt>ふくしゅう</rt></ruby>の神を<persName ref="#jupiter">ジュピタア</persName>の上に置いた<ruby><rb>希臘人</rb><rt>ギリシアじん</rt></ruby>よ。君たちは何も彼も知り<ruby><rb>悉</rb><rt>つく</rt></ruby>していた。</p>
+        <p>又</p>
+        <p>しかしこれは同時に又如何に我我人間の進歩の遅いかと云うことを示すものである。</p>
+        <p>聖書</p>
+        <p>一人の<ruby><rb>知慧</rb><rt>ちえ</rt></ruby>は民族の知慧に<ruby><rb>若</rb><rt>し</rt></ruby>かない。唯もう少し簡潔であれば、……</p>
+        <p>或孝行者</p>
+        <p>彼は彼の母に孝行した、<ruby><rb>勿論</rb><rt>もちろん</rt></ruby><ruby><rb>愛撫</rb><rt>あいぶ</rt></ruby>や<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>が未亡人だった彼の母を性的に慰めるのを承知しながら。</p>
+        <p>或悪魔主義者</p>
+        <p>彼は悪魔主義の詩人だった。が、勿論実生活の上では安全地帯の外に出ることはたった一度だけで<ruby><rb>懲</rb><rt>こ</rt></ruby>り<ruby><rb>懲</rb><rt>ご</rt></ruby>りしてしまった。</p>
+        <p>或自殺者</p>
+        <p>彼は或<ruby><rb>瑣末</rb><rt>さまつ</rt></ruby>なことの為に自殺しようと決心した。が、その位のことの為に自殺するのは彼の自尊心には痛手だった。彼はピストルを手にしたまま、<ruby><rb>傲然</rb><rt>ごうぜん</rt></ruby>とこう<ruby><rb>独</rb><rt>ひと</rt></ruby>り<ruby><rb>語</rb><rt>ごと</rt></ruby>を言った。――「<persName ref="#napoleon">ナポレオン</persName>でも<ruby><rb>蚤</rb><rt>のみ</rt></ruby>に食われた時は<ruby><rb>痒</rb><rt>かゆ</rt></ruby>いと思ったのに違いないのだ。」</p>
+        <p>或左傾主義者</p>
+        <p>彼は最左翼の更に左翼に位していた。従って最左翼をも<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>していた。</p>
+        <p>無意識</p>
+        <p>我我の性格上の特色は、――少くとも最も著しい特色は我我の意識を超越している。</p>
+        <p>矜誇</p>
+        <p>我我の最も誇りたいのは我我の持っていないものだけである。実例。――<persName ref="#person-t">Ｔ</persName>は<ruby><rb>独逸語</rb><rt>ドイツご</rt></ruby>に<ruby><rb>堪能</rb><rt>たんのう</rt></ruby>だった。が、彼の机上にあるのはいつも英語の本ばかりだった。</p>
+        <p>偶像</p>
+        <p>何びとも偶像を破壊することに異存を持っているものはない。同時に又彼自身を偶像にすることに異存を持っているものもない。</p>
+        <p>又</p>
+        <p>しかし又泰然と偶像になり<ruby><rb>了</rb><rt>おお</rt></ruby>せることは何びとにも出来ることではない。勿論天運を除外例としても。</p>
+        <p><placeName ref="#tengoku">天国</placeName>の民</p>
+        <p><placeName ref="#tengoku">天国</placeName>の民は何よりも先に胃袋や生殖器を持っていない<ruby><rb>筈</rb><rt>はず</rt></ruby>である。</p>
+        <p>或仕合せ者</p>
+        <p>彼は誰よりも単純だった。</p>
+        <p>自己嫌悪</p>
+        <p>最も著しい自己嫌悪の徴候はあらゆるものに<ruby><rb>譃</rb><rt>うそ</rt></ruby>を見つけることである。いや、必ずしもそればかりではない。その又譃を見つけることに少しも満足を感じないことである。</p>
+        <p>外見</p>
+        <p>由来最大の<ruby><rb>臆病者</rb><rt>おくびょうもの</rt></ruby>ほど最大の勇者に見えるものはない。</p>
+        <p>人間的な</p>
+        <p>我我人間の特色は神の決して犯さない過失を犯すと云うことである。</p>
+        <p>罰</p>
+        <p>罰せられぬことほど苦しい罰はない。それも決して罰せられぬと神々でも保証すれば別問題である。</p>
+        <p>罪</p>
+        <p>道徳的並びに法律的範囲に於ける冒険的行為、――罪は畢竟こう云うことである。従って又どう云う罪も伝奇的色彩を帯びないことはない。</p>
+        <p>わたし</p>
+        <p>わたしは良心を持っていない。わたしの持っているのは神経ばかりである。</p>
+        <p>又</p>
+        <p>わたしは度たび他人のことを「死ねば善い」と思ったものである。しかもその又他人の中には肉親さえ交っていなかったことはない。</p>
+        <p>又</p>
+        <p>わたしは度たびこう思った。――「俺があの女に<ruby><rb>惚</rb><rt>ほ</rt></ruby>れた時にあの女も俺に惚れた通り、俺があの女を嫌いになった時にはあの女も俺を嫌いになれば善いのに。」</p>
+        <p>又</p>
+        <p>わたしは三十歳を越した後、いつでも恋愛を感ずるが早いか、一生懸命に<ruby><rb>抒情詩</rb><rt>じょじょうし</rt></ruby>を作り、深入りしない前に脱却した。しかしこれは必しも道徳的にわたしの進歩したのではない。唯ちょっと<ruby><rb>肚</rb><rt>はら</rt></ruby>の中に<ruby><rb>算盤</rb><rt>そろばん</rt></ruby>をとることを覚えたからである。</p>
+        <p>又</p>
+        <p>わたしはどんなに愛していた女とでも一時間以上話しているのは<ruby><rb>退窟</rb><rt>たいくつ</rt></ruby>だった。</p>
+        <p>又</p>
+        <p>わたしは度たび<ruby><rb>譃</rb><rt>うそ</rt></ruby>をついた。が、文字にする時は<ruby><rb>兎</rb><rt>と</rt></ruby>に<ruby><rb>角</rb><rt>かく</rt></ruby>、わたしの口ずから話した譃はいずれも拙劣を極めたものだった。</p>
+        <p>又</p>
+        <p>わたしは第三者と一人の女を共有することに不平を持たない。しかし第三者が幸か不幸かこう云う事実を知らずにいる時、何か急にその女に憎悪を感ずるのを常としている。</p>
+        <p>又</p>
+        <p>わたしは第三者と一人の女を共有することに不平を持たない。しかしそれは第三者と全然見ず知らずの間がらであるか、或は極く疎遠の間がらであるか、どちらかであることを条件としている。</p>
+        <p>又</p>
+        <p>わたしは第三者を愛する為に夫の目を<ruby><rb>偸</rb><rt>ぬす</rt></ruby>んでいる女にはやはり恋愛を感じないことはない。しかし第三者を愛する為に子供を顧みない女には満身の憎悪を感じている。</p>
+        <p>又</p>
+        <p>わたしを感傷的にするものは<ruby><rb>唯</rb><rt>ただ</rt></ruby>無邪気な子供だけである。</p>
+        <p>又</p>
+        <p>わたしは三十にならぬ前に或女を愛していた。その女は或時わたしに言った。――「あなたの奥さんにすまない。」わたしは格別わたしの妻に済まないと思っていた<ruby><rb>訣</rb><rt>わけ</rt></ruby>ではなかった。が、妙にこの言葉はわたしの心に<ruby><rb>滲</rb><rt>し</rt></ruby>み渡った。わたしは正直にこう思った。――「或はこの女にもすまないのかも知れない。」わたしは未だにこの女にだけは優しい心もちを感じている。</p>
+        <p>又</p>
+        <p>わたしは金銭には冷淡だった。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>食うだけには困らなかったから。</p>
+        <p>又</p>
+        <p>わたしは両親には孝行だった。両親はいずれも年をとっていたから。</p>
+        <p>又</p>
+        <p>わたしは二三の友だちにはたとい真実を言わないにもせよ、譃をついたことは一度もなかった。彼等も亦譃をつかなかったから。</p>
+        <p>人生</p>
+        <p>革命に革命を重ねたとしても、我我人間の生活は「選ばれたる少数」を除きさえすれば、いつも<ruby><rb>暗澹</rb><rt>あんたん</rt></ruby>としている<ruby><rb>筈</rb><rt>はず</rt></ruby>である。しかも「選ばれたる少数」とは「阿呆と悪党と」の異名に過ぎない。</p>
+        <p>民衆</p>
+        <p><persName ref="#shakespeare">シェクスピイア</persName>も、<persName ref="#goethe">ゲエテ</persName>も、<persName ref="#ri-taihaku"><ruby><rb>李太白</rb><rt>りたいはく</rt></ruby></persName>も、<persName ref="#chikamatsu">近松門左衛門</persName>も滅びるであろう。しかし芸術は民衆の中に必ず種子を残している。わたしは<date when="1923">大正十二年</date>に「たとい玉は砕けても、<ruby><rb>瓦</rb><rt>かわら</rt></ruby>は砕けない」と云うことを書いた。この確信は<ruby><rb>今日</rb><rt>こんにち</rt></ruby>でも未だに少しも揺がずにいる。</p>
+        <p>又</p>
+        <p>打ち下ろすハンマアのリズムを聞け。あのリズムの存する限り、芸術は永遠に滅びないであろう。（<date when="1926-12-25">昭和改元の第一日</date>）</p>
+        <p>又</p>
+        <p>わたしは勿論失敗だった。が、わたしを造り出したものは必ず又誰かを作り出すであろう。一本の木の枯れることは極めて区々たる問題に過ぎない。無数の種子を宿している、大きい地面が存在する限りは。　（同上）</p>
+        <p>或夜の感想</p>
+        <p>眠りは死よりも愉快である。少くとも容易には違いあるまい。　（<date when="1926-12-26">昭和改元の第二日</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>
