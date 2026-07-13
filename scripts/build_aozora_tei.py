@@ -267,7 +267,7 @@ def extract(html):
 #   fixes:   抽出後の文字列置換(外字の手当てなど)
 # ---------------------------------------------------------------------------
 
-P, PR, D = "place", "pers", "date"
+P, PR, D, SKIP = "place", "pers", "date", "skip"
 
 WORKS = {
     "melos": {
@@ -553,11 +553,19 @@ def _render(text, ranges, lo, hi):
 
 def tag_string(text, tags, stats, ruby_spans=()):
     """本文にタグを付ける。表層形の全出現を長い順にマッチさせ(重なりは不可)、
-    ルビ範囲と入れ子にして XML 断片を返す。"""
-    ne = []
+    ルビ範囲と入れ子にして XML 断片を返す。
+
+    種別 "skip" の表層形は、その領域を先に確保するだけでタグを出さない。
+    「衛」が28件は地名だが1件だけ『仁をもって衛となした』(=守り)に誤マッチする、
+    といった場合に、誤マッチする文脈を含む長い文字列を skip として登録すれば、
+    その1件だけを抑止して残り28件を拾える(表層形ごと捨てなくてよい)。
+    """
+    ne = []       # (開始, 終了, 種別, 参照) — 出力する固有表現
+    blocked = []  # (開始, 終了) — skip: 領域だけ確保してタグは出さない
 
     def overlaps(s, e):
-        return any(not (e <= cs or s >= ce) for cs, ce, _, _ in ne)
+        return any(not (e <= cs or s >= ce) for cs, ce, *_ in ne) or \
+               any(not (e <= cs or s >= ce) for cs, ce in blocked)
 
     for kind, surface, ref in sorted(tags, key=lambda t: -len(t[1])):
         start = 0
@@ -568,9 +576,13 @@ def tag_string(text, tags, stats, ruby_spans=()):
             start = i + len(surface)
             if overlaps(i, i + len(surface)):
                 continue
+            stats["used"].add((kind, surface, ref))
+            if kind == SKIP:
+                blocked.append((i, i + len(surface)))
+                stats[SKIP] += 1
+                continue
             ne.append((i, i + len(surface), kind, ref))
             stats[kind] += 1
-            stats["used"].add((kind, surface, ref))
 
     # 固有表現の境界をまたぐルビ(交差)は入れ子にできないので、そのルビは落とす
     kept = []
@@ -683,7 +695,7 @@ def build_work(slug):
             for para in sec["paras"]:
                 para["text"] = para["text"].replace(old, new)
 
-    stats = {P: 0, PR: 0, D: 0, "ruby": 0, "ruby_dropped": 0, "used": set()}
+    stats = {P: 0, PR: 0, D: 0, SKIP: 0, "ruby": 0, "ruby_dropped": 0, "used": set()}
     body_lines = ["  <text>", "    <body>"]
     for i, sec in enumerate(sections):
         head = sec["head"] or (spec["title"] if len(sections) == 1 else "")
@@ -714,8 +726,9 @@ def build_work(slug):
             print(f"  [警告] 台帳に無い参照: {k} {s} -> {r}")
     total = sum(len(p["text"]) for s in sections for p in s["paras"])
     dropped = f" (交差のため不採用 {stats['ruby_dropped']})" if stats["ruby_dropped"] else ""
+    skipped = f" / skip {stats[SKIP]}" if stats[SKIP] else ""
     print(f"  -> {out.relative_to(REPO_ROOT)}: {len(sections)}章 {total}字 / "
-          f"persName {stats[PR]} / placeName {stats[P]} / date {stats[D]} / "
+          f"persName {stats[PR]} / placeName {stats[P]} / date {stats[D]}{skipped} / "
           f"ruby {stats['ruby']}{dropped}")
 
 
