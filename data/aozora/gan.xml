@@ -135,9 +135,37 @@
         <persName>阿茶の局</persName>
         <note>徳川家康の側室(1555-1637)。講釈の題材としての言及</note>
       </person>
+      <person xml:id="narushima-ryuhoku">
+        <persName>成島柳北</persName>
+        <note>文人・ジャーナリスト(1837-1884)。『花月新誌』を主宰。実在人物への言及</note>
+      </person>
       <person xml:id="shibata-shokei">
         <persName>柴田承桂</persName>
         <note>薬学者・柴田承桂(1850-1910)。東京大学製薬学科初代教授。実在人物への言及(岡田が餞別の相談をした相手)</note>
+      </person>
+      <person xml:id="encho">
+        <persName>円朝</persName>
+        <note>落語家・三遊亭円朝(1839-1900)。実在人物への言及(吹抜亭の高座)</note>
+      </person>
+      <person xml:id="komanosuke">
+        <persName>駒之助</persName>
+        <note>義太夫の語り手。吹抜亭に出る実在の演者への言及</note>
+      </person>
+      <person xml:id="shiki">
+        <persName>子規</persName>
+        <note>俳人・正岡子規(1867-1902)。実在人物への言及</note>
+      </person>
+      <person xml:id="tekkan">
+        <persName>鉄幹</persName>
+        <note>歌人・与謝野鉄幹(1873-1935)。実在人物への言及</note>
+      </person>
+      <person xml:id="kainan">
+        <persName>槐南</persName>
+        <note>漢詩人・森槐南(1863-1911)。実在人物への言及(香奩体の詩)</note>
+      </person>
+      <person xml:id="muko">
+        <persName>夢香</persName>
+        <note>香奩体の漢詩を作った詩人。実在人物への言及(同定には諸説あり)</note>
       </person>
       <person xml:id="ii-naosuke">
         <persName>井伊直弼</persName>
@@ -509,30 +537,47 @@
         <location><geo>35.797 116.098</geo></location>
         <note>『水滸伝』の梁山泊(山東省梁山)。伝承地・概値</note>
       </place>
-      <place xml:id="fujimura">
-        <placeName>藤村</placeName>
-        <location><geo>35.7075 139.761</geo></location>
-        <note>本郷(春木町付近)にあった菓子舗藤村。田舎饅頭を売る店として言及・概値</note>
-      </place>
-      <place xml:id="namamugi">
-        <placeName>生麦</placeName>
-        <location><geo>35.4986 139.6689</geo></location>
-        <note>武蔵国生麦村(現横浜市鶴見区生麦)。生麦事件(1862)の地・概値</note>
-      </place>
-      <place xml:id="marunouchi">
-        <placeName>丸の内</placeName>
-        <location><geo>35.6816 139.7639</geo></location>
-        <note>旧江戸城周辺の丸の内(城の櫓への言及)・概値</note>
+      <place xml:id="yokohama">
+        <placeName>横浜</placeName>
+        <location><geo>35.4437 139.638</geo></location>
+        <note>横浜。末造が蝙蝠傘を買った地・概値</note>
       </place>
       <place xml:id="ginza">
         <placeName>銀座</placeName>
         <location><geo>35.6717 139.765</geo></location>
         <note>銀座・概値</note>
       </place>
+      <place xml:id="marunouchi">
+        <placeName>丸の内</placeName>
+        <location><geo>35.6816 139.7639</geo></location>
+        <note>旧江戸城周辺の丸の内(城の櫓への言及)・概値</note>
+      </place>
       <place xml:id="todo-yashiki">
         <placeName>藤堂屋敷</placeName>
         <location><geo>35.6996 139.777</geo></location>
         <note>旧藤堂家上屋敷(神田和泉町・下谷和泉橋通)。下谷時代の医学校の寄宿舎(門長屋)として言及・概値</note>
+      </place>
+      <place xml:id="fukinukitei">
+        <placeName>吹抜亭</placeName>
+        <note>お玉の父が通う寄席(「ふきぬき亭」とも)。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="fujimura">
+        <placeName>藤村</placeName>
+        <location><geo>35.7075 139.761</geo></location>
+        <note>本郷(春木町付近)にあった菓子舗藤村。田舎饅頭を売る店として言及・概値</note>
+      </place>
+      <place xml:id="toyokuniya">
+        <placeName>豊国屋</placeName>
+        <note>僕が岡田を誘って寄ろうとする店。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="uokin">
+        <placeName>魚金</placeName>
+        <note>無縁坂界隈の肴屋の屋号。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="namamugi">
+        <placeName>生麦</placeName>
+        <location><geo>35.4986 139.6689</geo></location>
+        <note>武蔵国生麦村(現横浜市鶴見区生麦)。生麦事件(1862)の地・概値</note>
       </place>
       <place xml:id="kaga-yashiki">
         <placeName>加賀屋敷</placeName>
@@ -552,7 +597,7 @@
         <p>「どうせ僕は<persName ref="#okada">岡田</persName>君のようなわけには行かないさ」と先を越して云う学生がある。<ruby><rb>此</rb><rt>かく</rt></ruby>の如くにして<persName ref="#okada">岡田</persName>はいつとなく<placeName ref="#kamijo">上条</placeName>の標準的下宿人になったのである。</p>
         <p><persName ref="#okada">岡田</persName>の<ruby><rb>日々</rb><rt>にちにち</rt></ruby>の散歩は大抵道筋が極まっていた。寂しい<placeName ref="#muenzaka">無縁坂</placeName>を降りて、<placeName ref="#aizomegawa"><ruby><rb>藍染川</rb><rt>あいそめがわ</rt></ruby></placeName>のお歯黒のような水の流れ込む<placeName ref="#shinobazu"><ruby><rb>不忍</rb><rt>しのばず</rt></ruby>の池</placeName>の北側を廻って、<placeName ref="#ueno">上野</placeName>の山をぶらつく。それから<placeName ref="#matsugen"><ruby><rb>松源</rb><rt>まつげん</rt></ruby></placeName>や<placeName ref="#gannabe"><ruby><rb>雁鍋</rb><rt>がんなべ</rt></ruby></placeName>のある<placeName ref="#ueno-hirokoji">広小路</placeName>、狭い<ruby><rb>賑</rb><rt>にぎ</rt></ruby>やかな<placeName ref="#nakacho"><ruby><rb>仲町</rb><rt>なかちょう</rt></ruby></placeName>を通って、<placeName ref="#yushima-tenjin">湯島天神</placeName>の社内に<ruby><rb>這入</rb><rt>はい</rt></ruby>って、陰気な<placeName ref="#karatachidera"><ruby><rb>臭橘寺</rb><rt>からたちでら</rt></ruby></placeName>の角を曲がって帰る。しかし<placeName ref="#nakacho">仲町</placeName>を右へ折れて、<placeName ref="#muenzaka">無縁坂</placeName>から帰ることもある。これが一つの道筋である。或る時は大学の中を抜けて<placeName ref="#akamon">赤門</placeName>に出る。<placeName ref="#tetsumon">鉄門</placeName>は早く<ruby><rb>鎖</rb><rt>とざ</rt></ruby>されるので、患者の<ruby><rb>出入</rb><rt>しゅつにゅう</rt></ruby>する長屋門から這入って抜けるのである。後にその頃の長屋門が取り払われたので、今<placeName ref="#harukicho"><ruby><rb>春木町</rb><rt>はるきちょう</rt></ruby></placeName>から<ruby><rb>衝</rb><rt>つ</rt></ruby>き当る<ruby><rb>処</rb><rt>ところ</rt></ruby>にある、あの新しい黒い門が出来たのである。<placeName ref="#akamon">赤門</placeName>を出てから<placeName ref="#hongo-dori"><ruby><rb>本郷</rb><rt>ほんごう</rt></ruby>通り</placeName>を歩いて、<ruby><rb>粟餅</rb><rt>あわもち</rt></ruby>の<ruby><rb>曲擣</rb><rt>きょくづき</rt></ruby>をしている店の前を通って、<placeName ref="#kanda-myojin">神田明神</placeName>の境内に這入る。そのころまで目新しかった<placeName ref="#meganebashi"><ruby><rb>目金橋</rb><rt>めがねばし</rt></ruby></placeName>へ降りて、<placeName ref="#yanagihara"><ruby><rb>柳原</rb><rt>やなぎはら</rt></ruby></placeName>の<ruby><rb>片側町</rb><rt>かたかわまち</rt></ruby>を少し歩く。それから<placeName ref="#onarimichi">お<ruby><rb>成道</rb><rt>なりみち</rt></ruby></placeName>へ戻って、狭い西側の横町のどれかを<ruby><rb>穿</rb><rt>うが</rt></ruby>って、<ruby><rb>矢張</rb><rt>やはり</rt></ruby><placeName ref="#karatachidera">臭橘寺</placeName>の前に出る。これが一つの道筋である。これより外の道筋はめったに歩かない。</p>
         <p>この散歩の途中で、<persName ref="#okada">岡田</persName>が何をするかと云うと、ちょいちょい古本屋の店を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて歩く位のものであった。<placeName ref="#ueno-hirokoji">上野広小路</placeName>と<placeName ref="#nakacho">仲町</placeName>との古本屋は、その頃のが今も二三軒残っている。<placeName ref="#onarimichi">お成道</placeName>にも当時そのままの店がある。<placeName ref="#yanagihara">柳原</placeName>のは全く廃絶してしまった。<placeName ref="#hongo-dori">本郷通</placeName>のは殆ど皆場所も持主も代っている。<persName ref="#okada">岡田</persName>が<placeName ref="#akamon">赤門</placeName>から出て右へ曲ることのめったにないのは、一体<placeName ref="#morikawacho">森川町</placeName>は町幅も狭く、窮屈な処であったからでもあるが、当時古本屋が西側に一軒しかなかったのも一つの理由であった。</p>
-        <p><persName ref="#okada">岡田</persName>が古本屋を覗くのは、今の詞で云えば、文学趣味があるからであった。しかしまだ新しい小説や脚本は出ていぬし、<ruby><rb>抒情詩</rb><rt>じょじょうし</rt></ruby>では子規の俳句や、鉄幹の歌の生れぬ先であったから、誰でも<ruby><rb>唐紙</rb><rt>とうし</rt></ruby>に<ruby><rb>摺</rb><rt>す</rt></ruby>った花月新誌や<ruby><rb>白紙</rb><rt>はくし</rt></ruby>に摺った<ruby><rb>桂林一枝</rb><rt>けいりんいっし</rt></ruby>のような雑誌を読んで、<ruby><rb>槐南</rb><rt>かいなん</rt></ruby>、<ruby><rb>夢香</rb><rt>むこう</rt></ruby>なんぞの<ruby><rb>香奩体</rb><rt>こうれんたい</rt></ruby>の詩を最も気の利いた物だと思う位の事であった。僕も花月新誌の愛読者であったから、記憶している。西洋小説の翻訳と云うものは、あの雑誌が始て出したのである。なんでも西洋の或る大学の学生が、帰省する途中で殺される話で、それを談話体に訳した人は<persName ref="#kanda-takahira">神田孝平</persName>さんであったと思う。それが僕の西洋小説と云うものを読んだ始であったようだ。そう云う時代だから、<persName ref="#okada">岡田</persName>の文学趣味も漢学者が新しい世間の出来事を詩文に書いたのを、面白がって読む位に過ぎなかったのである。</p>
+        <p><persName ref="#okada">岡田</persName>が古本屋を覗くのは、今の詞で云えば、文学趣味があるからであった。しかしまだ新しい小説や脚本は出ていぬし、<ruby><rb>抒情詩</rb><rt>じょじょうし</rt></ruby>では<persName ref="#shiki">子規</persName>の俳句や、<persName ref="#tekkan">鉄幹</persName>の歌の生れぬ先であったから、誰でも<ruby><rb>唐紙</rb><rt>とうし</rt></ruby>に<ruby><rb>摺</rb><rt>す</rt></ruby>った花月新誌や<ruby><rb>白紙</rb><rt>はくし</rt></ruby>に摺った<ruby><rb>桂林一枝</rb><rt>けいりんいっし</rt></ruby>のような雑誌を読んで、<persName ref="#kainan"><ruby><rb>槐南</rb><rt>かいなん</rt></ruby></persName>、<persName ref="#muko"><ruby><rb>夢香</rb><rt>むこう</rt></ruby></persName>なんぞの<ruby><rb>香奩体</rb><rt>こうれんたい</rt></ruby>の詩を最も気の利いた物だと思う位の事であった。僕も花月新誌の愛読者であったから、記憶している。西洋小説の翻訳と云うものは、あの雑誌が始て出したのである。なんでも西洋の或る大学の学生が、帰省する途中で殺される話で、それを談話体に訳した人は<persName ref="#kanda-takahira">神田孝平</persName>さんであったと思う。それが僕の西洋小説と云うものを読んだ始であったようだ。そう云う時代だから、<persName ref="#okada">岡田</persName>の文学趣味も漢学者が新しい世間の出来事を詩文に書いたのを、面白がって読む位に過ぎなかったのである。</p>
         <p>僕は人附合いの余り好くない<ruby><rb>性</rb><rt>たち</rt></ruby>であったから、学校の構内で好く逢う人にでも、用事がなくては話をしない。同じ下宿屋にいる学生なんぞには、帽を脱いで礼をするようなことも少かった。それが<persName ref="#okada">岡田</persName>と少し心安くなったのは、古本屋が<ruby><rb>媒</rb><rt>なかだち</rt></ruby>をしたのである。僕の散歩に歩く道筋は、<persName ref="#okada">岡田</persName>のように極まってはいなかったが、脚が達者で縦横に<placeName ref="#hongo">本郷</placeName>から<placeName ref="#shitaya">下谷</placeName>、<placeName ref="#kanda">神田</placeName>を掛けて歩いて、古本屋があれば足を止めて見る。そう云う時に、度々<persName ref="#okada">岡田</persName>と店先で落ち合う。</p>
         <p>「好く古本屋で出くわすじゃないか」と云うような事を、どっちからか言い出したのが、親しげに物を言った始である。</p>
         <p>その頃<placeName ref="#kanda-myojin">神田明神</placeName>前の坂を降りた曲角に、<ruby><rb>鉤</rb><rt>かぎ</rt></ruby>なりに縁台を出して、古本を<ruby><rb>曝</rb><rt>さら</rt></ruby>している店があった。そこで或る時僕が唐本の<ruby><rb>金瓶梅</rb><rt>きんぺいばい</rt></ruby>を見附けて亭主に値を問うと、七円だと云った。五円に負けてくれと云うと、「先刻<persName ref="#okada">岡田</persName>さんが六円なら買うと<ruby><rb>仰</rb><rt>おっし</rt></ruby>ゃいましたが、おことわり申したのです」と云う。偶然僕は工面が好かったので言値で買った。二三日立ってから、<persName ref="#okada">岡田</persName>に逢うと、向うからこう云い出した。</p>
@@ -650,7 +695,7 @@
         <p>食事をしまって、窓から外を見ていると、空は曇っていても、雨の降りそうな様子もなく、<ruby><rb>却</rb><rt>かえ</rt></ruby>って晴れた日よりは暑くなくて好さそうなので、気を晴そうと思って、外へ出た。それでも<ruby><rb>若</rb><rt>も</rt></ruby>し留守に<persName ref="#otama">お玉</persName>が来はすまいかと気遣って、我家の<ruby><rb>門口</rb><rt>かどぐち</rt></ruby>を折々振り返って見つつ、池の<ruby><rb>傍</rb><rt>そば</rt></ruby>を歩いている。そのうち<placeName ref="#kayacho"><ruby><rb>茅町</rb><rt>かやちょう</rt></ruby></placeName>と<placeName ref="#shichikencho"><ruby><rb>七軒町</rb><rt>しちけんちょう</rt></ruby></placeName>との間から、<placeName ref="#muenzaka">無縁坂</placeName>の方へ行く筋に、小さい橋の掛っている<ruby><rb>処</rb><rt>ところ</rt></ruby>に来た。ちょっと娘の内へ行って見ようかと思ったが、なんだか改まったような気がして、我ながら不思議な遠慮がある。これが女親であったら、こんな隔てはどんな場合にも出来まいのに、不思議だ、不思議だと思いながら、橋を渡らずに、矢張池の傍を歩いている。ふと心附くと、丁度<persName ref="#suezo">末造</persName>の家が<ruby><rb>溝</rb><rt>どぶ</rt></ruby>の向うにある。これは<ruby><rb>口入</rb><rt>くちいれ</rt></ruby>の婆あさんが、こん度越して来た家の窓から、指さしをして教えてくれたのである。見れば、なる程立派な<ruby><rb>構</rb><rt>かまえ</rt></ruby>で、高い土塀の外廻に、<ruby><rb>殺竹</rb><rt>そぎだけ</rt></ruby>が<ruby><rb>斜</rb><rt>ななめ</rt></ruby>に打ち附けてある。<persName ref="#fukuchi-genichiro">福地</persName>さんと云う、えらい学者の家だと聞いた、隣の方は、広いことは広いが、建物も古く、こっちの家に比べると、けばけばしい所と<ruby><rb>厳</rb><rt>いか</rt></ruby>めしげな所とがない。暫く立ち留まって、昼も厳重に締め切ってある、白木造の裏門の扉を見ていたが、あの内へ這入って見たいと思う心は起らなかった。しかし何をどう思うでもなく、一種のはかない、寂しい感じに襲われて、暫く<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>としていた。詞にあらわして言ったら、落ちぶれて娘を<ruby><rb>妾</rb><rt>めかけ</rt></ruby>に出した親の感じとでも云うより外あるまい。</p>
         <p>とうとう一週間立っても、まだ娘は来なかった。恋しい、恋しいと思う念が、内攻するように奥深く潜んで、あいつ楽な身の上になって、親の事を忘れたのではあるまいかと云う<ruby><rb>疑</rb><rt>うたがい</rt></ruby>が頭を<ruby><rb>擡</rb><rt>もた</rt></ruby>げて来る。この疑は仮に故意に起して見て、それを<ruby><rb>弄</rb><rt>もてあそ</rt></ruby>んでいるとでも云うべき、極めて淡いもので、疑いは疑いながら、どうも娘を憎く思われない。丁度人に対して物を言う時に用いる反語のように、いっそ娘が憎くなったら好かろうと、心の上辺で思って見るに過ぎない。</p>
         <p>それでも爺いさんはこの頃になって、こんな事を思うことがある。内にばかりいると、いろんな事を思ってならないから、<ruby><rb>己</rb><rt>おれ</rt></ruby>はこれから外へ出るが、跡へ娘が来て、己に逢われないのを残念がるだろう。残念がらないにしたところが、切角来たのが無駄になったとだけは思うに違いない。その位な事は思わせて遣っても<ruby><rb>好</rb><rt>い</rt></ruby>い。こんな事を思って出て行くようになったのである。</p>
-        <p><placeName ref="#ueno-koen">上野公園</placeName>に行って、丁度<ruby><rb>日蔭</rb><rt>ひかげ</rt></ruby>になっている、ろは台を尋ねて腰を休めて、公園を通り抜ける、<ruby><rb>母衣</rb><rt>ほろ</rt></ruby>を掛けた人力車を見ながら、今頃留守へ娘が来て、まごまごしていはしないかと想像する。この時の感じは、好い気味だと思って見たいと云う、自分で自分を<ruby><rb>験</rb><rt>ため</rt></ruby>して見るような感じである。この頃は夜も<ruby><rb>吹抜亭</rb><rt>ふきぬきてい</rt></ruby>へ、円朝の話や、<ruby><rb>駒之助</rb><rt>こまのすけ</rt></ruby>の<ruby><rb>義太夫</rb><rt>ぎだゆう</rt></ruby>を聞きに行くことがある。寄席にいても、矢張娘が留守に来ているだろうかと云う想像をする。そうかと思うと又ふいと娘がこの中に来ていはせぬかと思って、銀杏返しに<ruby><rb>結</rb><rt>い</rt></ruby>っている、若い女を<ruby><rb>選</rb><rt>よ</rt></ruby>り出すようにして見ることなどがある。一度なんぞは、<ruby><rb>中入</rb><rt>なかいり</rt></ruby>が済んだ頃、その時代にまだ珍らしかった、パナマ帽を目深に<ruby><rb>被</rb><rt>かぶ</rt></ruby>った、<ruby><rb>湯帷子掛</rb><rt>ゆかたがけ</rt></ruby>の男に連れられて、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>の二階へ来て、手摩に<ruby><rb>攫</rb><rt>つか</rt></ruby>まって据わりしなに、下の客を見卸した、銀杏返しの女を、<ruby><rb>一刹那</rb><rt>いっせつな</rt></ruby>の間<persName ref="#otama">お玉</persName>だと思った事がある。好く見れば、<persName ref="#otama">お玉</persName>よりは顔が円くて背が低い。それにパナマ帽の男は、その女ばかりではなく、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>にまだ三人ばかりの島田やら<ruby><rb>桃割</rb><rt>ももわれ</rt></ruby>やらを連れていた。皆芸者やお酌であった。爺いさんの<ruby><rb>傍</rb><rt>そば</rt></ruby>にいた書生が、「や、<ruby><rb>吾曹</rb><rt>ごそう</rt></ruby>先生が来た」と云った。寄席がはねて帰る時に見ると、赤く「ふきぬき亭」と<ruby><rb>斜</rb><rt>ななめ</rt></ruby>に書いた、大きい柄の長い<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>を一人の女が持って、芸者やお酌がぞろぞろ附いて、パナマ帽の男を送って行く。爺いさんは自分の内の前まで、この一行と跡になったり、先になったりして帰った。</p>
+        <p><placeName ref="#ueno-koen">上野公園</placeName>に行って、丁度<ruby><rb>日蔭</rb><rt>ひかげ</rt></ruby>になっている、ろは台を尋ねて腰を休めて、公園を通り抜ける、<ruby><rb>母衣</rb><rt>ほろ</rt></ruby>を掛けた人力車を見ながら、今頃留守へ娘が来て、まごまごしていはしないかと想像する。この時の感じは、好い気味だと思って見たいと云う、自分で自分を<ruby><rb>験</rb><rt>ため</rt></ruby>して見るような感じである。この頃は夜も<placeName ref="#fukinukitei"><ruby><rb>吹抜亭</rb><rt>ふきぬきてい</rt></ruby></placeName>へ、<persName ref="#encho">円朝</persName>の話や、<persName ref="#komanosuke"><ruby><rb>駒之助</rb><rt>こまのすけ</rt></ruby></persName>の<ruby><rb>義太夫</rb><rt>ぎだゆう</rt></ruby>を聞きに行くことがある。寄席にいても、矢張娘が留守に来ているだろうかと云う想像をする。そうかと思うと又ふいと娘がこの中に来ていはせぬかと思って、銀杏返しに<ruby><rb>結</rb><rt>い</rt></ruby>っている、若い女を<ruby><rb>選</rb><rt>よ</rt></ruby>り出すようにして見ることなどがある。一度なんぞは、<ruby><rb>中入</rb><rt>なかいり</rt></ruby>が済んだ頃、その時代にまだ珍らしかった、パナマ帽を目深に<ruby><rb>被</rb><rt>かぶ</rt></ruby>った、<ruby><rb>湯帷子掛</rb><rt>ゆかたがけ</rt></ruby>の男に連れられて、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>の二階へ来て、手摩に<ruby><rb>攫</rb><rt>つか</rt></ruby>まって据わりしなに、下の客を見卸した、銀杏返しの女を、<ruby><rb>一刹那</rb><rt>いっせつな</rt></ruby>の間<persName ref="#otama">お玉</persName>だと思った事がある。好く見れば、<persName ref="#otama">お玉</persName>よりは顔が円くて背が低い。それにパナマ帽の男は、その女ばかりではなく、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>にまだ三人ばかりの島田やら<ruby><rb>桃割</rb><rt>ももわれ</rt></ruby>やらを連れていた。皆芸者やお酌であった。爺いさんの<ruby><rb>傍</rb><rt>そば</rt></ruby>にいた書生が、「や、<persName ref="#fukuchi-genichiro"><ruby><rb>吾曹</rb><rt>ごそう</rt></ruby>先生</persName>が来た」と云った。寄席がはねて帰る時に見ると、赤く「<placeName ref="#fukinukitei">ふきぬき亭</placeName>」と<ruby><rb>斜</rb><rt>ななめ</rt></ruby>に書いた、大きい柄の長い<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>を一人の女が持って、芸者やお酌がぞろぞろ附いて、パナマ帽の男を送って行く。爺いさんは自分の内の前まで、この一行と跡になったり、先になったりして帰った。</p>
       </div>
       <div type="chapter" xml:id="sec09" n="9">
         <head>玖</head>
@@ -741,9 +786,9 @@
         <p>「どうするにも及ばないのだ。お前が人が<ruby><rb>好</rb><rt>い</rt></ruby>いもんだから、人に<ruby><rb>焚</rb><rt>た</rt></ruby>き附けられたのだ。妾だの、囲物だのって、<ruby><rb>誰</rb><rt>たれ</rt></ruby>がそんな事を言ったのだい」こう云いながら、<persName ref="#suezo">末造</persName>はこわれた丸髷のぶるぶる震えているのを見て、醜い女はなぜ似合わない丸髷を結いたがるものだろうと、気楽な問題を考えた。そして丸髷の震動が次第に細かく刻むようになると同時に、どの子供にも十分の食料を供給した、大きい乳房が、懐炉を抱いたように<ruby><rb>水落</rb><rt>みずおち</rt></ruby>の<ruby><rb>辺</rb><rt>あたり</rt></ruby>に押し附けられるのを<persName ref="#suezo">末造</persName>は感じながら、「誰が言ったのだ」と繰り返した。</p>
         <p>「誰だって好いじゃありませんか。本当なんだから」乳房の圧はいよいよ加わって来る。</p>
         <p>「本当でないから、誰でも好くはないのだ。誰だかそう云え」</p>
-        <p>「それは言ったってかまいませんとも。<ruby><rb>魚金</rb><rt>うおきん</rt></ruby>のお上さんなの」</p>
+        <p>「それは言ったってかまいませんとも。<placeName ref="#uokin"><ruby><rb>魚金</rb><rt>うおきん</rt></ruby></placeName>のお上さんなの」</p>
         <p>「なにまるで<ruby><rb>狸</rb><rt>たぬき</rt></ruby>が物を言うようで、分かりゃあしない。むにゃむにゃのむにゃむにゃさんなのとはなんだい」</p>
-        <p>お上さんは顔を<persName ref="#suezo">末造</persName>の胸から離して、悔やしそうに笑った。「魚金のお上さんだと、そう云っているじゃありませんか」</p>
+        <p>お上さんは顔を<persName ref="#suezo">末造</persName>の胸から離して、悔やしそうに笑った。「<placeName ref="#uokin">魚金</placeName>のお上さんだと、そう云っているじゃありませんか」</p>
         <p>「うん。あいつか。おお方そんな事だろうと思った」<persName ref="#suezo">末造</persName>は優しい目をして、女房の逆上したような顔を見ながら、<ruby><rb>徐</rb><rt>しず</rt></ruby>かに金天狗に火を附けた。「新聞屋なんかが好く社会の制裁だのなんのと云うが、己はその社会の制裁と云う奴を見た事がねえ。どうかしたら、あの金棒引なんかが、その制裁と云う奴かも知れねえ。近所中のおせっかいをしやがる。あんな奴の言う事を<ruby><rb>真</rb><rt>ま</rt></ruby>に受けてたまるものか。己が今本当の事を云って聞して<ruby><rb>遣</rb><rt>や</rt></ruby>るから、好く聞いていろ」</p>
         <p>お上さんの頭は霧が掛かったように、ぼうっとしているが、もしや<ruby><rb>騙</rb><rt>だま</rt></ruby>されるのではあるまいかと云う<ruby><rb>猜疑</rb><rt>さいぎ</rt></ruby>だけは<ruby><rb>醒</rb><rt>さ</rt></ruby>めている。それでも熱心に<persName ref="#suezo">末造</persName>の顔を見て謹聴している。今社会の制裁と云うことを言われた時もそうであるが、いつでも<persName ref="#suezo">末造</persName>が新聞で読んだ、むずかしい詞を使って何か言うと、お上さんは気おくれがして、分からぬなりに屈服してしまうのである。</p>
         <p><persName ref="#suezo">末造</persName>は折々烟草を呑んで<ruby><rb>烟</rb><rt>けぶり</rt></ruby>を吹きながら、<ruby><rb>矢張</rb><rt>やはり</rt></ruby>女房の顔を暗示するようにじっと見て、こんな事を言っている。「それ、お前も知っているだろう。まだ大学があっちにあった頃、好く内に来た<persName ref="#yoshida">吉田</persName>さんと云うのがいたなあ。あの<ruby><rb>金縁目金</rb><rt>きんぶちめがね</rt></ruby>を掛けて、べらべらした着物を着ていた人よ。あれが<placeName ref="#chiba">千葉</placeName>の病院へ行っているが、まだ己の方の勘定が二年や三年じゃあ<ruby><rb>埒</rb><rt>らち</rt></ruby>が明かねえんだ。あの<persName ref="#yoshida">吉田</persName>さんが寄宿舎にいた時から出来ていた女で、こないだまで<ruby><rb>七曲</rb><rt>ななまが</rt></ruby>りの<ruby><rb>店</rb><rt>たな</rt></ruby>を借りて入れてあったのだ。最初は月々<ruby><rb>極</rb><rt>き</rt></ruby>まって<ruby><rb>為送</rb><rt>しおく</rt></ruby>りをしていたところが、今年になってから手紙もよこさなけりゃ、金もよこさねえ。そこで女が先方へ掛け合ってくれろと云って己に頼んだのだ。どうして己を知っているかと思うだろうが、<persName ref="#yoshida">吉田</persName>さんは度々己の内へ来ると人の目に附いて困るからと云って、己を七曲の内へ呼んで書換の話なんぞをした事がある。その時から女が己を知っていたのだ。己も随分迷惑な話だが、<ruby><rb>序</rb><rt>ついで</rt></ruby>だから掛け合って遣ったよ。ところがなかなか埒は明かねえ。女はしつっこく頼む。己は飛んだ奴に引っ掛かったと思って持て扱っているのだ。お<ruby><rb>負</rb><rt>まけ</rt></ruby>に<ruby><rb>小綺麗</rb><rt>こぎれい</rt></ruby>な所で店賃の安い所へ越したいから、世話をしてくれろと云うので、<placeName ref="#yushima-kiritoshi">切通し</placeName>の質屋の隠居のいた跡へ、面倒を見て越させて遣った。それやこれやで、こないだからちょいちょい寄って、烟草を二三服呑んだ事があるもんだから、近所の奴がかれこれ言やあがるのだろう。隣は女の子を集めて、為立物の師匠をしていると云うのだから、口はうるさいやな。あんな所に女を囲って置く馬鹿があるものか」こんな事を言って、<persName ref="#suezo">末造</persName>はさげすんだように笑った。</p>
@@ -764,7 +809,7 @@
         <p>店は<placeName ref="#nakacho">仲町</placeName>の南側の「<placeName ref="#tashigaraya">たしがらや</placeName>」であった。「<placeName ref="#tashigaraya">たしがらや</placeName><ruby><rb>倒</rb><rt>さか</rt></ruby>さに読めばやらかした」と、何者かの言い出した、珍らしい屋号のこの店には、金字を印刷した、赤い紙袋に入れた、歯磨を売っていた。まだ錬歯磨なんぞの舶来していなかったその頃、上等のざら附かない製品は、<ruby><rb>牡丹</rb><rt>ぼたん</rt></ruby>の<ruby><rb>香</rb><rt>におい</rt></ruby>のする、岸田の花王散と、この<placeName ref="#tashigaraya">たしがらや</placeName>の歯磨とであった。店の前の女は別人でない。朝早く父親の所を訪ねた帰りに、歯磨を買いに寄った<persName ref="#otama">お玉</persName>であった。</p>
         <p><persName ref="#otsune">お常</persName>が四五歩通り過ぎた時、女中が<ruby><rb>咡</rb><rt>ささや</rt></ruby>いた。「奥さん。あれですよ。<placeName ref="#muenzaka">無縁坂</placeName>の女は」</p>
         <p>黙って<ruby><rb>頷</rb><rt>うなず</rt></ruby>いた<persName ref="#otsune">お常</persName>には、この詞が格別の効果を与えないので、女中は意外に思った。あの女は芸者ではないと思うと同時に、<persName ref="#otsune">お常</persName>は本能的に<placeName ref="#muenzaka">無縁坂</placeName>の女だと云うことを<ruby><rb>暁</rb><rt>さと</rt></ruby>っていたのである。それには女中が只美しい女がいると云うだけで、袖を引いて教えはしない筈だと云う判断も手伝っているが、今一つ意外な事が影響している。それは<persName ref="#otama">お玉</persName>が膝の所に寄せ掛けていた蝙蝠傘である。</p>
-        <p>もう一月余り前の事であった。夫が或る日横浜から帰って、みやげに蝙蝠の日傘を買って来た。柄がひどく長くて、張ってある切れが割合に小さい。背の高い西洋の女が手に持っておもちゃにするには好かろうが、ずんぐりむっくりした<persName ref="#otsune">お常</persName>が持って見ると、極端に言えば、<ruby><rb>物干竿</rb><rt>ものほしざお</rt></ruby>の<ruby><rb>尖</rb><rt>さき</rt></ruby>へおむつを引っ掛けて持ったようである。それでそのまま差さずにしまって置いた。その傘は白地に細かい<ruby><rb>弁慶縞</rb><rt>べんけいじま</rt></ruby>のような<ruby><rb>形</rb><rt>かた</rt></ruby>が、<ruby><rb>藍</rb><rt>あい</rt></ruby>で染め出してあった。<placeName ref="#tashigaraya">たしがらや</placeName>の店にいた女の蝙蝠傘がそれと同じだと云うことを、<persName ref="#otsune">お常</persName>ははっきり認めた。</p>
+        <p>もう一月余り前の事であった。夫が或る日<placeName ref="#yokohama">横浜</placeName>から帰って、みやげに蝙蝠の日傘を買って来た。柄がひどく長くて、張ってある切れが割合に小さい。背の高い西洋の女が手に持っておもちゃにするには好かろうが、ずんぐりむっくりした<persName ref="#otsune">お常</persName>が持って見ると、極端に言えば、<ruby><rb>物干竿</rb><rt>ものほしざお</rt></ruby>の<ruby><rb>尖</rb><rt>さき</rt></ruby>へおむつを引っ掛けて持ったようである。それでそのまま差さずにしまって置いた。その傘は白地に細かい<ruby><rb>弁慶縞</rb><rt>べんけいじま</rt></ruby>のような<ruby><rb>形</rb><rt>かた</rt></ruby>が、<ruby><rb>藍</rb><rt>あい</rt></ruby>で染め出してあった。<placeName ref="#tashigaraya">たしがらや</placeName>の店にいた女の蝙蝠傘がそれと同じだと云うことを、<persName ref="#otsune">お常</persName>ははっきり認めた。</p>
         <p>酒屋の角を池の方へ曲がる時、女中が機嫌を取るように云った。</p>
         <p>「ねえ、奥さん。そんなに好い女じゃありませんでしょう。顔が平べったくて、いやに背が高くて」</p>
         <p>「そんな事を言うものじゃないよ」と云ったぎり、相手にならずにずんずん歩く。女中は当がはずれて、不平らしい顔をして附いて<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。</p>
@@ -798,14 +843,14 @@
         <p>「狂言より話が少し真面目にして貰いたいなあ。一体その蝙蝠てえのはなんだい」</p>
         <p>「分かっているでしょう」</p>
         <p>「分かるものか。まるっきり見当が附かねえ」</p>
-        <p>「そんなら言いましょう。あの、いつか横浜から蝙蝠を買って来たでしょう」</p>
+        <p>「そんなら言いましょう。あの、いつか<placeName ref="#yokohama">横浜</placeName>から蝙蝠を買って来たでしょう」</p>
         <p>「それがどうした」</p>
         <p>「あれはわたしばかしに買って下すったのじゃなかったのね」</p>
         <p>「お前ばかしでなくて、誰に買って遣るものかい」</p>
         <p>「いいえ。そうじゃないでしょう。あれは<placeName ref="#muenzaka">無縁坂</placeName>の女のを買った序に、ふいと思い附いて、わたしのをも買って来たのでしょう」さっきから蝙蝠の話はしていても、こう具体的に云うと同時に、<persName ref="#otsune">お常</persName>は悔やしさが込み上げて来るように感ずるのである。</p>
         <p>「お手の筋」だとでも云いたい程適中したので、<persName ref="#suezo">末造</persName>はぎくりとしたが、反対に<ruby><rb>呆</rb><rt>あき</rt></ruby>れたような顔をして見せた。「べらぼうな話だなあ。何かい。その、お前に買った傘と同じ傘を、<persName ref="#yoshida">吉田</persName>さんの女が持っているとでも云うわけかい」</p>
         <p>「それは同じのを買って遣ったのだから、同じのを持っているに極まっています」声が際立って鋭くなっている。</p>
-        <p>「なんの事だ。呆れたものだぜ。好い加減にしろい。なる程お前に横浜で買って遣った時は、サンプルで来たのだと云うことだったが、もう今頃は<placeName ref="#ginza">銀座</placeName>辺でざらに売っているに違ない。芝居なんぞに好くある奴で、これがほんとの無実の罪と云うのだ。そして何かい。お前、あの<persName ref="#yoshida">吉田</persName>さんの女に、どこかで逢ったとでも云うのかい。好く分かったなあ」</p>
+        <p>「なんの事だ。呆れたものだぜ。好い加減にしろい。なる程お前に<placeName ref="#yokohama">横浜</placeName>で買って遣った時は、サンプルで来たのだと云うことだったが、もう今頃は<placeName ref="#ginza">銀座</placeName>辺でざらに売っているに違ない。芝居なんぞに好くある奴で、これがほんとの無実の罪と云うのだ。そして何かい。お前、あの<persName ref="#yoshida">吉田</persName>さんの女に、どこかで逢ったとでも云うのかい。好く分かったなあ」</p>
         <p>「それは分かりますとも。ここいらで知らないものはないのです。別品だから」にくにくしい声である。これまでは<persName ref="#suezo">末造</persName>がしらばっくれると、ついそうかと思ってしまったが、今度は余り強烈な直覚をして、その出来事を目前に見たように感じているので、<persName ref="#suezo">末造</persName>の<ruby><rb>詞</rb><rt>ことば</rt></ruby>を、なる程そうでもあろうかとは、どうしても思われなかった。</p>
         <p><persName ref="#suezo">末造</persName>はどうして逢ったか、話でもしたのかと、<ruby><rb>種々</rb><rt>いろいろ</rt></ruby>に考えていながら、この場合に根掘り葉掘り問うのは不利だと思って、わざと追窮しない。「別品だって。あんなのが別品と云うのかなあ。妙に顔の平べったいような女だが」</p>
         <p><persName ref="#otsune">お常</persName>は黙っていた。しかし憎い女の顔に難癖を附けた夫の詞に幾分か感情を融和させられた。</p>
@@ -991,7 +1036,7 @@
         <p>僕が立って<ruby><rb>袴</rb><rt>はかま</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>き掛けたので、女中は膳を持って廊下へ出た。僕は隣の部屋へ声を掛けた。</p>
         <p>「おい。<persName ref="#okada">岡田</persName>君いるか」</p>
         <p>「いる。何か用かい」<persName ref="#okada">岡田</persName>ははっきりした声で答えた。</p>
-        <p>「用ではないがね、散歩に出て、帰りに豊国屋へでも往こうかと思うのだ。一しょに来ないか」</p>
+        <p>「用ではないがね、散歩に出て、帰りに<placeName ref="#toyokuniya">豊国屋</placeName>へでも往こうかと思うのだ。一しょに来ないか」</p>
         <p>「行こう。丁度君に話したい事もあるのだ」</p>
         <p>僕は釘に掛けてあった帽を取って被って、<persName ref="#okada">岡田</persName>と一しょに<placeName ref="#kamijo">上条</placeName>を出た。午後四時過であったかと思う。どこへ往こうと云う相談もせずに<placeName ref="#kamijo">上条</placeName>の格子戸を出たのだが、二人は門口から右へ曲った。</p>
         <p><placeName ref="#muenzaka">無縁坂</placeName>を降り掛かる時、僕は「おい、いるぜ」と云って、<ruby><rb>肘</rb><rt>ひじ</rt></ruby>で<persName ref="#okada">岡田</persName>を衝いた。</p>
@@ -1042,8 +1087,8 @@
         <p>「僕もそう思う。只資格を<ruby><rb>拵</rb><rt>こしら</rt></ruby>えると云うだけだ。俗に<ruby><rb>随</rb><rt>したが</rt></ruby>って<ruby><rb>聊</rb><rt>いささか</rt></ruby><ruby><rb>復</rb><rt>また</rt></ruby><ruby><rb>爾</rb><rt>しか</rt></ruby>りだ」</p>
         <p>「支度はどうだい。随分慌ただしい旅立になりそうだが」</p>
         <p>「なに。僕はこのままで往く。<persName ref="#professor-w">Ｗ</persName>さんの云うには、<placeName ref="#nihon">日本</placeName>で洋服を拵えて行ったって、向うでは着られないそうだ」</p>
-        <p>「そうかなあ。いつか花月新誌で読んだが、成島柳北も横浜でふいと思い立って、即坐に決心して舟に乗ったと云うことだった」</p>
-        <p>「うん。僕も読んだ。柳北は内へ手紙も出さずに立ったそうだが、僕は内の方へは<ruby><rb>精</rb><rt>くわ</rt></ruby>しく言って遣った」</p>
+        <p>「そうかなあ。いつか花月新誌で読んだが、<persName ref="#narushima-ryuhoku">成島柳北</persName>も<placeName ref="#yokohama">横浜</placeName>でふいと思い立って、即坐に決心して舟に乗ったと云うことだった」</p>
+        <p>「うん。僕も読んだ。<persName ref="#narushima-ryuhoku">柳北</persName>は内へ手紙も出さずに立ったそうだが、僕は内の方へは<ruby><rb>精</rb><rt>くわ</rt></ruby>しく言って遣った」</p>
         <p>「そうか。<ruby><rb>羨</rb><rt>うらや</rt></ruby>ましいな。<persName ref="#professor-w">Ｗ</persName>さんに附いて行くのだから、途中でまごつくことはあるまいが、旅行はどんな<ruby><rb>塩梅</rb><rt>あんばい</rt></ruby>だろう。僕には想像も出来ない」</p>
         <p>「僕もどんな物だか分からないが、きのう<persName ref="#shibata-shokei">柴田<ruby><rb>承桂</rb><rt>しょうけい</rt></ruby></persName>さんに逢って、これまで世話になった人だから、今度の一件を話したら、先生の書いた洋行案内をくれたよ」</p>
         <p>「はあ。そんな本があるかねえ」</p>
