@@ -83,7 +83,7 @@
     <listPlace>
       <place xml:id="rokandono">
         <placeName>琅玕殿</placeName>
-        <note>海底にある公子の宮殿。作中の架空の場所のため座標なし。宝石名としての「琅玕」単独は地名でないためタグ付けしない</note>
+        <note>海底にある公子の宮殿。作中の架空の場所のため座標なし</note>
       </place>
       <place xml:id="tokaido">
         <placeName>東海道</placeName>
@@ -249,13 +249,13 @@
         <placeName>冥土</placeName>
         <note>仏教的世界観上の場所(座標なし)</note>
       </place>
-      <place xml:id="shidenoyama">
-        <placeName>死出の山</placeName>
-        <note>冥途にあるとされる山。『大経師昔暦』道行の引用中「越ゆる我身の死出の山」。仏教的世界観上の場所(座標なし)</note>
-      </place>
       <place xml:id="jigoku">
         <placeName>地獄</placeName>
-        <note>仏教的世界観上の場所(座標なし)。「紅蓮の井戸堀、焦熱の、地獄のかま塗」</note>
+        <note>仏教的世界観上の場所(座標なし)。「焦熱の、地獄のかま塗」</note>
+      </place>
+      <place xml:id="shidenoyama">
+        <placeName>死出の山</placeName>
+        <note>冥途にあるとされる山。仏教的世界観上の場所(座標なし)。西鶴の引用文中「越ゆる我身の死出の山」</note>
       </place>
     </listPlace>
   </standOff>

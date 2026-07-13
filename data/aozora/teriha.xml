@@ -45,7 +45,7 @@
     <listPerson>
       <person xml:id="mitsugi">
         <persName>貢</persName>
-        <note>語り手の少年。芸妓屋の子。母を亡くし伯母に育てられ、のち小親に引き取られて照葉狂言の一座に入る</note>
+        <note>語り手の少年。芸妓屋の子。母を亡くし伯母に育てられ、のち小親に引き取られて照葉狂言の一座に入る。「みつぎさん」とも呼ばれる</note>
       </person>
       <person xml:id="kochika">
         <persName>小親</persName>
@@ -53,11 +53,15 @@
       </person>
       <person xml:id="kunimaro">
         <persName>国麿</persName>
-        <note>旧藩の有司の子。近隣の少年の頭領。遊びでは「稲葉太郎荒象園の鬼門」と名告る。貢を敵視し、宝蔵院の管槍で待伏せする。のち東京で軍人を志す。「国ちゃん」とも</note>
+        <note>旧藩の有司の子。近隣の少年の頭領。遊びでは「稲葉太郎荒象園の鬼門」と名告り、「稲葉なにがし」とも言われる。貢を敵視し、宝蔵院の管槍で待伏せする。のち東京で軍人を志す。「国ちゃん」とも</note>
       </person>
       <person xml:id="oyuki">
         <persName>お雪</persName>
         <note>隣家広岡の娘。琴を弾く「姉上」。継母に養われ、のち癇癪持の養子(万吉)に苦しめられる。本名は雪</note>
+      </person>
+      <person xml:id="hirooka">
+        <persName>広岡</persName>
+        <note>貢の家の隣家の家名。お雪(雪)の生家で、継母と養子の万吉が住む。「広岡の家」「広岡の庭」「広岡の姉上」のように一家・屋敷を指して用いられる</note>
       </person>
       <person xml:id="koroku">
         <persName>小六</persName>
@@ -119,6 +123,14 @@
         <persName>長範</persName>
         <note>熊坂長範。牛若丸に討たれる伝説上の盗賊。舞台上の役として言及される</note>
       </person>
+      <person xml:id="senkanja">
+        <persName>仙冠者</persName>
+        <note>少年らの空想の武勇譚に出る豪傑「仙冠者牛若三郎」。稲葉太郎(=国麿)の弟で魔術を使い空を飛ぶとされる。国麿が仲間に入るならこの名にしてやると貢に持ちかけるが断られる。のち芝居小屋の場面でもこの名で呼ばれる者が現れる</note>
+      </person>
+      <person xml:id="gennosuke">
+        <persName>源の助</persName>
+        <note>手鞠歌の文句に現れる名(「一夜源の助がまけたに借りた」)</note>
+      </person>
       <person xml:id="asao">
         <persName>浅尾</persName>
         <note>大槻内蔵之助の芝居の役名。蛇責の場で銀六が勤めた</note>
@@ -130,10 +142,6 @@
       <person xml:id="tsuyako">
         <persName>艶子</persName>
         <note>日暮の丘の坂道の墓石に名を刻まれた姫。継母に疎まれ家を追われ、里の子に手習を教えて早世したと伝えられる</note>
-      </person>
-      <person xml:id="hirooka">
-        <persName>広岡</persName>
-        <note>隣家の姓。お雪と継母の家。「広岡の姉上」「広岡のお雪さん」「広岡の家」のように一家・家族を指して用いられる</note>
       </person>
     </listPerson>
     <listPlace>
@@ -317,7 +325,7 @@
       <div type="chapter" xml:id="sec06" n="6">
         <head>二</head>
         <p>肩幅広く、胸張りて、頬に<ruby><rb>肥肉</rb><rt>しし</rt></ruby>つき、顔<ruby><rb>丸</rb><rt>まろ</rt></ruby>く、色の黒き少年なりき。<ruby><rb>腕力</rb><rt>ちから</rt></ruby>もあり、<ruby><rb>年紀</rb><rt>とし</rt></ruby>も<ruby><rb>長</rb><rt>た</rt></ruby>けたり、門閥も<ruby><rb>貴</rb><rt>たっと</rt></ruby>ければ、近隣の少年等みな<persName ref="#kunimaro">国麿</persName>に従いぬ。</p>
-        <p>厚紙もて<ruby><rb>烏帽子</rb><rt>えぼし</rt></ruby>を作りて<ruby><rb>被</rb><rt>こうむ</rt></ruby>り、<ruby><rb>払</rb><rt>はたき</rt></ruby>を腰に挿したるもの、<ruby><rb>顱巻</rb><rt>はちまき</rt></ruby>をしたるもの、十手を携えたるもの、<ruby><rb>物干棹</rb><rt>ものほしざお</rt></ruby>を<ruby><rb>荷</rb><rt>にな</rt></ruby>えるものなど、五三人左右に引着けて、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は常に宮の<ruby><rb>階</rb><rt>きざはし</rt></ruby>の正面に身構えつ、<persName ref="#kunimaro">稲葉太郎<ruby><rb>荒象園</rb><rt>こうぞうえん</rt></ruby></persName>の<ruby><rb>鬼門</rb><rt>おにかど</rt></ruby>なりと<ruby><rb>名告</rb><rt>なの</rt></ruby>りたり。さて常にわが<persName ref="#hirooka">広岡</persName>の姉上に逢わむとて<ruby><rb>行</rb><rt>ゆ</rt></ruby>くを、などさは<ruby><rb>女々</rb><rt>めめ</rt></ruby>しき振舞する。ともに遊べ、なかまにならば、仙冠者牛若三郎という美少年の豪傑になさむと言いき。仙冠者は稲葉なにがしの弟にて、魔術をよくし、空中を<ruby><rb>飛行</rb><rt>ひぎょう</rt></ruby>せしとや。仙冠者をわれ嫌うにあらねど、誰か甘んじて<persName ref="#kunimaro">国麿</persName>の弟たらむ。</p>
+        <p>厚紙もて<ruby><rb>烏帽子</rb><rt>えぼし</rt></ruby>を作りて<ruby><rb>被</rb><rt>こうむ</rt></ruby>り、<ruby><rb>払</rb><rt>はたき</rt></ruby>を腰に挿したるもの、<ruby><rb>顱巻</rb><rt>はちまき</rt></ruby>をしたるもの、十手を携えたるもの、<ruby><rb>物干棹</rb><rt>ものほしざお</rt></ruby>を<ruby><rb>荷</rb><rt>にな</rt></ruby>えるものなど、五三人左右に引着けて、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は常に宮の<ruby><rb>階</rb><rt>きざはし</rt></ruby>の正面に身構えつ、<persName ref="#kunimaro">稲葉太郎</persName><ruby><rb>荒象園</rb><rt>こうぞうえん</rt></ruby>の<ruby><rb>鬼門</rb><rt>おにかど</rt></ruby>なりと<ruby><rb>名告</rb><rt>なの</rt></ruby>りたり。さて常にわが<persName ref="#hirooka">広岡</persName>の姉上に逢わむとて<ruby><rb>行</rb><rt>ゆ</rt></ruby>くを、などさは<ruby><rb>女々</rb><rt>めめ</rt></ruby>しき振舞する。ともに遊べ、なかまにならば、<persName ref="#senkanja">仙冠者牛若三郎</persName>という美少年の豪傑になさむと言いき。<persName ref="#senkanja">仙冠者</persName>は<persName ref="#kunimaro">稲葉</persName>なにがしの弟にて、魔術をよくし、空中を<ruby><rb>飛行</rb><rt>ひぎょう</rt></ruby>せしとや。<persName ref="#senkanja">仙冠者</persName>をわれ嫌うにあらねど、誰か甘んじて<persName ref="#kunimaro">国麿</persName>の弟たらむ。</p>
         <p>言うこと<ruby><rb>肯</rb><rt>き</rt></ruby>かざるを<ruby><rb>太</rb><rt>いた</rt></ruby>く憎み、きびしくその手下に命じて、われと遊ぶことなからしめたり。さらぬも近隣の少年は、わが袖長き<ruby><rb>衣</rb><rt>きぬ</rt></ruby>を着て、<ruby><rb>好</rb><rt>よ</rt></ruby>き帯したるを<ruby><rb>疎</rb><rt>うとん</rt></ruby>じて、宵々には組を造りて<ruby><rb>町中</rb><rt>まちなか</rt></ruby>を横行しつつ、我が<ruby><rb>門</rb><rt>かど</rt></ruby>に集いては、軒に懸けたる<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>に<ruby><rb>礫</rb><rt>つぶて</rt></ruby>を投じて口々に<ruby><rb>罵</rb><rt>ののし</rt></ruby>りぬ。母上の名、仮名もてその神燈に記されたり。亡き人に礫打たしては、仏を辱かしめむとて、当時わが家をば預りたまえる、伯母の君<ruby><rb>他</rb><rt>ほか</rt></ruby>のに取りかえたまいぬ。</p>
         <p>かかりし少年の腕力あり門閥ある頭領を得たるなれば、何とて我威を<ruby><rb>振</rb><rt>ふる</rt></ruby>わざるべき。姉上に逢わむとて<ruby><rb>木槿垣</rb><rt>むくげがき</rt></ruby>に<ruby><rb>行</rb><rt>ゆ</rt></ruby>く<ruby><rb>途</rb><rt>みち</rt></ruby>、まず一人物干棹をもて一文字に遮り<ruby><rb>留</rb><rt>とど</rt></ruby>む。十手持ちたるが引添いて<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を配り、顱巻したるが肩をあげて<ruby><rb>睨</rb><rt>ね</rt></ruby>め着くる。その中にやさしき顔のかの烏帽子<ruby><rb>被</rb><rt>かぶ</rt></ruby>れる<ruby><rb>児</rb><rt>こ</rt></ruby>の<ruby><rb>払</rb><rt>はたき</rt></ruby>をば、<persName ref="#kunimaro">国麿</persName>の引取りて、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>の<ruby><rb>方</rb><rt>かた</rt></ruby>に居て、片手を尻下りに結びたる帯にはさみて、<ruby><rb>鷹揚</rb><rt>おうよう</rt></ruby>に<ruby><rb>指揮</rb><rt>さしず</rt></ruby>するなり。</p>
         <p>わびたりとて肯くべきにあらず、しおしおと引返す<ruby><rb>本意</rb><rt>ほい</rt></ruby>なき<ruby><rb>日数</rb><rt>ひかず</rt></ruby>こそ積りたれ。忘れぬは<ruby><rb>我</rb><rt>わが</rt></ruby>ために、この時嬉しかりし楓にこそ。</p>
@@ -402,7 +410,7 @@
         <p>「<persName ref="#shinobu">しのぶ</persName>さん、お火鉢。」</p>
         <p>「あい。」と云いしが眗して、土間より立ったる半纏着の<ruby><rb>壮佼</rb><rt>わかもの</rt></ruby>を<ruby><rb>麾</rb><rt>さしまね</rt></ruby>き、</p>
         <p>「ちょいと、火鉢をね。」</p>
-        <p>「おい。」とこちら向く。その土間なる客の中に、<persName ref="#kunimaro">国麿</persName>の<ruby><rb>交</rb><rt>まじ</rt></ruby>りしをわれ見たり。顔を見合せ、そ知らぬ顔して、仙冠者は舞台の<ruby><rb>方</rb><rt>かた</rt></ruby>に<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を転じぬ。<persName ref="#ushiwaka">牛若</persName>に扮したるは<persName ref="#kochika">小親</persName>にこそ。</p>
+        <p>「おい。」とこちら向く。その土間なる客の中に、<persName ref="#kunimaro">国麿</persName>の<ruby><rb>交</rb><rt>まじ</rt></ruby>りしをわれ見たり。顔を見合せ、そ知らぬ顔して、<persName ref="#senkanja">仙冠者</persName>は舞台の<ruby><rb>方</rb><rt>かた</rt></ruby>に<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を転じぬ。<persName ref="#ushiwaka">牛若</persName>に扮したるは<persName ref="#kochika">小親</persName>にこそ。</p>
       </div>
       <div type="chapter" xml:id="sec10" n="10">
         <head>四</head>
@@ -503,7 +511,7 @@
         <p>「<ruby><rb>帰途</rb><rt>かえり</rt></ruby>があるって、帰途がどうしたの、<persName ref="#kunimaro">国ちゃん</persName>。」</p>
         <p><persName ref="#kunimaro">国麿</persName>は<ruby><rb>嘲笑</rb><rt>あざわら</rt></ruby>えり。</p>
         <p>「知ってるだろう。<placeName ref="#toriimae">鳥居前</placeName>の<ruby><rb>俺</rb><rt>おれ</rt></ruby>が関を知ってるだろう。」</p>
-        <p>手下四五人、<persName ref="#kunimaro">稲葉太郎荒象園</persName>の<ruby><rb>鬼門</rb><rt>おにかど</rt></ruby><ruby><rb>彼処</rb><rt>かしこ</rt></ruby>に有りて威を<ruby><rb>恣</rb><rt>ほしいまま</rt></ruby>にす。われは黙して<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>きぬ。<persName ref="#kunimaro">国麿</persName>はじりりと寄りて、</p>
+        <p>手下四五人、<persName ref="#kunimaro">稲葉太郎</persName>荒象園の<ruby><rb>鬼門</rb><rt>おにかど</rt></ruby><ruby><rb>彼処</rb><rt>かしこ</rt></ruby>に有りて威を<ruby><rb>恣</rb><rt>ほしいまま</rt></ruby>にす。われは黙して<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>きぬ。<persName ref="#kunimaro">国麿</persName>はじりりと寄りて、</p>
         <p>「<ruby><rb>皆</rb><rt>みんな</rt></ruby>知ってるぜ、おい、皆見ていたぜ。<ruby><rb>汝</rb><rt>きさま</rt></ruby><ruby><rb>婦人</rb><rt>おんな</rt></ruby>とばかり仲好くして、<ruby><rb>先刻</rb><rt>さっき</rt></ruby>もおれを見て知らない顔して<ruby><rb>談話</rb><rt>はなし</rt></ruby>してたじゃあないか。そうするが可いや、うむ、たんとそうするさ。」</p>
         <p>「<persName ref="#kunimaro">国ちゃん</persName>、堪忍おし。」</p>
         <p>「へ、あやまるかい。うむ、あやまるなら可いや。じゃあ可いから、な、その座蒲団にちょっと<ruby><rb>己</rb><rt>おれ</rt></ruby>をのッけてくれないか、そこを<ruby><rb>退</rb><rt>ど</rt></ruby>いて。さあ、」</p>
@@ -676,7 +684,7 @@
         <p>と口々に唄いつれて舞台を横ぎり、花道にさしかかる。ものうければ<ruby><rb>下</rb><rt>おろ</rt></ruby>せとて、上にてあせるを許さばこそ。<persName ref="#koina">小稲</persName>はわが顔を仰向き見て、</p>
         <p>「坊ちゃんも何ぞお唄いなさい。そうすると下してあげます。」</p>
         <p><ruby><rb>止</rb><rt>や</rt></ruby>むなく声あげてうたいたり。</p>
-        <p>（一夜源の助がまけたに借りた、）</p>
+        <p>（一夜<persName ref="#gennosuke">源の助</persName>がまけたに借りた、）</p>
         <p>（負けたかりたはいくらほど借りた。）</p>
         <p>（<ruby><rb>金子</rb><rt>かね</rt></ruby>が三両に小袖が七ツ、）</p>
         <p>（七ツ七ツは十四じゃあないか。……）</p>
@@ -997,7 +1005,7 @@
         <p>「<ruby><rb>持参金</rb><rt>もちこみ</rt></ruby>かね。」</p>
         <p>「ええ、<ruby><rb>大分</rb><rt>だいぶん</rt></ruby>の高だというよ。<ruby><rb>初</rb><rt>はじめ</rt></ruby>ッから<persName ref="#oyuki">お雪</persName>さんは嫌っていた男だってね。私も知ってる<ruby><rb>奴</rb><rt>やつ</rt></ruby>だよ。<persName ref="#mankichi">万吉</persName>てッて、<ruby><rb>通</rb><rt>とおり</rt></ruby>の金持の息子なの。ねえ、姉さん、どういうものか万の字の着いたのに利口なものは居ないよ。馬鹿万と云うのがあるしね、<ruby><rb>刎万</rb><rt>はねまん</rt></ruby>だの、それから鼻万だのッて、<ruby><rb>皆</rb><rt>みんな</rt></ruby>嫌な奴さ。ありゃ名でもって<ruby><rb>同</rb><rt>おんな</rt></ruby>じような申分のあるのが出来るのは、土地に因るんだとね。かえって利口なのも有るんだって。」</p>
         <p>「また、詰らないことを言出したよ。<ruby><rb>幾歳</rb><rt>いくつ</rt></ruby>だねえ、お前さんは。そんなこと云っていて、人の心配も何も出来るものじゃない。」</p>
-        <p>「だって、それに違いないのだ。あの<persName ref="#oyuki">お雪</persName>さんの養子になってるのは、やっぱり万という名だからさ。私がね、小さい時、万はもう大きな<ruby><rb>身</rb><rt>からだ</rt></ruby>をして、良い処の息子の癖に、万金丹売のね、<ruby><rb>能書</rb><rt>のうがき</rt></ruby>を絵びらに刷ったのが貰いたいって、<ruby><rb>革鞄</rb><rt>かばん</rt></ruby>を持って、お供をして、嬉しがって、威張って<ruby><rb>歩行</rb><rt>ある</rt></ruby>いた<ruby><rb>児</rb><rt>こ</rt></ruby>だものを。誰が、そんな。</p>
+        <p>「だって、それに違いないのだ。あの<persName ref="#oyuki">お雪</persName>さんの養子になってるのは、やっぱり<persName ref="#mankichi">万</persName>という名だからさ。私がね、小さい時、<persName ref="#mankichi">万</persName>はもう大きな<ruby><rb>身</rb><rt>からだ</rt></ruby>をして、良い処の息子の癖に、万金丹売のね、<ruby><rb>能書</rb><rt>のうがき</rt></ruby>を絵びらに刷ったのが貰いたいって、<ruby><rb>革鞄</rb><rt>かばん</rt></ruby>を持って、お供をして、嬉しがって、威張って<ruby><rb>歩行</rb><rt>ある</rt></ruby>いた<ruby><rb>児</rb><rt>こ</rt></ruby>だものを。誰が、そんな。</p>
         <p>だから<persName ref="#oyuki">お雪</persName>さんも嫌っていたんだそうだけれど、どっさりお<ruby><rb>金子</rb><rt>かね</rt></ruby>を持って来ると言うので、あの継母がね、是非婿にしよう、しなけりゃあなりませんと、そう云ったんだ、と。<persName ref="#oyuki">お雪</persName>さんが嫌だと云ったけれど……あの、姉さんも知ってるはずだよ。……私の内に楓の樹があって、往来へ枝がさして茂ってたのが、あすこの窓へ届いたので、内が暗くって、仕様がない。<persName ref="#mitsugi">貢</persName>の内へ掛合って、<ruby><rb>伐</rb><rt>き</rt></ruby>らしてしまうと言った時分に、私は何も知らないけれど、<persName ref="#oyuki">お雪</persName>さんが、あれだけは、そんなかわいそうな事をしないで下さい。後生ですって、止めたんだ。……それがあの<ruby><rb>洪水</rb><rt>みず</rt></ruby>の時に流れ出して、大丈夫だった<persName ref="#hirooka">広岡</persName>の<ruby><rb>家</rb><rt>うち</rt></ruby>へ<ruby><rb>衝突</rb><rt>ぶつか</rt></ruby>ったので流れただろう、誰のおかげだ……」</p>
       </div>
       <div type="chapter" xml:id="sec29" n="29">

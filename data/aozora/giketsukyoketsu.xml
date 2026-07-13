@@ -55,17 +55,17 @@
         <persName>桐田</persName>
         <note>兼六園内の席貸し「六勝亭」の主翁。金満家の隠居。夫婦ともに白糸に殺害される</note>
       </person>
-      <person xml:id="kichiko">
-        <persName>吉公</persName>
-        <note>高岡石動間の乗り合い馬車の客引きの小僧。馭者の欣弥から「吉公」と呼ばれる</note>
-      </person>
       <person xml:id="chomatsu">
         <persName>長松</persName>
         <note>猿芝居の猿の名。年増の女に連れられ金沢から福井へ発つ(名を持つ動物)</note>
       </person>
+      <person xml:id="kichiko">
+        <persName>吉公</persName>
+        <note>高岡石動間の乗り合い馬車の客引きの小僧。馭者(欣弥)から「吉公」と呼ばれる</note>
+      </person>
       <person xml:id="chiyoko">
         <persName>千代公</persName>
-        <note>長松と同じ猿芝居の一座の連れの呼び名。金沢は二度目という。長松(猿)のもう一匹の相方とも一座の人とも取れるが、本文からは断定できない</note>
+        <note>長松と同じ猿芝居の一座の連れの呼び名(金沢は二度目という)。長松(猿)のもう一匹の相方とも一座の人とも取れるが、本文からは断定できない</note>
       </person>
       <person xml:id="shin">
         <persName>新</persName>

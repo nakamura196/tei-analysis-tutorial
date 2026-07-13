@@ -75,7 +75,7 @@
       <place xml:id="shinjuku">
         <placeName>新宿</placeName>
         <location><geo>35.6896 139.7006</geo></location>
-        <note>現・新宿区（新宿停車場付近）。作中の「新宿赤羽間の鉄道線路」は日本鉄道品川線を国有化した路線で、現在の JR 山手線（新宿—池袋）と赤羽線・埼京線（池袋—赤羽）にあたる。その南端・概値</note>
+        <note>現・新宿区（新宿停車場付近）。「新宿赤羽間の鉄道線路」（現・JR赤羽線／埼京線にあたる区間）の南端・概値</note>
       </place>
       <place xml:id="akabane">
         <placeName>赤羽</placeName>
