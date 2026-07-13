@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>堺事件</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>堺事件</title><author>森鴎外</author>
+          <note>青空文庫。底本：「阿部一族・舞姫」新潮文庫、新潮社。1968（昭和43）年4月20日発行。1979（昭和54）年8月15日24刷。入力：j_sekikawa。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card2547.html">https://www.aozora.gr.jp/cards/000129/card2547.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="yoshinobu">
+        <persName>徳川慶喜</persName>
+        <note>江戸幕府第15代将軍。鳥羽・伏見の敗戦後に海路江戸へ退く</note>
+      </person>
+      <person xml:id="sugi">
+        <persName>杉紀平太</persName>
+        <note>土佐藩大目附。堺の軍監府を預かり、両隊長に大和橋出張を命じる</note>
+      </person>
+      <person xml:id="ikoma">
+        <persName>生駒静次</persName>
+        <note>土佐藩目附。杉と共に軍監府に入り、外国事務係へ報告に赴く</note>
+      </person>
+      <person xml:id="date-munenari">
+        <persName>伊達伊予守宗城</persName>
+        <note>前宇和島藩主。外国事務係(伊達少将)。切腹に臨検し、助命の朝旨を取り次ぐ</note>
+      </person>
+      <person xml:id="umekichi">
+        <persName>梅吉</persName>
+        <note>土佐藩歩兵隊に付いた鳶頭(旗持梅吉)。隊旗を奪ったフランス水兵を鳶口で打ち倒す</note>
+      </person>
+      <person xml:id="okabe">
+        <persName>岡部筑前守長寛</persName>
+        <note>岸和田藩主。堺の砲台の大砲を預かる</note>
+      </person>
+      <person xml:id="ishikawa">
+        <persName>石川石之助</persName>
+        <note>大阪の土佐藩邸詰。堺事件の届書を出す</note>
+      </person>
+      <person xml:id="yamauchi-hayato">
+        <persName>山内隼人</persName>
+        <note>土佐藩家老。京都藩邸から大阪へ派遣される</note>
+      </person>
+      <person xml:id="hayashi">
+        <persName>林亀吉</persName>
+        <note>土佐藩大目附。杉・生駒らを長堀藩邸に移らせる</note>
+      </person>
+      <person xml:id="tani">
+        <persName>谷兎毛</persName>
+        <note>土佐藩目附。京都藩邸から大阪へ派遣される</note>
+      </person>
+      <person xml:id="nagao">
+        <persName>長尾太郎兵衛</persName>
+        <note>京都詰部隊を率い、両隊長に勤事控を命じる</note>
+      </person>
+      <person xml:id="fukao">
+        <persName>深尾鼎</persName>
+        <note>土佐藩家老。前藩主山内豊信の名代として切腹の沙汰を申し渡す</note>
+      </person>
+      <person xml:id="kominami">
+        <persName>小南五郎右衛門</persName>
+        <note>土佐藩大目附。籤引を差配し、切腹・士分取扱の沙汰を伝える</note>
+      </person>
+      <person xml:id="toyoshige">
+        <persName>山内豊信</persName>
+        <note>前土佐藩主(山内土佐守豊信)。隠居して容堂と号す。作中「御隠居様」</note>
+      </person>
+      <person xml:id="toyonori">
+        <persName>山内豊範</persName>
+        <note>土佐藩主(土佐守豊範)。作中「太守様」。ヴェニュス号に出向いて謝罪する</note>
+      </person>
+      <person xml:id="roche">
+        <persName>レオン・ロッシュ</persName>
+        <note>フランス公使 Léon Roche。損害要償を交渉し、切腹に臨検するが十一人目で退席する</note>
+      </person>
+      <person xml:id="miura">
+        <persName>箕浦猪之吉</persName>
+        <note>元六番歩兵隊長。源姓、名は元章、号は仙山。二十五歳。切腹の首席</note>
+      </person>
+      <person xml:id="nishimura">
+        <persName>西村左平次</persName>
+        <note>元八番歩兵隊長。源姓、名は氏同。二十四歳</note>
+      </person>
+      <person xml:id="ikegami">
+        <persName>池上弥三吉</persName>
+        <note>六番隊小頭。切腹する</note>
+      </person>
+      <person xml:id="oishi">
+        <persName>大石甚吉</persName>
+        <note>八番隊小頭。切腹の手際が最も立派であったとされる</note>
+      </person>
+      <person xml:id="sugimoto">
+        <persName>杉本広五郎</persName>
+        <note>六番隊兵卒。土居に起こされ、切腹嘆願の衆議をまとめる</note>
+      </person>
+      <person xml:id="shogase">
+        <persName>勝賀瀬三六</persName>
+        <note>六番隊兵卒。切腹する</note>
+      </person>
+      <person xml:id="yamamoto">
+        <persName>山本哲助</persName>
+        <note>六番隊兵卒。切腹する</note>
+      </person>
+      <person xml:id="morimoto">
+        <persName>森本茂吉</persName>
+        <note>六番隊兵卒。切腹する</note>
+      </person>
+      <person xml:id="kitadai">
+        <persName>北代健助</persName>
+        <note>六番隊兵卒。切腹する(切腹の場面では底本に「北城」とある)</note>
+      </person>
+      <person xml:id="inada">
+        <persName>稲田貫之丞</persName>
+        <note>六番隊兵卒。切腹する</note>
+      </person>
+      <person xml:id="yanase">
+        <persName>柳瀬常七</persName>
+        <note>六番隊兵卒。切腹する。宝珠院の石碑は箕浦から柳瀬までが並ぶ</note>
+      </person>
+      <person xml:id="hashizume">
+        <persName>橋詰愛平</persName>
+        <note>六番隊兵卒。十二人目で切腹を中止させられ、生き残る。後に舌を咬み切る</note>
+      </person>
+      <person xml:id="okazaki-eibee">
+        <persName>岡崎栄兵衛</persName>
+        <note>六番隊兵卒。上裁籤に当たるが切腹中止で生き残り、安芸藩へ預けられる</note>
+      </person>
+      <person xml:id="kawatani">
+        <persName>川谷銀太郎</persName>
+        <note>六番隊兵卒。生き残るが入田村で時疫にかかり二十六歳で病死する</note>
+      </person>
+      <person xml:id="okazaki-tashiro">
+        <persName>岡崎多四郎</persName>
+        <note>六番隊兵卒。白籤を引く</note>
+      </person>
+      <person xml:id="mizuno">
+        <persName>水野万之助</persName>
+        <note>六番隊兵卒。射撃したと答える</note>
+      </person>
+      <person xml:id="kishida">
+        <persName>岸田勘平</persName>
+        <note>六番隊兵卒。射撃したと答える</note>
+      </person>
+      <person xml:id="monden">
+        <persName>門田鷹太郎</persName>
+        <note>六番隊兵卒。射撃したと答える</note>
+      </person>
+      <person xml:id="kusunose-yasujiro">
+        <persName>楠瀬保次郎</persName>
+        <note>六番隊兵卒。射撃したと答える</note>
+      </person>
+      <person xml:id="takeuchi">
+        <persName>竹内民五郎</persName>
+        <note>八番隊兵卒。刺し違えを留め、切腹嘆願の交渉で一同を代表して発言する</note>
+      </person>
+      <person xml:id="yokota-tatsugoro">
+        <persName>横田辰五郎</persName>
+        <note>八番隊兵卒。生き残り肥後藩へ預けられる。子は常次郎</note>
+      </person>
+      <person xml:id="doi">
+        <persName>土居八之助</persName>
+        <note>八番隊兵卒。射撃者名簿では「土居徳太郎」とある(底本の異同)。宝珠院の大瓶に入ってみせる</note>
+      </person>
+      <person xml:id="kaneda">
+        <persName>金田時治</persName>
+        <note>八番隊兵卒。生き残り肥後藩へ預けられる</note>
+      </person>
+      <person xml:id="takeuchi-yasaburo">
+        <persName>武内弥三郎</persName>
+        <note>八番隊兵卒。生き残り肥後藩へ預けられ、入田村で撃剣を教える</note>
+      </person>
+      <person xml:id="eida">
+        <persName>栄田次右衛門</persName>
+        <note>八番隊兵卒。白籤を引き、同志と連署して同罪を願い出る</note>
+      </person>
+      <person xml:id="nakajo">
+        <persName>中城惇五郎</persName>
+        <note>八番隊兵卒。白籤組。連署の願書に加わる</note>
+      </person>
+      <person xml:id="yokota-shizujiro">
+        <persName>横田静次郎</persName>
+        <note>八番隊兵卒。白籤組。連署の願書に加わる</note>
+      </person>
+      <person xml:id="tamaru">
+        <persName>田丸勇六郎</persName>
+        <note>八番隊兵卒。白籤組。連署の願書に加わる</note>
+      </person>
+      <person xml:id="hamada">
+        <persName>浜田友太郎</persName>
+        <note>六番隊兵卒。射撃しなかったと答えた二十人の筆頭</note>
+      </person>
+      <person xml:id="nagano">
+        <persName>永野峰吉</persName>
+        <note>八番隊兵卒。射撃しなかったと答えた二十一人の筆頭</note>
+      </person>
+      <person xml:id="kakiuchi">
+        <persName>垣内</persName>
+        <note>八番隊兵卒。妙国寺の鐘を撞こうとする。生き残り肥後藩へ預けられる</note>
+      </person>
+      <person xml:id="hosokawa">
+        <persName>細川越中守慶順</persName>
+        <note>熊本藩主。二十人の護送と生存者の預りを命ぜられる</note>
+      </person>
+      <person xml:id="asano">
+        <persName>浅野安芸守茂長</persName>
+        <note>広島藩主。二十人の護送と生存者の預りを命ぜられる</note>
+      </person>
+      <person xml:id="baba-hikoemon">
+        <persName>馬場彦右衛門</persName>
+        <note>細川藩(熊本藩)留守居。護送の行列に加わる</note>
+      </person>
+      <person xml:id="yamakawa">
+        <persName>山川亀太郎</persName>
+        <note>細川藩(熊本藩)の隊長。護送中に駕籠の簾や茶菓を気遣う</note>
+      </person>
+      <person xml:id="watanabe">
+        <persName>渡辺競</persName>
+        <note>浅野藩(広島藩)の重役。護送の行列に加わる</note>
+      </person>
+      <person xml:id="yamashinanomiya">
+        <persName>山階宮</persName>
+        <note>外国事務総裁。切腹に臨検する(作中「総裁宮」)</note>
+      </person>
+      <person xml:id="higashikuze">
+        <persName>東久世通禧</persName>
+        <note>外国事務係(東久世少将)。切腹に臨検する</note>
+      </person>
+      <person xml:id="meiji-tenno">
+        <persName>明治天皇</persName>
+        <note>第122代天皇。即位の御祝式により生存者八人が特赦を受ける</note>
+      </person>
+      <person xml:id="ii">
+        <persName>井伊掃部頭</persName>
+        <note>井伊直弼。万延元年に水戸浪人に刺される(桜田門外の変)</note>
+      </person>
+      <person xml:id="uga">
+        <persName>宇賀祐之進</persName>
+        <note>幡多郡入田村の庄屋。流謫の九人を農家に分けて住まわせる</note>
+      </person>
+      <person xml:id="tsunejiro">
+        <persName>常次郎</persName>
+        <note>横田辰五郎の子。九歳で単身三十里を歩き父を看病する</note>
+      </person>
+      <person xml:id="tadahira">
+        <persName>忠平</persName>
+        <note>箕浦猪之吉の祖父</note>
+      </person>
+      <person xml:id="manjiro">
+        <persName>万次郎</persName>
+        <note>箕浦猪之吉の父</note>
+      </person>
+      <person xml:id="ume">
+        <persName>梅</persName>
+        <note>箕浦猪之吉の母。依田氏の出</note>
+      </person>
+      <person xml:id="seizaemon">
+        <persName>清左衛門</persName>
+        <note>西村左平次の父。早く亡くなる</note>
+      </person>
+      <person xml:id="katsuhei">
+        <persName>克平</persName>
+        <note>西村左平次の祖父。西村の家督を復せられる</note>
+      </person>
+      <person xml:id="miura-kozo">
+        <persName>箕浦幸蔵</persName>
+        <note>箕浦猪之吉と同姓。二男楠吉が箕浦家を継ぐ</note>
+      </person>
+      <person xml:id="kusukichi">
+        <persName>楠吉</persName>
+        <note>箕浦幸蔵の二男。箕浦家の家名を立て、猪之吉の娘を配される</note>
+      </person>
+      <person xml:id="baba">
+        <persName>馬場桃太郎</persName>
+        <note>箕浦の介錯人。底本は「馬淵〔馬場〕桃太郎」。三太刀で首を墜す</note>
+      </person>
+      <person xml:id="kitagawa">
+        <persName>北川礼平</persName>
+        <note>池上の介錯人</note>
+      </person>
+      <person xml:id="ike">
+        <persName>池七助</persName>
+        <note>杉本と土居の二人を介錯する筈であった者</note>
+      </person>
+      <person xml:id="yoshimura">
+        <persName>吉村材吉</persName>
+        <note>勝賀瀬の介錯人</note>
+      </person>
+      <person xml:id="mori">
+        <persName>森常馬</persName>
+        <note>山本の介錯人</note>
+      </person>
+      <person xml:id="noguchi">
+        <persName>野口喜久馬</persName>
+        <note>森本の介錯人</note>
+      </person>
+      <person xml:id="takechi">
+        <persName>武市助吾</persName>
+        <note>北代の介錯人</note>
+      </person>
+      <person xml:id="ehara">
+        <persName>江原源之助</persName>
+        <note>稲田の介錯人</note>
+      </person>
+      <person xml:id="kondo">
+        <persName>近藤茂之助</persName>
+        <note>柳瀬の介錯人</note>
+      </person>
+      <person xml:id="yamada">
+        <persName>山田安之助</persName>
+        <note>橋詰の介錯人</note>
+      </person>
+      <person xml:id="hijikata">
+        <persName>土方要五郎</persName>
+        <note>岡崎の介錯人</note>
+      </person>
+      <person xml:id="takemoto">
+        <persName>竹本謙之助</persName>
+        <note>川谷の介錯人</note>
+      </person>
+      <person xml:id="kosaka">
+        <persName>小坂乾</persName>
+        <note>西村の介錯人。西村がまだ刀を引くうちに切ってしまう</note>
+      </person>
+      <person xml:id="ochiai">
+        <persName>落合源六</persName>
+        <note>大石の介錯人。七太刀目に首を墜す</note>
+      </person>
+      <person xml:id="kusunose-ryuhei">
+        <persName>楠瀬柳平</persName>
+        <note>竹内の介錯人</note>
+      </person>
+      <person xml:id="matsuda">
+        <persName>松田八平次</persName>
+        <note>横田の介錯人</note>
+      </person>
+      <person xml:id="kumon">
+        <persName>公文左平</persName>
+        <note>垣内の介錯人</note>
+      </person>
+      <person xml:id="tanigawa">
+        <persName>谷川新次</persName>
+        <note>金田の介錯人</note>
+      </person>
+      <person xml:id="kitamori">
+        <persName>北森貫之助</persName>
+        <note>武内の介錯人</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="sakai">
+        <placeName>堺</placeName>
+        <location><geo>34.5733 135.4831</geo></location>
+        <note>現大阪府堺市・概値。事件と切腹の舞台</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="osakajo">
+        <placeName>大阪城</placeName>
+        <location><geo>34.6873 135.5262</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.685 139.7527</geo></location>
+        <note>現東京・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hyogo">
+        <placeName>兵庫</placeName>
+        <location><geo>34.6667 135.1667</geo></location>
+        <note>兵庫津(現神戸市兵庫区)・概値</note>
+      </place>
+      <place xml:id="kobe">
+        <placeName>神戸</placeName>
+        <location><geo>34.6901 135.1955</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="fushimi">
+        <placeName>伏見</placeName>
+        <location><geo>34.932 135.76</geo></location>
+        <note>現京都市伏見区・概値</note>
+      </place>
+      <place xml:id="toba">
+        <placeName>鳥羽</placeName>
+        <location><geo>34.933 135.73</geo></location>
+        <note>鳥羽・伏見の戦いの鳥羽(現京都市南区)・概値</note>
+      </place>
+      <place xml:id="yokohama">
+        <placeName>横浜</placeName>
+        <location><geo>35.4437 139.638</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="settsu">
+        <placeName>摂津</placeName>
+        <location><geo>34.7 135.4</geo></location>
+        <note>旧国名・概値</note>
+      </place>
+      <place xml:id="kawachi">
+        <placeName>河内</placeName>
+        <location><geo>34.55 135.6</geo></location>
+        <note>旧国名・概値</note>
+      </place>
+      <place xml:id="yamato">
+        <placeName>大和</placeName>
+        <location><geo>34.5 135.8</geo></location>
+        <note>旧国名・概値</note>
+      </place>
+      <place xml:id="satsuma">
+        <placeName>薩摩</placeName>
+        <location><geo>31.6 130.55</geo></location>
+        <note>旧国名(薩摩藩)・概値</note>
+      </place>
+      <place xml:id="nagato">
+        <placeName>長門</placeName>
+        <location><geo>34.3 131.4</geo></location>
+        <note>旧国名(長州藩)・概値</note>
+      </place>
+      <place xml:id="tosa">
+        <placeName>土佐</placeName>
+        <location><geo>33.5597 133.5311</geo></location>
+        <note>旧国名(土佐藩)・概値</note>
+      </place>
+      <place xml:id="aki">
+        <placeName>安芸</placeName>
+        <location><geo>34.4025 132.4596</geo></location>
+        <note>旧国名(安芸国・広島)・概値</note>
+      </place>
+      <place xml:id="higo">
+        <placeName>肥後</placeName>
+        <location><geo>32.8 130.7</geo></location>
+        <note>旧国名(肥後国・熊本)・概値</note>
+      </place>
+      <place xml:id="inaba">
+        <placeName>因幡</placeName>
+        <location><geo>35.5 134.23</geo></location>
+        <note>旧国名(因幡国・鳥取)・概値</note>
+      </place>
+      <place xml:id="bizen">
+        <placeName>備前</placeName>
+        <location><geo>34.66 133.93</geo></location>
+        <note>旧国名(備前国・岡山)・概値</note>
+      </place>
+      <place xml:id="kumamoto-han">
+        <placeName>熊本藩</placeName>
+        <location><geo>32.806 130.7056</geo></location>
+        <note>細川家の熊本藩(熊本城)・概値</note>
+      </place>
+      <place xml:id="hiroshima-han">
+        <placeName>広島藩</placeName>
+        <location><geo>34.4025 132.4596</geo></location>
+        <note>浅野家の広島藩(広島城)・概値</note>
+      </place>
+      <place xml:id="kishiwada">
+        <placeName>岸和田藩</placeName>
+        <location><geo>34.46 135.37</geo></location>
+        <note>岡部家の岸和田藩(岸和田城)・概値</note>
+      </place>
+      <place xml:id="uwajima">
+        <placeName>宇和島藩</placeName>
+        <location><geo>33.2233 132.5606</geo></location>
+        <note>伊達家の宇和島藩(宇和島城)・概値</note>
+      </place>
+      <place xml:id="matsuyama">
+        <placeName>松山藩</placeName>
+        <location><geo>33.8392 132.7657</geo></location>
+        <note>伊予松山藩(松山城)・概値</note>
+      </place>
+      <place xml:id="yamatobashi">
+        <placeName>大和橋</placeName>
+        <location><geo>34.585 135.455</geo></location>
+        <note>大和川に架かり堺と大阪を結ぶ橋・概値</note>
+      </place>
+      <place xml:id="tenpozan">
+        <placeName>天保山沖</placeName>
+        <location><geo>34.656 135.43</geo></location>
+        <note>大阪湾天保山(現大阪市港区)沖・概値</note>
+      </place>
+      <place xml:id="kizugawaguchi">
+        <placeName>木津川口</placeName>
+        <location><geo>34.66 135.46</geo></location>
+        <note>木津川河口(現大阪市大正区周辺)・概値</note>
+      </place>
+      <place xml:id="senbonmatsu">
+        <placeName>千本松</placeName>
+        <location><geo>34.642 135.453</geo></location>
+        <note>木津川の千本松(現大阪市大正区)・概値</note>
+      </place>
+      <place xml:id="nagahori">
+        <placeName>長堀</placeName>
+        <location><geo>34.674 135.5</geo></location>
+        <note>長堀川沿い(現大阪市中央区長堀)。土佐藩大阪藩邸の所在・概値</note>
+      </place>
+      <place xml:id="sumiyoshi">
+        <placeName>住吉</placeName>
+        <location><geo>34.612 135.493</geo></location>
+        <note>住吉大社周辺(現大阪市住吉区)・概値</note>
+      </place>
+      <place xml:id="sumiyoshi-kaido">
+        <placeName>住吉街道</placeName>
+        <location><geo>34.6 135.49</geo></location>
+        <note>大阪と堺を結ぶ街道(線状の対象のため代表点)・概値</note>
+      </place>
+      <place xml:id="sumiyoshi-shinkeimachi">
+        <placeName>住吉新慶町</placeName>
+        <note>住吉付近の町名。現在の地名に比定困難のため座標なし</note>
+      </place>
+      <place xml:id="oikedori">
+        <placeName>御池通六丁目</placeName>
+        <note>大阪の町名(作中「大阪御池通六丁目」「御池六丁目」)。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="itoyamachi">
+        <placeName>糸屋町</placeName>
+        <note>堺の町名。与力屋敷・同心屋敷があった。現在の地名に比定困難のため座標なし</note>
+      </place>
+      <place xml:id="kushiyamachi">
+        <placeName>大通櫛屋町</placeName>
+        <location><geo>34.5757 135.4794</geo></location>
+        <note>堺の櫛屋町(現堺市堺区櫛屋町)。元総会所に軍監府が置かれた・概値</note>
+      </place>
+      <place xml:id="myokokuji">
+        <placeName>妙国寺</placeName>
+        <location><geo>34.5786 135.4838</geo></location>
+        <note>堺市堺区材木町東の日蓮宗寺院。切腹の場・概値</note>
+      </place>
+      <place xml:id="hojuin">
+        <placeName>宝珠院</placeName>
+        <location><geo>34.5768 135.4806</geo></location>
+        <note>堺市堺区の寺院。十一基の石碑と九つの大瓶がある・概値</note>
+      </place>
+      <place xml:id="inarisha">
+        <placeName>稲荷社</placeName>
+        <note>土佐藩大阪長堀藩邸内の稲荷社。籤引が行われた。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="marugame">
+        <placeName>丸亀</placeName>
+        <location><geo>34.2897 133.7978</geo></location>
+        <note>現香川県丸亀市・概値</note>
+      </place>
+      <place xml:id="kitayamado">
+        <placeName>北山道</placeName>
+        <note>讃岐から土佐へ抜ける街道。線状かつ経路に諸説あるため座標なし</note>
+      </place>
+      <place xml:id="kochi">
+        <placeName>高知</placeName>
+        <location><geo>33.5597 133.5311</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tosa-gun">
+        <placeName>土佐郡</placeName>
+        <location><geo>33.56 133.53</geo></location>
+        <note>土佐国土佐郡(現高知市周辺)・概値</note>
+      </place>
+      <place xml:id="shioe">
+        <placeName>潮江村</placeName>
+        <location><geo>33.55 133.54</geo></location>
+        <note>土佐郡潮江村(現高知市潮江)。箕浦の住地・概値</note>
+      </place>
+      <place xml:id="enokuchi">
+        <placeName>江の口村</placeName>
+        <location><geo>33.565 133.535</geo></location>
+        <note>土佐郡江ノ口村(現高知市江ノ口)。西村の住地・概値</note>
+      </place>
+      <place xml:id="asakura">
+        <placeName>朝倉村</placeName>
+        <location><geo>33.55 133.49</geo></location>
+        <note>土佐郡朝倉村(現高知市朝倉)・概値</note>
+      </place>
+      <place xml:id="urado">
+        <placeName>浦戸</placeName>
+        <location><geo>33.5 133.57</geo></location>
+        <note>土佐の浦戸港(現高知市浦戸)・概値</note>
+      </place>
+      <place xml:id="minamikaisho">
+        <placeName>南会所</placeName>
+        <location><geo>33.56 133.53</geo></location>
+        <note>高知城下の土佐藩庁施設・概値</note>
+      </place>
+      <place xml:id="matsugahana">
+        <placeName>松が鼻</placeName>
+        <note>高知城下の地名。現在の地名に比定困難のため座標なし</note>
+      </place>
+      <place xml:id="obiyamachi">
+        <placeName>帯屋町</placeName>
+        <location><geo>33.5597 133.533</geo></location>
+        <note>現高知市帯屋町・概値</note>
+      </place>
+      <place xml:id="hata-gun">
+        <placeName>幡多郡</placeName>
+        <location><geo>32.98 132.93</geo></location>
+        <note>土佐国幡多郡(現高知県西部)・概値</note>
+      </place>
+      <place xml:id="nyutamura">
+        <placeName>入田村</placeName>
+        <location><geo>32.993 132.938</geo></location>
+        <note>幡多郡入田村(現四万十市入田)。九人の配所・概値</note>
+      </place>
+      <place xml:id="arioka">
+        <placeName>有岡村</placeName>
+        <location><geo>32.96 132.88</geo></location>
+        <note>幡多郡有岡村(現四万十市有岡)。横田が身を寄せる・概値</note>
+      </place>
+      <place xml:id="shinjoji">
+        <placeName>真静寺</placeName>
+        <location><geo>32.96 132.88</geo></location>
+        <note>有岡村の法華宗寺院。十一人のため法会を行う・概値</note>
+      </place>
+      <place xml:id="hata-nakamura">
+        <placeName>幡多中村</placeName>
+        <location><geo>32.99 132.935</geo></location>
+        <note>幡多郡中村(現四万十市中村)・概値</note>
+      </place>
+      <place xml:id="kami-gun">
+        <placeName>香美郡</placeName>
+        <location><geo>33.6 133.7</geo></location>
+        <note>土佐国香美郡(現高知県香美市・香南市周辺)・概値</note>
+      </place>
+      <place xml:id="yasumura">
+        <placeName>夜須村</placeName>
+        <location><geo>33.53 133.75</geo></location>
+        <note>香美郡夜須村(現香南市夜須町)・概値</note>
+      </place>
+      <place xml:id="watarigawa">
+        <placeName>渡川</placeName>
+        <location><geo>32.98 132.93</geo></location>
+        <note>四万十川の旧称。流刑の境とされた・概値(河口付近)</note>
+      </place>
+      <place xml:id="france">
+        <placeName>フランス</placeName>
+        <location><geo>46.6034 1.8883</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="england">
+        <placeName>イギリス</placeName>
+        <location><geo>55.3781 -3.436</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="america">
+        <placeName>アメリカ</placeName>
+        <location><geo>39.8283 -98.5795</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="japan">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>堺事件</head>
+        <p><date when="1868">明治元年</date><ruby><rb>戊辰</rb><rt>ぼしん</rt></ruby>の<ruby><rb>歳</rb><rt>とし</rt></ruby><date when="--01">正月</date>、<persName ref="#yoshinobu">徳川<ruby><rb>慶喜</rb><rt>よしのぶ</rt></ruby></persName>の軍が<placeName ref="#fushimi">伏見</placeName>、<placeName ref="#toba">鳥羽</placeName>に敗れて、<placeName ref="#osakajo">大阪城</placeName>をも守ることが出来ず、海路を<placeName ref="#edo">江戸</placeName>へ<ruby><rb>遁</rb><rt>のが</rt></ruby>れた跡で、<placeName ref="#osaka">大阪</placeName>、<placeName ref="#hyogo">兵庫</placeName>、<placeName ref="#sakai">堺</placeName>の諸役人は職を棄てて<ruby><rb>潜</rb><rt>ひそ</rt></ruby>み<ruby><rb>匿</rb><rt>かく</rt></ruby>れ、これ等の都会は一時無政府の状況に陥った。そこで<placeName ref="#osaka">大阪</placeName>は<placeName ref="#satsuma"><ruby><rb>薩摩</rb><rt>さつま</rt></ruby></placeName>、<placeName ref="#hyogo">兵庫</placeName>は<placeName ref="#nagato"><ruby><rb>長門</rb><rt>ながと</rt></ruby></placeName>、<placeName ref="#sakai">堺</placeName>は<placeName ref="#tosa">土佐</placeName>の三藩が、朝命によって取り締ることになった。<placeName ref="#sakai">堺</placeName>へは<date when="--02">二月</date>の初に先ず<placeName ref="#tosa">土佐</placeName>の六番歩兵隊が<ruby><rb>這入</rb><rt>はい</rt></ruby>り、次いで八番歩兵隊が繰り込んだ。陣所になったのは<placeName ref="#itoyamachi">糸屋町</placeName>の<ruby><rb>与力</rb><rt>よりき</rt></ruby>屋敷、同心屋敷である。そのうち<placeName ref="#tosa">土佐</placeName>藩は<placeName ref="#sakai">堺</placeName>の民政をも預けられたので、大目附<persName ref="#sugi">杉紀平太</persName>、目附<persName ref="#ikoma"><ruby><rb>生駒</rb><rt>いこま</rt></ruby>静次</persName>等が入り込んで<placeName ref="#kushiyamachi">大通<ruby><rb>櫛屋町</rb><rt>くしやまち</rt></ruby></placeName>の元総会所に、軍監府を置いた。軍監府では<placeName ref="#kawachi"><ruby><rb>河内</rb><rt>かわち</rt></ruby></placeName>、<placeName ref="#yamato"><ruby><rb>大和</rb><rt>やまと</rt></ruby></placeName>辺から、旧幕府の役人の隠れていたのを、七十三人捜し出して、先例によって事務を取り扱わせた。市中は間もなく秩序を<ruby><rb>恢復</rb><rt>かいふく</rt></ruby>して、一旦<ruby><rb>鎖</rb><rt>とざ</rt></ruby>された芝居の木戸も、又開かれるようになった。</p>
+        <p><date when="--02-15">二月十五日</date>の事である。<placeName ref="#france">フランス</placeName>の兵が<placeName ref="#osaka">大阪</placeName>から<placeName ref="#sakai">堺</placeName>へ来ると云うことを、町年寄が聞き出して軍監府へ訴え出た。<placeName ref="#yokohama">横浜</placeName>に<ruby><rb>碇泊</rb><rt>ていはく</rt></ruby>していた外国軍艦十六<ruby><rb>艘</rb><rt>そう</rt></ruby>が、<placeName ref="#settsu">摂津</placeName>の<placeName ref="#tenpozan"><ruby><rb>天保山沖</rb><rt>てんぽうざんおき</rt></ruby></placeName>へ来て<ruby><rb>投錨</rb><rt>とうびょう</rt></ruby>した中に、<placeName ref="#england">イギリス</placeName>、<placeName ref="#america">アメリカ</placeName>と共に、<placeName ref="#france">フランス</placeName>のもあったのである。<persName ref="#sugi">杉</persName>は六番、八番の両隊長を呼び出して、<placeName ref="#yamatobashi">大和橋</placeName>へ出張することを命じた。<placeName ref="#france">フランス</placeName>の兵が<ruby><rb>若</rb><rt>も</rt></ruby>し官許を得て通るのなら、前以て外国事務係前<placeName ref="#uwajima">宇和島藩</placeName>主<persName ref="#date-munenari"><ruby><rb>伊達伊予守宗城</rb><rt>だていよのかみむねき</rt></ruby></persName>から通知がある筈であるに、それが無い。よしや通知が間に合わぬにしても、内地を旅行するには免状を持っていなくてはならない。持っていないなら、通すには及ばない。<persName ref="#sugi">杉</persName>は<persName ref="#ikoma">生駒</persName>と共に二隊の兵を<ruby><rb>随</rb><rt>したが</rt></ruby>えて<placeName ref="#yamatobashi">大和橋</placeName>を<ruby><rb>扼</rb><rt>やく</rt></ruby>して待っていた。そこへ<placeName ref="#france">フランス</placeName>の兵が来掛かった。その連れて来た通弁に免状の有無を問わせると、持っていない。<placeName ref="#france">フランス</placeName>の兵は小人数なので、<placeName ref="#tosa">土佐</placeName>の兵に<ruby><rb>往手</rb><rt>ゆくて</rt></ruby>を<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>られて、<placeName ref="#osaka">大阪</placeName>へ引き返した。</p>
+        <p>同じ日の暮方になって、<placeName ref="#yamatobashi">大和橋</placeName>から帰っていた歩兵隊の陣所へ、町人が駆け込んで、港から<placeName ref="#france">フランス</placeName>の水兵が上陸したと訴えた。<placeName ref="#france">フランス</placeName>の軍艦は港から一里ばかりの沖に来て、二十艘の<ruby><rb>端艇</rb><rt>はしけ</rt></ruby>に水兵を載せて上陸させたのである。両歩兵の隊長が出張の用意をさせていると、軍監府から出張の命令が届いた。すぐに出張して見ると、水兵は別にこれと云う<ruby><rb>廉立</rb><rt>かどだ</rt></ruby>った暴行をしてはいない。しかし神社<ruby><rb>仏閣</rb><rt>ぶっかく</rt></ruby>に不遠慮に立ち入る。人家に上がり込む。女子を<ruby><rb>捉</rb><rt>とら</rt></ruby>えて<ruby><rb>揶揄</rb><rt>からか</rt></ruby>う。開港場でない<placeName ref="#sakai">堺</placeName>の町人は、外国人に慣れぬので、驚き<ruby><rb>懼</rb><rt>おそ</rt></ruby>れて逃げ迷い、戸を閉じて家に籠るものが多い。両隊長は<ruby><rb>諭</rb><rt>さと</rt></ruby>して舟へ返そうと思ったが通弁がいない。手真似で帰れと云っても、一人も聴かない。そこで隊長が陣所へ引き立ていと命じた。兵卒が手近にいた水兵を捉えて縄を掛けようとした。水兵は波止場をさして逃げ出した。中の一人が、町家の戸口に立て掛けてあった隊旗を奪って駆けて往った。</p>
+        <p>両隊長は兵卒を率いて追い掛けた。<ruby><rb>脚</rb><rt>あし</rt></ruby>の長い、<ruby><rb>駆歩</rb><rt>かけあし</rt></ruby>に慣れた<placeName ref="#france">フランス</placeName>人にはなかなか及ばない。水兵はもう端艇に乗り移ろうとする。この頃<placeName ref="#tosa">土佐</placeName>の歩兵隊には<ruby><rb>鳶</rb><rt>とび</rt></ruby>の者が附いていて、市中の廻番をするにも、それを四五人ずつ連れて行くことにしてあった。隊旗を持つのもこの鳶の者の役で、その中に旗持<persName ref="#umekichi">梅吉</persName>と云う鳶頭がいた。<placeName ref="#edo">江戸</placeName>で火事があって出掛けるのに、早足の馬の跡を一間とは<ruby><rb>後</rb><rt>おく</rt></ruby>れぬという駆歩の達者である。この<persName ref="#umekichi">梅吉</persName>が隊の士卒を駆け抜けて、隊旗を奪って行く水兵に追い<ruby><rb>縋</rb><rt>すが</rt></ruby>った。手に持った鳶口は風を切ってかの水兵の脳天に打ち<ruby><rb>卸</rb><rt>おろ</rt></ruby>された。水兵は一声叫んで仰向に倒れた。<persName ref="#umekichi">梅吉</persName>は隊旗を取り返した。</p>
+        <p>これを見て端艇に待っていた水兵が、突然短銃で一斉射撃をした。</p>
+        <p>両隊長が<ruby><rb>咄嗟</rb><rt>とっさ</rt></ruby>の間に決心して「撃て」と号令した。待ち兼ねていた兵卒は七十余<ruby><rb>挺</rb><rt>ちょう</rt></ruby>の銃口を並べ、上陸兵を収容している端艇を目当に発射した。六人ばかりの水兵はばらばらと倒れた。負傷して水に落ちたものもある。負傷せぬものも急に水中に飛び込んで、皆片手を端艇の<ruby><rb>舷</rb><rt>ふなばた</rt></ruby>に掛けて足で波を<ruby><rb>蹴</rb><rt>けっ</rt></ruby>て端艇を操りながら、<ruby><rb>弾丸</rb><rt>たま</rt></ruby>が来れば沈んで避け、又浮き上がって汐を吐いた。端艇は次第に遠くなった。<placeName ref="#france">フランス</placeName>水兵の死者は総数十三人で、内一人が下士であった。</p>
+        <p>そこへ<persName ref="#sugi">杉</persName>が駆け付けた。そして射撃を止めて陣所へ帰れと命じた。両隊が陣所へ引き上げていると、隊長二人を軍監府から呼びに来た。なぜ上司の命令を待たずに射撃したかと<persName ref="#sugi">杉</persName>に問われて、両隊長は火急の場合で命令を待つことが出来なかったと弁明した。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>端艇から先ず射撃したので、これに応戦したのではあるが、<placeName ref="#tosa">土佐</placeName>の士卒は初から<placeName ref="#france">フランス</placeName>人に対して悪感情を<ruby><rb>懐</rb><rt>いだ</rt></ruby>いていた。それは<placeName ref="#tosa">土佐</placeName>人が<placeName ref="#matsuyama">松山藩</placeName>を討つために錦旗を賜わって、それを本国へ護送する途中、<placeName ref="#kobe">神戸</placeName>で<placeName ref="#france">フランス</placeName>人がその一行を<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>り留め、朝廷と幕府との和親を<ruby><rb>謀</rb><rt>はか</rt></ruby>るためだと通弁に云わせ、錦旗を奪おうとしたと云う話が伝わっていたからである。</p>
+        <p><persName ref="#sugi">杉</persName>は両隊長に言った。とにかくこうなった上は是非がない。軍艦の襲撃があるかも知れぬから、防戦の準備をせいと云った。そして報告のために<persName ref="#ikoma">生駒</persName>を外国事務係へ、下横目一人を<placeName ref="#kyoto">京都</placeName>の藩邸へ<ruby><rb>発足</rb><rt>ほっそく</rt></ruby>させた。</p>
+        <p>両隊長は<ruby><rb>僅</rb><rt>わず</rt></ruby>か二小隊の兵を以て軍艦を防げと云われて当惑したが、海岸へは<ruby><rb>斥候</rb><rt>せっこう</rt></ruby>を出し、台場へは両隊から数人ずつ交代して守備に往くことにした。そこへこの土地に這入った時収容して<ruby><rb>遣</rb><rt>や</rt></ruby>った幕府の敗兵が数十人来て云った。</p>
+        <p>「若し<placeName ref="#france">フランス</placeName>の軍艦が来るようなら、どうぞわたくし共をお使下さい。砲台には徳川家の時に<ruby><rb>据</rb><rt>す</rt></ruby>え付けた大砲が三十六門あって、今<placeName ref="#kishiwada">岸和田藩</placeName>主<persName ref="#okabe">岡部<ruby><rb>筑前守長寛</rb><rt>ちくぜんのかみながひろ</rt></ruby></persName>殿の預りになっています。わたくし共はあれで防ぎます。あなた方は上陸して来る奴を撃って下さい」と云った。</p>
+        <p>両隊長はその人達を砲台へ遣った。そのうち<placeName ref="#kishiwada">岸和田藩</placeName>からも砲台へ兵を出して、望遠鏡で<placeName ref="#hyogo">兵庫</placeName>方面を見張っていてくれた。</p>
+        <p>夜に入って港口へ<placeName ref="#france">フランス</placeName>の端艇が来たと云う知らせがあった。しかしその端艇は五六艘で、皆上陸せずに帰った。水兵の死体を捜索したのだろう。実際幾つか死体を捜し得て、載せて帰ったらしいと云うものもあった。</p>
+        <p>十六日の払暁に、外国事務係の<ruby><rb>沙汰</rb><rt>さた</rt></ruby>で、<placeName ref="#tosa">土佐</placeName>藩は<ruby><rb><placeName ref="#sakai">堺</placeName>表</rb><rt>さかいおもて</rt></ruby>取締を免ぜられ、兵隊を引き払うことになった。軍監府はそれを取り次いで、両隊長に<placeName ref="#osaka">大阪</placeName>蔵屋敷へ引き上げることを命じた。両隊長はすぐに支度して<placeName ref="#sakai">堺</placeName>を立った。<placeName ref="#sumiyoshi-kaido">住吉街道</placeName>を経て、<placeName ref="#osaka">大阪</placeName><placeName ref="#oikedori"><ruby><rb>御池通</rb><rt>みいけどおり</rt></ruby>六丁目</placeName>の<placeName ref="#tosa">土佐</placeName>藩なかし商の家に着いたのは、<ruby><rb>未</rb><rt>ひつじ</rt></ruby>の刻頃であった。</p>
+        <p><placeName ref="#sakai">堺</placeName>の軍監府から外国事務係へ報告に往った<persName ref="#ikoma">生駒静次</persName>は、口上を<ruby><rb>一通</rb><rt>ひととおり</rt></ruby>聞き取られただけである。次いで外国事務係は<placeName ref="#sakai">堺</placeName>にある軍監又は隊長の内一名出頭するようにと達した。<persName ref="#sugi">杉</persName>が出頭した。すると<placeName ref="#osaka">大阪</placeName>の<placeName ref="#tosa">土佐</placeName>藩邸にいる<persName ref="#ishikawa">石川石之助</persName>の出した<placeName ref="#sakai">堺</placeName>事件の届書を返して、更に<ruby><rb>精</rb><rt>くわ</rt></ruby>しく書き替えて出せと云うことである。<persName ref="#sugi">杉</persName>は一応引き取って、両隊長署名の届書を出し、この上<ruby><rb>御訊問</rb><rt>ごじんもん</rt></ruby>の筋があるなら、本人に出頭させようと言い添えた。</p>
+        <p>十七日には、前日評議の末、<placeName ref="#kyoto">京都</placeName>の<placeName ref="#tosa">土佐</placeName>藩邸から、家老<persName ref="#yamauchi-hayato">山内<ruby><rb>隼人</rb><rt>はいと</rt></ruby></persName>、大目附<persName ref="#hayashi">林亀吉</persName>、目附<persName ref="#tani">谷<ruby><rb>兎毛</rb><rt>ともう</rt></ruby></persName>、下横目数人と<persName ref="#nagao">長尾太郎兵衛</persName>の率いた<placeName ref="#kyoto">京都</placeName>詰の部隊とが<placeName ref="#osaka">大阪</placeName>へ派遣せられた。この一行は夜に入って<placeName ref="#osaka">大阪</placeName>に着いて、すぐに<persName ref="#hayashi">林</persName>が命令して、<persName ref="#sugi">杉</persName>、<persName ref="#ikoma">生駒</persName>と両歩兵隊長とを<placeName ref="#nagahori">長堀</placeName>の<placeName ref="#tosa">土佐</placeName>藩邸に<ruby><rb>徙</rb><rt>うつ</rt></ruby>らせた。</p>
+        <p><date when="--02-18">十八日</date>には、<persName ref="#nagao">長尾太郎兵衛</persName>を以て、両歩兵隊長に勤事控を命じ、配下一同の出門を禁ぜられた。両隊長はこの事件の責を自分達二人で負って、自分達の命令を奉じて働いた配下に<ruby><rb>煩累</rb><rt>はんるい</rt></ruby>を及ぼしたくないと、<persName ref="#nagao">長尾</persName>に申し出た。両隊の兵卒一同は<ruby><rb>小頭</rb><rt>こがしら</rt></ruby><persName ref="#ikegami">池上<ruby><rb>弥三吉</rb><rt>やさきち</rt></ruby></persName>、<persName ref="#oishi">大石甚吉</persName>を以て、両隊長に勤事控の見舞を言わせた。両隊長は<persName ref="#nagao">長尾</persName>に申し出た趣意を配下に<ruby><rb>諭</rb><rt>さと</rt></ruby>した。</p>
+        <p>そのうち<placeName ref="#kyoto">京都</placeName>から<placeName ref="#tosa">土佐</placeName>藩の歩兵三小隊が到着して、<placeName ref="#nagahori">長堀</placeName>の藩邸を警固して厳重に人の出入を<ruby><rb>誰何</rb><rt>すいか</rt></ruby>することになった。</p>
+        <p>次いで前<placeName ref="#tosa">土佐</placeName>藩主<persName ref="#toyoshige">山内土佐守<ruby><rb>豊信</rb><rt>とよしげ</rt></ruby></persName>の名代として、家老<persName ref="#fukao">深尾<ruby><rb>鼎</rb><rt>かなえ</rt></ruby></persName>が大目附<persName ref="#kominami">小南五郎右衛門</persName>と共に到着した。これは<placeName ref="#osaka">大阪</placeName>に<ruby><rb>碇泊</rb><rt>ていはく</rt></ruby>している<placeName ref="#france">フランス</placeName>軍艦<ruby><rb>Vénus</rb><rt>ヴェニュス</rt></ruby>号から、公使<persName ref="#roche"><ruby><rb>Léon</rb><rt>レオン</rt></ruby> <ruby><rb>Roche</rb><rt>ロッシュ</rt></ruby></persName>が外国事務係へ損害要償の交渉をしたためである。公使の要求は直ちに朝議の<ruby><rb>容</rb><rt>い</rt></ruby>るるところとなった。<placeName ref="#tosa">土佐</placeName>藩主が自らヴェニュス号に出向いて謝罪することが一つ。<placeName ref="#sakai">堺</placeName>で<placeName ref="#tosa">土佐</placeName>藩の隊を指揮した士官二人、<placeName ref="#france">フランス</placeName>人を<ruby><rb>殺害</rb><rt>せつがい</rt></ruby>した隊の兵卒二十人を、交渉文書が<placeName ref="#kyoto">京都</placeName>に着いた後三日以内に、右の殺害を加えた土地に<ruby><rb>於</rb><rt>お</rt></ruby>いて死刑に処することが二つ。殺害せられた<placeName ref="#france">フランス</placeName>人の家族の<ruby><rb>扶助</rb><rt>ふじょ</rt></ruby>料として、<placeName ref="#tosa">土佐</placeName>藩主が十五万<ruby><rb>弗</rb><rt>どる</rt></ruby>を支払うことが三つである。この処置のためには、藩主は自ら<placeName ref="#osaka">大阪</placeName>に来べきであったが病気のため家老を名代として派遣したのである。</p>
+        <p><persName ref="#fukao">深尾</persName>に附いて来た下横目は六番、八番両歩兵隊の士卒七十三人を、一人ずつ呼び出して<placeName ref="#sakai">堺</placeName>で射撃したか、射撃しなかったかと訊問した。この訊問が<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど士卒の<ruby><rb>勇怯</rb><rt>ゆうきょう</rt></ruby>を試みると同じ事になったのは、人の弱点の然らしむるところで、実に<ruby><rb>已</rb><rt>や</rt></ruby>むことを得ない。射撃したと答えたものが二十九人ある。六番隊では隊長<persName ref="#miura"><ruby><rb>箕浦猪之吉</rb><rt>みのうらいのきち</rt></ruby></persName>、小頭<persName ref="#ikegami">池上弥三吉</persName>、兵卒<persName ref="#sugimoto">杉本広五郎</persName>、<persName ref="#shogase"><ruby><rb>勝賀瀬三六</rb><rt>しょうがせさんろく</rt></ruby></persName>、<persName ref="#yamamoto">山本哲助</persName>、<persName ref="#morimoto">森本茂吉</persName>、<persName ref="#kitadai"><ruby><rb>北代</rb><rt>きただい</rt></ruby>健助</persName>、<persName ref="#inada">稲田<ruby><rb>貫之丞</rb><rt>かんのじょう</rt></ruby></persName>、<persName ref="#yanase">柳瀬常七</persName>、<persName ref="#hashizume"><ruby><rb>橋詰愛平</rb><rt>はしづめあいへい</rt></ruby></persName>、<persName ref="#okazaki-eibee">岡崎栄兵衛</persName>、<persName ref="#kawatani"><ruby><rb>川谷</rb><rt>かわたに</rt></ruby>銀太郎</persName>、<persName ref="#okazaki-tashiro">岡崎多四郎</persName>、<persName ref="#mizuno">水野万之助</persName>、<persName ref="#kishida">岸田勘平</persName>、<persName ref="#monden">門田<ruby><rb>鷹太郎</rb><rt>たかたろう</rt></ruby></persName>、<persName ref="#kusunose-yasujiro"><ruby><rb>楠瀬</rb><rt>くすせ</rt></ruby>保次郎</persName>、八番隊では隊長<persName ref="#nishimura">西村左平次</persName>、小頭<persName ref="#oishi">大石甚吉</persName>、兵卒<persName ref="#takeuchi">竹内民五郎</persName>、<persName ref="#yokota-tatsugoro">横田辰五郎</persName>、<persName ref="#doi">土居徳太郎</persName>、<persName ref="#kaneda">金田時治</persName>、<persName ref="#takeuchi-yasaburo">武内弥三郎</persName>、<persName ref="#eida"><ruby><rb>栄田</rb><rt>さかえだ</rt></ruby>次右衛門</persName>、<persName ref="#nakajo">中城<ruby><rb>惇五郎</rb><rt>じゅんごろう</rt></ruby></persName>、<persName ref="#yokota-shizujiro">横田静次郎</persName>、<persName ref="#tamaru">田丸勇六郎</persName>である。射撃しなかったと答えたものは六番隊の兵卒で<persName ref="#hamada">浜田友太郎</persName>以下二十人、八番隊の兵卒で<persName ref="#nagano">永野峰吉</persName>以下二十一人、計四十一人である。</p>
+        <p><date when="--02-19">十九日</date>になって射撃しなかったと答えたものは、夜に入って<placeName ref="#oikedori">御池六丁目</placeName>の商家へ移され、用意が出来次第帰国させると言い渡された。これに反して射撃したと答えたものは銃器弾薬を返上して、預けの名目の<ruby><rb>下</rb><rt>もと</rt></ruby>に、前に<placeName ref="#osaka">大阪</placeName>に派遣せられた砲兵隊の監視を受けることになり、六番隊は従前の通<placeName ref="#nagahori">長堀</placeName>の本邸に、八番隊は<ruby><rb>西邸</rb><rt>にしやしき</rt></ruby>に入れられた。</p>
+        <p><date when="--02-20">二十日</date>には射撃しなかったと答えたものが、<placeName ref="#nagahori">長堀</placeName>藩邸の前から舟に乗った。後にこの人達は<placeName ref="#marugame">丸亀</placeName>を経て、<placeName ref="#kitayamado">北山道</placeName>を<placeName ref="#tosa">土佐</placeName>に帰り着いた。そして数日間<ruby><rb>遠足留</rb><rt>えんそくどめ</rt></ruby>を命ぜられていたが、後には平常の通心得べしと云うことになった。射撃したと答えたものの所へは、砲隊組兵卒に下横目が附いて来て、<ruby><rb>佩刀</rb><rt>はいとう</rt></ruby>を取り上げた。この人達の耳にも、死刑になると云う話がもう聞えたので、中には手を<ruby><rb>束</rb><rt>つか</rt></ruby>ねて<ruby><rb>刃</rb><rt>やいば</rt></ruby>を受けるよりは、<ruby><rb>寧</rb><rt>むしろ</rt></ruby><placeName ref="#france">フランス</placeName>軍艦に切り込んで死のうと云ったものがある。これは八番隊の<persName ref="#doi">土居八之助</persName>が無謀だと云って留めた。それから一同刺し違えて死のうと云ったものがある。丁度そこへ佩刀を取り上げに来たので、今死なずにしまったら、もう死ぬることが出来まいと、中の数人は手を下そうとさえした。やはり八番隊の<persName ref="#takeuchi">竹内民五郎</persName>がそれを留めて、思う旨があるから、指図通にするが好いと云いながら「我荷物の中に短刀二本あり」と、畳に指で書いて見せた。一同遂に佩刀を渡してしまった。</p>
+        <p><date when="--02-22">二十二日</date>に、大目附<persName ref="#kominami">小南</persName>が来て、六番、八番両隊の兵卒一同に、御隠居様から仰せ渡されることがあるから、すぐに大広間に出るようにと達した。御隠居様とは<persName ref="#toyoshige">山内豊信</persName>が家督を<persName ref="#toyonori">土佐守<ruby><rb>豊範</rb><rt>とよのり</rt></ruby></persName>に譲って<persName ref="#toyoshige">容堂</persName>と<ruby><rb>名告</rb><rt>なの</rt></ruby>った時からの称呼である。隊長、小頭の四人を除いて、二十五人が大広間に居並んだ。そこへ<persName ref="#kominami">小南</persName>以下の役人が出て席に着いた。それから正面の<ruby><rb>金襖</rb><rt>きんぶすま</rt></ruby>を開くと、<persName ref="#fukao">深尾</persName>が出た。一同平伏した。</p>
+        <p><persName ref="#fukao">深尾</persName>は云った。</p>
+        <p>「これは御隠居様がお<ruby><rb>直</rb><rt>じき</rt></ruby>に仰せ渡される<ruby><rb>筈</rb><rt>はず</rt></ruby>であるが、御所労のため拙者が御名代として申し渡す。この<ruby><rb>度</rb><rt>たび</rt></ruby>の<placeName ref="#sakai">堺</placeName>事件に付、<placeName ref="#france">フランス</placeName>人が朝廷へ<ruby><rb>逼</rb><rt>せま</rt></ruby>り申すにより、下手人二十人差し出すよう仰せ付けられた。御隠居様に於いては甚だ御心痛あらせられる。いずれも穏に性命を差し上げるようとの仰せである」言い<ruby><rb>畢</rb><rt>おわ</rt></ruby>って、<persName ref="#fukao">深尾</persName>は起って内に這入った。</p>
+        <p>次に<persName ref="#kominami">小南</persName>が藩主<persName ref="#toyonori">豊範</persName>の命を伝えた。</p>
+        <p>「この度差し出す二十人には、誰を取り誰を除いて好いか分からぬ。一同<placeName ref="#inarisha"><ruby><rb>稲荷社</rb><rt>いなりしゃ</rt></ruby></placeName>に<ruby><rb>詣</rb><rt>まい</rt></ruby>って神を拝し、<ruby><rb>籤引</rb><rt>くじびき</rt></ruby>によって<ruby><rb>生死</rb><rt>しょうし</rt></ruby>を定めるが好い。白籤に当ったものは差し除かれる。上裁を受ける籤に当ったものは死刑に処せられる。これから神前へ参れ」と云うのである。</p>
+        <p>二十五人は御殿から下って<placeName ref="#inarisha">稲荷社</placeName>に往った。社壇の鈴の下に、<persName ref="#kominami">小南</persName>が籤を持って坐る。右手には目附が一人控える。階前には下横目が二人名簿を持って立つ。社壇の前数十歩の所には、<placeName ref="#kyoto">京都</placeName>から来た砲兵隊と歩兵隊とが整列している。<persName ref="#kominami">小南</persName>が指図すると、下横目が名簿を開いて、二十五人の姓名を一人ずつ読む。そこで一人ずつ出て籤を引いて、<ruby><rb>披</rb><rt>ひら</rt></ruby>いて見て、それを下横目に渡す。下横目が点検する。この時<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>に来合せたものは、<ruby><rb>初</rb><rt>はじめ</rt></ruby>何事かと<ruby><rb>恠</rb><rt>あやし</rt></ruby>み、ようよう籤引の意味を知って、皆ひどく感動し、中には泣いているものもある。</p>
+        <p>上裁を受ける籤を引いたものは、六番隊で<persName ref="#sugimoto">杉本</persName>、<persName ref="#shogase">勝賀瀬</persName>、<persName ref="#yamamoto">山本</persName>、<persName ref="#morimoto">森本</persName>、<persName ref="#kitadai">北代</persName>、<persName ref="#inada">稲田</persName>、<persName ref="#yanase">柳瀬</persName>、<persName ref="#hashizume">橋詰</persName>、<persName ref="#okazaki-eibee">岡崎栄兵衛</persName>、<persName ref="#kawatani">川谷</persName>の十人、八番隊で<persName ref="#takeuchi">竹内</persName>、<persName ref="#yokota-tatsugoro">横田辰五郎</persName>、<persName ref="#doi">土居</persName>、<persName ref="#kakiuchi"><ruby><rb>垣内</rb><rt>かきうち</rt></ruby></persName>、<persName ref="#kaneda">金田</persName>、<persName ref="#takeuchi-yasaburo">武内</persName>の六人、計十六人で、これに隊長、小頭各二人を加えると、二十人になる。白籤を引いたものは六番隊で<persName ref="#okazaki-tashiro">岡崎多四郎</persName>以下五人、八番隊で<persName ref="#eida">栄田次右衛門</persName>以下四人である。</p>
+        <p>籤引が済んで一同御殿に引き取ると、白籤組の内、八番隊の<persName ref="#eida">栄田次右衛門</persName>以下四人、<ruby><rb>即</rb><rt>すなわ</rt></ruby>ち<persName ref="#eida">栄田</persName>、<persName ref="#nakajo">中城</persName>、<persName ref="#yokota-shizujiro">横田静次郎</persName>、<persName ref="#tamaru">田丸</persName>が連署の願書を書いて出した。自分等は籤引によって生死の二組に分れたが、初より同腹一心の者だから、一同上裁を受ける籤に当ったと同様の処置を仰せ付けられたいと云うのである。願書は人数が定まっているからと云うので、そのまま却下せられた。</p>
+        <p><ruby><rb>所謂</rb><rt>いわゆる</rt></ruby>上裁籤の組十六人は<persName ref="#miura">箕浦</persName>、<persName ref="#nishimura">西村</persName>両隊長、<persName ref="#ikegami">池上</persName>、<persName ref="#oishi">大石</persName>両小頭と共に、引き<ruby><rb>纏</rb><rt>まと</rt></ruby>めて本邸に留め置かれることになった。白籤組はすぐに隊籍を除かれて、<placeName ref="#tosa">土佐</placeName>藩兵隊中に預けられ、別室に置かれた。数日の後に、白籤組には<placeName ref="#sakai">堺</placeName>表より<ruby><rb>船牢</rb><rt>ふねろう</rt></ruby>を以て国元へ差し下すと云う沙汰があって、下横目が附いて帰国し、各親類預けになったが、間もなく以後別儀なく申し付けると達せられた。</p>
+        <p>夜に入って上裁籤の組は、皆国元の父母兄弟その他<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>故旧に当てた遺書を作って、<ruby><rb>髻</rb><rt>もとどり</rt></ruby>を切ってそれに巻き籠め、下横目に差し出した。</p>
+        <p>そこへ藩邸を警固している五小隊の士官が、<ruby><rb>酒肴</rb><rt>しゅこう</rt></ruby>を持たせて<ruby><rb>暇乞</rb><rt>いとまごい</rt></ruby>に来た。隊長、小頭、兵卒十六人とは、別々に<ruby><rb>馳走</rb><rt>ちそう</rt></ruby>になった。十六人は皆酔い<ruby><rb>臥</rb><rt>ふ</rt></ruby>してしまった。</p>
+        <p>中に八番隊の<persName ref="#doi">土居八之助</persName>が一人酒を控えていたが、一同<ruby><rb>鼾</rb><rt>いびき</rt></ruby>をかき出したのを見て、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち大声で叫んだ。</p>
+        <p>「こら。大切な日があすじゃぞ。皆どうして死なせて<ruby><rb>貰</rb><rt>もら</rt></ruby>う積じゃ。打首になっても好いのか」</p>
+        <p>誰やら一人腹立たしげに答えた。</p>
+        <p>「黙っておれ。大切な日があすじゃから<ruby><rb>寐</rb><rt>ね</rt></ruby>る」</p>
+        <p>この男はまだ<ruby><rb>詞</rb><rt>ことば</rt></ruby>の切れぬうちに、又鼾をかき出した。</p>
+        <p><persName ref="#doi">土居</persName>は六番隊の<persName ref="#sugimoto">杉本</persName>の肩を<ruby><rb>掴</rb><rt>つか</rt></ruby>まえて揺り起した。</p>
+        <p>「こら。どいつも分からんでも、君には分かるだろう。あすはどうして死ぬる。打首になっても好いのか」</p>
+        <p><persName ref="#sugimoto">杉本</persName>は<ruby><rb>跳</rb><rt>は</rt></ruby>ね起きた。</p>
+        <p>「うん。好く気が附いた。大切な事じゃ。皆を起して遣ろう」</p>
+        <p>二人は一同を呼び起した。どうしても起きぬものは、肩を掴まえてこづき廻した。一同目を<ruby><rb>醒</rb><rt>さ</rt></ruby>まして二人の意見を聞いた。誰一人成程と承服せぬものはない。死ぬるのは構わぬ。それは兵卒になって国を立った日から覚悟している。しかし<ruby><rb>耻辱</rb><rt>ちじょく</rt></ruby>を受けて死んではならぬ。そこで是非切腹させて貰おうと云うことに、衆議一決した。</p>
+        <p>十六人は<ruby><rb>袴</rb><rt>はかま</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>き、羽織を着た。そして取次役の詰所へ出掛けて、急用があるから、<ruby><rb>奉行衆</rb><rt>ぶぎょうしゅう</rt></ruby>に御面会を申し入れて貰いたいと云った。</p>
+        <p>取次役は奥の間へ出入して相談する様子であったが、<ruby><rb>暫</rb><rt>しばら</rt></ruby>くして答えた。</p>
+        <p>「折角の申出ではあるが、それは相成らぬ。おのおのはお<ruby><rb>構</rb><rt>かまい</rt></ruby>の身分じゃ。夜中に推参して、奉行衆に逢いたいと云うのは宜しくない」と云うのである。十六人はおこった。</p>
+        <p>「それは<ruby><rb>怪</rb><rt>け</rt></ruby>しからん。お構の身とは何事じゃ。我々は皇国のために明日一命を棄てる者共じゃ。取次をせぬなら、頼まぬ。そこを退け。我々はじきに通る」</p>
+        <p>一同は畳を<ruby><rb>蹴立</rb><rt>けた</rt></ruby>てて奥の間へ進もうとした。</p>
+        <p>奥の間から声がした。</p>
+        <p>「いずれも暫く控えておれ。重役が面会する」と云うのである。</p>
+        <p><ruby><rb>襖</rb><rt>ふすま</rt></ruby>をあけて出たのは、<persName ref="#kominami">小南</persName>、<persName ref="#hayashi">林</persName>と下横目数人とである。</p>
+        <p>一同礼をした上で、<persName ref="#takeuchi">竹内</persName>が発言した。</p>
+        <p>「我々は朝命を重んじて一命を差し上げるものでございます。しかし<placeName ref="#sakai">堺</placeName>表に於いて致した事は、上官の命令を奉じて致しました。あれを犯罪とは認めませぬ。就いては死刑と云う<ruby><rb>名目</rb><rt>みょうもく</rt></ruby>には承服が出来兼ねます。果して死刑に相違ないなら、死刑に処せられる罪名が承りとうございます」</p>
+        <p>聞いているうちに、<persName ref="#kominami">小南</persName>の額には<ruby><rb>皺</rb><rt>しわ</rt></ruby>が寄って来た。<persName ref="#kominami">小南</persName>は<persName ref="#doi">土居</persName>の詞の<ruby><rb>畢</rb><rt>おわ</rt></ruby>るのを待って、一同を<ruby><rb>睨</rb><rt>にら</rt></ruby>み付けた。</p>
+        <p>「黙れ。罪科のないものを、なんでお上で死刑に処せられるものか。隊長が非理の指揮をしてお前方は非理の挙動に及んだのじゃ」</p>
+        <p><persName ref="#takeuchi">竹内</persName>は少しも屈しない。</p>
+        <p>「いや。それは大目付のお詞とも覚えませぬ。兵卒が隊長の命令に依って働らくには、理も非理もござりませぬ。隊長が撃てと号令せられたから、我々は撃ちました。命令のある度に、一人一人理非を考えたら、戦争は出来ますまい」</p>
+        <p><persName ref="#takeuchi">竹内</persName>の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から一人二人<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を進めたものがある。</p>
+        <p>「<placeName ref="#sakai">堺</placeName>での我々の挙動には、功はあって罪はないと、一同確信しております。どう云う罪に当ると云う思召か。今少し<ruby><rb>委曲</rb><rt>いきょく</rt></ruby>に御示下さい」</p>
+        <p>「我々も<ruby><rb>領解</rb><rt>りょうかい</rt></ruby>いたし兼ねます」</p>
+        <p>「我々も」</p>
+        <p>一同の<ruby><rb>気色</rb><rt>けしき</rt></ruby>は<ruby><rb>凄</rb><rt>すさま</rt></ruby>じくなって来た。</p>
+        <p><persName ref="#kominami">小南</persName>は色を<ruby><rb>和</rb><rt>やわら</rt></ruby>げた。</p>
+        <p>「いや。先の詞は失言であった。一応評議した上で返事をいたすから、暫く控えておれ」</p>
+        <p>こう云って起って、奥に這入った。</p>
+        <p>一同奥の間を睨んで待っていたが、<persName ref="#kominami">小南</persName>はなかなか出て来ない。</p>
+        <p>「どうしたのだろう」</p>
+        <p>「油断するな」</p>
+        <p>こんなささやきが座中に聞える。</p>
+        <p><ruby><rb>良</rb><rt>やや</rt></ruby>暫くして<persName ref="#kominami">小南</persName>が又出た。そして<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る荘重な態度で云った。</p>
+        <p>「只今のおのおのの<ruby><rb>申条</rb><rt>もうしじょう</rt></ruby>を御名代に申し上げた。それに就いて御沙汰があるから承れ。<ruby><rb>抑々</rb><rt>そもそも</rt></ruby>この度の事件では、お上御両所共非常な御心痛である。太守様は御不例の所を、押して長髪のまま<placeName ref="#osaka">大阪</placeName>へお越になり、直ちに<placeName ref="#france">フランス</placeName>軍艦へ御挨拶にお出になって、そのまま御帰国なされた。君<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめらるれば臣死すとも申すではないか。おのおの御沙汰を承った上で、仰せ付けられた通、穏かに振舞ったら宜しかろう。これから御沙汰じゃ。この度<placeName ref="#sakai">堺</placeName>表の事件に就いては、外国との交際を御一新あらせられる折柄、公法に拠って御処置あらせられる次第である。即ち明日<placeName ref="#sakai">堺</placeName>表に於て切腹仰せ付けられる。いずれも皇国のためを存じ、難有くお受いたせ。又歴々のお役人、外国公使も臨場せられる事であるから、皇国の士気を<ruby><rb>顕</rb><rt>あらわ</rt></ruby>すよう覚悟いたせ」</p>
+        <p><persName ref="#kominami">小南</persName>は沙汰書を取り出して見ながら、こう演説した。太守様と云ったのは、当主<persName ref="#toyonori">土佐守豊範</persName>を<ruby><rb>斥</rb><rt>さ</rt></ruby>したのである。</p>
+        <p>十六人は互に顔を見合せて、微笑を禁じ得なかった。<persName ref="#takeuchi">竹内</persName>は一同に代って答えた。</p>
+        <p>「恩命難有くお受いたします。それに就いて今一箇条お願申し上げたい事がございます。これは手順を以て下横目へ申し立つべき筋ではございますが、御重役御出席中の事ゆえ、<ruby><rb>今生</rb><rt>こんじょう</rt></ruby>の思出にお<ruby><rb>直</rb><rt>じき</rt></ruby>に申し上げます。只今の御沙汰によれば、お上に置かせられても、我々の<ruby><rb>微衷</rb><rt>びちゅう</rt></ruby>をお<ruby><rb>酌取</rb><rt>くみとり</rt></ruby>下されたものと存じます。然らば我々一同には今後士分のお取扱いがあるよう、遺言同様の儀なれば、是非共お聞済下さるようにお願いいたします」</p>
+        <p><persName ref="#kominami">小南</persName>は暫く考えて云った。</p>
+        <p>「切腹を仰せ付けられたからは、一応<ruby><rb>尤</rb><rt>もっと</rt></ruby>もな申分のように存ずる。<ruby><rb>詮議</rb><rt>せんぎ</rt></ruby>の上で沙汰いたすから、<ruby><rb>暫時</rb><rt>ざんじ</rt></ruby>控えておれ」</p>
+        <p>こう云って再び座を起った。</p>
+        <p>又良暫くしてから、今度は下横目が出て云った。</p>
+        <p>「出格の御詮議を以て、一同士分のお取扱いを仰せ付けられる。依って<ruby><rb>絹服</rb><rt>けんぷく</rt></ruby><ruby><rb>一重</rb><rt>ひとかさね</rt></ruby>ずつ下し置かれる」</p>
+        <p>こう言って目録を渡した。</p>
+        <p>一同目録を受け取って下がりしなに、隊長、小頭の所に今夜の首尾を届けに立ち寄った。隊長等も警固隊の士官に馳走せられて快よく酔って寐ていたが、配下の者共が打ち<ruby><rb>揃</rb><rt>そろ</rt></ruby>って来たので、すぐに起きて面会した。十六人は隊長、小頭と引き分けられてから、今夜まで一度も逢う機会がなかったが、大目付との対談の甲斐があって、切腹を許され、士分に取り立てられ、今は誰も行住動作に<ruby><rb>喙</rb><rt>くちばし</rt></ruby>を容れるものがないので、公然立ち寄ることが出来たのである。</p>
+        <p>隊長、小頭は配下一同の話を聞いて、喜びかつ悲んだ。悲んだのは、四人が自分達の死を覚悟していながら、二十人の死を<placeName ref="#france">フランス</placeName>公使に要求せられたと云うことを<ruby><rb>聞</rb><rt>きか</rt></ruby>せられずにいたので、十六人の運命を始めて知って悲んだのである。喜んだのは、十六人が切腹を許され、士分に取り立てられたのを喜んだのである。隊長、小頭の四人と配下の十六人とは、まだ夜の明けるに間があるから、<ruby><rb>一寐入</rb><rt>ひとねいり</rt></ruby>して起きようと云うので、快よく別れて寝床に<ruby><rb>這入</rb><rt>はい</rt></ruby>った。</p>
+        <p><date when="--02-23">二十三日</date>は晴天であった。<placeName ref="#sakai">堺</placeName>へ往く二十人の護送を命ぜられた<persName ref="#hosokawa">細川<ruby><rb>越中守慶順</rb><rt>えっちゅうのかみよしゆき</rt></ruby></persName>の<placeName ref="#kumamoto-han">熊本藩</placeName>、<persName ref="#asano">浅野<ruby><rb>安芸守茂長</rb><rt>あきのかみしげなが</rt></ruby></persName>の<placeName ref="#hiroshima-han">広島藩</placeName>から、歩兵三百余人が派遣せられて、未明に<placeName ref="#nagahori">長堀</placeName><placeName ref="#tosa">土佐</placeName>藩邸の門前に到着した。邸内では二十人に<ruby><rb>酒肴</rb><rt>しゅこう</rt></ruby>を賜わった。両隊長、小頭は大抵新調した<ruby><rb>衣袴</rb><rt>いこ</rt></ruby>を着け、<ruby><rb>爾余</rb><rt>じよ</rt></ruby>の十六人は前夜頂戴した絹服を纏った。佩刀は邸内では渡されない。切腹の場所で渡される筈である。</p>
+        <p>一同が藩邸の玄関から<ruby><rb>高足駄</rb><rt>たかあしだ</rt></ruby>を踏み鳴らして出ると、細川、浅野両家で用意させた<ruby><rb>駕籠</rb><rt>かご</rt></ruby>二十挺を<ruby><rb>舁</rb><rt>か</rt></ruby>き据えた。一礼してそれに乗り移る。行列係が行列を組み立てる。<ruby><rb>先手</rb><rt>さきて</rt></ruby>は両藩の下役人数人で、次に兵卒数人が続く。次は細川藩の留守居<persName ref="#baba-hikoemon">馬場彦右衛門</persName>、同藩の隊長<persName ref="#yamakawa">山川亀太郎</persName>、浅野藩の重役<persName ref="#watanabe">渡辺<ruby><rb>競</rb><rt>きそう</rt></ruby></persName>の三人である。陣笠<ruby><rb>小袴</rb><rt>こばかま</rt></ruby>で馬に<ruby><rb>跨</rb><rt>またが</rt></ruby>り、<ruby><rb>持鑓</rb><rt>もちやり</rt></ruby>を<ruby><rb>竪</rb><rt>た</rt></ruby>てさせている。次に兵卒数人が行く。次に大砲二門を<ruby><rb>挽</rb><rt>ひ</rt></ruby>かせて行く。次が二十挺の駕籠である。駕籠一挺毎に、装剣の銃を持った六人の兵が附く。二十挺の前後は、同じく装剣の銃を持った兵が百二十人で囲んでいる。<ruby><rb>後押</rb><rt>あとおさえ</rt></ruby>は銃を負った騎兵二騎である。次に両藩の<ruby><rb>高張提灯</rb><rt>たかはりぢょうちん</rt></ruby>各十挺が行く。次に両藩士卒百数十人が行く。以上の行列の背後に少し距離を取って、<placeName ref="#tosa">土佐</placeName>藩の重臣始め数百人が続く。長径<ruby><rb>凡</rb><rt>およ</rt></ruby>そ五丁である。</p>
+        <p><placeName ref="#nagahori">長堀</placeName>を出発して暫く進んでから、<persName ref="#yamakawa">山川亀太郎</persName>が駕籠に就いて一人々々に挨拶して、<persName ref="#miura">箕浦</persName>の駕籠に戻ってからこう云った。</p>
+        <p>「狭い駕籠で、定めて窮屈でありましょう。その上長途の事ゆえ、<ruby><rb>簾</rb><rt>すだれ</rt></ruby>を垂れたままでは、<ruby><rb>鬱陶</rb><rt>うっとう</rt></ruby>しく思われるでありましょう。簾を捲かせましょうか」と云った。</p>
+        <p>「御厚意<ruby><rb>忝</rb><rt>かたじけの</rt></ruby>う存じます。<ruby><rb>差構</rb><rt>さしかまい</rt></ruby>ない事なら、さよう願いましょう」と、<persName ref="#miura">箕浦</persName>が答えた。</p>
+        <p>そこで駕籠の簾は総て捲き上げられた。</p>
+        <p>又暫く進むと、<persName ref="#yamakawa">山川</persName>が一人々々の駕籠に就いて、</p>
+        <p>「茶菓の用意をしていますから、お望の方に差し上げたい」と云った。</p>
+        <p>両藩の二十人に対する取扱は、万事非常に<ruby><rb>鄭重</rb><rt>ていちょう</rt></ruby>なものである。</p>
+        <p><placeName ref="#sumiyoshi-shinkeimachi">住吉<ruby><rb>新慶町</rb><rt>しんけいまち</rt></ruby></placeName>辺に来ると、<ruby><rb>兼</rb><rt>かね</rt></ruby>て六番、八番の両隊が舎営していたことがあるので、路傍に待ち受けて<ruby><rb>別</rb><rt>わかれ</rt></ruby>を惜むものがある。<placeName ref="#sakai">堺</placeName>の町に入れば、道の両側に<ruby><rb>人山</rb><rt>ひとやま</rt></ruby>を築いて、その中から往々<ruby><rb>欷歔</rb><rt>すすりなき</rt></ruby>の声が聞える。群集を離れて駕籠に駆け寄って、警固の兵卒に叱られるものもある。</p>
+        <p>切腹の場所と定められたのは<placeName ref="#myokokuji"><ruby><rb>妙国寺</rb><rt>みょうこくじ</rt></ruby></placeName>である。山門には菊御紋の幕を張り、寺内には総て細川、浅野両家の紋を染めた幕を引き<ruby><rb>繞</rb><rt>めぐ</rt></ruby>らし、切腹の場所は山内家の紋を染めた幕で囲んである。門内に張った天幕の内には、新しい<ruby><rb>筵</rb><rt>むしろ</rt></ruby>が敷き詰めてある。</p>
+        <p>行列が<placeName ref="#myokokuji">妙国寺</placeName>門前に着くと、駕籠を門内天幕の中に舁き入れて、筵の上に立て並べた。次いで両藩士が案内して、駕籠は内庭へ舁き入れられ、本堂の縁に横付にせられた。</p>
+        <p>二十人は駕籠を出て、本堂に居並んだ。座の<ruby><rb>周囲</rb><rt>まわり</rt></ruby>には、両藩の士卒が数百人詰めていて、二十人の中一人が座を起てば、四人が取り巻いて行く。二十人は皆平常のように談笑して、時刻の来るのを待っていた。</p>
+        <p>この時両藩の士の中に<ruby><rb>筆紙墨</rb><rt>ひっしぼく</rt></ruby>を用意していたものがある。それが二十人の首席にいる<persName ref="#miura">箕浦</persName>の前に来て、後日の記念に何か一筆願いたいといった。</p>
+        <p>元六番歩兵隊長<persName ref="#miura">箕浦猪之吉</persName>は、<ruby><rb>源姓</rb><rt>みなもとせい</rt></ruby>、名は<persName ref="#miura"><ruby><rb>元章</rb><rt>げんしょう</rt></ruby></persName>、<persName ref="#miura"><ruby><rb>仙山</rb><rt>せんざん</rt></ruby></persName>と号している。<placeName ref="#tosa">土佐国</placeName><placeName ref="#tosa-gun">土佐郡</placeName><placeName ref="#shioe"><ruby><rb>潮江</rb><rt>うしおえ</rt></ruby>村</placeName>に住んで五人扶持、十五石を受ける<ruby><rb>扈従格</rb><rt>こじゅうかく</rt></ruby>の家に、<date when="1844">弘化元年十一月十一日</date>に生れた。当年二十五歳である。祖父<persName ref="#tadahira">忠平</persName>、父を<persName ref="#manjiro">万次郎</persName>と云う。母は依田氏、名は<persName ref="#ume">梅</persName>である。<date when="1857">安政四年</date>に<placeName ref="#edo">江戸</placeName>に遊学し、<date when="1860">万延元年</date>には<placeName ref="#edo">江戸</placeName>で<persName ref="#toyoshige">容堂</persName>侯の侍読になり、同じ年に帰国して文館の助教に任ぜられた。次いで<persName ref="#toyoshige">容堂</persName>侯の扈従を勤めて、七八年経過し、<ruby><rb>馬廻格</rb><rt>うままわりかく</rt></ruby>に進んだ。それが藩の歩兵小隊司令を命ぜられたのは、<date when="1867">慶応三年十一月</date>で、<ruby><rb>僅</rb><rt>わず</rt></ruby>か三箇月勤めているうちに、<placeName ref="#sakai">堺</placeName>の事件が起った。そういう履歴の人だから、<persName ref="#miura">箕浦</persName>は詩歌の<ruby><rb>嗜</rb><rt>たしみ</rt></ruby>もあり、書は草書を立派に書いた。</p>
+        <p>文房具を前に置かれた時、<persName ref="#miura">箕浦</persName>は、</p>
+        <p>「甚だ見苦しゅうはございまするが」と挨拶して、<ruby><rb>腹稾</rb><rt>ふっこう</rt></ruby>の七絶を書いた。</p>
+        <p>「<ruby><rb>除却妖氛答国恩</rb><rt>ようふんをじょきゃくしこくおんにこたう</rt></ruby>。<ruby><rb>決然豈可省人言</rb><rt>けつぜんあにじんげんをせいすべけんや</rt></ruby>。<ruby><rb>唯教大義伝千載</rb><rt>ただたいぎをしてせんざいにつたえしむ</rt></ruby>。<ruby><rb>一死元来不足論</rb><rt>いっしがんらいろんずるにたらず</rt></ruby>」攘夷はまだこの男の本領であったのである。</p>
+        <p>二十人が<ruby><rb>暫</rb><rt>しばら</rt></ruby>く待っていると、細川藩士がまだなかなか時刻が来そうにないと云った。そこで寺内を見物しようと云うことになった。庭へ出て見ると、寺の内外は非常な<ruby><rb>雑沓</rb><rt>ざっとう</rt></ruby>である。<placeName ref="#sakai">堺</placeName>の市中は勿論、<placeName ref="#osaka">大阪</placeName>、<placeName ref="#sumiyoshi">住吉</placeName>、<placeName ref="#kawachi">河内</placeName>在等から見物人が入り込んで、いかに制しても立ち去らない。<ruby><rb>鐘撞堂</rb><rt>かねつきどう</rt></ruby>には寺の僧侶が数人登って、この群集を見ている。八番隊の<persName ref="#kakiuchi">垣内</persName>がそれに目を着けて、つと堂の上に登って、僧侶に言った。</p>
+        <p>「坊様達、少し<ruby><rb>退</rb><rt>の</rt></ruby>いて下されい。拙者は今日切腹して相果てる一人じゃ。我々の<ruby><rb>中間</rb><rt>なかま</rt></ruby>には辞世の詩歌などを作るものもあるが、さような巧者な事は拙者には出来ぬ。就いてはこの世の暇乞に、その大鐘を撞いて見たい。どりゃ」と云いさま腕まくりをして<ruby><rb>撞木</rb><rt>しゅもく</rt></ruby>を掴んだ。僧侶は驚いて左右から取り<ruby><rb>縋</rb><rt>すが</rt></ruby>った。</p>
+        <p>「まあまあ、お待ち下さりませ。この混雑の中で鐘が鳴ってはどんな騒動になろうも知れません。どうぞそれだけは御免下さりませ」</p>
+        <p>「いや、国家のために忠死する武士の記念じゃ。留めるな」</p>
+        <p><persName ref="#kakiuchi">垣内</persName>と僧侶とは<ruby><rb>揉</rb><rt>も</rt></ruby>み合っている。それを見て<persName ref="#kakiuchi">垣内</persName>の所へ、中間の二三人が駆け附けた。</p>
+        <p>「大切な事を目前に控えていながら、それは余り大人気ない。鐘を鳴らして人を驚かしてなんになる。好く考えて見給え」と云って留めた。</p>
+        <p>「そうか。つい興に乗じて無益の争をした。<ruby><rb>罷</rb><rt>や</rt></ruby>める罷める」と<persName ref="#kakiuchi">垣内</persName>は云って、撞木から手を引いた。<persName ref="#kakiuchi">垣内</persName>を留めた中間の一人が<ruby><rb>懐</rb><rt>ふところ</rt></ruby>を探って、</p>
+        <p>「ここに少し金がある、もはや用のない物じゃ、死んだ跡にお世話になるお前様方に献じましょう」と云って、僧侶に金をわたした。<persName ref="#kakiuchi">垣内</persName>と僧侶との争論を聞き付けて、次第に集って来た中間が、</p>
+        <p>「ここにもある」</p>
+        <p>「ここにも」と云いながら、持っていただけの金銭を出して、皆僧侶の前に置いた。中には、</p>
+        <p>「拙者は<ruby><rb>冥福</rb><rt>みょうふく</rt></ruby>を願うのではないが」と、条件を附けて置くものもあった。僧侶は金を受けて鐘撞堂を下った。</p>
+        <p>人々は鐘撞堂を降りて、</p>
+        <p>「さあ、これから切腹の場所を拝見して置こうか」と、<ruby><rb>幔幕</rb><rt>まんまく</rt></ruby>で囲んだ中へ這入り掛けた。細川藩の番士が、</p>
+        <p>「それはお<ruby><rb>越</rb><rt>こし</rt></ruby>にならぬ方が宜しゅうございましょう」と云って留めた。</p>
+        <p>「いや、御心配御無用、決して御迷惑は掛けません」と言い放って、一同幕の中に這入った。</p>
+        <p>場所は本堂の前の広庭である。山内家の紋を染めた幕を引き廻した中に、四本の<ruby><rb>竹竿</rb><rt>たけざお</rt></ruby>を<ruby><rb>竪</rb><rt>た</rt></ruby>てて、上に<ruby><rb>苫</rb><rt>とま</rt></ruby>が<ruby><rb>葺</rb><rt>ふ</rt></ruby>いてある。地面には<ruby><rb>荒筵</rb><rt>あらむしろ</rt></ruby>二枚の上に、新しい畳二枚を裏がえしに敷き、それを白木綿で<ruby><rb>覆</rb><rt>おお</rt></ruby>い、更に<ruby><rb>毛氈</rb><rt>もうせん</rt></ruby>一枚を<ruby><rb>襲</rb><rt>かさ</rt></ruby>ねてある。傍に毛氈が畳んだままに積み上げてあるのは、一人々々取り替えるためであろう。入口の側に<ruby><rb>卓</rb><rt>つくえ</rt></ruby>があって、大小が幾組も載せてある。近づいて見れば、<placeName ref="#nagahori">長堀</placeName>の<ruby><rb>邸</rb><rt>やしき</rt></ruby>で取り上げられた大小である。</p>
+        <p>人々は切腹の場所を出て、<ruby><rb>序</rb><rt>ついで</rt></ruby>に<placeName ref="#hojuin"><ruby><rb>宝珠院</rb><rt>ほうじゅいん</rt></ruby></placeName>の墓穴も見て置こうと、揃って出掛けた。ここには二列に穴が掘ってある。穴の前には高さ六尺余の<ruby><rb>大瓶</rb><rt>おおがめ</rt></ruby>が並べてある。しかもそれには一々名が書いて<ruby><rb>貼</rb><rt>は</rt></ruby>ってある。それを読んで行くうちに、<persName ref="#yokota-tatsugoro">横田</persName>が<persName ref="#doi">土居</persName>に言った。</p>
+        <p>「君と僕とは生前にも寝食を<ruby><rb>倶</rb><rt>とも</rt></ruby>にしていたが、見れば<ruby><rb>瓶</rb><rt>かめ</rt></ruby>も並べてある。死んでからも隣同士話が出来そうじゃ」と云った。</p>
+        <p><persName ref="#doi">土居</persName>は忽ち身を<ruby><rb>跳</rb><rt>おど</rt></ruby>らせて瓶の中に這入って叫んだ。</p>
+        <p>「<persName ref="#yokota-tatsugoro">横田</persName>君々々々。なかなか好い工合じゃ」</p>
+        <p><persName ref="#takeuchi">竹内</persName>が云った。</p>
+        <p>「気の早い男じゃ。そう急がんでも、じきに人が入れてくれる。早く出て来い」</p>
+        <p><persName ref="#doi">土居</persName>は瓶から出ようとするが、這入る時とは違って、瓶の縁は高し、内面はすべるので、なかなか出られない。<persName ref="#yokota-tatsugoro">横田</persName>と<persName ref="#takeuchi">竹内</persName>とで、瓶を横に倒して<persName ref="#doi">土居</persName>を出した。</p>
+        <p>二十人は本堂に帰った。そこには細川、浅野両藩で用意した<ruby><rb>酒肴</rb><rt>しゅこう</rt></ruby>が置き並べてある。給仕には町から手伝人が数十人来ている。一同挨拶して杯を挙げた。前に<persName ref="#miura">箕浦</persName>に詩を貰った人を<ruby><rb>羨</rb><rt>うらや</rt></ruby>んで、両藩の士卒が争って詩歌を求め、或は記念として身に附いた品を所望する。人々はかわるがわる筆を<ruby><rb>把</rb><rt>と</rt></ruby>った。又記念に遣る物がないので、<ruby><rb>襟</rb><rt>えり</rt></ruby>や<ruby><rb>袖</rb><rt>そで</rt></ruby>を切り取った。</p>
+        <p>切腹はいよいよ<ruby><rb>午</rb><rt>うま</rt></ruby>の刻からと定められた。</p>
+        <p>幕の内へは先ず<ruby><rb>介錯人</rb><rt>かいしゃくにん</rt></ruby>が詰めた。これは前晩<placeName ref="#osaka">大阪</placeName><placeName ref="#nagahori">長堀</placeName>の藩邸で、警固の士卒が二十人のものに馳走をした時、各相談して取り<ruby><rb>極</rb><rt>き</rt></ruby>めたのである。介錯人の姓名は、元六番隊の方で<persName ref="#miura">箕浦</persName>のが<persName ref="#baba"><ruby><rb>馬淵</rb><rt>まぶち</rt></ruby>〔馬場〕桃太郎</persName>、<persName ref="#ikegami">池上</persName>のが<persName ref="#kitagawa">北川礼平</persName>、<persName ref="#sugimoto">杉本</persName>のが<persName ref="#ike">池七助</persName>、<persName ref="#shogase">勝賀瀬</persName>のが<persName ref="#yoshimura">吉村材吉</persName>、<persName ref="#yamamoto">山本</persName>のが<persName ref="#mori">森常馬</persName>、<persName ref="#morimoto">森本</persName>のが<persName ref="#noguchi">野口喜久馬</persName>、<persName ref="#kitadai">北代</persName>のが<persName ref="#takechi">武市助吾</persName>、<persName ref="#inada">稲田</persName>のが<persName ref="#ehara">江原源之助</persName>、<persName ref="#yanase">柳瀬</persName>のが<persName ref="#kondo">近藤茂之助</persName>、<persName ref="#hashizume">橋詰</persName>のが<persName ref="#yamada">山田安之助</persName>、<persName ref="#okazaki-eibee">岡崎</persName>のが<persName ref="#hijikata">土方要五郎</persName>、<persName ref="#kawatani">川谷</persName>のが<persName ref="#takemoto">竹本謙之助</persName>、元八番隊の方で、<persName ref="#nishimura">西村</persName>のが<persName ref="#kosaka">小坂乾</persName>、<persName ref="#oishi">大石</persName>のが<persName ref="#ochiai">落合源六</persName>、<persName ref="#takeuchi">竹内</persName>のが<persName ref="#kusunose-ryuhei">楠瀬柳平</persName>、<persName ref="#yokota-tatsugoro">横田</persName>のが<persName ref="#matsuda">松田八平次</persName>、<persName ref="#doi">土居</persName>のが<persName ref="#ike">池七助</persName>、<persName ref="#kakiuchi">垣内</persName>のが<persName ref="#kumon">公文左平</persName>、<persName ref="#kaneda">金田</persName>のが<persName ref="#tanigawa">谷川新次</persName>、<persName ref="#takeuchi-yasaburo">武内</persName>のが<persName ref="#kitamori">北森貫之助</persName>である。中で<persName ref="#ike">池七助</persName>は<persName ref="#sugimoto">杉本</persName>と<persName ref="#doi">土居</persName>との二人を介錯する筈である。いずれも刀の<ruby><rb>下緒</rb><rt>さげお</rt></ruby>を<ruby><rb>襷</rb><rt>たすき</rt></ruby>にして、切腹の座の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に控えた。</p>
+        <p>幕の外には別に駕籠が二十挺据えてある。これは死骸を載せて<placeName ref="#hojuin">宝珠院</placeName>に運ぶためである。埋葬の前に、死骸は駕籠から大瓶に移されることになっている。</p>
+        <p>臨検の席には外国事務総裁<persName ref="#yamashinanomiya"><ruby><rb>山階宮</rb><rt>やましなのみや</rt></ruby></persName>を始として、外国事務係<persName ref="#date-munenari">伊達少将</persName>、同<persName ref="#higashikuze">東久世少将</persName>、細川、浅野両藩の重役等が、南から北へ向いて<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>に掛かる。<placeName ref="#tosa">土佐</placeName>藩の<persName ref="#fukao">深尾</persName>は北から東南に向いてすわる。大目附<persName ref="#kominami">小南</persName>以下目附等は西北から東に向いて並ぶ。<placeName ref="#france">フランス</placeName>公使は銃を持った兵卒二十余人を<ruby><rb>随</rb><rt>したが</rt></ruby>えて、正面の西から東に向いてすわる。その他<placeName ref="#satsuma">薩摩</placeName>、<placeName ref="#nagato">長門</placeName>、<placeName ref="#inaba"><ruby><rb>因幡</rb><rt>いなば</rt></ruby></placeName>、<placeName ref="#bizen"><ruby><rb>備前</rb><rt>びぜん</rt></ruby></placeName>等の諸藩からも役人が列席している。</p>
+        <p>用意の整ったことを、細川、浅野の藩士が二十人のものに告げる。二十人のものは本堂の縁から駕籠に乗り移る。駕籠の両側には途中と同じ護衛が附く。駕籠は幕の外に立てられる。呼出の役人が名簿を繰り開いて、今首席のものの名を読み上げようとする。</p>
+        <p>この時天が<ruby><rb>俄</rb><rt>にわか</rt></ruby>に曇って、大雨が降って来た。寺の内外に満ちていた人民は騒ぎ立って、<ruby><rb>檐下</rb><rt>のきした</rt></ruby>木蔭に走り寄ろうとする。非常な雑沓である。</p>
+        <p>切腹は一時見合せとなって、<persName ref="#yamashinanomiya">総裁宮</persName>始、一同屋内に雨を避けた。雨は<ruby><rb>未</rb><rt>ひつじ</rt></ruby>の刻に<ruby><rb>歇</rb><rt>や</rt></ruby>んだ。再度の用意は<ruby><rb>申</rb><rt>さる</rt></ruby>の刻に整った。</p>
+        <p>呼出の役人が「<persName ref="#miura">箕浦猪之吉</persName>」と読み上げた。寺の内外は水を打ったように<ruby><rb>鎮</rb><rt>しずま</rt></ruby>った。<persName ref="#miura">箕浦</persName>は<ruby><rb>黒羅紗</rb><rt>くろらしゃ</rt></ruby>の羽織に<ruby><rb>小袴</rb><rt>こばかま</rt></ruby>を着して、切腹の座に着いた。介錯人<persName ref="#baba">馬場</persName>は三尺隔てて背後に立った。<persName ref="#yamashinanomiya">総裁宮</persName>以下の諸官に一礼した<persName ref="#miura">箕浦</persName>は、世話役の出す白木の四方を引き寄せて、短刀を<ruby><rb>右手</rb><rt>めて</rt></ruby>に取った。忽ち雷のような声が響き渡った。</p>
+        <p>「<placeName ref="#france">フランス</placeName>人共聴け。<ruby><rb>己</rb><rt>おれ</rt></ruby>は<ruby><rb>汝等</rb><rt>うぬら</rt></ruby>のためには死なぬ。皇国のために死ぬる。<placeName ref="#japan">日本</placeName>男子の切腹を好く見て置け」と云ったのである。</p>
+        <p><persName ref="#miura">箕浦</persName>は衣服をくつろげ、短刀を<ruby><rb>逆手</rb><rt>さかて</rt></ruby>に取って、左の脇腹へ深く突き立て、三寸切り下げ、右へ引き廻して、又三寸切り上げた。刃が深く入ったので、<ruby><rb>創口</rb><rt>きずぐち</rt></ruby>は広く開いた。<persName ref="#miura">箕浦</persName>は短刀を棄てて、右手を創に揷し込んで、<ruby><rb>大網</rb><rt>だいもう</rt></ruby>を掴んで引き出しつつ、<placeName ref="#france">フランス</placeName>人を<ruby><rb>睨</rb><rt>にら</rt></ruby>み付けた。</p>
+        <p><persName ref="#baba">馬場</persName>が刀を抜いて<ruby><rb>項</rb><rt>うなじ</rt></ruby>を一刀切ったが、浅かった。</p>
+        <p>「<persName ref="#baba">馬場</persName>君。どうした。静かに遣れ」と、<persName ref="#miura">箕浦</persName>が叫んだ。</p>
+        <p><persName ref="#baba">馬場</persName>の二の太刀は<ruby><rb>頸椎</rb><rt>けいつい</rt></ruby>を断って、かっと音がした。</p>
+        <p><persName ref="#miura">箕浦</persName>は又大声を放って、</p>
+        <p>「まだ死なんぞ、もっと切れ」と叫んだ。この声は今までより大きく、三丁位響いたのである。</p>
+        <p>初から<persName ref="#miura">箕浦</persName>の挙動を見ていた<placeName ref="#france">フランス</placeName>公使は、次第に<ruby><rb>驚駭</rb><rt>きょうがい</rt></ruby>と<ruby><rb>畏怖</rb><rt>いふ</rt></ruby>とに襲われた。そして座席に安んぜなくなっていたのに、この意外に大きい声を、意外な時に聞いた公使は、とうとう立ち上がって、手足の<ruby><rb>措所</rb><rt>おきどころ</rt></ruby>に迷った。</p>
+        <p><persName ref="#baba">馬場</persName>は三度目にようよう<persName ref="#miura">箕浦</persName>の首を<ruby><rb>墜</rb><rt>おと</rt></ruby>した。</p>
+        <p>次に呼び出された<persName ref="#nishimura">西村</persName>は温厚な人である。源姓、名は<persName ref="#nishimura"><ruby><rb>氏同</rb><rt>うじあつ</rt></ruby></persName>。<placeName ref="#tosa-gun">土佐郡</placeName><placeName ref="#enokuchi">江の口村</placeName>に住んでいた。家禄四十石の馬廻である。<date when="1845">弘化二年七月</date>に生れて、当年二十四歳になる。歩兵小隊司令には<date when="1867">慶応三年八月</date>になった。<persName ref="#nishimura">西村</persName>は軍服を着て切腹の座に着いたが、服の<ruby><rb>釦鈕</rb><rt>ぼたん</rt></ruby>を一つ一つ丁寧にはずした。さて短刀を取って左に突き立て、少し右へ引き掛けて、浅過ぎると思ったらしく、更に深く突き立てて<ruby><rb>緩</rb><rt>ゆるや</rt></ruby>かに右へ引いた。介錯人の<persName ref="#kosaka">小坂</persName>は少し<ruby><rb>慌</rb><rt>あわ</rt></ruby>てたらしく、<persName ref="#nishimura">西村</persName>がまだ右へ引いているうちに、背後から切った。首は三間ばかり飛んだ。</p>
+        <p>次は<persName ref="#ikegami">池上</persName>で、<persName ref="#kitagawa">北川</persName>が介錯した。次の<persName ref="#oishi">大石</persName>は際立った大男である。先ず両手で腹を二三度<ruby><rb>撫</rb><rt>な</rt></ruby>でた。それから刀を取って、右手で左の脇腹を突き刺し、<ruby><rb>左手</rb><rt>ゆんで</rt></ruby>で<ruby><rb>刀背</rb><rt>とうはい</rt></ruby>を押して切り下げ、右手に左手を添えて、刀を右へ引き廻し、右の脇腹に至った時、更に左手で刀背を押して切り上げた。それから刀を座右に置いて、両手を張って、「介錯頼む」と叫んだ。介錯人<persName ref="#ochiai">落合</persName>は<ruby><rb>為損</rb><rt>しそん</rt></ruby>じて、七太刀目に首を墜した。切腹の刀の運びがするすると渋滞なく、手際の最も立派であったのは、この<persName ref="#oishi">大石</persName>である。</p>
+        <p>これから<persName ref="#sugimoto">杉本</persName>、<persName ref="#shogase">勝賀瀬</persName>、<persName ref="#yamamoto">山本</persName>、<persName ref="#morimoto">森本</persName>、<persName ref="#kitadai">北城</persName>、<persName ref="#inada">稲田</persName>、<persName ref="#yanase">柳瀬</persName>の順序に切腹した。中にも<persName ref="#yanase">柳瀬</persName>は一旦左から右へ引き廻した刀を、再び右から左へ引き戻したので<ruby><rb>腸</rb><rt>はらわた</rt></ruby>が創口から<ruby><rb>溢</rb><rt>あふ</rt></ruby>れて出た。</p>
+        <p>次は十二人目の<persName ref="#hashizume">橋詰</persName>である。<persName ref="#hashizume">橋詰</persName>が出て座に着く頃は、もう<ruby><rb>四辺</rb><rt>あたり</rt></ruby>が<ruby><rb>昏</rb><rt>くら</rt></ruby>くなって、本堂には燈明が附いた。</p>
+        <p><placeName ref="#france">フランス</placeName>公使はこれまで不安に堪えぬ様子で、起ったり居たりしていた。この不安は次第に銃を<ruby><rb>執</rb><rt>と</rt></ruby>って立っている兵卒に波及した。姿勢は<ruby><rb>悉</rb><rt>ことごと</rt></ruby>く崩れ、手を振り動かして何事かささやき合うようになった。丁度<persName ref="#hashizume">橋詰</persName>が切腹の座に着いた時、公使が何か一言云うと、兵卒一同は公使を中に囲んで臨検の席を離れ、我皇族並に諸役人に会釈もせず、あたふたと幕の外に出た。さて庭を横切って、寺の門を出るや否や、公使を<ruby><rb>包擁</rb><rt>ほうよう</rt></ruby>した兵卒は<ruby><rb>駆歩</rb><rt>かけあし</rt></ruby>に移って港口へ走った。</p>
+        <p>切腹の座では<persName ref="#hashizume">橋詰</persName>が衣服をくつろげて、短刀を腹に立てようとした。そこへ役人が駆け付けて、「暫く」と叫んだ。驚いて手を停めた<persName ref="#hashizume">橋詰</persName>に、役人は<placeName ref="#france">フランス</placeName>公使退席の事を話して、ともかくも一時切腹を差し控えられたいと云った。<persName ref="#hashizume">橋詰</persName>は跡に残った八人の所に帰って、<ruby><rb>仔細</rb><rt>しさい</rt></ruby>を話した。</p>
+        <p>とても死ぬるものなら、<ruby><rb>一思</rb><rt>ひとおもい</rt></ruby>に死んでしまいたいと云う情に、九人が皆支配せられている。留められてもどかしいと感ずると共に、その留めた人に<ruby><rb>打</rb><rt>ぶ</rt></ruby>っ附かって何か言いたい。理由を問うて見たい。一同<persName ref="#kominami">小南</persName>の控所に往って、<persName ref="#hashizume">橋詰</persName>が口を開いた。</p>
+        <p>「我々が朝命によって切腹いたすのを、何故にお差留になりましたか。それを承りに出ました」</p>
+        <p><persName ref="#kominami">小南</persName>は答えた。</p>
+        <p>「その疑は一応<ruby><rb>尤</rb><rt>もっとも</rt></ruby>であるが切腹には<placeName ref="#france">フランス</placeName>人が立ち会う<ruby><rb>筈</rb><rt>はず</rt></ruby>である。それが退席したから、中止せんではならぬ。只今<placeName ref="#satsuma">薩摩</placeName>、<placeName ref="#nagato">長門</placeName>、<placeName ref="#inaba">因幡</placeName>、<placeName ref="#bizen">備前</placeName>、<placeName ref="#higo">肥後</placeName>、<placeName ref="#aki">安芸</placeName>七藩の家老方が<placeName ref="#france">フランス</placeName>軍艦に出向かわれた。<ruby><rb>姑</rb><rt>しばら</rt></ruby>く元の席に帰って<ruby><rb>吉左右</rb><rt>きっそう</rt></ruby>を待たれい」</p>
+        <p>九人は是非なく本堂に引き取った。細川、浅野両藩の<ruby><rb>士</rb><rt>さむらい</rt></ruby>が夕食の膳を出して、食事をする気にはなられぬと云う人々に、<ruby><rb>強</rb><rt>し</rt></ruby>いて<ruby><rb>箸</rb><rt>はし</rt></ruby>を取らせ、次いで寝具を出して枕に就かせた。子の刻頃になって、両藩の士が来て、只今七藩の家老方がこれへ出席になると知らせた。九人は<ruby><rb>跳</rb><rt>は</rt></ruby>ね起きて迎接した。七家老の中三人が膝を進めて、かわるがわる云うのを聞けば、<ruby><rb>概</rb><rt>おおむ</rt></ruby>ねこうである。我々は<placeName ref="#france">フランス</placeName>軍艦に往って退席の理由を<ruby><rb>質</rb><rt>ただ</rt></ruby>した。然るに<placeName ref="#france">フランス</placeName>公使は、<placeName ref="#tosa">土佐</placeName>の人々が身命を軽んじて公に奉ぜられるには感服したが、何分その<ruby><rb>惨澹</rb><rt>さんたん</rt></ruby>たる状況を目撃するに忍びないから、残る人々の助命の事を<placeName ref="#japan">日本</placeName>政府に申し立てると云った。明朝は<persName ref="#date-munenari">伊達少将</persName>の手を経て<ruby><rb>朝旨</rb><rt>ちょうし</rt></ruby>を伺うことになるだろう。いずれも軽挙<ruby><rb>妄動</rb><rt>もうどう</rt></ruby>することなく、何分の御沙汰を待たれいと云うのである。九人は謹んで承服した。</p>
+        <p>中一日置いて<date when="--02-25">二十五日</date>に、両藩の士が来て、九人が<placeName ref="#osaka">大阪</placeName>表へ引上げることになったこと、それから六番隊の<persName ref="#hashizume">橋詰</persName>、<persName ref="#okazaki-eibee">岡崎</persName>、<persName ref="#kawatani">川谷</persName>は<placeName ref="#aki">安芸</placeName>藩へ、八番隊の<persName ref="#takeuchi">竹内</persName>、<persName ref="#yokota-tatsugoro">横田</persName>、<persName ref="#doi">土居</persName>、<persName ref="#kakiuchi">垣内</persName>、<persName ref="#kaneda">金田</persName>、<persName ref="#takeuchi-yasaburo">武内</persName>は<placeName ref="#higo">肥後</placeName>藩へ預けられたことを伝えた。九挺の駕籠は寺の広庭に<ruby><rb>舁</rb><rt>か</rt></ruby>き据えられた。一同駕籠に乗ろうとする時、<persName ref="#hashizume">橋詰</persName>が自ら舌を<ruby><rb>咬</rb><rt>か</rt></ruby>み切って、口角から血を流して倒れた。同僚の潔く死んだ後に、自分の番になって故障の起ったのを遺憾だと思ったのである。幸に舌の創は生命を危くする程のものではなかったが、浅野家のものは再び変事の起らぬうちに、早く<placeName ref="#osaka">大阪</placeName>まで引き上げようと思って、<persName ref="#hashizume">橋詰</persName>以下三人の乗った駕籠を、早追の如くに急がせた。細川家のものが声を掛けて、歩度を<ruby><rb>緩</rb><rt>ゆる</rt></ruby>めさせようとしたが、浅野家のものは耳にも掛けない。とうとう細川家のものも駆足になった。</p>
+        <p><placeName ref="#osaka">大阪</placeName>に着くと、九挺の駕籠が一旦<placeName ref="#nagahori">長堀</placeName>の<placeName ref="#tosa">土佐</placeName>藩邸の前に停められた。<persName ref="#kominami">小南</persName>が門前に出て、<persName ref="#hashizume">橋詰</persName>に説諭した。そこから両藩のものが引き分れて、<ruby><rb>各</rb><rt>おのおの</rt></ruby>預けられた人達を連れて帰った。<persName ref="#hashizume">橋詰</persName>には医者が附けられ、又<placeName ref="#tosa">土佐</placeName>藩から看護人が差し添えられた。</p>
+        <p>九人のものは細川、浅野両家で非常に優待せられた。中にも細川家では、<date when="1688">元禄年中</date>に赤穂浪人を預り、<date when="1860">万延元年</date>に<persName ref="#ii"><ruby><rb>井伊掃部頭</rb><rt>いいかもんのかみ</rt></ruby></persName>を刺した水戸浪人を預り、今度で三度目の名誉ある御用を勤めるのだと云って、<ruby><rb>鄭重</rb><rt>ていちょう</rt></ruby>の上にも鄭重にした。新調した<ruby><rb>縞</rb><rt>しま</rt></ruby>の<ruby><rb>袷</rb><rt>あわせ</rt></ruby>を<ruby><rb>寝衣</rb><rt>ねまき</rt></ruby>として渡す。夜具は三枚布団で、足軽が敷畳をする。隔日に<ruby><rb>据風呂</rb><rt>すえふろ</rt></ruby>が立つ。手拭と白紙とを渡す。三度の食事に必ず焼物付の料理が出て、隊長が毒見をする。午後に重詰の菓子で茶を出す。果物が折々出る。便用には<ruby><rb>徒士</rb><rt>かち</rt></ruby>二三人が縁側に出張る。<ruby><rb>手水</rb><rt>ちょうず</rt></ruby>の<ruby><rb>柄杓</rb><rt>ひしゃく</rt></ruby>は徒士が取る。夜は<ruby><rb>不寝番</rb><rt>ねずばん</rt></ruby>が附く。挨拶に来るものは縁板に頭を附ける。書物を貸して読ませる。病気の時は医者を出して、目前で調合し、目前で<ruby><rb>煎</rb><rt>せん</rt></ruby>じさせる。凡そこう云う扱振である。</p>
+        <p><date when="--03-02">三月二日</date>に、死刑を免じて国元へ<ruby><rb>指返</rb><rt>さしかえ</rt></ruby>すと云う達しがあった。三日に<placeName ref="#tosa">土佐</placeName>藩の隊長が兵卒を連れて、細川、浅野両藩にいる九人のものを受取りに廻った。両藩共<ruby><rb>七菜</rb><rt>しちさい</rt></ruby><ruby><rb>二</rb><rt>に</rt></ruby>の膳附の<ruby><rb>饗応</rb><rt>きょうおう</rt></ruby>をして別を惜んだ。<date when="--03-14">十四日</date>に、九人のものは下横目一人宰領二人を附けられて、<placeName ref="#kizugawaguchi">木津川口</placeName>から舟に乗り込み、<date when="--03-15">十五日</date>に、<placeName ref="#senbonmatsu">千本松</placeName>を出帆し、十六日の夜なかに<placeName ref="#urado"><ruby><rb>浦戸</rb><rt>うらど</rt></ruby></placeName>の港に着いた。十七日に、<placeName ref="#minamikaisho">南会所</placeName>をさして行くに、<placeName ref="#matsugahana">松が鼻</placeName>から西、<placeName ref="#obiyamachi">帯屋町</placeName>までの道筋は、<placeName ref="#sakai">堺</placeName>事件の人達を見に出た群集で一ぱいになっている。<placeName ref="#minamikaisho">南会所</placeName>で、下横目が九人のものを支配方に引き渡し、支配方は受け取って各自の親族に預けた。九人のものはこの時一旦<ruby><rb>遺書</rb><rt>ゆいしょ</rt></ruby><ruby><rb>遺髪</rb><rt>ゆいはつ</rt></ruby>を送って<ruby><rb>遣</rb><rt>や</rt></ruby>った父母妻子に、久し振の面会をした。</p>
+        <p><date when="--05-20">五月二十日</date>に、<placeName ref="#minamikaisho">南会所</placeName>から九人のものに呼出状が来た。本人は<ruby><rb>巳</rb><rt>み</rt></ruby>の刻、実父又は実子のあるものは、その実父、実子も巳の刻半に出頭すべしと云うのである。<placeName ref="#minamikaisho">南会所</placeName>では目附の出座があって、下横目が三箇条の達しをした。<ruby><rb>扶持切米</rb><rt>ふちきりまい</rt></ruby>召し放され、<ruby><rb><placeName ref="#watarigawa">渡川</placeName>限</rb><rt>わたりかわかぎり</rt></ruby>西へ<ruby><rb>流罪</rb><rt>るざい</rt></ruby>仰せ付けられる。<ruby><rb>袴刀</rb><rt>はかまかたな</rt></ruby>のままにて<ruby><rb>罷</rb><rt>まか</rt></ruby>り越して好いと云うのが一つ。実子あるものは実子を兵卒に召し抱え、二人扶持切米四石を下し置かれると云うのが二つ。実子のないものは配処に於いて<ruby><rb>介補</rb><rt>かいほ</rt></ruby>として二人扶持を下し置かれ、<placeName ref="#hata-nakamura"><ruby><rb>幡多</rb><rt>はた</rt></ruby>中村</placeName>の蔵から渡し<ruby><rb>遣</rb><rt>つか</rt></ruby>わされると云うのが三つである。九人のものは相談の上、<persName ref="#hashizume">橋詰</persName>を以て申し立てた。我々は<placeName ref="#france">フランス</placeName>人の要求によって、国家の為めに死のうとしたものである。それゆえ切腹を許され、<ruby><rb>士分</rb><rt>さむらいぶん</rt></ruby>の取扱を受けた。次いで<placeName ref="#france">フランス</placeName>人が助命を申し出たので、死を<ruby><rb>宥</rb><rt>なだ</rt></ruby>められた。然れば無罪にして士分の取扱をも受くべき筈である。それを何故に流刑に処せられるか、その理由を承らぬうちは、<ruby><rb>輒</rb><rt>たやす</rt></ruby>くお<ruby><rb>請</rb><rt>うけ</rt></ruby>が出来難いと云うのである。目附は当惑の体で云った。不審は<ruby><rb>最</rb><rt>もっとも</rt></ruby>である。しかしこの度の流刑は自殺した十一人の苦痛に準ずる御処分であろう。<ruby><rb>枉</rb><rt>ま</rt></ruby>げてお請をせられたいと云った。九人のものは苦笑して云った。十一人の死は、我々も日夜心苦しく存ずる所である。その苦痛に準ずると云われては、論弁すべき<ruby><rb>詞</rb><rt>ことば</rt></ruby>がない。一同お請いたすと云った。</p>
+        <p>九人のものは流人として先例のない<ruby><rb>袴着帯刀</rb><rt>はかまぎたいとう</rt></ruby>の姿で出立したが、久しく<ruby><rb>蟄居</rb><rt>ちっきょ</rt></ruby>して<ruby><rb>体</rb><rt>からだ</rt></ruby>が疲れていたので、<placeName ref="#tosa-gun">土佐郡</placeName><placeName ref="#asakura">朝倉村</placeName>に着いてから、一同足痛を申し立てて駕籠に乗った。配所は<ruby><rb><placeName ref="#hata-gun">幡多郡</placeName><placeName ref="#nyutamura">入田村</placeName></rb><rt>はたごおりにゅうたむら</rt></ruby>である。庄屋<persName ref="#uga"><ruby><rb>宇賀祐之進</rb><rt>うがすけのしん</rt></ruby></persName>の<ruby><rb>取計</rb><rt>とりはからい</rt></ruby>で、初は九人を一人ずつ農家に分けて入れたが、数日の後一軒の空屋に八人を合宿させた。<persName ref="#yokota-tatsugoro">横田</persName>一人は西へ三里隔たった<placeName ref="#arioka">有岡村</placeName>の法華宗<placeName ref="#shinjoji">真静寺</placeName>の住職が、俗縁があるので引き取った。</p>
+        <p>九人のものは<placeName ref="#myokokuji">妙国寺</placeName>で死んだ同僚十一人のために、<placeName ref="#shinjoji">真静寺</placeName>で<ruby><rb>法会</rb><rt>ほうえ</rt></ruby>を行って、次の日から村民に文武の教育を施しはじめた。<persName ref="#takeuchi">竹内</persName>は四書の<ruby><rb>素読</rb><rt>そどく</rt></ruby>を授け、<persName ref="#doi">土居</persName>、<persName ref="#takeuchi-yasaburo">武内</persName>は撃剣を教え、その他の人々も思い思いに諸芸の指南をした。</p>
+        <p><placeName ref="#nyutamura">入田村</placeName>は夏から秋に掛けて<ruby><rb>時疫</rb><rt>じえき</rt></ruby>の流行する土地である。<date when="--08">八月</date>になって<persName ref="#kawatani">川谷</persName>、<persName ref="#yokota-tatsugoro">横田</persName>、<persName ref="#doi">土居</persName>の三人が発熱した。<persName ref="#doi">土居</persName>の妻は<ruby><rb><placeName ref="#kami-gun">香美郡</placeName><placeName ref="#yasumura">夜須村</placeName></rb><rt>かがみごおりやすむら</rt></ruby>から、昼夜兼行で看病に来た。<persName ref="#yokota-tatsugoro">横田</persName>の子<persName ref="#tsunejiro">常次郎</persName>は、母が病気なので、<ruby><rb>僅</rb><rt>わず</rt></ruby>かに九歳の童子でありながら、単身三十里の道を歩いて来て、父を介抱した。この二人は次第に<ruby><rb>恢復</rb><rt>かいふく</rt></ruby>に向ったのに、<persName ref="#kawatani">川谷</persName>一人は<date when="--09-04">九月四日</date>に二十六歳を<ruby><rb>一期</rb><rt>いちご</rt></ruby>として病死した。</p>
+        <p><date when="--11-17">十一月十七日</date>に、目附方は<persName ref="#hashizume">橋詰</persName>以下九人のものに御用召を発した。生き残った八人は、<persName ref="#kawatani">川谷</persName>の墓に別を告げて<placeName ref="#nyutamura">入田村</placeName>を出立し、<date when="--11-27">二十七日</date>に<placeName ref="#kochi">高知</placeName>に着いた。即時に目附役場に出ると、各通の書面を以て、「御即位御祝式に<ruby><rb>被当</rb><rt>あたられ</rt></ruby>、<ruby><rb>思召帰住御免</rb><rt>おぼしめしきじゅうごめん</rt></ruby>之上、兵士<ruby><rb>某</rb><rt>なにがし</rt></ruby>父に<ruby><rb>被仰付</rb><rt>おおせつけられ</rt></ruby>、<ruby><rb>以前之年数被継遣之</rb><rt>いぜんのねんすうこれをつぎつかわさる</rt></ruby>」と云う<ruby><rb>申渡</rb><rt>もうしわたし</rt></ruby>があった。これは<date when="--08-27">八月二十七日</date>にあった<persName ref="#meiji-tenno">明治天皇</persName>の即位のために、八人のものが<ruby><rb>特赦</rb><rt>とくしゃ</rt></ruby>を受けたので、兵士とは並の兵卒である。士分取扱の<ruby><rb>沙汰</rb><rt>さた</rt></ruby>は<ruby><rb>終</rb><rt>つい</rt></ruby>に無かった。</p>
+        <p><placeName ref="#myokokuji">妙国寺</placeName>で死んだ十一人のためには、<placeName ref="#tosa">土佐</placeName>藩で<placeName ref="#hojuin">宝珠院</placeName>に十一基の石碑を建てた。<persName ref="#miura">箕浦</persName>を<ruby><rb>頭</rb><rt>かしら</rt></ruby>に<persName ref="#yanase">柳瀬</persName>までの碑が一列に並んでいる。<placeName ref="#hojuin">宝珠院</placeName>本堂の背後の縁下には、九つの<ruby><rb>大瓶</rb><rt>おおがめ</rt></ruby>が切石の上に伏せてある。これはその中に入るべくして入らなかった九人の遺物である。<placeName ref="#sakai">堺</placeName>では十一基の石碑を「御残念様」と云い、九箇の<ruby><rb>瓶</rb><rt>かめ</rt></ruby>を「<ruby><rb>生運様</rb><rt>いきうんさま</rt></ruby>」と云って<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>するものが<ruby><rb>迹</rb><rt>あと</rt></ruby>を絶たない。</p>
+        <p>十一人のうち<persName ref="#miura">箕浦</persName>は男子がなかったので、一時家が断絶したが、<date when="1870">明治三年三月八日</date>に、同姓<persName ref="#miura-kozo">箕浦幸蔵</persName>の二男<persName ref="#kusukichi"><ruby><rb>楠吉</rb><rt>くすきち</rt></ruby></persName>に家名を立てさせ、三等<ruby><rb>下席</rb><rt>かせき</rt></ruby>に列し、七石三斗を給し、次で<persName ref="#miura-kozo">幸蔵</persName>の願に依て、<persName ref="#miura">猪之吉</persName>の娘を<persName ref="#kusukichi">楠吉</persName>に配することになった。</p>
+        <p><persName ref="#nishimura">西村</persName>は父<persName ref="#seizaemon">清左衛門</persName>が早く亡くなって、祖父<persName ref="#katsuhei"><ruby><rb>克平</rb><rt>かつへい</rt></ruby></persName>が生存していたので、家督を祖父に復せられた。後には親族<ruby><rb>筧氏</rb><rt>かけいうじ</rt></ruby>から養子が来た。</p>
+        <p>小頭以下兵卒の子は、幼少でも大抵兵卒に抱えられて、成長した上で勤務した。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

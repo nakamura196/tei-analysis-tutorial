@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>なめとこ山の熊</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>なめとこ山の熊</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「風の又三郎」角川文庫、角川書店。1988（昭和63）年12月10日初版発行。1990（平成2）年10月20日8版発行。入力：土屋隆。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card1939.html">https://www.aozora.gr.jp/cards/000081/card1939.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="kojuro">
+        <persName>淵沢小十郎</persName>
+        <note>なめとこ山の熊捕りの名人。九十になる母と子供らを養う猟師で、荒物屋の旦那に安く毛皮を買い叩かれる。最後は熊に打たれて死ぬ主人公</note>
+      </person>
+      <person xml:id="heisuke">
+        <persName>平助</persName>
+        <note>町の荒物屋の使用人。主人に命じられ、毛皮の代金の銀貨四枚を小十郎に渡す</note>
+      </person>
+      <person xml:id="okino">
+        <persName>おきの</persName>
+        <note>町の荒物屋の使用人。主人に命じられ、小十郎に酒を出す</note>
+      </person>
+      <person xml:id="bishamon">
+        <persName>毘沙門</persName>
+        <note>毘沙門天。「北島の毘沙門さん」として言及される信仰の対象(奉納された手形の大きさが小十郎の掌の比喩に使われる)</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="nametokoyama">
+        <placeName>なめとこ山</placeName>
+        <note>作品の舞台となる山。岩手県花巻周辺の山地に想を得たとされるが、同名の実在の山を特定できないため座標なし</note>
+      </place>
+      <place xml:id="fuchizawagawa">
+        <placeName>淵沢川</placeName>
+        <note>なめとこ山から流れ出る川。作中の地名で実在の河川として特定できないため座標なし(猟師・淵沢小十郎の姓と同じ)</note>
+      </place>
+      <place xml:id="ozorataki">
+        <placeName>大空滝</placeName>
+        <note>なめとこ山にかかる滝。作中の地名で実在の滝として特定できないため座標なし</note>
+      </place>
+      <place xml:id="nakayamakaido">
+        <placeName>中山街道</placeName>
+        <note>なめとこ山へ通じる街道。作中の地名で実在の街道として特定できないため座標なし</note>
+      </place>
+      <place xml:id="namarinoyu">
+        <placeName>鉛の湯</placeName>
+        <location><geo>39.4656 140.9918</geo></location>
+        <note>概値(岩手県花巻市の鉛温泉)。入口に「なめとこ山の熊の胆あり」の看板が掛かる湯治場</note>
+      </place>
+      <place xml:id="kitajima">
+        <placeName>北島</placeName>
+        <note>「北島の毘沙門さん」として言及される土地。岩手県内と解されるが特定できないため座標なし</note>
+      </place>
+      <place xml:id="shidokezawa">
+        <placeName>しどけ沢</placeName>
+        <note>小十郎が縦横に歩いた猟場の一つ。作中の地名で実在地として特定できないため座標なし</note>
+      </place>
+      <place xml:id="mitsumata">
+        <placeName>三つ又</placeName>
+        <note>小十郎が縦横に歩いた猟場の一つ。作中の地名で実在地として特定できないため座標なし</note>
+      </place>
+      <place xml:id="sakkainoyama">
+        <placeName>サッカイの山</placeName>
+        <note>小十郎が縦横に歩いた猟場の一つ。作中の地名で実在地として特定できないため座標なし</note>
+      </place>
+      <place xml:id="mamianamori">
+        <placeName>マミ穴森</placeName>
+        <note>小十郎が縦横に歩いた猟場の一つ。作中の地名で実在地として特定できないため座標なし</note>
+      </place>
+      <place xml:id="shirasawa">
+        <placeName>白沢</placeName>
+        <note>小十郎の主要な猟場の沢。最期の日も白沢をのぼって行く。作中の地名で実在地として特定できないため座標なし</note>
+      </place>
+      <place xml:id="bakkaizawa">
+        <placeName>ばっかぃ沢</placeName>
+        <note>白沢から峯を越えた先の沢。母子の熊に出会う場面の舞台。作中の地名で実在地として特定できないため座標なし</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値。「日本では狐けんというものもあって」と語り手が言及</note>
+      </place>
+      <place xml:id="portugal">
+        <placeName>ポルトガル</placeName>
+        <location><geo>39.3999 -8.2245</geo></location>
+        <note>国名・概値。小十郎の鉄砲を「ポルトガル伝来というような」と形容</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>なめとこ山の熊</head>
+        <p><placeName ref="#nametokoyama">なめとこ山</placeName>の<ruby><rb>熊</rb><rt>くま</rt></ruby>のことならおもしろい。<placeName ref="#nametokoyama">なめとこ山</placeName>は大きな山だ。<placeName ref="#fuchizawagawa"><ruby><rb>淵沢</rb><rt>ふちざわ</rt></ruby>川</placeName>は<placeName ref="#nametokoyama">なめとこ山</placeName>から出て来る。<placeName ref="#nametokoyama">なめとこ山</placeName>は一年のうち大ていの日はつめたい霧か雲かを吸ったり吐いたりしている。まわりもみんな青黒いなまこや海坊主のような山だ。山のなかごろに大きな<ruby><rb>洞穴</rb><rt>ほらあな</rt></ruby>ががらんとあいている。そこから<placeName ref="#fuchizawagawa">淵沢川</placeName>がいきなり三百尺ぐらいの滝になってひのきやいたやのしげみの中をごうと落ちて来る。</p>
+        <p><placeName ref="#nakayamakaido">中山街道</placeName>はこのごろは<ruby><rb>誰</rb><rt>たれ</rt></ruby>も歩かないから<ruby><rb>蕗</rb><rt>ふき</rt></ruby>やいたどりがいっぱいに生えたり牛が<ruby><rb>遁</rb><rt>に</rt></ruby>げて登らないように<ruby><rb>柵</rb><rt>さく</rt></ruby>をみちにたてたりしているけれどもそこをがさがさ三里ばかり行くと向うの方で風が山の頂を通っているような音がする。気をつけてそっちを見ると何だかわけのわからない白い細長いものが山をうごいて落ちてけむりを立てているのがわかる。それが<placeName ref="#nametokoyama">なめとこ山</placeName>の<placeName ref="#ozorataki">大空滝</placeName>だ。そして昔はそのへんには熊がごちゃごちゃ居たそうだ。ほんとうは<placeName ref="#nametokoyama">なめとこ山</placeName>も熊の<ruby><rb>胆</rb><rt>い</rt></ruby>も私は自分で見たのではない。人から聞いたり考えたりしたことばかりだ。間ちがっているかもしれないけれども私はそう思うのだ。とにかく<placeName ref="#nametokoyama">なめとこ山</placeName>の熊の<ruby><rb>胆</rb><rt>い</rt></ruby>は名高いものになっている。</p>
+        <p>腹の痛いのにもきけば傷もなおる。<placeName ref="#namarinoyu">鉛の湯</placeName>の入口に<placeName ref="#nametokoyama">なめとこ山</placeName>の熊の<ruby><rb>胆</rb><rt>い</rt></ruby>ありという昔からの看板もかかっている。だからもう熊は<placeName ref="#nametokoyama">なめとこ山</placeName>で赤い舌をべろべろ吐いて谷をわたったり熊の子供らがすもうをとっておしまいぽかぽか<ruby><rb>撲</rb><rt>なぐ</rt></ruby>りあったりしていることはたしかだ。熊捕りの名人の<persName ref="#kojuro">淵沢小十郎</persName>がそれを片っぱしから捕ったのだ。</p>
+        <p><persName ref="#kojuro">淵沢小十郎</persName>はすがめの<ruby><rb>赭黒</rb><rt>あかぐろ</rt></ruby>いごりごりしたおやじで胴は小さな<ruby><rb>臼</rb><rt>うす</rt></ruby>ぐらいはあったし<ruby><rb>掌</rb><rt>てのひら</rt></ruby>は<placeName ref="#kitajima">北島</placeName>の<persName ref="#bishamon"><ruby><rb>毘沙門</rb><rt>びしゃもん</rt></ruby></persName>さんの病気をなおすための手形ぐらい大きく厚かった。<persName ref="#kojuro">小十郎</persName>は夏なら<ruby><rb>菩提樹</rb><rt>マダ</rt></ruby>の皮でこさえたけらを着てはむばきをはき<ruby><rb>生蕃</rb><rt>せいばん</rt></ruby>の使うような山刀と<placeName ref="#portugal">ポルトガル</placeName>伝来というような大きな重い鉄砲をもってたくましい黄いろな犬をつれて<placeName ref="#nametokoyama">なめとこ山</placeName>から<placeName ref="#shidokezawa">しどけ沢</placeName>から<placeName ref="#mitsumata">三つ又</placeName>から<placeName ref="#sakkainoyama">サッカイの山</placeName>から<placeName ref="#mamianamori">マミ穴森</placeName>から<placeName ref="#shirasawa">白沢</placeName>からまるで縦横にあるいた。木がいっぱい生えているから谷を<ruby><rb>溯</rb><rt>のぼ</rt></ruby>っているとまるで青黒いトンネルの中を行くようで時にはぱっと緑と<ruby><rb>黄金</rb><rt>きん</rt></ruby>いろに明るくなることもあればそこら中が花が咲いたように日光が落ちていることもある。そこを<persName ref="#kojuro">小十郎</persName>が、まるで自分の座敷の中を歩いているというふうでゆっくりのっしのっしとやって行く。犬はさきに立って<ruby><rb>崖</rb><rt>がけ</rt></ruby>を<ruby><rb>横這</rb><rt>よこば</rt></ruby>いに走ったりざぶんと水にかけ込んだり淵ののろのろした気味の悪いとこをもう一生けん命に泳いでやっと向うの岩にのぼるとからだをぶるぶるっとして毛をたてて水をふるい落しそれから鼻をしかめて主人の来るのを待っている。<persName ref="#kojuro">小十郎</persName>は<ruby><rb>膝</rb><rt>ひざ</rt></ruby>から上にまるで<ruby><rb>屏風</rb><rt>びょうぶ</rt></ruby>のような白い波をたてながらコンパスのように足を抜き差しして口を少し曲げながらやって来る。そこであんまり一ぺんに言ってしまって悪いけれども<placeName ref="#nametokoyama">なめとこ山</placeName>あたりの熊は<persName ref="#kojuro">小十郎</persName>をすきなのだ。その証拠には熊どもは<persName ref="#kojuro">小十郎</persName>がぼちゃぼちゃ谷をこいだり谷の岸の細い平らないっぱいにあざみなどの生えているとこを通るときはだまって高いとこから見送っているのだ。木の上から両手で枝にとりついたり崖の上で膝をかかえて座ったりしておもしろそうに<persName ref="#kojuro">小十郎</persName>を見送っているのだ。まったく熊どもは<persName ref="#kojuro">小十郎</persName>の犬さえすきなようだった。けれどもいくら熊どもだってすっかり<persName ref="#kojuro">小十郎</persName>とぶっつかって犬がまるで火のついたまりのようになって飛びつき<persName ref="#kojuro">小十郎</persName>が<ruby><rb>眼</rb><rt>め</rt></ruby>をまるで変に光らして鉄砲をこっちへ構えることはあんまりすきではなかった。そのときは大ていの熊は迷惑そうに手をふってそんなことをされるのを断わった。けれども熊もいろいろだから気の<ruby><rb>烈</rb><rt>はげ</rt></ruby>しいやつならごうごう<ruby><rb>咆</rb><rt>ほ</rt></ruby>えて立ちあがって、犬などはまるで踏みつぶしそうにしながら<persName ref="#kojuro">小十郎</persName>の方へ両手を出してかかって行く。<persName ref="#kojuro">小十郎</persName>はぴったり落ち着いて<ruby><rb>樹</rb><rt>き</rt></ruby>をたてにして立ちながら熊の月の輪をめがけてズドンとやるのだった。すると森までががあっと叫んで熊はどたっと倒れ赤黒い血をどくどく吐き鼻をくんくん鳴らして死んでしまうのだった。<persName ref="#kojuro">小十郎</persName>は鉄砲を木へたてかけて注意深くそばへ寄って来てこう言うのだった。</p>
+        <p>「熊。おれはてまえを憎くて殺したのでねえんだぞ。おれも商売ならてめえも<ruby><rb>射</rb><rt>う</rt></ruby>たなけぁならねえ。ほかの罪のねえ仕事していんだが畑はなし木はお上のものにきまったし里へ出ても<ruby><rb>誰</rb><rt>たれ</rt></ruby>も相手にしねえ。仕方なしに猟師なんぞしるんだ。てめえも熊に生れたが因果ならおれもこんな商売が因果だ。やい。この次には熊なんぞに生れなよ」</p>
+        <p>そのときは犬もすっかりしょげかえって眼を細くして座っていた。</p>
+        <p>何せこの犬ばかりは<persName ref="#kojuro">小十郎</persName>が四十の夏うち中みんな<ruby><rb>赤痢</rb><rt>せきり</rt></ruby>にかかってとうとう<persName ref="#kojuro">小十郎</persName>の息子とその妻も死んだ中にぴんぴんして生きていたのだ。</p>
+        <p>それから<persName ref="#kojuro">小十郎</persName>はふところからとぎすまされた小刀を出して熊の<ruby><rb>顎</rb><rt>あご</rt></ruby>のとこから胸から腹へかけて皮をすうっと裂いていくのだった。それからあとの景色は僕は大きらいだ。けれどもとにかくおしまい<persName ref="#kojuro">小十郎</persName>がまっ赤な熊の<ruby><rb>胆</rb><rt>い</rt></ruby>をせなかの木のひつに入れて血で毛がぼとぼと房になった毛皮を谷であらってくるくるまるめせなかにしょって自分もぐんなりした風で谷を下って行くことだけはたしかなのだ。</p>
+        <p><persName ref="#kojuro">小十郎</persName>はもう熊のことばだってわかるような気がした。ある年の春はやく山の木がまだ一本も青くならないころ<persName ref="#kojuro">小十郎</persName>は犬を連れて<placeName ref="#shirasawa">白沢</placeName>をずうっとのぼった。夕方になって<persName ref="#kojuro">小十郎</persName>は<placeName ref="#bakkaizawa">ばっかぃ沢</placeName>へこえる<ruby><rb>峯</rb><rt>みね</rt></ruby>になった<ruby><rb>処</rb><rt>ところ</rt></ruby>へ去年の夏こさえた<ruby><rb>笹小屋</rb><rt>ささごや</rt></ruby>へ泊ろうと思ってそこへのぼって行った。そしたらどういう加減か<persName ref="#kojuro">小十郎</persName>の柄にもなく登り口をまちがってしまった。</p>
+        <p>なんべんも谷へ降りてまた登り直して犬もへとへとにつかれ<persName ref="#kojuro">小十郎</persName>も口を横にまげて息をしながら半分くずれかかった去年の小屋を見つけた。<persName ref="#kojuro">小十郎</persName>がすぐ下に<ruby><rb>湧水</rb><rt>わきみず</rt></ruby>のあったのを思い出して少し山を降りかけたら<ruby><rb>愕</rb><rt>おどろ</rt></ruby>いたことは母親とやっと一歳になるかならないような子熊と二<ruby><rb>疋</rb><rt>ひき</rt></ruby>ちょうど人が額に手をあてて遠くを<ruby><rb>眺</rb><rt>なが</rt></ruby>めるといったふうに淡い六日の月光の中を向うの谷をしげしげ見つめているのにあった。<persName ref="#kojuro">小十郎</persName>はまるでその二疋の熊のからだから後光が射すように思えてまるで<ruby><rb>釘付</rb><rt>くぎづ</rt></ruby>けになったように立ちどまってそっちを見つめていた。すると小熊が甘えるように言ったのだ。</p>
+        <p>「どうしても雪だよ、おっかさん谷のこっち側だけ白くなっているんだもの。どうしても雪だよ。おっかさん」</p>
+        <p>すると母親の熊はまだしげしげ見つめていたがやっと言った。</p>
+        <p>「雪でないよ、あすこへだけ降るはずがないんだもの」</p>
+        <p>子熊はまた言った。</p>
+        <p>「だから溶けないで残ったのでしょう」</p>
+        <p>「いいえ、おっかさんはあざみの芽を見に昨日あすこを通ったばかりです」</p>
+        <p><persName ref="#kojuro">小十郎</persName>もじっとそっちを見た。</p>
+        <p>月の光が青じろく山の斜面を滑っていた。そこがちょうど銀の<ruby><rb>鎧</rb><rt>よろい</rt></ruby>のように光っているのだった。しばらくたって子熊が言った。</p>
+        <p>「雪でなけぁ霜だねえ。きっとそうだ」</p>
+        <p>ほんとうに今夜は霜が降るぞ、お月さまの近くで<ruby><rb>胃</rb><rt>コキエ</rt></ruby>もあんなに青くふるえているし第一お月さまのいろだってまるで氷のようだ、<persName ref="#kojuro">小十郎</persName>がひとりで思った。</p>
+        <p>「おかあさまはわかったよ、あれねえ、ひきざくらの花」</p>
+        <p>「なぁんだ、ひきざくらの花だい。僕知ってるよ」</p>
+        <p>「いいえ、お前まだ見たことありません」</p>
+        <p>「知ってるよ、僕この前とって来たもの」</p>
+        <p>「いいえ、あれひきざくらでありません、お前とって来たのきささげの花でしょう」</p>
+        <p>「そうだろうか」子熊はとぼけたように答えました。<persName ref="#kojuro">小十郎</persName>はなぜかもう胸がいっぱいになってもう一ぺん向うの谷の白い雪のような花と余念なく月光をあびて立っている母子の熊をちらっと見てそれから音をたてないようにこっそりこっそり戻りはじめた。風があっちへ行くな行くなと思いながらそろそろと<persName ref="#kojuro">小十郎</persName>は<ruby><rb>後退</rb><rt>あとずさ</rt></ruby>りした。くろもじの木の<ruby><rb>匂</rb><rt>におい</rt></ruby>が月のあかりといっしょにすうっとさした。</p>
+        <p>ところがこの豪儀な<persName ref="#kojuro">小十郎</persName>がまちへ熊の皮と<ruby><rb>胆</rb><rt>きも</rt></ruby>を売りに行くときのみじめさといったら全く気の毒だった。</p>
+        <p>町の中ほどに大きな荒物屋があって<ruby><rb>笊</rb><rt>ざる</rt></ruby>だの砂糖だの<ruby><rb>砥石</rb><rt>といし</rt></ruby>だの<ruby><rb>金天狗</rb><rt>きんてんぐ</rt></ruby>やカメレオン印の<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>だのそれから<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>の<ruby><rb>蠅</rb><rt>はえ</rt></ruby>とりまでならべていたのだ。<persName ref="#kojuro">小十郎</persName>が山のように毛皮をしょってそこのしきいを一足またぐと店では又来たかというようにうすわらっているのだった。店の次の間に大きな<ruby><rb>唐金</rb><rt>からかね</rt></ruby>の<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>を出して主人がどっかり座っていた。</p>
+        <p>「<ruby><rb>旦那</rb><rt>だんな</rt></ruby>さん、<ruby><rb>先</rb><rt>せん</rt></ruby>ころはどうもありがどうごあんした」</p>
+        <p>あの山では主のような<persName ref="#kojuro">小十郎</persName>は毛皮の荷物を横におろして<ruby><rb>叮</rb><rt>てい</rt></ruby>ねいに敷板に手をついて言うのだった。</p>
+        <p>「はあ、どうも、今日は何のご用です」</p>
+        <p>「熊の皮また少し持って来たます」</p>
+        <p>「熊の皮か。この前のもまだあのまましまってあるし今日ぁまんついいます」</p>
+        <p>「旦那さん、そう言わなぃでどうか買って<ruby><rb>呉</rb><rt>く</rt></ruby>んなさぃ。安くてもいいます」</p>
+        <p>「なんぼ安くても要らなぃます」主人は落ち着きはらってきせるをたんたんとてのひらへたたくのだ、あの豪気な山の中の主の<persName ref="#kojuro">小十郎</persName>はこう言われるたびにもうまるで心配そうに顔をしかめた。何せ<persName ref="#kojuro">小十郎</persName>のとこでは山には<ruby><rb>栗</rb><rt>くり</rt></ruby>があったしうしろのまるで少しの畑からは<ruby><rb>稗</rb><rt>ひえ</rt></ruby>がとれるのではあったが米などは少しもできず<ruby><rb>味噌</rb><rt>みそ</rt></ruby>もなかったから九十になるとしよりと子供ばかりの七人家内にもって行く米はごくわずかずつでも要ったのだ。</p>
+        <p>里の方のものなら麻もつくったけれども、<persName ref="#kojuro">小十郎</persName>のとこではわずか<ruby><rb>藤</rb><rt>ふじ</rt></ruby>つるで編む入れ物の外に布にするようなものはなんにも出来なかったのだ。<persName ref="#kojuro">小十郎</persName>はしばらくたってからまるでしわがれたような声で言ったもんだ。</p>
+        <p>「旦那さん、お願だます。どうが何ぼでもいいはんて買って<ruby><rb>呉</rb><rt>く</rt></ruby>なぃ」<persName ref="#kojuro">小十郎</persName>はそう言いながら改めておじぎさえしたもんだ。</p>
+        <p>主人はだまってしばらくけむりを吐いてから顔の少しでにかにか笑うのをそっとかくして言ったもんだ。</p>
+        <p>「いいます。置いでお出れ。じゃ、<persName ref="#heisuke">平助</persName>、<persName ref="#kojuro">小十郎</persName>さんさ二円あげろじゃ」</p>
+        <p>店の<persName ref="#heisuke">平助</persName>が大きな銀貨を四枚<persName ref="#kojuro">小十郎</persName>の前へ座って出した。<persName ref="#kojuro">小十郎</persName>はそれを押しいただくようにしてにかにかしながら受け取った。それから主人はこんどはだんだん機嫌がよくなる。</p>
+        <p>「じゃ、<persName ref="#okino">おきの</persName>、<persName ref="#kojuro">小十郎</persName>さんさ一杯あげろ」</p>
+        <p><persName ref="#kojuro">小十郎</persName>はこのころはもううれしくてわくわくしている。主人はゆっくりいろいろ<ruby><rb>談</rb><rt>はな</rt></ruby>す。<persName ref="#kojuro">小十郎</persName>はかしこまって山のもようや何か申しあげている。間もなく台所の方からお<ruby><rb>膳</rb><rt>ぜん</rt></ruby>できたと知らせる。<persName ref="#kojuro">小十郎</persName>は半分辞退するけれども結局台所のとこへ引っぱられてってまた叮寧な<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>をしている。</p>
+        <p>間もなく塩引の<ruby><rb>鮭</rb><rt>さけ</rt></ruby>の刺身やいかの切り込みなどと酒が一本黒い小さな膳にのって来る。</p>
+        <p><persName ref="#kojuro">小十郎</persName>はちゃんとかしこまってそこへ腰掛けていかの切り込みを手の甲にのせてべろりとなめたりうやうやしく黄いろな酒を小さな<ruby><rb>猪口</rb><rt>ちょこ</rt></ruby>についだりしている。いくら物価の安いときだって熊の毛皮二枚で二円はあんまり安いと<ruby><rb>誰</rb><rt>たれ</rt></ruby>でも思う。実に安いしあんまり安いことは<persName ref="#kojuro">小十郎</persName>でも知っている。けれどもどうして<persName ref="#kojuro">小十郎</persName>はそんな町の荒物屋なんかへでなしにほかの人へどしどし売れないか。それはなぜか大ていの人にはわからない。けれども<placeName ref="#nihon">日本</placeName>では<ruby><rb>狐</rb><rt>きつね</rt></ruby>けんというものもあって狐は猟師に負け猟師は旦那に負けるときまっている。ここでは熊は<persName ref="#kojuro">小十郎</persName>にやられ<persName ref="#kojuro">小十郎</persName>が旦那にやられる。旦那は町のみんなの中にいるからなかなか熊に食われない。けれどもこんないやなずるいやつらは世界がだんだん進歩するとひとりで消えてなくなっていく。僕はしばらくの間でもあんな立派な<persName ref="#kojuro">小十郎</persName>が二度とつらも見たくないようないやなやつにうまくやられることを書いたのが実にしゃくにさわってたまらない。</p>
+        <p>こんなふうだったから<persName ref="#kojuro">小十郎</persName>は熊どもは殺してはいても決してそれを憎んではいなかったのだ。ところがある年の夏こんなようなおかしなことが起ったのだ。</p>
+        <p><persName ref="#kojuro">小十郎</persName>が谷をばちゃばちゃ<ruby><rb>渉</rb><rt>わた</rt></ruby>って一つの岩にのぼったらいきなりすぐ前の木に大きな熊が<ruby><rb>猫</rb><rt>ねこ</rt></ruby>のようにせなかを円くしてよじ登っているのを見た。<persName ref="#kojuro">小十郎</persName>はすぐ鉄砲をつきつけた。犬はもう<ruby><rb>大悦</rb><rt>おおよろこ</rt></ruby>びで木の下に行って木のまわりを<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく<ruby><rb>馳</rb><rt>は</rt></ruby>せめぐった。</p>
+        <p>すると樹の上の熊はしばらくの間おりて<persName ref="#kojuro">小十郎</persName>に飛びかかろうかそのまま<ruby><rb>射</rb><rt>う</rt></ruby>たれてやろうか思案しているらしかったがいきなり両手を樹からはなしてどたりと落ちて来たのだ。<persName ref="#kojuro">小十郎</persName>は油断なく銃を構えて打つばかりにして近寄って行ったら熊は両手をあげて叫んだ。</p>
+        <p>「おまえは何がほしくておれを殺すんだ」</p>
+        <p>「ああ、おれはお前の毛皮と、<ruby><rb>胆</rb><rt>きも</rt></ruby>のほかにはなんにもいらない。それも町へ持って行ってひどく高く売れるというのではないしほんとうに気の毒だけれどもやっぱり仕方ない。けれどもお前に今ごろそんなことを言われるともうおれなどは何か栗かしだのみでも食っていてそれで死ぬならおれも死んでもいいような気がするよ」</p>
+        <p>「もう二年ばかり待ってくれ、おれも死ぬのはもうかまわないようなもんだけれども少しし残した仕事もあるしただ二年だけ待ってくれ。二年目にはおれもおまえの家の前でちゃんと死んでいてやるから。毛皮も胃袋もやってしまうから」</p>
+        <p><persName ref="#kojuro">小十郎</persName>は変な気がしてじっと考えて立ってしまいました。熊はそのひまに足うらを全体地面につけてごくゆっくりと歩き出した。<persName ref="#kojuro">小十郎</persName>はやっぱりぼんやり立っていた。熊はもう<persName ref="#kojuro">小十郎</persName>がいきなりうしろから鉄砲を射ったり決してしないことがよくわかってるというふうでうしろも見ないでゆっくりゆっくり歩いて行った。そしてその広い赤黒いせなかが木の枝の間から落ちた日光にちらっと光ったとき<persName ref="#kojuro">小十郎</persName>は、う、うとせつなそうにうなって谷をわたって帰りはじめた。それからちょうど二年目だったがある朝<persName ref="#kojuro">小十郎</persName>があんまり風が烈しくて木もかきねも倒れたろうと思って外へ出たらひのきのかきねはいつものようにかわりなくその下のところに始終見たことのある赤黒いものが横になっているのでした。ちょうど二年目だしあの熊がやって来るかと少し心配するようにしていたときでしたから<persName ref="#kojuro">小十郎</persName>はどきっとしてしまいました。そばに寄って見ましたらちゃんとあのこの前の熊が口からいっぱいに血を吐いて倒れていた。<persName ref="#kojuro">小十郎</persName>は思わず拝むようにした。</p>
+        <p><date when="--01">一月</date>のある日のことだった。<persName ref="#kojuro">小十郎</persName>は朝うちを出るときいままで言ったことのないことを言った。</p>
+        <p>「<ruby><rb>婆</rb><rt>ば</rt></ruby>さま、おれも年<ruby><rb>老</rb><rt>と</rt></ruby>ったでばな、今朝まず生れで始めで水へ入るの<ruby><rb>嫌</rb><rt>や</rt></ruby>んたよな気するじゃ」</p>
+        <p>すると縁側の日なたで糸を紡いでいた九十になる<persName ref="#kojuro">小十郎</persName>の母はその見えないような眼をあげてちょっと<persName ref="#kojuro">小十郎</persName>を見て何か笑うか泣くかするような顔つきをした。<persName ref="#kojuro">小十郎</persName>はわらじを結えてうんとこさと立ちあがって出かけた。子供らはかわるがわる<ruby><rb>厩</rb><rt>うまや</rt></ruby>の前から顔を出して「<ruby><rb>爺</rb><rt>じ</rt></ruby>さん、早ぐお<ruby><rb>出</rb><rt>で</rt></ruby>や」と言って笑った。<persName ref="#kojuro">小十郎</persName>はまっ青なつるつるした空を見あげてそれから孫たちの方を向いて「行って来るじゃぃ」と言った。</p>
+        <p><persName ref="#kojuro">小十郎</persName>はまっ白な堅雪の上を<placeName ref="#shirasawa">白沢</placeName>の方へのぼって行った。</p>
+        <p>犬はもう息をはあはあし赤い舌を出しながら走ってはとまり走ってはとまりして行った。間もなく<persName ref="#kojuro">小十郎</persName>の影は丘の向うへ沈んで見えなくなってしまい子供らは<ruby><rb>稗</rb><rt>ひえ</rt></ruby>の<ruby><rb>藁</rb><rt>わら</rt></ruby>でふじつきをして遊んだ。</p>
+        <p><persName ref="#kojuro">小十郎</persName>は<placeName ref="#shirasawa">白沢</placeName>の岸を<ruby><rb>溯</rb><rt>のぼ</rt></ruby>って行った。水はまっ青に<ruby><rb>淵</rb><rt>ふち</rt></ruby>になったり<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>板をしいたように凍ったりつららが何本も何本もじゅずのようになってかかったりそして両岸からは赤と黄いろのまゆみの実が花が咲いたようにのぞいたりした。<persName ref="#kojuro">小十郎</persName>は自分と犬との影法師がちらちら光り<ruby><rb>樺</rb><rt>かば</rt></ruby>の幹の影といっしょに雪にかっきり<ruby><rb>藍</rb><rt>あい</rt></ruby>いろの影になってうごくのを見ながら溯って行った。</p>
+        <p><placeName ref="#shirasawa">白沢</placeName>から峯を一つ越えたとこに一疋の大きなやつが<ruby><rb>棲</rb><rt>す</rt></ruby>んでいたのを夏のうちにたずねておいたのだ。</p>
+        <p><persName ref="#kojuro">小十郎</persName>は谷に入って来る小さな支流を五つ越えて何べんも何べんも右から左左から右へ水をわたって溯って行った。そこに小さな滝があった。<persName ref="#kojuro">小十郎</persName>はその滝のすぐ下から長根の方へかけてのぼりはじめた。雪はあんまりまばゆくて燃えているくらい。<persName ref="#kojuro">小十郎</persName>は眼がすっかり紫の<ruby><rb>眼鏡</rb><rt>めがね</rt></ruby>をかけたような気がして登って行った。犬はやっぱりそんな<ruby><rb>崖</rb><rt>がけ</rt></ruby>でも負けないというようにたびたび滑りそうになりながら雪にかじりついて登ったのだ。やっと崖を登りきったらそこはまばらに栗の木の生えたごくゆるい斜面の平らで雪はまるで寒水石という風にギラギラ光っていたしまわりをずうっと高い雪のみねがにょきにょきつったっていた。<persName ref="#kojuro">小十郎</persName>がその頂上でやすんでいたときだ。いきなり犬が火のついたように<ruby><rb>咆</rb><rt>ほ</rt></ruby>え出した。<persName ref="#kojuro">小十郎</persName>がびっくりしてうしろを見たらあの夏に眼をつけておいた大きな熊が両足で立ってこっちへかかって来たのだ。</p>
+        <p><persName ref="#kojuro">小十郎</persName>は落ちついて足をふんばって鉄砲を構えた。熊は棒のような両手をびっこにあげてまっすぐに走って来た。さすがの<persName ref="#kojuro">小十郎</persName>もちょっと顔いろを変えた。</p>
+        <p>ぴしゃというように鉄砲の音が<persName ref="#kojuro">小十郎</persName>に聞えた。ところが熊は少しも倒れないで<ruby><rb>嵐</rb><rt>あらし</rt></ruby>のように黒くゆらいでやって来たようだった。犬がその足もとに<ruby><rb>噛</rb><rt>か</rt></ruby>み付いた。と思うと<persName ref="#kojuro">小十郎</persName>はがあんと頭が鳴ってまわりがいちめんまっ青になった。それから遠くでこう言うことばを聞いた。</p>
+        <p>「おお<persName ref="#kojuro">小十郎</persName>おまえを殺すつもりはなかった」</p>
+        <p>もうおれは死んだと<persName ref="#kojuro">小十郎</persName>は思った。そしてちらちらちらちら青い星のような光がそこらいちめんに見えた。</p>
+        <p>「これが死んだしるしだ。死ぬとき見る火だ。熊ども、ゆるせよ」と<persName ref="#kojuro">小十郎</persName>は思った。それからあとの<persName ref="#kojuro">小十郎</persName>の心持はもう私にはわからない。</p>
+        <p>とにかくそれから三日目の晩だった。まるで氷の玉のような月がそらにかかっていた。雪は青白く明るく水は<ruby><rb>燐光</rb><rt>りんこう</rt></ruby>をあげた。すばるや<ruby><rb>参</rb><rt>しん</rt></ruby>の星が緑や<ruby><rb>橙</rb><rt>だいだい</rt></ruby>にちらちらして呼吸をするように見えた。</p>
+        <p>その栗の木と白い雪の峯々にかこまれた山の上の平らに黒い大きなものがたくさん<ruby><rb>環</rb><rt>わ</rt></ruby>になって集って各々黒い影を置き<ruby><rb>回々</rb><rt>フイフイ</rt></ruby>教徒の祈るときのようにじっと雪にひれふしたままいつまでもいつまでも動かなかった。そしてその雪と月のあかりで見るといちばん高いとこに<persName ref="#kojuro">小十郎</persName>の<ruby><rb>死骸</rb><rt>しがい</rt></ruby>が半分座ったようになって置かれていた。</p>
+        <p>思いなしかその死んで凍えてしまった<persName ref="#kojuro">小十郎</persName>の顔はまるで生きてるときのように<ruby><rb>冴</rb><rt>さ</rt></ruby>え<ruby><rb>冴</rb><rt>ざ</rt></ruby>えして何か笑っているようにさえ見えたのだ。ほんとうにそれらの大きな黒いものは参の星が天のまん中に来てももっと西へ傾いてもじっと化石したようにうごかなかった。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>河童</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>河童</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「河童・或る阿呆の一生」旺文社文庫、旺文社。1966（昭和41）年10月20日初版発行。1984（昭和59）年重版発行。初出：「改造」。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card69.html">https://www.aozora.gr.jp/cards/000879/card69.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="tock">
+        <persName>トック</persName>
+        <note>河童の詩人。自由恋愛家で超人倶楽部の会員。ピストルで自殺する</note>
+      </person>
+      <person xml:id="gehr">
+        <persName>ゲエル</persName>
+        <note>硝子会社の社長。河童国の資本家中の資本家</note>
+      </person>
+      <person xml:id="gehr-fujin">
+        <persName>ゲエル夫人</persName>
+        <note>ゲエルの妻。クオラックス内閣を実質支配しているとゲエル自身が語る</note>
+      </person>
+      <person xml:id="mag">
+        <persName>マッグ</persName>
+        <note>河童の哲学者。「阿呆の言葉」の著者。トックの隣に住む</note>
+      </person>
+      <person xml:id="crabach">
+        <persName>クラバック</persName>
+        <note>河童の作曲家。この国の生んだ音楽家中、前後に比類のない天才とされる</note>
+      </person>
+      <person xml:id="lap">
+        <persName>ラップ</persName>
+        <note>河童の学生。嘴が腐って落ちる。「僕」の親友</note>
+      </person>
+      <person xml:id="chack">
+        <persName>チャック</persName>
+        <note>鼻目金をかけた河童の医者。「僕」を治療し隣家に住む</note>
+      </person>
+      <person xml:id="bag">
+        <persName>バッグ</persName>
+        <note>河童の漁夫。「僕」が最初に見かけた河童</note>
+      </person>
+      <person xml:id="pep">
+        <persName>ペップ</persName>
+        <note>河童の裁判官。後に職を失い発狂する</note>
+      </person>
+      <person xml:id="rock">
+        <persName>ロック</persName>
+        <note>河童の音楽家。クラバックとたびたび比べられる好敵手</note>
+      </person>
+      <person xml:id="loppe">
+        <persName>ロッペ</persName>
+        <note>河童の政治家。クオラックス党を支配する</note>
+      </person>
+      <person xml:id="quiqui">
+        <persName>クイクイ</persName>
+        <note>プウ・フウ新聞の社長。ゲエルの後援を受けている</note>
+      </person>
+      <person xml:id="gluck">
+        <persName>グルック</persName>
+        <note>万年筆を盗んだ罪で取り調べられる河童の元郵便配達夫(作曲家グルックではない)</note>
+      </person>
+      <person xml:id="peck">
+        <persName>ペック</persName>
+        <note>心霊学協会会長。トックの心霊との交霊会を主宰する</note>
+      </person>
+      <person xml:id="hop-fujin">
+        <persName>ホップ夫人</persName>
+        <note>交霊会のメディアム(霊媒)。元女優</note>
+      </person>
+      <person xml:id="lack-kun">
+        <persName>ラック君</persName>
+        <note>河童の書肆(書店主)。トックの旧友の雌の河童を妻とする</note>
+      </person>
+      <person xml:id="venus">
+        <persName>ヴェヌス</persName>
+        <note>ウェヌス(ヴィーナス)。生活教の寺院に黒い像として置かれる(神話上の存在)</note>
+      </person>
+      <person xml:id="wagner">
+        <persName>ワグネル</persName>
+        <note>リヒャルト・ワーグナー(1813–1883)。生活教の聖徒のひとりとして言及</note>
+      </person>
+      <person xml:id="nietzsche">
+        <persName>ニイチェ</persName>
+        <note>フリードリヒ・ニーチェ(1844–1900)。生活教の聖徒のひとりとして言及</note>
+      </person>
+      <person xml:id="zarathustra">
+        <persName>ツァラトストラ</persName>
+        <note>ツァラトゥストラ。ニーチェ「ツァラトゥストラはかく語りき」の主人公(伝説上の存在)</note>
+      </person>
+      <person xml:id="tolstoy">
+        <persName>トルストイ</persName>
+        <note>レフ・トルストイ(1828–1910)。生活教の聖徒のひとりとして言及</note>
+      </person>
+      <person xml:id="strindberg">
+        <persName>ストリントベリイ</persName>
+        <note>アウグスト・ストリンドベリ(1849–1912)。生活教の聖徒のひとりとして言及</note>
+      </person>
+      <person xml:id="swedenborg">
+        <persName>スウェデンボルグ</persName>
+        <note>エマヌエル・スヴェーデンボリ(1688–1772)。ストリンドベリを救ったとされる哲学の人として言及</note>
+      </person>
+      <person xml:id="kunikida-doppo">
+        <persName>国木田独歩</persName>
+        <note>国木田独歩(1871–1908)。生活教の聖徒のひとり。半身像として第四の龕に置かれる</note>
+      </person>
+      <person xml:id="yanagita-kunio">
+        <persName>柳田国男</persName>
+        <note>柳田国男(1875–1962)。民俗学者。「山島民譚集」の著者として言及される</note>
+      </person>
+      <person xml:id="goethe">
+        <persName>ゲエテ</persName>
+        <note>ヨハン・ヴォルフガング・フォン・ゲーテ(1749–1832)。「ミニヨンの歌」の作者として言及</note>
+      </person>
+      <person xml:id="baudelaire">
+        <persName>ボオドレエル</persName>
+        <note>シャルル・ボードレール(1821–1867)。「阿呆の言葉」中の言及</note>
+      </person>
+      <person xml:id="voltaire">
+        <persName>ヴォルテエル</persName>
+        <note>ヴォルテール(1694–1778)。「阿呆の言葉」中の言及</note>
+      </person>
+      <person xml:id="schopenhauer">
+        <persName>ショオペンハウエル</persName>
+        <note>アルトゥル・ショーペンハウアー(1788–1860)。トックの心霊が「自殺せざりし厭世主義者」として挙げる</note>
+      </person>
+      <person xml:id="montaigne">
+        <persName>モンテェニュ</persName>
+        <note>ミシェル・ド・モンテーニュ(1533–1592)。自殺を弁護した「畏友」としてトックの心霊が挙げる</note>
+      </person>
+      <person xml:id="kleist">
+        <persName>クライスト</persName>
+        <note>ハインリヒ・フォン・クライスト(1777–1811)。自殺した著名人としてトックの心霊が挙げる</note>
+      </person>
+      <person xml:id="mainlander">
+        <persName>マインレンデル</persName>
+        <note>フィリップ・マインレンダー(1841–1876)。自殺した著名人としてトックの心霊が挙げる</note>
+      </person>
+      <person xml:id="weininger">
+        <persName>ワイニンゲル</persName>
+        <note>オットー・ヴァイニンガー(1880–1903)。自殺した著名人としてトックの心霊が挙げる</note>
+      </person>
+      <person xml:id="bismarck">
+        <persName>ビスマルク</persName>
+        <note>オットー・フォン・ビスマルク(1815–1898)。「正直は最良の外交である」の言として引かれる</note>
+      </person>
+      <person xml:id="napoleon">
+        <persName>ナポレオン</persName>
+        <note>ナポレオン・ボナパルト(1769–1821)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="confucius">
+        <persName>孔子</persName>
+        <note>孔子(前551–前479)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="dostoevsky">
+        <persName>ドストエフスキイ</persName>
+        <note>フョードル・ドストエフスキー(1821–1881)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="darwin">
+        <persName>ダアウィン</persName>
+        <note>チャールズ・ダーウィン(1809–1882)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="cleopatra">
+        <persName>クレオパトラ</persName>
+        <note>クレオパトラ7世(前69–前30)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="shaka">
+        <persName>釈迦</persName>
+        <note>釈迦(宗教上の存在)。交霊会で消息を問われた心霊のひとり。トックの詩では「仏陀」と表記される</note>
+      </person>
+      <person xml:id="demosthenes">
+        <persName>デモステネス</persName>
+        <note>デモステネス(前384–前322)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="dante">
+        <persName>ダンテ</persName>
+        <note>ダンテ・アリギエーリ(1265–1321)。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+      <person xml:id="sen-no-rikyu">
+        <persName>千の利休</persName>
+        <note>千利休(1522–1591)。底本の表記は「千の利休」。交霊会で消息を問われた心霊のひとり</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kamikochi">
+        <placeName>上高地</placeName>
+        <location><geo>36.25 137.635</geo></location>
+        <note>長野県松本市の上高地。「僕」が温泉宿から穂高山へ向かう出発点・概値</note>
+      </place>
+      <place xml:id="hotakayama">
+        <placeName>穂高山</placeName>
+        <location><geo>36.2892 137.6481</geo></location>
+        <note>穂高岳(奥穂高岳)。概値</note>
+      </place>
+      <place xml:id="yarigatake">
+        <placeName>槍ヶ岳</placeName>
+        <location><geo>36.3419 137.6475</geo></location>
+        <note>槍ヶ岳(長野・岐阜県境)。概値</note>
+      </place>
+      <place xml:id="azusagawa">
+        <placeName>梓川</placeName>
+        <location><geo>36.25 137.64</geo></location>
+        <note>梓川。上高地の谷を流れる川。上高地付近を代表点とする概値(線状の地物)</note>
+      </place>
+      <place xml:id="kappabashi">
+        <placeName>河童橋</placeName>
+        <location><geo>36.2504 137.6369</geo></location>
+        <note>上高地の河童橋。作品題名と響き合う実在の橋・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京(底本の表記は「東京市」とも)。東京駅付近を代表点とする概値</note>
+      </place>
+      <place xml:id="ginza">
+        <placeName>銀座通り</placeName>
+        <location><geo>35.6717 139.765</geo></location>
+        <note>東京・銀座の銀座通り(中央通り)。河童の国の町並みの比喩として言及。銀座四丁目交差点付近を代表点とする概値</note>
+      </place>
+      <place xml:id="nikolai-do">
+        <placeName>ニコライ堂</placeName>
+        <location><geo>35.6989 139.7628</geo></location>
+        <note>ニコライ堂(東京復活大聖堂、千代田区神田駿河台)。生活教の大寺院の大きさの比喩として言及・概値</note>
+      </place>
+      <place xml:id="saigoku">
+        <placeName>西国</placeName>
+        <location><geo>34.0 132.5</geo></location>
+        <note>西国(西日本、近畿以西)。「西国の河童は緑色」という民俗学上の記録への言及。地域名・概値</note>
+      </place>
+      <place xml:id="tohoku">
+        <placeName>東北</placeName>
+        <location><geo>39.5 140.5</geo></location>
+        <note>東北地方。「東北の河童は赤い」という民俗学上の記録への言及。地域名・概値</note>
+      </place>
+      <place xml:id="france">
+        <placeName>仏蘭西</placeName>
+        <location><geo>46.6 2.5</geo></location>
+        <note>フランス。国名・概値。生活教の聖徒である「仏蘭西の画家」(ゴーガン)への言及</note>
+      </place>
+      <place xml:id="persia">
+        <placeName>ペルシア</placeName>
+        <location><geo>32.0 53.0</geo></location>
+        <note>ペルシア(現イラン)。クラバック邸の骨董「ペルシアの陶器」の産地として言及。地域名・概値</note>
+      </place>
+      <place xml:id="tanagra">
+        <placeName>タナグラ</placeName>
+        <location><geo>38.3167 23.5333</geo></location>
+        <note>タナグラ(ギリシア・ボイオティア)。テラコッタ人形「タナグラの人形」の産地として言及・概値</note>
+      </place>
+      <place xml:id="tahiti">
+        <placeName>クイティ</placeName>
+        <location><geo>-17.6509 -149.426</geo></location>
+        <note>底本(旺文社文庫)の表記「クイティ」。「タイティ」(タヒチ)の異表記とみられる。聖徒ストリントベリイの友(=ゴーガン)が娶った女の出自として言及。タヒチ島を代表点とする概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>序</head>
+        <p>これはある精神病院の患者、――第二十三号がだれにでもしゃべる話である。彼はもう三十を越しているであろう。が、一見したところはいかにも若々しい狂人である。彼の半生の経験は、――いや、そんなことはどうでもよい。彼はただじっと<ruby><rb>両膝</rb><rt>りょうひざ</rt></ruby>をかかえ、時々窓の外へ目をやりながら、（<ruby><rb>鉄格子</rb><rt>てつごうし</rt></ruby>をはめた窓の外には枯れ葉さえ見えない<ruby><rb>樫</rb><rt>かし</rt></ruby>の木が一本、雪曇りの空に枝を張っていた。）院長のＳ博士や僕を相手に長々とこの話をしゃべりつづけた。もっとも身ぶりはしなかったわけではない。彼はたとえば「驚いた」と言う時には急に顔をのけぞらせたりした。……</p>
+        <p>僕はこういう彼の話をかなり正確に写したつもりである。もしまただれか僕の筆記に飽き足りない人があるとすれば、<placeName ref="#tokyo">東京市</placeName>外××村のＳ精神病院を尋ねてみるがよい。年よりも若い第二十三号はまず<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>に頭を下げ、<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>のない<ruby><rb>椅子</rb><rt>いす</rt></ruby>を指さすであろう。それから<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>な微笑を浮かべ、静かにこの話を繰り返すであろう。最後に、――僕はこの話を終わった時の彼の顔色を覚えている。彼は最後に身を起こすが早いか、たちまち<ruby><rb>拳骨</rb><rt>げんこつ</rt></ruby>をふりまわしながら、だれにでもこう<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>りつけるであろう。――「出て行け！　この悪党めが！　貴様も<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>な、<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>深い、<ruby><rb>猥褻</rb><rt>わいせつ</rt></ruby>な、ずうずうしい、うぬぼれきった、残酷な、虫のいい動物なんだろう。出ていけ！　この悪党めが！」</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>一</head>
+        <p>三年<ruby><rb>前</rb><rt>まえ</rt></ruby>の夏のことです。僕は人並みにリュック・サックを背負い、あの<placeName ref="#kamikochi"><ruby><rb>上高地</rb><rt>かみこうち</rt></ruby></placeName>の温泉<ruby><rb>宿</rb><rt>やど</rt></ruby>から<placeName ref="#hotakayama"><ruby><rb>穂高山</rb><rt>ほたかやま</rt></ruby></placeName>へ登ろうとしました。<placeName ref="#hotakayama">穂高山</placeName>へ登るのには御承知のとおり<placeName ref="#azusagawa"><ruby><rb>梓川</rb><rt>あずさがわ</rt></ruby></placeName>をさかのぼるほかはありません。僕は前に<placeName ref="#hotakayama">穂高山</placeName>はもちろん、<placeName ref="#yarigatake"><ruby><rb>槍</rb><rt>やり</rt></ruby>ヶ<ruby><rb>岳</rb><rt>たけ</rt></ruby></placeName>にも登っていましたから、朝霧の<ruby><rb>下</rb><rt>お</rt></ruby>りた<placeName ref="#azusagawa">梓川</placeName>の谷を案内者もつれずに登ってゆきました。朝霧の下りた<placeName ref="#azusagawa">梓川</placeName>の谷を――しかしその霧はいつまでたっても晴れる<ruby><rb>景色</rb><rt>けしき</rt></ruby>は見えません。のみならずかえって深くなるのです。僕は一時間ばかり歩いた<ruby><rb>後</rb><rt>のち</rt></ruby>、一度は<placeName ref="#kamikochi">上高地</placeName>の温泉宿へ引き返すことにしようかと思いました。けれども<placeName ref="#kamikochi">上高地</placeName>へ引き返すにしても、とにかく霧の晴れるのを待った上にしなければなりません。といって霧は一刻ごとにずんずん深くなるばかりなのです。「ええ、いっそ登ってしまえ。」――僕はこう考えましたから、<placeName ref="#azusagawa">梓川</placeName>の谷を離れないように<ruby><rb>熊笹</rb><rt>くまざさ</rt></ruby>の中を分けてゆきました。</p>
+        <p>しかし僕の目をさえぎるものはやはり深い霧ばかりです。もっとも時々霧の中から太い<ruby><rb>毛生欅</rb><rt>ぶな</rt></ruby>や<ruby><rb>樅</rb><rt>もみ</rt></ruby>の枝が青あおと葉を<ruby><rb>垂</rb><rt>た</rt></ruby>らしたのも見えなかったわけではありません。それからまた放牧の馬や牛も突然僕の前へ顔を出しました。けれどもそれらは見えたと思うと、たちまち<ruby><rb>濛々</rb><rt>もうもう</rt></ruby>とした霧の中に隠れてしまうのです。そのうちに足もくたびれてくれば、腹もだんだん減りはじめる、――おまけに霧にぬれ<ruby><rb>透</rb><rt>とお</rt></ruby>った登山服や毛布なども並みたいていの重さではありません。僕はとうとう<ruby><rb>我</rb><rt>が</rt></ruby>を折りましたから、岩にせかれている水の音をたよりに<placeName ref="#azusagawa">梓川</placeName>の谷へ<ruby><rb>下</rb><rt>お</rt></ruby>りることにしました。</p>
+        <p>僕は水ぎわの岩に腰かけ、とりあえず食事にとりかかりました。コオンド・ビイフの<ruby><rb>罐</rb><rt>かん</rt></ruby>を切ったり、枯れ枝を集めて火をつけたり、――そんなことをしているうちにかれこれ十分はたったでしょう。その<ruby><rb>間</rb><rt>あいだ</rt></ruby>にどこまでも意地の悪い霧はいつかほのぼのと晴れかかりました。僕はパンをかじりながら、ちょっと腕<ruby><rb>時計</rb><rt>どけい</rt></ruby>をのぞいてみました。時刻はもう一時二十分過ぎです。が、それよりも驚いたのは何か気味の悪い顔が一つ、<ruby><rb>円</rb><rt>まる</rt></ruby>い腕時計の<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>の上へちらりと影を落としたことです。僕は驚いてふり返りました。すると、――僕が<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>というものを見たのは実にこの時がはじめてだったのです。僕の後ろにある岩の上には<ruby><rb>画</rb><rt>え</rt></ruby>にあるとおりの河童が一匹、片手は<ruby><rb>白樺</rb><rt>しらかば</rt></ruby>の幹を<ruby><rb>抱</rb><rt>かか</rt></ruby>え、片手は目の上にかざしたなり、珍しそうに僕を見おろしていました。</p>
+        <p>僕は<ruby><rb>呆</rb><rt>あ</rt></ruby>っ<ruby><rb>気</rb><rt>け</rt></ruby>にとられたまま、しばらくは身動きもしずにいました。河童もやはり驚いたとみえ、目の上の手さえ動かしません。そのうちに僕は飛び立つが早いか、岩の上の河童へおどりかかりました。同時にまた河童も逃げ出しました。いや、おそらくは逃げ出したのでしょう。実はひらりと身をかわしたと思うと、たちまちどこかへ消えてしまったのです。僕はいよいよ驚きながら、<ruby><rb>熊笹</rb><rt>くまざさ</rt></ruby>の中を見まわしました。すると河童は逃げ腰をしたなり、二三メエトル隔たった向こうに僕を振り返って見ているのです。それは不思議でもなんでもありません。しかし僕に意外だったのは河童の<ruby><rb>体</rb><rt>からだ</rt></ruby>の色のことです。岩の上に僕を見ていた河童は一面に灰色を帯びていました。けれども今は体中すっかり緑いろに変わっているのです。僕は「畜生！」とおお声をあげ、もう一度<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>へ飛びかかりました。河童が逃げ出したのはもちろんです。それから僕は三十分ばかり、<ruby><rb>熊笹</rb><rt>くまざさ</rt></ruby>を突きぬけ、岩を飛び越え、<ruby><rb>遮二無二</rb><rt>しゃにむに</rt></ruby>河童を追いつづけました。</p>
+        <p>河童もまた足の早いことは決して<ruby><rb>猿</rb><rt>さる</rt></ruby>などに劣りません。僕は夢中になって追いかける<ruby><rb>間</rb><rt>あいだ</rt></ruby>に何度もその姿を見失おうとしました。のみならず足をすべらして<ruby><rb>転</rb><rt>ころ</rt></ruby>がったこともたびたびです。が、大きい<ruby><rb>橡</rb><rt>とち</rt></ruby>の木が一本、太ぶとと枝を張った下へ来ると、幸いにも放牧の牛が一匹、河童の<ruby><rb>往</rb><rt>ゆ</rt></ruby>く先へ立ちふさがりました。しかもそれは<ruby><rb>角</rb><rt>つの</rt></ruby>の太い、目を血走らせた<ruby><rb>牡牛</rb><rt>おうし</rt></ruby>なのです。河童はこの牡牛を見ると、何か悲鳴をあげながら、ひときわ高い熊笹の中へもんどりを打つように飛び込みました。僕は、――僕も「しめた」と思いましたから、いきなりそのあとへ追いすがりました。するとそこには僕の知らない穴でもあいていたのでしょう。僕は<ruby><rb>滑</rb><rt>なめ</rt></ruby>らかな河童の背中にやっと指先がさわったと思うと、たちまち深い<ruby><rb>闇</rb><rt>やみ</rt></ruby>の中へまっさかさまに転げ落ちました。が、我々人間の心はこういう危機一髪の際にも<ruby><rb>途方</rb><rt>とほう</rt></ruby>もないことを考えるものです。僕は「あっ」と思う拍子にあの<placeName ref="#kamikochi"><ruby><rb>上高地</rb><rt>かみこうち</rt></ruby></placeName>の温泉宿のそばに「<placeName ref="#kappabashi"><ruby><rb>河童橋</rb><rt>かっぱばし</rt></ruby></placeName>」という橋があるのを思い出しました。それから、――それから先のことは覚えていません。僕はただ目の前に<ruby><rb>稲妻</rb><rt>いなずま</rt></ruby>に似たものを感じたぎり、いつの<ruby><rb>間</rb><rt>ま</rt></ruby>にか<ruby><rb>正気</rb><rt>しょうき</rt></ruby>を失っていました。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>二</head>
+        <p>そのうちにやっと気がついてみると、僕は<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>けに倒れたまま、大勢の河童にとり囲まれていました。のみならず太い<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>の上に<ruby><rb>鼻目金</rb><rt>はなめがね</rt></ruby>をかけた河童が一匹、僕のそばへひざまずきながら、僕の胸へ聴診器を当てていました。その河童は僕が目をあいたのを見ると、僕に「静かに」という<ruby><rb>手真似</rb><rt>てまね</rt></ruby>をし、それからだれか後ろにいる河童へ Quax, quax と声をかけました。するとどこからか河童が二匹、<ruby><rb>担架</rb><rt>たんか</rt></ruby>を持って歩いてきました。僕はこの担架にのせられたまま、大勢の河童の群がった中を静かに何町か進んでゆきました。僕の両側に並んでいる町は少しも<placeName ref="#ginza">銀座通り</placeName>と違いありません。やはり<ruby><rb>毛生欅</rb><rt>ぶな</rt></ruby>の並み木のかげにいろいろの店が<ruby><rb>日除</rb><rt>ひよ</rt></ruby>けを並べ、そのまた並み木にはさまれた道を自動車が何台も走っているのです。</p>
+        <p>やがて僕を載せた担架は細い<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>を曲ったと思うと、ある<ruby><rb>家</rb><rt>うち</rt></ruby>の中へかつぎこまれました。それは<ruby><rb>後</rb><rt>のち</rt></ruby>に知ったところによれば、あの鼻目金をかけた河童の家、――<persName ref="#chack">チャック</persName>という医者の家だったのです。<persName ref="#chack">チャック</persName>は僕を小ぎれいなベッドの上へ寝かせました。それから何か透明な<ruby><rb>水薬</rb><rt>みずぐすり</rt></ruby>を一杯飲ませました。僕はベッドの上に横たわったなり、<persName ref="#chack">チャック</persName>のするままになっていました。実際また僕の<ruby><rb>体</rb><rt>からだ</rt></ruby>はろくに身動きもできないほど、<ruby><rb>節々</rb><rt>ふしぶし</rt></ruby>が痛んでいたのですから。</p>
+        <p><persName ref="#chack">チャック</persName>は一日に二三度は必ず僕を診察にきました。また三日に一度ぐらいは僕の最初に見かけた河童、――<persName ref="#bag">バッグ</persName>という<ruby><rb>漁夫</rb><rt>りょうし</rt></ruby>も尋ねてきました。河童は我々人間が河童のことを知っているよりもはるかに人間のことを知っています。それは我々人間が河童を捕獲することよりもずっと河童が人間を捕獲することが多いためでしょう。捕獲というのは当たらないまでも、我々人間は僕の前にもたびたび河童の国へ来ているのです。のみならず一生河童の国に住んでいたものも多かったのです。なぜと言ってごらんなさい。僕らはただ<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>ではない、人間であるという特権のために働かずに食っていられるのです。現に<persName ref="#bag">バッグ</persName>の話によれば、ある若い道路<ruby><rb>工夫</rb><rt>こうふ</rt></ruby>などはやはり偶然この国へ来た<ruby><rb>後</rb><rt>のち</rt></ruby>、<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童を妻にめとり、死ぬまで住んでいたということです。もっともそのまた雌の河童はこの国第一の美人だった上、夫の道路工夫をごまかすのにも妙をきわめていたということです。</p>
+        <p>僕は一週間ばかりたった後、この国の法律の定めるところにより、「特別保護住民」として<persName ref="#chack">チャック</persName>の隣に住むことになりました。僕の<ruby><rb>家</rb><rt>うち</rt></ruby>は小さい割にいかにも<ruby><rb>瀟洒</rb><rt>しょうしゃ</rt></ruby>とできあがっていました。もちろんこの国の文明は我々人間の国の文明――少なくとも日本の文明などとあまり大差はありません。往来に面した客間の<ruby><rb>隅</rb><rt>すみ</rt></ruby>には小さいピアノが一台あり、それからまた壁には<ruby><rb>額縁</rb><rt>がくぶち</rt></ruby>へ入れたエッティングなども<ruby><rb>懸</rb><rt>かか</rt></ruby>っていました。ただ<ruby><rb>肝腎</rb><rt>かんじん</rt></ruby>の家をはじめ、テエブルや<ruby><rb>椅子</rb><rt>いす</rt></ruby>の寸法も河童の身長に合わせてありますから、子どもの<ruby><rb>部屋</rb><rt>へや</rt></ruby>に入れられたようにそれだけは不便に思いました。</p>
+        <p>僕はいつも日暮れがたになると、この部屋に<persName ref="#chack">チャック</persName>や<persName ref="#bag">バッグ</persName>を迎え、河童の言葉を習いました。いや、彼らばかりではありません。特別保護住民だった僕にだれも皆好奇心を持っていましたから、毎日血圧を調べてもらいに、わざわざ<persName ref="#chack">チャック</persName>を呼び寄せる<persName ref="#gehr">ゲエル</persName>という<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長などもやはりこの部屋へ顔を出したものです。しかし最初の半月ほどの間に一番僕と親しくしたのはやはりあの<persName ref="#bag">バッグ</persName>という<ruby><rb>漁夫</rb><rt>りょうし</rt></ruby>だったのです。</p>
+        <p>ある<ruby><rb>生暖</rb><rt>なまあたた</rt></ruby>かい日の暮れです。僕はこの部屋のテエブルを中に漁夫の<persName ref="#bag">バッグ</persName>と向かい合っていました。すると<persName ref="#bag">バッグ</persName>はどう思ったか、急に黙ってしまった上、大きい目をいっそう大きくしてじっと僕を見つめました。僕はもちろん妙に思いましたから、「Quax, Bag, quo quel, quan?」と言いました。これは日本語に翻訳すれば、「おい、<persName ref="#bag">バッグ</persName>、どうしたんだ」ということです。が、<persName ref="#bag">バッグ</persName>は返事をしません。のみならずいきなり立ち上がると、べろりと舌を出したなり、ちょうど<ruby><rb>蛙</rb><rt>かえる</rt></ruby>の<ruby><rb>跳</rb><rt>は</rt></ruby>ねるように飛びかかる<ruby><rb>気色</rb><rt>けしき</rt></ruby>さえ示しました。僕はいよいよ無気味になり、そっと<ruby><rb>椅子</rb><rt>いす</rt></ruby>から立ち上がると、<ruby><rb>一足</rb><rt>いっそく</rt></ruby>飛びに戸口へ飛び出そうとしました。ちょうどそこへ顔を出したのは幸いにも医者の<persName ref="#chack">チャック</persName>です。</p>
+        <p>「こら、<persName ref="#bag">バッグ</persName>、何をしているのだ？」</p>
+        <p><persName ref="#chack">チャック</persName>は<ruby><rb>鼻目金</rb><rt>はなめがね</rt></ruby>をかけたまま、こういう<persName ref="#bag">バッグ</persName>をにらみつけました。すると<persName ref="#bag">バッグ</persName>は恐れいったとみえ、何度も頭へ手をやりながら、こう言って<persName ref="#chack">チャック</persName>にあやまるのです。</p>
+        <p>「どうもまことに<ruby><rb>相</rb><rt>あい</rt></ruby>すみません。実はこの<ruby><rb>旦那</rb><rt>だんな</rt></ruby>の気味悪がるのがおもしろかったものですから、つい調子に乗って<ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>をしたのです。どうか旦那も<ruby><rb>堪忍</rb><rt>かんにん</rt></ruby>してください。」</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>三</head>
+        <p>僕はこの先を話す前にちょっと河童というものを説明しておかなければなりません。河童はいまだに実在するかどうかも疑問になっている動物です。が、それは僕自身が彼らの間に住んでいた以上、少しも疑う余地はないはずです。ではまたどういう動物かと言えば、頭に短い毛のあるのはもちろん、手足に<ruby><rb>水掻</rb><rt>みずか</rt></ruby>きのついていることも「<ruby><rb>水虎考略</rb><rt>すいここうりゃく</rt></ruby>」などに出ているのと著しい違いはありません。身長もざっと一メエトルを越えるか越えぬくらいでしょう。体重は医者の<persName ref="#chack">チャック</persName>によれば、二十ポンドから三十ポンドまで、――まれには五十何ポンドぐらいの<ruby><rb>大河童</rb><rt>おおかっぱ</rt></ruby>もいると言っていました。それから頭のまん中には<ruby><rb>楕円形</rb><rt>だえんけい</rt></ruby>の<ruby><rb>皿</rb><rt>さら</rt></ruby>があり、そのまた皿は年齢により、だんだん<ruby><rb>固</rb><rt>かた</rt></ruby>さを加えるようです。現に年をとった<persName ref="#bag">バッグ</persName>の皿は若い<persName ref="#chack">チャック</persName>の皿などとは全然手ざわりも違うのです。しかし一番不思議なのは河童の皮膚の色のことでしょう。河童は我々人間のように一定の皮膚の色を持っていません。なんでもその周囲の色と同じ色に変わってしまう、――たとえば草の中にいる時には草のように緑色に変わり、岩の上にいる時には岩のように灰色に変わるのです。これはもちろん河童に限らず、カメレオンにもあることです。あるいは河童は皮膚組織の上に何かカメレオンに近いところを持っているのかもしれません。僕はこの事実を発見した時、<placeName ref="#saigoku"><ruby><rb>西国</rb><rt>さいこく</rt></ruby></placeName>の河童は緑色であり、<placeName ref="#tohoku"><ruby><rb>東北</rb><rt>とうほく</rt></ruby></placeName>の河童は赤いという民俗学上の記録を思い出しました。のみならず<persName ref="#bag">バッグ</persName>を追いかける時、突然どこへ行ったのか、見えなくなったことを思い出しました。しかも河童は皮膚の下によほど厚い脂肪を持っているとみえ、この地下の国の温度は比較的低いのにもかかわらず、（平均<ruby><rb>華氏</rb><rt>かっし</rt></ruby>五十度前後です。）着物というものを知らずにいるのです。もちろんどの河童も<ruby><rb>目金</rb><rt>めがね</rt></ruby>をかけたり、<ruby><rb>巻煙草</rb><rt>まきたばこ</rt></ruby>の箱を携えたり、<ruby><rb>金入</rb><rt>かねい</rt></ruby>れを持ったりはしているでしょう。しかし河童はカンガルウのように腹に袋を持っていますから、それらのものをしまう時にも格別不便はしないのです。ただ僕におかしかったのは腰のまわりさえおおわないことです。僕はある時この習慣をなぜかと<persName ref="#bag">バッグ</persName>に尋ねてみました。すると<persName ref="#bag">バッグ</persName>はのけぞったまま、いつまでもげらげら笑っていました。おまけに「わたしはお前さんの隠しているのがおかしい」と返事をしました。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>四</head>
+        <p>僕はだんだん河童の使う日常の言葉を覚えてきました。従って河童の風俗や習慣ものみこめるようになってきました。その中でも一番不思議だったのは河童は我々人間の<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>に思うことをおかしがる、同時に我々人間のおかしがることを真面目に思う――こういうとんちんかんな習慣です。たとえば我々人間は正義とか人道とかいうことを真面目に思う、しかし河童はそんなことを聞くと、腹をかかえて笑い出すのです。つまり彼らの<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>という観念は我々の滑稽という観念と全然標準を<ruby><rb>異</rb><rt>こと</rt></ruby>にしているのでしょう。僕はある時医者の<persName ref="#chack">チャック</persName>と産児制限の話をしていました。すると<persName ref="#chack">チャック</persName>は大口をあいて、<ruby><rb>鼻目金</rb><rt>はなめがね</rt></ruby>の落ちるほど笑い出しました。僕はもちろん腹が立ちましたから、何がおかしいかと詰問しました。なんでも<persName ref="#chack">チャック</persName>の返答はだいたいこうだったように覚えています。もっとも多少細かいところは<ruby><rb>間違</rb><rt>まちが</rt></ruby>っているかもしれません。なにしろまだそのころは僕も河童の使う言葉をすっかり理解していなかったのですから。</p>
+        <p>「しかし両親のつごうばかり考えているのはおかしいですからね。どうもあまり手前勝手ですからね。」</p>
+        <p>その代わりに我々人間から見れば、実際また<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>のお産ぐらい、おかしいものはありません。現に僕はしばらくたってから、<persName ref="#bag">バッグ</persName>の細君のお産をするところを<persName ref="#bag">バッグ</persName>の小屋へ見物にゆきました。河童もお産をする時には我々人間と同じことです。やはり医者や<ruby><rb>産婆</rb><rt>さんば</rt></ruby>などの助けを借りてお産をするのです。けれどもお産をするとなると、父親は電話でもかけるように母親の生殖器に口をつけ、「お前はこの世界へ生まれてくるかどうか、よく考えた上で返事をしろ。」と大きな声で尋ねるのです。<persName ref="#bag">バッグ</persName>もやはり<ruby><rb>膝</rb><rt>ひざ</rt></ruby>をつきながら、何度も繰り返してこう言いました。それからテエブルの上にあった消毒用の<ruby><rb>水薬</rb><rt>すいやく</rt></ruby>でうがいをしました。すると細君の腹の中の子は多少気兼ねでもしているとみえ、こう小声に返事をしました。</p>
+        <p>「僕は生まれたくはありません。第一僕のお<ruby><rb>父</rb><rt>とう</rt></ruby>さんの遺伝は精神病だけでもたいへんです。その上僕は河童的存在を悪いと信じていますから。」</p>
+        <p><persName ref="#bag">バッグ</persName>はこの返事を聞いた時、てれたように頭をかいていました。が、そこにい合わせた産婆はたちまち細君の生殖器へ太い<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>の<ruby><rb>管</rb><rt>かん</rt></ruby>を突きこみ、何か液体を注射しました。すると細君はほっとしたように太い息をもらしました。同時にまた今まで大きかった腹は<ruby><rb>水素瓦斯</rb><rt>すいそガス</rt></ruby>を抜いた風船のようにへたへたと縮んでしまいました。</p>
+        <p>こういう返事をするくらいですから、河童の子どもは生まれるが早いか、もちろん歩いたりしゃべったりするのです。なんでも<persName ref="#chack">チャック</persName>の話では出産後二十六日目に神の<ruby><rb>有無</rb><rt>うむ</rt></ruby>について講演をした子どももあったとかいうことです。もっともその子どもは<ruby><rb>二月目</rb><rt>ふたつきめ</rt></ruby>には死んでしまったということですが。</p>
+        <p>お産の話をしたついでですから、僕がこの国へ来た<ruby><rb>三月目</rb><rt>みつきめ</rt></ruby>に偶然ある<ruby><rb>街</rb><rt>まち</rt></ruby>の<ruby><rb>角</rb><rt>かど</rt></ruby>で見かけた、大きいポスタアの話をしましょう。その大きいポスタアの下には<ruby><rb>喇叭</rb><rt>らっぱ</rt></ruby>を吹いている河童だの剣を持っている河童だのが十二三匹<ruby><rb>描</rb><rt>か</rt></ruby>いてありました。それからまた上には河童の使う、ちょうど<ruby><rb>時計</rb><rt>とけい</rt></ruby>のゼンマイに似た<ruby><rb>螺旋</rb><rt>らせん</rt></ruby>文字が一面に並べてありました。この螺旋文字を翻訳すると、だいたいこういう意味になるのです。これもあるいは細かいところは<ruby><rb>間違</rb><rt>まちが</rt></ruby>っているかもしれません。が、とにかく僕としては僕といっしょに歩いていた、<persName ref="#lap">ラップ</persName>という河童の学生が大声に読み上げてくれる言葉をいちいちノオトにとっておいたのです。</p>
+        <p>遺伝的義勇隊を<ruby><rb>募</rb><rt>つの</rt></ruby>る※</p>
+        <p>健全なる男女の河童よ※</p>
+        <p>悪遺伝を<ruby><rb>撲滅</rb><rt>ぼくめつ</rt></ruby>するために</p>
+        <p>不健全なる男女の河童と結婚せよ※</p>
+        <p>僕はもちろんその時にもそんなことの行なわれないことを<persName ref="#lap">ラップ</persName>に話して聞かせました。すると<persName ref="#lap">ラップ</persName>ばかりではない、ポスタアの近所にいた河童はことごとくげらげら笑い出しました。</p>
+        <p>「行なわれない？　だってあなたの話ではあなたがたもやはり我々のように行なっていると思いますがね。あなたは令息が女中に<ruby><rb>惚</rb><rt>ほ</rt></ruby>れたり、令嬢が運転手に惚れたりするのはなんのためだと思っているのです？　あれは皆無意識的に悪遺伝を撲滅しているのですよ。第一この間あなたの話したあなたがた人間の義勇隊よりも、――一本の鉄道を奪うために互いに殺し合う義勇隊ですね、――ああいう義勇隊に比べれば、ずっと僕たちの義勇隊は高尚ではないかと思いますがね。」</p>
+        <p><persName ref="#lap">ラップ</persName>は<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>にこう言いながら、しかも太い腹だけはおかしそうに絶えず<ruby><rb>浪立</rb><rt>なみだ</rt></ruby>たせていました。が、僕は笑うどころか、あわててある<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>をつかまえようとしました。それは僕の油断を見すまし、その河童が僕の万年筆を盗んだことに気がついたからです。しかし皮膚の<ruby><rb>滑</rb><rt>なめ</rt></ruby>らかな河童は容易に我々にはつかまりません。その河童もぬらりとすべり抜けるが早いかいっさんに逃げ出してしまいました。ちょうど蚊のようにやせた<ruby><rb>体</rb><rt>からだ</rt></ruby>を倒れるかと思うくらいのめらせながら。</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>五</head>
+        <p>僕はこの<persName ref="#lap">ラップ</persName>という河童に<persName ref="#bag">バッグ</persName>にも劣らぬ世話になりました。が、その中でも忘れられないのは<persName ref="#tock">トック</persName>という河童に紹介されたことです。<persName ref="#tock">トック</persName>は河童仲間の詩人です。詩人が髪を長くしていることは我々人間と変わりません。僕は時々<persName ref="#tock">トック</persName>の<ruby><rb>家</rb><rt>うち</rt></ruby>へ退屈しのぎに遊びにゆきました。<persName ref="#tock">トック</persName>はいつも狭い<ruby><rb>部屋</rb><rt>へや</rt></ruby>に高山植物の<ruby><rb>鉢植</rb><rt>はちう</rt></ruby>えを並べ、詩を書いたり<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>をのんだり、いかにも気楽そうに暮らしていました。そのまた部屋の<ruby><rb>隅</rb><rt>すみ</rt></ruby>には<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童が一匹、（<persName ref="#tock">トック</persName>は自由恋愛家ですから、細君というものは持たないのです。）編み物か何かしていました。<persName ref="#tock">トック</persName>は僕の顔を見ると、いつも微笑してこう言うのです。（もっとも河童の微笑するのはあまりいいものではありません。少なくとも僕は最初のうちはむしろ無気味に感じたものです。）</p>
+        <p>「やあ、よく来たね。まあ、その<ruby><rb>椅子</rb><rt>いす</rt></ruby>にかけたまえ。」</p>
+        <p><persName ref="#tock">トック</persName>はよく河童の生活だの河童の芸術だのの話をしました。<persName ref="#tock">トック</persName>の信ずるところによれば、当たり前の河童の生活ぐらい、<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>げているものはありません。親子夫婦兄弟などというのはことごとく互いに苦しめ合うことを唯一の楽しみにして暮らしているのです。ことに家族制度というものは莫迦げている以上にも莫迦げているのです。<persName ref="#tock">トック</persName>はある時窓の外を指さし、「見たまえ。あの莫迦げさ加減を！」と吐き出すように言いました。窓の外の往来にはまだ年の若い河童が一匹、両親らしい河童をはじめ、七八匹の<ruby><rb>雌雄</rb><rt>めすおす</rt></ruby>の河童を<ruby><rb>頸</rb><rt>くび</rt></ruby>のまわりへぶら下げながら、息も絶え絶えに歩いていました。しかし僕は年の若い河童の犠牲的精神に感心しましたから、かえってその<ruby><rb>健気</rb><rt>けなげ</rt></ruby>さをほめ立てました。</p>
+        <p>「ふん、君はこの国でも市民になる資格を持っている。……時に君は社会主義者かね？」</p>
+        <p>僕はもちろん qua（これは河童の使う言葉では「<ruby><rb>然</rb><rt>しか</rt></ruby>り」という意味を現わすのです。）と答えました。</p>
+        <p>「では百人の凡人のために甘んじてひとりの天才を犠牲にすることも顧みないはずだ。」</p>
+        <p>「では君は何主義者だ？　だれか<persName ref="#tock">トック</persName>君の信条は無政府主義だと言っていたが、……」</p>
+        <p>「僕か？　僕は超人（直訳すれば超河童です。）だ。」</p>
+        <p><persName ref="#tock">トック</persName>は<ruby><rb>昂然</rb><rt>こうぜん</rt></ruby>と言い放ちました。こういう<persName ref="#tock">トック</persName>は芸術の上にも独特な考えを持っています。<persName ref="#tock">トック</persName>の信ずるところによれば、芸術は何ものの支配をも受けない、芸術のための芸術である、従って芸術家たるものは何よりも先に善悪を<ruby><rb>絶</rb><rt>ぜっ</rt></ruby>した超人でなければならぬというのです。もっともこれは必ずしも<persName ref="#tock">トック</persName>一匹の意見ではありません。<persName ref="#tock">トック</persName>の仲間の詩人たちはたいてい同意見を持っているようです。現に僕は<persName ref="#tock">トック</persName>といっしょにたびたび超人<ruby><rb>倶楽部</rb><rt>クラブ</rt></ruby>へ遊びにゆきました。超人倶楽部に集まってくるのは詩人、小説家、戯曲家、批評家、画家、音楽家、彫刻家、芸術上の<ruby><rb>素人</rb><rt>しろうと</rt></ruby>等です。しかしいずれも超人です。彼らは電燈の明るいサロンにいつも快活に話し合っていました。のみならず時には<ruby><rb>得々</rb><rt>とくとく</rt></ruby>と彼らの超人ぶりを示し合っていました。たとえばある彫刻家などは大きい<ruby><rb>鬼羊歯</rb><rt>おにしだ</rt></ruby>の<ruby><rb>鉢植</rb><rt>はちう</rt></ruby>えの間に年の若い<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>をつかまえながら、しきりに<ruby><rb>男色</rb><rt>だんしょく</rt></ruby>をもてあそんでいました。またある<ruby><rb>雌</rb><rt>めす</rt></ruby>の小説家などはテエブルの上に立ち上がったなり、アブサントを六十本飲んで見せました。もっともこれは六十本目にテエブルの下へ<ruby><rb>転</rb><rt>ころ</rt></ruby>げ落ちるが早いか、たちまち往生してしまいましたが。</p>
+        <p>僕はある月のいい晩、詩人の<persName ref="#tock">トック</persName>と<ruby><rb>肘</rb><rt>ひじ</rt></ruby>を組んだまま、超人倶楽部から帰ってきました。<persName ref="#tock">トック</persName>はいつになく沈みこんでひとことも口をきかずにいました。そのうちに僕らは<ruby><rb>火</rb><rt>ほ</rt></ruby>かげのさした、小さい窓の前を通りかかりました。そのまた窓の向こうには夫婦らしい<ruby><rb>雌雄</rb><rt>めすおす</rt></ruby>の河童が二匹、三匹の子どもの河童といっしょに<ruby><rb>晩餐</rb><rt>ばんさん</rt></ruby>のテエブルに向かっているのです。すると<persName ref="#tock">トック</persName>はため息をしながら、突然こう僕に話しかけました。</p>
+        <p>「僕は超人的恋愛家だと思っているがね、ああいう家庭の<ruby><rb>容子</rb><rt>ようす</rt></ruby>を見ると、やはりうらやましさを感じるんだよ。」</p>
+        <p>「しかしそれはどう考えても、矛盾しているとは思わないかね？」</p>
+        <p>けれども<persName ref="#tock">トック</persName>は月明りの下にじっと腕を組んだまま、あの小さい窓の向こうを、――平和な五匹の河童たちの晩餐のテエブルを見守っていました。それからしばらくしてこう答えました。</p>
+        <p>「あすこにある玉子焼きはなんと言っても、恋愛などよりも衛生的だからね。」</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>六</head>
+        <p>実際また河童の恋愛は我々人間の恋愛とはよほど趣を<ruby><rb>異</rb><rt>こと</rt></ruby>にしています。雌の河童はこれぞという雄の河童を見つけるが早いか、雄の河童をとらえるのにいかなる手段も顧みません、一番正直な雌の河童は<ruby><rb>遮二無二</rb><rt>しゃにむに</rt></ruby>雄の河童を追いかけるのです。現に僕は気違いのように雄の河童を追いかけている雌の河童を見かけました。いや、そればかりではありません。若い雌の河童はもちろん、その河童の両親や兄弟までいっしょになって追いかけるのです。雄の河童こそみじめです。なにしろさんざん逃げまわったあげく、運よくつかまらずにすんだとしても、二三か月は<ruby><rb>床</rb><rt>とこ</rt></ruby>についてしまうのですから。僕はある時僕の家に<persName ref="#tock">トック</persName>の詩集を読んでいました。するとそこへ駆けこんできたのはあの<persName ref="#lap">ラップ</persName>という学生です。<persName ref="#lap">ラップ</persName>は僕の家へ転げこむと、<ruby><rb>床</rb><rt>ゆか</rt></ruby>の上へ倒れたなり、息も切れ切れにこう言うのです。</p>
+        <p>「<ruby><rb>大変</rb><rt>たいへん</rt></ruby>だ！　とうとう僕は抱きつかれてしまった！」</p>
+        <p>僕はとっさに詩集を投げ出し、戸口の<ruby><rb>錠</rb><rt>じょう</rt></ruby>をおろしてしまいました。しかし<ruby><rb>鍵穴</rb><rt>かぎあな</rt></ruby>からのぞいてみると、<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>の粉末を顔に塗った、<ruby><rb>背</rb><rt>せい</rt></ruby>の低い<ruby><rb>雌</rb><rt>めす</rt></ruby>の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>が一匹、まだ戸口にうろついているのです。<persName ref="#lap">ラップ</persName>はその日から何週間か僕の<ruby><rb>床</rb><rt>とこ</rt></ruby>の上に寝ていました。のみならずいつか<persName ref="#lap">ラップ</persName>の<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>はすっかり腐って落ちてしまいました。</p>
+        <p>もっともまた時には雌の河童を<ruby><rb>一生懸命</rb><rt>いっしょうけんめい</rt></ruby>に追いかける<ruby><rb>雄</rb><rt>おす</rt></ruby>の河童もないではありません。しかしそれもほんとうのところは追いかけずにはいられないように雌の河童が仕向けるのです。僕はやはり気違いのように雌の河童を追いかけている雄の河童も見かけました。雌の河童は逃げてゆくうちにも、時々わざと立ち止まってみたり、<ruby><rb>四</rb><rt>よ</rt></ruby>つん<ruby><rb>這</rb><rt>ば</rt></ruby>いになったりして見せるのです。おまけにちょうどいい時分になると、さもがっかりしたように楽々とつかませてしまうのです。僕の見かけた雄の河童は雌の河童を抱いたなり、しばらくそこに<ruby><rb>転</rb><rt>ころ</rt></ruby>がっていました。が、やっと起き上がったのを見ると、失望というか、後悔というか、とにかくなんとも形容できない、気の毒な顔をしていました。しかしそれはまだいいのです。これも僕の見かけた中に小さい雄の河童が一匹、雌の河童を追いかけていました。雌の河童は例のとおり、誘惑的<ruby><rb>遁走</rb><rt>とんそう</rt></ruby>をしているのです。するとそこへ向こうの<ruby><rb>街</rb><rt>まち</rt></ruby>から大きい雄の河童が一匹、鼻息を鳴らせて歩いてきました。雌の河童はなにかの拍子にふとこの雄の河童を見ると「<ruby><rb>大変</rb><rt>たいへん</rt></ruby>です！　助けてください！　あの河童はわたしを殺そうとするのです！」と<ruby><rb>金切</rb><rt>かなき</rt></ruby>り声を出して叫びました。もちろん大きい雄の河童はたちまち小さい河童をつかまえ、往来のまん中へねじ伏せました。小さい河童は<ruby><rb>水掻</rb><rt>みずか</rt></ruby>きのある手に二三度<ruby><rb>空</rb><rt>くう</rt></ruby>をつかんだなり、とうとう死んでしまいました。けれどももうその時には雌の河童はにやにやしながら、大きい河童の<ruby><rb>頸</rb><rt>くび</rt></ruby>っ玉へしっかりしがみついてしまっていたのです。</p>
+        <p>僕の知っていた<ruby><rb>雄</rb><rt>おす</rt></ruby>の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>はだれも皆言い合わせたように<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童に追いかけられました。もちろん妻子を持っている<persName ref="#bag">バッグ</persName>でもやはり追いかけられたのです。のみならず二三度はつかまったのです。ただ<persName ref="#mag">マッグ</persName>という哲学者だけは（これはあの<persName ref="#tock">トック</persName>という詩人の隣にいる河童です。）一度もつかまったことはありません。これは一つには<persName ref="#mag">マッグ</persName>ぐらい、醜い河童も少ないためでしょう。しかしまた一つには<persName ref="#mag">マッグ</persName>だけはあまり往来へ顔を出さずに<ruby><rb>家</rb><rt>うち</rt></ruby>にばかりいるためです。僕はこの<persName ref="#mag">マッグ</persName>の家へも時々話しに出かけました。<persName ref="#mag">マッグ</persName>はいつも<ruby><rb>薄暗</rb><rt>うすぐら</rt></ruby>い<ruby><rb>部屋</rb><rt>へや</rt></ruby>に<ruby><rb>七色</rb><rt>なないろ</rt></ruby>の<ruby><rb>色硝子</rb><rt>いろガラス</rt></ruby>のランタアンをともし、<ruby><rb>脚</rb><rt>あし</rt></ruby>の高い机に向かいながら、厚い本ばかり読んでいるのです。僕はある時こういう<persName ref="#mag">マッグ</persName>と河童の恋愛を論じ合いました。</p>
+        <p>「なぜ政府は雌の河童が雄の河童を追いかけるのをもっと厳重に取り締まらないのです？」</p>
+        <p>「それは一つには官吏の中に雌の河童の少ないためですよ。雌の河童は雄の河童よりもいっそう<ruby><rb>嫉妬心</rb><rt>しっとしん</rt></ruby>は強いものですからね、雌の河童の官吏さえ<ruby><rb>殖</rb><rt>ふ</rt></ruby>えれば、きっと今よりも雄の河童は追いかけられずに暮らせるでしょう。しかしその効力もしれたものですね。なぜと言ってごらんなさい。官吏同志でも雌の河童は雄の河童を追いかけますからね。」</p>
+        <p>「じゃあなたのように暮らしているのは一番幸福なわけですね。」</p>
+        <p>すると<persName ref="#mag">マッグ</persName>は<ruby><rb>椅子</rb><rt>いす</rt></ruby>を離れ、僕の両手を握ったまま、ため息といっしょにこう言いました。</p>
+        <p>「あなたは我々河童ではありませんから、おわかりにならないのももっともです。しかしわたしもどうかすると、あの恐ろしい雌の河童に追いかけられたい気も起こるのですよ。」</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>七</head>
+        <p>僕はまた詩人の<persName ref="#tock">トック</persName>とたびたび音楽会へも出かけました。が、いまだに忘れられないのは三度目に<ruby><rb>聴</rb><rt>き</rt></ruby>きにいった音楽会のことです。もっとも会場の<ruby><rb>容子</rb><rt>ようす</rt></ruby>などはあまり日本と変わっていません。やはりだんだんせり上がった席に雌雄の河童が三四百匹、いずれもプログラムを手にしながら、一心に耳を澄ませているのです。僕はこの三度目の音楽会の時には<persName ref="#tock">トック</persName>や<persName ref="#tock">トック</persName>の雌の河童のほかにも哲学者の<persName ref="#mag">マッグ</persName>といっしょになり、一番前の席にすわっていました。するとセロの独奏が終わった<ruby><rb>後</rb><rt>のち</rt></ruby>、妙に目の細い河童が一匹、<ruby><rb>無造作</rb><rt>むぞうさ</rt></ruby>に譜本を<ruby><rb>抱</rb><rt>かか</rt></ruby>えたまま、壇の上へ上がってきました。この河童はプログラムの教えるとおり、名高い<persName ref="#crabach">クラバック</persName>という作曲家です。プログラムの教えるとおり、――いや、プログラムを見るまでもありません。<persName ref="#crabach">クラバック</persName>は<persName ref="#tock">トック</persName>が属している超人<ruby><rb>倶楽部</rb><rt>クラブ</rt></ruby>の会員ですから、僕もまた顔だけは知っているのです。</p>
+        <p>「Lied――Craback」（この国のプログラムもたいていは<ruby><rb>独逸</rb><rt>ドイツ</rt></ruby>語を並べていました。）</p>
+        <p><persName ref="#crabach">クラバック</persName>は盛んな拍手のうちにちょっと我々へ一礼した後、静かにピアノの前へ歩み寄りました。それからやはり無造作に自作のリイドを<ruby><rb>弾</rb><rt>ひ</rt></ruby>きはじめました。<persName ref="#crabach">クラバック</persName>は<persName ref="#tock">トック</persName>の言葉によれば、この国の生んだ音楽家中、前後に比類のない天才だそうです。僕は<persName ref="#crabach">クラバック</persName>の音楽はもちろん、そのまた余技の<ruby><rb>抒情</rb><rt>じょじょう</rt></ruby>詩にも興味を持っていましたから、大きい弓なりのピアノの音に熱心に耳を傾けていました。<persName ref="#tock">トック</persName>や<persName ref="#mag">マッグ</persName>も<ruby><rb>恍惚</rb><rt>こうこつ</rt></ruby>としていたことはあるいは僕よりもまさっていたでしょう。が、あの美しい（少なくとも<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>たちの話によれば）<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童だけはしっかりプログラムを握ったなり、時々さもいらだたしそうに長い舌をべろべろ出していました。これは<persName ref="#mag">マッグ</persName>の話によれば、なんでもかれこれ十年<ruby><rb>前</rb><rt>ぜん</rt></ruby>に<persName ref="#crabach">クラバック</persName>をつかまえそこなったものですから、いまだにこの音楽家を目の<ruby><rb>敵</rb><rt>かたき</rt></ruby>にしているのだとかいうことです。</p>
+        <p><persName ref="#crabach">クラバック</persName>は全身に情熱をこめ、戦うようにピアノを<ruby><rb>弾</rb><rt>ひ</rt></ruby>きつづけました。すると突然会場の中に神鳴りのように響き渡ったのは「演奏禁止」という声です。僕はこの声にびっくりし、思わず後ろをふり返りました。声の主は紛れもない、一番後ろの席にいる<ruby><rb>身</rb><rt>み</rt></ruby>の<ruby><rb>丈</rb><rt>たけ</rt></ruby>抜群の巡査です、巡査は僕がふり向いた時、<ruby><rb>悠然</rb><rt>ゆうぜん</rt></ruby>と腰をおろしたまま、もう一度前よりもおお声に「演奏禁止」と<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>りました。それから、――</p>
+        <p>それから先は大混乱です。「警官横暴！」「<persName ref="#crabach">クラバック</persName>、弾け！　弾け！」「<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>！」「畜生！」「ひっこめ！」「負けるな！」――こういう声のわき上がった中に<ruby><rb>椅子</rb><rt>いす</rt></ruby>は倒れる、プログラムは飛ぶ、おまけにだれが投げるのか、サイダアの<ruby><rb>空罎</rb><rt>あきびん</rt></ruby>や石ころやかじりかけの<ruby><rb>胡瓜</rb><rt>きゅうり</rt></ruby>さえ降ってくるのです。僕は<ruby><rb>呆</rb><rt>あ</rt></ruby>っ<ruby><rb>気</rb><rt>け</rt></ruby>にとられましたから、<persName ref="#tock">トック</persName>にその理由を尋ねようとしました。が、<persName ref="#tock">トック</persName>も興奮したとみえ、椅子の上に突っ立ちながら、「<persName ref="#crabach">クラバック</persName>、弾け！　弾け！」とわめきつづけています。のみならず<persName ref="#tock">トック</persName>の雌の河童もいつの<ruby><rb>間</rb><rt>ま</rt></ruby>に敵意を忘れたのか、「警官横暴」と叫んでいることは少しも<persName ref="#tock">トック</persName>に変わりません。僕はやむを得ず<persName ref="#mag">マッグ</persName>に向かい、「どうしたのです？」と尋ねてみました。</p>
+        <p>「これですか？　これはこの国ではよくあることですよ。元来<ruby><rb>画</rb><rt>え</rt></ruby>だの文芸だのは……」</p>
+        <p><persName ref="#mag">マッグ</persName>は何か飛んでくるたびにちょっと<ruby><rb>頸</rb><rt>くび</rt></ruby>を縮めながら、相変わらず静かに説明しました。</p>
+        <p>「元来画だの文芸だのはだれの目にも何を表わしているかはとにかくちゃんとわかるはずですから、この国では決して発売禁止や展覧禁止は行なわれません。その代わりにあるのが演奏禁止です。なにしろ音楽というものだけはどんなに風俗を壊乱する曲でも、耳のない河童にはわかりませんからね。」</p>
+        <p>「しかしあの巡査は耳があるのですか？」</p>
+        <p>「さあ、それは疑問ですね。たぶん今の旋律を聞いているうちに細君といっしょに寝ている時の心臓の鼓動でも思い出したのでしょう。」</p>
+        <p>こういう間にも大騒ぎはいよいよ盛んになるばかりです。<persName ref="#crabach">クラバック</persName>はピアノに向かったまま、<ruby><rb>傲然</rb><rt>ごうぜん</rt></ruby>と我々をふり返っていました。が、いくら傲然としていても、いろいろのものの飛んでくるのはよけないわけにゆきません。従ってつまり二三秒置きにせっかくの態度も変わったわけです。しかしとにかくだいたいとしては大音楽家の威厳を保ちながら、細い目をすさまじくかがやかせていました。僕は――僕ももちろん危険を避けるために<persName ref="#tock">トック</persName>を<ruby><rb>小楯</rb><rt>こだて</rt></ruby>にとっていたものです。が、やはり好奇心に駆られ、熱心に<persName ref="#mag">マッグ</persName>と話しつづけました。</p>
+        <p>「そんな検閲は乱暴じゃありませんか？」</p>
+        <p>「なに、どの国の検閲よりもかえって進歩しているくらいですよ。たとえば××をごらんなさい。現につい<ruby><rb>一月</rb><rt>ひとつき</rt></ruby>ばかり前にも、……」</p>
+        <p>ちょうどこう言いかけたとたんです。<persName ref="#mag">マッグ</persName>はあいにく脳天に空罎が落ちたものですから、quack（これはただ<ruby><rb>間投詞</rb><rt>かんとうし</rt></ruby>です）と一声叫んだぎり、とうとう気を失ってしまいました。</p>
+      </div>
+      <div type="chapter" xml:id="sec09" n="9">
+        <head>八</head>
+        <p>僕は<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長の<persName ref="#gehr">ゲエル</persName>に不思議にも好意を持っていました。<persName ref="#gehr">ゲエル</persName>は資本家中の資本家です。おそらくはこの国の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>の中でも、<persName ref="#gehr">ゲエル</persName>ほど大きい腹をした河童は一匹もいなかったのに違いありません。しかし<ruby><rb>茘枝</rb><rt>れいし</rt></ruby>に似た細君や<ruby><rb>胡瓜</rb><rt>きゅうり</rt></ruby>に似た子どもを左右にしながら、安楽<ruby><rb>椅子</rb><rt>いす</rt></ruby>にすわっているところはほとんど幸福そのものです。僕は時々裁判官の<persName ref="#pep">ペップ</persName>や医者の<persName ref="#chack">チャック</persName>につれられて<persName ref="#gehr">ゲエル</persName><ruby><rb>家</rb><rt>け</rt></ruby>の<ruby><rb>晩餐</rb><rt>ばんさん</rt></ruby>へ出かけました。また<persName ref="#gehr">ゲエル</persName>の紹介状を持って<persName ref="#gehr">ゲエル</persName>や<persName ref="#gehr">ゲエル</persName>の友人たちが多少の関係を持っているいろいろの工場も見て歩きました。そのいろいろの工場の中でもことに僕におもしろかったのは書籍製造会社の工場です。僕は年の若い河童の技師とこの工場の中へはいり、水力電気を動力にした、大きい機械をながめた時、今さらのように河童の国の機械工業の進歩に驚嘆しました。なんでもそこでは一年間に七百万部の本を製造するそうです。が、僕を驚かしたのは本の部数ではありません。それだけの本を製造するのに少しも手数のかからないことです。なにしろこの国では本を造るのにただ機械の<ruby><rb>漏斗形</rb><rt>じょうごがた</rt></ruby>の口へ紙とインクと灰色をした粉末とを入れるだけなのですから。それらの原料は機械の中へはいると、ほとんど五分とたたないうちに<ruby><rb>菊版</rb><rt>きくばん</rt></ruby>、<ruby><rb>四六版</rb><rt>しろくばん</rt></ruby>、<ruby><rb>菊半裁版</rb><rt>きくはんさいばん</rt></ruby>などの無数の本になって出てくるのです。僕は<ruby><rb>瀑</rb><rt>たき</rt></ruby>のように流れ落ちるいろいろの本をながめながら、<ruby><rb>反</rb><rt>そ</rt></ruby>り身になった河童の技師にその灰色の粉末はなんと言うものかと尋ねてみました。すると技師は黒光りに光った機械の前にたたずんだまま、つまらなそうにこう返事をしました。</p>
+        <p>「これですか？　これは<ruby><rb>驢馬</rb><rt>ろば</rt></ruby>の脳髄ですよ。ええ、一度乾燥させてから、ざっと粉末にしただけのものです。時価は一<ruby><rb>噸</rb><rt>とん</rt></ruby>二三銭ですがね。」</p>
+        <p>もちろんこういう工業上の奇蹟は書籍製造会社にばかり起こっているわけではありません。絵画製造会社にも、音楽製造会社にも、同じように起こっているのです。実際また<persName ref="#gehr">ゲエル</persName>の話によれば、この国では平均一か月に七八百種の機械が新案され、なんでもずんずん人手を待たずに大量生産が行なわれるそうです。従ってまた職工の<ruby><rb>解雇</rb><rt>かいこ</rt></ruby>されるのも四五万匹を下らないそうです。そのくせまだこの国では毎朝新聞を読んでいても、一度も<ruby><rb>罷業</rb><rt>ひぎょう</rt></ruby>という字に出会いません。僕はこれを妙に思いましたから、ある時また<persName ref="#pep">ペップ</persName>や<persName ref="#chack">チャック</persName>と<persName ref="#gehr">ゲエル</persName>家の晩餐に招かれた機会にこのことをなぜかと尋ねてみました。</p>
+        <p>「それはみんな食ってしまうのですよ。」</p>
+        <p>食後の葉巻をくわえた<persName ref="#gehr">ゲエル</persName>はいかにも<ruby><rb>無造作</rb><rt>むぞうさ</rt></ruby>にこう言いました。しかし「食ってしまう」というのはなんのことだかわかりません。すると<ruby><rb>鼻目金</rb><rt>はなめがね</rt></ruby>をかけた<persName ref="#chack">チャック</persName>は僕の不審を察したとみえ、横あいから説明を加えてくれました。</p>
+        <p>「その職工をみんな殺してしまって、肉を食料に使うのです。ここにある新聞をごらんなさい。今月はちょうど六万四千七百六十九匹の職工が<ruby><rb>解雇</rb><rt>かいこ</rt></ruby>されましたから、それだけ肉の値段も下がったわけですよ。」</p>
+        <p>「職工は黙って殺されるのですか？」</p>
+        <p>「それは騒いでもしかたはありません。<ruby><rb>職工屠殺法</rb><rt>しょっこうとさつほう</rt></ruby>があるのですから。」</p>
+        <p>これは<ruby><rb>山桃</rb><rt>やまもも</rt></ruby>の<ruby><rb>鉢植</rb><rt>はちう</rt></ruby>えを後ろに苦い顔をしていた<persName ref="#pep">ペップ</persName>の言葉です。僕はもちろん不快を感じました。しかし主人公の<persName ref="#gehr">ゲエル</persName>はもちろん、<persName ref="#pep">ペップ</persName>や<persName ref="#chack">チャック</persName>もそんなことは当然と思っているらしいのです。現に<persName ref="#chack">チャック</persName>は笑いながら、あざけるように僕に話しかけました。</p>
+        <p>「つまり<ruby><rb>餓死</rb><rt>がし</rt></ruby>したり自殺したりする手数を国家的に省略してやるのですね。ちょっと有毒<ruby><rb>瓦斯</rb><rt>ガス</rt></ruby>をかがせるだけですから、たいした苦痛はありませんよ。」</p>
+        <p>「けれどもその肉を食うというのは、……」</p>
+        <p>「<ruby><rb>常談</rb><rt>じょうだん</rt></ruby>を言ってはいけません。あの<persName ref="#mag">マッグ</persName>に聞かせたら、さぞ大笑いに笑うでしょう。あなたの国でも第四階級の娘たちは売笑婦になっているではありませんか？　職工の肉を食うことなどに憤慨したりするのは感傷主義ですよ。」</p>
+        <p>こういう問答を聞いていた<persName ref="#gehr">ゲエル</persName>は手近いテエブルの上にあったサンドウィッチの皿を勧めながら、<ruby><rb>恬然</rb><rt>てんぜん</rt></ruby>と僕にこう言いました。</p>
+        <p>「どうです？　一つとりませんか？　これも職工の肉ですがね。」</p>
+        <p>僕はもちろん<ruby><rb>辟易</rb><rt>へきえき</rt></ruby>しました。いや、そればかりではありません。<persName ref="#pep">ペップ</persName>や<persName ref="#chack">チャック</persName>の笑い声を後ろに<persName ref="#gehr">ゲエル</persName><ruby><rb>家</rb><rt>け</rt></ruby>の客間を飛び出しました。それはちょうど家々の空に星明かりも見えない荒れ模様の夜です。僕はその<ruby><rb>闇</rb><rt>やみ</rt></ruby>の中を僕の<ruby><rb>住居</rb><rt>すまい</rt></ruby>へ帰りながら、のべつ幕なしに<ruby><rb>嘔吐</rb><rt>へど</rt></ruby>を吐きました。夜目にも<ruby><rb>白</rb><rt>しら</rt></ruby>じらと流れる嘔吐を。</p>
+      </div>
+      <div type="chapter" xml:id="sec10" n="10">
+        <head>九</head>
+        <p>しかし<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長の<persName ref="#gehr">ゲエル</persName>は人なつこい<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>だったのに違いません。僕はたびたび<persName ref="#gehr">ゲエル</persName>といっしょに<persName ref="#gehr">ゲエル</persName>の属している<ruby><rb>倶楽部</rb><rt>クラブ</rt></ruby>へ行き、愉快に一晩を暮らしました。これは一つにはその倶楽部は<persName ref="#tock">トック</persName>の属している超人倶楽部よりもはるかに<ruby><rb>居心</rb><rt>いごころ</rt></ruby>のよかったためです。のみならずまた<persName ref="#gehr">ゲエル</persName>の話は哲学者の<persName ref="#mag">マッグ</persName>の話のように深みを持っていなかったにせよ、僕には全然新しい世界を、――広い世界をのぞかせました。<persName ref="#gehr">ゲエル</persName>は、いつも純金の<ruby><rb>匙</rb><rt>さじ</rt></ruby>に<ruby><rb>珈琲</rb><rt>カッフェ</rt></ruby>の<ruby><rb>茶碗</rb><rt>ちゃわん</rt></ruby>をかきまわしながら、快活にいろいろの話をしたものです。</p>
+        <p>なんでもある霧の深い晩、僕は<ruby><rb>冬薔薇</rb><rt>ふゆそうび</rt></ruby>を盛った<ruby><rb>花瓶</rb><rt>かびん</rt></ruby>を中に<persName ref="#gehr">ゲエル</persName>の話を聞いていました。それはたしか<ruby><rb>部屋</rb><rt>へや</rt></ruby>全体はもちろん、<ruby><rb>椅子</rb><rt>いす</rt></ruby>やテエブルも白い上に細い金の<ruby><rb>縁</rb><rt>ふち</rt></ruby>をとったセセッション風の部屋だったように覚えています。<persName ref="#gehr">ゲエル</persName>はふだんよりも得意そうに顔中に微笑をみなぎらせたまま、ちょうどそのころ天下を取っていた Quorax 党内閣のことなどを話しました。クオラックスという言葉はただ意味のない<ruby><rb>間投詞</rb><rt>かんとうし</rt></ruby>ですから、「おや」とでも訳すほかはありません。が、とにかく何よりも先に「河童全体の利益」ということを<ruby><rb>標榜</rb><rt>ひょうぼう</rt></ruby>していた政党だったのです。</p>
+        <p>「クオラックス党を支配しているものは名高い政治家の<persName ref="#loppe">ロッペ</persName>です。『正直は最良の外交である』とは<persName ref="#bismarck">ビスマルク</persName>の言った言葉でしょう。しかし<persName ref="#loppe">ロッペ</persName>は正直を<ruby><rb>内治</rb><rt>ないち</rt></ruby>の上にも及ぼしているのです。……」</p>
+        <p>「けれども<persName ref="#loppe">ロッペ</persName>の演説は……」</p>
+        <p>「まあ、わたしの言うことをお聞きなさい。あの演説はもちろんことごとく<ruby><rb>譃</rb><rt>うそ</rt></ruby>です。が、譃ということはだれでも知っていますから、<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>正直と変わらないでしょう、それを一概に譃と言うのはあなたがただけの偏見ですよ。我々<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>はあなたがたのように、……しかしそれはどうでもよろしい。わたしの話したいのは<persName ref="#loppe">ロッペ</persName>のことです。<persName ref="#loppe">ロッペ</persName>はクオラックス党を支配している、そのまた<persName ref="#loppe">ロッペ</persName>を支配しているものは Pou-Fou 新聞の（この『プウ・フウ』という言葉もやはり意味のない<ruby><rb>間投詞</rb><rt>かんとうし</rt></ruby>です。もし<ruby><rb>強</rb><rt>し</rt></ruby>いて訳すれば、『ああ』とでも言うほかはありません。）社長の<persName ref="#quiqui">クイクイ</persName>です。が、<persName ref="#quiqui">クイクイ</persName>も彼自身の主人というわけにはゆきません。<persName ref="#quiqui">クイクイ</persName>を支配しているものはあなたの前にいる<persName ref="#gehr">ゲエル</persName>です。」</p>
+        <p>「けれども――これは失礼かもしれませんけれども、プウ・フウ新聞は労働者の味かたをする新聞でしょう。その社長の<persName ref="#quiqui">クイクイ</persName>もあなたの支配を受けているというのは、……」</p>
+        <p>「プウ・フウ新聞の記者たちはもちろん労働者の味かたです。しかし記者たちを支配するものは<persName ref="#quiqui">クイクイ</persName>のほかはありますまい。しかも<persName ref="#quiqui">クイクイ</persName>はこの<persName ref="#gehr">ゲエル</persName>の後援を受けずにはいられないのです。」</p>
+        <p><persName ref="#gehr">ゲエル</persName>は相変わらず微笑しながら、純金の<ruby><rb>匙</rb><rt>さじ</rt></ruby>をおもちゃにしています。僕はこういう<persName ref="#gehr">ゲエル</persName>を見ると、<persName ref="#gehr">ゲエル</persName>自身を憎むよりも、プウ・フウ新聞の記者たちに同情の起こるのを感じました。すると<persName ref="#gehr">ゲエル</persName>は僕の無言にたちまちこの同情を感じたとみえ、大きい腹をふくらませてこう言うのです。</p>
+        <p>「なに、プウ・フウ新聞の記者たちも全部労働者の味かたではありませんよ。少なくとも我々河童というものはだれの味かたをするよりも先に我々自身の味かたをしますからね。……しかしさらに<ruby><rb>厄介</rb><rt>やっかい</rt></ruby>なことにはこの<persName ref="#gehr">ゲエル</persName>自身さえやはり他人の支配を受けているのです。あなたはそれをだれだと思いますか？　それはわたしの妻ですよ。美しい<persName ref="#gehr-fujin">ゲエル夫人</persName>ですよ。」</p>
+        <p><persName ref="#gehr">ゲエル</persName>はおお声に笑いました。</p>
+        <p>「それはむしろしあわせでしょう。」</p>
+        <p>「とにかくわたしは満足しています。しかしこれもあなたの前だけに、――河童でないあなたの前だけに手放しで<ruby><rb>吹聴</rb><rt>ふいちょう</rt></ruby>できるのです。」</p>
+        <p>「するとつまりクオラックス内閣は<persName ref="#gehr-fujin">ゲエル夫人</persName>が支配しているのですね。」</p>
+        <p>「さあそうも言われますかね。……しかし七年<ruby><rb>前</rb><rt>まえ</rt></ruby>の戦争などはたしかにある<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童のために始まったものに違いありません。」</p>
+        <p>「戦争？　この国にも戦争はあったのですか？」</p>
+        <p>「ありましたとも。将来もいつあるかわかりません。なにしろ隣国のある限りは、……」</p>
+        <p>僕は実際この時はじめて河童の国も国家的に孤立していないことを知りました。<persName ref="#gehr">ゲエル</persName>の説明するところによれば、<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>はいつも<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>を仮設敵にしているということです。しかも獺は河童に負けない軍備を<ruby><rb>具</rb><rt>そな</rt></ruby>えているということです。僕はこの獺を相手に河童の戦争した話に少なからず興味を感じました。（なにしろ河童の強敵に獺のいるなどということは「<ruby><rb>水虎考略</rb><rt>すいここうりゃく</rt></ruby>」の著者はもちろん、「<ruby><rb>山島民譚集</rb><rt>さんとうみんたんしゅう</rt></ruby>」の著者<persName ref="#yanagita-kunio"><ruby><rb>柳田国男</rb><rt>やなぎだくにお</rt></ruby></persName>さんさえ知らずにいたらしい新事実ですから。）</p>
+        <p>「あの戦争の起こる前にはもちろん両国とも油断せずにじっと相手をうかがっていました。というのはどちらも同じように相手を恐怖していたからです。そこへこの国にいた獺が一匹、ある河童の夫婦を訪問しました。そのまた<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童というのは亭主を殺すつもりでいたのです。なにしろ亭主は道楽者でしたからね。おまけに生命保険のついていたことも多少の誘惑になったかもしれません。」</p>
+        <p>「あなたはその夫婦を御存じですか？」</p>
+        <p>「ええ、――いや、<ruby><rb>雄</rb><rt>おす</rt></ruby>の河童だけは知っています。わたしの妻などはこの河童を悪人のように言っていますがね。しかしわたしに言わせれば、悪人よりもむしろ雌の河童につかまることを恐れている<ruby><rb>被害妄想</rb><rt>ひがいもうぞう</rt></ruby>の多い狂人です。……そこでこの雌の河童は亭主のココアの<ruby><rb>茶碗</rb><rt>ちゃわん</rt></ruby>の中へ<ruby><rb>青化加里</rb><rt>せいかかり</rt></ruby>を入れておいたのです。それをまたどう<ruby><rb>間違</rb><rt>まちが</rt></ruby>えたか、客の獺に飲ませてしまったのです。獺はもちろん死んでしまいました。それから……」</p>
+        <p>「それから戦争になったのですか？」</p>
+        <p>「ええ、あいにくその獺は勲章を持っていたものですからね。」</p>
+        <p>「戦争はどちらの勝ちになったのですか？」</p>
+        <p>「もちろんこの国の勝ちになったのです。三十六万九千五百匹の河童たちはそのために<ruby><rb>健気</rb><rt>けなげ</rt></ruby>にも戦死しました。しかし敵国に比べれば、そのくらいの損害はなんともありません。この国にある毛皮という毛皮はたいてい獺の毛皮です。わたしもあの戦争の時には<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>を製造するほかにも石炭<ruby><rb>殻</rb><rt>がら</rt></ruby>を戦地へ送りました。」</p>
+        <p>「石炭殻を何にするのですか？」</p>
+        <p>「もちろん食糧にするのです。我々は、河童は腹さえ減れば、なんでも食うのにきまっていますからね。」</p>
+        <p>「それは――どうか<ruby><rb>怒</rb><rt>おこ</rt></ruby>らずにください。それは戦地にいる河童たちには……我々の国では<ruby><rb>醜聞</rb><rt>しゅうぶん</rt></ruby>ですがね。」</p>
+        <p>「この国でも醜聞には違いありません。しかしわたし自身こう言っていれば、だれも醜聞にはしないものです。哲学者の<persName ref="#mag">マッグ</persName>も言っているでしょう。『<ruby><rb>汝</rb><rt>なんじ</rt></ruby>の悪は汝自ら言え。悪はおのずから消滅すべし。』……しかもわたしは利益のほかにも愛国心に燃え立っていたのですからね。」</p>
+        <p>ちょうどそこへはいってきたのはこの<ruby><rb>倶楽部</rb><rt>クラブ</rt></ruby>の給仕です。給仕は<persName ref="#gehr">ゲエル</persName>にお<ruby><rb>時宜</rb><rt>じぎ</rt></ruby>をした<ruby><rb>後</rb><rt>のち</rt></ruby>、朗読でもするようにこう言いました。</p>
+        <p>「お宅のお隣に火事がございます。」</p>
+        <p>「火――火事！」</p>
+        <p><persName ref="#gehr">ゲエル</persName>は驚いて立ち上がりました。僕も立ち上がったのはもちろんです。が、給仕は落ち着き払って次の言葉をつけ加えました。</p>
+        <p>「しかしもう消し止めました。」</p>
+        <p><persName ref="#gehr">ゲエル</persName>は給仕を見送りながら、泣き笑いに近い表情をしました。僕はこういう顔を見ると、いつかこの<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長を憎んでいたことに気づきました。が、<persName ref="#gehr">ゲエル</persName>はもう今では大資本家でもなんでもないただの<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>になって立っているのです。僕は<ruby><rb>花瓶</rb><rt>かびん</rt></ruby>の中の<ruby><rb>冬薔薇</rb><rt>ふゆそうび</rt></ruby>の花を抜き、<persName ref="#gehr">ゲエル</persName>の手へ渡しました。</p>
+        <p>「しかし火事は消えたといっても、奥さんはさぞお驚きでしょう。さあ、これを持ってお帰りなさい。」</p>
+        <p>「ありがとう。」</p>
+        <p><persName ref="#gehr">ゲエル</persName>は僕の手を握りました。それから急ににやりと笑い、小声にこう僕に話しかけました。</p>
+        <p>「隣はわたしの<ruby><rb>家作</rb><rt>かさく</rt></ruby>ですからね。火災保険の金だけはとれるのですよ。」</p>
+        <p>僕はこの時の<persName ref="#gehr">ゲエル</persName>の微笑を――<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>することもできなければ、<ruby><rb>憎悪</rb><rt>ぞうお</rt></ruby>することもできない<persName ref="#gehr">ゲエル</persName>の微笑をいまだにありありと覚えています。</p>
+      </div>
+      <div type="chapter" xml:id="sec11" n="11">
+        <head>十</head>
+        <p>「どうしたね？　きょうはまた妙にふさいでいるじゃないか？」</p>
+        <p>その火事のあった翌日です。僕は<ruby><rb>巻煙草</rb><rt>まきたばこ</rt></ruby>をくわえながら、僕の客間の<ruby><rb>椅子</rb><rt>いす</rt></ruby>に腰をおろした学生の<persName ref="#lap">ラップ</persName>にこう言いました。実際また<persName ref="#lap">ラップ</persName>は右の<ruby><rb>脚</rb><rt>あし</rt></ruby>の上へ左の脚をのせたまま、腐った<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>も見えないほど、ぼんやり<ruby><rb>床</rb><rt>ゆか</rt></ruby>の上ばかり見ていたのです。</p>
+        <p>「<persName ref="#lap">ラップ</persName>君、どうしたね。」と言えば、</p>
+        <p>「いや、なに、つまらないことなのですよ。――」</p>
+        <p><persName ref="#lap">ラップ</persName>はやっと頭をあげ、悲しい鼻声を出しました。</p>
+        <p>「僕はきょう窓の外を見ながら、『おや虫取り<ruby><rb>菫</rb><rt>すみれ</rt></ruby>が咲いた』と<ruby><rb>何気</rb><rt>なにげ</rt></ruby>なしにつぶやいたのです。すると僕の妹は急に顔色を変えたと思うと、『どうせわたしは虫取り菫よ』と当たり散らすじゃありませんか？　おまけにまた僕のおふくろも<ruby><rb>大</rb><rt>だい</rt></ruby>の妹<ruby><rb>贔屓</rb><rt>びいき</rt></ruby>ですから、やはり僕に食ってかかるのです。」</p>
+        <p>「虫取り菫が咲いたということはどうして妹さんには不快なのだね？」</p>
+        <p>「さあ、たぶん<ruby><rb>雄</rb><rt>おす</rt></ruby>の河童をつかまえるという意味にでもとったのでしょう。そこへおふくろと仲悪い<ruby><rb>叔母</rb><rt>おば</rt></ruby>も<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>の仲間入りをしたのですから、いよいよ大騒動になってしまいました。しかも年中酔っ払っているおやじはこの喧嘩を聞きつけると、たれかれの差別なしに<ruby><rb>殴</rb><rt>なぐ</rt></ruby>り出したのです。それだけでも始末のつかないところへ僕の弟はその<ruby><rb>間</rb><rt>あいだ</rt></ruby>におふくろの<ruby><rb>財布</rb><rt>さいふ</rt></ruby>を盗むが早いか、キネマか何かを見にいってしまいました。僕は……ほんとうに僕はもう、……」</p>
+        <p><persName ref="#lap">ラップ</persName>は両手に顔を<ruby><rb>埋</rb><rt>うず</rt></ruby>め、何も言わずに泣いてしまいました。僕の同情したのはもちろんです。同時にまた家族制度に対する詩人の<persName ref="#tock">トック</persName>の軽蔑を思い出したのももちろんです。僕は<persName ref="#lap">ラップ</persName>の肩をたたき、<ruby><rb>一生懸命</rb><rt>いっしょうけんめい</rt></ruby>に慰めました。</p>
+        <p>「そんなことはどこでもありがちだよ。まあ勇気を出したまえ。」</p>
+        <p>「しかし……しかし<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>でも腐っていなければ、……」</p>
+        <p>「それはあきらめるほかはないさ。さあ、<persName ref="#tock">トック</persName>君の<ruby><rb>家</rb><rt>うち</rt></ruby>へでも行こう。」</p>
+        <p>「<persName ref="#tock">トック</persName>さんは僕を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>しています。僕は<persName ref="#tock">トック</persName>さんのように大胆に家族を捨てることができませんから。」</p>
+        <p>「じゃ<persName ref="#crabach">クラバック</persName>君の家へ行こう。」</p>
+        <p>僕はあの音楽会以来、<persName ref="#crabach">クラバック</persName>にも友だちになっていましたから、とにかくこの大音楽家の家へ<persName ref="#lap">ラップ</persName>をつれ出すことにしました。<persName ref="#crabach">クラバック</persName>は<persName ref="#tock">トック</persName>に比べれば、はるかに<ruby><rb>贅沢</rb><rt>ぜいたく</rt></ruby>に暮らしています。というのは資本家の<persName ref="#gehr">ゲエル</persName>のように暮らしているという意味ではありません。ただいろいろの<ruby><rb>骨董</rb><rt>こっとう</rt></ruby>を、――<placeName ref="#tanagra">タナグラ</placeName>の人形や<placeName ref="#persia">ペルシア</placeName>の陶器を<ruby><rb>部屋</rb><rt>へや</rt></ruby>いっぱいに並べた中にトルコ風の<ruby><rb>長椅子</rb><rt>ながいす</rt></ruby>を<ruby><rb>据</rb><rt>す</rt></ruby>え、<persName ref="#crabach">クラバック</persName>自身の肖像画の下にいつも子どもたちと遊んでいるのです。が、きょうはどうしたのか両腕を胸へ組んだまま、苦い顔をしてすわっていました。のみならずそのまた足もとには<ruby><rb>紙屑</rb><rt>かみくず</rt></ruby>が一面に散らばっていました。<persName ref="#lap">ラップ</persName>も詩人<persName ref="#tock">トック</persName>といっしょにたびたび<persName ref="#crabach">クラバック</persName>には会っているはずです。しかしこの<ruby><rb>容子</rb><rt>ようす</rt></ruby>に恐れたとみえ、きょうは<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>にお<ruby><rb>時宜</rb><rt>じぎ</rt></ruby>をしたなり、黙って部屋の<ruby><rb>隅</rb><rt>すみ</rt></ruby>に腰をおろしました。</p>
+        <p>「どうしたね？　<persName ref="#crabach">クラバック</persName>君。」</p>
+        <p>僕はほとんど<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>の代わりにこう大音楽家へ問いかけました。</p>
+        <p>「どうするものか？　批評家の<ruby><rb>阿呆</rb><rt>あほう</rt></ruby>め！　僕の<ruby><rb>抒情</rb><rt>じょじょう</rt></ruby>詩は<persName ref="#tock">トック</persName>の抒情詩と比べものにならないと言やがるんだ。」</p>
+        <p>「しかし君は音楽家だし、……」</p>
+        <p>「それだけならば<ruby><rb>我慢</rb><rt>がまん</rt></ruby>もできる。僕は<persName ref="#rock">ロック</persName>に比べれば、音楽家の名に価しないと言やがるじゃないか？」</p>
+        <p><persName ref="#rock">ロック</persName>というのは<persName ref="#crabach">クラバック</persName>とたびたび比べられる音楽家です。が、あいにく超人<ruby><rb>倶楽部</rb><rt>クラブ</rt></ruby>の会員になっていない関係上、僕は一度も話したことはありません。もっとも嘴の<ruby><rb>反</rb><rt>そ</rt></ruby>り上がった、<ruby><rb>一癖</rb><rt>ひとくせ</rt></ruby>あるらしい顔だけはたびたび写真でも見かけていました。</p>
+        <p>「<persName ref="#rock">ロック</persName>も天才には違いない。しかし<persName ref="#rock">ロック</persName>の音楽は君の音楽にあふれている近代的情熱を持っていない。」</p>
+        <p>「君はほんとうにそう思うか？」</p>
+        <p>「そう思うとも。」</p>
+        <p>すると<persName ref="#crabach">クラバック</persName>は立ち上がるが早いか、<placeName ref="#tanagra">タナグラ</placeName>の人形をひっつかみ、いきなり<ruby><rb>床</rb><rt>ゆか</rt></ruby>の上にたたきつけました。<persName ref="#lap">ラップ</persName>はよほど驚いたとみえ、何か声をあげて逃げようとしました。が、<persName ref="#crabach">クラバック</persName>は<persName ref="#lap">ラップ</persName>や僕にはちょっと「驚くな」という<ruby><rb>手真似</rb><rt>てまね</rt></ruby>をした上、今度は冷やかにこう言うのです。</p>
+        <p>「それは君もまた俗人のように耳を持っていないからだ。僕は<persName ref="#rock">ロック</persName>を恐れている。……」</p>
+        <p>「君が？　<ruby><rb>謙遜家</rb><rt>けんそんか</rt></ruby>を気どるのはやめたまえ。」</p>
+        <p>「だれが<ruby><rb>謙遜家</rb><rt>けんそんか</rt></ruby>を気どるものか？　第一君たちに気どって見せるくらいならば、批評家たちの前に気どって見せている。僕は――<persName ref="#crabach">クラバック</persName>は天才だ。その点では<persName ref="#rock">ロック</persName>を恐れていない。」</p>
+        <p>「では何を恐れているのだ？」</p>
+        <p>「何か<ruby><rb>正体</rb><rt>しょうたい</rt></ruby>の知れないものを、――言わば<persName ref="#rock">ロック</persName>を支配している星を。」</p>
+        <p>「どうも僕には<ruby><rb>腑</rb><rt>ふ</rt></ruby>に落ちないがね。」</p>
+        <p>「ではこう言えばわかるだろう。<persName ref="#rock">ロック</persName>は僕の影響を受けない。が、僕はいつの<ruby><rb>間</rb><rt>ま</rt></ruby>にか<persName ref="#rock">ロック</persName>の影響を受けてしまうのだ。」</p>
+        <p>「それは君の感受性の……。」</p>
+        <p>「まあ、聞きたまえ。感受性などの問題ではない。<persName ref="#rock">ロック</persName>はいつも安んじてあいつだけにできる仕事をしている。しかし僕はいらいらするのだ。それは<persName ref="#rock">ロック</persName>の目から見れば、あるいは一歩の差かもしれない。けれども僕には十<ruby><rb>哩</rb><rt>マイル</rt></ruby>も違うのだ。」</p>
+        <p>「しかし先生の英雄曲は……」</p>
+        <p><persName ref="#crabach">クラバック</persName>は細い目をいっそう細め、いまいましそうに<persName ref="#lap">ラップ</persName>をにらみつけました。</p>
+        <p>「黙りたまえ。君などに何がわかる？　僕は<persName ref="#rock">ロック</persName>を知っているのだ。<persName ref="#rock">ロック</persName>に平身低頭する犬どもよりも<persName ref="#rock">ロック</persName>を知っているのだ。」</p>
+        <p>「まあ少し静かにしたまえ。」</p>
+        <p>「もし静かにしていられるならば、……僕はいつもこう思っている。――僕らの知らない何ものかは僕を、――<persName ref="#crabach">クラバック</persName>をあざけるために<persName ref="#rock">ロック</persName>を僕の前に立たせたのだ。哲学者の<persName ref="#mag">マッグ</persName>はこういうことをなにもかも承知している。いつもあの<ruby><rb>色硝子</rb><rt>いろガラス</rt></ruby>のランタアンの下に古ぼけた本ばかり読んでいるくせに。」</p>
+        <p>「どうして？」</p>
+        <p>「この近ごろ<persName ref="#mag">マッグ</persName>の書いた『<ruby><rb>阿呆</rb><rt>あほう</rt></ruby>の言葉』という本を見たまえ。――」</p>
+        <p><persName ref="#crabach">クラバック</persName>は僕に一冊の本を渡す――というよりも投げつけました。それからまた腕を組んだまま、<ruby><rb>突</rb><rt>つっ</rt></ruby>けんどんにこう言い放ちました。</p>
+        <p>「じゃきょうは失敬しよう。」</p>
+        <p>僕はしょげ返った<persName ref="#lap">ラップ</persName>といっしょにもう一度往来へ出ることにしました。人通りの多い往来は相変わらず<ruby><rb>毛生欅</rb><rt>ぶな</rt></ruby>の並み木のかげにいろいろの店を並べています。僕らはなんということもなしに黙って歩いてゆきました。するとそこへ通りかかったのは髪の長い詩人の<persName ref="#tock">トック</persName>です。<persName ref="#tock">トック</persName>は僕らの顔を見ると、腹の袋から<ruby><rb>手巾</rb><rt>ハンケチ</rt></ruby>を出し、何度も額をぬぐいました。</p>
+        <p>「やあ、しばらく会わなかったね。僕はきょうは久しぶりに<persName ref="#crabach">クラバック</persName>を尋ねようと思うのだが、……」</p>
+        <p>僕はこの芸術家たちを<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>させては悪いと思い、<persName ref="#crabach">クラバック</persName>のいかにも<ruby><rb>不機嫌</rb><rt>ふきげん</rt></ruby>だったことを<ruby><rb>婉曲</rb><rt>えんきょく</rt></ruby>に<persName ref="#tock">トック</persName>に話しました。</p>
+        <p>「そうか。じゃやめにしよう。なにしろ<persName ref="#crabach">クラバック</persName>は神経衰弱だからね。……僕もこの二三週間は眠られないのに弱っているのだ。」</p>
+        <p>「どうだね、僕らといっしょに散歩をしては？」</p>
+        <p>「いや、きょうはやめにしよう。おや！」</p>
+        <p><persName ref="#tock">トック</persName>はこう叫ぶが早いか、しっかり僕の腕をつかみました。しかもいつか<ruby><rb>体中</rb><rt>からだじゅう</rt></ruby>に冷汗を流しているのです。</p>
+        <p>「どうしたのだ？」</p>
+        <p>「どうしたのです？」</p>
+        <p>「なにあの自動車の窓の中から緑いろの<ruby><rb>猿</rb><rt>さる</rt></ruby>が一匹首を出したように見えたのだよ。」</p>
+        <p>僕は多少心配になり、とにかくあの医者の<persName ref="#chack">チャック</persName>に診察してもらうように勧めました。しかし<persName ref="#tock">トック</persName>はなんと言っても、承知する<ruby><rb>気色</rb><rt>けしき</rt></ruby>さえ見せません。のみならず何か疑わしそうに僕らの顔を見比べながら、こんなことさえ言い出すのです。</p>
+        <p>「僕は決して無政府主義者ではないよ。それだけはきっと忘れずにいてくれたまえ。――ではさようなら。<persName ref="#chack">チャック</persName>などはまっぴらごめんだ。」</p>
+        <p>僕らはぼんやりたたずんだまま、<persName ref="#tock">トック</persName>の後ろ姿を見送っていました。僕らは――いや、「僕ら」ではありません。学生の<persName ref="#lap">ラップ</persName>はいつの間にか往来のまん中に<ruby><rb>脚</rb><rt>あし</rt></ruby>をひろげ、しっきりない自動車や人通りを<ruby><rb>股目金</rb><rt>まためがね</rt></ruby>にのぞいているのです。僕はこの<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>も発狂したかと思い、驚いて<persName ref="#lap">ラップ</persName>を引き起こしました。</p>
+        <p>「<ruby><rb>常談</rb><rt>じょうだん</rt></ruby>じゃない。何をしている？」</p>
+        <p>しかし<persName ref="#lap">ラップ</persName>は目をこすりながら、意外にも落ち着いて返事をしました。</p>
+        <p>「いえ、あまり<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>ですから、さかさまに世の中をながめて見たのです。けれどもやはり同じことですね。」</p>
+      </div>
+      <div type="chapter" xml:id="sec12" n="12">
+        <head>十一</head>
+        <p>これは哲学者の<persName ref="#mag">マッグ</persName>の書いた「<ruby><rb>阿呆</rb><rt>あほう</rt></ruby>の言葉」の中の何章かです。――</p>
+        <p>×</p>
+        <p>阿呆はいつも彼以外のものを阿呆であると信じている。</p>
+        <p>×</p>
+        <p>我々の自然を愛するのは自然は我々を憎んだり<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>したりしないためもないことはない。</p>
+        <p>×</p>
+        <p>もっとも賢い生活は一時代の習慣を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>しながら、しかもそのまた習慣を少しも破らないように暮らすことである。</p>
+        <p>×</p>
+        <p>我々のもっとも誇りたいものは我々の持っていないものだけである。</p>
+        <p>×</p>
+        <p><ruby><rb>何</rb><rt>なん</rt></ruby>びとも偶像を破壊することに異存を持っているものはない。同時にまた何びとも偶像になることに異存を持っているものはない。しかし偶像の台座の上に安んじてすわっていられるものはもっとも神々に恵まれたもの、――阿呆か、悪人か、英雄かである。（<persName ref="#crabach">クラバック</persName>はこの章の上へ<ruby><rb>爪</rb><rt>つめ</rt></ruby>の<ruby><rb>痕</rb><rt>あと</rt></ruby>をつけていました。）</p>
+        <p>×</p>
+        <p>我々の生活に必要な思想は三千年<ruby><rb>前</rb><rt>ぜん</rt></ruby>に尽きたかもしれない。我々はただ古い<ruby><rb>薪</rb><rt>たきぎ</rt></ruby>に新しい炎を加えるだけであろう。</p>
+        <p>×</p>
+        <p>我々の特色は我々自身の意識を超越するのを常としている。</p>
+        <p>×</p>
+        <p>幸福は苦痛を伴い、平和は<ruby><rb>倦怠</rb><rt>けんたい</rt></ruby>を伴うとすれば、――？</p>
+        <p>×</p>
+        <p>自己を弁護することは他人を弁護することよりも困難である。疑うものは弁護士を見よ。</p>
+        <p>×</p>
+        <p><ruby><rb>矜誇</rb><rt>きょうか</rt></ruby>、愛欲、疑惑――あらゆる罪は三千年来、この三者から発している。同時にまたおそらくはあらゆる徳も。</p>
+        <p>×</p>
+        <p>物質的欲望を減ずることは必ずしも平和をもたらさない。我々は平和を得るためには精神的欲望も減じなければならぬ。（<persName ref="#crabach">クラバック</persName>はこの章の上にも<ruby><rb>爪</rb><rt>つめ</rt></ruby>の<ruby><rb>痕</rb><rt>あと</rt></ruby>を残していました。）</p>
+        <p>×</p>
+        <p>我々は人間よりも不幸である。人間は<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>ほど進化していない。（僕はこの章を読んだ時思わず笑ってしまいました。）</p>
+        <p>×</p>
+        <p>成すことは成し得ることであり、成し得ることは成すことである。<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>我々の生活はこういう循環論法を脱することはできない。――すなわち不合理に終始している。</p>
+        <p>×</p>
+        <p><persName ref="#baudelaire">ボオドレエル</persName>は白痴になった<ruby><rb>後</rb><rt>のち</rt></ruby>、彼の人生観をたった一語に、――女陰の一語に表白した。しかし彼自身を語るものは必ずしもこう言ったことではない。むしろ彼の天才に、――彼の生活を維持するに足る詩的天才に信頼したために胃袋の一語を忘れたことである。（この章にもやはり<persName ref="#crabach">クラバック</persName>の爪の痕は残っていました。）</p>
+        <p>×</p>
+        <p>もし理性に終始するとすれば、我々は当然我々自身の存在を否定しなければならぬ。理性を神にした<persName ref="#voltaire">ヴォルテエル</persName>の幸福に一生をおわったのはすなわち人間の河童よりも進化していないことを示すものである。</p>
+      </div>
+      <div type="chapter" xml:id="sec13" n="13">
+        <head>十二</head>
+        <p>ある割合に寒い午後です。僕は「<ruby><rb>阿呆</rb><rt>あほう</rt></ruby>の言葉」を読み飽きましたから、哲学者の<persName ref="#mag">マッグ</persName>を尋ねに出かけました。するとある寂しい町の<ruby><rb>角</rb><rt>かど</rt></ruby>に蚊のようにやせた<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>が一匹、ぼんやり壁によりかかっていました。しかもそれは紛れもない、いつか僕の万年筆を盗んでいった河童なのです。僕はしめたと思いましたから、ちょうどそこへ通りかかった、たくましい巡査を呼びとめました。</p>
+        <p>「ちょっとあの河童を取り調べてください。あの河童はちょうど<ruby><rb>一月</rb><rt>ひとつき</rt></ruby>ばかり前にわたしの万年筆を盗んだのですから。」</p>
+        <p>巡査は右手の棒をあげ、（この国の巡査は<ruby><rb>剣</rb><rt>けん</rt></ruby>の代わりに<ruby><rb>水松</rb><rt>いちい</rt></ruby>の棒を持っているのです。）「おい、君」とその河童へ声をかけました。僕はあるいはその河童は逃げ出しはしないかと思っていました。が、存外落ち着き払って巡査の前へ歩み寄りました。のみならず腕を組んだまま、いかにも<ruby><rb>傲然</rb><rt>ごうぜん</rt></ruby>と僕の顔や巡査の顔をじろじろ見ているのです。しかし巡査は<ruby><rb>怒</rb><rt>おこ</rt></ruby>りもせず、腹の袋から手帳を出してさっそく尋問にとりかかりました。</p>
+        <p>「お前の名は？」</p>
+        <p>「<persName ref="#gluck">グルック</persName>。」</p>
+        <p>「職業は？」</p>
+        <p>「つい二三日前までは郵便配達夫をしていました。」</p>
+        <p>「よろしい。そこでこの人の申し立てによれば、君はこの人の万年筆を盗んでいったということだがね。」</p>
+        <p>「ええ、一月ばかり前に盗みました。」</p>
+        <p>「なんのために？」</p>
+        <p>「子どもの<ruby><rb>玩具</rb><rt>おもちゃ</rt></ruby>にしようと思ったのです。」</p>
+        <p>「その子どもは？」</p>
+        <p>巡査ははじめて相手の河童へ鋭い目を注ぎました。</p>
+        <p>「一週間前に死んでしまいました。」</p>
+        <p>「死亡証明書を持っているかね？」</p>
+        <p>やせた河童は腹の袋から一枚の紙をとり出しました。巡査はその紙へ目を通すと、急ににやにや笑いながら、相手の肩をたたきました。</p>
+        <p>「よろしい。どうも御苦労だったね。」</p>
+        <p>僕は<ruby><rb>呆気</rb><rt>あっけ</rt></ruby>にとられたまま、巡査の顔をながめていました。しかもそのうちにやせた河童は何かぶつぶつつぶやきながら、僕らを後ろにして行ってしまうのです。僕はやっと気をとり直し、こう巡査に尋ねてみました。</p>
+        <p>「どうしてあの河童をつかまえないのです？」</p>
+        <p>「あの河童は無罪ですよ。」</p>
+        <p>「しかし僕の万年筆を盗んだのは……」</p>
+        <p>「子どもの玩具にするためだったのでしょう。けれどもその子どもは死んでいるのです。もし何か御不審だったら、刑法千二百八十五条をお調べなさい。」</p>
+        <p>巡査はこう言いすてたなり、さっさとどこかへ行ってしまいました。僕はしかたがありませんから、「刑法千二百八十五条」を口の中に繰り返し、<persName ref="#mag">マッグ</persName>の<ruby><rb>家</rb><rt>うち</rt></ruby>へ急いでゆきました。哲学者の<persName ref="#mag">マッグ</persName>は客好きです。現にきょうも薄暗い<ruby><rb>部屋</rb><rt>へや</rt></ruby>には裁判官の<persName ref="#pep">ペップ</persName>や医者の<persName ref="#chack">チャック</persName>や<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長の<persName ref="#gehr">ゲエル</persName>などが集まり、<ruby><rb>七色</rb><rt>なないろ</rt></ruby>の色硝子のランタアンの下に<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>の煙を立ち<ruby><rb>昇</rb><rt>のぼ</rt></ruby>らせていました。そこに裁判官の<persName ref="#pep">ペップ</persName>が来ていたのは何よりも僕には<ruby><rb>好</rb><rt>こう</rt></ruby>つごうです。僕は<ruby><rb>椅子</rb><rt>いす</rt></ruby>にかけるが早いか、刑法第千二百八十五条を<ruby><rb>検</rb><rt>しら</rt></ruby>べる代わりにさっそく<persName ref="#pep">ペップ</persName>へ問いかけました。</p>
+        <p>「<persName ref="#pep">ペップ</persName>君、はなはだ失礼ですが、この国では罪人を罰しないのですか？」</p>
+        <p><persName ref="#pep">ペップ</persName>は<ruby><rb>金口</rb><rt>きんぐち</rt></ruby>の煙草の煙をまず<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>と吹き上げてから、いかにもつまらなそうに返事をしました。</p>
+        <p>「罰しますとも。死刑さえ行なわれるくらいですからね。」</p>
+        <p>「しかし僕は<ruby><rb>一月</rb><rt>ひとつき</rt></ruby>ばかり前に、……」</p>
+        <p>僕は委細を話した<ruby><rb>後</rb><rt>のち</rt></ruby>、例の刑法千二百八十五条のことを尋ねてみました。</p>
+        <p>「ふむ、それはこういうのです。――『いかなる犯罪を行ないたりといえども、<ruby><rb>該</rb><rt>がい</rt></ruby>犯罪を行なわしめたる事情の消失したる後は該犯罪者を処罰することを得ず』つまりあなたの場合で言えば、その<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>はかつては親だったのですが、今はもう親ではありませんから、犯罪も自然と消滅するのです。」</p>
+        <p>「それはどうも不合理ですね。」</p>
+        <p>「<ruby><rb>常談</rb><rt>じょうだん</rt></ruby>を言ってはいけません。親だった河童も親である河童も同一に見るのこそ不合理です。そうそう、日本の法律では同一に見ることになっているのですね。それはどうも我々には<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>です。ふふふふふふふふふふ。」</p>
+        <p><persName ref="#pep">ペップ</persName>は巻煙草をほうり出しながら、気のない薄笑いをもらしていました。そこへ口を出したのは法律には縁の遠い<persName ref="#chack">チャック</persName>です。<persName ref="#chack">チャック</persName>はちょっと<ruby><rb>鼻目金</rb><rt>はなめがね</rt></ruby>を直し、こう僕に質問しました。</p>
+        <p>「日本にも死刑はありますか？」</p>
+        <p>「ありますとも。日本では<ruby><rb>絞罪</rb><rt>こうざい</rt></ruby>です。」</p>
+        <p>僕は冷然と構えこんだ<persName ref="#pep">ペップ</persName>に多少反感を感じていましたから、この機会に皮肉を浴びせてやりました。</p>
+        <p>「この国の死刑は日本よりも文明的にできているでしょうね？」</p>
+        <p>「それはもちろん文明的です。」</p>
+        <p><persName ref="#pep">ペップ</persName>はやはり落ち着いていました。</p>
+        <p>「この国では絞罪などは用いません。まれには電気を用いることもあります。しかしたいていは電気も用いません。ただその犯罪の名を言って聞かせるだけです。」</p>
+        <p>「それだけで河童は死ぬのですか？」</p>
+        <p>「死にますとも。我々河童の神経作用はあなたがたのよりも微妙ですからね。」</p>
+        <p>「それは死刑ばかりではありません。殺人にもその手を使うのがあります――」</p>
+        <p>社長の<persName ref="#gehr">ゲエル</persName>は<ruby><rb>色硝子</rb><rt>いろガラス</rt></ruby>の光に顔中紫に染まりながら、人なつこい<ruby><rb>笑顔</rb><rt>えがお</rt></ruby>をして見せました。</p>
+        <p>「わたしはこの間もある社会主義者に『貴様は<ruby><rb>盗人</rb><rt>ぬすびと</rt></ruby>だ』と言われたために心臓<ruby><rb>痲痺</rb><rt>まひ</rt></ruby>を起こしかかったものです。」</p>
+        <p>「それは案外多いようですね。わたしの知っていたある弁護士などはやはりそのために死んでしまったのですからね。」</p>
+        <p>僕はこう口を入れた<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>、――哲学者の<persName ref="#mag">マッグ</persName>をふりかえりました。<persName ref="#mag">マッグ</persName>はやはりいつものように皮肉な微笑を浮かべたまま、だれの顔も見ずにしゃべっているのです。</p>
+        <p>「その河童はだれかに<ruby><rb>蛙</rb><rt>かえる</rt></ruby>だと言われ、――もちろんあなたも御承知でしょう、この国で蛙だと言われるのは<ruby><rb>人非人</rb><rt>にんぴにん</rt></ruby>という意味になることぐらいは。――<ruby><rb>己</rb><rt>おれ</rt></ruby>は蛙かな？　蛙ではないかな？　と毎日考えているうちにとうとう死んでしまったものです。」</p>
+        <p>「それはつまり自殺ですね。」</p>
+        <p>「もっともその河童を蛙だと言ったやつは殺すつもりで言ったのですがね。あなたがたの目から見れば、やはりそれも自殺という……」</p>
+        <p>ちょうど<persName ref="#mag">マッグ</persName>がこう言った時です。突然その<ruby><rb>部屋</rb><rt>へや</rt></ruby>の壁の向こうに、――たしかに詩人の<persName ref="#tock">トック</persName>の家に鋭いピストルの音が一発、空気をはね返すように響き渡りました。</p>
+      </div>
+      <div type="chapter" xml:id="sec14" n="14">
+        <head>十三</head>
+        <p>僕らは<persName ref="#tock">トック</persName>の家へ駆けつけました。<persName ref="#tock">トック</persName>は右の手にピストルを握り、頭の皿から血を出したまま、高山植物の<ruby><rb>鉢植</rb><rt>はちう</rt></ruby>えの中に<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>けになって倒れていました。そのまたそばには<ruby><rb>雌</rb><rt>めす</rt></ruby>の河童が一匹、<persName ref="#tock">トック</persName>の胸に顔を<ruby><rb>埋</rb><rt>うず</rt></ruby>め、大声をあげて泣いていました。僕は雌の河童を抱き起こしながら、（いったい僕はぬらぬらする河童の皮膚に手を触れることをあまり好んではいないのですが。）「どうしたのです？」と尋ねました。</p>
+        <p>「どうしたのだか、わかりません。ただ何か書いていたと思うと、いきなりピストルで頭を打ったのです。ああ、わたしはどうしましょう？　qur-r-r-r-r, qur-r-r-r-r」（これは河童の泣き声です。）</p>
+        <p>「なにしろ<persName ref="#tock">トック</persName>君はわがままだったからね。」</p>
+        <p><ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長の<persName ref="#gehr">ゲエル</persName>は悲しそうに頭を振りながら、裁判官の<persName ref="#pep">ペップ</persName>にこう言いました。しかし<persName ref="#pep">ペップ</persName>は何も言わずに<ruby><rb>金口</rb><rt>きんぐち</rt></ruby>の<ruby><rb>巻煙草</rb><rt>まきたばこ</rt></ruby>に火をつけていました。すると今までひざまずいて、<persName ref="#tock">トック</persName>の<ruby><rb>創口</rb><rt>きずぐち</rt></ruby>などを調べていた<persName ref="#chack">チャック</persName>はいかにも医者らしい態度をしたまま、僕ら五人に宣言しました。（実はひとりと<ruby><rb>四匹</rb><rt>しひき</rt></ruby>とです。）</p>
+        <p>「もう<ruby><rb>駄目</rb><rt>だめ</rt></ruby>です。<persName ref="#tock">トック</persName>君は元来胃病でしたから、それだけでも<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>になりやすかったのです。」</p>
+        <p>「何か書いていたということですが。」</p>
+        <p>哲学者の<persName ref="#mag">マッグ</persName>は弁解するようにこう<ruby><rb>独</rb><rt>ひと</rt></ruby>り<ruby><rb>語</rb><rt>ごと</rt></ruby>をもらしながら、机の上の紙をとり上げました。僕らは皆<ruby><rb>頸</rb><rt>くび</rt></ruby>をのばし、（もっとも僕だけは例外です。）幅の広い<persName ref="#mag">マッグ</persName>の肩越しに一枚の紙をのぞきこみました。</p>
+        <p>「いざ、立ちてゆかん。<ruby><rb>娑婆界</rb><rt>しゃばかい</rt></ruby>を隔つる谷へ。</p>
+        <p>岩むらはこごしく、やま水は清く、</p>
+        <p>薬草の花はにおえる谷へ。」</p>
+        <p><persName ref="#mag">マッグ</persName>は僕らをふり返りながら、微苦笑といっしょにこう言いました。</p>
+        <p>「これは<persName ref="#goethe">ゲエテ</persName>の『ミニヨンの歌』の<ruby><rb>剽窃</rb><rt>ひょうせつ</rt></ruby>ですよ。すると<persName ref="#tock">トック</persName>君の自殺したのは詩人としても疲れていたのですね。」</p>
+        <p>そこへ偶然自動車を乗りつけたのはあの音楽家の<persName ref="#crabach">クラバック</persName>です。<persName ref="#crabach">クラバック</persName>はこういう光景を見ると、しばらく戸口にたたずんでいました。が、僕らの前へ歩み寄ると、<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>りつけるように<persName ref="#mag">マッグ</persName>に話しかけました。</p>
+        <p>「それは<persName ref="#tock">トック</persName>の<ruby><rb>遺言状</rb><rt>ゆいごんじょう</rt></ruby>ですか？」</p>
+        <p>「いや、最後に書いていた詩です。」</p>
+        <p>「詩？」</p>
+        <p>やはり少しも騒がない<persName ref="#mag">マッグ</persName>は髪を<ruby><rb>逆立</rb><rt>さかだ</rt></ruby>てた<persName ref="#crabach">クラバック</persName>に<persName ref="#tock">トック</persName>の詩稿を渡しました。<persName ref="#crabach">クラバック</persName>はあたりには目もやらずに熱心にその詩稿を読み出しました。しかも<persName ref="#mag">マッグ</persName>の言葉にはほとんど返事さえしないのです。</p>
+        <p>「あなたは<persName ref="#tock">トック</persName>君の死をどう思いますか？」</p>
+        <p>「いざ、立ちて、……僕もまたいつ死ぬかわかりません。……<ruby><rb>娑婆界</rb><rt>しゃばかい</rt></ruby>を隔つる谷へ。……」</p>
+        <p>「しかしあなたは<persName ref="#tock">トック</persName>君とはやはり親友のひとりだったのでしょう？」</p>
+        <p>「親友？　<persName ref="#tock">トック</persName>はいつも孤独だったのです。……娑婆界を隔つる谷へ、……ただ<persName ref="#tock">トック</persName>は不幸にも、……岩むらはこごしく……」</p>
+        <p>「不幸にも？」</p>
+        <p>「やま水は清く、……あなたがたは幸福です。……岩むらはこごしく。……」</p>
+        <p>僕はいまだに泣き声を絶たない<ruby><rb>雌</rb><rt>めす</rt></ruby>の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>に同情しましたから、そっと肩を<ruby><rb>抱</rb><rt>かか</rt></ruby>えるようにし、<ruby><rb>部屋</rb><rt>へや</rt></ruby>の<ruby><rb>隅</rb><rt>すみ</rt></ruby>の<ruby><rb>長椅子</rb><rt>ながいす</rt></ruby>へつれていきました。そこには二歳か三歳かの河童が一匹、何も知らずに笑っているのです。僕は雌の河童の代わりに子どもの河童をあやしてやりました。するといつか僕の目にも涙のたまるのを感じました。僕が河童の国に住んでいるうちに涙というものをこぼしたのは前にもあとにもこの時だけです。</p>
+        <p>「しかしこういうわがままの河童といっしょになった家族は気の毒ですね。」</p>
+        <p>「なにしろあとのことも考えないのですから。」</p>
+        <p>裁判官の<persName ref="#pep">ペップ</persName>は相変わらず、新しい<ruby><rb>巻煙草</rb><rt>まきたばこ</rt></ruby>に火をつけながら、資本家の<persName ref="#gehr">ゲエル</persName>に返事をしていました。すると僕らを驚かせたのは音楽家の<persName ref="#crabach">クラバック</persName>のおお声です。<persName ref="#crabach">クラバック</persName>は詩稿を握ったまま、だれにともなしに呼びかけました。</p>
+        <p>「しめた！　すばらしい葬送曲ができるぞ。」</p>
+        <p><persName ref="#crabach">クラバック</persName>は細い目をかがやかせたまま、ちょっと<persName ref="#mag">マッグ</persName>の手を握ると、いきなり戸口へ飛んでいきました。もちろんもうこの時には隣近所の河童が大勢、<persName ref="#tock">トック</persName>の家の戸口に集まり、珍しそうに家の中をのぞいているのです。しかし<persName ref="#crabach">クラバック</persName>はこの河童たちを<ruby><rb>遮二無二</rb><rt>しゃにむに</rt></ruby>左右へ押しのけるが早いか、ひらりと自動車へ飛び乗りました。同時にまた自動車は爆音を立ててたちまちどこかへ行ってしまいました。</p>
+        <p>「こら、こら、そうのぞいてはいかん。」</p>
+        <p>裁判官の<persName ref="#pep">ペップ</persName>は巡査の代わりに大勢の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>を押し出した<ruby><rb>後</rb><rt>のち</rt></ruby>、<persName ref="#tock">トック</persName>の家の戸をしめてしまいました。<ruby><rb>部屋</rb><rt>へや</rt></ruby>の中はそのせいか急にひっそりなったものです。僕らはこういう静かさの中に――高山植物の花の香に交じった<persName ref="#tock">トック</persName>の血の<ruby><rb>匂</rb><rt>にお</rt></ruby>いの中に<ruby><rb>後始末</rb><rt>あとしまつ</rt></ruby>のことなどを相談しました。しかしあの哲学者の<persName ref="#mag">マッグ</persName>だけは<persName ref="#tock">トック</persName>の<ruby><rb>死骸</rb><rt>しがい</rt></ruby>をながめたまま、ぼんやり何か考えています。僕は<persName ref="#mag">マッグ</persName>の肩をたたき、「何を考えているのです？」と尋ねました。</p>
+        <p>「河童の生活というものをね。」</p>
+        <p>「河童の生活がどうなるのです？」</p>
+        <p>「我々河童はなんと言っても、河童の生活をまっとうするためには、……」</p>
+        <p><persName ref="#mag">マッグ</persName>は多少はずかしそうにこう小声でつけ加えました。</p>
+        <p>「とにかく我々河童以外の何ものかの力を信ずることですね。」</p>
+      </div>
+      <div type="chapter" xml:id="sec15" n="15">
+        <head>一四</head>
+        <p>僕に宗教というものを思い出させたのはこういう<persName ref="#mag">マッグ</persName>の言葉です。僕はもちろん物質主義者ですから、<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>に宗教を考えたことは一度もなかったのに違いありません。が、この時は<persName ref="#tock">トック</persName>の死にある感動を受けていたためにいったい河童の宗教はなんであるかと考え出したのです。僕はさっそく学生の<persName ref="#lap">ラップ</persName>にこの問題を尋ねてみました。</p>
+        <p>「それは<ruby><rb>基督教</rb><rt>キリストきょう</rt></ruby>、仏教、モハメット教、<ruby><rb>拝火教</rb><rt>はいかきょう</rt></ruby>なども行なわれています。まず一番勢力のあるものはなんといっても近代教でしょう。生活教とも言いますがね。」（「生活教」という訳語は当たっていないかもしれません。この原語は Quemoocha です。cha は<ruby><rb>英吉利</rb><rt>イギリス</rt></ruby>語の ism という意味に当たるでしょう。quemoo の原形 quemal の訳は単に「生きる」というよりも「飯を食ったり、酒を飲んだり、<ruby><rb>交合</rb><rt>こうごう</rt></ruby>を行なったり」する意味です。）</p>
+        <p>「じゃこの国にも教会だの寺院だのはあるわけなのだね？」</p>
+        <p>「<ruby><rb>常談</rb><rt>じょうだん</rt></ruby>を言ってはいけません。近代教の大寺院などはこの国第一の大建築ですよ。どうです、ちょっと見物に行っては？」</p>
+        <p>ある<ruby><rb>生温</rb><rt>なまあたた</rt></ruby>かい曇天の午後、<persName ref="#lap">ラップ</persName>は<ruby><rb>得々</rb><rt>とくとく</rt></ruby>と僕といっしょにこの大寺院へ出かけました。なるほどそれは<placeName ref="#nikolai-do">ニコライ堂</placeName>の十倍もある大建築です。のみならずあらゆる建築様式を一つに組み上げた大建築です。僕はこの大寺院の前に立ち、高い塔や<ruby><rb>円</rb><rt>まる</rt></ruby>屋根をながめた時、なにか無気味にさえ感じました。実際それらは天に向かって伸びた無数の<ruby><rb>触手</rb><rt>しょくしゅ</rt></ruby>のように見えたものです。僕らは玄関の前にたたずんだまま、（そのまた玄関に比べてみても、どのくらい僕らは小さかったのでしょう！）しばらくこの建築よりもむしろ途方もない怪物に近い<ruby><rb>稀代</rb><rt>きだい</rt></ruby>の大寺院を見上げていました。</p>
+        <p>大寺院の内部もまた広大です。そのコリント風の円柱の立った中には<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>人が何人も歩いていました。しかしそれらは僕らのように非常に小さく見えたものです。そのうちに僕らは腰の曲がった一匹の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>に出合いました。すると<persName ref="#lap">ラップ</persName>はこの河童にちょっと頭を下げた上、<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>にこう話しかけました。</p>
+        <p>「長老、<ruby><rb>御</rb><rt>ご</rt></ruby>達者なのは何よりもです。」</p>
+        <p>相手の河童もお<ruby><rb>時宜</rb><rt>じぎ</rt></ruby>をした<ruby><rb>後</rb><rt>のち</rt></ruby>、やはり丁寧に返事をしました。</p>
+        <p>「これは<persName ref="#lap">ラップ</persName>さんですか？　あなたも相変わらず、――（と言いかけながら、ちょっと言葉をつがなかったのは<persName ref="#lap">ラップ</persName>の<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>の腐っているのにやっと気がついたためだったでしょう。）――ああ、とにかく御丈夫らしいようですね。が、きょうはどうしてまた……」</p>
+        <p>「きょうはこの<ruby><rb>方</rb><rt>かた</rt></ruby>のお伴をしてきたのです。この方はたぶん御承知のとおり、――」</p>
+        <p>それから<persName ref="#lap">ラップ</persName>は<ruby><rb>滔々</rb><rt>とうとう</rt></ruby>と僕のことを話しました。どうもまたそれはこの大寺院へ<persName ref="#lap">ラップ</persName>がめったに来ないことの弁解にもなっていたらしいのです。</p>
+        <p>「ついてはどうかこの方の御案内を願いたいと思うのですが。」</p>
+        <p>長老は<ruby><rb>大様</rb><rt>おおよう</rt></ruby>に微笑しながら、まず僕に<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>をし、静かに<ruby><rb>正面</rb><rt>しょうめん</rt></ruby>の祭壇を指さしました。</p>
+        <p>「御案内と申しても、何もお役に立つことはできません。我々信徒の<ruby><rb>礼拝</rb><rt>らいはい</rt></ruby>するのは正面の祭壇にある『生命の<ruby><rb>樹</rb><rt>き</rt></ruby>』です。『生命の樹』にはごらんのとおり、金と緑との<ruby><rb>果</rb><rt>み</rt></ruby>がなっています。あの金の果を『善の果』と言い、あの緑の果を『悪の果』と言います。……」</p>
+        <p>僕はこういう説明のうちにもう退屈を感じ出しました。それはせっかくの長老の言葉も古い<ruby><rb>比喩</rb><rt>ひゆ</rt></ruby>のように聞こえたからです。僕はもちろん熱心に聞いている<ruby><rb>容子</rb><rt>ようす</rt></ruby>を装っていました。が、時々は大寺院の内部へそっと目をやるのを忘れずにいました。</p>
+        <p>コリント風の柱、ゴシック風の<ruby><rb>穹窿</rb><rt>きゅうりゅう</rt></ruby>、アラビアじみた<ruby><rb>市松</rb><rt>いちまつ</rt></ruby>模様の<ruby><rb>床</rb><rt>ゆか</rt></ruby>、セセッションまがいの<ruby><rb>祈祷机</rb><rt>きとうづくえ</rt></ruby>、――こういうものの作っている調和は妙に野蛮な美を<ruby><rb>具</rb><rt>そな</rt></ruby>えていました。しかし僕の目をひいたのは何よりも両側の<ruby><rb>龕</rb><rt>がん</rt></ruby>の中にある大理石の半身像です。僕は何かそれらの像を見知っているように思いました。それもまた不思議ではありません。あの腰の曲った<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>は「生命の樹」の説明をおわると、今度は僕や<persName ref="#lap">ラップ</persName>といっしょに右側の龕の前へ歩み寄り、その龕の中の半身像にこういう説明を加え出しました。</p>
+        <p>「これは我々の聖徒のひとり、――あらゆるものに反逆した聖徒<persName ref="#strindberg">ストリントベリイ</persName>です。この聖徒はさんざん苦しんだあげく、<persName ref="#swedenborg">スウェデンボルグ</persName>の哲学のために救われたように言われています。が、実は救われなかったのです。この聖徒はただ我々のように生活教を信じていました。――というよりも信じるほかはなかったのでしょう。この聖徒の我々に残した『伝説』という本を読んでごらんなさい。この聖徒も自殺未遂者だったことは聖徒自身告白しています。」</p>
+        <p>僕はちょっと<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>になり、次の<ruby><rb>龕</rb><rt>がん</rt></ruby>へ目をやりました。次の龕にある半身像は<ruby><rb>口髭</rb><rt>くちひげ</rt></ruby>の太い<ruby><rb>独逸</rb><rt>ドイツ</rt></ruby>人です。</p>
+        <p>「これは<persName ref="#zarathustra">ツァラトストラ</persName>の詩人<persName ref="#nietzsche">ニイチェ</persName>です。その聖徒は聖徒自身の造った超人に救いを求めました。が、やはり救われずに気違いになってしまったのです。もし気違いにならなかったとすれば、あるいは聖徒の<ruby><rb>数</rb><rt>かず</rt></ruby>へはいることもできなかったかもしれません。……」</p>
+        <p>長老はちょっと黙った<ruby><rb>後</rb><rt>のち</rt></ruby>、第三の<ruby><rb>龕</rb><rt>がん</rt></ruby>の前へ案内しました。</p>
+        <p>「三番目にあるのは<persName ref="#tolstoy">トルストイ</persName>です。この聖徒はだれよりも苦行をしました。それは元来貴族だったために好奇心の多い公衆に苦しみを見せることをきらったからです。この聖徒は事実上信ぜられない<ruby><rb>基督</rb><rt>キリスト</rt></ruby>を信じようと努力しました。いや、信じているようにさえ公言したこともあったのです。しかしとうとう晩年には悲壮な<ruby><rb>譃</rb><rt>うそ</rt></ruby>つきだったことに<ruby><rb>堪</rb><rt>た</rt></ruby>えられないようになりました。この聖徒も時々書斎の<ruby><rb>梁</rb><rt>はり</rt></ruby>に恐怖を感じたのは有名です。けれども聖徒の数にはいっているくらいですから、もちろん自殺したのではありません。」</p>
+        <p>第四の龕の中の半身像は我々日本人のひとりです。僕はこの日本人の顔を見た時、さすがに<ruby><rb>懐</rb><rt>なつか</rt></ruby>しさを感じました。</p>
+        <p>「これは<persName ref="#kunikida-doppo"><ruby><rb>国木田独歩</rb><rt>くにきだどっぽ</rt></ruby></persName>です。<ruby><rb>轢死</rb><rt>れきし</rt></ruby>する<ruby><rb>人足</rb><rt>にんそく</rt></ruby>の心もちをはっきり知っていた詩人です。しかしそれ以上の説明はあなたには不必要に違いありません。では五番目の龕の中をごらんください。――」</p>
+        <p>「これは<persName ref="#wagner">ワグネル</persName>ではありませんか？」</p>
+        <p>「そうです。国王の友だちだった革命家です。聖徒<persName ref="#wagner">ワグネル</persName>は晩年には食前の<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>さえしていました。しかしもちろん基督教よりも生活教の信徒のひとりだったのです。<persName ref="#wagner">ワグネル</persName>の残した手紙によれば、<ruby><rb>娑婆苦</rb><rt>しゃばく</rt></ruby>は何度この聖徒を死の前に駆りやったかわかりません。」</p>
+        <p>僕らはもうその時には第六の<ruby><rb>龕</rb><rt>がん</rt></ruby>の前に立っていました。</p>
+        <p>「これは聖徒<persName ref="#strindberg">ストリントベリイ</persName>の友だちです。子どもの大勢ある細君の代わりに十三四の<placeName ref="#tahiti">クイティ</placeName>の女をめとった商売人上がりの<placeName ref="#france"><ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby></placeName>の画家です。この聖徒は太い血管の中に水夫の血を流していました。が、<ruby><rb>唇</rb><rt>くちびる</rt></ruby>をごらんなさい。<ruby><rb>砒素</rb><rt>ひそ</rt></ruby>か何かの<ruby><rb>痕</rb><rt>あと</rt></ruby>が残っています。第七の龕の中にあるのは……もうあなたはお疲れでしょう。ではどうかこちらへおいでください。」</p>
+        <p>僕は実際疲れていましたから、<persName ref="#lap">ラップ</persName>といっしょに長老に従い、<ruby><rb>香</rb><rt>こう</rt></ruby>の<ruby><rb>匂</rb><rt>にお</rt></ruby>いのする廊下伝いにある<ruby><rb>部屋</rb><rt>へや</rt></ruby>へはいりました。そのまた小さい部屋の<ruby><rb>隅</rb><rt>すみ</rt></ruby>には黒い<persName ref="#venus">ヴェヌス</persName>の像の下に<ruby><rb>山葡萄</rb><rt>やまぶどう</rt></ruby>が一ふさ献じてあるのです。僕はなんの装飾もない僧房を想像していただけにちょっと意外に感じました。すると長老は僕の<ruby><rb>容子</rb><rt>ようす</rt></ruby>にこういう気もちを感じたとみえ、僕らに<ruby><rb>椅子</rb><rt>いす</rt></ruby>を<ruby><rb>薦</rb><rt>すす</rt></ruby>める前に半ば気の毒そうに説明しました。</p>
+        <p>「どうか我々の宗教の生活教であることを忘れずにください。我々の神、――『生命の<ruby><rb>樹</rb><rt>き</rt></ruby>』の教えは『<ruby><rb>旺盛</rb><rt>おうせい</rt></ruby>に生きよ』というのですから。……<persName ref="#lap">ラップ</persName>さん、あなたはこのかたに我々の聖書をごらんにいれましたか？」</p>
+        <p>「いえ、……実はわたし自身もほとんど読んだことはないのです。」</p>
+        <p><persName ref="#lap">ラップ</persName>は頭の<ruby><rb>皿</rb><rt>さら</rt></ruby>を<ruby><rb>掻</rb><rt>か</rt></ruby>きながら、正直にこう返事をしました。が、長老は相変わらず静かに微笑して話しつづけました。</p>
+        <p>「それではおわかりなりますまい。我々の神は一日のうちにこの世界を造りました。（『生命の<ruby><rb>樹</rb><rt>き</rt></ruby>』は樹というものの、成しあたわないことはないのです。）のみならず<ruby><rb>雌</rb><rt>めす</rt></ruby>の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>を造りました。すると雌の河童は退屈のあまり、<ruby><rb>雄</rb><rt>おす</rt></ruby>の河童を求めました。我々の神はこの嘆きを<ruby><rb>憐</rb><rt>あわ</rt></ruby>れみ、雌の河童の<ruby><rb>脳髄</rb><rt>のうずい</rt></ruby>を取り、雄の河童を造りました。我々の神はこの二匹の河童に『食えよ、交合せよ、<ruby><rb>旺盛</rb><rt>おうせい</rt></ruby>に生きよ』という祝福を与えました。……」</p>
+        <p>僕は長老の言葉のうちに詩人の<persName ref="#tock">トック</persName>を思い出しました。詩人の<persName ref="#tock">トック</persName>は不幸にも僕のように無神論者です。僕は河童ではありませんから、生活教を知らなかったのも無理はありません。けれども河童の国に生まれた<persName ref="#tock">トック</persName>はもちろん「生命の樹」を知っていたはずです。僕はこの教えに従わなかった<persName ref="#tock">トック</persName>の最後を憐れみましたから、長老の言葉をさえぎるように<persName ref="#tock">トック</persName>のことを話し出しました。</p>
+        <p>「ああ、あの気の毒な詩人ですね。」</p>
+        <p>長老は僕の話を聞き、深い息をもらしました。</p>
+        <p>「我々の運命を定めるものは信仰と境遇と偶然とだけです。（もっともあなたがたはそのほかに遺伝をお数えなさるでしょう。）<persName ref="#tock">トック</persName>さんは不幸にも信仰をお持ちにならなかったのです。」</p>
+        <p>「<persName ref="#tock">トック</persName>はあなたをうらやんでいたでしょう。いや、僕もうらやんでいます。<persName ref="#lap">ラップ</persName>君などは年も若いし、……」</p>
+        <p>「僕も<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>さえちゃんとしていればあるいは楽天的だったかもしれません。」</p>
+        <p>長老は僕らにこう言われると、もう一度深い息をもらしました。しかもその目は涙ぐんだまま、じっと黒い<persName ref="#venus">ヴェヌス</persName>を見つめているのです。</p>
+        <p>「わたしも実は、――これはわたしの秘密ですから、どうかだれにもおっしゃらずにください。――わたしも実は我々の神を信ずるわけにいかないのです。しかしいつかわたしの<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>は、――」</p>
+        <p>ちょうど長老のこう言った時です。突然<ruby><rb>部屋</rb><rt>へや</rt></ruby>の戸があいたと思うと、大きい雌の河童が一匹、いきなり長老へ飛びかかりました。僕らがこの雌の河童を抱きとめようとしたのはもちろんです。が、雌の河童はとっさの<ruby><rb>間</rb><rt>あいだ</rt></ruby>に<ruby><rb>床</rb><rt>ゆか</rt></ruby>の上へ長老を投げ倒しました。</p>
+        <p>「この<ruby><rb>爺</rb><rt>おやじ</rt></ruby>め！　きょうもまたわたしの<ruby><rb>財布</rb><rt>さいふ</rt></ruby>から一杯やる<ruby><rb>金</rb><rt>かね</rt></ruby>を盗んでいったな！」</p>
+        <p>十分ばかりたった<ruby><rb>後</rb><rt>のち</rt></ruby>、僕らは実際逃げ出さないばかりに長老夫婦をあとに残し、大寺院の玄関を<ruby><rb>下</rb><rt>お</rt></ruby>りていきました。</p>
+        <p>「あれではあの長老も『生命の樹』を信じないはずですね。」</p>
+        <p>しばらく黙って歩いた後、<persName ref="#lap">ラップ</persName>は僕にこう言いました。が、僕は返事をするよりも思わず大寺院を振り返りました。大寺院はどんより曇った空にやはり高い塔や<ruby><rb>円屋根</rb><rt>まるやね</rt></ruby>を無数の触手のように伸ばしています。なにか<ruby><rb>沙漠</rb><rt>さばく</rt></ruby>の空に見える<ruby><rb>蜃気楼</rb><rt>しんきろう</rt></ruby>の無気味さを漂わせたまま。……</p>
+      </div>
+      <div type="chapter" xml:id="sec16" n="16">
+        <head>一五</head>
+        <p>それからかれこれ一週間の後、僕はふと医者の<persName ref="#chack">チャック</persName>に珍しい話を聞きました。というのはあの<persName ref="#tock">トック</persName>の<ruby><rb>家</rb><rt>うち</rt></ruby>に幽霊の出るという話なのです。そのころにはもう<ruby><rb>雌</rb><rt>めす</rt></ruby>の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>はどこかほかへ行ってしまい、僕らの友だちの詩人の家も写真師のステュディオに変わっていました。なんでも<persName ref="#chack">チャック</persName>の話によれば、このステュディオでは写真をとると、<persName ref="#tock">トック</persName>の姿もいつの<ruby><rb>間</rb><rt>ま</rt></ruby>にか必ず<ruby><rb>朦朧</rb><rt>もうろう</rt></ruby>と客の後ろに映っているとかいうことです。もっとも<persName ref="#chack">チャック</persName>は物質主義者ですから、死後の生命などを信じていません。現にその話をした時にも悪意のある微笑を浮かべながら、「やはり霊魂というものも物質的存在とみえますね」などと註釈めいたことをつけ加えていました。僕も幽霊を信じないことは<persName ref="#chack">チャック</persName>とあまり変わりません。けれども詩人の<persName ref="#tock">トック</persName>には親しみを感じていましたから、さっそく本屋の店へ駆けつけ、<persName ref="#tock">トック</persName>の幽霊に関する記事や<persName ref="#tock">トック</persName>の幽霊の写真の出ている新聞や雑誌を買ってきました。なるほどそれらの写真を見ると、どこか<persName ref="#tock">トック</persName>らしい河童が一匹、<ruby><rb>老若男女</rb><rt>ろうにゃくなんにょ</rt></ruby>の河童の後ろにぼんやりと姿を現わしていました。しかし僕を驚かせたのは<persName ref="#tock">トック</persName>の幽霊の写真よりも<persName ref="#tock">トック</persName>の幽霊に関する記事、――ことに<persName ref="#tock">トック</persName>の幽霊に関する心霊学協会の報告です。僕はかなり逐語的にその報告を訳しておきましたから、<ruby><rb>下</rb><rt>しも</rt></ruby>に大略を掲げることにしましょう。ただし<ruby><rb>括弧</rb><rt>かっこ</rt></ruby>の中にあるのは僕自身の加えた註釈なのです。――</p>
+        <p>詩人<persName ref="#tock">トック</persName>君の幽霊に関する報告。（心霊学協会雑誌第八千二百七十四号所載）</p>
+        <p>わが心霊学協会は先般自殺したる詩人<persName ref="#tock">トック</persName>君の旧居にして現在は××写真師のステュディオなる□□街第二百五十一号に臨時調査会を開催せり。列席せる会員は<ruby><rb>下</rb><rt>しも</rt></ruby>のごとし。（氏名を略す。）</p>
+        <p>我ら十七名の会員は心霊協会会長<persName ref="#peck">ペック</persName>氏とともに<date when="--09-17">九月十七日</date>午前十時三十分、我らのもっとも信頼するメディアム、<persName ref="#hop-fujin">ホップ夫人</persName>を同伴し、<ruby><rb>該</rb><rt>がい</rt></ruby>ステュディオの一室に参集せり。<persName ref="#hop-fujin">ホップ夫人</persName>は該ステュディオにはいるや、すでに心霊的空気を感じ、全身に<ruby><rb>痙攣</rb><rt>けいれん</rt></ruby>を催しつつ、<ruby><rb>嘔吐</rb><rt>おうと</rt></ruby>すること数回に及べり。夫人の語るところによれば、こは詩人<persName ref="#tock">トック</persName>君の強烈なる<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を愛したる結果、その心霊的空気もまたニコティンを含有するためなりという。</p>
+        <p>我ら会員は<persName ref="#hop-fujin">ホップ夫人</persName>とともに円卓をめぐりて<ruby><rb>黙坐</rb><rt>もくざ</rt></ruby>したり。夫人は三分二十五秒の<ruby><rb>後</rb><rt>のち</rt></ruby>、きわめて急劇なる夢遊状態に陥り、かつ詩人<persName ref="#tock">トック</persName>君の心霊の<ruby><rb>憑依</rb><rt>ひょうい</rt></ruby>するところとなれり。我ら会員は年齢順に従い、夫人に憑依せる<persName ref="#tock">トック</persName>君の心霊と左のごとき問答を開始したり。</p>
+        <p>問　君は何ゆえに幽霊に<ruby><rb>出</rb><rt>い</rt></ruby>ずるか？</p>
+        <p>答　死後の名声を知らんがためなり。</p>
+        <p>問　君――あるいは心霊諸君は死後もなお名声を欲するや？</p>
+        <p>答　少なくとも<ruby><rb>予</rb><rt>よ</rt></ruby>は欲せざるあたわず。しかれども予の<ruby><rb>邂逅</rb><rt>かいこう</rt></ruby>したる日本の一詩人のごときは死後の名声を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>しいたり。</p>
+        <p>問　君はその詩人の姓名を知れりや？</p>
+        <p>答　予は不幸にも忘れたり。ただ彼の好んで作れる十七字詩の一章を記憶するのみ。</p>
+        <p>問　その詩は<ruby><rb>如何</rb><rt>いかん</rt></ruby>？</p>
+        <p>答「古池や<ruby><rb>蛙</rb><rt>かわず</rt></ruby>飛びこむ水の音」。</p>
+        <p>問　君はその詩を佳作なりとなすや？</p>
+        <p>答　<ruby><rb>予</rb><rt>よ</rt></ruby>は必ずしも悪作なりとなさず。ただ「<ruby><rb>蛙</rb><rt>かわず</rt></ruby>」を「<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>」とせんか、さらに<ruby><rb>光彩陸離</rb><rt>こうさいりくり</rt></ruby>たるべし。</p>
+        <p>問　しからばその理由は<ruby><rb>如何</rb><rt>いかん</rt></ruby>？</p>
+        <p>答　我ら河童はいかなる芸術にも河童を求むること痛切なればなり。</p>
+        <p>会長<persName ref="#peck">ペック</persName>氏はこの時にあたり、我ら十七名の会員にこは心霊学協会の臨時調査会にして<ruby><rb>合評会</rb><rt>がっぴょうかい</rt></ruby>にあらざるを注意したり。</p>
+        <p>問　心霊諸君の生活は如何？</p>
+        <p>答　諸君の生活と異なることなし。</p>
+        <p>問　しからば君は君自身の自殺せしを後悔するや？</p>
+        <p>答　必ずしも後悔せず。予は心霊的生活に<ruby><rb>倦</rb><rt>う</rt></ruby>まば、さらにピストルを取りて自活すべし。</p>
+        <p>問　自活するは容易なりや否や？</p>
+        <p><persName ref="#tock">トック</persName>君の心霊はこの問に答うるにさらに問をもってしたり。こは<persName ref="#tock">トック</persName>君を知れるものにはすこぶる自然なる<ruby><rb>応酬</rb><rt>おうしゅう</rt></ruby>なるべし。</p>
+        <p>答　自殺するは容易なりや否や？</p>
+        <p>問　諸君の生命は永遠なりや？</p>
+        <p>答　我らの生命に関しては諸説<ruby><rb>紛々</rb><rt>ふんぷん</rt></ruby>として信ずべからず。幸いに我らの間にも<ruby><rb>基督教</rb><rt>キリストきょう</rt></ruby>、仏教、モハメット教、<ruby><rb>拝火教</rb><rt>はいかきょう</rt></ruby>等の諸宗あることを忘るるなかれ。</p>
+        <p>問　君自身の信ずるところは？</p>
+        <p>答　予は常に懐疑主義者なり。</p>
+        <p>問　しかれども君は少なくとも心霊の存在を疑わざるべし？</p>
+        <p>答　諸君のごとく確信するあたわず。</p>
+        <p>問　君の交友の多少は如何？</p>
+        <p>答　予の交友は古今東西にわたり、三百人を下らざるべし。その著名なるものをあぐれば、<persName ref="#kleist">クライスト</persName>、<persName ref="#mainlander">マインレンデル</persName>、<persName ref="#weininger">ワイニンゲル</persName>……</p>
+        <p>問　君の交友は自殺者のみなりや？</p>
+        <p>答　必ずしもしかりとせず。自殺を弁護せる<persName ref="#montaigne">モンテェニュ</persName>のごときは予が<ruby><rb>畏友</rb><rt>いゆう</rt></ruby>の<ruby><rb>一人</rb><rt>いちにん</rt></ruby>なり。ただ予は自殺せざりし<ruby><rb>厭世</rb><rt>えんせい</rt></ruby>主義者、――<persName ref="#schopenhauer">ショオペンハウエル</persName>の<ruby><rb>輩</rb><rt>はい</rt></ruby>とは交際せず。</p>
+        <p>問　<persName ref="#schopenhauer">ショオペンハウエル</persName>は健在なりや？</p>
+        <p>答　彼は<ruby><rb>目下</rb><rt>もっか</rt></ruby>心霊的厭世主義を樹立し、自活する可否を論じつつあり。しかれどもコレラも<ruby><rb>黴菌病</rb><rt>ばいきんびょう</rt></ruby>なりしを知り、すこぶる<ruby><rb>安堵</rb><rt>あんど</rt></ruby>せるもののごとし。</p>
+        <p>我ら会員は相次いで<persName ref="#napoleon">ナポレオン</persName>、<persName ref="#confucius"><ruby><rb>孔子</rb><rt>こうし</rt></ruby></persName>、<persName ref="#dostoevsky">ドストエフスキイ</persName>、<persName ref="#darwin">ダアウィン</persName>、<persName ref="#cleopatra">クレオパトラ</persName>、<persName ref="#shaka"><ruby><rb>釈迦</rb><rt>しゃか</rt></ruby></persName>、<persName ref="#demosthenes">デモステネス</persName>、<persName ref="#dante">ダンテ</persName>、<persName ref="#sen-no-rikyu"><ruby><rb>千</rb><rt>せん</rt></ruby>の<ruby><rb>利休</rb><rt>りきゅう</rt></ruby></persName>等の心霊の消息を質問したり。しかれども<persName ref="#tock">トック</persName>君は不幸にも詳細に答うることをなさず、かえって<persName ref="#tock">トック</persName>君自身に関する種々のゴシップを質問したり。</p>
+        <p>問　<ruby><rb>予</rb><rt>よ</rt></ruby>の死後の名声は<ruby><rb>如何</rb><rt>いかん</rt></ruby>？</p>
+        <p>答　ある批評家は「群小詩人のひとり」と言えり。</p>
+        <p>問　彼は予が詩集を贈らざりしに<ruby><rb>怨恨</rb><rt>えんこん</rt></ruby>を含めるひとりなるべし。予の全集は出版せられしや？</p>
+        <p>答　君の全集は出版せられたれども、売行きはなはだ振わざるがごとし。</p>
+        <p>問　予の全集は三百年の<ruby><rb>後</rb><rt>のち</rt></ruby>、――すなわち著作権の失われたる後、<ruby><rb>万人</rb><rt>ばんにん</rt></ruby>の<ruby><rb>購</rb><rt>あがな</rt></ruby>うところとなるべし。予の<ruby><rb>同棲</rb><rt>どうせい</rt></ruby>せる女友だちは如何？</p>
+        <p>答　彼女は<ruby><rb>書肆</rb><rt>しょし</rt></ruby><persName ref="#lack-kun">ラック君</persName>の夫人となれり。</p>
+        <p>問　彼女はいまだ不幸にもラックの義眼なるを知らざるなるべし。予が子は如何？</p>
+        <p>答　国立孤児院にありと聞けり。</p>
+        <p><persName ref="#tock">トック</persName>君はしばらく沈黙せる後、新たに質問を開始したり。</p>
+        <p>問　予が家は如何？</p>
+        <p>答　某写真師のステュディオとなれり。</p>
+        <p>問　予の机はいかになれるか？</p>
+        <p>答　いかなれるかを知るものなし。</p>
+        <p>問　予は予の机の<ruby><rb>抽斗</rb><rt>ひきだし</rt></ruby>に予の秘蔵せる<ruby><rb>一束</rb><rt>ひとたば</rt></ruby>の手紙を――しかれどもこは幸いにも多忙なる諸君の関するところにあらず。今やわが心霊界はおもむろに薄暮に沈まんとす。予は諸君と<ruby><rb>訣別</rb><rt>けつべつ</rt></ruby>すべし。さらば。諸君。さらば。わが善良なる諸君。</p>
+        <p><persName ref="#hop-fujin">ホップ夫人</persName>は最後の言葉とともにふたたび急劇に<ruby><rb>覚醒</rb><rt>かくせい</rt></ruby>したり。我ら十七名の会員はこの問答の真なりしことを上天の神に誓って保証せんとす。（なおまた我らの信頼する<persName ref="#hop-fujin">ホップ夫人</persName>に対する<ruby><rb>報酬</rb><rt>ほうしゅう</rt></ruby>はかつて夫人が女優たりし時の<ruby><rb>日当</rb><rt>にっとう</rt></ruby>に従いて支弁したり。）</p>
+      </div>
+      <div type="chapter" xml:id="sec17" n="17">
+        <head>一六</head>
+        <p>僕はこういう記事を読んだ<ruby><rb>後</rb><rt>のち</rt></ruby>、だんだんこの国にいることも<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>になってきましたから、どうか我々人間の国へ帰ることにしたいと思いました。しかしいくら<ruby><rb>探</rb><rt>さが</rt></ruby>して歩いても、僕の落ちた穴は見つかりません。そのうちにあの<persName ref="#bag">バッグ</persName>という<ruby><rb>漁夫</rb><rt>りょうし</rt></ruby>の河童の話には、なんでもこの国の<ruby><rb>街</rb><rt>まち</rt></ruby>はずれにある年をとった河童が一匹、本を読んだり、<ruby><rb>笛</rb><rt>ふえ</rt></ruby>を吹いたり、静かに暮らしているということです。僕はこの河童に尋ねてみれば、あるいはこの国を逃げ出す<ruby><rb>途</rb><rt>みち</rt></ruby>もわかりはしないかと思いましたから、さっそく街はずれへ出かけてゆきました。しかしそこへ行ってみると、いかにも小さい家の中に年をとった河童どころか、頭の皿も固まらない、やっと十二三の河童が一匹、<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>と笛を吹いていました。僕はもちろん<ruby><rb>間違</rb><rt>まちが</rt></ruby>った家へはいったではないかと思いました。が、念のために名をきいてみると、やはり<persName ref="#bag">バッグ</persName>の教えてくれた年よりの河童に違いないのです。</p>
+        <p>「しかしあなたは子どものようですが……」</p>
+        <p>「お前さんはまだ知らないのかい？　わたしはどういう運命か、母親の腹を出た時には<ruby><rb>白髪頭</rb><rt>しらがあたま</rt></ruby>をしていたのだよ。それからだんだん年が若くなり、今ではこんな子どもになったのだよ。けれども年を勘定すれば生まれる前を六十としても、かれこれ百十五六にはなるかもしれない。」</p>
+        <p>僕は<ruby><rb>部屋</rb><rt>へや</rt></ruby>の中を見まわしました。そこには僕の気のせいか、質素な<ruby><rb>椅子</rb><rt>いす</rt></ruby>やテエブルの間に何か清らかな幸福が漂っているように見えるのです。</p>
+        <p>「あなたはどうもほかの河童よりもしあわせに暮らしているようですね？」</p>
+        <p>「さあ、それはそうかもしれない。わたしは若い時は年よりだったし、年をとった時は若いものになっている。従って年よりのように欲にも<ruby><rb>渇</rb><rt>かわ</rt></ruby>かず、若いもののように色にもおぼれない。とにかくわたしの生涯はたといしあわせではないにもしろ、安らかだったのには違いあるまい。」</p>
+        <p>「なるほどそれでは安らかでしょう。」</p>
+        <p>「いや、まだそれだけでは安らかにはならない。わたしは<ruby><rb>体</rb><rt>からだ</rt></ruby>も<ruby><rb>丈夫</rb><rt>じょうぶ</rt></ruby>だったし、一生食うに困らぬくらいの財産を持っていたのだよ。しかし一番しあわせだったのはやはり生まれてきた時に年よりだったことだと思っている。」</p>
+        <p>僕はしばらくこの<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>と自殺した<persName ref="#tock">トック</persName>の話だの毎日医者に見てもらっている<persName ref="#gehr">ゲエル</persName>の話だのをしていました。が、なぜか年をとった河童はあまり僕の話などに興味のないような顔をしていました。</p>
+        <p>「ではあなたはほかの河童のように格別生きていることに<ruby><rb>執着</rb><rt>しゅうじゃく</rt></ruby>を持ってはいないのですね？」</p>
+        <p>年をとった河童は僕の顔を見ながら、静かにこう返事をしました。</p>
+        <p>「わたしもほかの河童のようにこの国へ生まれてくるかどうか、一応父親に尋ねられてから母親の胎内を離れたのだよ。」</p>
+        <p>「しかし僕はふとした拍子に、この国へ<ruby><rb>転</rb><rt>ころ</rt></ruby>げ落ちてしまったのです。どうか僕にこの国から出ていかれる<ruby><rb>路</rb><rt>みち</rt></ruby>を教えてください。」</p>
+        <p>「出ていかれる路は一つしかない。」</p>
+        <p>「というのは？」</p>
+        <p>「それはお前さんのここへ来た路だ。」</p>
+        <p>僕はこの答えを聞いた時になぜか身の毛がよだちました。</p>
+        <p>「その路があいにく見つからないのです。」</p>
+        <p>年をとった河童は水々しい目にじっと僕の顔を見つめました。それからやっと<ruby><rb>体</rb><rt>からだ</rt></ruby>を起こし、<ruby><rb>部屋</rb><rt>へや</rt></ruby>の<ruby><rb>隅</rb><rt>すみ</rt></ruby>へ歩み寄ると、天井からそこに下がっていた一本の<ruby><rb>綱</rb><rt>つな</rt></ruby>を引きました。すると今まで気のつかなかった天窓が一つ開きました。そのまた<ruby><rb>円</rb><rt>まる</rt></ruby>い天窓の外には松や<ruby><rb>檜</rb><rt>ひのき</rt></ruby>が枝を張った向こうに大空が青あおと晴れ渡っています。いや、大きい<ruby><rb>鏃</rb><rt>やじり</rt></ruby>に似た<placeName ref="#yarigatake"><ruby><rb>槍</rb><rt>やり</rt></ruby>ヶ<ruby><rb>岳</rb><rt>たけ</rt></ruby></placeName>の峯もそびえています。僕は飛行機を見た子どものように実際飛び上がって喜びました。</p>
+        <p>「さあ、あすこから出ていくがいい。」</p>
+        <p>年をとった河童はこう言いながら、さっきの綱を指さしました。今まで僕の綱と思っていたのは実は<ruby><rb>綱梯子</rb><rt>つなばしご</rt></ruby>にできていたのです。</p>
+        <p>「ではあすこから出さしてもらいます。」</p>
+        <p>「ただわたしは前もって言うがね。出ていって後悔しないように。」</p>
+        <p>「<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>です。僕は後悔などはしません。」</p>
+        <p>僕はこう返事をするが早いか、もう綱梯子をよじ登っていました。年をとった河童の頭の皿をはるか下にながめながら。</p>
+      </div>
+      <div type="chapter" xml:id="sec18" n="18">
+        <head>一七</head>
+        <p>僕は<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>の国から帰ってきた<ruby><rb>後</rb><rt>のち</rt></ruby>、しばらくは我々人間の皮膚の<ruby><rb>匂</rb><rt>にお</rt></ruby>いに閉口しました。我々人間に比べれば、河童は実に清潔なものです。のみならず我々人間の頭は河童ばかり見ていた僕にはいかにも気味の悪いものに見えました。これはあるいはあなたにはおわかりにならないかもしれません。しかし目や口はともかくも、この鼻というものは妙に恐ろしい気を起こさせるものです。僕はもちろんできるだけ、だれにも会わない算段をしました。が、我々人間にもいつか次第に慣れ出したとみえ、半年ばかりたつうちにどこへでも出るようになりました。ただそれでも困ったことは何か話をしているうちにうっかり河童の国の言葉を口に出してしまうことです。</p>
+        <p>「君はあしたは<ruby><rb>家</rb><rt>うち</rt></ruby>にいるかね？」</p>
+        <p>「Qua」</p>
+        <p>「なんだって？」</p>
+        <p>「いや、いるということだよ。」</p>
+        <p>だいたいこういう調子だったものです。</p>
+        <p>しかし河童の国から帰ってきた後、ちょうど一年ほどたった時、僕はある事業の失敗したために……（Ｓ<ruby><rb>博士</rb><rt>はかせ</rt></ruby>は彼がこう言った時、「その話はおよしなさい」と注意をした。なんでも博士の話によれば、彼はこの話をするたびに看護人の手にもおえないくらい、乱暴になるとかいうことである。）</p>
+        <p>ではその話はやめましょう。しかしある事業の失敗したために僕はまた河童の国へ帰りたいと思い出しました。そうです。「<ruby><rb>行</rb><rt>ゆ</rt></ruby>きたい」のではありません。「帰りたい」と思い出したのです。河童の国は当時の僕には故郷のように感ぜられましたから。</p>
+        <p>僕はそっと<ruby><rb>家</rb><rt>うち</rt></ruby>を脱け出し、中央線の汽車へ乗ろうとしました。そこをあいにく巡査につかまり、とうとう病院へ入れられたのです。僕はこの病院へはいった当座も河童の国のことを<ruby><rb>想</rb><rt>おも</rt></ruby>いつづけました。医者の<persName ref="#chack">チャック</persName>はどうしているでしょう？　哲学者の<persName ref="#mag">マッグ</persName>も相変わらず<ruby><rb>七色</rb><rt>なないろ</rt></ruby>の<ruby><rb>色硝子</rb><rt>いろガラス</rt></ruby>のランタアンの下に何か考えているかもしれません。ことに僕の親友だった<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>の腐った学生の<persName ref="#lap">ラップ</persName>は、――あるきょうのように曇った午後です。こんな追憶にふけっていた僕は思わず声をあげようとしました。それはいつの<ruby><rb>間</rb><rt>ま</rt></ruby>にはいってきたか、<persName ref="#bag">バッグ</persName>という<ruby><rb>漁夫</rb><rt>りょうし</rt></ruby>の河童が一匹、僕の前にたたずみながら、何度も頭を下げていたからです。僕は心をとり直した<ruby><rb>後</rb><rt>のち</rt></ruby>、――泣いたか笑ったかも覚えていません。が、とにかく久しぶりに河童の国の言葉を使うことに感動していたことはたしかです。</p>
+        <p>「おい、<persName ref="#bag">バッグ</persName>、どうして来た？」</p>
+        <p>「へい、お見舞いに上がったのです。なんでも御病気だとかいうことですから。」</p>
+        <p>「どうしてそんなことを知っている？」</p>
+        <p>「ラディオのニウスで知ったのです。」</p>
+        <p><persName ref="#bag">バッグ</persName>は得意そうに笑っているのです。</p>
+        <p>「それにしてもよく来られたね？」</p>
+        <p>「なに、<ruby><rb>造作</rb><rt>ぞうさ</rt></ruby>はありません。<placeName ref="#tokyo">東京</placeName>の川や掘割りは河童には往来も同様ですから。」</p>
+        <p>僕は<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>も<ruby><rb>蛙</rb><rt>かえる</rt></ruby>のように水陸<ruby><rb>両棲</rb><rt>りょうせい</rt></ruby>の動物だったことに今さらのように気がつきました。</p>
+        <p>「しかしこの辺には川はないがね。」</p>
+        <p>「いえ、こちらへ上がったのは水道の鉄管を抜けてきたのです。それからちょっと<ruby><rb>消火栓</rb><rt>しょうかせん</rt></ruby>をあけて……」</p>
+        <p>「消火栓をあけて？」</p>
+        <p>「<ruby><rb>旦那</rb><rt>だんな</rt></ruby>はお忘れなすったのですか？　河童にも機械屋のいるということを。」</p>
+        <p>それから僕は二三日ごとにいろいろの河童の訪問を受けました。僕の病はＳ<ruby><rb>博士</rb><rt>はかせ</rt></ruby>によれば<ruby><rb>早発性痴呆症</rb><rt>そうはつせいちほうしょう</rt></ruby>ということです。しかしあの医者の<persName ref="#chack">チャック</persName>は（これははなはだあなたにも失礼に当たるのに違いありません。）僕は早発性痴呆症患者ではない、早発性痴呆症患者はＳ博士をはじめ、あなたがた自身だと言っていました。医者の<persName ref="#chack">チャック</persName>も来るくらいですから、学生の<persName ref="#lap">ラップ</persName>や哲学者の<persName ref="#mag">マッグ</persName>の見舞いにきたことはもちろんです。が、あの<ruby><rb>漁夫</rb><rt>りょうし</rt></ruby>の<persName ref="#bag">バッグ</persName>のほかに昼間はだれも尋ねてきません。ことに二三匹いっしょに来るのは夜、――それも月のある夜です。僕はゆうべも月明りの中に<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>会社の社長の<persName ref="#gehr">ゲエル</persName>や哲学者の<persName ref="#mag">マッグ</persName>と話をしました。のみならず音楽家の<persName ref="#crabach">クラバック</persName>にもヴァイオリンを一曲<ruby><rb>弾</rb><rt>ひ</rt></ruby>いてもらいました。そら、向こうの机の上に<ruby><rb>黒百合</rb><rt>くろゆり</rt></ruby>の花束がのっているでしょう？　あれもゆうべ<persName ref="#crabach">クラバック</persName>が<ruby><rb>土産</rb><rt>みやげ</rt></ruby>に持ってきてくれたものです。……</p>
+        <p>（僕は後ろを振り返ってみた。が、もちろん机の上には花束も何ものっていなかった。）</p>
+        <p>それからこの本も哲学者の<persName ref="#mag">マッグ</persName>がわざわざ持ってきてくれたものです。ちょっと最初の詩を読んでごらんなさい。いや、あなたは河童の国の言葉を御存知になるはずはありません。では代わりに読んでみましょう。これは近ごろ出版になった<persName ref="#tock">トック</persName>の全集の一冊です。――</p>
+        <p>（彼は古い電話帳をひろげ、こういう詩をおお声に読みはじめた。）</p>
+        <p>――<ruby><rb>椰子</rb><rt>やし</rt></ruby>の花や竹の中に</p>
+        <p><persName ref="#shaka"><ruby><rb>仏陀</rb><rt>ぶっだ</rt></ruby></persName>はとうに眠っている。</p>
+        <p><ruby><rb>路</rb><rt>みち</rt></ruby>ばたに枯れた<ruby><rb>無花果</rb><rt>いちじゅく</rt></ruby>といっしょに</p>
+        <p><ruby><rb>基督</rb><rt>キリスト</rt></ruby>ももう死んだらしい。</p>
+        <p>しかし我々は休まなければならぬ</p>
+        <p>たとい<ruby><rb>芝居</rb><rt>しばい</rt></ruby>の背景の前にも。</p>
+        <p>（そのまた背景の裏を見れば、継ぎはぎだらけのカンヴァスばかりだ？）――</p>
+        <p>けれども僕はこの詩人のように<ruby><rb>厭世的</rb><rt>えんせいてき</rt></ruby>ではありません。河童たちの時々来てくれる限りは、――ああ、このことは忘れていました。あなたは僕の友だちだった裁判官の<persName ref="#pep">ペップ</persName>を覚えているでしょう。あの河童は職を失った<ruby><rb>後</rb><rt>のち</rt></ruby>、ほんとうに発狂してしまいました。なんでも今は河童の国の精神病院にいるということです。僕はＳ<ruby><rb>博士</rb><rt>はかせ</rt></ruby>さえ承知してくれれば、見舞いにいってやりたいのですがね……。</p>
+        <p>（<date when="1927-02-11">昭和二年二月十一日</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

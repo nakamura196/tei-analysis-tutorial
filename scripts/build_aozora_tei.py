@@ -193,6 +193,40 @@ class AozoraProse(HTMLParser):
             self.buf.append(data)
 
 
+# 2001年前後に公開された古い青空文庫 XHTML は構造がまったく違う(main_text も
+# bibliographical_information も無く、本文は </H2> 〜 <HR>、ルビは <!R>親（よみ）
+# という独自マーカー)。同形式の作品がまだ多く残っているので読めるようにする。
+LEGACY_RUBY = re.compile(r"<!R>([^（<]+)（([^）<]+)）")
+
+
+def extract_rich_legacy(html):
+    m = re.search(r"</H2>(.*?)<HR", html, re.S | re.I)
+    if not m:
+        raise SystemExit("本文を取り出せない(新形式でも旧形式でもない)")
+    body = LEGACY_RUBY.sub(lambda r: RUBY_S + r.group(1) + RB_E + r.group(2) + RUBY_E, m.group(1))
+    body = re.sub(r"<br\s*/?>", "\n", body, flags=re.I)
+    body = re.sub(r"<[^>]+>", "", body)
+
+    paras = []
+    for line in body.split("\n"):
+        text, spans = strip_edges(*parse_ruby(clean(line)))
+        if text:
+            paras.append({"text": text, "ruby": spans})
+    sections = [{"head": None, "paras": paras}] if paras else []
+
+    tail = html[html.upper().find("<HR"):]
+    tail = re.sub(r"<br\s*/?>", "\n", tail, flags=re.I)
+    tail = re.sub(r"<[^>]+>", "", tail)
+    bib_lines = []
+    for line in tail.splitlines():
+        line = line.strip()
+        if "青空文庫作成ファイル" in line:
+            break
+        if line:
+            bib_lines.append(line)
+    return sections, bib_lines
+
+
 def extract_rich(html):
     """(sections, 底本情報の行リスト) を返す。
     sections[i]["paras"] は {"text": 親文字のみの本文, "ruby": [(開始, 終了, 読み)]}。
@@ -202,6 +236,8 @@ def extract_rich(html):
     if not m:
         m = re.search(r'<div class="main_text">(.*)<div class="bibliographical_information">',
                       html, re.S)
+    if not m:
+        return extract_rich_legacy(html)
     walker = AozoraProse()
     walker.feed(m.group(1))
     walker.flush_para()

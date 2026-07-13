@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>遠野物語</title>
+        <author>柳田国男</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>遠野物語</title><author>柳田国男</author>
+          <note>青空文庫。底本：「遠野物語・山の人生」岩波文庫、岩波書店。1976（昭和51）年4月16日第1刷発行。2007（平成19）年10月4日第47刷改版発行。2010（平成22）年3月5日第50刷発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/001566/card52504.html">https://www.aozora.gr.jp/cards/001566/card52504.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="sasaki-kizen">
+        <persName>佐々木鏡石</persName>
+        <note>佐々木喜善（1886–1933）。土淵村山口の人。本書全体の語り手で、本文では「佐々木鏡石君」「鏡石君」「鏡石子」「佐々木氏」「佐々木君」と呼ばれる</note>
+      </person>
+      <person xml:id="sasaki-kahee">
+        <persName>佐々木嘉兵衛</persName>
+        <note>栃内村和野の老猟師（三・四一・六〇）。「和野村の嘉兵衛爺」とも呼ばれる</note>
+      </person>
+      <person xml:id="yanagita">
+        <persName>柳田国男</persName>
+        <note>本書の著者（1875–1962）。序文末に署名がある</note>
+      </person>
+      <person xml:id="chensheng">
+        <persName>陳勝</persName>
+        <note>秦末の反乱指導者。序の「この書のごときは陳勝呉広のみ」（先駆けにすぎぬ意）</note>
+      </person>
+      <person xml:id="wuguang">
+        <persName>呉広</persName>
+        <note>秦末の反乱指導者。陳勝とともに序に言及される</note>
+      </person>
+      <person xml:id="maeterlinck">
+        <persName>マーテルリンク</persName>
+        <note>モーリス・メーテルリンク（1862–1949）。二二の注で戯曲『侵入者』が引かれる</note>
+      </person>
+      <person xml:id="nitta-otozo">
+        <persName>新田乙蔵</persName>
+        <note>土淵村山口の老人。「乙爺」と呼ばれ、明治42年夏に没した（一二・一三）</note>
+      </person>
+      <person xml:id="kikuchi-yanosuke">
+        <persName>菊池弥之助</persName>
+        <note>駄賃を業とした老人。笛の名人（九・一〇・一一）</note>
+      </person>
+      <person xml:id="magoshiro">
+        <persName>孫四郎</persName>
+        <note>一一で母を大鎌で襲った男</note>
+      </person>
+      <person xml:id="magozaemon">
+        <persName>山口孫左衛門</persName>
+        <note>土淵村山口の旧家の当主名（代々の名）。一八〜二一の茸中毒による一家断絶の話の主</note>
+      </person>
+      <person xml:id="abe-nagaya">
+        <persName>阿部氏</persName>
+        <note>柏崎の長者「田圃の家」。一五は「阿部氏」、二六は「阿倍氏」と表記が揺れる</note>
+      </person>
+      <person xml:id="ohide">
+        <persName>おひで</persName>
+        <note>山口の大同・大洞万之丞の養母。佐々木氏の祖母の姉で、魔法に長じた念仏者（六九・七一・七七）</note>
+      </person>
+      <person xml:id="otoishi-tanie">
+        <persName>辷石たにえ</persName>
+        <note>山口の婦人。おひでと同じ念仏の仲間（七〇・七一）</note>
+      </person>
+      <person xml:id="ohora-mannojo">
+        <persName>大洞万之丞</persName>
+        <note>山口の大同（旧家）の当主（六九・八三）</note>
+      </person>
+      <person xml:id="imabuchi-kanjuro">
+        <persName>今淵勘十郎</persName>
+        <note>土淵村大字飯豊の人。その家でザシキワラシが目撃された（一七）</note>
+      </person>
+      <person xml:id="zaike-gonjuro">
+        <persName>在家権十郎</persName>
+        <note>山崎の人。オシラサマ三体のうち中の像を伝えた家（六九）</note>
+      </person>
+      <person xml:id="tajiri-chozaburo">
+        <persName>田尻長三郎</persName>
+        <note>山口の物持ちで土淵村一番の家の当主。「田尻氏」とも（七七・八〇・八一）</note>
+      </person>
+      <person xml:id="tajiri-marukichi">
+        <persName>田尻丸吉</persName>
+        <note>田尻長三郎の息子。八二の怪異の当事者</note>
+      </person>
+      <person xml:id="chozo">
+        <persName>長蔵</persName>
+        <note>山口の人で田尻家の奉公人（七八・七九）。父も同名の長蔵であり、本文は両者を同じ表層形で呼ぶ</note>
+      </person>
+      <person xml:id="otsune">
+        <persName>おつね</persName>
+        <note>長蔵（父）の妻（七九）</note>
+      </person>
+      <person xml:id="maekawa-mankichi">
+        <persName>前川万吉</persName>
+        <note>栃内の字野崎の人。八一の怪異の当事者</note>
+      </person>
+      <person xml:id="kikuchi-kikuzo">
+        <persName>菊池菊蔵</persName>
+        <note>和野の人。九三で山の神に、九四で狐に遭う</note>
+      </person>
+      <person xml:id="itozo">
+        <persName>糸蔵</persName>
+        <note>菊池菊蔵の五、六歳の男児（九三）</note>
+      </person>
+      <person xml:id="toshichi">
+        <persName>藤七</persName>
+        <note>象坪の藤七。菊蔵の友人で、九四では狐がその姿を借りる</note>
+      </person>
+      <person xml:id="kikuchi-matsunojo">
+        <persName>菊池松之丞</persName>
+        <note>飯豊の人。傷寒を病み臨死体験を語る（九七）</note>
+      </person>
+      <person xml:id="kikuchi-nanigashi">
+        <persName>菊池某</persName>
+        <note>松崎の人。庭作りの上手な四十三四の男（九五）</note>
+      </person>
+      <person xml:id="kitagawa-kiyoshi">
+        <persName>北川清</persName>
+        <note>土淵村の助役。字火石の代々の山臥の家の当主（九九）</note>
+      </person>
+      <person xml:id="fukuji">
+        <persName>福二</persName>
+        <note>北川清の弟。田の浜へ婿に行き、明治三陸大津波で妻子を失う（九九）</note>
+      </person>
+      <person xml:id="shofukuin">
+        <persName>正福院</persName>
+        <note>北川家の祖父。代々の山臥で学者（九九）</note>
+      </person>
+      <person xml:id="magotaro">
+        <persName>孫太郎</persName>
+        <note>柏崎の人。山の神から占いの術を得た（一〇八）</note>
+      </person>
+      <person xml:id="kenkoin">
+        <persName>ケンコウ院</persName>
+        <note>山臥。鳥御前の不審な死を占った（九一）</note>
+      </person>
+      <person xml:id="ino">
+        <persName>伊能先生</persName>
+        <note>伊能嘉矩（1867–1925）。遠野出身の人類学者・郷土史家。鳥御前の知人として言及される（九一）</note>
+      </person>
+      <person xml:id="torigozen">
+        <persName>鳥御前</persName>
+        <note>遠野の町の人。もと南部男爵家の鷹匠で、山の神の祟りで死んだと伝える（九一）。町の人がつけた綽名</note>
+      </person>
+      <person xml:id="hokobaka">
+        <persName>芳公馬鹿</persName>
+        <note>遠野の町の男。火事を予告したという（九六）。本文の綽名をそのまま台帳名とした</note>
+      </person>
+      <person xml:id="omasa">
+        <persName>おまさ</persName>
+        <note>山口の字丸古立の女。小正月の夜に山の神に遭う（一〇二）</note>
+      </person>
+      <person xml:id="samuto">
+        <persName>サムトの婆</persName>
+        <note>松崎村寒戸の娘。神隠しに遭い三十年後に帰り、再び失せた（八）。「寒戸の婆」として知られる</note>
+      </person>
+      <person xml:id="kichibee">
+        <persName>吉兵衛</persName>
+        <note>山口村の家の代々の通称。四の山女の話の主人</note>
+      </person>
+      <person xml:id="orikohimeko">
+        <persName>おりこひめこ</persName>
+        <note>昔話（一一七）に登場する娘の名。ヤマハハに食われ皮を被られる</note>
+      </person>
+      <person xml:id="benizara">
+        <persName>紅皿</persName>
+        <note>昔話「紅皿欠皿」の登場人物（一一八）</note>
+      </person>
+      <person xml:id="kakezara">
+        <persName>欠皿</persName>
+        <note>昔話「紅皿欠皿」の登場人物。遠野では「ヌカボ」と呼ぶ。継母に憎まれるが神の恵みを得て長者の妻となる（一一八）</note>
+      </person>
+      <person xml:id="tamura-shogun">
+        <persName>田村将軍</persName>
+        <note>坂上田村麻呂（758–811）。大同年間の蝦夷征討に関して言及される（二四）</note>
+      </person>
+      <person xml:id="nanbu">
+        <persName>南部家</persName>
+        <note>遠野一万石の領主・遠野南部家。明治以後は男爵家（一・二四・二八・九一）</note>
+      </person>
+      <person xml:id="abe-sadato">
+        <persName>安倍貞任</persName>
+        <note>安倍貞任（1019?–1062）。前九年の役の武将。早池峯や館址に伝説を残す</note>
+      </person>
+      <person xml:id="abe-yoemon">
+        <persName>安倍与右衛門</persName>
+        <note>土淵村の安倍家の当主。村会議員（六八）</note>
+      </person>
+      <person xml:id="abe-clan">
+        <persName>安倍氏</persName>
+        <note>土淵村の旧家。安倍貞任の子孫と伝える一族（六八）</note>
+      </person>
+      <person xml:id="hachimantaro">
+        <persName>八幡太郎</persName>
+        <note>源義家（1039–1106）。前九年の役の武将。本文は「八幡太郎」「義家」と呼ぶ</note>
+      </person>
+      <person xml:id="miura">
+        <persName>三浦某</persName>
+        <note>小国の村一の金持。マヨイガの椀の話の家（六三）。のちの「三浦家」</note>
+      </person>
+      <person xml:id="oshirasama">
+        <persName>オシラサマ</persName>
+        <note>桑の木で作る双神。馬と娘の婚姻譚に由来する家の神（一四・六九・七〇）</note>
+      </person>
+      <person xml:id="okunaisama">
+        <persName>オクナイサマ</persName>
+        <note>旧家（大同）に祀られる家の神。田植を手伝った話がある（一四・一五・七〇）</note>
+      </person>
+      <person xml:id="konsesama">
+        <persName>コンセサマ</persName>
+        <note>金精様。男根形の神体を祀る神（一六）</note>
+      </person>
+      <person xml:id="okomasama">
+        <persName>オコマサマ</persName>
+        <note>駒形の神。里に社が多い（一六）</note>
+      </person>
+      <person xml:id="kakurasama">
+        <persName>カクラサマ</persName>
+        <note>木の半身像として祀られる神。神々が旅の途中に休息する場所の名に由来する（七二〜七四）</note>
+      </person>
+      <person xml:id="gongesama">
+        <persName>ゴンゲサマ</persName>
+        <note>権現様。神楽組ごとに備える獅子頭状の木彫の神。火伏せの霊験がある（一一〇）</note>
+      </person>
+      <person xml:id="zashikiwarashi">
+        <persName>ザシキワラシ</persName>
+        <note>座敷童衆。旧家に住む十二、三ばかりの童児の神（一七・一八）。本文には「座敷ワラシ」「座敷童衆」の表記もある</note>
+      </person>
+      <person xml:id="shisuke-gongen">
+        <persName>死助権現</persName>
+        <note>白鹿を祀るという権現（三二）</note>
+      </person>
+      <person xml:id="horyo-gongen">
+        <persName>ホウリョウ権現</persName>
+        <note>遠野をはじめ奥羽一円に祀られるという蛇の神（一一二注）</note>
+      </person>
+      <person xml:id="izu-gongen">
+        <persName>伊豆権現</persName>
+        <note>来内村に社がある権現。女神と三人の娘が宿った地（二）</note>
+      </person>
+      <person xml:id="amida">
+        <persName>阿弥陀仏</persName>
+        <note>七一の念仏者たちの信仰の対象</note>
+      </person>
+      <person xml:id="inari">
+        <persName>稲荷</persName>
+        <note>二一で孫左衛門が屋敷内に祠を建て、正一位の神階を請けた神</note>
+      </person>
+      <person xml:id="masa">
+        <persName>政</persName>
+        <note>字本宿の豆腐屋。その父が死の直前に堂突の場に現れた（八六）</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="tono-go">
+        <placeName>遠野郷</placeName>
+        <location><geo>39.33 141.53</geo></location>
+        <note>遠野郷（現・岩手県遠野市の一帯）。本文の「遠野一郷」「遠野保」「遠野分」も同じ地域を指す・概値</note>
+      </place>
+      <place xml:id="tono-machi">
+        <placeName>遠野の町</placeName>
+        <location><geo>39.3272 141.5335</geo></location>
+        <note>遠野の町（南部家一万石の城下町。現・遠野市中心部）・概値</note>
+      </place>
+      <place xml:id="kamihei">
+        <placeName>上閉伊郡</placeName>
+        <location><geo>39.3 141.6</geo></location>
+        <note>陸中上閉伊郡。本文の「西閉伊郡」も同郡の別称・概値</note>
+      </place>
+      <place xml:id="shimohei">
+        <placeName>下閉伊郡</placeName>
+        <location><geo>39.6 141.8</geo></location>
+        <note>下閉伊郡（閉伊川流域から沿岸北部）・概値</note>
+      </place>
+      <place xml:id="yokota">
+        <placeName>横田城</placeName>
+        <location><geo>39.3308 141.5397</geo></location>
+        <note>遠野の城（鍋倉城）の別名・概値</note>
+      </place>
+      <place xml:id="tsuchibuchi">
+        <placeName>土淵村</placeName>
+        <location><geo>39.3667 141.6</geo></location>
+        <note>土淵村（現・遠野市土淵町）。本書の話の中心地・概値</note>
+      </place>
+      <place xml:id="yamaguchi-mura">
+        <placeName>山口村</placeName>
+        <location><geo>39.39 141.61</geo></location>
+        <note>土淵村大字山口（現・遠野市土淵町山口）・概値</note>
+      </place>
+      <place xml:id="tochinai">
+        <placeName>栃内村</placeName>
+        <location><geo>39.38 141.62</geo></location>
+        <note>土淵村大字栃内（現・遠野市土淵町栃内）・概値</note>
+      </place>
+      <place xml:id="shimo-tochinai">
+        <placeName>下栃内</placeName>
+        <location><geo>39.37 141.61</geo></location>
+        <note>栃内の字下栃内（八六）・概値</note>
+      </place>
+      <place xml:id="tsukumoushi">
+        <placeName>附馬牛</placeName>
+        <location><geo>39.42 141.53</geo></location>
+        <note>附馬牛村（現・遠野市附馬牛町）・概値</note>
+      </place>
+      <place xml:id="matsuzaki">
+        <placeName>松崎村</placeName>
+        <location><geo>39.35 141.56</geo></location>
+        <note>松崎村（現・遠野市松崎町）・概値</note>
+      </place>
+      <place xml:id="aozasa">
+        <placeName>青笹村</placeName>
+        <location><geo>39.3 141.55</geo></location>
+        <note>青笹村（現・遠野市青笹町）・概値</note>
+      </place>
+      <place xml:id="kamigo">
+        <placeName>上郷村</placeName>
+        <location><geo>39.29 141.62</geo></location>
+        <note>上郷村（現・遠野市上郷町）・概値</note>
+      </place>
+      <place xml:id="otomo">
+        <placeName>小友村</placeName>
+        <location><geo>39.25 141.47</geo></location>
+        <note>小友村（現・遠野市小友町）・概値</note>
+      </place>
+      <place xml:id="ayaori">
+        <placeName>綾織村</placeName>
+        <location><geo>39.33 141.47</geo></location>
+        <note>綾織村（現・遠野市綾織町）・概値</note>
+      </place>
+      <place xml:id="masuzawa">
+        <placeName>鱒沢</placeName>
+        <location><geo>39.31 141.39</geo></location>
+        <note>鱒沢村（現・遠野市宮守町鱒沢）・概値</note>
+      </place>
+      <place xml:id="miyamori">
+        <placeName>宮守</placeName>
+        <location><geo>39.32 141.33</geo></location>
+        <note>宮守村（現・遠野市宮守町）・概値</note>
+      </place>
+      <place xml:id="tassobe">
+        <placeName>達曾部</placeName>
+        <location><geo>39.38 141.33</geo></location>
+        <note>達曾部村（現・遠野市宮守町達曽部）・概値</note>
+      </place>
+      <place xml:id="iide">
+        <placeName>飯豊</placeName>
+        <location><geo>39.38 141.58</geo></location>
+        <note>土淵村大字飯豊・概値。本文の「飯豊衆」は飯豊の人々の意</note>
+      </place>
+      <place xml:id="wano">
+        <placeName>和野</placeName>
+        <location><geo>39.39 141.63</geo></location>
+        <note>栃内村の和野（現・遠野市土淵町）・概値</note>
+      </place>
+      <place xml:id="kashiwazaki">
+        <placeName>柏崎</placeName>
+        <location><geo>39.36 141.59</geo></location>
+        <note>土淵村大字柏崎・概値</note>
+      </place>
+      <place xml:id="oguni">
+        <placeName>小国</placeName>
+        <location><geo>39.56 141.66</geo></location>
+        <note>下閉伊郡小国村大字小国（現・宮古市小国）。早池峯の北側・概値</note>
+      </place>
+      <place xml:id="kanazawa">
+        <placeName>金沢村</placeName>
+        <location><geo>39.47 141.68</geo></location>
+        <note>上閉伊郡金沢村。白望の麓の山村・概値</note>
+      </place>
+      <place xml:id="kurihashi">
+        <placeName>栗橋村</placeName>
+        <location><geo>39.28 141.75</geo></location>
+        <note>上閉伊郡栗橋村（現・釜石市橋野町一帯）。本文の「栗橋分」も同村域・概値</note>
+      </place>
+      <place xml:id="hashino">
+        <placeName>橋野</placeName>
+        <location><geo>39.29 141.74</geo></location>
+        <note>栗橋村大字橋野（現・釜石市橋野町）・概値</note>
+      </place>
+      <place xml:id="niibari">
+        <placeName>新張</placeName>
+        <location><geo>39.4 141.56</geo></location>
+        <note>新張村・概値</note>
+      </place>
+      <place xml:id="rainai">
+        <placeName>来内</placeName>
+        <location><geo>39.28 141.6</geo></location>
+        <note>上郷村大字来内。伊豆権現の社がある・概値</note>
+      </place>
+      <place xml:id="hayachine">
+        <placeName>早池峯</placeName>
+        <location><geo>39.5567 141.4906</geo></location>
+        <note>早池峰山。本文表記は「早池峯」「早池峯山」・概値</note>
+      </place>
+      <place xml:id="rokkoushi">
+        <placeName>六角牛山</placeName>
+        <location><geo>39.2919 141.6725</geo></location>
+        <note>六角牛山。本文表記は「六角牛」「六角牛山」・概値</note>
+      </place>
+      <place xml:id="keitozan">
+        <placeName>鶏頭山</placeName>
+        <location><geo>39.54 141.46</geo></location>
+        <note>鶏頭山。麓の里では「前薬師」とも呼ぶ（二九）・概値</note>
+      </place>
+      <place xml:id="shiromi">
+        <placeName>白望</placeName>
+        <location><geo>39.46 141.67</geo></location>
+        <note>白望山（白見山）。遠野と沿岸を隔てる山・概値</note>
+      </place>
+      <place xml:id="goyosan">
+        <placeName>五葉山</placeName>
+        <location><geo>39.1922 141.6944</geo></location>
+        <note>五葉山（現・大船渡市・釜石市・住田町境）・概値</note>
+      </place>
+      <place xml:id="senbangatake">
+        <placeName>千晩ヶ岳</placeName>
+        <note>白鹿を追って千晩こもったという山（三二）。現在の山名への比定に諸説があるため座標なし</note>
+      </place>
+      <place xml:id="katahayama">
+        <placeName>片羽山</placeName>
+        <location><geo>39.27 141.73</geo></location>
+        <note>片羽山（現・遠野市・釜石市境）・概値</note>
+      </place>
+      <place xml:id="shisuke">
+        <placeName>死助</placeName>
+        <note>白鹿が死んだ地とされ死助権現を祀るという（三二・四一・五〇）。所在の比定が定かでないため座標なし</note>
+      </place>
+      <place xml:id="sennin-toge">
+        <placeName>仙人峠</placeName>
+        <location><geo>39.28 141.73</geo></location>
+        <note>仙人峠（遠野・釜石間）・概値</note>
+      </place>
+      <place xml:id="sennin-do">
+        <placeName>仙人堂</placeName>
+        <location><geo>39.28 141.73</geo></location>
+        <note>仙人峠の中ほどにある仙人の像を祀る堂（四九）・概値</note>
+      </place>
+      <place xml:id="futatsuishi">
+        <placeName>二ツ石山</placeName>
+        <location><geo>39.39 141.63</geo></location>
+        <note>山口の村に近い岩山（三六）・概値</note>
+      </place>
+      <place xml:id="atago">
+        <placeName>愛宕山</placeName>
+        <location><geo>39.37 141.59</geo></location>
+        <note>山口から柏崎へ行く道にある山。山の神が出ると伝える（八九）・概値</note>
+      </place>
+      <place xml:id="tengumori">
+        <placeName>天狗森</placeName>
+        <location><geo>39.34 141.57</geo></location>
+        <note>松崎村の山。天狗が多いという（九十）・概値</note>
+      </place>
+      <place xml:id="mukaiyama">
+        <placeName>向山</placeName>
+        <location><geo>39.33 141.52</geo></location>
+        <note>遠野の町と猿ヶ石川を隔てる山（九一）・概値</note>
+      </place>
+      <place xml:id="tsuzukiishi">
+        <placeName>続石</placeName>
+        <location><geo>39.33 141.48</geo></location>
+        <note>綾織村の巨石（続石）・概値</note>
+      </place>
+      <place xml:id="monomiyama">
+        <placeName>物見山</placeName>
+        <location><geo>39.3 141.52</geo></location>
+        <note>遠野の町の後ろの山。中腹の沼の伝説がある（二七）・概値</note>
+      </place>
+      <place xml:id="nekodachi">
+        <placeName>根子立</placeName>
+        <note>山口村の山（四）。小地名で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="obaya">
+        <placeName>オバヤ</placeName>
+        <note>六角牛山の麓の萱山（四二）。小地名で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="itagoya">
+        <placeName>板小屋</placeName>
+        <note>六角牛山の麓の萱山（四二）。小地名で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="hanaremori">
+        <placeName>離森</placeName>
+        <note>白望の山続きの地（三四・七五）。小地名で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="chojayashiki">
+        <placeName>長者屋敷</placeName>
+        <note>離森の小字。長者が住んだ址と伝える（三四・七五・七六）。座標なし</note>
+      </place>
+      <place xml:id="nukamori">
+        <placeName>糠森</placeName>
+        <note>長者の糠を捨てて出来たという山。「糠の森」とも。遠野郷に複数あるため座標なし</note>
+      </place>
+      <place xml:id="nukamae">
+        <placeName>糠前</placeName>
+        <location><geo>39.3 141.54</geo></location>
+        <note>青笹村大字糠前。本文の「糠の前」も同じ・概値</note>
+      </place>
+      <place xml:id="ontoku">
+        <placeName>恩徳</placeName>
+        <location><geo>39.47 141.57</geo></location>
+        <note>附馬牛の恩徳金山（七六）・概値</note>
+      </place>
+      <place xml:id="samuto-mura">
+        <placeName>寒戸</placeName>
+        <location><geo>39.34 141.57</geo></location>
+        <note>松崎村の寒戸。サムトの婆の伝説地（八）・概値</note>
+      </place>
+      <place xml:id="fuefuki">
+        <placeName>笛吹峠</placeName>
+        <location><geo>39.35 141.68</geo></location>
+        <note>遠野から海岸へ越える峠・概値</note>
+      </place>
+      <place xml:id="sakaigi">
+        <placeName>境木峠</placeName>
+        <location><geo>39.33 141.7</geo></location>
+        <note>遠野から浜へ越える峠。本文の「境木越」も同じ峠越え・概値</note>
+      </place>
+      <place xml:id="wayama">
+        <placeName>和山</placeName>
+        <location><geo>39.39 141.7</geo></location>
+        <note>和山・和山峠。馬次場が置かれた（五・三七）・概値</note>
+      </place>
+      <place xml:id="oyachi">
+        <placeName>大谷地</placeName>
+        <note>境木峠の上の深い谷（九・四一）。小地名で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="kotohata">
+        <placeName>琴畑</placeName>
+        <location><geo>39.4 141.65</geo></location>
+        <note>栃内村の字琴畑。小烏瀬川支流の水上の山村・概値</note>
+      </place>
+      <place xml:id="nishiuchi">
+        <placeName>西内</placeName>
+        <note>栃内の字西内（七三）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="nozaki">
+        <placeName>野崎</placeName>
+        <note>栃内の字野崎（八一）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="yamazaki">
+        <placeName>山崎</placeName>
+        <location><geo>39.38 141.61</geo></location>
+        <note>栃内村の山崎（現・遠野市土淵町）・概値</note>
+      </place>
+      <place xml:id="hayashizaki">
+        <placeName>林崎</placeName>
+        <location><geo>39.38 141.6</geo></location>
+        <note>栃内村の林崎・概値</note>
+      </place>
+      <place xml:id="hiishi">
+        <placeName>火石</placeName>
+        <note>土淵村の字火石（九九）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="motojuku">
+        <placeName>本宿</placeName>
+        <location><geo>39.3667 141.6</geo></location>
+        <note>土淵村の中央、役場・小学校のある字本宿・概値</note>
+      </place>
+      <place xml:id="marukodachi">
+        <placeName>丸古立</placeName>
+        <note>山口の字丸古立（一〇二）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="itsukaichi">
+        <placeName>五日市</placeName>
+        <note>土淵村の字五日市（一一〇）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="arakawa-tozenji">
+        <placeName>荒川東禅寺</placeName>
+        <note>附馬牛の字荒川東禅寺（一一一）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="hiwatari">
+        <placeName>火渡</placeName>
+        <note>附馬牛の字火渡（一一一）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="nakazawa">
+        <placeName>中沢</placeName>
+        <note>青笹の字中沢（一一一）。小字で位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="dannohana">
+        <placeName>ダンノハナ</placeName>
+        <note>遠野郷各村の境の岡にある地名。館の時代に囚人を斬った場所とも伝える（一一一〜一一四）。複数箇所にあるため座標なし</note>
+      </place>
+      <place xml:id="rendaino">
+        <placeName>蓮台野</placeName>
+        <note>ダンノハナと相対する地名。六十を超えた老人を追いやったと伝える（一一一・一一二）。複数箇所にあるため座標なし</note>
+      </place>
+      <place xml:id="hoshiya">
+        <placeName>星谷</placeName>
+        <note>山口の蓮台野の南の地名（一一二）。座標なし</note>
+      </place>
+      <place xml:id="horyo">
+        <placeName>ホウリョウ</placeName>
+        <note>山口の小字。石器・土器を出す（一一二）。座標なし</note>
+      </place>
+      <place xml:id="jozuka">
+        <placeName>ジョウヅカ森</placeName>
+        <note>和野の塚（一一三）。座標なし</note>
+      </place>
+      <place xml:id="bonshasa">
+        <placeName>ボンシャサの館</placeName>
+        <note>山口のダンノハナに近い館址（一一四）。座標なし</note>
+      </place>
+      <place xml:id="terayashiki">
+        <placeName>寺屋敷</placeName>
+        <note>山口の地名（一一四）。座標なし</note>
+      </place>
+      <place xml:id="toishimori">
+        <placeName>砥石森</placeName>
+        <note>山口の地名（一一四）。座標なし</note>
+      </place>
+      <place xml:id="hachimanzawa">
+        <placeName>八幡沢の館</placeName>
+        <location><geo>39.365 141.595</geo></location>
+        <note>土淵村の館址。八幡太郎の陣屋と伝える（六八）・伝承地・概値</note>
+      </place>
+      <place xml:id="hachimanyama">
+        <placeName>八幡山</placeName>
+        <location><geo>39.35 141.57</geo></location>
+        <note>八幡沢の館から遠野の町への路にある山。貞任の陣屋址と伝える（六八）・概値</note>
+      </place>
+      <place xml:id="hachimansha">
+        <placeName>八幡社</placeName>
+        <note>新張の八幡社（一一〇）。座標なし</note>
+      </place>
+      <place xml:id="abegajo">
+        <placeName>安倍ヶ城</placeName>
+        <location><geo>39.55 141.47</geo></location>
+        <note>早池峯の小国側にある岩。安倍貞任の母が住むと伝える（六五）・伝承地・概値</note>
+      </place>
+      <place xml:id="abeyashiki">
+        <placeName>安倍屋敷</placeName>
+        <note>早池峯の附馬牛側の登り口の巌窟（六六）・伝承地・座標なし</note>
+      </place>
+      <place xml:id="abedate">
+        <placeName>安倍館</placeName>
+        <location><geo>39.72 141.13</geo></location>
+        <note>盛岡の安倍館（厨川柵に近い伝承地）・概値</note>
+      </place>
+      <place xml:id="kuriyagawa">
+        <placeName>厨川の柵</placeName>
+        <location><geo>39.73 141.13</geo></location>
+        <note>厨川柵。前九年の役で安倍氏が滅んだ地・伝承地・概値</note>
+      </place>
+      <place xml:id="nitakai">
+        <placeName>似田貝</placeName>
+        <location><geo>39.365 141.59</geo></location>
+        <note>土淵村の部落。八幡太郎の「煮た粥か」の地名譚（六八）・概値</note>
+      </place>
+      <place xml:id="narukawa">
+        <placeName>鳴川</placeName>
+        <note>似田貝の外を流れる小川（六八）。座標なし</note>
+      </place>
+      <place xml:id="ashiaraigawa">
+        <placeName>足洗川村</placeName>
+        <location><geo>39.355 141.585</geo></location>
+        <note>鳴川を隔てた村。義家が足を洗ったという地名譚（六八）・概値</note>
+      </place>
+      <place xml:id="nitakai-ogawa">
+        <placeName>二田貝</placeName>
+        <note>下閉伊郡小川村の字（六八注）。似田貝と同語源とされる。座標なし</note>
+      </place>
+      <place xml:id="ogawa">
+        <placeName>小川村</placeName>
+        <location><geo>39.77 141.75</geo></location>
+        <note>下閉伊郡小川村（現・岩泉町・宮古市域）・概値</note>
+      </place>
+      <place xml:id="sarugaishi">
+        <placeName>猿ヶ石川</placeName>
+        <location><geo>39.35 141.45</geo></location>
+        <note>猿ヶ石川。本文表記は「猿ヶ石」「猿ヶ石川」・概値（中流域）</note>
+      </place>
+      <place xml:id="kokarase">
+        <placeName>小烏瀬川</placeName>
+        <location><geo>39.36 141.58</geo></location>
+        <note>小烏瀬川（土淵村を流れる猿ヶ石川の支流）・概値</note>
+      </place>
+      <place xml:id="kitakami">
+        <placeName>北上川</placeName>
+        <location><geo>39.4 141.1</geo></location>
+        <note>北上川・概値（花巻付近）</note>
+      </place>
+      <place xml:id="heigawa">
+        <placeName>閉伊川</placeName>
+        <location><geo>39.6 141.75</geo></location>
+        <note>閉伊川（早池峯から宮古の海へ注ぐ）・概値（中流域）</note>
+      </place>
+      <place xml:id="ogunigawa">
+        <placeName>小国川</placeName>
+        <location><geo>39.58 141.68</geo></location>
+        <note>閉伊川の支流（五四）・概値</note>
+      </place>
+      <place xml:id="hayase">
+        <placeName>早瀬川</placeName>
+        <location><geo>39.29 141.6</geo></location>
+        <note>上郷村を流れる川（一〇七）・概値</note>
+      </place>
+      <place xml:id="ubako">
+        <placeName>姥子淵</placeName>
+        <note>小烏瀬川の淵。川童が馬を引こうとした所（五八）。座標なし</note>
+      </place>
+      <place xml:id="haradai">
+        <placeName>原台の淵</placeName>
+        <note>閉伊川の淵（二七）。座標なし</note>
+      </place>
+      <place xml:id="aizawa">
+        <placeName>相沢の滝</placeName>
+        <note>川童が移り住んだという滝の淵（五八）。座標なし</note>
+      </place>
+      <place xml:id="okase">
+        <placeName>緒挊の滝</placeName>
+        <note>猿の多い滝（四七）。座標なし</note>
+      </place>
+      <place xml:id="joukenji">
+        <placeName>常堅寺</placeName>
+        <location><geo>39.37 141.6</geo></location>
+        <note>土淵村大字土淵の曹洞宗の寺。遠野郷十二ヶ寺の触頭（八八）・概値</note>
+      </place>
+      <place xml:id="kiseiin">
+        <placeName>キセイ院</placeName>
+        <note>飯豊の菩提寺（九七）。特定できないため座標なし</note>
+      </place>
+      <place xml:id="tenjin">
+        <placeName>天神の山</placeName>
+        <note>序で獅子踊が行われた山。遠野郷の天神を祀る山だが特定できないため座標なし</note>
+      </place>
+      <place xml:id="hanamaki">
+        <placeName>花巻</placeName>
+        <location><geo>39.3886 141.1169</geo></location>
+        <note>花巻。停車場から遠野へ入る（序・一）・概値</note>
+      </place>
+      <place xml:id="morioka">
+        <placeName>盛岡</placeName>
+        <location><geo>39.7036 141.1527</geo></location>
+        <note>盛岡・概値</note>
+      </place>
+      <place xml:id="miyako">
+        <placeName>宮古</placeName>
+        <location><geo>39.6414 141.9469</geo></location>
+        <note>宮古。閉伊川が注ぐ海（二七）・概値</note>
+      </place>
+      <place xml:id="kamaishi">
+        <placeName>釜石</placeName>
+        <location><geo>39.2758 141.8858</geo></location>
+        <note>釜石・概値</note>
+      </place>
+      <place xml:id="yamada">
+        <placeName>山田</placeName>
+        <location><geo>39.4675 141.95</geo></location>
+        <note>山田（下閉伊郡山田町）。蜃気楼の話がある（一〇六）・概値</note>
+      </place>
+      <place xml:id="funakoshi">
+        <placeName>船越</placeName>
+        <location><geo>39.4 141.97</geo></location>
+        <note>船越村（現・山田町船越）・概値</note>
+      </place>
+      <place xml:id="tanohama">
+        <placeName>田ノ浜</placeName>
+        <location><geo>39.41 141.97</geo></location>
+        <note>船越の田ノ浜。本文は「田ノ浜」「田の浜」と表記が揺れる・概値</note>
+      </place>
+      <place xml:id="koura">
+        <placeName>小浦</placeName>
+        <location><geo>39.41 141.98</geo></location>
+        <note>田ノ浜の近くの浦（九九）・概値</note>
+      </place>
+      <place xml:id="otsuchi">
+        <placeName>大槌</placeName>
+        <location><geo>39.3597 141.9067</geo></location>
+        <note>大槌（浜の町）・概値</note>
+      </place>
+      <place xml:id="otsuchi-kaido">
+        <placeName>大槌往還</placeName>
+        <note>遠野から大槌へ通じる街道（七八）。街道・線状のため座標なし</note>
+      </place>
+      <place xml:id="kirikiri">
+        <placeName>吉利吉里</placeName>
+        <location><geo>39.34 141.95</geo></location>
+        <note>大槌の吉里吉里・概値</note>
+      </place>
+      <place xml:id="shijuhachizaka">
+        <placeName>四十八坂</placeName>
+        <location><geo>39.38 141.95</geo></location>
+        <note>大槌と船越の間の坂（一〇〇）・概値</note>
+      </place>
+      <place xml:id="toyomane">
+        <placeName>豊間根</placeName>
+        <location><geo>39.55 141.86</geo></location>
+        <note>下閉伊郡豊間根村（現・山田町豊間根）・概値</note>
+      </place>
+      <place xml:id="kawai">
+        <placeName>川井</placeName>
+        <location><geo>39.61 141.75</geo></location>
+        <note>下閉伊郡川井村大字川井（現・宮古市川井）・概値</note>
+      </place>
+      <place xml:id="iwate-gun">
+        <placeName>岩手郡</placeName>
+        <location><geo>39.85 141.15</geo></location>
+        <note>岩手郡・概値</note>
+      </place>
+      <place xml:id="tamayama">
+        <placeName>玉山村</placeName>
+        <location><geo>39.83 141.22</geo></location>
+        <note>岩手郡玉山村（現・盛岡市玉山）・概値</note>
+      </place>
+      <place xml:id="kariwano">
+        <placeName>羽後苅和野</placeName>
+        <location><geo>39.48 140.43</geo></location>
+        <note>羽後の苅和野（現・秋田県大仙市刈和野）。市の神の祭の類例（一四注）・概値</note>
+      </place>
+      <place xml:id="hokkaido">
+        <placeName>北海道</placeName>
+        <location><geo>43.2 142.5</geo></location>
+        <note>北海道・概値</note>
+      </place>
+      <place xml:id="ishikari">
+        <placeName>石狩</placeName>
+        <location><geo>43.1 141.5</geo></location>
+        <note>石狩平野・概値</note>
+      </place>
+      <place xml:id="sendai">
+        <placeName>仙台</placeName>
+        <location><geo>38.2682 140.8694</geo></location>
+        <note>仙台。ダンノハナの地名が仙台にもあるという（一一二）・概値</note>
+      </place>
+      <place xml:id="matsushima">
+        <placeName>松島</placeName>
+        <location><geo>38.37 141.06</geo></location>
+        <note>松島。獅子踊の歌に繰り返し現れる（一一九）・概値</note>
+      </place>
+      <place xml:id="oshu">
+        <placeName>奥州</placeName>
+        <location><geo>39.0 141.0</geo></location>
+        <note>奥州。地域名・概値</note>
+      </place>
+      <place xml:id="ou">
+        <placeName>奥羽</placeName>
+        <location><geo>39.5 140.5</geo></location>
+        <note>奥羽。地域名・概値</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後</placeName>
+        <location><geo>37.5 138.9</geo></location>
+        <note>越後。旧国名・概値</note>
+      </place>
+      <place xml:id="kai">
+        <placeName>甲斐国</placeName>
+        <location><geo>35.66 138.57</geo></location>
+        <note>甲斐国。大同の家の出身地と伝える（二四）。旧国名・概値</note>
+      </place>
+      <place xml:id="totomi">
+        <placeName>遠江</placeName>
+        <location><geo>34.8 137.9</geo></location>
+        <note>遠江。七二注の類例。旧国名・概値</note>
+      </place>
+      <place xml:id="suruga">
+        <placeName>駿河</placeName>
+        <location><geo>35.0 138.4</geo></location>
+        <note>駿河。七二注の類例。旧国名・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都。本文は「京都」「京」と表記が揺れる・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京。一七で佐々木氏の家の主人の行先・概値</note>
+      </place>
+      <place xml:id="korea">
+        <placeName>韓国</placeName>
+        <location><geo>37.5665 126.978</geo></location>
+        <note>韓国。『東国輿地勝覧』の厲壇の例（一〇九注）・概値（ソウル）</note>
+      </place>
+      <place xml:id="hakusan">
+        <placeName>白山</placeName>
+        <location><geo>36.1545 136.7714</geo></location>
+        <note>白山。獅子踊の歌に現れる霊山（一一九）。加賀・美濃境の白山と解されるが歌中の地名のため伝承地・概値</note>
+      </place>
+      <place xml:id="ise">
+        <placeName>伊勢</placeName>
+        <location><geo>34.49 136.71</geo></location>
+        <note>伊勢。伊勢参りの銭。獅子踊の歌（一一九）・概値</note>
+      </place>
+      <place xml:id="kumano">
+        <placeName>熊野</placeName>
+        <location><geo>33.89 135.77</geo></location>
+        <note>熊野。熊野参りの遣い余り。獅子踊の歌（一一九）・概値（熊野三山）</note>
+      </place>
+      <place xml:id="tokaido">
+        <placeName>東海道</placeName>
+        <note>東海道。九三注のウド・謡坂の類例。街道・線状のため座標なし</note>
+      </place>
+      <place xml:id="zotsubo">
+        <placeName>象坪</placeName>
+        <note>遠野郷の地名であり藤七の名字でもある（九四注）。小地名で位置を特定できないため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <p>この書を外国に在る人々に呈す</p>
+        <p>この話はすべて<ruby><rb>遠野</rb><rt>とおの</rt></ruby>の人<persName ref="#sasaki-kizen">佐々木鏡石</persName>君より聞きたり。<ruby><rb>昨</rb><rt>さく</rt></ruby><date when="1909">明治四十二年</date>の<date when="--02">二月</date>ごろより始めて夜分おりおり<ruby><rb>訪</rb><rt>たず</rt></ruby>ね<ruby><rb>来</rb><rt>き</rt></ruby>たりこの話をせられしを筆記せしなり。<persName ref="#sasaki-kizen">鏡石君</persName>は<ruby><rb>話上手</rb><rt>はなしじょうず</rt></ruby>にはあらざれども誠実なる人なり。自分もまた一字一句をも<ruby><rb>加減</rb><rt>かげん</rt></ruby>せず感じたるままを書きたり。思うに<placeName ref="#tono-go">遠野<ruby><rb>郷</rb><rt>ごう</rt></ruby></placeName>にはこの類の物語なお数百件あるならん。我々はより多くを聞かんことを切望す。国内の山村にして遠野よりさらに物深き所にはまた無数の山神山人の伝説あるべし。願わくはこれを語りて平地人を戦慄せしめよ。この書のごときは<ruby><rb><persName ref="#chensheng">陳勝</persName><persName ref="#wuguang">呉広</persName></rb><rt>ちんしょうごこう</rt></ruby>のみ。</p>
+        <p>昨年<date when="--08">八月</date>の末自分は<placeName ref="#tono-go">遠野郷</placeName>に遊びたり。<placeName ref="#hanamaki"><ruby><rb>花巻</rb><rt>はなまき</rt></ruby></placeName>より十余里の路上には<ruby><rb>町場</rb><rt>まちば</rt></ruby>三ヶ所あり。その他はただ青き山と原野なり。人煙の<ruby><rb>稀少</rb><rt>きしょう</rt></ruby>なること<placeName ref="#hokkaido">北海道</placeName><placeName ref="#ishikari"><ruby><rb>石狩</rb><rt>いしかり</rt></ruby></placeName>の平野よりも<ruby><rb>甚</rb><rt>はなは</rt></ruby>だし。或いは新道なるが故に民居の来たり<ruby><rb>就</rb><rt>つ</rt></ruby>ける者少なきか。<placeName ref="#tono-machi">遠野の城下</placeName>はすなわち煙花の街なり。馬を駅亭の主人に借りて<ruby><rb>独</rb><rt>ひと</rt></ruby>り郊外の村々を<ruby><rb>巡</rb><rt>めぐ</rt></ruby>りたり。その馬は<ruby><rb>黔</rb><rt>くろ</rt></ruby>き海草をもって作りたる<ruby><rb>厚総</rb><rt>あつぶさ</rt></ruby>を<ruby><rb>掛</rb><rt>か</rt></ruby>けたり。<ruby><rb>虻</rb><rt>あぶ</rt></ruby>多きためなり。<placeName ref="#sarugaishi"><ruby><rb>猿</rb><rt>さる</rt></ruby>ヶ<ruby><rb>石</rb><rt>いし</rt></ruby></placeName>の渓谷は土<ruby><rb>肥</rb><rt>こ</rt></ruby>えてよく<ruby><rb>拓</rb><rt>ひら</rt></ruby>けたり。路傍に石塔の多きこと諸国その比を知らず。高処より展望すれば<ruby><rb>早稲</rb><rt>わせ</rt></ruby>まさに熟し<ruby><rb>晩稲</rb><rt>ばんとう</rt></ruby>は<ruby><rb>花盛</rb><rt>はなざか</rt></ruby>りにて水はことごとく落ちて川にあり。稲の<ruby><rb>色合</rb><rt>いろあ</rt></ruby>いは種類によりてさまざまなり。三つ四つ五つの田を続けて稲の色の同じきはすなわち一家に属する田にしていわゆる<ruby><rb>名処</rb><rt>みょうしょ</rt></ruby>の同じきなるべし。<ruby><rb>小字</rb><rt>こあざ</rt></ruby>よりさらに小さき区域の地名は持主にあらざればこれを知らず。古き売買譲与の証文には常に見ゆる所なり。<placeName ref="#tsukumoushi"><ruby><rb>附馬牛</rb><rt>つくもうし</rt></ruby></placeName>の谷へ越ゆれば<placeName ref="#hayachine"><ruby><rb>早池峯</rb><rt>はやちね</rt></ruby></placeName>の山は淡く<ruby><rb>霞</rb><rt>かす</rt></ruby>み山の形は<ruby><rb>菅笠</rb><rt>すげがさ</rt></ruby>のごとくまた<ruby><rb>片仮名</rb><rt>かたかな</rt></ruby>のへの字に似たり。この谷は稲熟することさらに遅く満目一色に青し。細き田中の道を行けば名を知らぬ鳥ありて<ruby><rb>雛</rb><rt>ひな</rt></ruby>を<ruby><rb>連</rb><rt>つ</rt></ruby>れて横ぎりたり。雛の色は黒に白き羽まじりたり。始めは小さき鶏かと思いしが<ruby><rb>溝</rb><rt>みぞ</rt></ruby>の草に隠れて見えざればすなわち野鳥なることを知れり。<placeName ref="#tenjin">天神の山</placeName>には祭ありて<ruby><rb>獅子踊</rb><rt>ししおどり</rt></ruby>あり。ここにのみは軽く<ruby><rb>塵</rb><rt>ちり</rt></ruby>たち<ruby><rb>紅</rb><rt>あか</rt></ruby>き物いささかひらめきて一村の緑に映じたり。獅子踊というは<ruby><rb>鹿</rb><rt>しか</rt></ruby>の<ruby><rb>舞</rb><rt>まい</rt></ruby>なり。鹿の<ruby><rb>角</rb><rt>つの</rt></ruby>をつけたる面を<ruby><rb>被</rb><rt>かぶ</rt></ruby>り童子五六人剣を抜きてこれとともに舞うなり。笛の調子高く歌は低くして<ruby><rb>側</rb><rt>かたわら</rt></ruby>にあれども聞きがたし。日は傾きて風吹き酔いて人呼ぶ者の声も<ruby><rb>淋</rb><rt>さび</rt></ruby>しく女は笑い<ruby><rb>児</rb><rt>こ</rt></ruby>は走れどもなお旅愁をいかんともする<ruby><rb>能</rb><rt>あた</rt></ruby>わざりき。<ruby><rb>盂蘭盆</rb><rt>うらぼん</rt></ruby>に新しき仏ある家は紅白の旗を高く<ruby><rb>揚</rb><rt>あ</rt></ruby>げて<ruby><rb>魂</rb><rt>たましい</rt></ruby>を招く<ruby><rb>風</rb><rt>ふう</rt></ruby>あり。<ruby><rb>峠</rb><rt>とうげ</rt></ruby>の馬上において東西を指点するにこの旗十数所あり。村人の永住の地を去らんとする者とかりそめに入りこみたる旅人とまたかの<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>たる霊山とを<ruby><rb>黄昏</rb><rt>たぞがれ</rt></ruby>は<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に来たりて包容し尽したり。<placeName ref="#tono-go">遠野郷</placeName>には八ヶ所の観音堂あり。一木をもって作りしなり。この日<ruby><rb>報賽</rb><rt>ほうさい</rt></ruby>の徒多く岡の上に灯火見え<ruby><rb>伏鉦</rb><rt>ふせがね</rt></ruby>の音聞えたり。道ちがえの<ruby><rb>叢</rb><rt>くさむら</rt></ruby>の中には<ruby><rb>雨風祭</rb><rt>あめかぜまつり</rt></ruby>の<ruby><rb>藁人形</rb><rt>わらにんぎょう</rt></ruby>あり。あたかもくたびれたる人のごとく<ruby><rb>仰臥</rb><rt>ぎょうが</rt></ruby>してありたり。以上は自分が<placeName ref="#tono-go">遠野郷</placeName>にてえたる印象なり。</p>
+        <p>思うにこの類の書物は少なくも現代の流行にあらず。いかに印刷が容易なればとてこんな本を出版し自己の<ruby><rb>狭隘</rb><rt>きょうあい</rt></ruby>なる趣味をもって他人に<ruby><rb>強</rb><rt>し</rt></ruby>いんとするは<ruby><rb>無作法</rb><rt>ぶさほう</rt></ruby>の<ruby><rb>仕業</rb><rt>しわざ</rt></ruby>なりという人あらん。されどあえて答う。かかる話を聞きかかる<ruby><rb>処</rb><rt>ところ</rt></ruby>を見てきてのちこれを人に語りたがらざる者<ruby><rb>果</rb><rt>はた</rt></ruby>してありや。そのような沈黙にしてかつ<ruby><rb>慎</rb><rt>つつし</rt></ruby>み深き人は少なくも自分の友人の中にはあることなし。いわんやわが九百年前の<ruby><rb>先輩</rb><rt>せんぱい</rt></ruby>『今昔物語』のごときはその当時にありてすでに今は昔の話なりしに反しこれはこれ目前の出来事なり。たとえ<ruby><rb>敬虔</rb><rt>けいけん</rt></ruby>の意と誠実の態度とにおいてはあえて彼を<ruby><rb>凌</rb><rt>しの</rt></ruby>ぐことを<ruby><rb>得</rb><rt>う</rt></ruby>という能わざらんも人の耳を<ruby><rb>経</rb><rt>ふ</rt></ruby>ること多からず人の口と筆とを<ruby><rb>倩</rb><rt>やと</rt></ruby>いたること甚だ<ruby><rb>僅</rb><rt>わずか</rt></ruby>なりし点においては彼の淡泊無邪気なる<ruby><rb>大納言殿</rb><rt>だいなごんどの</rt></ruby>かえって来たり聴くに値せり。近代の<ruby><rb>御伽百物語</rb><rt>おとぎひゃくものがたり</rt></ruby>の徒に至りてはその<ruby><rb>志</rb><rt>こころざし</rt></ruby>やすでに<ruby><rb>陋</rb><rt>ろう</rt></ruby>かつ決してその談の<ruby><rb>妄誕</rb><rt>もうたん</rt></ruby>にあらざることを誓いえず。<ruby><rb>窃</rb><rt>ひそか</rt></ruby>にもってこれと隣を比するを恥とせり。要するにこの書は現在の事実なり。単にこれのみをもってするも立派なる存在理由ありと信ず。ただ<persName ref="#sasaki-kizen">鏡石子</persName>は年わずかに二十四五自分もこれに十歳長ずるのみ。今の事業多き時代に生まれながら問題の大小をも<ruby><rb>弁</rb><rt>わきま</rt></ruby>えず、その力を用いるところ<ruby><rb>当</rb><rt>とう</rt></ruby>を失えりという人あらば<ruby><rb>如何</rb><rt>いかん</rt></ruby>。明神の山の<ruby><rb>木兎</rb><rt>みみずく</rt></ruby>のごとくあまりにその耳を<ruby><rb>尖</rb><rt>とが</rt></ruby>らしあまりにその眼を丸くし過ぎたりと<ruby><rb>責</rb><rt>せ</rt></ruby>むる人あらば如何。はて是非もなし。この責任のみは自分が負わねばならぬなり。</p>
+        <p>おきなさび飛ばず鳴かざるをちかたの森のふくろふ笑ふらんかも</p>
+        <p><persName ref="#yanagita">柳田国男</persName></p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>題目</head>
+        <p>（下の数字は話の番号なり、ページ数にはあらず）</p>
+        <p>地勢　　　　　　　　　　　　　　　　　　　　　　　一、五、六七、一一一</p>
+        <p>神の始　　　　　　　　　　　　　　　　　　　　　　　　　二、六九、七四</p>
+        <p>里の神　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　九八</p>
+        <p><persName ref="#kakurasama">カクラサマ</persName>　　　　　　　　　　　　　　　　　　　　　　　　七二―七四</p>
+        <p><persName ref="#gongesama">ゴンゲサマ</persName>　　　　　　　　　　　　　　　　　　　　　　　　　　一一〇</p>
+        <p>家の神　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一六</p>
+        <p><persName ref="#okunaisama">オクナイサマ</persName>　　　　　　　　　　　　　　　　　　　　一四、一五、七〇</p>
+        <p><persName ref="#oshirasama">オシラサマ</persName>　　　　　　　　　　　　　　　　　　　　　　　　　　　六九</p>
+        <p><persName ref="#zashikiwarashi">ザシキワラシ</persName>　　　　　　　　　　　　　　　　　　　　　　　一七、一八</p>
+        <p>山の神　　　　　　　　　　　　八九、九一、九三、一〇二、一〇七、一〇八</p>
+        <p>神女　　　　　　　　　　　　　　　　　　　　　　　　　　　　二七、五四</p>
+        <p>天狗　　　　　　　　　　　　　　　　　　　　　　　　　二九、六二、九〇</p>
+        <p>山男　　　　　　　　　　　　　　五、六、七、九、二八、三〇、三一、九二</p>
+        <p>山女　　　　　　　　　　　　　　　　　　　　　三、四、三四、三五、七五</p>
+        <p>山の霊異　　　　　　　　　　　　　　　　　　　　三二、三三、六一、九五</p>
+        <p><placeName ref="#sennin-do">仙人堂</placeName>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　四九</p>
+        <p>蝦夷の跡　　　　　　　　　　　　　　　　　　　　　　　　　　　　一一二</p>
+        <p>塚と森と　　　　　　　　　　　　　　　　　六六、一一一、一一三、一一四</p>
+        <p><ruby><rb>姥</rb><rt>うば</rt></ruby>神　　　　　　　　　　　　　　　　　　　　　　　　　　　　六五、七一</p>
+        <p><ruby><rb>館</rb><rt>たて</rt></ruby>の址　　　　　　　　　　　　　　　　　　　　　　　　六七、六八、七六</p>
+        <p>昔の人　　　　　　　　　　　　　八、一〇、一一、一二、二一、二六、八四</p>
+        <p>家のさま　　　　　　　　　　　　　　　　　　　　　　　　　　八〇、八三</p>
+        <p>家の盛衰　　　　　　　　　　　一三、一八、一九、二四、二五、三八、六三</p>
+        <p>マヨイガ　　　　　　　　　　　　　　　　　　　　　　　　　六三、六四</p>
+        <p>前兆　　　　　　　　　　　　　　　　　　　　　　二〇、五二、七八、九六</p>
+        <p>魂の行方　　　　　　　　　　二二、八六―八八、九五、九七、九九、一〇〇</p>
+        <p>まぼろし　　　　　　　　　　　　　　　　　二三、七七、七九、八一、八二</p>
+        <p>雪女　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一〇三</p>
+        <p>川童　　　　　　　　　　　　　　　　　　　　　　　　　　　　五五―五九</p>
+        <p>猿の<ruby><rb>経立</rb><rt>ふったち</rt></ruby>　　　　　　　　　　　　　　　　　　　　　　　　　　四五、四六</p>
+        <p>猿　　　　　　　　　　　　　　　　　　　　　　　　　　　　　四七、四八</p>
+        <p><ruby><rb>狼</rb><rt>おいぬ</rt></ruby>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　三六―四二</p>
+        <p>熊　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　四三</p>
+        <p>狐　　　　　　　　　　　　　　　　　　　　　　　　　六〇、九四、一〇一</p>
+        <p>色々の鳥　　　　　　　　　　　　　　　　　　　　　　　　　　五一―五三</p>
+        <p>花　　　　　　　　　　　　　　　　　　　　　　　　　　　　　三三、五〇</p>
+        <p><date when="--01-15">小正月</date>の行事　　　　　　　　　　　　　　　　　　　一四、一〇二―一〇五</p>
+        <p>雨風祭　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一〇九</p>
+        <p>昔々　　　　　　　　　　　　　　　　　　　　　　　　　　一一五―一一八</p>
+        <p>歌謡　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一一九</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>一</head>
+        <p><placeName ref="#tono-go"><ruby><rb>遠野郷</rb><rt>とおのごう</rt></ruby></placeName>は今の<placeName ref="#kamihei">陸中<ruby><rb>上閉伊</rb><rt>かみへい</rt></ruby>郡</placeName>の西の半分、山々にて取り<ruby><rb>囲</rb><rt>かこ</rt></ruby>まれたる平地なり。<ruby><rb>新町村</rb><rt>しんちょうそん</rt></ruby>にては、遠野、<placeName ref="#tsuchibuchi"><ruby><rb>土淵</rb><rt>つちぶち</rt></ruby></placeName>、<placeName ref="#tsukumoushi"><ruby><rb>附馬牛</rb><rt>つくもうし</rt></ruby></placeName>、<placeName ref="#matsuzaki">松崎</placeName>、<placeName ref="#aozasa"><ruby><rb>青笹</rb><rt>あおざさ</rt></ruby></placeName>、<placeName ref="#kamigo"><ruby><rb>上郷</rb><rt>かみごう</rt></ruby></placeName>、<placeName ref="#otomo"><ruby><rb>小友</rb><rt>おとも</rt></ruby></placeName>、<placeName ref="#ayaori"><ruby><rb>綾織</rb><rt>あやおり</rt></ruby></placeName>、<placeName ref="#masuzawa"><ruby><rb>鱒沢</rb><rt>ますざわ</rt></ruby></placeName>、<placeName ref="#miyamori"><ruby><rb>宮守</rb><rt>みやもり</rt></ruby></placeName>、<placeName ref="#tassobe"><ruby><rb>達曾部</rb><rt>たっそべ</rt></ruby></placeName>の一町十ヶ村に分かつ。近代或いは<placeName ref="#kamihei">西閉伊郡</placeName>とも称し、中古にはまた<placeName ref="#tono-go"><ruby><rb>遠野保</rb><rt>とおのほ</rt></ruby></placeName>とも呼べり。今日郡役所のある<placeName ref="#tono-machi">遠野町</placeName>はすなわち一郷の<ruby><rb>町場</rb><rt>まちば</rt></ruby>にして、<persName ref="#nanbu"><ruby><rb>南部家</rb><rt>なんぶけ</rt></ruby></persName>一万石の城下なり。城を<placeName ref="#yokota"><ruby><rb>横田城</rb><rt>よこたじょう</rt></ruby></placeName>ともいう。この地へ行くには<placeName ref="#hanamaki"><ruby><rb>花巻</rb><rt>はなまき</rt></ruby></placeName>の停車場にて汽車を<ruby><rb>下</rb><rt>お</rt></ruby>り、<placeName ref="#kitakami"><ruby><rb>北上川</rb><rt>きたかみがわ</rt></ruby></placeName>を渡り、その川の支流<placeName ref="#sarugaishi"><ruby><rb>猿</rb><rt>さる</rt></ruby>ヶ<ruby><rb>石川</rb><rt>いしがわ</rt></ruby></placeName>の<ruby><rb>渓</rb><rt>たに</rt></ruby>を<ruby><rb>伝</rb><rt>つた</rt></ruby>いて、東の方へ入ること十三里、<placeName ref="#tono-machi">遠野の町</placeName>に至る。山奥には珍しき繁華の地なり。伝えいう、<placeName ref="#tono-go">遠野郷</placeName>の地大昔はすべて一円の湖水なりしに、その水<placeName ref="#sarugaishi">猿ヶ石川</placeName>となりて人界に流れ出でしより、自然にかくのごとき<ruby><rb>邑落</rb><rt>ゆうらく</rt></ruby>をなせしなりと。されば谷川のこの<placeName ref="#sarugaishi">猿ヶ石</placeName>に落合うもの<ruby><rb>甚</rb><rt>はなは</rt></ruby>だ多く、俗に<ruby><rb>七内八崎</rb><rt>ななないやさき</rt></ruby>ありと称す。<ruby><rb>内</rb><rt>ない</rt></ruby>は沢または谷のことにて、<placeName ref="#oshu">奥州</placeName>の地名には多くあり。</p>
+        <p>○<placeName ref="#tono-go">遠野郷</placeName>のトーはもとアイヌ語の湖という語より出でたるなるべし、ナイもアイヌ語なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>二</head>
+        <p><placeName ref="#tono-machi">遠野の町</placeName>は南北の川の<ruby><rb>落合</rb><rt>おちあい</rt></ruby>にあり。以前は<ruby><rb>七七十里</rb><rt>しちしちじゅうり</rt></ruby>とて、七つの渓谷おのおの七十里の奥より<ruby><rb>売買</rb><rt>ばいばい</rt></ruby>の貨物を<ruby><rb>聚</rb><rt>あつ</rt></ruby>め、その<ruby><rb>市</rb><rt>いち</rt></ruby>の日は馬千匹、人千人の<ruby><rb>賑</rb><rt>にぎ</rt></ruby>わしさなりき。四方の山々の中に最も<ruby><rb>秀</rb><rt>ひい</rt></ruby>でたるを<placeName ref="#hayachine"><ruby><rb>早池峯</rb><rt>はやちね</rt></ruby></placeName>という、北の方<placeName ref="#tsukumoushi"><ruby><rb>附馬牛</rb><rt>つくもうし</rt></ruby></placeName>の奥にあり。東の方には<placeName ref="#rokkoushi"><ruby><rb>六角牛</rb><rt>ろっこうし</rt></ruby>山</placeName>立てり。<ruby><rb>石神</rb><rt>いしがみ</rt></ruby>という山は<placeName ref="#tsukumoushi">附馬牛</placeName>と<placeName ref="#tassobe"><ruby><rb>達曾部</rb><rt>たっそべ</rt></ruby></placeName>との間にありて、その高さ前の二つよりも<ruby><rb>劣</rb><rt>おと</rt></ruby>れり。大昔に女神あり、三人の娘を<ruby><rb>伴</rb><rt>とも</rt></ruby>ないてこの高原に来たり、今の<placeName ref="#rainai"><ruby><rb>来内</rb><rt>らいない</rt></ruby>村</placeName>の<persName ref="#izu-gongen"><ruby><rb>伊豆権現</rb><rt>いずごんげん</rt></ruby></persName>の社あるところに<ruby><rb>宿</rb><rt>やど</rt></ruby>りし夜、今夜よき夢を見たらん娘によき山を与うべしと母の神の語りて寝たりしに、夜深く天より<ruby><rb>霊華</rb><rt>れいか</rt></ruby><ruby><rb>降</rb><rt>ふ</rt></ruby>りて姉の<ruby><rb>姫</rb><rt>ひめ</rt></ruby>の胸の上に止りしを、末の姫<ruby><rb>眼覚</rb><rt>めさ</rt></ruby>めて<ruby><rb>窃</rb><rt>ひそか</rt></ruby>にこれを取り、わが胸の上に載せたりしかば、ついに最も美しき<placeName ref="#hayachine">早池峯</placeName>の山を得、姉たちは<placeName ref="#rokkoushi">六角牛</placeName>と石神とを得たり。若き三人の女神おのおの三の山に住し今もこれを領したもう<ruby><rb>故</rb><rt>ゆえ</rt></ruby>に、遠野の女どもはその<ruby><rb>妬</rb><rt>ねたみ</rt></ruby>を<ruby><rb>畏</rb><rt>おそ</rt></ruby>れて今もこの山には遊ばずといえり。</p>
+        <p>○この一里は小道すなわち<ruby><rb>坂東道</rb><rt>ばんどうみち</rt></ruby>なり、一里が五丁または六丁なり。</p>
+        <p>○タッソベもアイヌ語なるべし。<placeName ref="#iwate-gun">岩手郡</placeName><placeName ref="#tamayama">玉山村</placeName>にも同じ<ruby><rb>大字</rb><rt>おおあざ</rt></ruby>あり。</p>
+        <p>○<placeName ref="#kamigo">上郷村</placeName>大字<placeName ref="#rainai">来内</placeName>、ライナイもアイヌ語にてライは死のことナイは沢なり、水の静かなるよりの名か。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>三</head>
+        <p>山々の奥には山人住めり。<placeName ref="#tochinai"><ruby><rb>栃内</rb><rt>とちない</rt></ruby>村</placeName><placeName ref="#wano"><ruby><rb>和野</rb><rt>わの</rt></ruby></placeName>の<persName ref="#sasaki-kahee">佐々木<ruby><rb>嘉兵衛</rb><rt>かへえ</rt></ruby></persName>という人は今も七十余にて生存せり。この<ruby><rb>翁</rb><rt>おきな</rt></ruby>若かりしころ猟をして山奥に入りしに、<ruby><rb>遥</rb><rt>はる</rt></ruby>かなる岩の上に美しき女一人ありて、長き黒髪を<ruby><rb>梳</rb><rt>くしけず</rt></ruby>りていたり。顔の色きわめて白し。不敵の男なれば<ruby><rb>直</rb><rt>ただち</rt></ruby>に<ruby><rb>銃</rb><rt>つつ</rt></ruby>を差し向けて打ち放せしに<ruby><rb>弾</rb><rt>たま</rt></ruby>に応じて倒れたり。そこに<ruby><rb>馳</rb><rt>か</rt></ruby>けつけて見れば、身のたけ高き女にて、解きたる黒髪はまたそのたけよりも長かりき。のちの<ruby><rb>験</rb><rt>しるし</rt></ruby>にせばやと思いてその髪をいささか切り取り、これを<ruby><rb>綰</rb><rt>わが</rt></ruby>ねて<ruby><rb>懐</rb><rt>ふところ</rt></ruby>に入れ、やがて家路に向いしに、道の程にて<ruby><rb>耐</rb><rt>た</rt></ruby>えがたく睡眠を<ruby><rb>催</rb><rt>もよお</rt></ruby>しければ、しばらく<ruby><rb>物蔭</rb><rt>ものかげ</rt></ruby>に立寄りてまどろみたり。その間<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>と<ruby><rb>現</rb><rt>うつつ</rt></ruby>との境のようなる時に、これも<ruby><rb>丈</rb><rt>たけ</rt></ruby>の高き男一人近よりて懐中に手を差し入れ、かの綰ねたる黒髪を取り返し立ち去ると見ればたちまち<ruby><rb>睡</rb><rt>ねむり</rt></ruby>は覚めたり。山男なるべしといえり。</p>
+        <p>○<placeName ref="#tsuchibuchi">土淵村</placeName>大字<placeName ref="#tochinai">栃内</placeName>。</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>四</head>
+        <p><placeName ref="#yamaguchi-mura">山口村</placeName>の<persName ref="#kichibee">吉兵衛</persName>という家の主人、<placeName ref="#nekodachi"><ruby><rb>根子立</rb><rt>ねっこだち</rt></ruby></placeName>という山に入り、<ruby><rb>笹</rb><rt>ささ</rt></ruby>を<ruby><rb>苅</rb><rt>か</rt></ruby>りて<ruby><rb>束</rb><rt>たば</rt></ruby>となし<ruby><rb>担</rb><rt>かつ</rt></ruby>ぎて立上らんとする時、笹原の上を風の吹き渡るに心づきて見れば、奥の方なる林の中より若き女の<ruby><rb>穉児</rb><rt>おさなご</rt></ruby>を<ruby><rb>負</rb><rt>お</rt></ruby>いたるが笹原の上を歩みて此方へ来るなり。きわめてあでやかなる女にて、これも長き黒髪を垂れたり。児を<ruby><rb>結</rb><rt>ゆ</rt></ruby>いつけたる<ruby><rb>紐</rb><rt>ひも</rt></ruby>は藤の<ruby><rb>蔓</rb><rt>つる</rt></ruby>にて、<ruby><rb>着</rb><rt>き</rt></ruby>たる衣類は世の常の<ruby><rb>縞物</rb><rt>しまもの</rt></ruby>なれど、<ruby><rb>裾</rb><rt>すそ</rt></ruby>のあたりぼろぼろに破れたるを、いろいろの木の葉などを添えて<ruby><rb>綴</rb><rt>つづ</rt></ruby>りたり。足は地に<ruby><rb>着</rb><rt>つ</rt></ruby>くとも覚えず。事もなげに此方に近より、男のすぐ前を通りて<ruby><rb>何方</rb><rt>いずかた</rt></ruby>へか行き過ぎたり。この人はその折の<ruby><rb>怖</rb><rt>おそ</rt></ruby>ろしさより<ruby><rb>煩</rb><rt>わずら</rt></ruby>い<ruby><rb>始</rb><rt>はじ</rt></ruby>めて、久しく<ruby><rb>病</rb><rt>や</rt></ruby>みてありしが、近きころ<ruby><rb>亡</rb><rt>う</rt></ruby>せたり。</p>
+        <p>○<placeName ref="#tsuchibuchi">土淵村</placeName>大字山口、<persName ref="#kichibee">吉兵衛</persName>は代々の通称なればこの主人もまた<persName ref="#kichibee">吉兵衛</persName>ならん。</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>五</head>
+        <p><placeName ref="#tono-go">遠野郷</placeName>より海岸の<placeName ref="#tanohama"><ruby><rb>田</rb><rt>た</rt></ruby>ノ<ruby><rb>浜</rb><rt>はま</rt></ruby></placeName>、<placeName ref="#kirikiri"><ruby><rb>吉利吉里</rb><rt>きりきり</rt></ruby></placeName>などへ越ゆるには、昔より<placeName ref="#fuefuki"><ruby><rb>笛吹峠</rb><rt>ふえふきとうげ</rt></ruby></placeName>という<ruby><rb>山路</rb><rt>やまみち</rt></ruby>あり。<placeName ref="#yamaguchi-mura">山口村</placeName>より<placeName ref="#rokkoushi"><ruby><rb>六角牛</rb><rt>ろっこうし</rt></ruby></placeName>の方へ入り路のりも近かりしかど、近年この峠を越ゆる者、山中にて必ず山男山女に<ruby><rb>出逢</rb><rt>であ</rt></ruby>うより、誰もみな<ruby><rb>怖</rb><rt>おそ</rt></ruby>ろしがりて次第に往来も<ruby><rb>稀</rb><rt>まれ</rt></ruby>になりしかば、ついに別の路を<placeName ref="#sakaigi"><ruby><rb>境木峠</rb><rt>さかいげとうげ</rt></ruby></placeName>という方に開き、<placeName ref="#wayama"><ruby><rb>和山</rb><rt>わやま</rt></ruby></placeName>を<ruby><rb>馬次場</rb><rt>うまつぎば</rt></ruby>として今は此方ばかりを越ゆるようになれり。二里以上の<ruby><rb>迂路</rb><rt>うろ</rt></ruby>なり。</p>
+        <p>○山口は<placeName ref="#rokkoushi">六角牛</placeName>に登る山口なれば村の名となれるなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>六</head>
+        <p><placeName ref="#tono-go">遠野郷</placeName>にては豪農のことを今でも長者という。<placeName ref="#aozasa">青笹村</placeName>大字<placeName ref="#nukamae"><ruby><rb>糠前</rb><rt>ぬかのまえ</rt></ruby></placeName>の長者の娘、ふと物に取り隠されて年久しくなりしに、同じ村の何某という<ruby><rb>猟師</rb><rt>りょうし</rt></ruby>、<ruby><rb>或</rb><rt>あ</rt></ruby>る日山に入りて一人の女に<ruby><rb>遭</rb><rt>あ</rt></ruby>う。怖ろしくなりてこれを撃たんとせしに、何おじではないか、ぶつなという。驚きてよく見れば<ruby><rb>彼</rb><rt>か</rt></ruby>の長者がまな娘なり。<ruby><rb>何故</rb><rt>なにゆえ</rt></ruby>にこんな<ruby><rb>処</rb><rt>ところ</rt></ruby>にはおるぞと問えば、或る物に取られて今はその妻となれり。子もあまた<ruby><rb>生</rb><rt>う</rt></ruby>みたれど、すべて<ruby><rb>夫</rb><rt>おっと</rt></ruby>が食い<ruby><rb>尽</rb><rt>つく</rt></ruby>して一人此のごとくあり。おのれはこの地に一生涯を送ることなるべし。人にも言うな。御身も危うければ<ruby><rb>疾</rb><rt>と</rt></ruby>く帰れというままに、その在所をも問い<ruby><rb>明</rb><rt>あき</rt></ruby>らめずして<ruby><rb>遁</rb><rt>に</rt></ruby>げ<ruby><rb>還</rb><rt>かえ</rt></ruby>れりという。</p>
+        <p>○<placeName ref="#nukamae">糠の前</placeName>は<placeName ref="#nukamori">糠の森</placeName>の前にある村なり、<placeName ref="#nukamori">糠の森</placeName>は諸国の糠塚と同じ。<placeName ref="#tono-go">遠野郷</placeName>にも<placeName ref="#nukamori">糠森</placeName>・糠塚多くあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec09" n="9">
+        <head>七</head>
+        <p><placeName ref="#kamigo">上郷村</placeName>の民家の娘、<ruby><rb>栗</rb><rt>くり</rt></ruby>を拾いに山に入りたるまま帰り<ruby><rb>来</rb><rt>き</rt></ruby>たらず。家の者は死したるならんと思い、女のしたる<ruby><rb>枕</rb><rt>まくら</rt></ruby>を<ruby><rb>形代</rb><rt>かたしろ</rt></ruby>として葬式を<ruby><rb>執行</rb><rt>とりおこな</rt></ruby>い、さて二三年を過ぎたり。しかるにその村の者猟をして<placeName ref="#goyosan"><ruby><rb>五葉山</rb><rt>ごようざん</rt></ruby></placeName>の腰のあたりに入りしに、大なる岩の<ruby><rb>蔽</rb><rt>おお</rt></ruby>いかかりて岩窟のようになれるところにて、<ruby><rb>図</rb><rt>はか</rt></ruby>らずこの女に逢いたり。互いに打ち驚き、いかにしてかかる山にはおるかと問えば、女の<ruby><rb>曰</rb><rt>いわ</rt></ruby>く、山に入りて恐ろしき人にさらわれ、こんなところに来たるなり。<ruby><rb>遁</rb><rt>に</rt></ruby>げて帰らんと思えど<ruby><rb>些</rb><rt>いささか</rt></ruby>の<ruby><rb>隙</rb><rt>すき</rt></ruby>もなしとのことなり。その人はいかなる人かと問うに、自分には<ruby><rb>並</rb><rt>なみ</rt></ruby>の人間と見ゆれど、ただ<ruby><rb>丈</rb><rt>たけ</rt></ruby>きわめて高く眼の色少し<ruby><rb>凄</rb><rt>すご</rt></ruby>しと思わる。子供も幾人か生みたれど、我に似ざれば我子にはあらずといいて<ruby><rb>食</rb><rt>くら</rt></ruby>うにや殺すにや、みないずれへか持ち去りてしまうなりという。まことに我々と同じ人間かと押し返して問えば、衣類なども世の常なれど、ただ眼の色少しちがえり。<ruby><rb>一市間</rb><rt>ひといちあい</rt></ruby>に一度か二度、同じようなる人四五人集まりきて、何事か話をなし、やがて<ruby><rb>何方</rb><rt>どちら</rt></ruby>へか出て行くなり。食物など外より持ち来たるを見れば町へも出ることならん。かく言ううちにも今にそこへ帰って来るかも知れずという故、猟師も怖ろしくなりて帰りたりといえり。二十年ばかりも以前のことかと思わる。</p>
+        <p>○一市間は<placeName ref="#tono-machi">遠野の町</placeName>の市の日と次の市の日の間なり。月六度の市なれば一市間はすなわち五日のことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec10" n="10">
+        <head>八</head>
+        <p><ruby><rb>黄昏</rb><rt>たそがれ</rt></ruby>に女や子供の家の外に出ている者はよく<ruby><rb>神隠</rb><rt>かみかく</rt></ruby>しにあうことは<ruby><rb>他</rb><rt>よそ</rt></ruby>の国々と同じ。<placeName ref="#matsuzaki">松崎村</placeName>の<placeName ref="#samuto-mura"><ruby><rb>寒戸</rb><rt>さむと</rt></ruby></placeName>というところの民家にて、若き娘<ruby><rb>梨</rb><rt>なし</rt></ruby>の<ruby><rb>樹</rb><rt>き</rt></ruby>の下に<ruby><rb>草履</rb><rt>ぞうり</rt></ruby>を<ruby><rb>脱</rb><rt>ぬ</rt></ruby>ぎ置きたるまま<ruby><rb>行方</rb><rt>ゆくえ</rt></ruby>を知らずなり、三十年あまり過ぎたりしに、或る日親類知音の人々その家に<ruby><rb>集</rb><rt>あつ</rt></ruby>まりてありしところへ、きわめて老いさらぼいてその女帰り来たれり。いかにして帰って来たかと問えば人々に逢いたかりし故帰りしなり。さらばまた行かんとて、再び<ruby><rb>跡</rb><rt>あと</rt></ruby>を<ruby><rb>留</rb><rt>とど</rt></ruby>めず行き<ruby><rb>失</rb><rt>う</rt></ruby>せたり。その日は風の<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく吹く日なりき。されば<placeName ref="#tono-go">遠野郷</placeName>の人は、今でも風の騒がしき日には、きょうは<persName ref="#samuto">サムトの<ruby><rb>婆</rb><rt>ばば</rt></ruby></persName>が帰って来そうな日なりという。</p>
+      </div>
+      <div type="chapter" xml:id="sec11" n="11">
+        <head>九</head>
+        <p><persName ref="#kikuchi-yanosuke">菊池<ruby><rb>弥之助</rb><rt>やのすけ</rt></ruby></persName>という老人は若きころ<ruby><rb>駄賃</rb><rt>だちん</rt></ruby>を業とせり。笛の名人にて<ruby><rb>夜通</rb><rt>よどお</rt></ruby>しに馬を追いて行く時などは、よく笛を吹きながら行きたり。ある<ruby><rb>薄月夜</rb><rt>うすづきよ</rt></ruby>に、あまたの仲間の者とともに浜へ越ゆる<placeName ref="#sakaigi">境木峠</placeName>を行くとて、また笛を取り出して吹きすさみつつ、<placeName ref="#oyachi"><ruby><rb>大谷地</rb><rt>おおやち</rt></ruby></placeName>というところの上を過ぎたり。<placeName ref="#oyachi">大谷地</placeName>は深き谷にて<ruby><rb>白樺</rb><rt>しらかんば</rt></ruby>の林しげく、その下は<ruby><rb>葦</rb><rt>あし</rt></ruby>など生じ<ruby><rb>湿</rb><rt>しめ</rt></ruby>りたる沢なり。この時谷の底より何者か高き声にて面白いぞーと<ruby><rb>呼</rb><rt>よ</rt></ruby>ばわる者あり。一同ことごとく色を失い遁げ走りたりといえり。</p>
+        <p>○ヤチはアイヌ語にて湿地の義なり、内地に多くある地名なり。またヤツともヤトともヤともいう。</p>
+      </div>
+      <div type="chapter" xml:id="sec12" n="12">
+        <head>一〇</head>
+        <p>この男ある奥山に入り、<ruby><rb>茸</rb><rt>きのこ</rt></ruby>を採るとて小屋を<ruby><rb>掛</rb><rt>か</rt></ruby>け<ruby><rb>宿</rb><rt>とま</rt></ruby>りてありしに、深夜に遠きところにてきゃーという女の叫び声聞え胸を<ruby><rb>轟</rb><rt>とどろ</rt></ruby>かしたることあり。里へ帰りて見れば、その同じ夜、時も同じ刻限に、自分の妹なる女その<ruby><rb>息子</rb><rt>むすこ</rt></ruby>のために殺されてありき。</p>
+      </div>
+      <div type="chapter" xml:id="sec13" n="13">
+        <head>一一</head>
+        <p>この女というは母一人子一人の家なりしに、<ruby><rb>嫁</rb><rt>よめ</rt></ruby>と<ruby><rb>姑</rb><rt>しゅうと</rt></ruby>との仲<ruby><rb>悪</rb><rt>あ</rt></ruby>しくなり、嫁はしばしば親里へ行きて帰り来ざることあり。その日は嫁は家にありて打ち<ruby><rb>臥</rb><rt>ふ</rt></ruby>しておりしに、昼のころになり突然と<ruby><rb>倅</rb><rt>せがれ</rt></ruby>のいうには、ガガはとても<ruby><rb>生</rb><rt>い</rt></ruby>かしては置かれぬ、<ruby><rb>今日</rb><rt>きょう</rt></ruby>はきっと殺すべしとて、大なる<ruby><rb>草苅鎌</rb><rt>くさかりがま</rt></ruby>を取り出し、ごしごしと<ruby><rb>磨</rb><rt>と</rt></ruby>ぎ始めたり。そのありさまさらに<ruby><rb>戯言</rb><rt>たわむれごと</rt></ruby>とも見えざれば、母はさまざまに事を<ruby><rb>分</rb><rt>わ</rt></ruby>けて<ruby><rb>詫</rb><rt>わ</rt></ruby>びたれども少しも聴かず。嫁も起き<ruby><rb>出</rb><rt>い</rt></ruby>でて泣きながら<ruby><rb>諫</rb><rt>いさ</rt></ruby>めたれど、<ruby><rb>露</rb><rt>つゆ</rt></ruby><ruby><rb>従</rb><rt>したが</rt></ruby>う色もなく、やがて母が<ruby><rb>遁</rb><rt>のが</rt></ruby>れ出でんとする<ruby><rb>様子</rb><rt>ようす</rt></ruby>あるを見て、前後の戸口をことごとく<ruby><rb>鎖</rb><rt>とざ</rt></ruby>したり。便用に行きたしといえば、おのれみずから外より便器を持ち来たりてこれへせよという。夕方にもなりしかば母もついにあきらめて、大なる<ruby><rb>囲炉裡</rb><rt>いろり</rt></ruby>の<ruby><rb>側</rb><rt>かたわら</rt></ruby>にうずくまりただ泣きていたり。<ruby><rb>倅</rb><rt>せがれ</rt></ruby>はよくよく<ruby><rb>磨</rb><rt>と</rt></ruby>ぎたる大鎌を手にして近より来たり、まず左の肩口を目がけて<ruby><rb>薙</rb><rt>な</rt></ruby>ぐようにすれば、鎌の<ruby><rb>刃先</rb><rt>はさき</rt></ruby><ruby><rb>炉</rb><rt>ろ</rt></ruby>の<ruby><rb>上</rb><rt>うえ</rt></ruby>の<ruby><rb>火棚</rb><rt>ひだな</rt></ruby>に<ruby><rb>引</rb><rt>ひ</rt></ruby>っかかりてよく<ruby><rb>斬</rb><rt>き</rt></ruby>れず。その時に母は深山の奥にて<persName ref="#kikuchi-yanosuke">弥之助</persName>が聞きつけしようなる叫び声を立てたり。二度目には右の肩より<ruby><rb>切</rb><rt>き</rt></ruby>り<ruby><rb>下</rb><rt>さ</rt></ruby>げたるが、これにてもなお<ruby><rb>死絶</rb><rt>しにた</rt></ruby>えずしてあるところへ、<ruby><rb>里人</rb><rt>さとびと</rt></ruby>ら驚きて<ruby><rb>馳</rb><rt>は</rt></ruby>せつけ倅を<ruby><rb>取</rb><rt>と</rt></ruby>り<ruby><rb>抑</rb><rt>おさ</rt></ruby>え直に警察官を<ruby><rb>呼</rb><rt>よ</rt></ruby>びて<ruby><rb>渡</rb><rt>わた</rt></ruby>したり。警官がまだ棒を持ちてある時代のことなり。母親は男が<ruby><rb>捕</rb><rt>とら</rt></ruby>えられ引き立てられて行くを見て、滝のように血の流るる中より、おのれは<ruby><rb>恨</rb><rt>うらみ</rt></ruby>も<ruby><rb>抱</rb><rt>いだ</rt></ruby>かずに死ぬるなれば、<persName ref="#magoshiro">孫四郎</persName>は<ruby><rb>宥</rb><rt>ゆる</rt></ruby>したまわれという。これを聞きて心を<ruby><rb>動</rb><rt>うご</rt></ruby>かさぬ者はなかりき。<persName ref="#magoshiro">孫四郎</persName>は途中にてもその鎌を振り上げて巡査を追い廻しなどせしが、狂人なりとて放免せられて家に帰り、今も生きて里にあり。</p>
+        <p>○ガガは方言にて母ということなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec14" n="14">
+        <head>一二</head>
+        <p><placeName ref="#tsuchibuchi">土淵村</placeName>山口に<persName ref="#nitta-otozo"><ruby><rb>新田乙蔵</rb><rt>にったおとぞう</rt></ruby></persName>という老人あり。村の人は<persName ref="#nitta-otozo"><ruby><rb>乙爺</rb><rt>おとじい</rt></ruby></persName>という。今は九十に近く<ruby><rb>病</rb><rt>や</rt></ruby>みてまさに<ruby><rb>死</rb><rt>し</rt></ruby>なんとす。<ruby><rb>年頃</rb><rt>としごろ</rt></ruby><placeName ref="#tono-go">遠野郷</placeName>の昔の話をよく知りて、誰かに話して聞かせ置きたしと<ruby><rb>口癖</rb><rt>くちぐせ</rt></ruby>のようにいえど、あまり<ruby><rb>臭</rb><rt>くさ</rt></ruby>ければ立ち寄りて聞かんとする人なし。<ruby><rb>処々</rb><rt>ところどころ</rt></ruby>の<ruby><rb>館</rb><rt>たて</rt></ruby>の<ruby><rb>主</rb><rt>ぬし</rt></ruby>の伝記、<ruby><rb>家々</rb><rt>いえいえ</rt></ruby>の盛衰、昔よりこの<ruby><rb>郷</rb><rt>ごう</rt></ruby>に<ruby><rb>行</rb><rt>おこな</rt></ruby>われし歌の数々を始めとして、深山の伝説またはその奥に住める人々の物語など、この老人最もよく知れり。</p>
+        <p>○<ruby><rb>惜</rb><rt>おし</rt></ruby>むべし、<persName ref="#nitta-otozo">乙爺</persName>は<date when="1909">明治四十二年</date>の夏の始めになくなりたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec15" n="15">
+        <head>一三</head>
+        <p>この老人は数十年の間山の中に<ruby><rb>独</rb><rt>ひと</rt></ruby>りにて住みし人なり。よき<ruby><rb>家柄</rb><rt>いえがら</rt></ruby>なれど、若きころ財産を傾け失いてより、世の中に思いを<ruby><rb>絶</rb><rt>た</rt></ruby>ち、峠の上に<ruby><rb>小屋</rb><rt>こや</rt></ruby>を掛け、<ruby><rb>甘酒</rb><rt>あまざけ</rt></ruby>を<ruby><rb>往来</rb><rt>おうらい</rt></ruby>の人に売りて活計とす。<ruby><rb>駄賃</rb><rt>だちん</rt></ruby>の<ruby><rb>徒</rb><rt>と</rt></ruby>はこの翁を<ruby><rb>父親</rb><rt>ちちおや</rt></ruby>のように思いて、<ruby><rb>親</rb><rt>した</rt></ruby>しみたり。少しく収入の<ruby><rb>余</rb><rt>あまり</rt></ruby>あれば、町に<ruby><rb>下</rb><rt>くだ</rt></ruby>りきて酒を飲む。<ruby><rb>赤毛布</rb><rt>あかゲット</rt></ruby>にて作りたる<ruby><rb>半纏</rb><rt>はんてん</rt></ruby>を着て、赤き<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>を<ruby><rb>被</rb><rt>かぶ</rt></ruby>り、酔えば、町の中を<ruby><rb>躍</rb><rt>おど</rt></ruby>りて帰るに巡査もとがめず。いよいよ老衰して後、<ruby><rb>旧里</rb><rt>きゅうり</rt></ruby>に帰りあわれなる<ruby><rb>暮</rb><rt>くら</rt></ruby>しをなせり。子供はすべて<placeName ref="#hokkaido">北海道</placeName>へ行き、翁ただ一人なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec16" n="16">
+        <head>一四</head>
+        <p><ruby><rb>部落</rb><rt>ぶらく</rt></ruby>には必ず一戸の旧家ありて、<persName ref="#okunaisama">オクナイサマ</persName>という神を<ruby><rb>祀</rb><rt>まつ</rt></ruby>る。その家をば<ruby><rb>大同</rb><rt>だいどう</rt></ruby>という。この神の<ruby><rb>像</rb><rt>ぞう</rt></ruby>は<ruby><rb>桑</rb><rt>くわ</rt></ruby>の木を<ruby><rb>削</rb><rt>けず</rt></ruby>りて<ruby><rb>顔</rb><rt>かお</rt></ruby>を<ruby><rb>描</rb><rt>えが</rt></ruby>き、四角なる<ruby><rb>布</rb><rt>ぬの</rt></ruby>の<ruby><rb>真中</rb><rt>まんなか</rt></ruby>に穴を<ruby><rb>明</rb><rt>あ</rt></ruby>け、これを<ruby><rb>上</rb><rt>うえ</rt></ruby>より<ruby><rb>通</rb><rt>とお</rt></ruby>して<ruby><rb>衣裳</rb><rt>いしょう</rt></ruby>とす。<date when="--01-15">正月の十五日</date>には<ruby><rb>小字中</rb><rt>こあざじゅう</rt></ruby>の人々この家に集まり<ruby><rb>来</rb><rt>き</rt></ruby>たりてこれを祭る。また<persName ref="#oshirasama">オシラサマ</persName>という神あり。この神の像もまた同じようにして造り<ruby><rb>設</rb><rt>もう</rt></ruby>け、これも<date when="--01-15">正月の十五日</date>に<ruby><rb>里人</rb><rt>さとびと</rt></ruby>集まりてこれを祭る。その式には<ruby><rb>白粉</rb><rt>おしろい</rt></ruby>を神像の顔に塗ることあり。大同の家には必ず<ruby><rb>畳</rb><rt>たたみ</rt></ruby><ruby><rb>一帖</rb><rt>いちじょう</rt></ruby>の<ruby><rb>室</rb><rt>しつ</rt></ruby>あり。この<ruby><rb>部屋</rb><rt>へや</rt></ruby>にて<ruby><rb>夜</rb><rt>よる</rt></ruby><ruby><rb>寝</rb><rt>ね</rt></ruby>る者はいつも不思議に<ruby><rb>遭</rb><rt>あ</rt></ruby>う。<ruby><rb>枕</rb><rt>まくら</rt></ruby>を<ruby><rb>反</rb><rt>かえ</rt></ruby>すなどは常のことなり。或いは誰かに<ruby><rb>抱</rb><rt>だ</rt></ruby>き<ruby><rb>起</rb><rt>お</rt></ruby>こされ、または室より<ruby><rb>突</rb><rt>つ</rt></ruby>き<ruby><rb>出</rb><rt>いだ</rt></ruby>さるることもあり。およそ静かに眠ることを許さぬなり。</p>
+        <p>○<persName ref="#oshirasama">オシラサマ</persName>は双神なり。アイヌの中にもこの神あること『<ruby><rb>蝦夷</rb><rt>えぞ</rt></ruby>風俗<ruby><rb>彙聞</rb><rt>いぶん</rt></ruby>』に見ゆ。</p>
+        <p>○<placeName ref="#kariwano">羽後苅和野</placeName>の町にて市の神の神体なる陰陽の神に<date when="--01-15">正月十五日</date>白粉を塗りて祭ることあり。これと似たる例なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec17" n="17">
+        <head>一五</head>
+        <p><persName ref="#okunaisama">オクナイサマ</persName>を祭れば<ruby><rb>幸</rb><rt>さいわい</rt></ruby>多し。<placeName ref="#tsuchibuchi">土淵村</placeName>大字<placeName ref="#kashiwazaki"><ruby><rb>柏崎</rb><rt>かしわざき</rt></ruby></placeName>の長者<persName ref="#abe-nagaya">阿部氏</persName>、村にては<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>の<ruby><rb>家</rb><rt>うち</rt></ruby>という。この家にて或る年<ruby><rb>田植</rb><rt>たうえ</rt></ruby>の<ruby><rb>人手</rb><rt>ひとで</rt></ruby><ruby><rb>足</rb><rt>た</rt></ruby>らず、<ruby><rb>明日</rb><rt>あす</rt></ruby>は<ruby><rb>空</rb><rt>そら</rt></ruby>も<ruby><rb>怪</rb><rt>あや</rt></ruby>しきに、わずかばかりの田を植え残すことかなどつぶやきてありしに、ふと<ruby><rb>何方</rb><rt>いずち</rt></ruby>よりともなく<ruby><rb>丈</rb><rt>たけ</rt></ruby><ruby><rb>低</rb><rt>ひく</rt></ruby>き<ruby><rb>小僧</rb><rt>こぞう</rt></ruby>一人来たりて、おのれも手伝い申さんというに<ruby><rb>任</rb><rt>まか</rt></ruby>せて<ruby><rb>働</rb><rt>はたら</rt></ruby>かせて置きしに、<ruby><rb>午飯時</rb><rt>ひるめしどき</rt></ruby>に<ruby><rb>飯</rb><rt>めし</rt></ruby>を食わせんとて<ruby><rb>尋</rb><rt>たず</rt></ruby>ねたれど見えず。やがて再び帰りきて終日、<ruby><rb>代</rb><rt>しろ</rt></ruby>を<ruby><rb>掻</rb><rt>か</rt></ruby>きよく<ruby><rb>働</rb><rt>はたら</rt></ruby>きてくれしかば、その日に植えはてたり。どこの人かは知らぬが、晩にはきて物を<ruby><rb>食</rb><rt>く</rt></ruby>いたまえと<ruby><rb>誘</rb><rt>さそ</rt></ruby>いしが、日暮れてまたその<ruby><rb>影</rb><rt>かげ</rt></ruby>見えず。家に帰りて見れば、<ruby><rb>縁側</rb><rt>えんがわ</rt></ruby>に小さき<ruby><rb>泥</rb><rt>どろ</rt></ruby>の<ruby><rb>足跡</rb><rt>あしあと</rt></ruby>あまたありて、だんだんに座敷に入り、<persName ref="#okunaisama">オクナイサマ</persName>の<ruby><rb>神棚</rb><rt>かみだな</rt></ruby>のところに<ruby><rb>止</rb><rt>とどま</rt></ruby>りてありしかば、さてはと思いてその<ruby><rb>扉</rb><rt>とびら</rt></ruby>を開き見れば、神像の腰より下は田の<ruby><rb>泥</rb><rt>どろ</rt></ruby>にまみれていませし<ruby><rb>由</rb><rt>よし</rt></ruby>。</p>
+      </div>
+      <div type="chapter" xml:id="sec18" n="18">
+        <head>一六</head>
+        <p><persName ref="#konsesama">コンセサマ</persName>を祭れる家も少なからず。この神の神体は<persName ref="#okomasama">オコマサマ</persName>とよく似たり。<persName ref="#okomasama">オコマサマ</persName>の社は里に多くあり。石または木にて男の物を作りて<ruby><rb>捧</rb><rt>ささ</rt></ruby>ぐるなり。今はおいおいとその事少なくなれり。</p>
+      </div>
+      <div type="chapter" xml:id="sec19" n="19">
+        <head>一七</head>
+        <p><ruby><rb>旧家</rb><rt>きゅうか</rt></ruby>には<persName ref="#zashikiwarashi">ザシキワラシ</persName>という神の住みたもう家少なからず。この神は多くは十二三ばかりの童児なり。おりおり人に姿を見することあり。<placeName ref="#tsuchibuchi">土淵村</placeName>大字<placeName ref="#iide"><ruby><rb>飯豊</rb><rt>いいで</rt></ruby></placeName>の<persName ref="#imabuchi-kanjuro"><ruby><rb>今淵</rb><rt>いまぶち</rt></ruby>勘十郎</persName>という人の家にては、近きころ高等女学校にいる娘の休暇にて帰りてありしが、或る日<ruby><rb>廊下</rb><rt>ろうか</rt></ruby>にてはたと<persName ref="#zashikiwarashi">ザシキワラシ</persName>に行き<ruby><rb>逢</rb><rt>あ</rt></ruby>い大いに驚きしことあり。これは<ruby><rb>正</rb><rt>まさ</rt></ruby>しく男の<ruby><rb>児</rb><rt>こ</rt></ruby>なりき。同じ村山口なる<persName ref="#sasaki-kizen">佐々木氏</persName>にては、母人ひとり<ruby><rb>縫物</rb><rt>ぬいもの</rt></ruby>しておりしに、次の間にて紙のがさがさという音あり。この室は家の主人の<ruby><rb>部屋</rb><rt>へや</rt></ruby>にて、その時は<placeName ref="#tokyo">東京</placeName>に行き不在の折なれば、怪しと思いて板戸を開き見るに何の影もなし。しばらくの<ruby><rb>間</rb><rt>あいだ</rt></ruby><ruby><rb>坐</rb><rt>すわ</rt></ruby>りて居ればやがてまた<ruby><rb>頻</rb><rt>しきり</rt></ruby>に鼻を<ruby><rb>鳴</rb><rt>な</rt></ruby>らす音あり。さては<persName ref="#zashikiwarashi"><ruby><rb>座敷</rb><rt>ざしき</rt></ruby>ワラシ</persName>なりけりと思えり。この家にも<persName ref="#zashikiwarashi">座敷ワラシ</persName>住めりということ、久しき以前よりの<ruby><rb>沙汰</rb><rt>さた</rt></ruby>なりき。この神の<ruby><rb>宿</rb><rt>やど</rt></ruby>りたもう家は富貴自在なりということなり。</p>
+        <p>○<persName ref="#zashikiwarashi">ザシキワラシ</persName>は<persName ref="#zashikiwarashi">座敷童衆</persName>なり。この神のこと『<ruby><rb>石神</rb><rt>いしがみ</rt></ruby>問答』中にも記事あり。</p>
+      </div>
+      <div type="chapter" xml:id="sec20" n="20">
+        <head>一八</head>
+        <p><persName ref="#zashikiwarashi">ザシキワラシ</persName>また女の児なることあり。同じ山口なる旧家にて<persName ref="#magozaemon">山口孫左衛門</persName>という家には、童女の神二人いませりということを久しく言い伝えたりしが、或る年同じ村の何某という男、町より帰るとて<ruby><rb>留場</rb><rt>とめば</rt></ruby>の橋のほとりにて<ruby><rb>見馴</rb><rt>みな</rt></ruby>れざる二人のよき娘に逢えり。物思わしき様子にて此方へ<ruby><rb>来</rb><rt>き</rt></ruby>たる。お前たちはどこから来たと問えば、おら山口の<persName ref="#magozaemon">孫左衛門</persName>がところからきたと答う。これから何処へ行くのかと聞けば、それの村の何某が家にと答う。その何某はやや離れたる村にて、今も立派に暮せる豪農なり。さては<persName ref="#magozaemon">孫左衛門</persName>が世も末だなと思いしが、それより久しからずして、この家の主従二十幾人、<ruby><rb>茸</rb><rt>きのこ</rt></ruby>の毒に<ruby><rb>中</rb><rt>あた</rt></ruby>りて一日のうちに死に<ruby><rb>絶</rb><rt>た</rt></ruby>え、七歳の女の子一人を残せしが、その女もまた年老いて子なく、近きころ<ruby><rb>病</rb><rt>や</rt></ruby>みて失せたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec21" n="21">
+        <head>一九</head>
+        <p><persName ref="#magozaemon">孫左衛門</persName>が家にては、或る日<ruby><rb>梨</rb><rt>なし</rt></ruby>の木のめぐりに<ruby><rb>見馴</rb><rt>みな</rt></ruby>れぬ<ruby><rb>茸</rb><rt>きのこ</rt></ruby>のあまた<ruby><rb>生</rb><rt>は</rt></ruby>えたるを、食わんか食うまじきかと男どもの評議してあるを聞きて、最後の代の<persName ref="#magozaemon">孫左衛門</persName>、食わぬがよしと制したれども、下男の一人がいうには、いかなる茸にても<ruby><rb>水桶</rb><rt>みずおけ</rt></ruby>の中に入れて<ruby><rb>苧殻</rb><rt>おがら</rt></ruby>をもってよくかき<ruby><rb>廻</rb><rt>まわ</rt></ruby>してのち食えば決して<ruby><rb>中</rb><rt>あた</rt></ruby>ることなしとて、一同この言に従い家内ことごとくこれを食いたり。七歳の女の<ruby><rb>児</rb><rt>こ</rt></ruby>はその日外に<ruby><rb>出</rb><rt>い</rt></ruby>でて遊びに気を取られ、昼飯を食いに帰ることを忘れしために助かりたり。不意の主人の死去にて人々の動転してある間に、遠き近き親類の人々、或いは生前に<ruby><rb>貸</rb><rt>かし</rt></ruby>ありといい、或いは約束ありと称して、家の貨財は<ruby><rb>味噌</rb><rt>みそ</rt></ruby>の<ruby><rb>類</rb><rt>たぐい</rt></ruby>までも取り去りしかば、この村<ruby><rb>草分</rb><rt>くさわけ</rt></ruby>の長者なりしかども、一朝にして<ruby><rb>跡方</rb><rt>あとかた</rt></ruby>もなくなりたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec22" n="22">
+        <head>二〇</head>
+        <p>この兇変の前にはいろいろの前兆ありき。男ども<ruby><rb>苅置</rb><rt>かりお</rt></ruby>きたる<ruby><rb>秣</rb><rt>まぐさ</rt></ruby>を出すとて三ツ歯の<ruby><rb>鍬</rb><rt>くわ</rt></ruby>にて<ruby><rb>掻</rb><rt>か</rt></ruby>きまわせしに、大なる<ruby><rb>蛇</rb><rt>へび</rt></ruby>を<ruby><rb>見出</rb><rt>みいだ</rt></ruby>したり。これも殺すなと主人が制せしをも聴かずして打ち殺したりしに、その跡より秣の下にいくらともなき蛇ありて、うごめき出でたるを、男ども面白半分にことごとくこれを殺したり。さて取り捨つべきところもなければ、屋敷の<ruby><rb>外</rb><rt>そと</rt></ruby>に穴を掘りてこれを<ruby><rb>埋</rb><rt>う</rt></ruby>め、蛇塚を作る。その蛇は<ruby><rb>簣</rb><rt>あじか</rt></ruby>に<ruby><rb>何荷</rb><rt>なんが</rt></ruby>ともなくありたりといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec23" n="23">
+        <head>二一</head>
+        <p>右の<persName ref="#magozaemon">孫左衛門</persName>は村には珍しき学者にて、常に<placeName ref="#kyoto">京都</placeName>より和漢の書を取り寄せて読み<ruby><rb>耽</rb><rt>ふけ</rt></ruby>りたり。少し変人という方なりき。<ruby><rb>狐</rb><rt>きつね</rt></ruby>と親しくなりて家を富ます術を得んと思い立ち、まず庭の中に<persName ref="#inari"><ruby><rb>稲荷</rb><rt>いなり</rt></ruby></persName>の<ruby><rb>祠</rb><rt>ほこら</rt></ruby>を<ruby><rb>建</rb><rt>た</rt></ruby>て、自身<placeName ref="#kyoto">京</placeName>に<ruby><rb>上</rb><rt>のぼ</rt></ruby>りて正一位の神階を<ruby><rb>請</rb><rt>う</rt></ruby>けて帰り、それよりは日々一枚の<ruby><rb>油揚</rb><rt>あぶらげ</rt></ruby>を欠かすことなく、手ずから社頭に<ruby><rb>供</rb><rt>そな</rt></ruby>えて拝をなせしに、のちには狐<ruby><rb>馴</rb><rt>な</rt></ruby>れて近づけども<ruby><rb>遁</rb><rt>に</rt></ruby>げず。手を延ばしてその首を<ruby><rb>抑</rb><rt>おさ</rt></ruby>えなどしたりという。村にありし薬師の<ruby><rb>堂守</rb><rt>どうもり</rt></ruby>は、わが仏様は何ものをも<ruby><rb>供</rb><rt>そな</rt></ruby>えざれども、<persName ref="#magozaemon">孫左衛門</persName>の神様よりは<ruby><rb>御利益</rb><rt>ごりやく</rt></ruby>ありと、たびたび笑いごとにしたりとなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec24" n="24">
+        <head>二二</head>
+        <p><persName ref="#sasaki-kizen">佐々木氏</persName>の<ruby><rb>曾祖母</rb><rt>そうそぼ</rt></ruby>年よりて死去せし時、<ruby><rb>棺</rb><rt>かん</rt></ruby>に取り<ruby><rb>納</rb><rt>おさ</rt></ruby>め親族の者集まりきてその夜は一同座敷にて寝たり。死者の娘にて乱心のため離縁せられたる婦人もまたその中にありき。<ruby><rb>喪</rb><rt>も</rt></ruby>の間は火の<ruby><rb>気</rb><rt>け</rt></ruby>を<ruby><rb>絶</rb><rt>た</rt></ruby>やすことを<ruby><rb>忌</rb><rt>い</rt></ruby>むがところの<ruby><rb>風</rb><rt>ふう</rt></ruby>なれば、祖母と母との二人のみは、大なる<ruby><rb>囲炉裡</rb><rt>いろり</rt></ruby>の<ruby><rb>両側</rb><rt>りょうがわ</rt></ruby>に<ruby><rb>坐</rb><rt>すわ</rt></ruby>り、<ruby><rb>母人</rb><rt>ははびと</rt></ruby>は<ruby><rb>旁</rb><rt>かたわら</rt></ruby>に<ruby><rb>炭籠</rb><rt>すみかご</rt></ruby>を置き、おりおり炭を<ruby><rb>継</rb><rt>つ</rt></ruby>ぎてありしに、ふと裏口の方より足音してくる者あるを見れば、<ruby><rb>亡</rb><rt>な</rt></ruby>くなりし老女なり。<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>腰かがみて<ruby><rb>衣物</rb><rt>きもの</rt></ruby>の<ruby><rb>裾</rb><rt>すそ</rt></ruby>の引きずるを、三角に取り上げて前に縫いつけてありしが、まざまざとその通りにて、<ruby><rb>縞目</rb><rt>しまめ</rt></ruby>にも<ruby><rb>見覚</rb><rt>みおぼ</rt></ruby>えあり。あなやと思う間もなく、二人の女の坐れる炉の脇を通り行くとて、裾にて<ruby><rb>炭取</rb><rt>すみとり</rt></ruby>にさわりしに、丸き炭取なればくるくるとまわりたり。母人は<ruby><rb>気丈</rb><rt>きじょう</rt></ruby>の人なれば振り返りあとを見送りたれば、親縁の人々の打ち<ruby><rb>臥</rb><rt>ふ</rt></ruby>したる座敷の方へ近より行くと思うほどに、かの狂女のけたたましき声にて、おばあさんが来たと叫びたり。その余の人々はこの声に<ruby><rb>睡</rb><rt>ねむり</rt></ruby>を<ruby><rb>覚</rb><rt>さま</rt></ruby>しただ打ち驚くばかりなりしといえり。</p>
+        <p>○<persName ref="#maeterlinck">マーテルリンク</persName>の『侵入者』を想い起こさしむ。</p>
+      </div>
+      <div type="chapter" xml:id="sec25" n="25">
+        <head>二三</head>
+        <p>同じ人の二七日の<ruby><rb>逮夜</rb><rt>たいや</rt></ruby>に、知音の者集まりて、夜<ruby><rb>更</rb><rt>ふ</rt></ruby>くるまで念仏を<ruby><rb>唱</rb><rt>とな</rt></ruby>え立ち帰らんとする時、<ruby><rb>門口</rb><rt>かどぐち</rt></ruby>の石に腰掛けてあちらを向ける老女あり。そのうしろ<ruby><rb>付</rb><rt>つき</rt></ruby>正しく<ruby><rb>亡</rb><rt>な</rt></ruby>くなりし人の通りなりき。これは<ruby><rb>数多</rb><rt>あまた</rt></ruby>の人見たる<ruby><rb>故</rb><rt>ゆえ</rt></ruby>に誰も疑わず。いかなる<ruby><rb>執着</rb><rt>しゅうじゃく</rt></ruby>のありしにや、ついに知る人はなかりしなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec26" n="26">
+        <head>二四</head>
+        <p>村々の旧家を<ruby><rb>大同</rb><rt>だいどう</rt></ruby>というは、<date when="0806">大同元年</date>に<placeName ref="#kai"><ruby><rb>甲斐国</rb><rt>かいのくに</rt></ruby></placeName>より移り来たる家なればかくいうとのことなり。大同は<persName ref="#tamura-shogun">田村将軍</persName>征討の時代なり。甲斐は<persName ref="#nanbu">南部家</persName>の本国なり。二つの伝説を混じたるに<ruby><rb>非</rb><rt>あら</rt></ruby>ざるか。</p>
+        <p>○大同は大洞かも知れず、洞とは東北にて家門または族ということなり。『<ruby><rb>常陸国志</rb><rt>ひたちのこくし</rt></ruby>』に例あり、ホラマエという語のちに見ゆ。</p>
+      </div>
+      <div type="chapter" xml:id="sec27" n="27">
+        <head>二五</head>
+        <p>大同の祖先たちが、始めてこの地方に到着せしは、あたかも<ruby><rb>歳</rb><rt>とし</rt></ruby>の<ruby><rb>暮</rb><rt>くれ</rt></ruby>にて、春のいそぎの<ruby><rb>門松</rb><rt>かどまつ</rt></ruby>を、まだ<ruby><rb>片方</rb><rt>かたほう</rt></ruby>はえ立てぬうちに<ruby><rb>早</rb><rt>はや</rt></ruby><date when="--01-01">元日</date>になりたればとて、今もこの家々にては吉例として門松の片方を地に伏せたるままにて、<ruby><rb>標縄</rb><rt>しめなわ</rt></ruby>を引き渡すとのことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec28" n="28">
+        <head>二六</head>
+        <p><placeName ref="#kashiwazaki">柏崎</placeName>の<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>のうちと称する<persName ref="#abe-nagaya">阿倍氏</persName>はことに聞えたる旧家なり。この家の先代に彫刻に<ruby><rb>巧</rb><rt>たくみ</rt></ruby>なる人ありて、<placeName ref="#tono-go">遠野一郷</placeName>の神仏の像にはこの人の作りたる者多し。</p>
+      </div>
+      <div type="chapter" xml:id="sec29" n="29">
+        <head>二七</head>
+        <p><placeName ref="#hayachine"><ruby><rb>早池峯</rb><rt>はやちね</rt></ruby></placeName>より出でて東北の方<placeName ref="#miyako"><ruby><rb>宮古</rb><rt>みやこ</rt></ruby></placeName>の海に流れ入る川を<placeName ref="#heigawa"><ruby><rb>閉伊川</rb><rt>へいがわ</rt></ruby></placeName>という。その流域はすなわち<placeName ref="#shimohei">下閉伊郡</placeName>なり。<placeName ref="#tono-machi">遠野の町</placeName>の中にて今は<ruby><rb>池</rb><rt>いけ</rt></ruby>の<ruby><rb>端</rb><rt>はた</rt></ruby>という家の先代の主人、<placeName ref="#miyako">宮古</placeName>に行きての帰るさ、この川の<placeName ref="#haradai"><ruby><rb>原台</rb><rt>はらだい</rt></ruby>の<ruby><rb>淵</rb><rt>ふち</rt></ruby></placeName>というあたりを通りしに、若き女ありて一封の手紙を<ruby><rb>托</rb><rt>たく</rt></ruby>す。<placeName ref="#tono-machi">遠野の町</placeName>の後なる<placeName ref="#monomiyama">物見山</placeName>の中腹にある沼に行きて、手を<ruby><rb>叩</rb><rt>たた</rt></ruby>けば<ruby><rb>宛名</rb><rt>あてな</rt></ruby>の人いで<ruby><rb>来</rb><rt>く</rt></ruby>べしとなり。この人<ruby><rb>請</rb><rt>う</rt></ruby>け合いはしたれども<ruby><rb>路々</rb><rt>みちみち</rt></ruby>心に掛りてとつおいつせしに、一人の<ruby><rb>六部</rb><rt>ろくぶ</rt></ruby>に行き<ruby><rb>逢</rb><rt>あ</rt></ruby>えり。この手紙を開きよみて<ruby><rb>曰</rb><rt>いわ</rt></ruby>く、これを持ち行かば<ruby><rb>汝</rb><rt>なんじ</rt></ruby>の身に大なる<ruby><rb>災</rb><rt>わざわい</rt></ruby>あるべし。書き<ruby><rb>換</rb><rt>か</rt></ruby>えて取らすべしとて更に別の手紙を与えたり。これを持ちて沼に行き教えのごとく手を叩きしに、果して若き女いでて手紙を受け取り、その礼なりとてきわめて小さき<ruby><rb>石臼</rb><rt>いしうす</rt></ruby>をくれたり。米を一粒入れて<ruby><rb>回</rb><rt>まわ</rt></ruby>せば下より黄金<ruby><rb>出</rb><rt>い</rt></ruby>づ。この<ruby><rb>宝物</rb><rt>たからもの</rt></ruby>の力にてその家やや富有になりしに、妻なる者慾深くして、一度にたくさんの米をつかみ入れしかば、石臼はしきりに自ら回りて、ついには朝ごとに主人がこの石臼に供えたりし水の、小さき<ruby><rb>窪</rb><rt>くぼ</rt></ruby>みの中に<ruby><rb>溜</rb><rt>たま</rt></ruby>りてありし中へ<ruby><rb>滑</rb><rt>すべ</rt></ruby>り入りて見えずなりたり。その水溜りはのちに小さき池になりて、今も家の<ruby><rb>旁</rb><rt>かたわら</rt></ruby>にあり。家の名を池の端というもその<ruby><rb>為</rb><rt>ため</rt></ruby>なりという。</p>
+        <p>○この話に似たる物語西洋にもあり、偶合にや。</p>
+      </div>
+      <div type="chapter" xml:id="sec30" n="30">
+        <head>二八</head>
+        <p>始めて<placeName ref="#hayachine">早池峯</placeName>に<ruby><rb>山路</rb><rt>やまみち</rt></ruby>をつけたるは、<placeName ref="#tsukumoushi">附馬牛村</placeName>の何某という猟師にて、時は遠野の<persName ref="#nanbu">南部家</persName><ruby><rb>入部</rb><rt>にゅうぶ</rt></ruby>の後のことなり。その頃までは土地の者一人としてこの山には入りたる者なかりしと。この猟師半分ばかり道を開きて、山の半腹に<ruby><rb>仮小屋</rb><rt>かりごや</rt></ruby>を作りておりしころ、<ruby><rb>或</rb><rt>あ</rt></ruby>る日<ruby><rb>炉</rb><rt>ろ</rt></ruby>の上に<ruby><rb>餅</rb><rt>もち</rt></ruby>をならべ焼きながら食いおりしに、小屋の外を通る者ありて<ruby><rb>頻</rb><rt>しきり</rt></ruby>に中を<ruby><rb>窺</rb><rt>うかが</rt></ruby>うさまなり。よく見れば大なる坊主なり。やがて小屋の中に入り来たり、さも珍しげに餅の焼くるを見てありしが、ついにこらえ<ruby><rb>兼</rb><rt>か</rt></ruby>ねて手をさし延べて取りて食う。猟師も恐ろしければ自らもまた取りて与えしに、<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しげになお食いたり。餅<ruby><rb>皆</rb><rt>みな</rt></ruby>になりたれば帰りぬ。次の日もまた来るならんと思い、餅によく似たる白き石を二つ三つ、餅にまじえて炉の上に載せ置きしに、焼けて火のようになれり。案のごとくその坊主きょうもきて、餅を取りて食うこと昨日のごとし。餅<ruby><rb>尽</rb><rt>つ</rt></ruby>きてのちその白石をも同じように口に入れたりしが、大いに驚きて小屋を飛び出し姿見えずなれり。のちに谷底にてこの坊主の死してあるを見たりといえり。</p>
+        <p>○<placeName ref="#kitakami">北上川</placeName>の中古の大洪水に白髪水というがあり、白髪の<ruby><rb>姥</rb><rt>うば</rt></ruby>を<ruby><rb>欺</rb><rt>あざむ</rt></ruby>き餅に似たる焼石を食わせし<ruby><rb>祟</rb><rt>たたり</rt></ruby>なりという。この話によく似たり。</p>
+      </div>
+      <div type="chapter" xml:id="sec31" n="31">
+        <head>二九</head>
+        <p><placeName ref="#keitozan"><ruby><rb>鶏頭山</rb><rt>けいとうざん</rt></ruby></placeName>は<placeName ref="#hayachine">早池峯</placeName>の前面に立てる<ruby><rb>峻峯</rb><rt>しゅんぽう</rt></ruby>なり。<ruby><rb>麓</rb><rt>ふもと</rt></ruby>の里にてはまた<placeName ref="#keitozan"><ruby><rb>前薬師</rb><rt>まえやくし</rt></ruby></placeName>ともいう。<ruby><rb>天狗</rb><rt>てんぐ</rt></ruby>住めりとて、<placeName ref="#hayachine">早池峯</placeName>に登る者も決してこの山は<ruby><rb>掛</rb><rt>か</rt></ruby>けず。山口のハネトという家の主人、<persName ref="#sasaki-kizen">佐々木氏</persName>の祖父と竹馬の友なり。きわめて無法者にて、<ruby><rb>鉞</rb><rt>まさかり</rt></ruby>にて草を<ruby><rb>苅</rb><rt>か</rt></ruby>り<ruby><rb>鎌</rb><rt>かま</rt></ruby>にて土を掘るなど、若き時は乱暴の<ruby><rb>振舞</rb><rt>ふるまい</rt></ruby>のみ多かりし人なり。或る時人と<ruby><rb>賭</rb><rt>かけ</rt></ruby>をして一人にて<placeName ref="#keitozan">前薬師</placeName>に登りたり。帰りての物語に曰く、頂上に大なる岩あり、その岩の上に大男三人いたり。前にあまたの金銀をひろげたり。この男の近よるを見て、<ruby><rb>気色</rb><rt>けしき</rt></ruby>ばみて振り返る、その眼の光きわめて恐ろし。<placeName ref="#hayachine">早池峯</placeName>に登りたるが<ruby><rb>途</rb><rt>みち</rt></ruby>に迷いて来たるなりと言えば、<ruby><rb>然</rb><rt>しか</rt></ruby>らば送りて<ruby><rb>遣</rb><rt>や</rt></ruby>るべしとて<ruby><rb>先</rb><rt>さき</rt></ruby>に立ち、<ruby><rb>麓</rb><rt>ふもと</rt></ruby>近きところまで来たり、眼を<ruby><rb>塞</rb><rt>ふさ</rt></ruby>げと言うままに、暫時そこに立ちている間に、たちまち異人は見えずなりたりという。</p>
+      </div>
+      <div type="chapter" xml:id="sec32" n="32">
+        <head>三〇</head>
+        <p><placeName ref="#oguni"><ruby><rb>小国</rb><rt>おぐに</rt></ruby>村</placeName>の何某という男、或る日<placeName ref="#hayachine">早池峯</placeName>に竹を<ruby><rb>伐</rb><rt>き</rt></ruby>りに行きしに、<ruby><rb>地竹</rb><rt>じだけ</rt></ruby>のおびただしく茂りたる中に、大なる男一人寝ていたるを見たり。地竹にて編みたる三尺ばかりの<ruby><rb>草履</rb><rt>ぞうり</rt></ruby>を<ruby><rb>脱</rb><rt>ぬ</rt></ruby>ぎてあり。<ruby><rb>仰</rb><rt>あお</rt></ruby>に<ruby><rb>臥</rb><rt>ふ</rt></ruby>して大なる<ruby><rb>鼾</rb><rt>いびき</rt></ruby>をかきてありき。</p>
+        <p>○<placeName ref="#shimohei">下閉伊郡</placeName><placeName ref="#oguni">小国村</placeName>大字<placeName ref="#oguni">小国</placeName>。</p>
+        <p>○地竹は深山に生ずる低き竹なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec33" n="33">
+        <head>三一</head>
+        <p><placeName ref="#tono-go">遠野郷</placeName>の民家の子女にして、異人にさらわれて行く者年々多くあり。ことに女に多しとなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec34" n="34">
+        <head>三二</head>
+        <p><placeName ref="#senbangatake"><ruby><rb>千晩</rb><rt>せんば</rt></ruby>ヶ<ruby><rb>岳</rb><rt>だけ</rt></ruby></placeName>は山中に<ruby><rb>沼</rb><rt>ぬま</rt></ruby>あり。この谷は物すごく<ruby><rb>腥</rb><rt>なまぐさ</rt></ruby>き<ruby><rb>臭</rb><rt>か</rt></ruby>のするところにて、この山に入り帰りたる者はまことに<ruby><rb>少</rb><rt>すく</rt></ruby>なし。昔何の<ruby><rb>隼人</rb><rt>はやと</rt></ruby>という猟師あり。その子孫今もあり。白き鹿を見てこれを追いこの谷に千晩こもりたれば山の名とす。その白鹿撃たれて遁げ、次の山まで行きて<ruby><rb>片肢</rb><rt>かたあし</rt></ruby>折れたり。その山を今<placeName ref="#katahayama"><ruby><rb>片羽山</rb><rt>かたはやま</rt></ruby></placeName>という。さてまた前なる山へきてついに死したり。その地を<placeName ref="#shisuke"><ruby><rb>死助</rb><rt>しすけ</rt></ruby></placeName>という。<persName ref="#shisuke-gongen"><ruby><rb>死助権現</rb><rt>しすけごんげん</rt></ruby></persName>とて<ruby><rb>祀</rb><rt>まつ</rt></ruby>れるはこの白鹿なりという。</p>
+        <p>○<ruby><rb>宛然</rb><rt>えんぜん</rt></ruby>として古風土記をよむがごとし。</p>
+      </div>
+      <div type="chapter" xml:id="sec35" n="35">
+        <head>三三</head>
+        <p><placeName ref="#shiromi"><ruby><rb>白望</rb><rt>しろみ</rt></ruby></placeName>の山に行きて<ruby><rb>泊</rb><rt>とま</rt></ruby>れば、深夜にあたりの<ruby><rb>薄明</rb><rt>うすあか</rt></ruby>るくなることあり。秋のころ<ruby><rb>茸</rb><rt>きのこ</rt></ruby>を採りに行き山中に宿する者、よくこの事に逢う。また谷のあなたにて大木を<ruby><rb>伐</rb><rt>き</rt></ruby>り倒す音、歌の声など<ruby><rb>聞</rb><rt>きこ</rt></ruby>ゆることあり。この山の大さは<ruby><rb>測</rb><rt>はか</rt></ruby>るべからず。<date when="--05">五月</date>に<ruby><rb>萱</rb><rt>かや</rt></ruby>を苅りに行くとき、遠く望めば<ruby><rb>桐</rb><rt>きり</rt></ruby>の花の咲き<ruby><rb>満</rb><rt>み</rt></ruby>ちたる山あり。あたかも<ruby><rb>紫</rb><rt>むらさき</rt></ruby>の雲のたなびけるがごとし。されどもついにそのあたりに近づくこと<ruby><rb>能</rb><rt>あた</rt></ruby>わず。かつて茸を採りに入りし者あり。<placeName ref="#shiromi">白望</placeName>の山奥にて金の<ruby><rb>樋</rb><rt>とい</rt></ruby>と金の<ruby><rb>杓</rb><rt>しゃく</rt></ruby>とを見たり。持ち帰らんとするにきわめて重く、<ruby><rb>鎌</rb><rt>かま</rt></ruby>にて<ruby><rb>片端</rb><rt>かたはし</rt></ruby>を<ruby><rb>削</rb><rt>けず</rt></ruby>り取らんとしたれどそれもかなわず。また<ruby><rb>来</rb><rt>こ</rt></ruby>んと思いて樹の皮を白くし<ruby><rb>栞</rb><rt>しおり</rt></ruby>としたりしが、次の日人々とともに行きてこれを求めたれど、ついにその木のありかをも見出しえずしてやみたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec36" n="36">
+        <head>三四</head>
+        <p><placeName ref="#shiromi">白望</placeName>の山続きに<placeName ref="#hanaremori"><ruby><rb>離森</rb><rt>はなれもり</rt></ruby></placeName>というところあり。その<ruby><rb>小字</rb><rt>こあざ</rt></ruby>に<placeName ref="#chojayashiki">長者屋敷</placeName>というは、全く無人の境なり。ここに行きて炭を焼く者ありき。或る夜その小屋の<ruby><rb>垂菰</rb><rt>たれごも</rt></ruby>をかかげて、内を<ruby><rb>窺</rb><rt>うかが</rt></ruby>う者を見たり。髪を長く二つに分けて<ruby><rb>垂</rb><rt>た</rt></ruby>れたる女なり。このあたりにても深夜に女の叫び声を聞くことは珍しからず。</p>
+      </div>
+      <div type="chapter" xml:id="sec37" n="37">
+        <head>三五</head>
+        <p><persName ref="#sasaki-kizen">佐々木氏</persName>の祖父の弟、<placeName ref="#shiromi">白望</placeName>に茸を採りに行きて<ruby><rb>宿</rb><rt>やど</rt></ruby>りし夜、谷を隔てたるあなたの大なる森林の前を横ぎりて、女の走り行くを見たり。中空を走るように思われたり。待てちゃアと二声ばかり<ruby><rb>呼</rb><rt>よ</rt></ruby>ばわりたるを聞けりとぞ。</p>
+      </div>
+      <div type="chapter" xml:id="sec38" n="38">
+        <head>三六</head>
+        <p>猿の<ruby><rb>経立</rb><rt>ふったち</rt></ruby>、<ruby><rb>御犬</rb><rt>おいぬ</rt></ruby>の経立は恐ろしきものなり。<ruby><rb>御犬</rb><rt>おいぬ</rt></ruby>とは<ruby><rb>狼</rb><rt>おおかみ</rt></ruby>のことなり。山口の村に近き<placeName ref="#futatsuishi"><ruby><rb>二</rb><rt>ふた</rt></ruby>ツ<ruby><rb>石山</rb><rt>いしやま</rt></ruby></placeName>は岩山なり。ある雨の日、小学校より帰る子どもこの山を見るに、<ruby><rb>処々</rb><rt>ところどころ</rt></ruby>の岩の上に御犬うずくまりてあり。やがて首を<ruby><rb>下</rb><rt>した</rt></ruby>より<ruby><rb>押</rb><rt>お</rt></ruby>しあぐるようにしてかわるがわる<ruby><rb>吠</rb><rt>ほ</rt></ruby>えたり。正面より見れば<ruby><rb>生</rb><rt>う</rt></ruby>まれ<ruby><rb>立</rb><rt>た</rt></ruby>ての馬の子ほどに見ゆ。<ruby><rb>後</rb><rt>うしろ</rt></ruby>から見れば<ruby><rb>存外</rb><rt>ぞんがい</rt></ruby>小さしといえり。御犬のうなる声ほど<ruby><rb>物凄</rb><rt>ものすご</rt></ruby>く恐ろしきものはなし。</p>
+      </div>
+      <div type="chapter" xml:id="sec39" n="39">
+        <head>三七</head>
+        <p><placeName ref="#sakaigi"><ruby><rb>境木峠</rb><rt>さかいげとうげ</rt></ruby></placeName>と<placeName ref="#wayama"><ruby><rb>和山峠</rb><rt>わやまとうげ</rt></ruby></placeName>との間にて、昔は<ruby><rb>駄賃馬</rb><rt>だちんば</rt></ruby>を<ruby><rb>追</rb><rt>お</rt></ruby>う者、しばしば狼に逢いたりき。<ruby><rb>馬方</rb><rt>うまかた</rt></ruby>らは夜行には、たいてい十人ばかりも<ruby><rb>群</rb><rt>むれ</rt></ruby>をなし、その一人が<ruby><rb>牽</rb><rt>ひ</rt></ruby>く馬は<ruby><rb>一端綱</rb><rt>ひとはづな</rt></ruby>とてたいてい五六七<ruby><rb>匹</rb><rt>ぴき</rt></ruby>までなれば、常に四五十匹の馬の数なり。ある時二三百ばかりの狼追い来たり、その足音山もどよむばかりなれば、あまりの恐ろしさに馬も人も一所に集まりて、そのめぐりに火を焼きてこれを防ぎたり。されどなおその火を躍り越えて入り来るにより、ついには馬の<ruby><rb>綱</rb><rt>つな</rt></ruby>を<ruby><rb>解</rb><rt>と</rt></ruby>きこれを<ruby><rb>張</rb><rt>は</rt></ruby>り<ruby><rb>回</rb><rt>めぐ</rt></ruby>らせしに、<ruby><rb>穽</rb><rt>おとしあな</rt></ruby>などなりとや思いけん、それよりのちは中に飛び入らず。遠くより<ruby><rb>取</rb><rt>と</rt></ruby>り<ruby><rb>囲</rb><rt>かこ</rt></ruby>みて夜の<ruby><rb>明</rb><rt>あけ</rt></ruby>るまで吠えてありきとぞ。</p>
+      </div>
+      <div type="chapter" xml:id="sec40" n="40">
+        <head>三八</head>
+        <p><placeName ref="#otomo"><ruby><rb>小友</rb><rt>おとも</rt></ruby>村</placeName>の旧家の主人にて今も生存せる<ruby><rb>某爺</rb><rt>なにがしじい</rt></ruby>という人、町より帰りに<ruby><rb>頻</rb><rt>しきり</rt></ruby>に御犬の<ruby><rb>吠</rb><rt>ほ</rt></ruby>ゆるを聞きて、酒に酔いたればおのれもまたその声をまねたりしに、狼も吠えながら<ruby><rb>跡</rb><rt>あと</rt></ruby>より来るようなり。恐ろしくなりて急ぎ家に帰り入り、門の戸を<ruby><rb>堅</rb><rt>かた</rt></ruby>く<ruby><rb>鎖</rb><rt>とざ</rt></ruby>して<ruby><rb>打</rb><rt>う</rt></ruby>ち<ruby><rb>潜</rb><rt>ひそ</rt></ruby>みたれども、夜通し狼の家をめぐりて吠ゆる声やまず。<ruby><rb>夜</rb><rt>よ</rt></ruby><ruby><rb>明</rb><rt>あ</rt></ruby>けて見れば、馬屋の<ruby><rb>土台</rb><rt>どだい</rt></ruby>の下を掘り<ruby><rb>穿</rb><rt>うが</rt></ruby>ちて中に入り、馬の七頭ありしをことごとく食い殺していたり。この家はそのころより産やや傾きたりとのことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec41" n="41">
+        <head>三九</head>
+        <p><persName ref="#sasaki-kizen">佐々木君</persName>幼きころ、祖父と二人にて山より帰りしに、村に近き谷川の岸の上に、大なる鹿の倒れてあるを見たり。横腹は破れ、殺されて<ruby><rb>間</rb><rt>ま</rt></ruby>もなきにや、そこよりはまだ<ruby><rb>湯気</rb><rt>ゆげ</rt></ruby>立てり。祖父の曰く、これは狼が食いたるなり。この皮ほしけれども御犬は必ずどこかこの近所に隠れて見ておるに相違なければ、取ることができぬといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec42" n="42">
+        <head>四〇</head>
+        <p>草の長さ三寸あれば狼は身を隠すといえり。<ruby><rb>草木</rb><rt>そうもく</rt></ruby>の色の移り行くにつれて、狼の毛の色も<ruby><rb>季節</rb><rt>きせつ</rt></ruby>ごとに変りて行くものなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec43" n="43">
+        <head>四一</head>
+        <p><placeName ref="#wano">和野</placeName>の<persName ref="#sasaki-kahee">佐々木嘉兵衛</persName>、或る年<ruby><rb><placeName ref="#sakaigi">境木</placeName>越</rb><rt>さかいげごえ</rt></ruby>の<placeName ref="#oyachi"><ruby><rb>大谷地</rb><rt>おおやち</rt></ruby></placeName>へ狩にゆきたり。<placeName ref="#shisuke"><ruby><rb>死助</rb><rt>しすけ</rt></ruby></placeName>の方より走れる原なり。秋の暮のことにて木の葉は散り尽し山もあらわなり。<ruby><rb>向</rb><rt>むこ</rt></ruby>うの峯より何百とも知れぬ狼此方へ<ruby><rb>群</rb><rt>む</rt></ruby>れて走りくるを見て恐ろしさに堪えず、樹の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>に<ruby><rb>上</rb><rt>のぼ</rt></ruby>りてありしに、その樹の下を<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しき足音して走り過ぎ北の方へ行けり。そのころより<placeName ref="#tono-go">遠野郷</placeName>には狼甚だ少なくなれりとのことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec44" n="44">
+        <head>四二</head>
+        <p><placeName ref="#rokkoushi"><ruby><rb>六角牛</rb><rt>ろっこうし</rt></ruby>山</placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に<placeName ref="#obaya">オバヤ</placeName>、<placeName ref="#itagoya">板小屋</placeName>などいうところあり。広き<ruby><rb>萱山</rb><rt>かややま</rt></ruby>なり。村々より<ruby><rb>苅</rb><rt>か</rt></ruby>りに行く。ある年の秋<placeName ref="#iide"><ruby><rb>飯豊村</rb><rt>いいでむら</rt></ruby></placeName>の者ども萱を苅るとて、岩穴の中より狼の子三匹を見出し、その二つを殺し一つを持ち帰りしに、その日より狼の<ruby><rb><placeName ref="#iide">飯豊</placeName>衆</rb><rt>いいでし</rt></ruby>の馬を<ruby><rb>襲</rb><rt>おそ</rt></ruby>うことやまず。<ruby><rb>外</rb><rt>ほか</rt></ruby>の村々の人馬にはいささかも害をなさず。<placeName ref="#iide">飯豊</placeName>衆相談して狼狩をなす。その中には<ruby><rb>相撲</rb><rt>すもう</rt></ruby>を取り<ruby><rb>平生</rb><rt>へいぜい</rt></ruby><ruby><rb>力自慢</rb><rt>ちからじまん</rt></ruby>の者あり。さて野に<ruby><rb>出</rb><rt>い</rt></ruby>でて見るに、<ruby><rb>雄</rb><rt>おす</rt></ruby>の狼は遠くにおりて<ruby><rb>来</rb><rt>き</rt></ruby>たらず。<ruby><rb>雌</rb><rt>めす</rt></ruby>狼一つ鉄という男に飛びかかりたるを、ワッポロを脱ぎて<ruby><rb>腕</rb><rt>うで</rt></ruby>に巻き、やにわにその狼の口の中に突き込みしに、狼これを<ruby><rb>噛</rb><rt>か</rt></ruby>む。なお強く突き入れながら人を<ruby><rb>喚</rb><rt>よ</rt></ruby>ぶに、誰も誰も<ruby><rb>怖</rb><rt>おそ</rt></ruby>れて近よらず。その間に鉄の腕は狼の腹まで<ruby><rb>入</rb><rt>はい</rt></ruby>り、狼は苦しまぎれに鉄の腕骨を<ruby><rb>噛</rb><rt>か</rt></ruby>み<ruby><rb>砕</rb><rt>くだ</rt></ruby>きたり。狼はその場にて死したれども、鉄も<ruby><rb>担</rb><rt>かつ</rt></ruby>がれて帰り<ruby><rb>程</rb><rt>ほど</rt></ruby>なく死したり。</p>
+        <p>○ワッポロは上羽織のことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec45" n="45">
+        <head>四三</head>
+        <p>一昨年の『遠野新聞』にもこの記事を載せたり。<placeName ref="#kamigo"><ruby><rb>上郷</rb><rt>かみごう</rt></ruby>村</placeName>の熊という男、友人とともに雪の日に<placeName ref="#rokkoushi">六角牛</placeName>に狩に行き谷深く入りしに、熊の足跡を見出でたれば、<ruby><rb>手分</rb><rt>てわけ</rt></ruby>してその跡を<ruby><rb>覔</rb><rt>もと</rt></ruby>め、自分は峯の方を行きしに、とある岩の<ruby><rb>陰</rb><rt>かげ</rt></ruby>より大なる熊此方を見る。<ruby><rb>矢頃</rb><rt>やごろ</rt></ruby>あまりに近かりしかば、銃をすてて熊に<ruby><rb>抱</rb><rt>かか</rt></ruby>えつき雪の上を<ruby><rb>転</rb><rt>ころ</rt></ruby>びて、谷へ下る。<ruby><rb>連</rb><rt>つれ</rt></ruby>の男これを救わんと思えども力及ばず。やがて谷川に落ち入りて、人の熊<ruby><rb>下</rb><rt>した</rt></ruby>になり水に沈みたりしかば、その<ruby><rb>隙</rb><rt>ひま</rt></ruby>に獣の熊を打ち取りぬ。水にも<ruby><rb>溺</rb><rt>おぼ</rt></ruby>れず、<ruby><rb>爪</rb><rt>つめ</rt></ruby>の傷は数ヶ所受けたれども命に<ruby><rb>障</rb><rt>さわ</rt></ruby>ることはなかりき。</p>
+      </div>
+      <div type="chapter" xml:id="sec46" n="46">
+        <head>四四</head>
+        <p><placeName ref="#rokkoushi">六角牛</placeName>の峯続きにて、<placeName ref="#hashino"><ruby><rb>橋野</rb><rt>はしの</rt></ruby></placeName>という村の上なる山に<ruby><rb>金坑</rb><rt>きんこう</rt></ruby>あり。この鉱山のために炭を焼きて生計とする者、これも笛の<ruby><rb>上手</rb><rt>じょうず</rt></ruby>にて、ある日<ruby><rb>昼</rb><rt>ひる</rt></ruby>の<ruby><rb>間</rb><rt>あいだ</rt></ruby><ruby><rb>小屋</rb><rt>こや</rt></ruby>におり、<ruby><rb>仰向</rb><rt>あおむき</rt></ruby>に<ruby><rb>寝転</rb><rt>ねころ</rt></ruby>びて笛を吹きてありしに、小屋の口なる<ruby><rb>垂菰</rb><rt>たれごも</rt></ruby>をかかぐる者あり。驚きて見れば猿の<ruby><rb>経立</rb><rt>ふったち</rt></ruby>なり。恐ろしくて起き直りたれば、おもむろに<ruby><rb>彼方</rb><rt>かなた</rt></ruby>へ走り行きぬ。</p>
+        <p>○<placeName ref="#kamihei">上閉伊郡</placeName><placeName ref="#kurihashi">栗橋村</placeName>大字<placeName ref="#hashino">橋野</placeName>。</p>
+      </div>
+      <div type="chapter" xml:id="sec47" n="47">
+        <head>四五</head>
+        <p>猿の<ruby><rb>経立</rb><rt>ふったち</rt></ruby>はよく人に似て、女色を好み里の婦人を盗み去ること多し。<ruby><rb>松脂</rb><rt>まつやに</rt></ruby>を毛に<ruby><rb>塗</rb><rt>ぬ</rt></ruby>り砂をその上につけておる故、<ruby><rb>毛皮</rb><rt>けがわ</rt></ruby>は<ruby><rb>鎧</rb><rt>よろい</rt></ruby>のごとく鉄砲の<ruby><rb>弾</rb><rt>たま</rt></ruby>も<ruby><rb>通</rb><rt>とお</rt></ruby>らず。</p>
+      </div>
+      <div type="chapter" xml:id="sec48" n="48">
+        <head>四六</head>
+        <p><placeName ref="#tochinai">栃内村</placeName>の<placeName ref="#hayashizaki"><ruby><rb>林崎</rb><rt>はやしざき</rt></ruby></placeName>に住む何某という男、今は五十に近し。十年あまり前のことなり。<placeName ref="#rokkoushi">六角牛山</placeName>に鹿を撃ちに行き、オキを吹きたりしに、猿の経立あり、これを<ruby><rb>真</rb><rt>まこと</rt></ruby>の鹿なりと思いしか、<ruby><rb>地竹</rb><rt>じだけ</rt></ruby>を手にて<ruby><rb>分</rb><rt>わ</rt></ruby>けながら、大なる口をあけ嶺の方より<ruby><rb>下</rb><rt>くだ</rt></ruby>り来たれり。<ruby><rb>胆</rb><rt>きも</rt></ruby><ruby><rb>潰</rb><rt>つぶ</rt></ruby>れて笛を吹きやめたれば、やがて<ruby><rb>反</rb><rt>そ</rt></ruby>れて谷の方へ走り行きたり。</p>
+        <p>○オキとは鹿笛のことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec49" n="49">
+        <head>四七</head>
+        <p>この地方にて子供をおどす<ruby><rb>言葉</rb><rt>ことば</rt></ruby>に、<placeName ref="#rokkoushi">六角牛</placeName>の猿の経立が来るぞということ常の事なり。この山には猿多し。<placeName ref="#okase"><ruby><rb>緒挊</rb><rt>おがせ</rt></ruby>の<ruby><rb>滝</rb><rt>たき</rt></ruby></placeName>を見に行けば、<ruby><rb>崖</rb><rt>がけ</rt></ruby>の樹の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>にあまたおり、人を見れば<ruby><rb>遁</rb><rt>に</rt></ruby>げながら木の<ruby><rb>実</rb><rt>み</rt></ruby>などを<ruby><rb>擲</rb><rt>なげう</rt></ruby>ちて行くなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec50" n="50">
+        <head>四八</head>
+        <p><placeName ref="#sennin-toge"><ruby><rb>仙人峠</rb><rt>せんにんとうげ</rt></ruby></placeName>にもあまた猿おりて行人に<ruby><rb>戯</rb><rt>たわむ</rt></ruby>れ石を打ちつけなどす。</p>
+      </div>
+      <div type="chapter" xml:id="sec51" n="51">
+        <head>四九</head>
+        <p><placeName ref="#sennin-toge">仙人峠</placeName>は登り十五里<ruby><rb>降</rb><rt>くだ</rt></ruby>り十五里あり。その中ほどに仙人の像を祀りたる堂あり。この堂の<ruby><rb>壁</rb><rt>かべ</rt></ruby>には旅人がこの山中にて遭いたる不思議の出来事を書き<ruby><rb>識</rb><rt>しる</rt></ruby>すこと昔よりの<ruby><rb>習</rb><rt>ならい</rt></ruby>なり。例えば、我は<placeName ref="#echigo">越後</placeName>の者なるが、何月何日の夜、この<ruby><rb>山路</rb><rt>やまみち</rt></ruby>にて若き女の髪を<ruby><rb>垂</rb><rt>た</rt></ruby>れたるに逢えり。こちらを見てにこと笑いたりという<ruby><rb>類</rb><rt>たぐい</rt></ruby>なり。またこの所にて猿に<ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>をせられたりとか、三人の盗賊に逢えりというようなる事をも<ruby><rb>記</rb><rt>しる</rt></ruby>せり。</p>
+        <p>○この一里も小道なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec52" n="52">
+        <head>五〇</head>
+        <p><placeName ref="#shisuke"><ruby><rb>死助</rb><rt>しすけ</rt></ruby></placeName>の山にカッコ花あり。<placeName ref="#tono-go">遠野郷</placeName>にても珍しという花なり。<date when="--05">五月</date><ruby><rb>閑古鳥</rb><rt>かんこどり</rt></ruby>の<ruby><rb>啼</rb><rt>な</rt></ruby>くころ、女や子どもこれを<ruby><rb>採</rb><rt>と</rt></ruby>りに山へ行く。<ruby><rb>酢</rb><rt>す</rt></ruby>の中に<ruby><rb>漬</rb><rt>つ</rt></ruby>けて置けば<ruby><rb>紫色</rb><rt>むらさきいろ</rt></ruby>になる。<ruby><rb>酸漿</rb><rt>ほおずき</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>のように吹きて遊ぶなり。この花を採ることは若き者の最も大なる遊楽なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec53" n="53">
+        <head>五一</head>
+        <p>山にはさまざまの鳥<ruby><rb>住</rb><rt>す</rt></ruby>めど、最も<ruby><rb>寂</rb><rt>さび</rt></ruby>しき声の鳥はオット鳥なり。夏の<ruby><rb>夜中</rb><rt>よなか</rt></ruby>に<ruby><rb>啼</rb><rt>な</rt></ruby>く。浜の<placeName ref="#otsuchi"><ruby><rb>大槌</rb><rt>おおづち</rt></ruby></placeName>より<ruby><rb>駄賃附</rb><rt>だちんづけ</rt></ruby>の者など峠を越え来たれば、<ruby><rb>遥</rb><rt>はるか</rt></ruby>に谷底にてその声を聞くといえり。昔ある長者の娘あり。またある長者の男の子と<ruby><rb>親</rb><rt>した</rt></ruby>しみ、山に行きて遊びしに、男見えずなりたり。夕暮になり夜になるまで<ruby><rb>探</rb><rt>さが</rt></ruby>しあるきしが、これを見つくることをえずして、ついにこの鳥になりたりという。オットーン、オットーンというは<ruby><rb>夫</rb><rt>おっと</rt></ruby>のことなり。末の方かすれてあわれなる<ruby><rb>鳴声</rb><rt>なきごえ</rt></ruby>なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec54" n="54">
+        <head>五二</head>
+        <p><ruby><rb>馬追鳥</rb><rt>うまおいどり</rt></ruby>は<ruby><rb>時鳥</rb><rt>ほととぎす</rt></ruby>に似て<ruby><rb>少</rb><rt>すこ</rt></ruby>し大きく、<ruby><rb>羽</rb><rt>はね</rt></ruby>の色は赤に茶を<ruby><rb>帯</rb><rt>お</rt></ruby>び、肩には馬の<ruby><rb>綱</rb><rt>つな</rt></ruby>のようなる<ruby><rb>縞</rb><rt>しま</rt></ruby>あり。胸のあたりにクツゴコ（口籠）のようなるかたあり。これも<ruby><rb>或</rb><rt>あ</rt></ruby>る長者が家の奉公人、山へ馬を<ruby><rb>放</rb><rt>はな</rt></ruby>しに行き、家に帰らんとするに一匹不足せり。夜通しこれを求めあるきしがついにこの鳥となる。アーホー、アーホーと啼くはこの地方にて野におる馬を追う声なり。年により馬追鳥<ruby><rb>里</rb><rt>さと</rt></ruby>にきて啼くことあるは<ruby><rb>飢饉</rb><rt>ききん</rt></ruby>の前兆なり。深山には常に住みて啼く声を聞くなり。</p>
+        <p>○クツゴコは馬の口に<ruby><rb>嵌</rb><rt>は</rt></ruby>める網の袋なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec55" n="55">
+        <head>五三</head>
+        <p><ruby><rb>郭公</rb><rt>かっこう</rt></ruby>と<ruby><rb>時鳥</rb><rt>ほととぎす</rt></ruby>とは昔ありし<ruby><rb>姉妹</rb><rt>あねいもと</rt></ruby>なり。郭公は姉なるがある時<ruby><rb>芋</rb><rt>いも</rt></ruby>を掘りて焼き、そのまわりの<ruby><rb>堅</rb><rt>かた</rt></ruby>きところを自ら食い、中の<ruby><rb>軟</rb><rt>やわら</rt></ruby>かなるところを妹に与えたりしを、妹は姉の食う<ruby><rb>分</rb><rt>ぶん</rt></ruby>は一層<ruby><rb>旨</rb><rt>うま</rt></ruby>かるべしと想いて、<ruby><rb>庖丁</rb><rt>ほうちょう</rt></ruby>にてその姉を殺せしに、たちまちに鳥となり、ガンコ、ガンコと啼きて飛び去りぬ。ガンコは方言にて堅いところということなり。妹さてはよきところをのみおのれにくれしなりけりと思い、悔恨に堪えず、やがてまたこれも鳥になりて庖丁かけたと啼きたりという。遠野にては時鳥のことを庖丁かけと呼ぶ。<placeName ref="#morioka"><ruby><rb>盛岡</rb><rt>もりおか</rt></ruby></placeName>辺にては時鳥はどちゃへ飛んでたと啼くという。</p>
+        <p>○この芋は<ruby><rb>馬鈴薯</rb><rt>ばれいしょ</rt></ruby>のことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec56" n="56">
+        <head>五四</head>
+        <p><placeName ref="#heigawa"><ruby><rb>閉伊川</rb><rt>へいがわ</rt></ruby></placeName>の<ruby><rb>流</rb><rt>なが</rt></ruby>れには<ruby><rb>淵</rb><rt>ふち</rt></ruby>多く恐ろしき伝説少なからず。<placeName ref="#ogunigawa">小国川</placeName>との落合に近きところに、<placeName ref="#kawai"><ruby><rb>川井</rb><rt>かわい</rt></ruby></placeName>という村あり。その村の長者の奉公人、ある淵の上なる山にて樹を伐るとて、<ruby><rb>斧</rb><rt>おの</rt></ruby>を水中に<ruby><rb>取</rb><rt>と</rt></ruby>り<ruby><rb>落</rb><rt>おと</rt></ruby>したり。主人の物なれば淵に入りてこれを<ruby><rb>探</rb><rt>さぐ</rt></ruby>りしに、水の底に入るままに物音聞ゆ。これを求めて行くに岩の陰に家あり。奥の方に美しき娘<ruby><rb>機</rb><rt>はた</rt></ruby>を織りていたり。そのハタシに彼の斧は立てかけてありたり。これを返したまわらんという時、振り返りたる女の顔を見れば、二三年前に身まかりたる我が主人の娘なり。斧は返すべければ我がこの<ruby><rb>所</rb><rt>ところ</rt></ruby>にあることを人にいうな。その礼としてはその方<ruby><rb>身上</rb><rt>しんしょう</rt></ruby><ruby><rb>良</rb><rt>よ</rt></ruby>くなり、奉公をせずともすむようにして<ruby><rb>遣</rb><rt>や</rt></ruby>らんといいたり。そのためなるか否かは知らず、その後<ruby><rb>胴引</rb><rt>どうびき</rt></ruby>などいう<ruby><rb>博奕</rb><rt>ばくち</rt></ruby>に不思議に勝ち<ruby><rb>続</rb><rt>つづ</rt></ruby>けて<ruby><rb>金</rb><rt>かね</rt></ruby><ruby><rb>溜</rb><rt>たま</rt></ruby>り、ほどなく奉公をやめ家に引き込みて<ruby><rb>中</rb><rt>ちゅう</rt></ruby>ぐらいの農民になりたれど、この男は<ruby><rb>疾</rb><rt>と</rt></ruby>くに物忘れして、この娘のいいしことも心づかずしてありしに、或る日同じ淵の<ruby><rb>辺</rb><rt>ほとり</rt></ruby>を<ruby><rb>過</rb><rt>す</rt></ruby>ぎて町へ行くとて、ふと前の事を思い出し、<ruby><rb>伴</rb><rt>とも</rt></ruby>なえる者に以前かかることありきと語りしかば、やがてその<ruby><rb>噂</rb><rt>うわさ</rt></ruby>は近郷に伝わりぬ。その頃より男は家産再び<ruby><rb>傾</rb><rt>かたむ</rt></ruby>き、また昔の主人に奉公して年を経たり。家の主人は何と思いしにや、その淵に<ruby><rb>何荷</rb><rt>なんが</rt></ruby>ともなく熱湯を<ruby><rb>注</rb><rt>そそ</rt></ruby>ぎ入れなどしたりしが、何の効もなかりしとのことなり。</p>
+        <p>○<placeName ref="#shimohei">下閉伊郡</placeName><placeName ref="#kawai">川井村</placeName>大字<placeName ref="#kawai">川井</placeName>、<placeName ref="#kawai">川井</placeName>はもちろん川合の義なるべし。</p>
+      </div>
+      <div type="chapter" xml:id="sec57" n="57">
+        <head>五五</head>
+        <p>川には<ruby><rb>川童</rb><rt>かっぱ</rt></ruby>多く住めり。<placeName ref="#sarugaishi">猿ヶ石川</placeName>ことに多し。<placeName ref="#matsuzaki">松崎村</placeName>の<ruby><rb>川端</rb><rt>かわばた</rt></ruby>の<ruby><rb>家</rb><rt>うち</rt></ruby>にて、二代まで続けて川童の子を<ruby><rb>孕</rb><rt>はら</rt></ruby>みたる者あり。生れし子は<ruby><rb>斬</rb><rt>き</rt></ruby>り<ruby><rb>刻</rb><rt>きざ</rt></ruby>みて<ruby><rb>一升樽</rb><rt>いっしょうだる</rt></ruby>に入れ、土中に<ruby><rb>埋</rb><rt>うず</rt></ruby>めたり。その<ruby><rb>形</rb><rt>かたち</rt></ruby>きわめて醜怪なるものなりき。女の<ruby><rb>婿</rb><rt>むこ</rt></ruby>の里は<placeName ref="#niibari"><ruby><rb>新張</rb><rt>にいばり</rt></ruby>村</placeName>の何某とて、これも川端の家なり。その主人<ruby><rb>人</rb><rt>ひと</rt></ruby>にその<ruby><rb>始終</rb><rt>しじゅう</rt></ruby>を語れり。かの家の者一同ある日<ruby><rb>畠</rb><rt>はたけ</rt></ruby>に行きて夕方に帰らんとするに、女川の<ruby><rb>汀</rb><rt>みぎわ</rt></ruby>に<ruby><rb>踞</rb><rt>うずくま</rt></ruby>りてにこにこと笑いてあり。次の日は<ruby><rb>昼</rb><rt>ひる</rt></ruby>の休みにまたこの事あり。かくすること日を重ねたりしに、次第にその女のところへ村の何某という者<ruby><rb>夜々</rb><rt>よるよる</rt></ruby><ruby><rb>通</rb><rt>かよ</rt></ruby>うという<ruby><rb>噂</rb><rt>うわさ</rt></ruby>立ちたり。始めには婿が浜の方へ<ruby><rb>駄賃附</rb><rt>だちんづけ</rt></ruby>に行きたる<ruby><rb>留守</rb><rt>るす</rt></ruby>をのみ<ruby><rb>窺</rb><rt>うかが</rt></ruby>いたりしが、のちには<ruby><rb>婿</rb><rt>むこ</rt></ruby>と<ruby><rb>寝</rb><rt>ね</rt></ruby>たる<ruby><rb>夜</rb><rt>よる</rt></ruby>さえくるようになれり。川童なるべしという評判だんだん高くなりたれば、一族の者集まりてこれを守れどもなんの<ruby><rb>甲斐</rb><rt>かい</rt></ruby>もなく、婿の母も行きて娘の<ruby><rb>側</rb><rt>かたわら</rt></ruby>に<ruby><rb>寝</rb><rt>ね</rt></ruby>たりしに、深夜にその娘の笑う声を聞きて、さては来てありと知りながら身動きもかなわず、人々いかにともすべきようなかりき。その産はきわめて難産なりしが、或る者のいうには、<ruby><rb>馬槽</rb><rt>うまふね</rt></ruby>に水をたたえその中にて<ruby><rb>産</rb><rt>う</rt></ruby>まば安く産まるべしとのことにて、これを試みたれば果してその通りなりき。その子は手に<ruby><rb>水掻</rb><rt>みずかき</rt></ruby>あり。この娘の母もまたかつて川童の子を産みしことありという。二代や三代の因縁にはあらずという者もあり。この家も<ruby><rb>如法</rb><rt>にょほう</rt></ruby>の豪家にて何の某という士族なり。村会議員をしたることもあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec58" n="58">
+        <head>五六</head>
+        <p><placeName ref="#kamigo">上郷村</placeName>の何某の家にても川童らしき物の子を<ruby><rb>産</rb><rt>う</rt></ruby>みたることあり。<ruby><rb>確</rb><rt>たしか</rt></ruby>なる証とてはなけれど、<ruby><rb>身内</rb><rt>みうち</rt></ruby><ruby><rb>真赤</rb><rt>まっか</rt></ruby>にして口大きく、まことにいやな子なりき。<ruby><rb>忌</rb><rt>いま</rt></ruby>わしければ<ruby><rb>棄</rb><rt>す</rt></ruby>てんとてこれを携えて道ちがえに持ち行き、そこに置きて一間ばかりも離れたりしが、ふと思い直し、惜しきものなり、売りて見せ物にせば金になるべきにとて立ち帰りたるに、早取り隠されて見えざりきという。</p>
+        <p>○道ちがえは道の二つに別かるるところすなわち<ruby><rb>追分</rb><rt>おいわけ</rt></ruby>なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec59" n="59">
+        <head>五七</head>
+        <p>川の岸の<ruby><rb>砂</rb><rt>すな</rt></ruby>の上には川童の<ruby><rb>足跡</rb><rt>あしあと</rt></ruby>というものを見ること決して珍しからず。雨の日の翌日などはことにこの事あり。猿の足と同じく<ruby><rb>親指</rb><rt>おやゆび</rt></ruby>は離れて人間の手の<ruby><rb>跡</rb><rt>あと</rt></ruby>に似たり。長さは三寸に足らず。指先のあとは人ののように明らかには見えずという。</p>
+      </div>
+      <div type="chapter" xml:id="sec60" n="60">
+        <head>五八</head>
+        <p><placeName ref="#kokarase"><ruby><rb>小烏瀬川</rb><rt>こがらせがわ</rt></ruby></placeName>の<placeName ref="#ubako"><ruby><rb>姥子淵</rb><rt>おばこふち</rt></ruby></placeName>の辺に、<ruby><rb>新屋</rb><rt>しんや</rt></ruby>の<ruby><rb>家</rb><rt>うち</rt></ruby>という<ruby><rb>家</rb><rt>いえ</rt></ruby>あり。ある日<ruby><rb>淵</rb><rt>ふち</rt></ruby>へ馬を<ruby><rb>冷</rb><rt>ひや</rt></ruby>しに行き、<ruby><rb>馬曳</rb><rt>うまひき</rt></ruby>の子は<ruby><rb>外</rb><rt>ほか</rt></ruby>へ遊びに行きし間に、川童出でてその馬を引き込まんとし、かえりて馬に引きずられて<ruby><rb>厩</rb><rt>うまや</rt></ruby>の前に来たり、<ruby><rb>馬槽</rb><rt>うまふね</rt></ruby>に<ruby><rb>覆</rb><rt>おお</rt></ruby>われてありき。家のもの馬槽の伏せてあるを怪しみて少しあけて見れば川童の手出でたり。村中のもの集まりて殺さんか<ruby><rb>宥</rb><rt>ゆる</rt></ruby>さんかと評議せしが、結局<ruby><rb>今後</rb><rt>こんご</rt></ruby>は村中の馬に<ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>をせぬという堅き約束をさせてこれを放したり。その川童今は村を去りて<placeName ref="#aizawa"><ruby><rb>相沢</rb><rt>あいざわ</rt></ruby>の滝</placeName>の淵に住めりという。</p>
+        <p>○この話などは類型全国に充満せり。いやしくも川童のおるという国には必ずこの話あり。何の故にか。</p>
+      </div>
+      <div type="chapter" xml:id="sec61" n="61">
+        <head>五九</head>
+        <p><ruby><rb>外</rb><rt>ほか</rt></ruby>の地にては川童の顔は青しというようなれど、遠野の川童は<ruby><rb>面</rb><rt>つら</rt></ruby>の<ruby><rb>色</rb><rt>いろ</rt></ruby><ruby><rb>赭</rb><rt>あか</rt></ruby>きなり。<persName ref="#sasaki-kizen">佐々木氏</persName>の<ruby><rb>曾祖母</rb><rt>そうそぼ</rt></ruby>、<ruby><rb>穉</rb><rt>おさな</rt></ruby>かりしころ友だちと庭にて遊びてありしに、三本ばかりある<ruby><rb>胡桃</rb><rt>くるみ</rt></ruby>の木の間より、<ruby><rb>真赤</rb><rt>まっか</rt></ruby>なる顔したる男の子の顔見えたり。これは川童なりしとなり。今もその胡桃大木にてあり。この家の屋敷のめぐりはすべて胡桃の樹なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec62" n="62">
+        <head>六〇</head>
+        <p><placeName ref="#wano"><ruby><rb>和野</rb><rt>わの</rt></ruby>村</placeName>の<persName ref="#sasaki-kahee"><ruby><rb>嘉兵衛爺</rb><rt>かへえじい</rt></ruby></persName>、<ruby><rb>雉子小屋</rb><rt>きじごや</rt></ruby>に入りて雉子を待ちしに<ruby><rb>狐</rb><rt>きつね</rt></ruby>しばしば出でて雉子を追う。あまり<ruby><rb>憎</rb><rt>にく</rt></ruby>ければこれを撃たんと思い<ruby><rb>狙</rb><rt>ねら</rt></ruby>いたるに、狐は此方を向きて何ともなげなる顔してあり。さて<ruby><rb>引金</rb><rt>ひきがね</rt></ruby>を引きたれども火<ruby><rb>移</rb><rt>うつ</rt></ruby>らず。<ruby><rb>胸騒</rb><rt>むなさわ</rt></ruby>ぎして銃を検せしに、<ruby><rb>筒口</rb><rt>つつぐち</rt></ruby>より<ruby><rb>手元</rb><rt>てもと</rt></ruby>のところまでいつのまにかことごとく土をつめてありたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec63" n="63">
+        <head>六一</head>
+        <p>同じ人<placeName ref="#rokkoushi">六角牛</placeName>に入りて白き<ruby><rb>鹿</rb><rt>しか</rt></ruby>に<ruby><rb>逢</rb><rt>あ</rt></ruby>えり。<ruby><rb>白鹿</rb><rt>はくろく</rt></ruby>は<ruby><rb>神</rb><rt>かみ</rt></ruby>なりという<ruby><rb>言</rb><rt>い</rt></ruby>い<ruby><rb>伝</rb><rt>つた</rt></ruby>えあれば、もし<ruby><rb>傷</rb><rt>きず</rt></ruby>つけて殺すこと<ruby><rb>能</rb><rt>あた</rt></ruby>わずば、必ず<ruby><rb>祟</rb><rt>たたり</rt></ruby>あるべしと<ruby><rb>思案</rb><rt>しあん</rt></ruby>せしが、<ruby><rb>名誉</rb><rt>めいよ</rt></ruby>の<ruby><rb>猟人</rb><rt>かりうど</rt></ruby>なれば<ruby><rb>世間</rb><rt>せけん</rt></ruby>の<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>りをいとい、思い切りてこれを<ruby><rb>撃</rb><rt>う</rt></ruby>つに、<ruby><rb>手応</rb><rt>てごた</rt></ruby>えはあれども鹿少しも動かず。この時もいたく<ruby><rb>胸騒</rb><rt>むなさわ</rt></ruby>ぎして、<ruby><rb>平生</rb><rt>へいぜい</rt></ruby><ruby><rb>魔除</rb><rt>まよ</rt></ruby>けとして<ruby><rb>危急</rb><rt>ききゅう</rt></ruby>の時のために用意したる<ruby><rb>黄金</rb><rt>おうごん</rt></ruby>の<ruby><rb>丸</rb><rt>たま</rt></ruby>を取り出し、これに<ruby><rb>蓬</rb><rt>よもぎ</rt></ruby>を巻きつけて打ち放したれど、鹿はなお動かず、あまり怪しければ近よりて見るに、よく鹿の形に似たる白き石なりき。数十年の間山中に<ruby><rb>暮</rb><rt>くら</rt></ruby>せる者が、石と鹿とを<ruby><rb>見誤</rb><rt>みあやま</rt></ruby>るべくもあらず、全く<ruby><rb>魔障</rb><rt>ましょう</rt></ruby>の<ruby><rb>仕業</rb><rt>しわざ</rt></ruby>なりけりと、この時ばかりは猟を<ruby><rb>止</rb><rt>や</rt></ruby>めばやと思いたりきという。</p>
+      </div>
+      <div type="chapter" xml:id="sec64" n="64">
+        <head>六二</head>
+        <p>また同じ人、ある<ruby><rb>夜</rb><rt>よ</rt></ruby><ruby><rb>山中</rb><rt>さんちゅう</rt></ruby>にて<ruby><rb>小屋</rb><rt>こや</rt></ruby>を作るいとまなくて、とある大木の下に寄り、<ruby><rb>魔除</rb><rt>まよ</rt></ruby>けのサンズ<ruby><rb>縄</rb><rt>なわ</rt></ruby>をおのれと木のめぐりに<ruby><rb>三囲</rb><rt>みめぐり</rt></ruby>引きめぐらし、鉄砲を<ruby><rb>竪</rb><rt>たて</rt></ruby>に<ruby><rb>抱</rb><rt>かか</rt></ruby>えてまどろみたりしに、夜深く物音のするに心づけば、大なる<ruby><rb>僧形</rb><rt>そうぎょう</rt></ruby>の者赤き<ruby><rb>衣</rb><rt>ころも</rt></ruby>を<ruby><rb>羽</rb><rt>はね</rt></ruby>のように羽ばたきして、その木の梢に<ruby><rb>蔽</rb><rt>おお</rt></ruby>いかかりたり。すわやと銃を打ち放せばやがてまた羽ばたきして<ruby><rb>中空</rb><rt>なかぞら</rt></ruby>を飛びかえりたり。この時の恐ろしさも世の常ならず。前後三たびまでかかる不思議に<ruby><rb>遭</rb><rt>あ</rt></ruby>い、そのたびごとに鉄砲を<ruby><rb>止</rb><rt>や</rt></ruby>めんと心に誓い、<ruby><rb>氏神</rb><rt>うじがみ</rt></ruby>に<ruby><rb>願掛</rb><rt>がんが</rt></ruby>けなどすれど、やがて再び思い返して、年取るまで<ruby><rb>猟人</rb><rt>かりうど</rt></ruby>の業を<ruby><rb>棄</rb><rt>す</rt></ruby>つること<ruby><rb>能</rb><rt>あた</rt></ruby>わずとよく人に語りたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec65" n="65">
+        <head>六三</head>
+        <p><placeName ref="#oguni"><ruby><rb>小国</rb><rt>おぐに</rt></ruby></placeName>の<persName ref="#miura">三浦某</persName>というは村一の<ruby><rb>金持</rb><rt>かねもち</rt></ruby>なり。今より二三代前の主人、まだ家は貧しくして、妻は少しく<ruby><rb>魯鈍</rb><rt>ろどん</rt></ruby>なりき。この妻ある日<ruby><rb>門</rb><rt>かど</rt></ruby>の<ruby><rb>前</rb><rt>まえ</rt></ruby>を流るる小さき川に沿いて<ruby><rb>蕗</rb><rt>ふき</rt></ruby>を<ruby><rb>採</rb><rt>と</rt></ruby>りに入りしに、よき物少なければ次第に谷奥深く登りたり。さてふと見れば立派なる黒き<ruby><rb>門</rb><rt>もん</rt></ruby>の家あり。<ruby><rb>訝</rb><rt>いぶか</rt></ruby>しけれど門の中に入りて見るに、大なる庭にて紅白の花一面に咲き<ruby><rb>鶏</rb><rt>にわとり</rt></ruby>多く遊べり。その庭を<ruby><rb>裏</rb><rt>うら</rt></ruby>の方へ<ruby><rb>廻</rb><rt>まわ</rt></ruby>れば、牛小屋ありて牛多くおり、<ruby><rb>馬舎</rb><rt>うまや</rt></ruby>ありて馬多くおれども、一向に人はおらず。ついに玄関より<ruby><rb>上</rb><rt>あが</rt></ruby>りたるに、その次の間には朱と黒との<ruby><rb>膳椀</rb><rt>ぜんわん</rt></ruby>をあまた取り出したり。奥の座敷には<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>ありて<ruby><rb>鉄瓶</rb><rt>てつびん</rt></ruby>の湯のたぎれるを見たり。されどもついに人影はなければ、もしや山男の家ではないかと急に恐ろしくなり、<ruby><rb>駆</rb><rt>か</rt></ruby>け<ruby><rb>出</rb><rt>だ</rt></ruby>して家に帰りたり。この事を人に語れども<ruby><rb>実</rb><rt>まこと</rt></ruby>と思う者もなかりしが、また或る日わが家のカドに出でて物を洗いてありしに、川上より赤き椀一つ流れてきたり。あまり美しければ拾い上げたれど、これを食器に用いたらば<ruby><rb>汚</rb><rt>きたな</rt></ruby>しと人に<ruby><rb>叱</rb><rt>しか</rt></ruby>られんかと思い、ケセネギツの中に置きてケセネを<ruby><rb>量</rb><rt>はか</rt></ruby>る<ruby><rb>器</rb><rt>うつわ</rt></ruby>となしたり。しかるにこの器にて量り始めてより、いつまで<ruby><rb>経</rb><rt>た</rt></ruby>ちてもケセネ尽きず。家の者もこれを怪しみて女に問いたるとき、始めて川より拾い上げし<ruby><rb>由</rb><rt>よし</rt></ruby>をば語りぬ。この家はこれより幸運に向い、ついに今の<persName ref="#miura">三浦家</persName>となれり。遠野にては山中の<ruby><rb>不思議</rb><rt>ふしぎ</rt></ruby>なる家をマヨイガという。マヨイガに行き当りたる者は、必ずその家の内の<ruby><rb>什器</rb><rt>じゅうき</rt></ruby>家畜何にてもあれ持ち出でて来べきものなり。その人に<ruby><rb>授</rb><rt>さず</rt></ruby>けんがためにかかる家をば見するなり。女が無慾にて何ものをも盗み来ざりしが故に、この椀自ら流れて来たりしなるべしといえり。</p>
+        <p>○このカドは門にはあらず。川戸にて門前を流るる川の岸に水を<ruby><rb>汲</rb><rt>く</rt></ruby>み物を洗うため家ごとに設けたるところなり。</p>
+        <p>○ケセネは米<ruby><rb>稗</rb><rt>ひえ</rt></ruby>その他の<ruby><rb>穀物</rb><rt>こくもつ</rt></ruby>をいう。キツはその穀物を<ruby><rb>容</rb><rt>い</rt></ruby>るる箱なり。大小種々のキツあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec66" n="66">
+        <head>六四</head>
+        <p><placeName ref="#kanazawa"><ruby><rb>金沢村</rb><rt>かねさわむら</rt></ruby></placeName>は<placeName ref="#shiromi"><ruby><rb>白望</rb><rt>しろみ</rt></ruby></placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>、<placeName ref="#kamihei">上閉伊郡</placeName>の内にてもことに山奥にて、人の往来する者少なし。六七年前この村より<placeName ref="#tochinai">栃内村</placeName>の<placeName ref="#yamazaki">山崎</placeName>なる<ruby><rb>某</rb><rt>なにがし</rt></ruby>かかが家に娘の婿を取りたり。この婿実家に行かんとして山路に迷い、またこのマヨイガに行き当りぬ。家のありさま、牛馬雞の多きこと、花の紅白に咲きたりしことなど、すべて前の話の通りなり。同じく玄関に入りしに、膳椀を取り出したる室あり。座敷に<ruby><rb>鉄瓶</rb><rt>てつびん</rt></ruby>の湯たぎりて、今まさに茶を<ruby><rb>煮</rb><rt>に</rt></ruby>んとするところのように見え、どこか便所などのあたりに人が立ちてあるようにも思われたり。<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>として後にはだんだん恐ろしくなり、引き返してついに<placeName ref="#oguni"><ruby><rb>小国</rb><rt>おぐに</rt></ruby></placeName>の村里に出でたり。<placeName ref="#oguni">小国</placeName>にてはこの話を聞きて<ruby><rb>実</rb><rt>まこと</rt></ruby>とする者もなかりしが、<placeName ref="#yamazaki">山崎</placeName>の方にてはそはマヨイガなるべし、行きて膳椀の類を持ち<ruby><rb>来</rb><rt>き</rt></ruby>たり長者にならんとて、<ruby><rb>婿殿</rb><rt>むこどの</rt></ruby>を先に立てて人あまたこれを求めに山の奥に入り、ここに門ありきというところに来たれども、眼にかかるものもなく<ruby><rb>空</rb><rt>むな</rt></ruby>しく帰り来たりぬ。その婿もついに金持になりたりということを聞かず。</p>
+        <p>○<placeName ref="#kamihei">上閉伊郡</placeName><placeName ref="#kanazawa">金沢村</placeName>。</p>
+      </div>
+      <div type="chapter" xml:id="sec67" n="67">
+        <head>六五</head>
+        <p><placeName ref="#hayachine"><ruby><rb>早池峯</rb><rt>はやちね</rt></ruby></placeName>は<ruby><rb>御影石</rb><rt>みかげいし</rt></ruby>の山なり。この山の<placeName ref="#oguni">小国</placeName>に<ruby><rb>向</rb><rt>む</rt></ruby>きたる<ruby><rb>側</rb><rt>かわ</rt></ruby>に<placeName ref="#abegajo"><ruby><rb>安倍ヶ城</rb><rt>あべがじょう</rt></ruby></placeName>という岩あり。<ruby><rb>険</rb><rt>けわ</rt></ruby>しき<ruby><rb>崖</rb><rt>がけ</rt></ruby>の中ほどにありて、人などはとても行きうべきところにあらず。ここには今でも<persName ref="#abe-sadato"><ruby><rb>安倍貞任</rb><rt>あべのさだとう</rt></ruby></persName>の母住めりと言い伝う。<ruby><rb>雨</rb><rt>あめ</rt></ruby>の<ruby><rb>降</rb><rt>ふ</rt></ruby>るべき夕方など、<ruby><rb>岩屋</rb><rt>いわや</rt></ruby>の<ruby><rb>扉</rb><rt>とびら</rt></ruby>を<ruby><rb>鎖</rb><rt>とざ</rt></ruby>す音聞ゆという。<placeName ref="#oguni">小国</placeName>、<placeName ref="#tsukumoushi"><ruby><rb>附馬牛</rb><rt>つくもうし</rt></ruby></placeName>の人々は、<placeName ref="#abegajo">安倍ヶ城</placeName>の<ruby><rb>錠</rb><rt>じょう</rt></ruby>の音がする、<ruby><rb>明日</rb><rt>あす</rt></ruby>は雨ならんなどいう。</p>
+      </div>
+      <div type="chapter" xml:id="sec68" n="68">
+        <head>六六</head>
+        <p>同じ山の<placeName ref="#tsukumoushi">附馬牛</placeName>よりの登り口にもまた<placeName ref="#abeyashiki"><ruby><rb>安倍屋敷</rb><rt>あべやしき</rt></ruby></placeName>という巌窟あり。とにかく<placeName ref="#hayachine">早池峯</placeName>は<persName ref="#abe-sadato">安倍貞任</persName>にゆかりある山なり。<placeName ref="#oguni">小国</placeName>より登る山口にも<persName ref="#hachimantaro"><ruby><rb>八幡太郎</rb><rt>はちまんたろう</rt></ruby></persName>の<ruby><rb>家来</rb><rt>けらい</rt></ruby>の<ruby><rb>討死</rb><rt>うちじに</rt></ruby>したるを埋めたりという塚三つばかりあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec69" n="69">
+        <head>六七</head>
+        <p><persName ref="#abe-sadato">安倍貞任</persName>に関する伝説はこのほかにも多し。<placeName ref="#tsuchibuchi">土淵村</placeName>と昔は<placeName ref="#hashino"><ruby><rb>橋野</rb><rt>はしの</rt></ruby></placeName>といいし<placeName ref="#kurihashi">栗橋村</placeName>との境にて、山口よりは二三里も登りたる山中に、広く<ruby><rb>平</rb><rt>たいら</rt></ruby>なる原あり。そのあたりの地名に貞任というところあり。沼ありて貞任が馬を<ruby><rb>冷</rb><rt>ひや</rt></ruby>せしところなりという。貞任が<ruby><rb>陣屋</rb><rt>じんや</rt></ruby>を<ruby><rb>構</rb><rt>かま</rt></ruby>えし<ruby><rb>址</rb><rt>あと</rt></ruby>とも言い伝う。<ruby><rb>景色</rb><rt>けしき</rt></ruby>よきところにて東海岸よく見ゆ。</p>
+      </div>
+      <div type="chapter" xml:id="sec70" n="70">
+        <head>六八</head>
+        <p><placeName ref="#tsuchibuchi">土淵村</placeName>には<persName ref="#abe-clan">安倍氏</persName>という家ありて貞任が末なりという。昔は栄えたる家なり。今も<ruby><rb>屋敷</rb><rt>やしき</rt></ruby>の周囲には堀ありて水を通ず。刀剣馬具あまたあり。当主は<persName ref="#abe-yoemon">安倍<ruby><rb>与右衛門</rb><rt>よえもん</rt></ruby></persName>、今も村にては二三等の<ruby><rb>物持</rb><rt>ものも</rt></ruby>ちにて、村会議員なり。安倍の子孫はこのほかにも多し。<placeName ref="#morioka">盛岡</placeName>の<placeName ref="#abedate"><ruby><rb>安倍館</rb><rt>あべだて</rt></ruby></placeName>の附近にもあり。<placeName ref="#kuriyagawa"><ruby><rb>厨川</rb><rt>くりやがわ</rt></ruby>の<ruby><rb>柵</rb><rt>しゃく</rt></ruby></placeName>に近き家なり。<placeName ref="#tsuchibuchi">土淵村</placeName>の<persName ref="#abe-clan">安倍家</persName>の四五町北、<placeName ref="#kokarase"><ruby><rb>小烏瀬川</rb><rt>こがらせがわ</rt></ruby></placeName>の<ruby><rb>河隈</rb><rt>かわくま</rt></ruby>に<ruby><rb>館</rb><rt>たて</rt></ruby>の址あり。<placeName ref="#hachimanzawa"><ruby><rb>八幡沢</rb><rt>はちまんざ</rt></ruby>の<ruby><rb>館</rb><rt>たて</rt></ruby></placeName>という。<persName ref="#hachimantaro">八幡太郎</persName>が陣屋というものこれなり。これより<placeName ref="#tono-machi">遠野の町</placeName>への<ruby><rb>路</rb><rt>みち</rt></ruby>にはまた<placeName ref="#hachimanyama">八幡山</placeName>という山ありて、その山の<placeName ref="#hachimanzawa">八幡沢の館</placeName>の方に向かえる峯にもまた一つの<ruby><rb>館址</rb><rt>たてあと</rt></ruby>あり。貞任が陣屋なりという。二つの館の間二十余町を隔つ。<ruby><rb>矢戦</rb><rt>やいくさ</rt></ruby>をしたりという言い伝えありて、矢の根を多く掘り出せしことあり。この間に<placeName ref="#nitakai"><ruby><rb>似田貝</rb><rt>にたかい</rt></ruby></placeName>という部落あり。戦の当時このあたりは<ruby><rb>蘆</rb><rt>あし</rt></ruby>しげりて土<ruby><rb>固</rb><rt>かた</rt></ruby>まらず、ユキユキと動揺せり。或る時<persName ref="#hachimantaro">八幡太郎</persName>ここを通りしに、<ruby><rb>敵味方</rb><rt>てきみかた</rt></ruby>いずれの<ruby><rb>兵糧</rb><rt>ひょうりょう</rt></ruby>にや、<ruby><rb>粥</rb><rt>かゆ</rt></ruby>を多く置きてあるを見て、これは<ruby><rb>煮</rb><rt>に</rt></ruby>た粥かといいしより村の名となる。<placeName ref="#nitakai">似田貝</placeName>の村の外を流るる小川を<placeName ref="#narukawa"><ruby><rb>鳴川</rb><rt>なるかわ</rt></ruby></placeName>という。これを隔てて<placeName ref="#ashiaraigawa"><ruby><rb>足洗川村</rb><rt>あしらがむら</rt></ruby></placeName>あり。<placeName ref="#narukawa">鳴川</placeName>にて<persName ref="#hachimantaro"><ruby><rb>義家</rb><rt>よしいえ</rt></ruby></persName>が足を洗いしより村の名となるという。</p>
+        <p>○ニタカイはアイヌ語のニタトすなわち湿地より出しなるべし。地形よく合えり。西の国々にてはニタともヌタともいう皆これなり。<placeName ref="#shimohei">下閉伊郡</placeName><placeName ref="#ogawa">小川村</placeName>にも<placeName ref="#nitakai-ogawa">二田貝</placeName>という字あり。</p>
+      </div>
+      <div type="chapter" xml:id="sec71" n="71">
+        <head>六九</head>
+        <p>今の<placeName ref="#tsuchibuchi">土淵村</placeName>には<ruby><rb>大同</rb><rt>だいどう</rt></ruby>という家二軒あり。山口の大同は当主を<persName ref="#ohora-mannojo"><ruby><rb>大洞万之丞</rb><rt>おおほらまんのじょう</rt></ruby></persName>という。この人の養母名は<persName ref="#ohide">おひで</persName>、八十を<ruby><rb>超</rb><rt>こ</rt></ruby>えて今も達者なり。<persName ref="#sasaki-kizen">佐々木氏</persName>の祖母の姉なり。魔法に長じたり。まじないにて蛇を殺し、木に<ruby><rb>止</rb><rt>とま</rt></ruby>れる鳥を落しなどするを<persName ref="#sasaki-kizen">佐々木君</persName>はよく見せてもらいたり。昨年の<date when="--01-15">旧暦正月十五日</date>に、この老女の語りしには、昔あるところに貧しき百姓あり。妻はなくて美しき娘あり。また一匹の馬を養う。娘この馬を愛して<ruby><rb>夜</rb><rt>よる</rt></ruby>になれば<ruby><rb>厩舎</rb><rt>うまや</rt></ruby>に行きて<ruby><rb>寝</rb><rt>い</rt></ruby>ね、ついに馬と夫婦になれり。或る夜父はこの事を知りて、その次の日に娘には知らせず、馬を<ruby><rb>連</rb><rt>つ</rt></ruby>れ出して桑の木につり下げて殺したり。その夜娘は馬のおらぬより父に尋ねてこの事を知り、驚き悲しみて桑の木の下に行き、死したる馬の首に<ruby><rb>縋</rb><rt>すが</rt></ruby>りて泣きいたりしを、父はこれを<ruby><rb>悪</rb><rt>にく</rt></ruby>みて斧をもって<ruby><rb>後</rb><rt>うしろ</rt></ruby>より馬の首を切り落せしに、たちまち娘はその首に乗りたるまま天に<ruby><rb>昇</rb><rt>のぼ</rt></ruby>り去れり。<persName ref="#oshirasama">オシラサマ</persName>というはこの時より成りたる神なり。馬をつり下げたる桑の枝にてその神の像を作る。その像三つありき。<ruby><rb>本</rb><rt>もと</rt></ruby>にて作りしは山口の大同にあり。これを姉神とす。中にて作りしは<placeName ref="#yamazaki">山崎</placeName>の<persName ref="#zaike-gonjuro"><ruby><rb>在家権十郎</rb><rt>ざいけごんじゅうろう</rt></ruby></persName>という人の家にあり。<persName ref="#sasaki-kizen">佐々木氏</persName>の伯母が縁づきたる家なるが、今は家絶えて神の<ruby><rb>行方</rb><rt>ゆくえ</rt></ruby>を知らず。<ruby><rb>末</rb><rt>すえ</rt></ruby>にて作りし妹神の像は<ruby><rb>今</rb><rt>いま</rt></ruby><placeName ref="#tsukumoushi">附馬牛村</placeName>にありといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec72" n="72">
+        <head>七〇</head>
+        <p>同じ人の話に、<persName ref="#okunaisama">オクナイサマ</persName>は<persName ref="#oshirasama">オシラサマ</persName>のある家には必ず伴ないて<ruby><rb>在</rb><rt>いま</rt></ruby>す神なり。されど<persName ref="#oshirasama">オシラサマ</persName>はなくて<persName ref="#okunaisama">オクナイサマ</persName>のみある家もあり。また家によりて神の像も同じからず。山口の大同にある<persName ref="#okunaisama">オクナイサマ</persName>は木像なり。山口の<persName ref="#otoishi-tanie"><ruby><rb>辷石</rb><rt>はねいし</rt></ruby>たにえ</persName>という人の家なるは<ruby><rb>掛軸</rb><rt>かけじく</rt></ruby>なり。<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>のうちにいませるはまた木像なり。<placeName ref="#iide"><ruby><rb>飯豊</rb><rt>いいで</rt></ruby></placeName>の大同にも<persName ref="#oshirasama">オシラサマ</persName>はなけれど<persName ref="#okunaisama">オクナイサマ</persName>のみはいませりという。</p>
+      </div>
+      <div type="chapter" xml:id="sec73" n="73">
+        <head>七一</head>
+        <p>この話をしたる老女は熱心なる念仏者なれど、世の常の念仏者とは<ruby><rb>様</rb><rt>さま</rt></ruby>かわり、一種邪宗らしき信仰あり。信者に道を伝うることはあれども、互いに厳重なる秘密を守り、その<ruby><rb>作法</rb><rt>さほう</rt></ruby>につきては親にも子にもいささかたりとも知らしめず。また寺とも僧とも少しも関係はなくて、<ruby><rb>在家</rb><rt>ざいけ</rt></ruby>の者のみの<ruby><rb>集</rb><rt>あつ</rt></ruby>まりなり。その人の数も多からず。<persName ref="#otoishi-tanie"><ruby><rb>辷石</rb><rt>はねいし</rt></ruby>たにえ</persName>という婦人などは同じ仲間なり。<persName ref="#amida"><ruby><rb>阿弥陀仏</rb><rt>あみだぶつ</rt></ruby></persName>の<ruby><rb>斎日</rb><rt>さいにち</rt></ruby>には、夜中人の静まるを待ちて会合し、隠れたる室にて<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>す。魔法まじないを<ruby><rb>善</rb><rt>よ</rt></ruby>くする故に、郷党に対して一種の権威あり。</p>
+      </div>
+      <div type="chapter" xml:id="sec74" n="74">
+        <head>七二</head>
+        <p><placeName ref="#tochinai"><ruby><rb>栃内</rb><rt>とちない</rt></ruby>村</placeName>の字<placeName ref="#kotohata"><ruby><rb>琴畑</rb><rt>ことばた</rt></ruby></placeName>は深山の沢にあり。家の数は五軒ばかり、<placeName ref="#kokarase"><ruby><rb>小烏瀬</rb><rt>こがらせ</rt></ruby>川</placeName>の支流の<ruby><rb>水上</rb><rt>みなかみ</rt></ruby>なり。これより<placeName ref="#tochinai">栃内</placeName>の民居まで二里を<ruby><rb>隔</rb><rt>へだ</rt></ruby>つ。<placeName ref="#kotohata">琴畑</placeName>の入口に塚あり。塚の上には木の<ruby><rb>座像</rb><rt>ざぞう</rt></ruby>あり。およそ人の大きさにて、以前は堂の中にありしが、今は<ruby><rb>雨</rb><rt>あま</rt></ruby>ざらしなり。これを<persName ref="#kakurasama">カクラサマ</persName>という。村の子供これを<ruby><rb>玩物</rb><rt>もてあそびもの</rt></ruby>にし、引き出して川へ投げ入れまた路上を引きずりなどする故に、今は鼻も口も見えぬようになれり。<ruby><rb>或</rb><rt>ある</rt></ruby>いは子供を<ruby><rb>叱</rb><rt>しか</rt></ruby>り戒めてこれを制止する者あれば、かえりて<ruby><rb>祟</rb><rt>たたり</rt></ruby>を受け病むことありといえり。</p>
+        <p>○神体仏像子供と遊ぶを好みこれを制止するを怒りたもうことほかにも例多し。<placeName ref="#totomi">遠江</placeName>小笠郡大池村東光寺の薬師仏（『掛川志』）、<placeName ref="#suruga">駿河</placeName>安倍郡豊田村曲金の軍陣坊社の神（『新風土記』）、または信濃筑摩郡射手の<ruby><rb>弥陀堂</rb><rt>みだどう</rt></ruby>の木仏（『信濃奇勝録』）などこれなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec75" n="75">
+        <head>七三</head>
+        <p><persName ref="#kakurasama">カクラサマ</persName>の木像は<placeName ref="#tono-go">遠野郷</placeName>のうちに<ruby><rb>数多</rb><rt>あまた</rt></ruby>あり。<placeName ref="#tochinai">栃内</placeName>の字<placeName ref="#nishiuchi"><ruby><rb>西内</rb><rt>にしない</rt></ruby></placeName>にもあり。山口分の<ruby><rb>大洞</rb><rt>おおほら</rt></ruby>というところにもありしことを記憶する者あり。<persName ref="#kakurasama">カクラサマ</persName>は人のこれを信仰する者なし。粗末なる彫刻にて、<ruby><rb>衣裳頭</rb><rt>いしょうかしら</rt></ruby>の<ruby><rb>飾</rb><rt>かざり</rt></ruby>のありさまも不分明なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec76" n="76">
+        <head>七四</head>
+        <p><placeName ref="#tochinai">栃内</placeName>の<persName ref="#kakurasama">カクラサマ</persName>は右の大小二つなり。<placeName ref="#tsuchibuchi">土淵</placeName>一村にては三つか四つあり。いずれの<persName ref="#kakurasama">カクラサマ</persName>も木の半身像にてなたの<ruby><rb>荒削</rb><rt>あらけず</rt></ruby>りの<ruby><rb>無恰好</rb><rt>ぶかっこう</rt></ruby>なるものなり。されど人の顔なりということだけは<ruby><rb>分</rb><rt>わ</rt></ruby>かるなり。<persName ref="#kakurasama">カクラサマ</persName>とは以前は神々の旅をして休息したもうべき場所の名なりしが、その地に<ruby><rb>常</rb><rt>つね</rt></ruby>います神をかく<ruby><rb>唱</rb><rt>とな</rt></ruby>うることとなれり。</p>
+      </div>
+      <div type="chapter" xml:id="sec77" n="77">
+        <head>七五</head>
+        <p><placeName ref="#hanaremori"><ruby><rb>離森</rb><rt>はなれもり</rt></ruby></placeName>の<placeName ref="#chojayashiki">長者屋敷</placeName>にはこの数年前まで<ruby><rb>燐寸</rb><rt>マッチ</rt></ruby>の<ruby><rb>軸木</rb><rt>じくぎ</rt></ruby>の<ruby><rb>工場</rb><rt>こうば</rt></ruby>ありたり。その小屋の戸口に<ruby><rb>夜</rb><rt>よる</rt></ruby>になれば女の伺い寄りて人を見てげたげたと笑う者ありて、淋しさに堪えざる故、ついに工場を大字山口に移したり。その後また同じ山中に<ruby><rb>枕木</rb><rt>まくらぎ</rt></ruby><ruby><rb>伐出</rb><rt>きりだ</rt></ruby>しのために小屋をかけたる者ありしが、夕方になると人夫の者いずれへか迷い行き、帰りてのち<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>としてあることしばしばなり。かかる人夫四五人もありてその後も絶えず<ruby><rb>何方</rb><rt>いずかた</rt></ruby>へか出でて行くことありき。この者どもが後に言うを聞けば、女がきて<ruby><rb>何処</rb><rt>どこ</rt></ruby>へか連れだすなり。帰りてのちは二日も三日も物を覚えずといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec78" n="78">
+        <head>七六</head>
+        <p><placeName ref="#chojayashiki">長者屋敷</placeName>は昔時長者の住みたりし<ruby><rb>址</rb><rt>あと</rt></ruby>なりとて、そのあたりにも<placeName ref="#nukamori"><ruby><rb>糠森</rb><rt>ぬかもり</rt></ruby></placeName>という山あり。長者の家の糠を捨てたるがなれるなりという。この山中には<ruby><rb>五</rb><rt>いつ</rt></ruby>つ<ruby><rb>葉</rb><rt>ば</rt></ruby>のうつ<ruby><rb>木</rb><rt>ぎ</rt></ruby>ありて、その下に黄金を埋めてありとて、今もそのうつぎの<ruby><rb>有処</rb><rt>ありか</rt></ruby>を求めあるく者<ruby><rb>稀々</rb><rt>まれまれ</rt></ruby>にあり。この長者は昔の金山師なりしならんか、このあたりには鉄を吹きたる<ruby><rb>滓</rb><rt>かす</rt></ruby>あり。<placeName ref="#ontoku"><ruby><rb>恩徳</rb><rt>おんどく</rt></ruby></placeName>の<ruby><rb>金山</rb><rt>きんざん</rt></ruby>もこれより山続きにて遠からず。</p>
+        <p>○諸国のヌカ塚スクモ塚には多くはこれと同じき長者伝説を伴なえり。また黄金埋蔵の伝説も諸国に限りなく多くあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec79" n="79">
+        <head>七七</head>
+        <p>山口の<persName ref="#tajiri-chozaburo"><ruby><rb>田尻</rb><rt>たじり</rt></ruby>長三郎</persName>というは<placeName ref="#tsuchibuchi">土淵村</placeName>一番の<ruby><rb>物持</rb><rt>ものもち</rt></ruby>なり。当主なる老人の話に、この人四十あまりのころ、<persName ref="#ohide">おひで</persName>老人の<ruby><rb>息子</rb><rt>むすこ</rt></ruby><ruby><rb>亡</rb><rt>な</rt></ruby>くなりて葬式の夜、人々念仏を終りおのおの帰り行きし<ruby><rb>跡</rb><rt>あと</rt></ruby>に、自分のみは<ruby><rb>話好</rb><rt>はなしず</rt></ruby>きなれば少しあとになりて立ち出でしに、軒の<ruby><rb>雨落</rb><rt>あまお</rt></ruby>ちの石を枕にして<ruby><rb>仰臥</rb><rt>ぎょうが</rt></ruby>したる男あり。よく見れば見も知らぬ人にて死してあるようなり。月のある夜なればその光にて見るに、<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を立て口を開きてあり。この人大胆者にて足にて<ruby><rb>揺</rb><rt>うご</rt></ruby>かして見たれど少しも身じろぎせず。道を<ruby><rb>妨</rb><rt>さまた</rt></ruby>げて<ruby><rb>外</rb><rt>ほか</rt></ruby>にせん<ruby><rb>方</rb><rt>かた</rt></ruby>もなければ、ついにこれを<ruby><rb>跨</rb><rt>また</rt></ruby>ぎて家に帰りたり。次の朝行きて見ればもちろんその<ruby><rb>跡方</rb><rt>あとかた</rt></ruby>もなく、また誰も<ruby><rb>外</rb><rt>ほか</rt></ruby>にこれを見たりという人はなかりしかど、その枕にしてありし石の形と<ruby><rb>在</rb><rt>あ</rt></ruby>りどころとは昨夜の<ruby><rb>見覚</rb><rt>みおぼ</rt></ruby>えの通りなり。この人の曰く、手をかけて見たらばよかりしに、<ruby><rb>半</rb><rt>なか</rt></ruby>ば恐ろしければただ足にて<ruby><rb>触</rb><rt>ふ</rt></ruby>れたるのみなりし故、さらに何もののわざとも思いつかずと。</p>
+      </div>
+      <div type="chapter" xml:id="sec80" n="80">
+        <head>七八</head>
+        <p>同じ人の話に、家に奉公せし山口の<persName ref="#chozo">長蔵</persName>なる者、今も七十余の老翁にて生存す。かつて夜遊びに出でて遅くかえり来たりしに、主人の家の門は<placeName ref="#otsuchi-kaido"><ruby><rb>大槌</rb><rt>おおづち</rt></ruby>往還</placeName>に向いて立てるが、この門の前にて浜の方よりくる人に逢えり。<ruby><rb>雪合羽</rb><rt>ゆきがっぱ</rt></ruby>を着たり。近づきて立ちとまる故、<persName ref="#chozo">長蔵</persName>も怪しみてこれを見たるに、往還を隔てて向側なる畠地の方へすっと<ruby><rb>反</rb><rt>そ</rt></ruby>れて行きたり。かしこには<ruby><rb>垣根</rb><rt>かきね</rt></ruby>ありしはずなるにと思いて、よく見れば垣根は<ruby><rb>正</rb><rt>まさ</rt></ruby>しくあり。急に怖ろしくなりて家の内に飛び込み、主人にこの事を語りしが、のちになりて聞けば、これと同じ時刻に<placeName ref="#niibari"><ruby><rb>新張村</rb><rt>にいばりむら</rt></ruby></placeName>の何某という者、浜よりの帰り<ruby><rb>途</rb><rt>みち</rt></ruby>に馬より落ちて死したりとのことなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec81" n="81">
+        <head>七九</head>
+        <p>この<persName ref="#chozo">長蔵</persName>の父をもまた<persName ref="#chozo">長蔵</persName>という。代々<persName ref="#tajiri-chozaburo">田尻家</persName>の奉公人にて、その妻とともに仕えてありき。若きころ夜遊びに出で、まだ<ruby><rb>宵</rb><rt>よい</rt></ruby>のうちに帰り来たり、<ruby><rb>門</rb><rt>かど</rt></ruby>の<ruby><rb>口</rb><rt>くち</rt></ruby>より入りしに、<ruby><rb>洞前</rb><rt>ほらまえ</rt></ruby>に立てる人影あり。<ruby><rb>懐手</rb><rt>ふところで</rt></ruby>をして<ruby><rb>筒袖</rb><rt>つつそで</rt></ruby>の袖口を垂れ、顔は<ruby><rb>茫</rb><rt>ぼう</rt></ruby>としてよく見えず。妻は名を<persName ref="#otsune">おつね</persName>といえり。<persName ref="#otsune">おつね</persName>のところへ来たるヨバヒトではないかと思い、つかつかと近よりしに、奥の方へは<ruby><rb>遁</rb><rt>に</rt></ruby>げずして、かえって右手の玄関の方へ寄る故、人を馬鹿にするなと腹立たしくなりて、なお進みたるに、懐手のまま<ruby><rb>後</rb><rt>あと</rt></ruby>ずさりして玄関の戸の三寸ばかり明きたるところより、すっと内に<ruby><rb>入</rb><rt>はい</rt></ruby>りたり。されど<persName ref="#chozo">長蔵</persName>はなお不思議とも思わず、その戸の<ruby><rb>隙</rb><rt>すき</rt></ruby>に手を差し入れて中を探らんとせしに、中の<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>は<ruby><rb>正</rb><rt>まさ</rt></ruby>しく<ruby><rb>閉</rb><rt>とざ</rt></ruby>してあり。ここに始めて恐ろしくなり、少し引き下らんとして上を見れば、今の男玄関の<ruby><rb>雲壁</rb><rt>くもかべ</rt></ruby>にひたとつきて我を見下すごとく、その首は低く<ruby><rb>垂</rb><rt>た</rt></ruby>れてわが頭に触るるばかりにて、その眼の球は尺余も、抜け出でてあるように思われたりという。この時はただ恐ろしかりしのみにて何事の前兆にてもあらざりき。</p>
+        <p>○ヨバヒトは呼ばい人なるべし。女に思いを運ぶ人をかくいう。</p>
+        <p>○雲壁はなげしの外側の壁なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec82" n="82">
+        <head>八〇</head>
+        <p>右の話をよく<ruby><rb>呑</rb><rt>の</rt></ruby>みこむためには、<persName ref="#tajiri-chozaburo">田尻氏</persName>の家のさまを図にする必要あり。<placeName ref="#tono-go">遠野一郷</placeName>の家の建てかたはいずれもこれと大同小異なり。</p>
+        <p>門はこの家のは<ruby><rb>北向</rb><rt>きたむ</rt></ruby>きなれど、通例は東向きなり。右の図にて<ruby><rb>厩舎</rb><rt>うまや</rt></ruby>のあるあたりにあるなり。門のことを<ruby><rb>城前</rb><rt>じょうまえ</rt></ruby>という。<ruby><rb>屋敷</rb><rt>やしき</rt></ruby>のめぐりは畠にて、<ruby><rb>囲墻</rb><rt>いしょう</rt></ruby>を設けず。主人の寝室とウチとの間に小さく暗き室あり。これを<ruby><rb>座頭部屋</rb><rt>ざとうべや</rt></ruby>という。昔は家に宴会あれば必ず座頭を<ruby><rb>喚</rb><rt>よ</rt></ruby>びたり。これを待たせ置く部屋なり。</p>
+        <p>○この地方を旅行して最も心とまるは家の形の<ruby><rb>何</rb><rt>いず</rt></ruby>れもかぎの手なることなり。この家などそのよき例なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec83" n="83">
+        <head>八一</head>
+        <p><placeName ref="#tochinai">栃内</placeName>の字<placeName ref="#nozaki"><ruby><rb>野崎</rb><rt>のざき</rt></ruby></placeName>に<persName ref="#maekawa-mankichi">前川万吉</persName>という人あり。二三年前に三十余にて亡くなりたり。この人も死ぬる二三年前に夜遊びに出でて帰りしに、<ruby><rb>門</rb><rt>かど</rt></ruby>の<ruby><rb>口</rb><rt>くち</rt></ruby>より<ruby><rb>廻</rb><rt>まわ</rt></ruby>り<ruby><rb>縁</rb><rt>えん</rt></ruby>に沿いてその<ruby><rb>角</rb><rt>かど</rt></ruby>まで来たるとき、<date when="--06">六月</date>の月夜のことなり、<ruby><rb>何心</rb><rt>なにごころ</rt></ruby>なく<ruby><rb>雲壁</rb><rt>くもかべ</rt></ruby>を見れば、ひたとこれにつきて寝たる男あり。色の<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめたる顔なりき。大いに驚きて病みたりしがこれも何の前兆にてもあらざりき。<persName ref="#tajiri-chozaburo">田尻氏</persName>の息子<persName ref="#tajiri-marukichi">丸吉</persName>この人と懇親にてこれを聞きたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec84" n="84">
+        <head>八二</head>
+        <p>これは<persName ref="#tajiri-marukichi">田尻丸吉</persName>という人が自ら<ruby><rb>遭</rb><rt>あ</rt></ruby>いたることなり。少年の頃ある夜<ruby><rb>常居</rb><rt>じょうい</rt></ruby>より立ちて便所に行かんとして茶の間に入りしに、<ruby><rb>座敷</rb><rt>ざしき</rt></ruby>との境に人立てり。<ruby><rb>幽</rb><rt>かす</rt></ruby>かに茫としてはあれど、衣類の<ruby><rb>縞</rb><rt>しま</rt></ruby>も眼鼻もよく見え、髪をば<ruby><rb>垂</rb><rt>た</rt></ruby>れたり。恐ろしけれどそこへ手を延ばして探りしに、板戸にがたと突き当り、戸のさんにも<ruby><rb>触</rb><rt>さわ</rt></ruby>りたり。されどわが手は見えずして、その上に影のように<ruby><rb>重</rb><rt>かさ</rt></ruby>なりて人の形あり。その顔のところへ手を<ruby><rb>遣</rb><rt>や</rt></ruby>ればまた手の上に顔見ゆ。<ruby><rb>常居</rb><rt>じょうい</rt></ruby>に帰りて人々に話し、<ruby><rb>行灯</rb><rt>あんどん</rt></ruby>を持ち行きて見たれば、すでに何ものもあらざりき。この人は近代的の人にて<ruby><rb>怜悧</rb><rt>れいり</rt></ruby>なる人なり。また虚言をなす人にもあらず。</p>
+      </div>
+      <div type="chapter" xml:id="sec85" n="85">
+        <head>八三</head>
+        <p>山口の大同、<persName ref="#ohora-mannojo"><ruby><rb>大洞万之丞</rb><rt>おおほらまんのじょう</rt></ruby></persName>の家の建てざまは少しく<ruby><rb>外</rb><rt>ほか</rt></ruby>の家とはかわれり。その図次のページに出す。玄関は<ruby><rb>巽</rb><rt>たつみ</rt></ruby>の方に向かえり。きわめて古き家なり。この家には出して見れば<ruby><rb>祟</rb><rt>たたり</rt></ruby>ありとて開かざる古文書の<ruby><rb>葛籠</rb><rt>つづら</rt></ruby>一つあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec86" n="86">
+        <head>八四</head>
+        <p><persName ref="#sasaki-kizen">佐々木氏</persName>の祖父は七十ばかりにて三四年前に亡くなりし人なり。この人の青年のころといえば、<date when="1848"><ruby><rb>嘉永</rb><rt>かえい</rt></ruby></date>の頃なるべきか。海岸の地には西洋人あまた来住してありき。<placeName ref="#kamaishi"><ruby><rb>釜石</rb><rt>かまいし</rt></ruby></placeName>にも<placeName ref="#yamada">山田</placeName>にも西洋館あり。<placeName ref="#funakoshi"><ruby><rb>船越</rb><rt>ふなこし</rt></ruby></placeName>の半島の突端にも西洋人の住みしことあり。<ruby><rb>耶蘇</rb><rt>ヤソ</rt></ruby>教は密々に行われ、<placeName ref="#tono-go">遠野郷</placeName>にてもこれを奉じて<ruby><rb>磔</rb><rt>はりつけ</rt></ruby>になりたる者あり。浜に行きたる人の話に、異人はよく抱き合いては<ruby><rb>嘗</rb><rt>な</rt></ruby>め合う者なりなどいうことを、今でも話にする老人あり。海岸地方には<ruby><rb>合</rb><rt>あい</rt></ruby>の<ruby><rb>子</rb><rt>こ</rt></ruby>なかなか多かりしということなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec87" n="87">
+        <head>八五</head>
+        <p><placeName ref="#tsuchibuchi">土淵村</placeName>の<placeName ref="#kashiwazaki"><ruby><rb>柏崎</rb><rt>かしわざき</rt></ruby></placeName>にては両親とも<ruby><rb>正</rb><rt>まさ</rt></ruby>しく日本人にして<ruby><rb>白子</rb><rt>しらこ</rt></ruby>二人ある家あり。髪も肌も眼も西洋人の通りなり。今は二十六七ぐらいなるべし。家にて農業を<ruby><rb>営</rb><rt>いとな</rt></ruby>む。語音も土地の人とは同じからず、声細くして<ruby><rb>鋭</rb><rt>するど</rt></ruby>し。</p>
+      </div>
+      <div type="chapter" xml:id="sec88" n="88">
+        <head>八六</head>
+        <p><placeName ref="#tsuchibuchi">土淵村</placeName>の中央にて役場小学校などのあるところを字<placeName ref="#motojuku"><ruby><rb>本宿</rb><rt>もとじゅく</rt></ruby></placeName>という。此所に<ruby><rb>豆腐屋</rb><rt>とうふや</rt></ruby>を業とする<persName ref="#masa">政</persName>という者、今三十六七なるべし。この人の父大病にて死なんとするころ、この村と<placeName ref="#kokarase"><ruby><rb>小烏瀬</rb><rt>こがらせ</rt></ruby>川</placeName>を隔てたる字<placeName ref="#shimo-tochinai"><ruby><rb>下栃内</rb><rt>しもとちない</rt></ruby></placeName>に<ruby><rb>普請</rb><rt>ふしん</rt></ruby>ありて、地固めの<ruby><rb>堂突</rb><rt>どうづき</rt></ruby>をなすところへ、夕方に<persName ref="#masa">政</persName>の父ひとり来たりて人々に<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>し、おれも堂突をなすべしとて暫時仲間に入りて仕事をなし、やや暗くなりて皆とともに帰りたり。あとにて人々あの人は大病のはずなるにと少し不思議に思いしが、後に聞けばその日亡くなりたりとのことなり。人々悔みに行き今日のことを語りしが、その時刻はあたかも病人が息を引き取らんとするころなりき。</p>
+      </div>
+      <div type="chapter" xml:id="sec89" n="89">
+        <head>八七</head>
+        <p>人の名は忘れたれど、<placeName ref="#tono-machi">遠野の町</placeName>の豪家にて、主人<ruby><rb>大煩</rb><rt>おおわずら</rt></ruby>いして命の境に臨みしころ、ある日ふと<ruby><rb>菩提寺</rb><rt>ぼだいじ</rt></ruby>に訪い来たれり。<ruby><rb>和尚</rb><rt>おしょう</rt></ruby><ruby><rb>鄭重</rb><rt>ていちょう</rt></ruby>にあしらい茶などすすめたり。<ruby><rb>世間話</rb><rt>せけんばなし</rt></ruby>をしてやがて帰らんとする様子に少々不審あれば、跡より小僧を見せに<ruby><rb>遣</rb><rt>や</rt></ruby>りしに、門を出でて家の方に向い、町の<ruby><rb>角</rb><rt>かど</rt></ruby>を廻りて見えずなれり。その道にてこの人に逢いたる人まだほかにもあり。誰にもよく挨拶して<ruby><rb>常</rb><rt>つね</rt></ruby>の<ruby><rb>体</rb><rt>てい</rt></ruby>なりしが、この晩に死去してもちろんその時は外出などすべき<ruby><rb>様態</rb><rt>ようだい</rt></ruby>にてはあらざりしなり。後に寺にては茶は飲みたりや否やと茶椀を置きしところを改めしに、<ruby><rb>畳</rb><rt>たたみ</rt></ruby>の<ruby><rb>敷合</rb><rt>しきあ</rt></ruby>わせへ皆こぼしてありたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec90" n="90">
+        <head>八八</head>
+        <p>これも似たる話なり。<placeName ref="#tsuchibuchi">土淵村</placeName>大字<placeName ref="#tsuchibuchi">土淵</placeName>の<placeName ref="#joukenji"><ruby><rb>常堅寺</rb><rt>じょうけんじ</rt></ruby></placeName>は<ruby><rb>曹洞宗</rb><rt>そうとうしゅう</rt></ruby>にて、<placeName ref="#tono-go">遠野郷</placeName>十二ヶ寺の<ruby><rb>触頭</rb><rt>ふれがしら</rt></ruby>なり。或る日の夕方に村人何某という者、<placeName ref="#motojuku"><ruby><rb>本宿</rb><rt>もとじゅく</rt></ruby></placeName>より来る路にて何某という老人にあえり。この老人はかねて大病をして居る者なれば、いつのまによくなりしやと問うに、二三日気分も<ruby><rb>宜</rb><rt>よろ</rt></ruby>しければ、今日は寺へ話を聞きに行くなりとて、寺の門前にてまた言葉を掛け合いて別れたり。<placeName ref="#joukenji">常堅寺</placeName>にても和尚はこの老人が訪ね来たりし<ruby><rb>故</rb><rt>ゆえ</rt></ruby>出迎え、茶を進めしばらく話をして帰る。これも小僧に見させたるに門の<ruby><rb>外</rb><rt>そと</rt></ruby>にて見えずなりしかば、驚きて和尚に語り、よく見ればまた茶は畳の間にこぼしてあり、老人はその日<ruby><rb>失</rb><rt>う</rt></ruby>せたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec91" n="91">
+        <head>八九</head>
+        <p>山口より<placeName ref="#kashiwazaki">柏崎</placeName>へ行くには<placeName ref="#atago"><ruby><rb>愛宕山</rb><rt>あたごやま</rt></ruby></placeName>の<ruby><rb>裾</rb><rt>すそ</rt></ruby>を<ruby><rb>廻</rb><rt>まわ</rt></ruby>るなり。<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>に続ける松林にて、<placeName ref="#kashiwazaki">柏崎</placeName>の人家見ゆる辺より<ruby><rb>雑木</rb><rt>ぞうき</rt></ruby>の林となる。<placeName ref="#atago">愛宕山</placeName>の<ruby><rb>頂</rb><rt>いただき</rt></ruby>には小さき<ruby><rb>祠</rb><rt>ほこら</rt></ruby>ありて、<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>の路は林の中にあり。<ruby><rb>登口</rb><rt>のぼりくち</rt></ruby>に<ruby><rb>鳥居</rb><rt>とりい</rt></ruby>立ち、二三十本の杉の古木あり。その<ruby><rb>旁</rb><rt>かたわら</rt></ruby>にはまた一つのがらんとしたる堂あり。堂の前には山神の字を刻みたる石塔を立つ。昔より山の神出づと言い伝うるところなり。<placeName ref="#wano"><ruby><rb>和野</rb><rt>わの</rt></ruby></placeName>の何某という若者、<placeName ref="#kashiwazaki">柏崎</placeName>に用事ありて夕方堂のあたりを通りしに、<placeName ref="#atago">愛宕山</placeName>の上より<ruby><rb>降</rb><rt>くだ</rt></ruby>り来る<ruby><rb>丈</rb><rt>たけ</rt></ruby>高き人あり。誰ならんと思い林の樹木越しにその人の顔のところを目がけて歩み寄りしに、道の<ruby><rb>角</rb><rt>かど</rt></ruby>にてはたと行き逢いぬ。先方は思い掛けざりしにや大いに驚きて此方を見たる顔は非常に赤く、眼は<ruby><rb>耀</rb><rt>かがや</rt></ruby>きてかついかにも驚きたる顔なり。山の神なりと知りて<ruby><rb>後</rb><rt>あと</rt></ruby>をも見ずに<placeName ref="#kashiwazaki">柏崎</placeName>の村に走りつきたり。</p>
+        <p>○<placeName ref="#tono-go">遠野郷</placeName>には山神塔多く立てり、そのところはかつて山神に逢いまたは山神の祟を受けたる場所にて神をなだむるために建てたる石なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec92" n="92">
+        <head>九十</head>
+        <p><placeName ref="#matsuzaki">松崎村</placeName>に<placeName ref="#tengumori"><ruby><rb>天狗森</rb><rt>てんぐもり</rt></ruby></placeName>という山あり。その麓なる<ruby><rb>桑畠</rb><rt>くわばたけ</rt></ruby>にて村の若者何某という者、働きていたりしに、<ruby><rb>頻</rb><rt>しきり</rt></ruby>に<ruby><rb>睡</rb><rt>ねむ</rt></ruby>くなりたれば、しばらく畠の<ruby><rb>畔</rb><rt>くろ</rt></ruby>に腰掛けて<ruby><rb>居眠</rb><rt>いねむ</rt></ruby>りせんとせしに、きわめて大なる男の顔は<ruby><rb>真赤</rb><rt>まっか</rt></ruby>なるが出で来たれり。若者は気軽にて<ruby><rb>平生</rb><rt>へいぜ</rt></ruby><ruby><rb>相撲</rb><rt>すもう</rt></ruby>などの好きなる男なれば、この<ruby><rb>見馴</rb><rt>みな</rt></ruby>れぬ大男が立ちはだかりて上より見下すようなるを<ruby><rb>面悪</rb><rt>つらにく</rt></ruby>く思い、思わず立ち上りてお前はどこから来たかと問うに、何の答えもせざれば、一つ突き飛ばしてやらんと思い、<ruby><rb>力自慢</rb><rt>ちからじまん</rt></ruby>のまま飛びかかり手を掛けたりと思うや否や、かえりて自分の方が飛ばされて気を失いたり。夕方に正気づきてみれば無論その大男はおらず。家に帰りてのち人にこの事を話したり。その秋のことなり。<placeName ref="#hayachine">早池峯</placeName>の腰へ村人大勢とともに馬を<ruby><rb>曳</rb><rt>ひ</rt></ruby>きて<ruby><rb>萩</rb><rt>はぎ</rt></ruby>を苅りに行き、さて帰らんとするころになりてこの男のみ姿見えず。一同驚きて尋ねたれば、深き谷の奥にて手も足も一つ一つ抜き取られて死していたりという。今より二三十年前のことにて、この時の事をよく知れる老人今も存在せり。<placeName ref="#tengumori">天狗森</placeName>には天狗多くいるということは昔より人の知るところなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec93" n="93">
+        <head>九一</head>
+        <p><placeName ref="#tono-machi">遠野の町</placeName>に山々の事に明るき人あり。もとは<persName ref="#nanbu">南部<ruby><rb>男爵</rb><rt>だんしゃく</rt></ruby>家</persName>の<ruby><rb>鷹匠</rb><rt>たかじょう</rt></ruby>なり。町の人<ruby><rb>綽名</rb><rt>あだな</rt></ruby>して<persName ref="#torigozen"><ruby><rb>鳥御前</rb><rt>とりごぜん</rt></ruby></persName>という。<placeName ref="#hayachine">早池峯</placeName>、<placeName ref="#rokkoushi">六角牛</placeName>の木や石や、すべてその形状と<ruby><rb>在処</rb><rt>ありどころ</rt></ruby>とを知れり。年取りてのち<ruby><rb>茸採</rb><rt>きのこと</rt></ruby>りにとて一人の<ruby><rb>連</rb><rt>つれ</rt></ruby>とともに出でたり。この連の男というは水練の名人にて、<ruby><rb>藁</rb><rt>わら</rt></ruby>と<ruby><rb>槌</rb><rt>つち</rt></ruby>とを持ちて水の中に入り、<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>を作りて出てくるという評判の人なり。さて<placeName ref="#tono-machi">遠野の町</placeName>と<placeName ref="#sarugaishi">猿ヶ石川</placeName>を隔つる<placeName ref="#mukaiyama"><ruby><rb>向山</rb><rt>むけえやま</rt></ruby></placeName>という山より、<placeName ref="#ayaori"><ruby><rb>綾織</rb><rt>あやおり</rt></ruby>村</placeName>の<placeName ref="#tsuzukiishi"><ruby><rb>続石</rb><rt>つづきいし</rt></ruby></placeName>とて珍しき岩のある所の少し上の山に入り、両人別れ別れになり、<persName ref="#torigozen">鳥御前</persName>一人はまた少し山を登りしに、あたかも秋の空の日影、西の山の<ruby><rb>端</rb><rt>は</rt></ruby>より四五<ruby><rb>間</rb><rt>けん</rt></ruby>ばかりなる時刻なり。ふと大なる岩の<ruby><rb>陰</rb><rt>かげ</rt></ruby>に<ruby><rb>赭</rb><rt>あか</rt></ruby>き顔の男と女とが立ちて何か話をして居るに<ruby><rb>出逢</rb><rt>であ</rt></ruby>いたり。彼らは<persName ref="#torigozen">鳥御前</persName>の近づくを見て、手を<ruby><rb>拡</rb><rt>ひろ</rt></ruby>げて押し戻すようなる手つきをなし制止したれども、それにも<ruby><rb>構</rb><rt>かま</rt></ruby>わず行きたるに女は男の胸に<ruby><rb>縋</rb><rt>すが</rt></ruby>るようにしたり。事のさまより真の人間にてはあるまじと思いながら、<persName ref="#torigozen">鳥御前</persName>はひょうきんな人なれば<ruby><rb>戯</rb><rt>たわむ</rt></ruby>れて<ruby><rb>遣</rb><rt>や</rt></ruby>らんとて腰なる<ruby><rb>切刃</rb><rt>きりは</rt></ruby>を抜き、打ちかかるようにしたれば、その色赭き男は足を<ruby><rb>挙</rb><rt>あ</rt></ruby>げて<ruby><rb>蹴</rb><rt>け</rt></ruby>りたるかと思いしが、たちまちに前後を知らず。連なる男はこれを<ruby><rb>探</rb><rt>さが</rt></ruby>しまわりて谷底に気絶してあるを見つけ、介抱して家に帰りたれば、<persName ref="#torigozen">鳥御前</persName>は今日の一部始終を話し、かかる事は今までに更になきことなり。おのれはこのために死ぬかも知れず、ほかの者には誰にもいうなと語り、三日ほどの間病みて身まかりたり。家の者あまりにその死にようの不思議なればとて、<ruby><rb>山臥</rb><rt>やまぶし</rt></ruby>の<persName ref="#kenkoin">ケンコウ院</persName>というに相談せしに、その答えには、山の神たちの遊べるところを邪魔したる故、その<ruby><rb>祟</rb><rt>たたり</rt></ruby>をうけて死したるなりといえり。この人は<persName ref="#ino">伊能先生</persName>なども<ruby><rb>知合</rb><rt>しりあい</rt></ruby>なりき。今より十余年前の事なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec94" n="94">
+        <head>九二</head>
+        <p>昨年のことなり。<placeName ref="#tsuchibuchi">土淵村</placeName>の里の子十四五人にて<placeName ref="#hayachine">早池峯</placeName>に遊びに行き、はからず夕方近くなりたれば、急ぎて山を下り<ruby><rb>麓</rb><rt>ふもと</rt></ruby>近くなるころ、<ruby><rb>丈</rb><rt>たけ</rt></ruby>の高き男の下より急ぎ足に昇りくるに逢えり。色は黒く<ruby><rb>眼</rb><rt>まなこ</rt></ruby>はきらきらとして、肩には麻かと思わるる古き<ruby><rb>浅葱色</rb><rt>あさぎいろ</rt></ruby>の<ruby><rb>風呂敷</rb><rt>ふろしき</rt></ruby>にて小さき包を負いたり。恐ろしかりしかども子供の中の一人、どこへ行くかと此方より声を掛けたるに、<placeName ref="#oguni"><ruby><rb>小国</rb><rt>おぐに</rt></ruby></placeName>さ行くと答う。この路は<placeName ref="#oguni">小国</placeName>へ越ゆべき方角にはあらざれば、立ちとまり不審するほどに、行き過ぐると思うまもなく、はや見えずなりたり。山男よと口々に言いてみなみな遁げ帰りたりといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec95" n="95">
+        <head>九三</head>
+        <p>これは<placeName ref="#wano">和野</placeName>の人<persName ref="#kikuchi-kikuzo">菊池菊蔵</persName>という者、妻は<placeName ref="#fuefuki">笛吹峠</placeName>のあなたなる<placeName ref="#hashino">橋野</placeName>より来たる者なり。この妻親里へ行きたる間に、<persName ref="#itozo">糸蔵</persName>という五六歳の男の<ruby><rb>児</rb><rt>こ</rt></ruby>病気になりたれば、<ruby><rb>昼過</rb><rt>ひるす</rt></ruby>ぎより<placeName ref="#fuefuki">笛吹峠</placeName>を越えて妻を連れに親里へ行きたり。名に負う<placeName ref="#rokkoushi">六角牛</placeName>の峯続きなれば山路は樹深く、ことに<placeName ref="#tono-go">遠野分</placeName>より<placeName ref="#kurihashi">栗橋</placeName>分へ下らんとするあたりは、路はウドになりて両方は<ruby><rb>岨</rb><rt>そば</rt></ruby>なり。日影はこの岨に隠れてあたりやや薄暗くなりたるころ、後の方より<persName ref="#kikuchi-kikuzo">菊蔵</persName>と呼ぶ者あるに振り返りて見れば、<ruby><rb>崖</rb><rt>がけ</rt></ruby>の上より下を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>くものあり。顔は赭く眼の光りかがやけること前の話のごとし。お前の子はもう死んで居るぞという。この言葉を聞きて恐ろしさよりも先にはっと思いたりしが、はやその姿は見えず。急ぎ夜の中に妻を<ruby><rb>伴</rb><rt>とも</rt></ruby>ないて帰りたれば、果して子は死してありき。四五年前のことなり。</p>
+        <p>○ウドとは両側高く切込みたる路のことなり。<placeName ref="#tokaido">東海道</placeName>の諸国にてウタウ坂・謡坂などいうはすべてかくのごとき小さき切通しのことならん。</p>
+      </div>
+      <div type="chapter" xml:id="sec96" n="96">
+        <head>九四</head>
+        <p>この<persName ref="#kikuchi-kikuzo">菊蔵</persName>、<placeName ref="#kashiwazaki">柏崎</placeName>なる姉の家に用ありて行き、<ruby><rb>振舞</rb><rt>ふるま</rt></ruby>われたる残りの<ruby><rb>餅</rb><rt>もち</rt></ruby>を<ruby><rb>懐</rb><rt>ふところ</rt></ruby>に入れて、<placeName ref="#atago">愛宕山</placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>の林を過ぎしに、<placeName ref="#zotsubo"><ruby><rb>象坪</rb><rt>ぞうつぼ</rt></ruby></placeName>の<persName ref="#toshichi">藤七</persName>という<ruby><rb>大酒呑</rb><rt>おおざけのみ</rt></ruby>にて彼と<ruby><rb>仲善</rb><rt>なかよし</rt></ruby>の友に行き逢えり。そこは林の中なれど少しく<ruby><rb>芝原</rb><rt>しばはら</rt></ruby>あるところなり。<persName ref="#toshichi">藤七</persName>はにこにことしてその芝原を<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>し、ここで<ruby><rb>相撲</rb><rt>すもう</rt></ruby>を取らぬかという。<persName ref="#kikuchi-kikuzo">菊蔵</persName>これを諾し、二人草原にてしばらく遊びしが、この<persName ref="#toshichi">藤七</persName>いかにも弱く軽く自由に<ruby><rb>抱</rb><rt>かか</rt></ruby>えては投げらるる<ruby><rb>故</rb><rt>ゆえ</rt></ruby>、面白きままに三番まで取りたり。<persName ref="#toshichi">藤七</persName>が曰く、今日はとてもかなわず、さあ行くべしとて別れたり。四五<ruby><rb>間</rb><rt>けん</rt></ruby>も行きてのち心づきたるにかの餅見えず。相撲場に戻りて探したれどなし。始めて狐ならんかと思いたれど、外聞を恥じて人にもいわざりしが、四五日ののち酒屋にて<persName ref="#toshichi">藤七</persName>に逢いその話をせしに、おれは相撲など取るものか、その日は浜へ行きてありしものをと言いて、いよいよ狐と相撲を取りしこと露顕したり。されど<persName ref="#kikuchi-kikuzo">菊蔵</persName>はなお他の人々には包み隠してありしが、昨年の<date when="--01">正月</date>の休みに人々酒を飲み狐の話をせしとき、おれもじつはとこの話を白状し、大いに笑われたり。</p>
+        <p>○<placeName ref="#zotsubo">象坪</placeName>は地名にしてかつ<persName ref="#toshichi">藤七</persName>の名字なり。<placeName ref="#zotsubo">象坪</placeName>という地名のこと『<ruby><rb>石神問答</rb><rt>いしがみもんどう</rt></ruby>』の中にてこれを研究したり。</p>
+      </div>
+      <div type="chapter" xml:id="sec97" n="97">
+        <head>九五</head>
+        <p><placeName ref="#matsuzaki">松崎</placeName>の<persName ref="#kikuchi-nanigashi">菊池某</persName>という今年四十三四の男、庭作りの<ruby><rb>上手</rb><rt>じょうず</rt></ruby>にて、山に入り草花を掘りてはわが庭に移し植え、形の面白き岩などは重きを<ruby><rb>厭</rb><rt>いと</rt></ruby>わず家に<ruby><rb>担</rb><rt>にな</rt></ruby>い帰るを常とせり。或る日少し気分重ければ家を出でて山に遊びしに、今までついに見たることなき美しき大岩を見つけたり。<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>の道楽なればこれを持ち帰らんと思い、持ち上げんとせしが非常に重し。あたかも人の立ちたる形して<ruby><rb>丈</rb><rt>たけ</rt></ruby>もやがて人ほどあり。されどほしさのあまりこれを負い、我慢して十間ばかり歩みしが、気の遠くなるくらい重ければ怪しみをなし、<ruby><rb>路</rb><rt>みち</rt></ruby>の<ruby><rb>旁</rb><rt>かたわら</rt></ruby>にこれを立て少しくもたれかかるようにしたるに、そのまま石とともにすっと空中に<ruby><rb>昇</rb><rt>のぼ</rt></ruby>り行く<ruby><rb>心地</rb><rt>ここち</rt></ruby>したり。雲より上になりたるように思いしがじつに明るく清きところにて、あたりにいろいろの花咲き、しかも<ruby><rb>何処</rb><rt>いずこ</rt></ruby>ともなく大勢の人声聞えたり。されど石はなおますます<ruby><rb>昇</rb><rt>のぼ</rt></ruby>り行き、ついには昇り切りたるか、何事も覚えぬようになりたり。その後時過ぎて心づきたる時は、やはり以前のごとく不思議の石にもたれたるままにてありき。この石を家の内へ持ち込みてはいかなることあらんも<ruby><rb>測</rb><rt>はか</rt></ruby>りがたしと、恐ろしくなりて遁げ帰りぬ。この石は今も同じところにあり。おりおりはこれを見て再びほしくなることありといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec98" n="98">
+        <head>九六</head>
+        <p><placeName ref="#tono-machi">遠野の町</placeName>に<persName ref="#hokobaka"><ruby><rb>芳公馬鹿</rb><rt>よしこうばか</rt></ruby></persName>とて三十五六なる男、白痴にて一昨年まで生きてありき。この男の癖は路上にて木の切れ<ruby><rb>塵</rb><rt>ちり</rt></ruby>などを拾い、これを<ruby><rb>捻</rb><rt>ひね</rt></ruby>りてつくづくと見つめまたはこれを<ruby><rb>嗅</rb><rt>か</rt></ruby>ぐことなり。人の家に行きては柱などをこすりてその手を嗅ぎ、何ものにても眼の先きまで取り上げ、にこにことしておりおりこれを嗅ぐなり。この男往来をあるきながら急に立ち<ruby><rb>留</rb><rt>どま</rt></ruby>り、石などを拾い上げてこれをあたりの人家に打ちつけ、けたたましく火事だ火事だと叫ぶことあり。かくすればその晩か次の日か物を投げつけられたる家火を発せざることなし。同じこと幾度となくあれば、のちにはその家々も注意して予防をなすといえども、ついに火事を<ruby><rb>免</rb><rt>まぬか</rt></ruby>れたる家は一軒もなしといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec99" n="99">
+        <head>九七</head>
+        <p><placeName ref="#iide"><ruby><rb>飯豊</rb><rt>いいで</rt></ruby></placeName>の<persName ref="#kikuchi-matsunojo">菊池<ruby><rb>松之丞</rb><rt>まつのじょう</rt></ruby></persName>という人<ruby><rb>傷寒</rb><rt>しょうかん</rt></ruby>を病み、たびたび息を引きつめし時、自分は田圃に出でて<ruby><rb>菩提寺</rb><rt>ぼだいじ</rt></ruby>なる<placeName ref="#kiseiin">キセイ院</placeName>へ急ぎ行かんとす。足に少し力を入れたるに、図らず空中に飛び上り、およそ人の頭ほどのところを次第に<ruby><rb>前下</rb><rt>まえさが</rt></ruby>りに行き、また少し力を入るれば昇ること始めのごとし。何とも言われず<ruby><rb>快</rb><rt>こころよ</rt></ruby>し。寺の門に近づくに人群集せり。<ruby><rb>何故</rb><rt>なにゆえ</rt></ruby>ならんと<ruby><rb>訝</rb><rt>いぶか</rt></ruby>りつつ門を入れば、<ruby><rb>紅</rb><rt>くれない</rt></ruby>の<ruby><rb>芥子</rb><rt>けし</rt></ruby>の花咲き満ち、見渡すかぎりも知らず。いよいよ心持よし。この花の間に<ruby><rb>亡</rb><rt>な</rt></ruby>くなりし父立てり。お前もきたのかという。これに何か返事をしながらなお行くに、以前失いたる男の子おりて、トッチャお前もきたかという。お前はここにいたのかと言いつつ近よらんとすれば、今きてはいけないという。この時門の辺にて騒しくわが名を<ruby><rb>喚</rb><rt>よ</rt></ruby>ぶ者ありて、うるさきこと限りなけれど、よんどころなければ心も重くいやいやながら引き返したりと思えば正気づきたり。親族の者寄り<ruby><rb>集</rb><rt>つど</rt></ruby>い水など打ちそそぎて<ruby><rb>喚</rb><rt>よ</rt></ruby>び<ruby><rb>生</rb><rt>い</rt></ruby>かしたるなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec100" n="100">
+        <head>九八</head>
+        <p>路の傍に山の神、田の神、<ruby><rb>塞</rb><rt>さえ</rt></ruby>の神の名を彫りたる石を立つるは常のことなり。また<placeName ref="#hayachine">早池峯山</placeName>・<placeName ref="#rokkoushi">六角牛山</placeName>の名を刻したる石は、<placeName ref="#tono-go">遠野郷</placeName>にもあれど、それよりも浜にことに多し。</p>
+      </div>
+      <div type="chapter" xml:id="sec101" n="101">
+        <head>九九</head>
+        <p><placeName ref="#tsuchibuchi">土淵村</placeName>の助役<persName ref="#kitagawa-kiyoshi">北川清</persName>という人の家は字<placeName ref="#hiishi"><ruby><rb>火石</rb><rt>ひいし</rt></ruby></placeName>にあり。代々の<ruby><rb>山臥</rb><rt>やまぶし</rt></ruby>にて祖父は<persName ref="#shofukuin">正福院</persName>といい、学者にて著作多く、村のために尽したる人なり。清の弟に<persName ref="#fukuji">福二</persName>という人は海岸の<placeName ref="#tanohama">田の浜</placeName>へ<ruby><rb>婿</rb><rt>むこ</rt></ruby>に行きたるが、先年の<ruby><rb>大海嘯</rb><rt>おおつなみ</rt></ruby>に遭いて妻と子とを失い、生き残りたる二人の子とともに<ruby><rb>元</rb><rt>もと</rt></ruby>の屋敷の地に小屋を掛けて一年ばかりありき。夏の初めの月夜に便所に起き出でしが、遠く離れたるところにありて行く道も<ruby><rb>浪</rb><rt>なみ</rt></ruby>の打つ<ruby><rb>渚</rb><rt>なぎさ</rt></ruby>なり。霧の<ruby><rb>布</rb><rt>し</rt></ruby>きたる夜なりしが、その霧の中より男女二人の者の近よるを見れば、女は<ruby><rb>正</rb><rt>まさ</rt></ruby>しく亡くなりしわが妻なり。思わずその跡をつけて、<ruby><rb>遥々</rb><rt>はるばる</rt></ruby>と<placeName ref="#funakoshi"><ruby><rb>船越</rb><rt>ふなこし</rt></ruby>村</placeName>の方へ行く崎の<ruby><rb>洞</rb><rt>ほこら</rt></ruby>あるところまで追い行き、名を呼びたるに、振り返りてにこと笑いたり。男はとみればこれも同じ里の者にて海嘯の難に死せし者なり。自分が婿に入りし以前に互いに深く心を通わせたりと聞きし男なり。今はこの人と夫婦になりてありというに、子供は<ruby><rb>可愛</rb><rt>かわい</rt></ruby>くはないのかといえば、女は少しく顔の色を変えて泣きたり。死したる人と物いうとは思われずして、悲しく情なくなりたれば<ruby><rb>足元</rb><rt>あしもと</rt></ruby>を見てありし間に、男女は再び足早にそこを立ち<ruby><rb>退</rb><rt>の</rt></ruby>きて、<placeName ref="#koura"><ruby><rb>小浦</rb><rt>おうら</rt></ruby></placeName>へ行く道の<ruby><rb>山陰</rb><rt>やまかげ</rt></ruby>を<ruby><rb>廻</rb><rt>めぐ</rt></ruby>り見えずなりたり。追いかけて見たりしがふと死したる者なりしと心づき、夜明けまで<ruby><rb>道中</rb><rt>みちなか</rt></ruby>に立ちて考え、朝になりて帰りたり。その後久しく<ruby><rb>煩</rb><rt>わずら</rt></ruby>いたりといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec102" n="102">
+        <head>一〇〇</head>
+        <p><placeName ref="#funakoshi">船越</placeName>の漁夫何某。ある日仲間の者とともに<placeName ref="#kirikiri"><ruby><rb>吉利吉里</rb><rt>きりきり</rt></ruby></placeName>より帰るとて、夜深く<placeName ref="#shijuhachizaka">四十八坂</placeName>のあたりを通りしに、小川のあるところにて一人の女に逢う。見ればわが妻なり。されどもかかる夜中にひとりこの辺に<ruby><rb>来</rb><rt>く</rt></ruby>べき道理なければ、<ruby><rb>必定</rb><rt>ひつじょう</rt></ruby><ruby><rb>化物</rb><rt>ばけもの</rt></ruby>ならんと思い定め、やにわに<ruby><rb>魚切庖丁</rb><rt>うおきりぼうちょう</rt></ruby>を持ちて後の方より差し通したれば、悲しき声を立てて死したり。しばらくの間は正体を現わさざれば<ruby><rb>流石</rb><rt>さすが</rt></ruby>に心に懸り、<ruby><rb>後</rb><rt>あと</rt></ruby>の事を<ruby><rb>連</rb><rt>つれ</rt></ruby>の者に頼み、おのれは馳せて家に帰りしに、妻は事もなく家に待ちてあり。今恐ろしき夢を見たり。あまり帰りの遅ければ夢に途中まで見に出でたるに、山路にて何とも知れぬ者に<ruby><rb>脅</rb><rt>おびや</rt></ruby>かされて、命を取らるると思いて目覚めたりという。さてはと<ruby><rb>合点</rb><rt>がてん</rt></ruby>して再び以前の場所へ引き返してみれば、山にて殺したりし女は連の者が見ておる中についに一匹の<ruby><rb>狐</rb><rt>きつね</rt></ruby>となりたりといえり。夢の野山を行くにこの獣の身を<ruby><rb>傭</rb><rt>やと</rt></ruby>うことありと見ゆ。</p>
+      </div>
+      <div type="chapter" xml:id="sec103" n="103">
+        <head>一〇一</head>
+        <p>旅人<placeName ref="#toyomane"><ruby><rb>豊間根</rb><rt>とよまね</rt></ruby>村</placeName>を過ぎ、夜<ruby><rb>更</rb><rt>ふ</rt></ruby>け疲れたれば、<ruby><rb>知音</rb><rt>ちいん</rt></ruby>の者の家に灯火の見ゆるを<ruby><rb>幸</rb><rt>さいわい</rt></ruby>に、入りて休息せんとせしに、よき時に<ruby><rb>来合</rb><rt>きあわ</rt></ruby>せたり、今夕死人あり、<ruby><rb>留守</rb><rt>るす</rt></ruby>の者なくていかにせんかと思いしところなり、しばらくの間頼むといいて主人は人を<ruby><rb>喚</rb><rt>よ</rt></ruby>びに行きたり。<ruby><rb>迷惑千万</rb><rt>めいわくせんばん</rt></ruby>なる話なれど是非もなく、<ruby><rb>囲炉裡</rb><rt>いろり</rt></ruby>の側にて<ruby><rb>煙草</rb><rt>タバコ</rt></ruby>を吸いてありしに、死人は老女にて奥の方に寝させたるが、ふと見れば<ruby><rb>床</rb><rt>とこ</rt></ruby>の上にむくむくと起き直る。<ruby><rb>胆潰</rb><rt>きもつぶ</rt></ruby>れたれど心を<ruby><rb>鎮</rb><rt>しず</rt></ruby>め静かにあたりを<ruby><rb>見廻</rb><rt>みまわ</rt></ruby>すに、流し<ruby><rb>元</rb><rt>もと</rt></ruby>の水口の穴より狐のごとき物あり、<ruby><rb>面</rb><rt>つら</rt></ruby>をさし入れて<ruby><rb>頻</rb><rt>しきり</rt></ruby>に死人の方を見つめていたり。さてこそと身を<ruby><rb>潜</rb><rt>ひそ</rt></ruby>め<ruby><rb>窃</rb><rt>ひそ</rt></ruby>かに家の外に出で、<ruby><rb>背戸</rb><rt>せと</rt></ruby>の方に廻りて見れば、正しく狐にて首を流し元の穴に入れ<ruby><rb>後足</rb><rt>あとあし</rt></ruby>を<ruby><rb>爪立</rb><rt>つまた</rt></ruby>てていたり。<ruby><rb>有合</rb><rt>ありあ</rt></ruby>わせたる棒をもてこれを打ち殺したり。</p>
+        <p>○<placeName ref="#shimohei">下閉伊郡</placeName><placeName ref="#toyomane">豊間根村</placeName>大字<placeName ref="#toyomane">豊間根</placeName>。</p>
+      </div>
+      <div type="chapter" xml:id="sec104" n="104">
+        <head>一〇二</head>
+        <p><date when="--01-15">正月十五日</date>の晩を<date when="--01-15"><ruby><rb>小正月</rb><rt>こしょうがつ</rt></ruby></date>という。<ruby><rb>宵</rb><rt>よい</rt></ruby>のほどは子供ら福の神と称して四五人群を作り、袋を持ちて人の家に行き、<ruby><rb>明</rb><rt>あけ</rt></ruby>の方から福の神が舞い込んだと<ruby><rb>唱</rb><rt>とな</rt></ruby>えて餅を<ruby><rb>貰</rb><rt>もら</rt></ruby>う習慣あり。宵を過ぐればこの晩に限り人々決して戸の外に出づることなし。<date when="--01-15">小正月</date>の夜半過ぎは山の神出でて遊ぶと<ruby><rb>言</rb><rt>い</rt></ruby>い伝えてあればなり。山口の字<placeName ref="#marukodachi"><ruby><rb>丸古立</rb><rt>まるこだち</rt></ruby></placeName>に<persName ref="#omasa">おまさ</persName>という今三十五六の女、まだ十二三の年のことなり。いかなるわけにてか唯一人にて福の神に出で、ところどころをあるきて遅くなり、<ruby><rb>淋</rb><rt>さび</rt></ruby>しき路を帰りしに、向うの方より<ruby><rb>丈</rb><rt>たけ</rt></ruby>の高き男来てすれちがいたり。顔はすてきに赤く眼はかがやけり。袋を捨てて遁げ帰り大いに煩いたりといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec105" n="105">
+        <head>一〇三</head>
+        <p><date when="--01-15">小正月</date>の夜、または<date when="--01-15">小正月</date>ならずとも冬の満月の夜は、雪女が出でて遊ぶともいう。童子をあまた引き連れてくるといえり。里の子ども冬は近辺の丘に行き、<ruby><rb>橇遊</rb><rt>そりっこあそ</rt></ruby>びをして面白さのあまり夜になることあり。<date when="--01-15">十五日</date>の夜に限り、雪女が出るから早く帰れと戒めらるるは常のことなり。されど雪女を見たりという者は少なし。</p>
+      </div>
+      <div type="chapter" xml:id="sec106" n="106">
+        <head>一〇四</head>
+        <p><date when="--01-15">小正月</date>の晩には行事<ruby><rb>甚</rb><rt>はなは</rt></ruby>だ多し。<ruby><rb>月見</rb><rt>つきみ</rt></ruby>というは六つの<ruby><rb>胡桃</rb><rt>くるみ</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>を十二に割り<ruby><rb>一時</rb><rt>いっとき</rt></ruby>に<ruby><rb>炉</rb><rt>ろ</rt></ruby>の火にくべて一時にこれを引き上げ、一列にして右より<date when="--01">正月</date><date when="--02">二月</date>と数うるに、満月の夜晴なるべき月にはいつまでも赤く、曇るべき月には<ruby><rb>直</rb><rt>すぐ</rt></ruby>に黒くなり、風ある月にはフーフーと音をたてて火が<ruby><rb>振</rb><rt>ふる</rt></ruby>うなり。何遍繰り返しても同じことなり。村中いずれの家にても同じ結果を得るは妙なり。翌日はこの事を語り合い、例えば<date when="--08">八月</date>の十五夜風とあらば、その<ruby><rb>歳</rb><rt>とし</rt></ruby>の稲の<ruby><rb>苅入</rb><rt>かりいれ</rt></ruby>を急ぐなり。</p>
+        <p>○五穀の占、月の占多少のヴァリエテをもって諸国に行なわる。<ruby><rb>陰陽道</rb><rt>おんようどう</rt></ruby>に出でしものならん。</p>
+      </div>
+      <div type="chapter" xml:id="sec107" n="107">
+        <head>一〇五</head>
+        <p>また<ruby><rb>世中見</rb><rt>よなかみ</rt></ruby>というは、同じく<date when="--01-15">小正月</date>の晩に、いろいろの米にて餅をこしらえて鏡となし、同種の米を<ruby><rb>膳</rb><rt>ぜん</rt></ruby>の上に<ruby><rb>平</rb><rt>たい</rt></ruby>らに敷き、<ruby><rb>鏡餅</rb><rt>かがみもち</rt></ruby>をその上に伏せ、<ruby><rb>鍋</rb><rt>なべ</rt></ruby>を<ruby><rb>被</rb><rt>かぶ</rt></ruby>せ置きて翌朝これを見るなり。餅につきたる<ruby><rb>米粒</rb><rt>こめつぶ</rt></ruby>の多きものその年は豊作なりとして、早中晩の種類を択び定むるなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec108" n="108">
+        <head>一〇六</head>
+        <p>海岸の<placeName ref="#yamada">山田</placeName>にては<ruby><rb>蜃気楼</rb><rt>しんきろう</rt></ruby>年々見ゆ。常に外国の景色なりという。<ruby><rb>見馴</rb><rt>みな</rt></ruby>れぬ都のさまにして、路上の車馬しげく人の往来眼ざましきばかりなり。年ごとに家の形などいささかも違うことなしといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec109" n="109">
+        <head>一〇七</head>
+        <p><placeName ref="#kamigo">上郷村</placeName>に河ぷちのうちという家あり。<placeName ref="#hayase">早瀬川</placeName>の岸にあり。この家の若き娘、ある日河原に出でて石を拾いてありしに、見馴れぬ男来たり、木の葉とか何とかを娘にくれたり。<ruby><rb>丈</rb><rt>たけ</rt></ruby>高く面<ruby><rb>朱</rb><rt>しゅ</rt></ruby>のようなる人なり。娘はこの日より<ruby><rb>占</rb><rt>うらない</rt></ruby>の術を得たり。異人は山の神にて、山の神の子になりたるなりといえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec110" n="110">
+        <head>一〇八</head>
+        <p>山の神の乗り移りたりとて占をなす人は所々にあり。<placeName ref="#tsukumoushi"><ruby><rb>附馬牛</rb><rt>つくもうし</rt></ruby>村</placeName>にもあり。本業は<ruby><rb>木挽</rb><rt>こびき</rt></ruby>なり。<placeName ref="#kashiwazaki">柏崎</placeName>の<persName ref="#magotaro">孫太郎</persName>もこれなり。以前は発狂して喪心したりしに、ある日山に入りて山の神よりその術を得たりしのちは、不思議に人の心中を読むこと驚くばかりなり。その占いの法は世間の者とは全く異なり。何の書物をも見ず、頼みにきたる人と世間話をなし、その中にふと立ちて<ruby><rb>常居</rb><rt>じょうい</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>をあちこちとあるき出すと思うほどに、その人の顔は少しも見ずして心に浮びたることをいうなり。当らずということなし。例えばお前のウチの<ruby><rb>板敷</rb><rt>いたじき</rt></ruby>を取り離し、土を掘りて見よ。古き鏡または刀の折れあるべし。それを取り出さねば近き中に死人ありとか家が焼くるとかいうなり。帰りて掘りて見るに必ずあり。かかる例は指を屈するに<ruby><rb>勝</rb><rt>た</rt></ruby>えず。</p>
+      </div>
+      <div type="chapter" xml:id="sec111" n="111">
+        <head>一〇九</head>
+        <p>盆のころには雨風祭とて<ruby><rb>藁</rb><rt>わら</rt></ruby>にて人よりも大なる<ruby><rb>人形</rb><rt>にんぎょう</rt></ruby>を作り、道の<ruby><rb>岐</rb><rt>ちまた</rt></ruby>に送り行きて立つ。紙にて顔を<ruby><rb>描</rb><rt>えが</rt></ruby>き<ruby><rb>瓜</rb><rt>うり</rt></ruby>にて陰陽の形を作り添えなどす。虫祭の藁人形にはかかることはなくその形も小さし。雨風祭の折は一部落の中にて<ruby><rb>頭屋</rb><rt>とうや</rt></ruby>を<ruby><rb>択</rb><rt>えら</rt></ruby>び定め、<ruby><rb>里人</rb><rt>さとびと</rt></ruby>集まりて酒を飲みてのち、一同<ruby><rb>笛太鼓</rb><rt>ふえたいこ</rt></ruby>にてこれを道の辻まで送り行くなり。笛の中には<ruby><rb>桐</rb><rt>きり</rt></ruby>の木にて作りたるホラなどあり。これを高く吹く。さてその折の歌は「二百十日の雨風まつるよ、どちの方さ祭る、北の方さ祭る」という。</p>
+        <p>○『東国<ruby><rb>輿地</rb><rt>よち</rt></ruby>勝覧』によれば<placeName ref="#korea">韓国</placeName>にても<ruby><rb>厲壇</rb><rt>れいだん</rt></ruby>を必ず城の北方に作ること見ゆ。ともに玄武神の信仰より来たれるなるべし。</p>
+      </div>
+      <div type="chapter" xml:id="sec112" n="112">
+        <head>一一〇</head>
+        <p><persName ref="#gongesama">ゴンゲサマ</persName>というは、<ruby><rb>神楽舞</rb><rt>かぐらまい</rt></ruby>の組ごとに一つずつ備われる<ruby><rb>木彫</rb><rt>きぼり</rt></ruby>の像にして、<ruby><rb>獅子頭</rb><rt>ししがしら</rt></ruby>とよく似て少しく<ruby><rb>異</rb><rt>こと</rt></ruby>なれり。甚だ<ruby><rb>御利生</rb><rt>ごりしょう</rt></ruby>のあるものなり。<placeName ref="#niibari"><ruby><rb>新張</rb><rt>にいばり</rt></ruby></placeName>の<placeName ref="#hachimansha">八幡社</placeName>の神楽組の<persName ref="#gongesama">ゴンゲサマ</persName>と、<placeName ref="#tsuchibuchi">土淵村</placeName>字<placeName ref="#itsukaichi"><ruby><rb>五日市</rb><rt>いつかいち</rt></ruby></placeName>の神楽組の<persName ref="#gongesama">ゴンゲサマ</persName>と、かつて途中にて争いをなせしことあり。<placeName ref="#niibari">新張</placeName>の<persName ref="#gongesama">ゴンゲサマ</persName>負けて<ruby><rb>片耳</rb><rt>かたみみ</rt></ruby>を失いたりとて今もなし。毎年村々を舞いてあるく故、これを見知らぬ者なし。<persName ref="#gongesama">ゴンゲサマ</persName>の<ruby><rb>霊験</rb><rt>れいげん</rt></ruby>はことに<ruby><rb>火伏</rb><rt>ひぶせ</rt></ruby>にあり。右の八幡の神楽組かつて<placeName ref="#tsukumoushi">附馬牛村</placeName>に行きて<ruby><rb>日暮</rb><rt>ひぐ</rt></ruby>れ宿を取り兼ねしに、ある貧しき者の家にて<ruby><rb>快</rb><rt>こころよ</rt></ruby>くこれを<ruby><rb>泊</rb><rt>と</rt></ruby>めて、五升<ruby><rb>桝</rb><rt>ます</rt></ruby>を伏せてその上に<persName ref="#gongesama">ゴンゲサマ</persName>を<ruby><rb>座</rb><rt>す</rt></ruby>え置き、人々は<ruby><rb>臥</rb><rt>ふ</rt></ruby>したりしに、夜中にがつがつと物を<ruby><rb>噛</rb><rt>か</rt></ruby>む音のするに驚きて起きてみれば、<ruby><rb>軒端</rb><rt>のきばた</rt></ruby>に火の燃えつきてありしを、桝の上なる<persName ref="#gongesama">ゴンゲサマ</persName>飛び上り飛び上りして火を<ruby><rb>喰</rb><rt>く</rt></ruby>い消してありしなりと。子どもの頭を病む者など、よく<persName ref="#gongesama">ゴンゲサマ</persName>を頼み、その病を噛みてもらうことあり。</p>
+      </div>
+      <div type="chapter" xml:id="sec113" n="113">
+        <head>一一一</head>
+        <p>山口、<placeName ref="#iide">飯豊</placeName>、<placeName ref="#tsukumoushi">附馬牛</placeName>の字<placeName ref="#arakawa-tozenji">荒川東禅寺</placeName>および<placeName ref="#hiwatari"><ruby><rb>火渡</rb><rt>ひわたり</rt></ruby></placeName>、<placeName ref="#aozasa">青笹</placeName>の字<placeName ref="#nakazawa">中沢</placeName>ならびに<placeName ref="#tsuchibuchi">土淵村</placeName>の字<placeName ref="#tsuchibuchi">土淵</placeName>に、ともに<placeName ref="#dannohana">ダンノハナ</placeName>という地名あり。その近傍にこれと相対して必ず<placeName ref="#rendaino"><ruby><rb>蓮台野</rb><rt>れんだいの</rt></ruby></placeName>という地あり。昔は六十を超えたる老人はすべてこの<placeName ref="#rendaino">蓮台野</placeName>へ追い遣るの<ruby><rb>習</rb><rt>ならい</rt></ruby>ありき。老人はいたずらに死んで<ruby><rb>了</rb><rt>しま</rt></ruby>うこともならぬ故に、日中は里へ下り農作して口を<ruby><rb>糊</rb><rt>ぬら</rt></ruby>したり。そのために今も山口<placeName ref="#tsuchibuchi">土淵</placeName>辺にては<ruby><rb>朝</rb><rt>あした</rt></ruby>に野らに出づるをハカダチといい、夕方野らより帰ることをハカアガリというといえり。</p>
+        <p>○<placeName ref="#dannohana">ダンノハナ</placeName>は壇の塙なるべし。すなわち丘の上にて塚を築きたる場所ならん。境の神を祭るための塚なりと信ず。<placeName ref="#rendaino">蓮台野</placeName>もこの類なるべきこと『石神問答』中にいえり。</p>
+      </div>
+      <div type="chapter" xml:id="sec114" n="114">
+        <head>一一二</head>
+        <p><placeName ref="#dannohana">ダンノハナ</placeName>は昔<ruby><rb>館</rb><rt>たて</rt></ruby>のありし時代に囚人を<ruby><rb>斬</rb><rt>き</rt></ruby>りし場所なるべしという。地形は山口のも<placeName ref="#tsuchibuchi">土淵</placeName><placeName ref="#iide">飯豊</placeName>のもほぼ同様にて、村境の岡の上なり。<placeName ref="#sendai">仙台</placeName>にもこの地名あり。山口の<placeName ref="#dannohana">ダンノハナ</placeName>は<ruby><rb>大洞</rb><rt>おおほら</rt></ruby>へ越ゆる丘の上にて<ruby><rb>館址</rb><rt>たてあと</rt></ruby>よりの続きなり。<placeName ref="#rendaino">蓮台野</placeName>はこれと山口の民居を隔てて相対す。<placeName ref="#rendaino">蓮台野</placeName>の四方はすべて沢なり。東はすなわち<placeName ref="#dannohana">ダンノハナ</placeName>との間の低地、南の方を<placeName ref="#hoshiya">星谷</placeName>という。此所には<ruby><rb>蝦夷屋敷</rb><rt>えぞやしき</rt></ruby>という四角に<ruby><rb>凹</rb><rt>へこ</rt></ruby>みたるところ多くあり。その<ruby><rb>跡</rb><rt>あと</rt></ruby>きわめて明白なり。あまた石器を出す。石器土器の出るところ山口に二ヶ所あり。他の一は<ruby><rb>小字</rb><rt>こあざ</rt></ruby>を<placeName ref="#horyo">ホウリョウ</placeName>という。ここの土器と<placeName ref="#rendaino">蓮台野</placeName>の土器とは様式全然<ruby><rb>殊</rb><rt>こと</rt></ruby>なり。後者のは技巧いささかもなく、<placeName ref="#horyo">ホウリョウ</placeName>のは<ruby><rb>模様</rb><rt>もよう</rt></ruby>なども<ruby><rb>巧</rb><rt>たくみ</rt></ruby>なり。<ruby><rb>埴輪</rb><rt>はにわ</rt></ruby>もここより出づ。また石斧石刀の類も出づ。<placeName ref="#rendaino">蓮台野</placeName>には<ruby><rb>蝦夷銭</rb><rt>えぞせん</rt></ruby>とて土にて銭の形をしたる径二寸ほどの物多く出づ。これには単純なる<ruby><rb>渦紋</rb><rt>うずもん</rt></ruby>などの模様あり。字<placeName ref="#horyo">ホウリョウ</placeName>には丸玉・<ruby><rb>管玉</rb><rt>くだたま</rt></ruby>も出づ。ここの石器は精巧にて石の質も一致したるに、<placeName ref="#rendaino">蓮台野</placeName>のは原料いろいろなり。<placeName ref="#horyo">ホウリョウ</placeName>の方は何の跡ということもなく、狭き<ruby><rb>一町歩</rb><rt>いっちょうぶ</rt></ruby>ほどの場所なり。<placeName ref="#hoshiya">星谷</placeName>は底の<ruby><rb>方</rb><rt>かた</rt></ruby>今は田となれり。蝦夷屋敷はこの両側に連なりてありしなりという。このあたりに掘れば<ruby><rb>祟</rb><rt>たたり</rt></ruby>ありという場所二ヶ所ほどあり。</p>
+        <p>○<ruby><rb>外</rb><rt>ほか</rt></ruby>の村々にても二所の地形および関係これに似たりという。</p>
+        <p>○<placeName ref="#hoshiya">星谷</placeName>という地名も諸国にあり星を祭りしところなり。</p>
+        <p>○<persName ref="#horyo-gongen">ホウリョウ権現</persName>は遠野をはじめ<placeName ref="#ou">奥羽</placeName>一円に祀らるる神なり。蛇の神なりという。名義を知らず。</p>
+      </div>
+      <div type="chapter" xml:id="sec115" n="115">
+        <head>一一三</head>
+        <p><placeName ref="#wano">和野</placeName>に<placeName ref="#jozuka">ジョウヅカ森</placeName>というところあり。象を埋めし場所なりといえり。此所だけには地震なしとて、近辺にては地震の折は<placeName ref="#jozuka">ジョウヅカ森</placeName>へ遁げよと昔より言い伝えたり。これは確かに人を埋めたる墓なり。塚のめぐりには堀あり。塚の上には石あり。これを掘れば<ruby><rb>祟</rb><rt>たたり</rt></ruby>ありという。</p>
+        <p>○ジョウズカは定塚、庄塚または塩塚などとかきて諸国にあまたあり。これも境の神を祀りしところにて地獄のショウツカの<ruby><rb>奪衣婆</rb><rt>だつえば</rt></ruby>の話などと関係あること『石神問答』に<ruby><rb>詳</rb><rt>つまびらか</rt></ruby>にせり。また<placeName ref="#zotsubo">象坪</placeName>などの象頭神とも関係あれば象の伝説は<ruby><rb>由</rb><rt>よし</rt></ruby>なきにあらず、塚を森ということも東国の風なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec116" n="116">
+        <head>一一四</head>
+        <p>山口の<placeName ref="#dannohana">ダンノハナ</placeName>は今は共同墓地なり。岡の頂上にうつ木を<ruby><rb>栽</rb><rt>う</rt></ruby>えめぐらしその口は東方に向かいて<ruby><rb>門口</rb><rt>もんぐち</rt></ruby>めきたるところあり。その中ほどに大なる青石あり。かつて一たびその下を掘りたる者ありしが、何ものをも発見せず。のち再びこれを試みし者は大なる<ruby><rb>瓶</rb><rt>かめ</rt></ruby>あるを見たり。村の老人たち大いに<ruby><rb>叱</rb><rt>しか</rt></ruby>りければ、またもとのままになし置きたり。<ruby><rb>館</rb><rt>たて</rt></ruby>の主の墓なるべしという。此所に近き館の名は<placeName ref="#bonshasa">ボンシャサの館</placeName>という。いくつかの山を掘り割りて水を引き、三重四重に堀を取り<ruby><rb>廻</rb><rt>めぐ</rt></ruby>らせり。<placeName ref="#terayashiki">寺屋敷</placeName>・<placeName ref="#toishimori"><ruby><rb>砥石森</rb><rt>といしもり</rt></ruby></placeName>などいう地名あり。井の跡とて<ruby><rb>石垣</rb><rt>いしがき</rt></ruby>残れり。<persName ref="#magozaemon">山口孫左衛門</persName>の祖先ここに住めりという。『<ruby><rb>遠野古事記</rb><rt>とおのこじき</rt></ruby>』に<ruby><rb>詳</rb><rt>つまびら</rt></ruby>かなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec117" n="117">
+        <head>一一五</head>
+        <p><ruby><rb>御伽話</rb><rt>おとぎばなし</rt></ruby>のことを<ruby><rb>昔々</rb><rt>むかしむかし</rt></ruby>という。ヤマハハの話最も多くあり。ヤマハハは<ruby><rb>山姥</rb><rt>やまうば</rt></ruby>のことなるべし。その一つ二つを次に記すべし。</p>
+      </div>
+      <div type="chapter" xml:id="sec118" n="118">
+        <head>一一六</head>
+        <p>昔々あるところにトトとガガとあり。娘を一人持てり。娘を置きて町へ行くとて、誰がきても戸を明けるなと戒しめ、<ruby><rb>鍵</rb><rt>かぎ</rt></ruby>を掛けて出でたり。娘は恐ろしければ一人炉にあたりすくみていたりしに、<ruby><rb>真昼間</rb><rt>まひるま</rt></ruby>に戸を叩きてここを開けと呼ぶ者あり。開かずば<ruby><rb>蹴破</rb><rt>けやぶ</rt></ruby>るぞと<ruby><rb>嚇</rb><rt>おど</rt></ruby>す<ruby><rb>故</rb><rt>ゆえ</rt></ruby>に、是非なく戸を明けたれば入りきたるはヤマハハなり。炉の<ruby><rb>横座</rb><rt>よこざ</rt></ruby>に<ruby><rb>蹈</rb><rt>ふ</rt></ruby>みはたかりて火にあたり、飯をたきて食わせよという。その言葉に従い<ruby><rb>膳</rb><rt>ぜん</rt></ruby>を支度してヤマハハに食わせ、その間に家を遁げ出したるに、ヤマハハは飯を食い終りて娘を追い来たり、おいおいにその<ruby><rb>間</rb><rt>あいだ</rt></ruby>近く今にも<ruby><rb>背</rb><rt>せな</rt></ruby>に手の<ruby><rb>触</rb><rt>ふ</rt></ruby>るるばかりになりし時、山の<ruby><rb>蔭</rb><rt>かげ</rt></ruby>にて<ruby><rb>柴</rb><rt>しば</rt></ruby>を苅る翁に逢う。おれはヤマハハにぼっかけられてあるなり、<ruby><rb>隠</rb><rt>かく</rt></ruby>してくれよと頼み、苅り置きたる柴の中に隠れたり。ヤマハハ尋ね来たりて、どこに隠れたかと柴の<ruby><rb>束</rb><rt>たば</rt></ruby>をのけんとして柴を<ruby><rb>抱</rb><rt>かか</rt></ruby>えたるまま山より<ruby><rb>滑</rb><rt>すべ</rt></ruby>り落ちたり。その<ruby><rb>隙</rb><rt>ひま</rt></ruby>にここを<ruby><rb>遁</rb><rt>のが</rt></ruby>れてまた<ruby><rb>萱</rb><rt>かや</rt></ruby>を苅る翁に逢う。おれはヤマハハにぼっかけられてあるなり、隠してくれよと頼み、苅り置きたる萱の中に隠れたり。ヤマハハはまた尋ね来たりて、どこに隠れたかと萱の束をのけんとして、萱を抱えたるまま山より滑り落ちたり。その隙にまたここを遁れ出でて大きなる沼の岸に出でたり。これよりは行くべき<ruby><rb>方</rb><rt>かた</rt></ruby>もなければ、沼の岸の大木の梢に<ruby><rb>昇</rb><rt>のぼ</rt></ruby>りいたり。ヤマハハはどけえ行ったとて<ruby><rb>遁</rb><rt>の</rt></ruby>がすものかとて、沼の水に娘の影の<ruby><rb>映</rb><rt>うつ</rt></ruby>れるを見てすぐに沼の中に飛び入りたり。この間に再び此所を走り出で、一つの<ruby><rb>笹小屋</rb><rt>ささごや</rt></ruby>のあるを見つけ、中に入りて見れば若き女いたり。此にも同じことを告げて石の<ruby><rb>唐櫃</rb><rt>からうど</rt></ruby>のありし中へ隠してもらいたるところへ、ヤマハハまた飛び来たり娘のありかを問えども隠して知らずと答えたれば、いんね来ぬはずはない、人くさい香がするものという。それは今<ruby><rb>雀</rb><rt>すずめ</rt></ruby>を<ruby><rb>炙</rb><rt>あぶ</rt></ruby>って食った<ruby><rb>故</rb><rt>ゆえ</rt></ruby>なるべしと言えば、ヤマハハも<ruby><rb>納得</rb><rt>なっとく</rt></ruby>してそんなら少し<ruby><rb>寝</rb><rt>ね</rt></ruby>ん、石のからうどの中にしようか、木のからうどの中がよいか、石はつめたし木のからうどの中にと言いて、木の唐櫃の中に入りて寝たり。家の女はこれに<ruby><rb>鍵</rb><rt>かぎ</rt></ruby>を<ruby><rb>下</rb><rt>おろ</rt></ruby>し、娘を石のからうどより連れ出し、おれもヤマハハに連れて来られたる者なればともどもにこれを殺して里へ帰らんとて、<ruby><rb>錐</rb><rt>きり</rt></ruby>を<ruby><rb>紅</rb><rt>あか</rt></ruby>く焼きて木の唐櫃の中に差し通したるに、ヤマハハはかくとも知らず、ただ<ruby><rb>二十日鼠</rb><rt>はつかねずみ</rt></ruby>がきたと言えり。それより湯を<ruby><rb>煮立</rb><rt>にた</rt></ruby>てて<ruby><rb>焼錐</rb><rt>やききり</rt></ruby>の穴より<ruby><rb>注</rb><rt>そそ</rt></ruby>ぎ込みて、ついにそのヤマハハを殺し二人ともに親々の家に帰りたり。昔々の話の終りはいずれもコレデドンドハレという語をもって結ぶなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec119" n="119">
+        <head>一一七</head>
+        <p>昔々これもあるところにトトとガガと、娘の嫁に行く支度を買いに町へ出で行くとて戸を<ruby><rb>鎖</rb><rt>とざ</rt></ruby>し、誰がきても明けるなよ、はアと答えたれば出でたり。昼のころヤマハハ来たりて娘を取りて食い、娘の皮を<ruby><rb>被</rb><rt>かぶ</rt></ruby>り娘になりておる。夕方二人の親帰りて、<persName ref="#orikohimeko">おりこひめこ</persName>居たかと門の口より呼べば、あ、いたます、早かったなしと答え、<ruby><rb>二親</rb><rt>ふたおや</rt></ruby>は買い来たりしいろいろの支度の物を見せて娘の<ruby><rb>悦</rb><rt>よろこ</rt></ruby>ぶ顔を見たり。次の日<ruby><rb>夜</rb><rt>よ</rt></ruby>の明けたる時、家の鶏<ruby><rb>羽</rb><rt>は</rt></ruby>ばたきして、<ruby><rb>糠屋</rb><rt>ぬかや</rt></ruby>の<ruby><rb>隅</rb><rt>すみ</rt></ruby>ッ<ruby><rb>子</rb><rt>こ</rt></ruby>見ろじゃ、けけろと<ruby><rb>啼</rb><rt>な</rt></ruby>く。はて<ruby><rb>常</rb><rt>つね</rt></ruby>に変りたる鶏の啼きようかなと<ruby><rb>二親</rb><rt>ふたおや</rt></ruby>は思いたり。それより花嫁を送り出すとてヤマハハの<persName ref="#orikohimeko">おりこひめこ</persName>を馬に載せ、今や引き出さんとするときまた鶏啼く。その声は、<persName ref="#orikohimeko">おりこひめこ</persName>を載せなえでヤマハハのせた、けけろと<ruby><rb>聞</rb><rt>きこ</rt></ruby>ゆ。これを繰り返して歌いしかば、二親も始めて心づき、ヤマハハを馬より引き<ruby><rb>下</rb><rt>おろ</rt></ruby>して殺したり。それより糠屋の隅を見に行きしに娘の骨あまた<ruby><rb>有</rb><rt>あ</rt></ruby>りたり。</p>
+        <p>○糠屋は物おきなり。</p>
+      </div>
+      <div type="chapter" xml:id="sec120" n="120">
+        <head>一一八</head>
+        <p><ruby><rb><persName ref="#benizara">紅皿</persName><persName ref="#kakezara">欠皿</persName></rb><rt>べにざらかけざら</rt></ruby>の話も<placeName ref="#tono-go">遠野郷</placeName>に<ruby><rb>行</rb><rt>おこ</rt></ruby>なわる。ただ<persName ref="#kakezara">欠皿</persName>の方はその名を<persName ref="#kakezara">ヌカボ</persName>という。<persName ref="#kakezara">ヌカボ</persName>は<ruby><rb>空穂</rb><rt>うつぼ</rt></ruby>のことなり。<ruby><rb>継母</rb><rt>ままはは</rt></ruby>に<ruby><rb>悪</rb><rt>にく</rt></ruby>まれたれど神の<ruby><rb>恵</rb><rt>めぐみ</rt></ruby>ありて、ついに長者の妻となるという話なり。エピソードにはいろいろの美しき<ruby><rb>絵様</rb><rt>えよう</rt></ruby>あり。<ruby><rb>折</rb><rt>おり</rt></ruby>あらば詳しく書き記すべし。</p>
+      </div>
+      <div type="chapter" xml:id="sec121" n="121">
+        <head>一一九</head>
+        <p><placeName ref="#tono-go">遠野郷</placeName>の<ruby><rb>獅子踊</rb><rt>ししおどり</rt></ruby>に古くより用いたる歌の曲あり。村により人によりて少しずつの相異あれど、自分の聞きたるは次のごとし。百年あまり以前の筆写なり。</p>
+        <p>○獅子踊はさまでこの地方に古きものにあらず。中代これを輸入せしものなることを人よく知れり。</p>
+      </div>
+      <div type="chapter" xml:id="sec122" n="122">
+        <head>橋ほめ</head>
+        <p>一　まゐり来て<ruby><rb>此</rb><rt>この</rt></ruby>橋を<ruby><rb>見申</rb><rt>みもう</rt></ruby>せや、いかなもをざは<ruby><rb>蹈</rb><rt>ふ</rt></ruby>みそめたやら、わだるがくかいざるもの</p>
+        <p>一　<ruby><rb>此御馬場</rb><rt>このおんばば</rt></ruby>を見申せや、<ruby><rb>杉原七里大門</rb><rt>すぎはらななりおおもん</rt></ruby>まで</p>
+      </div>
+      <div type="chapter" xml:id="sec123" n="123">
+        <head>門ほめ</head>
+        <p>一　まゐり来て<ruby><rb>此</rb><rt>この</rt></ruby>もんを見申せや、ひの木さわらで<ruby><rb>門立</rb><rt>かどた</rt></ruby>てゝ、<ruby><rb>是</rb><rt>これ</rt></ruby>ぞ<ruby><rb>目出</rb><rt>めで</rt></ruby>たい白かねの門</p>
+        <p>一　<ruby><rb>門</rb><rt>もん</rt></ruby>の戸びらおすひらき見申せや、あらの御せだい</p>
+        <p>○</p>
+        <p>一　まゐり来てこの御本堂を見申せや、いかな<ruby><rb>大工</rb><rt>だいく</rt></ruby>は建てたやら</p>
+        <p>一　建てた<ruby><rb>御人</rb><rt>おひと</rt></ruby>は御手とから、むかしひたのたくみの立てた寺<ruby><rb>也</rb><rt>なり</rt></ruby></p>
+      </div>
+      <div type="chapter" xml:id="sec124" n="124">
+        <head>小島ぶし</head>
+        <p>一　小島ではひの木さわらで<ruby><rb>門立</rb><rt>かどた</rt></ruby>てゝ、是ぞ目出たい<ruby><rb>白金</rb><rt>しろかね</rt></ruby>の門</p>
+        <p>一　白金の門戸びらおすひらき見申せや、あらの<ruby><rb>御</rb><rt>お</rt></ruby>せだい</p>
+        <p>一　八つ<ruby><rb>棟</rb><rt>むね</rt></ruby>ぢくりにひわだぶきの、<ruby><rb>上</rb><rt>かみ</rt></ruby>におひたるから松</p>
+        <p>一　から松のみぎり左に<ruby><rb>涌</rb><rt>わ</rt></ruby>くいぢみ、汲めども<ruby><rb>呑</rb><rt>の</rt></ruby>めどもつきひざるもの</p>
+        <p>一　あさ日さすよう日かゞやく<ruby><rb>大寺</rb><rt>おおてら</rt></ruby>也、さくら色のちごは百人</p>
+        <p>一　天からおづるちよ<ruby><rb>硯水</rb><rt>すずりみず</rt></ruby>、まつて立たれる</p>
+      </div>
+      <div type="chapter" xml:id="sec125" n="125">
+        <head>馬屋ほめ</head>
+        <p>一　まゐり来てこの<ruby><rb>御台所</rb><rt>みだいどころ</rt></ruby>見申せや、め<ruby><rb>釜</rb><rt>がま</rt></ruby>を釜に釜は十六</p>
+        <p>一　十六の釜で<ruby><rb>御代</rb><rt>ごよ</rt></ruby>たく時は、四十八の馬で朝草<ruby><rb>苅</rb><rt>か</rt></ruby>る</p>
+        <p>一　<ruby><rb>其</rb><rt>その</rt></ruby>馬で朝草にききやう<ruby><rb>小萱</rb><rt>こがや</rt></ruby>を苅りまぜて、花でかゞやく馬屋なり</p>
+        <p>一　かゞやく中のかげ<ruby><rb>駒</rb><rt>こま</rt></ruby>は、せたいあがれを<ruby><rb>足</rb><rt>あ</rt></ruby>がきする</p>
+        <p>○</p>
+        <p>一　此庭に歌のぞうじはありと聞く、あしびながらも心はづかし</p>
+        <p>一　われ／＼はきによならひしけふあすぶ、そつ事ごめんなり</p>
+        <p>一　しやうぢ申せや<ruby><rb>限</rb><rt>かぎり</rt></ruby>なし、一礼申して立てや友だつ</p>
+      </div>
+      <div type="chapter" xml:id="sec126" n="126">
+        <head>桝形ほめ</head>
+        <p>一　まゐり来てこの<ruby><rb>桝</rb><rt>ます</rt></ruby>を見申せや、四方四角桝形の庭也</p>
+        <p>一　まゐり来て此<ruby><rb>宿</rb><rt>やど</rt></ruby>を見申せや、人のなさげの宿と<ruby><rb>申</rb><rt>もうす</rt></ruby></p>
+      </div>
+      <div type="chapter" xml:id="sec127" n="127">
+        <head>町ほめ</head>
+        <p>一　<ruby><rb>参</rb><rt>まい</rt></ruby>り来て此お町を見申せや、<ruby><rb>竪町</rb><rt>たてまち</rt></ruby>十五里横七里、△△出羽にまよおな友たつ</p>
+        <p>○出羽の字もじつは不明なり。</p>
+      </div>
+      <div type="chapter" xml:id="sec128" n="128">
+        <head>けんだんほめ</head>
+        <p>一　まゐり来てこのけんだん<ruby><rb>様</rb><rt>さま</rt></ruby>を見申せや、<ruby><rb>御町間中</rb><rt>おんまちまなか</rt></ruby>にはたを<ruby><rb>立前</rb><rt>たてまえ</rt></ruby></p>
+        <p>一　まいは<ruby><rb>立町油町</rb><rt>たてまちあぶらまち</rt></ruby></p>
+        <p>一　けんだん殿は二かい座敷に昼寝すて、<ruby><rb>銭</rb><rt>ぜに</rt></ruby>を枕に金の<ruby><rb>手遊</rb><rt>てあそび</rt></ruby></p>
+        <p>一　参り来てこの御<ruby><rb>札</rb><rt>ふだ</rt></ruby>見申せば、おすがいろぢきあるまじき札</p>
+        <p>一　高き<ruby><rb>処</rb><rt>ところ</rt></ruby>は<ruby><rb>城</rb><rt>しろ</rt></ruby>と申し、ひくき処は<ruby><rb>城下</rb><rt>しょうか</rt></ruby>と申す也</p>
+      </div>
+      <div type="chapter" xml:id="sec129" n="129">
+        <head>橋ほめ</head>
+        <p>一　まゐり来てこの橋を見申せば、こ<ruby><rb>金</rb><rt>がね</rt></ruby>の<ruby><rb>辻</rb><rt>つじ</rt></ruby>に白金のはし</p>
+      </div>
+      <div type="chapter" xml:id="sec130" n="130">
+        <head>上ほめ</head>
+        <p>一　まゐり来てこの<ruby><rb>御堂</rb><rt>おどう</rt></ruby>見申せや、四方四面くさび一本</p>
+        <p>一　<ruby><rb>扇</rb><rt>おうぎ</rt></ruby>とりすゞ取り、<ruby><rb>上</rb><rt>かみ</rt></ruby>さ参らばりそうある物</p>
+        <p>○すゞは<ruby><rb>数珠</rb><rt>じゅず</rt></ruby>、りそうは利生か。</p>
+      </div>
+      <div type="chapter" xml:id="sec131" n="131">
+        <head>家ほめ</head>
+        <p>一　こりばすらに<ruby><rb>小金</rb><rt>こがね</rt></ruby>のたる木に、水のせ<ruby><rb>懸</rb><rt>がく</rt></ruby>るぐしになみたち</p>
+        <p>○こりばすら文字不分明。</p>
+      </div>
+      <div type="chapter" xml:id="sec132" n="132">
+        <head>浪合</head>
+        <p>一　此庭に歌の<ruby><rb>上</rb><rt>じょう</rt></ruby>ずはありと聞く、歌へながらも心はづかし</p>
+        <p>一　おんげんべりこおらいべり、山と花ござ<ruby><rb>是</rb><rt>こ</rt></ruby>の御庭へさらゝすかれ</p>
+        <p>○雲繝縁、高麗縁なり。</p>
+        <p>一　まぎゑの台に玉のさかすきよりすゑて、是の御庭へ直し置く</p>
+        <p>一　十七はちやうすひやけ<ruby><rb>御手</rb><rt>おて</rt></ruby>にもぢをすやく<ruby><rb>廻</rb><rt>まわし</rt></ruby>や御庭かゝやく</p>
+        <p>一　この<ruby><rb>御酒</rb><rt>ごしゅ</rt></ruby>一つ<ruby><rb>引受</rb><rt>ひきうけ</rt></ruby>たもるなら、命長くじめうさかよる</p>
+        <p>一　さかなには<ruby><rb>鯛</rb><rt>たい</rt></ruby>もすゞきもござれ<ruby><rb>共</rb><rt>ども</rt></ruby>、おどにきこいしからのかるうめ</p>
+        <p>一　<ruby><rb>正</rb><rt>しよう</rt></ruby>ぢ申や限なし、一礼申て立や友たつ、<placeName ref="#kyoto"><ruby><rb>京</rb><rt>みやこ</rt></ruby></placeName></p>
+      </div>
+      <div type="chapter" xml:id="sec133" n="133">
+        <head>柱懸り</head>
+        <p>一　仲だぢ入れよや仲入れろ、仲たづなけれや庭はすんげない〻</p>
+        <p>一　すかの子は生れておりれや山めぐる、我等も<ruby><rb>廻</rb><rt>まわ</rt></ruby>る庭めぐる〻</p>
+        <p>○すかの子は鹿の子なり。遠野の獅子踊の面は鹿のようなり。</p>
+        <p>一　これの御庭におい柱の立つときは、ちのみがき若くなるもの〻</p>
+        <p>○ちのみがきは鹿の<ruby><rb>角磨</rb><rt>つのみが</rt></ruby>きなるべし。</p>
+        <p>一　<placeName ref="#matsushima">松島</placeName>の松をそだてゝ見どすれば、松にからするちたのえせもの〻</p>
+        <p>○ちたは<ruby><rb>蔦</rb><rt>つた</rt></ruby>。</p>
+        <p>一　<placeName ref="#matsushima">松島</placeName>の松にからまるちたの葉も、えんが<ruby><rb>無</rb><rt>なけ</rt></ruby>れやぶろりふぐれる〻</p>
+        <p>一　<placeName ref="#kyoto">京</placeName>で九貫のから絵のびよぼ、三よへにさらりたてまはす</p>
+        <p>○びよぼは<ruby><rb>屏風</rb><rt>びょうぶ</rt></ruby>なり。三よへは三四重か、この歌最もおもしろし。</p>
+      </div>
+      <div type="chapter" xml:id="sec134" n="134">
+        <head>めず〻ぐり</head>
+        <p>一　仲たぢ入れろや仲入れろ、仲立なけれや庭すんげなえ〻</p>
+        <p>○めず〻ぐりは鹿の<ruby><rb>妻択</rb><rt>つまえら</rt></ruby>びなるべし。</p>
+        <p>一　鹿の子は生れおりれや山廻る、我らもめぐる庭を廻るな〻</p>
+        <p>一　<ruby><rb>女鹿</rb><rt>めじか</rt></ruby>たづねていかんとして<placeName ref="#hakusan"><ruby><rb>白山</rb><rt>はくさん</rt></ruby></placeName>の御山かすみかゝる〻</p>
+        <p>○して、字は<ruby><rb>〆</rb><rt>しめ</rt></ruby>てとあり。不明</p>
+        <p>一　うるすやな風はかすみを吹き払て、今こそ女鹿あけてたちねる〻</p>
+        <p>○うるすやなは<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しやななり。</p>
+        <p>一　何と女鹿はかくれてもひと村すゝきあけてたつねる〻</p>
+        <p>一　<ruby><rb>笹</rb><rt>ささ</rt></ruby>のこのはの<ruby><rb>女鹿子</rb><rt>めじし</rt></ruby>は、何とかくてもおひき出さる</p>
+        <p>一　女鹿大鹿ふりを見ろ、鹿の心みやこなるもの〻</p>
+        <p>一　奥のみ山の大鹿はことすはじめておどりでき<ruby><rb>候</rb><rt>そろそろ</rt></ruby>〻</p>
+        <p>一　女鹿とらてあうがれて心ぢくすくをろ鹿かな〻</p>
+        <p>一　<placeName ref="#matsushima">松島</placeName>の松をそだてゝ見とすれば松にからまるちたのえせもの〻</p>
+        <p>一　<placeName ref="#matsushima">松島</placeName>の松にからまるちたの葉も、えんがなけれやぞろりふぐれる〻</p>
+        <p>一　沖のと<ruby><rb>中</rb><rt>ちゅう</rt></ruby>の浜す鳥、ゆらりこがれるそろりたつ物〻</p>
+      </div>
+      <div type="chapter" xml:id="sec135" n="135">
+        <head>なげくさ</head>
+        <p>一　なげくさを<ruby><rb>如何</rb><rt>いかな</rt></ruby><ruby><rb>御人</rb><rt>おひと</rt></ruby>は<ruby><rb>御出</rb><rt>おいで</rt></ruby>あつた、出た御人は心ありがたい</p>
+        <p>一　この<ruby><rb>代</rb><rt>よ</rt></ruby>を<ruby><rb>如何</rb><rt>いか</rt></ruby>な大工は御<ruby><rb>指</rb><rt>さ</rt></ruby>しあた、四つ<ruby><rb>角</rb><rt>かど</rt></ruby>て宝遊ばし〻</p>
+        <p>一　この御酒を如何な御酒だと<ruby><rb>思</rb><rt>おぼ</rt></ruby>し<ruby><rb>召</rb><rt>め</rt></ruby>す、おどに聞いしが〻菊の酒〻</p>
+        <p>一　<ruby><rb>此銭</rb><rt>このぜに</rt></ruby>を如何な銭たと思し召す、<placeName ref="#ise">伊勢</placeName>お八まち銭<ruby><rb><placeName ref="#kumano">熊野</placeName>参</rb><rt>くまのまいり</rt></ruby>の<ruby><rb>遣</rb><rt>つか</rt></ruby>ひあまりか〻</p>
+        <p>一　此紙を如何な紙と思し召す、はりまだんぜかかしま紙か、おりめにそたひ遊はし</p>
+        <p>○<ruby><rb>播磨檀紙</rb><rt>はりまだんし</rt></ruby>にや。</p>
+        <p>一　あふぎのお所いぢくなり、あふぎの御所三内の宮、内てすめるはかなめなり〻、おりめにそたかさなる</p>
+        <p>○いぢくなりはいずこなるなり。三内の字不明。<ruby><rb>仮</rb><rt>かり</rt></ruby>にかくよめり。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

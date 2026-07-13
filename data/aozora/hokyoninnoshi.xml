@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>奉教人の死</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>奉教人の死</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「現代日本文学大系　43　芥川龍之介集」筑摩書房。1968（昭和43）年8月25日初版第1刷発行。入力：j.utiyama。校正：八木正三。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card49.html">https://www.aozora.gr.jp/cards/000879/card49.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="lorenzo">
+        <persName>ろおれんぞ</persName>
+        <note>主人公。長崎の「さんた・るちや」に養われた少年(ろおれんぞ=Lourenço)。傘張の娘の子の父と疑われて破門され、大火の中で幼子を救って死ぬ。最期に女であったことが明かされる</note>
+      </person>
+      <person xml:id="simeon">
+        <persName>しめおん</persName>
+        <note>「いるまん」(法兄弟)の一人(しめおん=Simeão)。元は武家に仕えた剛力の大男で、ろおれんぞを弟のように愛したが、破門の際に殴りつける。大火ではろおれんぞを火中から救い出す</note>
+      </person>
+      <person xml:id="deus">
+        <persName>でうす</persName>
+        <note>デウス(Deus)。天主・キリスト教の神。ろおれんぞが「父の名」と称する語でもある</note>
+      </person>
+      <person xml:id="jesus">
+        <persName>ぜす・きりしと</persName>
+        <note>イエス・キリスト(Jesu Christo)。「御主」として作中で繰り返し呼ばれる</note>
+      </person>
+      <person xml:id="maria">
+        <persName>びるぜん・まりや</persName>
+        <note>聖母マリア(Virgem Maria)。「びるぜん・まりやの御子」としてイエスの母に言及される</note>
+      </person>
+      <person xml:id="diabo">
+        <persName>ぢやぼ</persName>
+        <note>ヂヤボ(diabo=悪魔)。キリスト教的世界観における悪魔そのものへの言及(「あの『ぢやぼ』をも挫がうず大男」「『ぢやぼ』の爪にかかつて」)</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+        <note>長崎(現在の長崎市)・概値。物語の舞台。本文には「長崎」が計7回現れるが、末尾の附記に地誌書『長崎港草』の書名が含まれ、表層形「長崎」でマッチさせると書名内が誤タグになるため、冒頭の「日本長崎」のみを表層形として採用している(パイプラインは出現位置を指定できない)</note>
+      </place>
+      <place xml:id="santa-lucia">
+        <placeName>さんた・るちや</placeName>
+        <note>長崎にあったとされるキリシタン寺院(えけれしや)「サンタ・ルチア」。作中の中心舞台だが、史実の教会への比定が確実でないため座標を付けない</note>
+      </place>
+      <place xml:id="paraiso">
+        <placeName>はらいそ</placeName>
+        <note>パライソ(paraíso=天国)。キリスト教的世界観上の場所のため座標なし</note>
+      </place>
+      <place xml:id="inferno">
+        <placeName>いんへるの</placeName>
+        <note>インヘルノ(inferno=地獄)。キリスト教的世界観上の場所のため座標なし</note>
+      </place>
+      <place xml:id="lebanon">
+        <placeName>ればのん</placeName>
+        <location><geo>34.3 36.05</geo></location>
+        <note>レバノン山地(現在のレバノン共和国)・概値。旧約聖書に由来する「『ればのん』山の檜」の比喩として言及される</note>
+      </place>
+      <place xml:id="western-europe">
+        <placeName>西欧</placeName>
+        <location><geo>48.0 4.0</geo></location>
+        <note>西ヨーロッパ。地域名・概値(広域のため代表点)。附記で『黄金伝説』(LEGENDA AUREA)の本場として言及される</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <p>たとひ三百歳の<ruby><rb>齢</rb><rt>よはひ</rt></ruby>を保ち、楽しみ身に余ると云ふとも、未来永々の果しなき楽しみに比ぶれば、<ruby><rb>夢幻</rb><rt>ゆめまぼろし</rt></ruby>の如し。</p>
+        <p>―<date when="1596">慶長</date>訳 Guia do Pecador―</p>
+        <p>善の道に立ち入りたらん人は、<ruby><rb>御教</rb><rt>みをしへ</rt></ruby>にこもる不可思議の甘味を覚ゆべし。</p>
+        <p>―<date when="1596">慶長</date>訳 Imitatione Christi―</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>一</head>
+        <p><ruby><rb>去</rb><rt>さ</rt></ruby>んぬる頃、<placeName ref="#nagasaki">日本長崎</placeName>の「<placeName ref="#santa-lucia">さんた・るちや</placeName>」と申す「えけれしや」（寺院）に、「<persName ref="#lorenzo">ろおれんぞ</persName>」と申すこの国の少年がござつた。これは或年御降誕の祭の夜、その「えけれしや」の戸口に、餓ゑ疲れてうち伏して居つたを、参詣の<ruby><rb>奉教人衆</rb><rt>ほうけうにんしゆう</rt></ruby>が介抱し、それより<ruby><rb>伴天連</rb><rt>ばてれん</rt></ruby>の憐みにて、寺中に養はれる事となつたげでござるが、何故かその身の<ruby><rb>素性</rb><rt>すじやう</rt></ruby>を問へば、<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>は「<placeName ref="#paraiso">はらいそ</placeName>」（天国）父の名は「<persName ref="#deus">でうす</persName>」（天主）などと、何時も事もなげな笑に紛らいて、とんとまことは明した事もござない。なれど親の代から「ぜんちよ」（異教徒）の<ruby><rb>輩</rb><rt>ともがら</rt></ruby>であらなんだ事だけは、手くびにかけた<ruby><rb>青玉</rb><rt>あをだま</rt></ruby>の「こんたつ」（念珠）を見ても、知れたと申す。されば伴天連はじめ、多くの「いるまん」衆（法兄弟）も、よも怪しいものではござるまいとおぼされて、ねんごろに扶持して置かれたが、その信心の堅固なは、幼いにも似ず「すぺりおれす」（長老衆）が舌を捲くばかりであつたれば、一同も「<persName ref="#lorenzo">ろおれんぞ</persName>」は天童の生れがはりであらうずなど申し、いづくの生れ、たれの子とも知れぬものを、<ruby><rb>無下</rb><rt>むげ</rt></ruby>にめでいつくしんで居つたげでござる。</p>
+        <p>して又この「<persName ref="#lorenzo">ろおれんぞ</persName>」は、顔かたちが玉のやうに清らかであつたに、声ざまも女のやうに優しかつたれば、<ruby><rb>一</rb><rt>ひと</rt></ruby>しほ人々のあはれみを<ruby><rb>惹</rb><rt>ひ</rt></ruby>いたのでござらう。中でもこの国の「いるまん」に「<persName ref="#simeon">しめおん</persName>」と申したは、「<persName ref="#lorenzo">ろおれんぞ</persName>」を<ruby><rb>弟</rb><rt>おとと</rt></ruby>のやうにもてなし、「えけれしや」の出入りにも、<ruby><rb>必</rb><rt>かならず</rt></ruby>仲よう手を組み合せて居つた。この「<persName ref="#simeon">しめおん</persName>」は、元さる大名に仕へた、槍一すぢの家がらなものぢや。されば身のたけも抜群なに、<ruby><rb>性得</rb><rt>しやうとく</rt></ruby>の剛力であつたに由つて、伴天連が「ぜんちよ」ばらの石瓦にうたるるを、防いで進ぜた事も、一度二度の沙汰ではごさない。それが「<persName ref="#lorenzo">ろおれんぞ</persName>」と<ruby><rb>睦</rb><rt>むつま</rt></ruby>じうするさまは、とんと鳩になづむ荒鷲のやうであつたとも申さうか。或は「<placeName ref="#lebanon">ればのん</placeName>」山の<ruby><rb>檜</rb><rt>ひのき</rt></ruby>に、<ruby><rb>葡萄</rb><rt>えび</rt></ruby>かづらが<ruby><rb>纏</rb><rt>まと</rt></ruby>ひついて、花咲いたやうであつたとも申さうず。</p>
+        <p>さる程に三年あまりの年月は、流るるやうにすぎたに由つて、「<persName ref="#lorenzo">ろおれんぞ</persName>」はやがて元服もすべき時節となつた。したがその頃怪しげな噂が伝はつたと申すは、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」から遠からぬ町方の傘張の娘が、「<persName ref="#lorenzo">ろおれんぞ</persName>」と親しうすると云ふ事ぢや。この傘張の<ruby><rb>翁</rb><rt>おきな</rt></ruby>も天主の御教を奉ずる人故、娘ともども「えけれしや」へは参る<ruby><rb>慣</rb><rt>ならはし</rt></ruby>であつたに、御祈の暇にも、娘は香炉をさげた「<persName ref="#lorenzo">ろおれんぞ</persName>」の姿から、眼を離したと申す事がござない。まして「えけれしや」への出入りには、<ruby><rb>必</rb><rt>かならず</rt></ruby>髪かたちを美しうして、「<persName ref="#lorenzo">ろおれんぞ</persName>」のゐる方へ眼づかひをするが<ruby><rb>定</rb><rt>ぢやう</rt></ruby>であつた。さればおのづと奉教人衆の人目にも止り、娘が行きずりに「<persName ref="#lorenzo">ろおれんぞ</persName>」の足を踏んだと云ひ出すものもあれば、二人が艶書をとりかはすをしかと見とどけたと申すものも、出て来たげでござる。</p>
+        <p>由つて伴天連にも、すて置かれず<ruby><rb>思</rb><rt>おぼ</rt></ruby>されたのでござらう。或日「<persName ref="#lorenzo">ろおれんぞ</persName>」を召されて、白ひげを噛みながら、「その方、傘張の娘と兎角の噂ある由を聞いたが、よもやまことではあるまい。どうぢや」ともの優しう尋ねられた。したが「<persName ref="#lorenzo">ろおれんぞ</persName>」は、<ruby><rb>唯</rb><rt>ただ</rt></ruby>憂はしげに頭を振つて、「そのやうな事は一向に存じよう筈もござらぬ」と、涙声に繰返すばかり故、伴天達もさすがに<ruby><rb>我</rb><rt>が</rt></ruby>を折られて、年配と云ひ、日頃の信心と云ひ、かうまで申すものに偽はあるまいと思されたげでござる。</p>
+        <p>さて一応伴天連の<ruby><rb>疑</rb><rt>うたがひ</rt></ruby>は晴れてぢやが、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」へ参る人々の間では、容易にとかうの沙汰が絶えさうもござない。されば兄弟同様にして居つた「<persName ref="#simeon">しめおん</persName>」の気がかりは、又人一倍ぢや。始はかやうな<ruby><rb>淫</rb><rt>みだら</rt></ruby>な事を、ものものしう詮議立てするが、おのれにも恥しうて、うちつけに尋ねようは元より、「<persName ref="#lorenzo">ろおれんぞ</persName>」の顔さへまさかとは見られぬ程であつたが、或時「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の後の庭で、「<persName ref="#lorenzo">ろおれんぞ</persName>」へ宛てた娘の艶書を拾うたに由つて、<ruby><rb>人気</rb><rt>ひとけ</rt></ruby>ない部屋にゐたを<ruby><rb>幸</rb><rt>さいはひ</rt></ruby>、「<persName ref="#lorenzo">ろおれんぞ</persName>」の前にその文をつきつけて、<ruby><rb>嚇</rb><rt>おど</rt></ruby>しつ<ruby><rb>賺</rb><rt>すか</rt></ruby>しつ、さまざまに問ひただいた。なれど「<persName ref="#lorenzo">ろおれんぞ</persName>」は唯、美しい顔を赤らめて、「娘は私に心を寄せましたげでござれど、私は文を貰うたばかり、とんと口を<ruby><rb>利</rb><rt>き</rt></ruby>いた事もござらぬ」と申す。なれど世間のそしりもある事でござれば、「<persName ref="#simeon">しめおん</persName>」は<ruby><rb>猶</rb><rt>なほ</rt></ruby>も押して問ひ<ruby><rb>詰</rb><rt>なじ</rt></ruby>つたに、「<persName ref="#lorenzo">ろおれんぞ</persName>」はわびしげな眼で、ぢつと相手を見つめたと思へば、「私はお<ruby><rb>主</rb><rt>ぬし</rt></ruby>にさへ、嘘をつきさうな人間に見えるさうな」と、<ruby><rb>咎</rb><rt>とが</rt></ruby>めるやうに云ひ放つて、とんと<ruby><rb>燕</rb><rt>つばくろ</rt></ruby>か何ぞのやうに、その儘つと部屋を立つて行つてしまうた。かう云はれて見れば、「<persName ref="#simeon">しめおん</persName>」も己の疑深かつたのが恥しうもなつたに由つて、<ruby><rb>悄々</rb><rt>すごすご</rt></ruby>その場を去らうとしたに、いきなり駈けこんで来たは、少年の「<persName ref="#lorenzo">ろおれんぞ</persName>」ぢや。それが飛びつくやうに「<persName ref="#simeon">しめおん</persName>」の<ruby><rb>頸</rb><rt>うなじ</rt></ruby>を抱くと、<ruby><rb>喘</rb><rt>あへ</rt></ruby>ぐやうに「私が悪かつた。許して下されい」と<ruby><rb>囁</rb><rt>ささや</rt></ruby>いて、こなたが<ruby><rb>一言</rb><rt>ひとこと</rt></ruby>も答へぬ間に、涙に濡れた顔を隠さう為か、相手をつきのけるやうに身を開いて、一散に又元来た方へ、走つて<ruby><rb>往</rb><rt>い</rt></ruby>んでしまうたと申す。さればその「私が悪かつた」と囁いたのも、娘と密通したのが悪かつたと云ふのやら、或は「<persName ref="#simeon">しめおん</persName>」につれなうしたのが悪かつたと云ふのやら、<ruby><rb>一円合点</rb><rt>いちゑんがてん</rt></ruby>の致さうやうがなかつたとの事でござる。</p>
+        <p>するとその後間もなう起つたのは、その傘張の娘が<ruby><rb>孕</rb><rt>みごも</rt></ruby>つたと云ふ騒ぎぢや。しかも腹の子の父親は、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の「<persName ref="#lorenzo">ろおれんぞ</persName>」ぢやと、<ruby><rb>正</rb><rt>まさ</rt></ruby>しう父の前で申したげでござる。されば傘張の翁は火のやうに<ruby><rb>憤</rb><rt>いきどほ</rt></ruby>つて、即刻伴天連のもとへ委細を訴へに参つた。かうなる上は「<persName ref="#lorenzo">ろおれんぞ</persName>」も、かつふつ云ひ訳の致しやうがござない。その日の中に伴天連を始め、「いるまん」衆一同の談合に由つて、破門を申し渡される事になつた。元より破門の沙汰がある上は、伴天連の手もとをも追ひ払はれる事でござれば、糊口のよすがに困るのも目前ぢや。したがかやうな罪人を、この儘「<placeName ref="#santa-lucia">さんた・るちや</placeName>」に止めて置いては、<ruby><rb>御主</rb><rt>おんあるじ</rt></ruby>の「ぐろおりや」（栄光）にも<ruby><rb>関</rb><rt>かかは</rt></ruby>る事ゆゑ、日頃親しう致いた人々も、涙をのんで「<persName ref="#lorenzo">ろおれんぞ</persName>」を追ひ払つたと申す事でござる。</p>
+        <p>その中でも哀れをとどめたは、兄弟のやうにして居つた「<persName ref="#simeon">しめおん</persName>」の身の上ぢや。これは「<persName ref="#lorenzo">ろおれんぞ</persName>」が追ひ出されると云ふ悲しさよりも、「<persName ref="#lorenzo">ろおれんぞ</persName>」に欺かれたと云ふ腹立たしさが一倍故、あのいたいけな少年が、折からの<ruby><rb>凩</rb><rt>こがらし</rt></ruby>が吹く中へ、しをしをと戸口を出かかつたに、傍から<ruby><rb>拳</rb><rt>こぶし</rt></ruby>をふるうて、したたかその美しい顔を打つた。「<persName ref="#lorenzo">ろおれんぞ</persName>」は剛力に打たれたに由つて、思はずそこへ倒れたが、やがて起きあがると、涙ぐんだ眼で、空を仰ぎながら、「御主も許させ給へ。『<persName ref="#simeon">しめおん</persName>』は、<ruby><rb>己</rb><rt>おの</rt></ruby>が仕業もわきまへぬものでござる」と、わななく声で祈つたと申す事ぢや。「<persName ref="#simeon">しめおん</persName>」もこれには気が挫けたのでござらう。暫くは唯戸口に立つて、拳を<ruby><rb>空</rb><rt>くう</rt></ruby>にふるうて居つたが、その外の「いるまん」衆も、いろいろととりないたれば、それを<ruby><rb>機会</rb><rt>しほ</rt></ruby>に手を<ruby><rb>束</rb><rt>つか</rt></ruby>ねて、嵐も吹き出でようず空の如く、<ruby><rb>凄</rb><rt>すさま</rt></ruby>じく顔を曇らせながら、<ruby><rb>悄々</rb><rt>すごすご</rt></ruby>「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の門を出る「<persName ref="#lorenzo">ろおれんぞ</persName>」の後姿を、貪るやうにきつと見送つて居つた。その時居合はせた奉教人衆の話を伝へ聞けば、時しも凩にゆらぐ日輪が、うなだれて歩む「<persName ref="#lorenzo">ろおれんぞ</persName>」の頭のかなた、長崎の西の空に沈まうず景色であつたに由つて、あの少年のやさしい姿は、とんと一天の火焔の中に、立ちきはまつたやうに見えたと申す。</p>
+        <p>その後の「<persName ref="#lorenzo">ろおれんぞ</persName>」は、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の内陣に香炉をかざした昔とは打つて変つて、町はづれの非人小屋に起き伏しする、世にも哀れな<ruby><rb>乞食</rb><rt>こつじき</rt></ruby>であつた。ましてその前身は、「ぜんちよ」の<ruby><rb>輩</rb><rt>ともがら</rt></ruby>にはゑとりのやうにさげしまるる、天主の御教を奉ずるものぢや。されば町を行けば、心ない<ruby><rb>童部</rb><rt>わらべ</rt></ruby>に<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>らるるは元より、<ruby><rb>刀杖瓦石</rb><rt>たうぢやうぐわせき</rt></ruby>の難に<ruby><rb>遭</rb><rt>あ</rt></ruby>うた事も、度々ござるげに聞き及んだ。いや、<ruby><rb>嘗</rb><rt>か</rt></ruby>つては、長崎の町にはびこつた、恐しい熱病にとりつかれて、七日七夜の間、道ばたに伏しまろんでは、苦み<ruby><rb>悶</rb><rt>もだ</rt></ruby>えたとも申す事でござる。したが、「<persName ref="#deus">でうす</persName>」無量無辺の御愛憐は、その都度「<persName ref="#lorenzo">ろおれんぞ</persName>」が一命を救はせ給うたのみか、施物の米銭のない折々には、山の木の実、海の魚介など、その日の<ruby><rb>糧</rb><rt>かて</rt></ruby>を恵ませ給ふのが常であつた。由つて「<persName ref="#lorenzo">ろおれんぞ</persName>」も、朝夕の祈は「<placeName ref="#santa-lucia">さんた・るちや</placeName>」に在つた昔を忘れず、手くびにかけた「こんたつ」も、青玉の色を変へなかつたと申す事ぢや。なんの、それのみか、夜毎に<ruby><rb>更闌</rb><rt>かうた</rt></ruby>けて人音も静まる頃となれば、この少年はひそかに町はづれの非人小屋を脱け<ruby><rb>出</rb><rt>いだ</rt></ruby>いて、月を踏んでは住み馴れた「<placeName ref="#santa-lucia">さんた・るちや</placeName>」へ、御主「<persName ref="#jesus">ぜす・きりしと</persName>」の御加護を祈りまゐらせに詣でて居つた。</p>
+        <p>なれど同じ「えけれしや」に詣づる奉教人衆も、その頃はとんと「<persName ref="#lorenzo">ろおれんぞ</persName>」を<ruby><rb>疎</rb><rt>うと</rt></ruby>んじはてて、伴天連はじめ、誰一人憐みをかくるものもござらなんだ。ことわりかな、破門の折から<ruby><rb>所行無慚</rb><rt>しよぎやうむざん</rt></ruby>の少年と思ひこんで居つたに由つて、何として夜毎に、独り「えけれしや」へ参る程の、信心ものぢやとは知られうぞ。これも「<persName ref="#deus">でうす</persName>」千万無量の御計らひの一つ故、よしない儀とは申しながら、「<persName ref="#lorenzo">ろおれんぞ</persName>」が身にとつては、いみじくも亦哀れな事でござつた。</p>
+        <p>さる程に、こなたはあの傘張の娘ぢや。「<persName ref="#lorenzo">ろおれんぞ</persName>」が破門されると間もなく、月も満たず女の子を産み落いたが、さすがにかたくなしい父の翁も、初孫の顔は憎からず思うたのでござらう、娘ともども大切に介抱して、自ら抱きもしかかへもし、時にはもてあそびの人形などもとらせたと申す事でござる。翁は元よりさもあらうずなれど、ここに<ruby><rb>稀有</rb><rt>けう</rt></ruby>なは「いるまん」の「<persName ref="#simeon">しめおん</persName>」ぢや。あの「<persName ref="#diabo">ぢやぼ</persName>」（悪魔）をも<ruby><rb>挫</rb><rt>ひし</rt></ruby>がうず大男が、娘に子が産まれるや否や、暇ある毎に傘張の翁を訪れて、無骨な腕に幼子を抱き上げては、にがにがしげな顔に涙を浮べて、弟と<ruby><rb>愛</rb><rt>いつく</rt></ruby>しんだ、あえかな「<persName ref="#lorenzo">ろおれんぞ</persName>」の優姿を、思ひ慕つて居つたと申す。唯、娘のみは、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」を出でてこの方、絶えて「<persName ref="#lorenzo">ろおれんぞ</persName>」が姿を見せぬのを、怨めしう歎きわびた<ruby><rb>気色</rb><rt>けしき</rt></ruby>であつたれば、「<persName ref="#simeon">しめおん</persName>」の訪れるのさへ、何かと快からず思ふげに見えた。</p>
+        <p>この国の<ruby><rb>諺</rb><rt>ことわざ</rt></ruby>にも、光陰に<ruby><rb>関守</rb><rt>せきもり</rt></ruby>なしと申す通り、とかうする程に、<ruby><rb>一年</rb><rt>ひととせ</rt></ruby>あまりの年月は、<ruby><rb>瞬</rb><rt>またた</rt></ruby>くひまに過ぎたと<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>されい。ここに思ひもよらぬ大変が起つたと申すは、一夜の中に長崎の町の半ばを焼き払つた、あの大火事のあつた事ぢや。まことにその折の景色の凄じさは、<ruby><rb>末期</rb><rt>まつご</rt></ruby>の<ruby><rb>御裁判</rb><rt>おんさばき</rt></ruby>の<ruby><rb>喇叭</rb><rt>らつぱ</rt></ruby>の音が、一天の火の光をつんざいて、鳴り渡つたかと思はれるばかり、世にも身の毛のよだつものでござつた。その時、あの傘張の翁の家は、運悪う風下にあつたに由つて、見る見る焔に包れたが、さて親子<ruby><rb>眷族</rb><rt>けんぞく</rt></ruby>、慌てふためいて、逃げ<ruby><rb>出</rb><rt>いだ</rt></ruby>いて見れば、娘が産んだ女の子の姿が見えぬと云ふ始末ぢや。<ruby><rb>一定</rb><rt>いちぢやう</rt></ruby>、<ruby><rb>一間</rb><rt>ひとま</rt></ruby>どころに寝かいて置いたを、忘れてここまで逃げのびたのであらうず。されば翁は足ずりをして罵りわめく。娘も亦、人に<ruby><rb>遮</rb><rt>さへぎ</rt></ruby>られずば、火の中へも<ruby><rb>馳</rb><rt>は</rt></ruby>せ入つて、助け出さう<ruby><rb>気色</rb><rt>けしき</rt></ruby>に見えた。なれど風は<ruby><rb>益</rb><rt>ますます</rt></ruby>加はつて、焔の舌は天上の星をも焦さうず<ruby><rb>吼</rb><rt>たけ</rt></ruby>りやうぢや。それ故火を救ひに集つた町方の人々も、唯、あれよあれよと立ち騒いで、狂気のやうな娘をとり鎮めるより外に、せん方も亦あるまじい。所へひとり、多くの人を押しわけて、<ruby><rb>馳</rb><rt>か</rt></ruby>けつけて参つたは、あの「いるまん」の「<persName ref="#simeon">しめおん</persName>」でござる。これは矢玉の下もくぐつたげな、逞しい大丈夫でござれば、ありやうを見るより早く、勇んで焔の中へ向うたが、あまりの火勢に<ruby><rb>辟易</rb><rt>へきえき</rt></ruby>致いたのでござらう。二三度煙をくぐつたと見る間に、<ruby><rb>背</rb><rt>そびら</rt></ruby>をめぐらして、一散に逃げ出いた。して翁と娘とが<ruby><rb>佇</rb><rt>たたず</rt></ruby>んだ前へ来て、「これも『<persName ref="#deus">でうす</persName>』万事にかなはせたまふ御計らひの一つぢや。詮ない事とあきらめられい」と申す。その時翁の傍から、誰とも知らず、高らかに「<ruby><rb>御主</rb><rt>おんあるじ</rt></ruby>、助け給へ」と叫ぶものがござつた。声ざまに聞き覚えもござれば、「<persName ref="#simeon">しめおん</persName>」が<ruby><rb>頭</rb><rt>かうべ</rt></ruby>をめぐらして、その声の主をきつと見れば、いかな事、これは<ruby><rb>紛</rb><rt>まが</rt></ruby>ひもない「<persName ref="#lorenzo">ろおれんぞ</persName>」ぢや。清らかに痩せ細つた顔は、火の光に赤うかがやいて、風に乱れる黒髪も、肩に余るげに思はれたが、哀れにも美しい<ruby><rb>眉目</rb><rt>みめ</rt></ruby>のかたちは、一目見てそれと知られた。その「<persName ref="#lorenzo">ろおれんぞ</persName>」が、乞食の姿のまま、<ruby><rb>群</rb><rt>むらが</rt></ruby>る人々の前に立つて、目もはなたず燃えさかる家を眺めて居る。と思うたのは、まことに<ruby><rb>瞬</rb><rt>またた</rt></ruby>く間もない程ぢや。一しきり焔を<ruby><rb>煽</rb><rt>あふ</rt></ruby>つて、恐しい風が吹き渡つたと見れば、「<persName ref="#lorenzo">ろおれんぞ</persName>」の姿はまつしぐらに、早くも火の柱、火の壁、火の<ruby><rb>梁</rb><rt>うつばり</rt></ruby>の中にはいつて居つた。「<persName ref="#simeon">しめおん</persName>」は思はず遍身に汗を流いて、空高く「くるす」（十字）を描きながら、己も「御主、助け給へ」と叫んだが、何故かその時心の眼には、<ruby><rb>凩</rb><rt>こがらし</rt></ruby>に揺るる日輪の光を浴びて、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の門に立ちきはまつた、美しく悲しげな、「<persName ref="#lorenzo">ろおれんぞ</persName>」の姿が浮んだと申す。</p>
+        <p>なれどあたりに居つた奉教人衆は、「<persName ref="#lorenzo">ろおれんぞ</persName>」が<ruby><rb>健気</rb><rt>けなげ</rt></ruby>な振舞に驚きながらも、破戒の昔を忘れかねたのでもござらう。<ruby><rb>忽</rb><rt>たちまち</rt></ruby>兎角の批判は風に乗つて、人どよめきの上を渡つて参つた。と申すは、「さすが親子の情あひは争はれぬものと見えた。己が身の罪を恥ぢて、このあたりへは影も見せなんだ『<persName ref="#lorenzo">ろおれんぞ</persName>』が、今こそ一人子の命を救はうとて、火の中へはいつたぞよ」と、誰ともなく罵りかはしたのでござる。これには<ruby><rb>翁</rb><rt>おきな</rt></ruby>さへ同心と覚えて、「<persName ref="#lorenzo">ろおれんぞ</persName>」の姿を眺めてからは、怪しい心の騒ぎを隠さうず為か、立ちつ居つ身を悶えて、何やら<ruby><rb>愚</rb><rt>おろか</rt></ruby>しい事のみを、<ruby><rb>声高</rb><rt>こわだか</rt></ruby>わめいて居つた。なれど当の娘ばかりは、狂ほしく大地に<ruby><rb>跪</rb><rt>ひざまづ</rt></ruby>いて、両の手で顔をうづめながら、一心不乱に祈誓を<ruby><rb>凝</rb><rt>こ</rt></ruby>らいて、身動きをする気色さへもござない。その空には火の粉が雨のやうに降りかかる。煙も地を<ruby><rb>掃</rb><rt>はら</rt></ruby>つて、<ruby><rb>面</rb><rt>おもて</rt></ruby>を打つた。したが娘は黙然と頭を垂れて、身も世も忘れた祈り<ruby><rb>三昧</rb><rt>ざんまい</rt></ruby>でござる。</p>
+        <p>とかうする程に、<ruby><rb>再</rb><rt>ふたたび</rt></ruby>火の前に群つた人々が、一度にどつとどよめくかと見れば、髪をふり乱いた「<persName ref="#lorenzo">ろおれんぞ</persName>」が、もろ手に幼子をかい抱いて、乱れとぶ焔の中から、<ruby><rb>天</rb><rt>あま</rt></ruby>くだるやうに姿を<ruby><rb>現</rb><rt>あらは</rt></ruby>いた。なれどその時、燃え尽きた<ruby><rb>梁</rb><rt>うつばり</rt></ruby>の一つが、<ruby><rb>俄</rb><rt>にはか</rt></ruby>に半ばから折れたのでござらう。凄じい音と共に、一なだれの<ruby><rb>煙焔</rb><rt>えんえん</rt></ruby>が<ruby><rb>半空</rb><rt>なかぞら</rt></ruby>に<ruby><rb>迸</rb><rt>ほとばし</rt></ruby>つたと思ふ間もなく、「<persName ref="#lorenzo">ろおれんぞ</persName>」の姿ははたと見えずなつて、跡には唯火の柱が、珊瑚の如くそば立つたばかりでござる。</p>
+        <p>あまりの凶事に心も消えて、「<persName ref="#simeon">しめおん</persName>」をはじめ翁まで、居あはせた程の奉教人衆は、皆目の<ruby><rb>眩</rb><rt>くら</rt></ruby>む思ひがござつた。中にも娘はけたたましう泣き叫んで、一度は<ruby><rb>脛</rb><rt>はぎ</rt></ruby>もあらはに躍り立つたが、やがて<ruby><rb>雷</rb><rt>いかづち</rt></ruby>に打たれた人のやうに、そのまま大地にひれふしたと申す。さもあらばあれ、ひれふした娘の手には、何時かあの幼い女の子が、<ruby><rb>生死不定</rb><rt>しやうじふぢやう</rt></ruby>の姿ながら、ひしと抱かれて居つたをいかにしようぞ。ああ、広大無辺なる「<persName ref="#deus">でうす</persName>」の<ruby><rb>御知慧</rb><rt>おんちゑ</rt></ruby>、御力は、何とたたへ奉る<ruby><rb>詞</rb><rt>ことば</rt></ruby>だにござない。燃え崩れる梁に打たれながら、「<persName ref="#lorenzo">ろおれんぞ</persName>」が必死の力をしぼつて、こなたへ投げた幼子は、折よく娘の足もとへ、怪我もなくまろび落ちたのでござる。</p>
+        <p>されば娘が大地にひれ伏して、嬉し涙に<ruby><rb>咽</rb><rt>むせ</rt></ruby>んだ声と共に、もろ手をさしあげて立つた翁の口からは、「<persName ref="#deus">でうす</persName>」の御慈悲をほめ奉る声が、自らおごそかに溢れて参つた。いや、まさに溢れようずけはひであつたとも申さうか。それより先に「<persName ref="#simeon">しめおん</persName>」は、さかまく火の嵐の中へ、「<persName ref="#lorenzo">ろおれんぞ</persName>」を救はうず一念から、真一文字に躍りこんだに由つて、翁の声は<ruby><rb>再</rb><rt>ふたたび</rt></ruby>気づかはしげな、いたましい祈りの<ruby><rb>言</rb><rt>ことば</rt></ruby>となつて、夜空に高くあがつたのでござる。これは元より翁のみではござない。親子を囲んだ奉教人衆は、皆一同に声を揃へて、「御主、助け給へ」と、泣く泣く祈りを捧げたのぢや。して「<persName ref="#maria">びるぜん・まりや</persName>」の<ruby><rb>御子</rb><rt>みこ</rt></ruby>、なべての人の苦しみと悲しみとを<ruby><rb>己</rb><rt>おの</rt></ruby>がものの如くに見そなはす、われらが御主「<persName ref="#jesus">ぜす・きりしと</persName>」は、遂にこの祈りを聞き入れ給うた。見られい。むごたらしう焼けただれた「<persName ref="#lorenzo">ろおれんぞ</persName>」は、「<persName ref="#simeon">しめおん</persName>」が腕に抱かれて、早くも火と煙とのただ中から、救ひ出されて参つたではないか。</p>
+        <p>なれどその夜の大変は、これのみではござなんだ。息も絶え絶えな「<persName ref="#lorenzo">ろおれんぞ</persName>」が、とりあへず奉教人衆の手に<ruby><rb>舁</rb><rt>か</rt></ruby>かれて、風上にあつたあの「えけれしや」の門へ横へられた時の事ぢや。それまで幼子を胸に抱きしめて、涙にくれてゐた傘張の娘は、折から門へ出でられた伴天連の足もとに<ruby><rb>跪</rb><rt>ひざまづ</rt></ruby>くと、並み居る人々の目前で、「この<ruby><rb>女子</rb><rt>をなご</rt></ruby>は『<persName ref="#lorenzo">ろおれんぞ</persName>』様の種ではおぢやらぬ。まことは妾が家隣の『ぜんちよ』の子と密通して、まうけた娘でおぢやるわいの」と思ひもよらぬ「こひさん」（懴悔）を<ruby><rb>仕</rb><rt>つかま</rt></ruby>つた。その思ひつめた声ざまの震へと申し、その泣きぬれた双の眼のかがやきと申し、この「こひさん」には、露ばかりの偽さへ、あらうとは思はれ申さぬ。<ruby><rb>道理</rb><rt>ことわり</rt></ruby>かな、肩を並べた奉教人衆は、天を焦がす猛火も忘れて、息さへつかぬやうに声を呑んだ。</p>
+        <p>娘が涙ををさめて、申し次いだは、「妾は日頃『<persName ref="#lorenzo">ろおれんぞ</persName>』様を恋ひ慕うて居つたなれど、御信心の堅固さからあまりにつれなくもてなされる故、つい怨む心も出て、腹の子を『<persName ref="#lorenzo">ろおれんぞ</persName>』様の種と申し偽り、妾につらかつた口惜しさを思ひ知らさうと致いたのでおぢやる。なれど『<persName ref="#lorenzo">ろおれんぞ</persName>』様のお心の気高さは、妾が大罪をも憎ませ給はいで、今宵は御身の危さをもうち忘れ、『<placeName ref="#inferno">いんへるの</placeName>』（地獄）にもまがふ火焔の中から、妾娘の一命を<ruby><rb>辱</rb><rt>かたじけな</rt></ruby>くも救はせ給うた。その御憐み、御計らひ、まことに御主『<persName ref="#jesus">ぜす・きりしと</persName>』の再来かともをがまれ申す。さるにても妾が重々の極悪を思へば、この五体は<ruby><rb>忽</rb><rt>たちまち</rt></ruby>『<persName ref="#diabo">ぢやぼ</persName>』の爪にかかつて、寸々に裂かれようとも、中々怨む所はおぢやるまい。」娘は「こひさん」を致いも果てず、大地に身を投げて泣き伏した。</p>
+        <p><ruby><rb>二重三重</rb><rt>ふたへみへ</rt></ruby>に群つた奉教人衆の間から、「まるちり」（殉教）ぢや、「まるちり」ぢやと云ふ声が、波のやうに起つたのは、丁度この時の事でござる。殊勝にも「<persName ref="#lorenzo">ろおれんぞ</persName>」は、罪人を憐む心から、御主「<persName ref="#jesus">ぜす・きりしと</persName>」の御行跡を踏んで、乞食にまで身を落いた。して父と仰ぐ伴天連も、兄とたのむ「<persName ref="#simeon">しめおん</persName>」も、皆その心を知らなんだ。これが「まるちり」でなうて、何でござらう。</p>
+        <p>したが、当の「<persName ref="#lorenzo">ろおれんぞ</persName>」は、娘の「こひさん」を聞きながらも、僅に二三度<ruby><rb>頷</rb><rt>うなづ</rt></ruby>いて見せたばかり、髪は焼け肌は焦げて、手も足も動かぬ上に、口をきかう<ruby><rb>気色</rb><rt>けしき</rt></ruby>さへも今は全く尽きたげでござる。娘の「こひさん」に胸を破つた翁と「<persName ref="#simeon">しめおん</persName>」とは、その枕がみに<ruby><rb>蹲</rb><rt>うづくま</rt></ruby>つて、何かと介抱を致いて居つたが、「<persName ref="#lorenzo">ろおれんぞ</persName>」の息は、刻々に短うなつて、<ruby><rb>最期</rb><rt>さいご</rt></ruby>ももはや遠くはあるまじい。唯、日頃と変らぬのは、遙に天上を仰いで居る、星のやうな瞳の色ばかりぢや。</p>
+        <p>やがて娘の「こひさん」に耳をすまされた伴天連は、吹き<ruby><rb>荒</rb><rt>すさ</rt></ruby>ぶ夜風に白ひげをなびかせながら、「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の門を後にして、おごそかに申されたは、「悔い改むるものは、<ruby><rb>幸</rb><rt>さいはひ</rt></ruby>ぢや。何しにその幸なものを、人間の手に罰しようぞ。これより<ruby><rb>益</rb><rt>ますます</rt></ruby>、『<persName ref="#deus">でうす</persName>』の<ruby><rb>御戒</rb><rt>おんいましめ</rt></ruby>を身にしめて、心静に<ruby><rb>末期</rb><rt>まつご</rt></ruby>の<ruby><rb>御裁判</rb><rt>おんさばき</rt></ruby>の日を待つたがよい。又『<persName ref="#lorenzo">ろおれんぞ</persName>』がわが身の行儀を、御主『<persName ref="#jesus">ぜす・きりしと</persName>』とひとしく奉らうず志は、この国の奉教人衆の中にあつても、<ruby><rb>類</rb><rt>たぐひ</rt></ruby>稀なる徳行でござる。別して少年の身とは云ひ――」ああ、これは又何とした事でござらうぞ。ここまで申された伴天連は、<ruby><rb>俄</rb><rt>にはか</rt></ruby>にはたと口を<ruby><rb>噤</rb><rt>つぐ</rt></ruby>んで、あたかも「<placeName ref="#paraiso">はらいそ</placeName>」の光を望んだやうに、ぢつと足もとの「<persName ref="#lorenzo">ろおれんぞ</persName>」の姿を見守られた。その<ruby><rb>恭</rb><rt>うやうや</rt></ruby>しげな<ruby><rb>容子</rb><rt>ようす</rt></ruby>はどうぢや。その両の手のふるへざまも、<ruby><rb>尋常</rb><rt>よのつね</rt></ruby>の事ではござるまい。おう、伴天連のからびた頬の上には、とめどなく涙が溢れ流れるぞよ。</p>
+        <p>見られい。「<persName ref="#simeon">しめおん</persName>」。見られい。傘張の翁。御主「<persName ref="#jesus">ぜす・きりしと</persName>」の御血潮よりも赤い、火の光を一身に浴びて、声もなく「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の門に横はつた、いみじくも美しい少年の胸には、焦げ破れた<ruby><rb>衣</rb><rt>ころも</rt></ruby>のひまから、清らかな二つの乳房が、玉のやうに<ruby><rb>露</rb><rt>あらは</rt></ruby>れて居るではないか。今は焼けただれた<ruby><rb>面輪</rb><rt>おもわ</rt></ruby>にも、<ruby><rb>自</rb><rt>おのづか</rt></ruby>らなやさしさは、隠れようすべもあるまじい。おう、「<persName ref="#lorenzo">ろおれんぞ</persName>」は女ぢや。「<persName ref="#lorenzo">ろおれんぞ</persName>」は女ぢや。見られい。猛火を後にして、垣のやうに佇んでゐる奉教人衆、邪淫の戒を破つたに由つて「<placeName ref="#santa-lucia">さんた・るちや</placeName>」を<ruby><rb>逐</rb><rt>お</rt></ruby>はれた「<persName ref="#lorenzo">ろおれんぞ</persName>」は、傘張の娘と同じ、<ruby><rb>眼</rb><rt>ま</rt></ruby>なざしのあでやかなこの国の女ぢや。</p>
+        <p>まことにその<ruby><rb>刹那</rb><rt>せつな</rt></ruby>の尊い恐しさは、あたかも「<persName ref="#deus">でうす</persName>」の御声が、星の光も見えぬ遠い空から、伝はつて来るやうであつたと申す。されば「<placeName ref="#santa-lucia">さんた・るちや</placeName>」の前に居並んだ奉教人衆は、風に吹かれる穂麦のやうに、誰からともなく頭を垂れて、<ruby><rb>悉</rb><rt>ことごとく</rt></ruby>「<persName ref="#lorenzo">ろおれんぞ</persName>」のまはりに<ruby><rb>跪</rb><rt>ひざまづ</rt></ruby>いた。その中で聞えるものは、唯、空をどよもして燃えしきる、万丈の焔の響ばかりでござる。いや、誰やらの<ruby><rb>啜</rb><rt>すす</rt></ruby>り泣く声も聞えたが、それは傘張の娘でござらうか。或は又自ら兄とも思うた、あの「いるまん」の「<persName ref="#simeon">しめおん</persName>」でござらうか。やがてその<ruby><rb>寂寞</rb><rt>じやくまく</rt></ruby>たるあたりをふるはせて、「<persName ref="#lorenzo">ろおれんぞ</persName>」の上に高く手をかざしながら、伴天連の御経を<ruby><rb>誦</rb><rt>ず</rt></ruby>せられる声が、おごそかに悲しく耳にはいつた。して御経の声がやんだ時、「<persName ref="#lorenzo">ろおれんぞ</persName>」と呼ばれた、この国のうら若い女は、まだ暗い夜のあなたに、「<placeName ref="#paraiso">はらいそ</placeName>」の「ぐろおりや」を仰ぎ見て、安らかなほほ笑みを唇に止めたまま、静に息が絶えたのでござる。……</p>
+        <p>その女の一生は、この外に何一つ、知られなんだげに聞き及んだ。なれどそれが、何事でござらうぞ。なべて人の世の尊さは、何ものにも換へ難い、刹那の感動に極るものぢや。暗夜の海にも<ruby><rb>譬</rb><rt>たと</rt></ruby>へようず<ruby><rb>煩悩心</rb><rt>ぼんなうしん</rt></ruby>の空に一波をあげて、<ruby><rb>未</rb><rt>いまだ</rt></ruby>出ぬ月の光を、<ruby><rb>水沫</rb><rt>みなわ</rt></ruby>の中に捕へてこそ、生きて甲斐ある命とも申さうず。されば「<persName ref="#lorenzo">ろおれんぞ</persName>」が最期を知るものは、「<persName ref="#lorenzo">ろおれんぞ</persName>」の一生を知るものではござるまいか。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>二</head>
+        <p>予が所蔵に関る、長崎耶蘇会出版の一書、題して「れげんだ・おうれあ」と云ふ。<ruby><rb>蓋</rb><rt>けだ</rt></ruby>し、LEGENDA AUREA の意なり。されど内容は必しも、<placeName ref="#western-europe">西欧</placeName>の<ruby><rb>所謂</rb><rt>いはゆる</rt></ruby>「黄金伝説」ならず。<ruby><rb>彼土</rb><rt>かのど</rt></ruby>の使徒聖人が言行を録すると共に、<ruby><rb>併</rb><rt>あは</rt></ruby>せて本邦西教徒が勇猛精進の事蹟をも採録し、以て福音伝道の一助たらしめんとせしものの如し。</p>
+        <p>体裁は上下二巻、<ruby><rb>美濃紙摺</rb><rt>みのがみずり</rt></ruby><ruby><rb>草体交</rb><rt>さうたいまじ</rt></ruby>り平仮名文にして、印刷甚しく鮮明を欠き、活字なりや否やを明にせず。上巻の扉には、<ruby><rb>羅甸</rb><rt>ラテン</rt></ruby>字にて書名を横書し、その下に漢字にて「御出世以来<date when="1596">千五百九十六年</date>、<date when="1597-03">慶長二年三月上旬</date><ruby><rb>鏤刻</rb><rt>るこく</rt></ruby>也」の二行を縦書す。年代の左右には<ruby><rb>喇叭</rb><rt>らつぱ</rt></ruby>を吹ける天使の画像あり。技巧<ruby><rb>頗</rb><rt>すこぶる</rt></ruby>幼稚なれども、亦<ruby><rb>掬</rb><rt>きく</rt></ruby>す可き趣致なしとせず。下巻も扉に「<date when="--05">五月中旬</date>鏤刻也」の句あるを除いては、全く上巻と異同なし。</p>
+        <p>両巻とも紙数は約六十頁にして、<ruby><rb>載</rb><rt>の</rt></ruby>する所の黄金伝説は、上巻八章、下巻十章を数ふ。その他各巻の巻首に著者不明の序文及<ruby><rb>羅甸</rb><rt>ラテン</rt></ruby>字を加へたる目次あり。序文は文章<ruby><rb>雅馴</rb><rt>がじゆん</rt></ruby>ならずして、<ruby><rb>間々</rb><rt>まま</rt></ruby>欧文を直訳せる如き語法を交へ、一見その伴天連たる西人の手になりしやを疑はしむ。</p>
+        <p>以上採録したる「奉教人の死」は、<ruby><rb>該</rb><rt>がい</rt></ruby>「れげんだ・おうれあ」下巻第二章に依るものにして、恐らくは当時長崎の一西教寺院に起りし、事実の忠実なる記録ならんか。但、記事中の大火なるものは、「長崎港草」以下諸書に徴するも、その有無をすら明にせざるを以て、事実の正確なる年代に至つては、全くこれを決定するを得ず。</p>
+        <p>予は「奉教人の死」に於て、発表の必要上、多少の文飾を<ruby><rb>敢</rb><rt>あへ</rt></ruby>てしたり。もし原文の平易雅馴なる筆致にして、甚しく<ruby><rb>毀損</rb><rt>きそん</rt></ruby>せらるる事なからんか、予の幸甚とする所なりと<ruby><rb>云爾</rb><rt>しかいふ</rt></ruby>。</p>
+        <p>（<date when="1918-08">大正七年八月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

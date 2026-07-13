@@ -1,0 +1,31 @@
+{
+  "slug": "yodakanohoshi",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/473_42318.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card473.html",
+  "title": "よだかの星",
+  "author": "宮沢賢治",
+  "fixes": {},
+  "persons": {
+    "ichizo": ["市蔵", "鷹がよだかに押しつけようとする改名後の名前(「首へ市蔵と書いたふだをぶらさげて…改名の披露をしろ」)。作中に現れる唯一の固有の人名(呼び名)"]
+  },
+  "places": {
+    "orion": ["オリオン", null, null, "オリオン座。よだかが西のそらで最初に呼びかける星。天体のため座標なし"],
+    "oinuza": ["大犬座", null, null, "おおいぬ座。よだかが南のそらで呼びかける星。「大犬」とも。天体のため座標なし"],
+    "ookumaboshi": ["大熊星", null, null, "おおぐま座(北斗七星を含む北天の星座)。よだかが北のそらで呼びかける星。天体のため座標なし"],
+    "washinohoshi": ["鷲の星", null, null, "わし座(の星、アルタイル)。天の川の向う岸にあり、よだかが東のそらで呼びかける星。天体のため座標なし"],
+    "kashiopiaza": ["カシオピア座", null, null, "カシオペヤ座。よだかの星の隣に位置する星座。天体のため座標なし"],
+    "amanogawa": ["天の川", null, null, "銀河(天の川)。鷲の星の手前、よだかの星のうしろに描かれる。天体のため座標なし"],
+    "yodakanohoshi": ["よだかの星", null, null, "よだかが燃えつづける青い光となって化した星。作品題名でもある。作中で新たに名づけられる天体のため座標なし"]
+  },
+  "tags": [
+    ["pers", "市蔵", "ichizo"],
+    ["place", "よだかの星", "yodakanohoshi"],
+    ["place", "オリオン", "orion"],
+    ["place", "大犬座", "oinuza"],
+    ["place", "大犬", "oinuza"],
+    ["place", "大熊星", "ookumaboshi"],
+    ["place", "鷲の星", "washinohoshi"],
+    ["place", "カシオピア座", "kashiopiaza"],
+    ["place", "天の川", "amanogawa"]
+  ]
+}
