@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>夫婦善哉</title>
+        <author>織田作之助</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>夫婦善哉</title><author>織田作之助</author>
+          <note>青空文庫。底本：「ちくま日本文学全集　織田作之助」筑摩書房。1993（平成5）年5月20日第1刷発行。底本の親本：「現代日本文学大系70」筑摩書房。1970（昭和45）年。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000040/card545.html">https://www.aozora.gr.jp/cards/000040/card545.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="chouko">
+        <persName>蝶子</persName>
+        <note>主人公。上塩町の一銭天婦羅屋・種吉の娘。女中奉公・おちょぼを経て北の新地の芸者となり、柳吉と駈落ちしてヤトナ芸者として働きながら柳吉を支える</note>
+      </person>
+      <person xml:id="ryukichi">
+        <persName>維康柳吉</persName>
+        <note>蝶子の相手。梅田新道の化粧品問屋の若旦那。妻子ある身で蝶子と駈落ちして勘当され、吃りで浄瑠璃と食い道楽を好む。本文では「柳吉」「維康さん」とも呼ばれる。夜店のドテ焼を好み「ドテ焼さん」と渾名された</note>
+      </person>
+      <person xml:id="taneyoshi">
+        <persName>種吉</persName>
+        <note>蝶子の父。上塩町の路地で一銭天婦羅を商う。駕籠かき人足や祭の人足もつとめる。人が良く、娘夫婦に甘い</note>
+      </person>
+      <person xml:id="otatsu">
+        <persName>お辰</persName>
+        <note>蝶子の母、種吉の女房。借金取に「板の間をたたくな」と芝居を打つ。のち子宮癌で死ぬ</note>
+      </person>
+      <person xml:id="shinichi">
+        <persName>信一</persName>
+        <note>蝶子の弟。尋常四年から夕刊売りをし、のち京都下鴨の質屋へ年期奉公に出る</note>
+      </person>
+      <person xml:id="okin">
+        <persName>おきん</persName>
+        <note>もと北の新地の芸者。高津に一軒構えてヤトナ(臨時雇の有芸仲居)の周旋屋を営み、蝶子の相談相手となる</note>
+      </person>
+      <person xml:id="fudeko">
+        <persName>筆子</persName>
+        <note>柳吉の妹。十八の年で柳吉の娘の母親代りをつとめ、のち聟養子を迎えて維康家を継ぐ</note>
+      </person>
+      <person xml:id="kinpachi">
+        <persName>金八</persName>
+        <note>北の新地で蝶子と同じ抱主の下にいた芸者。鉱山師の後妻となって出世し、蝶子にカフェ開業の資金を出す</note>
+      </person>
+      <person xml:id="harudanji">
+        <persName>春団治</persName>
+        <note>初代桂春団治(1878–1934)。落語家。法善寺の寄席「花月」で蝶子と柳吉がその落語を聴く</note>
+      </person>
+      <person xml:id="kyozan-koen">
+        <persName>京山小円</persName>
+        <note>浪曲師。千日前の愛進館で蝶子がその浪花節を聴く</note>
+      </person>
+      <person xml:id="takemoto-kumisho">
+        <persName>竹本組昇</persName>
+        <note>下寺町の義太夫の師匠。柳吉が月謝五円で弟子入りする</note>
+      </person>
+      <person xml:id="sankatsu">
+        <persName>三勝</persName>
+        <note>浄瑠璃『艶容女舞衣』の登場人物。柳吉が語る「三勝半七」のサワリに現れる</note>
+      </person>
+      <person xml:id="hanshichi">
+        <persName>半七</persName>
+        <note>浄瑠璃『艶容女舞衣』の登場人物。三勝と契り勘当された身。柳吉が語るサワリに現れる</note>
+      </person>
+      <person xml:id="hanbei">
+        <persName>半兵衛</persName>
+        <note>浄瑠璃『艶容女舞衣』の登場人物。半七の父。柳吉が語るサワリに現れる</note>
+      </person>
+      <person xml:id="otsu">
+        <persName>お通</persName>
+        <note>浄瑠璃『艶容女舞衣』の登場人物。半七と三勝の間に生まれた娘。柳吉が語るサワリ(お園のクドキ)に現れる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>大阪市。本作の主要な舞台・概値</note>
+      </place>
+      <place xml:id="kamishiocho">
+        <placeName>上塩町</placeName>
+        <location><geo>34.6684 135.5122</geo></location>
+        <note>大阪市の町名(現・中央区/天王寺区上汐)。種吉一家の住む路地がある・概値</note>
+      </place>
+      <place xml:id="nipponbashi">
+        <placeName>日本橋</placeName>
+        <location><geo>34.6624 135.506</geo></location>
+        <note>大阪の日本橋(にっぽんばし)。古着屋の女中奉公先、「たこ梅」、御蔵跡公園裏の二階借りなどの場。本文では「日本橋三丁目」「日本橋一丁目」とも・概値</note>
+      </place>
+      <place xml:id="kuromon">
+        <placeName>黒門市場</placeName>
+        <location><geo>34.6656 135.5063</geo></location>
+        <note>大阪・日本橋の市場。その路地裏の二階に蝶子と柳吉が所帯を持つ・概値</note>
+      </place>
+      <place xml:id="kappa-yokocho">
+        <placeName>河童横町</placeName>
+        <note>材木屋のある横町。昔河童が棲んでいたという俗称。現在の所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="sonezaki-shinchi">
+        <placeName>曾根崎新地</placeName>
+        <location><geo>34.697 135.4986</geo></location>
+        <note>大阪・北の新地。蝶子がおちょぼに出たお茶屋がある・概値</note>
+      </place>
+      <place xml:id="kita">
+        <placeName>北</placeName>
+        <location><geo>34.6963 135.498</geo></location>
+        <note>大阪の「キタ」(北の新地・北新地)。蝶子が芸者に出た花街で、柳吉は「北にはうまいもんを食わせる店がなく」と言う。本文では「北の新地」「北新地」とも・概値</note>
+      </place>
+      <place xml:id="minami">
+        <placeName>南</placeName>
+        <location><geo>34.668 135.503</geo></location>
+        <note>大阪の「ミナミ」(道頓堀・千日前一帯)。柳吉が「うまいもんは何といっても南に限る」と言う・概値</note>
+      </place>
+      <place xml:id="umeda">
+        <placeName>梅田</placeName>
+        <location><geo>34.7025 135.4959</geo></location>
+        <note>大阪・梅田。駈落ちの発つ駅であり、柳吉の実家のある土地・概値</note>
+      </place>
+      <place xml:id="umeda-shindo">
+        <placeName>梅田新道</placeName>
+        <location><geo>34.697 135.502</geo></location>
+        <note>梅田新道。柳吉の実家(化粧品問屋)がある・概値</note>
+      </place>
+      <place xml:id="kitahama">
+        <placeName>北浜</placeName>
+        <location><geo>34.691 135.504</geo></location>
+        <note>大阪・北浜。おきんの亭主が羽振りをきかせ、のち取引所の書記に雇われる土地・概値</note>
+      </place>
+      <place xml:id="kozu">
+        <placeName>高津</placeName>
+        <location><geo>34.6683 135.5117</geo></location>
+        <note>大阪・高津。湯豆腐屋があり、おきんがヤトナの周旋屋を構える・概値</note>
+      </place>
+      <place xml:id="kozu-jinja">
+        <placeName>高津神社</placeName>
+        <location><geo>34.6679 135.5122</geo></location>
+        <note>高津宮。その坂下に柳吉が剃刀屋の新店を開く・概値</note>
+      </place>
+      <place xml:id="dotonbori">
+        <placeName>道頓堀</placeName>
+        <location><geo>34.6688 135.502</geo></location>
+        <note>大阪・道頓堀。中座・たこ梅・出雲屋などがある盛り場・概値</note>
+      </place>
+      <place xml:id="ebisubashi">
+        <placeName>戎橋</placeName>
+        <location><geo>34.6687 135.5013</geo></location>
+        <note>道頓堀に架かる戎橋。履物屋「天狗」・「おぐらや」・スキ焼の「丸万」がある。本文では「戎橋筋」とも・概値</note>
+      </place>
+      <place xml:id="aioibashi">
+        <placeName>相合橋</placeName>
+        <location><geo>34.669 135.5054</geo></location>
+        <note>道頓堀に架かる相合橋。その東詰に「出雲屋」がある・概値</note>
+      </place>
+      <place xml:id="hozenji">
+        <placeName>法善寺</placeName>
+        <location><geo>34.6683 135.5019</geo></location>
+        <note>大阪・法善寺。境内に「正弁丹吾亭」「めおとぜんざい」があり、寄席「花月」や「縁結び」もある・概値</note>
+      </place>
+      <place xml:id="sennichimae">
+        <placeName>千日前</placeName>
+        <location><geo>34.6667 135.5033</geo></location>
+        <note>大阪・千日前。常盤座・愛進館・楽天地・いろは牛肉店などがある盛り場・概値</note>
+      </place>
+      <place xml:id="futatsuido">
+        <placeName>二ツ井戸</placeName>
+        <location><geo>34.6672 135.506</geo></location>
+        <note>大阪・二ツ井戸(現・中央区日本橋付近)。天牛書店・実費医院・安カフェ「お兄ちゃん」がある・概値</note>
+      </place>
+      <place xml:id="shinsekai">
+        <placeName>新世界</placeName>
+        <location><geo>34.6524 135.5063</geo></location>
+        <note>大阪・新世界。出雲屋が二軒あり、蝶子が八卦見を訪ねる・概値</note>
+      </place>
+      <place xml:id="shimanouchi">
+        <placeName>島の内</placeName>
+        <location><geo>34.672 135.506</geo></location>
+        <note>大阪・島之内。華陽堂病院がある・概値</note>
+      </place>
+      <place xml:id="shitadera">
+        <placeName>下寺町</placeName>
+        <location><geo>34.6606 135.5117</geo></location>
+        <note>大阪・下寺町。義太夫の師匠竹本組昇が住み、電停前に「サロン蝶柳」を開く・概値</note>
+      </place>
+      <place xml:id="namba-shinchi">
+        <placeName>難波新地</placeName>
+        <location><geo>34.665 135.501</geo></location>
+        <note>大阪・難波新地。柳吉が貯金を使い果たして遊ぶ・概値</note>
+      </place>
+      <place xml:id="tobita">
+        <placeName>飛田</placeName>
+        <location><geo>34.6472 135.5026</geo></location>
+        <note>大阪・飛田(飛田遊廓)。柳吉が娼妓を相手に五十円を使う・概値</note>
+      </place>
+      <place xml:id="tobita-daimon">
+        <placeName>飛田大門前通り</placeName>
+        <location><geo>34.6478 135.5033</geo></location>
+        <note>飛田遊廓の大門前の通り。二階借りした家と関東煮屋「蝶柳」がある・概値</note>
+      </place>
+      <place xml:id="imazato-shinchi">
+        <placeName>今里新地</placeName>
+        <location><geo>34.663 135.545</geo></location>
+        <note>大阪・今里新地。新聞記者たちと二次会に繰り出す・概値</note>
+      </place>
+      <place xml:id="okuraato-koen">
+        <placeName>御蔵跡公園</placeName>
+        <location><geo>34.662 135.506</geo></location>
+        <note>大阪・日本橋の御蔵跡公園。その裏に二階借りする・概値</note>
+      </place>
+      <place xml:id="tennoji">
+        <placeName>天王寺</placeName>
+        <location><geo>34.6455 135.5136</geo></location>
+        <note>大阪・天王寺。市民病院がある・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京。柳吉が集金に行き、関東大震災に遭う・概値</note>
+      </place>
+      <place xml:id="atami">
+        <placeName>熱海</placeName>
+        <location><geo>35.0955 139.0717</geo></location>
+        <note>静岡県熱海。駈落ちの二人が投宿し、地震に遭う・概値</note>
+      </place>
+      <place xml:id="yamato">
+        <placeName>大和</placeName>
+        <location><geo>34.6851 135.8048</geo></location>
+        <note>大和国(現・奈良県)。お辰の国元・国名・概値</note>
+      </place>
+      <place xml:id="kyoto-shimogamo">
+        <placeName>京都下鴨</placeName>
+        <location><geo>35.0416 135.7728</geo></location>
+        <note>京都・下鴨。信一が年期奉公に出る質屋がある・概値</note>
+      </place>
+      <place xml:id="yuzaki">
+        <placeName>湯崎</placeName>
+        <location><geo>33.6786 135.34</geo></location>
+        <note>紀州・湯崎温泉(現・和歌山県白浜温泉)。柳吉が退院後に出養生する・概値</note>
+      </place>
+      <place xml:id="senjojiki">
+        <placeName>千畳敷</placeName>
+        <location><geo>33.6733 135.3315</geo></location>
+        <note>白浜の名勝・千畳敷。柳吉が娘を呼び寄せて見物する・概値</note>
+      </place>
+      <place xml:id="sandanbeki">
+        <placeName>三段壁</placeName>
+        <location><geo>33.6673 135.3345</geo></location>
+        <note>白浜の名勝・三段壁・概値</note>
+      </place>
+      <place xml:id="kyushu">
+        <placeName>九州</placeName>
+        <location><geo>33.0 131.0</geo></location>
+        <note>九州。柳吉が手紙で移住先として挙げる・地域名・概値</note>
+      </place>
+      <place xml:id="sogo">
+        <placeName>そごう</placeName>
+        <location><geo>34.6725 135.5013</geo></location>
+        <note>戎橋筋のそごう百貨店・概値</note>
+      </place>
+      <place xml:id="shiruichi">
+        <placeName>しる市</placeName>
+        <location><geo>34.6722 135.5013</geo></location>
+        <note>戎橋筋そごう横のどじょう汁・皮鯨汁の店・概値</note>
+      </place>
+      <place xml:id="izumoya">
+        <placeName>出雲屋</placeName>
+        <location><geo>34.669 135.5054</geo></location>
+        <note>まむし(鰻飯)の店。新世界・千日前・道頓堀中座向い・相合橋東詰の計五軒。座標は柳吉の推す相合橋東詰の店・概値</note>
+      </place>
+      <place xml:id="takoume">
+        <placeName>たこ梅</placeName>
+        <location><geo>34.6663 135.5044</geo></location>
+        <note>たこの関東煮の老舗。本文では「日本橋「たこ梅」」・概値</note>
+      </place>
+      <place xml:id="shobendango">
+        <placeName>正弁丹吾亭</placeName>
+        <location><geo>34.6685 135.5023</geo></location>
+        <note>法善寺境内の関東煮の店・概値</note>
+      </place>
+      <place xml:id="sushisute">
+        <placeName>寿司捨</placeName>
+        <location><geo>34.6664 135.504</geo></location>
+        <note>千日前常盤座横の鮨屋・概値</note>
+      </place>
+      <place xml:id="darumaya">
+        <placeName>だるまや</placeName>
+        <note>「寿司捨」の向いにあったかやく飯・粕じるの店。正確な所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="tokiwaza">
+        <placeName>常盤座</placeName>
+        <location><geo>34.6664 135.504</geo></location>
+        <note>千日前の劇場・概値(現存せず)</note>
+      </place>
+      <place xml:id="nakaza">
+        <placeName>中座</placeName>
+        <location><geo>34.6688 135.5029</geo></location>
+        <note>道頓堀の劇場・中座・概値(現存せず)</note>
+      </place>
+      <place xml:id="kabukiza">
+        <placeName>大阪歌舞伎座</placeName>
+        <location><geo>34.6662 135.5028</geo></location>
+        <note>大阪歌舞伎座。その横で蝶子と金八が八卦見に見てもらう。本文では「歌舞伎」・概値(現存せず)</note>
+      </place>
+      <place xml:id="rakutenchi">
+        <placeName>楽天地</placeName>
+        <location><geo>34.666 135.504</geo></location>
+        <note>千日前の遊技場・楽天地。その横に自由軒がある・概値(現存せず)</note>
+      </place>
+      <place xml:id="aishinkan">
+        <placeName>愛進館</placeName>
+        <note>千日前にあった寄席。正確な所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="kagetsu">
+        <placeName>花月</placeName>
+        <location><geo>34.6684 135.5021</geo></location>
+        <note>法善寺の寄席「花月」。春団治の落語を聴きに行く・概値</note>
+      </place>
+      <place xml:id="jiyuken">
+        <placeName>自由軒</placeName>
+        <location><geo>34.6653 135.504</geo></location>
+        <note>千日前・楽天地横の洋食店。名物の玉子入りライスカレー・概値</note>
+      </place>
+      <place xml:id="tengu">
+        <placeName>天狗</placeName>
+        <location><geo>34.6687 135.5013</geo></location>
+        <note>戎橋の履物屋「天狗」。蝶子が柳吉に贈った男履きの草履の印・概値</note>
+      </place>
+      <place xml:id="oguraya">
+        <placeName>おぐらや</placeName>
+        <location><geo>34.6687 135.5014</geo></location>
+        <note>戎橋の店。山椒昆布を売る・概値</note>
+      </place>
+      <place xml:id="irohagyunikuten">
+        <placeName>いろは牛肉店</placeName>
+        <location><geo>34.6665 135.5035</geo></location>
+        <note>千日前の牛肉店。その隣の剃刀屋に柳吉が通い店員として勤める・概値</note>
+      </place>
+      <place xml:id="tengyu">
+        <placeName>天牛書店</placeName>
+        <location><geo>34.6672 135.5061</geo></location>
+        <note>二ツ井戸の古書店。柳吉が稽古本を漁り、二階広間の素義大会で「太十」を語る・概値</note>
+      </place>
+      <place xml:id="maruman">
+        <placeName>丸万</placeName>
+        <location><geo>34.6688 135.5015</geo></location>
+        <note>戎橋のスキ焼屋。蝶子が金八とスキ焼を食べる・概値</note>
+      </place>
+      <place xml:id="oniichan">
+        <placeName>お兄ちゃん</placeName>
+        <note>二ツ井戸の安カフェ。作中の店で所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="ichiban">
+        <placeName>一番</placeName>
+        <note>柳吉が女給に肩入れするカフェ。作中の店で所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="chouryu">
+        <placeName>蝶柳</placeName>
+        <note>蝶子と柳吉が飛田大門前通りに開いた関東煮屋。二人の名を一字ずつとった屋号。作中の店(架空)のため座標なし</note>
+      </place>
+      <place xml:id="salon-chouryu">
+        <placeName>サロン蝶柳</placeName>
+        <note>下寺町電停前に開いたカフェ。「蝶柳」にサロンを冠した屋号。作中の店(架空)のため座標なし</note>
+      </place>
+      <place xml:id="meotozenzai">
+        <placeName>めおとぜんざい</placeName>
+        <location><geo>34.6684 135.5022</geo></location>
+        <note>法善寺境内のぜんざい屋。一人に二杯ずつ出す。本作の表題の由来・概値</note>
+      </place>
+      <place xml:id="kayodo">
+        <placeName>華陽堂病院</placeName>
+        <note>島の内の泌尿科専門病院。作中の病院で所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="shiminbyoin">
+        <placeName>市民病院</placeName>
+        <location><geo>34.6455 135.5136</geo></location>
+        <note>天王寺の市民病院。柳吉が腎臓結核と診断される・概値</note>
+      </place>
+      <place xml:id="jippiiin">
+        <placeName>実費医院</placeName>
+        <note>二ツ井戸の医院。柳吉が胃腸を診てもらう。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="chikurinji">
+        <placeName>竹林寺</placeName>
+        <note>剃刀屋の向いの共同便所の隣にある寺。正確な所在を特定できないため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>夫婦善哉</head>
+        <p>年中借金取が出はいりした。節季はむろんまるで毎日のことで、<ruby><rb>醤油屋</rb><rt>しょうゆや</rt></ruby>、油屋、<ruby><rb>八百屋</rb><rt>やおや</rt></ruby>、<ruby><rb>鰯屋</rb><rt>いわしや</rt></ruby>、<ruby><rb>乾物屋</rb><rt>かんぶつや</rt></ruby>、炭屋、米屋、家主その他、いずれも厳しい<ruby><rb>催促</rb><rt>さいそく</rt></ruby>だった。路地の入り口で<ruby><rb>牛蒡</rb><rt>ごぼう</rt></ruby>、<ruby><rb>蓮根</rb><rt>れんこん</rt></ruby>、<ruby><rb>芋</rb><rt>いも</rt></ruby>、三ツ葉、<ruby><rb>蒟蒻</rb><rt>こんにゃく</rt></ruby>、<ruby><rb>紅生姜</rb><rt>べにしょうが</rt></ruby>、<ruby><rb>鯣</rb><rt>するめ</rt></ruby>、鰯など一銭<ruby><rb>天婦羅</rb><rt>てんぷら</rt></ruby>を<ruby><rb>揚</rb><rt>あ</rt></ruby>げて商っている<persName ref="#taneyoshi"><ruby><rb>種吉</rb><rt>たねきち</rt></ruby></persName>は借金取の姿が見えると、下向いてにわかに<ruby><rb>饂飩粉</rb><rt>うどんこ</rt></ruby>をこねる<ruby><rb>真似</rb><rt>まね</rt></ruby>した。近所の小供たちも、「おっさん、はよ<ruby><rb>牛蒡</rb><rt>ごんぼ</rt></ruby>揚げてんかいナ」と待てしばしがなく、「よっしゃ、今揚げたアるぜ」というものの<ruby><rb>擂鉢</rb><rt>すりばち</rt></ruby>の底をごしごしやるだけで、<ruby><rb>水洟</rb><rt>みずばな</rt></ruby>の落ちたのも気付かなかった。</p>
+        <p><persName ref="#taneyoshi">種吉</persName>では話にならぬから素通りして路地の<ruby><rb>奥</rb><rt>おく</rt></ruby>へ行き<persName ref="#taneyoshi">種吉</persName>の<ruby><rb>女房</rb><rt>にょうぼう</rt></ruby>に<ruby><rb>掛</rb><rt>か</rt></ruby>け合うと、女房の<persName ref="#otatsu">お<ruby><rb>辰</rb><rt>たつ</rt></ruby></persName>は<persName ref="#taneyoshi">種吉</persName>とは大分<ruby><rb>違</rb><rt>ちが</rt></ruby>って、借金取の動作に注意の目をくばった。催促の<ruby><rb>身振</rb><rt>みぶ</rt></ruby>りが余って<ruby><rb>腰</rb><rt>こし</rt></ruby>掛けている板の間をちょっとでもたたくと、<persName ref="#otatsu">お辰</persName>はすかさず、「人さまの家の板の間たたいて、あんた、それでよろしおまんのんか」と血相かえるのだった。「そこは家の神様が宿ったはるとこだっせ」</p>
+        <p><ruby><rb>芝居</rb><rt>しばい</rt></ruby>のつもりだがそれでもやはり興奮するのか、声に<ruby><rb>泪</rb><rt>なみだ</rt></ruby>がまじる位であるから、相手は<ruby><rb>驚</rb><rt>おどろ</rt></ruby>いて、「無茶いいなはんナ、何も<ruby><rb>私</rb><rt>わて</rt></ruby>はたたかしまへんぜ」とむしろ開き直り、二三度<ruby><rb>押問答</rb><rt>おしもんどう</rt></ruby>のあげく、結局<persName ref="#otatsu">お辰</persName>はいい負けて、素手では帰せぬ羽目になり、五十銭か一円だけ身を切られる<ruby><rb>想</rb><rt>おも</rt></ruby>いで<ruby><rb>渡</rb><rt>わた</rt></ruby>さねばならなかった。それでも、一度だけだが、板の間のことをその場で<ruby><rb>指摘</rb><rt>してき</rt></ruby>されると、何ともいい訳けのない困り方でいきなり平身低頭して<ruby><rb>詫</rb><rt>わ</rt></ruby>びを入れ、ほうほうの<ruby><rb>体</rb><rt>てい</rt></ruby>で<ruby><rb>逃</rb><rt>に</rt></ruby>げ帰った借金取があったと、きまってあとで<persName ref="#otatsu">お辰</persName>の<ruby><rb>愚痴</rb><rt>ぐち</rt></ruby>の相手は<ruby><rb>娘</rb><rt>むすめ</rt></ruby>の<persName ref="#chouko"><ruby><rb>蝶子</rb><rt>ちょうこ</rt></ruby></persName>であった。</p>
+        <p>そんな母親を<persName ref="#chouko">蝶子</persName>はみっともないとも<ruby><rb>哀</rb><rt>あわ</rt></ruby>れとも思った。それで、母親を<ruby><rb>欺</rb><rt>だま</rt></ruby>して買食いの金をせしめたり、天婦羅の売上箱から小銭を<ruby><rb>盗</rb><rt>ぬす</rt></ruby>んだりして来たことが、ちょっと<ruby><rb>後悔</rb><rt>こうかい</rt></ruby>された。<persName ref="#taneyoshi">種吉</persName>の天婦羅は味で売ってなかなか評判よかったが、そのため損をしているようだった。蓮根でも蒟蒻でもすこぶる厚身で、<persName ref="#otatsu">お辰</persName>の目にも引き合わぬと見えたが、<persName ref="#taneyoshi">種吉</persName>は<ruby><rb>算盤</rb><rt>そろばん</rt></ruby>おいてみて、「七<ruby><rb>厘</rb><rt>りん</rt></ruby>の元を一銭に商って損するわけはない」家に金の残らぬのは前々の借金で毎日の売上げが<ruby><rb>喰込</rb><rt>くいこ</rt></ruby>んで行くためだとの<persName ref="#taneyoshi">種吉</persName>の言い分はもっともだったが、しかし、十二<ruby><rb>歳</rb><rt>さい</rt></ruby>の<persName ref="#chouko">蝶子</persName>には、父親の算盤には炭代や醤油代がはいっていないと知れた。</p>
+        <p>天婦羅だけでは立ち行かぬから、近所に<ruby><rb>葬式</rb><rt>そうしき</rt></ruby>があるたびに、<ruby><rb>駕籠</rb><rt>かご</rt></ruby>かき人足に<ruby><rb>雇</rb><rt>やと</rt></ruby>われた。氏神の夏祭には、水着を着てお宮の<ruby><rb>大提燈</rb><rt>おおぢょうちん</rt></ruby>を担いで練ると、日当九十銭になった。<ruby><rb>鎧</rb><rt>よろい</rt></ruby>を着ると三十銭あがりだった。<persName ref="#taneyoshi">種吉</persName>の留守には<persName ref="#otatsu">お辰</persName>が天婦羅を揚げた。<persName ref="#otatsu">お辰</persName>は存分に材料を<ruby><rb>節約</rb><rt>しまつ</rt></ruby>したから、祭の日通り掛りに見て、<persName ref="#taneyoshi">種吉</persName>は<ruby><rb>肩身</rb><rt>かたみ</rt></ruby>の<ruby><rb>狭</rb><rt>せま</rt></ruby>い想いをし、鎧の下を<ruby><rb>汗</rb><rt>あせ</rt></ruby>が走った。</p>
+        <p>よくよく<ruby><rb>貧乏</rb><rt>びんぼう</rt></ruby>したので、<persName ref="#chouko">蝶子</persName>が小学校を<ruby><rb>卒</rb><rt>お</rt></ruby>えると、あわてて<ruby><rb>女中奉公</rb><rt>じょちゅうぼうこう</rt></ruby>に出した。俗に、<placeName ref="#kappa-yokocho"><ruby><rb>河童</rb><rt>がたろ</rt></ruby>横町</placeName>の材木屋の主人から<ruby><rb>随分</rb><rt>ずいぶん</rt></ruby>と良い条件で話があったので、<persName ref="#otatsu">お辰</persName>の頭に思いがけぬ血色が出たが、ゆくゆくは<ruby><rb>妾</rb><rt>めかけ</rt></ruby>にしろとの<ruby><rb>肚</rb><rt>はら</rt></ruby>が読めて父親はうんと言わず、<placeName ref="#nipponbashi">日本橋</placeName>三丁目の<ruby><rb>古着屋</rb><rt>ふるてや</rt></ruby>へばかに悪い条件で女中奉公させた。<placeName ref="#kappa-yokocho"><ruby><rb>河童</rb><rt>がたろ</rt></ruby>横町</placeName>は<ruby><rb>昔</rb><rt>むかし</rt></ruby><ruby><rb>河童</rb><rt>かっぱ</rt></ruby>が<ruby><rb>棲</rb><rt>す</rt></ruby>んでいたといわれ、<ruby><rb>忌</rb><rt>きら</rt></ruby>われて<ruby><rb>二束三文</rb><rt>にそくさんもん</rt></ruby>だったそこの土地を材木屋の先代が買い取って、借家を建て、今はきびしく高い家賃も取るから金が出来て、河童は材木屋だと<ruby><rb>蔭口</rb><rt>かげぐち</rt></ruby>きかれていたが、妾が何人もいて若い生血を吸うからという意味もあるらしかった。<persName ref="#chouko">蝶子</persName>はむくむく女めいて、顔立ちも小ぢんまり整い、材木屋はさすがに<ruby><rb>炯眼</rb><rt>けいがん</rt></ruby>だった。</p>
+        <p><placeName ref="#nipponbashi">日本橋</placeName>の古着屋で半年余り<ruby><rb>辛抱</rb><rt>しんぼう</rt></ruby>が続いた。冬の朝、<placeName ref="#kuromon"><ruby><rb>黒門</rb><rt>くろもん</rt></ruby>市場</placeName>への買出しに<ruby><rb>廻</rb><rt>まわ</rt></ruby>り道して古着屋の前を通り掛った<persName ref="#taneyoshi">種吉</persName>は、店先を<ruby><rb>掃除</rb><rt>そうじ</rt></ruby>している<persName ref="#chouko">蝶子</persName>の手が赤ぎれて血がにじんでいるのを見て、そのままはいって掛け合い、<ruby><rb>連</rb><rt>つ</rt></ruby>れ<ruby><rb>戻</rb><rt>もど</rt></ruby>した。そして<ruby><rb>所望</rb><rt>しょもう</rt></ruby>されるままに<placeName ref="#sonezaki-shinchi"><ruby><rb>曾根崎</rb><rt>そねざき</rt></ruby><ruby><rb>新地</rb><rt>しんち</rt></ruby></placeName>のお茶屋へおちょぼ（芸者の<ruby><rb>下地</rb><rt>したじ</rt></ruby>ッ<ruby><rb>子</rb><rt>こ</rt></ruby>）にやった。</p>
+        <p><persName ref="#taneyoshi">種吉</persName>の手に五十円の金がはいり、これは借金<ruby><rb>払</rb><rt>ばら</rt></ruby>いでみるみる消えたが、あとにも先にも<ruby><rb>纏</rb><rt>まと</rt></ruby>まって受けとったのはそれきりだった。もとより<ruby><rb>左団扇</rb><rt>ひだりうちわ</rt></ruby>の気持はなかったから、十七のとき<persName ref="#chouko">蝶子</persName>が芸者になると聞いて、この父はにわかに<ruby><rb>狼狽</rb><rt>ろうばい</rt></ruby>した。お<ruby><rb>披露目</rb><rt>ひろめ</rt></ruby>をするといってもまさか天婦羅を配って歩くわけには行かず、<ruby><rb>祝儀</rb><rt>しゅうぎ</rt></ruby>、<ruby><rb>衣裳</rb><rt>いしょう</rt></ruby>、心付けなど大変な物入りで、のみこんで<ruby><rb>抱主</rb><rt>かかえぬし</rt></ruby>が出してくれるのはいいが、それは前借になるから、いわば<persName ref="#chouko">蝶子</persName>を<ruby><rb>縛</rb><rt>しば</rt></ruby>る<ruby><rb>勘定</rb><rt>かんじょう</rt></ruby>になると、反対した。が、結局持前の陽気好きの気性が<ruby><rb>環境</rb><rt>かんきょう</rt></ruby>に染まって是非に芸者になりたいと<persName ref="#chouko">蝶子</persName>に<ruby><rb>駄々</rb><rt>だだ</rt></ruby>をこねられると、負けて、<persName ref="#taneyoshi">種吉</persName>は随分工面した。だから、<ruby><rb>辛</rb><rt>つら</rt></ruby>い勤めも<ruby><rb>皆</rb><rt>みな</rt></ruby>親のためという俗句は<persName ref="#chouko">蝶子</persName>に当て<ruby><rb>嵌</rb><rt>はま</rt></ruby>らぬ。<ruby><rb>不粋</rb><rt>ぶすい</rt></ruby>な客から、芸者になったのはよくよくの訳があってのことやろ、全体お前の父親は……と<ruby><rb>訊</rb><rt>き</rt></ruby>かれると、父親は<ruby><rb>博奕打</rb><rt>ばくちう</rt></ruby>ちでとか、欺されて田畑をとられたためだとか、哀れっぽく持ちかけるなど、まさか<ruby><rb>土地柄</rb><rt>とちがら</rt></ruby>、気性柄<persName ref="#chouko">蝶子</persName>には出来なかったが、といって、<ruby><rb>私</rb><rt>わて</rt></ruby>を芸者にしてくれんようなそんな<ruby><rb>薄情</rb><rt>はくじょう</rt></ruby>な親テあるもんかと泣きこんで、あわや<ruby><rb>勘当</rb><rt>かんどう</rt></ruby>さわぎだったとはさすがに本当のことも言えなんだ。「私のお父つぁんは<ruby><rb>旦</rb><rt>だん</rt></ruby>さんみたいにええ男前や」と<ruby><rb>外</rb><rt>そ</rt></ruby>らしたりして<ruby><rb>悪趣味</rb><rt>あくしゅみ</rt></ruby>極まったが、それが<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>になった。――<persName ref="#chouko">蝶子</persName>は<ruby><rb>声自慢</rb><rt>こえじまん</rt></ruby>で、どんなお<ruby><rb>座敷</rb><rt>ざしき</rt></ruby>でも思い切り声を張り上げて<ruby><rb>咽喉</rb><rt>のど</rt></ruby>や額に筋を立て、<ruby><rb>襖紙</rb><rt>ふすまがみ</rt></ruby>がふるえるという浅ましい<ruby><rb>唄</rb><rt>うた</rt></ruby>い方をし、陽気な座敷には無くてかなわぬ<ruby><rb>妓</rb><rt>こ</rt></ruby>であったから、はっさい（お<ruby><rb>転婆</rb><rt>てんば</rt></ruby>）で売っていたのだ。――それでも、たった<ruby><rb>一人</rb><rt>ひとり</rt></ruby>、<ruby><rb>馴染</rb><rt>なじ</rt></ruby>みの<ruby><rb>安化粧品問屋</rb><rt>やすけしょうひんどんや</rt></ruby>の<ruby><rb>息子</rb><rt>むすこ</rt></ruby>には何もかも本当のことを言った。</p>
+        <p><persName ref="#ryukichi"><ruby><rb>維康柳吉</rb><rt>これやすりゅうきち</rt></ruby></persName>といい、女房もあり、ことし四つの子供もある三十一歳の男だったが、<ruby><rb>逢</rb><rt>あ</rt></ruby>い初めて<ruby><rb>三月</rb><rt>みつき</rt></ruby>でもうそんな仲になり、評判立って、一本になった時の<ruby><rb>旦那</rb><rt>だんな</rt></ruby>をしくじった。中風で<ruby><rb>寝</rb><rt>ね</rt></ruby>ている父親に代って<persName ref="#ryukichi">柳吉</persName>が切り廻している商売というのが、<ruby><rb>理髪店</rb><rt>りはつてん</rt></ruby>向きの<ruby><rb>石鹸</rb><rt>せっけん</rt></ruby>、クリーム、チック、ポマード、美顔水、ふけとりなどの<ruby><rb>卸問屋</rb><rt>おろしどんや</rt></ruby>であると聞いて、散髪屋へ顔を<ruby><rb>剃</rb><rt>そ</rt></ruby>りに行っても、<ruby><rb>其店</rb><rt>そこ</rt></ruby>で使っている化粧品のマークに気をつけるようになった。ある日、<placeName ref="#umeda-shindo"><ruby><rb>梅田新道</rb><rt>うめだしんみち</rt></ruby></placeName>にある<persName ref="#ryukichi">柳吉</persName>の店の前を通り掛ると、<ruby><rb>厚子</rb><rt>あつし</rt></ruby>を着た<persName ref="#ryukichi">柳吉</persName>が<ruby><rb>丁稚</rb><rt>でっち</rt></ruby>相手に地方送りの荷造りを<ruby><rb>監督</rb><rt>かんとく</rt></ruby>していた。耳に<ruby><rb>挟</rb><rt>はさ</rt></ruby>んだ筆をとると、さらさらと<ruby><rb>帖面</rb><rt>ちょうめん</rt></ruby>の上を走らせ、やがて、それを口にくわえて<ruby><rb>算盤</rb><rt>そろばん</rt></ruby>を<ruby><rb>弾</rb><rt>はじ</rt></ruby>くその姿がいかにもかいがいしく見えた。ふと視線が合うと、<persName ref="#chouko">蝶子</persName>は耳の<ruby><rb>附根</rb><rt>つけね</rt></ruby>まで<ruby><rb>真赧</rb><rt>まっか</rt></ruby>になったが、<persName ref="#ryukichi">柳吉</persName>は素知らぬ顔で、ちょいちょい<ruby><rb>横眼</rb><rt>よこめ</rt></ruby>を使うだけであった。それが<ruby><rb>律儀者</rb><rt>りちぎもの</rt></ruby>めいた。<persName ref="#ryukichi">柳吉</persName>はいささか<ruby><rb>吃</rb><rt>ども</rt></ruby>りで、物をいうとき上を向いてちょっと口をもぐもぐさせる、その<ruby><rb>恰好</rb><rt>かっこう</rt></ruby>がかねがね<persName ref="#chouko">蝶子</persName>には<ruby><rb>思慮</rb><rt>しりょ</rt></ruby>あり気に見えていた。</p>
+        <p><persName ref="#chouko">蝶子</persName>は<persName ref="#ryukichi">柳吉</persName>をしっかりした<ruby><rb>頼</rb><rt>たの</rt></ruby>もしい男だと思い、そのように<ruby><rb>言</rb><rt>い</rt></ruby>い<ruby><rb>触</rb><rt>ふ</rt></ruby>らしたが、そのため、その仲は彼女の方からのぼせて行ったといわれてもかえす言葉はないはずだと、人々は<ruby><rb>取沙汰</rb><rt>とりざた</rt></ruby>した。<ruby><rb>酔</rb><rt>よ</rt></ruby>い<ruby><rb>癖</rb><rt>ぐせ</rt></ruby>の<ruby><rb>浄瑠璃</rb><rt>じょうるり</rt></ruby>のサワリで泣声をうなる、そのときの<persName ref="#ryukichi">柳吉</persName>の顔を、人々は正当に判断づけていたのだ。夜店の二銭のドテ焼（<ruby><rb>豚</rb><rt>ぶた</rt></ruby>の皮身を<ruby><rb>味噌</rb><rt>みそ</rt></ruby>で<ruby><rb>煮</rb><rt>に</rt></ruby>つめたもの）が好きで、<persName ref="#ryukichi">ドテ焼さん</persName>と<ruby><rb>渾名</rb><rt>あだな</rt></ruby>がついていたくらいだ。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>はうまい物に掛けると眼がなくて、「うまいもん屋」へしばしば<persName ref="#chouko">蝶子</persName>を連れて行った。彼にいわせると、<placeName ref="#kita">北</placeName>にはうまいもんを食わせる店がなく、うまいもんは何といっても<placeName ref="#minami">南</placeName>に限るそうで、それも一流の店は駄目や、<ruby><rb>汚</rb><rt>きたな</rt></ruby>いことを言うようだが銭を捨てるだけの話、<ruby><rb>本真</rb><rt>ほんま</rt></ruby>にうまいもん食いたかったら、「一ぺん<ruby><rb>俺</rb><rt>おれ</rt></ruby>の後へ<ruby><rb>随</rb><rt>つ</rt></ruby>いて……」行くと、無論一流の店へははいらず、よくて<placeName ref="#kozu"><ruby><rb>高津</rb><rt>こうづ</rt></ruby></placeName>の<ruby><rb>湯豆腐屋</rb><rt>ゆどうふや</rt></ruby>、下は夜店のドテ焼、<ruby><rb>粕饅頭</rb><rt>かすまんじゅう</rt></ruby>から、<ruby><rb><placeName ref="#ebisubashi">戎橋</placeName>筋</rb><rt>えびすばしすじ</rt></ruby><placeName ref="#sogo">そごう</placeName>横「<placeName ref="#shiruichi">しる市</placeName>」のどじょう<ruby><rb>汁</rb><rt>じる</rt></ruby>と<ruby><rb>皮鯨汁</rb><rt>ころじる</rt></ruby>、<placeName ref="#dotonbori"><ruby><rb>道頓堀</rb><rt>どうとんぼり</rt></ruby></placeName><ruby><rb><placeName ref="#aioibashi">相合橋</placeName>東詰</rb><rt>あいおいばしひがしづめ</rt></ruby>「<placeName ref="#izumoya"><ruby><rb>出雲屋</rb><rt>いずもや</rt></ruby></placeName>」のまむし、<placeName ref="#nipponbashi">日本橋</placeName>「<placeName ref="#takoume">たこ梅</placeName>」のたこ、<placeName ref="#hozenji">法善寺</placeName>境内「<placeName ref="#shobendango"><ruby><rb>正弁丹吾亭</rb><rt>しょうべんたんごてい</rt></ruby></placeName>」の<ruby><rb>関東煮</rb><rt>かんとだき</rt></ruby>、<placeName ref="#sennichimae">千日前</placeName><placeName ref="#tokiwaza"><ruby><rb>常盤座</rb><rt>ときわざ</rt></ruby></placeName>横「<placeName ref="#sushisute"><ruby><rb>寿司</rb><rt>すし</rt></ruby>捨</placeName>」の鉄火巻と<ruby><rb>鯛</rb><rt>たい</rt></ruby>の皮の<ruby><rb>酢味噌</rb><rt>すみそ</rt></ruby>、その向い「<placeName ref="#darumaya">だるまや</placeName>」のかやく<ruby><rb>飯</rb><rt>めし</rt></ruby>と粕じるなどで、いずれも銭のかからぬいわば<ruby><rb>下手</rb><rt>げて</rt></ruby>もの料理ばかりであった。芸者を連れて行くべき店の構えでもなかったから、はじめは<persName ref="#chouko">蝶子</persName>も<ruby><rb>択</rb><rt>よ</rt></ruby>りによってこんな所へと思ったが、「ど、ど、ど、どや、うまいやろが、こ、こ、こ、こんなうまいもんどこイ行ったかて食べられへんぜ」という講釈を聞きながら食うと、なるほどうまかった。</p>
+        <p>乱暴に白い<ruby><rb>足袋</rb><rt>たび</rt></ruby>を<ruby><rb>踏</rb><rt>ふ</rt></ruby>みつけられて、キャッと声を立てる、それもかえって<ruby><rb>食慾</rb><rt>しょくよく</rt></ruby>が出るほどで、そんな下手もの料理の食べ歩きがちょっとした<ruby><rb>愉</rb><rt>たの</rt></ruby>しみになった。立て込んだ客の<ruby><rb>隙間</rb><rt>すきま</rt></ruby>へ腰を割り込んで行くのも、<placeName ref="#kita">北新地</placeName>の売れっ妓の<ruby><rb>沽券</rb><rt>こけん</rt></ruby>に<ruby><rb>関</rb><rt>かか</rt></ruby>わるほどではなかった。第一、そんな安物ばかり食わせどおしでいるものの、帯、着物、<ruby><rb>長襦袢</rb><rt>ながじゅばん</rt></ruby>から帯じめ、腰下げ、<ruby><rb>草履</rb><rt>ぞうり</rt></ruby>までかなり散財してくれていたから、けちくさいといえた義理ではなかった。クリーム、ふけとりなどはどうかと思ったが、これもこっそり愛用した。それに、父親は今なお一銭天婦羅で苦労しているのだ。<ruby><rb>殿様</rb><rt>とのさま</rt></ruby>のおしのびめいたり、しんみり父親の<ruby><rb>油滲</rb><rt>あぶらじ</rt></ruby>んだ手を思い出したりして、後に随いて廻っているうちに、だんだんに<ruby><rb>情緒</rb><rt>じょうちょ</rt></ruby>が出た。</p>
+        <p><placeName ref="#shinsekai">新世界</placeName>に二<ruby><rb>軒</rb><rt>けん</rt></ruby>、<placeName ref="#sennichimae">千日前</placeName>に一軒、<placeName ref="#dotonbori">道頓堀</placeName>に<placeName ref="#nakaza">中座</placeName>の向いと、<placeName ref="#aioibashi">相合橋</placeName>東詰にそれぞれ一軒ずつある都合五軒の<placeName ref="#izumoya">出雲屋</placeName>の中でまむしのうまいのは<placeName ref="#aioibashi">相合橋</placeName>東詰の<ruby><rb>奴</rb><rt>やつ</rt></ruby>や、ご飯にたっぷりしみこませただしの味が「なんしょ、酒しょが良う利いとおる」のをフーフー口とがらせて食べ、仲良く腹がふくれてから、<placeName ref="#hozenji">法善寺</placeName>の「<placeName ref="#kagetsu"><ruby><rb>花月</rb><rt>かげつ</rt></ruby></placeName>」へ<persName ref="#harudanji"><ruby><rb>春団治</rb><rt>はるだんじ</rt></ruby></persName>の落語を<ruby><rb>聴</rb><rt>き</rt></ruby>きに行くと、ゲラゲラ笑い合って、<ruby><rb>握</rb><rt>にぎ</rt></ruby>り合ってる手が汗をかいたりした。</p>
+        <p>深くなり、<persName ref="#ryukichi">柳吉</persName>の通い方は散々<ruby><rb>頻繁</rb><rt>ひんぱん</rt></ruby>になった。遠出もあったりして、やがて<persName ref="#ryukichi">柳吉</persName>は金に困って来たと、<persName ref="#chouko">蝶子</persName>にも分った。</p>
+        <p>父親が中風で寝付くとき忘れずに、銀行の通帳と実印を<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>の下に<ruby><rb>隠</rb><rt>かく</rt></ruby>したので、<persName ref="#ryukichi">柳吉</persName>も手のつけようがなかった。<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>、自由になる金は知れたもので、得意先の理髪店を<ruby><rb>駆</rb><rt>か</rt></ruby>け廻っての集金だけで細かくやりくりしていたから、みるみる不義理が<ruby><rb>嵩</rb><rt>かさ</rt></ruby>んで、<ruby><rb>蒼</rb><rt>あお</rt></ruby>くなっていた。そんな<persName ref="#ryukichi">柳吉</persName>のところへ<persName ref="#chouko">蝶子</persName>から<ruby><rb>男履</rb><rt>おとこば</rt></ruby>きの草履を<ruby><rb>贈</rb><rt>おく</rt></ruby>って来た。<ruby><rb>添</rb><rt>そ</rt></ruby>えた手紙には、大分永いこと来て下さらぬゆえ、しん配しています。一同舌をしたいゆえ……とあった。一度話をしたい（一同舌をしたい）と<persName ref="#ryukichi">柳吉</persName>だけが判読出来るその手紙が、いつの間にか病人のところへ<ruby><rb>洩</rb><rt>も</rt></ruby>れてしまって、<ruby><rb>枕元</rb><rt>まくらもと</rt></ruby>へ呼び寄せての度重なる意見もかねがね<ruby><rb>効目</rb><rt>ききめ</rt></ruby>なしと<ruby><rb>諦</rb><rt>あきら</rt></ruby>めていた父親も、今度ばかりは、打つ、<ruby><rb>撲</rb><rt>なぐ</rt></ruby>るの体の自由が利かぬのが残念だと<ruby><rb>涙</rb><rt>なみだ</rt></ruby>すら<ruby><rb>浮</rb><rt>うか</rt></ruby>べて腹を立てた。わざと五つの女の子を<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の上に<ruby><rb>抱</rb><rt>だ</rt></ruby>き寄せて、若い妻は上向いていた。実家へ帰る肚を決めていた事で、わずかに<ruby><rb>叫</rb><rt>さけ</rt></ruby>び出すのをこらえているようだった。うなだれて<persName ref="#ryukichi">柳吉</persName>は、<persName ref="#chouko">蝶子</persName>の出しゃ張り<ruby><rb>奴</rb><rt>め</rt></ruby>と肚の中で<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いたが、しかし、<persName ref="#chouko">蝶子</persName>の気持は悪くとれなかった。草履は相当無理をしたらしく、<placeName ref="#ebisubashi"><ruby><rb>戎橋</rb><rt>えびすばし</rt></ruby></placeName>「<placeName ref="#tengu"><ruby><rb>天狗</rb><rt>てんぐ</rt></ruby></placeName>」の印がはいっており、<ruby><rb>鼻緒</rb><rt>はなお</rt></ruby>は<ruby><rb>蛇</rb><rt>へび</rt></ruby>の皮であった。</p>
+        <p>「<ruby><rb>釜</rb><rt>かま</rt></ruby>の下の灰まで自分のもんや思たら大間違いやぞ、<ruby><rb>久離</rb><rt>きゅうり</rt></ruby>切っての勘当……」を申し渡した父親の<ruby><rb>頑固</rb><rt>がんこ</rt></ruby>は死んだ母親もかねがね泣かされて来たくらいゆえ、いったんは家を出なければ収まりがつかなかった。家を出た<ruby><rb>途端</rb><rt>とたん</rt></ruby>に、ふと<placeName ref="#tokyo">東京</placeName>で集金すべき金がまだ残っていることを思い出した。ざっと勘定して四五百円はあると知って、急に心の<ruby><rb>曇</rb><rt>くも</rt></ruby>りが晴れた。すぐ行きつけの茶屋へあがって、<persName ref="#chouko">蝶子</persName>を呼び、物は相談やが<ruby><rb>駈落</rb><rt>かけお</rt></ruby>ちせえへんか。</p>
+        <p>あくる日、<persName ref="#ryukichi">柳吉</persName>が<placeName ref="#umeda">梅田</placeName>の駅で待っていると、<persName ref="#chouko">蝶子</persName>はカンカン日の当っている駅前の広場を<ruby><rb>大股</rb><rt>おおまた</rt></ruby>で横切って来た。<ruby><rb>髪</rb><rt>かみ</rt></ruby>をめがねに結っていたので、変に生々しい感じがして、<persName ref="#ryukichi">柳吉</persName>はふいといやな気がした。すぐ<placeName ref="#tokyo">東京</placeName>行きの汽車に乗った。</p>
+        <p><date when="--08">八月</date>の末で<ruby><rb>馬鹿</rb><rt>ばか</rt></ruby>に蒸し暑い<placeName ref="#tokyo">東京</placeName>の町を駆けずり廻り、月末にはまだ二三日<ruby><rb>間</rb><rt>ま</rt></ruby>があるというのを拝み<ruby><rb>倒</rb><rt>たお</rt></ruby>して三百円ほど集ったその足で、<placeName ref="#atami"><ruby><rb>熱海</rb><rt>あたみ</rt></ruby></placeName>へ行った。温泉芸者を揚げようというのを<persName ref="#chouko">蝶子</persName>はたしなめて、これからの<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の行末のことを考えたら、そんな<ruby><rb>呑気</rb><rt>のんき</rt></ruby>な気イでいてられへんともっともだったが、勘当といってもすぐ詫びをいれて帰り込む肚の<persName ref="#ryukichi">柳吉</persName>は、かめへん、かめへん。無断で抱主のところを飛出して来たことを気にしている<persName ref="#chouko">蝶子</persName>の肚の中など、無視しているようだった。芸者が来ると、<persName ref="#chouko">蝶子</persName>はしかし、ありったけの芸を出し切って一座を<ruby><rb>浚</rb><rt>さら</rt></ruby>い、土地の芸者から「<placeName ref="#osaka"><ruby><rb>大阪</rb><rt>おおさか</rt></ruby></placeName>の芸者衆にはかなわんわ」と言われて、わずかに心が<ruby><rb>慰</rb><rt>なぐさ</rt></ruby>まった。</p>
+        <p>二日そうして<ruby><rb>経</rb><rt>た</rt></ruby>ち、<ruby><rb>午頃</rb><rt>ひるごろ</rt></ruby>、ごおッーと<ruby><rb>妙</rb><rt>みょう</rt></ruby>な音がして来た途端に、<ruby><rb>激</rb><rt>はげ</rt></ruby>しく<ruby><rb>揺</rb><rt>ゆ</rt></ruby>れ出した。「<ruby><rb>地震</rb><rt>じしん</rt></ruby>や」「地震や」同時に声が出て、<persName ref="#chouko">蝶子</persName>は襖に<ruby><rb>掴</rb><rt>つか</rt></ruby>まったことは掴まったが、いきなり腰を<ruby><rb>抜</rb><rt>ぬ</rt></ruby>かし、キャッと叫んで<ruby><rb>坐</rb><rt>すわ</rt></ruby>り込んでしまった。<persName ref="#ryukichi">柳吉</persName>は反対側の<ruby><rb>壁</rb><rt>かべ</rt></ruby>にしがみついたまま<ruby><rb>離</rb><rt>はな</rt></ruby>れず、口も利けなかった。お<ruby><rb>互</rb><rt>たが</rt></ruby>いの心にその時、えらい駈落ちをしてしまったという<ruby><rb>悔</rb><rt>くい</rt></ruby>が<ruby><rb>一瞬</rb><rt>いっしゅん</rt></ruby>あった。</p>
+        <p><ruby><rb>避難</rb><rt>ひなん</rt></ruby>列車の中でろくろく物も言わなかった。やっと<placeName ref="#umeda">梅田</placeName>の駅に着くと、<ruby><rb>真</rb><rt>まっ</rt></ruby>すぐ<placeName ref="#kamishiocho"><ruby><rb>上塩町</rb><rt>かみしおまち</rt></ruby></placeName>の<persName ref="#taneyoshi">種吉</persName>の家へ行った。<ruby><rb>途々</rb><rt>みちみち</rt></ruby>、電信柱に関東大震災の号外が生々しく<ruby><rb>貼</rb><rt>は</rt></ruby>られていた。</p>
+        <p>西日の当るところで天婦羅を揚げていた<persName ref="#taneyoshi">種吉</persName>は二人の姿を見ると、<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>してしばらくは口も利けなんだ。日に焼けたその顔に、汗とはっきり区別のつく涙が落ちた。立ち話でだんだんに<ruby><rb>訊</rb><rt>き</rt></ruby>けば、<persName ref="#chouko">蝶子</persName>の<ruby><rb>失踪</rb><rt>しっそう</rt></ruby>はすぐに抱主から知らせがあり、どこにどうしていることやら、悪い男にそそのかされて売り飛ばされたのと違うやろか、生きとってくれてるんやろかと心配で夜も<ruby><rb>眠</rb><rt>ねむ</rt></ruby>れなんだという。悪い男<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>を聴き<ruby><rb>咎</rb><rt>とが</rt></ruby>めて<persName ref="#chouko">蝶子</persName>は、何はともあれ、<ruby><rb>扇子</rb><rt>せんす</rt></ruby>をパチパチさせて<ruby><rb>突</rb><rt>つ</rt></ruby>っ立っている<persName ref="#ryukichi">柳吉</persName>を「この人<ruby><rb>私</rb><rt>わて</rt></ruby>の何や」と<ruby><rb>紹介</rb><rt>しょうかい</rt></ruby>した。「へい、おこしやす」<persName ref="#taneyoshi">種吉</persName>はそれ以上<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>が続かず、そわそわしてろくろく顔もよう見なかった。</p>
+        <p><persName ref="#otatsu">お辰</persName>は娘の顔を見た途端に、<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>の<ruby><rb>袖</rb><rt>そで</rt></ruby>を顔にあてた。泣き<ruby><rb>止</rb><rt>や</rt></ruby>んで、はじめて両手をついて、「このたびは娘がいろいろと……」<persName ref="#ryukichi">柳吉</persName>に挨拶し、「弟の<persName ref="#shinichi"><ruby><rb>信一</rb><rt>しんいち</rt></ruby></persName>は<ruby><rb>尋常</rb><rt>じんじょう</rt></ruby>四年で学校へ上っとりますが、<ruby><rb>今日</rb><rt>きょう</rt></ruby>は、まだ<ruby><rb>退</rb><rt>ひ</rt></ruby>けて来とりまへんので」などと言うた。挨拶の仕様がなかったので、<persName ref="#ryukichi">柳吉</persName>は天候のことなど吃り勝ちに言うた。<persName ref="#taneyoshi">種吉</persName>は氷水を<ruby><rb>註文</rb><rt>いい</rt></ruby>に行った。</p>
+        <p><ruby><rb>銀蠅</rb><rt>ぎんばえ</rt></ruby>の飛びまわる四<ruby><rb>畳</rb><rt>じょう</rt></ruby>の<ruby><rb>部屋</rb><rt>へや</rt></ruby>は風も通らず、ジーンと音がするように蒸し暑かった。<persName ref="#taneyoshi">種吉</persName>が氷いちごを<ruby><rb>提箱</rb><rt>さげばこ</rt></ruby>に入れて持ち帰り、皆は<ruby><rb>黙々</rb><rt>もくもく</rt></ruby>とそれをすすった。やがて、<placeName ref="#tokyo">東京</placeName>へ行って来た<ruby><rb>旨</rb><rt>むね</rt></ruby><persName ref="#chouko">蝶子</persName>が言うと、<persName ref="#taneyoshi">種吉</persName>は「そら大変や、<placeName ref="#tokyo">東京</placeName>は大地震や」<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>してしまったので、それで話の糸口はついた。避難列車で命からがら逃げて来たと聞いて、両親は、えらい苦労したなとしきりに同情した。それで、若い二人、とりわけ<persName ref="#ryukichi">柳吉</persName>はほっとした。「何とお詫びしてええやら」すらすら彼は言葉が出て、<persName ref="#taneyoshi">種吉</persName>と<persName ref="#otatsu">お辰</persName>はすこぶる<ruby><rb>恐縮</rb><rt>きょうしゅく</rt></ruby>した。</p>
+        <p>母親の浴衣を借りて<ruby><rb>着替</rb><rt>きか</rt></ruby>えると、<persName ref="#chouko">蝶子</persName>の肚はきまった。いったん<ruby><rb>逐電</rb><rt>ちくでん</rt></ruby>したからにはおめおめ抱主のところへ帰れまい、同じく家へ足踏み出来ぬ<persName ref="#ryukichi">柳吉</persName>と一緒に苦労する、「もう芸者を止めまっさ」との言葉に、<persName ref="#taneyoshi">種吉</persName>は「お前の好きなようにしたらええがな」子に<ruby><rb>甘</rb><rt>あま</rt></ruby>いところを見せた。<persName ref="#chouko">蝶子</persName>の前借は三百円足らずで、<persName ref="#taneyoshi">種吉</persName>はもはや<ruby><rb>月賦</rb><rt>げっぷ</rt></ruby>で払う肚を決めていた。「<ruby><rb>私</rb><rt>わて</rt></ruby>が<ruby><rb>親爺</rb><rt>おやじ</rt></ruby>に無心して払いまっさ」と<persName ref="#ryukichi">柳吉</persName>も<ruby><rb>黙</rb><rt>だま</rt></ruby>っているわけに行かなかったが、<persName ref="#taneyoshi">種吉</persName>は「そんなことしてもろたら困りまんがな」と手を<ruby><rb>振</rb><rt>ふ</rt></ruby>った。「あんさんのお父つぁんに<ruby><rb>都合</rb><rt>ぐつ</rt></ruby>が悪うて、私は顔合わされしまへんがな」<persName ref="#ryukichi">柳吉</persName>は別に異を<ruby><rb>樹</rb><rt>た</rt></ruby>てなかった。<persName ref="#otatsu">お辰</persName>は<persName ref="#ryukichi">柳吉</persName>の方を向いて、<persName ref="#chouko">蝶子</persName>は<ruby><rb>痲疹厄</rb><rt>はしか</rt></ruby>の他には<ruby><rb>風邪</rb><rt>かぜ</rt></ruby>一つひかしたことはない、また<ruby><rb>身体</rb><rt>からだ</rt></ruby>のどこ探してもかすり傷一つないはず、それまでに育てる苦労は……言い出して泪の一つも出る始末に、<persName ref="#ryukichi">柳吉</persName>は耳の痛い気がした。</p>
+        <p>二三日、狭苦しい<persName ref="#taneyoshi">種吉</persName>の家でごろごろしていたが、やがて、<placeName ref="#kuromon">黒門市場</placeName>の中の路地裏に二階借りして、遠慮気兼ねのない<ruby><rb>世帯</rb><rt>しょたい</rt></ruby>を張った。<ruby><rb>階下</rb><rt>した</rt></ruby>は弁当や寿司につかう折箱の職人で、二階の六畳はもっぱら折箱の置場にしてあったのを、月七円の前払いで借りたのだ。たちまち、<ruby><rb>暮</rb><rt>くら</rt></ruby>しに困った。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>に働きがないから、自然<persName ref="#chouko">蝶子</persName>が<ruby><rb>稼</rb><rt>かせ</rt></ruby>ぐ順序で、さて二度の勤めに出る気もないとすれば、結局稼ぐ道はヤトナ芸者と相場が決っていた。もと<placeName ref="#kita">北の新地</placeName>にやはり芸者をしていた<persName ref="#okin">おきん</persName>という<ruby><rb>年増</rb><rt>としま</rt></ruby>芸者が、今は<placeName ref="#kozu">高津</placeName>に一軒構えてヤトナの<ruby><rb>周旋屋</rb><rt>しゅうせんや</rt></ruby>みたいなことをしていた。ヤトナというのはいわば臨時雇で<ruby><rb>宴会</rb><rt>えんかい</rt></ruby>や<ruby><rb>婚礼</rb><rt>こんれい</rt></ruby>に出張する有芸仲居のことで、芸者の花代よりは随分安上りだから、けちくさい宴会からの需要が多く、<persName ref="#okin">おきん</persName>は芸者上りのヤトナ数人と<ruby><rb>連絡</rb><rt>れんらく</rt></ruby>をとり、派出させて<ruby><rb>仲介</rb><rt>ちゅうかい</rt></ruby>の分をはねると相当な<ruby><rb>儲</rb><rt>もう</rt></ruby>けになり、今では電話の一本も引いていた。一宴会、夕方から<ruby><rb>夜更</rb><rt>よふ</rt></ruby>けまでで六円、うち分をひいてヤトナの儲けは三円五十銭だが、婚礼の時は式役代も取るから儲けは六円、祝儀もまぜると悪い<ruby><rb>収入</rb><rt>みい</rt></ruby>りではないと<persName ref="#okin">おきん</persName>から聴いて、<ruby><rb>早速</rb><rt>さっそく</rt></ruby>仲間にはいった。</p>
+        <p><ruby><rb>三味線</rb><rt>しゃみせん</rt></ruby>をいれた小型のトランク提げて電車で指定の場所へ行くと、すぐ<ruby><rb>膳部</rb><rt>ぜんぶ</rt></ruby>の運びから<ruby><rb>燗</rb><rt>かん</rt></ruby>の世話に<ruby><rb>掛</rb><rt>かか</rt></ruby>る。三、四十人の客にヤトナ三人で一通り<ruby><rb>酌</rb><rt>しゃく</rt></ruby>をして廻るだけでも大変なのに、あとがえらかった。おきまりの会費で存分愉しむ肚の不粋な客を相手に、息のつく間もないほど<ruby><rb>弾</rb><rt>ひ</rt></ruby>かされ歌わされ、<ruby><rb>浪花節</rb><rt>なにわぶし</rt></ruby>の三味から<ruby><rb>声色</rb><rt>こわいろ</rt></ruby>の合の手まで勤めてくたくたになっているところを、<ruby><rb>安来節</rb><rt>やすぎぶし</rt></ruby>を<ruby><rb>踊</rb><rt>おど</rt></ruby>らされた。それでも根が陽気好きだけに大して苦にもならず身をいれて勤めていると、客が、芸者よりましや。やはり悲しかった。本当の年を聞けば<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>するほどの大年増の<ruby><rb>朋輩</rb><rt>ほうばい</rt></ruby>が、おひらきの前に急に祝儀を当てこんで若い女めいた身振りをするのも、同じヤトナであってみれば、ひとごとではなかった。夜更けて赤電車で帰った。<placeName ref="#nipponbashi">日本橋</placeName>一丁目で降りて、<ruby><rb>野良犬</rb><rt>のらいぬ</rt></ruby>や拾い屋（バタ屋）が<ruby><rb>芥箱</rb><rt>ごみばこ</rt></ruby>をあさっているほかに人通りもなく、静まりかえった中にただ魚の<ruby><rb>生臭</rb><rt>なまぐさ</rt></ruby>い<ruby><rb>臭気</rb><rt>しゅうき</rt></ruby>が<ruby><rb>漂</rb><rt>ただよ</rt></ruby>うている<placeName ref="#kuromon">黒門市場</placeName>の中を通り、路地へはいるとプンプン良い<ruby><rb>香</rb><rt>にお</rt></ruby>いがした。</p>
+        <p><ruby><rb>山椒昆布</rb><rt>さんしょこんぶ</rt></ruby>を煮る香いで、思い切り上等の昆布を五分四角ぐらいの大きさに細切りして山椒の実と一緒に<ruby><rb>鍋</rb><rt>なべ</rt></ruby>にいれ、<ruby><rb>亀甲万</rb><rt>きっこうまん</rt></ruby>の<ruby><rb>濃口</rb><rt>こいくち</rt></ruby>醤油をふんだんに使って、<ruby><rb>松炭</rb><rt>まつずみ</rt></ruby>のとろ火でとろとろ二昼夜煮つめると、<placeName ref="#ebisubashi"><ruby><rb>戎橋</rb><rt>えびすばし</rt></ruby></placeName>の「<placeName ref="#oguraya">おぐらや</placeName>」で売っている山椒昆布と同じ位のうまさになると<persName ref="#ryukichi">柳吉</persName>は言い、<ruby><rb>退屈</rb><rt>たいくつ</rt></ruby>しのぎに<ruby><rb>昨日</rb><rt>きのう</rt></ruby>からそれに掛り出していたのだ。火種を切らさぬことと、時々かきまわしてやることが大切で、そのため今日は一歩も外へ出ず、だからいつもはきまって使うはずの日に一円の<ruby><rb>小遣</rb><rt>こづか</rt></ruby>いに少しも手をつけていなかった。<persName ref="#chouko">蝶子</persName>の姿を見ると<persName ref="#ryukichi">柳吉</persName>は「どや、ええ<ruby><rb>按配</rb><rt>あんばい</rt></ruby>に煮えて来よったやろ」長い<ruby><rb>竹箸</rb><rt>たけばし</rt></ruby>で鍋の中を<ruby><rb>掻</rb><rt>か</rt></ruby>き廻しながら言うた。そんな<persName ref="#ryukichi">柳吉</persName>に<persName ref="#chouko">蝶子</persName>はひそかにそこはかとなき<ruby><rb>恋</rb><rt>こい</rt></ruby>しさを感じるのだが、癖で甘ったるい気分は外に出せず、着物の<ruby><rb>裾</rb><rt>すそ</rt></ruby>をひらいた長襦袢の膝でぺたりと坐るなり「なんや、まだたいてるのんか、えらい<ruby><rb>暇</rb><rt>ひま</rt></ruby>かかって何してるのや」こんな口を利いた。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>は二十歳の<persName ref="#chouko">蝶子</persName>のことを「おばはん」と呼ぶようになった。「おばはん小遣い足らんぜ」そして三円ぐらい手に<ruby><rb>握</rb><rt>にぎ</rt></ruby>ると、昼間は<ruby><rb>将棋</rb><rt>しょうぎ</rt></ruby>などして時間をつぶし、夜は<placeName ref="#futatsuido"><ruby><rb>二</rb><rt>ふた</rt></ruby>ツ<ruby><rb>井戸</rb><rt>いど</rt></ruby></placeName>の「<placeName ref="#oniichan">お<ruby><rb>兄</rb><rt>にい</rt></ruby>ちゃん</placeName>」という安カフェへ出掛けて、女給の手にさわり、「<ruby><rb>僕</rb><rt>ぼく</rt></ruby>と共鳴せえへんか」そんな調子だったから、<persName ref="#otatsu">お辰</persName>はあれでは<persName ref="#chouko">蝶子</persName>が<ruby><rb>可哀想</rb><rt>かわいそう</rt></ruby>やと<persName ref="#taneyoshi">種吉</persName>に言い言いしたが、<persName ref="#taneyoshi">種吉</persName>は「<ruby><rb>坊</rb><rt>ぼ</rt></ruby>ん坊んやから当り前のこっちゃ」別に<persName ref="#ryukichi">柳吉</persName>を非難もしなかった。どころか、「女房や子供捨てて二階ずまいせんならん言うのも、言や言うもんの、<persName ref="#chouko">蝶子</persName>が悪いさかいや」とかえって同情した。そんな父親を<persName ref="#chouko">蝶子</persName>は<persName ref="#ryukichi">柳吉</persName>のために<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しく、苦労の<ruby><rb>仕甲斐</rb><rt>しがい</rt></ruby>あると思った。「私のお父つぁん、ええところあるやろ」と思ってくれたのかくれないのか、「うん」と<persName ref="#ryukichi">柳吉</persName>は気のない返事で、何を考えているのか分からぬ顔をしていた。</p>
+        <p>その年も暮に近づいた。押しつまって何となく<ruby><rb>慌</rb><rt>あわただ</rt></ruby>しい気持のするある日、正月の<ruby><rb>紋附</rb><rt>もんつき</rt></ruby>などを取りに行くと言って、<persName ref="#ryukichi">柳吉</persName>は<placeName ref="#umeda-shindo"><ruby><rb>梅田</rb><rt>うめだ</rt></ruby><ruby><rb>新道</rb><rt>しんみち</rt></ruby></placeName>の家へ出掛けて行った。<persName ref="#chouko">蝶子</persName>は水を浴びた気持がしたが、行くなという言葉がなぜか口に出なかった。その夜、宴会の口が掛って来たので、いつものように三味線をいれたトランクを提げて出掛けたが、心は重かった。<persName ref="#ryukichi">柳吉</persName>が親の家へ紋附を取りに行ったというただそれだけの事として軽々しく考えられなかった。そこには妻も居れば子もいるのだ。三味線の音色は<ruby><rb>冴</rb><rt>さ</rt></ruby>えなかった。それでも、やはり襖紙がふるえるほどの声で歌い、やっとおひらきになって、雪の道を飛んで帰ってみると、<persName ref="#ryukichi">柳吉</persName>は戻っていた。<ruby><rb>火鉢</rb><rt>ひばち</rt></ruby>の前に中腰になり、酒で染まった顔をその中に突っ込むようにしょんぼり坐っているその<ruby><rb>容子</rb><rt>ようす</rt></ruby>が、いかにも元気がないと、一目でわかった。<persName ref="#chouko">蝶子</persName>はほっとした。――父親は<persName ref="#ryukichi">柳吉</persName>の姿を見るなり、<ruby><rb>寝床</rb><rt>ねどこ</rt></ruby>の中で、何しに来たと<ruby><rb>呶鳴</rb><rt>どな</rt></ruby>りつけたそうである。妻は<ruby><rb>籍</rb><rt>せき</rt></ruby>を抜いて実家に帰り、女の子は<persName ref="#ryukichi">柳吉</persName>の妹の<persName ref="#fudeko">筆子</persName>が十八の年で母親代りに<ruby><rb>面倒</rb><rt>めんどう</rt></ruby>みているが、その子供にも会わせてもらえなかった。<persName ref="#ryukichi">柳吉</persName>が<persName ref="#chouko">蝶子</persName>と世帯を持ったと聴いて、父親は<ruby><rb>怒</rb><rt>おこ</rt></ruby>るというよりも<persName ref="#ryukichi">柳吉</persName>を<ruby><rb>嘲笑</rb><rt>ちょうしょう</rt></ruby>し、また、<persName ref="#chouko">蝶子</persName>のことについてかなりひどい事を言ったということだった。――<persName ref="#chouko">蝶子</persName>は「<ruby><rb>私</rb><rt>わて</rt></ruby>のこと悪う言やはんのは無理おまへん」としんみりした。が、肚の中では、私の力で<persName ref="#ryukichi">柳吉</persName>を一人前にしてみせまっさかい、心配しなはんなとひそかに<persName ref="#ryukichi">柳吉</persName>の父親に向って呟く気持を持った。自身にも言い聴かせて「私は何も前の奥さんの<ruby><rb>後釜</rb><rt>あとがま</rt></ruby>に坐るつもりやあらへん、<persName ref="#ryukichi">維康</persName>を一人前の男に出世させたら<ruby><rb>本望</rb><rt>ほんもう</rt></ruby>や」そう思うことは涙をそそる快感だった。その気持の張りと<persName ref="#ryukichi">柳吉</persName>が帰って来た喜びとで、その夜興奮して眠れず、眼をピカピカ光らせて低い<ruby><rb>天井</rb><rt>てんじょう</rt></ruby>を<ruby><rb>睨</rb><rt>にら</rt></ruby>んでいた。</p>
+        <p>まえまえから、<persName ref="#chouko">蝶子</persName>はチラシを<ruby><rb>綴</rb><rt>と</rt></ruby>じて<ruby><rb>家計簿</rb><rt>かけいぼ</rt></ruby>を作り、ほうれん草三銭、<ruby><rb>風呂銭</rb><rt>ふろせん</rt></ruby>三銭、ちり紙四銭、などと毎日の入費を書き込んで世帯を切り詰め、<persName ref="#ryukichi">柳吉</persName>の毎日の小遣い以外に無駄な費用は<ruby><rb>慎</rb><rt>つつし</rt></ruby>んで、ヤトナの儲けの半分ぐらいは貯金していたが、そのことがあってから、貯金に対する気の配り方も違って来た。一銭二銭の金も使い<ruby><rb>惜</rb><rt>お</rt></ruby>しみ、<ruby><rb>半襟</rb><rt>はんえり</rt></ruby>も<ruby><rb>垢</rb><rt>あか</rt></ruby>じみた。正月を当てこんでうんと<ruby><rb>材料</rb><rt>もと</rt></ruby>を仕入れるのだとて、<persName ref="#taneyoshi">種吉</persName>が仕入れの金を無心に来ると、「<ruby><rb>私</rb><rt>わて</rt></ruby>には金みたいなもんあらへん」<persName ref="#taneyoshi">種吉</persName>と入れ代って<persName ref="#otatsu">お辰</persName>が「<persName ref="#ryukichi">維康</persName>さんにカフェたらいうとこイ行かす金あってもか」と言いに来たが、うんと言わなかった。</p>
+        <p>年が明け、松の内も過ぎた。はっきり勘当だと分ってから、<persName ref="#ryukichi">柳吉</persName>のしょげ方はすこぶる哀れなものだった。父性愛ということもあった。<persName ref="#chouko">蝶子</persName>に言われても、子供を無理に引き取る気の出なかったのは、いずれ帰参がかなうかも知れぬという下心があるためだったが、それでも、子供と離れていることはさすがに<ruby><rb>淋</rb><rt>さび</rt></ruby>しいと、これは人ごとでなかった。ある日、昔の遊び友達に会い、<ruby><rb>誘</rb><rt>さそ</rt></ruby>われると、もともと好きな道だったから、久しぶりにぐたぐたに酔うた。その夜はさすがに家をあけなかったが、翌日、<persName ref="#chouko">蝶子</persName>が隠していた貯金帳をすっかりおろして、昨夜の返礼だとて友達を呼び出し、<placeName ref="#namba-shinchi"><ruby><rb>難波</rb><rt>なんば</rt></ruby>新地</placeName>へはまりこんで、二日、使い果して<ruby><rb>魂</rb><rt>たましい</rt></ruby>の抜けた男のようにとぼとぼ<placeName ref="#kuromon">黒門市場</placeName>の路地裏長屋へ帰って来た。「帰るとこ、よう忘れんかったこっちゃな」そう言って<persName ref="#chouko">蝶子</persName>は<ruby><rb>頸筋</rb><rt>くびすじ</rt></ruby>を掴んで突き倒し、肩をたたく時の要領で、頭をこつこつたたいた。「おばはん、何すんねん、無茶しな」しかし、<ruby><rb>抵抗</rb><rt>ていこう</rt></ruby>する元気もないかのようだった。二日酔いで頭があばれとると、蒲団にくるまってうんうん<ruby><rb>唸</rb><rt>うな</rt></ruby>っている<persName ref="#ryukichi">柳吉</persName>の顔をピシャリと撲って、何となく外へ出た。<placeName ref="#sennichimae">千日前</placeName>の<placeName ref="#aishinkan">愛進館</placeName>で<persName ref="#kyozan-koen"><ruby><rb>京山小円</rb><rt>きょうやまこえん</rt></ruby></persName>の浪花節を聴いたが、一人では面白いとも思えず、出ると、この二三日飯も咽喉へ通らなかったこととて急に空腹を感じ、<placeName ref="#rakutenchi">楽天地</placeName>横の<placeName ref="#jiyuken">自由軒</placeName>で玉子入りのライスカレーを食べた。「<placeName ref="#jiyuken"><ruby><rb>自由軒</rb><rt>ここ</rt></ruby></placeName>のラ、ラ、ライスカレーはご飯にあんじょうま、ま、ま、まむしてあるよって、うまい」とかつて<persName ref="#ryukichi">柳吉</persName>が言った言葉を想い出しながら、カレーのあとのコーヒーを飲んでいると、いきなり甘い気持が胸に<ruby><rb>湧</rb><rt>わ</rt></ruby>いた。こっそり帰ってみると、<persName ref="#ryukichi">柳吉</persName>はいびきをかいていた。だし抜けに、<ruby><rb>荒々</rb><rt>あらあら</rt></ruby>しく揺すぶって、<persName ref="#ryukichi">柳吉</persName>が眠い眼をあけると、「<ruby><rb>阿呆</rb><rt>あほ</rt></ruby>んだら」そして<ruby><rb>唇</rb><rt>くちびる</rt></ruby>をとがらして<persName ref="#ryukichi">柳吉</persName>の顔へもって行った。</p>
+        <p>あくる日、二人で改めて<placeName ref="#jiyuken">自由軒</placeName>へ行き、帰りに<placeName ref="#kozu">高津</placeName>の<persName ref="#okin">おきん</persName>の所へ仲の良い夫婦の顔を出した。ことを知っていた<persName ref="#okin">おきん</persName>は、<persName ref="#ryukichi">柳吉</persName>に意見めいた口を利いた。<persName ref="#okin">おきん</persName>の<ruby><rb>亭主</rb><rt>ていしゅ</rt></ruby>はかつて<placeName ref="#kitahama"><ruby><rb>北浜</rb><rt>きたはま</rt></ruby></placeName>で羽振りが良く<persName ref="#okin">おきん</persName>を<ruby><rb>落籍</rb><rt>ひか</rt></ruby>して死んだ女房の後釜に<ruby><rb>据</rb><rt>す</rt></ruby>えた途端に<ruby><rb>没落</rb><rt>ぼつらく</rt></ruby>したが、<persName ref="#okin">おきん</persName>は現在のヤトナ周旋屋、亭主は<ruby><rb>恥</rb><rt>はじ</rt></ruby>をしのんで<placeName ref="#kitahama">北浜</placeName>の取引所へ書記に雇われて、いわば夫婦共稼ぎで、亭主の没落は<persName ref="#okin">おきん</persName>のせいだなどと人に後指ささせぬ今の暮しだと、引合いに出したりした。「<persName ref="#ryukichi">維康</persName>さん、あんたもぶらぶら遊んでばかりしてんと、何ぞ働く所を……」探す肚があるのかないのか、<persName ref="#ryukichi">柳吉</persName>は何の表情もなく聴いていた。<persName ref="#ryukichi">維康</persName>さんの肚は分らんと<persName ref="#okin">おきん</persName>はあとで<persName ref="#chouko">蝶子</persName>に言うたので、<persName ref="#chouko">蝶子</persName>は肩身の狭い思いがした。が、間もなく働き口を見つけたので、<persName ref="#chouko">蝶子</persName>は早速<persName ref="#okin">おきん</persName>に報告した。それで肩身が広くなったというほどではなかったが、やはり嬉しかった。</p>
+        <p><placeName ref="#sennichimae">千日前</placeName>「<placeName ref="#irohagyunikuten">いろは牛肉店</placeName>」の<ruby><rb>隣</rb><rt>となり</rt></ruby>にある<ruby><rb>剃刀屋</rb><rt>かみそりや</rt></ruby>の通い店員で、朝十時から夜十一時までの勤務、弁当自弁の月給二十五円だが、それでも文句なかったらと友達が紹介してくれたのだ。<persName ref="#ryukichi">柳吉</persName>はいやとは言えなかった。安全剃刀、レザー、ナイフ、ジャッキその他理髪に関係ある品物を商っているのだから、やはり理髪店相手の化粧品を商っていた<persName ref="#ryukichi">柳吉</persName>には、いちばん適しているだろうと骨折ってくれた、その手前もあった。門口の狭い割に馬鹿に奥行のある細長い店だから昼間なぞ日が<ruby><rb>充分</rb><rt>じゅうぶん</rt></ruby><ruby><rb>射</rb><rt>さ</rt></ruby>さず、昼電を<ruby><rb>節約</rb><rt>しまつ</rt></ruby>した薄暗いところで火鉢の灰をつつきながら、戸外の人通りを<ruby><rb>眺</rb><rt>なが</rt></ruby>めていると、そこの明るさが<ruby><rb>嘘</rb><rt>うそ</rt></ruby>のようだった。ちょうど向い側が共同便所でその臭気がたまらなかった。その隣りは<placeName ref="#chikurinji"><ruby><rb>竹林寺</rb><rt>ちくりんじ</rt></ruby></placeName>で、門の前の向って右側では鉄冷鉱泉を売っており、左側、つまり共同便所に近い方では<ruby><rb>餅</rb><rt>もち</rt></ruby>を焼いて売っていた。醤油をたっぷりつけて<ruby><rb>狐色</rb><rt>きつねいろ</rt></ruby>にこんがり焼けてふくれているところなぞ、いかにもうまそうだったが、買う気は起らなかった。餅屋の主婦が共同便所から出ても<ruby><rb>手洗水</rb><rt>ちょうず</rt></ruby>を使わぬと覚しかったからや、と<persName ref="#ryukichi">柳吉</persName>は帰って言うた。また<ruby><rb>曰</rb><rt>いわ</rt></ruby>く、仕事は楽で、安全剃刀の広告人形がしきりに身体を動かして剃刀をといでいる恰好が面白いとて<ruby><rb>飾窓</rb><rt>ウインドー</rt></ruby>に吸いつけられる客があると、出て行って、おいでやす。それだけの芸でこと足りた。<persName ref="#chouko">蝶子</persName>は、「そら、よろしおまんな」そう<ruby><rb>励</rb><rt>はげ</rt></ruby>ました。</p>
+        <p>剃刀屋で<ruby><rb>三月</rb><rt>みつき</rt></ruby>ほど辛抱したが、やがて、主人と<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>して<ruby><rb>癪</rb><rt>しゃく</rt></ruby>やからとて店を休み休みし出したが、<persName ref="#chouko">蝶子</persName>はその口実を<ruby><rb>本真</rb><rt>ほんま</rt></ruby>だと思い、朝おこしたりしなくなり、ずるずるべったり店をやめてしまった。<persName ref="#chouko">蝶子</persName>は一層ヤトナ<ruby><rb>稼業</rb><rt>かぎょう</rt></ruby>に身を入れた。彼女だけには特別の祝儀を張り込まねばならぬと宴会の幹事が思うくらいであった。祝儀はしかし、朋輩と山分けだから、随分と引き合わぬ勘定だが、それだけに朋輩の気受けはよかった。<persName ref="#chouko">蝶子</persName>はん<persName ref="#chouko">蝶子</persName>はんと<ruby><rb>奉</rb><rt>たてまつ</rt></ruby>られるので良い気になって、朋輩へ二円、三円と小銭を貸したが、渡すなり後悔して、さすがにはっきり催促出来なかったから、何かとべんちゃら（お世辞）して、はよ返してくれという想いをそれとなく見せるのだった。五十銭の金にもちくちく胸の痛む気がしたが、<persName ref="#ryukichi">柳吉</persName>にだけは、小遣いをせびられると気前よく渡した。<persName ref="#ryukichi">柳吉</persName>は毎日がいかにも面白くないようで、<ruby><rb>殊</rb><rt>こと</rt></ruby>にこっそり<placeName ref="#umeda-shindo">梅田新道</placeName>へ出掛けたらしい日は帰ってからのふさぎ方が目立ったので、<persName ref="#chouko">蝶子</persName>は何かと気を使った。父の勘気がとけぬことが<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>の原因らしく、そのことにひそかに<ruby><rb>安堵</rb><rt>あんど</rt></ruby>するよりも気持の負担の方が大きかった。それで、<persName ref="#ryukichi">柳吉</persName>がしばしばカフェへ行くと知っても、なるべく焼餅を焼かぬように心掛けた。黙って金を渡すときの気持は、人が思っているほどには平気ではなかった。</p>
+        <p>実家に帰っているという<persName ref="#ryukichi">柳吉</persName>の妻が、肺で死んだという<ruby><rb>噂</rb><rt>うわさ</rt></ruby>を聴くと、<persName ref="#chouko">蝶子</persName>はこっそり<placeName ref="#hozenji">法善寺</placeName>の「<ruby><rb>縁結</rb><rt>えんむす</rt></ruby>び」に<ruby><rb>詣</rb><rt>まい</rt></ruby>って<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>など思い切った寄進をした。その代り、寝覚めの悪い気持がしたので、<ruby><rb>戒名</rb><rt>かいみょう</rt></ruby>を聞いたりして<ruby><rb>棚</rb><rt>たな</rt></ruby>に祭った。先妻の<ruby><rb>位牌</rb><rt>いはい</rt></ruby>が頭の上にあるのを見て、<persName ref="#ryukichi">柳吉</persName>は何となく変な気がしたが、出しゃ張るなとも言わなかった。言えば何かと話がもつれて面倒だとさすがに利口な<persName ref="#ryukichi">柳吉</persName>は、位牌さえ<persName ref="#chouko">蝶子</persName>の前では拝まなかった。<persName ref="#chouko">蝶子</persName>は毎朝花をかえたりして、一分の隙もなく<ruby><rb>振舞</rb><rt>ふるま</rt></ruby>った。</p>
+        <p>二年経つと、貯金が三百円を少し<ruby><rb>超</rb><rt>こ</rt></ruby>えた。<persName ref="#chouko">蝶子</persName>は芸者時代のことを思い出し、あれはもう全部<ruby><rb>払</rb><rt>はろ</rt></ruby>うてくれたんかと<persName ref="#taneyoshi">種吉</persName>に訊くと、「さいな、もう安心しーや、この通りや」と証文出して来て見せた。母親の<persName ref="#otatsu">お辰</persName>はセルロイド人形の内職をし、弟の<persName ref="#shinichi">信一</persName>は夕刊売りをしていたことは<persName ref="#chouko">蝶子</persName>も知っていたが、それにしてもどうして工面して払ったのかと、<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>が熱くなった。それで、はじめて弟に五十銭、<persName ref="#otatsu">お辰</persName>に三円、<persName ref="#taneyoshi">種吉</persName>に五円、それぞれくれてやる気が出た。そこで貯金はちょうど三百円になった。そのうち、<persName ref="#ryukichi">柳吉</persName>が芸者遊びに百円ほど使ったので、二百円に減った。<persName ref="#chouko">蝶子</persName>は泣けもしなかった。夕方電灯もつけぬ暗い六畳の間の<ruby><rb>真中</rb><rt>まんなか</rt></ruby>にぺたりと坐り込み、<ruby><rb>腕</rb><rt>うで</rt></ruby>ぐみして肩で息をしながら、障子紙の破れたところをじっと睨んでいた。<persName ref="#ryukichi">柳吉</persName>は三味線の<ruby><rb>撥</rb><rt>ばち</rt></ruby>で撲られた<ruby><rb>跡</rb><rt>あと</rt></ruby>を<ruby><rb>押</rb><rt>おさ</rt></ruby>えようともせず、ごろごろしていた。</p>
+        <p>もうこれ以上<ruby><rb>節約</rb><rt>しまつ</rt></ruby>の仕様もなかったが、それでも早くその百円を取り戻さねばならぬと、いろいろに工夫した。商売道具の衣裳も、よほどせっぱ詰れば染替えをするくらいで、あとは季節季節の変り目ごとに質屋での出し入れで何とかやりくりし、<ruby><rb>呉服屋</rb><rt>ごふくや</rt></ruby>に物言うのもはばかるほどであったお蔭で、半年経たぬうちにやっと元の額になったのを<ruby><rb>機会</rb><rt>しお</rt></ruby>に、いつまでも二階借りしていては人に<ruby><rb>侮</rb><rt>あなど</rt></ruby>られる、一軒借りて<ruby><rb>焼芋屋</rb><rt>やきいもや</rt></ruby>でも何でも良いから商売しようとさっそく<persName ref="#ryukichi">柳吉</persName>に持ちかけると、「そうやな」気の無い返事だったが、しかし、あくる日から彼は黙々として立ちまわり、<placeName ref="#kozu-jinja">高津神社</placeName>坂下に間口一間、奥行三間半の小さな商売家を借り受け、大工を二日雇い、自分も手伝ってしかるべく改造し、もと勤めていた時の経験と顔とで剃刀問屋から品物の<ruby><rb>委託</rb><rt>いたく</rt></ruby>をしてもらうと<ruby><rb>瞬</rb><rt>またた</rt></ruby>く間に剃刀屋の新店が出来上った。安全剃刀の<ruby><rb>替刃</rb><rt>かえば</rt></ruby>、耳かき、頭かき、鼻毛抜き、<ruby><rb>爪切</rb><rt>つめき</rt></ruby>りなどの小物からレザー、ジャッキ、西洋剃刀など商売柄、銭湯帰りの客を当て込むのが第一と店も銭湯の真向いに借りるだけの心くばりも<persName ref="#ryukichi">柳吉</persName>はしたので、<persName ref="#chouko">蝶子</persName>はしきりに感心し、開店の前日朋輩のヤトナ達が祝いの柱時計をもってやって来ると、「おいでやす」声の張りも違った。そして「<ruby><rb>主人</rb><rt>うち</rt></ruby>がこまめにやってくれまっさかいな」と言い、これは<persName ref="#ryukichi">柳吉</persName>のことを<ruby><rb>褒</rb><rt>ほ</rt></ruby>めたつもりだった。<ruby><rb>襷</rb><rt>たすき</rt></ruby>がけでこそこそ<ruby><rb>陳列棚</rb><rt>ちんれつだな</rt></ruby>の<ruby><rb>拭</rb><rt>ふ</rt></ruby>き掃除をしている<persName ref="#ryukichi">柳吉</persName>の姿は見ようによっては、随分男らしくもなかったが、女たちはいずれも感心し、<persName ref="#ryukichi">維康</persName>さんも慾が出るとなかなかの働き者だと思った。</p>
+        <p>開店の朝、向う<ruby><rb>鉢巻</rb><rt>はちまき</rt></ruby>でもしたい気持で<persName ref="#chouko">蝶子</persName>は店の間に坐っていた。<ruby><rb>午頃</rb><rt>ひるごろ</rt></ruby>、さっぱり客が来えへんなと<persName ref="#ryukichi">柳吉</persName>は心細い声を出したが、それに答えず、眼を<ruby><rb>皿</rb><rt>さら</rt></ruby>のようにして表を通る人を睨んでいた。午過ぎ、やっと客がきて安全の替刃一枚六銭の売上げだった。「まいどおおけに」「どうぞごひいきに」夫婦がかりで<ruby><rb>薄気味</rb><rt>うすきみ</rt></ruby><ruby><rb>悪</rb><rt>わる</rt></ruby>いほどサーヴィスをよくしたが、<ruby><rb>人気</rb><rt>じんき</rt></ruby>が悪いのか新店のためか、その日は十五人客が来ただけで、それもほとんど替刃ばかり、売り上げは<ruby><rb>〆</rb><rt>し</rt></ruby>めて二円にも足らなかった。</p>
+        <p>客足がさっぱりつかず、ジレットの一つも出るのは良い方で、大抵は耳かきか替刃ばかりの浅ましい売上げの日が何日も続いた。話の種も<ruby><rb>尽</rb><rt>つ</rt></ruby>きて、退屈したお互いに顔を情けなく見かわしながら店番していると、いっそ恥かしい想いがした。退屈しのぎに、昼の間の一時間か二時間浄瑠璃を<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>しに行きたいと<persName ref="#ryukichi">柳吉</persName>は言い出したが、とめる気も起らなかった。これまでぶらぶらしている時にはいつでも行けたのに、さすがに<ruby><rb>憚</rb><rt>はばか</rt></ruby>って、商売をするようになってから稽古したいという。その気持を、ひとは知らず<persName ref="#chouko">蝶子</persName>は哀れに思った。<persName ref="#ryukichi">柳吉</persName>は近くの<placeName ref="#shitadera">下寺町</placeName>の<persName ref="#takemoto-kumisho">竹本<ruby><rb>組昇</rb><rt>そしょう</rt></ruby></persName>に月謝五円で<ruby><rb>弟子入</rb><rt>でしい</rt></ruby>りし<placeName ref="#futatsuido">二ツ井戸</placeName>の<placeName ref="#tengyu">天牛書店</placeName>で稽古本の古いのを<ruby><rb>漁</rb><rt>あさ</rt></ruby>って、毎日ぶらりと出掛けた。商売に身をいれるといっても、客が<ruby><rb>来</rb><rt>こ</rt></ruby>なければ仕様がないといった顔で、店番をするときも稽古本をひらいて、ぼそぼそうなる、その声がいかにも情けなく、上達したと褒めるのもなんとなく気が引けるくらいであった。毎月食い込んで行ったので、再びヤトナに出ることにした。二度目のヤトナに出る晩、苦労とはこのことかとさすがにしんみりしたが、宴会の席ではやはり<ruby><rb>稼業</rb><rt>しょうばい</rt></ruby>大事とつとめて、一人で座敷を<ruby><rb>浚</rb><rt>さら</rt></ruby>って行かねばすまぬ、そんな気性はめったに失われるものではなかった。夕方、<persName ref="#chouko">蝶子</persName>が出掛けて行くと、<persName ref="#ryukichi">柳吉</persName>はそわそわと店を早仕舞いして、<placeName ref="#futatsuido">二ツ井戸</placeName>の市場の中にある屋台店でかやく飯とおこぜの赤出しを食い、<ruby><rb>烏貝</rb><rt>からすがい</rt></ruby>の酢味噌で酒を飲み、六十五銭の勘定払って安いもんやなと、カフェ「<placeName ref="#ichiban">一番</placeName>」でビールやフルーツをとり、肩入れをしている女給にふんだんにチップをやると、十日分の売上げが飛んでしもうた。ヤトナの儲けでどうにか暮しを立ててはいるものの、<persName ref="#ryukichi">柳吉</persName>の使い分がはげしいもので、だんだん問屋の借りも嵩んで来て、一年辛抱したあげく、店の権利の買手がついたのを幸い、思い切って店を閉めることにした。</p>
+        <p>店仕舞いメチャクチャ大投売りの二日間の売上げ百円余りと、権利を売った金百二十円と、合わせて二百二十円余りの金で問屋の払いやあちこちの支払いを済ませると、しかし十円も残らなかった。</p>
+        <p>二階借りするにも前払いでは困ると、いろいろ探しているうちに、<persName ref="#okin">おきん</persName>の所へ出はいりして顔見知りの呉服屋の<ruby><rb>担</rb><rt>かつ</rt></ruby>ぎ<ruby><rb>屋</rb><rt>や</rt></ruby>が「<ruby><rb>家</rb><rt>うち</rt></ruby>の二階空いてまんね、<persName ref="#chouko">蝶子</persName>さんのことでっさかい部屋代はいつでもよろしおま」と言うたのをこれ<ruby><rb>倖</rb><rt>さいわ</rt></ruby>いに、<placeName ref="#tobita-daimon"><ruby><rb>飛田</rb><rt>とびた</rt></ruby>大門前通り</placeName>の路地裏にあるそこの二階を借りることになった。<persName ref="#ryukichi">柳吉</persName>は相変らず浄瑠璃の稽古に出掛けたり、近所にある<ruby><rb>赤暖簾</rb><rt>あかのれん</rt></ruby>の五銭<ruby><rb>喫茶店</rb><rt>きっさてん</rt></ruby>で何時間も時間をつぶしたりして他愛なかった。<persName ref="#chouko">蝶子</persName>は口が掛れば雨の日でも雪の日でも働かいでおくものかと出掛けた。もうヤトナ達の中でも古顔になった。組合でも出来るなら、さしずめ幹事というところで、年上の朋輩からも<persName ref="#chouko">蝶子</persName><ruby><rb>姐</rb><rt>ねえ</rt></ruby>さんと言われたが、まさか得意になってはいられなかった。衣裳の裾なども恥かしいほど<ruby><rb>擦</rb><rt>す</rt></ruby>り切れて、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>から手の出るほど新しいのが欲しかった。おまけに<ruby><rb>階下</rb><rt>した</rt></ruby>が呉服の担ぎ屋とあってみれば、たとえ<ruby><rb>銘仙</rb><rt>めいせん</rt></ruby>の一枚でも買ってやらねば義理が悪いのだが、我慢してひたすら貯金に努めた。もう一度、一軒店の商売をしなければならぬと、親の<ruby><rb>仇</rb><rt>かたき</rt></ruby>をとるような気持で、われながら浅ましかった。</p>
+        <p>さん年経つと、やっと二百円たまった。<persName ref="#ryukichi">柳吉</persName>が腸が痛むというので時々医者通いし、そのため入費が嵩んで、歯がゆいほど、金はたまらなかったのだ。二百円出来たので、<persName ref="#ryukichi">柳吉</persName>に「なんぞええ商売ないやろか」と相談したが、こんどは「そんな<ruby><rb>端金</rb><rt>はしたがね</rt></ruby>ではどないも仕様がない」と乗気にならず、ある日、そのうち五十円の金を<placeName ref="#tobita">飛田</placeName>の<ruby><rb>廓</rb><rt>くるわ</rt></ruby>で瞬く間に使ってしまった。四五日まえに、妹が近々<ruby><rb>聟</rb><rt>むこ</rt></ruby>養子を<ruby><rb>迎</rb><rt>むか</rt></ruby>えて、<placeName ref="#umeda-shindo">梅田新道</placeName>の家を切り廻して行くという噂が<persName ref="#ryukichi">柳吉</persName>の耳にはいっていたので、かねがね予期していたことだったが、それでも<ruby><rb>娼妓</rb><rt>しょうぎ</rt></ruby>を相手に一日で五十円の金を使ったとは、むしろ<ruby><rb>呆</rb><rt>あき</rt></ruby>れてしまった。ぼんやりした顔をぬっと突き出して帰って来たところを、いきなり襟を掴んで突き倒し、馬乗りになって、ぐいぐい首を<ruby><rb>締</rb><rt>し</rt></ruby>めあげた。「く、く、く、るしい、苦しい、おばはん、何すんねん」と<persName ref="#ryukichi">柳吉</persName>は足をばたばたさせた。<persName ref="#chouko">蝶子</persName>は、もう思う存分<ruby><rb>折檻</rb><rt>せっかん</rt></ruby>しなければ気がすまぬと、締めつけ締めつけ、打つ、撲る、しまいに<persName ref="#ryukichi">柳吉</persName>は「どうぞ、かんにんしてくれ」と悲鳴をあげた。<persName ref="#chouko">蝶子</persName>はなかなか手をゆるめなかった。妹が聟養子を迎えると聴いたくらいでやけになる<persName ref="#ryukichi">柳吉</persName>が、腹立たしいというより、むしろ可哀想で、<persName ref="#chouko">蝶子</persName>の折檻は<ruby><rb>痴情</rb><rt>ちじょう</rt></ruby>めいた。隙を見て<persName ref="#ryukichi">柳吉</persName>は、ヒーヒー声を立てて階下へ降り、逃げまわったあげく、便所の中へ隠れてしまった。さすがにそこまでは追わなかった。階下の主婦は女だてらとたしなめたが、<persName ref="#chouko">蝶子</persName>は物一つ言わず、袖に顔をあてて、肩をふるわせると、思いがけずはじめて女らしく見えたと、主婦は思った。年下の夫を持つ彼女はかねがね<persName ref="#chouko">蝶子</persName>のことを良く言わなかった。毎朝味噌しるを<ruby><rb>拵</rb><rt>こしら</rt></ruby>えるとき、<persName ref="#ryukichi">柳吉</persName>が<ruby><rb>襷</rb><rt>たすき</rt></ruby>がけで<ruby><rb>鰹節</rb><rt>かつおぶし</rt></ruby>をけずっているのを見て、亭主にそんなことをさせて良いもんかとほとんど口に出かかった。好みの味にするため、わざわざ鰹節けずりまで自分の手でしなければ収まらぬ<persName ref="#ryukichi">柳吉</persName>の食意地の汚さなど、知らなかったのだ。担ぎ屋も同感で、いつか<persName ref="#chouko">蝶子</persName>、<persName ref="#ryukichi">柳吉</persName>と三人連れ立って<placeName ref="#sennichimae">千日前</placeName>へ浪花節を聴きに行ったとき、立て込んだ<ruby><rb>寄席</rb><rt>よせ</rt></ruby>の中で、<ruby><rb>誰</rb><rt>だれ</rt></ruby>かに<ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>をされたとて、キャッーと大声を出して<ruby><rb>騒</rb><rt>さわ</rt></ruby>ぎまわった<persName ref="#chouko">蝶子</persName>を見て、えらい女やと思い、体裁の悪そうな顔で目をしょぼしょぼさせている<persName ref="#ryukichi">柳吉</persName>にほとほと同情した、と帰って女房に言った。「あれでは今に<persName ref="#ryukichi">維康</persName>さんに<ruby><rb>嫌</rb><rt>きら</rt></ruby>われるやろ」夫婦はひそひそ語り合っていたが、案の定、<persName ref="#ryukichi">柳吉</persName>はある日ぶらりと出て行ったまま、<ruby><rb>幾日</rb><rt>いくにち</rt></ruby>も帰って来なかった。</p>
+        <p>七日経っても<persName ref="#ryukichi">柳吉</persName>は帰って来ないので、半泣きの顔で、<persName ref="#taneyoshi">種吉</persName>の家へ行き、<placeName ref="#umeda-shindo">梅田新道</placeName>にいるに違いないから、どんな容子かこっそり見て来てくれと頼んだ。<persName ref="#taneyoshi">種吉</persName>は、娘の頼みを<ruby><rb>撥</rb><rt>は</rt></ruby>ねつけるというわけではないが、別れる気の先方へ行って<ruby><rb>下手</rb><rt>へた</rt></ruby>に顔見られたら、どんな目で見られるかも知れぬと断った。「下手に未練もたんと別れた方が身のためやぜ」などとそれが親の言う言葉かと、<persName ref="#chouko">蝶子</persName>は興奮の余り口喧嘩までし、その足で<placeName ref="#shinsekai">新世界</placeName>の<ruby><rb>八卦見</rb><rt>はっけみ</rt></ruby>のところへ行った。「あんたが男はんのためにつくすその心が<ruby><rb>仇</rb><rt>あだ</rt></ruby>になる。大体この星の人は……」年を聞いて<ruby><rb>丙午</rb><rt>ひのえうま</rt></ruby>だと知ると、八卦見はもう立板に水を流すお<ruby><rb>喋</rb><rt>しゃべ</rt></ruby>りで、何もかも悪い運勢だった。「男はんの心は北に<ruby><rb>傾</rb><rt>かたむ</rt></ruby>いている」と聴いて、ぞっとした。<placeName ref="#kita">北</placeName>とは<placeName ref="#umeda-shindo">梅田新道</placeName>だ。金を払って外へ出ると、どこへ行くという当てもなく、真夏の日がカンカン当っている<ruby><rb>盛</rb><rt>さか</rt></ruby>り<ruby><rb>場</rb><rt>ば</rt></ruby>を足早に歩いた。<placeName ref="#atami">熱海</placeName>の宿で出くわした地震のことが想い出された。やはり暑い日だった。</p>
+        <p>十日目、ちょうど<ruby><rb>地蔵盆</rb><rt>じぞうぼん</rt></ruby>で、路地にも盆踊りがあり、無理に引っぱり出されて、単調な曲を<ruby><rb>繰</rb><rt>く</rt></ruby>りかえし繰りかえし、それでも時々調子に変化をもたせて弾いていると、ふと<ruby><rb>絵行燈</rb><rt>えあんどん</rt></ruby>の下をひょこひょこ歩いて来る<persName ref="#ryukichi">柳吉</persName>の顔が見えた。行燈の明りに顔が映えて、<ruby><rb>眩</rb><rt>まぶ</rt></ruby>しそうに眼をしょぼつかせていた。途端に三味線の糸が切れて撥ねた。すぐ二階へ連れあがって、積る話よりもさきに身を投げかけた。</p>
+        <p>二時間経って、電車がなくなるよってと帰って行った。短い時間の間にこれだけのことを<persName ref="#ryukichi">柳吉</persName>は話した。この十日間<placeName ref="#umeda">梅田</placeName>の家へいりびたっていたのは外やない、むろん思うところあってのことや。妹が聟養子をとるとあれば、こちらは<ruby><rb>廃嫡</rb><rt>はいちゃく</rt></ruby>と相場は決っているが、それで泣寝入りしろとは余りの仕打やと、<placeName ref="#umeda">梅田</placeName>の家へ駆け込むなり、毎日膝詰の談判をやったところ、一向に効目がない。妻を捨て、子も捨てて好きな女と一緒に暮している身に勝目はないが、廃嫡は廃嫡でも<ruby><rb>貰</rb><rt>もら</rt></ruby>うだけのものは貰わぬと、後へは行けぬ<ruby><rb>思</rb><rt>おも</rt></ruby>て<ruby><rb>梃子</rb><rt>てこ</rt></ruby>でも動かへんなんだが、<ruby><rb>親父</rb><rt>おやじ</rt></ruby>の言分はどうや。<persName ref="#chouko">蝶子</persName>、お前気にしたあかんぜ。「あんな女と一緒に暮している者に金をやっても<ruby><rb>死金</rb><rt>しにがね</rt></ruby>同然や、結局女に欺されて<ruby><rb>奪</rb><rt>と</rt></ruby>られてしまうが落ちや、ほしければ女と別れろ」こない言うたきり親父はもう物も言いくさらん。そこで、<persName ref="#chouko">蝶子</persName>、ここは一番芝居を打つこっちゃ。別れた、女も別れる言うてますと<ruby><rb>巧</rb><rt>うま</rt></ruby>く親父を欺して貰うだけのものは<ruby><rb>貰</rb><rt>もろ</rt></ruby>たら、あとは廃嫡でも<ruby><rb>灰神楽</rb><rt>はいかぐら</rt></ruby>でも、その金で気楽な商売でもやって二人<ruby><rb>末永</rb><rt>すえなご</rt></ruby>う<ruby><rb>共白髪</rb><rt>ともしらが</rt></ruby>まで暮そうやないか。いつまでもお前にヤトナさせとくのも可哀想や。それで<persName ref="#chouko">蝶子</persName>、<ruby><rb>明日</rb><rt>あした</rt></ruby>家の使の者が来よったら、別れまっさときっぱり言うて欲しいんや。<ruby><rb>本真</rb><rt>ほんま</rt></ruby>の気持で言うのやないねんぜ。しし、芝居や。芝居や。金さえ貰たらわいは<ruby><rb>直</rb><rt>じ</rt></ruby>き帰って来る。――<persName ref="#chouko">蝶子</persName>の胸に甘い気持と不安な気持が残った。</p>
+        <p>翌朝、<placeName ref="#kozu">高津</placeName>の<persName ref="#okin">おきん</persName>を訪れた。話を聴くと、<persName ref="#okin">おきん</persName>は「<persName ref="#chouko">蝶子</persName>はん、あんた<persName ref="#ryukichi">維康</persName>さんに欺されたはる」と、さすがに苦労人だった。<persName ref="#okin">おきん</persName>は、<persName ref="#ryukichi">維康</persName>が最初<persName ref="#chouko">蝶子</persName>に<ruby><rb>内緒</rb><rt>ないしょ</rt></ruby>で<placeName ref="#umeda">梅田</placeName>へ行ったと聴いて、これはうっかり芝居に乗れぬと思った。<persName ref="#ryukichi">柳吉</persName>の肚は、<persName ref="#chouko">蝶子</persName>が別れると言ってしまえば、それでまんまと帰参がかない、そのまま<placeName ref="#umeda">梅田</placeName>の家へ坐り込んでしまうつもりかも知れぬ。とそうまではっきりと悪くとらず、またいくら化粧問屋でもそこは父親が<ruby><rb>卸</rb><rt>おろ</rt></ruby>してくれぬとすれば、その時はその時で悪く行っても金がとれるし、いわば二道を掛けているか、それとも自分で自分の気持がはっきりしてないか、何しろ、<persName ref="#ryukichi">柳吉</persName>には子供もあることだと、そこまでは口に出さなかったが、いずれにせよ<persName ref="#chouko">蝶子</persName>が別れると言わなければ、<persName ref="#ryukichi">柳吉</persName>は親の家におれぬ勘定だから結局は<persName ref="#ryukichi">柳吉</persName>に戻って欲しければ「別れると言うたらあきまへんぜ」<persName ref="#chouko">蝶子</persName>は<persName ref="#okin">おきん</persName>の言う通りにした。嘘にしろ別れると言うより、その方が言い<ruby><rb>易</rb><rt>やす</rt></ruby>かった。それに、間もなく顔を見せた使の者は手切金を用意しているらしく、貰えばそれきりで縁が切れそうだった。</p>
+        <p>三日経つと<persName ref="#ryukichi">柳吉</persName>は帰って来た。いそいそとした<persName ref="#chouko">蝶子</persName>を見るなり「阿呆やな、お前の一言で何もかも滅茶苦茶や」<ruby><rb>不機嫌</rb><rt>ふきげん</rt></ruby>極まった。手切金云々の気持を言うと、「もろたら、わいのもらう金と二重取りでええがな。ちょっとは慾を出さんかいや」なるほどと思った。が、<persName ref="#okin">おきん</persName>の言葉はやはり胸の中に残った。</p>
+        <p>父親からは取り損ったが、妹から無心して来た金三百円と<persName ref="#chouko">蝶子</persName>の貯金を合わせて、それで何か商売をやろうと、こんどは<persName ref="#ryukichi">柳吉</persName>の口から言い出した。剃刀屋のにがい経験があるから、あれでもなし、これでもなしと<persName ref="#ryukichi">柳吉</persName>の興味を持ちそうな商売を考えた末、結局焼芋屋でもやるより外には……と困っているうちに、ふと<ruby><rb>関東煮</rb><rt>かんとだき</rt></ruby>屋が良いと思いつき、<persName ref="#ryukichi">柳吉</persName>に言うと、「そ、そ、そらええ考えや、わいが腕前ふるってええ味のもんを食わしたる」ひどく乗気になった。適当な売り店がないかと探すと、近くの<placeName ref="#tobita-daimon"><ruby><rb>飛田</rb><rt>とびた</rt></ruby>大門前通り</placeName>に小さな関東煮の店が売りに出ていた。現在年寄夫婦が商売しているのだが、土地柄、客種が柄悪く荒っぽいので、<ruby><rb>大人</rb><rt>おとな</rt></ruby>しい<ruby><rb>女子衆</rb><rt>おなごし</rt></ruby>は続かず、といって気性の強い女はこちらがなめられるといった按配で、ほとほと人手に困って売りに出したのだというから、掛け合うと、案外安く造作から道具<ruby><rb>一切</rb><rt>いっさい</rt></ruby>附き三百五十円で<ruby><rb>譲</rb><rt>ゆず</rt></ruby>ってくれた。階下は全部<ruby><rb>漆喰</rb><rt>しっくい</rt></ruby>で商売に使うから、<ruby><rb>寝泊</rb><rt>ねとま</rt></ruby>りするところは二階の四畳半一間あるきり、おまけに頭がつかえるほど天井が低く<ruby><rb>陰気臭</rb><rt>いんきくさ</rt></ruby>かったが、<ruby><rb>廓</rb><rt>くるわ</rt></ruby>の<ruby><rb>往</rb><rt>ゆ</rt></ruby>き帰りで人通りも多く、それに<ruby><rb>角店</rb><rt>かどみせ</rt></ruby>で、店の段取から出入口の取り方など大変良かったので、値を聞くなり飛びついて手を打ったのだ。新規開店に先立ち、<placeName ref="#hozenji">法善寺</placeName>境内の<placeName ref="#shobendango">正弁丹吾亭</placeName>や<placeName ref="#dotonbori">道頓堀</placeName>の<placeName ref="#takoume">たこ梅</placeName>をはじめ、行き当りばったりに関東煮屋の<ruby><rb>暖簾</rb><rt>のれん</rt></ruby>をくぐって、味加減や<ruby><rb>銚子</rb><rt>ちょうし</rt></ruby>の中身の工合、商売のやり口などを調べた。関東煮屋をやると聴いて<persName ref="#taneyoshi">種吉</persName>は、「<ruby><rb>海老</rb><rt>えび</rt></ruby>でも<ruby><rb>烏賊</rb><rt>いか</rt></ruby>でも天婦羅ならわいに任しとくなはれ」と手伝いの意を<ruby><rb>申</rb><rt>もう</rt></ruby>し<ruby><rb>出</rb><rt>い</rt></ruby>でたが、<persName ref="#ryukichi">柳吉</persName>は、「小鉢物はやりまっけど、天婦羅は出しまへん」と体裁よく断った。<persName ref="#taneyoshi">種吉</persName>は残念だった。<persName ref="#otatsu">お辰</persName>は、それみたことかと<persName ref="#taneyoshi">種吉</persName>を<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>った。「<ruby><rb>私</rb><rt>わて</rt></ruby>らに<ruby><rb>手伝</rb><rt>てつど</rt></ruby>うてもろたら損や思たはるのや。誰が<ruby><rb>鐚</rb><rt>びた</rt></ruby>一文でも無心するもんか」</p>
+        <p>お互いの名を一字ずつとって「<placeName ref="#chouryu">蝶柳</placeName>」と屋号をつけ、いよいよ開店することになった。まだ暑さが去っていなかったこととて思いきって生ビールの<ruby><rb>樽</rb><rt>たる</rt></ruby>を仕込んでいた故、はよ売りきってしまわねば気が抜けてわや（駄目）になると、やきもき心配したほどでもなく、よく売れた。人手を借りず、夫婦だけで店を切り廻したので、夜の十時から十二時頃までの一番たてこむ時間は眼のまわるほど<ruby><rb>忙</rb><rt>いそが</rt></ruby>しく、小便に立つ暇もなかった。<persName ref="#ryukichi">柳吉</persName>は白い料理着に<ruby><rb>高下駄</rb><rt>たかげた</rt></ruby>という<ruby><rb>粋</rb><rt>いき</rt></ruby>な恰好で、ときどき<ruby><rb>銭函</rb><rt>ぜにばこ</rt></ruby>を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いた。売上額が<ruby><rb>増</rb><rt>ふ</rt></ruby>えていると、「いらっしゃァい」剃刀屋のときと違って掛声も勇ましかった。俗に「おかま」という中性の流し芸人が流しに来て、<ruby><rb>青柳</rb><rt>あおやぎ</rt></ruby>を<ruby><rb>賑</rb><rt>にぎ</rt></ruby>やかに弾いて行ったり、景気がよかった。その代り、土地柄が悪く、<ruby><rb>性質</rb><rt>たち</rt></ruby>の良くない<ruby><rb>酒呑</rb><rt>さけの</rt></ruby>み同志が喧嘩をはじめたりして、<persName ref="#ryukichi">柳吉</persName>はハラハラしたが、<persName ref="#chouko">蝶子</persName>は昔とった<ruby><rb>杵柄</rb><rt>きねづか</rt></ruby>で、そんな客をうまくさばくのに別に秋波をつかったりする必要もなかった。廓をひかえて<ruby><rb>夜更</rb><rt>おそ</rt></ruby>くまで客があり、看板を入れる頃はもう東の空が<ruby><rb>紫色</rb><rt>むらさきいろ</rt></ruby>に変っていた。くたくたになって二階の四畳半で<ruby><rb>一刻</rb><rt>いっとき</rt></ruby>うとうとしたかと思うと、もう目覚ましがジジーと鳴った。寝巻のままで階下に降りると、顔も洗わぬうちに、「朝食出来ます、四品付十八銭」の立看板を出した。朝帰りの客を当て込んで味噌汁、煮豆、<ruby><rb>漬物</rb><rt>つけもの</rt></ruby>、ご飯と都合四品で十八銭、細かい商売だと<ruby><rb>多寡</rb><rt>たか</rt></ruby>をくくっていたところ、ビールなどをとる客もいて、結構商売になったから、少々眠さも我慢出来た。</p>
+        <p>秋めいて来て、やがて風が<ruby><rb>肌寒</rb><rt>はだざむ</rt></ruby>くなると、もう関東煮屋に「もって来い」の季節で、ビールに代って酒もよく出た。酒屋の払いもきちんきちんと現金で渡し、<ruby><rb>銘酒</rb><rt>めいしゅ</rt></ruby>の<ruby><rb>本鋪</rb><rt>ほんぽ</rt></ruby>から、看板を<ruby><rb>寄贈</rb><rt>きぞう</rt></ruby>してやろうというくらいになり、<persName ref="#chouko">蝶子</persName>の三味線も<ruby><rb>空</rb><rt>むな</rt></ruby>しく押入れにしまったままだった。こんどは半分以上自分の金を出したというせいばかりでもなかったろうが、<persName ref="#ryukichi">柳吉</persName>の身の入れ方は申分なかった。公休日というものも設けず、毎日せっせと精出したから、<ruby><rb>無駄費</rb><rt>むだづか</rt></ruby>いもないままに、勢い<ruby><rb>溜</rb><rt>た</rt></ruby>まる一方だった。<persName ref="#ryukichi">柳吉</persName>は毎日郵便局へ行った。体のえらい商売だから、<persName ref="#ryukichi">柳吉</persName>は<ruby><rb>疲</rb><rt>つか</rt></ruby>れると酒で元気をつけた。酒をのむと気が大きくなり、ふらふらと大金を使ってしまう<persName ref="#ryukichi">柳吉</persName>の性分を知っていたので、<persName ref="#chouko">蝶子</persName>はヒヤヒヤしたが、売物の酒とあってみれば、<persName ref="#ryukichi">柳吉</persName>も加減して飲んだ。そういう飲み方も、しかし、<persName ref="#chouko">蝶子</persName>にはまた一つの心配で、いずれはどちらへ廻っても心配は尽きなかった。大酒を飲めば馬鹿に陽気になるが、チビチビやる時は元来吃りのせいか無口の<persName ref="#ryukichi">柳吉</persName>が一層無口になって、客のない時など、<ruby><rb>椅子</rb><rt>いす</rt></ruby>に腰掛けてぽかんと何か考えごとしているらしい容子を見ると、やはり、<placeName ref="#umeda">梅田</placeName>の家のこと考えてるのと違うやろか、そう思って気が気でなかった。</p>
+        <p>案の定、妹の婚礼に出席を撥ねつけられたとて<persName ref="#ryukichi">柳吉</persName>は気を<ruby><rb>腐</rb><rt>くさ</rt></ruby>らせ、二百円ほど持ち出して出掛けたまま、三日帰って来なかった。ちょうど花見時で、おまけに日曜、祭日と<ruby><rb>紋日</rb><rt>もんび</rt></ruby>が続いて店を休むわけに行かず、てん手古舞いしながら二日商売をしたものの、<persName ref="#chouko">蝶子</persName>はもう慾など出している気にもなれず、おまけに忙しいのと心配とで体が言うことを利かず、三日目はとうとう店を閉めた。その<ruby><rb>夜更</rb><rt>おそ</rt></ruby>く、帰って来た。耳を<ruby><rb>澄</rb><rt>す</rt></ruby>ましていると、「今ごろは<persName ref="#hanshichi">半七</persName>さんが、どこにどうしてござろうぞ。いまさら帰らぬことながら、わしというものないならば、<persName ref="#hanbei"><ruby><rb>半兵衛</rb><rt>はんべえ</rt></ruby></persName>様も<persName ref="#otsu">お通</persName>に<ruby><rb>免</rb><rt>めん</rt></ruby>じ、子までなしたる<persName ref="#sankatsu"><ruby><rb>三勝</rb><rt>さんかつ</rt></ruby></persName>どのを、<ruby><rb>疾</rb><rt>と</rt></ruby>くにも呼び入れさしゃんしたら、<persName ref="#hanshichi">半七</persName>さんの身持も直り、ご勘当もあるまいに……」と<persName ref="#sankatsu">三勝</persName><persName ref="#hanshichi">半七</persName>のサワリを語りながらやって来るのは、<persName ref="#ryukichi">柳吉</persName>に違いなかった。</p>
+        <p>夜中に下手な浄瑠璃を語ったりして、近所の体裁も悪いこっちゃと、ほっとした。「……お気に入らぬと知りながら、未練な私が<ruby><rb>輪廻</rb><rt>りんね</rt></ruby>ゆえ、そい<ruby><rb>臥</rb><rt>ふ</rt></ruby>しは<ruby><rb>叶</rb><rt>かな</rt></ruby>わずとも、お<ruby><rb>傍</rb><rt>そば</rt></ruby>に居たいと辛抱して、これまで居たのがお身の仇……」とこっちから後を続けてこましたろかという気持で、<ruby><rb>階下</rb><rt>した</rt></ruby>へ降りた。<persName ref="#ryukichi">柳吉</persName>の足音は家の前で止った。もう語りもせず、気兼ねした容子で、カタカタ戸を動かせているようだった。「どなたッ？」わざと言うと、「わいや」「わいでは分りまへんぜ」重ねてとぼけてみせると、「ここ<persName ref="#ryukichi">維康</persName>や」と外の声は<ruby><rb>震</rb><rt>ふる</rt></ruby>えていた。「<persName ref="#ryukichi">維康</persName>いう人は<ruby><rb>沢山</rb><rt>たんと</rt></ruby>いたはります」にこりともせず言った。「<persName ref="#ryukichi">維康柳吉</persName>や」もう<persName ref="#chouko">蝶子</persName>の折檻を観念しているようだった。「<persName ref="#ryukichi">維康柳吉</persName>という人はここには用のない人だす。今ごろどこぞで散財していやはりまっしゃろ」となおも<ruby><rb>苛</rb><rt>いじ</rt></ruby>めにかかったが、近所の体裁もあったから、そのくらいにして、戸を開けるなり、「おばはん、せせ<ruby><rb>殺生</rb><rt>せっしょう</rt></ruby>やぜ」と顔をしかめて突っ立っている<persName ref="#ryukichi">柳吉</persName>を引きずり込んだ。無理に二階へ押し上げると、<persName ref="#ryukichi">柳吉</persName>は天井へ頭を<ruby><rb>打</rb><rt>ぶ</rt></ruby>っつけた。「痛ア！」も<ruby><rb>糞</rb><rt>くそ</rt></ruby>もあるもんかと、思う存分折檻した。</p>
+        <p>もう二度と<ruby><rb>浮気</rb><rt>うわき</rt></ruby>はしないと<persName ref="#ryukichi">柳吉</persName>は<ruby><rb>誓</rb><rt>ちか</rt></ruby>ったが、<persName ref="#chouko">蝶子</persName>の折檻は何の薬にもならなかった。しばらくすると、また<ruby><rb>放蕩</rb><rt>ほうとう</rt></ruby>した。そして帰るときは、やはり折檻を<ruby><rb>怖</rb><rt>おそ</rt></ruby>れて蒼くなった。そろそろ肥満して来た<persName ref="#chouko">蝶子</persName>は折檻するたびに息切れがした。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>が遊蕩に使う金はかなりの額だったから、遊んだあくる日はさすがに彼も蒼くなって、<ruby><rb>盞</rb><rt>さかずき</rt></ruby>も手にしないで、黙々と鍋の中を掻きまわしていた。が、四五日たつと、やはり、客の酒の<ruby><rb>燗</rb><rt>かん</rt></ruby>をするばかりが能やないと言い出し、混ぜない方の酒をたっぷり銚子に入れて、<ruby><rb>銅壺</rb><rt>どうこ</rt></ruby>の中へ<ruby><rb>浸</rb><rt>つ</rt></ruby>けた。明らかに商売に<ruby><rb>飽</rb><rt>あ</rt></ruby>いた風で、酔うと気が大きくなり、自然足は遊びの方に向いた。<ruby><rb>紺屋</rb><rt>こうや</rt></ruby>の<ruby><rb>白袴</rb><rt>しろばかま</rt></ruby>どころでなく、これでは<persName ref="#ryukichi">柳吉</persName>の遊びに油を注ぐために商売をしているようなものだと、<persName ref="#chouko">蝶子</persName>はだんだん後悔した。えらい商売を始めたものやと思っているうちに、酒屋への支払いなども<ruby><rb>滞</rb><rt>とどこお</rt></ruby>り勝ちになり、結局、やめるに<ruby><rb>若</rb><rt>し</rt></ruby>かずと、その旨<persName ref="#ryukichi">柳吉</persName>に言うと、<persName ref="#ryukichi">柳吉</persName>は<ruby><rb>即座</rb><rt>そくざ</rt></ruby>に同意した。</p>
+        <p>「この店譲ります」と<ruby><rb>貼出</rb><rt>はりだ</rt></ruby>ししたまま、陰気臭くずっと店を閉めたきりだった。<persName ref="#ryukichi">柳吉</persName>は浄瑠璃の稽古に通い出した。<ruby><rb>貯</rb><rt>たくわ</rt></ruby>えの金も次第に薄くなって行くのに、一向に店の買手がつかなかった。<persName ref="#chouko">蝶子</persName>の肚はそろそろ、三度目のヤトナを考えていた。ある日、二階の窓から表の人通りを眺めていると、それが皆客に見えて、商売をしていないことがいかにも<ruby><rb>惜</rb><rt>お</rt></ruby>しかった。向い側の五六軒先にある果物屋が、赤や黄や緑の色が<ruby><rb>咲</rb><rt>さ</rt></ruby>きこぼれていて、活気を見せた。客の出入りも多かった。果物屋はええ商売やとふと思うと、もういても立ってもいられず、<persName ref="#ryukichi">柳吉</persName>が浄瑠璃の稽古から帰って来ると、早速「<ruby><rb>果物屋</rb><rt>あかもんや</rt></ruby>をやれへんか」<persName ref="#ryukichi">柳吉</persName>は乗気にならなかった。いよいよ食うに困れば、<placeName ref="#umeda">梅田</placeName>へ行って無心すれば良しと考えていたのだ。</p>
+        <p>ある日、どうやら<placeName ref="#umeda">梅田</placeName>へ出掛けたらしかった。帰って来ての話に、無心したところ妹の聟が出て応待したが、話の分らぬ頑固者の上にけちんぼと来ていて、結局<ruby><rb>鐚</rb><rt>びた</rt></ruby>一文も出さなかったとしきりに興奮した。そして「果物屋をやろうやないか」顔はにがりきっていた。</p>
+        <p>関東煮の諸道具を売り払った金で店を改造した。仕入れや何やかやで大分金が足らなかったので、衣裳や頭のものを質に入れ、なお<persName ref="#okin">おきん</persName>の所へ金を借りに行った。<persName ref="#okin">おきん</persName>は一時間ばかり<persName ref="#ryukichi">柳吉</persName>の悪口を言ったが、結局「<persName ref="#chouko">蝶子</persName>はん、あんたが可哀想やさかい」と百円貸してくれた。</p>
+        <p>その足で<placeName ref="#kamishiocho"><ruby><rb>上塩町</rb><rt>かみしおまち</rt></ruby></placeName>の<persName ref="#taneyoshi">種吉</persName>の所へ行き、果物屋をやるから、二三日手を貸してくれと頼んだ。<ruby><rb>西瓜</rb><rt>すいか</rt></ruby>の切り方など要領を<persName ref="#ryukichi">柳吉</persName>は知らないから、経験のある<persName ref="#taneyoshi">種吉</persName>に教わる必要に<ruby><rb>迫</rb><rt>せま</rt></ruby>られて、こんどは<persName ref="#ryukichi">柳吉</persName>の口から「一つお父つぁんに頼もうやないか」と言い出していた。<persName ref="#taneyoshi">種吉</persName>は若い頃<persName ref="#otatsu">お辰</persName>の国元の<placeName ref="#yamato"><ruby><rb>大和</rb><rt>やまと</rt></ruby></placeName>から車一台分の西瓜を買って、<placeName ref="#kamishiocho">上塩町</placeName>の夜店で切売りしたことがある。その頃、<persName ref="#chouko">蝶子</persName>はまだ二つで、<persName ref="#otatsu">お辰</persName>が背負うて、つまり<ruby><rb>親娘</rb><rt>おやこ</rt></ruby>三人総出で、一晩に百個売れたと<persName ref="#taneyoshi">種吉</persName>は昔話し、喜んで手伝うことを言った。関東煮屋のとき手伝おうと言って<persName ref="#ryukichi">柳吉</persName>に撥ねつけられたことなど、根に持たなかった。どころか店びらきの日、筋向いにも果物屋があるとて、「西瓜屋の向いに西瓜屋が出来て、西瓜同志（好いた同志）の差し向い」と<ruby><rb>淡海節</rb><rt>たんかいぶし</rt></ruby>の文句を言い出すほどの上機嫌だった。向い側の果物屋は、店の半分が氷店になっているのが強味で氷かけ西瓜で客を呼んだから、自然、<persName ref="#chouko">蝶子</persName>たちは、切身の厚さで対抗しなければならなかった。が、言われなくても<persName ref="#taneyoshi">種吉</persName>の切り方は、すこぶる気前がよかった。一個八十銭の西瓜で十銭の切身何個と<ruby><rb>胸算用</rb><rt>むなざんよう</rt></ruby>して、<persName ref="#ryukichi">柳吉</persName>がハラハラすると、<persName ref="#taneyoshi">種吉</persName>は「切身で<ruby><rb>釣</rb><rt>つ</rt></ruby>って、丸口で儲けるんや。損して得とれや」と言った。そして「ああ、西瓜や、西瓜や、うまい西瓜の大安売りや！」と派手な呼び声を出した。向い側の呼び声もなかなか負けていなかった。<persName ref="#chouko">蝶子</persName>も黙っていられず、「安い西瓜だっせ」と金切り声を出した。それが愛嬌で、客が来た。<persName ref="#chouko">蝶子</persName>は、<ruby><rb>鞄</rb><rt>かばん</rt></ruby>のような財布を首から<ruby><rb>吊</rb><rt>つ</rt></ruby>るして、売り上げを入れたり、釣銭を出したりした。</p>
+        <p>朝の間、<persName ref="#chouko">蝶子</persName>は廓の中へはいって行き<ruby><rb>軒</rb><rt>のき</rt></ruby>ごとに西瓜を売ってまわった。「うまい西瓜だっせ」と言う声が<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>するほど<ruby><rb>綺麗</rb><rt>きれい</rt></ruby>なのと、笑う顔が愛嬌があり、しかも気性が粋でさっぱりしているのとがたまらぬと、娼妓達がひいきにしてくれた。「<ruby><rb>明日</rb><rt>あした</rt></ruby>も持って来とくなはれや」そんな時<persName ref="#ryukichi">柳吉</persName>が背にのせて行くと、「<ruby><rb>姐</rb><rt>ねえ</rt></ruby>ちゃんは……？」ええ奥さんを持ってはると褒められるのを、ひと事のように聴き流して、<persName ref="#ryukichi">柳吉</persName>は<ruby><rb>渋</rb><rt>しぶ</rt></ruby>い顔であった。むしろ、むっつりして、これで遊べば滅茶苦茶に羽目を外す男だとは見えなかった。</p>
+        <p>割合熱心に習ったので、四、五日すると<persName ref="#ryukichi">柳吉</persName>は西瓜を切る要領など覚えた。<persName ref="#taneyoshi">種吉</persName>はちょうど氏神の祭で例年通りお渡りの人足に雇われたのを<ruby><rb>機会</rb><rt>しお</rt></ruby>に、手を引いた。帰りしな、<ruby><rb>林檎</rb><rt>りんご</rt></ruby>はよくよくふきんで<ruby><rb>拭</rb><rt>ふ</rt></ruby>いて<ruby><rb>艶</rb><rt>つや</rt></ruby>を出すこと、<ruby><rb>水密桃</rb><rt>すいみつとう</rt></ruby>には手を触れぬこと、果物は<ruby><rb>埃</rb><rt>ほこり</rt></ruby>をきらうゆえ始終<ruby><rb>掃塵</rb><rt>はたき</rt></ruby>をかけることなど念押して行った。その通りに心掛けていたのだが、どういうものか足が早くて水密桃など瞬く間に<ruby><rb>腐敗</rb><rt>ふはい</rt></ruby>した。店へ<ruby><rb>飾</rb><rt>かざ</rt></ruby>っておけぬから、辛い気持で捨てた。毎日、捨てる分が多かった。といって品物を減らすと店が貧相になるので、そうも行かず、巧く<ruby><rb>捌</rb><rt>は</rt></ruby>けないと<ruby><rb>焦</rb><rt>あせ</rt></ruby>りが出た。儲も多いが損も勘定にいれねばならず、果物屋も容易な商売ではないと、だんだん分った。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>にそろそろ元気がなくなって来たので、<persName ref="#chouko">蝶子</persName>はもう飽いたのかと心配した。がその心配より先に<persName ref="#ryukichi">柳吉</persName>は病気になった。まえまえから胃腸が悪いと<placeName ref="#futatsuido">二ツ井戸</placeName>の<placeName ref="#jippiiin"><ruby><rb>実費医院</rb><rt>じっぴ</rt></ruby></placeName>へ通い通いしていたが、こんどは<ruby><rb>尿</rb><rt>にょう</rt></ruby>に血がまじって小便するのにたっぷり二十分かかるなど、人にも言えなかった。前に<ruby><rb>怪</rb><rt>あや</rt></ruby>しい病気に<ruby><rb>罹</rb><rt>かか</rt></ruby>り、そのとき<persName ref="#chouko">蝶子</persName>は「なんちう人やろ」と<ruby><rb>怒</rb><rt>おこ</rt></ruby>りながらも、まじないに、<ruby><rb>屋根瓦</rb><rt>やねがわら</rt></ruby>にへばりついている<ruby><rb>猫</rb><rt>ねこ</rt></ruby>の<ruby><rb>糞</rb><rt>ふん</rt></ruby>と<ruby><rb>明礬</rb><rt>みょうばん</rt></ruby>を<ruby><rb>煎</rb><rt>せん</rt></ruby>じてこっそり飲ませたところ<ruby><rb>効目</rb><rt>ききめ</rt></ruby>があったので、こんどもそれだと思って、黙って味噌汁の中に入れると、<persName ref="#ryukichi">柳吉</persName>は<ruby><rb>啜</rb><rt>すす</rt></ruby>ってみて、変な顔をしたが、それと気付かず、味の妙なのは病気のせいだと思ったらしかった。気が付かねば、まじないは効くのだとひそかに<ruby><rb>現</rb><rt>げん</rt></ruby>のあらわれるのを待っていたところ<ruby><rb>更</rb><rt>さら</rt></ruby>に効目はなかった。小便の時、泣き声を立てるようになり、<placeName ref="#shimanouchi">島の内</placeName>の<placeName ref="#kayodo"><ruby><rb>華陽堂</rb><rt>かようどう</rt></ruby>病院</placeName>が<ruby><rb>泌尿科</rb><rt>ひにょうか</rt></ruby>専門なので、そこで<ruby><rb>診</rb><rt>み</rt></ruby>てもらうと、尿道に管を入れて覗いたあげく、「<ruby><rb>膀胱</rb><rt>ぼうこう</rt></ruby>が悪い」十日ばかり通ったが、はかばかしくならなかった。みるみる<ruby><rb>痩</rb><rt>や</rt></ruby>せて行った。診立て違いということもあるからと、<placeName ref="#tennoji"><ruby><rb>天王寺</rb><rt>てんのうじ</rt></ruby></placeName>の<placeName ref="#shiminbyoin">市民病院</placeName>で診てもらうと、果して違っていた。レントゲンをかけ<ruby><rb>腎臓結核</rb><rt>じんぞうけっかく</rt></ruby>だときまると、<placeName ref="#kayodo">華陽堂病院</placeName>が<ruby><rb>恨</rb><rt>うら</rt></ruby>めしいよりも、むしろなつかしかった。命が惜しければ入院しなさいと言われた。あわてて入院した。</p>
+        <p>附添いのため、店を構っていられなかったので、<persName ref="#chouko">蝶子</persName>はやむなく、店を閉めた。果物が腐って行くことが残念だったから、<persName ref="#taneyoshi">種吉</persName>に店の方を頼もうと思ったが、運の悪い時はどうにも仕様のないもので、母親の<persName ref="#otatsu">お辰</persName>が四、五日まえから寝付いていた。<ruby><rb>子宮癌</rb><rt>しきゅうがん</rt></ruby>とのことだった。<ruby><rb>金光教</rb><rt>こんこうきょう</rt></ruby>に<ruby><rb>凝</rb><rt>こ</rt></ruby>って、お水をいただいたりしているうちに、<ruby><rb>衰弱</rb><rt>すいじゃく</rt></ruby>がはげしくて、寝付いた時はもう助からぬ状態だと町医者は診た。手術をするにも、この体ではと医者は気の毒がったが、<persName ref="#otatsu">お辰</persName>の方から手術もいや、入院もいやと断った。金のこともあった。注射もはじめはきらったが、体が二つに割れるような苦痛が注射で消えてとろとろと気持よく眠り込んでしまえる味を覚えると、痛みよりも先に「注射や、注射や」夜中でも構わず泣き叫んで、<persName ref="#taneyoshi">種吉</persName>を起した。<persName ref="#taneyoshi">種吉</persName>は眠い目をこすって医者の所へ走った。「モルヒネだからたびたびの注射は危険だ」と医者は断るのだが、「どうせ死による体ですよって」と眼をしばたいた。弟の<persName ref="#shinichi">信一</persName>は<placeName ref="#kyoto-shimogamo">京都<ruby><rb>下鴨</rb><rt>しもがも</rt></ruby></placeName>の質屋へ年期奉公していたが、いざという時が来るまで、戻れと言わぬことにしてあった。だから、<persName ref="#taneyoshi">種吉</persName>の体は幾つあっても足らぬくらいで、<persName ref="#chouko">蝶子</persName>も諦め、結局病院代も要るままに、店を売りに出したのだ。</p>
+        <p>こればっかりは運よく、すぐ買手がついて、二百五十円の金がはいったが、すぐ消えた。手術と決ってはいたが、手術するまえに体に<ruby><rb>力</rb><rt>りき</rt></ruby>をつけておかねばならず、<ruby><rb>舶来</rb><rt>はくらい</rt></ruby>の薬を毎日二本ずつ入れた。一本五円もしたので、<ruby><rb>怖</rb><rt>こわ</rt></ruby>いほど病院代は嵩んだのだ。<persName ref="#chouko">蝶子</persName>は派出婦を雇って、夜の間だけ<persName ref="#ryukichi">柳吉</persName>の看病してもらい、ヤトナに出ることにした。が、焼石に水だった。手術も今日、明日に迫り、金の要ることは目に見えていた。<persName ref="#chouko">蝶子</persName>の唄もこんどばかりは昔の<ruby><rb>面影</rb><rt>おもかげ</rt></ruby>を失うた。赤電車での帰り、帯の間に手を差し込んで、思案を重ねた。<persName ref="#okin">おきん</persName>に借りた百円もそのままだった。</p>
+        <p>重い足で、<placeName ref="#umeda-shindo">梅田新道</placeName>の<persName ref="#ryukichi">柳吉</persName>の家を訪れた。養子だけが<ruby><rb>会</rb><rt>お</rt></ruby>うてくれた。たくさんとは言いませんがと畳に頭をすりつけたが、話にならなかった。<ruby><rb>自業自得</rb><rt>じごうじとく</rt></ruby>、そんな言葉も彼は<ruby><rb>吐</rb><rt>は</rt></ruby>いた。「この家の身代は僕が預っているのです。あなた方に指一本……」差してもらいたくないのはこっちのことですと、<ruby><rb>尻</rb><rt>しり</rt></ruby>を振って外へ飛び出したが、すぐ気の抜けた歩き方になった。<persName ref="#taneyoshi">種吉</persName>の所へ行き、<persName ref="#otatsu">お辰</persName>の<ruby><rb>病床</rb><rt>びょうしょう</rt></ruby>を見舞うと、<persName ref="#otatsu">お辰</persName>は「<ruby><rb>私</rb><rt>わて</rt></ruby>に構わんと、はよ<persName ref="#ryukichi">維康</persName>さんとこイ行ったりイな」そして、病気ではご飯たきも不自由やろから、家で重湯やほうれん草<ruby><rb>炊</rb><rt>た</rt></ruby>いて持って帰れと、<persName ref="#otatsu">お辰</persName>は気持も仏様のようになっており、死期に近づいた人に見えた。</p>
+        <p><persName ref="#otatsu">お辰</persName>とちがって、<persName ref="#ryukichi">柳吉</persName>は<persName ref="#chouko">蝶子</persName>の帰りが<ruby><rb>遅</rb><rt>おそ</rt></ruby>いと散々<ruby><rb>叱言</rb><rt>こごと</rt></ruby>を言う始末で、これではまだ死ぬだけの人間になっていなかった。という訳でもなかったろうが、とにかく二日後に腎臓を片一方切り取ってしまうという大手術をやっても、ピンピン生きて、「水や、水や、水をくれ」とわめき散らした。水を飲ましてはいけぬと注意されていたので、<persName ref="#chouko">蝶子</persName>は<ruby><rb>丹田</rb><rt>たんでん</rt></ruby>に力を入れて<persName ref="#ryukichi">柳吉</persName>のわめき声を聴いた。</p>
+        <p>あくる日、十二三の女の子を連れて若い女が見舞に来た。顔かたちを一目見るなり、<persName ref="#ryukichi">柳吉</persName>の妹だと分った。はっと<ruby><rb>緊張</rb><rt>きんちょう</rt></ruby>し、「よう来てくれはりました」初対面の挨拶代りにそう言った。連れて来た女の子は<persName ref="#ryukichi">柳吉</persName>の娘だった。ことし<date when="--04">四月</date>から女学校に上っていて、セーラー服を着ていた。頭を<ruby><rb>撫</rb><rt>な</rt></ruby>でると、顔をしかめた。</p>
+        <p>一時間ほどして帰って行った。夫に内緒で来たと言った。「あんな養子にき、き、気兼ねする奴があるか」妹の背中へ<persName ref="#ryukichi">柳吉</persName>はそんな言葉を投げた。送って<ruby><rb>廊下</rb><rt>ろうか</rt></ruby>へ出ると、妹は「<ruby><rb>姉</rb><rt>ねえ</rt></ruby>はんの苦労はお父さんもこの頃よう知ったはりまっせ。よう尽してくれとる、こない言うたはります」と言い、そっと金を握らした。<persName ref="#chouko">蝶子</persName>は<ruby><rb>白粉気</rb><rt>おしろいけ</rt></ruby>もなく、髪もバサバサで、着物はくたびれていた。そんなところを同情しての言葉だったかも知らぬが、<persName ref="#chouko">蝶子</persName>は<ruby><rb>本真</rb><rt>ほんま</rt></ruby>のことと思いたかった。<persName ref="#ryukichi">柳吉</persName>の父親に分ってもらうまで十年掛ったのだ。姉さんと言われたことも嬉しかった。だから、金はいったん戻す気になった。が無理に握らされて、あとで見ると百円あった。有難かった。そわそわして落ちつかなかった。</p>
+        <p>夕方、電話が掛って来た。弟の声だったから、ぎょっとした。<ruby><rb>危篤</rb><rt>きとく</rt></ruby>だと聞いて、早速駆けつける旨、電話室から病室へ言いに戻ると、<persName ref="#ryukichi">柳吉</persName>は「水くれ」を叫んでいた。そして、「お、お、お、親が大事か、わいが大事か」自分もいつ死ぬか分らへんと、そんな風にとれる声をうなり出した。<persName ref="#chouko">蝶子</persName>は椅子に腰掛けて、じっと腕組みした。そこへ泪が落ちるまで、大分時間があった。秋で、病院の庭から虫の声もした。</p>
+        <p>どのくらい時間が経ったか、隙間風が肌寒くすっかり夜になっていた。急に、「<persName ref="#ryukichi">維康</persName>さん、お電話でっせ」胸さわぎしながら電話口に出てみると、こんどは誰か分らぬ女の声で、「息を引きとらはりましたぜ」とのことだった。そのまま病院を出て駆けつけた。「<persName ref="#chouko">蝶子</persName>はん、あんたのこと心配して<persName ref="#chouko">蝶子</persName>は可哀想なやっちゃ言うて息引きとらはったんでっせ」近所の女達の赤い目がこれ見よがしだった。三十歳の<persName ref="#chouko">蝶子</persName>も母親の目から見れば子供だと<persName ref="#taneyoshi">種吉</persName>は男泣きした。親不孝者と見る人々の目を背中に感じながら、白い布を取って今更の<ruby><rb>死水</rb><rt>しにみず</rt></ruby>を唇につけるなど、<persName ref="#chouko">蝶子</persName>は<ruby><rb>勢一杯</rb><rt>せいいっぱい</rt></ruby>に振舞った。「わての亭主も病気や」それを自分の肚への言訳にして、お<ruby><rb>通夜</rb><rt>つや</rt></ruby>も早々に切り上げた。夜更けの街を歩いて病院へ帰る<ruby><rb>途々</rb><rt>みちみち</rt></ruby>、それでもさすがに泣きに泣けた。病室へはいるなり<persName ref="#ryukichi">柳吉</persName>は怖い目で「どこイ行って来たんや」<persName ref="#chouko">蝶子</persName>はたった一言、「死んだ」そして二人とも黙り込んで、しばらくは睨み合っていた。<persName ref="#ryukichi">柳吉</persName>の冷やかな視線は、なぜか<persName ref="#chouko">蝶子</persName>を<ruby><rb>圧迫</rb><rt>あっぱく</rt></ruby>した。<persName ref="#chouko">蝶子</persName>はそれに負けまいとして、持前の勝気な気性が蛇のように頭をあげて来た。<persName ref="#ryukichi">柳吉</persName>の妹がくれた百円の金を全部でなくとも、たとえ半分だけでも、母親の葬式の費用に当てようと、ほとんど気がきまった。ままよ、せめてもの親孝行だと、それを<persName ref="#ryukichi">柳吉</persName>に言い出そうとしたが、痩せたその顔を見ては言えなかった。</p>
+        <p>が、そんな心配は要らなかった。<persName ref="#taneyoshi">種吉</persName>がかねがね駕籠かき人足に雇われていた<ruby><rb>葬儀屋</rb><rt>そうぎや</rt></ruby>で、身内のものだとて無料で葬儀万端を引き受けてくれて、かなり<ruby><rb>盛大</rb><rt>せいだい</rt></ruby>に葬式が出来た。おまけに<persName ref="#otatsu">お辰</persName>がいつの間にはいっていたのか、こっそり郵便局の簡易養老保険に一円掛けではいっていたので五百円の保険料が流れ込んだのだ。<placeName ref="#kamishiocho">上塩町</placeName>に三十年住んで顔が広かったからかなり多かった会葬者に市電のパスを山菓子に出し、<ruby><rb>香奠返</rb><rt>こうでんがえ</rt></ruby>しの義理も済ませて、なお二百円ばかり残った。それで<persName ref="#taneyoshi">種吉</persName>は病院を訪ねて、見舞金だと百円だけ<persName ref="#chouko">蝶子</persName>に渡した。親のありがたさが身に<ruby><rb>沁</rb><rt>し</rt></ruby>みた。<persName ref="#ryukichi">柳吉</persName>の父が<persName ref="#chouko">蝶子</persName>の苦労を褒めていると妹に聞いた旨言うと、<persName ref="#taneyoshi">種吉</persName>は「そらええ按配や」と、<persName ref="#otatsu">お辰</persName>が死んで以来はじめてのニコニコした顔を見せた。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>はやがて退院して、<placeName ref="#yuzaki">湯崎</placeName>温泉へ<ruby><rb>出養生</rb><rt>でようじょう</rt></ruby>した。費用は<persName ref="#chouko">蝶子</persName>がヤトナで稼いで仕送りした。二階借りするのも不経済だったから、<persName ref="#chouko">蝶子</persName>は<persName ref="#taneyoshi">種吉</persName>の所で寝泊りした。<persName ref="#taneyoshi">種吉</persName>へは飯代を渡すことにしたのだが、<persName ref="#taneyoshi">種吉</persName>は水臭いといって受取らなかった。仕送りに追われていることを知っていたのだ。</p>
+        <p><persName ref="#chouko">蝶子</persName>が親の所へ戻っていると知って、近所の金持から、妾になれと<ruby><rb>露骨</rb><rt>ろこつ</rt></ruby>に言って来た。例の材木屋の主人は死んでいたが、その息子が<persName ref="#ryukichi">柳吉</persName>と同じ年の四十一になっていて、そこからも話があった。<persName ref="#chouko">蝶子</persName>は承りおくという顔をした。きっぱり断らなかったのは近所の間柄気まずくならぬように思ったためだが、一つには芸者時代の駈引きの<ruby><rb>名残</rb><rt>なご</rt></ruby>りだった。まだまだ若いのだとそんな話のたびに、改めて自分を見直した。が、心はめったに動きはしなかった。<placeName ref="#yuzaki">湯崎</placeName>にいる<persName ref="#ryukichi">柳吉</persName>の<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>を毎晩見た。ある日、夢見が悪いと気にして、とうとう<placeName ref="#yuzaki">湯崎</placeName>まで出掛けて行った。「毎日魚釣りをして淋しく暮している」はずの<persName ref="#ryukichi">柳吉</persName>が、こともあろうに芸者を揚げて散財していた。むろん酒も飲んでいた。女中を<ruby><rb>捉</rb><rt>とら</rt></ruby>えて、<ruby><rb>根掘</rb><rt>ねほ</rt></ruby>り聴くとここ一週間余り毎日のことだという。そんな金がどこからはいるのか、自分の仕送りは宿の払いに精一杯で、<ruby><rb>煙草代</rb><rt>たばこだい</rt></ruby>にも困るだろうと済まぬ気がしていたのにと<ruby><rb>不審</rb><rt>ふしん</rt></ruby>に思った。女中の口から、<persName ref="#ryukichi">柳吉</persName>がたびたび妹に無心していたことが分ると目の前が真暗になった。自分の腕一つで<persName ref="#ryukichi">柳吉</persName>を出養生させていればこそ、苦労の<ruby><rb>仕甲斐</rb><rt>しがい</rt></ruby>もあるのだと、<persName ref="#ryukichi">柳吉</persName>の父親の<ruby><rb>思惑</rb><rt>おもわく</rt></ruby>をも勘定に入れてかねがね思っていたのだ。妹に無心などしてくれたばっかりに、自分の苦労も水の<ruby><rb>泡</rb><rt>あわ</rt></ruby>だと泣いた。が、何かにつけて<persName ref="#chouko">蝶子</persName>は自分の甲斐性の上にどっかり腰を据えると、<persName ref="#ryukichi">柳吉</persName>はわが身に甲斐性がないだけに、その点がほとほと虫好かなかったのだ。しかし、その甲斐性を散々利用して来た手前、<persName ref="#ryukichi">柳吉</persName>には面と向っては言いかえす言葉はなかった。興ざめた顔で、<persName ref="#chouko">蝶子</persName>の<ruby><rb>詰問</rb><rt>きつもん</rt></ruby>を大人しく聴いた。なお女中の話では、<persName ref="#ryukichi">柳吉</persName>はひそかに娘を<placeName ref="#yuzaki">湯崎</placeName>へ呼び寄せて、<placeName ref="#senjojiki">千畳敷</placeName>や<placeName ref="#sandanbeki">三段壁</placeName>など名所を見物したとのことだった。その父性愛も<persName ref="#ryukichi">柳吉</persName>の年になってみるともっともだったが、裏切られた気がした。かねがね娘を引きとって三人暮しをしようと<persName ref="#ryukichi">柳吉</persName>に迫ったのだが、<persName ref="#ryukichi">柳吉</persName>はうんと言わなかったのだ。娘のことなどどうでも良い顔で、だからひそかに自分に<ruby><rb>己惚</rb><rt>うぬぼ</rt></ruby>れていたのだった。何やかやで、<persName ref="#chouko">蝶子</persName>は逆上した。部屋のガラス障子に<ruby><rb>盞</rb><rt>さかずき</rt></ruby>を投げた。芸者達はこそこそと逃げ帰った。が、間もなく<persName ref="#chouko">蝶子</persName>は先刻の芸者達を名指しで呼んだ。自分ももと芸者であったからには、不粋なことで人気商売の芸者にケチをつけたくないと、そんな思いやりとも<ruby><rb>虚栄心</rb><rt>きょえいしん</rt></ruby>とも分らぬ心が<ruby><rb>辛</rb><rt>かろ</rt></ruby>うじて出た。自分への<ruby><rb>残酷</rb><rt>ざんこく</rt></ruby>めいた快感もあった。</p>
+        <p><persName ref="#ryukichi">柳吉</persName>と一緒に<placeName ref="#osaka">大阪</placeName>へ帰って、<placeName ref="#nipponbashi">日本橋</placeName>の<placeName ref="#okuraato-koen"><ruby><rb>御蔵跡</rb><rt>みくらあと</rt></ruby>公園</placeName>裏に二階借りした。相変らずヤトナに出た。こんど二階借りをやめて一戸構え、ちゃんとした商売をするようになれば、<persName ref="#ryukichi">柳吉</persName>の父親もえらい女だと褒めてくれ、天下晴れての<ruby><rb>夫婦</rb><rt>めおと</rt></ruby>になれるだろうとはげみを出した。その父親はもう十年以上も中風で寝ていて、<ruby><rb>普通</rb><rt>ふつう</rt></ruby>ならとっくに死んでいるところを持ちこたえているだけに、いつ死なぬとも限らず、眼の黒いうちにと<persName ref="#chouko">蝶子</persName>は焦った。が、<persName ref="#ryukichi">柳吉</persName>はまだ病後の体で、<ruby><rb>滋養剤</rb><rt>じようざい</rt></ruby>を飲んだり、注射を打ったりして、そのためきびしい物入りだったから、半年経っても三十円と纏まった金はたまらなかった。</p>
+        <p>ある夕方、三味線のトランクを提げて<placeName ref="#nipponbashi">日本橋</placeName>一丁目の<ruby><rb>交叉点</rb><rt>こうさてん</rt></ruby>で<ruby><rb>乗換</rb><rt>のりか</rt></ruby>えの電車を待っていると、「<persName ref="#chouko">蝶子</persName>はんと違いまっか」と話しかけられた。<placeName ref="#kita">北の新地</placeName>で同じ抱主の所で一つ釜の飯を食っていた<persName ref="#kinpachi">金八</persName>という芸者だった。出世しているらしいことはショール一つにも現われていた。誘われて、<placeName ref="#ebisubashi"><ruby><rb>戎橋</rb><rt>えびすばし</rt></ruby></placeName>の<placeName ref="#maruman">丸万</placeName>でスキ焼をした。その日の稼ぎをフイにしなければならぬことが気になったが、出世している友達の手前、それと言って断ることは気がひけたのだ。抱主がけちんぼで、食事にも塩鰯一<ruby><rb>尾</rb><rt>び</rt></ruby>という情けなさだったから、その頃お互い出世して抱主を見返してやろうと言い合ったものだと昔話が出ると、<persName ref="#chouko">蝶子</persName>は今の<ruby><rb>境遇</rb><rt>きょうぐう</rt></ruby>が恥かしかった。<persName ref="#kinpachi">金八</persName>は<persName ref="#chouko">蝶子</persName>の駈落ち後間もなく<ruby><rb>落籍</rb><rt>ひか</rt></ruby>されて、鉱山師の妾となったが、ついこの間本妻が死んで、後釜に据えられ、いまは鉱山の売り買いに口出しして、「言うちゃ何やけど……」これ以上の出世も望まぬほどの暮しをしている。につけても、想い出すのは、「やっぱり、<persName ref="#chouko">蝶子</persName>はん、あんたのことや」抱主を見返すと誓った昔の夢を実現するには、是非<persName ref="#chouko">蝶子</persName>にも出世してもらわねばならぬと<persName ref="#kinpachi">金八</persName>は言った。千円でも二千円でも、あんたの要るだけの金は無利子の期間なしで貸すから、何か商売する気はないかと、事情を訊くなり、早速言ってくれた。地獄で仏とはこのことや、<persName ref="#chouko">蝶子</persName>は泪が出て改めて、<persName ref="#kinpachi">金八</persName>が身につけるものを<ruby><rb>片</rb><rt>かた</rt></ruby>ッ<ruby><rb>端</rb><rt>ぱし</rt></ruby>から褒めた。「何商売がよろしおまっしゃろか」言葉使いも<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>だった。「そうやなア」<placeName ref="#maruman">丸万</placeName>を出ると、<placeName ref="#kabukiza"><ruby><rb>歌舞伎</rb><rt>かぶき</rt></ruby></placeName>の横で八卦見に見てもらった。水商売がよろしいと言われた。「あんたが水商売でわては<ruby><rb>鉱山</rb><rt>やま</rt></ruby>商売や、水と山とで、なんぞこんな<ruby><rb>都々逸</rb><rt>どどいつ</rt></ruby>ないやろか」それで話はきっぱり決った。</p>
+        <p>帰って<persName ref="#ryukichi">柳吉</persName>に話すと、「お前もええ友達持ってるなア」とちょっぴり皮肉めいた言い方だったが、肚の中では<ruby><rb>万更</rb><rt>まんざら</rt></ruby>でもないらしかった。</p>
+        <p>カフェを経営することに決め、翌日早速周旋屋を覗きまわって、カフェの<ruby><rb>出物</rb><rt>でもの</rt></ruby>を探した。なかなか探せぬと思っていたところ、いくらでも売物があり、盛業中のものもじゃんじゃん売りに出ているくらいで、これではカフェ商売の内幕もなかなか楽ではなさそうだと二の足を踏んだが、しかし<persName ref="#chouko">蝶子</persName>の自信の方が勝った。マダムの腕一つで女給の顔触れが少々悪くても結構<ruby><rb>流行</rb><rt>はや</rt></ruby>らして行けると意気込んだ。売りに出ている店を一軒一軒廻ってみて、結局<placeName ref="#shitadera">下寺町</placeName>電停前の店が<placeName ref="#futatsuido">二ツ井戸</placeName>から<placeName ref="#dotonbori">道頓堀</placeName>、<placeName ref="#sennichimae">千日前</placeName>へかけての盛り場に遠くない割に値段も手頃で、店の構えも小ぢんまりして、趣味に<ruby><rb>適</rb><rt>かな</rt></ruby>っているとて、それに決めた。造作附八百円で手を打ったが、<placeName ref="#tobita">飛田</placeName>の関東煮屋のような腐った店と違うから安い方であった。念のため<persName ref="#kinpachi">金八</persName>に見てもらうと、「ここならわても一ぺん遊んでみたい」と文句はなかった。そして、代替りゆえ、思い切って店の内外を<ruby><rb>改装</rb><rt>かいそう</rt></ruby>し、ネオンもつけて、派手に開店しなはれ、金はいくらでも出すと、随分乗気になってくれた。</p>
+        <p>名前は相変らずの「<placeName ref="#chouryu">蝶柳</placeName>」の上にサロンをつけて「<placeName ref="#salon-chouryu">サロン蝶柳</placeName>」とし、<ruby><rb>蓄音器</rb><rt>ちくおんき</rt></ruby>は新内、<ruby><rb>端唄</rb><rt>はうた</rt></ruby>など粋向きなのを掛け、女給はすべて日本髪か地味なハイカラの<ruby><rb>娘</rb><rt>こ</rt></ruby>ばかりで、<ruby><rb>下手</rb><rt>へた</rt></ruby>に洋装した女や髪の<ruby><rb>縮</rb><rt>ちぢ</rt></ruby>れた女などは置かなかった。バーテンというよりは料理場といった方が似合うところで、<persName ref="#ryukichi">柳吉</persName>はなまこの酢の物など<ruby><rb>附出</rb><rt>つきだ</rt></ruby>しの小鉢物を作り、<persName ref="#chouko">蝶子</persName>はしきりに茶屋風の愛嬌を振りまいた。すべてこのように日本趣味で、それがかえって面白いと客種も良く、コーヒーだけの客など居辛かった。</p>
+        <p>半年経たぬうちに押しも押されぬ店となった。<persName ref="#chouko">蝶子</persName>のマダム振りも板についた。使ってくれと新しい女給が「顔見せ」に来れば頭のてっぺんから足の先まで素早く一目の観察で、女の<ruby><rb>素姓</rb><rt>すじょう</rt></ruby>や腕が見抜けるようになった。ひとり、どうやら臭いと思われる女給が来た。体つき、身のこなしなど、いやらしく男の心をそそるようで眼つきも<ruby><rb>据</rb><rt>すわ</rt></ruby>っていて、気が進まなかったが、レッテル（顔）が良いので雇い入れた。べたべたと客にへばりつき、ひそひそ声の<ruby><rb>口説</rb><rt>くぜつ</rt></ruby>も何となく<persName ref="#chouko">蝶子</persName>には気にくわなかったが、良い客が皆その女についてしまったので、追い出すわけには行かなかった。時々、二、三時間暇をくれといって、客と出て行くのだった。そんなことがしばしば続いて、客の足が遠のいた。てっきりどこかへ客を食わえ込むらしく、客も馴染みになるとわざわざ店へ出向いて来る必要もなかったわけだ。そのための家を借りてあることもあとで分った。いわばカフェを利用して、そんな妙な事をやっていたのだ。追い出したところ、他の女給たちが<ruby><rb>動揺</rb><rt>どうよう</rt></ruby>した。ひとりひとり当ってみると、どの女給もその女を見習って一度ならずそんな道に足を入れているらしかった。そうしなければ、その女に自分らの客をとられてしまってやって行けなかったのかも知れぬが、とにかく、<persName ref="#chouko">蝶子</persName>はぞっと<ruby><rb>嫌気</rb><rt>いやけ</rt></ruby>がさした。その筋に分ったら大変だと、全部の女給に暇を出し、新しく<ruby><rb>温和</rb><rt>おとな</rt></ruby>しい女ばかりを雇い入れた。それでやっと危機を切り抜けた。店で承知でやらすならともかく、女給たちに勝手にそんな真似をされたら、もうそのカフェは駄目になると、あとで前例も聞かされた。</p>
+        <p>女給が変ると、客種も変り、新聞社関係の人がよく来た。新聞記者は眼つきが悪いからと思ったほどでなく、陽気に子供じみて、<persName ref="#chouko">蝶子</persName>を呼ぶにもマダムでなくて「おばちゃん」<persName ref="#chouko">蝶子</persName>の機嫌はすこぶる良かった。マスターこと「おっさん」の<persName ref="#ryukichi">柳吉</persName>もボックスに引き出されて一緒に遊んだり、ひどく家庭的な<ruby><rb>雰囲気</rb><rt>ふんいき</rt></ruby>の店になった。酔うと<persName ref="#ryukichi">柳吉</persName>は「おい、こら、らっきょ」などと記者の渾名を呼んだりし、そのあげく、二次会だと連中とつるんで<placeName ref="#imazato-shinchi">今里新地</placeName>へ車を飛ばした。<persName ref="#chouko">蝶子</persName>も客の手前、粋をきかして笑っていたが、泊って来たりすれば、やはり折檻の手はゆるめなかった。近所では<persName ref="#chouko">蝶子</persName>を<ruby><rb>鬼婆</rb><rt>おにばば</rt></ruby>と蔭口たたいた。女給たちには面白い見もので、マスターが悪いと表面では女同志のひいきもあったが、しかし、肚の中ではどう思っているか分らなかった。</p>
+        <p><persName ref="#chouko">蝶子</persName>は「娘さんを引き取ろうや」とそろそろ<persName ref="#ryukichi">柳吉</persName>に持ちかけた。<persName ref="#ryukichi">柳吉</persName>は「もうちょっと待ちイな」と言い<ruby><rb>逃</rb><rt>のが</rt></ruby>れめいた。「子供が可愛いことないのんか」ないはずはなかったが、娘の方で来たがらぬのだった。女学生の身でカフェ商売を恥じるのは無理もなかったが、理由はそんな簡単なものだけではなかった。父親を悪い女に<ruby><rb>奪</rb><rt>と</rt></ruby>られたと、死んだ母親は暇さえあれば、娘に言い聴かせていたのだ。<persName ref="#chouko">蝶子</persName>が無理にとせがむので、一、二度「<placeName ref="#salon-chouryu">サロン蝶柳</placeName>」へセーラー服の姿を現わしたが、にこりともしなかった。<persName ref="#chouko">蝶子</persName>はおかしいほど機嫌とって、「英語たらいうもんむつかしおまっしゃろな」女学生は鼻で笑うのだった。</p>
+        <p>ある日、こちらから頼みもしないのにだしぬけに白い顔を見せた。<persName ref="#chouko">蝶子</persName>は顔じゅう<ruby><rb>皺</rb><rt>しわ</rt></ruby>だらけに笑って「いらっしゃい」駆け寄ったのへつんと頭を下げるなり、女学生は<persName ref="#ryukichi">柳吉</persName>の所へ近寄って低い声で「お<ruby><rb>祖父</rb><rt>じい</rt></ruby>さんの病気が悪い、すぐ来て下さい」</p>
+        <p><persName ref="#ryukichi">柳吉</persName>と一緒に駆けつける事にしていた。が、<persName ref="#ryukichi">柳吉</persName>は「お前は家に<ruby><rb>居</rb><rt>お</rt></ruby>りイな。いま一緒に行ったら<ruby><rb>都合</rb><rt>ぐつ</rt></ruby>が悪い」<persName ref="#chouko">蝶子</persName>は気抜けした気持でしばらく<ruby><rb>呆然</rb><rt>ぼうぜん</rt></ruby>としたが、これだけのことは<persName ref="#ryukichi">柳吉</persName>にくれぐれも頼んだ。――父親の息のある間に、枕元で晴れて夫婦になれるよう、頼んでくれ。父親がうんと言ったらすぐ知らせてくれ。飛んで行くさかい。</p>
+        <p><persName ref="#chouko">蝶子</persName>は呉服屋へ駆け込んで、<persName ref="#ryukichi">柳吉</persName>と自分と二人分の紋附を大急ぎで<ruby><rb>拵</rb><rt>こしら</rt></ruby>えるように頼んだ。<ruby><rb>吉報</rb><rt>きっぽう</rt></ruby>を待っていたが、なかなか来なかった。<persName ref="#ryukichi">柳吉</persName>は顔も見せなかった。二日経ち、紋附も出来上った。四日目の夕方呼出しの電話が掛った。話がついた、すぐ来いの電話だと顔を紅潮させ、「もし、もし、私<persName ref="#ryukichi">維康</persName>です」と言うと、<persName ref="#ryukichi">柳吉</persName>の声で「ああ、お、お、お、おばはんか、親爺は今死んだぜ」「ああ、もし、もし」<persName ref="#chouko">蝶子</persName>の声は<ruby><rb>癇高</rb><rt>かんだか</rt></ruby>く<ruby><rb>震</rb><rt>ふる</rt></ruby>えた。「そんなら、私はすぐそっちイ行きまっさ、紋附も二人分出来てまんねん」足元がぐらぐらしながらも、それだけははっきり言った。が、<persName ref="#ryukichi">柳吉</persName>の声は、「お前は来ん方がええ。来たら<ruby><rb>都合</rb><rt>ぐつ</rt></ruby>悪い。よ、よ、よ、養子が……」あと聞かなかった。葬式にも出たらいかんて、そんな話があるもんかと頭の中を火が走った。病院の廊下で<persName ref="#ryukichi">柳吉</persName>の妹が言った言葉は嘘だったのか、それとも<persName ref="#ryukichi">柳吉</persName>が頑固な養子にまるめ込まれたのか、それを考える余裕もなかった。紋附のことが頭にこびりついた。店へ帰り二階へ<ruby><rb>閉</rb><rt>と</rt></ruby>じ<ruby><rb>籠</rb><rt>こも</rt></ruby>った。やがて、戸を閉め切って、ガスのゴム管を引っぱり上げた。「マダム、今夜はスキ焼でっか」階下から女給が声かけた。<ruby><rb>栓</rb><rt>せん</rt></ruby>をひねった。</p>
+        <p>夜、<persName ref="#ryukichi">柳吉</persName>が紋附をとりに帰って来ると、ガスのメーターがチンチンと高い音を立てていた。異様な<ruby><rb>臭気</rb><rt>しゅうき</rt></ruby>がした。驚いて二階へ上り、戸を開けた。団扇でパタパタそこらをあおった。医者を呼んだ。それで<persName ref="#chouko">蝶子</persName>は助かった。新聞に出た。新聞記者は<ruby><rb>治</rb><rt>ち</rt></ruby>に居て乱を忘れなかったのだ。日蔭者自殺を<ruby><rb>図</rb><rt>はか</rt></ruby>るなどと同情のある書き方だった。<persName ref="#ryukichi">柳吉</persName>は葬式があるからと逃げて行き、それきり戻って来なかった。<persName ref="#taneyoshi">種吉</persName>が<placeName ref="#umeda">梅田</placeName>へ<ruby><rb>訊</rb><rt>たず</rt></ruby>ねに行くと、そこにもいないらしかった。起きられるようになって店へ出ると、客が慰めてくれて、よく<ruby><rb>流行</rb><rt>はや</rt></ruby>った。妾になれと客はさすがに時機を見逃さなかった。毎朝、かなり厚化粧してどこかへ出掛けて行くので、さては妾になったのかと悪評だった。が本当は、<persName ref="#ryukichi">柳吉</persName>が早く帰るようにと金光教の道場へお詣りしていたのだった。</p>
+        <p>二十日余り経つと、<persName ref="#taneyoshi">種吉</persName>のところへ<persName ref="#ryukichi">柳吉</persName>の手紙が来た。自分ももう四十三歳だ、一度<ruby><rb>大患</rb><rt>たいかん</rt></ruby>に<ruby><rb>罹</rb><rt>かか</rt></ruby>った身ではそう永くも生きられまい。娘の愛にも<ruby><rb>惹</rb><rt>ひ</rt></ruby>かされる。<placeName ref="#kyushu">九州</placeName>の土地でたとえ職工をしてでも自活し、娘を引き取って余生を暮したい。<persName ref="#chouko">蝶子</persName>にも重々気の毒だが、よろしく伝えてくれ。<persName ref="#chouko">蝶子</persName>もまだ若いからこの先……などとあった。見せたらことだと<persName ref="#taneyoshi">種吉</persName>は焼き捨てた。</p>
+        <p>十日経ち、<persName ref="#ryukichi">柳吉</persName>はひょっくり「<placeName ref="#salon-chouryu">サロン蝶柳</placeName>」へ戻って来た。行方を<ruby><rb>晦</rb><rt>くら</rt></ruby>ましたのは策戦や、養子に<persName ref="#chouko">蝶子</persName>と別れたと見せかけて金を取る肚やった、親爺が死ねば当然遺産の分け前に<ruby><rb>与</rb><rt>あずか</rt></ruby>らねば損や、そう思て、わざと葬式にも呼ばなかったと言った。<persName ref="#chouko">蝶子</persName>は本当だと思った。<persName ref="#ryukichi">柳吉</persName>は「どや、なんぞ、う、う、うまいもん食いに行こか」と<persName ref="#chouko">蝶子</persName>を誘った。<placeName ref="#hozenji">法善寺</placeName>境内の「<placeName ref="#meotozenzai">めおとぜんざい</placeName>」へ行った。<placeName ref="#dotonbori">道頓堀</placeName>からの通路と<placeName ref="#sennichimae">千日前</placeName>からの通路の角に当っているところに古びた<ruby><rb>阿多福人形</rb><rt>おたふくにんぎょう</rt></ruby>が据えられ、その前に「<placeName ref="#meotozenzai">めおとぜんざい</placeName>」と書いた赤い<ruby><rb>大提灯</rb><rt>おおぢょうちん</rt></ruby>がぶら下っているのを見ると、しみじみと夫婦で行く店らしかった。おまけに、ぜんざいを<ruby><rb>註文</rb><rt>ちゅうもん</rt></ruby>すると、<ruby><rb>女夫</rb><rt>めおと</rt></ruby>の意味で一人に二杯ずつ持って来た。<ruby><rb>碁盤</rb><rt>ごばん</rt></ruby>の目の敷畳に腰をかけ、スウスウと高い音を立てて<ruby><rb>啜</rb><rt>すす</rt></ruby>りながら<persName ref="#ryukichi">柳吉</persName>は言った。「こ、こ、ここの<ruby><rb>善哉</rb><rt>ぜんざい</rt></ruby>はなんで、二、二、二杯ずつ持って来よるか知ってるか、知らんやろ。こら昔何とか<ruby><rb>大夫</rb><rt>だゆう</rt></ruby>ちう浄瑠璃のお師匠はんがひらいた店でな、一杯<ruby><rb>山盛</rb><rt>やまもり</rt></ruby>にするより、ちょっとずつ二杯にする方が<ruby><rb>沢山</rb><rt>ぎょうさん</rt></ruby>はいってるように見えるやろ、そこをうまいこと考えよったのや」<persName ref="#chouko">蝶子</persName>は「一人より女夫の方がええいうことでっしゃろ」ぽんと襟を突き上げると肩が大きく揺れた。<persName ref="#chouko">蝶子</persName>はめっきり肥えて、そこの座蒲団が尻にかくれるくらいであった。</p>
+        <p><persName ref="#chouko">蝶子</persName>と<persName ref="#ryukichi">柳吉</persName>はやがて浄瑠璃に<ruby><rb>凝</rb><rt>こ</rt></ruby>り出した。<placeName ref="#futatsuido">二ツ井戸</placeName><placeName ref="#tengyu">天牛書店</placeName>の二階広間で開かれた素義大会で、<persName ref="#ryukichi">柳吉</persName>は<persName ref="#chouko">蝶子</persName>の三味線で「<ruby><rb>太十</rb><rt>たいじゅう</rt></ruby>」を語り、二等賞を貰った。景品の大きな座蒲団は<persName ref="#chouko">蝶子</persName>が毎日使った。</p>
+        <p>（<date when="1940-08">昭和十五年八月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

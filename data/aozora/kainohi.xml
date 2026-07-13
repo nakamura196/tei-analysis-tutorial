@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>貝の火</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>貝の火</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「銀河鉄道の夜」角川文庫、角川書店。1969（昭和44）年7月20日初版発行。1991（平成3）年6月10日65刷。底本の親本：「第二次宮沢賢治全集　第十巻」筑摩書房。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card1942.html">https://www.aozora.gr.jp/cards/000081/card1942.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="homoi">
+        <persName>ホモイ</persName>
+        <note>主人公の子兎。おぼれかけたひばりの子を助けた礼に鳥の王から宝珠「貝の火」を贈られるが、いばって狐の悪事に加担するうちに玉を曇らせ、最後は砕けた玉の粉で目が見えなくなる。本作で唯一の固有の人名(呼び名)</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="amanogawa">
+        <placeName>天の川</placeName>
+        <note>銀河(天の川)。ホモイが貝の火を目にあてて空にすかしたとき玉ごしに透けて見える。天体のため座標なし</note>
+      </place>
+      <place xml:id="tengoku">
+        <placeName>天国</placeName>
+        <note>宗教的世界観上の場所(座標なし)。狐が盗んだ角パンを「天国の天ぷらというもんですぜ」と称して差し出す場面にのみ現れる</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>貝の火</head>
+        <p>今は<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>たちは、みんなみじかい茶色の<ruby><rb>着物</rb><rt>きもの</rt></ruby>です。</p>
+        <p><ruby><rb>野原</rb><rt>のはら</rt></ruby>の草はきらきら光り、あちこちの<ruby><rb>樺</rb><rt>かば</rt></ruby>の木は白い花をつけました。</p>
+        <p><ruby><rb>実</rb><rt>じつ</rt></ruby>に<ruby><rb>野原</rb><rt>のはら</rt></ruby>はいいにおいでいっぱいです。</p>
+        <p><ruby><rb>子兎</rb><rt>こうさぎ</rt></ruby>の<persName ref="#homoi">ホモイ</persName>は、<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んでぴんぴん<ruby><rb>踊</rb><rt>おど</rt></ruby>りながら<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「ふん、いいにおいだなあ。うまいぞ、うまいぞ、<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>なんかまるでパリパリだ」</p>
+        <p>風が来たので<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>は、<ruby><rb>葉</rb><rt>は</rt></ruby>や花を<ruby><rb>互</rb><rt>たが</rt></ruby>いにぶっつけて、しゃりんしゃりんと鳴りました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はもううれしくて、<ruby><rb>息</rb><rt>いき</rt></ruby>もつかずにぴょんぴょん草の上をかけ出しました。</p>
+        <p>それから<persName ref="#homoi">ホモイ</persName>はちょっと立ちどまって、<ruby><rb>腕</rb><rt>うで</rt></ruby>を組んでほくほくしながら、</p>
+        <p>「まるで<ruby><rb>僕</rb><rt>ぼく</rt></ruby>は川の<ruby><rb>波</rb><rt>なみ</rt></ruby>の上で<ruby><rb>芸当</rb><rt>げいとう</rt></ruby>をしているようだぞ」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>本当に<persName ref="#homoi">ホモイ</persName>は、いつか小さな<ruby><rb>流</rb><rt>なが</rt></ruby>れの<ruby><rb>岸</rb><rt>きし</rt></ruby>まで来ておりました。</p>
+        <p>そこには<ruby><rb>冷</rb><rt>つめ</rt></ruby>たい水がこぼんこぼんと音をたて、<ruby><rb>底</rb><rt>そこ</rt></ruby>の<ruby><rb>砂</rb><rt>すな</rt></ruby>がピカピカ光っています。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はちょっと頭を<ruby><rb>曲</rb><rt>ま</rt></ruby>げて、</p>
+        <p>「この川を<ruby><rb>向</rb><rt>む</rt></ruby>こうへ<ruby><rb>跳</rb><rt>と</rt></ruby>び<ruby><rb>越</rb><rt>こ</rt></ruby>えてやろうかな。なあに<ruby><rb>訳</rb><rt>わけ</rt></ruby>ないさ。けれども川の<ruby><rb>向</rb><rt>む</rt></ruby>こう<ruby><rb>側</rb><rt>がわ</rt></ruby>は、どうも草が<ruby><rb>悪</rb><rt>わる</rt></ruby>いからね」とひとりごとを<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>すると<ruby><rb>不意</rb><rt>ふい</rt></ruby>に<ruby><rb>流</rb><rt>なが</rt></ruby>れの<ruby><rb>上</rb><rt>かみ</rt></ruby>の方から、</p>
+        <p>「ブルルル、ピイ、ピイ、ピイ、ピイ、ブルルル、ピイ、ピイ、ピイ、ピイ」とけたたましい声がして、うす黒いもじゃもじゃした鳥のような形のものが、ばたばたばたばたもがきながら、<ruby><rb>流</rb><rt>なが</rt></ruby>れて<ruby><rb>参</rb><rt>まい</rt></ruby>りました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>急</rb><rt>いそ</rt></ruby>いで<ruby><rb>岸</rb><rt>きし</rt></ruby>にかけよって、じっと<ruby><rb>待</rb><rt>ま</rt></ruby>ちかまえました。</p>
+        <p><ruby><rb>流</rb><rt>なが</rt></ruby>されるのは、たしかにやせたひばりの<ruby><rb>子供</rb><rt>こども</rt></ruby>です。<persName ref="#homoi">ホモイ</persName>はいきなり水の中に<ruby><rb>飛</rb><rt>と</rt></ruby>び<ruby><rb>込</rb><rt>こ</rt></ruby>んで、前あしでしっかりそれをつかまえました。</p>
+        <p>するとそのひばりの<ruby><rb>子供</rb><rt>こども</rt></ruby>は、いよいよびっくりして、黄色なくちばしを大きくあけて、まるで<persName ref="#homoi">ホモイ</persName>のお耳もつんぼになるくらい鳴くのです。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はあわてて一生けん<ruby><rb>命</rb><rt>めい</rt></ruby>、あとあしで水をけりました。そして、</p>
+        <p>「<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>さ、　<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>さ」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら、その子の顔を見ますと、<persName ref="#homoi">ホモイ</persName>はぎょっとしてあぶなく手をはなしそうになりました。それは顔じゅうしわだらけで、くちばしが大きくて、おまけにどこかとかげに<ruby><rb>似</rb><rt>に</rt></ruby>ているのです。</p>
+        <p>けれどもこの強い<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>の子は、<ruby><rb>決</rb><rt>けっ</rt></ruby>してその手をはなしませんでした。<ruby><rb>怖</rb><rt>おそ</rt></ruby>ろしさに口をへの字にしながらも、それをしっかりおさえて、高く水の上にさしあげたのです。</p>
+        <p>そして二人は、どんどん<ruby><rb>流</rb><rt>なが</rt></ruby>されました。<persName ref="#homoi">ホモイ</persName>は二度ほど<ruby><rb>波</rb><rt>なみ</rt></ruby>をかぶったので、水をよほどのみました。それでもその鳥の子ははなしませんでした。</p>
+        <p>するとちょうど、<ruby><rb>小流</rb><rt>こなが</rt></ruby>れの<ruby><rb>曲</rb><rt>ま</rt></ruby>がりかどに、一本の小さな<ruby><rb>楊</rb><rt>やなぎ</rt></ruby>の<ruby><rb>枝</rb><rt>えだ</rt></ruby>が出て、水をピチャピチャたたいておりました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はいきなりその<ruby><rb>枝</rb><rt>えだ</rt></ruby>に、青い<ruby><rb>皮</rb><rt>かわ</rt></ruby>の見えるくらい<ruby><rb>深</rb><rt>ふか</rt></ruby>くかみつきました。そして力いっぱいにひばりの子を<ruby><rb>岸</rb><rt>きし</rt></ruby>の<ruby><rb>柔</rb><rt>やわ</rt></ruby>らかな草の上に<ruby><rb>投</rb><rt>な</rt></ruby>げあげて、自分も一とびにはね上がりました。</p>
+        <p>ひばりの子は草の上に<ruby><rb>倒</rb><rt>たお</rt></ruby>れて、目を白くしてガタガタ<ruby><rb>顫</rb><rt>ふる</rt></ruby>えています。</p>
+        <p><persName ref="#homoi">ホモイ</persName>も<ruby><rb>疲</rb><rt>つか</rt></ruby>れでよろよろしましたが、<ruby><rb>無理</rb><rt>むり</rt></ruby>にこらえて、<ruby><rb>楊</rb><rt>やなぎ</rt></ruby>の白い花をむしって来て、ひばりの子にかぶせてやりました。ひばりの子は、ありがとうと<ruby><rb>言</rb><rt>い</rt></ruby>うようにその<ruby><rb>鼠色</rb><rt>ねずみいろ</rt></ruby>の顔をあげました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はそれを見るとぞっとして、いきなり<ruby><rb>跳</rb><rt>と</rt></ruby>び<ruby><rb>退</rb><rt>の</rt></ruby>きました。そして声をたてて<ruby><rb>逃</rb><rt>に</rt></ruby>げました。</p>
+        <p>その時、空からヒュウと<ruby><rb>矢</rb><rt>や</rt></ruby>のように<ruby><rb>降</rb><rt>お</rt></ruby>りて来たものがあります。<persName ref="#homoi">ホモイ</persName>は立ちどまって、ふりかえって見ると、それは母親のひばりでした。母親のひばりは、<ruby><rb>物</rb><rt>もの</rt></ruby>も<ruby><rb>言</rb><rt>い</rt></ruby>えずにぶるぶる<ruby><rb>顫</rb><rt>ふる</rt></ruby>えながら、<ruby><rb>子供</rb><rt>こども</rt></ruby>のひばりを強く強く<ruby><rb>抱</rb><rt>だ</rt></ruby>いてやりました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はもう<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>と思ったので、いちもくさんにおとうさんのお<ruby><rb>家</rb><rt>うち</rt></ruby>へ走って帰りました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお母さんは、ちょうど、お家で白い草の<ruby><rb>束</rb><rt>たば</rt></ruby>をそろえておりましたが、<persName ref="#homoi">ホモイ</persName>を見てびっくりしました。そして、</p>
+        <p>「おや、どうかしたのかい。たいへん顔色が<ruby><rb>悪</rb><rt>わる</rt></ruby>いよ」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら<ruby><rb>棚</rb><rt>たな</rt></ruby>から<ruby><rb>薬</rb><rt>くすり</rt></ruby>の<ruby><rb>箱</rb><rt>はこ</rt></ruby>をおろしました。</p>
+        <p>「おっかさん、<ruby><rb>僕</rb><rt>ぼく</rt></ruby>ね、もじゃもじゃの鳥の子のおぼれるのを<ruby><rb>助</rb><rt>たす</rt></ruby>けたんです」と<persName ref="#homoi">ホモイ</persName>が<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお母さんは<ruby><rb>箱</rb><rt>はこ</rt></ruby>から<ruby><rb>万能散</rb><rt>まんのうさん</rt></ruby>を<ruby><rb>一服</rb><rt>いっぷく</rt></ruby>出して<persName ref="#homoi">ホモイ</persName>に<ruby><rb>渡</rb><rt>わた</rt></ruby>して、</p>
+        <p>「もじゃもじゃの鳥の子って、ひばりかい」と<ruby><rb>尋</rb><rt>たず</rt></ruby>ねました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>薬</rb><rt>くすり</rt></ruby>を<ruby><rb>受</rb><rt>う</rt></ruby>けとって、</p>
+        <p>「たぶんひばりでしょう。ああ頭がぐるぐるする。おっかさん、まわりが<ruby><rb>変</rb><rt>へん</rt></ruby>に<ruby><rb>見</rb><rt>み</rt></ruby>えるよ」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら、そのままバッタリ<ruby><rb>倒</rb><rt>たお</rt></ruby>れてしまいました。ひどい<ruby><rb>熱病</rb><rt>ねつびょう</rt></ruby>にかかったのです。</p>
+        <p>＊</p>
+        <p><persName ref="#homoi">ホモイ</persName>が、おとうさんやおっかさんや、<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお<ruby><rb>医者</rb><rt>いしゃ</rt></ruby>さんのおかげで、すっかりよくなったのは、<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>にみんな青い<ruby><rb>実</rb><rt>み</rt></ruby>ができたころでした。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は、ある雲のない<ruby><rb>静</rb><rt>しず</rt></ruby>かな<ruby><rb>晩</rb><rt>ばん</rt></ruby>、はじめてうちからちょっと出てみました。</p>
+        <p>南の空を、赤い星がしきりにななめに走りました。<persName ref="#homoi">ホモイ</persName>はうっとりそれを見とれました。すると<ruby><rb>不意</rb><rt>ふい</rt></ruby>に、空でブルルッとはねの音がして、二<ruby><rb>疋</rb><rt>ひき</rt></ruby>の小鳥が<ruby><rb>降</rb><rt>お</rt></ruby>りて<ruby><rb>参</rb><rt>まい</rt></ruby>りました。</p>
+        <p>大きい方は、まるい赤い光るものを<ruby><rb>大事</rb><rt>だいじ</rt></ruby>そうに草におろして、うやうやしく手をついて<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さま。あなたさまは<ruby><rb>私</rb><rt>わたし</rt></ruby>ども親子の<ruby><rb>大恩人</rb><rt>だいおんじん</rt></ruby>でございます」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は、その赤いものの光で、よくその顔を見て<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「あなた方は<ruby><rb>先頃</rb><rt>せんころ</rt></ruby>のひばりさんですか」</p>
+        <p>母親のひばりは、</p>
+        <p>「さようでございます。先日はまことにありがとうございました。せがれの<ruby><rb>命</rb><rt>いのち</rt></ruby>をお<ruby><rb>助</rb><rt>たす</rt></ruby>けくださいましてまことにありがとう<ruby><rb>存</rb><rt>ぞん</rt></ruby>じます。あなた<ruby><rb>様</rb><rt>さま</rt></ruby>はそのために、ご<ruby><rb>病気</rb><rt>びょうき</rt></ruby>にさえおなりになったとの事でございましたが、もうおよろしゅうございますか」</p>
+        <p>親子のひばりは、たくさんおじぎをしてまた<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「私どもは毎日この<ruby><rb>辺</rb><rt>へん</rt></ruby>を<ruby><rb>飛</rb><rt>と</rt></ruby>びめぐりまして、あなたさまの外へお出なさいますのをお<ruby><rb>待</rb><rt>ま</rt></ruby>ちいたしておりました。これは私どもの王からの<ruby><rb>贈物</rb><rt>おくりもの</rt></ruby>でございます」と<ruby><rb>言</rb><rt>い</rt></ruby>ながら、ひばりはさっきの赤い光るものを<persName ref="#homoi">ホモイ</persName>の前に出して、<ruby><rb>薄</rb><rt>うす</rt></ruby>いうすいけむりのようなはんけちを<ruby><rb>解</rb><rt>と</rt></ruby>きました。それはとちの<ruby><rb>実</rb><rt>み</rt></ruby>ぐらいあるまんまるの玉で、中では赤い火がちらちら<ruby><rb>燃</rb><rt>も</rt></ruby>えているのです。</p>
+        <p>ひばりの母親がまた<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「これは<ruby><rb>貝</rb><rt>かい</rt></ruby>の火という<ruby><rb>宝珠</rb><rt>ほうじゅ</rt></ruby>でございます。王さまのお<ruby><rb>言伝</rb><rt>ことづて</rt></ruby>ではあなた<ruby><rb>様</rb><rt>さま</rt></ruby>のお手入れしだいで、この<ruby><rb>珠</rb><rt>たま</rt></ruby>はどんなにでも<ruby><rb>立派</rb><rt>りっぱ</rt></ruby>になると<ruby><rb>申</rb><rt>もう</rt></ruby>します。どうかお<ruby><rb>納</rb><rt>おさ</rt></ruby>めをねがいます」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>笑</rb><rt>わら</rt></ruby>って<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「ひばりさん、<ruby><rb>僕</rb><rt>ぼく</rt></ruby>はこんなものいりませんよ。<ruby><rb>持</rb><rt>も</rt></ruby>って行ってください。たいへんきれいなもんですから、見るだけでたくさんです。見たくなったら、またあなたの<ruby><rb>所</rb><rt>ところ</rt></ruby>へ行きましょう」</p>
+        <p>ひばりが<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「いいえ。それはどうかお<ruby><rb>納</rb><rt>おさ</rt></ruby>めをねがいます。私どもの王からの<ruby><rb>贈物</rb><rt>おくりもの</rt></ruby>でございますから。お<ruby><rb>納</rb><rt>おさ</rt></ruby>めくださらないと、また私はせがれと二人で<ruby><rb>切腹</rb><rt>せっぷく</rt></ruby>をしないとなりません。さ、せがれ。お<ruby><rb>暇</rb><rt>いとま</rt></ruby>をして。さ。おじぎ。ご<ruby><rb>免</rb><rt>めん</rt></ruby>くださいませ」</p>
+        <p>そしてひばりの親子は二、三<ruby><rb>遍</rb><rt>べん</rt></ruby>お<ruby><rb>辞儀</rb><rt>じぎ</rt></ruby>をして、あわてて<ruby><rb>飛</rb><rt>と</rt></ruby>んで行ってしまいました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は玉を取りあげて見ました。玉は赤や黄の<ruby><rb>焔</rb><rt>ほのお</rt></ruby>をあげて、せわしくせわしく<ruby><rb>燃</rb><rt>も</rt></ruby>えているように見えますが、<ruby><rb>実</rb><rt>じつ</rt></ruby>はやはり<ruby><rb>冷</rb><rt>つめ</rt></ruby>たく<ruby><rb>美</rb><rt>うつく</rt></ruby>しく<ruby><rb>澄</rb><rt>す</rt></ruby>んでいるのです。目にあてて空にすかして見ると、もう<ruby><rb>焔</rb><rt>ほのお</rt></ruby>はなく、<placeName ref="#amanogawa">天の川</placeName>が<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>にすきとおっています。目からはなすと、またちらりちらり<ruby><rb>美</rb><rt>うつく</rt></ruby>しい火が<ruby><rb>燃</rb><rt>も</rt></ruby>えだします。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はそっと玉をささげて、おうちへはいりました。そしてすぐお父さんに見せました。すると<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお父さんが玉を手にとって、めがねをはずしてよく<ruby><rb>調</rb><rt>しら</rt></ruby>べてから<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「これは<ruby><rb>有名</rb><rt>ゆうめい</rt></ruby>な<ruby><rb>貝</rb><rt>かい</rt></ruby>の火という<ruby><rb>宝物</rb><rt>たからもの</rt></ruby>だ。これは<ruby><rb>大変</rb><rt>たいへん</rt></ruby>な玉だぞ。これをこのまま一生<ruby><rb>満足</rb><rt>まんぞく</rt></ruby>に<ruby><rb>持</rb><rt>も</rt></ruby>っている<ruby><rb>事</rb><rt>こと</rt></ruby>のできたものは今までに鳥に二人魚に一人あっただけだという話だ。お前はよく気をつけて光をなくさないようにするんだぞ」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「それは<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>ですよ。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>は<ruby><rb>決</rb><rt>けっ</rt></ruby>してなくしませんよ。そんなようなことは、ひばりも<ruby><rb>言</rb><rt>い</rt></ruby>っていました。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>は毎日百<ruby><rb>遍</rb><rt>ぺん</rt></ruby>ずつ<ruby><rb>息</rb><rt>いき</rt></ruby>をふきかけて百<ruby><rb>遍</rb><rt>ぺん</rt></ruby>ずつ<ruby><rb>紅雀</rb><rt>べにすずめ</rt></ruby>の毛でみがいてやりましょう」</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおっかさんも、玉を手にとってよくよくながめました。そして<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「この玉はたいへん<ruby><rb>損</rb><rt>そん</rt></ruby>じやすいという事です。けれども、また<ruby><rb>亡</rb><rt>な</rt></ruby>くなった<ruby><rb>鷲</rb><rt>わし</rt></ruby>の<ruby><rb>大臣</rb><rt>だいじん</rt></ruby>が<ruby><rb>持</rb><rt>も</rt></ruby>っていた時は、<ruby><rb>大噴火</rb><rt>だいふんか</rt></ruby>があって<ruby><rb>大臣</rb><rt>だいじん</rt></ruby>が鳥の<ruby><rb>避難</rb><rt>ひなん</rt></ruby>のために、あちこちさしずをして歩いている間に、この玉が山ほどある石に<ruby><rb>打</rb><rt>う</rt></ruby>たれたり、まっかな<ruby><rb>熔岩</rb><rt>ようがん</rt></ruby>に<ruby><rb>流</rb><rt>なが</rt></ruby>されたりしても、いっこうきずも<ruby><rb>曇</rb><rt>くも</rt></ruby>りもつかないでかえって前よりも<ruby><rb>美</rb><rt>うつく</rt></ruby>しくなったという話ですよ」</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおとうさんが<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「そうだ。それは名高いはなしだ。お前もきっと<ruby><rb>鷲</rb><rt>わし</rt></ruby>の<ruby><rb>大臣</rb><rt>だいじん</rt></ruby>のような名高い人になるだろう。よくいじわるなんかしないように気をつけないといけないぞ」</p>
+        <p><persName ref="#homoi">ホモイ</persName>はつかれてねむくなりました。そして自分のお<ruby><rb>床</rb><rt>とこ</rt></ruby>にコロリと<ruby><rb>横</rb><rt>よこ</rt></ruby>になって<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>だよ。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>なんかきっと<ruby><rb>立派</rb><rt>りっぱ</rt></ruby>にやるよ。玉は<ruby><rb>僕</rb><rt>ぼく</rt></ruby><ruby><rb>持</rb><rt>も</rt></ruby>って<ruby><rb>寝</rb><rt>ね</rt></ruby>るんだからください」</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおっかさんは玉を<ruby><rb>渡</rb><rt>わた</rt></ruby>しました。<persName ref="#homoi">ホモイ</persName>はそれを<ruby><rb>胸</rb><rt>むね</rt></ruby>にあててすぐねむってしまいました。</p>
+        <p>その<ruby><rb>晩</rb><rt>ばん</rt></ruby>の<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>の<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>なことは、黄や<ruby><rb>緑</rb><rt>みどり</rt></ruby>の火が空で<ruby><rb>燃</rb><rt>も</rt></ruby>えたり、<ruby><rb>野原</rb><rt>のはら</rt></ruby>が<ruby><rb>一面</rb><rt>いちめん</rt></ruby><ruby><rb>黄金</rb><rt>きん</rt></ruby>の草に<ruby><rb>変</rb><rt>かわ</rt></ruby>ったり、たくさんの小さな風車が<ruby><rb>蜂</rb><rt>はち</rt></ruby>のようにかすかにうなって空中を<ruby><rb>飛</rb><rt>と</rt></ruby>んであるいたり、<ruby><rb>仁義</rb><rt>じんぎ</rt></ruby>をそなえた<ruby><rb>鷲</rb><rt>わし</rt></ruby>の<ruby><rb>大臣</rb><rt>だいじん</rt></ruby>が、<ruby><rb>銀色</rb><rt>ぎんいろ</rt></ruby>のマントをきらきら<ruby><rb>波立</rb><rt>なみだ</rt></ruby>てて<ruby><rb>野原</rb><rt>のはら</rt></ruby>を見まわったり、<persName ref="#homoi">ホモイ</persName>はうれしさに<ruby><rb>何遍</rb><rt>なんべん</rt></ruby>も、</p>
+        <p>「ホウ。やってるぞ、やってるぞ」と声をあげたくらいです。</p>
+        <p>＊</p>
+        <p>あくる朝、<persName ref="#homoi">ホモイ</persName>は七時ごろ目をさまして、まず<ruby><rb>第一</rb><rt>だいいち</rt></ruby>に玉を見ました。玉の<ruby><rb>美</rb><rt>うつく</rt></ruby>しいことは、<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>よりもっとです。<persName ref="#homoi">ホモイ</persName>は玉をのぞいて、ひとりごとを<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「見える、見える。あそこが<ruby><rb>噴火口</rb><rt>ふんかこう</rt></ruby>だ。そら火をふいた。ふいたぞ。おもしろいな。まるで花火だ。おや、おや、おや、火がもくもく<ruby><rb>湧</rb><rt>わ</rt></ruby>いている。二つにわかれた。<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>だな。火花だ。火花だ。まるでいなずまだ。そら<ruby><rb>流</rb><rt>なが</rt></ruby>れ出したぞ。すっかり<ruby><rb>黄金色</rb><rt>きんいろ</rt></ruby>になってしまった。うまいぞ、うまいぞ。そらまた火をふいた」</p>
+        <p>おとうさんはもう外へ出ていました。おっかさんがにこにこして、おいしい白い草の<ruby><rb>根</rb><rt>ね</rt></ruby>や青いばらの<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>持</rb><rt>も</rt></ruby>って来て<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「さあ早くおかおを<ruby><rb>洗</rb><rt>あら</rt></ruby>って、今日は少し<ruby><rb>運動</rb><rt>うんどう</rt></ruby>をするんですよ。どれちょっとお見せ。まあ本当に<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>だね。お前がおかおを<ruby><rb>洗</rb><rt>あら</rt></ruby>っている間おっかさんが見ていてもいいかい」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「いいとも。これはうちの<ruby><rb>宝物</rb><rt>たからもの</rt></ruby>なんだから、おっかさんのだよ」そして<persName ref="#homoi">ホモイ</persName>は立って<ruby><rb>家</rb><rt>うち</rt></ruby>の入り口の<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>葉</rb><rt>は</rt></ruby>さきから、<ruby><rb>大粒</rb><rt>おおつぶ</rt></ruby>の<ruby><rb>露</rb><rt>つゆ</rt></ruby>を六つほど<ruby><rb>取</rb><rt>と</rt></ruby>ってすっかりお顔を<ruby><rb>洗</rb><rt>あら</rt></ruby>いました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はごはんがすんでから、玉へ百<ruby><rb>遍</rb><rt>ぺん</rt></ruby><ruby><rb>息</rb><rt>いき</rt></ruby>をふきかけ、それから百<ruby><rb>遍</rb><rt>ぺん</rt></ruby><ruby><rb>紅雀</rb><rt>べにすずめ</rt></ruby>の毛でみがきました。そしてたいせつに<ruby><rb>紅雀</rb><rt>べにすずめ</rt></ruby>のむな毛につつんで、今まで<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>の遠めがねを入れておいた<ruby><rb>瑪瑙</rb><rt>めのう</rt></ruby>の<ruby><rb>箱</rb><rt>はこ</rt></ruby>にしまってお母さんにあずけました。そして外に出ました。</p>
+        <p>風が<ruby><rb>吹</rb><rt>ふ</rt></ruby>いて<ruby><rb>草</rb><rt>くさ</rt></ruby>の<ruby><rb>露</rb><rt>つゆ</rt></ruby>がバラバラとこぼれます。つりがねそうが朝の<ruby><rb>鐘</rb><rt>かね</rt></ruby>を、</p>
+        <p>「カン、カン、カンカエコ、カンコカンコカン」と鳴らしています。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はぴょんぴょん<ruby><rb>跳</rb><rt>と</rt></ruby>んで<ruby><rb>樺</rb><rt>かば</rt></ruby>の木の下に行きました。</p>
+        <p>すると<ruby><rb>向</rb><rt>む</rt></ruby>こうから、年をとった野馬がやって<ruby><rb>参</rb><rt>まい</rt></ruby>りました。<persName ref="#homoi">ホモイ</persName>は少し<ruby><rb>怖</rb><rt>こわ</rt></ruby>くなって<ruby><rb>戻</rb><rt>もど</rt></ruby>ろうとしますと、馬はていねいにおじぎをして<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「あなたは<persName ref="#homoi">ホモイ</persName>さまでござりますか。こんど<ruby><rb>貝</rb><rt>かい</rt></ruby>の火がお前さまに<ruby><rb>参</rb><rt>まい</rt></ruby>られましたそうで<ruby><rb>実</rb><rt>じつ</rt></ruby>に<ruby><rb>祝着</rb><rt>しゅうちゃく</rt></ruby>に<ruby><rb>存</rb><rt>ぞん</rt></ruby>じまする。あの玉がこの前<ruby><rb>獣</rb><rt>けもの</rt></ruby>の方に<ruby><rb>参</rb><rt>まい</rt></ruby>りましてからもう千二百年たっていると<ruby><rb>申</rb><rt>もう</rt></ruby>しまする。いや、<ruby><rb>実</rb><rt>じつ</rt></ruby>に私めも<ruby><rb>今朝</rb><rt>けさ</rt></ruby>そのおはなしを<ruby><rb>承</rb><rt>うけたま</rt></ruby>わりまして、<ruby><rb>涙</rb><rt>なみだ</rt></ruby>を<ruby><rb>流</rb><rt>なが</rt></ruby>してござります」馬はボロボロ<ruby><rb>泣</rb><rt>な</rt></ruby>きだしました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はあきれていましたが、馬があんまり<ruby><rb>泣</rb><rt>な</rt></ruby>くものですから、ついつりこまれてちょっと<ruby><rb>鼻</rb><rt>はな</rt></ruby>がせらせらしました。馬は<ruby><rb>風呂敷</rb><rt>ふろしき</rt></ruby>ぐらいある<ruby><rb>浅黄</rb><rt>あさぎ</rt></ruby>のはんけちを出して<ruby><rb>涙</rb><rt>なみだ</rt></ruby>をふいて<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「あなた<ruby><rb>様</rb><rt>さま</rt></ruby>は<ruby><rb>私</rb><rt>わたし</rt></ruby>どもの<ruby><rb>恩人</rb><rt>おんじん</rt></ruby>でございます。どうかくれぐれもおからだを<ruby><rb>大事</rb><rt>だいじ</rt></ruby>になされてくだされませ」そして馬はていねいにおじぎをして<ruby><rb>向</rb><rt>む</rt></ruby>こうへ歩いて行きました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はなんだかうれしいようなおかしいような気がしてぼんやり考えながら、にわとこの木の<ruby><rb>影</rb><rt>かげ</rt></ruby>に行きました。するとそこに<ruby><rb>若</rb><rt>わか</rt></ruby>い二<ruby><rb>疋</rb><rt>ひき</rt></ruby>の<ruby><rb>栗鼠</rb><rt>りす</rt></ruby>が、<ruby><rb>仲</rb><rt>なか</rt></ruby>よく白いお<ruby><rb>餠</rb><rt>もち</rt></ruby>をたべておりましたが<persName ref="#homoi">ホモイ</persName>の来たのを見ると、びっくりして立ちあがって<ruby><rb>急</rb><rt>いそ</rt></ruby>いできもののえりを<ruby><rb>直</rb><rt>なお</rt></ruby>し、目を白黒くして<ruby><rb>餠</rb><rt>もち</rt></ruby>をのみ<ruby><rb>込</rb><rt>こ</rt></ruby>もうとしたりしました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はいつものように、</p>
+        <p>「りすさん。お早う」とあいさつをしましたが、りすは二<ruby><rb>疋</rb><rt>ひき</rt></ruby>とも<ruby><rb>堅</rb><rt>かた</rt></ruby>くなってしまって、いっこうことばも出ませんでした。<persName ref="#homoi">ホモイ</persName>はあわてて、</p>
+        <p>「りすさん。今日もいっしょにどこか<ruby><rb>遊</rb><rt>あそ</rt></ruby>びに行きませんか」と<ruby><rb>言</rb><rt>い</rt></ruby>いますと、りすはとんでもないと<ruby><rb>言</rb><rt>い</rt></ruby>うように目をまん円にして顔を見合わせて、それからいきなり<ruby><rb>向</rb><rt>む</rt></ruby>こうを<ruby><rb>向</rb><rt>む</rt></ruby>いて一生けん<ruby><rb>命</rb><rt>めい</rt></ruby><ruby><rb>逃</rb><rt>に</rt></ruby>げて行ってしまいました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はあきれてしまいました。そして顔色を<ruby><rb>変</rb><rt>か</rt></ruby>えてうちへ<ruby><rb>戻</rb><rt>もど</rt></ruby>って来て、</p>
+        <p>「おっかさん。なんだかみんな<ruby><rb>変</rb><rt>へん</rt></ruby>なぐあいですよ。りすさんなんか、もう<ruby><rb>僕</rb><rt>ぼく</rt></ruby>を<ruby><rb>仲間</rb><rt>なかま</rt></ruby>はずれにしましたよ」と<ruby><rb>言</rb><rt>い</rt></ruby>いますと<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおっかさんが<ruby><rb>笑</rb><rt>わら</rt></ruby>って答えました。</p>
+        <p>「それはそうですよ。お前はもう<ruby><rb>立派</rb><rt>りっぱ</rt></ruby>な人になったんだから、りすなんか<ruby><rb>恥</rb><rt>は</rt></ruby>ずかしいのです。ですからよく気をつけてあとで<ruby><rb>笑</rb><rt>わら</rt></ruby>われないようにするんですよ」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「おっかさん。それは<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>ですよ。それなら<ruby><rb>僕</rb><rt>ぼく</rt></ruby>はもう<ruby><rb>大将</rb><rt>たいしょう</rt></ruby>になったんですか」</p>
+        <p>おっかさんもうれしそうに、</p>
+        <p>「まあそうです」と<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んで<ruby><rb>踊</rb><rt>おど</rt></ruby>りあがりました。</p>
+        <p>「うまいぞ。うまいぞ。もうみんな<ruby><rb>僕</rb><rt>ぼく</rt></ruby>のてしたなんだ。<ruby><rb>狐</rb><rt>きつね</rt></ruby>なんかもうこわくもなんともないや。おっかさん。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>ね、りすさんを<ruby><rb>少将</rb><rt>しょうしょう</rt></ruby>にするよ。馬はね、馬は<ruby><rb>大佐</rb><rt>たいさ</rt></ruby>にしてやろうと思うんです」</p>
+        <p>おっかさんが<ruby><rb>笑</rb><rt>わら</rt></ruby>いながら、</p>
+        <p>「そうだね、けれどもあんまりいばるんじゃありませんよ」と<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は、</p>
+        <p>「<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>ですよ。おっかさん、<ruby><rb>僕</rb><rt>ぼく</rt></ruby>ちょっと外へ行って来ます」と<ruby><rb>言</rb><rt>い</rt></ruby>ったままぴょんと野原へ<ruby><rb>飛</rb><rt>と</rt></ruby>び出しました。するとすぐ目の前をいじわるの<ruby><rb>狐</rb><rt>きつね</rt></ruby>が風のように走って行きます。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はぶるぶる<ruby><rb>顫</rb><rt>ふる</rt></ruby>えながら思い切って<ruby><rb>叫</rb><rt>さけ</rt></ruby>んでみました。</p>
+        <p>「<ruby><rb>待</rb><rt>ま</rt></ruby>て。<ruby><rb>狐</rb><rt>きつね</rt></ruby>。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>は<ruby><rb>大将</rb><rt>たいしょう</rt></ruby>だぞ」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>がびっくりしてふり<ruby><rb>向</rb><rt>む</rt></ruby>いて顔色を<ruby><rb>変</rb><rt>か</rt></ruby>えて<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「へい。<ruby><rb>存</rb><rt>ぞん</rt></ruby>じております。へい、へい。何かご用でございますか」</p>
+        <p><persName ref="#homoi">ホモイ</persName>ができるくらい<ruby><rb>威勢</rb><rt>いせい</rt></ruby>よく<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「お前はずいぶん<ruby><rb>僕</rb><rt>ぼく</rt></ruby>をいじめたな。<ruby><rb>今度</rb><rt>こんど</rt></ruby>は<ruby><rb>僕</rb><rt>ぼく</rt></ruby>のけらいだぞ」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>は<ruby><rb>卒倒</rb><rt>そっとう</rt></ruby>しそうになって、頭に手をあげて答えました。</p>
+        <p>「へい、お<ruby><rb>申</rb><rt>もう</rt></ruby>し<ruby><rb>訳</rb><rt>わけ</rt></ruby>もございません。どうかお<ruby><rb>赦</rb><rt>ゆる</rt></ruby>しをねがいます」</p>
+        <p><persName ref="#homoi">ホモイ</persName>はうれしさにわくわくしました。</p>
+        <p>「<ruby><rb>特別</rb><rt>とくべつ</rt></ruby>に<ruby><rb>許</rb><rt>ゆる</rt></ruby>してやろう。お前を<ruby><rb>少尉</rb><rt>しょうい</rt></ruby>にする。よく<ruby><rb>働</rb><rt>はたら</rt></ruby>いてくれ」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んで<ruby><rb>四遍</rb><rt>よんへん</rt></ruby>ばかり<ruby><rb>廻</rb><rt>まわ</rt></ruby>りました。</p>
+        <p>「へいへい。ありがとう<ruby><rb>存</rb><rt>ぞん</rt></ruby>じます。どんな<ruby><rb>事</rb><rt>こと</rt></ruby>でもいたします。少しとうもろこしを<ruby><rb>盗</rb><rt>ぬす</rt></ruby>んで<ruby><rb>参</rb><rt>まい</rt></ruby>りましょうか」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「いや、それは<ruby><rb>悪</rb><rt>わる</rt></ruby>いことだ。そんなことをしてはならん」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>は頭を<ruby><rb>掻</rb><rt>か</rt></ruby>いて<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「へいへい。これからは<ruby><rb>決</rb><rt>けっ</rt></ruby>していたしません。なんでもおいいつけを<ruby><rb>待</rb><rt>ま</rt></ruby>っていたします」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「そうだ。用があったら<ruby><rb>呼</rb><rt>よ</rt></ruby>ぶからあっちへ行っておいで」<ruby><rb>狐</rb><rt>きつね</rt></ruby>はくるくるまわっておじぎをして<ruby><rb>向</rb><rt>む</rt></ruby>こうへ行ってしまいました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はうれしくてたまりません。野原を行ったり来たりひとりごとを<ruby><rb>言</rb><rt>い</rt></ruby>ったり、<ruby><rb>笑</rb><rt>わら</rt></ruby>ったりさまざまの<ruby><rb>楽</rb><rt>たの</rt></ruby>しいことを考えているうちに、もうお<ruby><rb>日様</rb><rt>ひさま</rt></ruby>が<ruby><rb>砕</rb><rt>くだ</rt></ruby>けた<ruby><rb>鏡</rb><rt>かがみ</rt></ruby>のように<ruby><rb>樺</rb><rt>かば</rt></ruby>の木の<ruby><rb>向</rb><rt>む</rt></ruby>こうに<ruby><rb>落</rb><rt>お</rt></ruby>ちましたので、<persName ref="#homoi">ホモイ</persName>も<ruby><rb>急</rb><rt>いそ</rt></ruby>いでおうちに帰りました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおとうさまももう帰っていて、その<ruby><rb>晩</rb><rt>ばん</rt></ruby>は<ruby><rb>様々</rb><rt>さまざま</rt></ruby>のご<ruby><rb>馳走</rb><rt>ちそう</rt></ruby>がありました。<persName ref="#homoi">ホモイ</persName>はその<ruby><rb>晩</rb><rt>ばん</rt></ruby>も<ruby><rb>美</rb><rt>うつく</rt></ruby>しい<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>を見ました。</p>
+        <p>＊</p>
+        <p>次の日<persName ref="#homoi">ホモイ</persName>は、お母さんに<ruby><rb>言</rb><rt>い</rt></ruby>いつけられて<ruby><rb>笊</rb><rt>ざる</rt></ruby>を<ruby><rb>持</rb><rt>も</rt></ruby>って野原に出て、<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>集</rb><rt>あつ</rt></ruby>めながらひとりごとを<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「ふん、<ruby><rb>大将</rb><rt>たいしょう</rt></ruby>が<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>集</rb><rt>あつ</rt></ruby>めるなんておかしいや。<ruby><rb>誰</rb><rt>だれ</rt></ruby>かに見つけられたらきっと<ruby><rb>笑</rb><rt>わら</rt></ruby>われるばかりだ。<ruby><rb>狐</rb><rt>きつね</rt></ruby>が来るといいがなあ」</p>
+        <p>すると足の下がなんだかもくもくしました。見るとむぐらが土をくぐってだんだん<ruby><rb>向</rb><rt>む</rt></ruby>こうへ行こうとします。<persName ref="#homoi">ホモイ</persName>は<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「むぐら、むぐら、むぐらもち、お前は<ruby><rb>僕</rb><rt>ぼく</rt></ruby>の<ruby><rb>偉</rb><rt>えら</rt></ruby>くなったことを知ってるかい」</p>
+        <p>むぐらが土の中で<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さんでいらっしゃいますか。よく<ruby><rb>存</rb><rt>ぞん</rt></ruby>じております」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は大いばりで<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「そうか。そんならいいがね。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>、お前を<ruby><rb>軍曹</rb><rt>ぐんそう</rt></ruby>にするよ。そのかわり少し<ruby><rb>働</rb><rt>はたら</rt></ruby>いてくれないかい」</p>
+        <p>むぐらはびくびくして<ruby><rb>尋</rb><rt>たず</rt></ruby>ねました。</p>
+        <p>「へいどんなことでございますか」</p>
+        <p><persName ref="#homoi">ホモイ</persName>がいきなり、</p>
+        <p>「<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>集</rb><rt>あつ</rt></ruby>めておくれ」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>むぐらは土の中で<ruby><rb>冷汗</rb><rt>ひやあせ</rt></ruby>をたらして頭をかきながら、</p>
+        <p>「さあまことに<ruby><rb>恐</rb><rt>おそ</rt></ruby>れ入りますが私は明るい<ruby><rb>所</rb><rt>ところ</rt></ruby>の<ruby><rb>仕事</rb><rt>しごと</rt></ruby>はいっこう<ruby><rb>無調法</rb><rt>ぶちょうほう</rt></ruby>でございます」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はおこってしまって、</p>
+        <p>「そうかい。そんならいいよ。<ruby><rb>頼</rb><rt>たの</rt></ruby>まないから。あとで見ておいで。ひどいよ」と<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>むぐらは、</p>
+        <p>「どうかご<ruby><rb>免</rb><rt>めん</rt></ruby>をねがいます。私は長くお<ruby><rb>日様</rb><rt>ひさま</rt></ruby>を見ますと<ruby><rb>死</rb><rt>し</rt></ruby>んでしまいますので」としきりにおわびをします。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は足をばたばたして、</p>
+        <p>「いいよ。もういいよ。だまっておいで」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>その時<ruby><rb>向</rb><rt>む</rt></ruby>こうのにわとこの<ruby><rb>陰</rb><rt>かげ</rt></ruby>からりすが五<ruby><rb>疋</rb><rt>ひき</rt></ruby>ちょろちょろ出て<ruby><rb>参</rb><rt>まい</rt></ruby>りました。そして<persName ref="#homoi">ホモイ</persName>の前にぴょこぴょこ頭を下げて<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さま、どうか私どもに<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>をお<ruby><rb>採</rb><rt>と</rt></ruby>らせくださいませ」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が、</p>
+        <p>「いいとも。さあやってくれ。お前たちはみんな<ruby><rb>僕</rb><rt>ぼく</rt></ruby>の<ruby><rb>少将</rb><rt>しょうしょう</rt></ruby>だよ」</p>
+        <p>りすがきゃっきゃっ<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んで<ruby><rb>仕事</rb><rt>しごと</rt></ruby>にかかりました。</p>
+        <p>この時<ruby><rb>向</rb><rt>む</rt></ruby>こうから<ruby><rb>仔馬</rb><rt>こうま</rt></ruby>が六<ruby><rb>疋</rb><rt>ぴき</rt></ruby>走って来て<persName ref="#homoi">ホモイ</persName>の前にとまりました。その中のいちばん大きなのが、</p>
+        <p>「<persName ref="#homoi">ホモイ</persName><ruby><rb>様</rb><rt>さま</rt></ruby>。私どもにも何かおいいつけをねがいます」と<ruby><rb>申</rb><rt>もう</rt></ruby>しました。<persName ref="#homoi">ホモイ</persName>はすっかり<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んで、</p>
+        <p>「いいとも。お前たちはみんな<ruby><rb>僕</rb><rt>ぼく</rt></ruby>の<ruby><rb>大佐</rb><rt>たいさ</rt></ruby>にする。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>が<ruby><rb>呼</rb><rt>よ</rt></ruby>んだら、きっとかけて来ておくれ」といいました。<ruby><rb>仔馬</rb><rt>こうま</rt></ruby>も<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んではねあがりました。</p>
+        <p>むぐらが土の中で<ruby><rb>泣</rb><rt>な</rt></ruby>きながら<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さま、どうか私にもできるようなことをおいいつけください。きっと<ruby><rb>立派</rb><rt>りっぱ</rt></ruby>にいたしますから」</p>
+        <p><persName ref="#homoi">ホモイ</persName>はまだおこっていましたので、</p>
+        <p>「お前なんかいらないよ。今に<ruby><rb>狐</rb><rt>きつね</rt></ruby>が来たらお前たちの<ruby><rb>仲間</rb><rt>なかま</rt></ruby>をみんなひどい目にあわしてやるよ。見ておいで」と足ぶみをして<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>土の中ではひっそりとして声もなくなりました。</p>
+        <p>それからりすは、<ruby><rb>夕方</rb><rt>ゆうがた</rt></ruby>までに<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>をたくさん<ruby><rb>集</rb><rt>あつ</rt></ruby>めて、<ruby><rb>大騒</rb><rt>おおさわ</rt></ruby>ぎをして<persName ref="#homoi">ホモイ</persName>のうちへ<ruby><rb>運</rb><rt>はこ</rt></ruby>びました。</p>
+        <p>おっかさんが、その<ruby><rb>騒</rb><rt>さわ</rt></ruby>ぎにびっくりして出て見て<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「おや、どうしたの、りすさん」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>横</rb><rt>よこ</rt></ruby>から口を出して、</p>
+        <p>「おっかさん。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>の<ruby><rb>腕</rb><rt>うで</rt></ruby>まえをごらん。まだまだ<ruby><rb>僕</rb><rt>ぼく</rt></ruby>はどんな<ruby><rb>事</rb><rt>こと</rt></ruby>でもできるんですよ」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお母さんは<ruby><rb>返事</rb><rt>へんじ</rt></ruby>もなく<ruby><rb>黙</rb><rt>だま</rt></ruby>って考えておりました。</p>
+        <p>するとちょうど<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお父さんが<ruby><rb>戻</rb><rt>もど</rt></ruby>って来て、その<ruby><rb>景色</rb><rt>けしき</rt></ruby>をじっと見てから<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>、お前は少し<ruby><rb>熱</rb><rt>ねつ</rt></ruby>がありはしないか。むぐらをたいへんおどしたそうだな。むぐらの<ruby><rb>家</rb><rt>うち</rt></ruby>では、もうみんなきちがいのようになって<ruby><rb>泣</rb><rt>な</rt></ruby>いてるよ。それにこんなにたくさんの<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>全体</rb><rt>ぜんたい</rt></ruby><ruby><rb>誰</rb><rt>だれ</rt></ruby>がたべるのだ」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>泣</rb><rt>な</rt></ruby>きだしました。りすはしばらくきのどくそうに立って見ておりましたが、とうとうこそこそみんな<ruby><rb>逃</rb><rt>に</rt></ruby>げてしまいました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお父さんがまた<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「お前はもうだめだ。<ruby><rb>貝</rb><rt>かい</rt></ruby>の火を見てごらん。きっと<ruby><rb>曇</rb><rt>くも</rt></ruby>ってしまっているから」</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおっかさんまでが<ruby><rb>泣</rb><rt>な</rt></ruby>いて、前かけで涙をそっとぬぐいながら、あの美しい玉のはいった<ruby><rb>瑪瑙</rb><rt>めのう</rt></ruby>の<ruby><rb>函</rb><rt>はこ</rt></ruby>を<ruby><rb>戸棚</rb><rt>とだな</rt></ruby>から取り出しました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおとうさんは<ruby><rb>函</rb><rt>はこ</rt></ruby>を受けとって<ruby><rb>蓋</rb><rt>ふた</rt></ruby>をひらいて<ruby><rb>驚</rb><rt>おどろ</rt></ruby>きました。</p>
+        <p><ruby><rb>珠</rb><rt>たま</rt></ruby>は<ruby><rb>一昨日</rb><rt>おととい</rt></ruby>の<ruby><rb>晩</rb><rt>ばん</rt></ruby>よりも、もっともっと赤く、もっともっと<ruby><rb>速</rb><rt>はや</rt></ruby>く<ruby><rb>燃</rb><rt>も</rt></ruby>えているのです。</p>
+        <p>みんなはうっとりみとれてしまいました。<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のおとうさんはだまって玉を<persName ref="#homoi">ホモイ</persName>に<ruby><rb>渡</rb><rt>わた</rt></ruby>してご<ruby><rb>飯</rb><rt>はん</rt></ruby>を食べはじめました。<persName ref="#homoi">ホモイ</persName>もいつか<ruby><rb>涙</rb><rt>なみだ</rt></ruby>がかわきみんなはまた気持ちよく<ruby><rb>笑</rb><rt>わら</rt></ruby>い出しいっしょにご<ruby><rb>飯</rb><rt>はん</rt></ruby>をたべてやすみました。</p>
+        <p>＊</p>
+        <p><ruby><rb>次</rb><rt>つぎ</rt></ruby>の朝早く<persName ref="#homoi">ホモイ</persName>はまた野原に出ました。</p>
+        <p>今日もよいお天気です。けれども<ruby><rb>実</rb><rt>み</rt></ruby>をとられた<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>は、もう前のようにしゃりんしゃりんと<ruby><rb>葉</rb><rt>は</rt></ruby>を鳴らしませんでした。</p>
+        <p><ruby><rb>向</rb><rt>む</rt></ruby>こうの<ruby><rb>向</rb><rt>む</rt></ruby>こうの青い野原のはずれから、<ruby><rb>狐</rb><rt>きつね</rt></ruby>が一生けん<ruby><rb>命</rb><rt>めい</rt></ruby>に走って来て、<persName ref="#homoi">ホモイ</persName>の前にとまって、</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さん。<ruby><rb>昨日</rb><rt>きのう</rt></ruby>りすに<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>集</rb><rt>あつ</rt></ruby>めさせたそうですね。どうです。今日は私がいいものを見つけて来てあげましょう。それは黄色でね、もくもくしてね、<ruby><rb>失敬</rb><rt>しっけい</rt></ruby>ですが、<persName ref="#homoi">ホモイ</persName>さん、あなたなんかまだ見たこともないやつですぜ。それから、<ruby><rb>昨日</rb><rt>きのう</rt></ruby>むぐらに<ruby><rb>罰</rb><rt>ばつ</rt></ruby>をかけるとおっしゃったそうですね。あいつは<ruby><rb>元来</rb><rt>がんらい</rt></ruby><ruby><rb>横着</rb><rt>おうちゃく</rt></ruby>だから、川の中へでも<ruby><rb>追</rb><rt>お</rt></ruby>いこんでやりましょう」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は、</p>
+        <p>「むぐらは<ruby><rb>許</rb><rt>ゆる</rt></ruby>しておやりよ。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>もう<ruby><rb>今朝</rb><rt>けさ</rt></ruby><ruby><rb>許</rb><rt>ゆる</rt></ruby>したよ。けれどそのおいしいたべものは少しばかり<ruby><rb>持</rb><rt>も</rt></ruby>って来てごらん」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<ruby><rb>合点</rb><rt>がってん</rt></ruby>、<ruby><rb>合点</rb><rt>がってん</rt></ruby>。十分間だけお<ruby><rb>待</rb><rt>ま</rt></ruby>ちなさい。十分間ですぜ」と<ruby><rb>言</rb><rt>い</rt></ruby>って<ruby><rb>狐</rb><rt>きつね</rt></ruby>はまるで風のように走って行きました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はそこで高く<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「むぐら、むぐら、むぐらもち。もうお前は<ruby><rb>許</rb><rt>ゆる</rt></ruby>してあげるよ。<ruby><rb>泣</rb><rt>な</rt></ruby>かなくてもいいよ」</p>
+        <p>土の中はしんとしておりました。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>がまた向こうから走って来ました。そして、</p>
+        <p>「さあおあがりなさい。これは<placeName ref="#tengoku">天国</placeName>の天ぷらというもんですぜ。<ruby><rb>最上等</rb><rt>さいじょうとう</rt></ruby>のところです」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら<ruby><rb>盗</rb><rt>ぬす</rt></ruby>んで来た<ruby><rb>角</rb><rt>かく</rt></ruby>パンを出しました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はちょっとたべてみたら、<ruby><rb>実</rb><rt>じつ</rt></ruby>にどうもうまいのです。そこで<ruby><rb>狐</rb><rt>きつね</rt></ruby>に、</p>
+        <p>「こんなものどの木にできるのだい」とたずねますと<ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>横</rb><rt>よこ</rt></ruby>を<ruby><rb>向</rb><rt>む</rt></ruby>いて一つ「ヘン」と<ruby><rb>笑</rb><rt>わら</rt></ruby>ってから<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「<ruby><rb>台所</rb><rt>だいどころ</rt></ruby>という木ですよ。ダアイドコロという木ね。おいしかったら毎日<ruby><rb>持</rb><rt>も</rt></ruby>って来てあげましょう」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「それでは毎日きっと三つずつ<ruby><rb>持</rb><rt>も</rt></ruby>って来ておくれ。ね」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>がいかにもよくのみこんだというように目をパチパチさせて<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「へい。よろしゅうございます。そのかわり私の<ruby><rb>鶏</rb><rt>とり</rt></ruby>をとるのを、あなたがとめてはいけませんよ」</p>
+        <p>「いいとも」と<persName ref="#homoi">ホモイ</persName>が<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>すると<ruby><rb>狐</rb><rt>きつね</rt></ruby>が、</p>
+        <p>「それでは今日の分、もう二つ<ruby><rb>持</rb><rt>も</rt></ruby>って来ましょう」と<ruby><rb>言</rb><rt>い</rt></ruby>いながらまた風のように走って行きました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はそれをおうちに<ruby><rb>持</rb><rt>も</rt></ruby>って行ってお父さんやお母さんにあげる時の<ruby><rb>事</rb><rt>こと</rt></ruby>を考えていました。</p>
+        <p>お父さんだって、こんなおいしいものは知らないだろう。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>はほんとうに<ruby><rb>孝行</rb><rt>こうこう</rt></ruby>だなあ。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>角</rb><rt>かく</rt></ruby>パンを二つくわえて来て<persName ref="#homoi">ホモイ</persName>の前に<ruby><rb>置</rb><rt>お</rt></ruby>いて、<ruby><rb>急</rb><rt>いそ</rt></ruby>いで「さよなら」と<ruby><rb>言</rb><rt>い</rt></ruby>いながらもう走っていってしまいました。<persName ref="#homoi">ホモイ</persName>は、</p>
+        <p>「<ruby><rb>狐</rb><rt>きつね</rt></ruby>はいったい毎日何をしているんだろう」とつぶやきながらおうちに帰りました。</p>
+        <p>今日はお父さんとお母さんとが、お家の前で<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>実</rb><rt>み</rt></ruby>を<ruby><rb>天日</rb><rt>てんぴ</rt></ruby>にほしておりました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>が、</p>
+        <p>「お父さん。いいものを<ruby><rb>持</rb><rt>も</rt></ruby>った来ましたよ。あげましょうか。まあちょっとたべてごらんなさい」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら<ruby><rb>角</rb><rt>かく</rt></ruby>パンを出しました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお父さんはそれを<ruby><rb>受</rb><rt>う</rt></ruby>けとって<ruby><rb>眼鏡</rb><rt>めがね</rt></ruby>をはずして、よくよく<ruby><rb>調</rb><rt>しら</rt></ruby>べてから<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「お前はこんなものを<ruby><rb>狐</rb><rt>きつね</rt></ruby>にもらったな。これは<ruby><rb>盗</rb><rt>ぬす</rt></ruby>んで来たもんだ。こんなものをおれは食べない」そしておとうさんは、も一つ<persName ref="#homoi">ホモイ</persName>のお母さんにあげようと<ruby><rb>持</rb><rt>も</rt></ruby>っていた分も、いきなり<ruby><rb>取</rb><rt>と</rt></ruby>りかえして自分のといっしょに土に<ruby><rb>投</rb><rt>な</rt></ruby>げつけてむちゃくちゃにふみにじってしまいました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はわっと<ruby><rb>泣</rb><rt>な</rt></ruby>きだしました。<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお母さんもいっしょに<ruby><rb>泣</rb><rt>な</rt></ruby>きました。</p>
+        <p>お父さんがあちこち歩きながら、</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>、お前はもう<ruby><rb>駄目</rb><rt>だめ</rt></ruby>だ。玉を見てごらん。もうきっと<ruby><rb>砕</rb><rt>くだ</rt></ruby>けているから」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>お母さんが<ruby><rb>泣</rb><rt>な</rt></ruby>きながら<ruby><rb>函</rb><rt>はこ</rt></ruby>を出しました。玉はお日さまの光を<ruby><rb>受</rb><rt>う</rt></ruby>けて、まるで天上に<ruby><rb>昇</rb><rt>のぼ</rt></ruby>って行きそうに<ruby><rb>美</rb><rt>うつく</rt></ruby>しく<ruby><rb>燃</rb><rt>も</rt></ruby>えました。</p>
+        <p>お父さんは玉を<persName ref="#homoi">ホモイ</persName>に<ruby><rb>渡</rb><rt>わた</rt></ruby>してだまってしまいました。<persName ref="#homoi">ホモイ</persName>も玉を見ていつか<ruby><rb>涙</rb><rt>なみだ</rt></ruby>を<ruby><rb>忘</rb><rt>わす</rt></ruby>れてしまいました。</p>
+        <p>＊</p>
+        <p><ruby><rb>次</rb><rt>つぎ</rt></ruby>の日<persName ref="#homoi">ホモイ</persName>はまた野原に出ました。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>が走って来てすぐ<ruby><rb>角</rb><rt>かく</rt></ruby>パンを三つ<ruby><rb>渡</rb><rt>わた</rt></ruby>しました。<persName ref="#homoi">ホモイ</persName>はそれを<ruby><rb>急</rb><rt>いそ</rt></ruby>いで<ruby><rb>台所</rb><rt>だいどころ</rt></ruby>の<ruby><rb>棚</rb><rt>たな</rt></ruby>の上に<ruby><rb>載</rb><rt>の</rt></ruby>せてまた野原に<ruby><rb>来</rb><rt>き</rt></ruby>ますと<ruby><rb>狐</rb><rt>きつね</rt></ruby>がまだ<ruby><rb>待</rb><rt>ま</rt></ruby>っていて<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さん。何かおもしろいことをしようじゃありませんか」<persName ref="#homoi">ホモイ</persName>が、</p>
+        <p>「どんなこと？」とききますと<ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「むぐらを<ruby><rb>罰</rb><rt>ばつ</rt></ruby>にするのはどうです。あいつは<ruby><rb>実</rb><rt>じつ</rt></ruby>にこの野原の<ruby><rb>毒</rb><rt>どく</rt></ruby>むしですぜ。そしてなまけものですぜ。あなたが一<ruby><rb>遍</rb><rt>ぺん</rt></ruby><ruby><rb>許</rb><rt>ゆる</rt></ruby>すって<ruby><rb>言</rb><rt>い</rt></ruby>ったのなら、今日は私だけでひとつむぐらをいじめますから、あなたはだまって見ておいでなさい。いいでしょう」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は、</p>
+        <p>「うん、<ruby><rb>毒</rb><rt>どく</rt></ruby>むしなら少しいじめてもよかろう」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>は、しばらくあちこち<ruby><rb>地面</rb><rt>じめん</rt></ruby>を<ruby><rb>嗅</rb><rt>か</rt></ruby>いだり、とんとんふんでみたりしていましたが、とうとう一つの大きな石を<ruby><rb>起</rb><rt>お</rt></ruby>こしました。するとその下にむぐらの親子が八<ruby><rb>疋</rb><rt>ぴき</rt></ruby>かたまってぶるぶるふるえておりました。<ruby><rb>狐</rb><rt>きつね</rt></ruby>が、</p>
+        <p>「さあ、走れ、走らないと、<ruby><rb>噛</rb><rt>か</rt></ruby>み<ruby><rb>殺</rb><rt>ころ</rt></ruby>すぞ」といって足をどんどんしました。むぐらの親子は、</p>
+        <p>「ごめんください。ごめんください」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら<ruby><rb>逃</rb><rt>に</rt></ruby>げようとするのですが、みんな目が見えない上に足がきかないものですからただ草を<ruby><rb>掻</rb><rt>か</rt></ruby>くだけです。</p>
+        <p>いちばん小さな子はもうあおむけになって<ruby><rb>気絶</rb><rt>きぜつ</rt></ruby>したようです。<ruby><rb>狐</rb><rt>きつね</rt></ruby>ははがみをしました。<persName ref="#homoi">ホモイ</persName>も思わず、</p>
+        <p>「シッシッ」と<ruby><rb>言</rb><rt>い</rt></ruby>って足を鳴らしました。その時、</p>
+        <p>「こらっ、何をする」と<ruby><rb>言</rb><rt>い</rt></ruby>う大きな声がして、<ruby><rb>狐</rb><rt>きつね</rt></ruby>がくるくると四<ruby><rb>遍</rb><rt>へん</rt></ruby>ばかりまわって、やがていちもくさんに<ruby><rb>逃</rb><rt>に</rt></ruby>げました。</p>
+        <p>見ると<persName ref="#homoi">ホモイ</persName>のお父さんが来ているのです。</p>
+        <p>お父さんは、<ruby><rb>急</rb><rt>いそ</rt></ruby>いでむぐらをみんな<ruby><rb>穴</rb><rt>あな</rt></ruby>に入れてやって、上へもとのように石をのせて、それから<persName ref="#homoi">ホモイ</persName>の<ruby><rb>首</rb><rt>くび</rt></ruby>すじをつかんで、ぐんぐんおうちへ引いて行きました。</p>
+        <p>おっかさんが出て来て<ruby><rb>泣</rb><rt>な</rt></ruby>いておとうさんにすがりました。お父さんが<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>。お前はもう<ruby><rb>駄目</rb><rt>だめ</rt></ruby>だぞ。今日こそ<ruby><rb>貝</rb><rt>かい</rt></ruby>の火は<ruby><rb>砕</rb><rt>くだ</rt></ruby>けたぞ。出して見ろ」</p>
+        <p>お母さんが<ruby><rb>涙</rb><rt>なみだ</rt></ruby>をふきながら<ruby><rb>函</rb><rt>はこ</rt></ruby>を出して来ました。お父さんは<ruby><rb>函</rb><rt>はこ</rt></ruby>の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>を<ruby><rb>開</rb><rt>ひら</rt></ruby>いて見ました。</p>
+        <p>するとお父さんはびっくりしてしまいました。<ruby><rb>貝</rb><rt>かい</rt></ruby>の火が今日ぐらい<ruby><rb>美</rb><rt>うつく</rt></ruby>しいことはまだありませんでした。それはまるで赤や<ruby><rb>緑</rb><rt>みどり</rt></ruby>や青や<ruby><rb>様々</rb><rt>さまざま</rt></ruby>の火がはげしく<ruby><rb>戦争</rb><rt>せんそう</rt></ruby>をして、<ruby><rb>地雷火</rb><rt>じらいか</rt></ruby>をかけたり、のろしを上げたり、またいなずまがひらめいたり、光の<ruby><rb>血</rb><rt>ち</rt></ruby>が<ruby><rb>流</rb><rt>なが</rt></ruby>れたり、そうかと思うと水色の<ruby><rb>焔</rb><rt>ほのお</rt></ruby>が玉の<ruby><rb>全体</rb><rt>ぜんたい</rt></ruby>をパッと<ruby><rb>占領</rb><rt>せんりょう</rt></ruby>して、<ruby><rb>今度</rb><rt>こんど</rt></ruby>はひなげしの花や、黄色のチュウリップ、<ruby><rb>薔薇</rb><rt>ばら</rt></ruby>やほたるかずらなどが、<ruby><rb>一面</rb><rt>いちめん</rt></ruby>風にゆらいだりしているように見えるのです。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお父さんは<ruby><rb>黙</rb><rt>だま</rt></ruby>って玉を<persName ref="#homoi">ホモイ</persName>に<ruby><rb>渡</rb><rt>わた</rt></ruby>しました。<persName ref="#homoi">ホモイ</persName>はまもなく<ruby><rb>涙</rb><rt>なみだ</rt></ruby>も<ruby><rb>忘</rb><rt>わす</rt></ruby>れて<ruby><rb>貝</rb><rt>かい</rt></ruby>の火をながめてよろこびました。</p>
+        <p>おっかさんもやっと<ruby><rb>安心</rb><rt>あんしん</rt></ruby>して、おひるのしたくをしました。</p>
+        <p>みんなはすわって<ruby><rb>角</rb><rt>かく</rt></ruby>パンをたべました。</p>
+        <p>お父さんが<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>。<ruby><rb>狐</rb><rt>きつね</rt></ruby>には気をつけないといけないぞ」</p>
+        <p><persName ref="#homoi">ホモイ</persName>が<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「お父さん、<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>ですよ。<ruby><rb>狐</rb><rt>きつね</rt></ruby>なんかなんでもありませんよ。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>には<ruby><rb>貝</rb><rt>かい</rt></ruby>の火があるのですもの。あの玉が<ruby><rb>砕</rb><rt>くだ</rt></ruby>けたり<ruby><rb>曇</rb><rt>くも</rt></ruby>ったりするもんですか」</p>
+        <p>お母さんが<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「本当にね、いい<ruby><rb>宝石</rb><rt>いし</rt></ruby>だね」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>得意</rb><rt>とくい</rt></ruby>になって<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「お母さん。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>はね、うまれつきあの<ruby><rb>貝</rb><rt>かい</rt></ruby>の火と<ruby><rb>離</rb><rt>はな</rt></ruby>れないようになってるんですよ。たとえ<ruby><rb>僕</rb><rt>ぼく</rt></ruby>がどんな<ruby><rb>事</rb><rt>こと</rt></ruby>をしたって、あの<ruby><rb>貝</rb><rt>かい</rt></ruby>の火がどこかへ<ruby><rb>飛</rb><rt>と</rt></ruby>んで行くなんて、そんな<ruby><rb>事</rb><rt>こと</rt></ruby>があるもんですか。それに<ruby><rb>僕</rb><rt>ぼく</rt></ruby>毎日百ずつ<ruby><rb>息</rb><rt>いき</rt></ruby>をかけてみがくんですもの」</p>
+        <p>「<ruby><rb>実際</rb><rt>じっさい</rt></ruby>そうだといいがな」とお父さんが<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>その<ruby><rb>晩</rb><rt>ばん</rt></ruby><persName ref="#homoi">ホモイ</persName>は<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>を見ました。高い高い<ruby><rb>錐</rb><rt>きり</rt></ruby>のような山の<ruby><rb>頂上</rb><rt>ちょうじょう</rt></ruby>に<ruby><rb>片脚</rb><rt>かたあし</rt></ruby>で立っているのです。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はびっくりして<ruby><rb>泣</rb><rt>な</rt></ruby>いて目をさましました。</p>
+        <p>＊</p>
+        <p>次の朝<persName ref="#homoi">ホモイ</persName>はまた野に出ました。</p>
+        <p>今日は<ruby><rb>陰気</rb><rt>いんき</rt></ruby>な<ruby><rb>霧</rb><rt>きり</rt></ruby>がジメジメ<ruby><rb>降</rb><rt>ふ</rt></ruby>っています。木も草もじっと<ruby><rb>黙</rb><rt>だま</rt></ruby>り<ruby><rb>込</rb><rt>こ</rt></ruby>みました。ぶなの木さえ<ruby><rb>葉</rb><rt>は</rt></ruby>をちらっとも動かしません。</p>
+        <p>ただあのつりがねそうの朝の<ruby><rb>鐘</rb><rt>かね</rt></ruby>だけは高く高く空にひびきました。</p>
+        <p>「カン、カン、カンカエコ、カンコカンコカン」おしまいの音がカアンと<ruby><rb>向</rb><rt>む</rt></ruby>こうから<ruby><rb>戻</rb><rt>もど</rt></ruby>って来ました。</p>
+        <p>そして<ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>角</rb><rt>かく</rt></ruby>パンを三つ<ruby><rb>持</rb><rt>も</rt></ruby>って<ruby><rb>半</rb><rt>はん</rt></ruby>ズボンをはいてやって来ました。</p>
+        <p>「<ruby><rb>狐</rb><rt>きつね</rt></ruby>。お早う」と<persName ref="#homoi">ホモイ</persName>が<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>はいやな<ruby><rb>笑</rb><rt>わら</rt></ruby>いようをしながら、</p>
+        <p>「いや<ruby><rb>昨日</rb><rt>きのう</rt></ruby>はびっくりしましたぜ。<persName ref="#homoi">ホモイ</persName>さんのお父さんもずいぶんがんこですな。しかしどうです。すぐご<ruby><rb>機嫌</rb><rt>きげん</rt></ruby>が<ruby><rb>直</rb><rt>なお</rt></ruby>ったでしょう。今日は一つうんとおもしろいことをやりましょう。<ruby><rb>動物園</rb><rt>どうぶつえん</rt></ruby>をあなたはきらいですか」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>が、</p>
+        <p>「うん。きらいではない」と<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>懐</rb><rt>ふところ</rt></ruby>から小さな<ruby><rb>網</rb><rt>あみ</rt></ruby>を出しました。そして、</p>
+        <p>「そら、こいつをかけておくと、とんぼでも<ruby><rb>蜂</rb><rt>はち</rt></ruby>でも<ruby><rb>雀</rb><rt>すずめ</rt></ruby>でも、かけすでも、もっと大きなやつでもひっかかりますぜ。それを<ruby><rb>集</rb><rt>あつ</rt></ruby>めて一つ<ruby><rb>動物園</rb><rt>どうぶつえん</rt></ruby>をやろうじゃありませんか」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はちょっとその<ruby><rb>動物園</rb><rt>どうぶつえん</rt></ruby>の<ruby><rb>景色</rb><rt>ありさま</rt></ruby>を考えてみて、たまらなくおもしろくなりました。そこで、</p>
+        <p>「やろう。けれども、<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>その<ruby><rb>網</rb><rt>あみ</rt></ruby>でとれるかい」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>がいかにもおかしそうにして、</p>
+        <p>「<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>ですとも。あなたは早くパンを<ruby><rb>置</rb><rt>お</rt></ruby>いておいでなさい。そのうちに私はもう百ぐらいは<ruby><rb>集</rb><rt>あつ</rt></ruby>めておきますから」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は、<ruby><rb>急</rb><rt>いそ</rt></ruby>いで<ruby><rb>角</rb><rt>かく</rt></ruby>パンを<ruby><rb>取</rb><rt>と</rt></ruby>ってお家に帰って、<ruby><rb>台所</rb><rt>だいどころ</rt></ruby>の<ruby><rb>棚</rb><rt>たな</rt></ruby>の上に<ruby><rb>載</rb><rt>の</rt></ruby>せて、また<ruby><rb>急</rb><rt>いそ</rt></ruby>いで帰って来ました。</p>
+        <p>見るともう<ruby><rb>狐</rb><rt>きつね</rt></ruby>は<ruby><rb>霧</rb><rt>きり</rt></ruby>の中の<ruby><rb>樺</rb><rt>かば</rt></ruby>の木に、すっかり<ruby><rb>網</rb><rt>あみ</rt></ruby>をかけて、口を大きくあけて<ruby><rb>笑</rb><rt>わら</rt></ruby>っていました。</p>
+        <p>「はははは、ご<ruby><rb>覧</rb><rt>らん</rt></ruby>なさい。もう四<ruby><rb>疋</rb><rt>ひき</rt></ruby>つかまりましたよ」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>はどこから<ruby><rb>持</rb><rt>も</rt></ruby>って来たか大きな<ruby><rb>硝子箱</rb><rt>ガラスばこ</rt></ruby>を<ruby><rb>指</rb><rt>ゆび</rt></ruby>さして<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>本当にその中には、かけすと<ruby><rb>鶯</rb><rt>うぐいす</rt></ruby>と<ruby><rb>紅雀</rb><rt>べにすずめ</rt></ruby>と、ひわと、四<ruby><rb>疋</rb><rt>ひき</rt></ruby>はいってばたばたしておりました。</p>
+        <p>けれども<persName ref="#homoi">ホモイ</persName>の顔を見ると、みんな<ruby><rb>急</rb><rt>きゅう</rt></ruby>に<ruby><rb>安心</rb><rt>あんしん</rt></ruby>したように<ruby><rb>静</rb><rt>しず</rt></ruby>まりました。</p>
+        <p><ruby><rb>鶯</rb><rt>うぐいす</rt></ruby>が<ruby><rb>硝子</rb><rt>ガラス</rt></ruby><ruby><rb>越</rb><rt>ご</rt></ruby>しに<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>さん。どうかあなたのお力で<ruby><rb>助</rb><rt>たす</rt></ruby>けてやってください。私らは<ruby><rb>狐</rb><rt>きつね</rt></ruby>につかまったのです。あしたはきっと食われます。お<ruby><rb>願</rb><rt>ねが</rt></ruby>いでございます。<persName ref="#homoi">ホモイ</persName>さん」</p>
+        <p><persName ref="#homoi">ホモイ</persName>はすぐ<ruby><rb>箱</rb><rt>はこ</rt></ruby>を<ruby><rb>開</rb><rt>ひら</rt></ruby>こうとしました。</p>
+        <p>すると、<ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>額</rb><rt>ひたい</rt></ruby>に黒い<ruby><rb>皺</rb><rt>しわ</rt></ruby>をよせて、<ruby><rb>眼</rb><rt>め</rt></ruby>を<ruby><rb>釣</rb><rt>つ</rt></ruby>りあげてどなりました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>。気をつけろ。その<ruby><rb>箱</rb><rt>はこ</rt></ruby>に手でもかけてみろ。食い<ruby><rb>殺</rb><rt>ころ</rt></ruby>すぞ。<ruby><rb>泥棒</rb><rt>どろぼう</rt></ruby>め」</p>
+        <p>まるで口が<ruby><rb>横</rb><rt>よこ</rt></ruby>に<ruby><rb>裂</rb><rt>さ</rt></ruby>けそうです。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はこわくなってしまって、いちもくさんにおうちへ帰りました。今日はおっかさんも野原に出て、うちにいませんでした。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はあまり<ruby><rb>胸</rb><rt>むね</rt></ruby>がどきどきするので、あの<ruby><rb>貝</rb><rt>かい</rt></ruby>の火を見ようと<ruby><rb>函</rb><rt>はこ</rt></ruby>を出して<ruby><rb>蓋</rb><rt>ふた</rt></ruby>を<ruby><rb>開</rb><rt>ひら</rt></ruby>きました。</p>
+        <p>それはやはり火のように<ruby><rb>燃</rb><rt>も</rt></ruby>えておりました。けれども気のせいか、<ruby><rb>一所</rb><rt>ひとところ</rt></ruby>小さな小さな<ruby><rb>針</rb><rt>はり</rt></ruby>でついたくらいの白い<ruby><rb>曇</rb><rt>くも</rt></ruby>りが見えるのです。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はどうもそれが気になってしかたありませんでした。そこでいつものように、フッフッと<ruby><rb>息</rb><rt>いき</rt></ruby>をかけて、<ruby><rb>紅雀</rb><rt>べにすずめ</rt></ruby>の<ruby><rb>胸毛</rb><rt>むなげ</rt></ruby>で上を<ruby><rb>軽</rb><rt>かる</rt></ruby>くこすりました。</p>
+        <p>けれども、どうもそれがとれないのです。その時、お父さんが帰って来ました。そして<persName ref="#homoi">ホモイ</persName>の顔色が<ruby><rb>変</rb><rt>か</rt></ruby>わっているのを見て<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>。<ruby><rb>貝</rb><rt>かい</rt></ruby>の火が<ruby><rb>曇</rb><rt>くも</rt></ruby>ったのか。たいへんお前の顔色が<ruby><rb>悪</rb><rt>わる</rt></ruby>いよ。どれお見せ」そして玉をすかして見て<ruby><rb>笑</rb><rt>わら</rt></ruby>って<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「なあに、すぐ<ruby><rb>除</rb><rt>と</rt></ruby>れるよ。黄色の火なんか、かえって今までよりよけい<ruby><rb>燃</rb><rt>も</rt></ruby>えているくらいだ。どれ、<ruby><rb>紅雀</rb><rt>べにすずめ</rt></ruby>の毛を少しおくれ」そしてお父さんは<ruby><rb>熱心</rb><rt>ねっしん</rt></ruby>にみがきはじめました。けれどもどうも<ruby><rb>曇</rb><rt>くも</rt></ruby>りがとれるどころかだんだん大きくなるらしいのです。</p>
+        <p>お母さんが帰って<ruby><rb>参</rb><rt>まい</rt></ruby>りました。そして<ruby><rb>黙</rb><rt>だま</rt></ruby>ってお父さんから<ruby><rb>貝</rb><rt>かい</rt></ruby>の火を<ruby><rb>受</rb><rt>う</rt></ruby>け<ruby><rb>取</rb><rt>と</rt></ruby>って、すかして見てため<ruby><rb>息</rb><rt>いき</rt></ruby>をついて<ruby><rb>今度</rb><rt>こんど</rt></ruby>は自分で<ruby><rb>息</rb><rt>いき</rt></ruby>をかけてみがきました。</p>
+        <p><ruby><rb>実</rb><rt>じつ</rt></ruby>にみんな、だまってため<ruby><rb>息</rb><rt>いき</rt></ruby>ばかりつきながら、かわるがわる一生けん<ruby><rb>命</rb><rt>めい</rt></ruby>みがいたのです。</p>
+        <p>もう<ruby><rb>夕方</rb><rt>ゆうがた</rt></ruby>になりました。お父さんは、にわかに気がついたように立ちあがって、</p>
+        <p>「まあご<ruby><rb>飯</rb><rt>はん</rt></ruby>を食べよう。今夜<ruby><rb>一晩</rb><rt>ひとばん</rt></ruby><ruby><rb>油</rb><rt>あぶら</rt></ruby>に<ruby><rb>漬</rb><rt>つ</rt></ruby>けておいてみろ。それがいちばんいいという話だ」といいました。お母さんはびっくりして、</p>
+        <p>「まあ、ご<ruby><rb>飯</rb><rt>はん</rt></ruby>のしたくを<ruby><rb>忘</rb><rt>わす</rt></ruby>れていた。なんにもこさえてない。<ruby><rb>一昨日</rb><rt>おととい</rt></ruby>のすずらんの<ruby><rb>実</rb><rt>み</rt></ruby>と<ruby><rb>今朝</rb><rt>けさ</rt></ruby>の<ruby><rb>角</rb><rt>かく</rt></ruby>パンだけをたべましょうか」と<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「うんそれでいいさ」とお父さんがいいました。<persName ref="#homoi">ホモイ</persName>はため<ruby><rb>息</rb><rt>いき</rt></ruby>をついて玉を<ruby><rb>函</rb><rt>はこ</rt></ruby>に入れてじっとそれを見つめました。</p>
+        <p>みんなは、だまってご<ruby><rb>飯</rb><rt>はん</rt></ruby>をすましました。</p>
+        <p>お父さんは、</p>
+        <p>「どれ<ruby><rb>油</rb><rt>あぶら</rt></ruby>を出してやるかな」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら<ruby><rb>棚</rb><rt>たな</rt></ruby>からかやの<ruby><rb>実</rb><rt>み</rt></ruby>の<ruby><rb>油</rb><rt>あぶら</rt></ruby>の<ruby><rb>瓶</rb><rt>びん</rt></ruby>をおろしました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>はそれを<ruby><rb>受</rb><rt>う</rt></ruby>けとって<ruby><rb>貝</rb><rt>かい</rt></ruby>の火を入れた<ruby><rb>函</rb><rt>はこ</rt></ruby>に<ruby><rb>注</rb><rt>つ</rt></ruby>ぎました。そしてあかりをけしてみんな早くからねてしまいました。</p>
+        <p>＊</p>
+        <p>夜中に<persName ref="#homoi">ホモイ</persName>は<ruby><rb>眼</rb><rt>め</rt></ruby>をさましました。</p>
+        <p>そしてこわごわ<ruby><rb>起</rb><rt>お</rt></ruby>きあがって、そっと<ruby><rb>枕</rb><rt>まくら</rt></ruby>もとの<ruby><rb>貝</rb><rt>かい</rt></ruby>の火を見ました。<ruby><rb>貝</rb><rt>かい</rt></ruby>の火は、<ruby><rb>油</rb><rt>あぶら</rt></ruby>の中で魚の<ruby><rb>眼玉</rb><rt>めだま</rt></ruby>のように<ruby><rb>銀色</rb><rt>ぎんいろ</rt></ruby>に光っています。もう赤い火は<ruby><rb>燃</rb><rt>も</rt></ruby>えていませんでした。</p>
+        <p><persName ref="#homoi">ホモイ</persName>は大声で<ruby><rb>泣</rb><rt>な</rt></ruby>き出しました。</p>
+        <p><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお父さんやお母さんがびっくりして<ruby><rb>起</rb><rt>お</rt></ruby>きてあかりをつけました。</p>
+        <p><ruby><rb>貝</rb><rt>かい</rt></ruby>の火はまるで<ruby><rb>鉛</rb><rt>なまり</rt></ruby>の玉のようになっています。<persName ref="#homoi">ホモイ</persName>は<ruby><rb>泣</rb><rt>な</rt></ruby>きながら<ruby><rb>狐</rb><rt>きつね</rt></ruby>の<ruby><rb>網</rb><rt>あみ</rt></ruby>のはなしをお父さんにしました。</p>
+        <p>お父さんはたいへんあわてて<ruby><rb>急</rb><rt>いそ</rt></ruby>いで<ruby><rb>着物</rb><rt>きもの</rt></ruby>をきかえながら<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#homoi">ホモイ</persName>。お前は<ruby><rb>馬鹿</rb><rt>ばか</rt></ruby>だぞ。<ruby><rb>俺</rb><rt>おれ</rt></ruby>も<ruby><rb>馬鹿</rb><rt>ばか</rt></ruby>だった。お前はひばりの<ruby><rb>子供</rb><rt>こども</rt></ruby>の<ruby><rb>命</rb><rt>いのち</rt></ruby>を<ruby><rb>助</rb><rt>たす</rt></ruby>けてあの玉をもらったのじゃないか。それをお前は<ruby><rb>一昨日</rb><rt>おととい</rt></ruby>なんか生まれつきだなんて<ruby><rb>言</rb><rt>い</rt></ruby>っていた。さあ、野原へ行こう。<ruby><rb>狐</rb><rt>きつね</rt></ruby>がまだ<ruby><rb>網</rb><rt>あみ</rt></ruby>を<ruby><rb>張</rb><rt>は</rt></ruby>っているかもしれない。お前はいのちがけで<ruby><rb>狐</rb><rt>きつね</rt></ruby>とたたかうんだぞ。もちろんおれも<ruby><rb>手伝</rb><rt>てつだ</rt></ruby>う」</p>
+        <p><persName ref="#homoi">ホモイ</persName>は<ruby><rb>泣</rb><rt>な</rt></ruby>いて立ちあがりました。<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のお母さんも<ruby><rb>泣</rb><rt>な</rt></ruby>いて二人のあとを<ruby><rb>追</rb><rt>お</rt></ruby>いました。</p>
+        <p><ruby><rb>霧</rb><rt>きり</rt></ruby>がポシャポシャ<ruby><rb>降</rb><rt>ふ</rt></ruby>って、もう夜があけかかっています。</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>はまだ<ruby><rb>網</rb><rt>あみ</rt></ruby>をかけて、<ruby><rb>樺</rb><rt>かば</rt></ruby>の木の下にいました。そして三人を見て口を<ruby><rb>曲</rb><rt>ま</rt></ruby>げて大声でわらいました。<persName ref="#homoi">ホモイ</persName>のお父さんが<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「<ruby><rb>狐</rb><rt>きつね</rt></ruby>。お前はよくも<persName ref="#homoi">ホモイ</persName>をだましたな。さあ<ruby><rb>決闘</rb><rt>けっとう</rt></ruby>をしろ」</p>
+        <p><ruby><rb>狐</rb><rt>きつね</rt></ruby>が<ruby><rb>実</rb><rt>じつ</rt></ruby>に<ruby><rb>悪党</rb><rt>あくとう</rt></ruby>らしい顔をして<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「へん。<ruby><rb>貴様</rb><rt>きさま</rt></ruby>ら三<ruby><rb>疋</rb><rt>びき</rt></ruby>ばかり食い<ruby><rb>殺</rb><rt>ころ</rt></ruby>してやってもいいが、<ruby><rb>俺</rb><rt>おれ</rt></ruby>もけがでもするとつまらないや。おれはもっといい食べものがあるんだ」</p>
+        <p>そして<ruby><rb>函</rb><rt>はこ</rt></ruby>をかついで<ruby><rb>逃</rb><rt>に</rt></ruby>げ出そうとしました。</p>
+        <p>「<ruby><rb>待</rb><rt>ま</rt></ruby>てこら」と<persName ref="#homoi">ホモイ</persName>のお父さんがガラスの<ruby><rb>箱</rb><rt>はこ</rt></ruby>を<ruby><rb>押</rb><rt>おさ</rt></ruby>えたので、<ruby><rb>狐</rb><rt>きつね</rt></ruby>はよろよろして、とうとう<ruby><rb>函</rb><rt>はこ</rt></ruby>を<ruby><rb>置</rb><rt>お</rt></ruby>いたまま<ruby><rb>逃</rb><rt>に</rt></ruby>げて行ってしまいました。</p>
+        <p>見ると<ruby><rb>箱</rb><rt>はこ</rt></ruby>の中に鳥が百<ruby><rb>疋</rb><rt>ぴき</rt></ruby>ばかり、みんな<ruby><rb>泣</rb><rt>な</rt></ruby>いていました。<ruby><rb>雀</rb><rt>すずめ</rt></ruby>や、かけすや、うぐいすはもちろん、大きな大きな<ruby><rb>梟</rb><rt>ふくろう</rt></ruby>や、それに、ひばりの親子までがはいっているのです。</p>
+        <p><persName ref="#homoi">ホモイ</persName>のお父さんは<ruby><rb>蓋</rb><rt>ふた</rt></ruby>をあけました。</p>
+        <p>鳥がみんな<ruby><rb>飛</rb><rt>と</rt></ruby>び出して<ruby><rb>地面</rb><rt>じめん</rt></ruby>に手をついて声をそろえて<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「ありがとうございます。ほんとうにたびたびおかげ<ruby><rb>様</rb><rt>さま</rt></ruby>でございます」</p>
+        <p>すると<persName ref="#homoi">ホモイ</persName>のお父さんが<ruby><rb>申</rb><rt>もう</rt></ruby>しました。</p>
+        <p>「どういたしまして、私どもは<ruby><rb>面目</rb><rt>めんもく</rt></ruby><ruby><rb>次第</rb><rt>しだい</rt></ruby>もございません。あなた方の王さまからいただいた<ruby><rb>玉</rb><rt>たま</rt></ruby>をとうとう<ruby><rb>曇</rb><rt>くも</rt></ruby>らしてしまったのです」</p>
+        <p>鳥が一<ruby><rb>遍</rb><rt>ぺん</rt></ruby>に<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「まあどうしたのでしょう。どうかちょっと<ruby><rb>拝見</rb><rt>はいけん</rt></ruby>いたしたいものです」</p>
+        <p>「さあどうぞ」と<ruby><rb>言</rb><rt>い</rt></ruby>いながら<persName ref="#homoi">ホモイ</persName>のお父さんは、みんなをおうちの方へ<ruby><rb>案内</rb><rt>あんない</rt></ruby>しました。鳥はぞろぞろついて行きました。<persName ref="#homoi">ホモイ</persName>はみんなのあとを<ruby><rb>泣</rb><rt>な</rt></ruby>きながらしょんぼりついて行きました。<ruby><rb>梟</rb><rt>ふくろう</rt></ruby>が<ruby><rb>大股</rb><rt>おおまた</rt></ruby>にのっそのっそと歩きながら時々こわい<ruby><rb>眼</rb><rt>め</rt></ruby>をして<persName ref="#homoi">ホモイ</persName>をふりかえって見ました。</p>
+        <p>みんなはおうちにはいりました。</p>
+        <p>鳥は、ゆかや<ruby><rb>棚</rb><rt>たな</rt></ruby>や<ruby><rb>机</rb><rt>つくえ</rt></ruby>や、うちじゅうのあらゆる<ruby><rb>場所</rb><rt>ばしょ</rt></ruby>をふさぎました。<ruby><rb>梟</rb><rt>ふくろう</rt></ruby>が目玉を<ruby><rb>途方</rb><rt>とほう</rt></ruby>もない方に<ruby><rb>向</rb><rt>む</rt></ruby>けながら、しきりに「オホン、オホン」とせきばらいをします。</p>
+        <p><persName ref="#homoi">ホモイ</persName>のお父さんがただの白い石になってしまった<ruby><rb>貝</rb><rt>かい</rt></ruby>の火を取りあげて、</p>
+        <p>「もうこんなぐあいです。どうかたくさん<ruby><rb>笑</rb><rt>わら</rt></ruby>ってやってください」と<ruby><rb>言</rb><rt>い</rt></ruby>うとたん、<ruby><rb>貝</rb><rt>かい</rt></ruby>の火は<ruby><rb>鋭</rb><rt>するど</rt></ruby>くカチッと鳴って二つに<ruby><rb>割</rb><rt>わ</rt></ruby>れました。</p>
+        <p>と思うと、パチパチパチッとはげしい音がして見る見るまるで<ruby><rb>煙</rb><rt>けむり</rt></ruby>のように<ruby><rb>砕</rb><rt>くだ</rt></ruby>けました。</p>
+        <p><persName ref="#homoi">ホモイ</persName>が入口でアッと<ruby><rb>言</rb><rt>い</rt></ruby>って<ruby><rb>倒</rb><rt>たお</rt></ruby>れました。目にその<ruby><rb>粉</rb><rt>こな</rt></ruby>がはいったのです。みんなは<ruby><rb>驚</rb><rt>おどろ</rt></ruby>いてそっちへ行こうとしますと、<ruby><rb>今度</rb><rt>こんど</rt></ruby>はそこらにピチピチピチと音がして<ruby><rb>煙</rb><rt>けむり</rt></ruby>がだんだん<ruby><rb>集</rb><rt>あつ</rt></ruby>まり、やがて<ruby><rb>立派</rb><rt>りっぱ</rt></ruby>ないくつかのかけらになり、おしまいにカタッと二つかけらが組み合って、すっかり<ruby><rb>昔</rb><rt>むかし</rt></ruby>の<ruby><rb>貝</rb><rt>かい</rt></ruby>の火になりました。玉はまるで<ruby><rb>噴火</rb><rt>ふんか</rt></ruby>のように<ruby><rb>燃</rb><rt>も</rt></ruby>え、<ruby><rb>夕日</rb><rt>ゆうひ</rt></ruby>のようにかがやき、ヒューと音を立てて<ruby><rb>窓</rb><rt>まど</rt></ruby>から外の方へ<ruby><rb>飛</rb><rt>と</rt></ruby>んで行きました。</p>
+        <p>鳥はみんな<ruby><rb>興</rb><rt>きょう</rt></ruby>をさまして、一人<ruby><rb>去</rb><rt>さ</rt></ruby>り二人<ruby><rb>去</rb><rt>さ</rt></ruby>り今はふくろうだけになりました。ふくろうはじろじろ<ruby><rb>室</rb><rt>へや</rt></ruby>の中を見まわしながら、</p>
+        <p>「たった<ruby><rb>六日</rb><rt>むいか</rt></ruby>だったな。ホッホ</p>
+        <p>たった六日だったな。ホッホ」</p>
+        <p>とあざ<ruby><rb>笑</rb><rt>わら</rt></ruby>って、<ruby><rb>肩</rb><rt>かた</rt></ruby>をゆすぶって<ruby><rb>大股</rb><rt>おおまた</rt></ruby>に出て行きました。</p>
+        <p>それに<persName ref="#homoi">ホモイ</persName>の目は、もうさっきの玉のように白く<ruby><rb>濁</rb><rt>にご</rt></ruby>ってしまって、まったく物が見えなくなったのです。</p>
+        <p>はじめからおしまいまでお母さんは<ruby><rb>泣</rb><rt>な</rt></ruby>いてばかりおりました。お父さんが<ruby><rb>腕</rb><rt>うで</rt></ruby>を組んでじっと考えていましたが、やがて<persName ref="#homoi">ホモイ</persName>のせなかを<ruby><rb>静</rb><rt>しず</rt></ruby>かにたたいて<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<ruby><rb>泣</rb><rt>な</rt></ruby>くな。こんなことはどこにもあるのだ。それをよくわかったお前は、いちばんさいわいなのだ。目はきっとまたよくなる。お父さんがよくしてやるから。な。<ruby><rb>泣</rb><rt>な</rt></ruby>くな」</p>
+        <p><ruby><rb>窓</rb><rt>まど</rt></ruby>の外では<ruby><rb>霧</rb><rt>きり</rt></ruby>が<ruby><rb>晴</rb><rt>は</rt></ruby>れて<ruby><rb>鈴蘭</rb><rt>すずらん</rt></ruby>の<ruby><rb>葉</rb><rt>は</rt></ruby>がきらきら光り、つりがねそうは、</p>
+        <p>「カン、カン、カンカエコ、カンコカンコカン」と朝の<ruby><rb>鐘</rb><rt>かね</rt></ruby>を高く<ruby><rb>鳴</rb><rt>な</rt></ruby>らしました。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

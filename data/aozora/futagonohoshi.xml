@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>双子の星</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>双子の星</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「新編　銀河鉄道の夜」新潮文庫、新潮社。1989（平成元）年6月15日発行。1994（平成6）年6月5日13刷。入力：野口英司。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card459.html">https://www.aozora.gr.jp/cards/000081/card459.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="chunse">
+        <persName>チュンセ</persName>
+        <note>双子のお星さまの一人。作中では「チュンセ童子」「チュンセさん」と呼ばれる。天の川の西の岸の水精のお宮に住み、ポウセと向い合って星めぐりの歌に合せ一晩銀笛を吹くのが役目。傷ついた大烏の星の毒血を吸い出し、蠍星を家まで送り届ける</note>
+      </person>
+      <person xml:id="pouse">
+        <persName>ポウセ</persName>
+        <note>双子のお星さまの一人。作中では「ポウセ童子」「ポウセさん」と呼ばれる。チュンセと向い合うお宮に住み、ともに銀笛を吹く。彗星に欺されて海に落ちひとでにされかけるが、海蛇の王に助けられ竜巻で天上に帰る</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="amanogawa">
+        <placeName>天の川</placeName>
+        <note>銀河(天の川)。その西の岸に双子のお星さまのお宮があり、作品全体の舞台となる。大烏の星の歌では「あまのがわ」と平仮名で歌われる。天体のため座標なし</note>
+      </place>
+      <place xml:id="sora-no-izumi">
+        <placeName>そらの井戸</placeName>
+        <note>天の川の西の岸からよほど離れた処にあり、青い小さな星で円くかこまれた空の泉。地の文では「空の泉」、大烏の星の歌では「そらの井戸」と呼ばれる。幻想上の場所のため座標なし</note>
+      </place>
+      <place xml:id="ogarasu-no-hoshi">
+        <placeName>大烏の星</placeName>
+        <note>からす座にあたる星。空の泉で蠍星と争って毒の鉤に刺され、チュンセ童子に毒血を吸い出してもらう。擬人化された天体のため座標なし</note>
+      </place>
+      <place xml:id="sasori-no-hoshi">
+        <placeName>蠍星</placeName>
+        <note>さそり座にあたる星。「蠍の星」「さそり」とも呼ばれる。大烏の星と争って頭に傷を負い、双子の星に家まで送り届けられて心を改めることを誓う。擬人化された天体のため座標なし</note>
+      </place>
+      <place xml:id="usagi-no-hoshi">
+        <placeName>兎の星</placeName>
+        <note>うさぎ座にあたる星。大烏の星・蠍の星と並び、空の泉まで行ける星の一つとして挙げられる。天体のため座標なし</note>
+      </place>
+      <place xml:id="washi-no-hoshi">
+        <placeName>鷲の星</placeName>
+        <note>わし座にあたる星。海の底から見上げる空に見え、星めぐりの歌では「ひろげた鷲のつばさ」と歌われる。天体のため座標なし</note>
+      </place>
+      <place xml:id="kotohiki-no-hoshi">
+        <placeName>琴弾きの星</placeName>
+        <note>こと座にあたる星。海の底から見上げる空に、天の川・そらの井戸・鷲の星とともに見える。天体のため座標なし</note>
+      </place>
+      <place xml:id="orion">
+        <placeName>オリオン</placeName>
+        <note>オリオン座。星めぐりの歌に「オリオンは高くうたい」と歌われる。天体のため座標なし</note>
+      </place>
+      <place xml:id="andoromeda">
+        <placeName>アンドロメダ</placeName>
+        <note>アンドロメダ座。星めぐりの歌に「アンドロメダのくもはさかなのくちのかたち」と歌われる。天体のため座標なし</note>
+      </place>
+      <place xml:id="koinu">
+        <placeName>小いぬ</placeName>
+        <note>こいぬ座。星めぐりの歌に「あおいめだまの小いぬ」と歌われる。天体のため座標なし</note>
+      </place>
+      <place xml:id="hebi">
+        <placeName>へび</placeName>
+        <note>星めぐりの歌に「ひかりのへびのとぐろ」と歌われる星座。うみへび座(へび座とする説もある)。天体のため座標なし</note>
+      </place>
+      <place xml:id="ooguma">
+        <placeName>大ぐま</placeName>
+        <note>おおぐま座。星めぐりの歌に「大ぐまのあしをきたに五つのばしたところ」と歌われる。天体のため座標なし</note>
+      </place>
+      <place xml:id="koguma">
+        <placeName>小熊</placeName>
+        <note>こぐま座。星めぐりの歌に「小熊のひたいのうえはそらのめぐりのめあて」と歌われる(ひたいの上が北極星=空のめぐりの目印)。天体のため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>双子の星</head>
+        <p>双子の星　一</p>
+        <p><placeName ref="#amanogawa"><ruby><rb>天</rb><rt>あま</rt></ruby>の<ruby><rb>川</rb><rt>がわ</rt></ruby></placeName>の西の岸にすぎなの<ruby><rb>胞子</rb><rt>ほうし</rt></ruby>ほどの小さな二つの星が見えます。あれは<persName ref="#chunse">チュンセ</persName>童子と<persName ref="#pouse">ポウセ</persName>童子という双子のお星さまの住んでいる小さな<ruby><rb>水精</rb><rt>すいしょう</rt></ruby>のお宮です。</p>
+        <p>このすきとおる二つのお宮は、まっすぐに向い合っています。夜は二人とも、きっとお宮に帰って、きちんと<ruby><rb>座</rb><rt>すわ</rt></ruby>り、空の星めぐりの歌に合せて、一晩<ruby><rb>銀笛</rb><rt>ぎんてき</rt></ruby>を<ruby><rb>吹</rb><rt>ふ</rt></ruby>くのです。それがこの双子のお星様の役目でした。</p>
+        <p>ある朝、お日様がカツカツカツと<ruby><rb>厳</rb><rt>おごそ</rt></ruby>かにお<ruby><rb>身体</rb><rt>からだ</rt></ruby>をゆすぶって、東から<ruby><rb>昇</rb><rt>のぼ</rt></ruby>っておいでになった時、<persName ref="#chunse">チュンセ</persName>童子は銀笛を下に置いて<persName ref="#pouse">ポウセ</persName>童子に申しました。</p>
+        <p>「<persName ref="#pouse">ポウセ</persName>さん。もういいでしょう。お日様もお昇りになったし、雲もまっ白に光っています。今日は西の野原の泉へ行きませんか。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が、まだ<ruby><rb>夢中</rb><rt>むちゅう</rt></ruby>で、半分<ruby><rb>眼</rb><rt>め</rt></ruby>をつぶったまま、銀笛を吹いていますので、<persName ref="#chunse">チュンセ</persName>童子はお宮から下りて、<ruby><rb>沓</rb><rt>くつ</rt></ruby>をはいて、<persName ref="#pouse">ポウセ</persName>童子のお宮の段にのぼって、もう一度<ruby><rb>云</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<persName ref="#pouse">ポウセ</persName>さん。もういいでしょう。東の空はまるで白く燃えているようですし、下では小さな鳥なんかもう目をさましている様子です。今日は西の野原の泉へ行きませんか。そして、<ruby><rb>風車</rb><rt>かざぐるま</rt></ruby>で<ruby><rb>霧</rb><rt>きり</rt></ruby>をこしらえて、小さな<ruby><rb>虹</rb><rt>にじ</rt></ruby>を飛ばして遊ぼうではありませんか。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子はやっと気がついて、びっくりして笛を置いて云いました。</p>
+        <p>「あ、<persName ref="#chunse">チュンセ</persName>さん。失礼いたしました。もうすっかり明るくなったんですね。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>今すぐ沓をはきますから。」</p>
+        <p>そして<persName ref="#pouse">ポウセ</persName>童子は、白い<ruby><rb>貝殻</rb><rt>かいがら</rt></ruby>の沓をはき、二人は連れだって空の銀の<ruby><rb>芝原</rb><rt>しばはら</rt></ruby>を仲よく歌いながら行きました。</p>
+        <p>「お日さまの、</p>
+        <p>お通りみちを　はき<ruby><rb>浄</rb><rt>きよ</rt></ruby>め、</p>
+        <p>ひかりをちらせ　あまの白雲。</p>
+        <p>お日さまの、</p>
+        <p>お通りみちの　石かけを</p>
+        <p>深くうずめよ、あまの青雲。」</p>
+        <p>そしてもういつか<placeName ref="#sora-no-izumi">空の泉</placeName>に来ました。</p>
+        <p>この泉は<ruby><rb>霽</rb><rt>は</rt></ruby>れた晩には、下からはっきり見えます。<placeName ref="#amanogawa">天の川</placeName>の西の岸から、よほど<ruby><rb>離</rb><rt>はな</rt></ruby>れた<ruby><rb>処</rb><rt>ところ</rt></ruby>に、青い小さな星で円くかこまれてあります。底は青い小さなつぶ石でたいらにうずめられ、石の間から<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>な水が、ころころころころ<ruby><rb>湧</rb><rt>わ</rt></ruby>き出して泉の一方のふちから<placeName ref="#amanogawa">天の川</placeName>へ小さな流れになって走って行きます。私共の世界が<ruby><rb>旱</rb><rt>ひでり</rt></ruby>の時、<ruby><rb>瘠</rb><rt>や</rt></ruby>せてしまった<ruby><rb>夜鷹</rb><rt>よだか</rt></ruby>やほととぎすなどが、それをだまって見上げて、残念そうに<ruby><rb>咽喉</rb><rt>のど</rt></ruby>をくびくびさせているのを時々見ることがあるではありませんか。どんな鳥でもとてもあそこまでは行けません。けれども、<ruby><rb>天</rb><rt>てん</rt></ruby>の<placeName ref="#ogarasu-no-hoshi"><ruby><rb>大烏</rb><rt>おおがらす</rt></ruby>の星</placeName>や<placeName ref="#sasori-no-hoshi"><ruby><rb>蠍</rb><rt>さそり</rt></ruby>の星</placeName>や<placeName ref="#usagi-no-hoshi"><ruby><rb>兎</rb><rt>うさぎ</rt></ruby>の星</placeName>ならもちろんすぐ行けます。</p>
+        <p>「<persName ref="#pouse">ポウセ</persName>さんまずここへ<ruby><rb>滝</rb><rt>たき</rt></ruby>をこしらえましょうか。」</p>
+        <p>「ええ、こしらえましょう。僕石を運びますから。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が沓をぬいで小流れの中に入り、<persName ref="#pouse">ポウセ</persName>童子は岸から手ごろの石を集めはじめました。</p>
+        <p>今は、空は、りんごのいい<ruby><rb>匂</rb><rt>におい</rt></ruby>いで<ruby><rb>一杯</rb><rt>いっぱい</rt></ruby>です。西の空に消え残った銀色のお月様が<ruby><rb>吐</rb><rt>は</rt></ruby>いたのです。</p>
+        <p>ふと野原の向うから大きな声で歌うのが聞えます。</p>
+        <p>「<placeName ref="#amanogawa">あまのがわ</placeName>の　にしのきしを、</p>
+        <p>すこしはなれた<placeName ref="#sora-no-izumi">そらの井戸</placeName>。</p>
+        <p>みずはころろ、そこもきらら、</p>
+        <p>まわりをかこむあおいほし。</p>
+        <p>夜鷹ふくろう、ちどり、かけす、</p>
+        <p>来よとすれども、できもせぬ。」</p>
+        <p>「あ、<placeName ref="#ogarasu-no-hoshi">大烏の星</placeName>だ。」童子たちは<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に云いました。</p>
+        <p>もう空のすすきをざわざわと分けて大烏が向うから<ruby><rb>肩</rb><rt>かた</rt></ruby>をふって、のっしのっしと<ruby><rb>大股</rb><rt>おおまた</rt></ruby>にやって参りました。まっくろなびろうどのマントを着て、まっくろなびろうどの<ruby><rb>股引</rb><rt>ももひき</rt></ruby>をはいて<ruby><rb>居</rb><rt>お</rt></ruby>ります。</p>
+        <p>大烏は二人を見て立ちどまって<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>にお<ruby><rb>辞儀</rb><rt>じぎ</rt></ruby>しました。</p>
+        <p>「いや、今日は。<persName ref="#chunse">チュンセ</persName>童子と<persName ref="#pouse">ポウセ</persName>童子。よく晴れて結構ですな。しかしどうも晴れると咽喉が<ruby><rb>乾</rb><rt>かわ</rt></ruby>いていけません。それに<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>は少し高く歌い過ぎましてな。ご免下さい。」と云いながら大烏は泉に頭をつき<ruby><rb>込</rb><rt>こ</rt></ruby>みました。</p>
+        <p>「どうか構わないで<ruby><rb>沢山</rb><rt>たくさん</rt></ruby><ruby><rb>呑</rb><rt>の</rt></ruby>んで下さい。」と<persName ref="#pouse">ポウセ</persName>童子が云いました。</p>
+        <p>大烏は息もつかずに三分ばかり咽喉を鳴らして呑んでからやっと顔をあげて<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>眼をパチパチ云わせてそれからブルルッと頭をふって水を<ruby><rb>払</rb><rt>はら</rt></ruby>いました。</p>
+        <p>その時向うから<ruby><rb>暴</rb><rt>あら</rt></ruby>い声の歌が<ruby><rb>又</rb><rt>また</rt></ruby>聞えて参りました。大烏は見る見る顔色を変えて<ruby><rb>身体</rb><rt>からだ</rt></ruby>を<ruby><rb>烈</rb><rt>はげ</rt></ruby>しくふるわせました。</p>
+        <p>「みなみのそらの、赤眼の<placeName ref="#sasori-no-hoshi">さそり</placeName></p>
+        <p>毒ある<ruby><rb>鉤</rb><rt>かぎ</rt></ruby>と　大きなはさみを</p>
+        <p>知らない者は　<ruby><rb>阿呆鳥</rb><rt>あほうどり</rt></ruby>。」</p>
+        <p>そこで大烏が怒って云いました。</p>
+        <p>「<placeName ref="#sasori-no-hoshi"><ruby><rb>蠍星</rb><rt>さそりぼし</rt></ruby></placeName>です。<ruby><rb>畜生</rb><rt>ちくしょう</rt></ruby>。阿呆鳥だなんて人をあてつけてやがる。見ろ。ここへ来たらその赤眼を<ruby><rb>抜</rb><rt>ぬ</rt></ruby>いてやるぞ。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が</p>
+        <p>「大烏さん。それはいけないでしょう。王様がご存じですよ。」という間もなくもう赤い眼の<placeName ref="#sasori-no-hoshi">蠍星</placeName>が向うから二つの大きな<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>をゆらゆら動かし長い尾をカラカラ引いてやって来るのです。その音はしずかな天の野原中にひびきました。</p>
+        <p>大烏はもう怒ってぶるぶる<ruby><rb>顫</rb><rt>ふる</rt></ruby>えて今にも飛びかかりそうです。双子の星は一生けん命手まねでそれを<ruby><rb>押</rb><rt>おさ</rt></ruby>えました。</p>
+        <p>蠍は大烏を<ruby><rb>尻眼</rb><rt>しりめ</rt></ruby>にかけてもう泉のふち<ruby><rb>迄</rb><rt>まで</rt></ruby><ruby><rb>這</rb><rt>は</rt></ruby>って来て云いました。</p>
+        <p>「ああ、どうも<ruby><rb>咽喉</rb><rt>のど</rt></ruby>が乾いてしまった。やあ双子さん。今日は。ご免なさい。少し水を呑んでやろうかな。はてな、どうもこの水は変に<ruby><rb>土臭</rb><rt>つちくさ</rt></ruby>いぞ。どこかのまっ黒な馬鹿ァが頭をつっ込んだと見える。えい。仕方ない。<ruby><rb>我慢</rb><rt>がまん</rt></ruby>してやれ。」</p>
+        <p>そして蠍は十分ばかりごくりごくりと水を呑みました。その間も、いかにも大烏を馬鹿にする様に、毒の鉤のついた尾をそちらにパタパタ動かすのです。</p>
+        <p>とうとう大烏は、我慢し兼ねて羽をパッと開いて<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「こら蠍。貴様はさっきから阿呆鳥だの何だのと<ruby><rb>俺</rb><rt>おれ</rt></ruby>の悪口を云ったな。早くあやまったらどうだ。」</p>
+        <p>蠍がやっと水から頭をはなして、赤い眼をまるで火が燃えるように動かしました。</p>
+        <p>「へん。<ruby><rb>誰</rb><rt>たれ</rt></ruby>か何か云ってるぜ。赤いお方だろうか。<ruby><rb>鼠色</rb><rt>ねずみいろ</rt></ruby>のお方だろうか。一つ鉤をお<ruby><rb>見舞</rb><rt>みまい</rt></ruby>しますかな。」</p>
+        <p>大烏はかっとして思わず飛びあがって叫びました。</p>
+        <p>「何を。生意気な。空の向う側へまっさかさまに落してやるぞ。」</p>
+        <p>蠍も怒って大きなからだをすばやくひねって尾の鉤を空に<ruby><rb>突</rb><rt>つ</rt></ruby>き上げました。大烏は飛びあがってそれを<ruby><rb>避</rb><rt>さ</rt></ruby>け今度はくちばしを<ruby><rb>槍</rb><rt>やり</rt></ruby>のようにしてまっすぐに蠍の頭をめがけて落ちて来ました。</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子も<persName ref="#pouse">ポウセ</persName>童子もとめるすきがありません。蠍は頭に深い傷を受け、大烏は胸を毒の鉤でさされて、両方ともウンとうなったまま重なり合って気絶してしまいました。</p>
+        <p>蠍の血がどくどく空に流れて、いやな赤い雲になりました。</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が急いで<ruby><rb>沓</rb><rt>くつ</rt></ruby>をはいて、申しました。</p>
+        <p>「さあ大変だ。大烏には毒がはいったのだ。早く吸いとってやらないといけない。<persName ref="#pouse">ポウセ</persName>さん。大烏をしっかり押えていて下さいませんか。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子も沓をはいてしまっていそいで大烏のうしろにまわってしっかり押えました。<persName ref="#chunse">チュンセ</persName>童子が大烏の胸の傷口に口をあてました。<persName ref="#pouse">ポウセ</persName>童子が申しました。</p>
+        <p>「<persName ref="#chunse">チュンセ</persName>さん。毒を呑んではいけませんよ。すぐ吐き出してしまわないといけませんよ。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が<ruby><rb>黙</rb><rt>だま</rt></ruby>って傷口から六<ruby><rb>遍</rb><rt>ぺん</rt></ruby>ほど毒のある血を吸ってはき出しました。すると大烏がやっと気がついて、うすく目を開いて申しました。</p>
+        <p>「あ、どうも済みません。私はどうしたのですかな。たしか野郎をし止めたのだが。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が申しました。</p>
+        <p>「早く流れでその傷口をお洗いなさい。歩けますか。」</p>
+        <p>大烏はよろよろ立ちあがって蠍を見て又<ruby><rb>身体</rb><rt>からだ</rt></ruby>をふるわせて云いました。</p>
+        <p>「畜生。空の毒虫め。空で死んだのを有り<ruby><rb>難</rb><rt>がた</rt></ruby>いと思え。」</p>
+        <p>二人は大烏を急いで流れへ連れて行きました。そして<ruby><rb>奇麗</rb><rt>きれい</rt></ruby>に傷口を洗ってやって、その上、傷口へ二三度<ruby><rb>香</rb><rt>かぐわ</rt></ruby>しい息を吹きかけてやって云いました。</p>
+        <p>「さあ、ゆるゆる歩いて明るいうちに早くおうちへお帰りなさい。これからこんな事をしてはいけません。王様はみんなご存じですよ。」</p>
+        <p>大烏はすっかり<ruby><rb>悄気</rb><rt>しょげ</rt></ruby>て<ruby><rb>翼</rb><rt>つばさ</rt></ruby>を力なく垂れ、何遍もお辞儀をして</p>
+        <p>「ありがとうございます。ありがとうございます。これからは気をつけます。」と云いながら<ruby><rb>脚</rb><rt>あし</rt></ruby>を引きずって銀のすすきの野原を向うへ行ってしまいました。</p>
+        <p>二人は蠍を調べて見ました。頭の傷はかなり深かったのですがもう血がとまっています。二人は泉の水をすくって、傷口にかけて奇麗に洗いました。そして<ruby><rb>交</rb><rt>かわ</rt></ruby>る<ruby><rb>交</rb><rt>がわ</rt></ruby>るふっふっと息をそこへ吹き込みました。</p>
+        <p>お日様が丁度空のまん中においでになった<ruby><rb>頃</rb><rt>ころ</rt></ruby>蠍はかすかに目を開きました。</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が汗をふきながら申しました。</p>
+        <p>「どうですか気分は。」</p>
+        <p>蠍がゆるく<ruby><rb>呟</rb><rt>つぶや</rt></ruby>きました。</p>
+        <p>「大烏めは死にましたか。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が少し怒って云いました。</p>
+        <p>「まだそんな事を云うんですか。あなたこそ死ぬ所でした。さあ早くうちへ帰る様に元気をお出しなさい。明るいうちに帰らなかったら大変ですよ。」</p>
+        <p>蠍が目を変に光らして云いました。</p>
+        <p>「双子さん。どうか私を送って下さいませんか。お世話の<ruby><rb>序</rb><rt>ついで</rt></ruby>です。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が云いました。</p>
+        <p>「送ってあげましょう。さあおつかまりなさい。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子も申しました。</p>
+        <p>「そら、僕にもおつかまりなさい。早くしないと明るいうちに家に行けません。そうすると今夜の星めぐりが出来なくなります。」</p>
+        <p><ruby><rb>蠍</rb><rt>さそり</rt></ruby>は二人につかまってよろよろ歩き出しました。二人の<ruby><rb>肩</rb><rt>かた</rt></ruby>の骨は曲りそうになりました。実に蠍のからだは重いのです。大きさから云っても童子たちの十倍位はあるのです。</p>
+        <p>けれども二人は顔をまっ赤にしてこらえて一足ずつ歩きました。</p>
+        <p>蠍は尾をギーギーと石ころの上に引きずっていやな息をはあはあ吐いてよろりよろりとあるくのです。一時間に十町とも進みません。</p>
+        <p>もう童子たちは余り重い上に蠍の手がひどく食い<ruby><rb>込</rb><rt>こ</rt></ruby>んで痛いので、肩や胸が自分のものかどうかもわからなくなりました。</p>
+        <p>空の野原はきらきら白く光っています。七つの小流れと十の<ruby><rb>芝原</rb><rt>しばはら</rt></ruby>とを過ぎました。</p>
+        <p>童子たちは頭がぐるぐるしてもう自分が歩いているのか立っているのかわかりませんでした。それでも二人は黙ってやはり一足ずつ進みました。</p>
+        <p>さっきから六時間もたっています。蠍の家まではまだ一時間半はかかりましょう。もうお日様が西の山にお入りになる所です。</p>
+        <p>「もう少し急げませんか。私らも、もう一時間半のうちにおうちへ帰らないといけないんだから。けれども苦しいんですか。大変痛みますか。」と<persName ref="#pouse">ポウセ</persName>童子が申しました。</p>
+        <p>「へい。も少しでございます。どうかお<ruby><rb>慈悲</rb><rt>じひ</rt></ruby>でございます。」と蠍が泣きました。</p>
+        <p>「ええ。も少しです。傷は痛みますか。」と<persName ref="#chunse">チュンセ</persName>童子が肩の骨の<ruby><rb>砕</rb><rt>くだ</rt></ruby>けそうなのをじっとこらえて申しました。</p>
+        <p>お日様がもうサッサッサッと三遍<ruby><rb>厳</rb><rt>おごそ</rt></ruby>かにゆらいで西の山にお<ruby><rb>沈</rb><rt>しず</rt></ruby>みになりました。</p>
+        <p>「もう<ruby><rb>僕</rb><rt>ぼく</rt></ruby>らは帰らないといけない。困ったな。ここらの人は<ruby><rb>誰</rb><rt>たれ</rt></ruby>か居ませんか。」<persName ref="#pouse">ポウセ</persName>童子が叫びました。天の野原はしんとして返事もありません。</p>
+        <p>西の雲はまっかにかがやき蠍の<ruby><rb>眼</rb><rt>め</rt></ruby>も赤く悲しく光りました。光の強い星たちはもう銀の<ruby><rb>鎧</rb><rt>よろい</rt></ruby>を着て歌いながら遠くの空へ現われた様子です。</p>
+        <p>「一つ星めつけた。長者になあれ。」下で一人の子供がそっちを見上げて叫んでいます。</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が</p>
+        <p>「蠍さん。も少しです。急げませんか。<ruby><rb>疲</rb><rt>つか</rt></ruby>れましたか。」と云いました。</p>
+        <p>蠍が<ruby><rb>哀</rb><rt>あわ</rt></ruby>れな声で、</p>
+        <p>「どうもすっかり疲れてしまいました。どうか少しですからお許し下さい。」と云います。</p>
+        <p>「星さん星さん一つの星で出ぬもんだ。</p>
+        <p>千も万もででるもんだ。」</p>
+        <p>下で別の子供が叫んでいます。もう西の山はまっ黒です。あちこち星がちらちら現われました。</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子は背中がまがってまるで<ruby><rb>潰</rb><rt>つぶ</rt></ruby>れそうになりながら云いました。</p>
+        <p>「蠍さん。もう私らは今夜は時間に<ruby><rb>遅</rb><rt>おく</rt></ruby>れました。きっと王様に<ruby><rb>叱</rb><rt>しか</rt></ruby>られます。事によったら流されるかも知れません。けれどもあなたがふだんの所に居なかったらそれこそ大変です。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が</p>
+        <p>「私はもう疲れて死にそうです。蠍さん。もっと元気を出して早く帰って行って下さい。」</p>
+        <p>と云いながらとうとうバッタリ<ruby><rb>倒</rb><rt>たお</rt></ruby>れてしまいました。蠍は泣いて云いました。</p>
+        <p>「どうか許して下さい。私は馬鹿です。あなた方の<ruby><rb>髪</rb><rt>かみ</rt></ruby>の毛一本にも<ruby><rb>及</rb><rt>およ</rt></ruby>びません。きっと心を改めてこのおわびは<ruby><rb>致</rb><rt>いた</rt></ruby>します。きっといたします。」</p>
+        <p>この時水色の<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい光の<ruby><rb>外套</rb><rt>がいとう</rt></ruby>を着た<ruby><rb>稲妻</rb><rt>いなずま</rt></ruby>が、向うからギラッとひらめいて飛んで来ました。そして童子たちに手をついて申しました。</p>
+        <p>「王様のご命でお<ruby><rb>迎</rb><rt>むか</rt></ruby>いに参りました。さあご<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に私のマントへおつかまり下さい。もうすぐお宮へお連れ申します。王様はどう云う訳かさっきからひどくお<ruby><rb>悦</rb><rt>よろこ</rt></ruby>びでございます。それから、蠍。お前は今まで<ruby><rb>憎</rb><rt>にく</rt></ruby>まれ者だったな。さあこの薬を王様から下すったんだ。飲め。」</p>
+        <p>童子たちは<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「それでは蠍さん。さよなら。早く薬をのんで下さい。それからさっきの<ruby><rb>約束</rb><rt>やくそく</rt></ruby>ですよ。きっとですよ。さよなら。」</p>
+        <p>そして二人は一緒に稲妻のマントにつかまりました。蠍が<ruby><rb>沢山</rb><rt>たくさん</rt></ruby>の手をついて<ruby><rb>平伏</rb><rt>へいふく</rt></ruby>して薬をのみそれから<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>にお<ruby><rb>辞儀</rb><rt>じぎ</rt></ruby>をします。</p>
+        <p>稲妻がぎらぎらっと光ったと思うともういつかさっきの泉のそばに立って<ruby><rb>居</rb><rt>お</rt></ruby>りました。そして申しました。</p>
+        <p>「さあ、すっかりおからだをお洗いなさい。王様から新らしい着物と<ruby><rb>沓</rb><rt>くつ</rt></ruby>を下さいました。まだ十五分<ruby><rb>間</rb><rt>ま</rt></ruby>があります。」</p>
+        <p>双子のお星様たちは悦んでつめたい<ruby><rb>水晶</rb><rt>すいしょう</rt></ruby>のような流れを浴び、<ruby><rb>匂</rb><rt>におい</rt></ruby>のいい青光りのうすものの<ruby><rb>衣</rb><rt>ころも</rt></ruby>を着け新らしい白光りの沓をはきました。するともう<ruby><rb>身体</rb><rt>からだ</rt></ruby>の痛みもつかれも一遍にとれてすがすがしてしまいました。</p>
+        <p>「さあ、参りましょう。」と稲妻が申しました。そして二人が<ruby><rb>又</rb><rt>また</rt></ruby>そのマントに取りつきますと<ruby><rb>紫色</rb><rt>むらさきいろ</rt></ruby>の光が一遍ぱっとひらめいて童子たちはもう自分のお宮の前に居ました。稲妻はもう見えません。</p>
+        <p>「<persName ref="#chunse">チュンセ</persName>童子、それでは<ruby><rb>支度</rb><rt>したく</rt></ruby>をしましょう。」</p>
+        <p>「<persName ref="#pouse">ポウセ</persName>童子、それでは支度をしましょう。」</p>
+        <p>二人はお宮にのぼり、向き合ってきちんと<ruby><rb>座</rb><rt>すわ</rt></ruby>り<ruby><rb>銀笛</rb><rt>ぎんてき</rt></ruby>をとりあげました。</p>
+        <p>丁度あちこちで星めぐりの歌がはじまりました。</p>
+        <p>「あかいめだまの　<placeName ref="#sasori-no-hoshi">さそり</placeName></p>
+        <p>ひろげた<placeName ref="#washi-no-hoshi"><ruby><rb>鷲</rb><rt>わし</rt></ruby></placeName>の　　つばさ</p>
+        <p>あおいめだまの　<placeName ref="#koinu">小いぬ</placeName>、</p>
+        <p>ひかりの<placeName ref="#hebi">へび</placeName>の　とぐろ。</p>
+        <p><placeName ref="#orion">オリオン</placeName>は高く　うたい</p>
+        <p>つゆとしもとを　おとす、</p>
+        <p><placeName ref="#andoromeda">アンドロメダ</placeName>の　くもは</p>
+        <p>さかなのくちの　かたち。</p>
+        <p><placeName ref="#ooguma">大ぐま</placeName>のあしを　きたに</p>
+        <p>五つのばした　　ところ。</p>
+        <p><placeName ref="#koguma"><ruby><rb>小熊</rb><rt>こぐま</rt></ruby></placeName>のひたいの　うえは</p>
+        <p>そらのめぐりの　めあて。」</p>
+        <p>双子のお星様たちは笛を<ruby><rb>吹</rb><rt>ふ</rt></ruby>きはじめました。</p>
+        <p><ruby><rb>双子</rb><rt>ふたご</rt></ruby>の星　二</p>
+        <p>（<placeName ref="#amanogawa"><ruby><rb>天</rb><rt>あま</rt></ruby>の<ruby><rb>川</rb><rt>がわ</rt></ruby></placeName>の西の岸に小さな小さな二つの青い星が見えます。あれは<persName ref="#chunse">チュンセ</persName>童子と<persName ref="#pouse">ポウセ</persName>童子という双子のお星様でめいめい<ruby><rb>水精</rb><rt>すいしょう</rt></ruby>でできた小さなお宮に住んでいます。</p>
+        <p>二つのお宮はまっすぐに向い合っています。夜は二人ともきっとお宮に帰ってきちんと座ってそらの星めぐりの歌に合せて一晩銀笛を吹くのです。それがこの双子のお星様たちの役目でした。）</p>
+        <p>ある晩空の下の方が黒い雲で<ruby><rb>一杯</rb><rt>いっぱい</rt></ruby>に<ruby><rb>埋</rb><rt>う</rt></ruby>まり雲の下では雨がザアッザアッと降って<ruby><rb>居</rb><rt>お</rt></ruby>りました。それでも二人はいつものようにめいめいのお宮にきちんと座って向いあって笛を吹いていますと<ruby><rb>突然</rb><rt>とつぜん</rt></ruby>大きな乱暴ものの<ruby><rb>彗星</rb><rt>ほうきぼし</rt></ruby>がやって来て二人のお宮にフッフッと青白い光の<ruby><rb>霧</rb><rt>きり</rt></ruby>をふきかけて<ruby><rb>云</rb><rt>い</rt></ruby>いました。</p>
+        <p>「おい、双子の青星。すこし旅に出て見ないか。今夜なんかそんなにしなくてもいいんだ。いくら難船の船乗りが星で方角を<ruby><rb>定</rb><rt>さだ</rt></ruby>めようたって雲で見えはしない。天文台の星の係りも今日は休みであくびをしてる。いつも星を見ているあの生意気な小学生も雨ですっかりへこたれてうちの中で絵なんか書いているんだ。お前たちが笛なんか吹かなくたって星はみんなくるくるまわるさ。どうだ。<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>旅へ出よう。あしたの晩方までにはここに連れて来てやるぜ。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が一寸笛をやめて云いました。</p>
+        <p>「それは<ruby><rb>曇</rb><rt>くも</rt></ruby>った日は笛をやめてもいいと王様からお許しはあるとも。私らはただ<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>くて吹いていたんだ。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子も一寸笛をやめて云いました。</p>
+        <p>「けれども旅に出るなんてそんな事はお許しがないはずだ。雲がいつはれるかもわからないんだから。」</p>
+        <p><ruby><rb>彗星</rb><rt>ほうきぼし</rt></ruby>が云いました。</p>
+        <p>「心配するなよ。王様がこの前<ruby><rb>俺</rb><rt>おれ</rt></ruby>にそう云ったぜ。いつか曇った晩あの双子を少し旅させてやって<ruby><rb>呉</rb><rt>く</rt></ruby>れってな。行こう。行こう。俺なんか面白いぞ。俺のあだ名は空の<ruby><rb>鯨</rb><rt>くじら</rt></ruby>と云うんだ。知ってるか。俺は<ruby><rb>鰯</rb><rt>いわし</rt></ruby>のようなヒョロヒョロの星やめだかのような黒い<ruby><rb>隕石</rb><rt>いし</rt></ruby>はみんなパクパク<ruby><rb>呑</rb><rt>の</rt></ruby>んでしまうんだ。それから一番痛快なのはまっすぐに行ってそのまままっすぐに<ruby><rb>戻</rb><rt>もど</rt></ruby>る位ひどくカーブを切って<ruby><rb>廻</rb><rt>まわ</rt></ruby>るときだ。まるで<ruby><rb>身体</rb><rt>からだ</rt></ruby>が<ruby><rb>壊</rb><rt>こわ</rt></ruby>れそうになってミシミシ云うんだ。光の骨までカチカチ云うぜ。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が云いました。</p>
+        <p>「<persName ref="#chunse">チュンセ</persName>さん。行きましょうか。王様がいいっておっしゃったそうですから。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が云いました。</p>
+        <p>「けれども王様がお許しになったなんて一体本当でしょうか。」</p>
+        <p>彗星が云いました。</p>
+        <p>「へん。<ruby><rb>偽</rb><rt>うそ</rt></ruby>なら俺の頭が<ruby><rb>裂</rb><rt>さ</rt></ruby>けてしまうがいいさ。頭と胴と尾とばらばらになって海へ落ちて<ruby><rb>海鼠</rb><rt>なまこ</rt></ruby>にでもなるだろうよ。偽なんか云うもんか。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が云いました。</p>
+        <p>「そんなら王様に<ruby><rb>誓</rb><rt>ちか</rt></ruby>えるかい。」</p>
+        <p>彗星はわけもなく云いました。</p>
+        <p>「うん、誓うとも。そら、王様ご照覧。ええ今日、王様のご命令で双子の青星は旅に出ます。ね。いいだろう。」</p>
+        <p>二人は<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に云いました。</p>
+        <p>「うん。いい。そんなら行こう。」</p>
+        <p>そこで彗星がいやに<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>くさって云いました。</p>
+        <p>「それじゃ早く俺のしっぽにつかまれ。しっかりとつかまるんだ。さ。いいか。」</p>
+        <p>二人は彗星のしっぽにしっかりつかまりました。彗星は青白い光を一つフウとはいて云いました。</p>
+        <p>「さあ、<ruby><rb>発</rb><rt>た</rt></ruby>つぞ。ギイギイギイフウ。ギイギイフウ。」</p>
+        <p>実に彗星は空のくじらです。弱い星はあちこち<ruby><rb>逃</rb><rt>に</rt></ruby>げまわりました。もう大分来たのです。二人のお宮もはるかに遠く遠くなってしまい今は小さな青白い点にしか見えません。</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が申しました。</p>
+        <p>「もう<ruby><rb>余程</rb><rt>よほど</rt></ruby>来たな。<placeName ref="#amanogawa">天の川</placeName>の落ち口はまだだろうか。」</p>
+        <p>すると彗星の態度がガラリと変ってしまいました。</p>
+        <p>「へん。<placeName ref="#amanogawa">天の川</placeName>の落ち口よりお前らの落ち口を見ろ。それ<ruby><rb>一</rb><rt>ひ</rt></ruby>ぃ<ruby><rb>二</rb><rt>ふ</rt></ruby>の<ruby><rb>三</rb><rt>み</rt></ruby>。」</p>
+        <p>彗星は尾を強く二三<ruby><rb>遍</rb><rt>べん</rt></ruby>動かしおまけにうしろをふり向いて青白い霧を<ruby><rb>烈</rb><rt>はげ</rt></ruby>しくかけて二人を吹き落してしまいました。</p>
+        <p>二人は青ぐろい<ruby><rb>虚空</rb><rt>こくう</rt></ruby>をまっしぐらに落ちました。</p>
+        <p>彗星は、</p>
+        <p>「あっはっは、あっはっは。さっきの誓いも何もかもみんな取り消しだ。ギイギイギイ、フウ。ギイギイフウ。」と云いながら向うへ走って行ってしまいました。二人は落ちながらしっかりお<ruby><rb>互</rb><rt>たがい</rt></ruby>の<ruby><rb>肱</rb><rt>ひじ</rt></ruby>をつかみました。この双子のお星様はどこ<ruby><rb>迄</rb><rt>まで</rt></ruby>でも一緒に落ちようとしたのです。</p>
+        <p>二人のからだが空気の中にはいってからは<ruby><rb>雷</rb><rt>かみなり</rt></ruby>のように鳴り赤い火花がパチパチあがり見ていてさえめまいがする位でした。そして二人はまっ黒な雲の中を通り暗い波の<ruby><rb>咆</rb><rt>ほ</rt></ruby>えていた海の中に矢のように落ち込みました。</p>
+        <p>二人はずんずん<ruby><rb>沈</rb><rt>しず</rt></ruby>みました。けれども不思議なことには水の中でも自由に息ができたのです。</p>
+        <p>海の底はやわらかな<ruby><rb>泥</rb><rt>どろ</rt></ruby>で大きな黒いものが<ruby><rb>寝</rb><rt>ね</rt></ruby>ていたりもやもやの<ruby><rb>藻</rb><rt>も</rt></ruby>がゆれたりしました。</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が申しました。</p>
+        <p>「<persName ref="#pouse">ポウセ</persName>さん。ここは海の底でしょうね。もう<ruby><rb>僕</rb><rt>ぼく</rt></ruby>たちは空に<ruby><rb>昇</rb><rt>のぼ</rt></ruby>れません。これからどんな目に<ruby><rb>遭</rb><rt>あ</rt></ruby>うでしょう。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が云いました。</p>
+        <p>「僕らは彗星に<ruby><rb>欺</rb><rt>だま</rt></ruby>されたのです。彗星は王さまへさえ<ruby><rb>偽</rb><rt>うそ</rt></ruby>をついたのです。本当に<ruby><rb>憎</rb><rt>にく</rt></ruby>いやつではありませんか。」</p>
+        <p>するとすぐ足もとで星の形で赤い光の小さなひとでが申しました。</p>
+        <p>「お前さんたちはどこの海の人たちですか。お前さんたちは青いひとでのしるしをつけていますね。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が云いました。</p>
+        <p>「私らはひとでではありません。星ですよ。」</p>
+        <p>するとひとでが<ruby><rb>怒</rb><rt>おこ</rt></ruby>って云いました。</p>
+        <p>「何だと。星だって。ひとではもとはみんな星さ。お前たちはそれじゃ今やっとここへ来たんだろう。何だ。それじゃ新米のひとでだ。ほやほやの悪党だ。悪いことをしてここへ来ながら星だなんて鼻にかけるのは海の底でははやらないさ。おいらだって空に居た時は第一等の軍人だぜ。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が悲しそうに上を見ました。</p>
+        <p>もう雨がやんで雲がすっかりなくなり海の水もまるで<ruby><rb>硝子</rb><rt>ガラス</rt></ruby>のように静まってそらがはっきり見えます。<placeName ref="#amanogawa">天の川</placeName>も<placeName ref="#sora-no-izumi">そらの井戸</placeName>も<placeName ref="#washi-no-hoshi"><ruby><rb>鷲</rb><rt>わし</rt></ruby>の星</placeName>や<placeName ref="#kotohiki-no-hoshi"><ruby><rb>琴弾</rb><rt>ことひ</rt></ruby>きの星</placeName>やみんなはっきり見えます。小さく小さく二人のお宮も見えます。</p>
+        <p>「<persName ref="#chunse">チュンセ</persName>さん。すっかり空が見えます。私らのお宮も見えます。それだのに私らはとうとうひとでになってしまいました。」</p>
+        <p>「<persName ref="#pouse">ポウセ</persName>さん。もう仕方ありません。ここから空のみなさんにお別れしましょう。またおすがたは見えませんが王様におわびをしましょう。」</p>
+        <p>「王様さよなら。私共は今日からひとでになるのでございます。」</p>
+        <p>「王様さよなら。ばかな私共は<ruby><rb>彗星</rb><rt>ほうきぼし</rt></ruby>に<ruby><rb>欺</rb><rt>だま</rt></ruby>されました。今日からはくらい海の底の泥を私共は<ruby><rb>這</rb><rt>は</rt></ruby>いまわります。」</p>
+        <p>「さよなら王様。<ruby><rb>又</rb><rt>また</rt></ruby>天上の皆さま。おさかえを<ruby><rb>祈</rb><rt>いの</rt></ruby>ります。」</p>
+        <p>「さよならみな様。又すべての上の尊い王さま、いつまでもそうしておいで下さい。」</p>
+        <p>赤いひとでが<ruby><rb>沢山</rb><rt>たくさん</rt></ruby>集って来て二人を囲んでがやがや云って居りました。</p>
+        <p>「こら着物をよこせ。」「こら。剣を出せ。」「税金を出せ。」「もっと小さくなれ。」「<ruby><rb>俺</rb><rt>おれ</rt></ruby>の<ruby><rb>靴</rb><rt>くつ</rt></ruby>をふけ。」</p>
+        <p>その時みんなの頭の上をまっ黒な大きな大きなものがゴーゴーゴーと<ruby><rb>哮</rb><rt>ほ</rt></ruby>えて通りかかりました。ひとではあわててみんなお<ruby><rb>辞儀</rb><rt>じぎ</rt></ruby>をしました。黒いものは行き過ぎようとしてふと立ちどまってよく二人をすかして見て云いました。</p>
+        <p>「ははあ、新兵だな。まだお辞儀のしかたも習わないのだな。このくじら様を知らんのか。俺のあだなは海の<ruby><rb>彗星</rb><rt>ほうきぼし</rt></ruby>と云うんだ。知ってるか。俺は<ruby><rb>鰯</rb><rt>いわし</rt></ruby>のようなひょろひょろの魚やめだかの様なめくらの魚はみんなパクパク<ruby><rb>呑</rb><rt>の</rt></ruby>んでしまうんだ。それから一番痛快なのはまっすぐに行ってぐるっと円を描いてまっすぐにかえる位ゆっくりカーブを切るときだ。まるでからだの油がねとねとするぞ。さて、お前は天からの追放の書き付けを持って来たろうな。早く出せ。」</p>
+        <p>二人は顔を見合せました。<persName ref="#chunse">チュンセ</persName>童子が</p>
+        <p>「僕らはそんなもの持たない。」と申しました。</p>
+        <p>すると<ruby><rb>鯨</rb><rt>くじら</rt></ruby>が怒って水を一つぐうっと口から<ruby><rb>吐</rb><rt>は</rt></ruby>きました。ひとではみんな顔色を変えてよろよろしましたが二人はこらえてしゃんと立っていました。</p>
+        <p>鯨が<ruby><rb>怖</rb><rt>こわ</rt></ruby>い顔をして云いました。</p>
+        <p>「書き付けを持たないのか。悪党め。ここに居るのはどんな悪いことを天上でして来たやつでも書き付けを持たなかったものはないぞ。貴様らは実にけしからん。さあ。呑んでしまうからそう思え。いいか。」鯨は口を大きくあけて身構えしました。ひとでや近所の魚は巻き<ruby><rb>添</rb><rt>ぞ</rt></ruby>えを食っては大変だと泥の中にもぐり込んだり一もくさんに逃げたりしました。</p>
+        <p>その時向うから銀色の光がパッと<ruby><rb>射</rb><rt>さ</rt></ruby>して小さな<ruby><rb>海蛇</rb><rt>うみへび</rt></ruby>がやって来ます。くじらは非常に<ruby><rb>愕</rb><rt>おど</rt></ruby>ろいたらしく急いで口を閉めました。</p>
+        <p>海蛇は不思議そうに二人の頭の上をじっと見て云いました。</p>
+        <p>「あなた方はどうしたのですか。悪いことをなさって天から落とされたお方ではないように思われますが。」</p>
+        <p>鯨が横から口を出しました。</p>
+        <p>「こいつらは追放の書き付けも持ってませんよ。」</p>
+        <p>海蛇が<ruby><rb>凄</rb><rt>すご</rt></ruby>い目をして鯨をにらみつけて云いました。</p>
+        <p>「<ruby><rb>黙</rb><rt>だま</rt></ruby>っておいで。生意気な。このお方がたをこいつらなんてお前がどうして云えるんだ。お前には<ruby><rb>善</rb><rt>よ</rt></ruby>い事をしていた人の頭の上の後光が見えないのだ。悪い事をしたものなら頭の上に黒い<ruby><rb>影法師</rb><rt>かげぼうし</rt></ruby>が口をあいているからすぐわかる。お星さま方。こちらへお<ruby><rb>出</rb><rt>い</rt></ruby>で下さい。王の所へご案内申しあげましょう。おい、ひとで。あかりをともせ。こら、くじら。あんまり暴れてはいかんぞ。」</p>
+        <p>くじらが頭をかいて<ruby><rb>平伏</rb><rt>へいふく</rt></ruby>しました。</p>
+        <p>愕ろいた事には赤い光のひとでが<ruby><rb>幅</rb><rt>はば</rt></ruby>のひろい二列にぞろっとならんで丁度街道のあかりのようです。</p>
+        <p>「さあ、参りましょう。」海蛇は<ruby><rb>白髪</rb><rt>はくはつ</rt></ruby>を<ruby><rb>振</rb><rt>ふ</rt></ruby>って<ruby><rb>恭々</rb><rt>うやうや</rt></ruby>しく申しました。二人はそれに続いてひとでの間を通りました。まもなく<ruby><rb>蒼</rb><rt>あお</rt></ruby>ぐろい水あかりの中に大きな白い城の門があってその<ruby><rb>扉</rb><rt>と</rt></ruby>がひとりでに開いて中から沢山の立派な海蛇が出て参りました。そして双子のお星さまだちは海蛇の王さまの前に導かれました。王様は白い長い<ruby><rb>髯</rb><rt>ひげ</rt></ruby>の生えた老人でにこにこわらって云いました。</p>
+        <p>「あなた方は<persName ref="#chunse">チュンセ</persName>童子に<persName ref="#pouse">ポウセ</persName>童子。よく存じて居ります。あなた方が前にあの空の<ruby><rb>蠍</rb><rt>さそり</rt></ruby>の悪い心を命がけでお直しになった話はここへも伝わって居ります。私はそれをこちらの小学校の<ruby><rb>読本</rb><rt>とくほん</rt></ruby>にも入れさせました。さて今度はとんだ災難で定めしびっくりなさったでしょう。」</p>
+        <p><persName ref="#chunse">チュンセ</persName>童子が申しました。</p>
+        <p>「これはお<ruby><rb>語</rb><rt>ことば</rt></ruby><ruby><rb>誠</rb><rt>まこと</rt></ruby>に<ruby><rb>恐</rb><rt>おそ</rt></ruby>れ入ります。私共はもう天上にも帰れませんしできます事ならこちらで何なりみなさまのお役に立ちたいと存じます。」</p>
+        <p>王が云いました。</p>
+        <p>「いやいや、そのご<ruby><rb>謙遜</rb><rt>けんそん</rt></ruby>は恐れ入ります。早速<ruby><rb>竜巻</rb><rt>たつまき</rt></ruby>に云いつけて天上にお送りいたしましょう。お帰りになりましたらあなたの王様に海蛇めが<ruby><rb>宜</rb><rt>よろ</rt></ruby>しく申し上げたと<ruby><rb>仰</rb><rt>お</rt></ruby>っしゃって下さい。」</p>
+        <p><persName ref="#pouse">ポウセ</persName>童子が<ruby><rb>悦</rb><rt>よろこ</rt></ruby>んで申しました。</p>
+        <p>「それでは王様は私共の王様をご存じでいらっしゃいますか。」</p>
+        <p>王はあわてて<ruby><rb>椅子</rb><rt>いす</rt></ruby>を下って申しました。</p>
+        <p>「いいえ、それどころではございません。王様はこの私の<ruby><rb>唯</rb><rt>ただ</rt></ruby>一人の王でございます。遠いむかしから私めの先生でございます。私はあのお方の<ruby><rb>愚</rb><rt>おろ</rt></ruby>かなしもべでございます。いや、まだおわかりになりますまい。けれどもやがておわかりでございましょう。それでは夜の明けないうちに竜巻にお<ruby><rb>伴</rb><rt>とも</rt></ruby><ruby><rb>致</rb><rt>いた</rt></ruby>させます。これ、これ。<ruby><rb>支度</rb><rt>したく</rt></ruby>はいいか。」</p>
+        <p>一<ruby><rb>疋</rb><rt>ぴき</rt></ruby>のけらいの海蛇が</p>
+        <p>「はい、ご門の前にお待ちいたして居ります。」と答えました。</p>
+        <p>二人は<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>に王にお辞儀をいたしました。</p>
+        <p>「それでは王様、ごきげんよろしゅう。いずれ改めて空からお礼を申しあげます。このお宮のいつまでも栄えますよう。」</p>
+        <p>王は立って云いました。</p>
+        <p>「あなた方もどうかますます立派にお光り下さいますよう。それではごきげんよろしゅう。」</p>
+        <p>けらいたちが一度に恭々しくお辞儀をしました。</p>
+        <p>童子たちは門の外に出ました。</p>
+        <p>竜巻が銀のとぐろを巻いてねています。</p>
+        <p>一人の海蛇が二人をその頭に<ruby><rb>載</rb><rt>の</rt></ruby>せました。</p>
+        <p>二人はその<ruby><rb>角</rb><rt>つの</rt></ruby>に取りつきました。</p>
+        <p>その時赤い光のひとでが沢山出て来て<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「さよなら、どうか空の王様によろしく。私どももいつか許されますようおねがいいたします。」</p>
+        <p>二人は<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に云いました。</p>
+        <p>「きっとそう申しあげます。やがて空でまたお目にかかりましょう。」</p>
+        <p>竜巻がそろりそろりと立ちあがりました。</p>
+        <p>「さよなら、さよなら。」</p>
+        <p>竜巻はもう頭をまっくろな海の上に出しました。と思うと急にバリバリバリッと<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい音がして竜巻は水と一所に矢のように高く高くはせのぼりました。</p>
+        <p>まだ夜があけるのに<ruby><rb>余程</rb><rt>よほど</rt></ruby>間があります。<placeName ref="#amanogawa">天の川</placeName>がずんずん近くなります。二人のお宮がもうはっきり見えます。</p>
+        <p>「<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>あれをご覧なさい。」と<ruby><rb>闇</rb><rt>やみ</rt></ruby>の中で竜巻が申しました。</p>
+        <p>見るとあの大きな青白い光りのほうきぼしはばらばらにわかれてしまって頭も尾も胴も別々にきちがいのような<ruby><rb>凄</rb><rt>すご</rt></ruby>い声をあげガリガリ光ってまっ黒な海の中に落ちて行きます。</p>
+        <p>「あいつはなまこになりますよ。」と竜巻がしずかに云いました。</p>
+        <p>もう空の星めぐりの歌が聞えます。</p>
+        <p>そして童子たちはお宮につきました。</p>
+        <p>竜巻は二人をおろして</p>
+        <p>「さよなら、ごきげんよろしゅう」と云いながら風のように海に帰って行きました。</p>
+        <p>双子のお星さまはめいめいのお宮に昇りました。そしてきちんと<ruby><rb>座</rb><rt>すわ</rt></ruby>って見えない空の王様に申しました。</p>
+        <p>「私どもの不注意からしばらく役目を欠かしましてお申し訳けございません。それにもかかわらず今晩はおめぐみによりまして不思議に助かりました。海の王様が沢山の尊敬をお伝えして<ruby><rb>呉</rb><rt>く</rt></ruby>れと申されました。それから海の底のひとでがお<ruby><rb>慈悲</rb><rt>じひ</rt></ruby>をねがいました。又私どもから申しあげますがなまこももしできますならお許しを願いとう存じます。」</p>
+        <p>そして二人は<ruby><rb>銀笛</rb><rt>ぎんてき</rt></ruby>をとりあげました。</p>
+        <p>東の空が<ruby><rb>黄金色</rb><rt>きんいろ</rt></ruby>になり、もう夜明けに間もありません。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

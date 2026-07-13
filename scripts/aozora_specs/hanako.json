@@ -1,0 +1,122 @@
+{
+  "slug": "hanako",
+  "url": "https://www.aozora.gr.jp/cards/000129/files/45254_30927.html",
+  "card": "https://www.aozora.gr.jp/cards/000129/card45254.html",
+  "title": "花子",
+  "author": "森鴎外",
+  "fixes": {
+    "H〓tel": "Hôtel",
+    "Sacr〓": "Sacrè",
+    "vari〓t〓": "variété",
+    "Impr〓sario": "Imprésario",
+    "travaill〓": "travaillé",
+    "st〓r〓otype": "stéréotype",
+    "M〓taphysique": "Métaphysique"
+  },
+  "persons": {
+    "rodin": [
+      "ロダン",
+      "オーギュスト・ロダン(Auguste Rodin, 1840–1917)。フランスの彫刻家。パリの Hôtel Biron の仕事場で花子をモデルに素描する。作中では「Auguste Rodin」「ロダン」と表記される"
+    ],
+    "hanako": [
+      "花子",
+      "太田ひさ(1868–1945)をモデルとする日本人女優・舞踊家。ヨーロッパの寄席(variété)に出演しており、ロダンに招かれてモデルとなる。作中では「花子」「Mademoiselle Hanako」と表記される"
+    ],
+    "kubota": [
+      "久保田",
+      "医学士久保田某。L'Institut Pasteur に留学中の日本人学生で、ロダンと花子の通訳を務める。作中の視点人物"
+    ],
+    "zola": [
+      "Zola",
+      "エミール・ゾラ(Émile Zola, 1840–1902)。フランスの小説家。花子の紋切型の身の上話を、ゾラの小説『Lourdes(ルウルド)』に出てくる小娘の話に喩える箇所で言及される"
+    ],
+    "baudelaire": [
+      "ボオドレエル",
+      "シャルル・ボードレール(Charles Baudelaire, 1821–1867)。フランスの詩人。ロダンの書籍室にあった全集の一巻「おもちゃの形而上学」を久保田が読む。作中では「Beaudelaire」「ボオドレエル」と表記される"
+    ]
+  },
+  "places": {
+    "hotel-biron": [
+      "Hôtel Biron",
+      48.8553,
+      2.3159,
+      "パリ7区 rue de Varenne 77 の館。もと貴族の邸宅で聖心会の修道院を経てロダンが仕事場とした。現在のロダン美術館。概値"
+    ],
+    "faubourg-saint-germain": [
+      "Faubourg Saint-Germain",
+      48.855,
+      2.323,
+      "パリ7区、セーヌ左岸の貴族屋敷が集まる地区(フォーブール・サン=ジェルマン)。地区名・概値"
+    ],
+    "paris": [
+      "パリ",
+      48.8566,
+      2.3522,
+      "フランスの首都。カンボジアの酋長が滞在した地として言及される。概値"
+    ],
+    "institut-pasteur": [
+      "L'Institut Pasteur",
+      48.8402,
+      2.3105,
+      "パリ15区のパスツール研究所。久保田が研究している場所。作中では「L'Institut Pasteur」「ランスチチュウ・パストョオル」の両表記。概値"
+    ],
+    "cambodia": [
+      "Kambodscha",
+      12.5657,
+      104.991,
+      "カンボジア。酋長(王)の一行がパリに滞在し、ロダンがその踊子を素描したという回想の中で言及される。国名・概値"
+    ],
+    "bruxelles": [
+      "Bruxelles",
+      50.8467,
+      4.3525,
+      "ベルギーの首都ブリュッセル。若き日のロダンが困窮して町をさまよったとされる。概値"
+    ],
+    "nihon": [
+      "日本",
+      36.2048,
+      138.2529,
+      "国名・概値。「日本の女」「日本にいたかどうだか」など。「日本人」(民族の呼称)は skip で除外している"
+    ],
+    "europe": [
+      "ヨオロッパ",
+      50.0,
+      15.0,
+      "ヨーロッパ。花子が女優として現れた「ヨオロッパの都会」など。地域名・概値"
+    ],
+    "north-europe": [
+      "北ヨオロッパ",
+      60.0,
+      15.0,
+      "北ヨーロッパ。ロダンが体型を対比する「肩の狭い北ヨオロッパのチイプ」。地域名・概値"
+    ],
+    "mediterranean": [
+      "地中海",
+      35.0,
+      18.0,
+      "地中海(沿岸地域)。ロダンが体型を対比する「肩と腰の濶い地中海の type」。地域名・概値"
+    ]
+  },
+  "tags": [
+    ["skip", "日本人", null],
+    ["place", "Faubourg Saint-Germain", "faubourg-saint-germain"],
+    ["place", "L'Institut Pasteur", "institut-pasteur"],
+    ["place", "ランスチチュウ・パストョオル", "institut-pasteur"],
+    ["pers", "Mademoiselle Hanako", "hanako"],
+    ["pers", "Auguste Rodin", "rodin"],
+    ["pers", "Beaudelaire", "baudelaire"],
+    ["pers", "ボオドレエル", "baudelaire"],
+    ["place", "Hôtel Biron", "hotel-biron"],
+    ["place", "Kambodscha", "cambodia"],
+    ["place", "Bruxelles", "bruxelles"],
+    ["place", "北ヨオロッパ", "north-europe"],
+    ["place", "ヨオロッパ", "europe"],
+    ["place", "地中海", "mediterranean"],
+    ["place", "日本", "nihon"],
+    ["place", "パリ", "paris"],
+    ["pers", "ロダン", "rodin"],
+    ["pers", "久保田", "kubota"],
+    ["pers", "花子", "hanako"],
+    ["pers", "Zola", "zola"]
+  ]
+}

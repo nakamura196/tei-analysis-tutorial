@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>魔術</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>魔術</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「芥川龍之介全集3」ちくま文庫、筑摩書房。1986（昭和61）年12月1日第1刷発行。1996（平成8）年4月1日第8刷発行。底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card95.html">https://www.aozora.gr.jp/cards/000879/card95.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="misra">
+        <persName>マティラム・ミスラ</persName>
+        <note>カルカッタ生れの印度人。印度独立を計る愛国者で、ハッサン・カンの秘法を学んだ魔術の大家。大森の西洋館に住む。表層形「マティラム・ミスラ」「ミスラ」を統合</note>
+      </person>
+      <person xml:id="hassan-khan">
+        <persName>ハッサン・カン</persName>
+        <note>名高い婆羅門の秘法(魔術)の伝承者。ミスラが師事した人物として言及される</note>
+      </person>
+      <person xml:id="jin">
+        <persName>ジン</persName>
+        <note>アラビヤ夜話などに登場する精霊(伝説上の存在)。作中では魔術に力を貸す精霊の名として語られる</note>
+      </person>
+      <person xml:id="iwasaki">
+        <persName>岩崎</persName>
+        <note>三菱財閥の創業者一族(岩崎家)。金満家の代名詞として言及される実在の人物・一族</note>
+      </person>
+      <person xml:id="mitsui">
+        <persName>三井</persName>
+        <note>三井財閥の一族(三井家)。金満家の代名詞として言及される実在の人物・一族</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="omori">
+        <placeName>大森</placeName>
+        <location><geo>35.5885 139.728</geo></location>
+        <note>東京府荏原郡大森。現在の東京都大田区大森・概値</note>
+      </place>
+      <place xml:id="india">
+        <placeName>印度</placeName>
+        <location><geo>20.5937 78.9629</geo></location>
+        <note>インド。国名・概値(国土のほぼ中央)</note>
+      </place>
+      <place xml:id="calcutta">
+        <placeName>カルカッタ</placeName>
+        <location><geo>22.5726 88.3639</geo></location>
+        <note>インド・コルカタ(旧カルカッタ)・概値</note>
+      </place>
+      <place xml:id="ginza">
+        <placeName>銀座</placeName>
+        <location><geo>35.6717 139.765</geo></location>
+        <note>東京都中央区銀座。四丁目交差点付近・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京。東京駅付近・概値</note>
+      </place>
+      <place xml:id="france">
+        <placeName>仏蘭西</placeName>
+        <location><geo>46.2276 2.2137</geo></location>
+        <note>フランス。国名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>魔術</head>
+        <p>ある<ruby><rb>時雨</rb><rt>しぐれ</rt></ruby>の降る晩のことです。<ruby><rb>私</rb><rt>わたし</rt></ruby>を乗せた<ruby><rb>人力車</rb><rt>じんりきしゃ</rt></ruby>は、何度も<ruby><rb><placeName ref="#omori">大森</placeName>界隈</rb><rt>おおもりかいわい</rt></ruby>の<ruby><rb>険</rb><rt>けわ</rt></ruby>しい坂を上ったり下りたりして、やっと<ruby><rb>竹藪</rb><rt>たけやぶ</rt></ruby>に囲まれた、小さな西洋館の前に<ruby><rb>梶棒</rb><rt>かじぼう</rt></ruby>を下しました。もう鼠色のペンキの<ruby><rb>剥</rb><rt>は</rt></ruby>げかかった、狭苦しい玄関には、車夫の出した<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>の明りで見ると、<ruby><rb>印度</rb><rt>インド</rt></ruby>人<persName ref="#misra">マティラム・ミスラ</persName>と日本字で書いた、これだけは新しい、瀬戸物の<ruby><rb>標札</rb><rt>ひょうさつ</rt></ruby>がかかっています。</p>
+        <p><persName ref="#misra">マティラム・ミスラ</persName>君と云えば、もう皆さんの中にも、御存じの方が少くないかも知れません。<persName ref="#misra">ミスラ</persName>君は永年<placeName ref="#india">印度</placeName>の独立を計っている<placeName ref="#calcutta">カルカッタ</placeName>生れの愛国者で、同時にまた<persName ref="#hassan-khan">ハッサン・カン</persName>という名高い<ruby><rb>婆羅門</rb><rt>ばらもん</rt></ruby>の秘法を学んだ、年の若い<ruby><rb>魔術</rb><rt>まじゅつ</rt></ruby>の大家なのです。私はちょうど一月ばかり以前から、ある友人の紹介で<persName ref="#misra">ミスラ</persName>君と交際していましたが、政治経済の問題などはいろいろ議論したことがあっても、<ruby><rb>肝腎</rb><rt>かんじん</rt></ruby>の魔術を使う時には、まだ一度も居合せたことがありません。そこで今夜は前以て、魔術を使って見せてくれるように、手紙で頼んで置いてから、当時<persName ref="#misra">ミスラ</persName>君の住んでいた、寂しい<placeName ref="#omori">大森</placeName>の町はずれまで、人力車を急がせて来たのです。</p>
+        <p>私は雨に濡れながら、<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ない車夫の提灯の明りを便りにその標札の下にある<ruby><rb>呼鈴</rb><rt>よびりん</rt></ruby>の<ruby><rb>釦</rb><rt>ボタン</rt></ruby>を押しました。すると間もなく戸が<ruby><rb>開</rb><rt>あ</rt></ruby>いて、玄関へ顔を出したのは、<persName ref="#misra">ミスラ</persName>君の世話をしている、背の低い日本人の御婆さんです。</p>
+        <p>「<persName ref="#misra">ミスラ</persName>君は御出でですか。」</p>
+        <p>「いらっしゃいます。先ほどからあなた様を御待ち兼ねでございました。」</p>
+        <p>御婆さんは<ruby><rb>愛想</rb><rt>あいそ</rt></ruby>よくこう言いながら、すぐその玄関のつきあたりにある、<persName ref="#misra">ミスラ</persName>君の部屋へ私を案内しました。</p>
+        <p>「今晩は、雨の降るのによく御出ででした。」</p>
+        <p>色のまっ黒な、眼の大きい、<ruby><rb>柔</rb><rt>やわらか</rt></ruby>な<ruby><rb>口髭</rb><rt>くちひげ</rt></ruby>のある<persName ref="#misra">ミスラ</persName>君は、テエブルの上にある石油ランプの<ruby><rb>心</rb><rt>しん</rt></ruby>を<ruby><rb>撚</rb><rt>ねじ</rt></ruby>りながら、元気よく私に<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>しました。</p>
+        <p>「いや、あなたの魔術さえ拝見出来れば、雨くらいは何ともありません。」</p>
+        <p>私は<ruby><rb>椅子</rb><rt>いす</rt></ruby>に腰かけてから、うす暗い石油ランプの光に照された、陰気な部屋の中を見廻しました。</p>
+        <p><persName ref="#misra">ミスラ</persName>君の部屋は質素な西洋間で、まん中にテエブルが一つ、<ruby><rb>壁側</rb><rt>かべぎわ</rt></ruby>に手ごろな書棚が一つ、それから窓の前に机が一つ――ほかにはただ我々の腰をかける、椅子が並んでいるだけです。しかもその椅子や机が、みんな古ぼけた物ばかりで、<ruby><rb>縁</rb><rt>ふち</rt></ruby>へ赤く花模様を織り出した、<ruby><rb>派手</rb><rt>はで</rt></ruby>なテエブル掛でさえ、今にもずたずたに裂けるかと思うほど、糸目が<ruby><rb>露</rb><rt>あらわ</rt></ruby>になっていました。</p>
+        <p>私たちは挨拶をすませてから、しばらくは外の竹藪に降る雨の音を聞くともなく聞いていましたが、やがてまたあの召使いの御婆さんが、紅茶の道具を持ってはいって来ると、<persName ref="#misra">ミスラ</persName>君は<ruby><rb>葉巻</rb><rt>はまき</rt></ruby>の箱の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>を開けて、</p>
+        <p>「どうです。一本。」と<ruby><rb>勧</rb><rt>すす</rt></ruby>めてくれました。</p>
+        <p>「<ruby><rb>難有</rb><rt>ありがと</rt></ruby>う。」</p>
+        <p>私は<ruby><rb>遠慮</rb><rt>えんりょ</rt></ruby>なく葉巻を一本取って、<ruby><rb>燐寸</rb><rt>マッチ</rt></ruby>の火をうつしながら、</p>
+        <p>「確かあなたの御使いになる<ruby><rb>精霊</rb><rt>せいれい</rt></ruby>は、<persName ref="#jin">ジン</persName>とかいう名前でしたね。するとこれから私が拝見する魔術と言うのも、その<persName ref="#jin">ジン</persName>の力を借りてなさるのですか。」</p>
+        <p><persName ref="#misra">ミスラ</persName>君は自分も葉巻へ火をつけると、にやにや笑いながら、<ruby><rb>匀</rb><rt>におい</rt></ruby>の好い煙を吐いて、</p>
+        <p>「<persName ref="#jin">ジン</persName>などという精霊があると思ったのは、もう何百年も昔のことです。アラビヤ<ruby><rb>夜話</rb><rt>やわ</rt></ruby>の時代のこととでも言いましょうか。私が<persName ref="#hassan-khan">ハッサン・カン</persName>から学んだ魔術は、あなたでも使おうと思えば使えますよ。高が進歩した<ruby><rb>催眠術</rb><rt>さいみんじゅつ</rt></ruby>に過ぎないのですから。――御覧なさい。この手をただ、こうしさえすれば好いのです。」</p>
+        <p><persName ref="#misra">ミスラ</persName>君は手を挙げて、二三度私の眼の前へ三角形のようなものを描きましたが、やがてその手をテエブルの上へやると、縁へ赤く織り出した模様の花をつまみ上げました。私はびっくりして、思わず<ruby><rb>椅子</rb><rt>いす</rt></ruby>をずりよせながら、よくよくその花を眺めましたが、確かにそれは今の今まで、テエブル掛の中にあった花模様の一つに違いありません。が、<persName ref="#misra">ミスラ</persName>君がその花を私の鼻の先へ持って来ると、ちょうど<ruby><rb>麝香</rb><rt>じゃこう</rt></ruby>か何かのように重苦しい匀さえするのです。私はあまりの不思議さに、何度も<ruby><rb>感嘆</rb><rt>かんたん</rt></ruby>の声を<ruby><rb>洩</rb><rt>もら</rt></ruby>しますと、<persName ref="#misra">ミスラ</persName>君はやはり微笑したまま、また<ruby><rb>無造作</rb><rt>むぞうさ</rt></ruby>にその花をテエブル掛の上へ落しました。勿論落すともとの通り花は織り出した模様になって、つまみ上げること所か、花びら一つ自由には動かせなくなってしまうのです。「どうです。訳はないでしょう。今度は、このランプを御覧なさい。」</p>
+        <p><persName ref="#misra">ミスラ</persName>君はこう言いながら、ちょいとテエブルの上のランプを置き直しましたが、その<ruby><rb>拍子</rb><rt>ひょうし</rt></ruby>にどういう訳か、ランプはまるで<ruby><rb>独楽</rb><rt>こま</rt></ruby>のように、ぐるぐる廻り始めました。それもちゃんと<ruby><rb>一所</rb><rt>ひとところ</rt></ruby>に止ったまま、ホヤを<ruby><rb>心棒</rb><rt>しんぼう</rt></ruby>のようにして、勢いよく廻り始めたのです。<ruby><rb>初</rb><rt>はじめ</rt></ruby>の内は私も<ruby><rb>胆</rb><rt>きも</rt></ruby>をつぶして、万一火事にでもなっては大変だと、何度もひやひやしましたが、<persName ref="#misra">ミスラ</persName>君は静に紅茶を飲みながら、一向騒ぐ<ruby><rb>容子</rb><rt>ようす</rt></ruby>もありません。そこで私もしまいには、すっかり度胸が<ruby><rb>据</rb><rt>すわ</rt></ruby>ってしまって、だんだん早くなるランプの運動を、眼も離さず眺めていました。</p>
+        <p>また実際ランプの<ruby><rb>蓋</rb><rt>かさ</rt></ruby>が風を起して廻る中に、黄いろい<ruby><rb>焔</rb><rt>ほのお</rt></ruby>がたった一つ、<ruby><rb>瞬</rb><rt>またた</rt></ruby>きもせずにともっているのは、何とも言えず美しい、不思議な<ruby><rb>見物</rb><rt>みもの</rt></ruby>だったのです。が、その内にランプの廻るのが、いよいよ<ruby><rb>速</rb><rt>すみやか</rt></ruby>になって行って、とうとう廻っているとは見えないほど、澄み渡ったと思いますと、いつの<ruby><rb>間</rb><rt>ま</rt></ruby>にか、前のようにホヤ一つ<ruby><rb>歪</rb><rt>ゆが</rt></ruby>んだ<ruby><rb>気色</rb><rt>けしき</rt></ruby>もなく、テエブルの上に据っていました。</p>
+        <p>「驚きましたか。こんなことはほんの子供<ruby><rb>瞞</rb><rt>だま</rt></ruby>しですよ。それともあなたが御望みなら、もう一つ何か御覧に入れましょう。」</p>
+        <p><persName ref="#misra">ミスラ</persName>君は<ruby><rb>後</rb><rt>うしろ</rt></ruby>を振返って、<ruby><rb>壁側</rb><rt>かべぎわ</rt></ruby>の書棚を眺めましたが、やがてその方へ手をさし伸ばして、招くように指を動かすと、今度は書棚に並んでいた書物が一冊ずつ動き出して、自然にテエブルの上まで飛んで来ました。そのまた飛び方が両方へ表紙を開いて、夏の夕方に飛び交う<ruby><rb>蝙蝠</rb><rt>こうもり</rt></ruby>のように、ひらひらと宙へ舞上るのです。私は葉巻を口へ<ruby><rb>啣</rb><rt>くわ</rt></ruby>えたまま、<ruby><rb>呆気</rb><rt>あっけ</rt></ruby>にとられて見ていましたが、書物はうす暗いランプの光の中に何冊も自由に飛び廻って、一々行儀よくテエブルの上へピラミッド形に積み上りました。しかも残らずこちらへ移ってしまったと思うと、すぐに最初来たのから動き出して、もとの書棚へ順々に飛び<ruby><rb>還</rb><rt>かえ</rt></ruby>って行くじゃありませんか。</p>
+        <p>が、中でも一番面白かったのは、うすい<ruby><rb>仮綴</rb><rt>かりと</rt></ruby>じの書物が一冊、やはり翼のように表紙を開いて、ふわりと空へ上りましたが、しばらくテエブルの上で輪を描いてから、急に頁をざわつかせると、<ruby><rb>逆落</rb><rt>さかおと</rt></ruby>しに私の膝へさっと下りて来たことです。どうしたのかと思って手にとって見ると、これは私が一週間ばかり前に<persName ref="#misra">ミスラ</persName>君へ貸した覚えがある、<placeName ref="#france"><ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby></placeName>の新しい小説でした。</p>
+        <p>「<ruby><rb>永々</rb><rt>ながなが</rt></ruby>御本を<ruby><rb>難有</rb><rt>ありがと</rt></ruby>う。」</p>
+        <p><persName ref="#misra">ミスラ</persName>君はまだ微笑を含んだ声で、こう私に礼を言いました。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>その時はもう多くの書物が、みんなテエブルの上から書棚の中へ舞い戻ってしまっていたのです。私は夢からさめたような心もちで、<ruby><rb>暫時</rb><rt>ざんじ</rt></ruby>は挨拶さえ出来ませんでしたが、その内にさっき<persName ref="#misra">ミスラ</persName>君の言った、「私の魔術などというものは、あなたでも使おうと思えば使えるのです。」という言葉を思い出しましたから、</p>
+        <p>「いや、兼ね兼ね<ruby><rb>評判</rb><rt>ひょうばん</rt></ruby>はうかがっていましたが、あなたのお使いなさる魔術が、これほど不思議なものだろうとは、実際、思いもよりませんでした。ところで私のような人間にも、使って使えないことのないと言うのは、御冗談ではないのですか。」</p>
+        <p>「使えますとも。誰にでも<ruby><rb>造作</rb><rt>ぞうさ</rt></ruby>なく使えます。ただ――」と言いかけて<persName ref="#misra">ミスラ</persName>君はじっと私の顔を眺めながら、いつになく<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>な口調になって、</p>
+        <p>「ただ、欲のある人間には使えません。<persName ref="#hassan-khan">ハッサン・カン</persName>の魔術を習おうと思ったら、まず欲を捨てることです。あなたにはそれが出来ますか。」</p>
+        <p>「出来るつもりです。」</p>
+        <p>私はこう答えましたが、何となく不安な気もしたので、すぐにまた<ruby><rb>後</rb><rt>あと</rt></ruby>から言葉を添えました。</p>
+        <p>「魔術さえ教えて頂ければ。」</p>
+        <p>それでも<persName ref="#misra">ミスラ</persName>君は疑わしそうな眼つきを見せましたが、さすがにこの上念を押すのは<ruby><rb>無躾</rb><rt>ぶしつけ</rt></ruby>だとでも思ったのでしょう。やがて<ruby><rb>大様</rb><rt>おおよう</rt></ruby>に<ruby><rb>頷</rb><rt>うなず</rt></ruby>きながら、</p>
+        <p>「では教えて上げましょう。が、いくら造作なく使えると言っても、習うのには暇もかかりますから、今夜は私の所へ<ruby><rb>御泊</rb><rt>おとま</rt></ruby>りなさい。」</p>
+        <p>「どうもいろいろ恐れ入ります。」</p>
+        <p>私は魔術を教えて貰う嬉しさに、何度も<persName ref="#misra">ミスラ</persName>君へ御礼を言いました。が、<persName ref="#misra">ミスラ</persName>君はそんなことに<ruby><rb>頓着</rb><rt>とんちゃく</rt></ruby>する<ruby><rb>気色</rb><rt>けしき</rt></ruby>もなく、静に椅子から立上ると、</p>
+        <p>「御婆サン。御婆サン。今夜ハ御客様ガ御泊リニナルカラ、寝床ノ仕度ヲシテ置イテオクレ。」</p>
+        <p>私は胸を躍らしながら、葉巻の灰をはたくのも忘れて、まともに石油ランプの光を浴びた、親切そうな<persName ref="#misra">ミスラ</persName>君の顔を思わずじっと見上げました。</p>
+        <p>×　　　　　　　　　　×　　　　　　　　　　×</p>
+        <p>私が<persName ref="#misra">ミスラ</persName>君に魔術を教わってから、一月ばかりたった<ruby><rb>後</rb><rt>のち</rt></ruby>のことです。これもやはりざあざあ雨の降る晩でしたが、私は<placeName ref="#ginza">銀座</placeName>のある<ruby><rb>倶楽部</rb><rt>くらぶ</rt></ruby>の一室で、五六人の友人と、<ruby><rb>暖炉</rb><rt>だんろ</rt></ruby>の前へ陣取りながら、気軽な雑談に耽っていました。</p>
+        <p>何しろここは<placeName ref="#tokyo">東京</placeName>の中心ですから、窓の外に降る<ruby><rb>雨脚</rb><rt>あまあし</rt></ruby>も、しっきりなく往来する自働車や馬車の屋根を濡らすせいか、あの、<placeName ref="#omori"><ruby><rb>大森</rb><rt>おおもり</rt></ruby></placeName>の竹藪にしぶくような、ものさびしい音は聞えません。</p>
+        <p>勿論窓の内の陽気なことも、明い電燈の光と言い、大きなモロッコ皮の<ruby><rb>椅子</rb><rt>いす</rt></ruby>と言い、あるいはまた滑かに光っている<ruby><rb>寄木細工</rb><rt>よせぎざいく</rt></ruby>の<ruby><rb>床</rb><rt>ゆか</rt></ruby>と言い、見るから<ruby><rb>精霊</rb><rt>せいれい</rt></ruby>でも出て来そうな、<persName ref="#misra">ミスラ</persName>君の部屋などとは、まるで比べものにはならないのです。</p>
+        <p>私たちは葉巻の煙の中に、しばらくは<ruby><rb>猟</rb><rt>りょう</rt></ruby>の話だの競馬の話だのをしていましたが、その内に一人の友人が、吸いさしの葉巻を<ruby><rb>暖炉</rb><rt>だんろ</rt></ruby>の中に抛りこんで、私の方へ振り向きながら、</p>
+        <p>「君は近頃魔術を使うという<ruby><rb>評判</rb><rt>ひょうばん</rt></ruby>だが、どうだい。今夜は一つ僕たちの前で使って見せてくれないか。」</p>
+        <p>「好いとも。」</p>
+        <p>私は椅子の背に頭を<ruby><rb>靠</rb><rt>もた</rt></ruby>せたまま、さも魔術の名人らしく、<ruby><rb>横柄</rb><rt>おうへい</rt></ruby>にこう答えました。</p>
+        <p>「じゃ、何でも君に一任するから、世間の<ruby><rb>手品師</rb><rt>てじなし</rt></ruby>などには出来そうもない、不思議な術を使って見せてくれ給え。」</p>
+        <p>友人たちは皆賛成だと見えて、てんでに椅子をすり寄せながら、促すように私の方を眺めました。そこで私は<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に立ち上って、</p>
+        <p>「よく見ていてくれ給えよ。僕の使う魔術には、種も<ruby><rb>仕掛</rb><rt>しかけ</rt></ruby>もないのだから。」</p>
+        <p>私はこう言いながら、両手のカフスをまくり上げて、暖炉の中に燃え<ruby><rb>盛</rb><rt>さか</rt></ruby>っている石炭を、<ruby><rb>無造作</rb><rt>むぞうさ</rt></ruby>に掌の上へすくい上げました。私を囲んでいた友人たちは、これだけでも、もう<ruby><rb>荒胆</rb><rt>あらぎも</rt></ruby>を<ruby><rb>挫</rb><rt>ひし</rt></ruby>がれたのでしょう。皆顔を見合せながらうっかり側へ寄って<ruby><rb>火傷</rb><rt>やけど</rt></ruby>でもしては大変だと、気味悪るそうにしりごみさえし始めるのです。</p>
+        <p>そこで私の方はいよいよ落着き払って、その掌の上の石炭の火を、しばらく一同の眼の前へつきつけてから、今度はそれを勢いよく寄木細工の<ruby><rb>床</rb><rt>ゆか</rt></ruby>へ<ruby><rb>撒</rb><rt>ま</rt></ruby>き散らしました。その途端です、窓の外に降る雨の音を圧して、もう一つ変った雨の音が<ruby><rb>俄</rb><rt>にわか</rt></ruby>に床の上から起ったのは。と言うのはまっ赤な石炭の火が、私の<ruby><rb>掌</rb><rt>てのひら</rt></ruby>を離れると同時に、無数の美しい金貨になって、雨のように床の上へこぼれ飛んだからなのです。</p>
+        <p>友人たちは皆夢でも見ているように、茫然と<ruby><rb>喝采</rb><rt>かっさい</rt></ruby>するのさえも忘れていました。</p>
+        <p>「まずちょいとこんなものさ。」</p>
+        <p>私は得意の微笑を浮べながら、静にまた元の椅子に腰を下しました。</p>
+        <p>「こりゃ皆ほんとうの金貨かい。」</p>
+        <p><ruby><rb>呆気</rb><rt>あっけ</rt></ruby>にとられていた友人の一人が、ようやくこう私に<ruby><rb>尋</rb><rt>たず</rt></ruby>ねたのは、それから五分ばかりたった後のことです。</p>
+        <p>「ほんとうの金貨さ。嘘だと思ったら、手にとって見給え。」</p>
+        <p>「まさか<ruby><rb>火傷</rb><rt>やけど</rt></ruby>をするようなことはあるまいね。」</p>
+        <p>友人の一人は恐る恐る、床の上の金貨を手にとって見ましたが、</p>
+        <p>「成程こりゃほんとうの金貨だ。おい、給仕、<ruby><rb>箒</rb><rt>ほうき</rt></ruby>と塵取りとを持って来て、これを皆掃き集めてくれ。」</p>
+        <p>給仕はすぐに言いつけられた通り、床の上の金貨を掃き集めて、<ruby><rb>堆</rb><rt>うずたか</rt></ruby>く側のテエブルへ盛り上げました。友人たちは皆そのテエブルのまわりを囲みながら、</p>
+        <p>「ざっと二十万円くらいはありそうだね。」</p>
+        <p>「いや、もっとありそうだ。<ruby><rb>華奢</rb><rt>きゃしゃ</rt></ruby>なテエブルだった日には、つぶれてしまうくらいあるじゃないか。」</p>
+        <p>「何しろ大した魔術を習ったものだ。石炭の火がすぐに金貨になるのだから。」</p>
+        <p>「これじゃ一週間とたたない内に、<persName ref="#iwasaki">岩崎</persName>や<persName ref="#mitsui">三井</persName>にも負けないような金満家になってしまうだろう。」などと、口々に私の魔術を<ruby><rb>褒</rb><rt>ほ</rt></ruby>めそやしました。が、私はやはり<ruby><rb>椅子</rb><rt>いす</rt></ruby>によりかかったまま、悠然と葉巻の煙を吐いて、</p>
+        <p>「いや、僕の魔術というやつは、一旦欲心を起したら、二度と使うことが出来ないのだ。だからこの金貨にしても、君たちが見てしまった上は、すぐにまた元の暖炉の中へ<ruby><rb>抛</rb><rt>ほう</rt></ruby>りこんでしまおうと思っている。」</p>
+        <p>友人たちは私の言葉を聞くと、言い合せたように、反対し始めました。これだけの大金を元の石炭にしてしまうのは、もったいない話だと言うのです。が、私は<persName ref="#misra">ミスラ</persName>君に約束した手前もありますから、どうしても暖炉に抛りこむと、<ruby><rb>剛情</rb><rt>ごうじょう</rt></ruby>に友人たちと争いました。すると、その友人たちの中でも、一番<ruby><rb>狡猾</rb><rt>こうかつ</rt></ruby>だという評判のあるのが、鼻の先で、せせら笑いながら、</p>
+        <p>「君はこの金貨を元の石炭にしようと言う。僕たちはまたしたくないと言う。それじゃいつまでたった所で、議論が<ruby><rb>干</rb><rt>ひ</rt></ruby>ないのは当り前だろう。そこで僕が思うには、この金貨を元手にして、君が僕たちと<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>をするのだ。そうしてもし君が勝ったなら、石炭にするとも何にするとも、自由に君が始末するが<ruby><rb>好</rb><rt>い</rt></ruby>い。が、もし僕たちが勝ったなら、金貨のまま僕たちへ渡し給え。そうすれば御互の申し分も立って、至極満足だろうじゃないか。」</p>
+        <p>それでも私はまだ首を振って、容易にその申し出しに賛成しようとはしませんでした。所がその友人は、いよいよ<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>るような<ruby><rb>笑</rb><rt>えみ</rt></ruby>を浮べながら、私とテエブルの上の金貨とを<ruby><rb>狡</rb><rt>ず</rt></ruby>るそうにじろじろ見比べて、</p>
+        <p>「君が僕たちと<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>をしないのは、つまりその金貨を僕たちに取られたくないと思うからだろう。それなら魔術を使うために、欲心を捨てたとか何とかいう、<ruby><rb>折角</rb><rt>せっかく</rt></ruby>の君の決心も怪しくなってくる訳じゃないか。」</p>
+        <p>「いや、何も僕は、この金貨が惜しいから石炭にするのじゃない。」</p>
+        <p>「それなら<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>をやり給えな。」</p>
+        <p>何度もこういう押問答を繰返した後で、とうとう私はその友人の言葉通り、テエブルの上の金貨を<ruby><rb>元手</rb><rt>もとで</rt></ruby>に、どうしても<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>を闘わせなければならない<ruby><rb>羽目</rb><rt>はめ</rt></ruby>に立ち至りました。勿論友人たちは皆大喜びで、すぐにトランプを一組取り寄せると、部屋の片隅にある<ruby><rb>骨牌机</rb><rt>かるたづくえ</rt></ruby>を囲みながら、まだためらい勝ちな私を早く早くと<ruby><rb>急</rb><rt>せ</rt></ruby>き立てるのです。</p>
+        <p>ですから私も仕方がなく、しばらくの間は友人たちを相手に、<ruby><rb>嫌々</rb><rt>いやいや</rt></ruby><ruby><rb>骨牌</rb><rt>かるた</rt></ruby>をしていました。が、どういうものか、その夜に限って、ふだんは格別<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>上手でもない私が、嘘のようにどんどん勝つのです。するとまた妙なもので、始は気のりもしなかったのが、だんだん面白くなり始めて、ものの十分とたたない内に、いつか私は一切を忘れて、熱心に<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>を引き始めました。</p>
+        <p>友人たちは、元より私から、あの金貨を残らず<ruby><rb>捲</rb><rt>ま</rt></ruby>き上げるつもりで、わざわざ<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>を始めたのですから、こうなると皆あせりにあせって、ほとんど<ruby><rb>血相</rb><rt>けっそう</rt></ruby>さえ変るかと思うほど、夢中になって勝負を争い出しました。が、いくら友人たちが躍起となっても、私は一度も負けないばかりか、とうとうしまいには、あの金貨とほぼ同じほどの<ruby><rb>金高</rb><rt>きんだか</rt></ruby>だけ、私の方が勝ってしまったじゃありませんか。するとさっきの人の悪い友人が、まるで、気違いのような勢いで、私の前に、<ruby><rb>札</rb><rt>ふだ</rt></ruby>をつきつけながら、</p>
+        <p>「さあ、引き給え。僕は僕の財産をすっかり賭ける。地面も、<ruby><rb>家作</rb><rt>かさく</rt></ruby>も、馬も、自働車も、一つ残らず賭けてしまう。その代り君はあの金貨のほかに、今まで君が勝った金をことごとく賭けるのだ。さあ、引き給え。」</p>
+        <p>私はこの<ruby><rb>刹那</rb><rt>せつな</rt></ruby>に欲が出ました。テエブルの上に積んである、山のような金貨ばかりか、折角私が勝った金さえ、今度運悪く負けたが最後、皆相手の友人に取られてしまわなければなりません。のみならずこの勝負に勝ちさえすれば、私は向うの全財産を一度に手へ入れることが出来るのです。こんな時に使わなければどこに魔術などを教わった、苦心の<ruby><rb>甲斐</rb><rt>かい</rt></ruby>があるのでしょう。そう思うと私は<ruby><rb>矢</rb><rt>や</rt></ruby>も<ruby><rb>楯</rb><rt>たて</rt></ruby>もたまらなくなって、そっと魔術を使いながら、決闘でもするような勢いで、</p>
+        <p>「よろしい。まず君から引き給え。」</p>
+        <p>「<ruby><rb>九</rb><rt>く</rt></ruby>。」</p>
+        <p>「<ruby><rb>王様</rb><rt>キング</rt></ruby>。」</p>
+        <p>私は勝ち誇った声を挙げながら、まっ蒼になった相手の眼の前へ、引き当てた<ruby><rb>札</rb><rt>ふだ</rt></ruby>を出して見せました。すると不思議にもその<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>の<ruby><rb>王様</rb><rt>キング</rt></ruby>が、まるで魂がはいったように、<ruby><rb>冠</rb><rt>かんむり</rt></ruby>をかぶった頭を<ruby><rb>擡</rb><rt>もた</rt></ruby>げて、ひょいと<ruby><rb>札</rb><rt>ふだ</rt></ruby>の外へ体を出すと、行儀よく剣を持ったまま、にやりと気味の悪い微笑を浮べて、</p>
+        <p>「御婆サン。御婆サン。御客様ハ御帰リニナルソウダカラ、寝床ノ仕度ハシナクテモ好イヨ。」</p>
+        <p>と、聞き覚えのある声で言うのです。と思うと、どういう訳か、窓の外に降る<ruby><rb>雨脚</rb><rt>あまあし</rt></ruby>までが、急にまたあの<placeName ref="#omori">大森</placeName>の竹藪にしぶくような、寂しいざんざ<ruby><rb>降</rb><rt>ぶ</rt></ruby>りの音を立て始めました。</p>
+        <p>ふと気がついてあたりを見廻すと、私はまだうす暗い石油ランプの光を浴びながら、まるであの<ruby><rb>骨牌</rb><rt>かるた</rt></ruby>の<ruby><rb>王様</rb><rt>キング</rt></ruby>のような微笑を浮べている<persName ref="#misra">ミスラ</persName>君と、向い合って坐っていたのです。</p>
+        <p>私が指の間に<ruby><rb>挟</rb><rt>はさ</rt></ruby>んだ葉巻の灰さえ、やはり落ちずにたまっている所を見ても、私が一月ばかりたったと思ったのは、ほんの二三分の間に見た、夢だったのに違いありません。けれどもその二三分の短い間に、私が<persName ref="#hassan-khan">ハッサン・カン</persName>の魔術の秘法を習う資格のない人間だということは、私自身にも<persName ref="#misra">ミスラ</persName>君にも、明かになってしまったのです。私は恥しそうに頭を下げたまま、しばらくは口もきけませんでした。</p>
+        <p>「私の魔術を使おうと思ったら、まず欲を捨てなければなりません。あなたはそれだけの修業が出来ていないのです。」</p>
+        <p><persName ref="#misra">ミスラ</persName>君は気の毒そうな眼つきをしながら、縁へ赤く花模様を織り出したテエブル掛の上に<ruby><rb>肘</rb><rt>ひじ</rt></ruby>をついて、静にこう私をたしなめました。</p>
+        <p>（<date when="1919-11-10">大正八年十一月十日</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

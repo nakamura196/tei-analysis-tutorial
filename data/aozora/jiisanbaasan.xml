@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>じいさんばあさん</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>じいさんばあさん</title><author>森鴎外</author>
+          <note>青空文庫。底本：「阿部一族・舞姫」新潮文庫、新潮社。1968（昭和43）年4月20日発行。1985（昭和60）年5月20日36刷改版。1994（平成6）年12月15日54刷。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card43030.html">https://www.aozora.gr.jp/cards/000129/card43030.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="iori">
+        <persName>美濃部伊織</persName>
+        <note>大番石川阿波守総恒組の士。宮重久右衛門の実兄。剣術・和歌に長じた美男。明和八年京都で下島甚右衛門を斬り、越前国丸岡へ永の御預となる。三十七年後に赦免され竜土町でるんと再会する「爺いさん」</note>
+      </person>
+      <person xml:id="run">
+        <persName>るん</persName>
+        <note>伊織の妻。安房国朝夷郡真門村の内木四郎右衛門の娘。尾張家・黒田家に奉公し表使格に進む。夫の帰りを待ち続けて貞節を賞され銀十枚を賜る「婆あさん」</note>
+      </person>
+      <person xml:id="kyuemon">
+        <persName>宮重久右衛門</persName>
+        <note>伊織の実弟。松平(奥殿)家の家中。若い頃は七五郎と名のる。竜土町の自邸内に兄夫婦の隠居所を拵える</note>
+      </person>
+      <person xml:id="sashichiro">
+        <persName>松平左七郎乗羨</persName>
+        <note>三河国奥殿の領主。竜土町に邸を構える大名。宮重久右衛門の主君</note>
+      </person>
+      <person xml:id="iwaminokami">
+        <persName>松平石見守乗穏</persName>
+        <note>奥殿松平家の当主。明和五年に大番頭となり、明和八年に二条在番を勤める</note>
+      </person>
+      <person xml:id="sonetsune">
+        <persName>石川阿波守総恒</persName>
+        <note>明和三年に大番頭となる。伊織の属した組の頭。邸は水道橋外</note>
+      </person>
+      <person xml:id="shimojima">
+        <persName>下島甚右衛門</persName>
+        <note>伊織の相番。刀の代金三十両を伊織に貸す。八月十五夜の刀の披露の席で伊織と口論し、額を斬られて死ぬ</note>
+      </person>
+      <person xml:id="yanagihara">
+        <persName>柳原小兵衛</persName>
+        <note>伊織の親しい友達。刃傷の際に伊織を背後から抱き止め、下島を逃がす</note>
+      </person>
+      <person xml:id="yamanaka">
+        <persName>山中藤右衛門</persName>
+        <note>伊織の叔母婿。大番を勤める。伊織にるんを縁づける</note>
+      </person>
+      <person xml:id="aritake">
+        <persName>有竹某</persName>
+        <note>戸田淡路守氏之の家来。るんの妹の嫁ぎ先。るんは有竹氏を冒して美濃部家へ嫁ぐ</note>
+      </person>
+      <person xml:id="uchiki">
+        <persName>内木四郎右衛門</persName>
+        <note>安房国朝夷郡真門村の由緒ある家。るんとその妹の父</note>
+      </person>
+      <person xml:id="kasahara">
+        <persName>笠原新八郎</persName>
+        <note>有竹の分家。伊織の刃傷ののち、るんと嫡子平内を引き取る</note>
+      </person>
+      <person xml:id="heinai">
+        <persName>平内</persName>
+        <note>伊織とるんの嫡子。父の顔を見ぬまま、安永四年三月二十八日に五歳で疱瘡により死ぬ</note>
+      </person>
+      <person xml:id="teishoin">
+        <persName>貞松院</persName>
+        <note>伊織の祖母。安永三年八月二十九日に八十三歳で死ぬ</note>
+      </person>
+      <person xml:id="ujiyuki">
+        <persName>戸田淡路守氏之</persName>
+        <note>有竹の主家である戸田家の当主。外桜田に邸を構える</note>
+      </person>
+      <person xml:id="ujiyasu">
+        <persName>戸田淡路守氏養</persName>
+        <note>氏之の跡を六年前に継いだ戸田家の当主</note>
+      </person>
+      <person xml:id="munekatsu">
+        <persName>尾張中納言宗勝</persName>
+        <note>尾張徳川家の当主。宝暦二年にるんが奥へ召し使われた主君</note>
+      </person>
+      <person xml:id="munechika">
+        <persName>宗睦</persName>
+        <note>宝暦十一年の代替りで尾張徳川家の当主となる</note>
+      </person>
+      <person xml:id="haruyuki">
+        <persName>松平筑前守治之</persName>
+        <note>筑前国福岡の領主黒田家の当主。安永六年にるんを召し抱える</note>
+      </person>
+      <person xml:id="harutaka">
+        <persName>治高</persName>
+        <note>黒田家の当主。るんが仕えた四代の一人</note>
+      </person>
+      <person xml:id="naritaka">
+        <persName>斉隆</persName>
+        <note>黒田家の当主。るんが仕えた四代の一人</note>
+      </person>
+      <person xml:id="narikiyo">
+        <persName>斉清</persName>
+        <note>黒田家の当主。るんが仕えた四代の一人</note>
+      </person>
+      <person xml:id="ienari">
+        <persName>徳川家斉</persName>
+        <note>十一代将軍。文化六年十二月二十八日にるんの貞節を賞して銀十枚を下す</note>
+      </person>
+      <person xml:id="ieyoshi">
+        <persName>家慶</persName>
+        <note>西丸の大納言(のちの十二代将軍)。文化六年暮に楽宮との婚儀があった</note>
+      </person>
+      <person xml:id="arisugawa">
+        <persName>有栖川職仁親王</persName>
+        <note>楽宮の父</note>
+      </person>
+      <person xml:id="sazanomiya">
+        <persName>楽宮</persName>
+        <note>有栖川職仁親王の女。文化六年暮に大納言家慶と婚儀</note>
+      </person>
+      <person xml:id="arima">
+        <persName>有馬左兵衛佐允純</persName>
+        <note>伊織が永の御預けとなった大名。邸は幸橋外</note>
+      </person>
+      <person xml:id="shunmeiin">
+        <persName>浚明院殿</persName>
+        <note>十代将軍徳川家治の法号。その追善により伊織の御預けが免ぜられる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="azabu">
+        <placeName>麻布</placeName>
+        <location><geo>35.657 139.732</geo></location>
+        <note>旧麻布区一帯(現港区)・概値</note>
+      </place>
+      <place xml:id="ryudocho">
+        <placeName>竜土町</placeName>
+        <location><geo>35.6653 139.7264</geo></location>
+        <note>麻布竜土町(現港区六本木7丁目付近)。伊織とるんの隠居所がある・概値</note>
+      </place>
+      <place xml:id="mikawa">
+        <placeName>三河国</placeName>
+        <location><geo>34.85 137.35</geo></location>
+        <note>旧国名(愛知県東部)・概値</note>
+      </place>
+      <place xml:id="okudono">
+        <placeName>奥殿</placeName>
+        <location><geo>34.9997 137.2058</geo></location>
+        <note>三河国奥殿(現愛知県岡崎市奥殿町)。松平左七郎家の陣屋・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.685 139.753</geo></location>
+        <note>東京の旧称・概値</note>
+      </place>
+      <place xml:id="edojo">
+        <placeName>江戸城</placeName>
+        <location><geo>35.6852 139.7528</geo></location>
+        <note>江戸城・概値</note>
+      </place>
+      <place xml:id="nishinomaru">
+        <placeName>西丸</placeName>
+        <location><geo>35.6836 139.7538</geo></location>
+        <note>江戸城西の丸。世子(大納言家慶)の居所・概値</note>
+      </place>
+      <place xml:id="shosenji">
+        <placeName>松泉寺</placeName>
+        <note>赤坂黒鍬谷にあった美濃部家の菩提所。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="aoyamagosho">
+        <placeName>青山御所</placeName>
+        <location><geo>35.6725 139.7195</geo></location>
+        <note>青山御所(現・赤坂御用地)・概値</note>
+      </place>
+      <place xml:id="akasaka">
+        <placeName>赤坂</placeName>
+        <location><geo>35.6745 139.7365</geo></location>
+        <note>旧赤坂区一帯(現港区赤坂)・概値</note>
+      </place>
+      <place xml:id="kurowadani">
+        <placeName>黒鍬谷</placeName>
+        <note>赤坂の旧地名。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="suidobashi">
+        <placeName>水道橋</placeName>
+        <location><geo>35.702 139.754</geo></location>
+        <note>神田川の水道橋・概値</note>
+      </place>
+      <place xml:id="hakusan">
+        <placeName>白山</placeName>
+        <location><geo>35.7241 139.7519</geo></location>
+        <note>本郷台の白山(現文京区白山)・概値</note>
+      </place>
+      <place xml:id="ochanomizu">
+        <placeName>お茶の水</placeName>
+        <location><geo>35.6997 139.7645</geo></location>
+        <note>神田川沿いの御茶ノ水・概値</note>
+      </place>
+      <place xml:id="bancho">
+        <placeName>番町</placeName>
+        <location><geo>35.6875 139.739</geo></location>
+        <note>旗本屋敷の並ぶ番町(現千代田区番町)。伊織の住居・概値</note>
+      </place>
+      <place xml:id="ichigayamon">
+        <placeName>市ヶ谷門</placeName>
+        <location><geo>35.6908 139.7355</geo></location>
+        <note>江戸城外郭の市ヶ谷門(見附)。門外に尾張徳川家の上屋敷があった・概値</note>
+      </place>
+      <place xml:id="sotosakurada">
+        <placeName>外桜田</placeName>
+        <location><geo>35.6755 139.7495</geo></location>
+        <note>外桜田(現千代田区霞が関・内幸町付近)。戸田家・黒田家の邸がある・概値</note>
+      </place>
+      <place xml:id="todatei">
+        <placeName>戸田邸</placeName>
+        <note>外桜田にあった戸田淡路守家の邸。屋敷の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="arimatei">
+        <placeName>有馬邸</placeName>
+        <note>幸橋外にあった有馬左兵衛佐家の邸。屋敷の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="sachibashi">
+        <placeName>幸橋</placeName>
+        <location><geo>35.67 139.7556</geo></location>
+        <note>江戸城外郭の幸橋(現千代田区内幸町付近)・概値</note>
+      </place>
+      <place xml:id="awa">
+        <placeName>安房国</placeName>
+        <location><geo>35.05 139.95</geo></location>
+        <note>旧国名(千葉県南部)。るんの故郷・概値</note>
+      </place>
+      <place xml:id="asaigun">
+        <placeName>朝夷郡</placeName>
+        <location><geo>35.03 139.95</geo></location>
+        <note>安房国朝夷郡(現千葉県南房総市・鴨川市の一部)・概値</note>
+      </place>
+      <place xml:id="makado">
+        <placeName>真門村</placeName>
+        <location><geo>35.064 140.028</geo></location>
+        <note>安房国朝夷郡真門村(現千葉県鴨川市江見)。るんの生地・概値</note>
+      </place>
+      <place xml:id="emimura">
+        <placeName>安房郡江見村</placeName>
+        <location><geo>35.0625 140.0292</geo></location>
+        <note>真門村の後身(現千葉県鴨川市江見)・概値</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前国</placeName>
+        <location><geo>36.05 136.25</geo></location>
+        <note>旧国名(福井県北部)・概値</note>
+      </place>
+      <place xml:id="maruoka">
+        <placeName>丸岡</placeName>
+        <location><geo>36.1554 136.2717</geo></location>
+        <note>越前国丸岡(現福井県坂井市丸岡町)。伊織の配所・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nijojo">
+        <placeName>二条の城</placeName>
+        <location><geo>35.0142 135.7483</geo></location>
+        <note>京都の二条城。大番の在番先・概値</note>
+      </place>
+      <place xml:id="osakajo">
+        <placeName>大坂の城</placeName>
+        <location><geo>34.6873 135.5259</geo></location>
+        <note>大坂城。大番の在番先・概値</note>
+      </place>
+      <place xml:id="teramachidori">
+        <placeName>寺町通</placeName>
+        <location><geo>35.01 135.768</geo></location>
+        <note>京都の寺町通(街路)。伊織が古刀を求めた刀剣商の店がある・概値</note>
+      </place>
+      <place xml:id="chikuzen">
+        <placeName>筑前国</placeName>
+        <location><geo>33.6 130.5</geo></location>
+        <note>旧国名(福岡県西部)・概値</note>
+      </place>
+      <place xml:id="fukuoka">
+        <placeName>福岡</placeName>
+        <location><geo>33.5902 130.4017</geo></location>
+        <note>筑前国福岡(黒田家の城下)・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>じいさんばあさん</head>
+        <p><date when="1809">文化六年</date>の春が暮れて行く頃であった。<ruby><rb><placeName ref="#azabu">麻布</placeName><placeName ref="#ryudocho">竜土町</placeName></rb><rt>あざぶりゅうどちょう</rt></ruby>の、今歩兵第三<ruby><rb>聯隊</rb><rt>れんたい</rt></ruby>の兵営になっている地所の南隣で、<ruby><rb><placeName ref="#mikawa">三河国</placeName><placeName ref="#okudono">奥殿</placeName></rb><rt>みかわのくにおくとの</rt></ruby>の領主<persName ref="#sashichiro">松平左七郎<ruby><rb>乗羨</rb><rt>のりのぶ</rt></ruby></persName>と云う大名の<ruby><rb>邸</rb><rt>やしき</rt></ruby>の<ruby><rb>中</rb><rt>うち</rt></ruby>に、大工が<ruby><rb>這入</rb><rt>はい</rt></ruby>って小さい<ruby><rb>明家</rb><rt>あきや</rt></ruby>を修復している。近所のものが誰の住まいになるのだと云って聞けば、<persName ref="#sashichiro">松平</persName>の家中の<ruby><rb>士</rb><rt>さむらい</rt></ruby>で、<persName ref="#kyuemon"><ruby><rb>宮重久右衛門</rb><rt>みやしげきゅうえもん</rt></ruby></persName>と云う人が隠居所を<ruby><rb>拵</rb><rt>こしら</rt></ruby>えるのだと云うことである。なる程<persName ref="#kyuemon">宮重</persName>の家の離座敷と云っても好いような明家で、只台所だけが、小さいながらに、別に出来ていたのである。近所のものが、そんなら<persName ref="#kyuemon">久右衛門</persName>さんが隠居しなさるのだろうかと云って聞けば、そうではないそうである。<ruby><rb>田舎</rb><rt>いなか</rt></ruby>にいた<persName ref="#kyuemon">久右衛門</persName>さんの兄きが出て来て這入るのだと云うことである。</p>
+        <p><date when="1809-04-05">四月五日</date>に、まだ壁が乾き切らぬと云うのに、果して見知らぬ<ruby><rb>爺</rb><rt>じ</rt></ruby>いさんが小さい荷物を持って、<persName ref="#kyuemon">宮重</persName>方に<ruby><rb>著</rb><rt>つ</rt></ruby>いて、すぐに隠居所に這入った。<persName ref="#kyuemon">久右衛門</persName>は<ruby><rb>胡麻塩頭</rb><rt>ごましおあたま</rt></ruby>をしているのに、この爺いさんは髪が真白である。それでも腰などは少しも曲がっていない。結構な<ruby><rb>拵</rb><rt>こしらえ</rt></ruby>の両刀を<ruby><rb>挿</rb><rt>さ</rt></ruby>した姿がなかなか立派である。どう見ても田舎者らしくはない。</p>
+        <p>爺いさんが隠居所に這入ってから二三日立つと、そこへ<ruby><rb>婆</rb><rt>ば</rt></ruby>あさんが一人来て同居した。それも真白な髪を小さい<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>に<ruby><rb>結</rb><rt>い</rt></ruby>っていて、爺いさんに負けぬように品格が好い。それまでは<persName ref="#kyuemon">久右衛門</persName>方の勝手から膳を運んでいたのに、婆あさんが来て、爺いさんと自分との食べる物を、子供がまま事をするような工合に拵えることになった。</p>
+        <p>この<ruby><rb>翁媼</rb><rt>おうおん</rt></ruby>二人の中の好いことは無類である。近所のものは、<ruby><rb>若</rb><rt>も</rt></ruby>しあれが若い男女であったら、どうも平気で見ていることが出来まいなどと云った。中には、あれは夫婦ではあるまい、<ruby><rb>兄妹</rb><rt>きょうだい</rt></ruby>だろうと云うものもあった。その理由とする所を聞けば、あの二人は隔てのない<ruby><rb>中</rb><rt>うち</rt></ruby>に礼儀があって、夫婦にしては、少し遠慮をし過ぎているようだと云うのであった。</p>
+        <p>二人は富裕とは見えない。しかし不自由はせぬらしく、又<persName ref="#kyuemon">久右衛門</persName>に累を及ぼすような事もないらしい。<ruby><rb>殊</rb><rt>こと</rt></ruby>に婆あさんの方は、跡から<ruby><rb>大分</rb><rt>だいぶ</rt></ruby>荷物が来て、衣類なんぞは立派な物を持っているようである。荷物が来てから間もなく、誰が言い出したか、あの婆あさんは御殿女中をしたものだと云う<ruby><rb>噂</rb><rt>うわさ</rt></ruby>が、近所に広まった。</p>
+        <p>二人の生活はいかにも隠居らしい、気楽な生活である。爺いさんは眼鏡を掛けて本を読む。細字で日記を附ける。毎日同じ時刻に刀剣に<ruby><rb>打粉</rb><rt>うちこ</rt></ruby>を打って<ruby><rb>拭</rb><rt>ふ</rt></ruby>く。<ruby><rb>体</rb><rt>たい</rt></ruby>を<ruby><rb>極</rb><rt>き</rt></ruby>めて木刀を<ruby><rb>揮</rb><rt>ふ</rt></ruby>る。婆あさんは例のまま事の真似をして、その<ruby><rb>隙</rb><rt>すき</rt></ruby>には爺いさんの<ruby><rb>傍</rb><rt>そば</rt></ruby>に来て<ruby><rb>団扇</rb><rt>うちわ</rt></ruby>であおぐ。もう時候がそろそろ暑くなる頃だからである。婆あさんが<ruby><rb>暫</rb><rt>しばら</rt></ruby>くあおぐうちに、爺いさんは読みさした本を置いて話をし出す。二人はさも楽しそうに話すのである。</p>
+        <p>どうかすると二人で朝早くから出掛けることがある。最初に出て行った跡で、<persName ref="#kyuemon">久右衛門</persName>の女房が近所のものに話したと云う<ruby><rb>詞</rb><rt>ことば</rt></ruby>が偶然伝えられた。「あれは<ruby><rb>菩提所</rb><rt>ぼだいしょ</rt></ruby>の<placeName ref="#shosenji"><ruby><rb>松泉寺</rb><rt>しょうせんじ</rt></ruby></placeName>へ往きなすったのでございます。息子さんが生きていなさると、今年三十九になりなさるのだから、立派な男盛と云うものでございますのに」と云ったと云うのである。<placeName ref="#shosenji">松泉寺</placeName>と云うのは、今の<placeName ref="#aoyamagosho"><ruby><rb>青山御所</rb><rt>あおやまごしょ</rt></ruby></placeName>の<ruby><rb>向裏</rb><rt>むこううら</rt></ruby>に当る、<placeName ref="#akasaka">赤坂</placeName><placeName ref="#kurowadani"><ruby><rb>黒鍬谷</rb><rt>くろくわだに</rt></ruby></placeName>の寺である。これを聞いて近所のものは、二人が出歩くのは、最初のその日に限らず、過ぎ去った昔の夢の<ruby><rb>迹</rb><rt>あと</rt></ruby>を<ruby><rb>辿</rb><rt>たど</rt></ruby>るのであろうと察した。</p>
+        <p>とかくするうちに夏が過ぎ秋が過ぎた。もう物珍らしげに爺いさん婆あさんの噂をするものもなくなった。所が、もう年が押し詰まって<date when="1809-12-28">十二月二十八日</date>となって、きのうの大雪の跡の道を、<placeName ref="#edojo">江戸城</placeName>へ<ruby><rb>往反</rb><rt>おうへん</rt></ruby>する、歳暮拝賀の大小名諸役人織るが如き最中に、<persName ref="#kyuemon">宮重</persName>の隠居所にいる婆あさんが、今お城から下がったばかりの、邸の主人<persName ref="#sashichiro">松平左七郎</persName>に広間へ呼び出されて、将軍<persName ref="#ienari">徳川<ruby><rb>家斉</rb><rt>いえなり</rt></ruby></persName>の命を伝えられた。「永年<ruby><rb>遠国</rb><rt>えんごく</rt></ruby>に<ruby><rb>罷在候夫</rb><rt>まかりありそろおっと</rt></ruby>の<ruby><rb>為</rb><rt>ため</rt></ruby>、貞節を<ruby><rb>尽候趣聞召</rb><rt>つくしそろおもむききこしめ</rt></ruby>され、厚き<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>を<ruby><rb>以</rb><rt>もっ</rt></ruby>て<ruby><rb>褒美</rb><rt>ほうび</rt></ruby>として銀十枚下し置かる」と云う口上であった。</p>
+        <p>今年の暮には、<placeName ref="#nishinomaru">西丸</placeName>にいた大納言<persName ref="#ieyoshi"><ruby><rb>家慶</rb><rt>いえよし</rt></ruby></persName>と<persName ref="#arisugawa"><ruby><rb>有栖川職仁親王</rb><rt>ありすがわよしひとしんのう</rt></ruby></persName>の<ruby><rb>女<persName ref="#sazanomiya">楽宮</persName></rb><rt>じょらくみや</rt></ruby>との婚儀などがあったので、<ruby><rb>頂戴物</rb><rt>ちょうだいもの</rt></ruby>をする<ruby><rb>人数</rb><rt>にんず</rt></ruby>が例年よりも多かったが、<persName ref="#kyuemon">宮重</persName>の隠居所の婆あさんに銀十枚を下さったのだけは、<ruby><rb>異数</rb><rt>いすう</rt></ruby>として世間に評判せられた。</p>
+        <p>これがために<persName ref="#kyuemon">宮重</persName>の隠居所の翁媼二人は、一時<placeName ref="#edo">江戸</placeName>に名高くなった。爺いさんは元大番<ruby><rb><persName ref="#sonetsune">石川阿波守総恒</persName>組<persName ref="#iori">美濃部伊織</persName></rb><rt>いしかわあわのかみふさつねくみみのべいおり</rt></ruby>と云って、<persName ref="#kyuemon">宮重久右衛門</persName>の実兄である。婆あさんは<persName ref="#iori">伊織</persName>の妻<persName ref="#run">るん</persName>と云って、<placeName ref="#sotosakurada"><ruby><rb>外桜田</rb><rt>そとさくらだ</rt></ruby></placeName>の黒田家の奥に仕えて<ruby><rb>表使格</rb><rt>おもてづかいかく</rt></ruby>になっていた女中である。<persName ref="#run">るん</persName>が褒美を貰った時、夫<persName ref="#iori">伊織</persName>は七十二歳、<persName ref="#run">るん</persName>自身は七十一歳であった。</p>
+        <p>――――――――――――――――</p>
+        <p><date when="1766">明和三年</date>に<ruby><rb>大番頭</rb><rt>おおばんがしら</rt></ruby>になった<persName ref="#sonetsune">石川阿波守総恒</persName>の組に、<persName ref="#iori">美濃部伊織</persName>と云う<ruby><rb>士</rb><rt>さむらい</rt></ruby>があった。剣術は<ruby><rb>儕輩</rb><rt>せいはい</rt></ruby>を抜いていて、手跡も好く和歌の<ruby><rb>嗜</rb><rt>たしなみ</rt></ruby>もあった。<persName ref="#sonetsune">石川</persName>の邸は<placeName ref="#suidobashi">水道橋</placeName>外で、今<placeName ref="#hakusan"><ruby><rb>白山</rb><rt>はくさん</rt></ruby></placeName>から来る電車が、<placeName ref="#ochanomizu">お茶の水</placeName>を降りて来る電車と行き逢う<ruby><rb>辺</rb><rt>あたり</rt></ruby>の<ruby><rb>角屋敷</rb><rt>かどやしき</rt></ruby>になっていた。しかし<persName ref="#iori">伊織</persName>は<placeName ref="#bancho"><ruby><rb>番町</rb><rt>ばんちょう</rt></ruby></placeName>に住んでいたので、上役とは詰所で落ち合うのみであった。</p>
+        <p><persName ref="#sonetsune">石川</persName>が大番頭になった年の翌年の春、<persName ref="#iori">伊織</persName>の<ruby><rb>叔母婿</rb><rt>おばむこ</rt></ruby>で、やはり大番を勤めている<persName ref="#yamanaka">山中藤右衛門</persName>と云うのが、丁度三十歳になる<persName ref="#iori">伊織</persName>に妻を世話をした。それは<persName ref="#yamanaka">山中</persName>の妻の<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>に、<persName ref="#ujiyuki">戸田<ruby><rb>淡路守氏之</rb><rt>あわじのかみうじゆき</rt></ruby></persName>の家来<ruby><rb><persName ref="#aritake">有竹</persName>某</rb><rt>ありたけぼう</rt></ruby>と云うものがあって、その<persName ref="#aritake">有竹</persName>のよめの姉を世話したのである。</p>
+        <p>なぜ妹が先によめに<ruby><rb>往</rb><rt>い</rt></ruby>って、姉が残っていたかと云うと、それは姉が邸奉公をしていたからである。<ruby><rb>素</rb><rt>もと</rt></ruby>二人の女は<ruby><rb><placeName ref="#awa">安房国</placeName><placeName ref="#asaigun">朝夷郡</placeName><placeName ref="#makado">真門村</placeName></rb><rt>あわのくにあさいごおりまかどむら</rt></ruby>で由緒のある<persName ref="#uchiki"><ruby><rb>内木四郎右衛門</rb><rt>うちきしろえもん</rt></ruby></persName>と云うものの娘で、姉の<persName ref="#run">るん</persName>は<date when="1752"><ruby><rb>宝暦</rb><rt>ほうれき</rt></ruby>二年</date>十四歳で、<placeName ref="#ichigayamon">市ヶ谷門</placeName>外の<persName ref="#munekatsu"><ruby><rb>尾張中納言宗勝</rb><rt>おわりちゅうなごんむねかつ</rt></ruby></persName>の奥の軽い召使になった。それから<date when="1761">宝暦十一年</date><ruby><rb>尾州家</rb><rt>びしゅうけ</rt></ruby>では<ruby><rb>代替</rb><rt>だいがわり</rt></ruby>があって、<persName ref="#munechika"><ruby><rb>宗睦</rb><rt>むねちか</rt></ruby></persName>の世になったが、<persName ref="#run">るん</persName>は続いて奉公していて、とうとう<date when="1766">明和三年</date>まで十四年間勤めた。その留守に妹は戸田の家来<persName ref="#aritake">有竹</persName>の息子の妻になって、<placeName ref="#sotosakurada">外桜田</placeName>の邸へ来たのである。</p>
+        <p>尾州家から下がった<persName ref="#run">るん</persName>は二十九歳で、二十四歳になる妹の所へ<ruby><rb>手助</rb><rt>てだすけ</rt></ruby>に入り込んで、なるべくお旗本の<ruby><rb>中</rb><rt>うち</rt></ruby>で相応な家へよめに往きたいと云っていた。それを<persName ref="#yamanaka">山中</persName>が聞いて、<persName ref="#iori">伊織</persName>に世話をしようと云うと、<persName ref="#aritake">有竹</persName>では喜んで親元になって嫁入をさせることにした。そこで<placeName ref="#awa"><ruby><rb>房州</rb><rt>ぼうしゅう</rt></ruby></placeName>うまれの<persName ref="#uchiki">内木</persName><ruby><rb>氏</rb><rt>うじ</rt></ruby>の<persName ref="#run">るん</persName>は<persName ref="#aritake">有竹</persName>氏を<ruby><rb>冒</rb><rt>おか</rt></ruby>して、<placeName ref="#sotosakurada">外桜田</placeName>の<placeName ref="#todatei">戸田邸</placeName>から<placeName ref="#bancho">番町</placeName>の<persName ref="#iori">美濃部</persName>方へよめに来たのである。</p>
+        <p><persName ref="#run">るん</persName>は美人と云う<ruby><rb>性</rb><rt>たち</rt></ruby>の女ではない。<ruby><rb>若</rb><rt>も</rt></ruby>し床の間の置物のような物を美人としたら、<persName ref="#run">るん</persName>は調法に出来た器具のような物であろう。体格が好く、押出しが立派で、それで目から鼻へ抜けるように賢く、いつでもぼんやりして手を明けていると云うことがない。顔も<ruby><rb>觀骨</rb><rt>かんこつ</rt></ruby>が<ruby><rb>稍</rb><rt>やや</rt></ruby>出張っているのが<ruby><rb>疵</rb><rt>きず</rt></ruby>であるが、<ruby><rb>眉</rb><rt>まゆ</rt></ruby>や目の間に才気が<ruby><rb>溢</rb><rt>あふ</rt></ruby>れて見える。<persName ref="#iori">伊織</persName>は武芸が出来、学問の嗜もあって、色の白い美男である。只この人には<ruby><rb>肝癪持</rb><rt>かんしゃくもち</rt></ruby>と云う病があるだけである。さて二人が夫婦になったところが、<persName ref="#run">るん</persName>はひどく夫を好いて、手に据えるように大切にし、七十八歳になる夫の祖母にも、血を分けたものも及ばぬ程やさしくするので、<persName ref="#iori">伊織</persName>は好い女房を持ったと思って満足した。それで不断の肝癪は全く<ruby><rb>迹</rb><rt>あと</rt></ruby>を<ruby><rb>斂</rb><rt>おさ</rt></ruby>めて、何事をも勘弁するようになっていた。</p>
+        <p>翌年は<date when="1768">明和五年</date>で<persName ref="#iori">伊織</persName>の弟<persName ref="#kyuemon">宮重</persName>はまだ<persName ref="#kyuemon">七五郎</persName>と云っていたが、<ruby><rb>主家</rb><rt>しゅうけ</rt></ruby>のその時の当主<persName ref="#iwaminokami">松平<ruby><rb>石見守乗穏</rb><rt>いわみのかみのりやす</rt></ruby></persName>が大番頭になったので、自分も同時に大番組に<ruby><rb>入</rb><rt>い</rt></ruby>った。これで<persName ref="#iori">伊織</persName>、<persName ref="#kyuemon">七五郎</persName>の兄弟は同じ勤をすることになったのである。</p>
+        <p>この大番と云う役には、<placeName ref="#kyoto">京都</placeName><placeName ref="#nijojo">二条の城</placeName>と<placeName ref="#osakajo">大坂の城</placeName>とに交代して詰めることがある。<persName ref="#iori">伊織</persName>が妻を<ruby><rb>娶</rb><rt>めと</rt></ruby>ってから四年立って、<date when="1771">明和八年</date>に<persName ref="#iwaminokami">松平石見守</persName>が<placeName ref="#nijojo">二条</placeName>在番の事になった。そこで<persName ref="#kyuemon">宮重七五郎</persName>が上京しなくてはならぬのに病気であった。当時は<ruby><rb>代人差立</rb><rt>だいにんさしたて</rt></ruby>と云うことが出来たので、<persName ref="#iori">伊織</persName>が<persName ref="#kyuemon">七五郎</persName>の代人として<persName ref="#iwaminokami">石見守</persName>に附いて上京することになった。<persName ref="#iori">伊織</persName>は、丁度<ruby><rb>妊娠</rb><rt>にんしん</rt></ruby>して臨月になっている<persName ref="#run">るん</persName>を<placeName ref="#edo">江戸</placeName>に残して、<date when="1771-04">明和八年四月</date>に<placeName ref="#kyoto">京都</placeName>へ立った。</p>
+        <p><persName ref="#iori">伊織</persName>は<placeName ref="#kyoto">京都</placeName>でその年の夏を無事に勤めたが、秋風の立ち<ruby><rb>初</rb><rt>そ</rt></ruby>める頃、或る日<placeName ref="#teramachidori">寺町通</placeName>の刀剣商の店で、質流れだと云う好い古刀を見出した。<ruby><rb>兼</rb><rt>かね</rt></ruby>て<ruby><rb>好</rb><rt>い</rt></ruby>い刀が一<ruby><rb>腰</rb><rt>こし</rt></ruby>欲しいと心掛けていたので、それを買いたく思ったが、代金百五十両と云うのが、<persName ref="#iori">伊織</persName>の身に取っては容易ならぬ大金であった。</p>
+        <p><persName ref="#iori">伊織</persName>は万一の時の用心に、いつも百両の金を胴巻に入れて体に附けていた。それを出すのは惜しくはない。しかし跡五十両の才覚が出来ない。そこで百五十両は高くはないと思いながら、商人にいろいろ説いて、とうとう百三十両までに負けて貰うことにして、買い取る約束をした。三十両は借財をする<ruby><rb>積</rb><rt>つもり</rt></ruby>なのである。</p>
+        <p><persName ref="#iori">伊織</persName>が金を借りた人は<ruby><rb>相番</rb><rt>あいばん</rt></ruby>の<persName ref="#shimojima"><ruby><rb>下島</rb><rt>しもじま</rt></ruby>甚右衛門</persName>と云うものである。平生親しくはせぬが、<ruby><rb>工面</rb><rt>くめん</rt></ruby>の好いと云うことを聞いていた。そこでこの<persName ref="#shimojima">下島</persName>に三十両借りて刀を手に入れ、拵えを直しに<ruby><rb>遣</rb><rt>や</rt></ruby>った。</p>
+        <p>そのうち刀が出来て来たので、<persName ref="#iori">伊織</persName>はひどく嬉しく思って、あたかも好し<date when="1771-08-15">八月十五夜</date>に、親しい友達<persName ref="#yanagihara">柳原小兵衛</persName>等二三人を招いて、刀の<ruby><rb>披露旁馳走</rb><rt>ひろうかたがたちそう</rt></ruby>をした。友達は皆刀を<ruby><rb>褒</rb><rt>ほ</rt></ruby>めた。酒<ruby><rb>酣</rb><rt>たけなわ</rt></ruby>になった頃、ふと<persName ref="#shimojima">下島</persName>がその席へ来合せた。めったに来ぬ人なので、<persName ref="#iori">伊織</persName>は金の催促に来たのではないかと、<ruby><rb>先</rb><rt>ま</rt></ruby>ず不快に思った。しかし金を借りた義理があるので、<ruby><rb>杯</rb><rt>さかずき</rt></ruby>をさして<ruby><rb>団欒</rb><rt>まとい</rt></ruby>に入れた。</p>
+        <p><ruby><rb>暫</rb><rt>しばら</rt></ruby>く話をしているうちに、<persName ref="#shimojima">下島</persName>の<ruby><rb>詞</rb><rt>ことば</rt></ruby>に何となく角があるのに、一同気が附いた。<persName ref="#shimojima">下島</persName>は金の催促に来たのではないが、自分の用立てた金で買った刀の披露をするのに自分を招かぬのを不平に思って、わざと酒宴の最中に尋ねて来たのである。</p>
+        <p><persName ref="#shimojima">下島</persName>は<ruby><rb>二言三言</rb><rt>ふたことみこと</rt></ruby><persName ref="#iori">伊織</persName>と言い合っているうちに、とうとうこう云う事を言った。「刀は御奉公のために大切な品だから、随分借財をして買っても好かろう。しかしそれに結構な拵をするのは<ruby><rb>贅沢</rb><rt>ぜいたく</rt></ruby>だ。その上借財のある身分で刀の披露をしたり、月見をしたりするのは不心得だ」と云った。</p>
+        <p>この詞の意味よりも、<persName ref="#shimojima">下島</persName>の冷笑を帯びた語気が、いかにも聞き苦しかったので、<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて聞いていた<persName ref="#iori">伊織</persName>は<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>、一座の友達が皆不快に思った。</p>
+        <p><persName ref="#iori">伊織</persName>は顔を挙げて云った。「只今のお詞は確に承った。その御返事はいずれ恩借の<ruby><rb>金子</rb><rt>きんす</rt></ruby>を持参した上で、<ruby><rb>改</rb><rt>あらため</rt></ruby>て申上げる。親しい間柄と云いながら、今晩わざわざ請待した客の手前がある。どうぞこの席はこれでお立下されい」と云った。</p>
+        <p><persName ref="#shimojima">下島</persName>は<ruby><rb>面色</rb><rt>かおいろ</rt></ruby>が変った。「そうか。返れと云うなら返る。」こう言い放って立ちしなに、<persName ref="#shimojima">下島</persName>は自分の前に据えてあった膳を<ruby><rb>蹴返</rb><rt>けかえ</rt></ruby>した。</p>
+        <p>「これは」と云って、<persName ref="#iori">伊織</persName>は<ruby><rb>傍</rb><rt>はた</rt></ruby>にあった刀を取って立った。<persName ref="#iori">伊織</persName>の面色はこの時変っていた。</p>
+        <p><persName ref="#iori">伊織</persName>と<persName ref="#shimojima">下島</persName>とが向き合って立って、二人が目と目を見合わせた時、<persName ref="#shimojima">下島</persName>が一言「たわけ」と叫んだ。その声と共に、<persName ref="#iori">伊織</persName>の手に<ruby><rb>白刃</rb><rt>しらは</rt></ruby>が<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>いて、<persName ref="#shimojima">下島</persName>は額を一<ruby><rb>刀</rb><rt>とう</rt></ruby>切られた。</p>
+        <p><persName ref="#shimojima">下島</persName>は切られながら刀を抜いたが、<persName ref="#iori">伊織</persName>に刃向うかと思うと、そうでなく、白刃を<ruby><rb>提</rb><rt>ひっさ</rt></ruby>げたまま、身を<ruby><rb>飜</rb><rt>ひるがえ</rt></ruby>して玄関へ逃げた。</p>
+        <p><persName ref="#iori">伊織</persName>が続いて出ると、脇差を抜いた<persName ref="#shimojima">下島</persName>の<ruby><rb>仲間</rb><rt>ちゅうげん</rt></ruby>が立ち<ruby><rb>塞</rb><rt>ふさ</rt></ruby>がった。「<ruby><rb>退</rb><rt>の</rt></ruby>け」と叫んだ<persName ref="#iori">伊織</persName>の横に払った刀に仲間は腕を切られて後へ引いた。</p>
+        <p>その<ruby><rb>隙</rb><rt>ひま</rt></ruby>に<persName ref="#shimojima">下島</persName>との間に距離が生じたので、<persName ref="#iori">伊織</persName>が<ruby><rb>一飛</rb><rt>ひととび</rt></ruby>に追い<ruby><rb>縋</rb><rt>すが</rt></ruby>ろうとした時、跡から附いて来た<persName ref="#yanagihara">柳原小兵衛</persName>が、「逃げるなら逃がせい」と云いつつ、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>からしっかり抱き締めた。相手が死なずに済んだなら、<persName ref="#iori">伊織</persName>の罪が軽減せられるだろうと思ったからである。</p>
+        <p><persName ref="#iori">伊織</persName>は刀を<persName ref="#yanagihara">柳原</persName>にわたして、しおしおと座に返った。そして黙って俯向いた。</p>
+        <p><persName ref="#yanagihara">柳原</persName>は<persName ref="#iori">伊織</persName>の向いにすわって云った。「今晩の事は<ruby><rb>己</rb><rt>おれ</rt></ruby>を始、一同が見ていた。いかにも勘弁出来ぬと云えばそれまでだ。しかし先へ刀を抜いた所存を、一応聞いて置きたい」と云った。</p>
+        <p><persName ref="#iori">伊織</persName>は目に涙を浮べて暫く答えずにいたが、口を開いて一首の歌を<ruby><rb>誦</rb><rt>じゅ</rt></ruby>した。</p>
+        <p>「いまさらに<ruby><rb>何</rb><rt>なに</rt></ruby>とか云はむ<ruby><rb>黒髪</rb><rt>くろかみ</rt></ruby>の</p>
+        <p>みだれ心はもとすゑもなし」</p>
+        <p>――――――――――――――――</p>
+        <p><persName ref="#shimojima">下島</persName>は額の<ruby><rb>創</rb><rt>きず</rt></ruby>が存外重くて、二三日立って死んだ。<persName ref="#iori">伊織</persName>は<placeName ref="#edo">江戸</placeName>へ護送せられて取調を受けた。判決は「心得違の<ruby><rb>廉</rb><rt>かど</rt></ruby>を以て、<ruby><rb>知行</rb><rt>ちぎょう</rt></ruby>召放され、<persName ref="#arima"><ruby><rb>有馬左兵衛佐允純</rb><rt>ありまさひょうえのすけまさずみ</rt></ruby></persName>へ<ruby><rb>永</rb><rt>なが</rt></ruby>の御預仰付らる」と云うことであった。<persName ref="#iori">伊織</persName>が<ruby><rb><placeName ref="#sachibashi">幸橋</placeName>外</rb><rt>さいわいばしそと</rt></ruby>の<placeName ref="#arimatei">有馬邸</placeName>から、<placeName ref="#echizen"><ruby><rb>越前国</rb><rt>えちぜんのくに</rt></ruby></placeName><placeName ref="#maruoka">丸岡</placeName>へ遣られたのは、<date when="1772">安永</date>と改元せられた翌年の八月である。</p>
+        <p>跡に残った<persName ref="#iori">美濃部</persName>家の家族は、それぞれ親類が引き取った。<persName ref="#iori">伊織</persName>の祖母<persName ref="#teishoin"><ruby><rb>貞松院</rb><rt>ていしょういん</rt></ruby></persName>は<persName ref="#kyuemon">宮重七五郎</persName>方に往き、父の顔を見ることの出来なかった嫡子<persName ref="#heinai"><ruby><rb>平内</rb><rt>へいない</rt></ruby></persName>と、妻<persName ref="#run">るん</persName>とは<persName ref="#aritake">有竹</persName>の分家になっている<persName ref="#kasahara">笠原新八郎</persName>方に往った。</p>
+        <p>二年程立って、<persName ref="#teishoin">貞松院</persName>が寂しがってよめの所へ一しょになったが、間もなく八十三歳で、病気と云う程の<ruby><rb>容体</rb><rt>ようだい</rt></ruby>もなく死んだ。<date when="1774-08-29">安永三年八月二十九日</date>の事である。</p>
+        <p>翌年又五歳になる<persName ref="#heinai">平内</persName>が流行の<ruby><rb>疱瘡</rb><rt>ほうそう</rt></ruby>で死んだ。これは<date when="1775-03-28">安永四年三月二十八日</date>の事である。</p>
+        <p><persName ref="#run">るん</persName>は祖母をも息子をも、力の<ruby><rb>限</rb><rt>かぎり</rt></ruby>介抱して臨終を見届け、<placeName ref="#shosenji">松泉寺</placeName>に葬った。そこで<persName ref="#run">るん</persName>は一生武家奉公をしようと思い立って、世話になっている<persName ref="#kasahara">笠原</persName>を始、親類に奉公先を捜すことを頼んだ。</p>
+        <p>暫く立つと、<persName ref="#aritake">有竹</persName>氏の<ruby><rb>主家</rb><rt>しゅうけ</rt></ruby><persName ref="#ujiyasu">戸田淡路守<ruby><rb>氏養</rb><rt>うじやす</rt></ruby></persName>の隣邸、<placeName ref="#chikuzen"><ruby><rb>筑前国</rb><rt>ちくぜんのくに</rt></ruby></placeName><placeName ref="#fukuoka">福岡</placeName>の領主黒田家の当主<persName ref="#haruyuki">松平筑前守<ruby><rb>治之</rb><rt>はるゆき</rt></ruby></persName>の奥で、物馴れた女中を欲しがっていると云う噂が聞えた。<persName ref="#kasahara">笠原</persName>は人を頼んで、そこへ<persName ref="#run">るん</persName>を<ruby><rb>目見</rb><rt>めみ</rt></ruby>えに遣った。<persName ref="#ujiyasu">氏養</persName>と云うのは、六年前に<persName ref="#ujiyuki">氏之</persName>の跡を<ruby><rb>続</rb><rt>つ</rt></ruby>いだ戸田家の当主である。</p>
+        <p>黒田家では<persName ref="#run">るん</persName>を一目見て、すぐに雇い入れた。これが<date when="1777">安永六年</date>の春であった。</p>
+        <p><persName ref="#run">るん</persName>はこれから<date when="1808-07">文化五年七月</date>まで、三十一年間黒田家に勤めていて、<persName ref="#haruyuki"><ruby><rb>治之</rb><rt>はるゆき</rt></ruby></persName>、<persName ref="#harutaka"><ruby><rb>治高</rb><rt>はるたか</rt></ruby></persName>、<persName ref="#naritaka"><ruby><rb>斉隆</rb><rt>なりたか</rt></ruby></persName>、<persName ref="#narikiyo"><ruby><rb>斉清</rb><rt>なりきよ</rt></ruby></persName>の四代の奥方に仕え、<ruby><rb>表使格</rb><rt>おもてづかいかく</rt></ruby>に進められ、隠居して終身二<ruby><rb>人扶持</rb><rt>にんふち</rt></ruby>を貰うことになった。この間<persName ref="#run">るん</persName>は給料の<ruby><rb>中</rb><rt>うち</rt></ruby>から<placeName ref="#shosenji">松泉寺</placeName>へ金を納めて、<persName ref="#iori">美濃部</persName>家の墓に<ruby><rb>香華</rb><rt>こうげ</rt></ruby>を絶やさなかった。</p>
+        <p>隠居を許された時、<persName ref="#run">るん</persName>は一旦<persName ref="#kasahara">笠原</persName>方へ引き取ったが、間もなく故郷の<placeName ref="#awa">安房</placeName>へ帰った。当時の<placeName ref="#asaigun">朝夷郡</placeName><placeName ref="#makado">真門村</placeName>で、今の<placeName ref="#emimura">安房郡<ruby><rb>江見村</rb><rt>えみむら</rt></ruby></placeName>である。</p>
+        <p>その翌年の<date when="1809">文化六年</date>に、<placeName ref="#echizen">越前国</placeName><placeName ref="#maruoka">丸岡</placeName>の配所で、<date when="1772">安永元年</date>から三十七年間、人に手跡や剣術を教えて暮していた夫<persName ref="#iori">伊織</persName>が、「<date when="1809-03-08">三月八日</date><ruby><rb><persName ref="#shunmeiin">浚明院殿</persName>御追善</rb><rt>しゅんめいいんでんごついぜん</rt></ruby>の為、御慈悲の思召を以て、<ruby><rb>永</rb><rt>なが</rt></ruby>の<ruby><rb>御預御免仰出</rb><rt>おあずけごめんおおせいだ</rt></ruby>され」て、<placeName ref="#edo">江戸</placeName>へ帰ることになった。それを聞いた<persName ref="#run">るん</persName>は、喜んで<placeName ref="#awa">安房</placeName>から<placeName ref="#edo">江戸</placeName>へ来て、<placeName ref="#ryudocho">竜土町</placeName>の家で、三十七年振に再会したのである。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

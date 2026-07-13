@@ -1,0 +1,22 @@
+{
+ "slug": "outo",
+ "url": "https://www.aozora.gr.jp/cards/000035/files/308_14910.html",
+ "card": "https://www.aozora.gr.jp/cards/000035/card308.html",
+ "title": "桜桃",
+ "author": "太宰治",
+ "fixes": {},
+ "persons": {
+  "dazai": [
+   "太宰",
+   "太宰治(1909–1948)。語り手「私」自身を指す。「人はそれに気づかず、太宰という作家も、このごろは軽薄である」と、世評の中で作家名として言及される(作中唯一の固有人名)"
+  ]
+ },
+ "places": {},
+ "tags": [
+  [
+   "pers",
+   "太宰",
+   "dazai"
+  ]
+ ]
+}

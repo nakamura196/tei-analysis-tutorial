@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>忠直卿行状記</title>
+        <author>菊池寛</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>忠直卿行状記</title><author>菊池寛</author>
+          <note>青空文庫。底本：「菊池寛　短編と戯曲」文芸春秋。1988（昭和63）年3月25日第1刷発行。入力：真先芳秋。校正：湯地光弘。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000083/card501.html">https://www.aozora.gr.jp/cards/000083/card501.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="tadanao">
+        <persName>松平忠直</persName>
+        <note>越前少将忠直卿。結城秀康の子。六十七万石の越前北の庄城主。大坂夏の陣で一番乗りの功を立てるが、家臣の「偽りの敗北」を知って乱行に走り改易される。幼名は長吉丸、法名は一伯</note>
+      </person>
+      <person xml:id="ieyasu">
+        <persName>徳川家康</persName>
+        <note>忠直卿の祖父。大御所。「日本樊噲」と忠直卿を賞める</note>
+      </person>
+      <person xml:id="hideyasu">
+        <persName>結城秀康</persName>
+        <note>忠直卿の父。故中納言。慶長十二年に薨去</note>
+      </person>
+      <person xml:id="hidetada">
+        <persName>徳川秀忠</persName>
+        <note>二代将軍。大坂夏の陣に出馬する</note>
+      </person>
+      <person xml:id="hideyori">
+        <persName>豊臣秀頼</persName>
+        <note>大坂方の主。忠直卿が「首をいただく」と息巻く相手</note>
+      </person>
+      <person xml:id="ii-naotaka">
+        <persName>井伊</persName>
+        <note>「井伊藤堂の勢」として言及される井伊勢の将(井伊直孝)</note>
+      </person>
+      <person xml:id="todo-takatora">
+        <persName>藤堂高虎</persName>
+        <note>徳川方の将。家康に具足着用を勧める。「井伊藤堂の勢」としても言及される</note>
+      </person>
+      <person xml:id="date-masamune">
+        <persName>伊達</persName>
+        <note>仙台藩主伊達家(伊達政宗)。「伊達、前田、黒田という聞えた大藩」として言及される</note>
+      </person>
+      <person xml:id="goto-matabei">
+        <persName>後藤又兵衛</persName>
+        <note>大坂方の将。六日の戦いに討死</note>
+      </person>
+      <person xml:id="kimura-nagato">
+        <persName>木村長門</persName>
+        <note>大坂方の将(木村長門守重成)。六日の戦いに討死</note>
+      </person>
+      <person xml:id="susukida-hayato">
+        <persName>薄田隼人生</persName>
+        <note>大坂方の将。六日の戦いに討死</note>
+      </person>
+      <person xml:id="chosokabe-morichika">
+        <persName>長曾我部盛親</persName>
+        <note>大坂方の将。最後の一戦を待つ</note>
+      </person>
+      <person xml:id="mori-buzen">
+        <persName>毛利豊前守</persName>
+        <note>大坂方の将(毛利勝永)。最後の一戦を待つ</note>
+      </person>
+      <person xml:id="yukimura">
+        <persName>真田左衛門尉幸村</persName>
+        <note>大坂方の城将。茶臼山に陣し、越前勢の西尾仁左衛門に討ち取られる。「真田勢」としても言及される</note>
+      </person>
+      <person xml:id="matsudaira-toshitsune">
+        <persName>松平筑前守利常</persName>
+        <note>徳川方の先手の将(加賀藩主前田利常)。「伊達、前田、黒田という聞えた大藩」の「前田」も同じ</note>
+      </person>
+      <person xml:id="kato-yoshiaki">
+        <persName>加藤左馬助嘉明</persName>
+        <note>徳川方の先手の将</note>
+      </person>
+      <person xml:id="kuroda-nagamasa">
+        <persName>黒田甲斐守長政</persName>
+        <note>徳川方の先手の将。「伊達、前田、黒田という聞えた大藩」の「黒田」も同じ</note>
+      </person>
+      <person xml:id="naito-masanari">
+        <persName>内藤掃部頭正成</persName>
+        <note>家康の近臣</note>
+      </person>
+      <person xml:id="uemura-iemasa">
+        <persName>植村出羽守家政</persName>
+        <note>家康の近臣</note>
+      </person>
+      <person xml:id="itakura-shigemasa">
+        <persName>板倉内膳正重正</persName>
+        <note>家康の近臣</note>
+      </person>
+      <person xml:id="honda-masazumi">
+        <persName>本多正純</persName>
+        <note>幕府の執政。作中では「本多佐渡守正純」「本多上野介正純」と表記される。のちに越前侯廃絶の策をめぐらす</note>
+      </person>
+      <person xml:id="honda-tomimasa">
+        <persName>本多富正</persName>
+        <note>越前家の国老。家康の叱責を受けて復命に窮する</note>
+      </person>
+      <person xml:id="honda-tosa">
+        <persName>本多土佐</persName>
+        <note>越前家の国老。真槍仕合を諫めて退けられる</note>
+      </person>
+      <person xml:id="honda-tadatomo">
+        <persName>本多出雲守忠朝</persName>
+        <note>徳川方の先手の将。越前勢の左に陣を張る</note>
+      </person>
+      <person xml:id="honda-tadamasa">
+        <persName>本多伊予守忠昌</persName>
+        <note>越前家の武士。念流左太夫を討ち取る</note>
+      </person>
+      <person xml:id="yoshinao">
+        <persName>義直</persName>
+        <note>家康の子(徳川義直)。忠直卿の伯父。功名を挙げられなかった</note>
+      </person>
+      <person xml:id="yorinobu">
+        <persName>頼宣</persName>
+        <note>家康の子(徳川頼宣)。忠直卿の伯父。功名を挙げられなかった</note>
+      </person>
+      <person xml:id="tadateru">
+        <persName>忠輝</persName>
+        <note>越後侍従忠輝卿(松平忠輝)。忠直卿の伯父。七日の合戦の手に合わず不首尾</note>
+      </person>
+      <person xml:id="mizuno-katsunari">
+        <persName>水野勝成</persName>
+        <note>徳川方の将。攻撃令の遅れに苛立って怒鳴る</note>
+      </person>
+      <person xml:id="yoshida-shuri">
+        <persName>吉田修理</persName>
+        <note>越前家の家老。忠直卿に真っ先を命ぜられる</note>
+      </person>
+      <person xml:id="igi-tokao">
+        <persName>伊木七郎右衛門遠雄</persName>
+        <note>大坂方の将。茶臼山の南を固める</note>
+      </person>
+      <person xml:id="watanabe-tadasu">
+        <persName>渡辺内蔵助糺</persName>
+        <note>大坂方の将。茶臼山の南を固める</note>
+      </person>
+      <person xml:id="otani-yoshitane">
+        <persName>大谷大学吉胤</persName>
+        <note>大坂方の将。茶臼山の南を固める</note>
+      </person>
+      <person xml:id="nenryu-satayu">
+        <persName>念流左太夫</persName>
+        <note>大坂城中で撃剣の名を得た者。本多伊予守忠昌に討ち取られる。越前家の大島左太夫とは別人</note>
+      </person>
+      <person xml:id="aoki-shinbei">
+        <persName>青木新兵衛</persName>
+        <note>越前家の武士。大坂城一番乗りの功を立て、五千石の加増を約される</note>
+      </person>
+      <person xml:id="otobe-kurobei">
+        <persName>乙部九郎兵衛</persName>
+        <note>越前家の武士。大坂の陣で功名する</note>
+      </person>
+      <person xml:id="hagita-shume">
+        <persName>萩田主馬</persName>
+        <note>越前家の武士。大坂の陣で功名する</note>
+      </person>
+      <person xml:id="toshima-shuzen">
+        <persName>豊島主膳</persName>
+        <note>越前家の武士。大坂の陣で功名する</note>
+      </person>
+      <person xml:id="nishio-nizaemon">
+        <persName>西尾仁左衛門</persName>
+        <note>越前家の武士。真田左衛門尉幸村を討ち取る</note>
+      </person>
+      <person xml:id="onjuku-echizen">
+        <persName>御宿越前</persName>
+        <note>大坂方の将(御宿勘兵衛政友)。野本右近に討ち取られる</note>
+      </person>
+      <person xml:id="nomoto-ukon">
+        <persName>野本右近</persName>
+        <note>越前家の武士。御宿越前を討ち取る。小野田右近とは別人</note>
+      </person>
+      <person xml:id="onoda-ukon">
+        <persName>小野田右近</persName>
+        <note>越前家の若武士。槍術の名人権藤左門の弟子。紅白仕合の白軍大将。「勝ちをお譲りするのが楽になった」と洩らしたのを忠直卿に立聞きされ、真槍仕合で傷つき自刃する</note>
+      </person>
+      <person xml:id="oshima-satayu">
+        <persName>大島左太夫</persName>
+        <note>越前家の若武士。指南番大島左膳の嫡子。白軍の副将。右近とともに立話を立聞きされ、真槍仕合で傷つき自刃する</note>
+      </person>
+      <person xml:id="oshima-sazen">
+        <persName>大島左膳</persName>
+        <note>越前家の槍術指南番。大島左太夫の父</note>
+      </person>
+      <person xml:id="gondo-samon">
+        <persName>権藤左門</persName>
+        <note>京の槍術の名人。小野田右近の師</note>
+      </person>
+      <person xml:id="masuda-kannosuke">
+        <persName>増田勘之介</persName>
+        <note>忠直卿第一の寵臣の小姓。杯盤を投げつけられ切腹する</note>
+      </person>
+      <person xml:id="oyama-tango">
+        <persName>小山丹後</persName>
+        <note>越前家の老家老。碁の相手を務め、碁盤を足蹴にされて自刃する</note>
+      </person>
+      <person xml:id="kinuno">
+        <persName>絹野</persName>
+        <note>京から召し下された美女。忠直卿の寵愛を一身に集める愛妾</note>
+      </person>
+      <person xml:id="asamizu-yoshiro">
+        <persName>浅水与四郎</persName>
+        <note>越前家の武士。妻を奪われ、匕首をもって忠直卿に迫る。のち夫婦で自殺する</note>
+      </person>
+      <person xml:id="doi-toshikatsu">
+        <persName>土居大炊頭利勝</persName>
+        <note>幕府の執政。越前侯廃絶の策をめぐらし、のち「忠直卿行状記」を受け取る</note>
+      </person>
+      <person xml:id="seiryoni">
+        <persName>清涼尼</persName>
+        <note>忠直卿の生母。将軍家の意を伝えるため越前へ遣わされる</note>
+      </person>
+      <person xml:id="takenaka-shigetsugu">
+        <persName>竹中采女正重次</persName>
+        <note>豊後府内の城主。忠直卿警護の任に当り、家臣に行状を録せしめる</note>
+      </person>
+      <person xml:id="kozan">
+        <persName>洸山</persName>
+        <note>豊後津守の浄建寺の老衲。晩年の忠直卿と入懇に交わる</note>
+      </person>
+      <person xml:id="bingo-sadakane">
+        <persName>備後貞包</persName>
+        <note>槍鍛冶の名手。忠直卿の真槍を鍛えた</note>
+      </person>
+      <person xml:id="hankai">
+        <persName>樊噲</persName>
+        <note>前漢の武将。家康が忠直卿を「唐の樊噲」「日本樊噲」と賞めた</note>
+      </person>
+      <person xml:id="chuo">
+        <persName>紂王</persName>
+        <note>殷の暴君。晩年の忠直卿が「紂王にも勝れる暴君」と噂されたことに言及される</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="echizen">
+        <placeName>越前</placeName>
+        <location><geo>36.0 136.2</geo></location>
+        <note>旧国名(福井県北部)。忠直卿の領国(越前六十七万石)。「越前勢」「越前家」「越前領」「越前侯」も同じ・概値</note>
+      </place>
+      <place xml:id="fukui">
+        <placeName>福井</placeName>
+        <location><geo>36.0652 136.2196</geo></location>
+        <note>越前の城下(現福井市)・概値</note>
+      </place>
+      <place xml:id="kitanosho">
+        <placeName>北の庄</placeName>
+        <location><geo>36.0637 136.2216</geo></location>
+        <note>越前北の庄城(のちの福井城。現福井市)・概値</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大坂</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>現大阪。「大坂表」「大坂陣」も同じ・概値</note>
+      </place>
+      <place xml:id="osakajo">
+        <placeName>大坂城</placeName>
+        <location><geo>34.6873 135.5259</geo></location>
+        <note>大坂城(現大阪市中央区)・概値</note>
+      </place>
+      <place xml:id="okayama">
+        <placeName>岡山</placeName>
+        <location><geo>34.6516 135.5395</geo></location>
+        <note>大坂夏の陣の岡山口(現大阪市生野区の御勝山付近)。岡山県ではない・概値</note>
+      </place>
+      <place xml:id="tennoji">
+        <placeName>天王寺</placeName>
+        <location><geo>34.6538 135.5165</geo></location>
+        <note>大坂の天王寺(現大阪市天王寺区、四天王寺付近)。「天王寺口」も同じ・概値</note>
+      </place>
+      <place xml:id="chausuyama">
+        <placeName>茶臼山</placeName>
+        <location><geo>34.6478 135.509</geo></location>
+        <note>大坂の茶臼山(現大阪市天王寺区茶臼山町)。真田幸村の陣所・概値</note>
+      </place>
+      <place xml:id="koshindo">
+        <placeName>庚申堂</placeName>
+        <location><geo>34.6522 135.5163</geo></location>
+        <note>四天王寺の庚申堂(現大阪市天王寺区)・概値</note>
+      </place>
+      <place xml:id="aoyaguchi">
+        <placeName>青屋口</placeName>
+        <location><geo>34.6893 135.5302</geo></location>
+        <note>大坂城の青屋門(現大阪市中央区)・概値</note>
+      </place>
+      <place xml:id="senbaguchi">
+        <placeName>仙波口</placeName>
+        <note>大坂城攻めの際の口の名。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="kuromon">
+        <placeName>黒門</placeName>
+        <note>大坂城の門の一。位置に諸説あるため座標なし</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都・概値</note>
+      </place>
+      <place xml:id="nijojo">
+        <placeName>二条城</placeName>
+        <location><geo>35.0142 135.7481</geo></location>
+        <note>京の二条城(現京都市中京区)・概値</note>
+      </place>
+      <place xml:id="shinetsu">
+        <placeName>信越</placeName>
+        <location><geo>36.7 138.2</geo></location>
+        <note>信濃・越後の山々。地域名・概値</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後</placeName>
+        <location><geo>37.5 138.9</geo></location>
+        <note>旧国名(新潟県)。「越後侍従忠輝卿」・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>現東京・概値</note>
+      </place>
+      <place xml:id="kaga">
+        <placeName>加賀</placeName>
+        <location><geo>36.5 136.6</geo></location>
+        <note>旧国名(石川県南部)。「加賀勢」は前田家の軍勢・概値</note>
+      </place>
+      <place xml:id="tsuruga">
+        <placeName>敦賀</placeName>
+        <location><geo>35.6453 136.0555</geo></location>
+        <note>越前敦賀(現福井県敦賀市)。忠直卿が入道した地・概値</note>
+      </place>
+      <place xml:id="bungo">
+        <placeName>豊後</placeName>
+        <location><geo>33.2 131.6</geo></location>
+        <note>旧国名(大分県)・概値</note>
+      </place>
+      <place xml:id="funai">
+        <placeName>府内</placeName>
+        <location><geo>33.2382 131.6126</geo></location>
+        <note>豊後府内(現大分市)。忠直卿の配所・概値</note>
+      </place>
+      <place xml:id="tsumori">
+        <placeName>津守</placeName>
+        <location><geo>33.21 131.57</geo></location>
+        <note>豊後府内近郊の津守(現大分市津守)。忠直卿の晩年の居所・概値</note>
+      </place>
+      <place xml:id="jokenji">
+        <placeName>浄建寺</placeName>
+        <note>豊後津守の寺と記される。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="kara">
+        <placeName>唐</placeName>
+        <location><geo>35.0 105.0</geo></location>
+        <note>中国の古称(国名)。「唐の樊噲」・概値</note>
+      </place>
+      <place xml:id="in">
+        <placeName>殷</placeName>
+        <location><geo>36.1264 114.3145</geo></location>
+        <note>中国古代の王朝・国名(殷/商)。「殷の紂王」。座標は都の殷墟(現河南省安陽市)・概値</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="kodoku-jigoku">
+        <placeName>孤独地獄</placeName>
+        <note>仏教の孤地獄。宗教的世界観上の場所(座標なし)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>忠直卿行状記</head>
+        <p>一</p>
+        <p><persName ref="#ieyasu"><ruby><rb>家康</rb><rt>いえやす</rt></ruby></persName>の本陣へ呼び付けられた<persName ref="#tadanao"><ruby><rb>忠直卿</rb><rt>ただなおきょう</rt></ruby></persName>の家老たちは、<persName ref="#ieyasu">家康</persName>から一たまりもなく叱り飛ばされて散々の首尾であった。</p>
+        <p>「今日<ruby><rb><persName ref="#ii-naotaka">井伊</persName><persName ref="#todo-takatora">藤堂</persName></rb><rt>いいとうどう</rt></ruby>の<ruby><rb>勢</rb><rt>ぜい</rt></ruby>が苦戦したを、<placeName ref="#echizen">越前</placeName>の家中の者は昼寝でもして、知らざったか、両陣の後を詰めて城に迫らば<placeName ref="#osaka">大坂</placeName>の落城は目前であったに、大将は若年なり、汝らは日本一の臆病人ゆえ、あたら戦を仕損じてしもうたわ」と苦り切って罵ったまま、<persName ref="#ieyasu">家康</persName>はつと座を立ってしまった。</p>
+        <p>国老の<persName ref="#honda-tomimasa"><ruby><rb>本多富正</rb><rt>ほんだとみまさ</rt></ruby></persName>は、今日の合戦の手に合わなかったことについては、多少の言い訳は持ち合わして行ったのだが、こう<persName ref="#ieyasu">家康</persName>から高飛車に出られては、口を出す機会さえなかった。</p>
+        <p>で、仕方がないというよりも、<ruby><rb>這々</rb><rt>ほうほう</rt></ruby>の<ruby><rb>体</rb><rt>てい</rt></ruby>で本陣を退って、<placeName ref="#echizen">越前</placeName>勢の陣所へ帰って来たものの、主君の<persName ref="#tadanao">忠直卿</persName>に復命するのに、どう切り出してよいか、ことごとく当惑した。</p>
+        <p><placeName ref="#echizen">越前</placeName>少将<persName ref="#tadanao">忠直卿</persName>は、二十一になったばかりの大将であった。父の<persName ref="#hideyasu"><ruby><rb>秀康卿</rb><rt>ひでやすきょう</rt></ruby></persName>が<date when="1607">慶長十二年閏四月</date>に<ruby><rb>薨</rb><rt>こう</rt></ruby>ぜられた時、わずか十三歳で、六十七万石の大封を継がれて以来、今までこの世の中に、自分の意志よりも、もっと強力な意志が存在していることを、まったく知らない大将であった。</p>
+        <p>生れたままの、自分の意志――というよりも我意を、高山の頂に生いたった杉の木のように<ruby><rb>矗々</rb><rt>ちくちく</rt></ruby>と<ruby><rb>沖</rb><rt>ひひ</rt></ruby>らしている大将であった。今度の出陣の布令が、<placeName ref="#echizen">越前</placeName>家に達した時も、家老たちは腫れ物に触るように恐る恐る御前にまかり出でて、</p>
+        <p>「御所様から、<placeName ref="#osaka">大坂</placeName>表へ御出陣あるよう御懇篤な御依頼の書状が到着いたしました」と、言上した。家老たちは、今までにその幼主の意志を絶対のものにする癖がついていた。</p>
+        <p>それが、今日は<persName ref="#ieyasu">家康</persName>の叱責を是非とも<persName ref="#tadanao">忠直卿</persName>の耳に入れねばならない。生れて以来、叱られるなどという感情を夢にも経験したことのない主君に対して、大御所の激しい叱責がどんな効果を及ぼすかを、彼らは<ruby><rb>恟々</rb><rt>きょうきょう</rt></ruby>として考えねばならなかった。</p>
+        <p>彼らが帰って来たと聞くと、<persName ref="#tadanao">忠直卿</persName>はすぐ彼らを呼び出した。</p>
+        <p>「お祖父様は何と仰せられた。定めし、所労のお言葉をでも賜わったであろう」と、<persName ref="#tadanao">忠直卿</persName>は機嫌よく微笑をさえ含んできいた。そうきかれると、家老たちは今さらの如く狼狽した。が、ようやく覚悟の<ruby><rb>臍</rb><rt>ほぞ</rt></ruby>を決めたと見えて、その中の一人は恐る恐る、</p>
+        <p>「いかいお思召し違いにござります。大御所様には、今日<placeName ref="#echizen">越前</placeName>勢が合戦の手に合わざったを、お怨みにござります」といったまま、色をかえて<ruby><rb>平伏</rb><rt>ひれふ</rt></ruby>した。</p>
+        <p>人から非難され叱責されるという感情を、少しも経験したことのない<persName ref="#tadanao">忠直卿</persName>は、その感情に対してなんらの抵抗力も節制力も持っていなかった。</p>
+        <p>「えい！　何という<ruby><rb>仰</rb><rt>おお</rt></ruby>せだ。この<persName ref="#tadanao">忠直</persName>が<ruby><rb>御先</rb><rt>おさき</rt></ruby>を所望してあったを、お許されもせいで、左様な<ruby><rb>無体</rb><rt>むたい</rt></ruby>を仰せらるる。所詮は、<persName ref="#tadanao">忠直</persName>に死ね！　というお祖父様の謎じゃ。其方たちも死ね！　我も死ぬ！　明日の戦いには、主従<ruby><rb>挙</rb><rt>こぞ</rt></ruby>って<ruby><rb>鋒鏑</rb><rt>ほうてき</rt></ruby>に血を注ぎ、城下に<ruby><rb>尸</rb><rt>かばね</rt></ruby>を<ruby><rb>晒</rb><rt>さら</rt></ruby>すばかりじゃ。軍兵にも、そう伝えて覚悟いたさせよ」と叫んだ<persName ref="#tadanao">忠直卿</persName>は、膝に置いていた両手をぶるぶると震わせたかと思うと、どうにも堪らないように、小姓の持っていた<ruby><rb>長光</rb><rt>ながみつ</rt></ruby>の<ruby><rb>佩刀</rb><rt>はいとう</rt></ruby>を抜き放って、家老たちの面前へ突きつけながら、</p>
+        <p>「見い！　この長光で<persName ref="#hideyori"><ruby><rb>秀頼</rb><rt>ひでより</rt></ruby></persName>公のお<ruby><rb>首</rb><rt>しるし</rt></ruby>をいただいて、お祖父様の顔に突きつけてみせるぞ」と、いうかと思うと、その太刀を二、三度、座りながら打ち振った。まだ二十を出たばかりの<persName ref="#tadanao">忠直卿</persName>は、時々こうした狂的に近い発作にとらわれるのであった。</p>
+        <p>家老たちも、御父君<persName ref="#hideyasu">秀康卿</persName>以来の<ruby><rb>癇癪</rb><rt>かんしゃく</rt></ruby>を知っているために、ただ<ruby><rb>疾風</rb><rt>はやて</rt></ruby>の過ぎるのを待つように耳を塞いで<ruby><rb>突伏</rb><rt>つっぷ</rt></ruby>しているばかりであった。</p>
+        <p><date when="1615-05-07"><ruby><rb>元和</rb><rt>げんな</rt></ruby>元年五月七日</date>の朝は、数日来の陰天名残りなく晴れて、天色ことのほか<ruby><rb>和清</rb><rt>わせい</rt></ruby>であった。</p>
+        <p><placeName ref="#osaka">大坂</placeName>の落城は、もう時間の問題であった。<persName ref="#goto-matabei">後藤又兵衛</persName>、<persName ref="#kimura-nagato">木村<ruby><rb>長門</rb><rt>ながと</rt></ruby></persName>、<persName ref="#susukida-hayato"><ruby><rb>薄田隼人生</rb><rt>すすきだはいとのしょう</rt></ruby></persName>ら、名ある大将は、<date when="1615-05-06">六日</date>の戦いに多くは覚悟の討死を遂げてしまって、ただ<persName ref="#yukimura">真田<ruby><rb>左衛門</rb><rt>さえもん</rt></ruby></persName>や<persName ref="#chosokabe-morichika"><ruby><rb>長曾我部盛親</rb><rt>ちょうそがべもりちか</rt></ruby></persName>や、<persName ref="#mori-buzen">毛利<ruby><rb>豊前守</rb><rt>ぶぜんのかみ</rt></ruby></persName>などが、最後の一戦を待っているばかりであった。</p>
+        <p>将軍<persName ref="#hidetada">秀忠</persName>は、この日<ruby><rb>寅</rb><rt>とら</rt></ruby>の刻に出馬した。<persName ref="#matsudaira-toshitsune">松平<ruby><rb>筑前守利常</rb><rt>ちくぜんのかみとしつね</rt></ruby></persName>、<persName ref="#kato-yoshiaki">加藤<ruby><rb>左馬助嘉明</rb><rt>さまのすけよしあき</rt></ruby></persName>、　<persName ref="#kuroda-nagamasa">黒田<ruby><rb>甲斐守長政</rb><rt>かいのかみながまさ</rt></ruby></persName>を第一の先手として旗を<placeName ref="#okayama">岡山</placeName>の方へと進めた。</p>
+        <p><persName ref="#ieyasu">家康</persName>は<ruby><rb>卯</rb><rt>う</rt></ruby>の刻、<ruby><rb>輿</rb><rt>こし</rt></ruby>にて進発した。<persName ref="#todo-takatora"><ruby><rb>藤堂高虎</rb><rt>とうどうたかとら</rt></ruby></persName>が来合わせて、</p>
+        <p>「今日は御具足を召さるべきに」というと、<persName ref="#ieyasu">家康</persName>は例のわるがしこそうな微笑を洩しながら、</p>
+        <p>「<placeName ref="#osaka">大坂</placeName>の小伜を討つに、具足は不用じゃわ」といって、<ruby><rb>白袷</rb><rt>しろあわせ</rt></ruby>に茶色の羽織を着、<ruby><rb>下括</rb><rt>しもくく</rt></ruby>りの<ruby><rb>袴</rb><rt>はかま</rt></ruby>を穿いて手には<ruby><rb>払子</rb><rt>ほっす</rt></ruby>を持って絶えず群がってくる<ruby><rb>飛蠅</rb><rt>とびはえ</rt></ruby>を払っていた。<persName ref="#naito-masanari">内藤<ruby><rb>掃部頭正成</rb><rt>かもんのかみまさなり</rt></ruby></persName>、<persName ref="#uemura-iemasa">植村<ruby><rb>出羽守家政</rb><rt>でわのかみいえまさ</rt></ruby></persName>、<persName ref="#itakura-shigemasa">板倉<ruby><rb>内膳正重正</rb><rt>ないぜんのしょうしげまさ</rt></ruby></persName>ら近臣三十人ばかりが輿に従って進んだ。</p>
+        <p><persName ref="#honda-masazumi">本多<ruby><rb>佐渡守正純</rb><rt>さどのかみまさずみ</rt></ruby></persName>は、<persName ref="#ieyasu">家康</persName>と寸も違わぬ服装で、山輿に乗って<persName ref="#ieyasu">家康</persName>の後に、すぐ引き添うた。</p>
+        <p>見ると、<placeName ref="#okayama">岡山</placeName>口から<placeName ref="#tennoji">天王寺</placeName>口にかけて、十五万に余る惣軍は、旗差物を初夏の風に翻し、兜の前立物を日に輝かし、隊伍を整え陣を堅めて、攻撃の令の下るのを今や遅しと待っていた。</p>
+        <p>が、攻撃の令は容易に下らないのみか、御所の使番が三騎、白馬を飛ばして、諸陣の間を駆け回りながら、</p>
+        <p>「<persName ref="#yoshinao"><ruby><rb>義直</rb><rt>よしなお</rt></ruby></persName>、<persName ref="#yorinobu"><ruby><rb>頼宣</rb><rt>よりのぶ</rt></ruby></persName>の両卿を、とりかわせ給うにより、先手<ruby><rb>軍</rb><rt>いくさ</rt></ruby>を始めることしばらく延引し、馬をば一、二町も退け、人々馬より下り、槍を手にし重ねての命を待つべし」と、触れ渡った。</p>
+        <p><persName ref="#ieyasu">家康</persName>も、今日を最後の手合せと見て、愛子の<persName ref="#yoshinao">義直</persName>、<persName ref="#yorinobu">頼宣</persName>の二卿に兜首の一つでも取らせてやりたいという心があったのだろう。が、この布令をきいた気早の<persName ref="#mizuno-katsunari"><ruby><rb>水野勝成</rb><rt>みずのかつなり</rt></ruby></persName>は、使番を尻目にかけながら、</p>
+        <p>「はや<ruby><rb>巳</rb><rt>み</rt></ruby>の刻に及び候。<placeName ref="#chausuyama">茶臼山</placeName>の敵陣次第にかさみ見えて候。速かに戦いを取り結びて然るべし、と大御所に伝えよ」と怒鳴った。が、この二人の使番が引き取ったかと思うと、再び四騎の使番が惣軍の間を縦横に飛び違って、</p>
+        <p>「方々、合戦をとりかくべからず、しずかに重ねての令を待つべし」とふれ渡った。</p>
+        <p>しかし、昨夜の興奮を持ち続けて、ほとんど不眠の有様で、今日の手合せを待っていたわが<placeName ref="#echizen">越前</placeName>少将<persName ref="#tadanao">忠直卿</persName>は、かかる布令を聞かばこそ、家老<persName ref="#yoshida-shuri"><ruby><rb>吉田修理</rb><rt>よしだしゅり</rt></ruby></persName>に真っ先かけさせ、国老の両本多をはじめ、三万に近い大軍を、十六段に分け、<placeName ref="#kaga">加賀</placeName>勢の備えたる真ん中を駆け抜け、<placeName ref="#kaga">加賀</placeName>勢の怒り止むるに答えず、無二無三に<placeName ref="#tennoji">天王寺</placeName>の方、<placeName ref="#chausuyama">茶臼山</placeName>の前までおし詰め、ここの先手<persName ref="#honda-tadatomo">本多<ruby><rb>出雲守忠朝</rb><rt>いずものかみただとも</rt></ruby></persName>の備えより少し左に、<ruby><rb>鶴翼</rb><rt>かくよく</rt></ruby>に陣を張った。</p>
+        <p>この時初めて、将軍から、</p>
+        <p>「城兵は<ruby><rb>寄手</rb><rt>よせて</rt></ruby>を引き寄せて、夜を待つように見え候、早く戦いを令すべし」と、いう軍令が諸陣の間にふれ渡された。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>は軍令の出ずるのを待ってはいなかった。<persName ref="#honda-tadatomo">本多忠朝</persName>の先手が、二、三発敵にさぐりの鉄砲を放つと、等しく<placeName ref="#echizen">越前</placeName>勢たちまち七、八百挺の鉄砲を一度に打ち掛け、立ち籠めた煙の中を潜って、十六段の軍勢林の動くがごとく、一同<placeName ref="#chausuyama">茶臼山</placeName>に打ってかかった。</p>
+        <p><placeName ref="#aoyaguchi">青屋口</placeName>から<placeName ref="#chausuyama">茶臼山</placeName>にかけての軍勢は、<persName ref="#yukimura">真田<ruby><rb>左衛門尉幸村</rb><rt>さえもんのじょうゆきむら</rt></ruby></persName>父子、少し南に<persName ref="#igi-tokao">伊木七郎<ruby><rb>右衛門遠雄</rb><rt>えもんとおお</rt></ruby></persName>、<persName ref="#watanabe-tadasu">渡辺<ruby><rb>内蔵助糺</rb><rt>くらのすけただす</rt></ruby></persName>、<persName ref="#otani-yoshitane">大谷大学<ruby><rb>吉胤</rb><rt>よしたね</rt></ruby></persName>らが固めて、総勢六千をわずかに出ているに過ぎなかった。</p>
+        <p>ことに<placeName ref="#echizen">越前</placeName>勢は目に余る大軍なり、大将<persName ref="#tadanao">忠直卿</persName>は今日を必死の覚悟と見えて、馬上に軍配を捨てて大身の槍をしごきながら、家臣の止むるをきかず、先へ先へと馬を進められた。</p>
+        <p>大将がこの有様であるから、軍兵ことごとく奮い立って、火水になれと戦ったから、<placeName ref="#echizen">越前</placeName>勢の向うところ、敵勢草木のごとく<ruby><rb>靡</rb><rt>なび</rt></ruby>き伏して、<persName ref="#honda-tadamasa">本多<ruby><rb>伊予守忠昌</rb><rt>いよのかみただまさ</rt></ruby></persName>が、城中にて撃剣の名を得たる<persName ref="#nenryu-satayu"><ruby><rb>念流左太夫</rb><rt>ねんりゅうさだゆう</rt></ruby></persName>を討ち取ったをはじめとし、<persName ref="#aoki-shinbei">青木新兵衛</persName>、<persName ref="#otobe-kurobei"><ruby><rb>乙部</rb><rt>おとべ</rt></ruby>九郎兵衛</persName>、<persName ref="#hagita-shume">萩田<ruby><rb>主馬</rb><rt>しゅめ</rt></ruby></persName>、<persName ref="#toshima-shuzen"><ruby><rb>豊島主膳</rb><rt>とよしましゅぜん</rt></ruby></persName>等、功名する者<ruby><rb>数多</rb><rt>あまた</rt></ruby>にて、<placeName ref="#chausuyama">茶臼山</placeName>より<placeName ref="#koshindo"><ruby><rb>庚申堂</rb><rt>こうしんどう</rt></ruby></placeName>に備えたる<persName ref="#yukimura">真田</persName>勢を一気に斬り崩し、<persName ref="#yukimura">左衛門尉幸村</persName>をば<persName ref="#nishio-nizaemon">西尾<ruby><rb>仁左衛門</rb><rt>にざえもん</rt></ruby></persName>討ち取り、<persName ref="#onjuku-echizen"><ruby><rb>御宿越前</rb><rt>みしゅくえちぜん</rt></ruby></persName>をば<persName ref="#nomoto-ukon">野本<ruby><rb>右近</rb><rt>うこん</rt></ruby></persName>討ち取り、逃ぐる城兵の後を慕うて、<placeName ref="#senbaguchi">仙波口</placeName>より<placeName ref="#kuromon">黒門</placeName>へ押入り旗を立て、城内所々に火を放った。</p>
+        <p>敵の首を取る三千六百五十二級、この日の功名<persName ref="#tadanao">忠直卿</persName>の右に出ずるはなかった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は<placeName ref="#chausuyama">茶臼山</placeName>に駒を立てていたが、<placeName ref="#echizen">越前</placeName>勢の旗差物が潮のように濠を塞ぎ、<ruby><rb>曲輪</rb><rt>くるわ</rt></ruby>に溢れ、寄手の軍勢から一際鋭角を作って、<placeName ref="#osakajo">大坂城</placeName>の中へ<ruby><rb>楔</rb><rt>くさび</rt></ruby>のごとく食い入って行くのを見ると、他愛もない児童のように<ruby><rb>鞍壺</rb><rt>くらつぼ</rt></ruby>に躍り上って<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んだ。</p>
+        <p>先手の者が馳せ帰って、</p>
+        <p>「<persName ref="#aoki-shinbei">青木新兵衛</persName><placeName ref="#osakajo">大坂城</placeName>の一番乗り仕って候」と注進に及ぶと、<persName ref="#tadanao">忠直卿</persName>は相好を崩されながら、</p>
+        <p>「<persName ref="#aoki-shinbei">新兵衛</persName>の武功第一じゃ――五千石の加増じゃと早々伝えよ」と、勇み立とうとする乗馬を、乗り静めながら狂気のごとくに叫んだ。</p>
+        <p>武将として何という光栄であろう。寄手をあれほどに駆け悩ました<persName ref="#yukimura">左衛門尉</persName>の首を挙ぐるさえあるに、諸家の軍勢に先だって一番乗りの大功をわが軍中に収むるとは、何という光栄であろうと、<persName ref="#tadanao">忠直卿</persName>は思った。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は家臣らの奇跡のような働きを思うと、それがすべて自分の力、自分の意志の反映であるように思われた。昨日祖父の<persName ref="#ieyasu">家康</persName>によって彼の自尊心に蒙らされた傷が、拭い去られたごとく消失したばかりでなく、<persName ref="#tadanao">忠直卿</persName>の自尊心は前よりも、数倍の強さと激しさを加えた。</p>
+        <p><placeName ref="#osakajo">大坂城</placeName>の寄手に加わっている百に近い大名のうち、功名自分に及ぶ者は一人もないと思うと、<persName ref="#tadanao">忠直卿</persName>は自分の身体が輝くかと思うばかりに、豊満な心持になっていた。が、それも決して無理ではない。<ruby><rb>驍勇</rb><rt>ぎょうゆう</rt></ruby>無双の<persName ref="#hideyasu">秀康卿</persName>の子と生れ、徳川の家には嫡々の自分であると思うと、今日の武勲のごときは当然過ぎるほど当然のように思われて、<persName ref="#tadanao">忠直卿</persName>は、得々たる感情が心のうちに<ruby><rb>洶湧</rb><rt>きょうゆう</rt></ruby>するのを制しかねた。</p>
+        <p>「お祖父様は、この<persName ref="#tadanao">忠直</persName>を見損のうておわしたのじゃ。御本陣に見参してなんと仰せられるかきこう」と、思いつくと、<persName ref="#tadanao">忠直卿</persName>は<placeName ref="#okayama">岡山</placeName>口へ本陣を進めていた<persName ref="#ieyasu">家康</persName>の<ruby><rb>膝下</rb><rt>しっか</rt></ruby>に急いだのである。</p>
+        <p><persName ref="#ieyasu">家康</persName>は<ruby><rb>牀几</rb><rt>しょうぎ</rt></ruby>に倚って諸大名の祝儀を受けていたが、<persName ref="#tadanao">忠直卿</persName>が着到すると、わざわざ牀几を離れ、手を取って引き寄せながら、</p>
+        <p>「<ruby><rb>天晴</rb><rt>あっぱれ</rt></ruby>仕出かした。今日の一番功ありてこそ誠にわが孫じゃぞ。御身の武勇<placeName ref="#kara"><ruby><rb>唐</rb><rt>もろこし</rt></ruby></placeName>の<persName ref="#hankai"><ruby><rb>樊噲</rb><rt>はんかい</rt></ruby></persName>にも<ruby><rb>右</rb><rt>みぎ</rt></ruby>わ<ruby><rb>勝</rb><rt>まさ</rt></ruby>りに見ゆるぞ。まことに日本<persName ref="#hankai">樊噲</persName>とは御身のことじゃ」と、向う様に褒め立てた。</p>
+        <p>一本気な<persName ref="#tadanao">忠直卿</persName>は、こう褒められると涙が出るほど嬉しかった。彼は同じ人から昨日叱責された恨みなどは、もう微塵も残っていなかった。</p>
+        <p>彼はその夜、自分の陣所へ帰って来ると、家臣をあつめて大酒宴を催した。自分が何よりも強く、<ruby><rb>誰人</rb><rt>だれびと</rt></ruby>よりも勝って、祖父<persName ref="#ieyasu">家康</persName>の賞め言葉の「日本<persName ref="#hankai">樊噲</persName>」という言葉が、まだ物足りぬようにさえ思われ出した。</p>
+        <p>彼は<placeName ref="#osakajo">大坂城</placeName>がまったく暮れてしまった空に、まだところどころ真紅に燃え盛っているのを見ながら、それを今日の自分の大功の表章として享楽しながら、しきりに大杯を重ねるのであった。</p>
+        <p>得意な上ずった感情のほかには、<persName ref="#tadanao">忠直卿</persName>の心には何物も残っていなかった。</p>
+        <p>越えて翌月の<date when="1615-06-05">五日</date>に城攻めに加わった諸侯が、<placeName ref="#kyoto">京</placeName>の<placeName ref="#nijojo">二条城</placeName>に群参した時に、<persName ref="#ieyasu">家康</persName>は<persName ref="#tadanao">忠直卿</persName>の手を取りながら、</p>
+        <p>「御身が父、<persName ref="#hideyasu">秀康</persName>世にありしほどは、よく我に忠孝を尽くしてくれたるわ、汝はまたこのたび諸軍に優れし軍忠を現したること、満足の至りじゃ。これによって感状を授けんと思えど、家門の中なればそれにも及ぶまい。わが本統のあらん限り、<placeName ref="#echizen">越前</placeName>の家また磐石のごとく安泰じゃ」といいながら、秘蔵の<ruby><rb>初花</rb><rt>はつはな</rt></ruby>の茶入を<persName ref="#tadanao">忠直卿</persName>に与えた。<persName ref="#tadanao">忠直卿</persName>はこの上なき面目を施して、諸大名の列座の中に自分の身の燦として光を放つごとく覚えた。彼は天下に欠くるものもないようなみち足りた感情が、胸のうちにむずむずと溢れてくるのを覚えた。元より彼の意志がなんらの制限を蒙らず、彼の感情が常に豊満していることは、決して今に始まったことではなかった。幼年時代からも、彼の意志と感情とは外部からはなんらの抑制も被らず、思うままに溢れていたのであった。彼は今までいかなることに<ruby><rb>与</rb><rt>たずさ</rt></ruby>わっても人に劣り、人に負けたという記憶を持っていなかった。幼年時代に<ruby><rb>破魔弓</rb><rt>はまゆみ</rt></ruby>の的を競えば、勝利者は必ず彼であった。<placeName ref="#fukui">福井</placeName>の城下へも<placeName ref="#kyoto">京</placeName>の<ruby><rb>公卿</rb><rt>くげ</rt></ruby>が<ruby><rb>蹴鞠</rb><rt>けまり</rt></ruby>の戯れを伝えて、それが城中にもしばしば行われた時、最も巧みに蹴る者は彼であった。囲碁将棋<ruby><rb>双六</rb><rt>すごろく</rt></ruby>というもてあそびものにおいても、彼は大抵の場合勝者であった。元より弓馬槍剣といったような武士に必須な技術においては、彼の技量はたちまちに上達して、最初同格であった近習たちをぐんぐん追い越して、家中においてその道に名誉の若武者たちにも、たちまちに打ち勝つほどの上達を示すのを常とした。</p>
+        <p>こうして、周囲の者に対する彼の優越感情は年と共に培われて来た。そして、自分は家臣共からはまったく<ruby><rb>質</rb><rt>たち</rt></ruby>の違った優良な人格者であるという確信を、心の奥深く養ってしまったのである。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>の心には、家中の人間の誰よりも立ち勝っているという確信はあるものの、今度<placeName ref="#osaka">大坂</placeName>に出陣して以来は、功名を競う相手は、自分と同格な諸大名であるので、もしや自分が彼らの<ruby><rb>何人</rb><rt>なんびと</rt></ruby>かに劣ってはいはしまいか、ことに武将としては最も本質的な職務たる戦争において、思わざる不覚を取りはしまいかと、少しく憂慮を懐かぬわけにはいかなかった。果して<date when="1615-05-06">五月六日</date>の手合せには、ついに出陣の時刻を遅らせたために、思わぬ不覚を取って、今まで懐いておった強い自信を危く揺がせようとしたのであったが、同じ<date when="1615-05-07">七日</date>の城攻めの功名によって傷ついた自信は、名残りなく償われたばかりでなく、一番乗りの功を収めて、<placeName ref="#echizen">越前</placeName>勢の武名惣軍を圧するに至ったのであるから、自分が家臣の誰人よりも秀れているという<persName ref="#tadanao">忠直卿</persName>の自信が、今ではもっと拡大して、自分は城攻めに備わった六十諸侯の<ruby><rb>何人</rb><rt>なんびと</rt></ruby>よりも秀れているという自信に移りかけていた。<placeName ref="#osaka">大坂</placeName>陣を通じて三千七百五十級の<ruby><rb>首級</rb><rt>しるし</rt></ruby>を挙げ、しかも城将<persName ref="#yukimura">左衛門尉幸村</persName>の首級を挙げたものは、<persName ref="#tadanao">忠直卿</persName>の軍勢に相違なかったのだ。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は初花の茶入と、日本<persName ref="#hankai">樊噲</persName>という美称とを、自分が何人よりも秀れたる人間であるという証券として心のうちに銘じた。</p>
+        <p>晴々とした心持であった。そこに並んでいる大名小名百二十名は、ことごとく<persName ref="#tadanao">忠直卿</persName>に賛美の瞳を向けているように思われた。</p>
+        <p>彼は今まで自分の臣下の何人よりも、自分が優秀な人間であることを誇りとしていた。が、比べている相手はことごとく自分の臣下であることが物足らなかった。然るに、今は天下の諸侯の何人よりも真っ先に、大御所から手を取って歓待を受けている。</p>
+        <p>自分には伯父に当る<persName ref="#yoshinao">義直</persName>卿も<persName ref="#yorinobu">頼宣</persName>卿も、何の功名をも挙げていない。まして同じく伯父に当る<placeName ref="#echigo">越後</placeName>侍従<persName ref="#tadateru"><ruby><rb>忠輝</rb><rt>ただてる</rt></ruby></persName>卿は、<date when="1615-05-07">七日</date>の合戦の手に合わず散々の不首尾である。<persName ref="#date-masamune">伊達</persName>、<persName ref="#matsudaira-toshitsune">前田</persName>、<persName ref="#kuroda-nagamasa">黒田</persName>という聞えた大藩の勲功も、<placeName ref="#echizen">越前</placeName>家の功名の前には月の前の螢火よりもまだ弱い。</p>
+        <p>こう考えると、<persName ref="#tadanao">忠直卿</persName>は<persName ref="#ieyasu">家康</persName>の過ぐる日の叱責によって、一旦傷つけられようとした他人に対する優越感が、見事に回復されたばかりでなく、一旦傷つけられただけにその反動として、回復されたそれは以前のものよりも、もっと輝かしい力強いものであった。</p>
+        <p>こうして<placeName ref="#echizen">越前</placeName>少将<persName ref="#tadanao">忠直卿</persName>は、天下第一人といったような誇りを持しながら、その年<date when="1615-08">八月</date>、都を辞して揚々とした心持で、居城<placeName ref="#echizen">越前</placeName>の<placeName ref="#fukui">福井</placeName>へ下った。</p>
+        <p>二</p>
+        <p><placeName ref="#echizen">越前</placeName><placeName ref="#kitanosho">北の庄</placeName>の城の大広間に、いま銀燭は<ruby><rb>眩</rb><rt>まばゆ</rt></ruby>いばかりに数限りもなく燃えさかっている。その白蝋が解けて流れて、蝋受けの上にうずたかく溜っているのを見れば、よほど酒宴の<ruby><rb>刻</rb><rt>とき</rt></ruby>が移っているのであろう。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は国に就かれて以来、昼間は家中の若武士を集めて弓馬槍剣といったような武術の大仕合を催し、夜は彼らをそのままに引き止めて、一大無礼講の酒宴を開くのを常とした。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、祖父の<persName ref="#ieyasu">家康</persName>から日本<persName ref="#hankai"><ruby><rb>樊噲</rb><rt>はんかい</rt></ruby></persName>と媚びられた名が、心を溶かすように嬉しくて堪らなかった。彼は家中の若<ruby><rb>武士</rb><rt>ざむらい</rt></ruby>と槍を合わし、剣を交じえ、彼らを散々に打ち負かすことによって、自分の誇りを養う日々の<ruby><rb>糧</rb><rt>かて</rt></ruby>としていたのであった。</p>
+        <p>今も、<persName ref="#tadanao">忠直卿</persName>を上座として、一段下った広間に大きい円形を描いている若武士は、数多い家中の若者の中から選ばれた武芸の達者であった。まだ前髪のある少年も打ち交じっていたが、いずれも筋骨逞しく、溌剌たる瞳を持っている。</p>
+        <p>が、城主の<persName ref="#tadanao">忠直卿</persName>の風貌は、彼らよりも一段秀れて颯爽たるものであった。やや肉落ちて<ruby><rb>瀟洒</rb><rt>しょうしゃ</rt></ruby>たる姿ではあるが、その<ruby><rb>炯々</rb><rt>けいけい</rt></ruby>たる瞳はほとんど怪しきまでに鋭い力を放って、精悍の気眉宇の間に溢れて見えた。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、今微酔の回りかけている目を開いて、一座をずうっと見回された。</p>
+        <p>そこに居並んでいる百に余る成年は、皆自分の意志によっては、水火をも辞さない人々であることを思うと、彼は心の内からこみ上げて来る、権力者に特有な誇りを感ぜずにはいなかった。</p>
+        <p>が、彼の今宵の誇りはそれだけには止まっていなかった。彼は武士としての実力においても、ここに集っているすべての青年に打ち勝ったということが、彼の誇りを二重のものにしてしまった。</p>
+        <p>彼は今日もまた、家臣を集めて槍術の大仕合を催した。それは家中から槍術に秀れた青年を集めて、それを二組に分けた紅白の大仕合であった。</p>
+        <p>そして、彼自ら紅軍に大将として出場したのである。仕合の形勢は、始終紅軍の方が不利であった。出る者も、出る者も、敵のためにばたばたと倒されて、紅軍の副将が倒れた時には、白軍にはなお五人の不戦者があった。</p>
+        <p>その時に、紅軍の大将たる<persName ref="#tadanao">忠直卿</persName>は、自ら三間柄の大身の槍をりゅうりゅうと<ruby><rb>扱</rb><rt>しご</rt></ruby>いて、勇気凜然と出場した。まことに山の動くがごとき勢いであった。白軍の戦士は見る見るうちに威圧された。最初に出た小姓頭の男はかねがね<persName ref="#tadanao">忠直卿</persName>の猛勇を恐れているだけに、槍を合わすか合わさぬかに、早くも持っていた槍を巻き落されて、<ruby><rb>脾腹</rb><rt>ひばら</rt></ruby>の辺を突かれると、悶絶せんばかりにへたばってしまった。続く馬回りの男とお<ruby><rb>納戸</rb><rt>なんど</rt></ruby>役の男も、一溜りもなく突き伏せられてしまった。が、白軍の副将の<persName ref="#oshima-satayu"><ruby><rb>大島左太夫</rb><rt>おおしまさだゆう</rt></ruby></persName>という男は、指南番<persName ref="#oshima-sazen">大島左膳</persName>の嫡子であって、槍を取っては家中無双の名誉を持っていた。</p>
+        <p>「殿のお勢いも、<persName ref="#oshima-satayu">左太夫</persName>にはちと難しかろう」という囁きが、いずこともなく起こった。が、激しく七、八合槍を合わせたかと見ると、<persName ref="#oshima-satayu">左太夫</persName>は、したたかに腰の辺を一突き突かれて、よろめく所をつけ入った<persName ref="#tadanao">忠直卿</persName>のために、再び真正面から胸の急所を突かれていた。見物席にいた家中一統は、思う存分に喝采した。<persName ref="#tadanao">忠直卿</persName>は、やや息のはずまれるのを制しながら、静かに相手の大将の出るのを待った。心のうちは、いつものように得意の絶頂であった。</p>
+        <p>白軍の大将は<persName ref="#onoda-ukon"><ruby><rb>小野田右近</rb><rt>おのだうこん</rt></ruby></persName>といった。十二の年から<placeName ref="#kyoto">京</placeName>における槍術の名人<persName ref="#gondo-samon"><ruby><rb>権藤左門</rb><rt>ごんどうさもん</rt></ruby></persName>に入って、二十の年には、師の<persName ref="#gondo-samon">左門</persName>にさえ突き勝つほどの修練を得ていた。が、<persName ref="#tadanao">忠直卿</persName>は何物をも恐れない。「えい！」と鋭く声を掛けられると、猛然として突き掛った。ただ技術の力というよりも、そこには六十七万石の国主の勢いさえ加わるごとく見えた。二十合にも近い激しい戦いが続いたかと思うと、<persName ref="#onoda-ukon">右近</persName>は右の肩先に<persName ref="#tadanao">忠直卿</persName>の激しい一突きを受けて、一間ばかり退くと、</p>
+        <p>「参りました」と、平伏してしまった。</p>
+        <p>見物席の人々は、<placeName ref="#kitanosho">北の庄</placeName>の城の崩るるばかりに喝采した。<persName ref="#tadanao">忠直卿</persName>は得意の絶頂にあった。上席に帰ると、彼は声を揚げて、</p>
+        <p>「皆の者大儀じゃ。いでこれから慰労の酒宴を開くといたそうぞ」と、叫んだのであった。</p>
+        <p>彼は近頃にない上機嫌であった。酒宴の進むにつれ、寵臣は代る代る彼の前に進んだ。</p>
+        <p>「殿！　<placeName ref="#osaka">大坂</placeName>陣で<ruby><rb>矢石</rb><rt>しせき</rt></ruby>の間を往来せられまして以来は、また一段と御上達遊ばされましたな。我らごときは、もはや殿のお相手は仕りかねます」と申し上げた。<placeName ref="#osaka">大坂</placeName>陣の話をさえすれば、<persName ref="#tadanao">忠直卿</persName>は他愛もなく機嫌がよかった。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>もいたく酔ってしまった。一座を見ると、正体もなく酔い潰れている者が大分多くなっている。管をまく者もある、小声で<ruby><rb>隆達節</rb><rt>りゅうたつぶし</rt></ruby>を唄っている者もある。酒宴の興は、ほとんど尽きかけている。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>はふと奥殿に<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>っている異性のことを思い出すと、男ばかりの酒宴が殺風景に思われて来た。彼はつと立って、</p>
+        <p>「皆の者許せ！」といい捨てたまま座を立った。さすがに酔い潰れた者も、居住いを正して平伏した。今まで眠りかけていた小姓たちは、はっと目をさまして主君の後を追った。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>が、奥殿へ続く長廊下へ出ると、冷たい初秋の風が頬に快かった。見ると、外は十日ばかりの薄月夜で、萩の花がほの白く咲きこぼれている辺から、虫の声さえ聞えて来る。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、庭へ下りてみたくなった。奥殿からの迎いの侍女たちを帰して、小姓を一人連れたまま、庭に下り立った。庭の面には、夜露がしっとりと降りている。微かな月光が、城下の街を<ruby><rb>玲瓏</rb><rt>れいろう</rt></ruby>と澄み渡る夜の大気のうちに、墨絵のごとく浮ばせている。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、久し振りにこうした静寂の境に身を置くことを<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んだ。天地は<ruby><rb>寂然</rb><rt>じゃくねん</rt></ruby>として静かである。ただ彼が見捨ててきた城中の大広間からは、雑然たる饗宴の叫びが洩れてくる。それも彼が座を立ってからは、一段と酒席が乱れたとみえ、吾妻拳を打つ掛声まで交って聞える。が、それもよほどの間隔があるので、そううるさくは耳に響いて来ない。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は萩の中の小道を伝い、泉水の縁を回って小高い丘に在る<ruby><rb>四阿</rb><rt>あずまや</rt></ruby>へと入った。そこからは<placeName ref="#shinetsu">信越</placeName>の山々が、微かな月の光を含んでいる空気の中に、<ruby><rb>朧</rb><rt>おぼろ</rt></ruby>に浮いて見える。<persName ref="#tadanao">忠直卿</persName>は、今までの大名生活においてまだ経験したことのないような感傷的な心持にとらわれて、思わずそこに小半刻を過した。</p>
+        <p>すると、ふと人声が聞える。今まで寂然として、虫の声のみが淋しかった所に人声が聞え出した。声の様子でみると、二人の人間が話しながら、四阿の方へ近よってくるらしい。</p>
+        <p><persName ref="#tadanao">忠直</persName>脚は、今自分が享受している静寂な心持が、不意の侵入者によって掻き乱されるのが厭であった。</p>
+        <p>しかし、小姓をして、近寄って来る人間を追わしむるほど、今宵の彼の心は<ruby><rb>荒</rb><rt>すさ</rt></ruby>んではいなかった。二人は話しながら、だんだん近づいて来る。四阿のうちへは月の光が射さぬので、そこに彼らの主君がいようとは、夢にも気付いていないらしい。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、その二人が誰であるか、見極めようとは思っていなかった。が、二人の声がだんだん近づいて来ると、それが誰と誰とであるかが自然と分かって来た。やや潰れたような声の方は、今日の大仕合に白軍の大将を務めた<persName ref="#onoda-ukon">小野田右近</persName>である。甲高い上ずった声の方は、今日<persName ref="#tadanao">忠直卿</persName>に一気に突き伏せられた白軍の副大将、<persName ref="#oshima-satayu">大島左太夫</persName>である。二人はさっきから、なんでも今日の紅白仕合について話しているらしい。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、大名として生れて初めて、立聞きをするという不思議な興味を覚えて、思わず注意を、その方へ集中させた。</p>
+        <p>二人は、四阿からは三間とは離れない泉水の<ruby><rb>汀</rb><rt>みぎわ</rt></ruby>で、立ち止まっているらしい。<persName ref="#oshima-satayu">左太夫</persName>は、心持声を潜めたらしく、</p>
+        <p>「時に、殿のお腕前をどう思う？」と、きいた。<persName ref="#onoda-ukon">右近</persName>が、苦笑をしたらしい気配がした。</p>
+        <p>「殿のお噂か！　聞えたら切腹物じゃのう」</p>
+        <p>「陰では<ruby><rb>公方</rb><rt>くぼう</rt></ruby>のお噂もする。どうじゃ、殿のお腕前は？　真実のお力量は？」と、<persName ref="#oshima-satayu">左太夫</persName>は、かなり真剣にきいて、じっと息を<ruby><rb>凝</rb><rt>こ</rt></ruby>らして、<persName ref="#onoda-ukon">右近</persName>の評価を待っているようであった。</p>
+        <p>「さればじゃのう！　いかい御上達じゃ」といったまま、<persName ref="#onoda-ukon">右近</persName>は言葉を切った。<persName ref="#tadanao">忠直卿</persName>は、初めて臣下の偽らざる賞賛を聞いたように覚えた。が、<persName ref="#onoda-ukon">右近</persName>はもっと言葉を続けた。</p>
+        <p>「以前ほど、勝ちをお譲りいたすのに、骨が折れなくなったわ」</p>
+        <p>二人の若武士は、そこで顔を見合せて会心の苦笑をしたらしい気配がした。</p>
+        <p><persName ref="#onoda-ukon">右近</persName>の言葉を聞いた<persName ref="#tadanao">忠直卿</persName>の心の中に、そこに突如として感情の大渦巻が声を立てて流れはじめたは無論である。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、生れて初めて、土足をもって頭上から踏み<ruby><rb>躙</rb><rt>にじ</rt></ruby>られたような心持がした。彼の唇はブルブルと顫え、惣身の血潮が煮えくり返って、ぐんぐん頭へ逆上するように思った。</p>
+        <p><persName ref="#onoda-ukon">右近</persName>の一言によって、彼は今まで自分が立っておった人間として最高の脚台から、引きずり下ろされて地上へ投げ出されたような、名状し難い<ruby><rb>衝動</rb><rt>ショック</rt></ruby>を受けた。</p>
+        <p>それは、確かに激怒に近い感情であった。しかし、心の中で有り余った力が外にはみ出したような激怒とは、まったく違ったものであった。その激怒は、外面はさかんに燃え狂っているものの、中核のところには、癒しがたい淋しさの空虚が忽然と作られている激怒であった。彼は世の中が急に頼りなくなったような、今までのすべての生活、自分の持っていたすべての誇りが、ことごとく偽りの土台の上に立っていたことに気がついたような淋しさに、ひしひしと襲われていた。</p>
+        <p>彼は小姓の持っている<ruby><rb>佩刀</rb><rt>はいとう</rt></ruby>を取って、即座に両人を切って捨てようかと意気込んだが、そうした激しい意志を遂げる強い力は、この時の彼の心のうちには少しも残ってはいなかった。</p>
+        <p>その上、主君として臣下から偽りの勝利を媚びられて得意になっていた自分が浅ましいと同時に、今両人を<ruby><rb>手刃</rb><rt>しゅじん</rt></ruby>して、その浅ましい事実を自分が知っているということを家中の者に知らせるのも、彼にとってはかなりの苦痛であった。<persName ref="#tadanao">忠直卿</persName>は、胸の内に湧き返る感情をじっと抑えて、いかなる行動に出ずるのが、いちばん適当であるかを考えた。余りに不用意にこうした経験に出合したため、たださえ興奮しやすい<persName ref="#tadanao">忠直卿</persName>の感情は、収拾のつかぬほど混乱した。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>のそばに、さっきから置物のようにじっとして<ruby><rb>蹲</rb><rt>うずくま</rt></ruby>っていた聰明な小姓は、さすがにこの危機を十分に知っていた。二人の男に、ここに彼らの主君がいることを教えねば、どんな大事が起るかも知れぬと思った。彼は、主君の凄まじい顔色を窺いながら、二、三度小さい咳をした。</p>
+        <p>小姓の小さい咳は、この場合はなはだ有効であった。<persName ref="#onoda-ukon">右近</persName>と<persName ref="#oshima-satayu">左太夫</persName>とは、付近に人がいるのを知ると、はっとしてその<ruby><rb>冒涜</rb><rt>ぼうとく</rt></ruby>な口をつぐんだ。</p>
+        <p>二人はいい合わしたように、足早く大広間の方へと去ってしまった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>の瞳は、怒りに燃えていた。が、その頬は凄まじいまでに蒼ざめている。</p>
+        <p>彼の少年時代からの感情生活は、<persName ref="#onoda-ukon">右近</persName>の一言によって、物の見事に破産してしまっていた。彼が幼にして、遊戯をすれば近習の誰よりも巧みであったことや、<ruby><rb>破魔弓</rb><rt>はまゆみ</rt></ruby>の的を競えば近習の<ruby><rb>何人</rb><rt>なんびと</rt></ruby>よりも<ruby><rb>命中矢</rb><rt>あたりや</rt></ruby>を出したことや、習字の稽古の筆を取れば、祐筆の老人が膝頭を叩いて彼の手跡を賞賛したことなどが、皆不快な記憶として彼の頭に一時に<ruby><rb>蘇</rb><rt>よみが</rt></ruby>って来た。</p>
+        <p>武術の方面においても、そうであった。剣を取っても、槍を取っても、たちまち相手をする若武士に打ち勝つほどの腕に瞬く間に上達した。彼は今まで自分を信じて来た。自分の実力を飽くまで信じて来た。今<persName ref="#onoda-ukon">右近</persName>らの冒涜な陰口を耳にしても、それが彼らの負け惜しみであるとさえ、ともすれば思うほどである。</p>
+        <p>しかし、今日の<persName ref="#onoda-ukon">右近</persName>の言葉は、その言葉が発せられた時と場合とを考えれば、決して冗談でもなければ嘘でもなかった。</p>
+        <p>自信にみちていた<persName ref="#tadanao">忠直卿</persName>の耳にも、正真の事実として聞えぬわけには行かなかった。</p>
+        <p><persName ref="#onoda-ukon">右近</persName>の言葉は、彼の<ruby><rb>耳朶</rb><rt>じだ</rt></ruby>のうちに彫り付けられたように残っている。</p>
+        <p>考えてみると、<persName ref="#tadanao">忠直卿</persName>は今日の華々しい勝利の中でも、どこまでが本当で、どこからが嘘だか分からなくなった。否、今日のみではない、生れて以来幾度も試みた遊戯や仕合で、自分が占めた数限りのない勝利や優越の中で、どれだけが本物でどれだけが嘘のものだか分からなくなった。そう考えると、彼は心の中を掻きむしられるような、激しい焦燥を感じた。彼とても、臣下のすべてから偽りの勝利を奪っているのではない。否、その中の多くの者には正当に勝っているのだ。それだのに<persName ref="#onoda-ukon">右近</persName>や<persName ref="#oshima-satayu">左太夫</persName>などの<ruby><rb>不埒者</rb><rt>ふらちもの</rt></ruby>のいるために、自分の勝利が、すべて不純の色彩を帯びるに至ったのだと思うと、彼は今<persName ref="#onoda-ukon">右近</persName>と<persName ref="#oshima-satayu">左太夫</persName>とに対し、旺然たる憎悪を感じ始めたのである。</p>
+        <p>が、そればかりではなかった。こうなると、つい三月ばかり前に、<placeName ref="#osaka">大坂</placeName>の戦場に立てた偉勲さえ、なんだか怪しげな正体の分からぬもののように、<persName ref="#tadanao">忠直卿</persName>の心の中に思われた。彼が、今まで誇りとしていた日本<persName ref="#hankai">樊噲</persName>という称呼さえ、なんだか人をばかにしたような、誇張を伴うているようにさえ思われ出した。家臣どもから、いい加減に扱われていた自分は、お祖父様からも手軽に操られているのではないかと思うと、<persName ref="#tadanao">忠直卿</persName>の瞳には、初めて不覚の涙が滲み始めた。</p>
+        <p>三</p>
+        <p>無礼講の酒宴にぐたぐたに酔ってしまった若武士たちは、九つのお<ruby><rb>土圭</rb><rt>とけい</rt></ruby>が鳴るのを合図に総立ちになって退出しようとすると、急にお傍用人が奥殿から駆けつけて来た。</p>
+        <p>「各々方、静まられい！　殿の仰せらるるには、明日は犬追物のお催しがあるべきはずのところ、急に御変改があって、明日も、今日同様、槍術の大仕合いを催せらるる、時刻と番組とはすべて今日に変らぬとの仰せじゃ」と、双手を挙げて、大声に触れ回った。</p>
+        <p>若武士の中には「やれやれ明日もか」と思う者もあった。今日の勝利をもう一度繰返すのかと、<ruby><rb>北叟笑</rb><rt>ほくそえ</rt></ruby>む者もあった。多くの者は、酒を飲んだ後の勇ましい元気で、</p>
+        <p>「毎日続こうとも結構じゃ。明日もまたお振舞酒に思い切り酔うことができる」と、勇み立った。</p>
+        <p>その翌日は、昨日と等しく、城中の兵法座敷が美しく掃き浄められて、紅白の<ruby><rb>幔幕</rb><rt>まんまく</rt></ruby>が張り渡され、上座には<persName ref="#tadanao">忠直卿</persName>が昨日と同様に座を占めたが、始終下唇を噛むばかりでなく、瞳が爛々として燃えていた。</p>
+        <p>勝負は、昨日とほとんど同様な情勢で進展した。が、昨日の勝敗が皆の心にまざまざと残っているので、組合せの多くは一方にとっては雪辱戦であったから、掛け声は昨日にもまして激しかった。</p>
+        <p>紅軍は、昨日よりもさらに旗色が悪かった。大将の<persName ref="#tadanao">忠直卿</persName>が出られた時には、白軍には大将、副将をはじめ、六人の不戦者があった。</p>
+        <p>見物の家中の者どもが不思議に思うほど、<persName ref="#tadanao">忠直卿</persName>は興奮していた。タンポの付いた大身の槍を、熱に浮された男のようにみだりに打ち振った。最初の二人は腫れ物にでも触るように、<ruby><rb>恟々</rb><rt>きょうきょう</rt></ruby>として立ち向った。が、主君の激しい槍先にたちまちに突き<ruby><rb>竦</rb><rt>すく</rt></ruby>められて平伏してしまう。次の二人も、主君の凄まじい気配に怖じ恐れて、ただ型ばかりに槍を振っただけであった。</p>
+        <p>五人目に現れたのは、<persName ref="#oshima-satayu">大島左太夫</persName>であった。彼は今日の<persName ref="#tadanao">忠直卿</persName>の常軌を逸したとも思われる振舞いについて、微かながら<ruby><rb>杞憂</rb><rt>きゆう</rt></ruby>を懐く一人であった。無論、彼は自分の主君が、自分たちの昨夜の立話を立聞きした当の本人であろうとは、夢にも思っていなかった。が、昨夜、夜更けの庭に耳にした咳払の主が、主君に自分たちを<ruby><rb>讒</rb><rt>ざん</rt></ruby>したのではあるまいかという微かな懸念は持っていた。彼は常よりも更に粛然として、主君の前に頭を下げた。</p>
+        <p>「<persName ref="#oshima-satayu">左太夫</persName>か！」と、<persName ref="#tadanao">忠直卿</persName>はある落ち着きを、示そうと努めたらしいが、その声は妙に上ずっていた。</p>
+        <p>「<persName ref="#oshima-satayu">左太夫</persName>！　槍といい剣といい、正真の腕前は真槍真剣でなければ分からない！　タンポの付いた稽古槍の仕合は、所詮は偽りの仕合じゃ。負けても傷が付かぬとなれば、仕儀によっては、負けても差支えがないわけとなる！　<persName ref="#tadanao">忠直</persName>は偽りの仕合にはもう飽いている。<placeName ref="#osaka">大坂</placeName>表において手馴れた真槍をもって立ち向うほどに、そちも真槍をもって来い！　主と思うに及ばぬ。隙があらば遠慮いたさずに突け！」</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は上ずって、言葉の末が震えた。<persName ref="#oshima-satayu">左太夫</persName>は色を変えた。<persName ref="#oshima-satayu">左太夫</persName>の後に控えている<persName ref="#onoda-ukon">小野田右近</persName>も、<persName ref="#oshima-satayu">左太夫</persName>と同じく色を変えた。</p>
+        <p>が、見物席にいる家中の者は、<persName ref="#tadanao">忠直卿</persName>の心のうちを解するに苦しんだ。殿御狂気と<ruby><rb>怖気</rb><rt>おじけ</rt></ruby>をふるうものが多かった。<persName ref="#tadanao">忠直卿</persName>は、これまでは癇癖こそあったが、平常、至極闊達であり、やや粗暴のきらいこそあったが、非道無残な振舞いは寸毫もなかったので、今日の<persName ref="#tadanao">忠直卿</persName>の振舞いを見て、家中の者が色を変じたのも無理ではなかった。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>が今日真槍を手にしたのは、<persName ref="#oshima-satayu">左太夫</persName>、<persName ref="#onoda-ukon">右近</persName>に対する消し難い憎しみから出たとはいえ、一つには自分の正真の腕前を知りたいという希望もあった。真槍で立ち向うならば、彼らも無下に負けはしまい、秘術を尽くして立ち向うに違いない。さすれば自分の真の力量も分かる。もしそのために、自分が手を負うことがあっても、偽りの勝利に狂喜しているよりも、どれほど気持がよいか知れぬと、心のうちで思った。</p>
+        <p>「それ！　真槍の用意いたせ」と、<persName ref="#tadanao">忠直卿</persName>が命ずると、かねて用意してあったのだろう、小姓が二人、各々一本の大身の槍を重たそうにもたげて、<persName ref="#tadanao">忠直卿</persName>主従の間に持ち出した。</p>
+        <p>「それ！　<persName ref="#oshima-satayu">左太夫</persName>用意せい！」といいながら、<persName ref="#tadanao">忠直卿</persName>は手馴れた三間柄の長槍の穂鞘を払った。</p>
+        <p>槍鍛冶の名手、<persName ref="#bingo-sadakane"><ruby><rb>備後貞包</rb><rt>びんごさだかね</rt></ruby></persName>の鍛えた七寸に近い鋒先から<ruby><rb>迸</rb><rt>ほとばし</rt></ruby>る殺気が、一座の人々の心を冷たく圧した。</p>
+        <p>今まで、じっとして主君<persName ref="#tadanao">忠直</persName>の振舞いを看過していた国老の<persName ref="#honda-tosa">本多土佐</persName>は、主君が鋒先を払われるや否や突如として<persName ref="#tadanao">忠直卿</persName>の御前に出でた。</p>
+        <p>「殿！　お気が狂わせられたか。大切の御身をもって、みだりに<ruby><rb>剣戟</rb><rt>けんげき</rt></ruby>を<ruby><rb>弄</rb><rt>もてあそ</rt></ruby>ばれ家臣の者を傷つけられては、公儀に聞えても容易ならぬ儀でござる。平にお止り下されい」と、老眼をしばたたきながら、必死になって申し上げた。</p>
+        <p>「爺か！　止めだて無用じゃ。今日の真槍の仕合は、<persName ref="#tadanao">忠直</persName>六十七万石の家国に<ruby><rb>易</rb><rt>か</rt></ruby>えてもと、思い立った一儀じゃ。止めだて一切無用じゃ」と、<persName ref="#tadanao">忠直卿</persName>は凜然といい放った。そこには秋霜のごとく犯しがたき威厳が伴った。こうした場合、これまでも<persName ref="#tadanao">忠直卿</persName>の意志は絶対のものであった。<persName ref="#honda-tosa">土佐</persName>は口を<ruby><rb>緘</rb><rt>つぐ</rt></ruby>んだまま、悄然として引き退いた。</p>
+        <p><persName ref="#oshima-satayu">左太夫</persName>は、もう先刻から十分に覚悟をしていた。昨夜の立話が殿のお耳に入ったための御成敗かと思えば、彼にはなんとも文句のいいようはなかった。それは家来として当然受くべき成敗であった。それを、かかる真槍仕合にかこつけての成敗かと思えば、彼はそこに<persName ref="#tadanao">忠直卿</persName>の好意をさえ感ずるように思った。彼は主君の真槍に貫かれて潔く死にたいと思った。</p>
+        <p>「<persName ref="#oshima-satayu">左太夫</persName>、いかにも真槍をもって、お相手をいたしまする」と、思い切っていった。見物席に<persName ref="#oshima-satayu">左太夫</persName>の不遜に対する叱責の声が洩れた。<persName ref="#tadanao">忠直卿</persName>は苦笑した。</p>
+        <p>「それでこそ、<persName ref="#tadanao">忠直</persName>の家臣じゃ。主と思うな。隙があれば、遠慮いたさず突け！」</p>
+        <p>こういいながら、<persName ref="#tadanao">忠直卿</persName>は槍を<ruby><rb>扱</rb><rt>しご</rt></ruby>いて二、三間後へ退りながら、位を取られた。</p>
+        <p><persName ref="#oshima-satayu">左太夫</persName>も、真槍の鞘を払い、</p>
+        <p>「御免！」と叫びながら主君に立ち向った。</p>
+        <p>一座の者は、凄まじい殺気に閉じられて、身の毛もよだち、息を詰めて、ただ茫然と主従の決闘を見守るばかりであった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、自分の本当の力量を如実にさえ知ることができれば、思い残すことはないとさえ、思い込んでいた。従って国主という自覚もなく、相手が臣下であるという考えもなく、ただ勇気凜然として立ち向われた。</p>
+        <p>が、<persName ref="#oshima-satayu">左太夫</persName>は、最初から覚悟をきめていた。三合ばかり槍を合すと、彼は<persName ref="#tadanao">忠直卿</persName>の槍を左の高股に受けて、どうと地響き打たせて、のけ様に倒れた。</p>
+        <p>見物席の人々は一斉に深い溜息を洩した。<persName ref="#oshima-satayu">左太夫</persName>の傷ついた身体は、同僚の誰彼によってたちまち運び去られた。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>の心には、勝利の快感は少しもなかった。<persName ref="#oshima-satayu">左太夫</persName>の負けが、昨日と同じく意識しての負けであることが、まざまざと分かったので、<persName ref="#tadanao">忠直卿</persName>の心は昨夜にもまして淋しかった。<persName ref="#oshima-satayu">左太夫</persName>めは、命を賭してまで、偽りの勝利を主君にくらわせているのだと思うと、<persName ref="#tadanao">忠直卿</persName>の心の焦躁と淋しさと頼りなさは、さらに底深く植えつけられた。<persName ref="#tadanao">忠直卿</persName>は、自分の身を危険に置いても、臣下の身体を犠牲にしても、なお本当のことが知りがたい自分の身を恨んだ。</p>
+        <p><persName ref="#oshima-satayu">左太夫</persName>が倒れると、<persName ref="#onoda-ukon">右近</persName>は少しも<ruby><rb>悪怯</rb><rt>わるび</rt></ruby>れた様子もなく、蒼白な顔に覚悟の瞳を輝かしながら、<persName ref="#oshima-satayu">左太夫</persName>の取り落した槍を<ruby><rb>携</rb><rt>ひっさ</rt></ruby>げてそこに立った。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、<persName ref="#onoda-ukon">右近</persName>め、昨夜あのように、思いきった言葉を吐いた男であるから、必死の手向いをするに相違ないと、消えかかろうとする勇気を<ruby><rb>鼓</rb><rt>こ</rt></ruby>して立ち向かった。</p>
+        <p>が、この男も<persName ref="#oshima-satayu">左太夫</persName>と同じく、自分の罪を深く心のうちに感じていた。そして、潔く主君の長槍に貫かれて、自分の罪を謝そうとしていた。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、五、六合立ち合っているうちに、相手の<persName ref="#onoda-ukon">右近</persName>が、急所というべき胸の辺へ、幾度も隙を作るのを見た。この男も、自分の命を捨ててまで主君を<ruby><rb>欺</rb><rt>あざむ</rt></ruby>き終ろうとしているのだと思うと、<persName ref="#tadanao">忠直卿</persName>は不快な淋しさに襲われて来た。そして、相手にうまうまと乗せられて勝利を得るのが、ばかばかしくなって来た。</p>
+        <p>が、<persName ref="#onoda-ukon">右近</persName>は一刻も早く主君の槍先に貫かれたいと思ったらしく、<persName ref="#tadanao">忠直卿</persName>が突き出す槍先に、故意に身を当てるようにして、右の肩口をぐさと貫かれてしまった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、見事に昨夜の欝憤を晴らした。が、それは彼の心に、新しい淋しさを植えつけたに過ぎなかった。<persName ref="#oshima-satayu">左太夫</persName>も<persName ref="#onoda-ukon">右近</persName>も、自分の命を賭してまで、彼らの嘘を守ってしまったことである。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、その夜遅く、傷のまま自分の屋敷に運ばれた<persName ref="#onoda-ukon">右近</persName>と<persName ref="#oshima-satayu">左太夫</persName>との二人が、時刻を前後して腹を<ruby><rb>割</rb><rt>さ</rt></ruby>いて死んだという知らせを聞いて、暗然たる心持にならずにはいられなかった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、つくづく考えた。自分と彼らとの間には、虚偽の膜がかかっている。その膜を、その偽りの膜を彼らは必死になって支えているのだ。その偽りは、浮ついた偽りでなく、必死の懸命の偽りである。<persName ref="#tadanao">忠直卿</persName>は、今日真槍をもって、その偽りの膜を必死になって突き破ろうとしたのだが、その破れは、彼らの血によってたちまち修繕されてしまった。自分と家来との間には、依然としてその膜がかかっている。その膜の向うでは、人間が人間らしく本当に<ruby><rb>交際</rb><rt>つきあ</rt></ruby>っている。が、彼らが一旦自分に向うとなると、皆その膜を頭から<ruby><rb>被</rb><rt>かぶ</rt></ruby>っている。<persName ref="#tadanao">忠直卿</persName>は自分一人、膜のこちらに取り残されていることを思い出すと、<ruby><rb>苛々</rb><rt>いらいら</rt></ruby>した淋しさが猛然として自分の心身を襲って来るのをおぼえた。</p>
+        <p>四</p>
+        <p>真槍の仕合があって以来、殿の<ruby><rb>御癇癖</rb><rt>ごかんぺき</rt></ruby>が募ったという警報が、一城の人心をして、<persName ref="#tadanao">忠直卿</persName>に対して<ruby><rb>恟々</rb><rt>きょうきょう</rt></ruby>たらしめた。殿の御前だというと、小姓たちは瞳を据え息を凝らして、微動さえおろそかにはしなかった。近習の者も、一足進み一足退くにも儀礼を正しゅうして、<ruby><rb>微瑕</rb><rt>びか</rt></ruby>だに犯さぬことを念とした。君臣の間に多少は存在していた心安さが跡を滅して、君前には粛殺たる気が漂った。家臣たちは君前から退くと、今までにない心身の疲労を覚えた。</p>
+        <p>しかし、君臣の間がこうして<ruby><rb>荒</rb><rt>すさ</rt></ruby>み始めようとするのに気がついたのは、決して家来の方ばかりではなかった。<persName ref="#tadanao">忠直卿</persName>は、ある日近習の一人が、自分に家老たちからの書状を捧げるとて、四、五段の彼方からいざり寄ろうとするのを見て、</p>
+        <p>「ずっと遠慮いたさず前へ出よ！　さような礼儀には及ばぬぞ」といった。が、それは好意から出た注意というよりも、焦燥から出た叱責に近かった。侍臣は、主君の言葉によって、元の心安さに帰ろうとした。が、そうした意識を伴った心安さの奥には、ごつごつとした骨があった。</p>
+        <p>真槍の仕合以来、<persName ref="#tadanao">忠直卿</persName>は忘れたかのように、武術の稽古から身を遠ざけた。毎日日課のように続けていた武術仕合を中止したばかりでなく、木刀を取り、稽古槍を手にすることさえなくなった。</p>
+        <p>威張ってはいたが寛闊で、乱暴ではあったが無邪気な青年君主であった<persName ref="#tadanao">忠直卿</persName>は、ふっつりと木刀や半弓を手にしなくなった代りに、酒杯を手にする日が多くなった。少年時代から豪酒の素質を持ってはいたが、酒に淫することなどは、決してなかったのが、今では大杯をしきりに傾けて、乱酒の<ruby><rb>萌</rb><rt>きざし</rt></ruby>がようやく現れた。</p>
+        <p>ある夜の酒宴の席であった。<persName ref="#tadanao">忠直卿</persName>の機嫌がいつになく晴々しかった。すると、彼にとっては第一の寵臣である<persName ref="#masuda-kannosuke"><ruby><rb>増田勘之介</rb><rt>ますだかんのすけ</rt></ruby></persName>という小姓が、彼の大杯になみなみと酌をしながら、</p>
+        <p>「殿には、何故この頃兵法座敷には渡らされませぬか。先頃のお手柄にちと御慢心遊ばして、御怠慢とお見受け申しまする」といった。彼は、こういうことによって、主君に対する親しみを十分見せたつもりであった。</p>
+        <p>すると、思いがけもなく、<persName ref="#tadanao">忠直卿</persName>の顔は急に色を変じた。つと、そばにあった杯盤を、取るよりも早く、<persName ref="#masuda-kannosuke">勘之介</persName>の面上を目がけて<ruby><rb>発矢</rb><rt>はっし</rt></ruby>とばかりに投げ付けた。主君から、予期せざる暴行を受けて、<persName ref="#masuda-kannosuke">勘之介</persName>ははっと色を変じたが、忠義一途の彼は、決して身体をかわさなかった。彼はその杯盤を真向に受けて、白い面から血を流しながら、その場に平伏した。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、物をもいわず立ち上ると、そのまま奥殿へ入ってしまった。同僚の誰彼が駆け寄って慰めながら、<persName ref="#masuda-kannosuke">勘之介</persName>を引き起こした。</p>
+        <p><persName ref="#masuda-kannosuke">勘之介</persName>は、その日、<ruby><rb>病</rb><rt>やまい</rt></ruby>と称して宿へ下ったが、その夜の明けるを待たず切腹した。</p>
+        <p><persName ref="#tadanao">忠直</persName>脚は、それを聞くと、ただ淋しく苦笑したばかりであった。</p>
+        <p>そのことがあってから、十日ばかりも経った頃だった。<persName ref="#tadanao">忠直卿</persName>は、老家老の<persName ref="#oyama-tango">小山<ruby><rb>丹後</rb><rt>たんご</rt></ruby></persName>と碁を囲んでいた。老人と<persName ref="#tadanao">忠直卿</persName>とは、相碁であった。が、二、三年来、老人はだんだん負け越すことが多かった。その日も、<persName ref="#oyama-tango">丹後</persName>は<persName ref="#tadanao">忠直卿</persName>のために、三回ばかり続けざまに敗れた。すると、老人は人の好きそうな微笑を示しながら、</p>
+        <p>「殿は近頃、いかい御上達じゃ。老人ではとてもお相手がなり申さぬわ」といった。</p>
+        <p>と、今まで晴れやかに続けざまの快勝を享楽していたらしい<persName ref="#tadanao">忠直卿</persName>の面を、暗欝の陰影が<ruby><rb>掠</rb><rt>かす</rt></ruby>めたかと思うと、彼はいきなり立ち上って、二人の間に置かれている碁盤を足蹴にした。盤上に並んでいた黒白の石は跳び散って、その二、三は<persName ref="#oyama-tango">丹後</persName>の顔を打った。</p>
+        <p><persName ref="#oyama-tango">丹後</persName>は勝負に勝ちながら、怒り出した主君の心を解するに苦しんだ。彼は、咄瑳に立ち去ろうとする<persName ref="#tadanao">忠直卿</persName>の袴の裾を捕えながら、</p>
+        <p>「いかが遊ばされた！　殿には御乱心か。どのような御趣意あって、<persName ref="#oyama-tango">丹後</persName>めにかような恥辱を与えらるる？」と、狂気のごとくに叫んだ。一徹な老人の心には、<persName ref="#tadanao">忠直卿</persName>の不当な仕打ちに対する怒りが、炎の如く燃えた。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>は、老人の怒りを少しも介意せず、「えい！」と袴を捕えた手を振り放しながら、つっと奥へ去ってしまった。</p>
+        <p>老人は、幼年時代から手塩にかけて守り育てた主君から、理不尽な辱しめを受け、老の目に涙を流しながら、口惜しがった。彼は、故中納言<persName ref="#hideyasu">秀康卿</persName>が、ありし世の寛仁大度な行跡を思い起しながら、永らえて恥を得た身を悔いた。正直な<persName ref="#oyama-tango">丹後</persName>は、盤面に向って<ruby><rb>追従</rb><rt>ついしょう</rt></ruby>負けをするような卑劣な心は、毛頭持っていなかった。</p>
+        <p>が、もう<persName ref="#tadanao">忠直卿</persName>の心には、家臣の一挙一動は、すべて一色にしか映らなくなっていた。</p>
+        <p>老人は、その日家へ帰ると、式服を着て礼を正し、皺腹をかき切って、惜しからぬ身を捨ててしまった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>御乱行という噂が、ようやく<ruby><rb>封境</rb><rt>ほうきょう</rt></ruby>の内外に伝わるようになった。</p>
+        <p>勝気の<persName ref="#tadanao">忠直卿</persName>は、これまでは、他人に対する優越感を享受するために、よく勝負事を試みたが、このことがあって以来は、その方面にも、ふっつりと手を出さなくなった。</p>
+        <p>こうなると、<persName ref="#tadanao">忠直卿</persName>の生活がだんだん<ruby><rb>荒</rb><rt>すさ</rt></ruby>んで行くのも無理はなかった。城中にあっては、なすことのないままに酒食に耽り、<ruby><rb>色</rb><rt>いろ</rt></ruby>を漁った。そして、城外に出ては、狩猟にのみ日を暮した。野に鳥を追い、山に獣を狩り立てた。さすがに鳥獣は、国主の出猟であるがために、<persName ref="#tadanao">忠直卿</persName>の<ruby><rb>矢面</rb><rt>やおもて</rt></ruby>に好んで飛び出すものはなかった。人間の世界から離れ、こうした自然界に対する時、<persName ref="#tadanao">忠直卿</persName>は自分を囲う偽りの膜から身を脱出し得たように、すがすがしい心持がした。</p>
+        <p>五</p>
+        <p>これまでの<persName ref="#tadanao">忠直卿</persName>は、国老たちのいうことは、何かにつけてよく聞かれた。まだ<persName ref="#tadanao">長吉丸</persName>といっていた十三歳の昔、父<persName ref="#hideyasu">秀康卿</persName>の臨終の床に呼ばれて、「父の亡からん後は、国老どもの申すことを父が申すことと心得てよく聞かれよ」と<ruby><rb>諭</rb><rt>さと</rt></ruby>されたことを、大事に守っていた。</p>
+        <p>が、この頃の彼は、国政を聞く時にも、すべてを<ruby><rb>僻</rb><rt>ひが</rt></ruby>んで解釈した。家老たちが、ある男を推薦して褒め立てると、彼はその男が食わせ者のように思われて、その男を用うることを、意地にかかって拒んだ。国老たちが、ある男の行跡の非難を申し上げて、閉門の至当であることを主張すると、<persName ref="#tadanao">忠直卿</persName>は、その男が硬直な士であるように思われて、いっかな閉門を命ずることを許さなかった。</p>
+        <p><placeName ref="#echizen">越前</placeName>領一帯、その年は近年希な凶作で、百姓の困苦一方ではなかった。家老たちは、袖を連ねて<persName ref="#tadanao">忠直卿</persName>の御前に<ruby><rb>出</rb><rt>い</rt></ruby>で、年貢米の一部免除を願い<ruby><rb>出</rb><rt>い</rt></ruby>でた。が、<persName ref="#tadanao">忠直卿</persName>は、家老たちが口を<ruby><rb>酸</rb><rt>す</rt></ruby>っぱくして説けば説くほど、家老たちの建言を採用するのが厭になった。彼自身、心のうちでは百姓に相当な同情を懐きながら、家老たちのいいままになるのが不快であった。そして、家老たちがくどくどと説くのを聞き流しながら、</p>
+        <p>「ならぬ！　ならぬと申せば、しかと相ならぬぞ」と、怒鳴りつけた。なんのために拒んだのか、彼自身にさえ分からなかった。</p>
+        <p>こうした感情の食い違いが、主従の間に深くなるにつれ、国政日に<ruby><rb>荒</rb><rt>すさ</rt></ruby>んで、<placeName ref="#echizen">越前</placeName>侯乱行の噂は<placeName ref="#edo">江戸</placeName>の<ruby><rb>柳営</rb><rt>りゅうえい</rt></ruby>にさえ達した。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>のかかる心持は、彼のもっと根本的な生活の方へも、だんだん食い入って行った。</p>
+        <p>ある夜のことであった。彼は宵から奥殿にたて籠って、愛妾たちを前にしながら、しきりに大杯を重ねていた。</p>
+        <p><placeName ref="#kyoto">京</placeName>からはるばると召し下した<persName ref="#kinuno">絹野</persName>という美女が、この頃の<persName ref="#tadanao">忠直卿</persName>の寵幸を身一つにあつめていた。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、その夜は暮れて間もない六つ半刻から九つに近い深更まで、酒を飲み続けている。が、酒を飲まぬ愛妾たちは、彼の杯に酒を注ぐという単調な仕事を、幾回となく繰り返しているだけである。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、ふと酔眼をみひらいて、彼に侍座している愛妾の<persName ref="#kinuno">絹野</persName>を見た。ところが、その女は連夜の酒宴に疲れはてたのだろう。主君の御前ということもつい失念してしまったと見え、その二重瞼の美しい目を半眼に閉じながら、うつらうつらと仮睡に落ちようとしている。</p>
+        <p>じっと、その面を見ていると、<persName ref="#tadanao">忠直卿</persName>は、また更に新しい疑惑に囚われてしまった。ただ、主君という絶大な権力者のために身を委して、<ruby><rb>朝暮</rb><rt>あけくれ</rt></ruby>自分の意志を少しも働かさず、ただ<ruby><rb>傀儡</rb><rt>かいらい</rt></ruby>のように扱われている女の淋しさが、その不覚な仮睡のうちにまざまざと現れているように思われた。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は思った。この女も、自分に愛があるというわけでは少しもないのだ。この女の<ruby><rb>嫣然</rb><rt>えんぜん</rt></ruby>たる姿態や、妖艶な媚は皆<ruby><rb>上部</rb><rt>うわべ</rt></ruby>ばかりの技巧なのだ。ただ、大金で<ruby><rb>退引</rb><rt>のっぴき</rt></ruby>ならず身を<ruby><rb>購</rb><rt>あがな</rt></ruby>われ、国主という大権力者の前に引き据えられて是非もなく、できるだけその権力者の歓心を得ようという、切羽詰まった最後の逃げ道に過ぎないのだ。</p>
+        <p>が、この女が自分を愛していないばかりでなく、今まで自分を心から愛した女が一人でもあっただろうかと、<persName ref="#tadanao">忠直卿</persName>は考えた。</p>
+        <p>彼は今まで、人間同士の人情を少しも味わわずに来たことに、この頃ようやく気がつき始めた。</p>
+        <p>彼は、友人同士の情を、味わったことさえなかった。幼年時代から、同年輩の小姓を自分の周囲に幾人となく見出した。が、彼らは<persName ref="#tadanao">忠直卿</persName>と友人として交わったのではない。ただ服従をしただけである。<persName ref="#tadanao">忠直卿</persName>は、彼らを愛した。が、彼らは決してその主君を愛し返しはしなかった。ただ義務感情から服従しただけである。</p>
+        <p>友情はともかく、異性との愛は、どうであっただろう、彼は、少年時代から、美しい女性を幾人となく自分の周囲に支配した。<persName ref="#tadanao">忠直卿</persName>は彼らを愛した。が、彼らの中の何人が彼を愛し返しただろう。<persName ref="#tadanao">忠直卿</persName>が愛しても、彼らは愛し返さなかった。ただ、<ruby><rb>唯々</rb><rt>いい</rt></ruby>として服従を提供しただけである。彼は、今も自分の周囲に多くの人間を支配している。が、彼らは<persName ref="#tadanao">忠直卿</persName>に対して、人間としての人情の代りに、服従を提供しているだけである。</p>
+        <p>考えてみると、<persName ref="#tadanao">忠直卿</persName>は恋愛の代用としても服従を受け、友情の代りにも服従を受け、親切の代りにも服従を受けていた。無論、その中には人情から動いている本当の恋愛もあり、友情もあり、純な親切もあったかも知れなかった。が、<persName ref="#tadanao">忠直卿</persName>の今の心持から見れば、それが混沌として、一様に服従の二字によって<ruby><rb>掩</rb><rt>おお</rt></ruby>われて見える。</p>
+        <p>人情の世界から一段高い所に放り上げられ、大勢の臣下の中央にありながら、索莫たる孤独を感じているのが、わが<persName ref="#tadanao">忠直卿</persName>であった。</p>
+        <p>こうした意識が嵩ずるにつれ、彼の奥殿における生活は、砂を噛むように落莫たるものになって来た。</p>
+        <p>彼は、今まで自分の愛した女の愛が不純であったことが、もう見え透くように思われた。</p>
+        <p>自分が、心を掛けるとどの女も、<ruby><rb>唯々諾々</rb><rt>いいだくだく</rt></ruby>として自分の心のままに従った。が、それは自分を愛しているのではない、ただ臣下として、君主の前に義務を尽くしているのに過ぎなかった。彼は、恋愛の代りに、義務や服従を喫するのに、飽き果ててしまっていた。</p>
+        <p>彼の生活が<ruby><rb>荒</rb><rt>すさ</rt></ruby>むに従って、彼は単なる<ruby><rb>傀儡</rb><rt>かいらい</rt></ruby>であるような異性の代りに、もっと弾力のある女性を愛したいと思った。彼を心から愛し返さなくてもいいから、せめては人間らしい反抗を示すような異性を愛したいと思った。</p>
+        <p>そのために、彼は家中の高禄の士の娘を、後房へ連れて来させた。が、彼らも<persName ref="#tadanao">忠直卿</persName>のいうことを、殿の仰せとばかり、ただ不可抗力の命令のように、なんの反抗を示さずに忍従した。彼らは霊験あらたかな神の前に捧げられた人身御供のように、純な犠牲的な感情をもって<persName ref="#tadanao">忠直卿</persName>に対していた。<persName ref="#tadanao">忠直卿</persName>は、その女たちと相対していても、少しも淫蕩な心持にはなれなかった。</p>
+        <p>彼の物足りなさは、なお続いた。彼は夫の定まっている女なら、少しは反抗もするだろうと思った。彼は、命じて<ruby><rb>許婚</rb><rt>いいなずけ</rt></ruby>の夫ある娘を物色した。が、そうした女も、<persName ref="#tadanao">忠直卿</persName>の予期とは反して、主君の意志を絶対のものにして、<persName ref="#tadanao">忠直卿</persName>を人間以上のものに祭り上げてしまった。</p>
+        <p>もうこの頃から、<persName ref="#tadanao">忠直卿</persName>の<ruby><rb>放埒</rb><rt>ほうらつ</rt></ruby>を非難する声が、家中の士の間にさえ起った。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>の乱行は、なお止まなかった。許婚の夫ある娘を得て、少しも慰まなかった彼は、さらに非道な所業を犯した。それは、家中の女房で艶名のあるものを<ruby><rb>私</rb><rt>ひそか</rt></ruby>に探らしめて、その中の三名を、不時に城中に召し寄せたまま、帰さなかったことである。</p>
+        <p>主君の御乱行ここに極まるとさえ、嘆くものがあった。</p>
+        <p>夫からの数度の嘆願にかかわらず、女房は返されなかった。重臣は、人倫の道に<ruby><rb>悖</rb><rt>もと</rt></ruby>る所業として<persName ref="#tadanao">忠直卿</persName>を<ruby><rb>強諫</rb><rt>きょうかん</rt></ruby>した。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>は、重臣が諫むれば諫むるほど、自分の所業に興味を覚ゆるに至った。</p>
+        <p>女房を奪われた三人の家臣のうち、二人まで<persName ref="#tadanao">忠直卿</persName>の非道な企ての真相を知ると、君臣の義もこれまでと思ったと見え、いい合わせたごとく、相続いて割腹した。</p>
+        <p>横目付からその届出があると、<persName ref="#tadanao">忠直卿</persName>は手にしていた杯を、ぐっと飲み干されてから、微かな苦笑を洩されたまま、なんとも言葉はなかった。家中一同の同情は、<ruby><rb>翕然</rb><rt>きゅうぜん</rt></ruby>として死んだ二人の武士の上に注がれた。「さすがは武士じゃ。見事な最期じゃ」と、褒めそやす者さえあった。が、人々はこの二人を死せしめた原因を、ただ不可抗力な天災だと考えていた。一種の避くべからざる運命のように思っていた。</p>
+        <p>二人が前後して死んでみると、家中の人々の興味は、妻を奪われながら、只一人生き残っている<persName ref="#asamizu-yoshiro"><ruby><rb>浅水与四郎</rb><rt>あさみずよしろう</rt></ruby></persName>の身に集っていた。</p>
+        <p>そして、妻を奪われながら、腹を得切らぬその男を、臆病者として非難するものさえあった。</p>
+        <p>が、四、五日してから、その男は飄然として登城した、そして、<persName ref="#tadanao">忠直卿</persName>にお目通りを願いたいと目付まで申し<ruby><rb>出</rb><rt>い</rt></ruby>でた。が、目付は、<persName ref="#asamizu-yoshiro">浅水与四郎</persName>をいろいろに<ruby><rb>宥</rb><rt>なだ</rt></ruby>め<ruby><rb>賺</rb><rt>すか</rt></ruby>そうとした。</p>
+        <p>「なんと申しても、相手は主君じゃ。お身が今、お目通りに出たら必定お手打ちじゃ。殿の御非道は、<ruby><rb>我人</rb><rt>われひと</rt></ruby>共によく分かっている、がなんと申しても相手は主君じゃ」</p>
+        <p>が、<persName ref="#asamizu-yoshiro">与四郎</persName>は断然としていい放った。</p>
+        <p>「たといいかがなろうとも、お目通りを願うのじゃ。たとえ身は<ruby><rb>八劈</rb><rt>やつざ</rt></ruby>きにされようとも、念ないことじゃ。是非お取次ぎ下されい」と、必死の色を示した。</p>
+        <p>目付は、仕方なく白書院に詰めている家老の一人へ、その嘆願を伝えた。それを聞いた老年の家老は、「<persName ref="#asamizu-yoshiro">与四郎</persName>めは、血迷うたと見えるな。主君の御無理は分かっていることじゃが、この場合腹をかっ切って<ruby><rb>死諫</rb><rt>しかん</rt></ruby>を進めるのが、臣下としての本分じゃ。他の二人はよう心得ているに、<persName ref="#asamizu-yoshiro">与四郎</persName>めは女房を取られたので血迷うたと見える。かほどの不覚人とは思わなかったに」と囁いた。</p>
+        <p>家老は、なおブツブツと口小言をいいながら、小姓を呼んで、そのことを渋々ながら<persName ref="#tadanao">忠直卿</persName>の耳に伝えしめた。</p>
+        <p>すると、<persName ref="#tadanao">忠直卿</persName>は、思いのほかに機嫌斜めならずであった。</p>
+        <p>「ははは、<persName ref="#asamizu-yoshiro">与四郎</persName>めが、参ったか。よくぞ参りおった。すぐ通せ！　目通り許すぞ」と、呼ばれたが、この頃絶えて見えなかった晴れがましい微笑が、頬の辺に漂うた。</p>
+        <p>しばらくすると、<persName ref="#tadanao">忠直卿</persName>の目の前に、病犬のように<ruby><rb>呆</rb><rt>ほう</rt></ruby>けた<persName ref="#asamizu-yoshiro">与四郎</persName>の姿が現れた。数日来の心労に疲れたと見え、色が蒼ざめて、顔中にどことなく殺気が漂っている。そして、その瞳の中には、二筋も三筋も血を引いている。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は生来初めて、自分の目の前に、自分の家臣が本当の感情を隠さず、顔に現しているのを見た。</p>
+        <p>「<persName ref="#asamizu-yoshiro">与四郎</persName>か！　近う進め！」と、<persName ref="#tadanao">忠直卿</persName>は温顔をもってこういわれた。なんだか、自分が人間として他の人間に対しているように思って、<persName ref="#asamizu-yoshiro">与四郎</persName>に対して、一種の懐しさをさえ覚えた。主従の境を隔つる膜が除かれて、ただ人間同士として、向い合っているように思われた。</p>
+        <p><persName ref="#asamizu-yoshiro">与四郎</persName>は、畳の上を三反ばかり滑り寄ると、<placeName ref="#jigoku">地獄</placeName>の底からでも、洩れるような呻き声を出した。</p>
+        <p>「殿！　主従の道も、人倫の大道よりは小事でござるぞ。妻を奪われましたお恨み、かくのごとく申し上げまするぞ」と、いうかと思うと、<persName ref="#asamizu-yoshiro">与四郎</persName>は飛燕のごとく身を躍らせて、<persName ref="#tadanao">忠直卿</persName>に飛びかかった。その右の手には、早くも<ruby><rb>匕首</rb><rt>あいくち</rt></ruby>が光っていた。が、<persName ref="#asamizu-yoshiro">与四郎</persName>は、軽捷な<persName ref="#tadanao">忠直卿</persName>にわけもなく<ruby><rb>利腕</rb><rt>ききうで</rt></ruby>を取られて、そこに捻じ伏せられてしまった。近習の一人は、気を利かせたつもりで、小姓の持っていた<persName ref="#tadanao">忠直卿</persName>の<ruby><rb>佩刀</rb><rt>はいとう</rt></ruby>を彼に手渡そうとした。が、<persName ref="#tadanao">忠直卿</persName>はかえってその男を<ruby><rb>斥</rb><rt>しりぞ</rt></ruby>けた。</p>
+        <p>「<persName ref="#asamizu-yoshiro">与四郎</persName>！　さすがに<ruby><rb>其方</rb><rt>そち</rt></ruby>は武士じゃのう」と、いいながら、<persName ref="#tadanao">忠直卿</persName>は取っていた<persName ref="#asamizu-yoshiro">与四郎</persName>の手を放した。<persName ref="#asamizu-yoshiro">与四郎</persName>は、匕首を持ったまま、<ruby><rb>面</rb><rt>おもて</rt></ruby>も揚げず、そこに平伏した。</p>
+        <p>「其方の女房も、さすがに命を召さるるとも、余が言葉に従わぬと申しおった。余の家来には珍しい者どもじゃ」と、いったまま、<persName ref="#tadanao">忠直卿</persName>は心から快げに<ruby><rb>哄笑</rb><rt>こうしょう</rt></ruby>した。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、<persName ref="#asamizu-yoshiro">与四郎</persName>の反抗によって、二重の歓びを得ていた。一つは、一個の人間として、他人から恨まれ殺されんとすることによって、初めて自分も人間の世界へ一歩踏み入れることが許されたように覚えたことである。もう一つは、家中において、打物取っては俊捷第一の噂ある<persName ref="#asamizu-yoshiro">与四郎</persName>が必死の匕首を、物の見事に取り押えたことであった。この勝負に、嘘や<ruby><rb>佯</rb><rt>いつわり</rt></ruby>があろうとは思えなかった。彼は、久し振りに勝利の快感を、なんの疑惑なしに、楽しむことができた。<persName ref="#tadanao">忠直卿</persName>は、この頃から胸のうちに腐りついている鬱懐の一端が解け始めて、明かな光明を見たように思われた。</p>
+        <p>「ただこのままに、お手打ちを」と嘆願する<persName ref="#asamizu-yoshiro">与四郎</persName>は、なんのお咎めもなく下げられたばかりでなく、<persName ref="#asamizu-yoshiro">与四郎</persName>の妻も、即刻お暇を賜った。</p>
+        <p>が、<persName ref="#tadanao">忠直卿</persName>のこの歓びも、決して長くは続かなかった。</p>
+        <p><persName ref="#asamizu-yoshiro">与四郎</persName>夫婦は、城中から下げられると、その夜、枕を並べて覚悟の自殺を遂げてしまった、なんのために死んだのか、確かにはわからなかったが、おそらく相伝の主君に<ruby><rb>刃</rb><rt>やいば</rt></ruby>を向けたのを恥じたのと、かつは彼らの命を救った<persName ref="#tadanao">忠直卿</persName>の寛仁大度に、感激したためであろう。</p>
+        <p>が、二人の死を聞いた<persName ref="#tadanao">忠直卿</persName>は、少しも歓ばなかった。<persName ref="#asamizu-yoshiro">与四郎</persName>が覚悟の自殺をしたところから考えると、彼が匕首をもって<persName ref="#tadanao">忠直卿</persName>に迫ったのも、どうやら怪しくなって来た。<persName ref="#tadanao">忠直卿</persName>に<ruby><rb>潔</rb><rt>いさぎよ</rt></ruby>く<ruby><rb>手刃</rb><rt>しゅじん</rt></ruby>されんための手段に過ぎなかったようにも思われた、もしそうだとすると、<persName ref="#tadanao">忠直卿</persName>が見事にその利腕を取って捻じ倒したのも、紅白仕合に敵の大将を見事に破っていたのと、余り違ったわけのものではなかった。そう考えると、<persName ref="#tadanao">忠直卿</persName>は再び暗澹たる絶望的な気持に陥ってしまった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>の乱行が、その後益々進んだことは、歴史にある通りである。最後には、家臣をほしいままに<ruby><rb>手刃</rb><rt>しゅじん</rt></ruby>するばかりでなく、<ruby><rb>無辜</rb><rt>むこ</rt></ruby>の良民を捕えて、これに凶刃を加えるに至った。ことに<ruby><rb>口碑</rb><rt>こうひ</rt></ruby>に残る「石の<ruby><rb>俎</rb><rt>まないた</rt></ruby>」の言い伝えは、百世の後なお人に<ruby><rb>面</rb><rt>おもて</rt></ruby>を背けさせるものである。が、<persName ref="#tadanao">忠直卿</persName>が、かかる残虐を敢てしたのは、多分臣下が<persName ref="#tadanao">忠直卿</persName>を人間扱いにしないので、<persName ref="#tadanao">忠直卿</persName>の方でも、おしまいに臣下を人間扱いにしなくなったのかも知れない。</p>
+        <p>六</p>
+        <p>しかし、<persName ref="#tadanao">忠直卿</persName>の乱行も、無限には続かなかった。<ruby><rb>放埒</rb><rt>ほうらつ</rt></ruby>がたび重なるにつれて、幕府の執政たる<persName ref="#doi-toshikatsu">土居<ruby><rb>大炊頭利勝</rb><rt>おおいのかみとしかつ</rt></ruby></persName>、<persName ref="#honda-masazumi">本多<ruby><rb>上野介正純</rb><rt>こうずけのすけまさずみ</rt></ruby></persName>は、<ruby><rb>私</rb><rt>ひそか</rt></ruby>に<placeName ref="#echizen">越前</placeName>侯廃絶の策をめぐらした。が、剛強無双の上に、徳川家には嫡々たる<persName ref="#tadanao">忠直卿</persName>に、正面からことを計っては、いかなる大変をひき起すかも分からぬので、ついには、<persName ref="#tadanao">忠直卿</persName>の御生母なる<persName ref="#seiryoni"><ruby><rb>清涼尼</rb><rt>せいりょうに</rt></ruby></persName>を<placeName ref="#echizen">越前</placeName>へ送って、将軍家の意をそれとなく<persName ref="#tadanao">忠直卿</persName>に伝えることにした。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>は、母君との絶えて久しき対面を<ruby><rb>欣</rb><rt>よろこ</rt></ruby>ばれたが、<ruby><rb>改易</rb><rt>かいえき</rt></ruby>の沙汰を思いのほかにたやすく聞き入れられ、六十七万石の封城を、弊履のごとく捨てられ、配所たる<ruby><rb><placeName ref="#bungo">豊後</placeName>国<placeName ref="#funai">府内</placeName></rb><rt>ぶんごのくにふない</rt></ruby>に赴かれた。途中、<placeName ref="#tsuruga">敦賀</placeName>にて入道され、法名を<persName ref="#tadanao">一<ruby><rb>伯</rb><rt>ぱく</rt></ruby></persName>と付けられた。時に<date when="1623-05"><ruby><rb>元和</rb><rt>げんな</rt></ruby>九年五月</date>のことで、<persName ref="#tadanao">忠直卿</persName>は三十の年を越したばかりであった。後に<placeName ref="#bungo">豊後</placeName><placeName ref="#funai">府内</placeName>から同国<placeName ref="#tsumori"><ruby><rb>津守</rb><rt>つのかみ</rt></ruby></placeName>に移されて、台所料として幕府から一万石を給され、晩年をこともなく過し、<date when="1650-09-10"><ruby><rb>慶安</rb><rt>けいあん</rt></ruby>三年九月十日</date>に<ruby><rb>薨</rb><rt>こう</rt></ruby>じた。享年五十六歳であった。</p>
+        <p><persName ref="#tadanao">忠直卿</persName>の晩年の生活については、なんらの史実も伝わっていない。ただ、<persName ref="#tadanao">忠直卿</persName>警護の任に当っていた<placeName ref="#funai">府内</placeName>の城主<persName ref="#takenaka-shigetsugu">竹中<ruby><rb>采女正重次</rb><rt>うぬめのしょうしげつぐ</rt></ruby></persName>が、その家臣をして<persName ref="#tadanao">忠直卿</persName>の行状を録せしめて、幕席の執政たる<persName ref="#doi-toshikatsu">土居大炊頭利勝</persName>に送った「忠直卿行状記」の一冊があるばかりである。その一節に、</p>
+        <p>「<persName ref="#tadanao">忠直卿</persName>当国<placeName ref="#tsumori"><ruby><rb>津守</rb><rt>つのかみ</rt></ruby></placeName>に移らせ給うて後は、<ruby><rb>些</rb><rt>いささか</rt></ruby>の荒々しきお振舞もなく安けく暮され申候。<ruby><rb>兼々</rb><rt>かねがね</rt></ruby>仰せられ候には、六十七万石の家国を失いつる折は、悪夢より覚めたらんが如く、ただすがすがしゅうこそ思い候え。生々世々、国主大名などに再びとは生れまじきぞ、多勢の中に交じりながら、<placeName ref="#kodoku-jigoku">孤独地獄</placeName>にも陥ちたらんが如く<ruby><rb>苦艱</rb><rt>くげん</rt></ruby>を受くること<ruby><rb>屡々</rb><rt>しばしば</rt></ruby>なりなど仰せられ、御改易のことについては、些の御後悔だに見えさせられず候。……<ruby><rb>徒然</rb><rt>つれづれ</rt></ruby>の折には、村年寄僧侶などさえお手近く召し寄せられ、囲棋のお遊びなどあり、打ち興ぜさせたもう有様、<placeName ref="#in"><ruby><rb>殷</rb><rt>いん</rt></ruby></placeName>の<persName ref="#chuo"><ruby><rb>紂王</rb><rt>ちゅうおう</rt></ruby></persName>にも勝れる暴君よなど、噂せられたまいし面影更に見え給わず。ことに<placeName ref="#tsumori">津守</placeName>の<placeName ref="#jokenji"><ruby><rb>浄建寺</rb><rt>じょうけんじ</rt></ruby></placeName>の<ruby><rb><persName ref="#kozan">洸山</persName>老衲</rb><rt>こうざんろうのう</rt></ruby>とは、いと<ruby><rb>入懇</rb><rt>じっこん</rt></ruby>に渡らせられ、老衲が、『六十七万石も持たせたまえば、誰も<persName ref="#chuo">紂王</persName>の真似などもいたしたくなるものぞ。殿の悪しきに非ず』など、聞え上げけるに、お怒りのようもなく笑わせ給う。末には百姓町人の賤しきをさえお目通りに引き給い、<ruby><rb>無礼</rb><rt>なめげ</rt></ruby>に飾なく申し上ぐることを、いと興がらせ給えり。御身はよろず、お慎み深く、近侍の者を憫み、領民を愛撫したもう有様、六十七万石の家国を失いたる無法人とも見えずと人々<ruby><rb>不審</rb><rt>いぶか</rt></ruby>しく思うこと今に止まず候」と、あった。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

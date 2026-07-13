@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>花子</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>花子</title><author>森鴎外</author>
+          <note>青空文庫。底本：「カラー版日本文学全集7　森鴎外」河出書房新社。1969（昭和44）年3月30日初版発行。初出：「三田文学」。1910（明治43）年7月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card45254.html">https://www.aozora.gr.jp/cards/000129/card45254.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="rodin">
+        <persName>ロダン</persName>
+        <note>オーギュスト・ロダン(Auguste Rodin, 1840–1917)。フランスの彫刻家。パリの Hôtel Biron の仕事場で花子をモデルに素描する。作中では「Auguste Rodin」「ロダン」と表記される</note>
+      </person>
+      <person xml:id="hanako">
+        <persName>花子</persName>
+        <note>太田ひさ(1868–1945)をモデルとする日本人女優・舞踊家。ヨーロッパの寄席(variété)に出演しており、ロダンに招かれてモデルとなる。作中では「花子」「Mademoiselle Hanako」と表記される</note>
+      </person>
+      <person xml:id="kubota">
+        <persName>久保田</persName>
+        <note>医学士久保田某。L'Institut Pasteur に留学中の日本人学生で、ロダンと花子の通訳を務める。作中の視点人物</note>
+      </person>
+      <person xml:id="zola">
+        <persName>Zola</persName>
+        <note>エミール・ゾラ(Émile Zola, 1840–1902)。フランスの小説家。花子の紋切型の身の上話を、ゾラの小説『Lourdes(ルウルド)』に出てくる小娘の話に喩える箇所で言及される</note>
+      </person>
+      <person xml:id="baudelaire">
+        <persName>ボオドレエル</persName>
+        <note>シャルル・ボードレール(Charles Baudelaire, 1821–1867)。フランスの詩人。ロダンの書籍室にあった全集の一巻「おもちゃの形而上学」を久保田が読む。作中では「Beaudelaire」「ボオドレエル」と表記される</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="hotel-biron">
+        <placeName>Hôtel Biron</placeName>
+        <location><geo>48.8553 2.3159</geo></location>
+        <note>パリ7区 rue de Varenne 77 の館。もと貴族の邸宅で聖心会の修道院を経てロダンが仕事場とした。現在のロダン美術館。概値</note>
+      </place>
+      <place xml:id="faubourg-saint-germain">
+        <placeName>Faubourg Saint-Germain</placeName>
+        <location><geo>48.855 2.323</geo></location>
+        <note>パリ7区、セーヌ左岸の貴族屋敷が集まる地区(フォーブール・サン=ジェルマン)。地区名・概値</note>
+      </place>
+      <place xml:id="paris">
+        <placeName>パリ</placeName>
+        <location><geo>48.8566 2.3522</geo></location>
+        <note>フランスの首都。カンボジアの酋長が滞在した地として言及される。概値</note>
+      </place>
+      <place xml:id="institut-pasteur">
+        <placeName>L'Institut Pasteur</placeName>
+        <location><geo>48.8402 2.3105</geo></location>
+        <note>パリ15区のパスツール研究所。久保田が研究している場所。作中では「L'Institut Pasteur」「ランスチチュウ・パストョオル」の両表記。概値</note>
+      </place>
+      <place xml:id="cambodia">
+        <placeName>Kambodscha</placeName>
+        <location><geo>12.5657 104.991</geo></location>
+        <note>カンボジア。酋長(王)の一行がパリに滞在し、ロダンがその踊子を素描したという回想の中で言及される。国名・概値</note>
+      </place>
+      <place xml:id="bruxelles">
+        <placeName>Bruxelles</placeName>
+        <location><geo>50.8467 4.3525</geo></location>
+        <note>ベルギーの首都ブリュッセル。若き日のロダンが困窮して町をさまよったとされる。概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値。「日本の女」「日本にいたかどうだか」など。「日本人」(民族の呼称)は skip で除外している</note>
+      </place>
+      <place xml:id="europe">
+        <placeName>ヨオロッパ</placeName>
+        <location><geo>50.0 15.0</geo></location>
+        <note>ヨーロッパ。花子が女優として現れた「ヨオロッパの都会」など。地域名・概値</note>
+      </place>
+      <place xml:id="north-europe">
+        <placeName>北ヨオロッパ</placeName>
+        <location><geo>60.0 15.0</geo></location>
+        <note>北ヨーロッパ。ロダンが体型を対比する「肩の狭い北ヨオロッパのチイプ」。地域名・概値</note>
+      </place>
+      <place xml:id="mediterranean">
+        <placeName>地中海</placeName>
+        <location><geo>35.0 18.0</geo></location>
+        <note>地中海(沿岸地域)。ロダンが体型を対比する「肩と腰の濶い地中海の type」。地域名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>花子</head>
+        <p><persName ref="#rodin"><ruby><rb>Auguste</rb><rt>オオギュスト</rt></ruby> <ruby><rb>Rodin</rb><rt>ロダン</rt></ruby></persName> は<ruby><rb>為事場</rb><rt>しごとば</rt></ruby>へ出て来た。</p>
+        <p>広い<ruby><rb>間</rb><rt>ま</rt></ruby>一ぱいに朝日が差し込んでいる。この <placeName ref="#hotel-biron"><ruby><rb>Hôtel</rb><rt>オテル</rt></ruby> <ruby><rb>Biron</rb><rt>ビロン</rt></ruby></placeName> というのは、もと或る富豪の作った、<ruby><rb>贅沢</rb><rt>ぜいたく</rt></ruby>な建物であるが、ついこの<ruby><rb>間</rb><rt>あいだ</rt></ruby>まで聖心派の尼寺になっていた。<placeName ref="#faubourg-saint-germain"><ruby><rb>Faubourg</rb><rt>フォオブウル</rt></ruby> <ruby><rb>Saint</rb><rt>サン</rt></ruby>-<ruby><rb>Germain</rb><rt>ジェルメン</rt></ruby></placeName> の娘子供を集めて <ruby><rb>Sacrè</rb><rt>サクレエ</rt></ruby>-<ruby><rb>Coeur</rb><rt>キョオル</rt></ruby> の尼達が、この<ruby><rb>間</rb><rt>ま</rt></ruby>で讃美歌を歌わせていたのであろう。</p>
+        <p>巣の内の<ruby><rb>雛</rb><rt>ひな</rt></ruby>が親鳥の来るのを見つけたように、一列に<ruby><rb>并</rb><rt>なら</rt></ruby>んだ娘達が桃色の<ruby><rb>脣</rb><rt>くちびる</rt></ruby>を開いて歌ったことであろう。</p>
+        <p>その<ruby><rb>賑</rb><rt>にぎ</rt></ruby>やかな声は今は聞えない。</p>
+        <p>しかしそれと違った賑やかさがこの間を領している。或る別様の生活がこの間を領している。それは声の無い生活である。声は無いが、強烈な、<ruby><rb>錬稠</rb><rt>れんちゅう</rt></ruby>せられた、<ruby><rb>顫動</rb><rt>せんどう</rt></ruby>している、別様の生活である。</p>
+        <p>幾つかの台の上に、幾つかの<ruby><rb>礬土</rb><rt>ばんど</rt></ruby>の<ruby><rb>塊</rb><rt>かたまり</rt></ruby>がある。又<ruby><rb>外</rb><rt>ほか</rt></ruby>の台の上にはごつごつした大理石の塊もある。日光の下に種々の植物が華さくように、同時に幾つかの<ruby><rb>為事</rb><rt>しごと</rt></ruby>を始めて、かわるがわる気の向いたのに手を着ける習慣になっているので、幾つかの作品が<ruby><rb>後</rb><rt>おく</rt></ruby>れたり先だったりして、この人の手の下に、自然のように生長して行くのである。この人は恐るべき形の記憶を有している。その作品は手を動さない間にも生長しているのである。この人は恐るべき意志の集中力を有している。為事に掛かった<ruby><rb>刹那</rb><rt>せつな</rt></ruby>に、もう数時間前から為事をし続けているような態度になることが出来るのである。</p>
+        <p><persName ref="#rodin">ロダン</persName>は晴やかな顔つきをして、このあまたの半成の作品を見渡した。広々とした額。<ruby><rb>中</rb><rt>なか</rt></ruby>ほどに節のあるような鼻。白いたっぷりある<ruby><rb>髯</rb><rt>ひげ</rt></ruby>が<ruby><rb>腮</rb><rt>あご</rt></ruby>の周囲に<ruby><rb>簇</rb><rt>むら</rt></ruby>がっている。</p>
+        <p>戸をこつこつ<ruby><rb>叩</rb><rt>たた</rt></ruby>く音がする。</p>
+        <p>「<ruby><rb>Entrez</rb><rt>アントレエ</rt></ruby> !」</p>
+        <p>底に力の<ruby><rb>籠</rb><rt>こも</rt></ruby>った、老人らしくない声が広間の空気を波立たせた。</p>
+        <p>戸を開けて<ruby><rb>這入</rb><rt>はい</rt></ruby>って来たのは、ユダヤ教徒かと思われるような、<ruby><rb>褐色</rb><rt>かっしょく</rt></ruby>の髪の濃い、三十代の<ruby><rb>痩</rb><rt>や</rt></ruby>せた男である。</p>
+        <p>お約束の <persName ref="#hanako"><ruby><rb>Mademoiselle</rb><rt>マドモアセユ</rt></ruby> <ruby><rb>Hanako</rb><rt>ハナコ</rt></ruby></persName> を連れて来たと云った。</p>
+        <p><persName ref="#rodin">ロダン</persName>は這入って来た男を見た時も、その<ruby><rb>詞</rb><rt>ことば</rt></ruby>を聞いた時も、別に顔色をも動かさなかった。</p>
+        <p>いつか <placeName ref="#cambodia"><ruby><rb>Kambodscha</rb><rt>カンボヂヤ</rt></ruby></placeName> の酋長が<placeName ref="#paris">パリ</placeName>に滞在していた頃、それが連れて来ていた踊子を見て、<ruby><rb>繊</rb><rt>ほそ</rt></ruby>く長い手足の、しなやかな運動に、人を迷わせるような、一種の趣のあるのを感じたことがある。その時急いで取った <ruby><rb>dessins</rb><rt>デッサン</rt></ruby> が今も残っているのである。そういう風に、どの人種にも美しいところがある。それを見つける人の目次第で美しいところがあると信じている<persName ref="#rodin">ロダン</persName>は、この間から<persName ref="#hanako">花子</persName>という<placeName ref="#nihon">日本</placeName>の女が <ruby><rb>variété</rb><rt>ワリエテエ</rt></ruby> に出ているということを聞いて、それを連れて来て見せてくれるように、<ruby><rb>伝</rb><rt>つて</rt></ruby>を求めて、<persName ref="#hanako">花子</persName>を買って出している男に頼んでおいたのである。</p>
+        <p>今来たのはその興行師である。<ruby><rb>Imprésario</rb><rt>アンプレサリオ</rt></ruby> である。</p>
+        <p>「こっちへ這入らせて下さい」と<persName ref="#rodin">ロダン</persName>はいった。椅子をも<ruby><rb>指</rb><rt>さ</rt></ruby>さないのは、その<ruby><rb>暇</rb><rt>いとま</rt></ruby>がないからばかりではない。</p>
+        <p>「通訳をする人が一しょに来ていますが。」<ruby><rb>機嫌</rb><rt>きげん</rt></ruby>を<ruby><rb>伺</rb><rt>うかが</rt></ruby>うように云うのである。</p>
+        <p>「それは誰ですか。フランス人ですか。」</p>
+        <p>「いいえ。日本人です。<placeName ref="#institut-pasteur"><ruby><rb>L'Institut</rb><rt>ランスチチュウ</rt></ruby> <ruby><rb>Pasteur</rb><rt>パストョオル</rt></ruby></placeName> で為事をしている学生ですが、先生の所へ呼ばれたということを<persName ref="#hanako">花子</persName>に聞いて、望んで通訳をしに来たのです。」</p>
+        <p>「よろしい。一しょに這入らせて下さい。」</p>
+        <p>興行師は承知して出て行った。</p>
+        <p>直ぐに男女の日本人が這入って来た。二人とも<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って小さく見える。<ruby><rb>跡</rb><rt>あと</rt></ruby>について這入って戸を締める興行師も、大きい男ではないのに、二人の日本人はその男の耳までしかないのである。</p>
+        <p><persName ref="#rodin">ロダン</persName>の目は注意して物を視るとき、<ruby><rb>内眥</rb><rt>めがしら</rt></ruby>に深く刻んだような皺が出来る。この時その皺が出来た。視線は学生から<persName ref="#hanako">花子</persName>に移って、そこにしばらく留まっている。</p>
+        <p>学生は<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>をして、<persName ref="#rodin">ロダン</persName>の出した、<ruby><rb>腱</rb><rt>けん</rt></ruby>の一本一本浮いている右の手を握った。<ruby><rb>La</rb><rt>ラ</rt></ruby> <ruby><rb>Danaide</rb><rt>ダナイイド</rt></ruby> や <ruby><rb>Le</rb><rt>ル</rt></ruby> <ruby><rb>Baiser</rb><rt>ベゼエ</rt></ruby> や <ruby><rb>Le</rb><rt>ル</rt></ruby> <ruby><rb>Penseur</rb><rt>パンショオル</rt></ruby> を作った手を握った。そして名刺入から、医学士<persName ref="#kubota">久保田</persName>某と書いた名刺を出してわたした。</p>
+        <p><persName ref="#rodin">ロダン</persName>は名刺を<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>見て云った。「<placeName ref="#institut-pasteur">ランスチチュウ・パストョオル</placeName>で為事をしているのですか。」</p>
+        <p>「そうです。」</p>
+        <p>「もう長くいますか。」</p>
+        <p>「三箇月になります。」</p>
+        <p>「<ruby><rb>Avez</rb><rt>アウェエ</rt></ruby>-<ruby><rb>vous</rb><rt>ヴウ</rt></ruby> <ruby><rb>bien</rb><rt>ビアン</rt></ruby> <ruby><rb>travaillé</rb><rt>トラワイェエ</rt></ruby> ?」</p>
+        <p>学生ははっと思った。<persName ref="#rodin">ロダン</persName>という人が口癖のように云う<ruby><rb>詞</rb><rt>ことば</rt></ruby>だと、<ruby><rb>兼</rb><rt>かね</rt></ruby>て<ruby><rb>噂</rb><rt>うわさ</rt></ruby>に聞いていた、その簡単な詞が今自分に対して発せられたのである。</p>
+        <p>「<ruby><rb>Oui</rb><rt>ウイ</rt></ruby>, <ruby><rb>beaucoup</rb><rt>ボウクウ</rt></ruby>, <ruby><rb>Monsieur</rb><rt>モッシュウル</rt></ruby> !」と答えると同時に、<persName ref="#kubota">久保田</persName>はこれから生涯勉強しようと、神明に誓ったような心持がしたのである。</p>
+        <p><persName ref="#kubota">久保田</persName>は<persName ref="#hanako">花子</persName>を紹介した。<persName ref="#rodin">ロダン</persName>は<persName ref="#hanako">花子</persName>の小さい、締まった体を、<ruby><rb>無恰好</rb><rt>ぶかっこう</rt></ruby>に結った高島田の<ruby><rb>巓</rb><rt>いただき</rt></ruby>から、白足袋に千代田草履を<ruby><rb>穿</rb><rt>は</rt></ruby>いた足の<ruby><rb>尖</rb><rt>さき</rt></ruby>まで、一目に領略するような見方をして、小さい<ruby><rb>巌畳</rb><rt>がんじょう</rt></ruby>な手を握った。</p>
+        <p><persName ref="#kubota">久保田</persName>の心は一種の<ruby><rb>羞恥</rb><rt>しゅうち</rt></ruby>を覚えることを禁じ得なかった。<placeName ref="#nihon">日本</placeName>の女として<persName ref="#rodin">ロダン</persName>に紹介するには、も少し立派な女が欲しかったと思ったのである。</p>
+        <p>そう思ったのも無理は無い。<persName ref="#hanako">花子</persName>は<ruby><rb>別品</rb><rt>べっぴん</rt></ruby>ではないのである。<placeName ref="#nihon">日本</placeName>の女優だと云って、或時<ruby><rb>忽然</rb><rt>こつぜん</rt></ruby><placeName ref="#europe">ヨオロッパ</placeName>の都会に現れた。そんな女優が<placeName ref="#nihon">日本</placeName>にいたかどうだか、日本人には知ったものはない。<persName ref="#kubota">久保田</persName>も<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>知らないのである。しかもそれが別品でない。お三どんのようだと云っては、可哀そうであろう。格別荒い為事をしたことはないと見えて、手足なんぞは荒れていない。しかし十七の娘盛なのに、小間使としても少し受け取りにくい姿である。一言で評すれば、<ruby><rb>子守</rb><rt>こもり</rt></ruby>あがり位にしか、値踏が出来兼ねるのである。</p>
+        <p>意外にも<persName ref="#rodin">ロダン</persName>の顔には満足の色が見えている。健康で余り安逸を<ruby><rb>貪</rb><rt>むさぼ</rt></ruby>ったことの無い<persName ref="#hanako">花子</persName>の、いささかの脂肪をも貯えていない、薄い皮膚の底に、適度の労働によって好く発育した、緊張力のある筋肉が、額と<ruby><rb>腮</rb><rt>あご</rt></ruby>の詰まった、短い顔、あらわに見えている<ruby><rb>頸</rb><rt>くび</rt></ruby>、手袋をしない手と腕に躍動しているのが、<persName ref="#rodin">ロダン</persName>には気に入ったのである。</p>
+        <p><persName ref="#rodin">ロダン</persName>の差し伸べた手を、もう<ruby><rb>大分</rb><rt>だいぶ</rt></ruby><placeName ref="#europe">ヨオロッパ</placeName>慣れている<persName ref="#hanako">花子</persName>は、愛相の好い微笑を顔に見せて握った。</p>
+        <p><persName ref="#rodin">ロダン</persName>は二人に椅子を<ruby><rb>侑</rb><rt>すす</rt></ruby>めた。そして興行師に、「少し応接所で待っていて下さい」と云った。</p>
+        <p>興行師の出て行った跡で、二人は腰を掛けた。</p>
+        <p><persName ref="#rodin">ロダン</persName>は<persName ref="#kubota">久保田</persName>の前に<ruby><rb>烟草</rb><rt>たばこ</rt></ruby>の箱を開けて出しながら、<persName ref="#hanako">花子</persName>に、「マドモアセユの故郷には山がありますか、海がありますか」と云った。</p>
+        <p><persName ref="#hanako">花子</persName>はこんな<ruby><rb>世渡</rb><rt>よわたり</rt></ruby>をする女の常として、いつも人に問われるときに話す、きまった、<ruby><rb>stéréotype</rb><rt>スシレオチイプ</rt></ruby> な身の上話がある。<ruby><rb>丁度</rb><rt>ちょうど</rt></ruby>あの <persName ref="#zola"><ruby><rb>Zola</rb><rt>ゾラ</rt></ruby></persName> の <ruby><rb>Lourdes</rb><rt>ルウルド</rt></ruby> で、汽車の中に乗り込んでいて、足の<ruby><rb>創</rb><rt>きず</rt></ruby>の直った霊験を話す小娘の話のようなものである。度々同じ事を話すので、次第に修行が詰んで、<ruby><rb>routine</rb><rt>ルウチイヌ</rt></ruby> のある小説家の書く文章のようになっている。<persName ref="#rodin">ロダン</persName>の不用意な問は<ruby><rb>幸</rb><rt>さいわい</rt></ruby>にもこの<ruby><rb>腹藁</rb><rt>ふっこう</rt></ruby>を破ってしまった。</p>
+        <p>「山は遠うございます。海はじきそばにございます。」</p>
+        <p>答は<persName ref="#rodin">ロダン</persName>の気に入った。</p>
+        <p>「度々舟に乗りましたか。」</p>
+        <p>「乗りました。」</p>
+        <p>「自分で<ruby><rb>漕</rb><rt>こ</rt></ruby>ぎましたか。」</p>
+        <p>「まだ小さかったから、自分で漕いだことはございません。父が漕ぎました。」</p>
+        <p><persName ref="#rodin">ロダン</persName>の空想には画が浮かんだ。そしてしばらく黙っていた。<persName ref="#rodin">ロダン</persName>は黙る人である。</p>
+        <p><persName ref="#rodin">ロダン</persName>は何の過渡もなしに、<persName ref="#kubota">久保田</persName>にこう云った。「マドモアセユはわたしの職業を知っているでしょう。着物を脱ぐでしょうか。」</p>
+        <p><persName ref="#kubota">久保田</persName>はしばらく考えた。外の人のためになら、同国の女を裸体にする取次は無論しない。しかし<persName ref="#rodin">ロダン</persName>がためには<ruby><rb>厭</rb><rt>いと</rt></ruby>わない。それは何も考えることを要せない。ただ<persName ref="#hanako">花子</persName>がどう云うだろうかと思ったのである。</p>
+        <p>「とにかく話して見ましょう。」</p>
+        <p>「どうぞ。」</p>
+        <p><persName ref="#kubota">久保田</persName>は<persName ref="#hanako">花子</persName>にこう云った。「少し先生が相談があるというのだがね。先生が世界に又とない<ruby><rb>彫物師</rb><rt>ほりものし</rt></ruby>で、人の体を彫る人だということは、お前も知っているだろう。そこで相談があるのだ。<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>裸になって見せては<ruby><rb>貰</rb><rt>もら</rt></ruby>われまいかと云っているのだ。どうだろう。お前も見る通り、先生はこんなお<ruby><rb>爺</rb><rt>じ</rt></ruby>いさんだ。もう今に七十に間もないお方だ。それにお前の見る通りの<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>なお方だ。どうだろう。」</p>
+        <p>こう云って、<persName ref="#kubota">久保田</persName>はじっと<persName ref="#hanako">花子</persName>の顔を見ている。はにかむか、気取るか、苦情を言うかと思うのである。</p>
+        <p>「わたしなりますわ。」きさくに、さっぱりと答えた。</p>
+        <p>「承諾しました」と、<persName ref="#kubota">久保田</persName>が<persName ref="#rodin">ロダン</persName>に告げた。</p>
+        <p><persName ref="#rodin">ロダン</persName>の顔は喜にかがやいた。そして椅子から起ち上がって、紙とチョオクとを出して、卓の上に置きながら、<persName ref="#kubota">久保田</persName>に言った。「ここにいますか。」</p>
+        <p>「わたくしの職業にも同じ必要に<ruby><rb>遭遇</rb><rt>そうぐう</rt></ruby>することはあるのです。しかしマドモアセユのために不愉快でしょう。」</p>
+        <p>「そうですか。十五分か二十分で済みますから、あそこの書籍室へでも行っていて下さい。葉巻でもつけて。」<persName ref="#rodin">ロダン</persName>は一方の戸口を指ざした。</p>
+        <p>「十五分か二十分で済むそうです」と、<persName ref="#hanako">花子</persName>に言って置いて、<persName ref="#kubota">久保田</persName>は葉巻に火をつけて、教えられた戸の奥に隠れた。</p>
+        <p>＊　　　　　＊　　　　　＊</p>
+        <p><persName ref="#kubota">久保田</persName>の這入った、小さい一間は、相対している両側に戸口があって、窓はただ一つある。その窓の前に粧飾のない卓が一つ置いてある。窓に向き合った壁と、その両翼になっているところとに本箱がある。</p>
+        <p><persName ref="#kubota">久保田</persName>はしばらく立って、本の<ruby><rb>背革</rb><rt>せがわ</rt></ruby>の文字を読んでいた。わざと<ruby><rb>揃</rb><rt>そろ</rt></ruby>えたよりは、偶然集まったと思われる <ruby><rb>collection</rb><rt>コレクション</rt></ruby> である。<persName ref="#rodin">ロダン</persName>は生れつき<ruby><rb>本好</rb><rt>ほんずき</rt></ruby>で、少年の時困窮して、<placeName ref="#bruxelles"><ruby><rb>Bruxelles</rb><rt>ブリュクセル</rt></ruby></placeName> の町をさまよっていた時から、始終本を手にしていたということである。古い汚れた本の中には、定めていろいろな記念のある本もあって、わざわざここへも持って来ているのだろう。</p>
+        <p>葉巻の灰が崩れそうになったので、<persName ref="#kubota">久保田</persName>は卓に歩み寄って、灰皿に灰を落した。</p>
+        <p>卓の上に置いてある本があるので、なんだろうと思って手に取って見た。</p>
+        <p>向うの窓の方に寄せて置いてある、古い、<ruby><rb>金縁</rb><rt>きんぶち</rt></ruby>の本は、聖書かと思って開けて見ると、<ruby><rb>Divina</rb><rt>ヂヰナ</rt></ruby> <ruby><rb>comedia</rb><rt>コメヂア</rt></ruby> の <ruby><rb>Edition</rb><rt>エヂション</rt></ruby> <ruby><rb>de</rb><rt>ド</rt></ruby> <ruby><rb>poche</rb><rt>ポッシュ</rt></ruby> であった。手前の方に斜に置いてある本を取って見ると、<persName ref="#baudelaire"><ruby><rb>Beaudelaire</rb><rt>ボオドレエル</rt></ruby></persName> が全集のうちの一巻であった。</p>
+        <p>別に読もうという気もなしに、最初のペエジを開けて見ると、おもちゃの<ruby><rb>形而上学</rb><rt>けいじじょうがく</rt></ruby>という論文がある。何を書いているかと思って、ふいと読み出した。</p>
+        <p><persName ref="#baudelaire">ボオドレエル</persName>が小さいとき、なんとかいうお嬢さんの所へ連れて行かれた。そのお嬢さんが部屋に一ぱいのおもちゃを持っていて、どれでも一つやろうと云ったという記念から書き出してある。</p>
+        <p>子供がおもちゃを持って遊んで、しばらくするときっとそれを<ruby><rb>壊</rb><rt>こわ</rt></ruby>して見ようとする。その物の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に何物があるかと思う。おもちゃが動くおもちゃだと、それを動かす衝動の元を尋ねて見たくなるのである。子供は <ruby><rb>Physique</rb><rt>フィジック</rt></ruby> より <ruby><rb>Métaphysique</rb><rt>メタフィジック</rt></ruby> に<ruby><rb>之</rb><rt>ゆ</rt></ruby>くのである。理学より形而上学に<ruby><rb>之</rb><rt>ゆ</rt></ruby>くのである。</p>
+        <p><ruby><rb>僅</rb><rt>わず</rt></ruby>か四五ペエジの文章なので、面白さに釣られてとうとう読んでしまった。</p>
+        <p>その時戸をこつこつ叩く音がして、戸を開いた。<persName ref="#rodin">ロダン</persName>が<ruby><rb>白髪頭</rb><rt>しらがあたま</rt></ruby>をのぞけた。</p>
+        <p>「許して下さい。退屈したでしょう。」</p>
+        <p>「いいえ、<persName ref="#baudelaire">ボオドレエル</persName>を読んでいました」と云いながら、<persName ref="#kubota">久保田</persName>は為事場に出て来た。</p>
+        <p><persName ref="#hanako">花子</persName>はもうちゃんと支度をしている。</p>
+        <p>卓の上には <ruby><rb>esquisses</rb><rt>エスキス</rt></ruby> が二枚出来ている。</p>
+        <p>「<persName ref="#baudelaire">ボオドレエル</persName>の何を読みましたか。」</p>
+        <p>「おもちゃの形而上学です。」</p>
+        <p>「人の体も形が形として面白いのではありません。霊の鏡です。形の上に<ruby><rb>透</rb><rt>す</rt></ruby>き<ruby><rb>徹</rb><rt>とお</rt></ruby>って見える内の<ruby><rb>焔</rb><rt>ほのお</rt></ruby>が面白いのです。」</p>
+        <p><persName ref="#kubota">久保田</persName>が遠慮げにエスキスを見ると、<persName ref="#rodin">ロダン</persName>は云った。「<ruby><rb>粗</rb><rt>あら</rt></ruby>いから分かりますまい。」</p>
+        <p>しばらくして又云った。「マドモアセユは実に美しい体を持っています。脂肪は少しもない。筋肉は一つ一つ浮いている。<ruby><rb>Foxterriers</rb><rt>フォックステリエエ</rt></ruby> の筋肉のようです。<ruby><rb>腱</rb><rt>けん</rt></ruby>がしっかりしていて太いので、関節の大さが手足の大さと同じになっています。足一本でいつまでも立っていて、も一つの足を直角に伸ばしていられる位、丈夫なのです。丁度地に根を深く<ruby><rb>卸</rb><rt>おろ</rt></ruby>している木のようなのですね。肩と腰の<ruby><rb>濶</rb><rt>ひろ</rt></ruby>い<placeName ref="#mediterranean">地中海</placeName>の <ruby><rb>type</rb><rt>チイプ</rt></ruby> とも違う。腰ばかり濶くて、肩の狭い<placeName ref="#north-europe">北ヨオロッパ</placeName>のチイプとも違う。強さの美ですね。」</p>
+      </div>
+    </body>
+  </text>
+</TEI>
