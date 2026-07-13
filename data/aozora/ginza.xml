@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>銀座</title>
+        <author>永井荷風</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>銀座</title><author>永井荷風</author>
+          <note>青空文庫。底本：「荷風随筆集（上）」岩波文庫、岩波書店。1986（昭和61）年9月16日第1刷発行。2006（平成18）年11月6日第27刷発行。底本の親本：「荷風隨筆　一」岩波書店。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/001341/card49640.html">https://www.aozora.gr.jp/cards/001341/card49640.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="danjuro">
+        <persName>団十郎</persName>
+        <note>九代目市川団十郎(1838-1903)。歌舞伎俳優。その旧宅が下町の俳人某子の邸宅と庭園を隣り合せにしていると本文にある</note>
+      </person>
+      <person xml:id="shikan">
+        <persName>芝翫</persName>
+        <note>四代目中村芝翫(1831-1899)。明治初年の歌舞伎俳優</note>
+      </person>
+      <person xml:id="hikosaburo">
+        <persName>彦三郎</persName>
+        <note>五代目坂東彦三郎(1832-1877)。明治初年の歌舞伎俳優</note>
+      </person>
+      <person xml:id="tanosuke">
+        <persName>田之助</persName>
+        <note>三代目沢村田之助(1845-1878)。明治初年の歌舞伎俳優</note>
+      </person>
+      <person xml:id="mokuami">
+        <persName>黙阿弥</persName>
+        <note>河竹黙阿弥(1816-1893)。歌舞伎狂言作者</note>
+      </person>
+      <person xml:id="robun">
+        <persName>魯文</persName>
+        <note>仮名垣魯文(1829-1894)。戯作者・新聞記者</note>
+      </person>
+      <person xml:id="ryuhoku">
+        <persName>柳北</persName>
+        <note>成島柳北(1837-1884)。文人・『朝野新聞』主筆</note>
+      </person>
+      <person xml:id="kyosai">
+        <persName>暁斎</persName>
+        <note>河鍋暁斎(1831-1889)。画家</note>
+      </person>
+      <person xml:id="yoshitoshi">
+        <persName>芳年</persName>
+        <note>月岡芳年(1839-1892)。浮世絵師</note>
+      </person>
+      <person xml:id="sakaigawa">
+        <persName>境川</persName>
+        <note>境川浪右衛門(1841-1887)。第14代横綱。本文は「境川や陣幕の如き相撲」</note>
+      </person>
+      <person xml:id="jinmaku">
+        <persName>陣幕</persName>
+        <note>陣幕久五郎(1829-1903)。第12代横綱</note>
+      </person>
+      <person xml:id="encho">
+        <persName>円朝</persName>
+        <note>三遊亭円朝(1839-1900)。落語家。「円朝の後に円朝は出なかった」</note>
+      </person>
+      <person xml:id="napoleon">
+        <persName>ナポレオン</persName>
+        <note>ナポレオン1世(1769-1821)。「ナポレオン帝政当時の胸甲騎兵の甲」として言及</note>
+      </person>
+      <person xml:id="bordeaux">
+        <persName>Henri Bordeaux</persName>
+        <note>アンリ・ボルドー(1870-1963)。フランスの小説家。その旅行記の序文が引かれる</note>
+      </person>
+      <person xml:id="ueda-bin">
+        <persName>上田敏</persName>
+        <note>上田敏(1874-1916)。詩人・翻訳家・英文学者。本文では「上田敏先生」</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="ginza">
+        <placeName>銀座</placeName>
+        <location><geo>35.6717 139.765</geo></location>
+        <note>作品の舞台。京橋区銀座(現・中央区銀座)・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>近世の東京の呼称。「大江戸」「第二の江戸」「江戸風」等も統合・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="matsumotoro">
+        <placeName>松本楼</placeName>
+        <location><geo>35.6738 139.7546</geo></location>
+        <note>日比谷公園内の西洋料理店。本文は「貸座敷然たる松本楼」・概値</note>
+      </place>
+      <place xml:id="teikoku-hotel">
+        <placeName>帝国ホテル</placeName>
+        <location><geo>35.6725 139.758</geo></location>
+        <note>内幸町の帝国ホテル・概値</note>
+      </place>
+      <place xml:id="seiyoken">
+        <placeName>精養軒</placeName>
+        <location><geo>35.6686 139.7692</geo></location>
+        <note>築地精養軒(京橋区采女町、現・中央区銀座五丁目)と解した。上野精養軒の可能性も皆無ではないが、帝国ホテル・交詢社と並記される銀座界隈の文脈による・概値</note>
+      </place>
+      <place xml:id="kojunsha">
+        <placeName>交詢社</placeName>
+        <location><geo>35.6707 139.7625</geo></location>
+        <note>銀座六丁目の社交倶楽部・概値</note>
+      </place>
+      <place xml:id="yurakuza">
+        <placeName>有楽座</placeName>
+        <location><geo>35.6738 139.762</geo></location>
+        <note>有楽町にあった西洋式劇場(1908-1923)・概値</note>
+      </place>
+      <place xml:id="teikoku-gekijo">
+        <placeName>帝国劇場</placeName>
+        <location><geo>35.6768 139.7605</geo></location>
+        <note>丸の内の帝国劇場(1911開場)・概値</note>
+      </place>
+      <place xml:id="kabukiza">
+        <placeName>歌舞伎座</placeName>
+        <location><geo>35.6693 139.7677</geo></location>
+        <note>木挽町の歌舞伎座・概値</note>
+      </place>
+      <place xml:id="goraku">
+        <placeName>吾楽</placeName>
+        <note>八官町の通りに建てられた美術品の展覧場。正確な所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="hakkancho">
+        <placeName>八官町</placeName>
+        <location><geo>35.6685 139.7625</geo></location>
+        <note>京橋区八官町。現・銀座八丁目付近・概値</note>
+      </place>
+      <place xml:id="sanjukkenbori">
+        <placeName>三十間堀</placeName>
+        <location><geo>35.671 139.768</geo></location>
+        <note>銀座の東を流れていた堀。戦後埋立て。本文は「三十間堀の河岸通」・概値</note>
+      </place>
+      <place xml:id="tsukiji">
+        <placeName>築地</placeName>
+        <location><geo>35.6654 139.7707</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="honganji">
+        <placeName>本願寺</placeName>
+        <location><geo>35.6663 139.7712</geo></location>
+        <note>築地本願寺。「築地の本願寺」「彼の高い本願寺の屋根」を統合・概値</note>
+      </place>
+      <place xml:id="kuramae">
+        <placeName>蔵前</placeName>
+        <location><geo>35.705 139.791</geo></location>
+        <note>浅草蔵前。札差の旦那衆で知られた町・概値</note>
+      </place>
+      <place xml:id="tengado">
+        <placeName>天下堂</placeName>
+        <location><geo>35.6692 139.7618</geo></location>
+        <note>銀座八丁目にあった百貨店(現存せず)。屋根裏からの眺望が本文の中心・概値</note>
+      </place>
+      <place xml:id="tenshodo">
+        <placeName>天賞堂</placeName>
+        <location><geo>35.6716 139.7663</geo></location>
+        <note>銀座四丁目の貴金属・時計店・概値</note>
+      </place>
+      <place xml:id="yamazaki">
+        <placeName>山崎洋服店</placeName>
+        <note>銀座の洋服店。正確な所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="kasumigaseki">
+        <placeName>霞ヶ関</placeName>
+        <location><geo>35.6738 139.7508</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hibiya">
+        <placeName>日比谷</placeName>
+        <location><geo>35.674 139.756</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="marunouchi">
+        <placeName>丸の内</placeName>
+        <location><geo>35.6812 139.7649</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shibakoen">
+        <placeName>芝公園</placeName>
+        <location><geo>35.6552 139.7495</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shinagawawan">
+        <placeName>品川湾</placeName>
+        <location><geo>35.62 139.77</geo></location>
+        <note>東京湾のうち品川沖の海面。埋立てで景観は消滅・概値</note>
+      </place>
+      <place xml:id="shinagawa">
+        <placeName>品川</placeName>
+        <location><geo>35.6285 139.7387</geo></location>
+        <note>「品川行の切符」の行先・概値</note>
+      </place>
+      <place xml:id="shiodome">
+        <placeName>汐留</placeName>
+        <location><geo>35.6635 139.7595</geo></location>
+        <note>汐留の堀割・石橋。現・港区東新橋・概値</note>
+      </place>
+      <place xml:id="hamagoten">
+        <placeName>お浜御殿</placeName>
+        <location><geo>35.6597 139.7634</geo></location>
+        <note>浜御殿(現・浜離宮恩賜庭園)・概値</note>
+      </place>
+      <place xml:id="konparu">
+        <placeName>金春</placeName>
+        <location><geo>35.6688 139.7605</geo></location>
+        <note>金春通り・金春新道(銀座八丁目)。煉瓦造りの横町・概値</note>
+      </place>
+      <place xml:id="shinbashi">
+        <placeName>新橋</placeName>
+        <location><geo>35.666 139.7583</geo></location>
+        <note>新橋。停車場・花街を含む一帯。表層形「新橋」「しん橋」を統合・概値</note>
+      </place>
+      <place xml:id="tsukishima">
+        <placeName>月島</placeName>
+        <location><geo>35.665 139.783</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="metropole">
+        <placeName>メトロポオル・ホテル</placeName>
+        <location><geo>35.6653 139.777</geo></location>
+        <note>築地居留地(現・明石町)にあった外国人向けホテル・概値</note>
+      </place>
+      <place xml:id="hiyoshicho">
+        <placeName>日吉町</placeName>
+        <location><geo>35.668 139.7615</geo></location>
+        <note>京橋区日吉町。現・銀座八丁目付近・概値</note>
+      </place>
+      <place xml:id="printemps">
+        <placeName>プランタン</placeName>
+        <location><geo>35.668 139.7615</geo></location>
+        <note>カフェー・プランタン(1911開店)。本文の「日吉町にプランタンが出来た」に基づく位置・概値</note>
+      </place>
+      <place xml:id="owaricho">
+        <placeName>尾張町</placeName>
+        <location><geo>35.6716 139.7655</geo></location>
+        <note>京橋区尾張町。現・銀座五〜六丁目(銀座四丁目交差点付近)・概値</note>
+      </place>
+      <place xml:id="cafe-ginza">
+        <placeName>カフェエ・ギンザ</placeName>
+        <location><geo>35.6716 139.7655</geo></location>
+        <note>尾張町の角に開店しつつあったカフェー。本文の記述に基づく位置・概値</note>
+      </place>
+      <place xml:id="maison-konosu">
+        <placeName>メイゾン・コオノス</placeName>
+        <location><geo>35.6845 139.7845</geo></location>
+        <note>メイゾン鴻乃巣。日本橋小網町の河岸通りにあった西洋料理店・概値</note>
+      </place>
+      <place xml:id="koamicho">
+        <placeName>小網町</placeName>
+        <location><geo>35.6845 139.7845</geo></location>
+        <note>日本橋小網町・概値</note>
+      </place>
+      <place xml:id="saruwakacho">
+        <placeName>猿若町</placeName>
+        <location><geo>35.7175 139.7955</geo></location>
+        <note>浅草猿若町。江戸三座の芝居町・概値</note>
+      </place>
+      <place xml:id="fukagawa">
+        <placeName>深川</placeName>
+        <location><geo>35.679 139.802</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="ryogokubashi">
+        <placeName>両国橋</placeName>
+        <location><geo>35.6944 139.7885</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="yanagibashi">
+        <placeName>柳橋</placeName>
+        <location><geo>35.6975 139.7855</geo></location>
+        <note>神田川が隅田川に注ぐ所の橋。花街の名でもある・概値</note>
+      </place>
+      <place xml:id="yoshiwara">
+        <placeName>吉原</placeName>
+        <location><geo>35.723 139.795</geo></location>
+        <note>新吉原遊廓・概値</note>
+      </place>
+      <place xml:id="kinpei">
+        <placeName>金瓶大黒</placeName>
+        <note>吉原の妓楼。三名妓の噂で知られた。廓内の位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7138 139.777</geo></location>
+        <note>「上野の音楽学校」「上野の戦争」・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>上田敏の住地として言及・概値</note>
+      </place>
+      <place xml:id="yokohama">
+        <placeName>横浜</placeName>
+        <location><geo>35.4437 139.638</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="paris">
+        <placeName>巴里</placeName>
+        <location><geo>48.8566 2.3522</geo></location>
+        <note>パリ・概値</note>
+      </place>
+      <place xml:id="rivoli">
+        <placeName>リボリ</placeName>
+        <location><geo>48.8626 2.3364</geo></location>
+        <note>パリのリヴォリ通り(rue de Rivoli)。アーケードの列柱で知られる・概値</note>
+      </place>
+      <place xml:id="america">
+        <placeName>亜米利加</placeName>
+        <location><geo>39.8283 -98.5795</geo></location>
+        <note>アメリカ合衆国。国名・概値</note>
+      </place>
+      <place xml:id="india">
+        <placeName>印度</placeName>
+        <location><geo>20.5937 78.9629</geo></location>
+        <note>インド。国名・概値</note>
+      </place>
+      <place xml:id="france">
+        <placeName>仏蘭西</placeName>
+        <location><geo>46.2276 2.2137</geo></location>
+        <note>フランス。国名・概値</note>
+      </place>
+      <place xml:id="greece">
+        <placeName>希臘</placeName>
+        <location><geo>39.0742 21.8243</geo></location>
+        <note>ギリシア。国名・概値。本文は交詢社の「希臘風の人物を描いた壁画」</note>
+      </place>
+      <place xml:id="yamanote">
+        <placeName>山の手</placeName>
+        <note>東京の山の手(武蔵野台地上の市街地域)。「山の手の垣根道」「山の手の書斎」。範囲が広く一地点に定まらないため座標なし</note>
+      </place>
+      <place xml:id="shitamachi">
+        <placeName>下町</placeName>
+        <note>東京の下町(隅田川西岸の低地の市街地域)。「下町の俳人某子の邸宅」。範囲が広く一地点に定まらないため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>銀座</head>
+        <p>この一、二年何のかのと<ruby><rb><placeName ref="#ginza">銀座</placeName>界隈</rb><rt>ぎんざかいわい</rt></ruby>を通る事が多くなった。知らず知らず自分は<placeName ref="#ginza">銀座</placeName>近辺の種々なる方面の観察者になっていたのである。</p>
+        <p><ruby><rb>唯</rb><rt>ただ</rt></ruby>不幸にして自分は現代の政治家と<ruby><rb>交</rb><rt>まじわ</rt></ruby>らなかったためまだ一度もあの貸座敷然たる<placeName ref="#matsumotoro"><ruby><rb>松本楼</rb><rt>まつもとろう</rt></ruby></placeName>に登る機会がなかったが、しかし交際と称する浮世の義理は自分にも炎天にフロックコオトをつけさせ<placeName ref="#teikoku-hotel">帝国ホテル</placeName>や<placeName ref="#seiyoken">精養軒</placeName>や<placeName ref="#kojunsha"><ruby><rb>交詢社</rb><rt>こうじゅんしゃ</rt></ruby></placeName>の階段を昇降させた。<placeName ref="#yurakuza"><ruby><rb>有楽座</rb><rt>ゆうらくざ</rt></ruby></placeName><placeName ref="#teikoku-gekijo">帝国劇場</placeName><placeName ref="#kabukiza">歌舞伎座</placeName>などを見物した帰りには必ず<placeName ref="#ginza">銀座</placeName>のビイヤホオルに休んで最終の電車のなくなるのも構わず同じ見物帰りの友達と<ruby><rb>端</rb><rt>はて</rt></ruby>しもなく劇評を戦わすのであった。<placeName ref="#ueno">上野</placeName>の音楽学校に開かれる演奏会の切符を売る西洋の楽器店は、二軒とも人の知っている通り<placeName ref="#ginza">銀座</placeName>通りにある。新しい美術品の<ruby><rb>展覧場</rb><rt>てんらんじょう</rt></ruby>「<placeName ref="#goraku"><ruby><rb>吾楽</rb><rt>ごらく</rt></ruby></placeName>」というものが建築されたのは<placeName ref="#hakkancho"><ruby><rb>八官町</rb><rt>はちかんちょう</rt></ruby></placeName>の通りである。雑誌『三田文学』を発売する<ruby><rb>書肆</rb><rt>しょし</rt></ruby>は<placeName ref="#tsukiji"><ruby><rb>築地</rb><rt>つきじ</rt></ruby></placeName>の<placeName ref="#honganji"><ruby><rb>本願寺</rb><rt>ほんがんじ</rt></ruby></placeName>に近い処にある。<ruby><rb>華美</rb><rt>はで</rt></ruby>な<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>を着た女たちが大勢、殊に夜の十二時近くなってから、草花を買いに出るお<ruby><rb>地蔵</rb><rt>じぞう</rt></ruby>さまの<ruby><rb>縁日</rb><rt>えんにち</rt></ruby>は<placeName ref="#sanjukkenbori"><ruby><rb>三十間堀</rb><rt>さんじっけんぼり</rt></ruby></placeName>の<ruby><rb>河岸通</rb><rt>かしどおり</rt></ruby>にある。</p>
+        <p>逢うごとにいつもその悠然たる貴族的態度の美と洗錬された<placeName ref="#edo">江戸</placeName>風の性行とが、そぞろに<placeName ref="#kuramae"><ruby><rb>蔵前</rb><rt>くらまえ</rt></ruby></placeName>の旦那衆を想像せしむる我が敬愛する<placeName ref="#shitamachi"><ruby><rb>下町</rb><rt>したまち</rt></ruby></placeName>の俳人<ruby><rb>某子</rb><rt>なにがしし</rt></ruby>の邸宅は、<persName ref="#danjuro"><ruby><rb>団十郎</rb><rt>だんじゅうろう</rt></ruby></persName>の旧宅とその広大なる庭園を隣り合せにしている。高い<ruby><rb>土塀</rb><rt>どべい</rt></ruby>と深い植込とに電車の響も<ruby><rb>自</rb><rt>おの</rt></ruby>ずと遠い嵐のように<ruby><rb>軟</rb><rt>やわら</rt></ruby>げられてしまうこの<ruby><rb>家</rb><rt>や</rt></ruby>の茶室に、自分は折曲げて坐る足の痛さをも<ruby><rb>厭</rb><rt>いと</rt></ruby>わず、<ruby><rb>幾度</rb><rt>いくたび</rt></ruby>か湯のたぎる茶釜の<ruby><rb>調</rb><rt>しらべ</rt></ruby>を聞きながら礼儀のない現代に対する反感を休めさせた。</p>
+        <p><ruby><rb>建込</rb><rt>たてこ</rt></ruby>んだ表通りの人家に<ruby><rb>遮</rb><rt>さえ</rt></ruby>ぎられて、すぐ<ruby><rb>真向</rb><rt>まむかい</rt></ruby>に立っている<ruby><rb>彼</rb><rt>か</rt></ruby>の高い<placeName ref="#honganji">本願寺</placeName>の屋根さえ、<ruby><rb>何処</rb><rt>どこ</rt></ruby>にあるのか分らぬような静なこの<ruby><rb>辺</rb><rt>へん</rt></ruby>の裏通には、正しい人たちの決して案内知らぬ<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>が幾筋もある。こういう横町の二階の欄干から、自分は或る雨上りの夏の<ruby><rb>夜</rb><rt>よ</rt></ruby>に通り過る<ruby><rb>新内</rb><rt>しんない</rt></ruby>を呼び止めて<ruby><rb>酔月情話</rb><rt>すいげつじょうわ</rt></ruby>を語らせて喜んだ事がある。また梅が散る<ruby><rb>春寒</rb><rt>はるさむ</rt></ruby>の昼過ぎ、<ruby><rb>摺硝子</rb><rt>すりガラス</rt></ruby>の<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>を閉めきった座敷の<ruby><rb>中</rb><rt>なか</rt></ruby>は<ruby><rb>黄昏</rb><rt>たそがれ</rt></ruby>のように薄暗く、老妓ばかりが寄集った<ruby><rb>一中節</rb><rt>いっちゅうぶし</rt></ruby>のさらいの会に、自分は<ruby><rb>光沢</rb><rt>つや</rt></ruby>のない古びた音調に、ともすれば疲れがちなる哀傷を味った事もあった。</p>
+        <p>しかしまた自分の不幸なるコスモポリチズムは、自分をしてそのヴェランダの<ruby><rb>外</rb><rt>そと</rt></ruby>なる植込の間から、水蒸気の多い暖な冬の<ruby><rb>夜</rb><rt>よ</rt></ruby>などは、<ruby><rb>夜</rb><rt>よる</rt></ruby>の水と夜の<placeName ref="#tsukishima"><ruby><rb>月島</rb><rt>つきしま</rt></ruby></placeName>と夜の船の影とが殊更美しく見える<placeName ref="#metropole">メトロポオル・ホテル</placeName>の食堂をも忘れさせない。世界の<ruby><rb>如何</rb><rt>いか</rt></ruby>なる片隅をも<ruby><rb>我家</rb><rt>わがや</rt></ruby>のように楽しく談笑している外国人の中に交って、自分ばかりは唯独り心淋しく傾けるキァンチの<ruby><rb>一壜</rb><rt>ひとびん</rt></ruby>に年を追うて漸く消えかかる遠い国の思出を呼び戻す事もあった。</p>
+        <p><placeName ref="#ginza">銀座</placeName>界隈には何という事なく<ruby><rb>凡</rb><rt>すべ</rt></ruby>ての新しいものと古いものとがある。一国の首都がその権勢と<ruby><rb>富貴</rb><rt>ふうき</rt></ruby>とに<ruby><rb>自</rb><rt>おのず</rt></ruby>から<ruby><rb>蒐集</rb><rt>しゅうしゅう</rt></ruby>する凡ての物は、皆ここに陳列せられてある。われわれは新しい流行の帽子を買うためにも、遠い国から来た葡萄酒を買うためにも、無論この<placeName ref="#ginza">銀座</placeName>へ来ねばならぬが、それと同時に、<placeName ref="#yurakuza">有楽座</placeName>などで聞く事を好まない「昔」の歌をば、なりたけ「昔」らしい周囲の<ruby><rb>中</rb><rt>うち</rt></ruby>に聞き味おうとすればやはりこの<ruby><rb>辺</rb><rt>へん</rt></ruby>の特種な限られた場所を択ばなければならない。</p>
+        <p>自分は折々<placeName ref="#tengado"><ruby><rb>天下堂</rb><rt>てんがどう</rt></ruby></placeName>の三階の屋根裏に<ruby><rb>上</rb><rt>あが</rt></ruby>って都会の眺望を楽しんだ。<placeName ref="#yamazaki">山崎洋服店</placeName>の裁縫師でもなく、<placeName ref="#tenshodo"><ruby><rb>天賞堂</rb><rt>てんしょうどう</rt></ruby></placeName>の店員でもないわれわれが、<placeName ref="#ginza">銀座</placeName>界隈の<ruby><rb>鳥瞰図</rb><rt>ちょうかんず</rt></ruby>を<ruby><rb>楽</rb><rt>たのし</rt></ruby>もうとすれば、この<placeName ref="#tengado">天下堂</placeName>の<ruby><rb>梯子段</rb><rt>はしごだん</rt></ruby>を<ruby><rb>上</rb><rt>あが</rt></ruby>るのが一番<ruby><rb>軽便</rb><rt>けいべん</rt></ruby>な手段である。<ruby><rb>茲</rb><rt>ここ</rt></ruby>まで高く<ruby><rb>上</rb><rt>あが</rt></ruby>って見ると、<placeName ref="#tokyo">東京</placeName>の市街も下にいて見るほどに汚らしくはない。<date when="--10">十月</date>頃の晴れた空の<ruby><rb>下</rb><rt>した</rt></ruby>に一望<ruby><rb>尽</rb><rt>つく</rt></ruby>る処なき瓦屋根の海を見れば、やたらに突立っている電柱の丸太の浅間しさに<ruby><rb>呆</rb><rt>あき</rt></ruby>れながら、とにかく<placeName ref="#tokyo">東京</placeName>は大きな都会であるという事を感じ得るのである。</p>
+        <p>人家の屋根の上をば<ruby><rb>山手線</rb><rt>やまのてせん</rt></ruby>の電車が通る。それを越して<placeName ref="#kasumigaseki"><ruby><rb>霞</rb><rt>かすみ</rt></ruby>ヶ<ruby><rb>関</rb><rt>せき</rt></ruby></placeName>、<placeName ref="#hibiya"><ruby><rb>日比谷</rb><rt>ひびや</rt></ruby></placeName>、<placeName ref="#marunouchi"><ruby><rb>丸</rb><rt>まる</rt></ruby>の<ruby><rb>内</rb><rt>うち</rt></ruby></placeName>を見晴す景色と、<placeName ref="#shibakoen"><ruby><rb>芝公園</rb><rt>しばこうえん</rt></ruby></placeName>の森に対して<placeName ref="#shinagawawan"><ruby><rb>品川湾</rb><rt>しながわわん</rt></ruby></placeName>の一部と、また眼の下なる<placeName ref="#shiodome"><ruby><rb>汐留</rb><rt>しおどめ</rt></ruby></placeName>の<ruby><rb>堀割</rb><rt>ほりわり</rt></ruby>から引続いて、<placeName ref="#hamagoten">お<ruby><rb>浜御殿</rb><rt>はまごてん</rt></ruby></placeName>の深い<ruby><rb>木立</rb><rt>こだち</rt></ruby>と城門の白壁を望む景色とは、季節や時間の<ruby><rb>工合</rb><rt>ぐあい</rt></ruby>によっては、随分見飽きないほどに美しい事がある。</p>
+        <p>遠くの眺望から眼を転じて、直ぐ<ruby><rb>真下</rb><rt>まっした</rt></ruby>の街を<ruby><rb>見下</rb><rt>みおろ</rt></ruby>すと、<placeName ref="#ginza">銀座</placeName>の表通りと並行して、幾筋かの裏町は高さの揃った屋根と屋根との間を真直に貫き走っている。どの家にも必ず付いている<ruby><rb>物干台</rb><rt>ものほしだい</rt></ruby>が、<ruby><rb>小</rb><rt>ちいさ</rt></ruby>な菓子折でも並べたように見え、干してある赤い<ruby><rb>布</rb><rt>きれ</rt></ruby>や並べた鉢物の<ruby><rb>緑</rb><rt>みど</rt></ruby>りが、光線の<ruby><rb>軟</rb><rt>やわらか</rt></ruby>な薄曇の昼過ぎなどには、汚れた屋根と壁との間に驚くほど鮮かな色彩を輝かす。物干台から<ruby><rb>家</rb><rt>うち</rt></ruby>の中に<ruby><rb>這入</rb><rt>はい</rt></ruby>るべき窓の<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>が<ruby><rb>開</rb><rt>あ</rt></ruby>いている折には、自分は自由に二階の座敷では人が何をしているかを<ruby><rb>見透</rb><rt>みすか</rt></ruby>す。女が<ruby><rb>肩肌抜</rb><rt>かたはだぬ</rt></ruby>ぎで化粧をしている様やら、狭い勝手口の<ruby><rb>溝板</rb><rt>どぶいた</rt></ruby>の上で<ruby><rb>行水</rb><rt>ぎょうずい</rt></ruby>を使っているさままでを、すっかり見下してしまう事がある。<ruby><rb>尤</rb><rt>もっと</rt></ruby>も<placeName ref="#nihon">日本</placeName>の女が外から見える処で行水をつかうのは、『<ruby><rb>阿菊さん</rb><rt>マダムクリザンテエム</rt></ruby>』の著者を驚喜せしめた大事件であるが、これはわざわざ<placeName ref="#tengado">天下堂</placeName>の屋根裏に登らずとも、自分は<placeName ref="#yamanote">山の手</placeName>の垣根道で度々<ruby><rb>出遇</rb><rt>であ</rt></ruby>ってびっくりしているのである。この事を進めていえば、これまで種々なる方面の人から論じ出された<placeName ref="#nihon">日本</placeName>の家屋と国民性の問題を繰返すに過ぎまい。</p>
+        <p>われわれの生活は遠からず西洋のように、殊に<placeName ref="#america"><ruby><rb>亜米利加</rb><rt>アメリカ</rt></ruby></placeName>の都会のように変化するものたる事は<ruby><rb>誰</rb><rt>た</rt></ruby>が眼にも直ちに想像される事である。然らばこの問題を逆にして<ruby><rb>試</rb><rt>こころみ</rt></ruby>に<placeName ref="#tokyo">東京</placeName>の外観が遠からずして全く改革された<ruby><rb>暁</rb><rt>あかつき</rt></ruby>には、如何なる方面、如何なる隠れた処に、旧<placeName ref="#nihon">日本</placeName>の旧態が残されるかを想像して見るのも、皮肉な観察者には興味のないことではあるまい。実例は<placeName ref="#teikoku-gekijo">帝国劇場</placeName>の建築だけが純西洋風に出来上りながら、いつの間にかその大理石の柱のかげには旧芝居の<ruby><rb>名残</rb><rt>なご</rt></ruby>りなる<ruby><rb>簪屋</rb><rt>かんざしや</rt></ruby>だの飲食店などが発生繁殖して、遂に厳粛なる劇場の体面を保たせないようにしてしまった。<placeName ref="#ginza">銀座</placeName>の商店の改良と<placeName ref="#ginza">銀座</placeName>の街の敷石とは、将来如何なる進化の道によって、<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>に<ruby><rb>兵児帯</rb><rt>へこおび</rt></ruby>をしめた<ruby><rb>夕凉</rb><rt>ゆうすずみ</rt></ruby>の人の姿と、<ruby><rb>唐傘</rb><rt>からかさ</rt></ruby>に<ruby><rb>高足駄</rb><rt>たかあしだ</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>いた通行人との調和を取るに至るであろうか。<placeName ref="#kojunsha"><ruby><rb>交詢社</rb><rt>こうじゅんしゃ</rt></ruby></placeName>の広間に行くと、<ruby><rb><placeName ref="#greece">希臘</placeName>風</rb><rt>ギリシヤふう</rt></ruby>の人物を描いた「<ruby><rb>神の森</rb><rt>ボアサクレエ</rt></ruby>」の壁画の<ruby><rb>下</rb><rt>もと</rt></ruby>に、<ruby><rb>五</rb><rt>いつ</rt></ruby>ツ<ruby><rb>紋</rb><rt>もん</rt></ruby>の紳士や<ruby><rb>替</rb><rt>かわ</rt></ruby>り<ruby><rb>地</rb><rt>じ</rt></ruby>のフロックコオトを着た紳士が幾組となく対座して、<ruby><rb>囲碁仙集</rb><rt>いごせんしゅう</rt></ruby>をやっている。高い<ruby><rb>金箔</rb><rt>きんぱく</rt></ruby>の天井にパチリパチリと響き渡る碁石の音は、廊下を隔てた向うの<ruby><rb>室</rb><rt>へや</rt></ruby>から聞えて来る玉突のキュウの音に<ruby><rb>交</rb><rt>まじ</rt></ruby>わる。初めてこの光景に接した時自分は無論いうべからざる奇異なる感に打たれた。そしてこの奇異なる感は、如何なる理由によって呼起されたかを深く考え味わねばならなかった。<ruby><rb>数寄</rb><rt>すき</rt></ruby>を<ruby><rb>凝</rb><rt>こら</rt></ruby>した純<placeName ref="#edo">江戸</placeName>式の料理屋の小座敷には、活版屋の仕事場と同じように白い笠のついた電燈が天井からぶらさがっているばかりか遂には電気仕掛けの扇風器までが輸入された。要するに現代の生活においては<ruby><rb>凡</rb><rt>すべ</rt></ruby>ての固有純粋なるものは、東西の差別なく、互に噛み合い壊し合いしているのである。異人種間の混血児は特別なる注意の下に養育されない限り、その性情は概して両人種の欠点のみを遺伝するものだというが、<placeName ref="#nihon">日本</placeName>現代の生活は<ruby><rb>正</rb><rt>まさ</rt></ruby>しくかくの如きものであろう。</p>
+        <p><placeName ref="#ginza">銀座</placeName>界隈はいうまでもなく<placeName ref="#nihon">日本</placeName>中で最もハイカラな場所であるが、しかしここに一層皮肉な贅沢屋があって、もし西洋そのままの西洋料理を味おうとしたなら<placeName ref="#ginza">銀座</placeName>界隈の如何なる西洋料理屋もその目的には不適当なる事を発見するであろう。<placeName ref="#ginza">銀座</placeName>の文明と<placeName ref="#yokohama">横浜</placeName>のホテルとの間には歴然たる区別がある。そして<placeName ref="#yokohama">横浜</placeName>と<placeName ref="#india"><ruby><rb>印度</rb><rt>インド</rt></ruby></placeName>の殖民地と西洋との間にはまた<ruby><rb>梯子昇</rb><rt>はしごのぼ</rt></ruby>りに階段がついている。</p>
+        <p>ここにおいて、或る人は、<placeName ref="#teikoku-hotel">帝国ホテル</placeName>の西洋料理よりもむしろ露店の立ち喰いにトンカツの<ruby><rb>噯</rb><rt>おくび</rt></ruby>をかぎたいといった。露店で<ruby><rb>食</rb><rt>くら</rt></ruby>う豚の肉の油揚げは、既に西洋趣味を脱却して、しかも従来の<ruby><rb>天麩羅</rb><rt>てんぷら</rt></ruby>と<ruby><rb>牴触</rb><rt>ていしょく</rt></ruby>する事なく、更に別種の新しきものになり得ているからだ。カステラや<ruby><rb>鴨南蛮</rb><rt>かもなんばん</rt></ruby>が<placeName ref="#nagasaki">長崎</placeName>を経て内地に進み入り、遂に<ruby><rb>渾然</rb><rt>こんぜん</rt></ruby>たる<placeName ref="#nihon">日本</placeName>的のものになったと同一の実例であろう。</p>
+        <p>自分はいつも<ruby><rb>人力車</rb><rt>じんりきしゃ</rt></ruby>と<ruby><rb>牛鍋</rb><rt>ぎゅうなべ</rt></ruby>とを、<date when="1868">明治時代</date>が西洋から輸入して作ったものの<ruby><rb>中</rb><rt>うち</rt></ruby>で一番成功したものと信じている。<ruby><rb>敢</rb><rt>あえ</rt></ruby>て時間の経過が今日の<ruby><rb>吾人</rb><rt>ごじん</rt></ruby>をして人力車と牛鍋とに反感を抱かしめないのでは決してない。牛鍋の妙味は「鍋」という従来の古い形式の<ruby><rb>中</rb><rt>うち</rt></ruby>に「牛肉」という新しい内容を収めさせた処にある。人力車は<ruby><rb>玩具</rb><rt>おもちゃ</rt></ruby>のように<ruby><rb>小</rb><rt>ちいさ</rt></ruby>く、何処となく滑稽な形をなし最初から<placeName ref="#nihon">日本</placeName>の生活に適当し調和するように発明されたものである。この二つはそのままの輸入でもなく無意味な模倣でもない。少くとも発明という賛辞に価するだけに発明者の苦心と創造力とが現われている。即ち国民性を通過して然る後に現れ出たものである。</p>
+        <p>こういう点から見て、自分は維新前後における西洋文明の輸入には、甚だ敬服すべきものが多いように思っている。徳川幕府が<placeName ref="#france"><ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby></placeName>の士官を<ruby><rb>招聘</rb><rt>しょうへい</rt></ruby>して練習させた歩兵の服装――<ruby><rb>陣笠</rb><rt>じんがさ</rt></ruby>に<ruby><rb>筒袖</rb><rt>つつそで</rt></ruby>の<ruby><rb>打割羽織</rb><rt>ぶっさきばおり</rt></ruby>、それに昔のままの大小をさした<ruby><rb>服装</rb><rt>いでたち</rt></ruby>は、純粋の洋服となった今日の軍服よりも、胴が長く足の曲った日本人には遥かに<ruby><rb>能</rb><rt>よ</rt></ruby>く適当していた。洋装の軍服を着れば如何なる名将といえども、威儀風采において日本人は到底西洋の<ruby><rb>下士官</rb><rt>スウゾフ</rt></ruby>にも肩を比する事は出来ない。<ruby><rb>異</rb><rt>ちが</rt></ruby>った人種はよろしく、その容貌体格習慣挙動の凡てを<ruby><rb>鑑</rb><rt>かんが</rt></ruby>みて、一様には論じられない特種のものを造り出すだけの苦心と勇気とを要する。自分は<placeName ref="#ueno"><ruby><rb>上野</rb><rt>うえの</rt></ruby></placeName>の戦争の絵を見る<ruby><rb>度</rb><rt>た</rt></ruby>びに、官軍の<ruby><rb>冠</rb><rt>かむ</rt></ruby>った紅白の<ruby><rb>毛甲</rb><rt>けかぶと</rt></ruby>を美しいものだと思い、そして<persName ref="#napoleon">ナポレオン</persName>帝政当時の<ruby><rb>胸甲騎兵</rb><rt>きょうこうきへい</rt></ruby>の<ruby><rb>甲</rb><rt>かぶと</rt></ruby>を連想する。</p>
+        <p><placeName ref="#ginza">銀座</placeName>の表通りを去って、いわゆる<placeName ref="#konparu"><ruby><rb>金春</rb><rt>こんぱる</rt></ruby></placeName>の<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>を歩み、両側ともに今では古びて薄暗くなった<ruby><rb>煉瓦造</rb><rt>れんがづく</rt></ruby>りの長屋を見ると、自分はやはり<date when="1868">明治初年</date>における西洋文明輸入の当時を懐しく思返すのである。説明するまでもなく<placeName ref="#konparu">金春</placeName>の煉瓦造りは、土蔵のように壁塗りになっていて、赤い煉瓦の<ruby><rb>生地</rb><rt>きじ</rt></ruby>を露出させてはいない。家の軒はいずれも長く突き<ruby><rb>出</rb><rt>い</rt></ruby>で<ruby><rb>円</rb><rt>まる</rt></ruby>い柱に支えられている。今日ではこのアアチの下をば無用の<ruby><rb>空地</rb><rt>くうち</rt></ruby>にして置くだけの余裕がなくって、<ruby><rb>戸々</rb><rt>ここ</rt></ruby><ruby><rb>勝手</rb><rt>かって</rt></ruby>にこれを改造しあるいは破壊してしまった。しかし当初この煉瓦造を経営した建築者の理想は<ruby><rb>家並</rb><rt>やな</rt></ruby>みの高さを一致させた上に、家ごとの軒の半円形と円柱との列によって、丁度<placeName ref="#rivoli">リボリ</placeName>の街路を見るように、美しいアルカアドの眺めを作らせるつもりであったに違いない。二、三十年<ruby><rb>前</rb><rt>ぜん</rt></ruby>の風流才子は南国風なあの石の柱と軒の<ruby><rb>弓形</rb><rt>アーチ</rt></ruby>とがその蔭なる<placeName ref="#edo">江戸</placeName><ruby><rb>生粋</rb><rt>きっすい</rt></ruby>の<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>と<ruby><rb>御神燈</rb><rt>ごしんとう</rt></ruby>とに対して、如何に不思議な新しい調和を作り出したかを必ず知っていた事であろう。</p>
+        <p><date when="1868">明治の初年</date>は一方において西洋文明を丁寧に輸入し綺麗に模倣し正直に<ruby><rb>工風</rb><rt>くふう</rt></ruby>を<ruby><rb>凝</rb><rt>こら</rt></ruby>した時代である。と同時に、一方においては、徳川幕府の圧迫を脱した<placeName ref="#edo">江戸</placeName>芸術の残りの花が、<ruby><rb>目覚</rb><rt>めざま</rt></ruby>しくも一時に二度目の春を見せた時代である。劇壇において<persName ref="#shikan"><ruby><rb>芝翫</rb><rt>しかん</rt></ruby></persName>、<persName ref="#hikosaburo"><ruby><rb>彦三郎</rb><rt>ひこさぶろう</rt></ruby></persName>、<persName ref="#tanosuke"><ruby><rb>田之助</rb><rt>たのすけ</rt></ruby></persName>の名を挙げ得ると共に文学には<persName ref="#mokuami"><ruby><rb>黙阿弥</rb><rt>もくあみ</rt></ruby></persName>、<persName ref="#robun"><ruby><rb>魯文</rb><rt>ろぶん</rt></ruby></persName>、<persName ref="#ryuhoku"><ruby><rb>柳北</rb><rt>りゅうほく</rt></ruby></persName>の如き才人が現れ、画界には<persName ref="#kyosai"><ruby><rb>暁斎</rb><rt>ぎょうさい</rt></ruby></persName>や<persName ref="#yoshitoshi"><ruby><rb>芳年</rb><rt>よしとし</rt></ruby></persName>の名が<ruby><rb>轟</rb><rt>とどろ</rt></ruby>き渡った。<persName ref="#sakaigawa"><ruby><rb>境川</rb><rt>さかいがわ</rt></ruby></persName>や<persName ref="#jinmaku"><ruby><rb>陣幕</rb><rt>じんまく</rt></ruby></persName>の如き<ruby><rb>相撲</rb><rt>すもう</rt></ruby>はその<ruby><rb>後</rb><rt>ご</rt></ruby>には一人もない。<persName ref="#encho"><ruby><rb>円朝</rb><rt>えんちょう</rt></ruby></persName>の<ruby><rb>後</rb><rt>のち</rt></ruby>に<persName ref="#encho">円朝</persName>は出なかった。<placeName ref="#yoshiwara"><ruby><rb>吉原</rb><rt>よしわら</rt></ruby></placeName>は大<placeName ref="#edo">江戸</placeName>の昔よりも更に一層の繁栄を極め、<placeName ref="#kinpei"><ruby><rb>金瓶大黒</rb><rt>きんぺいだいこく</rt></ruby></placeName>の三名妓の噂が<ruby><rb>一世</rb><rt>いっせ</rt></ruby>の語り草となった位である。</p>
+        <p><placeName ref="#ryogokubashi">両国橋</placeName>には不朽なる浮世絵の背景がある。<placeName ref="#yanagibashi"><ruby><rb>柳橋</rb><rt>やなぎばし</rt></ruby></placeName>は動しがたい伝説の権威を<ruby><rb>背負</rb><rt>せお</rt></ruby>っている。それに対して自分は<ruby><rb>艶</rb><rt>なまめ</rt></ruby>かしい意味において<placeName ref="#shinbashi">しん橋</placeName>の名を思出す時には、いつも<date when="1868">明治の初年</date><ruby><rb>返咲</rb><rt>かえりざ</rt></ruby>きした第二の<placeName ref="#edo">江戸</placeName>を追想せねばならぬ。無論、実際よりもなお<ruby><rb>麗</rb><rt>うるわ</rt></ruby>しくなお立派なものにして<ruby><rb>憬慕</rb><rt>けいぼ</rt></ruby>するのである。</p>
+        <p>現代の<placeName ref="#nihon">日本</placeName>ほど時間の早く経過する国が世界中にあろうか。今過ぎ去ったばかりの<ruby><rb>昨日</rb><rt>きのう</rt></ruby>の事をも全く<ruby><rb>異</rb><rt>ちが</rt></ruby>った時代のように回想しなければならぬ事が沢山にある。<placeName ref="#yurakuza">有楽座</placeName>を<placeName ref="#nihon">日本</placeName>唯一の新しい西洋式の劇場として眺めたのも僅に二、三年間の事に過ぎなかった。われわれが<placeName ref="#shinbashi">新橋</placeName>の<ruby><rb>停車場</rb><rt>ていしゃじょう</rt></ruby>を別れの場所、出発の場所として描写するのも、また僅々四、五年間の事であろう。</p>
+        <p>今では<placeName ref="#hiyoshicho"><ruby><rb>日吉町</rb><rt>ひよしちょう</rt></ruby></placeName>に<placeName ref="#printemps">プランタン</placeName>が出来たし、<placeName ref="#owaricho"><ruby><rb>尾張町</rb><rt>おわりちょう</rt></ruby></placeName>の<ruby><rb>角</rb><rt>かど</rt></ruby>には<placeName ref="#cafe-ginza">カフェエ・ギンザ</placeName>が出来かかっている。また若い文学者間には有名な<placeName ref="#maison-konosu">メイゾン・コオノス</placeName>が<placeName ref="#koamicho"><ruby><rb>小網町</rb><rt>こあみちょう</rt></ruby></placeName>の<ruby><rb>河岸通</rb><rt>かしどお</rt></ruby>りを去って、<placeName ref="#ginza">銀座</placeName>附近に出て来るのも近い<ruby><rb>中</rb><rt>うち</rt></ruby>だとかいう噂がある。しかしそういう適当な休み場所がまだ出来なかった去年頃まで、自分は友達を待ち合わしたり、あるいは散歩の疲れた足を休めたり、または単に<ruby><rb>往来</rb><rt>ゆきき</rt></ruby>の人の混雑を眺めるためには、<placeName ref="#shinbashi">新橋</placeName>停車場内の待合所を<ruby><rb>択</rb><rt>えら</rt></ruby>ぶがよいと思っていた。</p>
+        <p>その頃には<placeName ref="#ginza">銀座</placeName>界隈には、已にカフェエや喫茶店やビイヤホオルや新聞縦覧所などいう名前をつけた飲食店は幾軒もあった。けれども、それらはいずれも自分の目的には適しない。一時間ばかりも足を休めて友達とゆっくり話をしようとするには、これまでの習慣で、非常に多く物を食わねばならぬ。ビイル一杯が長くて十五分間、その店のお客たる資格を作るものとすれば、一時間に対して飲めない口にもなお四杯の<ruby><rb>満</rb><rt>まん</rt></ruby>を引かねばならない。然らずば何となく気が<ruby><rb>急</rb><rt>せ</rt></ruby>いて、出て行けがしにされるような<ruby><rb>僻</rb><rt>ひが</rt></ruby>みが起って、どうしても長く腰を落ち付けている事が出来ない。</p>
+        <p>これに反して停車場内の待合所は、最も自由で最も居心地よく、<ruby><rb>聊</rb><rt>いささ</rt></ruby>かの<ruby><rb>気兼</rb><rt>きが</rt></ruby>ねもいらない無類上等の <ruby><rb>Café</rb><rt>カフェエ</rt></ruby> である。耳の遠い髪の臭い薄ぼんやりした<ruby><rb>女</rb><rt>おんな</rt></ruby>ボオイに、義理一遍のビイルや紅茶を命ずる面倒もなく、一円札に対する<ruby><rb>剰銭</rb><rt>つりせん</rt></ruby>を五分もかかって<ruby><rb>持</rb><rt>もつ</rt></ruby>て来るのに気をいら立てる必要もなく、<ruby><rb>這入</rb><rt>はい</rt></ruby>りたい時に勝手に這入って、出たい時には勝手に出られる。自分は<placeName ref="#yamanote">山の手</placeName>の書斎の沈静した空気が、時には余りに<ruby><rb>切</rb><rt>せつ</rt></ruby>なく自分に対して、休まずに勉強しろ、早く立派なものを書け、むつかしい本を読めというように、心を鞭打つ如く感じさせる折には、なりたけ読みやすい本を手にして、この待合所の大きな<ruby><rb>皮張</rb><rt>かわばり</rt></ruby>の<ruby><rb>椅子</rb><rt>いす</rt></ruby>に腰をかけるのであった。冬には暖い火が<ruby><rb>焚</rb><rt>た</rt></ruby>いてある。<ruby><rb>夜</rb><rt>よる</rt></ruby>は明い<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>が輝いている。そしてこの広い一室の<ruby><rb>中</rb><rt>なか</rt></ruby>にはあらゆる階級の男女が、時としてはその波瀾ある生涯の一端を傍観させてくれる事すらある。<persName ref="#bordeaux"><ruby><rb>Henri</rb><rt>アンリイ</rt></ruby> <ruby><rb>Bordeaux</rb><rt>ボルドオ</rt></ruby></persName> という人の或る旅行記の序文に、手荷物を停車場に預けて置いたまま、汽車の汽笛の聞える附近の宿屋に寝泊りして、毎日の食事さえも停車場内の料理屋で<ruby><rb>準</rb><rt>ととの</rt></ruby>え、<ruby><rb>何時</rb><rt>なんどき</rt></ruby>にても<ruby><rb>直様</rb><rt>すぐさま</rt></ruby>出発し得られるような境遇に身を置きながら、一向に<placeName ref="#paris"><ruby><rb>巴里</rb><rt>パリー</rt></ruby></placeName>を離れず、かえって旅人のような心持で<placeName ref="#paris">巴里</placeName>の町々を<ruby><rb>彷徨</rb><rt>ほうこう</rt></ruby>している男の話が書いてある。<placeName ref="#shinbashi">新橋</placeName>の待合所にぼんやり腰をかけて、<ruby><rb>急</rb><rt>いそが</rt></ruby>しそうな下駄の響と鋭い汽笛の声を聞いていると、いながらにして旅に出たような、自由な淋しい<ruby><rb>好</rb><rt>い</rt></ruby>い心持がする。<persName ref="#ueda-bin"><ruby><rb>上田敏</rb><rt>うえだびん</rt></ruby></persName>先生もいつぞや上京された時自分に向って、<placeName ref="#kyoto">京都</placeName>の<ruby><rb>住</rb><rt>すま</rt></ruby>いもいわば旅である。<placeName ref="#tokyo">東京</placeName>の宿も今では旅である。こうして歩いているのは好い心持だといわれた事がある。</p>
+        <p>自分は動いている生活の物音の<ruby><rb>中</rb><rt>なか</rt></ruby>に、淋しい心持を<ruby><rb>漂</rb><rt>ただよ</rt></ruby>わせるため、停車場の待合室に腰をかける機会の多い事を望んでいる。何のために<ruby><rb>茲</rb><rt>ここ</rt></ruby>に来るのかと駅夫に訊問された時の用意にと自分は見送りの入場券か<placeName ref="#shinagawa">品川</placeName>行の切符を無益に買い込む事を辞さないのである。</p>
+        <p>再びいう<placeName ref="#nihon">日本</placeName>の十年間は西洋の一世紀にも相当する。<placeName ref="#sanjukkenbori">三十間堀</placeName>の<ruby><rb>河岸通</rb><rt>かしどおり</rt></ruby>には昔の船宿が二、三軒残っている。自分はそれらの家の広い店先の障子を見ると、母がまだ娘であった時分この<ruby><rb>辺</rb><rt>へん</rt></ruby>から<placeName ref="#saruwakacho"><ruby><rb>猿若町</rb><rt>さるわかちょう</rt></ruby></placeName>の芝居見物に行くには、<ruby><rb>猪牙船</rb><rt>ちょきぶね</rt></ruby>に<ruby><rb>重詰</rb><rt>じゅうづめ</rt></ruby>の食事まで用意して、堀割から堀割をつたわって行ったとかいわれた話をば、いかにも遠い時代の夢物語のように思い返す。自分がそもそも最初に<placeName ref="#fukagawa">深川</placeName>の方面へ出掛けて行ったのもやはりこの<placeName ref="#shiodome"><ruby><rb>汐留</rb><rt>しおどめ</rt></ruby></placeName>の<ruby><rb>石橋</rb><rt>いしばし</rt></ruby>の下から出発する<ruby><rb>小</rb><rt>ちいさ</rt></ruby>な石油の蒸汽船に乗ったのであるが、それすら今では既に既に消滅してしまった時代の逸話となった。</p>
+        <p><placeName ref="#ginza">銀座</placeName>と<placeName ref="#ginza">銀座</placeName>の界隈とはこれから先も一日一日と変って行くであろう。丁度活動写真を<ruby><rb>見詰</rb><rt>みつ</rt></ruby>める子供のように、自分は休みなく変って行く時勢の絵巻物をば眼の<ruby><rb>痛</rb><rt>いたく</rt></ruby>なるまで見詰めていたい。</p>
+        <p><date when="1911-07">明治四十四年七月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>

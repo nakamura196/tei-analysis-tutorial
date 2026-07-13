@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>みだれ髪</title>
+        <author>与謝野晶子</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>みだれ髪</title><author>与謝野晶子</author>
+          <note>青空文庫。底本：「みだれ髪」新潮文庫、新潮社。2000（平成12）年1月1日発行。底本の親本：「みだれ髪」名著複刻全集　近代文学館、日本近代文学館。1968（昭和43）年12月発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000885/card51307.html">https://www.aozora.gr.jp/cards/000885/card51307.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="fujishima">
+        <persName>藤島武二</persName>
+        <note>藤島武二(1867–1943)。洋画家。本歌集の装幀・表紙画を担当し、巻頭の断り書きで「藤島武二先生の意匠」と記される</note>
+      </person>
+      <person xml:id="titian">
+        <persName>チチアン</persName>
+        <note>ティツィアーノ・ヴェチェッリオ(Tiziano Vecellio、1490頃–1576)。ヴェネツィア派の画家。「やれ壁にチチアンが名はつらかりき」と言及される</note>
+      </person>
+      <person xml:id="rengetsu">
+        <persName>蓮月</persName>
+        <note>大田垣蓮月(1791–1875)。幕末の尼僧歌人・陶芸家。京都に庵を結んだ。「蓮月が庵のあとに出でぬ」と旧跡が詠まれる</note>
+      </person>
+      <person xml:id="rihaku">
+        <persName>李青蓮</persName>
+        <note>李白(701–762)。唐の詩人。号は青蓮居士。「君が前に李青蓮説く」と言及される</note>
+      </person>
+      <person xml:id="miroku">
+        <persName>弥勒</persName>
+        <note>弥勒菩薩。仏教の未来仏。「弥勒の名をば夕に喚びぬ」と祈りの対象として現れる</note>
+      </person>
+      <person xml:id="rushana">
+        <persName>盧遮那仏</persName>
+        <note>盧舎那仏(毘盧遮那仏)。「若葉木立の中の盧遮那仏」と詠まれ、奈良・東大寺大仏を指すと解される</note>
+      </person>
+      <person xml:id="david">
+        <persName>ダビデ</persName>
+        <note>ダビデ。旧約聖書の王で『詩篇』の作者とされる。「ダビデの歌を誦せむには」と言及される</note>
+      </person>
+      <person xml:id="komachi">
+        <persName>小町</persName>
+        <note>小野小町。平安前期の歌人・伝説的美女。「小町のはてを祈れと去にぬ」と、衰えゆく美の喩えとして言及される</note>
+      </person>
+      <person xml:id="suimei">
+        <persName>酔茗</persName>
+        <note>河井酔茗(1874–1965)。詩人。詞書「酔茗の君の詩集に」で、その詩集への感想として詠まれる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kyoto">
+        <placeName>京</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都・概値。「京の山」「西の京」「春の京」など、本歌集の主要な舞台</note>
+      </place>
+      <place xml:id="shimogyo">
+        <placeName>下京</placeName>
+        <location><geo>34.993 135.758</geo></location>
+        <note>京都の下京・概値</note>
+      </place>
+      <place xml:id="gion">
+        <placeName>祇園</placeName>
+        <location><geo>35.0037 135.7752</geo></location>
+        <note>京都の祇園・概値</note>
+      </place>
+      <place xml:id="kiyomizu">
+        <placeName>清水</placeName>
+        <location><geo>34.9949 135.785</geo></location>
+        <note>京都の清水寺・概値</note>
+      </place>
+      <place xml:id="kiyomizuzaka">
+        <placeName>清水坂</placeName>
+        <location><geo>34.995 135.7805</geo></location>
+        <note>清水寺へ上る坂。鳥辺野に接する・概値</note>
+      </place>
+      <place xml:id="kamogawa">
+        <placeName>加茂川</placeName>
+        <location><geo>35.008 135.772</geo></location>
+        <note>京都の鴨川。本文では「加茂川」「加茂の河」の両形で現れる・概値(四条付近を代表点とする)</note>
+      </place>
+      <place xml:id="shijobashi">
+        <placeName>四条橋</placeName>
+        <location><geo>35.0038 135.7716</geo></location>
+        <note>京都の四条大橋・概値</note>
+      </place>
+      <place xml:id="sanbongi">
+        <placeName>三本樹</placeName>
+        <location><geo>35.021 135.771</geo></location>
+        <note>三本木。加茂川西岸(現在の京都市上京区)にあった花街・概値</note>
+      </place>
+      <place xml:id="tobadono">
+        <placeName>鳥羽殿</placeName>
+        <location><geo>34.931 135.743</geo></location>
+        <note>鳥羽離宮。白河・鳥羽上皇の離宮(現在の京都市伏見区鳥羽離宮跡)・概値</note>
+      </place>
+      <place xml:id="toribeno">
+        <placeName>鳥辺野</placeName>
+        <location><geo>34.993 135.779</geo></location>
+        <note>京都東山の葬送地。清水坂の南に広がる・概値</note>
+      </place>
+      <place xml:id="saga">
+        <placeName>嵯峨</placeName>
+        <location><geo>35.018 135.672</geo></location>
+        <note>京都の嵯峨(現在の京都市右京区)・概値</note>
+      </place>
+      <place xml:id="kitasaga">
+        <placeName>北嵯峨</placeName>
+        <location><geo>35.031 135.676</geo></location>
+        <note>嵯峨の北方一帯(現在の京都市右京区北嵯峨)・概値</note>
+      </place>
+      <place xml:id="oi">
+        <placeName>大堰</placeName>
+        <location><geo>35.013 135.677</geo></location>
+        <note>大堰川。嵯峨・渡月橋付近の桂川の別称・概値</note>
+      </place>
+      <place xml:id="kiyotaki">
+        <placeName>清瀧</placeName>
+        <location><geo>35.029 135.664</geo></location>
+        <note>清滝。嵯峨の北西、愛宕山麓の渓谷・概値</note>
+      </place>
+      <place xml:id="kurama">
+        <placeName>鞍馬</placeName>
+        <location><geo>35.119 135.77</geo></location>
+        <note>京都北方の鞍馬(鞍馬山・鞍馬寺)・概値</note>
+      </place>
+      <place xml:id="nara">
+        <placeName>奈良</placeName>
+        <location><geo>34.6851 135.8048</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="ikoma">
+        <placeName>生駒</placeName>
+        <location><geo>34.6786 135.6786</geo></location>
+        <note>生駒山。大阪府と奈良県の境の山・概値</note>
+      </place>
+      <place xml:id="katsuragi">
+        <placeName>葛城</placeName>
+        <location><geo>34.447 135.694</geo></location>
+        <note>葛城山。大阪府と奈良県の境の山・概値</note>
+      </place>
+      <place xml:id="naniwa">
+        <placeName>浪速</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>大阪(難波)。本文では「浪速」「浪華」の両形で現れる・概値</note>
+      </place>
+      <place xml:id="ishizugawa">
+        <placeName>石津川</placeName>
+        <location><geo>34.559 135.453</geo></location>
+        <note>堺(著者の郷里)を流れる川・概値</note>
+      </place>
+      <place xml:id="wakasa">
+        <placeName>若狭</placeName>
+        <location><geo>35.49 135.75</geo></location>
+        <note>若狭国(現在の福井県南西部)。歌友・山川登美子の郷里。国名・概値</note>
+      </place>
+      <place xml:id="biwako">
+        <placeName>琵琶の海</placeName>
+        <location><geo>35.25 136.0833</geo></location>
+        <note>琵琶湖・概値</note>
+      </place>
+      <place xml:id="fuzan">
+        <placeName>巫山</placeName>
+        <location><geo>31.0747 109.879</geo></location>
+        <note>中国・重慶市の巫山。「巫山の夢」(懐王と神女の故事)の舞台としての言及・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <p>この書の体裁は悉く<persName ref="#fujishima">藤島武二</persName>先生の意匠に成れり表紙画みだれ髪の輪郭は恋愛の矢のハートを射たるにて矢の根より吹き出でたる花は詩を意味せるなり</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>臙脂紫</head>
+        <p>夜の<ruby><rb>帳</rb><rt>ちやう</rt></ruby>にささめき尽きし星の今を<ruby><rb>下界</rb><rt>げかい</rt></ruby>の人の鬢のほつれよ</p>
+        <p>歌にきけな誰れ野の花に紅き<ruby><rb>否</rb><rt>いな</rt></ruby>むおもむきあるかな<ruby><rb>春</rb><rt>はる</rt></ruby><ruby><rb>罪</rb><rt>つみ</rt></ruby>もつ子</p>
+        <p><ruby><rb>髪</rb><rt>かみ</rt></ruby>五尺ときなば水にやはらかき<ruby><rb>少女</rb><rt>をとめ</rt></ruby>ごころは秘めて放たじ</p>
+        <p>血ぞもゆるかさむひと夜の夢のやど春を行く人神おとしめな</p>
+        <p>椿それも梅もさなりき白かりきわが罪問はぬ<ruby><rb>色</rb><rt>いろ</rt></ruby><ruby><rb>桃</rb><rt>もゝ</rt></ruby>に見る</p>
+        <p>その子<ruby><rb>二十</rb><rt>はたち</rt></ruby>櫛にながるる黒髪のおごりの春のうつくしきかな</p>
+        <p>堂の鐘のひくきゆふべを前髪の桃のつぼみに<ruby><rb>経</rb><rt>きやう</rt></ruby>たまへ君</p>
+        <p>紫にもみうらにほふみだれ<ruby><rb>篋</rb><rt>ばこ</rt></ruby>をかくしわづらふ宵の春の神</p>
+        <p><ruby><rb>臙脂色</rb><rt>えんじいろ</rt></ruby>は誰にかたらむ血のゆらぎ春のおもひのさかりの<ruby><rb>命</rb><rt>いのち</rt></ruby></p>
+        <p>紫の濃き虹説きしさかづきに<ruby><rb>映</rb><rt>うつ</rt></ruby>る春の子<ruby><rb>眉毛</rb><rt>まゆげ</rt></ruby>かぼそき</p>
+        <p><ruby><rb>紺青</rb><rt>こんじやう</rt></ruby>を絹にわが泣く春の暮やまぶきがさね<ruby><rb>友</rb><rt>とも</rt></ruby>歌ねびぬ</p>
+        <p>まゐる酒に<ruby><rb>灯</rb><rt>ひ</rt></ruby>あかき宵を歌たまへ<ruby><rb>女</rb><rt>をんな</rt></ruby>はらから牡丹に名なき</p>
+        <p>海棠にえうなくときし<ruby><rb>紅</rb><rt>べに</rt></ruby>すてて<ruby><rb>夕雨</rb><rt>ゆふさめ</rt></ruby>みやる<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>よたゆき</p>
+        <p>水にねし<placeName ref="#saga">嵯峨</placeName>の<placeName ref="#oi"><ruby><rb>大堰</rb><rt>おほゐ</rt></ruby></placeName>のひと<ruby><rb>夜</rb><rt>よ</rt></ruby><ruby><rb>神</rb><rt>がみ</rt></ruby><ruby><rb>絽蚊帳</rb><rt>ろがや</rt></ruby>の裾の歌ひめたまへ</p>
+        <p>春の国恋の御国のあさぼらけしるきは髪か<ruby><rb>梅花</rb><rt>ばいくわ</rt></ruby>のあぶら</p>
+        <p>今はゆかむさらばと云ひし夜の神の<ruby><rb>御裾</rb><rt>みすそ</rt></ruby>さはりてわが髪ぬれぬ</p>
+        <p>細きわがうなじにあまる<ruby><rb>御手</rb><rt>みて</rt></ruby>のべてささへたまへな帰る夜の神</p>
+        <p><placeName ref="#kiyomizu"><ruby><rb>清水</rb><rt>きよみづ</rt></ruby></placeName>へ<placeName ref="#gion"><ruby><rb>祇園</rb><rt>ぎをん</rt></ruby></placeName>をよぎる<ruby><rb>桜月夜</rb><rt>さくらづきよ</rt></ruby>こよひ逢ふ人みなうつくしき</p>
+        <p>秋の神の<ruby><rb>御衣</rb><rt>みけし</rt></ruby>より曳く白き虹ものおもふ子の額に消えぬ</p>
+        <p><ruby><rb>経</rb><rt>きやう</rt></ruby>はにがし春のゆふべを奥の院の二十五菩薩歌うけたまへ</p>
+        <p>山ごもりかくてあれなのみをしへよ<ruby><rb>紅</rb><rt>べに</rt></ruby>つくるころ桃の花さかむ</p>
+        <p>とき髪に<ruby><rb>室</rb><rt>むろ</rt></ruby>むつまじの百合のかをり消えをあやぶむ<ruby><rb>夜</rb><rt>よ</rt></ruby>の<ruby><rb>淡紅色</rb><rt>ときいろ</rt></ruby>よ</p>
+        <p>雲ぞ青き来し<ruby><rb>夏姫</rb><rt>なつひめ</rt></ruby>が朝の髪うつくしいかな水に流るる</p>
+        <p>夜の神の朝のり帰る羊とらへちさき枕のしたにかくさむ</p>
+        <p>みぎはくる牛かひ男歌あれな秋のみづうみあまりさびしき</p>
+        <p>やは肌のあつき血汐にふれも見でさびしからずや道を説く君</p>
+        <p>許したまへあらずばこその今のわが身うすむらさきの酒うつくしき</p>
+        <p>わすれがたきとのみに<ruby><rb>趣味</rb><rt>しゆみ</rt></ruby>をみとめませ説かじ紫その秋の花</p>
+        <p>人かへさず暮れむの春の宵ごこち<ruby><rb>小琴</rb><rt>をごと</rt></ruby>にもたす乱れ乱れ髪</p>
+        <p>たまくらに<ruby><rb>鬢</rb><rt>びん</rt></ruby>のひとすぢきれし<ruby><rb>音</rb><rt>ね</rt></ruby>を<ruby><rb>小琴</rb><rt>をごと</rt></ruby>と聞きし春の夜の夢</p>
+        <p>春雨にぬれて君こし草の<ruby><rb>門</rb><rt>かど</rt></ruby>よおもはれ顔の海棠の夕</p>
+        <p><ruby><rb>小草</rb><rt>をぐさ</rt></ruby>いひぬ『酔へる涙の色にさかむそれまで斯くて覚めざれな<ruby><rb>少女</rb><rt>をとめ</rt></ruby>』</p>
+        <p>牧場いでて南にはしる水ながしさても緑の野にふさふ君</p>
+        <p>春よ老いな藤によりたる<ruby><rb>夜</rb><rt>よ</rt></ruby>の<ruby><rb>舞殿</rb><rt>まひどの</rt></ruby>ゐならぶ子らよ<ruby><rb>束</rb><rt>つか</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>老いな</p>
+        <p>雨みゆるうき葉しら<ruby><rb>蓮</rb><rt>はす</rt></ruby>絵師の君に傘まゐらする三尺の船</p>
+        <p><ruby><rb>御相</rb><rt>みさう</rt></ruby>いとどしたしみやすきなつかしき<ruby><rb>若葉</rb><rt>わかば</rt></ruby>木<ruby><rb>立</rb><rt>だち</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>の<persName ref="#rushana"><ruby><rb>盧遮那仏</rb><rt>るしやなぶつ</rt></ruby></persName></p>
+        <p>さて責むな高きにのぼり君みずや<ruby><rb>紅</rb><rt>あけ</rt></ruby>の涙の<ruby><rb>永劫</rb><rt>えいごふ</rt></ruby>のあと</p>
+        <p>春雨にゆふべの<ruby><rb>宮</rb><rt>みや</rt></ruby>をまよひ出でし<ruby><rb>小羊</rb><rt>こひつじ</rt></ruby><ruby><rb>君</rb><rt>きみ</rt></ruby>をのろはしの我れ</p>
+        <p>ゆあみする泉の底の<ruby><rb>小百合花</rb><rt>さゆりばな</rt></ruby><ruby><rb>二十</rb><rt>はたち</rt></ruby>の夏をうつくしと見ぬ</p>
+        <p>みだれごこちまどひごこちぞ頻なる百合ふむ神に<ruby><rb>乳</rb><rt>ちゝ</rt></ruby>おほひあへず</p>
+        <p>くれなゐの<ruby><rb>薔薇</rb><rt>ばら</rt></ruby>のかさねの唇に霊の香のなき歌のせますな</p>
+        <p>旅のやど水に<ruby><rb>端居</rb><rt>はしゐ</rt></ruby>の僧の君をいみじと泣きぬ夏の夜の月</p>
+        <p>春の夜の<ruby><rb>闇</rb><rt>やみ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>くるあまき風しばしかの子が髪に吹かざれ</p>
+        <p>水に飢ゑて森をさまよふ小羊のそのまなざしに似たらずや君</p>
+        <p>誰ぞ<ruby><rb>夕</rb><rt>ゆふべ</rt></ruby>ひがし<placeName ref="#ikoma"><ruby><rb>生駒</rb><rt>いこま</rt></ruby></placeName>の山の上のまよひの雲にこの子うらなへ</p>
+        <p>悔いますなおさへし袖に折れし<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>つひの<ruby><rb>理想</rb><rt>おもひ</rt></ruby>の花に<ruby><rb>刺</rb><rt>とげ</rt></ruby>あらじ</p>
+        <p><ruby><rb>額</rb><rt>ぬか</rt></ruby>ごしに<ruby><rb>暁</rb><rt>あけ</rt></ruby>の月みる<placeName ref="#kamogawa">加茂川</placeName>の<ruby><rb>浅水色</rb><rt>あさみづいろ</rt></ruby>のみだれ<ruby><rb>藻染</rb><rt>もぞめ</rt></ruby>よ</p>
+        <p><ruby><rb>御袖</rb><rt>みそで</rt></ruby>くくりかへりますかの<ruby><rb>薄闇</rb><rt>うすやみ</rt></ruby>の<ruby><rb>欄干</rb><rt>おばしま</rt></ruby>夏の<placeName ref="#kamogawa">加茂川</placeName>の神</p>
+        <p>なほ許せ御国遠くば<ruby><rb>夜</rb><rt>よ</rt></ruby>の<ruby><rb>御神</rb><rt>みかみ</rt></ruby><ruby><rb>紅盃船</rb><rt>べにざらふね</rt></ruby>に送りまゐらせむ</p>
+        <p>狂ひの子われに<ruby><rb>焔</rb><rt>ほのほ</rt></ruby>の<ruby><rb>翅</rb><rt>はね</rt></ruby>かろき百三十里あわただしの旅</p>
+        <p>今ここにかへりみすればわがなさけ<ruby><rb>闇</rb><rt>やみ</rt></ruby>をおそれぬめしひに似たり</p>
+        <p>うつくしき命を惜しと神のいひぬ願ひのそれは果してし今</p>
+        <p>わかき<ruby><rb>小指</rb><rt>をゆび</rt></ruby><ruby><rb>胡紛</rb><rt>ごふん</rt></ruby>をとくにまどひあり夕ぐれ寒き木蓮の花</p>
+        <p>ゆるされし朝よそほひのしばらくを君に歌へな山の鶯</p>
+        <p>ふしませとその<ruby><rb>間</rb><rt>ま</rt></ruby>さがりし春の宵<ruby><rb>衣桁</rb><rt>いかう</rt></ruby>にかけし御袖かづきぬ</p>
+        <p>みだれ髪を<placeName ref="#kyoto">京</placeName>の島田にかへし朝ふしてゐませの君ゆりおこす</p>
+        <p>しのび足に君を追ひゆく<ruby><rb>薄月夜</rb><rt>うすづきよ</rt></ruby>右のたもとの文がらおもき</p>
+        <p>紫に<ruby><rb>小草</rb><rt>をぐさ</rt></ruby>が上へ影おちぬ野の春かぜに髪けづる朝</p>
+        <p>絵日傘をかなたの岸の草になげわたる小川よ春の水ぬるき</p>
+        <p>しら壁へ歌ひとつ染めむねがひにて笠はあらざりき二百里の旅</p>
+        <p><placeName ref="#saga">嵯峨</placeName>の君を歌に仮せなの朝のすさびすねし鏡のわが夏姿</p>
+        <p>ふさひ知らぬ<ruby><rb>新婦</rb><rt>にひびと</rt></ruby>かざすしら萩に今宵の神のそと<ruby><rb>片笑</rb><rt>かたゑ</rt></ruby>みし</p>
+        <p>ひと枝の野の梅をらば足りぬべしこれかりそめのかりそめの別れ</p>
+        <p>鶯は君が夢よともどきながら緑のとばりそとかかげ見る</p>
+        <p>紫の紅の<ruby><rb>滴</rb><rt>したゝ</rt></ruby>り花におちて成りしかひなの夢うたがふな</p>
+        <p>ほととぎす<placeName ref="#saga">嵯峨</placeName>へは一里<placeName ref="#kyoto">京</placeName>へ三里水の<placeName ref="#kiyotaki"><ruby><rb>清瀧</rb><rt>きよたき</rt></ruby></placeName>夜の明けやすき</p>
+        <p><ruby><rb>紫</rb><rt>むらさき</rt></ruby>の<ruby><rb>理想</rb><rt>りさう</rt></ruby>の雲はちぎれ／＼仰ぐわが空それはた消えぬ</p>
+        <p>乳ぶさおさへ<ruby><rb>神秘</rb><rt>しんぴ</rt></ruby>のとばりそとけりぬここなる花の<ruby><rb>紅</rb><rt>くれなゐ</rt></ruby>ぞ濃き</p>
+        <p>神の<ruby><rb>背</rb><rt>せな</rt></ruby>にひろきながめをねがはずや今かたかたの袖こむらさき</p>
+        <p>とや心朝の<ruby><rb>小琴</rb><rt>をごと</rt></ruby>の四つの緒のひとつを<ruby><rb>永久</rb><rt>とは</rt></ruby>に神きりすてし</p>
+        <p>ひく袖に<ruby><rb>片笑</rb><rt>かたゑみ</rt></ruby>もらす春ぞわかき朝のうしほの恋のたはぶれ</p>
+        <p>くれの春隣すむ<ruby><rb>画師</rb><rt>ゑし</rt></ruby>うつくしき<ruby><rb>今朝</rb><rt>けさ</rt></ruby>山吹に声わかかりし</p>
+        <p><ruby><rb>郷人</rb><rt>さとびと</rt></ruby>にとなり<ruby><rb>邸</rb><rt>やしき</rt></ruby>のしら藤の花はとのみに問ひもかねたる</p>
+        <p>人にそひて<ruby><rb>樒</rb><rt>しきみ</rt></ruby>ささぐるこもり<ruby><rb>妻</rb><rt>づま</rt></ruby>母なる君を<ruby><rb>御墓</rb><rt>みはか</rt></ruby>に泣きぬ</p>
+        <p>なにとなく君に待たるるここちして出でし花野の夕月夜かな</p>
+        <p>おばしまにおもひはてなき身をもたせ小萩をわたる秋の風見る</p>
+        <p>ゆあみして泉を出でしわがはだにふるるはつらき人の世のきぬ</p>
+        <p>売りし琴にむつびの<ruby><rb>曲</rb><rt>きよく</rt></ruby>をのせしひびき<ruby><rb>逢魔</rb><rt>あふま</rt></ruby>がどきの黒百合折れぬ</p>
+        <p>うすものの二尺のたもとすべりおちて蛍ながるる<ruby><rb>夜風</rb><rt>よかぜ</rt></ruby>の青き</p>
+        <p>恋ならぬねざめたたずむ野のひろさ名なし小川のうつくしき夏</p>
+        <p>このおもひ何とならむのまどひもちしその<ruby><rb>昨日</rb><rt>きのふ</rt></ruby>すらさびしかりし我れ</p>
+        <p>おりたちてうつつなき身の牡丹見ぬそぞろや<ruby><rb>夜</rb><rt>よる</rt></ruby>を蝶のねにこし</p>
+        <p>その涙のごふえにしは持たざりきさびしの水に見し<ruby><rb>二十日月</rb><rt>はつかづき</rt></ruby></p>
+        <p>水十里ゆふべの船をあだにやりて柳による子ぬかうつくしき（をとめ）</p>
+        <p>旅の身の<ruby><rb>大河</rb><rt>おほかは</rt></ruby>ひとつまどはむや<ruby><rb>徐</rb><rt>しづ</rt></ruby>かに<ruby><rb>日記</rb><rt>にき</rt></ruby>の里の名けしぬ（旅びと）</p>
+        <p><ruby><rb>小傘</rb><rt>をがさ</rt></ruby>とりて朝の水くみ我とこそ<ruby><rb>穂麦</rb><rt>ほむぎ</rt></ruby>あをあを<ruby><rb>小雨</rb><rt>こさめ</rt></ruby>ふる里</p>
+        <p>おとに立ちて小川をのぞく乳母が<ruby><rb>小窓</rb><rt>こまど</rt></ruby><ruby><rb>小雨</rb><rt>こさめ</rt></ruby>のなかに山吹のちる</p>
+        <p>恋か血か牡丹に尽きし春のおもひとのゐの宵のひとり歌なき</p>
+        <p>長き歌を牡丹にあれの宵の<ruby><rb>殿</rb><rt>おとど</rt></ruby>妻となる身の我れぬけ出でし</p>
+        <p>春<ruby><rb>三月</rb><rt>みつき</rt></ruby><ruby><rb>柱</rb><rt>ぢ</rt></ruby>おかぬ琴に音たてぬふれしそぞろの宵の乱れ髪</p>
+        <p>いづこまで君は帰るとゆふべ野にわが袖ひきぬ<ruby><rb>翅</rb><rt>はね</rt></ruby>ある<ruby><rb>童</rb><rt>わらは</rt></ruby></p>
+        <p>ゆふぐれの戸に倚り君がうたふ歌『うき里去りて往きて帰らじ』</p>
+        <p>さびしさに百二十里をそぞろ来ぬと云ふ人あらばあらば如何ならむ</p>
+        <p>君が歌に袖かみし子を誰と知る<placeName ref="#naniwa">浪速</placeName>の宿は秋寒かりき</p>
+        <p>その日より魂にわかれし我れむくろ美しと見ば人にとぶらへ</p>
+        <p>今の我に歌のありやを問ひますな<ruby><rb>柱</rb><rt>ぢ</rt></ruby>なき<ruby><rb>繊絃</rb><rt>ほそいと</rt></ruby>これ二十五<ruby><rb>絃</rb><rt>げん</rt></ruby></p>
+        <p>神のさだめ命のひびき<ruby><rb>終</rb><rt>つひ</rt></ruby>の我世<ruby><rb>琴</rb><rt>こと</rt></ruby>に<ruby><rb>斧</rb><rt>をの</rt></ruby>うつ音ききたまへ</p>
+        <p>人ふたり<ruby><rb>無才</rb><rt>ぶさい</rt></ruby>の二字を歌に笑みぬ<ruby><rb>恋</rb><rt>こひ</rt></ruby>二万<ruby><rb>年</rb><rt>ねん</rt></ruby>ながき短き</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>蓮の花船</head>
+        <p>漕ぎかへる<ruby><rb>夕船</rb><rt>ゆふぶね</rt></ruby>おそき僧の君<ruby><rb>紅蓮</rb><rt>ぐれん</rt></ruby>や多きしら<ruby><rb>蓮</rb><rt>はす</rt></ruby>や多き</p>
+        <p>あづまやに水のおときく藤の夕はづしますなのひくき枕よ</p>
+        <p>御袖ならず<ruby><rb>御髪</rb><rt>みぐし</rt></ruby>のたけときこえたり七尺いづれしら藤の花</p>
+        <p>夏花のすがたは細きくれなゐに<ruby><rb>真昼</rb><rt>まひる</rt></ruby>いきむの恋よこの子よ</p>
+        <p>肩おちて<ruby><rb>経</rb><rt>きやう</rt></ruby>にゆらぎのそぞろ髪をとめ<ruby><rb>有心者</rb><rt>うしんじや</rt></ruby>春の雲こき</p>
+        <p>とき髪を<ruby><rb>若枝</rb><rt>わかえ</rt></ruby>にからむ風の西よ二尺に足らぬうつくしき虹</p>
+        <p>うながされて<ruby><rb>汀</rb><rt>みぎは</rt></ruby>の<ruby><rb>闇</rb><rt>やみ</rt></ruby>に車おりぬほの紫の<ruby><rb>反橋</rb><rt>そりはし</rt></ruby>の<ruby><rb>藤</rb><rt>ふぢ</rt></ruby></p>
+        <p>われとなく<ruby><rb>梭</rb><rt>をさ</rt></ruby>の手とめし<ruby><rb>門</rb><rt>かど</rt></ruby>の<ruby><rb>唄</rb><rt>うた</rt></ruby>姉がゑまひの底はづかしき</p>
+        <p>ゆあがりのみじまひなりて姿見に笑みし<ruby><rb>昨日</rb><rt>きのふ</rt></ruby>の無きにしもあらず</p>
+        <p>人まへを袂すべりしきぬでまり知らずと云ひてかかへてにげぬ</p>
+        <p>ひとつ<ruby><rb>篋</rb><rt>はこ</rt></ruby>にひひなをさめて<ruby><rb>蓋</rb><rt>ふた</rt></ruby>とぢて何となき<ruby><rb>息</rb><rt>いき</rt></ruby>桃にはばかる</p>
+        <p>ほの見しは<placeName ref="#nara">奈良</placeName>のはづれの<ruby><rb>若葉宿</rb><rt>わかばやど</rt></ruby>うすまゆずみのなつかしかりし</p>
+        <p><ruby><rb>紅</rb><rt>あけ</rt></ruby>に名の知らぬ花さく野の<ruby><rb>小道</rb><rt>こみち</rt></ruby>いそぎたまふな<ruby><rb>小傘</rb><rt>をがさ</rt></ruby>の<ruby><rb>一人</rb><rt>ひとり</rt></ruby></p>
+        <p>くだり船<ruby><rb>昨夜</rb><rt>よべ</rt></ruby>月かげに歌そめし<ruby><rb>御堂</rb><rt>みだう</rt></ruby>の壁も見えず見えずなりぬ</p>
+        <p>師の君の目を病みませる<ruby><rb>庵</rb><rt>いほ</rt></ruby>の庭へうつしまゐらす白菊の花</p>
+        <p>文字ほそく君が歌ひとつ染めつけぬ<ruby><rb>玉虫</rb><rt>たまむし</rt></ruby>ひめし<ruby><rb>小筥</rb><rt>こばこ</rt></ruby>の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>に</p>
+        <p>ゆふぐれを籠へ鳥よぶいもうとの<ruby><rb>爪先</rb><rt>つまさき</rt></ruby>ぬらす海棠の雨</p>
+        <p>ゆく春をえらびよしある<ruby><rb>絹袷衣</rb><rt>きぬあはせ</rt></ruby>ねびのよそめを<ruby><rb>一人</rb><rt>ひとり</rt></ruby>に問ひぬ</p>
+        <p>ぬしいはずとれなの筆の水の夕そよ墨足らぬ<ruby><rb>撫子</rb><rt>なでしこ</rt></ruby>がさね</p>
+        <p>母よびてあかつき問ひし君といはれそむくる片頬柳にふれぬ</p>
+        <p>のろひ歌かきかさねたる<ruby><rb>反古</rb><rt>ほご</rt></ruby>とりて黒き胡蝶をおさへぬるかな</p>
+        <p><ruby><rb>額</rb><rt>ぬか</rt></ruby>しろき聖よ見ずや夕ぐれを海棠に立つ<ruby><rb>春夢見姿</rb><rt>はるゆめみすがた</rt></ruby></p>
+        <p>笛の音に法華経うつす手をとどめひそめし眉よまだうらわかき</p>
+        <p><ruby><rb>白檀</rb><rt>びやくだん</rt></ruby>のけむりこなたへ絶えずあふるにくき扇をうばひぬるかな</p>
+        <p>母なるが<ruby><rb>枕経</rb><rt>まくらぎやう</rt></ruby>よむかたはらのちひさき足をうつくしと見き</p>
+        <p>わが歌に<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>のいろをうるませしその君去りて十日たちにけり</p>
+        <p>かたみぞと風なつかしむ小扇のかなめあやふくなりにけるかな</p>
+        <p>春の川のりあひ舟のわかき子が<ruby><rb>昨夜</rb><rt>よべ</rt></ruby>の<ruby><rb>泊</rb><rt>とまり</rt></ruby>の<ruby><rb>唄</rb><rt>うた</rt></ruby>ねたましき</p>
+        <p>泣かで急げやは手にはばき解くえにしえにし持つ子の夕を待たむ</p>
+        <p>燕なく朝をはばきの<ruby><rb>紐</rb><rt>ひも</rt></ruby>ぞゆるき柳かすむやその<ruby><rb>家</rb><rt>や</rt></ruby>のめぐり</p>
+        <p>小川われ村のはづれの柳かげに消えぬ姿を泣く子<ruby><rb>朝</rb><rt>あさ</rt></ruby><ruby><rb>見</rb><rt>み</rt></ruby>し</p>
+        <p>鶯に朝寒からぬ<placeName ref="#kyoto">京</placeName>の山おち椿ふむ人むつまじき</p>
+        <p>道たま／＼<persName ref="#rengetsu">蓮月</persName>が庵のあとに出でぬ梅に相行く西の<placeName ref="#kyoto">京</placeName>の山</p>
+        <p>君が前に<persName ref="#rihaku">李青蓮</persName>説くこの子ならずよき墨なきを梅にかこつな</p>
+        <p>あるときはねたしと見たる友の髪に香の煙のはひかかるかな</p>
+        <p>わが春の<ruby><rb>二十姿</rb><rt>はたちすがた</rt></ruby>と打ぞ見ぬ底くれなゐのうす色牡丹</p>
+        <p>春はただ盃にこそ<ruby><rb>注</rb><rt>つ</rt></ruby>ぐべけれ智慧あり顔の木蓮や花</p>
+        <p>さはいへど君が<ruby><rb>昨日</rb><rt>きのふ</rt></ruby>の恋がたりひだり枕の切なき夜半よ</p>
+        <p>人そぞろ宵の羽織の肩うらへかきしは歌か芙蓉といふ文字</p>
+        <p>琴の上に梅の実おつる宿の昼よちかき清水に歌ずする君</p>
+        <p>うたたねの君がかたへの旅づつみ恋の詩集の古きあたらしき</p>
+        <p>戸に倚りて<ruby><rb>菖蒲</rb><rt>あやめ</rt></ruby><ruby><rb>売</rb><rt>う</rt></ruby>る子がひたひ髪にかかる<ruby><rb>薄靄</rb><rt>うすもや</rt></ruby>にほひある朝</p>
+        <p><ruby><rb>五月雨</rb><rt>さみだれ</rt></ruby>もむかしに遠き山の庵<ruby><rb>通夜</rb><rt>つや</rt></ruby>する人に卯の花いけぬ</p>
+        <p>四十八<ruby><rb>寺</rb><rt>じ</rt></ruby>そのひと<ruby><rb>寺</rb><rt>てら</rt></ruby>の鐘なりぬ今し江の北<ruby><rb>雨雲</rb><rt>あまぐも</rt></ruby>ひくき</p>
+        <p>人の子にかせしは罪かわがかひな白きは神になどゆづるべき</p>
+        <p>ふりかへり許したまへの袖だたみ<ruby><rb>闇</rb><rt>やみ</rt></ruby>くる風に春ときめきぬ</p>
+        <p>夕ふるはなさけの雨よ旅の君ちか道とはで宿とりたまへ</p>
+        <p><ruby><rb>巌</rb><rt>いは</rt></ruby>をはなれ<ruby><rb>谿</rb><rt>たに</rt></ruby>をくだりて<ruby><rb>躑躅</rb><rt>つゝじ</rt></ruby>をりて都の絵師と水に別れぬ</p>
+        <p>春の日を恋に誰れ倚るしら壁ぞ憂きは旅の子藤たそがるる</p>
+        <p><ruby><rb>油</rb><rt>あぶら</rt></ruby>のあと島田のかたと<ruby><rb>今日</rb><rt>けふ</rt></ruby>知りし壁に<ruby><rb>李</rb><rt>すもゝ</rt></ruby>の花ちりかかる</p>
+        <p>うなじ手にひくきささやき藤の朝をよしなやこの子行くは旅の君</p>
+        <p>まどひなくて経ずする我と見たまふか<ruby><rb>下品</rb><rt>げぼん</rt></ruby>の<ruby><rb>仏</rb><rt>ほとけ</rt></ruby><ruby><rb>上品</rb><rt>じやうぼん</rt></ruby>の<ruby><rb>仏</rb><rt>ほとけ</rt></ruby></p>
+        <p>ながしつる四つの<ruby><rb>笹舟</rb><rt>さゝぶね</rt></ruby>紅梅を載せしがことにおくれて往きぬ</p>
+        <p>奥の<ruby><rb>室</rb><rt>ま</rt></ruby>のうらめづらしき<ruby><rb>初声</rb><rt>うぶごゑ</rt></ruby>に血の気のぼりし<ruby><rb>面</rb><rt>おも</rt></ruby>まだ若き</p>
+        <p>人の歌をくちずさみつつ夕よる柱つめたき秋の雨かな</p>
+        <p>小百合さく小草がなかに君まてば野末にほひて虹あらはれぬ</p>
+        <p>かしこしといなみにいひて我とこそその山坂を御手に倚らざりし</p>
+        <p><placeName ref="#toribeno">鳥辺野</placeName>は御親の御墓あるところ<placeName ref="#kiyomizuzaka"><ruby><rb>清水坂</rb><rt>きよみづざか</rt></ruby></placeName>に歌はなかりき</p>
+        <p>御親まつる墓のしら梅<ruby><rb>中</rb><rt>なか</rt></ruby>に白く<ruby><rb>熊笹</rb><rt>くまざさ</rt></ruby><ruby><rb>小笹</rb><rt>をざさ</rt></ruby>たそがれそめぬ</p>
+        <p><ruby><rb>男</rb><rt>をとこ</rt></ruby>きよし載するに僧のうらわかき月にくらしの<ruby><rb>蓮</rb><rt>はす</rt></ruby>の<ruby><rb>花船</rb><rt>はなぶね</rt></ruby></p>
+        <p>経にわかき僧のみこゑの<ruby><rb>片明</rb><rt>かたあか</rt></ruby>り月の<ruby><rb>蓮船</rb><rt>はすぶね</rt></ruby>兄こぎかへる</p>
+        <p>浮葉きるとぬれし袂の<ruby><rb>紅</rb><rt>あけ</rt></ruby>のしづく<ruby><rb>蓮</rb><rt>はす</rt></ruby>にそそぎてなさけ教へむ</p>
+        <p>こころみにわかき唇ふれて見れば冷かなるよしら蓮の露</p>
+        <p>明くる夜の河はばひろき<placeName ref="#saga">嵯峨</placeName>の<ruby><rb>欄</rb><rt>らん</rt></ruby>きぬ水色の<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の夏よ</p>
+        <p>藻の花のしろきを摘むと山みづに文がら<ruby><rb>濡</rb><rt>ひ</rt></ruby>ぢぬうすものの袖</p>
+        <p>牛の子を木かげに立たせ絵にうつす君がゆかたに柿の花ちる</p>
+        <p>誰が筆に染めし扇ぞ<ruby><rb>去年</rb><rt>こぞ</rt></ruby>までは白きをめでし君にやはあらぬ</p>
+        <p>おもざしの似たるにまたもまどひけりたはぶれますよ恋の<ruby><rb>神々</rb><rt>かみ／″＼</rt></ruby></p>
+        <p>五月雨に<ruby><rb>築土</rb><rt>ついぢ</rt></ruby>くづれし<placeName ref="#tobadono"><ruby><rb>鳥羽殿</rb><rt>とばどの</rt></ruby></placeName>のいぬゐの池におもだかさきぬ</p>
+        <p>つばくらの<ruby><rb>羽</rb><rt>はね</rt></ruby>にしたたる春雨をうけてなでむかわが朝寝髪</p>
+        <p>しら菊を折りてゑまひし朝すがた垣間みしつと人の書きこし</p>
+        <p>八つ口をむらさき緒もて我れとめじひかばあたへむ三尺の袖</p>
+        <p>春かぜに桜花ちる<ruby><rb>層塔</rb><rt>そうたふ</rt></ruby>のゆふべを鳩の<ruby><rb>羽</rb><rt>は</rt></ruby>に歌そめむ</p>
+        <p>憎からぬねたみもつ子とききし子の垣の山吹歌うて過ぎぬ</p>
+        <p>おばしまのその片袖ぞおもかりし<placeName ref="#kurama">鞍馬</placeName>を西へ流れにし霞</p>
+        <p>ひとたびは神より更ににほひ高き朝をつつみし<ruby><rb>練</rb><rt>ねり</rt></ruby>の<ruby><rb>下襲</rb><rt>したがさね</rt></ruby></p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>白百合</head>
+        <p>月の夜の<ruby><rb>蓮</rb><rt>はす</rt></ruby>のおばしま君うつくしうら葉の<ruby><rb>御歌</rb><rt>みうた</rt></ruby>わすれはせずよ</p>
+        <p>たけの髪をとめ<ruby><rb>二人</rb><rt>ふたり</rt></ruby>に月うすき今宵しら<ruby><rb>蓮</rb><rt>はす</rt></ruby>色まどはずや</p>
+        <p><ruby><rb>荷葉</rb><rt>はす</rt></ruby>なかば誰にゆるすの<ruby><rb>上</rb><rt>かみ</rt></ruby>の<ruby><rb>御句</rb><rt>みく</rt></ruby>ぞ<ruby><rb>御袖</rb><rt>みそで</rt></ruby><ruby><rb>片取</rb><rt>かたと</rt></ruby>るわかき師の君</p>
+        <p>おもひおもふ今のこころに分ち分かず君やしら萩われやしろ百合</p>
+        <p>いづれ君ふるさと遠き人の世ぞと御手はなちしは<ruby><rb>昨日</rb><rt>きのふ</rt></ruby>の夕</p>
+        <p>三たりをば世にうらぶれしはらからとわれ先づ云ひぬ西の<placeName ref="#kyoto">京</placeName>の宿</p>
+        <p><ruby><rb>今宵</rb><rt>こよひ</rt></ruby>まくら神にゆづらぬやは手なりたがはせまさじ白百合の夢</p>
+        <p>夢にせめてせめてと思ひその神に小百合の露の歌ささやきぬ</p>
+        <p>次のまのあま戸そとくるわれをよびて秋の夜いかに長きみぢかき</p>
+        <p>友のあしのつめたかりきと旅の朝わかきわが師に心なくいひぬ</p>
+        <p>ひとまおきてをりをりもれし君がいきその夜しら梅だくと夢みし</p>
+        <p>いはず聴かずただうなづきて別れけりその日は六日<ruby><rb>二人</rb><rt>ふたり</rt></ruby>と<ruby><rb>一人</rb><rt>ひとり</rt></ruby></p>
+        <p>もろ羽かはし掩ひしそれも甲斐なかりきうつくしの友西の<placeName ref="#kyoto">京</placeName>の秋</p>
+        <p>星となりて逢はむそれまで思ひ出でな一つふすまに聞きし秋の声</p>
+        <p>人の世に才秀でたるわが友の名の末かなし<ruby><rb>今日</rb><rt>けふ</rt></ruby>秋くれぬ</p>
+        <p>星の子のあまりによわし袂あげて魔にも鬼にも<ruby><rb>勝</rb><rt>か</rt></ruby>たむと云へな</p>
+        <p>百合の花わざと魔の手に折らせおきて拾ひてだかむ神のこころか</p>
+        <p>しろ百合はそれその人の高きおもひおもわは<ruby><rb>艶</rb><rt>にほ</rt></ruby>ふ<ruby><rb>紅芙蓉</rb><rt>べにふよう</rt></ruby>とこそ</p>
+        <p>さはいへどそのひと時よまばゆかりき夏の野しめし白百合の花</p>
+        <p>友は<ruby><rb>二十</rb><rt>はたち</rt></ruby>ふたつこしたる我身なりふさはずあらじ恋と伝へむ</p>
+        <p>その血潮ふたりは吐かぬちぎりなりき春を<ruby><rb>山蓼</rb><rt>やまたで</rt></ruby>たづねますな君</p>
+        <p>秋を<ruby><rb>三人</rb><rt>みたり</rt></ruby>椎の実なげし鯉やいづこ池の朝かぜ手と手つめたき</p>
+        <p>かの空よ<placeName ref="#wakasa">若狭</placeName>は北よわれ載せて行く雲なきか西の<placeName ref="#kyoto">京</placeName>の山</p>
+        <p>ひと花はみづから渓にもとめきませ<placeName ref="#wakasa">若狭</placeName>の雪に堪へむ<ruby><rb>紅</rb><rt>くれなゐ</rt></ruby></p>
+        <p>『筆のあとに<ruby><rb>山居</rb><rt>やまゐ</rt></ruby>のさまを知りたまへ』人への人の文さりげなき</p>
+        <p><placeName ref="#kyoto">京</placeName>はもののつらきところと書きさして見おろしませる<placeName ref="#kamogawa">加茂の河</placeName>しろき</p>
+        <p>恨みまつる湯におりしまの<ruby><rb>一人居</rb><rt>ひとりゐ</rt></ruby>を歌なかりきの君へだてあり</p>
+        <p>秋の<ruby><rb>衾</rb><rt>ふすま</rt></ruby>あしたわびし身うらめしきつめたきためし春の<placeName ref="#kyoto">京</placeName>に得ぬ</p>
+        <p>わすれては谿へおりますうしろ影ほそき<ruby><rb>御肩</rb><rt>みかた</rt></ruby>に春の日よわき</p>
+        <p><placeName ref="#kyoto">京</placeName>の鐘この日このとき我れあらずこの日このとき人と人を泣きぬ</p>
+        <p><placeName ref="#biwako">琵琶の海</placeName>山ごえ行かむいざと云ひし秋よ<ruby><rb>三人</rb><rt>みたり</rt></ruby>よ人そぞろなりし</p>
+        <p><placeName ref="#kyoto">京</placeName>の水の深み見おろし秋を人の裂きし<ruby><rb>小指</rb><rt>をゆび</rt></ruby>の血のあと寒き</p>
+        <p>山蓼のそれよりふかきくれなゐは梅よはばかれ神にとがおはむ</p>
+        <p>魔のまへに<ruby><rb>理想</rb><rt>おもひ</rt></ruby>くだきしよわき子と友のゆふべをゆびさしますな</p>
+        <p>魔のわざを神のさだめと眼を閉ぢし友の片手の花あやぶみぬ</p>
+        <p>歌をかぞへその子この子にならふなのまだ<ruby><rb>寸</rb><rt>すん</rt></ruby>ならぬ白百合の芽よ</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>はたち妻</head>
+        <p>露にさめて<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>もたぐる野の色よ夢のただちの紫の虹</p>
+        <p>やれ壁に<persName ref="#titian">チチアン</persName>が名はつらかりき湧く酒がめを夕に秘めな</p>
+        <p>何となきただ一ひらの雲に見ぬみちびきさとし<ruby><rb>聖歌</rb><rt>せいか</rt></ruby>のにほひ</p>
+        <p>神にそむきふたたびここに君と見ぬ別れの別れさいへ乱れじ</p>
+        <p>淵の水になげし聖書を又もひろひ<ruby><rb>空</rb><rt>そら</rt></ruby>仰ぎ泣くわれまどひの子</p>
+        <p>聖書だく子人の<ruby><rb>御親</rb><rt>みおや</rt></ruby>の墓に伏して<persName ref="#miroku"><ruby><rb>弥勒</rb><rt>みろく</rt></ruby></persName>の名をば夕に喚びぬ</p>
+        <p>神ここに力をわびぬとき<ruby><rb>紅</rb><rt>べに</rt></ruby>のにほひ<ruby><rb>興</rb><rt>きよう</rt></ruby>がるめしひの<ruby><rb>少女</rb><rt>をとめ</rt></ruby></p>
+        <p>痩せにたれかひなもる血ぞ猶わかき罪を泣く子と神よ見ますな</p>
+        <p>おもはずや夢ねがはずや<ruby><rb>若人</rb><rt>わかうど</rt></ruby>よもゆるくちびる君に<ruby><rb>映</rb><rt>うつ</rt></ruby>らずや</p>
+        <p>君さらば<placeName ref="#fuzan"><ruby><rb>巫山</rb><rt>ふざ</rt></ruby></placeName>の春のひと<ruby><rb>夜妻</rb><rt>よづま</rt></ruby>またの世までは忘れゐたまへ</p>
+        <p>あまきにがき味うたがひぬ我を見てわかきひじりの流しにし涙</p>
+        <p>歌に名は<ruby><rb>相</rb><rt>あひ</rt></ruby><ruby><rb>問</rb><rt>と</rt></ruby>はざりきさいへ<ruby><rb>一夜</rb><rt>ひとよ</rt></ruby>ゑにしのほかの一夜とおぼすな</p>
+        <p>水の香をきぬにおほひぬわかき神草には見えぬ風のゆるぎよ</p>
+        <p>ゆく水のざれ言きかす神の笑まひ<ruby><rb>御歯</rb><rt>みは</rt></ruby>あざやかに花の夜あけぬ</p>
+        <p>百合にやる<ruby><rb>天</rb><rt>あめ</rt></ruby>の小蝶のみづいろの<ruby><rb>翅</rb><rt>はね</rt></ruby>にしつけの糸をとる神</p>
+        <p>ひとつ血の胸くれなゐの春のいのちひれふすかをり神もとめよる</p>
+        <p>わがいだくおもかげ君はそこに見む春のゆふべの<ruby><rb>黄雲</rb><rt>きぐも</rt></ruby>のちぎれ</p>
+        <p>むねの清水あふれてつひに濁りけり君も罪の子我も罪の子</p>
+        <p>うらわかき僧よびさます春の窓ふり袖ふれて経くづれきぬ</p>
+        <p><ruby><rb>今日</rb><rt>けふ</rt></ruby>を知らず智慧の小石は問はでありき星のおきてと別れにし朝</p>
+        <p>春にがき<ruby><rb>貝多羅葉</rb><rt>ばいたらえふ</rt></ruby>の名をききて堂の夕日に友の世泣きぬ</p>
+        <p>ふた月を歌にただある<placeName ref="#sanbongi">三<ruby><rb>本</rb><rt>ぼん</rt></ruby><ruby><rb>樹</rb><rt>ぎ</rt></ruby></placeName><placeName ref="#kamogawa">加茂川</placeName>千鳥恋はなき子ぞ</p>
+        <p>わかき子が<ruby><rb>乳</rb><rt>ちゝ</rt></ruby>の香まじる春雨に<ruby><rb>上羽</rb><rt>うはば</rt></ruby>を染めむ白き鳩われ</p>
+        <p>夕ぐれを花にかくるる小狐のにこ毛にひびく<placeName ref="#kitasaga">北嵯峨</placeName>の鐘</p>
+        <p>見しはそれ緑の夢のほそき夢ゆるせ旅人かたり草なき</p>
+        <p>胸と胸とおもひことなる松のかぜ友の頬を吹きぬ我頬を吹きぬ</p>
+        <p><ruby><rb>野茨</rb><rt>のばら</rt></ruby>をりて髪にもかざし手にもとり永き日野辺に君まちわびぬ</p>
+        <p>春を説くなその朝かぜにほころびし袂だく子に君こころなき</p>
+        <p>春をおなじ<ruby><rb>急瀬</rb><rt>はやせ</rt></ruby>さばしる若鮎の<ruby><rb>釣緒</rb><rt>つりを</rt></ruby>の細緒くれなゐならぬ</p>
+        <p>みなぞこにけぶる黒髪ぬしや誰れ緋鯉のせなに梅の花ちる</p>
+        <p>秋を人のよりし柱にとがめあり梅にことかるきぬぎぬの歌</p>
+        <p><placeName ref="#kyoto">京</placeName>の山のこぞめしら梅人ふたりおなじ夢みし春と知りたまへ</p>
+        <p>なつかしの湯の香梅が香山の宿の板戸によりて人まちし闇</p>
+        <p>詞にも歌にもなさじわがおもひその日そのとき胸より胸に</p>
+        <p>歌にねて<ruby><rb>昨夜</rb><rt>よべ</rt></ruby>梶の葉の作者見ぬうつくしかりき黒髪の色</p>
+        <p><placeName ref="#shimogyo"><ruby><rb>下京</rb><rt>しもぎやう</rt></ruby></placeName>や<ruby><rb>紅屋</rb><rt>べにや</rt></ruby>が<ruby><rb>門</rb><rt>かど</rt></ruby>をくぐりたる男かはゆし春の夜の月</p>
+        <p>枝折戸あり紅梅さけり水ゆけり立つ子われより笑みうつくしき</p>
+        <p>しら梅は袖に湯の香は下のきぬにかりそめながら君さらばさらば</p>
+        <p><ruby><rb>二十</rb><rt>はた</rt></ruby>とせの我世の<ruby><rb>幸</rb><rt>さち</rt></ruby>はうすかりきせめて今見る夢やすかれな</p>
+        <p><ruby><rb>二十</rb><rt>はた</rt></ruby>とせのうすきいのちのひびきありと<placeName ref="#naniwa">浪華</placeName>の夏の歌に泣きし君</p>
+        <p>かづくきぬにその<ruby><rb>間</rb><rt>ま</rt></ruby>の<ruby><rb>床</rb><rt>とこ</rt></ruby>の梅ぞにくき昔がたりを夢に寄する君</p>
+        <p>それ終に夢にはあらぬそら語り<ruby><rb>中</rb><rt>なか</rt></ruby>のともしびいつ君きえし</p>
+        <p>君ゆくとその夕ぐれに二人して柱にそめし白萩の歌</p>
+        <p>なさけあせし文みて病みておとろへてかくても人を猶恋ひわたる</p>
+        <p>夜の神のあともとめよるしら綾の鬢の香朝の春雨の宿</p>
+        <p>その子ここに<ruby><rb>夕片笑</rb><rt>ゆふかたゑ</rt></ruby>みの<ruby><rb>二十</rb><rt>はたち</rt></ruby>びと虹のはしらを説くに隠れぬ</p>
+        <p>このあした君があげたるみどり子のやがて得む恋うつくしかれな</p>
+        <p>恋の神にむくいまつりし今日の歌ゑにしの神はいつ受けまさむ</p>
+        <p>かくてなほあくがれますか真善美わが手の花はくれなゐよ君</p>
+        <p>くろ髪の千すぢの髪のみだれ髪かつおもひみだれおもひみだるる</p>
+        <p>そよ<ruby><rb>理想</rb><rt>りさう</rt></ruby>おもひにうすき身なればか朝の<ruby><rb>露草</rb><rt>つゆくさ</rt></ruby>人ねたかりし</p>
+        <p>とどめあへぬそぞろ心は人しらむくづれし牡丹さぎぬに紅き</p>
+        <p>『あらざりき』そは<ruby><rb>後</rb><rt>のち</rt></ruby>の人のつぶやきし我には<ruby><rb>永久</rb><rt>とは</rt></ruby>のうつくしの夢</p>
+        <p>行く春の<ruby><rb>一絃</rb><rt>ひとを</rt></ruby><ruby><rb>一柱</rb><rt>ひとぢ</rt></ruby>におもひありさいへ<ruby><rb>火</rb><rt>ほ</rt></ruby>かげのわが髪ながき</p>
+        <p>のらす神あふぎ見するに<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>おもきわが世の闇の夢の<ruby><rb>小夜中</rb><rt>さよなか</rt></ruby></p>
+        <p>そのわかき羊は誰に似たるぞの<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>の<ruby><rb>御色</rb><rt>みいろ</rt></ruby>野は夕なりし</p>
+        <p>あえかなる白きうすものまなじりの火かげの<ruby><rb>栄</rb><rt>はえ</rt></ruby>の<ruby><rb>詛</rb><rt>のろ</rt></ruby>はしき君</p>
+        <p>紅梅にそぞろゆきたる<placeName ref="#kyoto">京</placeName>の山叔母の尼すむ寺は訪はざりし</p>
+        <p>くさぐさの色ある花によそはれし<ruby><rb>棺</rb><rt>ひつぎ</rt></ruby>のなかの友うつくしき</p>
+        <p>五つとせは夢にあらずよみそなはせ春に色なき草ながき里</p>
+        <p>すげ笠にあるべき歌と強ひゆきぬ若葉よ<ruby><rb>薫</rb><rt>かを</rt></ruby>れ<placeName ref="#ikoma"><ruby><rb>生駒</rb><rt>いこま</rt></ruby></placeName><placeName ref="#katsuragi"><ruby><rb>葛城</rb><rt>かつらぎ</rt></ruby></placeName></p>
+        <p>裾たるる紫ひくき根なし雲牡丹が夢の<ruby><rb>真昼</rb><rt>まひる</rt></ruby>しづけき</p>
+        <p>紫のわが世の恋のあさぼらけ<ruby><rb>諸手</rb><rt>もろで</rt></ruby>のかをり<ruby><rb>追風</rb><rt>おひかぜ</rt></ruby>ながき</p>
+        <p>このおもひ真昼の夢と誰か云ふ酒のかをりのなつかしき春</p>
+        <p>みどりなるは学びの宮とさす神にいらへまつらで摘む夕すみれ</p>
+        <p>そら鳴りの夜ごとのくせぞ<ruby><rb>狂</rb><rt>くる</rt></ruby>ほしき<ruby><rb>汝</rb><rt>なれ</rt></ruby>よ<ruby><rb>小琴</rb><rt>をごと</rt></ruby>よ片袖かさむ（琴に）</p>
+        <p>ぬしえらばず胸にふれむの行く春の小琴とおぼせ眉やはき君（琴のいらへて）</p>
+        <p><ruby><rb>去年</rb><rt>こぞ</rt></ruby>ゆきし姉の名よびて夕ぐれの戸に立つ人をあはれと思ひぬ</p>
+        <p><ruby><rb>十九</rb><rt>つづ</rt></ruby>のわれすでに菫を白く見し水はやつれぬはかなかるべき</p>
+        <p>ひと年をこの子のすがた絹に成らず画の筆すてて詩にかへし君</p>
+        <p>白きちりぬ紅きくづれぬ<ruby><rb>床</rb><rt>ゆか</rt></ruby>の牡丹五<ruby><rb>山</rb><rt>ざん</rt></ruby>の僧の口おそろしき</p>
+        <p>今日の身に我をさそひし<ruby><rb>中</rb><rt>なか</rt></ruby>の姉<persName ref="#komachi"><ruby><rb>小町</rb><rt>こまち</rt></ruby></persName>のはてを祈れと<ruby><rb>去</rb><rt>い</rt></ruby>にぬ</p>
+        <p>秋もろし春みじかしをまどひなく説く子ありなば我れ道きかむ</p>
+        <p>さそひ入れてさらばと我手はらひます<ruby><rb>御衣</rb><rt>みけし</rt></ruby>のにほひ<ruby><rb>闇</rb><rt>やみ</rt></ruby>やはらかき</p>
+        <p>病みてこもる山の御堂に春くれぬ<ruby><rb>今日</rb><rt>けふ</rt></ruby>文ながき絵筆とる君</p>
+        <p>河ぞひの<ruby><rb>門</rb><rt>かど</rt></ruby>小雨ふる柳はら<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の<ruby><rb>一人</rb><rt>ひとり</rt></ruby>めす馬しろき</p>
+        <p>歌は斯くよ血ぞゆらぎしと語る友に笑まひを見せしさびしき思</p>
+        <p>とおもへばぞ垣をこえたる山ひつじとおもへばぞの花よわりなの</p>
+        <p>庭下駄に水をあやぶむ花あやめ<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>にたらぬ力をわびぬ</p>
+        <p>柳ぬれし<ruby><rb>今朝</rb><rt>けさ</rt></ruby><ruby><rb>門</rb><rt>かど</rt></ruby>すぐる文づかひ<ruby><rb>青貝</rb><rt>あをがひ</rt></ruby>ずりのその箱ほそき</p>
+        <p>『いまさらにそは春せまき御胸なり』われ眼をとぢて御手にすがりぬ</p>
+        <p>その友はもだえのはてに歌を見ぬわれを召す神きぬ薄黒き</p>
+        <p>そのなさけかけますな君罪の子が狂ひのはてを見むと云ひたまへ</p>
+        <p>いさめますか道ときますかさとしますか宿世のよそに血を召しませな</p>
+        <p>もろかりしはかなかりしと春のうた焚くにこの子の血ぞあまり若き</p>
+        <p>夏やせの我やねたみの<ruby><rb>二十妻</rb><rt>はたちづま</rt></ruby><ruby><rb>里居</rb><rt>さとゐ</rt></ruby>の夏に<placeName ref="#kyoto">京</placeName>を説く君</p>
+        <p>こもり居に<ruby><rb>集</rb><rt>しふ</rt></ruby>の歌ぬくねたみ妻<date when="--05"><ruby><rb>五月</rb><rt>さつき</rt></ruby></date>のやどの<ruby><rb>二人</rb><rt>ふたり</rt></ruby>うつくしき</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>舞姫</head>
+        <p>人に侍る<placeName ref="#oi"><ruby><rb>大堰</rb><rt>おほゐ</rt></ruby></placeName>の水のおばしまにわかきうれひの袂の長き</p>
+        <p>くれなゐの扇に惜しき涙なりき<placeName ref="#saga">嵯峨</placeName>のみじか夜<ruby><rb>暁</rb><rt>あけ</rt></ruby>寒かりし</p>
+        <p>朝を細き雨に<ruby><rb>小鼓</rb><rt>こつづみ</rt></ruby>おほひゆくだんだら染の袖ながき君</p>
+        <p>人にそひて<ruby><rb>今日</rb><rt>けふ</rt></ruby><placeName ref="#kyoto">京</placeName>の子の歌をきく<placeName ref="#gion"><ruby><rb>祇園</rb><rt>ぎをん</rt></ruby></placeName><placeName ref="#kiyomizu"><ruby><rb>清水</rb><rt>きよみづ</rt></ruby></placeName>春の山まろき</p>
+        <p>くれなゐの襟にはさめる<ruby><rb>舞扇</rb><rt>まひあふぎ</rt></ruby>酔のすさびのあととめられな</p>
+        <p>桃われの前髪ゆへるくみ紐やときいろなるがことたらぬかな</p>
+        <p>浅黄地に扇ながしの<ruby><rb>都染</rb><rt>みやこぞめ</rt></ruby>九尺のしごき袖よりも長き</p>
+        <p><placeName ref="#shijobashi">四条<ruby><rb>橋</rb><rt>ばし</rt></ruby></placeName>おしろいあつき舞姫のぬかささやかに撲つ夕あられ</p>
+        <p>さしかざす<ruby><rb>小傘</rb><rt>をがさ</rt></ruby>に紅き<ruby><rb>揚羽蝶</rb><rt>あげはてふ</rt></ruby>小褄とる手に雪ちりかかる</p>
+        <p>舞姫のかりね姿ようつくしき朝<placeName ref="#kyoto"><ruby><rb>京</rb><rt>きやう</rt></ruby></placeName>くだる春の川舟</p>
+        <p>紅梅に金糸のぬひの菊づくし五枚かさねし襟なつかしき</p>
+        <p>舞ぎぬの袂に声をおほひけりここのみ闇の春の<ruby><rb>廻廊</rb><rt>わたどの</rt></ruby></p>
+        <p>まこと人を打たれむものかふりあげし袂このまま夜をなに舞はむ</p>
+        <p>三たび四たびおなじしらべの<placeName ref="#kyoto">京</placeName>の四季おとどの君をつらしと思ひぬ</p>
+        <p>あてびとの<ruby><rb>御膝</rb><rt>みひざ</rt></ruby>へおぞやおとしけり<ruby><rb>行幸源氏</rb><rt>みゆきげんじ</rt></ruby>の<ruby><rb>巻絵</rb><rt>まきゑ</rt></ruby>の<ruby><rb>小櫛</rb><rt>をぐし</rt></ruby></p>
+        <p>しろがねの舞の花櫛おもくしてかへす袂のままならぬかな</p>
+        <p>四とせまへ鼓うつ手にそそがせし涙のぬしに逢はれむ我か</p>
+        <p>おほつづみ<ruby><rb>抱</rb><rt>かゝ</rt></ruby>へかねたるその頃よ<ruby><rb>美</rb><rt>よ</rt></ruby>き<ruby><rb>衣</rb><rt>きぬ</rt></ruby>きるをうれしと思ひし</p>
+        <p>われなれぬ千鳥なく夜の川かぜに<ruby><rb>鼓拍子</rb><rt>つづみびやうし</rt></ruby>をとりて行くまで</p>
+        <p>いもうとの琴には惜しきおぼろ夜よ<placeName ref="#kyoto">京</placeName>の子こひし鼓のひと手</p>
+        <p>よそほひし<placeName ref="#kyoto">京</placeName>の子すゑて<ruby><rb>絹</rb><rt>きぬ</rt></ruby>のべて絵の具とく夜を春の雨ふる</p>
+        <p>そのなさけ今日<ruby><rb>舞姫</rb><rt>まひひめ</rt></ruby>に<ruby><rb>強</rb><rt>し</rt></ruby>ひますか西の<ruby><rb>秀才</rb><rt>すさい</rt></ruby>が眉よやつれし</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>春思</head>
+        <p>いとせめてもゆるがままにもえしめよ斯くぞ覚ゆる暮れて行く春</p>
+        <p>春みじかし何に<ruby><rb>不滅</rb><rt>ふめつ</rt></ruby>の命ぞとちからある乳を手にさぐらせぬ</p>
+        <p><ruby><rb>夜</rb><rt>よ</rt></ruby>の<ruby><rb>室</rb><rt>むろ</rt></ruby>に絵の具かぎよる<ruby><rb>懸想</rb><rt>けさう</rt></ruby>の子太古の神に春似たらずや</p>
+        <p>そのはてにのこるは何と問ふな説くな友よ歌あれ<ruby><rb>終</rb><rt>つひ</rt></ruby>の十字架</p>
+        <p>わかき子が胸の小琴の<ruby><rb>音</rb><rt>ね</rt></ruby>を知るや旅ねの君よたまくらかさむ</p>
+        <p>松かげにまたも相見る君とわれゑにしの神をにくしとおぼすな</p>
+        <p>きのふをば千とせの前の世とも思ひ御手なほ肩に有りとも思ふ</p>
+        <p>歌は君酔ひのすさびと墨ひかばさても消ゆべしさても消ぬべし</p>
+        <p>神よとはにわかきまどひのあやまちとこの子の悔ゆる歌ききますな</p>
+        <p>湯あがりを<ruby><rb>御風</rb><rt>みかぜ</rt></ruby>めすなのわが<ruby><rb>上衣</rb><rt>うはぎ</rt></ruby>ゑんじむらさき人うつくしき</p>
+        <p>さればとておもにうすぎぬかづきなれず春ゆるしませ<ruby><rb>中</rb><rt>なか</rt></ruby>の小屏風</p>
+        <p>しら綾に鬢の香しみし<ruby><rb>夜着</rb><rt>よぎ</rt></ruby>の襟そむるに歌のなきにしもあらず</p>
+        <p>夕ぐれの霧のまがひもさとしなりき消えしともしび神うつくしき</p>
+        <p>もゆる口になにを含まむぬれといひし人のをゆびの血は涸れはてぬ</p>
+        <p>人の子の恋をもとむる唇に毒ある蜜をわれぬらむ願ひ</p>
+        <p>ここに三とせ人の名を見ずその詩よまず過すはよわきよわき心なり</p>
+        <p>梅の渓の<ruby><rb>靄</rb><rt>もや</rt></ruby>くれなゐの朝すがた山うつくしき我れうつくしき</p>
+        <p>ぬしや誰れねぶの木かげの<ruby><rb>釣床</rb><rt>つりどこ</rt></ruby>の<ruby><rb>網</rb><rt>あみ</rt></ruby>のめもるる水色のきぬ</p>
+        <p>歌に声のうつくしかりし旅人の行手の村の桃しろかれな</p>
+        <p>朝の雨につばさしめりし鶯を打たむの袖のさだすぎし君</p>
+        <p>御手づからの水にうがひしそれよ朝かりし<ruby><rb>紅筆</rb><rt>べにふで</rt></ruby>歌かきてやまむ</p>
+        <p><ruby><rb>春寒</rb><rt>はるさむ</rt></ruby>のふた日を<placeName ref="#kyoto">京</placeName>の山ごもり梅にふさはぬわが髪の乱れ</p>
+        <p>歌筆を<ruby><rb>紅</rb><rt>べに</rt></ruby>にかりたる<ruby><rb>尖</rb><rt>さき</rt></ruby><ruby><rb>凍</rb><rt>い</rt></ruby>てぬ西のみやこの春さむき朝</p>
+        <p>春の宵をちひさく撞きて鐘を下りぬ二十七<ruby><rb>段</rb><rt>だん</rt></ruby>堂のきざはし</p>
+        <p>手をひたし水は昔にかはらずとさけぶ子の恋われあやぶみぬ</p>
+        <p>病むわれにその子五つのをととなりつたなの笛をあはれと聞く夜</p>
+        <p>とおもひてぬひし春着の袖うらにうらみの歌は書かさせますな</p>
+        <p>かくて果つる我世さびしと泣くは誰ぞしろ桔梗さく<ruby><rb>伽藍</rb><rt>がらん</rt></ruby>のうらに</p>
+        <p>人とわれおなじ十九のおもかげをうつせし水よ<placeName ref="#ishizugawa">石津川</placeName>の流れ</p>
+        <p>卯の花を<ruby><rb>小傘</rb><rt>をがさ</rt></ruby>にそへて褄とりて五月雨わぶる村はづれかな</p>
+        <p><ruby><rb>大御油</rb><rt>おほみあぶら</rt></ruby>ひひなの<ruby><rb>殿</rb><rt>との</rt></ruby>にまゐらするわが前髪に桃の花ちる</p>
+        <p>夏花に多くの恋をゆるせしを神悔い泣くか枯野ふく風</p>
+        <p>道を云はず後を思はず名を問はずここに恋ひ恋ふ君と我と見る</p>
+        <p>魔に向ふつるぎの<ruby><rb>束</rb><rt>つか</rt></ruby>をにぎるには細き五つの<ruby><rb>御指</rb><rt>みゆび</rt></ruby>と吸ひぬ</p>
+        <p>消えむものか歌よむ人の夢とそはそは夢ならむさて消えむものか</p>
+        <p>恋と云はじそのまぼろしのあまき夢<ruby><rb>詩人</rb><rt>しじん</rt></ruby>もありき画だくみもありき</p>
+        <p>君さけぶ道のひかりの<ruby><rb>遠</rb><rt>をち</rt></ruby>を見ずやおなじ<ruby><rb>紅</rb><rt>あけ</rt></ruby>なる<ruby><rb>靄</rb><rt>もや</rt></ruby>たちのぼる</p>
+        <p>かたちの子春の子血の子ほのほの子いまを自在の<ruby><rb>翅</rb><rt>はね</rt></ruby>なからずや</p>
+        <p>ふとそれより花に色なき春となりぬ疑ひの神まどはしの神</p>
+        <p>うしや我れさむるさだめの夢を<ruby><rb>永久</rb><rt>とは</rt></ruby>にさめなと祈る人の子におちぬ</p>
+        <p>わかき子が髪のしづくの草に凝りて蝶とうまれしここ春の国</p>
+        <p><ruby><rb>結願</rb><rt>けちぐわん</rt></ruby>のゆふべの雨に花ぞ黒き五尺こちたき髪かるうなりぬ</p>
+        <p>罪おほき男こらせと肌きよく黒髪ながくつくられし我れ</p>
+        <p>そとぬけてその<ruby><rb>靄</rb><rt>もや</rt></ruby>おちて人を見ず夕の鐘のかたへさびしき</p>
+        <p>春の小川うれしの夢に人遠き朝を絵の具の紅き流さむ</p>
+        <p>もろき虹の七いろ恋ふるちさき者よめでたからずや<ruby><rb>魔神</rb><rt>まがみ</rt></ruby>の<ruby><rb>翼</rb><rt>つばさ</rt></ruby></p>
+        <p>酔に泣くをとめに見ませ春の神男の舌のなにかするどき</p>
+        <p>その酒の濃きあぢはひを歌ふべき身なり君なり春のおもひ子</p>
+        <p>花にそむき<persName ref="#david">ダビデ</persName>の歌を誦せむにはあまりに若き我身とぞ思ふ</p>
+        <p>みかへりのそれはた更につらかりき闇におぼめく山吹垣根</p>
+        <p>ゆく水に柳に春ぞなつかしき思はれ人に外ならぬ我れ</p>
+        <p>その夜かの夜よわきためいきせまりし夜琴にかぞふる三とせは長き</p>
+        <p>きけな神恋はすみれの紫にゆふべの春の<ruby><rb>讃嘆</rb><rt>さんたん</rt></ruby>のこゑ</p>
+        <p>病みませるうなじに<ruby><rb>繊</rb><rt>ほそ</rt></ruby>きかひな捲きて熱にかわける<ruby><rb>御口</rb><rt>みくち</rt></ruby>を吸はむ</p>
+        <p>天の川そひねの床のとばりごしに星のわかれをすかし見るかな</p>
+        <p>染めてよと君がみもとへおくりやりし扇かへらず風<ruby><rb>秋</rb><rt>あき</rt></ruby>となりぬ</p>
+        <p>たまはりしうす紫の名なし草うすきゆかりを歎きつつ死なむ</p>
+        <p>うき身朝をはなれがたなの<ruby><rb>細柱</rb><rt>ほそばしら</rt></ruby>たまはる梅の歌ことたらぬ</p>
+        <p>さおぼさずや宵の火かげの長き歌かたみに詞あまり多かりき</p>
+        <p>その歌を<ruby><rb>誦</rb><rt>ず</rt></ruby>します声にさめし朝なでよの櫛の人はづかしき</p>
+        <p><ruby><rb>明日</rb><rt>あす</rt></ruby>を思ひ明日の今おもひ宿の戸に倚る子やよわき梅暮れそめぬ</p>
+        <p><ruby><rb>金色</rb><rt>こんじき</rt></ruby>の<ruby><rb>翅</rb><rt>はね</rt></ruby>あるわらは<ruby><rb>躑躅</rb><rt>つつじ</rt></ruby>くはへ<ruby><rb>小舟</rb><rt>をぶね</rt></ruby>こぎくるうつくしき川</p>
+        <p>月こよひいたみの眉はてらさざるに琵琶だく人の年とひますな</p>
+        <p>恋をわれもろしと知りぬ別れかねおさへし袂風の吹きし時</p>
+        <p>星の世のむくのしらぎぬかばかりに染めしは誰のとがとおぼすぞ</p>
+        <p>わかき子のこがれよりしは鑿のにほひ<ruby><rb>美妙</rb><rt>みめう</rt></ruby>の<ruby><rb>御相</rb><rt>みさう</rt></ruby>けふ身にしみぬ</p>
+        <p>清し高しさはいへさびし<ruby><rb>白銀</rb><rt>しろがね</rt></ruby>のしろきほのほと人の<ruby><rb>集</rb><rt>しふ</rt></ruby>見し（<persName ref="#suimei">酔茗</persName>の君の詩集に）</p>
+        <p><ruby><rb>雁</rb><rt>かり</rt></ruby>よそよわがさびしきは南なりのこりの恋のよしなき<ruby><rb>朝夕</rb><rt>あさゆふ</rt></ruby></p>
+        <p>来し秋の何に似たるのわが命せましちひさし萩よ紫苑よ</p>
+        <p>柳あをき堤にいつか立つや我れ水はさばかり流とからず</p>
+        <p><ruby><rb>幸</rb><rt>さち</rt></ruby>おはせ羽やはらかき鳩とらへ罪ただしたる高き君たち</p>
+        <p>打ちますにしろがねの鞭うつくしき愚かよ泣くか名にうとき<ruby><rb>羊</rb><rt>ひつじ</rt></ruby></p>
+        <p>誰に似むのおもひ問はれし春ひねもすやは肌もゆる血のけに泣きぬ</p>
+        <p><ruby><rb>庫裏</rb><rt>くり</rt></ruby>の藤に春ゆく宵のものぐるひ<ruby><rb>御経</rb><rt>みきやう</rt></ruby>のいのちうつつをかしき</p>
+        <p>春の虹ねりのくけ紐たぐります<ruby><rb>羞</rb><rt>はぢろ</rt></ruby>ひ<ruby><rb>神</rb><rt>がみ</rt></ruby>の<ruby><rb>暁</rb><rt>あけ</rt></ruby>のかをりよ</p>
+        <p><ruby><rb>室</rb><rt>むろ</rt></ruby>の神に<ruby><rb>御肩</rb><rt>みかた</rt></ruby>かけつつひれふしぬゑんじなればの宵の<ruby><rb>一襲</rb><rt>ひとかさね</rt></ruby></p>
+        <p><ruby><rb>天</rb><rt>あめ</rt></ruby>の<ruby><rb>才</rb><rt>さい</rt></ruby>ここににほひの美しき春をゆふべに<ruby><rb>集</rb><rt>しふ</rt></ruby>ゆるさずや</p>
+        <p>消えて<ruby><rb>凝</rb><rt>こ</rt></ruby>りて石と成らむの<ruby><rb>白桔梗</rb><rt>しろぎきやう</rt></ruby>秋の<ruby><rb>野生</rb><rt>のおひ</rt></ruby>の<ruby><rb>趣味</rb><rt>しゆみ</rt></ruby>さて問ふな</p>
+        <p>歌の手に葡萄をぬすむ子の髪のやはらかいかな虹のあさあけ</p>
+        <p>そと秘めし春のゆふべのちさき夢はぐれさせつる十三絃よ</p>
+      </div>
+    </body>
+  </text>
+</TEI>
