@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>護持院原の敵討</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>護持院原の敵討</title><author>森鴎外</author>
+          <note>青空文庫。底本：「山椒大夫・高瀬舟」新潮文庫、新潮社。1968（昭和43）年5月30日発行。1985（昭和60）年6月10日41刷改版。1990（平成2）年5月30日53刷。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card1054.html">https://www.aozora.gr.jp/cards/000129/card1054.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="sanemon">
+        <persName>山本三右衛門</persName>
+        <note>酒井雅楽頭忠実の家来。大金奉行。天保四年十二月、金部屋の宿直中に表小使に斬られ、翌日死ぬ。当年五十五歳。敵討の遺言を遺す</note>
+      </person>
+      <person xml:id="kuroemon">
+        <persName>山本九郎右衛門</persName>
+        <note>三右衛門の実弟(九つ違)。姫路で家老本多意気揚に仕える。当年四十五歳。助太刀として甥・姪の敵討に加わり、最後に敵にとどめを刺す</note>
+      </person>
+      <person xml:id="uhei">
+        <persName>山本宇平</persName>
+        <note>三右衛門の伜。当年十九歳。敵討の主。叔父に「若殿」と綽名される。旅の途中で精神の変調を来し、大阪で出奔する</note>
+      </person>
+      <person xml:id="riyo">
+        <persName>りよ</persName>
+        <note>三右衛門の娘、宇平の姉。当年二十二歳。細川家・酒井亀之進家などに奉公しながら江戸で敵を捜し、護持院原で父の脇差を以て敵を討つ</note>
+      </person>
+      <person xml:id="bunkichi">
+        <persName>文吉</persName>
+        <note>近江国浅井郡の産。もと酒井家の表小使で、亀蔵と同輩。当年四十二歳。敵の見識人として宇平の家来となり、最後まで従う。のち深中と名のる</note>
+      </person>
+      <person xml:id="torazo">
+        <persName>虎蔵</persName>
+        <note>泉州生田郡上野原村の吉兵衛の伜。知人の名を騙って「亀蔵」と名のり酒井家の表小使に住み込み、三右衛門を斬る。天保六年七月、護持院原で討たれる</note>
+      </person>
+      <person xml:id="kamezo">
+        <persName>亀蔵</persName>
+        <note>紀伊国熊野浦長島外町の漁師定右衛門の長男。若い時江戸へ出て音信不通となる。虎蔵に名を騙られたため一行に敵と誤認され、坊主にされて高野山へ送られる</note>
+      </person>
+      <person xml:id="heisaku">
+        <persName>山本平作</persName>
+        <note>浜町の酒井家添邸に住む山本家の遠い親戚。焼け出された宇平一家を引き取る</note>
+      </person>
+      <person xml:id="sumaemon">
+        <persName>桜井須磨右衛門</persName>
+        <note>三右衛門の未亡人の実弟。浅草の観音の茶店で遊人の噂話から亀蔵の江戸帰還を知り、大阪の一行に知らせる</note>
+      </person>
+      <person xml:id="harada">
+        <persName>原田</persName>
+        <note>小笠原備後守貞謙の家来。三右衛門の妹の夫(りよの叔母婿)。麻布日が窪の小笠原邸に住み、りよを引き取る</note>
+      </person>
+      <person xml:id="kobe">
+        <persName>神戸</persName>
+        <note>浜町の酒井家添邸に住む山本家の親戚。瀕死の三右衛門を引き取り、のちりよを預かる</note>
+      </person>
+      <person xml:id="gose">
+        <persName>五瀬</persName>
+        <note>酒井家の侍。作事方に勤める。詰所に掛けて置いた刀を盗まれ、それが凶器に使われた</note>
+      </person>
+      <person xml:id="ikiyo">
+        <persName>本多意気揚</persName>
+        <note>姫路の家老。徳川家康が酒井家に附けた本多意気揚の子孫。九郎右衛門の助太刀を許し、成就後に百石を与える</note>
+      </person>
+      <person xml:id="kenzo">
+        <persName>健蔵</persName>
+        <note>九郎右衛門の伜。父の留守を預かる</note>
+      </person>
+      <person xml:id="sakai-tadazane">
+        <persName>酒井雅楽頭忠実</persName>
+        <note>播磨国飾東郡姫路の城主。三右衛門・九郎右衛門の主君。敵討を許す証文を出す</note>
+      </person>
+      <person xml:id="sakai-tadanori">
+        <persName>酒井忠学</persName>
+        <note>天保六年四月に代替りした姫路の当主。敵討成就の届を受け、九郎右衛門・りよ・文吉を賞す</note>
+      </person>
+      <person xml:id="sakai-kamenoshin">
+        <persName>酒井亀之進</persName>
+        <note>御茶の水の寄合衆。天保六年の春からりよが奥に奉公する</note>
+      </person>
+      <person xml:id="sakai-tadakata">
+        <persName>酒井石見守忠方</persName>
+        <note>浅草の酒井家。酒井亀之進の妻の父</note>
+      </person>
+      <person xml:id="sakai-tadashitsu">
+        <persName>酒井忠質</persName>
+        <note>故人。その室専寿院がりよに祝儀を贈る</note>
+      </person>
+      <person xml:id="senjuin">
+        <persName>専寿院</persName>
+        <note>故酒井忠質の室。りよに高砂染縮緬などを贈る</note>
+      </person>
+      <person xml:id="okitatsu">
+        <persName>細川長門守興建</persName>
+        <note>りよが当初奉公した大名。邸は豊島町</note>
+      </person>
+      <person xml:id="ogasawara">
+        <persName>小笠原備後守貞謙</persName>
+        <note>小倉新田の城主。家来原田某の妻が三右衛門の妹。邸は麻布日が窪</note>
+      </person>
+      <person xml:id="ieyasu">
+        <persName>徳川家康</persName>
+        <note>本多意気揚の先祖を酒井家に附けた</note>
+      </person>
+      <person xml:id="okubo">
+        <persName>大久保加賀守忠真</persName>
+        <note>月番老中。天保五年の敵討の願、および天保六年の成就の届を受ける</note>
+      </person>
+      <person xml:id="matsudaira-hoki">
+        <persName>松平伯耆守宗発</persName>
+        <note>大名。天保五年二月十日、大名小路の上邸から出火する</note>
+      </person>
+      <person xml:id="osawa">
+        <persName>大沢右京大夫基昭</persName>
+        <note>小川町俎橋際の高家衆。三右衛門の未亡人が奥に奉公する</note>
+      </person>
+      <person xml:id="honda-tatewaki">
+        <persName>本多帯刀</persName>
+        <note>本郷弓町の寄合衆。その家来に山本家の遠い親戚があり、りよが手伝に行く</note>
+      </person>
+      <person xml:id="honda-iyo">
+        <persName>本多伊予守</persName>
+        <note>河岸の辻番所の頭取。敵討の届を受け、大目附に届ける</note>
+      </person>
+      <person xml:id="tsutsui">
+        <persName>筒井伊賀守政憲</persName>
+        <note>町奉行。敵討の後、九郎右衛門ら三人を五度呼び出して取り調べ、褒詞を与える</note>
+      </person>
+      <person xml:id="mizuno-tadakuni">
+        <persName>水野越前守忠邦</persName>
+        <note>用番老中。九郎右衛門・りよに「奇特之儀に付構なし」、文吉に「仔細無之構なし」と申し渡す</note>
+      </person>
+      <person xml:id="mizuno-uneme">
+        <persName>水野采女</persName>
+        <note>西丸目附徒士頭十五番組。護持院原の見分と引渡しを指図する</note>
+      </person>
+      <person xml:id="hitosugi">
+        <persName>仁杉八右衛門</persName>
+        <note>町奉行所の与力。三人の口書を取る</note>
+      </person>
+      <person xml:id="endo">
+        <persName>遠藤但馬守胤統</persName>
+        <note>辻番所組合。酒井忠学の留守居に敵討を知らせる</note>
+      </person>
+      <person xml:id="udono">
+        <persName>鵜殿吉之丞</persName>
+        <note>辻番組合月番・西丸御小納戸。三人に鮨と生菓子を贈る</note>
+      </person>
+      <person xml:id="tamaki">
+        <persName>玉木勝三郎</persName>
+        <note>鵜殿吉之丞の家来。辻番人の組合頭で、死骸を預けられる</note>
+      </person>
+      <person xml:id="nagai">
+        <persName>永井亀次郎</persName>
+        <note>西丸徒士目附。見分に出張し、口書を取る</note>
+      </person>
+      <person xml:id="kubota">
+        <persName>久保田英次郎</persName>
+        <note>西丸徒士目附。見分に出張し、口書を取る</note>
+      </person>
+      <person xml:id="hiraoka">
+        <persName>平岡唯八郎</persName>
+        <note>西丸小人目附。見分に出張する</note>
+      </person>
+      <person xml:id="inoue">
+        <persName>井上又八</persName>
+        <note>西丸小人目附。見分に出張する</note>
+      </person>
+      <person xml:id="shimoya">
+        <persName>志母谷金左衛門</persName>
+        <note>使之者。見分に出張する</note>
+      </person>
+      <person xml:id="itami">
+        <persName>伊丹長次郎</persName>
+        <note>使之者。見分に出張する</note>
+      </person>
+      <person xml:id="matsumoto">
+        <persName>松本助之丞</persName>
+        <note>西丸目附。鵜殿吉之丞から見分の届を受ける</note>
+      </person>
+      <person xml:id="shono">
+        <persName>庄野慈父右衛門</persName>
+        <note>酒井家留守居。三人を引き渡される</note>
+      </person>
+      <person xml:id="kawai">
+        <persName>河合小太郎</persName>
+        <note>酒井家の家老。りよへの申渡をする</note>
+      </person>
+      <person xml:id="yashiro">
+        <persName>屋代太郎弘賢</persName>
+        <note>国学者・幕臣(1758–1841)。この敵討の時七十八歳で、九郎右衛門・りよに賞美の歌を贈る</note>
+      </person>
+      <person xml:id="ota-shichizaemon">
+        <persName>太田七左衛門</persName>
+        <note>大田南畝(蜀山人、1749–1823)。狂歌のパロディで知られ、その死から十二年程が経っていた</note>
+      </person>
+      <person xml:id="iwahashi">
+        <persName>岩橋</persName>
+        <note>松坂殿町の目代。一行のために綿密な調べをし、紀州の亀蔵の顛末を知らせる</note>
+      </person>
+      <person xml:id="fukuda">
+        <persName>福田</persName>
+        <note>長崎の町年寄。尋人の世話をし、盗賊方を同行させる</note>
+      </person>
+      <person xml:id="ogawa">
+        <persName>小川</persName>
+        <note>長崎で剣術師範をする者。助太刀を申し出る</note>
+      </person>
+      <person xml:id="taniguchi">
+        <persName>谷口</persName>
+        <note>広峯山の神主。怪しい非人の事を知らせる</note>
+      </person>
+      <person xml:id="sadaemon">
+        <persName>定右衛門</persName>
+        <note>紀伊国熊野浦長島外町の漁師。亀蔵・定助の父。伜の行末を心配し、気病で亡くなる</note>
+      </person>
+      <person xml:id="sadasuke">
+        <persName>定助</persName>
+        <note>定右衛門の二男。亀蔵の弟</note>
+      </person>
+      <person xml:id="rinsuke">
+        <persName>林助</persName>
+        <note>熊野仁郷村に住む亀蔵の母方の小父。貧しく亀蔵を置けず、父の許へ帰す</note>
+      </person>
+      <person xml:id="sahei">
+        <persName>深野屋佐兵衛</persName>
+        <note>松坂の大商人。定右衛門一家と心安く、尋ねて来た亀蔵を追い返す</note>
+      </person>
+      <person xml:id="matabei">
+        <persName>又兵衛</persName>
+        <note>高野領清水村の者。高野山へ登る亀蔵を泊める</note>
+      </person>
+      <person xml:id="kichibei">
+        <persName>吉兵衛</persName>
+        <note>泉州生田郡上野原村の者。虎蔵の父</note>
+      </person>
+      <person xml:id="fujiya">
+        <persName>富士屋治三郎</persName>
+        <note>神田久右衛門町代地の仲間口入宿。「亀蔵」と名のる虎蔵を酒井家に入れた</note>
+      </person>
+      <person xml:id="wakasaya">
+        <persName>若狭屋亀吉</persName>
+        <note>「亀蔵」の下請宿</note>
+      </person>
+      <person xml:id="kiyomasa">
+        <persName>清正公</persName>
+        <note>加藤清正(1562–1611)。熊本で「清正公(せいしょこ)」として祀られる。一行が祈願する</note>
+      </person>
+      <person xml:id="mitsumine">
+        <persName>三峯権現</persName>
+        <note>武蔵国三峯山の神。一行が祈願を籠める</note>
+      </person>
+      <person xml:id="awashima">
+        <persName>淡島</persName>
+        <note>淡島明神。九郎右衛門・文吉は変装のため「淡島の神主」(淡島願人)に身をやつす</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.685 139.753</geo></location>
+        <note>東京の旧称・概値</note>
+      </place>
+      <place xml:id="edojo">
+        <placeName>江戸城</placeName>
+        <location><geo>35.6852 139.7528</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="ote">
+        <placeName>大手</placeName>
+        <location><geo>35.687 139.759</geo></location>
+        <note>江戸城大手門前。酒井家上邸のある地・概値</note>
+      </place>
+      <place xml:id="sakaitei">
+        <placeName>酒井邸</placeName>
+        <note>酒井雅楽頭家の上邸(江戸城の大手向左角)。屋敷の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="kakigaracho">
+        <placeName>蠣殻町</placeName>
+        <location><geo>35.684 139.784</geo></location>
+        <note>日本橋蠣殻町。酒井家の中邸がある・概値</note>
+      </place>
+      <place xml:id="hamacho">
+        <placeName>浜町</placeName>
+        <location><geo>35.6885 139.787</geo></location>
+        <note>日本橋浜町。酒井家の添邸がある・概値</note>
+      </place>
+      <place xml:id="yanokura">
+        <placeName>矢の倉</placeName>
+        <location><geo>35.691 139.786</geo></location>
+        <note>日本橋矢ノ倉(現中央区東日本橋)・概値</note>
+      </place>
+      <place xml:id="toshimacho">
+        <placeName>豊島町</placeName>
+        <location><geo>35.6975 139.776</geo></location>
+        <note>神田豊島町。細川邸がある・概値</note>
+      </place>
+      <place xml:id="hosokawatei">
+        <placeName>細川邸</placeName>
+        <note>豊島町にあった細川長門守家の邸。屋敷の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="azabu">
+        <placeName>麻布</placeName>
+        <location><geo>35.657 139.732</geo></location>
+        <note>旧麻布区一帯(現港区)・概値</note>
+      </place>
+      <place xml:id="higakubo">
+        <placeName>日が窪</placeName>
+        <location><geo>35.6622 139.73</geo></location>
+        <note>麻布日ヶ窪(現港区六本木)・概値</note>
+      </place>
+      <place xml:id="ogasawaratei">
+        <placeName>小笠原邸</placeName>
+        <note>麻布日が窪にあった小笠原備後守家の邸。屋敷の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="asakusa">
+        <placeName>浅草</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="asakusadomae">
+        <placeName>浅草堂前</placeName>
+        <note>浅草の堂前(誓願寺門前一帯)。遍立寺のある地。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="henryuji">
+        <placeName>遍立寺</placeName>
+        <note>浅草堂前にあった山本家の菩提所。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="kannon">
+        <placeName>観音</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+        <note>浅草の観音(浅草寺)・概値</note>
+      </place>
+      <place xml:id="kaminarimon">
+        <placeName>雷門</placeName>
+        <location><geo>35.7108 139.7965</geo></location>
+        <note>浅草寺の雷門・概値</note>
+      </place>
+      <place xml:id="kuramae">
+        <placeName>蔵前</placeName>
+        <location><geo>35.705 139.793</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="ryogoku">
+        <placeName>両国</placeName>
+        <location><geo>35.695 139.793</geo></location>
+        <note>両国橋界隈。花火の名所・概値</note>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.692 139.77</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kandabashi">
+        <placeName>神田橋</placeName>
+        <location><geo>35.6907 139.7645</geo></location>
+        <note>江戸城外郭の神田橋・概値</note>
+      </place>
+      <place xml:id="gojiinhara">
+        <placeName>護持院原</placeName>
+        <location><geo>35.692 139.762</geo></location>
+        <note>神田橋外の火除明地(現千代田区神田錦町・一ツ橋付近)。敵討の場・概値</note>
+      </place>
+      <place xml:id="kyuemoncho">
+        <placeName>神田久右衛門町代地</placeName>
+        <note>口入宿富士屋治三郎のある町。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="sakumacho">
+        <placeName>佐久間町二丁目</placeName>
+        <location><geo>35.698 139.777</geo></location>
+        <note>神田佐久間町。天保五年二月七日の大火の火元・概値</note>
+      </place>
+      <place xml:id="nihonbashi">
+        <placeName>日本橋</placeName>
+        <location><geo>35.6838 139.7745</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kameicho">
+        <placeName>亀井町</placeName>
+        <location><geo>35.695 139.777</geo></location>
+        <note>神田亀井町・概値</note>
+      </place>
+      <place xml:id="hinokicho">
+        <placeName>檜物町</placeName>
+        <location><geo>35.679 139.77</geo></location>
+        <note>日本橋檜物町(現中央区八重洲)・概値</note>
+      </place>
+      <place xml:id="daimyokoji">
+        <placeName>大名小路</placeName>
+        <location><geo>35.679 139.762</geo></location>
+        <note>江戸城外郭の大名屋敷街(現千代田区丸の内)・概値</note>
+      </place>
+      <place xml:id="kyobashi">
+        <placeName>京橋</placeName>
+        <location><geo>35.676 139.77</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shibaguchi">
+        <placeName>芝口</placeName>
+        <location><geo>35.665 139.758</geo></location>
+        <note>東海道の芝口(現港区新橋)・概値</note>
+      </place>
+      <place xml:id="yokoyamacho">
+        <placeName>横山町</placeName>
+        <location><geo>35.69 139.783</geo></location>
+        <note>日本橋横山町・概値</note>
+      </place>
+      <place xml:id="shiocho">
+        <placeName>塩町</placeName>
+        <note>横山町と大伝馬町の間に挙げられる町。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="odenmacho">
+        <placeName>大伝馬町</placeName>
+        <location><geo>35.691 139.781</geo></location>
+        <note>日本橋大伝馬町・概値</note>
+      </place>
+      <place xml:id="honcho">
+        <placeName>本町</placeName>
+        <location><geo>35.687 139.776</geo></location>
+        <note>日本橋本町・概値</note>
+      </place>
+      <place xml:id="kokuchogashi">
+        <placeName>石町河岸</placeName>
+        <location><geo>35.6875 139.774</geo></location>
+        <note>日本橋石町の河岸・概値</note>
+      </place>
+      <place xml:id="ryokanbashi">
+        <placeName>龍閑橋</placeName>
+        <location><geo>35.689 139.769</geo></location>
+        <note>神田・日本橋境の龍閑橋・概値</note>
+      </place>
+      <place xml:id="kamakuragashi">
+        <placeName>鎌倉河岸</placeName>
+        <location><geo>35.6905 139.766</geo></location>
+        <note>神田の鎌倉河岸・概値</note>
+      </place>
+      <place xml:id="nishikicho">
+        <placeName>錦町</placeName>
+        <location><geo>35.6935 139.7605</geo></location>
+        <note>神田錦町・概値</note>
+      </place>
+      <place xml:id="ogawamachi">
+        <placeName>小川町</placeName>
+        <location><geo>35.696 139.759</geo></location>
+        <note>神田小川町・概値</note>
+      </place>
+      <place xml:id="manaitabashi">
+        <placeName>俎橋</placeName>
+        <location><geo>35.6955 139.753</geo></location>
+        <note>日本橋川の俎橋・概値</note>
+      </place>
+      <place xml:id="ochanomizu">
+        <placeName>御茶の水</placeName>
+        <location><geo>35.6997 139.7645</geo></location>
+        <note>神田川沿いの御茶ノ水・概値</note>
+      </place>
+      <place xml:id="hongoyumicho">
+        <placeName>本郷弓町</placeName>
+        <location><geo>35.706 139.759</geo></location>
+        <note>本郷弓町(現文京区本郷)・概値</note>
+      </place>
+      <place xml:id="akasaka">
+        <placeName>赤坂</placeName>
+        <location><geo>35.6745 139.7365</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="honjo">
+        <placeName>本所</placeName>
+        <location><geo>35.699 139.801</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="sugamo">
+        <placeName>巣鴨</placeName>
+        <location><geo>35.7336 139.7392</geo></location>
+        <note>酒井家の下邸がある・概値</note>
+      </place>
+      <place xml:id="shinagawa">
+        <placeName>品川</placeName>
+        <location><geo>35.619 139.74</geo></location>
+        <note>東海道の品川宿・概値</note>
+      </place>
+      <place xml:id="harima">
+        <placeName>播磨国</placeName>
+        <location><geo>34.85 134.7</geo></location>
+        <note>旧国名(兵庫県南西部)・概値</note>
+      </place>
+      <place xml:id="shikito">
+        <placeName>飾東郡</placeName>
+        <location><geo>34.87 134.72</geo></location>
+        <note>播磨国飾東郡(姫路一帯)・概値</note>
+      </place>
+      <place xml:id="himeji">
+        <placeName>姫路</placeName>
+        <location><geo>34.8394 134.6939</geo></location>
+        <note>酒井家の城下・概値</note>
+      </place>
+      <place xml:id="uomachi">
+        <placeName>魚町</placeName>
+        <location><geo>34.8306 134.6906</geo></location>
+        <note>姫路城下の魚町・概値</note>
+      </place>
+      <place xml:id="hiranomachi">
+        <placeName>平の町</placeName>
+        <note>姫路城下の町名。稲田屋のある町。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="hiromine">
+        <placeName>広岸（広峯）山</placeName>
+        <location><geo>34.872 134.69</geo></location>
+        <note>姫路の広峯山(広峯神社)。本文の表記は「広岸（広峯）山」・概値</note>
+      </place>
+      <place xml:id="murotsu">
+        <placeName>室津</placeName>
+        <location><geo>34.757 134.517</geo></location>
+        <note>播磨国室津(現兵庫県たつの市)・概値</note>
+      </place>
+      <place xml:id="akashi">
+        <placeName>明石</placeName>
+        <location><geo>34.6431 134.9975</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kozuke">
+        <placeName>上野国</placeName>
+        <location><geo>36.3 139.0</geo></location>
+        <note>旧国名(群馬県)。「上州」も同じ・概値</note>
+      </place>
+      <place xml:id="takasaki">
+        <placeName>高崎</placeName>
+        <location><geo>36.3219 139.0033</geo></location>
+        <note>上野国高崎。亀蔵が奉公前にいたという土地・概値</note>
+      </place>
+      <place xml:id="maebashi">
+        <placeName>前橋</placeName>
+        <location><geo>36.3895 139.0634</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="enokicho">
+        <placeName>榎町</placeName>
+        <note>前橋の町名。政淳寺のある町。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="seijunji">
+        <placeName>政淳寺</placeName>
+        <note>前橋榎町の寺。山本家の先祖の墓がある。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="fujioka">
+        <placeName>藤岡</placeName>
+        <location><geo>36.2589 139.0742</geo></location>
+        <note>上野国藤岡・概値</note>
+      </place>
+      <place xml:id="musashi">
+        <placeName>武蔵国</placeName>
+        <location><geo>35.9 139.4</geo></location>
+        <note>旧国名(東京都・埼玉県ほか)・概値</note>
+      </place>
+      <place xml:id="kodama">
+        <placeName>児玉村</placeName>
+        <location><geo>36.1908 139.135</geo></location>
+        <note>武蔵国児玉(現埼玉県本庄市児玉町)・概値</note>
+      </place>
+      <place xml:id="mitsuminesan">
+        <placeName>三峯山</placeName>
+        <location><geo>35.9214 138.9297</geo></location>
+        <note>武蔵国三峯山(三峯神社)・概値</note>
+      </place>
+      <place xml:id="hachioji">
+        <placeName>八王子</placeName>
+        <location><geo>35.6664 139.316</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kai">
+        <placeName>甲斐国</placeName>
+        <location><geo>35.6 138.6</geo></location>
+        <note>旧国名(山梨県)・概値</note>
+      </place>
+      <place xml:id="gunnai">
+        <placeName>郡内</placeName>
+        <location><geo>35.6 138.9</geo></location>
+        <note>甲斐国東部の郡内地方(都留)・概値</note>
+      </place>
+      <place xml:id="kofu">
+        <placeName>甲府</placeName>
+        <location><geo>35.6642 138.5686</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="minobusan">
+        <placeName>身延山</placeName>
+        <location><geo>35.386 138.423</geo></location>
+        <note>甲斐国身延山久遠寺・概値</note>
+      </place>
+      <place xml:id="shinano">
+        <placeName>信濃国</placeName>
+        <location><geo>36.2 138.2</geo></location>
+        <note>旧国名(長野県)・概値</note>
+      </place>
+      <place xml:id="kamisuwa">
+        <placeName>上諏訪</placeName>
+        <location><geo>36.045 138.114</geo></location>
+        <note>信濃国上諏訪・概値</note>
+      </place>
+      <place xml:id="wadatoge">
+        <placeName>和田峠</placeName>
+        <location><geo>36.135 138.217</geo></location>
+        <note>中山道の和田峠・概値</note>
+      </place>
+      <place xml:id="ueda">
+        <placeName>上田</placeName>
+        <location><geo>36.402 138.249</geo></location>
+        <note>信濃国上田・概値</note>
+      </place>
+      <place xml:id="zenkoji">
+        <placeName>善光寺</placeName>
+        <location><geo>36.6614 138.1874</geo></location>
+        <note>信濃国善光寺(長野)。本文は「上田の善光寺」とする・概値</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後国</placeName>
+        <location><geo>37.5 138.9</geo></location>
+        <note>旧国名(新潟県)・概値</note>
+      </place>
+      <place xml:id="takada">
+        <placeName>高田</placeName>
+        <location><geo>37.108 138.25</geo></location>
+        <note>越後国高田(現新潟県上越市)・概値</note>
+      </place>
+      <place xml:id="imamachi">
+        <placeName>今町</placeName>
+        <location><geo>37.178 138.24</geo></location>
+        <note>越後国今町(現新潟県上越市直江津)・概値</note>
+      </place>
+      <place xml:id="kashiwazaki">
+        <placeName>柏崎</placeName>
+        <location><geo>37.372 138.559</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nagaoka">
+        <placeName>長岡</placeName>
+        <location><geo>37.446 138.851</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="sanjo">
+        <placeName>三条</placeName>
+        <location><geo>37.636 138.961</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="niigata">
+        <placeName>新潟</placeName>
+        <location><geo>37.9161 139.0364</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kagakaido">
+        <placeName>加賀街道</placeName>
+        <note>越後から越中・加賀へ向かう街道(北陸道)。線状の地物のため座標なし</note>
+      </place>
+      <place xml:id="etchu">
+        <placeName>越中国</placeName>
+        <location><geo>36.7 137.2</geo></location>
+        <note>旧国名(富山県)・概値</note>
+      </place>
+      <place xml:id="toyama">
+        <placeName>富山</placeName>
+        <location><geo>36.6953 137.2113</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hida">
+        <placeName>飛騨国</placeName>
+        <location><geo>36.15 137.25</geo></location>
+        <note>旧国名(岐阜県北部)・概値</note>
+      </place>
+      <place xml:id="takayama">
+        <placeName>高山</placeName>
+        <location><geo>36.1461 137.2522</geo></location>
+        <note>飛騨高山・概値</note>
+      </place>
+      <place xml:id="mino">
+        <placeName>美濃国</placeName>
+        <location><geo>35.5 136.9</geo></location>
+        <note>旧国名(岐阜県南部)・概値</note>
+      </place>
+      <place xml:id="kanayama">
+        <placeName>金山</placeName>
+        <location><geo>35.647 137.133</geo></location>
+        <note>美濃国金山(現岐阜県下呂市金山町)・概値</note>
+      </place>
+      <place xml:id="kisoji">
+        <placeName>木曽路</placeName>
+        <note>中山道の木曽路。線状の地物のため座標なし</note>
+      </place>
+      <place xml:id="ota">
+        <placeName>太田</placeName>
+        <location><geo>35.429 137.0</geo></location>
+        <note>美濃国太田(現岐阜県美濃加茂市)・概値</note>
+      </place>
+      <place xml:id="owari">
+        <placeName>尾張国</placeName>
+        <location><geo>35.2 136.9</geo></location>
+        <note>旧国名(愛知県西部)・概値</note>
+      </place>
+      <place xml:id="inuyama">
+        <placeName>犬山</placeName>
+        <location><geo>35.3789 136.9447</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nagoya">
+        <placeName>名古屋</placeName>
+        <location><geo>35.1815 136.9066</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tokaido">
+        <placeName>東海道</placeName>
+        <note>五街道の一つ。線状の地物のため座標なし</note>
+      </place>
+      <place xml:id="miya">
+        <placeName>宮</placeName>
+        <location><geo>35.1272 136.908</geo></location>
+        <note>東海道の宮宿(熱田)・概値</note>
+      </place>
+      <place xml:id="saya">
+        <placeName>佐屋</placeName>
+        <location><geo>35.158 136.748</geo></location>
+        <note>佐屋路の佐屋宿・概値</note>
+      </place>
+      <place xml:id="ise">
+        <placeName>伊勢国</placeName>
+        <location><geo>34.6 136.5</geo></location>
+        <note>旧国名(三重県中北部)・概値</note>
+      </place>
+      <place xml:id="kuwana">
+        <placeName>桑名</placeName>
+        <location><geo>35.062 136.684</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="yokkaichi">
+        <placeName>四日市</placeName>
+        <location><geo>34.965 136.6244</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tsu">
+        <placeName>津</placeName>
+        <location><geo>34.7186 136.5056</geo></location>
+        <note>伊勢国津・概値</note>
+      </place>
+      <place xml:id="matsusaka">
+        <placeName>松坂</placeName>
+        <location><geo>34.578 136.527</geo></location>
+        <note>伊勢国松坂(現三重県松阪市)・概値</note>
+      </place>
+      <place xml:id="tonomachi">
+        <placeName>殿町</placeName>
+        <location><geo>34.5776 136.5306</geo></location>
+        <note>松坂の殿町。目代岩橋某のいる町・概値</note>
+      </place>
+      <place xml:id="seki">
+        <placeName>関</placeName>
+        <location><geo>34.8517 136.39</geo></location>
+        <note>東海道の関宿(現三重県亀山市関町)・概値</note>
+      </place>
+      <place xml:id="sakanoshita">
+        <placeName>阪の下</placeName>
+        <location><geo>34.8894 136.3411</geo></location>
+        <note>東海道の坂下宿(現三重県亀山市関町坂下)・概値</note>
+      </place>
+      <place xml:id="kii">
+        <placeName>紀伊国</placeName>
+        <location><geo>34.0 135.5</geo></location>
+        <note>旧国名(和歌山県・三重県南部)。「紀州」も同じ・概値</note>
+      </place>
+      <place xml:id="kumanoura">
+        <placeName>熊野浦</placeName>
+        <location><geo>33.9 136.1</geo></location>
+        <note>熊野灘沿岸の地域名・概値</note>
+      </place>
+      <place xml:id="nagashima">
+        <placeName>長島外町</placeName>
+        <location><geo>34.2059 136.3283</geo></location>
+        <note>紀伊国熊野浦長島(現三重県北牟婁郡紀北町長島)の外町。定右衛門の在所・概値</note>
+      </place>
+      <place xml:id="nigo">
+        <placeName>熊野仁郷村</placeName>
+        <note>熊野の仁郷村。林助の在所。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="koyasan">
+        <placeName>高野山</placeName>
+        <location><geo>34.213 135.585</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shimizumura">
+        <placeName>高野領清水村</placeName>
+        <note>高野領の清水村。又兵衛の在所。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="miurazaka">
+        <placeName>三浦坂</placeName>
+        <note>亀蔵が父と林助に見送られて別れた坂。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="hashimoto">
+        <placeName>橋本</placeName>
+        <location><geo>34.3145 135.6031</geo></location>
+        <note>紀伊国橋本(現和歌山県橋本市)・概値</note>
+      </place>
+      <place xml:id="settsu">
+        <placeName>摂津国</placeName>
+        <location><geo>34.7 135.4</geo></location>
+        <note>旧国名(大阪府北部・兵庫県南東部)・概値</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="awaza">
+        <placeName>阿波座おくひ町</placeName>
+        <location><geo>34.68 135.49</geo></location>
+        <note>大阪の阿波座(現大阪市西区)・概値</note>
+      </place>
+      <place xml:id="settsunokuniya">
+        <placeName>摂津国屋</placeName>
+        <note>阿波座おくひ町の旅宿。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="tamatsukuri">
+        <placeName>玉造</placeName>
+        <location><geo>34.676 135.535</geo></location>
+        <note>大阪の玉造(現大阪市中央区・東成区)・概値</note>
+      </place>
+      <place xml:id="hokuinari">
+        <placeName>玉造豊空稲荷</placeName>
+        <note>玉造の豊空稲荷。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="fushimi">
+        <placeName>伏見</placeName>
+        <location><geo>34.932 135.762</geo></location>
+        <note>山城国伏見。淀川舟運の港・概値</note>
+      </place>
+      <place xml:id="nishinomiya">
+        <placeName>西宮</placeName>
+        <location><geo>34.7377 135.3416</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="hyogo">
+        <placeName>兵庫</placeName>
+        <location><geo>34.666 135.172</geo></location>
+        <note>摂津国兵庫津(現神戸市兵庫区)・概値</note>
+      </place>
+      <place xml:id="senshu">
+        <placeName>泉州</placeName>
+        <location><geo>34.5 135.4</geo></location>
+        <note>和泉国(大阪府南西部)・概値</note>
+      </place>
+      <place xml:id="uenohara">
+        <placeName>生田郡上野原村</placeName>
+        <note>虎蔵の在所として本文が挙げる村。和泉国に生田郡は確認できず、所在を同定できないため座標なし</note>
+      </place>
+      <place xml:id="bizen">
+        <placeName>備前国</placeName>
+        <location><geo>34.7 134.0</geo></location>
+        <note>旧国名(岡山県南東部)・概値</note>
+      </place>
+      <place xml:id="okayama">
+        <placeName>岡山</placeName>
+        <location><geo>34.6551 133.9195</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shimoyama">
+        <placeName>下山</placeName>
+        <note>備前国の港。四国への渡海地。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="shikoku">
+        <placeName>四国</placeName>
+        <location><geo>33.8 133.5</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="sanuki">
+        <placeName>讃岐国</placeName>
+        <location><geo>34.2 134.0</geo></location>
+        <note>旧国名(香川県)・概値</note>
+      </place>
+      <place xml:id="marugame">
+        <placeName>丸亀</placeName>
+        <location><geo>34.2896 133.798</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="zozusan">
+        <placeName>象頭山</placeName>
+        <location><geo>34.169 133.81</geo></location>
+        <note>讃岐国象頭山(金刀比羅宮)・概値</note>
+      </place>
+      <place xml:id="matsuo">
+        <placeName>松尾</placeName>
+        <note>丸亀近辺で文吉が捜索に赴いた地。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="iyo">
+        <placeName>伊予国</placeName>
+        <location><geo>33.8 132.8</geo></location>
+        <note>旧国名(愛媛県)・概値</note>
+      </place>
+      <place xml:id="dozan">
+        <placeName>銅山</placeName>
+        <location><geo>33.85 133.3</geo></location>
+        <note>伊予国の銅山(別子銅山)・概値</note>
+      </place>
+      <place xml:id="saijo">
+        <placeName>西条</placeName>
+        <location><geo>33.9197 133.181</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="koharu">
+        <placeName>小春</placeName>
+        <note>西条と今治の間に挙げられる伊予国の地。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="imabari">
+        <placeName>今治</placeName>
+        <location><geo>34.066 132.998</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="matsuyama">
+        <placeName>松山</placeName>
+        <location><geo>33.8392 132.7657</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="dogo">
+        <placeName>道後</placeName>
+        <location><geo>33.8524 132.7864</geo></location>
+        <note>伊予国道後温泉・概値</note>
+      </place>
+      <place xml:id="yumachi">
+        <placeName>湯町</placeName>
+        <location><geo>33.8524 132.7864</geo></location>
+        <note>道後温泉の温泉街(湯町)・概値</note>
+      </place>
+      <place xml:id="ozu">
+        <placeName>中大洲</placeName>
+        <note>伊予国大洲(現愛媛県大洲市)付近と解されるが、地名の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="yawatahama">
+        <placeName>八幡浜</placeName>
+        <location><geo>33.463 132.423</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kyushu">
+        <placeName>九州</placeName>
+        <location><geo>32.8 130.8</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="bungo">
+        <placeName>豊後国</placeName>
+        <location><geo>33.2 131.6</geo></location>
+        <note>旧国名(大分県中南部)・概値</note>
+      </place>
+      <place xml:id="sagasenoseki">
+        <placeName>佐賀関</placeName>
+        <location><geo>33.244 131.89</geo></location>
+        <note>豊後国佐賀関・概値</note>
+      </place>
+      <place xml:id="tsurusaki">
+        <placeName>鶴崎</placeName>
+        <location><geo>33.232 131.72</geo></location>
+        <note>豊後国鶴崎・概値</note>
+      </place>
+      <place xml:id="higo">
+        <placeName>肥後国</placeName>
+        <location><geo>32.8 130.8</geo></location>
+        <note>旧国名(熊本県)・概値</note>
+      </place>
+      <place xml:id="asosan">
+        <placeName>阿蘇山</placeName>
+        <location><geo>32.8845 131.104</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="asojingu">
+        <placeName>阿蘇神宮</placeName>
+        <location><geo>32.9469 131.1178</geo></location>
+        <note>阿蘇神社(現熊本県阿蘇市一の宮町)・概値</note>
+      </place>
+      <place xml:id="kumamoto">
+        <placeName>熊本</placeName>
+        <location><geo>32.8032 130.7079</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="takahashi">
+        <placeName>高橋</placeName>
+        <location><geo>32.8 130.66</geo></location>
+        <note>肥後国高橋(現熊本市西区)・概値</note>
+      </place>
+      <place xml:id="hizen">
+        <placeName>肥前国</placeName>
+        <location><geo>33.0 130.0</geo></location>
+        <note>旧国名(佐賀県・長崎県)・概値</note>
+      </place>
+      <place xml:id="shimabara">
+        <placeName>島原</placeName>
+        <location><geo>32.787 130.37</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="unzendake">
+        <placeName>温泉嶽</placeName>
+        <location><geo>32.7614 130.2994</geo></location>
+        <note>肥前国温泉嶽(雲仙岳)・概値</note>
+      </place>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="funahikijicho">
+        <placeName>舟引地町</placeName>
+        <note>長崎の町名。一行が泊まった紙屋のある町。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="kamichikugo">
+        <placeName>上筑後町</placeName>
+        <location><geo>32.754 129.876</geo></location>
+        <note>長崎の筑後町(現長崎市筑後町)・概値</note>
+      </place>
+      <place xml:id="kanzenji">
+        <placeName>勧善寺</placeName>
+        <note>長崎上筑後町の一向宗の寺。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="uto">
+        <placeName>宇土</placeName>
+        <location><geo>32.689 130.659</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="yatsushiro">
+        <placeName>八代</placeName>
+        <location><geo>32.507 130.602</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nankushuku">
+        <placeName>南工宿</placeName>
+        <note>肥後国内で一行が捜索した地。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="omura">
+        <placeName>大村</placeName>
+        <location><geo>32.9 129.958</geo></location>
+        <note>肥前国大村・概値</note>
+      </place>
+      <place xml:id="saga">
+        <placeName>佐賀</placeName>
+        <location><geo>33.2494 130.2988</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="chikugo">
+        <placeName>筑後国</placeName>
+        <location><geo>33.3 130.6</geo></location>
+        <note>旧国名(福岡県南部)・概値</note>
+      </place>
+      <place xml:id="kurume">
+        <placeName>久留米</placeName>
+        <location><geo>33.317 130.508</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="chikuzen">
+        <placeName>筑前国</placeName>
+        <location><geo>33.6 130.4</geo></location>
+        <note>旧国名(福岡県西部)・概値</note>
+      </place>
+      <place xml:id="dazaifu">
+        <placeName>大宰府天満宮</placeName>
+        <location><geo>33.5215 130.535</geo></location>
+        <note>太宰府天満宮・概値</note>
+      </place>
+      <place xml:id="hakata">
+        <placeName>博多</placeName>
+        <location><geo>33.59 130.42</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="fukuoka">
+        <placeName>福岡</placeName>
+        <location><geo>33.5902 130.4017</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="buzen">
+        <placeName>豊前国</placeName>
+        <location><geo>33.7 131.0</geo></location>
+        <note>旧国名(福岡県東部・大分県北部)・概値</note>
+      </place>
+      <place xml:id="kokura">
+        <placeName>小倉</placeName>
+        <location><geo>33.883 130.883</geo></location>
+        <note>豊前国小倉・概値</note>
+      </place>
+      <place xml:id="kokuranitta">
+        <placeName>小倉新田</placeName>
+        <note>小倉新田藩(千束藩)。小笠原備後守貞謙の領。陣屋の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="nagato">
+        <placeName>長門国</placeName>
+        <location><geo>34.2 131.2</geo></location>
+        <note>旧国名(山口県北西部)・概値</note>
+      </place>
+      <place xml:id="shimonoseki">
+        <placeName>下関</placeName>
+        <location><geo>33.95 130.941</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="suo">
+        <placeName>周防国</placeName>
+        <location><geo>34.1 131.7</geo></location>
+        <note>旧国名(山口県南東部)・概値</note>
+      </place>
+      <place xml:id="miyaichi">
+        <placeName>宮市</placeName>
+        <location><geo>34.053 131.562</geo></location>
+        <note>周防国宮市(現山口県防府市)・概値</note>
+      </place>
+      <place xml:id="murozumi">
+        <placeName>室積</placeName>
+        <location><geo>33.95 132.04</geo></location>
+        <note>周防国室積(現山口県光市)・概値</note>
+      </place>
+      <place xml:id="iwakuni">
+        <placeName>岩国</placeName>
+        <location><geo>34.167 132.22</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kintaikyo">
+        <placeName>錦帯橋</placeName>
+        <location><geo>34.1673 132.177</geo></location>
+        <note>岩国の錦帯橋・概値</note>
+      </place>
+      <place xml:id="aki">
+        <placeName>安芸国</placeName>
+        <location><geo>34.4 132.5</geo></location>
+        <note>旧国名(広島県西部)・概値</note>
+      </place>
+      <place xml:id="miyajima">
+        <placeName>宮島</placeName>
+        <location><geo>34.296 132.319</geo></location>
+        <note>安芸国宮島(厳島)・概値</note>
+      </place>
+      <place xml:id="hiroshima">
+        <placeName>広島</placeName>
+        <location><geo>34.3853 132.4553</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="bingo">
+        <placeName>備後国</placeName>
+        <location><geo>34.5 133.3</geo></location>
+        <note>旧国名(広島県東部)・概値</note>
+      </place>
+      <place xml:id="onomichi">
+        <placeName>尾の道</placeName>
+        <location><geo>34.409 133.205</geo></location>
+        <note>備後国尾道・概値</note>
+      </place>
+      <place xml:id="tomo">
+        <placeName>鞆</placeName>
+        <location><geo>34.383 133.383</geo></location>
+        <note>備後国鞆の浦・概値</note>
+      </place>
+      <place xml:id="fukuyama">
+        <placeName>福山</placeName>
+        <location><geo>34.486 133.362</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="iwami">
+        <placeName>石見</placeName>
+        <location><geo>34.9 132.2</geo></location>
+        <note>石見国(島根県西部)・概値</note>
+      </place>
+      <place xml:id="japan">
+        <placeName>日本</placeName>
+        <location><geo>36.0 138.0</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="azaigun">
+        <placeName>近江国浅井郡</placeName>
+        <location><geo>35.44 136.29</geo></location>
+        <note>近江国浅井郡(現滋賀県長浜市一帯)。文吉の在所・概値</note>
+      </place>
+      <place xml:id="ou">
+        <placeName>奥羽</placeName>
+        <location><geo>39.0 140.5</geo></location>
+        <note>陸奥・出羽(東北地方)の地域名・概値</note>
+      </place>
+      <place xml:id="inadaya">
+        <placeName>稲田屋</placeName>
+        <note>姫路城下平の町の旅宿。所在の同定に自信がないため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>護持院原の敵討</head>
+        <p><placeName ref="#harima"><ruby><rb>播磨国</rb><rt>はりまのくに</rt></ruby></placeName><placeName ref="#shikito"><ruby><rb>飾東郡</rb><rt>しきとうごおり</rt></ruby></placeName><placeName ref="#himeji"><ruby><rb>姫路</rb><rt>ひめじ</rt></ruby></placeName>の城主<persName ref="#sakai-tadazane">酒井<ruby><rb>雅楽頭忠実</rb><rt>うたのかみただみつ</rt></ruby></persName>の<ruby><rb>上邸</rb><rt>かみやしき</rt></ruby>は、<placeName ref="#edojo">江戸城</placeName>の<placeName ref="#ote">大手</placeName>向左角にあった。そこの<ruby><rb>金部屋</rb><rt>かねべや</rt></ruby>には、いつも<ruby><rb>侍</rb><rt>さむらい</rt></ruby>が二人ずつ泊ることになっていた。<ruby><rb>然</rb><rt>しか</rt></ruby>るに<date when="1833"><ruby><rb>天保</rb><rt>てんぽう</rt></ruby>四年</date><ruby><rb>癸</rb><rt>みずのと</rt></ruby><ruby><rb>巳</rb><rt>み</rt></ruby>の<ruby><rb>歳</rb><rt>とし</rt></ruby><date when="1833-12-26">十二月二十六日</date>の<ruby><rb>卯</rb><rt>う</rt></ruby>の刻<ruby><rb>過</rb><rt>すぎ</rt></ruby>の事である。当年五十五歳になる、<ruby><rb>大金奉行</rb><rt>おおかねぶぎょう</rt></ruby><persName ref="#sanemon">山本<ruby><rb>三右衛門</rb><rt>さんえもん</rt></ruby></persName>と云う老人が、<ruby><rb>唯</rb><rt>ただ</rt></ruby>一人すわっている。ゆうべ一しょに泊る<ruby><rb>筈</rb><rt>はず</rt></ruby>の<ruby><rb>小金</rb><rt>こがね</rt></ruby>奉行が病気<ruby><rb>引</rb><rt>びき</rt></ruby>をしたので、寂しい<ruby><rb>夜寒</rb><rt>よさむ</rt></ruby>を一人で<ruby><rb>凌</rb><rt>しの</rt></ruby>いだのである。<ruby><rb>傍</rb><rt>そば</rt></ruby>には骨の太い、がっしりした<ruby><rb>行燈</rb><rt>あんどう</rt></ruby>がある。燈心に花が咲いて薄暗くなった、<ruby><rb>橙黄色</rb><rt>だいだいいろ</rt></ruby>の火が、<ruby><rb>黎明</rb><rt>しののめ</rt></ruby>の窓の明りと、等分に部屋を領している。夜具はもう夜具<ruby><rb>葛籠</rb><rt>つづら</rt></ruby>にしまってある。</p>
+        <p>障子の外に人のけはいがした。「申し。お宅から急用のお手紙が参りました」</p>
+        <p>「お前は<ruby><rb>誰</rb><rt>たれ</rt></ruby>だい」</p>
+        <p>「お表の小使でございます」</p>
+        <p><persName ref="#sanemon">三右衛門</persName>は内から障子をあけた。手紙を持って来たのは、名は知らぬが、<ruby><rb>見識</rb><rt>みし</rt></ruby>った顔の小使で、<ruby><rb>二十</rb><rt>はたち</rt></ruby>になるかならぬの若者である。</p>
+        <p>受け取った封書を持って、行燈の前にすわった<persName ref="#sanemon">三右衛門</persName>は、<ruby><rb>先</rb><rt>ま</rt></ruby>ず燈心の花を落して<ruby><rb>掻</rb><rt>か</rt></ruby>き立てた。そして<ruby><rb>懐</rb><rt>ふところ</rt></ruby>から鼻紙袋を出して、その中の<ruby><rb>眼鏡</rb><rt>めがね</rt></ruby>を取って<ruby><rb>懸</rb><rt>か</rt></ruby>けた。さて上書を改めたが、<ruby><rb>伜</rb><rt>せがれ</rt></ruby><persName ref="#uhei">宇平</persName>の手でもなければ、<ruby><rb>女房</rb><rt>にょうぼう</rt></ruby>の手でもない。ちょいと首を傾けたが、宛名には相違がないので、とにかく封を切った。手紙を引き出して<ruby><rb>披</rb><rt>ひら</rt></ruby>き掛けて、<persName ref="#sanemon">三右衛門</persName>は驚いた。中は白紙である。</p>
+        <p>はっと思ったとたんに、頭を強く打たれた。又驚く間もなく、白紙の上に血がたらたらと落ちた。<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から一刀浴せられたのである。</p>
+        <p>夜具葛籠の前に置いてあった<ruby><rb>脇差</rb><rt>わきざし</rt></ruby>を、手探りに取ろうとする所へ、もう二の<ruby><rb>太刀</rb><rt>たち</rt></ruby>を打ち卸して来る。無意識に右の手を挙げて受ける。手首がばったり切り落された。起ち上がって、左の手でむなぐらに<ruby><rb>掴</rb><rt>つか</rt></ruby>み着いた。</p>
+        <p>相手は存外<ruby><rb>卑怯</rb><rt>ひきょう</rt></ruby>な<ruby><rb>奴</rb><rt>やつ</rt></ruby>であった。むなぐらを振り放し<ruby><rb>科</rb><rt>しな</rt></ruby>に、持っていた<ruby><rb>白刃</rb><rt>しらは</rt></ruby>を<persName ref="#sanemon">三右衛門</persName>に投げ付けて、廊下へ逃げ出した。</p>
+        <p><persName ref="#sanemon">三右衛門</persName>は思慮の<ruby><rb>遑</rb><rt>いとま</rt></ruby>もなく跡を追った。中の口まで出たが、もう相手の<ruby><rb>行方</rb><rt>ゆくえ</rt></ruby>が知れない。痛手を負った老人の足は、壮年の<ruby><rb>癖者</rb><rt>くせもの</rt></ruby>に及ばなかったのである。</p>
+        <p><persName ref="#sanemon">三右衛門</persName>は<ruby><rb>灼</rb><rt>や</rt></ruby>けるような<ruby><rb>痛</rb><rt>いたみ</rt></ruby>を頭と手とに覚えて、<ruby><rb>眩暈</rb><rt>めまい</rt></ruby>が<ruby><rb>萌</rb><rt>きざ</rt></ruby>して来た。それでも自分で自分を励まして、<ruby><rb>金部屋</rb><rt>かねべや</rt></ruby>へ引き返して、何より先に金箱の錠前を改めた。なんの異状もない。「先ず好かった」と思った時、眩暈が強く起こったので、左の手で夜具葛籠を引き寄せて、それに<ruby><rb>靠</rb><rt>よ</rt></ruby>り掛かった。そして深い<ruby><rb>緩</rb><rt>ゆる</rt></ruby>い息を<ruby><rb>衝</rb><rt>つ</rt></ruby>いていた。</p>
+        <p>物音を聞き附けて、最初に駆け附けたのは、泊番の<ruby><rb>徒目附</rb><rt>かちめつけ</rt></ruby>であった。次いで目附が来る。大目附が来る。<ruby><rb>本締</rb><rt>もとじめ</rt></ruby>が来る。医師を呼びに<ruby><rb>遣</rb><rt>や</rt></ruby>る。<persName ref="#sanemon">三右衛門</persName>の妻子のいる<placeName ref="#kakigaracho"><ruby><rb>蠣殻町</rb><rt>かきがらちょう</rt></ruby></placeName>の<ruby><rb>中邸</rb><rt>なかやしき</rt></ruby>へ使が走って行く。</p>
+        <p><persName ref="#sanemon">三右衛門</persName>は精神が<ruby><rb>慥</rb><rt>たしか</rt></ruby>で、役人等に問われて、はっきりした返事をした。自分には意趣遺恨を受ける<ruby><rb>覚</rb><rt>おぼえ</rt></ruby>は無い。白紙の手紙を持って来て切って掛かった男は、顔を知って名を知らぬ表小使である。多分金銀に<ruby><rb>望</rb><rt>のぞみ</rt></ruby>を<ruby><rb>繋</rb><rt>か</rt></ruby>けたものであろう。家督相続の事を<ruby><rb>宜</rb><rt>よろ</rt></ruby>しく頼む。<ruby><rb>敵</rb><rt>かたき</rt></ruby>を討ってくれるように、伜に言って<ruby><rb>貰</rb><rt>もら</rt></ruby>いたいと云うのである。その間<persName ref="#sanemon">三右衛門</persName>は「残念だ、残念だ」と<ruby><rb>度々</rb><rt>たびたび</rt></ruby>繰り返して云った。</p>
+        <p><ruby><rb>現場</rb><rt>げんば</rt></ruby>に落ちていた刀は、二三日前作事の方に勤めていた<persName ref="#gose">五瀬</persName>某が、<ruby><rb>詰所</rb><rt>つめしょ</rt></ruby>に掛けて置いたのを盗まれた品であった。門番を調べてみれば、<ruby><rb>卯刻</rb><rt>うのこく</rt></ruby>過に表小使<persName ref="#torazo"><ruby><rb>亀蔵</rb><rt>かめぞう</rt></ruby></persName>と云うものが、急用のお使だと云って通用門を出たと云うことである。<persName ref="#torazo">亀蔵</persName>は<placeName ref="#kyuemoncho"><ruby><rb>神田久右衛門町</rb><rt>かんだきゅうえもんちょう</rt></ruby>代地</placeName>の<ruby><rb>仲間口入宿</rb><rt>ちゅうげんくちいれやど</rt></ruby><persName ref="#fujiya">富士屋治三郎</persName>が入れた男で、二十歳になる。<ruby><rb>下請宿</rb><rt>したうけやど</rt></ruby>は<persName ref="#wakasaya"><ruby><rb>若狭屋</rb><rt>わかさや</rt></ruby>亀吉</persName>である。表小使<persName ref="#torazo">亀蔵</persName>が部屋を改めて見れば、山本の外四人の金部屋役人に、それぞれ宛てた封書があって、中は皆白紙である。</p>
+        <p>察するに<persName ref="#torazo">亀蔵</persName>は、早晩泊番の中の<ruby><rb>誰</rb><rt>たれ</rt></ruby>かを殺して金を盗もうと、<ruby><rb>兼</rb><rt>かね</rt></ruby>て<ruby><rb>謀</rb><rt>はか</rt></ruby>っていたのであろう。<placeName ref="#ou"><ruby><rb>奥羽</rb><rt>おうう</rt></ruby></placeName>その外の<ruby><rb>凶歉</rb><rt>きょうけん</rt></ruby>のために、<placeName ref="#edo">江戸</placeName>は物価の騰貴した年なので、<ruby><rb>心得違</rb><rt>こころえちがえ</rt></ruby>のものが出来たのであろうと云うことになった。<date when="1833">天保四年</date>は<ruby><rb>小売米</rb><rt>こうりまい</rt></ruby>百文に五合五勺になった。<date when="1781"><ruby><rb>天明</rb><rt>てんめい</rt></ruby></date>以後の<ruby><rb>飢饉年</rb><rt>ききんどし</rt></ruby>である。</p>
+        <p>医師が来て、<persName ref="#sanemon">三右衛門</persName>に手当をした。</p>
+        <p>親族が駆け附けた。<placeName ref="#kakigaracho">蠣殻町</placeName>の中邸から来たのは、<persName ref="#sanemon">三右衛門</persName>の女房と、伜<persName ref="#uhei">宇平</persName>とである。<persName ref="#uhei">宇平</persName>は十九歳になっている。<persName ref="#uhei">宇平</persName>の姉<persName ref="#riyo">りよ</persName>は<persName ref="#okitatsu">細川<ruby><rb>長門守興建</rb><rt>ながとのかみおきたけ</rt></ruby></persName>の奥に勤めていたので、<placeName ref="#toshimacho"><ruby><rb>豊島町</rb><rt>としまちょう</rt></ruby></placeName>の<placeName ref="#hosokawatei">細川邸</placeName>から来た。当年二十二歳である。<persName ref="#sanemon">三右衛門</persName>の女房は<ruby><rb>後添</rb><rt>のちぞい</rt></ruby>で、<persName ref="#riyo">りよ</persName>と<persName ref="#uhei">宇平</persName>とのためには継母である。この外にまだ<persName ref="#sanemon">三右衛門</persName>の妹で、<placeName ref="#kokuranitta"><ruby><rb>小倉新田</rb><rt>こくらしんでん</rt></ruby></placeName>の城主<persName ref="#ogasawara"><ruby><rb>小笠原備後守貞謙</rb><rt>おがさわらびんごのかみさだよし</rt></ruby></persName>の<ruby><rb>家来</rb><rt>けらい</rt></ruby><persName ref="#harada">原田</persName>某の妻になって、<placeName ref="#azabu"><ruby><rb>麻布</rb><rt>あざぶ</rt></ruby></placeName><placeName ref="#higakubo"><ruby><rb>日</rb><rt>ひ</rt></ruby>が<ruby><rb>窪</rb><rt>くぼ</rt></ruby></placeName>の<placeName ref="#ogasawaratei">小笠原邸</placeName>にいるのがあるが、それは間に合わないで、<placeName ref="#sakaitei">酒井邸</placeName>には来なかった。</p>
+        <p><persName ref="#sanemon">三右衛門</persName>は医師が余り物を言わぬが好いと云うのに構わず、女房子供にも、役人に言ったと同じ事を繰り返して言って聞せた。</p>
+        <p><placeName ref="#kakigaracho">蠣殻町</placeName>の住いは手狭で、介抱が行き届くまいと言うので、<placeName ref="#hamacho">浜町</placeName><ruby><rb>添邸</rb><rt>そえやしき</rt></ruby>の<persName ref="#kobe"><ruby><rb>神戸</rb><rt>かんべ</rt></ruby></persName>某方で、<persName ref="#sanemon">三右衛門</persName>を引き取るように<ruby><rb>沙汰</rb><rt>さた</rt></ruby>せられた。これは山本家の遠い<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>である。妻子はそこへ附き添って往った。そのうちに<persName ref="#harada">原田</persName>の女房も来た。</p>
+        <p><persName ref="#kobe">神戸</persName>方で<persName ref="#sanemon">三右衛門</persName>は<date when="1833-12-27">二十七日</date>の<ruby><rb>寅</rb><rt>とら</rt></ruby>の刻に絶命した。</p>
+        <p>その日の<ruby><rb>酉</rb><rt>とり</rt></ruby>の<ruby><rb>下刻</rb><rt>げこく</rt></ruby>に、<ruby><rb>上邸</rb><rt>かみやしき</rt></ruby>から<ruby><rb>見分</rb><rt>けんぶん</rt></ruby>に来た。徒目附、<ruby><rb>小人</rb><rt>こびと</rt></ruby>目附等に、<ruby><rb>手附</rb><rt>てつけ</rt></ruby>が附いて来たのである。見分の役人は<persName ref="#sanemon">三右衛門</persName>の女房、伜<persName ref="#uhei">宇平</persName>、娘<persName ref="#riyo">りよ</persName>の<ruby><rb>口書</rb><rt>くちがき</rt></ruby>を取った。</p>
+        <p>役人の復命に<ruby><rb>依</rb><rt>よ</rt></ruby>って、酒井家から沙汰があった。<persName ref="#sanemon">三右衛門</persName>が<ruby><rb>重手</rb><rt>おもで</rt></ruby>を負いながら、癖者を中の口まで追って出たのは、「<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>の<ruby><rb>心得方宜</rb><rt>こころえかたよろしき</rt></ruby>に<ruby><rb>附</rb><rt>つき</rt></ruby>、格式相当の葬儀<ruby><rb>可取行</rb><rt>とりおこなふべし</rt></ruby>」と云うのである。<persName ref="#sanemon">三右衛門</persName>の<ruby><rb>創</rb><rt>きず</rt></ruby>を受けた現場にあった、癖者の刀は、役人の手で元の持主<persName ref="#gose">五瀬</persName>某に見せられた。</p>
+        <p><date when="1833-12-28">二十八日</date>に<persName ref="#sanemon">三右衛門</persName>の<ruby><rb>遺骸</rb><rt>いがい</rt></ruby>は、山本家の<ruby><rb>菩提所</rb><rt>ぼだいしょ</rt></ruby><placeName ref="#asakusadomae">浅草堂前</placeName>の<placeName ref="#henryuji"><ruby><rb>遍立寺</rb><rt>へんりゅうじ</rt></ruby></placeName>に葬られた。<ruby><rb>葬</rb><rt>とむらい</rt></ruby>を出す前に、<persName ref="#kobe">神戸</persName>方で<persName ref="#sanemon">三右衛門</persName>が遭難当時に持っていた物の始末をした時、大小も当然伜<persName ref="#uhei">宇平</persName>が持って帰る筈であったが、娘<persName ref="#riyo">りよ</persName>は切に請うて脇差を譲り受けた。そして<persName ref="#uhei">宇平</persName>がそれを承諾すると、泣き<ruby><rb>腫</rb><rt>は</rt></ruby>らしていた、<persName ref="#riyo">りよ</persName>の目が、<ruby><rb>刹那</rb><rt>せつな</rt></ruby>の間<ruby><rb>喜</rb><rt>よろこび</rt></ruby>にかがやいた。</p>
+        <p>侍が親を<ruby><rb>殺害</rb><rt>せつがい</rt></ruby>せられた場合には、<ruby><rb>敵討</rb><rt>かたきうち</rt></ruby>をしなくてはならない。ましてや<persName ref="#sanemon">三右衛門</persName>が遺族に取っては、その敵討が故人の遺言になっている。そこで親族打ち寄って、度々評議を<ruby><rb>凝</rb><rt>こ</rt></ruby>らした末、翌<date when="1834">天保五年</date><ruby><rb>甲午</rb><rt>きのえうま</rt></ruby>の歳の<date when="1834-01">正月中旬</date>に、表向敵討の願をした。</p>
+        <p>評議の席で一番熱心に<ruby><rb>復讐</rb><rt>ふくしゅう</rt></ruby>がしたいと言い続けて、成功を急いで気を<ruby><rb>苛</rb><rt>いら</rt></ruby>ったのは<persName ref="#uhei">宇平</persName>であった。色の<ruby><rb>蒼</rb><rt>あお</rt></ruby>い、<ruby><rb>瘠</rb><rt>や</rt></ruby>せた、骨細の若者ではあるが、病身ではない。姉の<persName ref="#riyo">りよ</persName>は始終黙って人の話を聞いていたが、願書に自分の名を書き入れて貰うことだけは、きっと居直って要求した。<persName ref="#riyo">りよ</persName>は十人並の<ruby><rb>容貌</rb><rt>ようぼう</rt></ruby>で、筋肉の引き締まった<ruby><rb>小女</rb><rt>こおんな</rt></ruby>である。未亡人は頭痛持でこんな席へは<ruby><rb>稀</rb><rt>まれ</rt></ruby>にしか出て来ぬが、出て来ると、<ruby><rb>若</rb><rt>も</rt></ruby>し<ruby><rb>返討</rb><rt>かえりうち</rt></ruby>などに<ruby><rb>逢</rb><rt>あ</rt></ruby>いはすまいかと云う心配ばかりして、<ruby><rb>果</rb><rt>はて</rt></ruby>はどうしてこんな災難に遇ったことかと繰り返してくどくのであった。<placeName ref="#higakubo">日が窪</placeName>から来る<persName ref="#harada">原田</persName>夫婦や、未亡人の実弟<persName ref="#sumaemon">桜井<ruby><rb>須磨右衛門</rb><rt>すまえもん</rt></ruby></persName>は、いつもそれを慰めようとして骨を折った。</p>
+        <p>然るにここに親戚一同がひどく頼みに思っている男が一人いる。この男は本国<placeName ref="#himeji">姫路</placeName>にいるので、こう云う席には列することが出来なかったが、<ruby><rb>訃音</rb><rt>ふいん</rt></ruby>に接するや否や、<ruby><rb>弔慰</rb><rt>くやみ</rt></ruby>の状をよこして、敵討にはきっと助太刀をすると誓ったのである。<placeName ref="#himeji">姫路</placeName>ではこの男は家老<persName ref="#ikiyo">本多<ruby><rb>意気揚</rb><rt>いきり</rt></ruby></persName>に仕えている。名は<persName ref="#kuroemon">山本九郎右衛門</persName>と云って当年四十五歳になる。亡くなった<persName ref="#sanemon">三右衛門</persName>がためには、九つ違の実弟である。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は兄の訃音を得た時、すぐに主人<persName ref="#ikiyo">意気揚</persName>に願書を出した。<ruby><rb>甥</rb><rt>おい</rt></ruby>、<ruby><rb>女姪</rb><rt>めい</rt></ruby>が敵討をするから、自分は留守を伜<persName ref="#kenzo">健蔵</persName>に<ruby><rb>委</rb><rt>まか</rt></ruby>せて置いて、助太刀に出たいと云うのである。主人<persName ref="#ikiyo">本多意気揚</persName>は<persName ref="#ieyasu">徳川家康</persName>が酒井家に附けた<persName ref="#ikiyo">意気揚</persName>の子孫で、武士道に<ruby><rb>心入</rb><rt>こころいれ</rt></ruby>の深い人なので、すぐに<persName ref="#kuroemon">九郎右衛門</persName>の願を聞き届けた。<placeName ref="#edo">江戸</placeName>ではまだ敵討の願を出したばかりで、<ruby><rb>上</rb><rt>かみ</rt></ruby>からそんな沙汰もないうちに、<persName ref="#kuroemon">九郎右衛門</persName>は<persName ref="#ikiyo">意気揚</persName>から<ruby><rb>拵附</rb><rt>こしらえつき</rt></ruby>の刀<ruby><rb>一腰</rb><rt>ひとこし</rt></ruby>と、手当金二十両とを貰って、<placeName ref="#himeji">姫路</placeName>を立った。それが<date when="1834-01-23">正月二十三日</date>の事である。</p>
+        <p><date when="1834-02-05">二月五日</date>に<persName ref="#kuroemon">九郎右衛門</persName>は<placeName ref="#edo">江戸</placeName><placeName ref="#kakigaracho">蠣殻町</placeName>の中邸にある<persName ref="#uhei">山本宇平</persName>が宅に着いた。<persName ref="#uhei">宇平</persName>を<ruby><rb>始</rb><rt>はじめ</rt></ruby>、細川家から<ruby><rb>暇</rb><rt>いとま</rt></ruby>を取って帰っていた姉の<persName ref="#riyo">りよ</persName>が<ruby><rb>喜</rb><rt>よろこび</rt></ruby>は<ruby><rb>譬</rb><rt>たと</rt></ruby>えようがない。沈着で口数をきかぬ、筋骨<ruby><rb>逞</rb><rt>たくま</rt></ruby>しい<ruby><rb>叔父</rb><rt>おじ</rt></ruby>を見たばかりで、姉も弟も<ruby><rb>安堵</rb><rt>あんど</rt></ruby>の思をしたのである。</p>
+        <p>「まだこっちではお許は出んかい」と、<persName ref="#kuroemon">九郎右衛門</persName>は<persName ref="#uhei">宇平</persName>に問うた。</p>
+        <p>「はい。まだなんの御沙汰もございません。お役人方に伺いましたが、多分忌中だから御沙汰がないのだろうと申すことで」</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は<ruby><rb>眉間</rb><rt>みけん</rt></ruby>に<ruby><rb>皺</rb><rt>しわ</rt></ruby>を寄せた。<ruby><rb>暫</rb><rt>しばら</rt></ruby>くして、「大きい車は廻りが遅いのう」と云った。</p>
+        <p>それから<persName ref="#kuroemon">九郎右衛門</persName>は、旅の支度が出来たかと問うた。いずれお許が出てからと、<persName ref="#uhei">宇平</persName>が云った。叔父の眉間には又皺が寄った。しかし今度は長い間なんとも言わなかった。外の話を色々した後で、叔父は思い出したように云った。「あの支度はのう、先へして置いても好いぞよ」</p>
+        <p><date when="1834-02-06">六日</date>には<persName ref="#kuroemon">九郎右衛門</persName>が兄の墓参をした。<date when="1834-02-07">七日</date>には<placeName ref="#hamacho">浜町</placeName>の<persName ref="#kobe">神戸</persName>方へ、兄が<ruby><rb>末期</rb><rt>まつご</rt></ruby>に世話になった礼に往った。西北の風の強い日で、丁度<persName ref="#kuroemon">九郎右衛門</persName>が<persName ref="#kobe">神戸</persName>の家にいるうちに、<placeName ref="#kanda">神田</placeName>から火事が始まった。歴史に残っている<ruby><rb>午年</rb><rt>うまどし</rt></ruby>の大火である。<ruby><rb>未</rb><rt>ひつじ</rt></ruby>の刻に<placeName ref="#sakumacho"><ruby><rb>佐久間町</rb><rt>さくまちょう</rt></ruby>二丁目</placeName>の琴三味線師の家から出火して、<placeName ref="#nihonbashi">日本橋</placeName>方面へ焼けひろがり、翌朝卯の刻まで焼けた。「八つ時分三味線屋からことを出し火の手がちりてとんだ大火事」と云う落首があった。<placeName ref="#hamacho">浜町</placeName>も<placeName ref="#kakigaracho">蠣殻町</placeName>も<ruby><rb>風下</rb><rt>かざした</rt></ruby>で、火の手は三つに分かれて焼けて来るのを見て、<persName ref="#kobe">神戸</persName>の内は人出も多いからと云って、<persName ref="#kuroemon">九郎右衛門</persName>は<placeName ref="#kakigaracho">蠣殻町</placeName>へ飛んで帰った。</p>
+        <p>山本の内では<persName ref="#kuroemon">九郎右衛門</persName>が指図をして、荷物は残らず出させたが、<ruby><rb>申</rb><rt>さる</rt></ruby>の下刻には中邸一面が火になって、山本も焼けた。</p>
+        <p><persName ref="#riyo">りよ</persName>は火事が始まるとすぐ、旧主人の細川家の邸をさして駆けて行ったが、もう<placeName ref="#toshimacho">豊島町</placeName>は火になっていた。「あぶないあぶない」「姉さん火の中へ逃げちゃあいけねえ」などと云うものがある。とうとう避難者や<ruby><rb>弥次馬</rb><rt>やじうま</rt></ruby>共の間に<ruby><rb>挟</rb><rt>はさ</rt></ruby>まれて、<ruby><rb>身動</rb><rt>みうごき</rt></ruby>もならぬようになる。頭の上へは火の子がばらばら落ちて来る。<persName ref="#riyo">りよ</persName>は涙ぐんで<placeName ref="#kameicho">亀井町</placeName>の手前から引き返してしまった。内へはもう叔父が<placeName ref="#hamacho">浜町</placeName>から帰って、荷物を片附けていた。</p>
+        <p><placeName ref="#hamacho">浜町</placeName>も<placeName ref="#yanokura">矢の倉</placeName>に近い方は大部分焼けたが、<ruby><rb>幸</rb><rt>さいわい</rt></ruby>に酒井家の添邸は焼け残った。<persName ref="#kobe">神戸</persName>家へ<ruby><rb>重々</rb><rt>かさねがさね</rt></ruby>世話になるのは気の毒だと云うので、<persName ref="#uhei">宇平</persName>一家はやはり遠い親戚に当る、添邸の<persName ref="#heisaku">山本平作</persName>方へ、<date when="1834-02-08">八日</date>の<ruby><rb>辰</rb><rt>たつ</rt></ruby>の刻過に避難した。</p>
+        <p><persName ref="#sanemon">三右衛門</persName>が遺族は<persName ref="#heisaku">山本平作</persName>方の部屋を借りて、夢の中で夢を見るような心持になって、ぼんやりしている。未亡人は頭痛が起って寝たきりである。<persName ref="#uhei">宇平</persName>は腕組をして何やら考え込む。<ruby><rb>只</rb><rt>ただ</rt></ruby><persName ref="#riyo">りよ</persName>一人<persName ref="#heisaku">平作</persName>の家族に<ruby><rb>気兼</rb><rt>きがね</rt></ruby>をしながら、<ruby><rb>甲斐々々</rb><rt>かいがい</rt></ruby>しく立ち働いていたが、<ruby><rb>午頃</rb><rt>ひるごろ</rt></ruby>になって細川の奥方の<ruby><rb>立退所</rb><rt>たちのきじょ</rt></ruby>が知れたので、すぐに見舞に往った。</p>
+        <p>晩に<persName ref="#riyo">りよ</persName>が帰ると<persName ref="#kuroemon">九郎右衛門</persName>が云った。「おい。もう当分我々は家なんぞはいらんが、若殿が旅に出て風を引かぬように、支度だけはして<ruby><rb>遣</rb><rt>や</rt></ruby>らんではならんぞ」叔父は<persName ref="#uhei">宇平</persName>を若殿々々と呼んで<ruby><rb>揶揄</rb><rt>からか</rt></ruby>っているのである。</p>
+        <p>「はい」と云った<persName ref="#riyo">りよ</persName>は、その晩から<persName ref="#uhei">宇平</persName>の衣類に手を着けた。</p>
+        <p><date when="1834-02-09">九日</date>には<persName ref="#riyo">りよ</persName>が旅支度にいる物を買いに出た。<persName ref="#kuroemon">九郎右衛門</persName>が書附にして渡したのである。きょうは風が南に変って、珍らしく暖いと思っていると、<ruby><rb>酉</rb><rt>とり</rt></ruby>の上刻に又<placeName ref="#hinokicho"><ruby><rb>檜物町</rb><rt>ひものちょう</rt></ruby></placeName>から出火した。おとつい焼け残った<ruby><rb>町家</rb><rt>まちや</rt></ruby>が、又この火事で焼けた。</p>
+        <p><date when="1834-02-10">十日</date>には又寒い西北の風が強く吹いていると、正午に<placeName ref="#daimyokoji"><ruby><rb>大名小路</rb><rt>だいみょうこうじ</rt></ruby></placeName>の<persName ref="#matsudaira-hoki"><ruby><rb>松平伯耆守宗発</rb><rt>まつだいらほうきのかみむねあきら</rt></ruby></persName>の上邸から出火して、<placeName ref="#kyobashi">京橋</placeName>方面から<placeName ref="#shibaguchi">芝口</placeName>へ掛けて焼けた。</p>
+        <p>続いて十一日にも十二日にも火事がある。物価の高いのに、災難が引き続いてあるので、<placeName ref="#edo">江戸</placeName>中人心<ruby><rb>恟々</rb><rt>きょうきょう</rt></ruby>としている。山本方で商人に注文した、少しばかりの品物にも、思い掛けぬ<ruby><rb>手違</rb><rt>てちがえ</rt></ruby>が出来て、<persName ref="#riyo">りよ</persName>が幾ら気を<ruby><rb>揉</rb><rt>も</rt></ruby>んでも、支度がなかなかはかどらない。</p>
+        <p>或る日<persName ref="#kuroemon">九郎右衛門</persName>は<ruby><rb>烟草</rb><rt>たばこ</rt></ruby>を飲みながら、<persName ref="#riyo">りよ</persName>の裁縫するのを見ていたが、不審らしい顔をして、<ruby><rb>烟管</rb><rt>きせる</rt></ruby>を下に置いた。「なんだい。そんなちっぽけな物を<ruby><rb>拵</rb><rt>こしら</rt></ruby>えたって、しようがないじゃないか。若殿はのっぽでお<ruby><rb>出</rb><rt>いで</rt></ruby>になるからなあ」</p>
+        <p><persName ref="#riyo">りよ</persName>は顔を赤くした。「あの、これはわたくしので」縫っているのは女の<ruby><rb>脚絆甲掛</rb><rt>きゃはんこうがけ</rt></ruby>である。</p>
+        <p>「なんだと」叔父は目を大きく<ruby><rb>睜</rb><rt>みは</rt></ruby>った。「お前も武者修業に出るのかい」</p>
+        <p>「はい」と云ったが、<persName ref="#riyo">りよ</persName>は縫物の手を<ruby><rb>停</rb><rt>と</rt></ruby>めない。</p>
+        <p>「ふん」と云って、叔父は<ruby><rb>良</rb><rt>やや</rt></ruby><ruby><rb>久</rb><rt>ひさ</rt></ruby>しく<ruby><rb>女姪</rb><rt>めい</rt></ruby>の顔を見ていた。そしてこう云った。「そいつは駄目だ。お前のような可哀らしい女の子を連れて、どこまで往くか分からん旅が出来るものか。<ruby><rb>敵</rb><rt>かたき</rt></ruby>にはどこで出逢うか、何年立って出逢うか、まるで<ruby><rb>当</rb><rt>あて</rt></ruby>がないのだ。<ruby><rb>己</rb><rt>おれ</rt></ruby>と<persName ref="#uhei">宇平</persName>とは只それを捜しに行くのだ。見附かってからお前に知らせれば<ruby><rb>好</rb><rt>い</rt></ruby>いじゃないか」</p>
+        <p>「<ruby><rb>仰</rb><rt>おっし</rt></ruby>ゃる<ruby><rb>通</rb><rt>とおり</rt></ruby>、どこでお逢になるか知れませんのに、きっと<placeName ref="#edo">江戸</placeName>へお知らせになることが出来ましょうか。それに<placeName ref="#edo">江戸</placeName>から参るのを、きっとお待になることが出来ましょうか」罪のないような、<ruby><rb>狡猾</rb><rt>こうかつ</rt></ruby>らしいような、くりくりした目で、微笑を帯びて、叔父の顔をじっと見た。</p>
+        <p>叔父は少からず<ruby><rb>狼狽</rb><rt>ろうばい</rt></ruby>した。「なる程。それは時と場合とに依る事で、わしもきっととは云い兼ねる。出来る事なら、どうにでもしてお前をその場へ呼んで遣るのだ。万一間に合わぬ事があったら、それはお前が女に生れた<ruby><rb>不肖</rb><rt>ふしょう</rt></ruby>だと、<ruby><rb>諦</rb><rt>あきら</rt></ruby>めてくれるより外ない」</p>
+        <p>「それ御覧遊ばせ。わたくしはどうしてもその万一の事のないようにいたしとうございます。女は連れて行かれぬと仰ゃるなら、わたくしは尼になって参ります」</p>
+        <p>「まあ、そう云うな。尼も女じゃからのう」</p>
+        <p><persName ref="#riyo">りよ</persName>は涙を縫物の上に落して、黙っている。叔父は一面<ruby><rb>詞</rb><rt>ことば</rt></ruby>を尽して慰めたが、一面女は連れて行かぬと、きっぱり言い渡した。<persName ref="#riyo">りよ</persName>は涙を<ruby><rb>拭</rb><rt>ふ</rt></ruby>いて、縫いさした脚絆をそっと<ruby><rb>側</rb><rt>そば</rt></ruby>にあった<ruby><rb>風呂敷包</rb><rt>ふろしきづつみ</rt></ruby>の中にしまった。</p>
+        <p><persName ref="#sakai-tadazane">酒井忠実</persName>は月番老中<persName ref="#okubo">大久保<ruby><rb>加賀守忠真</rb><rt>かがのかみただざね</rt></ruby></persName>と三奉行とに<ruby><rb>届済</rb><rt>とどけずみ</rt></ruby>の上で、<date when="1834-02-26">二月二十六日</date>附を<ruby><rb>以</rb><rt>もっ</rt></ruby>て、<persName ref="#uhei">宇平</persName>、<persName ref="#riyo">りよ</persName>、<persName ref="#kuroemon">九郎右衛門</persName>の三人に宛てた、大目附連署の証文を渡して、敵討を許した。「早々本意を達し<ruby><rb>可立帰</rb><rt>たちかへるべし</rt></ruby>、<ruby><rb>若</rb><rt>もし</rt></ruby>又敵人<ruby><rb>死候</rb><rt>しにさふら</rt></ruby>はば、<ruby><rb>慥</rb><rt>たしか</rt></ruby>なる証拠を<ruby><rb>以可申立</rb><rt>もってまをしたつべし</rt></ruby>」と云う沙汰である。三人には手当が出る。留守へは<ruby><rb>扶持</rb><rt>ふち</rt></ruby>が下がる。<persName ref="#riyo">りよ</persName>はお許は出ても、敵を捜しには旅立たぬことになって見れば、これで未亡人と<persName ref="#riyo">りよ</persName>との、<placeName ref="#edo">江戸</placeName>での<ruby><rb>居所</rb><rt>いどころ</rt></ruby>さえ<ruby><rb>極</rb><rt>き</rt></ruby>めて置けば、<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#uhei">宇平</persName>の二人は出立することが出来るのである。</p>
+        <p><persName ref="#riyo">りよ</persName>は<placeName ref="#ogasawaratei">小笠原邸</placeName>の<persName ref="#harada">原田</persName>夫婦が<ruby><rb>一先</rb><rt>ひとまず</rt></ruby>引き取ることになった。病身な未亡人は<ruby><rb>願済</rb><rt>ねがいずみ</rt></ruby>の上で、里方<persName ref="#sumaemon">桜井須磨右衛門</persName>の家で保養することになった。</p>
+        <p>さていよいよ<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#uhei">宇平</persName>の二人が<ruby><rb>門出</rb><rt>かどで</rt></ruby>をしようとしたが、二人共敵の顔を識らない。人相書だけをたよりにするのは、いかにも心細いので、口入宿の富士屋や、<ruby><rb>請宿</rb><rt>うけやど</rt></ruby>の若狭屋へ往って、色々問い<ruby><rb>質</rb><rt>ただ</rt></ruby>したが、これと云う事実も聞き出されない。それに容貌が分からぬばかりでなく、生国も<placeName ref="#kii">紀州</placeName>だとは云っているが、<ruby><rb>確</rb><rt>しか</rt></ruby>としたことは分からぬらしい。只酒井家に奉公する前には、<placeName ref="#kozuke">上州</placeName><placeName ref="#takasaki">高崎</placeName>にいたことがあると云うだけである。</p>
+        <p>その時、<persName ref="#heisaku">山本平作</persName>方へ突然尋ねて来た男がある。この男は<placeName ref="#azaigun"><ruby><rb>近江国</rb><rt>おうみのくに</rt></ruby>浅井郡</placeName>の<ruby><rb>産</rb><rt>うまれ</rt></ruby>で、<ruby><rb>少</rb><rt>わか</rt></ruby>い時に<placeName ref="#edo">江戸</placeName>に出て、諸家に<ruby><rb>仲間</rb><rt>ちゅうげん</rt></ruby>奉公をしているうちに、丁度<persName ref="#torazo">亀蔵</persName>と一しょに酒井家の表小使をして、<persName ref="#sanemon">三右衛門</persName>には世話になったこともあるので、若しお役に立つようなら、<ruby><rb>幸</rb><rt>さいわい</rt></ruby>今は酒井家から<ruby><rb>暇</rb><rt>いとま</rt></ruby>を取っているから、敵の<ruby><rb>見識人</rb><rt>みしりにん</rt></ruby>として附いて行っても<ruby><rb>好</rb><rt>よ</rt></ruby>いと云うのである。名は<persName ref="#bunkichi">文吉</persName>と云って、四十二歳になる。体は丈夫で、<ruby><rb>渡者</rb><rt>わたりもの</rt></ruby>の仲間には珍らしい、実直なものだと云うことが、一目見て分かった。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>が会って話をして見て、すぐに<persName ref="#uhei">宇平</persName>の家来に召し<ruby><rb>抱</rb><rt>かか</rt></ruby>えることにした。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#uhei">宇平</persName>、<persName ref="#bunkichi">文吉</persName>の三人は<date when="1834-02">二十九日</date>に菩提所<placeName ref="#henryuji">遍立寺</placeName>から出立することに極めて、前日に<placeName ref="#hamacho">浜町</placeName>の<persName ref="#heisaku">山本平作</persName>方を引き払って、寺へ往った。そこへは病気のまだ好くならぬ未亡人の外、<persName ref="#riyo">りよ</persName>を始、親戚一同が集まって来て、先ず墓参をして、それから離別の<ruby><rb>盃</rb><rt>さかずき</rt></ruby>を<ruby><rb>酌</rb><rt>く</rt></ruby>み<ruby><rb>交</rb><rt>かわ</rt></ruby>した。住持はその席へ<ruby><rb>蕎麦</rb><rt>そば</rt></ruby>を出して、「これは手討のらん<ruby><rb>切</rb><rt>ぎり</rt></ruby>でございます」と、茶番めいた口上を言った。親戚は笑い興じて、只一人打ち<ruby><rb>萎</rb><rt>しお</rt></ruby>れている<persName ref="#riyo">りよ</persName>を促し立てて帰った。</p>
+        <p>寺に<ruby><rb>一夜</rb><rt>ひとよ</rt></ruby>寝て、<date when="1834-02">二十九日</date>の朝三人は旅に立った。<persName ref="#bunkichi">文吉</persName>は荷物を負って一歩跡を附いて行く。<persName ref="#torazo">亀蔵</persName>が奉公前にいたと云うのをたよりにして、最初<placeName ref="#kozuke"><ruby><rb>上野国</rb><rt>こうずけのくに</rt></ruby></placeName><placeName ref="#takasaki">高崎</placeName>をさして往くのである。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>も<persName ref="#uhei">宇平</persName>も<persName ref="#bunkichi">文吉</persName>も、<placeName ref="#takasaki">高崎</placeName>をさして往くのに、<persName ref="#torazo">亀蔵</persName>が<placeName ref="#takasaki">高崎</placeName>にいそうだと云う気にはなっていない。どこをさして往こうと云う見当が附かぬので、先ず<placeName ref="#takasaki">高崎</placeName>へでも往って見ようと思うに過ぎない。<persName ref="#torazo">亀蔵</persName>と云う、無頼漢とも云えば云われる、住所不定の男のありかを、<placeName ref="#japan">日本</placeName>国中で捜そうとするのは、米倉の中の米粒一つを捜すようなものである。どの俵に手を着けて好いか分からない。然しそれ程の<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ない事が、一方から見れば、是非共<ruby><rb>為遂</rb><rt>しと</rt></ruby>げなくてはならぬ事である。そこで一行は先ず<placeName ref="#takasaki">高崎</placeName>と云う俵をほどいて見ることにした。</p>
+        <p><placeName ref="#takasaki">高崎</placeName>では<ruby><rb>踪跡</rb><rt>そうせき</rt></ruby>が知れぬので、<placeName ref="#maebashi">前橋</placeName>へ出た。ここには<placeName ref="#enokicho"><ruby><rb>榎町</rb><rt>えのきまち</rt></ruby></placeName>の<placeName ref="#seijunji"><ruby><rb>政淳寺</rb><rt>せいじゅんじ</rt></ruby></placeName>に山本家の先祖の墓がある。<persName ref="#kuroemon">九郎右衛門</persName>等はそれに参って成功を祈った。そこから<placeName ref="#fujioka">藤岡</placeName>に出て、五六日いた。そこから<placeName ref="#musashi"><ruby><rb>武蔵国</rb><rt>むさしのくに</rt></ruby></placeName>の境を越して、<placeName ref="#kodama">児玉村</placeName>に三日いた。<placeName ref="#mitsuminesan"><ruby><rb>三峯山</rb><rt>みつみねさん</rt></ruby></placeName>に登っては、<persName ref="#mitsumine">三峯<ruby><rb>権現</rb><rt>ごんげん</rt></ruby></persName>に祈願を<ruby><rb>籠</rb><rt>こ</rt></ruby>めた。<placeName ref="#hachioji">八王子</placeName>を経て、<placeName ref="#kai"><ruby><rb>甲斐国</rb><rt>かいのくに</rt></ruby></placeName>に入って、<placeName ref="#gunnai">郡内</placeName>、<placeName ref="#kofu">甲府</placeName>を二日に廻って、<placeName ref="#minobusan"><ruby><rb>身延山</rb><rt>みのぶさん</rt></ruby></placeName>へ<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>した。<placeName ref="#shinano"><ruby><rb>信濃国</rb><rt>しなののくに</rt></ruby></placeName>では、<placeName ref="#kamisuwa"><ruby><rb>上諏訪</rb><rt>かみすわ</rt></ruby></placeName>から<placeName ref="#wadatoge">和田峠</placeName>を越えて、<placeName ref="#ueda">上田</placeName>の<placeName ref="#zenkoji">善光寺</placeName>に参った。<placeName ref="#echigo"><ruby><rb>越後国</rb><rt>えちごのくに</rt></ruby></placeName>では、<placeName ref="#takada">高田</placeName>を三日、<placeName ref="#imamachi">今町</placeName>を二日、<placeName ref="#kashiwazaki"><ruby><rb>柏崎</rb><rt>かしわざき</rt></ruby></placeName>、<placeName ref="#nagaoka">長岡</placeName>を一日、<placeName ref="#sanjo">三条</placeName>、<placeName ref="#niigata">新潟</placeName>を四日で廻った。そこから<placeName ref="#kagakaido">加賀街道</placeName>に転じて、<placeName ref="#etchu"><ruby><rb>越中国</rb><rt>えっちゅうのくに</rt></ruby></placeName>に入って、<placeName ref="#toyama">富山</placeName>に三日いた。この辺は凶年の影響を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>ることが<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>しくて、一行は麦に芋大根を切り交ぜた飯を食って、農家の土間に<ruby><rb>筵</rb><rt>むしろ</rt></ruby>を敷いて寝た。<placeName ref="#hida"><ruby><rb>飛騨国</rb><rt>ひだのくに</rt></ruby></placeName>では<placeName ref="#takayama">高山</placeName>に二日、<placeName ref="#mino"><ruby><rb>美濃国</rb><rt>みののくに</rt></ruby></placeName>では<placeName ref="#kanayama"><ruby><rb>金山</rb><rt>かなやま</rt></ruby></placeName>に一日いて、<placeName ref="#kisoji"><ruby><rb>木曽路</rb><rt>きそじ</rt></ruby></placeName>を<placeName ref="#ota">太田</placeName>に出た。<placeName ref="#owari"><ruby><rb>尾張国</rb><rt>おわりのくに</rt></ruby></placeName>では、<placeName ref="#inuyama">犬山</placeName>に一日、<placeName ref="#nagoya">名古屋</placeName>に四日いて、<placeName ref="#tokaido">東海道</placeName>を<placeName ref="#miya">宮</placeName>に出て、<placeName ref="#saya">佐屋</placeName>を経て<placeName ref="#ise"><ruby><rb>伊勢国</rb><rt>いせのくに</rt></ruby></placeName>に入り、<placeName ref="#kuwana">桑名</placeName>、<placeName ref="#yokkaichi">四日市</placeName>、<placeName ref="#tsu">津</placeName>を廻り、<placeName ref="#matsusaka">松坂</placeName>に三日いた。</p>
+        <p>一行が二日以上泊るのは、稀に一日の<ruby><rb>草臥休</rb><rt>くたびれやすみ</rt></ruby>をすることもあるが、大抵何か手掛りがありそうに思われるので、特別捜索をするのである。<placeName ref="#matsusaka">松坂</placeName>では<placeName ref="#tonomachi">殿町</placeName>に<ruby><rb>目代</rb><rt>もくだい</rt></ruby><persName ref="#iwahashi">岩橋</persName>某と云うものがいて、<persName ref="#kuroemon">九郎右衛門</persName>等の言うことを親切に聞き取って、綿密な調べをしてくれた。その調べ上げた事実を言って聞せられた時は、一行は暗中に<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>を認めたような気がしたのである。</p>
+        <p><placeName ref="#matsusaka">松坂</placeName>に<persName ref="#sahei">深野屋佐兵衛</persName>と云う<ruby><rb>大商人</rb><rt>おおしょうにん</rt></ruby>がある。そこへは<ruby><rb><placeName ref="#kii">紀伊国</placeName><placeName ref="#kumanoura">熊野浦</placeName></rb><rt>きいのくにくまのうら</rt></ruby><placeName ref="#nagashima">長島外町</placeName>の漁師<persName ref="#sadaemon"><ruby><rb>定右衛門</rb><rt>さだえもん</rt></ruby></persName>と云うものが毎日<ruby><rb>魚</rb><rt>うお</rt></ruby>を送ってよこす。その縁で<persName ref="#sahei">佐兵衛</persName>は<persName ref="#sadaemon">定右衛門</persName>一<ruby><rb>家</rb><rt>け</rt></ruby>と心安くなっている。然るに<persName ref="#sadaemon">定右衛門</persName>の<persName ref="#kamezo">長男亀蔵</persName>は若い時<placeName ref="#edo">江戸</placeName>へ出て、<ruby><rb>音信</rb><rt>いんしん</rt></ruby>不通になったので、二男<persName ref="#sadasuke">定助</persName>一人をたよりにしている。その亀蔵が今年<date when="1834-01-21">正月二十一日</date>に、<ruby><rb>襤褸</rb><rt>ぼろ</rt></ruby>を身に<ruby><rb>纏</rb><rt>まと</rt></ruby>って深野屋へ尋ねて来た。<persName ref="#sahei">佐兵衛</persName>は「お前のような不孝者を、<ruby><rb>親父様</rb><rt>おやじさま</rt></ruby>に知らせずに留めて置く事は出来ぬ」と云った。亀蔵はすごすご深野屋の店を立ち去ったが、それを見たものが、「あれは<persName ref="#kamezo">紀州の亀蔵</persName>と云う男で、なんでも<placeName ref="#edo">江戸</placeName>で悪い事をして、逃げて来たのだろう」と評判した。</p>
+        <p>後に深野屋へ聞えた所に依ると、亀蔵は<date when="1834-01-24">正月二十四日</date>に、<placeName ref="#nigo">熊野<ruby><rb>仁郷村</rb><rt>にんごうむら</rt></ruby></placeName>にいるははかたの小父<persName ref="#rinsuke">林助</persName>の家に来て、置いてくれと頼んだが、<persName ref="#rinsuke">林助</persName>は貧乏していて、人を置くことが出来ぬと云って、勧めて父<persName ref="#sadaemon">定右衛門</persName>が<ruby><rb>許</rb><rt>もと</rt></ruby>へ<ruby><rb>遣</rb><rt>や</rt></ruby>った。知人にたよろうとし、それが<ruby><rb>愜</rb><rt>かな</rt></ruby>わぬ段になって、始めて親戚をおとずれ、親戚にことわられて、亀蔵はようよう親許へ帰る気になったらしい。<persName ref="#sadaemon">定右衛門</persName>の家には二十八日に帰った。</p>
+        <p><date when="1834-02">二月中旬</date>に亀蔵は江戸で悪い事をして帰ったのだろうと云う<ruby><rb>噂</rb><rt>うわさ</rt></ruby>が、<placeName ref="#matsusaka">松坂</placeName>から<persName ref="#sadaemon">定右衛門</persName>の方へ聞えた。<persName ref="#sadaemon">定右衛門</persName>が何をしたかと問うた時、亀蔵は目上の人に創を負わせたと云った。そこで<persName ref="#sadaemon">定右衛門</persName>と<persName ref="#rinsuke">林助</persName>とで、亀蔵を坊主にして、<placeName ref="#koyasan"><ruby><rb>高野山</rb><rt>こうやさん</rt></ruby></placeName>に登らせることにした。二人が<ruby><rb>剃髪</rb><rt>ていはつ</rt></ruby>した亀蔵を<placeName ref="#miurazaka">三浦坂</placeName>まで送って別れたのが<date when="1834-02-19">二月十九日</date>の事である。亀蔵はその時茶の<ruby><rb>弁慶縞</rb><rt>べんけいじま</rt></ruby>の木綿綿入を着て、木綿帯を締め、<ruby><rb>藍</rb><rt>あい</rt></ruby>の<ruby><rb>股引</rb><rt>ももひき</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>いて、脚絆を当てていた。懐中には一両持っていた。</p>
+        <p>亀蔵は二十二日に<placeName ref="#shimizumura">高野領清水村</placeName>の<persName ref="#matabei">又兵衛</persName>と云うものの家に泊って、<date when="1834-02-23">翌二十三日</date>も雨が降ったので滞留した。そして<date when="1834-02-24">二十四日</date>に<placeName ref="#koyasan">高野山</placeName>に登った。山で逢ったものもある。<date when="1834-02-26">二十六日</date>の夕方には、下山して<placeName ref="#hashimoto">橋本</placeName>にいたのを人が見た。それからは行方不明になっている。多分<placeName ref="#shikoku">四国</placeName>へでも渡ったかと云うことである。</p>
+        <p><placeName ref="#matsusaka">松坂</placeName>の目代にこの<ruby><rb>顛末</rb><rt>てんまつ</rt></ruby>を聞いた時、この坊主になった<persName ref="#sadaemon">定右衛門</persName>の<persName ref="#kamezo">伜亀蔵</persName>が敵だと云うことに疑を<ruby><rb>挾</rb><rt>はさ</rt></ruby>むものは、主従三人の<ruby><rb>中</rb><rt>うち</rt></ruby>に一人もなかった。<persName ref="#uhei">宇平</persName>はすぐに<placeName ref="#shikoku">四国</placeName>へ尋ねに往こうと云った。しかし<persName ref="#kuroemon">九郎右衛門</persName>がそれを止めて、<placeName ref="#shikoku">四国</placeName>へ渡ったかも知れぬと云うのは、根拠のない推量である、<placeName ref="#shikoku">四国</placeName>へもいずれ往くとして、先ず手近な土地から捜すが好いと云った。</p>
+        <p>一行は<placeName ref="#matsusaka">松坂</placeName>を立って、武運を祈るために参宮した。それから<placeName ref="#seki">関</placeName>を経て、<placeName ref="#tokaido">東海道</placeName>を<placeName ref="#settsu"><ruby><rb>摂津国</rb><rt>せっつのくに</rt></ruby></placeName><placeName ref="#osaka">大阪</placeName>に出て、ここに二十三日を費した。その間に<placeName ref="#matsusaka">松坂</placeName>から<ruby><rb>便</rb><rt>たより</rt></ruby>があって、<placeName ref="#kii">紀州</placeName>の<persName ref="#sadaemon">定右衛門</persName>が伜の行末を心配して、<ruby><rb>気病</rb><rt>きやみ</rt></ruby>で亡くなったと云う事を聞いた。それから<placeName ref="#nishinomiya"><ruby><rb>西宮</rb><rt>にしのみや</rt></ruby></placeName>、<placeName ref="#hyogo"><ruby><rb>兵庫</rb><rt>ひょうご</rt></ruby></placeName>を経て、<placeName ref="#harima"><ruby><rb>播磨国</rb><rt>はりまのくに</rt></ruby></placeName>に<ruby><rb>入</rb><rt>い</rt></ruby>り、<placeName ref="#akashi"><ruby><rb>明石</rb><rt>あかし</rt></ruby></placeName>から本国<placeName ref="#himeji">姫路</placeName>に出て、<placeName ref="#uomachi"><ruby><rb>魚町</rb><rt>うおまち</rt></ruby></placeName>の旅宿に三日いた。<persName ref="#kuroemon">九郎右衛門</persName>は伜の家があっても、本意を遂げるまでは立ち寄らぬのである。それから<placeName ref="#bizen"><ruby><rb>備前国</rb><rt>びぜんのくに</rt></ruby></placeName>に入り、<placeName ref="#okayama">岡山</placeName>を経て、<placeName ref="#shimoyama"><ruby><rb>下山</rb><rt>しもやま</rt></ruby></placeName>から<date when="1834-06-16">六月十六日</date>の夜舟に乗って、いよいよ<placeName ref="#shikoku">四国</placeName>へ渡った。<placeName ref="#matsusaka">松坂</placeName>以来<persName ref="#kuroemon">九郎右衛門</persName>の捜索<ruby><rb>方鍼</rb><rt>ほうしん</rt></ruby>に対して、<ruby><rb>稍</rb><rt>やや</rt></ruby>不満らしい気色を見せながら、つまりは意志の堅固な、機嫌に<ruby><rb>浮沈</rb><rt>うきしずみ</rt></ruby>のない叔父に威圧せられて、附いて歩いていた<persName ref="#uhei">宇平</persName>が、この時急に活気を生じて、船中で夜の<ruby><rb>更</rb><rt>ふ</rt></ruby>けるまで話し続けた。</p>
+        <p><date when="1834-06-16">十六日</date>の朝舟は<ruby><rb><placeName ref="#sanuki">讃岐国</placeName><placeName ref="#marugame">丸亀</placeName></rb><rt>さぬきのくにまるがめ</rt></ruby>に着いた。<persName ref="#bunkichi">文吉</persName>に<placeName ref="#matsuo">松尾</placeName>を尋ねさせて置いて、二人は<placeName ref="#zozusan"><ruby><rb>象頭山</rb><rt>ぞうずさん</rt></ruby></placeName>へ祈願に登った。すると<ruby><rb>参籠人</rb><rt>さんろうにん</rt></ruby>が<placeName ref="#marugame">丸亀</placeName>で一癖ありげな、<ruby><rb>他所者</rb><rt>たしょもの</rt></ruby>の若い僧を見たと云う話をした。<persName ref="#uhei">宇平</persName>はもう敵を見附けたような気になって、<ruby><rb>亥</rb><rt>い</rt></ruby>の刻に山を下った。<placeName ref="#marugame">丸亀</placeName>に帰って、<persName ref="#bunkichi">文吉</persName>を<placeName ref="#matsuo">松尾</placeName>から呼んで僧を見させたが、それは別人であった。</p>
+        <p><placeName ref="#iyo"><ruby><rb>伊予国</rb><rt>いよのくに</rt></ruby></placeName>の<placeName ref="#dozan">銅山</placeName>は諸国の悪者の集まる所だと聞いて、一行は<placeName ref="#dozan">銅山</placeName>を二日捜した。それから<placeName ref="#saijo">西条</placeName>に二日、<placeName ref="#koharu"><ruby><rb>小春</rb><rt>こはる</rt></ruby></placeName>、<placeName ref="#imabari"><ruby><rb>今治</rb><rt>いまばり</rt></ruby></placeName>に二日いて、<placeName ref="#matsuyama">松山</placeName>から<placeName ref="#dogo">道後</placeName>の温泉に出た。ここへ来るまでに、<ruby><rb>暑</rb><rt>あつさ</rt></ruby>を<ruby><rb>侵</rb><rt>おか</rt></ruby>して旅行をした<persName ref="#uhei">宇平</persName>は<ruby><rb>留飲疝通</rb><rt>りゅういんせんつう</rt></ruby>に悩み、<persName ref="#bunkichi">文吉</persName>も下痢して、食事が進まぬので、<placeName ref="#yumachi">湯町</placeName>で五十日の間保養した。大分体が好くなったと云って、<placeName ref="#ozu"><ruby><rb>中大洲</rb><rt>なかおおす</rt></ruby></placeName>を二日捜して、<placeName ref="#yawatahama"><ruby><rb>八幡浜</rb><rt>やはたはま</rt></ruby></placeName>に出ると、病後を押して歩いた<persName ref="#uhei">宇平</persName>が、力抜けがして<ruby><rb>煩</rb><rt>わずら</rt></ruby>った。そこで五日間滞留して、ようよう<placeName ref="#kyushu">九州</placeName>行の舟に乗ることが出来た。<placeName ref="#shikoku">四国</placeName>の旅は<ruby><rb>空</rb><rt>むな</rt></ruby>しく過ぎたのである。</p>
+        <p>舟は<ruby><rb><placeName ref="#bungo">豊後国</placeName><placeName ref="#sagasenoseki">佐賀関</placeName></rb><rt>ぶんごのくにさがのせき</rt></ruby>に着いた。<placeName ref="#tsurusaki"><ruby><rb>鶴崎</rb><rt>つるさき</rt></ruby></placeName>を経て、<placeName ref="#higo"><ruby><rb>肥後国</rb><rt>ひごのくに</rt></ruby></placeName>に入り、<placeName ref="#asosan"><ruby><rb>阿蘇山</rb><rt>あそさん</rt></ruby></placeName>の<placeName ref="#asojingu">阿蘇神宮</placeName>、<placeName ref="#kumamoto">熊本</placeName>の<persName ref="#kiyomasa"><ruby><rb>清正公</rb><rt>せいしょうこう</rt></ruby></persName>へ祈願に参って、<placeName ref="#kumamoto">熊本</placeName>と<placeName ref="#takahashi">高橋</placeName>とを三日ずつ捜して、舟で<placeName ref="#hizen"><ruby><rb>肥前国</rb><rt>ひぜんのくに</rt></ruby></placeName><placeName ref="#shimabara">島原</placeName>に渡った。そこに二日いて、<placeName ref="#nagasaki">長崎</placeName>へ出た。<placeName ref="#nagasaki">長崎</placeName>で三日目に、敵らしい僧を<placeName ref="#shimabara">島原</placeName>で見たと云う話を聞いて、引き返して又<placeName ref="#shimabara">島原</placeName>を五日尋ねた。それから<placeName ref="#kumamoto">熊本</placeName>を更に三日、<placeName ref="#uto">宇土</placeName>を二日、<placeName ref="#yatsushiro"><ruby><rb>八代</rb><rt>やつしろ</rt></ruby></placeName>を一日、<placeName ref="#nankushuku"><ruby><rb>南工宿</rb><rt>なんくじゅく</rt></ruby></placeName>を二日尋ねて、再び舟で<placeName ref="#hizen">肥前国</placeName><placeName ref="#unzendake"><ruby><rb>温泉嶽</rb><rt>おんせんだけ</rt></ruby></placeName>の下の港へ渡った。すると<placeName ref="#nagasaki">長崎</placeName>から来た人の話に、敵らしい僧の<placeName ref="#nagasaki">長崎</placeName>にいることを聞いた。<placeName ref="#nagasaki">長崎</placeName><placeName ref="#kamichikugo"><ruby><rb>上筑後町</rb><rt>かみちくごまち</rt></ruby></placeName>の<ruby><rb>一向宗</rb><rt>いっこうしゅう</rt></ruby>の寺に、<placeName ref="#kanzenji">勧善寺</placeName>と云うのがある。そこへ二十歳前後の若い僧が来て、棒を指南していると云うのである。一行は又<placeName ref="#nagasaki">長崎</placeName>行の舟に乗った。</p>
+        <p><placeName ref="#nagasaki">長崎</placeName>に着いたのは<date when="1834-11-08">十一月八日</date>の朝である。<placeName ref="#funahikijicho"><ruby><rb>舟引地町</rb><rt>ふなひきじまち</rt></ruby></placeName>の紙屋と云う家に泊って、<ruby><rb>町年寄</rb><rt>まちどしより</rt></ruby><persName ref="#fukuda">福田</persName>某に<ruby><rb>尋人</rb><rt>たずねにん</rt></ruby>の事を頼んだ。ここで聞けば、<placeName ref="#kanzenji">勧善寺</placeName>の客僧はいよいよ敵らしく思われる。それは<placeName ref="#kii">紀州</placeName><ruby><rb>産</rb><rt>うまれ</rt></ruby>のもので、何か人目を<ruby><rb>憚</rb><rt>はばか</rt></ruby>るわけがあると云って、門外不出で暮していると云うのである。親切な町年寄は、若し取り逃がしてはならぬと云って、盗賊方二<ruby><rb>人</rb><rt>にん</rt></ruby>を同行させることにした。町で剣術師範をしている<persName ref="#ogawa">小川</persName>某と云うものも、町年寄の話を聞いて、是非その場に立ち会って、場合に依っては助太刀がしたいと申し込んだ。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#uhei">宇平</persName>の二人は、大村家の侍で棒の修行を<ruby><rb>懇望</rb><rt>こんもう</rt></ruby>するものだと云って、<placeName ref="#kanzenji">勧善寺</placeName>に弟子入の事を言い入れた。客僧は承引して、あすの<ruby><rb>巳</rb><rt>み</rt></ruby>の刻に面会しようと云った。二人は喜び勇んで、<persName ref="#bunkichi">文吉</persName>を連れて寺へ往く。<persName ref="#ogawa">小川</persName>と盗賊方の二人とは跡に続く。さて<persName ref="#bunkichi">文吉</persName>に合図を教えて客僧に面会して見ると、似も寄らぬ人であった。ようようその場を取り繕って寺を出たが、皆<ruby><rb>忌々</rb><rt>いまいま</rt></ruby>しがる中に、<persName ref="#uhei">宇平</persName>は<ruby><rb>殊</rb><rt>こと</rt></ruby>に落胆した。</p>
+        <p>一行は<persName ref="#fukuda">福田</persName>、<persName ref="#ogawa">小川</persName>等に礼を言って<placeName ref="#nagasaki">長崎</placeName>を立って、<placeName ref="#omura">大村</placeName>に五日いて<placeName ref="#saga">佐賀</placeName>へ出た。この時<persName ref="#kuroemon">九郎右衛門</persName>が足痛を起して、<ruby><rb>杖</rb><rt>つえ</rt></ruby>を<ruby><rb>衝</rb><rt>つ</rt></ruby>いて歩くようになった。<placeName ref="#chikugo"><ruby><rb>筑後国</rb><rt>ちくごのくに</rt></ruby></placeName>では<placeName ref="#kurume"><ruby><rb>久留米</rb><rt>くるめ</rt></ruby></placeName>を五日尋ねた。<placeName ref="#chikuzen">筑前国</placeName>では<ruby><rb>先</rb><rt>ま</rt></ruby>ず<placeName ref="#dazaifu">大宰府天満宮</placeName>に<ruby><rb>参詣</rb><rt>さんけい</rt></ruby>して祈願を籠め、<placeName ref="#hakata"><ruby><rb>博多</rb><rt>はかた</rt></ruby></placeName>、<placeName ref="#fukuoka">福岡</placeName>に二日いて、<placeName ref="#buzen">豊前国</placeName><placeName ref="#kokura"><ruby><rb>小倉</rb><rt>こくら</rt></ruby></placeName>から舟に乗って<placeName ref="#kyushu">九州</placeName>を離れた。</p>
+        <p><placeName ref="#nagato"><ruby><rb>長門国</rb><rt>ながとのくに</rt></ruby></placeName><placeName ref="#shimonoseki">下関</placeName>に舟で渡ったのが<date when="1834-12-06">十二月六日</date>であった。雪は降って来る。<persName ref="#kuroemon">九郎右衛門</persName>の足痛は次第に重るばかりである。とうとう<persName ref="#uhei">宇平</persName>と<persName ref="#bunkichi">文吉</persName>とで勧めて、<persName ref="#kuroemon">九郎右衛門</persName>を<ruby><rb>一旦</rb><rt>いったん</rt></ruby><placeName ref="#himeji">姫路</placeName>へ帰すことにした。<persName ref="#kuroemon">九郎右衛門</persName>は渋りながら<placeName ref="#shimonoseki">下関</placeName>から舟に乗って、<date when="1834-12-12">十二月十二日</date>の朝<placeName ref="#harima">播磨国</placeName><placeName ref="#murotsu"><ruby><rb>室津</rb><rt>むろのつ</rt></ruby></placeName>に着いた。そしてその日のうちに<placeName ref="#himeji">姫路</placeName>の城下<placeName ref="#hiranomachi"><ruby><rb>平</rb><rt>ひら</rt></ruby>の<ruby><rb>町</rb><rt>まち</rt></ruby></placeName>の<placeName ref="#inadaya">稲田屋</placeName>に<ruby><rb>這入</rb><rt>はい</rt></ruby>った。本意を遂げるまでは、飽くまでも旅中の心得でいて、倅の宅には帰らぬのである。</p>
+        <p><persName ref="#uhei">宇平</persName>は<persName ref="#kuroemon">九郎右衛門</persName>を送って置いて、<date when="1834-12-10">十二月十日</date>に<persName ref="#bunkichi">文吉</persName>を連れて<placeName ref="#shimonoseki">下関</placeName>を立った。それから<placeName ref="#suo"><ruby><rb>周防国</rb><rt>すおうのくに</rt></ruby></placeName><placeName ref="#miyaichi">宮市</placeName>に二日いて、<placeName ref="#murozumi"><ruby><rb>室積</rb><rt>むろづみ</rt></ruby></placeName>を経て、<placeName ref="#iwakuni">岩国</placeName>の<placeName ref="#kintaikyo">錦帯橋</placeName>へ出た。そこを三日捜して、舟で<placeName ref="#aki"><ruby><rb>安芸国</rb><rt>あきのくに</rt></ruby></placeName><placeName ref="#miyajima">宮島</placeName>へ渡った。<placeName ref="#hiroshima">広島</placeName>に八日いて、<placeName ref="#bingo"><ruby><rb>備後国</rb><rt>びんごのくに</rt></ruby></placeName>に入り、<placeName ref="#onomichi">尾の道</placeName>、<placeName ref="#tomo"><ruby><rb>鞆</rb><rt>とも</rt></ruby></placeName>に十七日、<placeName ref="#fukuyama">福山</placeName>に二日いた。それから<placeName ref="#bizen">備前国</placeName><placeName ref="#okayama">岡山</placeName>を経て、<persName ref="#kuroemon">九郎右衛門</persName>の見舞<ruby><rb>旁</rb><rt>かたがた</rt></ruby><placeName ref="#himeji">姫路</placeName>に立ち寄った。</p>
+        <p><persName ref="#uhei">宇平</persName>、<persName ref="#bunkichi">文吉</persName>が<placeName ref="#himeji">姫路</placeName>の<placeName ref="#inadaya">稲田屋</placeName>で<persName ref="#kuroemon">九郎右衛門</persName>と再会したのは、<date when="1835">天保六年</date><ruby><rb>乙未</rb><rt>きのとひつじ</rt></ruby>の歳<date when="1835-01-20">正月二十日</date>であった。丁度その時<placeName ref="#hiromine"><ruby><rb>広岸</rb><rt>こうがん</rt></ruby>（広峯）<ruby><rb>山</rb><rt>ざん</rt></ruby></placeName>の<ruby><rb>神主</rb><rt>かんぬし</rt></ruby><persName ref="#taniguchi">谷口</persName>某と云うものが、怪しい非人の事を知らせてくれたので、<persName ref="#kuroemon">九郎右衛門</persName>が<persName ref="#bunkichi">文吉</persName>を見せに遣った。非人は<ruby><rb><placeName ref="#iwami">石見</placeName>産</rb><rt>いわみうまれ</rt></ruby>だと云っていた。人に怪まれるのは脇差を持っていたからであった。しかし敵ではなかった。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>の足はまだなかなか直らぬので、<persName ref="#uhei">宇平</persName>は<date when="1835-02-02">二月二日</date>に<persName ref="#bunkichi">文吉</persName>を連れて<placeName ref="#himeji">姫路</placeName>を立って、<date when="1835-02-05">五日</date>に<placeName ref="#osaka">大阪</placeName>に着いた。宿は<placeName ref="#awaza"><ruby><rb>阿波座</rb><rt>あわざ</rt></ruby>おくひ町</placeName>の<placeName ref="#settsunokuniya"><ruby><rb>摂津国屋</rb><rt>つのくにや</rt></ruby></placeName>である。然るに<persName ref="#kuroemon">九郎右衛門</persName>は二人を立たせてから間もなく、足が好くなって、<date when="1835-02-14">十四日</date>には<placeName ref="#himeji">姫路</placeName>を立って、<placeName ref="#akashi">明石</placeName>から舟に乗って、<placeName ref="#osaka">大阪</placeName>へ追いかけて往った。</p>
+        <p>三人は<placeName ref="#settsunokuniya">摂津国屋</placeName>に泊って、所々を尋ね廻るうちに、路銀が尽きそうになった。そこで宿屋の主人の世話で、<persName ref="#kuroemon">九郎右衛門</persName>は<ruby><rb>按摩</rb><rt>あんま</rt></ruby>になり、<persName ref="#bunkichi">文吉</persName>は<persName ref="#awashima"><ruby><rb>淡島</rb><rt>あわしま</rt></ruby></persName>の神主になった。按摩になったのは、柔術の心得があるから、按摩の出来ぬ筈はないと云うのであった。<persName ref="#awashima">淡島</persName>の神主と云うのは、神社で神に仕えるものではない。胸に小さい宮を懸けて、それに<ruby><rb>紅</rb><rt>もみ</rt></ruby>で縫った<ruby><rb>括猿</rb><rt>くくりざる</rt></ruby>などを<ruby><rb>吊</rb><rt>つ</rt></ruby>り下げ、手に鈴を振って歩く<ruby><rb>乞食</rb><rt>こじき</rt></ruby>である。</p>
+        <p>その時<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#uhei">宇平</persName>の二人は<persName ref="#bunkichi">文吉</persName>に<ruby><rb>暇</rb><rt>いとま</rt></ruby>を遣ろうとして、こう云った。これまでも我々は只お前と寝食を共にすると云うだけで、給料と云うものも遣らず、名のみ家来にしていたのに、お前は好く辛抱して勤めてくれた。しかしもう<placeName ref="#japan">日本</placeName>全国をあらかた遍歴して見たが、敵はなかなか見附からない。この<ruby><rb>按排</rb><rt>あんばい</rt></ruby>では我々が本意を遂げるのは、いつの事か分らない。事によったらこのまま<ruby><rb>恨</rb><rt>うらみ</rt></ruby>を<ruby><rb>呑</rb><rt>の</rt></ruby>んで道路にのたれ死をするかも知れない。お前はこれまで<ruby><rb>詞</rb><rt>ことば</rt></ruby>で述べられぬ程の親切を尽してくれたのだから、どうもこの上一しょにいてくれとは云い兼ねる。<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>敵の<ruby><rb>面体</rb><rt>めんてい</rt></ruby>を見識らぬ我々は、お前に別れては困るに違ないが、もはや是非に及ばない。只運を天に任せて、<ruby><rb>名告</rb><rt>なの</rt></ruby>り合う日を待つより外はない。お前は忠実この上もない人であるから、これから<ruby><rb>主取</rb><rt>しゅうどり</rt></ruby>をしたら、どんな立身も出来よう。どうぞここで別れてくれと云うのであった。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は兼て<persName ref="#uhei">宇平</persName>に相談して置いて、<persName ref="#bunkichi">文吉</persName>を呼んでこの<ruby><rb>申渡</rb><rt>もうしわたし</rt></ruby>をした。<persName ref="#uhei">宇平</persName>は<ruby><rb>側</rb><rt>そば</rt></ruby>で腕組をして聞いていたが、涙は頬を伝って流れていた。</p>
+        <p>黙って<ruby><rb>衝</rb><rt>つ</rt></ruby>っ<ruby><rb>伏</rb><rt>ぷ</rt></ruby>して聞いていた<persName ref="#bunkichi">文吉</persName>は、詞の切れるのを待って、頭を<ruby><rb>擡</rb><rt>もた</rt></ruby>げた。<ruby><rb>睜</rb><rt>みは</rt></ruby>った目は異様に<ruby><rb>赫</rb><rt>かがや</rt></ruby>いている。そして一声「<ruby><rb>檀那</rb><rt>だんな</rt></ruby>、それは違います」と叫んだ。心は激して詞はしどろであったが、<persName ref="#bunkichi">文吉</persName>は<ruby><rb>大凡</rb><rt>おおよそ</rt></ruby>こんなことを言った。この<ruby><rb>度</rb><rt>たび</rt></ruby>の奉公は<ruby><rb>当前</rb><rt>あたりまえ</rt></ruby>の奉公ではない。敵討の供に立つからは、命はないものである。お二人が首尾好く本意を遂げられれば好し、万一敵に多勢の悪者でも荷担して、<ruby><rb>返討</rb><rt>かえりうち</rt></ruby>にでも逢われれば、一しょに討たれるか、その場を逃れて、二重の<ruby><rb>仇</rb><rt>あだ</rt></ruby>を討つかの二つより外ない。足腰の立つ間は、よしやお暇が出ても、影の形に添うように離れぬと云うのであった。</p>
+        <p>さすがの<persName ref="#kuroemon">九郎右衛門</persName>も詞の返しようがなかった。<persName ref="#uhei">宇平</persName>は<ruby><rb>蘇</rb><rt>よみがえ</rt></ruby>った<ruby><rb>思</rb><rt>おもい</rt></ruby>をした。</p>
+        <p>それからは三人が<placeName ref="#settsunokuniya">摂津国屋</placeName>を出て、<ruby><rb>木賃宿</rb><rt>きちんやど</rt></ruby>に<ruby><rb>起臥</rb><rt>おきふし</rt></ruby>することになった。もうどこをさして往って見ようと云う所もないので、只<ruby><rb>已</rb><rt>や</rt></ruby>むに<ruby><rb>勝</rb><rt>まさ</rt></ruby>る位の考で、神仏の加護を念じながら、日ごとに市中を<ruby><rb>徘徊</rb><rt>はいかい</rt></ruby>していた。</p>
+        <p>そのうち<placeName ref="#osaka">大阪</placeName>に<ruby><rb>咳逆</rb><rt>がいぎゃく</rt></ruby>が流行して、木賃宿も<ruby><rb>咳</rb><rt>せき</rt></ruby>をする人だらけになった。<date when="1835-03">三月</date>の初に<persName ref="#uhei">宇平</persName>と<persName ref="#bunkichi">文吉</persName>とが感染して、熱を出して寝た。<persName ref="#kuroemon">九郎右衛門</persName>は自分の貰った銭で、三人が一口ずつでも<ruby><rb>粥</rb><rt>かゆ</rt></ruby>を<ruby><rb>啜</rb><rt>すす</rt></ruby>るようにしていた。<date when="1835-04">四月</date>の初に二人が本復すると、こん度は<persName ref="#kuroemon">九郎右衛門</persName>が寝た。体は<ruby><rb>巌畳</rb><rt>がんじょう</rt></ruby>でも、年を取っているので、<ruby><rb>容体</rb><rt>ようだい</rt></ruby>が二人より悪い。人の好い医者を頼んで見て貰うと、<ruby><rb>傷寒</rb><rt>しょうかん</rt></ruby>だと云った。それは熱が高いので、<ruby><rb>譫語</rb><rt>うわこと</rt></ruby>に「こら待て」だの「逃がすものか」だのと叫んだからである。</p>
+        <p>木賃宿の主人が迷惑がるのを、<persName ref="#bunkichi">文吉</persName>が<ruby><rb>宥</rb><rt>なだ</rt></ruby>め<ruby><rb>賺</rb><rt>すか</rt></ruby>して、病人を介抱しているうちに、<ruby><rb>病附</rb><rt>やみつき</rt></ruby>の急劇であったわりに、<persName ref="#kuroemon">九郎右衛門</persName>の強い体は少い<ruby><rb>日数</rb><rt>ひかず</rt></ruby>で病気に打ち勝った。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>の<ruby><rb>恢復</rb><rt>かいふく</rt></ruby>したのを、<persName ref="#bunkichi">文吉</persName>は喜んだが、ここに今一つの心配が出来た。それは不断から機嫌の変わり<ruby><rb>易</rb><rt>やす</rt></ruby>い<persName ref="#uhei">宇平</persName>が、病後に<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って精神の変調を呈して来たことである。</p>
+        <p><persName ref="#uhei">宇平</persName>は常はおとなしい<ruby><rb>性</rb><rt>たち</rt></ruby>である。それにどこか世馴れぬぼんやりした所があるので、<persName ref="#kuroemon">九郎右衛門</persName>は若殿と<ruby><rb>綽号</rb><rt>あだな</rt></ruby>を附けていた。しかしこの若者は柔い草葉の風に<ruby><rb>靡</rb><rt>なび</rt></ruby>くように、何事にも強く感動する。そんな時には<ruby><rb>常蒼</rb><rt>つねあお</rt></ruby>い顔に<ruby><rb>紅</rb><rt>くれない</rt></ruby>が<ruby><rb>潮</rb><rt>ちょう</rt></ruby>して来て、別人のように能弁になる。それが過ぎると反動が来て、<ruby><rb>沈鬱</rb><rt>ちんうつ</rt></ruby>になって頭を<ruby><rb>低</rb><rt>た</rt></ruby>れ手を<ruby><rb>拱</rb><rt>こまね</rt></ruby>いて黙っている。</p>
+        <p><persName ref="#uhei">宇平</persName>がこの性質には、叔父も<persName ref="#bunkichi">文吉</persName>も慣れていたが、今の様子はそれとも変って来ているのである。<ruby><rb>朝夕</rb><rt>ちょうせき</rt></ruby>平穏な時がなくなって、始終興奮している。<ruby><rb>苛々</rb><rt>いらいら</rt></ruby>したような<ruby><rb>起居振舞</rb><rt>たちいふるまい</rt></ruby>をする。それにいつものような発揚の状態になって、<ruby><rb>饒舌</rb><rt>おしゃべり</rt></ruby>をすることは絶えて無い。<ruby><rb>寧</rb><rt>むしろ</rt></ruby>沈黙勝だと云っても好い。只興奮しているために、<ruby><rb>瑣細</rb><rt>ささい</rt></ruby>な事にも腹を立てる。又何事もないと、わざわざ人を<ruby><rb>挑</rb><rt>いど</rt></ruby>んで<ruby><rb>詞尻</rb><rt>ことばじり</rt></ruby>を取って、<ruby><rb>怒</rb><rt>いかり</rt></ruby>の動機を作る。さて怒が生じたところで、それをあらわに発動させずに、口小言を言って<ruby><rb>拗</rb><rt>す</rt></ruby>ねている。</p>
+        <p>こう云う状態が二三日続いた時、<persName ref="#bunkichi">文吉</persName>は<persName ref="#kuroemon">九郎右衛門</persName>に言った。「<ruby><rb>若檀那</rb><rt>わかだんな</rt></ruby>の御様子はどうも変じゃございませんか」<persName ref="#bunkichi">文吉</persName>は<persName ref="#uhei">宇平</persName>の事を、いつか若檀那と云うことになっていた。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は気にも掛けぬらしく笑って云った。「若殿か。あの御機嫌の悪いのは、<ruby><rb>旨</rb><rt>うま</rt></ruby>い物でも食わせると直るのだ」</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>のこう云ったのも無理はない。三人は日ごとに顔を見合っていて気が附かぬが、困窮と<ruby><rb>病痾</rb><rt>びょうあ</rt></ruby>と<ruby><rb>羇旅</rb><rt>きりょ</rt></ruby>との三つの<ruby><rb>苦艱</rb><rt>くげん</rt></ruby>を<ruby><rb>嘗</rb><rt>な</rt></ruby>め尽して、どれもどれも<placeName ref="#edo">江戸</placeName>を立った日の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>はなくなっているのである。</p>
+        <p><persName ref="#bunkichi">文吉</persName>がこの話をした翌日の朝であった。<ruby><rb>相宿</rb><rt>あいやど</rt></ruby>のものがそれぞれ<ruby><rb>稼</rb><rt>かせぎ</rt></ruby>に出た跡で、<persName ref="#uhei">宇平</persName>は<persName ref="#kuroemon">九郎右衛門</persName>の前に<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を進めて、何か言い出しそうにして又黙ってしまった。</p>
+        <p>「どうしたのだい」と叔父が云った。</p>
+        <p>「実は少し考えた事があるのです」</p>
+        <p>「なんでも好いから、そう云え」</p>
+        <p>「おじさん。あなたはいつ敵に逢えると思っていますか」</p>
+        <p>「それはお前にも分かるまいが、<ruby><rb>己</rb><rt>おれ</rt></ruby>にも分からんのう」</p>
+        <p>「そうでしょう。<ruby><rb>蜘蛛</rb><rt>くも</rt></ruby>は<ruby><rb>網</rb><rt>い</rt></ruby>を張って虫の掛かるのを待っています。あれはどの虫でも好いのだから、平気で待っているのです。若し一匹の<ruby><rb>極</rb><rt>き</rt></ruby>まった虫を取ろうとするのだと、蜘蛛の網は役に立ちますまい。わたしはこうして<ruby><rb>僥倖</rb><rt>ぎょうこう</rt></ruby>を当にしていつまでも待つのが<ruby><rb>厭</rb><rt>いや</rt></ruby>になりました」</p>
+        <p>「随分己もお前も方々歩いて見たじゃないか」</p>
+        <p>「ええ。それは歩くには歩きましたが」と云い掛けて、<persName ref="#uhei">宇平</persName>は黙った。</p>
+        <p>「はてな。歩くには歩いたが、何が悪かったと云うのか。構わんから言え」</p>
+        <p><persName ref="#uhei">宇平</persName>はやはり黙って、叔父の顔をじっと見ていたが、暫くして云った。「おじさん。わたし共は随分歩くには歩きました。しかし歩いたってこれは見附からないのが<ruby><rb>当前</rb><rt>あたりまえ</rt></ruby>かも知れません。じっとして網を張っていたって、来て掛かりっこはありませんが、歩いていたって、<ruby><rb>打</rb><rt>ぶ</rt></ruby>っ<ruby><rb>附</rb><rt>つ</rt></ruby>からないかも知れません。それを先へ先へと考えてみますと、どうも妙です。わたしは変な心持がしてなりません」<persName ref="#uhei">宇平</persName>は又膝を進めた。「おじさん。あなたはどうしてそんな平気な様子をしていられるのです」</p>
+        <p><persName ref="#uhei">宇平</persName>のこの詞を、叔父は非常な注意の集中を<ruby><rb>以</rb><rt>もっ</rt></ruby>て聞いていた。「そうか。そう思うのか。よく<ruby><rb>聴</rb><rt>き</rt></ruby>けよ。それは武運が<ruby><rb>拙</rb><rt>つたな</rt></ruby>くて、神にも仏にも見放されたら、お前の云う通だろう。人間はそうしたものではない。腰が<ruby><rb>起</rb><rt>た</rt></ruby>てば歩いて捜す。病気になれば寝ていて待つ。<ruby><rb>神仏</rb><rt>しんぶつ</rt></ruby>の加護があれば敵にはいつか逢われる。歩いて行き合うかも知れぬが、寝ている所へ来るかも知れぬ」</p>
+        <p><persName ref="#uhei">宇平</persName>の口角には<ruby><rb>微</rb><rt>かす</rt></ruby>かな、<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>るような微笑が<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>いた。「おじさん。あなたは神や仏が本当に助けてくれるものだと思っていますか」</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は物に動ぜぬ男なのに、これを聞いた時には一種の気味悪さを感じた。「うん。それは分からん。分からんのが<ruby><rb>神仏</rb><rt>かみほとけ</rt></ruby>だ」</p>
+        <p><persName ref="#uhei">宇平</persName>の態度は不思議に<ruby><rb>恬然</rb><rt>てんぜん</rt></ruby>としていて、いつもの興奮の状態とは違っている。「そうでしょう。<ruby><rb>神仏</rb><rt>かみほとけ</rt></ruby>は分からぬものです。実はわたしはもう今までしたような事を<ruby><rb>罷</rb><rt>や</rt></ruby>めて、わたしの勝手にしようかと思っています」</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>の目は大きく開いて、眉が高く挙がったが、見る見る蒼ざめた顔に血が<ruby><rb>升</rb><rt>のぼ</rt></ruby>って、<ruby><rb>拳</rb><rt>こぶし</rt></ruby>が固く握られた。</p>
+        <p>「ふん。そんなら敵討は<ruby><rb>罷</rb><rt>やめ</rt></ruby>にするのか」</p>
+        <p><persName ref="#uhei">宇平</persName>は軽く<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>んだ。おこったことのない叔父をおこらせたのに満足したらしい。「そうじゃありません。<persName ref="#torazo">亀蔵</persName>は憎い奴ですから、若し出合ったら、ひどい目に逢わせて遣ります。だが捜すのも待つのも駄目ですから、出合うまではあいつの事なんか考えずにいます。わたしは晴がましい敵討をしようとは思いませんから、助太刀もいりません。敵が知れれば知れる時知れるのですから、<ruby><rb>見識人</rb><rt>みしりにん</rt></ruby>もいりません。<persName ref="#bunkichi">文吉</persName>はこれからあなたの家来にしてお使下さいまし。わたしは近い内にお暇をいたす積です」</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>が怒は発するや否や<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち解けて、<persName ref="#uhei">宇平</persName>のこの<ruby><rb>詞</rb><rt>ことば</rt></ruby>を聞いている間に、いつもの<ruby><rb>優</rb><rt>やさ</rt></ruby>しいおじさんになっていた。只何事をも<ruby><rb>強</rb><rt>し</rt></ruby>いて<ruby><rb>笑談</rb><rt>じょうだん</rt></ruby>に取りなす癖のおじが、珍らしく<ruby><rb>生真面目</rb><rt>きまじめ</rt></ruby>になっていただけである。</p>
+        <p><persName ref="#uhei">宇平</persName>が席を起って、木賃宿の縁側を降りる時、叔父は「おい、待て」と声を掛けたが、<persName ref="#uhei">宇平</persName>の姿はもう見えなかった。しかし<persName ref="#uhei">宇平</persName>がこれきりいなくなろうとは、叔父は思わなかった。</p>
+        <p>夕方に<persName ref="#bunkichi">文吉</persName>が帰ったので、<persName ref="#kuroemon">九郎右衛門</persName>は近所へ往って<persName ref="#uhei">宇平</persName>を尋ねて来いと云った。<persName ref="#uhei">宇平</persName>は折々町の若い者の<ruby><rb>象棋</rb><rt>しょうぎ</rt></ruby>をさしている所などへ往った。最初は敵の手掛りを聞き出そうとして、雑談に耳を傾けていたのだが、後には只何となしにそこで話していたのである。<persName ref="#bunkichi">文吉</persName>はそう云う家を尋ねた。しかしどこにもいなかった。その晩には遅くなるまで<persName ref="#kuroemon">九郎右衛門</persName>が起きていて、<persName ref="#uhei">宇平</persName>の帰るのを待ったが、とうとう帰らなかった。</p>
+        <p><persName ref="#bunkichi">文吉</persName>は<persName ref="#uhei">宇平</persName>を尋ねて歩いた<ruby><rb>序</rb><rt>ついで</rt></ruby>に、ふと<placeName ref="#hokuinari"><ruby><rb>玉造豊空稲荷</rb><rt>たまつくりほうくういなり</rt></ruby></placeName>の<ruby><rb>霊験</rb><rt>れいげん</rt></ruby>の話を聞いた。どこの<ruby><rb>誰</rb><rt>たれ</rt></ruby>の親の病気が直ったとか、どこの誰は迷子の居所を知らせて貰ったとか、若い者共が評判し合っていたのである。<persName ref="#bunkichi">文吉</persName>は<persName ref="#kuroemon">九郎右衛門</persName>にことわって、翌日行水して身を<ruby><rb>潔</rb><rt>きよ</rt></ruby>めて、<placeName ref="#tamatsukuri">玉造</placeName>をさして出て行った。敵のありかと<persName ref="#uhei">宇平</persName>の行方とを伺って見ようと思ったのである。</p>
+        <p><ruby><rb>稲荷</rb><rt>いなり</rt></ruby>の<ruby><rb>社</rb><rt>やしろ</rt></ruby>の前に来て見れば、大勢の人が<ruby><rb>出入</rb><rt>でいり</rt></ruby>している。数えられぬ程多く立ててある、赤い鳥居が重なり合っていて、群集はその赤い<ruby><rb>洞</rb><rt>ほら</rt></ruby>の中で<ruby><rb>蠢</rb><rt>うごめ</rt></ruby>いているのである。外廻りには茶店が出来ている。汁粉屋がある。甘酒屋がある。赤い洞の両側には見せ物小屋やらおもちゃ<ruby><rb>店</rb><rt>みせ</rt></ruby>やらが出来ている。洞を<ruby><rb>潜</rb><rt>くぐ</rt></ruby>って社に這入ると、神主がお初穂と云って金を受け取って、番号札をわたす。伺を立てる人をその番号順に呼び入れるのである。</p>
+        <p><persName ref="#bunkichi">文吉</persName>は持っていただけの銭を皆お初穂に上げた。しかし順番がなかなか来ぬので、とうとう日の暮れるまで待った。何も食わずに、腹が<ruby><rb>耗</rb><rt>へ</rt></ruby>ったとも思わずにいたのである。<ruby><rb>暮六</rb><rt>くれむ</rt></ruby>つが鳴ると、神主が出て「残りの番号の方は明朝お<ruby><rb>出</rb><rt>いで</rt></ruby>なさい」と云った。</p>
+        <p>次の日には未明に<persName ref="#bunkichi">文吉</persName>が社へ往った。番号順は<persName ref="#bunkichi">文吉</persName>より前なのに、まだ来ておらぬ人があったので、<persName ref="#bunkichi">文吉</persName>は思ったより早く呼び出された。<persName ref="#bunkichi">文吉</persName>が<ruby><rb>沙</rb><rt>すな</rt></ruby>に額を<ruby><rb>埋</rb><rt>うず</rt></ruby>めて拝みながら待っていると、これも思ったより早く、神主が出て御託宣を取り次いだ。「初の<ruby><rb>尋人</rb><rt>たずねにん</rt></ruby>は春頃から東国の繁華な土地にいる。後の尋人の事は御託宣が無い」と云った。</p>
+        <p><persName ref="#bunkichi">文吉</persName>は<placeName ref="#tamatsukuri">玉造</placeName>から急いで帰って、御託宣を<persName ref="#kuroemon">九郎右衛門</persName>に話した。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>はそれを聞いて云った。「そうか。東国の繁華な土地と云えば<placeName ref="#edo">江戸</placeName>だが、いかに<persName ref="#torazo">亀蔵</persName>が横着でも、うかと<placeName ref="#edo">江戸</placeName>には戻っていまい。成程我々が敵討に<ruby><rb>余所</rb><rt>よそ</rt></ruby>へ出たと云うことは、噂に聞いたかも知れぬが、それにしても外の親戚も気を附けているのだから、どうも<placeName ref="#edo">江戸</placeName>に戻っていそうにない。お前は神主に一杯食わされたのじゃないか。後の尋人が知れぬと云うのも、お初穂がもう一度貰いたいのかも知れん」</p>
+        <p><persName ref="#bunkichi">文吉</persName>はひどく<ruby><rb>勿体</rb><rt>もったい</rt></ruby>ながって、<persName ref="#kuroemon">九郎右衛門</persName>の詞を<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>るようにして、どうぞそう云わずに御託宣を信ずる気になって貰いたいと頼んだ。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は云った。「いや。己は稲荷様を疑いはせぬ。只どうも<placeName ref="#edo">江戸</placeName>ではなさそうに思うのだ」</p>
+        <p>こう云っている所へ、木賃宿の亭主が来た。今<ruby><rb>家主</rb><rt>いえぬし</rt></ruby>の所へ呼ばれて<placeName ref="#edo">江戸</placeName>から来た手紙を貰ったら、山本様へのお手紙であったと云って、一封の書状を出した。<persName ref="#kuroemon">九郎右衛門</persName>が手に受け取って、「<persName ref="#uhei">山本宇平</persName>殿、<ruby><rb>同</rb><rt>おなじく</rt></ruby><persName ref="#kuroemon">九郎右衛門</persName>殿、<persName ref="#sumaemon">桜井須磨右衛門</persName>、平安」と読んだ時、木賃宿でも主従の礼儀を守る<persName ref="#bunkichi">文吉</persName>ではあるが、兼て聞き知っていた<ruby><rb>後室</rb><rt>こうしつ</rt></ruby>の里からの手紙は、なんの用事かと気が<ruby><rb>急</rb><rt>せ</rt></ruby>いて、<persName ref="#kuroemon">九郎右衛門</persName>が<ruby><rb>披</rb><rt>ひら</rt></ruby>く手紙の上に、乗り出すようにせずにはいられなかった。</p>
+        <p>敵討の一行が立った跡で、故人<persName ref="#sanemon">三右衛門</persName>の未亡人は、里方<persName ref="#sumaemon">桜井須磨右衛門</persName>の家で持病の直るのを待った。暫くすると難儀に<ruby><rb>遭</rb><rt>あ</rt></ruby>ってから時が立ったのと、<ruby><rb>四方</rb><rt>あたり</rt></ruby>が静になったのとのために、頭痛が余程軽くなった。実弟<persName ref="#sumaemon">須磨右衛門</persName>は親切にはしてくれるが、世話にばかりなってもいにくいので、未亡人は余り<ruby><rb>忙</rb><rt>せわ</rt></ruby>しくない奉公口をと云って捜して、とうとう<placeName ref="#ogawamachi">小川町</placeName><ruby><rb><placeName ref="#manaitabashi">俎橋</placeName>際</rb><rt>まないたばしぎわ</rt></ruby>の<ruby><rb>高家衆</rb><rt>こうけしゅう</rt></ruby><persName ref="#osawa">大沢<ruby><rb>右京大夫基昭</rb><rt>うきょうたいふもとあき</rt></ruby></persName>が奥に使われることになった。</p>
+        <p><persName ref="#uhei">宇平</persName>の姉<persName ref="#riyo">りよ</persName>は叔母婿<persName ref="#harada">原田</persName>方に引き取られてから、墓参の時などには、<ruby><rb>樒</rb><rt>しきみ</rt></ruby>を売る<ruby><rb>媼</rb><rt>うば</rt></ruby>の世間話にも耳を傾けて、敵のありかを聞き出そうとしていたが、いつか<ruby><rb>忌</rb><rt>いみ</rt></ruby>も明けた。そこで<ruby><rb>所々</rb><rt>しょしょ</rt></ruby>に一二箇月ずつ奉公していたら、自然手掛りを得るたつきにもなろうと思い立って、最初は<placeName ref="#honjo">本所</placeName>の或る家に住み込んだ。これは遠い親戚に当るので、奉公人やら客分やら分からぬ待遇を受けて、万事の手伝をしたのである。次に<placeName ref="#akasaka">赤坂</placeName>の堀と云う家の奥に、<ruby><rb>大小母</rb><rt>おおおば</rt></ruby>が勤めていたので、そこへ手伝に往った。次に<placeName ref="#azabu"><ruby><rb>麻布</rb><rt>あざぶ</rt></ruby></placeName>の或る家に奉公した。次に<placeName ref="#hongoyumicho">本郷弓町</placeName>の<ruby><rb>寄合衆</rb><rt>よりあいしゅう</rt></ruby><persName ref="#honda-tatewaki">本多<ruby><rb>帯刀</rb><rt>たてわき</rt></ruby></persName>の家来に、遠い親戚があるので、そこへ手伝に往った。こんな風に奉公先を取り替えて、<date when="1835">天保六年</date>の春からは<placeName ref="#ochanomizu">御茶の水</placeName>の寄合衆<persName ref="#sakai-kamenoshin">酒井<ruby><rb>亀之進</rb><rt>かめのしん</rt></ruby></persName>の奥に勤めていた。この酒井の妻は<placeName ref="#asakusa">浅草</placeName>の<persName ref="#sakai-tadakata">酒井石見守<ruby><rb>忠方</rb><rt>ただみち</rt></ruby></persName>の娘である。</p>
+        <p>未亡人も<persName ref="#riyo">りよ</persName>も敵のありかを聞き出そうと思っていて、中にも<persName ref="#riyo">りよ</persName>は昼夜それに心を砕いていたが、どうしても手掛りがない。<persName ref="#kuroemon">九郎右衛門</persName>や<persName ref="#uhei">宇平</persName>からは<ruby><rb>便</rb><rt>たより</rt></ruby>が<ruby><rb>絶々</rb><rt>たえだえ</rt></ruby>になるのに、<placeName ref="#edo">江戸</placeName>でも何一つしでかした事がない。<ruby><rb>女子</rb><rt>おなご</rt></ruby>達の心細さは言おう様がなかった。</p>
+        <p>月日が立って、<date when="1835">天保六年</date>の<date when="1835-05">五月</date>の初になった。或る日未亡人の里方の<persName ref="#sumaemon">桜井須磨右衛門</persName>が<placeName ref="#asakusa">浅草</placeName>の<placeName ref="#kannon">観音</placeName>に参詣して、茶店に腰を掛けていると、今まで<ruby><rb>歇</rb><rt>や</rt></ruby>んでいた雨が又一しきり降って来た。その時茶店の軒へ駆け込んで雨を避ける二人<ruby><rb>連</rb><rt>づれ</rt></ruby>の<ruby><rb>遊人体</rb><rt>あそびにんてい</rt></ruby>の男がある。それが小降になるのを待ちながら、軒に立ってこんな話をした。</p>
+        <p>一人が云った。「お前に話そうと思って忘れていたが、ゆうべの事だった。丁度今のように<placeName ref="#kanda">神田</placeName>で雨に降り出されて、<ruby><rb>酒問屋</rb><rt>さかどいや</rt></ruby>の戸の締っている外でしゃがんでいると、そこへ駆け込んだ<ruby><rb>奴</rb><rt>やつ</rt></ruby>がある。見れば、あの酒井様にいた<persName ref="#torazo">亀</persName>じゃあねえか。己はびっくりしたよ。好くずうずうしく帰って来やがったと思いながら、おい、<persName ref="#torazo">亀</persName>と声を掛けたのだ。すると、えと云って振り向いたが、<ruby><rb>人違</rb><rt>ひとちがえ</rt></ruby>をしなさんな、おいらあ<persName ref="#torazo"><ruby><rb>虎</rb><rt>とら</rt></ruby></persName>と云うもんだと云っといて、まだ雨がどしどし降っているのに、駆け出して行ってしまやがった」</p>
+        <p>今一人が云った。「じゃあ又帰っていやがるのだ。<ruby><rb>太</rb><rt>ふて</rt></ruby>え奴だなあ」</p>
+        <p><persName ref="#sumaemon">須磨右衛門</persName>は二人に声を掛けて、その<persName ref="#torazo">亀</persName>と云う男は何者だと問うた。二人は侍に<ruby><rb>糺</rb><rt>ただ</rt></ruby>されるのをひどく当惑がる様子であったが、おとどしの暮に<placeName ref="#ote">大手</placeName>の酒井様のお邸で悪い事をして逃げた<ruby><rb>仲間</rb><rt>ちゅうげん</rt></ruby>の<persName ref="#torazo">亀蔵</persName>の事だと云った。そして最後に「なに、ちょいと見たのですから、全く人違で、本当に<persName ref="#torazo">虎</persName>と云うものだったかも知れません」と詞を濁した。只見掛けたと云うだけのこの二人を取り押さえても、別に役に立ちそうではなく、又荒立てて<persName ref="#torazo">亀蔵</persName>に<placeName ref="#edo">江戸</placeName>を逃げられてはならぬと思って、<persName ref="#sumaemon">須磨右衛門</persName>は穏便に二人を立ち去らせた。</p>
+        <p><placeName ref="#osaka">大阪</placeName>で<persName ref="#kuroemon">九郎右衛門</persName>が受け取ったのは、<persName ref="#sumaemon">桜井</persName>から<persName ref="#torazo">亀蔵</persName>の<placeName ref="#edo">江戸</placeName>にいることを知らせて<ruby><rb>遣</rb><rt>や</rt></ruby>った手紙である。</p>
+        <p><persName ref="#bunkichi">文吉</persName>はすぐに<placeName ref="#tamatsukuri">玉造</placeName>へお礼<ruby><rb>参</rb><rt>まいり</rt></ruby>に往った。<persName ref="#kuroemon">九郎右衛門</persName>は<persName ref="#bunkichi">文吉</persName>の帰るのを待って、手分をして<placeName ref="#osaka">大阪</placeName>の出口々々を廻って見た。<persName ref="#uhei">宇平</persName>の行方を街道の<ruby><rb>駕籠</rb><rt>かご</rt></ruby>の<ruby><rb>立場</rb><rt>たてば</rt></ruby>、港の<ruby><rb>船問屋</rb><rt>ふなどいや</rt></ruby>に<ruby><rb>就</rb><rt>つ</rt></ruby>いて尋ねたのである。しかしそれは皆徒労であった。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は是非なく<ruby><rb>甥</rb><rt>おい</rt></ruby>の事を思い棄てて、<placeName ref="#edo">江戸</placeName>へ立つ支度をした。路銀は使い果しても、<ruby><rb>用心金</rb><rt>ようじんきん</rt></ruby>と衣類腰の物とには手は着けない。<persName ref="#kuroemon">九郎右衛門</persName>は花色木綿の<ruby><rb>単物</rb><rt>ひとえもの</rt></ruby>に茶小倉の帯を締め、<ruby><rb>紺麻絣</rb><rt>こんあさがすり</rt></ruby>の野羽織を着て、両刀を<ruby><rb>手挟</rb><rt>たばさ</rt></ruby>んだ。持物は<ruby><rb>鳶色</rb><rt>とびいろ</rt></ruby>ごろふくの懐中物、<ruby><rb>鼠木綿</rb><rt>ねずみもめん</rt></ruby>の鼻紙袋、十手<ruby><rb>早縄</rb><rt>はやなわ</rt></ruby>である。<persName ref="#bunkichi">文吉</persName>も取って置いた花色の単物に<ruby><rb>御納戸</rb><rt>おなんど</rt></ruby>小倉の帯を締めて、十手早縄を懐中した。</p>
+        <p>木賃宿の主人には礼金を遣り、<placeName ref="#settsunokuniya">摂津国屋</placeName>へは<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>に立ち寄って、<persName ref="#kuroemon">九郎右衛門</persName>主従は<date when="1835-06-28">六月二十八日</date>の夜船で、<placeName ref="#fushimi">伏見</placeName>から<placeName ref="#tsu">津</placeName>へ渡った。<date when="1835-06-30">三十日</date>に<ruby><rb>大暴風</rb><rt>おおあらし</rt></ruby>で<placeName ref="#sakanoshita">阪の下</placeName>に半日留められた外は、道中なんの<ruby><rb>障</rb><rt>さわり</rt></ruby>もなく、二人は<date when="1835-07-11">七月十一日</date>の夜<placeName ref="#shinagawa">品川</placeName>に着いた。</p>
+        <p><date when="1835-07-12">十二日</date><ruby><rb>寅</rb><rt>とら</rt></ruby>の刻に、二人は<placeName ref="#shinagawa">品川</placeName>の宿を出て、<placeName ref="#asakusa">浅草</placeName>の<placeName ref="#henryuji"><ruby><rb>遍立寺</rb><rt>へんりゅうじ</rt></ruby></placeName>に往って、<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>のままで<persName ref="#sanemon">三右衛門</persName>の墓に参った。それから住持に面会して、<ruby><rb>一夜</rb><rt>ひとよ</rt></ruby>旅の疲を休めた。</p>
+        <p><date when="1835-07-13">翌十三日</date>は<ruby><rb>盂蘭盆会</rb><rt>うらぼんえ</rt></ruby>で、親戚のものが墓参に来る日である。<persName ref="#kuroemon">九郎右衛門</persName>は住持に、自分達の来たのを知らせてくれるなと口止をして、自分と<persName ref="#bunkichi">文吉</persName>とは<ruby><rb>庫裡</rb><rt>くり</rt></ruby>に隠れていた。住持はなぜかと問うたが、<persName ref="#kuroemon">九郎右衛門</persName>は只「<ruby><rb>謀</rb><rt>はかりごと</rt></ruby>は密なるをとうとぶと申しますからな」と云ったきり、外の話にまぎらした。墓参に来たのは<persName ref="#harada">原田</persName>、<persName ref="#sumaemon">桜井</persName>の女房達で、<ruby><rb>厳</rb><rt>きび</rt></ruby>しい武家奉公をしている未亡人や<persName ref="#riyo">りよ</persName>は来なかった。</p>
+        <p><ruby><rb>戌</rb><rt>いぬ</rt></ruby>の下刻になった時、<persName ref="#kuroemon">九郎右衛門</persName>は<persName ref="#bunkichi">文吉</persName>に言った。「さあ、これから捜しに出るのだ。見附けるまでは足を<ruby><rb>摺粉木</rb><rt>すりこぎ</rt></ruby>にして歩くぞ」</p>
+        <p><placeName ref="#henryuji">遍立寺</placeName>を旅支度のままで出た二人は、先ず<placeName ref="#asakusa">浅草</placeName>の<placeName ref="#kannon">観音</placeName>をさして往った。<placeName ref="#kaminarimon">雷門</placeName>近くなった時、<persName ref="#kuroemon">九郎右衛門</persName>が<persName ref="#bunkichi">文吉</persName>に言った。「どうも坊主にはなっておらぬらしいが、どんな<ruby><rb>風体</rb><rt>ふうてい</rt></ruby>でいても見逃がすなよ。だがどうせ立派な<ruby><rb>形</rb><rt>なり</rt></ruby>はしていないのだ」</p>
+        <p><ruby><rb>境内</rb><rt>けいだい</rt></ruby>を廻って、<placeName ref="#kannon">観音</placeName>を拝んで、<ruby><rb>見識人</rb><rt>みしりにん</rt></ruby>を<persName ref="#sumaemon">桜井</persName>に逢わせて貰った礼を言った。それから<placeName ref="#kuramae"><ruby><rb>蔵前</rb><rt>くらまえ</rt></ruby></placeName>を<placeName ref="#ryogoku">両国</placeName>へ出た。きょうは蒸暑いのに、花火があるので、<ruby><rb>涼旁</rb><rt>すずみかたがた</rt></ruby>見物に出た人が押し合っている。<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>に火を附ける頃、二人は茶店で暫く休んで、汗が少し乾くと、又歩き出した。</p>
+        <p>川も見えず、船も見えない。玉や<ruby><rb>鍵</rb><rt>かぎ</rt></ruby>やと叫ぶ時、群集が<ruby><rb>項</rb><rt>うなじ</rt></ruby>を<ruby><rb>反</rb><rt>そ</rt></ruby>らして、群集の上の花火を見る。</p>
+        <p><ruby><rb>酉</rb><rt>とり</rt></ruby>の下刻と思われる頃であった。<persName ref="#bunkichi">文吉</persName>が<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から<persName ref="#kuroemon">九郎右衛門</persName>の袖を引いた。<persName ref="#kuroemon">九郎右衛門</persName>は<persName ref="#bunkichi">文吉</persName>の視線を<ruby><rb>辿</rb><rt>たど</rt></ruby>って、左手一歩前を行く背の高い男を見附けた。古びた<ruby><rb>中形</rb><rt>ちゅうがた</rt></ruby>木綿の<ruby><rb>単物</rb><rt>ひとえもの</rt></ruby>に、古びた花色<ruby><rb>縞博多</rb><rt>しまはかた</rt></ruby>の帯を締めている。</p>
+        <p>二人は黙って跡を附けた。月の明るい夜である。<placeName ref="#yokoyamacho">横山町</placeName>を曲る。<placeName ref="#shiocho"><ruby><rb>塩町</rb><rt>しおちょう</rt></ruby></placeName>から<placeName ref="#odenmacho"><ruby><rb>大伝馬町</rb><rt>おおでんまちょう</rt></ruby></placeName>に出る。<placeName ref="#honcho">本町</placeName>を横切って、<placeName ref="#kokuchogashi"><ruby><rb>石町河岸</rb><rt>こくちょうがし</rt></ruby></placeName>から<placeName ref="#ryokanbashi"><ruby><rb>龍閑橋</rb><rt>りゅうかんばし</rt></ruby></placeName>、<placeName ref="#kamakuragashi"><ruby><rb>鎌倉河岸</rb><rt>かまくらがし</rt></ruby></placeName>に掛る。次第に人通が薄らぐので、<persName ref="#kuroemon">九郎右衛門</persName>は手拭を出して<ruby><rb>頬被</rb><rt>ほおかぶり</rt></ruby>をして、わざとよろめきながら歩く。<persName ref="#bunkichi">文吉</persName>はそれを<ruby><rb>扶</rb><rt>たす</rt></ruby>ける<ruby><rb>振</rb><rt>ふり</rt></ruby>をして附いて行く。</p>
+        <p><placeName ref="#kandabashi">神田橋</placeName>外<placeName ref="#gojiinhara"><ruby><rb>元護寺院</rb><rt>もとごじいん</rt></ruby>二番原</placeName>に来た時は丁度<ruby><rb>子</rb><rt>ね</rt></ruby>の刻頃であった。往来はもう全く絶えている。<persName ref="#kuroemon">九郎右衛門</persName>が<persName ref="#bunkichi">文吉</persName>に目ぐわせをした。二つの体を一つの意志で働かすように二人は<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から目ざす男に飛び着いて、黙って両腕をしっかり<ruby><rb>攫</rb><rt>つか</rt></ruby>んだ。</p>
+        <p>「何をしやあがる」と叫んだ男は、振り放そうと身をもがいた。</p>
+        <p>無言の二人は<ruby><rb>釘抜</rb><rt>くぎぬき</rt></ruby>で釘を挟んだように腕を攫んだまま、もがく男を<ruby><rb>道傍</rb><rt>みちばた</rt></ruby>の立木の蔭へ、引き<ruby><rb>摩</rb><rt>ず</rt></ruby>って往った。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は強烈な火を節光板で遮ったような声で云った。「己はおとどしの暮お<ruby><rb>主</rb><rt>ぬし</rt></ruby>に討たれた<persName ref="#sanemon">山本三右衛門</persName>の弟<persName ref="#kuroemon">九郎右衛門</persName>だ。<ruby><rb>国所</rb><rt>くにところ</rt></ruby>と名前を言って、覚悟をせい」</p>
+        <p>「そりゃあ人違だ。おいらあ<ruby><rb><placeName ref="#senshu">泉州</placeName>産</rb><rt>せんしゅううまれ</rt></ruby>で、<persName ref="#torazo">虎蔵</persName>と云うものだ。そんな事をした<ruby><rb>覚</rb><rt>おぼえ</rt></ruby>はねえ」</p>
+        <p><persName ref="#bunkichi">文吉</persName>が顔を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>き込んだ。「おい。<persName ref="#torazo">亀</persName>。目の下の<ruby><rb>黒痣</rb><rt>ほくろ</rt></ruby>まで知っている己がいる。そんなしらを切るな」</p>
+        <p>男は<persName ref="#bunkichi">文吉</persName>の顔を見て、草葉が霜に<ruby><rb>萎</rb><rt>しお</rt></ruby>れるように、がくりと首を<ruby><rb>低</rb><rt>た</rt></ruby>れた。「ああ。<persName ref="#bunkichi">文公</persName>か」</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>はこれだけ聞いて、手早く懐中から早縄を出して、男を縛った。そして<persName ref="#bunkichi">文吉</persName>に言った。「もうここは好いから、<placeName ref="#ochanomizu">お茶ノ水</placeName>の<persName ref="#sakai-kamenoshin">酒井亀之進</persName>様のお邸へ往ってくれ。口上はこうだ。手前は御当家のお奥に勤めている<persName ref="#riyo">りよ</persName>の<ruby><rb>宿許</rb><rt>やどもと</rt></ruby>から参りました。母親が<ruby><rb>霍乱</rb><rt>かくらん</rt></ruby>で<ruby><rb>夜明</rb><rt>よあけ</rt></ruby>まで持つまいと申すことでござります。どうぞ格別の<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>でお暇を下さって、一目お逢わせ下さるようにと、そう云うのだ。急げ」</p>
+        <p>「は」と云って、<persName ref="#bunkichi">文吉</persName>は<placeName ref="#nishikicho"><ruby><rb>錦町</rb><rt>にしきちょう</rt></ruby></placeName>の方角へ駆け出した。</p>
+        <p><persName ref="#sakai-kamenoshin">酒井亀之進</persName>の邸では、<ruby><rb>今宵</rb><rt>こよい</rt></ruby>奥のひけが遅くて、<persName ref="#riyo">りよ</persName>はようよう部屋に帰って、寝巻に着換えようとしている所であった。そこへ老女の使が呼びに来た。</p>
+        <p><persName ref="#riyo">りよ</persName>は着換えぬうちで好かったと思いながら、すぐに起って<ruby><rb>上草履</rb><rt>うわぞうり</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>いて、廊下<ruby><rb>伝</rb><rt>づたい</rt></ruby>に老女の部屋へ往った。</p>
+        <p>老女は云った。「お前の宿から使が来ているがね、母親が急病だと云うことだ。盆ではあり、御多用の所だが、親の病気は格別だから、帰ってお<ruby><rb>出</rb><rt>いで</rt></ruby>。親御に逢ったら、夜でもすぐにお邸へ戻るのだよ。あすになってから、又改めてお暇を願って遣るから」</p>
+        <p>「<ruby><rb>難有</rb><rt>ありがと</rt></ruby>うございます」と、<persName ref="#riyo">りよ</persName>はお<ruby><rb>請</rb><rt>うけ</rt></ruby>をして、老女の部屋をすべり出た。</p>
+        <p><persName ref="#riyo">りよ</persName>はこのまま往っても好いと考えながら、使とは誰が来たのかと、奥の口へ覗きに出た。御用を勤める時の支度で、木綿中形の単物に<ruby><rb>黒繻子</rb><rt>くろじゅす</rt></ruby>の帯を締めていたのである。奥の口で<persName ref="#riyo">りよ</persName>は旅支度の<persName ref="#bunkichi">文吉</persName>と顔を見合せた。そして親の病気が口実だと云うことを悟った。</p>
+        <p><persName ref="#riyo">りよ</persName>と一しょに奥を下がった<ruby><rb>傍輩</rb><rt>ほうばい</rt></ruby>が二三人、物珍らしげに廊下に集まって、<persName ref="#riyo">りよ</persName>が宿の使に逢うのを見ようとしている。</p>
+        <p>「ちょいと忘物をいたしましたから」と、<persName ref="#riyo">りよ</persName>は<ruby><rb>独言</rb><rt>ひとりごと</rt></ruby>のように云って、足を早めて部屋へ引き返した。</p>
+        <p>部屋の戸を内から締めた<persName ref="#riyo">りよ</persName>は、<ruby><rb>葛籠</rb><rt>つづら</rt></ruby>の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>を開けた。先ず取り出したのは着換の<ruby><rb>帷子</rb><rt>かたびら</rt></ruby>一枚である。次に<ruby><rb>臂</rb><rt>ひじ</rt></ruby>をずっと底までさし入れて、短刀を一本取り出した。当番の夜父<persName ref="#sanemon">三右衛門</persName>が持っていた脇差である。<persName ref="#riyo">りよ</persName>は二品を手早く<ruby><rb>袱紗</rb><rt>ふくさ</rt></ruby>に包んで持って出た。</p>
+        <p><persName ref="#bunkichi">文吉</persName>は敵を掴まえた<ruby><rb>顛末</rb><rt>てんまつ</rt></ruby>を、途中で<persName ref="#riyo">りよ</persName>に話しながら、<placeName ref="#gojiinhara"><ruby><rb>護持院原</rb><rt>ごじいんがはら</rt></ruby></placeName>へ来た。</p>
+        <p><persName ref="#riyo">りよ</persName>は<persName ref="#kuroemon">九郎右衛門</persName>に挨拶して、着換をする余裕はないので、短刀だけを包の中から出した。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は敵に言った。「そこへ来たのが<persName ref="#sanemon">三右衛門</persName>の娘<persName ref="#riyo">りよ</persName>だ。<persName ref="#sanemon">三右衛門</persName>を殺した事と、自分の国所名前をそこで言え」</p>
+        <p>敵は顔を挙げて<persName ref="#riyo">りよ</persName>を見た。そして云った。「わたしもこれまでだ。本当の事を言います。なる程山本さんに<ruby><rb>創</rb><rt>きず</rt></ruby>を附けたのはわたしだが、殺しはしません。勝負事に負けて金に困ったものですから、どうかして金が取りたいと思って、あんなへまな事をしました。わたしは<placeName ref="#senshu">泉州</placeName><placeName ref="#uenohara"><ruby><rb>生田郡</rb><rt>いくたごおり</rt></ruby>上野原村</placeName>の<persName ref="#kichibei"><ruby><rb>吉兵衛</rb><rt>きちべえ</rt></ruby></persName>と云うものの伜で、名は<persName ref="#torazo">虎蔵</persName>と云います。酒井様へ小使に住み込む時、勝負事で<ruby><rb>識合</rb><rt>しりあい</rt></ruby>になっていた<persName ref="#kamezo">紀州の亀蔵</persName>と云う奴の名を、口から出任せに言ったのです。この外に言うことはありません。どうぞ御存分になすって下さい。」</p>
+        <p>「好く言った」と<persName ref="#kuroemon">九郎右衛門</persName>は答えた。そして<persName ref="#riyo">りよ</persName>と<persName ref="#bunkichi">文吉</persName>とに目ぐわせして<persName ref="#torazo">虎蔵</persName>の縄を解いた。三人が三方からじりじりと詰め寄った。</p>
+        <p>縄をほどかれて、しょんぼり立っていた<persName ref="#torazo">虎蔵</persName>が、ひょいと物をねらう獣のように体を<ruby><rb>前屈</rb><rt>まえかがみ</rt></ruby>にしたかと思うと、突然<persName ref="#riyo">りよ</persName>に飛び掛かって、押し倒して逃げようとした。</p>
+        <p>その時<persName ref="#riyo">りよ</persName>は一歩下がって、<ruby><rb>柄</rb><rt>つか</rt></ruby>を握っていた短刀で、抜打に<persName ref="#torazo">虎蔵</persName>を切った。右の<ruby><rb>肩尖</rb><rt>かたさき</rt></ruby>から乳へ掛けて切り下げたのである。<persName ref="#torazo">虎蔵</persName>はよろけた。<persName ref="#riyo">りよ</persName>は二太刀三太刀切った。<persName ref="#torazo">虎蔵</persName>は倒れた。</p>
+        <p>「見事じゃ。とどめは己が刺す」<persName ref="#kuroemon">九郎右衛門</persName>は乗り掛かって<ruby><rb>吭</rb><rt>のど</rt></ruby>を刺した。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>は刀の血を<persName ref="#torazo">虎蔵</persName>の袖で拭いた。そして<persName ref="#riyo">りよ</persName>にも脇差を拭かせた。二人共目は涙ぐんでいた。</p>
+        <p>「<persName ref="#uhei">宇平</persName>がこの場に居合せませんのが」と、<persName ref="#riyo">りよ</persName>は只一言云った。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>等三人は<ruby><rb>河岸</rb><rt>かし</rt></ruby>にある<persName ref="#honda-iyo">本多伊予守</persName>頭取の<ruby><rb>辻番所</rb><rt>つじばんしょ</rt></ruby>に届け出た。辻番組合月番<ruby><rb>西丸御小納戸<persName ref="#udono">鵜殿吉之丞</persName></rb><rt>にしまるおこなんどうどのきちのじょう</rt></ruby>の家来<persName ref="#tamaki">玉木勝三郎</persName>組合の辻番人が聞き取った。本多から大目附に届けた。辻番所組合<persName ref="#endo">遠藤<ruby><rb>但馬守胤統</rb><rt>たじまのかみたねのり</rt></ruby></persName>から<persName ref="#sakai-tadanori">酒井<ruby><rb>忠学</rb><rt>ただのり</rt></ruby></persName>の留守居へ知らせた。酒井家は今年<date when="1835-04">四月</date>に<ruby><rb>代替</rb><rt>だいがわり</rt></ruby>がしているのである。</p>
+        <p>酒井家から役人が来て、三人の<ruby><rb>口書</rb><rt>くちがき</rt></ruby>を取って<persName ref="#sakai-tadanori">忠学</persName>に復命した。</p>
+        <p><date when="1835-07-14">翌十四日</date>の朝は<placeName ref="#gojiinhara">護持院原</placeName>一ぱいの見物人である。敵を討った三人の周囲へは、山本家の親戚が<ruby><rb>追々</rb><rt>おいおい</rt></ruby><ruby><rb>馳</rb><rt>は</rt></ruby>せ附けた。三人に鵜殿家から<ruby><rb>鮨</rb><rt>すし</rt></ruby>と<ruby><rb>生菓子</rb><rt>なまがし</rt></ruby>とを贈った。</p>
+        <p><ruby><rb>酉</rb><rt>とり</rt></ruby>の下刻に西丸目附<ruby><rb>徒士頭</rb><rt>かちがしら</rt></ruby>十五番組<persName ref="#mizuno-uneme">水野<ruby><rb>采女</rb><rt>うねめ</rt></ruby></persName>の指図で、西丸徒士目附<persName ref="#nagai">永井亀次郎</persName>、<persName ref="#kubota">久保田英次郎</persName>、西丸小人目附<persName ref="#hiraoka">平岡<ruby><rb>唯八郎</rb><rt>ただはちろう</rt></ruby></persName>、<persName ref="#inoue">井上又八</persName>、使之者<persName ref="#shimoya">志母谷金左衛門</persName>、<persName ref="#itami"><ruby><rb>伊丹</rb><rt>いたみ</rt></ruby>長次郎</persName>、<ruby><rb>黒鍬之者</rb><rt>くろくわのもの</rt></ruby>四人が出張した。それに本多家、遠藤家、平岡家、鵜殿家の<ruby><rb>出役</rb><rt>しゅつやく</rt></ruby>があって、先ず三人の<ruby><rb>人体</rb><rt>にんてい</rt></ruby>、衣類、持物、<ruby><rb>手創</rb><rt>てきず</rt></ruby>の<ruby><rb>有無</rb><rt>ゆうむ</rt></ruby>を取り調べた。創は誰も負っていない。次に<persName ref="#nagai">永井</persName>、<persName ref="#kubota">久保田</persName>両<ruby><rb>徒</rb><rt>かち</rt></ruby>目附に当てた口書を取った。次に死骸の<ruby><rb>見分</rb><rt>けんぶん</rt></ruby>をした。酒井家に奉公した時の<persName ref="#torazo">亀蔵</persName>の名を以て調書に載せられた創はこうである。「背中<ruby><rb>左之方</rb><rt>ひだりのほう</rt></ruby>一寸程<ruby><rb>突創</rb><rt>つききず</rt></ruby>一箇所、創口<ruby><rb>腫上</rb><rt>はれあが</rt></ruby>り深さ<ruby><rb>相知不申</rb><rt>あひしれまをさず</rt></ruby>、<ruby><rb>領</rb><rt>えり</rt></ruby>に<ruby><rb>切創</rb><rt>きりきず</rt></ruby>一箇所、長さ三寸程、深さ二寸程、同所<ruby><rb>下之方</rb><rt>しものほう</rt></ruby>に切創一箇所、長さ一寸五分程、深さ六分程、左耳之<ruby><rb>脇</rb><rt>わき</rt></ruby>に切創一箇所、長さ一寸、深さ六分程、右之肩より乳へ掛け一尺程切創一箇所、深さ四寸程、同所脇肩に切創一箇所、長さ二寸、深さ一寸程、<ruby><rb>咽</rb><rt>のど</rt></ruby>突創一箇所、長さ三寸程、都合七箇所」衣類は木綿単物、博多帯、持物は<ruby><rb>浅葱</rb><rt>あさぎ</rt></ruby>手拭一筋である。<ruby><rb>死骸</rb><rt>しがい</rt></ruby>は<persName ref="#tamaki">玉木勝三郎</persName>に預けられた。次に呼び出されていた、<persName ref="#torazo">亀蔵</persName>の口入人<placeName ref="#kyuemoncho">神田久右衛門町代地</placeName><persName ref="#fujiya">富士屋治三郎</persName>、同五人組、<persName ref="#torazo">亀蔵</persName>の下請宿<persName ref="#wakasaya">若狭屋亀吉</persName>が口書を取られた。次に<persName ref="#kuroemon">九郎右衛門</persName>等の届を聞き取った辻番人が口書を取られた。</p>
+        <p>見分の役人は<ruby><rb>戌</rb><rt>いぬ</rt></ruby>の上刻に引き上げた。見分が済んで、<persName ref="#udono">鵜殿吉之丞</persName>から西丸目附<persName ref="#matsumoto">松本助之丞</persName>へ、酒井家留守居<persName ref="#shono"><ruby><rb>庄野慈父右衛門</rb><rt>しょうのじふえもん</rt></ruby></persName>から酒井家目附へ、酒井家から用番<persName ref="#okubo">大久保<ruby><rb>加賀守忠真</rb><rt>かがのかみただざね</rt></ruby></persName>へ届けた。</p>
+        <p><date when="1835-07-15">十五日</date><ruby><rb>卯</rb><rt>う</rt></ruby>の下刻に、<persName ref="#mizuno-uneme">水野采女</persName>の指図で、<persName ref="#shono">庄野</persName>へ<persName ref="#kuroemon">九郎右衛門</persName>等三人を引き渡された。<ruby><rb>前晩</rb><rt>ぜんばん</rt></ruby>酉の刻から、<persName ref="#kuroemon">九郎右衛門</persName>と<persName ref="#riyo">りよ</persName>とを載せるために、酒井家でさし立てた二<ruby><rb>挺</rb><rt>ちょう</rt></ruby>の乗物は、辻番所に来て控えていたのである。<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#bunkichi">文吉</persName>は本多某に、<persName ref="#riyo">りよ</persName>は<persName ref="#kobe">神戸</persName>に<ruby><rb>預</rb><rt>あずけ</rt></ruby>られた。</p>
+        <p>この日酉の下刻に町奉行<persName ref="#tsutsui"><ruby><rb>筒井伊賀守政憲</rb><rt>つついいがのかみまさのり</rt></ruby></persName>が<persName ref="#kuroemon">九郎右衛門</persName>等三人を呼び出した。酒井家からは目附、下目附、足軽小頭に足軽を添えて、乗物に乗った二人と<ruby><rb>徒歩</rb><rt>かち</rt></ruby>の<persName ref="#bunkichi">文吉</persName>とを警固した。三人が<persName ref="#tsutsui">筒井政憲</persName>の<ruby><rb>直</rb><rt>じき</rt></ruby>の取調を受けて下がったのは戌の下刻であった。</p>
+        <p>十六日には<persName ref="#tsutsui">筒井</persName>から再度の呼出が来た。酉の下刻に<ruby><rb>与力</rb><rt>よりき</rt></ruby><persName ref="#hitosugi"><ruby><rb>仁杉</rb><rt>にすぎ</rt></ruby>八右衛門</persName>の取調を受けて、口書を出した。</p>
+        <p>この日に<persName ref="#riyo">りよ</persName>は<persName ref="#sakai-kamenoshin">酒井亀之進</persName>から、<persName ref="#sanemon">三右衛門</persName>の未亡人は大沢家から願に依って<ruby><rb>暇</rb><rt>いとま</rt></ruby>を<ruby><rb>遣</rb><rt>つかわ</rt></ruby>された。<persName ref="#riyo">りよ</persName>が元の主人細川家からは、敵討の祝儀を言ってよこした。</p>
+        <p><date when="1835-07-19">十九日</date>には<persName ref="#tsutsui">筒井</persName>から三度目の呼出が来た。<persName ref="#kuroemon">九郎右衛門</persName>等三人は口書下書を読み聞せられて、酉の下刻に引き取った。</p>
+        <p>二十三日には<persName ref="#tsutsui">筒井</persName>から四度目の呼出が来た。口書清書に実印、爪印をさせられた。</p>
+        <p>二十八日には<persName ref="#tsutsui">筒井</persName>から五度目の呼出が来た。用番老中<persName ref="#mizuno-tadakuni">水野越前守<ruby><rb>忠邦</rb><rt>ただくに</rt></ruby></persName>の沙汰で、<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#riyo">りよ</persName>は「<ruby><rb>奇特之儀</rb><rt>きどくのぎ</rt></ruby>に<ruby><rb>付</rb><rt>つき</rt></ruby><ruby><rb>構</rb><rt>かまひ</rt></ruby>なし」<persName ref="#bunkichi">文吉</persName>は「<ruby><rb>仔細無之</rb><rt>しさいこれなく</rt></ruby>構なし」と申し渡された。それから<persName ref="#tsutsui">筒井</persName>の<ruby><rb>褒詞</rb><rt>ほうし</rt></ruby>を受けて酉の下刻に引き取った。</p>
+        <p>続いて酒井家の大目附から、町奉行の<ruby><rb>糺明</rb><rt>きゅうめい</rt></ruby>が済んだから、「<ruby><rb>平常通心得</rb><rt>へいじょうのとほりこころう</rt></ruby>べし」と、<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#riyo">りよ</persName>、<persName ref="#bunkichi">文吉</persName>の三人に達せられた。<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#riyo">りよ</persName>は<date when="1834">天保五年</date><date when="1834-02">二月</date>に貰った<ruby><rb>御判物</rb><rt>ごはんもの</rt></ruby>を大目附に納めた。</p>
+        <p><date when="1835"><ruby><rb>閏</rb><rt>うるう</rt></ruby>七月<ruby><rb>朔日</rb><rt>ついたち</rt></ruby></date>に<persName ref="#riyo">りよ</persName>に酒井家の御用召があった。<ruby><rb>辰</rb><rt>たつ</rt></ruby>の下刻に親戚<persName ref="#heisaku">山本平作</persName>、<persName ref="#sumaemon">桜井須磨右衛門</persName>が<ruby><rb>麻上下</rb><rt>あさがみしも</rt></ruby>で附き添って、御用部屋に出た。家老<persName ref="#kawai">河合小太郎</persName>に大目附が陪席して<ruby><rb>申渡</rb><rt>もうしわたし</rt></ruby>をした。</p>
+        <p>「<ruby><rb>女性</rb><rt>にょしょう</rt></ruby>なれば別して御賞美あり、<persName ref="#sanemon">三右衛門</persName>の家名相続<ruby><rb>被仰附</rb><rt>おほせつけらる</rt></ruby>、<ruby><rb>宛行</rb><rt>あておこなひ</rt></ruby>十四人<ruby><rb>扶持被下置</rb><rt>ふちくだしおかる</rt></ruby>、追て相応の者<ruby><rb>婿養子可被仰附</rb><rt>むこようしおほせつけらるべし</rt></ruby>、又近日<ruby><rb>中奥御目見可被仰附</rb><rt>なかおくおめみえおほせつけらるべし</rt></ruby>」と云うのである。</p>
+        <p><date when="1835">十一日</date>に<persName ref="#riyo">りよ</persName>は<ruby><rb>中奥目見</rb><rt>なかおくめみえ</rt></ruby>に出て、「御紋附<ruby><rb>黒縮緬</rb><rt>くろちりめん</rt></ruby>、<ruby><rb>紅裏真綿添</rb><rt>もみうらまわたそひ</rt></ruby>、<ruby><rb>白羽二重一重</rb><rt>しろはぶたへひとかさね</rt></ruby>」と菓子一折とを<ruby><rb>賜</rb><rt>たまわ</rt></ruby>った。同じ日に<placeName ref="#hamacho">浜町</placeName>の後室から「<ruby><rb>縞</rb><rt>しま</rt></ruby>縮緬一反」、故<persName ref="#sakai-tadashitsu">酒井忠質</persName>室<persName ref="#senjuin">専寿院</persName>から「<ruby><rb>高砂</rb><rt>たかさご</rt></ruby>染縮緬<ruby><rb>帛</rb><rt>ふくさ</rt></ruby>二、扇二本、<ruby><rb>包之内</rb><rt>つつみのうち</rt></ruby>」を賜った。</p>
+        <p><persName ref="#kuroemon">九郎右衛門</persName>が事に就いては、<persName ref="#sakai-tadanori">酒井忠学</persName>から家老<persName ref="#ikiyo">本多<ruby><rb>意気揚</rb><rt>いきり</rt></ruby></persName>へ、「<persName ref="#kuroemon">九郎右衛門</persName>は何の<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>も<ruby><rb>無之</rb><rt>これなく</rt></ruby>、<ruby><rb>以前之通可召出</rb><rt>いぜんのとほりめしいだすべし</rt></ruby>、<ruby><rb>且行届候段満足褒美可致</rb><rt>かつゆきとどきそろだんまんぞくほうびいたすべし</rt></ruby>、別段之思召を以て御紋附<ruby><rb>麻上下被下置</rb><rt>あさがみしもくだしおかる</rt></ruby>」と云う沙汰があった。<persName ref="#ikiyo">本多</persName>は<persName ref="#kuroemon">九郎右衛門</persName>に百石遣って、用人の上席にした。<persName ref="#riyo">りよ</persName>へも<persName ref="#ikiyo">本多</persName>から「<ruby><rb>反物代千疋</rb><rt>たんものだいせんびき</rt></ruby>」を贈り、<persName ref="#ikiyo">本多</persName>の母から「縞縮緬一反、<ruby><rb>交肴一折</rb><rt>まぜさかなひとをり</rt></ruby>」を贈った。</p>
+        <p><persName ref="#bunkichi">文吉</persName>は酒井家の目附役所に呼び出されて、元表小使、<persName ref="#kuroemon">山本九郎右衛門</persName>家来と云う資格で、「格段骨折奇特に附、小役人格に<ruby><rb>被召抱</rb><rt>めしかかへらる</rt></ruby>、<ruby><rb>御宛行金四両</rb><rt>おあておこなひきんよりょう</rt></ruby>二人<ruby><rb>扶持被下置</rb><rt>ふちくだしおかる</rt></ruby>」と達せられた。それから<ruby><rb>苗字</rb><rt>みょうじ</rt></ruby>を<persName ref="#bunkichi"><ruby><rb>深中</rb><rt>ふかなか</rt></ruby></persName>と<ruby><rb>名告</rb><rt>なの</rt></ruby>って、酒井家の下邸<placeName ref="#sugamo"><ruby><rb>巣鴨</rb><rt>すがも</rt></ruby></placeName>の山番を勤めた。</p>
+        <p>この敵討のあった時、<persName ref="#yashiro"><ruby><rb>屋代</rb><rt>やしろ</rt></ruby>太郎<ruby><rb>弘賢</rb><rt>ひろかた</rt></ruby></persName>は七十八歳で、<persName ref="#kuroemon">九郎右衛門</persName>、<persName ref="#riyo">りよ</persName>に賞美の歌を贈った。</p>
+        <p>「又もあらじ<ruby><rb>魂祭</rb><rt>たままつ</rt></ruby>るてふ折に逢ひて父兄の<ruby><rb>仇討</rb><rt>あたう</rt></ruby>ちしたぐひは」<ruby><rb>幸</rb><rt>さいわい</rt></ruby>に<persName ref="#ota-shichizaemon">太田七左衛門</persName>が死んでから十二年程立っているので、もうパロヂイを作って<persName ref="#yashiro">屋代</persName>を<ruby><rb>揶揄</rb><rt>からか</rt></ruby>うものもなかった。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

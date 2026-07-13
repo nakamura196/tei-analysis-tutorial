@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ざしき童子のはなし</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>ざしき童子のはなし</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「セロ弾きのゴーシュ」角川文庫、角川書店。1957（昭和32）年11月15日初版発行。1967（昭和42）年4月5日10版発行。1993（平成5）年5月20日改版50版発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card2656.html">https://www.aozora.gr.jp/cards/000081/card2656.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="zashikibokko">
+        <persName>ざしき童子</persName>
+        <note>岩手の民間伝承で旧家の座敷に住むとされる童形の神。本作の主題であり、四つの挿話すべてに現れる。本文の表記は「ざしき童子」「ざしきぼっこ」の二通りで、同一の存在として同じ id に束ねた(『遠野物語』の「ザシキワラシ」に相当)</note>
+      </person>
+      <person xml:id="nyorai">
+        <persName>如来さま</persName>
+        <note>第三話で本家が旧暦八月に祭りを営む如来。子供らは「如来さん」とも呼ぶ。特定の尊格名は本文に明示されない(岩手で広く行われた如来講・如来まつりの如来)</note>
+      </person>
+      <person xml:id="sasada">
+        <persName>笹田</persName>
+        <note>第四話で渡し守の舟に乗った子供(ざしき童子)が「ずいぶんながくいた」と語る家。童子が去った後におちぶれる。家名(屋号)であり、人ではなく一家を指す</note>
+      </person>
+      <person xml:id="saito">
+        <persName>斎藤</persName>
+        <note>第四話で子供(ざしき童子)が「更木の斎藤へ行くよ」と告げる、更木の家。童子が移った後、病人が癒え、息子が大学を終え、めきめき立派になったと語られる。家名(屋号)であり、人ではなく一家を指す</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kitakamigawa">
+        <placeName>北上川</placeName>
+        <location><geo>39.32 141.14</geo></location>
+        <note>概値(岩手県花巻〜北上間の流路上の代表点)。全長約249kmの一級河川のため、作品の舞台に近い区間を代表点とした。第一話では「北上川の瀬の音か」と箒の音を疑う場面、第四話では朗妙寺の淵の所在として言及</note>
+      </place>
+      <place xml:id="romyojinofuchi">
+        <placeName>朗妙寺の淵</placeName>
+        <note>第四話の渡し守が舟を出す、北上川の淵。付近の朗妙寺(ろうみょうじ)に由来する呼称で、更木の対岸にあたる渡し場とされる。淵の位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="saraki">
+        <placeName>更木</placeName>
+        <location><geo>39.33 141.145</geo></location>
+        <note>概値(岩手県北上市更木。旧・和賀郡更木村。北上川東岸)。第四話で子供が「更木の斎藤へ行くよ」と行き先に挙げる集落</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>ざしき童子のはなし</head>
+        <p>ぼくらの方の、<persName ref="#zashikibokko">ざしき<ruby><rb>童子</rb><rt>ぼっこ</rt></ruby></persName>のはなしです。</p>
+        <p>あかるいひるま、みんなが山へはたらきに出て、こどもがふたり、<ruby><rb>庭</rb><rt>にわ</rt></ruby>であそんでおりました。大きな家にだれもおりませんでしたから、そこらはしんとしています。</p>
+        <p>ところが家の、どこかのざしきで、ざわっざわっと<ruby><rb>箒</rb><rt>ほうき</rt></ruby>の音がしたのです。</p>
+        <p>ふたりのこどもは、おたがい<ruby><rb>肩</rb><rt>かた</rt></ruby>にしっかりと手を組みあって、こっそり行ってみましたが、どのざしきにもたれもいず、<ruby><rb>刀</rb><rt>かたな</rt></ruby>の<ruby><rb>箱</rb><rt>はこ</rt></ruby>もひっそりとして、かきねの<ruby><rb>檜</rb><rt>ひのき</rt></ruby>が、いよいよ青く見えるきり、たれもどこにもいませんでした。</p>
+        <p>ざわっざわっと箒の音がきこえます。</p>
+        <p>とおくの<ruby><rb>百舌</rb><rt>もず</rt></ruby>の声なのか、<placeName ref="#kitakamigawa"><ruby><rb>北上</rb><rt>きたかみ</rt></ruby>川</placeName>の<ruby><rb>瀬</rb><rt>せ</rt></ruby>の音か、どこかで<ruby><rb>豆</rb><rt>まめ</rt></ruby>を<ruby><rb>箕</rb><rt>み</rt></ruby>にかけるのか、ふたりでいろいろ考えながら、だまって<ruby><rb>聴</rb><rt>き</rt></ruby>いてみましたが、やっぱりどれでもないようでした。</p>
+        <p>たしかにどこかで、ざわっざわっと箒の音がきこえたのです。</p>
+        <p>も一どこっそり、ざしきをのぞいてみましたが、どのざしきにもたれもいず、ただお日さまの光ばかりそこらいちめん、あかるく<ruby><rb>降</rb><rt>ふ</rt></ruby>っておりました。</p>
+        <p>こんなのが<persName ref="#zashikibokko">ざしき<ruby><rb>童子</rb><rt>ぼっこ</rt></ruby></persName>です。</p>
+        <p>「<ruby><rb>大道</rb><rt>だいどう</rt></ruby>めぐり、大道めぐり」</p>
+        <p>一生けん<ruby><rb>命</rb><rt>めい</rt></ruby>、こう<ruby><rb>叫</rb><rt>さけ</rt></ruby>びながら、ちょうど十人の<ruby><rb>子供</rb><rt>こども</rt></ruby>らが、<ruby><rb>両手</rb><rt>りょうて</rt></ruby>をつないでまるくなり、ぐるぐるぐるぐる<ruby><rb>座敷</rb><rt>ざしき</rt></ruby>のなかをまわっていました。どの子もみんな、そのうちのお<ruby><rb>振舞</rb><rt>ふるまい</rt></ruby>によばれて来たのです。</p>
+        <p>ぐるぐるぐるぐる、まわってあそんでおりました。</p>
+        <p>そしたらいつか、十一人になりました。</p>
+        <p>ひとりも知らない顔がなく、ひとりもおんなじ顔がなく、それでもやっぱり、どう数えても十一人だけおりました。そのふえた一人が<persName ref="#zashikibokko">ざしきぼっこ</persName>なのだぞと、<ruby><rb>大人</rb><rt>おとな</rt></ruby>が出て来て<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>けれどもたれがふえたのか、とにかくみんな、自分だけは、どうしても<persName ref="#zashikibokko">ざしきぼっこ</persName>でないと、一生けん命<ruby><rb>眼</rb><rt>め</rt></ruby>を<ruby><rb>張</rb><rt>は</rt></ruby>って、きちんとすわっておりました。</p>
+        <p>こんなのが<persName ref="#zashikibokko">ざしきぼっこ</persName>です。</p>
+        <p>それからまたこういうのです。</p>
+        <p>ある大きな本家では、いつも<date when="--08"><ruby><rb>旧</rb><rt>きゅう</rt></ruby>の八月</date>のはじめに、<persName ref="#nyorai"><ruby><rb>如来</rb><rt>にょらい</rt></ruby>さま</persName>のおまつりで分家の子供らをよぶのでしたが、ある年その一人の子が、はしかにかかってやすんでいました。</p>
+        <p>「<persName ref="#nyorai">如来さん</persName>の<ruby><rb>祭</rb><rt>まつ</rt></ruby>りへ行きたい。<persName ref="#nyorai">如来さん</persName>の祭りへ行きたい」と、その子は<ruby><rb>寝</rb><rt>ね</rt></ruby>ていて、毎日毎日<ruby><rb>言</rb><rt>い</rt></ruby>いました。</p>
+        <p>「<ruby><rb>祭</rb><rt>まつ</rt></ruby>り<ruby><rb>延</rb><rt>の</rt></ruby>ばすから早くよくなれ」本家のおばあさんが<ruby><rb>見舞</rb><rt>みま</rt></ruby>いに行って、その子の頭をなでて言いました。</p>
+        <p>その子は<date when="--09">九月</date>によくなりました。</p>
+        <p>そこでみんなはよばれました。ところがほかの<ruby><rb>子供</rb><rt>こども</rt></ruby>らは、いままで祭りを延ばされたり、<ruby><rb>鉛</rb><rt>なまり</rt></ruby>の<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>を見舞いにとられたりしたので、なんともおもしろくなくてたまりませんでした。</p>
+        <p>「あいつのためにひどいめにあった。もう今日は来ても、どうしたってあそばないぞ」と<ruby><rb>約束</rb><rt>やくそく</rt></ruby>しました。</p>
+        <p>「おお、来たぞ、来たぞ」みんながざしきであそんでいたとき、にわかに一人が<ruby><rb>叫</rb><rt>さけ</rt></ruby>びました。</p>
+        <p>「ようし、かくれろ」みんなは<ruby><rb>次</rb><rt>つぎ</rt></ruby>の、小さなざしきへかけ<ruby><rb>込</rb><rt>こ</rt></ruby>みました。</p>
+        <p>そしたらどうです。そのざしきのまん中に、今やっと来たばっかりのはずの、あのはしかをやんだ子が、まるっきりやせて青ざめて、<ruby><rb>泣</rb><rt>な</rt></ruby>きだしそうな顔をして、新しい<ruby><rb>熊</rb><rt>くま</rt></ruby>のおもちゃを<ruby><rb>持</rb><rt>も</rt></ruby>って、きちんとすわっていたのです。</p>
+        <p>「<persName ref="#zashikibokko">ざしきぼっこ</persName>だ」一人が叫んでにげだしました。みんなもわあっとにげました。<persName ref="#zashikibokko">ざしきぼっこ</persName>は泣きました。</p>
+        <p>こんなのが<persName ref="#zashikibokko">ざしきぼっこ</persName>です。</p>
+        <p>また、<placeName ref="#kitakamigawa"><ruby><rb>北上</rb><rt>きたかみ</rt></ruby>川</placeName>の<placeName ref="#romyojinofuchi"><ruby><rb>朗妙寺</rb><rt>ろうみょうじ</rt></ruby>の<ruby><rb>淵</rb><rt>ふち</rt></ruby></placeName>の<ruby><rb>渡</rb><rt>わた</rt></ruby>し<ruby><rb>守</rb><rt>もり</rt></ruby>が、ある日わたしに言いました。</p>
+        <p>「<date when="--08-17"><ruby><rb>旧暦</rb><rt>きゅうれき</rt></ruby>八月十七日</date>の<ruby><rb>晩</rb><rt>ばん</rt></ruby>、おらは<ruby><rb>酒</rb><rt>さけ</rt></ruby>のんで早く<ruby><rb>寝</rb><rt>ね</rt></ruby>た。おおい、おおいと<ruby><rb>向</rb><rt>む</rt></ruby>こうで<ruby><rb>呼</rb><rt>よ</rt></ruby>んだ。<ruby><rb>起</rb><rt>お</rt></ruby>きて<ruby><rb>小屋</rb><rt>こや</rt></ruby>から出てみたら、お月さまはちょうどそらのてっぺんだ。おらは<ruby><rb>急</rb><rt>いそ</rt></ruby>いで<ruby><rb>舟</rb><rt>ふね</rt></ruby>だして、向こうの<ruby><rb>岸</rb><rt>きし</rt></ruby>に行ってみたらば、<ruby><rb>紋付</rb><rt>もんつき</rt></ruby>を<ruby><rb>着</rb><rt>き</rt></ruby>て<ruby><rb>刀</rb><rt>かたな</rt></ruby>をさし、<ruby><rb>袴</rb><rt>はかま</rt></ruby>をはいたきれいな<ruby><rb>子供</rb><rt>こども</rt></ruby>だ。たった一人で、<ruby><rb>白緒</rb><rt>しろお</rt></ruby>のぞうりもはいていた。<ruby><rb>渡</rb><rt>わた</rt></ruby>るかと<ruby><rb>言</rb><rt>い</rt></ruby>ったら、たのむと<ruby><rb>言</rb><rt>い</rt></ruby>った。子どもは<ruby><rb>乗</rb><rt>の</rt></ruby>った。<ruby><rb>舟</rb><rt>ふね</rt></ruby>がまん中ごろに来たとき、おらは見ないふりしてよく子供を見た。きちんと<ruby><rb>膝</rb><rt>ひざ</rt></ruby>に手を<ruby><rb>置</rb><rt>お</rt></ruby>いて、そらを見ながらすわっていた。</p>
+        <p>お前さん今からどこへ行く、どこから来たってきいたらば、子供はかあいい声で答えた。そこの<persName ref="#sasada"><ruby><rb>笹田</rb><rt>ささだ</rt></ruby></persName>のうちにずいぶんながくいたけれど、もうあきたから<ruby><rb>他</rb><rt>ほか</rt></ruby>へ行くよ。なぜあきたねってきいたらば、子供はだまってわらっていた。どこへ行くねってまたきいたらば、<placeName ref="#saraki"><ruby><rb>更木</rb><rt>さらき</rt></ruby></placeName>の<persName ref="#saito"><ruby><rb>斎藤</rb><rt>さいとう</rt></ruby></persName>へ行くよと言った。岸についたら子供はもういず、おらは<ruby><rb>小屋</rb><rt>こや</rt></ruby>の入口にこしかけていた。<ruby><rb>夢</rb><rt>ゆめ</rt></ruby>だかなんだかわからない。けれどもきっと本当だ。それから<persName ref="#sasada">笹田</persName>がおちぶれて、<placeName ref="#saraki">更木</placeName>の<persName ref="#saito">斎藤</persName>では病気もすっかり直ったし、むすこも大学を終わったし、めきめき<ruby><rb>立派</rb><rt>りっぱ</rt></ruby>になったから」</p>
+        <p>こんなのが<persName ref="#zashikibokko">ざしき<ruby><rb>童子</rb><rt>ぼっこ</rt></ruby></persName>です。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

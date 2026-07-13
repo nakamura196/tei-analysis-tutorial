@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>安井夫人</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>安井夫人</title><author>森鴎外</author>
+          <note>青空文庫。底本：「日本の文学　3　森鴎外（二）」中央公論社。1972（昭和47）年10月20日発行。入力：真先芳秋。校正：日隈美代子。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card696.html">https://www.aozora.gr.jp/cards/000129/card696.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="nakahira">
+        <persName>安井仲平</persName>
+        <note>号は息軒。日向国清武村の生まれ。痘痕があり片目で背が低い。大坂で篠崎小竹、江戸で古賀侗庵に学び昌平黌に入る。飫肥藩の侍読・助教を経て江戸で三計塾を開き、大儒として知られた。本作の「猿」と渾名された主人公。安井息軒(1799-1876)</note>
+      </person>
+      <person xml:id="sayo">
+        <persName>お佐代さん</persName>
+        <note>川添家の妹娘。「岡の小町」と呼ばれた美貌の娘だが、自ら望んで不男の仲平に嫁ぐ。粗服で夫に仕え、五十一歳の正月四日に没する。本作の表題「安井夫人」</note>
+      </person>
+      <person xml:id="soshu">
+        <persName>安井滄洲</persName>
+        <note>仲平の父。飫肥藩の儒者で藩の教授・振徳堂総裁。文中では「滄洲翁」。六十九歳のとき中風で没する</note>
+      </person>
+      <person xml:id="bunji">
+        <persName>文治</persName>
+        <note>仲平の兄。背が高く色白の美男で、渾名は「猿引き」。二十六歳で病没する</note>
+      </person>
+      <person xml:id="toyo">
+        <persName>お豊さん</persName>
+        <note>川添家の姉娘。器量は十人並みだが快活で率直。滄洲翁が仲平のよめにと望むが「ご亭主にするのはいやでございます」と拒絶する。お佐代の姉</note>
+      </person>
+      <person xml:id="yae">
+        <persName>八重</persName>
+        <note>滄洲翁が候補に思い浮かべた親戚の娘。定府勤めの父が江戸の女に生ませ、江戸風の化粧と江戸詞を身につけている</note>
+      </person>
+      <person xml:id="nagakura">
+        <persName>長倉のご新造</persName>
+        <note>仲平の姉。長倉家に嫁している。滄洲翁の意を受けて川添家へ縁談の使者に立つ。婚礼では夫婦で媒妁を務める</note>
+      </person>
+      <person xml:id="kawazoe">
+        <persName>川添のご新造</persName>
+        <note>お豊・お佐代の母。川添家の女主人。仲平贔屓で、お佐代の申し出を長倉のご新造に取り次ぐ</note>
+      </person>
+      <person xml:id="otokichi">
+        <persName>音吉</persName>
+        <note>川添家に使われている下男。長倉のご新造を呼び戻しに走る</note>
+      </person>
+      <person xml:id="shinozaki">
+        <persName>篠崎小竹</persName>
+        <note>大坂の儒者(1781-1851)。仲平が塾に通い、書物を借りた</note>
+      </person>
+      <person xml:id="koga">
+        <persName>古賀侗庵</persName>
+        <note>昌平黌の儒者(1788-1847)。仲平は二十六で江戸に出てその門下に籍をおいた</note>
+      </person>
+      <person xml:id="matsuzaki">
+        <persName>松崎慊堂</persName>
+        <note>儒者(1771-1844)。仲平が古賀より懐かしく思った学者</note>
+      </person>
+      <person xml:id="hayashi">
+        <persName>林</persName>
+        <note>昌平黌を主宰した林家(大学頭林述斎ら)。「昌平黌に入るには林か古賀かの門に入らなくてはならなかった」</note>
+      </person>
+      <person xml:id="shionoya">
+        <persName>塩谷宕陰</persName>
+        <note>儒者(1809-1867)。仲平の親友。背が高く、二人は「塩谷一丈雲腰に横たわる、安井三尺草頭を埋む」と冷やかされた。須磨子の再縁を媒介する</note>
+      </person>
+      <person xml:id="fujita">
+        <persName>藤田東湖</persName>
+        <note>水戸藩の儒者(1806-1855)。仲平が五十四のとき交わる</note>
+      </person>
+      <person xml:id="nariaki">
+        <persName>水戸景山公</persName>
+        <note>徳川斉昭(1800-1860)。号は景山。仲平が藤田東湖を介して知られる</note>
+      </person>
+      <person xml:id="perry">
+        <persName>ペルリ</persName>
+        <note>マシュー・ペリー。仲平五十五のとき浦賀に来航する</note>
+      </person>
+      <person xml:id="ii">
+        <persName>井伊</persName>
+        <note>井伊直弼。大老(閣老)。桜田見附で遭難する</note>
+      </person>
+      <person xml:id="kuroki">
+        <persName>黒木孫右衛門</persName>
+        <note>もと飫肥外浦の漁師。物産学に詳しく召し出されて徒士になる。仲平を訪ね、お佐代さんを見て「ご新造さまの方が先生の学問以上のご見識でござりますな」と言う</note>
+      </person>
+      <person xml:id="yuge">
+        <persName>弓削</persName>
+        <note>清武の安井家の隣人。安井家が飫肥へ移った後、その家に住まう</note>
+      </person>
+      <person xml:id="kashimaya">
+        <persName>鹿島屋清兵衛</persName>
+        <note>霊岸島の人。蔵書を仲平に貸し出す</note>
+      </person>
+      <person xml:id="sumako">
+        <persName>須磨子</persName>
+        <note>仲平とお佐代の長女。田中鉄之助に嫁して不縁になり、中村貞太郎(北有馬太郎)に再縁。夫の獄死後、子を連れて安井家に帰る</note>
+      </person>
+      <person xml:id="mihoko">
+        <persName>美保子</persName>
+        <note>仲平とお佐代の二女。かりそめの病で早世する</note>
+      </person>
+      <person xml:id="tobaiko">
+        <persName>登梅子</persName>
+        <note>仲平とお佐代の三女。江戸で急病により死ぬ</note>
+      </person>
+      <person xml:id="utako">
+        <persName>歌子</persName>
+        <note>仲平とお佐代の四女。病身で、母の没後七箇月目に二十三歳で亡くなる</note>
+      </person>
+      <person xml:id="tozo">
+        <persName>棟蔵</persName>
+        <note>仲平とお佐代の長男。「岡の小町」そっくりの美男の才子。二十二の年の夏、暴瀉で亡くなる</note>
+      </person>
+      <person xml:id="kensuke">
+        <persName>謙助</persName>
+        <note>仲平とお佐代の二男。文中では「謙介」とも。雑司谷へ里子に出される。後に安東益斎と名のり東金・千葉で医業を営むが、千葉で自殺する。享年二十八</note>
+      </person>
+      <person xml:id="nakamurasadataro">
+        <persName>中村貞太郎</persName>
+        <note>肥前国島原産の志士。仮名は北有馬太郎。塩谷の媒介で須磨子に嫁す。獄中で死ぬ</note>
+      </person>
+      <person xml:id="tanaka">
+        <persName>田中鉄之助</persName>
+        <note>秋元家の用人の倅。須磨子の最初の夫。不縁になる</note>
+      </person>
+      <person xml:id="keisaburo">
+        <persName>高橋圭三郎</persName>
+        <note>須磨子の長女糸の壻。安井家の名跡を立てるが早く亡くなる</note>
+      </person>
+      <person xml:id="zenbei">
+        <persName>高橋善兵衛</persName>
+        <note>王子在領家村の農。江戸市中の騒がしい最中、仲平はその弟政吉の家にひそむ</note>
+      </person>
+      <person xml:id="masakichi">
+        <persName>政吉</persName>
+        <note>高橋善兵衛の弟。仲平の隠家を提供する</note>
+      </person>
+      <person xml:id="kumoi">
+        <persName>雲井龍雄</persName>
+        <note>策士(1844-1871)。仲平の海嶽楼で月見をする</note>
+      </person>
+      <person xml:id="shogun">
+        <persName>徳川将軍</persName>
+        <note>仲平が六十四のとき謁見した将軍(徳川家茂)</note>
+      </person>
+      <person xml:id="yoshiko">
+        <persName>淑子</persName>
+        <note>天野家から来た謙助の妻。千菊を生み、隠家に移って六箇月目に十九で亡くなる</note>
+      </person>
+      <person xml:id="chigiku">
+        <persName>千菊</persName>
+        <note>謙助と淑子の子。十歳で安井家を継ぐが夭折する</note>
+      </person>
+      <person xml:id="kotaro">
+        <persName>小太郎</persName>
+        <note>須磨子の子。姉のお糸とともに安井家に帰り、後に高橋家の跡を継ぐ</note>
+      </person>
+      <person xml:id="saburo">
+        <persName>三郎</persName>
+        <note>小太郎の二男。千菊の夭折後に家を立てる</note>
+      </person>
+      <person xml:id="ito">
+        <persName>お糸</persName>
+        <note>中村貞太郎が須磨子に生ませた長女。高橋圭三郎を壻に取る</note>
+      </person>
+      <person xml:id="rinpei">
+        <persName>安井林平</persName>
+        <note>飫肥吾田村字星倉に近い小布瀬の人。安井家と同宗。お佐代の形見の袷を妻が持つ</note>
+      </person>
+      <person xml:id="oshina">
+        <persName>お品</persName>
+        <note>安井林平の妻。お佐代さんの記念として木綿縞の袷を一枚持っている</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kiyotake">
+        <placeName>清武村</placeName>
+        <location><geo>31.848 131.383</geo></location>
+        <note>日向国宮崎郡清武村(現宮崎市清武町)。安井家の在所・概値</note>
+      </place>
+      <place xml:id="hyuga">
+        <placeName>日向国</placeName>
+        <location><geo>32.3 131.3</geo></location>
+        <note>旧国名(宮崎県)・概値</note>
+      </place>
+      <place xml:id="miyazakigun">
+        <placeName>宮崎郡</placeName>
+        <location><geo>31.9 131.4</geo></location>
+        <note>日向国宮崎郡・概値</note>
+      </place>
+      <place xml:id="nakano">
+        <placeName>中野</placeName>
+        <note>清武村字中野。藩の学問所(明教堂)が建てられた地。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="imaizumi">
+        <placeName>今泉</placeName>
+        <location><geo>31.856 131.372</geo></location>
+        <note>清武村大字今泉(現宮崎市清武町今泉)。川添家の在所・概値</note>
+      </place>
+      <place xml:id="oka">
+        <placeName>岡</placeName>
+        <note>清武村今泉の小字岡。川添家の在所で、お佐代は「岡の小町」と呼ばれた。小字のため現在地の同定に自信がなく座標なし</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.685 139.753</geo></location>
+        <note>東京の旧称・概値</note>
+      </place>
+      <place xml:id="edojo">
+        <placeName>江戸城</placeName>
+        <location><geo>35.6852 139.7528</geo></location>
+        <note>江戸城・概値</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tosabori">
+        <placeName>土佐堀</placeName>
+        <location><geo>34.6905 135.499</geo></location>
+        <note>大坂土佐堀(現大阪市西区)。飫肥藩の蔵屋敷があった・概値</note>
+      </place>
+      <place xml:id="shoheiko">
+        <placeName>昌平黌</placeName>
+        <location><geo>35.7 139.768</geo></location>
+        <note>幕府の学問所・昌平坂学問所(湯島聖堂)・概値</note>
+      </place>
+      <place xml:id="shinobugaoka">
+        <placeName>忍が岡</placeName>
+        <location><geo>35.7148 139.7737</geo></location>
+        <note>上野の忍岡。仲平が柱に貼った和歌「今は音を忍が岡の時鳥いつか雲井のよそに名のらむ」の歌枕(「忍ぶ」との掛詞)・概値</note>
+      </place>
+      <place xml:id="obi">
+        <placeName>飫肥</placeName>
+        <location><geo>31.6205 131.3495</geo></location>
+        <note>日向国飫肥(現宮崎県日南市飫肥)。飫肥藩の城下・概値</note>
+      </place>
+      <place xml:id="kamo">
+        <placeName>加茂</placeName>
+        <note>飫肥の加茂。安井家が代地をもらった地。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="tonoura">
+        <placeName>外浦</placeName>
+        <location><geo>31.559 131.37</geo></location>
+        <note>飫肥外浦(現宮崎県日南市南郷町外浦)。黒木孫右衛門の出身地・概値</note>
+      </place>
+      <place xml:id="agata">
+        <placeName>吾田村</placeName>
+        <location><geo>31.5975 131.378</geo></location>
+        <note>飫肥吾田村(現宮崎県日南市吾田)・概値</note>
+      </place>
+      <place xml:id="hoshikura">
+        <placeName>星倉</placeName>
+        <note>飫肥吾田村字星倉。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="obuse">
+        <placeName>小布瀬</placeName>
+        <note>吾田村字星倉から二里ばかりの地。安井林平の在所。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="tanomura">
+        <placeName>田野村</placeName>
+        <location><geo>31.8356 131.3336</geo></location>
+        <note>日向国の田野村(現宮崎市田野町)。斑竹山房の名の由来となった虎斑竹の産地・概値</note>
+      </place>
+      <place xml:id="kariya">
+        <placeName>仮屋</placeName>
+        <note>田野村字仮屋。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="shintokudo">
+        <placeName>振徳堂</placeName>
+        <location><geo>31.621 131.349</geo></location>
+        <note>飫肥藩の藩校(現宮崎県日南市飫肥)。滄洲翁が総裁、仲平が助教を勤めた・概値</note>
+      </place>
+      <place xml:id="meikyodo">
+        <placeName>明教堂</placeName>
+        <note>清武村字中野に建てられた飫肥藩の学問所。所在の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="sankeijuku">
+        <placeName>三計塾</placeName>
+        <note>仲平が江戸で開いた私塾。転居に伴い所在が変わるため座標なし</note>
+      </place>
+      <place xml:id="hanchikusanbo">
+        <placeName>斑竹山房</placeName>
+        <note>三計塾の階上にある仲平の書斎の号(匾額)。座標なし</note>
+      </place>
+      <place xml:id="kaigakuro">
+        <placeName>海嶽楼</placeName>
+        <note>麹町一丁目半蔵門外の仲平の家の二階の号。雲井龍雄と月見をした。座標なし</note>
+      </place>
+      <place xml:id="sotosakurada">
+        <placeName>外桜田</placeName>
+        <location><geo>35.6755 139.7495</geo></location>
+        <note>外桜田(現千代田区霞が関・内幸町付近)。飫肥藩の上邸がある・概値</note>
+      </place>
+      <place xml:id="sakuradamitsuke">
+        <placeName>桜田見附</placeName>
+        <location><geo>35.6759 139.7511</geo></location>
+        <note>江戸城外郭の桜田門。井伊閣老が遭難した地・概値</note>
+      </place>
+      <place xml:id="sakuradatei">
+        <placeName>桜田邸</placeName>
+        <note>旧藩(飫肥藩)の桜田の藩邸。屋敷の位置の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="sendagaya">
+        <placeName>千駄谷</placeName>
+        <location><geo>35.6795 139.71</geo></location>
+        <note>千駄ヶ谷(現渋谷区)。飫肥藩の下邸があった・概値</note>
+      </place>
+      <place xml:id="zojoji">
+        <placeName>増上寺</placeName>
+        <location><geo>35.6574 139.7486</geo></location>
+        <note>芝の増上寺・概値</note>
+      </place>
+      <place xml:id="konchiin">
+        <placeName>金地院</placeName>
+        <location><geo>35.657 139.748</geo></location>
+        <note>増上寺境内の金地院。仲平が下宿し書庫をあさった・概値</note>
+      </place>
+      <place xml:id="shiba">
+        <placeName>芝</placeName>
+        <location><geo>35.656 139.748</geo></location>
+        <note>江戸の芝(現港区芝)・概値</note>
+      </place>
+      <place xml:id="gobancho">
+        <placeName>五番町</placeName>
+        <location><geo>35.689 139.7415</geo></location>
+        <note>麹町五番町(現千代田区五番町)・概値</note>
+      </place>
+      <place xml:id="kamininbancho">
+        <placeName>上二番町</placeName>
+        <location><geo>35.688 139.7365</geo></location>
+        <note>麹町上二番町(現千代田区二番町付近)。三計塾があった・概値</note>
+      </place>
+      <place xml:id="bancho">
+        <placeName>番町</placeName>
+        <location><geo>35.6875 139.739</geo></location>
+        <note>旗本屋敷の並ぶ番町(現千代田区番町)・概値</note>
+      </place>
+      <place xml:id="sodefurizaka">
+        <placeName>袖振坂</placeName>
+        <note>番町の坂の名。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="ogawamachi">
+        <placeName>小川町</placeName>
+        <location><geo>35.696 139.762</geo></location>
+        <note>神田小川町(現千代田区神田小川町)・概値</note>
+      </place>
+      <place xml:id="ushigomemitsuke">
+        <placeName>牛込見附</placeName>
+        <location><geo>35.7018 139.7443</geo></location>
+        <note>江戸城外郭の牛込見附(牛込門跡、現千代田区富士見・新宿区神楽坂境)・概値</note>
+      </place>
+      <place xml:id="ushigome">
+        <placeName>牛込</placeName>
+        <location><geo>35.7 139.73</geo></location>
+        <note>牛込(現新宿区)・概値</note>
+      </place>
+      <place xml:id="reiganjima">
+        <placeName>霊岸島</placeName>
+        <location><geo>35.676 139.783</geo></location>
+        <note>霊岸島(現中央区新川)・概値</note>
+      </place>
+      <place xml:id="azabu">
+        <placeName>麻布</placeName>
+        <location><geo>35.657 139.732</geo></location>
+        <note>旧麻布区一帯(現港区)・概値</note>
+      </place>
+      <place xml:id="nagasaka">
+        <placeName>長坂裏通り</placeName>
+        <note>麻布長坂の裏通り(街路)。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="matsushima">
+        <placeName>松島</placeName>
+        <location><geo>38.36 141.06</geo></location>
+        <note>陸奥松島(現宮城県松島町)。仲平が観風旅行をした・概値</note>
+      </place>
+      <place xml:id="uraga">
+        <placeName>浦賀</placeName>
+        <location><geo>35.247 139.715</geo></location>
+        <note>相模国浦賀(現神奈川県横須賀市)。米艦・ペルリの来航地・概値</note>
+      </place>
+      <place xml:id="hayabusacho">
+        <placeName>隼町</placeName>
+        <location><geo>35.683 139.742</geo></location>
+        <note>隼町(現千代田区隼町)・概値</note>
+      </place>
+      <place xml:id="kojimachi">
+        <placeName>麹町</placeName>
+        <location><geo>35.6855 139.7365</geo></location>
+        <note>麹町(現千代田区麹町)・概値</note>
+      </place>
+      <place xml:id="zenkokujidani">
+        <placeName>善国寺谷</placeName>
+        <note>麹町の善国寺谷。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="hanzomon">
+        <placeName>半蔵門</placeName>
+        <location><geo>35.684 139.744</geo></location>
+        <note>江戸城の半蔵門・概値</note>
+      </place>
+      <place xml:id="okachimachi">
+        <placeName>下谷徒士町</placeName>
+        <location><geo>35.7075 139.7745</geo></location>
+        <note>下谷御徒町(現台東区台東・御徒町付近)・概値</note>
+      </place>
+      <place xml:id="yoyogi">
+        <placeName>代々木</placeName>
+        <location><geo>35.683 139.702</geo></location>
+        <note>代々木(現渋谷区)。彦根藩の邸があった・概値</note>
+      </place>
+      <place xml:id="oji">
+        <placeName>王子</placeName>
+        <location><geo>35.753 139.738</geo></location>
+        <note>王子(現北区王子)・概値</note>
+      </place>
+      <place xml:id="ryokemura">
+        <placeName>領家村</placeName>
+        <note>王子在の領家村。仲平が隠れた高橋政吉の家がある。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="zoshigaya">
+        <placeName>雑司谷</placeName>
+        <location><geo>35.722 139.715</geo></location>
+        <note>雑司ヶ谷(現豊島区)。謙助が里子に出された地・概値</note>
+      </place>
+      <place xml:id="togane">
+        <placeName>東金</placeName>
+        <location><geo>35.559 140.366</geo></location>
+        <note>上総国東金(現千葉県東金市)。安東益斎(謙助)が医業を営んだ・概値</note>
+      </place>
+      <place xml:id="chiba">
+        <placeName>千葉</placeName>
+        <location><geo>35.605 140.1233</geo></location>
+        <note>下総国千葉町(現千葉市)。謙助が医業を営み、自殺した地・概値</note>
+      </place>
+      <place xml:id="dainichiji">
+        <placeName>大日寺</placeName>
+        <note>千葉町にあった寺。謙助の墓所。現在地の同定に自信がないため座標なし</note>
+      </place>
+      <place xml:id="hizen">
+        <placeName>肥前国</placeName>
+        <location><geo>33.2 130.0</geo></location>
+        <note>旧国名(佐賀県・長崎県)・概値</note>
+      </place>
+      <place xml:id="shimabara">
+        <placeName>島原</placeName>
+        <location><geo>32.789 130.37</geo></location>
+        <note>肥前国島原(現長崎県島原市)。中村貞太郎の出身地・概値</note>
+      </place>
+      <place xml:id="mutsu">
+        <placeName>陸奥</placeName>
+        <location><geo>38.5 140.9</geo></location>
+        <note>旧国名・概値</note>
+      </place>
+      <place xml:id="hanawa">
+        <placeName>塙</placeName>
+        <location><geo>36.956 140.416</geo></location>
+        <note>陸奥国塙(現福島県東白川郡塙町)。仲平が代官に任じられた・概値</note>
+      </place>
+      <place xml:id="dotesanbancho">
+        <placeName>土手三番町</placeName>
+        <location><geo>35.6895 139.737</geo></location>
+        <note>土手三番町(現千代田区三番町付近)・概値</note>
+      </place>
+      <place xml:id="hikone">
+        <placeName>彦根</placeName>
+        <location><geo>35.2745 136.2596</geo></location>
+        <note>近江国彦根(現滋賀県彦根市)。彦根藩・概値</note>
+      </place>
+      <place xml:id="ezo">
+        <placeName>蝦夷</placeName>
+        <location><geo>43.3 142.8</geo></location>
+        <note>蝦夷地(現北海道)。「五十七のとき蝦夷開拓論をした」・旧称・概値</note>
+      </place>
+      <place xml:id="shimosa">
+        <placeName>下総</placeName>
+        <location><geo>35.85 140.2</geo></location>
+        <note>旧国名(現千葉県北部・茨城県南西部)。謙助が医業を営んだ地・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>安井夫人</head>
+        <p>「<persName ref="#nakahira"><ruby><rb>仲平</rb><rt>ちゅうへい</rt></ruby></persName>さんはえらくなりなさるだろう」という評判と同時に、「<persName ref="#nakahira">仲平</persName>さんは<ruby><rb>不男</rb><rt>ぶおとこ</rt></ruby>だ」という<ruby><rb>蔭言</rb><rt>かげこと</rt></ruby>が、<placeName ref="#kiyotake"><ruby><rb>清武</rb><rt>きよたけ</rt></ruby></placeName>一<ruby><rb>郷</rb><rt>ごう</rt></ruby>に伝えられている。</p>
+        <p><persName ref="#nakahira">仲平</persName>の父は<placeName ref="#hyuga"><ruby><rb>日向国</rb><rt>ひゅうがのくに</rt></ruby></placeName><placeName ref="#miyazakigun">宮崎郡</placeName><placeName ref="#kiyotake">清武村</placeName>に二<ruby><rb>段</rb><rt>たん</rt></ruby>八<ruby><rb>畝</rb><rt>せ</rt></ruby>ほどの宅地があって、そこに三棟の家を建てて住んでいる。財産としては、宅地を少し離れた所に田畑を持っていて、年来家で漢学を人の子弟に教えるかたわら、耕作をやめずにいたのである。しかし<persName ref="#nakahira">仲平</persName>の父は、三十八のとき<placeName ref="#edo">江戸</placeName>へ修行に出て、<ruby><rb>中</rb><rt>なか</rt></ruby>一年おいて、四十のとき帰国してから、だんだん<placeName ref="#obi"><ruby><rb>飫肥</rb><rt>おび</rt></ruby></placeName>藩で任用せられるようになったので、今では田畑の大部分を小作人に作らせることにしている。</p>
+        <p><persName ref="#nakahira">仲平</persName>は二男である。兄<persName ref="#bunji"><ruby><rb>文治</rb><rt>ぶんじ</rt></ruby></persName>が九つ、自分が六つのとき、父は兄弟を残して<placeName ref="#edo">江戸</placeName>へ立ったのである。父が<placeName ref="#edo">江戸</placeName>から帰った後、兄弟の<ruby><rb>背丈</rb><rt>せたけ</rt></ruby>が伸びてからは、二人とも毎朝書物を懐中して<ruby><rb>畑打</rb><rt>はたう</rt></ruby>ちに出た。そしてよその人が<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>休みをする間、二人は読書に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>った。</p>
+        <p>父がはじめて藩の教授にせられたころのことである。十七八の<persName ref="#bunji">文治</persName>と十四五の<persName ref="#nakahira">仲平</persName>とが、例の畑打ちに通うと、道で行き<ruby><rb>逢</rb><rt>あ</rt></ruby>う人が、皆言い合わせたように二人を見較べて、連れがあれば連れに何事をかささやいた。背の高い、色の白い、目鼻立ちの立派な兄<persName ref="#bunji">文治</persName>と、背の低い、色の黒い、片目の弟<persName ref="#nakahira">仲平</persName>とが、いかにも<ruby><rb>不吊合</rb><rt>ふつりあ</rt></ruby>いな一対に見えたからである。兄弟同時にした<ruby><rb>疱瘡</rb><rt>ほうそう</rt></ruby>が、兄は軽く、弟は重く、弟は<ruby><rb>大痘痕</rb><rt>おおあばた</rt></ruby>になって、あまつさえ右の目がつぶれた。父も小さいとき疱瘡をして片目になっているのに、また<persName ref="#nakahira">仲平</persName>が同じ<ruby><rb>片羽</rb><rt>かたわ</rt></ruby>になったのを思えば、「偶然」というものも残酷なものだと言うほかない。</p>
+        <p><persName ref="#nakahira">仲平</persName>は兄と一しょに歩くのをつらく思った。そこで朝は少し早目に食事を済ませて、一足さきに出、晩は少し居残って<ruby><rb>為事</rb><rt>しごと</rt></ruby>をして、一足遅れて帰ってみた。しかし行き逢う人が自分の方を見て、連れとささやくことはやまなかった。そればかりではない。兄と一しょに歩くときよりも、行き逢う人の態度はよほど不遠慮になって、ささやく声も常より高く、中には声をかけるものさえある。</p>
+        <p>「見い。きょうは猿がひとりで行くぜ」</p>
+        <p>「猿が本を読むから妙だ」</p>
+        <p>「なに。猿の方が猿引きよりはよく読むそうな」</p>
+        <p>「お猿さん。きょうは猿引きはどうしましたな」</p>
+        <p>交通の狭い土地で、行き逢う人は大抵識り合った中であった。<persName ref="#nakahira">仲平</persName>はひとりで歩いてみて、二つの発明をした。一つは自分がこれまで兄の<ruby><rb>庇護</rb><rt>ひご</rt></ruby>のもとに立っていながら、それを悟らなかったということである。今一つは、驚くべし、兄と自分とに<ruby><rb>渾名</rb><rt>あだな</rt></ruby>がついていて、醜い自分が猿と言われると同時に、兄までが猿引きと言われているということである。<persName ref="#nakahira">仲平</persName>はこの発明を胸に<ruby><rb>蔵</rb><rt>おさ</rt></ruby>めて、誰にも話さなかったが、その後は<ruby><rb>強</rb><rt>し</rt></ruby>いて兄と離れ離れに田畑へ<ruby><rb>往反</rb><rt>おうへん</rt></ruby>しようとはしなかった。</p>
+        <p><persName ref="#nakahira">仲平</persName>にさきだって、体の弱い兄の<persName ref="#bunji">文治</persName>は死んだ。<persName ref="#nakahira">仲平</persName>が<placeName ref="#osaka">大阪</placeName>へ修行に出て<persName ref="#shinozaki"><ruby><rb>篠崎小竹</rb><rt>しのざきしょうちく</rt></ruby></persName>の塾に通っていたときに死んだのである。<persName ref="#nakahira">仲平</persName>は二十一の春、<ruby><rb>金子</rb><rt>きんす</rt></ruby>十両を父の手から受け取って<placeName ref="#kiyotake">清武村</placeName>を立った。そして<placeName ref="#osaka">大阪</placeName><placeName ref="#tosabori">土佐堀</placeName>三丁目の蔵屋敷に着いて、長屋の一間を借りて自炊をしていた。倹約のために大豆を塩と醤油とで煮ておいて、それを飯の菜にしたのを、蔵屋敷では「仲平豆」と名づけた。同じ長屋に住むものが、あれでは体が続くまいと気づかって、酒を飲むことを勧めると、<persName ref="#nakahira">仲平</persName>は素直に聴き<ruby><rb>納</rb><rt>い</rt></ruby>れて、毎日一合ずつ酒を買った。そして晩になると、その一合入りの徳利を<ruby><rb>紙撚</rb><rt>こより</rt></ruby>で縛って、行燈の火の上に吊るしておく。そして<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>に向って、<persName ref="#shinozaki">篠崎</persName>の塾から借りて来た本を読んでいるうちに、<ruby><rb>半夜</rb><rt>はんや</rt></ruby>人定まったころ、燈火で尻をあぶられた徳利の口から、<ruby><rb>蓬々</rb><rt>ほうほう</rt></ruby>として蒸気が立ちのぼって来る。<persName ref="#nakahira">仲平</persName>は<ruby><rb>巻</rb><rt>まき</rt></ruby>をおいて、徳利の酒をうまそうに飲んで寝るのであった。<ruby><rb>中</rb><rt>なか</rt></ruby>一年おいて、二十三になったとき、故郷の兄<persName ref="#bunji">文治</persName>が死んだ。学殖は弟に劣っていても、才気の鋭い若者であったのに、とかく病気で、とうとう二十六歳で死んだのである。<persName ref="#nakahira">仲平</persName>は<ruby><rb>訃音</rb><rt>ふいん</rt></ruby>を得て、すぐに<placeName ref="#osaka">大阪</placeName>を立って帰った。</p>
+        <p>その後<persName ref="#nakahira">仲平</persName>は二十六で<placeName ref="#edo">江戸</placeName>に出て、<persName ref="#koga"><ruby><rb>古賀侗庵</rb><rt>こがとうあん</rt></ruby></persName>の門下に籍をおいて、<placeName ref="#shoheiko"><ruby><rb>昌平黌</rb><rt>しょうへいこう</rt></ruby></placeName>に入った。後世の<ruby><rb>註疏</rb><rt>ちゅうそ</rt></ruby>によらずに、ただちに経義を<ruby><rb>窮</rb><rt>きわ</rt></ruby>めようとする<persName ref="#nakahira">仲平</persName>がためには、<persName ref="#koga">古賀</persName>より<persName ref="#matsuzaki"><ruby><rb>松崎慊堂</rb><rt>まつざきこうどう</rt></ruby></persName>の方が懐かしかったが、<placeName ref="#shoheiko">昌平黌</placeName>に入るには<persName ref="#hayashi">林</persName>か<persName ref="#koga">古賀</persName>かの門に入らなくてはならなかったのである。<ruby><rb>痘痕</rb><rt>あばた</rt></ruby>があって、片目で、背の低い田舎書生は、ここでも同窓に馬鹿にせられずには済まなかった。それでも<persName ref="#nakahira">仲平</persName>は無頓着に黙り込んで、独り読書に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>っていた。<ruby><rb>坐右</rb><rt>ざゆう</rt></ruby>の柱に<ruby><rb>半折</rb><rt>はんせつ</rt></ruby>に何やら書いて<ruby><rb>貼</rb><rt>は</rt></ruby>ってあるのを、からかいに来た友達が読んでみると、「今は<ruby><rb>音</rb><rt>ね</rt></ruby>を<placeName ref="#shinobugaoka"><ruby><rb>忍</rb><rt>しのぶ</rt></ruby>が<ruby><rb>岡</rb><rt>おか</rt></ruby></placeName>の<ruby><rb>時鳥</rb><rt>ほととぎす</rt></ruby>いつか雲井のよそに名のらむ」と書いてあった。「や、えらい<ruby><rb>抱負</rb><rt>ほうふ</rt></ruby>じゃぞ」と、友達は笑って去ったが、腹の中ではやや気味悪くも思った。これは十九のとき漢学に全力を傾注するまで、国文をも少しばかり研究した<ruby><rb>名残</rb><rt>なごり</rt></ruby>で、わざと流儀違いの和歌の真似をして、同窓の<ruby><rb>揶揄</rb><rt>やゆ</rt></ruby>に<ruby><rb>酬</rb><rt>むく</rt></ruby>いたのである。</p>
+        <p><persName ref="#nakahira">仲平</persName>はまだ<placeName ref="#edo">江戸</placeName>にいるうちに、二十八で藩主の侍読にせられた。そして翌年藩主が帰国せられるとき、供をして帰った。</p>
+        <p>今年の<date when="1827-01">正月</date>から<placeName ref="#kiyotake">清武村</placeName><ruby><rb>字</rb><rt>あざ</rt></ruby><placeName ref="#nakano">中野</placeName>に藩の学問所が立つことになって、工事の最中である。それが落成すると、六十一になる父<ruby><rb><persName ref="#soshu">滄洲</persName>翁</rb><rt>そうしゅうおう</rt></ruby>と、去年<placeName ref="#edo">江戸</placeName>から藩主の供をして帰った、二十九になる<persName ref="#nakahira">仲平</persName>さんとが、父子ともに講壇に立つはずである。そのとき<persName ref="#soshu">滄洲</persName>翁が息子によめを取ろうと言い出した。しかしこれは決して容易な問題ではない。</p>
+        <p><placeName ref="#edo">江戸</placeName>がえり、<placeName ref="#shoheiko">昌平黌</placeName>じこみと聞いて、「<persName ref="#nakahira">仲平</persName>さんはえらくなりなさるだろう」と評判する郷里の人たちも、<ruby><rb>痘痕</rb><rt>あばた</rt></ruby>があって、片目で、背の低い男ぶりを見ては、「<persName ref="#nakahira">仲平</persName>さんは<ruby><rb>不男</rb><rt>ぶおとこ</rt></ruby>だ」と<ruby><rb>蔭言</rb><rt>かげこと</rt></ruby>を言わずにはおかぬからである。</p>
+        <p><persName ref="#soshu">滄洲</persName>翁は<placeName ref="#edo">江戸</placeName>までも修業に出た苦労人である。<ruby><rb>倅</rb><rt>せがれ</rt></ruby><persName ref="#nakahira">仲平</persName>が学問修行も一通り出来て、来年は三十になろうという年になったので、ぜひよめを取ってやりたいとは思うが、その選択のむずかしいことには十分気がついている。</p>
+        <p>背こそ<persName ref="#nakahira">仲平</persName>ほど低くないが、自分も痘痕があり、片目であった翁は、異性に対する苦い経験を<ruby><rb>嘗</rb><rt>な</rt></ruby>めている。識らぬ少女と見合いをして縁談を取りきめようなどということは自分にも不可能であったから、自分と同じ欠陥があって、しかも背の低い<persName ref="#nakahira">仲平</persName>がために、それが不可能であることは知れている。<persName ref="#nakahira">仲平</persName>のよめは早くから気心を識り合った娘の中から選び出すほかない。翁は自分の経験からこんなことをも考えている。それは若くて美しいと思われた人も、しばらく交際していて、<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>の足らぬのが暴露してみると、その<ruby><rb>美貌</rb><rt>びぼう</rt></ruby>はいつか忘れられてしまう。また三十になり、四十になると、智慧の不足が顔にあらわれて、昔美しかった人とは思われぬようになる。これとは反対に、<ruby><rb>顔貌</rb><rt>かおかたち</rt></ruby>には<ruby><rb>疵</rb><rt>きず</rt></ruby>があっても、才人だと、交際しているうちに、その醜さが忘れられる。また年を取るにしたがって、才気が眉目をさえ美しくする。<persName ref="#nakahira">仲平</persName>なぞもただ一つの黒い瞳をきらつかせて物を言う顔を見れば、立派な男に見える。これは親の<ruby><rb>贔屓目</rb><rt>ひいきめ</rt></ruby>ばかりではあるまい。どうぞあれが人物を識った女をよめにもらってやりたい。翁はざっとこう考えた。</p>
+        <p>翁は五節句や年忌に、互いに顔を見合う親戚の中で、未婚の娘をあれかこれかと思い浮べてみた。一番<ruby><rb>華</rb><rt>はな</rt></ruby>やかで人の目につくのは、十九になる<persName ref="#yae">八重</persName>という娘で、これは父が<ruby><rb>定府</rb><rt>じょうふ</rt></ruby>を勤めていて、<placeName ref="#edo">江戸</placeName>の女を妻に持って生ませたのである。<placeName ref="#edo">江戸</placeName>風の化粧をして、<placeName ref="#edo">江戸</placeName><ruby><rb>詞</rb><rt>ことば</rt></ruby>をつかって、母に踊りをしこまれている。これはもらおうとしたところで来そうにもなく、また好ましくもない。形が<ruby><rb>地味</rb><rt>じみ</rt></ruby>で、心の気高い、本も少しは読むという娘はないかと思ってみても、あいにくそういう向きの女子は一人もない。どれもどれも平凡きわまった女子ばかりである。</p>
+        <p>あちこち迷った末に、翁の選択はとうとう手近い<ruby><rb>川添</rb><rt>かわぞえ</rt></ruby>の娘に落ちた。川添家は同じ<placeName ref="#kiyotake">清武村</placeName>の<ruby><rb>大字</rb><rt>おおあざ</rt></ruby><placeName ref="#imaizumi">今泉</placeName>、<ruby><rb>小字</rb><rt>こあざ</rt></ruby><placeName ref="#oka">岡</placeName>にある翁の夫人の里方で、そこに<persName ref="#nakahira">仲平</persName>の<ruby><rb>従妹</rb><rt>いとこ</rt></ruby>が二人ある。妹娘の<persName ref="#sayo"><ruby><rb>佐代</rb><rt>さよ</rt></ruby></persName>は十六で、三十男の<persName ref="#nakahira">仲平</persName>がよめとしては若過ぎる。それに<ruby><rb>器量</rb><rt>きりょう</rt></ruby>よしという評判の子で、若者どもの間では「<placeName ref="#oka">岡</placeName>の小町」と呼んでいるそうである。どうも<persName ref="#nakahira">仲平</persName>とは不吊合いなように思われる。姉娘の<persName ref="#toyo"><ruby><rb>豊</rb><rt>とよ</rt></ruby></persName>なら、もう<ruby><rb>二十</rb><rt>はたち</rt></ruby>で、遅く取るよめとしては、年齢の懸隔もはなはだしいというほどではない。<persName ref="#toyo">豊</persName>の器量は十人並みである。性質にはこれといって立ち<ruby><rb>優</rb><rt>まさ</rt></ruby>ったところはないが、女にめずらしく快活で、心に思うままを口に出して言う。その思うままがいかにも素直で、なんのわだかまりもない。母親は「臆面なしで困る」と言うが、それが翁の気に入っている。</p>
+        <p>翁はこう思い定めたが、さてこの話を持ち込む手続きに窮した。いつも翁に何か言われると、謹んで承るという風になっている少女らに、直接に言うことはもちろん出来ない。<ruby><rb>外舅外姑</rb><rt>しゅうとしゅうとめ</rt></ruby>が亡くなってからは、川添の家には卑属しかいないから、翁がうかと言い出しては、先方で当惑するかも知れない。他人同士では、こういう話を持ち出して、それが不調に終ったあとは、少くもしばらくの間交際がこれまで通りに行かぬことが多い。親戚間であってみれば、その辺に一層心を用いなくてはならない。</p>
+        <p>ここに<persName ref="#nakahira">仲平</persName>の姉で、<persName ref="#nagakura"><ruby><rb>長倉</rb><rt>ながくら</rt></ruby>のご<ruby><rb>新造</rb><rt>しんぞ</rt></ruby></persName>と言われている人がある。翁はこれに意中を打ち明けた。「亡くなった兄いさんのおよめになら、一も二もなく来たのでございましょうが」と言いかけて、ご新造は少しためらった。ご新造はそういう方角からは<persName ref="#toyo">お豊さん</persName>を見ていなかったのである。しかしお父うさまに頼まれた上で考えてみれば、ほかに弟のよめに相応した娘も思い当らず、また<persName ref="#toyo">お豊さん</persName>が不承知を言うにきまっているとも思われぬので、ご新造はとうとう使者の役目を引き受けた。</p>
+        <p>川添の家では<ruby><rb>雛祭</rb><rt>ひなまつり</rt></ruby>の支度をしていた。奥の<ruby><rb>間</rb><rt>ま</rt></ruby>へいろいろな書附けをした箱を一ぱい出し散らかして、その中から<persName ref="#toyo">お豊さん</persName>が、<ruby><rb>内裏様</rb><rt>だいりさま</rt></ruby>やら<ruby><rb>五人囃</rb><rt>ごにんばや</rt></ruby>しやら、一つびとつ取り出して、綿や吉野紙を<ruby><rb>除</rb><rt>の</rt></ruby>けて置き並べていると、妹の<persName ref="#sayo">お佐代さん</persName>がちょいちょい手を出す。「いいからわたしに任せておおき」と、<persName ref="#toyo">お豊さん</persName>は妹を<ruby><rb>叱</rb><rt>しか</rt></ruby>っていた。</p>
+        <p>そこの障子をあけて、<persName ref="#nagakura">長倉のご新造</persName>が顔を出した。手にはみやげに切らせて来た<ruby><rb>緋桃</rb><rt>ひもも</rt></ruby>の枝を持っている。「まあ、お忙しい最中でございますね」</p>
+        <p><persName ref="#toyo">お豊さん</persName>は<ruby><rb>尉姥</rb><rt>じょううば</rt></ruby>の人形を出して、<ruby><rb>箒</rb><rt>ほうき</rt></ruby>と<ruby><rb>熊手</rb><rt>くまで</rt></ruby>とを人形の手に<ruby><rb>挿</rb><rt>さ</rt></ruby>していたが、その手を停めて桃の花を見た。「おうちの桃はもうそんなに咲きましたか。こちらのはまだ<ruby><rb>莟</rb><rt>つぼみ</rt></ruby>がずっと小そうございます」</p>
+        <p>「出かけに急いだもんですから、ほんの少しばかり切らせて来ました。たくさんお<ruby><rb>活</rb><rt>い</rt></ruby>けになるなら、いくらでも取りにおよこしなさいよ」こう言ってご新造は桃の枝をわたした。</p>
+        <p><persName ref="#toyo">お豊さん</persName>はそれを受け取って、妹に「ここはこのままそっくりしておくのだよ」と言っておいて、桃の枝を持って勝手へ立った。</p>
+        <p>ご新造はあとからついて来た。</p>
+        <p><persName ref="#toyo">お豊さん</persName>は台所の<ruby><rb>棚</rb><rt>たな</rt></ruby>から<ruby><rb>手桶</rb><rt>ておけ</rt></ruby>をおろして、それを持ってそばの井戸端に出て、水を<ruby><rb>一釣瓶汲</rb><rt>ひとつるべく</rt></ruby>み込んで、それに桃の枝を投げ入れた。すべての動作がいかにもかいがいしい。使命を含んで来たご新造は、これならば弟のよめにしても早速役に立つだろうと思って、微笑を禁じ得なかった。下駄を脱ぎすてて台所にあがった<persName ref="#toyo">お豊さん</persName>は、壁に吊ってある竿の手拭いで手をふいている。そのそばへご新造が<ruby><rb>摩</rb><rt>す</rt></ruby>り寄った。</p>
+        <p>「安井では<persName ref="#nakahira">仲平</persName>におよめを取ることになりました」<ruby><rb>劈頭</rb><rt>へきとう</rt></ruby>に御新造は主題を<ruby><rb>道破</rb><rt>どうは</rt></ruby>した。</p>
+        <p>「まあ、どこから」</p>
+        <p>「およめさんですか」</p>
+        <p>「ええ」</p>
+        <p>「そのおよめさんは」と言いさして、じっと<persName ref="#toyo">お豊さん</persName>の顔を見つつ、「あなた」</p>
+        <p><persName ref="#toyo">お豊さん</persName>は驚きあきれた顔をして黙っていたが、しばらくすると、その顔に<ruby><rb>笑</rb><rt>え</rt></ruby>みがたたえられた。「<ruby><rb>譃</rb><rt>うそ</rt></ruby>でしょう」</p>
+        <p>「本当です。わたしそのお話をしに来ました。これからお母あさまに申し上げようと思っています」</p>
+        <p><persName ref="#toyo">お豊さん</persName>は手拭いを放して、両手をだらりと<ruby><rb>垂</rb><rt>た</rt></ruby>れて、ご新造と向き合って立った。顔からは笑みが消え失せた。「わたし<persName ref="#nakahira">仲平</persName>さんはえらい方だと思っていますが、ご亭主にするのはいやでございます」冷然として言い放った。</p>
+        <p><persName ref="#toyo">お豊さん</persName>の拒絶があまり簡明に発表せられたので、<persName ref="#nagakura">長倉のご新造</persName>は話のあとを継ぐ余地を見いだすことが出来なかった。しかしこれほどの用事を帯びて来て、それを二人の娘の母親に話さずにも帰られぬと思って、<ruby><rb>直談判</rb><rt>じきだんぱん</rt></ruby>をして失敗した<ruby><rb>顛末</rb><rt>てんまつ</rt></ruby>を、<persName ref="#kawazoe">川添のご新造</persName>にざっと言っておいて、ギヤマンのコップに注いで出された白酒を飲んで、<ruby><rb>暇乞</rb><rt>いとまご</rt></ruby>いをした。</p>
+        <p><persName ref="#kawazoe">川添のご新造</persName>は<persName ref="#nakahira">仲平</persName><ruby><rb>贔屓</rb><rt>びいき</rt></ruby>だったので、ひどくこの縁談の不調を惜しんで、<persName ref="#toyo">お豊</persName>にしっかり言って聞かせてみたいから、安井家へは当人の軽率な返事を打ち明けずにおいてくれと頼んだ。そこで<persName ref="#toyo">お豊さん</persName>の返事をもって復命することだけは、一時見合わせようと、<persName ref="#nagakura">長倉のご新造</persName>が受け合ったが、どうも<persName ref="#toyo">お豊さん</persName>が意を<ruby><rb>翻</rb><rt>ひるがえ</rt></ruby>そうとは信ぜられないので、「どうぞ無理にお勧めにならぬように」と言い残して起って出た。</p>
+        <p><persName ref="#nagakura">長倉のご新造</persName>が川添の門を出て、道の二三丁も来たかと思うとき、あとから川添に使われている下男の<persName ref="#otokichi">音吉</persName>が駆けて来た。急に話したいことがあるから、ご苦労ながら引き返してもらいたいという口上を持って来たのである。</p>
+        <p><persName ref="#nagakura">長倉のご新造</persName>は意外の思いをした。どうも<persName ref="#toyo">お豊さん</persName>がそう急に意を翻したとは信ぜられない。何の話であろうか。こう思いながら<persName ref="#otokichi">音吉</persName>と一しょに川添へ戻って来た。</p>
+        <p>「お帰りがけをわざわざお呼び戻しいたして済みません。実は存じ寄らぬことが出来まして」待ち構えていた<persName ref="#kawazoe">川添のご新造</persName>が、戻って来た客の座に着かぬうちに言った。</p>
+        <p>「はい」<persName ref="#nagakura">長倉のご新造</persName>は女主人の顔をまもっている。</p>
+        <p>「あの<persName ref="#nakahira">仲平</persName>さんのご縁談のことでございますね。わたくしは願うてもないよい先だと存じますので、<persName ref="#toyo">お豊</persName>を呼んで話をいたしてみましたが、やはりまいられぬと申します。そういたすと<persName ref="#sayo">お佐代</persName>が姉にその話を聞きまして、わたくしのところへまいって、何か申しそうにいたして申さずにおりますのでございます。なんだえと、わたくしが尋ねますと、安井さんへわたくしが参ることは出来ますまいかと申します。およめに往くということはどういうわけのものか、ろくにわからずに申すかと存じまして、いろいろ聞いてみましたが、あちらでもろうてさえ下さるなら自分は往きたいと、きっぱり申すのでございます。いかにも差出がましいことでございまして、あちらの思わくもいかがとは存じますが、とにかくあなたにご相談申し上げたいと存じまして」さも言いにくそうな<ruby><rb>口吻</rb><rt>くちぶり</rt></ruby>である。</p>
+        <p><persName ref="#nagakura">長倉のご新造</persName>はいよいよ意外の思いをした。父はこの話をするとき、「<persName ref="#sayo">お佐代</persName>は若過ぎる」と言った。また「あまり別品でなあ」とも言った。しかし<persName ref="#sayo">お佐代さん</persName>を<ruby><rb>嫌</rb><rt>きら</rt></ruby>っているのでないことは、平生からわかっている。多分父は吊合いを考えて、年がいっていて、器量の十人並みな<persName ref="#toyo">お豊さん</persName>をと望んだのであろう。それに若くて美しい<persName ref="#sayo">お佐代さん</persName>が来れば、不足はあるまい。それにしても控え目で無口な<persName ref="#sayo">お佐代さん</persName>がよくそんなことを母親に言ったものだ。これはとにかく父にも弟にも話してみて、出来ることなら、<persName ref="#sayo">お佐代さん</persName>の望み通りにしたいものだと、<persName ref="#nagakura">長倉のご新造</persName>は思案してこう言った。「まあ、そうでございますか。父は<persName ref="#toyo">お豊さん</persName>をと申したのでございますが、わたくしがちょっと考えてみますに、<persName ref="#sayo">お佐代さん</persName>では悪いとは申さぬだろうと存じます。早速あちらへまいって申してみることにいたしましょう。でもあの<ruby><rb>内気</rb><rt>うちき</rt></ruby>な<persName ref="#sayo">お佐代さん</persName>が、よくあなたにおっしゃったものでございますね」</p>
+        <p>「それでございます。わたくしも本当にびっくりいたしました。子供の思っていることは何から何までわかっているように存じていましても、大違いでございます。お父うさまにお話し下さいますなら、当人を呼びまして、ここで一応聞いてみることにいたしましょう」こう言って母親は妹娘を呼んだ。</p>
+        <p><persName ref="#sayo">お佐代</persName>はおそるおそる障子をあけてはいった。</p>
+        <p>母親は言った。「あの、さっきお前の言ったことだがね、<persName ref="#nakahira">仲平</persName>さんがお前のようなものでももらって下さることになったら、お前きっと往くのだね」</p>
+        <p><persName ref="#sayo">お佐代さん</persName>は耳まで赤くして、「はい」と言って、下げていた頭を一層低く下げた。</p>
+        <p><persName ref="#nagakura">長倉のご新造</persName>が意外だと思ったように、<persName ref="#soshu"><ruby><rb>滄洲</rb><rt>そうしゅう</rt></ruby></persName>翁も意外だと思った。しかし一番意外だと思ったのは<ruby><rb>壻殿</rb><rt>むこどの</rt></ruby>の<persName ref="#nakahira">仲平</persName>であった。それは皆<ruby><rb>怪訝</rb><rt>かいが</rt></ruby>するとともに喜んだ人たちであるが、近所の若い男たちは怪訝するとともに<ruby><rb>嫉</rb><rt>そね</rt></ruby>んだ。そして口々に「<placeName ref="#oka">岡</placeName>の小町が猿のところへ往く」と噂した。そのうち噂は<placeName ref="#kiyotake">清武</placeName>一郷に<ruby><rb>伝播</rb><rt>でんぱ</rt></ruby>して、誰一人怪訝せぬものはなかった。これは喜びや<ruby><rb>嫉</rb><rt>そね</rt></ruby>みの交じらぬただの怪訝であった。</p>
+        <p>婚礼は長倉夫婦の<ruby><rb>媒妁</rb><rt>ばいしゃく</rt></ruby>で、まだ桃の花の散らぬうちに済んだ。そしてこれまでただ美しいとばかり言われて、人形同様に思われていた<persName ref="#sayo">お佐代さん</persName>は、<ruby><rb>繭</rb><rt>まゆ</rt></ruby>を破って出た<ruby><rb>蛾</rb><rt>が</rt></ruby>のように、その控え目な、内気な態度を脱却して、<ruby><rb>多勢</rb><rt>おおぜい</rt></ruby>の若い書生たちの出入りする家で、<ruby><rb>天晴</rb><rt>あっぱ</rt></ruby>れ地歩を占めた夫人になりおおせた。</p>
+        <p><date when="1827-10">十月</date>に学問所の<placeName ref="#meikyodo">明教堂</placeName>が落成して、安井家の<ruby><rb>祝筵</rb><rt>しゅくえん</rt></ruby>に親戚故旧が寄り集まったときには、美しくて、しかもきっぱりした若夫人の前に、客の頭が自然に下がった。人にからかわれる世間のよめさんとは全く趣をことにしていたのである。</p>
+        <p>翌年<persName ref="#nakahira">仲平</persName>が三十、<persName ref="#sayo">お佐代さん</persName>が十七で、長女<persName ref="#sumako"><ruby><rb>須磨子</rb><rt>すまこ</rt></ruby></persName>が生まれた。中一年おいた年の<date when="1830-07">七月</date>には、藩の学校が<placeName ref="#obi"><ruby><rb>飫肥</rb><rt>おび</rt></ruby></placeName>に<ruby><rb>遷</rb><rt>うつ</rt></ruby>されることになった。そのつぎの年に、六十五になる<persName ref="#soshu">滄洲</persName>翁は<placeName ref="#obi">飫肥</placeName>の<placeName ref="#shintokudo"><ruby><rb>振徳堂</rb><rt>しんとくどう</rt></ruby></placeName>の総裁にせられて、三十三になる<persName ref="#nakahira">仲平</persName>がその下で助教を勤めた。<placeName ref="#kiyotake">清武</placeName>の家は隣にいた<persName ref="#yuge"><ruby><rb>弓削</rb><rt>ゆげ</rt></ruby></persName>という人が住まうことになって、安井家は<placeName ref="#obi">飫肥</placeName>の<placeName ref="#kamo"><ruby><rb>加茂</rb><rt>かも</rt></ruby></placeName>に代地をもらった。</p>
+        <p><persName ref="#nakahira">仲平</persName>は三十五のとき、藩主の供をして再び<placeName ref="#edo">江戸</placeName>に出て、翌年帰った。これが<persName ref="#sayo">お佐代さん</persName>がやや長い留守に<ruby><rb>空閨</rb><rt>くうけい</rt></ruby>を守ったはじめである。</p>
+        <p><persName ref="#soshu">滄洲</persName>翁は中風で、六十九のとき亡くなった。<persName ref="#nakahira">仲平</persName>が二度目に<placeName ref="#edo">江戸</placeName>から帰った翌年である。</p>
+        <p><persName ref="#nakahira">仲平</persName>は三十八のとき三たび<placeName ref="#edo">江戸</placeName>に出て、二十五の<persName ref="#sayo">お佐代さん</persName>が二度目の留守をした。翌年<persName ref="#nakahira">仲平</persName>は<placeName ref="#shoheiko">昌平黌</placeName>の<ruby><rb>斎長</rb><rt>さいちょう</rt></ruby>になった。ついで<placeName ref="#sotosakurada">外桜田</placeName>の藩邸の方でも、<persName ref="#nakahira">仲平</persName>に<ruby><rb>大番所番頭</rb><rt>おおばんしょばんがしら</rt></ruby>という役を命じた。そのつぎの年に、<persName ref="#nakahira">仲平</persName>は一旦帰国して、まもなく<placeName ref="#edo">江戸</placeName>へ移住することになった。今度はいずれ<placeName ref="#edo">江戸</placeName>に<ruby><rb>居所</rb><rt>いどころ</rt></ruby>がきまったら、<persName ref="#sayo">お佐代さん</persName>をも呼び迎えるという約束をした。藩の役をやめて、塾を開いて人に教える決心をしていたのである。</p>
+        <p>このころ<persName ref="#nakahira">仲平</persName>の学殖はようやく世間に認められて、親友にも<persName ref="#shionoya"><ruby><rb>塩谷宕陰</rb><rt>しおのやとういん</rt></ruby></persName>のような立派な人が出来た。二人一しょに散歩をすると、男ぶりはどちらも悪くても、とにかく背の高い<persName ref="#shionoya">塩谷</persName>が立派なので、「<persName ref="#shionoya">塩谷</persName>一丈雲腰に横たわる、<persName ref="#nakahira">安井</persName>三尺草<ruby><rb>頭</rb><rt>かしら</rt></ruby>を埋む」などと冷やかされた。</p>
+        <p><placeName ref="#edo">江戸</placeName>に出ていても、質素な<persName ref="#nakahira">仲平</persName>は極端な簡易生活をしていた。帰り新参で、<placeName ref="#shoheiko">昌平黌</placeName>の塾に入る前には、<placeName ref="#sendagaya">千駄谷</placeName>にある藩の<ruby><rb>下邸</rb><rt>しもやしき</rt></ruby>にいて、その後<placeName ref="#sotosakurada">外桜田</placeName>の上邸にいたり、<placeName ref="#zojoji">増上寺</placeName>境内の<placeName ref="#konchiin"><ruby><rb>金地院</rb><rt>こんじいん</rt></ruby></placeName>にいたりしたが、いつも自炊である。さていよいよ移住と決心して出てからも、一時は<placeName ref="#sendagaya">千駄谷</placeName>にいたが、下邸に火事があってから、はじめて<placeName ref="#gobancho">五番町</placeName>の<ruby><rb>売居</rb><rt>うりすえ</rt></ruby>を二十九枚で買った。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>を呼び迎えたのは、<placeName ref="#gobancho">五番町</placeName>から<placeName ref="#kamininbancho">上二番町</placeName>の借家に引き越していたときである。いわゆる<placeName ref="#sankeijuku">三<ruby><rb>計塾</rb><rt>けいじゅく</rt></ruby></placeName>で、階下に三畳やら四畳半やらの間が二つ三つあって、階上が<placeName ref="#hanchikusanbo"><ruby><rb>斑竹山房</rb><rt>はんちくさんぼう</rt></ruby></placeName>の<ruby><rb>匾額</rb><rt>へんがく</rt></ruby>を掛けた書斎である。<placeName ref="#hanchikusanbo">斑竹山房</placeName>とは<placeName ref="#edo">江戸</placeName>へ移住するとき、本国<placeName ref="#tanomura">田野村</placeName>字<placeName ref="#kariya"><ruby><rb>仮屋</rb><rt>かりや</rt></ruby></placeName>の<ruby><rb>虎斑竹</rb><rt>こはんちく</rt></ruby>を根こじにして来たからの名である。<persName ref="#nakahira">仲平</persName>は今年四十一、<persName ref="#sayo">お佐代さん</persName>は二十八である。長女<persName ref="#sumako">須磨子</persName>についで、二女<persName ref="#mihoko">美保子</persName>、三女<persName ref="#tobaiko"><ruby><rb>登梅子</rb><rt>とめこ</rt></ruby></persName>と、女の子ばかり三人出来たが、かりそめの病のために、<persName ref="#mihoko">美保子</persName>が早く亡くなったので、<persName ref="#sayo">お佐代さん</persName>は十一になる<persName ref="#sumako">須磨子</persName>と、五つになる<persName ref="#tobaiko">登梅子</persName>とを連れて、<placeName ref="#sankeijuku">三計塾</placeName>にやって来た。</p>
+        <p><persName ref="#nakahira">仲平</persName>夫婦は当時女中一人も使っていない。<persName ref="#sayo">お佐代さん</persName>が<ruby><rb>飯炊</rb><rt>ままた</rt></ruby>きをして、<persName ref="#sumako">須磨子</persName>が買物に出る。<persName ref="#sumako">須磨子</persName>の<ruby><rb><placeName ref="#hyuga">日向</placeName>訛</rb><rt>ひゅうがなま</rt></ruby>りが商人に通ぜぬので、用が弁ぜずにすごすご帰ることが多い。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>は<ruby><rb>形</rb><rt>なり</rt></ruby>ふりに構わず働いている。それでも「<placeName ref="#oka">岡</placeName>の小町」と言われた昔の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>はどこやらにある。このころ<persName ref="#kuroki">黒木孫右衛門</persName>というものが<persName ref="#nakahira">仲平</persName>に逢いに来た。もと<ruby><rb><placeName ref="#obi">飫肥</placeName><placeName ref="#tonoura">外浦</placeName></rb><rt>おびそとうら</rt></ruby>の漁師であったが、物産学にくわしいため、わざわざ召し出されて<ruby><rb>徒士</rb><rt>かち</rt></ruby>になった男である。<persName ref="#sayo">お佐代さん</persName>が茶を<ruby><rb>酌</rb><rt>く</rt></ruby>んで出しておいて、勝手へ下がったのを見て<ruby><rb>狡獪</rb><rt>こうかい</rt></ruby>なような、滑稽なような顔をして、<persName ref="#kuroki">孫右衛門</persName>が<persName ref="#nakahira">仲平</persName>に尋ねた。</p>
+        <p>「先生。只今のはご新造さまでござりますか」</p>
+        <p>「さよう。妻で」<ruby><rb>恬然</rb><rt>てんぜん</rt></ruby>として<persName ref="#nakahira">仲平</persName>は答えた。</p>
+        <p>「はあ。ご新造さまは学問をなさりましたか」</p>
+        <p>「いいや。学問というほどのことはしておりませぬ」</p>
+        <p>「してみますと、ご新造さまの方が先生の学問以上のご見識でござりますな」</p>
+        <p>「なぜ」</p>
+        <p>「でもあれほどの美人でおいでになって、先生の夫人におなりなされたところを見ますと」</p>
+        <p><persName ref="#nakahira">仲平</persName>は覚えず失笑した。そして<persName ref="#kuroki">孫右衛門</persName>の無遠慮なような世辞を面白がって、得意の<ruby><rb>笊棋</rb><rt>ざるご</rt></ruby>の相手をさせて帰した。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>が国から出た年、<persName ref="#nakahira">仲平</persName>は<placeName ref="#ogawamachi">小川町</placeName>に移り、翌年また<placeName ref="#ushigomemitsuke"><ruby><rb>牛込見附</rb><rt>うしごめみつけ</rt></ruby></placeName>外の家を買った。値段はわずか十両である。八畳の間に床の間と<ruby><rb>廻</rb><rt>まわ</rt></ruby>り<ruby><rb>縁</rb><rt>えん</rt></ruby>とがついていて、ほかに四畳半が一間、二畳が一間、それから板の間が少々ある。<persName ref="#nakahira">仲平</persName>は八畳の間に机を据えて、周囲に書物を山のように積んで読んでいる。このころは<placeName ref="#reiganjima">霊岸島</placeName>の<persName ref="#kashimaya">鹿島屋清兵衛</persName>が蔵書を借り出して来るのである。一体<persName ref="#nakahira">仲平</persName>は<ruby><rb>博渉家</rb><rt>はくしょうか</rt></ruby>でありながら、<ruby><rb>蔵書癖</rb><rt>ぞうしょへき</rt></ruby>はない。質素で濫費をせぬから、生計に困るようなことはないが、十分に書物を買うだけの金はない。書物は借りて<ruby><rb>覧</rb><rt>み</rt></ruby>て、書き抜いては返してしまう。<placeName ref="#osaka">大阪</placeName>で<persName ref="#shinozaki">篠崎</persName>の塾に通ったのも、<persName ref="#shinozaki">篠崎</persName>に物を学ぶためではなくて、書物を借るためであった。<placeName ref="#shiba">芝</placeName>の<placeName ref="#konchiin">金地院</placeName>に下宿したのも、書庫をあさるためであった。この年に三女<persName ref="#tobaiko">登梅子</persName>が急病で死んで、四女<persName ref="#utako">歌子</persName>が生まれた。</p>
+        <p>そのつぎの年に藩主が奏者になられて、<persName ref="#nakahira">仲平</persName>に<ruby><rb>押合方</rb><rt>おしあいかた</rt></ruby>という役を命ぜられたが、目が悪いと言ってことわった。薄暗い明りで本ばかり読んでいたので実際目がよくなかったのである。</p>
+        <p>そのまたつぎの年に、<persName ref="#nakahira">仲平</persName>は<placeName ref="#azabu">麻布</placeName><placeName ref="#nagasaka">長坂裏通り</placeName>に移った。<placeName ref="#ushigome">牛込</placeName>から古家を持って来て建てさせたのである。それへ引き越すとすぐに<persName ref="#nakahira">仲平</persName>は<placeName ref="#matsushima">松島</placeName>まで観風旅行をした。<ruby><rb>浅葱織色木綿</rb><rt>あさぎおりいろもめん</rt></ruby>の<ruby><rb>打裂羽織</rb><rt>ぶっさきばおり</rt></ruby>に<ruby><rb>裁附袴</rb><rt>たっつけばかま</rt></ruby>で、腰に<ruby><rb>銀拵</rb><rt>ぎんごしら</rt></ruby>えの大小を挿し、<ruby><rb>菅笠</rb><rt>すげがさ</rt></ruby>をかむり<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>をはくという支度である。旅から帰ると、三十一になる<persName ref="#sayo">お佐代さん</persName>がはじめて男子を生んだ。のちに「<placeName ref="#oka">岡</placeName>の小町」そっくりの美男になって、<ruby><rb>今文尚書</rb><rt>きんぶんしょうしょ</rt></ruby>二十九篇で天下を治めようと言った才子の<persName ref="#tozo"><ruby><rb>棟蔵</rb><rt>とうぞう</rt></ruby></persName>である。惜しいことには、二十二になった年の夏、<ruby><rb>暴瀉</rb><rt>ぼうしゃ</rt></ruby>で亡くなった。</p>
+        <p>中一年おいて、<persName ref="#nakahira">仲平</persName>夫婦は一時上邸の長屋に入っていて、<ruby><rb><placeName ref="#bancho">番町</placeName><placeName ref="#sodefurizaka">袖振坂</placeName></rb><rt>ばんちょうそでふりざか</rt></ruby>に転居した。その冬<persName ref="#sayo">お佐代さん</persName>が三十三で二人目の男子<persName ref="#kensuke">謙助</persName>を生んだ。しかし乳が少いので、それを<placeName ref="#zoshigaya"><ruby><rb>雑司谷</rb><rt>ぞうしがや</rt></ruby></placeName>の<ruby><rb>名主方</rb><rt>なぬしかた</rt></ruby>へ里子にやった。<persName ref="#kensuke">謙介</persName>は成長してから父に似た異相の男になったが、後日<persName ref="#kensuke">安東益斎</persName>と名のって、<placeName ref="#togane">東金</placeName>、<placeName ref="#chiba">千葉</placeName>の二箇所で医業をして、かたわら漢学を教えているうちに、持ち前の<ruby><rb>肝積</rb><rt>かんしゃく</rt></ruby>のために、<placeName ref="#chiba">千葉</placeName>で自殺した。年は二十八であった。墓は<placeName ref="#chiba">千葉町</placeName><placeName ref="#dainichiji">大日寺</placeName>にある。</p>
+        <p><placeName ref="#uraga">浦賀</placeName>へ米艦が来て、天下多事の秋となったのは、<persName ref="#nakahira">仲平</persName>が四十八、<persName ref="#sayo">お佐代さん</persName>が三十五のときである。<ruby><rb>大儒<persName ref="#nakahira">息軒</persName></rb><rt>たいじゅそっけん</rt></ruby>先生として天下に名を知られた<persName ref="#nakahira">仲平</persName>は、ともすれば時勢の<ruby><rb>旋渦</rb><rt>せんか</rt></ruby>中に巻き込まれようとしてわずかに免れていた。</p>
+        <p><placeName ref="#obi">飫肥</placeName>藩では<persName ref="#nakahira">仲平</persName>を<ruby><rb>相談中</rb><rt>そうだんちゅう</rt></ruby>という役にした。<persName ref="#nakahira">仲平</persName>は海防策を献じた。これは四十九のときである。五十四のとき<persName ref="#fujita">藤田東湖</persName>と交わって、<persName ref="#nariaki">水戸景山公</persName>に知られた。五十五のとき<persName ref="#perry">ペルリ</persName>が<placeName ref="#uraga">浦賀</placeName>に来たために、<ruby><rb>攘夷封港論</rb><rt>じょういほうこうろん</rt></ruby>をした。この年藩政が気に入らぬので辞職した。しかし相談中をやめられて、用人格というものになっただけで、勤め向きは前の通りであった。五十七のとき<ruby><rb><placeName ref="#ezo">蝦夷</placeName>開拓論</rb><rt>えぞかいたくろん</rt></ruby>をした。六十三のとき藩主に願って隠居した。<persName ref="#ii">井伊</persName>閣老が<placeName ref="#sakuradamitsuke">桜田見附</placeName>で遭難せられ、<persName ref="#nariaki">景山公</persName>が亡くなられた年である。</p>
+        <p>家は五十一のとき<placeName ref="#hayabusacho"><ruby><rb>隼町</rb><rt>はやぶさちょう</rt></ruby></placeName>に移り、翌年火災に遭って、焼け残りの土蔵や建具を売り払って<placeName ref="#bancho">番町</placeName>に移り、五十九のとき<placeName ref="#kojimachi">麹町</placeName><placeName ref="#zenkokujidani">善国寺谷</placeName>に移った。<ruby><rb>辺務</rb><rt>へんむ</rt></ruby>を談ぜないということを書いて二階に張り出したのは、<placeName ref="#bancho">番町</placeName>にいたときである。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>は四十五のときにやや重い病気をして直ったが、五十の歳暮からまた床について、五十一になった年の<date when="1862-01-04">正月四日</date>に亡くなった。夫<persName ref="#nakahira">仲平</persName>が六十四になった年である。あとには男子に、短い運命を持った<persName ref="#tozo">棟蔵</persName>と<persName ref="#kensuke">謙助</persName>との二人、女子に、秋元家の用人の<ruby><rb>倅</rb><rt>せがれ</rt></ruby><persName ref="#tanaka">田中鉄之助</persName>に嫁して不縁になり、ついで<persName ref="#shionoya">塩谷</persName>の媒介で、<placeName ref="#hizen">肥前国</placeName><placeName ref="#shimabara">島原</placeName>産の志士<persName ref="#nakamurasadataro">中村<ruby><rb>貞太郎</rb><rt>ていたろう</rt></ruby></persName>、<ruby><rb>仮名<persName ref="#nakamurasadataro">北有馬太郎</persName></rb><rt>けみょうきたありまたろう</rt></ruby>に嫁した<persName ref="#sumako">須磨子</persName>と、病身な四女<persName ref="#utako">歌子</persName>との二人が残った。<persName ref="#sumako">須磨子</persName>は後の夫に獄中で死なれてから、<persName ref="#ito">お糸</persName>、<persName ref="#kotaro">小太郎</persName>の二人の子を連れて安井家に帰った。<persName ref="#utako">歌子</persName>は母が亡くなってから七箇月目に、二十三歳であとを追って亡くなった。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>はどういう女であったか。美しい肌に粗服をまとって、質素な<persName ref="#nakahira">仲平</persName>に仕えつつ一生を終った。<ruby><rb><placeName ref="#obi">飫肥</placeName><placeName ref="#agata">吾田村</placeName>字<placeName ref="#hoshikura">星倉</placeName></rb><rt>おびあがたむらあざほしくら</rt></ruby>から二里ばかりの<placeName ref="#obuse"><ruby><rb>小布瀬</rb><rt>こふせ</rt></ruby></placeName>に、同宗の<persName ref="#rinpei">安井林平</persName>という人があって、その妻の<persName ref="#oshina">お品</persName>さんが、<persName ref="#sayo">お佐代さん</persName>の記念だと言って、<ruby><rb>木綿縞</rb><rt>もめんじま</rt></ruby>の<ruby><rb>袷</rb><rt>あわせ</rt></ruby>を一枚持っている。おそらくは<persName ref="#sayo">お佐代さん</persName>はめったに絹物などは着なかったのだろう。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>は夫に仕えて労苦を辞せなかった。そしてその報酬には何物をも要求しなかった。ただに服飾の粗に甘んじたばかりではない。立派な<ruby><rb>第宅</rb><rt>ていたく</rt></ruby>におりたいとも言わず、結構な調度を使いたいとも言わず、うまい物を食べたがりも、面白い物を見たがりもしなかった。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>が<ruby><rb>奢侈</rb><rt>しゃし</rt></ruby>を解せぬほどおろかであったとは、誰も信ずることが出来ない。また物質的にも、精神的にも、何物をも希求せぬほど<ruby><rb>恬澹</rb><rt>てんたん</rt></ruby>であったとは、誰も信ずることが出来ない。<persName ref="#sayo">お佐代さん</persName>にはたしかに尋常でない望みがあって、その望みの前には一切の物が<ruby><rb>塵芥</rb><rt>ちりあくた</rt></ruby>のごとく卑しくなっていたのであろう。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>は何を望んだか。世間の賢い人は夫の栄達を望んだのだと言ってしまうだろう。これを書くわたくしもそれを否定することは出来ない。しかしもし商人が資本をおろし財利を<ruby><rb>謀</rb><rt>はか</rt></ruby>るように、<persName ref="#sayo">お佐代さん</persName>が労苦と忍耐とを夫に提供して、まだ報酬を得ぬうちに亡くなったのだと言うなら、わたくしは不敏にしてそれに同意することが出来ない。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>は必ずや未来に何物をか望んでいただろう。そして<ruby><rb>瞑目</rb><rt>めいもく</rt></ruby>するまで、美しい目の視線は遠い、遠い所に注がれていて、あるいは自分の死を不幸だと感ずる余裕をも有せなかったのではあるまいか。その望みの対象をば、あるいは何物ともしかと弁識していなかったのではあるまいか。</p>
+        <p><persName ref="#sayo">お佐代さん</persName>が亡くなってから六箇月目に、<persName ref="#nakahira">仲平</persName>は六十四で<placeName ref="#edojo">江戸城</placeName>に召された。また二箇月目に<persName ref="#shogun">徳川将軍</persName>に<ruby><rb>謁見</rb><rt>えっけん</rt></ruby>して、用人席にせられ、翌年両番上席にせられた。<persName ref="#nakahira">仲平</persName>が<ruby><rb>直参</rb><rt>じきさん</rt></ruby>になったので、藩では<persName ref="#kensuke">謙助</persName>を召し出した。ついで<persName ref="#kensuke">謙助</persName>も<placeName ref="#shoheiko">昌平黌</placeName>出役になったので、藩の名跡は<date when="1857">安政四年</date>に<persName ref="#nakamurasadataro">中村</persName>が<persName ref="#sumako">須磨子</persName>に生ませた長女<persName ref="#ito">糸</persName>に、<persName ref="#keisaburo">高橋<ruby><rb>圭三郎</rb><rt>けいざぶろう</rt></ruby></persName>という<ruby><rb>壻</rb><rt>むこ</rt></ruby>を取って立てた。しかしこの夫婦は早く亡くなった。のちに<persName ref="#sumako">須磨子</persName>の生んだ<persName ref="#kotaro">小太郎</persName>が継いだのはこの家である。<persName ref="#nakahira">仲平</persName>は六十六で<ruby><rb><placeName ref="#mutsu">陸奥</placeName><placeName ref="#hanawa">塙</placeName></rb><rt>むつはなわ</rt></ruby>六万三千九百石の代官にせられたが、病気を申し立てて赴任せずに、<ruby><rb>小普請入</rb><rt>こぶしんい</rt></ruby>りをした。</p>
+        <p>住いは六十五のとき<placeName ref="#okachimachi"><ruby><rb>下谷徒士町</rb><rt>したやかちまち</rt></ruby></placeName>に移り、六十七のとき一時藩の上邸に入っていて、<placeName ref="#kojimachi">麹町</placeName>一丁目<placeName ref="#hanzomon">半蔵門</placeName>外の<ruby><rb>壕端</rb><rt>ほりばた</rt></ruby>の家を買って移った。策士<persName ref="#kumoi"><ruby><rb>雲井龍雄</rb><rt>くもいたつお</rt></ruby></persName>と月見をした<placeName ref="#kaigakuro"><ruby><rb>海嶽楼</rb><rt>かいがくろう</rt></ruby></placeName>は、この家の二階である。</p>
+        <p>幕府滅亡の余波で、<placeName ref="#edo">江戸</placeName>の騒がしかった年に、<persName ref="#nakahira">仲平</persName>は七十で表向き隠居した。まもなく<placeName ref="#kaigakuro">海嶽楼</placeName>は類焼したので、しばらく藩の上邸や下邸に入っていて、市中の騒がしい最中に、<placeName ref="#oji">王子</placeName>在<placeName ref="#ryokemura"><ruby><rb>領家村</rb><rt>りょうけむら</rt></ruby></placeName>の農<persName ref="#zenbei">高橋善兵衛</persName>が弟<persName ref="#masakichi">政吉</persName>の家にひそんだ。<persName ref="#sumako">須磨子</persName>は三年前に<placeName ref="#obi"><ruby><rb>飫肥</rb><rt>おび</rt></ruby></placeName>へ往ったので、<persName ref="#nakahira">仲平</persName>の隠家へは天野家から来た<persName ref="#kensuke">謙助</persName>の妻<persName ref="#yoshiko"><ruby><rb>淑子</rb><rt>よしこ</rt></ruby></persName>と、前年<date when="1867-08">八月</date>に<persName ref="#yoshiko">淑子</persName>の生んだ<persName ref="#chigiku"><ruby><rb>千菊</rb><rt>せんぎく</rt></ruby></persName>とがついて来た。産後体の悪かった<persName ref="#yoshiko">淑子</persName>は、隠家に来てから六箇月目に、十九で亡くなった。<placeName ref="#shimosa"><ruby><rb>下総</rb><rt>しもうさ</rt></ruby></placeName>にいた夫には逢わずに死んだのである。</p>
+        <p><persName ref="#nakahira">仲平</persName>は隠家に冬までいて、<placeName ref="#hikone">彦根</placeName>藩の<placeName ref="#yoyogi">代々木</placeName>邸に移った。これは<ruby><rb>左伝輯釈</rb><rt>さでんしゅうしゃく</rt></ruby>を<placeName ref="#hikone">彦根</placeName>藩で出版してくれた縁故からである。翌年七十一で旧藩の<placeName ref="#sakuradatei">桜田邸</placeName>に移り、七十三のときまた<placeName ref="#dotesanbancho"><ruby><rb>土手</rb><rt>どて</rt></ruby>三番町</placeName>に移った。</p>
+        <p><persName ref="#nakahira">仲平</persName>の亡くなったのは、七十八の年の<date when="1876-09-23">九月二十三日</date>である。<persName ref="#kensuke">謙助</persName>と<persName ref="#yoshiko">淑子</persName>との間に出来た、十歳の孫<persName ref="#chigiku">千菊</persName>が家を継いだ。<persName ref="#chigiku">千菊</persName>の<ruby><rb>夭折</rb><rt>ようせつ</rt></ruby>したあとは<persName ref="#kotaro">小太郎</persName>の二男<persName ref="#saburo">三郎</persName>が立てた。</p>
+        <p><date when="1914-04">大正三年四月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>

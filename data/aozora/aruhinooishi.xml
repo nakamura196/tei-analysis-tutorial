@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>或日の大石内蔵助</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>或日の大石内蔵助</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「芥川龍之介全集2」ちくま文庫、筑摩書房。1986（昭和61）年10月28日第1刷発行。1996（平成8）年7月15日第11刷発行。底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card122.html">https://www.aozora.gr.jp/cards/000879/card122.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="oishi">
+        <persName>大石内蔵助良雄</persName>
+        <note>赤穂浪士の首領。元浅野内匠頭家来。討入り後は細川家に御預けとなる。本作の主人公で、自らの復讐が世間に「忠義」として消費されていく違和感を抱く</note>
+      </person>
+      <person xml:id="asano">
+        <persName>浅野内匠頭</persName>
+        <note>赤穂藩主。内蔵助らの亡君。本文では「元浅野内匠頭家来」</note>
+      </person>
+      <person xml:id="yoshida">
+        <persName>吉田忠左衛門</persName>
+        <note>赤穂浪士。細川家に預けられた十七人の一人。内蔵助と火鉢ごしに言葉を交わす</note>
+      </person>
+      <person xml:id="hayami">
+        <persName>早水藤左衛門</persName>
+        <note>赤穂浪士。下の間から江戸の仇討流行の噂を持ち帰り、堀内伝右衛門を座敷へ連れて来る</note>
+      </person>
+      <person xml:id="kataoka">
+        <persName>片岡源五右衛門</persName>
+        <note>赤穂浪士。厠へ立ち、そのまま下の間に坐りこむ</note>
+      </person>
+      <person xml:id="hara">
+        <persName>原惣右衛門</persName>
+        <note>赤穂浪士。細川家お預けの一人</note>
+      </person>
+      <person xml:id="mase">
+        <persName>間瀬久太夫</persName>
+        <note>赤穂浪士。細川家お預けの一人。小山田庄左衛門を「たわけ者」と罵る</note>
+      </person>
+      <person xml:id="onodera">
+        <persName>小野寺十内</persName>
+        <note>赤穂浪士。一党中の通人。京都の妻女へ消息を書き、内蔵助の放埓の逸話を伝右衛門に語る</note>
+      </person>
+      <person xml:id="horibe">
+        <persName>堀部弥兵衛</persName>
+        <note>赤穂浪士。慷慨家の老人。太平記を読みながら居眠りをする</note>
+      </person>
+      <person xml:id="hazama">
+        <persName>間喜兵衛</persName>
+        <note>赤穂浪士。寡黙な老人</note>
+      </person>
+      <person xml:id="tomimori">
+        <persName>富森助右衛門</persName>
+        <note>赤穂浪士。元旦に屠蘇に酔って「今日も春恥しからぬ寝武士かな」と吟じた</note>
+      </person>
+      <person xml:id="horiuchi">
+        <persName>堀内伝右衛門</persName>
+        <note>細川家の家臣。浪士の当番を勤める朴直な肥後侍。内蔵助の忠義を歎賞する</note>
+      </person>
+      <person xml:id="kira">
+        <persName>吉良</persName>
+        <note>吉良上野介。討たれた讐敵。本文では「吉良殿」</note>
+      </person>
+      <person xml:id="chikamatsu">
+        <persName>近松</persName>
+        <note>赤穂浪士・近松勘六と見られる。下の間で甚三郎の話を語り、伝右衛門らを落涙させた</note>
+      </person>
+      <person xml:id="jinzaburo">
+        <persName>甚三郎</persName>
+        <note>近松が語った話の主人公。詳細は本文に記されない</note>
+      </person>
+      <person xml:id="okuno">
+        <persName>奥野将監</persName>
+        <note>赤穂藩の番頭。当初は相談に加わったが中途で量見を変え、同盟を脱した</note>
+      </person>
+      <person xml:id="shindo">
+        <persName>新藤源四郎</persName>
+        <note>赤穂藩士。原惣右衛門より上席だったが変心した</note>
+      </person>
+      <person xml:id="kawamura">
+        <persName>河村伝兵衛</persName>
+        <note>赤穂藩士。原惣右衛門より上席だったが変心した</note>
+      </person>
+      <person xml:id="koyama">
+        <persName>小山源五左衛門</persName>
+        <note>赤穂藩士。原惣右衛門より上席だったが変心した</note>
+      </person>
+      <person xml:id="sassa">
+        <persName>佐々小左衛門</persName>
+        <note>赤穂藩士。吉田忠左衛門より身分は上だったが変心した</note>
+      </person>
+      <person xml:id="takata">
+        <persName>高田群兵衛</persName>
+        <note>赤穂藩の脱盟者。引き上げの朝に浪士へ声をかけ、堀部弥兵衛の憎悪を買う</note>
+      </person>
+      <person xml:id="oyamada">
+        <persName>小山田庄左衛門</persName>
+        <note>赤穂藩の脱盟者。間瀬久太夫に「たわけ者」と呼ばれる</note>
+      </person>
+      <person xml:id="okabayashi">
+        <persName>岡林杢之助</persName>
+        <note>赤穂藩士。前年に切腹したが、親類縁者に詰腹を斬らされたとの風評が立った</note>
+      </person>
+      <person xml:id="amano">
+        <persName>天野弥左衛門</persName>
+        <note>内蔵助の放埓を「沈勇」と賞美した人物</note>
+      </person>
+      <person xml:id="yugiri">
+        <persName>夕霧</persName>
+        <note>京都の太夫。内蔵助が法衣姿で升屋へ通いつめた相手</note>
+      </person>
+      <person xml:id="ukihashi">
+        <persName>浮橋</persName>
+        <note>京都の太夫。夕霧と並び、内蔵助を下にも置かぬように扱ったという</note>
+      </person>
+      <person xml:id="hosokawa">
+        <persName>細川家</persName>
+        <note>肥後熊本藩の細川家(当主は細川綱利)。討入り後、大石内蔵助ら十七人を邸に預かった。本文では「細川家に御預り」「細川家の家臣/家来」</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="sengakuji">
+        <placeName>泉岳寺</placeName>
+        <location><geo>35.6386 139.7385</geo></location>
+        <note>東京都港区高輪。浅野家の菩提寺で、討入り後に浪士が引き上げた先・概値</note>
+      </place>
+      <place xml:id="ako">
+        <placeName>赤穂</placeName>
+        <location><geo>34.7448 134.3906</geo></location>
+        <note>播磨国赤穂(現・兵庫県赤穂市)。赤穂城跡付近・概値</note>
+      </place>
+      <place xml:id="yamashina">
+        <placeName>山科</placeName>
+        <location><geo>34.97 135.815</geo></location>
+        <note>京都市山科区。内蔵助が隠棲し謀議を重ねた地・概値</note>
+      </place>
+      <place xml:id="maruyama">
+        <placeName>円山</placeName>
+        <location><geo>35.0035 135.782</geo></location>
+        <note>京都東山の円山(円山会議の地とされる安養寺付近)・伝承地・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>現在の東京・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="minamihatchobori">
+        <placeName>南八丁堀</placeName>
+        <location><geo>35.672 139.779</geo></location>
+        <note>江戸南八丁堀(現・東京都中央区八丁堀・湊付近)・概値</note>
+      </place>
+      <place xml:id="minatocho">
+        <placeName>湊町</placeName>
+        <location><geo>35.6698 139.7825</geo></location>
+        <note>江戸南八丁堀の湊町(現・東京都中央区湊付近)・概値</note>
+      </place>
+      <place xml:id="toricho">
+        <placeName>通町三丁目</placeName>
+        <location><geo>35.68 139.774</geo></location>
+        <note>江戸日本橋の通町三丁目(現・東京都中央区日本橋三丁目付近)・概値</note>
+      </place>
+      <place xml:id="shinkojimachi">
+        <placeName>新麹町</placeName>
+        <note>江戸の町名。麹町(現・東京都千代田区麹町)に関わる町名と見られるが、比定に確証がないため座標なし</note>
+      </place>
+      <place xml:id="takao">
+        <placeName>高尾</placeName>
+        <location><geo>35.0578 135.6742</geo></location>
+        <note>京都の高雄(高尾)。神護寺のある紅葉の名所・概値</note>
+      </place>
+      <place xml:id="atago">
+        <placeName>愛宕</placeName>
+        <location><geo>35.0619 135.6329</geo></location>
+        <note>京都の愛宕山・概値</note>
+      </place>
+      <place xml:id="shimabara">
+        <placeName>島原</placeName>
+        <location><geo>34.9946 135.7418</geo></location>
+        <note>京都の島原遊廓(現・京都市下京区西新屋敷)・概値</note>
+      </place>
+      <place xml:id="gion">
+        <placeName>祇園</placeName>
+        <location><geo>35.0037 135.7756</geo></location>
+        <note>京都市東山区祇園・概値</note>
+      </place>
+      <place xml:id="shumokucho">
+        <placeName>撞木町</placeName>
+        <location><geo>34.935 135.766</geo></location>
+        <note>京都伏見の撞木町遊廓(現・京都市伏見区撞木町)・概値</note>
+      </place>
+      <place xml:id="masuya">
+        <placeName>升屋</placeName>
+        <note>内蔵助が夕霧のもとへ通ったという揚屋。所在に確証がないため座標なし</note>
+      </place>
+      <place xml:id="morokoshi">
+        <placeName>唐土</placeName>
+        <location><geo>35.0 105.0</geo></location>
+        <note>中国の古称。国名・概値</note>
+      </place>
+      <place xml:id="higo">
+        <placeName>肥後</placeName>
+        <location><geo>32.8 130.7</geo></location>
+        <note>旧国名(熊本県)。本文では細川家の家臣を指す「肥後侍」・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>或日の大石内蔵助</head>
+        <p>立てきった<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>にはうららかな日の光がさして、<ruby><rb>嵯峨</rb><rt>さが</rt></ruby>たる老木の梅の影が、<ruby><rb>何間</rb><rt>なんげん</rt></ruby>かの<ruby><rb>明</rb><rt>あかる</rt></ruby>みを、右の端から左の端まで画の如く<ruby><rb>鮮</rb><rt>あざやか</rt></ruby>に領している。元<persName ref="#asano"><ruby><rb>浅野内匠頭</rb><rt>あさのたくみのかみ</rt></ruby></persName>家来、当時<persName ref="#hosokawa"><ruby><rb>細川家</rb><rt>ほそかわけ</rt></ruby></persName>に御預り中の<persName ref="#oishi"><ruby><rb>大石内蔵助良雄</rb><rt>おおいしくらのすけよしかつ</rt></ruby></persName>は、その障子を<ruby><rb>後</rb><rt>うしろ</rt></ruby>にして、端然と膝を重ねたまま、さっきから書見に余念がない。書物は恐らく、<persName ref="#hosokawa">細川家</persName>の家臣の一人が借してくれた三国誌の中の一冊であろう。</p>
+        <p>九人一つ座敷にいる<ruby><rb>中</rb><rt>うち</rt></ruby>で、<persName ref="#kataoka"><ruby><rb>片岡源五右衛門</rb><rt>かたおかげんごえもん</rt></ruby></persName>は、今し方<ruby><rb>厠</rb><rt>かわや</rt></ruby>へ立った。<persName ref="#hayami"><ruby><rb>早水藤左衛門</rb><rt>はやみとうざえもん</rt></ruby></persName>は、<ruby><rb>下</rb><rt>しも</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>へ話しに行って、<ruby><rb>未</rb><rt>いまだ</rt></ruby>にここへ帰らない。あとには、<persName ref="#yoshida"><ruby><rb>吉田忠左衛門</rb><rt>よしだちゅうざえもん</rt></ruby></persName>、<persName ref="#hara"><ruby><rb>原惣右衛門</rb><rt>はらそうえもん</rt></ruby></persName>、<persName ref="#mase"><ruby><rb>間瀬久太夫</rb><rt>ませきゅうだゆう</rt></ruby></persName>、<persName ref="#onodera"><ruby><rb>小野寺十内</rb><rt>おのでらじゅうない</rt></ruby></persName>、<persName ref="#horibe"><ruby><rb>堀部弥兵衛</rb><rt>ほりべやへえ</rt></ruby></persName>、<persName ref="#hazama"><ruby><rb>間喜兵衛</rb><rt>はざまきへえ</rt></ruby></persName>の六人が、障子にさしている日影も忘れたように、あるいは書見に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>ったり、あるいは消息を<ruby><rb>認</rb><rt>したた</rt></ruby>めたりしている。その六人が六人とも、五十歳以上の老人ばかり揃っていたせいか、まだ春の浅い座敷の中は、肌寒いばかりにもの<ruby><rb>静</rb><rt>しずか</rt></ruby>である。時たま、しわぶきの声をさせるものがあっても、それは、かすかに<ruby><rb>漂</rb><rt>ただよ</rt></ruby>っている墨の<ruby><rb>匂</rb><rt>におい</rt></ruby>を動かすほどの音さえ立てない。</p>
+        <p><persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>は、ふと眼を三国誌からはなして、遠い所を見るような眼をしながら、静に手を<ruby><rb>傍</rb><rt>かたわら</rt></ruby>の火鉢の上にかざした。<ruby><rb>金網</rb><rt>かなあみ</rt></ruby>をかけた火鉢の中には、いけてある炭の底に、うつくしい赤いものが、かんがりと灰を照らしている。その火気を感じると、<persName ref="#oishi">内蔵助</persName>の心には、安らかな満足の情が、今更のようにあふれて来た。丁度、去年の<date when="--12-15"><ruby><rb>極月</rb><rt>ごくげつ</rt></ruby>十五日</date>に、亡君の<ruby><rb>讐</rb><rt>あだ</rt></ruby>を復して、<placeName ref="#sengakuji"><ruby><rb>泉岳寺</rb><rt>せんがくじ</rt></ruby></placeName>へ引上げた時、彼<ruby><rb>自</rb><rt>みずか</rt></ruby>ら「あらたのし思いははるる身はすつる、うきよの月にかかる雲なし」と詠じた、その時の満足が帰って来たのである。</p>
+        <p><placeName ref="#ako"><ruby><rb>赤穂</rb><rt>あこう</rt></ruby></placeName>の城を退去して以来、二年に近い月日を、<ruby><rb>如何</rb><rt>いか</rt></ruby>に彼は焦慮と<ruby><rb>画策</rb><rt>かくさく</rt></ruby>との<ruby><rb>中</rb><rt>うち</rt></ruby>に、<ruby><rb>費</rb><rt>ついや</rt></ruby>した事であろう。<ruby><rb>動</rb><rt>やや</rt></ruby>もすればはやり勝ちな、一党の<ruby><rb>客気</rb><rt>かっき</rt></ruby>を<ruby><rb>控制</rb><rt>こうせい</rt></ruby>して、<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に機の熟するのを待っただけでも、<ruby><rb>並大抵</rb><rt>なみたいてい</rt></ruby>な骨折りではない。しかも<ruby><rb>讐家</rb><rt>しゅうか</rt></ruby>の放った<ruby><rb>細作</rb><rt>さいさく</rt></ruby>は、絶えず彼の身辺を<ruby><rb>窺</rb><rt>うかが</rt></ruby>っている。彼は<ruby><rb>放埓</rb><rt>ほうらつ</rt></ruby>を装って、これらの細作の眼を欺くと共に、併せてまた、その放埓に欺かれた同志の疑惑をも解かなければならなかった。<placeName ref="#yamashina"><ruby><rb>山科</rb><rt>やましな</rt></ruby></placeName>や<placeName ref="#maruyama"><ruby><rb>円山</rb><rt>まるやま</rt></ruby></placeName>の謀議の昔を思い返せば、当時の苦衷が再び心の中によみ返って来る。――しかし、もうすべては行く処へ行きついた。</p>
+        <p>もし、まだ片のつかないものがあるとすれば、それは一党四十七人に対する、<ruby><rb>公儀</rb><rt>こうぎ</rt></ruby>の<ruby><rb>御沙汰</rb><rt>ごさた</rt></ruby>だけである。が、その御沙汰があるのも、いずれ遠い事ではないのに違いない。そうだ。すべては行く処へ行きついた。それも単に、復讐の挙が<ruby><rb>成就</rb><rt>じょうじゅ</rt></ruby>したと云うばかりではない。すべてが、彼の道徳上の要求と、ほとんど完全に一致するような形式で成就した。彼は、事業を完成した満足を味ったばかりでなく、道徳を体現した満足をも、同時に味う事が出来たのである。しかも、その満足は、復讐の目的から考えても、手段から考えても、良心の<ruby><rb>疚</rb><rt>やま</rt></ruby>しさに曇らされる所は少しもない。彼として、これ以上の満足があり得ようか。……</p>
+        <p>こう思いながら、<persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>は眉をのべて、これも書見に<ruby><rb>倦</rb><rt>う</rt></ruby>んだのか、書物を伏せた膝の上へ、指で手習いをしていた<persName ref="#yoshida">吉田忠左衛門</persName>に、火鉢のこちらから声をかけた。</p>
+        <p>「<ruby><rb>今日</rb><rt>きょう</rt></ruby>は余程暖いようですな。」</p>
+        <p>「さようでございます。こうして居りましても、どうかすると、あまり暖いので、<ruby><rb>睡気</rb><rt>ねむけ</rt></ruby>がさしそうでなりません。」</p>
+        <p><persName ref="#oishi">内蔵助</persName>は微笑した。この<date when="--01-01">正月の元旦</date>に、<persName ref="#tomimori"><ruby><rb>富森助右衛門</rb><rt>とみのもりすけえもん</rt></ruby></persName>が、三杯の<ruby><rb>屠蘇</rb><rt>とそ</rt></ruby>に酔って、「今日も春恥しからぬ寝武士かな」と吟じた、その句がふと念頭に浮んだからである。句意も、<persName ref="#oishi"><ruby><rb>良雄</rb><rt>よしかつ</rt></ruby></persName>が今感じている満足と変りはない。</p>
+        <p>「やはり本意を<ruby><rb>遂</rb><rt>と</rt></ruby>げたと云う、気のゆるみがあるのでございましょう。」</p>
+        <p>「さようさ。それもありましょう。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>は、手もとの<ruby><rb>煙管</rb><rt>きせる</rt></ruby>をとり上げて、つつましく一服の煙を味った。煙は、早春の午後をわずかにくゆらせながら、明い静かさの中に、うす青く消えてしまう。</p>
+        <p>「こう云うのどかな日を送る事があろうとは、お互に思いがけなかった事ですからな。」</p>
+        <p>「さようでございます。手前も二度と、春に逢おうなどとは、夢にも存じませんでした。」</p>
+        <p>「我々は、よくよく運のよいものと見えますな。」</p>
+        <p>二人は、満足そうに、眼で笑い合った。――もしこの時、<persName ref="#oishi">良雄</persName>の<ruby><rb>後</rb><rt>うしろ</rt></ruby>の障子に、影法師が一つ映らなかったなら、そうして、その影法師が、障子の<ruby><rb>引手</rb><rt>ひきて</rt></ruby>へ手をかけると共に消えて、その代りに、<persName ref="#hayami">早水藤左衛門</persName>の逞しい姿が、座敷の中へはいって来なかったなら、<persName ref="#oishi">良雄</persName>はいつまでも、快い春の日の暖さを、その誇らかな満足の情と共に、味わう事が出来たのであろう。が、現実は、血色の良い<persName ref="#hayami">藤左衛門</persName>の両頬に浮んでいる、ゆたかな微笑と共に、遠慮なく二人の間へはいって来た。が、彼等は、勿論それには気がつかない。</p>
+        <p>「<ruby><rb>大分</rb><rt>だいぶ</rt></ruby><ruby><rb>下</rb><rt>しも</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>は、賑かなようですな。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>は、こう云いながら、また<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を一服吸いつけた。</p>
+        <p>「今日の当番は、<persName ref="#horiuchi"><ruby><rb>伝右衛門</rb><rt>でんえもん</rt></ruby></persName>殿ですから、それで余計話がはずむのでしょう。<persName ref="#kataoka">片岡</persName>なども、今し方あちらへ参って、そのまま坐りこんでしまいました。」</p>
+        <p>「道理こそ、遅いと思いましたよ。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>は、煙にむせて、苦しそうに笑った。すると、<ruby><rb>頻</rb><rt>しきり</rt></ruby>に筆を走らせていた<persName ref="#onodera">小野寺十内</persName>が、何かと思った<ruby><rb>気色</rb><rt>けしき</rt></ruby>で、ちょいと顔をあげたが、すぐまた眼を紙へ落して、せっせとあとを書き始める。これは恐らく、<placeName ref="#kyoto">京都</placeName>の妻女へ送る消息でも、<ruby><rb>認</rb><rt>したた</rt></ruby>めていたものであろう。――<persName ref="#oishi">内蔵助</persName>も、<ruby><rb>眦</rb><rt>まなじり</rt></ruby>の<ruby><rb>皺</rb><rt>しわ</rt></ruby>を深くして、笑いながら、</p>
+        <p>「何か面白い話でもありましたか。」</p>
+        <p>「いえ。<ruby><rb>不相変</rb><rt>あいかわらず</rt></ruby>の無駄話ばかりでございます。もっとも先刻、<persName ref="#chikamatsu"><ruby><rb>近松</rb><rt>ちかまつ</rt></ruby></persName>が<persName ref="#jinzaburo"><ruby><rb>甚三郎</rb><rt>じんざぶろう</rt></ruby></persName>の話を致した時には、<persName ref="#horiuchi">伝右衛門</persName>殿なぞも、眼に涙をためて、聞いて居られましたが、そのほかは――いや、そう云えば、面白い話がございました。我々が<persName ref="#kira"><ruby><rb>吉良</rb><rt>きら</rt></ruby></persName>殿を討取って以来、<placeName ref="#edo">江戸</placeName>中に何かと<ruby><rb>仇討</rb><rt>あだうち</rt></ruby>じみた事が<ruby><rb>流行</rb><rt>はや</rt></ruby>るそうでございます。」</p>
+        <p>「ははあ、それは思いもよりませんな。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>は、けげんな顔をして、<persName ref="#hayami">藤左衛門</persName>を見た。相手は、この話をして聞かせるのが、<ruby><rb>何故</rb><rt>なぜ</rt></ruby>か非常に得意らしい。</p>
+        <p>「今も似よりの話を二つ三つ聞いて来ましたが、中でも<ruby><rb>可笑</rb><rt>おか</rt></ruby>しかったのは、<placeName ref="#minamihatchobori"><ruby><rb>南八丁堀</rb><rt>みなみはっちょうぼり</rt></ruby></placeName>の<placeName ref="#minatocho"><ruby><rb>湊町</rb><rt>みなとちょう</rt></ruby></placeName>辺にあった話です。何でも事の起りは、あの<ruby><rb>界隈</rb><rt>かいわい</rt></ruby>の米屋の亭主が、風呂屋で、隣同志の紺屋の職人と喧嘩をしたのですな。どうせ起りは、湯がはねかったとか何とか云う、つまらない事からなのでしょう。そうして、その<ruby><rb>揚句</rb><rt>あげく</rt></ruby>に米屋の亭主の方が、紺屋の職人に桶で散々<ruby><rb>撲</rb><rt>なぐ</rt></ruby>られたのだそうです。すると、米屋の<ruby><rb>丁稚</rb><rt>でっち</rt></ruby>が一人、それを遺恨に思って、<ruby><rb>暮方</rb><rt>くれがた</rt></ruby>その職人の外へ出る所を待伏せて、いきなり<ruby><rb>鉤</rb><rt>かぎ</rt></ruby>を向うの肩へ打ちこんだと云うじゃありませんか。それも「主人の<ruby><rb>讐</rb><rt>かたき</rt></ruby>、思い知れ」と云いながら、やったのだそうです。……」</p>
+        <p><persName ref="#hayami">藤左衛門</persName>は、手真似をしながら、笑い笑い、こう云った。</p>
+        <p>「それはまた乱暴至極ですな。」</p>
+        <p>「職人の方は、<ruby><rb>大怪我</rb><rt>おおけが</rt></ruby>をしたようです。それでも、近所の評判は、その<ruby><rb>丁稚</rb><rt>でっち</rt></ruby>の方が<ruby><rb>好</rb><rt>よ</rt></ruby>いと云うのだから、不思議でしょう。そのほかまだその<placeName ref="#toricho"><ruby><rb>通町</rb><rt>とおりちょう</rt></ruby>三丁目</placeName>にも一つ、<placeName ref="#shinkojimachi"><ruby><rb>新麹町</rb><rt>しんこうじまち</rt></ruby></placeName>の二丁目にも一つ、それから、もう一つはどこでしたかな。とにかく、諸方にあるそうです。それが皆、我々の真似だそうだから、<ruby><rb>可笑</rb><rt>おか</rt></ruby>しいじゃありませんか。」</p>
+        <p><persName ref="#hayami">藤左衛門</persName>と<persName ref="#yoshida">忠左衛門</persName>とは、顔を見合せて、笑った。復讐の挙が<placeName ref="#edo">江戸</placeName>の人心に与えた影響を耳にするのは、どんな<ruby><rb>些事</rb><rt>さじ</rt></ruby>にしても、快いに相違ない。ただ一人<persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>だけは、僅に額へ手を加えたまま、つまらなそうな顔をして、黙っている。――<persName ref="#hayami">藤左衛門</persName>の話は、彼の心の満足に、かすかながら妙な曇りを落させた。と云っても、勿論彼が、彼のした行為のあらゆる結果に、責任を持つ気でいた訳ではない。彼等が復讐の挙を果して以来、<placeName ref="#edo">江戸</placeName>中に仇討が流行した所で、それはもとより彼の良心と<ruby><rb>風馬牛</rb><rt>ふうばぎゅう</rt></ruby>なのが当然である。しかし、それにも関らず、彼の心からは、今までの春の<ruby><rb>温</rb><rt>ぬく</rt></ruby>もりが、幾分か減却したような感じがあった。</p>
+        <p>事実を云えば、その時の彼は、単に自分たちのした事の影響が、意外な所まで波動したのに、<ruby><rb>聊</rb><rt>いささ</rt></ruby>か驚いただけなのである。が、ふだんの彼なら、<persName ref="#hayami">藤左衛門</persName>や<persName ref="#yoshida">忠左衛門</persName>と共に、笑ってすませる筈のこの事実が、その時の満足しきった彼の心には、ふと不快な種を<ruby><rb>蒔</rb><rt>ま</rt></ruby>く事になった。これは恐らく、彼の満足が、暗々の<ruby><rb>裡</rb><rt>うち</rt></ruby>に論理と<ruby><rb>背馳</rb><rt>はいち</rt></ruby>して、彼の行為とその結果のすべてとを肯定するほど、虫の好い性質を帯びていたからであろう。勿論当時の彼の心には、こう云う<ruby><rb>解剖的</rb><rt>かいぼうてき</rt></ruby>な考えは、少しもはいって来なかった。彼はただ、<ruby><rb>春風</rb><rt>しゅんぷう</rt></ruby>の底に一脈の<ruby><rb>氷冷</rb><rt>ひれい</rt></ruby>の気を感じて、何となく不愉快になっただけである。</p>
+        <p>しかし、<persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>の笑わなかったのは、格別二人の注意を惹かなかったらしい。いや、人の好い<persName ref="#hayami">藤左衛門</persName>の如きは、彼自身にとってこの話が興味あるように、<persName ref="#oishi">内蔵助</persName>にとっても興味があるものと確信して疑わなかったのであろう。それでなければ、彼は、更に自身<ruby><rb>下</rb><rt>しも</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>へ赴いて、当日の当直だった<persName ref="#hosokawa">細川家</persName>の家来、<persName ref="#horiuchi">堀内伝右衛門</persName>を、わざわざこちらへつれて来などはしなかったのに相違ない。所が、万事にまめな彼は、<persName ref="#yoshida">忠左衛門</persName>を<ruby><rb>顧</rb><rt>かえりみ</rt></ruby>て、「<persName ref="#horiuchi">伝右衛門</persName>殿をよんで来ましょう。」とか何とか云うと、早速隔ての<ruby><rb>襖</rb><rt>ふすま</rt></ruby>をあけて、気軽く下の間へ出向いて行った。そうして、ほどなく、見た所から<ruby><rb>無骨</rb><rt>ぶこつ</rt></ruby>らしい<persName ref="#horiuchi">伝右衛門</persName>を伴なって、<ruby><rb>不相変</rb><rt>あいかわらず</rt></ruby>の微笑をたたえながら、<ruby><rb>得々</rb><rt>とくとく</rt></ruby>として帰って来た。</p>
+        <p>「いや、これは、とんだ御足労を願って恐縮でございますな。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>は、<persName ref="#horiuchi">伝右衛門</persName>の姿を見ると、<persName ref="#oishi"><ruby><rb>良雄</rb><rt>よしかつ</rt></ruby></persName>に代って、微笑しながらこう云った。<persName ref="#horiuchi">伝右衛門</persName>の素朴で、<ruby><rb>真率</rb><rt>しんそつ</rt></ruby>な性格は、お預けになって以来、<ruby><rb>夙</rb><rt>つと</rt></ruby>に彼と彼等との間を、<ruby><rb>故旧</rb><rt>こきゅう</rt></ruby>のような温情でつないでいたからである。</p>
+        <p>「<ruby><rb><persName ref="#hayami">早水</persName>氏</rb><rt>はやみうじ</rt></ruby>が是非こちらへ参れと云われるので、御邪魔とは思いながら、<ruby><rb>罷</rb><rt>まか</rt></ruby>り出ました。」</p>
+        <p><persName ref="#horiuchi">伝右衛門</persName>は、座につくと、太い眉毛を動かしながら、日にやけた頬の筋肉を、今にも笑い出しそうに動かして、万遍なく一座を見廻した。これにつれて、書物を読んでいたのも、筆を動かしていたのも、皆それぞれ<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>をする。<persName ref="#oishi">内蔵助</persName>もやはり、<ruby><rb>慇懃</rb><rt>いんぎん</rt></ruby>に会釈をした。ただその中で<ruby><rb>聊</rb><rt>いささ</rt></ruby>か滑稽の観があったのは、読みかけた太平記を前に置いて、眼鏡をかけたまま、居眠りをしていた<persName ref="#horibe">堀部弥兵衛</persName>が、眼をさますが早いか、慌ててその眼鏡をはずして、丁寧に頭を下げた<ruby><rb>容子</rb><rt>ようす</rt></ruby>である。これにはさすがな<persName ref="#hazama">間喜兵衛</persName>も、よくよく<ruby><rb>可笑</rb><rt>おか</rt></ruby>しかったものと見えて、<ruby><rb>傍</rb><rt>かたわら</rt></ruby>の<ruby><rb>衝立</rb><rt>ついたて</rt></ruby>の方を向きながら、苦しそうな顔をして笑をこらえていた。</p>
+        <p>「<persName ref="#horiuchi">伝右衛門</persName>殿も老人はお嫌いだと見えて、とかくこちらへはお<ruby><rb>出</rb><rt>いで</rt></ruby>になりませんな。」</p>
+        <p><persName ref="#oishi">内蔵助</persName>は、いつに似合わない、<ruby><rb>滑</rb><rt>なめらか</rt></ruby>な調子で、こう云った。幾分か乱されはしたものの、まだ彼の胸底には、さっきの満足の情が、暖く流れていたからであろう。</p>
+        <p>「いや、そう云う訳ではございませんが、何かとあちらの<ruby><rb>方々</rb><rt>かたがた</rt></ruby>に引とめられて、ついそのまま、話しこんでしまうのでございます。」</p>
+        <p>「今も<ruby><rb>承</rb><rt>うけたまわ</rt></ruby>れば、<ruby><rb>大分</rb><rt>だいぶ</rt></ruby>面白い話が出たようでございますな。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>も、<ruby><rb>傍</rb><rt>かたわら</rt></ruby>から口を<ruby><rb>挟</rb><rt>はさ</rt></ruby>んだ。</p>
+        <p>「面白い話――と申しますと……」</p>
+        <p>「<placeName ref="#edo">江戸</placeName>中で<ruby><rb>仇討</rb><rt>あだうち</rt></ruby>の真似事が<ruby><rb>流行</rb><rt>はや</rt></ruby>ると云う、あの話でございます。」</p>
+        <p><persName ref="#hayami">藤左衛門</persName>は、こう云って、<persName ref="#horiuchi">伝右衛門</persName>と<persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>とを、にこにこしながら、等分に見比べた。</p>
+        <p>「はあ、いや、あの話でございますか。人情と云うものは、実に妙なものでございます。御一同の忠義に感じると、町人百姓までそう云う真似がして見たくなるのでございましょう。これで、どのくらいじだらくな<ruby><rb>上下</rb><rt>じょうげ</rt></ruby>の風俗が、改まるかわかりません。やれ<ruby><rb>浄瑠璃</rb><rt>じょうるり</rt></ruby>の、やれ歌舞伎のと、見たくもないものばかり<ruby><rb>流行</rb><rt>はや</rt></ruby>っている時でございますから、丁度よろしゅうございます。」</p>
+        <p>会話の進行は、また<persName ref="#oishi">内蔵助</persName>にとって、面白くない方向へ進むらしい。そこで、彼は、わざと重々しい調子で、<ruby><rb>卑下</rb><rt>ひげ</rt></ruby>の辞を述べながら、<ruby><rb>巧</rb><rt>たくみ</rt></ruby>にその方向を転換しようとした。</p>
+        <p>「手前たちの忠義をお<ruby><rb>褒</rb><rt>ほ</rt></ruby>め下さるのは<ruby><rb>難有</rb><rt>ありがた</rt></ruby>いが、手前<ruby><rb>一人</rb><rt>ひとり</rt></ruby>の量見では、お恥しい方が先に立ちます。」</p>
+        <p>こう云って、一座を眺めながら、</p>
+        <p>「何故かと申しますと、<placeName ref="#ako">赤穂</placeName>一藩に人も多い中で、御覧の通りここに居りまするものは、皆<ruby><rb>小身者</rb><rt>しょうしんもの</rt></ruby>ばかりでございます。もっとも最初は、<persName ref="#okuno"><ruby><rb>奥野将監</rb><rt>おくのしょうげん</rt></ruby></persName>などと申す<ruby><rb>番頭</rb><rt>ばんがしら</rt></ruby>も、何かと相談にのったものでございますが、中ごろから量見を変え、ついに同盟を脱しましたのは、心外と申すよりほかはございません。そのほか、<persName ref="#shindo"><ruby><rb>新藤源四郎</rb><rt>しんどうげんしろう</rt></ruby></persName>、<persName ref="#kawamura"><ruby><rb>河村伝兵衛</rb><rt>かわむらでんびょうえ</rt></ruby></persName>、<persName ref="#koyama"><ruby><rb>小山源五左衛門</rb><rt>こやまげんござえもん</rt></ruby></persName>などは、<persName ref="#hara">原惣右衛門</persName>より上席でございますし、<persName ref="#sassa"><ruby><rb>佐々小左衛門</rb><rt>ささこざえもん</rt></ruby></persName>なども、<persName ref="#yoshida">吉田忠左衛門</persName>より身分は上でございますが、皆一挙が近づくにつれて、変心致しました。その中には、手前の親族の者もございます。して見ればお恥しい気のするのも無理はございますまい。」</p>
+        <p>一座の空気は、<persName ref="#oishi">内蔵助</persName>のこの<ruby><rb>語</rb><rt>ことば</rt></ruby>と共に、今までの陽気さをなくなして、急に<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>な調子を帯びた。この意味で、会話は、彼の意図通り、方向を転換したと云っても差支えない。が、転換した方向が、果して<persName ref="#oishi">内蔵助</persName>にとって、愉快なものだったかどうかは、<ruby><rb>自</rb><rt>おのずか</rt></ruby>らまた別な問題である。</p>
+        <p>彼の述懐を聞くと、まず<persName ref="#hayami">早水藤左衛門</persName>は、両手にこしらえていた<ruby><rb>拳骨</rb><rt>げんこつ</rt></ruby>を、二三度膝の上にこすりながら、</p>
+        <p>「<ruby><rb>彼奴等</rb><rt>きゃつら</rt></ruby>は皆、揃いも揃った<ruby><rb>人畜生</rb><rt>にんちくしょう</rt></ruby>ばかりですな。一人として、武士の<ruby><rb>風上</rb><rt>かざかみ</rt></ruby>にも置けるような奴は居りません。」</p>
+        <p>「さようさ。それも<persName ref="#takata"><ruby><rb>高田群兵衛</rb><rt>たかたぐんべえ</rt></ruby></persName>などになると、畜生より劣っていますて。」</p>
+        <p><persName ref="#yoshida">忠左衛門</persName>は、眉をあげて、賛同を求めるように、<persName ref="#horibe">堀部弥兵衛</persName>を見た。<ruby><rb>慷慨家</rb><rt>こうがいか</rt></ruby>の<persName ref="#horibe">弥兵衛</persName>は、もとより黙っていない。</p>
+        <p>「引き上げの朝、<ruby><rb>彼奴</rb><rt>きゃつ</rt></ruby>に<ruby><rb>遇</rb><rt>あ</rt></ruby>った時には、唾を吐きかけても飽き足らぬと思いました。何しろのめのめと我々の前へ<ruby><rb>面</rb><rt>つら</rt></ruby>をさらした上に、御<ruby><rb>本望</rb><rt>ほんもう</rt></ruby>を遂げられ、大慶の至りなどと云うのですからな。」</p>
+        <p>「<persName ref="#takata">高田</persName>も<persName ref="#takata">高田</persName>じゃが、<persName ref="#oyamada"><ruby><rb>小山田庄左衛門</rb><rt>おやまだしょうざえもん</rt></ruby></persName>などもしようのないたわけ者じゃ。」</p>
+        <p><persName ref="#mase">間瀬久太夫</persName>が、誰に云うともなくこう云うと、<persName ref="#hara">原惣右衛門</persName>や<persName ref="#onodera">小野寺十内</persName>も、やはり口を<ruby><rb>斉</rb><rt>ひと</rt></ruby>しくして、<ruby><rb>背盟</rb><rt>はいめい</rt></ruby>の徒を罵りはじめた。寡黙な<persName ref="#hazama">間喜兵衛</persName>でさえ、口こそきかないが、<ruby><rb>白髪</rb><rt>しらが</rt></ruby>頭をうなずかせて、一同の意見に賛同の意を表した事は、<ruby><rb>度々</rb><rt>どど</rt></ruby>ある。</p>
+        <p>「何に致せ、御一同のような忠臣と、一つ<ruby><rb>御</rb><rt>ご</rt></ruby>藩に、さような<ruby><rb>輩</rb><rt>やから</rt></ruby>が<ruby><rb>居</rb><rt>お</rt></ruby>ろうとは、考えられも致しませんな。さればこそ、武士はもとより、町人百姓まで、<ruby><rb>犬侍</rb><rt>いぬざむらい</rt></ruby>の<ruby><rb>禄盗人</rb><rt>ろくぬすびと</rt></ruby>のと<ruby><rb>悪口</rb><rt>あっこう</rt></ruby>を申して<ruby><rb>居</rb><rt>お</rt></ruby>るようでございます。<persName ref="#okabayashi"><ruby><rb>岡林杢之助</rb><rt>おかばやしもくのすけ</rt></ruby></persName>殿なども、昨年切腹こそ致されたが、やはり親類縁者が申し合せて、<ruby><rb>詰腹</rb><rt>つめばら</rt></ruby>を斬らせたのだなどと云う風評がございました。またよしんばそうでないにしても、かような場合に立ち至って見れば、その汚名も受けずには<ruby><rb>居</rb><rt>お</rt></ruby>られますまい。まして、余人は<ruby><rb>猶更</rb><rt>なおさら</rt></ruby>の事でございます。これは、<ruby><rb>仇討</rb><rt>あだうち</rt></ruby>の真似事を致すほど、義に勇みやすい<placeName ref="#edo">江戸</placeName>の事と申し、<ruby><rb>且</rb><rt>かつ</rt></ruby>はかねがね御一同の<ruby><rb>御憤</rb><rt>おいきどお</rt></ruby>りもある事と申し、さような輩を斬ってすてるものが出ないとも、限りませんな。」</p>
+        <p><persName ref="#horiuchi">伝右衛門</persName>は、<ruby><rb>他人事</rb><rt>ひとごと</rt></ruby>とは思われないような<ruby><rb>容子</rb><rt>ようす</rt></ruby>で、昂然とこう云い放った。この分では、誰よりも彼自身が、その斬り捨ての任に当り兼ねない勢いである。これに<ruby><rb>煽動</rb><rt>せんどう</rt></ruby>された<persName ref="#yoshida">吉田</persName>、<persName ref="#hara">原</persName>、<persName ref="#hayami">早水</persName>、<persName ref="#horibe">堀部</persName>などは、皆一種の興奮を感じたように、<ruby><rb>愈</rb><rt>いよいよ</rt></ruby>手ひどく、乱臣賊子を<ruby><rb>罵殺</rb><rt>ばさつ</rt></ruby>しにかかった。――が、その中にただ一人、<persName ref="#oishi">大石内蔵助</persName>だけは、両手を膝の上にのせたまま、<ruby><rb>愈</rb><rt>いよいよ</rt></ruby>つまらなそうな顔をして、だんだん口数をへらしながら、ぼんやり火鉢の中を眺めている。</p>
+        <p>彼は、彼の転換した方面へ会話が進行した結果、変心した故朋輩の代価で、彼等の忠義が<ruby><rb>益</rb><rt>ますます</rt></ruby><ruby><rb>褒</rb><rt>ほ</rt></ruby>めそやされていると云う、新しい事実を発見した。そうして、それと共に、彼の胸底を吹いていた春風は、再び幾分の<ruby><rb>温</rb><rt>ぬく</rt></ruby>もりを減却した。勿論彼が背盟の徒のために惜んだのは、単に会話の方向を転じたかったためばかりではない、彼としては、実際彼等の変心を遺憾とも不快とも思っていた。が、彼はそれらの不忠の侍をも、憐みこそすれ、憎いとは思っていない。人情の<ruby><rb>向背</rb><rt>こうはい</rt></ruby>も、<ruby><rb>世故</rb><rt>せこ</rt></ruby>の転変も、つぶさに味って来た彼の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>から見れば、彼等の変心の多くは、自然すぎるほど自然であった。もし<ruby><rb>真率</rb><rt>しんそつ</rt></ruby>と云う<ruby><rb>語</rb><rt>ことば</rt></ruby>が許されるとすれば、気の毒なくらい真率であった。従って、彼は彼等に対しても、終始寛容の態度を改めなかった。まして、復讐の事の成った今になって見れば、彼等に与う可きものは、ただ<ruby><rb>憫笑</rb><rt>びんしょう</rt></ruby>が残っているだけである。それを世間は、殺しても猶飽き足らないように、思っているらしい。何故我々を忠義の士とするためには、彼等を<ruby><rb>人畜生</rb><rt>にんちくしょう</rt></ruby>としなければならないのであろう。我々と彼等との差は、存外大きなものではない。――<placeName ref="#edo">江戸</placeName>の町人に与えた妙な影響を、前に快からず思った<persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>は、それとは<ruby><rb>稍</rb><rt>やや</rt></ruby>ちがった意味で、今度は背盟の徒が蒙った影響を、<persName ref="#horiuchi">伝右衛門</persName>によって代表された、天下の公論の中に看取した。彼が苦い顔をしたのも、決して偶然ではない。</p>
+        <p>しかし、<persName ref="#oishi">内蔵助</persName>の不快は、まだこの上に、最後の仕上げを受ける運命を持っていた。</p>
+        <p>彼の無言でいるのを見た<persName ref="#horiuchi">伝右衛門</persName>は、<ruby><rb>大方</rb><rt>おおかた</rt></ruby>それを彼らしい謙譲な心もちの結果とでも、推測したのであろう。<ruby><rb>愈</rb><rt>いよいよ</rt></ruby>彼の人柄に敬服した。その敬服さ加減を<ruby><rb>披瀝</rb><rt>ひれき</rt></ruby>するために、この朴直な<ruby><rb><placeName ref="#higo">肥後</placeName>侍</rb><rt>ひござむらい</rt></ruby>は、無理に話頭を一転すると、たちまち<persName ref="#oishi">内蔵助</persName>の忠義に対する、盛な歎賞の辞をならべはじめた。</p>
+        <p>「過日もさる物識りから承りましたが、<placeName ref="#morokoshi"><ruby><rb>唐土</rb><rt>もろこし</rt></ruby></placeName>の何とやら申す侍は、炭を呑んで<ruby><rb>唖</rb><rt>おし</rt></ruby>になってまでも、主人の<ruby><rb>仇</rb><rt>あだ</rt></ruby>をつけ狙ったそうでございますな。しかし、それは<persName ref="#oishi">内蔵助</persName>殿のように、心にもない<ruby><rb>放埓</rb><rt>ほうらつ</rt></ruby>をつくされるよりは、まだまだ苦しくない<ruby><rb>方</rb><rt>ほう</rt></ruby>ではございますまいか。」</p>
+        <p><persName ref="#horiuchi">伝右衛門</persName>は、こう云う前置きをして、それから、<persName ref="#oishi">内蔵助</persName>が<ruby><rb>濫行</rb><rt>らんこう</rt></ruby>を尽した一年前の<ruby><rb>逸聞</rb><rt>いつぶん</rt></ruby>を、長々としゃべり出した。<placeName ref="#takao"><ruby><rb>高尾</rb><rt>たかお</rt></ruby></placeName>や<placeName ref="#atago"><ruby><rb>愛宕</rb><rt>あたご</rt></ruby></placeName>の紅葉狩も、<ruby><rb>佯狂</rb><rt>ようきょう</rt></ruby>の彼には、どのくらいつらかった事であろう。<placeName ref="#shimabara"><ruby><rb>島原</rb><rt>しまばら</rt></ruby></placeName>や<placeName ref="#gion"><ruby><rb>祇園</rb><rt>ぎおん</rt></ruby></placeName>の花見の<ruby><rb>宴</rb><rt>えん</rt></ruby>も、苦肉の計に耽っている彼には、苦しかったのに相違ない。……</p>
+        <p>「承れば、その頃<placeName ref="#kyoto">京都</placeName>では、<persName ref="#oishi">大石</persName>かるくて<ruby><rb>張抜石</rb><rt>はりぬきいし</rt></ruby>などと申す唄も、<ruby><rb>流行</rb><rt>はや</rt></ruby>りました由を聞き及びました。それほどまでに、天下を欺き<ruby><rb>了</rb><rt>おお</rt></ruby>せるのは、よくよくの事でなければ出来ますまい。先頃<persName ref="#amano"><ruby><rb>天野弥左衛門</rb><rt>あまのやざえもん</rt></ruby></persName>様が、沈勇だと御賞美になったのも、至極道理な事でございます。」</p>
+        <p>「いや、それほど何も、大した事ではございません。」<persName ref="#oishi">内蔵助</persName>は、<ruby><rb>不承不承</rb><rt>ふしょうぶしょう</rt></ruby>に答えた。</p>
+        <p>その人に<ruby><rb>傲</rb><rt>たかぶ</rt></ruby>らない態度が、<persName ref="#horiuchi">伝右衛門</persName>にとっては、物足りないと同時に、一層の奥床しさを感じさせたと見えて、今まで<persName ref="#oishi">内蔵助</persName>の方を向いていた彼は、永年<placeName ref="#kyoto">京都</placeName><ruby><rb>勤番</rb><rt>きんばん</rt></ruby>をつとめていた<persName ref="#onodera">小野寺十内</persName>の方へ向きを換えると、<ruby><rb>益</rb><rt>ますます</rt></ruby>、熱心に推服の意を<ruby><rb>洩</rb><rt>もら</rt></ruby>し始めた。その子供らしい熱心さが、一党の中でも通人の名の高い<persName ref="#onodera">十内</persName>には、<ruby><rb>可笑</rb><rt>おか</rt></ruby>しいと同時に、<ruby><rb>可愛</rb><rt>かわい</rt></ruby>かったのであろう。彼は、<ruby><rb>素直</rb><rt>すなお</rt></ruby>に<persName ref="#horiuchi">伝右衛門</persName>の意をむかえて、当時<persName ref="#oishi">内蔵助</persName>が<ruby><rb>仇家</rb><rt>きゅうか</rt></ruby>の<ruby><rb>細作</rb><rt>さいさく</rt></ruby>を欺くために、<ruby><rb>法衣</rb><rt>ころも</rt></ruby>をまとって<placeName ref="#masuya"><ruby><rb>升屋</rb><rt>ますや</rt></ruby></placeName>の<persName ref="#yugiri"><ruby><rb>夕霧</rb><rt>ゆうぎり</rt></ruby></persName>のもとへ通いつめた話を、事明細に話して聞かせた。</p>
+        <p>「あの通り真面目な顔をしている<persName ref="#oishi"><ruby><rb>内蔵助</rb><rt>くらのすけ</rt></ruby></persName>が、当時は里げしきと申す唄を作った事もございました。それがまた、中々評判で、<ruby><rb>廓</rb><rt>くるわ</rt></ruby>中どこでもうたわなかった所は、なかったくらいでございます。そこへ当時の<persName ref="#oishi">内蔵助</persName>の風俗が、墨染の<ruby><rb>法衣姿</rb><rt>ころもすがた</rt></ruby>で、あの<placeName ref="#gion">祇園</placeName>の桜がちる中を、<ruby><rb>浮</rb><rt>うき</rt></ruby>さま浮さまとそやされながら、酔って歩くと云うのでございましょう。里げしきの唄が<ruby><rb>流行</rb><rt>はや</rt></ruby>ったり、<persName ref="#oishi">内蔵助</persName>の濫行も名高くなったりしたのは、少しも無理はございません。何しろ<persName ref="#yugiri">夕霧</persName>と云い、<persName ref="#ukihashi"><ruby><rb>浮橋</rb><rt>うきはし</rt></ruby></persName>と云い、<placeName ref="#shimabara">島原</placeName>や<placeName ref="#shumokucho"><ruby><rb>撞木町</rb><rt>しゅもくまち</rt></ruby></placeName>の名高い<ruby><rb>太夫</rb><rt>たゆう</rt></ruby>たちでも、<persName ref="#oishi">内蔵助</persName>と云えば、下にも置かぬように扱うと云う騒ぎでございましたから。」</p>
+        <p><persName ref="#oishi">内蔵助</persName>は、こう云う<persName ref="#onodera">十内</persName>の話を、殆ど侮蔑されたような心もちで、<ruby><rb>苦々</rb><rt>にがにが</rt></ruby>しく聞いていた。と同時にまた、昔の<ruby><rb>放埓</rb><rt>ほうらつ</rt></ruby>の記憶を、思い出すともなく思い出した。それは、彼にとっては、不思議なほど色彩の<ruby><rb>鮮</rb><rt>あざやか</rt></ruby>な記憶である。彼はその思い出の中に、<ruby><rb>長蝋燭</rb><rt>ながろうそく</rt></ruby>の光を見、<ruby><rb>伽羅</rb><rt>きゃら</rt></ruby>の油の匂を嗅ぎ、<ruby><rb>加賀節</rb><rt>かがぶし</rt></ruby>の三味線の<ruby><rb>音</rb><rt>ね</rt></ruby>を聞いた。いや、今<persName ref="#onodera">十内</persName>が云った里げしきの「さすが涙のばらばら袖に、こぼれて袖に、露のよすがのうきつとめ」と云う文句さえ、<ruby><rb>春宮</rb><rt>しゅんきゅう</rt></ruby>の中からぬけ出したような、<persName ref="#yugiri">夕霧</persName>や<persName ref="#ukihashi">浮橋</persName>のなまめかしい姿と共に、歴々と心中に浮んで来た。如何に彼は、この記憶の中に出没するあらゆる放埓の生活を、思い切って受用した事であろう。そうしてまた、如何に彼は、その放埓の生活の中に、復讐の挙を全然忘却した<ruby><rb>駘蕩</rb><rt>たいとう</rt></ruby>たる瞬間を、味った事であろう。彼は<ruby><rb>己</rb><rt>おのれ</rt></ruby>を欺いて、この事実を否定するには、余りに正直な人間であった。勿論この事実が不道徳なものだなどと云う事も、人間性に明な彼にとって、夢想さえ出来ない所である。従って、彼の放埓のすべてを、彼の忠義を尽す手段として激賞されるのは、不快であると共に、うしろめたい。</p>
+        <p>こう考えている<persName ref="#oishi">内蔵助</persName>が、その<ruby><rb>所謂</rb><rt>いわゆる</rt></ruby><ruby><rb>佯狂苦肉</rb><rt>ようきょうくにく</rt></ruby>の計を<ruby><rb>褒</rb><rt>ほ</rt></ruby>められて、<ruby><rb>苦</rb><rt>にが</rt></ruby>い顔をしたのに不思議はない。彼は、再度の打撃をうけて僅に残っていた胸間の<ruby><rb>春風</rb><rt>しゅんぷう</rt></ruby>が、見る見る中に吹きつくしてしまった事を意識した。あとに残っているのは、一切の誤解に対する反感と、その誤解を予想しなかった彼自身の愚に対する反感とが、うすら寒く影をひろげているばかりである。彼の復讐の挙も、彼の同志も、最後にまた彼自身も、多分このまま、勝手な賞讃の声と共に、後代まで伝えられる事であろう。――こう云う不快な事実と向いあいながら、彼は火の気のうすくなった火鉢に手をかざすと、<persName ref="#horiuchi">伝右衛門</persName>の眼をさけて、情なさそうにため息をした。</p>
+        <p>―――――――――――――――――――――――――</p>
+        <p>それから何分かの<ruby><rb>後</rb><rt>のち</rt></ruby>である。<ruby><rb>厠</rb><rt>かわや</rt></ruby>へ行くのにかこつけて、座をはずして来た<persName ref="#oishi">大石内蔵助</persName>は、独り縁側の柱によりかかって、寒梅の老木が、古庭の<ruby><rb>苔</rb><rt>こけ</rt></ruby>と石との間に、<ruby><rb>的皪</rb><rt>てきれき</rt></ruby>たる花をつけたのを眺めていた。日の色はもううすれ切って、植込みの竹のかげからは、早くも<ruby><rb>黄昏</rb><rt>たそがれ</rt></ruby>がひろがろうとするらしい。が、障子の中では、<ruby><rb>不相変</rb><rt>あいかわらず</rt></ruby>面白そうな話声がつづいている。彼はそれを聞いている中に、<ruby><rb>自</rb><rt>おのずか</rt></ruby>らな一味の哀情が、<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に彼をつつんで来るのを意識した。このかすかな梅の匂につれて、<ruby><rb>冴</rb><rt>さえ</rt></ruby>返る心の底へしみ透って来る寂しさは、この云いようのない寂しさは、一体どこから来るのであろう。――<persName ref="#oishi">内蔵助</persName>は、青空に<ruby><rb>象嵌</rb><rt>ぞうがん</rt></ruby>をしたような、堅く<ruby><rb>冷</rb><rt>つめた</rt></ruby>い花を仰ぎながら、いつまでもじっと<ruby><rb>彳</rb><rt>たたず</rt></ruby>んでいた。</p>
+        <p>（<date when="1917-08-15">大正六年八月十五日</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>
