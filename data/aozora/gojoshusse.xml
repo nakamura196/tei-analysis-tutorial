@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>悟浄出世</title>
+        <author>中島敦</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>悟浄出世</title><author>中島敦</author>
+          <note>青空文庫。底本：「李陵・山月記・弟子・名人伝」角川文庫　角川書店。1968（昭和43）年9月10日改版初版発行。1998（平成10）年5月30日改版52版発行。入力：佐野良二。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000119/card2521.html">https://www.aozora.gr.jp/cards/000119/card2521.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="gojo">
+        <persName>悟浄</persName>
+        <note>流沙河の河底に栖む妖怪。自意識に苦しみ賢者を訪ね歩く本作の主人公。天上界では霊霄殿の捲簾大将であったとされる。のちの沙悟浄</note>
+      </person>
+      <person xml:id="genjo">
+        <persName>玄奘</persName>
+        <note>大唐の僧。金蝉長老の転生とされ、太宗皇帝の綸命を受けて天竺へ大乗三蔵の真経を求めに赴く。作中では「三蔵」「唐僧」とも呼ばれる</note>
+      </person>
+      <person xml:id="kinzenchoro">
+        <persName>金蝉長老</persName>
+        <note>西方の長老。玄奘法師の前身(転生前)として言及される</note>
+      </person>
+      <person xml:id="goku">
+        <persName>孫悟空</persName>
+        <note>玄奘の弟子。本文では「聖天大聖」(斉天大聖)と称される。無知無識にして信じて疑わざる者として観世音菩薩が悟浄に示す</note>
+      </person>
+      <person xml:id="gono">
+        <persName>猪悟能</persName>
+        <note>玄奘の弟子。天蓬元帥の号を持つ怠惰な楽天家。のちの猪八戒</note>
+      </person>
+      <person xml:id="kokuran">
+        <persName>黒卵道人</persName>
+        <note>斜月三星洞に住む幻術の大家。魚面人身。悟浄が最初に訪ねた賢者</note>
+      </person>
+      <person xml:id="sako">
+        <persName>沙虹隠士</persName>
+        <note>年を経た蝦の精。厭世的な哲学を説く老隠士。悟浄の滞在中に病没する</note>
+      </person>
+      <person xml:id="zabo">
+        <persName>坐忘先生</persName>
+        <note>五十日に一度しか目を覚まさない僧形の賢者。時間は頭の中の装置だと説く</note>
+      </person>
+      <person xml:id="shiyo">
+        <persName>子輿</persName>
+        <note>路傍の醜い佝僂の乞食。『荘子』大宗師篇に由来する名。造物主の変化を楽しむと語る</note>
+      </person>
+      <person xml:id="shishi">
+        <persName>子祀</persName>
+        <note>子輿の莫逆の友の一人。女偊氏の弟子</note>
+      </person>
+      <person xml:id="shiri">
+        <persName>子犁</persName>
+        <note>子輿の莫逆の友の一人。女偊氏の弟子</note>
+      </person>
+      <person xml:id="shirai">
+        <persName>子来</persName>
+        <note>子輿の莫逆の友の一人。女偊氏の弟子</note>
+      </person>
+      <person xml:id="joushi">
+        <persName>女偊氏</persName>
+        <note>流沙河が赤水・墨水と落合うあたりに庵を結ぶ仙人。悟浄に「聖なる狂気」を説く師。『荘子』大宗師篇の女偊に由来</note>
+      </person>
+      <person xml:id="kyuzennenshi">
+        <persName>虯髯鮎子</persName>
+        <note>貪食と強力で聞こえる鯰の妖怪。本文では「鮎子」とも。悟浄を襲おうとする</note>
+      </person>
+      <person xml:id="muchokoshi">
+        <persName>無腸公子</persName>
+        <note>隣人愛を説く蟹の妖精。説教の最中に自分の子を食べてしまう</note>
+      </person>
+      <person xml:id="hoishi">
+        <persName>蒲衣子</persName>
+        <note>自然の秘鑰を探究する庵室の師。孔雀石を掌にのせて自然を観ずる</note>
+      </person>
+      <person xml:id="hanikessuba">
+        <persName>斑衣鱖婆</persName>
+        <note>五百余歳を経た女怪。本文では「鱖婆」とも。肉の楽しみを唯一の生活信条とする</note>
+      </person>
+      <person xml:id="mokusha-egan">
+        <persName>木叉恵岸</persName>
+        <note>托塔天王の二太子。観世音菩薩の弟子として悟浄の前に現れる</note>
+      </person>
+      <person xml:id="takutotenno">
+        <persName>托塔天王</persName>
+        <note>木叉恵岸の父とされる天界の神(李靖)</note>
+      </person>
+      <person xml:id="kanzeon">
+        <persName>観世音菩薩</persName>
+        <note>南海の観世音菩薩摩訶薩。悟浄を得度し、玄奘に従って西方へ赴くよう命じる</note>
+      </person>
+      <person xml:id="seson">
+        <persName>世尊</persName>
+        <note>釈迦牟尼。増上慢を難じた者として観世音菩薩の説法中に言及される</note>
+      </person>
+      <person xml:id="taiso">
+        <persName>太宗皇帝</persName>
+        <note>唐の太宗。玄奘に取経の綸命を下したとされる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="ryusaga">
+        <placeName>流沙河</placeName>
+        <note>『西遊記』の伝説上の大河。本作のほぼ全篇の舞台となる水底の妖怪世界。実在の河に比定できないため座標なし</note>
+      </place>
+      <place xml:id="jakusui">
+        <placeName>弱水</placeName>
+        <note>冒頭に引く『西遊記』の詩「三千弱水深」に見える神話上の河。実在に比定できないため座標なし</note>
+      </place>
+      <place xml:id="reishoden">
+        <placeName>霊霄殿</placeName>
+        <note>天上界の宮殿。悟浄が捲簾大将を勤めたとされる。宗教的世界観上の場所のため座標なし</note>
+      </place>
+      <place xml:id="shagetsusanseido">
+        <placeName>斜月三星洞</placeName>
+        <note>黒卵道人の洞窟。流沙河の水底にある架空の場所のため座標なし。本文では「三星洞」とも</note>
+      </place>
+      <place xml:id="sekisui">
+        <placeName>赤水</placeName>
+        <note>流沙河と落合う河。『山海経』『荘子』に見える神話上の河のため座標なし</note>
+      </place>
+      <place xml:id="bokusui">
+        <placeName>墨水</placeName>
+        <note>流沙河と落合う河。神話上の河のため座標なし</note>
+      </place>
+      <place xml:id="naraku">
+        <placeName>那落</placeName>
+        <note>奈落。仏教的世界観上の地獄のため座標なし</note>
+      </place>
+      <place xml:id="nankai">
+        <placeName>南海</placeName>
+        <note>観世音菩薩の住処とされる南海(補陀落)。宗教的世界観上の場所のため座標なし</note>
+      </place>
+      <place xml:id="tenjiku">
+        <placeName>天竺国</placeName>
+        <location><geo>20.5937 78.9629</geo></location>
+        <note>インドの古称。国名・概値</note>
+      </place>
+      <place xml:id="dairaionji">
+        <placeName>大雷音寺</placeName>
+        <note>『西遊記』で真経を蔵する霊山の寺。霊鷲山に擬されるが伝説上の寺のため座標なし</note>
+      </place>
+      <place xml:id="daito">
+        <placeName>大唐</placeName>
+        <location><geo>34.2658 108.9541</geo></location>
+        <note>唐(中国)。国名・概値(都の長安付近)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <p><ruby><rb>寒蝉敗柳</rb><rt>かんせんはいりゅう</rt></ruby>に鳴き大火西に向かいて流るる秋のはじめになりければ心細くも<ruby><rb>三蔵</rb><rt>さんぞう</rt></ruby>は二人の弟子にいざなわれ<ruby><rb>嶮難</rb><rt>けんなん</rt></ruby>を<ruby><rb>凌</rb><rt>しの</rt></ruby>ぎ道を急ぎたもうに、たちまち前面に一条の大河あり。大波<ruby><rb>湧返</rb><rt>わきかえ</rt></ruby>りて河の広さそのいくばくという限りを知らず。岸に上りて望み見るときかたわらに一つの石碑あり。上に<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>の三字を<ruby><rb>篆字</rb><rt>てんじ</rt></ruby>にて彫付け、表に四行の小<ruby><rb>楷字</rb><rt>かいじ</rt></ruby>あり。</p>
+        <p><ruby><rb>八百流沙界</rb><rt>はちひゃくりゅうさのかい</rt></ruby></p>
+        <p><ruby><rb>三千<placeName ref="#jakusui">弱水</placeName>深</rb><rt>さんぜんじゃくすいふかし</rt></ruby></p>
+        <p><ruby><rb>鵞毛飄不起</rb><rt>がもうただよいうかばず</rt></ruby></p>
+        <p><ruby><rb>蘆花定底沈</rb><rt>ろかそこによどみてしずむ</rt></ruby></p>
+        <p>――西遊記――</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>一</head>
+        <p>そのころ<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>の河底に<ruby><rb>栖</rb><rt>す</rt></ruby>んでおった<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>の総数およそ一万三千、なかで、<ruby><rb>渠</rb><rt>かれ</rt></ruby>ばかり心弱きはなかった。<ruby><rb>渠</rb><rt>かれ</rt></ruby>に言わせると、自分は今までに九人の<ruby><rb>僧侶</rb><rt>そうりょ</rt></ruby>を<ruby><rb>啖</rb><rt>く</rt></ruby>った罰で、それら九人の<ruby><rb>骸顱</rb><rt>しゃれこうべ</rt></ruby>が自分の<ruby><rb>頸</rb><rt>くび</rt></ruby>の<ruby><rb>周囲</rb><rt>まわり</rt></ruby>について離れないのだそうだが、他の<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>らには誰にもそんな<ruby><rb>骸顱</rb><rt>しゃれこうべ</rt></ruby>は見えなかった。「見えない。それは<ruby><rb>儞</rb><rt>おまえ</rt></ruby>の気の迷いだ」と言うと、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は信じがたげな眼で、一同を見返し、さて、それから、なぜ自分はこうみんなと違うんだろうといったふうな悲しげな表情に沈むのである。他の<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>らは互いに言合うた。「<ruby><rb>渠</rb><rt>あいつ</rt></ruby>は、<ruby><rb>僧侶</rb><rt>そうりょ</rt></ruby>どころか、ろくに人間さえ<ruby><rb>咋</rb><rt>く</rt></ruby>ったことはないだろう。誰もそれを見た者がないのだから。<ruby><rb>鮒</rb><rt>ふな</rt></ruby>やざこを取って喰っているのなら見たこともあるが」と。また彼らは<ruby><rb>渠</rb><rt>かれ</rt></ruby>に<ruby><rb>綽名</rb><rt>あだな</rt></ruby>して、<persName ref="#gojo"><ruby><rb>独言悟浄</rb><rt>どくげんごじょう</rt></ruby></persName>と呼んだ。<ruby><rb>渠</rb><rt>かれ</rt></ruby>が常に、自己に不安を感じ、身を切刻む後悔に<ruby><rb>苛</rb><rt>さいな</rt></ruby>まれ、心の中で<ruby><rb>反芻</rb><rt>はんすう</rt></ruby>されるその<ruby><rb>哀</rb><rt>かな</rt></ruby>しい自己<ruby><rb>苛責</rb><rt>かしゃく</rt></ruby>が、つい<ruby><rb>独</rb><rt>ひと</rt></ruby>り言となって<ruby><rb>洩</rb><rt>も</rt></ruby>れるがゆえである。遠方から見ると小さな<ruby><rb>泡</rb><rt>あわ</rt></ruby>が<ruby><rb>渠</rb><rt>かれ</rt></ruby>の口から出ているにすぎないようなときでも、実は彼が<ruby><rb>微</rb><rt>かす</rt></ruby>かな声で<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いているのである。「<ruby><rb>俺</rb><rt>おれ</rt></ruby>はばかだ」とか、「どうして俺はこうなんだろう」とか、「もうだめだ。俺は」とか、ときとして「俺は<ruby><rb>堕天使</rb><rt>だてんし</rt></ruby>だ」とか。</p>
+        <p>当時は、妖怪に限らず、あらゆる生きものはすべて何かの生まれかわりと信じられておった。<persName ref="#gojo">悟浄</persName>がかつて<ruby><rb>天上界</rb><rt>てんじょうかい</rt></ruby>で<placeName ref="#reishoden"><ruby><rb>霊霄殿</rb><rt>りょうしょうでん</rt></ruby></placeName>の<persName ref="#gojo"><ruby><rb>捲簾</rb><rt>けんれん</rt></ruby>大将</persName>を勤めておったとは、この河底で誰言わぬ者もない。それゆえすこぶる懐疑的な<persName ref="#gojo">悟浄</persName>自身も、ついにはそれを信じておるふりをせねばならなんだ。が、実をいえば、すべての<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>の中で<ruby><rb>渠</rb><rt>かれ</rt></ruby>一人はひそかに、生まれかわりの説に疑いをもっておった。天上界で五百年前に<persName ref="#gojo">捲簾大将</persName>をしておった者が今の俺になったのだとして、さて、その昔の<persName ref="#gojo">捲簾大将</persName>と今のこの俺とが同じものだといっていいのだろうか？　第一、俺は昔の天上界のことを何一つ記憶してはおらぬ。その記憶以前の<persName ref="#gojo">捲簾大将</persName>と俺と、どこが同じなのだ。<ruby><rb>身体</rb><rt>からだ</rt></ruby>が同じなのだろうか？　それとも魂が、だろうか？　ところで、いったい、魂とはなんだ？　こうした疑問を<ruby><rb>渠</rb><rt>かれ</rt></ruby>が<ruby><rb>洩</rb><rt>も</rt></ruby>らすと、<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>どもは「また、始まった」といって<ruby><rb>嗤</rb><rt>わら</rt></ruby>うのである。あるものは<ruby><rb>嘲弄</rb><rt>ちょうろう</rt></ruby>するように、あるものは<ruby><rb>憐愍</rb><rt>れんびん</rt></ruby>の面持ちをもって「病気なんだよ。悪い病気のせいなんだよ」と言うた。</p>
+        <p>事実、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は病気だった。</p>
+        <p>いつのころから、また、何が<ruby><rb>因</rb><rt>もと</rt></ruby>でこんな病気になったか、<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>はそのどちらをも知らぬ。ただ、気がついたらそのときはもう、このような<ruby><rb>厭</rb><rt>いと</rt></ruby>わしいものが、周囲に重々しく<ruby><rb>立罩</rb><rt>たちこ</rt></ruby>めておった。渠は何をするのもいやになり、見るもの聞くものがすべて渠の気を沈ませ、何事につけても自分が<ruby><rb>厭</rb><rt>いと</rt></ruby>わしく、自分に信用がおけぬようになってしもうた。何日も何日も<ruby><rb>洞穴</rb><rt>ほらあな</rt></ruby>に<ruby><rb>籠</rb><rt>こも</rt></ruby>って、食を<ruby><rb>摂</rb><rt>と</rt></ruby>らず、ギョロリと眼ばかり光らせて、渠は物思いに沈んだ。不意に立上がってその辺を歩き<ruby><rb>廻</rb><rt>まわ</rt></ruby>り、何かブツブツ独り言をいいまた突然すわる。その動作の一つ一つを自分では意識しておらぬのである。どんな点がはっきりすれば、自分の不安が去るのか。それさえ渠には<ruby><rb>解</rb><rt>わか</rt></ruby>らなんだ。ただ、今まで当然として受取ってきたすべてが、不可解な疑わしいものに見えてきた。今まで<ruby><rb>纏</rb><rt>まと</rt></ruby>まった一つのことと思われたものが、バラバラに分解された姿で受取られ、その一つの部分部分について考えているうちに、全体の意味が解らなくなってくるといったふうだった。</p>
+        <p>医者でもあり・<ruby><rb>占星師</rb><rt>せんせいし</rt></ruby>でもあり・<ruby><rb>祈祷者</rb><rt>きとうしゃ</rt></ruby>でもある・一人の老いたる魚怪が、あるとき<persName ref="#gojo">悟浄</persName>を見てこう言うた。「やれ、いたわしや。<ruby><rb>因果</rb><rt>いんが</rt></ruby>な病にかかったものじゃ。この病にかかったが最後、百人のうち九十九人までは<ruby><rb>惨</rb><rt>みじ</rt></ruby>めな一生を送らねばなりませぬぞ。元来、我々の中にはなかった病気じゃが、我々が人間を<ruby><rb>咋</rb><rt>く</rt></ruby>うようになってから、我々の間にもごくまれに、これに侵される者が出てきたのじゃ。この病に侵された者はな、すべての物事を素直に受取ることができぬ。何を見ても、何に出会うても『なぜ？』とすぐに考える。究極の・<ruby><rb>正真正銘</rb><rt>しょうしんしょうめい</rt></ruby>の・神様だけがご存じの『なぜ？』を考えようとするのじゃ。そんなことを思うては生き物は生きていけぬものじゃ。そんなことは考えぬというのが、この世の生き物の間の約束ではないか。ことに始末に困るのは、この病人が『自分』というものに疑いをもつことじゃ。なぜ<ruby><rb>俺</rb><rt>おれ</rt></ruby>は俺を俺と思うのか？　<ruby><rb>他</rb><rt>ほか</rt></ruby>の者を俺と思うてもさしつかえなかろうに。俺とはいったいなんだ？　こう考えはじめるのが、この病のいちばん悪い<ruby><rb>徴候</rb><rt>ちょうこう</rt></ruby>じゃ。どうじゃ。当たりましたろうがの。お気の毒じゃが、この病には、薬もなければ、医者もない。自分で<ruby><rb>治</rb><rt>なお</rt></ruby>すよりほかはないのじゃ。よほどの機縁に恵まれぬかぎり、まず、あんたの顔色のはれる時はありますまいて。」</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>二</head>
+        <p>文字の発明は<ruby><rb>疾</rb><rt>と</rt></ruby>くに人間世界から伝わって、彼らの世界にも知られておったが、総じて彼らの間には文字を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>する習慣があった。生きておる<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>が、そんな文字などという死物で書留められるわけがない。（絵になら、まだしも<ruby><rb>画</rb><rt>か</rt></ruby>けようが。）それは、煙をその形のままに手で<ruby><rb>執</rb><rt>と</rt></ruby>らえようとするにも似た愚かさであると、一般に信じられておった。したがって、文字を解することは、かえって生命力衰退の<ruby><rb>徴候</rb><rt>しるし</rt></ruby>として<ruby><rb>斥</rb><rt>しりぞ</rt></ruby>けられた。<persName ref="#gojo">悟浄</persName>が日ごろ<ruby><rb>憂鬱</rb><rt>ゆううつ</rt></ruby>なのも、<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>、<ruby><rb>渠</rb><rt>かれ</rt></ruby>が文字を解するために違いないと、<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>どもの間では思われておった。</p>
+        <p>文字は<ruby><rb>尚</rb><rt>とうと</rt></ruby>ばれなかったが、しかし、思想が軽んじられておったわけではない。一万三千の怪物の中には哲学者も少なくはなかった。ただ、彼らの<ruby><rb>語彙</rb><rt>ごい</rt></ruby>ははなはだ貧弱だったので、最もむずかしい大問題が、最も無邪気な言葉でもって考えられておった。彼らは<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>の河底にそれぞれ考える店を張り、ために、この河底には一脈の哲学的憂鬱が漂うていたほどである。ある賢明な老魚は、美しい庭を買い、明るい窓の下で、永遠の悔いなき幸福について<ruby><rb>瞑想</rb><rt>めいそう</rt></ruby>しておった。ある高貴な魚族は、美しい<ruby><rb>縞</rb><rt>しま</rt></ruby>のある鮮緑の<ruby><rb>藻</rb><rt>も</rt></ruby>の<ruby><rb>蔭</rb><rt>かげ</rt></ruby>で、<ruby><rb>竪琴</rb><rt>たてごと</rt></ruby>をかき鳴らしながら、宇宙の音楽的調和を<ruby><rb>讃</rb><rt>たた</rt></ruby>えておった。醜く・鈍く・ばか正直な・それでいて、自分の愚かな苦悩を隠そうともしない<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>は、こうした知的な<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>どもの間で、いい<ruby><rb>嬲</rb><rt>なぶ</rt></ruby>りものになった。一人の<ruby><rb>聡明</rb><rt>そうめい</rt></ruby>そうな怪物が、<persName ref="#gojo">悟浄</persName>に向かい、<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>くさって言うた。「真理とはなんぞや？」そして<ruby><rb>渠</rb><rt>かれ</rt></ruby>の返辞をも待たず、<ruby><rb>嘲笑</rb><rt>ちょうしょう</rt></ruby>を口辺に浮かべて<ruby><rb>大胯</rb><rt>おおまた</rt></ruby>に歩み去った。また、一人の妖怪――これは<ruby><rb>鮐魚</rb><rt>ふぐ</rt></ruby>の精だったが――は、<persName ref="#gojo">悟浄</persName>の病を聞いて、わざわざ<ruby><rb>訪</rb><rt>たず</rt></ruby>ねて来た。<persName ref="#gojo">悟浄</persName>の病因が「死への恐怖」にあると察して、これを<ruby><rb>哂</rb><rt>わら</rt></ruby>おうがためにやって来たのである。「生ある間は死なし。死<ruby><rb>到</rb><rt>いた</rt></ruby>れば、すでに我なし。また、何をか<ruby><rb>懼</rb><rt>おそ</rt></ruby>れん。」というのがこの男の論法であった。<persName ref="#gojo">悟浄</persName>はこの議論の正しさを素直に認めた。というのは、<ruby><rb>渠</rb><rt>かれ</rt></ruby>自身けっして死を<ruby><rb>怖</rb><rt>おそ</rt></ruby>れていたのではなかったし、渠の病因もそこにはなかったのだから。<ruby><rb>哂</rb><rt>わら</rt></ruby>おうとしてやって来た鮐魚の精は失望して帰って行った。</p>
+        <p><ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>の世界にあっては、<ruby><rb>身体</rb><rt>からだ</rt></ruby>と心とが、人間の世界におけるほどはっきりと分かれてはいなかったので、心の病はただちに<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい肉体の苦しみとなって<persName ref="#gojo">悟浄</persName>を責めた。堪えがたくなった<ruby><rb>渠</rb><rt>かれ</rt></ruby>は、ついに意を決した。「このうえは、いかに骨が折れようと、また、いかに行く先々で<ruby><rb>愚弄</rb><rt>ぐろう</rt></ruby>され<ruby><rb>哂</rb><rt>わら</rt></ruby>われようと、とにかく一応、この河の底に<ruby><rb>栖</rb><rt>す</rt></ruby>むあらゆる<ruby><rb>賢人</rb><rt>けんじん</rt></ruby>、あらゆる医者、あらゆる<ruby><rb>占星師</rb><rt>せんせいし</rt></ruby>に親しく会って、自分に<ruby><rb>納得</rb><rt>なっとく</rt></ruby>のいくまで、教えを<ruby><rb>乞</rb><rt>こ</rt></ruby>おう」と。</p>
+        <p><ruby><rb>渠</rb><rt>かれ</rt></ruby>は粗末な<ruby><rb>直綴</rb><rt>じきとつ</rt></ruby>を<ruby><rb>纏</rb><rt>まと</rt></ruby>うて、出発した。</p>
+        <p>なぜ、<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>は妖怪であって、人間でないか？　彼らは、自己の属性の一つだけを、極度に、他との<ruby><rb>均衡</rb><rt>つりあい</rt></ruby>を絶して、醜いまでに、非人間的なまでに、発達させた不具者だからである。あるものは極度に<ruby><rb>貪食</rb><rt>どんしょく</rt></ruby>で、したがって口と腹がむやみに大きく、あるものは極度に<ruby><rb>淫蕩</rb><rt>いんとう</rt></ruby>で、したがってそれに使用される器官が著しく発達し、あるものは極度に純潔で、したがって頭部を除くすべての部分がすっかり退化しきっていた。彼らはいずれも自己の性向、世界観に絶対に<ruby><rb>固執</rb><rt>こしゅう</rt></ruby>していて、他との討論の結果、より高い結論に達するなどということを知らなかった。他人の考えの筋道を<ruby><rb>辿</rb><rt>たど</rt></ruby>るにはあまりに自己の特徴が著しく伸長しすぎていたからである。それゆえ、<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>の水底では、何百かの世界観や<ruby><rb>形而上</rb><rt>けいじじょう</rt></ruby>学が、けっして他と融和することなく、あるものは穏やかな絶望の歓喜をもって、あるものは底抜けの明るさをもって、あるものは<ruby><rb>願望</rb><rt>ねがい</rt></ruby>はあれど<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>なき<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>をもって、<ruby><rb>揺動</rb><rt>ゆれうご</rt></ruby>く無数の<ruby><rb>藻草</rb><rt>もぐさ</rt></ruby>のようにゆらゆらとたゆとうておった。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>三</head>
+        <p>最初に<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>が訪ねたのは、<persName ref="#kokuran"><ruby><rb>黒卵道人</rb><rt>こくらんどうじん</rt></ruby></persName>とて、そのころ最も高名な<ruby><rb>幻術</rb><rt>げんじゅつ</rt></ruby>の<ruby><rb>大家</rb><rt>たいか</rt></ruby>であった。あまり深くない水底に<ruby><rb>累々</rb><rt>るいるい</rt></ruby>と岩石を積重ねて<ruby><rb>洞窟</rb><rt>どうくつ</rt></ruby>を作り、入口には<placeName ref="#shagetsusanseido"><ruby><rb>斜月三星洞</rb><rt>しゃげつさんせいどう</rt></ruby></placeName>の額が掛かっておった。<ruby><rb>庵主</rb><rt>あんじゅ</rt></ruby>は、<ruby><rb>魚面人身</rb><rt>ぎょめんじんしん</rt></ruby>、よく幻術を行のうて、存亡自在、冬、雷を起こし、夏、氷を造り、<ruby><rb>飛者</rb><rt>とり</rt></ruby>を走らしめ、<ruby><rb>走者</rb><rt>けもの</rt></ruby>を飛ばしめるという<ruby><rb>噂</rb><rt>うわさ</rt></ruby>である。<persName ref="#gojo">悟浄</persName>はこの道人に<ruby><rb>三</rb><rt>み</rt></ruby>月仕えた。幻術などどうでもいいのだが、幻術を<ruby><rb>能</rb><rt>よ</rt></ruby>くするくらいなら<ruby><rb>真人</rb><rt>しんじん</rt></ruby>であろうし、真人なら宇宙の大道を<ruby><rb>会得</rb><rt>えとく</rt></ruby>していて、<ruby><rb>渠</rb><rt>かれ</rt></ruby>の病を<ruby><rb>癒</rb><rt>いや</rt></ruby>すべき<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>をも知っていようと思われたからだ。しかし、<persName ref="#gojo">悟浄</persName>は失望せぬわけにいかなかった。<ruby><rb>洞</rb><rt>ほら</rt></ruby>の奥で<ruby><rb>巨鼇</rb><rt>きょごう</rt></ruby>の背に座った<persName ref="#kokuran"><ruby><rb>黒卵道人</rb><rt>こくらんどうじん</rt></ruby></persName>も、それを取囲む数十の弟子たちも、口にすることといえば、すべて<ruby><rb>神変不可思議</rb><rt>しんぺんふかしぎ</rt></ruby>の法術のことばかり。また、その術を用いて敵を<ruby><rb>欺</rb><rt>あざむ</rt></ruby>こうの、どこそこの宝を手に入れようのという実用的な話ばかり。<persName ref="#gojo">悟浄</persName>の求めるような無用の思索の相手をしてくれるものは誰一人としておらなんだ。結局、ばかにされ<ruby><rb>哂</rb><rt>わら</rt></ruby>いものになった<ruby><rb>揚句</rb><rt>あげく</rt></ruby>、<persName ref="#gojo">悟浄</persName>は<placeName ref="#shagetsusanseido">三星洞</placeName>を追出された。</p>
+        <p>次に<persName ref="#gojo">悟浄</persName>が行ったのは、<persName ref="#sako"><ruby><rb>沙虹隠士</rb><rt>しゃこういんし</rt></ruby></persName>のところだった。これは、年を経た<ruby><rb>蝦</rb><rt>えび</rt></ruby>の精で、すでに腰が弓のように曲がり、半ば河底の砂に埋もれて生きておった。<persName ref="#gojo">悟浄</persName>はまた、<ruby><rb>三</rb><rt>み</rt></ruby>月の間、この老隠士に侍して、身の<ruby><rb>廻</rb><rt>まわ</rt></ruby>りの世話を焼きながら、その<ruby><rb>深奥</rb><rt>しんおう</rt></ruby>な哲学に触れることができた。老いたる蝦の精は曲がった腰を<persName ref="#gojo">悟浄</persName>にさすらせ、深刻な顔つきで次のように言うた。</p>
+        <p>「世はなべて<ruby><rb>空</rb><rt>むな</rt></ruby>しい。この世に何か一つでも<ruby><rb>善</rb><rt>よ</rt></ruby>きことがあるか。もしありとせば、それは、この世の終わりがいずれは来るであろうことだけじゃ。別にむずかしい<ruby><rb>理窟</rb><rt>りくつ</rt></ruby>を考えるまでもない。我々の身の廻りを見るがよい。絶えざる変転、不安、<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>、恐怖、幻滅、闘争、<ruby><rb>倦怠</rb><rt>けんたい</rt></ruby>。まさに<ruby><rb>昏々昧々</rb><rt>こんこんまいまい</rt></ruby><ruby><rb>紛々若々</rb><rt>ふんぷんじゃくじゃく</rt></ruby>として<ruby><rb>帰</rb><rt>き</rt></ruby>するところを知らぬ。我々は現在という瞬間の上にだけ立って生きている。しかもその脚下の現在は、ただちに消えて過去となる。次の瞬間もまた次の瞬間もそのとおり。ちょうど崩れやすい砂の斜面に立つ旅人の足もとが一足ごとに崩れ去るようだ。我々はどこに安んじたらよいのだ。<ruby><rb>停</rb><rt>と</rt></ruby>まろうとすれば倒れぬわけにいかぬゆえ、やむを得ず走り下り続けているのが我々の生じゃ。幸福だと？　そんなものは空想の概念だけで、けっして、ある現実的な状態をいうものではない。<ruby><rb>果敢</rb><rt>はか</rt></ruby>ない希望が、名前を得ただけのものじゃ。」</p>
+        <p><persName ref="#gojo">悟浄</persName>の不安げな面持ちを見て、これを慰めるように<ruby><rb>隠士</rb><rt>いんし</rt></ruby>は付加えた。</p>
+        <p>「だが、若い者よ。そう<ruby><rb>懼</rb><rt>おそ</rt></ruby>れることはない。<ruby><rb>浪</rb><rt>なみ</rt></ruby>にさらわれる者は<ruby><rb>溺</rb><rt>おぼ</rt></ruby>れるが、浪に乗る者はこれを越えることができる。この<ruby><rb>有為転変</rb><rt>ういてんぺん</rt></ruby>をのり超えて<ruby><rb>不壊不動</rb><rt>ふえふどう</rt></ruby>の境地に到ることもできぬではない。<ruby><rb>古</rb><rt>いにしえ</rt></ruby>の<ruby><rb>真人</rb><rt>しんじん</rt></ruby>は、<ruby><rb>能</rb><rt>よ</rt></ruby>く是非を超え善悪を超え、我を忘れ物を忘れ、<ruby><rb>不死不生</rb><rt>ふしふしょう</rt></ruby>の域に達しておったのじゃ。が、昔から言われておるように、そういう境地が楽しいものだと思うたら、大間違い。苦しみもない代わりには、普通の生きものの<ruby><rb>有</rb><rt>も</rt></ruby>つ楽しみもない。無味、無色。<ruby><rb>誠</rb><rt>まこと</rt></ruby>に<ruby><rb>味気</rb><rt>あじけ</rt></ruby>ないこと<ruby><rb>蝋</rb><rt>ろう</rt></ruby>のごとく砂のごとしじゃ。」</p>
+        <p><persName ref="#gojo">悟浄</persName>は控えめに口を<ruby><rb>挾</rb><rt>はさ</rt></ruby>んだ。自分の聞きたいと望むのは、個人の幸福とか、<ruby><rb>不動心</rb><rt>ふどうしん</rt></ruby>の確立とかいうことではなくて、自己、および世界の究極の意味についてである、と。隠士は<ruby><rb>目脂</rb><rt>めやに</rt></ruby>の<ruby><rb>溜</rb><rt>たま</rt></ruby>った眼をしょぼつかせながら答えた。</p>
+        <p>「自己だと？　世界だと？　自己を<ruby><rb>外</rb><rt>ほか</rt></ruby>にして客観世界など、在ると思うのか。世界とはな、自己が時間と空間との間に投射した<ruby><rb>幻</rb><rt>まぼろし</rt></ruby>じゃ。自己が死ねば世界は消滅しますわい。自己が死んでも世界が残るなどとは、俗も俗、はなはだしい<ruby><rb>謬見</rb><rt>びゅうけん</rt></ruby>じゃ。世界が消えても、正体の<ruby><rb>判</rb><rt>わか</rt></ruby>らぬ・この不思議な自己というやつこそ、依然として続くじゃろうよ。」</p>
+        <p><persName ref="#gojo">悟浄</persName>が仕えてからちょうど九十日めの朝、数日間続いた猛烈な腹痛と<ruby><rb>下痢</rb><rt>げり</rt></ruby>ののちに、この老<ruby><rb>隠者</rb><rt>いんじゃ</rt></ruby>は、ついに<ruby><rb>斃</rb><rt>たお</rt></ruby>れた。かかる醜い下痢と苦しい腹痛とを自分に与えるような客観世界を、自分の死によって<ruby><rb>抹殺</rb><rt>まっさつ</rt></ruby>できることを喜びながら……。</p>
+        <p><persName ref="#gojo">悟浄</persName>は<ruby><rb>懇</rb><rt>ねんご</rt></ruby>ろにあとをとぶらい、涙とともに、また、新しい旅に上った。</p>
+        <p><ruby><rb>噂</rb><rt>うわさ</rt></ruby>によれば、<persName ref="#zabo"><ruby><rb>坐忘</rb><rt>ざぼう</rt></ruby>先生</persName>は常に<ruby><rb>坐禅</rb><rt>ざぜん</rt></ruby>を組んだまま眠り続け、五十日に一度目を<ruby><rb>覚</rb><rt>さ</rt></ruby>まされるだけだという。そして、睡眠中の夢の世界を現実と信じ、たまに目覚めているときは、それを夢と思っておられるそうな。<persName ref="#gojo">悟浄</persName>がこの先生をはるばる尋ね来たとき、やはり先生は<ruby><rb>睡</rb><rt>ねむ</rt></ruby>っておられた。なにしろ<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>で最も深い谷底で、上からの光もほとんど<ruby><rb>射</rb><rt>さ</rt></ruby>して来ない有様ゆえ、<persName ref="#gojo">悟浄</persName>も眼の慣れるまでは見定めにくかったが、やがて、薄暗い底の台の上に<ruby><rb>結跏趺坐</rb><rt>けっかふざ</rt></ruby>したまま睡っている<ruby><rb>僧形</rb><rt>そうぎょう</rt></ruby>がぼんやり目前に浮かび上がってきた。外からの音も聞こえず、魚類もまれにしか来ない所で、<persName ref="#gojo">悟浄</persName>もしかたなしに、<persName ref="#zabo">坐忘先生</persName>の前に<ruby><rb>坐</rb><rt>すわ</rt></ruby>って眼を<ruby><rb>瞑</rb><rt>つぶ</rt></ruby>ってみたら、何かジーンと耳が遠くなりそうな感じだった。</p>
+        <p><persName ref="#gojo">悟浄</persName>が来てから四日めに先生は眼を開いた。すぐ目の前で<persName ref="#gojo">悟浄</persName>があわてて立上がり、<ruby><rb>礼拝</rb><rt>らいはい</rt></ruby>をするのを、見るでもなく見ぬでもなく、ただ二、三度<ruby><rb>瞬</rb><rt>まばた</rt></ruby>きをした。しばらく無言の<ruby><rb>対坐</rb><rt>たいざ</rt></ruby>を続けたのち<persName ref="#gojo">悟浄</persName>は恐る恐る口をきいた。「先生。さっそくでぶしつけでございますが、一つお伺いいたします。いったい『我』とはなんでございましょうか？」「<ruby><rb>咄</rb><rt>とつ</rt></ruby>！　<ruby><rb>秦時</rb><rt>しんじ</rt></ruby>の<ruby><rb>𨍏轢鑚</rb><rt>たくらくさん</rt></ruby>！」という烈しい声とともに、<persName ref="#gojo">悟浄</persName>の頭はたちまち一棒を<ruby><rb>喰</rb><rt>くら</rt></ruby>った。<ruby><rb>渠</rb><rt>かれ</rt></ruby>はよろめいたが、また座に直り、しばらくして、今度は十分に警戒しながら、先刻の問いを繰返した。今度は棒が<ruby><rb>下</rb><rt>お</rt></ruby>りて来なかった。厚い<ruby><rb>唇</rb><rt>くちびる</rt></ruby>を開き、顔も身体もどこも絶対に動かさずに、<persName ref="#zabo">坐忘先生</persName>が、夢の中でのような言葉で答えた。「長く食を得ぬときに空腹を覚えるものが<ruby><rb>儞</rb><rt>おまえ</rt></ruby>じゃ。冬になって寒さを感ずるものが儞じゃ。」さて、それで厚い<ruby><rb>唇</rb><rt>くちびる</rt></ruby>を閉じ、しばらく<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>のほうを見ていたが、やがて眼を閉じた。そうして、五十日間それを開かなかった。<persName ref="#gojo">悟浄</persName>は<ruby><rb>辛抱強</rb><rt>しんぼうづよ</rt></ruby>く待った。五十日めにふたたび眼を覚ました<persName ref="#zabo">坐忘先生</persName>は前に<ruby><rb>坐</rb><rt>すわ</rt></ruby>っている<persName ref="#gojo">悟浄</persName>を見て言った。「まだいたのか？」<persName ref="#gojo">悟浄</persName>は<ruby><rb>謹</rb><rt>つつ</rt></ruby>しんで五十日待った旨を答えた。「五十日？」と先生は、例の夢を見るようなトロリとした眼を<persName ref="#gojo">悟浄</persName>に注いだが、じっとそのままひと時ほど黙っていた。やがて重い唇が開かれた。</p>
+        <p>「時の長さを計る尺度が、それを感じる者の実際の感じ以外にないことを知らぬ者は愚かじゃ。人間の世界には、時の長さを計る器械ができたそうじゃが、のちのち大きな誤解の種を<ruby><rb>蒔</rb><rt>ま</rt></ruby>くことじゃろう。<ruby><rb>大椿</rb><rt>たいちん</rt></ruby>の<ruby><rb>寿</rb><rt>じゅ</rt></ruby>も、<ruby><rb>朝菌</rb><rt>ちょうきん</rt></ruby>の<ruby><rb>夭</rb><rt>よう</rt></ruby>も、長さに変わりはないのじゃ。時とはな、我々の頭の中の一つの<ruby><rb>装置</rb><rt>しかけ</rt></ruby>じゃわい」</p>
+        <p>そう言終わると、先生はまた眼を閉じた。五十日後でなければ、それがふたたび開かれることがないであろうことを知っていた<persName ref="#gojo">悟浄</persName>は、睡れる先生に向かって<ruby><rb>恭々</rb><rt>うやうや</rt></ruby>しく頭を下げてから、立去った。</p>
+        <p>「恐れよ。おののけ。しかして、神を信ぜよ。」</p>
+        <p>と、<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>の最も繁華な四つ<ruby><rb>辻</rb><rt>つじ</rt></ruby>に立って、一人の若者が叫んでいた。</p>
+        <p>「我々の短い<ruby><rb>生涯</rb><rt>しょうがい</rt></ruby>が、その前とあととに続く無限の<ruby><rb>大永劫</rb><rt>だいえいごう</rt></ruby>の中に没入していることを思え。我々の住む狭い空間が、我々の知らぬ・また我々を知らぬ・無限の<ruby><rb>大広袤</rb><rt>だいこうぼう</rt></ruby>の中に投込まれていることを思え。誰か、みずからの姿の微小さに、おののかずにいられるか。我々はみんな鉄鎖に<ruby><rb>繋</rb><rt>つな</rt></ruby>がれた死刑囚だ。毎瞬間ごとにその中の幾人かずつが我々の面前で殺されていく。我々はなんの希望もなく、順番を待っているだけだ。時は迫っているぞ。その短い間を、自己<ruby><rb>欺瞞</rb><rt>ぎまん</rt></ruby>と<ruby><rb>酩酊</rb><rt>めいてい</rt></ruby>とに過ごそうとするのか？　<ruby><rb>呪</rb><rt>のろ</rt></ruby>われた<ruby><rb>卑怯者</rb><rt>ひきょうもの</rt></ruby>め！　その間を<ruby><rb>汝</rb><rt>なんじ</rt></ruby>の<ruby><rb>惨</rb><rt>みじ</rt></ruby>めな理性を<ruby><rb>恃</rb><rt>たの</rt></ruby>んで<ruby><rb>自惚</rb><rt>うぬぼ</rt></ruby>れ返っているつもりか？　<ruby><rb>傲慢</rb><rt>ごうまん</rt></ruby>な身の<ruby><rb>程</rb><rt>ほど</rt></ruby>知らずめ！　<ruby><rb>噴嚏</rb><rt>くしゃみ</rt></ruby>一つ、汝の貧しい理性と意志とをもってしては、左右できぬではないか。」</p>
+        <p><ruby><rb>白皙</rb><rt>はくせき</rt></ruby>の青年は<ruby><rb>頬</rb><rt>ほお</rt></ruby>を紅潮させ、声を<ruby><rb>嗄</rb><rt>か</rt></ruby>らして<ruby><rb>叱咤</rb><rt>しった</rt></ruby>した。その女性的な高貴な風姿のどこに、あのような激しさが潜んでいるのか。<persName ref="#gojo">悟浄</persName>は驚きながら、その燃えるような美しい<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>に見入った。<ruby><rb>渠</rb><rt>かれ</rt></ruby>は青年の言葉から火のような<ruby><rb>聖</rb><rt>きよ</rt></ruby>い矢が自分の魂に向かって放たれるのを感じた。</p>
+        <p>「我々の<ruby><rb>為</rb><rt>な</rt></ruby>しうるのは、ただ神を愛し<ruby><rb>己</rb><rt>おのれ</rt></ruby>を憎むことだけだ。部分は、みずからを、独立した本体だと<ruby><rb>自惚</rb><rt>うぬぼ</rt></ruby>れてはならぬ。あくまで、全体の意志をもって己の意志とし、全体のためにのみ、自己を生きよ。神に合するものは一つの霊となるのだ」</p>
+        <p>確かにこれは<ruby><rb>聖</rb><rt>きよ</rt></ruby>く<ruby><rb>優</rb><rt>すぐ</rt></ruby>れた魂の声だ、と<persName ref="#gojo">悟浄</persName>は思い、しかし、それにもかかわらず、自分の今<ruby><rb>饑</rb><rt>う</rt></ruby>えているものが、このような神の声でないことをも、また、感ぜずにはいられなかった。<ruby><rb>訓言</rb><rt>おしえ</rt></ruby>は薬のようなもので、<ruby><rb>痎瘧</rb><rt>おこり</rt></ruby>を病む者の前に<ruby><rb>瘇腫</rb><rt>はれもの</rt></ruby>の薬をすすめられてもしかたがない、と、そのようなことも思うた。</p>
+        <p>その四つ<ruby><rb>辻</rb><rt>つじ</rt></ruby>から程遠からぬ<ruby><rb>路傍</rb><rt>ろぼう</rt></ruby>で、<persName ref="#gojo">悟浄</persName>は醜い<ruby><rb>乞食</rb><rt>こじき</rt></ruby>を見た。恐ろしい<ruby><rb>佝僂</rb><rt>せむし</rt></ruby>で、高く盛上がった背骨に<ruby><rb>吊</rb><rt>つ</rt></ruby>られて<ruby><rb>五臓</rb><rt>ごぞう</rt></ruby>はすべて上に昇ってしまい、頭の頂は肩よりずっと低く落込んで、<ruby><rb>頤</rb><rt>おとがい</rt></ruby>は<ruby><rb>臍</rb><rt>へそ</rt></ruby>を隠すばかり。おまけに肩から背中にかけて一面に赤く<ruby><rb>爛</rb><rt>ただ</rt></ruby>れた<ruby><rb>腫物</rb><rt>はれもの</rt></ruby>が崩れている有様に、<persName ref="#gojo">悟浄</persName>は思わず足を<ruby><rb>停</rb><rt>と</rt></ruby>めて<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>を<ruby><rb>洩</rb><rt>も</rt></ruby>らした。すると、<ruby><rb>蹲</rb><rt>うずくま</rt></ruby>っているその<ruby><rb>乞食</rb><rt>こじき</rt></ruby>は、<ruby><rb>頸</rb><rt>くび</rt></ruby>が自由にならぬままに、赤く濁った<ruby><rb>眼玉</rb><rt>めだま</rt></ruby>をじろりと上向け、一本しかない長い前歯を見せてニヤリとした。それから、上に<ruby><rb>吊上</rb><rt>つりあ</rt></ruby>がった腕をブラブラさせ、<persName ref="#gojo">悟浄</persName>の足もとまでよろめいて来ると、<ruby><rb>渠</rb><rt>かれ</rt></ruby>を見上げて言った。</p>
+        <p>「<ruby><rb>僭越</rb><rt>せんえつ</rt></ruby>じゃな、わしを<ruby><rb>憐</rb><rt>あわ</rt></ruby>れみなさるとは。若いかたよ。わしを<ruby><rb>可哀想</rb><rt>かわいそう</rt></ruby>なやつと思うのかな。どうやら、お前さんのほうがよほど可哀想に思えてならぬが。このような形にしたからとて、造物主をわしが怨んどるとでも思っていなさるのじゃろう。どうしてどうして。逆に造物主を<ruby><rb>讃</rb><rt>ほ</rt></ruby>めとるくらいですわい、このような珍しい形にしてくれたと思うてな。これからも、どんなおもしろい<ruby><rb>恰好</rb><rt>かっこう</rt></ruby>になるやら、思えば楽しみのようでもある。わしの左<ruby><rb>臂</rb><rt>ひじ</rt></ruby>が鶏になったら、時を告げさせようし、右臂が<ruby><rb>弾</rb><rt>はじ</rt></ruby>き弓になったら、それで<ruby><rb>鴞</rb><rt>ふくろう</rt></ruby>でもとって<ruby><rb>炙</rb><rt>あぶ</rt></ruby>り肉をこしらえようし、わしの<ruby><rb>尻</rb><rt>しり</rt></ruby>が車輪になり、魂が馬にでもなれば、こりゃこのうえなしの乗物で、<ruby><rb>重宝</rb><rt>ちょうほう</rt></ruby>じゃろう。どうじゃ。驚いたかな。わしの名はな、<persName ref="#shiyo"><ruby><rb>子輿</rb><rt>しよ</rt></ruby></persName>というてな、<persName ref="#shishi"><ruby><rb>子祀</rb><rt>しし</rt></ruby></persName>、<persName ref="#shiri"><ruby><rb>子犁</rb><rt>しれい</rt></ruby></persName>、<persName ref="#shirai"><ruby><rb>子来</rb><rt>しらい</rt></ruby></persName>という三人の<ruby><rb>莫逆</rb><rt>ばくぎゃく</rt></ruby>の友がありますじゃ。みんな<persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>の弟子での、ものの形を超えて<ruby><rb>不生不死</rb><rt>ふしょうふし</rt></ruby>の<ruby><rb>境</rb><rt>きょう</rt></ruby>に入ったれば、水にも<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れず火にも<ruby><rb>焼</rb><rt>や</rt></ruby>けず、寝て夢見ず、覚めて<ruby><rb>憂</rb><rt>うれ</rt></ruby>いなきものじゃ。この間も、四人で笑うて話したことがある。わしらは、無をもって<ruby><rb>首</rb><rt>かしら</rt></ruby>とし、生をもって背とし、死をもって<ruby><rb>尻</rb><rt>しり</rt></ruby>としとるわけじゃとな。アハハハ……。」</p>
+        <p>気味の悪い笑い声にギョッとしながらも、<persName ref="#gojo">悟浄</persName>は、この乞食こそあるいは<ruby><rb>真人</rb><rt>しんじん</rt></ruby>というものかもしれんと思うた。この言葉が<ruby><rb>本物</rb><rt>ほんもの</rt></ruby>だとすればたいしたものだ。しかし、この男の言葉や態度の中にどこか誇示的なものが感じられ、それが苦痛を忍んでむりに壮語しているのではないかと疑わせたし、それに、この男の醜さと<ruby><rb>膿</rb><rt>うみ</rt></ruby>の<ruby><rb>臭</rb><rt>くさ</rt></ruby>さとが<persName ref="#gojo">悟浄</persName>に生理的な<ruby><rb>反撥</rb><rt>はんぱつ</rt></ruby>を与えた。<ruby><rb>渠</rb><rt>かれ</rt></ruby>はだいぶ心を<ruby><rb>惹</rb><rt>ひ</rt></ruby>かれながらも、ここで<ruby><rb>乞食</rb><rt>こじき</rt></ruby>に仕えることだけは思い止まった。ただ先刻の話の中にあった<persName ref="#joushi">女偊氏</persName>とやらについて教えを<ruby><rb>乞</rb><rt>こ</rt></ruby>いたく思うたので、そのことを<ruby><rb>洩</rb><rt>も</rt></ruby>らした。</p>
+        <p>「ああ、<ruby><rb>師父</rb><rt>しふ</rt></ruby>か。師父はな、これより北の<ruby><rb>方</rb><rt>かた</rt></ruby>、二千八百里、この<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>が<placeName ref="#sekisui"><ruby><rb>赤水</rb><rt>せきすい</rt></ruby></placeName>・<placeName ref="#bokusui"><ruby><rb>墨水</rb><rt>ぼくすい</rt></ruby></placeName>と落合うあたりに、<ruby><rb>庵</rb><rt>いおり</rt></ruby>を結んでおられる。お前さんの<ruby><rb>道心</rb><rt>どうしん</rt></ruby>さえ堅固なら、ずいぶんと、<ruby><rb>教訓</rb><rt>おしえ</rt></ruby>も垂れてくだされよう。せっかく修業なさるがよい。わしからもよろしくと申上げてくだされい。」と、みじめな<ruby><rb>佝僂</rb><rt>せむし</rt></ruby>は、<ruby><rb>尖</rb><rt>とが</rt></ruby>った肩を精一杯いからせて<ruby><rb>横柄</rb><rt>おうへい</rt></ruby>に言うた。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>四</head>
+        <p><placeName ref="#ryusaga">流沙河</placeName>と<placeName ref="#bokusui">墨水</placeName>と<placeName ref="#sekisui">赤水</placeName>との落合う所を目指して、<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>は北へ旅をした。夜は<ruby><rb>葦間</rb><rt>あしま</rt></ruby>に<ruby><rb>仮寝</rb><rt>かりね</rt></ruby>の夢を結び、朝になれば、また、<ruby><rb>果</rb><rt>はて</rt></ruby>知らぬ水底の砂原を北へ向かって歩み続けた。楽しげに<ruby><rb>銀鱗</rb><rt>ぎんりん</rt></ruby>を<ruby><rb>翻</rb><rt>ひるが</rt></ruby>えす<ruby><rb>魚族</rb><rt>いろくず</rt></ruby>どもを見ては、<ruby><rb>何故</rb><rt>なにゆえ</rt></ruby>に我一人かくは心<ruby><rb>怡</rb><rt>たの</rt></ruby>しまぬぞと思い<ruby><rb>侘</rb><rt>わ</rt></ruby>びつつ、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は毎日歩いた。途中でも、目ぼしい<ruby><rb>道人</rb><rt>どうじん</rt></ruby><ruby><rb>修験者</rb><rt>しゅげんしゃ</rt></ruby>の類は、<ruby><rb>剰</rb><rt>あま</rt></ruby>さずその門を<ruby><rb>叩</rb><rt>たた</rt></ruby>くことにしていた。</p>
+        <p><ruby><rb>貪食</rb><rt>どんしょく</rt></ruby>と強力とをもって聞こえる<persName ref="#kyuzennenshi"><ruby><rb>虯髯鮎子</rb><rt>きゅうぜんねんし</rt></ruby></persName>を訪ねたとき、色あくまで黒く、<ruby><rb>逞</rb><rt>たくま</rt></ruby>しげな、この<ruby><rb>鯰</rb><rt>なまず</rt></ruby>の<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>は、<ruby><rb>長髯</rb><rt>ちょうぜん</rt></ruby>をしごきながら「遠き<ruby><rb>慮</rb><rt>おもんばかり</rt></ruby>のみすれば、必ず近き<ruby><rb>憂</rb><rt>うれ</rt></ruby>いあり。<ruby><rb>達人</rb><rt>たつじん</rt></ruby>は大観せぬものじゃ。」と教えた。「たとえばこの魚じゃ。」と、<persName ref="#kyuzennenshi"><ruby><rb>鮎子</rb><rt>ねんし</rt></ruby></persName>は眼前を泳ぎ過ぎる一尾の<ruby><rb>鯉</rb><rt>こい</rt></ruby>を<ruby><rb>掴</rb><rt>つか</rt></ruby>み取ったかと思うと、それをムシャムシャかじりながら、説くのである。「この魚だが、この魚が、なぜ、わしの眼の前を通り、しかして、わしの<ruby><rb>餌</rb><rt>え</rt></ruby>とならねばならぬ<ruby><rb>因縁</rb><rt>いんねん</rt></ruby>をもっているか、をつくづくと考えてみることは、いかにも<ruby><rb>仙哲</rb><rt>せんてつ</rt></ruby>にふさわしき振舞いじゃが、鯉を捕える前に、そんなことをくどくどと考えておった日には、獲物は逃げて行くばっかりじゃ。まずすばやく鯉を捕え、これにむしゃぶりついてから、それを考えても遅うはない。鯉は<ruby><rb>何故</rb><rt>なにゆえ</rt></ruby>に鯉なりや、鯉と<ruby><rb>鮒</rb><rt>ふな</rt></ruby>との相異についての<ruby><rb>形而上</rb><rt>けいじじょう</rt></ruby>学的考察、等々の、ばかばかしく<ruby><rb>高尚</rb><rt>こうしょう</rt></ruby>な問題にひっかかって、いつも鯉を捕えそこなう男じゃろう、お<ruby><rb>前</rb><rt>まえ</rt></ruby>は。おまえの<ruby><rb>物憂</rb><rt>ものう</rt></ruby>げな<ruby><rb>眼</rb><rt>め</rt></ruby>の光が、それをはっきり告げとるぞ。どうじゃ。」確かにそれに違いないと、<persName ref="#gojo">悟浄</persName>は頭を垂れた。妖怪はそのときすでに鯉を平げてしまい、なお<ruby><rb>貪婪</rb><rt>どんらん</rt></ruby>そうな眼つきを<persName ref="#gojo">悟浄</persName>のうなだれた<ruby><rb>頸筋</rb><rt>くびすじ</rt></ruby>に<ruby><rb>注</rb><rt>そそ</rt></ruby>いでおったが、急に、その眼が光り、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>がゴクリと鳴った。ふと首を上げた<persName ref="#gojo">悟浄</persName>は、<ruby><rb>咄嗟</rb><rt>とっさ</rt></ruby>に、危険なものを感じて身を引いた。妖怪の刃のような鋭い<ruby><rb>爪</rb><rt>つめ</rt></ruby>が、恐ろしい速さで<persName ref="#gojo">悟浄</persName>の咽喉をかすめた。最初の一撃にしくじった妖怪の怒りに燃えた<ruby><rb>貪食</rb><rt>どんしょく</rt></ruby>的な顔が大きく迫ってきた。<persName ref="#gojo">悟浄</persName>は強く水を<ruby><rb>蹴</rb><rt>け</rt></ruby>って、泥煙を立てるとともに、<ruby><rb>愴惶</rb><rt>そうこう</rt></ruby>と洞穴を逃れ出た。<ruby><rb>苛刻</rb><rt>かこく</rt></ruby>な現実精神をかの<ruby><rb>獰猛</rb><rt>どうもう</rt></ruby>な妖怪から、身をもって学んだわけだ、と、<persName ref="#gojo">悟浄</persName>は<ruby><rb>顫</rb><rt>ふる</rt></ruby>えながら考えた。</p>
+        <p>隣人愛の教説者として有名な<persName ref="#muchokoshi"><ruby><rb>無腸公子</rb><rt>むちょうこうし</rt></ruby></persName>の<ruby><rb>講筵</rb><rt>こうえん</rt></ruby>に列したときは、説教半ばにしてこの聖僧が突然<ruby><rb>饑</rb><rt>う</rt></ruby>えに駆られて、自分の実の子（もっとも彼は<ruby><rb>蟹</rb><rt>かに</rt></ruby>の<ruby><rb>妖精</rb><rt>ようせい</rt></ruby>ゆえ、一度に無数の子供を卵からかえすのだが）を二、三人、むしゃむしゃ<ruby><rb>喰</rb><rt>た</rt></ruby>べてしまったのを見て、<ruby><rb>仰天</rb><rt>ぎょうてん</rt></ruby>した。</p>
+        <p><ruby><rb>慈悲忍辱</rb><rt>じひにんにく</rt></ruby>を説く聖者が、今、衆人環視の中で自分の子を捕えて食った。そして、食い終わってから、その事実をも忘れたるがごとくに、ふたたび慈悲の説を述べはじめた。忘れたのではなくて、先刻の飢えを<ruby><rb>充</rb><rt>み</rt></ruby>たすための行為は、てんで彼の意識に上っていなかったに相違ない。ここにこそ<ruby><rb>俺</rb><rt>おれ</rt></ruby>の学ぶべきところがあるのかもしれないぞ、と、<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>はへんな<ruby><rb>理窟</rb><rt>りくつ</rt></ruby>をつけて考えた。俺の生活のどこに、ああした本能的な没我的な瞬間があるか。<ruby><rb>渠</rb><rt>かれ</rt></ruby>は、<ruby><rb>貴</rb><rt>とうと</rt></ruby>き<ruby><rb>訓</rb><rt>おしえ</rt></ruby>を得たと思い、<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>いて拝んだ。いや、こんなふうにして、いちいち概念的な解釈をつけてみなければ気の済まないところに、俺の弱点があるのだ、と、渠は、もう一度思い直した。教訓を、<ruby><rb>罐詰</rb><rt>かんづめ</rt></ruby>にしないで<ruby><rb>生</rb><rt>なま</rt></ruby>のままに身につけること、そうだ、そうだ、と<persName ref="#gojo">悟浄</persName>は今一遍、<ruby><rb>拝</rb><rt>はい</rt></ruby>をしてから、うやうやしく立去った。</p>
+        <p><persName ref="#hoishi"><ruby><rb>蒲衣子</rb><rt>ほいし</rt></ruby></persName>の<ruby><rb>庵室</rb><rt>あんしつ</rt></ruby>は、変わった道場である。<ruby><rb>僅</rb><rt>わず</rt></ruby>か四、五人しか弟子はいないが、彼らはいずれも師の歩みに<ruby><rb>倣</rb><rt>なろ</rt></ruby>うて、自然の<ruby><rb>秘鑰</rb><rt>ひやく</rt></ruby>を探究する者どもであった。探求者というより、陶酔者と言ったほうがいいかもしれない。彼らの勤めるのは、ただ、自然を<ruby><rb>観</rb><rt>み</rt></ruby>て、しみじみとその美しい調和の中に透過することである。</p>
+        <p>「まず感じることです。感覚を、最も美しく賢く<ruby><rb>洗煉</rb><rt>せんれん</rt></ruby>することです。自然美の直接の感受から離れた思考などとは、灰色の夢ですよ。」と弟子の一人が言った。</p>
+        <p>「心を深く潜ませて自然をごらんなさい。雲、空、風、雪、うす<ruby><rb>碧</rb><rt>あお</rt></ruby>い氷、<ruby><rb>紅藻</rb><rt>べにも</rt></ruby>の揺れ、夜水中でこまかくきらめく<ruby><rb>珪藻</rb><rt>けいそう</rt></ruby>類の光、<ruby><rb>鸚鵡貝</rb><rt>おうむがい</rt></ruby>の<ruby><rb>螺旋</rb><rt>らせん</rt></ruby>、<ruby><rb>紫水晶</rb><rt>むらさきすいしょう</rt></ruby>の結晶、<ruby><rb>柘榴石</rb><rt>ざくろいし</rt></ruby>の紅、<ruby><rb>螢石</rb><rt>ほたるいし</rt></ruby>の青。なんと美しくそれらが自然の秘密を語っているように見えることでしょう。」彼の言うことは、まるで詩人の言葉のようだった。</p>
+        <p>「それだのに、自然の暗号文字を解くのも今一歩というところで、突然、幸福な予感は消去り、私どもは、またしても、美しいけれども冷たい自然の横顔を見なければならないのです。」と、また、別の弟子が続けた。「これも、まだ私どもの感覚の鍛錬が足りないからであり、心が深く潜んでいないからなのです。私どもはまだまだ努めなければなりません。やがては、師のいわれるように『観ることが愛することであり、愛することが<ruby><rb>創造</rb><rt>つく</rt></ruby>ることである』ような瞬間をもつことができるでしょうから。」</p>
+        <p>その間も、師の<persName ref="#hoishi"><ruby><rb>蒲衣子</rb><rt>ほいし</rt></ruby></persName>は一言も口をきかず、鮮緑の<ruby><rb>孔雀石</rb><rt>くじゃくいし</rt></ruby>を一つ<ruby><rb>掌</rb><rt>てのひら</rt></ruby>にのせて、深い<ruby><rb>歓</rb><rt>よろこ</rt></ruby>びを<ruby><rb>湛</rb><rt>たた</rt></ruby>えた穏やかな<ruby><rb>眼差</rb><rt>まなざし</rt></ruby>で、じっとそれを見つめていた。</p>
+        <p><persName ref="#gojo">悟浄</persName>は、この庵室に<ruby><rb>一</rb><rt>ひと</rt></ruby>月ばかり滞在した。その間、<ruby><rb>渠</rb><rt>かれ</rt></ruby>も彼らとともに自然詩人となって宇宙の調和を<ruby><rb>讃</rb><rt>たた</rt></ruby>え、その<ruby><rb>最奥</rb><rt>さいおう</rt></ruby>の生命に同化することを願うた。自分にとって場違いであるとは感じながらも、彼らの静かな幸福に<ruby><rb>惹</rb><rt>ひ</rt></ruby>かれたためである。</p>
+        <p>弟子の中に、一人、異常に美しい少年がいた。<ruby><rb>肌</rb><rt>はだ</rt></ruby>は白魚のように<ruby><rb>透</rb><rt>す</rt></ruby>きとおり、<ruby><rb>黒瞳</rb><rt>こくとう</rt></ruby>は夢見るように大きく見開かれ、額にかかる<ruby><rb>捲毛</rb><rt>まきげ</rt></ruby>は<ruby><rb>鳩</rb><rt>はと</rt></ruby>の胸毛のように柔らかであった。心に少しの憂いがあるときは、月の前を横ぎる薄雲ほどの<ruby><rb>微</rb><rt>かす</rt></ruby>かな<ruby><rb>陰翳</rb><rt>かげ</rt></ruby>が美しい顔にかかり、<ruby><rb>歓</rb><rt>よろこ</rt></ruby>びのあるときは静かに澄んだ<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>の奥が夜の宝石のように輝いた。師も<ruby><rb>朋輩</rb><rt>ほうばい</rt></ruby>もこの少年を愛した。素直で、純粋で、この少年の心は疑うことを知らないのである。ただあまりに美しく、あまりにかぼそく、まるで何か貴い気体ででもできているようで、それがみんなに不安なものを感じさせていた。少年は、ひまさえあれば、白い石の上に<ruby><rb>淡飴色</rb><rt>うすあめいろ</rt></ruby>の<ruby><rb>蜂蜜</rb><rt>はちみつ</rt></ruby>を垂らして、それでひるがおの花を<ruby><rb>画</rb><rt>か</rt></ruby>いていた。</p>
+        <p><persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>がこの<ruby><rb>庵室</rb><rt>あんしつ</rt></ruby>を去る四、五日前のこと、少年は朝、<ruby><rb>庵</rb><rt>いおり</rt></ruby>を出たっきりでもどって来なかった。彼といっしょに出ていった一人の弟子は不思議な報告をした。自分が油断をしているひまに、少年はひょいと水に溶けてしまったのだ、自分は確かにそれを見た、と。他の弟子たちはそんなばかなことがと笑ったが、師の<persName ref="#hoishi"><ruby><rb>蒲衣子</rb><rt>ほいし</rt></ruby></persName>はまじめにそれをうべなった。そうかもしれぬ、あの<ruby><rb>児</rb><rt>こ</rt></ruby>ならそんなことも起こるかもしれぬ、あまりに純粋だったから、と。</p>
+        <p><persName ref="#gojo">悟浄</persName>は、自分を取って<ruby><rb>喰</rb><rt>く</rt></ruby>おうとした<ruby><rb>鯰</rb><rt>なまず</rt></ruby>の<ruby><rb>妖怪</rb><rt>ばけもの</rt></ruby>の<ruby><rb>逞</rb><rt>たくま</rt></ruby>しさと、水に溶け去った少年の美しさとを、並べて考えながら、<persName ref="#hoishi">蒲衣子</persName>のもとを辞した。</p>
+        <p><persName ref="#hoishi">蒲衣子</persName>の次に、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は<persName ref="#hanikessuba"><ruby><rb>斑衣鱖婆</rb><rt>はんいけつば</rt></ruby></persName>の所へ行った。すでに五百余歳を経ている<ruby><rb>女怪</rb><rt>じょかい</rt></ruby>だったが、<ruby><rb>肌</rb><rt>はだ</rt></ruby>のしなやかさは少しも処女と異なるところがなく、<ruby><rb>婀娜</rb><rt>あだ</rt></ruby>たるその姿態は<ruby><rb>能</rb><rt>よ</rt></ruby>く<ruby><rb>鉄石</rb><rt>てっせき</rt></ruby>の心をも<ruby><rb>蕩</rb><rt>とろ</rt></ruby>かすといわれていた。肉の楽しみを<ruby><rb>極</rb><rt>きわ</rt></ruby>めることをもって唯一の生活信条としていたこの老女怪は、後庭に房を連ねること数十、容姿<ruby><rb>端正</rb><rt>たんせい</rt></ruby>な若者を集めて、この中に<ruby><rb>盈</rb><rt>み</rt></ruby>たし、その楽しみに<ruby><rb>耽</rb><rt>ふ</rt></ruby>けるにあたっては、<ruby><rb>親昵</rb><rt>しんじつ</rt></ruby>をも<ruby><rb>屏</rb><rt>しりぞ</rt></ruby>け、交遊をも絶ち、後庭に隠れて、昼をもって夜に継ぎ、<ruby><rb>三</rb><rt>み</rt></ruby>月に一度しか外に顔を出さないのである。<persName ref="#gojo">悟浄</persName>の訪ねたのはちょうどこの三月に一度のときに当たったので、幸いに老女怪を見ることができた。道を求める者と聞いて、<persName ref="#hanikessuba"><ruby><rb>鱖婆</rb><rt>けつば</rt></ruby></persName>は<persName ref="#gojo">悟浄</persName>に説き聞かせた。ものうい<ruby><rb>憊</rb><rt>つか</rt></ruby>れの<ruby><rb>翳</rb><rt>かげ</rt></ruby>を、<ruby><rb>嬋娟</rb><rt>せんけん</rt></ruby>たる容姿のどこかに見せながら。</p>
+        <p>「この道ですよ。この道ですよ。聖賢の教えも<ruby><rb>仙哲</rb><rt>せんてつ</rt></ruby>の修業も、つまりはこうした<ruby><rb>無上法悦</rb><rt>むじょうほうえつ</rt></ruby>の瞬間を持続させることにその目的があるのですよ。考えてもごらんなさい。この世に生を<ruby><rb>享</rb><rt>う</rt></ruby>けるということは、実に、百千万億<ruby><rb>恒河沙</rb><rt>ごうがしゃ</rt></ruby><ruby><rb>劫無限</rb><rt>こうむげん</rt></ruby>の時間の中でも<ruby><rb>誠</rb><rt>まこと</rt></ruby>に<ruby><rb>遇</rb><rt>あ</rt></ruby>いがたく、ありがたきことです。しかも一方、死は<ruby><rb>呆</rb><rt>あき</rt></ruby>れるほど速やかに私たちの上に襲いかかってくるものです。遇いがたきの生をもって、及びやすきの死を待っている私たちとして、いったい、この道のほかに何を考えることができるでしょう。ああ、あの<ruby><rb>痺</rb><rt>しび</rt></ruby>れるような歓喜！　常に新しいあの陶酔！」と女怪は酔ったように<ruby><rb>豔妖淫靡</rb><rt>えんよういんび</rt></ruby>な眼を細くして叫んだ。</p>
+        <p>「<ruby><rb>貴方</rb><rt>あなた</rt></ruby>はお気の毒ながらたいへん醜いおかたゆえ、私のところに<ruby><rb>留</rb><rt>とど</rt></ruby>まっていただこうとは思いませぬから、ほんとうのことを申しますが、実は、私の後房では毎年百人ずつの若い男が<ruby><rb>困憊</rb><rt>つかれ</rt></ruby>のために死んでいきます。しかしね、断わっておきますが、その人たちはみんな喜んで、自分の一生に満足して死んでいくのですよ。誰一人、私のところへ留まったことを<ruby><rb>怨</rb><rt>うら</rt></ruby>んで死んだ者はありませなんだ。今死ぬために、この楽しみがこれ以上続けられないことを悔やんだ者はありましたが。」</p>
+        <p><persName ref="#gojo">悟浄</persName>の醜さを<ruby><rb>憐</rb><rt>あわ</rt></ruby>れむような<ruby><rb>眼</rb><rt>め</rt></ruby>つきをしながら、最後に<persName ref="#hanikessuba"><ruby><rb>鱖婆</rb><rt>けつば</rt></ruby></persName>はこうつけ加えた。</p>
+        <p>「徳とはね、楽しむことのできる能力のことですよ。」</p>
+        <p>醜いがゆえに、毎年死んでいく百人の仲間に加わらないで済んだことを感謝しつつ、<persName ref="#gojo">悟浄</persName>はなおも旅を続けた。</p>
+        <p><ruby><rb>賢人</rb><rt>けんじん</rt></ruby>たちの説くところはあまりにもまちまちで、<ruby><rb>渠</rb><rt>かれ</rt></ruby>はまったく何を信じていいやら解らなかった。</p>
+        <p>「我とはなんですか？」という渠の問いに対して、一人の賢者はこういった。「まず<ruby><rb>吼</rb><rt>ほ</rt></ruby>えてみろ。ブウと鳴くようならお前は豚じゃ。ギャアと鳴くようなら<ruby><rb>鵝鳥</rb><rt>がちょう</rt></ruby>じゃ」と。他の賢者はこう教えた。「自己とはなんぞやとむりに言い表わそうとさえしなければ、自己を知るのは比較的困難ではない」と。また、<ruby><rb>曰</rb><rt>いわ</rt></ruby>く「眼は一切を見るが、みずからを見ることができない。我とは<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>、我の知る<ruby><rb>能</rb><rt>あた</rt></ruby>わざるものだ」と。</p>
+        <p>別の賢者は説いた、「我はいつも我だ。我の現在の意識の生ずる以前の・無限の時を通じて我といっていたものがあった。（それを誰も今は、記憶していないが）それがつまり今の我になったのだ。現在の我の意識が<ruby><rb>亡</rb><rt>ほろ</rt></ruby>びたのちの無限の時を通じて、また、我というものがあるだろう。それを今、誰も予見することができず、またそのときになれば、現在の我の意識のことを全然忘れているに違いないが」と。</p>
+        <p>次のように言った男もあった。「一つの継続した我とはなんだ？　それは記憶の影の<ruby><rb>堆積</rb><rt>たいせき</rt></ruby>だよ」と。この男はまた<persName ref="#gojo">悟浄</persName>にこう教えてくれた。「記憶の喪失ということが、<ruby><rb>俺</rb><rt>おれ</rt></ruby>たちの毎日していることの全部だ。忘れてしまっていることを忘れてしまっているゆえ、いろんなことが新しく感じられるんだが、実は、あれは、俺たちが何もかも徹底的に忘れちまうからのことなんだ。昨日のことどころか、一瞬間前のことをも、つまりそのときの知覚、そのときの感情をも何もかも次の瞬間には忘れちまってるんだ。それらの、ほんの<ruby><rb>僅</rb><rt>わず</rt></ruby>か一部の、<ruby><rb>朧</rb><rt>おぼろ</rt></ruby>げな複製があとに残るにすぎないんだ。だから、<persName ref="#gojo">悟浄</persName>よ、現在の瞬間てやつは、なんと、たいしたものじゃないか」と。</p>
+        <p>さて、五年に近い<ruby><rb>遍歴</rb><rt>へんれき</rt></ruby>の間、同じ容態に違った処方をする多くの医者たちの間を往復するような愚かさを繰返したのち、<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>は結局自分が少しも賢くなっていないことを見いだした。賢くなるどころか、なにかしら自分がフワフワした（自分でないような）訳の分からないものに成り果てたような気がした。昔の自分は愚かではあっても、少なくとも今よりは、しっかりとした――それはほとんど肉体的な感じで、とにかく自分の重量を<ruby><rb>有</rb><rt>も</rt></ruby>っていたように思う。それが今は、まるで重量のない・吹けば飛ぶようなものになってしまった。<ruby><rb>外</rb><rt>そと</rt></ruby>からいろんな模様を塗り付けられはしたが、中味のまるでないものに。こいつは、いけないぞ、と<persName ref="#gojo">悟浄</persName>は思った。思索による意味の探索以外に、もっと直接的な<ruby><rb>解答</rb><rt>こたえ</rt></ruby>があるのではないか、という予感もした。こうした事柄に、計算の答えのような解答を求めようとした<ruby><rb>己</rb><rt>おのれ</rt></ruby>の愚かさ。そういうことに気がつきだしたころ、行く手の水が赤黒く濁ってきて、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は目指す<persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>のもとに着いた。</p>
+        <p><persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>は一見きわめて平凡な<ruby><rb>仙人</rb><rt>せんにん</rt></ruby>で、むしろ<ruby><rb>迂愚</rb><rt>うぐ</rt></ruby>とさえ見えた。<persName ref="#gojo">悟浄</persName>が来ても別に<ruby><rb>渠</rb><rt>かれ</rt></ruby>を使うでもなく、教えるでもなかった。<ruby><rb>堅彊</rb><rt>けんきょう</rt></ruby>は死の<ruby><rb>徒</rb><rt>と</rt></ruby>、<ruby><rb>柔弱</rb><rt>にゅうじゃく</rt></ruby>は生の徒なれば、「学ぼう。学ぼう」というコチコチの態度を忌まれたもののようである。ただ、ほんのときたま、別に誰に向かって言うのでもなく、何か<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いておられることがある。そういうとき、<persName ref="#gojo">悟浄</persName>は急いで聞き耳を立てるのだが、声が低くてたいていは聞きとれない。<ruby><rb>三</rb><rt>み</rt></ruby>月の間、渠はついになんの教えも聞くことができなかった。「<ruby><rb>賢者</rb><rt>けんじゃ</rt></ruby>が他人について知るよりも、<ruby><rb>愚者</rb><rt>ぐしゃ</rt></ruby>が<ruby><rb>己</rb><rt>おのれ</rt></ruby>について知るほうが多いものゆえ、自分の病は自分で治さねばならぬ」というのが、<persName ref="#joushi">女偊氏</persName>から聞きえた唯一の言葉だった。<ruby><rb>三</rb><rt>み</rt></ruby>月めの終わりに、<persName ref="#gojo">悟浄</persName>はもはやあきらめて、<ruby><rb>暇乞</rb><rt>いとまご</rt></ruby>いに師のもとへ行った。するとそのとき、珍しくも<persName ref="#joushi">女偊氏</persName>は<ruby><rb>縷々</rb><rt>るる</rt></ruby>として<persName ref="#gojo">悟浄</persName>に教えを垂れた。「目が三つないからとて悲しむことの愚かさについて」「<ruby><rb>爪</rb><rt>つめ</rt></ruby>や髪の伸長をも意志によって左右しようとしなければ気が済まない者の不幸について」「酔うている者は車から<ruby><rb>墜</rb><rt>お</rt></ruby>ちても傷つかないことについて」「しかし、一概に考えることが悪いとは言えないのであって、考えない者の幸福は、船酔いを知らぬ豚のようなものだが、ただ考えることについて考えることだけは禁物であるということについて」</p>
+        <p><persName ref="#joushi">女偊氏</persName>は、自分のかつて<ruby><rb>識</rb><rt>し</rt></ruby>っていた、ある神智を有する魔物のことを話した。その魔物は、上は<ruby><rb>星辰</rb><rt>せいしん</rt></ruby>の運行から、下は微生物類の生死に至るまで、何一つ知らぬことなく、<ruby><rb>深甚微妙</rb><rt>しんじんみみょう</rt></ruby>な計算によって、既往のあらゆる出来事を<ruby><rb>溯</rb><rt>さかのぼ</rt></ruby>って知りうるとともに、将来起こるべきいかなる出来事をも推知しうるのであった。ところが、この魔物はたいへん不幸だった。というのは、この魔物があるときふと、「自分のすべて予見しうる全世界の出来事が、<ruby><rb>何故</rb><rt>なにゆえ</rt></ruby>に（経過的ないかにしてではなく、根本的な何故に）そのごとく起こらねばならぬか」ということに想到し、その究極の理由が、彼の深甚微妙なる大計算をもってしてもついに<ruby><rb>探</rb><rt>さが</rt></ruby>し出せないことを見いだしたからである。何故<ruby><rb>向日葵</rb><rt>ひまわり</rt></ruby>は黄色いか。何故草は緑か。何故すべてがかく<ruby><rb>在</rb><rt>あ</rt></ruby>るか。この疑問が、この<ruby><rb>神通力</rb><rt>じんずうりき</rt></ruby>広大な魔物を苦しめ悩ませ、ついに<ruby><rb>惨</rb><rt>みじ</rt></ruby>めな死にまで導いたのであった。</p>
+        <p><persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>はまた、別の<ruby><rb>妖精</rb><rt>ようせい</rt></ruby>のことを話した。これはたいへん小さなみすぼらしい魔物だったが、常に、自分はある小さな鋭く光ったものを探しに生まれてきたのだと言っていた。その光るものとはどんなものか、誰にも解らなかったが、とにかく、<ruby><rb>小妖精</rb><rt>しょうようせい</rt></ruby>は熱心にそれを求め、そのために生き、そのために死んでいったのだった。そしてとうとう、その小さな鋭く光ったものは見つからなかったけれど、その小妖精の一生はきわめて幸福なものだったと思われると<persName ref="#joushi">女偊氏</persName>は語った。かく語りながら、しかし、これらの話のもつ意味については、なんの説明もなかった。ただ、最後に、師は次のようなことを言った。</p>
+        <p>「聖なる狂気を知る者は幸いじゃ。彼はみずからを殺すことによって、みずからを救うからじゃ。聖なる狂気を知らぬ者は<ruby><rb>禍</rb><rt>わざわ</rt></ruby>いじゃ。彼は、みずからを殺しも生かしもせぬことによって、徐々に亡びるからじゃ。愛するとは、より高貴な理解のしかた。行なうとは、より明確な思索のしかたであると知れ。何事も意識の<ruby><rb>毒汁</rb><rt>どくじゅう</rt></ruby>の中に浸さずにはいられぬ<ruby><rb>憐</rb><rt>あわ</rt></ruby>れな<persName ref="#gojo">悟浄</persName>よ。我々の運命を決定する大きな変化は、みんな我々の意識を伴わずに行なわれるのだぞ。考えてもみよ。お前が生まれたとき、お前はそれを意識しておったか？」</p>
+        <p><persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>は謹しんで師に答えた。師の教えは、今ことに身にしみてよく理解される。実は、自分も永年の遍歴の間に、思索だけではますます<ruby><rb>泥沼</rb><rt>どろぬま</rt></ruby>に陥るばかりであることを感じてきたのであるが、今の自分を突破って生まれ変わることができずに苦しんでいるのである、と。それを聞いて<persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>は言った。</p>
+        <p>「渓流が流れて来て<ruby><rb>断崖</rb><rt>だんがい</rt></ruby>の近くまで来ると、一度<ruby><rb>渦巻</rb><rt>うずまき</rt></ruby>をまき、さて、それから<ruby><rb>瀑布</rb><rt>ばくふ</rt></ruby>となって落下する。<persName ref="#gojo">悟浄</persName>よ。お前は今その渦巻の一歩手前で、ためらっているのだな。一歩渦巻にまき込まれてしまえば、<placeName ref="#naraku"><ruby><rb>那落</rb><rt>ならく</rt></ruby></placeName>までは一息。その途中に思索や反省や<ruby><rb>低徊</rb><rt>ていかい</rt></ruby>のひまはない。<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>な<persName ref="#gojo">悟浄</persName>よ。お前は<ruby><rb>渦巻</rb><rt>うずま</rt></ruby>きつつ落ちて行く者どもを恐れと<ruby><rb>憐</rb><rt>あわ</rt></ruby>れみとをもって<ruby><rb>眺</rb><rt>なが</rt></ruby>めながら、自分も思い切って飛込もうか、どうしようかと<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>しているのだな。遅かれ早かれ自分は谷底に落ちねばならぬとは十分に承知しているくせに。<ruby><rb>渦巻</rb><rt>うずまき</rt></ruby>にまき込まれないからとて、けっして幸福ではないことも承知しているくせに。それでもまだお前は、傍観者の地位に<ruby><rb>恋々</rb><rt>れんれん</rt></ruby>として離れられないのか。<ruby><rb>物凄</rb><rt>ものすご</rt></ruby>い生の渦巻の中で<ruby><rb>喘</rb><rt>あえ</rt></ruby>いでいる連中が、案外、はたで見るほど不幸ではない（少なくとも懐疑的な傍観者より何倍もしあわせだ）ということを、愚かな<persName ref="#gojo">悟浄</persName>よ、お前は知らないのか。」</p>
+        <p>師の教えのありがたさは<ruby><rb>骨髄</rb><rt>こつずい</rt></ruby>に徹して感じられたが、それでもなおどこか釈然としないものを残したまま、<persName ref="#gojo">悟浄</persName>は、師のもとを辞した。</p>
+        <p>もはや誰にも道を聞くまいぞと、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は思うた。「誰も彼も、えらそうに見えたって、実は何一つ<ruby><rb>解</rb><rt>わか</rt></ruby>ってやしないんだな」と<persName ref="#gojo">悟浄</persName>は<ruby><rb>独言</rb><rt>ひとりごと</rt></ruby>を言いながら帰途についた。「『お互いに解ってるふりをしようぜ。解ってやしないんだってことは、お互いに解り切ってるんだから』という約束のもとにみんな生きているらしいぞ。こういう約束がすでに在るのだとすれば、それをいまさら、解らない解らないと言って騒ぎ立てる俺は、なんという気の<ruby><rb>利</rb><rt>き</rt></ruby>かない困りものだろう。まったく。」</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>五</head>
+        <p>のろまで<ruby><rb>愚図</rb><rt>ぐず</rt></ruby>の<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>のことゆえ、<ruby><rb>翻然大悟</rb><rt>ほんぜんたいご</rt></ruby>とか、<ruby><rb>大活現前</rb><rt>だいかつげんぜん</rt></ruby>とかいった<ruby><rb>鮮</rb><rt>あざ</rt></ruby>やかな芸当を見せることはできなかったが、徐々に、目に見えぬ変化が<ruby><rb>渠</rb><rt>かれ</rt></ruby>の上に働いてきたようである。</p>
+        <p>はじめ、それは<ruby><rb>賭</rb><rt>か</rt></ruby>けをするような気持であった。一つの選択が許される場合、一つの<ruby><rb>途</rb><rt>みち</rt></ruby>が永遠の<ruby><rb>泥濘</rb><rt>でいねい</rt></ruby>であり、他の途が<ruby><rb>険</rb><rt>けわ</rt></ruby>しくはあってもあるいは救われるかもしれぬのだとすれば、誰しもあとの途を選ぶにきまっている。それだのになぜ<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>していたのか。そこで<ruby><rb>渠</rb><rt>かれ</rt></ruby>ははじめて、自分の考え方の中にあった<ruby><rb>卑</rb><rt>いや</rt></ruby>しい功利的なものに気づいた。<ruby><rb>嶮</rb><rt>けわ</rt></ruby>しい<ruby><rb>途</rb><rt>みち</rt></ruby>を選んで苦しみ抜いた<ruby><rb>揚句</rb><rt>あげく</rt></ruby>に、さて結局救われないとなったら取返しのつかない損だ、という気持が知らず知らずの間に、自分の不決断に作用していたのだ。骨折り損を避けるために、骨はさして折れない代わりに決定的な損亡へしか導かない途に留まろうというのが、<ruby><rb>不精</rb><rt>ぶしょう</rt></ruby>で愚かで卑しい<ruby><rb>俺</rb><rt>おれ</rt></ruby>の気持だったのだ。<persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>のもとに滞在している間に、しかし、渠の気持も、しだいに一つの方向へ追詰められてきた。初めは追つめられたものが、しまいにはみずから進んで動き出すものに変わろうとしてきた。自分は今まで自己の幸福を求めてきたのではなく、世界の意味を尋ねてきたと自分では思っていたが、それはとんでもない間違いで、実は、そういう変わった形式のもとに、最も執念深く自己の幸福を探していたのだということが、<persName ref="#gojo">悟浄</persName>に<ruby><rb>解</rb><rt>わか</rt></ruby>りかけてきた。自分は、そんな世界の意味を<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>するほどたいした生きものでないことを、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は、<ruby><rb>卑下</rb><rt>ひげ</rt></ruby>感をもってでなく、安らかな満足感をもって感じるようになった。そして、そんな生意気をいう前に、とにかく、自分でもまだ知らないでいるに違いない自己を試み展開してみようという勇気が出てきた。<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>する前に試みよう。結果の成否は考えずに、ただ、試みるために全力を挙げて試みよう。決定的な失敗に<ruby><rb>帰</rb><rt>き</rt></ruby>したっていいのだ。今までいつも、失敗への<ruby><rb>危惧</rb><rt>きぐ</rt></ruby>から努力を<ruby><rb>抛棄</rb><rt>ほうき</rt></ruby>していた渠が、骨折り損を<ruby><rb>厭</rb><rt>いと</rt></ruby>わないところにまで<ruby><rb>昇華</rb><rt>しょうか</rt></ruby>されてきたのである。</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>六</head>
+        <p><persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>の肉体はもはや疲れ切っていた。</p>
+        <p>ある日、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は、とある道ばたにぶっ倒れ、そのまま深い<ruby><rb>睡</rb><rt>ねむ</rt></ruby>りに落ちてしまった。まったく、何もかも忘れ果てた<ruby><rb>昏睡</rb><rt>こんすい</rt></ruby>であった。渠は<ruby><rb>昏々</rb><rt>こんこん</rt></ruby>として幾日か睡り続けた。空腹も忘れ、夢も見なかった。</p>
+        <p>ふと、<ruby><rb>眼</rb><rt>め</rt></ruby>を覚ましたとき、何か<ruby><rb>四辺</rb><rt>あたり</rt></ruby>が、青白く明るいことに気がついた。夜であった。明るい月夜であった。大きな<ruby><rb>円</rb><rt>まる</rt></ruby>い春の満月が水の上から射し込んできて、浅い川底を穏やかな白い明るさで満たしているのである。<persName ref="#gojo">悟浄</persName>は、熟睡のあとのさっぱりした気持で起上がった。とたんに空腹に気づいた。渠はそのへんを泳いでいた魚類を五、六尾<ruby><rb>手掴</rb><rt>てづか</rt></ruby>みにしてむしゃむしゃ<ruby><rb>頬張</rb><rt>ほおば</rt></ruby>り、さて、腰に<ruby><rb>提</rb><rt>さ</rt></ruby>げた<ruby><rb>瓢</rb><rt>ふくべ</rt></ruby>の酒を<ruby><rb>喇叭</rb><rt>らっぱ</rt></ruby>飲みにした。<ruby><rb>旨</rb><rt>うま</rt></ruby>かった。ゴクリゴクリと渠は音を立てて飲んだ。<ruby><rb>瓢</rb><rt>ふくべ</rt></ruby>の底まで飲み干してしまうと、いい気持で歩き出した。</p>
+        <p>底の<ruby><rb>真砂</rb><rt>まさご</rt></ruby>の一つ一つがはっきり見分けられるほど明るかった。水草に沿うて、絶えず小さな<ruby><rb>水泡</rb><rt>みなわ</rt></ruby>の列が水銀球のように光り、揺れながら昇って行く。ときどき<ruby><rb>渠</rb><rt>かれ</rt></ruby>の姿を見て逃出す小魚どもの腹が白く光っては<ruby><rb>青水藻</rb><rt>あおみどろ</rt></ruby>の影に消える。<persName ref="#gojo">悟浄</persName>はしだいに陶然としてきた。<ruby><rb>柄</rb><rt>がら</rt></ruby>にもなく歌が<ruby><rb>唱</rb><rt>うた</rt></ruby>いたくなり、すんでのことに、声を張上げるところだった。そのとき、ごく遠くの方で誰かの唱っているらしい声が耳にはいってきた。渠は<ruby><rb>立停</rb><rt>たちど</rt></ruby>まって耳をすました。その声は水の外から来るようでもあり、水底のどこか遠くから来るようでもある。低いけれども<ruby><rb>澄透</rb><rt>すみとお</rt></ruby>った声でほそぼそと聞こえてくるその歌に耳を傾ければ、</p>
+        <p><ruby><rb>江国春風吹不起</rb><rt>こうこくのしゅんぷうふきたたず</rt></ruby></p>
+        <p><ruby><rb>鷓鴣啼在深花裏</rb><rt>しゃこないてしんかのうちにあり</rt></ruby></p>
+        <p><ruby><rb>三級浪高魚化竜</rb><rt>さんきゅうなみたこうしてうおりゅうにかす</rt></ruby></p>
+        <p><ruby><rb>痴人</rb><rt>ちじん</rt></ruby><ruby><rb>猶𡰷</rb><rt>なおくむ</rt></ruby><ruby><rb>夜塘水</rb><rt>やとうのみず</rt></ruby></p>
+        <p>どうやら、そんな文句のようでもある。<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>はその場に腰を下ろして、なおもじっと聴入った。青白い月光に染まった透明な水の世界の中で、単調な歌声は、風に消えていく狩りの角笛の<ruby><rb>音</rb><rt>ね</rt></ruby>のように、ほそぼそといつまでもひびいていた。</p>
+        <p><ruby><rb>寐</rb><rt>ね</rt></ruby>たのでもなく、さりとて覚めていたのでもない。<persName ref="#gojo">悟浄</persName>は、魂が甘く<ruby><rb>疼</rb><rt>うず</rt></ruby>くような気持で<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>と永い間そこに<ruby><rb>蹲</rb><rt>うずくま</rt></ruby>っていた。そのうちに、<ruby><rb>渠</rb><rt>かれ</rt></ruby>は奇妙な、夢とも幻ともつかない世界にはいって行った。水草も魚の影も<ruby><rb>卒然</rb><rt>そつぜん</rt></ruby>と渠の視界から消え去り、急に、<ruby><rb>得</rb><rt>え</rt></ruby>もいわれぬ<ruby><rb>蘭麝</rb><rt>らんじゃ</rt></ruby>の<ruby><rb>匂</rb><rt>にお</rt></ruby>いが漂うてきた。と思うと、見慣れぬ二人の人物がこちらへ進んで来るのを渠は見た。</p>
+        <p>前なるは手に<ruby><rb>錫杖</rb><rt>しゃくじょう</rt></ruby>をついた<ruby><rb>一癖</rb><rt>ひとくせ</rt></ruby>ありげな<ruby><rb>偉丈夫</rb><rt>いじょうふ</rt></ruby>。後ろなるは、頭に<ruby><rb>宝珠瓔珞</rb><rt>ほうじゅようらく</rt></ruby>を<ruby><rb>纏</rb><rt>まと</rt></ruby>い、頂に<ruby><rb>肉髻</rb><rt>にくけい</rt></ruby>あり、<ruby><rb>妙相端厳</rb><rt>みょうそうたんげん</rt></ruby>、<ruby><rb>仄</rb><rt>ほの</rt></ruby>かに<ruby><rb>円光</rb><rt>えんこう</rt></ruby>を負うておられるは、何さま<ruby><rb>尋常人</rb><rt>ただびと</rt></ruby>ならずと見えた。さて前なるが近づいて言った。</p>
+        <p>「我は<persName ref="#takutotenno"><ruby><rb>托塔</rb><rt>たくとう</rt></ruby>天王</persName>の二太子、<persName ref="#mokusha-egan"><ruby><rb>木叉恵岸</rb><rt>もくしゃえがん</rt></ruby></persName>。これにいますはすなわち、わが<ruby><rb>師父</rb><rt>しふ</rt></ruby>、<placeName ref="#nankai">南海</placeName>の<persName ref="#kanzeon"><ruby><rb>観世音菩薩</rb><rt>かんぜおんぼさつ</rt></ruby></persName><ruby><rb>摩訶薩</rb><rt>まかさつ</rt></ruby>じゃ。<ruby><rb>天竜</rb><rt>てんりゅう</rt></ruby>・<ruby><rb>夜叉</rb><rt>やしゃ</rt></ruby>・<ruby><rb>乾闥婆</rb><rt>けんだつば</rt></ruby>より、<ruby><rb>阿脩羅</rb><rt>あしゅら</rt></ruby>・<ruby><rb>迦楼羅</rb><rt>かるら</rt></ruby>・<ruby><rb>緊那羅</rb><rt>きんなら</rt></ruby>・<ruby><rb>摩睺羅伽</rb><rt>まごらか</rt></ruby>・人・非人に至るまで等しく<ruby><rb>憫</rb><rt>あわ</rt></ruby>れみを垂れさせたもうわが師父には、このたび、<ruby><rb>爾</rb><rt>なんじ</rt></ruby>、<persName ref="#gojo">悟浄</persName>が<ruby><rb>苦悩</rb><rt>くるしみ</rt></ruby>をみそなわして、特にここに<ruby><rb>降</rb><rt>くだ</rt></ruby>って<ruby><rb>得度</rb><rt>とくど</rt></ruby>したもうのじゃ。ありがたく承るがよい。」</p>
+        <p>覚えず<ruby><rb>頭</rb><rt>こうべ</rt></ruby>を垂れた<persName ref="#gojo">悟浄</persName>の耳に、美しい女性的な声――<ruby><rb>妙音</rb><rt>みょうおん</rt></ruby>というか、<ruby><rb>梵音</rb><rt>ぼんおん</rt></ruby>というか、<ruby><rb>海潮音</rb><rt>かいちょうおん</rt></ruby>というか、――が響いてきた。</p>
+        <p>「<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>よ、<ruby><rb>諦</rb><rt>あきら</rt></ruby>かに、わが言葉を聴いて、よくこれを思念せよ。身の<ruby><rb>程</rb><rt>ほど</rt></ruby>知らずの<persName ref="#gojo">悟浄</persName>よ。いまだ得ざるを得たりといいいまだ<ruby><rb>証</rb><rt>あかし</rt></ruby>せざるを証せりと言うのをさえ、<persName ref="#seson"><ruby><rb>世尊</rb><rt>せそん</rt></ruby></persName>はこれを<ruby><rb>増上慢</rb><rt>ぞうじょうまん</rt></ruby>とて難ぜられた。さすれば、証すべからざることを証せんと求めた<ruby><rb>爾</rb><rt>なんじ</rt></ruby>のごときは、これを<ruby><rb>至極</rb><rt>しごく</rt></ruby>の増上慢といわずしてなんといおうぞ。爾の求むるところは、<ruby><rb>阿羅漢</rb><rt>あらかん</rt></ruby>も<ruby><rb>辟支仏</rb><rt>びゃくしぶつ</rt></ruby>もいまだ求むる<ruby><rb>能</rb><rt>あた</rt></ruby>わず、また求めんともせざるところじゃ。哀れな<persName ref="#gojo">悟浄</persName>よ。いかにして爾の魂はかくもあさましき迷路に入ったぞ。正観を得れば<ruby><rb>浄業</rb><rt>じょうごう</rt></ruby>たちどころに成るべきに、爾、<ruby><rb>心相羸劣</rb><rt>しんそうるいれつ</rt></ruby>にして<ruby><rb>邪観</rb><rt>じゃかん</rt></ruby>に陥り、今この<ruby><rb>三途無量</rb><rt>さんずむりょう</rt></ruby>の苦悩に<ruby><rb>遭</rb><rt>あ</rt></ruby>う。<ruby><rb>惟</rb><rt>おも</rt></ruby>うに、<ruby><rb>爾</rb><rt>なんじ</rt></ruby>は<ruby><rb>観想</rb><rt>かんそう</rt></ruby>によって救わるべくもないがゆえに、これよりのちは、一切の思念を<ruby><rb>棄</rb><rt>す</rt></ruby>て、ただただ身を働かすことによってみずからを救おうと心がけるがよい。時とは人の<ruby><rb>作用</rb><rt>はたらき</rt></ruby>の<ruby><rb>謂</rb><rt>いい</rt></ruby>じゃ。世界は、概観によるときは無意味のごとくなれども、その細部に直接働きかけるときはじめて無限の意味を<ruby><rb>有</rb><rt>も</rt></ruby>つのじゃ。<persName ref="#gojo">悟浄</persName>よ。まずふさわしき場所に身を置き、ふさわしき働きに身を打込め。身の程知らぬ『何故』は、<ruby><rb>向後</rb><rt>こうご</rt></ruby>一切打捨てることじゃ。これをよそにして、爾の救いはないぞ。さて、今年の秋、この<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>を東から西へと横切る三人の僧があろう。西方<persName ref="#kinzenchoro"><ruby><rb>金蝉</rb><rt>きんせん</rt></ruby>長老</persName>の<ruby><rb>転生</rb><rt>うまれかわり</rt></ruby>、<ruby><rb><persName ref="#genjo">玄奘</persName>法師</rb><rt>げんじょうほうし</rt></ruby>と、その二人の弟子どもじゃ。<ruby><rb>唐</rb><rt>とう</rt></ruby>の<persName ref="#taiso"><ruby><rb>太宗皇帝</rb><rt>たいそうこうてい</rt></ruby></persName>の<ruby><rb>綸命</rb><rt>りんめい</rt></ruby>を受け、<placeName ref="#tenjiku"><ruby><rb>天竺国</rb><rt>てんじくこく</rt></ruby></placeName><placeName ref="#dairaionji"><ruby><rb>大雷音寺</rb><rt>だいらいおんじ</rt></ruby></placeName>に<ruby><rb>大乗三蔵</rb><rt>だいじょうさんぞう</rt></ruby>の<ruby><rb>真経</rb><rt>しんぎょう</rt></ruby>をとらんとて<ruby><rb>赴</rb><rt>おもむ</rt></ruby>くものじゃ。<persName ref="#gojo">悟浄</persName>よ、<ruby><rb>爾</rb><rt>なんじ</rt></ruby>も<persName ref="#genjo">玄奘</persName>に従うて西方に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>け。これ爾にふさわしき<ruby><rb>位置</rb><rt>ところ</rt></ruby>にして、また、爾にふさわしき勤めじゃ。<ruby><rb>途</rb><rt>みち</rt></ruby>は苦しかろうが、よく、疑わずして、ただ努めよ。<persName ref="#genjo">玄奘</persName>の弟子の一人に<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>なるものがある。無知無識にして、ただ、信じて疑わざるものじゃ。爾は特にこの者について学ぶところが多かろうぞ。」</p>
+        <p><persName ref="#gojo">悟浄</persName>がふたたび頭をあげたとき、そこには何も見えなかった。<ruby><rb>渠</rb><rt>かれ</rt></ruby>は<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>と水底の月明の中に立ちつくした。妙な気持である。ぼんやりした頭の隅で、渠は次のようなことをとりとめもなく考えていた。</p>
+        <p>「……そういうことが起こりそうな者に、そういうことが起こり、そういうことが起こりそうなときに、そういうことが起こるんだな。半年前の<ruby><rb>俺</rb><rt>おれ</rt></ruby>だったら、今のようなおかしな夢なんか見るはずはなかったんだがな。……今の夢の中の<ruby><rb>菩薩</rb><rt>ぼさつ</rt></ruby>の言葉だって、考えてみりゃ、<persName ref="#joushi"><ruby><rb>女偊</rb><rt>じょう</rt></ruby>氏</persName>や<persName ref="#kyuzennenshi"><ruby><rb>虯髯鮎子</rb><rt>きゅうぜんねんし</rt></ruby></persName>の言葉と、ちっとも違ってやしないんだが、今夜はひどく身にこたえるのは、どうも変だぞ。そりゃ俺だって、夢なんかが<ruby><rb>救済</rb><rt>すくい</rt></ruby>になるとは思いはしないさ。しかし、なぜか知らないが、もしかすると、今の夢のお告げの<ruby><rb>唐僧</rb><rt>とうそう</rt></ruby>とやらが、ほんとうにここを通るかもしれないというような気がしてしかたがない。そういうことが起こりそうなときには、そういうことが起こるものだというやつでな。……」</p>
+        <p>渠はそう思って久しぶりに微笑した。</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>七</head>
+        <p>その年の秋、<persName ref="#gojo"><ruby><rb>悟浄</rb><rt>ごじょう</rt></ruby></persName>は、はたして、<placeName ref="#daito"><ruby><rb>大唐</rb><rt>だいとう</rt></ruby></placeName>の<ruby><rb><persName ref="#genjo">玄奘</persName>法師</rb><rt>げんじょうほうし</rt></ruby>に<ruby><rb>値遇</rb><rt>ちぐう</rt></ruby>し奉り、その力で、水から出て人間となりかわることができた。そうして、勇敢にして<ruby><rb>天真爛漫</rb><rt>てんしんらんまん</rt></ruby>な<persName ref="#goku"><ruby><rb>聖天大聖</rb><rt>せいてんたいせい</rt></ruby></persName><persName ref="#goku"><ruby><rb>孫悟空</rb><rt>そんごくう</rt></ruby></persName>や、<ruby><rb>怠惰</rb><rt>たいだ</rt></ruby>な楽天家、<persName ref="#gono"><ruby><rb>天蓬元帥</rb><rt>てんぽうげんすい</rt></ruby></persName><persName ref="#gono"><ruby><rb>猪悟能</rb><rt>ちょごのう</rt></ruby></persName>とともに、新しい<ruby><rb>遍歴</rb><rt>へんれき</rt></ruby>の途に上ることとなった。しかし、その途上でも、まだすっかりは昔の病の<ruby><rb>脱</rb><rt>ぬ</rt></ruby>け切っていない<persName ref="#gojo">悟浄</persName>は、依然として独り言の癖を<ruby><rb>止</rb><rt>や</rt></ruby>めなかった。<ruby><rb>渠</rb><rt>かれ</rt></ruby>は<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いた。</p>
+        <p>「どうもへんだな。どうも<ruby><rb>腑</rb><rt>ふ</rt></ruby>に落ちない。分からないことを<ruby><rb>強</rb><rt>し</rt></ruby>いて尋ねようとしなくなることが、結局、分かったということなのか？　どうも<ruby><rb>曖昧</rb><rt>あいまい</rt></ruby>だな！　あまりみごとな<ruby><rb>脱皮</rb><rt>だっぴ</rt></ruby>ではないな！　フン、フン、どうも、うまく<ruby><rb>納得</rb><rt>なっとく</rt></ruby>がいかぬ。とにかく、以前ほど、苦にならなくなったのだけは、ありがたいが……。」</p>
+        <p>――「わが西遊記」の中――</p>
+      </div>
+    </body>
+  </text>
+</TEI>

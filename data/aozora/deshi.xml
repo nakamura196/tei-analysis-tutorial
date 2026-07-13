@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>弟子</title>
+        <author>中島敦</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>弟子</title><author>中島敦</author>
+          <note>青空文庫。底本：「ちくま日本文学全集　中島敦」筑摩書房。1992（平成4）年7月20日第1刷発行。底本の親本：「中島敦全集　第一巻」筑摩書房。1987（昭和62）年9月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000119/card1738.html">https://www.aozora.gr.jp/cards/000119/card1738.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="shiro">
+        <persName>子路</persName>
+        <note>魯の卞の游侠の徒。姓は仲、名は由、字は子路(季路)。孔子門下随一の快男児で本作の主人公。衛の政変に殉じて死ぬ。表層形「子路」「仲由」「季路」を統合</note>
+      </person>
+      <person xml:id="koshi">
+        <persName>孔子</persName>
+        <note>魯の陬の人。名は丘、字は仲尼。子路の師。表層形「孔子」「孔丘」「丘」を統合</note>
+      </person>
+      <person xml:id="gankai">
+        <persName>顔回</persName>
+        <note>孔子の高弟。字は子淵。表層形「顔回」「顔淵」を統合</note>
+      </person>
+      <person xml:id="shiko">
+        <persName>子貢</persName>
+        <note>孔子の高弟。姓は端木、名は賜。子路より二十二歳年少の才人</note>
+      </person>
+      <person xml:id="saiyo">
+        <persName>宰予</persName>
+        <note>孔子の門人。いささか詭弁派的な享受家として描かれる</note>
+      </person>
+      <person xml:id="zenyu">
+        <persName>冉有</persName>
+        <note>孔子の門人。てきぱきした実務家</note>
+      </person>
+      <person xml:id="binshiken">
+        <persName>閔子騫</persName>
+        <note>孔子の門人。温厚の長者</note>
+      </person>
+      <person xml:id="shika">
+        <persName>子夏</persName>
+        <note>孔子の門人。穿鑿好きな故実家</note>
+      </person>
+      <person xml:id="koryoju">
+        <persName>公良孺</persName>
+        <note>孔子の門人。気骨稜々たる慷慨家</note>
+      </person>
+      <person xml:id="kosai">
+        <persName>子羔</persName>
+        <note>孔子の門人。姓名は高柴。短矮な愚直者。子路の推挙で衛の大夫となる。表層形「子羔」「柴」を統合</note>
+      </person>
+      <person xml:id="shijaku">
+        <persName>子若</persName>
+        <note>孔子の門人。南子の車列に激昂した子路を子正とともに引き留めた</note>
+      </person>
+      <person xml:id="shisei">
+        <persName>子正</persName>
+        <note>孔子の門人。南子の車列に激昂した子路を子若とともに引き留めた</note>
+      </person>
+      <person xml:id="shicho">
+        <persName>子張</persName>
+        <note>孔子の門人。顔淵への師の打込み方に感情を抑えかねた者として子貢と並べて言及される</note>
+      </person>
+      <person xml:id="yoko">
+        <persName>陽虎</persName>
+        <note>季氏の宰。魯の実権を握ろうとした野心家。のち己の策に倒れて失脚した</note>
+      </person>
+      <person xml:id="shuko">
+        <persName>周公</persName>
+        <note>周公旦。周の礼楽の制定者として言及される</note>
+      </person>
+      <person xml:id="shun">
+        <persName>舜</persName>
+        <note>古代中国伝説の聖天子。五絃琴を弾じて南風の詩を作ったと孔子が語る</note>
+      </person>
+      <person xml:id="kiheishi">
+        <persName>季平子</persName>
+        <note>魯の上卿。昭公が討とうとして果たさず、かえって昭公を国外に逐った</note>
+      </person>
+      <person xml:id="kikanshi">
+        <persName>季桓子</persName>
+        <note>魯の大官。斉の贈った女楽に耽り孔子の施政を頓挫させた</note>
+      </person>
+      <person xml:id="kikoshi">
+        <persName>季康子</persName>
+        <note>魯の執政。孔子の斉討伐の請いに賛成しなかった</note>
+      </person>
+      <person xml:id="ro-shoko">
+        <persName>昭公</persName>
+        <note>魯の昭公。季平子を討とうとして逆に国を逐われ、亡命先で窮死した</note>
+      </person>
+      <person xml:id="ro-teiko">
+        <persName>定公</persName>
+        <note>魯の定公。孔子を中都の宰・司空・大司寇に挙げた主君</note>
+      </person>
+      <person xml:id="ro-aiko">
+        <persName>哀公</persName>
+        <note>魯の哀公。大野に狩して麒麟を獲た。孔子の斉討伐の請いを容れなかった</note>
+      </person>
+      <person xml:id="sei-keiko">
+        <persName>景公</persName>
+        <note>斉の景公。夾谷の会で孔子に叱咤された</note>
+      </person>
+      <person xml:id="kozanfuchu">
+        <persName>公山不狃</persName>
+        <note>費の城の毀損に反抗し、費人を率いて魯の都を襲った</note>
+      </person>
+      <person xml:id="nanshi">
+        <persName>南子</persName>
+        <note>衛の霊公の夫人。もと宋の公女。淫奔の噂高く衛の国政を左右した</note>
+      </person>
+      <person xml:id="socho">
+        <persName>宋朝</persName>
+        <note>宋の公子朝。南子の異母兄にあたる美男で、衛に召されて南子と醜関係を続けた</note>
+      </person>
+      <person xml:id="kaikai">
+        <persName>蒯聵</persName>
+        <note>衛の霊公の子・前太子。義母南子を刺そうとして失敗し晋に奔る。のち都に潜入し孔悝を脅して衛侯の位を奪った(荘公)</note>
+      </person>
+      <person xml:id="ei-shukko">
+        <persName>出公</persName>
+        <note>衛の出公。名は輒。蒯聵の子で、祖父霊公の卒後に立てられ、父蒯聵と位を争った。表層形「出公」「輒」を統合</note>
+      </person>
+      <person xml:id="kogyo">
+        <persName>孔叔圉</persName>
+        <note>衛の正卿。孔文子。名大夫の誉が高かった子路の主家の当主。表層形「孔叔圉」「孔叔文子」「圉」を統合</note>
+      </person>
+      <person xml:id="kokai">
+        <persName>孔悝</persName>
+        <note>孔叔圉の子。子路の直接の主人。母伯姫と叔父蒯聵に脅されて政変の宣言を強いられた。表層形「孔悝」「孔叔」「悝」を統合</note>
+      </person>
+      <person xml:id="hakki">
+        <persName>伯姫</persName>
+        <note>孔叔圉の未亡人。蒯聵の姉、孔悝の母。弟蒯聵の擁立を策した女策士</note>
+      </person>
+      <person xml:id="konryofu">
+        <persName>渾良夫</persName>
+        <note>伯姫の寵愛した小姓上りの美青年。伯姫と蒯聵の間を往復する使となった</note>
+      </person>
+      <person xml:id="rannei">
+        <persName>欒寧</persName>
+        <note>衛の孔家の老。政変の急を子路に報じ、出公を奉じて魯に奔った</note>
+      </person>
+      <person xml:id="sekikitsu">
+        <persName>石乞</persName>
+        <note>蒯聵の命で子路を討った剣士の一人</note>
+      </person>
+      <person xml:id="uen">
+        <persName>盂黶</persName>
+        <note>蒯聵の命で子路を討った剣士の一人</note>
+      </person>
+      <person xml:id="kosonkan">
+        <persName>公孫敢</persName>
+        <note>衛の臣。内門を閉ざして子路の入城を拒んだ</note>
+      </person>
+      <person xml:id="koshukuju">
+        <persName>公叔戍</persName>
+        <note>衛の大夫。南子の排斥を企ててかえって讒に遭い魯に亡命した。蒲はその旧領地</note>
+      </person>
+      <person xml:id="seiya">
+        <persName>泄冶</persName>
+        <note>陳の大夫。霊公の乱倫を正諫して殺された。その死の当否が本作の主題の一つとなる</note>
+      </person>
+      <person xml:id="hikan">
+        <persName>比干</persName>
+        <note>殷の名臣。紂王を争諫して殺された。孔子はその死を仁と評した</note>
+      </person>
+      <person xml:id="chuo">
+        <persName>紂王</persName>
+        <note>殷の暴君。比干を殺した</note>
+      </person>
+      <person xml:id="koinshoyo">
+        <persName>工尹商陽</persName>
+        <note>楚の臣。呉の師を追い、三人を射斃したところで車を返した</note>
+      </person>
+      <person xml:id="oshikishitsu">
+        <persName>王子棄疾</persName>
+        <note>楚の王子。工尹商陽と同乗し、射ることを促した</note>
+      </person>
+      <person xml:id="chinko">
+        <persName>陳恒</persName>
+        <note>斉の大夫。その君を弑した。孔子はこれを討たんことを哀公に請うた</note>
+      </person>
+      <person xml:id="chosho">
+        <persName>長沮</persName>
+        <note>子路が遇った隠者の一人</note>
+      </person>
+      <person xml:id="ketsudeki">
+        <persName>桀溺</persName>
+        <note>子路が遇った隠者の一人</note>
+      </person>
+      <person xml:id="setsuyo">
+        <persName>接与</persName>
+        <note>楚の接与。子路が遇った佯狂の隠者</note>
+      </person>
+      <person xml:id="shokoshiko">
+        <persName>葉公子高</persName>
+        <note>楚の葉公。竜を好みながら本物の竜に怖れ走ったという寓話の主。表層形「葉公子高」「葉公」を統合</note>
+      </person>
+      <person xml:id="shigyo">
+        <persName>史魚</persName>
+        <note>衛の直臣。孔子が子路をその類と評した</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="lu">
+        <placeName>魯</placeName>
+        <location><geo>35.5808 116.9866</geo></location>
+        <note>春秋の魯。孔子・子路の母国。国名・概値(都は曲阜)</note>
+      </place>
+      <place xml:id="ben">
+        <placeName>卞</placeName>
+        <location><geo>35.66 117.28</geo></location>
+        <note>魯の卞邑。子路の出身地。現在の山東省泗水県付近に比定される・概値</note>
+      </place>
+      <place xml:id="su">
+        <placeName>陬</placeName>
+        <location><geo>35.52 117.02</geo></location>
+        <note>魯の陬邑。孔子の出身地(本文「陬人孔丘」)。現在の山東省曲阜市南部・概値</note>
+      </place>
+      <place xml:id="qi">
+        <placeName>斉</placeName>
+        <location><geo>36.8258 118.3092</geo></location>
+        <note>春秋の斉。国名・概値(都は臨淄)</note>
+      </place>
+      <place xml:id="chen">
+        <placeName>陳</placeName>
+        <location><geo>33.7325 114.8862</geo></location>
+        <note>春秋の陳。国名・概値(都は宛丘=現在の河南省淮陽)</note>
+      </place>
+      <place xml:id="cai">
+        <placeName>蔡</placeName>
+        <location><geo>33.7886 114.2686</geo></location>
+        <note>春秋の蔡。国名・概値(都は上蔡=現在の河南省上蔡)</note>
+      </place>
+      <place xml:id="chu">
+        <placeName>楚</placeName>
+        <location><geo>30.42 112.15</geo></location>
+        <note>春秋の楚。国名・概値(都は郢=現在の湖北省荊州の紀南城)</note>
+      </place>
+      <place xml:id="wu">
+        <placeName>呉</placeName>
+        <location><geo>31.2989 120.5853</geo></location>
+        <note>春秋の呉。国名・概値(都は姑蘇=現在の江蘇省蘇州)</note>
+      </place>
+      <place xml:id="jin">
+        <placeName>晋</placeName>
+        <location><geo>35.6191 111.3719</geo></location>
+        <note>春秋の晋。国名・概値(都は新田=現在の山西省侯馬)</note>
+      </place>
+      <place xml:id="song">
+        <placeName>宋</placeName>
+        <location><geo>34.4147 115.6564</geo></location>
+        <note>春秋の宋。国名・概値(都は商丘)</note>
+      </place>
+      <place xml:id="cao">
+        <placeName>曹</placeName>
+        <location><geo>35.0722 115.5697</geo></location>
+        <note>春秋の曹。国名・概値(都は陶丘=現在の山東省定陶)</note>
+      </place>
+      <place xml:id="ho">
+        <placeName>蒲</placeName>
+        <location><geo>35.197 114.669</geo></location>
+        <note>衛の蒲邑。子路が宰として治めた地。現在の河南省長垣付近・概値</note>
+      </place>
+      <place xml:id="hi">
+        <placeName>費</placeName>
+        <location><geo>35.2657 117.9781</geo></location>
+        <note>魯の費邑。季孫氏の私城。現在の山東省費県付近・概値</note>
+      </place>
+      <place xml:id="ko">
+        <placeName>郈</placeName>
+        <location><geo>35.9376 116.4707</geo></location>
+        <note>魯の郈邑。叔孫氏の私城。現在の山東省東平付近・概値</note>
+      </place>
+      <place xml:id="chuto">
+        <placeName>中都</placeName>
+        <location><geo>35.7218 116.4874</geo></location>
+        <note>魯の中都邑。孔子が宰となった地。現在の山東省汶上県付近・概値</note>
+      </place>
+      <place xml:id="bushidai">
+        <placeName>武子台</placeName>
+        <location><geo>35.5808 116.9866</geo></location>
+        <note>魯の都の台。定公が費人の叛乱の難を避けた。詳細な所在は不明のため曲阜と同じ概値座標</note>
+      </place>
+      <place xml:id="kyokoku">
+        <placeName>夾谷</placeName>
+        <location><geo>36.2033 117.6768</geo></location>
+        <note>斉魯会盟の地。所在に諸説あり、山東省莱蕪付近とする説による・伝承地</note>
+      </place>
+      <place xml:id="giyu">
+        <placeName>魏楡</placeName>
+        <location><geo>37.6976 112.736</geo></location>
+        <note>晋の地。石がものを言ったとされる。現在の山西省楡次付近・概値</note>
+      </place>
+      <place xml:id="taiya">
+        <placeName>大野</placeName>
+        <location><geo>35.3907 116.0894</geo></location>
+        <note>魯西の大野沢一帯。哀公が麒麟を獲た狩場。現在の山東省巨野付近・概値</note>
+      </place>
+      <place xml:id="shochu">
+        <placeName>小邾</placeName>
+        <location><geo>35.1089 117.1587</geo></location>
+        <note>春秋の小国(小邾国)。大夫射が魯に亡命した。現在の山東省滕州付近・概値</note>
+      </place>
+      <place xml:id="koga">
+        <placeName>河</placeName>
+        <location><geo>34.9 112.6</geo></location>
+        <note>黄河。『論語』子罕篇「鳳鳥至らず、河、図を出さず」の引用中に言及。河川の代表点・概値</note>
+      </place>
+      <place xml:id="nanzan">
+        <placeName>南山</placeName>
+        <note>「南山の竹は揉めずして自ら直く」の故事に見える山。特定の山を指すか諸説あり座標なし</note>
+      </place>
+      <place xml:id="chugoku">
+        <placeName>中国</placeName>
+        <location><geo>35.0 110.0</geo></location>
+        <note>本文では「古代支那式」の語で言及される中国(中華)。地域名・概値。表層形「支那」を統合</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>弟子</head>
+        <p>一</p>
+        <p><placeName ref="#lu"><ruby><rb>魯</rb><rt>ろ</rt></ruby></placeName>の<placeName ref="#ben"><ruby><rb>卞</rb><rt>べん</rt></ruby></placeName>の<ruby><rb>游侠</rb><rt>ゆうきょう</rt></ruby>の徒、<persName ref="#shiro"><ruby><rb>仲由</rb><rt>ちゅうゆう</rt></ruby></persName>、<ruby><rb>字</rb><rt>あざな</rt></ruby>は<persName ref="#shiro">子路</persName>という者が、<ruby><rb>近頃</rb><rt>ちかごろ</rt></ruby><ruby><rb>賢者</rb><rt>けんじゃ</rt></ruby>の<ruby><rb>噂</rb><rt>うわさ</rt></ruby>も高い<ruby><rb>学匠</rb><rt>がくしょう</rt></ruby>・<ruby><rb><placeName ref="#su">陬</placeName>人</rb><rt>すうひと</rt></ruby><persName ref="#koshi"><ruby><rb>孔丘</rb><rt>こうきゅう</rt></ruby></persName>を<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめてくれようものと思い立った。<ruby><rb>似而非</rb><rt>えせ</rt></ruby>賢者<ruby><rb>何程</rb><rt>なにほど</rt></ruby>のことやあらんと、<ruby><rb>蓬頭突鬢</rb><rt>ほうとうとつびん</rt></ruby>・<ruby><rb>垂冠</rb><rt>すいかん</rt></ruby>・<ruby><rb>短後</rb><rt>たんこう</rt></ruby>の衣という<ruby><rb>服装</rb><rt>いでたち</rt></ruby>で、左手に<ruby><rb>雄雞</rb><rt>おんどり</rt></ruby>、右手に<ruby><rb>牡豚</rb><rt>おすぶた</rt></ruby>を引提げ、<ruby><rb>勢</rb><rt>いきおい</rt></ruby><ruby><rb>猛</rb><rt>もう</rt></ruby>に、<persName ref="#koshi">孔丘</persName>が家を指して<ruby><rb>出掛</rb><rt>でか</rt></ruby>ける。雞を<ruby><rb>揺</rb><rt>ゆ</rt></ruby>り豚を<ruby><rb>奮</rb><rt>ふる</rt></ruby>い、<ruby><rb>嗷</rb><rt>かまびす</rt></ruby>しい<ruby><rb>脣吻</rb><rt>しんぷん</rt></ruby>の音をもって、<ruby><rb>儒家</rb><rt>じゅか</rt></ruby>の<ruby><rb>絃歌講誦</rb><rt>げんかこうしょう</rt></ruby>の声を<ruby><rb>擾</rb><rt>みだ</rt></ruby>そうというのである。</p>
+        <p>けたたましい動物の<ruby><rb>叫</rb><rt>さけ</rt></ruby>びと共に<ruby><rb>眼</rb><rt>め</rt></ruby>を<ruby><rb>瞋</rb><rt>いか</rt></ruby>らして<ruby><rb>跳</rb><rt>と</rt></ruby>び<ruby><rb>込</rb><rt>こ</rt></ruby>んで来た青年と、<ruby><rb>圜冠句履</rb><rt>えんかんこうり</rt></ruby><ruby><rb>緩</rb><rt>ゆる</rt></ruby>く<ruby><rb>玦</rb><rt>けつ</rt></ruby>を帯びて<ruby><rb>几</rb><rt>き</rt></ruby>に<ruby><rb>凭</rb><rt>よ</rt></ruby>った温顔の<persName ref="#koshi">孔子</persName>との間に、問答が始まる。</p>
+        <p>「<ruby><rb>汝</rb><rt>なんじ</rt></ruby>、何をか好む？」と<persName ref="#koshi">孔子</persName>が聞く。</p>
+        <p>「我、<ruby><rb>長剣</rb><rt>ちょうけん</rt></ruby>を好む。」と青年は<ruby><rb>昂然</rb><rt>こうぜん</rt></ruby>として言い放つ。</p>
+        <p><persName ref="#koshi">孔子</persName>は思わずニコリとした。青年の声や態度の中に、余りに<ruby><rb>稚気</rb><rt>ちき</rt></ruby>満々たる<ruby><rb>誇負</rb><rt>こふ</rt></ruby>を見たからである。血色のいい・<ruby><rb>眉</rb><rt>まゆ</rt></ruby>の太い・眼のはっきりした・見るからに<ruby><rb>精悍</rb><rt>せいかん</rt></ruby>そうな青年の顔には、しかし、どこか、愛すべき素直さがおのずと現れているように思われる。再び<persName ref="#koshi">孔子</persName>が聞く。</p>
+        <p>「学はすなわちいかん？」</p>
+        <p>「学、<ruby><rb>豈</rb><rt>あに</rt></ruby>、益あらんや。」もともとこれを言うのが目的なのだから、<persName ref="#shiro">子路</persName>は勢込んで<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>るように答える。</p>
+        <p>学の<ruby><rb>権威</rb><rt>けんい</rt></ruby>について<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>されては<ruby><rb>微笑</rb><rt>わら</rt></ruby>ってばかりもいられない。<persName ref="#koshi">孔子</persName>は<ruby><rb>諄々</rb><rt>じゅんじゅん</rt></ruby>として学の必要を説き始める。<ruby><rb>人君</rb><rt>じんくん</rt></ruby>にして<ruby><rb>諫臣</rb><rt>かんしん</rt></ruby>が無ければ<ruby><rb>正</rb><rt>せい</rt></ruby>を失い、士にして教友が無ければ<ruby><rb>聴</rb><rt>ちょう</rt></ruby>を失う。<ruby><rb>樹</rb><rt>き</rt></ruby>も<ruby><rb>縄</rb><rt>なわ</rt></ruby>を受けて始めて直くなるのではないか。馬に<ruby><rb>策</rb><rt>むち</rt></ruby>が、弓に<ruby><rb>檠</rb><rt>けい</rt></ruby>が必要なように、人にも、その<ruby><rb>放恣</rb><rt>ほうし</rt></ruby>な性情を<ruby><rb>矯</rb><rt>た</rt></ruby>める教学が、どうして必要でなかろうぞ。<ruby><rb>匡</rb><rt>ただ</rt></ruby>し<ruby><rb>理</rb><rt>おさ</rt></ruby>め<ruby><rb>磨</rb><rt>みが</rt></ruby>いて、始めてものは有用の材となるのだ。</p>
+        <p>後世に残された語録の<ruby><rb>字面</rb><rt>じづら</rt></ruby>などからは<ruby><rb>到底</rb><rt>とうてい</rt></ruby>想像も出来ぬ・極めて説得的な弁舌を<persName ref="#koshi">孔子</persName>は<ruby><rb>有</rb><rt>も</rt></ruby>っていた。言葉の内容ばかりでなく、その<ruby><rb>穏</rb><rt>おだや</rt></ruby>かな音声・<ruby><rb>抑揚</rb><rt>よくよう</rt></ruby>の中にも、それを語る時の極めて確信に<ruby><rb>充</rb><rt>み</rt></ruby>ちた態度の中にも、どうしても聴者を説得せずにはおかないものがある。青年の態度からは次第に<ruby><rb>反抗</rb><rt>はんこう</rt></ruby>の色が消えて、ようやく<ruby><rb>謹聴</rb><rt>きんちょう</rt></ruby>の様子に変って来る。</p>
+        <p>「しかし」と、それでも<persName ref="#shiro">子路</persName>はなお<ruby><rb>逆襲</rb><rt>ぎゃくしゅう</rt></ruby>する気力を失わない。<placeName ref="#nanzan">南山</placeName>の竹は<ruby><rb>揉</rb><rt>た</rt></ruby>めずして自ら直く、<ruby><rb>斬</rb><rt>き</rt></ruby>ってこれを用うれば<ruby><rb>犀革</rb><rt>さいかく</rt></ruby>の厚きをも通すと聞いている。して見れば、天性優れたる者にとって、何の学ぶ必要があろうか？</p>
+        <p><persName ref="#koshi">孔子</persName>にとって、こんな幼稚な<ruby><rb>譬喩</rb><rt>ひゆ</rt></ruby>を打破るほどたやすい事はない。汝の<ruby><rb>云</rb><rt>い</rt></ruby>うその<placeName ref="#nanzan">南山</placeName>の竹に矢の羽をつけ<ruby><rb>鏃</rb><rt>やじり</rt></ruby>を付けてこれを<ruby><rb>礪</rb><rt>みが</rt></ruby>いたならば、ただに犀革を通すのみではあるまいに、と<persName ref="#koshi">孔子</persName>に言われた時、愛すべき単純な若者は返す言葉に<ruby><rb>窮</rb><rt>きゅう</rt></ruby>した。顔を<ruby><rb>赧</rb><rt>あか</rt></ruby>らめ、しばらく<persName ref="#koshi">孔子</persName>の前に<ruby><rb>突立</rb><rt>つった</rt></ruby>ったまま何か考えている様子だったが、急に雞と豚とを<ruby><rb>抛</rb><rt>ほう</rt></ruby>り出し、頭を<ruby><rb>低</rb><rt>た</rt></ruby>れて、「<ruby><rb>謹</rb><rt>つつ</rt></ruby>しんで教を受けん。」と降参した。単に言葉に窮したためではない。実は、室に入って<persName ref="#koshi">孔子</persName>の<ruby><rb>容</rb><rt>すがた</rt></ruby>を見、その最初の一言を聞いた時、直ちに<ruby><rb>雞豚</rb><rt>けいとん</rt></ruby>の<ruby><rb>場違</rb><rt>ばちが</rt></ruby>いであることを感じ、<ruby><rb>己</rb><rt>おのれ</rt></ruby>と余りにも<ruby><rb>懸絶</rb><rt>けんぜつ</rt></ruby>した相手の大きさに<ruby><rb>圧倒</rb><rt>あっとう</rt></ruby>されていたのである。</p>
+        <p><ruby><rb>即日</rb><rt>そくじつ</rt></ruby>、<persName ref="#shiro">子路</persName>は師弟の礼を<ruby><rb>執</rb><rt>と</rt></ruby>って<persName ref="#koshi">孔子</persName>の門に入った。</p>
+        <p>二</p>
+        <p>このような人間を、<persName ref="#shiro">子路</persName>は見たことがない。力<ruby><rb>千鈞</rb><rt>せんきん</rt></ruby>の<ruby><rb>鼎</rb><rt>かなえ</rt></ruby>を挙げる勇者を<ruby><rb>彼</rb><rt>かれ</rt></ruby>は見たことがある。<ruby><rb>明</rb><rt>めい</rt></ruby>千里の外を察する<ruby><rb>智者</rb><rt>ちしゃ</rt></ruby>の話も聞いたことがある。しかし、<persName ref="#koshi">孔子</persName>に在るものは、決してそんな<ruby><rb>怪物</rb><rt>かいぶつ</rt></ruby>めいた異常さではない。ただ最も常識的な完成に過ぎないのである。知情意のおのおのから肉体的の諸能力に至るまで、実に<ruby><rb>平凡</rb><rt>へいぼん</rt></ruby>に、しかし実に<ruby><rb>伸</rb><rt>の</rt></ruby>び伸びと発達した見事さである。一つ一つの能力の<ruby><rb>優秀</rb><rt>ゆうしゅう</rt></ruby>さが全然目立たないほど、<ruby><rb>過不及</rb><rt>かふきゅう</rt></ruby>無く<ruby><rb>均衡</rb><rt>きんこう</rt></ruby>のとれた豊かさは、<persName ref="#shiro">子路</persName>にとって<ruby><rb>正</rb><rt>まさ</rt></ruby>しく初めて見る所のものであった。<ruby><rb>闊達</rb><rt>かったつ</rt></ruby>自在、いささかの道学者<ruby><rb>臭</rb><rt>しゅう</rt></ruby>も無いのに<persName ref="#shiro">子路</persName>は<ruby><rb>驚</rb><rt>おどろ</rt></ruby>く。この人は苦労人だなとすぐに<persName ref="#shiro">子路</persName>は感じた。<ruby><rb>可笑</rb><rt>おか</rt></ruby>しいことに、<persName ref="#shiro">子路</persName>の<ruby><rb>誇</rb><rt>ほこ</rt></ruby>る武芸や<ruby><rb>膂力</rb><rt>りょりょく</rt></ruby>においてさえ<persName ref="#koshi">孔子</persName>の方が上なのである。ただそれを<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>用いないだけのことだ。侠者<persName ref="#shiro">子路</persName>はまずこの点で<ruby><rb>度胆</rb><rt>どぎも</rt></ruby>を<ruby><rb>抜</rb><rt>ぬ</rt></ruby>かれた。<ruby><rb>放蕩無頼</rb><rt>ほうとうぶらい</rt></ruby>の生活にも経験があるのではないかと思われる位、あらゆる人間への<ruby><rb>鋭</rb><rt>するど</rt></ruby>い心理的<ruby><rb>洞察</rb><rt>どうさつ</rt></ruby>がある。そういう一面から、また一方、極めて高く<ruby><rb>汚</rb><rt>けが</rt></ruby>れないその理想主義に至るまでの<ruby><rb>幅</rb><rt>はば</rt></ruby>の広さを考えると、<persName ref="#shiro">子路</persName>はウーンと心の底から<ruby><rb>呻</rb><rt>うな</rt></ruby>らずにはいられない。とにかく、この人はどこへ持って行っても大丈夫な人だ。<ruby><rb>潔癖</rb><rt>けっぺき</rt></ruby>な<ruby><rb>倫理的</rb><rt>りんりてき</rt></ruby>な見方からしても<ruby><rb>大丈夫</rb><rt>だいじょうぶ</rt></ruby>だし、最も世俗的な意味から<ruby><rb>云</rb><rt>い</rt></ruby>っても大丈夫だ。<persName ref="#shiro">子路</persName>が今までに会った人間の<ruby><rb>偉</rb><rt>えら</rt></ruby>さは、どれも<ruby><rb>皆</rb><rt>みな</rt></ruby>その利用価値の中に在った。これこれの役に立つから偉いというに過ぎない。<persName ref="#koshi">孔子</persName>の場合は全然違う。ただそこに<persName ref="#koshi">孔子</persName>という人間が存在するというだけで<ruby><rb>充分</rb><rt>じゅうぶん</rt></ruby>なのだ。少くとも<persName ref="#shiro">子路</persName>には、そう思えた。彼はすっかり<ruby><rb>心酔</rb><rt>しんすい</rt></ruby>してしまった。門に入っていまだ一月ならずして、もはや、この精神的支柱から<ruby><rb>離</rb><rt>はな</rt></ruby>れ得ない自分を感じていた。</p>
+        <p>後年の<persName ref="#koshi">孔子</persName>の長い<ruby><rb>放浪</rb><rt>ほうろう</rt></ruby>の<ruby><rb>艱苦</rb><rt>かんく</rt></ruby>を通じて、<persName ref="#shiro">子路</persName>ほど<ruby><rb>欣然</rb><rt>きんぜん</rt></ruby>として従った者は無い。それは、<persName ref="#koshi">孔子</persName>の弟子たることによって仕官の<ruby><rb>途</rb><rt>みち</rt></ruby>を求めようとするのでもなく、また、<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>なことに、師の傍に在って己の才徳を磨こうとするのでさえもなかった。死に至るまで<ruby><rb>渝</rb><rt>かわ</rt></ruby>らなかった・<ruby><rb>極端</rb><rt>きょくたん</rt></ruby>に求むる所の無い・<ruby><rb>純粋</rb><rt>じゅんすい</rt></ruby>な敬愛の情だけが、この男を師の傍に引留めたのである。かつて長剣を手離せなかったように、<persName ref="#shiro">子路</persName>は今は何としてもこの人から離れられなくなっていた。</p>
+        <p>その時、<ruby><rb>四十而不惑</rb><rt>しじゅうにしてまどわず</rt></ruby>といった・その四十<ruby><rb>歳</rb><rt>さい</rt></ruby>に<persName ref="#koshi">孔子</persName>はまだ達していなかった。<persName ref="#shiro">子路</persName>よりわずか九歳の年長に過ぎないのだが、<persName ref="#shiro">子路</persName>はその<ruby><rb>年齢</rb><rt>ねんれい</rt></ruby>の差をほとんど無限の<ruby><rb>距離</rb><rt>きょり</rt></ruby>に感じていた。</p>
+        <p><persName ref="#koshi">孔子</persName>は<persName ref="#koshi">孔子</persName>で、この弟子の際立った<ruby><rb>馴</rb><rt>な</rt></ruby>らし難さに驚いている。単に勇を好むとか<ruby><rb>柔</rb><rt>じゅう</rt></ruby>を<ruby><rb>嫌</rb><rt>きら</rt></ruby>うとかいうならば<ruby><rb>幾</rb><rt>いく</rt></ruby>らでも類はあるが、この弟子ほどものの形を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>する男も<ruby><rb>珍</rb><rt>めずら</rt></ruby>しい。究極は精神に帰すると云いじょう、礼なるものはすべて形から入らねばならぬのに、<persName ref="#shiro">子路</persName>という男は、その形からはいって行くという筋道を容易に受けつけないのである。「礼と云い礼と云う。<ruby><rb>玉帛</rb><rt>ぎょくはく</rt></ruby>を云わんや。<ruby><rb>楽</rb><rt>がく</rt></ruby>と云い楽と云う。<ruby><rb>鐘鼓</rb><rt>しょうこ</rt></ruby>を云わんや。」などというと大いに<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んで聞いているが、<ruby><rb>曲礼</rb><rt>きょくれい</rt></ruby>の細則を説く段になるとにわかに<ruby><rb>詰</rb><rt>つ</rt></ruby>まらなさそうな顔をする。形式主義への・この本能的<ruby><rb>忌避</rb><rt>きひ</rt></ruby>と<ruby><rb>闘</rb><rt>たたか</rt></ruby>ってこの男に礼楽を教えるのは、<persName ref="#koshi">孔子</persName>にとってもなかなかの難事であった。が、それ以上に、これを習うことが<persName ref="#shiro">子路</persName>にとっての難事業であった。<persName ref="#shiro">子路</persName>が<ruby><rb>頼</rb><rt>たよ</rt></ruby>るのは<persName ref="#koshi">孔子</persName>という人間の厚みだけである。その厚みが、日常の区々たる細行の集積であるとは、<persName ref="#shiro">子路</persName>には考えられない。<ruby><rb>本</rb><rt>もと</rt></ruby>があって始めて末が生ずるのだと彼は言う。しかしその<ruby><rb>本</rb><rt>もと</rt></ruby>をいかにして養うかについての実際的な<ruby><rb>考慮</rb><rt>こうりょ</rt></ruby>が足りないとて、いつも<persName ref="#koshi">孔子</persName>に<ruby><rb>叱</rb><rt>しか</rt></ruby>られるのである。彼が<persName ref="#koshi">孔子</persName>に心服するのは一つのこと。彼が<persName ref="#koshi">孔子</persName>の感化を直ちに受けつけたかどうかは、また別の事に属する。</p>
+        <p>上智と<ruby><rb>下愚</rb><rt>かぐ</rt></ruby>は移り難いと言った時、<persName ref="#koshi">孔子</persName>は<persName ref="#shiro">子路</persName>のことを考えに入れていなかった。欠点だらけではあっても、<persName ref="#shiro">子路</persName>を下愚とは<persName ref="#koshi">孔子</persName>も考えない。<persName ref="#koshi">孔子</persName>はこの<ruby><rb>剽悍</rb><rt>ひょうかん</rt></ruby>な弟子の無類の美点を<ruby><rb>誰</rb><rt>だれ</rt></ruby>よりも高く買っている。それはこの男の純粋な没利害性のことだ。この種の美しさは、この国の人々の間に在っては余りにも<ruby><rb>稀</rb><rt>まれ</rt></ruby>なので、<persName ref="#shiro">子路</persName>のこの<ruby><rb>傾向</rb><rt>けいこう</rt></ruby>は、<persName ref="#koshi">孔子</persName>以外の誰からも徳としては認められない。むしろ一種の不可解な<ruby><rb>愚</rb><rt>おろ</rt></ruby>かさとして映るに過ぎないのである。しかし、<persName ref="#shiro">子路</persName>の勇も政治的才幹も、この珍しい愚かさに比べれば、ものの数でないことを、<persName ref="#koshi">孔子</persName>だけは良く知っていた。</p>
+        <p>師の言に従って<ruby><rb>己</rb><rt>おのれ</rt></ruby>を<ruby><rb>抑</rb><rt>おさ</rt></ruby>え、とにもかくにも形に就こうとしたのは、親に対する態度においてであった。<persName ref="#koshi">孔子</persName>の門に入って以来、乱暴者の<persName ref="#shiro">子路</persName>が急に親孝行になったという<ruby><rb>親戚</rb><rt>しんせき</rt></ruby>中の評判である。<ruby><rb>褒</rb><rt>ほ</rt></ruby>められて<persName ref="#shiro">子路</persName>は変な気がした。親孝行どころか、<ruby><rb>嘘</rb><rt>うそ</rt></ruby>ばかりついているような気がして仕方が無いからである。<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>を云って親を<ruby><rb>手古摺</rb><rt>てこず</rt></ruby>らせていた<ruby><rb>頃</rb><rt>ころ</rt></ruby>の方が、どう考えても正直だったのだ。今の自分の<ruby><rb>偽</rb><rt>いつわ</rt></ruby>りに喜ばされている親達が少々情無くも思われる。こまかい心理<ruby><rb>分析家</rb><rt>ぶんせきか</rt></ruby>ではないけれども、極めて正直な人間だったので、こんな事にも気が付くのである。ずっと後年になって、ある時<ruby><rb>突然</rb><rt>とつぜん</rt></ruby>、親の老いたことに気が付き、己の幼かった頃の両親の元気な姿を思出したら、急に<ruby><rb>泪</rb><rt>なみだ</rt></ruby>が出て来た。その時以来、<persName ref="#shiro">子路</persName>の親孝行は無類の<ruby><rb>献身的</rb><rt>けんしんてき</rt></ruby>なものとなるのだが、とにかく、それまでの彼の<ruby><rb>俄</rb><rt>にわ</rt></ruby>か孝行はこんな<ruby><rb>工合</rb><rt>ぐあい</rt></ruby>であった。</p>
+        <p>三</p>
+        <p>ある日<persName ref="#shiro">子路</persName>が街を歩いて行くと、かつての友人の二三に出会った。無頼とは云えぬまでも<ruby><rb>放縦</rb><rt>ほうじゅう</rt></ruby>にして<ruby><rb>拘</rb><rt>こだ</rt></ruby>わる所の無い游侠の徒である。<persName ref="#shiro">子路</persName>は立止ってしばらく話した。その<ruby><rb>中</rb><rt>うち</rt></ruby>に彼<ruby><rb>等</rb><rt>ら</rt></ruby>の一人が<persName ref="#shiro">子路</persName>の<ruby><rb>服装</rb><rt>ふくそう</rt></ruby>をじろじろ<ruby><rb>見廻</rb><rt>みまわ</rt></ruby>し、やあ、これが儒服という<ruby><rb>奴</rb><rt>やつ</rt></ruby>か？　<ruby><rb>随分</rb><rt>ずいぶん</rt></ruby>みすぼらしいなりだな、と言った。長剣が<ruby><rb>恋</rb><rt>こい</rt></ruby>しくはないかい、とも言った。<persName ref="#shiro">子路</persName>が相手にしないでいると、今度は<ruby><rb>聞捨</rb><rt>ききずて</rt></ruby>のならぬことを言出した。どうだい。あの<persName ref="#koshi">孔丘</persName>という先生はなかなかの<ruby><rb>喰</rb><rt>く</rt></ruby>わせものだって云うじゃないか。しかつめらしい顔をして心にもない事を誠しやかに説いていると、えらく<ruby><rb>甘</rb><rt>あま</rt></ruby>い<ruby><rb>汁</rb><rt>しる</rt></ruby>が吸えるものと見えるなあ。別に悪意がある訳ではなく、<ruby><rb>心安立</rb><rt>こころやすだ</rt></ruby>てからのいつもの毒舌だったが、<persName ref="#shiro">子路</persName>は顔色を変えた。いきなりその男の<ruby><rb>胸倉</rb><rt>むなぐら</rt></ruby>を<ruby><rb>掴</rb><rt>つか</rt></ruby>み、右手の<ruby><rb>拳</rb><rt>こぶし</rt></ruby>をしたたか<ruby><rb>横面</rb><rt>よこつら</rt></ruby>に飛ばした。二つ三つ続け様に<ruby><rb>喰</rb><rt>くら</rt></ruby>わしてから手を離すと、相手は意気地なく<ruby><rb>倒</rb><rt>たお</rt></ruby>れた。<ruby><rb>呆気</rb><rt>あっけ</rt></ruby>に取られている他の連中に向っても<persName ref="#shiro">子路</persName>は<ruby><rb>挑戦的</rb><rt>ちょうせんてき</rt></ruby>な眼を向けたが、<persName ref="#shiro">子路</persName>の<ruby><rb>剛勇</rb><rt>ごうゆう</rt></ruby>を知る彼等は向って来ようともしない。<ruby><rb>殴</rb><rt>なぐ</rt></ruby>られた男を左右から<ruby><rb>扶</rb><rt>たす</rt></ruby>け起し、<ruby><rb>捨台詞</rb><rt>すてぜりふ</rt></ruby>一つ残さずにこそこそと立去った。</p>
+        <p>いつかこの事が<persName ref="#koshi">孔子</persName>の耳に入ったものと見える。<persName ref="#shiro">子路</persName>が呼ばれて師の前に出て行った時、直接には<ruby><rb>触</rb><rt>ふ</rt></ruby>れないながら、次のようなことを聞かされねばならなかった。<ruby><rb>古</rb><rt>いにしえ</rt></ruby>の君子は忠をもって質となし仁をもって衛となした。不善ある時はすなわち忠をもってこれを化し、<ruby><rb>侵暴</rb><rt>しんぼう</rt></ruby>ある時はすなわち仁をもってこれを固うした。<ruby><rb>腕力</rb><rt>わんりょく</rt></ruby>の必要を見ぬゆえんである。とかく小人は<ruby><rb>不遜</rb><rt>ふそん</rt></ruby>をもって勇と<ruby><rb>見做</rb><rt>みな</rt></ruby>し勝ちだが、君子の勇とは義を立つることの<ruby><rb>謂</rb><rt>いい</rt></ruby>である云々。神妙に<persName ref="#shiro">子路</persName>は聞いていた。</p>
+        <p>数日後、<persName ref="#shiro">子路</persName>がまた街を歩いていると、往来の<ruby><rb>木蔭</rb><rt>こかげ</rt></ruby>で<ruby><rb>閑人達</rb><rt>かんじんたち</rt></ruby>の<ruby><rb>盛</rb><rt>さか</rt></ruby>んに弁じている声が耳に入った。それがどうやら<persName ref="#koshi">孔子</persName>の噂のようである。――<ruby><rb>昔</rb><rt>むかし</rt></ruby>、昔、と何でも<ruby><rb>古</rb><rt>いにしえ</rt></ruby>を<ruby><rb>担</rb><rt>かつ</rt></ruby>ぎ出して今を<ruby><rb>貶</rb><rt>おと</rt></ruby>す。誰も昔を見たことがないのだから何とでも言える訳さ。しかし昔の道を<ruby><rb>杓子定規</rb><rt>しゃくしじょうぎ</rt></ruby>にそのまま<ruby><rb>履</rb><rt>ふ</rt></ruby>んで、それで<ruby><rb>巧</rb><rt>うま</rt></ruby>く世が治まるくらいなら、誰も苦労はしないよ。<ruby><rb>俺</rb><rt>おれ</rt></ruby>達にとっては、死んだ<persName ref="#shuko">周公</persName>よりも生ける<ruby><rb><persName ref="#yoko">陽虎</persName>様</rb><rt>ようこさま</rt></ruby>の方が偉いということになるのさ。</p>
+        <p><ruby><rb>下剋上</rb><rt>げこくじょう</rt></ruby>の世であった。政治の実権が<ruby><rb><placeName ref="#lu">魯</placeName>侯</rb><rt>ろこう</rt></ruby>からその大夫たる<ruby><rb>季孫氏</rb><rt>きそんし</rt></ruby>の手に移り、それが今や<ruby><rb>更</rb><rt>さら</rt></ruby>に季孫氏の臣たる<persName ref="#yoko">陽虎</persName>という野心家の手に移ろうとしている。しゃべっている当人はあるいは<persName ref="#yoko">陽虎</persName>の身内の者かも知れない。</p>
+        <p>――ところで、その<persName ref="#yoko">陽虎</persName>様がこの間から<persName ref="#koshi">孔丘</persName>を用いようと何度も<ruby><rb>迎</rb><rt>むか</rt></ruby>えを出されたのに、何と、<persName ref="#koshi">孔丘</persName>の方からそれを<ruby><rb>避</rb><rt>さ</rt></ruby>けているというじゃないか。口では大層な事を言っていても、実際の生きた政治にはまるで自信が無いのだろうよ。あの<ruby><rb>手合</rb><rt>てあい</rt></ruby>はね。</p>
+        <p><persName ref="#shiro">子路</persName>は<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から人々を分けて、つかつかと弁者の前に進み出た。人々は彼が孔門の徒であることをすぐに認めた。今まで得々と弁じ立てていた当の老人は、顔色を失い、意味も無く<persName ref="#shiro">子路</persName>の前に頭を下げてから<ruby><rb>人垣</rb><rt>ひとがき</rt></ruby>の背後に身を<ruby><rb>隠</rb><rt>かく</rt></ruby>した。<ruby><rb>眥</rb><rt>まなじり</rt></ruby>を決した<persName ref="#shiro">子路</persName>の<ruby><rb>形相</rb><rt>ぎょうそう</rt></ruby>が余りにすさまじかったのであろう。</p>
+        <p>その後しばらく、同じような事が処々で起った。<ruby><rb>肩</rb><rt>かた</rt></ruby>を<ruby><rb>怒</rb><rt>いか</rt></ruby>らせ<ruby><rb>炯々</rb><rt>けいけい</rt></ruby>と眼を光らせた<persName ref="#shiro">子路</persName>の姿が遠くから見え出すと、人々は<persName ref="#koshi">孔子</persName>を<ruby><rb>刺</rb><rt>そし</rt></ruby>る口を<ruby><rb>噤</rb><rt>つぐ</rt></ruby>むようになった。</p>
+        <p><persName ref="#shiro">子路</persName>はこの事で度々師に叱られるが、自分でもどうしようもない。彼は彼なりに心の中では<ruby><rb>言分</rb><rt>いいぶん</rt></ruby>が無いでもない。いわゆる君子なるものが俺と同じ強さの<ruby><rb>忿怒</rb><rt>ふんぬ</rt></ruby>を感じてなおかつそれを抑え得るのだったら、そりゃ偉い。しかし、実際は、俺ほど強く怒りを感じやしないんだ。少くとも、抑え得る程度に弱くしか感じていないのだ。きっと…………。</p>
+        <p>一年ほど<ruby><rb>経</rb><rt>た</rt></ruby>ってから<persName ref="#koshi">孔子</persName>が苦笑と共に<ruby><rb>嘆</rb><rt>たん</rt></ruby>じた。<ruby><rb>由</rb><rt>ゆう</rt></ruby>が門に入ってから自分は悪言を耳にしなくなったと。</p>
+        <p>四</p>
+        <p>ある時、<persName ref="#shiro">子路</persName>が一室で<ruby><rb>瑟</rb><rt>しつ</rt></ruby>を<ruby><rb>鼓</rb><rt>こ</rt></ruby>していた。</p>
+        <p><persName ref="#koshi">孔子</persName>はそれを別室で聞いていたが、しばらくして<ruby><rb>傍</rb><rt>かたわ</rt></ruby>らなる<persName ref="#zenyu"><ruby><rb>冉有</rb><rt>ぜんゆう</rt></ruby></persName>に向って言った。あの瑟の音を聞くがよい。<ruby><rb>暴厲</rb><rt>ぼうれい</rt></ruby>の気がおのずから<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>っているではないか。君子の音は<ruby><rb>温柔</rb><rt>おんじゅう</rt></ruby>にして<ruby><rb>中</rb><rt>ちゅう</rt></ruby>におり、生育の気を養うものでなければならぬ。昔<persName ref="#shun"><ruby><rb>舜</rb><rt>しゅん</rt></ruby></persName>は<ruby><rb>五絃琴</rb><rt>ごげんきん</rt></ruby>を<ruby><rb>弾</rb><rt>だん</rt></ruby>じて南風の詩を作った。南風の<ruby><rb>薫</rb><rt>くん</rt></ruby>ずるやもって我が民の<ruby><rb>慍</rb><rt>いかり</rt></ruby>を解くべし。南風の時なるやもって我が民の財を<ruby><rb>阜</rb><rt>おおい</rt></ruby>にすべしと。今<ruby><rb>由</rb><rt>ゆう</rt></ruby>の音を聞くに、誠に<ruby><rb>殺伐激越</rb><rt>さつばつげきえつ</rt></ruby>、南音に<ruby><rb>非</rb><rt>あら</rt></ruby>ずして北声に類するものだ。弾者の<ruby><rb>荒怠暴恣</rb><rt>こうたいぼうし</rt></ruby>の心状をこれほど明らかに映し出したものはない。――</p>
+        <p>後、<persName ref="#zenyu">冉有</persName>が<persName ref="#shiro">子路</persName>の所へ行って<ruby><rb>夫子</rb><rt>ふうし</rt></ruby>の言葉を告げた。</p>
+        <p><persName ref="#shiro">子路</persName>は元々自分に楽才の<ruby><rb>乏</rb><rt>とぼ</rt></ruby>しいことを知っている。そして自らそれを耳と手のせいに帰していた。しかし、それが実はもっと深い精神の持ち方から来ているのだと聞かされた時、彼は<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>として<ruby><rb>懼</rb><rt>おそ</rt></ruby>れた。大切なのは手の習練ではない。もっと深く考えねばならぬ。彼は一室に<ruby><rb>閉</rb><rt>と</rt></ruby>じ<ruby><rb>籠</rb><rt>こも</rt></ruby>り、静思して<ruby><rb>喰</rb><rt>くら</rt></ruby>わず、もって<ruby><rb>骨立</rb><rt>こつりつ</rt></ruby>するに至った。数日の後、ようやく思い得たと信じて、再び瑟を執った。そうして、極めて<ruby><rb>恐</rb><rt>おそ</rt></ruby>る恐る弾じた。その音を<ruby><rb>洩</rb><rt>も</rt></ruby>れ聞いた<persName ref="#koshi">孔子</persName>は、今度は別に何も言わなかった。<ruby><rb>咎</rb><rt>とが</rt></ruby>めるような顔色も見えない。<persName ref="#shiko"><ruby><rb>子貢</rb><rt>しこう</rt></ruby></persName>が<persName ref="#shiro">子路</persName>の所へ行ってそのむねを告げた。師の咎が無かったと聞いて<persName ref="#shiro">子路</persName>は<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しげに笑った。</p>
+        <p>人の良い兄弟子の嬉しそうな<ruby><rb>笑顔</rb><rt>えがお</rt></ruby>を見て、若い<persName ref="#shiko">子貢</persName>も微笑を禁じ得ない。<ruby><rb>聡明</rb><rt>そうめい</rt></ruby>な<persName ref="#shiko">子貢</persName>はちゃんと知っている。<persName ref="#shiro">子路</persName>の<ruby><rb>奏</rb><rt>かな</rt></ruby>でる音が<ruby><rb>依然</rb><rt>いぜん</rt></ruby>として殺伐な北声に満ちていることを。そうして、夫子がそれを咎めたまわぬのは、<ruby><rb>痩</rb><rt>や</rt></ruby>せ細るまで苦しんで考え込んだ<persName ref="#shiro">子路</persName>の一本気を<ruby><rb>愍</rb><rt>あわれ</rt></ruby>まれたために過ぎないことを。</p>
+        <p>五</p>
+        <p>弟子の中で、<persName ref="#shiro">子路</persName>ほど<persName ref="#koshi">孔子</persName>に叱られる者は無い。<persName ref="#shiro">子路</persName>ほど<ruby><rb>遠慮</rb><rt>えんりょ</rt></ruby>なく師に反問する者もない。「<ruby><rb>請</rb><rt>こ</rt></ruby>う。古の道を<ruby><rb>釈</rb><rt>す</rt></ruby>てて<ruby><rb>由</rb><rt>ゆう</rt></ruby>の意を行わん。可ならんか。」などと、叱られるに決っていることを聞いてみたり、<persName ref="#koshi">孔子</persName>に面と向ってずけずけと「これある<ruby><rb>哉</rb><rt>かな</rt></ruby>。子の<ruby><rb>迂</rb><rt>う</rt></ruby>なるや！」などと言ってのける人間は他に誰もいない。それでいて、また、<persName ref="#shiro">子路</persName>ほど全身的に<persName ref="#koshi">孔子</persName>に<ruby><rb>凭</rb><rt>よ</rt></ruby>り掛かっている者もないのである。どしどし問返すのは、心から<ruby><rb>納得</rb><rt>なっとく</rt></ruby>出来ないものを<ruby><rb>表面</rb><rt>うわべ</rt></ruby>だけ<ruby><rb>諾</rb><rt>うべな</rt></ruby>うことの出来ぬ性分だからだ。また、他の弟子達のように、<ruby><rb>嗤</rb><rt>わら</rt></ruby>われまい叱られまいと気を<ruby><rb>遣</rb><rt>つか</rt></ruby>わないからである。</p>
+        <p><persName ref="#shiro">子路</persName>が他の所ではあくまで人の下風に立つを潔しとしない独立<ruby><rb>不羈</rb><rt>ふき</rt></ruby>の男であり、<ruby><rb>一諾千金</rb><rt>いちだくせんきん</rt></ruby>の快男児であるだけに、<ruby><rb>碌々</rb><rt>ろくろく</rt></ruby>たる<ruby><rb>凡弟子然</rb><rt>ぼんていしぜん</rt></ruby>として<persName ref="#koshi">孔子</persName>の前に<ruby><rb>侍</rb><rt>はんべ</rt></ruby>っている姿は、人々に確かに<ruby><rb>奇異</rb><rt>きい</rt></ruby>な感じを<ruby><rb>与</rb><rt>あた</rt></ruby>えた。事実、彼には、<persName ref="#koshi">孔子</persName>の前にいる時だけは複雑な<ruby><rb>思索</rb><rt>しさく</rt></ruby>や重要な判断は<ruby><rb>一切</rb><rt>いっさい</rt></ruby>師に任せてしまって自分は安心しきっているような<ruby><rb>滑稽</rb><rt>こっけい</rt></ruby>な傾向も無いではない。母親の前では自分に出来る事までも、してもらっている幼児と同じような工合である。退いて考えてみて、自ら苦笑することがある位だ。</p>
+        <p>だが、これほどの師にもなお触れることを許さぬ胸中の奥所がある。ここばかりは<ruby><rb>譲</rb><rt>ゆず</rt></ruby>れないというぎりぎり結著の所が。</p>
+        <p>すなわち、<persName ref="#shiro">子路</persName>にとって、この世に一つの大事なものがある。そのものの前には死生も論ずるに足りず、いわんや、区々たる利害のごとき、問題にはならない。侠といえばやや軽すぎる。信といい義というと、どうも道学者流で自由な<ruby><rb>躍動</rb><rt>やくどう</rt></ruby>の気に欠ける<ruby><rb>憾</rb><rt>うら</rt></ruby>みがある。そんな名前はどうでもいい。<persName ref="#shiro">子路</persName>にとって、それは快感の一種のようなものである。とにかく、それの感じられるものが善きことであり、それの<ruby><rb>伴</rb><rt>ともな</rt></ruby>わないものが<ruby><rb>悪</rb><rt>あ</rt></ruby>しきことだ。極めてはっきりしていて、いまだかつてこれに疑を感じたことがない。<persName ref="#koshi">孔子</persName>の云う仁とはかなり開きがあるのだが、<persName ref="#shiro">子路</persName>は師の教の中から、この単純な倫理観を補強するようなものばかりを選んで<ruby><rb>摂</rb><rt>と</rt></ruby>り入れる。<ruby><rb>巧言令色足恭</rb><rt>コウゲンレイショクスウキョウ</rt></ruby>、<ruby><rb>怨</rb><rt>ウラミ</rt></ruby>ヲ<ruby><rb>匿</rb><rt>カク</rt></ruby>シテ<ruby><rb>其</rb><rt>ソ</rt></ruby>ノ人ヲ友トスルハ、<persName ref="#koshi">丘</persName><ruby><rb>之</rb><rt>コレ</rt></ruby>ヲ<ruby><rb>恥</rb><rt>ハ</rt></ruby>ヅ　とか、生ヲ求メテ<ruby><rb>以</rb><rt>モッ</rt></ruby>テ仁ヲ害スルナク身ヲ殺シテ以テ仁ヲ成スアリ　とか、狂者ハ進ンデ取リ<ruby><rb>狷者</rb><rt>ケンジャ</rt></ruby>ハ<ruby><rb>為</rb><rt>ナ</rt></ruby>サザル所アリ　とかいうのが、それだ。<persName ref="#koshi">孔子</persName>も初めはこの<ruby><rb>角</rb><rt>つの</rt></ruby>を<ruby><rb>矯</rb><rt>た</rt></ruby>めようとしないではなかったが、後には<ruby><rb>諦</rb><rt>あきら</rt></ruby>めて<ruby><rb>止</rb><rt>や</rt></ruby>めてしまった。とにかく、これはこれで一<ruby><rb>匹</rb><rt>ぴき</rt></ruby>の見事な牛には違いないのだから。<ruby><rb>策</rb><rt>むち</rt></ruby>を必要とする弟子もあれば、<ruby><rb>手綱</rb><rt>たづな</rt></ruby>を必要とする弟子もある。容易な手綱では抑えられそうもない<persName ref="#shiro">子路</persName>の性格的欠点が、実は同時にかえって大いに用うるに足るものであることを知り、<persName ref="#shiro">子路</persName>には大体の方向の指示さえ与えればよいのだと考えていた。敬ニシテ礼ニ中ラザルヲ野トイヒ、勇ニシテ礼ニ中ラザルヲ逆トイフ　とか、信ヲ好ンデ学ヲ好マザレバソノ<ruby><rb>蔽</rb><rt>ヘイ</rt></ruby>ヤ<ruby><rb>賊</rb><rt>ゾク</rt></ruby>、直ヲ好ンデ学ヲ好マザレバソノ蔽ヤ<ruby><rb>絞</rb><rt>カウ</rt></ruby>　などというのも、結局は、個人としての<persName ref="#shiro">子路</persName>に対してよりも、いわば<ruby><rb>塾頭格</rb><rt>じゅくとうかく</rt></ruby>としての<persName ref="#shiro">子路</persName>に向っての<ruby><rb>叱言</rb><rt>こごと</rt></ruby>である場合が多かった。<persName ref="#shiro">子路</persName>という特殊な個人に在ってはかえって<ruby><rb>魅力</rb><rt>みりょく</rt></ruby>となり得るものが、他の門生<ruby><rb>一般</rb><rt>いっぱん</rt></ruby>についてはおおむね害となることが多いからである。</p>
+        <p>六</p>
+        <p><placeName ref="#jin"><ruby><rb>晋</rb><rt>しん</rt></ruby></placeName>の<placeName ref="#giyu"><ruby><rb>魏楡</rb><rt>きゆ</rt></ruby></placeName>の地で石がものを言ったという。民の<ruby><rb>怨嗟</rb><rt>えんさ</rt></ruby>の声が石を仮りて発したのであろうと、ある賢者が解した。<ruby><rb>既</rb><rt>すで</rt></ruby>に<ruby><rb>衰微</rb><rt>すいび</rt></ruby>した周室は更に二つに分れて争っている。十に余る大国はそれぞれ相結び相闘って<ruby><rb>干戈</rb><rt>かんか</rt></ruby>の止む時が無い。<ruby><rb><placeName ref="#qi">斉</placeName>侯</rb><rt>せいこう</rt></ruby>の一人は臣下の妻に通じて夜ごとその<ruby><rb>邸</rb><rt>やしき</rt></ruby>に<ruby><rb>忍</rb><rt>しの</rt></ruby>んで来る中についにその夫に<ruby><rb>弑</rb><rt>しい</rt></ruby>せられてしまう。<placeName ref="#chu"><ruby><rb>楚</rb><rt>そ</rt></ruby></placeName>では王族の一人が<ruby><rb>病臥</rb><rt>びょうが</rt></ruby>中の王の<ruby><rb>頸</rb><rt>くび</rt></ruby>をしめて位を<ruby><rb>奪</rb><rt>うば</rt></ruby>う。<placeName ref="#wu"><ruby><rb>呉</rb><rt>ご</rt></ruby></placeName>では足頸を<ruby><rb>斬取</rb><rt>きりと</rt></ruby>られた罪人共が王を<ruby><rb>襲</rb><rt>おそ</rt></ruby>い、<placeName ref="#jin">晋</placeName>では二人の臣が<ruby><rb>互</rb><rt>たが</rt></ruby>いに妻を<ruby><rb>交換</rb><rt>こうかん</rt></ruby>し合う。このような世の中であった。</p>
+        <p><placeName ref="#lu">魯</placeName>の<persName ref="#ro-shoko">昭公</persName>は<ruby><rb>上卿</rb><rt>じょうけい</rt></ruby><persName ref="#kiheishi"><ruby><rb>季平子</rb><rt>きへいし</rt></ruby></persName>を討とうとしてかえって国を<ruby><rb>逐</rb><rt>お</rt></ruby>われ、亡命七年にして他国で<ruby><rb>窮死</rb><rt>きゅうし</rt></ruby>する。亡命中帰国の話がととのいかかっても、<persName ref="#ro-shoko">昭公</persName>に従った臣下共が帰国後の<ruby><rb>己</rb><rt>おのれ</rt></ruby>の運命を案じ公を引留めて帰らせない。<placeName ref="#lu">魯</placeName>の国は季孫・<ruby><rb>叔孫</rb><rt>しゅくそん</rt></ruby>・<ruby><rb>孟孫</rb><rt>もうそん</rt></ruby>三氏の天下から、更に季氏の<ruby><rb>宰</rb><rt>さい</rt></ruby>・<persName ref="#yoko">陽虎</persName>の<ruby><rb>恣</rb><rt>ほしいまま</rt></ruby>な手に操られて行く。</p>
+        <p>ところが、その策士<persName ref="#yoko">陽虎</persName>が結局己の策に倒れて<ruby><rb>失脚</rb><rt>しっきゃく</rt></ruby>してから、急にこの国の政界の風向きが変った。思いがけなく<persName ref="#koshi">孔子</persName>が<placeName ref="#chuto">中都</placeName>の宰として用いられることになる。公平無私な<ruby><rb>官吏</rb><rt>かんり</rt></ruby>や<ruby><rb>苛斂誅求</rb><rt>かれんちゅうきゅう</rt></ruby>を事とせぬ政治家の<ruby><rb>皆無</rb><rt>かいむ</rt></ruby>だった当時のこととて、<persName ref="#koshi">孔子</persName>の公正な方針と周到な計画とはごく短い期間に<ruby><rb>驚異的</rb><rt>きょういてき</rt></ruby>な治績を挙げた。すっかり<ruby><rb>驚嘆</rb><rt>きょうたん</rt></ruby>した主君の<persName ref="#ro-teiko">定公</persName>が問うた。汝の<placeName ref="#chuto">中都</placeName>を治めし所の法をもって<placeName ref="#lu">魯</placeName>国を治むればすなわちいかん？　<persName ref="#koshi">孔子</persName>が答えて言う。何ぞ<ruby><rb>但</rb><rt>ただ</rt></ruby><placeName ref="#lu">魯</placeName>国のみならんや。天下を治むるといえども可ならんか。およそ<ruby><rb>法螺</rb><rt>ほら</rt></ruby>とは<ruby><rb>縁</rb><rt>えん</rt></ruby>の遠い<persName ref="#koshi">孔子</persName>がすこぶる<ruby><rb>恭</rb><rt>うやうや</rt></ruby>しい調子で<ruby><rb>澄</rb><rt>す</rt></ruby>ましてこうした壮語を<ruby><rb>弄</rb><rt>ろう</rt></ruby>したので、<persName ref="#ro-teiko">定公</persName>はますます驚いた。彼は直ちに<persName ref="#koshi">孔子</persName>を司空に挙げ、続いて<ruby><rb>大司寇</rb><rt>だいしこう</rt></ruby>に進めて<ruby><rb>宰相</rb><rt>さいしょう</rt></ruby>の事をも<ruby><rb>兼</rb><rt>か</rt></ruby>ね<ruby><rb>摂</rb><rt>と</rt></ruby>らせた。<persName ref="#koshi">孔子</persName>の推挙で<persName ref="#shiro">子路</persName>は<placeName ref="#lu">魯</placeName>国の内閣書記官長とも言うべき季氏の宰となる。<persName ref="#koshi">孔子</persName>の内政改革案の実行者として<ruby><rb>真先</rb><rt>まっさき</rt></ruby>に活動したことは言うまでもない。</p>
+        <p><persName ref="#koshi">孔子</persName>の政策の第一は中央集権すなわち<placeName ref="#lu">魯</placeName>侯の権力強化である。このためには、現在<placeName ref="#lu">魯</placeName>侯よりも勢力を<ruby><rb>有</rb><rt>も</rt></ruby>つ季・叔・孟・三<ruby><rb>桓</rb><rt>かん</rt></ruby>の力を<ruby><rb>削</rb><rt>そ</rt></ruby>がねばならぬ。三氏の私城にして<ruby><rb>百雉</rb><rt>ひゃくち</rt></ruby>（厚さ三<ruby><rb>丈</rb><rt>じょう</rt></ruby>、高さ一丈）を<ruby><rb>超</rb><rt>こ</rt></ruby>えるものに<placeName ref="#ko"><ruby><rb>郈</rb><rt>こう</rt></ruby></placeName>・<placeName ref="#hi"><ruby><rb>費</rb><rt>ひ</rt></ruby></placeName>・<ruby><rb>成</rb><rt>せい</rt></ruby>の三地がある。まずこれ等を<ruby><rb>毀</rb><rt>こぼ</rt></ruby>つことに<persName ref="#koshi">孔子</persName>は決め、その実行に直接当ったのが<persName ref="#shiro">子路</persName>であった。</p>
+        <p>自分の仕事の結果がすぐにはっきりと現れて来る、しかも今までの経験には無かったほどの大きい規模で現れて来ることは、<persName ref="#shiro">子路</persName>のような人間にとって確かに<ruby><rb>愉快</rb><rt>ゆかい</rt></ruby>に違いなかった。<ruby><rb>殊</rb><rt>こと</rt></ruby>に、<ruby><rb>既成</rb><rt>きせい</rt></ruby>政治家の張り<ruby><rb>廻</rb><rt>めぐ</rt></ruby>らした<ruby><rb>奸悪</rb><rt>かんあく</rt></ruby>な組織や習慣を一つ一つ<ruby><rb>破砕</rb><rt>はさい</rt></ruby>して行くことは、<persName ref="#shiro">子路</persName>に、今まで知らなかった一種の<ruby><rb>生甲斐</rb><rt>いきがい</rt></ruby>を感じさせる。多年の<ruby><rb>抱負</rb><rt>ほうふ</rt></ruby>の実現に<ruby><rb>生々</rb><rt>いきいき</rt></ruby>と<ruby><rb>忙</rb><rt>いそが</rt></ruby>しげな<persName ref="#koshi">孔子</persName>の顔を見るのも、さすがに<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しい。<persName ref="#koshi">孔子</persName>の目にも、弟子の一人としてではなく一個の実行力ある政治家としての<persName ref="#shiro">子路</persName>の姿が<ruby><rb>頼</rb><rt>たの</rt></ruby>もしいものに映った。</p>
+        <p><placeName ref="#hi">費</placeName>の城を<ruby><rb>毀</rb><rt>こわ</rt></ruby>しに掛かった時、それに反抗して<persName ref="#kozanfuchu"><ruby><rb>公山不狃</rb><rt>こうざんふちゅう</rt></ruby></persName>という者が<placeName ref="#hi">費</placeName>人を率い<placeName ref="#lu">魯</placeName>の都を襲うた。<placeName ref="#bushidai">武子台</placeName>に難を避けた<persName ref="#ro-teiko">定公</persName>の身辺にまで<ruby><rb>叛軍</rb><rt>はんぐん</rt></ruby>の矢が<ruby><rb>及</rb><rt>およ</rt></ruby>ぶほど、一時は危かったが、<persName ref="#koshi">孔子</persName>の適切な判断と指揮とによって<ruby><rb>纔</rb><rt>わず</rt></ruby>かに事無きを得た。<persName ref="#shiro">子路</persName>はまた改めて師の実際家的<ruby><rb>手腕</rb><rt>しゅわん</rt></ruby>に敬服する。<persName ref="#koshi">孔子</persName>の政治家としての手腕は良く知っているし、またその個人的な膂力の強さも知ってはいたが、実際の戦闘に際してこれほどの<ruby><rb>鮮</rb><rt>あざ</rt></ruby>やかな指揮ぶりを見せようとは思いがけなかったのである。もちろん、<persName ref="#shiro">子路</persName>自身もこの時は真先に立って奮い戦った。久しぶりに<ruby><rb>揮</rb><rt>ふる</rt></ruby>う長剣の味も、まんざら<ruby><rb>棄</rb><rt>す</rt></ruby>てたものではない。とにかく、経書の字句をほじくったり古礼を習うたりするよりも、<ruby><rb>粗</rb><rt>あら</rt></ruby>い現実の面と取組み合って生きて行く方が、この男の性に合っているようである。</p>
+        <p><placeName ref="#qi">斉</placeName>との間の<ruby><rb>屈辱的</rb><rt>くつじょくてき</rt></ruby><ruby><rb>媾和</rb><rt>こうわ</rt></ruby>のために、<persName ref="#ro-teiko">定公</persName>が<persName ref="#koshi">孔子</persName>を<ruby><rb>随</rb><rt>したが</rt></ruby>えて<placeName ref="#qi">斉</placeName>の<persName ref="#sei-keiko">景公</persName>と<placeName ref="#kyokoku"><ruby><rb>夾谷</rb><rt>きょうこく</rt></ruby></placeName>の地に会したことがある。その時<persName ref="#koshi">孔子</persName>は<placeName ref="#qi">斉</placeName>の無礼を<ruby><rb>咎</rb><rt>とが</rt></ruby>めて、<persName ref="#sei-keiko">景公</persName>始め群卿諸大夫を頭ごなしに<ruby><rb>叱咤</rb><rt>しった</rt></ruby>した。戦勝国たるはずの<placeName ref="#qi">斉</placeName>の君臣一同ことごとく<ruby><rb>顫</rb><rt>ふる</rt></ruby>え上ったとある。<persName ref="#shiro">子路</persName>をして心からの<ruby><rb>快哉</rb><rt>かいさい</rt></ruby>を叫ばしめるに充分な出来事ではあったが、この時以来、強国<placeName ref="#qi">斉</placeName>は、<ruby><rb>隣国</rb><rt>りんこく</rt></ruby>の宰相としての<persName ref="#koshi">孔子</persName>の存在に、あるいは<persName ref="#koshi">孔子</persName>の<ruby><rb>施政</rb><rt>しせい</rt></ruby>の<ruby><rb>下</rb><rt>もと</rt></ruby>に充実して行く<placeName ref="#lu">魯</placeName>の国力に、<ruby><rb>懼</rb><rt>おそれ</rt></ruby>を<ruby><rb>抱</rb><rt>いだ</rt></ruby>き始めた。苦心の結果、誠にいかにも古代<placeName ref="#chugoku"><ruby><rb>支那</rb><rt>しな</rt></ruby></placeName>式な苦肉の策が採られた。すなわち、<placeName ref="#qi">斉</placeName>から<placeName ref="#lu">魯</placeName>へ<ruby><rb>贈</rb><rt>おく</rt></ruby>るに、<ruby><rb>歌舞</rb><rt>かぶ</rt></ruby>に長じた美女の一団をもってしたのである。こうして<placeName ref="#lu">魯</placeName>侯の心を<ruby><rb>蕩</rb><rt>とろ</rt></ruby>かし<persName ref="#ro-teiko">定公</persName>と<persName ref="#koshi">孔子</persName>との間を<ruby><rb>離間</rb><rt>りかん</rt></ruby>しようとしたのだ。ところで、更に古代<placeName ref="#chugoku">支那</placeName>式なのは、この幼稚な策が、<placeName ref="#lu">魯</placeName>国内反<persName ref="#koshi">孔子</persName>派の策動と<ruby><rb>相</rb><rt>あい</rt></ruby><ruby><rb>俟</rb><rt>ま</rt></ruby>って、余りにも速く効を奏したことである。<placeName ref="#lu">魯</placeName>侯は女楽に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>ってもはや<ruby><rb>朝</rb><rt>ちょう</rt></ruby>に出なくなった。<persName ref="#kikanshi"><ruby><rb>季桓子</rb><rt>きかんし</rt></ruby></persName>以下の大官連もこれに<ruby><rb>倣</rb><rt>なら</rt></ruby>い出す。<persName ref="#shiro">子路</persName>は真先に<ruby><rb>憤慨</rb><rt>ふんがい</rt></ruby>して<ruby><rb>衝突</rb><rt>しょうとつ</rt></ruby>し、官を辞した。<persName ref="#koshi">孔子</persName>は<persName ref="#shiro">子路</persName>ほど早く見切をつけず、なお<ruby><rb>尽</rb><rt>つ</rt></ruby>くせるだけの手段を尽くそうとする。<persName ref="#shiro">子路</persName>は<persName ref="#koshi">孔子</persName>に早く<ruby><rb>辞</rb><rt>や</rt></ruby>めてもらいたくて仕方が無い。師が臣節を<ruby><rb>汚</rb><rt>けが</rt></ruby>すのを懼れるのではなく、ただこの<ruby><rb>淫</rb><rt>みだ</rt></ruby>らな<ruby><rb>雰囲気</rb><rt>ふんいき</rt></ruby>の中に師を置いて<ruby><rb>眺</rb><rt>なが</rt></ruby>めるのが<ruby><rb>堪</rb><rt>たま</rt></ruby>らないのである。</p>
+        <p><persName ref="#koshi">孔子</persName>の<ruby><rb>粘</rb><rt>ねば</rt></ruby>り強さもついに諦めねばならなくなった時、<persName ref="#shiro">子路</persName>はほっとした。そうして、師に従って<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んで<placeName ref="#lu">魯</placeName>の国を<ruby><rb>立退</rb><rt>たちの</rt></ruby>いた。</p>
+        <p>作曲家でもあり作詞家でもあった<persName ref="#koshi">孔子</persName>は、次第に<ruby><rb>遠離</rb><rt>とおざか</rt></ruby>り行く都城を<ruby><rb>顧</rb><rt>かえり</rt></ruby>みながら、歌う。</p>
+        <p>かの美婦の口には君子ももって出走すべし。かの美婦の<ruby><rb>謁</rb><rt>えつ</rt></ruby>には君子ももって死敗すべし。…………</p>
+        <p>かくて、<ruby><rb>爾後</rb><rt>じご</rt></ruby>永年に<ruby><rb>亘</rb><rt>わた</rt></ruby>る<persName ref="#koshi">孔子</persName>の<ruby><rb>遍歴</rb><rt>へんれき</rt></ruby>が始まる。</p>
+        <p>七</p>
+        <p>大きな疑問が一つある。子供の時からの疑問なのだが、成人になっても老人になりかかってもいまだに納得できないことに変りはない。それは、誰もが一向に<ruby><rb>怪</rb><rt>あや</rt></ruby>しもうとしない<ruby><rb>事柄</rb><rt>ことがら</rt></ruby>だ。<ruby><rb>邪</rb><rt>じゃ</rt></ruby>が栄えて正が<ruby><rb>虐</rb><rt>しいた</rt></ruby>げられるという・ありきたりの事実についてである。</p>
+        <p>この事実にぶつかるごとに、<persName ref="#shiro">子路</persName>は心からの<ruby><rb>悲憤</rb><rt>ひふん</rt></ruby>を発しないではいられない。なぜだ？　なぜそうなのだ？　悪は一時栄えても結局はその<ruby><rb>酬</rb><rt>むくい</rt></ruby>を受けると人は云う。なるほどそういう例もあるかも知れぬ。しかし、それも人間というものが結局は<ruby><rb>破滅</rb><rt>はめつ</rt></ruby>に終るという一般的な場合の一例なのではないか。善人が究極の勝利を得たなどという<ruby><rb>例</rb><rt>ためし</rt></ruby>は、遠い昔は知らず、今の世ではほとんど聞いたことさえ無い。なぜだ？　なぜだ？　大きな子供・<persName ref="#shiro">子路</persName>にとって、こればかりは幾ら憤慨しても憤慨し足りないのだ。彼は<ruby><rb>地団駄</rb><rt>じだんだ</rt></ruby>を<ruby><rb>踏</rb><rt>ふ</rt></ruby>む思いで、天とは何だと考える。天は何を見ているのだ。そのような運命を作り上げるのが天なら、自分は天に<ruby><rb>反抗</rb><rt>はんこう</rt></ruby>しないではいられない。天は人間と<ruby><rb>獣</rb><rt>けもの</rt></ruby>との間に区別を設けないと同じく、善と悪との間にも差別を立てないのか。正とか邪とかは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>人間の間だけの仮の<ruby><rb>取決</rb><rt>とりきめ</rt></ruby>に過ぎないのか？　<persName ref="#shiro">子路</persName>がこの問題で<persName ref="#koshi">孔子</persName>の所へ聞きに行くと、いつも決って、人間の幸福というものの真の在り方について説き聞かせられるだけだ。善をなすことの<ruby><rb>報</rb><rt>むくい</rt></ruby>は、では結局、善をなしたという満足の外には無いのか？　師の前では一応納得したような気になるのだが、さて退いて独りになって考えてみると、やはりどうしても釈然としない所が残る。そんな無理に解釈してみたあげくの幸福なんかでは承知出来ない。誰が見ても文句の無い・はっきりした形の善報が義人の上に来るのでなくては、どうしても面白くないのである。</p>
+        <p>天についてのこの不満を、彼は何よりも師の運命について感じる。ほとんど人間とは思えないこの大才、大徳が、なぜこうした<ruby><rb>不遇</rb><rt>ふぐう</rt></ruby>に甘んじなければならぬのか。家庭的にも<ruby><rb>恵</rb><rt>めぐ</rt></ruby>まれず、年老いてから放浪の旅に出なければならぬような不運が、どうしてこの人を待たねばならぬのか。一夜、「<ruby><rb>鳳鳥</rb><rt>ほうちょう</rt></ruby>至らず。<placeName ref="#koga">河</placeName>、<ruby><rb>図</rb><rt>と</rt></ruby>を出さず。<ruby><rb>已</rb><rt>や</rt></ruby>んぬるかな。」と独言に<persName ref="#koshi">孔子</persName>が<ruby><rb>呟</rb><rt>つぶや</rt></ruby>くのを聞いた時、<persName ref="#shiro">子路</persName>は思わず<ruby><rb>涙</rb><rt>なみだ</rt></ruby>の<ruby><rb>溢</rb><rt>あふ</rt></ruby>れて来るのを禁じ得なかった。<persName ref="#koshi">孔子</persName>が嘆じたのは天下<ruby><rb>蒼生</rb><rt>そうせい</rt></ruby>のためだったが、<persName ref="#shiro">子路</persName>の泣いたのは天下のためではなく<persName ref="#koshi">孔子</persName>一人のためである。</p>
+        <p>この人と、この人を<ruby><rb>竢</rb><rt>ま</rt></ruby>つ時世とを見て泣いた時から、<persName ref="#shiro">子路</persName>の心は決っている。<ruby><rb>濁世</rb><rt>だくせ</rt></ruby>のあるゆる<ruby><rb>侵害</rb><rt>しんがい</rt></ruby>からこの人を守る<ruby><rb>楯</rb><rt>たて</rt></ruby>となること。精神的には導かれ守られる代りに、世俗的な<ruby><rb>煩労</rb><rt>はんろう</rt></ruby><ruby><rb>汚辱</rb><rt>おじょく</rt></ruby>を一切<ruby><rb>己</rb><rt>おの</rt></ruby>が身に引受けること。<ruby><rb>僭越</rb><rt>せんえつ</rt></ruby>ながらこれが自分の<ruby><rb>務</rb><rt>つとめ</rt></ruby>だと思う。学も才も自分は後学の諸才人に<ruby><rb>劣</rb><rt>おと</rt></ruby>るかも知れぬ。しかし、いったん事ある場合真先に夫子のために生命を<ruby><rb>抛</rb><rt>なげう</rt></ruby>って顧みぬのは誰よりも自分だと、彼は自ら深く信じていた。</p>
+        <p>八</p>
+        <p>「ここに美玉あり。<ruby><rb>匱</rb><rt>ひつ</rt></ruby>に<ruby><rb>韞</rb><rt>おさ</rt></ruby>めて<ruby><rb>蔵</rb><rt>かく</rt></ruby>さんか。<ruby><rb>善賈</rb><rt>ぜんか</rt></ruby>を求めて<ruby><rb>沽</rb><rt>う</rt></ruby>らんか。」と<persName ref="#shiko">子貢</persName>が言った時、<persName ref="#koshi">孔子</persName>は<ruby><rb>即座</rb><rt>そくざ</rt></ruby>に、「これを沽らん<ruby><rb>哉</rb><rt>かな</rt></ruby>。これを沽らん哉。我は<ruby><rb>賈</rb><rt>あたい</rt></ruby>を待つものなり。」と答えた。</p>
+        <p>そういうつもりで<persName ref="#koshi">孔子</persName>は天下周遊の旅に出たのである。随った弟子達も大部分はもちろん沽りたいのだが、<persName ref="#shiro">子路</persName>は必ずしも沽ろうとは思わない。権力の地位に在って所信を断行する快さは既に先頃の経験で知ってはいるが、それには<persName ref="#koshi">孔子</persName>を上に<ruby><rb>戴</rb><rt>いただ</rt></ruby>くといった風な特別な条件が絶対に必要である。それが出来ないなら、むしろ、「<ruby><rb>褐</rb><rt>かつ</rt></ruby>（<ruby><rb>粗衣</rb><rt>そい</rt></ruby>）を<ruby><rb>被</rb><rt>き</rt></ruby>て玉を<ruby><rb>懐</rb><rt>いだ</rt></ruby>く」という生き方が好ましい。<ruby><rb>生涯</rb><rt>しょうがい</rt></ruby><persName ref="#koshi">孔子</persName>の番犬に終ろうとも、いささかの<ruby><rb>悔</rb><rt>くい</rt></ruby>も無い。世俗的な<ruby><rb>虚栄心</rb><rt>きょえいしん</rt></ruby>が無い訳ではないが、なまじいの仕官はかえって<ruby><rb>己</rb><rt>おのれ</rt></ruby>の本領たる<ruby><rb>磊落</rb><rt>らいらく</rt></ruby>闊達を害するものだと思っている。</p>
+        <p>様々な連中が<persName ref="#koshi">孔子</persName>に従って歩いた。てきぱきした実務家の<persName ref="#zenyu"><ruby><rb>冉有</rb><rt>ぜんゆう</rt></ruby></persName>。温厚の長者<persName ref="#binshiken"><ruby><rb>閔子騫</rb><rt>びんしけん</rt></ruby></persName>。<ruby><rb>穿鑿</rb><rt>せんさく</rt></ruby>好きな故実家の<persName ref="#shika"><ruby><rb>子夏</rb><rt>しか</rt></ruby></persName>。いささか<ruby><rb>詭弁派的</rb><rt>きべんはてき</rt></ruby>な<ruby><rb>享受家</rb><rt>きょうじゅか</rt></ruby><persName ref="#saiyo"><ruby><rb>宰予</rb><rt>さいよ</rt></ruby></persName>。<ruby><rb>気骨</rb><rt>きこつ</rt></ruby><ruby><rb>稜々</rb><rt>りょうりょう</rt></ruby>たる<ruby><rb>慷慨家</rb><rt>こうがいか</rt></ruby>の<persName ref="#koryoju"><ruby><rb>公良孺</rb><rt>こうりょうじゅ</rt></ruby></persName>。<ruby><rb>身長</rb><rt>みのたけ</rt></ruby>九尺六寸といわれる長人<persName ref="#koshi">孔子</persName>の半分位しかない<ruby><rb>短矮</rb><rt>たんわい</rt></ruby>な<ruby><rb>愚直者</rb><rt>ぐちょくしゃ</rt></ruby><persName ref="#kosai"><ruby><rb>子羔</rb><rt>しこう</rt></ruby></persName>。年齢から云っても<ruby><rb>貫禄</rb><rt>かんろく</rt></ruby>から云っても、もちろん<persName ref="#shiro">子路</persName>が彼等の<ruby><rb>宰領格</rb><rt>さいりょうかく</rt></ruby>である。</p>
+        <p><persName ref="#shiro">子路</persName>より二十二歳も年下ではあったが、<persName ref="#shiko">子貢</persName>という青年は誠に際立った才人である。<persName ref="#koshi">孔子</persName>がいつも口を極めて<ruby><rb>賞</rb><rt>ほ</rt></ruby>める<persName ref="#gankai"><ruby><rb>顔回</rb><rt>がんかい</rt></ruby></persName>よりも、むしろ<persName ref="#shiko">子貢</persName>の方を<persName ref="#shiro">子路</persName>は推したい気持であった。<persName ref="#koshi">孔子</persName>からその<ruby><rb>強靱</rb><rt>きょうじん</rt></ruby>な生活力と、またその政治性とを抜き去ったような<persName ref="#gankai">顔回</persName>という若者を、<persName ref="#shiro">子路</persName>は余り好まない。それは決して<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>ではない。（<persName ref="#shiko"><ruby><rb>子貢</rb><rt>しこう</rt></ruby></persName><ruby><rb><persName ref="#shicho">子張</persName>輩</rb><rt>しちょうはい</rt></ruby>は、<persName ref="#gankai"><ruby><rb>顔淵</rb><rt>がんえん</rt></ruby></persName>に対する・師の<ruby><rb>桁外</rb><rt>けたはず</rt></ruby>れの打込み方に、どうしてもこの感情を禁じ得ないらしいが。）<persName ref="#shiro">子路</persName>は年齢が違い過ぎてもいるし、それに元来そんな事に<ruby><rb>拘</rb><rt>こだ</rt></ruby>わらぬ<ruby><rb>性</rb><rt>たち</rt></ruby>でもあったから。ただ、彼には<persName ref="#gankai">顔淵</persName>の受動的な<ruby><rb>柔軟</rb><rt>じゅうなん</rt></ruby>な才能の良さが全然<ruby><rb>呑</rb><rt>の</rt></ruby>み込めないのである。第一、どこかヴァイタルな力の欠けている所が気に入らない。そこへ行くと、多少<ruby><rb>軽薄</rb><rt>けいはく</rt></ruby>ではあっても常に才気と活力とに充ちている<persName ref="#shiko">子貢</persName>の方が、<persName ref="#shiro">子路</persName>の性質には合うのであろう。この若者の頭の鋭さに驚かされるのは<persName ref="#shiro">子路</persName>ばかりではない。頭に比べてまだ人間の出来ていないことは誰にも気付かれる所だが、しかし、それは年齢というものだ。余りの軽薄さに腹を立てて<ruby><rb>一喝</rb><rt>いっかつ</rt></ruby>を喰わせることもあるが、大体において、後世<ruby><rb>畏</rb><rt>おそ</rt></ruby>るべしという感じを<persName ref="#shiro">子路</persName>はこの青年に対して抱いている。</p>
+        <p>ある時、<persName ref="#shiko">子貢</persName>が二三の<ruby><rb>朋輩</rb><rt>ほうばい</rt></ruby>に向って次のような意味のことを述べた。――夫子は巧弁を<ruby><rb>忌</rb><rt>い</rt></ruby>むといわれるが、しかし夫子自身弁が<ruby><rb>巧過</rb><rt>うます</rt></ruby>ぎると思う。これは<ruby><rb>警戒</rb><rt>けいかい</rt></ruby>を要する。<persName ref="#saiyo">宰予</persName>などの巧さとは、まるで違う。<persName ref="#saiyo">宰予</persName>の弁のごときは、巧さが目に立ち過ぎる故、聴者に楽しみは与え得ても、<ruby><rb>信頼</rb><rt>しんらい</rt></ruby>は与え得ない。それだけにかえって安全といえる。夫子のは全く違う。<ruby><rb>流暢</rb><rt>りゅうちょう</rt></ruby>さの代りに、絶対に人に疑を<ruby><rb>抱</rb><rt>いだ</rt></ruby>かせぬ重厚さを備え、<ruby><rb>諧謔</rb><rt>かいぎゃく</rt></ruby>の代りに、<ruby><rb>含蓄</rb><rt>がんちく</rt></ruby>に富む<ruby><rb>譬喩</rb><rt>ひゆ</rt></ruby>を<ruby><rb>有</rb><rt>も</rt></ruby>つその弁は、<ruby><rb>何人</rb><rt>なんぴと</rt></ruby>といえども逆らうことの出来ぬものだ。もちろん、夫子の云われる所は九<ruby><rb>分</rb><rt>ぶ</rt></ruby>九<ruby><rb>厘</rb><rt>りん</rt></ruby>まで常に<ruby><rb>謬</rb><rt>あやま</rt></ruby>り無き真理だと思う。また夫子の行われる所は九分九厘まで我々の誰もが取ってもって<ruby><rb>範</rb><rt>はん</rt></ruby>とすべきものだ。にもかかわらず、残りの一厘――絶対に人に信頼を起させる夫子の弁舌の中の・わずか百分の一が、時に、夫子の性格の（その性格の中の・絶対<ruby><rb>普遍的</rb><rt>ふへんてき</rt></ruby>な真理と必ずしも<ruby><rb>一致</rb><rt>いっち</rt></ruby>しない極少部分の）弁明に用いられる<ruby><rb>惧</rb><rt>おそ</rt></ruby>れがある。警戒を要するのはここだ。これはあるいは、余り夫子に親しみ過ぎ<ruby><rb>狎</rb><rt>な</rt></ruby>れ過ぎたための<ruby><rb>慾</rb><rt>よく</rt></ruby>の云わせることかも知れぬ。実際、後世の者が夫子をもって聖人と<ruby><rb>崇</rb><rt>あが</rt></ruby>めた所で、それは当然過ぎる位当然なことだ。夫子ほど完全に近い人を自分は見たことがないし、また将来もこういう人はそう現れるものではなかろうから。ただ自分の言いたいのは、その夫子にしてなおかつかかる微小ではあるが・警戒すべき点を残すものだという事だ。<persName ref="#gankai">顔回</persName>のような夫子と似通った<ruby><rb>肌合</rb><rt>はだあい</rt></ruby>の男にとっては、自分の感じるような不満は少しも感じられないに違いない。夫子がしばしば<persName ref="#gankai">顔回</persName>を<ruby><rb>讃</rb><rt>ほ</rt></ruby>められるのも、結局はこの肌合のせいではないのか。…………</p>
+        <p><ruby><rb>青二才</rb><rt>あおにさい</rt></ruby>の分際で師の批評などおこがましいと腹が立ち、また、これを言わせているのは<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby><persName ref="#gankai">顔淵</persName>への嫉妬だとは知りながら、それでも<persName ref="#shiro">子路</persName>はこの言葉の中に<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>にしきれないものを感じた。肌合の相違ということについては、確かに<persName ref="#shiro">子路</persName>も思い当ることがあったからである。</p>
+        <p>おれ達には<ruby><rb>漠然</rb><rt>ばくぜん</rt></ruby>としか気付かれないものをハッキリ形に表す・<ruby><rb>妙</rb><rt>みょう</rt></ruby>な才能が、この生意気な<ruby><rb>若僧</rb><rt>わかぞう</rt></ruby>にはあるらしいと、<persName ref="#shiro">子路</persName>は感心と軽蔑とを同時に感じる。</p>
+        <p><persName ref="#shiko">子貢</persName>が<persName ref="#koshi">孔子</persName>に奇妙な質問をしたことがある。「死者は知ることありや？　<ruby><rb>将</rb><rt>は</rt></ruby>た知ることなきや？」死後の知覚の有無、あるいは<ruby><rb>霊魂</rb><rt>れいこん</rt></ruby>の滅不滅についての疑問である。<persName ref="#koshi">孔子</persName>がまた妙な返辞をした。「死者知るありと言わんとすれば、まさに孝子順孫、生を<ruby><rb>妨</rb><rt>さまた</rt></ruby>げてもって死を送らんとすることを恐る。死者知るなしと言わんとすれば、まさに不孝の子その親を<ruby><rb>棄</rb><rt>す</rt></ruby>てて<ruby><rb>葬</rb><rt>ほうむ</rt></ruby>らざらんとすることを恐る。」およそ見当違いの返辞なので<persName ref="#shiko">子貢</persName>は<ruby><rb>甚</rb><rt>はなは</rt></ruby>だ不服だった。もちろん、<persName ref="#shiko">子貢</persName>の質問の意味は良く<ruby><rb>判</rb><rt>わか</rt></ruby>っているが、あくまで現実主義者、日常生活中心主義者たる<persName ref="#koshi">孔子</persName>は、この優れた弟子の関心の方向を<ruby><rb>換</rb><rt>か</rt></ruby>えようとしたのである。</p>
+        <p><persName ref="#shiko">子貢</persName>は不満だったので、<persName ref="#shiro">子路</persName>にこの話をした。<persName ref="#shiro">子路</persName>は別にそんな問題に興味は無かったが、死そのものよりも師の死生観を知りたい気がちょっとしたので、ある時死について<ruby><rb>訊</rb><rt>たず</rt></ruby>ねてみた。</p>
+        <p>「いまだ生を知らず。いずくんぞ死を知らん。」これが<persName ref="#koshi">孔子</persName>の答であった。</p>
+        <p>全くだ！　と<persName ref="#shiro">子路</persName>はすっかり感心した。しかし、<persName ref="#shiko">子貢</persName>はまたしても<ruby><rb>鮮</rb><rt>あざ</rt></ruby>やかに<ruby><rb>肩透</rb><rt>かたすか</rt></ruby>しを喰ったような気がした。それはそうです。しかし私の言っているのはそんな事ではない。明らかにそう言っている<persName ref="#shiko">子貢</persName>の表情である。</p>
+        <p>九</p>
+        <p><ruby><rb>衛</rb><rt>えい</rt></ruby>の霊公は極めて意志の弱い君主である。賢と不才とを識別し得ないほど愚かではないのだが、結局は苦い<ruby><rb>諫言</rb><rt>かんげん</rt></ruby>よりも甘い<ruby><rb>諂諛</rb><rt>てんゆ</rt></ruby>に<ruby><rb>欣</rb><rt>よろこ</rt></ruby>ばされてしまう。衛の国政を左右するものはその後宮であった。</p>
+        <p>夫人<persName ref="#nanshi"><ruby><rb>南子</rb><rt>なんし</rt></ruby></persName>はつとに<ruby><rb>淫奔</rb><rt>いんぽん</rt></ruby>の噂が高い。まだ<placeName ref="#song"><ruby><rb>宋</rb><rt>そう</rt></ruby></placeName>の公女だった頃異母兄の<ruby><rb>朝</rb><rt>ちょう</rt></ruby>という有名な美男と通じていたが、衛侯の夫人となってからもなお<persName ref="#socho">宋朝</persName>を衛に呼び大夫に任じてこれと<ruby><rb>醜</rb><rt>しゅう</rt></ruby>関係を続けている。すこぶる才走った女で、政治<ruby><rb>向</rb><rt>むき</rt></ruby>の事にまで<ruby><rb>容喙</rb><rt>ようかい</rt></ruby>するが、霊公はこの夫人の言葉なら<ruby><rb>頷</rb><rt>うなず</rt></ruby>かぬことはない。霊公に<ruby><rb>聴</rb><rt>き</rt></ruby>かれようとする者はまず<persName ref="#nanshi">南子</persName>に取入るのが例であった。</p>
+        <p><persName ref="#koshi">孔子</persName>が<placeName ref="#lu">魯</placeName>から衛に入った時、召を受けて霊公には<ruby><rb>謁</rb><rt>えっ</rt></ruby>したが、夫人の所へは別に<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>に出なかった。<persName ref="#nanshi">南子</persName>が<ruby><rb>冠</rb><rt>かんむり</rt></ruby>を曲げた。<ruby><rb>早速</rb><rt>さっそく</rt></ruby>人を<ruby><rb>遣</rb><rt>つか</rt></ruby>わして<persName ref="#koshi">孔子</persName>に言わしめる。四方の君子、<ruby><rb>寡君</rb><rt>かくん</rt></ruby>と兄弟たらんと欲する者は、必ず<ruby><rb>寡小君</rb><rt>かしょうくん</rt></ruby>（夫人）を見る。寡小君見んことを願えり云々。</p>
+        <p><persName ref="#koshi">孔子</persName>もやむをえず挨拶に出た。<persName ref="#nanshi">南子</persName>は<ruby><rb>絺帷</rb><rt>ちい</rt></ruby>（<ruby><rb>薄</rb><rt>うす</rt></ruby>い<ruby><rb>葛布</rb><rt>くずぬの</rt></ruby>の垂れぎぬ）の後に在って<persName ref="#koshi">孔子</persName>を引見する。<persName ref="#koshi">孔子</persName>の<ruby><rb>北面稽首</rb><rt>ほくめんけいしゅ</rt></ruby>の礼に対し、<persName ref="#nanshi">南子</persName>が再拝して<ruby><rb>応</rb><rt>こた</rt></ruby>えると、夫人の身に着けた<ruby><rb>環佩</rb><rt>かんぱい</rt></ruby>が<ruby><rb>璆然</rb><rt>きゅうぜん</rt></ruby>として鳴ったとある。</p>
+        <p><persName ref="#koshi">孔子</persName>が公宮から帰って来ると、<persName ref="#shiro">子路</persName>が<ruby><rb>露骨</rb><rt>ろこつ</rt></ruby>に不愉快な顔をしていた。彼は、<persName ref="#koshi">孔子</persName>が<persName ref="#nanshi">南子</persName><ruby><rb>風情</rb><rt>ふぜい</rt></ruby>の要求などは<ruby><rb>黙殺</rb><rt>もくさつ</rt></ruby>することを望んでいたのである。まさか<persName ref="#koshi">孔子</persName>が<ruby><rb>妖婦</rb><rt>ようふ</rt></ruby>にたぶらかされるとは思いはしない。しかし、絶対<ruby><rb>清浄</rb><rt>せいじょう</rt></ruby>であるはずの夫子が汚らわしい淫女に頭を下げたというだけで既に面白くない。美玉を愛蔵する者がその<ruby><rb>珠</rb><rt>たま</rt></ruby>の<ruby><rb>表面</rb><rt>おもて</rt></ruby>に不浄なるものの<ruby><rb>影</rb><rt>かげ</rt></ruby>の映るのさえ避けたい<ruby><rb>類</rb><rt>たぐい</rt></ruby>なのであろう。<persName ref="#koshi">孔子</persName>はまた、<persName ref="#shiro">子路</persName>の中で相当<ruby><rb>敏腕</rb><rt>びんわん</rt></ruby>な実際家と<ruby><rb>隣</rb><rt>とな</rt></ruby>り合って住んでいる大きな子供が、いつまでたっても一向老成しそうもないのを見て、<ruby><rb>可笑</rb><rt>おか</rt></ruby>しくもあり、困りもするのである。</p>
+        <p>一日、霊公の所から<persName ref="#koshi">孔子</persName>へ使が来た。車で<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に都を<ruby><rb>一巡</rb><rt>いちじゅん</rt></ruby>しながら色々話を<ruby><rb>承</rb><rt>うけたまわ</rt></ruby>ろうと云う。<persName ref="#koshi">孔子</persName>は欣んで服を改め直ちに出掛けた。</p>
+        <p>この<ruby><rb>丈</rb><rt>たけ</rt></ruby>の高いぶっきらぼうな<ruby><rb>爺</rb><rt>じい</rt></ruby>さんを、霊公が<ruby><rb>無闇</rb><rt>むやみ</rt></ruby>に賢者として尊敬するのが、<persName ref="#nanshi">南子</persName>には面白くない。自分を出し抜いて、二人同車して都を<ruby><rb>巡</rb><rt>めぐ</rt></ruby>るなどとはもっての外である。</p>
+        <p><persName ref="#koshi">孔子</persName>が公に謁し、さて表に出て共に車に乗ろうとすると、そこには既に<ruby><rb>盛装</rb><rt>せいそう</rt></ruby>を<ruby><rb>凝</rb><rt>こ</rt></ruby>らした<persName ref="#nanshi">南子</persName>夫人が乗込んでいた。<persName ref="#koshi">孔子</persName>の席が無い。<persName ref="#nanshi">南子</persName>は意地の悪い微笑を<ruby><rb>含</rb><rt>ふく</rt></ruby>んで霊公を見る。<persName ref="#koshi">孔子</persName>もさすがに不愉快になり、冷やかに公の様子を<ruby><rb>窺</rb><rt>うかが</rt></ruby>う。霊公は面目無げに目を<ruby><rb>俯</rb><rt>ふ</rt></ruby>せ、しかし<persName ref="#nanshi">南子</persName>には何事も言えない。<ruby><rb>黙</rb><rt>だま</rt></ruby>って<persName ref="#koshi">孔子</persName>のために次の車を<ruby><rb>指</rb><rt>ゆび</rt></ruby>さす。</p>
+        <p>二乗の車が衛の都を行く。前なる四輪の<ruby><rb>豪奢</rb><rt>ごうしゃ</rt></ruby>な馬車には、霊公と<ruby><rb>並</rb><rt>なら</rt></ruby>んで<ruby><rb>嬋妍</rb><rt>せんけん</rt></ruby>たる<persName ref="#nanshi">南子</persName>夫人の姿が<ruby><rb>牡丹</rb><rt>ぼたん</rt></ruby>の花のように<ruby><rb>輝</rb><rt>かがや</rt></ruby>く。<ruby><rb>後</rb><rt>うしろ</rt></ruby>の見すぼらしい二輪の牛車には、<ruby><rb>寂</rb><rt>さび</rt></ruby>しげな<persName ref="#koshi">孔子</persName>の顔が<ruby><rb>端然</rb><rt>たんぜん</rt></ruby>と正面を向いている。沿道の民衆の間にはさすがに<ruby><rb>秘</rb><rt>ひそ</rt></ruby>やかな<ruby><rb>嘆声</rb><rt>たんせい</rt></ruby>と<ruby><rb>顰蹙</rb><rt>ひんしゅく</rt></ruby>とが起る。</p>
+        <p>群集の間に交って<persName ref="#shiro">子路</persName>もこの様子を見た。公からの使を受けた時の夫子の欣びを目にしているだけに、<ruby><rb>腸</rb><rt>はらわた</rt></ruby>の<ruby><rb>煮</rb><rt>に</rt></ruby>え返る思いがするのだ。何事か<ruby><rb>嬌声</rb><rt>きょうせい</rt></ruby>を<ruby><rb>弄</rb><rt>ろう</rt></ruby>しながら<persName ref="#nanshi">南子</persName>が目の前を進んで行く。思わず<ruby><rb>嚇</rb><rt>かっ</rt></ruby>となって、彼は拳を固め人々を押分けて飛出そうとする。<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から引留める者がある。<ruby><rb>振切</rb><rt>ふりき</rt></ruby>ろうと眼を<ruby><rb>瞋</rb><rt>いか</rt></ruby>らせて後を向く。<persName ref="#shijaku"><ruby><rb>子若</rb><rt>しじゃく</rt></ruby></persName>と<persName ref="#shisei"><ruby><rb>子正</rb><rt>しせい</rt></ruby></persName>の二人である。必死に<persName ref="#shiro">子路</persName>の<ruby><rb>袖</rb><rt>そで</rt></ruby>を<ruby><rb>控</rb><rt>ひか</rt></ruby>えている二人の眼に、涙の宿っているのを<persName ref="#shiro">子路</persName>は見た。<persName ref="#shiro">子路</persName>は、ようやく振上げた拳を下す。</p>
+        <p>翌日、<persName ref="#koshi">孔子</persName>等の一行は衛を去った。「我いまだ徳を好むこと色を好むがごとき者を見ざるなり。」というのが、その時の<persName ref="#koshi">孔子</persName>の嘆声である。</p>
+        <p>十</p>
+        <p><persName ref="#shokoshiko"><ruby><rb>葉公</rb><rt>しょうこう</rt></ruby><ruby><rb>子高</rb><rt>しこう</rt></ruby></persName>は<ruby><rb>竜</rb><rt>りゅう</rt></ruby>を好むこと甚だしい。居室にも竜を<ruby><rb>雕</rb><rt>ほ</rt></ruby>り<ruby><rb>繍帳</rb><rt>しゅうちょう</rt></ruby>にも竜を画き、日常竜の中に<ruby><rb>起臥</rb><rt>きが</rt></ruby>していた。これを聞いたほん<ruby><rb>物</rb><rt>もの</rt></ruby>の天竜が大きに欣んで一日<persName ref="#shokoshiko">葉公</persName>の家に<ruby><rb>降</rb><rt>くだ</rt></ruby>り<ruby><rb>己</rb><rt>おのれ</rt></ruby>の愛好者を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>き見た。頭は<ruby><rb>牖</rb><rt>まど</rt></ruby>に<ruby><rb>窺</rb><rt>うかが</rt></ruby>い<ruby><rb>尾</rb><rt>お</rt></ruby>は堂に<ruby><rb>拖</rb><rt>ひ</rt></ruby>くという素晴らしい大きさである。<persName ref="#shokoshiko">葉公</persName>はこれを見るや<ruby><rb>怖</rb><rt>おそ</rt></ruby>れわなないて<ruby><rb>逃</rb><rt>に</rt></ruby>げ走った。その<ruby><rb>魂魄</rb><rt>こんぱく</rt></ruby>を失い<ruby><rb>五色主無</rb><rt>ごしきしゅな</rt></ruby>し、という意気地無さであった。</p>
+        <p>諸侯は<persName ref="#koshi">孔子</persName>の賢の名を好んで、その実を欣ばぬ。いずれも<persName ref="#shokoshiko">葉公</persName>の竜における類である。実際の<persName ref="#koshi">孔子</persName>は余りに彼等には大き過ぎるもののように見えた。<persName ref="#koshi">孔子</persName>を<ruby><rb>国賓</rb><rt>こくひん</rt></ruby>として<ruby><rb>遇</rb><rt>ぐう</rt></ruby>しようという国はある。<persName ref="#koshi">孔子</persName>の弟子の<ruby><rb>幾人</rb><rt>いくにん</rt></ruby>かを用いた国もある。が、<persName ref="#koshi">孔子</persName>の政策を実行しようとする国はどこにも無い。<ruby><rb>匡</rb><rt>きょう</rt></ruby>では暴民の<ruby><rb>凌辱</rb><rt>りょうじょく</rt></ruby>を受けようとし、<placeName ref="#song">宋</placeName>では<ruby><rb>姦臣</rb><rt>かんしん</rt></ruby>の<ruby><rb>迫害</rb><rt>はくがい</rt></ruby>に<ruby><rb>遭</rb><rt>あ</rt></ruby>い、<placeName ref="#ho"><ruby><rb>蒲</rb><rt>ほ</rt></ruby></placeName>ではまた<ruby><rb>兇漢</rb><rt>きょうかん</rt></ruby>の<ruby><rb>襲撃</rb><rt>しゅうげき</rt></ruby>を受ける。諸侯の敬遠と<ruby><rb>御用</rb><rt>ごよう</rt></ruby>学者の嫉視と政治家連の<ruby><rb>排斥</rb><rt>はいせき</rt></ruby>とが、<persName ref="#koshi">孔子</persName>を待ち受けていたもののすべてである。</p>
+        <p>それでもなお、講誦を止めず<ruby><rb>切磋</rb><rt>せっさ</rt></ruby>を<ruby><rb>怠</rb><rt>おこた</rt></ruby>らず、<persName ref="#koshi">孔子</persName>と弟子達とは<ruby><rb>倦</rb><rt>う</rt></ruby>まずに国々への旅を続けた。「鳥よく木を<ruby><rb>択</rb><rt>えら</rt></ruby>ぶ。木<ruby><rb>豈</rb><rt>あ</rt></ruby>に鳥を択ばんや。」などと至って気位は高いが、決して世を<ruby><rb>拗</rb><rt>す</rt></ruby>ねたのではなく、あくまで用いられんことを求めている。そして、<ruby><rb>己等</rb><rt>おのれら</rt></ruby>の用いられようとするのは己がために非ずして天下のため、道のためなのだと本気で――全く<ruby><rb>呆</rb><rt>あき</rt></ruby>れたことに本気でそう考えている。乏しくとも常に明るく、苦しくとも望を捨てない。誠に不思議な一行であった。</p>
+        <p>一行が招かれて<placeName ref="#chu"><ruby><rb>楚</rb><rt>そ</rt></ruby></placeName>の昭王の<ruby><rb>許</rb><rt>もと</rt></ruby>へ行こうとした時、<placeName ref="#chen"><ruby><rb>陳</rb><rt>ちん</rt></ruby></placeName>・<placeName ref="#cai"><ruby><rb>蔡</rb><rt>さい</rt></ruby></placeName>の大夫共が相計り秘かに暴徒を集めて<persName ref="#koshi">孔子</persName>等を途に囲ましめた。<persName ref="#koshi">孔子</persName>の<placeName ref="#chu">楚</placeName>に用いられることを<ruby><rb>惧</rb><rt>おそ</rt></ruby>れこれを妨げようとしたのである。暴徒に襲われるのはこれが始めてではなかったが、この時は最も困窮に<ruby><rb>陥</rb><rt>おちい</rt></ruby>った。<ruby><rb>糧道</rb><rt>りょうどう</rt></ruby>が絶たれ、一同火食せざること七日に<ruby><rb>及</rb><rt>およ</rt></ruby>んだ。さすがに、<ruby><rb>餒</rb><rt>う</rt></ruby>え、<ruby><rb>疲</rb><rt>つか</rt></ruby>れ、病者も続出する。弟子達の<ruby><rb>困憊</rb><rt>こんぱい</rt></ruby>と<ruby><rb>恐惶</rb><rt>きょうこう</rt></ruby>との間に在って<persName ref="#koshi">孔子</persName>は独り気力少しも<ruby><rb>衰</rb><rt>おとろ</rt></ruby>えず、平生通り絃歌して<ruby><rb>輟</rb><rt>や</rt></ruby>まない。従者等の<ruby><rb>疲憊</rb><rt>ひはい</rt></ruby>を見るに見かねた<persName ref="#shiro">子路</persName>が、いささか色を<ruby><rb>作</rb><rt>な</rt></ruby>して、絃歌する<persName ref="#koshi">孔子</persName>の<ruby><rb>側</rb><rt>そば</rt></ruby>に行った。そうして訊ねた。夫子の歌うは礼かと。<persName ref="#koshi">孔子</persName>は答えない。絃を操る手も休めない。さて曲が終ってからようやく言った。</p>
+        <p>「<ruby><rb>由</rb><rt>ゆう</rt></ruby>よ。<ruby><rb>吾</rb><rt>われ</rt></ruby>汝に告げん。君子<ruby><rb>楽</rb><rt>がく</rt></ruby>を好むは<ruby><rb>驕</rb><rt>おご</rt></ruby>るなきがためなり。小人楽を好むは<ruby><rb>懾</rb><rt>おそ</rt></ruby>るるなきがためなり。それ<ruby><rb>誰</rb><rt>だれ</rt></ruby>の子ぞや。我を知らずして我に従う者は。」</p>
+        <p><persName ref="#shiro">子路</persName>は<ruby><rb>一瞬</rb><rt>いっしゅん</rt></ruby>耳を疑った。この窮境に在ってなお驕るなきがために楽をなすとや？　しかし、すぐにその心に思い<ruby><rb>到</rb><rt>いた</rt></ruby>ると、<ruby><rb>途端</rb><rt>とたん</rt></ruby>に彼は嬉しくなり、覚えず<ruby><rb>戚</rb><rt>ほこ</rt></ruby>を執って<ruby><rb>舞</rb><rt>ま</rt></ruby>うた。<persName ref="#koshi">孔子</persName>がこれに和して弾じ、曲、<ruby><rb>三度</rb><rt>みたび</rt></ruby>めぐった。傍にある者またしばらくは<ruby><rb>飢</rb><rt>うえ</rt></ruby>を忘れ疲を忘れて、この武骨な<ruby><rb>即興</rb><rt>そっきょう</rt></ruby>の<ruby><rb>舞</rb><rt>まい</rt></ruby>に興じ入るのであった。</p>
+        <p>同じ<placeName ref="#chen">陳</placeName><placeName ref="#cai">蔡</placeName>の<ruby><rb>厄</rb><rt>やく</rt></ruby>の時、いまだ容易に囲みの解けそうもないのを見て、<persName ref="#shiro">子路</persName>が言った。君子も窮することあるか？　と。師の平生の説によれば、君子は窮することが無いはずだと思ったからである。<persName ref="#koshi">孔子</persName>が即座に答えた。「窮するとは道に窮するの<ruby><rb>謂</rb><rt>いい</rt></ruby>に非ずや。今、<persName ref="#koshi"><ruby><rb>丘</rb><rt>きゅう</rt></ruby></persName>、仁義の道を抱き乱世の患に遭う。何ぞ窮すとなさんや。もしそれ、食足らず体<ruby><rb>瘁</rb><rt>つか</rt></ruby>るるをもって窮すとなさば、君子ももとより窮す。<ruby><rb>但</rb><rt>ただ</rt></ruby>、小人は窮すればここに<ruby><rb>濫</rb><rt>みだ</rt></ruby>る。」と。そこが違うだけだというのである。<persName ref="#shiro">子路</persName>は思わず顔を<ruby><rb>赧</rb><rt>あか</rt></ruby>らめた。己の内なる小人を指摘された心地である。窮するも命なることを知り、大難に臨んでいささかの興奮の色も無い<persName ref="#koshi">孔子</persName>の<ruby><rb>容</rb><rt>すがた</rt></ruby>を見ては、大勇なる<ruby><rb>哉</rb><rt>かな</rt></ruby>と嘆ぜざるを得ない。かつての自分の<ruby><rb>誇</rb><rt>ほこり</rt></ruby>であった・<ruby><rb>白刃</rb><rt>はくじん</rt></ruby><ruby><rb>前</rb><rt>まえ</rt></ruby>に<ruby><rb>接</rb><rt>まじ</rt></ruby>わるも目まじろがざる<ruby><rb>底</rb><rt>てい</rt></ruby>の勇が、何と<ruby><rb>惨</rb><rt>みじ</rt></ruby>めにちっぽけなことかと思うのである。</p>
+        <p>十一</p>
+        <p><ruby><rb>許</rb><rt>きょ</rt></ruby>から<ruby><rb>葉</rb><rt>しょう</rt></ruby>へと出る途すがら、<persName ref="#shiro">子路</persName>が独り<persName ref="#koshi">孔子</persName>の一行に<ruby><rb>遅</rb><rt>おく</rt></ruby>れて畑中の<ruby><rb>路</rb><rt>みち</rt></ruby>を歩いて行くと、<ruby><rb>蓧</rb><rt>あじか</rt></ruby>を<ruby><rb>荷</rb><rt>にな</rt></ruby>うた一人の老人に会った。<persName ref="#shiro">子路</persName>が気軽に<ruby><rb>会釈</rb><rt>えしゃく</rt></ruby>して、夫子を見ざりしや、と問う。老人は立止って、「夫子夫子と言ったとて、どれが一体汝のいう夫子やら<ruby><rb>俺</rb><rt>おれ</rt></ruby>に<ruby><rb>分</rb><rt>わか</rt></ruby>る訳がないではないか」と<ruby><rb>突堅貪</rb><rt>つっけんどん</rt></ruby>に答え、<persName ref="#shiro">子路</persName>の<ruby><rb>人態</rb><rt>にんてい</rt></ruby>をじろりと眺めてから、「見受けたところ、四体を労せず実事に従わず空理空論に日を<ruby><rb>暮</rb><rt>く</rt></ruby>らしている人らしいな。」と<ruby><rb>蔑</rb><rt>さげす</rt></ruby>むように笑う。それから傍の畑に入りこちらを見返りもせずにせっせと草を取り始めた。<ruby><rb>隠者</rb><rt>いんじゃ</rt></ruby>の一人に違いないと<persName ref="#shiro">子路</persName>は思って<ruby><rb>一揖</rb><rt>いちゆう</rt></ruby>し、道に立って次の言葉を待った。老人は黙って一仕事してから道に出て来、<persName ref="#shiro">子路</persName>を伴って己が家に導いた。既に日が暮れかかっていたのである。老人は雞をつぶし<ruby><rb>黍</rb><rt>きび</rt></ruby>を<ruby><rb>炊</rb><rt>かし</rt></ruby>いで、もてなし、二人の子にも<persName ref="#shiro">子路</persName>を引合せた。食後、いささかの<ruby><rb>濁酒</rb><rt>にごりざけ</rt></ruby>に<ruby><rb>酔</rb><rt>よい</rt></ruby>の<ruby><rb>廻</rb><rt>まわ</rt></ruby>った老人は傍なる琴を執って弾じた。二人の子がそれに和して<ruby><rb>唱</rb><rt>うた</rt></ruby>う。</p>
+        <p><ruby><rb>湛々</rb><rt>タンタン</rt></ruby>タル<ruby><rb>露</rb><rt>ツユ</rt></ruby>アリ</p>
+        <p><ruby><rb>陽</rb><rt>ヒ</rt></ruby>ニ非ザレバ<ruby><rb>晞</rb><rt>ヒ</rt></ruby>ズ</p>
+        <p><ruby><rb>厭々</rb><rt>エンエン</rt></ruby>トシテ夜飲ス</p>
+        <p>酔ハズンバ帰ルコトナシ</p>
+        <p>明らかに貧しい<ruby><rb>生活</rb><rt>くらし</rt></ruby>なのにもかかわらず、まことに<ruby><rb>融々</rb><rt>ゆうゆう</rt></ruby>たる<ruby><rb>裕</rb><rt>ゆた</rt></ruby>かさが家中に<ruby><rb>溢</rb><rt>あふ</rt></ruby>れている。<ruby><rb>和</rb><rt>なご</rt></ruby>やかに充ち足りた親子三人の顔付の中に、時としてどこか知的なものが<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>くのも、<ruby><rb>見逃</rb><rt>みのが</rt></ruby>し難い。</p>
+        <p>弾じ終ってから老人が<persName ref="#shiro">子路</persName>に向って語る。陸を行くには車、水を行くには<ruby><rb>舟</rb><rt>ふね</rt></ruby>と昔から決ったもの。今陸を行くに舟をもってすれば、いかん？　今の世に周の古法を<ruby><rb>施</rb><rt>ほどこ</rt></ruby>そうとするのは、ちょうど陸に舟を<ruby><rb>行</rb><rt>や</rt></ruby>るがごときものと<ruby><rb>謂</rb><rt>い</rt></ruby>うべし。<ruby><rb>猨狙</rb><rt>さる</rt></ruby>に<persName ref="#shuko">周公</persName>の服を着せれば、驚いて<ruby><rb>引裂</rb><rt>ひきさ</rt></ruby>き棄てるに決っている。云々…………<persName ref="#shiro">子路</persName>を孔門の徒と知っての言葉であることは明らかだ。老人はまた言う。「楽しみ全くして始めて志を得たといえる。志を得るとは<ruby><rb>軒冕</rb><rt>けんべん</rt></ruby>の謂ではない。」と。<ruby><rb>澹然無極</rb><rt>たんぜんむきょく</rt></ruby>とでもいうのがこの老人の理想なのであろう。<persName ref="#shiro">子路</persName>にとってこうした<ruby><rb>遁世哲学</rb><rt>とんせいてつがく</rt></ruby>は始めてではない。<persName ref="#chosho"><ruby><rb>長沮</rb><rt>ちょうそ</rt></ruby></persName>・<persName ref="#ketsudeki"><ruby><rb>桀溺</rb><rt>けつでき</rt></ruby></persName>の二人にも<ruby><rb>遇</rb><rt>あ</rt></ruby>った。<placeName ref="#chu">楚</placeName>の<persName ref="#setsuyo"><ruby><rb>接与</rb><rt>せつよ</rt></ruby></persName>という<ruby><rb>佯狂</rb><rt>ようきょう</rt></ruby>の男にも遇ったことがある。しかしこうして彼等の生活の中に入り一夜を共に過したことは、まだ無かった。穏やかな老人の言葉と<ruby><rb>怡々</rb><rt>いい</rt></ruby>たるその容に接している中に、<persName ref="#shiro">子路</persName>は、これもまた一つの美しき生き方には違いないと、幾分の<ruby><rb>羨望</rb><rt>せんぼう</rt></ruby>をさえ感じないではなかった。</p>
+        <p>しかし、彼も黙って相手の言葉に<ruby><rb>頷</rb><rt>うなず</rt></ruby>いてばかりいた訳ではない。「世と<ruby><rb>断</rb><rt>た</rt></ruby>つのはもとより楽しかろうが、人の人たるゆえんは楽しみを<ruby><rb>全</rb><rt>まっと</rt></ruby>うする所にあるのではない。区々たる一身を潔うせんとして大倫を<ruby><rb>紊</rb><rt>みだ</rt></ruby>るのは、人間の道ではない。我々とて、今の世に道の行われない事ぐらいは、とっくに承知している。今の世に道を説くことの危険さも知っている。しかし、道無き世なればこそ、危険を<ruby><rb>冒</rb><rt>おか</rt></ruby>してもなお道を説く必要があるのではないか。」</p>
+        <p>翌朝、<persName ref="#shiro">子路</persName>は老人の家を辞して道を急いだ。みちみち<persName ref="#koshi">孔子</persName>と昨夜の老人とを<ruby><rb>並</rb><rt>なら</rt></ruby>べて考えてみた。<persName ref="#koshi">孔子</persName>の明察があの老人に<ruby><rb>劣</rb><rt>おと</rt></ruby>る訳はない。<persName ref="#koshi">孔子</persName>の<ruby><rb>慾</rb><rt>よく</rt></ruby>があの老人よりも多い訳はない。それでいてなおかつ己を全うする途を棄て道のために天下を周遊していることを思うと、急に、昨夜は一向に感じなかった<ruby><rb>憎悪</rb><rt>ぞうお</rt></ruby>を、あの老人に対して覚え始めた。<ruby><rb>午</rb><rt>ひる</rt></ruby>近く、ようやく、<ruby><rb>遥</rb><rt>はる</rt></ruby>か前方の<ruby><rb>真青</rb><rt>まっさお</rt></ruby>な<ruby><rb>麦畠</rb><rt>むぎばたけ</rt></ruby>の中の道に一団の人影が見えた。その中で特に際立って丈の高い<persName ref="#koshi">孔子</persName>の姿を認め得た時、<persName ref="#shiro">子路</persName>は<ruby><rb>突然</rb><rt>とつぜん</rt></ruby>、何か胸を<ruby><rb>緊</rb><rt>し</rt></ruby>め付けられるような苦しさを感じた。</p>
+        <p>十二</p>
+        <p><placeName ref="#song">宋</placeName>から<placeName ref="#chen">陳</placeName>に出る渡船の上で、<persName ref="#shiko">子貢</persName>と<persName ref="#saiyo">宰予</persName>とが議論をしている。「十室の<ruby><rb>邑</rb><rt>ゆう</rt></ruby>、必ず忠信<persName ref="#koshi"><ruby><rb>丘</rb><rt>きゅう</rt></ruby></persName>がごとき者あり。<persName ref="#koshi">丘</persName>の学を好むに<ruby><rb>如</rb><rt>し</rt></ruby>かざるなり。」という師の言葉を中心に、<persName ref="#shiko">子貢</persName>は、この言葉にもかかわらず<persName ref="#koshi">孔子</persName>の<ruby><rb>偉大</rb><rt>いだい</rt></ruby>な完成はその先天的な素質の<ruby><rb>非凡</rb><rt>ひぼん</rt></ruby>さに<ruby><rb>依</rb><rt>よ</rt></ruby>るものだといい、<persName ref="#saiyo">宰予</persName>は、いや、後天的な自己完成への努力の方が<ruby><rb>与</rb><rt>あずか</rt></ruby>って大きいのだと言う。<persName ref="#saiyo">宰予</persName>によれば、<persName ref="#koshi">孔子</persName>の能力と弟子達の能力との差異は量的なものであって、決して質的なそれではない。<persName ref="#koshi">孔子</persName>の<ruby><rb>有</rb><rt>も</rt></ruby>っているものは万人のもっているものだ。ただその一つ一つを<persName ref="#koshi">孔子</persName>は絶えざる刻苦によって今の大きさにまで仕上げただけのことだと。<persName ref="#shiko">子貢</persName>は、しかし、量的な差も絶大になると結局質的な差と変る所は無いという。それに、自己完成への努力をあれほどまでに続け得ることそれ自体が、既に先天的な非凡さの何よりの<ruby><rb>証拠</rb><rt>しょうこ</rt></ruby>ではないかと。だが、何にも増して<persName ref="#koshi">孔子</persName>の天才の<ruby><rb>核心</rb><rt>かくしん</rt></ruby>たるものは何かといえば、「それは」と<persName ref="#shiko">子貢</persName>が言う。「あの優れた<ruby><rb>中庸</rb><rt>ちゅうよう</rt></ruby>への本能だ。いついかなる場合にも夫子の進退を美しいものにする・見事な中庸への本能だ。」と。</p>
+        <p>何を言ってるんだと、傍で<persName ref="#shiro">子路</persName>が苦い顔をする。口先ばかりで腹の無い奴等め！　今この舟がひっくり返りでもしたら、奴等はどんなに<ruby><rb>真蒼</rb><rt>まっさお</rt></ruby>な顔をするだろう。何といってもいったん有事の際に、実際に夫子の役に立ち得るのはおれなのだ。才弁縦横の若い二人を前にして、巧言は徳を紊るという言葉を考え、<ruby><rb>矜</rb><rt>ほこ</rt></ruby>らかに我が胸中一片の<ruby><rb>氷心</rb><rt>ひょうしん</rt></ruby>を<ruby><rb>恃</rb><rt>たの</rt></ruby>むのである。</p>
+        <p><persName ref="#shiro">子路</persName>にも、しかし、師への不満が必ずしも無い訳ではない。</p>
+        <p><placeName ref="#chen">陳</placeName>の霊公が臣下の妻と通じその女の肌着を身に着けて<ruby><rb>朝</rb><rt>ちょう</rt></ruby>に立ち、それを見せびらかした時、<persName ref="#seiya"><ruby><rb>泄冶</rb><rt>せつや</rt></ruby></persName>という臣が<ruby><rb>諫</rb><rt>いさ</rt></ruby>めて、殺された。百年ばかり以前のこの事件について一人の弟子が<persName ref="#koshi">孔子</persName>に<ruby><rb>尋</rb><rt>たず</rt></ruby>ねたことがある。<persName ref="#seiya">泄冶</persName>の<ruby><rb>正諫</rb><rt>せいかん</rt></ruby>して殺されたのは古の名臣<persName ref="#hikan"><ruby><rb>比干</rb><rt>ひかん</rt></ruby></persName>の諫死と変る所が無い。仁と称して良いであろうかと。<persName ref="#koshi">孔子</persName>が答えた。いや、<persName ref="#hikan">比干</persName>と<persName ref="#chuo"><ruby><rb>紂王</rb><rt>ちゅうおう</rt></ruby></persName>との場合は血縁でもあり、また官から云っても少師であり、従って己の身を捨てて争諫し、殺された後に<persName ref="#chuo">紂王</persName>の<ruby><rb>悔寤</rb><rt>かいご</rt></ruby>するのを期待した訳だ。これは仁と謂うべきであろう。<persName ref="#seiya">泄冶</persName>の霊公におけるは骨肉の親あるにも非ず、位も一大夫に過ぎぬ。君正しからず一国正しからずと知らば、潔く身を退くべきに、身の程をも計らず、区々たる一身をもって一国の<ruby><rb>淫婚</rb><rt>いんこん</rt></ruby>を正そうとした。自ら無駄に生命を<ruby><rb>捐</rb><rt>す</rt></ruby>てたものだ。仁どころの<ruby><rb>騒</rb><rt>さわ</rt></ruby>ぎではないと。</p>
+        <p>その弟子はそう言われて納得して引き下ったが、傍にいた<persName ref="#shiro">子路</persName>にはどうしても<ruby><rb>頷</rb><rt>うなず</rt></ruby>けない。早速、彼は口を出す。仁・不仁はしばらく<ruby><rb>措</rb><rt>お</rt></ruby>く。しかしとにかく一身の<ruby><rb>危</rb><rt>あやう</rt></ruby>きを忘れて一国の<ruby><rb>紊乱</rb><rt>びんらん</rt></ruby>を正そうとした事の中には、智不智を超えた立派なものが在るのではなかろうか。空しく命を捐つなどと言い切れないものが。たとえ結果はどうあろうとも。</p>
+        <p>「<ruby><rb>由</rb><rt>ゆう</rt></ruby>よ。汝には、そういう小義の中にある見事さばかりが眼に付いて、それ以上は<ruby><rb>判</rb><rt>わか</rt></ruby>らぬと見える。古の士は国に道あれば忠を尽くしてもってこれを<ruby><rb>輔</rb><rt>たす</rt></ruby>け、国に道無ければ身を退いてもってこれを避けた。こうした出処進退の見事さはいまだ判らぬと見える。詩に<ruby><rb>曰</rb><rt>い</rt></ruby>う。民<ruby><rb>僻</rb><rt>よこしま</rt></ruby>多き時は自ら<ruby><rb>辟</rb><rt>のり</rt></ruby>を立つることなかれと。<ruby><rb>蓋</rb><rt>けだ</rt></ruby>し、<persName ref="#seiya">泄冶</persName>の場合にあてはまるようだな。」</p>
+        <p>「では」と大分長い間考えた<ruby><rb>後</rb><rt>あと</rt></ruby>で<persName ref="#shiro">子路</persName>が言う。結局この世で最も大切なことは、一身の安全を計ることに在るのか？　身を捨てて義を成すことの中にはないのであろうか？　一人の人間の出処進退の適不適の方が、天下<ruby><rb>蒼生</rb><rt>そうせい</rt></ruby>の安危ということよりも大切なのであろうか？　というのは、今の<persName ref="#seiya">泄冶</persName>がもし眼前の乱倫に<ruby><rb>顰蹙</rb><rt>ひんしゅく</rt></ruby>して身を退いたとすれば、なるほど彼の一身はそれで良いかも知れぬが、<placeName ref="#chen">陳</placeName>国の民にとって一体それが何になろう？　まだしも、無駄とは知りつつも諫死した方が、国民の気風に与える影響から言っても遥かに意味があるのではないか。</p>
+        <p>「それは何も一身の保全ばかりが大切とは言わない。それならば<persName ref="#hikan">比干</persName>を仁人と褒めはしないはずだ。<ruby><rb>但</rb><rt>ただ</rt></ruby>、生命は道のために捨てるとしても捨て時・捨て処がある。それを察するに智をもってするのは、別に<ruby><rb>私</rb><rt>わたくし</rt></ruby>の利のためではない。急いで死ぬるばかりが能ではないのだ。」</p>
+        <p>そう言われれば一応はそんな気がして来るが、やはり釈然としない所がある。身を殺して仁を成すべきことを言いながら、その一方、どこかしら<ruby><rb>明哲</rb><rt>めいてつ</rt></ruby>保身を最上智と考える傾向が、時々師の言説の中に感じられる。それがどうも気になるのだ。他の弟子達がこれを一向に感じないのは、明哲保身主義が彼等に本能として、くっついているからだ。それをすべての<ruby><rb>根柢</rb><rt>こんてい</rt></ruby>とした上での・仁であり義でなければ、彼等には危くて仕方が無いに違いない。</p>
+        <p><persName ref="#shiro">子路</persName>が納得し難げな顔色で立去った時、その後姿を見送りながら、<persName ref="#koshi">孔子</persName>が<ruby><rb>愀然</rb><rt>しゅうぜん</rt></ruby>として言った。<ruby><rb>邦</rb><rt>くに</rt></ruby>に道有る時も直きこと矢のごとし。道無き時もまた矢のごとし。あの男も衛の<persName ref="#shigyo"><ruby><rb>史魚</rb><rt>しぎょ</rt></ruby></persName>の類だな。恐らく、<ruby><rb>尋常</rb><rt>じんじょう</rt></ruby>な死に方はしないであろうと。</p>
+        <p><placeName ref="#chu">楚</placeName>が<placeName ref="#wu"><ruby><rb>呉</rb><rt>ご</rt></ruby></placeName>を<ruby><rb>伐</rb><rt>う</rt></ruby>った時、<persName ref="#koinshoyo"><ruby><rb>工尹商陽</rb><rt>こういんしょうよう</rt></ruby></persName>という者が<placeName ref="#wu">呉</placeName>の師を追うたが、同乗の<persName ref="#oshikishitsu">王子<ruby><rb>棄疾</rb><rt>きしつ</rt></ruby></persName>に「王事なり。子、弓を手にして可なり。」といわれて始めて弓を執り、「子、これを射よ。」と勧められてようやく一人を<ruby><rb>射斃</rb><rt>しゃへい</rt></ruby>した。しかしすぐにまた弓を<ruby><rb>韔</rb><rt>かわぶくろ</rt></ruby>に収めてしまった。再び<ruby><rb>促</rb><rt>うなが</rt></ruby>されてまた弓を取出し、あと二人を<ruby><rb>斃</rb><rt>たお</rt></ruby>したが、一人を射るごとに目を<ruby><rb>掩</rb><rt>おお</rt></ruby>うた。さて三人を斃すと、「自分の今の身分ではこの位で充分反命するに足るだろう。」とて、車を返した。</p>
+        <p>この話を<persName ref="#koshi">孔子</persName>が伝え聞き、「人を殺すの中、また礼あり。」と感心した。<persName ref="#shiro">子路</persName>に言わせれば、しかし、こんなとんでもない話はない。殊に、「自分としては三人斃した位で充分だ。」などという言葉の中に、彼の大嫌いな・一身の行動を国家の休戚より上に置く考え方が余りにハッキリしているので、腹が立つのである。彼は<ruby><rb>怫然</rb><rt>ふつぜん</rt></ruby>として<persName ref="#koshi">孔子</persName>に喰って掛かる。「人臣の節、君の大事に当りては、ただ力の及ぶ所を尽くし、死して<ruby><rb>而</rb><rt>しこう</rt></ruby>して後に<ruby><rb>已</rb><rt>や</rt></ruby>む。夫子何ぞ彼を善しとする？」<persName ref="#koshi">孔子</persName>もさすがにこれには一言も無い。笑いながら答える。「<ruby><rb>然</rb><rt>しか</rt></ruby>り。汝の言のごとし。<ruby><rb>吾</rb><rt>われ</rt></ruby>、ただその、人を殺すに<ruby><rb>忍</rb><rt>しの</rt></ruby>びざるの心あるを取るのみ。」</p>
+        <p>十三</p>
+        <p>衛に出入すること四度、<placeName ref="#chen">陳</placeName>に留まること三年、<placeName ref="#cao"><ruby><rb>曹</rb><rt>そう</rt></ruby></placeName>・<placeName ref="#song">宋</placeName>・<placeName ref="#cai">蔡</placeName>・葉・<placeName ref="#chu">楚</placeName>と、<persName ref="#shiro">子路</persName>は<persName ref="#koshi">孔子</persName>に従って歩いた。</p>
+        <p><persName ref="#koshi">孔子</persName>の道を実行に移してくれる諸侯が出て来ようとは、今更望めなかったが、しかし、もはや不思議に<persName ref="#shiro">子路</persName>はいらだたない。世の<ruby><rb>溷濁</rb><rt>こんだく</rt></ruby>と諸侯の無能と<persName ref="#koshi">孔子</persName>の不遇とに対する<ruby><rb>憤懣</rb><rt>ふんまん</rt></ruby><ruby><rb>焦躁</rb><rt>しょうそう</rt></ruby>を幾年か<ruby><rb>繰返</rb><rt>くりかえ</rt></ruby>した後、ようやくこの頃になって、漠然とながら、<persName ref="#koshi">孔子</persName>及びそれに従う自分等の運命の意味が判りかけて来たようである。それは、消極的に命なりと諦める気持とは大分遠い。同じく命なりと云うにしても、「一小国に限定されない・一時代に限られない・天下万代の<ruby><rb>木鐸</rb><rt>ぼくたく</rt></ruby>」としての使命に目覚めかけて来た・かなり積極的な命なりである。<ruby><rb>匡</rb><rt>きょう</rt></ruby>の地で暴民に囲まれた時<ruby><rb>昂然</rb><rt>こうぜん</rt></ruby>として<persName ref="#koshi">孔子</persName>の言った「天のいまだ<ruby><rb>斯文</rb><rt>しぶん</rt></ruby>を<ruby><rb>喪</rb><rt>ほろぼ</rt></ruby>さざるや<ruby><rb>匡人</rb><rt>きょうひと</rt></ruby>それ<ruby><rb>予</rb><rt>われ</rt></ruby>をいかんせんや」が、今は<persName ref="#shiro">子路</persName>にも実に良く<ruby><rb>解</rb><rt>わか</rt></ruby>って来た。いかなる場合にも絶望せず、決して現実を軽蔑せず、与えられた範囲で常に最善を尽くすという師の<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>の大きさも判るし、常に後世の人に見られていることを意識しているような<persName ref="#koshi">孔子</persName>の<ruby><rb>挙措</rb><rt>きょそ</rt></ruby>の意味も今にして始めて頷けるのである。あり余る俗才に妨げられてか、明敏<persName ref="#shiko">子貢</persName>には、<persName ref="#koshi">孔子</persName>のこの超時代的な使命についての自覚が少い。<ruby><rb>朴直</rb><rt>ぼくちょく</rt></ruby><persName ref="#shiro">子路</persName>の方が、その単純極まる師への愛情の故であろうか、かえって<persName ref="#koshi">孔子</persName>というものの大きな意味をつかみ得たようである。</p>
+        <p>放浪の年を重ねている中に、<persName ref="#shiro">子路</persName>ももはや五十歳であった。<ruby><rb>圭角</rb><rt>けいかく</rt></ruby>がとれたとは称し難いながら、さすがに人間の重みも加わった。後世のいわゆる「<ruby><rb>万鍾</rb><rt>ばんしょう</rt></ruby>我において何をか加えん」の気骨も、炯々たるその眼光も、<ruby><rb>痩浪人</rb><rt>やせろうにん</rt></ruby>の<ruby><rb>徒</rb><rt>いたず</rt></ruby>らなる<ruby><rb>誇負</rb><rt>こふ</rt></ruby>から離れて、既に堂々たる一家の風格を備えて来た。</p>
+        <p>十四</p>
+        <p><persName ref="#koshi">孔子</persName>が四度目に衛を訪れた時、若い衛侯や正卿<persName ref="#kogyo"><ruby><rb>孔叔圉</rb><rt>こうしゅくぎょ</rt></ruby></persName>等から<ruby><rb>乞</rb><rt>こ</rt></ruby>われるままに、<persName ref="#shiro">子路</persName>を推してこの国に仕えさせた。<persName ref="#koshi">孔子</persName>が十余年ぶりで故国に<ruby><rb>聘</rb><rt>むか</rt></ruby>えられた時も、<persName ref="#shiro">子路</persName>は別れて衛に留まったのである。</p>
+        <p>十年来、衛は<persName ref="#nanshi">南子</persName>夫人の乱行を中心に、絶えず<ruby><rb>紛争</rb><rt>ふんそう</rt></ruby>を重ねていた。まず<persName ref="#koshukuju"><ruby><rb>公叔戍</rb><rt>こうしゅくじゅ</rt></ruby></persName>という者が<persName ref="#nanshi">南子</persName>排斥を<ruby><rb>企</rb><rt>くわだ</rt></ruby>てかえってその<ruby><rb>讒</rb><rt>ざん</rt></ruby>に遭って<placeName ref="#lu">魯</placeName>に亡命する。続いて霊公の子・太子<persName ref="#kaikai"><ruby><rb>蒯聵</rb><rt>かいがい</rt></ruby></persName>も義母<persName ref="#nanshi">南子</persName>を<ruby><rb>刺</rb><rt>さ</rt></ruby>そうとして失敗し<placeName ref="#jin">晋</placeName>に<ruby><rb>奔</rb><rt>はし</rt></ruby>る。太子欠位の中に霊公が<ruby><rb>卒</rb><rt>しゅっ</rt></ruby>する。やむをえず亡命太子の子の幼い<persName ref="#ei-shukko"><ruby><rb>輒</rb><rt>ちょう</rt></ruby></persName>を立てて後を<ruby><rb>嗣</rb><rt>つ</rt></ruby>がせる。<persName ref="#ei-shukko"><ruby><rb>出公</rb><rt>しゅつこう</rt></ruby></persName>がこれである。<ruby><rb>出奔</rb><rt>しゅっぽん</rt></ruby>した前太子<persName ref="#kaikai">蒯聵</persName>は<placeName ref="#jin">晋</placeName>の力を借りて衛の西部に<ruby><rb>潜入</rb><rt>せんにゅう</rt></ruby>し<ruby><rb>虎視眈々</rb><rt>こしたんたん</rt></ruby>と衛侯の位を窺う。これを<ruby><rb>拒</rb><rt>こば</rt></ruby>もうとする現衛侯<persName ref="#ei-shukko">出公</persName>は子。位を<ruby><rb>奪</rb><rt>うば</rt></ruby>おうと<ruby><rb>狙</rb><rt>ねら</rt></ruby>う者は父。<persName ref="#shiro">子路</persName>が仕えることになった衛の国はこのような状態であった。</p>
+        <p><persName ref="#shiro">子路</persName>の仕事は<ruby><rb>孔家</rb><rt>こうけ</rt></ruby>のために宰として<placeName ref="#ho"><ruby><rb>蒲</rb><rt>ほ</rt></ruby></placeName>の地を治めることである。衛の孔家は、<placeName ref="#lu">魯</placeName>ならば季孫氏に当る名家で、当主<persName ref="#kogyo">孔叔圉</persName>はつとに名大夫の<ruby><rb>誉</rb><rt>ほまれ</rt></ruby>が高い。<placeName ref="#ho">蒲</placeName>は、先頃<persName ref="#nanshi">南子</persName>の讒に遭って亡命した<persName ref="#koshukuju">公叔戍</persName>の旧領地で、従って、主人を<ruby><rb>逐</rb><rt>お</rt></ruby>うた現在の政府に対してことごとに反抗的な態度を執っている。元々<ruby><rb>人気</rb><rt>じんき</rt></ruby>の<ruby><rb>荒</rb><rt>あら</rt></ruby>い土地で、かつて<persName ref="#shiro">子路</persName>自身も<persName ref="#koshi">孔子</persName>に従ってこの地で暴民に襲われたことがある。</p>
+        <p>任地に立つ前、<persName ref="#shiro">子路</persName>は<persName ref="#koshi">孔子</persName>の所に行き、「邑に壮士多くして治め難し」といわれる<placeName ref="#ho">蒲</placeName>の事情を述べて教を<ruby><rb>乞</rb><rt>こ</rt></ruby>うた。<persName ref="#koshi">孔子</persName>が言う。「<ruby><rb>恭</rb><rt>きょう</rt></ruby>にして敬あらばもって勇を<ruby><rb>懾</rb><rt>おそ</rt></ruby>れしむべく、<ruby><rb>寛</rb><rt>かん</rt></ruby>にして正しからばもって強を懐くべく、温にして断ならばもって姦を<ruby><rb>抑</rb><rt>おさ</rt></ruby>うべし」と。<persName ref="#shiro">子路</persName>再拝して謝し、<ruby><rb>欣然</rb><rt>きんぜん</rt></ruby>として任に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>いた。</p>
+        <p><placeName ref="#ho">蒲</placeName>に着くと<persName ref="#shiro">子路</persName>はまず土地の有力者、反抗分子等を呼び、これと腹蔵なく語り合った。手なずけようとの手段ではない。<persName ref="#koshi">孔子</persName>の常に言う「教えずして<ruby><rb>刑</rb><rt>けい</rt></ruby>することの不可」を知るが故に、まず彼等に己の意の在る所を明かしたのである。気取の無い率直さが荒っぽい土地の人気に投じたらしい。壮士連はことごとく<persName ref="#shiro">子路</persName>の明快闊達に推服した。それにこの頃になると、既に<persName ref="#shiro">子路</persName>の名は孔門<ruby><rb>随一</rb><rt>ずいいち</rt></ruby>の快男児として天下に<ruby><rb>響</rb><rt>ひび</rt></ruby>いていた。「片言もって<ruby><rb>獄</rb><rt>ごく</rt></ruby>を<ruby><rb>折</rb><rt>さだ</rt></ruby>むべきものは、それ<ruby><rb>由</rb><rt>ゆう</rt></ruby>か」などという<persName ref="#koshi">孔子</persName>の<ruby><rb>推奨</rb><rt>すいしょう</rt></ruby>の辞までが、<ruby><rb>大袈裟</rb><rt>おおげさ</rt></ruby>な<ruby><rb>尾鰭</rb><rt>おひれ</rt></ruby>をつけて<ruby><rb>普</rb><rt>あまね</rt></ruby>く知れ<ruby><rb>渡</rb><rt>わた</rt></ruby>っていたのである。<placeName ref="#ho">蒲</placeName>の壮士連を推服せしめたものは、一つには確かにこうした評判でもあった。</p>
+        <p>三年後、<persName ref="#koshi">孔子</persName>がたまたま<placeName ref="#ho">蒲</placeName>を通った。まず領内に入った時、「善い哉、由や、恭敬にして信なり」と言った。進んで邑に入った時、「善い哉、由や、忠信にして寛なり」と言った。いよいよ<persName ref="#shiro">子路</persName>の邸に入るに及んで、「善い哉、由や、明察にして断なり」と言った。<ruby><rb>轡</rb><rt>くつわ</rt></ruby>を執っていた<persName ref="#shiko">子貢</persName>が、いまだ<persName ref="#shiro">子路</persName>を見ずしてこれを褒める理由を聞くと、<persName ref="#koshi">孔子</persName>が答えた。<ruby><rb>已</rb><rt>すで</rt></ruby>にその領域に入れば<ruby><rb>田疇</rb><rt>でんちゅう</rt></ruby>ことごとく治まり<ruby><rb>草莱</rb><rt>そうらい</rt></ruby>甚だ<ruby><rb>辟</rb><rt>ひら</rt></ruby>け<ruby><rb>溝洫</rb><rt>こうきょく</rt></ruby>は深く整っている。治者恭敬にして信なるが故に、民その力を尽くしたからである。その邑に入れば民家の<ruby><rb>牆屋</rb><rt>しょうおく</rt></ruby>は完備し樹木は<ruby><rb>繁茂</rb><rt>はんも</rt></ruby>している。治者忠信にして寛なるが故に、民その営を<ruby><rb>忽</rb><rt>ゆるが</rt></ruby>せにしないからである。さていよいよその庭に至れば甚だ<ruby><rb>清閑</rb><rt>せいかん</rt></ruby>で従者<ruby><rb>僕僮</rb><rt>ぼくどう</rt></ruby>一人として<ruby><rb>命</rb><rt>めい</rt></ruby>に<ruby><rb>違</rb><rt>たが</rt></ruby>う者が無い。治者の言、明察にして断なるが故に、その政が<ruby><rb>紊</rb><rt>みだ</rt></ruby>れないからである。いまだ由を見ずしてことごとくその政を知った訳ではないかと。</p>
+        <p>十五</p>
+        <p><placeName ref="#lu">魯</placeName>の<persName ref="#ro-aiko"><ruby><rb>哀公</rb><rt>あいこう</rt></ruby></persName>が西の<ruby><rb>方</rb><rt>かた</rt></ruby><placeName ref="#taiya"><ruby><rb>大野</rb><rt>たいや</rt></ruby></placeName>に<ruby><rb>狩</rb><rt>かり</rt></ruby>して<ruby><rb>麒麟</rb><rt>きりん</rt></ruby>を<ruby><rb>獲</rb><rt>え</rt></ruby>た頃、<persName ref="#shiro">子路</persName>は一時衛から<placeName ref="#lu">魯</placeName>に帰っていた。その時<placeName ref="#shochu"><ruby><rb>小邾</rb><rt>しょうちゅ</rt></ruby></placeName>の大夫・<ruby><rb>射</rb><rt>えき</rt></ruby>という者が国に<ruby><rb>叛</rb><rt>そむ</rt></ruby>き<placeName ref="#lu">魯</placeName>に来奔した。<persName ref="#shiro">子路</persName>と一面識のあったこの男は、「<persName ref="#shiro">季路</persName>をして我に要せしめば、吾<ruby><rb>盟</rb><rt>ちか</rt></ruby>うことなけん。」と言った。当時の<ruby><rb>慣</rb><rt>なら</rt></ruby>いとして、他国に亡命した者は、その生命の保証をその国に盟ってもらってから始めて安んじて居つくことが出来るのだが、この<placeName ref="#shochu">小邾</placeName>の大夫は「<persName ref="#shiro">子路</persName>さえその保証に立ってくれれば<placeName ref="#lu">魯</placeName>国の<ruby><rb>誓</rb><rt>ちかい</rt></ruby>など<ruby><rb>要</rb><rt>い</rt></ruby>らぬ」というのである。<ruby><rb>諾</rb><rt>だく</rt></ruby>を宿するなし、という<persName ref="#shiro">子路</persName>の信と直とは、それほど世に知られていたのだ。ところが、<persName ref="#shiro">子路</persName>はこの頼をにべも無く<ruby><rb>断</rb><rt>ことわ</rt></ruby>った。ある人が言う。千乗の国の盟をも信ぜずして、ただ<ruby><rb>子</rb><rt>し</rt></ruby>一人の言を信じようという。男児の<ruby><rb>本懐</rb><rt>ほんかい</rt></ruby>これに過ぎたるはあるまいに、なにゆえこれを恥とするのかと。<persName ref="#shiro">子路</persName>が答えた。<placeName ref="#lu">魯</placeName>国が<placeName ref="#shochu">小邾</placeName>と事ある場合、その城下に死ねとあらば、事のいかんを問わず欣んで応じよう。しかし射という男は国を売った不臣だ。もしその保証に立つとなれば、自ら<ruby><rb>売国奴</rb><rt>ばいこくど</rt></ruby>を是認することになる。おれに出来ることか、出来ないことか、考えるまでもないではないか！</p>
+        <p><persName ref="#shiro">子路</persName>を良く知るほどの者は、この話を伝え聞いた時、思わず微笑した。余りにも彼のしそうな事、言いそうな事だったからである。</p>
+        <p>同じ年、<placeName ref="#qi">斉</placeName>の<persName ref="#chinko"><ruby><rb>陳恒</rb><rt>ちんこう</rt></ruby></persName>がその君を<ruby><rb>弑</rb><rt>しい</rt></ruby>した。<persName ref="#koshi">孔子</persName>は<ruby><rb>斎戒</rb><rt>さいかい</rt></ruby>すること三日の後、<persName ref="#ro-aiko">哀公</persName>の前に出て、義のために<placeName ref="#qi">斉</placeName>を<ruby><rb>伐</rb><rt>う</rt></ruby>たんことを請うた。請うこと三度。<placeName ref="#qi">斉</placeName>の強さを恐れた<persName ref="#ro-aiko">哀公</persName>は聴こうとしない。<ruby><rb>季孫</rb><rt>きそん</rt></ruby>に告げて事を計れと言う。<persName ref="#kikoshi"><ruby><rb>季康子</rb><rt>きこうし</rt></ruby></persName>がこれに賛成する訳が無いのだ。<persName ref="#koshi">孔子</persName>は君の前を退いて、さて人に告げて言った。「吾、大夫の<ruby><rb>後</rb><rt>しりえ</rt></ruby>に従うをもってなり。故にあえて言わずんばあらず。」無駄とは知りつつも一応は言わねばならぬ<ruby><rb>己</rb><rt>おのれ</rt></ruby>の地位だというのである。（当時<persName ref="#koshi">孔子</persName>は国老の<ruby><rb>待遇</rb><rt>たいぐう</rt></ruby>を受けていた。）</p>
+        <p><persName ref="#shiro">子路</persName>はちょっと顔を<ruby><rb>曇</rb><rt>くも</rt></ruby>らせた。夫子のした事は、ただ形を<ruby><rb>完</rb><rt>まっと</rt></ruby>うするために過ぎなかったのか。形さえ<ruby><rb>履</rb><rt>ふ</rt></ruby>めば、それが実行に移されないでも平気で済ませる程度の義憤なのか？</p>
+        <p>教を受けること四十年に近くして、なお、この<ruby><rb>溝</rb><rt>みぞ</rt></ruby>はどうしようもないのである。</p>
+        <p>十六</p>
+        <p><persName ref="#shiro">子路</persName>が<placeName ref="#lu">魯</placeName>に来ている間に、衛では政界の大黒柱<persName ref="#kogyo"><ruby><rb>孔叔圉</rb><rt>こうしゅくぎょ</rt></ruby></persName>が死んだ。その未亡人で、亡命太子<persName ref="#kaikai"><ruby><rb>蒯聵</rb><rt>かいがい</rt></ruby></persName>の姉に当る<persName ref="#hakki"><ruby><rb>伯姫</rb><rt>はくき</rt></ruby></persName>という女策士が政治の表面に出て来る。一子<persName ref="#kokai"><ruby><rb>悝</rb><rt>かい</rt></ruby></persName>が父<persName ref="#kogyo"><ruby><rb>圉</rb><rt>ぎょ</rt></ruby></persName>の<ruby><rb>後</rb><rt>あと</rt></ruby>を<ruby><rb>嗣</rb><rt>つ</rt></ruby>いだことにはなっているが、名目だけに過ぎぬ。<persName ref="#hakki">伯姫</persName>から云えば、現衛侯<persName ref="#ei-shukko"><ruby><rb>輒</rb><rt>ちょう</rt></ruby></persName>は<ruby><rb>甥</rb><rt>おい</rt></ruby>、位を窺う前太子は弟で、親しさに変りはないはずだが、<ruby><rb>愛憎</rb><rt>あいぞう</rt></ruby>と利慾との複雑な<ruby><rb>経緯</rb><rt>けいい</rt></ruby>があって、妙に弟のためばかりを計ろうとする。夫の死後<ruby><rb>頻</rb><rt>しき</rt></ruby>りに<ruby><rb>寵愛</rb><rt>ちょうあい</rt></ruby>している<ruby><rb>小姓</rb><rt>こしょう</rt></ruby>上りの<persName ref="#konryofu"><ruby><rb>渾良夫</rb><rt>こんりょうふ</rt></ruby></persName>なる美青年を使として、弟<persName ref="#kaikai">蒯聵</persName>との間を往復させ、秘かに現衛侯<ruby><rb>逐出</rb><rt>おいだ</rt></ruby>しを企んでいる。</p>
+        <p><persName ref="#shiro">子路</persName>が再び衛に<ruby><rb>戻</rb><rt>もど</rt></ruby>ってみると、衛侯父子の争は更に<ruby><rb>激化</rb><rt>げきか</rt></ruby>し、政変の機運の<ruby><rb>濃</rb><rt>こ</rt></ruby>く<ruby><rb>漂</rb><rt>ただよ</rt></ruby>っているのがどことなく感じられた。</p>
+        <p>周の昭王の四十年<date when="--12"><ruby><rb>閏</rb><rt>うるう</rt></ruby>十二月</date><ruby><rb>某日</rb><rt>ぼうじつ</rt></ruby>。夕方近くになって<persName ref="#shiro">子路</persName>の家にあわただしく跳び込んで来た使があった。孔家の老・<persName ref="#rannei"><ruby><rb>欒寧</rb><rt>らんねい</rt></ruby></persName>の所からである。「本日、前太子<persName ref="#kaikai">蒯聵</persName>都に潜入。ただ今孔氏の宅に入り、<persName ref="#hakki">伯姫</persName>・<persName ref="#konryofu">渾良夫</persName>と共に当主<persName ref="#kokai"><ruby><rb>孔悝</rb><rt>こうかい</rt></ruby></persName>を<ruby><rb>脅</rb><rt>おど</rt></ruby>して己を衛侯に戴かしめた。大勢は既に動かし難い。自分（<persName ref="#rannei">欒寧</persName>）は今から現衛侯を<ruby><rb>奉</rb><rt>ほう</rt></ruby>じて<placeName ref="#lu">魯</placeName>に奔るところだ。<ruby><rb>後</rb><rt>あと</rt></ruby>はよろしく頼む。」という口上である。</p>
+        <p>いよいよ来たな、と<persName ref="#shiro">子路</persName>は思った。とにかく、自分の直接の主人に当る<persName ref="#kokai">孔悝</persName>が<ruby><rb>捕</rb><rt>とら</rt></ruby>えられ脅されたと聞いては、黙っている訳に行かない。おっ取り刀で、彼は公宮へ駈け付ける。</p>
+        <p>外門を入ろうとすると、ちょうど中から出て来るちんちくりんな男にぶっつかった。<persName ref="#kosai"><ruby><rb>子羔</rb><rt>しこう</rt></ruby></persName>だ。孔門の後輩で、<persName ref="#shiro">子路</persName>の<ruby><rb>推薦</rb><rt>すいせん</rt></ruby>によってこの国の大夫となった・正直な・気の小さい男である。<persName ref="#kosai">子羔</persName>が言う。内門はもう<ruby><rb>閉</rb><rt>しま</rt></ruby>ってしまいましたよ。<persName ref="#shiro">子路</persName>。いや、とにかく行くだけは行ってみよう。<persName ref="#kosai">子羔</persName>。しかし、もう無駄ですよ。かえって難に遭うこともないとは限らぬし。<persName ref="#shiro">子路</persName>が声を<ruby><rb>荒</rb><rt>あ</rt></ruby>らげて言う。孔家の<ruby><rb>禄</rb><rt>ろく</rt></ruby>を<ruby><rb>喰</rb><rt>は</rt></ruby>む身ではないか。何のために難を避ける？</p>
+        <p><persName ref="#kosai">子羔</persName>を振切って内門の所まで来ると、果して中から閉っている。ドンドンと<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく<ruby><rb>叩</rb><rt>たた</rt></ruby>く。はいってはいけない！　と、中から叫ぶ。その声を聞き<ruby><rb>咎</rb><rt>とが</rt></ruby>めて<persName ref="#shiro">子路</persName>が<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>った。<persName ref="#kosonkan"><ruby><rb>公孫敢</rb><rt>こうそんかん</rt></ruby></persName>だな、その声は。難を<ruby><rb>逃</rb><rt>のが</rt></ruby>れんがために節を変ずるような、俺は、そんな人間じゃない。その禄を利した以上、その<ruby><rb>患</rb><rt>かん</rt></ruby>を救わねばならぬのだ。<ruby><rb>開</rb><rt>あ</rt></ruby>けろ！　開けろ！</p>
+        <p>ちょうど中から使の者が出て来たので、それと入違いに<persName ref="#shiro">子路</persName>は跳び込んだ。</p>
+        <p>見ると、広庭一面の群集だ。<persName ref="#kokai">孔悝</persName>の名において新衛侯<ruby><rb>擁立</rb><rt>ようりつ</rt></ruby>の宣言があるからとて急に呼び集められた群臣である。皆それぞれに<ruby><rb>驚愕</rb><rt>きょうがく</rt></ruby>と<ruby><rb>困惑</rb><rt>こんわく</rt></ruby>との表情を<ruby><rb>浮</rb><rt>う</rt></ruby>かべ、<ruby><rb>向背</rb><rt>こうはい</rt></ruby>に迷うもののごとく見える。庭に面した<ruby><rb>露台</rb><rt>ろだい</rt></ruby>の上には、若い<persName ref="#kokai">孔悝</persName>が母の<persName ref="#hakki">伯姫</persName>と<ruby><rb>叔父</rb><rt>おじ</rt></ruby>の<persName ref="#kaikai">蒯聵</persName>とに抑えられ、一同に向って政変の宣言とその説明とをするよう、<ruby><rb>強</rb><rt>し</rt></ruby>いられている<ruby><rb>貌</rb><rt>かたち</rt></ruby>だ。</p>
+        <p><persName ref="#shiro">子路</persName>は群衆の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から露台に向って大声に叫んだ。<persName ref="#kokai">孔悝</persName>を捕えて何になるか！　<persName ref="#kokai">孔悝</persName>を離せ。<persName ref="#kokai">孔悝</persName>一人を殺したとて正義派は<ruby><rb>亡</rb><rt>ほろ</rt></ruby>びはせぬぞ！</p>
+        <p><persName ref="#shiro">子路</persName>としてはまず己の主人を救い出したかったのだ。さて、広庭のざわめきが一瞬静まって一同が己の方を振向いたと知ると、今度は群集に向って<ruby><rb>煽動</rb><rt>せんどう</rt></ruby>を始めた。太子は音に聞えた<ruby><rb>臆病者</rb><rt>おくびょうもの</rt></ruby>だぞ。下から火を放って台を焼けば、恐れて<persName ref="#kokai">孔叔</persName>（<persName ref="#kokai">悝</persName>）を<ruby><rb>舎</rb><rt>ゆる</rt></ruby>すに決っている。火を<ruby><rb>放</rb><rt>つ</rt></ruby>けようではないか。火を！</p>
+        <p>既に<ruby><rb>薄暮</rb><rt>はくぼ</rt></ruby>のこととて庭の<ruby><rb>隅々</rb><rt>すみずみ</rt></ruby>に<ruby><rb>篝火</rb><rt>かがりび</rt></ruby>が燃されている。それを指さしながら<persName ref="#shiro">子路</persName>が、「火を！　火を！」と叫ぶ。「先代<persName ref="#kogyo">孔叔文子</persName>（<persName ref="#kogyo">圉</persName>）の恩義に感ずる者共は火を取って台を焼け。そうして<persName ref="#kokai">孔叔</persName>を救え！」</p>
+        <p>台の上の<ruby><rb>簒奪者</rb><rt>さんだつしゃ</rt></ruby>は大いに懼れ、<persName ref="#sekikitsu"><ruby><rb>石乞</rb><rt>せききつ</rt></ruby></persName>・<persName ref="#uen"><ruby><rb>盂黶</rb><rt>うえん</rt></ruby></persName>の二剣士に命じて、<persName ref="#shiro">子路</persName>を討たしめた。</p>
+        <p><persName ref="#shiro">子路</persName>は二人を相手に<ruby><rb>激</rb><rt>はげ</rt></ruby>しく斬り結ぶ。往年の勇者<persName ref="#shiro">子路</persName>も、しかし、年には勝てぬ。次第に<ruby><rb>疲労</rb><rt>ひろう</rt></ruby>が加わり、呼吸が乱れる。<persName ref="#shiro">子路</persName>の旗色の悪いのを見た群集は、この時ようやく<ruby><rb>旗幟</rb><rt>きし</rt></ruby>を明らかにした。<ruby><rb>罵声</rb><rt>ばせい</rt></ruby>が<persName ref="#shiro">子路</persName>に向って飛び、無数の石や棒が<persName ref="#shiro">子路</persName>の<ruby><rb>身体</rb><rt>からだ</rt></ruby>に当った。敵の<ruby><rb>戟</rb><rt>ほこ</rt></ruby>の<ruby><rb>尖端</rb><rt>さき</rt></ruby>が<ruby><rb>頬</rb><rt>ほお</rt></ruby>を<ruby><rb>掠</rb><rt>かす</rt></ruby>めた。<ruby><rb>纓</rb><rt>えい</rt></ruby>（冠の<ruby><rb>紐</rb><rt>ひも</rt></ruby>）が<ruby><rb>断</rb><rt>き</rt></ruby>れて、冠が落ちかかる。左手でそれを支えようとした途端に、もう一人の敵の剣が肩先に喰い込む。血が<ruby><rb>迸</rb><rt>ほとばし</rt></ruby>り、<persName ref="#shiro">子路</persName>は<ruby><rb>倒</rb><rt>たお</rt></ruby>れ、冠が落ちる。倒れながら、<persName ref="#shiro">子路</persName>は手を<ruby><rb>伸</rb><rt>の</rt></ruby>ばして冠を拾い、正しく頭に着けて素速く纓を結んだ。敵の<ruby><rb>刃</rb><rt>やいば</rt></ruby>の下で、<ruby><rb>真赤</rb><rt>まっか</rt></ruby>に血を浴びた<persName ref="#shiro">子路</persName>が、<ruby><rb>最期</rb><rt>さいご</rt></ruby>の力を<ruby><rb>絞</rb><rt>しぼ</rt></ruby>って<ruby><rb>絶叫</rb><rt>ぜっきょう</rt></ruby>する。</p>
+        <p>「見よ！　君子は、冠を、正しゅうして、死ぬものだぞ！」</p>
+        <p>全身<ruby><rb>膾</rb><rt>なます</rt></ruby>のごとくに切り刻まれて、<persName ref="#shiro">子路</persName>は死んだ。</p>
+        <p><placeName ref="#lu">魯</placeName>に在って遥かに衛の政変を聞いた<persName ref="#koshi">孔子</persName>は即座に、「<persName ref="#kosai"><ruby><rb>柴</rb><rt>さい</rt></ruby></persName>（<persName ref="#kosai">子羔</persName>）や、それ帰らん。<ruby><rb>由</rb><rt>ゆう</rt></ruby>や死なん。」と言った。果してその言のごとくなったことを知った時、老聖人は<ruby><rb>佇立瞑目</rb><rt>ちょりつめいもく</rt></ruby>することしばし、やがて<ruby><rb>潸然</rb><rt>さんぜん</rt></ruby>として涙下った。<persName ref="#shiro">子路</persName>の<ruby><rb>屍</rb><rt>しかばね</rt></ruby>が<ruby><rb>醢</rb><rt>ししびしお</rt></ruby>にされたと聞くや、家中の<ruby><rb>塩漬類</rb><rt>しおづけるい</rt></ruby>をことごとく捨てさせ、<ruby><rb>爾後</rb><rt>じご</rt></ruby>、醢は一切<ruby><rb>食膳</rb><rt>しょくぜん</rt></ruby>に上さなかったということである。</p>
+        <p>（<date when="1943-02">昭和十八年二月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

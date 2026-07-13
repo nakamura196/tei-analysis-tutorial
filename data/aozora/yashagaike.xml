@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>夜叉ヶ池</title>
+        <author>泉鏡花</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>夜叉ヶ池</title><author>泉鏡花</author>
+          <note>青空文庫。底本：「泉鏡花集成7」ちくま文庫、筑摩書房。1995（平成7）年12月4日第1刷発行。底本の親本：「鏡花全集　卷二十五」岩波書店。1942（昭和17）年8月31日。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000050/card3407.html">https://www.aozora.gr.jp/cards/000050/card3407.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="hagiwara-akira">
+        <persName>萩原晃</persName>
+        <note>鹿見村琴弾谷の鐘楼守。もと伯爵家の三男で文学を志し、諸国の物語を集める旅の途中でお百合と出会い、二代目の鐘撞き「弥太兵衛」として山里に隠棲する。話者標示は「晃」</note>
+      </person>
+      <person xml:id="oyuri">
+        <persName>百合</persName>
+        <note>晃の妻。鹿見村の鎮守八幡の宮の神官の一人娘で孤児。「お百合」とも。雨乞の犠牲に選ばれる。話者標示は「百合」</note>
+      </person>
+      <person xml:id="yamasawa-gakuen">
+        <persName>山沢学円</persName>
+        <note>晃の親友。文学士・京都大学教授で本願寺派の僧。夜叉ヶ池を見に来て晃と再会する。話者標示は「学円」</note>
+      </person>
+      <person xml:id="shirayuki">
+        <persName>白雪姫</persName>
+        <note>夜叉ヶ池の主(竜神)。剣ヶ峰千蛇ヶ池の公達に恋い焦がれる。もとはこの里の処女「白雪」で、雨乞の犠牲にされ池に身を沈めたと語られる。話者標示は「白雪」</note>
+      </person>
+      <person xml:id="mannen-uba">
+        <persName>万年姥</persName>
+        <note>湯尾峠の万年姥。白雪姫の乳母で眷属の筆頭。人間との盟約を守るよう姫を諫める。話者標示は「姥」(役割語のため本文中の「姥」は不採用)</note>
+      </person>
+      <person xml:id="koishichi">
+        <persName>鯉七</persName>
+        <note>白男の鯉七。鯉の精。夜叉ヶ池の眷属</note>
+      </person>
+      <person xml:id="kanigoro">
+        <persName>大蟹五郎</persName>
+        <note>藪沢の関守を務める蟹の精。「蟹五郎」「大蟹」「五郎」とも</note>
+      </person>
+      <person xml:id="yamatsubaki">
+        <persName>山椿</persName>
+        <note>木の芽峠の山椿(奥山椿)。白雪姫の腰元。話者標示は「椿」</note>
+      </person>
+      <person xml:id="sabae-taro">
+        <persName>鯖江太郎</persName>
+        <note>夜叉ヶ池の眷属。「鯖江ノ太郎」と名のる。鯖波次郎と兄弟</note>
+      </person>
+      <person xml:id="sabanami-jiro">
+        <persName>鯖波次郎</persName>
+        <note>夜叉ヶ池の眷属。「鯖波ノ次郎」と名のる。鯖江太郎と兄弟</note>
+      </person>
+      <person xml:id="itadori-nyudo">
+        <persName>虎杖入道</persName>
+        <note>夜叉ヶ池の眷属。「虎杖の入道」とも</note>
+      </person>
+      <person xml:id="honeyoseoni">
+        <persName>骨寄鬼</persName>
+        <note>十三塚の骨寄鬼。夜叉ヶ池の眷属</note>
+      </person>
+      <person xml:id="namazunyu">
+        <persName>鯰入</persName>
+        <note>黒和尚鯰入。剣ヶ峰千蛇ヶ池の公達の使者となる鯰の精</note>
+      </person>
+      <person xml:id="yoju">
+        <persName>与十</persName>
+        <note>鹿見村の百姓。鯉を掬って蟹五郎に脅かされる</note>
+      </person>
+      <person xml:id="shikami-takuzen">
+        <persName>鹿見宅膳</persName>
+        <note>神官代理。お百合の叔父で、姪を雨乞の犠牲に差し出す</note>
+      </person>
+      <person xml:id="gondo-kanpachi">
+        <persName>権藤管八</persName>
+        <note>村会議員</note>
+      </person>
+      <person xml:id="saida-hatsuo">
+        <persName>斎田初雄</persName>
+        <note>小学教師</note>
+      </person>
+      <person xml:id="hatagami-kadenji">
+        <persName>畑上嘉伝次</persName>
+        <note>村長</note>
+      </person>
+      <person xml:id="denkichi">
+        <persName>伝吉</persName>
+        <note>博徒。鉱蔵に呼ばれて乾児とともに晃に斬りかかる</note>
+      </person>
+      <person xml:id="kogarasu-furosuke">
+        <persName>小烏風呂助</persName>
+        <note>小相撲(小力士)。お百合を抱きすくめて牛に乗せる</note>
+      </person>
+      <person xml:id="kozo">
+        <persName>穴隈鉱蔵</persName>
+        <note>県の代議士。雨乞の犠牲を断行させる</note>
+      </person>
+      <person xml:id="yatabee">
+        <persName>弥太兵衛</persName>
+        <note>先代の鐘撞き。七十九歳で、五十年鐘を撞き通して晃に後を託して死ぬ。晃は「二代の弥太兵衛」を名のる</note>
+      </person>
+      <person xml:id="taicho">
+        <persName>泰澄</persName>
+        <note>越の大徳泰澄(682?-767?)。白山を開いた実在の僧。行力で竜神を夜叉ヶ池に封じ込めたと語られる</note>
+      </person>
+      <person xml:id="oniwakamaru">
+        <persName>鬼若丸</persName>
+        <note>武蔵坊弁慶の幼名。伝説上の人物で、大鯉退治の故事を踏まえた鯉七の言及</note>
+      </person>
+      <person xml:id="momotaro">
+        <persName>桃太郎</persName>
+        <note>昔話の主人公。伝説上の人物への言及</note>
+      </person>
+      <person xml:id="tsuneyo">
+        <persName>常世</persName>
+        <note>謡曲『鉢の木』の佐野源左衛門常世。本文には「常世」「源佐衛門」の2形</note>
+      </person>
+      <person xml:id="saimyoji">
+        <persName>最明時</persName>
+        <note>最明寺殿(北条時頼)。謡曲『鉢の木』で常世の宿を訪ねる旅僧。底本の表記は「最明時」</note>
+      </person>
+      <person xml:id="kuzunoha">
+        <persName>葛の葉</persName>
+        <note>信太の森の白狐・葛の葉。伝説上の存在。子守唄(化けもの尽くし)中の言及</note>
+      </person>
+      <person xml:id="osakabe">
+        <persName>おさかべ</persName>
+        <note>姫路城天守の刑部姫(長壁姫)。伝説上の存在。子守唄(化けもの尽くし)中の言及</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="yashagaike">
+        <placeName>夜叉ヶ池</placeName>
+        <location><geo>35.6858 136.4108</geo></location>
+        <note>福井県南条郡南越前町と岐阜県揖斐郡揖斐川町の境にある池(標高約1100m)・概値。作中では越前国大野郡の設定</note>
+      </place>
+      <place xml:id="mikunidake">
+        <placeName>三国岳</placeName>
+        <location><geo>35.676 136.416</geo></location>
+        <note>夜叉ヶ池の南にある三国岳(1209m)・概値。本文には「三国岳」「三国ヶ岳」の2形</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前</placeName>
+        <location><geo>36.0 136.2</geo></location>
+        <note>旧国名(現福井県北東部)・概値</note>
+      </place>
+      <place xml:id="ono-gun">
+        <placeName>大野郡</placeName>
+        <location><geo>35.98 136.49</geo></location>
+        <note>越前国大野郡(現福井県大野市周辺)・概値。作中の設定上の郡名で、実在の夜叉ヶ池は南条郡側にある</note>
+      </place>
+      <place xml:id="shikami-mura">
+        <placeName>鹿見村</placeName>
+        <note>作中の村(越前国大野郡)。架空の地名のため座標なし</note>
+      </place>
+      <place xml:id="kotohikidani">
+        <placeName>琴弾谷</placeName>
+        <note>鹿見村の谷。清水が石に当たって琴の音を立てるという。架空の地名のため座標なし</note>
+      </place>
+      <place xml:id="yunootoge">
+        <placeName>湯尾峠</placeName>
+        <location><geo>35.786 136.223</geo></location>
+        <note>越前・湯尾峠(現福井県南越前町湯尾)・概値。本文には「湯尾峠」「湯の尾峠」の2形</note>
+      </place>
+      <place xml:id="kinometoge">
+        <placeName>木の芽峠</placeName>
+        <location><geo>35.7561 136.1444</geo></location>
+        <note>越前・木ノ芽峠(現福井県敦賀市と南越前町の境)・概値</note>
+      </place>
+      <place xml:id="hakusan">
+        <placeName>白山</placeName>
+        <location><geo>36.1553 136.7714</geo></location>
+        <note>加賀・白山(御前峰 2702m)・概値</note>
+      </place>
+      <place xml:id="kengamine">
+        <placeName>剣ヶ峰</placeName>
+        <location><geo>36.1531 136.7739</geo></location>
+        <note>白山の剣ヶ峰(2677m)・概値</note>
+      </place>
+      <place xml:id="senjagaike">
+        <placeName>千蛇ヶ池</placeName>
+        <location><geo>36.1567 136.7725</geo></location>
+        <note>白山の千蛇ヶ池(万年雪の池)・概値</note>
+      </place>
+      <place xml:id="hakusandani">
+        <placeName>白山谷</placeName>
+        <note>白山の谷あい。範囲が定まらないため座標なし</note>
+      </place>
+      <place xml:id="yabusawa">
+        <placeName>藪沢</placeName>
+        <note>蟹五郎が関守を務める沢。作中の地名で所在不詳のため座標なし</note>
+      </place>
+      <place xml:id="jusanzuka">
+        <placeName>十三塚</placeName>
+        <note>骨寄鬼の出所とされる塚。作中の地名で所在不詳のため座標なし</note>
+      </place>
+      <place xml:id="hinogawa">
+        <placeName>日野川</placeName>
+        <location><geo>35.9 136.18</geo></location>
+        <note>越前・日野川(九頭竜川水系)・概値(中流域)</note>
+      </place>
+      <place xml:id="kuzuryu">
+        <placeName>九頭竜</placeName>
+        <location><geo>36.1 136.3</geo></location>
+        <note>越前・九頭竜川・概値(中流域)</note>
+      </place>
+      <place xml:id="itadorigawa">
+        <placeName>板取</placeName>
+        <location><geo>35.705 136.192</geo></location>
+        <note>越前・板取(現福井県南越前町板取)および板取川・概値</note>
+      </place>
+      <place xml:id="ibigawa">
+        <placeName>揖斐川</placeName>
+        <location><geo>35.4 136.6</geo></location>
+        <note>美濃・揖斐川・概値(中流域、現岐阜県大垣市付近)</note>
+      </place>
+      <place xml:id="omi">
+        <placeName>近江</placeName>
+        <location><geo>35.2 136.05</geo></location>
+        <note>旧国名(現滋賀県)・概値</note>
+      </place>
+      <place xml:id="omi-kaido">
+        <placeName>近江街道</placeName>
+        <note>近江へ通じる街道。広域にわたるため座標なし</note>
+      </place>
+      <place xml:id="kaga">
+        <placeName>加賀</placeName>
+        <location><geo>36.4 136.6</geo></location>
+        <note>旧国名(現石川県南部)・概値</note>
+      </place>
+      <place xml:id="mino">
+        <placeName>美濃</placeName>
+        <location><geo>35.5 136.9</geo></location>
+        <note>旧国名(現岐阜県南部)・概値</note>
+      </place>
+      <place xml:id="nakanokouchi">
+        <placeName>中の河内</placeName>
+        <location><geo>35.6325 136.195</geo></location>
+        <note>北国街道の宿・中河内(現滋賀県長浜市余呉町中河内)に比定・概値。豪雪地として知られ、本文の「雪女郎」の連想と符合する</note>
+      </place>
+      <place xml:id="imajo-eki">
+        <placeName>今庄駅</placeName>
+        <location><geo>35.7778 136.2011</geo></location>
+        <note>北陸本線今庄駅(現福井県南越前町今庄)・概値</note>
+      </place>
+      <place xml:id="hokurikudo">
+        <placeName>北陸道</placeName>
+        <location><geo>36.5 136.8</geo></location>
+        <note>北陸道(北陸地方)・概値。本文には「北陸道」「北陸七道」の2形</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6804 139.769</geo></location>
+        <note>東京・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都・概値</note>
+      </place>
+      <place xml:id="kyoto-daigaku">
+        <placeName>京都大学</placeName>
+        <location><geo>35.0263 135.7809</geo></location>
+        <note>京都帝国大学(現京都大学、京都市左京区)・概値。学円が教授を務める</note>
+      </place>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+        <note>長崎・概値。「長崎から強飯」の慣用句中の言及</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="shinoda">
+        <placeName>篠田</placeName>
+        <location><geo>34.5108 135.4308</geo></location>
+        <note>信太の森(現大阪府和泉市)。葛の葉伝説の伝承地・概値。子守唄中の「篠田に葛の葉」</note>
+      </place>
+      <place xml:id="hachimangu">
+        <placeName>八幡の宮</placeName>
+        <note>鹿見村の鎮守の八幡宮。作中の社のため座標なし</note>
+      </place>
+      <place xml:id="meido">
+        <placeName>冥土</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="kanegafuchi">
+        <placeName>鐘ヶ淵</placeName>
+        <note>終幕で村が水没して生じた淵。作中の地名のため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>夜叉ヶ池</head>
+        <p>場所　　<placeName ref="#echizen">越前</placeName>国<placeName ref="#ono-gun">大野郡</placeName><placeName ref="#shikami-mura">鹿見村</placeName><placeName ref="#kotohikidani">琴弾谷</placeName></p>
+        <p>時　　　現代。――盛夏</p>
+        <p>人名　　<persName ref="#hagiwara-akira">萩原晃</persName>（鐘楼守）</p>
+        <p>百合（娘）</p>
+        <p><persName ref="#yamasawa-gakuen">山沢学円</persName>（文学士）</p>
+        <p><persName ref="#shirayuki">白雪姫</persName>（<placeName ref="#yashagaike">夜叉ヶ池</placeName>の主）</p>
+        <p><placeName ref="#yunootoge">湯尾峠</placeName>の<persName ref="#mannen-uba">万年姥</persName>（眷属）</p>
+        <p>白男の<persName ref="#koishichi">鯉七</persName></p>
+        <p><persName ref="#kanigoro">大蟹五郎</persName></p>
+        <p><placeName ref="#kinometoge">木の芽峠</placeName>の<persName ref="#yamatsubaki">山椿</persName></p>
+        <p><persName ref="#sabae-taro">鯖江太郎</persName></p>
+        <p><persName ref="#sabanami-jiro">鯖波次郎</persName></p>
+        <p><persName ref="#itadori-nyudo">虎杖</persName>の入道</p>
+        <p><placeName ref="#jusanzuka">十三塚</placeName>の骨</p>
+        <p>夥多の影法師</p>
+        <p><persName ref="#namazunyu">黒和尚</persName><persName ref="#namazunyu">鯰入</persName>（<placeName ref="#kengamine">剣ヶ峰</placeName>の使者）</p>
+        <p><persName ref="#yoju">与十</persName>（<placeName ref="#shikami-mura">鹿見村</placeName>百姓）</p>
+        <p>その他大勢</p>
+        <p><persName ref="#shikami-takuzen">鹿見宅膳</persName>（神官）</p>
+        <p><persName ref="#gondo-kanpachi">権藤管八</persName>（村会議員）</p>
+        <p><persName ref="#saida-hatsuo">斎田初雄</persName>（小学教師）</p>
+        <p><persName ref="#hatagami-kadenji">畑上嘉伝次</persName>（村長）</p>
+        <p><persName ref="#denkichi">伝吉</persName>（博徒）</p>
+        <p><persName ref="#kogarasu-furosuke">小烏風呂助</persName>（小相撲）</p>
+        <p><persName ref="#kozo">穴隈鉱蔵</persName>（県の代議士）</p>
+        <p>劇中名をいうもの。――（<placeName ref="#hakusan">白山</placeName><placeName ref="#kengamine">剣ヶ峰</placeName>、<placeName ref="#senjagaike">千蛇ヶ池</placeName>の公達）</p>
+        <p><placeName ref="#mikunidake"><ruby><rb>三国岳</rb><rt>みくにだけ</rt></ruby></placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>の里に、<ruby><rb>暮六</rb><rt>くれむ</rt></ruby>つの鐘きこゆ。――幕を開く。</p>
+        <p><persName ref="#hagiwara-akira"><ruby><rb>萩原晃</rb><rt>はぎわらあきら</rt></ruby></persName>この時<ruby><rb>白髪</rb><rt>しらが</rt></ruby>のつくり、<ruby><rb>鐘楼</rb><rt>しょうろう</rt></ruby>の上に立ちて<ruby><rb>夕陽</rb><rt>せきよう</rt></ruby>を望みつつあり。鐘楼は柱に<ruby><rb>蔦</rb><rt>つた</rt></ruby>からまり、高き石段に<ruby><rb>苔</rb><rt>こけ</rt></ruby>蒸し、棟には草生ゆ。晃やがて<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に段を下りて、清水に米を<ruby><rb>磨</rb><rt>と</rt></ruby>ぐ<persName ref="#oyuri">お<ruby><rb>百合</rb><rt>ゆり</rt></ruby></persName>の背後に<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>水は、美しい。いつ見ても……美しいな。</p>
+        <p><persName ref="#oyuri">百合　</persName>ええ。</p>
+        <p>その水の岸に<ruby><rb>菖蒲</rb><rt>あやめ</rt></ruby>あり二三輪小さき花咲く。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>綺麗</rb><rt>きれい</rt></ruby>な水だよ。（<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>む。）</p>
+        <p><persName ref="#oyuri">百合　</persName>（白髪の<ruby><rb>鬢</rb><rt>びん</rt></ruby>に手を当てて）でも、白いのでございますもの。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>そりゃ、米を磨いでいるからさ。……（<ruby><rb>框</rb><rt>かまち</rt></ruby>の縁に腰を掛く）お勝手働き御苦労、せっかくのお手を水仕事で台なしは恐多い、ちとお手伝いと行こうかな。</p>
+        <p><persName ref="#oyuri">百合　</persName><ruby><rb>可</rb><rt>よ</rt></ruby>うございますよ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>いや……お手伝いという処だが、<persName ref="#oyuri">お百合</persName>さんのそうした処は、咲残った菖蒲を透いて、水に影が<ruby><rb>映</rb><rt>さ</rt></ruby>したようでなお綺麗だ。</p>
+        <p><persName ref="#oyuri">百合　</persName>存じません。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>賞</rb><rt>ほ</rt></ruby>めるのに怒る<ruby><rb>奴</rb><rt>やつ</rt></ruby>がありますか。</p>
+        <p><persName ref="#oyuri">百合　</persName>おなぶり遊ばすんでございますものを。――そして<ruby><rb>旦那様</rb><rt>だんなさま</rt></ruby>は、こんな台所へ出ていらっしゃるものではありません。早くお机の所へおいでなさいまし。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>鐘を<ruby><rb>撞</rb><rt>つ</rt></ruby>く旦那はおかしい。実は<ruby><rb>権助</rb><rt>ごんすけ</rt></ruby>と名を替えて、早速お<ruby><rb>飯</rb><rt>まんま</rt></ruby>にありつきたい。何とも<ruby><rb>可恐</rb><rt>おそろし</rt></ruby>く腹が空いて、今、鐘を撞いた<ruby><rb>撞木</rb><rt>しゅもく</rt></ruby>が、<ruby><rb>杖</rb><rt>つえ</rt></ruby>になれば<ruby><rb>可</rb><rt>い</rt></ruby>いと思った。ところで<ruby><rb>居催促</rb><rt>いざいそく</rt></ruby>という<ruby><rb>形</rb><rt>かた</rt></ruby>もある。</p>
+        <p><persName ref="#oyuri">百合　</persName>ほほほ、またお<ruby><rb>極</rb><rt>きま</rt></ruby>り。……すぐお夕飯にいたしましょうねえ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>手品じゃあるまいし、磨いでいる米が、飯に早変わりはしそうもないぜ。</p>
+        <p><persName ref="#oyuri">百合　</persName>まあ、あんな事を――これは<ruby><rb>翌朝</rb><rt>あした</rt></ruby>の分を仕掛けておくのでございますよ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>翌朝の分――ああ、お<ruby><rb>所帯</rb><rt>しょたい</rt></ruby>もち、さもあるべき事です。いや、それを聞いて安心したら、がっかりして余計空いた。</p>
+        <p><persName ref="#oyuri">百合　</persName>何でございますねえ。……お<ruby><rb>菜</rb><rt>かず</rt></ruby>も、あの、お好きな<ruby><rb>鴫焼</rb><rt>しぎやき</rt></ruby>をして上げますから、おとなしくしていらっしゃいまし。お腹が空いたって、人が聞くと笑います。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（縁を上る）誰に遠慮がいるものか、人が笑うのは、ね、お前。</p>
+        <p><persName ref="#oyuri">百合　</persName>はい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>お互いに朝寝の時――</p>
+        <p><persName ref="#oyuri">百合　</persName>知りませんよ。（<ruby><rb>莞爾</rb><rt>にっこり</rt></ruby><ruby><rb>俯向</rb><rt>うつむ</rt></ruby>く。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>煩</rb><rt>うるさ</rt></ruby>く<ruby><rb>薮蚊</rb><rt>やぶっか</rt></ruby>が押寄せた。裏縁で<ruby><rb>燻</rb><rt>いぶ</rt></ruby>してやろう。（納戸、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>むきに山を仰ぐ）……雲の峰を<ruby><rb>焼落</rb><rt>やきおと</rt></ruby>した、<placeName ref="#mikunidake">三国ヶ岳</placeName>は火のようだ。西は<placeName ref="#omi"><ruby><rb>近江</rb><rt>おうみ</rt></ruby></placeName>、北は<placeName ref="#kaga">加賀</placeName>、<ruby><rb>幽</rb><rt>かすか</rt></ruby>に<placeName ref="#mino"><ruby><rb>美濃</rb><rt>みの</rt></ruby></placeName>の山々峰々、<ruby><rb>数万</rb><rt>すまん</rt></ruby>の<ruby><rb>松明</rb><rt>たいまつ</rt></ruby>を<ruby><rb>列</rb><rt>つら</rt></ruby>ねたように<ruby><rb>旱</rb><rt>ひでり</rt></ruby>の<ruby><rb>焔</rb><rt>ほのお</rt></ruby>で取巻いた。<placeName ref="#yashagaike"><ruby><rb>夜叉</rb><rt>やしゃ</rt></ruby>ヶ池</placeName>へも映るらしい。ちょうどその水の上あたり、宵の明星の色さえ赤い。……なかなか雨らしい影もないな。</p>
+        <p><persName ref="#oyuri">百合　</persName>……その竜が<ruby><rb>棲</rb><rt>す</rt></ruby>む、<placeName ref="#yashagaike">夜叉ヶ池</placeName>からお池の水が続くと申します。ここの清水も気のせいやら、<ruby><rb>流</rb><rt>ながれ</rt></ruby>が<ruby><rb>沢山</rb><rt>たんと</rt></ruby><ruby><rb>痩</rb><rt>や</rt></ruby>せました。このごろは村方で大騒ぎをしています。……暑さは強し……<ruby><rb>貴方</rb><rt>あなた</rt></ruby>、お<ruby><rb>身体</rb><rt>からだ</rt></ruby>に<ruby><rb>触</rb><rt>さわ</rt></ruby>りはしますまいかと、――めしあがりものの不自由な片山里は心細い。私はそれが心配でなりません。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>流</rb><rt>ながれ</rt></ruby>が細ったって構うものか。お前こそ、その上夏痩せをしないが<ruby><rb>可</rb><rt>い</rt></ruby>い。<persName ref="#oyuri">お百合</persName>さん、その夕顔の花に、ちょっと手を触ってみないか。</p>
+        <p><persName ref="#oyuri">百合　</persName>はい、どういたすのでございますか。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>花にも葉にも露があろうね。</p>
+        <p><persName ref="#oyuri">百合　</persName>ああ冷い。水の手にも涼しいほど、しっとり花が濡れましたよ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>世間の人には金が要ろう、田地も要ろう、雨もなければなるまいが、我々二人<ruby><rb>活</rb><rt>い</rt></ruby>きるには、百日照っても乾きはしない。その、露があれば沢山なんだ。（<ruby><rb>戸外</rb><rt>おもて</rt></ruby>に向える障子を<ruby><rb>閉</rb><rt>とざ</rt></ruby>す。）</p>
+        <p><persName ref="#oyuri">百合　</persName>貴方、お暑うございましょう。開けておおきなさいましても、もう、そちこち人も通りますまい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>何、<ruby><rb>更</rb><rt>あらたま</rt></ruby>って、そんな心配をするものか。……晩方<ruby><rb>閉込</rb><rt>とじこ</rt></ruby>んで<ruby><rb>一燻</rb><rt>ひといぶ</rt></ruby>し燻しておくと、蚊が大分楽になるよ。</p>
+        <p>時に<ruby><rb>蚊遣</rb><rt>かやり</rt></ruby>の煙なびく、</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>。日に焼けたるパナマ帽子、背広の服、<ruby><rb>落着</rb><rt>おちつき</rt></ruby>のある<ruby><rb>人体</rb><rt>じんてい</rt></ruby>なり。風呂敷包を<ruby><rb>斜</rb><rt>はす</rt></ruby>に<ruby><rb>背</rb><rt>しょ</rt></ruby>い、<ruby><rb>脚絆草鞋穿</rb><rt>きゃはんわらじばき</rt></ruby>、<ruby><rb>杖</rb><rt>ステッキ</rt></ruby>づくりの<ruby><rb>洋傘</rb><rt>こうもり</rt></ruby>をついて、鐘楼の下に出づ。打仰ぎ鐘を眺め、</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　今朝、<ruby><rb>明六</rb><rt>あけむ</rt></ruby>つの橋を渡って、ここで暮六つの鐘を聞いた。……</p>
+        <p><persName ref="#oyuri">お百合</persName>は<ruby><rb>笊</rb><rt>ざる</rt></ruby>に米をうつす。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　やあ、お精が出ます。（と声を掛く。）</p>
+        <p><persName ref="#oyuri">百合　</persName>はい。（見向く。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　途中、<ruby><rb>畷</rb><rt>なわて</rt></ruby>の<ruby><rb>竹藪</rb><rt>たけやぶ</rt></ruby>の処へ出て……暗くなった処で、今しがた聞きました。時を打ったはこの鐘でしょうな。</p>
+        <p><persName ref="#oyuri">百合　</persName>さようでございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　音も尊い！……立派な鐘じゃ。<ruby><rb>鐘楼</rb><rt>つりがねどう</rt></ruby>へ<ruby><rb>上</rb><rt>あが</rt></ruby>ってみても差支えはありませんか。</p>
+        <p><persName ref="#oyuri">百合　</persName>（<ruby><rb>笊</rb><rt>ざる</rt></ruby>を抱えて立つ）ええ、大事ござんせん。けれども<ruby><rb>貴客</rb><rt>あなた</rt></ruby>、<ruby><rb>御串戯</rb><rt>ごじょうだん</rt></ruby>に、お杖やなんぞでお<ruby><rb>敲</rb><rt>たた</rt></ruby>き遊ばしては<ruby><rb>不可</rb><rt>いけ</rt></ruby>ません。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>西瓜</rb><rt>すいか</rt></ruby>を買うのではありません。決して敲いてはみますまい。（笑う。）</p>
+        <p><persName ref="#oyuri">百合　</persName>御串戯おっしゃいます。……いいえ、<ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>を遊ばすようなお方とは、お見受け申しはしませんけれど、その鐘は、明六つと、暮六つと、夜中<ruby><rb>丑満</rb><rt>うしみつ</rt></ruby>に一度、――三度のほかは鳴らさない事になっておりますから、失礼とは存じましたが、ちょっと申上げたのでございます。さあ、どうぞ御遠慮なく、上って御覧なさいまし。（夕顔の垣根について<ruby><rb>入</rb><rt>いら</rt></ruby>んとす。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　ああ、ちょっと……お待ち下さい。鐘を見ようと思いますが、ふと<ruby><rb>言</rb><rt>ことば</rt></ruby>を交わしたを御縁に、余り<ruby><rb>不躾</rb><rt>ぶしつけ</rt></ruby>がましい事じゃが、茶なりと湯なりと、一杯お振舞い下さらんか。</p>
+        <p><persName ref="#oyuri">百合　</persName>お易い事でございます。さあ、<ruby><rb>貴客</rb><rt>あなた</rt></ruby>、これへお掛けなさいまし。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　御免下さいよ。</p>
+        <p><persName ref="#oyuri">百合　</persName><ruby><rb>真</rb><rt>まこと</rt></ruby>に見苦しゅうございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　これは――お寺の<ruby><rb>庫裡</rb><rt>くり</rt></ruby>とも見受ません。御本堂は離れていますか。</p>
+        <p><persName ref="#oyuri">百合　</persName>いいえ、もう昔、焼けたと申しまして、以前から、寺はないのでございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　鐘ばかり……</p>
+        <p><persName ref="#oyuri">百合　</persName>はい。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　鐘ばかり……成程、ところで西瓜の一件じゃ。（帽子を脱ぐ、ほとんど<ruby><rb>剃髪</rb><rt>ていはつ</rt></ruby>したるごとき<ruby><rb>一分刈</rb><rt>いちぶがり</rt></ruby>の額を<ruby><rb>撫</rb><rt>な</rt></ruby>でて）や、西瓜と云えば、内に<ruby><rb>甜瓜</rb><rt>まくわうり</rt></ruby>でもありますまいか。――茶店でもない様子――（見廻す。）</p>
+        <p><ruby><rb>片山家</rb><rt>かたやまが</rt></ruby>の暮れ<ruby><rb>行</rb><rt>ゆ</rt></ruby>く風情、<ruby><rb>茅屋</rb><rt>かやや</rt></ruby>の低き納戸の障子に<ruby><rb>灯影</rb><rt>ほかげ</rt></ruby>映る。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　この上、晩飯の御難題は言出しませんが、いかんとも腹が空いた。</p>
+        <p><persName ref="#oyuri">百合　</persName>ほほ。（と<ruby><rb>打笑</rb><rt>うちえ</rt></ruby>み）<ruby><rb>筧</rb><rt>かけひ</rt></ruby>の下に、<ruby><rb>梨</rb><rt>ありのみ</rt></ruby>が<ruby><rb>冷</rb><rt>ひや</rt></ruby>してござんす、上げましょう。（と夕顔の蔭に立廻る。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（がぶがぶと茶を<ruby><rb>呑</rb><rt>の</rt></ruby>み、<ruby><rb>衣兜</rb><rt>ポケット</rt></ruby>から扇子を取って、<ruby><rb>煽</rb><rt>あお</rt></ruby>いだのを、と<ruby><rb>翳</rb><rt>かざ</rt></ruby>して見つつ）おお、咲きました。<ruby><rb>貴女</rb><rt>あなた</rt></ruby>の顔を見るように。</p>
+        <p><persName ref="#oyuri">百合　</persName>ええ？（聞返す。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いや、髪の色を見るように。</p>
+        <p><persName ref="#oyuri">百合　</persName>もう、年をとりますと、花どころではございません。早く<ruby><rb>干瓢</rb><rt>かんぴょう</rt></ruby>にでもなりますれば、……とそればかりを待っております。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>小刀</rb><rt>ナイフ</rt></ruby>をこれへお遣わし……<ruby><rb>私</rb><rt>わし</rt></ruby>が<ruby><rb>剥</rb><rt>む</rt></ruby>きます。――お世話を掛けてはかえって気遣いな。どれどれ……旅の事欠け、不器用ながら、<ruby><rb>梨</rb><rt>なし</rt></ruby>の皮ぐらいは、うまく剥きます。おおおお氷よりよく冷えた。玉を削るとはこの事じゃろう。</p>
+        <p><persName ref="#oyuri">百合　</persName>旅を遊ばす御様子にお見受け申します……<ruby><rb>貴客</rb><rt>あなた</rt></ruby>は、どれから、どれへお越しなさいますえ？</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　さて<ruby><rb>名告</rb><rt>なの</rt></ruby>りを揚げて、何の峠を越すと云うでもありません。御覧の通り、学校に勤めるもので、暑中休暇に見物学問という処を、<ruby><rb>遣</rb><rt>や</rt></ruby>って<ruby><rb>歩行</rb><rt>ある</rt></ruby>く……もっとも、<ruby><rb>帰途</rb><rt>かえりみち</rt></ruby>です。――涼しくば<placeName ref="#kinometoge">木の芽峠</placeName>、音に聞こえた<placeName ref="#nakanokouchi">中の<ruby><rb>河内</rb><rt>かわち</rt></ruby></placeName>か、（<ruby><rb>廂</rb><rt>ひさし</rt></ruby>はずれに山見る眉）峰の<ruby><rb>茶店</rb><rt>ちゃや</rt></ruby>に<ruby><rb>茶汲女</rb><rt>ちゃくみおんな</rt></ruby>が<ruby><rb>赤前垂</rb><rt>あかまえだれ</rt></ruby>というのが事実なら、<ruby><rb>疱瘡</rb><rt>ほうそう</rt></ruby>の神の<ruby><rb>建場</rb><rt>たてば</rt></ruby>でも差支えん。<placeName ref="#yunootoge">湯の尾峠</placeName>を越そうとも思います。――落着く<ruby><rb>前</rb><rt>さき</rt></ruby>は<placeName ref="#kyoto">京都</placeName>ですわ。</p>
+        <p><persName ref="#oyuri">百合　</persName>お泊りは？　<ruby><rb>貴客</rb><rt>あなた</rt></ruby>、今晩の。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　ああ、うっかり泊りなぞお聞きなさらぬが<ruby><rb>可</rb><rt>い</rt></ruby>い。<ruby><rb>言尻</rb><rt>ことばじり</rt></ruby>に着いて、宿の御無心申さんとも限らんぞ。はははは、いや、<ruby><rb>串戯</rb><rt>じょうだん</rt></ruby>じゃ。御心配には及ばんが、何と、その<placeName ref="#yunootoge">湯の尾峠</placeName>の茶汲女は、今でも赤前垂じゃろうかね。</p>
+        <p><persName ref="#oyuri">百合　</persName>山また山の峠の中に、嘘のようにもお思いなさいましょうが、まったくだと申します。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　谷の姫百合も<ruby><rb>緋色</rb><rt>ひいろ</rt></ruby>に咲けば、何もそれに不思議はない。が、この通り、山ばかり、<ruby><rb>重</rb><rt>かさな</rt></ruby>り<ruby><rb>累</rb><rt>かさな</rt></ruby>る、あの、<ruby><rb>巓</rb><rt>いただき</rt></ruby>を思うにつけて、……夕焼雲が、めらめらと<ruby><rb>巌</rb><rt>いわお</rt></ruby>に<ruby><rb>焼込</rb><rt>やけこ</rt></ruby>むようにも見える。こりゃ、赤前垂より、雪女郎で<ruby><rb>凄</rb><rt>すご</rt></ruby>うても、<placeName ref="#nakanokouchi">中の河内</placeName>が<ruby><rb>可</rb><rt>い</rt></ruby>いかも分らん。何にしろ、暑い事じゃね。――やっとここで<ruby><rb>呼吸</rb><rt>いき</rt></ruby>をついた。</p>
+        <p><persName ref="#oyuri">百合　</persName>里では<ruby><rb>人死</rb><rt>ひとじに</rt></ruby>もありますッて……<ruby><rb>酷</rb><rt>ひど</rt></ruby>い<ruby><rb>旱</rb><rt>ひでり</rt></ruby>でございますもの。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　今朝から<ruby><rb>難行苦行</rb><rt>なんぎょうくぎょう</rt></ruby>の<ruby><rb>体</rb><rt>てい</rt></ruby>で、暑さに八九里悩みましたが――<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しい事には、水らしい水というのを、ここに来てはじめて見ました。これは清水と見えます。</p>
+        <p><persName ref="#oyuri">百合　</persName>裏の<ruby><rb>崕</rb><rt>がけ</rt></ruby>から<ruby><rb>湧</rb><rt>わ</rt></ruby>きますのを、<ruby><rb>筧</rb><rt>かけひ</rt></ruby>にうけて落します……細い<ruby><rb>流</rb><rt>ながれ</rt></ruby>でございますが、石に当って、りんりんと<ruby><rb>佳</rb><rt>い</rt></ruby>い<ruby><rb>音</rb><rt>ね</rt></ruby>がしますので、この谷を、あの<placeName ref="#kotohikidani"><ruby><rb>琴弾谷</rb><rt>ことひきだに</rt></ruby></placeName>と申します。貴客、それは、おいしい冷い清水。……一杯汲んで差上げましょうか。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　何が今まで我慢が出来よう、<ruby><rb>鐘堂</rb><rt>つりがねどう</rt></ruby>も知らない前に、この<ruby><rb>美</rb><rt>うつくし</rt></ruby>い水を見ると、<ruby><rb>逆蜻蛉</rb><rt>さかとんぼ</rt></ruby>で口をつけて、手で<ruby><rb>引掴</rb><rt>ひッつか</rt></ruby>んでがぶがぶと。</p>
+        <p><persName ref="#oyuri">百合　</persName>まあ、私はどうしましょう、知らずにお米を<ruby><rb>磨</rb><rt>と</rt></ruby>ぎました。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いや、しらげ水は<ruby><rb>菖蒲</rb><rt>あやめ</rt></ruby>の<ruby><rb>絞</rb><rt>しぼり</rt></ruby>、夕顔の花の化粧になったと見えて、下流の水はやっぱり水晶。ささ濁りもしなかった。が、村里一統、飲む水にも困るらしく見受けたに、ここの<ruby><rb>源</rb><rt>みなもと</rt></ruby>まで来ないのは格別、流れを汲取るものもなかったように思う……何ぞ<ruby><rb>仔細</rb><rt>しさい</rt></ruby>のある事じゃろうか。</p>
+        <p><persName ref="#oyuri">百合　</persName>あの、湧きますのは、裏の<ruby><rb>崕</rb><rt>がけ</rt></ruby>でござんすけれど。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　はあ、はあ。……</p>
+        <p><persName ref="#oyuri">百合　</persName>水の<ruby><rb>源</rb><rt>もと</rt></ruby>はこの山奥に、<placeName ref="#yashagaike">夜叉ヶ池</placeName>と申します。<ruby><rb>凄</rb><rt>すご</rt></ruby>い大池がございます。その<ruby><rb>水底</rb><rt>みなそこ</rt></ruby>には竜が<ruby><rb>棲</rb><rt>す</rt></ruby>む、そこへ通うと云いまして――毒があると<ruby><rb>可恐</rb><rt>こわ</rt></ruby>がります。――もう薄暗くて見えますまいけれども、その<ruby><rb>貴客</rb><rt>あなた</rt></ruby>、<ruby><rb>流</rb><rt>ながれ</rt></ruby>の石には、水がかかって、紫だの、緑だの、口紅ほどな小粒も<ruby><rb>交</rb><rt>まじ</rt></ruby>って、それは綺麗でございますのを、お池の主の<ruby><rb>眷属</rb><rt>けんぞく</rt></ruby>の<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>がこぼれたなんのッて、気味が悪いと申すんでございますから。……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　綺麗な石が毒蛇の鱗？　や、がぶがぶと、<ruby><rb>豪</rb><rt>えら</rt></ruby>いことを<ruby><rb>遣</rb><rt>や</rt></ruby>ってしもうた。（と扇子をもって胸を打つ。）</p>
+        <p><persName ref="#oyuri">百合　</persName>まあ、（と<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>み）私どもがこの年まで朝夕飲んで何ともない、それをあの、人は疑うのでございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　もっとも、もっとも。ものを疑うのは人間の習いですよ。<ruby><rb>私</rb><rt>わし</rt></ruby>は今のお<ruby><rb>言</rb><rt>ことば</rt></ruby>で、決して心配はしますまい。現に朝夕飲んでおらるる、――この<ruby><rb>年紀</rb><rt>とし</rt></ruby>まで――（と打ち<ruby><rb>瞻</rb><rt>まも</rt></ruby>り）お<ruby><rb>幾歳</rb><rt>いくつ</rt></ruby>じゃな。</p>
+        <p><persName ref="#oyuri">百合　</persName>…………</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　まあさ、失礼じゃが、お幾歳です？</p>
+        <p><persName ref="#oyuri">百合　</persName>御免なさいまし、……忘れました。……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　ははは、<ruby><rb>俚言</rb><rt>ことわざ</rt></ruby>にも、婦人に対して、貴女はいつ死ぬとは問うても<ruby><rb>可</rb><rt>い</rt></ruby>い。が、いつ生れた、とは聞くな――とある。これは無遠慮に出過ぎました。……お幾歳じゃと<ruby><rb>年紀</rb><rt>とし</rt></ruby>は尋ねますまい。時に<ruby><rb>幾干</rb><rt>いくら</rt></ruby>ですか。</p>
+        <p><persName ref="#oyuri">百合　</persName>幾干かとおっしゃって？</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　代価じゃ。</p>
+        <p><persName ref="#oyuri">百合　</persName>あの、お代、何の？……お宝……ま、<ruby><rb>滅相</rb><rt>めっそう</rt></ruby>な。お茶代なぞ頂くのではないのでござんす。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　茶も茶じゃが、いやあこれは、<ruby><rb>髯</rb><rt>ひげ</rt></ruby>のようにもじゃもじゃと聞えておかしい。茶も勿論、梨を十分に頂いた。お商売でのうても無代価では心苦しい。ずばりと余計なら黙っても差置きますが、旅空なり、御覧の通りの<ruby><rb>風体</rb><rt>ふうてい</rt></ruby>。ちゃんと云うて取って下さい。</p>
+        <p><persName ref="#oyuri">百合　</persName>そうまでお気が済みませんなら、少々お代を頂きましょうか。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　勿論ともな。</p>
+        <p><persName ref="#oyuri">百合　</persName>でも、あの、お代とさえ申しますもの、お宝には限りません。そのかわり、短いのでも<ruby><rb>可</rb><rt>よ</rt></ruby>うござんす、お<ruby><rb>談話</rb><rt>はなし</rt></ruby>を一つ、お聞かせなすって下さいましな。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　談話をせい、……談話とは？</p>
+        <p><persName ref="#oyuri">百合　</persName>方々旅を遊ばした、面白い、珍しい、お話しでございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　その談話を？</p>
+        <p><persName ref="#oyuri">百合　</persName>はい、お代のかわりに頂きます。<ruby><rb>貴客</rb><rt>あなた</rt></ruby>には限りませず、薬売の衆、<ruby><rb>行者</rb><rt>ぎょうじゃ</rt></ruby>、巡礼、この村里の人たちにも、お間に合うものがござんして、そのお代をと云う方には、<ruby><rb>誰方</rb><rt>どなた</rt></ruby>にも、お談話を<ruby><rb>一条</rb><rt>ひとつ</rt></ruby>ずつ伺います。<ruby><rb>沢山</rb><rt>たんと</rt></ruby>お聞かせ下さいますと、お泊め申しもするのでござんす。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　むむ、これこそ談話じゃ。（と<ruby><rb>小膝</rb><rt>こひざ</rt></ruby>を<ruby><rb>拍</rb><rt>うっ</rt></ruby>て）面白い。話しましょう。……が、さて談話というて、差当り――お茶代になるのじゃからって、<placeName ref="#nagasaki">長崎</placeName>から<ruby><rb>強飯</rb><rt>こわめし</rt></ruby>でもあるまいな。や、思出した。しかもこの<placeName ref="#echizen"><ruby><rb>越前</rb><rt>えちぜん</rt></ruby></placeName>じゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（細く障子を開き<ruby><rb>差覗</rb><rt>さしのぞ</rt></ruby>く。）</p>
+        <p>時に小机に向いたり。双紙を開き、筆を取りて、客の物語る所をかき取らんとしたるなるが、<persName ref="#yamasawa-gakuen">学円</persName>と双方、ふと顔を合せて、何とかしけん、<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>をふっと消す。</p>
+        <p><persName ref="#oyuri">百合　</persName>どんなお話、もし、<ruby><rb>貴客</rb><rt>あなた</rt></ruby>。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　……時にここで話すのを、貴女のほかに聞く人がありますかね。</p>
+        <p><persName ref="#oyuri">百合　</persName>いいえ、<ruby><rb>外</rb><rt>ほか</rt></ruby>にはお月様ばかりでござんす。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　道理こそ<ruby><rb>燈</rb><rt>あかり</rt></ruby>が消えて、ああ、<ruby><rb>蚊遣</rb><rt>かやり</rt></ruby>の煙で、よくは見えぬが、……納戸に月が<ruby><rb>射</rb><rt>さ</rt></ruby>すらしい。――お待ちなさい。今、言いかけた<placeName ref="#echizen">越前</placeName>の話というのは、縁の下で<ruby><rb>牡丹餅</rb><rt>ぼたもち</rt></ruby>が化けたのです。たとえば、ここで<ruby><rb>私</rb><rt>わし</rt></ruby>がものを云うと、その通り、縁の下で口真似をする<ruby><rb>奴</rb><rt>やつ</rt></ruby>がある。村中が寄って<ruby><rb>集</rb><rt>たか</rt></ruby>って、口真似するは何ものじゃ。狐か、と聞くと、違う。と答える。狸か、違う、<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>か、違う、魔か、<ruby><rb>天狗</rb><rt>てんぐ</rt></ruby>か、違う、違う。……しまいに牡丹餅か、と尋ねた時、おうと云って消え<ruby><rb>失</rb><rt>う</rt></ruby>せたという――その話をする気であったが、……まだ外に、月が聞くと言わるるから、出直して、別の<ruby><rb>談話</rb><rt>はなし</rt></ruby>をする気になった。お聞きなさい。これは現在<ruby><rb>一昨年</rb><rt>おととし</rt></ruby>の夏――</p>
+        <p>一人、<ruby><rb>私</rb><rt>わし</rt></ruby>の親友に、何かかねて志す……国々に伝わった面白い、また<ruby><rb>異</rb><rt>かわ</rt></ruby>った、不思議な物語を集めてみたい。<placeName ref="#nihon">日本</placeName>中残らずとは思うが、この夏は、山深い<ruby><rb>北国</rb><rt>ほっこく</rt></ruby>筋の、谷を渡り、峰を伝って尋ねよう、と夏休みに<placeName ref="#tokyo">東京</placeName>を出ました。――それっきり、行方が知れず、<ruby><rb>音沙汰</rb><rt>おとさた</rt></ruby>なし。親兄弟もある人物、出来る限り、手を尽くして捜したが、皆目<ruby><rb>跡形</rb><rt>あとかた</rt></ruby>が分らんから、われわれ友だちの間にも、<ruby><rb>最早</rb><rt>もは</rt></ruby>や世にない、死んだものと<ruby><rb>断念</rb><rt>あきら</rt></ruby>めて、都を出た日を命日にする始末。いや、一時は新聞沙汰、世間で<ruby><rb>豪</rb><rt>えら</rt></ruby>い騒ぎをした。……</p>
+        <p>自殺か、<ruby><rb>怪我</rb><rt>けが</rt></ruby>か、変死かと、<ruby><rb>果敢</rb><rt>はか</rt></ruby>ない事に、寄ると触ると、<ruby><rb>袂</rb><rt>たもと</rt></ruby>を絞って言い交わすぞ！　あとを隠すにも、死ぬのにも、何の理由もない男じゃに、貴女、世間には変った事がありましょうな。……</p>
+        <p><persName ref="#oyuri">百合　</persName>ああ、<ruby><rb>貴客</rb><rt>あなた</rt></ruby>、貴客、<ruby><rb>難有</rb><rt>ありがと</rt></ruby>う存じます。……ほんとうに難有う存じました。（とにべなく言う。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　そんなに礼を云うて、茶代のかわりになるのですかい。</p>
+        <p><persName ref="#oyuri">百合　</persName>もう沢山でございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　それでは面白かったのじゃね。</p>
+        <p><persName ref="#oyuri">百合　</persName>……おもしろいのは、前の牡丹餅の化けた方、あとのは沢山でございます。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　さて<ruby><rb>談話</rb><rt>はなし</rt></ruby>はこれからなんじゃ、今のはほんの<ruby><rb>前提</rb><rt>まえおき</rt></ruby>ですが。</p>
+        <p><persName ref="#oyuri">百合　</persName>どうぞ、……結構でございますから、……そして貴客、もう暗くなります、お宿をお取り遊ばすにも御不自由でございましょうから。……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いやいや、談話の模様では、宿をする事もあると言われた。<ruby><rb>私</rb><rt>わし</rt></ruby>も一つ泊めて下さい、――この談話は<ruby><rb>実</rb><rt>み</rt></ruby>がありますから。</p>
+        <p><persName ref="#oyuri">百合　</persName><ruby><rb>先刻</rb><rt>さっき</rt></ruby>は、貴客、女の口から泊りの事なぞ聞くんじゃない。……その<ruby><rb>言</rb><rt>ことば</rt></ruby>について、宿の無心でもされたらどうするとおっしゃって。……もう、清い<ruby><rb>涼</rb><rt>すずし</rt></ruby>いお方だと思いましたものを、……女ばかり居る処で、宿貸せなぞと、そんな事、……もう、私は気味が悪い。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　気味が悪いな？　牡丹餅の化けたのではないですが。</p>
+        <p><persName ref="#oyuri">百合　</persName>こんな山家は、お<ruby><rb>化</rb><rt>ばけ</rt></ruby>より、都の人が<ruby><rb>可恐</rb><rt>こお</rt></ruby>うござんす、……さ、貴客どうぞ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　これは、押出されるは<ruby><rb>酷</rb><rt>ひど</rt></ruby>い。（不承々々に立つ。）</p>
+        <p><persName ref="#oyuri">百合　</persName>（続いて出で、<ruby><rb>押遣</rb><rt>おしや</rt></ruby>るばかりに）どうぞ、お立ち下さいまし。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　婦人ばかりじゃ、ともこうも言われぬか。鉢の木ではないのじゃが、蚊に<ruby><rb>焚</rb><rt>た</rt></ruby>く柴もあるものを、……<persName ref="#tsuneyo"><ruby><rb>常世</rb><rt>つねよ</rt></ruby></persName>の宿なら、こう<ruby><rb>情</rb><rt>なさけ</rt></ruby>なくは扱うまい。……雪の降らぬがせめてもじゃ。</p>
+        <p><persName ref="#oyuri">百合　</persName>真夏土用の百日<ruby><rb>旱</rb><rt>ひでり</rt></ruby>に、たとい雪が降ろうとも、……（と立ちながら、納戸の方を<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>て、<persName ref="#yamasawa-gakuen">学円</persName>に瞳を返す。）御機嫌よう。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　失礼します。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（<ruby><rb>衝</rb><rt>つ</rt></ruby>と<ruby><rb>蚊遣</rb><rt>かやり</rt></ruby>の中に姿を<ruby><rb>顕</rb><rt>あらわ</rt></ruby>し）<persName ref="#yamasawa-gakuen">山沢</persName>、<persName ref="#yamasawa-gakuen">山沢</persName>。（ときっぱり呼ぶ。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　おい、<persName ref="#hagiwara-akira">萩原</persName>、<persName ref="#hagiwara-akira">萩原</persName>か。</p>
+        <p><persName ref="#oyuri">百合　</persName>あれ、<ruby><rb>貴方</rb><rt>あなた</rt></ruby>。（と走り寄って、出足を留めるように、膝を突き手に晃の胸を<ruby><rb>圧</rb><rt>おさ</rt></ruby>える。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>帰りやしない、大丈夫、大丈夫。（と<ruby><rb>低声</rb><rt>こごえ</rt></ruby>に云って）何とも言いようがない、<persName ref="#yamasawa-gakuen">山沢</persName>、まあ――まあ、こちらへ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>私</rb><rt>わし</rt></ruby>も何とも言いようが無い。十に九ツ君だろうと、今ね、顔を見た時、また<ruby><rb>先刻</rb><rt>さっき</rt></ruby>からの様子でもそう思うた、けれども、余り思掛けなし――（引返して<ruby><rb>框</rb><rt>かまち</rt></ruby>に<ruby><rb>来</rb><rt>きた</rt></ruby>り）第一、その頭はどうしたい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>頭もどうかしていると思って、まあ、許して上ってくれ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>埃</rb><rt>ほこり</rt></ruby>ばかりじゃ、失敬するぞ、（と足を<ruby><rb>拭</rb><rt>ふ</rt></ruby>いたなりで座に入る）いや、その頭も頭じゃが、白髪はどうじゃ、白髪はよ？……</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>これか、谷底に<ruby><rb>棲</rb><rt>す</rt></ruby>めばといって、<ruby><rb>大蛇</rb><rt>うわばみ</rt></ruby>に呑まれた<ruby><rb>次第</rb><rt>わけ</rt></ruby>ではない、こいつは<ruby><rb>仮髪</rb><rt>かつら</rt></ruby>だ。（脱いで棄てる。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　ははあ……（と<persName ref="#oyuri">お百合</persName>を<ruby><rb>密</rb><rt>そっ</rt></ruby>と見て）勿論じゃな、その何も……</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>こりゃ、百合と云う。</p>
+        <p><persName ref="#oyuri">お百合</persName>、座に直った晃の膝に、そのまま<ruby><rb>俯伏</rb><rt>うっぷ</rt></ruby>して<ruby><rb>縋</rb><rt>すが</rt></ruby>っている。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<persName ref="#oyuri">お百合</persName>さんか。細君も……何、奥方も……</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>泣く奴があるか、涙を拭いて、<ruby><rb>整然</rb><rt>ちゃん</rt></ruby>として、<ruby><rb>御挨拶</rb><rt>ごあいさつ</rt></ruby>しな。</p>
+        <p>と言ううちに、<ruby><rb>極</rb><rt>きま</rt></ruby>り悪そうに、<persName ref="#oyuri">お百合</persName>は<ruby><rb>衝</rb><rt>つ</rt></ruby>と納戸へかくれる。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>君に背中を<ruby><rb>敲</rb><rt>たた</rt></ruby>かれて、僕の夢が覚めた処で、<placeName ref="#tokyo">東京</placeName>に帰るかって<ruby><rb>憂慮</rb><rt>きづか</rt></ruby>いなんです。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（<persName ref="#oyuri">お百合</persName>の優しさに、涙もろく、ほろりとしながら）いや、<ruby><rb>私</rb><rt>わし</rt></ruby>の顔を見たぐらいで、<persName ref="#hagiwara-akira">萩原</persName>――この夢は覚めんじゃろう。……何、いい夢なら、あえて覚めるには及ばんのじゃ……しかし<persName ref="#hagiwara-akira">萩原</persName>、夢の<ruby><rb>裡</rb><rt>うち</rt></ruby>にも忘れまいが、<placeName ref="#tokyo">東京</placeName>の君の内では親御はじめ、</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>むむ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　君の事で、多少、それは、寿命は縮められたか分らんが、皆まず御無事じゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>ああ、そうか。<ruby><rb>難有</rb><rt>ありがた</rt></ruby>い。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>私</rb><rt>わし</rt></ruby>に礼には及ばない。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>実に済まん！</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　さてこれはどうしたわけじゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>夢だと思って聞いてくれ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　勿論、夢だと思うておる。……</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>委</rb><rt>くわ</rt></ruby>しい事は、夜すがらにも話すとして、知ってる通り……僕は、それ諸国の物語を聞こうと思って、北国筋を<ruby><rb>歩行</rb><rt>ある</rt></ruby>いたんだ。ところが、自身……僕、そのものが<ruby><rb>一条</rb><rt>ひとくだり</rt></ruby>の物語になった訳だ。――魔法つかいは山を取って海に移す、人間を樹にもする、石にもする、石を取って<ruby><rb>木</rb><rt>こ</rt></ruby>の葉にもする。木の葉を<ruby><rb>蛙</rb><rt>かえる</rt></ruby>にもするという、……君もここへ来たばかりで、もの<ruby><rb>語</rb><rt>かたり</rt></ruby>の中の人になったろう……僕はもう一層、その上を、物語、そのものになったんだ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　薄気味の悪い事を云うな。では、君の細君は、……（云いつつ<ruby><rb>憚</rb><rt>はばか</rt></ruby>る。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（納戸を振向く）<ruby><rb>衣服</rb><rt>きもの</rt></ruby>でも着換えるか、髪など<ruby><rb>撫</rb><rt>なで</rt></ruby>つけているだろう。……<ruby><rb>襖</rb><rt>ふすま</rt></ruby>一重だから、背戸へ出た。……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（伸上り納戸越に透かして見て）おい、水があるか、<ruby><rb>蘆</rb><rt>あし</rt></ruby>の葉の前に、<ruby><rb>櫛</rb><rt>くし</rt></ruby>にも月の光が<ruby><rb>射</rb><rt>さ</rt></ruby>して、<ruby><rb>仮髪</rb><rt>かつら</rt></ruby>をはずした髪の<ruby><rb>艶</rb><rt>つや</rt></ruby>、雪国と聞くせいか、まだ消残って白いように、襟脚、脊筋も透通る。……<ruby><rb>凄</rb><rt>すご</rt></ruby>いまで美しいが、……何か、細君は魔法つかいか。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>可哀想</rb><rt>かわいそう</rt></ruby>な事を言え、まさか。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　ふん。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>この土地、この里――この<placeName ref="#kotohikidani">琴弾谷</placeName>が、<ruby><rb>一個</rb><rt>ひとつ</rt></ruby>の魔法つかいだと云うんだよ。――</p>
+        <p><persName ref="#yamasawa-gakuen">山沢</persName>、君は、この山奥の、<placeName ref="#yashagaike">夜叉ヶ池</placeName>というのを聞いたか。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　聞いた。しかもその池を見ようと思って、<placeName ref="#imajo-eki"><ruby><rb>今庄</rb><rt>いまじょう</rt></ruby>駅</placeName>から五里ばかり、わざわざここまで<ruby><rb>入込</rb><rt>いりこ</rt></ruby>んだのじゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>僕も<ruby><rb>一昨年</rb><rt>おととし</rt></ruby>、その池を見ようと思って、ただ一人、この谷へ入ったために、こういう次第になったんだ。――ここに鐘がある――</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　ある！　何か、明六つ、暮六つ……<ruby><rb>丑満</rb><rt>うしみつ</rt></ruby>、と一昼夜に三度鳴らす。その他は一切音をさせない<ruby><rb>定</rb><rt>さだめ</rt></ruby>じゃと聞いたが。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>そうだよ。定として、他は一切音をさせてはならない、と一所にな、一日一夜に三度ずつは必ず鳴らさねばならないんだ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　それは？</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>ここに伝説がある。昔、人と水と戦って、この里の滅びようとした時、<ruby><rb>越</rb><rt>えつ</rt></ruby>の<ruby><rb>大徳<persName ref="#taicho">泰澄</persName></rb><rt>だいとくたいちょう</rt></ruby>が<ruby><rb>行力</rb><rt>ぎょうりき</rt></ruby>で、竜神をその<placeName ref="#yashagaike">夜叉ヶ池</placeName>に<ruby><rb>封込</rb><rt>ふうじこ</rt></ruby>んだ。竜神の言うには、人の<ruby><rb>溺</rb><rt>おぼ</rt></ruby>れ、地の沈むを救うために、自由を奪わるるは、是非に及ばん。そのかわりに鐘を鋳て、<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に掛けて、昼夜に三度ずつ<ruby><rb>撞鳴</rb><rt>つきな</rt></ruby>らして、我を驚かし、その約束を思出させよ。……我が性は自由を想う。自在を欲する。気ままを望む。ともすれば、<ruby><rb>誓</rb><rt>ちかい</rt></ruby>を忘れて、狭き池の水をして<placeName ref="#hokurikudo">北陸七道</placeName>に<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>らそうとする。我が自由のためには、世の人畜の生命など、ものの数ともするものでない。が、約束は<ruby><rb>違</rb><rt>たが</rt></ruby>えぬ、誓は破らん――但しその約束、その誓を忘れさせまい。思出させようとするために、鐘を<ruby><rb>撞</rb><rt>つ</rt></ruby>く事を怠るな。――<persName ref="#yamasawa-gakuen">山沢</persName>、そのために鋳た鐘なんだよ。だから一度でも忘れると、たちどころに、<ruby><rb>大雨</rb><rt>たいう</rt></ruby>、<ruby><rb>大雷</rb><rt>だいらい</rt></ruby>、大風とともに、<placeName ref="#yashagaike">夜叉ヶ池</placeName>から津浪が起って、村も里も水の底に葬って、竜神は想うままに天地を<ruby><rb>馳</rb><rt>は</rt></ruby>すると……こう、この土地で言伝える。……そのために、明六つ、暮六つ、丑満つ鐘を撞く。……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（乗出でて）面白い。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>いや、面白いでは済まない、大切な事です。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いかにも大切な事じゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>ところで、その鐘を撞く、鐘撞き男を誰だと思う。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　君か。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>僕だよ。すなわち<persName ref="#hagiwara-akira">萩原晃</persName>がその<ruby><rb>鐘撞夫</rb><rt>かねつき</rt></ruby>なんだよ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　はてな。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>ここに小屋がある……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　むむ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>鐘撞が住む小屋で、<ruby><rb>一昨年</rb><rt>おととし</rt></ruby>の夏、私が来て、代るまでは、<persName ref="#yatabee"><ruby><rb>弥太兵衛</rb><rt>やたべえ</rt></ruby></persName>と云う七十九になる<ruby><rb>爺様</rb><rt>じいさん</rt></ruby>が一人居て、これは五十年<ruby><rb>以来</rb><rt>このかた</rt></ruby>、いかな一日も欠かす事なく、一昼夜に三度ずつこの鐘を打っていた。</p>
+        <p><persName ref="#yamasawa-gakuen">山沢</persName>、花は人の目を誘う、水は人の心を引く。君も<placeName ref="#yashagaike">夜叉ヶ池</placeName>を見に来たと云う。私がやっぱり、池を見ようと、この里へ来た時、暮六つの鐘が鳴ったんだ。<persName ref="#yatabee">弥太兵衛</persName><ruby><rb>爺</rb><rt>じじい</rt></ruby>に、鐘の<ruby><rb>所謂</rb><rt>いわれ</rt></ruby>を聞きながら、夜があけたら池まで案内させる約束で、小屋へ泊めて貰った処。</p>
+        <p>その夜、<ruby><rb>丑満</rb><rt>うしみつ</rt></ruby>の鐘を撞いて、<ruby><rb>鐘楼</rb><rt>しょうろう</rt></ruby>の高い段から下りると、<ruby><rb>爺</rb><rt>じじい</rt></ruby>は、この<ruby><rb>縁前</rb><rt>えんさき</rt></ruby>で<ruby><rb>打倒</rb><rt>ぶったお</rt></ruby>れた――急病だ。死ぬ<ruby><rb>苦悩</rb><rt>くるしみ</rt></ruby>をしながら、死切れないと云って、<ruby><rb>悶</rb><rt>もだ</rt></ruby>える。――こうした世間だ、もう以前から、村一統鐘の信心が消えている。……<ruby><rb>爺</rb><rt>じい</rt></ruby>が死んだら、誰も鐘を鳴らすものがない。一度でも忘れると、<ruby><rb>掌</rb><rt>たなそこ</rt></ruby>をめぐらさず、田地田畠、陸は水になる、沼になる、<ruby><rb>淵</rb><rt>ふち</rt></ruby>になる。幾万、何千の人の<ruby><rb>生命</rb><rt>いのち</rt></ruby>――それを思うと死ぬるも死切れぬと、<ruby><rb>呻吟</rb><rt>うめ</rt></ruby>いて<ruby><rb>掻</rb><rt>もが</rt></ruby>く。――虫より細い声だけれども、五十年の<ruby><rb>明暮</rb><rt>あけくれ</rt></ruby>を、一生懸命、そうした信仰で鐘楼を守り通した、骨と皮ばかりの<ruby><rb>爺</rb><rt>じい</rt></ruby>が云うのだ。……鐘の<ruby><rb>自</rb><rt>おのず</rt></ruby>から鳴るごとく、僕の耳に響いた。……<ruby><rb>且</rb><rt>かつ</rt></ruby>は臨終の<ruby><rb>苦患</rb><rt>くげん</rt></ruby>の<ruby><rb>可哀</rb><rt>あわれ</rt></ruby>さに、安心をさせようと、――心配をするな<ruby><rb>親仁</rb><rt>おやじ</rt></ruby>、鐘は俺が撞いてやる、――とはっきり云うと、世にも嬉しそうに、ニヤニヤと笑って、拝みながら死んだ。その時の顔を今に忘れん。</p>
+        <p>が、まさか、一生、ここに鐘を撞いて終ろうとは思わなかった。丑満は爺が済ました、明六つの鐘一度ばかり、代って撞くぐらいにしか考えなかった。が、まあ、爺が死ぬ、村のものを呼ぼうにも、この通り<ruby><rb>隣家</rb><rt>となり</rt></ruby>に遠い。三度の<ruby><rb>掟</rb><rt>おきて</rt></ruby>でその外は、火にも水にも鐘を撞くことはならないだろう。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　その鳴らしてならないというは、どうした<ruby><rb>次第</rb><rt>わけ</rt></ruby>じゃね？</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>鐘は、高く、ここにあって――その影は、深く<placeName ref="#yashagaike">夜叉ヶ池</placeName>の<ruby><rb>碧潭</rb><rt>へきたん</rt></ruby>に映ると云う。……<ruby><rb>撞木</rb><rt>しゅもく</rt></ruby>を当てて鳴る時は、<ruby><rb>凩</rb><rt>こがらし</rt></ruby>にすら、そよりとも動かない、その池の水が、さらさらと波を立てると聞く。元来、竜神を驚かすために打鳴らすのであるから、三度のほかに騒がしては、礼を欠く事に当る。……</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　その道理じゃ、むむ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>鐘も鳴らせん……処で、不知案内の村を<ruby><rb>駈廻</rb><rt>かけまわ</rt></ruby>って人を集めた、――サア、<persName ref="#yatabee">弥太兵衛</persName>の始末は着いたが、誰も<ruby><rb>承合</rb><rt>うけあ</rt></ruby>って鐘を撞こうと言わない。第一、しかじかであるからと、<ruby><rb>爺</rb><rt>じい</rt></ruby>に聞いた伝説を、先祖の遺言のように<ruby><rb>厳</rb><rt>おごそか</rt></ruby>に言って聞かせると、村のものは<ruby><rb>哄</rb><rt>どっ</rt></ruby>と笑う。……若いものは無理もない。<ruby><rb>老寄</rb><rt>としより</rt></ruby>どもも老寄どもなり、寺の<ruby><rb>和尚</rb><rt>おしょう</rt></ruby>までけろりとして、昔話なら、<persName ref="#momotaro">桃太郎</persName>の宝を取って帰った方が結構でござる、と言う。<ruby><rb>癪</rb><rt>しゃく</rt></ruby>に障った――勝手にしろ、と私もそこから、（と<ruby><rb>框</rb><rt>かまち</rt></ruby>を指し）<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>いて、すたすたとこの谷を出て帰ったんだ。帰る時、<placeName ref="#shikami-mura"><ruby><rb>鹿見村</rb><rt>しかみむら</rt></ruby></placeName>のはずれの土橋の<ruby><rb>袂</rb><rt>たもと</rt></ruby>に、<ruby><rb>榎</rb><rt>えのき</rt></ruby>の樹の下に立ってしょんぼりと見送ったのが、（と調子を低く）あの、<ruby><rb>婦人</rb><rt>おんな</rt></ruby>だ。</p>
+        <p>その日の、明六つの鐘さえ、学校通いの<ruby><rb>小児</rb><rt>こども</rt></ruby>をはじめ、<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>しをして笑う上で、私が撞いた。この様子では、最早や今日から、暮六つの鐘は鳴るまいな！……</p>
+        <p>もしや、岩抜け、山津浪、そうでもない、<ruby><rb>大暴風雨</rb><rt>おおあらし</rt></ruby>で、村の滅びる事があったら、打明けた処……<ruby><rb>他</rb><rt>ほか</rt></ruby>は構わん、……この娘の<ruby><rb>生命</rb><rt>いのち</rt></ruby>もあるまい――待て、二三日、<ruby><rb>鐘堂</rb><rt>つりがねどう</rt></ruby>を俺が守ろう。その内には、とまた四五日、半月、一月を<ruby><rb>経</rb><rt>ふ</rt></ruby>るうちに、早いものよ、足掛け三年。――君に<ruby><rb>逢</rb><rt>あ</rt></ruby>うまで、それさえ忘れた。……また、忘れるために、その上、年に老朽ちて世を離れた、と自分でも<ruby><rb>断念</rb><rt>あきらめ</rt></ruby>のため。……ばかりじゃ無い、……<ruby><rb>雁</rb><rt>かりがね</rt></ruby>、<ruby><rb>燕</rb><rt>つばめ</rt></ruby>の<ruby><rb>行</rb><rt>ゆ</rt></ruby>きかえり、軒なり、空なり、<ruby><rb>行交</rb><rt>ゆきか</rt></ruby>う目を、ちょっとは紛らす事もあろうと、昼間は白髪の<ruby><rb>仮髪</rb><rt>かつら</rt></ruby>を<ruby><rb>被</rb><rt>かむ</rt></ruby>る。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（<ruby><rb>黙然</rb><rt>もくねん</rt></ruby>として顔を見る。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（言葉途絶える）そう顔を見るな、恥入った。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（しばらく、打案じ）すると、あの、……<persName ref="#oyuri">お百合</persName>さんじゃ、その人のために、ここに隠れる気になったと云うのじゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>……ますます恥入る。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いや、恥ずるには及ばん。が、どうじゃ、細君を連れて<placeName ref="#tokyo">東京</placeName>に帰るわけには<ruby><rb>行</rb><rt>ゆ</rt></ruby>かんのかい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>何も三ヶ国と言わん。<placeName ref="#echizen">越前</placeName>一ヶ国とも言わん。われわれ二人が見棄てて去って、この村と、里と、<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に<ruby><rb>棲</rb><rt>す</rt></ruby>むものの生命をどうする。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<persName ref="#hagiwara-akira">萩原</persName>、（と呼びつつ、寄り）で、君はそれを信ずるかい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>信ずる、信ずるようになった。<persName ref="#hagiwara-akira">萩原晃</persName>はいざ知らん、<placeName ref="#echizen">越前</placeName>国<placeName ref="#mikunidake">三国ヶ岳</placeName>の麓、<placeName ref="#shikami-mura">鹿見村</placeName><placeName ref="#kotohikidani"><ruby><rb>琴弾谷</rb><rt>ことひきだに</rt></ruby></placeName>の<ruby><rb>鐘楼守</rb><rt>しょうろうもり</rt></ruby>、百合の夫の二代の<persName ref="#yatabee">弥太兵衛</persName>は<ruby><rb>確</rb><rt>たしか</rt></ruby>に信じる。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（ひたりと洋服の<ruby><rb>胡坐</rb><rt>あぐら</rt></ruby>に手をおき）何にも言わん。そう信ぜい。堅く進ぜい。奥方の人を離れた美しさを見るにつけても、天がこの村のために、<persName ref="#oyuri">お百合</persName>さんを造り置いて、鐘楼守を、ここに据えられたものかも知れん。君たち二人は<ruby><rb>二柱</rb><rt>ふたはしら</rt></ruby>の村の神じゃ。<ruby><rb>就中</rb><rt>なかんずく</rt></ruby>、<persName ref="#oyuri">お百合</persName>さんは女神じゃな。</p>
+        <p><persName ref="#oyuri">百合　</persName>（<ruby><rb>行燈</rb><rt>あんどん</rt></ruby>を手に黒髪美しく立出づる）私、どうしたら<ruby><rb>可</rb><rt>よ</rt></ruby>うございましょう。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　や、これは……</p>
+        <p><persName ref="#oyuri">百合　</persName><ruby><rb>貴客</rb><rt>あなた</rt></ruby>、今ほどは。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　さて、お初に……はははは、奥さん。</p>
+        <p><persName ref="#oyuri">百合　</persName>まあ。……（と恥らう。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>これ、まあ……ではない、よく御挨拶申しな、兄とおなじ人だ。</p>
+        <p><persName ref="#oyuri">百合　</persName>（黙って手をつく。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　はいはい。いや、御挨拶はもう済みました。<ruby><rb>貴女</rb><rt>あなた</rt></ruby><ruby><rb>嚔</rb><rt>くしゃみ</rt></ruby>は出ませなんだか。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>うっかり嚔なんぞすると、蚊が飛出す。</p>
+        <p><persName ref="#oyuri">百合　</persName>あれ、<ruby><rb>沢山</rb><rt>たんと</rt></ruby>おなぶんなさいまし。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>そんなに、お前、<ruby><rb>白粉</rb><rt>おしろい</rt></ruby>を<ruby><rb>粧</rb><rt>つ</rt></ruby>けて。</p>
+        <p><persName ref="#oyuri">百合　</persName>あんな事ばかりおっしゃる。（と優しく<ruby><rb>睨</rb><rt>にら</rt></ruby>んで顔を隠す。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　何にしろ、お<ruby><rb>睦</rb><rt>むつま</rt></ruby>じい……ははははは、勝手にお<ruby><rb>噂</rb><rt>うわさ</rt></ruby>をしましたが、何は、お里方、親御、御兄弟は？</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><persName ref="#yamasawa-gakuen">山沢</persName>、何にもない<ruby><rb>孤児</rb><rt>みなしご</rt></ruby>なんだ。鎮守の<placeName ref="#hachimangu"><ruby><rb>八幡</rb><rt>はちまん</rt></ruby>の宮</placeName>の<ruby><rb>神官</rb><rt>かんぬし</rt></ruby>の一人娘で、その神官の<ruby><rb>父親</rb><rt>おとっ</rt></ruby>さんも亡くなった。叔父があって、それが今、神官の代理をしている。……これの前だが、叔父というのは、<ruby><rb>了簡</rb><rt>りょうけん</rt></ruby>のよくない人でな。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　それはそれは。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>姪</rb><rt>めい</rt></ruby>のこれを、附けつ廻しつしたという大難ぶつです。</p>
+        <p><persName ref="#oyuri">百合　</persName>ほんとうに、たよりのない<ruby><rb>身体</rb><rt>からだ</rt></ruby>でございます。何にも存じません、<ruby><rb>不束</rb><rt>ふつつか</rt></ruby>ものでございますけれど、<ruby><rb>貴客</rb><rt>あなた</rt></ruby>、どうぞ御ふびんをお懸けなすって下さいまし。（しんみりと<persName ref="#yamasawa-gakuen">学円</persName>に向って<ruby><rb>三指</rb><rt>みつゆび</rt></ruby>して云う。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（引き入れられて、思わず涙ぐむ。）御殊勝ですな。他人のようには思いません。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（同じく何となく胸せまる。涙を払って）さあさあ、親類というお言葉なんだ。遠慮のない処、何にも要らん。<ruby><rb>御吹聴</rb><rt>ごふいちょう</rt></ruby>の<ruby><rb>鴫焼</rb><rt>しぎやき</rt></ruby>で一杯つけな。これからゆっくり話すんだ。<persName ref="#yamasawa-gakuen">山沢</persName>、野菜は食わしたいぜ、そりゃ、<ruby><rb>甘</rb><rt>うま</rt></ruby>いぞ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　奥方、お立ちなさるな。トそこでじゃな、<persName ref="#hagiwara-akira">萩原</persName>、<ruby><rb>私</rb><rt>わし</rt></ruby>は志した通り、これから夜を掛けて<placeName ref="#yashagaike">夜叉ヶ池</placeName>を見に<ruby><rb>行</rb><rt>ゆ</rt></ruby>く気じゃ。<ruby><rb>種々</rb><rt>いろいろ</rt></ruby>不思議な話を聞いたら、なお一層見たくなった。御飯はお手料理で<ruby><rb>御馳走</rb><rt>ごちそう</rt></ruby>になろうが、お杯には及ばん、第一、知ってる通り、一滴も飲めやせん。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>成程、そうか、<placeName ref="#yashagaike">夜叉ヶ池</placeName>を見に来たんだ。……<ruby><rb>明日</rb><rt>あした</rt></ruby>にしては、と云うんだけれども、道は一里余り、が、上りが<ruby><rb>嶮</rb><rt>けわ</rt></ruby>しい。この暑さでは夜が<ruby><rb>可</rb><rt>い</rt></ruby>い。しかし、四五日は帰さんから、明日の晩にしてくれないかい。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いや、学校がある。これでも学生の方ではないから勝手に休めん。第一、遊び過ぎて、もう切詰めじゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>それは困った、学校は？……<ruby><rb>先刻</rb><rt>さっき</rt></ruby>、落着く先は<placeName ref="#kyoto">京都</placeName>だと云ったようだな。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　むむ、去年から。……みやづかえの<ruby><rb>情</rb><rt>なさけ</rt></ruby>なさじゃ。何しろ、急ぐ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>分った、では案内かたがた一所に行く。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　君も。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>……直ぐに出掛けよう。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　それだと、奥方に済まんぞ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>何を<ruby><rb>詰</rb><rt>つま</rt></ruby>らない。</p>
+        <p><persName ref="#oyuri">百合　</persName>いいえ……（と云いしがしおしおと）<ruby><rb>貴方</rb><rt>あなた</rt></ruby>、直ぐにとおっしゃって、……お支度は、……</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>土橋の<ruby><rb>煮染屋</rb><rt>にしめや</rt></ruby>で竹の皮づつみと<ruby><rb>遣</rb><rt>や</rt></ruby>らかす、その方が<ruby><rb>早手廻</rb><rt>はやてまわし</rt></ruby>だ。<ruby><rb>鰊</rb><rt>にしん</rt></ruby>の煮びたし、焼どうふ、<ruby><rb>可</rb><rt>よ</rt></ruby>かろう、<persName ref="#yamasawa-gakuen">山沢</persName>。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　結構じゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>事が決れば早いが<ruby><rb>可</rb><rt>い</rt></ruby>い。<persName ref="#tsuneyo">源佐衛門</persName>は草履で<ruby><rb>可</rb><rt>よ</rt></ruby>し、<persName ref="#saimyoji"><ruby><rb>最明時</rb><rt>さいみょうじ</rt></ruby></persName>どのは、お<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>、お草鞋。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　やあ、おもしろい。奥さん、いずれ<ruby><rb>帰途</rb><rt>かえり</rt></ruby>には寄せて頂く。私は味噌汁が大好きです。<ruby><rb>小菜</rb><rt>こな</rt></ruby>を入れて食べさして<ruby><rb>発</rb><rt>たた</rt></ruby>せて下さい。時に、帰途はいつになろう。……</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>さあ、<ruby><rb>夜</rb><rt>よ</rt></ruby>が短い。明方になろうも知れん。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　明けがた……は<ruby><rb>可</rb><rt>い</rt></ruby>いが、（と草鞋を<ruby><rb>穿</rb><rt>は</rt></ruby>きながら）待て待て、一所に気軽に飛出して、今夜、丑満つの鐘はどうするのじゃ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>百合が心得ておる。先代<persName ref="#yatabee">弥太兵衛</persName>と違う。仙人ではない、生身の人間。病気もする、百合が時々代るんだよ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　では、池のあたりで聞きましょう。――奥方しっかり願います。</p>
+        <p><persName ref="#oyuri">百合　</persName>はい、内をお忘れなさいませんように、私は一生懸命に。（と涙声にて云う。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>……おい、あの、<persName ref="#yatabee">弥太兵衛</persName>が譲りの、お家の<ruby><rb>重宝</rb><rt>ちょうほう</rt></ruby>と云う<ruby><rb>瓢箪</rb><rt>ひょうたん</rt></ruby>を出したり、酒を買う。――それから鎌を貸しな、滅多に人の通わぬ処、路はあっても熊笹ぐらいは切らざあなるまい。……早くおし。</p>
+        <p><persName ref="#oyuri">百合　</persName>はい、はい。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　やあ、どぎどぎと鋭いな。（と鎌を見る。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>月影に……（空へかざす）なお光るんだ。これでも鎌を<ruby><rb>研</rb><rt>と</rt></ruby>ぐことを覚えたぜ。――こっちだ、こっちだ。（と先へ立つ。）</p>
+        <p><persName ref="#oyuri">百合　</persName>お気をつけ遊ばせよ。（とうるみ声にて、送り出づる時、<ruby><rb>可愛</rb><rt>かわゆ</rt></ruby>き人形袖にあり。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>何だい、こんなもの。（見返る。）</p>
+        <p><persName ref="#oyuri">百合　</persName>太郎がちょっとお見送り。（と袖でしめつつ）<ruby><rb>小父</rb><rt>おじ</rt></ruby>ちゃんもお早くお帰りなさいまし、坊やが寂しゅうございます。（と云いながら、<persName ref="#yamasawa-gakuen">学円</persName>の顔をみまもり、<ruby><rb>小家</rb><rt>こや</rt></ruby>の内を指し、うつむいてほろりとする。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（<ruby><rb>庇</rb><rt>かば</rt></ruby>う<ruby><rb>状</rb><rt>さま</rt></ruby>に手を挙げて、また涙ぐみ）<ruby><rb>御道理</rb><rt>ごもっとも</rt></ruby>じゃ、が、大丈夫、夢にも、そんな事が、貴女、（と云って晃に向きかえ）<ruby><rb>私</rb><rt>わし</rt></ruby>に逢うて、里心が出て、君がこれなり帰るまいか、という御心配じゃ。</p>
+        <p><persName ref="#oyuri">百合　</persName>（きまりわるげに、つと<ruby><rb>背向</rb><rt>せむき</rt></ruby>になる。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>ああ、それで<ruby><rb>先刻</rb><rt>さっき</rt></ruby>から……馬鹿、<ruby><rb>嬰児</rb><rt>ねんねえ</rt></ruby>だな。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　何かい、ちょっと<ruby><rb>出懸</rb><rt>でがけ</rt></ruby>に、キスなどせんでも<ruby><rb>可</rb><rt>い</rt></ruby>いかい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>旦那方じゃあるまいし、<ruby><rb>鐘撞</rb><rt>かねつき</rt></ruby><persName ref="#yatabee">弥太兵衛</persName>でがんすての。</p>
+        <p>と両人連立ち行く。</p>
+        <p><persName ref="#oyuri">百合　</persName>（<ruby><rb>熟</rb><rt>じっ</rt></ruby>としばし）まさかと思うけれど、ねえ、坊や、大丈夫お帰んなさるわねえ。おおおお目ン目を<ruby><rb>瞑</rb><rt>ねむ</rt></ruby>って、<ruby><rb>頷</rb><rt>うなず</rt></ruby>いて、まあ、可愛い。（と<ruby><rb>頬摺</rb><rt>ほおず</rt></ruby>りし）坊やは、お<ruby><rb>乳</rb><rt>つぱ</rt></ruby>をおあがりよ。<ruby><rb>母</rb><rt>かあ</rt></ruby>さんは一人でお夕飯も欲しくない。早く片附けてお留守をしましょう。一人だと見て取ると、村の人が<ruby><rb>煩</rb><rt>うるさ</rt></ruby>いから、月は<ruby><rb>可</rb><rt>よ</rt></ruby>し、灯を消して戸をしめて。――</p>
+        <p>と<ruby><rb>框</rb><rt>かまち</rt></ruby>にずッと雨戸を閉める。閉め果てると、戸の<ruby><rb>鍵</rb><rt>かぎ</rt></ruby>がガチリと下りる。やがて、納戸の<ruby><rb>燈</rb><rt>ともしび</rt></ruby>、はっと消ゆ。</p>
+        <p>〽出る化ものの数々は、一ツ目、<ruby><rb>見越</rb><rt>みこし</rt></ruby>、河太郎、<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>に、海坊主、天守に<persName ref="#osakabe">おさかべ</persName>、化猫は<ruby><rb>赤手拭</rb><rt>あかてぬぐい</rt></ruby>、<placeName ref="#shinoda"><ruby><rb>篠田</rb><rt>しのだ</rt></ruby></placeName>に<persName ref="#kuzunoha"><ruby><rb>葛</rb><rt>くず</rt></ruby>の葉</persName>、<ruby><rb>野干平</rb><rt>やかんべい</rt></ruby>、古狸の<ruby><rb>腹鼓</rb><rt>はらつづみ</rt></ruby>、ポコポン、ポコポン、コリャ、ポンポコポン、笛に雨を呼び、酒買小僧、<ruby><rb>鉄漿着女</rb><rt>かねつけおんな</rt></ruby>の、けたけた<ruby><rb>笑</rb><rt>わらい</rt></ruby>、里の男は、のっぺらぼう。</p>
+        <p>と唄――</p>
+        <p><persName ref="#yoju"><ruby><rb>与十</rb><rt>よじゅう</rt></ruby></persName>、竹の<ruby><rb>小笠</rb><rt>おがさ</rt></ruby>を<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>けに、<ruby><rb>鯉</rb><rt>こい</rt></ruby>を一尾、嬉しそうな顔して見て、ニヤニヤと笑って出づ。</p>
+        <p><persName ref="#yoju">与十</persName>　<ruby><rb>大</rb><rt>でか</rt></ruby>い事をしたぞ。へい、雪さ豊年の<ruby><rb>兆</rb><rt>しるし</rt></ruby>だちゅう、<ruby><rb>旱</rb><rt>ひでり</rt></ruby>は<ruby><rb>魚</rb><rt>うお</rt></ruby>の当りだんべい。大沼小沼が干たせいか、じょんじょろ水に、びちゃびちゃと泳いだ処を、ちょろりと<ruby><rb>掬</rb><rt>しゃく</rt></ruby>った。……（鯉跳ねる）わい！　銀の<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>だ。ずずんと重い。四貫目あるべい。村長様が、<ruby><rb>大囲炉裡</rb><rt>おおいろり</rt></ruby>の自在竹に掛った滝登りより、えッと<ruby><rb>大</rb><rt>でっけ</rt></ruby>え。こりゃ<ruby><rb>己</rb><rt>おら</rt></ruby>がで食おうより、村会議員の<ruby><rb>髯</rb><rt>ひげ</rt></ruby>どのに売るべいわさ。やれ、鯉。髯どのに身売をしろじゃ。値になれ、値になれ。（鯉跳ねる）ふあ、銀の鱗だ。<ruby><rb>金</rb><rt>かね</rt></ruby>が光る――光るてえば、鱗てえば、ここな、（と小屋を見て）<ruby><rb>鐘撞</rb><rt>かねつき</rt></ruby>先生が<ruby><rb>打</rb><rt>ぶ</rt></ruby>ってしめた、<ruby><rb>神官</rb><rt>かんぬし</rt></ruby>様の嬢様さあ、お宮の<ruby><rb>住居</rb><rt>すまい</rt></ruby>にござった時分は、背中に八枚鱗が生えた蛇体だと云っけえな。……そんではい、夜さり、夜ばいものが、寝床を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>くと、いつでもへい、<ruby><rb>白蛇</rb><rt>しろへび</rt></ruby>の<ruby><rb>長</rb><rt>なげ</rt></ruby>いのが、嬢様のめぐり廻って、のたくるちッて、現に、はい、目のくり球廻らかいて火を吹いた<ruby><rb>奴</rb><rt>やつ</rt></ruby>さえあっけえ。……</p>
+        <p>鐘撞先生には何事もねえと見えるだ。まんだ、丈夫に<ruby><rb>活</rb><rt>い</rt></ruby>きてござって、<ruby><rb>執殺</rb><rt>とりころ</rt></ruby>されもさっしゃらねえ。見ろやい、取っても着けねえ処に、銀の鱗さ、ぴかぴかと月に光るちッて、<ruby><rb>汝</rb><rt>われ</rt></ruby>がを、（と鯉をじろじろ）ばけものか蛇体と想うて、手を出さずば、うまい酒にもありつけぬ処だったちゅうものだ。――嬢様が手本だよ。はってな、今時分、<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>だ。<ruby><rb>舐殺</rb><rt>なめころ</rt></ruby>されはしねえだかん、待ちろ。（と抜足で寄って、小屋の戸の<ruby><rb>隙間</rb><rt>すきま</rt></ruby>を覗く。）</p>
+        <p><persName ref="#kanigoro"><ruby><rb>蟹五郎</rb><rt>かにごろう</rt></ruby></persName>。朱顔、<ruby><rb>蓬</rb><rt>おどろ</rt></ruby>なる<ruby><rb>赤毛頭</rb><rt>あかげがしら</rt></ruby>、<ruby><rb>緋</rb><rt>ひ</rt></ruby>の衣したる山伏の<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>。<ruby><rb>山牛蒡</rb><rt>やまごぼう</rt></ruby>の葉にて<ruby><rb>捲</rb><rt>ま</rt></ruby>いたる<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を、シャと<ruby><rb>横銜</rb><rt>よこぐわ</rt></ruby>えに、ぱっぱっと煙を噴きながら、両腕を頭上に<ruby><rb>突張</rb><rt>つッぱ</rt></ruby>り、ト<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>を<ruby><rb>極込</rb><rt>きめこ</rt></ruby>み、<ruby><rb>踞</rb><rt>しゃが</rt></ruby>んで<ruby><rb>横這</rb><rt>よこばい</rt></ruby>に、ずかりずかりと<ruby><rb>歩行</rb><rt>ある</rt></ruby>き寄って、<persName ref="#yoju">与十</persName>の<ruby><rb>潜見</rb><rt>すきみ</rt></ruby>する<ruby><rb>向脛</rb><rt>むこうずね</rt></ruby>を、かっきと挟んで引く。</p>
+        <p><persName ref="#yoju">与十</persName>　<ruby><rb>痛</rb><rt>いて</rt></ruby>え。（と叫んで）わっ、（と反る時、鯉ぐるみ竹の小笠を夕顔の蔭に投ぐ。）ひゃあ、<placeName ref="#yabusawa"><ruby><rb>藪沢</rb><rt>やぶさわ</rt></ruby></placeName>の<persName ref="#kanigoro"><ruby><rb>大蟹</rb><rt>おおがに</rt></ruby></persName>だ。人殺し！</p>
+        <p>と<ruby><rb>怪</rb><rt>け</rt></ruby>し飛んで<ruby><rb>遁</rb><rt>に</rt></ruby>ぐ。――<persName ref="#kanigoro">蟹五郎</persName>すかりすかりと横に追う。</p>
+        <p><persName ref="#koishichi"><ruby><rb>鯉七</rb><rt>こいしち</rt></ruby></persName>。鯉の精。夕顔の蔭より、するすると<ruby><rb>顕</rb><rt>あらわ</rt></ruby>る。<ruby><rb>黒白鱗</rb><rt>こくびゃくうろこ</rt></ruby>の<ruby><rb>帷子</rb><rt>かたびら</rt></ruby>、同じ<ruby><rb>鱗形</rb><rt>うろこがた</rt></ruby>の<ruby><rb>裁着</rb><rt>たッつけ</rt></ruby>、<ruby><rb>鰭</rb><rt>ひれ</rt></ruby>のごときひらひら足袋。<ruby><rb>件</rb><rt>くだん</rt></ruby>の竹の小笠に、<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>蔽</rb><rt>おお</rt></ruby>いながら来り、はたとその小笠を<ruby><rb>擲</rb><rt>なげう</rt></ruby>つ。顔白く、口のまわり、べたりと<ruby><rb>髯</rb><rt>ひげ</rt></ruby>黒し。蟹、これを見て引返す。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　（ばくばくと口を開けて、はっと<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>し）ああ、人間が<ruby><rb>旱</rb><rt>ひでり</rt></ruby>の切なさを、今にして思当った。<ruby><rb>某</rb><rt>それがし</rt></ruby>が水離れしたと同然と見える。……おお、<persName ref="#kanigoro">大蟹</persName>、今ほどはお助け嬉しい、<ruby><rb>難有</rb><rt>ありがた</rt></ruby>かったぞ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　水心、魚心だ、その礼に及ぼうかい。また、だが、滝登りもするものが、何じゃとて、笠の台に乗せられた。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　里へ出る近道してな、無理な<ruby><rb>流</rb><rt>ながれ</rt></ruby>を抜けたと思え。石に鰭が<ruby><rb>躓</rb><rt>つまず</rt></ruby>いて、<ruby><rb>膚捌</rb><rt>はださばき</rt></ruby>のならぬ処を、ばッさりと<ruby><rb>啖</rb><rt>くら</rt></ruby>った奴よ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　こいつにか。（と落ちたる笠を挟んで<ruby><rb>圧</rb><rt>おさ</rt></ruby>える。）</p>
+        <p><persName ref="#koishichi">鯉七</persName>　<persName ref="#oniwakamaru">鬼若丸</persName>以来という、難儀に逢わせた。百姓めが、<ruby><rb>汝</rb><rt>うぬ</rt></ruby>。（と笠を<ruby><rb>蹈</rb><rt>ふ</rt></ruby>む。）</p>
+        <p>笠　<ruby><rb>己</rb><rt>おれ</rt></ruby>じゃねえ、己じゃねえ。（と、声ばかりして蔭にて叫ぶ。）</p>
+        <p><persName ref="#koishichi">鯉七</persName>　はあ、いかさま<ruby><rb>汝</rb><rt>きさま</rt></ruby>のせいでもあるまい。助けてやろう――そりゃ行け。やい、稲が実ったら<ruby><rb>案山子</rb><rt>かかし</rt></ruby>になれ！</p>
+        <p>と放す。しかけにて、竹の小笠はたはたと<ruby><rb>煽</rb><rt>あお</rt></ruby>って<ruby><rb>遁</rb><rt>に</rt></ruby>げる。</p>
+        <p>はははは飛ぶわ飛ぶわ、<ruby><rb>南瓜畠</rb><rt>かぼちゃばたけ</rt></ruby>へ潜って<ruby><rb>候</rb><rt>そろ</rt></ruby>。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　人間の首が飛んだ<ruby><rb>状</rb><rt>さま</rt></ruby>だな、<ruby><rb>気味助</rb><rt>きびすけ</rt></ruby>、気味助。かッかッかッ。（と笑い）<persName ref="#koishichi">鯉七</persName>、これからどこへ行く。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　むう、ちと里方へ用がある。ところで滝を下って来た。何が、この頃の<ruby><rb>旱</rb><rt>ひでり</rt></ruby>で、やれ雨が欲しい、それ水をくれろ、と百姓どもが、<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>のお<ruby><rb>住居</rb><rt>すまい</rt></ruby>、<placeName ref="#yashagaike">夜叉ヶ池</placeName>のほとりへ<ruby><rb>五月蠅</rb><rt>うるさ</rt></ruby>きほどに<ruby><rb>集</rb><rt>たか</rt></ruby>って<ruby><rb>来</rb><rt>う</rt></ruby>せる。それはまだ<ruby><rb>可</rb><rt>よ</rt></ruby>い。が、何の<ruby><rb>禁厭</rb><rt>まじない</rt></ruby>か知れぬまで、<ruby><rb>鉄釘</rb><rt>かなくぎ</rt></ruby>、<ruby><rb>鉄火箸</rb><rt>かなひばし</rt></ruby>、<ruby><rb>錆刀</rb><rt>さびがたな</rt></ruby>や、<ruby><rb>破鍋</rb><rt>われなべ</rt></ruby>の尻まで持込むわ。まだしもよ。お供物だと血迷っての、犬の首、猫の頭、目を<ruby><rb>剥</rb><rt>む</rt></ruby>き、<ruby><rb>髯</rb><rt>ひげ</rt></ruby>を動かし、舌をべらべら吐く奴を供えるわ。<ruby><rb>胡瓜</rb><rt>きゅうり</rt></ruby>ならば<placeName ref="#hinogawa">日野川</placeName>の<ruby><rb>河童</rb><rt>かっぱ</rt></ruby>が<ruby><rb>噛</rb><rt>かじ</rt></ruby>ろう、もっての外な、<ruby><rb>汚穢</rb><rt>むそ</rt></ruby>うて汚穢うて、お腰元たちが掃除をするに手が<ruby><rb>懸</rb><rt>かか</rt></ruby>って迷惑だ。</p>
+        <p>ところで、<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>のお乳母どの、<placeName ref="#yunootoge"><ruby><rb>湯尾峠</rb><rt>ゆのおとうげ</rt></ruby></placeName>の<persName ref="#mannen-uba"><ruby><rb>万年姥</rb><rt>まんねんうば</rt></ruby></persName>が、<ruby><rb>某</rb><rt>それがし</rt></ruby>へ内意＝＝降らぬ雨なら降るまでは降らぬ、向後汚いものなど<ruby><rb>撒散</rb><rt>まきち</rt></ruby>らすにおいてはその分に置かぬ＝＝と里へ出て触れい、とある。ためにの、この<ruby><rb>鰭</rb><rt>ひれ</rt></ruby>を煩わす、厄介な人間どもよ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　その事かい、御苦労、御苦労。ところで、大池の<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>には、なかなか雨を下さる<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>は当分ないかい。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　分らんの。旱は何も、<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>御存じの事ではない。第一、<ruby><rb>其許</rb><rt>そこもと</rt></ruby>なども知る通りよ。姫様は、それ、御縁者、<placeName ref="#hakusan"><ruby><rb>白山</rb><rt>はくさん</rt></ruby></placeName>の<placeName ref="#kengamine">剣ヶ峰</placeName><placeName ref="#senjagaike">千蛇ヶ池</placeName>の若旦那にあこがれて、恋し、恋しと、そればかり思詰めてましますもの、人間の旱なんぞ構っている暇があるものかッてい。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　<ruby><rb>神通</rb><rt>じんずう</rt></ruby>広大――俺をはじめ考えるぞ。さまで思悩んでおいでなさらず、両袖で<ruby><rb>飜然</rb><rt>ひらり</rt></ruby>と飛んで、<ruby><rb>疾</rb><rt>はや</rt></ruby>く<placeName ref="#kengamine">剣ヶ峰</placeName>へおいでなさるが<ruby><rb>可</rb><rt>よ</rt></ruby>いではないか。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　そこだの、<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>が座をお移し遊ばすと、それ、たちどころに<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しい大津波が起って、この村里は、人も、馬も、水の底へ沈んでしまう……</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　何が、何が、第一俺が<ruby><rb>住居</rb><rt>すまい</rt></ruby>も広うなる……村が泥沼になるを、何が遠慮だ。勧めろ、勧めろ。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　忘れたか、<ruby><rb>鐘</rb><rt>つりがね</rt></ruby>がここにある。……御先祖以来、人間との堅い約束、夜昼三度、打つ鐘を、<ruby><rb>彼奴等</rb><rt>あいつら</rt></ruby>が忘れぬ<ruby><rb>中</rb><rt>うち</rt></ruby>は、村は滅びぬ天地の<ruby><rb>誓盟</rb><rt>ちかい</rt></ruby>。<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>にも<ruby><rb>随意</rb><rt>まま</rt></ruby>にならぬ。さればこそ、<ruby><rb>御鬱懐</rb><rt>ごうっかい</rt></ruby>、その御ふびんさ、おいとしさを忘れたの。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　<ruby><rb>南無三宝</rb><rt>なむさんぽう</rt></ruby>、堂の下で誓を忘れて、<ruby><rb>鐘</rb><rt>つりがね</rt></ruby>の影を踏もうとした。が、山も<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>も<ruby><rb>晃々</rb><rt>きらきら</rt></ruby>とした月夜だ。まだまだしめった灰も降らぬとなると、俺も沢を出て、山の池、御殿の長屋へ<ruby><rb>行</rb><rt>ゆ</rt></ruby>かずばなるまい。同道を頼むぞ、鯉。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　むむ、その儀は、ぱくりと<ruby><rb>合点</rb><rt>のみこ</rt></ruby>んだ。かわりにはの、道が寂しい……里へは、きこう同道せい。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　<ruby><rb>帰途</rb><rt>かえり</rt></ruby>はお池へ<ruby><rb>伴侶</rb><rt>みちづれ</rt></ruby>だ。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　月の<ruby><rb>畷</rb><rt>なわて</rt></ruby>を、唄うて<ruby><rb>行</rb><rt>ゆ</rt></ruby>こうよ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　何と唄う？</p>
+        <p><persName ref="#koishichi">鯉七</persName>　＝＝山を川にしょう＝＝と唄おうよ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　面白い。</p>
+        <p>と同音に、鯉はふらふらと袖を動かし、蟹は、ぱッぱッと<ruby><rb>煙</rb><rt>けむ</rt></ruby>を吹いて、＝＝山を川にしょう、山を川にしょう＝＝と同音に唄い行く。行掛けて<ruby><rb>淀</rb><rt>よど</rt></ruby>み、<ruby><rb>行途</rb><rt>むこう</rt></ruby>を望む。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　待て、<ruby><rb>見馴</rb><rt>みな</rt></ruby>れぬものが、何やら田の<ruby><rb>畝</rb><rt>あぜ</rt></ruby>を伝うて来る。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　かッかッ、怪しいものだ。<ruby><rb>小蔭</rb><rt>こがく</rt></ruby>れて様子を見んかい。</p>
+        <p>両個、姿を隠す。</p>
+        <p><persName ref="#oyuri">百合　</persName>（人形を抱き、<ruby><rb>媚</rb><rt>なまめ</rt></ruby>かしき風情にて戸を開き<ruby><rb>戸外</rb><rt>こがい</rt></ruby>に出づ。）夜の長い事、長い事……何の夏が<ruby><rb>明易</rb><rt>あけやす</rt></ruby>かろう。坊やも寝られないねえ、――お月様幾つ、お十三、七つ――今も誰やら唄うて通ったのをお聞きかい、――山を川にしょ――ああ、この頃では村の人が、山を川にもしたかろう、お気の毒だわねえ。……まあ、良い月夜、峰の草も見えるような。<persName ref="#hagiwara-akira">晃さん</persName>、お客様の影も、あの、松のあたりに見えようも知れないから、<ruby><rb>鐘堂</rb><rt>かねつきどう</rt></ruby>へ<ruby><rb>上</rb><rt>あが</rt></ruby>りましょうね。……ひょっとかして、袖でも触って鳴ると悪いね、<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>の広場へ出て見ようよ。（と小屋のうらに廻って入る。）</p>
+        <p><persName ref="#namazunyu"><ruby><rb>鯰入</rb><rt>ねんにゅう</rt></ruby></persName>。花道より、濃い鼠すかしの<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>、<ruby><rb>面</rb><rt>つら</rt></ruby>一面に黒し。白き<ruby><rb>二根</rb><rt>にこん</rt></ruby>の<ruby><rb>髯</rb><rt>ひげ</rt></ruby>、鼻下より左右にわかれて長く<ruby><rb>裾</rb><rt>すそ</rt></ruby>まで垂る。墨染の<ruby><rb>法衣</rb><rt>ころも</rt></ruby>を<ruby><rb>絡</rb><rt>まと</rt></ruby>い、<ruby><rb>鰭</rb><rt>ひれ</rt></ruby>の形したる鼠の足袋。<ruby><rb>一本</rb><rt>ひともと</rt></ruby>の<ruby><rb>蘆</rb><rt>あし</rt></ruby>を<ruby><rb>杖</rb><rt>つえ</rt></ruby>つき、片手に<ruby><rb>緋総</rb><rt>ひぶさ</rt></ruby>結びたる、美しき<ruby><rb>文箱</rb><rt>ふばこ</rt></ruby>を捧げて、ふらふらと出で<ruby><rb>来</rb><rt>きた</rt></ruby>る。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　<ruby><rb>遥々</rb><rt>はるばる</rt></ruby>と参った。……もっての外の<ruby><rb>旱魃</rb><rt>かんばつ</rt></ruby>なれば、思うたより道中難儀じゃ。（と<ruby><rb>遥</rb><rt>はるか</rt></ruby>に仰いで）はあ、争われぬ、峰の空に水気が立つ。嬉しや、……<placeName ref="#yashagaike">夜叉ヶ池</placeName>は、あれに近い。（と<ruby><rb>辿</rb><rt>たど</rt></ruby>り寄る。）</p>
+        <p>鯉、蟹、<ruby><rb>前途</rb><rt>ゆくて</rt></ruby>に<ruby><rb>立顕</rb><rt>たちあらわ</rt></ruby>る。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　誰だ。これへ来たは何ものだ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　お山の池の一の関、<placeName ref="#yabusawa"><ruby><rb>藪沢</rb><rt>やぶさわ</rt></ruby></placeName>の<ruby><rb>関守</rb><rt>せきもり</rt></ruby>が控えた。名のって通れ。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　（杖を袖にまき<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>て）さては縁のない衆生でないの。……これは、<placeName ref="#hokurikudo">北陸道</placeName>無双の霊山、<placeName ref="#hakusan">白山</placeName>、<placeName ref="#kengamine">剣ヶ峰</placeName><placeName ref="#senjagaike">千蛇ヶ池</placeName>の<ruby><rb>御公達</rb><rt>ごきんだち</rt></ruby>より、当国、<placeName ref="#mikunidake">三国ヶ岳</placeName><placeName ref="#yashagaike">夜叉ヶ池</placeName>の姫君へ、文づかいに参るものじゃ。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　おお、聞及んだ<persName ref="#namazunyu"><ruby><rb>黒和尚</rb><rt>くろおしょう</rt></ruby></persName>。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　<persName ref="#namazunyu">鯰入</persName>は<ruby><rb>御坊</rb><rt>ごぼう</rt></ruby>かい。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　これは、いずれも姫君のお身内な。<placeName ref="#yashagaike">夜叉ヶ池</placeName>の<ruby><rb>御眷属</rb><rt>ごけんぞく</rt></ruby>か。よい所で出会いました、案内を頼みましょう。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　お<ruby><rb>使</rb><rt>つかい</rt></ruby>、御苦労です。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　ちと申つかった事があって、里へ参る路ではあれども、若君のお使、何は<ruby><rb>措</rb><rt>お</rt></ruby>いてもお供しょう。姫様、お喜びの顔が目に見える。われらもお<ruby><rb>庇</rb><rt>かげ</rt></ruby>で面目を施します、さあ、御坊。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　さあ、御坊。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　（ふと、くなくなとなって<ruby><rb>得</rb><rt>え</rt></ruby>進まず。）しばらく。まず、しばらく。……</p>
+        <p><persName ref="#koishichi">鯉七</persName>　御坊、お<ruby><rb>草臥</rb><rt>くたび</rt></ruby>れなら、手を取りましょう。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　何と腰を押そうかい。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　いやいや疲れはしませぬ。<ruby><rb>尾鰭</rb><rt>おひれ</rt></ruby>はのらのらと跳ねるなれども、ここに、ふと、世にも<ruby><rb>気懸</rb><rt>きがか</rt></ruby>りが出来たじゃまで。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　気懸りとは？　御坊。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　ここまで<ruby><rb>辿</rb><rt>たど</rt></ruby>って、いざ、お池へ参ると思えば、急にこの<ruby><rb>文箱</rb><rt>ふばこ</rt></ruby>が、身にこたえて、ずんと重うなった。その事じゃ。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　恋の重荷と言いますの。お心入れの御状なれば、池に近し、御双方お気が通って、自然と文箱に<ruby><rb>籠</rb><rt>こも</rt></ruby>りましたか。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　またかい。<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>から、御坊へお引出ものなさる。……あの、<ruby><rb>黄金</rb><rt>こがね</rt></ruby><ruby><rb>白銀</rb><rt>しろがね</rt></ruby>、米、<ruby><rb>粟</rb><rt>あわ</rt></ruby>の<ruby><rb>湧</rb><rt>わき</rt></ruby>こぼれる、<ruby><rb>石臼</rb><rt>いしうす</rt></ruby>の<ruby><rb>重量</rb><rt>おもみ</rt></ruby>が響きますかい。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　（<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>として）いや、<ruby><rb>私</rb><rt>わし</rt></ruby>が身に<ruby><rb>応</rb><rt>こた</rt></ruby>えた処は、こりゃ虫が知らすと見えました。<ruby><rb>御褒美</rb><rt>ごほうび</rt></ruby>に遣わさるる石臼なれば<ruby><rb>可</rb><rt>よ</rt></ruby>けれども＝＝この坊主を輪切りにして、スッポン煮を<ruby><rb>賞翫</rb><rt>しょうがん</rt></ruby>あれ、姫、お昼寝の御目覚ましに＝＝と記してあろうも計られぬ。わあ、<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しや。（とわなわなと蘆の杖とともにふるい出す。）</p>
+        <p><persName ref="#koishichi">鯉七</persName>　何でまた、そのような飛んだ事を？　御坊。……</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　いやいや、急に<ruby><rb>文箱</rb><rt>ふばこ</rt></ruby>の重いにつけて、ふと思い出いた<ruby><rb>私</rb><rt>わし</rt></ruby>が身の罪科がござる。さて、言い兼ねましたが打開けて恥を申そう。（と<ruby><rb>頸</rb><rt>うなじ</rt></ruby>をすくめて、頭を<ruby><rb>撫</rb><rt>な</rt></ruby>で）……近頃、<ruby><rb>此方衆</rb><rt>こなたしゅう</rt></ruby>の前ながら、<ruby><rb>館</rb><rt>やかた</rt></ruby>、<placeName ref="#kengamine">剣ヶ峰</placeName><placeName ref="#senjagaike">千蛇ヶ池</placeName>へ――熊に乗って、黒髪を洗いに来た山女の<ruby><rb>年増</rb><rt>としま</rt></ruby>がござった。<ruby><rb>裸身</rb><rt>はだかみ</rt></ruby>の色の白さに、つい、とろとろとなって、面目なや、ぬらり、くらりと鰭を滑らかいてまつわりましたが、フトお<ruby><rb>目触</rb><rt>めざわ</rt></ruby>りとなって、われら若君、もっての外の御機嫌じゃ。――処をこの度の文づかい、泥に潜った閉門中、ただおおせつけの嬉しさに、うかうかと出て参ったが、心付けば、早や鰭の下がくすぽったい。（とまた震う。）</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　かッ、かッ、かッ、（と笑い）御坊、おまめです。あやかりたい。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　笑われますか、<ruby><rb>情</rb><rt>なさけ</rt></ruby>ない。<ruby><rb>生命</rb><rt>いのち</rt></ruby>とまでは無うても、鰭、尾を放て、<ruby><rb>髯</rb><rt>ひげ</rt></ruby>を抜け、とほどには、おふみに遊ばされたに相違はござるまい。……これは<ruby><rb>一期</rb><rt>いちご</rt></ruby>じゃ、何としょう。（と寂しく泣く。）</p>
+        <p>鯉、蟹、これを見て<ruby><rb>囁</rb><rt>ささや</rt></ruby>き、<ruby><rb>頷</rb><rt>うなず</rt></ruby>く。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　いや、御坊、無い事とも言われませぬ。昔も<placeName ref="#omi-kaido">近江街道</placeName>を通る<ruby><rb>馬士</rb><rt>まご</rt></ruby>が、橋の上に立った見も知らぬ<ruby><rb>婦</rb><rt>おんな</rt></ruby>から、十里<ruby><rb>前</rb><rt>さき</rt></ruby>の一里塚の松の下の<ruby><rb>婦</rb><rt>おんな</rt></ruby>へ、と手紙を一通ことづかりし事あり。途中気懸りになって、<ruby><rb>密</rb><rt>そっ</rt></ruby>とその封じ目を切って見たれば、＝＝妹御へ、<ruby><rb>一</rb><rt>ひとつ</rt></ruby>、この馬士の<ruby><rb>腸</rb><rt>はらわた</rt></ruby>一組参らせ<ruby><rb>候</rb><rt>そろ</rt></ruby>＝＝としたためられた――何も知らずに渡そうものなら、腹を<ruby><rb>割</rb><rt>さ</rt></ruby>かるる処であったの。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　はあ、（とどうと尻餅つく。）</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　お笑止だ。かッかッかッ。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　<ruby><rb>幸</rb><rt>さいわい</rt></ruby>、<persName ref="#kanigoro">五郎</persName>が<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>を持ちます……<ruby><rb>密</rb><rt>そっ</rt></ruby>と封を切って、御覧が<ruby><rb>可</rb><rt>よ</rt></ruby>かろう。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　やあ、何と、……それを頼みたいばッかりに恥を<ruby><rb>曝</rb><rt>さら</rt></ruby>した<ruby><rb>世迷言</rb><rt>よまいごと</rt></ruby>じゃ。……嬉しや、大目に見て下さるかのう。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　もっとも、もっとも。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　また……（と声を<ruby><rb>密</rb><rt>ひそ</rt></ruby>めて）恋し<ruby><rb>床</rb><rt>ゆか</rt></ruby>しのお文なれば、そりゃ、われわれどもがなお見たい。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　（わななきながら、文箱を押頂き、紐を解く。）</p>
+        <p>鯉、蟹ひしと寄る。<ruby><rb>蓋</rb><rt>ふた</rt></ruby>を放って<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく見る。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　やあ！</p>
+        <p><persName ref="#koishichi">鯉七</persName>　ええええ。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　やあやあやあ！</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　<ruby><rb>文箱</rb><rt>ふばこ</rt></ruby>の中は水ばかりよ。</p>
+        <p>と云う時、さっと、清き水流れ<ruby><rb>溢</rb><rt>あふ</rt></ruby>る。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　あれあれあれ、<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>が。</p>
+        <p>はっと<persName ref="#namazunyu">鯰入</persName>とともに泳ぐ形に腹ばいになる。蟹は<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>いて手を<ruby><rb>支</rb><rt>つか</rt></ruby>う。――<ruby><rb>迫上</rb><rt>せりあげ</rt></ruby>にて――</p>
+        <p><placeName ref="#yashagaike">夜叉ヶ池</placeName>の<persName ref="#shirayuki">白雪姫</persName>。雪なす<ruby><rb>羅</rb><rt>うすもの</rt></ruby>、水色の地に<ruby><rb>紅</rb><rt>くれない</rt></ruby>の<ruby><rb>焔</rb><rt>ほのお</rt></ruby>を染めたる<ruby><rb>襲衣</rb><rt>したがさね</rt></ruby>、<ruby><rb>黒漆</rb><rt>こくしつ</rt></ruby>に<ruby><rb>銀泥</rb><rt>ぎんでい</rt></ruby>、<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>の帯、<ruby><rb>下締</rb><rt>したじめ</rt></ruby>なし、<ruby><rb>裳</rb><rt>もすそ</rt></ruby>をすらりと、黒髪長く、丈に余る。<ruby><rb>銀</rb><rt>しろがね</rt></ruby>の靴をはき、帯腰に玉のごとく光輝く<ruby><rb>鉄杖</rb><rt>てつじょう</rt></ruby>をはさみ持てり。両手にひろげし<ruby><rb>玉章</rb><rt>たまずさ</rt></ruby>を<ruby><rb>颯</rb><rt>さっ</rt></ruby>と繰落して、<ruby><rb>地摺</rb><rt>ちずり</rt></ruby>に取る。</p>
+        <p>右に、<placeName ref="#yunootoge">湯尾峠</placeName>の<persName ref="#mannen-uba"><ruby><rb>万年姥</rb><rt>まんねんうば</rt></ruby></persName>。針のごとき<ruby><rb>白髪</rb><rt>しらが</rt></ruby>、<ruby><rb>朽葉色</rb><rt>くちばいろ</rt></ruby>の<ruby><rb>帷子</rb><rt>かたびら</rt></ruby>、<ruby><rb>赤前垂</rb><rt>あかまえだれ</rt></ruby>。</p>
+        <p>左に、腰元、<placeName ref="#kinometoge">木の芽峠</placeName>の<persName ref="#yamatsubaki">奥山椿</persName>、<ruby><rb>萌黄</rb><rt>もえぎ</rt></ruby>の<ruby><rb>紋付</rb><rt>もんつき</rt></ruby>、文金の<ruby><rb>高髷</rb><rt>たかまげ</rt></ruby>に<ruby><rb>緋</rb><rt>ひ</rt></ruby>の乙女椿の花を挿す。両方に手を<ruby><rb>支</rb><rt>つ</rt></ruby>いて附添う。</p>
+        <p>十五夜の月出づ。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　ふみを読むのに、月の<ruby><rb>明</rb><rt>あかり</rt></ruby>は、もどかしいな。</p>
+        <p>姥　<ruby><rb>御前様</rb><rt>おんまえさま</rt></ruby>、お<ruby><rb>身体</rb><rt>からだ</rt></ruby>の光りで御覧ずるが<ruby><rb>可</rb><rt>よ</rt></ruby>うござります。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　（<ruby><rb>下襲</rb><rt>したがさね</rt></ruby>を引いて、袖口の炎を<ruby><rb>翳</rb><rt>かざ</rt></ruby>し、やがて読果てて<ruby><rb>恍惚</rb><rt>うっとり</rt></ruby>となる。）</p>
+        <p><persName ref="#yamatsubaki">椿　</persName><ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>。</p>
+        <p>姥　もし、<ruby><rb>御前様</rb><rt>おんまえさま</rt></ruby>。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　<ruby><rb>可懐</rb><rt>なつか</rt></ruby>しい、優しい、嬉しい、お床しい<ruby><rb>音信</rb><rt>たより</rt></ruby>を聞いた。……<ruby><rb>姥</rb><rt>うば</rt></ruby>、私は参るよ。</p>
+        <p>姥　たまたま<ruby><rb>麓</rb><rt>ふもと</rt></ruby>へお<ruby><rb>歩行</rb><rt>ひろい</rt></ruby>が。</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>もうお帰り遊ばしますか。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　どこへ？……（と聞返す。）</p>
+        <p>姥　お<ruby><rb>住居</rb><rt>すまい</rt></ruby>へ。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　何？</p>
+        <p>姥　<placeName ref="#yashagaike">夜叉ヶ池</placeName>へでござりましょう。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　あれ、お前は何を言う……私の行くのは<placeName ref="#kengamine">剣ヶ峰</placeName>だよ。</p>
+        <p>一同　<placeName ref="#kengamine">剣ヶ峰</placeName>へ、とおっしゃりますると？</p>
+        <p><persName ref="#shirayuki">白雪</persName>　聞かずと大事ないものを――<placeName ref="#senjagaike">千蛇ヶ池</placeName>とは知れた事――このおふみの<ruby><rb>許</rb><rt>とこ</rt></ruby>へさ。（と巻戻し<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>に納めて<ruby><rb>抱</rb><rt>いだ</rt></ruby>く。）</p>
+        <p>姥　（居直り）また……<ruby><rb>我儘</rb><rt>わがまま</rt></ruby>を仰せられます。お前様、ここに<ruby><rb>鐘</rb><rt>つりがね</rt></ruby>がござります。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　む、（と<ruby><rb>眦</rb><rt>まなじり</rt></ruby>をあげて、鐘楼を<ruby><rb>屹</rb><rt>きっ</rt></ruby>と見る。）</p>
+        <p>姥　お忘れはなさりますまい。山ながら、川ながら、<ruby><rb>御前様</rb><rt>おんまえさま</rt></ruby>が、お座をお移しなさりますれば、幾万、何千の生類の<ruby><rb>生命</rb><rt>いのち</rt></ruby>を絶たねばなりませぬ。<placeName ref="#kengamine">剣ヶ峰</placeName><placeName ref="#senjagaike">千蛇ヶ池</placeName>の、あの御方様とても同じ事、ここへお運びとなりますと、<placeName ref="#hakusandani">白山谷</placeName>は湖になりますゆえ、そのために<ruby><rb>彼方</rb><rt>かなた</rt></ruby>からも御越の儀は<ruby><rb>叶</rb><rt>かな</rt></ruby>いませぬ。――<ruby><rb>姥</rb><rt>うば</rt></ruby>はじめ胸を痛めます。……おいとしい事なれども、是非ない事にござります。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　そんな、理窟を云って……姥、お前は人間の味方かい。</p>
+        <p>姥　へへ、（<ruby><rb>嘲笑</rb><rt>あざわら</rt></ruby>い）尾のない猿ども、誰がかばいだていたしましょう。……憎ければとて、浅ましければとて、<ruby><rb>気障</rb><rt>きざ</rt></ruby>なればとて、たとい<ruby><rb>仇敵</rb><rt>かたき</rt></ruby>なればと申して、約束はかえられませぬ、誓を破っては相成りませぬ。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　<ruby><rb>誓盟</rb><rt>ちかい</rt></ruby>は、誰がしたえ。</p>
+        <p>姥　御先祖代々、近くは、両、親御様まで、第一お前様に御遺言ではございませぬか。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　知っています。（とつんとひぞる。）</p>
+        <p>姥　もし、お前様、その浅ましい人間でさえ、約束を堅く守って、五百年、七百年、<ruby><rb>盟約</rb><rt>ちかい</rt></ruby>を忘れぬではござりませぬか。盟約を忘れませねばこそ、朝六つ暮六つ丑満つ、と三度の鐘を<ruby><rb>絶</rb><rt>たや</rt></ruby>しませぬ。この鐘の鳴りますうちは、村里を水の底には沈められぬのでござります。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　ええ、<ruby><rb>怨</rb><rt>うら</rt></ruby>めしい……この鐘さえなかったら、（と<ruby><rb>熟</rb><rt>じっ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>て、すらりと立直り）<ruby><rb>衆</rb><rt>みな</rt></ruby>に、ここへ来いとお言い。</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>（立って一方を呼ぶ。）召します。<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>が召しますよ。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　（立上がり一方を）やあ、いずれも早く。（と呼ぶ。）</p>
+        <p><ruby><rb>眷属</rb><rt>けんぞく</rt></ruby>ばらばらと左右に居流る。一同<ruby><rb>得</rb><rt>え</rt></ruby>ものを持てり。<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>おもいおもい、<ruby><rb>鎧</rb><rt>よろい</rt></ruby>を<ruby><rb>着</rb><rt>つけ</rt></ruby>たるもあり、<ruby><rb>髑髏</rb><rt>どくろ</rt></ruby>を<ruby><rb>頭</rb><rt>かしら</rt></ruby>に頂くもあり、百鬼夜行の<ruby><rb>体</rb><rt>てい</rt></ruby>なるべし。</p>
+        <p><persName ref="#itadori-nyudo">虎杖</persName>　<persName ref="#itadori-nyudo"><ruby><rb>虎杖入道</rb><rt>いたどりにゅうどう</rt></ruby></persName>。</p>
+        <p><persName ref="#sabae-taro">鯖江</persName>　<persName ref="#sabae-taro"><ruby><rb>鯖江</rb><rt>さばえ</rt></ruby>ノ太郎</persName>。</p>
+        <p><persName ref="#sabanami-jiro">鯖波</persName>　<persName ref="#sabanami-jiro"><ruby><rb>鯖波</rb><rt>さばなみ</rt></ruby>ノ次郎</persName>。</p>
+        <p>この両個、「兄弟のもの。」と同音に<ruby><rb>名告</rb><rt>なの</rt></ruby>る。</p>
+        <p>塚　<placeName ref="#jusanzuka">十三塚</placeName>の<persName ref="#honeyoseoni"><ruby><rb>骨寄鬼</rb><rt>こつよせおに</rt></ruby></persName>。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　<placeName ref="#yabusawa"><ruby><rb>藪沢</rb><rt>やぶさわ</rt></ruby></placeName>のお関守は既に先刻より。</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>そのほか、<ruby><rb>夥多</rb><rt>あまた</rt></ruby>の<ruby><rb>道陸神</rb><rt>どうろくじん</rt></ruby>たち、こだますだま、<ruby><rb>魑魅</rb><rt>ちみ</rt></ruby>、<ruby><rb>魍魎</rb><rt>もうりょう</rt></ruby>。</p>
+        <p>影法師、おなじ姿のもの夥多あり。目も鼻もなく、あたまからただ灰色の布を<ruby><rb>被</rb><rt>かぶ</rt></ruby>る。</p>
+        <p>影法師　影法師も交りまして。</p>
+        <p>とこの名のる時、ちらちらと<ruby><rb>遠近</rb><rt>おちこち</rt></ruby>に陰火燃ゆ。これよりして明滅す。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　身内の面々、一同参り合せました。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　<ruby><rb>憚</rb><rt>はばか</rt></ruby>りながら法師もこれに。……</p>
+        <p><persName ref="#shirayuki">白雪</persName>　おお、遠い路を、大儀。すぐにお返事を上げましょうね、そのために皆を呼びましたよ。</p>
+        <p>姥　や、<ruby><rb>彼方</rb><rt>あなた</rt></ruby>へお返事につきまして、いずれもを召しました？――仰せつけられまする儀は？</p>
+        <p><persName ref="#shirayuki">白雪</persName>　<ruby><rb>姥</rb><rt>うば</rt></ruby>、どう思うても私は<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。<placeName ref="#kengamine">剣ヶ峰</placeName>へ行かねばならぬ。鐘さえなくば<ruby><rb>盟約</rb><rt>ちかい</rt></ruby>もあるまい……皆が、あの鐘、取って落して、<ruby><rb>微塵</rb><rt>みじん</rt></ruby>になるまで砕いておしまい。</p>
+        <p>姥　ええええ仰せなればと云うて、いずれも必ずお動きあるな。（<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を光らし、姫を<ruby><rb>瞻</rb><rt>みつ</rt></ruby>めて）まだそのようなわやくをおっしゃる。……身うちの衆をお召出し、お言葉がござりましては、わやくが、わやくになりませぬ。天の神々、きこえも<ruby><rb>可恐</rb><rt>おそれ</rt></ruby>じゃ。……<ruby><rb>数</rb><rt>かず</rt></ruby>の人間の<ruby><rb>生命</rb><rt>いのち</rt></ruby>を断つ事、きっとおたしなみなさりませい。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　人の生命のどうなろうと、それを私が知る事か！……恋には我身の生命も要らぬ。……姥、堪忍して<ruby><rb>行</rb><rt>ゆ</rt></ruby>かしておくれ。</p>
+        <p>姥　ああ、お<ruby><rb>最惜</rb><rt>いとし</rt></ruby>い。が、なりますまい。……もう<ruby><rb>多年</rb><rt>しばらく</rt></ruby>御辛抱なさりますと、三十年、五十年とは申しますまい。今の世は仏の末法、<ruby><rb>聖</rb><rt>ひじり</rt></ruby>の<ruby><rb>澆季</rb><rt>ぎょうき</rt></ruby>、<ruby><rb>盟誓</rb><rt>ちかい</rt></ruby>も約束も最早や忘れておりまする。やッと信仰を<ruby><rb>繋</rb><rt>つな</rt></ruby>ぎますのも、あの鐘を、鳥の<ruby><rb>啄</rb><rt>つつ</rt></ruby>いた<ruby><rb>蔓葛</rb><rt>つたかずら</rt></ruby>で<ruby><rb>釣</rb><rt>つる</rt></ruby>しましたようなもの、鎖も<ruby><rb>絆</rb><rt>きずな</rt></ruby>も切れますのは、まのあたりでござります。それまでお<ruby><rb>堪</rb><rt>こら</rt></ruby>えなさりまし。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　あんな気の長い事ばかり。あこがれ慕う心には、<placeName ref="#meido"><ruby><rb>冥土</rb><rt>よみじ</rt></ruby></placeName>の関を据えたとて、<ruby><rb>夜</rb><rt>よ</rt></ruby>のあくるのも待たりょうか。<ruby><rb>可</rb><rt>よ</rt></ruby>し、可し、<ruby><rb>衆</rb><rt>みな</rt></ruby>が<ruby><rb>肯</rb><rt>き</rt></ruby>かずば私が自分で。（と気が入る。）</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>あれ、お姫様。</p>
+        <p>姥　これは何となされます……取棄てて大事ない鐘なら、お前様のお手は待たぬ……身内に仰せまでもない。何、<ruby><rb>唐銅</rb><rt>からかね</rt></ruby>の八千貫、こう<ruby><rb>痩</rb><rt>や</rt></ruby>せさらぼえた姥が腕でも、指で挟んで棄てましょうが、重いは義理でござりまするもの。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　義理や<ruby><rb>掟</rb><rt>おきて</rt></ruby>は、人間の勝手ずく、我と我が身をいましめの縄よ。……鬼、畜生、夜叉、悪鬼、毒蛇と言わるる私が身に、袖とて、<ruby><rb>褄</rb><rt>つま</rt></ruby>とて、恋路を<ruby><rb>塞</rb><rt>ふさ</rt></ruby>いで、遮る雲の<ruby><rb>一重</rb><rt>ひとえ</rt></ruby>もない！……先祖は先祖よ、親は親、お約束なり、<ruby><rb>盟誓</rb><rt>ちかい</rt></ruby>なり、それは都合で遊ばした。人間とても年が<ruby><rb>経</rb><rt>た</rt></ruby>てば、ないがしろにする約束を、<ruby><rb>一呼吸</rb><rt>ひといき</rt></ruby>早く私が破るに、何に<ruby><rb>憚</rb><rt>はばか</rt></ruby>る事がある！　ああ、恋しい人のふみを抱いて、私は心も悩乱した、姥、許して！</p>
+        <p>姥　成程、お気が乱れましたな。<ruby><rb>朝</rb><rt>あけ</rt></ruby>六つ暮六つただ一度、今宵この丑満一つも、人間が怠れば、その時こそは瞬く<ruby><rb>間</rb><rt>ま</rt></ruby>も待ちませぬ。お前様を、この姥がおぶい申して、お靴に雲もつけますまい。人は死のうと、<ruby><rb>溺</rb><rt>おぼ</rt></ruby>れようと、峰は崩れよ、<ruby><rb>麓</rb><rt>ふもと</rt></ruby>は埋れよ。<placeName ref="#kengamine">剣ヶ峰</placeName>まで、ただ一飛び。……この鐘を<ruby><rb>撞</rb><rt>つ</rt></ruby>く<ruby><rb>間</rb><rt>うち</rt></ruby>に、盟誓をお破り遊ばすと、諸神、諸仏が即座のお<ruby><rb>祟</rb><rt>たた</rt></ruby>り、それを何となされます！</p>
+        <p><persName ref="#koishichi">鯉七</persName>　当国には、<placeName ref="#itadorigawa"><ruby><rb>板取</rb><rt>いたどり</rt></ruby></placeName>、<ruby><rb>帰</rb><rt>かえる</rt></ruby>、<placeName ref="#kuzuryu"><ruby><rb>九頭竜</rb><rt>くずりゅう</rt></ruby></placeName>の<ruby><rb>流</rb><rt>ながれ</rt></ruby>を合せて、<placeName ref="#hinogawa">日野川</placeName>の大河。</p>
+        <p><persName ref="#kanigoro">蟹五郎</persName>　<placeName ref="#mino">美濃</placeName>の国には、名だたる<placeName ref="#ibigawa"><ruby><rb>揖斐</rb><rt>いび</rt></ruby>川</placeName>。</p>
+        <p>姥　<ruby><rb>二個</rb><rt>ふたつ</rt></ruby>の川の御支配遊ばす。</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>百万石のお姫様。</p>
+        <p>姥　我ままは……</p>
+        <p>一同　相成りませぬ。</p>
+        <p>姥　お<ruby><rb>身体</rb><rt>からだ</rt></ruby>。</p>
+        <p>一同　大事にござります。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　ええ、<ruby><rb>煩</rb><rt>うるさ</rt></ruby>いな、お前たち。義理も仁義も心得て、<ruby><rb>長生</rb><rt>ながいき</rt></ruby>したくば勝手におし。……<ruby><rb>生命</rb><rt>いのち</rt></ruby>のために恋は棄てない。お<ruby><rb>退</rb><rt>ど</rt></ruby>き、お退き。</p>
+        <p>一同、入乱れて、遮り<ruby><rb>留</rb><rt>とど</rt></ruby>むるを、振払い、<ruby><rb>掻</rb><rt>か</rt></ruby>い<ruby><rb>潜</rb><rt>くぐ</rt></ruby>って、<ruby><rb>果</rb><rt>はて</rt></ruby>は<ruby><rb>真中</rb><rt>まんなか</rt></ruby>に<ruby><rb>取籠</rb><rt>とりこ</rt></ruby>められる。</p>
+        <p>お退きというに、え……</p>
+        <p>とじれて、<ruby><rb>鉄杖</rb><rt>てつじょう</rt></ruby>を抜けば、<ruby><rb>白銀</rb><rt>しろがね</rt></ruby>の色、月に輝き、一同は、はッと<ruby><rb>退</rb><rt>の</rt></ruby>く。姫、するすると寄り、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と石段を<ruby><rb>駈上</rb><rt>かけのぼ</rt></ruby>り、柱に<ruby><rb>縋</rb><rt>すが</rt></ruby>って<ruby><rb>屹</rb><rt>きっ</rt></ruby>と鐘を――</p>
+        <p>諸神、諸仏は知らぬ事、天の<ruby><rb>御罰</rb><rt>ごばち</rt></ruby>を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>っても、<persName ref="#shirayuki">白雪</persName>の身よ、朝日影に、<ruby><rb>情</rb><rt>なさけ</rt></ruby>の水に溶くるは嬉しい。五体は粉に砕けようと、<ruby><rb>八裂</rb><rt>やつざき</rt></ruby>にされようと、恋しい人を血に染めて、燃えあこがるる魂は、<ruby><rb>幽</rb><rt>かすか</rt></ruby>な蛍の光となっても、<placeName ref="#kengamine">剣ヶ峰</placeName>へ飛ばいでおこうか。</p>
+        <p>と<ruby><rb>晃然</rb><rt>こうぜん</rt></ruby>とかざす鉄杖輝く……時に、月夜を<ruby><rb>遥</rb><rt>はるか</rt></ruby>に、唄の声す。</p>
+        <p>＝＝ねんねんよ、おころりよ、ねんねの守はどこへいた、山を越えて里へ<ruby><rb>行</rb><rt>いっ</rt></ruby>た、里の土産に何貰うた、でんでん太鼓に<ruby><rb>笙</rb><rt>しょう</rt></ruby>の笛＝＝</p>
+        <p><persName ref="#shirayuki">白雪</persName>　（じっと聞いて、<ruby><rb>聞惚</rb><rt>ききほ</rt></ruby>れて、<ruby><rb>火焔</rb><rt>かえん</rt></ruby>の<ruby><rb>袂</rb><rt>たもと</rt></ruby>たよたよとなる。やがて石段の下を呼んで）姥、姥、あの声は？……</p>
+        <p>姥　<ruby><rb>社</rb><rt>やしろ</rt></ruby>の百合でござります。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　おお、美しい<persName ref="#oyuri">お百合</persName>さんか、何をしているのだろうね。</p>
+        <p>姥　恋人の晃の留守に、人形を抱きまして、<ruby><rb>心遣</rb><rt>こころや</rt></ruby>りに、子守唄をうたいまする。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　恋しい人と分れている時は、うたを唄えば紛れるものかえ。</p>
+        <p>姥　おおせの通りでござります。</p>
+        <p>一同　<ruby><rb>姫様</rb><rt>ひいさま</rt></ruby>、遊ばして御覧じませぬか。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　思いせまって、つい忘れた。……私がこの村を沈めたら、美しい人の<ruby><rb>生命</rb><rt>いのち</rt></ruby>もあるまい。鐘を<ruby><rb>撞</rb><rt>つ</rt></ruby>けば<ruby><rb>仇</rb><rt>あだ</rt></ruby>だけれども、（と石段を<ruby><rb>静</rb><rt>しずか</rt></ruby>に下りつつ）この<ruby><rb>家</rb><rt>や</rt></ruby>の二人は、<ruby><rb>嫉</rb><rt>ねたま</rt></ruby>しいが、<ruby><rb>羨</rb><rt>うらやま</rt></ruby>しい。姥、おとなしゅうして、あやかろうな。</p>
+        <p>姥　（はらはらと落涙して）お嬉しゅう存じまする。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　（椿に）お前も唄うかい。</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>はい、いろいろのを存じております。</p>
+        <p><persName ref="#koishichi">鯉七</persName>　いや、お腰元衆、いろいろ知ったは結構だが、近ごろはやる＝＝池の鯉よ、<ruby><rb>緋鯉</rb><rt>ひごい</rt></ruby>よ、早く出て<ruby><rb>麩</rb><rt>ふ</rt></ruby>を食え＝＝なぞと、馬鹿にしたようなのはお唄いなさるな、失礼千万、御機嫌を損じよう。</p>
+        <p><persName ref="#yamatsubaki">椿　</persName>まあ……お前さんが、身勝手な。</p>
+        <p>一同　（どっと笑う。）――</p>
+        <p><persName ref="#shirayuki">白雪</persName>　人形抱いて、私も唄おう……<placeName ref="#kengamine">剣ヶ峰</placeName>のおつかい。</p>
+        <p><persName ref="#namazunyu">鯰入</persName>　はあ、はあ、はッ。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　お返事を上げよう……一所に――椿や、<ruby><rb>文箱</rb><rt>ふばこ</rt></ruby>をお預り。――<ruby><rb>衆</rb><rt>みな</rt></ruby>も御苦労であった。</p>
+        <p>一同敬う。＝でんでん太鼓に<ruby><rb>笙</rb><rt>しょう</rt></ruby>の笛、起上り<ruby><rb>小法師</rb><rt>こぼし</rt></ruby>に<ruby><rb>風車</rb><rt>かざぐるま</rt></ruby>＝＝と唄うを聞きつつ、左右に分れて、おいおいに一同入る。陰火全く消ゆ。</p>
+        <p>月あかりのみ。遠くに犬<ruby><rb>吠</rb><rt>ほ</rt></ruby>え、近く<ruby><rb>五位鷺</rb><rt>ごいさぎ</rt></ruby><ruby><rb>啼</rb><rt>な</rt></ruby>く。</p>
+        <p><persName ref="#oyuri">お百合</persName>、いきを切って、<ruby><rb>褄</rb><rt>つま</rt></ruby>もはらはらと<ruby><rb>遁</rb><rt>に</rt></ruby>げ帰り、<ruby><rb>小家</rb><rt>こや</rt></ruby>の内に<ruby><rb>駈入</rb><rt>かけい</rt></ruby>り、隠る。あとより、村長<persName ref="#hatagami-kadenji"><ruby><rb>畑上嘉伝次</rb><rt>はたがみかでんじ</rt></ruby></persName>、村の有志<persName ref="#gondo-kanpachi"><ruby><rb>権藤</rb><rt>ごんどう</rt></ruby>管八</persName>、小学校教員<persName ref="#saida-hatsuo">斎田初雄</persName>、村のものともに<ruby><rb>追掛</rb><rt>おっか</rt></ruby>け出づ。一方より、神官代理<persName ref="#shikami-takuzen"><ruby><rb>鹿見宅膳</rb><rt>しかみたくぜん</rt></ruby></persName>、<ruby><rb>小力士</rb><rt>こりきし</rt></ruby>、<persName ref="#kogarasu-furosuke"><ruby><rb>小烏風呂助</rb><rt>こがらすふろすけ</rt></ruby></persName>と、<ruby><rb>前後</rb><rt>あとさき</rt></ruby>に村のもの五人ばかり、<ruby><rb>烏帽子</rb><rt>えぼし</rt></ruby>、<ruby><rb>素袍</rb><rt>すおう</rt></ruby>、<ruby><rb>雑式</rb><rt>ぞうしき</rt></ruby>、<ruby><rb>仕丁</rb><rt>しちょう</rt></ruby>の<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>にて、一頭の<ruby><rb>真黒</rb><rt>まっくろ</rt></ruby>き大牛を率いて出づ。牛の手綱は、小力士これを取る。</p>
+        <p>村一　内へ隠れただ、内へ隠れただ。</p>
+        <p>村二　<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>だあ。</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　<ruby><rb>灯</rb><rt>あかり</rt></ruby>を消したって夏の虫だに。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　<ruby><rb>踏込</rb><rt>ふんご</rt></ruby>んで<ruby><rb>引摺出</rb><rt>ひきずりだ</rt></ruby>せ。</p>
+        <p>村のもの四五人、ばらばらと<ruby><rb>跳込</rb><rt>おどりこ</rt></ruby>む。内に、あれあれと言う声。雨戸ばらばらとはずるる。</p>
+        <p><ruby><rb>真中</rb><rt>まんなか</rt></ruby>に<ruby><rb>屹</rb><rt>きっ</rt></ruby>となり――左右を支えて、</p>
+        <p><persName ref="#oyuri">百合　</persName>何をおしだ、人の内へ。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　人の内も我が内もあるものかい。鹿見一郡六ヶ村。</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　<ruby><rb>焼土</rb><rt>やけつち</rt></ruby>になろう、野原に<ruby><rb>焦</rb><rt>こ</rt></ruby>げようという場合であるです。</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　（ずっと出で）こりゃ、<persName ref="#oyuri">お百合</persName>、見苦しい、何をざわつく。<ruby><rb>唯今</rb><rt>ただいま</rt></ruby>も、途中で言聞かした通りじゃ。<ruby><rb>汝</rb><rt>きさま</rt></ruby>に白羽の矢が立ったで、<ruby><rb>否応</rb><rt>いやおう</rt></ruby>はないわ。六ヶ村の水切れじゃ。米ならば五万石、八千人のために、<ruby><rb>雨乞</rb><rt>あまごい</rt></ruby>の<ruby><rb>犠牲</rb><rt>にえ</rt></ruby>になりましょう！　<ruby><rb>小児</rb><rt>こども</rt></ruby>のうちから知ってもおろうが、絶体絶命の<ruby><rb>旱</rb><rt>ひでり</rt></ruby>の時には、村第一の美女を取って<ruby><rb>裸体</rb><rt>はだか</rt></ruby>に<ruby><rb>剥</rb><rt>む</rt></ruby>き……</p>
+        <p><persName ref="#oyuri">百合　</persName>ええ。（と震える。）</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　黒牛の背に、<ruby><rb>鞍</rb><rt>くら</rt></ruby>置かず、荒縄に<ruby><rb>縛</rb><rt>いまし</rt></ruby>める。や、もっとも神妙に覚悟して乗って<ruby><rb>行</rb><rt>ゆ</rt></ruby>けば縛るには及ばんてさ。……すなわち、草を分けて山の腹に引上せ、<placeName ref="#yashagaike">夜叉ヶ池</placeName>の竜神に、この<ruby><rb>犠牲</rb><rt>いけにえ</rt></ruby>を奉るじゃ。が、<ruby><rb>生命</rb><rt>いのち</rt></ruby>は取らぬ。さるかわり、背に<ruby><rb>裸身</rb><rt>はだかみ</rt></ruby>の美女を乗せたまま、池のほとりで牛を<ruby><rb>屠</rb><rt>ほふ</rt></ruby>って、角ある<ruby><rb>頭</rb><rt>こうべ</rt></ruby>と、尾を添えて、これを供える。……肉は取って、村一同<ruby><rb>冷酒</rb><rt>ひやざけ</rt></ruby>を飲んで<ruby><rb>啖</rb><rt>くら</rt></ruby>えば、一天たちまち墨を流して、三日の雨が<ruby><rb>降灌</rb><rt>ふりそそ</rt></ruby>ぐ。田も<ruby><rb>畠</rb><rt>はた</rt></ruby>も<ruby><rb>蘇生</rb><rt>よみがえ</rt></ruby>るとあるわい。昔から一度もその<ruby><rb>験</rb><rt>しるし</rt></ruby>のない事はない。<persName ref="#oyuri">お百合</persName>、それだけの事じゃ。我慢して、村長閣下の前につけても御奉公申上げい。さあ、立とう、立ちましょう。</p>
+        <p><persName ref="#oyuri">百合　</persName>叔父さん、何にも申しません、どうぞ、あの、<persName ref="#hagiwara-akira">晃さん</persName>、旦那様のお帰りまでお待ちなすって下さいまし。もし、皆さん、堪忍して下さいまし。……手を合せて拝みます。そ、そんな事が、まあ、私に……</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　何だとう？</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　<ruby><rb>貴女</rb><rt>あなた</rt></ruby>、<persName ref="#oyuri">お百合</persName>さん、何ですか。</p>
+        <p><persName ref="#oyuri">百合　</persName>叔父さん、後生でございます……<persName ref="#hagiwara-akira">晃さん</persName>の帰りますまで。</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　またしても旦那様じゃ。晃、晃と<ruby><rb>呆</rb><rt>あき</rt></ruby>れた<ruby><rb>奴</rb><rt>やつ</rt></ruby>めが。これ、<ruby><rb>潮</rb><rt>うしお</rt></ruby>の<ruby><rb>満干</rb><rt>みちひ</rt></ruby>、月の数……今日の今夜の<ruby><rb>丑満</rb><rt>うしみつ</rt></ruby>は過されぬ。立ちましょう、立ちましょう。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　言うことを<ruby><rb>肯</rb><rt>き</rt></ruby>かんと<ruby><rb>縛</rb><rt>くく</rt></ruby>り上げるぞ。</p>
+        <p><persName ref="#hatagami-kadenji">嘉伝次</persName>　村、<ruby><rb>郡</rb><rt>こおり</rt></ruby>のためじゃ、是非がない。これ、はい、気の毒なものじゃわい。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　お<ruby><rb>神官</rb><rt>かんぬし</rt></ruby>、こりゃいかんでえ？</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　<ruby><rb>引立</rb><rt>ひった</rt></ruby>てて<ruby><rb>可</rb><rt>よ</rt></ruby>うござる。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　来い、それ。</p>
+        <p>と村のもの取込むる。百合<ruby><rb>遁</rb><rt>に</rt></ruby>げ迷う。</p>
+        <p><persName ref="#kogarasu-furosuke">風呂助</persName>　<ruby><rb>埒</rb><rt>らち</rt></ruby>あかんのう。<ruby><rb>私</rb><rt>わし</rt></ruby>にまかせたが可うござんす。</p>
+        <p>とのさばり<ruby><rb>掛</rb><rt>かか</rt></ruby>り、手もなく<ruby><rb>抱</rb><rt>だき</rt></ruby>すくめて<ruby><rb>掴</rb><rt>つか</rt></ruby>み行く。<ruby><rb>仕丁</rb><rt>しちょう</rt></ruby>手伝い、牛の背に<ruby><rb>仰</rb><rt>あおむ</rt></ruby>けざまに置く。</p>
+        <p><persName ref="#oyuri">百合　</persName>ああれ。（と<ruby><rb>悶</rb><rt>もだ</rt></ruby>ゆる。）</p>
+        <p>胴にまわし、ぐるぐると縄を<ruby><rb>捲</rb><rt>ま</rt></ruby>く。<persName ref="#oyuri">お百合</persName><ruby><rb>背</rb><rt>せな</rt></ruby>を<ruby><rb>捻</rb><rt>ね</rt></ruby>じて<ruby><rb>面</rb><rt>おもて</rt></ruby>を伏す。黒髪<ruby><rb>颯</rb><rt>さっ</rt></ruby>と乱れて長く牛の<ruby><rb>鰭爪</rb><rt>ひづめ</rt></ruby>に落つ。</p>
+        <p><persName ref="#hatagami-kadenji">嘉伝次</persName>　<persName ref="#shikami-takuzen">宅膳</persName>どん、こりゃ、きものを着ていて<ruby><rb>可</rb><rt>よ</rt></ruby>いかい。</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　はあ、いずれ、<ruby><rb>社</rb><rt>やしろ</rt></ruby>の森へ参って、式のごとく本支度に及びまするて。社務所には、既に、近頃このあたりの大地主になれらましたる代議士閣下をはじめ、お歴々衆、村民一同の事をお<ruby><rb>憂慮</rb><rt>きづかい</rt></ruby>なされて、<ruby><rb>雨乞</rb><rt>あまごい</rt></ruby>の模様を御見物にお揃いでござりますてな。</p>
+        <p><persName ref="#hatagami-kadenji">嘉伝次</persName>　その事じゃっけね。</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　皆、急ぐです。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　諸君努力せよかね、はははは。</p>
+        <p>一同、どやどやと<ruby><rb>行</rb><rt>ゆ</rt></ruby>きかかる。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（<ruby><rb>衝</rb><rt>つ</rt></ruby>と来り、<ruby><rb>前途</rb><rt>ゆくて</rt></ruby>に立って、<ruby><rb>屹</rb><rt>きっ</rt></ruby>と見るより、仕丁を左右へ払いのけ、はた、と<ruby><rb>睨</rb><rt>にら</rt></ruby>んで、牛の<ruby><rb>鼻頭</rb><rt>はなづら</rt></ruby>を取って向け、<ruby><rb>手縄</rb><rt>たづな</rt></ruby>を、ぐい、と<ruby><rb>緊</rb><rt>し</rt></ruby>めて、ずかずか我家の前。腰なる鎌を抜くや否や、無言のまま、<persName ref="#oyuri">お百合</persName>のいましめの縄をふッと切る。）</p>
+        <p><persName ref="#oyuri">百合　</persName>（一目見て）おお<persName ref="#hagiwara-akira">晃さん</persName>、（ところげ落ち、晃のうしろに身をかくして、帯の腰に<ruby><rb>取縋</rb><rt>とりすが</rt></ruby>り）旦那様、いい処へ。<ruby><rb>貴下</rb><rt>あなた</rt></ruby>。どうして、まあ、よく、まあ、早う帰って下さいました、ねえ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（百合を<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に<ruby><rb>庇</rb><rt>かば</rt></ruby>い、<ruby><rb>利鎌</rb><rt>とがま</rt></ruby>を<ruby><rb>逆手</rb><rt>さかて</rt></ruby>に、大勢を<ruby><rb>睨</rb><rt>ね</rt></ruby>めつけながら、落着いたる声にて）ああ、<placeName ref="#yashagaike">夜叉ヶ池</placeName>へ――<ruby><rb>山路</rb><rt>やまみち</rt></ruby>、三の一ばかり上った処で、峰裏<ruby><rb>幽</rb><rt>かすか</rt></ruby>に、遠く池ある処と思うあたりで、<ruby><rb>小児</rb><rt>こども</rt></ruby>をあやす、守唄の声が聞えた。……唄の声がこの月に、<ruby><rb>白玉</rb><rt>しらたま</rt></ruby>の露を<ruby><rb>繋</rb><rt>つな</rt></ruby>いで、<ruby><rb>蓬</rb><rt>おどろ</rt></ruby>の草も<ruby><rb>綾</rb><rt>あや</rt></ruby>を織って、目に<ruby><rb>蒼</rb><rt>あお</rt></ruby>く映ったと思え。……<ruby><rb>伴侶</rb><rt>つれ</rt></ruby>が非常に感に打たれた。――<persName ref="#yamasawa-gakuen">山沢</persName>には<ruby><rb>三歳</rb><rt>みッつ</rt></ruby>になる小児がある。……里心が出て堪えられん。月の<ruby><rb>夜路</rb><rt>よみち</rt></ruby>に<ruby><rb>深山路</rb><rt>みやまじ</rt></ruby>かけて、知らない他国に<ruby><rb>徜徉</rb><rt>さまよ</rt></ruby>うことはまた、来る年の<ruby><rb>首途</rb><rt>かどで</rt></ruby>にしよう。帰り風が<ruby><rb>颯</rb><rt>さっ</rt></ruby>と吹く、と<ruby><rb>身体</rb><rt>からだ</rt></ruby>も寒くなったと云う。私もしきりに胸騒ぎがする。すぐに<ruby><rb>引返</rb><rt>ひっかえ</rt></ruby>して帰ったんだよ。（と<ruby><rb>穏</rb><rt>おだやか</rt></ruby>に、百合に向って言い果てると、すッと立って、<ruby><rb>瓢</rb><rt>ひさご</rt></ruby>を<ruby><rb>逆</rb><rt>さかさ</rt></ruby>に、月を仰いで、ごッと飲む。）</p>
+        <p>百合、のび上って、晃が<ruby><rb>紐</rb><rt>ひも</rt></ruby>を押え<ruby><rb>頸</rb><rt>くび</rt></ruby>に掛けたる<ruby><rb>小笠</rb><rt>おがさ</rt></ruby>を取り、瓢を引く。晃はなすを、受け取って<ruby><rb>框</rb><rt>かまち</rt></ruby>におく。すぐに、鎌を取ろうとする。晃、手を振って放さず、<persName ref="#oyuri">お百合</persName>、しかとその晃の鎌を持つ手に縋りいる。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>帰れ、君たちア何をしている。</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　<ruby><rb>更</rb><rt>あらた</rt></ruby>めて断るですがね、君、お気の毒だけれども、もう、村を立去ってくれたまえ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>俺をこの村に置かんと云うのか。</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　しかりです。――御承知でもあるでしょう、また御承知がなければ、恐らく<ruby><rb>白痴</rb><rt>ばか</rt></ruby>と言わんけりゃならんですが、この<ruby><rb>旱</rb><rt>ひでり</rt></ruby>です、<ruby><rb>旱魃</rb><rt>かんばつ</rt></ruby>です。……一滴の雨といえども、千金、むしろ万金の場合にですな。君が迷信さるる処のその<ruby><rb>鐘</rb><rt>つりがね</rt></ruby>はです。一度でも鳴らさない時はすなわちその、村が湖になると云うです。湖になる……結構ですな。望む処である、です、から、して、からに、そのすなわちです。今夜からしてお<ruby><rb>撞</rb><rt>つ</rt></ruby>きなさらない事にしたいのです。鐘を撞かん事になってみる日になってみると、いたしてから、その、鐘を撞くための君はですな、名は権助と云うかどうかは分からんですが、ええん！</p>
+        <p>村二三　ひやひや。（と云う。）</p>
+        <p>村四五　<ruby><rb>撞木野郎</rb><rt>しゅもくやろう</rt></ruby>、<ruby><rb>丸太棒</rb><rt>まるたんぼう</rt></ruby>。（と怒鳴る。）</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　えへん、君はこの村において、<ruby><rb>肥料</rb><rt>こやし</rt></ruby>の<ruby><rb>糟</rb><rt>かす</rt></ruby>にもならない、更に、あえて、しかしてその、いささかも用のない人です。故にです、故にですな、我々一統が、鐘を、お撞きになるのを、お断りを、しますと同時に、村を、お立ち去りの事を宣告するのであるです。</p>
+        <p>村二三　そうだ、そうだとも。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>望む処だ。……鐘を守るとも守るまいとも、勝手にしろと言わるるから、俺には約束がある……義に<ruby><rb>依</rb><rt>よっ</rt></ruby>て守っていたんだ。鳴らすなと言うに、誰がすき好んで鐘を撞くか。勿論、即時にここを去る。</p>
+        <p>村四五　出て<ruby><rb>行</rb><rt>ゆ</rt></ruby>け、出て行け。（と<ruby><rb>異口同音</rb><rt>くちぐち</rt></ruby>。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><persName ref="#oyuri">お百合</persName><ruby><rb>行</rb><rt>ゆ</rt></ruby>こう。――（そのいそいそ見繕いするを見て）支度が要るか、<ruby><rb>跣足</rb><rt>はだし</rt></ruby>で来い。<ruby><rb>茨</rb><rt>いばら</rt></ruby>の路は<ruby><rb>負</rb><rt>おぶ</rt></ruby>って通る。（と手を引く。）</p>
+        <p><persName ref="#oyuri">お百合</persName>その袖に<ruby><rb>庇</rb><rt>かば</rt></ruby>われて、大勢の前を<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。――忍んで様子を見たる、<persName ref="#yamasawa-gakuen">学円</persName>、この時<ruby><rb>密</rb><rt>そっ</rt></ruby>とその姿を<ruby><rb>顕</rb><rt>あらわ</rt></ruby>す。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　（悪く沈んだ声して）おいおい、おい待て。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（構わず、つかつかと行く。）</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　待て、こら！</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>何だ。（と<ruby><rb>衝</rb><rt>つつ</rt></ruby>と返す。）</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　<ruby><rb>汝</rb><rt>きさま</rt></ruby>、村のものは置いて<ruby><rb>行</rb><rt>ゆ</rt></ruby>け。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><ruby><rb>塵</rb><rt>ちり</rt></ruby>ひとっ<ruby><rb>葉</rb><rt>ぱ</rt></ruby>も持っちゃ行かんよ。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　その<ruby><rb>婦</rb><rt>おんな</rt></ruby>は村のものだ。一所に連れて<ruby><rb>行</rb><rt>ゆ</rt></ruby>く事は出来ないのだ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>いや、この百合は俺の家内だ。</p>
+        <p><persName ref="#hatagami-kadenji">嘉伝次</persName>　黙りなさい。村のものじゃわい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>どこのものでも差支えん、百合は来たいから一所に来る……<ruby><rb>留</rb><rt>とどま</rt></ruby>りたければ留るんだ。それ見ろ、<persName ref="#hagiwara-akira">萩原</persName>に<ruby><rb>縋</rb><rt>すが</rt></ruby>って離れやせん。（微笑して）置いて<ruby><rb>行</rb><rt>ゆ</rt></ruby>けば百合は死のう……人は、心のままに<ruby><rb>活</rb><rt>い</rt></ruby>きねばならない。お前たちどもに分るものか。さあ、<ruby><rb>行</rb><rt>ゆ</rt></ruby>こう。</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　（のしと進み）これこれ若いもの、無分別はためにならんぞ。……<ruby><rb>私</rb><rt>わし</rt></ruby>が<ruby><rb>姪</rb><rt>めい</rt></ruby>は、ただこの村のものばかりではない。一郡六ヶ村、八千の人の<ruby><rb>生命</rb><rt>いのち</rt></ruby>じゃ、<ruby><rb>雨乞</rb><rt>あまごい</rt></ruby>の<ruby><rb>犠牲</rb><rt>にえ</rt></ruby>にしてな。それじゃに、……その犠牲の女を連れて<ruby><rb>行</rb><rt>ゆ</rt></ruby>くのは、八千の人の生命を、お<ruby><rb>主</rb><rt>ぬし</rt></ruby>が奪取って<ruby><rb>行</rb><rt>ゆ</rt></ruby>くも同然。百合を置いて<ruby><rb>行</rb><rt>ゆ</rt></ruby>かん事には、ここは一足も通されんわ。百合は八千の人の生命じゃが。……さあ、どうじゃい。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　しばらく、（声を掛け、<persName ref="#oyuri">お百合</persName>を中に晃と立並ぶ。）その返答は、<persName ref="#hagiwara-akira">萩原</persName>からはしにくかろう。代って<ruby><rb>私</rb><rt>わし</rt></ruby>が言う。――いかにも、<persName ref="#oyuri">お百合</persName>さんは村の<ruby><rb>生命</rb><rt>せいめい</rt></ruby>じゃ。それなればこそ、<ruby><rb>華冑</rb><rt>かちゅう</rt></ruby>の公子、三男ではあるが、伯爵の<persName ref="#hagiwara-akira">萩原</persName>が、ただ、一人の美しさのために、一代鐘を守るではないか――既に、この人を<ruby><rb>手籠</rb><rt>てご</rt></ruby>めにして、牛の背に縄目の<ruby><rb>恥辱</rb><rt>ちじょく</rt></ruby>を与えた諸君に、論は無益と思うけれども、衆人<ruby><rb>環</rb><rt>めぐ</rt></ruby>り<ruby><rb>視</rb><rt>み</rt></ruby>る中において、淑女の<ruby><rb>衣</rb><rt>ころも</rt></ruby>を奪うて、月夜を引廻すに到っては、主、親を殺した五逆罪の極悪人を罪するにも、洋の東西にいまだかつてためしを聞かんぞ！</p>
+        <p>そりゃあるいは雨も降ろう、<ruby><rb>黒雲</rb><rt>くろくも</rt></ruby>も<ruby><rb>湧</rb><rt>わ</rt></ruby>き起ろうが、それは、<ruby><rb>惨憺</rb><rt>さんたん</rt></ruby>たる黒牛の背の<ruby><rb>犠牲</rb><rt>ぎせい</rt></ruby>を見るに忍びないで、天道が泣かるるのじゃ。月が<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>蔽</rb><rt>おお</rt></ruby>うのじゃ。天を泣かせ、光を隠して、それで諸君は<ruby><rb>活</rb><rt>い</rt></ruby>きらるるか。稲は活きても人は<ruby><rb>餓</rb><rt>う</rt></ruby>える、水は湧いても人は<ruby><rb>渇</rb><rt>かつ</rt></ruby>える。……無法な事を<ruby><rb>仕出</rb><rt>しいだ</rt></ruby>して、諸君が<persName ref="#hagiwara-akira">萩原</persName>夫婦を追うて、鐘を<ruby><rb>撞</rb><rt>つ</rt></ruby>く約束を怠って、万一、<ruby><rb>地</rb><rt>つち</rt></ruby>が泥海になったらどうする！　六ヶ村八千と言わるるか、その多くの生命は、諸君が自ら失うのじゃ。同じ迷信と言うなら言え。夫婦<ruby><rb>仲睦</rb><rt>なかむつま</rt></ruby>じく、一生<ruby><rb>埋木</rb><rt>うもれぎ</rt></ruby>となるまでも、<ruby><rb>鐘楼</rb><rt>しょうろう</rt></ruby>を守るにおいては、自分も心を<ruby><rb>傷</rb><rt>きずつ</rt></ruby>けず、何等世間に害がない。</p>
+        <p><persName ref="#gondo-kanpachi">管八</persName>　黙れ、<ruby><rb>煩</rb><rt>うるさ</rt></ruby>い。<ruby><rb>汝</rb><rt>うぬ</rt></ruby>が勝手な事を言うな。</p>
+        <p><persName ref="#saida-hatsuo">初雄</persName>　一体君は何ものですか。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>私</rb><rt>わし</rt></ruby>か、私は<persName ref="#hagiwara-akira">萩原</persName>の親友じゃ。</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　<ruby><rb>藪</rb><rt>やぶ</rt></ruby>から坊主が何を<ruby><rb>吐</rb><rt>ぬか</rt></ruby>す。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　いかにも坊主じゃ、本願寺派の坊主で、そして、文学士、<placeName ref="#kyoto-daigaku">京都大学</placeName>の教授じゃ。<persName ref="#yamasawa-gakuen">山沢学円</persName>と云うものです。<ruby><rb>名告</rb><rt>なの</rt></ruby>るのも恥入りますが、この国は真宗門徒信仰の<ruby><rb>淵源地</rb><rt>えんげんち</rt></ruby>じゃ。諸君のなかには同じ宗門のよしみで、同情を下さる方もあろうかと思うて云います。（教員に）君は学校の先生か、<ruby><rb>同一</rb><rt>おなじ</rt></ruby>教育家じゃ。他人でない、扱うてくれたまえ。（<ruby><rb>神官</rb><rt>かんぬし</rt></ruby>に）<ruby><rb>貴方</rb><rt>あなた</rt></ruby>も教えの道は御親類。（村長に）村長さんの声名にもお縋り申す。……（力士に）な、天下の力士は<ruby><rb>侠客</rb><rt>きょうかく</rt></ruby>じゃ、<ruby><rb>男立</rb><rt>おとこだて</rt></ruby>と見受けました。……何分願います、雨乞の犠牲はお許しを頼む。</p>
+        <p>これがために一同しばらくためらう。……代議士<persName ref="#kozo"><ruby><rb>穴隈</rb><rt>あなぐま</rt></ruby>鉱蔵</persName>、葉巻をくゆらしながら、悠々と出づ。</p>
+        <p><persName ref="#kozo">鉱蔵</persName>　<ruby><rb>其奴等</rb><rt>そいつら</rt></ruby><ruby><rb>騙賊</rb><rt>かたり</rt></ruby>じゃ。また、騙賊でのうても、華族が何だ、学者が何だ、<ruby><rb>糧</rb><rt>かて</rt></ruby>をどうする！……命をどうする？……万事俺が引受けた。<ruby><rb>遣</rb><rt>や</rt></ruby>れ、<ruby><rb>汝等</rb><rt>きさまら</rt></ruby>、裸にしようが、骨を抜こうが、<ruby><rb>女郎</rb><rt>めろう</rt></ruby>一人と、八千の民、<ruby><rb>誰</rb><rt>たれ</rt></ruby>か<ruby><rb>鼎</rb><rt>かなえ</rt></ruby>の<ruby><rb>軽重</rb><rt>けいちょう</rt></ruby>を論ぜんやじゃ。雨乞を断行せい。</p>
+        <p>力士<ruby><rb>真先</rb><rt>まっさき</rt></ruby>に、一同ばらりと<ruby><rb>立懸</rb><rt>たちかか</rt></ruby>る。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　<ruby><rb>私</rb><rt>わし</rt></ruby>を<ruby><rb>縛</rb><rt>しば</rt></ruby>れ、（と<ruby><rb>上衣</rb><rt>うわぎ</rt></ruby>を脱ぎ棄て）かほど云うても<ruby><rb>肯入</rb><rt>ききい</rt></ruby>れないなら<ruby><rb>止</rb><rt>や</rt></ruby>むを得ん、<ruby><rb>私</rb><rt>わし</rt></ruby>を縛れ、牛にのせい。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（からりと鎌を棄て）いや、身代りなら俺を縛れ。さあ、<ruby><rb>八裂</rb><rt>やつざき</rt></ruby>にしろ、俺は辞せん。――牛に乗せて<placeName ref="#yashagaike">夜叉ヶ池</placeName>に連れて<ruby><rb>行</rb><rt>ゆ</rt></ruby>け。<ruby><rb>犠牲</rb><rt>にえ</rt></ruby>によって、降らせる雨なら、俺が竜神に談判してやる。</p>
+        <p><persName ref="#oyuri">百合　</persName>あれ、<persName ref="#hagiwara-akira">晃さん</persName>、お客様、私が行きます、私を遣って下さいまし。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>ならん、<ruby><rb>生命</rb><rt>いのち</rt></ruby>に掛けても女房は売らん、竜神が何だ、八千人がどうしたと！　神にも仏にも恋は売らん。お前が得心で、納得して、好んですると云っても留めるんだ。</p>
+        <p><persName ref="#kozo">鉱蔵</persName>　（ふわふわと軽く詰め寄り、コツコツと杖を叩いて）血迷うな！　たわけも<ruby><rb>可</rb><rt>い</rt></ruby>い加減にしろ、女も女だ。湯屋へはどうして入る？……うむ、馬鹿が！（と高笑いして）君たち、おい、いやしくも国のためには、妻子を<ruby><rb>刺殺</rb><rt>さしころ</rt></ruby>して、戦争に出るというが、男児たるものの本分じゃ。且つ我が国の精神じゃ、すなわち武士道じゃ。人を救い、村を救うは、国家のために<ruby><rb>尽</rb><rt>つく</rt></ruby>すのじゃ。我が国のために尽すのじゃ。国のために尽すのに、一晩<ruby><rb>媽々</rb><rt>かかあ</rt></ruby>を牛にのせるのが、さほどまで<ruby><rb>情</rb><rt>なさけ</rt></ruby>ないか。<ruby><rb>洟垂</rb><rt>はなったら</rt></ruby>しが、俺は<ruby><rb>料簡</rb><rt>りょうけん</rt></ruby>が広いから<ruby><rb>可</rb><rt>い</rt></ruby>いが、気の早いものは国賊だと思うぞ、<ruby><rb>汝</rb><rt>きさま</rt></ruby>。俺なぞは、<persName ref="#kozo">鉱蔵</persName>は、村はもとよりここに居るただこの<ruby><rb>人民蒼生</rb><rt>じんみんそうせい</rt></ruby>のためというにも、<ruby><rb>何時</rb><rt>なんどき</rt></ruby>でも生命を棄てるぞ。</p>
+        <p>時に村人は敬礼し、村長は<ruby><rb>頤</rb><rt>あご</rt></ruby>を<ruby><rb>撫</rb><rt>な</rt></ruby>で、有志は得意を表す。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>死ね！（と云うまま落したる<ruby><rb>利鎌</rb><rt>とがま</rt></ruby>を取ってきっと<ruby><rb>突</rb><rt>つき</rt></ruby>つく。）</p>
+        <p><persName ref="#kozo">鉱蔵</persName>　わあ。（と思わず<ruby><rb>退</rb><rt>さが</rt></ruby>る。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>死ね、死ね、死ね、民のために<ruby><rb>汝</rb><rt>きさま</rt></ruby>死ね。見事に死んだら、俺も死んで、それから百合を渡してやる。死ね、<ruby><rb>死</rb><rt>しな</rt></ruby>ないか。</p>
+        <p>とじりりと寄るたび、<persName ref="#kozo">鉱蔵</persName>ひょこひょこと退る。<persName ref="#oyuri">お百合</persName>、晃の手に取縋ると、縋られた手を震わしながら、</p>
+        <p>し、しからずんば決闘せい。</p>
+        <p>一同その詰寄るを、わッわと遮り<ruby><rb>留</rb><rt>とど</rt></ruby>む。</p>
+        <p><ruby><rb>傍</rb><rt>そば</rt></ruby>へ寄るな、口が臭いや、こいつらも！　<ruby><rb>汝等</rb><rt>きさまら</rt></ruby>は、その<ruby><rb>成金</rb><rt>なりきん</rt></ruby>に買われたな。これ、昔も同じ事があった。<persName ref="#shirayuki">白雪</persName>、<persName ref="#shirayuki">白雪</persName>という、この里の処女だ。権勢と迫害で、<ruby><rb>可厭</rb><rt>いや</rt></ruby>がるものを無理に<ruby><rb>捉</rb><rt>とら</rt></ruby>えて、<ruby><rb>裸体</rb><rt>はだか</rt></ruby>を牛に<ruby><rb>縛</rb><rt>いまし</rt></ruby>めて、<placeName ref="#yashagaike">夜叉ヶ池</placeName>へ追上せた。……処女は、<ruby><rb>口惜</rb><rt>くや</rt></ruby>しさ、恥かしさ、無念さに、生きて里へ帰るまい。<ruby><rb>其方</rb><rt>そなた</rt></ruby>も、……其方も……追っては<ruby><rb>屠</rb><rt>ほふ</rt></ruby>らるる。同じ<ruby><rb>生命</rb><rt>いのち</rt></ruby>を、我に与えよ、と<ruby><rb>鼻頭</rb><rt>はなづら</rt></ruby>を撫でて牛に言い含め、<ruby><rb>終夜</rb><rt>よもすがら</rt></ruby>芝を刈りためたを、その牛の背に山に積んで、石を合せて火を放つと、<ruby><rb>鞭</rb><rt>むち</rt></ruby>を当てるまでもない。白い手を挙げ、<ruby><rb>衝</rb><rt>つ</rt></ruby>とさして、<ruby><rb>麓</rb><rt>ふもと</rt></ruby>の里を教うるや否や、牛は<ruby><rb>雷</rb><rt>いかずち</rt></ruby>のごとく<ruby><rb>舞下</rb><rt>まいさが</rt></ruby>って、<ruby><rb>片端</rb><rt>かたっぱし</rt></ruby>から村を焼いた。……麓にぱっと<ruby><rb>塵</rb><rt>ちり</rt></ruby>のような赤い<ruby><rb>焔</rb><rt>ほのお</rt></ruby>が立つのを見て、<ruby><rb>笑</rb><rt>えみ</rt></ruby>を含んで、<persName ref="#shirayuki">白雪</persName>は<placeName ref="#yashagaike">夜叉ヶ池</placeName>に身を沈めたというのを聞かぬか。忘れたか。汝等。おれたちに指でも指してみろ、雨は降らいで、<placeName ref="#shikami-mura">鹿見村</placeName>は焔になろう。<ruby><rb>不埒</rb><rt>ふらち</rt></ruby>な奴等だ。</p>
+        <p><persName ref="#kozo">鉱蔵</persName>　<ruby><rb>世迷言</rb><rt>よまいごと</rt></ruby>を<ruby><rb>饒舌</rb><rt>しゃべ</rt></ruby>るな二才。村は今既に<ruby><rb>旱</rb><rt>ひでり</rt></ruby>の焔に焼けておる。それがために雨乞するのじゃ。やあ<ruby><rb>衆</rb><rt>みんな</rt></ruby>、手ぬるい、遣れ遣れ。（いずれも猶予するを見て）<ruby><rb>埒</rb><rt>らち</rt></ruby><ruby><rb>明</rb><rt>あ</rt></ruby>かんな、<persName ref="#denkichi">伝吉</persName>ども来い。（と<ruby><rb>喚</rb><rt>わめ</rt></ruby>く。）</p>
+        <p>博徒<persName ref="#denkichi">伝吉</persName>、<ruby><rb>威</rb><rt>おどし</rt></ruby>の長ドスをひらめかし、<ruby><rb>乾児</rb><rt>こぶん</rt></ruby>、得ものを振って出づ。</p>
+        <p><persName ref="#denkichi">伝吉</persName>　畳んでしまえ、畳んでしまえ。</p>
+        <p>乾児　<ruby><rb>合点</rb><rt>がってん</rt></ruby>だ。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName><persName ref="#yamasawa-gakuen">山沢</persName>、危いぞ。</p>
+        <p>と<persName ref="#oyuri">お百合</persName>を抱くようにして三人<ruby><rb>鐘楼</rb><rt>しょうろう</rt></ruby>に<ruby><rb>駈上</rb><rt>かけあが</rt></ruby>る。<persName ref="#yamasawa-gakuen">学円</persName>は奥に、上り口に晃、<persName ref="#oyuri">お百合</persName>、と互に<ruby><rb>楯</rb><rt>たて</rt></ruby>にならんと争う。やがて<ruby><rb>押退</rb><rt>おしの</rt></ruby>けて、晃、すっくと立ち、鎌を<ruby><rb>翳</rb><rt>かざ</rt></ruby>す。博徒、衆ともに下より取巻く。<persName ref="#oyuri">お百合</persName>、振上げたる晃の手に<ruby><rb>縋</rb><rt>すが</rt></ruby>る。</p>
+        <p>一同　遣れ遣れ、遣っちまえ、遣っちまえ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　言語道断、いまだかつて、かかる、<ruby><rb>頑冥暴虐</rb><rt>がんめいぼうぎゃく</rt></ruby>の民を知らん！　天に、――天に銀河白し、滝となって、落ちて来い。（合掌す。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>大事な<ruby><rb>身体</rb><rt>からだ</rt></ruby>だ、<persName ref="#yamasawa-gakuen">山沢</persName>は<ruby><rb>遁</rb><rt>に</rt></ruby>げい、遁げい。</p>
+        <p>と呼ばわりながら、<ruby><rb>真前</rb><rt>まっさき</rt></ruby>に石段を上れる<persName ref="#denkichi">伝吉</persName>と、<ruby><rb>二打三打</rb><rt>ふたうちみうち</rt></ruby>、稲妻のごとく、チャリリと合す。</p>
+        <p><persName ref="#denkichi">伝吉</persName>退く。時に<ruby><rb>礫</rb><rt>つぶて</rt></ruby>をなげうつものあり。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（額に<ruby><rb>傷</rb><rt>きずつ</rt></ruby>き血を<ruby><rb>圧</rb><rt>おさ</rt></ruby>えて）あッ。（と鎌を取落す。）</p>
+        <p><persName ref="#oyuri">百合　</persName>（サソクにその鎌を拾い）皆さん、私が死にます、<ruby><rb>言分</rb><rt>いいぶん</rt></ruby>はござんすまい。（と云うより早く胸さきを、かッしと切る。）</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>しまった！（と鎌を<ruby><rb>捩取</rb><rt>もぎと</rt></ruby>る。）</p>
+        <p><persName ref="#oyuri">百合　</persName><persName ref="#hagiwara-akira">晃さん</persName>――御無事で――<persName ref="#hagiwara-akira">晃さん</persName>。（とがっくり落入る。）</p>
+        <p>一同<ruby><rb>色沮</rb><rt>いろはば</rt></ruby>みて<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>たり。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>一人は遣らん！　<ruby><rb>茨</rb><rt>いばら</rt></ruby>の道は<ruby><rb>負</rb><rt>おぶ</rt></ruby>って通る。<placeName ref="#meido"><ruby><rb>冥土</rb><rt>めいど</rt></ruby></placeName>で待てよ。（と立直る。<persName ref="#oyuri">お百合</persName>を<ruby><rb>抱</rb><rt>いだ</rt></ruby>ける、<persName ref="#yamasawa-gakuen">学円</persName>と<ruby><rb>面</rb><rt>おもて</rt></ruby>を見合せ）何時だ。（と極めて冷静に聞く。）</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（沈着に時計を透かして）二時三分。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>むむ、<ruby><rb>夜</rb><rt>よ</rt></ruby>ごとに見れば星でも<ruby><rb>了</rb><rt>わか</rt></ruby>る……ちょうど<ruby><rb>丑満</rb><rt>うしみつ</rt></ruby>……そうだろう。（と<ruby><rb>昂然</rb><rt>こうぜん</rt></ruby>として鐘を凝視し）<persName ref="#yamasawa-gakuen">山沢</persName>、僕はこの鐘を<ruby><rb>搗</rb><rt>つ</rt></ruby>くまいと思う。どうだ。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>　（沈思の後）うむ、打つな、<persName ref="#oyuri">お百合</persName>さんのために、打つな。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>（鎌を上げ、はた、と切る。どうと<ruby><rb>撞木</rb><rt>しゅもく</rt></ruby>落つ。）</p>
+        <p>途端にもの<ruby><rb>凄</rb><rt>すさまじ</rt></ruby>き響きあり。――地震だ。――<ruby><rb>山鳴</rb><rt>やまなり</rt></ruby>だ。――<placeName ref="#yashagaike">夜叉ヶ池</placeName>の上を見い。<placeName ref="#yashagaike">夜叉ヶ池</placeName>の上を見い。<placeName ref="#yashagaike">夜叉ヶ池</placeName>の上を見い。<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>な雲が出た、――と叫び<ruby><rb>呼</rb><rt>よば</rt></ruby>わる程こそあれ、<ruby><rb>閃電</rb><rt>せんでん</rt></ruby>来り、瞬く間も<ruby><rb>歇</rb><rt>や</rt></ruby>まず。衆は立つ足もなくあわて惑う、牛あれて一<ruby><rb>蹴</rb><rt>け</rt></ruby>りに<ruby><rb>駈</rb><rt>か</rt></ruby>け散らして飛び<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。</p>
+        <p><persName ref="#kozo">鉱蔵</persName>　鐘を、鐘を――</p>
+        <p><persName ref="#hatagami-kadenji">嘉伝次</persName>　助けて下され、鐘を<ruby><rb>撞</rb><rt>つ</rt></ruby>いて下されのう。</p>
+        <p><persName ref="#shikami-takuzen">宅膳</persName>　救わせたまえ。助けたまえ。</p>
+        <p>と逃げまわりつつ、絶叫す。天地<ruby><rb>晦冥</rb><rt>かいめい</rt></ruby>。よろぼい上るもの二三人石段に<ruby><rb>這</rb><rt>は</rt></ruby>いかかる。</p>
+        <p>晃、切払い、追い落し、冷々然として、峰の<ruby><rb>方</rb><rt>かた</rt></ruby>に向って、<persName ref="#yamasawa-gakuen">学円</persName>と二人彫像のごとく立ちつつあり。</p>
+        <p><persName ref="#hagiwara-akira">晃　</persName>波だ。</p>
+        <p>と云う時、<persName ref="#yamasawa-gakuen">学円</persName>ハタと<ruby><rb>俯伏</rb><rt>うつぶ</rt></ruby>しになると同時に、晃、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>を<ruby><rb>斬</rb><rt>き</rt></ruby>って、うつぶし倒る。</p>
+        <p><persName ref="#shirayuki">白雪</persName>。<ruby><rb>一際</rb><rt>ひときわ</rt></ruby><ruby><rb>烈</rb><rt>はげ</rt></ruby>しきひかりものの<ruby><rb>中</rb><rt>うち</rt></ruby>に、一たび、小屋の屋根に<ruby><rb>立顕</rb><rt>たちあらわ</rt></ruby>れ、たちまち<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>に消ゆ。再び<ruby><rb>凄</rb><rt>すさまじ</rt></ruby>じき<ruby><rb>電</rb><rt>いなびかり</rt></ruby>に、鐘楼に来り、すっくと立ち、<ruby><rb>鉄杖</rb><rt>てつじょう</rt></ruby>を<ruby><rb>丁</rb><rt>ちょう</rt></ruby>と振って、下より空さまに、鐘に手を掛く。鐘ゆらゆらとなって傾く。</p>
+        <p>村一同<ruby><rb>昏迷</rb><rt>こんめい</rt></ruby>し、惑乱するや、<persName ref="#mannen-uba"><ruby><rb>万年姥</rb><rt>まんねんうば</rt></ruby></persName>、<ruby><rb>諸眷属</rb><rt>しょけんぞく</rt></ruby>とともに立ちかかって、一人も余さず<ruby><rb>尽</rb><rt>ことごと</rt></ruby>く<ruby><rb>屠</rb><rt>ほふ</rt></ruby>り殺す。――</p>
+        <p><persName ref="#shirayuki">白雪</persName>　<ruby><rb>姥</rb><rt>うば</rt></ruby>、嬉しいな。</p>
+        <p>一同　お姫様。（と<ruby><rb>諸声</rb><rt>もろごえ</rt></ruby><ruby><rb>凄</rb><rt>すご</rt></ruby>し。）</p>
+        <p><persName ref="#shirayuki">白雪</persName>　人間は？</p>
+        <p>姥　皆、<ruby><rb>魚</rb><rt>うお</rt></ruby>に。早や泳いでおります。<ruby><rb>田螺</rb><rt>たにし</rt></ruby>、<ruby><rb>鰌</rb><rt>どじょう</rt></ruby>も見えまする。</p>
+        <p>一同　（<ruby><rb>哄</rb><rt>どっ</rt></ruby>と笑う）ははははははは。</p>
+        <p><persName ref="#shirayuki">白雪</persName>　この新しい<placeName ref="#kanegafuchi">鐘ヶ<ruby><rb>淵</rb><rt>ふち</rt></ruby></placeName>は、御夫婦の<ruby><rb>住居</rb><rt>すまい</rt></ruby>にしょう。皆おいで。私は<placeName ref="#kengamine">剣ヶ峰</placeName>へ<ruby><rb>行</rb><rt>ゆ</rt></ruby>くよ。……もうゆきかよいは思いのまま。<persName ref="#oyuri">お百合</persName>さん、<persName ref="#oyuri">お百合</persName>さん、一所に唄をうたいましょうね。</p>
+        <p>たちまちまた暗し。既にして<ruby><rb>巨鐘</rb><rt>きょしょう</rt></ruby>水にあり。晃、<persName ref="#oyuri">お百合</persName>と二人、晃は、<ruby><rb>竜頭</rb><rt>りゅうず</rt></ruby>に<ruby><rb>頬杖</rb><rt>ほおづえ</rt></ruby>つき、<persName ref="#oyuri">お百合</persName>は下に、水に<ruby><rb>裳</rb><rt>もすそ</rt></ruby>をひいて、うしろに反らして手を支き、打仰いで、<ruby><rb>熟</rb><rt>じっ</rt></ruby>と顔を見合せ<ruby><rb>莞爾</rb><rt>にっこり</rt></ruby>と笑む。</p>
+        <p>時に月の光<ruby><rb>煌々</rb><rt>こうこう</rt></ruby>たり。</p>
+        <p><persName ref="#yamasawa-gakuen">学円</persName>、高く一人<ruby><rb>鐘楼</rb><rt>しょうろう</rt></ruby>に<ruby><rb>佇</rb><rt>たたず</rt></ruby>み、水に臨んで、<ruby><rb>一揖</rb><rt>いちゆう</rt></ruby>し、合掌す。</p>
+        <p>月いよいよ<ruby><rb>明</rb><rt>あきらか</rt></ruby>なり。</p>
+        <p>（――幕）</p>
+        <p><date when="1913-03">大正二（一九一三）年三月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>
