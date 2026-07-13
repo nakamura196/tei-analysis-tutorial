@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>悟浄歎異</title>
+        <author>中島敦</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>悟浄歎異</title><author>中島敦</author>
+          <note>青空文庫。底本：「李陵・山月記・弟子・名人伝」角川文庫、角川書店。1968（昭和43）年9月10日改版初版発行。1983（昭和58）年9月30日改版24版発行。入力：佐野良二。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000119/card617.html">https://www.aozora.gr.jp/cards/000119/card617.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="goku">
+        <persName>孫悟空</persName>
+        <note>斉天大聖。石卵より生まれた猴王で三蔵法師の弟子。語り手の悟浄が観察と歎異の対象とする天才的行動者。表層形「悟空」「孫行者」「斉天大聖」を統合</note>
+      </person>
+      <person xml:id="hakkai">
+        <persName>猪悟能八戒</persName>
+        <note>三蔵法師の弟子。享楽家の豚の妖怪。変身の術が下手で悟空に叱られる。表層形「八戒」「猪悟能八戒」を統合</note>
+      </person>
+      <person xml:id="sanzo">
+        <persName>三蔵法師</persName>
+        <note>玄奘三蔵。天竺へ経を求める僧。無力でありながら永遠を見つめる貴さを持つ師として描かれる。表層形「三蔵法師」「三蔵」を統合(役割語の「師父」「師」はタグ付けしない)</note>
+      </person>
+      <person xml:id="shaka">
+        <persName>釈迦牟尼如来</persName>
+        <note>釈迦。天界で暴れる悟空を掌中に捕え、五行山の下に封じた。表層形「釈迦牟尼如来」「釈迦如来」「釈迦牟尼」および、作中で一貫して釈迦牟尼その人を指す定称としての単独の「如来」(9件、すべて発話・動作の主体)を統合(類概念としての用例は本文に無い)</note>
+      </person>
+      <person xml:id="gyumao">
+        <persName>牛魔大王</persName>
+        <note>牛魔王。翠雲山で悟空と変化合戦を演じた妖魔。表層形「牛魔大王」「牛魔王」を統合</note>
+      </person>
+      <person xml:id="taijorokun">
+        <persName>太上老君</persName>
+        <note>道教の神。その八卦炉の中で悟空が焼殺されかかったと言及される</note>
+      </person>
+      <person xml:id="ginkakudaio">
+        <persName>銀角大王</persName>
+        <note>妖怪。泰山圧頂の法で悟空を三山の下に圧し潰そうとした</note>
+      </person>
+      <person xml:id="kobirobutsu">
+        <persName>黄眉老仏</persName>
+        <note>小雷音寺の妖怪。金鐃の中に悟空を閉じ込め、最も苦しめた</note>
+      </person>
+      <person xml:id="kokinryu">
+        <persName>亢金竜</persName>
+        <note>天界から加勢に来た竜。角で金鐃を突き通し悟空を助けた。表層形「亢金竜」「金竜」を統合</note>
+      </person>
+      <person xml:id="yuseishinkun">
+        <persName>祐聖真君</persName>
+        <note>三十六員の雷将を率いて霊霄殿の前で悟空と戦った天界の討手の大将</note>
+      </person>
+      <person xml:id="kasho">
+        <persName>迦葉</persName>
+        <note>釈迦牟尼如来に随う二尊者の一人。摩訶迦葉</note>
+      </person>
+      <person xml:id="anan">
+        <persName>阿難</persName>
+        <note>釈迦牟尼如来に随う二尊者の一人。阿難陀</note>
+      </person>
+      <person xml:id="tokairyuo">
+        <persName>東海竜王</persName>
+        <note>東海の竜王。悟空が如意金箍棒を奪った相手として言及される</note>
+      </person>
+      <person xml:id="ryomo">
+        <persName>呂蒙</persName>
+        <note>三国呉の武将。「呉下の阿蒙」の故事の主。悟浄が進歩のない自己を喩える。本文の表層形は「阿蒙」</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="suiunzan">
+        <placeName>翠雲山</placeName>
+        <note>『西遊記』で牛魔王が拠る山。悟空との変化合戦の舞台。伝説上の山のため座標なし</note>
+      </place>
+      <place xml:id="gogyozan">
+        <placeName>五行山</placeName>
+        <note>釈迦が五指を化して作り、悟空を五百年間封じた山。『西遊記』の伝説上の山(のちの両界山)で実在の山に比定できないため座標なし</note>
+      </place>
+      <place xml:id="taizan">
+        <placeName>泰山</placeName>
+        <location><geo>36.2551 117.1011</geo></location>
+        <note>中国山東省の名山(東岳泰山)。「泰山圧頂の法」で落とされる三山の一つとして、また悟空の巨大さの比喩(「頭は泰山に似て」)として言及される・概値</note>
+      </place>
+      <place xml:id="shumisen">
+        <placeName>須弥山</placeName>
+        <note>仏教的世界観の中心にそびえる山。泰山圧頂の法で落とされる三山の一つ。宗教的世界観上の場所のため座標なし</note>
+      </place>
+      <place xml:id="gabizan">
+        <placeName>峨眉山</placeName>
+        <location><geo>29.52 103.332</geo></location>
+        <note>中国四川省の名山。泰山圧頂の法で落とされる三山の一つ・概値</note>
+      </place>
+      <place xml:id="shoraionji">
+        <placeName>小雷音寺</placeName>
+        <note>黄眉老仏が霊山の雷音寺を偽って構えた寺。『西遊記』の架空の寺のため座標なし</note>
+      </place>
+      <place xml:id="reishoden">
+        <placeName>霊霄殿</placeName>
+        <note>天上界(玉帝の天宮)の宮殿。悟空が祐聖真君と戦った場。宗教的世界観上の場所のため座標なし</note>
+      </place>
+      <place xml:id="toshoshinshu">
+        <placeName>東勝神州</placeName>
+        <note>『西遊記』の四大部洲の一つ。傲来国・華果山のある大陸。神話上の地のため座標なし</note>
+      </place>
+      <place xml:id="goraikoku">
+        <placeName>傲来国</placeName>
+        <note>東勝神州にある国。華果山を擁する。神話上の国のため座標なし</note>
+      </place>
+      <place xml:id="kakazan">
+        <placeName>華果山</placeName>
+        <note>花果山。悟空が石卵から生まれた山。『西遊記』の伝説上の山のため座標なし</note>
+      </place>
+      <place xml:id="tenjiku">
+        <placeName>天竺</placeName>
+        <location><geo>20.5937 78.9629</geo></location>
+        <note>インドの古称。三蔵一行が経を求めて赴く目的地。国名・概値</note>
+      </place>
+      <place xml:id="ryusaga">
+        <placeName>流沙河</placeName>
+        <note>悟浄がかつて栖んだ大河。『西遊記』の伝説上の河で実在の河に比定できないため座標なし</note>
+      </place>
+      <place xml:id="gokuraku">
+        <placeName>極楽</placeName>
+        <note>八戒が来世について語る仏教的世界観上の浄土。座標なし</note>
+      </place>
+      <place xml:id="go">
+        <placeName>呉</placeName>
+        <location><geo>31.2989 120.5853</geo></location>
+        <note>三国呉の地。「呉下の阿蒙」の故事に見える。地域名・概値(呉郡の中心である蘇州付近をとる)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>悟浄歎異</head>
+        <p><ruby><rb>昼餉</rb><rt>ひるげ</rt></ruby>ののち、<ruby><rb>師父</rb><rt>しふ</rt></ruby>が道ばたの松の樹の下でしばらく<ruby><rb>憩</rb><rt>いこ</rt></ruby>うておられる間、<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>は<persName ref="#hakkai"><ruby><rb>八戒</rb><rt>はっかい</rt></ruby></persName>を近くの原っぱに連出して、変身の術の練習をさせていた。</p>
+        <p>「やってみろ！」と<persName ref="#goku">悟空</persName>が言う。「<ruby><rb>竜</rb><rt>りゅう</rt></ruby>になりたいとほんとうに思うんだ。いいか。ほんとうにだぜ。この上なしの、突きつめた気持で、そう思うんだ。ほかの雑念はみんな<ruby><rb>棄</rb><rt>す</rt></ruby>ててだよ。いいか。本気にだぜ。この上なしの・とことんの・本気にだぜ。」</p>
+        <p>「よし！」と<persName ref="#hakkai">八戒</persName>は眼を閉じ、<ruby><rb>印</rb><rt>いん</rt></ruby>を結んだ。<persName ref="#hakkai">八戒</persName>の姿が消え、五尺ばかりの<ruby><rb>青大将</rb><rt>あおだいしょう</rt></ruby>が現われた。そばで見ていた<ruby><rb>俺</rb><rt>おれ</rt></ruby>は思わず吹出してしまった。</p>
+        <p>「ばか！　青大将にしかなれないのか！」と<persName ref="#goku">悟空</persName>が<ruby><rb>叱</rb><rt>しか</rt></ruby>った。青大将が消えて<persName ref="#hakkai">八戒</persName>が現われた。「だめだよ、<ruby><rb>俺</rb><rt>おれ</rt></ruby>は。まったくどうしてかな？」と<persName ref="#hakkai">八戒</persName>は面目なげに鼻を鳴らした。</p>
+        <p>「だめだめ。てんで気持が<ruby><rb>凝</rb><rt>こ</rt></ruby>らないんじゃないか、お前は。もう一度やってみろ。いいか。真剣に、かけ値なしの真剣になって、竜になりたい竜になりたいと思うんだ。竜になりたいという気持だけになって、お前というものが消えてしまえばいいんだ。」</p>
+        <p>よし、もう一度と<persName ref="#hakkai">八戒</persName>は印を結ぶ。今度は前と違って奇怪なものが現われた。<ruby><rb>錦蛇</rb><rt>にしきへび</rt></ruby>には違いないが、小さな<ruby><rb>前肢</rb><rt>まえあし</rt></ruby>が生えていて、<ruby><rb>大蜥蜴</rb><rt>おおとかげ</rt></ruby>のようでもある。しかし、腹部は<persName ref="#hakkai">八戒</persName>自身に似てブヨブヨ<ruby><rb>膨</rb><rt>ふく</rt></ruby>れており、短い前肢で二、三歩<ruby><rb>匍</rb><rt>は</rt></ruby>うと、なんとも言えない<ruby><rb>無恰好</rb><rt>ぶかっこう</rt></ruby>さであった。俺はまたゲラゲラ笑えてきた。</p>
+        <p>「もういい。もういい。<ruby><rb>止</rb><rt>や</rt></ruby>めろ！」と<persName ref="#goku">悟空</persName>が怒鳴る。頭を<ruby><rb>掻</rb><rt>か</rt></ruby>き掻き<persName ref="#hakkai">八戒</persName>が現われる。</p>
+        <p><persName ref="#goku">悟空</persName>。お前の竜になりたいという気持が、まだまだ突きつめていないからだ。だからだめなんだ。</p>
+        <p><persName ref="#hakkai">八戒</persName>。そんなことはない。これほど一生懸命に、竜になりたい竜になりたいと思いつめているんだぜ。こんなに強く、こんなにひたむきに。</p>
+        <p><persName ref="#goku">悟空</persName>。お前にそれができないということが、つまり、お前の気持の統一がまだ成っていないということになるんだ。</p>
+        <p><persName ref="#hakkai">八戒</persName>。そりゃひどいよ。それは結果論じゃないか。</p>
+        <p><persName ref="#goku">悟空</persName>。なるほどね。結果からだけ見て原因を批判することは、けっして最上のやり方じゃないさ。しかし、この世では、どうやらそれがいちばん実際的に確かな方法のようだぜ。今のお前の場合なんか、明らかにそうだからな。</p>
+        <p><persName ref="#goku">悟空</persName>によれば、<ruby><rb>変化</rb><rt>へんげ</rt></ruby>の法とは次のごときものである。すなわち、あるものになりたいという気持が、この上なく純粋に、この上なく強烈であれば、ついにはそのものになれる。なれないのは、まだその気持がそこまで至っていないからだ。法術の修行とは、かくのごとく<ruby><rb>己</rb><rt>おのれ</rt></ruby>の気持を純一<ruby><rb>無垢</rb><rt>むく</rt></ruby>、かつ強烈なものに統一する法を学ぶに<ruby><rb>在</rb><rt>あ</rt></ruby>る。この修行は、かなりむずかしいものには違いないが、いったんその境に達したのちは、もはや以前のような大努力を必要とせず、ただ心をその形に置くことによって容易に目的を達しうる。これは、他の諸芸におけると同様である。<ruby><rb>変化</rb><rt>へんげ</rt></ruby>の術が人間にできずして<ruby><rb>狐狸</rb><rt>こり</rt></ruby>にできるのは、つまり、人間には関心すべき種々の事柄があまりに多いがゆえに精神統一が至難であるに反し、野獣は心を労すべき多くの<ruby><rb>瑣事</rb><rt>さじ</rt></ruby>を<ruby><rb>有</rb><rt>も</rt></ruby>たず、したがってこの統一が容易だからである、<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>。</p>
+        <p><persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>は確かに天才だ。これは疑いない。それははじめてこの<ruby><rb>猿</rb><rt>さる</rt></ruby>を見た瞬間にすぐ感じ取られたことである。初め、<ruby><rb>赭顔</rb><rt>あからがお</rt></ruby>・<ruby><rb>鬚面</rb><rt>ひげづら</rt></ruby>のその<ruby><rb>容貌</rb><rt>ようぼう</rt></ruby>を醜いと感じた<ruby><rb>俺</rb><rt>おれ</rt></ruby>も、次の瞬間には、彼の内から<ruby><rb>溢</rb><rt>あふ</rt></ruby>れ出るものに圧倒されて、容貌のことなど、すっかり忘れてしまった。今では、ときにこの猿の容貌を美しい（とは言えぬまでも少なくともりっぱだ）とさえ感じるくらいだ。その<ruby><rb>面魂</rb><rt>つらだましい</rt></ruby>にもその言葉つきにも、<persName ref="#goku">悟空</persName>が自己に対して抱いている信頼が、生き生きと<ruby><rb>溢</rb><rt>あふ</rt></ruby>れている。この男は<ruby><rb>嘘</rb><rt>うそ</rt></ruby>のつけない男だ。誰に対してよりも、まず自分に対して。この男の中には常に火が燃えている。豊かな、激しい火が。その火はすぐにかたわらにいる者に移る。彼の言葉を聞いているうちに、自然にこちらも彼の信ずるとおりに信じないではいられなくなってくる。彼のかたわらにいるだけで、こちらまでが何か豊かな自信に<ruby><rb>充</rb><rt>み</rt></ruby>ちてくる。彼は<ruby><rb>火種</rb><rt>ひだね</rt></ruby>。世界は彼のために用意された<ruby><rb>薪</rb><rt>たきぎ</rt></ruby>。世界は彼によって燃されるために在る。</p>
+        <p>我々にはなんの奇異もなく見える事柄も、<persName ref="#goku">悟空</persName>の眼から見ると、ことごとくすばらしい冒険の端緒だったり、彼の壮烈な活動を<ruby><rb>促</rb><rt>うなが</rt></ruby>す機縁だったりする。もともと意味を<ruby><rb>有</rb><rt>も</rt></ruby>った<ruby><rb>外</rb><rt>そと</rt></ruby>の世界が彼の注意を<ruby><rb>惹</rb><rt>ひ</rt></ruby>くというよりは、むしろ、彼のほうで外の世界に一つ一つ意味を与えていくように思われる。彼の内なる火が、外の世界に<ruby><rb>空</rb><rt>むな</rt></ruby>しく冷えたまま眠っている火薬に、いちいち点火していくのである。探偵の眼をもってそれらを探し出すのではなく、詩人の心をもって（恐ろしく荒っぽい詩人だが）彼に触れるすべてを<ruby><rb>温</rb><rt>あたた</rt></ruby>め、（ときに<ruby><rb>焦</rb><rt>こ</rt></ruby>がす<ruby><rb>惧</rb><rt>おそ</rt></ruby>れもないではない。）そこから種々な思いがけない芽を出させ、実を結ばせるのだ。だから、<ruby><rb>渠</rb><rt>かれ</rt></ruby>・<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の眼にとって平凡<ruby><rb>陳腐</rb><rt>ちんぷ</rt></ruby>なものは何一つない。毎日早朝に起きると決まって彼は日の出を拝み、そして、はじめてそれを見る者のような驚嘆をもってその美に感じ入っている。心の底から、<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>をついて、<ruby><rb>讃嘆</rb><rt>さんたん</rt></ruby>するのである。これがほとんど毎朝のことだ。松の種子から松の芽の出かかっているのを見て、なんたる不思議さよと眼を<ruby><rb>瞠</rb><rt>みは</rt></ruby>るのも、この男である。</p>
+        <p>この無邪気な<persName ref="#goku">悟空</persName>の姿と比べて、一方、強敵と闘っているときの彼を見よ！　なんと、みごとな、完全な姿であろう！　全身<ruby><rb>些</rb><rt>いささ</rt></ruby>かの<ruby><rb>隙</rb><rt>すき</rt></ruby>もない<ruby><rb>逞</rb><rt>たくま</rt></ruby>しい緊張。律動的で、しかも一<ruby><rb>分</rb><rt>ぶ</rt></ruby>のむだもない棒の使い方。疲れを知らぬ肉体が<ruby><rb>歓</rb><rt>よろこ</rt></ruby>び・たけり・汗ばみ・<ruby><rb>跳</rb><rt>は</rt></ruby>ねている・その圧倒的な力量感。いかなる困難をも<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んで迎える<ruby><rb>強靱</rb><rt>きょうじん</rt></ruby>な精神力の<ruby><rb>横溢</rb><rt>おういつ</rt></ruby>。それは、輝く太陽よりも、咲誇る<ruby><rb>向日葵</rb><rt>ひまわり</rt></ruby>よりも、<ruby><rb>鳴盛</rb><rt>なきさか</rt></ruby>る<ruby><rb>蝉</rb><rt>せみ</rt></ruby>よりも、もっと打込んだ・裸身の・<ruby><rb>壮</rb><rt>さか</rt></ruby>んな・没我的な・<ruby><rb>灼熱</rb><rt>しゃくねつ</rt></ruby>した美しさだ。あのみっともない<ruby><rb>猿</rb><rt>さる</rt></ruby>の闘っている姿は。</p>
+        <p><ruby><rb>一</rb><rt>ひと</rt></ruby>月ほど前、彼が<placeName ref="#suiunzan"><ruby><rb>翠雲</rb><rt>すいうん</rt></ruby>山</placeName>中で大いに<persName ref="#gyumao"><ruby><rb>牛魔</rb><rt>ぎゅうま</rt></ruby>大王</persName>と戦ったときの姿は、いまだにはっきり眼底に残っている。感嘆のあまり、<ruby><rb>俺</rb><rt>おれ</rt></ruby>はそのときの戦闘経過を詳しく記録に取っておいたくらいだ。</p>
+        <p>……<persName ref="#gyumao">牛魔王</persName>一匹の<ruby><rb>香獐</rb><rt>こうしょう</rt></ruby>と変じ<ruby><rb>悠然</rb><rt>ゆうぜん</rt></ruby>として草を<ruby><rb>喰</rb><rt>くら</rt></ruby>いいたり。<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>これを悟り<ruby><rb>虎</rb><rt>とら</rt></ruby>に変じ<ruby><rb>駈</rb><rt>か</rt></ruby>け来たりて香獐を喰わんとす。<persName ref="#gyumao">牛魔王</persName>急に<ruby><rb>大豹</rb><rt>だいひょう</rt></ruby>と化して虎を撃たんと飛びかかる。<persName ref="#goku">悟空</persName>これを見て<ruby><rb>狻猊</rb><rt>からしし</rt></ruby>となり大豹目がけて襲いかかれば、<persName ref="#gyumao">牛魔王</persName>、さらばと<ruby><rb>黄獅</rb><rt>きじし</rt></ruby>に変じ<ruby><rb>霹靂</rb><rt>へきれき</rt></ruby>のごとくに<ruby><rb>哮</rb><rt>ほえたけ</rt></ruby>って<ruby><rb>狻猊</rb><rt>からしし</rt></ruby>を引裂かんとす。<persName ref="#goku">悟空</persName>このとき地上に転倒すと見えしが、ついに一匹の大象となる。鼻は<ruby><rb>長蛇</rb><rt>ちょうだ</rt></ruby>のごとく<ruby><rb>牙</rb><rt>きば</rt></ruby>は<ruby><rb>筍</rb><rt>たかんな</rt></ruby>に似たり。<persName ref="#gyumao">牛魔王</persName>堪えかねて本相を<ruby><rb>顕</rb><rt>あら</rt></ruby>わし、たちまち一匹の大<ruby><rb>白牛</rb><rt>はくぎゅう</rt></ruby>たり。頭は<ruby><rb>高峯</rb><rt>こうほう</rt></ruby>のごとく眼は電光のごとく双角は両座の鉄塔に似たり。頭より尾に至る長さ千余丈、<ruby><rb>蹄</rb><rt>ひづめ</rt></ruby>より背上に至る高さ八百丈。大音に呼ばわって<ruby><rb>曰</rb><rt>いわ</rt></ruby>く、<ruby><rb>儞</rb><rt>なんじ</rt></ruby><ruby><rb>悪猴</rb><rt>わるざる</rt></ruby>今我をいかんとするや。<persName ref="#goku">悟空</persName>また同じく本相を<ruby><rb>顕</rb><rt>あら</rt></ruby>わし、<ruby><rb>大喝</rb><rt>だいかつ</rt></ruby>一声するよと見るまに、身の高さ一万丈、<ruby><rb>頭</rb><rt>かしら</rt></ruby>は<placeName ref="#taizan"><ruby><rb>泰山</rb><rt>たいざん</rt></ruby></placeName>に似て眼は日月のごとく、口はあたかも血池にひとし。奮然鉄棒を<ruby><rb>揮</rb><rt>ふる</rt></ruby>って<persName ref="#gyumao">牛魔王</persName>を打つ。<persName ref="#gyumao">牛魔王</persName><ruby><rb>角</rb><rt>つの</rt></ruby>をもってこれを受止め、両人半山の中にあってさんざんに戦いければ、まことに山も崩れ海も<ruby><rb>湧返</rb><rt>わきかえ</rt></ruby>り、天地もこれがために<ruby><rb>反覆</rb><rt>はんぷく</rt></ruby>するかと、すさまじかり。……</p>
+        <p>なんという壮観だったろう！　<ruby><rb>俺</rb><rt>おれ</rt></ruby>はホッと<ruby><rb>溜息</rb><rt>ためいき</rt></ruby>を吐いた。そばから<ruby><rb>助太刀</rb><rt>すけだち</rt></ruby>に出ようという気も起こらない。<persName ref="#goku"><ruby><rb>孫行者</rb><rt>そんぎょうじゃ</rt></ruby></persName>の負ける心配がないからというのではなく、一<ruby><rb>幅</rb><rt>ぷく</rt></ruby>の完全な名画の上にさらに<ruby><rb>拙</rb><rt>つたな</rt></ruby>い筆を加えるのを<ruby><rb>愧</rb><rt>は</rt></ruby>じる気持からである。</p>
+        <p><ruby><rb>災厄</rb><rt>さいやく</rt></ruby>は、<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の火にとって、油である。困難に出会うとき、彼の全身は（精神も肉体も）<ruby><rb>焔々</rb><rt>えんえん</rt></ruby>と燃上がる。逆に、平穏無事のとき、彼はおかしいほど、しょげている。<ruby><rb>独楽</rb><rt>こま</rt></ruby>のように、彼は、いつも全速力で<ruby><rb>廻</rb><rt>まわ</rt></ruby>っていなければ、倒れてしまうのだ。困難な現実も、<persName ref="#goku">悟空</persName>にとっては、一つの地図――目的地への最短の路がハッキリと太く線を引かれた一つの地図として映るらしい。現実の事態の認識と同時に、その中にあって自己の目的に到達すべき道が、実に<ruby><rb>明瞭</rb><rt>めいりょう</rt></ruby>に、彼には見えるのだ。あるいは、その<ruby><rb>途</rb><rt>みち</rt></ruby>以外の一切が見えない、といったほうがほんとうかもしれぬ。<ruby><rb>闇夜</rb><rt>やみよ</rt></ruby>の発光文字のごとくに、必要な<ruby><rb>途</rb><rt>みち</rt></ruby>だけがハッキリ浮かび上がり、他は一切見えないのだ。我々<ruby><rb>鈍根</rb><rt>どんこん</rt></ruby>のものがいまだ<ruby><rb>茫然</rb><rt>ぼうぜん</rt></ruby>として考えも<ruby><rb>纏</rb><rt>まと</rt></ruby>まらないうちに、<persName ref="#goku">悟空</persName>はもう行動を始める。目的への最短の道に向かって歩き出しているのだ。人は、彼の武勇や腕力を<ruby><rb>云々</rb><rt>うんぬん</rt></ruby>する。しかし、その驚くべき天才的な<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>については案外知らないようである。彼の場合には、その思慮や判断があまりにも<ruby><rb>渾然</rb><rt>こんぜん</rt></ruby>と、腕力行為の中に溶け込んでいるのだ。</p>
+        <p><ruby><rb>俺</rb><rt>おれ</rt></ruby>は、<persName ref="#goku">悟空</persName>の<ruby><rb>文盲</rb><rt>もんもう</rt></ruby>なことを知っている。かつて天上で<ruby><rb>弼馬温</rb><rt>ひつばおん</rt></ruby>なる<ruby><rb>馬方</rb><rt>うまかた</rt></ruby>の役に任ぜられながら、弼馬温の字も知らなければ、役目の内容も知らないでいたほど、無学なことをよく知っている。しかし、俺は、<persName ref="#goku">悟空</persName>の（力と調和された）<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>と判断の高さとを何ものにも<ruby><rb>優</rb><rt>ま</rt></ruby>して高く買う。<persName ref="#goku">悟空</persName>は教養が高いとさえ思うこともある。少なくとも、動物・植物・天文に関するかぎり、彼の知識は相当なものだ。彼は、たいていの動物なら一見してその性質、強さの程度、その主要な武器の特徴などを見抜いてしまう。雑草についても、どれが薬草で、どれが毒草かを、実によく心得ている。そのくせ、その動物や植物の名称（世間一般に通用している名前）は、まるで知らないのだ。彼はまた、星によって方角や時刻や季節を知るのを得意としているが、<ruby><rb>角宿</rb><rt>かくしゅく</rt></ruby>という名も<ruby><rb>心宿</rb><rt>しんしゅく</rt></ruby>という名も知りはしない。二十八<ruby><rb>宿</rb><rt>しゅく</rt></ruby>の名をことごとくそらんじていながら<ruby><rb>実物</rb><rt>ほんもの</rt></ruby>を見分けることのできぬ俺と比べて、なんという相異だろう！　目に<ruby><rb>一丁字</rb><rt>いっていじ</rt></ruby>のないこの<ruby><rb>猴</rb><rt>さる</rt></ruby>の前にいるときほど、文字による教養の哀れさを感じさせられることはない。</p>
+        <p><persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の身体の部分部分は――目も耳も口も脚も手も――みんないつも<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しくて<ruby><rb>堪</rb><rt>たま</rt></ruby>らないらしい。生き生きとし、ピチピチしている。ことに戦う段になると、それらの各部分は歓喜のあまり、花にむらがる夏の<ruby><rb>蜂</rb><rt>はち</rt></ruby>のようにいっせいにワァーッと歓声を挙げるのだ。<persName ref="#goku">悟空</persName>の戦いぶりが、その真剣な<ruby><rb>気魄</rb><rt>きはく</rt></ruby>にもかかわらず、どこか<ruby><rb>遊戯</rb><rt>ゆうげ</rt></ruby>の趣を備えているのは、このためであろうか。人はよく「死ぬ覚悟で」などというが、<persName ref="#goku">悟空</persName>という男はけっして死ぬ覚悟なんかしない。どんな危険に陥った場合でも、彼はただ、今自分のしている仕事（<ruby><rb>妖怪</rb><rt>ようかい</rt></ruby>を退治するなり、<persName ref="#sanzo"><ruby><rb>三蔵法師</rb><rt>さんぞうほうし</rt></ruby></persName>を救い出すなり）の成否を憂えるだけで、自分の生命のことなどは、てんで考えの中に浮かんでこないのである。<persName ref="#taijorokun"><ruby><rb>太上老君</rb><rt>たいじょうろうくん</rt></ruby></persName>の<ruby><rb>八卦炉</rb><rt>はっけろ</rt></ruby>中に焼殺されかかったときも、<persName ref="#ginkakudaio">銀角大王</persName>の<placeName ref="#taizan"><ruby><rb>泰山</rb><rt>たいざん</rt></ruby></placeName>圧頂の法に<ruby><rb>遭</rb><rt>お</rt></ruby>うて、<placeName ref="#taizan">泰山</placeName>・<placeName ref="#shumisen"><ruby><rb>須弥山</rb><rt>しゅみせん</rt></ruby></placeName>・<placeName ref="#gabizan"><ruby><rb>峨眉山</rb><rt>がびさん</rt></ruby></placeName>の三山の下に<ruby><rb>圧</rb><rt>お</rt></ruby>し<ruby><rb>潰</rb><rt>つぶ</rt></ruby>されそうになったときも、彼はけっして自己の生命のために悲鳴を上げはしなかった。最も苦しんだのは、<placeName ref="#shoraionji"><ruby><rb>小雷音寺</rb><rt>しょうらいおんじ</rt></ruby></placeName>の<persName ref="#kobirobutsu"><ruby><rb>黄眉</rb><rt>こうび</rt></ruby>老仏</persName>のために不思議な<ruby><rb>金鐃</rb><rt>きんにょう</rt></ruby>の下に閉じ込められたときである。<ruby><rb>推</rb><rt>お</rt></ruby>せども突けども金鐃は破れず、身を大きく変化させて突破ろうとしても、<persName ref="#goku">悟空</persName>の身が大きくなれば金鐃も伸びて大きくなり、身を縮めれば金鐃もまた縮まる始末で、どうにもしようがない。身の毛を抜いて<ruby><rb>錐</rb><rt>きり</rt></ruby>と変じ、これで穴を<ruby><rb>穿</rb><rt>うが</rt></ruby>とうとしても、金鐃には傷一つつかない。そのうちに、ものを<ruby><rb>蕩</rb><rt>と</rt></ruby>かして水と化するこの器の力で、<persName ref="#goku">悟空</persName>の<ruby><rb>臀部</rb><rt>でんぶ</rt></ruby>のほうがそろそろ柔らかくなりはじめたが、それでも彼はただ妖怪に捕えられた<ruby><rb>師父</rb><rt>しふ</rt></ruby>の身の上ばかりを<ruby><rb>気遣</rb><rt>きづか</rt></ruby>っていたらしい。<persName ref="#goku">悟空</persName>には自分の運命に対する無限の自信があるのだ（自分ではその自信を意識していないらしいが。）やがて、天界から加勢に来た<persName ref="#kokinryu"><ruby><rb>亢金竜</rb><rt>こうきんりょう</rt></ruby></persName>がその鉄のごとき角をもって満身の力をこめ、外から<ruby><rb>金鐃</rb><rt>きんにょう</rt></ruby>を突通した。角はみごとに内まで突通ったが、この金鐃はあたかも人の肉のごとくに角に<ruby><rb>纏</rb><rt>まと</rt></ruby>いついて、少しの<ruby><rb>隙</rb><rt>すき</rt></ruby>もない。風の<ruby><rb>洩</rb><rt>も</rt></ruby>るほどの<ruby><rb>隙間</rb><rt>すきま</rt></ruby>でもあれば、<persName ref="#goku">悟空</persName>は身をけし粒と化して<ruby><rb>脱</rb><rt>のが</rt></ruby>れ出るのだが、それもできない。半ば臀部は溶けかかりながら、苦心<ruby><rb>惨憺</rb><rt>さんたん</rt></ruby>の末、ついに耳の中から<ruby><rb>金箍棒</rb><rt>きんそうぼう</rt></ruby>を取出して<ruby><rb>鋼鑚</rb><rt>きり</rt></ruby>に変え、<persName ref="#kokinryu">金竜</persName>の角の上に<ruby><rb>孔</rb><rt>あな</rt></ruby>を<ruby><rb>穿</rb><rt>うが</rt></ruby>ち、身を<ruby><rb>芥子粒</rb><rt>けしつぶ</rt></ruby>に変じてその<ruby><rb>孔</rb><rt>あな</rt></ruby>に<ruby><rb>潜</rb><rt>ひそ</rt></ruby>み、<persName ref="#kokinryu">金竜</persName>に角を引抜かせたのである。ようやく助かったのちは、柔らかくなった<ruby><rb>己</rb><rt>おのれ</rt></ruby>の<ruby><rb>尻</rb><rt>しり</rt></ruby>のことを忘れ、すぐさま<ruby><rb>師父</rb><rt>しふ</rt></ruby>の救い出しにかかるのだ。あとになっても、あのときは危なかったなどとけっして言ったことがない。「危ない」とか「もうだめだ」とか、感じたことがないのだろう。この男は、自分の寿命とか生命とかについて考えたこともないに違いない。彼の死ぬときは、ポクンと、自分でも知らずに死んでいるだろう。その一瞬前までは<ruby><rb>溌剌</rb><rt>はつらつ</rt></ruby>と暴れ<ruby><rb>廻</rb><rt>まわ</rt></ruby>っているに違いない。まったく、この男の事業は、壮大という感じはしても、けっして悲壮な感じはしないのである。</p>
+        <p><ruby><rb>猿</rb><rt>さる</rt></ruby>は<ruby><rb>人真似</rb><rt>ひとまね</rt></ruby>をするというのに、これはまた、なんと人真似をしない<ruby><rb>猴</rb><rt>さる</rt></ruby>だろう！　真似どころか、他人から押付けられた考えは、たといそれが何千年の昔から万人に認められている考え方であっても、絶対に受付けないのだ。自分で充分に<ruby><rb>納得</rb><rt>なっとく</rt></ruby>できないかぎりは。</p>
+        <p><ruby><rb>因襲</rb><rt>いんしゅう</rt></ruby>も世間的名声もこの男の前にはなんの権威もない。</p>
+        <p><persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の今一つの特色は、けっして過去を語らぬことである。というより、彼は、<ruby><rb>過去</rb><rt>すぎさ</rt></ruby>ったことは一切忘れてしまうらしい。少なくとも個々の出来事は忘れてしまうのだ。その代わり、一つ一つの経験の与えた教訓はその<ruby><rb>都度</rb><rt>つど</rt></ruby>、彼の血液の中に吸収され、ただちに彼の精神および肉体の一部と化してしまう。いまさら、個々の出来事を一つ一つ記憶している必要はなくなるのである。彼が戦略上の同じ誤りをけっして二度と繰返さないのを見ても、これは<ruby><rb>判</rb><rt>わか</rt></ruby>る。しかも彼はその教訓を、いつ、どんな苦い経験によって得たのかは、すっかり忘れ果てている。無意識のうちに体験を完全に吸収する不思議な力をこの<ruby><rb>猴</rb><rt>さる</rt></ruby>は<ruby><rb>有</rb><rt>も</rt></ruby>っているのだ。</p>
+        <p>ただし、彼にもけっして忘れることのできぬ<ruby><rb>怖</rb><rt>おそ</rt></ruby>ろしい体験がたった一つあった。あるとき彼はそのときの恐ろしさを<ruby><rb>俺</rb><rt>おれ</rt></ruby>に向かってしみじみと語ったことがある。それは、彼が始めて<persName ref="#shaka"><ruby><rb>釈迦如来</rb><rt>しゃかにょらい</rt></ruby></persName>に<ruby><rb>知遇</rb><rt>ちぐう</rt></ruby>し奉ったときのことだ。</p>
+        <p>そのころ、<persName ref="#goku">悟空</persName>は自分の力の限界を知らなかった。彼が<ruby><rb>藕糸歩雲</rb><rt>ぐうしほうん</rt></ruby>の<ruby><rb>履</rb><rt>くつ</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>き<ruby><rb>鎖子</rb><rt>さし</rt></ruby>黄金の<ruby><rb>甲</rb><rt>よろい</rt></ruby>を着け、<persName ref="#tokairyuo"><ruby><rb>東海竜王</rb><rt>とうかいりゅうおう</rt></ruby></persName>から奪った一万三千五百<ruby><rb>斤</rb><rt>きん</rt></ruby>の<ruby><rb>如意金箍棒</rb><rt>にょいきんそうぼう</rt></ruby>を<ruby><rb>揮</rb><rt>ふる</rt></ruby>って闘うところ、天上にも天下にもこれに敵する者がないのである。<ruby><rb>列仙</rb><rt>れっせん</rt></ruby>の集まる<ruby><rb>蟠桃会</rb><rt>はんとうえ</rt></ruby>を<ruby><rb>擾</rb><rt>さわ</rt></ruby>がし、その罰として閉じ込められた<ruby><rb>八卦炉</rb><rt>はっけろ</rt></ruby>をも打破って飛出すや、天上界も狭しとばかり荒れ狂うた。群がる天兵を打倒し<ruby><rb>薙</rb><rt>な</rt></ruby>ぎ倒し、三十六員の雷将を<ruby><rb>率</rb><rt>ひき</rt></ruby>いた<ruby><rb>討手</rb><rt>うって</rt></ruby>の大将<persName ref="#yuseishinkun"><ruby><rb>祐聖真君</rb><rt>ゆうせいしんくん</rt></ruby></persName>を相手に、<placeName ref="#reishoden"><ruby><rb>霊霄殿</rb><rt>りょうしょうでん</rt></ruby></placeName>の前に戦うこと半日余り。そのときちょうど、<persName ref="#kasho"><ruby><rb>迦葉</rb><rt>かしょう</rt></ruby></persName>・<persName ref="#anan"><ruby><rb>阿難</rb><rt>あなん</rt></ruby></persName>の二<ruby><rb>尊者</rb><rt>そんじゃ</rt></ruby>を連れた<persName ref="#shaka"><ruby><rb>釈迦牟尼如来</rb><rt>しゃかむににょらい</rt></ruby></persName>がそこを通りかかり、<persName ref="#goku">悟空</persName>の前に立ち<ruby><rb>塞</rb><rt>ふさ</rt></ruby>がって闘いを<ruby><rb>停</rb><rt>と</rt></ruby>めたもうた。<persName ref="#goku">悟空</persName>が<ruby><rb>怫然</rb><rt>ふつぜん</rt></ruby>として<ruby><rb>喰</rb><rt>く</rt></ruby>ってかかる。<persName ref="#shaka">如来</persName>が笑いながら言う。「たいそう<ruby><rb>威張</rb><rt>いば</rt></ruby>っているようだが、いったい、お前はいかなる道を<ruby><rb>修</rb><rt>ず</rt></ruby>しえたというのか？」<persName ref="#goku">悟空</persName><ruby><rb>曰</rb><rt>いわ</rt></ruby>く「<placeName ref="#toshoshinshu">東勝神州</placeName><placeName ref="#goraikoku"><ruby><rb>傲来国</rb><rt>ごうらいこく</rt></ruby></placeName><placeName ref="#kakazan"><ruby><rb>華果山</rb><rt>かかざん</rt></ruby></placeName>に石卵より生まれたるこの<ruby><rb>俺</rb><rt>おれ</rt></ruby>の力を知らぬとは、さてさて愚かなやつ。俺はすでに<ruby><rb>不老長生</rb><rt>ふろうちょうせい</rt></ruby>の法を<ruby><rb>修</rb><rt>ず</rt></ruby>し<ruby><rb>畢</rb><rt>おわ</rt></ruby>り、雲に乗り風に<ruby><rb>御</rb><rt>ぎょ</rt></ruby>し一瞬に十万八千里を行く者だ。」<persName ref="#shaka">如来</persName><ruby><rb>曰</rb><rt>いわ</rt></ruby>く、「大きなことを言うものではない。十万八千里はおろかわが<ruby><rb>掌</rb><rt>てのひら</rt></ruby>に上って、さて、その外へ飛出すことすらできまいに。」「何を！」と腹を立てた<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>は、いきなり<persName ref="#shaka"><ruby><rb>如来</rb><rt>にょらい</rt></ruby></persName>の<ruby><rb>掌</rb><rt>てのひら</rt></ruby>の上に<ruby><rb>跳</rb><rt>おど</rt></ruby>り上がった。「<ruby><rb>俺</rb><rt>おれ</rt></ruby>は<ruby><rb>通力</rb><rt>つうりき</rt></ruby>によって八十万里を<ruby><rb>飛行</rb><rt>ひぎょう</rt></ruby>するのに、<ruby><rb>儞</rb><rt>なんじ</rt></ruby>の掌の外に飛出せまいとは何事だ！」言いも終わらず<ruby><rb>觔斗雲</rb><rt>きんとうん</rt></ruby>に打乗ってたちまち二、三十万里も来たかと思われるころ、赤く大いなる五本の柱を見た。<ruby><rb>渠</rb><rt>かれ</rt></ruby>はこの柱のもとに立寄り、真中の一本に、<ruby><rb><persName ref="#goku">斉天大聖</persName>到此一遊</rb><rt>せいてんたいせいとうしいちゆう</rt></ruby>と墨くろぐろと書きしるした。さてふたたび雲に乗って<persName ref="#shaka">如来</persName>の掌に飛帰り、<ruby><rb>得々</rb><rt>とくとく</rt></ruby>として言った。「掌どころか、すでに三十万里の遠くに飛行して、柱にしるしを<ruby><rb>留</rb><rt>とど</rt></ruby>めてきたぞ！」「愚かな<ruby><rb>山猿</rb><rt>やまざる</rt></ruby>よ！」と<persName ref="#shaka">如来</persName>は笑った。「<ruby><rb>汝</rb><rt>なんじ</rt></ruby>の通力がそもそも何事を成しうるというのか？　汝は先刻からわが掌の内を往返したにすぎぬではないか。<ruby><rb>嘘</rb><rt>うそ</rt></ruby>と思わば、この指を見るがよい。」<persName ref="#goku">悟空</persName>が<ruby><rb>異</rb><rt>あや</rt></ruby>しんで、よくよく見れば、<persName ref="#shaka">如来</persName>の右手の中指に、まだ<ruby><rb>墨痕</rb><rt>ぼっこん</rt></ruby>も新しく、<persName ref="#goku">斉天大聖</persName>到此一遊と<ruby><rb>己</rb><rt>おのれ</rt></ruby>の筆跡で書き付けてある。「これは？」と驚いて<ruby><rb>振仰</rb><rt>ふりあお</rt></ruby>ぐ<persName ref="#shaka">如来</persName>の顔から、今までの微笑が消えた。急に<ruby><rb>厳粛</rb><rt>げんしゅく</rt></ruby>に変わった<persName ref="#shaka">如来</persName>の目が<persName ref="#goku">悟空</persName>をキッと<ruby><rb>見据</rb><rt>みす</rt></ruby>えたまま、たちまち天をも隠すかと思われるほどの大きさに<ruby><rb>拡</rb><rt>ひろ</rt></ruby>がって、<persName ref="#goku">悟空</persName>の上にのしかかってきた。<persName ref="#goku">悟空</persName>は<ruby><rb>総身</rb><rt>そうみ</rt></ruby>の血が凍るような怖ろしさを覚え、<ruby><rb>慌</rb><rt>あわ</rt></ruby>てて掌の外へ<ruby><rb>跳</rb><rt>と</rt></ruby>び出そうとしたとたんに、<persName ref="#shaka">如来</persName>が手を<ruby><rb>翻</rb><rt>ひるがえ</rt></ruby>して彼を取抑え、そのまま五指を化して<placeName ref="#gogyozan"><ruby><rb>五行山</rb><rt>ごぎょうざん</rt></ruby></placeName>とし、<persName ref="#goku">悟空</persName>をその山の下に押込め、<ruby><rb>唵嘛呢叭𠺗吽</rb><rt>おんまにはつめいうん</rt></ruby>の六字を金書して山頂に<ruby><rb>貼</rb><rt>は</rt></ruby>りたもうた。世界が<ruby><rb>根柢</rb><rt>こんてい</rt></ruby>から<ruby><rb>覆</rb><rt>くつがえ</rt></ruby>り、今までの自分が自分でなくなったような<ruby><rb>昏迷</rb><rt>こんめい</rt></ruby>に、<persName ref="#goku">悟空</persName>はなおしばらく<ruby><rb>顫</rb><rt>ふる</rt></ruby>えていた。事実、世界は彼にとってそのとき以来一変したのである。<ruby><rb>爾後</rb><rt>じご</rt></ruby>、<ruby><rb>餓</rb><rt>う</rt></ruby>うるときは鉄丸を<ruby><rb>喰</rb><rt>くら</rt></ruby>い、<ruby><rb>渇</rb><rt>かっ</rt></ruby>するときは銅汁を飲んで、<ruby><rb>岩窟</rb><rt>がんくつ</rt></ruby>の中に封じられたまま、<ruby><rb>贖罪</rb><rt>しょくざい</rt></ruby>の期の<ruby><rb>充</rb><rt>み</rt></ruby>ちるのを待たねばならなかった。<persName ref="#goku">悟空</persName>は、今までの極度の<ruby><rb>増上慢</rb><rt>ぞうじょうまん</rt></ruby>から、一転して極度の自信のなさに<ruby><rb>堕</rb><rt>お</rt></ruby>ちた。彼は気が弱くなり、ときには苦しさのあまり、恥も外聞も構わずワアワアと大声で<ruby><rb>哭</rb><rt>な</rt></ruby>いた。五百年<ruby><rb>経</rb><rt>た</rt></ruby>って、<placeName ref="#tenjiku"><ruby><rb>天竺</rb><rt>てんじく</rt></ruby></placeName>への旅の途中にたまたま通りかかった<persName ref="#sanzo"><ruby><rb>三蔵法師</rb><rt>さんぞうほうし</rt></ruby></persName>が<placeName ref="#gogyozan">五行山</placeName>頂の<ruby><rb>呪符</rb><rt>じゅふ</rt></ruby>を<ruby><rb>剥</rb><rt>は</rt></ruby>がして<persName ref="#goku">悟空</persName>を解き放ってくれたとき、彼はまたワアワアと哭いた。今度のは<ruby><rb>嬉</rb><rt>うれ</rt></ruby>し涙であった。<persName ref="#goku">悟空</persName>が<persName ref="#sanzo">三蔵</persName>に<ruby><rb>随</rb><rt>したが</rt></ruby>ってはるばる<placeName ref="#tenjiku">天竺</placeName>までついて行こうというのも、ただこの嬉しさありがたさからである。実に純粋で、かつ、最も強烈な感謝であった。</p>
+        <p>さて、今にして思えば、<persName ref="#shaka"><ruby><rb>釈迦牟尼</rb><rt>しゃかむに</rt></ruby></persName>によって取抑えられたときの恐怖が、それまでの<persName ref="#goku">悟空</persName>の・途方もなく大きな（善悪以前の）存在に、一つの地上的制限を与えたもののようである。しかもなお、この猿の形をした大きな存在が地上の生活に役立つものとなるためには、<placeName ref="#gogyozan">五行山</placeName>の重みの下に五百年間押し付けられ、小さく<ruby><rb>凝集</rb><rt>ぎょうしゅう</rt></ruby>する必要があったのである。だが、<ruby><rb>凝固</rb><rt>ぎょうこ</rt></ruby>して小さくなった現在の<persName ref="#goku">悟空</persName>が、<ruby><rb>俺</rb><rt>おれ</rt></ruby>たちから見ると、なんと、段違いにすばらしく大きくみごとであることか！</p>
+        <p><persName ref="#sanzo">三蔵法師</persName>は不思議な方である。実に弱い。驚くほど弱い。<ruby><rb>変化</rb><rt>へんげ</rt></ruby>の術ももとより知らぬ。<ruby><rb>途</rb><rt>みち</rt></ruby>で<ruby><rb>妖怪</rb><rt>ようかい</rt></ruby>に襲われれば、すぐに<ruby><rb>掴</rb><rt>つか</rt></ruby>まってしまう。弱いというよりも、まるで自己防衛の本能がないのだ。この意気地のない<persName ref="#sanzo">三蔵法師</persName>に、我々三人が<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく<ruby><rb>惹</rb><rt>ひ</rt></ruby>かれているというのは、いったいどういうわけだろう？　（こんなことを考えるのは俺だけだ。<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>も<persName ref="#hakkai"><ruby><rb>八戒</rb><rt>はっかい</rt></ruby></persName>もただなんとなく<ruby><rb>師父</rb><rt>しふ</rt></ruby>を敬愛しているだけなのだから。）私は思うに、我々は師父のあの弱さの中に見られるある悲劇的なものに<ruby><rb>惹</rb><rt>ひ</rt></ruby>かれるのではないか。これこそ、我々・妖怪からの成上がり者には絶対にないところのものなのだから。<persName ref="#sanzo">三蔵法師</persName>は、大きなものの中における自分の（あるいは人間の、あるいは生き物の）位置を――その哀れさと<ruby><rb>貴</rb><rt>とうと</rt></ruby>さとをハッキリ悟っておられる。しかも、その悲劇性に堪えてなお、正しく美しいものを勇敢に求めていかれる。確かにこれだ、我々になくて師に<ruby><rb>在</rb><rt>あ</rt></ruby>るものは。なるほど、我々は師よりも腕力がある。多少の変化の術も心得ている。しかし、いったん<ruby><rb>己</rb><rt>おのれ</rt></ruby>の位置の悲劇性を悟ったが最後、<ruby><rb>金輪際</rb><rt>こんりんざい</rt></ruby>、正しく美しい生活を<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>に続けていくことができないに違いない。あの弱い<ruby><rb>師父</rb><rt>しふ</rt></ruby>の中にある・この貴い強さには、まったく驚嘆のほかはない。内なる貴さが<ruby><rb>外</rb><rt>そと</rt></ruby>の弱さに包まれているところに、師父の魅力があるのだと、<ruby><rb>俺</rb><rt>おれ</rt></ruby>は考える。もっとも、あの<ruby><rb>不埒</rb><rt>ふらち</rt></ruby>な<persName ref="#hakkai"><ruby><rb>八戒</rb><rt>はっかい</rt></ruby></persName>の解釈によれば、俺たちの――少なくとも<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の師父に対する敬愛の中には、多分に男色的要素が含まれているというのだが。</p>
+        <p>まったく、<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>のあの実行的な天才に比べて、<persName ref="#sanzo">三蔵法師</persName>は、なんと実務的には<ruby><rb>鈍物</rb><rt>どんぶつ</rt></ruby>であることか！　だが、これは二人の生きることの目的が違うのだから問題にはならぬ。外面的な困難にぶつかったとき、師父は、それを切抜ける<ruby><rb>途</rb><rt>みち</rt></ruby>を外に求めずして、内に求める。つまり自分の心をそれに耐えうるように構えるのである。いや、そのとき<ruby><rb>慌</rb><rt>あわ</rt></ruby>てて構えずとも、外的な事故によって内なるものが動揺を受けないように、<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>から構えができてしまっている。いつどこで<ruby><rb>窮死</rb><rt>きゅうし</rt></ruby>してもなお幸福でありうる心を、師はすでに作り上げておられる。だから、外に途を求める必要がないのだ。我々から見ると<ruby><rb>危</rb><rt>あぶ</rt></ruby>なくてしかたのない肉体上の<ruby><rb>無防禦</rb><rt>むぼうぎょ</rt></ruby>も、つまりは、師の精神にとって別にたいした影響はないのである。<persName ref="#goku">悟空</persName>のほうは、見た眼にはすこぶる鮮やかだが、しかし彼の天才をもってしてもなお打開できないような事態が世には存在するかもしれぬ。しかし、師の場合にはその心配はない。師にとっては、何も打開する必要がないのだから。</p>
+        <p><persName ref="#goku">悟空</persName>には、<ruby><rb>嚇怒</rb><rt>かくど</rt></ruby>はあっても苦悩はない。歓喜はあっても<ruby><rb>憂愁</rb><rt>ゆうしゅう</rt></ruby>はない。彼が単純にこの生を<ruby><rb>肯定</rb><rt>こうてい</rt></ruby>できるのになんの不思議もない。<persName ref="#sanzo">三蔵法師</persName>の場合はどうか？　あの病身と、<ruby><rb>禦</rb><rt>ふせ</rt></ruby>ぐことを知らない弱さと、常に<ruby><rb>妖怪</rb><rt>ようかい</rt></ruby>どもの迫害を受けている日々とをもってして、なお<ruby><rb>師父</rb><rt>しふ</rt></ruby>は<ruby><rb>怡</rb><rt>たの</rt></ruby>しげに生を<ruby><rb>肯</rb><rt>うべな</rt></ruby>われる。これはたいしたことではないか！</p>
+        <p>おかしいことに、<persName ref="#goku">悟空</persName>は、師の自分より<ruby><rb>優</rb><rt>まさ</rt></ruby>っているこの点を理解していない。ただなんとなく師父から離れられないのだと思っている。<ruby><rb>機嫌</rb><rt>きげん</rt></ruby>の悪いときには、自分が<persName ref="#sanzo">三蔵法師</persName>に<ruby><rb>随</rb><rt>したが</rt></ruby>っているのは、ただ<ruby><rb>緊箍咒</rb><rt>きんそうじゅ</rt></ruby>（<persName ref="#goku">悟空</persName>の頭に<ruby><rb>箝</rb><rt>は</rt></ruby>められている金の輪で、<persName ref="#goku">悟空</persName>が<persName ref="#sanzo">三蔵法師</persName>の命に従わぬときにはこの輪が肉に<ruby><rb>喰</rb><rt>く</rt></ruby>い入って彼の頭を<ruby><rb>緊</rb><rt>し</rt></ruby>め付け、堪えがたい痛みを起こすのだ。）のためだ、などと考えたりしている。そして「世話の焼ける先生だ。」などとブツブツ言いながら、妖怪に捕えられた師父を救い出しに行くのだ。「あぶなくて見ちゃいられない。どうして先生はああなんだろうなあ！」と言うとき、<persName ref="#goku">悟空</persName>はそれを弱きものへの<ruby><rb>憐愍</rb><rt>れんびん</rt></ruby>だと<ruby><rb>自惚</rb><rt>うぬぼ</rt></ruby>れているらしいが、実は、<persName ref="#goku">悟空</persName>の師に対する気持の中に、生き物のすべてがもつ・優者に対する本能的な<ruby><rb>畏敬</rb><rt>いけい</rt></ruby>、美と貴さへの<ruby><rb>憧憬</rb><rt>どうけい</rt></ruby>がたぶんに加わっていることを、彼はみずから知らぬのである。</p>
+        <p>もっとおかしいのは、師父自身が、自分の<persName ref="#goku">悟空</persName>に対する優越をご存じないことだ。妖怪の手から救い出されるたびごとに、師は涙を流して<persName ref="#goku">悟空</persName>に感謝される。「お前が助けてくれなかったら、わしの生命はなかったろうに！」と。だが、実際は、どんな妖怪に<ruby><rb>喰</rb><rt>く</rt></ruby>われようと、師の生命は死にはせぬのだ。</p>
+        <p>二人とも自分たちの真の関係を知らずに、互いに敬愛し合って（もちろん、ときにはちょっとしたいさかいはあるにしても）いるのは、おもしろい眺めである。およそ<ruby><rb>対蹠</rb><rt>たいせき</rt></ruby>的なこの二人の間に、しかし、たった一つ共通点があることに、<ruby><rb>俺</rb><rt>おれ</rt></ruby>は気がついた。それは、二人がその生き方において、ともに、<ruby><rb>所与</rb><rt>しょよ</rt></ruby>を必然と考え、必然を完全と感じていることだ。さらには、その必然を自由と<ruby><rb>看做</rb><rt>みな</rt></ruby>していることだ。<ruby><rb>金剛石</rb><rt>こんごうせき</rt></ruby>と炭とは同じ物質からでき上がっているのだそうだが、その金剛石と炭よりももっと違い方のはなはだしいこの二人の生き方が、ともにこうした現実の受取り方の上に立っているのはおもしろい。そして、この「必然と自由の<ruby><rb>等置</rb><rt>とうち</rt></ruby>」こそ、彼らが天才であることの<ruby><rb>徴</rb><rt>しるし</rt></ruby>でなくてなんであろうか？</p>
+        <p><persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>、<persName ref="#hakkai"><ruby><rb>八戒</rb><rt>はっかい</rt></ruby></persName>、<ruby><rb>俺</rb><rt>おれ</rt></ruby>と我々三人は、まったくおかしいくらいそれぞれに違っている。日が暮れて宿がなく、路傍の廃寺に泊まることに相談が一決するときでも、三人はそれぞれ違った考えのもとに一致しているのである。<persName ref="#goku">悟空</persName>はかかる廃寺こそ<ruby><rb>究竟</rb><rt>くっきょう</rt></ruby>の<ruby><rb>妖怪</rb><rt>ようかい</rt></ruby>退治の場所だとして、進んで選ぶのだ。<persName ref="#hakkai">八戒</persName>は、いまさらよそを尋ねるのも<ruby><rb>億劫</rb><rt>おっくう</rt></ruby>だし、早く家にはいって食事もしたいし、眠くもあるし、というのだし、俺の場合は、「どうせこのへんは邪悪な<ruby><rb>妖精</rb><rt>ようせい</rt></ruby>に満ちているのだろう。どこへ行ったって災難に<ruby><rb>遭</rb><rt>あ</rt></ruby>うのだとすれば、ここを災難の場所として選んでもいいではないか」と考えるのだ。生きものが三人寄れば、皆このように違うものであろうか？　生きものの生き方ほどおもしろいものはない。</p>
+        <p><persName ref="#goku"><ruby><rb>孫行者</rb><rt>そんぎょうじゃ</rt></ruby></persName>の<ruby><rb>華</rb><rt>はな</rt></ruby>やかさに圧倒されて、すっかり影の薄らいだ感じだが、<persName ref="#hakkai"><ruby><rb>猪悟能八戒</rb><rt>ちょごのうはっかい</rt></ruby></persName>もまた特色のある男には違いない。とにかく、この豚は恐ろしくこの生を、この世を愛しておる。<ruby><rb>嗅覚</rb><rt>きゅうかく</rt></ruby>・味覚・触覚のすべてを挙げて、この世に<ruby><rb>執</rb><rt>しゅう</rt></ruby>しておる。あるとき<persName ref="#hakkai"><ruby><rb>八戒</rb><rt>はっかい</rt></ruby></persName>が<ruby><rb>俺</rb><rt>おれ</rt></ruby>に言ったことがある。「我々が<placeName ref="#tenjiku"><ruby><rb>天竺</rb><rt>てんじく</rt></ruby></placeName>へ行くのはなんのためだ？　善業を<ruby><rb>修</rb><rt>ず</rt></ruby>して来世に<placeName ref="#gokuraku">極楽</placeName>に生まれんがためだろうか？　ところで、その<placeName ref="#gokuraku"><ruby><rb>極楽</rb><rt>ごくらく</rt></ruby></placeName>とはどんなところだろう。<ruby><rb>蓮</rb><rt>はす</rt></ruby>の葉の上に乗っかってただゆらゆら揺れているだけではしようがないじゃないか。<placeName ref="#gokuraku">極楽</placeName>にも、あの湯気の立つ<ruby><rb>羹</rb><rt>あつもの</rt></ruby>をフウフウ吹きながら吸う楽しみや、こりこり皮の<ruby><rb>焦</rb><rt>こ</rt></ruby>げた香ばしい焼肉を<ruby><rb>頬張</rb><rt>ほおば</rt></ruby>る楽しみがあるのだろうか？　そうでなくて、話に聞く仙人のようにただ<ruby><rb>霞</rb><rt>かすみ</rt></ruby>を吸って生きていくだけだったら、ああ、<ruby><rb>厭</rb><rt>いや</rt></ruby>だ、厭だ。そんな<placeName ref="#gokuraku">極楽</placeName>なんか、まっぴらだ！　たとえ、<ruby><rb>辛</rb><rt>つら</rt></ruby>いことがあっても、またそれを忘れさせてくれる・堪えられぬ<ruby><rb>怡</rb><rt>たの</rt></ruby>しさのあるこの世がいちばんいいよ。少なくとも<ruby><rb>俺</rb><rt>おれ</rt></ruby>にはね。」そう言ってから<persName ref="#hakkai">八戒</persName>は、自分がこの世で楽しいと思う事柄を一つ一つ数え立てた。夏の<ruby><rb>木蔭</rb><rt>こかげ</rt></ruby>の午睡。渓流の水浴。月夜の<ruby><rb>吹笛</rb><rt>すいてき</rt></ruby>。春暁の<ruby><rb>朝寐</rb><rt>あさね</rt></ruby>。冬夜の炉辺歓談。……なんと<ruby><rb>愉</rb><rt>たの</rt></ruby>しげに、また、なんと数多くの項目を彼は数え立てたことだろう！　ことに、若い女人の肉体の美しさと、四季それぞれの食物の味に言い及んだとき、彼の言葉はいつまで<ruby><rb>経</rb><rt>た</rt></ruby>っても尽きぬもののように思われた。俺はたまげてしまった。この世にかくも多くの<ruby><rb>怡</rb><rt>たの</rt></ruby>しきことがあり、それをまた、かくも余すところなく味わっているやつがいようなどとは、考えもしなかったからである。なるほど、楽しむにも才能の<ruby><rb>要</rb><rt>い</rt></ruby>るものだなと<ruby><rb>俺</rb><rt>おれ</rt></ruby>は気がつき、<ruby><rb>爾来</rb><rt>じらい</rt></ruby>、この豚を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>することを<ruby><rb>止</rb><rt>や</rt></ruby>めた。だが、<persName ref="#hakkai"><ruby><rb>八戒</rb><rt>はっかい</rt></ruby></persName>と語ることが<ruby><rb>繁</rb><rt>しげ</rt></ruby>くなるにつれ、最近妙なことに気がついてきた。それは、<persName ref="#hakkai">八戒</persName>の享楽主義の底に、ときどき、妙に不気味なものの影がちらりと<ruby><rb>覗</rb><rt>のぞ</rt></ruby>くことだ。「<ruby><rb>師父</rb><rt>しふ</rt></ruby>に対する尊敬と、<persName ref="#goku"><ruby><rb>孫行者</rb><rt>そんぎょうじゃ</rt></ruby></persName>への<ruby><rb>畏怖</rb><rt>いふ</rt></ruby>とがなかったら、俺はとっくにこんな<ruby><rb>辛</rb><rt>つら</rt></ruby>い旅なんか<ruby><rb>止</rb><rt>や</rt></ruby>めてしまっていたろう。」などと口では言っている癖に、実際はその享楽家的な<ruby><rb>外貌</rb><rt>がいぼう</rt></ruby>の下に<ruby><rb>戦々兢々</rb><rt>せんせんきょうきょう</rt></ruby>として<ruby><rb>薄氷</rb><rt>はくひょう</rt></ruby>を<ruby><rb>履</rb><rt>ふ</rt></ruby>むような思いの潜んでいることを、俺は確かに見抜いたのだ。いわば、<placeName ref="#tenjiku"><ruby><rb>天竺</rb><rt>てんじく</rt></ruby></placeName>へのこの旅が、あの豚にとっても（俺にとってと同様）、幻滅と絶望との果てに、最後に<ruby><rb>縋</rb><rt>すが</rt></ruby>り付いたただ一筋の糸に違いないと思われる<ruby><rb>節</rb><rt>ふし</rt></ruby>が確かにあるのだ。だが、今は<persName ref="#hakkai">八戒</persName>の享楽主義の秘密への考察に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>っているわけにはいかぬ。とにかく、今のところ、俺は<persName ref="#goku"><ruby><rb>孫行者</rb><rt>そんぎょうじゃ</rt></ruby></persName>からあらゆるものを学び取らねばならぬのだ。他のことを顧みている暇はない。<persName ref="#sanzo">三蔵法師</persName>の<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>や<persName ref="#hakkai">八戒</persName>の生き方は、<persName ref="#goku">孫行者</persName>を卒業してからのことだ。まだまだ、俺は<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>からほとんど何ものをも学び取っておりはせぬ。<placeName ref="#ryusaga"><ruby><rb>流沙河</rb><rt>りゅうさが</rt></ruby></placeName>の水を出てから、いったいどれほど進歩したか？　依然たる<ruby><rb><placeName ref="#go">呉</placeName>下</rb><rt>ごか</rt></ruby>の<ruby><rb>旧<persName ref="#ryomo">阿蒙</persName></rb><rt>きゅうあもう</rt></ruby>ではないのか。この旅行における俺の役割にしたって、そうだ。平穏無事のときに<persName ref="#goku">悟空</persName>の行きすぎを引き留め、毎日の<persName ref="#hakkai">八戒</persName>の<ruby><rb>怠惰</rb><rt>たいだ</rt></ruby>を<ruby><rb>戒</rb><rt>いまし</rt></ruby>めること。それだけではないか。何も積極的な役割がないのだ。俺みたいな者は、いつどこの世に生まれても、結局は、調節者、忠告者、観測者にとどまるのだろうか。けっして行動者にはなれないのだろうか？</p>
+        <p><persName ref="#goku">孫行者</persName>の行動を見るにつけ、俺は考えずにはいられない。「燃え盛る火は、みずからの燃えていることを知るまい。自分は燃えているな、などと考えているうちは、まだほんとうに燃えていないのだ。」と。<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の<ruby><rb>闊達無碍</rb><rt>かったつむげ</rt></ruby>の働きを見ながら<ruby><rb>俺</rb><rt>おれ</rt></ruby>はいつも思う。「自由な行為とは、どうしてもそれをせずにはいられないものが内に熟してきて、おのずと外に現われる行為の<ruby><rb>謂</rb><rt>いい</rt></ruby>だ。」と。ところで、俺はそれを思うだけなのだ。まだ一歩でも<persName ref="#goku">悟空</persName>についていけないのだ。学ぼう、学ぼうと思いながらも、<persName ref="#goku">悟空</persName>の<ruby><rb>雰囲気</rb><rt>ふんいき</rt></ruby>の持つ<ruby><rb>桁違</rb><rt>けたちが</rt></ruby>いの大きさに、また、<persName ref="#goku">悟空</persName>的なるものの<ruby><rb>肌合</rb><rt>はだあ</rt></ruby>いの<ruby><rb>粗</rb><rt>あら</rt></ruby>さに、恐れをなして近づけないのだ。実際、正直なところを言えば、<persName ref="#goku">悟空</persName>は、どう考えてもあまり<ruby><rb>有難</rb><rt>ありがた</rt></ruby>い<ruby><rb>朋輩</rb><rt>ほうばい</rt></ruby>とは言えない。人の気持に思い<ruby><rb>遣</rb><rt>や</rt></ruby>りがなく、ただもう頭からガミガミ怒鳴り付ける。自己の能力を標準にして<ruby><rb>他人</rb><rt>ひと</rt></ruby>にもそれを要求し、それができないからとて<ruby><rb>怒</rb><rt>おこ</rt></ruby>りつけるのだから<ruby><rb>堪</rb><rt>たま</rt></ruby>らない。彼は自分の才能の非凡さについての自覚がないのだとも言える。彼が意地悪でないことだけは、確かに俺たちにもよく<ruby><rb>解</rb><rt>わか</rt></ruby>る。ただ彼には弱者の能力の程度がうまく<ruby><rb>呑</rb><rt>の</rt></ruby>み込めず、したがって、弱者の<ruby><rb>狐疑</rb><rt>こぎ</rt></ruby>・<ruby><rb>躊躇</rb><rt>ちゅうちょ</rt></ruby>・不安などにいっこう同情がないので、つい、あまりのじれったさに<ruby><rb>疳癪</rb><rt>かんしゃく</rt></ruby>を起こすのだ。俺たちの無能力が彼を怒らせさえしなければ、彼は実に人の善い無邪気な子供のような男だ。<persName ref="#hakkai">八戒</persName>はいつも<ruby><rb>寐</rb><rt>ね</rt></ruby>すごしたり<ruby><rb>怠</rb><rt>なま</rt></ruby>けたり化け<ruby><rb>損</rb><rt>そこな</rt></ruby>ったりして、怒られどおしである。俺が比較的彼を怒らせないのは、今まで彼と一定の距離を保っていて彼の前にあまりボロを出さないようにしていたからだ。こんなことではいつまで<ruby><rb>経</rb><rt>た</rt></ruby>っても学べるわけがない。もっと<persName ref="#goku">悟空</persName>に近づき、いかに彼の荒さが神経にこたえようとも、どんどん<ruby><rb>叱</rb><rt>しか</rt></ruby>られ<ruby><rb>殴</rb><rt>なぐ</rt></ruby>られ<ruby><rb>罵</rb><rt>ののし</rt></ruby>られ、こちらからも罵り返して、身をもってあの<ruby><rb>猿</rb><rt>さる</rt></ruby>からすべてを学び取らねばならぬ。遠方から眺めて感嘆しているだけではなんにもならない。</p>
+        <p>夜。<ruby><rb>俺</rb><rt>おれ</rt></ruby>は<ruby><rb>独</rb><rt>ひと</rt></ruby>り目覚めている。</p>
+        <p>今夜は宿が見つからず、<ruby><rb>山蔭</rb><rt>やまかげ</rt></ruby>の渓谷の大樹の下に草を<ruby><rb>藉</rb><rt>し</rt></ruby>いて、四人がごろ<ruby><rb>寐</rb><rt>ね</rt></ruby>をしている。一人おいて向こうに寐ているはずの<persName ref="#goku"><ruby><rb>悟空</rb><rt>ごくう</rt></ruby></persName>の<ruby><rb>鼾</rb><rt>いびき</rt></ruby>が<ruby><rb>山谷</rb><rt>さんこく</rt></ruby>に<ruby><rb>谺</rb><rt>こだま</rt></ruby>するばかりで、そのたびに頭上の木の葉の露がパラパラと落ちてくる。夏とはいえ山の夜気はさすがにうすら寒い。もう真夜中は過ぎたに違いない。俺は先刻から<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>けに寐ころんだまま、木の葉の<ruby><rb>隙</rb><rt>あいだ</rt></ruby>から<ruby><rb>覗</rb><rt>のぞ</rt></ruby>く星どもを見上げている。寂しい。何かひどく寂しい。自分があの<ruby><rb>淋</rb><rt>さび</rt></ruby>しい星の上にたった独りで立って、まっ暗な・冷たい・なんにもない世界の夜を眺めているような気がする。星というやつは、以前から、永遠だの無限だのということを考えさせるので、どうも<ruby><rb>苦手</rb><rt>にがて</rt></ruby>だ。それでも、<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>いているものだから、いやでも星を見ないわけにいかない。青白い大きな星のそばに、<ruby><rb>紅</rb><rt>あか</rt></ruby>い小さな星がある。そのずっと下の方に、やや黄色味を帯びた暖かそうな星があるのだが、それは風が吹いて葉が揺れるたびに、見えたり隠れたりする。流れ星が尾を<ruby><rb>曳</rb><rt>ひ</rt></ruby>いて、消える。なぜか知らないが、そのときふと俺は、<persName ref="#sanzo"><ruby><rb>三蔵法師</rb><rt>さんぞうほうし</rt></ruby></persName>の澄んだ寂しげな眼を思い出した。常に遠くを見つめているような・何物かに対する<ruby><rb>憫</rb><rt>あわ</rt></ruby>れみをいつも<ruby><rb>湛</rb><rt>たた</rt></ruby>えているような眼である。それが何に対する憫れみなのか、<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>はいっこう見当が付かないでいたが、今、ひょいと、<ruby><rb>判</rb><rt>わか</rt></ruby>ったような気がした。<ruby><rb>師父</rb><rt>しふ</rt></ruby>はいつも永遠を見ていられる。それから、その永遠と対比された地上のなべてのものの<ruby><rb>運命</rb><rt>さだめ</rt></ruby>をもはっきりと見ておられる。いつかは来る<ruby><rb>滅亡</rb><rt>ほろび</rt></ruby>の前に、それでも<ruby><rb>可憐</rb><rt>かれん</rt></ruby>に花開こうとする<ruby><rb>叡智</rb><rt>ちえ</rt></ruby>や<ruby><rb>愛情</rb><rt>なさけ</rt></ruby>や、そうした数々の<ruby><rb>善</rb><rt>よ</rt></ruby>きものの上に、師父は絶えず<ruby><rb>凝乎</rb><rt>じっ</rt></ruby>と<ruby><rb>愍</rb><rt>あわ</rt></ruby>れみの<ruby><rb>眼差</rb><rt>まなざし</rt></ruby>を<ruby><rb>注</rb><rt>そそ</rt></ruby>いでおられるのではなかろうか。星を見ていると、なんだかそんな気がしてきた。俺は起上がって、隣に<ruby><rb>寐</rb><rt>ね</rt></ruby>ておられる師父の顔を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>き込む。しばらくその安らかな寝顔を見、静かな寝息を聞いているうちに、俺は、心の奥に何かがポッと点火されたようなほの温かさを感じてきた。</p>
+        <p>――「わが西遊記」の中――</p>
+      </div>
+    </body>
+  </text>
+</TEI>

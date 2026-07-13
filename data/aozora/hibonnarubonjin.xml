@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>非凡なる凡人</title>
+        <author>国木田独歩</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>非凡なる凡人</title><author>国木田独歩</author>
+          <note>青空文庫。底本：「日本文学全集12　国木田独歩　石川啄木集」集英社。1972（昭和47）年10月7日初版。入力：宮崎達郎。校正：久保あきら。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000038/card324.html">https://www.aozora.gr.jp/cards/000038/card324.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="katsura-shosaku">
+        <persName>桂正作</persName>
+        <note>主人公。語り手「僕」の竹馬の友。武士の子で、『西国立志編』を座右の書として独学し、工手学校を経て横浜の会社の電気技手となる。作中では「桂」「正作」「桂君」「桂さん」とも呼ばれる</note>
+      </person>
+      <person xml:id="goro">
+        <persName>五郎</persName>
+        <note>桂正作の弟。国元を飛びだして上京し、正作の世話で工手学校に入り、明治三十四年に技手となって東京芝区の会社に勤める</note>
+      </person>
+      <person xml:id="arao">
+        <persName>荒雄</persName>
+        <note>桂正作のもう一人の弟。国を飛びだし、正作と五郎が処置に苦心している</note>
+      </person>
+      <person xml:id="tanaka-tsurukichi">
+        <persName>田中鶴吉</persName>
+        <note>田中鶴吉（1849–1917）。小笠原諸島の拓殖事業で当時世間の評判となった人物。正作の父が書面を送り礼状を得た逸話で言及される</note>
+      </person>
+      <person xml:id="umeda">
+        <persName>梅田</persName>
+        <note>正作に『西国立志編』を貸した先生（梅田先生）。本文では姓のみ</note>
+      </person>
+      <person xml:id="samuel-smiles">
+        <persName>スマイルス</persName>
+        <note>サミュエル・スマイルズ（1812–1904）。『自助論（Self-Help）』の著者。本文では「西国立志編（スマイルスの自助論）」として言及。底本表記は「スマイルス」</note>
+      </person>
+      <person xml:id="james-watt">
+        <persName>ワット</persName>
+        <note>ジェームズ・ワット（1736–1819）。蒸気機関の改良者。正作が理想とする発明家の一人</note>
+      </person>
+      <person xml:id="stephenson">
+        <persName>ステブンソン</persName>
+        <note>ジョージ・スチーブンソン（1781–1848）。蒸気機関車の実用化者。底本表記は「ステブンソン」</note>
+      </person>
+      <person xml:id="edison">
+        <persName>ヱヂソン</persName>
+        <note>トーマス・エジソン（1847–1931）。底本表記は「ヱヂソン」</note>
+      </person>
+      <person xml:id="toyotomi-hideyoshi">
+        <persName>秀吉</persName>
+        <note>豊臣秀吉（1537–1598）。天才の例として、また子供の戦争ごっこの役として言及される</note>
+      </person>
+      <person xml:id="napoleon">
+        <persName>ナポレオン</persName>
+        <note>ナポレオン・ボナパルト（1769–1821）。天才の例として言及される</note>
+      </person>
+      <person xml:id="minamoto-no-yoshitsune">
+        <persName>義経</persName>
+        <note>源義経（1159–1189）。子供の戦争ごっこの役として言及される</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="yokohama">
+        <placeName>横浜</placeName>
+        <location><geo>35.4437 139.638</geo></location>
+        <note>神奈川県横浜市。桂正作が電気技手として勤める会社の所在地・概値</note>
+      </place>
+      <place xml:id="nogecho">
+        <placeName>野毛町</placeName>
+        <location><geo>35.4494 139.6321</geo></location>
+        <note>横浜市中区野毛町。桂正作の下宿先。本文表記は「横浜野毛町」・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="tsukiji">
+        <placeName>築地</placeName>
+        <location><geo>35.6654 139.7707</geo></location>
+        <note>東京市京橋区築地（現・中央区築地）。上京後の桂正作の下宿（車屋の二階）がある町・概値</note>
+      </place>
+      <place xml:id="kudan">
+        <placeName>九段</placeName>
+        <location><geo>35.6944 139.7476</geo></location>
+        <note>東京・九段（現・千代田区九段）。正作が砂書きをした「九段の公園」の所在地・概値</note>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.6918 139.7707</geo></location>
+        <note>東京・神田（現・千代田区）。正作が通った夜学校の所在地・概値</note>
+      </place>
+      <place xml:id="shimbashi">
+        <placeName>新橋</placeName>
+        <location><geo>35.6663 139.7583</geo></location>
+        <note>新橋停車場（現・港区）。帰省の際に正作が発った駅・概値</note>
+      </place>
+      <place xml:id="shibaku">
+        <placeName>芝区</placeName>
+        <location><geo>35.656 139.748</geo></location>
+        <note>東京市芝区（現・港区の一部）。弟・五郎が勤める会社の所在地・概値</note>
+      </place>
+      <place xml:id="koshu-gakko">
+        <placeName>工手学校</placeName>
+        <location><geo>35.6644 139.773</geo></location>
+        <note>工手学校（1887年創立、現・工学院大学の前身）。正作が夜学部に学び、のちに弟・五郎も入れた工業学校。作中の時期の校舎は東京市京橋区南小田原町四丁目（現・中央区築地）にあった・概値</note>
+      </place>
+      <place xml:id="komatsuyama">
+        <placeName>小松山</placeName>
+        <note>語り手と桂正作の郷里にある山。桂家が家運の傾きとともに屋敷を移した麓の地。郷里は本文中で特定されず、実在地に同定できないため座標を付さない</note>
+      </place>
+      <place xml:id="ogasawara">
+        <placeName>小笠原</placeName>
+        <location><geo>27.0944 142.1919</geo></location>
+        <note>小笠原諸島。田中鶴吉の拓殖事業の地。島嶼群のため父島付近の概値</note>
+      </place>
+      <place xml:id="hawaii">
+        <placeName>ハワイ</placeName>
+        <location><geo>21.3069 -157.8583</geo></location>
+        <note>正作の兄の行方として噂される地。ホノルル付近の概値</note>
+      </place>
+      <place xml:id="nanbei">
+        <placeName>南米</placeName>
+        <location><geo>-15.0 -60.0</geo></location>
+        <note>南アメリカ。正作の兄の行方として噂される地。大陸名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>非凡なる凡人</head>
+        <p>上</p>
+        <p>五六人の年若い者が集まって互いに友の上を<ruby><rb>噂</rb><rt>うわさ</rt></ruby>しあったことがある、その時、一人が――</p>
+        <p>僕の<ruby><rb>小供</rb><rt>こども</rt></ruby>の時からの友に<persName ref="#katsura-shosaku"><ruby><rb>桂正作</rb><rt>かつらしょうさく</rt></ruby></persName>という男がある、今年二十四で今は<placeName ref="#yokohama">横浜</placeName>のある会社に技手として雇われもっぱら電気事業に従事しているが、まずこの男ほど類の<ruby><rb>異</rb><rt>ちが</rt></ruby>った人物はあるまいかと思われる。</p>
+        <p><ruby><rb>非凡人</rb><rt>ひぼんじん</rt></ruby>ではない。けれども凡人でもない。さりとて<ruby><rb>偏物</rb><rt>へんぶつ</rt></ruby>でもなく、奇人でもない。非凡なる凡人というが最も適評かと僕は思っている。</p>
+        <p>僕は知れば知るほどこの男に感心せざるを得ないのである。感心するといったところで、<persName ref="#toyotomi-hideyoshi"><ruby><rb>秀吉</rb><rt>ひでよし</rt></ruby></persName>とか、<persName ref="#napoleon">ナポレオン</persName>とかそのほかの天才に感心するのとは異うので、この種の人物は千百歳に一人も出るか出ないかであるが、<persName ref="#katsura-shosaku">桂正作</persName>のごときは平凡なる社会がつねに産出しうる人物である、また平凡なる社会がつねに要求する人物である。であるから<persName ref="#katsura-shosaku">桂</persName>のような人物が一人<ruby><rb>殖</rb><rt>ふ</rt></ruby>えればそれだけ社会が幸福なのである。僕の<persName ref="#katsura-shosaku">桂</persName>に感心するのはこの意味においてである。また僕が<persName ref="#katsura-shosaku">桂</persName>をば非凡なる凡人と評するのもこのゆえである。</p>
+        <p>僕らがまだ小学校に通っている時分であった。ある日、その日は日曜で僕は四五人の学校仲間と<placeName ref="#komatsuyama"><ruby><rb>小松山</rb><rt>こまつやま</rt></ruby></placeName>へ出かけ、戦争の<ruby><rb>真似</rb><rt>まね</rt></ruby>をして、我こそ<persName ref="#toyotomi-hideyoshi">秀吉</persName>だとか<persName ref="#minamoto-no-yoshitsune">義経</persName>だとか、十三四にもなりながらばかげた<ruby><rb>腕白</rb><rt>わんぱく</rt></ruby>を働らいて大あばれに<ruby><rb>荒</rb><rt>あば</rt></ruby>れ、ついに<ruby><rb>喉</rb><rt>のど</rt></ruby>が<ruby><rb>渇</rb><rt>かわ</rt></ruby>いてきたので、山のすぐ<ruby><rb>麓</rb><rt>ふもと</rt></ruby>にある<persName ref="#katsura-shosaku">桂正作</persName>の家の庭へ、裏山からドヤドヤと<ruby><rb>駈下</rb><rt>かけお</rt></ruby>りて、案内も<ruby><rb>乞</rb><rt>こ</rt></ruby>わず、いきなり<ruby><rb>井戸辺</rb><rt>いどばた</rt></ruby>に集まって我がちにと水を<ruby><rb>汲</rb><rt>く</rt></ruby>んで<ruby><rb>呑</rb><rt>の</rt></ruby>んだ。</p>
+        <p>すると二階の窓から<persName ref="#katsura-shosaku">正作</persName>が顔を出してこっちを見ている。僕はこれを見るや</p>
+        <p>「来ないか」と呼んだ。けれどもいつにないまじめくさった顔つきをして頭を横に振った。腕白のほうでも人並のことをしてのける<persName ref="#katsura-shosaku">桂正作</persName>、不思議と出てこないので、僕らもしいては誘わず、そのまままた山に駈登ってしまった。</p>
+        <p>騒ぎ<ruby><rb>疲</rb><rt>くた</rt></ruby>ぶれて<ruby><rb>衆人</rb><rt>みんな</rt></ruby><ruby><rb>散々</rb><rt>ちりぢり</rt></ruby>に我家へと帰り去り、僕は一人<persName ref="#katsura-shosaku">桂</persName>の<ruby><rb>宅</rb><rt>うち</rt></ruby>に立寄った。黙って二階へ上がってみると、<persName ref="#katsura-shosaku">正作</persName>は「テーブル」に向かい<ruby><rb>椅子</rb><rt>いす</rt></ruby>に腰をかけて、一心になって何か読んでいる。</p>
+        <p>僕はまずこの「テーブル」と椅子のことから説明しようと思う。「テーブル」というは粗末な日本机の両脚の下に<ruby><rb>続台</rb><rt>つぎだい</rt></ruby>をした品物で、椅子とは<ruby><rb>足続</rb><rt>あしつ</rt></ruby>ぎの下に箱を置いただけのこと。けれども<persName ref="#katsura-shosaku">正作</persName>はまじめでこの工夫をしたので、学校の先生が日本流の机は衛生に悪いといった言葉をなるほどと感心してすぐこれだけのことを実行したのである。そしてその後つねにこの椅子テーブルで彼は勉強していたのである。そのテーブルの上には教科書その他の書籍を<ruby><rb>丁寧</rb><rt>ていねい</rt></ruby>に重ね、<ruby><rb>筆墨</rb><rt>ひつぼく</rt></ruby>の類までけっして乱雑に置いてはない。で彼は日曜のいい天気なるにもかかわらず何の本か、<ruby><rb>脇目</rb><rt>わきめ</rt></ruby>もふらないで読んでいるので、僕はそのそばに行って、</p>
+        <p>「何を読んでいるのだ」といいながら見ると、<ruby><rb>洋綴</rb><rt>ようとじ</rt></ruby>の厚い本である。</p>
+        <p>「<ruby><rb>西国立志編</rb><rt>さいこくりっしへん</rt></ruby>だ」と答えて顔を上げ、僕を見たその<ruby><rb>眼</rb><rt>まな</rt></ruby>ざしはまだ夢の<ruby><rb>醒</rb><rt>さ</rt></ruby>めない人のようで、心はなお書籍の中にあるらしい。</p>
+        <p>「おもしろいかね？」</p>
+        <p>「ウン、おもしろい」</p>
+        <p>「<ruby><rb>日本外史</rb><rt>にほんがいし</rt></ruby>とどっちがおもしろい」と僕が問うや、<persName ref="#katsura-shosaku">桂</persName>は<ruby><rb>微笑</rb><rt>わらい</rt></ruby>を含んで、ようやく我に<ruby><rb>復</rb><rt>かえ</rt></ruby>り、いつもの元気のよい声で</p>
+        <p>「それやアこのほうがおもしろいよ。日本外史とは物が<ruby><rb>異</rb><rt>ちが</rt></ruby>う。<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>僕は<persName ref="#umeda">梅田</persName>先生の処から借りてきてから読みはじめたけれどおもしろうて止められない。僕はどうしても<ruby><rb>一冊</rb><rt>いっさつ</rt></ruby>買うのだ」といって<ruby><rb>嬉</rb><rt>うれ</rt></ruby>しくってたまらない風であった。</p>
+        <p>その後<persName ref="#katsura-shosaku">桂</persName>はついに西国立志編を一冊買い求めたが、その本というは粗末至極な洋綴で、一度読みおわらないうちにすでにバラバラになりそうな<ruby><rb>代物</rb><rt>しろもの</rt></ruby>ゆえ、彼はこれを<ruby><rb>丈夫</rb><rt>じょうぶ</rt></ruby>な麻糸で綴じなおした。</p>
+        <p>この時が僕も<persName ref="#katsura-shosaku">桂</persName>も数え年の十四歳。<persName ref="#katsura-shosaku">桂</persName>は一度西国立志編の<ruby><rb>美味</rb><rt>うまみ</rt></ruby>を知って以後は、何度この書を読んだかしれない、ほとんど暗誦するほど熟読したらしい、そして今日といえどもつねにこれを<ruby><rb>座右</rb><rt>ざゆう</rt></ruby>に置いている。</p>
+        <p>げに<persName ref="#katsura-shosaku">桂正作</persName>は<ruby><rb>活</rb><rt>い</rt></ruby>きた西国立志編といってよかろう、<persName ref="#katsura-shosaku">桂</persName>自身でもそういっている。</p>
+        <p>「もし僕が西国立志編を読まなかったらどうであったろう。僕の今日あるのはまったくこの書のお<ruby><rb>蔭</rb><rt>かげ</rt></ruby>だ」と。</p>
+        <p>けれども西国立志編（<persName ref="#samuel-smiles">スマイルス</persName>の<ruby><rb>自助論</rb><rt>セルフヘルプ</rt></ruby>）を読んだものは洋の東西を問わず幾百万人あるかしれないが、<persName ref="#katsura-shosaku">桂正作</persName>のように、「<ruby><rb>余</rb><rt>よ</rt></ruby>を作りしものはこの書なり」と明言しうる者ははたして幾人あるだろう。</p>
+        <p>天が与えた才能からいうと<persName ref="#katsura-shosaku">桂</persName>は中位の人たるにすぎない。学校における成績も中等で、同級生のうち、彼よりも<ruby><rb>優</rb><rt>すぐ</rt></ruby>れた少年はいくらもいた。また彼はかなりの<ruby><rb>腕白者</rb><rt>わんぱくもの</rt></ruby>で、僕らといっしょにずいぶん<ruby><rb>荒</rb><rt>あば</rt></ruby>れたものである。それで学校においても<ruby><rb>郷党</rb><rt>きょうとう</rt></ruby>にあっても、とくに人から注目せられる少年ではなかった。</p>
+        <p>けれども天の与えた性質からいうと、彼は率直で、単純で、そしてどこかに<ruby><rb>圧</rb><rt>おさ</rt></ruby>ゆべからざる勇猛心を持っていた。勇猛心というよりか、<ruby><rb>敢為</rb><rt>かんい</rt></ruby>の気象といったほうがよかろう。すなわち一転すれば冒険心となり、再転すれば<ruby><rb>山気</rb><rt>やまぎ</rt></ruby>となるのである。<ruby><rb>現</rb><rt>げん</rt></ruby>に彼の父は山気のために失敗し、彼の兄は冒険のために死んだ。けれども<persName ref="#katsura-shosaku">正作</persName>は西国立志編のお蔭で、この気象に訓練を加え、堅実なる<ruby><rb>有為</rb><rt>ゆうい</rt></ruby>の精神としたのである。</p>
+        <p>ともかく、彼の父は<ruby><rb>尋常</rb><rt>じんじょう</rt></ruby>の人ではなかった。やはり昔の武士で、維新の戦争にも出てひとかどの功をも立てたのである。体格は<ruby><rb>骨太</rb><rt>ほねぶと</rt></ruby>の<ruby><rb>頑丈</rb><rt>がんじょう</rt></ruby>な作り、その顔は<ruby><rb>眼</rb><rt>まな</rt></ruby>ジリ長く切れ、鼻高く一見して堂々たる<ruby><rb>容貌</rb><rt>ようぼう</rt></ruby>、気象も<ruby><rb>武人気質</rb><rt>ぶじんかたぎ</rt></ruby>で、容易に物に屈しない。であるからもし武人のままで押通したならば、すくなくとも<ruby><rb>藩閥</rb><rt>はんばつ</rt></ruby>の力で<ruby><rb>今日</rb><rt>こんにち</rt></ruby>は人にも知られた将軍になっていたかもしれない。が、彼は維新の戦争から帰るとすぐ「農」の一字に隠れてしまった。隠れたというよりか出なおしたのである。そして「<ruby><rb>殖産</rb><rt>しょくさん</rt></ruby>」という流行語にかぶれてついに破産してしまった。</p>
+        <p>桂家の屋敷は<ruby><rb>元来</rb><rt>もと</rt></ruby>、町にあったのを、家運の傾むくとともにこれを<placeName ref="#komatsuyama">小松山</placeName>の下に運んで建てなおしたので、その時も僕の父などはこういっていた、あれほどのりっぱな屋敷を<ruby><rb>打壊</rb><rt>ぶちこわ</rt></ruby>さないでそのまま人に<ruby><rb>譲</rb><rt>ゆず</rt></ruby>り、その金でべつに建てたらよかろうと。けれども、<persName ref="#katsura-shosaku">桂正作</persName>の父の気象はこの<ruby><rb>一事</rb><rt>いちじ</rt></ruby>でも解っている。<placeName ref="#komatsuyama">小松山</placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に移ってこの<ruby><rb>方</rb><rt>かた</rt></ruby>は、純粋の百姓になって<persName ref="#katsura-shosaku">正作</persName>の父は働いているのを僕はしばしば見た。</p>
+        <p>であるから<persName ref="#katsura-shosaku">正作</persName>が西国立志編を読み初めたころは、その家政はよほど困難であったに違いない。けれどもその家庭にはいつも多少の<ruby><rb>山気</rb><rt>やまぎ</rt></ruby>が浮動していたという<ruby><rb>証拠</rb><rt>しょうこ</rt></ruby>には、<persName ref="#katsura-shosaku">正作</persName>がある日僕に向かって、<ruby><rb>宅</rb><rt>うち</rt></ruby>には<persName ref="#tanaka-tsurukichi"><ruby><rb>田中鶴吉</rb><rt>たなかつるきち</rt></ruby></persName>の手紙があると得意らしく<ruby><rb>語</rb><rt>い</rt></ruby>ったことがある。その<ruby><rb>理由</rb><rt>いわれ</rt></ruby>は、<persName ref="#katsura-shosaku">桂</persName>の父が、当時世間の大評判であった<persName ref="#tanaka-tsurukichi">田中鶴吉</persName>の<placeName ref="#ogasawara"><ruby><rb>小笠原</rb><rt>おがさわら</rt></ruby></placeName><ruby><rb>拓殖</rb><rt>たくしょく</rt></ruby><ruby><rb>事業</rb><rt>じぎょう</rt></ruby>にひどく感服して、わざわざ書面を送って<persName ref="#tanaka-tsurukichi">田中</persName>に敬意を表したところ、<persName ref="#tanaka-tsurukichi">田中</persName>がまたすぐ礼状を出してそれが<persName ref="#katsura-shosaku">桂</persName>の父に届いたという一件、またある日<persName ref="#katsura-shosaku">正作</persName>が僕に向かい、今から何カ月とかすると<ruby><rb>蛤</rb><rt>はまぐり</rt></ruby>をたくさんご<ruby><rb>馳走</rb><rt>ちそう</rt></ruby>するというから、なぜだと聞くと、父が蛤の繁殖事業を初め、種を取寄せて浜に下ろしたから遠からず、この附近は蛤が非常に採れるようになると答えた。まずこれらの事で家庭の様子も想像することができるのである。</p>
+        <p>父の山気を露骨に受けついで、<persName ref="#katsura-shosaku">正作</persName>の兄は十六の<ruby><rb>歳</rb><rt>とし</rt></ruby>に家を飛びだし音信不通、<ruby><rb>行方</rb><rt>ゆきがた</rt></ruby>知れずになってしまった。<placeName ref="#hawaii">ハワイ</placeName>に行ったともいい、<placeName ref="#nanbei">南米</placeName>に行ったとも<ruby><rb>噂</rb><rt>うわ</rt></ruby>させられたが、実際のことは誰も知らなかった。</p>
+        <p>小学校を卒業するや、僕は県下の中学校に入ってしまい、しばらく故郷を離れたが<persName ref="#katsura-shosaku">正作</persName>は家政の<ruby><rb>都合</rb><rt>つごう</rt></ruby>でそういうわけにゆかず、<ruby><rb>周旋</rb><rt>しゅうせん</rt></ruby>する人があって<ruby><rb>某</rb><rt>なにがし</rt></ruby>銀行に出ることになり給料四円か五円かで<ruby><rb>某町</rb><rt>なにがしまち</rt></ruby>まで二里の<ruby><rb>道程</rb><rt>みちのり</rt></ruby>を<ruby><rb>朝夕</rb><rt>ちょうせき</rt></ruby>往復することになった。</p>
+        <p>間もなく<ruby><rb>冬期休課</rb><rt>ふゆやすみ</rt></ruby>になり、僕は帰省の途について故郷近く車で来ると、小さな坂がある、その麓で車を下り手荷物を車夫に托し、自分はステッキ一本で坂を登りかけると、僕の五六間さきを<ruby><rb>歩</rb><rt>ゆ</rt></ruby>く少年がある、身に古ぼけたトンビを着て、手に古ぼけた<ruby><rb>手提</rb><rt>てさげ</rt></ruby>カバンを持って、静かに坂を登りつつある、その姿がどうも<persName ref="#katsura-shosaku">桂正作</persName>に似ているので、</p>
+        <p>「<persName ref="#katsura-shosaku">桂</persName>君じゃアないか」と声を掛けた。後ろを振り向いて<ruby><rb>破顔一笑</rb><rt>はがんいっしょう</rt></ruby>したのはまさしく<persName ref="#katsura-shosaku">正作</persName>。立ち止まって僕をまち</p>
+        <p>「<ruby><rb>冬期休課</rb><rt>ふゆやすみ</rt></ruby>になったのか」</p>
+        <p>「そうだ君はまだ銀行に通ってるか」</p>
+        <p>「ウン、通ってるけれどもすこしもおもしろくない」</p>
+        <p>「どうしてや？」と僕は驚いて聞いた。</p>
+        <p>「どうしてというわけもないが、君なら三日と<ruby><rb>辛棒</rb><rt>しんぼう</rt></ruby>ができないだろうと思う。第一僕は銀行業からして僕の目的じゃないのだもの」</p>
+        <p>二人は話しながら歩いた、車夫のみ先へやり。</p>
+        <p>「何が君の目的だ」</p>
+        <p>「工業で身を立つる決心だ」といって<persName ref="#katsura-shosaku">正作</persName>は微笑し、「僕は毎日この道を往復しながらいろいろ考がえたが、発明に越す大事業はないと思う」</p>
+        <p><persName ref="#james-watt">ワット</persName>や<persName ref="#stephenson">ステブンソン</persName>や<persName ref="#edison">ヱヂソン</persName>は彼が理想の英雄である。そして西国立志編は彼の<ruby><rb>聖書</rb><rt>バイブル</rt></ruby>である。</p>
+        <p>僕のだまって<ruby><rb>頷</rb><rt>うなず</rt></ruby>くを見て、<persName ref="#katsura-shosaku">正作</persName>はさらに言葉をつぎ</p>
+        <p>「だから僕は<ruby><rb>来春</rb><rt>らいはる</rt></ruby>は<placeName ref="#tokyo">東京</placeName>へ出ようかと思っている」</p>
+        <p>「<placeName ref="#tokyo">東京</placeName>へ？」と驚いて問い返した。</p>
+        <p>「そうサ<placeName ref="#tokyo">東京</placeName>へ。旅費はもうできたが、<ruby><rb>彼地</rb><rt>むこう</rt></ruby>へ行って三月ばかりは食えるだけの金を持っていなければ困るだろうと思う。だから僕は父に頼んで来年の三月までの給料は全部僕が貰うことにした。だから四月早々は<ruby><rb>出立</rb><rt>たて</rt></ruby>るだろうと思う」</p>
+        <p><persName ref="#katsura-shosaku">桂正作</persName>の計画はすべてこの筆法である。彼はずいぶん少年にありがちな空想を描くけれども、計画を立ててこれを実行する上については少年の時から今日に至るまで、すこしも変わらず、一定の順序を立てて一歩一歩と着々実行してついに目的どおりに<ruby><rb>成就</rb><rt>じょうじゅ</rt></ruby>するのである。むろんこれは西国立志編の感化でもあろう、けれども一つには彼の性情が祖父に似ているからだと思われる。彼の祖父の非凡な人であったことを今ここで詳しく話すことはできないが、その一つをいえば<ruby><rb>真書太閤記</rb><rt>しんしょたいこうき</rt></ruby>三百巻を写すに十年計画を立ててついにみごと写しおわったことがある。僕も<persName ref="#katsura-shosaku">桂</persName>の家でこれを実見したが今でもその<ruby><rb>気根</rb><rt>きこん</rt></ruby>のおおいなるに驚いている。<persName ref="#katsura-shosaku">正作</persName>はたしかにこの祖父の血を受けたに違いない。もしくはこの祖父の感化を受けただろうと思う。</p>
+        <p>途上種々の話で吾々二人は夕暮に帰宅し、その後僕は毎日のように<persName ref="#katsura-shosaku">桂</persName>に遇って互いに将来の<ruby><rb>大望</rb><rt>アンビション</rt></ruby>を語りあった。<ruby><rb>冬期休暇</rb><rt>ふゆやすみ</rt></ruby>が終りいよいよ僕は中学校の寄宿舎に帰るべく故郷を出立する前の晩、<persName ref="#katsura-shosaku">正作</persName>が訪ねてきた。そしていうには今度会うのは<placeName ref="#tokyo">東京</placeName>だろう。三四年は帰郷しないつもりだからと。僕もそのつもりで<persName ref="#katsura-shosaku">正作</persName>に<ruby><rb>離別</rb><rt>わかれ</rt></ruby>を告げた。</p>
+        <p><date when="1894">明治二十七年</date>の春、<persName ref="#katsura-shosaku">桂</persName>は計画どおりに上京し、<placeName ref="#tokyo">東京</placeName>から二三度手紙を寄こしたけれど、いつも無事を知らすばかりでべつに着京後の様子を告げない。また<ruby><rb>故郷</rb><rt>くに</rt></ruby>の者誰もどうして<persName ref="#katsura-shosaku">正作</persName>が暮らしているか知らない、父母すら知らない、ただ何人も疑がわないことが一つあった。<ruby><rb>曰</rb><rt>いわ</rt></ruby>く<persName ref="#katsura-shosaku">桂正作</persName>は何らかの計画を立ててその目的に向かって着々歩を進めているだろうという事実である。</p>
+        <p>僕は<date when="1897">三十年</date>の春上京した。そして<ruby><rb>宿所</rb><rt>やど</rt></ruby>がきまるや、さっそく<placeName ref="#tsukiji">築地</placeName>何町何番地、何の<ruby><rb>某方</rb><rt>なにがしかた</rt></ruby>という<persName ref="#katsura-shosaku">桂</persName>の住所を訪ねた。この時二人はすでに十九歳。</p>
+        <p>下</p>
+        <p>午後三時ごろであった。僕は<placeName ref="#tsukiji">築地</placeName>何町を隅から隅まで探して、ようやくのことで<persName ref="#katsura-shosaku">桂</persName>の<ruby><rb>住家</rb><rt>すみか</rt></ruby>を探しあてた。容易に分からぬも道理、<ruby><rb>某方</rb><rt>なにがしかた</rt></ruby>というその某は車屋の主人ならんとは。とある横町の貧しげな家ばかり並んでいる中に<ruby><rb>挾</rb><rt>はさ</rt></ruby>まって九尺間口の二階屋、その二階が「<ruby><rb>活</rb><rt>い</rt></ruby>ける西国立志編」君の巣である。</p>
+        <p>「<persName ref="#katsura-shosaku">桂</persName>君という人があなたの処にいますか」</p>
+        <p>「ヘイいらっしやいます、あの書生さんでしょう」との山の神の<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>。声を聞きつけてミシミシと二階を下りてきて「ヤア」と現われたのが、<ruby><rb>一別</rb><rt>いちべつ</rt></ruby>以来三年会わなんだ<persName ref="#katsura-shosaku">桂正作</persName>である。</p>
+        <p>足も立てられないような汚い<ruby><rb>畳</rb><rt>たたみ</rt></ruby>を二三枚歩いて、狭い急な<ruby><rb>階子段</rb><rt>はしごだん</rt></ruby>を登り、通された座敷は六畳敷、<ruby><rb>煤</rb><rt>すす</rt></ruby>けた<ruby><rb>天井</rb><rt>てんじょう</rt></ruby>低く頭を圧し、畳も黒く壁も黒い。</p>
+        <p>けれども黒くないものがある。それは書籍。</p>
+        <p><persName ref="#katsura-shosaku">桂</persName>ほど書籍を大切にするものはすくない。彼はいかなる書物でもけっして机の上や、座敷の真中に<ruby><rb>放擲</rb><rt>ほうてき</rt></ruby>するようなことなどはしない。こういうと<persName ref="#katsura-shosaku">桂</persName>は書籍ばかりを大切にするようなれどかならずしもそうでない。彼は身の<ruby><rb>周囲</rb><rt>まわり</rt></ruby>のものすべてを大事にする。</p>
+        <p>見ると机もかなりりっぱ。書籍箱もさまで黒くない。彼はその必要品を<ruby><rb>粗略</rb><rt>そりゃく</rt></ruby>にするほど、東洋<ruby><rb>豪傑風</rb><rt>ごうけつふう</rt></ruby>の美点も<ruby><rb>悪癖</rb><rt>あくへき</rt></ruby>も受けていない。今の流行語でいうと、彼は西国立志編の感化を受けただけにすこぶるハイカラ的である。今にして思う、僕はハイカラの精神の我が<persName ref="#katsura-shosaku">桂正作</persName>を支配したことを<ruby><rb>皇天</rb><rt>こうてん</rt></ruby>に感謝する。</p>
+        <p>机の上を見ると、教科書用の書籍そのほかが、例のごとく整然として重ねてある。その他周囲の物すべてが皆なその処を得て、キチンとしている。</p>
+        <p>室の下等にして黒く<ruby><rb>暗憺</rb><rt>あんたん</rt></ruby>なるを<ruby><rb>憂</rb><rt>うれ</rt></ruby>うるなかれ、<persName ref="#katsura-shosaku">桂正作</persName>はその主義と、その性情によって、すべてこれらの黒くして<ruby><rb>暗憺</rb><rt>あんたん</rt></ruby>たるものをば化して純潔にして高貴、感嘆すべく<ruby><rb>畏敬</rb><rt>いけい</rt></ruby>すべきものとなしているのである。</p>
+        <p>彼は例のごとくいとも快活に<ruby><rb>胸臆</rb><rt>きょうおく</rt></ruby>を開いて語った。僕の問うがまにまに上京後の彼の生活をば、恥もせず、誇りもせず、平易に、率直に、詳しく話して聞かした。</p>
+        <p>彼ほど虚栄心のすくない男は珍らしい。その境遇に<ruby><rb>処</rb><rt>しょ</rt></ruby>し、その信ずるところを行なうて、それで満足し安心し、そして<ruby><rb>勉励</rb><rt>べんれい</rt></ruby>している。彼はけっして自分と他人とを比較しない。自分は自分だけのことをなして、運命に安んじて、そして運命を開拓しつつ進んでゆく。</p>
+        <p>一別以来、<persName ref="#katsura-shosaku">正作</persName>のなしたことを聞くとじつにこのとおりである。僕は聞いているうちにもますます彼を尊敬する念を禁じえなかった。</p>
+        <p>彼は計画どおり三カ月の<ruby><rb>糧</rb><rt>りょう</rt></ruby>を蓄えて上京したけれども、坐してこれを食らう男ではなかった。</p>
+        <p>何がなおもしろい職を得たいものと、まず<placeName ref="#tokyo">東京</placeName>じゅうを足に<ruby><rb>任</rb><rt>ま</rt></ruby>かして<ruby><rb>遍巡</rb><rt>へめぐ</rt></ruby>り歩いた。そして思いついたのは新聞売りと砂書き。<placeName ref="#kudan">九段</placeName>の公園で砂書きの<ruby><rb>翁</rb><rt>おやじ</rt></ruby>を見て、彼はただちにこれともの語り、事情を明して弟子入りを頼み、それより二三日の間<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>をして、間もなく大道のかたわらに坐り、一銭、五厘、時には二銭を投げてもらってでたらめを書き、いくらかずつの収入を得た。</p>
+        <p>ある日、彼は客のなきままに、自分で勝手なことを書いては消し、<persName ref="#james-watt">ワット</persName>、<persName ref="#stephenson">ステブンソン</persName>、などいう名を書いていると、<ruby><rb>八歳</rb><rt>やッつ</rt></ruby>ばかりの<ruby><rb>男児</rb><rt>おとこのこ</rt></ruby>を連れた<ruby><rb>衣装</rb><rt>みなり</rt></ruby>のよい婦人が前に立った。「<persName ref="#james-watt">ワット</persName>」と<ruby><rb>児供</rb><rt>こども</rt></ruby>が読んで、「<ruby><rb>母上</rb><rt>かあさま</rt></ruby>、<persName ref="#james-watt">ワット</persName>とは何のこと？」と聞いた。<persName ref="#katsura-shosaku">桂</persName>は顔を挙げて<ruby><rb>小供</rb><rt>こども</rt></ruby>に解りやすいようにこの大発明家のことを話して聞かし、「坊様も大きくなったらこんな<ruby><rb>豪</rb><rt>えら</rt></ruby>い人におなりなさいよ」といった。そうすると婦人が「失礼ですけれど」といいつつ二十銭銀貨を手渡して立ち去った。</p>
+        <p>「僕はその銀貨を<ruby><rb>費</rb><rt>つか</rt></ruby>わないでまだ持っている」と<persName ref="#katsura-shosaku">正作</persName>はいって罪のない微笑をもらした。</p>
+        <p>彼はかく労働している間、その宿所は<ruby><rb>木賃宿</rb><rt>きちんやど</rt></ruby>、夜は<placeName ref="#kanda">神田</placeName>の夜学校に行って、もっぱら数学を学んでいたのである。</p>
+        <p>日清の間が切迫してくるや、彼はすぐと新聞売りになり、号外で意外の金を<ruby><rb>儲</rb><rt>もう</rt></ruby>けた。</p>
+        <p>かくてその歳も暮れ、<date when="1895">二十八年</date>の春になって、彼は首尾よく<placeName ref="#koshu-gakko">工手学校</placeName>の夜学部に入学しえたのである。</p>
+        <p>かつ問いかつ聞いているうちに夕暮近くなった。</p>
+        <p>「<ruby><rb>飯</rb><rt>めし</rt></ruby>を食いに行こう！」と<persName ref="#katsura-shosaku">桂</persName>は突然いって、机の<ruby><rb>抽斗</rb><rt>ひきだし</rt></ruby>から手早く<ruby><rb>蟇口</rb><rt>がまぐち</rt></ruby>を取りだして<ruby><rb>懐</rb><rt>ふところ</rt></ruby>へ入れた。</p>
+        <p>「どこへ？」と僕は驚いて<ruby><rb>訊</rb><rt>たず</rt></ruby>ねた。</p>
+        <p>「飯屋へサ」といって<persName ref="#katsura-shosaku">正作</persName>は立ちかけたので</p>
+        <p>「イヤ飯なら僕は<ruby><rb>宿屋</rb><rt>やど</rt></ruby>へ帰って食うから心配しないほうがいいよ」</p>
+        <p>「まアそんなことをいわないでいっしょに食いたまえな。そして今夜はここへ泊りたまえ。まだ話がたくさん残っておる」</p>
+        <p>僕もその意に従がい、二人して車屋を出た。<ruby><rb>路</rb><rt>みち</rt></ruby>の二三丁も歩いたが、<persName ref="#katsura-shosaku">桂</persName>はその間も愉快に話しながら、<ruby><rb>国元</rb><rt>くにもと</rt></ruby>のことなど聞き、今年のうちに一度<ruby><rb>故郷</rb><rt>くに</rt></ruby>に帰りたいなどいっていた。けれども僕は<persName ref="#katsura-shosaku">桂</persName>の生活の模様から察して、三百里外の故郷へ往復することのとうてい、いうべくして行なうべからざるを思い、べつに気にも留めず、帰れたら一度帰って父母を見舞いたまえくらいの軽い挨拶をしておいた。</p>
+        <p>「ここだ！」といって<persName ref="#katsura-shosaku">桂</persName>は先に立って、<ruby><rb>縄暖簾</rb><rt>なわのれん</rt></ruby>を<ruby><rb>潜</rb><rt>くぐ</rt></ruby>った。僕はびっくりして、しばしためらっていると中から「オイ君！」と呼んだ。しかたがないから入ると、<persName ref="#katsura-shosaku">桂</persName>はほどよき場処に陣取って笑味を含んでこっちを見ている。見廻わすと、<persName ref="#katsura-shosaku">桂</persName>のほかに四五名の労働者らしい男がいて、長い食卓に着いて、飯を食う者、酒を呑むもの、ことのほか<ruby><rb>静粛</rb><rt>せいしゅく</rt></ruby>である。二人差向いで<ruby><rb>卓</rb><rt>たく</rt></ruby>に<ruby><rb>倚</rb><rt>よ</rt></ruby>るや</p>
+        <p>「僕は三度三度ここで飯を食うのだ」と<persName ref="#katsura-shosaku">桂</persName>は平気でいって「君は何を食うか。何でもできるよ」</p>
+        <p>「何でもいい、僕は」</p>
+        <p>「そうか、それでは」と<persName ref="#katsura-shosaku">桂</persName>は女中に向かって二三品命じたが、その名は<ruby><rb>符牒</rb><rt>ふちょう</rt></ruby>のようで僕には解らなかった。しばらくすると、<ruby><rb>刺身</rb><rt>さしみ</rt></ruby>、<ruby><rb>煮肴</rb><rt>にざかな</rt></ruby>、<ruby><rb>煮〆</rb><rt>にしめ</rt></ruby>、汁などが出て飯を<ruby><rb>盛</rb><rt>も</rt></ruby>った茶碗に<ruby><rb>香物</rb><rt>こうのもの</rt></ruby>。</p>
+        <p><persName ref="#katsura-shosaku">桂</persName>はうまそうに食い初めたが、僕は何となく汚らしい気がして食う気にならなかったのをむりに食い初めていると、思わず涙が<ruby><rb>逆上</rb><rt>こみあ</rt></ruby>げてきた。<persName ref="#katsura-shosaku">桂正作</persName>は武士の子、今や彼が一家は非運の底にあれど、ようするに彼は紳士の子、それが下等社会といっしょに<ruby><rb>一膳</rb><rt>いちぜん</rt></ruby>めしに舌打ち鳴らすか、と思って涙ぐんだのではない。けっしてそうではない。いやいやながら<ruby><rb>箸</rb><rt>はし</rt></ruby>を取って二口三口食うや、卒然、僕は思った、ああこの飯はこの<ruby><rb>有為</rb><rt>ゆうい</rt></ruby>なる、勤勉なる、独立自活してみずから教育しつつある少年が、労働して<ruby><rb>儲</rb><rt>もう</rt></ruby>けえた金で、心ばかりの<ruby><rb>馳走</rb><rt>ちそう</rt></ruby>をしてくれる好意だ、それを何ぞやまずそうに食らうとは！　<persName ref="#katsura-shosaku">桂</persName>はここで三度の食事をするではないか、これをいやいやながら食う自分は彼の竹馬の友といわりょうかと、そう思うと僕は思わず涙を呑んだのである。そして僕はきゅうに胸がすがすがして、<persName ref="#katsura-shosaku">桂</persName>とともにうまく食事をして、<ruby><rb>縄暖簾</rb><rt>なわのれん</rt></ruby>を出た。</p>
+        <p>その夜二人で薄い<ruby><rb>布団</rb><rt>ふとん</rt></ruby>にいっしょに寝て、夜の<ruby><rb>更</rb><rt>ふ</rt></ruby>けるのも知らず、小さな豆ランプのおぼつかない光の<ruby><rb>下</rb><rt>もと</rt></ruby>で、<ruby><rb>故郷</rb><rt>くに</rt></ruby>のことやほかの友の上のことや、<ruby><rb>将来</rb><rt>ゆくすえ</rt></ruby>の望みを語りあったことは僕今でも思い起こすと、楽しい<ruby><rb>懐</rb><rt>なつか</rt></ruby>しいその夜の<ruby><rb>様</rb><rt>さま</rt></ruby>が眼の先に浮かんでくる。</p>
+        <p>その後、僕と<persName ref="#katsura-shosaku">桂</persName>は互いに往来していたが早くもその年の<ruby><rb>夏期休課</rb><rt>なつやすみ</rt></ruby>が来た。すると一日、<persName ref="#katsura-shosaku">桂</persName>が僕の下宿屋へ来て、</p>
+        <p>「僕は<ruby><rb>故郷</rb><rt>くに</rt></ruby>に<ruby><rb>帰</rb><rt>い</rt></ruby>ってこうかと思う。じつはもうきめているのだ」という意外な言葉。</p>
+        <p>「それはいいけれども君……」と僕はすぐ旅費<ruby><rb>等</rb><rt>とう</rt></ruby>のことを心配して口を開くと</p>
+        <p>「じつは金もできているのだ。三十円ばかり貯蓄しているから、往復の旅費と<ruby><rb>土産物</rb><rt>みやげもの</rt></ruby>とで二十円あったらよかろうと思う。三十円みんな<ruby><rb>費</rb><rt>つか</rt></ruby>ってしまうと後で困るからね」というのを聞いて僕は今さらながら彼の用意のほどに感じ入った。彼の話によると二年前からすでに帰省の計画を立ててそのつもりで貯金したとのこと。</p>
+        <p>どうだ諸君！　こういうことはできやすいようで、なかなかできないことだよ。<persName ref="#katsura-shosaku">桂</persName>は凡人だろう。けれどもそのなすことは非凡ではないか。</p>
+        <p>そこで僕もおおいに<ruby><rb>歓</rb><rt>よろこ</rt></ruby>んで彼の帰国を送った。彼は二年間の貯蓄の三分の二を平気で<ruby><rb>擲</rb><rt>なげう</rt></ruby>って、<ruby><rb>錦絵</rb><rt>にしきえ</rt></ruby>を買い、<ruby><rb>反物</rb><rt>たんもの</rt></ruby>を買い、母や<ruby><rb>弟</rb><rt>おとと</rt></ruby>や、親戚の女子供を喜ばすべく、<ruby><rb>欣々然</rb><rt>きんきんぜん</rt></ruby>として<placeName ref="#shimbashi">新橋</placeName>を<ruby><rb>立出</rb><rt>た</rt></ruby>った。</p>
+        <p>翌年、<date when="1898">三十一年</date>にめでたく学校を卒業し、電気部の技手として<placeName ref="#yokohama">横浜</placeName>の会社に給料十二円で雇われた。</p>
+        <p>その後<ruby><rb>今日</rb><rt>こんにち</rt></ruby>まで五年になる。その間彼は何をしたか。ただその職分を忠実に勤めただけか。そうでない！</p>
+        <p>彼はおおいなることをしている。彼の弟が二人あって、二人とも彼の兄、逃亡した兄に似て手に合わない<ruby><rb>突飛物</rb><rt>とっぴもの</rt></ruby>、一人を<persName ref="#goro">五郎</persName>といい、一人を<persName ref="#arao"><ruby><rb>荒雄</rb><rt>あらお</rt></ruby></persName>という、<persName ref="#goro">五郎</persName>は<persName ref="#katsura-shosaku">正作</persName>が<placeName ref="#yokohama">横浜</placeName>の会社に出たと聞くや、国元を飛びだして、<placeName ref="#tokyo">東京</placeName>に来た。<persName ref="#katsura-shosaku">正作</persName>は<persName ref="#goro">五郎</persName>のために、<ruby><rb>所々</rb><rt>しょしょ</rt></ruby><ruby><rb>奔走</rb><rt>ほんそう</rt></ruby>してあるいは商店に入れ、あるいは<ruby><rb>学僕</rb><rt>がくぼく</rt></ruby>としたけれど、<persName ref="#goro">五郎</persName>はいたるところで失敗し、いたるところを逃げだしてしまう。</p>
+        <p>けれども<persName ref="#katsura-shosaku">正作</persName>は根気よく世話をしていたが、ついに<persName ref="#goro">五郎</persName>を自分のそばに置き、種々に訓戒を加え、西国立志編を繰返して読まし、そして<placeName ref="#koshu-gakko">工手学校</placeName>に入れてしまった。わずかの給料でみずから<ruby><rb>食</rb><rt>く</rt></ruby>らい、弟を養い、三年の間、<ruby><rb>辛苦</rb><rt>しんく</rt></ruby>に辛苦を重ねた結果は<date when="1901">三十四年</date>に至って現われ、<persName ref="#goro">五郎</persName>は技手となって今は<placeName ref="#tokyo">東京</placeName><placeName ref="#shibaku">芝区</placeName>の<ruby><rb>某</rb><rt>ぼう</rt></ruby>会社に雇われ、まじめに勤労しているのである。</p>
+        <p><persName ref="#arao">荒雄</persName>もまた国を飛びだした。今は<persName ref="#katsura-shosaku">正作</persName>と<persName ref="#goro">五郎</persName>と二人でこの弟の処置に苦心している。</p>
+        <p>今年の春であった。夕暮に僕は<placeName ref="#yokohama">横浜</placeName><placeName ref="#nogecho"><ruby><rb>野毛町</rb><rt>のげまち</rt></ruby></placeName>に<persName ref="#katsura-shosaku">桂</persName>を訪ねると、宿の者が「<persName ref="#katsura-shosaku">桂</persName>さんはまだ会社です」というから、会社の様子も見たく、その足で会社を<ruby><rb>訪</rb><rt>と</rt></ruby>うた。</p>
+        <p><persName ref="#katsura-shosaku">桂</persName>の仕事をしている場処に行ってみると、僕は電気の事を詳しく知らないから十分の説明はできないが、一本の太い鉄柱を<ruby><rb>擁</rb><rt>よう</rt></ruby>して<ruby><rb>数人</rb><rt>すにん</rt></ruby>の人が立っていて、<persName ref="#katsura-shosaku">正作</persName>は一人その鉄柱の周囲を<ruby><rb>幾度</rb><rt>いくたび</rt></ruby>となく廻って熱心に何事かしている。もはや電燈が<ruby><rb>点</rb><rt>つ</rt></ruby>いて<ruby><rb>白昼</rb><rt>まひる</rt></ruby>のごとくこの一群の人を照らしている。人々は黙して<persName ref="#katsura-shosaku">正作</persName>のするところを見ている。器械に狂いの生じたのを<persName ref="#katsura-shosaku">正作</persName>が<ruby><rb>見分</rb><rt>けんぶん</rt></ruby>し、修繕しているのらしい。</p>
+        <p><persName ref="#katsura-shosaku">桂</persName>の顔、様子！　彼は無人の地にいて、我を忘れ世界を忘れ、身も<ruby><rb>魂</rb><rt>たましい</rt></ruby>も、今そのなしつつある仕事に打ちこんでいる。僕は<persName ref="#katsura-shosaku">桂</persName>の<ruby><rb>容貌</rb><rt>ようぼう</rt></ruby>、かくまでにまじめなるを見たことがない。見ているうちに、僕は一種の<ruby><rb>壮厳</rb><rt>そうごん</rt></ruby>に打たれた。</p>
+        <p>諸君！　どうか僕の友のために、<ruby><rb>杯</rb><rt>さかずき</rt></ruby>をあげてくれたまえ、彼の将来を祝福して！</p>
+      </div>
+    </body>
+  </text>
+</TEI>

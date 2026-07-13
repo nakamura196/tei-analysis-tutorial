@@ -1,0 +1,57 @@
+{
+  "slug": "atamatohara",
+  "url": "https://www.aozora.gr.jp/cards/000168/files/2158_23275.html",
+  "card": "https://www.aozora.gr.jp/cards/000168/card2158.html",
+  "title": "頭ならびに腹",
+  "author": "横光利一",
+  "fixes": {},
+  "persons": {},
+  "places": {
+    "h-station": [
+      "Ｈ",
+      null,
+      null,
+      "故障区間「Ｈ、Ｋ間」の一方の駅。頭文字による匿名化で実在地に比定できないため座標なし"
+    ],
+    "k-station": [
+      "Ｋ",
+      null,
+      null,
+      "故障区間「Ｈ、Ｋ間」の他方の駅。頭文字による匿名化で実在地に比定できないため座標なし"
+    ],
+    "s-station": [
+      "Ｓ駅",
+      null,
+      null,
+      "迂廻のため引き返す駅。頭文字による匿名化で実在地に比定できないため座標なし"
+    ],
+    "t-line": [
+      "Ｔ線",
+      null,
+      null,
+      "Ｓ駅から迂廻する路線。頭文字による匿名化で実在の路線に比定できないため座標なし"
+    ]
+  },
+  "tags": [
+    [
+      "place",
+      "Ｓ駅",
+      "s-station"
+    ],
+    [
+      "place",
+      "Ｔ線",
+      "t-line"
+    ],
+    [
+      "place",
+      "Ｈ",
+      "h-station"
+    ],
+    [
+      "place",
+      "Ｋ",
+      "k-station"
+    ]
+  ]
+}

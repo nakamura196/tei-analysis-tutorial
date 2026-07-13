@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>開化の殺人</title>
+        <author>芥川龍之介</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>開化の殺人</title><author>芥川龍之介</author>
+          <note>青空文庫。底本：「現代日本文学大系43芥川龍之介集」筑摩書房。1968（昭和43）年8月25日初版第1刷発行。入力：j.utiyama。校正：野口英司。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000879/card66.html">https://www.aozora.gr.jp/cards/000879/card66.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="kitabatake">
+        <persName>北畠義一郎</persName>
+        <note>遺書の筆者「予」。当時有名だった内科の専門医(ドクトル)で、演劇改良にも関心を持つ劇通。従妹の明子を愛し、その夫・満村恭平を丸薬で毒殺したのち、本多子爵をも殺しかねない自己を恐れて服毒自殺する。作中で「仮名」と断られている。本文には「北畠ドクトル」の形でも現れる</note>
+      </person>
+      <person xml:id="akiko">
+        <persName>明子</persName>
+        <note>甘露寺明子。北畠義一郎の従妹。本多子爵と許嫁の約がありながら満村恭平に嫁し、離縁後に本多子爵の夫人となる。北畠の愛の対象であり、殺人の動機の中心</note>
+      </person>
+      <person xml:id="mitsumura">
+        <persName>満村恭平</persName>
+        <note>第×銀行頭取。明子の夫。放蕩無頼の「肥大豕の如き」人物として描かれ、明治十二年六月十二日、新富座の帰りの馬車中で北畠の丸薬により毒殺される(公式の死因は脳出血)</note>
+      </person>
+      <person xml:id="honda">
+        <persName>本多子爵</persName>
+        <note>北畠の年少の友であり、遺書の宛先。明子と許嫁の約があったが満村の財力に阻まれ破約となる。満村の死後、明子と結婚する。作中で「仮名」と断られている(本文では単に「子爵」とも呼ばれるが、称号のみの言及にはタグを付けない)</note>
+      </person>
+      <person xml:id="kitaniwa">
+        <persName>北庭筑波</persName>
+        <note>北庭筑波(1842–1887)。明治初期の写真師。北畠ドクトルの写真を撮影した人物として言及される</note>
+      </person>
+      <person xml:id="narushima">
+        <persName>成島柳北</persName>
+        <note>成島柳北(1837–1884)。幕末・明治の文人、『朝野新聞』社長。北畠の「先輩にして且知人」として、満村の悪行の情報源に挙げられる</note>
+      </person>
+      <person xml:id="townsend">
+        <persName>ヘンリイ・タウンゼンド</persName>
+        <note>築地居留地に在住した英国人宣教師。北畠に聖書を釈義し、その失恋を肉親的愛情へ転じさせた「忘れ難き友人」</note>
+      </person>
+      <person xml:id="voltaire">
+        <persName>ヴオルテエル</persName>
+        <note>ヴォルテール(1694–1778)。北畠自身の手になる戯曲が、その『カンディード』(Candide)を徳川時代に翻案したものだったとされる</note>
+      </person>
+      <person xml:id="zheng-banqiao">
+        <persName>鄭板橋</persName>
+        <note>鄭板橋(鄭燮、1693–1765)。清代の書画家・文人。北畠の遺書の筆跡が「鄭板橋風の奔放な字」と評される</note>
+      </person>
+      <person xml:id="jesus">
+        <persName>耶蘇基督</persName>
+        <note>イエス・キリスト。北畠が英国留学中に帰依した基督教の神。「予が数年来失却したる我耶蘇基督に祈る」</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="shintomiza">
+        <placeName>新富座</placeName>
+        <location><geo>35.6702 139.7746</geo></location>
+        <note>新富座。明治期を代表する劇場(東京府京橋区新富町、現在の東京都中央区新富二丁目)・概値。満村毒殺の舞台であり、北畠自身も最期にここへ赴く</note>
+      </place>
+      <place xml:id="london">
+        <placeName>竜動</placeName>
+        <location><geo>51.5074 -0.1278</geo></location>
+        <note>ロンドン・概値。北畠が三年間医学を学んだ地。本文では「竜動」「英京」「英京竜動」と表記される(いずれも同じ台帳エントリに統合)</note>
+      </place>
+      <place xml:id="england">
+        <placeName>英吉利</placeName>
+        <location><geo>52.5 -1.5</geo></location>
+        <note>イギリス(英国)。国名・概値。「英吉利留学」「英吉利より帰朝」「英吉利宣教師」の 3 箇所にタグ付け(「英吉利風の頬髯」は様式を表す複合語なので skip)</note>
+      </place>
+      <place xml:id="hyde-park">
+        <placeName>ハイド・パアク</placeName>
+        <location><geo>51.5073 -0.1657</geo></location>
+        <note>ハイド・パーク(ロンドン)・概値。留学中の北畠が明子を偲んだ場所</note>
+      </place>
+      <place xml:id="pall-mall">
+        <placeName>パルマル</placeName>
+        <location><geo>51.506 -0.135</geo></location>
+        <note>ペルメル街(Pall Mall、ロンドン)・概値</note>
+      </place>
+      <place xml:id="japan">
+        <placeName>日本</placeName>
+        <location><geo>36.0 138.0</geo></location>
+        <note>日本。国名・概値。「明子なきの日本は、故国に似て故国にあらず」の 1 箇所のみタグ付け(「日本劇」は演劇のジャンル名の複合語なので skip)</note>
+      </place>
+      <place xml:id="germany">
+        <placeName>独逸</placeName>
+        <location><geo>51.0 10.0</geo></location>
+        <note>ドイツ。国名・概値。「独逸皇孫殿下が新富座に於て日本劇を見給ひし」1 箇所。皇孫の出自を示す国名としての言及(複合語ではなく「独逸の皇孫殿下」の連体修飾なのでタグ付けを維持)</note>
+      </place>
+      <place xml:id="tsukiji">
+        <placeName>築地</placeName>
+        <location><geo>35.6654 139.7707</geo></location>
+        <note>築地(東京都中央区)・概値。宣教師タウンゼンドの在住地</note>
+      </place>
+      <place xml:id="tsukiji-settlement">
+        <placeName>築地居留地</placeName>
+        <location><geo>35.6665 139.778</geo></location>
+        <note>築地居留地(築地外国人居留地。現在の東京都中央区明石町一帯)・概値。北畠がタウンゼンドと神を論じた後に歩いた場所</note>
+      </place>
+      <place xml:id="ryogokubashi">
+        <placeName>両国橋</placeName>
+        <location><geo>35.6934 139.7887</geo></location>
+        <note>両国橋(隅田川に架かる橋)・概値。明治十一年八月三日の大煙火(花火)の舞台</note>
+      </place>
+      <place xml:id="yanagibashi">
+        <placeName>柳橋</placeName>
+        <location><geo>35.6975 139.7876</geo></location>
+        <note>柳橋。神田川が隅田川に注ぐ辺りの花街(現在の東京都台東区柳橋)・概値</note>
+      </place>
+      <place xml:id="manpachi">
+        <placeName>万八</placeName>
+        <location><geo>35.6944 139.7876</geo></location>
+        <note>万八楼。柳橋・両国広小路界隈にあった料亭(旗亭)。北畠が満村と初めて会した水楼。旧地は柳橋付近と伝えられる・伝承地/概値</note>
+      </place>
+      <place xml:id="kashiwaya">
+        <placeName>柏屋</placeName>
+        <note>「墨上の旗亭柏屋」。隅田川畔の料亭として語られるが、実在の店に確定的に比定できないため座標を付けない</note>
+      </place>
+      <place xml:id="sumidagawa">
+        <placeName>隅田川</placeName>
+        <location><geo>35.687 139.791</geo></location>
+        <note>隅田川・概値(河川のため代表点)。流燈会の場。本文では「墨上」(隅田川のほとり)とも書かれ、同じ台帳エントリに統合した</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>西京</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都。本文では明治期の呼称「西京」で現れる・概値</note>
+      </place>
+      <place xml:id="gion">
+        <placeName>祇園</placeName>
+        <location><geo>35.0037 135.7752</geo></location>
+        <note>祇園(京都市東山区)・概値。満村が雛妓を死に至らしめたとされる妓楼のある地</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>開化の殺人</head>
+        <p><ruby><rb>下</rb><rt>しも</rt></ruby>に掲げるのは、最近<ruby><rb>予</rb><rt>よ</rt></ruby>が<persName ref="#honda"><ruby><rb>本多子爵</rb><rt>ほんだししやく</rt></ruby></persName>（仮名）から借覧する事を得た、故ドクトル・<persName ref="#kitabatake"><ruby><rb>北畠義一郎</rb><rt>きたばたけぎいちらう</rt></ruby></persName>（仮名）の遺書である。<persName ref="#kitabatake">北畠</persName>ドクトルは、よし実名を<ruby><rb>明</rb><rt>あきらか</rt></ruby>にした所で、もう今は知つてゐる人もあるまい。予自身も、<persName ref="#honda">本多子爵</persName>に<ruby><rb>親炙</rb><rt>しんしや</rt></ruby>して、<date when="1868">明治初期</date>の<ruby><rb>逸事瑣談</rb><rt>いつじさだん</rt></ruby>を聞かせて貰ふやうになつてから、初めてこのドクトルの名を耳にする機会を得た。彼の人物性行は、下の遺書によつても幾分の説明を得るに相違ないが、<ruby><rb>猶</rb><rt>なほ</rt></ruby>二三、予が<ruby><rb>仄聞</rb><rt>そくぶん</rt></ruby>した事実をつけ加へて置けば、ドクトルは当時内科の専門医として有名だつたと共に、演劇改良に関しても或急進的意見を持つてゐた、一種の劇通だつたと云ふ。現に後者に関しては、ドクトル自身の手になつた戯曲さへあつて、それは<persName ref="#voltaire">ヴオルテエル</persName>の Candide の一部を、徳川時代の出来事として脚色した、二幕物の喜劇だつたさうである。</p>
+        <p><persName ref="#kitaniwa"><ruby><rb>北庭筑波</rb><rt>きたにはつくば</rt></ruby></persName>が撮影した写真を見ると、<persName ref="#kitabatake">北畠</persName>ドクトルは<ruby><rb>英吉利</rb><rt>イギリス</rt></ruby>風の頬髯を蓄へた、容貌<ruby><rb>魁偉</rb><rt>くわいゐ</rt></ruby>な紳士である。<persName ref="#honda">本多子爵</persName>によれば、体格も西洋人を<ruby><rb>凌</rb><rt>しの</rt></ruby>ぐばかりで、少年時代から何をするのでも、精力抜群を以て知られてゐたと云ふ。さう云へば遺書の文字さへ、<persName ref="#zheng-banqiao"><ruby><rb>鄭板橋</rb><rt>ていはんけう</rt></ruby></persName>風の奔放な字で、その<ruby><rb>淋漓</rb><rt>りんり</rt></ruby>たる<ruby><rb>墨痕</rb><rt>ぼくこん</rt></ruby>の中にも、彼の風貌が<ruby><rb>看取</rb><rt>かんしゆ</rt></ruby>されない事もない。</p>
+        <p>勿論予はこの遺書を<ruby><rb>公</rb><rt>おほやけ</rt></ruby>にするに当つて、幾多の<ruby><rb>改竄</rb><rt>かいざん</rt></ruby>を施した。<ruby><rb>譬</rb><rt>たと</rt></ruby>へば当時まだ授爵の制がなかつたにも関らず、後年の称に従つて<persName ref="#honda">本多子爵</persName>及夫人等の名を用ひた如きものである。唯、その文章の調子に至つては、<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>原文の調子をそつくりその<ruby><rb>儘</rb><rt>まま</rt></ruby>、ひき写したと云つても差支へない。</p>
+        <p>―――――――――――――――――</p>
+        <p><persName ref="#honda">本多子爵</persName>閣下、並に夫人、</p>
+        <p>予は予が<ruby><rb>最期</rb><rt>さいご</rt></ruby>に際し、既往三年来、常に予が胸底に<ruby><rb>蟠</rb><rt>わだかま</rt></ruby>れる、呪ふ可き秘密を告白し、以て<ruby><rb>卿等</rb><rt>けいら</rt></ruby>の前に予が醜悪なる心事を暴露せんとす。卿等にして若しこの遺書を読むの後、<ruby><rb>猶</rb><rt>なほ</rt></ruby>卿等の故人たる予の記憶に対し、一片<ruby><rb>憐憫</rb><rt>れんびん</rt></ruby>の情を動す事ありとせんか、そは<ruby><rb>素</rb><rt>もと</rt></ruby>より予にとりて、望外の大幸なり。されど又予を目して、万死の狂徒と<ruby><rb>做</rb><rt>な</rt></ruby>し、<ruby><rb>当</rb><rt>まさ</rt></ruby>に<ruby><rb>屍</rb><rt>しかばね</rt></ruby>に鞭打つて後<ruby><rb>已</rb><rt>や</rt></ruby>む可しとするも、予に於ては<ruby><rb>毫</rb><rt>がう</rt></ruby>も遺憾とする所なし。唯、予が告白せんとする事実の、余りに意想外なるの故を以て、<ruby><rb>妄</rb><rt>みだり</rt></ruby>に予を<ruby><rb>誣</rb><rt>し</rt></ruby>ふるに、神経病患者の名を<ruby><rb>藉</rb><rt>か</rt></ruby>る事<ruby><rb>勿</rb><rt>なか</rt></ruby>れ。予は最近数ヶ月に<ruby><rb>亘</rb><rt>わた</rt></ruby>りて、不眠症の為に苦しみつつありと<ruby><rb>雖</rb><rt>いへど</rt></ruby>も、予が意識は明白にして、<ruby><rb>且</rb><rt>かつ</rt></ruby>極めて鋭敏なり。若し卿等にして、予が二十年来の<ruby><rb>相識</rb><rt>さうしき</rt></ruby>たるを想起せんか。（予は<ruby><rb>敢</rb><rt>あへ</rt></ruby>て友人とは称せざる可し）<ruby><rb>請</rb><rt>こ</rt></ruby>ふ、予が精神的健康を疑ふ事勿れ。然らずんば、予が一生の汚辱を<ruby><rb>披瀝</rb><rt>ひれき</rt></ruby>せんとする此遺書の如きも、結局無用の<ruby><rb>故紙</rb><rt>こし</rt></ruby>たると何の選ぶ所か<ruby><rb>是</rb><rt>これ</rt></ruby>あらん。</p>
+        <p>閣下、並に夫人、予は過去に於て殺人罪を犯したると共に、将来に於ても亦同一罪悪を犯さんとしたる<ruby><rb>卑</rb><rt>いやし</rt></ruby>む可き危険人物なり。しかもその犯罪が卿等に最も親近なる人物に対して、企画せられたるのみならず、又企画せられんとしたりと云ふに至りては、卿等にとりて正に意外中の意外たる可し。予は<ruby><rb>是</rb><rt>ここ</rt></ruby>に於て、予が警告を<ruby><rb>再</rb><rt>ふたたび</rt></ruby>するの、必要なる<ruby><rb>所以</rb><rt>ゆゑん</rt></ruby>を感ぜざる<ruby><rb>能</rb><rt>あた</rt></ruby>はず。予は全然<ruby><rb>正気</rb><rt>しやうき</rt></ruby>にして、予が告白は徹頭徹尾事実なり。卿等<ruby><rb>幸</rb><rt>さいはひ</rt></ruby>にそを信ぜよ。<ruby><rb>而</rb><rt>しか</rt></ruby>して予が生涯の唯一の記念たる、この数枚の遺書をして、空しく狂人の<ruby><rb>囈語</rb><rt>げいご</rt></ruby>たらしむる事勿れ。</p>
+        <p>予はこれ以上予の健全を<ruby><rb>喋々</rb><rt>てふてふ</rt></ruby>すべき余裕なし。予が生存すべき僅少なる時間は、<ruby><rb>直下</rb><rt>ぢきげ</rt></ruby>に予を駆りて、予が殺人の動機と実行とを叙し、更に進んで予が殺人後の奇怪なる心境に言及せしめずんば、已まざらんとす。されど、<ruby><rb>嗚呼</rb><rt>ああ</rt></ruby>されど、予は<ruby><rb>硯</rb><rt>けん</rt></ruby>に<ruby><rb>呵</rb><rt>か</rt></ruby>し<ruby><rb>紙</rb><rt>し</rt></ruby>に臨んで、<ruby><rb>猶</rb><rt>なほ</rt></ruby><ruby><rb>惶々</rb><rt>くわうくわう</rt></ruby>として自ら安からざるものあるを覚ゆ。<ruby><rb>惟</rb><rt>おも</rt></ruby>ふに予が過去を点検し記載するは、予にとりて<ruby><rb>再</rb><rt>ふたたび</rt></ruby>過去の生活を営むと、<ruby><rb>畢竟</rb><rt>ひつきやう</rt></ruby>何の差違かあらん。予は殺人の計画を<ruby><rb>再</rb><rt>ふたたび</rt></ruby>し、その実行を再し、更に最近一年間の恐る可き苦悶を再せざる<ruby><rb>可</rb><rt>べか</rt></ruby>らず。是果して善く予の堪へ得可き所なりや否や。予は今にして、予が数年来失却したる<ruby><rb>我</rb><rt>わが</rt></ruby><persName ref="#jesus"><ruby><rb>耶蘇基督</rb><rt>ヤソキリスト</rt></ruby></persName>に祈る。願くば予に力を与へ給へ。</p>
+        <p>予は少時より予が従妹たる今の<persName ref="#honda">本多子爵</persName>夫人（三人称を以て、呼ぶ事を許せ）往年の<persName ref="#akiko"><ruby><rb>甘露寺明子</rb><rt>かんろじあきこ</rt></ruby></persName>を愛したり。予の記憶に<ruby><rb>溯</rb><rt>さかのぼ</rt></ruby>りて、予が<persName ref="#akiko">明子</persName>と<ruby><rb>偕</rb><rt>とも</rt></ruby>にしたる幸福なる時間を列記せんか。そは恐らく卿等が<ruby><rb>卒読</rb><rt>そつどく</rt></ruby>の<ruby><rb>煩</rb><rt>はん</rt></ruby>に堪へざる所ならん。されど予はその例証として、今日も猶予が胸底に歴々たる一場の光景を語らざるを得ず。予は当時十六歳の少年にして、<persName ref="#akiko">明子</persName>は<ruby><rb>未</rb><rt>いまだ</rt></ruby>十歳の少女なりき。<date when="--05">五月某日</date>予等は<persName ref="#akiko">明子</persName>が家の芝生なる藤棚の<ruby><rb>下</rb><rt>もと</rt></ruby>に<ruby><rb>嬉戯</rb><rt>きぎ</rt></ruby>せしが、<persName ref="#akiko">明子</persName>は予に対して、<ruby><rb>隻脚</rb><rt>せききやく</rt></ruby>にて善く久しく立つを得るやと問ひぬ。而して予が否と答ふるや、彼女は左手を垂れて左の<ruby><rb>趾</rb><rt>あしゆび</rt></ruby>を握り、右手を挙げて均衡を保ちつつ、隻脚にて立つ事、是を<ruby><rb>久</rb><rt>ひさし</rt></ruby>うしたりき。頭上の<ruby><rb>紫藤</rb><rt>しとう</rt></ruby>は春日の光りを揺りて垂れ、<ruby><rb>藤下</rb><rt>とうか</rt></ruby>の<persName ref="#akiko">明子</persName>は<ruby><rb>凝然</rb><rt>ぎようぜん</rt></ruby>として<ruby><rb>彫塑</rb><rt>てうそ</rt></ruby>の如く<ruby><rb>佇</rb><rt>たたず</rt></ruby>めり。予はこの画の如き数分の彼女を、今に至つて忘るる能はず。<ruby><rb>私</rb><rt>ひそか</rt></ruby>に自ら省みて、予が心既に深く彼女を愛せるに驚きしも、実にその藤棚の下に於て然りしなり。<ruby><rb>爾来</rb><rt>じらい</rt></ruby>予の<persName ref="#akiko">明子</persName>に対する愛は<ruby><rb>益</rb><rt>ますます</rt></ruby>烈しきを加へ、<ruby><rb>念々</rb><rt>ねんねん</rt></ruby>に彼女を想ひて、<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>学を廃するに至りしも、予の小心なる、遂に一語の予が衷心を吐露す可きものを出さず。<ruby><rb>陰晴</rb><rt>いんせい</rt></ruby>定りなき感情の悲天の下に、或は泣き、或は笑ひて、<ruby><rb>茫々</rb><rt>ばうばう</rt></ruby>数年の年月を<ruby><rb>閲</rb><rt>けみ</rt></ruby>せしが、予の二十一歳に達するや、予が父は突然予に命じて、遠く家業たる医学を<placeName ref="#london">英京<ruby><rb>竜動</rb><rt>ロンドン</rt></ruby></placeName>に学ばしめぬ。予は訣別に際して、<persName ref="#akiko">明子</persName>に語るに予が愛を以てせんとせしも、厳粛なる予等が家庭は、<ruby><rb>斯</rb><rt>かか</rt></ruby>る機会を与ふるに<ruby><rb>吝</rb><rt>やぶさか</rt></ruby>なりしと共に、儒教主義の教育を受けたる予も、亦<ruby><rb>桑間濮上</rb><rt>さうかんぼくじやう</rt></ruby>の<ruby><rb>譏</rb><rt>そしり</rt></ruby>を<ruby><rb>惧</rb><rt>おそ</rt></ruby>れたるを以て、無限の離愁を抱きつつ、<ruby><rb>孤笈飄然</rb><rt>こきふへうぜん</rt></ruby>として<placeName ref="#london">英京</placeName>に去れり。</p>
+        <p><placeName ref="#england"><ruby><rb>英吉利</rb><rt>イギリス</rt></ruby></placeName>留学の三年間、予が<placeName ref="#hyde-park">ハイド・パアク</placeName>の芝生に立ちて、如何に<ruby><rb>故園</rb><rt>こゑん</rt></ruby>の<ruby><rb>紫藤花下</rb><rt>しとうくわか</rt></ruby>なる<persName ref="#akiko">明子</persName>を<ruby><rb>懐</rb><rt>おも</rt></ruby>ひしか、或は又予が<placeName ref="#pall-mall">パルマル</placeName>の街頭を歩して、如何に天涯の遊子たる予自身を<ruby><rb>憫</rb><rt>あはれ</rt></ruby>みしか、そは<ruby><rb>茲</rb><rt>ここ</rt></ruby>に叙説するの要なかる可し。予は唯、<placeName ref="#london"><ruby><rb>竜動</rb><rt>ロンドン</rt></ruby></placeName>に在るの日、予が<ruby><rb>所謂</rb><rt>いはゆる</rt></ruby>薔薇色の未来の中に、来る可き予等の結婚生活を夢想し、以て僅に悶々の情を排せしを語れば足る。然り而して予の<placeName ref="#england">英吉利</placeName>より帰朝するや、予は<persName ref="#akiko">明子</persName>の既に嫁して第×銀行頭取<persName ref="#mitsumura"><ruby><rb>満村恭平</rb><rt>みつむらきようへい</rt></ruby></persName>の妻となりしを知りぬ。予は即座に自殺を決心したれども、予が性来の<ruby><rb>怯懦</rb><rt>けふだ</rt></ruby>と、留学中<ruby><rb>帰依</rb><rt>きえ</rt></ruby>したる<ruby><rb>基督教</rb><rt>キリストけう</rt></ruby>の信仰とは、不幸にして予が手を<ruby><rb>麻痺</rb><rt>まひ</rt></ruby>せしめしを<ruby><rb>如何</rb><rt>いかん</rt></ruby>。卿等にして若し当時の予が、如何に傷心したるかを知らんとせば、予が帰朝後旬日にして、<ruby><rb>再</rb><rt>ふたたび</rt></ruby><placeName ref="#london">英京</placeName>に去らんとし、為に予が父の激怒を招きたるの一事を想起せよ。当時の予が心境を以てすれば、実に<persName ref="#akiko">明子</persName>なきの<placeName ref="#japan">日本</placeName>は、故国に似て故国にあらず、この故国ならざる故国に止つて、<ruby><rb>徒</rb><rt>いたづら</rt></ruby>に精神的敗残者たるの生涯を送らんよりは、<ruby><rb>寧</rb><rt>むしろ</rt></ruby>チヤイルド・ハロルドの一巻を抱いて、遠く万里の孤客となり、骨を異域の土に埋むるの<ruby><rb>遙</rb><rt>はるか</rt></ruby>に慰む可きものあるを信ぜしなり。されど予が身辺の事情は遂に予をして渡英の計画を<ruby><rb>抛棄</rb><rt>はうき</rt></ruby>せしめ、<ruby><rb>加之</rb><rt>しかのみならず</rt></ruby>予が父の病院内に、一個新帰朝のドクトルとして、多数患者の診療に忙殺さる可き、退屈なる椅子に<ruby><rb>倚</rb><rt>よ</rt></ruby>らしめ<ruby><rb>了</rb><rt>をは</rt></ruby>りぬ。</p>
+        <p>是に於て予は予の失恋の<ruby><rb>慰藉</rb><rt>ゐしや</rt></ruby>を神に求めたり。当時<placeName ref="#tsukiji">築地</placeName>に在住したる<placeName ref="#england">英吉利</placeName>宣教師<persName ref="#townsend">ヘンリイ・タウンゼンド</persName>氏は、この間に於ける予の忘れ難き友人にして、予の<persName ref="#akiko">明子</persName>に対する愛が、幾多の悪戦苦闘の後、<ruby><rb>漸次</rb><rt>ぜんじ</rt></ruby>熱烈にしてしかも静平なる肉親的感情に変化したるは、<ruby><rb>一</rb><rt>いつ</rt></ruby>に同氏が予の為に釈義したる聖書の数章の結果なりき。予は<ruby><rb>屡</rb><rt>しばしば</rt></ruby>、同氏と神を論じ、神の愛を論じ、更に人間の愛を論じたるの後、半夜<ruby><rb>行人</rb><rt>かうじん</rt></ruby>稀なる<placeName ref="#tsukiji-settlement">築地居留地</placeName>を歩して、独り予が家に帰りしを記憶す。若し卿等にして予が児女の情あるを<ruby><rb>哂</rb><rt>わら</rt></ruby>はずんば、予は居留地の空なる半輪の月を仰ぎて、<ruby><rb>私</rb><rt>ひそか</rt></ruby>に従妹<persName ref="#akiko">明子</persName>の幸福を神に祈り、感極つて<ruby><rb>歔欷</rb><rt>きよき</rt></ruby>せしを語るも善し。</p>
+        <p>予が愛の<ruby><rb>新</rb><rt>あらた</rt></ruby>なる転向を得しは、<ruby><rb>所謂</rb><rt>いはゆる</rt></ruby>「あきらめ」の心理を以て、説明す可きものなりや否や、予は之を<ruby><rb>詳</rb><rt>つまびらか</rt></ruby>にする勇気と余裕とに乏しけれど、予がこの肉親的愛情によりて、始めて予が心の<ruby><rb>創痍</rb><rt>さうい</rt></ruby>を医し得たるの一事は疑ふ<ruby><rb>可</rb><rt>べか</rt></ruby>らず。是を以て帰朝以来、<persName ref="#akiko">明子</persName>夫妻の消息を耳にするを<ruby><rb>蛇蝎</rb><rt>だかつ</rt></ruby>の如く恐れたる予は、今や予がこの肉親的愛情に依頼し、進んで彼等に接近せん事を希望したり。こは予にして若し彼等に幸福なる夫妻を見出さんか、予の慰安の<ruby><rb>益</rb><rt>ますます</rt></ruby>大にして、念頭<ruby><rb>些</rb><rt>いささか</rt></ruby>の苦悶なきに至る可しと、早計にも信じたるが故のみ。</p>
+        <p>予はこの信念に動かされし結果、遂に<date when="1878-08-03">明治十一年八月三日</date><placeName ref="#ryogokubashi">両国橋</placeName>畔の大煙火に際し、知人の紹介を機会として、折から<ruby><rb>校書</rb><rt>かうしよ</rt></ruby>十数輩と共に<placeName ref="#yanagibashi">柳橋</placeName><placeName ref="#manpachi"><ruby><rb>万八</rb><rt>まんぱち</rt></ruby></placeName>の水楼に在りし、<persName ref="#akiko">明子</persName>の夫<persName ref="#mitsumura">満村恭平</persName>と、始めて<ruby><rb>一夕</rb><rt>いつせき</rt></ruby>の<ruby><rb>歓</rb><rt>くわん</rt></ruby>を<ruby><rb>倶</rb><rt>とも</rt></ruby>にしたり。<ruby><rb>歓</rb><rt>くわん</rt></ruby>か、歓か、予はその苦と云ふの、遙に<ruby><rb>勝</rb><rt>まさ</rt></ruby>れる<ruby><rb>所以</rb><rt>ゆゑん</rt></ruby>を思はざる能はず。予は日記に書して<ruby><rb>曰</rb><rt>いはく</rt></ruby>、「予は<persName ref="#akiko">明子</persName>にして、かの<persName ref="#mitsumura">満村</persName>某の如き、濫淫の賤貨に妻たるを思へば、殆<ruby><rb>一肚皮</rb><rt>いつとひ</rt></ruby>の憤怨<ruby><rb>何</rb><rt>いづれ</rt></ruby>の処に向つてか吐かんとするを知らず。神は予に<persName ref="#akiko">明子</persName>を見る事、妹の如くなる可きを教へ給へり。然り而して予が妹を、<ruby><rb>斯</rb><rt>かか</rt></ruby>る禽獣の手に<ruby><rb>委</rb><rt>ゐ</rt></ruby>せしめ給ひしは、何ぞや。予は最早、この残酷にして<ruby><rb>奸譎</rb><rt>かんけつ</rt></ruby>なる神の悪戯に堪ふる能はず。誰か善くその妻と妹とを<ruby><rb>強人</rb><rt>がうじん</rt></ruby>の為に<ruby><rb>凌辱</rb><rt>りようじよく</rt></ruby>せられ、しかも猶天を仰いで神の<ruby><rb>御名</rb><rt>みな</rt></ruby>を<ruby><rb>称</rb><rt>とな</rt></ruby>ふ可きものあらむ。予は今後断じて神に依らず、予自身の手を以て、予が妹<persName ref="#akiko">明子</persName>をこの<ruby><rb>色鬼</rb><rt>しきき</rt></ruby>の手より救助す可し。」</p>
+        <p>予はこの遺書を<ruby><rb>認</rb><rt>したた</rt></ruby>むるに臨み、<ruby><rb>再</rb><rt>ふたたび</rt></ruby>当時の<ruby><rb>呪</rb><rt>のろ</rt></ruby>ふ可き光景の、眼前に<ruby><rb>彷彿</rb><rt>はうふつ</rt></ruby>するを禁ずる能はず。かの<ruby><rb>蒼然</rb><rt>さうぜん</rt></ruby>たる<ruby><rb>水靄</rb><rt>すゐあい</rt></ruby>と、かの万点の紅燈と、而してかの<ruby><rb>隊々</rb><rt>たいたい</rt></ruby>相<ruby><rb>銜</rb><rt>ふく</rt></ruby>んで、尽くる所を知らざる<ruby><rb>画舫</rb><rt>ぐわぼう</rt></ruby>の列と――<ruby><rb>嗚呼</rb><rt>ああ</rt></ruby>、予は終生その夜、その<ruby><rb>半空</rb><rt>はんくう</rt></ruby>に仰ぎたる煙火の明滅を記憶すると共に、右に<ruby><rb>大妓</rb><rt>たいぎ</rt></ruby>を擁し、左に<ruby><rb>雛妓</rb><rt>すうぎ</rt></ruby>を従へ、<ruby><rb>猥褻</rb><rt>わいせつ</rt></ruby>聞くに堪へざるの俚歌を高吟しつつ、<ruby><rb>傲然</rb><rt>がうぜん</rt></ruby>として<ruby><rb>涼棚</rb><rt>りやうはう</rt></ruby>の上に<ruby><rb>酣酔</rb><rt>かんすゐ</rt></ruby>したる、かの肥大<ruby><rb>豕</rb><rt>ゐ</rt></ruby>の如き<persName ref="#mitsumura">満村恭平</persName>をも記憶す可し。否、否、彼の<ruby><rb>黒絽</rb><rt>くろろ</rt></ruby>の羽織に<ruby><rb>抱明姜</rb><rt>だきめうが</rt></ruby>の三つ紋ありしさへ、今に至つて予は忘却する能はざるなり。予は信ず。予が彼を殺害せんとするの意志を抱きしは、実にこの<ruby><rb>水楼煙火</rb><rt>すゐろうえんくわ</rt></ruby>を見しの<ruby><rb>夕</rb><rt>ゆふべ</rt></ruby>に始る事を。又信ず。予が殺人の動機なるものは、その発生の当初より、断じて単なる嫉妬の情にあらずして、<ruby><rb>寧</rb><rt>むしろ</rt></ruby>不義を<ruby><rb>懲</rb><rt>こら</rt></ruby>し不正を除かんとする道徳的憤激に存せし事を。</p>
+        <p>爾来予は心を潜めて、<persName ref="#mitsumura">満村恭平</persName>の行状に注目し、その果して予が一夕の観察に<ruby><rb>悖</rb><rt>もと</rt></ruby>らざる痴漢なりや否やを検査したり。<ruby><rb>幸</rb><rt>さいはひ</rt></ruby>にして予が知人中、新聞記者を業とするもの、<ruby><rb>啻</rb><rt>ただ</rt></ruby>に二三子に止らざりしを以て、彼が淫虐無道の行跡の如きも、その予が視聴に入らざるものは絶無なりしと云ふも妨げざる可し。予が先輩にして且知人たる<persName ref="#narushima"><ruby><rb>成島柳北</rb><rt>なるしまりうほく</rt></ruby></persName>先生より、彼が<ruby><rb><placeName ref="#kyoto">西京</placeName><placeName ref="#gion">祇園</placeName></rb><rt>さいきやうぎをん</rt></ruby>の妓楼に、<ruby><rb>雛妓</rb><rt>すうぎ</rt></ruby>の<ruby><rb>未</rb><rt>いまだ</rt></ruby>春を<ruby><rb>懐</rb><rt>いだ</rt></ruby>かざるものを<ruby><rb>梳櫳</rb><rt>そろう</rt></ruby>して、以て死に到らしめしを<ruby><rb>仄聞</rb><rt>そくぶん</rt></ruby>せしも、実に此間の事に属す。しかもこの<ruby><rb>無頼</rb><rt>ぶらい</rt></ruby>の夫にして、<ruby><rb>夙</rb><rt>つと</rt></ruby>に温良貞淑の称ある夫人<persName ref="#akiko">明子</persName>を遇するや、<ruby><rb>奴婢</rb><rt>どひ</rt></ruby>と一般なりと云ふに至つては、誰か善く彼を目して、人間の<ruby><rb>疫癘</rb><rt>えきれい</rt></ruby>と<ruby><rb>做</rb><rt>な</rt></ruby>さざるを得んや。既に彼を存するの風を<ruby><rb>頽</rb><rt>おと</rt></ruby>し俗を<ruby><rb>濫</rb><rt>みだ</rt></ruby>る<ruby><rb>所以</rb><rt>ゆゑん</rt></ruby>なるを知り、彼を除くの老を<ruby><rb>扶</rb><rt>たす</rt></ruby>け幼を憐む所以なるを知る。是に於て予が殺害の意志たりしものは、<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に殺害の計画と変化し来れり。</p>
+        <p>然れども若し是に止らんか、予は恐らく予が殺人の計画を実行するに、<ruby><rb>猶</rb><rt>なほ</rt></ruby>幾多の逡巡なきを得ざりしならん。幸か、<ruby><rb>抑亦</rb><rt>そもまた</rt></ruby>不幸か、運命はこの危険なる時期に際して、予を予が年少の友たる<persName ref="#honda">本多子爵</persName>と、一夜<placeName ref="#sumidagawa"><ruby><rb>墨上</rb><rt>ぼくじやう</rt></ruby></placeName>の旗亭<placeName ref="#kashiwaya"><ruby><rb>柏屋</rb><rt>かしはや</rt></ruby></placeName>に会せしめ、以て酒間その口より一場の哀話を語らしめたり。予はこの時に至つて、始めて<persName ref="#honda">本多子爵</persName>と<persName ref="#akiko">明子</persName>とが、既に<ruby><rb>許嫁</rb><rt>いひなづけ</rt></ruby>の約ありしにも関らず、<ruby><rb>彼</rb><rt>かの</rt></ruby>、<persName ref="#mitsumura">満村恭平</persName>が黄金の威に圧せられて、遂に破約の<ruby><rb>已</rb><rt>や</rt></ruby>む無きに至りしを知りぬ。予が心、<ruby><rb>豈</rb><rt>あに</rt></ruby><ruby><rb>憤</rb><rt>いきどほり</rt></ruby>を加へざらんや。かの<ruby><rb>酒燈一穂</rb><rt>しゆとういつすゐ</rt></ruby>、<ruby><rb>画楼簾裡</rb><rt>ぐわろうれんり</rt></ruby>に<ruby><rb>黯淡</rb><rt>あんたん</rt></ruby>たるの処、<persName ref="#honda">本多子爵</persName>と予とが<ruby><rb>杯</rb><rt>はい</rt></ruby>を含んで、<persName ref="#mitsumura">満村</persName>を痛罵せし当時を思へば、予は今に至つて<ruby><rb>自</rb><rt>おのづか</rt></ruby>ら肉動くの感なきを得ず。されど同時に又、当夜人力車に乗じて、<placeName ref="#kashiwaya">柏屋</placeName>より帰るの途、<persName ref="#honda">本多子爵</persName>と<persName ref="#akiko">明子</persName>との旧契を思ひて、一種名状す可らざる悲哀を感ぜしも、予は猶<ruby><rb>明</rb><rt>あきらか</rt></ruby>に記憶する所なり。請ふ。再び予が日記を引用するを許せ。「予は今夕<persName ref="#honda">本多子爵</persName>と会してより、<ruby><rb>愈</rb><rt>いよいよ</rt></ruby>旬日の間に<persName ref="#mitsumura">満村恭平</persName>を殺害す可しと決心したり。子爵の口吻より察するに、彼と<persName ref="#akiko">明子</persName>とは、独り許嫁の約ありしのみならず、又実に相愛の情を抱きたるものの如し。（予は今日にして、子爵の独身生活の理由を発見し得たるを覚ゆ）若し予にして<persName ref="#mitsumura">満村</persName>を殺害せんか、子爵と<persName ref="#akiko">明子</persName>とが<ruby><rb>伉儷</rb><rt>かうれい</rt></ruby>を<ruby><rb>完</rb><rt>まつた</rt></ruby>うせんは、必しも難事にあらず。<ruby><rb>偶</rb><rt>たまたま</rt></ruby><persName ref="#akiko">明子</persName>の<persName ref="#mitsumura">満村</persName>に嫁して、<ruby><rb>未</rb><rt>いまだ</rt></ruby>一児を挙げざるは、<ruby><rb>恰</rb><rt>あたか</rt></ruby>も天意亦予が計画を<ruby><rb>扶</rb><rt>たす</rt></ruby>くるに似たるの観あり。予はかの獣心の巨紳を殺害するの結果、予の親愛なる子爵と<persName ref="#akiko">明子</persName>とが、早晩幸福なる生活に入らんとするを思ひ、<ruby><rb>自</rb><rt>おのづか</rt></ruby>ら口辺の微笑を禁ずる事能はず。」</p>
+        <p>今や予が殺人の計画は、一転して殺人の実行に移らんとす。予は幾度か周密なる思慮に思慮を重ねたるの後、<ruby><rb>漸</rb><rt>やうや</rt></ruby>くにして<persName ref="#mitsumura">満村</persName>を殺害す可き適当なる場所と手段とを選定したり。その<ruby><rb>何処</rb><rt>いづこ</rt></ruby>にして何なりしかは、敢て詳細なる叙述を試みるの要なかる可し。卿等にして猶<date when="1879-06-12">明治十二年六月十二日</date>、<placeName ref="#germany"><ruby><rb>独逸</rb><rt>ドイツ</rt></ruby></placeName>皇孫殿下が<placeName ref="#shintomiza">新富座</placeName>に於て日本劇を見給ひしの夜、彼、<persName ref="#mitsumura">満村恭平</persName>が同<ruby><rb>戯場</rb><rt>ぎぢやう</rt></ruby>よりその自邸に帰らんとするの途次、馬車中に於て突如病死したる事実を記憶せんか、予は<placeName ref="#shintomiza">新富座</placeName>に於て<persName ref="#mitsumura">満村</persName>の血色<ruby><rb>宜</rb><rt>よろ</rt></ruby>しからざる由を説き、これに所持の丸薬の服用を勧誘したる、一個壮年のドクトルありしを語れば足る。嗚呼、卿等請ふ、そのドクトルの<ruby><rb>面</rb><rt>おもて</rt></ruby>を想像せよ。彼は<ruby><rb>纍々</rb><rt>るゐるゐ</rt></ruby>たる紅球燈の光を浴びて、<placeName ref="#shintomiza">新富座</placeName>の木戸口に<ruby><rb>佇</rb><rt>たたず</rt></ruby>みつつ、霖雨の中に<ruby><rb>奔馳</rb><rt>ほんち</rt></ruby>し去る<persName ref="#mitsumura">満村</persName>の馬車を目送するや、昨日の憤怨、今日の歓喜、<ruby><rb>均</rb><rt>ひと</rt></ruby>しく胸中に<ruby><rb>蝟集</rb><rt>ゐしふ</rt></ruby>し来り、笑声<ruby><rb>嗚咽</rb><rt>をえつ</rt></ruby>共に<ruby><rb>唇頭</rb><rt>しんとう</rt></ruby>に溢れんとして、<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>処の<ruby><rb>何処</rb><rt>いづこ</rt></ruby>たる、時の<ruby><rb>何時</rb><rt>なんどき</rt></ruby>たるを忘却したりき。しかもその彼が且泣き且笑ひつつ、<ruby><rb>蕭雨</rb><rt>せうう</rt></ruby>を犯し<ruby><rb>泥濘</rb><rt>でいねい</rt></ruby>を踏んで、狂せる如く帰途に就きしの時、彼の<ruby><rb>呟</rb><rt>つぶや</rt></ruby>いて止めざりしものは<persName ref="#akiko">明子</persName>の名なりしをも忘るる事勿れ。――「予は終夜眠らずして、予が書斎を<ruby><rb>徘徊</rb><rt>はいくわい</rt></ruby>したり。歓喜か、悲哀か、予はそを明にする能はず。唯、或云ひ難き強烈なる感情は、予の全身を支配して、<ruby><rb>一霎時</rb><rt>いつせふじ</rt></ruby>たりと<ruby><rb>雖</rb><rt>いへど</rt></ruby>も、予をして安坐せざらしむるを<ruby><rb>如何</rb><rt>いかん</rt></ruby>。予が卓上には<ruby><rb>三鞭酒</rb><rt>シヤンペンしゆ</rt></ruby>あり。薔薇の花あり。而して又かの丸薬の箱あり。予は<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>、天使と悪魔とを左右にして、奇怪なる饗宴を開きしが如くなりき……。」</p>
+        <p>予は<ruby><rb>爾来</rb><rt>じらい</rt></ruby>数ヶ月の如く、幸福なる<ruby><rb>日子</rb><rt>につし</rt></ruby>を<ruby><rb>閲</rb><rt>けみ</rt></ruby>せし事あらず。<persName ref="#mitsumura">満村</persName>の死因は警察医によりて、予の予想と寸分の相違もなく、脳出血の病名を与へられ、即刻地下六尺の暗黒に、腐肉を<ruby><rb>虫蛆</rb><rt>ちうそ</rt></ruby>の食としたるが如し。既に然り、誰か又予を目して、殺人犯の嫌疑ありと<ruby><rb>做</rb><rt>な</rt></ruby>すものあらん。しかも<ruby><rb>仄聞</rb><rt>そくぶん</rt></ruby>する所によれば、<persName ref="#akiko">明子</persName>はその良人の死に依りて、始めて蘇色ありと云ふにあらずや。予は満面の喜色を以て予の患者を診察し、<ruby><rb>閑</rb><rt>ひま</rt></ruby>あれば<ruby><rb>即</rb><rt>すなはち</rt></ruby><persName ref="#honda">本多子爵</persName>と共に、好んで劇を<placeName ref="#shintomiza">新富座</placeName>に見たり。是全く予にとりては、予が最後の勝利を博せし、光栄ある戦場として、<ruby><rb>屡</rb><rt>しばしば</rt></ruby>その<ruby><rb>花瓦斯</rb><rt>はなガス</rt></ruby>とその<ruby><rb>掛毛氈</rb><rt>かけまうせん</rt></ruby>とを眺めんとする、不思議なる欲望を感ぜしが為のみ。</p>
+        <p>然れどもこは真に、数ヶ月の間なりき。この幸福なる数ヶ月の経過すると共に、予は漸次予が生涯中最も憎む可き誘惑と闘ふ可き運命に接近しぬ。その<ruby><rb>闘</rb><rt>たたかひ</rt></ruby>の如何に酷烈を極めたるか、如何に<ruby><rb>歩々</rb><rt>ほほ</rt></ruby>予を死地に駆逐したるか。予は到底<ruby><rb>茲</rb><rt>ここ</rt></ruby>に叙説するの勇気なし。否、この遺書を<ruby><rb>認</rb><rt>したた</rt></ruby>めつつある現在さへも、予は猶この<ruby><rb>水蛇</rb><rt>ハイドラ</rt></ruby>の如き誘惑と、死を以て闘はざる可らず。卿等にして若し、予が煩悶の跡を見んと欲せば、請ふ、以下に抄録せんとする予が日記を<ruby><rb>一瞥</rb><rt>いちべつ</rt></ruby>せよ。</p>
+        <p>「<date when="--10">十月×日</date>、<persName ref="#akiko">明子</persName>、子なきの故を以て満村家を去る由、予は近日<persName ref="#honda">本多子爵</persName>と共に、六年ぶりにて彼女と会見す可し。帰朝以来、<ruby><rb>始</rb><rt>はじめ</rt></ruby>予は彼女を見るの<ruby><rb>己</rb><rt>おのれ</rt></ruby>の為に忍びず、後は彼女を見るの彼女の為に忍びずして、遂に<ruby><rb>荏苒</rb><rt>じんぜん</rt></ruby>今日に及べり。<persName ref="#akiko">明子</persName>の<ruby><rb>明眸</rb><rt>めいぼう</rt></ruby>、猶六年以前の如くなる可きや否や。</p>
+        <p>「<date when="--10">十月×日</date>、予は今日<persName ref="#honda">本多子爵</persName>を訪れ、始めて共に<persName ref="#akiko">明子</persName>の家に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>かんとしぬ。然るに<ruby><rb>豈</rb><rt>あに</rt></ruby><ruby><rb>計</rb><rt>はか</rt></ruby>らんや、子爵は予に先立ちて、既に彼女を見る事両三度なりと云はんには。子爵の予を疎外する、何ぞ<ruby><rb>斯</rb><rt>か</rt></ruby>くの如く甚しきや。予は甚しく不快を感じたるを以て、辞を患者の診察に託し、<ruby><rb>匇惶</rb><rt>そうくわう</rt></ruby>として子爵の家を辞したり。子爵は恐らく予の去りし後、単身<persName ref="#akiko">明子</persName>を訪れしならんか。</p>
+        <p>「<date when="--11">十一月×日</date>、予は<persName ref="#honda">本多子爵</persName>と共に、<persName ref="#akiko">明子</persName>を<ruby><rb>訪</rb><rt>と</rt></ruby>ひぬ。<persName ref="#akiko">明子</persName>は容色の幾分を減却したれども、猶<ruby><rb>紫藤花下</rb><rt>しとうくわか</rt></ruby>に立ちし当年の少女を<ruby><rb>髣髴</rb><rt>はうふつ</rt></ruby>するは、<ruby><rb>未</rb><rt>いまだ</rt></ruby>必しも難事にあらず。<ruby><rb>嗚呼</rb><rt>ああ</rt></ruby>予は既に<persName ref="#akiko">明子</persName>を見たり。而して予が胸中、反つて止む可らざる悲哀を感ずるは何ぞ。予はその理由を知らざるに苦む。</p>
+        <p>「<date when="--12">十二月×日</date>、子爵は<persName ref="#akiko">明子</persName>と結婚する意志あるものの如し。斯くして予が<persName ref="#akiko">明子</persName>の夫を殺害したる目的は、始めて完成の域に達するを得ん。されど――されど、予は予が<ruby><rb>再</rb><rt>ふたたび</rt></ruby><persName ref="#akiko">明子</persName>を失ひつつあるが如き、異様なる苦痛を免るる事能はず。</p>
+        <p>「<date when="--03">三月×日</date>、子爵と<persName ref="#akiko">明子</persName>との結婚式は、今年年末を期して、挙行せらるべしと云ふ。予はその一日も<ruby><rb>速</rb><rt>すみやか</rt></ruby>ならん事を祈る。現状に於ては、予は永久にこの止み難き苦痛を脱離する能はざる可し。</p>
+        <p>「<date when="--06-12">六月十二日</date>、予は独り<placeName ref="#shintomiza">新富座</placeName>に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>けり。去年今月今日、予が手に<ruby><rb>仆</rb><rt>たふ</rt></ruby>れたる犠牲を思へば、予は観劇中も<ruby><rb>自</rb><rt>おのづか</rt></ruby>ら会心の微笑を禁ぜざりき。されど同座より帰途、予がふと予の殺人の動機に想到するや、予は<ruby><rb>殆</rb><rt>ほとんど</rt></ruby><ruby><rb>帰趣</rb><rt>きしゆ</rt></ruby>を失ひたるかの感に打たれたり。<ruby><rb>嗚呼</rb><rt>ああ</rt></ruby>、予は誰の為に<persName ref="#mitsumura">満村恭平</persName>を殺せしか。<persName ref="#honda">本多子爵</persName>の為か、<persName ref="#akiko">明子</persName>の為か、<ruby><rb>抑</rb><rt>そ</rt></ruby>も亦予自身の為か。こは予も亦答ふる能はざるを<ruby><rb>如何</rb><rt>いかん</rt></ruby>。</p>
+        <p>「<date when="--07">七月×日</date>、予は子爵と<persName ref="#akiko">明子</persName>と共に、今夕馬車を駆つて、<placeName ref="#sumidagawa">隅田川</placeName>の<ruby><rb>流燈会</rb><rt>りうとうゑ</rt></ruby>を見物せり。馬車の窓より洩るる燈光に、<persName ref="#akiko">明子</persName>の<ruby><rb>明眸</rb><rt>めいぼう</rt></ruby>の更に美しかりしは、<ruby><rb>殆</rb><rt>ほとんど</rt></ruby>予をして<ruby><rb>傍</rb><rt>かたはら</rt></ruby>に子爵あるを忘れしめぬ。されどそは予が語らんとする所にあらず。予は馬車中子爵の胃痛を訴ふるや、手にポケツトを<ruby><rb>捜</rb><rt>さぐ</rt></ruby>りて、丸薬の<ruby><rb>函</rb><rt>はこ</rt></ruby>を得たり。而してその「かの丸薬」なるに一驚したり。予は何が故に今宵この丸薬を携へたるか。偶然か、予は切にその偶然ならん事を<ruby><rb>庶幾</rb><rt>こひねが</rt></ruby>ふ。されどそは必しも偶然にはあらざりしものの如し。</p>
+        <p>「<date when="--08">八月×日</date>、予は子爵と<persName ref="#akiko">明子</persName>と共に、予が家に晩餐を共にしたり。しかも予は終始、予がポケツトの底なるかの丸薬を忘るる事能はず。予の心は、殆予自身にとりても、不可解なる怪物を蔵するに似たり。</p>
+        <p>「<date when="--11">十一月×日</date>、子爵は遂に<persName ref="#akiko">明子</persName>と結婚式を挙げたり。予は予自身に対して、名状し難き<ruby><rb>憤怒</rb><rt>ふんぬ</rt></ruby>を感ぜざるを得ず。その憤怒たるや、<ruby><rb>恰</rb><rt>あたか</rt></ruby>も一度<ruby><rb>遁走</rb><rt>とんそう</rt></ruby>せし兵士が、自己の<ruby><rb>怯懦</rb><rt>けふだ</rt></ruby>に対して感ずる<ruby><rb>羞恥</rb><rt>しうち</rt></ruby>の情に似たるが如し。</p>
+        <p>「<date when="--12">十二月×日</date>、予は子爵の<ruby><rb>請</rb><rt>こひ</rt></ruby>に応じて、之をその病床に見たり、<persName ref="#akiko">明子</persName>亦傍にありて、夜来発熱甚しと云ふ。予は診察の後、その感冒に過ぎざるを云ひて、<ruby><rb>直</rb><rt>ただち</rt></ruby>に家に帰り、子爵の為に自ら調剤しぬ。その間約二時間、「かの丸薬」の函は終始予に恐る可き誘惑を持続したり。</p>
+        <p>「<date when="--12">十二月×日</date>、予は昨夜子爵を殺害せる悪夢に<ruby><rb>脅</rb><rt>おびやか</rt></ruby>されたり。終日胸中の不快を排し難し。</p>
+        <p>「<date when="--02">二月×日</date>、嗚呼予は今にして始めて知る、予が子爵を殺害せざらんが為には、予自身を殺害せざる可らざるを。されど<persName ref="#akiko">明子</persName>は<ruby><rb>如何</rb><rt>いかん</rt></ruby>。」</p>
+        <p>子爵閣下、並に夫人、こは予が日記の大略なり。大略なりと<ruby><rb>雖</rb><rt>いへど</rt></ruby>も、予が連日連夜の苦悶は、卿等必ずや善く了解せん。予は<persName ref="#honda">本多子爵</persName>を殺さざらんが為には、予自身を殺さざる可らず。されど予にして若し予自身を救はんが為に、<persName ref="#honda">本多子爵</persName>を殺さんか、予は予が<persName ref="#mitsumura">満村恭平</persName>を<ruby><rb>屠</rb><rt>ほふ</rt></ruby>りし理由を如何の地にか求む可けん。若し又彼を毒殺したる理由にして、予の自覚せざる利己主義に伏在したるものと<ruby><rb>做</rb><rt>な</rt></ruby>さんか、予の人格、予の良心、予の道徳、予の主張は、すべて地を払つて消滅す可し。是<ruby><rb>素</rb><rt>もと</rt></ruby>より予の善く忍び得る所にあらず。予は<ruby><rb>寧</rb><rt>むしろ</rt></ruby>、予自身を殺すの、遙に予が精神的破産に<ruby><rb>勝</rb><rt>まさ</rt></ruby>れるを信ずるものなり。故に予は予が人格を樹立せんが為に、今宵「かの丸薬」の函によりて、<ruby><rb>嘗</rb><rt>かつ</rt></ruby>て予が手に<ruby><rb>僵</rb><rt>たふ</rt></ruby>れたる犠牲と、同一運命を担はんとす。</p>
+        <p><persName ref="#honda">本多子爵</persName>閣下、並に夫人、予は<ruby><rb>如上</rb><rt>じよじやう</rt></ruby>の理由の下に、卿等がこの遺書を手にするの時、既に死体となりて、予が寝台に横はらん。唯、死に際して、<ruby><rb>縷々</rb><rt>るる</rt></ruby>予が呪ふ可き半生の秘密を告白したるは、亦以て卿等の為に<ruby><rb>聊</rb><rt>いささか</rt></ruby><ruby><rb>自</rb><rt>みづか</rt></ruby>ら<ruby><rb>潔</rb><rt>いさぎよく</rt></ruby>せんと欲するが為のみ。卿等にして若し憎む可くんば、即ち憎み、憐む可くんば、即ち憐め。予は――自ら憎み、自ら憐める予は、悦んで卿等の憎悪と憐憫とを蒙る可し。さらば予は筆を<ruby><rb>擱</rb><rt>お</rt></ruby>いて、予が馬車を命じ、<ruby><rb>直</rb><rt>ただち</rt></ruby>に<placeName ref="#shintomiza">新富座</placeName>に赴かん。而して半日の観劇を終りたるの後、予は「かの丸薬」の幾粒を口に<ruby><rb>啣</rb><rt>ふく</rt></ruby>みて、<ruby><rb>再</rb><rt>ふたたび</rt></ruby>予が馬車に投ぜん。<ruby><rb>節物</rb><rt>せつぶつ</rt></ruby>は<ruby><rb>素</rb><rt>もと</rt></ruby>より異れども、紛々たる細雨は、予をして幸に<ruby><rb>黄梅雨</rb><rt>くわうばいう</rt></ruby>の天を彷彿せしむ。斯くして予はかの肥大<ruby><rb>豕</rb><rt>ゐ</rt></ruby>に似たる<persName ref="#mitsumura">満村恭平</persName>の如く、車窓の外に往来する燈火の光を見、<ruby><rb>車蓋</rb><rt>しやがい</rt></ruby>の上に<ruby><rb>蕭々</rb><rt>せうせう</rt></ruby>たる夜雨の音を聞きつつ、<placeName ref="#shintomiza">新富座</placeName>を去る事<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>遠からずして、<ruby><rb>必</rb><rt>かならず</rt></ruby>予が最期の息を呼吸す可し。卿等亦明日の新聞を飜すの時、恐らくは予が遺書を得るに先立つて、ドクトル<persName ref="#kitabatake">北畠義一郎</persName>が脳出血病を以て、観劇の帰途、馬車内に頓死せしの一項を読まんか。終に臨んで予は切に卿等が幸福と健在とを祈る。卿等に常に忠実なる<ruby><rb>僕</rb><rt>しもべ</rt></ruby>、<persName ref="#kitabatake">北畠義一郎</persName>拝。</p>
+        <p>（<date when="1918-06">大正七年六月</date>）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

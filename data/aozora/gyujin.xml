@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>牛人</title>
+        <author>中島敦</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>牛人</title><author>中島敦</author>
+          <note>青空文庫。底本：「山月記・李陵　他九篇」岩波文庫、岩波書店。1994（平成6）年7月18日第1刷発行。1998（平成10）年12月25日第7刷。底本の親本：「中島敦全集　第一巻」筑摩書房。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000119/card1742.html">https://www.aozora.gr.jp/cards/000119/card1742.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="shukuson-hyo">
+        <persName>叔孫豹</persName>
+        <note>春秋時代の魯の名大夫。若年に乱を避けて斉に奔り、庚宗の女との間に豎牛をもうけた。晩年に豎牛に幽閉され餓死する本作の主人公。表層形「叔孫豹」「叔孫」を統合</note>
+      </person>
+      <person xml:id="jugyu">
+        <persName>豎牛</persName>
+        <note>叔孫豹が庚宗の女に生ませた庶子。黒く傴僂で牛に似た容貌をもつ。叔孫家の家政を握り、孟丙・仲壬を陥れて主人を餓死させる。表層形「豎牛」「牛」を統合</note>
+      </person>
+      <person xml:id="mohei">
+        <persName>孟丙</persName>
+        <note>叔孫豹の長子。斉から迎えられた。鐘の完成を祝う宴を口実に豎牛の讒言を受け、父の命で殺される</note>
+      </person>
+      <person xml:id="chujin">
+        <persName>仲壬</persName>
+        <note>叔孫豹の次子。斉から迎えられた。昭公から賜った玉環を豎牛に讒言され、父の怒りを買って斉に奔る</note>
+      </person>
+      <person xml:id="ro-joko">
+        <persName>襄公</persName>
+        <note>魯の襄公。その死により若い昭公の代となる、と時期の目安として言及される</note>
+      </person>
+      <person xml:id="ro-shoko">
+        <persName>昭公</persName>
+        <note>魯の昭公。襄公の跡を継いだ若い君主。仲壬に玉環を賜った</note>
+      </person>
+      <person xml:id="tosetsu">
+        <persName>杜洩</persName>
+        <note>叔孫家の宰。病床の叔孫豹の訴えを錯乱と取り合わず、結果として主人を見殺しにする</note>
+      </person>
+      <person xml:id="kokushi">
+        <persName>国氏</persName>
+        <note>斉の大夫。叔孫豹はその娘を娶って二児を挙げた。斉の名族国氏(こくし)の当主を指す</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="lu">
+        <placeName>魯</placeName>
+        <location><geo>35.5808 116.9866</geo></location>
+        <note>春秋の魯。叔孫豹の母国。国名・概値(都は曲阜)</note>
+      </place>
+      <place xml:id="qi">
+        <placeName>斉</placeName>
+        <location><geo>36.8258 118.3092</geo></location>
+        <note>春秋の斉。叔孫豹が乱を避けて奔った先。国名・概値(都は臨淄)</note>
+      </place>
+      <place xml:id="koso">
+        <placeName>庚宗</placeName>
+        <location><geo>35.66 117.3</geo></location>
+        <note>魯の北境の地。叔孫豹が一夜の契りを結んだ女の住む地。現在の山東省泗水県付近に比定する説による・伝承地(所在に諸説あり)</note>
+      </place>
+      <place xml:id="kyuyu">
+        <placeName>丘蕕</placeName>
+        <note>叔孫豹が狩りに行き、その帰りに悪寒を覚えて病に倒れた地。魯国内と考えられるが所在未詳のため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>牛人</head>
+        <p><placeName ref="#lu">魯</placeName>の<persName ref="#shukuson-hyo"><ruby><rb>叔孫豹</rb><rt>しゅくそんひょう</rt></ruby></persName>がまだ若かった頃、乱を避けて一時<placeName ref="#qi"><ruby><rb>斉</rb><rt>せい</rt></ruby></placeName>に<ruby><rb>奔</rb><rt>はし</rt></ruby>ったことがある。<ruby><rb>途</rb><rt>みち</rt></ruby>に<placeName ref="#lu">魯</placeName>の北境<placeName ref="#koso"><ruby><rb>庚宗</rb><rt>こうそう</rt></ruby></placeName>の地で一美婦を見た。<ruby><rb>俄</rb><rt>にわ</rt></ruby>かに<ruby><rb>懇</rb><rt>ねんご</rt></ruby>ろとなり、一夜を共に過して、さて翌朝別れて<placeName ref="#qi">斉</placeName>に入った。<placeName ref="#qi">斉</placeName>に落着き<ruby><rb>大夫</rb><rt>たいふ</rt></ruby><persName ref="#kokushi"><ruby><rb>国氏</rb><rt>こくし</rt></ruby></persName>の娘を<ruby><rb>娶</rb><rt>めと</rt></ruby>って二児を挙げるに及んで、かつての路傍一夜の<ruby><rb>契</rb><rt>ちぎり</rt></ruby>などはすっかり忘れ果ててしまった。</p>
+        <p>或夜、夢を見た。<ruby><rb>四辺</rb><rt>あたり</rt></ruby>の空気が重苦しく<ruby><rb>立罩</rb><rt>たちこ</rt></ruby>め不吉な予感が静かな部屋の中を領している。突然、音も無く室の天井が下降し始める。極めて徐々に、しかし極めて確実に、それは少しずつ降りてくる。一刻ごとに部屋の空気が濃く<ruby><rb>淀</rb><rt>よど</rt></ruby>み、呼吸が困難になってくる。逃げようともがくのだが、身体は寝床の上に仰向いたままどうしても動けない。見えるはずはないのに、天井の上を真黒な天が<ruby><rb>盤石</rb><rt>ばんじゃく</rt></ruby>の重さで押しつけているのが、はっきり判る。いよいよ天井が近づき、堪え難い重みが胸を圧した時、ふと横を見ると、一人の男が立っている。恐ろしく色の黒い傴僂で、眼が深く<ruby><rb>凹</rb><rt>くぼ</rt></ruby>み、獣のように突出た口をしている。全体が、真黒な牛に良く似た感じである。牛！　<ruby><rb>余</rb><rt>われ</rt></ruby>を助けよ、と思わず救を求めると、その黒い男が手を差伸べて、上からのし掛かる無限の重みを支えてくれる。それからもう一方の手で胸の上を軽く<ruby><rb>撫</rb><rt>な</rt></ruby>でてくれると、急に今までの圧迫感が<ruby><rb>失</rb><rt>なくな</rt></ruby>ってしまった。ああ、良かった、と思わず口に出したとき、目が<ruby><rb>醒</rb><rt>さ</rt></ruby>めた。</p>
+        <p>翌朝、従者下僕らを集めて一々<ruby><rb>検</rb><rt>しら</rt></ruby>べて見たが、夢の中の<ruby><rb>牛男</rb><rt>うしおとこ</rt></ruby>に似た者は誰もいない。その後も<placeName ref="#qi">斉</placeName>の都に出入する人々について、それとなく気を付けて見るが、それらしい人相の男には絶えて出会わない。</p>
+        <p>数年後、再び故国に政変が起り、<persName ref="#shukuson-hyo">叔孫豹</persName>は家族を<placeName ref="#qi">斉</placeName>に残して急遽帰国した。後、大夫として<placeName ref="#lu">魯</placeName>の<ruby><rb>朝</rb><rt>ちょう</rt></ruby>に立つに及んで、初めて妻子を呼ぼうとしたが、妻は既に<placeName ref="#qi">斉</placeName>の大夫某と通じていて、一向夫の許に来ようとはしない。結局、二子<persName ref="#mohei"><ruby><rb>孟丙</rb><rt>もうへい</rt></ruby></persName>・<persName ref="#chujin"><ruby><rb>仲壬</rb><rt>ちゅうじん</rt></ruby></persName>だけが父の所へ来た。</p>
+        <p>或朝、一人の女が<ruby><rb>雉</rb><rt>きじ</rt></ruby>を手土産に訪ねて来た。始め<persName ref="#shukuson-hyo">叔孫</persName>の方ではすっかり見忘れていたが、話して行く中にすぐ判った。十数年前<placeName ref="#qi">斉</placeName>へ逃れる道すがら<placeName ref="#koso">庚宗</placeName>の地で契った女である。独りかと尋ねると、<ruby><rb>倅</rb><rt>せがれ</rt></ruby>を連れて来ているという。しかも、あの時の<persName ref="#shukuson-hyo">叔孫</persName>の子だというのだ。とにかく、前に連れてこさせると、<persName ref="#shukuson-hyo">叔孫</persName>はアッと声に出した。色の黒い・目の凹んだ・傴僂なのだ。夢の中で己を助けた黒い牛男にそっくりである。思わず口の中で「<persName ref="#jugyu">牛</persName>！」と言ってしまった。するとその黒い少年が驚いた顔をして返辞をする。<persName ref="#shukuson-hyo">叔孫</persName>は一層驚いて、少年の名を問えば、「<persName ref="#jugyu">牛</persName>と申します」と答えた。</p>
+        <p>母子ともに即刻引取られ、少年は<ruby><rb>豎</rb><rt>じゅ</rt></ruby>（小姓）の一人に加えられた。それ故、長じて後もこの牛に似た男は<persName ref="#jugyu"><ruby><rb>豎牛</rb><rt>じゅぎゅう</rt></ruby></persName>と呼ばれるのである。容貌に似合わず小才の利く男で、すこぶる役には立つが、いつも<ruby><rb>陰鬱</rb><rt>いんうつ</rt></ruby>な顔をして少年仲間の戯れにも加わらぬ。主人以外の者には笑顔一つ見せない。<persName ref="#shukuson-hyo">叔孫</persName>にはひどく可愛がられ、長じては叔孫家の家政一切の切廻しをするようになった。</p>
+        <p>眼の凹んだ・口の突出た・黒い顔は、ごく<ruby><rb>偶</rb><rt>たま</rt></ruby>に笑うとひどく滑稽な<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>に富んだものに見える。こんな<ruby><rb>剽軽</rb><rt>ひょうきん</rt></ruby>な顔付の男に<ruby><rb>悪企</rb><rt>わるだくみ</rt></ruby>など出来そうもないという印象を与える。目上の者に見せるのはこの顔だ。仏頂面をして考え込む時の顔は、ちょっと人間離れのした怪奇な残忍さを呈する。<ruby><rb>儕輩</rb><rt>さいはい</rt></ruby>の誰彼が恐れるのはこの顔だ。意識しないでも自然にこの二つの顔の使い分けが出来るらしい。</p>
+        <p><persName ref="#shukuson-hyo">叔孫豹</persName>の信任は無限であったが、<ruby><rb>後嗣</rb><rt>あとつぎ</rt></ruby>に直そうとは思っていない。秘事ないし執事としては無類と考えていたが、<placeName ref="#lu">魯</placeName>の名家の当主とは、その人品からしてもちょっと考えにくいのである。<persName ref="#jugyu">豎牛</persName>ももちろんそれは心得ている。<persName ref="#shukuson-hyo">叔孫</persName>の息子たち、殊に<placeName ref="#qi">斉</placeName>から迎えられた<persName ref="#mohei">孟丙</persName>・<persName ref="#chujin">仲壬</persName>の二人に向かっては、常に<ruby><rb>慇懃</rb><rt>いんぎん</rt></ruby>を極めた態度をとっている。彼らの方では、幾分の不気味さと多分の軽蔑とをこの男に感じているだけだ。父の<ruby><rb>寵</rb><rt>ちょう</rt></ruby>の厚いのに大して<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>を覚えないのは、人柄の相違というものに自信をもっているからであろう。</p>
+        <p><placeName ref="#lu">魯</placeName>の<persName ref="#ro-joko"><ruby><rb>襄公</rb><rt>じょうこう</rt></ruby></persName>が死んで若い<persName ref="#ro-shoko">昭公</persName>の代となる頃から、<persName ref="#shukuson-hyo">叔孫</persName>の健康が衰え始めた。<placeName ref="#kyuyu"><ruby><rb>丘蕕</rb><rt>きゅうゆう</rt></ruby></placeName>という所へ狩りに行った帰りに悪寒を覚えて寝付いてからは、ようやく足腰が立たなくなって来る。病中の身の廻りの世話から、病床よりの命令の伝達に至るまで、一切は<persName ref="#jugyu">豎牛</persName>一人に任せられることになった。<persName ref="#jugyu">豎牛</persName>の<persName ref="#mohei">孟丙</persName>らに対する態度は、しかし、いよいよ<ruby><rb>遜</rb><rt>へりくだ</rt></ruby>ってくる一方である。</p>
+        <p><persName ref="#shukuson-hyo">叔孫</persName>が寝付く以前に、長子の<persName ref="#mohei">孟丙</persName>のために鐘を鋳させることに決め、その時に言った。お前はまだこの国の諸大夫と近附になっていないから、この鐘が出来上ったら、その祝を兼ねて諸大夫を饗応するが<ruby><rb>宜</rb><rt>よ</rt></ruby>かろうと。明らかに<persName ref="#mohei">孟丙</persName>を相続者と決めての話である。<persName ref="#shukuson-hyo">叔孫</persName>が病に伏してから、ようやく鐘が出来上った。<persName ref="#mohei">孟丙</persName>は、かねて話のあった宴会の日取の都合を父に聞こうとして、<persName ref="#jugyu">豎牛</persName>にその旨を通じてもらった。特別の事情が無い限り、<persName ref="#jugyu">豎牛</persName>の外は誰一人病室に出入出来なかったのである。<persName ref="#jugyu">豎牛</persName>は、<persName ref="#mohei">孟丙</persName>の頼を受けて病室に入ったが、<persName ref="#shukuson-hyo">叔孫</persName>には何も取次がない。すぐ外へ出て来て<persName ref="#mohei">孟丙</persName>に向かい、主君の言葉として<ruby><rb>出鱈目</rb><rt>でたらめ</rt></ruby>な日にちを指定する。指定された日に<persName ref="#mohei">孟丙</persName>は賓客を招き盛んに饗応して、その座で始めて新しい鐘を打った。病室でその音を聞いた<persName ref="#shukuson-hyo">叔孫</persName>が怪しんで、あれは何だと聞く。<persName ref="#mohei">孟丙</persName>の家で鐘の完成を祝う宴が催され多数の客が来ている旨を、<persName ref="#jugyu">豎牛</persName>が答える。俺の許も得ないで勝手に相続人<ruby><rb>面</rb><rt>づら</rt></ruby>をするとは何事だ、と病人が顔色を変える。それに、客の中には<placeName ref="#qi">斉</placeName>にいる<persName ref="#mohei">孟丙</persName>殿の母上の関係の方々も遥々見えているようです、と<persName ref="#jugyu">豎牛</persName>が附加える。不義を働いたかつての妻の話を持出すといつも<persName ref="#shukuson-hyo">叔孫</persName>の機嫌が見る見る悪くなることを、良く承知しているのだ。病人は怒って立上がろうとするが、<persName ref="#jugyu">豎牛</persName>に抱きとめられる。身体に障ってはいけないというのである。俺がこの病でてっきり死ぬものと決めて掛かって、もう勝手な真似を始めたのだなと<ruby><rb>歯咬</rb><rt>はが</rt></ruby>みをしながら、<persName ref="#shukuson-hyo">叔孫</persName>は<persName ref="#jugyu">豎牛</persName>に命ずる。構わぬ。引捕らえて<ruby><rb>牢</rb><rt>ろう</rt></ruby>に入れろ。抵抗するようなら打殺しても<ruby><rb>宜</rb><rt>よ</rt></ruby>い。</p>
+        <p>宴が終り、若い叔孫家の後嗣は快く諸賓客を送り出したが、翌朝は既に<ruby><rb>屍体</rb><rt>したい</rt></ruby>となって家の<ruby><rb>裏藪</rb><rt>うらやぶ</rt></ruby>に棄てられていた。</p>
+        <p><persName ref="#mohei">孟丙</persName>の弟<persName ref="#chujin">仲壬</persName>は<persName ref="#ro-shoko">昭公</persName>の<ruby><rb>近侍</rb><rt>きんじ</rt></ruby>某と親しくしていたが、一日友を公宮に訪ねた時、たまたま公の目に<ruby><rb>留</rb><rt>とま</rt></ruby>った。<ruby><rb>二言</rb><rt>ふたこと</rt></ruby><ruby><rb>三言</rb><rt>みこと</rt></ruby>、その下問に答えている中に、気に入られたと見え、帰りには親しく<ruby><rb>玉環</rb><rt>ぎょっかん</rt></ruby>を賜わった。大人しい青年で、親にも告げずに身に<ruby><rb>佩</rb><rt>お</rt></ruby>びては悪かろうと、<persName ref="#jugyu">豎牛</persName>を通じて病父にその名誉の事情を告げ玉環を見せようとした。<persName ref="#jugyu">牛</persName>は玉環を受取って内に入ったが、<persName ref="#shukuson-hyo">叔孫</persName>には示さない。<persName ref="#chujin">仲壬</persName>が来たということさえ話さぬ。再び外に出て来て言った。父上には大変御喜びですぐにも身に着けるようにとのことでした、と。<persName ref="#chujin">仲壬</persName>はそこで始めてそれを身に佩びた。数日後、<persName ref="#jugyu">豎牛</persName>が<persName ref="#shukuson-hyo">叔孫</persName>に勧める。既に<persName ref="#mohei">孟丙</persName>が亡い以上、<persName ref="#chujin">仲壬</persName>を後嗣に立てることは決まっている故、今から主君<persName ref="#ro-shoko">昭公</persName>に御目通りさせては如何。<persName ref="#shukuson-hyo">叔孫</persName>がいう。いや、まだそれと決めた訳ではないから、今からそんな必要はない。しかし、と<persName ref="#jugyu">牛</persName>が言葉を返す。父上の<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>はどうあろうと、息子の方では勝手にそう決め込んで、もはや直接君公に御目通りしていますよ。そんな<ruby><rb>莫迦</rb><rt>ばか</rt></ruby>な事があるはずは無いという<persName ref="#shukuson-hyo">叔孫</persName>に、それでも近頃<persName ref="#chujin">仲壬</persName>が君公から拝領したという玉環を佩びていることは確かですと<persName ref="#jugyu">牛</persName>が請け合う。早速<persName ref="#chujin">仲壬</persName>が呼ばれる。果たして玉環を佩びている。公からの戴きものだという。父は利かぬ身体を床の上に起こして怒った。息子の弁解は何一つ聞かれず、すぐにその場を退いて謹慎せよという。</p>
+        <p>その夜、<persName ref="#chujin">仲壬</persName>はひそかに<placeName ref="#qi">斉</placeName>に<ruby><rb>奔</rb><rt>はし</rt></ruby>った。</p>
+        <p>病が次第に<ruby><rb>篤</rb><rt>あつ</rt></ruby>くなり、<ruby><rb>焦眉</rb><rt>しょうび</rt></ruby>の問題として真剣に後嗣のことを考えねばならなくなった時、<persName ref="#shukuson-hyo">叔孫豹</persName>はやはり<persName ref="#chujin">仲壬</persName>を呼ぼうと思った。<persName ref="#jugyu">豎牛</persName>にそれを命ずる。命を受けて出ては行ったが、もちろん<placeName ref="#qi">斉</placeName>にいる<persName ref="#chujin">仲壬</persName>に使を出しはしない。さっそく<persName ref="#chujin">仲壬</persName>の許へ使を遣わしたが非道なる父の所へは二度と戻らぬという返辞だったと復命する。この頃になってようやく<persName ref="#shukuson-hyo">叔孫</persName>にも、この近臣に対する疑いが<ruby><rb>湧</rb><rt>わ</rt></ruby>いて来た。<ruby><rb>汝</rb><rt>なんじ</rt></ruby>の言葉は真実か？　と<ruby><rb>吃</rb><rt>きつ</rt></ruby>として聞き返したのはそのためである。どうして私が<ruby><rb>偽</rb><rt>いつわり</rt></ruby>など申しましょう、と答える<persName ref="#jugyu">豎牛</persName>の唇の端が、その時<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>るように<ruby><rb>歪</rb><rt>ゆが</rt></ruby>んだのを病人は見た。こんな事はこの男が邸に来てから全く始めてであった。カッとして病人は起上ろうとしたが、力が無い。すぐ打倒れる。その姿を、上から、黒い牛のような顔が、今度こそ明瞭な<ruby><rb>侮蔑</rb><rt>ぶべつ</rt></ruby>を浮かべて、冷然と見下す。儕輩や部下にしか見せなかったあの残忍な顔である。家人や他の近臣を呼ぼうにも、今までの習慣でこの男の手を経ないでは誰一人呼べないことになっている。その夜病大夫は殺した<persName ref="#mohei">孟丙</persName>のことを思って口惜し泣きに泣いた。</p>
+        <p>次の日から残酷な所作が始まる。病人が人に接するのを嫌うからとて、食事は<ruby><rb>膳部</rb><rt>ぜんぶ</rt></ruby>の者が次室まで運んで置き、それを<persName ref="#jugyu">豎牛</persName>が病人の枕頭に持って来るのが慣わしであったのを、今やこの侍者が病人に食を進めなくなったのである。差出される食事はことごとく自分が喰ってしまい、からだけをまた出して置く。膳部の者は<persName ref="#shukuson-hyo">叔孫</persName>が喰べたことと思っている。病人が餓を訴えても、牛男は黙って冷笑するばかり。返辞さえもはやしなくなった。誰に助を求めようにも、<persName ref="#shukuson-hyo">叔孫</persName>には絶えて手段が無いのである。</p>
+        <p>たまたまこの家の<ruby><rb>宰</rb><rt>さい</rt></ruby>たる<persName ref="#tosetsu"><ruby><rb>杜洩</rb><rt>とせつ</rt></ruby></persName>が見舞に来た。病人は<persName ref="#tosetsu">杜洩</persName>に向って<persName ref="#jugyu">豎牛</persName>の仕打を訴えるが、日頃の信任を承知している<persName ref="#tosetsu">杜洩</persName>は冗談と考えててんで取合わない。<persName ref="#shukuson-hyo">叔孫</persName>がなおも余り真剣に訴えると、今度は熱病のため心神が錯乱したのではないかと、いぶかる風である。<persName ref="#jugyu">豎牛</persName>もまた横から<persName ref="#tosetsu">杜洩</persName>に<ruby><rb>目配</rb><rt>めくばせ</rt></ruby>して、頭の惑乱した病者にはつくづく困り果てたという表情を見せる。しまいに、病人はいら立って涙を流しながら、痩せ衰えた手で傍の剣を指し、<persName ref="#tosetsu">杜洩</persName>に「これであの男を殺せ。殺せ、早く！」と叫ぶ。どうしても自分が狂者としてしか扱われないことを知ると<persName ref="#shukuson-hyo">叔孫</persName>は衰え切った身体を顫わせて号泣する。<persName ref="#tosetsu">杜洩</persName>は<persName ref="#jugyu">牛</persName>と目を見合せ、眉をしかめながら、そっと室を出る。客が去ってから始めて、牛男の顔に<ruby><rb>会体</rb><rt>えたい</rt></ruby>の知れぬ笑が<ruby><rb>微</rb><rt>かす</rt></ruby>かに浮かぶ。</p>
+        <p>餓と疲れの中に泣きながら、いつか病人はうとうとして夢を見た。いや、眠ったのではなく、幻覚を見ただけかも知れぬ。重苦しく淀んだ・不吉な予感に充ちた部屋の空気の中に、ただ一つ灯が音も無く燃えている。輝きの無い・いやに白っぽい光である。じっとそれを見ている中に、ひどく遠方に――十里も二十里も彼方にあるもののように感じられて来る。寝ている真上の天井が、いつかの夢の時と同じように、徐々に下降を始める。ゆっくりと、しかし確実に、上からの圧迫は加わる。逃れようにも足一つ動かせない。傍を見ると黒い牛男が立っている。救を求めても、今度は手を伸べてくれない。黙ってつッ立ったままにやりと笑う。絶望的な哀願をもう一度繰返すと、急に、<ruby><rb>慍</rb><rt>おこ</rt></ruby>ったような固い表情に変り、眉一つ動かさず<ruby><rb>凝乎</rb><rt>じっ</rt></ruby>と見下す。今や胸の真上に蔽いかぶさって来る真黒な重みに、最後の悲鳴を挙げた途端に、正気に返った。……</p>
+        <p>いつか夜に入ったと見え、暗い部屋の隅に白っぽい灯が一つともっている。今まで夢の中で見ていたのはやはりこの灯だったのかも知れない。傍を見上げると、これまた夢の中とそっくりな<persName ref="#jugyu">豎牛</persName>の顔が、人間離れのした冷酷さを湛えて、静かに見下している。その<ruby><rb>貌</rb><rt>かお</rt></ruby>はもはや人間ではなく、真黒な原始の<ruby><rb>混沌</rb><rt>こんとん</rt></ruby>に根を生やした一個の物のように思われる。<persName ref="#shukuson-hyo">叔孫</persName>は骨の髄まで凍る思いがした。己を殺そうとする一人の男に対する恐怖ではない。むしろ、世界のきびしい悪意といったようなものへの、<ruby><rb>遜</rb><rt>へりくだ</rt></ruby>った<ruby><rb>懼</rb><rt>おそ</rt></ruby>れに近い。もはや先刻までの怒は運命的な<ruby><rb>畏怖</rb><rt>いふ</rt></ruby>感に圧倒されてしまった。今はこの男に<ruby><rb>刃向</rb><rt>はむか</rt></ruby>おうとする気力も失せたのである。</p>
+        <p>三日の後、<placeName ref="#lu">魯</placeName>の名大夫、<persName ref="#shukuson-hyo">叔孫豹</persName>は餓えて死んだ。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

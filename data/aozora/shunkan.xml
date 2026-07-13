@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>俊寛</title>
+        <author>菊池寛</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>俊寛</title><author>菊池寛</author>
+          <note>青空文庫。底本：「菊池寛　短編と戯曲」文芸春秋。1988（昭和63）年3月25日第1刷発行。※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。。※誤植を疑った箇所を、「菊池寛文学全集　第三巻」文藝春秋新社、1960（昭和35）年5月20日発行の同作品の表記にそって、あらためました。。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000083/card1101.html">https://www.aozora.gr.jp/cards/000083/card1101.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="shunkan">
+        <persName>俊寛</persName>
+        <note>法勝寺の執行。鹿ヶ谷の陰謀に加わり鬼界ヶ島に流された僧。赦免船に漏れて島に独り残されるが、自然のなかで生き直し土人の少女を妻として五人の子をもうける。本作の主人公。村上天皇の第七子具平親王六世皇孫とされる</note>
+      </person>
+      <person xml:id="yasuyori">
+        <persName>平康頼</persName>
+        <note>鹿ヶ谷の陰謀に連座した流人の一人。神経質で不眠に苦しむ。赦免されて俊寛を残し島を去る。表層形「康頼」「平判官」を統合</note>
+      </person>
+      <person xml:id="naritsune">
+        <persName>藤原成経</persName>
+        <note>鹿ヶ谷の陰謀に連座した流人の一人。成親の子。赦免されて俊寛を残し島を去る。表層形「成経」「丹波少将」を統合</note>
+      </person>
+      <person xml:id="kiyomori">
+        <persName>平清盛</persName>
+        <note>平家の棟梁。俊寛らを鬼界ヶ島に流し、赦免の教書からは俊寛の名を除いた。表層形「清盛」「平相国」を統合</note>
+      </person>
+      <person xml:id="saiko">
+        <persName>西光</persName>
+        <note>鹿ヶ谷の陰謀の発頭人とされる人物(西光法師)。清盛にすぐ斬られた</note>
+      </person>
+      <person xml:id="narichika">
+        <persName>藤原成親</persName>
+        <note>成経の父。作中では「成親卿」。備前へ流されて人知れず殺されたと語られる</note>
+      </person>
+      <person xml:id="motoyasu">
+        <persName>丹左衛門尉基康</persName>
+        <note>清盛が遣わした赦免の使者。俊寛を憐れみ飯を運ぶが、赦免状に俊寛の名はなかった。表層形「丹左衛門尉基康」「丹左衛門尉」「基康」を統合</note>
+      </person>
+      <person xml:id="matsunomae">
+        <persName>松の前</persName>
+        <note>俊寛の妻。鳥羽で別れ、形見に素絹の小袖を贈った。のちに身まかったと有王が伝える</note>
+      </person>
+      <person xml:id="tsurunomae">
+        <persName>鶴の前</persName>
+        <note>俊寛の娘。松の前とともに身まかったと有王が伝える</note>
+      </person>
+      <person xml:id="ario">
+        <persName>有王</persName>
+        <note>俊寛の従者(童)。故主の最期を見届けるため都から鬼界ヶ島へ下り、変わり果てた俊寛と再会する</note>
+      </person>
+      <person xml:id="tokujumaru">
+        <persName>徳寿丸</persName>
+        <note>島で生まれた俊寛の長男。有王に引き合わされる</note>
+      </person>
+      <person xml:id="murakami">
+        <persName>村上天皇</persName>
+        <note>俊寛の血統を語る文脈で言及される平安中期の天皇</note>
+      </person>
+      <person xml:id="tomohira">
+        <persName>具平親王</persName>
+        <note>村上天皇の第七子。俊寛はその六世皇孫とされる</note>
+      </person>
+      <person xml:id="heike">
+        <persName>平家</persName>
+        <note>平氏の一門。清盛を棟梁とする。寿永四年に西海で滅びる。氏族名</note>
+      </person>
+      <person xml:id="genke">
+        <persName>源家</persName>
+        <note>源氏の一門。平家滅亡後の世を支配する。氏族名</note>
+      </person>
+      <person xml:id="toshi">
+        <persName>藤氏</persName>
+        <note>藤原氏。成親が都で誅されなかったのは「藤氏一門の考えよう」を憚ったためと語られる。氏族名</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kikaigashima">
+        <placeName>鬼界ヶ島</placeName>
+        <location><geo>30.7864 130.3061</geo></location>
+        <note>俊寛らの流刑地。薩摩硫黄島(鹿児島県三島村)に比定する説によるが所在に諸説あり・伝承地/概値</note>
+      </place>
+      <place xml:id="iwogatake">
+        <placeName>硫黄ヶ岳</placeName>
+        <location><geo>30.7897 130.3081</geo></location>
+        <note>鬼界ヶ島の活火山(薩摩硫黄島の硫黄岳)。常に噴煙を上げ、俊寛は焦熱地獄になぞらえた・概値</note>
+      </place>
+      <place xml:id="satsumagata">
+        <placeName>薩摩潟</placeName>
+        <location><geo>31.4 130.4</geo></location>
+        <note>薩摩の沖の海(歌枕的表現)。鬼界ヶ島はその沖遥かにあると語られる・概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都(平安京)。流人たちが恋い慕う「都」・概値</note>
+      </place>
+      <place xml:id="shishigatani">
+        <placeName>鹿ヶ谷</placeName>
+        <location><geo>35.017 135.793</geo></location>
+        <note>京都東山の鹿ヶ谷(現京都市左京区)。平家打倒の謀議が行われた俊寛の山荘の地・概値</note>
+      </place>
+      <place xml:id="kyogoku">
+        <placeName>京極</placeName>
+        <location><geo>35.01 135.769</geo></location>
+        <note>京の京極(東京極大路一帯、現京都市中京区・下京区の寺町通付近)。俊寛の宿所があった・概値</note>
+      </place>
+      <place xml:id="hosshoji">
+        <placeName>法勝寺</placeName>
+        <location><geo>35.0136 135.7869</geo></location>
+        <note>京都岡崎にあった六勝寺の一(現・京都市左京区岡崎の法勝寺跡)。俊寛が執行を務めた・概値</note>
+      </place>
+      <place xml:id="toba">
+        <placeName>鳥羽</placeName>
+        <location><geo>34.9483 135.7433</geo></location>
+        <note>京南郊の鳥羽(現京都市南区・伏見区)。俊寛が流謫にあたり妻と別れた地・概値</note>
+      </place>
+      <place xml:id="bizen">
+        <placeName>備前</placeName>
+        <location><geo>34.75 134.1</geo></location>
+        <note>旧国名(岡山県東南部)。成親が流された地・概値</note>
+      </place>
+      <place xml:id="kyushu">
+        <placeName>九州</placeName>
+        <location><geo>32.5 130.9</geo></location>
+        <note>九州。作中では「九州」「九国」と表記が揺れる・概値</note>
+      </place>
+      <place xml:id="hizen">
+        <placeName>肥前</placeName>
+        <location><geo>33.25 130.0</geo></location>
+        <note>旧国名(佐賀県・長崎県)。成経の舅の所領がある・概値</note>
+      </place>
+      <place xml:id="kasenosho">
+        <placeName>加瀬の荘</placeName>
+        <note>肥前国の荘園。成経の舅の所領。所在の比定に諸説あるため座標なし</note>
+      </place>
+      <place xml:id="kamakura">
+        <placeName>鎌倉</placeName>
+        <location><geo>35.3192 139.5467</geo></location>
+        <note>神奈川県鎌倉市。「鎌倉にある右府どの」(源頼朝)の所在地として言及・概値</note>
+      </place>
+      <place xml:id="saikai">
+        <placeName>西海</placeName>
+        <note>西海道(九州以西)一帯の海。寿永四年に平家一門が「西海の藻屑となり」と語られる。広域の海域名で代表点を定める意味が乏しいため座標なし</note>
+      </place>
+      <place xml:id="asakayama">
+        <placeName>浅香山</placeName>
+        <note>歌枕。古今和歌集仮名序に手習いの初めの歌として挙げられる「安積山」の別表記。俊寛が妻に字を教える場面で「浅香山の歌」として言及される。陸奥国安積郡(現福島県郡山市)説と摂津・和泉の浅香山説があり所在に諸説あるため座標なし</note>
+      </place>
+      <place xml:id="taiheiyo">
+        <placeName>太平洋</placeName>
+        <note>海洋名。島から望む大洋として言及されるのみで代表点を定める意味が乏しいため座標なし</note>
+      </place>
+      <place xml:id="tengoku">
+        <placeName>天国</placeName>
+        <note>宗教的世界観上の場所(座標なし)。赦免された二人を「天国へ持ち上げる」という比喩で用いられる</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>仏教的世界観上の場所(座標なし)。俊寛を「地獄の底へ押し落した」という比喩で用いられる</note>
+      </place>
+      <place xml:id="shonetsu-jigoku">
+        <placeName>焦熱地獄</placeName>
+        <note>仏教の八大地獄の一(座標なし)。硫黄ヶ岳の噴煙がそれに続くもののように思われたと語られる</note>
+      </place>
+      <place xml:id="jodo">
+        <placeName>浄土</placeName>
+        <note>仏教的世界観上の場所(座標なし)。俊寛が孤島を「唯一の浄土」と観ずる場面で用いられる</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p><date when="1178-09-23"><ruby><rb>治承</rb><rt>じしょう</rt></ruby>二年九月二十三日</date>のことである。</p>
+        <p>もし、それが<placeName ref="#kyoto">都</placeName>であったならば、秋が<ruby><rb>更</rb><rt>た</rt></ruby>けて、変りやすい晩秋の空に、北山<ruby><rb>時雨</rb><rt>しぐれ</rt></ruby>が、折々襲ってくる時であるが、<placeName ref="#satsumagata"><ruby><rb>薩摩潟</rb><rt>さつまがた</rt></ruby></placeName>の沖遥かな<placeName ref="#kikaigashima"><ruby><rb>鬼界</rb><rt>きかい</rt></ruby>ヶ<ruby><rb>島</rb><rt>しま</rt></ruby></placeName>では、まだ秋の初めででもあるように暖かだった。</p>
+        <p>三人の<ruby><rb>流人</rb><rt>るにん</rt></ruby>たちは、海を見下ろす<ruby><rb>砂丘</rb><rt>さきゅう</rt></ruby>の上で、<ruby><rb>日向</rb><rt>ひなた</rt></ruby>ぼっこをしていた。ぽかぽかとした太陽の光に浴していると、ところどころ破れほころびている<ruby><rb>袷</rb><rt>あわせ</rt></ruby>を着ていても、少しも寒くはなかった。</p>
+        <p>四、五日吹き続いた風の名残りが、まだ折々<ruby><rb>水沫</rb><rt>みなわ</rt></ruby>を飛ばす波がしらに現れているものの、空はいっぱいに晴れ渡って、<ruby><rb>漣</rb><rt>さざなみ</rt></ruby>のような白雲が太陽をかすめてたなびいているだけだった。そうした晴れ渡った青空から、少しの慰めも受けないように、三人の流人たちは、疲れ切った獣のように、黙って砂の上に<ruby><rb>蹲</rb><rt>うずくま</rt></ruby>っている。<persName ref="#yasuyori"><ruby><rb>康頼</rb><rt>やすより</rt></ruby></persName>は、さっきから左の手で手枕をして、横になっている。</p>
+        <p><persName ref="#yasuyori">康頼</persName>も<persName ref="#naritsune"><ruby><rb>成経</rb><rt>なりつね</rt></ruby></persName>も<persName ref="#shunkan"><ruby><rb>俊寛</rb><rt>しゅんかん</rt></ruby></persName>も、一年間の孤島生活で、その心も気力も、すっかり叩きのめされてしまっていた。最初、彼らは革命の失敗者として、<persName ref="#kiyomori"><ruby><rb>清盛</rb><rt>きよもり</rt></ruby></persName>を<ruby><rb>罵</rb><rt>ののし</rt></ruby>り、<persName ref="#heike">平家</persName>の一門を呪い、陰謀の周密でなかったことを後悔し、<ruby><rb>悲憤慷慨</rb><rt>ひふんこうがい</rt></ruby>に夜を徹することが多かった。が、一月、二月経つうちに、そうした悲憤慷慨が、結局<placeName ref="#kikaigashima">鬼界ヶ島</placeName>の荒磯に打ち寄する波と同じに、無意味な繰り返しに過ぎないことに気がつくと、もう誰も、そうしたことを口にする勇気も無くしていた。その上に、都会人である彼らに、孤島生活の惨苦が、ひしひしと迫ってきた。毎日のように、水に浸した<ruby><rb>乾飯</rb><rt>ほしい</rt></ruby>や、生乾きの魚肉のあぶったものなどを口にする苦しみが、骨身にこたえてきた。彼らは、そうした苦痛を圧倒するような積極的な心持は、少しも動かない。彼らは苦痛が重なれば重るほど、しょげきってしまい、飯を食うほかは、天気のよい日は<ruby><rb>海浜</rb><rt>かいひん</rt></ruby>の砂地で、雨の降る日は仕方なくその狭い小屋の中で、ただ溜息と愚痴とのうちに、一日一日を過していた。そのうちに三人とも激しい不眠症に襲われた。その中でも、神経質の<persName ref="#yasuyori">康頼</persName>がいちばんひどかった。彼は、夜中眠られない癖がついてしまったので、昼間よく<ruby><rb>仮寝</rb><rt>うたたね</rt></ruby>をする。さっきからも、横になったかと思うと、もうかすかないびきを立てている。長い間、<ruby><rb>剃刀</rb><rt>かみそり</rt></ruby>を当てない<ruby><rb>髯</rb><rt>ひげ</rt></ruby>がぼうぼうとしてその痩せこけた頬を<ruby><rb>掩</rb><rt>おお</rt></ruby>うている。その上、<ruby><rb>褪</rb><rt>あ</rt></ruby>せた唇の<ruby><rb>下端</rb><rt>した</rt></ruby>には、<ruby><rb>涎</rb><rt>よだれ</rt></ruby>が今にも落ちそうに<ruby><rb>湛</rb><rt>たた</rt></ruby>えている。</p>
+        <p><persName ref="#naritsune">成経</persName>は<persName ref="#naritsune">成経</persName>で、<ruby><rb>妖怪</rb><rt>もののけ</rt></ruby>に<ruby><rb>憑</rb><rt>つ</rt></ruby>かれたような、きょとんとした目付きで、晴れた大空を、あてどもなく見ながら、溜息ばかりついている。<persName ref="#shunkan">俊寛</persName>は、一緒に陰謀を企てた連中の、こうした辛抱のない、腑甲斐のない様子を見ていると、自分自身までが情なくなる。陰謀を企てた人間として、いますこしは男らしい、<ruby><rb>毅然</rb><rt>きぜん</rt></ruby>としたところがあってもいい。刑罰のもとに、こうまでへこたれてしまわなくってもいいと思う。彼は、<persName ref="#naritsune">成経</persName>がもう一度溜息をついたら、それを機会に、たしなめてやろうと思いながら、じっと<persName ref="#naritsune">成経</persName>の顔を見据えていたが、<persName ref="#naritsune">成経</persName>はそれと悟ったわけでもあるまいが、くるりと<persName ref="#shunkan">俊寛</persName>の方へ背を向けると、海の方へ向いたまま、これもしばし、まどろむつもりだろう、黙り込んでしまった。</p>
+        <p>二人の友達が黙ってしまうと、<persName ref="#shunkan">俊寛</persName>の心も張合いが抜けたように、淡い悲しみに囚われる。彼にも、島の生活がたまらなく苦痛になってきた。<placeName ref="#kyoto">都</placeName>へ帰りたい。そうした渇きに似た感情で、胸を責められるその上、<persName ref="#naritsune">成経</persName>、<persName ref="#yasuyori">康頼</persName>らの心持と、自分の心持とが日に増しこじれてくることを感じた。人間が、三人集まるときは、きっとその中の二人だけが仲よくなり、一人だけは孤立する傾きのあるものだが、今の場合には、それがことに激しかった。<persName ref="#yasuyori">康頼</persName>も、<persName ref="#naritsune">成経</persName>も、彼らの生存が苦しくなればなるほど、愚痴になってくる。そして、過ぎ去った<ruby><rb>謀反</rb><rt>むほん</rt></ruby>の企てを心のうちで後悔しはじめる。人間はいかなる場合でも、自分を<ruby><rb>怨</rb><rt>うら</rt></ruby>まないで、他人を怨む。そして、陰謀の発頭人であった<persName ref="#saiko"><ruby><rb>西光</rb><rt>さいこう</rt></ruby></persName>を怨む。ひいては<persName ref="#saiko">西光</persName>といちばん親しかった<persName ref="#shunkan">俊寛</persName>を怨む。彼らを、こうした絶海の孤島で<ruby><rb>悶</rb><rt>もだ</rt></ruby>えさせるのは、<persName ref="#kiyomori">清盛</persName>の責任でなくして、本当は、<persName ref="#saiko">西光</persName>が陰謀を発頭したためであるかのようなことをいう。<persName ref="#saiko">西光</persName>の人格や陰謀の動機をよく理解している<persName ref="#shunkan">俊寛</persName>には、彼らのそうした愚痴が、<ruby><rb>癪</rb><rt>しゃく</rt></ruby>に触って仕方がない。彼の神経は、日に増しいらいらする。そうして、何かのはずみから、つい<ruby><rb>気色</rb><rt>けしき</rt></ruby>ばんで、言い争う。二人は<persName ref="#shunkan">俊寛</persName>を煙たく思いはじめる。そして、剛腹な<persName ref="#shunkan">俊寛</persName>に一致して反抗の気勢を示す。そして、お互いに心持を<ruby><rb>荒</rb><rt>すさ</rt></ruby>ませる。</p>
+        <p>この頃、<persName ref="#shunkan">俊寛</persName>はよく、二人が意識して、自分を疎外しているのを感ずる。<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>を採りに行く時でも、海藻を採りに行くときでも、よく二人きりで行ってしまう。その上、三人でいるときでも、二人はよく顔を寄せ合って、ひそひそ話を始める。そんなとき、<persName ref="#shunkan">俊寛</persName>はたまらない<ruby><rb>寂寥</rb><rt>せきりょう</rt></ruby>と不快を感ずる。三人きりの生活では、他の二人に背かれるということは、人間全体から背かれるということと同じことだった。<persName ref="#shunkan">俊寛</persName>は、そうした心苦しさを免れようとして、自分一人で行動してみようかと考えた。が、一日自分一人で、離れていると、激しい寂しさに襲われる。そして、意気地なく<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>との所へ帰ってくる。そして再び、不快な感情のうちに、心を傷つけながら生活していく。</p>
+        <p>今朝も、<placeName ref="#shishigatani"><ruby><rb>鹿</rb><rt>しし</rt></ruby>ヶ<ruby><rb>谷</rb><rt>たに</rt></ruby></placeName>の会合の発頭人は誰だということで、<persName ref="#shunkan">俊寛</persName>は<persName ref="#naritsune">成経</persName>とかなり激しい口論をした。<persName ref="#naritsune">成経</persName>は、真の発頭人は<persName ref="#saiko">西光</persName>だといった。だから、<persName ref="#saiko">西光</persName>だけは、<persName ref="#kiyomori"><ruby><rb>平相国</rb><rt>へいそうこく</rt></ruby></persName>がすぐ斬ったではないかといった。<persName ref="#shunkan">俊寛</persName>は、いな<ruby><rb>御身</rb><rt>おんみ</rt></ruby>の父の<persName ref="#narichika"><ruby><rb>成親</rb><rt>なりちか</rt></ruby>卿</persName>こそ、真の発頭人である。<persName ref="#kiyomori">清盛</persName>が、御身の父を<placeName ref="#kyoto">都</placeName>で失わなかったのは、<persName ref="#toshi"><ruby><rb>藤氏</rb><rt>とうし</rt></ruby></persName>一門の考えようを、<ruby><rb>憚</rb><rt>はばか</rt></ruby>ったからである。その証拠には、<placeName ref="#bizen">備前</placeName>へ流されるとすぐ人知れず殺されたではないかといった。父のことを、悪しざまにいわれたので、日頃は言葉すくない<persName ref="#naritsune">成経</persName>も、烈火のように激して、<persName ref="#shunkan">俊寛</persName>と一刻近くも激しく言い争った。二人が、口論に疲れて、傷つけられた胸を懐きながら、黙ってしまうまで。</p>
+        <p><persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>とが、横になっているいぎたない様子を見ていると、<persName ref="#shunkan">俊寛</persName>は意地にもその真似をする気にはなれなかった。彼は、胸のうちの寂しさとむしゃくしゃした<ruby><rb>鬱懐</rb><rt>うっかい</rt></ruby>とをもらすところのないままに、腕組をして、じっと考える。すると、いつもの癖であるように、妻の<persName ref="#matsunomae">松の前</persName>や、娘の<persName ref="#tsurunomae">鶴の前</persName>の姿がまばろしのように、胸の中に浮んでくる。それから、<placeName ref="#kyogoku">京極</placeName>の宿所の<ruby><rb>釣殿</rb><rt>つりどの</rt></ruby>や、<placeName ref="#shishigatani">鹿ヶ谷</placeName>の山荘の<ruby><rb>泉石</rb><rt>せんせき</rt></ruby>のたたずまいなどが、<ruby><rb>髣髴</rb><rt>ほうふつ</rt></ruby>として思い出される。都会生活に対するあこがれが心を<ruby><rb>爛</rb><rt>ただ</rt></ruby>らせる。たくさん使っていた<ruby><rb>下僕</rb><rt>しもべ</rt></ruby>の一人でもが、今<ruby><rb>侍</rb><rt>かしず</rt></ruby>いていてくれればなどと思う。</p>
+        <p><persName ref="#shunkan">俊寛</persName>が、こうした回想に<ruby><rb>耽</rb><rt>ふけ</rt></ruby>っているとき、寝入っていたと思った<persName ref="#naritsune">成経</persName>が急に立ち上った。彼は、悲鳴とも歓声ともつかない声を出したかと思うと、砂丘を海の方へ一散に駆け降りた。</p>
+        <p>彼は、波打<ruby><rb>際</rb><rt>ぎわ</rt></ruby>に立つと、躍るように両手を打ち振った。</p>
+        <p>「判官どの。白帆にて候ぞ。白帆にて候ぞ」</p>
+        <p>そういって、<persName ref="#yasuyori">康頼</persName>に知らせると、また悲鳴のような声をあげながら、浜辺を北へ北へと走った。</p>
+        <p><persName ref="#yasuyori">康頼</persName>も、あわただしい声にすぐ起き上った。<persName ref="#shunkan">俊寛</persName>も、白帆だときくと、すぐ立ち上らずにはいられなかったが、白帆が見えるといって<persName ref="#naritsune">成経</persName>が浜辺を走ったことは、これまでに二、三度あった。彼はよく白雲の影を白帆と間違えたり、波間に浮ぶ白鳥から、白帆の幻影を見た。</p>
+        <p><persName ref="#yasuyori">康頼</persName>は、さすがにすぐ後に続いて走ったが、<persName ref="#shunkan">俊寛</persName>はまたかと思いながら、無言のまま、跡からついて行った。<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>とは砂浜を根よく走りつづけた。<persName ref="#shunkan">俊寛</persName>も、彼らの熱心な走り方を見ると、自分の足並みが、いつの間にか、急ぎ足になるのをどうともすることができなかった。</p>
+        <p>そのうちに、疑い深い<persName ref="#shunkan">俊寛</persName>の瞳にも、遥かかなたの水平線に、波に浮んでいる白千鳥のように、白い帆をいっぱいに張りながら、折柄の微風に、動くともなく近づいて来る船の姿が映らずにはいなかった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>も、狂気のように走り出した。三人は半町ばかり隔りながら、懸命に走った。お互いに立ち止って待ち合せる余裕などはなかった。走るに従って、白帆もだんだん近づいて来るのだった。それは、<placeName ref="#kyushu">九州</placeName>から硫黄を買いに来る船のような小さい船ではなかった。</p>
+        <p><persName ref="#naritsune">成経</persName>は、感激のために泣きながら走っている。<persName ref="#yasuyori">康頼</persName>もそうだった。<persName ref="#shunkan">俊寛</persName>も、胸が熱くるしくなって、<ruby><rb>目頭</rb><rt>めがしら</rt></ruby>が妙にむずがゆくなってくるのを感じた。見ると、船の<ruby><rb>舳</rb><rt>へさき</rt></ruby>には、一流の赤旗がへんぽんと<ruby><rb>翻</rb><rt>ひるがえ</rt></ruby>っている。<persName ref="#heike">平家</persName>の兵船だと思うと、その船に<ruby><rb>赦免</rb><rt>しゃめん</rt></ruby>の使者が乗っていることが三人にすぐ感ぜられた。</p>
+        <p>船は、<ruby><rb>流人</rb><rt>るにん</rt></ruby>たちの姿を見ると、舳を岸の方へ向けて、帆をひたひたと下ろしはじめた。やがて、船は岸から三反とない沖へ<ruby><rb>錨</rb><rt>いかり</rt></ruby>を投げる。三人は岸辺に立ちながら、声を合せて<ruby><rb>欣</rb><rt>よろこ</rt></ruby>びの声をあげた。さすがに、<persName ref="#shunkan">俊寛</persName>をも除外しないで、三人は、手をとりあったまま、声をあげて泣きはじめたのである。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p>船は、流人たちの期待に<ruby><rb>背</rb><rt>そむ</rt></ruby>かず、<persName ref="#kiyomori">清盛</persName>からの赦免の使者、<persName ref="#motoyasu"><ruby><rb>丹左衛門尉基康</rb><rt>たんさえもんのじょうもとやす</rt></ruby></persName>を乗せていた。が、<persName ref="#motoyasu">基康</persName>の持っていた<persName ref="#kiyomori">清盛</persName>の教書は、<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>とを<placeName ref="#tengoku">天国</placeName>へ持ち上げるとともに、<persName ref="#shunkan">俊寛</persName>を<placeName ref="#jigoku">地獄</placeName>の底へ押し落した。<persName ref="#shunkan">俊寛</persName>は、狂気のように、その教書を<persName ref="#motoyasu">基康</persName>の手から奪い取って、血走る目を注いだけれども、そこには<persName ref="#shunkan">俊寛</persName>とも<ruby><rb>僧都</rb><rt>そうず</rt></ruby>とも書いてはなかった。<persName ref="#shunkan">俊寛</persName>は、激昂のあまり、最初は使者を<ruby><rb>罵</rb><rt>ののし</rt></ruby>った。<persName ref="#shunkan">俊寛</persName>の名が漏れたのは、使者の怠慢であるといいつのった。が、<persName ref="#motoyasu">基康</persName>が、その<ruby><rb>鋒鋩</rb><rt>ほうぼう</rt></ruby>を避けて相手にしないので、今度は自分を捨てて行こうとする<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>に食ってかかった。そして、<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>とを卑怯者であり、裏切者であると罵倒した。<persName ref="#naritsune">成経</persName>が、それに堪えかねて、二<ruby><rb>言</rb><rt>こと</rt></ruby>三<ruby><rb>言</rb><rt>こと</rt></ruby>言葉を返すと、<persName ref="#shunkan">俊寛</persName>はすぐかっとなって、<persName ref="#naritsune">成経</persName>に<ruby><rb>掴</rb><rt>つか</rt></ruby>みかかろうとして、<persName ref="#motoyasu">基康</persName>の手の者に、取りひしがれた。</p>
+        <p>それから後、幾時間かの間の<persName ref="#shunkan">俊寛</persName>の憤りと悲しみと、恥とは<ruby><rb>喩</rb><rt>たと</rt></ruby>えるものもなかった。彼は、目の前で、<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>とがその<ruby><rb>垢</rb><rt>あか</rt></ruby>じみた衣類を脱ぎ捨てて、<placeName ref="#kyoto">都</placeName>にいる縁者から贈られた真新しい衣類に着替えるのを見た。嬉し涙をこぼしながら、親しい者からの消息を読んでいるのを見た。が、重科を赦免せられない<persName ref="#shunkan">俊寛</persName>には、一通の<ruby><rb>玉章</rb><rt>たまずさ</rt></ruby>をさえ受くることが許されていなかった。<persName ref="#shunkan">俊寛</persName>は、砂を噛み、土を掻きむしりながら、泣いた。</p>
+        <p>船は、飲料水と野菜とを積み込み、<persName ref="#naritsune">成経</persName>と<persName ref="#yasuyori">康頼</persName>とを収めると、手を合わして乗船を哀願する<persName ref="#shunkan">俊寛</persName>を浜辺に押し倒したまま、岸を離れた。</p>
+        <p>そして、<persName ref="#shunkan">俊寛</persName>をもっと苦しめるための故意からするように、三反ばかりの沖合に錨を投げて、そこで一夜を明かすのであった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、終夜浜辺に立って、叫びつづけた。最初は罵り、中途では哀願し、最後には、たわいもなく泣き叫んだ。</p>
+        <p>「判官どの、のう！　今一言申し残せしことの候ぞ。小舟なりとも寄せ候え」</p>
+        <p>「<persName ref="#motoyasu">基康</persName>どの、僧都をあわれと<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>さば、せめて<placeName ref="#kyushu">九<ruby><rb>国</rb><rt>ごく</rt></ruby></placeName>の端までも、送り届け得させたまえ」</p>
+        <p>が、<persName ref="#shunkan">俊寛</persName>の声は、<ruby><rb>渚</rb><rt>なぎさ</rt></ruby>を吹く海風に吹き払われて、船へはすこしもきこえないのだろう。闇の中に、一の灯もなく黒く<ruby><rb>纜</rb><rt>もや</rt></ruby>っている船からは、応という一声さえなかった。</p>
+        <p>夜が<ruby><rb>更</rb><rt>ふ</rt></ruby>くるにつけ、<persName ref="#shunkan">俊寛</persName>の声は、かすれてしまった。おしまいには、傷ついた海鳥が泣くようなかすかな悲鳴になってしまった。が、どんなに声がかすれても、根よく叫びつづけた。</p>
+        <p>そのうちに、夜はほのぼのと明けていった。朝日が<ruby><rb>渺々</rb><rt>びょうびょう</rt></ruby>たる波のかなたに昇ると、船はからからと錨を揚げ、帆を朝風にばたばたと<ruby><rb>靡</rb><rt>なび</rt></ruby>かせながら巻き上げた。<persName ref="#shunkan">俊寛</persName>は、最後の叫び声をあげようとしたけれども、声はすこしも<ruby><rb>咽喉</rb><rt>のど</rt></ruby>から出なかった。船の上には、右往左往する<ruby><rb>水夫</rb><rt>かこ</rt></ruby>どもの姿が見えるだけで、<persName ref="#naritsune">成経</persName>、<persName ref="#yasuyori">康頼</persName>はもとより、<persName ref="#motoyasu">基康</persName>も姿を現さない。</p>
+        <p>見る間に船は、滑るように動き出した。もう、乗船の望みは、すこしも残ってはいなかったが、それでも<persName ref="#shunkan">俊寛</persName>は船を追わずにはいられなかった。船は、島に添いながら、北へ北へと走る。<persName ref="#shunkan">俊寛</persName>は、それを狂人のように、こけつまろびつ追った。が、三十町も走ると、そこは島の北端である。そこからは、翼ある身にあらざれば追いかけることができない。折から、風は吹きつのった。船の帆は、張り裂けるように、風を<ruby><rb>孕</rb><rt>はら</rt></ruby>んだ。船は見る見るうちに小さくなっていく。<persName ref="#shunkan">俊寛</persName>は、岸壁の上に立ちながら、身を悶えた。もう声は、すこしも出ない。ただ、獣のように岸壁の上で狂い回るだけだった。</p>
+        <p>船は、<persName ref="#shunkan">俊寛</persName>の苦悶などには、なんの容赦もなく、半刻も経たないうちに、水平線に<ruby><rb>漂</rb><rt>ただよ</rt></ruby>う白雲のうちに、紛れ込んでしまった。船の姿を見失ったとき、<persName ref="#shunkan">俊寛</persName>は絶望のために、<ruby><rb>昏倒</rb><rt>こんとう</rt></ruby>した。昨夜来叫びつづけた疲労が一時に発したのだろう、そのまま茫として眠り続けた。</p>
+        <p>彼は、その岸壁の上で、昏倒したまま、何時間眠っていたかは、自分にも分からなかった。一度目覚めたときは、夜であった。彼は、自分の頭の上の大空が、大半は暗い雲に覆われて、そのわずかな切れ目から、二、三の星が<ruby><rb>瞬</rb><rt>またた</rt></ruby>いているのを見た。彼は激しい渇きと、全身を砕くような<ruby><rb>疼痛</rb><rt>とうつう</rt></ruby>を感じた。</p>
+        <p>彼は、水を飲みたいと思いながら、周囲を見回した。が、岸壁の背後は、すぐ<ruby><rb>磽确</rb><rt>ぎょうかく</rt></ruby>な山になっているらしく、小川とか泉とかが、ありそうに思えなかった。それでも、激しい渇きは、彼を一刻もじっとしていさせなかった。彼は、寝ていた岩から、身を<ruby><rb>剥</rb><rt>は</rt></ruby>がすようにして立ち上った。立ち上るとき、身体のもろもろの関節が、音を立てて<ruby><rb>軋</rb><rt>きし</rt></ruby>るように思った。彼は、それでも<ruby><rb>這</rb><rt>は</rt></ruby>うようにして、岸壁を降りることができた。彼は昼間（それは昨日であるのか一昨日であるのか分からなかったが）夢中で走った道を、二町ばかり引返した。彼は、昼間そこを走ったとき、<ruby><rb>榕樹</rb><rt>ようじゅ</rt></ruby>が五、六本生えていて、その根に危く<ruby><rb>躓</rb><rt>つまず</rt></ruby>きそうになったのを覚えていた。彼の濁ってしまっている頭の中でも、榕樹の周囲を探せば水があるかも知れないという考えが、ぼんやり浮んでいた。</p>
+        <p>が、榕樹の生えている周囲を、海の水あかりで、二、三度探して回ってみたけれども、そこらは一面に<ruby><rb>唐竹</rb><rt>からたけ</rt></ruby>が密生しているだけで、水らしいものは、すこしも見当らない。<persName ref="#shunkan">俊寛</persName>は、その捜索に残っていた精力を使いつくして、崩れるように地上へ横たわると、再び昏々として眠りはじめた。</p>
+        <p>二度目に目が覚めたとき、それは朝だった。疲れ<ruby><rb>萎</rb><rt>しな</rt></ruby>びている<persName ref="#shunkan">俊寛</persName>の頬にも、朝の微風が快かった。彼が目を開くと、自分の身体の上に茂り重っている<ruby><rb>蒼々</rb><rt>そうそう</rt></ruby>たる榕樹の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>を洩れたすがすがしい朝の日光が、美しい幾条の<ruby><rb>縞</rb><rt>しま</rt></ruby>となって、自分の身体に注いているのを見た。さすがに、しばらくの間は、清らかな気持がした。が、すぐ二、三日来の出来事が、悪夢のように帰ってき、そして激しい渇きを感じたので、彼はよろよろと立ち上った。それでも、<ruby><rb>縹渺</rb><rt>ひょうびょう</rt></ruby>と<ruby><rb>無辺際</rb><rt>むへんざい</rt></ruby>に広がっている海を、未練にももう一度見直さずにはいられなかった。が、<ruby><rb>群青色</rb><rt>ぐんじょういろ</rt></ruby>にはろばろと続いている<placeName ref="#taiheiyo">太平洋</placeName>の上には、<ruby><rb>信天翁</rb><rt>あほうどり</rt></ruby>の一群が、飛び<ruby><rb>交</rb><rt>こ</rt></ruby>うているほかは、何物も見えない。<persName ref="#naritsune">成経</persName>や<persName ref="#yasuyori">康頼</persName>を乗せた船が、今まで視野の中に止っているはずはなかった。</p>
+        <p>彼が再び地上に身を投げたとき、身を焼くような渇きと餓えとが、激しく身に迫ってきた。</p>
+        <p>彼は、赦免の船が来て以来、何も食っていないのだった。<persName ref="#motoyasu">基康</persName>はさすがに彼をあわれがって、船の中で<ruby><rb>炊</rb><rt>かし</rt></ruby>いだ飯を持って来てくれたのであるが、<ruby><rb>瞋恚</rb><rt>しんい</rt></ruby>の火に心を<ruby><rb>焦</rb><rt>こが</rt></ruby>していた<persName ref="#shunkan">俊寛</persName>は、その久しぶりの珍味にも目もくれないで、<ruby><rb>水夫</rb><rt>かこ</rt></ruby>の手から、それを地上に叩き落とした。むろん、今でも自分の小屋まで帰れば<ruby><rb>乾飯</rb><rt>ほしい</rt></ruby>もたくさん残っている。が、<persName ref="#shunkan">俊寛</persName>には一里に近い道を歩く勇気などは、残っていなかった。</p>
+        <p>激しい渇きと餓えとは、彼の心を<ruby><rb>荒</rb><rt>すさ</rt></ruby>ませ、自殺の心を起させた。彼は、目の前の海に身を投げることを考えた。そうして、なぜ<persName ref="#motoyasu">基康</persName>の船がいるうちに、死ななかったかを後悔した。<persName ref="#motoyasu">基康</persName>や、あの裏切者の<persName ref="#naritsune">成経</persName>や<persName ref="#yasuyori">康頼</persName>の目前で死んだならば、すこしは<ruby><rb>腹癒</rb><rt>はらい</rt></ruby>せにもなるのだったと思った。今死んでは犬死にであると思った。が、死のうという心は変らなかった。<ruby><rb>帰洛</rb><rt>きらく</rt></ruby>の望みを永久に断たれながら暮していくことは、彼には堪えられなかった。二十間ばかり向こうの岸に、一つの岩があり、その下の水が、ことさらに深いように見えた。</p>
+        <p>彼が、決心して立ち上ったとき、彼はふと水の匂いを嗅いだ。それは、<ruby><rb>真水</rb><rt>まみず</rt></ruby>の匂いであった。極度に渇している彼の鼻は、犬のように鋭くなっているのだった。彼は、水の匂いを嗅ぐと、その方角へ本能的に走り出した。唐竹の林の中を、彼は獣のように<ruby><rb>潜</rb><rt>くぐ</rt></ruby>った。十問ばかり潜ったとき、その林が尽きて、そこから岩山が<ruby><rb>聳</rb><rt>そび</rt></ruby>えていた。</p>
+        <p>ふと、そこに、大きい岩を<ruby><rb>背後</rb><rt>うしろ</rt></ruby>にして、この島には珍しい<ruby><rb>椰子</rb><rt>やし</rt></ruby>の木が、十本ばかり生えているのを見た。そしてその椰子に覆われた<ruby><rb>鳶色</rb><rt>とびいろ</rt></ruby>の岩から、一条の水が銀の糸のように<ruby><rb>滴</rb><rt>したた</rt></ruby>って、それが椰子の根元で、小さい泉になっているのを見た。水は、浅いながらに澄み切って、沈んでいる木の葉さえ、一々に数えられた。渇し切っている<persName ref="#shunkan">俊寛</persName>は、犬のようにつくばって、その冷たい水を思い切りがぶがぶ飲んだ。それが、なんという快さであっただろう。それは、彼が<placeName ref="#shishigatani">鹿ヶ谷</placeName>の山荘で飲んだいかなる美酒にも<ruby><rb>勝</rb><rt>まさ</rt></ruby>っていた。彼が、その<ruby><rb>清冽</rb><rt>せいれつ</rt></ruby>な水を味わっている間は、<persName ref="#kiyomori">清盛</persName>に対する怨みも、島にただ一人残された悲しみも、忘れ果てたようにすがすがしい気持だった。彼は、<ruby><rb>蘇</rb><rt>よみがえ</rt></ruby>ったような気持になって立ち上った。そして、椰子の梢を見上げた。すると、梢に大きい実が二つばかり<ruby><rb>生</rb><rt>な</rt></ruby>っているのを見た。<persName ref="#shunkan">俊寛</persName>は、疲労を忘れて、猿のようによじ登った。それを叩き落すと、そばの岩で打ち砕き、思うさま<ruby><rb>貪</rb><rt>むさぼ</rt></ruby>り食った。</p>
+        <p>彼は、生れて以来、これほどのありがたさと、これほどのうまさとで、飲食したことはなかった。彼は椰子の実の汁を吸っていると、自分の今までの生活が夢のように淡く薄れていくのを感じた。<persName ref="#kiyomori">清盛</persName>、<persName ref="#heike">平家</persName>の一門、<persName ref="#naritsune"><ruby><rb>丹波少将</rb><rt>たんばのしょうしょう</rt></ruby></persName>、<persName ref="#yasuyori"><ruby><rb>平判官</rb><rt>たいらのはんがん</rt></ruby></persName>、<persName ref="#motoyasu"><ruby><rb>丹左衛門尉</rb><rt>たんさえもんのじょう</rt></ruby></persName>、そんな名前や、そんな名前に対する自分の感情が、この口の中のすべてを、否、心の中のすべてを溶かしてしまうような木の実の味に比べて、まったく空虚なつまらないもののような気がしはじめた。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、口の中に残る快い感覚を楽しみながら、泉のほとりの青草の上に寝た。そして、過去の自分の生活のいろいろな<ruby><rb>相</rb><rt>そう</rt></ruby>を、心の中に思い出してみた。<placeName ref="#kyoto">都</placeName>におけるいろいろな暗闘、<ruby><rb>陥擠</rb><rt>かんせい</rt></ruby>、戦争、権勢の争奪、それからくる嫉妬、反感、憎悪。そういう感情の動くままに、<ruby><rb>狂奔</rb><rt>きょうほん</rt></ruby>していた自分のあさましさが、しみじみ分かったような気がした。船を追って狂奔した昨日の自分までが、<ruby><rb>餓鬼</rb><rt>がき</rt></ruby>のようにあさましい気がした。<ruby><rb>煩悩</rb><rt>ぼんのう</rt></ruby>を起す種のないこの絶海の孤島こそ、自分にとって唯一の<placeName ref="#jodo">浄土</placeName>ではあるまいか。<persName ref="#yasuyori">康頼</persName>や<persName ref="#naritsune">成経</persName>がそばにいたために、<placeName ref="#kyoto">都</placeName>の生活に対する、否、人生に対する執着が切れなかったのだ。この島を仮のすみかと思えばこそ、<placeName ref="#iwogatake">硫黄ヶ岳</placeName>に立つ煙さえ、<placeName ref="#shonetsu-jigoku">焦熱地獄</placeName>に続くもののように、ものうく思われたのだ。こここそ、ついのすみかだ。あらゆる煩悩と執着とを断って、<ruby><rb>真如</rb><rt>しんにょ</rt></ruby>の生活に入る道場だ。そう思い返すと、<persName ref="#shunkan">俊寛</persName>は生れ変ったような、ほがらかな気持がした。</p>
+        <p>ふと、寝がえりを打つと、すぐ自分の鼻の先に、<ruby><rb>撫子</rb><rt>なでしこ</rt></ruby>に似た真っ赤な花が咲いていた。それは、<ruby><rb>都人</rb><rt>みやこびと</rt></ruby>の彼には、名も知れない花だった。が、その花の<ruby><rb>真紅</rb><rt>しんく</rt></ruby>の花弁が、なんという美しさと、清らかさを持っていたことだろう。その花を、じっと見詰めていると、人間のすべてから知られないで、美しく<ruby><rb>香</rb><rt>にお</rt></ruby>っている、こうした名も知れない花の生活といったようなものが考えられた。すると、孤島の流人である自分の生活でさえ、むげに生甲斐のないものだとは思われなくなった。彼は、自殺しようとした自分の心のあさはかさを恥じた。彼の心には、今新しい力が湧いた。彼は勇躍して立ち上った。そして、海岸へ走り出た。いつもは、魂も<ruby><rb>眩</rb><rt>くら</rt></ruby>むようにものうく思われた大洋が、なんと美しく輝いていたことだろう。十分昇り切った朝の太陽のもとに、<ruby><rb>紺碧</rb><rt>こんぺき</rt></ruby>の潮が後から後から湧くように躍っていた。海に接している砂浜は<ruby><rb>金色</rb><rt>こんじき</rt></ruby>に輝き、飛び交うている<ruby><rb>信天翁</rb><rt>あほうどり</rt></ruby>の翼から銀の光を発するかと疑われ、いつもは見ることを厭っていた<placeName ref="#iwogatake">硫黄ヶ岳</placeName>に立つ煙さえ、今朝は澄み渡った朝空に、<ruby><rb>琥珀色</rb><rt>こはくいろ</rt></ruby>に優にやさしくたなびいている。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、<ruby><rb>童</rb><rt>わらべ</rt></ruby>のようなのびやかな心になりながら、両手を差し広げ、童のように叫びながら自分の小屋へ駆け戻った。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p>島に来て以来一年の間、<persName ref="#shunkan">俊寛</persName>の生活は、<persName ref="#naritsune">成経</persName>や<persName ref="#yasuyori">康頼</persName>との昔物語から、謀反の話をして、おしまいにはお互いの境遇を嘆き合うか、でなければ、砂丘の上などに登りながら、<ruby><rb>波路</rb><rt>なみじ</rt></ruby>遥かな<placeName ref="#kyoto">都</placeName>を<ruby><rb>偲</rb><rt>しの</rt></ruby>んで溜息をつきながら、一日を茫然と過ごしてしまうのであったが、<persName ref="#shunkan">俊寛</persName>はそうした生活を根本から改めようと決心した。</p>
+        <p>彼は、つとめて<placeName ref="#kyoto">都</placeName>のことを考えまいとした。従って、<persName ref="#naritsune">成経</persName>や<persName ref="#yasuyori">康頼</persName>のことを考えまいとした。彼は、<persName ref="#naritsune">成経</persName>や<persName ref="#yasuyori">康頼</persName>が親切に残して置いてくれた<ruby><rb>狩衣</rb><rt>かりぎぬ</rt></ruby>や<ruby><rb>刺貫</rb><rt>さしつら</rt></ruby>を、海中へ取り捨てた。長い生活の間には、衣類に困るのは分かりきっていた。が、困ったら、土人のように木の皮を身に<ruby><rb>纏</rb><rt>まと</rt></ruby>うても差支えないと考えた。</p>
+        <p>その上、三人でいた間は、<placeName ref="#hizen"><ruby><rb>肥前</rb><rt>ひぜん</rt></ruby></placeName>の<ruby><rb>国</rb><rt>くに</rt></ruby><placeName ref="#kasenosho"><ruby><rb>加瀬</rb><rt>かせ</rt></ruby>の<ruby><rb>荘</rb><rt>しょう</rt></ruby></placeName>にある<persName ref="#naritsune">成経</persName>の<ruby><rb>舅</rb><rt>しゅうと</rt></ruby>から<persName ref="#heike">平家</persName>の目を忍んでの仕送りで、ほそぼそながら、<ruby><rb>朝夕</rb><rt>ちょうせき</rt></ruby>の食に事を欠かなかった。そのためでもあるが、三人は<ruby><rb>大宮人</rb><rt>おおみやびと</rt></ruby>の習慣を持ちつづけて、なすこともなく、毎日暮していた。<persName ref="#shunkan">俊寛</persName>は、そうした生活を改め、自分で<ruby><rb>漁</rb><rt>すなど</rt></ruby>りし、自分で狩りし、自分で<ruby><rb>耕</rb><rt>たがや</rt></ruby>すことを考えた。</p>
+        <p>彼は、そういう生活に入る第一歩として、<persName ref="#naritsune">成経</persName>や<persName ref="#yasuyori">康頼</persName>の記憶がつきまとっている今までの小屋を焼き捨て、自分で発見したあの泉の<ruby><rb>畔</rb><rt>ほとり</rt></ruby>に、新しい家を自分で建てることを考えた。</p>
+        <p>彼は、その日から、泉に近い山林へ入って、木を伐った。彼が持っている道具は、一挺の小さい<ruby><rb>鉞</rb><rt>まさかり</rt></ruby>と二本の小太刀であった。周囲が一尺もある木は、伐り倒すのに四<ruby><rb>半刻</rb><rt>はんどき</rt></ruby>近くかかった。が、彼が<ruby><rb>額</rb><rt>ひたい</rt></ruby>に汗を流しながら、その幹に鉞を打込むとき、彼は名状しがたい壮快な気持がする。<persName ref="#kiyomori">清盛</persName>に対する怨みなどは、そうした瞬間、泡のように彼の頭から消え去っている。そして、その木が鉞の<ruby><rb>幾落下</rb><rt>いくらっか</rt></ruby>によって、力尽き、地を揺がせて倒れるとき、<persName ref="#shunkan">俊寛</persName>の焼けた顔には、会心の<ruby><rb>微笑</rb><rt>えみ</rt></ruby>が浮ぶ。彼は、そうして伐り倒した木の枝を払い、一本ずつやっとの思いで、泉の畔に引いてくる。彼は、その<ruby><rb>粗</rb><rt>ラフ</rt></ruby>な丸太を地面に立て、柱とした。小太刀や鉞で穴を掘ることは、かなり骨が折れた。ことに、そういう仕事に用いることで、これから先の生活にどんな必要であるかもしれない道具が破損することを、恐れねばならなかった。屋根は、唐竹で<ruby><rb>葺</rb><rt>ふ</rt></ruby>いた。この島の大部分を覆うている唐竹は、屋根を葺くのには、藁よりもはるかに秀れていた。木の枝を、横にいくつも並べて壁にした。そして、近所から<ruby><rb>粘</rb><rt>ねば</rt></ruby>い土を見出して、その上から<ruby><rb>塗抹</rb><rt>とまつ</rt></ruby>した。彼は、この新しい家を建てるために、二十日ばかりもかかった。が、彼は自分の住む家を自分で建てることが、どんなに楽しみの仕事であるかが分かった。その間、<persName ref="#kiyomori">清盛</persName>に対する怨みや、妻子に対する恋しさが、焼くように胸に迫ることがある。そんなとき、彼は常よりも二倍も三倍も激しく働く。むろん、島に夕暮が来て、日が<ruby><rb>荒寥</rb><rt>こうりょう</rt></ruby>たる<placeName ref="#iwogatake">硫黄ヶ岳</placeName>のかなたに落ち、唐竹の林に風が騒ぎ、名も知れない海鳥が鳴くときなど、灯もない小屋の中に<ruby><rb>蹲</rb><rt>うずくま</rt></ruby>っている<persName ref="#shunkan">俊寛</persName>に、身を裂くような寂しさが襲ってくる。が、昼間の激しい労働が産む疲労は、すぐ彼をそうした寂しさから救ってくれ、そして彼に安らかな眠りを与えてくれる。</p>
+        <p>新しい小屋ができたとき、彼はその次には、食物のことを考えた。三人で食い残した<ruby><rb>乾飯</rb><rt>ほしい</rt></ruby>は、まだ二月、三月は、<persName ref="#shunkan">俊寛</persName>一人を支えることができた。が、<persName ref="#naritsune">成経</persName>がいなくなった今は、<persName ref="#naritsune">成経</persName>の舅から仕送りがあるはずはなかった。今は、自分で食物を耕し作るよりほかはなかった。<persName ref="#shunkan">俊寛</persName>は、新しい小屋から、二町ばかり隔った所に、やや開けた土地があり、<placeName ref="#iwogatake">硫黄ヶ岳</placeName>に遠いために硫黄の気がすこしもないことを知った。</p>
+        <p>彼は、そこを冬の間に開墾し、春が来れば麦を植えようと思った。が、差し当っては、<ruby><rb>漁</rb><rt>すなど</rt></ruby>りと狩をするほかに、食料を得る道はなかった。</p>
+        <p>彼は、<ruby><rb>堅牢</rb><rt>けんろう</rt></ruby>な唐竹を伐って、それに<ruby><rb>蔓</rb><rt>つる</rt></ruby>を張って弓にした。矢は、細身の唐竹を用い、矢尻は鋭い魚骨を用いた。本土ならば、こうした矢先にかかる鳥は一羽もいなかっただろうが、この島に住んでいる<ruby><rb>里鳩</rb><rt>さとばと</rt></ruby>、<ruby><rb>唐鳩</rb><rt>からばと</rt></ruby>、<ruby><rb>赤髭</rb><rt>あかひげ</rt></ruby>、<ruby><rb>青鷺</rb><rt>あおさぎ</rt></ruby>などは、<persName ref="#shunkan">俊寛</persName>の近づくのをすこしも恐れなかった。半日、山や海岸を駆け回ると、運び切れないほどの獲物があった。</p>
+        <p>今までの彼は、狩はともかく、<ruby><rb>漁</rb><rt>すなど</rt></ruby>りはむげに卑しいことだと思っていた。ひたすらに都会生活に憧れていた彼は、そうしたことを真似てみようという気は起らなかった。が、現在の彼は、土人に習って漁りをしてみようと考えた。その頃の島は、<ruby><rb>鰻</rb><rt>うなぎ</rt></ruby>を取る季節であった。<ruby><rb>永良部鰻</rb><rt>えらぶうなぎ</rt></ruby>は、秋から冬にかけて島の海岸の暖かい海水を慕って来て、そこへ卵を産むのであった。土人は、海水の中に身を浸してそれを手捕りにした。<persName ref="#shunkan">俊寛</persName>も、それに習った。最初は、いくど<ruby><rb>掴</rb><rt>つか</rt></ruby>んでも掴み損ねた。土人は、あやしい言葉で何かいいながら、<persName ref="#shunkan">俊寛</persName>をわらった。が、<persName ref="#shunkan">俊寛</persName>は屈しなかった。三日ばかりも、根よく続けて試みているうちに、<ruby><rb>魯鈍</rb><rt>ろどん</rt></ruby>で、いちばん不幸な鰻が、<persName ref="#shunkan">俊寛</persName>の手にかかる。五日と経ち、七日と経つうちに、どんな敏捷な鰻でも<persName ref="#shunkan">俊寛</persName>の手から逃れることができなくなってくる。彼は、何十匹と<ruby><rb>獲</rb><rt>え</rt></ruby>た鰻のあごに蔓を通し、それを肩に担ぐ。蔓が、肩に食い入るように重い。が、自分が獲ったのであると思うと、一匹だって、捨てる気はしない。小屋へ帰ってから、彼は小太刀で腹を<ruby><rb>割</rb><rt>さ</rt></ruby>き、<ruby><rb>腸</rb><rt>わた</rt></ruby>を去ってから、それを<ruby><rb>日向</rb><rt>ひなた</rt></ruby>へ乾す。半月ばかり鰻を取っているうちに、小屋の周囲は乾した鰻でいっぱいになる。そのうちに、鰻の取れる季節は、過ぎ去ってしまう。そして、冬が来た。冬の間、<persName ref="#shunkan">俊寛</persName>は畑を作ることに、一生懸命になった。彼は、まず畑のために選定した彼の<ruby><rb>広闊</rb><rt>こうかつ</rt></ruby>な土地へ、火を放った。そして、雑草や<ruby><rb>灌木</rb><rt>かんぼく</rt></ruby>を焼き払った。それから、焼き残った木の根を掘返し、岩や小石を取去った。彼の鉞は、今度は<ruby><rb>鍬</rb><rt>くわ</rt></ruby>の用をした。道具がないために、彼の仕事は<ruby><rb>捗</rb><rt>はかど</rt></ruby>らなかった。土人の所に行けば、鍬に似たものがあるのを知っていた。が、報酬なしに土人が何物をも貸さないことを知っていた。が、彼の精根は、そうしたものに、すべて打ち<ruby><rb>克</rb><rt>か</rt></ruby>った。冬の終る頃には、一町近い畑が、彼の力に依って<ruby><rb>拓</rb><rt>ひら</rt></ruby>かれた。彼に今最も必要なことは、そこに<ruby><rb>蒔</rb><rt>ま</rt></ruby>かねばならない麦の種であった。彼は、麦の種を土人が手放さないのを知っていた。彼は、それと<ruby><rb>交易</rb><rt>こうえき</rt></ruby>するために、自分の持物の中で、土人の欲しがりそうなものをいろいろ考えてみた。土人の欲しがりそうなものは、自分の生活にも欠くべからざるものだった。<persName ref="#shunkan">俊寛</persName>は、ふと<placeName ref="#toba"><ruby><rb>鳥羽</rb><rt>とば</rt></ruby></placeName>で別れるとき、妻の<persName ref="#matsunomae">松の前</persName>から<ruby><rb>形見</rb><rt>かたみ</rt></ruby>に贈られた<ruby><rb>素絹</rb><rt>しろぎぬ</rt></ruby>の小袖を、今もなおそのままに、持っているのに気がついた。それは、現在の彼にとって、過去の生活に対する唯一の記念物だった。彼は、一晩考えた末、この過去の生活に対する記念物を、現在の生活の<ruby><rb>必須品</rb><rt>ひっすひん</rt></ruby>に換えることを決心した。彼は、いとしい妻の形見を一袋の麦に換えた。そして、それを彼が自分で拓いた土地に、蒔いた。</p>
+        <p>自分で拓いた土地に、自分の手で蒔いた種の生えるのを見ることは、人間の喜びの中では、いちばん素晴らしいものであることを、<persName ref="#shunkan">俊寛</persName>は悟った。ほのかな麦の芽が、<ruby><rb>磽确</rb><rt>ぎょうかく</rt></ruby>な地殻からおぞおぞと頭を<ruby><rb>擡</rb><rt>もた</rt></ruby>げるのを見たとき、<persName ref="#shunkan">俊寛</persName>は嬉し涙に<ruby><rb>咽</rb><rt>むせ</rt></ruby>んだ。彼は<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>いて、目に見えぬ何物かに、心からの感謝を捧げたかった。</p>
+        <p><placeName ref="#kikaigashima">鬼界ヶ島</placeName>にも春はめぐってくる。島の周囲の海が、薄紫に輝きはじめる。そして、全島には、<ruby><rb>椿</rb><rt>つばき</rt></ruby>の花が一面に咲く。<ruby><rb>信天翁</rb><rt>あほうどり</rt></ruby>が、一日一日多くなって、<placeName ref="#iwogatake">硫黄ヶ岳</placeName>の中腹などには、雪が降ったように、集っている。</p>
+        <p>生れて初めての自然生活は、<persName ref="#shunkan">俊寛</persName>を見違えるような立派な体格にした。生白かった頬は、褐色に焼けて輝いた。去年、着続けていた僧侶の服は、いろいろのことをするのに不便なので、思い切ってそれを脱ぎ捨て、思い切って皮かつらを身にまとった。生年三十四歳。その壮年の肉体には、原始人らしいすべての活力が現れ出した。彼は、生え伸びた髪を無造作に<ruby><rb>藁</rb><rt>わら</rt></ruby>で束ねた。六尺豊かの身体は、鬼のような土人と比べてさえ、<ruby><rb>一際</rb><rt>ひときわ</rt></ruby>立ち<ruby><rb>勝</rb><rt>まさ</rt></ruby>って見えた。</p>
+        <p>彼は、時々自分の顔を、<ruby><rb>水鏡</rb><rt>みずかがみ</rt></ruby>で映して見る。が、その変りはてた姿を、あさましいなどと思ったことはない。むろん現在の彼には、妻子が時々思い出されるだけで、<persName ref="#kiyomori">清盛</persName>のことなどは、念頭になかった。<persName ref="#heike">平家</persName>が、千里のかなたで<ruby><rb>奢</rb><rt>おご</rt></ruby>っていようがいまいが、そんなことは、どちらでもよかった。それよりも彼は、自分が植えつけた麦が成長するのが、一日千秋の思いで待たれた。</p>
+        <p>麦の畑に<ruby><rb>生</rb><rt>お</rt></ruby>うる雑草を取ることは、彼の半日の仕事として、十分だった。が、午後からは海岸へ出て、毎日のように<ruby><rb>鰤</rb><rt>ぶり</rt></ruby>を釣った。糸は太い<ruby><rb>蔓</rb><rt>つる</rt></ruby>を用い、針は獣の骨で作った。三、四尺の大魚は、針を入れると同時に、無造作に食いつく。それを引き上げるのが、どんなに壮快であっただろう。それは、魚と人間との格闘であった。<persName ref="#shunkan">俊寛</persName>は危うく海の中へ、引きずり込まれそうになる。それを、岩角へ足をふんばって、ぐっと持ち<ruby><rb>堪</rb><rt>こた</rt></ruby>える。魚はそのかかった針をはずそうとして、波間で白い腹をかえしながら身を<ruby><rb>悶</rb><rt>もだ</rt></ruby>える。そうした格闘が、半刻近くも続く。そのうちに、魚の力が弱ってくる。それでもなお、身体を激しく<ruby><rb>捻</rb><rt>ね</rt></ruby>じ曲げながら、水面に引き上げられる。</p>
+        <p>この豪快な鰤約が、この頃の<persName ref="#shunkan">俊寛</persName>にとっては、仕事でもあり、娯楽でもあった。四尺を越す大魚を三、四匹繋いで、砂の上を小屋まで引きずって帰るのは苦しい仕事であった。が、それを<ruby><rb>炙</rb><rt>あぶ</rt></ruby>ると、新鮮な肉からは、香ばしい匂いが立ち、<persName ref="#shunkan">俊寛</persName>の<ruby><rb>健啖</rb><rt>けんたん</rt></ruby>な食欲をいやが上にも刺激する。</p>
+        <p>彼は、毎日のように、近所の<ruby><rb>海角</rb><rt>うみかど</rt></ruby>に出て、鰤を釣った。彼は、その魚から油を取って、<ruby><rb>灯火</rb><rt>ともし</rt></ruby>の油にしようと考えたのである。</p>
+        <p>鰤は、群を成して島の周囲をめぐっていた。<persName ref="#shunkan">俊寛</persName>は、その群を追うて、自分の小屋から一里近くも遠方へ出ることもあった。</p>
+        <p>その日も、<persName ref="#shunkan">俊寛</persName>は、鰤を釣るために<placeName ref="#iwogatake">硫黄ヶ岳</placeName>のすぐ麓の海岸まで行った。そこからは土人の部落が、半里とも隔っていなかった。土人たちは、本土の人間を恐れ嫌った。三人でいたときは、土人たちは遠方から三人の姿を見ると、避けた。<persName ref="#shunkan">俊寛</persName>一人になってからは、恐れはしなかった。が、一種気味の悪いもののように、決して近づいては来なかった。<persName ref="#shunkan">俊寛</persName>も、なるべく土人と交渉することを避けた。土人の部落へは、できるだけ近寄らないようにした。が、その日は、近所の海岸には、鰤の姿が見えないため、それを探しながら、とうとう、土人の部落近くまで来てしまった。</p>
+        <p>彼の針に、そこの海岸で、今まで上ったことのないような大魚がかかった。それは、鰤としても珍しい五尺を越える大魚だった。彼は、その岩角で、一刻近くも、それを釣り上げるために、奮闘した。彼は魚が逸しようとするときには、それに<ruby><rb>逆</rb><rt>さから</rt></ruby>わないように手の中の蔓を延ばした。もう延ばすべき蔓がなくなると、蔓は緊張して、水を切りながらキイキイ鳴った。</p>
+        <p>彼は、魚が頭が自分の方へ向けたと知ると、その機を逸しないで、蔓を手早く手元へ繰り寄せる。一間ばかりの水底まで来た魚は、奇怪な姿を見せながら、狂い回る。が、水際までは決して上らない。そして、<persName ref="#shunkan">俊寛</persName>の手が、少しでも<ruby><rb>緩</rb><rt>ゆる</rt></ruby>むと矢のように、沖へ逸走する。彼は蔓を延ばしたり、緩めたりすることによって、水中の魚を疲らせようとする。半裸体のまま岩頭に立って活動する<persName ref="#shunkan">俊寛</persName>の姿は、目ざましいものであった。</p>
+        <p>とうとう、<persName ref="#shunkan">俊寛</persName>はその五尺を越ゆる大魚を征服してしまう。岩の上に釣り上げられた後も、なお跳躍して海に入ろうとする魚の頭を、<persName ref="#shunkan">俊寛</persName>はそばの大石で一打ちする。魚は尾や<ruby><rb>鰭</rb><rt>ひれ</rt></ruby>を震わせながら、死んでしまう。<persName ref="#shunkan">俊寛</persName>は、その二十貫を越える大魚の腹に足をかけながら、初めて会心の微笑をもらす。</p>
+        <p>その時<persName ref="#shunkan">俊寛</persName>は、ふと人の気配を感じた。魚を釣るために、夢中になっていた<persName ref="#shunkan">俊寛</persName>は、気がついて周囲を見回した。見ると、いつの間に近寄ったのだろう。一人の土人の少女が、十間ばかりの後方に立ちながら、<persName ref="#shunkan">俊寛</persName>の姿をじっと見詰めているのだった。おそらく<persName ref="#shunkan">俊寛</persName>の勇ましい活躍を先刻から見ていたのだろう。</p>
+        <p>年は、十六、七であったろう。が、<ruby><rb>背丈</rb><rt>せたけ</rt></ruby>はすくすくと伸びて、<placeName ref="#kyoto">都</placeName>の少女などには見られないような高さに達していた。腰の周囲に木の皮を<ruby><rb>纏</rb><rt>まと</rt></ruby>っただけで、よく発達した胸部を惜し気もなく見せていた。髪は<ruby><rb>梳</rb><rt>くしけず</rt></ruby>らず、蔓草をさねかずらにしていた。色は黒かったが、瞳が黒く人なつこく光っていた。</p>
+        <p>長い間、女性と接したことのない<persName ref="#shunkan">俊寛</persName>は、この少女を一目見ると、自分の裸体が気恥かしくなって、思わず顔が赤くなった。が、相手が少しの<ruby><rb>猜疑</rb><rt>さいぎ</rt></ruby>もなく、無邪気に自分を<ruby><rb>凝視</rb><rt>ぎょうし</rt></ruby>しているのを見ると、<persName ref="#shunkan">俊寛</persName>はそれに答えるように、軽い微笑を見せずにはいられなかった。少女は微笑はしなかったが、そのもの珍しげに<ruby><rb>瞠</rb><rt>みは</rt></ruby>っている目に、好意を示す表情が動いたことは確かだった。<persName ref="#shunkan">俊寛</persName>は、久しぶりに人間から好意のある表情を見せられたので、胸がきゅっとこみ上げてくるように感じた。</p>
+        <p>彼は、再び針を海中に投じた。魚は、すぐ食いついた。その魚を引き上げる間、少女は熱心に見物している。そして第三番目の針を投じても、少女は去らない。<persName ref="#shunkan">俊寛</persName>は、少女の方を振向きながら時々、微笑を見せる。少女は、<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>を採るために来たのだろう。が、硫黄を入れる<ruby><rb>筥</rb><rt>はこ</rt></ruby>をそばへ置き捨てたまま、いつまでも<persName ref="#shunkan">俊寛</persName>が鰤を釣り上げるのを見ている。</p>
+        <p>とうとう夕暮が来た。<persName ref="#shunkan">俊寛</persName>は、釣り上げた魚を引きずりながら、自分の小屋への道を<ruby><rb>辿</rb><rt>たど</rt></ruby>る。一町ばかり歩いて、後を振返った。少女も<ruby><rb>家路</rb><rt>いえじ</rt></ruby>に向おうとして立ち上っている。が、歩き出さないで、<persName ref="#shunkan">俊寛</persName>の方を、じっと見詰めている。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、その日から自分の生活に新しい希望が湧いたことに気がつく。彼は、その翌日も同じ場所に行った。すると、昨日の少女が、昨日彼女が<ruby><rb>蹲</rb><rt>うずくま</rt></ruby>っていたのと同じ場所に蹲っているのを見る。<persName ref="#shunkan">俊寛</persName>の胸には、湧き上るような<ruby><rb>欣</rb><rt>よろこ</rt></ruby>びが感ぜられる。今日こそ、昨日よりももっと大きい鰤を釣り上げて少女に見せてやろうと思う。が、昨夜の間に、鰤はこの海岸を離れたとみえ、いくら針を投げても、手答えがない。</p>
+        <p>彼はいらいらして、幾度も幾度も針を投げ直す。が、幾度投げ直しても、手答えがない。彼は、少女が退屈して、立ち上りはしないかと思うといらいらしてくる。が、少女はじっと蹲ったまま身動きもしない。<persName ref="#shunkan">俊寛</persName>は、ほかの釣場所を探ろうと思うけれども、少女がもし<ruby><rb>随</rb><rt>つ</rt></ruby>いてこなかったらと思うと、この場所を動く気はしない。そのうちに、<persName ref="#shunkan">俊寛</persName>は疲れて、針を水中に投じたまま、手を休めてしまう。</p>
+        <p>その時に、突然かの少女が叫び始めた。<persName ref="#shunkan">俊寛</persName>は、最初彼女が、何か自分に話しかけているのではないかと思った。が、少女は天の一方を見詰めながら叫んでいる。そのうちに、<persName ref="#shunkan">俊寛</persName>は、その叫び声の中に、ある<ruby><rb>韻律</rb><rt>いんりつ</rt></ruby>があるのに気がつく。</p>
+        <p>そして、この少女が歌をうたっているのだということが分かる。それは<ruby><rb>朗詠</rb><rt>ろうえい</rt></ruby>や<ruby><rb>今様</rb><rt>いまよう</rt></ruby>などとは違って、もっと急調な激しい調子である。が、そのききなれない調子、意味のまったく分からない<ruby><rb>詞</rb><rt>ことば</rt></ruby>の中に、この少女の迫った感情が<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>っているのを<persName ref="#shunkan">俊寛</persName>は感ぜずにはいられなかった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、やるせなくこの少女がいとしくなる。歌い終ると、少女は<persName ref="#shunkan">俊寛</persName>の方へその黒い瞳の一<ruby><rb>瞥</rb><rt>べつ</rt></ruby>を投げる。<persName ref="#shunkan">俊寛</persName>はたまらなくなって立ち上り、少女の方へ進む。すると、今まで蹲っていた少女は、急に立ち上って五、六間向うへ逃げる。が、そこに立ち止まったまま、それ以上は逃げようとはしない。<persName ref="#shunkan">俊寛</persName>は、微笑をしながら手招きする。が、少女は微笑をもってそれに答えるけれども、決して近寄らない。<persName ref="#shunkan">俊寛</persName>は、じれて元の場所へ帰る。すると、少女も元の場所へ帰って蹲る。そして、時々思い出したように歌いつづける。</p>
+        <p>その翌日も、<persName ref="#shunkan">俊寛</persName>は同じ場所に行った。その翌々日も、<persName ref="#shunkan">俊寛</persName>は同じ場所へ行った。もう鰤を釣る目的ではなかった。</p>
+        <p>幾日も幾日も、そうした情景が続いた後、少女はとうとうその<ruby><rb>牝鹿</rb><rt>めじか</rt></ruby>のようにしなやかな身体を、<persName ref="#shunkan">俊寛</persName>の強い<ruby><rb>双腕</rb><rt>もろうで</rt></ruby>に委してしまった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、もう孤独ではなかった。かの少女は、間もなく<persName ref="#shunkan">俊寛</persName>のために、従順な愛すべき妻となった。むろん、土人たちは彼らの少女を<ruby><rb>拉</rb><rt>らっ</rt></ruby>したのを知ると、大挙して<persName ref="#shunkan">俊寛</persName>の小屋を襲って来た。二十人を越す大勢に対して、すこしも<ruby><rb>怯</rb><rt>ひる</rt></ruby>むところなく、<ruby><rb>鉞</rb><rt>まさかり</rt></ruby>をもって立ち向った<persName ref="#shunkan">俊寛</persName>の勇ましい姿は、少女の<persName ref="#shunkan">俊寛</persName>に対する愛情を増すのに、十分であった。が、恐ろしい<ruby><rb>惨劇</rb><rt>さんげき</rt></ruby>が始まろうとする刹那、少女はいちはやく土人の<ruby><rb>頭</rb><rt>かしら</rt></ruby>らしい老人の前に身を投じた。それは、少女の父であるらしかった。老人は、少女から何事かをきくと、怒り<ruby><rb>罵</rb><rt>ののし</rt></ruby>る若者たちを制して、こともなく引き上げて行った。</p>
+        <p>その事件があった後は、<persName ref="#shunkan">俊寛</persName>の家庭には、幸福と平和のほかは、何物も襲って来なかった。</p>
+        <p>手助けのできた<persName ref="#shunkan">俊寛</persName>は、自分たちの生活を、いろいろな点でよくしていった。都会生活の経験のよいところだけを妻に教えた。無知ではあったが、利発な彼女は<persName ref="#shunkan">俊寛</persName>のいうことを理解して、すこしずつ家庭生活を愉快にしていった。</p>
+        <p>結婚してからすぐ、<persName ref="#shunkan">俊寛</persName>は、妻に<ruby><rb>大和</rb><rt>やまと</rt></ruby>言葉を教えはじめた。三月経ち四月経つうちには、日常の会話には、ことを欠かなかった。蔓草のさねかずらをした妻が、<ruby><rb>閑雅</rb><rt>かんが</rt></ruby>な都言葉を口にすることは、<persName ref="#shunkan">俊寛</persName>にとって、この上もない楽しみであった。言葉を一通り覚えてしまうと、<persName ref="#shunkan">俊寛</persName>は、よく妻を砂浜へ連れて行って、字を書くことを教えた。<placeName ref="#asakayama"><ruby><rb>浅香山</rb><rt>あさかやま</rt></ruby></placeName>の歌を幾度となく砂の上に書き示した。</p>
+        <p>妻は、その年のうちに、妊娠した。こうした生活をする<persName ref="#shunkan">俊寛</persName>にとって、子供ができるということは普通人の想像も及ばない喜びだった。<persName ref="#shunkan">俊寛</persName>は、身重くなった妻を<ruby><rb>嘗</rb><rt>な</rt></ruby>めるように、いたわるのであった。翌年の春に、妻は玉のような男の子を産んだ。子供ができてからの<persName ref="#shunkan">俊寛</persName>の幸福は、以前の二倍も三倍にもなった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>の畑は毎年よく実った。彼は子供ができたのを機会に、妻に手伝わせて、小屋を新しく建て直した。もう、どんな嵐が来ても、びくともしないような堅牢なものになった。</p>
+        <p>男の子が生れたその翌年に、今度は女の子が生れ、その二年目に、今度はまた男の子が生れた。子供の成長とともに、<persName ref="#shunkan">俊寛</persName>の幸福は限りもなく大きくなっていった。<placeName ref="#kikaigashima">鬼界ヶ島</placeName>に流されたことが、自分の不運であったか幸福であったか分からない、とまで考えるようになっていた。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>四</head>
+        <p><persName ref="#ario"><ruby><rb>有王</rb><rt>ありおう</rt></ruby></persName>が、故主の<persName ref="#shunkan">俊寛</persName>を尋ねて、<placeName ref="#kyoto">都</placeName>からはるばると<placeName ref="#kyushu">九<ruby><rb>国</rb><rt>ごく</rt></ruby></placeName>に下り、そこの便船を求めて、硫黄商人の船に乗り、<placeName ref="#kikaigashima">鬼界ヶ島</placeName>へ来たのは、<date when="1186-02"><ruby><rb>文治</rb><rt>ぶんじ</rt></ruby>二年の<ruby><rb>如月半</rb><rt>きさらぎなか</rt></ruby>ば</date>のことだった。</p>
+        <p><date when="1185"><ruby><rb>寿永</rb><rt>じゅえい</rt></ruby>四年</date>に、<persName ref="#heike">平家</persName>の一門はことごとく<placeName ref="#saikai"><ruby><rb>西海</rb><rt>さいかい</rt></ruby></placeName>の<ruby><rb>藻屑</rb><rt>もくず</rt></ruby>となり、今は<persName ref="#genke">源家</persName>の世となっているのであるから、<persName ref="#shunkan">俊寛</persName>に対する重科も自然消え果てて、赦免の使者が朝廷から到来すべきはずであったが、世は<persName ref="#heike">平家</persName>の余類追討に急がわしく、その上、<persName ref="#shunkan">俊寛</persName>は過ぐる<date when="1179">治承三年</date>に、<placeName ref="#kikaigashima">鬼界ヶ島</placeName>にて絶え果てたという風聞さえ伝わっていたから、<persName ref="#shunkan">俊寛</persName>のことなどは、<ruby><rb>何人</rb><rt>なんびと</rt></ruby>の念頭にもなかった。</p>
+        <p>ただ、故主を慕う<persName ref="#ario">有王</persName>だけは、<persName ref="#shunkan">俊寛</persName>の最期を見届けたく、千里の旅路に、<ruby><rb>憂</rb><rt>う</rt></ruby>き<ruby><rb>艱難</rb><rt>かんなん</rt></ruby>を重ねて、<placeName ref="#kikaigashima">鬼界ヶ島</placeName>へ下ったのである。</p>
+        <p>島へ上陸した<persName ref="#ario">有王</persName>は、三日の間、島中を探し回った。が、それらしい人には絶えて会わなかった。島人には、言葉不通のため、ききあわすべき、よすがもなかった。そのうちに、便乗してきた商人船の出帆の日が迫った。今は<persName ref="#shunkan">俊寛</persName>が生活した旧跡でも見たいと思って、人の住む所と否とを問わず、島中を縫うように駆け回った。</p>
+        <p>四日目の夕暮、<persName ref="#ario">有王</persName>は人里遠く離れた海岸で、人声を聞いた。それが思いがけなくも大和言葉であった。<persName ref="#ario">有王</persName>は、林の中を潜って、人声のする方へ行った。見ると、そこは、ひろびろと拓かれた畑で、二人の男女の土人が、並んで耕しているのであった。しかも、彼らは大和言葉で、高々と打ち語っているのであった。<persName ref="#ario">有王</persName>は、おどろきのあまりに、畑のそばに立ち<ruby><rb>竦</rb><rt>すく</rt></ruby>んでしまった。<persName ref="#ario">有王</persName>の姿を見たその男は、すぐその鍬を捨ててつかつかとそばへ寄って来た。</p>
+        <p>その男は、じっと<persName ref="#ario">有王</persName>の姿を見た。<persName ref="#ario">有王</persName>も、じっとその姿を見た。その男の眉の上のほくろを見出すと、<persName ref="#ario">有王</persName>は、</p>
+        <p>「<persName ref="#shunkan">俊寛</persName><ruby><rb>僧都</rb><rt>そうず</rt></ruby>どのには、ましまさずや」</p>
+        <p>そう叫ぶと、飛鳥のように<persName ref="#shunkan">俊寛</persName>の手元に飛び<ruby><rb>縋</rb><rt>すが</rt></ruby>った。</p>
+        <p>その男は、大きく頷いた。そして、その日に焼けて<ruby><rb>赤銅</rb><rt>しゃくどう</rt></ruby>のように光っている頬を、大粒の涙がほろほろと流れ落ちた。二人は涙のうちに、しばらくは言葉がなかった。</p>
+        <p>「あなあさましや。などかくは変らせたまうぞ。<placeName ref="#hosshoji"><ruby><rb>法勝寺</rb><rt>ほうしょうじ</rt></ruby></placeName>の<ruby><rb>執行</rb><rt>しぎょう</rt></ruby>として時めきたまいし君の、かくも変らせたまうものか」</p>
+        <p><persName ref="#ario">有王</persName>は、そう叫びながら、さめざめと泣き伏した。が、最初<ruby><rb>邂逅</rb><rt>かいこう</rt></ruby>の涙は一緒に流したが、しかしその次の詠嘆には、<persName ref="#shunkan">俊寛</persName>は一致しなかった。<persName ref="#shunkan">俊寛</persName>は逞しい腕を組みながら、泣き沈む<persName ref="#ario">有王</persName>の姿を不思議そうに見ていた。</p>
+        <p>彼は、<persName ref="#ario">有王</persName>が泣き止むのを待って、<persName ref="#ario">有王</persName>の右の手を<ruby><rb>掴</rb><rt>つか</rt></ruby>んで、妻を<ruby><rb>麾</rb><rt>さしまね</rt></ruby>くと、<persName ref="#ario">有王</persName>をぐんぐん引張りながら、自分の小屋へ連れて帰った。<persName ref="#ario">有王</persName>は、その小屋で、<ruby><rb>主</rb><rt>しゅ</rt></ruby>に生き写しの二人の男の子と三人の女の子を見た。<persName ref="#shunkan">俊寛</persName>は、長男の頭を<ruby><rb>擦</rb><rt>さす</rt></ruby>りながら、これが<persName ref="#tokujumaru"><ruby><rb>徳寿丸</rb><rt>とくじゅまる</rt></ruby></persName>であるといって、<persName ref="#ario">有王</persName>に引き合せた。その顔には、父らしい嬉しさが、隠し切れない微笑となって浮んだ。</p>
+        <p>が、<persName ref="#ario">有王</persName>はすべてをあさましいと考えた。<persName ref="#murakami">村上天皇</persName>の第七子<persName ref="#tomohira"><ruby><rb>具平親王</rb><rt>ともひらしんのう</rt></ruby></persName>六<ruby><rb>世皇孫</rb><rt>せいのこうそん</rt></ruby>である<persName ref="#shunkan">俊寛</persName>が、南蛮の女と<ruby><rb>契</rb><rt>ちぎ</rt></ruby>るなどは、何事であろうと考えた。彼は、<ruby><rb>主</rb><rt>あるじ</rt></ruby>が流人になったため、心までが畜生道に陥ちたのではないかと嘆き悲しんだ。</p>
+        <p>彼は、その夜、夜を徹して<persName ref="#shunkan">俊寛</persName>に<ruby><rb>帰洛</rb><rt>きらく</rt></ruby>を勧めた。<persName ref="#heike">平家</persName>に対する謀反の第一番であるだけに、<placeName ref="#kamakura">鎌倉</placeName>にある<ruby><rb>右府</rb><rt>うふ</rt></ruby>どのが、僧都の御身の上を決して<ruby><rb>疎</rb><rt>おろそ</rt></ruby>かには思うまいといった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、<persName ref="#heike">平家</persName>一門が、滅んだときいたときには、さすがに会心の<ruby><rb>微笑</rb><rt>えみ</rt></ruby>をもらし、妻の<persName ref="#matsunomae">松の前</persName>や<persName ref="#tsurunomae">鶴の前</persName>が身まかったということをきいたときには、涙を流したが、帰洛の勧めには、最初から首を横に振った。<persName ref="#ario">有王</persName>が、涙を流しての<ruby><rb>勧説</rb><rt>かんぜい</rt></ruby>も、どうすることもできなかった。</p>
+        <p>夜が明けると、それは<persName ref="#ario">有王</persName>の船が、出帆の日であった。<persName ref="#ario">有王</persName>は、主の心に<ruby><rb>物怪</rb><rt>もののけ</rt></ruby>が<ruby><rb>憑</rb><rt>つ</rt></ruby>いたものとして、帰洛の勧めを思い切るよりほかはなかった。</p>
+        <p><persName ref="#shunkan">俊寛</persName>は、妻と五人の子供とを連れながら、船着場まで見送りに来た。</p>
+        <p>そこで、形見にせよといって、<persName ref="#shunkan">俊寛</persName>が自分で刻んだ木像をくれた。それは、<persName ref="#shunkan">俊寛</persName>が、彼自身の妻の像を刻んだものだった。<persName ref="#shunkan">俊寛</persName>の帰洛を妨げるものは彼の妻子であると思うと、<persName ref="#ario">有王</persName>はその木像までが<ruby><rb>忌</rb><rt>いま</rt></ruby>わしいものに思われたが、主の贈物をむげにしりぞけるわけにもいかないので、船に乗ってから捨てるつもりで、何気なくそれを受取った。</p>
+        <p>別れるとき、<persName ref="#shunkan">俊寛</persName>は、</p>
+        <p>「<placeName ref="#kyoto">都</placeName>に帰ったら、<persName ref="#shunkan">俊寛</persName>は<date when="1179">治承三年</date>に島で果てたという風聞を決して打ち消さないようにしてくれ。島に生き永らえているようなことを、決していわないようにしてくれ。<persName ref="#matsunomae">松の前</persName>が、<persName ref="#tsurunomae">鶴の前</persName>が生き永らえていたらまた思うようもあるが、今はただひたぶるに、<persName ref="#shunkan">俊寛</persName>を死んだものと世の人に思わすようにしてくれ」</p>
+        <p>そんな意味をいった。その大和言葉が、かなり<ruby><rb>訛</rb><rt>なまり</rt></ruby>が激しいので、<persName ref="#ario">有王</persName>は言葉通りには覚えていられなかった。</p>
+        <p><persName ref="#ario">有王</persName>の船が出ると、<persName ref="#shunkan">俊寛</persName>及びその妻子は、しばらく海辺に立って見送っていたが、やがて皆は揃って、彼らの小屋の方へ歩き始めた。五人の子供たちが、父母を中に挟んで、嬉々として<ruby><rb>戯</rb><rt>たわむ</rt></ruby>れながら帰って行く一行を、船の上から見ていた<persName ref="#ario">有王</persName>は、最初はそれを獣か何かの<ruby><rb>一群</rb><rt>ひとむれ</rt></ruby>のようにあさましいと思っていたが、そのうちになんとも知れない熱い涙が、自分の頬を伝っているのに気がついた。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

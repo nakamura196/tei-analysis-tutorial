@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>すみだ川</title>
+        <author>永井荷風</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>すみだ川</title><author>永井荷風</author>
+          <note>青空文庫。底本：「すみだ川・新橋夜話　他一篇」岩波文庫、岩波書店。1987（昭和62）年9月16日第1刷発行。2005（平成17）年11月25日第23刷発行。底本の親本：「荷風小説　三」岩波書店。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/001341/card50556.html">https://www.aozora.gr.jp/cards/001341/card50556.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="ragetsu">
+        <persName>松風庵蘿月</persName>
+        <note>俳諧師。小梅瓦町に住む長吉の伯父、お豊の兄。もと小石川表町の質屋相模屋の跡取息子で勘当された放蕩者。表層形「松風庵蘿月」「蘿月」を統合</note>
+      </person>
+      <person xml:id="otoyo">
+        <persName>お豊</persName>
+        <note>蘿月の妹、長吉の母。今戸で常磐津の師匠(名は常磐津文字豊)をして一人息子を大学校へ入れようとする。表層形「お豊」「文字豊」を統合</note>
+      </person>
+      <person xml:id="chokichi">
+        <persName>長吉</persName>
+        <note>お豊の一人息子。中学生。お糸に思いを寄せ、学校を厭うて役者を志す。表層形「長吉」「長ちゃん」「長さん」を統合</note>
+      </person>
+      <person xml:id="oito">
+        <persName>お糸</persName>
+        <note>長吉の幼馴染。今戸の煎餅屋の娘で、葭町の芸者屋松葉屋へ出て芸者になる</note>
+      </person>
+      <person xml:id="otaki">
+        <persName>お滝</persName>
+        <note>蘿月の女房(小梅の伯母)。もと吉原金瓶楼の華魁で「小太夫」と呼ばれた。表層形「お滝」「小太夫」を統合</note>
+      </person>
+      <person xml:id="tamamizu">
+        <persName>玉水三郎</persName>
+        <note>長吉の小学校時代の友達「吉さん」。山谷通りの理髪師の若衆から伊井一座の新俳優となる。表層形「吉さん」「玉水三郎」「玉水」を統合</note>
+      </person>
+      <person xml:id="kineya">
+        <persName>杵屋</persName>
+        <note>お糸が長唄の稽古に通う師匠(長唄杵屋の家元筋)</note>
+      </person>
+      <person xml:id="ii">
+        <persName>伊井</persName>
+        <note>伊井蓉峰(1871-1932)。新派の俳優。作中は「伊井一座」として言及される</note>
+      </person>
+      <person xml:id="tamenaga-shunsui">
+        <persName>為永春水</persName>
+        <note>為永春水(1790-1844)。人情本作者。長吉が愛読する『梅暦』の作者</note>
+      </person>
+      <person xml:id="yonehachi">
+        <persName>米八</persName>
+        <note>為永春水『春色梅児誉美(梅暦)』の登場人物。丹次郎を訪ねる深川の芸者</note>
+      </person>
+      <person xml:id="tanjiro">
+        <persName>丹次郎</persName>
+        <note>為永春水『春色梅児誉美(梅暦)』の主人公</note>
+      </person>
+      <person xml:id="hanjiro">
+        <persName>半次郎</persName>
+        <note>為永春水の人情本の登場人物として言及される</note>
+      </person>
+      <person xml:id="seishin">
+        <persName>清心</persName>
+        <note>歌舞伎・清元「梅柳中宵月」(十六夜清心)の主人公。破戒僧清心</note>
+      </person>
+      <person xml:id="izayoi">
+        <persName>十六夜</persName>
+        <note>歌舞伎・清元「梅柳中宵月」(十六夜清心)の遊女十六夜</note>
+      </person>
+      <person xml:id="kafu">
+        <persName>荷風</persName>
+        <note>作者永井荷風(1879-1959)自身。序文の署名「荷風小史」「荷風散人」を統合</note>
+      </person>
+      <person xml:id="sato-haruo">
+        <persName>佐藤春夫</persName>
+        <note>佐藤春夫(1892-1964)。詩人・小説家。荷風の友人として序に言及</note>
+      </person>
+      <person xml:id="inoue-aa">
+        <persName>井上唖唖</persName>
+        <note>井上唖々(1878-1923)。荷風の亡友。『すみだ川』草稿の校閲を頼まれた</note>
+      </person>
+      <person xml:id="goto-chugai">
+        <persName>後藤宙外</persName>
+        <note>後藤宙外(1866-1938)。小説家・評論家。雑誌『新小説』編輯主任</note>
+      </person>
+      <person xml:id="suzuki-miekichi">
+        <persName>鈴木三重吉</persName>
+        <note>鈴木三重吉(1882-1936)。小説家・児童文学者。『新小説』編輯にあたったか記憶が定かでないとされる</note>
+      </person>
+      <person xml:id="saito-shozo">
+        <persName>斎藤昌三</persName>
+        <note>斎藤昌三(1887-1961)。書誌学者・蔵書家。『新小説』掲載時の口絵の所蔵本を提供。表層形「斎藤昌三」「斎藤」を統合</note>
+      </person>
+      <person xml:id="tanizaki">
+        <persName>谷崎</persName>
+        <note>谷崎潤一郎(1886-1965)。『刺青』が籾山書店から単行本になったと序に言及</note>
+      </person>
+      <person xml:id="mori-ogai">
+        <persName>森鴎外</persName>
+        <note>森鴎外(1862-1922)。『スバル』等に寄せた著作が籾山書店から刊行されたと序に言及</note>
+      </person>
+      <person xml:id="hashiguchi-goyo">
+        <persName>橋口五葉</persName>
+        <note>橋口五葉(1881-1921)。画家・装幀家。縮刷本『荷風叢書』の装幀を担当</note>
+      </person>
+      <person xml:id="kimura-tomiko">
+        <persName>木村富子</persName>
+        <note>木村富子(1890-1944)。劇作家。『すみだ川』を戯曲に潤色。表層形「木村富子」「木村」を統合</note>
+      </person>
+      <person xml:id="regnier">
+        <persName>アンリイ、ド、レニエエ</persName>
+        <note>アンリ・ド・レニエ(1864-1936)。フランスの詩人・小説家。『賢き一青年の休暇』の作者として言及</note>
+      </person>
+      <person xml:id="ichikawa-sumizo">
+        <persName>市川寿美蔵</persName>
+        <note>戯曲『すみだ川』(本郷座)に出演した俳優</note>
+      </person>
+      <person xml:id="ichikawa-shocho">
+        <persName>市川松蔦</persName>
+        <note>戯曲『すみだ川』(本郷座)に出演した俳優</note>
+      </person>
+      <person xml:id="otani-tomoemon">
+        <persName>大谷友右衛門</persName>
+        <note>戯曲『すみだ川』(本郷座)に出演した俳優</note>
+      </person>
+      <person xml:id="ichikawa-benijaku">
+        <persName>市川紅若</persName>
+        <note>戯曲『すみだ川』(本郷座)に出演した俳優</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="sumidagawa">
+        <placeName>隅田川</placeName>
+        <location><geo>35.715 139.806</geo></location>
+        <note>作品の舞台となる川。序の「濹上」も同じ川筋を指す・概値</note>
+      </place>
+      <place xml:id="imado">
+        <placeName>今戸</placeName>
+        <location><geo>35.7185 139.801</geo></location>
+        <note>浅草今戸。お豊と長吉の住む町・概値</note>
+      </place>
+      <place xml:id="imadobashi">
+        <placeName>今戸橋</placeName>
+        <location><geo>35.7175 139.802</geo></location>
+        <note>山谷堀が隅田川に注ぐ河口に架かっていた橋。現在は堀の埋立てにより撤去・概値</note>
+      </place>
+      <place xml:id="imadohachiman">
+        <placeName>今戸八幡</placeName>
+        <location><geo>35.7189 139.8007</geo></location>
+        <note>今戸八幡(現・今戸神社)。表層形「今戸八幡」「八幡さま」を統合・概値</note>
+      </place>
+      <place xml:id="matsuchiyama">
+        <placeName>待乳山</placeName>
+        <location><geo>35.7161 139.8016</geo></location>
+        <note>待乳山聖天(本龍院)の丘・概値</note>
+      </place>
+      <place xml:id="shodenmachi">
+        <placeName>聖天町</placeName>
+        <location><geo>35.716 139.799</geo></location>
+        <note>浅草聖天町。待乳山の麓の町・概値</note>
+      </place>
+      <place xml:id="sanyabori">
+        <placeName>山谷堀</placeName>
+        <location><geo>35.719 139.799</geo></location>
+        <note>吉原へ通じた掘割。現在は暗渠(山谷堀公園)・概値</note>
+      </place>
+      <place xml:id="sanya">
+        <placeName>山谷</placeName>
+        <location><geo>35.728 139.796</geo></location>
+        <note>浅草山谷の一帯。「山谷の裏町」「山谷通り」・概値</note>
+      </place>
+      <place xml:id="keiyoji">
+        <placeName>慶養寺</placeName>
+        <location><geo>35.718 139.8</geo></location>
+        <note>今戸橋近くにあった寺・概値</note>
+      </place>
+      <place xml:id="chomeiji">
+        <placeName>長命寺</placeName>
+        <location><geo>35.7215 139.8065</geo></location>
+        <note>向島の長命寺・概値</note>
+      </place>
+      <place xml:id="takeya">
+        <placeName>竹屋</placeName>
+        <location><geo>35.7175 139.8035</geo></location>
+        <note>竹屋の渡し。今戸と向島を結んだ渡船場・概値</note>
+      </place>
+      <place xml:id="koume">
+        <placeName>小梅</placeName>
+        <location><geo>35.714 139.809</geo></location>
+        <note>本所小梅(現・墨田区向島)。蘿月の住む町。表層形「小梅瓦町」「小梅」を統合・概値</note>
+      </place>
+      <place xml:id="hikifunedori">
+        <placeName>曳舟通</placeName>
+        <location><geo>35.718 139.814</geo></location>
+        <note>曳舟川に沿う通り・概値</note>
+      </place>
+      <place xml:id="mimeguri">
+        <placeName>三囲稲荷</placeName>
+        <location><geo>35.716 139.806</geo></location>
+        <note>三囲神社(向島)・概値</note>
+      </place>
+      <place xml:id="komagome">
+        <placeName>駒込</placeName>
+        <location><geo>35.7364 139.746</geo></location>
+        <note>市区改正で移転する菩提寺のある町・概値</note>
+      </place>
+      <place xml:id="yanaka">
+        <placeName>谷中</placeName>
+        <location><geo>35.725 139.765</geo></location>
+        <note>谷中墓地・概値</note>
+      </place>
+      <place xml:id="somei">
+        <placeName>染井</placeName>
+        <location><geo>35.736 139.742</geo></location>
+        <note>染井墓地・概値</note>
+      </place>
+      <place xml:id="koishikawaomotemachi">
+        <placeName>小石川表町</placeName>
+        <location><geo>35.716 139.744</geo></location>
+        <note>蘿月の実家(質屋相模屋)のあった町・概値</note>
+      </place>
+      <place xml:id="hongo">
+        <placeName>本郷</placeName>
+        <location><geo>35.708 139.759</geo></location>
+        <note>長吉が夜学に通う町・概値</note>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.695 139.77</geo></location>
+        <note>長吉の通う中学校のある町・概値</note>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7138 139.777</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="toshogu">
+        <placeName>東照宮</placeName>
+        <location><geo>35.718 139.7743</geo></location>
+        <note>上野東照宮・概値</note>
+      </place>
+      <place xml:id="asakusa">
+        <placeName>浅草</placeName>
+        <location><geo>35.7119 139.795</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="sensoji">
+        <placeName>観音</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+        <note>浅草観音(浅草寺)。表層形「観音」「観音堂」を統合・概値</note>
+      </place>
+      <place xml:id="nakamise">
+        <placeName>仲店</placeName>
+        <location><geo>35.7125 139.7963</geo></location>
+        <note>浅草寺の仲見世・概値</note>
+      </place>
+      <place xml:id="niomon">
+        <placeName>仁王門</placeName>
+        <location><geo>35.7138 139.7962</geo></location>
+        <note>浅草寺の仁王門(現・宝蔵門)・概値</note>
+      </place>
+      <place xml:id="kaminarimon">
+        <placeName>雷門</placeName>
+        <location><geo>35.7108 139.7965</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="asakusakoen">
+        <placeName>浅草公園</placeName>
+        <location><geo>35.7135 139.794</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="goku">
+        <placeName>五区</placeName>
+        <location><geo>35.7143 139.793</geo></location>
+        <note>浅草公園第五区(揚弓店などの並ぶ一帯)・概値</note>
+      </place>
+      <place xml:id="awashima">
+        <placeName>淡島</placeName>
+        <location><geo>35.7145 139.794</geo></location>
+        <note>浅草寺境内の淡島堂。作中は「淡島さま」・概値</note>
+      </place>
+      <place xml:id="okuyama">
+        <placeName>奥山</placeName>
+        <location><geo>35.715 139.795</geo></location>
+        <note>浅草寺本堂裏手の見世物の盛り場・概値</note>
+      </place>
+      <place xml:id="kinryuzanshita">
+        <placeName>金竜山下</placeName>
+        <location><geo>35.713 139.799</geo></location>
+        <note>浅草寺(金竜山)の東、隅田川寄りの一帯・概値</note>
+      </place>
+      <place xml:id="jikatamachi">
+        <placeName>地方町</placeName>
+        <location><geo>35.7165 139.799</geo></location>
+        <note>浅草地方町。長吉と吉さんの通った小学校のある町・概値</note>
+      </place>
+      <place xml:id="senzokumachi">
+        <placeName>千束町</placeName>
+        <location><geo>35.7195 139.7925</geo></location>
+        <note>浅草千束町・概値</note>
+      </place>
+      <place xml:id="yoshiwara">
+        <placeName>吉原</placeName>
+        <location><geo>35.723 139.795</geo></location>
+        <note>新吉原遊廓・概値</note>
+      </place>
+      <place xml:id="yoshiwaradote">
+        <placeName>吉原土手</placeName>
+        <location><geo>35.7245 139.7975</geo></location>
+        <note>吉原へ通じる日本堤の土手・概値</note>
+      </place>
+      <place xml:id="yoshiwaratanbo">
+        <placeName>吉原田圃</placeName>
+        <location><geo>35.725 139.791</geo></location>
+        <note>吉原の西に広がっていた田圃・概値</note>
+      </place>
+      <place xml:id="hashiba">
+        <placeName>橋場</placeName>
+        <location><geo>35.7285 139.806</geo></location>
+        <note>浅草橋場。お糸を芸者にしたいという御新造の妾宅のある町・概値</note>
+      </place>
+      <place xml:id="satakeppara">
+        <placeName>佐竹ッ原</placeName>
+        <location><geo>35.706 139.783</geo></location>
+        <note>下谷の佐竹原。見世物小屋の立った空地・概値</note>
+      </place>
+      <place xml:id="komagata">
+        <placeName>駒形</placeName>
+        <location><geo>35.7085 139.7975</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="kuramae">
+        <placeName>蔵前</placeName>
+        <location><geo>35.705 139.791</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="asakusabashi">
+        <placeName>浅草橋</placeName>
+        <location><geo>35.6985 139.7855</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="bakurocho">
+        <placeName>馬喰町</placeName>
+        <location><geo>35.6935 139.783</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="yoshicho">
+        <placeName>葭町</placeName>
+        <location><geo>35.6845 139.783</geo></location>
+        <note>日本橋葭町(のちの人形町)。芸者屋の集まる花街。お糸の行く先・概値</note>
+      </place>
+      <place xml:id="meijiza">
+        <placeName>明治座</placeName>
+        <location><geo>35.687 139.788</geo></location>
+        <note>日本橋浜町の劇場・概値</note>
+      </place>
+      <place xml:id="hamacho">
+        <placeName>浜町</placeName>
+        <location><geo>35.688 139.788</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="okawabata">
+        <placeName>大川端</placeName>
+        <location><geo>35.685 139.79</geo></location>
+        <note>隅田川西岸の河岸一帯・概値</note>
+      </place>
+      <place xml:id="okawa">
+        <placeName>大川</placeName>
+        <location><geo>35.69 139.793</geo></location>
+        <note>隅田川下流の通称・概値</note>
+      </place>
+      <place xml:id="ryogokubashi">
+        <placeName>両国橋</placeName>
+        <location><geo>35.6944 139.7885</geo></location>
+        <note>表層形「両国橋」「両国」を統合・概値</note>
+      </place>
+      <place xml:id="shinohashi">
+        <placeName>新大橋</placeName>
+        <location><geo>35.689 139.792</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="eitaibashi">
+        <placeName>永代</placeName>
+        <location><geo>35.6798 139.7876</geo></location>
+        <note>永代橋。序で「永代と両国との二橋」として言及・概値</note>
+      </place>
+      <place xml:id="senjuohashi">
+        <placeName>千住の大橋</placeName>
+        <location><geo>35.743 139.7975</geo></location>
+        <note>隅田川最上流の大橋・概値</note>
+      </place>
+      <place xml:id="azumabashi">
+        <placeName>吾妻橋</placeName>
+        <location><geo>35.7104 139.8</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nakanogo">
+        <placeName>中の郷</placeName>
+        <location><geo>35.709 139.806</geo></location>
+        <note>本所中之郷・概値</note>
+      </place>
+      <place xml:id="narihirabashi">
+        <placeName>業平橋</placeName>
+        <location><geo>35.71 139.813</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="oshiage">
+        <placeName>押上</placeName>
+        <location><geo>35.71 139.814</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="yanagishima">
+        <placeName>柳島</placeName>
+        <location><geo>35.706 139.818</geo></location>
+        <note>本所柳島・概値</note>
+      </place>
+      <place xml:id="myokenji">
+        <placeName>妙見寺</placeName>
+        <location><geo>35.7055 139.8195</geo></location>
+        <note>柳島妙見(法性寺)・概値</note>
+      </place>
+      <place xml:id="hashimoto">
+        <placeName>橋本</placeName>
+        <location><geo>35.7058 139.819</geo></location>
+        <note>柳島の料理屋橋本・概値</note>
+      </place>
+      <place xml:id="kameido">
+        <placeName>亀井戸</placeName>
+        <location><geo>35.698 139.827</geo></location>
+        <note>亀戸。作中は「亀井戸」「亀井戸村」・概値</note>
+      </place>
+      <place xml:id="ryugenji">
+        <placeName>竜眼寺</placeName>
+        <location><geo>35.7035 139.8225</geo></location>
+        <note>亀戸の竜眼寺(萩寺)・概値</note>
+      </place>
+      <place xml:id="tenjinsama">
+        <placeName>天神様</placeName>
+        <location><geo>35.6997 139.821</geo></location>
+        <note>亀戸天神社・概値</note>
+      </place>
+      <place xml:id="tenjinbashi">
+        <placeName>天神橋</placeName>
+        <location><geo>35.701 139.82</geo></location>
+        <note>亀戸天神近くの橋・概値</note>
+      </place>
+      <place xml:id="honjo">
+        <placeName>本所</placeName>
+        <location><geo>35.697 139.802</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="nakagotakecho">
+        <placeName>中郷竹町</placeName>
+        <location><geo>35.708 139.8065</geo></location>
+        <note>本所中郷竹町・概値</note>
+      </place>
+      <place xml:id="miyatoza">
+        <placeName>宮戸座</placeName>
+        <location><geo>35.7135 139.793</geo></location>
+        <note>浅草公園六区にあった劇場・概値</note>
+      </place>
+      <place xml:id="miyatogawa">
+        <placeName>宮戸川</placeName>
+        <note>お豊の家の斜向かいにある鰻屋の屋号(作中)。座標なし</note>
+      </place>
+      <place xml:id="hinokicho">
+        <placeName>檜物町</placeName>
+        <location><geo>35.6835 139.7735</geo></location>
+        <note>日本橋檜物町。花柳界のあった町・概値</note>
+      </place>
+      <place xml:id="uekidana">
+        <placeName>植木店</placeName>
+        <note>邦楽の家元が居を構えた町の通称として挙げられる。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="shintomicho">
+        <placeName>新富町</placeName>
+        <location><geo>35.67 139.7715</geo></location>
+        <note>京橋新富町。新富座のある町・概値</note>
+      </place>
+      <place xml:id="hongoza">
+        <placeName>本郷座</placeName>
+        <location><geo>35.706 139.762</geo></location>
+        <note>本郷にあった劇場。戯曲『すみだ川』が上演された・概値</note>
+      </place>
+      <place xml:id="matsubaya">
+        <placeName>松葉屋</placeName>
+        <note>葭町の芸者屋の屋号(作中)。お糸の身を寄せる家。座標なし</note>
+      </place>
+      <place xml:id="sagamiya">
+        <placeName>相模屋</placeName>
+        <note>小石川表町にあった質屋の屋号(作中)。蘿月の実家。座標なし</note>
+      </place>
+      <place xml:id="kajitaro">
+        <placeName>梶田楼</placeName>
+        <note>吉さんが長吉を誘う「江戸一の梶田楼」。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="kinpei">
+        <placeName>金瓶大黒</placeName>
+        <note>お滝(小太夫)がいた吉原の妓楼。表層形「金瓶大黒」「金瓶楼」を統合。廓内の位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shinbashi">
+        <placeName>新橋</placeName>
+        <location><geo>35.666 139.758</geo></location>
+        <note>鉄道馬車の起点として言及・概値</note>
+      </place>
+      <place xml:id="tsukiji">
+        <placeName>築地</placeName>
+        <location><geo>35.6654 139.7707</geo></location>
+        <note>籾山書店のあった町・概値</note>
+      </place>
+      <place xml:id="iwaibashi">
+        <placeName>祝橋</placeName>
+        <location><geo>35.669 139.7688</geo></location>
+        <note>築地川に架かっていた橋。現在は埋立て・概値</note>
+      </place>
+      <place xml:id="azabu">
+        <placeName>麻布</placeName>
+        <location><geo>35.657 139.736</geo></location>
+        <note>序の執筆地(偏奇館のある麻布)・概値</note>
+      </place>
+      <place xml:id="kawaramachi">
+        <placeName>瓦町</placeName>
+        <location><geo>35.7145 139.7995</geo></location>
+        <note>浅草金龍山下瓦町。浅草寺(金竜山)の東、待乳山の南に広がっていた町。作中「金竜山下の日蔭になった瓦町」・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p><ruby><rb>俳諧師</rb><rt>はいかいし</rt></ruby><persName ref="#ragetsu"><ruby><rb>松風庵蘿月</rb><rt>しょうふうあんらげつ</rt></ruby></persName>は<placeName ref="#imado"><ruby><rb>今戸</rb><rt>いまど</rt></ruby></placeName>で<ruby><rb>常磐津</rb><rt>ときわず</rt></ruby>の<ruby><rb>師匠</rb><rt>ししょう</rt></ruby>をしている<ruby><rb>実</rb><rt>じつ</rt></ruby>の妹をば今年は<ruby><rb>盂蘭盆</rb><rt>うらぼん</rt></ruby>にもたずねずにしまったので毎日その事のみ気にしている。しかし<ruby><rb>日盛</rb><rt>ひざか</rt></ruby>りの暑さにはさすがに<ruby><rb>家</rb><rt>うち</rt></ruby>を出かねて夕方になるのを待つ。夕方になると竹垣に朝顔のからんだ勝手口で<ruby><rb>行水</rb><rt>ぎょうずい</rt></ruby>をつかった<ruby><rb>後</rb><rt>のち</rt></ruby>そのまま<ruby><rb>真裸体</rb><rt>まっぱだか</rt></ruby>で晩酌を傾けやっとの事<ruby><rb>膳</rb><rt>ぜん</rt></ruby>を離れると、夏の<ruby><rb>黄昏</rb><rt>たそがれ</rt></ruby>も家々で<ruby><rb>焚</rb><rt>た</rt></ruby>く<ruby><rb>蚊遣</rb><rt>かやり</rt></ruby>の<ruby><rb>烟</rb><rt>けむり</rt></ruby>と共にいつか夜となり、<ruby><rb>盆栽</rb><rt>ぼんさい</rt></ruby>を並べた窓の外の往来には<ruby><rb>簾越</rb><rt>すだれご</rt></ruby>しに<ruby><rb>下駄</rb><rt>げた</rt></ruby>の音<ruby><rb>職人</rb><rt>しょくにん</rt></ruby>の<ruby><rb>鼻唄</rb><rt>はなうた</rt></ruby>人の話声がにぎやかに聞え出す。<persName ref="#ragetsu">蘿月</persName>は女房の<persName ref="#otaki">お<ruby><rb>滝</rb><rt>たき</rt></ruby></persName>に注意されてすぐにも<placeName ref="#imado">今戸</placeName>へ行くつもりで<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>を出るのであるが、その<ruby><rb>辺</rb><rt>へん</rt></ruby>の<ruby><rb>涼台</rb><rt>すずみだい</rt></ruby>から声をかけられるがまま腰を<ruby><rb>下</rb><rt>おろ</rt></ruby>すと、<ruby><rb>一杯機嫌</rb><rt>いっぱいきげん</rt></ruby>の<ruby><rb>話好</rb><rt>はなしずき</rt></ruby>に、毎晩きまって<ruby><rb>埒</rb><rt>らち</rt></ruby>もなく話し込んでしまうのであった。</p>
+        <p>朝夕がいくらか涼しく楽になったかと思うと共に大変日が短くなって来た。朝顔の花が日ごとに小さくなり、西日が燃える焔のように狭い<ruby><rb>家中</rb><rt>いえじゅう</rt></ruby>へ差込んで来る<ruby><rb>時分</rb><rt>じぶん</rt></ruby>になると鳴きしきる<ruby><rb>蝉</rb><rt>せみ</rt></ruby>の声が<ruby><rb>一際</rb><rt>ひときわ</rt></ruby><ruby><rb>耳立</rb><rt>みみだ</rt></ruby>って<ruby><rb>急</rb><rt>せわ</rt></ruby>しく聞える。<date when="--08">八月</date>もいつか<ruby><rb>半</rb><rt>なかば</rt></ruby>過ぎてしまったのである。家の<ruby><rb>後</rb><rt>うしろ</rt></ruby>の<ruby><rb>玉蜀黍</rb><rt>とうもろこし</rt></ruby>の畠に吹き渡る風の<ruby><rb>響</rb><rt>ひびき</rt></ruby>が夜なぞは<ruby><rb>折々</rb><rt>おりおり</rt></ruby>雨かと<ruby><rb>誤</rb><rt>あやま</rt></ruby>たれた。<persName ref="#ragetsu">蘿月</persName>は若い時分したい放題身を<ruby><rb>持崩</rb><rt>もちくず</rt></ruby>した道楽の<ruby><rb>名残</rb><rt>なごり</rt></ruby>とて時候の<ruby><rb>変目</rb><rt>かわりめ</rt></ruby>といえば今だに骨の<ruby><rb>節々</rb><rt>ふしぶし</rt></ruby>が痛むので、いつも人より先に秋の立つのを知るのである。秋になったと思うと<ruby><rb>唯</rb><rt>ただ</rt></ruby>わけもなく気がせわしくなる。</p>
+        <p><persName ref="#ragetsu">蘿月</persName>は<ruby><rb>俄</rb><rt>にわか</rt></ruby>に<ruby><rb>狼狽</rb><rt>うろた</rt></ruby>え出し、<ruby><rb>八日頃</rb><rt>ようかごろ</rt></ruby>の夕月がまだ<ruby><rb>真白</rb><rt>ましろ</rt></ruby>く夕焼の空にかかっている頃から<placeName ref="#koume"><ruby><rb>小梅瓦町</rb><rt>こうめかわらまち</rt></ruby></placeName>の<ruby><rb>住居</rb><rt>すまい</rt></ruby>を<ruby><rb>後</rb><rt>あと</rt></ruby>にテクテク<placeName ref="#imado">今戸</placeName>をさして歩いて行った。</p>
+        <p><ruby><rb>堀割</rb><rt>ほりわり</rt></ruby>づたいに<placeName ref="#hikifunedori"><ruby><rb>曳舟通</rb><rt>ひきふねどおり</rt></ruby></placeName>から<ruby><rb>直</rb><rt>す</rt></ruby>ぐさま左へまがると、土地のものでなければ<ruby><rb>行先</rb><rt>ゆくさき</rt></ruby>の分らないほど<ruby><rb>迂回</rb><rt>うかい</rt></ruby>した<ruby><rb>小径</rb><rt>こみち</rt></ruby>が<placeName ref="#mimeguri"><ruby><rb>三囲稲荷</rb><rt>みめぐりいなり</rt></ruby></placeName>の横手を<ruby><rb>巡</rb><rt>めぐ</rt></ruby>って土手へと通じている。小径に沿うては<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>を<ruby><rb>埋立</rb><rt>うめた</rt></ruby>てた<ruby><rb>空地</rb><rt>あきち</rt></ruby>に、新しい<ruby><rb>貸長屋</rb><rt>かしながや</rt></ruby>がまだ<ruby><rb>空家</rb><rt>あきや</rt></ruby>のままに<ruby><rb>立並</rb><rt>たちなら</rt></ruby>んだ処もある。広々した構えの外には大きな庭石を<ruby><rb>据並</rb><rt>すえなら</rt></ruby>べた植木屋もあれば、いかにも<ruby><rb>田舎</rb><rt>いなか</rt></ruby>らしい<ruby><rb>茅葺</rb><rt>かやぶき</rt></ruby>の人家のまばらに立ちつづいている処もある。それらの<ruby><rb>家</rb><rt>うち</rt></ruby>の竹垣の間からは夕月に<ruby><rb>行水</rb><rt>ぎょうずい</rt></ruby>をつかっている女の姿の見える事もあった。<persName ref="#ragetsu">蘿月</persName><ruby><rb>宗匠</rb><rt>そうしょう</rt></ruby>はいくら年をとっても昔の<ruby><rb>気質</rb><rt>かたぎ</rt></ruby>は変らないので見て見ぬように<ruby><rb>窃</rb><rt>そっ</rt></ruby>と立止るが、大概はぞっとしない女房ばかりなので、<ruby><rb>落胆</rb><rt>らくたん</rt></ruby>したようにそのまま<ruby><rb>歩調</rb><rt>あゆみ</rt></ruby>を早める。そして売地や貸家の<ruby><rb>札</rb><rt>ふだ</rt></ruby>を見て<ruby><rb>過</rb><rt>すぎ</rt></ruby>る<ruby><rb>度々</rb><rt>たびたび</rt></ruby>、<ruby><rb>何</rb><rt>なん</rt></ruby>ともつかずその<ruby><rb>胸算用</rb><rt>むなざんよう</rt></ruby>をしながら自分も<ruby><rb>懐手</rb><rt>ふところで</rt></ruby>で<ruby><rb>大儲</rb><rt>おおもうけ</rt></ruby>がして見たいと思う。しかしまた田圃づたいに歩いて行く<ruby><rb>中水田</rb><rt>うちみずた</rt></ruby>のところどころに<ruby><rb>蓮</rb><rt>はす</rt></ruby>の花の見事に咲き乱れたさまを眺め青々した稲の葉に夕風のそよぐ響をきけば、さすがは宗匠だけに、<ruby><rb>銭勘定</rb><rt>ぜにかんじょう</rt></ruby>の事よりも記憶に散在している古人の句をば実に<ruby><rb>巧</rb><rt>うま</rt></ruby>いものだと<ruby><rb>思返</rb><rt>おもいかえ</rt></ruby>すのであった。</p>
+        <p>土手へ<ruby><rb>上</rb><rt>あが</rt></ruby>った時には葉桜のかげは<ruby><rb>早</rb><rt>は</rt></ruby>や<ruby><rb>小暗</rb><rt>おぐら</rt></ruby>く水を隔てた人家には<ruby><rb>灯</rb><rt>ひ</rt></ruby>が見えた。吹きはらう<ruby><rb>河風</rb><rt>かわかぜ</rt></ruby>に桜の<ruby><rb>病葉</rb><rt>わくらば</rt></ruby>がはらはら散る。<persName ref="#ragetsu">蘿月</persName>は休まず歩きつづけた暑さにほっと息をつき、ひろげた胸をば<ruby><rb>扇子</rb><rt>せんす</rt></ruby>であおいだが、まだ店をしまわずにいる<ruby><rb>休茶屋</rb><rt>やすみぢゃや</rt></ruby>を見付けて<ruby><rb>慌忙</rb><rt>あわて</rt></ruby>て立寄り、「おかみさん、<ruby><rb>冷</rb><rt>ひや</rt></ruby>で一杯。」と腰を<ruby><rb>下</rb><rt>おろ</rt></ruby>した。正面に<placeName ref="#matsuchiyama"><ruby><rb>待乳山</rb><rt>まつちやま</rt></ruby></placeName>を見渡す<placeName ref="#sumidagawa"><ruby><rb>隅田川</rb><rt>すみだがわ</rt></ruby></placeName>には夕風を<ruby><rb>孕</rb><rt>はら</rt></ruby>んだ帆かけ船が<ruby><rb>頻</rb><rt>しき</rt></ruby>りに動いて行く。水の<ruby><rb>面</rb><rt>おもて</rt></ruby>の<ruby><rb>黄昏</rb><rt>たそが</rt></ruby>れるにつれて<ruby><rb>鴎</rb><rt>かもめ</rt></ruby>の羽の色が<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って白く見える。宗匠はこの景色を見ると時候はちがうけれど酒なくて何の<ruby><rb>己</rb><rt>おの</rt></ruby>れが桜かなと急に一杯傾けたくなったのである。</p>
+        <p>休茶屋の<ruby><rb>女房</rb><rt>にょうぼ</rt></ruby>が<ruby><rb>縁</rb><rt>ふち</rt></ruby>の厚い底の上ったコップについで出す<ruby><rb>冷酒</rb><rt>ひやざけ</rt></ruby>を、<persName ref="#ragetsu">蘿月</persName>はぐいと<ruby><rb>飲干</rb><rt>のみほ</rt></ruby>してそのまま<placeName ref="#takeya"><ruby><rb>竹屋</rb><rt>たけや</rt></ruby></placeName>の<ruby><rb>渡船</rb><rt>わたしぶね</rt></ruby>に乗った。丁度河の中ほどへ来た頃から舟のゆれるにつれて冷酒がおいおいにきいて来る。葉桜の上に輝きそめた夕月の光がいかにも涼しい。<ruby><rb>滑</rb><rt>なめらか</rt></ruby>な満潮の水は「お前どこ行く」と<ruby><rb>流行唄</rb><rt>はやりうた</rt></ruby>にもあるようにいかにも<ruby><rb>投遣</rb><rt>なげや</rt></ruby>った<ruby><rb>風</rb><rt>ふう</rt></ruby>に心持よく流れている。宗匠は目をつぶって<ruby><rb>独</rb><rt>ひとり</rt></ruby>で鼻唄をうたった。</p>
+        <p><ruby><rb>向河岸</rb><rt>むこうがし</rt></ruby>へつくと急に思出して近所の菓子屋を探して<ruby><rb>土産</rb><rt>みやげ</rt></ruby>を買い<placeName ref="#imadobashi"><ruby><rb>今戸橋</rb><rt>いまどばし</rt></ruby></placeName>を渡って<ruby><rb>真直</rb><rt>まっすぐ</rt></ruby>な道をば自分ばかりは<ruby><rb>足許</rb><rt>あしもと</rt></ruby>のたしかなつもりで、実は大分ふらふらしながら歩いて行った。</p>
+        <p>そこ<ruby><rb>此処</rb><rt>ここ</rt></ruby>に二、三軒<ruby><rb>今戸焼</rb><rt>いまどやき</rt></ruby>を売る店にわずかな特徴を見るばかり、<ruby><rb>何処</rb><rt>いずこ</rt></ruby>の場末にもよくあるような低い人家つづきの<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>である。人家の軒下や<ruby><rb>路地口</rb><rt>ろじぐち</rt></ruby>には話しながら涼んでいる人の<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>が薄暗い<ruby><rb>軒燈</rb><rt>けんとう</rt></ruby>の光に<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って白く見えながら、あたりは一体にひっそりして<ruby><rb>何処</rb><rt>どこ</rt></ruby>かで犬の<ruby><rb>吠</rb><rt>ほ</rt></ruby>える声と<ruby><rb>赤児</rb><rt>あかご</rt></ruby>のなく声が聞える。<ruby><rb>天</rb><rt>あま</rt></ruby>の<ruby><rb>川</rb><rt>がわ</rt></ruby>の<ruby><rb>澄渡</rb><rt>すみわた</rt></ruby>った空に<ruby><rb>繁</rb><rt>しげ</rt></ruby>った木立を<ruby><rb>聳</rb><rt>そびや</rt></ruby>かしている<placeName ref="#imadohachiman"><ruby><rb>今戸八幡</rb><rt>いまどはちまん</rt></ruby></placeName>の前まで来ると、<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>間</rb><rt>ま</rt></ruby>もなく並んだ軒燈の間に<ruby><rb>常磐津<persName ref="#otoyo">文字豊</persName></rb><rt>ときわずもじとよ</rt></ruby>と<ruby><rb>勘亭流</rb><rt>かんていりゅう</rt></ruby>で書いた妹の家の<ruby><rb>灯</rb><rt>ひ</rt></ruby>を認めた。家の前の往来には人が二、三人も立止って<ruby><rb>内</rb><rt>なか</rt></ruby>なる<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>の<ruby><rb>浄瑠璃</rb><rt>じょうるり</rt></ruby>を聞いていた。</p>
+        <p>折々恐しい音して<ruby><rb>鼠</rb><rt>ねずみ</rt></ruby>の走る天井からホヤの曇った<ruby><rb>六分心</rb><rt>ろくぶしん</rt></ruby>のランプがところどころ<ruby><rb>宝丹</rb><rt>ほうたん</rt></ruby>の広告や『<ruby><rb>都新聞</rb><rt>みやこしんぶん</rt></ruby>』の新年附録の美人画なぞで<ruby><rb>破</rb><rt>やぶ</rt></ruby>れ<ruby><rb>目</rb><rt>め</rt></ruby>をかくした<ruby><rb>襖</rb><rt>ふすま</rt></ruby>を始め、<ruby><rb>飴色</rb><rt>あめいろ</rt></ruby>に古びた<ruby><rb>箪笥</rb><rt>たんす</rt></ruby>、<ruby><rb>雨漏</rb><rt>あまもり</rt></ruby>のあとのある古びた壁なぞ、八畳の座敷一体をいかにも薄暗く<ruby><rb>照</rb><rt>てら</rt></ruby>している。古ぼけた<ruby><rb>葭戸</rb><rt>よしど</rt></ruby>を立てた縁側の<ruby><rb>外</rb><rt>そと</rt></ruby>には<ruby><rb>小庭</rb><rt>こにわ</rt></ruby>があるのやらないのやら分らぬほどな<ruby><rb>闇</rb><rt>やみ</rt></ruby>の中に軒の<ruby><rb>風鈴</rb><rt>ふうりん</rt></ruby>が<ruby><rb>淋</rb><rt>さび</rt></ruby>しく鳴り虫が<ruby><rb>静</rb><rt>しずか</rt></ruby>に鳴いている。師匠の<persName ref="#otoyo">お<ruby><rb>豊</rb><rt>とよ</rt></ruby></persName>は縁日ものの植木鉢を並べ、<ruby><rb>不動尊</rb><rt>ふどうそん</rt></ruby>の掛物をかけた<ruby><rb>床</rb><rt>とこ</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>を<ruby><rb>後</rb><rt>うしろ</rt></ruby>にしてべったり<ruby><rb>坐</rb><rt>すわ</rt></ruby>った<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の上に<ruby><rb>三味線</rb><rt>しゃみせん</rt></ruby>をかかえ、<ruby><rb>樫</rb><rt>かし</rt></ruby>の<ruby><rb>撥</rb><rt>ばち</rt></ruby>で時々前髪のあたりをかきながら、掛声をかけては弾くと、<ruby><rb>稽古本</rb><rt>けいこぼん</rt></ruby>を広げた<ruby><rb>桐</rb><rt>きり</rt></ruby>の小机を中にして<ruby><rb>此方</rb><rt>こなた</rt></ruby>には三十前後の商人らしい男が<ruby><rb>中音</rb><rt>ちゅうおん</rt></ruby>で、「そりや何をいはしやんす、今さら兄よ<ruby><rb>妹</rb><rt>いもうと</rt></ruby>といふにいはれぬ<ruby><rb>恋中</rb><rt>こいなか</rt></ruby>は……。」と「<ruby><rb>小稲半兵衛</rb><rt>こいなはんべえ</rt></ruby>」の<ruby><rb>道行</rb><rt>みちゆき</rt></ruby>を語る。</p>
+        <p><persName ref="#ragetsu">蘿月</persName>は稽古のすむまで<ruby><rb>縁近</rb><rt>えんぢか</rt></ruby>くに坐って、<ruby><rb>扇子</rb><rt>せんす</rt></ruby>をぱちくりさせながら、まだ<ruby><rb>冷酒</rb><rt>ひやざけ</rt></ruby>のすっかり<ruby><rb>醒</rb><rt>さ</rt></ruby>めきらぬ処から、時々は我知らず口の中で稽古の男と一しょに<ruby><rb>唄</rb><rt>うた</rt></ruby>ったが、時々は目をつぶって遠慮なく<ruby><rb>噯</rb><rt>おくび</rt></ruby>をした<ruby><rb>後</rb><rt>のち</rt></ruby>、<ruby><rb>身体</rb><rt>からだ</rt></ruby>を軽く<ruby><rb>左右</rb><rt>さゆう</rt></ruby>にゆすりながら<persName ref="#otoyo">お豊</persName>の顔をば何の気もなく眺めた。<persName ref="#otoyo">お豊</persName>はもう四十以上であろう。薄暗い<ruby><rb>釣</rb><rt>つるし</rt></ruby>ランプの光が<ruby><rb>痩</rb><rt>や</rt></ruby>せこけた小作りの<ruby><rb>身体</rb><rt>からだ</rt></ruby>をばなお更に<ruby><rb>老</rb><rt>ふ</rt></ruby>けて見せるので、ふいとこれが昔は立派な<ruby><rb>質屋</rb><rt>しちや</rt></ruby>の可愛らしい<ruby><rb>箱入娘</rb><rt>はこいりむすめ</rt></ruby>だったのかと思うと、<persName ref="#ragetsu">蘿月</persName>は悲しいとか<ruby><rb>淋</rb><rt>さび</rt></ruby>しいとかそういう現実の感慨を<ruby><rb>通過</rb><rt>とおりこ</rt></ruby>して、<ruby><rb>唯</rb><rt>た</rt></ruby>だ唯だ不思議な気がしてならない。その頃は自分もやはり若くて美しくて、女にすかれて、道楽して、とうとう実家を<ruby><rb>七生</rb><rt>しちしょう</rt></ruby>まで<ruby><rb>勘当</rb><rt>かんどう</rt></ruby>されてしまったが、今になってはその頃の事はどうしても事実ではなくて夢としか思われない。<ruby><rb>算盤</rb><rt>そろばん</rt></ruby>で<ruby><rb>乃公</rb><rt>おれ</rt></ruby>の頭をなぐった<ruby><rb>親爺</rb><rt>おやじ</rt></ruby>にしろ、泣いて意見をした<ruby><rb>白鼠</rb><rt>しろねずみ</rt></ruby>の番頭にしろ、<ruby><rb>暖簾</rb><rt>のれん</rt></ruby>を分けてもらった<persName ref="#otoyo">お豊</persName>の亭主にしろ、そういう人たちは怒ったり笑ったり泣いたり喜んだりして、汗をたらして<ruby><rb>飽</rb><rt>あ</rt></ruby>きずによく働いていたものだが、<ruby><rb>一人々々</rb><rt>ひとりひとり</rt></ruby>皆死んでしまった<ruby><rb>今日</rb><rt>きょう</rt></ruby>となって見れば、あの人たちはこの世の中に生れて来ても来なくてもつまる処は同じようなものだった。まだしも自分と<persName ref="#otoyo">お豊</persName>の生きている間は、あの人たちは<ruby><rb>両人</rb><rt>ふたり</rt></ruby>の記憶の<ruby><rb>中</rb><rt>うち</rt></ruby>に残されているものの、やがて自分たちも死んでしまえばいよいよ何も<ruby><rb>彼</rb><rt>か</rt></ruby>も煙になって<ruby><rb>跡方</rb><rt>あとかた</rt></ruby>もなく消え<ruby><rb>失</rb><rt>う</rt></ruby>せてしまうのだ……。</p>
+        <p>「<ruby><rb>兄</rb><rt>にい</rt></ruby>さん、実は二、三日<ruby><rb>中</rb><rt>うち</rt></ruby>に<ruby><rb>私</rb><rt>わたし</rt></ruby>の方からお邪魔に<ruby><rb>上</rb><rt>あが</rt></ruby>ろうと思っていたんだよ。」と<persName ref="#otoyo">お豊</persName>が突然話しだした。</p>
+        <p>稽古の男は「<ruby><rb>小稲半兵衛</rb><rt>こいなはんべえ</rt></ruby>」をさらった<ruby><rb>後</rb><rt>のち</rt></ruby>同じような「お<ruby><rb>妻八郎兵衛</rb><rt>つまはちろべえ</rt></ruby>」の<ruby><rb>語出</rb><rt>かたりだ</rt></ruby>しを二、三度<ruby><rb>繰返</rb><rt>くりかえ</rt></ruby>して帰って行ったのである。<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>尤</rb><rt>もっと</rt></ruby>もらしく<ruby><rb>坐</rb><rt>すわ</rt></ruby>り<ruby><rb>直</rb><rt>なお</rt></ruby>して扇子で軽く<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を<ruby><rb>叩</rb><rt>たた</rt></ruby>いた。</p>
+        <p>「実はね。」と<persName ref="#otoyo">お豊</persName>は同じ言葉を繰返して、「<placeName ref="#komagome"><ruby><rb>駒込</rb><rt>こまごめ</rt></ruby></placeName>のお寺が市区改正で取払いになるんだとさ。それでね、死んだお<ruby><rb>父</rb><rt>とっ</rt></ruby>つァんのお墓を<placeName ref="#yanaka"><ruby><rb>谷中</rb><rt>やなか</rt></ruby></placeName>か<placeName ref="#somei"><ruby><rb>染井</rb><rt>そめい</rt></ruby></placeName>か<ruby><rb>何処</rb><rt>どこ</rt></ruby>かへ移さなくっちゃならないんだってね、四、五日前にお寺からお使が来たから、どうしたものかと、その相談に行こうと思ってたのさ。」</p>
+        <p>「なるほど。」と<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>頷付</rb><rt>うなず</rt></ruby>いて、「そういう事なら<ruby><rb>打捨</rb><rt>うっちゃ</rt></ruby>っても置けまい。もう何年になるかな、<ruby><rb>親爺</rb><rt>おやじ</rt></ruby>が死んでから……。」</p>
+        <p>首を<ruby><rb>傾</rb><rt>かし</rt></ruby>げて考えたが、<persName ref="#otoyo">お豊</persName>の方は着々話しを進めて<placeName ref="#somei">染井</placeName>の墓地の<ruby><rb>地代</rb><rt>じだい</rt></ruby>が<ruby><rb>一坪</rb><rt>ひとつぼ</rt></ruby>いくら、寺への心付けがどうのこうのと、それについては女の身よりも男の<persName ref="#ragetsu">蘿月</persName>に万事を引受けて取計らってもらいたいというのであった。</p>
+        <p><persName ref="#ragetsu">蘿月</persName>はもと<placeName ref="#koishikawaomotemachi"><ruby><rb>小石川表町</rb><rt>こいしかわおもてまち</rt></ruby></placeName>の<placeName ref="#sagamiya"><ruby><rb>相模屋</rb><rt>さがみや</rt></ruby></placeName>という質屋の<ruby><rb>後取息子</rb><rt>あととりむすこ</rt></ruby>であったが勘当の<ruby><rb>末</rb><rt>すえ</rt></ruby>若隠居の身となった。頑固な父が世を去ってからは妹<persName ref="#otoyo">お豊</persName>を妻にした店の番頭が正直に<placeName ref="#sagamiya">相模屋</placeName>の商売をつづけていた。ところが<ruby><rb>御維新</rb><rt>ごいっしん</rt></ruby>この<ruby><rb>方</rb><rt>かた</rt></ruby>時勢の変遷で次第に家運の傾いて来た折も折火事にあって質屋はそれなり<ruby><rb>潰</rb><rt>つぶ</rt></ruby>れてしまった。で、<ruby><rb>風流三昧</rb><rt>ふうりゅうざんまい</rt></ruby>の<persName ref="#ragetsu">蘿月</persName>はやむをえず<ruby><rb>俳諧</rb><rt>はいかい</rt></ruby>で世を渡るようになり、<persName ref="#otoyo">お豊</persName>はその<ruby><rb>後</rb><rt>ご</rt></ruby>亭主に死別れた不幸つづきに昔名を取った遊芸を幸い<ruby><rb>常磐津</rb><rt>ときわず</rt></ruby>の師匠で<ruby><rb>生計</rb><rt>くらし</rt></ruby>を立てるようになった。<persName ref="#otoyo">お豊</persName>には今年十八になる男の子が一人ある。<ruby><rb>零落</rb><rt>れいらく</rt></ruby>した女親がこの世の楽しみというのは全くこの一人息子<persName ref="#chokichi"><ruby><rb>長吉</rb><rt>ちょうきち</rt></ruby></persName>の出世を見ようという事ばかりで、商人はいつ失敗するか分らないという経験から、<persName ref="#otoyo">お豊</persName>は三度の飯を二度にしても、行く行くはわが<ruby><rb>児</rb><rt>こ</rt></ruby>を大学校に入れて立派な月給取りにせねばならぬと思っている。</p>
+        <p><persName ref="#ragetsu">蘿月</persName><ruby><rb>宗匠</rb><rt>そうしょう</rt></ruby>は冷えた茶を<ruby><rb>飲干</rb><rt>のみほ</rt></ruby>しながら、「<persName ref="#chokichi">長吉</persName>はどうしました。」</p>
+        <p>すると<persName ref="#otoyo">お豊</persName>はもう得意らしく、「学校は今夏休みですがね、遊ばしといちゃいけないと思って<placeName ref="#hongo"><ruby><rb>本郷</rb><rt>ほんごう</rt></ruby></placeName>まで夜学にやります。」</p>
+        <p>「じゃ帰りは<ruby><rb>晩</rb><rt>おそ</rt></ruby>いね。」</p>
+        <p>「ええ。いつでも十時過ぎますよ。電車はありますがね、随分<ruby><rb>遠路</rb><rt>とおみち</rt></ruby>ですからね。」</p>
+        <p>「<ruby><rb>吾輩</rb><rt>こちとら</rt></ruby>とは違って今時の若いものは感心だね。」宗匠は言葉を切って、「中学校だっけね、<ruby><rb>乃公</rb><rt>おれ</rt></ruby>は子供を持った事がねえから<ruby><rb>当節</rb><rt>とうせつ</rt></ruby>の学校の事はちっとも分らない。大学校まで行くにゃまだよほどかかるのかい。」</p>
+        <p>「来年卒業してから試験を受けるんでさアね。大学校へ行く前に、もう一ツ……大きな学校があるんです。」<persName ref="#otoyo">お豊</persName>は何も<ruby><rb>彼</rb><rt>か</rt></ruby>も<ruby><rb>一口</rb><rt>ひとくち</rt></ruby>に説明してやりたいと心ばかりは<ruby><rb>急</rb><rt>あせ</rt></ruby>っても、やはり時勢に<ruby><rb>疎</rb><rt>うと</rt></ruby>い女の事で<ruby><rb>忽</rb><rt>たちま</rt></ruby>ちいい<ruby><rb>淀</rb><rt>よど</rt></ruby>んでしまった。</p>
+        <p>「たいした<ruby><rb>経費</rb><rt>かかり</rt></ruby>だろうね。」</p>
+        <p>「ええそれァ、大抵じゃありませんよ。何しろ、あなた、月謝ばかりが<ruby><rb>毎月</rb><rt>まいげつ</rt></ruby>一円、本代だって試験の<ruby><rb>度々</rb><rt>たんび</rt></ruby>に二、三円じゃききませんしね、それに夏冬ともに洋服を着るんでしょう、靴だって年に二足は<ruby><rb>穿</rb><rt>は</rt></ruby>いてしまいますよ。」</p>
+        <p><persName ref="#otoyo">お豊</persName>は調子づいて苦心のほどを一倍強く見せようためか声に力を入れて話したが、<persName ref="#ragetsu">蘿月</persName>はその時、それほどにまで無理をするなら、何も大学校へ入れないでも、<persName ref="#chokichi">長吉</persName>にはもっと身分相応な立身の<ruby><rb>途</rb><rt>みち</rt></ruby>がありそうなものだという気がした。しかし口へ出していうほどの事でもないので、何か話題の変化をと望む<ruby><rb>矢先</rb><rt>やさき</rt></ruby>へ、自然に思い出されたのは長告が子供の時分の遊び友達で<persName ref="#oito">お<ruby><rb>糸</rb><rt>いと</rt></ruby></persName>といった<ruby><rb>煎餅屋</rb><rt>せんべいや</rt></ruby>の娘の事である。<persName ref="#ragetsu">蘿月</persName>はその頃<persName ref="#otoyo">お豊</persName>の家を訪ねた時にはきまって<ruby><rb>甥</rb><rt>おい</rt></ruby>の<persName ref="#chokichi">長吉</persName>と<persName ref="#oito">お糸</persName>をつれては<placeName ref="#okuyama"><ruby><rb>奥山</rb><rt>おくやま</rt></ruby></placeName>や<placeName ref="#satakeppara"><ruby><rb>佐竹</rb><rt>さたけ</rt></ruby>ッ<ruby><rb>原</rb><rt>ぱら</rt></ruby></placeName>の<ruby><rb>見世物</rb><rt>みせもの</rt></ruby>を見に行ったのだ。</p>
+        <p>「<persName ref="#chokichi">長吉</persName>が十八じゃ、あの<ruby><rb>娘</rb><rt>こ</rt></ruby>はもう立派な<ruby><rb>姉</rb><rt>ねえ</rt></ruby>さんだろう。やはり稽古に来るかい。」</p>
+        <p>「<ruby><rb>家</rb><rt>うち</rt></ruby>へは来ませんがね、この先の<persName ref="#kineya"><ruby><rb>杵屋</rb><rt>きねや</rt></ruby></persName>さんにゃ毎日<ruby><rb>通</rb><rt>かよ</rt></ruby>ってますよ。もう<ruby><rb>直</rb><rt>じ</rt></ruby>き<placeName ref="#yoshicho"><ruby><rb>葭町</rb><rt>よしちょう</rt></ruby></placeName>へ出るんだっていいますがね……。」と<persName ref="#otoyo">お豊</persName>は何か考えるらしく<ruby><rb>語</rb><rt>ことば</rt></ruby>を切った。</p>
+        <p>「<placeName ref="#yoshicho">葭町</placeName>へ出るのか。そいつア<ruby><rb>豪儀</rb><rt>ごうぎ</rt></ruby>だ。子供の時からちょいと口のききようのませた、<ruby><rb>好</rb><rt>い</rt></ruby>い<ruby><rb>娘</rb><rt>こ</rt></ruby>だったよ。今夜にでも遊びに来りゃアいいに。ねえ、<persName ref="#otoyo">お豊</persName>。」と宗匠は急に元気づいたが、<persName ref="#otoyo">お豊</persName>はポンと<ruby><rb>長煙管</rb><rt>ながぎせる</rt></ruby>をはたいて、</p>
+        <p>「以前とちがって、<persName ref="#chokichi">長吉</persName>も今が勉強ざかりだしね……。」</p>
+        <p>「ははははは。間違いでもあっちゃならないというのかね。<ruby><rb>尤</rb><rt>もっと</rt></ruby>もだよ。この道ばかりは全く油断がならないからな。」</p>
+        <p>「ほんとさ。お前さん。」<persName ref="#otoyo">お豊</persName>は首を長く<ruby><rb>延</rb><rt>のば</rt></ruby>して、「私の<ruby><rb>僻目</rb><rt>ひがめ</rt></ruby>かも知れないが、実はどうも<persName ref="#chokichi">長吉</persName>の様子が心配でならないのさ。」</p>
+        <p>「だから、いわない<ruby><rb>事</rb><rt>こ</rt></ruby>ッちゃない。」と<persName ref="#ragetsu">蘿月</persName>は軽く握り<ruby><rb>拳</rb><rt>こぶし</rt></ruby>で<ruby><rb>膝頭</rb><rt>ひざがしら</rt></ruby>をたたいた。<persName ref="#otoyo">お豊</persName>は<persName ref="#chokichi">長吉</persName>と<persName ref="#oito">お糸</persName>のことが<ruby><rb>唯</rb><rt>ただ</rt></ruby><ruby><rb>何</rb><rt>なん</rt></ruby>となしに心配でならない。というのは、<persName ref="#oito">お糸</persName>が<ruby><rb>長唄</rb><rt>ながうた</rt></ruby>の稽古帰りに毎朝用もないのにきっと立寄って見る、それをば<persName ref="#chokichi">長吉</persName>は必ず待っている様子でその時間<ruby><rb>頃</rb><rt>ごろ</rt></ruby>には<ruby><rb>一足</rb><rt>ひとあし</rt></ruby>だって窓の<ruby><rb>傍</rb><rt>そば</rt></ruby>を去らない。それのみならず、いつぞや<persName ref="#oito">お糸</persName>が病気で十日ほども寝ていた時には、<persName ref="#chokichi">長吉</persName>は<ruby><rb>外目</rb><rt>よそめ</rt></ruby>も<ruby><rb>可笑</rb><rt>おか</rt></ruby>しいほどにぼんやりしていた事などを息もつかずに語りつづけた。</p>
+        <p>次の<ruby><rb>間</rb><rt>ま</rt></ruby>の時計が九時を打出した時突然<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>ががらりと明いた。その明けようで<persName ref="#otoyo">お豊</persName>はすぐに<persName ref="#chokichi">長吉</persName>の帰って来た事を知り急に話を<ruby><rb>途切</rb><rt>とぎら</rt></ruby>しその方に振返りながら、</p>
+        <p>「大変早いようだね、今夜は。」</p>
+        <p>「先生が病気で一時間早くひけたんだ。」</p>
+        <p>「<placeName ref="#koume"><ruby><rb>小梅</rb><rt>こうめ</rt></ruby></placeName>の伯父さんがおいでだよ。」</p>
+        <p>返事は聞えなかったが、次の<ruby><rb>間</rb><rt>ま</rt></ruby>に<ruby><rb>包</rb><rt>つつみ</rt></ruby>を投出す音がして、<ruby><rb>直様</rb><rt>すぐさま</rt></ruby><persName ref="#chokichi">長吉</persName>は<ruby><rb>温順</rb><rt>おとな</rt></ruby>しそうな弱そうな色の白い顔を<ruby><rb>襖</rb><rt>ふすま</rt></ruby>の間から見せた。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p>残暑の夕日が<ruby><rb>一</rb><rt>ひと</rt></ruby>しきり夏の<ruby><rb>盛</rb><rt>さかり</rt></ruby>よりも<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく、ひろびろした<ruby><rb>河面</rb><rt>かわづら</rt></ruby>一帯に燃え立ち、<ruby><rb>殊更</rb><rt>ことさら</rt></ruby>に大学の<ruby><rb>艇庫</rb><rt>ていこ</rt></ruby>の<ruby><rb>真白</rb><rt>まっしろ</rt></ruby>なペンキ塗の<ruby><rb>板目</rb><rt>はめ</rt></ruby>に反映していたが、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の光の消えて行くようにあたりは全体に薄暗く灰色に変色して来て、満ち来る<ruby><rb>夕汐</rb><rt>ゆうしお</rt></ruby>の上を滑って行く<ruby><rb>荷船</rb><rt>にぶね</rt></ruby>の帆のみが真白く<ruby><rb>際立</rb><rt>きわだ</rt></ruby>った。と見る<ruby><rb>間</rb><rt>ま</rt></ruby>もなく<ruby><rb>初秋</rb><rt>しょしゅう</rt></ruby>の<ruby><rb>黄昏</rb><rt>たそがれ</rt></ruby>は幕の<ruby><rb>下</rb><rt>おり</rt></ruby>るように早く夜に変った。流れる水がいやに<ruby><rb>眩</rb><rt>まぶ</rt></ruby>しくきらきら光り出して、<ruby><rb>渡船</rb><rt>わたしぶね</rt></ruby>に乗っている人の形をくっきりと<ruby><rb>墨絵</rb><rt>すみえ</rt></ruby>のように黒く染め出した。堤の上に長く<ruby><rb>横</rb><rt>よこた</rt></ruby>わる葉桜の<ruby><rb>木立</rb><rt>こだち</rt></ruby>は<ruby><rb>此方</rb><rt>こなた</rt></ruby>の岸から望めば恐しいほど<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>になり、<ruby><rb>一時</rb><rt>いちじ</rt></ruby>は面白いように引きつづいて動いていた荷船はいつの間にか<ruby><rb>一艘</rb><rt>いっそう</rt></ruby>残らず上流の<ruby><rb>方</rb><rt>ほう</rt></ruby>に消えてしまって、<ruby><rb>釣</rb><rt>つり</rt></ruby>の帰りらしい小舟がところどころ<ruby><rb>木</rb><rt>こ</rt></ruby>の<ruby><rb>葉</rb><rt>は</rt></ruby>のように浮いているばかり、見渡す<placeName ref="#sumidagawa"><ruby><rb>隅田川</rb><rt>すみだがわ</rt></ruby></placeName>は再びひろびろとしたばかりか<ruby><rb>静</rb><rt>しずか</rt></ruby>に<ruby><rb>淋</rb><rt>さび</rt></ruby>しくなった。遥か<ruby><rb>川上</rb><rt>かわかみ</rt></ruby>の空のはずれに夏の名残を示す雲の峰が立っていて細い稲妻が<ruby><rb>絶間</rb><rt>たえま</rt></ruby>なく<ruby><rb>閃</rb><rt>ひら</rt></ruby>めいては消える。</p>
+        <p><persName ref="#chokichi">長吉</persName>は<ruby><rb>先刻</rb><rt>さっき</rt></ruby>から一人ぼんやりして、<ruby><rb>或</rb><rt>ある</rt></ruby>時は<placeName ref="#imadobashi"><ruby><rb>今戸橋</rb><rt>いまどばし</rt></ruby></placeName>の<ruby><rb>欄干</rb><rt>らんかん</rt></ruby>に<ruby><rb>凭</rb><rt>もた</rt></ruby>れたり、或時は岸の石垣から<ruby><rb>渡場</rb><rt>わたしば</rt></ruby>の<ruby><rb>桟橋</rb><rt>さんばし</rt></ruby>へ下りて見たりして、夕日から黄昏、黄昏から夜になる河の景色を眺めていた。今夜暗くなって人の顔がよくは見えない時分になったら<placeName ref="#imadobashi">今戸橋</placeName>の上で<persName ref="#oito">お糸</persName>と<ruby><rb>逢</rb><rt>あ</rt></ruby>う約束をしたからである。しかし丁度日曜日に当って夜学校を口実にも出来ない処から<ruby><rb>夕飯</rb><rt>ゆうめし</rt></ruby>を<ruby><rb>済</rb><rt>すま</rt></ruby>すが否やまだ日の落ちぬ<ruby><rb>中</rb><rt>うち</rt></ruby>ふいと<ruby><rb>家</rb><rt>うち</rt></ruby>を出てしまった。一しきり渡場へ急ぐ人の<ruby><rb>往来</rb><rt>ゆきき</rt></ruby>も今では<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど絶え、橋の下に<ruby><rb>夜泊</rb><rt>よどま</rt></ruby>りする荷船の<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>が<placeName ref="#keiyoji"><ruby><rb>慶養寺</rb><rt>けいようじ</rt></ruby></placeName>の高い木立を<ruby><rb>倒</rb><rt>さかさ</rt></ruby>に映した<placeName ref="#sanyabori"><ruby><rb>山谷堀</rb><rt>さんやぼり</rt></ruby></placeName>の水に美しく流れた。<ruby><rb>門口</rb><rt>かどぐち</rt></ruby>に柳のある新しい二階家からは三味線が聞えて、水に添う低い<ruby><rb>小家</rb><rt>こいえ</rt></ruby>の<ruby><rb>格子戸外</rb><rt>こうしどそと</rt></ruby>には<ruby><rb>裸体</rb><rt>はだか</rt></ruby>の亭主が涼みに出はじめた。<persName ref="#chokichi">長吉</persName>はもう来る時分であろうと思って<ruby><rb>一心</rb><rt>いっしん</rt></ruby>に橋向うを眺めた。</p>
+        <p>最初に橋を渡って来た人影は黒い麻の<ruby><rb>僧衣</rb><rt>ころも</rt></ruby>を着た坊主であった。つづいて<ruby><rb>尻端折</rb><rt>しりはしおり</rt></ruby>の<ruby><rb>股引</rb><rt>ももひき</rt></ruby>にゴム靴をはいた<ruby><rb>請負師</rb><rt>うけおいし</rt></ruby>らしい男の通った<ruby><rb>後</rb><rt>あと</rt></ruby>、<ruby><rb>暫</rb><rt>しばら</rt></ruby>くしてから、<ruby><rb>蝙蝠傘</rb><rt>こうもりがさ</rt></ruby>と小包を提げた貧し<ruby><rb>気</rb><rt>げ</rt></ruby>な女房が<ruby><rb>日和下駄</rb><rt>ひよりげた</rt></ruby>で色気もなく砂を<ruby><rb>蹴立</rb><rt>けた</rt></ruby>てて<ruby><rb>大股</rb><rt>おおまた</rt></ruby>に歩いて行った。もういくら待っても人通りはない。<persName ref="#chokichi">長吉</persName>は<ruby><rb>詮方</rb><rt>せんかた</rt></ruby>なく疲れた眼を河の方に移した。<ruby><rb>河面</rb><rt>かわづら</rt></ruby>は<ruby><rb>先刻</rb><rt>さっき</rt></ruby>よりも一体に<ruby><rb>明</rb><rt>あかる</rt></ruby>くなり気味悪い雲の峯は影もなく消えている。<persName ref="#chokichi">長吉</persName>はその時<ruby><rb><placeName ref="#chomeiji">長命寺</placeName>辺</rb><rt>ちょうめいじへん</rt></ruby>の堤の上の木立から、<ruby><rb>他分</rb><rt>たぶん</rt></ruby><date when="--07">旧暦七月</date>の満月であろう、赤味を帯びた大きな月の昇りかけているのを認めた。空は鏡のように<ruby><rb>明</rb><rt>あかる</rt></ruby>いのでそれを<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>る堤と木立はますます黒く、星は宵の明星の<ruby><rb>唯</rb><rt>たっ</rt></ruby>た一つ見えるばかりでその<ruby><rb>他</rb><rt>た</rt></ruby>は<ruby><rb>尽</rb><rt>ことごと</rt></ruby>く余りに明い空の光に掻き消され、横ざまに長く<ruby><rb>棚曳</rb><rt>たなび</rt></ruby>く雲のちぎれが銀色に<ruby><rb>透通</rb><rt>すきとお</rt></ruby>って輝いている。見る見る<ruby><rb>中</rb><rt>うち</rt></ruby>満月が木立を離れるに従い<ruby><rb>河岸</rb><rt>かわぎし</rt></ruby>の夜露をあびた<ruby><rb>瓦</rb><rt>かわら</rt></ruby>屋根や、水に<ruby><rb>湿</rb><rt>ぬ</rt></ruby>れた<ruby><rb>棒杭</rb><rt>ぼうぐい</rt></ruby>、満潮に流れ寄る石垣下の<ruby><rb>藻草</rb><rt>もぐさ</rt></ruby>のちぎれ、船の横腹、<ruby><rb>竹竿</rb><rt>たけざお</rt></ruby>なぞが、<ruby><rb>逸早</rb><rt>いちはや</rt></ruby>く月の光を受けて<ruby><rb>蒼</rb><rt>あお</rt></ruby>く輝き出した。忽ち<persName ref="#chokichi">長吉</persName>は自分の影が橋板の上に段々に濃く描き出されるのを知った。通りかかるホーカイ<ruby><rb>節</rb><rt>ぶし</rt></ruby>の男女が二人、「まア御覧よ。お月様。」といって<ruby><rb>暫</rb><rt>しばら</rt></ruby>く立止った<ruby><rb>後</rb><rt>のち</rt></ruby>、<placeName ref="#sanyabori">山谷堀</placeName>の<ruby><rb>岸辺</rb><rt>きしべ</rt></ruby>に曲るが否や<ruby><rb>当付</rb><rt>あてつけ</rt></ruby>がましく、</p>
+        <p>〽書生さん橋の<ruby><rb>欄干</rb><rt>らんかん</rt></ruby>に腰<ruby><rb>打</rb><rt>うち</rt></ruby>かけて――</p>
+        <p>と立ちつづく<ruby><rb>小家</rb><rt>こいえ</rt></ruby>の前で歌ったが金にならないと見たか歌いも<ruby><rb>了</rb><rt>おわ</rt></ruby>らず、元の<ruby><rb>急足</rb><rt>いそぎあし</rt></ruby>で<placeName ref="#yoshiwaradote"><ruby><rb>吉原土手</rb><rt>よしわらどて</rt></ruby></placeName>の方へ行ってしまった。</p>
+        <p><persName ref="#chokichi">長吉</persName>はいつも<ruby><rb>忍会</rb><rt>しのびあい</rt></ruby>の恋人が経験するさまざまの<ruby><rb>懸念</rb><rt>けねん</rt></ruby>と待ちあぐむ心のいらだちの<ruby><rb>外</rb><rt>ほか</rt></ruby>に、何とも知れぬ一種の悲哀を感じた。<persName ref="#oito">お糸</persName>と自分との行末……行末というよりも今夜会って<ruby><rb>後</rb><rt>のち</rt></ruby>の<ruby><rb>明日</rb><rt>あした</rt></ruby>はどうなるのであろう。<persName ref="#oito">お糸</persName>は今夜<ruby><rb>兼</rb><rt>かね</rt></ruby>てから話のしてある<placeName ref="#yoshicho"><ruby><rb>葭町</rb><rt>よしちょう</rt></ruby></placeName>の<ruby><rb>芸者屋</rb><rt>げいしゃや</rt></ruby>まで出掛けて相談をして来るという事で、その<ruby><rb>道中</rb><rt>どうちゅう</rt></ruby>をば二人一緒に話しながら歩こうと約束したのである。<persName ref="#oito">お糸</persName>がいよいよ芸者になってしまえばこれまでのように毎日<ruby><rb>逢</rb><rt>あ</rt></ruby>う事ができなくなるのみならず、それが万事の終りであるらしく思われてならない。自分の知らない<ruby><rb>如何</rb><rt>いか</rt></ruby>にも遠い国へと再び帰る事なく<ruby><rb>去</rb><rt>い</rt></ruby>ってしまうような気がしてならないのだ。今夜のお月様は忘れられない。一生に二度見られない月だなアと<persName ref="#chokichi">長吉</persName>はしみじみ思った。あらゆる記憶の数々が電光のように<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>く。最初<placeName ref="#jikatamachi"><ruby><rb>地方町</rb><rt>じかたまち</rt></ruby></placeName>の小学校へ行く頃は毎日のように<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>して遊んだ。やがては<ruby><rb>皆</rb><rt>みん</rt></ruby>なから近所の<ruby><rb>板塀</rb><rt>いたべい</rt></ruby>や土蔵の壁に<ruby><rb>相々傘</rb><rt>あいあいがさ</rt></ruby>をかかれて<ruby><rb>囃</rb><rt>はや</rt></ruby>された。<placeName ref="#koume">小梅</placeName>の伯父さんにつれられて<placeName ref="#okuyama">奥山</placeName>の<ruby><rb>見世物</rb><rt>みせもの</rt></ruby>を見に行ったり池の<ruby><rb>鯉</rb><rt>こい</rt></ruby>に<ruby><rb>麩</rb><rt>ふ</rt></ruby>をやったりした。</p>
+        <p><ruby><rb>三社祭</rb><rt>さんじゃまつり</rt></ruby>の折<persName ref="#oito">お糸</persName>は或年<ruby><rb>踊屋台</rb><rt>おどりやたい</rt></ruby>へ出て<ruby><rb>道成寺</rb><rt>どうじょうじ</rt></ruby>を踊った。町内一同で<ruby><rb>毎年</rb><rt>まいとし</rt></ruby><ruby><rb>汐干狩</rb><rt>しおひがり</rt></ruby>に行く船の上でも<persName ref="#oito">お糸</persName>はよく踊った。学校の帰り道には毎日のように<placeName ref="#matsuchiyama"><ruby><rb>待乳山</rb><rt>まつちやま</rt></ruby></placeName>の<ruby><rb>境内</rb><rt>けいだい</rt></ruby>で待合せて、人の知らない<placeName ref="#sanya"><ruby><rb>山谷</rb><rt>さんや</rt></ruby></placeName>の裏町から<placeName ref="#yoshiwaratanbo"><ruby><rb>吉原田圃</rb><rt>よしわらたんぼ</rt></ruby></placeName>を歩いた……。ああ、<persName ref="#oito">お糸</persName>は<ruby><rb>何故</rb><rt>なぜ</rt></ruby>芸者なんぞになるんだろう。芸者なんぞになっちゃいけないと引止めたい。<persName ref="#chokichi">長吉</persName>は無理にも引止めねばならぬと決心したが、すぐその<ruby><rb>傍</rb><rt>そば</rt></ruby>から、自分は<persName ref="#oito">お糸</persName>に対しては到底それだけの威力のない事を<ruby><rb>思返</rb><rt>おもいかえ</rt></ruby>した。<ruby><rb>果敢</rb><rt>はかな</rt></ruby>い絶望と<ruby><rb>諦</rb><rt>あきら</rt></ruby>めとを感じた。<persName ref="#oito">お糸</persName>は二ツ年下の十六であるが、この頃になっては<persName ref="#chokichi">長吉</persName>は<ruby><rb>殊更</rb><rt>ことさら</rt></ruby>に日一日と<persName ref="#oito">お糸</persName>が<ruby><rb>遥</rb><rt>はる</rt></ruby>か年上の姉であるような心持がしてならぬのであった。いや最初から<persName ref="#oito">お糸</persName>は<persName ref="#chokichi">長吉</persName>よりも強かった。<persName ref="#chokichi">長吉</persName>よりも<ruby><rb>遥</rb><rt>はるか</rt></ruby>に<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>ではなかった。<persName ref="#oito">お糸</persName><persName ref="#chokichi">長吉</persName>と相々傘にかかれて皆なから囃された時でも<persName ref="#oito">お糸</persName>はびくともしなかった。平気な顔で<persName ref="#chokichi"><ruby><rb>長</rb><rt>ちょう</rt></ruby>ちゃん</persName>はあたいの<ruby><rb>旦那</rb><rt>だんな</rt></ruby>だよと<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>った。去年初めて学校からの帰り道を<placeName ref="#matsuchiyama">待乳山</placeName>で待ち合わそうと<ruby><rb>申出</rb><rt>もうしだ</rt></ruby>したのも<persName ref="#oito">お糸</persName>であった。<placeName ref="#miyatoza"><ruby><rb>宮戸座</rb><rt>みやとざ</rt></ruby></placeName>の<ruby><rb>立見</rb><rt>たちみ</rt></ruby>へ行こうといったのも<persName ref="#oito">お糸</persName>が先であった。帰りの<ruby><rb>晩</rb><rt>おそ</rt></ruby>くなる事をも<persName ref="#oito">お糸</persName>の方がかえって心配しなかった。知らない道に迷っても、<persName ref="#oito">お糸</persName>は行ける処まで行って御覧よ。<ruby><rb>巡査</rb><rt>おまわり</rt></ruby>さんにきけば分るよといって、かえって面白そうにずんずん歩いた……。</p>
+        <p>あたりを構わず橋板の上に<ruby><rb>吾妻下駄</rb><rt>あずまげた</rt></ruby>を<ruby><rb>鳴</rb><rt>なら</rt></ruby>す<ruby><rb>響</rb><rt>ひびき</rt></ruby>がして、小走りに突然<persName ref="#oito">お糸</persName>がかけ寄った。</p>
+        <p>「おそかったでしょう。気に入らないんだもの、<ruby><rb>母</rb><rt>おっか</rt></ruby>さんの<ruby><rb>結</rb><rt>ゆ</rt></ruby>った髪なんぞ。」と<ruby><rb>馳</rb><rt>か</rt></ruby>け出したために<ruby><rb>殊更</rb><rt>ことさら</rt></ruby>ほつれた<ruby><rb>鬢</rb><rt>びん</rt></ruby>を直しながら、「おかしいでしょう。」</p>
+        <p><persName ref="#chokichi">長吉</persName>はただ眼を円くして<persName ref="#oito">お糸</persName>の顔を見るばかりである。いつもと変りのない元気のいいはしゃぎ切った様子がこの場合むしろ憎らしく思われた。遠い<ruby><rb>下町</rb><rt>したまち</rt></ruby>に行って芸者になってしまうのが少しも悲しくないのかと<persName ref="#chokichi">長吉</persName>はいいたい事も胸一ぱいになって口には出ない。<persName ref="#oito">お糸</persName>は<ruby><rb>河水</rb><rt>かわみず</rt></ruby>を<ruby><rb>照</rb><rt>てら</rt></ruby>す玉のような月の光にも<ruby><rb>一向</rb><rt>いっこう</rt></ruby>気のつかない様子で、</p>
+        <p>「早く行こうよ。<ruby><rb>私</rb><rt>わたい</rt></ruby>お金持ちだよ。今夜は。<placeName ref="#nakamise"><ruby><rb>仲店</rb><rt>なかみせ</rt></ruby></placeName>でお土産を買って行くんだから。」とすたすた歩きだす。</p>
+        <p>「<ruby><rb>明日</rb><rt>あした</rt></ruby>、きっと帰るか。」<persName ref="#chokichi">長吉</persName>は<ruby><rb>吃</rb><rt>ども</rt></ruby>るようにしていい切った。</p>
+        <p>「明日帰らなければ、<ruby><rb>明後日</rb><rt>あさって</rt></ruby>の朝はきっと帰って来てよ。不断着だの、いろんなもの持って行かなくっちゃならないから。」</p>
+        <p><placeName ref="#matsuchiyama">待乳山</placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>を<placeName ref="#shodenmachi"><ruby><rb>聖天町</rb><rt>しょうでんちょう</rt></ruby></placeName>の方へ出ようと細い<ruby><rb>路地</rb><rt>ろじ</rt></ruby>をぬけた。</p>
+        <p>「<ruby><rb>何故</rb><rt>なぜ</rt></ruby>黙ってるのよ。どうしたの。」</p>
+        <p>「<ruby><rb>明後日</rb><rt>あさって</rt></ruby>帰って来てそれからまたあっちへ<ruby><rb>去</rb><rt>い</rt></ruby>ってしまうんだろう。え。<persName ref="#oito">お糸</persName>ちゃんはもうそれなり向うの人になっちまうんだろう。もう僕とは会えないんだろう。」</p>
+        <p>「ちょいちょい遊びに帰って来るわ。だけれど、<ruby><rb>私</rb><rt>わたい</rt></ruby>も一生懸命にお<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>しなくっちゃならないんだもの。」</p>
+        <p>少しは声を<ruby><rb>曇</rb><rt>くもら</rt></ruby>したもののその調子は<persName ref="#chokichi">長吉</persName>の満足するほどの悲愁を帯びてはいなかった。<persName ref="#chokichi">長吉</persName>は<ruby><rb>暫</rb><rt>しばら</rt></ruby>くしてからまた突然に、</p>
+        <p>「なぜ芸者なんぞになるんだ。」</p>
+        <p>「またそんな事きくの。おかしいよ。<persName ref="#chokichi">長さん</persName>は。」</p>
+        <p><persName ref="#oito">お糸</persName>は<ruby><rb>已</rb><rt>すで</rt></ruby>に<persName ref="#chokichi">長吉</persName>のよく知っている事情をば再びくどくどしく<ruby><rb>繰返</rb><rt>くりかえ</rt></ruby>した。<persName ref="#oito">お糸</persName>が芸者になるという事は二、三年いやもっと前から<persName ref="#chokichi">長吉</persName>にも<ruby><rb>能</rb><rt>よ</rt></ruby>く分っていた事である。その<ruby><rb>起因</rb><rt>おこり</rt></ruby>は大工であった<persName ref="#oito">お糸</persName>の父親がまだ生きていた<ruby><rb>頃</rb><rt>ころ</rt></ruby>から<ruby><rb>母親</rb><rt>おふくろ</rt></ruby>は<ruby><rb>手内職</rb><rt>てないしょく</rt></ruby>にと針仕事をしていたが、その<ruby><rb>得意先</rb><rt>とくいさき</rt></ruby>の一軒で<placeName ref="#hashiba"><ruby><rb>橋場</rb><rt>はしば</rt></ruby></placeName>の<ruby><rb>妾宅</rb><rt>しょうたく</rt></ruby>にいる<ruby><rb>御新造</rb><rt>ごしんぞ</rt></ruby>が<persName ref="#oito">お糸</persName>の姿を見て是非<ruby><rb>娘分</rb><rt>むすめぶん</rt></ruby>にして<ruby><rb>行末</rb><rt>ゆくすえ</rt></ruby>は立派な芸者にしたてたいといい出した事からである。御新造の実家は<placeName ref="#yoshicho"><ruby><rb>葭町</rb><rt>よしちょう</rt></ruby></placeName>で幅のきく<ruby><rb>芸者家</rb><rt>げいしゃや</rt></ruby>であった。しかしその頃の<persName ref="#oito">お糸</persName>の<ruby><rb>家</rb><rt>うち</rt></ruby>はさほどに困ってもいなかったし、第一に可愛い<ruby><rb>盛</rb><rt>さかり</rt></ruby>の子供を手放すのが<ruby><rb>辛</rb><rt>つら</rt></ruby>かったので、親の手元でせいぜい芸を仕込ます事になった。その<ruby><rb>後</rb><rt>ご</rt></ruby>父親が死んだ折には<ruby><rb>差当</rb><rt>さしあた</rt></ruby>り頼りのない母親は<placeName ref="#hashiba">橋場</placeName>の御新造の世話で今の<ruby><rb>煎餅屋</rb><rt>せんべいや</rt></ruby>を出したような関係もあり、万事が金銭上の義理ばかりでなくて<ruby><rb>相方</rb><rt>そうほう</rt></ruby>の好意から自然と<persName ref="#oito">お糸</persName>は<placeName ref="#yoshicho">葭町</placeName>へ行くように<ruby><rb>誰</rb><rt>た</rt></ruby>れが<ruby><rb>強</rb><rt>し</rt></ruby>いるともなく<ruby><rb>決</rb><rt>きま</rt></ruby>っていたのである。百も承知しているこんな事情を<persName ref="#chokichi">長吉</persName>は<persName ref="#oito">お糸</persName>の口からきくために質問したのでない。<persName ref="#oito">お糸</persName>がどうせ行かねばならぬものなら、もう少し悲しく自分のために<ruby><rb>別</rb><rt>わかれ</rt></ruby>を惜しむような調子を見せてもらいたいと思ったからだ。<persName ref="#chokichi">長吉</persName>は自分と<persName ref="#oito">お糸</persName>の間にはいつの<ruby><rb>間</rb><rt>ま</rt></ruby>にか<ruby><rb>互</rb><rt>たがい</rt></ruby>に疎通しない感情の相違の生じている事を<ruby><rb>明</rb><rt>あきら</rt></ruby>かに知って、更に深い<ruby><rb>悲</rb><rt>かなし</rt></ruby>みを感じた。</p>
+        <p>この悲みは<persName ref="#oito">お糸</persName>が土産物を買うため<placeName ref="#niomon"><ruby><rb>仁王門</rb><rt>におうもん</rt></ruby></placeName>を過ぎて<placeName ref="#nakamise"><ruby><rb>仲店</rb><rt>なかみせ</rt></ruby></placeName>へ出た時更にまた堪えがたいものとなった。<ruby><rb>夕涼</rb><rt>ゆうすずみ</rt></ruby>に出掛ける<ruby><rb>賑</rb><rt>にぎや</rt></ruby>かな人出の中に<persName ref="#oito">お糸</persName>はふいと立止って、並んで歩く<persName ref="#chokichi">長吉</persName>の<ruby><rb>袖</rb><rt>そで</rt></ruby>を引き、「<persName ref="#chokichi">長さん</persName>、あたいも<ruby><rb>直</rb><rt>じ</rt></ruby>きあんな<ruby><rb>扮装</rb><rt>なり</rt></ruby>するんだねえ。<ruby><rb>絽縮緬</rb><rt>ろちりめん</rt></ruby>だねきっと、あの羽織……。」</p>
+        <p><persName ref="#chokichi">長吉</persName>はいわれるままに見返ると、島田に<ruby><rb>結</rb><rt>ゆ</rt></ruby>った芸者と、それに<ruby><rb>連立</rb><rt>つれだ</rt></ruby>って行くのは<ruby><rb>黒絽</rb><rt>くろろ</rt></ruby>の紋付をきた立派な紳士であった。ああ<persName ref="#oito">お糸</persName>が芸者になったら一緒に手を引いて歩く人はやっぱりああいう立派な紳士であろう。自分は何年たったらあんな紳士になれるのか知ら。<ruby><rb>兵児帯</rb><rt>へこおび</rt></ruby>一ツの<ruby><rb>現在</rb><rt>いま</rt></ruby>の書生姿がいうにいわれず情なく思われると同時に、<persName ref="#chokichi">長吉</persName>はその将来どころか現在においても、<ruby><rb>已</rb><rt>すで</rt></ruby>に単純な<persName ref="#oito">お糸</persName>の友達たる資格さえないもののような心持がした。</p>
+        <p>いよいよ<ruby><rb>御神燈</rb><rt>ごしんとう</rt></ruby>のつづいた<placeName ref="#yoshicho">葭町</placeName>の<ruby><rb>路地口</rb><rt>ろじぐち</rt></ruby>へ来た時、<persName ref="#chokichi">長吉</persName>はもうこれ以上<ruby><rb>果敢</rb><rt>はかな</rt></ruby>いとか悲しいとか思う元気さえなくなって、<ruby><rb>唯</rb><rt>た</rt></ruby>だぼんやり、狭く暗い路地裏のいやに奥深く行先知れず<ruby><rb>曲込</rb><rt>まがりこ</rt></ruby>んでいるのを不思議そうに<ruby><rb>覗込</rb><rt>のぞきこ</rt></ruby>むばかりであった。</p>
+        <p>「あの、<ruby><rb>一</rb><rt>ひ</rt></ruby>イ<ruby><rb>二</rb><rt>ふ</rt></ruby>ウ<ruby><rb>三</rb><rt>み</rt></ruby>イ……四つ目の<ruby><rb>瓦斯燈</rb><rt>ガスとう</rt></ruby>の出てるところだよ。<placeName ref="#matsubaya"><ruby><rb>松葉屋</rb><rt>まつばや</rt></ruby></placeName>と書いてあるだろう。ね。あの<ruby><rb>家</rb><rt>うち</rt></ruby>よ。」と<persName ref="#oito">お糸</persName>はしばしば<placeName ref="#hashiba">橋場</placeName>の御新造につれて来られたり、またはその用事で使いに来たりして<ruby><rb>能</rb><rt>よ</rt></ruby>く知っている<ruby><rb>軒先</rb><rt>のきさき</rt></ruby>の<ruby><rb>燈</rb><rt>あかり</rt></ruby>を指し示した。</p>
+        <p>「じゃア僕は帰るよ。もう……。」というばかりで<persName ref="#chokichi">長吉</persName>はやはり立止っている。その袖を<persName ref="#oito">お糸</persName>は軽く<ruby><rb>捕</rb><rt>つかま</rt></ruby>えて<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち<ruby><rb>媚</rb><rt>こび</rt></ruby>るように寄添い、</p>
+        <p>「<ruby><rb>明日</rb><rt>あした</rt></ruby>か<ruby><rb>明後日</rb><rt>あさって</rt></ruby>、<ruby><rb>家</rb><rt>うち</rt></ruby>へ帰って来た時きっと<ruby><rb>逢</rb><rt>あ</rt></ruby>おうね。いいかい。きっとよ。約束してよ。あたいの<ruby><rb>家</rb><rt>うち</rt></ruby>へお<ruby><rb>出</rb><rt>いで</rt></ruby>よ。よくッて。」</p>
+        <p>「ああ。」</p>
+        <p>返事をきくと、<persName ref="#oito">お糸</persName>はそれですっかり安心したものの如くすたすた路地の<ruby><rb>溝板</rb><rt>どぶいた</rt></ruby>を<ruby><rb>吾妻下駄</rb><rt>あずまげた</rt></ruby>に踏みならし振返りもせずに行ってしまった。その足音が<persName ref="#chokichi">長吉</persName>の耳には急いで<ruby><rb>馳</rb><rt>か</rt></ruby>けて行くように聞えた、かと思う<ruby><rb>間</rb><rt>ま</rt></ruby>もなく、ちりんちりんと格子戸の鈴の音がした。<persName ref="#chokichi">長吉</persName>は覚えず<ruby><rb>後</rb><rt>あと</rt></ruby>を追って<ruby><rb>路地内</rb><rt>ろじうち</rt></ruby>へ<ruby><rb>這入</rb><rt>はい</rt></ruby>ろうとしたが、同時に一番近くの格子戸が人声と共に<ruby><rb>開</rb><rt>あ</rt></ruby>いて、細長い<ruby><rb>弓張提灯</rb><rt>ゆみはりぢょうちん</rt></ruby>を持った男が出て来たので、<ruby><rb>何</rb><rt>なん</rt></ruby>という事なく<persName ref="#chokichi">長吉</persName>は<ruby><rb>気後</rb><rt>きおく</rt></ruby>れのしたばかりか、顔を見られるのが<ruby><rb>厭</rb><rt>いや</rt></ruby>さに、<ruby><rb>一散</rb><rt>いっさん</rt></ruby>に通りの方へと<ruby><rb>遠</rb><rt>とおざ</rt></ruby>かった。円い月は形が<ruby><rb>大分</rb><rt>だいぶ</rt></ruby><ruby><rb>小</rb><rt>ちいさ</rt></ruby>くなって光が<ruby><rb>蒼</rb><rt>あお</rt></ruby>く澄んで、<ruby><rb>静</rb><rt>しずか</rt></ruby>に<ruby><rb>聳</rb><rt>そび</rt></ruby>える裏通りの倉の屋根の上、星の多い空の<ruby><rb>真中</rb><rt>まんなか</rt></ruby>に高く昇っていた。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p>月の出が<ruby><rb>夜</rb><rt>よ</rt></ruby>ごとおそくなるにつれてその光は段々<ruby><rb>冴</rb><rt>さ</rt></ruby>えて来た。<ruby><rb>河風</rb><rt>かわかぜ</rt></ruby>の<ruby><rb>湿</rb><rt>しめ</rt></ruby>ッぽさが次第に強く感じられて来て<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>の肌がいやに薄寒くなった。月はやがて人の起きている<ruby><rb>頃</rb><rt>ころ</rt></ruby>にはもう昇らなくなった。空には朝も昼過ぎも夕方も、いつでも雲が多くなった。雲は<ruby><rb>重</rb><rt>かさな</rt></ruby>り合って絶えず動いているので、時としては<ruby><rb>僅</rb><rt>わず</rt></ruby>かにその<ruby><rb>間々</rb><rt>あいだあいだ</rt></ruby>に<ruby><rb>殊更</rb><rt>ことさら</rt></ruby>らしく色の濃い青空の残りを見せて置きながら、空一面に<ruby><rb>蔽</rb><rt>おお</rt></ruby>い<ruby><rb>冠</rb><rt>かぶ</rt></ruby>さる。すると気候は恐しく<ruby><rb>蒸暑</rb><rt>むしあつ</rt></ruby>くなって来て、自然と<ruby><rb>浸</rb><rt>し</rt></ruby>み出る<ruby><rb>脂汗</rb><rt>あぶらあせ</rt></ruby>が不愉快に人の肌をねばねばさせるが、しかしまた、そういう時にはきまって、その強弱とその方向の定まらない風が突然に吹き起って、雨もまた降っては<ruby><rb>止</rb><rt>や</rt></ruby>み、止んではまた降りつづく事がある。この風やこの雨には一種特別の底深い力が含まれていて、寺の樹木や、<ruby><rb>河岸</rb><rt>かわぎし</rt></ruby>の<ruby><rb>葦</rb><rt>あし</rt></ruby>の葉や、場末につづく貧しい家の板屋根に、春や夏には決して聞かれない音響を伝える。日が恐しく早く暮れてしまうだけ、長い<ruby><rb>夜</rb><rt>よ</rt></ruby>はすぐに<ruby><rb>寂々</rb><rt>しんしん</rt></ruby>と<ruby><rb>更</rb><rt>ふ</rt></ruby>け渡って来て、夏ならば夕涼みの下駄の音に<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>られてよくは聞えない八時か九時の時の鐘があたりをまるで十二時の如く<ruby><rb>静</rb><rt>しずか</rt></ruby>にしてしまう。<ruby><rb>蟋蟀</rb><rt>こおろぎ</rt></ruby>の声はいそがしい。<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>の色はいやに澄む。秋。ああ秋だ。<persName ref="#chokichi">長吉</persName>は初めて秋というものはなるほどいやなものだ。実に<ruby><rb>淋</rb><rt>さび</rt></ruby>しくって<ruby><rb>堪</rb><rt>たま</rt></ruby>らないものだと身にしみじみ感じた。</p>
+        <p>学校はもう<ruby><rb>昨日</rb><rt>きのう</rt></ruby>から始っている。朝早く母親の用意してくれる弁当箱を書物と<ruby><rb>一所</rb><rt>いっしょ</rt></ruby>に包んで<ruby><rb>家</rb><rt>うち</rt></ruby>を出て見たが、二日目三日目にはつくづく遠い<placeName ref="#kanda"><ruby><rb>神田</rb><rt>かんだ</rt></ruby></placeName>まで歩いて行く気力がなくなった。今までは<ruby><rb>毎年</rb><rt>まいねん</rt></ruby>長い夏休みの終る頃といえば学校の教場が<ruby><rb>何</rb><rt>なん</rt></ruby>となく恋しく授業の開始する日が<ruby><rb>心待</rb><rt>こころまち</rt></ruby>に待たれるようであった。そのういういしい心持はもう全く消えてしまった。つまらない。学問なんぞしたってつまるものか。学校は<ruby><rb>己</rb><rt>おの</rt></ruby>れの望むような幸福を与える処ではない。……幸福とは無関係のものである事を<persName ref="#chokichi">長吉</persName>は物新しく感じた。</p>
+        <p>四日目の朝いつものように七時前に<ruby><rb>家</rb><rt>うち</rt></ruby>を出て<placeName ref="#sensoji"><ruby><rb>観音</rb><rt>かんのん</rt></ruby></placeName>の<ruby><rb>境内</rb><rt>けいだい</rt></ruby>まで歩いて来たが、<persName ref="#chokichi">長吉</persName>はまるで疲れきった<ruby><rb>旅人</rb><rt>たびびと</rt></ruby>が<ruby><rb>路傍</rb><rt>みちばた</rt></ruby>の石に腰をかけるように、本堂の横手のベンチの上に腰を<ruby><rb>下</rb><rt>おろ</rt></ruby>した。いつの間に掃除をしたものか朝露に湿った<ruby><rb>小砂利</rb><rt>こじゃり</rt></ruby>の上には、投捨てた汚い<ruby><rb>紙片</rb><rt>かみきれ</rt></ruby>もなく、朝早い境内はいつもの<ruby><rb>雑沓</rb><rt>ざっとう</rt></ruby>に引かえて妙に広く<ruby><rb>神々</rb><rt>こうごう</rt></ruby>しく<ruby><rb>寂</rb><rt>しん</rt></ruby>としている。本堂の廊下には<ruby><rb>此処</rb><rt>ここ</rt></ruby>で<ruby><rb>夜明</rb><rt>よあか</rt></ruby>ししたらしい<ruby><rb>迂散</rb><rt>うさん</rt></ruby>な男が今だに幾人も腰をかけていて、その中には<ruby><rb>垢</rb><rt>あか</rt></ruby>じみた<ruby><rb>単衣</rb><rt>ひとえ</rt></ruby>の<ruby><rb>三尺帯</rb><rt>さんじゃくおび</rt></ruby>を解いて平気で<ruby><rb>褌</rb><rt>ふんどし</rt></ruby>をしめ直している<ruby><rb>奴</rb><rt>やつ</rt></ruby>もあった。この頃の<ruby><rb>空癖</rb><rt>そらくせ</rt></ruby>で空は低く<ruby><rb>鼠色</rb><rt>ねずみいろ</rt></ruby>に曇り、あたりの樹木からは<ruby><rb>虫噛</rb><rt>むしば</rt></ruby>んだ青いままの<ruby><rb>木葉</rb><rt>このは</rt></ruby>が絶え間なく落ちる。<ruby><rb>烏</rb><rt>からす</rt></ruby>や<ruby><rb>鶏</rb><rt>にわとり</rt></ruby>の<ruby><rb>啼声</rb><rt>なきごえ</rt></ruby><ruby><rb>鳩</rb><rt>はと</rt></ruby>の<ruby><rb>羽音</rb><rt>はおと</rt></ruby>が<ruby><rb>爽</rb><rt>さわや</rt></ruby>かに力強く聞える。<ruby><rb>溢</rb><rt>あふ</rt></ruby>れる水に<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れた<ruby><rb>御手洗</rb><rt>みたらし</rt></ruby>の石が<ruby><rb>飜</rb><rt>ひるが</rt></ruby>える奉納の<ruby><rb>手拭</rb><rt>てぬぐい</rt></ruby>のかげにもう何となく<ruby><rb>冷</rb><rt>つめた</rt></ruby>いように思われた。それにもかかわらず朝参りの男女は本堂の階段を<ruby><rb>上</rb><rt>のぼ</rt></ruby>る前にいずれも手を洗うためにと立止まる。その人々の中に<persName ref="#chokichi">長吉</persName>は偶然にも若い一人の芸者が、口には桃色のハンケチを<ruby><rb>啣</rb><rt>くわ</rt></ruby>えて、<ruby><rb>一重羽織</rb><rt>ひとえばおり</rt></ruby>の<ruby><rb>袖口</rb><rt>そでぐち</rt></ruby>を<ruby><rb>濡</rb><rt>ぬら</rt></ruby>すまいためか、<ruby><rb>真白</rb><rt>まっしろ</rt></ruby>な手先をば腕までも見せるように長くさし<ruby><rb>伸</rb><rt>のば</rt></ruby>しているのを認めた。同時にすぐ隣のベンチに腰をかけている書生が二人、「見ろ見ろ、ジンゲルだ。わるくないなア。」といっているのさえ耳にした。</p>
+        <p>島田に<ruby><rb>結</rb><rt>ゆ</rt></ruby>って弱々しく両肩の<ruby><rb>撫</rb><rt>な</rt></ruby>で<ruby><rb>下</rb><rt>さが</rt></ruby>った小作りの姿と、<ruby><rb>口尻</rb><rt>くちじり</rt></ruby>のしまった<ruby><rb>円顔</rb><rt>まるがお</rt></ruby>、十六、七の同じような年頃とが、<persName ref="#chokichi">長吉</persName>をしてその瞬間<ruby><rb>危</rb><rt>あやう</rt></ruby>くベンチから飛び立たせようとしたほど<persName ref="#oito">お糸</persName>のことを連想せしめた。<persName ref="#oito">お糸</persName>は月のいいあの晩に約束した通り、その翌々日に、それからは長く<placeName ref="#yoshicho"><ruby><rb>葭町</rb><rt>よしちょう</rt></ruby></placeName>の人たるべく手荷物を取りに帰って来たが、その時<persName ref="#chokichi">長吉</persName>はまるで別の人のように<persName ref="#oito">お糸</persName>の姿の変ってしまったのに驚いた。赤いメレンスの帯ばかり<ruby><rb>締</rb><rt>し</rt></ruby>めていた娘姿が、突然たった一日の<ruby><rb>間</rb><rt>あいだ</rt></ruby>に、丁度今<ruby><rb>御手洗</rb><rt>みたらし</rt></ruby>で手を洗っている若い芸者そのままの姿になってしまったのだ。薬指にはもう<ruby><rb>指環</rb><rt>ゆびわ</rt></ruby>さえ<ruby><rb>穿</rb><rt>は</rt></ruby>めていた。用もないのに<ruby><rb>幾度</rb><rt>いくたび</rt></ruby>となく帯の間から鏡入れや<ruby><rb>紙入</rb><rt>かみいれ</rt></ruby>を抜き出して、<ruby><rb>白粉</rb><rt>おしろい</rt></ruby>をつけ直したり<ruby><rb>鬢</rb><rt>びん</rt></ruby>のほつれを<ruby><rb>撫</rb><rt>な</rt></ruby>で上げたりする。<ruby><rb>戸外</rb><rt>そと</rt></ruby>には車を待たして置いていかにも<ruby><rb>急</rb><rt>いそが</rt></ruby>しい大切な用件を身に帯びているといった<ruby><rb>風</rb><rt>ふう</rt></ruby>で一時間もたつかたたない<ruby><rb>中</rb><rt>うち</rt></ruby>に帰ってしまった。その帰りがけ<persName ref="#chokichi">長吉</persName>に残した最後の言葉はその母親の「<ruby><rb>御師匠</rb><rt>おししょう</rt></ruby>さんのおばさん」にもよろしくいってくれという事であった。まだ<ruby><rb>何時</rb><rt>いつ</rt></ruby>出るのか分らないからまた近い中に遊びに来るわという<ruby><rb>懐</rb><rt>なつか</rt></ruby>しい声も<ruby><rb>聞</rb><rt>きか</rt></ruby>れないのではなかったが、それはもう今までのあどけない約束ではなくて、<ruby><rb>世馴</rb><rt>よな</rt></ruby>れた人の<ruby><rb>如才</rb><rt>じょさい</rt></ruby>ない<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>としか<persName ref="#chokichi">長吉</persName>には聞取れなかった。娘であった<persName ref="#oito">お糸</persName>、<ruby><rb>幼馴染</rb><rt>おさななじみ</rt></ruby>の恋人の<persName ref="#oito">お糸</persName>はこの世にはもう生きていないのだ。<ruby><rb>路傍</rb><rt>みちばた</rt></ruby>に寝ている犬を<ruby><rb>驚</rb><rt>おどろか</rt></ruby>して勢よく<ruby><rb>駈</rb><rt>か</rt></ruby>け去った車の<ruby><rb>後</rb><rt>あと</rt></ruby>に、えもいわれず立迷った化粧の<ruby><rb>匂</rb><rt>にお</rt></ruby>いが、いかに苦しく、いかに<ruby><rb>切</rb><rt>せつ</rt></ruby>なく<ruby><rb>身中</rb><rt>みうち</rt></ruby>にしみ渡ったであろう……。</p>
+        <p>本堂の中にと消えた若い芸者の姿は再び階段の下に現れて<placeName ref="#niomon"><ruby><rb>仁王門</rb><rt>におうもん</rt></ruby></placeName>の方へと、<ruby><rb>素足</rb><rt>すあし</rt></ruby>の指先に<ruby><rb>突掛</rb><rt>つっか</rt></ruby>けた<ruby><rb>吾妻下駄</rb><rt>あずまげた</rt></ruby>を<ruby><rb>内輪</rb><rt>うちわ</rt></ruby>に軽く踏みながら歩いて行く。<persName ref="#chokichi">長吉</persName>はその<ruby><rb>後姿</rb><rt>うしろすがた</rt></ruby>を見送るとまた更に恨めしいあの車を見送った時の<ruby><rb>一刹那</rb><rt>いっせつな</rt></ruby>を思起すので、もう<ruby><rb>何</rb><rt>なん</rt></ruby>としても我慢が出来ぬというようにベンチから立上った。そして知らず知らずその後を追うて<placeName ref="#nakamise"><ruby><rb>仲店</rb><rt>なかみせ</rt></ruby></placeName>の<ruby><rb>尽</rb><rt>つき</rt></ruby>るあたりまで来たが、若い芸者の姿は<ruby><rb>何処</rb><rt>どこ</rt></ruby>の<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>へ曲ってしまったものか、もう見えない。両側の店では店先を掃除して品物を並べたてている<ruby><rb>最中</rb><rt>さいちゅう</rt></ruby>である。<persName ref="#chokichi">長吉</persName>は夢中で<placeName ref="#kaminarimon"><ruby><rb>雷門</rb><rt>かみなりもん</rt></ruby></placeName>の方へどんどん歩いた。若い芸者の<ruby><rb>行衛</rb><rt>ゆくえ</rt></ruby>を<ruby><rb>見究</rb><rt>みきわ</rt></ruby>めようというのではない。自分の眼にばかりありあり見える<persName ref="#oito">お糸</persName>の後姿を追って行くのである。学校の事も何も<ruby><rb>彼</rb><rt>か</rt></ruby>も忘れて、<placeName ref="#komagata"><ruby><rb>駒形</rb><rt>こまかた</rt></ruby></placeName>から<placeName ref="#kuramae"><ruby><rb>蔵前</rb><rt>くらまえ</rt></ruby></placeName>、<placeName ref="#kuramae">蔵前</placeName>から<placeName ref="#asakusabashi"><ruby><rb>浅草橋</rb><rt>あさくさばし</rt></ruby></placeName>……それから<placeName ref="#yoshicho"><ruby><rb>葭町</rb><rt>よしちょう</rt></ruby></placeName>の方へとどんどん歩いた。しかし電車の<ruby><rb>通</rb><rt>とお</rt></ruby>っている<placeName ref="#bakurocho"><ruby><rb>馬喰町</rb><rt>ばくろちょう</rt></ruby></placeName>の大通りまで来て、<persName ref="#chokichi">長吉</persName>はどの横町を曲ればよかったのか少しく当惑した。けれども大体の方角はよく分っている。<placeName ref="#tokyo">東京</placeName>に生れたものだけに道をきくのが<ruby><rb>厭</rb><rt>いや</rt></ruby>である。恋人の住む町と思えば、その名を<ruby><rb>徒</rb><rt>いたずら</rt></ruby>に路傍の他人に<ruby><rb>漏</rb><rt>もら</rt></ruby>すのが、心の秘密を探られるようで、唯わけもなく恐しくてならない。<persName ref="#chokichi">長吉</persName>は仕方なしに<ruby><rb>唯</rb><rt>た</rt></ruby>だ左へ左へと、いいかげんに折れて行くと<ruby><rb>蔵造</rb><rt>くらづく</rt></ruby>りの問屋らしい商家のつづいた同じような堀割の岸に二度も出た。その結果<persName ref="#chokichi">長吉</persName>は遥か向うに<placeName ref="#meijiza"><ruby><rb>明治座</rb><rt>めいじざ</rt></ruby></placeName>の屋根を見てやがてやや広い往来へ出た時、その遠い道のはずれに<ruby><rb>河蒸汽船</rb><rt>かわじょうきせん</rt></ruby>の汽笛の音の聞えるのに、初めて自分の位置と町の方角とを<ruby><rb>覚</rb><rt>さと</rt></ruby>った。同時に非常な<ruby><rb>疲労</rb><rt>つかれ</rt></ruby>を感じた。制帽を<ruby><rb>冠</rb><rt>かぶ</rt></ruby>った<ruby><rb>額</rb><rt>ひたい</rt></ruby>のみならず汗は<ruby><rb>袴</rb><rt>はかま</rt></ruby>をはいた帯のまわりまでしみ出していた。しかしもう一瞬間とても休む気にはならない。<persName ref="#chokichi">長吉</persName>は月の<ruby><rb>夜</rb><rt>よ</rt></ruby>に連れられて来た<ruby><rb>路地口</rb><rt>ろじぐち</rt></ruby>をば、これはまた一層の苦心、一層の<ruby><rb>懸念</rb><rt>けねん</rt></ruby>、一層の疲労を以って、やっとの事で<ruby><rb>見出</rb><rt>みいだ</rt></ruby>し得たのである。</p>
+        <p><ruby><rb>片側</rb><rt>かたかわ</rt></ruby>に朝日がさし込んでいるので路地の<ruby><rb>内</rb><rt>うち</rt></ruby>は突当りまで<ruby><rb>見透</rb><rt>みとお</rt></ruby>された。<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>づくりの<ruby><rb>小</rb><rt>ちいさ</rt></ruby>い<ruby><rb>家</rb><rt>うち</rt></ruby>ばかりでない。昼間見ると意外に屋根の高い倉もある。<ruby><rb>忍返</rb><rt>しのびがえ</rt></ruby>しをつけた<ruby><rb>板塀</rb><rt>いたべい</rt></ruby>もある。その上から松の枝も見える。<ruby><rb>石灰</rb><rt>いしばい</rt></ruby>の散った便所の掃除口も見える。<ruby><rb>塵芥箱</rb><rt>ごみばこ</rt></ruby>の並んだ処もある。その<ruby><rb>辺</rb><rt>へん</rt></ruby>に猫がうろうろしている。人通りは案外に<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい。極めて狭い<ruby><rb>溝板</rb><rt>どぶいた</rt></ruby>の上を通行の人は<ruby><rb>互</rb><rt>たがい</rt></ruby>に身を斜めに<ruby><rb>捻向</rb><rt>ねじむ</rt></ruby>けて行き<ruby><rb>交</rb><rt>ちが</rt></ruby>う。<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>の<ruby><rb>三味線</rb><rt>しゃみせん</rt></ruby>に人の話声が<ruby><rb>交</rb><rt>まじ</rt></ruby>って聞える。<ruby><rb>洗物</rb><rt>あらいもの</rt></ruby>する<ruby><rb>水音</rb><rt>みずおと</rt></ruby>も聞える。赤い腰巻に<ruby><rb>裾</rb><rt>すそ</rt></ruby>をまくった<ruby><rb>小女</rb><rt>こおんな</rt></ruby>が<ruby><rb>草箒</rb><rt>くさぼうき</rt></ruby>で溝板の上を掃いている。格子戸の格子を一本々々一生懸命に磨いているのもある。<persName ref="#chokichi">長吉</persName>は人目の多いのに<ruby><rb>気後</rb><rt>きおく</rt></ruby>れしたのみでなく、さて路地内に<ruby><rb>進入</rb><rt>すすみい</rt></ruby>ったにした処で、自分はどうするのかと初めて反省の地位に返った。人知れず<placeName ref="#matsubaya"><ruby><rb>松葉屋</rb><rt>まつばや</rt></ruby></placeName>の前を通って、そっと<persName ref="#oito">お糸</persName>の姿を<ruby><rb>垣間見</rb><rt>かいまみ</rt></ruby>たいとは思ったが、あたりが余りに<ruby><rb>明過</rb><rt>あかるす</rt></ruby>ぎる。さらばこのまま路地口に立っていて、<persName ref="#oito">お糸</persName>が何かの用で外へ出るまでの機会を待とうか。しかしこれもまた、<persName ref="#chokichi">長吉</persName>には近所の店先の人目が<ruby><rb>尽</rb><rt>ことごと</rt></ruby>く自分ばかりを見張っているように思われて、とても五分と長く立っている事はできない。<persName ref="#chokichi">長吉</persName>はとにかく<ruby><rb>思案</rb><rt>しあん</rt></ruby>をしなおすつもりで、折から近所の子供を得意にする<ruby><rb>粟餅屋</rb><rt>あわもちや</rt></ruby>の<ruby><rb>爺</rb><rt>じじ</rt></ruby>がカラカラカラと<ruby><rb>杵</rb><rt>きね</rt></ruby>をならして来る向うの<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>の<ruby><rb>方</rb><rt>ほう</rt></ruby>へと<ruby><rb>遠</rb><rt>とおざ</rt></ruby>かった。</p>
+        <p><persName ref="#chokichi">長吉</persName>は<placeName ref="#hamacho"><ruby><rb>浜町</rb><rt>はまちょう</rt></ruby></placeName>の横町をば次第に道の行くままに<placeName ref="#okawabata"><ruby><rb>大川端</rb><rt>おおかわばた</rt></ruby></placeName>の方へと歩いて行った。いかほど機会を待っても<ruby><rb>昼中</rb><rt>ひるなか</rt></ruby>はどうしても不便である事を<ruby><rb>僅</rb><rt>わず</rt></ruby>かに悟り得たのであるが、すると、今度はもう学校へは遅くなった。休むにしても今日の半日、これから午後の三時までをどうして<ruby><rb>何処</rb><rt>どこ</rt></ruby>に消費しようかという問題の解決に<ruby><rb>迫</rb><rt>せ</rt></ruby>められた。母親の<persName ref="#otoyo">お<ruby><rb>豊</rb><rt>とよ</rt></ruby></persName>は学校の時間割までをよく<ruby><rb>知抜</rb><rt>しりぬ</rt></ruby>いているので、<persName ref="#chokichi">長吉</persName>の帰りが一時間早くても、<ruby><rb>晩</rb><rt>おそ</rt></ruby>くても、すぐに心配して<ruby><rb>煩</rb><rt>うるさ</rt></ruby>く質問する。無論<persName ref="#chokichi">長吉</persName>は何とでも<ruby><rb>容易</rb><rt>たやす</rt></ruby>くいい<ruby><rb>紛</rb><rt>まぎ</rt></ruby>らすことは出来ると思うものの、それだけの<ruby><rb>嘘</rb><rt>うそ</rt></ruby>をつく良心の苦痛に<ruby><rb>逢</rb><rt>あ</rt></ruby>うのが<ruby><rb>厭</rb><rt>いや</rt></ruby>でならない。丁度来かかる川端には、<ruby><rb>水練場</rb><rt>すいれんば</rt></ruby>の板小屋が取払われて、柳の<ruby><rb>木蔭</rb><rt>こかげ</rt></ruby>に人が<ruby><rb>釣</rb><rt>つり</rt></ruby>をしている。それをば通りがかりの人が四人も五人もぼんやり立って見ているので、<persName ref="#chokichi">長吉</persName>はいい都合だと同じように釣を眺める<ruby><rb>振</rb><rt>ふり</rt></ruby>でそのそばに立寄ったが、もう立っているだけの力さえなく、柳の根元の<ruby><rb>支木</rb><rt>ささえぎ</rt></ruby>に背をよせかけながら<ruby><rb>蹲踞</rb><rt>しゃが</rt></ruby>んでしまった。</p>
+        <p>さっきから空の大半は<ruby><rb>真青</rb><rt>まっさお</rt></ruby>に晴れて来て、絶えず風の吹き<ruby><rb>通</rb><rt>かよ</rt></ruby>うにもかかわらず、じりじり人の肌に<ruby><rb>焼附</rb><rt>やきつ</rt></ruby>くような<ruby><rb>湿気</rb><rt>しっけ</rt></ruby>のある秋の日は、目の前なる<placeName ref="#okawa"><ruby><rb>大川</rb><rt>おおかわ</rt></ruby></placeName>の水一面に<ruby><rb>眩</rb><rt>まぶ</rt></ruby>しく照り輝くので、往来の片側に長くつづいた<ruby><rb>土塀</rb><rt>どべい</rt></ruby>からこんもりと枝を<ruby><rb>伸</rb><rt>のば</rt></ruby>した<ruby><rb>繁</rb><rt>しげ</rt></ruby>りの<ruby><rb>蔭</rb><rt>かげ</rt></ruby>がいかにも涼しそうに思われた。<ruby><rb>甘酒屋</rb><rt>あまざけや</rt></ruby>の<ruby><rb>爺</rb><rt>じじ</rt></ruby>がいつかこの<ruby><rb>木蔭</rb><rt>こかげ</rt></ruby>に赤く塗った荷を<ruby><rb>下</rb><rt>おろ</rt></ruby>していた。<ruby><rb>川向</rb><rt>かわむこう</rt></ruby>は日の光の強いために立続く人家の<ruby><rb>瓦屋根</rb><rt>かわらやね</rt></ruby>をはじめ一帯の眺望がいかにも汚らしく見え、風に追いやられた雲の列が<ruby><rb>盛</rb><rt>さかん</rt></ruby>に<ruby><rb>煤煙</rb><rt>ばいえん</rt></ruby>を<ruby><rb>吐</rb><rt>は</rt></ruby>く<ruby><rb>製造場</rb><rt>せいぞうば</rt></ruby>の<ruby><rb>烟筒</rb><rt>けむだし</rt></ruby>よりも<ruby><rb>遥</rb><rt>はるか</rt></ruby>に低く、動かずに層をなして<ruby><rb>浮</rb><rt>うか</rt></ruby>んでいる。釣道具を売る<ruby><rb>後</rb><rt>うしろ</rt></ruby>の<ruby><rb>小家</rb><rt>こいえ</rt></ruby>から十一時の時計が鳴った。<persName ref="#chokichi">長吉</persName>は数えながらそれを聞いて、初めて自分はいかに長い時間を歩き暮したかに驚いたが、同時にこの<ruby><rb>分</rb><rt>ぶん</rt></ruby>で行けば三時までの時間を空費するのもさして<ruby><rb>難</rb><rt>かた</rt></ruby>くはないとやや安心することも出来た。<persName ref="#chokichi">長吉</persName>は<ruby><rb>釣師</rb><rt>つりし</rt></ruby>の一人が<ruby><rb>握飯</rb><rt>にぎりめし</rt></ruby>を食いはじめたのを見て、同じように弁当箱を開いた。開いたけれども何だか気まりが悪くて、誰か見ていやしないかときょろきょろ<ruby><rb>四辺</rb><rt>あたり</rt></ruby>を見廻した。幸い<ruby><rb>午近</rb><rt>ひるぢか</rt></ruby>くのことで見渡す川岸に人の往来は<ruby><rb>杜絶</rb><rt>とだ</rt></ruby>えている。<persName ref="#chokichi">長吉</persName>は出来るだけ早く<ruby><rb>飯</rb><rt>めし</rt></ruby>でも<ruby><rb>菜</rb><rt>さい</rt></ruby>でも<ruby><rb>皆</rb><rt>みん</rt></ruby>な<ruby><rb>鵜呑</rb><rt>うの</rt></ruby>みにしてしまった。釣師はいずれも木像のように黙っているし、甘酒屋の爺は居眠りしている。<ruby><rb>午過</rb><rt>ひるすぎ</rt></ruby>の川端はますます<ruby><rb>静</rb><rt>しずか</rt></ruby>になって犬さえ歩いて来ない処から、さすがの<persName ref="#chokichi">長吉</persName>も自分は<ruby><rb>何故</rb><rt>なぜ</rt></ruby>こんなに気まりを悪がるのであろう<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>なのであろうと我ながら<ruby><rb>可笑</rb><rt>おか</rt></ruby>しい気にもなった。</p>
+        <p><placeName ref="#ryogokubashi"><ruby><rb>両国橋</rb><rt>りょうごくばし</rt></ruby></placeName>と<placeName ref="#shinohashi"><ruby><rb>新大橋</rb><rt>しんおおはし</rt></ruby></placeName>との間を<ruby><rb>一廻</rb><rt>ひとまわり</rt></ruby>した<ruby><rb>後</rb><rt>のち</rt></ruby>、<persName ref="#chokichi">長吉</persName>はいよいよ<placeName ref="#asakusa"><ruby><rb>浅草</rb><rt>あさくさ</rt></ruby></placeName>の方へ帰ろうと決心するにつけ、「もしや」という一念にひかされて再び<placeName ref="#yoshicho">葭町</placeName>の路地口に立寄って見た。すると<ruby><rb>午前</rb><rt>ひるまえ</rt></ruby>ほどには人通りがないのに<ruby><rb>先</rb><rt>ま</rt></ruby>ず安心して、おそるおそる<placeName ref="#matsubaya">松葉屋</placeName>の前を通って見たが、<ruby><rb>家</rb><rt>うち</rt></ruby>の中は外から見ると非常に暗く、人の声三味線の音さえ聞えなかった。けれども<persName ref="#chokichi">長吉</persName>には誰にも<ruby><rb>咎</rb><rt>とが</rt></ruby>められずに恋人の住む<ruby><rb>家</rb><rt>うち</rt></ruby>の前を通ったというそれだけの事が、<ruby><rb>殆</rb><rt>ほと</rt></ruby>んど<ruby><rb>破天荒</rb><rt>はてんこう</rt></ruby>の冒険を<ruby><rb>敢</rb><rt>あえ</rt></ruby>てしたような満足を感じさせたので、これまで歩きぬいた身の疲労と苦痛とを<persName ref="#chokichi">長吉</persName>は<ruby><rb>遂</rb><rt>つい</rt></ruby>に後悔しなかった。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>四</head>
+        <p>その週間の残りの<ruby><rb>日数</rb><rt>ひかず</rt></ruby>だけはどうやらこうやら、<persName ref="#chokichi">長吉</persName>は学校へ通ったが、日曜日一日を<ruby><rb>過</rb><rt>すご</rt></ruby>すとその<ruby><rb>翌朝</rb><rt>あくるあさ</rt></ruby>は電車に乗って<placeName ref="#ueno"><ruby><rb>上野</rb><rt>うえの</rt></ruby></placeName>まで来ながらふいと<ruby><rb>下</rb><rt>お</rt></ruby>りてしまった。教師に差出すべき代数の宿題を一つもやって置かなかった。英語と漢文の<ruby><rb>下読</rb><rt>したよみ</rt></ruby>をもして置かなかった。それのみならず今日はまた、<ruby><rb>凡</rb><rt>およ</rt></ruby>そ世の中で何よりも嫌いな何よりも恐しい機械体操のある事を思い出したからである。<persName ref="#chokichi">長吉</persName>には鉄棒から<ruby><rb>逆</rb><rt>さかさ</rt></ruby>にぶらさがったり、人の<ruby><rb>丈</rb><rt>たけ</rt></ruby>より高い棚の上から飛下りるような事は、いかに<ruby><rb>軍曹上</rb><rt>ぐんそうあが</rt></ruby>りの教師から<ruby><rb>強</rb><rt>し</rt></ruby>いられても全級の生徒から<ruby><rb>一斉</rb><rt>いっせい</rt></ruby>に笑われても到底出来<ruby><rb>得</rb><rt>う</rt></ruby>べきことではない。何によらず体育の遊戯にかけては、<persName ref="#chokichi">長吉</persName>はどうしても他の生徒一同に<ruby><rb>伴</rb><rt>ともな</rt></ruby>って行く事が出来ないので、自然と<ruby><rb>軽侮</rb><rt>けいぶ</rt></ruby>の声の中に孤立する。その結果は、遂に一同から意地悪くいじめられる事になりやすい。学校は単にこれだけでも随分<ruby><rb>厭</rb><rt>いや</rt></ruby>な処、苦しいところ、<ruby><rb>辛</rb><rt>つら</rt></ruby>い処であった。されば<persName ref="#chokichi">長吉</persName>はその母親がいかほど望んだ処で今になっては高等学校へ<ruby><rb>這入</rb><rt>はい</rt></ruby>ろうという気は全くない。もし入学すれば校則として<ruby><rb>当初</rb><rt>はじめ</rt></ruby>の一年間は是非とも狂暴無残な寄宿舎生活をしなければならない事を<ruby><rb>聴知</rb><rt>ききし</rt></ruby>っていたからである。高等学校寄宿舎内に起るいろいろな<ruby><rb>逸話</rb><rt>いつわ</rt></ruby>は早くから<persName ref="#chokichi">長吉</persName>の<ruby><rb>胆</rb><rt>きも</rt></ruby>を<ruby><rb>冷</rb><rt>ひや</rt></ruby>しているのであった。いつも画学と習字にかけては全級誰も及ぶもののない<persName ref="#chokichi">長吉</persName>の性情は、<ruby><rb>鉄拳</rb><rt>てっけん</rt></ruby>だとか柔術だとか<ruby><rb>日本魂</rb><rt>やまとだましい</rt></ruby>だとかいうものよりも全く<ruby><rb>異</rb><rt>ちが</rt></ruby>った他の方面に傾いていた。子供の時から朝夕に母が<ruby><rb>渡世</rb><rt>とせい</rt></ruby>の<ruby><rb>三味線</rb><rt>しゃみせん</rt></ruby>を聴くのが大好きで、習わずして自然に<ruby><rb>絃</rb><rt>いと</rt></ruby>の調子を覚え、町を通る<ruby><rb>流行唄</rb><rt>はやりうた</rt></ruby>なぞは一度聴けば<ruby><rb>直</rb><rt>す</rt></ruby>ぐに記憶する位であった。<placeName ref="#koume"><ruby><rb>小梅</rb><rt>こうめ</rt></ruby></placeName>の伯父なる<ruby><rb><persName ref="#ragetsu">蘿月</persName>宗匠</rb><rt>らげつそうしょう</rt></ruby>は早くも名人になるべき素質があると見抜いて、<persName ref="#chokichi">長吉</persName>をば<placeName ref="#hinokicho"><ruby><rb>檜物町</rb><rt>ひものちょう</rt></ruby></placeName>でも<placeName ref="#uekidana"><ruby><rb>植木店</rb><rt>うえきだな</rt></ruby></placeName>でも<ruby><rb>何処</rb><rt>どこ</rt></ruby>でもいいから一流の家元へ弟子入をさせたらばと<persName ref="#otoyo">お豊</persName>に勧めたが<persName ref="#otoyo">お豊</persName>は断じて承諾しなかった。のみならず以来は<persName ref="#chokichi">長吉</persName>に三味線を<ruby><rb>弄</rb><rt>いじ</rt></ruby>る事をば<ruby><rb>口喧</rb><rt>くちやかま</rt></ruby>しく禁止した。</p>
+        <p><persName ref="#chokichi">長吉</persName>は<persName ref="#ragetsu">蘿月</persName>の伯父さんのいったように、あの時分から三味線を<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>したなら、今頃はとにかく<ruby><rb>一人前</rb><rt>いちにんまえ</rt></ruby>の芸人になっていたに違いない。さすればよしや<persName ref="#oito">お糸</persName>が芸者になったにした処で、こんなに<ruby><rb>悲惨</rb><rt>みじめ</rt></ruby>な目に<ruby><rb>遇</rb><rt>あ</rt></ruby>わずとも済んだであろう。ああ実に取返しのつかない事をした。一生の方針を誤ったと感じた。母親が急に憎くなる。例えられぬほど<ruby><rb>怨</rb><rt>うらめ</rt></ruby>しく思われるに反して、<persName ref="#ragetsu">蘿月</persName>の伯父さんの事が<ruby><rb>何</rb><rt>なん</rt></ruby>となく<ruby><rb>取縋</rb><rt>とりすが</rt></ruby>って見たいように<ruby><rb>懐</rb><rt>なつか</rt></ruby>しく思返された。これまでは何の気もなく母親からもまた伯父自身の口からも<ruby><rb>度々</rb><rt>たびたび</rt></ruby>聞かされていた伯父が<ruby><rb>放蕩三昧</rb><rt>ほうとうざんまい</rt></ruby>の経歴が恋の苦痛を知り<ruby><rb>初</rb><rt>そ</rt></ruby>めた<persName ref="#chokichi">長吉</persName>の心には<ruby><rb>凡</rb><rt>すべ</rt></ruby>て新しい何かの意味を以て解釈されはじめた。<persName ref="#chokichi">長吉</persName>は第一に「<placeName ref="#koume">小梅</placeName>の伯母さん」というのは<ruby><rb>元</rb><rt>もと</rt></ruby><placeName ref="#kinpei"><ruby><rb>金瓶大黒</rb><rt>きんべいだいこく</rt></ruby></placeName>の<ruby><rb>華魁</rb><rt>おいらん</rt></ruby>で<date when="1868">明治の初め</date><placeName ref="#yoshiwara"><ruby><rb>吉原</rb><rt>よしわら</rt></ruby></placeName>解放の時<placeName ref="#koume">小梅</placeName>の伯父さんを頼って来たのだとやらいう話を思出した。伯母さんは子供の<ruby><rb>頃</rb><rt>ころ</rt></ruby>自分をば非常に可愛がってくれた。それにもかかわらず、自分の母親の<persName ref="#otoyo">お豊</persName>はあまり<ruby><rb>好</rb><rt>よ</rt></ruby>くは思っていない様子で、<ruby><rb>盆暮</rb><rt>ぼんくれ</rt></ruby>の<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>もほんの義理<ruby><rb>一遍</rb><rt>いっぺん</rt></ruby>らしい事を構わず<ruby><rb>素振</rb><rt>そぶり</rt></ruby>に<ruby><rb>現</rb><rt>あらわ</rt></ruby>していた事さえあった。<persName ref="#chokichi">長吉</persName>は<ruby><rb>此処</rb><rt>ここ</rt></ruby>で再び母親の事を不愉快にかつ憎らしく思った。<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど<ruby><rb>夜</rb><rt>よ</rt></ruby>の目も離さぬほど自分の行いを<ruby><rb>目戍</rb><rt>みまも</rt></ruby>っているらしい母親の慈愛が窮屈で<ruby><rb>堪</rb><rt>たま</rt></ruby>らないだけ、もしこれが<placeName ref="#koume">小梅</placeName>の伯母さん見たような人であったら――<placeName ref="#koume">小梅</placeName>のおばさんは<persName ref="#oito">お糸</persName>と自分の二人を見て何ともいえない<ruby><rb>情</rb><rt>なさけ</rt></ruby>のある声で、いつまでも仲よくお遊びよといってくれた事がある――自分の苦痛の何物たるかを<ruby><rb>能</rb><rt>よ</rt></ruby>く察して同情してくれるであろう。自分の心がすこしも要求していない幸福を頭から無理に<ruby><rb>強</rb><rt>し</rt></ruby>いはせまい。<persName ref="#chokichi">長吉</persName>は偶然にも母親のような正しい身の上の女と<placeName ref="#koume">小梅</placeName>のおばさんのような<ruby><rb>或種</rb><rt>あるしゅ</rt></ruby>の経歴ある女との心理を比較した。学校の教師のような人と<persName ref="#ragetsu">蘿月</persName>伯父さんのような人とを比較した。</p>
+        <p><ruby><rb>午頃</rb><rt>ひるごろ</rt></ruby>まで<persName ref="#chokichi">長吉</persName>は<placeName ref="#toshogu"><ruby><rb>東照宮</rb><rt>とうしょうぐう</rt></ruby></placeName>の裏手の森の中で、<ruby><rb>捨石</rb><rt>すていし</rt></ruby>の上に<ruby><rb>横</rb><rt>よこた</rt></ruby>わりながら、こんな事を考えつづけた<ruby><rb>後</rb><rt>あと</rt></ruby>は、<ruby><rb>包</rb><rt>つつみ</rt></ruby>の中にかくした小説本を取出して読み<ruby><rb>耽</rb><rt>ふけ</rt></ruby>った。そして<ruby><rb>明日</rb><rt>あした</rt></ruby>出すべき欠席届にはいかにしてまた母の<ruby><rb>認印</rb><rt>みとめいん</rt></ruby>を盗むべきかを考えた。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>五</head>
+        <p><ruby><rb>一</rb><rt>ひと</rt></ruby>しきり毎日毎夜のように降りつづいた雨の<ruby><rb>後</rb><rt>あと</rt></ruby>、今度は雲一ツ見えないような晴天が幾日と限りもなくつづいた。しかしどうかして空が曇ると<ruby><rb>忽</rb><rt>たちま</rt></ruby>ちに風が出て乾ききった道の砂を<ruby><rb>吹散</rb><rt>ふきちら</rt></ruby>す。この風と共に寒さは日にまし強くなって<ruby><rb>閉切</rb><rt>しめき</rt></ruby>った家の戸や<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>が<ruby><rb>絶間</rb><rt>たえま</rt></ruby>なくがたりがたりと悲しげに動き出した。<persName ref="#chokichi">長吉</persName>は毎朝七時に<ruby><rb>始</rb><rt>はじま</rt></ruby>る学校へ行くため<ruby><rb>晩</rb><rt>おそ</rt></ruby>くも六時には起きねばならぬが、すると毎朝の六時が<ruby><rb>起</rb><rt>おき</rt></ruby>るたびに、だんだん暗くなって、遂には夜と同じく家の中には<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>の光を見ねばならぬようになった。<ruby><rb>毎年</rb><rt>まいとし</rt></ruby>冬のはじめに、<persName ref="#chokichi">長吉</persName>はこの<ruby><rb>鈍</rb><rt>にぶ</rt></ruby>い<ruby><rb>黄</rb><rt>きいろ</rt></ruby>い<ruby><rb>夜明</rb><rt>よあけ</rt></ruby>のランプの火を見ると、何ともいえぬ悲しい<ruby><rb>厭</rb><rt>いや</rt></ruby>な気がするのである。母親はわが子を励ますつもりで寒そうな<ruby><rb>寝衣姿</rb><rt>ねまきすがた</rt></ruby>のままながら、いつも<persName ref="#chokichi">長吉</persName>よりは早く起きて暖い<ruby><rb>朝飯</rb><rt>あさめし</rt></ruby>をばちゃんと用意して置く。<persName ref="#chokichi">長吉</persName>はその親切をすまないと感じながら<ruby><rb>何分</rb><rt>なにぶん</rt></ruby>にも眠くてならぬ。もう<ruby><rb>暫</rb><rt>しばら</rt></ruby>く<ruby><rb>炬燵</rb><rt>こたつ</rt></ruby>にあたっていたいと思うのを、むやみと時計ばかり気にする母にせきたてられて不平だらだら、<ruby><rb>河風</rb><rt>かわかぜ</rt></ruby>の寒い<ruby><rb>往来</rb><rt>おうらい</rt></ruby>へ出るのである。或時はあまりに世話を焼かれ<ruby><rb>過</rb><rt>すぎ</rt></ruby>るのに腹を立てて、注意される<ruby><rb>襟巻</rb><rt>えりまき</rt></ruby>をわざと<ruby><rb>解</rb><rt>と</rt></ruby>きすてて<ruby><rb>風邪</rb><rt>かぜ</rt></ruby>を引いてやった事もあった。もう返らない幾年か前<persName ref="#ragetsu"><ruby><rb>蘿月</rb><rt>らげつ</rt></ruby></persName>の伯父につれられ<persName ref="#oito">お糸</persName>も<ruby><rb>一所</rb><rt>いっしょ</rt></ruby>に<ruby><rb>酉</rb><rt>とり</rt></ruby>の<ruby><rb>市</rb><rt>いち</rt></ruby>へ行った事があった……<ruby><rb>毎年</rb><rt>まいとし</rt></ruby>その日の事を思い出す頃から<ruby><rb>間</rb><rt>ま</rt></ruby>もなく、今年も去年と同じような寒い<date when="--12">十二月</date>がやって来るのである。</p>
+        <p><persName ref="#chokichi">長吉</persName>は同じようなその冬の今年と去年、去年とその前年、それからそれと幾年も<ruby><rb>溯</rb><rt>さかのぼ</rt></ruby>って何心なく考えて見ると、人は成長するに従っていかに幸福を失って行くものかを<ruby><rb>明</rb><rt>あきら</rt></ruby>かに経験した。まだ学校へも行かぬ子供の時には朝寒ければゆっくりと寝たいだけ寝ていられたばかりでなく、<ruby><rb>身体</rb><rt>からだ</rt></ruby>の方もまたそれほどに寒さを感ずることが<ruby><rb>烈</rb><rt>はげ</rt></ruby>しくなかった。寒い風や雨の日にはかえって面白く飛び歩いたものである。ああそれが今の身になっては、朝早く<placeName ref="#imado"><ruby><rb>今戸</rb><rt>いまど</rt></ruby></placeName>の橋の白い霜を踏むのがいかにも<ruby><rb>辛</rb><rt>つら</rt></ruby>くまた昼過ぎにはいつも<ruby><rb>木枯</rb><rt>こがらし</rt></ruby>の騒ぐ<placeName ref="#matsuchiyama"><ruby><rb>待乳山</rb><rt>まつちやま</rt></ruby></placeName>の老樹に、早くも傾く夕日の色がいかにも悲しく見えてならない。これから先の一年一年は自分の身にいかなる新しい苦痛を授けるのであろう。<persName ref="#chokichi">長吉</persName>は今年の<date when="--12">十二月</date>ほど<ruby><rb>日数</rb><rt>ひかず</rt></ruby>の早くたつのを悲しく思った事はない。<placeName ref="#sensoji"><ruby><rb>観音</rb><rt>かんのん</rt></ruby></placeName>の<ruby><rb>境内</rb><rt>けいだい</rt></ruby>にはもう<ruby><rb>年</rb><rt>とし</rt></ruby>の<ruby><rb>市</rb><rt>いち</rt></ruby>が立った。母親のもとへとお歳暮のしるしにお弟子が持って来る砂糖袋や<ruby><rb>鰹節</rb><rt>かつぶし</rt></ruby>なぞがそろそろ<ruby><rb>床</rb><rt>とこ</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>へ並び出した。学校の学期試験は<ruby><rb>昨日</rb><rt>きのう</rt></ruby>すんで、<ruby><rb>一方</rb><rt>ひとかた</rt></ruby>ならぬその不成績に対する教師の<ruby><rb>注意書</rb><rt>ちゅういがき</rt></ruby>が郵便で母親の手許に送り届けられた。</p>
+        <p>初めから覚悟していた事なので<persName ref="#chokichi">長吉</persName>は黙って首をたれて、何かにつけてすぐに「親一人子一人」と<ruby><rb>哀</rb><rt>あわれ</rt></ruby>ッぽい事をいい出す母親の意見を聞いていた。<ruby><rb>午前</rb><rt>ひるまえ</rt></ruby><ruby><rb>稽古</rb><rt>けいこ</rt></ruby>に来る小娘たちが帰って<ruby><rb>後</rb><rt>のち</rt></ruby><ruby><rb>午過</rb><rt>ひるすぎ</rt></ruby>には三時過ぎてからでなくては、学校帰りの娘たちはやって来ぬ。今が丁度母親が一番手すきの時間である。風がなくて冬の日が往来の窓一面にさしている。折から突然まだ<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>をあけぬ先から、「<ruby><rb>御免</rb><rt>ごめん</rt></ruby>なさい。」という<ruby><rb>華美</rb><rt>はで</rt></ruby>な女の声、母親が驚いて立つ<ruby><rb>間</rb><rt>ま</rt></ruby>もなく<ruby><rb>上框</rb><rt>あがりがまち</rt></ruby>の障子の外から、「おばさん、わたしよ。<ruby><rb>御無沙汰</rb><rt>ごぶさた</rt></ruby>しちまって、お<ruby><rb>詫</rb><rt>わ</rt></ruby>びに来たんだわ。」</p>
+        <p><persName ref="#chokichi">長吉</persName>は<ruby><rb>顫</rb><rt>ふる</rt></ruby>えた。<persName ref="#oito">お糸</persName>である。<persName ref="#oito">お糸</persName>は立派なセルの<ruby><rb>吾妻</rb><rt>あずま</rt></ruby>コオトの<ruby><rb>紐</rb><rt>ひも</rt></ruby>を<ruby><rb>解</rb><rt>と</rt></ruby>き解き上って来た。</p>
+        <p>「あら、<persName ref="#chokichi"><ruby><rb>長</rb><rt>ちょう</rt></ruby>ちゃん</persName>もいたの。学校がお休み……あら、そう。」それから付けたように、ほほほほと笑って、さて丁寧に手をついて御辞儀をしながら、「おばさん、お変りもありませんの。ほんとに、つい<ruby><rb>家</rb><rt>うち</rt></ruby>が出にくいものですから、あれッきり御無沙汰しちまって……。」</p>
+        <p><persName ref="#oito">お糸</persName>は<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の<ruby><rb>風呂敷</rb><rt>ふろしき</rt></ruby>につつんだ菓子折を出した。<persName ref="#chokichi">長吉</persName>は<ruby><rb>呆気</rb><rt>あっけ</rt></ruby>に取られたさまで物もいわずに<persName ref="#oito">お糸</persName>の姿を<ruby><rb>目戍</rb><rt>みまも</rt></ruby>っている。母親もちょっと<ruby><rb>烟</rb><rt>けむ</rt></ruby>に巻かれた形で<ruby><rb>進物</rb><rt>しんもつ</rt></ruby>の礼を述べた後、「きれいにおなりだね。すっかり見違えちまったよ。」といった。</p>
+        <p>「いやにふけちまったでしょう。<ruby><rb>皆</rb><rt>みんな</rt></ruby>そういってよ。」と<persName ref="#oito">お糸</persName>は美しく<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>んで<ruby><rb>紫</rb><rt>むらさき</rt></ruby>縮緬の羽織の紐の解けかかったのを結び直すついでに帯の間から<ruby><rb>緋天鵞絨</rb><rt>ひびろうど</rt></ruby>の<ruby><rb>煙草入</rb><rt>たばこいれ</rt></ruby>を出して、「おばさん。わたし、もう煙草<ruby><rb>喫</rb><rt>の</rt></ruby>むようになったのよ。生意気でしょう。」</p>
+        <p>今度は高く笑った。</p>
+        <p>「こっちへおよんなさい。寒いから。」と母親の<persName ref="#otoyo">お豊</persName>は長火鉢の<ruby><rb>鉄瓶</rb><rt>てつびん</rt></ruby>を<ruby><rb>下</rb><rt>おろ</rt></ruby>して茶を入れながら、「いつお<ruby><rb>弘</rb><rt>ひろ</rt></ruby>めしたんだえ。」</p>
+        <p>「まだよ。ずっと<ruby><rb>押詰</rb><rt>おしづま</rt></ruby>ってからですって。」</p>
+        <p>「そう。<persName ref="#oito">お糸</persName>ちゃんなら、きっと売れるわね。何しろ<ruby><rb>綺麗</rb><rt>きれい</rt></ruby>だし、ちゃんともう<ruby><rb>地</rb><rt>じ</rt></ruby>は出来ているんだし……。」</p>
+        <p>「おかげさまでねえ。」と<persName ref="#oito">お糸</persName>は言葉を切って、「あっちの姉さんも大変に喜んでたわ。私なんかよりもっと大きなくせに、それァ随分出来ない<ruby><rb>娘</rb><rt>こ</rt></ruby>がいるんですもの。」</p>
+        <p>「この<ruby><rb>節</rb><rt>せつ</rt></ruby>の<ruby><rb>事</rb><rt>こっ</rt></ruby>たから……。」<persName ref="#otoyo">お豊</persName>はふと気がついたように茶棚から菓子鉢を出して、「あいにく<ruby><rb>何</rb><rt>なん</rt></ruby>にもなくって……<ruby><rb>道了</rb><rt>どうりょう</rt></ruby>さまのお名物だって、ちょっとおつなものだよ。」と<ruby><rb>箸</rb><rt>はし</rt></ruby>でわざわざ<ruby><rb>摘</rb><rt>つま</rt></ruby>んでやった。</p>
+        <p>「お<ruby><rb>師匠</rb><rt>っしょ</rt></ruby>さん、こんちは。」と<ruby><rb>甲高</rb><rt>かんだか</rt></ruby>な一本調子で、<ruby><rb>二人</rb><rt>ふたり</rt></ruby>づれの小娘が騒々しく<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>にやって来た。</p>
+        <p>「おばさん、どうぞお構いなく……。」</p>
+        <p>「なにいいんですよ。」といったけれど<persName ref="#otoyo">お豊</persName>はやがて次の<ruby><rb>間</rb><rt>ま</rt></ruby>へ立った。</p>
+        <p><persName ref="#chokichi">長吉</persName>は妙に<ruby><rb>気</rb><rt>き</rt></ruby>まりが悪くなって自然に<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いたが、<persName ref="#oito">お糸</persName>の方は一向変った様子もなく小声で、</p>
+        <p>「あの手紙届いて。」</p>
+        <p>隣の座敷では二人の小娘が声を<ruby><rb>揃</rb><rt>そろ</rt></ruby>えて、<ruby><rb>嵯峨</rb><rt>さが</rt></ruby>やお<ruby><rb>室</rb><rt>むろ</rt></ruby>の花ざかり。<persName ref="#chokichi">長吉</persName>は首ばかり<ruby><rb>頷付</rb><rt>うなずか</rt></ruby>せてもじもじしている。<persName ref="#oito">お糸</persName>が手紙を<ruby><rb>寄越</rb><rt>よこ</rt></ruby>したのは<ruby><rb>一</rb><rt>いち</rt></ruby>の<ruby><rb>酉</rb><rt>とり</rt></ruby>の<ruby><rb>前</rb><rt>まえ</rt></ruby><ruby><rb>時分</rb><rt>じぶん</rt></ruby>であった。つい<ruby><rb>家</rb><rt>うち</rt></ruby>が出にくいというだけの事である。<persName ref="#chokichi">長吉</persName>は<ruby><rb>直様</rb><rt>すぐさま</rt></ruby>別れた<ruby><rb>後</rb><rt>のち</rt></ruby>の生涯をこまごまと書いて送ったが、しかし待ち設けたような、折返した<persName ref="#oito">お糸</persName>の返事は遂に聞く事が出来なかったのである。</p>
+        <p>「<placeName ref="#sensoji">観音</placeName>さまの<ruby><rb>市</rb><rt>いち</rt></ruby>だわね。今夜一所に行かなくって。あたい今夜泊ってッてもいいんだから。」</p>
+        <p><persName ref="#chokichi">長吉</persName>は隣座敷の母親を<ruby><rb>気兼</rb><rt>きがね</rt></ruby>して何とも答える事ができない。<persName ref="#oito">お糸</persName>は構わず、</p>
+        <p>「御飯たべたら迎いに来てよ。」といったがその<ruby><rb>後</rb><rt>あと</rt></ruby>で、「おばさんも一所にいらッしゃるでしょうね。」</p>
+        <p>「ああ。」と<persName ref="#chokichi">長吉</persName>は力の抜けた声になった。</p>
+        <p>「あの……。」<persName ref="#oito">お糸</persName>は急に思出して、「<placeName ref="#koume">小梅</placeName>の伯父さん、どうなすって、お酒に<ruby><rb>酔</rb><rt>え</rt></ruby>って<ruby><rb>羽子板屋</rb><rt>はごいたや</rt></ruby>のお<ruby><rb>爺</rb><rt>じい</rt></ruby>さんと<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>したわね。<ruby><rb>何時</rb><rt>いつ</rt></ruby>だったか。<ruby><rb>私</rb><rt>わたし</rt></ruby>怖くなッちまッたわ。今夜いらッしゃればいいのに。」</p>
+        <p><persName ref="#oito">お糸</persName>は稽古の<ruby><rb>隙</rb><rt>すき</rt></ruby>を<ruby><rb>窺</rb><rt>うかが</rt></ruby>って<persName ref="#otoyo">お豊</persName>に<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>して、「じゃ、晩ほど。どうもお邪魔いたしました。」といいながらすたすた帰った。</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>六</head>
+        <p><persName ref="#chokichi">長吉</persName>は<ruby><rb>風邪</rb><rt>かぜ</rt></ruby>をひいた。<ruby><rb>七草</rb><rt>ななくさ</rt></ruby>過ぎて学校が<ruby><rb>始</rb><rt>はじま</rt></ruby>った処から一日無理をして通学したために、流行のインフルエンザに変って<date when="--01">正月</date>一ぱい寝通してしまった。</p>
+        <p><placeName ref="#imadohachiman">八幡</placeName>さまの境内に今日は朝から<ruby><rb>初午</rb><rt>はつうま</rt></ruby>の太鼓が聞える。暖い<ruby><rb>穏</rb><rt>おだやか</rt></ruby>な<ruby><rb>午後</rb><rt>ひるすぎ</rt></ruby>の日光が一面にさし込む表の窓の障子には、<ruby><rb>折々</rb><rt>おりおり</rt></ruby><ruby><rb>軒</rb><rt>のき</rt></ruby>を<ruby><rb>掠</rb><rt>かす</rt></ruby>める小鳥の影が<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>き、茶の間の隅の薄暗い仏壇の奥までが<ruby><rb>明</rb><rt>あかる</rt></ruby>く見え、<ruby><rb>床</rb><rt>とこ</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>の梅がもう散りはじめた。春は<ruby><rb>閉切</rb><rt>しめき</rt></ruby>った<ruby><rb>家</rb><rt>うち</rt></ruby>の中までも陽気におとずれて来たのである。</p>
+        <p><persName ref="#chokichi">長吉</persName>は二、三日前から起きていたので、この暖い日をぶらぶら散歩に出掛けた。すっかり全快した今になって見れば、<ruby><rb>二十日</rb><rt>はつか</rt></ruby>以上も苦しんだ大病を<persName ref="#chokichi">長吉</persName>はもっけの幸いであったと喜んでいる。とても来月の学年試験には及第する見込みがないと思っていた処なので、病気欠席の<ruby><rb>後</rb><rt>あと</rt></ruby>といえば、落第しても母に対して<ruby><rb>尤</rb><rt>もっとも</rt></ruby><ruby><rb>至極</rb><rt>しごく</rt></ruby>な<ruby><rb>申訳</rb><rt>もうしわけ</rt></ruby>ができると思うからであった。</p>
+        <p>歩いて行く<ruby><rb>中</rb><rt>うち</rt></ruby>いつか<placeName ref="#asakusakoen"><ruby><rb>浅草</rb><rt>あさくさ</rt></ruby>公園</placeName>の裏手へ出た。細い通りの片側には深い<ruby><rb>溝</rb><rt>どぶ</rt></ruby>があって、それを越した<ruby><rb>鉄柵</rb><rt>てつさく</rt></ruby>の向うには、<ruby><rb>処々</rb><rt>ところどころ</rt></ruby>の冬枯れして立つ<ruby><rb>大木</rb><rt>たいぼく</rt></ruby>の下に、<placeName ref="#goku"><ruby><rb>五区</rb><rt>ごく</rt></ruby></placeName>の<ruby><rb>揚弓店</rb><rt>ようきゅうてん</rt></ruby>の<ruby><rb>汚</rb><rt>きたな</rt></ruby>らしい裏手がつづいて見える。屋根の低い<ruby><rb>片側町</rb><rt>かたかわまち</rt></ruby>の人家は丁度<ruby><rb>後</rb><rt>うしろ</rt></ruby>から深い溝の方へと押詰められたような気がするので、大方そのためであろう、それほどに混雑もせぬ往来がいつも妙に<ruby><rb>忙</rb><rt>いそが</rt></ruby>しく見え、うろうろ<ruby><rb>徘徊</rb><rt>はいかい</rt></ruby>している<ruby><rb>人相</rb><rt>にんそう</rt></ruby>の悪い<ruby><rb>車夫</rb><rt>しゃふ</rt></ruby>がちょっと<ruby><rb>風采</rb><rt>みなり</rt></ruby>の<ruby><rb>小綺麗</rb><rt>こぎれい</rt></ruby>な通行人の<ruby><rb>後</rb><rt>あと</rt></ruby>に<ruby><rb>煩</rb><rt>うるさ</rt></ruby>く付き<ruby><rb>纏</rb><rt>まと</rt></ruby>って乗車を<ruby><rb>勧</rb><rt>すす</rt></ruby>めている。<persName ref="#chokichi">長吉</persName>はいつも巡査が<ruby><rb>立番</rb><rt>たちばん</rt></ruby>している左手の<ruby><rb>石橋</rb><rt>いしばし</rt></ruby>から<placeName ref="#awashima"><ruby><rb>淡島</rb><rt>あわしま</rt></ruby></placeName>さまの方までがずっと<ruby><rb>見透</rb><rt>みとお</rt></ruby>される<ruby><rb>四辻</rb><rt>よつつじ</rt></ruby>まで歩いて来て、通りがかりの人々が立止って眺めるままに、自分も何という事なく、曲り角に出してある<placeName ref="#miyatoza"><ruby><rb>宮戸座</rb><rt>みやとざ</rt></ruby></placeName>の<ruby><rb>絵看板</rb><rt>えかんばん</rt></ruby>を仰いだ。</p>
+        <p>いやに<ruby><rb>文字</rb><rt>もんじ</rt></ruby>の<ruby><rb>間</rb><rt>あいだ</rt></ruby>をくッ付けて模様のように太く書いてある<ruby><rb>名題</rb><rt>なだい</rt></ruby>の<ruby><rb>木札</rb><rt>きふだ</rt></ruby>を<ruby><rb>中央</rb><rt>まんなか</rt></ruby>にして、その左右には恐しく顔の<ruby><rb>小</rb><rt>ちいさ</rt></ruby>い、眼の<ruby><rb>大</rb><rt>おおき</rt></ruby>い、指先の太い人物が、夜具をかついだような<ruby><rb>大</rb><rt>おおき</rt></ruby>い着物を着て、さまざまな誇張的の姿勢で活躍しているさまが<ruby><rb>描</rb><rt>えが</rt></ruby>かれてある。この大きい絵看板を<ruby><rb>蔽</rb><rt>おお</rt></ruby>う屋根形の軒には、<ruby><rb>花車</rb><rt>だし</rt></ruby>につけるような造り花が美しく飾りつけてあった。</p>
+        <p><persName ref="#chokichi">長吉</persName>はいかほど暖い<ruby><rb>日和</rb><rt>ひより</rt></ruby>でも歩いているとさすがにまだ立春になったばかりの事とて<ruby><rb>暫</rb><rt>しばら</rt></ruby>くの間寒い風をよける処をと思い出した<ruby><rb>矢先</rb><rt>やさき</rt></ruby>、芝居の絵看板を見て、そのまま狭い<ruby><rb>立見</rb><rt>たちみ</rt></ruby>の戸口へと進み寄った。<ruby><rb>内</rb><rt>うち</rt></ruby>へ<ruby><rb>這入</rb><rt>はい</rt></ruby>ると足場の悪い<ruby><rb>梯子段</rb><rt>はしごだん</rt></ruby>が立っていて、その<ruby><rb>中</rb><rt>なか</rt></ruby>ほどから曲るあたりはもう薄暗く、臭い<ruby><rb>生暖</rb><rt>なまあたたか</rt></ruby>い<ruby><rb>人込</rb><rt>ひとごみ</rt></ruby>の<ruby><rb>温気</rb><rt>うんき</rt></ruby>がなお更暗い上の方から吹き下りて来る。<ruby><rb>頻</rb><rt>しきり</rt></ruby>に役者の名を呼ぶ<ruby><rb>掛声</rb><rt>かけごえ</rt></ruby>が聞える。それを聞くと<persName ref="#chokichi">長吉</persName>は都会育ちの観劇者ばかりが経験する<ruby><rb>特種</rb><rt>とくしゅ</rt></ruby>の快感と特種の熱情とを覚えた。梯子段の二、三段を<ruby><rb>一躍</rb><rt>ひとと</rt></ruby>びに<ruby><rb>駈上</rb><rt>かけあが</rt></ruby>って人込みの中に割込むと、<ruby><rb>床板</rb><rt>ゆかいた</rt></ruby>の<ruby><rb>斜</rb><rt>ななめ</rt></ruby>になった低い屋根裏の<ruby><rb>大向</rb><rt>おおむこう</rt></ruby>は大きな船の底へでも下りたような心持。<ruby><rb>後</rb><rt>うしろ</rt></ruby>の<ruby><rb>隅々</rb><rt>すみずみ</rt></ruby>についている<ruby><rb>瓦斯</rb><rt>ガス</rt></ruby>の<ruby><rb>裸火</rb><rt>はだかび</rt></ruby>の光は一ぱいに<ruby><rb>詰</rb><rt>つま</rt></ruby>っている見物人の頭に<ruby><rb>遮</rb><rt>さえぎ</rt></ruby>られて非常に暗く、狭苦しいので、猿のように人のつかまっている前側の鉄棒から、向うに見える劇場の内部は天井ばかりがいかにも広々と見え、舞台は色づき濁った空気のためにかえって小さく<ruby><rb>甚</rb><rt>はなはだ</rt></ruby>遠く見えた。舞台はチョンと打った拍子木の音に今丁度廻って<ruby><rb>止</rb><rt>とま</rt></ruby>った処である。極めて一直線な石垣を見せた台の下に汚れた水色の布が敷いてあって、<ruby><rb>後</rb><rt>うしろ</rt></ruby>を限る<ruby><rb>書割</rb><rt>かきわり</rt></ruby>には<ruby><rb>小</rb><rt>ちいさ</rt></ruby>く<ruby><rb>大名屋敷</rb><rt>だいみょうやしき</rt></ruby>の<ruby><rb>練塀</rb><rt>ねりべい</rt></ruby>を<ruby><rb>描</rb><rt>えが</rt></ruby>き、その上の空一面をば無理にも夜だと思わせるように<ruby><rb>隙間</rb><rt>すきま</rt></ruby>もなく<ruby><rb>真黒</rb><rt>まっくろ</rt></ruby>に塗りたててある。<persName ref="#chokichi">長吉</persName>は観劇に対するこれまでの経験で「夜」と「<ruby><rb>川端</rb><rt>かわばた</rt></ruby>」という事から、きっと<ruby><rb>殺</rb><rt>ころ</rt></ruby>し<ruby><rb>場</rb><rt>ば</rt></ruby>に違いないと幼い好奇心から<ruby><rb>丈伸</rb><rt>せの</rt></ruby>びをして首を<ruby><rb>伸</rb><rt>のば</rt></ruby>すと、<ruby><rb>果</rb><rt>はた</rt></ruby>せるかな、絶えざる低い<ruby><rb>大太鼓</rb><rt>おおだいこ</rt></ruby>の音に例の如く板をバタバタ<ruby><rb>叩</rb><rt>たた</rt></ruby>く音が聞えて、左手の辻番小屋の<ruby><rb>蔭</rb><rt>かげ</rt></ruby>から<ruby><rb>仲間</rb><rt>ちゅうげん</rt></ruby>と<ruby><rb>蓙</rb><rt>ござ</rt></ruby>を抱えた女とが大きな声で争いながら出て来る。見物人が笑った。舞台の人物は落したものを<ruby><rb>捜</rb><rt>さが</rt></ruby>す<ruby><rb>体</rb><rt>てい</rt></ruby>で何かを取り上げると、突然前とは全く違った態度になって、極めて明瞭に<ruby><rb>浄瑠璃外題</rb><rt>じょうるりげだい</rt></ruby>「<ruby><rb>梅柳中宵月</rb><rt>うめやなぎなかもよいづき</rt></ruby>」、勤めまする役人……と読みはじめる。それを待構えて<ruby><rb>彼方</rb><rt>かなた</rt></ruby><ruby><rb>此方</rb><rt>こなた</rt></ruby>から見物人が声をかけた。再び軽い拍子木の音を合図に、<ruby><rb>黒衣</rb><rt>くろご</rt></ruby>の男が右手の隅に立てた書割の一部を引取ると<ruby><rb>裃</rb><rt>かみしも</rt></ruby>を着た<ruby><rb>浄瑠璃語</rb><rt>じょうるりかたり</rt></ruby>三人、<ruby><rb>三味線弾</rb><rt>しゃみせんひき</rt></ruby>二人が、窮屈そうに狭い台の上に並んでいて、<ruby><rb>直</rb><rt>す</rt></ruby>ぐに<ruby><rb>弾出</rb><rt>ひきだ</rt></ruby>す三味線からつづいて<ruby><rb>太夫</rb><rt>たゆう</rt></ruby>が声を<ruby><rb>合</rb><rt>あわ</rt></ruby>してかたり出した。<persName ref="#chokichi">長吉</persName>はこの種の音楽にはいつも興味を以て聞き<ruby><rb>馴</rb><rt>な</rt></ruby>れているので、場内の<ruby><rb>何処</rb><rt>どこ</rt></ruby>かで泣き出す<ruby><rb>赤児</rb><rt>あかご</rt></ruby>の声とそれを<ruby><rb>叱咤</rb><rt>しった</rt></ruby>する見物人の声に妨げられながら、しかも<ruby><rb>明</rb><rt>あきら</rt></ruby>かに語る文句と三味線の手までを<ruby><rb>聴</rb><rt>き</rt></ruby>き分ける。</p>
+        <p><ruby><rb>〽朧夜</rb><rt>おぼろよ</rt></ruby>に星の影さへ二ツ三ツ、四ツか五ツか鐘の<ruby><rb>音</rb><rt>ね</rt></ruby>も、もしや<ruby><rb>我身</rb><rt>わがみ</rt></ruby>の<ruby><rb>追手</rb><rt>おって</rt></ruby>かと……</p>
+        <p>またしても軽いバタバタが聞えて夢中になって声をかける見物人のみならず<ruby><rb>場中</rb><rt>じょうちゅう</rt></ruby>一体が<ruby><rb>気色立</rb><rt>けしきだ</rt></ruby>つ。それも道理だ。赤い<ruby><rb>襦袢</rb><rt>じゅばん</rt></ruby>の上に<ruby><rb>紫繻子</rb><rt>むらさきじゅす</rt></ruby>の幅広い<ruby><rb>襟</rb><rt>えり</rt></ruby>をつけた座敷着の遊女が、<ruby><rb>冠</rb><rt>かぶ</rt></ruby>る<ruby><rb>手拭</rb><rt>てぬぐい</rt></ruby>に顔をかくして、前かがまりに<ruby><rb>花道</rb><rt>はなみち</rt></ruby>から<ruby><rb>駈出</rb><rt>かけだ</rt></ruby>したのである。「見えねえ、前が高いッ。」「帽子をとれッ。」「馬鹿野郎。」なぞと<ruby><rb>怒鳴</rb><rt>どな</rt></ruby>るものがある。</p>
+        <p>〽落ちて<ruby><rb>行衛</rb><rt>ゆくえ</rt></ruby>も<ruby><rb>白魚</rb><rt>しらうお</rt></ruby>の、舟のかがりに網よりも、人目いとうて<ruby><rb>後先</rb><rt>あとさき</rt></ruby>に……</p>
+        <p>女に<ruby><rb>扮</rb><rt>ふん</rt></ruby>した役者は花道の尽きるあたりまで出て<ruby><rb>後</rb><rt>うしろ</rt></ruby>を見返りながら<ruby><rb>台詞</rb><rt>せりふ</rt></ruby>を述べた。その<ruby><rb>後</rb><rt>あと</rt></ruby>に<ruby><rb>唄</rb><rt>うた</rt></ruby>がつづく。</p>
+        <p>〽しばし<ruby><rb>彳</rb><rt>たたず</rt></ruby>む<ruby><rb>上手</rb><rt>うわて</rt></ruby>より<ruby><rb>梅見返</rb><rt>うめみがえ</rt></ruby>りの舟の唄。〽忍ぶなら忍ぶなら<ruby><rb>闇</rb><rt>やみ</rt></ruby>の夜は置かしやんせ、月に雲のさはりなく、<ruby><rb>辛気</rb><rt>しんき</rt></ruby>待つ宵、<ruby><rb>十六夜</rb><rt>いざよい</rt></ruby>の、<ruby><rb>内</rb><rt>うち</rt></ruby>の<ruby><rb>首尾</rb><rt>しゅび</rt></ruby>はエーよいとのよいとの。〽聞く<ruby><rb>辻占</rb><rt>つじうら</rt></ruby>にいそいそと雲足早き<ruby><rb>雨空</rb><rt>あまぞら</rt></ruby>も、思ひがけなく吹き晴れて見かはす月の顔と顔……</p>
+        <p>見物がまた騒ぐ。真黒に塗りたてた空の書割の<ruby><rb>中央</rb><rt>まんなか</rt></ruby>を大きく<ruby><rb>穿抜</rb><rt>くりぬ</rt></ruby>いてある<ruby><rb>円</rb><rt>まる</rt></ruby>い穴に<ruby><rb>灯</rb><rt>ひ</rt></ruby>がついて、<ruby><rb>雲形</rb><rt>くもがた</rt></ruby>の<ruby><rb>蔽</rb><rt>おお</rt></ruby>いをば糸で引上げるのが<ruby><rb>此方</rb><rt>こなた</rt></ruby>からでも<ruby><rb>能</rb><rt>よ</rt></ruby>く見えた。余りに月が大きく<ruby><rb>明</rb><rt>あかる</rt></ruby>いから、大名屋敷の塀の方が遠くて月の方がかえって非常に近く見える。しかし<persName ref="#chokichi">長吉</persName>は他の見物も同様少しも美しい幻想を破られなかった。それのみならず去年の夏の末、<persName ref="#oito">お糸</persName>を<placeName ref="#yoshicho"><ruby><rb>葭町</rb><rt>よしちょう</rt></ruby></placeName>へ送るため、<ruby><rb>待合</rb><rt>まちあわ</rt></ruby>した<placeName ref="#imado"><ruby><rb>今戸</rb><rt>いまど</rt></ruby></placeName>の橋から眺めた<ruby><rb>彼</rb><rt>あ</rt></ruby>の大きな<ruby><rb>円</rb><rt>まる</rt></ruby>い円い月を<ruby><rb>思起</rb><rt>おもいおこ</rt></ruby>すと、もう舞台は舞台でなくなった。</p>
+        <p>着流し<ruby><rb>散髪</rb><rt>ざんぱつ</rt></ruby>の男がいかにも思いやつれた<ruby><rb>風</rb><rt>ふう</rt></ruby>で<ruby><rb>足許</rb><rt>あしもと</rt></ruby><ruby><rb>危</rb><rt>あやう</rt></ruby>く歩み出る。女と<ruby><rb>摺</rb><rt>す</rt></ruby>れちがいに顔を見合して、</p>
+        <p>「<persName ref="#izayoi"><ruby><rb>十六夜</rb><rt>いざよい</rt></ruby></persName>か。」</p>
+        <p>「<persName ref="#seishin"><ruby><rb>清心</rb><rt>せいしん</rt></ruby></persName>さまか。」</p>
+        <p>女は男に<ruby><rb>縋</rb><rt>すが</rt></ruby>って、「<ruby><rb>逢</rb><rt>あ</rt></ruby>ひたかつたわいなア。」</p>
+        <p>見物人が「やア<ruby><rb>御両人</rb><rt>ごりょうにん</rt></ruby>。」「よいしょ。やけます。」なぞと叫ぶ。笑う声。「静かにしろい。」と<ruby><rb>叱</rb><rt>しか</rt></ruby>りつける熱情家もあった。</p>
+        <p>舞台は<ruby><rb>相</rb><rt>あい</rt></ruby>愛する男女の<ruby><rb>入水</rb><rt>じゅすい</rt></ruby>と共に廻って、女の方が<ruby><rb>白魚舟</rb><rt>しらうおぶね</rt></ruby>の<ruby><rb>夜網</rb><rt>よあみ</rt></ruby>にかかって助けられる処になる。再び元の舞台に返って、男も同じく死ぬ事が出来なくて石垣の上に<ruby><rb>這</rb><rt>は</rt></ruby>い<ruby><rb>上</rb><rt>あが</rt></ruby>る。遠くの騒ぎ唄、<ruby><rb>富貴</rb><rt>ふうき</rt></ruby>の<ruby><rb>羨望</rb><rt>せんぼう</rt></ruby>、生存の快楽、境遇の絶望、機会と運命、誘惑、殺人。<ruby><rb>波瀾</rb><rt>はらん</rt></ruby>の上にも脚色の波瀾を極めて、遂に演劇の<ruby><rb>一幕</rb><rt>ひとまく</rt></ruby>が終る。耳元近くから恐しい<ruby><rb>黄</rb><rt>きいろ</rt></ruby>い声が、「変るよ――ウ」と叫び出した。見物人が出口の方へと<ruby><rb>崩</rb><rt>なだれ</rt></ruby>を打って<ruby><rb>下</rb><rt>お</rt></ruby>りかける。</p>
+        <p><persName ref="#chokichi">長吉</persName>は外へ出ると急いで歩いた。あたりはまだ<ruby><rb>明</rb><rt>あかる</rt></ruby>いけれどもう日は当っていない。ごたごたした<placeName ref="#senzokumachi"><ruby><rb>千束町</rb><rt>せんぞくまち</rt></ruby></placeName>の<ruby><rb>小売店</rb><rt>こうりみせ</rt></ruby>の<ruby><rb>暖簾</rb><rt>のれん</rt></ruby>や旗なぞが激しく<ruby><rb>飜</rb><rt>ひるがえ</rt></ruby>っている。通りがかりに時間を見るため腰をかがめて<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて見ると軒の低いそれらの<ruby><rb>家</rb><rt>うち</rt></ruby>の奥は<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>であった。<persName ref="#chokichi">長吉</persName>は病後の夕風を恐れてますます歩みを早めたが、しかし<placeName ref="#sanyabori"><ruby><rb>山谷堀</rb><rt>さんやぼり</rt></ruby></placeName>から<placeName ref="#imadobashi"><ruby><rb>今戸橋</rb><rt>いまどばし</rt></ruby></placeName>の<ruby><rb>向</rb><rt>むこう</rt></ruby>に開ける<placeName ref="#sumidagawa"><ruby><rb>隅田川</rb><rt>すみだがわ</rt></ruby></placeName>の景色を見ると、どうしても<ruby><rb>暫</rb><rt>しばら</rt></ruby>く立止らずにはいられなくなった。河の<ruby><rb>面</rb><rt>おもて</rt></ruby>は悲しく灰色に光っていて、冬の日の終りを急がす水蒸気は対岸の堤をおぼろに<ruby><rb>霞</rb><rt>かす</rt></ruby>めている。<ruby><rb>荷船</rb><rt>にぶね</rt></ruby>の帆の間をば<ruby><rb>鴎</rb><rt>かもめ</rt></ruby>が幾羽となく飛び<ruby><rb>交</rb><rt>ちが</rt></ruby>う。<persName ref="#chokichi">長吉</persName>はどんどん流れて行く<ruby><rb>河水</rb><rt>かわみず</rt></ruby>をば何がなしに悲しいものだと思った。<ruby><rb>川向</rb><rt>かわむこう</rt></ruby>の堤の上には一ツ二ツ<ruby><rb>灯</rb><rt>ひ</rt></ruby>がつき出した。枯れた樹木、乾いた石垣、汚れた<ruby><rb>瓦</rb><rt>かわら</rt></ruby>屋根、目に<ruby><rb>入</rb><rt>い</rt></ruby>るものは<ruby><rb>尽</rb><rt>ことごと</rt></ruby>く<ruby><rb>褪</rb><rt>あ</rt></ruby>せた寒い色をしているので、芝居を出てから一瞬間とても<ruby><rb>消失</rb><rt>きえう</rt></ruby>せない<persName ref="#seishin"><ruby><rb>清心</rb><rt>せいしん</rt></ruby></persName>と<persName ref="#izayoi"><ruby><rb>十六夜</rb><rt>いざよい</rt></ruby></persName>の<ruby><rb>華美</rb><rt>はで</rt></ruby>やかな姿の記憶が、<ruby><rb>羽子板</rb><rt>はごいた</rt></ruby>の<ruby><rb>押絵</rb><rt>おしえ</rt></ruby>のようにまた一段と<ruby><rb>際立</rb><rt>きわだ</rt></ruby>って浮び出す。<persName ref="#chokichi">長吉</persName>は劇中の人物をば憎いほどに<ruby><rb>羨</rb><rt>うらや</rt></ruby>んだ。いくら羨んでも到底及びもつかないわが身の上を悲しんだ。死んだ方がましだと思うだけ、一緒に死んでくれる人のない身の上を更に痛切に悲しく思った。</p>
+        <p><placeName ref="#imadobashi">今戸橋</placeName>を渡りかけた時、<ruby><rb>掌</rb><rt>てのひら</rt></ruby>でぴしゃりと<ruby><rb>横面</rb><rt>よこつら</rt></ruby>を<ruby><rb>張撲</rb><rt>はりなぐ</rt></ruby>るような河風。思わず寒さに<ruby><rb>胴顫</rb><rt>どうぶる</rt></ruby>いすると同時に<persName ref="#chokichi">長吉</persName>は<ruby><rb>咽喉</rb><rt>のど</rt></ruby>の奥から、今までは記憶しているとも心付かずにいた<ruby><rb>浄瑠璃</rb><rt>じょうるり</rt></ruby>の<ruby><rb>一節</rb><rt>いっせつ</rt></ruby>がわれ知らずに流れ出るのに驚いた。</p>
+        <p>〽今さらいふも<ruby><rb>愚痴</rb><rt>ぐち</rt></ruby>なれど……</p>
+        <p>と<ruby><rb>清元</rb><rt>きよもと</rt></ruby>の一派が他流の<ruby><rb>模</rb><rt>も</rt></ruby>すべからざる<ruby><rb>曲調</rb><rt>きょくちょう</rt></ruby>の美麗を托した<ruby><rb>一節</rb><rt>いっせつ</rt></ruby>である。<persName ref="#chokichi">長吉</persName>は無論<ruby><rb>太夫</rb><rt>たゆう</rt></ruby>さんが首と<ruby><rb>身体</rb><rt>からだ</rt></ruby>を<ruby><rb>伸上</rb><rt>のびあが</rt></ruby>らして唄ったほど上手に、かつまたそんな大きな声で唄ったのではない。咽喉から流れるままに口の中で<ruby><rb>低唱</rb><rt>ていしょう</rt></ruby>したのであるが、それによって<persName ref="#chokichi">長吉</persName>はやみがたい心の苦痛が幾分か<ruby><rb>柔</rb><rt>やわら</rt></ruby>げられるような心持がした。今更いうも愚痴なれど……ほんに思えば……岸より<ruby><rb>覗</rb><rt>のぞ</rt></ruby>く<ruby><rb>青柳</rb><rt>あおやぎ</rt></ruby>の……と<ruby><rb>思出</rb><rt>おもいだ</rt></ruby>す<ruby><rb>節</rb><rt>ふし</rt></ruby>の、ところどころを<persName ref="#chokichi">長吉</persName>は<ruby><rb>家</rb><rt>うち</rt></ruby>の<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>を開ける時まで<ruby><rb>繰返</rb><rt>くりかえ</rt></ruby>し繰返し歩いた。</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>七</head>
+        <p><ruby><rb>翌日</rb><rt>あくるひ</rt></ruby>の<ruby><rb>午後</rb><rt>ひるすぎ</rt></ruby>にまたもや<placeName ref="#miyatoza"><ruby><rb>宮戸座</rb><rt>みやとざ</rt></ruby></placeName>の<ruby><rb>立見</rb><rt>たちみ</rt></ruby>に出掛けた。<persName ref="#chokichi">長吉</persName>は恋の二人が手を取って嘆く美しい舞台から、<ruby><rb>昨日</rb><rt>きのう</rt></ruby>始めて経験したいうべからざる悲哀の美感に<ruby><rb>酔</rb><rt>え</rt></ruby>いたいと思ったのである。そればかりでなく黒ずんだ天井と<ruby><rb>壁</rb><rt>かべ</rt></ruby><ruby><rb>襖</rb><rt>ふすま</rt></ruby>に囲まれた二階の<ruby><rb>室</rb><rt>へや</rt></ruby>がいやに陰気臭くて、<ruby><rb>燈火</rb><rt>とうか</rt></ruby>の多い、人の大勢集っている芝居の<ruby><rb>賑</rb><rt>にぎわ</rt></ruby>いが、我慢の出来ぬほど恋しく思われてならなかったのである。<persName ref="#chokichi">長吉</persName>は失った<persName ref="#oito">お糸</persName>の事以外に<ruby><rb>折々</rb><rt>おりおり</rt></ruby>は<ruby><rb>唯</rb><rt>た</rt></ruby>だ何という<ruby><rb>訳</rb><rt>わけ</rt></ruby>もなく<ruby><rb>淋</rb><rt>さび</rt></ruby>しい悲しい気がする。自分にもどういう訳だか少しも分らない。唯だ淋しい、唯だ悲しいのである。この<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>この悲哀を慰めるために、<persName ref="#chokichi">長吉</persName>は定めがたい何物かを一刻一刻に激しく要求して<ruby><rb>止</rb><rt>や</rt></ruby>まない。胸の底に<ruby><rb>潜</rb><rt>ひそ</rt></ruby>んだ漠然たる苦痛を、誰と限らず優しい声で答えてくれる美しい女に訴えて見たくてならない。単に<persName ref="#oito">お糸</persName>一人の姿のみならず、往来で<ruby><rb>摺</rb><rt>す</rt></ruby>れちがった見知らぬ女の姿が、島田の娘になったり、<ruby><rb>銀杏返</rb><rt>いちょうがえし</rt></ruby>の<ruby><rb>芸者</rb><rt>げいしゃ</rt></ruby>になったり、または<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>の女房姿になったりして夢の中に浮ぶ事さえあった。</p>
+        <p><persName ref="#chokichi">長吉</persName>は二度見る同じ芝居の舞台をば初めてのように興味深く眺めた。それと同時に、今度は<ruby><rb>賑</rb><rt>にぎや</rt></ruby>かな左右の<ruby><rb>桟敷</rb><rt>さじき</rt></ruby>に対する観察をも決して閑却しなかった。世の中にはあんなに大勢女がいる。あんなに大勢女のいる中で、どうして自分は一人も自分を慰めてくれる相手に<ruby><rb>邂逅</rb><rt>めぐりあ</rt></ruby>わないのであろう。誰れでもいい。自分に<ruby><rb>一言</rb><rt>ひとこと</rt></ruby>やさしい<ruby><rb>語</rb><rt>ことば</rt></ruby>をかけてくれる女さえあれば、自分はこんなに切なく<persName ref="#oito">お糸</persName>の事ばかり思いつめてはいまい。<persName ref="#oito">お糸</persName>の事を思えば思うだけその苦痛をへらす他のものが欲しい。さすれば学校とそれに関連した身の前途に対する絶望のみに沈められていまい……。</p>
+        <p>立見の混雑の中にその時突然自分の肩を突くものがあるので驚いて振向くと、<persName ref="#chokichi">長吉</persName>は<ruby><rb>鳥打帽</rb><rt>とりうちぼう</rt></ruby>を<ruby><rb>眉深</rb><rt>まぶか</rt></ruby>に黒い眼鏡をかけて、<ruby><rb>後</rb><rt>うしろ</rt></ruby>の一段高い<ruby><rb>床</rb><rt>ゆか</rt></ruby>から首を<ruby><rb>伸</rb><rt>のば</rt></ruby>して<ruby><rb>見下</rb><rt>みおろ</rt></ruby>す若い男の顔を見た。</p>
+        <p>「<persName ref="#tamamizu"><ruby><rb>吉</rb><rt>きち</rt></ruby>さん</persName>じゃないか。」</p>
+        <p>そういったものの、<persName ref="#chokichi">長吉</persName>は<persName ref="#tamamizu">吉さん</persName>の<ruby><rb>風采</rb><rt>ふうさい</rt></ruby>の余りに変っているのに<ruby><rb>暫</rb><rt>しばら</rt></ruby>くは二の句がつげなかった。<persName ref="#tamamizu">吉さん</persName>というのは<placeName ref="#jikatamachi"><ruby><rb>地方町</rb><rt>じかたまち</rt></ruby></placeName>の小学校時代の友達で、<ruby><rb>理髪師</rb><rt>とこや</rt></ruby>をしている<ruby><rb><placeName ref="#sanya">山谷</placeName>通</rb><rt>さんやどお</rt></ruby>りの<ruby><rb>親爺</rb><rt>おやじ</rt></ruby>の店で、これまで<persName ref="#chokichi">長吉</persName>の髪をかってくれた<ruby><rb>若衆</rb><rt>わかいしゅ</rt></ruby>である。それが絹ハンケチを首に巻いて<ruby><rb>二重廻</rb><rt>にじゅうまわし</rt></ruby>の下から<ruby><rb>大島紬</rb><rt>おおしまつむぎ</rt></ruby>の羽織を見せ、いやに香水を<ruby><rb>匂</rb><rt>にお</rt></ruby>わせながら、</p>
+        <p>「<persName ref="#chokichi"><ruby><rb>長</rb><rt>ちょう</rt></ruby>さん</persName>、僕は役者だよ。」と顔をさし出して<persName ref="#chokichi">長吉</persName>の耳元に<ruby><rb>囁</rb><rt>ささや</rt></ruby>いた。</p>
+        <p>立見の混雑の中でもあるし、<persName ref="#chokichi">長吉</persName>は驚いたまま黙っているより仕様がなかったが、舞台はやがて<ruby><rb>昨日</rb><rt>きのう</rt></ruby>の通りに<ruby><rb>河端</rb><rt>かわばた</rt></ruby>の<ruby><rb>暗闘</rb><rt>だんまり</rt></ruby>になって、劇の主人公が盗んだ金を<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>に花道へ<ruby><rb>駈出</rb><rt>かけい</rt></ruby>でながら<ruby><rb>石礫</rb><rt>いしつぶて</rt></ruby>を打つ、それを合図にチョンと拍子木が響く。幕が動く。立見の<ruby><rb>人中</rb><rt>ひとなか</rt></ruby>から例の「変るよーウ」と叫ぶ声。<ruby><rb>人崩</rb><rt>ひとなだ</rt></ruby>れが狭い出口の方へと押合う<ruby><rb>間</rb><rt>うち</rt></ruby>に幕がすっかり引かれて、シャギリの太鼓が<ruby><rb>何処</rb><rt>どこ</rt></ruby>か分らぬ舞台の奥から鳴り出す。<persName ref="#tamamizu">吉さん</persName>は<persName ref="#chokichi">長吉</persName>の<ruby><rb>袖</rb><rt>そで</rt></ruby>を引止めて、</p>
+        <p>「<persName ref="#chokichi">長さん</persName>、帰るのか。いいじゃないか。もう一幕見ておいでな。」</p>
+        <p>役者の<ruby><rb>仕着</rb><rt>しき</rt></ruby>せを着た<ruby><rb>賤</rb><rt>いや</rt></ruby>しい顔の男が、<ruby><rb>渋紙</rb><rt>しぶかみ</rt></ruby>を張った<ruby><rb>小笊</rb><rt>こざる</rt></ruby>をもって、次の幕の料金を集めに来たので、<persName ref="#chokichi">長吉</persName>は時間を心配しながらもそのまま居残った。</p>
+        <p>「<persName ref="#chokichi">長さん</persName>、<ruby><rb>綺麗</rb><rt>きれい</rt></ruby>だよ、掛けられるぜ。」<persName ref="#tamamizu">吉さん</persName>は人のすいた<ruby><rb>後</rb><rt>うしろ</rt></ruby>の明り取りの窓へ腰をかけて<persName ref="#chokichi">長吉</persName>が並んで腰かけるのを待つようにして再び「僕ァ役者だよ。変ったろう。」といいながら<ruby><rb>友禅縮緬</rb><rt>ゆうぜんちりめん</rt></ruby>の<ruby><rb>襦袢</rb><rt>じゅばん</rt></ruby>の袖を引き出して、わざとらしく<ruby><rb>脱</rb><rt>はず</rt></ruby>した黒い<ruby><rb>金縁眼鏡</rb><rt>きんぶちめがね</rt></ruby>の曇りを拭きはじめた。</p>
+        <p>「変ったよ。僕ァ始め誰かと思った。」</p>
+        <p>「驚いたかい。ははははは。」<persName ref="#tamamizu">吉さん</persName>は何ともいえぬほど嬉しそうに笑って、「頼むぜ。<persName ref="#chokichi">長さん</persName>。こう見えたって<ruby><rb>憚</rb><rt>はばか</rt></ruby>りながら役者だ。<persName ref="#ii"><ruby><rb>伊井</rb><rt>いい</rt></ruby></persName>一座の新俳優だ。<ruby><rb>明後日</rb><rt>あさって</rt></ruby>からまた<placeName ref="#shintomicho"><ruby><rb>新富町</rb><rt>しんとみちょう</rt></ruby></placeName>よ。<ruby><rb>出揃</rb><rt>でそろ</rt></ruby>ったら見に来給え。いいかい。<ruby><rb>楽屋口</rb><rt>がくやぐち</rt></ruby>へ廻って、<persName ref="#tamamizu"><ruby><rb>玉水</rb><rt>たまみず</rt></ruby></persName>を呼んでくれっていいたまえ。」</p>
+        <p>「<persName ref="#tamamizu">玉水</persName>……？」</p>
+        <p>「うむ、<persName ref="#tamamizu">玉水三郎</persName>……。」いいながら<ruby><rb>急</rb><rt>せわ</rt></ruby>しなく<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>から<ruby><rb>女持</rb><rt>おんなもち</rt></ruby>の<ruby><rb>紙入</rb><rt>かみいれ</rt></ruby>を<ruby><rb>探</rb><rt>さぐ</rt></ruby>り出して、小さな名刺を見せ、「ね、<persName ref="#tamamizu">玉水三郎</persName>。昔の<persName ref="#tamamizu">吉さん</persName>じゃないぜ。ちゃんともう<ruby><rb>番附</rb><rt>ばんづけ</rt></ruby>に出ているんだぜ。」</p>
+        <p>「面白いだろうね。役者になったら。」</p>
+        <p>「面白かったり、<ruby><rb>辛</rb><rt>つら</rt></ruby>かったり……しかし女にゃア不自由しねえよ。」<persName ref="#tamamizu">吉さん</persName>はちょっと<persName ref="#chokichi">長吉</persName>の顔を見て、「<persName ref="#chokichi">長さん</persName>、君は遊ぶのかい。」</p>
+        <p><persName ref="#chokichi">長吉</persName>は「まだ」と答えるのがその瞬間男の恥であるような気がして黙った。</p>
+        <p>「江戸一の<placeName ref="#kajitaro"><ruby><rb>梶田楼</rb><rt>かじたろう</rt></ruby></placeName>ッていう<ruby><rb>家</rb><rt>うち</rt></ruby>を知ってるかい。今夜一緒にお出でな。心配しないでもいいんだよ。のろけるんじゃないが、心配しないでもいいわけがあるんだから。お安くないだろう。ははははは。」と<persName ref="#tamamizu">吉さん</persName>は他愛もなく笑った。<persName ref="#chokichi">長吉</persName>は突然に、</p>
+        <p>「芸者は高いんだろうね。」</p>
+        <p>「<persName ref="#chokichi">長さん</persName>、君は芸者が好きなのか、<ruby><rb>贅沢</rb><rt>ぜいたく</rt></ruby>だ。」と新俳優の<persName ref="#tamamizu">吉さん</persName>は意外らしく<persName ref="#chokichi">長吉</persName>の顔を見返したが、「知れたもんさ。しかし金で女を買うなんざア、ちッとお<ruby><rb>人</rb><rt>ひと</rt></ruby>が<ruby><rb>好過</rb><rt>よすざ</rt></ruby>らア。僕ァ公園で二、三軒<ruby><rb>待合</rb><rt>まちあい</rt></ruby>を知ってるよ。連れてッてやろう。<ruby><rb>万事</rb><rt>ばんじ</rt></ruby><ruby><rb>方寸</rb><rt>ほうすん</rt></ruby>の<ruby><rb>中</rb><rt>うち</rt></ruby>にありさ。」</p>
+        <p><ruby><rb>先刻</rb><rt>さっき</rt></ruby>から三人四人と絶えず上って来る見物人で<ruby><rb>大向</rb><rt>おおむこう</rt></ruby>はかなり<ruby><rb>雑沓</rb><rt>ざっとう</rt></ruby>して来た。前の幕から居残っている<ruby><rb>連中</rb><rt>れんじゅう</rt></ruby>には待ちくたびれて手を<ruby><rb>鳴</rb><rt>なら</rt></ruby>すものもある。舞台の奥から拍子木の音が長い<ruby><rb>間</rb><rt>ま</rt></ruby>を置きながら、それでも次第に近く聞えて来る。<persName ref="#chokichi">長吉</persName>は窮屈に腰をかけた明り取りの窓から立上る。すると<persName ref="#tamamizu">吉さん</persName>は、</p>
+        <p>「まだ、なかなかだ。」と<ruby><rb>独言</rb><rt>ひとりごと</rt></ruby>のようにいって、「<persName ref="#chokichi">長さん</persName>。あれァ廻りの拍子木といって<ruby><rb>道具立</rb><rt>どうぐだて</rt></ruby>の出来上ッたって事を、役者の部屋の方へ知らせる合図なんだ。<ruby><rb>開</rb><rt>あ</rt></ruby>くまでにゃアまだ、なかなかよ。」</p>
+        <p>悠然として<ruby><rb>巻煙草</rb><rt>まきたばこ</rt></ruby>を吸い初める。<persName ref="#chokichi">長吉</persName>は「そうか」と感服したらしく返事をしながら、しかし立上ったままに立見の鉄格子から舞台の方を眺めた。花道から<ruby><rb>平土間</rb><rt>ひらどま</rt></ruby>の<ruby><rb>桝</rb><rt>ます</rt></ruby>の<ruby><rb>間</rb><rt>あいだ</rt></ruby>をば<persName ref="#tamamizu">吉さん</persName>の如く廻りの拍子木の何たるかを知らない見物人が、すぐにも幕があくのかと思って、出歩いていた<ruby><rb>外</rb><rt>そと</rt></ruby>から各自の席に戻ろうと右方左方へと混雑している。横手の<ruby><rb>桟敷裏</rb><rt>さじきうら</rt></ruby>から<ruby><rb>斜</rb><rt>ななめ</rt></ruby>に<ruby><rb>引幕</rb><rt>ひきまく</rt></ruby>の一方にさし込む<ruby><rb>夕陽</rb><rt>ゆうひ</rt></ruby>の光が、その進み入る道筋だけ、空中に<ruby><rb>漂</rb><rt>ただよ</rt></ruby>う塵と煙草の煙をばありありと眼に見せる。<persName ref="#chokichi">長吉</persName>はこの夕陽の光をば何という事なく悲しく感じながら、<ruby><rb>折々</rb><rt>おりおり</rt></ruby>吹込む外の風が大きな波を<ruby><rb>打</rb><rt>うた</rt></ruby>せる引幕の上を眺めた。引幕には<ruby><rb>市川</rb><rt>いちかわ</rt></ruby>○○<ruby><rb>丈</rb><rt>じょう</rt></ruby>へ、<placeName ref="#asakusakoen">浅草公園</placeName><ruby><rb>芸妓連中</rb><rt>げいぎれんじゅう</rt></ruby>として<ruby><rb>幾人</rb><rt>いくたり</rt></ruby>となく<ruby><rb>書連</rb><rt>かきつら</rt></ruby>ねた芸者の名が読まれた。<ruby><rb>暫</rb><rt>しばら</rt></ruby>くして、</p>
+        <p>「<persName ref="#tamamizu">吉さん</persName>、君、あの中で知ってる芸者があるかい。」</p>
+        <p>「たのむよ。公園は<ruby><rb>乃公</rb><rt>おいら</rt></ruby>たちの<ruby><rb>縄張中</rb><rt>なわばりうち</rt></ruby>だぜ。」<persName ref="#tamamizu">吉さん</persName>は一種の屈辱を感じたのであろう、<ruby><rb>嘘</rb><rt>うそ</rt></ruby>か誠か、幕の上にかいてある芸者の一人々々の経歴、容貌、性質を限りもなく説明しはじめた。</p>
+        <p>拍子木がチョンチョンと二ツ鳴った。<ruby><rb>幕開</rb><rt>まくあき</rt></ruby>の<ruby><rb>唄</rb><rt>うた</rt></ruby>と三味線が聞え引かれた幕が次第に<ruby><rb>細</rb><rt>こま</rt></ruby>かく早める拍子木の<ruby><rb>律</rb><rt>りつ</rt></ruby>につれて片寄せられて行く。<ruby><rb>大向</rb><rt>おおむこう</rt></ruby>から早くも役者の名をよぶ掛け声。たいくつした見物人の話声が<ruby><rb>一時</rb><rt>いちじ</rt></ruby>に<ruby><rb>止</rb><rt>や</rt></ruby>んで、場内は夜の明けたような一種の明るさと一種の<ruby><rb>活気</rb><rt>かっき</rt></ruby>を添えた。</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>八</head>
+        <p><persName ref="#otoyo">お<ruby><rb>豊</rb><rt>とよ</rt></ruby></persName>は<placeName ref="#imadobashi"><ruby><rb>今戸橋</rb><rt>いまとばし</rt></ruby></placeName>まで歩いて来て<ruby><rb>時節</rb><rt>じせつ</rt></ruby>は<ruby><rb>今</rb><rt>いま</rt></ruby><ruby><rb>正</rb><rt>まさ</rt></ruby>に<ruby><rb>爛漫</rb><rt>らんまん</rt></ruby>たる春の<date when="--04">四月</date>である事を始めて知った。手一ツの<ruby><rb>女世帯</rb><rt>おんなじょたい</rt></ruby>に追われている身は空が青く晴れて日が窓に<ruby><rb>射込</rb><rt>さしこ</rt></ruby>み、<ruby><rb>斜向</rb><rt>すじむこう</rt></ruby>の「<placeName ref="#miyatogawa"><ruby><rb>宮戸川</rb><rt>みやとがわ</rt></ruby></placeName>」という<ruby><rb>鰻屋</rb><rt>うなぎや</rt></ruby>の<ruby><rb>門口</rb><rt>かどぐち</rt></ruby>の柳が緑色の芽をふくのにやっと時候の変遷を知るばかり。いつも両側の汚れた<ruby><rb>瓦屋根</rb><rt>かわらやね</rt></ruby>に<ruby><rb>四方</rb><rt>あたり</rt></ruby>の眺望を<ruby><rb>遮</rb><rt>さえざ</rt></ruby>られた地面の低い場末の<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>から、今突然、橋の上に出て見た<date when="--04">四月</date>の<placeName ref="#sumidagawa"><ruby><rb>隅田川</rb><rt>すみだがわ</rt></ruby></placeName>は、一年に二、三度と数えるほどしか<ruby><rb>外出</rb><rt>そとで</rt></ruby>する事のない母親<persName ref="#otoyo">お豊</persName>の老眼をば信じられぬほどに驚かしたのである。晴れ渡った空の下に、流れる水の輝き、堤の青草、その上につづく桜の花、<ruby><rb>種々</rb><rt>さまざま</rt></ruby>の旗が<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>く大学の<ruby><rb>艇庫</rb><rt>ていこ</rt></ruby>、その<ruby><rb>辺</rb><rt>へん</rt></ruby>から起る人々の叫び声、鉄砲の<ruby><rb>響</rb><rt>ひびき</rt></ruby>。<ruby><rb>渡船</rb><rt>わたしぶね</rt></ruby>から<ruby><rb>上下</rb><rt>あがりお</rt></ruby>りする花見の人の混雑。あたり一面の光景は疲れた母親の眼には余りに色彩が強烈すぎるほどであった。<persName ref="#otoyo">お豊</persName>は<ruby><rb>渡場</rb><rt>わたしば</rt></ruby>の方へ<ruby><rb>下</rb><rt>お</rt></ruby>りかけたけれど、急に恐るる如く<ruby><rb>踵</rb><rt>くびす</rt></ruby>を返して、<placeName ref="#kinryuzanshita"><ruby><rb>金竜山下</rb><rt>きんりゅうざんした</rt></ruby></placeName>の<ruby><rb>日蔭</rb><rt>ひかげ</rt></ruby>になった<placeName ref="#kawaramachi"><ruby><rb>瓦町</rb><rt>かわらまち</rt></ruby></placeName>を急いだ。そして通りがかりのなるべく<ruby><rb>汚</rb><rt>きたな</rt></ruby>い車、なるべく<ruby><rb>意気地</rb><rt>いくじ</rt></ruby>のなさそうな<ruby><rb>車夫</rb><rt>しゃふ</rt></ruby>を見付けて恐る恐る、</p>
+        <p>「車屋さん、<placeName ref="#koume"><ruby><rb>小梅</rb><rt>こうめ</rt></ruby></placeName>まで安くやって下さいな。」といった。</p>
+        <p><persName ref="#otoyo">お豊</persName>は花見どころの騒ぎではない。もうどうしていいのか分らない。望みをかけた一人息子の<persName ref="#chokichi">長吉</persName>は試験に落第してしまったばかりか、もう学校へは行きたくない、学問はいやだといい出した。<persName ref="#otoyo">お豊</persName>は<ruby><rb>途法</rb><rt>とほう</rt></ruby>に暮れた結果、兄の<persName ref="#ragetsu"><ruby><rb>蘿月</rb><rt>らげつ</rt></ruby></persName>に相談して見るより<ruby><rb>外</rb><rt>ほか</rt></ruby>に仕様がないと思ったのである。</p>
+        <p>三度目に<ruby><rb>掛合</rb><rt>かけあ</rt></ruby>った老車夫が、やっとの事で<persName ref="#otoyo">お豊</persName>の望む賃銀で<placeName ref="#koume">小梅</placeName>行きを承知した。<placeName ref="#azumabashi"><ruby><rb>吾妻橋</rb><rt>あずまばし</rt></ruby></placeName>は午後の日光と<ruby><rb>塵埃</rb><rt>じんあい</rt></ruby>の中におびただしい<ruby><rb>人出</rb><rt>ひとで</rt></ruby>である。着飾った若い花見の男女を<ruby><rb>載</rb><rt>の</rt></ruby>せて<ruby><rb>勢</rb><rt>いきおい</rt></ruby>よく走る車の<ruby><rb>間</rb><rt>あいだ</rt></ruby>をば、<persName ref="#otoyo">お豊</persName>を載せた老車夫は<ruby><rb>梶</rb><rt>かじ</rt></ruby>を振りながらよたよた歩いて橋を渡るや否や桜花の<ruby><rb>賑</rb><rt>にぎわ</rt></ruby>いを<ruby><rb>外</rb><rt>よそ</rt></ruby>に、<ruby><rb>直</rb><rt>す</rt></ruby>ぐと<placeName ref="#nakanogo"><ruby><rb>中</rb><rt>なか</rt></ruby>の<ruby><rb>郷</rb><rt>ごう</rt></ruby></placeName>へ曲って<placeName ref="#narihirabashi"><ruby><rb>業平橋</rb><rt>なりひらばし</rt></ruby></placeName>へ出ると、この辺はもう春といっても汚い<ruby><rb>鱗葺</rb><rt>こけらぶき</rt></ruby>の屋根の上に<ruby><rb>唯</rb><rt>た</rt></ruby>だ<ruby><rb>明</rb><rt>あかる</rt></ruby>く日があたっているというばかりで、沈滞した<ruby><rb>堀割</rb><rt>ほりわり</rt></ruby>の水が<ruby><rb>麗</rb><rt>うららか</rt></ruby>な青空の色をそのままに映している<placeName ref="#hikifunedori"><ruby><rb>曳舟通</rb><rt>ひきふねどお</rt></ruby></placeName>り。昔は<placeName ref="#kinpei"><ruby><rb>金瓶楼</rb><rt>きんべいろう</rt></ruby></placeName>の<persName ref="#otaki"><ruby><rb>小太夫</rb><rt>こだゆう</rt></ruby></persName>といわれた<persName ref="#ragetsu">蘿月</persName>の恋女房は、<ruby><rb>綿衣</rb><rt>ぬのこ</rt></ruby>の<ruby><rb>襟元</rb><rt>えりもと</rt></ruby>に<ruby><rb>手拭</rb><rt>てぬぐい</rt></ruby>をかけ<ruby><rb>白粉焼</rb><rt>おしろいや</rt></ruby>けのした<ruby><rb>皺</rb><rt>しわ</rt></ruby>の多い顔に一ぱいの日を受けて、子供の<ruby><rb>群</rb><rt>むれ</rt></ruby>がめんこや<ruby><rb>独楽</rb><rt>こま</rt></ruby>の遊びをしている<ruby><rb>外</rb><rt>ほか</rt></ruby>には至って人通りの少い<ruby><rb>道端</rb><rt>みちばた</rt></ruby>の<ruby><rb>格子戸先</rb><rt>こうしどさき</rt></ruby>で、<ruby><rb>張板</rb><rt>はりいた</rt></ruby>に<ruby><rb>張物</rb><rt>はりもの</rt></ruby>をしていた。<ruby><rb>駈</rb><rt>か</rt></ruby>けて来て止る車と、それから下りる<persName ref="#otoyo">お豊</persName>の姿を見て、</p>
+        <p>「まアお珍しいじゃありませんか。ちょいと<placeName ref="#imado"><ruby><rb>今戸</rb><rt>いまど</rt></ruby></placeName>の<ruby><rb>御師匠</rb><rt>おししょう</rt></ruby>さんですよ。」と<ruby><rb>開</rb><rt>あ</rt></ruby>けたままの格子戸から<ruby><rb>家</rb><rt>うち</rt></ruby>の<ruby><rb>内</rb><rt>なか</rt></ruby>へと知らせる。<ruby><rb>内</rb><rt>なか</rt></ruby>には<ruby><rb>主人</rb><rt>あるじ</rt></ruby>の<ruby><rb>宗匠</rb><rt>そうしょう</rt></ruby>が<ruby><rb>万年青</rb><rt>おもと</rt></ruby>の鉢を並べた<ruby><rb>縁先</rb><rt>えんさき</rt></ruby>へ小机を据え<ruby><rb>頻</rb><rt>しきり</rt></ruby>に<ruby><rb>天地人</rb><rt>てんちじん</rt></ruby>の順序をつける<ruby><rb>俳諧</rb><rt>はいかい</rt></ruby>の<ruby><rb>選</rb><rt>せん</rt></ruby>に急がしい処であった。</p>
+        <p>掛けている眼鏡をはずして、<persName ref="#ragetsu">蘿月</persName>は机を離れて座敷の<ruby><rb>真中</rb><rt>まんなか</rt></ruby>に坐り直ったが、<ruby><rb>襷</rb><rt>たすき</rt></ruby>をとりながら<ruby><rb>這入</rb><rt>はい</rt></ruby>って来る妻の<persName ref="#otaki">お<ruby><rb>滝</rb><rt>たき</rt></ruby></persName>と来訪の<persName ref="#otoyo">お豊</persName>、同じ<ruby><rb>年頃</rb><rt>としごろ</rt></ruby>の老いた女同士は<ruby><rb>幾度</rb><rt>いくたび</rt></ruby>となくお辞儀の<ruby><rb>譲合</rb><rt>ゆずりあい</rt></ruby>をしては長々しく<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>した。そしてその挨拶の中に、「<persName ref="#chokichi">長ちゃん</persName>も御丈夫ですか。」「はア、しかし<ruby><rb>彼</rb><rt>あれ</rt></ruby>にも困りきります。」というような<ruby><rb>問答</rb><rt>もんどう</rt></ruby>から、用件は案外に早く<persName ref="#ragetsu">蘿月</persName>の前に提出される事になったのである。<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>静</rb><rt>しずか</rt></ruby>に<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>の<ruby><rb>吸殻</rb><rt>すいがら</rt></ruby>をはたいて、誰にかぎらず若い<ruby><rb>中</rb><rt>うち</rt></ruby>はとかくに気の迷うことがある。気の迷っている時には、自分にも覚えがあるが、親の意見も<ruby><rb>仇</rb><rt>あだ</rt></ruby>としか聞えない。<ruby><rb>他</rb><rt>はた</rt></ruby>から余り厳しく干渉するよりはかえって気まかせにして置く方が薬になりはしまいかと論じた。しかし目に見えない将来の恐怖ばかりに<ruby><rb>満</rb><rt>みた</rt></ruby>された女親の狭い胸にはかかる<ruby><rb>通人</rb><rt>つうじん</rt></ruby>の放任主義は到底<ruby><rb>容</rb><rt>い</rt></ruby>れられべきものでない。<persName ref="#otoyo">お豊</persName>は<persName ref="#chokichi">長吉</persName>が久しい以前からしばしば学校を休むために自分の<ruby><rb>認印</rb><rt>みとめいん</rt></ruby>を盗んで<ruby><rb>届書</rb><rt>とどけしょ</rt></ruby>を偽造していた事をば、暗黒な運命の前兆である如く、声まで<ruby><rb>潜</rb><rt>ひそ</rt></ruby>めて長々しく物語る……</p>
+        <p>「学校がいやなら<ruby><rb>如何</rb><rt>どう</rt></ruby>するつもりだと聞いたら、まアどうでしょう、役者になるんだッていうんですよ。役老に。まア、どうでしょう。兄さん。私ゃそんなに<persName ref="#chokichi">長吉</persName>の根性が腐っちまッたのかと思ったら、もう実に<ruby><rb>口惜</rb><rt>くや</rt></ruby>しくッてならないんですよ。」</p>
+        <p>「へーえ、役者になりたい。」<ruby><rb>訝</rb><rt>いぶか</rt></ruby>る<ruby><rb>間</rb><rt>ま</rt></ruby>もなく<persName ref="#ragetsu">蘿月</persName>は七ツ八ツの頃によく三味線を<ruby><rb>弄物</rb><rt>おもちゃ</rt></ruby>にした<persName ref="#chokichi">長吉</persName>の<ruby><rb>生立</rb><rt>おいた</rt></ruby>ちを回想した。「当人がたってと望むなら仕方のない話だが……困ったものだ。」</p>
+        <p><persName ref="#otoyo">お豊</persName>は自分の身こそ一家の不幸のために遊芸の師匠に<ruby><rb>零落</rb><rt>れいらく</rt></ruby>したけれど、わが子までもそんな<ruby><rb>賤</rb><rt>いや</rt></ruby>しいものにしては先祖の<ruby><rb>位牌</rb><rt>いはい</rt></ruby>に対して<ruby><rb>申訳</rb><rt>もうしわけ</rt></ruby>がないと述べる。<persName ref="#ragetsu">蘿月</persName>は一家の破産滅亡の昔をいい出されると<ruby><rb>勘当</rb><rt>かんどう</rt></ruby>までされた<ruby><rb>放蕩三昧</rb><rt>ほうとうざんまい</rt></ruby>の身は、<ruby><rb>何</rb><rt>なん</rt></ruby>につけ、<ruby><rb>禿頭</rb><rt>はげあたま</rt></ruby>をかきたいような当惑を感ずる。もともと芸人社会は<ruby><rb>大好</rb><rt>だいすき</rt></ruby>な趣味性から、<persName ref="#otoyo">お豊</persName>の<ruby><rb>偏屈</rb><rt>へんくつ</rt></ruby>な思想をば攻撃したいと心では思うもののそんな事からまたしても長たらしく「先祖の位牌」を論じ出されては<ruby><rb>堪</rb><rt>たま</rt></ruby>らないと<ruby><rb>危</rb><rt>あやぶ</rt></ruby>むので、<ruby><rb>宗匠</rb><rt>そうしょう</rt></ruby>は<ruby><rb>先</rb><rt>ま</rt></ruby>ずその場を<ruby><rb>円滑</rb><rt>えんかつ</rt></ruby>に、<persName ref="#otoyo">お豊</persName>を安心させるようにと話をまとめかけた。</p>
+        <p>「とにかく一応は<ruby><rb>私</rb><rt>わし</rt></ruby>が意見しますよ、若い<ruby><rb>中</rb><rt>うち</rt></ruby>は迷うだけにかえって始末のいいものさ。今夜にでも<ruby><rb>明日</rb><rt>あした</rt></ruby>にでも<persName ref="#chokichi">長吉</persName>に遊びに来るようにいって置きなさい。<ruby><rb>私</rb><rt>わし</rt></ruby>がきっと改心さして見せるから、まアそんなに心配しないがいいよ。なに世の中は案じるより<ruby><rb>産</rb><rt>う</rt></ruby>むが安いさ。」</p>
+        <p><persName ref="#otoyo">お豊</persName>は何分よろしくと頼んで<persName ref="#otaki">お滝</persName>が引止めるのを辞退してその家を出た。春の<ruby><rb>夕陽</rb><rt>ゆうひ</rt></ruby>は赤々と<placeName ref="#azumabashi"><ruby><rb>吾妻橋</rb><rt>あずまばし</rt></ruby></placeName>の向うに傾いて、花見帰りの混雑を一層引立てて見せる。その<ruby><rb>中</rb><rt>うち</rt></ruby>に<persName ref="#otoyo">お豊</persName>は殊更元気よく歩いて行く金ボタンの学生を見ると、それが果して大学校の生徒であるか否かは分らぬながら、<ruby><rb>我児</rb><rt>わがこ</rt></ruby>もあのような立派な学生に仕立てたいばかりに、幾年間女の<ruby><rb>身一人</rb><rt>みひとつ</rt></ruby>で生活と戦って来たが、今は<ruby><rb>生命</rb><rt>いのち</rt></ruby>に等しい希望の光も全く消えてしまったのかと思うと実に堪えられぬ悲愁に襲われる。兄の<persName ref="#ragetsu">蘿月</persName>に依頼しては見たもののやっぱり安心が出来ない。なにも昔の道楽者だからという訳ではない。<persName ref="#chokichi">長吉</persName>に志を立てさせるのは到底<ruby><rb>人間業</rb><rt>にんげんわざ</rt></ruby>では<ruby><rb>及</rb><rt>およば</rt></ruby>ぬ事、<ruby><rb>神仏</rb><rt>かみほとけ</rt></ruby>の力に頼らねばならぬと思い出した。<persName ref="#otoyo">お豊</persName>は乗って来た車から急に<placeName ref="#kaminarimon"><ruby><rb>雷門</rb><rt>かみなりもん</rt></ruby></placeName>で下りた。<placeName ref="#nakamise"><ruby><rb>仲店</rb><rt>なかみせ</rt></ruby></placeName>の<ruby><rb>雑沓</rb><rt>ざっとう</rt></ruby>をも今では少しも恐れずに<placeName ref="#sensoji">観音堂</placeName>へと急いで、祈願を<ruby><rb>凝</rb><rt>こら</rt></ruby>した後に、お<ruby><rb>神籤</rb><rt>みくじ</rt></ruby>を引いて見た。古びた<ruby><rb>紙片</rb><rt>かみきれ</rt></ruby>に<ruby><rb>木版摺</rb><rt>もくはんずり</rt></ruby>で、</p>
+        <p><persName ref="#otoyo">お豊</persName>は<ruby><rb>大吉</rb><rt>だいきち</rt></ruby>という文字を見て安心はしたものの、大吉はかえって<ruby><rb>凶</rb><rt>きょう</rt></ruby>に返りやすい事を思い出して、またもや自分からさまざまな恐怖を<ruby><rb>造出</rb><rt>つくりだ</rt></ruby>しつつ、非常に疲れて<ruby><rb>家</rb><rt>うち</rt></ruby>へ帰った。</p>
+      </div>
+      <div type="chapter" xml:id="sec09" n="9">
+        <head>九</head>
+        <p><ruby><rb>午後</rb><rt>ひるすぎ</rt></ruby>から<placeName ref="#kameido"><ruby><rb>亀井戸</rb><rt>かめいど</rt></ruby></placeName>の<placeName ref="#ryugenji"><ruby><rb>竜眼寺</rb><rt>りゅうがんじ</rt></ruby></placeName>の書院で<ruby><rb>俳諧</rb><rt>はいかい</rt></ruby>の<ruby><rb>運座</rb><rt>うんざ</rt></ruby>があるというので、<persName ref="#ragetsu"><ruby><rb>蘿月</rb><rt>らげつ</rt></ruby></persName>はその日の午前に訪ねて来た<persName ref="#chokichi">長吉</persName>と<ruby><rb>茶漬</rb><rt>ちゃづけ</rt></ruby>をすました<ruby><rb>後</rb><rt>のち</rt></ruby>、<placeName ref="#koume"><ruby><rb>小梅</rb><rt>こうめ</rt></ruby></placeName>の<ruby><rb>住居</rb><rt>すまい</rt></ruby>から<placeName ref="#oshiage"><ruby><rb>押上</rb><rt>おしあげ</rt></ruby></placeName>の<ruby><rb>堀割</rb><rt>ほりわり</rt></ruby>を<placeName ref="#yanagishima"><ruby><rb>柳島</rb><rt>やなぎしま</rt></ruby></placeName>の方へと連れだって話しながら歩いた。堀割は丁度真昼の<ruby><rb>引汐</rb><rt>ひきしお</rt></ruby>で<ruby><rb>真黒</rb><rt>まっくろ</rt></ruby>な汚ない<ruby><rb>泥土</rb><rt>でいど</rt></ruby>の底を見せている上に、<date when="--04">四月</date>の暖い日光に照付けられて、<ruby><rb>溝泥</rb><rt>どぶどろ</rt></ruby>の臭気を<ruby><rb>盛</rb><rt>さかん</rt></ruby>に発散している。<ruby><rb>何処</rb><rt>どこ</rt></ruby>からともなく<ruby><rb>煤烟</rb><rt>ばいえん</rt></ruby>の<ruby><rb>煤</rb><rt>すす</rt></ruby>が飛んで来て、何処という事なしに<ruby><rb>製造場</rb><rt>せいぞうば</rt></ruby>の機械の音が聞える。<ruby><rb>道端</rb><rt>みちばた</rt></ruby>の人家は道よりも一段低い地面に建てられてあるので、春の日の光を<ruby><rb>外</rb><rt>よそ</rt></ruby>に女房共がせっせと内職している薄暗い<ruby><rb>家内</rb><rt>かない</rt></ruby>のさまが、通りながらにすっかりと<ruby><rb>見透</rb><rt>みとお</rt></ruby>される。そういう<ruby><rb>小家</rb><rt>こいえ</rt></ruby>の曲り角の汚れた<ruby><rb>板目</rb><rt>はめ</rt></ruby>には売薬と<ruby><rb>易占</rb><rt>うらない</rt></ruby>の広告に<ruby><rb>交</rb><rt>まじ</rt></ruby>って至る<ruby><rb>処</rb><rt>ところ</rt></ruby>女工募集の<ruby><rb>貼紙</rb><rt>はりがみ</rt></ruby>が目についた。しかし間もなくこの<ruby><rb>陰鬱</rb><rt>いんうつ</rt></ruby>な<ruby><rb>往来</rb><rt>おうらい</rt></ruby>は<ruby><rb>迂曲</rb><rt>うね</rt></ruby>りながらに少しく<ruby><rb>爪先上</rb><rt>つまさきあが</rt></ruby>りになって行くかと思うと、片側に赤く塗った<placeName ref="#myokenji"><ruby><rb>妙見寺</rb><rt>みょうけんじ</rt></ruby></placeName>の塀と、それに対して心持よく洗いざらした料理屋<placeName ref="#hashimoto"><ruby><rb>橋本</rb><rt>はしもと</rt></ruby></placeName>の<ruby><rb>板塀</rb><rt>いたべい</rt></ruby>のために突然面目を一変させた。貧しい<placeName ref="#honjo"><ruby><rb>本所</rb><rt>ほんじょ</rt></ruby></placeName>の一区が<ruby><rb>此処</rb><rt>ここ</rt></ruby>に尽きて板橋のかかった川向うには<ruby><rb>野草</rb><rt>のぐさ</rt></ruby>に<ruby><rb>蔽</rb><rt>おお</rt></ruby>われた土手を越して、<ruby><rb><placeName ref="#kameido">亀井戸</placeName>村</rb><rt>かめいどむら</rt></ruby>の畠と<ruby><rb>木立</rb><rt>こだち</rt></ruby>とが美しい田園の春景色をひろげて見せた。<persName ref="#ragetsu">蘿月</persName>は踏み<ruby><rb>止</rb><rt>とどま</rt></ruby>って、</p>
+        <p>「<ruby><rb>私</rb><rt>わし</rt></ruby>の行くお寺はすぐ向うの<ruby><rb>川端</rb><rt>かわばた</rt></ruby>さ、松の木のそばに屋根が見えるだろう。」</p>
+        <p>「じゃ、伯父さん。ここで失礼しましょう。」<persName ref="#chokichi">長吉</persName>は早くも帽子を取る。</p>
+        <p>「いそぐんじゃない。<ruby><rb>咽喉</rb><rt>のど</rt></ruby>が乾いたから、まア<persName ref="#chokichi">長吉</persName>、ちょっと休んで行こうよ。」</p>
+        <p>赤く塗った板塀に沿うて、<placeName ref="#myokenji">妙見寺</placeName>の門前に<ruby><rb>葭簀</rb><rt>よしず</rt></ruby>を張った<ruby><rb>休茶屋</rb><rt>やすみぢゃや</rt></ruby>へと、<persName ref="#ragetsu">蘿月</persName>は先に腰を<ruby><rb>下</rb><rt>おろ</rt></ruby>した。一直線の堀割はここも同じように引汐の汚い<ruby><rb>水底</rb><rt>みなそこ</rt></ruby>を見せていたが、遠くの畠の方から吹いて来る風はいかにも<ruby><rb>爽</rb><rt>さわや</rt></ruby>かで、<placeName ref="#tenjinsama">天神様</placeName>の鳥居が見える向うの堤の上には柳の若芽が美しく<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>いているし、すぐ<ruby><rb>後</rb><rt>うしろ</rt></ruby>の寺の門の屋根には<ruby><rb>雀</rb><rt>すずめ</rt></ruby>と<ruby><rb>燕</rb><rt>つばめ</rt></ruby>が絶え間なく<ruby><rb>囀</rb><rt>さえず</rt></ruby>っているので、<ruby><rb>其処</rb><rt>そこ</rt></ruby><ruby><rb>此処</rb><rt>ここ</rt></ruby>に製造場の<ruby><rb>烟出</rb><rt>けむだ</rt></ruby>しが幾本も立っているにかかわらず、<ruby><rb>市街</rb><rt>まち</rt></ruby>からは遠い春の<ruby><rb>午後</rb><rt>ひるすぎ</rt></ruby>の<ruby><rb>長閉</rb><rt>のどけ</rt></ruby>さは充分に心持よく<ruby><rb>味</rb><rt>あじわ</rt></ruby>われた。<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>暫</rb><rt>しばら</rt></ruby>くあたりを眺めた<ruby><rb>後</rb><rt>のち</rt></ruby>、それとなく<persName ref="#chokichi">長吉</persName>の顔をのぞくようにして、</p>
+        <p>「さっきの話は承知してくれたろうな。」</p>
+        <p><persName ref="#chokichi">長吉</persName>は丁度茶を飲みかけた処なので、<ruby><rb>頷付</rb><rt>うなず</rt></ruby>いたまま、口に出して返事はしなかった。</p>
+        <p>「とにかくもう一年<ruby><rb>辛抱</rb><rt>しんぼう</rt></ruby>しなさい。今の学校さえ卒業しちまえば……<ruby><rb>母親</rb><rt>おふくろ</rt></ruby>だって段々取る年だ、そう頑固ばかりもいやアしまいから。」</p>
+        <p><persName ref="#chokichi">長吉</persName>は<ruby><rb>唯</rb><rt>た</rt></ruby>だ首を頷付かせて、<ruby><rb>何処</rb><rt>どこ</rt></ruby>と<ruby><rb>当</rb><rt>あて</rt></ruby>もなしに遠くを眺めていた。引汐の堀割に<ruby><rb>繋</rb><rt>つな</rt></ruby>いだ<ruby><rb>土船</rb><rt>つちぶね</rt></ruby>からは<ruby><rb>人足</rb><rt>にんそく</rt></ruby>が二、三人して堤の向うの製造場へと<ruby><rb>頻</rb><rt>しきり</rt></ruby>に土を運んでいる。人通りといっては一人もない<ruby><rb>此方</rb><rt>こなた</rt></ruby>の岸をば、意外にも突然二台の<ruby><rb>人力車</rb><rt>じんりきしゃ</rt></ruby>が<placeName ref="#tenjinbashi">天神橋</placeName>の方から<ruby><rb>駈</rb><rt>か</rt></ruby>けて来て、二人の休んでいる寺の<ruby><rb>門前</rb><rt>もんぜん</rt></ruby>で止った。<ruby><rb>大方</rb><rt>おおかた</rt></ruby>墓参りに来たのであろう。<ruby><rb>町家</rb><rt>ちょうか</rt></ruby>の<ruby><rb>内儀</rb><rt>ないぎ</rt></ruby>らしい<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>の女が<ruby><rb>七</rb><rt>なな</rt></ruby>、<ruby><rb>八</rb><rt>やっ</rt></ruby>ツになる娘の手を引いて門の<ruby><rb>内</rb><rt>なか</rt></ruby>へ<ruby><rb>這入</rb><rt>はい</rt></ruby>って行った。</p>
+        <p><persName ref="#chokichi">長吉</persName>は<persName ref="#ragetsu">蘿月</persName>の伯父と橋の上で別れた。別れる時に<persName ref="#ragetsu">蘿月</persName>は再び心配そうに、</p>
+        <p>「じゃ……。」といって暫く黙った<ruby><rb>後</rb><rt>のち</rt></ruby>、「いやだろうけれど当分辛抱しなさい。親孝行して置けば悪い<ruby><rb>報</rb><rt>むくい</rt></ruby>はないよ。」</p>
+        <p><persName ref="#chokichi">長吉</persName>は帽子を取って軽く礼をしたがそのまま、<ruby><rb>駈</rb><rt>か</rt></ruby>けるように<ruby><rb>早足</rb><rt>はやあし</rt></ruby>に<ruby><rb>元</rb><rt>もと</rt></ruby>来た<placeName ref="#oshiage"><ruby><rb>押上</rb><rt>おしあげ</rt></ruby></placeName>の方へ歩いて行った。同時に<persName ref="#ragetsu">蘿月</persName>の姿は雑草の若芽に<ruby><rb>蔽</rb><rt>おお</rt></ruby>われた川向うの土手の陰にかくれた。<persName ref="#ragetsu">蘿月</persName>は六十に近いこの年まで<ruby><rb>今日</rb><rt>きょう</rt></ruby>ほど困った事、<ruby><rb>辛</rb><rt>つら</rt></ruby>い感情に<ruby><rb>迫</rb><rt>せ</rt></ruby>められた事はないと思ったのである。妹<persName ref="#otoyo">お豊</persName>のたのみも無理ではない。同時に<persName ref="#chokichi">長吉</persName>が<ruby><rb>芝居道</rb><rt>しばいどう</rt></ruby>へ<ruby><rb>這入</rb><rt>はい</rt></ruby>ろうという<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>もまたわるいとは思われない。一寸の虫にも五分の魂で、人にはそれぞれの気質がある。よかれあしかれ、物事を無理に<ruby><rb>強</rb><rt>し</rt></ruby>いるのはよくないと思っているので、<persName ref="#ragetsu">蘿月</persName>は両方から板ばさみになるばかりで、いずれにとも賛同する事ができないのだ。<ruby><rb>殊</rb><rt>こと</rt></ruby>に自分が過去の経歴を回想すれば、<persName ref="#ragetsu">蘿月</persName>は<persName ref="#chokichi">長吉</persName>の心の<ruby><rb>中</rb><rt>うち</rt></ruby>は問わずとも底の底まで<ruby><rb>明</rb><rt>あきら</rt></ruby>かに推察される。若い頃の自分には<ruby><rb>親</rb><rt>おや</rt></ruby><ruby><rb>代々</rb><rt>だいだい</rt></ruby>の薄暗い質屋の店先に坐って<ruby><rb>麗</rb><rt>うらら</rt></ruby>かな春の日を<ruby><rb>外</rb><rt>よそ</rt></ruby>に働きくらすのが、いかに辛くいかに<ruby><rb>情</rb><rt>なさけ</rt></ruby>なかったであろう。陰気な<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>の下で<ruby><rb>大福帳</rb><rt>だいふくちょう</rt></ruby>へ<ruby><rb>出入</rb><rt>でいり</rt></ruby>の<ruby><rb>金高</rb><rt>きんだか</rt></ruby>を書き入れるよりも、川添いの<ruby><rb>明</rb><rt>あかる</rt></ruby>い二階家で<ruby><rb>洒落本</rb><rt>しゃれほん</rt></ruby>を読む方がいかに面白かったであろう。<persName ref="#chokichi">長吉</persName>は<ruby><rb>髯</rb><rt>ひげ</rt></ruby>を<ruby><rb>生</rb><rt>はや</rt></ruby>した堅苦しい勤め<ruby><rb>人</rb><rt>にん</rt></ruby>などになるよりも、自分の好きな遊芸で世を渡りたいという。それも一生、これも一生である。しかし<persName ref="#ragetsu">蘿月</persName>は今よんどころなく意見役の地位に立つ限り、そこまでに自己の感想を<ruby><rb>暴露</rb><rt>ばくろ</rt></ruby>してしまうわけには行かないので、その母親に対したと同じような、その場かぎりの気安めをいって置くより仕様がなかった。</p>
+        <p><persName ref="#chokichi">長吉</persName>は<ruby><rb>何処</rb><rt>いずこ</rt></ruby>も同じような貧しい<placeName ref="#honjo"><ruby><rb>本所</rb><rt>ほんじょ</rt></ruby></placeName>の街から街をばてくてく歩いた。近道を取って一直線に<placeName ref="#imado"><ruby><rb>今戸</rb><rt>いまど</rt></ruby></placeName>の<ruby><rb>家</rb><rt>うち</rt></ruby>へ帰ろうと思うのでもない。<ruby><rb>何処</rb><rt>どこ</rt></ruby>へか廻り道して遊んで帰ろうと考えるのでもない。<persName ref="#chokichi">長吉</persName>は全く絶望してしまった。<persName ref="#chokichi">長吉</persName>は役者になりたい自分の主意を通すには、同情の深い<placeName ref="#koume"><ruby><rb>小梅</rb><rt>こうめ</rt></ruby></placeName>の伯父さんに頼るより<ruby><rb>外</rb><rt>ほか</rt></ruby>に道がない。伯父さんはきっと自分を助けてくれるに違いないと予期していたが、その希望は全く自分を<ruby><rb>欺</rb><rt>あざむ</rt></ruby>いた。伯父は母親のように正面から<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく反対を<ruby><rb>称</rb><rt>とな</rt></ruby>えはしなかったけれど、聞いて極楽見て地獄の<ruby><rb>譬</rb><rt>たとえ</rt></ruby>を引き、<ruby><rb>劇道</rb><rt>げきどう</rt></ruby>の成功の困難、舞台の生活の苦痛、芸人社会の交際の<ruby><rb>煩瑣</rb><rt>はんさ</rt></ruby>な事なぞを長々と語った<ruby><rb>後</rb><rt>のち</rt></ruby>、母親の心をも推察してやるようにと、伯父の忠告を待たずともよく<ruby><rb>解</rb><rt>わか</rt></ruby>っている事を述べつづけたのであった。<persName ref="#chokichi">長吉</persName>は人間というものは年を取ると、若い時分に経験した若いものしか知らない<ruby><rb>煩悶</rb><rt>はんもん</rt></ruby>不安をばけろりと忘れてしまって、次の時代に生れて来る若いものの身の上を極めて<ruby><rb>無頓着</rb><rt>むとんちゃく</rt></ruby>に訓戒批評する事のできる便利な性質を持っているものだ、年を取ったものと若いものの間には到底一致されない<ruby><rb>懸隔</rb><rt>けんかく</rt></ruby>のある事をつくづく感じた。</p>
+        <p><ruby><rb>何処</rb><rt>どこ</rt></ruby>まで歩いて行っても道は狭くて土が黒く湿っていて、大方は<ruby><rb>路地</rb><rt>ろじ</rt></ruby>のように行き止りかと<ruby><rb>危</rb><rt>あやぶ</rt></ruby>まれるほど曲っている。<ruby><rb>苔</rb><rt>こけ</rt></ruby>の生えた<ruby><rb>鱗葺</rb><rt>こけらぶ</rt></ruby>きの屋根、腐った土台、傾いた柱、汚れた<ruby><rb>板目</rb><rt>はめ</rt></ruby>、干してある<ruby><rb>襤褸</rb><rt>ぼろ</rt></ruby>や<ruby><rb>襁褓</rb><rt>おしめ</rt></ruby>や、並べてある駄菓子や<ruby><rb>荒物</rb><rt>あらもの</rt></ruby>など、<ruby><rb>陰鬱</rb><rt>いんうつ</rt></ruby>な<ruby><rb>小家</rb><rt>こいえ</rt></ruby>は不規則に限りもなく引きつづいて、その間に時々驚くほど大きな<ruby><rb>門構</rb><rt>もんがまえ</rt></ruby>の見えるのは<ruby><rb>尽</rb><rt>ことごと</rt></ruby>く製造場であった。<ruby><rb>瓦</rb><rt>かわら</rt></ruby>屋根の高く<ruby><rb>聳</rb><rt>そび</rt></ruby>えているのは<ruby><rb>古寺</rb><rt>ふるでら</rt></ruby>であった。古寺は大概荒れ果てて、破れた塀から裏手の<ruby><rb>乱塔場</rb><rt>らんとうば</rt></ruby>がすっかり見える。<ruby><rb>束</rb><rt>たば</rt></ruby>になって倒れた<ruby><rb>卒塔婆</rb><rt>そとば</rt></ruby>と共に<ruby><rb>青苔</rb><rt>あおごけ</rt></ruby>の<ruby><rb>斑点</rb><rt>しみ</rt></ruby>に<ruby><rb>蔽</rb><rt>おお</rt></ruby>われた<ruby><rb>墓石</rb><rt>はかいし</rt></ruby>は、岸という限界さえ<ruby><rb>崩</rb><rt>くず</rt></ruby>れてしまった<ruby><rb>水溜</rb><rt>みずたま</rt></ruby>りのような古池の中へ、<ruby><rb>幾個</rb><rt>いくつ</rt></ruby>となくのめり込んでいる。無論新しい<ruby><rb>手向</rb><rt>たむけ</rt></ruby>の花なぞは一つも見えない。古池には早くも<ruby><rb>昼中</rb><rt>ひるなか</rt></ruby>に<ruby><rb>蛙</rb><rt>かわず</rt></ruby>の声が聞えて、去年のままなる枯草は水にひたされて<ruby><rb>腐</rb><rt>くさ</rt></ruby>っている。</p>
+        <p><persName ref="#chokichi">長吉</persName>はふと近所の家の表札に<placeName ref="#nakagotakecho"><ruby><rb>中郷竹町</rb><rt>なかのごうたけちょう</rt></ruby></placeName>と書いた町の名を読んだ。そして<ruby><rb>直様</rb><rt>すぐさま</rt></ruby>、この<ruby><rb>頃</rb><rt>ごろ</rt></ruby>に愛読した<persName ref="#tamenaga-shunsui"><ruby><rb>為永春水</rb><rt>ためながしゅんすい</rt></ruby></persName>の『<ruby><rb>梅暦</rb><rt>うめごよみ</rt></ruby>』を思出した。ああ、薄命なあの恋人たちはこんな気味のわるい<ruby><rb>湿地</rb><rt>しっち</rt></ruby>の街に住んでいたのか。見れば物語の<ruby><rb>挿絵</rb><rt>さしえ</rt></ruby>に似た竹垣の家もある。垣根の竹は枯れきってその根元は虫に喰われて押せば倒れそうに思われる。<ruby><rb>潜門</rb><rt>くぐりもん</rt></ruby>の板屋根には<ruby><rb>痩</rb><rt>や</rt></ruby>せた柳が<ruby><rb>辛</rb><rt>から</rt></ruby>くも若芽の緑をつけた枝を<ruby><rb>垂</rb><rt>たら</rt></ruby>している。冬の昼過ぎ<ruby><rb>窃</rb><rt>ひそ</rt></ruby>かに<persName ref="#yonehachi"><ruby><rb>米八</rb><rt>よねはち</rt></ruby></persName>が病気の<persName ref="#tanjiro"><ruby><rb>丹次郎</rb><rt>たんじろう</rt></ruby></persName>をおとずれたのもかかる<ruby><rb>佗住居</rb><rt>わびずまい</rt></ruby>の<ruby><rb>戸口</rb><rt>とぐち</rt></ruby>であったろう。<persName ref="#hanjiro"><ruby><rb>半次郎</rb><rt>はんじろう</rt></ruby></persName>が雨の<ruby><rb>夜</rb><rt>よ</rt></ruby>の怪談に始めてお<ruby><rb>糸</rb><rt>いと</rt></ruby>の手を取ったのもやはりかかる家の<ruby><rb>一間</rb><rt>ひとま</rt></ruby>であったろう。<persName ref="#chokichi">長吉</persName>は何ともいえぬ<ruby><rb>恍惚</rb><rt>こうこつ</rt></ruby>と悲哀とを感じた。あの甘くして柔かく、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ちにして冷淡な<ruby><rb>無頓着</rb><rt>むとんちゃく</rt></ruby>な運命の手に<ruby><rb>弄</rb><rt>もてあそ</rt></ruby>ばれたい、という<ruby><rb>止</rb><rt>や</rt></ruby>みがたい空想に駆られた。空想の翼のひろがるだけ、春の青空が以前よりも青く広く目に映じる。遠くの方から<ruby><rb>飴売</rb><rt>あめうり</rt></ruby>の<ruby><rb>朝鮮笛</rb><rt>ちょうせんぶえ</rt></ruby>が響き出した。笛の<ruby><rb>音</rb><rt>ね</rt></ruby>は思いがけない処で、妙な<ruby><rb>節</rb><rt>ふし</rt></ruby>をつけて音調を低めるのが、言葉にいえない幽愁を<ruby><rb>催</rb><rt>もよお</rt></ruby>させる。</p>
+        <p><persName ref="#chokichi">長吉</persName>は今まで胸に<ruby><rb>蟠</rb><rt>わだかま</rt></ruby>った伯父に対する不満を<ruby><rb>暫</rb><rt>しばら</rt></ruby>く忘れた。現実の<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>を暫く忘れた……。</p>
+      </div>
+      <div type="chapter" xml:id="sec10" n="10">
+        <head>十</head>
+        <p>気候が夏の末から秋に移って行く時と同じよう、春の末から夏の始めにかけては、<ruby><rb>折々</rb><rt>おりおり</rt></ruby><ruby><rb>大雨</rb><rt>おおあめ</rt></ruby>が<ruby><rb>降</rb><rt>ふり</rt></ruby>つづく。<placeName ref="#senzokumachi"><ruby><rb>千束町</rb><rt>せんぞくまち</rt></ruby></placeName>から<placeName ref="#yoshiwaratanbo"><ruby><rb>吉原田圃</rb><rt>よしわらたんぼ</rt></ruby></placeName>は珍しくもなく例年の通りに水が出た。<placeName ref="#honjo"><ruby><rb>本所</rb><rt>ほんじょ</rt></ruby></placeName>も同じように<ruby><rb>所々</rb><rt>しょしょ</rt></ruby>に<ruby><rb>出水</rb><rt>しゅっすい</rt></ruby>したそうで、<persName ref="#ragetsu"><ruby><rb>蘿月</rb><rt>らげつ</rt></ruby></persName>は<persName ref="#otoyo">お<ruby><rb>豊</rb><rt>とよ</rt></ruby></persName>の住む<placeName ref="#imado"><ruby><rb>今戸</rb><rt>いまと</rt></ruby></placeName>の<ruby><rb>近辺</rb><rt>きんぺん</rt></ruby>はどうであったかと、二、三日過ぎてから、所用の帰りの夕方に見舞に来て見ると、<ruby><rb>出水</rb><rt>でみず</rt></ruby>の方は無事であった代りに、それよりも、もっと意外な災難にびっくりしてしまった。<ruby><rb>甥</rb><rt>おい</rt></ruby>の<persName ref="#chokichi">長吉</persName>が<ruby><rb>釣台</rb><rt>つりだい</rt></ruby>で、今しも<placeName ref="#honjo">本所</placeName>の<ruby><rb>避病院</rb><rt>ひびょういん</rt></ruby>に送られようという<ruby><rb>騒</rb><rt>さわぎ</rt></ruby>の<ruby><rb>最中</rb><rt>さいちゅう</rt></ruby>である。母親の<persName ref="#otoyo">お豊</persName>は<persName ref="#chokichi">長吉</persName>が<ruby><rb>初袷</rb><rt>はつあわせ</rt></ruby>の薄着をしたまま、<placeName ref="#senzokumachi">千束町</placeName>近辺の出水の混雑を見にと夕方から夜おそくまで、泥水の中を歩き廻ったために、その<ruby><rb>夜</rb><rt>よ</rt></ruby>から風邪をひいて<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち<ruby><rb>腸窒扶斯</rb><rt>ちょうチブス</rt></ruby>になったのだという医者の説明をそのまま語って、泣きながら釣台の<ruby><rb>後</rb><rt>あと</rt></ruby>について行った。<ruby><rb>途法</rb><rt>とほう</rt></ruby>にくれた<persName ref="#ragetsu">蘿月</persName>は<persName ref="#otoyo">お豊</persName>の帰って来るまで、<ruby><rb>否応</rb><rt>いやおう</rt></ruby>なく留守番にと<ruby><rb>家</rb><rt>うち</rt></ruby>の中に取り残されてしまった。</p>
+        <p>家の中は区役所の出張員が<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>の煙と<ruby><rb>石炭酸</rb><rt>せきたんさん</rt></ruby>で消毒した<ruby><rb>後</rb><rt>あと</rt></ruby>、まるで<ruby><rb>煤掃</rb><rt>すすは</rt></ruby>きか引越しの時のような<ruby><rb>狼藉</rb><rt>ろうぜき</rt></ruby>に、丁度<ruby><rb>人気</rb><rt>ひとけ</rt></ruby>のない寂しさを加えて、葬式の<ruby><rb>棺桶</rb><rt>かんおけ</rt></ruby>を<ruby><rb>送出</rb><rt>おくりだ</rt></ruby>した後と同じような心持である。世間を<ruby><rb>憚</rb><rt>はばか</rt></ruby>るようにまだ日の暮れぬ先から雨戸を閉めた<ruby><rb>戸外</rb><rt>おもて</rt></ruby>には、夜と共に突然強い風が吹き出したと見えて、<ruby><rb>家中</rb><rt>いえじゅう</rt></ruby>の雨戸ががたがた鳴り出した。気候はいやに肌寒くなって、折々勝手口の<ruby><rb>破障子</rb><rt>やぶれしょうじ</rt></ruby>から座敷の中まで吹き込んで来る風が、薄暗い<ruby><rb>釣</rb><rt>つるし</rt></ruby>ランプの火をば吹き消しそうに<ruby><rb>揺</rb><rt>ゆす</rt></ruby>ると、その<ruby><rb>度々</rb><rt>たびたび</rt></ruby>、黒い<ruby><rb>油煙</rb><rt>ゆえん</rt></ruby>がホヤを曇らして、乱雑に置き直された家具の影が、汚れた畳と<ruby><rb>腰張</rb><rt>こしばり</rt></ruby>のはがれた壁の上に動く。<ruby><rb>何処</rb><rt>どこ</rt></ruby>か近くの家で<ruby><rb>百万遍</rb><rt>ひゃくまんべん</rt></ruby>の念仏を称え始める声が、ふと物哀れに耳についた。<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>唯</rb><rt>たっ</rt></ruby>た一人で<ruby><rb>所在</rb><rt>しょざい</rt></ruby>がない。退屈でもある。<ruby><rb>薄淋</rb><rt>うすさび</rt></ruby>しい心持もする。こういう時には酒がなくてはならぬと思って、台所を探し廻ったが、<ruby><rb>女世帯</rb><rt>おんなじょたい</rt></ruby>の事とて<ruby><rb>酒盃</rb><rt>さかずき</rt></ruby><ruby><rb>一</rb><rt>ひと</rt></ruby>ツ見当らない。表の<ruby><rb>窓際</rb><rt>まどぎわ</rt></ruby>まで立戻って雨戸の一枚を少しばかり引き開けて往来を眺めたけれど、<ruby><rb>向側</rb><rt>むこうがわ</rt></ruby>の<ruby><rb>軒燈</rb><rt>けんとう</rt></ruby>には酒屋らしい<ruby><rb>記号</rb><rt>しるし</rt></ruby>のものは一ツも見えず、場末の街は宵ながらにもう<ruby><rb>大方</rb><rt>おおかた</rt></ruby>は戸を閉めていて、陰気な百万遍の声がかえってはっきり聞えるばかり。河の方から<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく吹きつける風が屋根の上の電線をヒューヒュー<ruby><rb>鳴</rb><rt>なら</rt></ruby>すのと、星の光の<ruby><rb>冴</rb><rt>さ</rt></ruby>えて見えるのとで、風のある夜は突然冬が来たような寒い心持をさせた。</p>
+        <p><persName ref="#ragetsu">蘿月</persName>は仕方なしに雨戸を閉めて、再びぼんやり<ruby><rb>釣</rb><rt>つるし</rt></ruby>ランプの下に坐って、続けざまに煙草を<ruby><rb>喫</rb><rt>の</rt></ruby>んでは柱時計の針の動くのを眺めた。時々<ruby><rb>鼠</rb><rt>ねずみ</rt></ruby>が恐しい<ruby><rb>響</rb><rt>ひびき</rt></ruby>をたてて天井裏を走る。ふと<persName ref="#ragetsu">蘿月</persName>は何かその<ruby><rb>辺</rb><rt>へん</rt></ruby>に読む本でもないかと思いついて、<ruby><rb>箪笥</rb><rt>たんす</rt></ruby>の上や押入の中を<ruby><rb>彼方</rb><rt>あっち</rt></ruby><ruby><rb>此方</rb><rt>こっち</rt></ruby>と<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて見たが、書物といっては<ruby><rb>常磐津</rb><rt>ときわず</rt></ruby>の<ruby><rb>稽古本</rb><rt>けいこぼん</rt></ruby>に<ruby><rb>綴暦</rb><rt>とじごよみ</rt></ruby>の古いもの位しか見当らないので、とうとう釣ランプを片手にさげて、<persName ref="#chokichi">長吉</persName>の部屋になった二階まで<ruby><rb>上</rb><rt>あが</rt></ruby>って行った。</p>
+        <p>机の上に書物は幾冊も重ねてある。杉板の本箱も置かれてある。<persName ref="#ragetsu">蘿月</persName>は<ruby><rb>紙入</rb><rt>かみいれ</rt></ruby>の中にはさんだ老眼鏡を<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>から取り出して、<ruby><rb>先</rb><rt>ま</rt></ruby>ず洋装の教科書をば物珍しく一冊々々ひろげて見ていたが、する<ruby><rb>中</rb><rt>うち</rt></ruby>にばたりと畳の上に落ちたものがあるので、何かと取上げて見ると春着の芸者姿をした<persName ref="#oito">お糸</persName>の写真であった。そっと<ruby><rb>旧</rb><rt>もと</rt></ruby>のように書物の間に収めて、なおもその辺の一冊々々を何心もなく<ruby><rb>漁</rb><rt>あさ</rt></ruby>って行くと、今度は思いがけない一通の手紙に<ruby><rb>行当</rb><rt>ゆきあた</rt></ruby>った。手紙は書き終らずに<ruby><rb>止</rb><rt>や</rt></ruby>めたものらしく、引き<ruby><rb>裂</rb><rt>さ</rt></ruby>いた<ruby><rb>巻紙</rb><rt>まきがみ</rt></ruby>と共に文句は<ruby><rb>杜切</rb><rt>とぎ</rt></ruby>れていたけれど、読み得るだけの文字で十分に全体の意味を解する事ができる。<persName ref="#chokichi">長吉</persName>は<ruby><rb>一度</rb><rt>ひとたび</rt></ruby>別れた<persName ref="#oito">お糸</persName>とは<ruby><rb>互</rb><rt>たがい</rt></ruby>に異なるその境遇から日一日とその心までが<ruby><rb>遠</rb><rt>とおざ</rt></ruby>かって行って、折角の<ruby><rb>幼馴染</rb><rt>おさななじみ</rt></ruby>も遂にはあかの他人に等しいものになるであろう。よし時々に手紙の取りやりはして見ても感情の一致して行かない<ruby><rb>是非</rb><rt>ぜひ</rt></ruby>なさを、こまごまと恨んでいる。それにつけて、役者か芸人になりたいと<ruby><rb>思定</rb><rt>おもいさだ</rt></ruby>めたが、その望みも<ruby><rb>遂</rb><rt>つい</rt></ruby>に<ruby><rb>遂</rb><rt>と</rt></ruby>げられず、空しく<ruby><rb>床屋</rb><rt>とこや</rt></ruby>の<persName ref="#tamamizu"><ruby><rb>吉</rb><rt>きち</rt></ruby>さん</persName>の幸福を<ruby><rb>羨</rb><rt>うらや</rt></ruby>みながら、毎日ぼんやりと目的のない時間を送っているつまらなさ、今は自殺する勇気もないから病気にでもなって死ねばよいと書いてある。</p>
+        <p><persName ref="#ragetsu">蘿月</persName>は何というわけもなく、<persName ref="#chokichi">長吉</persName>が<ruby><rb>出水</rb><rt>でみず</rt></ruby>の中を歩いて病気になったのは<ruby><rb>故意</rb><rt>こい</rt></ruby>にした事であって、全快する<ruby><rb>望</rb><rt>のぞみ</rt></ruby>はもう絶え果てているような実に<ruby><rb>果敢</rb><rt>はか</rt></ruby>ない<ruby><rb>感</rb><rt>かんじ</rt></ruby>に打たれた。自分は<ruby><rb>何故</rb><rt>なぜ</rt></ruby>あの時あのような心にもない意見をして<persName ref="#chokichi">長吉</persName>の望みを<ruby><rb>妨</rb><rt>さまた</rt></ruby>げたのかと後悔の念に<ruby><rb>迫</rb><rt>せ</rt></ruby>められた。<persName ref="#ragetsu">蘿月</persName>はもう一度思うともなく、女に迷って親の家を追出された若い時分の事を回想した。そして自分はどうしても<persName ref="#chokichi">長吉</persName>の味方にならねばならぬ。<persName ref="#chokichi">長吉</persName>を役者にして<persName ref="#oito">お糸</persName>と添わしてやらねば、親代々の<ruby><rb>家</rb><rt>うち</rt></ruby>を<ruby><rb>潰</rb><rt>つぶ</rt></ruby>してこれまでに浮世の苦労をしたかいがない。<ruby><rb>通人</rb><rt>つうじん</rt></ruby>を以て<ruby><rb>自任</rb><rt>じにん</rt></ruby>する<ruby><rb><persName ref="#ragetsu">松風庵蘿月</persName>宗匠</rb><rt>しょうふうあんらげつそうしょう</rt></ruby>の名に<ruby><rb>愧</rb><rt>はじ</rt></ruby>ると思った。</p>
+        <p>鼠がまた<ruby><rb>突如</rb><rt>だしぬけ</rt></ruby>に天井裏を走る。風はまだ吹き止まない。<ruby><rb>釣</rb><rt>つるし</rt></ruby>ランプの火は絶えず<ruby><rb>動揺</rb><rt>ゆらめ</rt></ruby>く。<persName ref="#ragetsu">蘿月</persName>は色の白い眼のぱっちりした<ruby><rb>面長</rb><rt>おもなが</rt></ruby>の<persName ref="#chokichi">長吉</persName>と、円顔の口元に<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>のある眼尻の上った<persName ref="#oito">お糸</persName>との、若い美しい二人の姿をば、人情本の作者が口絵の意匠でも考えるように、<ruby><rb>幾度</rb><rt>いくたび</rt></ruby>か並べて心の<ruby><rb>中</rb><rt>うち</rt></ruby>に描きだした。そして、どんな熱病に取付かれてもきっと死んでくれるな。<persName ref="#chokichi">長吉</persName>、安心しろ。<ruby><rb>乃公</rb><rt>おれ</rt></ruby>がついているんだぞと心に叫んだ。</p>
+        <p><date when="1909-08">明治四十二年八月</date>―<date when="1909-10">十月</date>作</p>
+      </div>
+      <div type="chapter" xml:id="sec11" n="11">
+        <head>第五版すみだ川之序</head>
+        <p>小説『すみだ川』を<ruby><rb>草</rb><rt>そう</rt></ruby>したのはもう四年ほど前の事である。外国から帰って来たその当座一、二年の間はなおかの国の習慣が抜けないために、毎日の午後といえば必ず愛読の書をふところにして散歩に出掛けるのを常とした。しかしわが生れたる<placeName ref="#tokyo">東京</placeName>の市街は既に詩をよろこぶ遊民の<ruby><rb>散歩場</rb><rt>さんぽじょう</rt></ruby>ではなくて行く処としてこれ戦乱後新興の時代の<ruby><rb>修羅場</rb><rt>しゅらじょう</rt></ruby>たらざるはない。その<ruby><rb>中</rb><rt>なか</rt></ruby>にもなおわずかにわが曲りし<ruby><rb>杖</rb><rt>つえ</rt></ruby>を<ruby><rb>留</rb><rt>とど</rt></ruby>め、疲れたる歩みを休めさせた処はやはりいにしえの<ruby><rb>唄</rb><rt>うた</rt></ruby>に残った<placeName ref="#sumidagawa"><ruby><rb>隅田川</rb><rt>すみだがわ</rt></ruby></placeName>の両岸であった。<placeName ref="#sumidagawa">隅田川</placeName>はその当時<ruby><rb>目</rb><rt>ま</rt></ruby>のあたり眺める破損の実景と共に、子供の折に見覚えた<ruby><rb>朧</rb><rt>おぼ</rt></ruby>ろなる過去の景色の再来と、子供の折から<ruby><rb>聞伝</rb><rt>ききつた</rt></ruby>えていたさまざまの伝説の美とを合せて、いい知れぬ音楽の中に自分を投込んだのである。既に全く廃滅に帰せんとしている昔の名所の名残ほど自分の情緒に対して一致調和を示すものはない。自分はわが目に映じたる荒廃の風景とわが心を<ruby><rb>傷</rb><rt>いた</rt></ruby>むる感激の情とを<ruby><rb>把</rb><rt>と</rt></ruby>ってここに何物かを創作せんと企てた。これが小説『すみだ川』である。さればこの小説一篇は<placeName ref="#sumidagawa">隅田川</placeName>という荒廃の風景が作者の視覚を<ruby><rb>動</rb><rt>うごか</rt></ruby>したる象形的幻想を主として構成せられた写実的外面の芸術であると共にまたこの一篇は絶えず荒廃の美を追究せんとする作者の<ruby><rb>止</rb><rt>や</rt></ruby>みがたき主観的傾向が、<placeName ref="#sumidagawa">隅田川</placeName>なる風景によってその抒情詩的本能を外発さすべき象徴を<ruby><rb>捜</rb><rt>もと</rt></ruby>めた理想的内面の芸術ともいい得よう。さればこの小説中に現わされた幾多の<ruby><rb>叙景</rb><rt>じょけい</rt></ruby>は篇中の人物と同じく、<ruby><rb>否</rb><rt>いな</rt></ruby>時としては人物より以上に重要なる分子として取扱われている。それと共に篇中の人物は実在のモデルによって<ruby><rb>活</rb><rt>い</rt></ruby>ける人間を描写したのではなくて、丁度<persName ref="#regnier">アンリイ、ド、レニエエ</persName>がかの『賢き一青年の休暇』に<ruby><rb>現</rb><rt>あらわ</rt></ruby>したる人物と<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく、<placeName ref="#sumidagawa">隅田川</placeName>の風景によって偶然にもわが記憶の中に<ruby><rb>蘇</rb><rt>よみがえ</rt></ruby>り<ruby><rb>来</rb><rt>きた</rt></ruby>った遠い過去の人物の<ruby><rb>正</rb><rt>まさ</rt></ruby>に消え<ruby><rb>失</rb><rt>う</rt></ruby>せんとするその<ruby><rb>面影</rb><rt>おもかげ</rt></ruby>を<ruby><rb>捉</rb><rt>とら</rt></ruby>えたに過ぎない。作者はその少年時代によく<ruby><rb>見馴</rb><rt>みな</rt></ruby>れたこれら人物に対していかなる愛情と<ruby><rb>懐</rb><rt>なつか</rt></ruby>しさとを持っているかは言うを<ruby><rb>俟</rb><rt>ま</rt></ruby>たぬ。今年花また開くの好時節に際し都下の<ruby><rb>或</rb><rt>ある</rt></ruby>新聞紙は<placeName ref="#sumidagawa"><ruby><rb>濹上</rb><rt>ぼくじょう</rt></ruby></placeName>の<ruby><rb>桜樹</rb><rt>おうじゅ</rt></ruby><ruby><rb>漸</rb><rt>ようや</rt></ruby>く<ruby><rb>枯死</rb><rt>こし</rt></ruby>するもの多きを説く。ああ新しき時代は遂に全く破壊の事業を完成し得たのである。さらばやがてはまた幾年の後に及んで、いそがしき世は製造所の<ruby><rb>煙筒</rb><rt>えんとう</rt></ruby><ruby><rb>叢立</rb><rt>むらだ</rt></ruby>つ都市の一隅に当ってかつては<ruby><rb>時鳥</rb><rt>ほととぎす</rt></ruby>鳴き<ruby><rb>蘆</rb><rt>あし</rt></ruby>の葉ささやき<ruby><rb>白魚</rb><rt>しらうお</rt></ruby><ruby><rb>閃</rb><rt>ひらめ</rt></ruby>き<ruby><rb>桜花</rb><rt>おうか</rt></ruby>雪と散りたる美しき<ruby><rb>流</rb><rt>ながれ</rt></ruby>のあった事をも忘れ果ててしまう時、せめてはわが小さきこの著作をして、傷ましき時代が産みたる<ruby><rb>薄倖</rb><rt>はっこう</rt></ruby>の詩人がいにしえの名所を<ruby><rb>弔</rb><rt>とむら</rt></ruby>う最後の<ruby><rb>中</rb><rt>うち</rt></ruby>の最後の声たらしめよ。</p>
+        <p><date when="1913-03">大正二<ruby><rb>癸丑</rb><rt>みずのとうし</rt></ruby>の年春三月</date>小説『すみだ川』<ruby><rb>幸</rb><rt>さいわい</rt></ruby>に第五版を発行すると聞きて</p>
+        <p><persName ref="#kafu">荷風小史</persName></p>
+      </div>
+      <div type="chapter" xml:id="sec12" n="12">
+        <head>すみだ川序</head>
+        <p>わたくしの友人<persName ref="#sato-haruo"><ruby><rb>佐藤春夫</rb><rt>さとうはるお</rt></ruby></persName>君を介して<ruby><rb>小山</rb><rt>おやま</rt></ruby>書店の主人はわたくしの旧著『すみだ川』の限定単行本を<ruby><rb>上梓</rb><rt>じょうし</rt></ruby>したいことを告げられた。<ruby><rb>今日</rb><rt>こんにち</rt></ruby>の出版界はむしろ新刊図書の過多なるに苦しんでいる。わたくしは今更二十四、五年前の拙作小説を復刻する必要があるや否やを知らない。しかしわたくしは小山書店の主人がわたくしの如き老朽文士の旧作を忘れずに記憶しておられたその好意については深く感謝しなければならない。<ruby><rb>依</rb><rt>よっ</rt></ruby>てその勧められるがままに旧版を校訂し<ruby><rb>併</rb><rt>あわ</rt></ruby>せて執筆当初の事情と旧版の種類とをここに<ruby><rb>識</rb><rt>しる</rt></ruby>すことにした。</p>
+        <p>わたくしが<ruby><rb>初</rb><rt>はじめ</rt></ruby>て小説『すみだ川』に筆をつけたのは西洋から帰って丁度満一年を<ruby><rb>過</rb><rt>すご</rt></ruby>した時である。即ち<date when="1909-08">明治四十二年の秋八月</date>のはじめに稿を<ruby><rb>起</rb><rt>おこ</rt></ruby>し<date when="1909-10">十月</date>の末に書き終るが否や亡友<persName ref="#inoue-aa"><ruby><rb>井上唖唖</rb><rt>いのうえああ</rt></ruby></persName>君に校閲を乞い<ruby><rb>添刪</rb><rt>てんさん</rt></ruby>をなした<ruby><rb>後</rb><rt>のち</rt></ruby>草稿を雑誌『新小説』<ruby><rb>編輯者</rb><rt>へんしゅうしゃ</rt></ruby>の<ruby><rb>許</rb><rt>もと</rt></ruby>に送った。当時『新小説』の編輯主任は<persName ref="#goto-chugai"><ruby><rb>後藤宙外</rb><rt>ごとうちゅうがい</rt></ruby></persName>氏であったかあるいは<persName ref="#suzuki-miekichi"><ruby><rb>鈴木三重吉</rb><rt>すずきみえきち</rt></ruby></persName>氏であったか<ruby><rb>明</rb><rt>あきらか</rt></ruby>に記憶していない。わたくしの草稿は<date when="1909-12">その年十二月</date>発行の『新小説』第十四年第十二巻のはじめに載せられた。わたくしはその時<ruby><rb>馬歯</rb><rt>ばし</rt></ruby>三十二歳であった。本書に掲載した当時の『新小説』「すみだ川」の口絵は<persName ref="#saito-shozo">斎藤昌三</persName>氏の所蔵本を借りて写真版となしたものである。ここに<persName ref="#saito-shozo">斎藤</persName>氏の好意を謝す。</p>
+        <p>小説『すみだ川』に描写せられた人物及び市街の光景は<date when="1902">明治三十五、六年</date>の時代である。<placeName ref="#shinbashi"><ruby><rb>新橋</rb><rt>しんばし</rt></ruby></placeName><placeName ref="#ueno"><ruby><rb>上野</rb><rt>うえの</rt></ruby></placeName><placeName ref="#asakusa"><ruby><rb>浅草</rb><rt>あさくさ</rt></ruby></placeName>の間を<ruby><rb>往復</rb><rt>おうふく</rt></ruby>していた鉄道馬車がそのまま電車に変ったころである。わたくしは丁度その<ruby><rb>頃</rb><rt>ころ</rt></ruby>に<placeName ref="#tokyo">東京</placeName>を去り六年ぶりに帰ってきた。<placeName ref="#tokyo">東京</placeName>市中の街路は<ruby><rb>到</rb><rt>いた</rt></ruby>る処旧観を失っていた。以前木造であった<placeName ref="#eitaibashi"><ruby><rb>永代</rb><rt>えいたい</rt></ruby></placeName>と<placeName ref="#ryogokubashi"><ruby><rb>両国</rb><rt>りょうごく</rt></ruby></placeName>との二橋は鉄のつり橋にかえられたのみならず橋の位置も変りまたその両岸の街路も著しく変っていた。<date when="1908">明治四十一、二年</date>のころ<placeName ref="#sumidagawa"><ruby><rb>隅田川</rb><rt>すみだがわ</rt></ruby></placeName>に架せられた<ruby><rb>橋梁</rb><rt>きょうりょう</rt></ruby>の中でむかしのままに木づくりの姿をとどめたものは<placeName ref="#shinohashi"><ruby><rb>新大橋</rb><rt>しんおおはし</rt></ruby></placeName>と<placeName ref="#senjuohashi"><ruby><rb>千住</rb><rt>せんじゅ</rt></ruby>の大橋</placeName>ばかりであった。わたくしは洋行以前二十四、五歳の頃に見歩いた<placeName ref="#tokyo">東京</placeName>の町々とその時代の生活とを言知れずなつかしく思返して、この心持を<ruby><rb>表</rb><rt>あらわ</rt></ruby>すために一篇の小説をつくろうと思立った。この事はつぶさに旧版『すみだ川』第五版の序に述べてある。</p>
+        <p>旧版発行の次第は左の如くである。</p>
+        <p><date when="1911-03">明治四十四年三月</date><ruby><rb>籾山</rb><rt>もみやま</rt></ruby>書店は『すみだ川』の<ruby><rb>外</rb><rt>ほか</rt></ruby>にその頃わたくしが『<ruby><rb>三田</rb><rt>みた</rt></ruby>文学』に掲げた数篇の短篇小説<ruby><rb>及</rb><rt>および</rt></ruby>戯曲を集め一巻となして刊行した。当時籾山書店は<ruby><rb><placeName ref="#iwaibashi">祝橋</placeName>向</rb><rt>いわいばしむこう</rt></ruby>の<ruby><rb>河岸通</rb><rt>かしどおり</rt></ruby>から<placeName ref="#tsukiji"><ruby><rb>築地</rb><rt>つきじ</rt></ruby></placeName>の電車通へ出ようとする<ruby><rb>静</rb><rt>しずか</rt></ruby>な<ruby><rb>横町</rb><rt>よこちょう</rt></ruby>の南側（<placeName ref="#tsukiji">築地</placeName>二丁目十五番地）にあって<ruby><rb>専</rb><rt>もっぱ</rt></ruby>ら<ruby><rb>俳諧</rb><rt>はいかい</rt></ruby>の書巻を刊行していたのであるが拙著『すみだ川』の出版を手初めに以後六、七年の間<ruby><rb>盛</rb><rt>さかん</rt></ruby>に小説及び文芸の書類を刊行した。書店の主人みずからもまた短篇小説集『遅日』を<ruby><rb>著</rb><rt>あらわ</rt></ruby>した。<persName ref="#tanizaki"><ruby><rb>谷崎</rb><rt>たにざき</rt></ruby></persName>君の名著『<ruby><rb>刺青</rb><rt>しせい</rt></ruby>』が始めて単行本となって世に<ruby><rb>公</rb><rt>おおやけ</rt></ruby>にせられたのも籾山書店からであった。<persName ref="#mori-ogai"><ruby><rb>森鴎外</rb><rt>もりおうがい</rt></ruby></persName>先生が『スバル』その他の雑誌に寄せられた名著の大半もまた籾山書店から刊行せられた。</p>
+        <p><date when="1916-04">大正五年四月</date>籾山書店は旧版『すみだ川』を改刻しこれを<ruby><rb>縮刷本</rb><rt>しゅくさつぼん</rt></ruby>『荷風<ruby><rb>叢書</rb><rt>そうしょ</rt></ruby>』の第五巻となし<ruby><rb>装幀</rb><rt>そうてい</rt></ruby>の意匠を<persName ref="#hashiguchi-goyo"><ruby><rb>橋口五葉</rb><rt>はしぐちごよう</rt></ruby></persName>氏に依頼した。</p>
+        <p><date when="1920-05">大正九年五月</date><ruby><rb>春陽堂</rb><rt>しゅんようどう</rt></ruby>が『荷風全集』第四巻を編輯刊行する時『すみだ川』を巻頭に掲げた。この際わたくしは旧著の辞句を訂正した。</p>
+        <p><date when="1921-03">大正十年三月</date>春陽堂が拙作小説『<ruby><rb>歓楽</rb><rt>かんらく</rt></ruby>』を巻首に置きこれを表題にして単行本を出した時再び『すみだ川』をその中に加えた。</p>
+        <p><date when="1927-09">昭和二年九月</date><ruby><rb>改造社</rb><rt>かいぞうしゃ</rt></ruby>が『現代日本文学全集』を編輯した時その第二十二編の中に『すみだ川』を採録した。</p>
+        <p><date when="1927-07">昭和二年七月</date>春陽堂の編輯した『明治大正文学全集』第三十一編にも『すみだ川』が載せられている。</p>
+        <p><date when="1928-02">昭和三年二月</date><persName ref="#kimura-tomiko"><ruby><rb>木村富子</rb><rt>きむらとみこ</rt></ruby></persName>女史が拙著『すみだ川』を<ruby><rb>潤色</rb><rt>じゅんしょく</rt></ruby>して戯曲となしこれを<placeName ref="#hongoza"><ruby><rb>本郷座</rb><rt>ほんごうざ</rt></ruby></placeName>の舞台に<ruby><rb>上</rb><rt>のぼ</rt></ruby>した。その時重なる人物に<ruby><rb>扮</rb><rt>ふん</rt></ruby>した俳優は<persName ref="#ichikawa-sumizo"><ruby><rb>市川寿美蔵</rb><rt>いちかわすみぞう</rt></ruby></persName><persName ref="#ichikawa-shocho"><ruby><rb>市川松蔦</rb><rt>いちかわしょうちょう</rt></ruby></persName><persName ref="#otani-tomoemon"><ruby><rb>大谷友右衛門</rb><rt>おおたにともえもん</rt></ruby></persName><persName ref="#ichikawa-benijaku"><ruby><rb>市川紅若</rb><rt>いちかわこうじゃく</rt></ruby></persName>その他である。<persName ref="#kimura-tomiko">木村</persName>女史の戯曲『すみだ川』はその著『<ruby><rb>銀扇集</rb><rt>ぎんせんしゅう</rt></ruby>』に収められている。</p>
+        <p><date when="1935-10">昭和十年十月</date><placeName ref="#azabu"><ruby><rb>麻布</rb><rt>あざぶ</rt></ruby></placeName>の廬において</p>
+        <p><persName ref="#kafu">荷風<ruby><rb>散人</rb><rt>さんじん</rt></ruby></persName><ruby><rb>識</rb><rt>しるす</rt></ruby></p>
+      </div>
+    </body>
+  </text>
+</TEI>
