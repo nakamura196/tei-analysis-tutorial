@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>興津弥五右衛門の遺書</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>興津弥五右衛門の遺書</title><author>森鴎外</author>
+          <note>青空文庫。底本：「カラー版日本文学全集7　森鴎外」河出書房新社。1969（昭和44）年3月30日初版発行。初出：「中央公論」。1912（大正元）年10月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card45209.html">https://www.aozora.gr.jp/cards/000129/card45209.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="okitsu-kageyoshi">
+        <persName>興津弥五右衛門景吉</persName>
+        <note>本作の語り手。景一の二男。幼名才助。寛永元年に長崎で伽羅の本木を競り落とし、相役横田清兵衛を討ち果たす。三斎(松向寺殿)に一命を救われた恩に報い、正保四年十二月二日に追腹を切る。法名は孤峰不白</note>
+      </person>
+      <person xml:id="okitsu-kagekazu">
+        <persName>興津弥五右衛門景一</persName>
+        <note>景吉の父。幼名才八。赤松左兵衛督に仕え阿波郡代を勤めたが、田辺城攻めの際に細川父子と縁を結び、慶長六年に細川家に召し抱えられる。剃髪して宗也と号し、寛永十八年九月二日に八十四歳で病死</note>
+      </person>
+      <person xml:id="okitsu-kagemichi">
+        <persName>興津右兵衛景通</persName>
+        <note>景吉の祖父。駿河国興津に生まれ今川治部大輔(義元)に仕える。永禄三年、今川殿の陣亡に御供して四十一歳で没する。法名は千山宗及居士</note>
+      </person>
+      <person xml:id="okitsu-kazutomo">
+        <persName>興津九郎兵衛一友</persName>
+        <note>景一の嫡子で景吉の兄。寛永十五年、島原攻めで細川家攻口の一番乗を名告り、城壁の上で陣亡。法名は義心英立居士</note>
+      </person>
+      <person xml:id="okitsu-kazusada">
+        <persName>興津才右衛門一貞</persName>
+        <note>景吉の嫡子で遺書の宛先。知行二百石、鉄砲三十挺頭を勤め、宝永元年に病死。景通から四代目にあたる</note>
+      </person>
+      <person xml:id="matajiro">
+        <persName>興津又次郎</persName>
+        <note>景一の六男で景吉の弟。京都に住み、景吉は切腹前にその宅に寄寓して遺書を記す。播磨の佐野官十郎の孫市郎左衛門を養子とした</note>
+      </person>
+      <person xml:id="hanzaburo">
+        <persName>興津半三郎</persName>
+        <note>景一の三男。後に作太夫景行と名告り、慶安五年に病死</note>
+      </person>
+      <person xml:id="yagodayu">
+        <persName>興津弥五太夫</persName>
+        <note>半三郎(作太夫景行)の子。寛文十一年に病死し、その家は絶えた</note>
+      </person>
+      <person xml:id="teramoto-kagetoki">
+        <persName>興津忠太(寺本四郎右衛門景時)</persName>
+        <note>景一の四男。元和元年の大坂夏の陣で三斎に従い武功を立てるが、行賞を辞退して追放される。寺本氏に改め、伊勢国亀山の本多下総守俊次に仕え、坂下・関・亀山三箇所の奉行となる。島原の乱の折、人馬を買い締めて細川綱利を助けた</note>
+      </person>
+      <person xml:id="hachisuke">
+        <persName>興津八助</persName>
+        <note>景一の五男。三歳で足を傷めて歩行不自由となり、宗春と改名して寛文十二年に病死</note>
+      </person>
+      <person xml:id="ichirozaemon">
+        <persName>市郎左衛門</persName>
+        <note>播磨国の佐野官十郎の孫。京都に住む又次郎の養子となった</note>
+      </person>
+      <person xml:id="okitsu-gen5">
+        <persName>五世弥五右衛門</persName>
+        <note>興津家五代目。鉄砲十挺頭を勤め、元文四年に病死</note>
+      </person>
+      <person xml:id="okitsu-gen6">
+        <persName>六世弥忠太</persName>
+        <note>興津家六代目。番方を勤め、宝暦六年に致仕</note>
+      </person>
+      <person xml:id="okitsu-gen7">
+        <persName>七世九郎次</persName>
+        <note>興津家七代目。番方を勤め、安永五年に致仕</note>
+      </person>
+      <person xml:id="okitsu-gen8">
+        <persName>八世九郎兵衛</persName>
+        <note>興津家八代目。養子。番方を勤め、文化元年に病死</note>
+      </person>
+      <person xml:id="okitsu-gen9">
+        <persName>九世栄喜</persName>
+        <note>興津家九代目。養子。番方を勤め、文政九年に病死</note>
+      </person>
+      <person xml:id="okitsu-gen10">
+        <persName>十世弥忠太</persName>
+        <note>興津家十代目。栄喜の嫡子。後に才右衛門と改名し、番方を勤め、万延元年に病死</note>
+      </person>
+      <person xml:id="okitsu-gen11">
+        <persName>十一世弥五右衛門</persName>
+        <note>興津家十一代目。十世才右衛門の二男。後に宗也と改名。犬追物の上手で、明治三年に番士に列した</note>
+      </person>
+      <person xml:id="shirobei">
+        <persName>寺本四郎兵衛</persName>
+        <note>四郎右衛門景時の二男。江戸にいたところを細川綱利に召し抱えられた</note>
+      </person>
+      <person xml:id="sakuemon">
+        <persName>寺本作右衛門</persName>
+        <note>四郎兵衛の嫡子。五人扶持二十石を給わり中小姓組に加わる。元禄四年に病死</note>
+      </person>
+      <person xml:id="teramoto-noboru">
+        <persName>寺本登</persName>
+        <note>作右衛門の子。越中守宣紀に任用せられ役料共七百石を給わり、越中守宗孝の代に用人を勤め、元文三年に致仕した。衛一郎が明治三年に改名した「登」とは別人</note>
+      </person>
+      <person xml:id="uheita">
+        <persName>寺本宇平太</persName>
+        <note>寺本家の子孫。越中守重賢の給仕、中務大輔治年の近習を勤め、擬作高百五十石。物頭列・紀姫附となり、文化二年に致仕</note>
+      </person>
+      <person xml:id="junji">
+        <persName>寺本順次</persName>
+        <note>宇平太の嫡子。軍学・射術に長じたが、文化五年に病死</note>
+      </person>
+      <person xml:id="kumaki">
+        <persName>寺本熊喜</persName>
+        <note>順次の養子。実は山野勘左衛門の三男。合力米二十石を給わり中小姓を勤め、天保八年に病死</note>
+      </person>
+      <person xml:id="eiichiro">
+        <persName>寺本衛一郎</persName>
+        <note>熊喜の嫡子。後に四郎右衛門と改名。玉名郡代を勤めて物頭列に列し、明治三年に鞠獄大属となって名を登と改めた</note>
+      </person>
+      <person xml:id="yamano-kanzaemon">
+        <persName>山野勘左衛門</persName>
+        <note>熊喜の実父</note>
+      </person>
+      <person xml:id="hosokawa-tadaoki">
+        <persName>細川忠興(三斎・松向寺殿)</persName>
+        <note>景吉の主君。隠居して三斎と号す。田辺城攻めの当時は関東に出陣中。長崎の香木の一件で景吉の切腹願いを退けて一命を救い、伽羅に「初音」と銘を与えた。正保二年に八代で卒去し、景吉はその追腹を切る</note>
+      </person>
+      <person xml:id="hosokawa-yusai">
+        <persName>細川藤孝(幽斎・泰勝院殿)</persName>
+        <note>忠興の父。田辺城に留守居として籠城する。和歌の大家で烏丸光広の師。蒲生殿に茶器ではなく甲冑刀剣を見せた逸話が語られる</note>
+      </person>
+      <person xml:id="hosokawa-tadatoshi">
+        <persName>細川忠利(妙解院殿)</persName>
+        <note>忠興の子。寛永九年に肥後へ入国。寛永十八年三月十七日に卒去し、十九人が殉死した</note>
+      </person>
+      <person xml:id="hosokawa-mitsunao">
+        <persName>細川光尚</persName>
+        <note>忠利の子。幼名六丸。肥後守。元和五年誕生で景一が御附となる。景吉の追腹の宿望を聞き届けた当代の主君</note>
+      </person>
+      <person xml:id="hosokawa-tatsutaka">
+        <persName>細川立孝</persName>
+        <note>忠利の弟。中務少輔。島原征伐で景吉はその旗本に加えられ、幟を預けられた</note>
+      </person>
+      <person xml:id="hosokawa-tsunatoshi">
+        <persName>細川綱利</persName>
+        <note>越中守。島原の乱の折、寺本四郎右衛門の計らいで黒田光之を土山水口の駅で乗り越した</note>
+      </person>
+      <person xml:id="hosokawa-nobunori">
+        <persName>細川宣紀</persName>
+        <note>越中守。寺本作右衛門の子・登を任用した</note>
+      </person>
+      <person xml:id="hosokawa-munetaka">
+        <persName>細川宗孝</persName>
+        <note>越中守。その代に登が用人を勤めた</note>
+      </person>
+      <person xml:id="hosokawa-shigekata">
+        <persName>細川重賢</persName>
+        <note>越中守。宇平太が給仕を勤めた</note>
+      </person>
+      <person xml:id="hosokawa-harutoshi">
+        <persName>細川治年</persName>
+        <note>中務大輔。宇平太が近習を勤めた</note>
+      </person>
+      <person xml:id="kihime">
+        <persName>紀姫</persName>
+        <note>細川家の姫。宇平太が紀姫附となった</note>
+      </person>
+      <person xml:id="imagawa">
+        <persName>今川治部大輔</persName>
+        <note>駿河の戦国大名(今川義元)。興津景通が仕え、永禄三年五月二十日の陣亡に景通も御供した</note>
+      </person>
+      <person xml:id="sano-kanjuro">
+        <persName>佐野官十郎</persName>
+        <note>播磨国の人。景一の母方の一族で、景一が寄居した。その孫市郎左衛門は又次郎の養子となる</note>
+      </person>
+      <person xml:id="akamatsu">
+        <persName>赤松左兵衛督</persName>
+        <note>景一が仕えた主君。天正十三年に阿波国を併せ領し、慶長五年七月に石田三成に荷担して田辺城を攻め、その年に家が滅んだ</note>
+      </person>
+      <person xml:id="ishida-mitsunari">
+        <persName>石田三成</persName>
+        <note>慶長五年、赤松左兵衛督が荷担した相手</note>
+      </person>
+      <person xml:id="onogi">
+        <persName>小野木縫殿介</persName>
+        <note>丹波国の武将。赤松勢とともに丹後国田辺城を攻めた</note>
+      </person>
+      <person xml:id="ieyasu">
+        <persName>神君(徳川家康)</persName>
+        <note>上杉景勝を討つため出陣し、三斎はこれに随従した。「神君」は家康を指す尊称</note>
+      </person>
+      <person xml:id="uesugi-kagekatsu">
+        <persName>上杉景勝</persName>
+        <note>神君(家康)が討とうとした相手</note>
+      </person>
+      <person xml:id="karasumaru-mitsuhiro">
+        <persName>烏丸光広</persName>
+        <note>公卿・歌人。幽斎の和歌の弟子。景一と相識となり、細川父子との縁を仲介した</note>
+      </person>
+      <person xml:id="karasumaru-mitsukata">
+        <persName>烏丸光賢</persName>
+        <note>光広の嫡子。松向寺殿(三斎)の息女万姫を妻とした</note>
+      </person>
+      <person xml:id="man-hime">
+        <persName>万姫</persName>
+        <note>松向寺殿(三斎)の息女。烏丸光賢の妻</note>
+      </person>
+      <person xml:id="karasumaru-sukeyoshi">
+        <persName>烏丸大納言資慶</persName>
+        <note>切腹に臨む景吉に餞別の詩歌を贈った公卿</note>
+      </person>
+      <person xml:id="uramatsu-sukekiyo">
+        <persName>裏松宰相資清</persName>
+        <note>切腹に臨む景吉に餞別の詩歌を贈った公卿</note>
+      </person>
+      <person xml:id="mori-sanemon">
+        <persName>森三右衛門</persName>
+        <note>景一の外戚の従弟。三斎の使として田辺城に潜入し、幽斎の親書を得て関東へ届けた</note>
+      </person>
+      <person xml:id="ido-kameemon">
+        <persName>井門亀右衛門</persName>
+        <note>赤松家の物頭。景一と謀り、田辺城の妙庵丸櫓へ矢文を射掛けた</note>
+      </person>
+      <person xml:id="date-masamune">
+        <persName>伊達権中納言(政宗)</persName>
+        <note>仙台の主。長崎で伽羅の本木を景吉と競り合って敗れ、末木を得て「柴舟」と銘した。寛永十三年に少林城で薨去</note>
+      </person>
+      <person xml:id="yokota-seibei">
+        <persName>横田清兵衛</persName>
+        <note>景吉の相役。長崎で香木の購入をめぐって争い、脇差を投げつけて景吉に討たれる。その子孫は筑前国へ去った</note>
+      </person>
+      <person xml:id="gamo">
+        <persName>蒲生</persName>
+        <note>泰勝院殿(幽斎)の代に細川家の道具の拝見を望み、茶器を期待して甲冑刀剣を見せられた大名</note>
+      </person>
+      <person xml:id="kaneda-yaichiemon">
+        <persName>兼田弥一右衛門</persName>
+        <note>寛永十五年の島原攻めで、九郎兵衛一友とともに攻口の一番乗を名告り陣亡した</note>
+      </person>
+      <person xml:id="minoda-heishichi">
+        <persName>簑田平七正元</persName>
+        <note>松向寺殿(三斎)に殉死した四人の一人。三斎に五百石で召し出され、二十三歳で切腹</note>
+      </person>
+      <person xml:id="minoda-izumi">
+        <persName>簑田和泉</persName>
+        <note>平七の曾祖父。相良遠江守の家老で、主とともに陣亡した</note>
+      </person>
+      <person xml:id="minoda-wakasa">
+        <persName>簑田若狭</persName>
+        <note>平七の祖父。主家没落の後に流浪した</note>
+      </person>
+      <person xml:id="minoda-ushinosuke">
+        <persName>簑田牛之助</persName>
+        <note>平七の父。流浪した</note>
+      </person>
+      <person xml:id="sagara">
+        <persName>相良遠江守</persName>
+        <note>簑田和泉が家老として仕えた主</note>
+      </person>
+      <person xml:id="isobe-chogoro">
+        <persName>磯部長五郎</persName>
+        <note>小姓。簑田平七の介錯を勤めた</note>
+      </person>
+      <person xml:id="ono-denbei">
+        <persName>小野伝兵衛友次</persName>
+        <note>松向寺殿に殉死した四人の一人。逐電した父を尋ねて果たさず帰参したが、三斎に助命された恩義から切腹した</note>
+      </person>
+      <person xml:id="imayasu">
+        <persName>今安太郎左衛門</persName>
+        <note>伝兵衛の祖父。丹後国で細川家に召し出された</note>
+      </person>
+      <person xml:id="tanaka-jinzaemon">
+        <persName>田中甚左衛門</persName>
+        <note>伝兵衛の父。主の旨に忤い、江戸の御邸から逐電した</note>
+      </person>
+      <person xml:id="isoda-juro">
+        <persName>磯田十郎</persName>
+        <note>小野伝兵衛の介錯を勤めた</note>
+      </person>
+      <person xml:id="kuno-yoemon">
+        <persName>久野与右衛門宗直</persName>
+        <note>松向寺殿に殉死した四人の一人。丹後で幽斎に召し出され、田辺籠城の功で新知百五十石を賜わった</note>
+      </person>
+      <person xml:id="yano-matasaburo">
+        <persName>矢野又三郎</persName>
+        <note>久野与右衛門の介錯を勤めた</note>
+      </person>
+      <person xml:id="hosenin">
+        <persName>宝泉院勝延</persName>
+        <note>松向寺殿に殉死した四人の一人。陣貝吹の山伏で、筒井順慶の弟・石井備後守吉村の子</note>
+      </person>
+      <person xml:id="tsutsui-junkei">
+        <persName>筒井順慶</persName>
+        <note>大和の武将。石井備後守吉村の兄で、宝泉院勝延の伯父にあたる</note>
+      </person>
+      <person xml:id="ishii-yoshimura">
+        <persName>石井備後守吉村</persName>
+        <note>筒井順慶の弟。宝泉院勝延の父</note>
+      </person>
+      <person xml:id="nagaoka-kagenori">
+        <persName>長岡河内景則</persName>
+        <note>三斎の遺骨を八代から京都へ護送した供の一人</note>
+      </person>
+      <person xml:id="kaku-ietsugu">
+        <persName>加来作左衛門家次</persName>
+        <note>三斎の遺骨を京都へ護送した供の一人</note>
+      </person>
+      <person xml:id="yamada-sanemon">
+        <persName>山田三右衛門</persName>
+        <note>三斎の遺骨を京都へ護送した供の一人</note>
+      </person>
+      <person xml:id="sakata-hidenobu">
+        <persName>佐方源左衛門秀信</persName>
+        <note>三斎の遺骨を京都へ護送した供の一人</note>
+      </person>
+      <person xml:id="yoshida-kenan">
+        <persName>吉田兼庵</persName>
+        <note>三斎の遺骨を京都へ護送した供の一人</note>
+      </person>
+      <person xml:id="senyo">
+        <persName>専誉</persName>
+        <note>八代の泰勝院の僧。三斎の遺言により、その遺骨を京都へ護送した</note>
+      </person>
+      <person xml:id="seigan">
+        <persName>清巌(清巌実堂)</persName>
+        <note>大徳寺の和尚。三斎と生前に高桐院への納骨を約し、景吉の切腹の場にも臨場した</note>
+      </person>
+      <person xml:id="hayashi-geki">
+        <persName>林外記</persName>
+        <note>御当代(光尚)の使として、景吉に後々の事を心配するなと伝えた</note>
+      </person>
+      <person xml:id="fujisaki-sakuzaemon">
+        <persName>藤崎作左衛門</persName>
+        <note>御当代(光尚)の使として、景吉に後々の事を心配するなと伝えた</note>
+      </person>
+      <person xml:id="furuhashi">
+        <persName>古橋小左衛門</persName>
+        <note>京都で万事を相談するよう光尚に命じられた者。切腹の場の取計をした</note>
+      </person>
+      <person xml:id="hotta">
+        <persName>堀田加賀守</persName>
+        <note>切腹に赴く景吉に歌を下された</note>
+      </person>
+      <person xml:id="inaba">
+        <persName>稲葉能登守</persName>
+        <note>切腹に赴く景吉に歌を下された</note>
+      </person>
+      <person xml:id="tanaka-sahyoe">
+        <persName>田中左兵衛</persName>
+        <note>御当代(光尚)の使として、江戸を発つ景吉を品川まで見送った</note>
+      </person>
+      <person xml:id="tani-kuranosuke">
+        <persName>谷内蔵之允</persName>
+        <note>御当代(光尚)の御名代として景吉の切腹に立ち会った</note>
+      </person>
+      <person xml:id="nagaoka-yohachiro">
+        <persName>長岡与八郎</persName>
+        <note>御家老。景吉の切腹に立ち会った</note>
+      </person>
+      <person xml:id="nagaoka-hanzaemon">
+        <persName>長岡半左衛門</persName>
+        <note>御家老。景吉の切腹に立ち会った。本文では「同半左衛門殿」</note>
+      </person>
+      <person xml:id="nomi">
+        <persName>乃美市郎兵衛勝嘉</persName>
+        <note>景吉の介錯人。一刀では切り足りず、再び手を下さぬうちに景吉は絶息した</note>
+      </person>
+      <person xml:id="honda-toshitsugu">
+        <persName>本多下総守俊次</persName>
+        <note>伊勢国亀山の主。寺本四郎右衛門景時が仕えた</note>
+      </person>
+      <person xml:id="kuroda-mitsuyuki">
+        <persName>黒田右衛門佐光之</persName>
+        <note>島原の乱の折、東海道で細川綱利と先を争った</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="suruga">
+        <placeName>駿河国</placeName>
+        <location><geo>35.0 138.4</geo></location>
+        <note>旧国名(静岡県中部)・概値</note>
+      </place>
+      <place xml:id="okitsu">
+        <placeName>興津</placeName>
+        <location><geo>35.0546 138.5153</geo></location>
+        <note>駿河国庵原郡興津(現・静岡市清水区興津)。興津家の名字の地・概値</note>
+      </place>
+      <place xml:id="kiyomigaseki">
+        <placeName>清見が関</placeName>
+        <location><geo>35.0514 138.5083</geo></location>
+        <note>清見関。清見寺(静岡市清水区興津清見寺町)付近・伝承地・概値</note>
+      </place>
+      <place xml:id="harima">
+        <placeName>播磨国</placeName>
+        <location><geo>34.85 134.7</geo></location>
+        <note>旧国名(兵庫県南西部)・概値</note>
+      </place>
+      <place xml:id="awa">
+        <placeName>阿波国</placeName>
+        <location><geo>34.0 134.4</geo></location>
+        <note>旧国名(徳島県)・概値</note>
+      </place>
+      <place xml:id="itsu">
+        <placeName>渭津</placeName>
+        <location><geo>34.0723 134.5546</geo></location>
+        <note>阿波国渭津(現・徳島市。徳島城付近)・概値</note>
+      </place>
+      <place xml:id="tanba">
+        <placeName>丹波国</placeName>
+        <location><geo>35.2 135.3</geo></location>
+        <note>旧国名(京都府中部・兵庫県東部)・概値</note>
+      </place>
+      <place xml:id="tango">
+        <placeName>丹後国</placeName>
+        <location><geo>35.6 135.2</geo></location>
+        <note>旧国名(京都府北部)・概値</note>
+      </place>
+      <place xml:id="tanabe">
+        <placeName>田辺城</placeName>
+        <location><geo>35.4496 135.3314</geo></location>
+        <note>丹後田辺城(現・京都府舞鶴市南田辺の舞鶴公園)・概値</note>
+      </place>
+      <place xml:id="myoanmaru">
+        <placeName>妙庵丸</placeName>
+        <location><geo>35.4496 135.3314</geo></location>
+        <note>田辺城内の郭(妙庵丸櫓)。田辺城の座標・概値</note>
+      </place>
+      <place xml:id="kanto">
+        <placeName>関東</placeName>
+        <location><geo>36.0 139.6</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="buzen">
+        <placeName>豊前国</placeName>
+        <location><geo>33.6 131.1</geo></location>
+        <note>旧国名(福岡県東部・大分県北部)・概値</note>
+      </place>
+      <place xml:id="buzen-okitsu">
+        <placeName>豊前国興津</placeName>
+        <note>底本(河出版)の表記のまま。文脈上は三斎の隠居地である豊前国中津(現・大分県中津市)を指すと見られるが、比定に確証がないため座標なし</note>
+      </place>
+      <place xml:id="kokura">
+        <placeName>小倉</placeName>
+        <location><geo>33.8835 130.8752</geo></location>
+        <note>豊前国小倉(現・北九州市小倉)・概値</note>
+      </place>
+      <place xml:id="nakatsu-gun">
+        <placeName>仲津</placeName>
+        <note>底本(河出版)の表記のまま。文脈上は三斎の隠居地である豊前国中津(現・大分県中津市)を指すと見られるが、豊前国仲津郡(現・福岡県行橋市周辺)とも読め、比定に確証がないため座標なし</note>
+      </place>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="annan">
+        <placeName>安南</placeName>
+        <location><geo>16.0 108.0</geo></location>
+        <note>安南(現在のベトナム中部)。本文では「安南船」。国名・概値</note>
+      </place>
+      <place xml:id="sendai">
+        <placeName>仙台</placeName>
+        <location><geo>38.2682 140.8694</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="shorinjo">
+        <placeName>少林城</placeName>
+        <location><geo>38.2361 140.8956</geo></location>
+        <note>伊達政宗の隠居城・若林城(少林城)に比定(現・仙台市若林区)・概値</note>
+      </place>
+      <place xml:id="chikuzen">
+        <placeName>筑前国</placeName>
+        <location><geo>33.6 130.4</geo></location>
+        <note>旧国名(福岡県西部)・概値</note>
+      </place>
+      <place xml:id="nijo">
+        <placeName>二条</placeName>
+        <location><geo>35.0142 135.7481</geo></location>
+        <note>二条城(京都市中京区)。本文では「二条の御城」・概値</note>
+      </place>
+      <place xml:id="yatsushiro">
+        <placeName>八代</placeName>
+        <location><geo>32.5079 130.6017</geo></location>
+        <note>肥後国八代(現・熊本県八代市)。三斎の隠居城の地・概値</note>
+      </place>
+      <place xml:id="taishoin">
+        <placeName>泰勝院</placeName>
+        <note>八代にあった寺院。三斎の遺骸を荼毗に付した。所在に確証がないため座標なし(熊本市立田山の細川家菩提寺・泰勝寺とは別)</note>
+      </place>
+      <place xml:id="shimabara">
+        <placeName>島原</placeName>
+        <location><geo>32.7878 130.37</geo></location>
+        <note>島原半島(島原の乱の地)・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>現在の東京・概値</note>
+      </place>
+      <place xml:id="higo">
+        <placeName>肥後</placeName>
+        <location><geo>32.8 130.7</geo></location>
+        <note>旧国名(熊本県)・概値</note>
+      </place>
+      <place xml:id="tamana">
+        <placeName>玉名</placeName>
+        <location><geo>32.9273 130.5606</geo></location>
+        <note>肥後国玉名郡(現・熊本県玉名市周辺)・概値</note>
+      </place>
+      <place xml:id="daitokuji">
+        <placeName>大徳寺</placeName>
+        <location><geo>35.0433 135.746</geo></location>
+        <note>京都市北区紫野・概値</note>
+      </place>
+      <place xml:id="murasakino">
+        <placeName>紫野</placeName>
+        <location><geo>35.04 135.745</geo></location>
+        <note>京都市北区紫野・概値</note>
+      </place>
+      <place xml:id="kotoin">
+        <placeName>高桐院</placeName>
+        <location><geo>35.0424 135.7452</geo></location>
+        <note>大徳寺塔頭。三斎の墓所・概値</note>
+      </place>
+      <place xml:id="funaokayama">
+        <placeName>船岡山</placeName>
+        <location><geo>35.0392 135.7451</geo></location>
+        <note>京都市北区。景吉の切腹の地・概値</note>
+      </place>
+      <place xml:id="nanzenji">
+        <placeName>南禅寺</placeName>
+        <location><geo>35.0113 135.7947</geo></location>
+        <note>京都市左京区・概値</note>
+      </place>
+      <place xml:id="myoshinji">
+        <placeName>妙心寺</placeName>
+        <location><geo>35.0231 135.7199</geo></location>
+        <note>京都市右京区・概値</note>
+      </place>
+      <place xml:id="tenryuji">
+        <placeName>天竜寺</placeName>
+        <location><geo>35.0159 135.6738</geo></location>
+        <note>京都市右京区嵯峨・概値</note>
+      </place>
+      <place xml:id="shokokuji">
+        <placeName>相国寺</placeName>
+        <location><geo>35.0299 135.762</geo></location>
+        <note>京都市上京区・概値</note>
+      </place>
+      <place xml:id="kenninji">
+        <placeName>建仁寺</placeName>
+        <location><geo>35.0 135.7737</geo></location>
+        <note>京都市東山区・概値</note>
+      </place>
+      <place xml:id="tofukuji">
+        <placeName>東福寺</placeName>
+        <location><geo>34.9766 135.7743</geo></location>
+        <note>京都市東山区・概値</note>
+      </place>
+      <place xml:id="nanto">
+        <placeName>南都</placeName>
+        <location><geo>34.6851 135.8048</geo></location>
+        <note>奈良の古称・概値</note>
+      </place>
+      <place xml:id="kofukuji">
+        <placeName>興福寺</placeName>
+        <location><geo>34.6831 135.8318</geo></location>
+        <note>奈良市・概値</note>
+      </place>
+      <place xml:id="shinagawa">
+        <placeName>品川</placeName>
+        <location><geo>35.6188 139.7395</geo></location>
+        <note>東海道品川宿・概値</note>
+      </place>
+      <place xml:id="ise">
+        <placeName>伊勢国</placeName>
+        <location><geo>34.7 136.5</geo></location>
+        <note>旧国名(三重県中東部)・概値</note>
+      </place>
+      <place xml:id="kameyama">
+        <placeName>亀山</placeName>
+        <location><geo>34.8558 136.4514</geo></location>
+        <note>伊勢国亀山(現・三重県亀山市)・概値</note>
+      </place>
+      <place xml:id="sakashita">
+        <placeName>坂下</placeName>
+        <location><geo>34.8975 136.3227</geo></location>
+        <note>東海道坂下宿(現・三重県亀山市関町坂下)・概値</note>
+      </place>
+      <place xml:id="seki">
+        <placeName>関</placeName>
+        <location><geo>34.8536 136.393</geo></location>
+        <note>東海道関宿(現・三重県亀山市関町)・概値</note>
+      </place>
+      <place xml:id="tokaido">
+        <placeName>東海道</placeName>
+        <note>街道(線状の地物)のため座標なし</note>
+      </place>
+      <place xml:id="tsuchiyama">
+        <placeName>土山</placeName>
+        <location><geo>34.9264 136.236</geo></location>
+        <note>東海道土山宿(現・滋賀県甲賀市土山町)・概値</note>
+      </place>
+      <place xml:id="minakuchi">
+        <placeName>水口</placeName>
+        <location><geo>34.9686 136.1687</geo></location>
+        <note>東海道水口宿(現・滋賀県甲賀市水口町)・概値</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6873 135.5259</geo></location>
+        <note>大坂。大坂夏の陣の地(大坂城付近)・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>興津弥五右衛門の遺書</head>
+        <p><ruby><rb>某</rb><rt>それがし</rt></ruby>儀明日年来の<ruby><rb>宿望</rb><rt>しゅくもう</rt></ruby>相達し<ruby><rb>候</rb><rt>そろ</rt></ruby>て、<persName ref="#hosokawa-tadatoshi"><ruby><rb>妙解院殿</rb><rt>みょうげいんでん</rt></ruby></persName>（<persName ref="#hosokawa-tadaoki">松向寺殿</persName>）御墓前において<ruby><rb>首尾</rb><rt>しゅび</rt></ruby>よく切腹いたし<ruby><rb>候</rb><rt>そろ</rt></ruby><ruby><rb>事</rb><rt>こと</rt></ruby>と相成り候。しかれば子孫のため事の<ruby><rb>顛末</rb><rt>てんまつ</rt></ruby>書き残しおきたく、<placeName ref="#kyoto">京都</placeName>なる弟<persName ref="#matajiro">又次郎</persName>宅において筆を取り候。</p>
+        <p><ruby><rb>某</rb><rt>それがし</rt></ruby><ruby><rb>祖父</rb><rt>そふ</rt></ruby>は<persName ref="#okitsu-kagemichi"><ruby><rb>興津右兵衛景通</rb><rt>おきつうひょうえかげみち</rt></ruby></persName>と<ruby><rb>申</rb><rt>もうし</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby>。<date when="1520"><ruby><rb>永正</rb><rt>えいしょう</rt></ruby>十一（十七）年</date><placeName ref="#suruga"><ruby><rb>駿河国</rb><rt>するがのくに</rt></ruby></placeName><placeName ref="#okitsu"><ruby><rb>興津</rb><rt>おきつ</rt></ruby></placeName>に生れ、<persName ref="#imagawa"><ruby><rb>今川治部大輔</rb><rt>いまがわじぶたいふ</rt></ruby></persName>殿に仕え、同国<placeName ref="#kiyomigaseki"><ruby><rb>清見</rb><rt>きよみ</rt></ruby>が<ruby><rb>関</rb><rt>せき</rt></ruby></placeName>に住居いたし候。<date when="1560-05-20"><ruby><rb>永禄</rb><rt>えいろく</rt></ruby>三年五月二十日</date><persName ref="#imagawa">今川</persName>殿<ruby><rb>陣亡</rb><rt>じんぼう</rt></ruby>遊ばされ<ruby><rb>候</rb><rt>そろ</rt></ruby>時、<persName ref="#okitsu-kagemichi"><ruby><rb>景通</rb><rt>かげみち</rt></ruby></persName>も<ruby><rb>御供</rb><rt>おとも</rt></ruby>いたし候。年齢四十一歳に候。<ruby><rb>法名</rb><rt>ほうみょう</rt></ruby>は<persName ref="#okitsu-kagemichi"><ruby><rb>千山宗及居士</rb><rt>せんざんそうきゅうこじ</rt></ruby></persName>と申候。</p>
+        <p>父<persName ref="#okitsu-kagekazu"><ruby><rb>才八</rb><rt>さいはち</rt></ruby></persName>は<date when="1558">永禄元年</date>出生<ruby><rb>候</rb><rt>そろ</rt></ruby>て、三歳にして<ruby><rb>怙</rb><rt>ちち</rt></ruby>を失い、母の手に養育いたされ候て人と成り候。壮年に及びて<persName ref="#okitsu-kagekazu"><ruby><rb>弥五右衛門景一</rb><rt>やごえもんかげかず</rt></ruby></persName>と<ruby><rb>名告</rb><rt>なの</rt></ruby>り、母の族なる<placeName ref="#harima"><ruby><rb>播磨国</rb><rt>はりまのくに</rt></ruby></placeName>の人<persName ref="#sano-kanjuro"><ruby><rb>佐野官十郎</rb><rt>さのかんじゅうろう</rt></ruby></persName>方に寄居いたしおり候。さてその縁故をもって<persName ref="#akamatsu"><ruby><rb>赤松左兵衛督</rb><rt>あかまつさひょうえのかみ</rt></ruby></persName>殿に仕え、<date when="1581"><ruby><rb>天正</rb><rt>てんしょう</rt></ruby>九年</date>千石を給わり候。<date when="1585-04">十三年四月</date><persName ref="#akamatsu">赤松</persName>殿<placeName ref="#awa"><ruby><rb>阿波国</rb><rt>あわのくに</rt></ruby></placeName>を<ruby><rb>併</rb><rt>あわ</rt></ruby>せ領せられ候に及びて、<persName ref="#okitsu-kagekazu"><ruby><rb>景一</rb><rt>かげかず</rt></ruby></persName>は三百石を加増せられ、<ruby><rb><placeName ref="#awa">阿波</placeName>郡代</rb><rt>あわぐんだい</rt></ruby>となり、同国<placeName ref="#itsu"><ruby><rb>渭津</rb><rt>いのつ</rt></ruby></placeName>に住居いたし、<date when="1596"><ruby><rb>慶長</rb><rt>けいちょう</rt></ruby>の初</date>まで勤続いたし<ruby><rb>候</rb><rt>そろ</rt></ruby>。<date when="1600-07">慶長五年七月</date><persName ref="#akamatsu">赤松</persName>殿<persName ref="#ishida-mitsunari"><ruby><rb>石田三成</rb><rt>いしだかずしげ</rt></ruby></persName>に<ruby><rb>荷担</rb><rt>かたん</rt></ruby>いたされ、<placeName ref="#tanba"><ruby><rb>丹波国</rb><rt>たんばのくに</rt></ruby></placeName>なる<persName ref="#onogi"><ruby><rb>小野木縫殿介</rb><rt>おのぎぬいのすけ</rt></ruby></persName>とともに<placeName ref="#tango"><ruby><rb>丹後国</rb><rt>たんごのくに</rt></ruby></placeName><placeName ref="#tanabe"><ruby><rb>田辺城</rb><rt>たなべのしろ</rt></ruby></placeName>を攻められ候。当時<placeName ref="#tanabe">田辺城</placeName>には<persName ref="#hosokawa-tadaoki"><ruby><rb>松向寺</rb><rt>しょうこうじ</rt></ruby>殿</persName><ruby><rb><persName ref="#hosokawa-tadaoki">三斎</persName><persName ref="#hosokawa-tadaoki">忠興</persName>公</rb><rt>さんさいただおきこう</rt></ruby><ruby><rb>御立籠</rb><rt>おんたてこも</rt></ruby>り遊ばされおり<ruby><rb>候</rb><rt>そろ</rt></ruby>ところ、<persName ref="#ieyasu">神君</persName><persName ref="#uesugi-kagekatsu"><ruby><rb>上杉景勝</rb><rt>うえすぎかげかつ</rt></ruby></persName>を討たせ給うにより、<persName ref="#hosokawa-tadaoki">三斎</persName>公も随従遊ばされ、<ruby><rb>跡</rb><rt>あと</rt></ruby>には<ruby><rb><persName ref="#hosokawa-yusai">泰勝院殿</persName><persName ref="#hosokawa-yusai">幽斎</persName><persName ref="#hosokawa-yusai">藤孝</persName></rb><rt>たいしょういんでんゆうさいふじたか</rt></ruby>公御留守遊ばされ候。<persName ref="#okitsu-kagekazu">景一</persName>は<placeName ref="#kyoto">京都</placeName><persName ref="#akamatsu">赤松</persName>殿<ruby><rb>邸</rb><rt>やしき</rt></ruby>にありし時、<persName ref="#karasumaru-mitsuhiro"><ruby><rb>烏丸光広</rb><rt>からすまるみつひろ</rt></ruby></persName>卿と<ruby><rb>相識</rb><rt>そうしき</rt></ruby>に相成りおり<ruby><rb>候</rb><rt>そろ</rt></ruby>。これは<persName ref="#karasumaru-mitsuhiro">光広</persName>卿が<persName ref="#hosokawa-yusai">幽斎</persName>公和歌の御弟子にて、<ruby><rb>嫡子</rb><rt>ちゃくし</rt></ruby><persName ref="#karasumaru-mitsukata"><ruby><rb>光賢</rb><rt>みつかた</rt></ruby></persName>卿に<persName ref="#hosokawa-tadaoki">松向寺殿</persName>の御息女<ruby><rb><persName ref="#man-hime">万姫</persName>君</rb><rt>まんひめぎみ</rt></ruby>を<ruby><rb>妻</rb><rt>めあわ</rt></ruby>せ居られ<ruby><rb>候</rb><rt>そろ</rt></ruby><ruby><rb>故</rb><rt>ゆえ</rt></ruby>に候。さて<persName ref="#okitsu-kagekazu">景一</persName><persName ref="#karasumaru-mitsuhiro">光広</persName>卿を<ruby><rb>介</rb><rt>かい</rt></ruby>して御当家御父子とも御心安く相成りおり候。<ruby><rb><placeName ref="#tanabe">田辺</placeName>攻</rb><rt>たなべぜめ</rt></ruby>の時、<placeName ref="#kanto">関東</placeName>に<ruby><rb>御出</rb><rt>おんいで</rt></ruby>遊ばされ候<persName ref="#hosokawa-tadaoki">三斎</persName>公は、<persName ref="#okitsu-kagekazu">景一</persName>が<ruby><rb>外戚</rb><rt>がいせき</rt></ruby>の従弟たる<persName ref="#mori-sanemon">森三右衛門</persName>を使に<placeName ref="#tanabe">田辺</placeName>へ差立てられ候。<persName ref="#mori-sanemon">森</persName>は<placeName ref="#tanabe">田辺</placeName>に<ruby><rb>着</rb><rt>ちゃく</rt></ruby>いたし、<persName ref="#okitsu-kagekazu">景一</persName>に面会して<ruby><rb>御旨</rb><rt>おんむね</rt></ruby>を伝え、<persName ref="#okitsu-kagekazu">景一</persName>はまた赤松家の<ruby><rb>物頭</rb><rt>ものがしら</rt></ruby><persName ref="#ido-kameemon"><ruby><rb>井門亀右衛門</rb><rt>いかどかめえもん</rt></ruby></persName>と<ruby><rb>謀</rb><rt>はか</rt></ruby>り、<placeName ref="#tanabe">田辺城</placeName>の<ruby><rb><placeName ref="#myoanmaru">妙庵丸</placeName>櫓</rb><rt>みょうあんまるやぐら</rt></ruby>へ<ruby><rb>矢文</rb><rt>やぶみ</rt></ruby>を射掛け候。翌朝<persName ref="#okitsu-kagekazu">景一</persName>は<persName ref="#mori-sanemon">森</persName>を斥候の中に交ぜて陣所を出だし<ruby><rb>遣</rb><rt>や</rt></ruby>り候。<persName ref="#mori-sanemon">森</persName>は首尾よく城内に入り、<persName ref="#hosokawa-yusai">幽斎</persName>公の御親書を得て、翌晩<placeName ref="#kanto">関東</placeName>へ出立いたし候。この<ruby><rb>歳</rb><rt>とし</rt></ruby>赤松家滅亡せられ候により、<persName ref="#okitsu-kagekazu">景一</persName>は<persName ref="#mori-sanemon">森</persName>の案内にて<placeName ref="#buzen"><ruby><rb>豊前国</rb><rt>ぶぜんのくに</rt></ruby></placeName>へ参り、<date when="1601">慶長六年</date>御当家に<ruby><rb>召抱</rb><rt>めしかか</rt></ruby>えられ<ruby><rb>候</rb><rt>そろ</rt></ruby>。<date when="1619"><ruby><rb>元和</rb><rt>げんな</rt></ruby>五年</date>御当代<persName ref="#hosokawa-mitsunao"><ruby><rb>光尚</rb><rt>みつひさ</rt></ruby></persName>公御誕生遊ばされ、御幼名<ruby><rb><persName ref="#hosokawa-mitsunao">六丸</persName>君</rb><rt>ろくまるぎみ</rt></ruby>と申候。<persName ref="#okitsu-kagekazu">景一</persName>は<persName ref="#hosokawa-mitsunao">六丸</persName>君<ruby><rb>御附</rb><rt>おつき</rt></ruby>と相成り候。<date when="1621"><ruby><rb>元和</rb><rt>げんな</rt></ruby>七年</date><persName ref="#hosokawa-tadaoki">三斎</persName>公御<ruby><rb>致仕</rb><rt>ちし</rt></ruby>遊ばされ候時、<persName ref="#okitsu-kagekazu">景一</persName>も<ruby><rb>剃髪</rb><rt>ていはつ</rt></ruby>いたし、<ruby><rb>宗也</rb><rt>そうや</rt></ruby>と<ruby><rb>名告</rb><rt>なの</rt></ruby>り候。<date when="1632-12-09"><ruby><rb>寛永</rb><rt>かんえい</rt></ruby>九年十二月九日</date>御先代<ruby><rb><persName ref="#hosokawa-tadatoshi">妙解院殿</persName><persName ref="#hosokawa-tadatoshi">忠利</persName>公</rb><rt>みょうげいんでんただとしこう</rt></ruby><placeName ref="#higo"><ruby><rb>肥後</rb><rt>ひご</rt></ruby></placeName>へ御入国遊ばされ候時、<persName ref="#okitsu-kagekazu">景一</persName>も<ruby><rb>御供</rb><rt>おんとも</rt></ruby>いたし候。<date when="1641-03-17">十八年三月十七日</date>に<persName ref="#hosokawa-tadatoshi">妙解院殿</persName>卒去遊ばされ、次いで<date when="1641-09-02">九月二日</date><persName ref="#okitsu-kagekazu">景一</persName>も病死いたし候。<ruby><rb>享年</rb><rt>きょうねん</rt></ruby>八十四歳に候。</p>
+        <p>兄<persName ref="#okitsu-kazutomo">九郎兵衛<ruby><rb>一友</rb><rt>かずとも</rt></ruby></persName>は<persName ref="#okitsu-kagekazu">景一</persName>が嫡子にして、父につきて<placeName ref="#buzen"><ruby><rb>豊前</rb><rt>ぶぜん</rt></ruby></placeName>へ参り、<date when="1612">慶長十七年</date><persName ref="#hosokawa-tadaoki">三斎</persName>公に召しいだされ、<ruby><rb>御次勤</rb><rt>おんつぎづとめ</rt></ruby><ruby><rb>仰</rb><rt>おおせ</rt></ruby>つけられ、後病気により<ruby><rb>外様勤</rb><rt>とざまづとめ</rt></ruby>と相成り候。<persName ref="#hosokawa-tadatoshi">妙解院殿</persName>の<ruby><rb>御代</rb><rt>おんだい</rt></ruby>に至り、<date when="1637">寛永十四年</date>冬<ruby><rb><placeName ref="#shimabara">島原</placeName>攻</rb><rt>しまばらぜめ</rt></ruby>の御供いたし、翌<date when="1638-02-27">十五年二月二十七日</date><persName ref="#kaneda-yaichiemon"><ruby><rb>兼田弥一右衛門</rb><rt>かねたやいちえもん</rt></ruby></persName>とともに、御当家<ruby><rb>攻口</rb><rt>せめくち</rt></ruby>の一番乗と名告り、海に臨める城壁の上にて陣亡いたし候。法名を<persName ref="#okitsu-kazutomo"><ruby><rb>義心英立居士</rb><rt>ぎしんえいりゅうこじ</rt></ruby></persName>と<ruby><rb>申</rb><rt>もうし</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby>。</p>
+        <p><ruby><rb>某</rb><rt>それがし</rt></ruby>は<date when="1594"><ruby><rb>文禄</rb><rt>ぶんろく</rt></ruby>四（三）年</date><persName ref="#okitsu-kagekazu">景一</persName>が二男に生れ、幼名<persName ref="#okitsu-kageyoshi">才助</persName>と申候。七歳の時父につきて<placeName ref="#buzen">豊前国</placeName><placeName ref="#kokura">小倉</placeName>へ参り、<date when="1612">慶長十七年</date>十九歳にて<persName ref="#hosokawa-tadaoki">三斎</persName>公に召しいだされ候。<date when="1621">元和七年</date><persName ref="#hosokawa-tadaoki">三斎</persName>公致仕遊ばされ候時、父も剃髪いたし<ruby><rb>候</rb><rt>そうら</rt></ruby>えば、某二十八歳にて<persName ref="#okitsu-kageyoshi"><ruby><rb>弥五右衛門景吉</rb><rt>やごえもんかげよし</rt></ruby></persName>と名告り、<persName ref="#hosokawa-tadaoki">三斎</persName>公の御供いたし候て、<placeName ref="#buzen-okitsu">豊前国興津</placeName>に参り候。</p>
+        <p><date when="1624-05">寛永元年五月</date><ruby><rb><placeName ref="#annan">安南</placeName>船</rb><rt>あんなんせん</rt></ruby><placeName ref="#nagasaki">長崎</placeName>に到着候時、<persName ref="#hosokawa-tadaoki">三斎</persName>公は<ruby><rb>御薙髪</rb><rt>ごていはつ</rt></ruby>遊ばされ候てより三年目なりしが、<ruby><rb>御茶事</rb><rt>おんちゃじ</rt></ruby>に<ruby><rb>御用</rb><rt>おんもち</rt></ruby>いなされ候珍らしき品買い求め候様<ruby><rb>仰</rb><rt>おおせ</rt></ruby>含められ、<ruby><rb>相役</rb><rt>あいやく</rt></ruby><persName ref="#yokota-seibei">横田清兵衛</persName>と両人にて、<placeName ref="#nagasaki">長崎</placeName>へ出向き候。幸なる事には異なる<ruby><rb>伽羅</rb><rt>きゃら</rt></ruby>の大木渡来いたしおり候。<ruby><rb>然</rb><rt>しか</rt></ruby>るところその伽羅に<ruby><rb>本木</rb><rt>もとき</rt></ruby>と<ruby><rb>末木</rb><rt>うらき</rt></ruby>との二つありて、はるばる<placeName ref="#sendai">仙台</placeName>より<ruby><rb>差下</rb><rt>さしくだ</rt></ruby>され候<persName ref="#date-masamune"><ruby><rb>伊達権中納言</rb><rt>だてごんちゅうなごん</rt></ruby></persName>殿の役人ぜひとも本木の方を取らんとし、某も同じ本木に望を掛け互にせり合い、次第に値段をつけ<ruby><rb>上</rb><rt>あ</rt></ruby>げ候。</p>
+        <p>その時<persName ref="#yokota-seibei">横田</persName><ruby><rb>申</rb><rt>もうし</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby>は、たとい主命なりとも、<ruby><rb>香木</rb><rt>こうぼく</rt></ruby>は無用の<ruby><rb>翫物</rb><rt>がんぶつ</rt></ruby>に<ruby><rb>有之</rb><rt>これあり</rt></ruby>、過分の大金を<ruby><rb>擲</rb><rt>なげう</rt></ruby>ち<ruby><rb>候</rb><rt>そろ</rt></ruby><ruby><rb>事</rb><rt>こと</rt></ruby>は<ruby><rb>不可然</rb><rt>しかるべからず</rt></ruby>、<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>本木を伊達家に譲り、末木を買求めたき<ruby><rb>由</rb><rt>よし</rt></ruby>申候。<ruby><rb>某</rb><rt>それがし</rt></ruby>申候は、某は左様には存じ申さず、主君の申つけられ候は、珍らしき品を買い求め参れとの事なるに、このたび渡来<ruby><rb>候</rb><rt>そろ</rt></ruby>品の中にて、第一の珍物はかの伽羅に有之、その木に本末あれば、本木の方が<ruby><rb>尤物</rb><rt>ゆうぶつ</rt></ruby>中の尤物たること<ruby><rb>勿論</rb><rt>もちろん</rt></ruby>なり、それを手に入れてこそ主命を果すに当るべけれ、<ruby><rb>伊達家</rb><rt>だてけ</rt></ruby>の伊達を増長<ruby><rb>致</rb><rt>いた</rt></ruby>させ、本木を譲り<ruby><rb>候</rb><rt>そろ</rt></ruby>ては、細川家の<ruby><rb>流</rb><rt>ながれ</rt></ruby>を<ruby><rb>涜</rb><rt>けが</rt></ruby>す事と相成り申すべくと申<ruby><rb>候</rb><rt>そろ</rt></ruby>。<persName ref="#yokota-seibei">横田</persName><ruby><rb>嘲笑</rb><rt>あざわら</rt></ruby>いて、それは<ruby><rb>力瘤</rb><rt>ちからこぶ</rt></ruby>の入れどころが相違せり、一国一城を取るか<ruby><rb>遣</rb><rt>や</rt></ruby>るかと申す場合ならば、<ruby><rb>飽</rb><rt>あ</rt></ruby>くまで伊達家に<ruby><rb>楯</rb><rt>たて</rt></ruby>をつくがよろしからん、高が四畳半の<ruby><rb>炉</rb><rt>ろ</rt></ruby>にくべらるる木の切れならずや、それに大金を<ruby><rb>棄</rb><rt>す</rt></ruby>てんこと存じも寄らず、主君御自身にてせり合われ<ruby><rb>候</rb><rt>そうら</rt></ruby>わば、臣下として<ruby><rb>諫</rb><rt>いさ</rt></ruby>め<ruby><rb>止</rb><rt>とど</rt></ruby>め申すべき<ruby><rb>儀</rb><rt>ぎ</rt></ruby>なり、たとい主君がしいて本木を手に入れたく<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>されんとも、それを遂げさせ申す事、<ruby><rb>阿諛便佞</rb><rt>あゆべんねい</rt></ruby>の<ruby><rb>所為</rb><rt>しょい</rt></ruby>なるべしと申<ruby><rb>候</rb><rt>そろ</rt></ruby>。当時三十一歳の<ruby><rb>某</rb><rt>それがし</rt></ruby>、この<ruby><rb>詞</rb><rt>ことば</rt></ruby>を聞きて立腹致し候えども、なお忍んで申候は、それはいかにも賢人らしき<ruby><rb>申条</rb><rt>もうしじょう</rt></ruby>なり、さりながら某はただ主命と<ruby><rb>申</rb><rt>もうす</rt></ruby><ruby><rb>物</rb><rt>もの</rt></ruby>が大切なるにて、主君あの城を落せと<ruby><rb>仰</rb><rt>おお</rt></ruby>せられ候わば、鉄壁なりとも乗り取り申すべく、あの首を取れと仰せられ候わば、鬼神なりとも討ち果たし申すべくと同じく、珍らしき品を求め参れと仰せられ候えば、この上なき名物を求めん所存なり、主命たる以上は、人倫の道に<ruby><rb>悖</rb><rt>もと</rt></ruby>り候事は格別、その事柄に立入り候批判がましき儀は無用なりと申候。<persName ref="#yokota-seibei">横田</persName>いよいよ<ruby><rb>嘲笑</rb><rt>あざわら</rt></ruby>いて、お手前とてもその通り道に<ruby><rb>悖</rb><rt>もと</rt></ruby>りたる事はせぬと申さるるにあらずや、これが武具などならば、大金に<ruby><rb>代</rb><rt>か</rt></ruby>うとも惜しからじ、香木に不相応なる<ruby><rb>価</rb><rt>あたい</rt></ruby>をいださんとせらるるは<ruby><rb>若輩</rb><rt>じゃくはい</rt></ruby>の心得ちがいなりと申候。某申候は、武具と香木との相違は某若輩ながら心得居る、<persName ref="#hosokawa-yusai"><ruby><rb>泰勝院殿</rb><rt>たいしょういんでん</rt></ruby></persName>の<ruby><rb>御代</rb><rt>おんだい</rt></ruby>に、<persName ref="#gamo"><ruby><rb>蒲生</rb><rt>がもう</rt></ruby></persName>殿申され<ruby><rb>候</rb><rt>そろ</rt></ruby>は、細川家には結構なる御道具あまた<ruby><rb>有之</rb><rt>これある</rt></ruby><ruby><rb>由</rb><rt>よし</rt></ruby>なれば拝見に<ruby><rb>罷出</rb><rt>まかりい</rt></ruby>ずべしとの事なり、さて約束せられし当日に相成り、<persName ref="#gamo">蒲生</persName>殿参られ<ruby><rb>候</rb><rt>そろ</rt></ruby>に、<persName ref="#hosokawa-yusai">泰勝院殿</persName>は<ruby><rb>甲冑</rb><rt>かっちゅう</rt></ruby>刀剣<ruby><rb>弓</rb><rt>ゆみ</rt></ruby><ruby><rb>鎗</rb><rt>やり</rt></ruby>の類を<ruby><rb>陳</rb><rt>つら</rt></ruby>ねて御見せなされ、<persName ref="#gamo">蒲生</persName>殿意外に<ruby><rb>思</rb><rt>おぼ</rt></ruby>されながら、一応御覧あり、さて実は茶器拝見致したく参上したる次第なりと申され、<persName ref="#hosokawa-yusai">泰勝院殿</persName>御笑いなされ、先きには道具と<ruby><rb>仰</rb><rt>おお</rt></ruby>せられ候故、武家の表道具を御覧に入れたり、茶器ならば、それも少々持合せ候とて、はじめて<ruby><rb>御取</rb><rt>おんと</rt></ruby>り<ruby><rb>出</rb><rt>いだ</rt></ruby>しなされし由、御当家におかせられては、代々武道の御心掛深くおわしまし、かたがた歌道茶事までも<ruby><rb>堪能</rb><rt>たんのう</rt></ruby>に渡らせらるるが、天下に比類なき所ならずや、茶儀は無用の虚礼なりと申さば、国家の大礼、先祖の<ruby><rb>祭祀</rb><rt>さいし</rt></ruby>も<ruby><rb>総</rb><rt>すべ</rt></ruby>て虚礼なるべし、<ruby><rb>我等</rb><rt>われら</rt></ruby>この<ruby><rb>度</rb><rt>たび</rt></ruby>仰を受けたるは茶事に御用に立つべき珍らしき品を求むる<ruby><rb>外</rb><rt>ほか</rt></ruby>他事なし、これが主命なれば、身命に<ruby><rb>懸</rb><rt>か</rt></ruby>けても果さでは相成らず、貴殿が香木に大金を出す事不相応なりと思され<ruby><rb>候</rb><rt>そろ</rt></ruby>は、その道の御心得なき<ruby><rb>故</rb><rt>ゆえ</rt></ruby>、一徹に左様思わるるならんと申候。<persName ref="#yokota-seibei">横田</persName>聞きも果てず、いかにも某は茶事の心得なし、一徹なる<ruby><rb>武辺者</rb><rt>ぶへんもの</rt></ruby>なり、諸芸に堪能なるお手前の表芸が見たしと申すや否や、つと立ち上がり、<ruby><rb>脇差</rb><rt>わきざし</rt></ruby>を抜きて投げつけ候。某は身をかわして<ruby><rb>避</rb><rt>よ</rt></ruby>け、刀は<ruby><rb>違棚</rb><rt>ちがいだな</rt></ruby>の下なる刀掛に掛けありし故、飛びしざりて刀を取り抜き合せ、ただ一打に<persName ref="#yokota-seibei">横田</persName>を討ち果たし候。</p>
+        <p>かくて某は即時に<ruby><rb>伽羅</rb><rt>きゃら</rt></ruby>の本木を買い取り、<placeName ref="#nakatsu-gun"><ruby><rb>仲津</rb><rt>なかつ</rt></ruby></placeName>へ持ち帰り候。伊達家の役人は<ruby><rb>是非</rb><rt>ぜひ</rt></ruby>なく末木を買い取り、<placeName ref="#sendai">仙台</placeName>へ持ち帰り候。某は香木を<persName ref="#hosokawa-tadaoki">三斎</persName>公に参らせ、さて御願い申候は、主命大切と心得候ためとは申ながら、<ruby><rb>御役</rb><rt>おんやく</rt></ruby>に立つべき<ruby><rb>侍</rb><rt>さむらい</rt></ruby>一人討ち果たし候段、恐れ入り候えば、切腹<ruby><rb>仰附</rb><rt>おおせつ</rt></ruby>けられたくと申候。<persName ref="#hosokawa-tadaoki">三斎</persName>公<ruby><rb>聞召</rb><rt>きこしめ</rt></ruby>され、某に仰せられ候はその方が申条一々もっとも<ruby><rb>至極</rb><rt>しごく</rt></ruby>せり、たとい香木は<ruby><rb>貴</rb><rt>とうと</rt></ruby>からずとも、この<ruby><rb>方</rb><rt>ほう</rt></ruby>が求め参れと申しつけたる<ruby><rb>珍品</rb><rt>ちんぴん</rt></ruby>に相違なければ大切と心得候事当然なり、総て功利の念を<ruby><rb>以</rb><rt>もっ</rt></ruby>て物を<ruby><rb>視</rb><rt>み</rt></ruby><ruby><rb>候</rb><rt>そうら</rt></ruby>わば、世の中に<ruby><rb>尊</rb><rt>とうと</rt></ruby>き物は無くなるべし、ましてやその方が持ち帰り候伽羅は早速<ruby><rb>焚</rb><rt>た</rt></ruby>き試み候に、<ruby><rb>希代</rb><rt>きたい</rt></ruby>の名木なれば「聞く度に珍らしければ<ruby><rb>郭公</rb><rt>ほととぎす</rt></ruby>いつも<ruby><rb>初音</rb><rt>はつね</rt></ruby>の<ruby><rb>心地</rb><rt>ここち</rt></ruby>こそすれ」と申す古歌に<ruby><rb>本</rb><rt>もと</rt></ruby>づき、銘を初音とつけたり、かほどの品を求め帰り候事<ruby><rb>天晴</rb><rt>あっぱれ</rt></ruby>なり、ただし<ruby><rb>討</rb><rt>う</rt></ruby>たれ<ruby><rb>候</rb><rt>そろ</rt></ruby><persName ref="#yokota-seibei">横田清兵衛</persName>が子孫<ruby><rb>遺恨</rb><rt>いこん</rt></ruby>を<ruby><rb>含</rb><rt>ふく</rt></ruby>みいては相成らずと仰せられ候。かくて直ちに<persName ref="#yokota-seibei">清兵衛</persName>が嫡子を召され、御前において<ruby><rb>盃</rb><rt>さかずき</rt></ruby>を申付けられ、某は<ruby><rb>彼者</rb><rt>かのもの</rt></ruby>と互に意趣を存ずまじき<ruby><rb>旨</rb><rt>むね</rt></ruby><ruby><rb>誓言</rb><rt>せいごん</rt></ruby>いたし候。しかるに横田家の者どもとかく異志を存する由相聞え、ついに<placeName ref="#chikuzen"><ruby><rb>筑前国</rb><rt>ちくぜんのくに</rt></ruby></placeName>へ<ruby><rb>罷越</rb><rt>まかりこ</rt></ruby>し<ruby><rb>候</rb><rt>そろ</rt></ruby>。某へは<persName ref="#hosokawa-tadaoki">三斎</persName>公御名<persName ref="#hosokawa-tadaoki"><ruby><rb>忠興</rb><rt>ただおき</rt></ruby></persName>の<ruby><rb>興</rb><rt>おき</rt></ruby>の字を<ruby><rb>賜</rb><rt>たま</rt></ruby>わり、沖津を興津と相改め<ruby><rb>候</rb><rt>そろ</rt></ruby><ruby><rb>様</rb><rt>よう</rt></ruby><ruby><rb>御沙汰</rb><rt>ごさた</rt></ruby>有之候。</p>
+        <p>これより二年目、<date when="1626-09-06">寛永三年九月<ruby><rb>六日</rb><rt>むいか</rt></ruby></date><ruby><rb>主上</rb><rt>しゅじょう</rt></ruby><placeName ref="#nijo">二条</placeName>の<ruby><rb>御城</rb><rt>おんしろ</rt></ruby>へ行幸遊ばされ<persName ref="#hosokawa-tadatoshi">妙解院殿</persName>へかの名香を御所望<ruby><rb>有之</rb><rt>これあり</rt></ruby>すなわちこれを<ruby><rb>献</rb><rt>けん</rt></ruby>ぜらるる、主上<ruby><rb>叡感</rb><rt>えいかん</rt></ruby>有りて「たぐひありと<ruby><rb>誰</rb><rt>たれ</rt></ruby>かはいはむ<ruby><rb>末</rb><rt>すゑ</rt></ruby><ruby><rb>匀</rb><rt>にほ</rt></ruby>ふ秋より後のしら菊の花」と申す古歌の心にて、白菊と<ruby><rb>名附</rb><rt>なづ</rt></ruby>けさせ<ruby><rb>給</rb><rt>たもう</rt></ruby><ruby><rb>由</rb><rt>よし</rt></ruby>承り候。某が買い求め候香木、<ruby><rb>畏</rb><rt>かしこ</rt></ruby>くも至尊の御賞美を<ruby><rb>被</rb><rt>こうむ</rt></ruby>り、御当家の<ruby><rb>誉</rb><rt>ほまれ</rt></ruby>と相成り候事、存じ寄らざる<ruby><rb>儀</rb><rt>ぎ</rt></ruby>と存じ、落涙候事に候。</p>
+        <p>その後某は御先代<persName ref="#hosokawa-tadatoshi">妙解院殿</persName>よりも出格の御引立を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>り、<date when="1632">寛永九年</date><ruby><rb>御国替</rb><rt>おんくにがえ</rt></ruby>の<ruby><rb>砌</rb><rt>みぎり</rt></ruby>には、<persName ref="#hosokawa-tadaoki">三斎</persName>公の御居城<placeName ref="#yatsushiro"><ruby><rb>八代</rb><rt>やつしろ</rt></ruby></placeName>に<ruby><rb>相詰</rb><rt>あいつ</rt></ruby>め候事と相成り、あまつさえ殿御上京の御供にさえ<ruby><rb>召具</rb><rt>めしぐ</rt></ruby>せられ<ruby><rb>候</rb><rt>そろ</rt></ruby>。しかるところ<date when="1637">寛永一四年</date><placeName ref="#shimabara">島原</placeName>征伐の事<ruby><rb>有之</rb><rt>これあり</rt></ruby>候。某をば<persName ref="#hosokawa-tadatoshi">妙解院殿</persName>御弟君<ruby><rb>中務少輔殿<persName ref="#hosokawa-tatsutaka">立孝</persName>公</rb><rt>なかつかさしょうゆうどのたつたかこう</rt></ruby>の<ruby><rb>御旗本</rb><rt>おんはたもと</rt></ruby>に加えられ<ruby><rb>御幟</rb><rt>おんのぼり</rt></ruby>を御預けなされ候。<date when="1638-02-22">十五年二月廿二日</date>御当家<ruby><rb>御攻口</rb><rt>おんせめくち</rt></ruby>にて、御幟を一番に入れ候時、銃丸左の<ruby><rb>股</rb><rt>もも</rt></ruby>に<ruby><rb>中</rb><rt>あた</rt></ruby>り、ようよう引き取り候。その時某四十五歳に候。<ruby><rb>手創</rb><rt>てきず</rt></ruby><ruby><rb>平癒</rb><rt>へいゆ</rt></ruby>候て後、某は<date when="1639">十六年</date>に<ruby><rb><placeName ref="#edo">江戸</placeName>詰</rb><rt>えどづめ</rt></ruby>仰つけられ<ruby><rb>候</rb><rt>そろ</rt></ruby>。</p>
+        <p><date when="1641">寛永十八年</date><persName ref="#hosokawa-tadatoshi">妙解院殿</persName>存じ寄らざる御病気にて、御父上に<ruby><rb>先立</rb><rt>さきだち</rt></ruby>、御卒去遊ばされ、当代<ruby><rb>肥後守殿<persName ref="#hosokawa-mitsunao">光尚</persName></rb><rt>ひごのかみどのみつひさ</rt></ruby>公の<ruby><rb>御代</rb><rt>みよ</rt></ruby>と相成り候。同年<date when="1641-09-02">九月二日</date>には父<persName ref="#okitsu-kagekazu">弥五右衛門景一</persName>死去いたし候。次いで<date when="1645"><ruby><rb>正保</rb><rt>しょうほう</rt></ruby>二年</date><persName ref="#hosokawa-tadaoki">三斎</persName>公も御卒去遊ばされ候。これより<ruby><rb>先</rb><rt>さ</rt></ruby>き<date when="1636">寛永十三年</date>には、同じ香木の本末を分けて珍重なされ候<persName ref="#date-masamune">仙台中納言</persName>殿さえ、<placeName ref="#shorinjo"><ruby><rb>少林城</rb><rt>わかばやしじょう</rt></ruby></placeName>において<ruby><rb>御薨去</rb><rt>ごこうきょ</rt></ruby>なされ<ruby><rb>候</rb><rt>そろ</rt></ruby>。かの末木の香は「世の中の憂きを身に積む<ruby><rb>柴舟</rb><rt>しばふね</rt></ruby>やたかぬ先よりこがれ<ruby><rb>行</rb><rt>ゆく</rt></ruby>らん」と申す歌の心にて、柴舟と銘し、御珍蔵なされ候由に候。</p>
+        <p><ruby><rb>某</rb><rt>それがし</rt></ruby>つらつら先考御当家に<ruby><rb>奉仕</rb><rt>つかえたてまつり</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby>てより以来の事を思うに、父兄ことごとく出格の御引立を<ruby><rb>蒙</rb><rt>こうむ</rt></ruby>りしは言うも<ruby><rb>更</rb><rt>さら</rt></ruby>なり、某一身に取りては、<placeName ref="#nagasaki">長崎</placeName>において相役<persName ref="#yokota-seibei">横田清兵衛</persName>を討ち果たし候時、<persName ref="#hosokawa-tadaoki">松向寺殿</persName>一命を御救助下され、この<ruby><rb>再造</rb><rt>さいぞう</rt></ruby>の大恩ある主君御卒去遊ばされ候に、某いかでか存命いたさるべきと決心いたし候。</p>
+        <p>先年<persName ref="#hosokawa-tadatoshi">妙解院殿</persName>御卒去の<ruby><rb>砌</rb><rt>みぎり</rt></ruby>には、十九人の者ども<ruby><rb>殉死</rb><rt>じゅんし</rt></ruby>いたし、また一昨年<persName ref="#hosokawa-tadaoki">松向寺殿</persName>御卒去の砌にも、<persName ref="#minoda-heishichi"><ruby><rb>簑田平七正元</rb><rt>みのたへいしちまさもと</rt></ruby></persName>、<persName ref="#ono-denbei"><ruby><rb>小野伝兵衛友次</rb><rt>おのでんべえともつぐ</rt></ruby></persName>、<persName ref="#kuno-yoemon"><ruby><rb>久野与右衛門宗直</rb><rt>くのよえもんむねなお</rt></ruby></persName>、<ruby><rb><persName ref="#hosenin">宝泉院勝延</persName>行者</rb><rt>ほうせんいんしょうえんぎょうじゃ</rt></ruby>の四人直ちに殉死いたし候。<persName ref="#minoda-heishichi">簑田</persName>は<ruby><rb>曾祖父</rb><rt>そうそふ</rt></ruby><persName ref="#minoda-izumi"><ruby><rb>和泉</rb><rt>いずみ</rt></ruby></persName>と申す者<persName ref="#sagara"><ruby><rb>相良遠江守</rb><rt>さがらとおとうみのかみ</rt></ruby></persName>殿の家老にて、主とともに陣亡し、祖父<persName ref="#minoda-wakasa"><ruby><rb>若狭</rb><rt>わかさ</rt></ruby></persName>、父<persName ref="#minoda-ushinosuke">牛之助</persName><ruby><rb>流浪</rb><rt>るろう</rt></ruby>せしに、<persName ref="#minoda-heishichi">平七</persName>は<persName ref="#hosokawa-tadaoki">三斎</persName>公に五百石にて召し<ruby><rb>出</rb><rt>いだ</rt></ruby>されしものに候。<persName ref="#minoda-heishichi">平七</persName>は二十三歳にて切腹し、<ruby><rb>小姓</rb><rt>こしょう</rt></ruby><persName ref="#isobe-chogoro">磯部長五郎</persName><ruby><rb>介錯</rb><rt>かいしゃく</rt></ruby>いたし候。<persName ref="#ono-denbei">小野</persName>は<placeName ref="#tango">丹後国</placeName>にて祖父<persName ref="#imayasu"><ruby><rb>今安太郎左衛門</rb><rt>いまやすたろざえもん</rt></ruby></persName>の<ruby><rb>代</rb><rt>だい</rt></ruby>に召し出されしものなるが、父<persName ref="#tanaka-jinzaemon">田中<ruby><rb>甚左衛門</rb><rt>じんざえもん</rt></ruby></persName><ruby><rb>御旨</rb><rt>おんむね</rt></ruby>に<ruby><rb>忤</rb><rt>さか</rt></ruby>い、<placeName ref="#edo">江戸</placeName>御邸より<ruby><rb>逐電</rb><rt>ちくてん</rt></ruby>したる時、<ruby><rb>御近習</rb><rt>ごきんじゅ</rt></ruby>を勤めいたる<persName ref="#ono-denbei">伝兵衛</persName>に、父を尋ね出して参れ、もし尋ね出さずして帰り候わば、父の代りに処刑いたすべしと<ruby><rb>仰</rb><rt>おお</rt></ruby>せられ、<persName ref="#ono-denbei">伝兵衛</persName>諸国を遍歴せしに廻り合わざる趣にて<ruby><rb>罷</rb><rt>まか</rt></ruby>り帰り候。<persName ref="#hosokawa-tadaoki">三斎</persName>公その時死罪を顧みずして帰参候は殊勝なりと仰せられ候て、助命遊ばされ候。<persName ref="#ono-denbei">伝兵衛</persName>はこの恩義を思<ruby><rb>候</rb><rt>そろ</rt></ruby>て、切腹いたし候。<ruby><rb>介錯</rb><rt>かいしゃく</rt></ruby>は<persName ref="#isoda-juro"><ruby><rb>磯田</rb><rt>いそだ</rt></ruby>十郎</persName>に候。<persName ref="#kuno-yoemon">久野</persName>は<placeName ref="#tango">丹後</placeName>の国において<persName ref="#hosokawa-yusai">幽斎</persName>公に召し出され、<placeName ref="#tanabe">田辺</placeName><ruby><rb>御籠城</rb><rt>ごろうじょう</rt></ruby>の時功ありて、<ruby><rb>新知</rb><rt>しんち</rt></ruby>百五十石<ruby><rb>賜</rb><rt>たま</rt></ruby>わり候者に候。<persName ref="#yano-matasaburo">矢野又三郎</persName>介錯いたし候。<persName ref="#hosenin">宝泉院</persName>は<ruby><rb>陣貝吹</rb><rt>じんがいふき</rt></ruby>の<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>にて、<persName ref="#tsutsui-junkei"><ruby><rb>筒井順慶</rb><rt>つついじゅんけい</rt></ruby></persName>の弟<persName ref="#ishii-yoshimura"><ruby><rb>石井備後守吉村</rb><rt>いしいびんごのかみよしむら</rt></ruby></persName>が子に<ruby><rb>候</rb><rt>そろ</rt></ruby>。介錯は<ruby><rb>入魂</rb><rt>じっこん</rt></ruby>の山伏の由に候。</p>
+        <p><ruby><rb>某</rb><rt>それがし</rt></ruby>はこれ<ruby><rb>等</rb><rt>ら</rt></ruby>の事を<ruby><rb>見聞</rb><rt>みきき</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby>につけ、いかにも<ruby><rb>羨</rb><rt>うらや</rt></ruby>ましく<ruby><rb>技癢</rb><rt>ぎよう</rt></ruby>に<ruby><rb>堪</rb><rt>た</rt></ruby>えず<ruby><rb>候</rb><rt>そうら</rt></ruby>えども、<placeName ref="#edo">江戸</placeName>詰御留守居の御用残りおり、他人には始末相成りがたく、<ruby><rb>空</rb><rt>むな</rt></ruby>しく月日の立つに任せ候。<ruby><rb>然</rb><rt>しか</rt></ruby>るところ<persName ref="#hosokawa-tadaoki">松向寺殿</persName><ruby><rb>御遺骸</rb><rt>ごいがい</rt></ruby>は<placeName ref="#yatsushiro">八代</placeName>なる<placeName ref="#taishoin">泰勝院</placeName>にて<ruby><rb>荼毗</rb><rt>だび</rt></ruby>せられしに、<ruby><rb>御遺言</rb><rt>ごゆいごん</rt></ruby>により、去年<date when="1646-01-11">正月十一日</date><placeName ref="#taishoin">泰勝院</placeName><persName ref="#senyo">専誉</persName><ruby><rb>御遺骨</rb><rt>ごゆいこつ</rt></ruby>を<placeName ref="#kyoto">京都</placeName>へ護送いたし候。御供には<persName ref="#nagaoka-kagenori"><ruby><rb>長岡河内景則</rb><rt>ながおかかわちかげのり</rt></ruby></persName>、<persName ref="#kaku-ietsugu"><ruby><rb>加来作左衛門家次</rb><rt>かくさくざえもんいえつぐ</rt></ruby></persName>、<persName ref="#yamada-sanemon">山田三右衛門</persName>、<persName ref="#sakata-hidenobu"><ruby><rb>佐方源左衛門秀信</rb><rt>さかたげんざえもんひでのぶ</rt></ruby></persName>、<persName ref="#yoshida-kenan"><ruby><rb>吉田兼庵</rb><rt>よしだけんあん</rt></ruby></persName>相立ち候。<date when="1646-01-24">二十四日</date>には一同<placeName ref="#kyoto">京都</placeName>に着し、<ruby><rb><placeName ref="#murasakino">紫野</placeName><placeName ref="#daitokuji">大徳寺</placeName></rb><rt>むらさきのだいとくじ</rt></ruby>中<placeName ref="#kotoin"><ruby><rb>高桐院</rb><rt>こうとういん</rt></ruby></placeName>に御納骨いたし候。御生前において同寺<ruby><rb><persName ref="#seigan">清巌</persName>和尚</rb><rt>せいがんおしょう</rt></ruby>に御約束<ruby><rb>有之</rb><rt>これあり</rt></ruby>候趣に候。</p>
+        <p>さて今年御用相片づき候えば、御当代に宿望言上いたし<ruby><rb>候</rb><rt>そろ</rt></ruby>に、<ruby><rb>已</rb><rt>や</rt></ruby>みがたき某が志を御聞届け遊ばされ<ruby><rb>候</rb><rt>そろ</rt></ruby>。<date when="1647-10-29">十月二十九日</date>朝<ruby><rb>御暇乞</rb><rt>おんいとまごい</rt></ruby>に参り、<ruby><rb>御振舞</rb><rt>おんふるまい</rt></ruby>に預り、<ruby><rb>御手</rb><rt>おんて</rt></ruby>ずから御茶を下され、<ruby><rb>引出物</rb><rt>ひきでもの</rt></ruby>として九曜の<ruby><rb>紋</rb><rt>もん</rt></ruby>赤裏の小袖<ruby><rb>二襲</rb><rt>ふたかさね</rt></ruby>を<ruby><rb>賜</rb><rt>たま</rt></ruby>わり候。退出候後、<persName ref="#hayashi-geki"><ruby><rb>林外記</rb><rt>はやしげき</rt></ruby></persName>殿、<persName ref="#fujisaki-sakuzaemon">藤崎作左衛門</persName>殿を御使として<ruby><rb>遣</rb><rt>つかわ</rt></ruby>され後々の事心配<ruby><rb>致</rb><rt>いた</rt></ruby>すまじき<ruby><rb>旨</rb><rt>むね</rt></ruby><ruby><rb>仰</rb><rt>おお</rt></ruby>せられ、御歌を下され、又<placeName ref="#kyoto">京都</placeName>へ参らば、万事<persName ref="#furuhashi">古橋小左衛門</persName>と相談して執り行えと<ruby><rb>懇</rb><rt>ねんごろ</rt></ruby>に仰せられ候。その外<persName ref="#hotta"><ruby><rb>堀田加賀守</rb><rt>ほったかがのかみ</rt></ruby></persName>殿、<persName ref="#inaba"><ruby><rb>稲葉能登守</rb><rt>いなばのとのかみ</rt></ruby></persName>殿も<ruby><rb>御歌</rb><rt>おんうた</rt></ruby>を下され候。<date when="1647-11-02">十一月二日</date><placeName ref="#edo">江戸</placeName>出立の時は、御当代の御使として<persName ref="#tanaka-sahyoe">田中左兵衛</persName>殿<placeName ref="#shinagawa">品川</placeName>まで見送られ候。</p>
+        <p>当地に<ruby><rb>着</rb><rt>ちゃく</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby>てよりは、当家の主人たる弟<persName ref="#matajiro">又次郎</persName>の世話に相成り候。ついては某相果て候後、短刀を<ruby><rb>記念</rb><rt>かたみ</rt></ruby>に<ruby><rb>遣</rb><rt>つかわ</rt></ruby>し候。</p>
+        <p><ruby><rb>餞別</rb><rt>せんべつ</rt></ruby>として<ruby><rb>詩歌</rb><rt>しいか</rt></ruby>を贈られ<ruby><rb>候</rb><rt>そろ</rt></ruby>人々は<persName ref="#karasumaru-sukeyoshi"><ruby><rb>烏丸大納言資慶</rb><rt>からすまるだいなごんすけよし</rt></ruby></persName>卿、<persName ref="#uramatsu-sukekiyo"><ruby><rb>裏松宰相資清</rb><rt>うらまつさいしょうすけきよ</rt></ruby></persName>卿、<placeName ref="#daitokuji">大徳寺</placeName><persName ref="#seigan">清巌</persName>和尚、<placeName ref="#nanzenji">南禅寺</placeName>、<placeName ref="#myoshinji">妙心寺</placeName>、<placeName ref="#tenryuji">天竜寺</placeName>、<placeName ref="#shokokuji">相国寺</placeName>、<placeName ref="#kenninji">建仁寺</placeName>、<placeName ref="#tofukuji">東福寺</placeName><ruby><rb>並</rb><rt>なら</rt></ruby>びに<placeName ref="#nanto">南都</placeName><placeName ref="#kofukuji">興福寺</placeName>の長老達に候。</p>
+        <p>明日切腹候場所は、<persName ref="#furuhashi">古橋</persName>殿<ruby><rb>取計</rb><rt>とりはからい</rt></ruby>にて、<placeName ref="#funaokayama"><ruby><rb>船岡山</rb><rt>ふなおかやま</rt></ruby></placeName>の下に仮屋を建て、<placeName ref="#daitokuji">大徳寺</placeName>門前より仮屋まで十八町の間、<ruby><rb>藁筵</rb><rt>わらむしろ</rt></ruby>三千八百枚余を敷き詰め、仮屋の内には畳一枚を敷き、上に白布を<ruby><rb>覆</rb><rt>おお</rt></ruby>い<ruby><rb>有之</rb><rt>これあり</rt></ruby><ruby><rb>候</rb><rt>そろ</rt></ruby><ruby><rb>由</rb><rt>よし</rt></ruby>に候。いかにも晴がましく候て、心苦しく候えども、これまた主命なれば是非なく<ruby><rb>候</rb><rt>そろ</rt></ruby>。<ruby><rb>立会</rb><rt>たちあい</rt></ruby>は御当代の<ruby><rb>御名代</rb><rt>ごみょうだい</rt></ruby><persName ref="#tani-kuranosuke"><ruby><rb>谷内蔵之允</rb><rt>たにくらのすけ</rt></ruby></persName>殿、御家老<persName ref="#nagaoka-yohachiro">長岡与八郎</persName>殿、同<persName ref="#nagaoka-hanzaemon">半左衛門</persName>殿にて、<placeName ref="#daitokuji">大徳寺</placeName><persName ref="#seigan">清巌実堂</persName>和尚も<ruby><rb>臨場</rb><rt>りんじょう</rt></ruby>せられ候。<ruby><rb>倅</rb><rt>せがれ</rt></ruby><persName ref="#okitsu-kazusada">才右衛門</persName>も参るべく候。介錯はかねて<persName ref="#nomi"><ruby><rb>乃美市郎兵衛勝嘉</rb><rt>のみいちろべえかつよし</rt></ruby></persName>殿に頼みおき候。</p>
+        <p>某<ruby><rb>法名</rb><rt>ほうみょう</rt></ruby>は<persName ref="#okitsu-kageyoshi"><ruby><rb>孤峰不白</rb><rt>こほうふはく</rt></ruby></persName>と自選いたし<ruby><rb>候</rb><rt>そろ</rt></ruby>。身<ruby><rb>不肖</rb><rt>ふしょう</rt></ruby>ながら見苦しき最期も致すまじく存じおり候。</p>
+        <p>この遺書は倅<persName ref="#okitsu-kazusada">才右衛門</persName><ruby><rb>宛</rb><rt>あて</rt></ruby>にいたしおき候えば、子々孫々<ruby><rb>相伝</rb><rt>あいつた</rt></ruby>え、某が志を継ぎ、御当家に<ruby><rb>奉対</rb><rt>たいしたてまつり</rt></ruby>、忠誠を<ruby><rb>擢</rb><rt>ぬきん</rt></ruby>ずべく候。</p>
+        <p><date when="1647-12-01"><ruby><rb>正保</rb><rt>しょうほう</rt></ruby>四年<ruby><rb>丁亥</rb><rt>ていがい</rt></ruby>十二月<ruby><rb>朔日</rb><rt>さくじつ</rt></ruby></date></p>
+        <p><persName ref="#okitsu-kageyoshi">興津弥五右衛門景吉</persName><ruby><rb>華押</rb><rt>かおう</rt></ruby></p>
+        <p><persName ref="#okitsu-kazusada">興津才右衛門</persName>殿</p>
+        <p><date when="1647-12-02">正保四年十二月二日</date>、<persName ref="#okitsu-kageyoshi">興津弥五右衛門景吉</persName>は<placeName ref="#kotoin"><ruby><rb>高桐院</rb><rt>こうとういん</rt></ruby></placeName>の墓に<ruby><rb>詣</rb><rt>もう</rt></ruby>でて、<placeName ref="#funaokayama"><ruby><rb>船岡山</rb><rt>ふなおかやま</rt></ruby></placeName>の<ruby><rb>麓</rb><rt>ふもと</rt></ruby>に建てられた仮屋に入った。畳の上に進んで、手に短刀を取った。<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に立っている<persName ref="#nomi"><ruby><rb>乃美</rb><rt>のみ</rt></ruby>市郎兵衛</persName>の方を振り向いて、「頼む」と声を掛けた。<ruby><rb>白無垢</rb><rt>しろむく</rt></ruby>の上から腹を三文字に切った。<persName ref="#nomi">乃美</persName>は<ruby><rb>項</rb><rt>うなじ</rt></ruby>を一刀切ったが、少し切り足りなかった。<persName ref="#okitsu-kageyoshi">弥五右衛門</persName>は「<ruby><rb>喉笛</rb><rt>のどぶえ</rt></ruby>を刺されい」と云った。しかし<persName ref="#nomi">乃美</persName>が再び手を下さぬ間に、<persName ref="#okitsu-kageyoshi">弥五右衛門</persName>は絶息した。</p>
+        <p>仮屋の周囲には<placeName ref="#kyoto">京都</placeName>の老若男女が<ruby><rb>堵</rb><rt>と</rt></ruby>の<ruby><rb>如</rb><rt>ごと</rt></ruby>くに集って見物した。落首の中に「比類なき名をば雲井に揚げおきつやごゑを掛けて<ruby><rb>追腹</rb><rt>おひばら</rt></ruby>を切る」と云うのがあった。</p>
+        <p>興津家の系図は大略左の通りである。</p>
+        <p><persName ref="#okitsu-kageyoshi">弥五右衛門<ruby><rb>景吉</rb><rt>かげよし</rt></ruby></persName>の<ruby><rb>嫡子</rb><rt>ちゃくし</rt></ruby><persName ref="#okitsu-kazusada">才右衛門<ruby><rb>一貞</rb><rt>かずさだ</rt></ruby></persName>は知行二百石を<ruby><rb>給</rb><rt>たま</rt></ruby>わって、鉄砲三十<ruby><rb>挺頭</rb><rt>ちょうがしら</rt></ruby>まで勤めたが、<date when="1704">宝永元年</date>に病死した。<persName ref="#okitsu-kagemichi"><ruby><rb>右兵衛景通</rb><rt>うひょうえかげみち</rt></ruby></persName>から四代目である。<persName ref="#okitsu-gen5">五世弥五右衛門</persName>は鉄砲十挺頭まで勤めて、<date when="1739"><ruby><rb>元文</rb><rt>げんぶん</rt></ruby>四年</date>に病死した。<persName ref="#okitsu-gen6">六世弥忠太</persName>は<ruby><rb>番方</rb><rt>ばんかた</rt></ruby>を勤め、<date when="1756"><ruby><rb>宝暦</rb><rt>ほうれき</rt></ruby>六年</date>に<ruby><rb>致仕</rb><rt>ちし</rt></ruby>した。<persName ref="#okitsu-gen7">七世九郎次</persName>は番方を勤め、<date when="1776">安永五年</date>に致仕した。<persName ref="#okitsu-gen8">八世九郎兵衛</persName>は養子で、番方を勤め、<date when="1804">文化元年</date>に病死した。<persName ref="#okitsu-gen9">九世<ruby><rb>栄喜</rb><rt>えいき</rt></ruby></persName>は養子で、番方を勤め、<date when="1826">文政九年</date>に病死した。<persName ref="#okitsu-gen10">十世弥忠太</persName>は<persName ref="#okitsu-gen9">栄喜</persName>の嫡子で、後才右衛門と改名し、番方を勤め、<date when="1860"><ruby><rb>万延</rb><rt>まんえん</rt></ruby>元年</date>に病死した。<persName ref="#okitsu-gen11">十一世弥五右衛門</persName>は才右衛門の二男で、後<ruby><rb>宗也</rb><rt>そうや</rt></ruby>と改名し、<ruby><rb>犬追物</rb><rt>いぬおうもの</rt></ruby>が<ruby><rb>上手</rb><rt>じょうず</rt></ruby>であった。<date when="1870">明治三年</date>に番士にせられていた。</p>
+        <p><persName ref="#okitsu-kageyoshi">弥五右衛門景吉</persName>の父<persName ref="#okitsu-kagekazu"><ruby><rb>景一</rb><rt>かげかず</rt></ruby></persName>には男子が六人あって、長男が<persName ref="#okitsu-kazutomo">九郎兵衛<ruby><rb>一友</rb><rt>かずとも</rt></ruby></persName>で、二男が<persName ref="#okitsu-kageyoshi">景吉</persName>であった。三男<persName ref="#hanzaburo">半三郎</persName>は後作太夫<persName ref="#hanzaburo"><ruby><rb>景行</rb><rt>かげゆき</rt></ruby></persName>と<ruby><rb>名告</rb><rt>なの</rt></ruby>っていたが、<date when="1652">慶安五年</date>に病死した。その子<persName ref="#yagodayu">弥五太夫</persName>が<date when="1671">寛文十一年</date>に病死して家が絶えた。<persName ref="#okitsu-kagekazu">景一</persName>の四男<persName ref="#teramoto-kagetoki">忠太</persName>は後<persName ref="#teramoto-kagetoki">四郎右衛門景時</persName>と名告った。<date when="1615">元和元年</date><placeName ref="#osaka">大阪</placeName>夏の陣に、<persName ref="#hosokawa-tadaoki">三斎</persName>公に従って武功を立てたが、行賞の時思う旨があると云って辞退したので追放せられた。それから寺本氏に改めて、<placeName ref="#ise"><ruby><rb>伊勢国</rb><rt>いせのくに</rt></ruby></placeName><placeName ref="#kameyama"><ruby><rb>亀山</rb><rt>かめやま</rt></ruby></placeName>に<ruby><rb>往</rb><rt>い</rt></ruby>って、<persName ref="#honda-toshitsugu"><ruby><rb>本多下総守俊次</rb><rt>ほんだしもうさのかみとしつぐ</rt></ruby></persName>に仕えた。次いで<placeName ref="#sakashita"><ruby><rb>坂下</rb><rt>さかのした</rt></ruby></placeName>、<placeName ref="#seki">関</placeName>、<placeName ref="#kameyama">亀山</placeName>三箇所の<ruby><rb>奉行</rb><rt>ぶぎょう</rt></ruby>にせられた。<date when="1637">寛政（永）十四年</date>の冬、<placeName ref="#shimabara">島原</placeName>の乱に西国の諸侯が<placeName ref="#edo">江戸</placeName>から急いで帰る時、<persName ref="#hosokawa-tsunatoshi">細川<ruby><rb>越中守綱利</rb><rt>えっちゅうのかみつなとし</rt></ruby></persName>と<persName ref="#kuroda-mitsuyuki">黒田<ruby><rb>右衛門佐光之</rb><rt>うえもんのすけみつゆき</rt></ruby></persName>とが同日に<placeName ref="#edo">江戸</placeName>を立った。<placeName ref="#tokaido">東海道</placeName>に掛かると、人馬が不足した。<persName ref="#kuroda-mitsuyuki">光之</persName>は一日だけ先へ乗り越した。この時<persName ref="#teramoto-kagetoki">寺本四郎右衛門</persName>が<placeName ref="#kyoto">京都</placeName>にいる弟<persName ref="#matajiro">又次郎</persName>の金を七百両借りて、<placeName ref="#sakashita">坂下</placeName>、<placeName ref="#seki">関</placeName>、<placeName ref="#kameyama">亀山</placeName>三箇所の人馬を買い締めて、山の中に隠して置いた。さて<persName ref="#hosokawa-tsunatoshi">綱利</persName>の到着するのを待ち受けて、その人馬を出したので、<persName ref="#hosokawa-tsunatoshi">綱利</persName>は<placeName ref="#tsuchiyama">土山</placeName><placeName ref="#minakuchi">水口</placeName>の駅で<persName ref="#kuroda-mitsuyuki">光之</persName>を乗り越した。<persName ref="#hosokawa-tsunatoshi">綱利</persName>は喜んで、後に<placeName ref="#edo">江戸</placeName>にいた四郎右衛門の二男<persName ref="#shirobei">四郎兵衛</persName>を<ruby><rb>召</rb><rt>め</rt></ruby>し<ruby><rb>抱</rb><rt>かか</rt></ruby>えた。<persName ref="#shirobei">四郎兵衛</persName>の嫡子<persName ref="#sakuemon">作右衛門</persName>は五<ruby><rb>人扶持</rb><rt>にんふち</rt></ruby>二十石を給わって、<ruby><rb>中小姓</rb><rt>ちゅうこしょう</rt></ruby>組に加わって、<date when="1691">元禄四年</date>に病死した。<persName ref="#sakuemon">作右衛門</persName>の子<persName ref="#teramoto-noboru"><ruby><rb>登</rb><rt>のぼる</rt></ruby></persName>は越中守<persName ref="#hosokawa-nobunori"><ruby><rb>宣紀</rb><rt>のぶのり</rt></ruby></persName>に任用せられ、役料共七百石を給わって、越中守<persName ref="#hosokawa-munetaka"><ruby><rb>宗孝</rb><rt>むねたか</rt></ruby></persName>の代に用人を勤めていたが、<date when="1738">元文三年</date>に致仕した。<persName ref="#teramoto-noboru">登</persName>の子四郎右衛門は<ruby><rb>物奉行</rb><rt>ものぶぎょう</rt></ruby>を勤めているうちに、<date when="1750">寛延三年</date>に旨に<ruby><rb>忤</rb><rt>さか</rt></ruby>って知行宅地を没収せられた。その子<persName ref="#uheita"><ruby><rb>宇平太</rb><rt>うへいた</rt></ruby></persName>は始め越中守<persName ref="#hosokawa-shigekata"><ruby><rb>重賢</rb><rt>しげかた</rt></ruby></persName>の給仕を勤め、後に<ruby><rb>中務大輔<persName ref="#hosokawa-harutoshi">治年</persName></rb><rt>なかつかさたいふはるとし</rt></ruby>の<ruby><rb>近習</rb><rt>きんじゅ</rt></ruby>になって、<ruby><rb>擬作高</rb><rt>ぎさくだか</rt></ruby>百五十石を給わった。次いで<ruby><rb>物頭列</rb><rt>ものがしられつ</rt></ruby>にせられて<persName ref="#kihime"><ruby><rb>紀姫</rb><rt>つなひめ</rt></ruby></persName>附になった。<date when="1805">文化二年</date>に致仕した。<persName ref="#uheita">宇平太</persName>の嫡子<persName ref="#junji">順次</persName>は軍学、射術に長じていたが、<date when="1808">文化五年</date>に病死した。<persName ref="#junji">順次</persName>の養子<persName ref="#kumaki"><ruby><rb>熊喜</rb><rt>くまき</rt></ruby></persName>は実は<persName ref="#yamano-kanzaemon">山野勘左衛門</persName>の三男で、<ruby><rb>合力米</rb><rt>ごうりきまい</rt></ruby>二十石を給わり、中小姓を勤め、<date when="1837">天保八年</date>に病死した。<persName ref="#kumaki">熊喜</persName>の嫡子<persName ref="#eiichiro">衛一郎</persName>は後四郎右衛門と改名し、<placeName ref="#tamana">玉名</placeName>郡代を勤め、<ruby><rb>物頭列</rb><rt>ものがしられつ</rt></ruby>にせられた。<date when="1870">明治三年</date>に<ruby><rb>鞠獄大属</rb><rt>きくごくだいぞく</rt></ruby>になって、名を登と改めた。<persName ref="#okitsu-kagekazu">景一</persName>の五男<persName ref="#hachisuke">八助</persName>は三歳の時足を<ruby><rb>傷</rb><rt>きずつ</rt></ruby>けて<ruby><rb>行歩</rb><rt>ぎょうほ</rt></ruby>不自由になった。<persName ref="#hachisuke"><ruby><rb>宗春</rb><rt>むねはる</rt></ruby></persName>と改名して<date when="1672">寛文十二年</date>に病死した。<persName ref="#okitsu-kagekazu">景一</persName>の六男<persName ref="#matajiro">又次郎</persName>は<placeName ref="#kyoto">京都</placeName>に住んでいて、<placeName ref="#harima"><ruby><rb>播磨国</rb><rt>はりまのくに</rt></ruby></placeName>の<persName ref="#sano-kanjuro">佐野官十郎</persName>の孫<persName ref="#ichirozaemon">市郎左衛門</persName>を養子にした。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

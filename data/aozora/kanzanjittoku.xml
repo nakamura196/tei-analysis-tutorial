@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>寒山拾得</title>
+        <author>森鴎外</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>寒山拾得</title><author>森鴎外</author>
+          <note>青空文庫。底本：「日本の文学3　森鴎外（二）」中央公論社。1967（昭和42）年2月4日初版発行。入力：佐野良二。校正：伊藤時也。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000129/card1071.html">https://www.aozora.gr.jp/cards/000129/card1071.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="ryokyuin">
+        <persName>閭丘胤</persName>
+        <note>台州の主簿。朝儀大夫・使持節・上柱国・賜緋魚袋を帯びる。本作の視点人物。新旧の唐書に伝が無く、実在を疑う説もあると語られる。作中では「閭」とも記される</note>
+      </person>
+      <person xml:id="bukan">
+        <persName>豊干</persName>
+        <note>天台国清寺の僧。長安の閭丘胤を訪ね、咒(まじない)で頭痛を癒す。虎に騎って山から帰ったと伝えられ、寒山・拾得の正体を告げる</note>
+      </person>
+      <person xml:id="jittoku">
+        <persName>拾得</persName>
+        <note>国清寺の厨で食器を洗う僧。豊干が松林から拾って帰った捨て子。豊干によれば普賢の化身</note>
+      </person>
+      <person xml:id="kanzan">
+        <persName>寒山</persName>
+        <note>国清寺の西の寒巌の石窟に住む者。拾得の取り置いた残りの飯菜をもらいに来る。豊干によれば文殊の化身</note>
+      </person>
+      <person xml:id="monju">
+        <persName>文殊</persName>
+        <note>文殊菩薩。豊干は寒山をその化身と説く</note>
+      </person>
+      <person xml:id="fugen">
+        <persName>普賢</persName>
+        <note>普賢菩薩。豊干は拾得をその化身と説く</note>
+      </person>
+      <person xml:id="dokyo">
+        <persName>道翹</persName>
+        <note>国清寺の僧。閭丘胤を出迎え、豊干の旧居や厨へ案内する</note>
+      </person>
+      <person xml:id="yoshida-togo">
+        <persName>吉田東伍</persName>
+        <note>歴史地理学者(1864–1918)。『大日本地名辞書』の著者。日本の郡県の呼称への不服が語り手に引かれる</note>
+      </person>
+      <person xml:id="chisha-daishi">
+        <persName>智者大師</persName>
+        <note>天台智顗(538–597)。天台宗の開祖。国清寺はその滅後に建てられたとされる</note>
+      </person>
+      <person xml:id="yodai">
+        <persName>煬帝</persName>
+        <note>隋の煬帝(569–618)。国清寺を立てたと語られる</note>
+      </person>
+      <person xml:id="binzuru">
+        <persName>賓頭盧尊者</persName>
+        <note>十六羅漢の一。食堂の上座の像。拾得がその像と向き合って食事をしたと語られる</note>
+      </person>
+      <person xml:id="roshi">
+        <persName>老子</persName>
+        <note>道家の祖とされる人物、およびその書『老子』。閭が仏典とともに「研究したこともない」ものとして言及される</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="taishu">
+        <placeName>台州</placeName>
+        <location><geo>28.86 121.14</geo></location>
+        <note>唐代台州の州治(現・浙江省臨海市)・概値</note>
+      </place>
+      <place xml:id="tendai">
+        <placeName>天台</placeName>
+        <location><geo>29.14 121.01</geo></location>
+        <note>天台県および天台山一帯(現・浙江省台州市天台県)・概値。「天台県」「天台」の両表記を統合</note>
+      </place>
+      <place xml:id="kokuseiji">
+        <placeName>国清寺</placeName>
+        <location><geo>29.16 121.03</geo></location>
+        <note>天台山南麓の国清寺・概値</note>
+      </place>
+      <place xml:id="kangan">
+        <placeName>寒巌</placeName>
+        <note>国清寺の西にある石窟。寒山の住処。天台県西部の寒石山の伝承地とされるが所在に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="chogan">
+        <placeName>長安</placeName>
+        <location><geo>34.2658 108.9541</geo></location>
+        <note>唐の都(現・陝西省西安市)・概値</note>
+      </place>
+      <place xml:id="shina">
+        <placeName>支那</placeName>
+        <location><geo>35.0 105.0</geo></location>
+        <note>中国の旧称。国名・地域名・概値(国土のおおよその中心)</note>
+      </place>
+      <place xml:id="kita-shina">
+        <placeName>北支那</placeName>
+        <location><geo>39.5 116.0</geo></location>
+        <note>中国北部(華北)を漠然と指す地域名・概値</note>
+      </place>
+      <place xml:id="chuo-shina">
+        <placeName>中央支那</placeName>
+        <location><geo>31.0 114.0</geo></location>
+        <note>中国中部を漠然と指す地域名・概値</note>
+      </place>
+      <place xml:id="to">
+        <placeName>唐</placeName>
+        <note>唐王朝(国名)。領域は支那(中国)に重なり、特定の地点を持たないため座標なし</note>
+      </place>
+      <place xml:id="zui">
+        <placeName>隋</placeName>
+        <note>隋王朝(国名)。領域は支那(中国)に重なり、特定の地点を持たないため座標なし</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2 138.25</geo></location>
+        <note>国名・概値</note>
+      </place>
+      <place xml:id="seiyo">
+        <placeName>西洋</placeName>
+        <note>欧米を漠然と指す地域名。語り手が「西洋は七世紀の初め」と時代を対照する際に用いる。特定の地点を持たないため座標なし</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>作中で語り手が同時代の比喩に用いる・概値</note>
+      </place>
+      <place xml:id="shoko">
+        <placeName>椒江</placeName>
+        <location><geo>28.68 121.43</geo></location>
+        <note>台州を流れる椒江(霊江の下流)・河口付近の概値</note>
+      </place>
+      <place xml:id="shihokei">
+        <placeName>始豊渓</placeName>
+        <location><geo>29.13 121.02</geo></location>
+        <note>椒江水系の支流。天台県を流れる川・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>寒山拾得</head>
+        <p><placeName ref="#to"><ruby><rb>唐</rb><rt>とう</rt></ruby></placeName>の<date when="0627"><ruby><rb>貞観</rb><rt>じょうがん</rt></ruby></date>のころだというから、<placeName ref="#seiyo">西洋</placeName>は七世紀の初め<placeName ref="#nihon">日本</placeName>は年号というもののやっと出来かかったときである。<persName ref="#ryokyuin"><ruby><rb>閭丘胤</rb><rt>りょきゅういん</rt></ruby></persName>という官吏がいたそうである。もっともそんな人はいなかったらしいと言う人もある。なぜかと言うと、<persName ref="#ryokyuin">閭</persName>は<placeName ref="#taishu">台州</placeName>の主簿になっていたと言い伝えられているのに、新旧の唐書に伝が見えない。主簿といえば、<ruby><rb>刺史</rb><rt>しし</rt></ruby>とか太守とかいうと同じ官である。<placeName ref="#shina">支那</placeName>全国が道に分れ、道が州または郡に分れ、それが県に分れ、県の下に郷があり郷の下に里がある。州には刺史といい、郡には太守という。一体<placeName ref="#nihon">日本</placeName>で県より小さいものに郡の名をつけているのは不都合だと、<persName ref="#yoshida-togo">吉田東伍</persName>さんなんぞは不服を唱えている。<persName ref="#ryokyuin">閭</persName>がはたして<placeName ref="#taishu">台州</placeName>の主簿であったとすると<placeName ref="#nihon">日本</placeName>の府県知事くらいの官吏である。そうしてみると、唐書の列伝に出ているはずだというのである。しかし<persName ref="#ryokyuin">閭</persName>がいなくては話が成り立たぬから、ともかくもいたことにしておくのである。</p>
+        <p>さて<persName ref="#ryokyuin">閭</persName>が<placeName ref="#taishu">台州</placeName>に着任してから三日目になった。<placeName ref="#chogan">長安</placeName>で<placeName ref="#kita-shina">北支那</placeName>の<ruby><rb>土埃</rb><rt>つちほこり</rt></ruby>をかぶって、濁った水を飲んでいた男が<placeName ref="#taishu">台州</placeName>に来て<placeName ref="#chuo-shina">中央支那</placeName>の肥えた土を踏み、澄んだ水を飲むことになったので、上機嫌である。それにこの三日の間に、多人数の下役が来て<ruby><rb>謁見</rb><rt>えっけん</rt></ruby>をする。受持ち受持ちの事務を形式的に報告する。そのあわただしい中に、地方長官の威勢の大きいことを味わって、意気揚々としているのである。</p>
+        <p><persName ref="#ryokyuin">閭</persName>は前日に下役のものに言っておいて、今朝は早く起きて、<placeName ref="#tendai">天台県</placeName>の<placeName ref="#kokuseiji">国清寺</placeName>をさして出かけることにした。これは<placeName ref="#chogan">長安</placeName>にいたときから、<placeName ref="#taishu">台州</placeName>に着いたら早速往こうときめていたのである。</p>
+        <p>何の用事があって<placeName ref="#kokuseiji">国清寺</placeName>へ往くかというと、それには因縁がある。<persName ref="#ryokyuin">閭</persName>が<placeName ref="#chogan">長安</placeName>で主簿の任命を受けて、これから任地へ旅立とうとしたとき、あいにくこらえられぬほどの頭痛が起った。単純なレウマチス性の頭痛ではあったが、<persName ref="#ryokyuin">閭</persName>は平生から少し神経質であったので、かかりつけの医者の薬を飲んでもなかなかなおらない。これでは旅立ちの日を延ばさなくてはなるまいかと言って、女房と相談していると、そこへ小女が来て、「<ruby><rb>只今</rb><rt>ただいま</rt></ruby>ご門の前へ<ruby><rb>乞食坊主</rb><rt>こじきぼうず</rt></ruby>がまいりまして、ご主人にお目にかかりたいと申しますがいかがいたしましょう」と言った。</p>
+        <p>「ふん、坊主か」と言って<persName ref="#ryokyuin">閭</persName>はしばらく考えたが、「とにかく逢ってみるから、ここへ通せ」と言いつけた。そして女房を奧へ引っ込ませた。</p>
+        <p>元来<persName ref="#ryokyuin">閭</persName>は科挙に応ずるために、<ruby><rb>経書</rb><rt>けいしょ</rt></ruby>を読んで、五言の詩を作ることを習ったばかりで、仏典を読んだこともなく、<persName ref="#roshi">老子</persName>を研究したこともない。しかし僧侶や道士というものに対しては、なぜということもなく尊敬の念を持っている。自分の<ruby><rb>会得</rb><rt>えとく</rt></ruby>せぬものに対する、盲目の尊敬とでも言おうか。そこで坊主と聞いて逢おうと言ったのである。</p>
+        <p>まもなくはいって来たのは、一人の背の高い僧であった。<ruby><rb>垢</rb><rt>あか</rt></ruby>つき<ruby><rb>弊</rb><rt>やぶ</rt></ruby>れた<ruby><rb>法衣</rb><rt>ほうえ</rt></ruby>を着て、長く伸びた髪を、眉の上で切っている。目にかぶさってうるさくなるまで打ちやっておいたものと見える。手には<ruby><rb>鉄鉢</rb><rt>てっぱつ</rt></ruby>を持っている。</p>
+        <p>僧は黙って立っているので<persName ref="#ryokyuin">閭</persName>が問うてみた。「わたしに逢いたいと言われたそうだが、なんのご用かな」</p>
+        <p>僧は言った。「あなたは<placeName ref="#taishu">台州</placeName>へおいでなさることにおなりなすったそうでございますね。それに頭痛に悩んでおいでなさると申すことでございます。わたくしはそれを直して進ぜようと思って参りました」</p>
+        <p>「いかにも言われる通りで、その頭痛のために出立の日を延ばそうかと思っていますが、どうして直してくれられるつもりか。何か薬方でもご存じか」</p>
+        <p>「いや。四大の身を悩ます病は幻でございます。ただ清浄な水がこの受糧器に一ぱいあればよろしい。<ruby><rb>咒</rb><rt>まじない</rt></ruby>で直して進ぜます」</p>
+        <p>「はあ咒をなさるのか」こう言って少し考えたが「仔細あるまい、一つまじなって下さい」と言った。これは医道のことなどは平生深く考えてもおらぬので、どういう治療ならさせる、どういう治療ならさせぬという定見がないから、ただ自分の悟性に依頼して、その折り折りに判断するのであった。もちろんそういう人だから、かかりつけの医者というのもよく人選をしたわけではなかった。<ruby><rb>素問</rb><rt>そもん</rt></ruby>や<ruby><rb>霊枢</rb><rt>れいすう</rt></ruby>でも読むような医者を捜してきめていたのではなく、近所に住んでいて呼ぶのに面倒のない医者にかかっていたのだから、ろくな薬は飲ませてもらうことが出来なかったのである。今乞食坊主に頼む気になったのは、なんとなくえらそうに見える坊主の態度に信を起したのと、水一ぱいでする咒なら間違ったところで危険なこともあるまいと思ったのとのためである。ちょうど<placeName ref="#tokyo">東京</placeName>で高等官連中が<ruby><rb>紅療治</rb><rt>べにりょうじ</rt></ruby>や気合術に依頼するのと同じことである。</p>
+        <p><persName ref="#ryokyuin">閭</persName>は小女を呼んで、汲みたての水を<ruby><rb>鉢</rb><rt>はち</rt></ruby>に入れて来いと命じた。水が来た。僧はそれを受け取って、胸に捧げて、じっと<persName ref="#ryokyuin">閭</persName>を見つめた。清浄な水でもよければ、不潔な水でもいい、湯でも茶でもいいのである。不潔な水でなかったのは、<persName ref="#ryokyuin">閭</persName>がためには<ruby><rb>勿怪</rb><rt>もっけ</rt></ruby>の幸いであった。しばらく見つめているうちに、<persName ref="#ryokyuin">閭</persName>は覚えず精神を僧の捧げている水に集注した。</p>
+        <p>このとき僧は鉄鉢の水を口にふくんで、突然ふっと<persName ref="#ryokyuin">閭</persName>の頭に吹きかけた。</p>
+        <p><persName ref="#ryokyuin">閭</persName>はびっくりして、背中に冷や汗が出た。</p>
+        <p>「お頭痛は」と僧が問うた。</p>
+        <p>「あ。<ruby><rb>癒</rb><rt>なお</rt></ruby>りました」実際<persName ref="#ryokyuin">閭</persName>はこれまで頭痛がする、頭痛がすると気にしていて、どうしても癒らせずにいた頭痛を、坊主の水に気を取られて、取り逃がしてしまったのである。</p>
+        <p>僧はしずかに鉢に残った水を床に傾けた。そして「そんならこれでお<ruby><rb>暇</rb><rt>いとま</rt></ruby>をいたします」と言うや否や、くるりと<persName ref="#ryokyuin">閭</persName>に背中を向けて、戸口の方へ歩き出した。</p>
+        <p>「まあ、ちょっと」と<persName ref="#ryokyuin">閭</persName>が呼び留めた。</p>
+        <p>僧は振り返った。「何かご用で」</p>
+        <p>「寸志のお礼がいたしたいのですが」</p>
+        <p>「いや。わたくしは<ruby><rb>群生</rb><rt>ぐんしょう</rt></ruby>を福利し、<ruby><rb>憍慢</rb><rt>きょうまん</rt></ruby>を<ruby><rb>折伏</rb><rt>しゃくぶく</rt></ruby>するために、<ruby><rb>乞食</rb><rt>こつじき</rt></ruby>はいたしますが、療治代はいただきませぬ」</p>
+        <p>「なるほど。それでは<ruby><rb>強</rb><rt>し</rt></ruby>いては申しますまい。あなたはどちらのお方か、それを伺っておきたいのですが」</p>
+        <p>「これまでおったところでございますか。それは<placeName ref="#tendai">天台</placeName>の<placeName ref="#kokuseiji">国清寺</placeName>で」</p>
+        <p>「はあ。<placeName ref="#tendai">天台</placeName>におられたのですな。お名は」</p>
+        <p>「<persName ref="#bukan"><ruby><rb>豊干</rb><rt>ぶかん</rt></ruby></persName>と申します」</p>
+        <p>「<placeName ref="#tendai">天台</placeName><placeName ref="#kokuseiji">国清寺</placeName>の<persName ref="#bukan">豊干</persName>とおっしゃる」<persName ref="#ryokyuin">閭</persName>はしっかりおぼえておこうと努力するように、眉をひそめた。「わたしもこれから<placeName ref="#taishu">台州</placeName>へ往くものであってみれば、ことさらお懐かしい。ついでだから伺いたいが、<placeName ref="#taishu">台州</placeName>には逢いに往ってためになるような、えらい人はおられませんかな」</p>
+        <p>「さようでございます。<placeName ref="#kokuseiji">国清寺</placeName>に<persName ref="#jittoku"><ruby><rb>拾得</rb><rt>じっとく</rt></ruby></persName>と申すものがおります。実は<persName ref="#fugen"><ruby><rb>普賢</rb><rt>ふげん</rt></ruby></persName>でございます。それから寺の西の方に、<placeName ref="#kangan">寒巌</placeName>という<ruby><rb>石窟</rb><rt>せきくつ</rt></ruby>があって、そこに<persName ref="#kanzan"><ruby><rb>寒山</rb><rt>かんざん</rt></ruby></persName>と申すものがおります。実は<persName ref="#monju"><ruby><rb>文殊</rb><rt>もんじゅ</rt></ruby></persName>でございます。さようならお<ruby><rb>暇</rb><rt>いとま</rt></ruby>をいたします」こう言ってしまって、ついと出て行った。</p>
+        <p>こういう因縁があるので、<persName ref="#ryokyuin">閭</persName>は<placeName ref="#tendai">天台</placeName>の<placeName ref="#kokuseiji">国清寺</placeName>をさして出かけるのである。</p>
+        <p>――――――――――――</p>
+        <p>全体世の中の人の、道とか宗教とかいうものに対する態度に三通りある。自分の職業に気を取られて、ただ営々<ruby><rb>役々</rb><rt>えきえき</rt></ruby>と年月を送っている人は、道というものを顧みない。これは読書人でも同じことである。もちろん書を読んで深く考えたら、道に到達せずにはいられまい。しかしそうまで考えないでも、日々の務めだけは弁じて行かれよう。これは全く<ruby><rb>無頓着</rb><rt>むとんじゃく</rt></ruby>な人である。</p>
+        <p>つぎに着意して道を求める人がある。専念に道を求めて、万事をなげうつこともあれば、日々の務めは怠らずに、たえず道に志していることもある。儒学に入っても、道教に入っても、仏法に入っても<ruby><rb>基督</rb><rt>クリスト</rt></ruby>教に入っても同じことである。こういう人が深くはいり込むと日々の務めがすなわち道そのものになってしまう。つづめて言えばこれは皆道を求める人である。</p>
+        <p>この無頓着な人と、道を求める人との中間に、道というものの存在を客観的に認めていて、それに対して全く無頓着だというわけでもなく、さればと言ってみずから進んで道を求めるでもなく、自分をば道に疎遠な人だと<ruby><rb>諦念</rb><rt>あきら</rt></ruby>め、別に道に親密な人がいるように思って、それを尊敬する人がある。尊敬はどの種類の人にもあるが、単に同じ対象を尊敬する場合を顧慮して言ってみると、道を求める人なら遅れているものが進んでいるものを尊敬することになり、ここに言う中間人物なら、自分のわからぬもの、会得することの出来ぬものを尊敬することになる。そこに盲目の尊敬が生ずる。盲目の尊敬では、たまたまそれをさし向ける対象が<ruby><rb>正鵠</rb><rt>せいこく</rt></ruby>を得ていても、なんにもならぬのである。</p>
+        <p>――――――――――――</p>
+        <p><persName ref="#ryokyuin">閭</persName>は衣服を改め<ruby><rb>輿</rb><rt>よ</rt></ruby>に乗って、<placeName ref="#taishu">台州</placeName>の官舍を出た。従者が数十人ある。</p>
+        <p>時は冬の初めで、霜が少し降っている。<placeName ref="#shoko"><ruby><rb>椒江</rb><rt>しょうこう</rt></ruby></placeName>の支流で、<placeName ref="#shihokei"><ruby><rb>始豊渓</rb><rt>しほうけい</rt></ruby></placeName>という川の左岸を迂回しつつ北へ進んで行く。初め<ruby><rb>陰</rb><rt>くも</rt></ruby>っていた空がようよう晴れて、<ruby><rb>蒼白</rb><rt>あおじろ</rt></ruby>い日が岸の<ruby><rb>紅葉</rb><rt>もみじ</rt></ruby>を照している。<ruby><rb>路</rb><rt>みち</rt></ruby>で出合う老幼は、皆<ruby><rb>輿</rb><rt>よ</rt></ruby>を避けてひざまずく。輿の中では<persName ref="#ryokyuin">閭</persName>がひどくいい心持ちになっている。牧民の職にいて賢者を礼するというのが、手柄のように思われて、<persName ref="#ryokyuin">閭</persName>に満足を与えるのである。</p>
+        <p><placeName ref="#taishu">台州</placeName>から<placeName ref="#tendai">天台県</placeName>までは六十里半ほどである。<placeName ref="#nihon">日本</placeName>の六里半ほどである。ゆるゆる輿を<ruby><rb>舁</rb><rt>か</rt></ruby>かせて来たので、県から役人の迎えに出たのに逢ったとき、もう<ruby><rb>午</rb><rt>ひる</rt></ruby>を過ぎていた。知県の官舎で休んで、<ruby><rb>馳走</rb><rt>ちそう</rt></ruby>になりつつ聞いてみると、ここから<placeName ref="#kokuseiji">国清寺</placeName>までは、<ruby><rb>爪尖上</rb><rt>つまさきあ</rt></ruby>がりの道がまた六十里ある。往き着くまでには夜に入りそうである。そこで<persName ref="#ryokyuin">閭</persName>は知県の官舎に泊ることにした。</p>
+        <p>翌朝知県に送られて出た。きょうもきのうに変らぬ天気である。一体<placeName ref="#tendai">天台</placeName>一万八千丈とは、いつ誰が測量したにしても、所詮高過ぎるようだが、とにかく虎のいる山である。道はなかなかきのうのようには<ruby><rb>捗</rb><rt>はかど</rt></ruby>らない。途中で<ruby><rb>午飯</rb><rt>ひるめし</rt></ruby>を食って、日が西に傾きかかったころ、<placeName ref="#kokuseiji">国清寺</placeName>の三門に着いた。<persName ref="#chisha-daishi">智者大師</persName>の滅後に、<placeName ref="#zui"><ruby><rb>隋</rb><rt>ずい</rt></ruby></placeName>の<persName ref="#yodai"><ruby><rb>煬帝</rb><rt>ようだい</rt></ruby></persName>が立てたという寺である。</p>
+        <p>寺でも主簿のご参詣だというので、おろそかにはしない。<persName ref="#dokyo"><ruby><rb>道翹</rb><rt>どうぎょう</rt></ruby></persName>という僧が出迎えて、<persName ref="#ryokyuin">閭</persName>を客間に案内した。さて茶菓の饗応が済むと、<persName ref="#ryokyuin">閭</persName>が問うた。「当寺に<persName ref="#bukan">豊干</persName>という僧がおられましたか」</p>
+        <p><persName ref="#dokyo">道翹</persName>が答えた。「<persName ref="#bukan">豊干</persName>とおっしゃいますか。それはさきころまで、本堂の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>の僧院におられましたが、<ruby><rb>行脚</rb><rt>あんぎゃ</rt></ruby>に出られたきり、帰られませぬ」</p>
+        <p>「当寺ではどういうことをしておられましたか」</p>
+        <p>「さようでございます。僧どもの食べる米を<ruby><rb>舂</rb><rt>つ</rt></ruby>いておられました」</p>
+        <p>「はあ。そして何かほかの僧たちと変ったことはなかったのですか」</p>
+        <p>「いえ。それがございましたので、初めただ骨惜しみをしない、親切な同宿だと存じていました<persName ref="#bukan">豊干</persName>さんを、わたくしどもが大切にいたすようになりました。するとある日ふいと出て行ってしまわれました」</p>
+        <p>「それはどういうことがあったのですか」</p>
+        <p>「全く不思議なことでございました。ある日山から虎に<ruby><rb>騎</rb><rt>の</rt></ruby>って帰って参られたのでございます。そしてそのまま廊下へはいって、虎の背で詩を吟じて歩かれました。一体詩を吟ずることの好きな人で、裏の僧院でも、夜になると詩を吟ぜられました」</p>
+        <p>「はあ。活きた<ruby><rb>阿羅漢</rb><rt>あらかん</rt></ruby>ですな。その僧院の<ruby><rb>址</rb><rt>あと</rt></ruby>はどうなっていますか」</p>
+        <p>「只今もあき家になっておりますが、折り折り夜になると、虎が参って<ruby><rb>吼</rb><rt>ほ</rt></ruby>えております」</p>
+        <p>「そんならご苦労ながら、そこへご案内を願いましょう」こう言って、<persName ref="#ryokyuin">閭</persName>は座を起った。</p>
+        <p><persName ref="#dokyo">道翹</persName>は<ruby><rb>蛛</rb><rt>くも</rt></ruby>の<ruby><rb>網</rb><rt>い</rt></ruby>を払いつつ先に立って、<persName ref="#ryokyuin">閭</persName>を<persName ref="#bukan">豊干</persName>のいたあき家に連れて行った。日がもう暮れかかったので、薄暗い屋内を見廻すに、がらんとして何一つない。<persName ref="#dokyo">道翹</persName>は身をかがめて石畳の上の虎の足跡を指さした。たまたま山風が窓の外を吹いて通って、うずたかい庭の落ち葉を捲き上げた。その音が<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>を破ってざわざわと鳴ると、<persName ref="#ryokyuin">閭</persName>は髪の毛の根を締めつけられるように感じて、全身の肌に<ruby><rb>粟</rb><rt>あわ</rt></ruby>を生じた。</p>
+        <p><persName ref="#ryokyuin">閭</persName>は<ruby><rb>忙</rb><rt>せわ</rt></ruby>しげにあき家を出た。そしてあとからついて来る<persName ref="#dokyo">道翹</persName>に言った。「<persName ref="#jittoku"><ruby><rb>拾得</rb><rt>じっとく</rt></ruby></persName>という僧はまだ当寺におられますか」</p>
+        <p><persName ref="#dokyo">道翹</persName>は不審らしく<persName ref="#ryokyuin">閭</persName>の顏を見た。「よくご存じでございます。先刻あちらの<ruby><rb>厨</rb><rt>くりや</rt></ruby>で、<persName ref="#kanzan">寒山</persName>と申すものと火に当っておりましたから、ご用がおありなさるなら、呼び寄せましょうか」</p>
+        <p>「ははあ。<persName ref="#kanzan">寒山</persName>も来ておられますか。それは願ってもないことです。どうぞご苦労ついでに厨にご案内を願いましょう」</p>
+        <p>「承知いたしました」と言って、<persName ref="#dokyo">道翹</persName>は本堂について西へ歩いて行く。</p>
+        <p><persName ref="#ryokyuin">閭</persName>が<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から問うた。「<persName ref="#jittoku">拾得</persName>さんはいつごろから当寺におられますか」</p>
+        <p>「もうよほど久しいことでございます。あれは<persName ref="#bukan">豊干</persName>さんが松林の中から拾って帰られた捨て子でございます」</p>
+        <p>「はあ。そして当寺では何をしておられますか」</p>
+        <p>「拾われて参ってから三年ほど立ちましたとき、<ruby><rb>食堂</rb><rt>じきどう</rt></ruby>で上座の像に香を上げたり、燈明を上げたり、そのほか<ruby><rb>供</rb><rt>そな</rt></ruby>えものをさせたりいたしましたそうでございます。そのうちある日上座の像に食事を供えておいて、自分が向き合って一しょに食べているのを見つけられましたそうでございます。<persName ref="#binzuru"><ruby><rb>賓頭盧尊者</rb><rt>びんずるそんじゃ</rt></ruby></persName>の像がどれだけ尊いものか存ぜずにいたしたことと見えます。<ruby><rb>唯今</rb><rt>ただいま</rt></ruby>では厨で僧どもの食器を洗わせております」</p>
+        <p>「はあ」と言って、<persName ref="#ryokyuin">閭</persName>は二足三足歩いてから問うた。「それから唯今<persName ref="#kanzan">寒山</persName>とおっしゃったが、それはどういう方ですか」</p>
+        <p>「<persName ref="#kanzan">寒山</persName>でございますか。これは当寺から西の方の<placeName ref="#kangan">寒巌</placeName>と申す石窟に住んでおりますものでございます。<persName ref="#jittoku">拾得</persName>が食器を<ruby><rb>滌</rb><rt>あら</rt></ruby>いますとき、残っている飯や菜を竹の筒に入れて取っておきますと、<persName ref="#kanzan">寒山</persName>はそれをもらいに参るのでございます」</p>
+        <p>「なるほど」と言って、<persName ref="#ryokyuin">閭</persName>はついて行く。心のうちでは、そんなことをしている<persName ref="#kanzan">寒山</persName>、<persName ref="#jittoku">拾得</persName>が<persName ref="#monju"><ruby><rb>文殊</rb><rt>もんじゅ</rt></ruby></persName>、<persName ref="#fugen"><ruby><rb>普賢</rb><rt>ふげん</rt></ruby></persName>なら、虎に<ruby><rb>騎</rb><rt>の</rt></ruby>った<persName ref="#bukan">豊干</persName>はなんだろうなどと、田舎者が芝居を見て、どの役がどの俳優かと思い惑うときのような気分になっているのである。</p>
+        <p>――――――――――――</p>
+        <p>「はなはだむさくるしい所で」と言いつつ、<persName ref="#dokyo">道翹</persName>は<persName ref="#ryokyuin">閭</persName>を厨のうちに連れ込んだ。</p>
+        <p>ここは湯気が一ぱい<ruby><rb>籠</rb><rt>こ</rt></ruby>もっていて、にわかにはいって見ると、しかと物を見定めることも出来ぬくらいである。その灰色の中に大きい<ruby><rb>竈</rb><rt>かまど</rt></ruby>が三つあって、どれにも残った<ruby><rb>薪</rb><rt>まき</rt></ruby>が真赤に燃えている。しばらく立ち止まって見ているうちに、石の壁に沿うて造りつけてある<ruby><rb>卓</rb><rt>つくえ</rt></ruby>の上で大勢の僧が飯や菜や汁を<ruby><rb>鍋釜</rb><rt>なべかま</rt></ruby>から移しているのが見えて来た。</p>
+        <p>このとき<persName ref="#dokyo">道翹</persName>が奧の方へ向いて、「おい、<persName ref="#jittoku">拾得</persName>」と呼びかけた。</p>
+        <p><persName ref="#ryokyuin">閭</persName>がその視線をたどって、入口から一番遠い竈の前を見ると、そこに二人の僧のうずくまって火に当っているのが見えた。</p>
+        <p>一人は髪の二三寸伸びた頭を<ruby><rb>剥</rb><rt>む</rt></ruby>き出して、足には草履をはいている。今一人は木の皮で編んだ帽をかぶって、足には<ruby><rb>木履</rb><rt>ぼくり</rt></ruby>をはいている。どちらも<ruby><rb>痩</rb><rt>や</rt></ruby>せてみすぼらしい小男で、<persName ref="#bukan">豊干</persName>のような大男ではない。</p>
+        <p><persName ref="#dokyo">道翹</persName>が呼びかけたとき、頭を剥き出した方は振り向いてにやりと笑ったが、返事はしなかった。これが<persName ref="#jittoku">拾得</persName>だと見える。帽をかぶった方は身動きもしない。これが<persName ref="#kanzan">寒山</persName>なのであろう。</p>
+        <p><persName ref="#ryokyuin">閭</persName>はこう見当をつけて二人のそばへ進み寄った。そして袖を<ruby><rb>掻</rb><rt>か</rt></ruby>き合わせてうやうやしく礼をして、「朝儀大夫、使持節、<placeName ref="#taishu">台州</placeName>の主簿、上柱国、<ruby><rb>賜緋魚袋</rb><rt>しひぎょたい</rt></ruby>、<persName ref="#ryokyuin">閭<ruby><rb>丘胤</rb><rt>きゅういん</rt></ruby></persName>と申すものでございます」と名のった。</p>
+        <p>二人は同時に<persName ref="#ryokyuin">閭</persName>を一目見た。それから二人で顏を見合わせて腹の底からこみ上げて来るような笑い声を出したかと思うと、一しょに立ち上がって、厨を駆け出して逃げた。逃げしなに<persName ref="#kanzan">寒山</persName>が「<persName ref="#bukan">豊干</persName>がしゃべったな」と言ったのが聞えた。</p>
+        <p>驚いてあとを見送っている<persName ref="#ryokyuin">閭</persName>が周囲には、飯や菜や汁を盛っていた僧らが、ぞろぞろと来てたかった。<persName ref="#dokyo">道翹</persName>は<ruby><rb>真蒼</rb><rt>まっさお</rt></ruby>な顏をして立ちすくんでいた。</p>
+        <p><date when="1916-01">大正五年一月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>

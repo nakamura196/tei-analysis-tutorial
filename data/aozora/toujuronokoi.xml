@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>藤十郎の恋</title>
+        <author>菊池寛</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>藤十郎の恋</title><author>菊池寛</author>
+          <note>青空文庫。底本：「藤十郎の恋・恩讐の彼方に」新潮文庫、新潮社。1970（昭和45）年3月25日初版発行。1990（平成2）年1月15日第34刷。初出：「大阪毎日新聞」。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000083/card47857.html">https://www.aozora.gr.jp/cards/000083/card47857.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="tojuro">
+        <persName>坂田藤十郎</persName>
+        <note>主人公。上方歌舞伎の名優で「三ヶ津の総芸頭」と讃えられたやつし・傾城買の名人。芸の行き詰まりを破るため、茶屋の女房お梶に偽りの恋を仕掛ける。呼びかけは「藤様」「坂田様」とも</note>
+      </person>
+      <person xml:id="shichisaburo">
+        <persName>中村七三郎</persName>
+        <note>江戸歌舞伎の名優。通称「少長」。顔見世で上京し、『傾城浅間ヶ嶽』の巴之丞で都の人気を博して藤十郎の好敵手となる</note>
+      </person>
+      <person xml:id="hanzaemon">
+        <persName>山下半左衛門</persName>
+        <note>京の芝居の座元。半左衛門座(山下座)を興行し、中村七三郎を迎える</note>
+      </person>
+      <person xml:id="chikamatsu">
+        <persName>近松門左衛門</persName>
+        <note>浪華に住む狂言作者。藤十郎の求めに応じて密夫物『大経師昔暦』を書き下ろす。作中では「近松門左」「門左衛門」とも呼ばれる</note>
+      </person>
+      <person xml:id="danjuro">
+        <persName>市川団十郎</persName>
+        <note>江戸の名優。俳号「才牛」。荒事の創始者として都に上り、藤十郎はその芸を軽んじた</note>
+      </person>
+      <person xml:id="senju">
+        <persName>切波千寿</persName>
+        <note>万太夫座の若女形。『大経師昔暦』でおさんを勤める</note>
+      </person>
+      <person xml:id="okaji">
+        <persName>お梶</persName>
+        <note>茶屋宗清の女房。宮川町の歌妓として嬌名を謳われた。藤十郎の偽りの恋を受け、のち万太夫座の楽屋で縊死する</note>
+      </person>
+      <person xml:id="soyama-seibei">
+        <persName>宗山清兵衛</persName>
+        <note>茶屋宗清の主人。お梶の夫</note>
+      </person>
+      <person xml:id="sennojo">
+        <persName>玉村千之丞</persName>
+        <note>河内通いの狂言を百五十日打ち続けたと語り伝えられる役者</note>
+      </person>
+      <person xml:id="kyoemon">
+        <persName>山下京右衛門</persName>
+        <note>藤十郎の腹心の弟子</note>
+      </person>
+      <person xml:id="izaemon">
+        <persName>伊左衛門</persName>
+        <note>藤十郎の当り役。傾城買狂言『夕霧伊左衛門』の主人公(藤屋伊左衛門)</note>
+      </person>
+      <person xml:id="yugiri">
+        <persName>夕霧</persName>
+        <note>『夕霧伊左衛門』の遊女夕霧。藤十郎の当り狂言の女主人公</note>
+      </person>
+      <person xml:id="tomonojo">
+        <persName>巴之丞</persName>
+        <note>『傾城浅間ヶ嶽』の登場人物。中村七三郎の当り役</note>
+      </person>
+      <person xml:id="osan">
+        <persName>おさん</persName>
+        <note>『大経師昔暦』の登場人物。室町通の大経師の女房。切波千寿が勤める</note>
+      </person>
+      <person xml:id="mouemon">
+        <persName>茂右衛門</persName>
+        <note>『大経師昔暦』の登場人物。大経師の手代でおさんの密夫。藤十郎が勤める</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kyoto">
+        <placeName>京</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都。作中では「都」「都大路」「洛中洛外」とも・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>現東京・概値</note>
+      </place>
+      <place xml:id="naniwa">
+        <placeName>浪華</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>大坂(現大阪市)・概値</note>
+      </place>
+      <place xml:id="hieizan">
+        <placeName>叡山</placeName>
+        <location><geo>35.0716 135.8332</geo></location>
+        <note>比叡山(京都市・大津市境)・概値</note>
+      </place>
+      <place xml:id="kamogawa">
+        <placeName>鴨川</placeName>
+        <location><geo>35.0069 135.7726</geo></location>
+        <note>京都市を流れる鴨川。四条付近の代表点・概値。作中では「鴨の河原」とも</note>
+      </place>
+      <place xml:id="sanjo">
+        <placeName>三条</placeName>
+        <location><geo>35.0092 135.7691</geo></location>
+        <note>京都の三条通・三条界隈・概値</note>
+      </place>
+      <place xml:id="sanjo-ohashi">
+        <placeName>三条大橋</placeName>
+        <location><geo>35.0091 135.774</geo></location>
+        <note>鴨川に架かる三条大橋(東海道の起終点)・概値</note>
+      </place>
+      <place xml:id="shijo">
+        <placeName>四条</placeName>
+        <location><geo>35.0037 135.7683</geo></location>
+        <note>京都の四条通・四条河原界隈・概値</note>
+      </place>
+      <place xml:id="gion">
+        <placeName>祇園</placeName>
+        <location><geo>35.0037 135.7752</geo></location>
+        <note>京都東山の祇園(八坂神社門前)・概値</note>
+      </place>
+      <place xml:id="kiyomizu">
+        <placeName>清水</placeName>
+        <location><geo>34.9948 135.785</geo></location>
+        <note>清水寺(京都市東山区)・概値</note>
+      </place>
+      <place xml:id="higashiyama">
+        <placeName>東山</placeName>
+        <location><geo>34.998 135.783</geo></location>
+        <note>京都東山。山並みの地域名・概値</note>
+      </place>
+      <place xml:id="saga">
+        <placeName>嵯峨</placeName>
+        <location><geo>35.018 135.672</geo></location>
+        <note>京都市右京区嵯峨・概値</note>
+      </place>
+      <place xml:id="kitayama">
+        <placeName>北山</placeName>
+        <location><geo>35.06 135.755</geo></location>
+        <note>京都北郊の北山。地域名・概値</note>
+      </place>
+      <place xml:id="miyagawacho">
+        <placeName>宮川町</placeName>
+        <location><geo>34.999 135.772</geo></location>
+        <note>京都の花街・宮川町(現東山区)・概値</note>
+      </place>
+      <place xml:id="muromachi-dori">
+        <placeName>室町通</placeName>
+        <location><geo>35.01 135.759</geo></location>
+        <note>京都の南北の通り。線状のため代表点の概値</note>
+      </place>
+      <place xml:id="awataguchi">
+        <placeName>粟田口</placeName>
+        <location><geo>35.011 135.783</geo></location>
+        <note>京都東郊の粟田口。江戸期の刑場があった・概値</note>
+      </place>
+      <place xml:id="mantayuza">
+        <placeName>都万太夫座</placeName>
+        <location><geo>35.0037 135.7715</geo></location>
+        <note>四条河原(現京都市東山区四条大橋付近)にあった芝居小屋。藤十郎の座。作中では「万太夫座」とも・所在は概値</note>
+      </place>
+      <place xml:id="hanzaemonza">
+        <placeName>山下半左衛門座</placeName>
+        <location><geo>35.004 135.771</geo></location>
+        <note>四条河原にあった山下半左衛門の芝居小屋。作中では「半左衛門座」「山下座」とも・所在は概値</note>
+      </place>
+      <place xml:id="chokichiza">
+        <placeName>早雲長吉座</placeName>
+        <location><geo>35.0035 135.772</geo></location>
+        <note>四条河原にあった早雲長吉の芝居小屋。市川団十郎が上京して出演した。作中では「長吉座」とも・所在は概値</note>
+      </place>
+      <place xml:id="soseichaya">
+        <placeName>宗清</placeName>
+        <note>四条中東・鴨川に臨む茶屋。お梶の嫁ぎ先。比定困難のため座標なし</note>
+      </place>
+      <place xml:id="togoku">
+        <placeName>東国</placeName>
+        <location><geo>36.0 139.5</geo></location>
+        <note>関東・東日本一帯。地域名・概値</note>
+      </place>
+      <place xml:id="saigoku">
+        <placeName>西国</placeName>
+        <location><geo>34.0 132.5</geo></location>
+        <note>西日本一帯(中国・四国・九州)。地域名・概値</note>
+      </place>
+      <place xml:id="kyushu">
+        <placeName>九州</placeName>
+        <location><geo>32.8 131.0</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="shikoku">
+        <placeName>四国</placeName>
+        <location><geo>33.7 133.5</geo></location>
+        <note>地域名・概値</note>
+      </place>
+      <place xml:id="koshiji">
+        <placeName>越路</placeName>
+        <location><geo>36.7 137.2</geo></location>
+        <note>越の国(北陸地方)。地域名・概値</note>
+      </place>
+      <place xml:id="sangatsu">
+        <placeName>三ヶ津</placeName>
+        <note>京・大坂・江戸の三都の総称。単一地点に定まらないため座標なし</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値(日本列島のほぼ中央)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>藤十郎の恋</head>
+        <p>一</p>
+        <p><date when="1688"><ruby><rb>元禄</rb><rt>げんろく</rt></ruby></date>と云う年号が、<ruby><rb>何時</rb><rt>いつ</rt></ruby>の間にか十余りを重ねたある年の<date when="--02">二月</date>の末である。</p>
+        <p><placeName ref="#kyoto">都</placeName>では、春の<ruby><rb>匂</rb><rt>にお</rt></ruby>いが<ruby><rb>凡</rb><rt>すべ</rt></ruby>ての物を包んでいた。ついこの間までは、頂上の処だけは、<ruby><rb>斑</rb><rt>まだら</rt></ruby>に消え残っていた<placeName ref="#hieizan"><ruby><rb>叡山</rb><rt>えいざん</rt></ruby></placeName>の雪が、春の柔い光の下に解けてしまって、跡には薄紫を帯びた黄色の<ruby><rb>山肌</rb><rt>やまはだ</rt></ruby>が、くっきりと大空に浮んでいる。その空の色までが、冬の間に腐ったような灰色を、洗い流して日一日緑に<ruby><rb>冴</rb><rt>さ</rt></ruby>えて行った。</p>
+        <p><placeName ref="#kamogawa"><ruby><rb>鴨</rb><rt>かも</rt></ruby>の河原</placeName>には、<ruby><rb>丸葉柳</rb><rt>まるはやなぎ</rt></ruby>が芽ぐんでいた。その<ruby><rb>礫</rb><rt>こいし</rt></ruby>の間には、自然咲の<ruby><rb>菫</rb><rt>すみれ</rt></ruby>や、<ruby><rb>蓮華</rb><rt>れんげ</rt></ruby>が各自の小さい春を領していた。河水は、<ruby><rb>日増</rb><rt>ひまし</rt></ruby>に水量を加えて、軽い<ruby><rb>藍色</rb><rt>あいいろ</rt></ruby>の水が、処々の川瀬にせかれて、<ruby><rb>淙々</rb><rt>そうそう</rt></ruby>の響を揚げた。</p>
+        <p>黒木を売る<ruby><rb>大原女</rb><rt>おはらめ</rt></ruby>の<ruby><rb>暢</rb><rt>の</rt></ruby>びやかな声までが春らしい心を<ruby><rb>唆</rb><rt>そそ</rt></ruby>った。<placeName ref="#edo">江戸</placeName>へ下る<placeName ref="#saigoku">西国</placeName>大名の行列が、毎日のように<placeName ref="#kyoto">都</placeName>の街々を過ぎた。彼等は<placeName ref="#sanjo">三条</placeName>の旅宿に二三日の<ruby><rb>逗留</rb><rt>とうりゅう</rt></ruby>をして、<placeName ref="#kyoto">都</placeName>の春を十分に楽しむと、また<ruby><rb>大鳥毛</rb><rt>おおとりげ</rt></ruby>の<ruby><rb>槍</rb><rt>やり</rt></ruby>を物々しげに振立てて、<placeName ref="#sanjo-ohashi">三条大橋</placeName>の橋板を、踏み<ruby><rb>轟</rb><rt>とどろ</rt></ruby>かしながら、<ruby><rb>遙</rb><rt>はるか</rt></ruby>な<ruby><rb>東路</rb><rt>あずまじ</rt></ruby>へと下るのであった。</p>
+        <p><placeName ref="#togoku">東国</placeName>から、<placeName ref="#kyushu">九州</placeName><placeName ref="#shikoku">四国</placeName>から、また<placeName ref="#koshiji"><ruby><rb>越路</rb><rt>こしじ</rt></ruby></placeName>の端からも、本山参りの<ruby><rb>善男善女</rb><rt>ぜんなんぜんにょ</rt></ruby>の群が、ぞろぞろと<placeName ref="#kyoto">都</placeName>をさして続いた。そして彼等も春の<placeName ref="#kyoto">都</placeName>の渦巻の中に、幾日かを過すのであった。</p>
+        <p>その<ruby><rb>裡</rb><rt>うち</rt></ruby>に、花が咲いたと云う消息が、<placeName ref="#kyoto">都</placeName>の人々の心を騒がし始めた。<placeName ref="#gion"><ruby><rb>祇園</rb><rt>ぎおん</rt></ruby></placeName><placeName ref="#kiyomizu"><ruby><rb>清水</rb><rt>きよみず</rt></ruby></placeName><placeName ref="#higashiyama"><ruby><rb>東山</rb><rt>ひがしやま</rt></ruby></placeName>一帯の花が<ruby><rb>先</rb><rt>ま</rt></ruby>ず開く、<placeName ref="#saga"><ruby><rb>嵯峨</rb><rt>さが</rt></ruby></placeName>や<placeName ref="#kitayama"><ruby><rb>北山</rb><rt>きたやま</rt></ruby></placeName>の花がこれに続く。こうして<placeName ref="#kyoto">都</placeName>の春は、<ruby><rb>愈々</rb><rt>いよいよ</rt></ruby><ruby><rb>爛熟</rb><rt>らんじゅく</rt></ruby>の色を<ruby><rb>為</rb><rt>な</rt></ruby>すのであった。</p>
+        <p>が、その年の<placeName ref="#kyoto">都</placeName>の人達の心を、一番<ruby><rb>烈</rb><rt>はげ</rt></ruby>しく狂わせていたのは、<placeName ref="#shijo">四条</placeName>中島<placeName ref="#mantayuza"><ruby><rb>都万太夫座</rb><rt>みやこまんだゆうざ</rt></ruby></placeName>の<persName ref="#tojuro">坂田藤十郎</persName>と<placeName ref="#hanzaemonza">山下半左衛門座</placeName>の<persName ref="#shichisaburo">中村七三郎</persName>との、去年から持越しの競争であった。</p>
+        <p><placeName ref="#sangatsu">三ヶ津</placeName>の<ruby><rb>総芸頭</rb><rt>そうげいがしら</rt></ruby>とまで、<ruby><rb>讃</rb><rt>たた</rt></ruby>えられた<persName ref="#tojuro">坂田藤十郎</persName>は<ruby><rb>傾城買</rb><rt>けいせいかい</rt></ruby>の<ruby><rb>上手</rb><rt>じょうず</rt></ruby>として、やつしの名人としては天下無敵の名を<ruby><rb>擅</rb><rt>ほしいまま</rt></ruby>にしていた。が、去年<date when="--11">霜月</date>、<persName ref="#hanzaemon">半左衛門</persName>の<ruby><rb>顔見世</rb><rt>かおみせ</rt></ruby>狂言に、東から上った<persName ref="#shichisaburo"><ruby><rb>少長</rb><rt>しょうちょう</rt></ruby></persName><persName ref="#shichisaburo">中村七三郎</persName>は、<placeName ref="#edo">江戸</placeName>歌舞伎の統領として、<persName ref="#tojuro">藤十郎</persName>と同じくやつしの名人であった。二人は同じやつしの名人として、<placeName ref="#edo">江戸</placeName>と<placeName ref="#kyoto">京</placeName>との歌舞伎の為にも、烈しく相争わねばならぬ宿縁を、持っているのであった。</p>
+        <p><placeName ref="#kyoto">京</placeName>の歌舞伎の役者達は、<persName ref="#shichisaburo">中村七三郎</persName>の<placeName ref="#kyoto">都</placeName>上りを聴いて、皆異常な緊張を示した。が、その人達の期待や恐怖を裏切って<persName ref="#shichisaburo">七三郎</persName>の顔見世狂言は、意外な不評であった。見物は口々に、</p>
+        <p>「<placeName ref="#edo">江戸</placeName>の名人じゃ、と云う程に、何ぞ珍らしい芸でもするのかと思っていたに、<placeName ref="#kyoto">都</placeName>の<persName ref="#tojuro">藤十郎</persName>には及び付かぬ腕じゃ」と<ruby><rb>罵</rb><rt>ののし</rt></ruby>った。<persName ref="#shichisaburo">七三郎</persName>を<ruby><rb>譏</rb><rt>そ</rt></ruby>しる者は、ただ<ruby><rb>素人</rb><rt>しろうと</rt></ruby>の見物だけではなかった。彼の舞台を見た役者達までも、</p>
+        <p>「<placeName ref="#edo">江戸</placeName>の<persName ref="#shichisaburo">少長</persName>は、評判倒れの御仁じゃ、<ruby><rb>尤</rb><rt>もっと</rt></ruby>も<placeName ref="#edo">江戸</placeName>と<placeName ref="#kyoto">京</placeName>とでは評判の目安も違うほどに<placeName ref="#edo">江戸</placeName>の名人は、<placeName ref="#kyoto">京</placeName>の上手にも及ばぬものじゃ。<ruby><rb>所詮</rb><rt>しょせん</rt></ruby><ruby><rb>物真似</rb><rt>ものまね</rt></ruby>狂言は<placeName ref="#kyoto">都</placeName>のものと極わまった」と、勝誇るように云い振れた。が、<persName ref="#shichisaburo">七三郎</persName>を譏しる<ruby><rb>噂</rb><rt>うわさ</rt></ruby>が、<persName ref="#tojuro">藤十郎</persName>の耳に入ると、彼は<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を<ruby><rb>顰</rb><rt>ひそ</rt></ruby>めながら、</p>
+        <p>「われらの見るところは、また別じゃ。<persName ref="#shichisaburo">少長</persName>どのは、まことに至芸のお人じゃ。われらには、<ruby><rb>怖</rb><rt>おそ</rt></ruby>ろしい大敵じゃ」と、只一人世評を<ruby><rb>斥</rb><rt>しりぞ</rt></ruby>けたのであった。</p>
+        <p>二</p>
+        <p>果して<persName ref="#tojuro">藤十郎</persName>の評価は、狂っていなかった。顔見世狂言にひどい不評を招いた<persName ref="#shichisaburo">中村七三郎</persName>は、年が改まると初春の狂言に、『<ruby><rb>傾城</rb><rt>けいせい</rt></ruby><ruby><rb>浅間</rb><rt>あさま</rt></ruby>ヶ<ruby><rb>嶽</rb><rt>だけ</rt></ruby>』を出して、<persName ref="#tomonojo"><ruby><rb>巴之丞</rb><rt>とものじょう</rt></ruby></persName>の役に<ruby><rb>扮</rb><rt>ふん</rt></ruby>した。<persName ref="#shichisaburo">七三郎</persName>の<persName ref="#tomonojo">巴之丞</persName>の評判は、すさまじいばかりであった。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>は、得意の<persName ref="#yugiri"><ruby><rb>夕霧</rb><rt>ゆうぎり</rt></ruby></persName><persName ref="#izaemon">伊左衛門</persName>を出して、これに対抗した。二人の名優が、舞台の上の競争は、<placeName ref="#kyoto">都</placeName>の人々の心を<ruby><rb>湧</rb><rt>わ</rt></ruby>き立たせるに十分であった。が新しき物を追うのは、人心の常である。<ruby><rb>口性</rb><rt>くちさが</rt></ruby>なき<ruby><rb>京童</rb><rt>きょうわらべ</rt></ruby>は、</p>
+        <p>「<persName ref="#tojuro">藤十郎</persName>どのの<persName ref="#izaemon"><ruby><rb>伊左衛門</rb><rt>いさえもん</rt></ruby></persName>は、いかにも見事じゃ、が、われらは幾度見たか数えられぬ程じゃ。去年の<date when="--03"><ruby><rb>弥生</rb><rt>やよい</rt></ruby></date>狂言も<ruby><rb>慥</rb><rt>たし</rt></ruby>か<persName ref="#izaemon">伊左衛門</persName>じゃ。もう<persName ref="#izaemon">伊左衛門</persName>には堪能いたしておるわ。それに比ぶれば、<persName ref="#shichisaburo">七三郎</persName>どのの<persName ref="#tomonojo">巴之丞</persName>は、<placeName ref="#kyoto">都</placeName>にて初ての狂言じゃ。<placeName ref="#kyoto">京</placeName>の<ruby><rb>濡事師</rb><rt>ぬれごとし</rt></ruby>とはまた違うて、やさしい<ruby><rb>裡</rb><rt>うち</rt></ruby>にも、<ruby><rb>東男</rb><rt>あずまおとこ</rt></ruby>のきついところがあるのが、てんと<ruby><rb>堪</rb><rt>たま</rt></ruby>らぬところじゃ」と口々に云い<ruby><rb>囃</rb><rt>はや</rt></ruby>した。</p>
+        <p>動き<ruby><rb>易</rb><rt>やす</rt></ruby>い<placeName ref="#kyoto">都</placeName>の人心は、十年<ruby><rb>讃嘆</rb><rt>さんたん</rt></ruby>し続けた<persName ref="#tojuro">藤十郎</persName>の王座から、ともすれば離れ始めそうな<ruby><rb>気勢</rb><rt>けはい</rt></ruby>を示した。<placeName ref="#mantayuza">万太夫座</placeName>の木戸よりも、<placeName ref="#hanzaemonza">半左衛門座</placeName>の木戸の方へと、より沢山の群衆が、流れ始めていた。</p>
+        <p>春狂言の期日が尽きると、<placeName ref="#mantayuza">万太夫座</placeName>は<ruby><rb>直</rb><rt>す</rt></ruby>ぐ千秋楽になったにも<ruby><rb>拘</rb><rt>かかわ</rt></ruby>らず、<placeName ref="#hanzaemonza">半左衛門座</placeName>は<ruby><rb>尚</rb><rt>なお</rt></ruby>打ち続けた。<date when="--02">二月</date>に入っても、客足は少しも落ちなかった。<date when="--02">二月</date>が終りになって、<ruby><rb>愈々</rb><rt>いよいよ</rt></ruby><date when="--03">弥生</date>狂言の季節が、近づいて来たのにも拘わらず、<persName ref="#shichisaburo">七三郎</persName>は尚<persName ref="#tomonojo">巴之丞</persName>の役に扮して、<placeName ref="#kyoto">都大路</placeName>の人気を一杯に背負うていた。</p>
+        <p>「<placeName ref="#hanzaemonza">半左衛門座</placeName>では、<date when="--03">弥生</date>狂言も『傾城浅間ヶ嶽』を打ち通すそうじゃが、かような例は、<persName ref="#sennojo">玉村千之丞</persName><ruby><rb>河内</rb><rt>かわち</rt></ruby>通いの狂言に、百五十日打ち続けて以来、絶えて聞かぬ事じゃ。<persName ref="#shichisaburo">七三郎</persName>どのの人気は、前代<ruby><rb>未聞</rb><rt>みもん</rt></ruby>じゃ」と、<ruby><rb>巷</rb><rt>ちまた</rt></ruby>の<ruby><rb>風説</rb><rt>うわさ</rt></ruby>は、ただこの<ruby><rb>沙汰</rb><rt>さた</rt></ruby>ばかりのようであった。</p>
+        <p>こうした<ruby><rb>噂</rb><rt>うわさ</rt></ruby>が、かまびすしくなるにつれ、<ruby><rb>私</rb><rt>ひそか</rt></ruby>に腕を<ruby><rb>拱</rb><rt>こまね</rt></ruby>いて考え始めたのは、<persName ref="#tojuro">坂田藤十郎</persName>であった。</p>
+        <p><placeName ref="#sangatsu">三ヶ津</placeName>総芸頭と云う美称を、長い間享受して来た<persName ref="#tojuro">藤十郎</persName>は、自分の芸に<ruby><rb>就</rb><rt>つい</rt></ruby>ては、何等の不安もないと共に、十分な自信を持っていた。過ぐる<ruby><rb>未年</rb><rt>ひつじどし</rt></ruby>に<persName ref="#danjuro"><ruby><rb>才牛</rb><rt>さいぎゅう</rt></ruby></persName><persName ref="#danjuro">市川団十郎</persName>が、<placeName ref="#nihon">日本</placeName>随市川のかまびすしい名声を<ruby><rb>担</rb><rt>にの</rt></ruby>うて、<ruby><rb>東</rb><rt>あずま</rt></ruby>からはるばると、<placeName ref="#kyoto">都</placeName>の<placeName ref="#chokichiza"><ruby><rb>早雲長吉座</rb><rt>はやぐもちょうきちざ</rt></ruby></placeName>に上って来た時も、<persName ref="#tojuro">藤十郎</persName>の自信はビクともしなかった。『お<placeName ref="#edo">江戸</placeName><persName ref="#danjuro">団十郎</persName>見しゃいな』と、<placeName ref="#edo">江戸</placeName>の人々が誇るこの珍客を見る為めに、<placeName ref="#kyoto">都</placeName>の人々が<ruby><rb>雪崩</rb><rt>なだれ</rt></ruby>を<ruby><rb>為</rb><rt>な</rt></ruby>して、<placeName ref="#chokichiza">長吉座</placeName>に押し寄せて行った時も、<persName ref="#tojuro">藤十郎</persName>は少しも騒がなかった。<ruby><rb>殊</rb><rt>こと</rt></ruby>に、彼が初めて<persName ref="#danjuro">団十郎</persName>の舞台を見た時に、彼は心の中で<ruby><rb>窃</rb><rt>ひそか</rt></ruby>に<placeName ref="#edo">江戸</placeName>の歌舞伎を<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>した。彼は、<persName ref="#danjuro">団十郎</persName>が一流編み出したと云う荒事を見て、何と云う粗野な興ざめた芸だろうと思って、彼の腹心の弟子の<persName ref="#kyoemon">山下京右衛門</persName>が、</p>
+        <p>「<ruby><rb>太夫</rb><rt>たゆう</rt></ruby>様、<persName ref="#danjuro">団十郎</persName>の芸をいかが<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>さる、<placeName ref="#edo">江戸</placeName>自慢の荒事とやらをどう思召さる」と<ruby><rb>訊</rb><rt>き</rt></ruby>いた時、彼は<ruby><rb>慎</rb><rt>つつ</rt></ruby>ましやかな苦笑を<ruby><rb>洩</rb><rt>もら</rt></ruby>しながら「<ruby><rb>実事</rb><rt>じつごと</rt></ruby>の奥義の解せぬ人達のする事じゃ。また実事の面白さの解せぬ人達の見る芝居じゃ」と、一言の下に<ruby><rb>貶</rb><rt>けな</rt></ruby>し去った。が今度の<persName ref="#shichisaburo">七三郎</persName>に対しては、<persName ref="#danjuro">才牛</persName>をあしろうたようには行かなかった。</p>
+        <p>三</p>
+        <p>と、云って<persName ref="#tojuro">藤十郎</persName>は、<ruby><rb>妄</rb><rt>むげ</rt></ruby>に<persName ref="#shichisaburo">七三郎</persName>を恐れているのではない。もとより、<persName ref="#danjuro">団十郎</persName>の幼稚な<ruby><rb>児騙</rb><rt>ちごだま</rt></ruby>しにも似た荒事とは違うて、人間の真実な<ruby><rb>動作</rb><rt>しうち</rt></ruby>をさながらに、<ruby><rb>模</rb><rt>うつ</rt></ruby>している<persName ref="#shichisaburo">七三郎</persName>の芸を十分に尊敬もすれば、恐れもした。が、<persName ref="#tojuro">藤十郎</persName>は芸能と云う点からだけでは、自分が<persName ref="#shichisaburo">七三郎</persName>に<ruby><rb>微塵</rb><rt>みじん</rt></ruby>も劣らないばかりでなく、<ruby><rb>寧</rb><rt>むし</rt></ruby>ろ<ruby><rb>右際勝</rb><rt>みぎわまさ</rt></ruby>りであることを十分に信じた。従って、今まで足り満ちていた<persName ref="#tojuro">藤十郎</persName>の心に不安な空虚と不快な動揺とを植え付けたのは、<persName ref="#shichisaburo">七三郎</persName>との対抗などと云う事よりも、もっと深いもっと本質的なある物であった。</p>
+        <p>彼は、二十の年から四十幾つと云う今まで、何の不安もなしに、<ruby><rb>濡事師</rb><rt>ぬれごとし</rt></ruby>に<ruby><rb>扮</rb><rt>ふん</rt></ruby>して来た。そして、<persName ref="#tojuro">藤十郎</persName>の<ruby><rb>傾城買</rb><rt>けいせいかい</rt></ruby>と云えば、<ruby><rb>竜骨車</rb><rt>りゅうこしゃ</rt></ruby>にたよる里の童にさえも、聞えている。また<placeName ref="#kyoto">京</placeName>の三座見物達も<persName ref="#tojuro">藤十郎</persName>の傾城買の狂言と言えば、何時もながら惜し気もない<ruby><rb>喝采</rb><rt>かっさい</rt></ruby>を送っていた。彼が、<persName ref="#izaemon">伊左衛門</persName>の<ruby><rb>紙衣姿</rb><rt>かみこすがた</rt></ruby>になりさえすれば、見物はたわいもなく喝采した。少しでも客足が薄くなると、彼は定まって、<persName ref="#izaemon">伊左衛門</persName>に扮した。しかも、彼の<persName ref="#izaemon">伊左衛門</persName>役は、トラムプの切札か何かのように、多くの見物と喝采とを、<persName ref="#tojuro">藤十郎</persName>に保証するのであった。</p>
+        <p>が、彼は心の<ruby><rb>裡</rb><rt>うち</rt></ruby>で、<ruby><rb>何時</rb><rt>いつ</rt></ruby>となしに、自分の芸に対する不安を感じていた。いつも、同じような役に扮して、舌たるい傾城を相手の<ruby><rb>台詞</rb><rt>せりふ</rt></ruby>を云うことが、彼の心の中に、ぼんやりとした不快を起すことが<ruby><rb>度</rb><rt>たび</rt></ruby>重なるようになっていた。が、彼は<ruby><rb>未</rb><rt>ま</rt></ruby>だいいだろう、未だいいだろうと思いながら一日延ばしのように、自分の<ruby><rb>仕馴</rb><rt>しな</rt></ruby>れた喝采を<ruby><rb>獲</rb><rt>う</rt></ruby>るに<ruby><rb>極</rb><rt>きま</rt></ruby>った狂言から、脱け出そうと云う気を起さなかったのである。</p>
+        <p>こうした<persName ref="#tojuro">藤十郎</persName>の心に、<ruby><rb>怖</rb><rt>おそ</rt></ruby>ろしい警鐘は到頭伝えられたのだ。「また何時もながら<persName ref="#izaemon">伊左衛門</persName>か、<persName ref="#tojuro">藤十郎</persName>どのの紙衣姿は、もう幾度見たか、数えきれぬ程じゃ」と、云う<ruby><rb>巷</rb><rt>ちまた</rt></ruby>の評判は、<persName ref="#tojuro">藤十郎</persName>に取っては致命的な言葉であった。彼が、怖れたのは<persName ref="#shichisaburo">七三郎</persName>と云う敵ではなかった。彼の大敵は、彼自身の芸が行き詰まっていることである。今までは、比較される物のない為に、彼の芸が行き詰まっている事が、無智な見物には分らなかったのである。彼は、<persName ref="#shichisaburo">七三郎</persName>の<persName ref="#tomonojo">巴之丞</persName>を見た時に、傾城買の世界とは、丸きり違った新しい世界が、舞台の上に、浮き出されている事を感じない訳には、行かなかった。ただ浮ついた根も葉もないような傾城買の狂言とは違うて、一歩深く人の心の裡に踏み入った世界が、舞台の上に展開されて来るのを認めない訳には行かなかった。見物は、傾城買の狂言から、たわいもなく<persName ref="#shichisaburo">七三郎</persName>の舞台へ、<ruby><rb>惹</rb><rt>ひ</rt></ruby>き付けられて行った。が、<persName ref="#tojuro">藤十郎</persName>は、見物のたわいもない<ruby><rb>妄動</rb><rt>もうどう</rt></ruby>の裡に、深い<ruby><rb>尤</rb><rt>もっと</rt></ruby>もな理由のあるのを、看取しない訳には行かなかったのである。</p>
+        <p>小手先の芸の問題ではなかった。彼は、もっと深い大切なところで、若輩の<persName ref="#shichisaburo">七三郎</persName>に一足取残されようとしたのである。<persName ref="#shichisaburo">七三郎</persName>の<persName ref="#tomonojo">巴之丞</persName>が、<placeName ref="#kyoto"><ruby><rb>洛中</rb><rt>らくちゅう</rt></ruby>洛外</placeName>の人気を<ruby><rb>唆</rb><rt>そそ</rt></ruby>って、<date when="--03">弥生</date>狂言をも、同じ<ruby><rb>芸題</rb><rt>だしもの</rt></ruby>で打ち続けると云う噂を聞きながら、<persName ref="#tojuro">藤十郎</persName>は烈しい<ruby><rb>焦躁</rb><rt>しょうそう</rt></ruby>と不安の胸を抑えて、じっと思案の手を<ruby><rb>拱</rb><rt>こま</rt></ruby>ぬいたのである。その時に、ふと彼の心に浮んだのは、<placeName ref="#naniwa"><ruby><rb>浪華</rb><rt>なにわ</rt></ruby></placeName>に住んでいる<persName ref="#chikamatsu">近松門左衛門</persName>の事であった。</p>
+        <p>四</p>
+        <p>それは、<date when="--02">二月</date>のある宵であった。<placeName ref="#shijo">四条</placeName><ruby><rb>中東</rb><rt>ちゅうとう</rt></ruby>の<placeName ref="#kyoto">京</placeName>の端、<placeName ref="#kamogawa"><ruby><rb>鴨川</rb><rt>かもがわ</rt></ruby></placeName>の流近く<ruby><rb>瀬鳴</rb><rt>せなり</rt></ruby>の音が、手に取って聞えるような茶屋<placeName ref="#soseichaya"><ruby><rb>宗清</rb><rt>むねせい</rt></ruby></placeName>の大広間で、<placeName ref="#mantayuza">万太夫座</placeName>の<date when="--03">弥生</date>狂言の顔つなぎの宴が開かれていた。</p>
+        <p>広間の中央、床柱を背にして、<ruby><rb>銀燭</rb><rt>ぎんしょく</rt></ruby>の光を真向に浴びながら、どんすの<ruby><rb>鏡蒲団</rb><rt>かがみぶとん</rt></ruby>の上に、<ruby><rb>悠</rb><rt>ゆ</rt></ruby>ったりと坐り、心持<ruby><rb>脇息</rb><rt>きょうそく</rt></ruby>に身を<ruby><rb>靠</rb><rt>もた</rt></ruby>せているのは、<persName ref="#tojuro">坂田藤十郎</persName>であった。茶せんに結った色白の面は、四十を越した男とは、思われぬ程の美しさに輝いて見えた。下には<ruby><rb>鼠縮緬</rb><rt>ねずみちりめん</rt></ruby>の<ruby><rb>引</rb><rt>ひっ</rt></ruby>かえしを着、上には黒<ruby><rb>羽二重</rb><rt>はぶたえ</rt></ruby>の<ruby><rb>両面芥子人形</rb><rt>ふたつめんけしにんぎょう</rt></ruby>の<ruby><rb>加賀紋</rb><rt>かがもん</rt></ruby>の羽織を打ちかけ、<ruby><rb>宗伝唐茶</rb><rt>そうでんからちゃ</rt></ruby>の畳帯をしめていた。<persName ref="#tojuro">藤十郎</persName>の右に坐っているのは、一座の<ruby><rb>若女形</rb><rt>わかおやま</rt></ruby>の<persName ref="#senju"><ruby><rb>切波千寿</rb><rt>きりなみせんじゅ</rt></ruby></persName>であった。<ruby><rb>白小袖</rb><rt>しろこそで</rt></ruby>の上に、紫縮緬の二つ重ねを着、<ruby><rb>虎膚天鵞絨</rb><rt>とらふびろうど</rt></ruby>の羽織に、紫の<ruby><rb>野良帽子</rb><rt>やろう</rt></ruby>をいただいた<ruby><rb>風情</rb><rt>ふぜい</rt></ruby>は、さながら女の如く<ruby><rb>艶</rb><rt>なま</rt></ruby>めかしい、この二人を囲んで、一座の道化方、くゎしゃ方、若衆方などの人々が、それぞれ華美な風俗の限を尽して居並んでいた。その中に、只一人千筋の羽織を着た質素な風俗をした二十五六の男は、<placeName ref="#mantayuza">万太夫座</placeName>の若太夫であった。彼は、先刻から酒席の間を、<ruby><rb>彼方此方</rb><rt>あっちこっち</rt></ruby>と廻って、酒宴の興を取持っていたが、<ruby><rb>漸</rb><rt>ようや</rt></ruby>く<ruby><rb>酩酊</rb><rt>めいてい</rt></ruby>したらしい顔に満面の微笑を<ruby><rb>湛</rb><rt>たた</rt></ruby>えながら、<persName ref="#tojuro">藤十郎</persName>の前に改めて<ruby><rb>畏</rb><rt>かしこ</rt></ruby>まると、恐る恐る<ruby><rb>酒盃</rb><rt>さかずき</rt></ruby>を前に出した。</p>
+        <p>「さあ、もう一つお受け下されませ。今度の<date when="--03">弥生</date>狂言は、<persName ref="#chikamatsu">近松</persName>様の趣向で、歌舞伎始まっての珍らしい狂言じゃと、<placeName ref="#kyoto">都</placeName>の中はただこの噂ばかりじゃげにござります。傾城買の<ruby><rb>所作</rb><rt>しょさ</rt></ruby>は<placeName ref="#nihon">日本</placeName>無双と云われた<ruby><rb>御身様</rb><rt>おみさま</rt></ruby>じゃが、道ならぬ恋のいきかたは、又格別の御思案がござりましょうなハハハハ」と、巧な<ruby><rb>追従</rb><rt>ついしょう</rt></ruby>笑いに語尾を濁した。と、<persName ref="#tojuro">藤十郎</persName>と居並んでいる<persName ref="#senju">切波千寿</persName>は、急に美しい微笑を<ruby><rb>洩</rb><rt>もら</rt></ruby>しながら、</p>
+        <p>「ホンに若太夫殿の云う通じゃ。<persName ref="#tojuro">藤十郎</persName>様には、その辺の御思案が、もうちゃんと付いている<ruby><rb>筈</rb><rt>はず</rt></ruby>じゃ。われなどは、ただ<persName ref="#tojuro">藤十郎</persName>様に<ruby><rb>操</rb><rt>あやつ</rt></ruby>られて<ruby><rb>傀儡</rb><rt>くぐつ</rt></ruby>のように動けばよいのじゃ」と、<ruby><rb>合槌</rb><rt>あいづち</rt></ruby>を打った。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>は、若太夫の差した酒盃を、受け取りはしたものの、彼の言葉にも、<persName ref="#senju">千寿</persName>の言葉にも、一言も返しをしなかった。彼は、酒の味が、急に苦くなったように、心持顔を<ruby><rb>顰</rb><rt>しか</rt></ruby>めながら、グット一気にその酒盃を飲み<ruby><rb>乾</rb><rt>ほ</rt></ruby>したばかりであった。</p>
+        <p>彼は、<ruby><rb>今宵</rb><rt>こよい</rt></ruby>の酒宴が、始まって以来、何気ない風に酒盃を重ねてはいたものの、心の<ruby><rb>裡</rb><rt>うち</rt></ruby>には、可なり烈しい芸術的な<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>が、渦巻いているのであった。</p>
+        <p>彼が、<persName ref="#chikamatsu">近松門左衛門</persName>に、急飛脚を飛ばして、割なく頼んだことは、即座に<ruby><rb>叶</rb><rt>かな</rt></ruby>えられたのであった。今までの傾城買とは、裏と表のように、打ち変った狂言として、<persName ref="#chikamatsu">門左衛門</persName>が<persName ref="#tojuro">藤十郎</persName>に書与えた狂言は、浮ついた陽気なたわいもない傾城買の濡事とは違うて、命を<ruby><rb>賭</rb><rt>と</rt></ruby>しての色事であった。打ち沈んだ陰気な、懸命な命を捨ててする濡事であった。芸題は『<ruby><rb>大経師</rb><rt>だいきょうじ</rt></ruby><ruby><rb>昔暦</rb><rt>むかしごよみ</rt></ruby>』と云って、<placeName ref="#kyoto">京</placeName>の人々の、記憶にはまだ新しい<placeName ref="#muromachi-dori"><ruby><rb>室町</rb><rt>むろまち</rt></ruby>通</placeName>の大経師の女房<persName ref="#osan">おさん</persName>が、<ruby><rb>手代</rb><rt>てだい</rt></ruby><persName ref="#mouemon"><ruby><rb>茂右衛門</rb><rt>もえもん</rt></ruby></persName>と不義をして、<placeName ref="#awataguchi"><ruby><rb>粟田口</rb><rt>あわたぐち</rt></ruby></placeName>に刑死するまでの、<ruby><rb>呪</rb><rt>のろ</rt></ruby>われた命懸けの恋の狂言であった。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>の芸に取って、<ruby><rb>其処</rb><rt>そこ</rt></ruby>に新しい世界が開かれた。がそれと同時に、前代<ruby><rb>未聞</rb><rt>みもん</rt></ruby>の狂言に対する不安と焦慮とは、自信の強い彼の心にも<ruby><rb>萌</rb><rt>きざ</rt></ruby>さない訳には行かなかった。</p>
+        <p>五</p>
+        <p><persName ref="#tojuro">藤十郎</persName>の心に、そうした屈託があろうとは、夢にも気付かない若太夫は、芝居国の国王たる<persName ref="#tojuro">藤十郎</persName>の<ruby><rb>機嫌</rb><rt>きげん</rt></ruby>を、<ruby><rb>如何</rb><rt>いか</rt></ruby>にもして取結ぼうと思ったらしく、</p>
+        <p>「この狂言に比べましては、<persName ref="#shichisaburo">七三郎</persName>殿の『浅間ヶ嶽』の狂言も<ruby><rb>童</rb><rt>わらべ</rt></ruby>たらしのように、曲ものう見えまするわ。前代未聞の<ruby><rb>密夫</rb><rt>みそかお</rt></ruby>の狂言とは、さすがに<persName ref="#chikamatsu">門左衛門</persName>様の御趣向じゃ。それに付けましても、<persName ref="#tojuro">坂田様</persName>にはこうした変った恋のお覚えもござりましょうなハハハハ」と、時にとっての座興のように高々と笑った。</p>
+        <p>今まで、おし黙っていた<persName ref="#tojuro">藤十郎</persName>の堅い<ruby><rb>唇</rb><rt>くちびる</rt></ruby>が、<ruby><rb>綻</rb><rt>ほころ</rt></ruby>びたかと思うと、「左様な事、何のあってよいものか」と、苦りきって吐き出すように云った。「<persName ref="#tojuro">藤十郎</persName>は、生れながらの色好みじゃが、まだ人の女房と<ruby><rb>念頃</rb><rt>ねんごろ</rt></ruby>した覚えはござらぬわ」と、冷めたい苦笑を<ruby><rb>洩</rb><rt>もら</rt></ruby>しながら付け加えた。若太夫は、座興の<ruby><rb>積</rb><rt>つもり</rt></ruby>で云った<ruby><rb>諧謔</rb><rt>たわむれ</rt></ruby>を、<ruby><rb>真向</rb><rt>まっこう</rt></ruby>から突き飛ばされて、興ざめ顔に黙ってしまった。</p>
+        <p>傍に坐っていた<persName ref="#senju">切波千寿</persName>は、一座が白けるのを恐れたのであろう。<ruby><rb>取做</rb><rt>とりな</rt></ruby>し顔に、微笑を含みながら、</p>
+        <p>「ほんに、<persName ref="#tojuro">坂田様</persName>の云われる通じゃ。この<persName ref="#senju">千寿</persName>とても、主ある女房と、念ごろした事はないわいな」と、云いながら女のように美しい口を<ruby><rb>掩</rb><rt>おお</rt></ruby>うた。</p>
+        <p>が、<persName ref="#tojuro">藤十郎</persName>は、前よりも<ruby><rb>一際</rb><rt>ひときわ</rt></ruby>、苦りきったままであった。彼は今心の裡で、<ruby><rb>僅</rb><rt>わず</rt></ruby>か三日の後に迫った初日を控えて、芸の苦心に肝胆を砕いていたのである。彼に取って、<ruby><rb>其処</rb><rt>そこ</rt></ruby>に可なり危険な試金石が<ruby><rb>横</rb><rt>よこた</rt></ruby>わっている。『あれ見よ、密夫の狂言とは、名ばかりで相も変らぬ<persName ref="#tojuro">藤十郎</persName>じゃ』と、云われては、自分の芸は永久に<ruby><rb>廃</rb><rt>すた</rt></ruby>れるのだと、彼は心の裡に、覚悟の<ruby><rb>臍</rb><rt>ほぞ</rt></ruby>を堅めていた。ただ、相手の傾城が、人妻に変ったばかりで、昔ながらの<persName ref="#tojuro">藤十郎</persName>だとは、夢にも云わせてはならないと、心の裡に思い定めていた。</p>
+        <p>が、それかと云って、<persName ref="#tojuro">藤十郎</persName>は、自分で口に出して云った通、道ならぬ恋をした覚はさらさらなかったのである。元より、歌舞伎役者の常として、<ruby><rb>色子</rb><rt>いろこ</rt></ruby>として舞台を踏んだ十二三の頃から、数多くの色々の色情生活を<ruby><rb>閲</rb><rt>けみ</rt></ruby>している。四十を越えた今日までには幾十人の女を知ったか分らない。彼の姿絵を、床の下に敷きながら、<ruby><rb>焦</rb><rt>こが</rt></ruby>れ死んだ娘や、彼に対する恋の<ruby><rb>叶</rb><rt>かな</rt></ruby>わぬ悲しみから、<placeName ref="#kiyomizu"><ruby><rb>清水</rb><rt>きよみず</rt></ruby></placeName>の舞台から身を投げた女さえない事はない。が、こうした生活にも<ruby><rb>拘</rb><rt>かかわ</rt></ruby>らず、天性<ruby><rb>律義</rb><rt>りちぎ</rt></ruby>な<persName ref="#tojuro">藤十郎</persName>は、若い時から、不義非道な色事には、一指をだに染めることをしなかった。そうした誘惑に接する<ruby><rb>毎</rb><rt>ごと</rt></ruby>に、彼は猛然として、これと戦って来ている。彼が、役者にも似合わず『<persName ref="#tojuro">藤十郎</persName>殿は、物堅い御仁じゃ』と、云われて、芝居国の長者として、周囲から、尊敬されているのも、一つにはこうした訳からでもあった。</p>
+        <p>従って、彼は、過去の経験から、人妻を盗むような必死な、空恐ろしい、それと同時に身を焼くように<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい恋に近い場合を、色々と尋ねてみたが、彼のどの恋もどの恋も極めて正当な、物柔かな恋であって、冬の海のように恐ろしい恋や、夏の太陽のような烈しい恋の場合は、どう考えても頭に浮んでは来なかった。</p>
+        <p>六</p>
+        <p><ruby><rb>傾城買</rb><rt>けいせいかい</rt></ruby>の<ruby><rb>経緯</rb><rt>いきさつ</rt></ruby>なれば、どんなに微妙にでも、演じ得ると云う自信を持った<persName ref="#tojuro">藤十郎</persName>も、人妻との<ruby><rb>呪</rb><rt>のろ</rt></ruby>われた悪魔的な、道ならぬ<ruby><rb>然</rb><rt>しか</rt></ruby>し懸命な必死の恋を、舞台の上にどう<ruby><rb>演活</rb><rt>しいか</rt></ruby>してよいかは、ほとほと思案の及ばぬところであった。これまでの歌舞伎狂言と云えば、傾城買のたわいもない戯れか、でなければ<ruby><rb>物真似</rb><rt>ものまね</rt></ruby>の道化に尽きていた為に、こうした<ruby><rb>密夫</rb><rt>みそかお</rt></ruby>の狂言などに、<ruby><rb>頼</rb><rt>たのま</rt></ruby>れるような前代の名優の仕残した型などは、<ruby><rb>微塵</rb><rt>みじん</rt></ruby>も残っていなかった。それかと云って、彼はこうした場合に、打ち明けて<ruby><rb>智慧</rb><rt>ちえ</rt></ruby>を借るべき、相談相手を持っていなかった。彼の<persName ref="#mouemon">茂右衛門</persName>に、<persName ref="#osan">おさん</persName>を勤める<persName ref="#senju">切波千寿</persName>は、天性の<ruby><rb>美貌</rb><rt>びぼう</rt></ruby>一つが、彼の舞台の<ruby><rb>凡</rb><rt>すべ</rt></ruby>てであった。ただ、<persName ref="#tojuro">藤十郎</persName>の指図のままに、傀儡のごとく動くのが、彼の<ruby><rb>演伎</rb><rt>えんぎ</rt></ruby>の凡てであったのだ。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>は、自分自身の<ruby><rb>肝脳</rb><rt>あたま</rt></ruby>を<ruby><rb>搾</rb><rt>しぼ</rt></ruby>るより外には、工夫の仕方もなかったのである。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>の不機嫌の背後に、そうした根本的な屈託が、潜んでいるとは気のつかない一座の人々は、白け始めようとする酒宴の座を、どうかして引き立たせようと、思ったのだろう、五十に手の届きそうな道化方の老優は、<ruby><rb>傍</rb><rt>そば</rt></ruby>に坐っていた二十を出たばかりの、<ruby><rb>野良帽子</rb><rt>やろう</rt></ruby>を着た美しい若衆方を促し立てながら、おどけた<ruby><rb>連舞</rb><rt>つれまい</rt></ruby>を舞い始めた。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>は、二人の舞を振向きもしないで、日頃には似ず、大杯を重ねて四度ばかり、したたかに飲み乾すと、<ruby><rb>俄</rb><rt>にわか</rt></ruby>に発して来た酔に、座には<ruby><rb>得</rb><rt>え</rt></ruby><ruby><rb>堪</rb><rt>た</rt></ruby>えられぬように、つと席を立ちながら、河原に臨んだ広い縁に出た。</p>
+        <p>河原の<ruby><rb>闇</rb><rt>やみ</rt></ruby>の底を流れる川水が、ほのかな光を放っている外は、<ruby><rb>晦日</rb><rt>みそか</rt></ruby>に近い夜の空は曇って、星一つさえ見えなかった。声ばかり飛び交うているかのように、闇のなかに千鳥が、ちちと鳴きしきっていた。</p>
+        <p>歌舞伎の長者として、王者のように誇を、持っていた<persName ref="#tojuro">藤十郎</persName>の心も、<ruby><rb>蹴合</rb><rt>けあわ</rt></ruby>せに負けた<ruby><rb>鶏</rb><rt>とり</rt></ruby>のように<ruby><rb>悄気</rb><rt>しょげ</rt></ruby>きってしまっていた。彼が、座を立った為に、上からの圧迫の取れたように、急にはずみかけた酒宴の席のさわがしいどよめきを、<ruby><rb>後</rb><rt>あと</rt></ruby>にしながら、彼は知らず知らず静寂な場所を求めて、勝手を知った<placeName ref="#soseichaya">宗清</placeName>の部屋々々を通り抜けながら、奥の離座敷を志した。</p>
+        <p><ruby><rb>母屋</rb><rt>おもや</rt></ruby>からは一段と、河原の中に突出ている離座敷には、人の<ruby><rb>気勢</rb><rt>けはい</rt></ruby>もなかった。ただほんのりと<ruby><rb>灯</rb><rt>とも</rt></ruby>っている、<ruby><rb>絹行燈</rb><rt>きぬあんどん</rt></ruby>の光の裡に、美しい調度などが、春の夜に<ruby><rb>適</rb><rt>ふさわ</rt></ruby>しい<ruby><rb>艶</rb><rt>なま</rt></ruby>めいた静けさを保っていた。<persName ref="#tojuro">藤十郎</persName>は、人影の見えぬのを心の中に<ruby><rb>欣</rb><rt>よろこ</rt></ruby>んだ。彼は、床の間に置いてあった<ruby><rb>脇息</rb><rt>きょうそく</rt></ruby>を、取り下すと、それに右の<ruby><rb>肱</rb><rt>ひじ</rt></ruby>を<ruby><rb>靠</rb><rt>もた</rt></ruby>せながら、身を横ざまに伸したのである。</p>
+        <p>が、騒々しい酒宴の席から、身を<ruby><rb>脱</rb><rt>のが</rt></ruby>れた欣びは、<ruby><rb>直</rb><rt>す</rt></ruby>ぐ消えてしまって、芸の苦心が再びひしひしと胸に迫って来る。明日からは<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>が始まる。<ruby><rb>肝腎要</rb><rt>かんじんかなめ</rt></ruby>の<persName ref="#mouemon">茂右衛門</persName>の行き方が、<ruby><rb>定</rb><rt>きま</rt></ruby>らいでは相手の<persName ref="#osan">おさん</persName>も、その他の人々もどう動いてよいか、思案の仕様もないことになる。<ruby><rb>己</rb><rt>おの</rt></ruby>が工夫が<ruby><rb>拙</rb><rt>まず</rt></ruby>うては、<persName ref="#chikamatsu">近松門左</persName>が心を砕いた前代未聞の狂言も、あたら京童の笑い草にならぬとも限らない。こう思いながら、<persName ref="#tojuro">藤十郎</persName>は胸の中に渦巻いている、もどかしさを抑えながら、<ruby><rb>一途</rb><rt>いちず</rt></ruby>に心をその方へ振り向けようとあせった。</p>
+        <p>その時である。母屋の方から、とんとんと離座敷を指して来る人の足音が、聞えて来た。</p>
+        <p>七</p>
+        <p>折角、さわがしい酒席を<ruby><rb>逃</rb><rt>のが</rt></ruby>れて、求め得た静かな場所で、芸の苦心を凝らそうと思っていた<persName ref="#tojuro">藤十郎</persName>は、自分の方へ近づいて来る人の足音を聞いて、心持<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を<ruby><rb>顰</rb><rt>しか</rt></ruby>めぬ訳には行かなかった。</p>
+        <p>が、近づいて来る足音の主は、<ruby><rb>此処</rb><rt>ここ</rt></ruby>に<persName ref="#tojuro">藤十郎</persName>が居ようなどとは、夢にも気付かないらしく、足早に長い廊下を通り抜けて、この部屋に近づくままに、女性らしい<ruby><rb>衣</rb><rt>きぬ</rt></ruby>ずれの音をさせたかと思うと、会釈もなく部屋の障子を押し開いた。が、<ruby><rb>其処</rb><rt>そこ</rt></ruby>に横たわっていた<persName ref="#tojuro">藤十郎</persName>の姿を見ると、<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>して<ruby><rb>敷居際</rb><rt>しきいぎわ</rt></ruby>に立ち<ruby><rb>竦</rb><rt>すく</rt></ruby>んでしまった。</p>
+        <p>「あれ、<persName ref="#tojuro"><ruby><rb>藤</rb><rt>とう</rt></ruby>様</persName>はここにおわしたのか。これはこれはいかい粗相を」と、云いながら、女は直ぐ障子を閉ざして、去ろうとしたが、又立ち直って、「ほんに、このように冷える処で、そうして御座って、御<ruby><rb>風邪</rb><rt>かぜ</rt></ruby>など召すとわるい。どれ、私が夜のものをかけて進ぜましょう」と、云いながら、部屋の<ruby><rb>片隅</rb><rt>かたすみ</rt></ruby>の押入から、夜具を取り下ろそうとしている。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>は、最初足音を聞いた時、召使の者であろうと思ったので、彼は寝そべったまま、起き直ろうとはしなかった。が、それが意外にも、<placeName ref="#soseichaya">宗清</placeName>の主人<persName ref="#soyama-seibei"><ruby><rb>宗山清兵衛</rb><rt>むねやませいべえ</rt></ruby></persName>の女房<persName ref="#okaji">お<ruby><rb>梶</rb><rt>かじ</rt></ruby></persName>であると知ると、彼は起き上って、<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>居ずまいを正しながら、</p>
+        <p>「いやこれは、いかい御雑作じゃのう」と、会釈をした。</p>
+        <p><persName ref="#okaji">お梶</persName>は、もう四十に近かったが、<placeName ref="#miyagawacho">宮川町</placeName>の<ruby><rb>歌妓</rb><rt>うたいめ</rt></ruby>として、若い頃に<ruby><rb>嬌名</rb><rt>きょうめい</rt></ruby>を<ruby><rb>謳</rb><rt>うた</rt></ruby>われた面影が、そっくりと白い細面の顔に、ありありと残っている。<ruby><rb>浅黄絖</rb><rt>あさぎぬめ</rt></ruby>の<ruby><rb>引</rb><rt>ひき</rt></ruby>かえしに折びろうどの帯をしめ、薄色の<ruby><rb>絹足袋</rb><rt>きぬたび</rt></ruby>をはいた<ruby><rb>年増</rb><rt>としま</rt></ruby>姿は、又なく<ruby><rb>艶</rb><rt>えん</rt></ruby>に美しかった。<persName ref="#tojuro">藤十郎</persName>は、昔から、<persName ref="#okaji">お梶</persName>を知っている。若衆方の随一の美形と云われた<persName ref="#tojuro">藤十郎</persName>が美しいか、歌妓の<persName ref="#okaji">お梶</persName>が美しいかと云う物争いは、二十年の昔には、<placeName ref="#shijo">四条</placeName>の茶屋に遊ぶ大尽達の口に上った事さえある。その頃からの<ruby><rb>馴染</rb><rt>なじみ</rt></ruby>である。が、<persName ref="#tojuro">藤十郎</persName>は、今までに、<persName ref="#okaji">お梶</persName>の姿を心にとめて、見たこともない。ただ路傍の花に対するような、淡々たる一<ruby><rb>瞥</rb><rt>べつ</rt></ruby>を与えていたに過ぎなかった。</p>
+        <p>が、<ruby><rb>今宵</rb><rt>こよい</rt></ruby>は、この人妻の姿が、云い知れぬ魅力を<ruby><rb>以</rb><rt>もっ</rt></ruby>て、ぐんぐんと彼の眼の中に、迫って来るのを覚えた。<ruby><rb>密夫</rb><rt>みそかお</rt></ruby>と云う彼にとっては、<ruby><rb>未</rb><rt>いま</rt></ruby>だ踏んでみた事のない恋の領域の事を、この四五日、一心に思い詰めていた為だろう。今までは余り彼の念頭になかった人妻と云う女性の特別な種類が、彼の心に不思議な魅力を持ち始めて、今<persName ref="#okaji">お梶</persName>の姿となって、ぐんぐん迫って来るように覚えた。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>の<persName ref="#okaji">お梶</persName>を見詰める<ruby><rb>眸</rb><rt>ひとみ</rt></ruby>が、異常な興奮で、燃え始めたのは無論である。人妻であると云う道徳的な<ruby><rb>柵</rb><rt>しがらみ</rt></ruby>が<ruby><rb>取払</rb><rt>とりはらわ</rt></ruby>れて、その古木が<ruby><rb>却</rb><rt>かえ</rt></ruby>って、彼の慾情を<ruby><rb>培</rb><rt>つちか</rt></ruby>う、<ruby><rb>薪木</rb><rt>たきぎ</rt></ruby>として投ぜられたようである。彼は、娘や後家や歌妓や遊女などに、相対した時には、かつふつ<ruby><rb>懐</rb><rt>いだ</rt></ruby>いた事のないような、不思議な物狂わしい情熱が、彼の心と身体とを、沸々燃やし始めたのである。</p>
+        <p>八</p>
+        <p><persName ref="#tojuro">藤十郎</persName>の心にそうした、物狂わしい<ruby><rb>颷風</rb><rt>ひょうふう</rt></ruby>が起っていようとは、夢にも気付かないらしい<persName ref="#okaji">お<ruby><rb>梶</rb><rt>かじ</rt></ruby></persName>は押入れから<ruby><rb>白絖</rb><rt>しろぬめ</rt></ruby>の<ruby><rb>夜着</rb><rt>よぎ</rt></ruby>を取出すと、<persName ref="#tojuro">藤十郎</persName>の背後に廻りながら、ふうわりと着せかけた。</p>
+        <p>白鳥の胸毛か何かのように、暖い柔かい、夜着の感触を身体一面に<ruby><rb>味</rb><rt>あじわ</rt></ruby>った時、<persName ref="#tojuro">藤十郎</persName>の<persName ref="#okaji">お梶</persName>に対する異常な興奮は、危く爆発しようとした。が、彼の<ruby><rb>律義</rb><rt>りちぎ</rt></ruby>な人格は、<ruby><rb>咄嗟</rb><rt>とっさ</rt></ruby>に彼の慾情の<ruby><rb>妄動</rb><rt>もうどう</rt></ruby>をきっぱりと、制し得たのである。<persName ref="#tojuro">藤十郎</persName>は、<persName ref="#soyama-seibei">宗山清兵衛</persName>の事を考えた。また、貞淑と云う<ruby><rb>噂</rb><rt>うわさ</rt></ruby>の高い<persName ref="#okaji">お梶</persName>の事を考えた。そして自分が、今まで色事をしながらも、正しい道を踏み<ruby><rb>外</rb><rt>はず</rt></ruby>さなかったと云う自分自身の誇を考えた。彼の<persName ref="#okaji">お梶</persName>に対して懐いた<ruby><rb>嵐</rb><rt>あらし</rt></ruby>のような激動は、<ruby><rb>忽</rb><rt>たちま</rt></ruby>ち<ruby><rb>和</rb><rt>な</rt></ruby>ぎ始めたのである。</p>
+        <p><persName ref="#okaji">お梶</persName>は、<ruby><rb>平素</rb><rt>いつも</rt></ruby>の通の<persName ref="#okaji">お梶</persName>であった。彼女は夜着を着せてしまうと「さあ、お休みなされませ。<ruby><rb>彼方</rb><rt>あちら</rt></ruby>へ行ったら女どもに、水など運ばせましょうわいな」と、愛想笑いを残して足早に部屋を出ようとした。その<ruby><rb>刹那</rb><rt>せつな</rt></ruby>である。<persName ref="#tojuro">藤十郎</persName>の心にある悪魔的な思付がムラムラと<ruby><rb>湧</rb><rt>わ</rt></ruby>いて来た。それは恋ではなかった。それは<ruby><rb>烈</rb><rt>はげ</rt></ruby>しい慾情ではなかった。それは、恐ろしいほど冷めたい理性の思付であった。恋の場合には可なり<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>であった<persName ref="#tojuro">藤十郎</persName>は、あたかも別人のように、先刻の興奮は、丸きり嘘であったかのように、冷静に、</p>
+        <p>「<persName ref="#okaji">お梶</persName>どの、ちと待たせられい」と、呼び止めた。</p>
+        <p>「何ぞ、外に御用があってか」と、<persName ref="#okaji">お梶</persName>は無邪気に、振り返った。<ruby><rb>剃</rb><rt>そ</rt></ruby>り落とした<ruby><rb>眉毛</rb><rt>まゆげ</rt></ruby>の後が青々と浮んで見える色白の美顔は、<ruby><rb>絹行燈</rb><rt>きぬあんどん</rt></ruby>の<ruby><rb>灯影</rb><rt>ほかげ</rt></ruby>を浴びて、ほんのりと<ruby><rb>艶</rb><rt>なま</rt></ruby>めかしかった。</p>
+        <p>「ちと、御意を得たいことがある程に、坐ってたもらぬか」こう云いながら、<persName ref="#tojuro">藤十郎</persName>は、心持ち女の方へ<ruby><rb>膝</rb><rt>ひざ</rt></ruby>をすすませた。</p>
+        <p><persName ref="#okaji">お梶</persName>は、<persName ref="#tojuro">藤十郎</persName>の息込み方に、少し不安を、感じたのであろう。<persName ref="#tojuro">藤十郎</persName>には、余り近寄らないで、其処に置いてある絹行燈の蔭に、<ruby><rb>踞</rb><rt>うずく</rt></ruby>まるように坐った。</p>
+        <p>「改まって何の用ぞいのうおほほほ」と、何気なく笑いながらも、<ruby><rb>稍</rb><rt>やや</rt></ruby><ruby><rb>面映</rb><rt>おもは</rt></ruby>ゆげに<persName ref="#tojuro">藤十郎</persName>の顔を打ち仰いだ。<persName ref="#tojuro">藤十郎</persName>の<ruby><rb>声音</rb><rt>こわね</rt></ruby>は、今までとは打って変って、低いけれども、<ruby><rb>然</rb><rt>しか</rt></ruby>しながら力強い響を持っていた。</p>
+        <p>「<persName ref="#okaji">お梶</persName>どの。別儀ではござらぬが、この<persName ref="#tojuro">藤十郎</persName>は、そなたに二十年来隠していた事がある。それを今宵は是非にも、聴いて<ruby><rb>貰</rb><rt>もら</rt></ruby>いたいのじゃ。思い出せば、古いことじゃが、そなたが十六で、われらが<ruby><rb>二十</rb><rt>はたち</rt></ruby>の秋じゃったが、<ruby><rb>祇園祭</rb><rt>ぎおんまつり</rt></ruby>の折に、河原の掛小屋で二人一緒に、<ruby><rb>連舞</rb><rt>つれまい</rt></ruby>を舞うたことを、よもや忘れはしやるまいなあ。われらが、そなたを見たのは、あの時が初めてじゃ。<placeName ref="#miyagawacho">宮川町</placeName>の<persName ref="#okaji">お梶</persName>どのと云えば、いかに美しい<ruby><rb>若女形</rb><rt>わかおやま</rt></ruby>でも、足下にも及ぶまいと、<ruby><rb>兼々</rb><rt>かねがね</rt></ruby>人の<ruby><rb>噂</rb><rt>うわさ</rt></ruby>に聴いていたが、そなたの美しさがよもあれ程であろうとは、夢にも思い及ばなかったのじゃ」と、こう云いながら、<persName ref="#tojuro">藤十郎</persName>はその大きい眼を半眼に閉じながら、美しかった青春の夢を、うっとりと追うているような眼付をするのであった。</p>
+        <p>九</p>
+        <p>「その時からじゃ。そなたを、世にも<ruby><rb>稀</rb><rt>まれ</rt></ruby>な美しい人じゃと、思い染めたのは」と、<persName ref="#tojuro">藤十郎</persName>は、<persName ref="#okaji">お梶</persName>の方へ<ruby><rb>双膝</rb><rt>もろひざ</rt></ruby>を進ませながら、必死の色を<ruby><rb>眸</rb><rt>ひとみ</rt></ruby>に浮べて、こう云いきった。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>に呼び止められた時から、ある不安な期待に、胸をとどろかせていた<persName ref="#okaji">お梶</persName>は最初はこの美しい男の口から、自分達の<ruby><rb>華</rb><rt>はな</rt></ruby>やかな青春の日の、<ruby><rb>想出話</rb><rt>おもいでばなし</rt></ruby>を聴かされて、魅せられたように、ほのぼのと二つの<ruby><rb>頬</rb><rt>ほお</rt></ruby>を薄紅に染めていたが、相手の言葉が、急な転回を示してからは、その顔の色は刹那に<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめて、蹲くまっている<ruby><rb>華奢</rb><rt>きゃしゃ</rt></ruby>な<ruby><rb>身体</rb><rt>からだ</rt></ruby>は、わなわなと<ruby><rb>戦</rb><rt>おのの</rt></ruby>き始めていた。</p>
+        <p><persName ref="#tojuro">藤十郎</persName>は、恋をする男とは、どうしても受取れぬ程の、澄んだ冷たい眼付で、顔さえ<ruby><rb>擡</rb><rt>もた</rt></ruby>げ得ぬ女を刺し<ruby><rb>透</rb><rt>とお</rt></ruby>す程に、鋭く見詰めていながら、声だけには、烈しい熱情に<ruby><rb>顫</rb><rt>ふる</rt></ruby>えているような響を持たせて、</p>
+        <p>「そなたを見染めた当座は、折があらば云い寄ろうと、始終念じてはいたものの、若衆方の身は親方の<ruby><rb>掟</rb><rt>おきて</rt></ruby>が<ruby><rb>厳</rb><rt>きび</rt></ruby>しゅうて、寸時も心には<ruby><rb>委</rb><rt>まか</rt></ruby>せぬ身体じゃ。ただ心は、焼くように思い<ruby><rb>焦</rb><rt>こが</rt></ruby>れても、<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>は<ruby><rb>機</rb><rt>おり</rt></ruby>を待つより外はないと、<ruby><rb>諦</rb><rt>あきら</rt></ruby>めている内に、二十の声を聞くや聞かずに、そなたは<persName ref="#soyama-seibei">清兵衛</persName>殿の思われ人となってしまわれた。その折のわれらが無念は、今思い出しても、この胸が張り裂くるようでおじゃるわ」こう云いながら、<persName ref="#tojuro">藤十郎</persName>は座にもえ<ruby><rb>堪</rb><rt>た</rt></ruby>えぬような、巧みな<ruby><rb>身悶</rb><rt>みもだ</rt></ruby>えをして見せたが、そうした恋を語りながらも、彼の二つの眸だけは、相変らず<ruby><rb>爛々</rb><rt>らんらん</rt></ruby>たる冷たい光を放って、女の息づかいから<ruby><rb>容子</rb><rt>ようす</rt></ruby>までを、恐ろしきまでに見詰めている。</p>
+        <p><persName ref="#okaji">お梶</persName>の顔の色は、彼女の心の恐ろしい激動をさながらに、映し出していた。一旦蒼ざめきってしまった色が、反動的に段々薄赤くなると共に、その二つの眼には、熱病患者に見るような、<ruby><rb>直</rb><rt>すぐ</rt></ruby>にも火が<ruby><rb>点</rb><rt>つ</rt></ruby>きそうな<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい色を<ruby><rb>湛</rb><rt>たた</rt></ruby>え始めた。</p>
+        <p>「人妻になったそなたを恋い慕うのは人間のする事ではないと、心で<ruby><rb>強</rb><rt>きつ</rt></ruby>う制統しても、止まらぬは凡夫の想じゃ。そなたの<ruby><rb>噂</rb><rt>うわさ</rt></ruby>を聴くにつけ、面影を見るにつけ、二十年のその間、そなたの事を忘れた日は、ただ一日もおじゃらぬわ」彼は、一語一語に、一句一句に巧な、今までの彼の舞台上の<ruby><rb>凡</rb><rt>すべ</rt></ruby>ての演戯にも、打ち<ruby><rb>勝</rb><rt>まさ</rt></ruby>った程の仕打を見せながら、しかも人妻をかき口説く、<ruby><rb>恐怖</rb><rt>おそれ</rt></ruby>と不安とを交えながら、小鳥のように<ruby><rb>竦</rb><rt>すく</rt></ruby>んでいる女の方へ、詰め寄せるのであった。</p>
+        <p>「が、この<persName ref="#tojuro">藤十郎</persName>も、人妻に恋をしかけるような非道な事は、なすまじいと、明暮燃え<ruby><rb>熾</rb><rt>さか</rt></ruby>る心をじっと抑えて来たのじゃが、われらも今年四十五じゃ、人間の<ruby><rb>定命</rb><rt>じょうみょう</rt></ruby>はもう近い。これ程の恋を――二十年来<ruby><rb>偲</rb><rt>しの</rt></ruby>びに偲んだこれ程の想を、この世で一言も打ち明けいで、<ruby><rb>何時</rb><rt>いつ</rt></ruby>の世誰にか語るべきと、思うに付けても、物狂わしゅうなるまでに、心が<ruby><rb>擾</rb><rt>みだ</rt></ruby>れ申して、かくの有様じゃ。のう、<persName ref="#okaji">お梶</persName>どの、<persName ref="#tojuro">藤十郎</persName>をあわれと<ruby><rb>思召</rb><rt>おぼしめ</rt></ruby>さば、たった一言情ある言葉を、なあ……」と、<persName ref="#tojuro">藤十郎</persName>は狂うばかりに身悶えしながら、女の近くへ身をすり寄せている。ただ恋に狂うている<ruby><rb>筈</rb><rt>はず</rt></ruby>の、彼の<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>ばかりは、<ruby><rb>刃</rb><rt>やいば</rt></ruby>のように澄みきっていた。</p>
+        <p>余りの激動に<ruby><rb>堪</rb><rt>た</rt></ruby>えかねたのであろう、<persName ref="#okaji">お梶</persName>は、</p>
+        <p>「わっ」と、泣き<ruby><rb>俯</rb><rt>ふ</rt></ruby>してしまった。</p>
+        <p>一〇</p>
+        <p>恐ろしい魔女が、その魅力の犠牲者を、見詰めるように、<persName ref="#tojuro">藤十郎</persName>は泣き俯した<persName ref="#okaji">お梶</persName>を、じっと見詰めていた。彼の<ruby><rb>唇</rb><rt>くちびる</rt></ruby>の辺には、<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい程の冷たい表情が浮んでいた。が、それにも<ruby><rb>拘</rb><rt>かかわ</rt></ruby>らず、声と動作とは、恋に狂うた男に<ruby><rb>適</rb><rt>ふさわ</rt></ruby>しい熱情を、持っている。</p>
+        <p>「のう、<persName ref="#okaji">お梶</persName>どの。そなたは、この<persName ref="#tojuro">藤十郎</persName>の恋を、あわれとは<ruby><rb>思</rb><rt>おぼ</rt></ruby>さぬか。二十年来、<ruby><rb>堪</rb><rt>た</rt></ruby>え忍んで来た恋を、あわれとは思さぬか。さても、<ruby><rb>強</rb><rt>きつ</rt></ruby>いお人じゃのう」こう云いながら、<persName ref="#tojuro">藤十郎</persName>は、相手の返事を待った。が、女はよよと、すすり泣いているばかりであった。</p>
+        <p><ruby><rb>灯</rb><rt>ひ</rt></ruby>を慕って来た千鳥だろう。銀の<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>を使うような澄んだ声が、瀬音にも紛れず、手に取るように聞えて来る。女も<persName ref="#tojuro">藤十郎</persName>も、おし黙ったまま、<ruby><rb>暫</rb><rt>しばら</rt></ruby>くは<ruby><rb>時刻</rb><rt>とき</rt></ruby>が移った。</p>
+        <p>「<persName ref="#tojuro">藤十郎</persName>の切ない恋を、<ruby><rb>情</rb><rt>つれ</rt></ruby>なくするとは、さても気強いお人じゃのう、舞台の上の色事では<placeName ref="#nihon">日本</placeName>無双の<persName ref="#tojuro">藤十郎</persName>も、そなたにかかっては、たわいものう振られ申したわ」と<persName ref="#tojuro">藤十郎</persName>は、<ruby><rb>淋</rb><rt>さび</rt></ruby>しげな苦笑を<ruby><rb>洩</rb><rt>もら</rt></ruby>した。</p>
+        <p>と、今まで泣き俯していた女は、ふと<ruby><rb>面</rb><rt>おもて</rt></ruby>を上げた。</p>
+        <p>「<persName ref="#tojuro">藤様</persName>、今<ruby><rb>仰</rb><rt>おっしゃ</rt></ruby>った事は、皆本心かいな」</p>
+        <p>女の声は、消え入るようであった。その唇が<ruby><rb>微</rb><rt>かす</rt></ruby>かに<ruby><rb>痙攣</rb><rt>けいれん</rt></ruby>した。</p>
+        <p>「何の、てんごうを云うてなるものか、人妻に云い寄るからは、命を投げ出しての恋じゃ」と、いうかと思うと、<persName ref="#tojuro">藤十郎</persName>の顔も、さっと<ruby><rb>蒼白</rb><rt>そうはく</rt></ruby>に変じてしまった。浮腰になっている彼の<ruby><rb>膝</rb><rt>ひざ</rt></ruby>が、かすかに<ruby><rb>顫</rb><rt>ふる</rt></ruby>いを帯び始めた。</p>
+        <p>必死の覚悟を定めたらしい<persName ref="#okaji">お梶</persName>は、火のような瞳で、男の顔を一目見ると、いきなり傍の絹行燈の灯を、フッと吹き消してしまった。</p>
+        <p>恐ろしい沈黙が、<ruby><rb>其処</rb><rt>そこ</rt></ruby>にあった。</p>
+        <p><persName ref="#okaji">お梶</persName>は、身体中の毛髪が<ruby><rb>悉</rb><rt>ことごと</rt></ruby>く<ruby><rb>逆立</rb><rt>さかだ</rt></ruby>つような恐ろしさと、身体中の血潮が悉く<ruby><rb>湧</rb><rt>わ</rt></ruby>き立つような情熱とで、男の近寄るのを待っていた。が、男の苦しそうな<ruby><rb>息遣</rb><rt>いきづか</rt></ruby>いが、聞えるばかりで、相手は身動きもしないようであった。<persName ref="#okaji">お梶</persName>も居竦んだまま、身体をわなわなと顫わせているばかりであった。</p>
+        <p>突如、<persName ref="#tojuro">藤十郎</persName>の立ち上る<ruby><rb>気勢</rb><rt>けはい</rt></ruby>がした。<persName ref="#okaji">お梶</persName>は、今こそと覚悟を定めていた。が、男は<persName ref="#okaji">お梶</persName>の傍を、影のようにすりぬけると、灯のない<ruby><rb>闇</rb><rt>やみ</rt></ruby>を、手探りに廊下へ出たかと思うと、母屋の灯影を<ruby><rb>目的</rb><rt>めあて</rt></ruby>に<ruby><rb>獣</rb><rt>けもの</rt></ruby>のように、足速く走り去ってしまったのである。</p>
+        <p>×</p>
+        <p>闇の中に取残された<persName ref="#okaji">お梶</persName>は、人間の女性が受けた最も皮肉な残酷な<ruby><rb>辱</rb><rt>はずか</rt></ruby>しめを受けて、闇の中に石のように、突立っていた。</p>
+        <p><ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>としては、命取りの悪戯であった。侮辱としては、この世に二つとはあるまじい侮辱であった。が、<persName ref="#okaji">お梶</persName>は、<persName ref="#tojuro">藤十郎</persName>からこれ程の悪戯や侮辱を受くる<ruby><rb>理由</rb><rt>いわれ</rt></ruby>を、どうしても考え出せないのに苦しんだ。それと共に、この恐ろしい誘惑の為に、自分の操を捨てようとした――否、<ruby><rb>殆</rb><rt>ほとん</rt></ruby>ど捨ててしまった罪の恐ろしさに、彼女は<ruby><rb>腸</rb><rt>はらわた</rt></ruby>をずたずたに切られるようであった。</p>
+        <p>一一</p>
+        <p>酒宴の席に帰った<persName ref="#tojuro">藤十郎</persName>は、人間の<ruby><rb>面</rb><rt>かお</rt></ruby>とは思えないほどの、<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい顔をしていた。が、彼は、勧められるままに大盃を五つ六つばかり飲み<ruby><rb>乾</rb><rt>ほ</rt></ruby>すと、血走った眼に、<persName ref="#senju"><ruby><rb>切波千寿</rb><rt>きりなみせんじゅ</rt></ruby></persName>の方を向きながら、</p>
+        <p>「<persName ref="#senju">千寿</persName>どの<ruby><rb>安堵</rb><rt>あんど</rt></ruby>めされい。<persName ref="#tojuro">藤十郎</persName>、この<ruby><rb>度</rb><rt>たび</rt></ruby>の狂言の工夫が悉く成り申したわ」と云いながら、<ruby><rb>声高</rb><rt>こわだか</rt></ruby>に笑って見せた。が、その声は、地獄の<ruby><rb>亡者</rb><rt>もうじゃ</rt></ruby>の笑い声のようにしわがれた<ruby><rb>空</rb><rt>から</rt></ruby>っぽな、気味の悪い声であった。</p>
+        <p>×</p>
+        <p><date when="--03-01"><ruby><rb>弥生</rb><rt>やよい</rt></ruby><ruby><rb>朔日</rb><rt>ついたち</rt></ruby></date>から、<placeName ref="#mantayuza">万太夫座</placeName>では<ruby><rb>愈々</rb><rt>いよいよ</rt></ruby><persName ref="#chikamatsu">近松門左</persName>が書き下しの狂言の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>が開かれた。<persName ref="#tojuro">藤十郎</persName>の<persName ref="#mouemon">茂右衛門</persName>と<persName ref="#senju">切波千寿</persName>の<persName ref="#osan">おさん</persName>との<ruby><rb>密夫</rb><rt>みそかお</rt></ruby>の狂言は、恐ろしきまで真に迫って、<placeName ref="#kyoto"><ruby><rb>洛中</rb><rt>らくちゅう</rt></ruby>洛外</placeName>の評判かまびすしく、<date when="--01">正月</date>から打ち続けて勝ち誇っていた<placeName ref="#hanzaemonza">山下座</placeName>の<persName ref="#shichisaburo">中村七三郎</persName>の評判も、月の前の<ruby><rb>螢火</rb><rt>ほたるび</rt></ruby>のように、見る影もなく消されてしまった。</p>
+        <p>が、この興行の評判に連れて、<ruby><rb>京童</rb><rt>きょうわらべ</rt></ruby>の口にこうした<ruby><rb>揷話</rb><rt>そうわ</rt></ruby>が伝えられた。それは、『<persName ref="#tojuro">藤十郎</persName>殿は、この度の狂言の工夫には、ある茶屋の女房に偽って恋をしかけ、女が<ruby><rb>靡</rb><rt>なび</rt></ruby>いて灯を吹き消す時、急いで<ruby><rb>逃</rb><rt>のが</rt></ruby>れたとの事じゃが、さすがは三国一の名人の心掛だけある』と云う<ruby><rb>噂</rb><rt>うわさ</rt></ruby>であった。</p>
+        <p>『偽にもせよ、<persName ref="#tojuro">藤十郎</persName>殿から恋をしかけられた女房も、三国一の果報者じゃ』と、<ruby><rb>艶</rb><rt>なま</rt></ruby>めいた<placeName ref="#kyoto">京</placeName>の女達は、こう云い添えた。</p>
+        <p>こうした噂までが、<ruby><rb>愈</rb><rt>いや</rt></ruby>が上に、この狂言の人気を<ruby><rb>唆</rb><rt>そそ</rt></ruby>った。</p>
+        <p>来る日も、来る日も、<ruby><rb>潮</rb><rt>うしお</rt></ruby>のような見物が明け方から<placeName ref="#mantayuza">万太夫座</placeName>の周囲に渦を巻いていた。</p>
+        <p><date when="--03">弥生</date>の半ばであったろう。或朝、<placeName ref="#mantayuza">万太夫座</placeName>の道具方が、楽屋の<ruby><rb>片隅</rb><rt>かたすみ</rt></ruby>の<ruby><rb>梁</rb><rt>はり</rt></ruby>に、<ruby><rb>縊</rb><rt>くび</rt></ruby>れて死んだ中年の女を<ruby><rb>見出</rb><rt>みいだ</rt></ruby>した。それは、紛れもなく<placeName ref="#soseichaya"><ruby><rb>宗清</rb><rt>むねせい</rt></ruby></placeName>の女房<persName ref="#okaji">お梶</persName>であった。<persName ref="#okaji">お梶</persName>は、<placeName ref="#soseichaya">宗清</placeName>とは屋続きの<placeName ref="#mantayuza">万太夫座</placeName>に忍び入って、其処を最期の死場所と定めたのである。その死因に<ruby><rb>就</rb><rt>つい</rt></ruby>ても、京童は色々に、<ruby><rb>口性</rb><rt>くちさが</rt></ruby>ない噂を立てた。が<ruby><rb>誰人</rb><rt>たれ</rt></ruby>も<persName ref="#tojuro">藤十郎</persName>の偽りの恋の相手が、貞淑の聞え高い<persName ref="#okaji">お梶</persName>だとは思いも及ばなかった。</p>
+        <p>ただ、<persName ref="#okaji">お梶</persName>の死を聴いた<persName ref="#tojuro">藤十郎</persName>は、雷に打たれたように色を<ruby><rb>易</rb><rt>か</rt></ruby>えた。が彼は心の<ruby><rb>中</rb><rt>うち</rt></ruby>で、</p>
+        <p>『<persName ref="#tojuro">藤十郎</persName>の芸の為には、一人や二人の女の命は』と、幾度も力強く繰り返した。が、そう繰り返してみたものの、彼の心に出来た目に見えぬ深手は、折にふれ、時にふれ彼を<ruby><rb>苛</rb><rt>さいな</rt></ruby>まずにはいなかった。</p>
+        <p><persName ref="#okaji">お梶</persName>が、楽屋で縊れた事までが、<placeName ref="#mantayuza">万太夫座</placeName>の人気を<ruby><rb>培</rb><rt>つちか</rt></ruby>った。</p>
+        <p><persName ref="#okaji">お梶</persName>が、死んで以来、<persName ref="#tojuro">藤十郎</persName>の<persName ref="#mouemon">茂右衛門</persName>の芸は、愈々<ruby><rb>冴</rb><rt>さ</rt></ruby>えて行った。彼の<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>は、人妻を奪う罪深い男の苦悩を、ありありと刻んでいた。彼が<persName ref="#osan">おさん</persName>と暗闇で手を引き合う時、密夫の恐怖と不安と、罪の<ruby><rb>怖</rb><rt>おそろ</rt></ruby>しさとが、身体一杯に<ruby><rb>溢</rb><rt>あふ</rt></ruby>れていた。</p>
+        <p>其処には、<persName ref="#tojuro">藤十郎</persName>が<persName ref="#mouemon">茂右衛門</persName>か、<persName ref="#mouemon">茂右衛門</persName>が<persName ref="#tojuro">藤十郎</persName>か、何の差別もないようであった。恐らく<persName ref="#tojuro">藤十郎</persName>自身、人の女房に云い寄る恐ろしさを、肝に銘じていた為であろう。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

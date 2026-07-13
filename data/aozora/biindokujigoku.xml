@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>瓶詰地獄</title>
+        <author>夢野久作</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>瓶詰地獄</title><author>夢野久作</author>
+          <note>青空文庫。底本：「夢野久作怪奇幻想傑作選　あやかしの鼓」角川ホラー文庫、角川書店。1998（平成10）年4月10日初版発行。初出：「猟奇」。1928（昭和3）年10月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000096/card2381.html">https://www.aozora.gr.jp/cards/000096/card2381.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="taro">
+        <persName>市川太郎</persName>
+        <note>無人島に漂着した兄。第二の瓶の手記の書き手で「――太郎記す」と署名する。第三の瓶(実際には最初に書かれた手紙)に「市川　太郎」と本名を記す</note>
+      </person>
+      <person xml:id="ayako">
+        <persName>市川アヤ子</persName>
+        <note>太郎の妹。漂着時7歳。第三の瓶に「イチカワ　アヤコ」と片仮名で署名する。本文の地の文では一貫して「アヤ子」表記で、@ref で統合</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kamisama-no-ashidai">
+        <placeName>神様の足凳</placeName>
+        <note>兄妹が漂着した無人島の高い崖に、二人自身が付けた名(「私たちが、神様の足凳と呼んでいる、あの高い崖」)。祈りの場であり投身の場。作中の架空の島の地物のため座標なし</note>
+      </place>
+      <place xml:id="xx-jima">
+        <placeName>××島</placeName>
+        <note>冒頭の書簡の差出人「××島村役場」の島。底本で伏字(××)にされており実在の島名は特定できないため座標なし</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>宗教的世界観上の場所。「地獄の火焔」および「この美しい、楽しい島はもうスッカリ地獄です」として現れ、表題「瓶詰地獄」に対応する。座標なし</note>
+      </place>
+      <place xml:id="tengoku">
+        <placeName>天国</placeName>
+        <note>宗教的世界観上の場所。「この島は天国のようでした」として、後の「地獄」と対をなす比喩的言及。座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <p>拝呈　時下益々御清栄、<ruby><rb>奉慶賀候</rb><rt>けいがたてまつりそうろう</rt></ruby>。<ruby><rb>陳者</rb><rt>のぶれば</rt></ruby>、<ruby><rb>予</rb><rt>かね</rt></ruby>てより御通達の、潮流研究用と<ruby><rb>覚</rb><rt>おぼ</rt></ruby>しき、赤<ruby><rb>封蝋</rb><rt>ふうろう</rt></ruby>附きの<ruby><rb>麦酒</rb><rt>ビール</rt></ruby>瓶、拾得次第<ruby><rb>届告</rb><rt>とどけつげ</rt></ruby>仕る様、島民一般に<ruby><rb>申渡置候処</rb><rt>もうしわたしおきそうろうところ</rt></ruby>、此程、本島南岸に、別小包の如き、樹脂封蝋附きの<ruby><rb>麦酒</rb><rt>ビール</rt></ruby>瓶が三個漂着致し居るを発見、<ruby><rb>届出申候</rb><rt>とどけいでもうしそうろう</rt></ruby>。右は<ruby><rb>何</rb><rt>いず</rt></ruby>れも約半里、<ruby><rb>乃至</rb><rt>ないし</rt></ruby>、一里余を隔てたる個所に、或は砂に埋もれ、又は岩の隙間に固く挟まれ居りたるものにて、よほど以前に漂着致したるものらしく、中味も、御高示の如き、官製<ruby><rb>端書</rb><rt>はがき</rt></ruby>とは相見えず、雑記帳の破片様のものらしく候為め、御下命の如き漂着の時日等の記入は不可能と<ruby><rb>被為存候</rb><rt>ぞんぜられそうろう</rt></ruby>。然れ共、<ruby><rb>尚</rb><rt>なお</rt></ruby>何かの御参考と存じ、三個とも封瓶のまま、村費にて御送附<ruby><rb>申上候間</rb><rt>もうしあげそうろうあいだ</rt></ruby>、<ruby><rb>何卒</rb><rt>なにとぞ</rt></ruby>御落手<ruby><rb>相願度</rb><rt>あいねがいたく</rt></ruby>、此段<ruby><rb>得貴意候</rb><rt>きいをえそうろう</rt></ruby>　敬具</p>
+        <p>月　　　日</p>
+        <p><placeName ref="#xx-jima">××島</placeName>村役場㊞</p>
+        <p>海洋研究所　御中</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>◇第一の瓶の内容</head>
+        <p>ああ………この離れ島に、救いの舟がとうとう来ました。</p>
+        <p>大きな二本のエントツの舟から、ボートが二艘、荒浪の上におろされました。舟の上から、それを見送っている人々の中にまじって、私たちのお父さまや、お母さまと思われる、なつかしいお姿が見えます。そうして……おお……私たちの方に向って、白いハンカチを振って下さるのが、ここからよくわかります。</p>
+        <p>お父さまや、お母さまたちはきっと、私たちが一番はじめに出した、ビール瓶の手紙を御覧になって、助けに来て下すったに違いありませぬ。</p>
+        <p>大きな船から真白い煙が出て、今助けに行くぞ……というように、高い高い笛の音が聞こえて来ました。その音が、この小さな島の中の、<ruby><rb>禽鳥</rb><rt>とり</rt></ruby>や<ruby><rb>昆虫</rb><rt>むし</rt></ruby>を一時に飛び立たせて、遠い<ruby><rb>海中</rb><rt>わだなか</rt></ruby>に消えて行きました。</p>
+        <p>けれども、それは、私たち二人にとって、最後の審判の日の<ruby><rb>箛</rb><rt>らっぱ</rt></ruby>よりも怖ろしい<ruby><rb>響</rb><rt>ひびき</rt></ruby>で御座いました。私たちの前で天と地が裂けて、神様のお眼の光りと、<placeName ref="#jigoku">地獄</placeName>の<ruby><rb>火焔</rb><rt>ほのお</rt></ruby>が<ruby><rb>一時</rb><rt>いっとき</rt></ruby>に<ruby><rb>閃</rb><rt>ひら</rt></ruby>めき出たように思われました。</p>
+        <p>ああ。手が<ruby><rb>慄</rb><rt>ふる</rt></ruby>えて、心が<ruby><rb>倉皇</rb><rt>あわて</rt></ruby>て書かれませぬ。涙で眼が見えなくなります。</p>
+        <p>私たち二人は、今から、あの大きな船の真正面に在る高い崖の上に登って、お父様や、お母様や、救いに来て下さる水夫さん達によく見えるように、シッカリと抱き合ったまま、深い淵の中に身を投げて死にます。そうしたら、いつも、あそこに泳いでいるフカが、間もなく、私たちを喰べてしまってくれるでしょう。そうして、あとには、この手紙を詰めたビール瓶が一本浮いているのを、ボートに乗っている人々が見つけて、拾い上げて下さるでしょう。</p>
+        <p>ああ。お父様。お母様。すみません。すみません、すみません、すみません。私たちは初めから、あなた方の<ruby><rb>愛子</rb><rt>いとしご</rt></ruby>でなかったと思って諦らめて下さいませ。</p>
+        <p>又、せっかく、遠い<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>から、私たち二人を、わざわざ助けに来て下すった皆様の御親切に対しても、こんなことをする私たち二人はホントにホントに済みません。どうぞどうぞお<ruby><rb>赦</rb><rt>ゆる</rt></ruby>し下さい。そうして、お父様と、お母様に<ruby><rb>懐</rb><rt>いだ</rt></ruby>かれて、人間の世界へ帰る、喜びの時が来ると同時に、死んで行かねばならぬ、<ruby><rb>不倖</rb><rt>ふしあわせ</rt></ruby>な私たちの運命を、お<ruby><rb>矜恤</rb><rt>あわれみ</rt></ruby>下さいませ。</p>
+        <p>私たちは、こうして私たちの肉体と<ruby><rb>霊魂</rb><rt>たましい</rt></ruby>を罰せねば、犯した罪の<ruby><rb>報償</rb><rt>つぐのい</rt></ruby>が出来ないのです。この離れ島の中で、私たち二人が犯した、それはそれは恐ろしい<ruby><rb>悖戻</rb><rt>よこしま</rt></ruby>の<ruby><rb>報責</rb><rt>むくい</rt></ruby>なのです。</p>
+        <p>どうぞ、これより<ruby><rb>以上</rb><rt>うえ</rt></ruby>に懺悔することを、おゆるし下さい。私たち二人はフカの餌食になる<ruby><rb>価打</rb><rt>ねうち</rt></ruby>しか無い、<ruby><rb>狂妄</rb><rt>しれもの</rt></ruby>だったのですから……。</p>
+        <p>ああ。さようなら。</p>
+        <p>神様からも人間からも救われ得ぬ</p>
+        <p>哀しき二人より</p>
+        <p>お父様</p>
+        <p>お母様</p>
+        <p>皆々様</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>◇第二の瓶の内容</head>
+        <p>ああ。<ruby><rb>隠微</rb><rt>かくれ</rt></ruby>たるに<ruby><rb>鑒</rb><rt>み</rt></ruby>たまう神様よ。</p>
+        <p>この<ruby><rb>困難</rb><rt>くるしみ</rt></ruby>から救わるる道は、私が死ぬよりほかに、どうしても無いので御座いましょうか。</p>
+        <p>私たちが、<placeName ref="#kamisama-no-ashidai">神様の<ruby><rb>足凳</rb><rt>あしだい</rt></ruby></placeName>と呼んでいる、あの高い崖の上に私がたった一人で登って、いつも二、三匹のフカが遊び泳いでいる、あの底なしの淵の中を、のぞいてみた事は、今までに何度あったかわかりませぬ。そこから今にも身を投げようと思ったことも、いく<ruby><rb>度</rb><rt>たび</rt></ruby>であったか知れませぬ。けれども、そのたんびに、あの<ruby><rb>憐憫</rb><rt>あわれ</rt></ruby>な<persName ref="#ayako">アヤ子</persName>の事を思い出しては、<ruby><rb>霊魂</rb><rt>たましい</rt></ruby>を<ruby><rb>滅亡</rb><rt>ほろぼ</rt></ruby>す深いため息をしいしい、岩の<ruby><rb>圭角</rb><rt>かど</rt></ruby>を降りて来るのでした。私が死にましたならば、あとから、きっと、<persName ref="#ayako">アヤ子</persName>も身を投げるであろうことが、わかり切っているからでした。</p>
+        <p>＊</p>
+        <p>私と、<persName ref="#ayako">アヤ子</persName>の二人が、あのボートの上で、附添いの<ruby><rb>乳母</rb><rt>ばあや</rt></ruby>夫妻や、センチョーサンや、ウンテンシュさん達を、波に<ruby><rb>浚</rb><rt>さら</rt></ruby>われたまま、この小さな離れ島に<ruby><rb>漂</rb><rt>なが</rt></ruby>れついてから、もう何年になりましょうか。この島は年中夏のようで、クリスマスもお正月も、よくわかりませぬが、もう十年ぐらい経っているように思います。</p>
+        <p>その時に、私たちが持っていたものは、一本のエンピツと、ナイフと、一冊のノートブックと、一個のムシメガネと、水を入れた三本のビール瓶と、小さな<ruby><rb>新約聖書</rb><rt>バイブル</rt></ruby>が一冊と……それだけでした。</p>
+        <p>けれども、私たちは<ruby><rb>幸福</rb><rt>しあわせ</rt></ruby>でした。</p>
+        <p>この小さな、緑色に<ruby><rb>繁茂</rb><rt>しげ</rt></ruby>り栄えた島の中には、<ruby><rb>稀</rb><rt>まれ</rt></ruby>に居る大きな<ruby><rb>蟻</rb><rt>あり</rt></ruby>のほかに、私たちを<ruby><rb>憂患</rb><rt>なやま</rt></ruby>す<ruby><rb>禽</rb><rt>とり</rt></ruby>、<ruby><rb>獣</rb><rt>けもの</rt></ruby>、<ruby><rb>昆虫</rb><rt>はうもの</rt></ruby>は一匹も居ませんでした。そうして、その時、十一歳であった私と、七ツになったばかりの<persName ref="#ayako">アヤ子</persName>と二人のために、余るほどの<ruby><rb>豊饒</rb><rt>ゆたか</rt></ruby>な食物が、みちみちておりました。キュウカンチョウだの<ruby><rb>鸚鵡</rb><rt>おうむ</rt></ruby>だの、絵でしか見たことのないゴクラク鳥だの、見たことも聞いたこともない<ruby><rb>華麗</rb><rt>はなやか</rt></ruby>な蝶だのが居りました。おいしいヤシの実だの、パイナプルだの、バナナだの、赤と紫の大きな花だの、<ruby><rb>香気</rb><rt>かおり</rt></ruby>のいい草だの、又は、大きい、小さい鳥の卵だのが、一年中、どこかにありました。鳥や魚なぞは、棒切れでたたくと、何ほどでも取れました。</p>
+        <p>私たちは、そんなものを集めて来ると、ムシメガネで、<ruby><rb>天日</rb><rt>てんぴ</rt></ruby>を枯れ草に取って、流れ木に燃やしつけて、焼いて喰べました。</p>
+        <p>そのうちに島の東に在る岬と<ruby><rb>磐</rb><rt>いわ</rt></ruby>の間から、キレイな泉が潮の引いた時だけ<ruby><rb>湧</rb><rt>わ</rt></ruby>いているのを見付けましたから、その近くの砂浜の岩の間に、壊れたボートで<ruby><rb>小舎</rb><rt>こや</rt></ruby>を作って、柔らかい枯れ草を集めて、<persName ref="#ayako">アヤ子</persName>と二人で寝られるようにしました。それから<ruby><rb>小舎</rb><rt>こや</rt></ruby>のすぐ横の岩の横腹を、ボートの古釘で四角に掘って、小さな<ruby><rb>倉庫</rb><rt>くら</rt></ruby>みたようなものを作りました。しまいには、<ruby><rb>外衣</rb><rt>うわぎ</rt></ruby>も<ruby><rb>裏衣</rb><rt>したぎ</rt></ruby>も、雨や、風や、岩角に破られてしまって、二人ともホントのヤバン人のように<ruby><rb>裸体</rb><rt>はだか</rt></ruby>になってしまいましたが、それでも朝と晩には、キット二人で、あの<placeName ref="#kamisama-no-ashidai">神様の<ruby><rb>足凳</rb><rt>あしだい</rt></ruby></placeName>の崖に登って、<ruby><rb>聖書</rb><rt>バイブル</rt></ruby>を読んで、お父様やお母様のためにお祈りをしました。</p>
+        <p>私たちは、それから、お父様とお母様にお手紙を書いて大切なビール瓶の中の一本に入れて、シッカリと<ruby><rb>樹脂</rb><rt>やに</rt></ruby>で封じて、二人で何遍も何遍も<ruby><rb>接吻</rb><rt>くちづけ</rt></ruby>をしてから海の中に投げ込みました。そのビール瓶は、この島のまわりを<ruby><rb>環</rb><rt>めぐ</rt></ruby>る、<ruby><rb>潮</rb><rt>うしお</rt></ruby>の流れに連れられて、ズンズンと<ruby><rb>海中</rb><rt>わだなか</rt></ruby>遠く出て行って、二度とこの島に帰って来ませんでした。私たちはそれから、誰かが助けに来て下さる<ruby><rb>目標</rb><rt>めじるし</rt></ruby>になるように、<placeName ref="#kamisama-no-ashidai">神様の<ruby><rb>足凳</rb><rt>あしだい</rt></ruby></placeName>の一番高い処へ、長い棒切れを<ruby><rb>樹</rb><rt>た</rt></ruby>てて、いつも何かしら、青い木の葉を吊しておくようにしました。</p>
+        <p>私たちは時々<ruby><rb>争論</rb><rt>いさかい</rt></ruby>をしました。けれどもすぐに<ruby><rb>和平</rb><rt>なかなおり</rt></ruby>をして、学校ゴツコや何かをするのでした。私はよく<persName ref="#ayako">アヤ子</persName>を生徒にして、聖書の言葉や、字の書き方を教えてやりました。そうして二人とも、聖書を、神様とも、お父様とも、お母様とも、先生とも思って、ムシメガネや、ビール瓶よりもズット大切にして、岩の穴の一番高い棚の上に上げておきました。私たちは、ホントに<ruby><rb>幸福</rb><rt>しあわせ</rt></ruby>で、<ruby><rb>平安</rb><rt>やすらか</rt></ruby>でした。この島は<placeName ref="#tengoku">天国</placeName>のようでした。</p>
+        <p>＊</p>
+        <p>かような離れ島の中の、たった二人切りの<ruby><rb>幸福</rb><rt>しあわせ</rt></ruby>の中に、恐ろしい悪魔が忍び込んで来ようと、どうして思われましょう。</p>
+        <p>けれども、それは、ホントウに忍び込んで来たに違いないのでした。</p>
+        <p>それはいつからとも、わかりませんが、月日の<ruby><rb>経</rb><rt>た</rt></ruby>つのにつれて、<persName ref="#ayako">アヤ子</persName>の肉体が、奇蹟のように美しく、<ruby><rb>麗沢</rb><rt>つややか</rt></ruby>に<ruby><rb>長</rb><rt>そだ</rt></ruby>って行くのが、アリアリと私の眼に見えて来ました。ある時は花の精のようにまぶしく、又、ある時は悪魔のようになやましく……そうして私はそれを見ていると、何故かわからずに<ruby><rb>思念</rb><rt>おもい</rt></ruby>が<ruby><rb>曚昧</rb><rt>くら</rt></ruby>く、哀しくなって来るのでした。</p>
+        <p>「お兄さま…………」</p>
+        <p>と<persName ref="#ayako">アヤ子</persName>が叫びながら、何の<ruby><rb>罪穢</rb><rt>けが</rt></ruby>れもない<ruby><rb>瞳</rb><rt>め</rt></ruby>を輝かして、私の肩へ飛び付いて来るたんびに、私の胸が今までとはまるで違った気もちでワクワクするのが、わかって来ました。そうして、その一度一度<ruby><rb>毎</rb><rt>ごと</rt></ruby>に、私の心は<ruby><rb>沈淪</rb><rt>ほろび</rt></ruby>の<ruby><rb>患難</rb><rt>なやみ</rt></ruby>に<ruby><rb>付</rb><rt>わた</rt></ruby>されるかのように、<ruby><rb>畏懼</rb><rt>おそ</rt></ruby>れ、<ruby><rb>慄</rb><rt>ふる</rt></ruby>えるのでした。</p>
+        <p>けれども、そのうちに<persName ref="#ayako">アヤ子</persName>の方も、いつとなく<ruby><rb>態度</rb><rt>ようす</rt></ruby>がかわって来ました。やはり私と同じように、今までとはまるで違った…………もっともっとなつかしい、涙にうるんだ眼で私を見るようになりました。そうして、それにつれて何となく、私の<ruby><rb>身体</rb><rt>からだ</rt></ruby>に<ruby><rb>触</rb><rt>さわ</rt></ruby>るのが恥かしいような、悲しいような気もちがするらしく見えて来ました。</p>
+        <p>二人はちっとも<ruby><rb>争論</rb><rt>いさかい</rt></ruby>をしなくなりました。その代り、何となく<ruby><rb>憂容</rb><rt>うれいがお</rt></ruby>をして、時々ソッと<ruby><rb>嘆息</rb><rt>ためいき</rt></ruby>をするようになりました。それは、二人切りでこの離れ島に居るのが、何ともいいようのないくらい、なやましく、嬉しく、淋しくなって来たからでした。そればかりでなく、お互いに顔を見合っているうちに、眼の前が見る見る<ruby><rb>死蔭</rb><rt>かげ</rt></ruby>のように暗くなって来ます。そうして神様のお<ruby><rb>啓示</rb><rt>しめし</rt></ruby>か、悪魔の<ruby><rb>戯弄</rb><rt>からかい</rt></ruby>かわからないままに、ドキンと、胸が<ruby><rb>轟</rb><rt>とどろ</rt></ruby>くと一緒にハッと<ruby><rb>吾</rb><rt>われ</rt></ruby>に帰るような事が、一日のうち何度となくあるようになりました。</p>
+        <p>二人は互いに、こうした二人の心をハッキリと知り合っていながら、神様の<ruby><rb>責罰</rb><rt>いましめ</rt></ruby>を恐れて、口に出し得ずにいるのでした。<ruby><rb>万一</rb><rt>もし</rt></ruby>、そんな事をし出かしたアトで、救いの舟が来たらどうしよう…………という心配に打たれていることが、何にも云わないまんまに、二人同志の心によくわかっているのでした。</p>
+        <p>けれども、或る静かに晴れ渡った午後の事、ウミガメの卵を焼いて食べたあとで、二人が砂原に足を投げ出して、はるかの海の上を<ruby><rb>辷</rb><rt>すべ</rt></ruby>って行く白い雲を見つめているうちに<persName ref="#ayako">アヤ子</persName>はフイと、こんな事を云い出しました。</p>
+        <p>「ネエ。お兄様。あたし達二人のうち一人が、もし病気になって死んだら、あとは、どうしたらいいでしょうネエ」</p>
+        <p>そう云ううち<persName ref="#ayako">アヤ子</persName>は、<ruby><rb>面</rb><rt>かお</rt></ruby>を真赤にしてうつむきまして、涙をホロホロと焼け砂の上に落しながら、何ともいえない、悲しい笑い顔をして見せました。</p>
+        <p>＊</p>
+        <p>その時に私が、どんな顔をしたか、私は知りませぬ。ただ死ぬ程息苦しくなって、張り裂けるほど胸が轟いて、唖のように何の返事もし得ないまま立ち上りますと、ソロソロと<persName ref="#ayako">アヤ子</persName>から離れて行きました。そうしてあの<placeName ref="#kamisama-no-ashidai">神様の<ruby><rb>足凳</rb><rt>あしだい</rt></ruby></placeName>の上に来て、頭を<ruby><rb>掻</rb><rt>か</rt></ruby>き<ruby><rb>挘</rb><rt>むし</rt></ruby>り掻き挘りひれ伏しました。</p>
+        <p>「ああ。天にまします神様よ。</p>
+        <p><persName ref="#ayako">アヤ子</persName>は何も知りませぬ。ですから、あんな事を私に云ったのです。どうぞ、あの<ruby><rb>処女</rb><rt>むすめ</rt></ruby>を罰しないで下さい。そうして、いつまでもいつまでも<ruby><rb>清浄</rb><rt>きよらか</rt></ruby>にお守り下さいませ。そうして私も…………。</p>
+        <p>ああ。けれども…………けれども…………。</p>
+        <p>ああ神様よ。私はどうしたら、いいのでしょう。どうしたらこの<ruby><rb>患難</rb><rt>なやみ</rt></ruby>から救われるのでしょう。私が生きておりますのは<persName ref="#ayako">アヤ子</persName>のためにこの上もない<ruby><rb>罪悪</rb><rt>つみ</rt></ruby>です。けれども私が死にましたならば、<ruby><rb>尚更</rb><rt>なおさら</rt></ruby>深い、悲しみと、苦しみを<persName ref="#ayako">アヤ子</persName>に与えることになります、ああ、どうしたらいいでしょう私は…………。</p>
+        <p>おお神様よ…………。</p>
+        <p>私の<ruby><rb>髪毛</rb><rt>かみのけ</rt></ruby>は砂にまみれ、私の腹は岩に押しつけられております。もし私の死にたいお願いが<ruby><rb>聖意</rb><rt>みこころ</rt></ruby>にかないましたならば、只今すぐに私の<ruby><rb>生命</rb><rt>いのち</rt></ruby>を、燃ゆる<ruby><rb>閃電</rb><rt>いなずま</rt></ruby>にお<ruby><rb>付</rb><rt>わた</rt></ruby>し下さいませ。</p>
+        <p>ああ。<ruby><rb>隠微</rb><rt>かくれ</rt></ruby>たるに<ruby><rb>鑒給</rb><rt>みた</rt></ruby>まう神様よ。どうぞどうぞ<ruby><rb>聖名</rb><rt>みな</rt></ruby>を<ruby><rb>崇</rb><rt>あが</rt></ruby>めさせ給え。み<ruby><rb>休徴</rb><rt>しるし</rt></ruby>を地上にあらわし給え…………」</p>
+        <p>けれども神様は、何のお示しも、なさいませんでした。藍色の空には、白く光る雲が、糸のように流れているばかり…………崖の下には、<ruby><rb>真青</rb><rt>まっさお</rt></ruby>く、真白く<ruby><rb>渦捲</rb><rt>うずま</rt></ruby>きどよめく波の間を、遊び戯れているフカの<ruby><rb>尻尾</rb><rt>しっぽ</rt></ruby>やヒレが、時々ヒラヒラと見えているだけです。</p>
+        <p>その<ruby><rb>青澄</rb><rt>あおず</rt></ruby>んだ、底無しの<ruby><rb>深淵</rb><rt>ふち</rt></ruby>を、いつまでもいつまでも見つめているうちに、私の目は、いつとなくグルグルと、<ruby><rb>眩暈</rb><rt>くる</rt></ruby>めき初めました。思わずヨロヨロとよろめいて、漂い砕くる波の泡の中に落ち込みそうになりましたが、やっとの思いで崖の端に踏み止まりました。…………と思う間もなく私は崖の上の一番高い処まで一跳びに引き返しました。その絶頂に立っておりました棒切れと、その<ruby><rb>尖端</rb><rt>さき</rt></ruby>に結びつけてあるヤシの枯れ葉を、<ruby><rb>一思</rb><rt>ひとおも</rt></ruby>いに引きたおして、眼の下はるかの淵に投げ込んでしまいました。</p>
+        <p>「もう大丈夫だ。こうしておけば、救いの船が来ても通り過ぎて行くだろう」</p>
+        <p>こう考えて、何かしらゲラゲラと嘲り笑いながら、<ruby><rb>残狼</rb><rt>おおかみ</rt></ruby>のように崖を馳け降りて、<ruby><rb>小舎</rb><rt>こや</rt></ruby>の中へ馳け込みますと、詩篇の処を開いてあった聖書を取り上げて、ウミガメの卵を焼いた火の残りの上に載せ、上から枯れ草を投げかけて焔を吹き立てました。そうして声のある限り、<persName ref="#ayako">アヤ子</persName>の名を呼びながら、砂浜の方へ馳け出して、そこいらを見まわしました…………が…………。</p>
+        <p>見ると<persName ref="#ayako">アヤ子</persName>は、はるかに海の中に突き出ている岬の<ruby><rb>大磐</rb><rt>おおいわ</rt></ruby>の上に<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>いて、大空を仰ぎながらお祈りをしているようです。</p>
+        <p>＊</p>
+        <p>私は二足三足うしろへ、よろめきました。荒浪に取り捲かれた紫色の<ruby><rb>大磐</rb><rt>おおいわ</rt></ruby>の上に、夕日を受けて血のように輝いている<ruby><rb>処女</rb><rt>おとめ</rt></ruby>の背中の<ruby><rb>神々</rb><rt>こうごう</rt></ruby>しさ…………。</p>
+        <p>ズンズンと<ruby><rb>潮</rb><rt>うしお</rt></ruby>が高まって来て、膝の下の<ruby><rb>海藻</rb><rt>かいそう</rt></ruby>を洗い漂わしているのも心付かずに、<ruby><rb>黄金色</rb><rt>こがねいろ</rt></ruby>の<ruby><rb>滝浪</rb><rt>たきなみ</rt></ruby>を浴びながら一心に祈っている、その姿の<ruby><rb>崇高</rb><rt>けだか</rt></ruby>さ…………まぶしさ…………。</p>
+        <p>私は<ruby><rb>身体</rb><rt>からだ</rt></ruby>を石のように<ruby><rb>固</rb><rt>こわ</rt></ruby>ばらせながら、<ruby><rb>暫</rb><rt>しばら</rt></ruby>くの間、ボンヤリと眼をみはっておりました。けれども、そのうちにフイッと、そうしている<persName ref="#ayako">アヤ子</persName>の決心がわかりますと、私はハッとして飛び上がりました。夢中になって馳け出して、<ruby><rb>貝殻</rb><rt>かいがら</rt></ruby>ばかりの岩の上を、傷だらけになって<ruby><rb>辷</rb><rt>すべ</rt></ruby>りながら、岬の<ruby><rb>大磐</rb><rt>おおいわ</rt></ruby>の上に這い上りました。キチガイのように<ruby><rb>暴</rb><rt>あ</rt></ruby>れ狂い、<ruby><rb>哭</rb><rt>な</rt></ruby>き<ruby><rb>喚</rb><rt>さけ</rt></ruby>ぶ<persName ref="#ayako">アヤ子</persName>を、両腕にシッカリと<ruby><rb>抱</rb><rt>だ</rt></ruby>き<ruby><rb>抱</rb><rt>かか</rt></ruby>えて、<ruby><rb>身体</rb><rt>からだ</rt></ruby>中血だらけになって、やっとの思いで、<ruby><rb>小舎</rb><rt>こや</rt></ruby>の処へ帰って来ました。</p>
+        <p>けれども私たちの<ruby><rb>小舎</rb><rt>こや</rt></ruby>は、もうそこにはありませんでした。聖書や枯れ草と一緒に、白い煙となって、青空のはるか向うに消え失せてしまっているのでした。</p>
+        <p>＊</p>
+        <p>それから<ruby><rb>後</rb><rt>のち</rt></ruby>の私たち二人は、<ruby><rb>肉体</rb><rt>からだ</rt></ruby>も<ruby><rb>霊魂</rb><rt>たましい</rt></ruby>も、ホントウの<ruby><rb>幽暗</rb><rt>くらやみ</rt></ruby>に<ruby><rb>逐</rb><rt>お</rt></ruby>い出されて、夜となく、昼となく<ruby><rb>哀哭</rb><rt>かなし</rt></ruby>み、<ruby><rb>切歯</rb><rt>はがみ</rt></ruby>しなければならなくなりました。そうしてお互い相抱き、慰さめ、励まし、祈り、悲しみ合うことは愚か、同じ処に寝る事さえも出来ない気もちになってしまったのでした。</p>
+        <p>それは、おおかた、私が聖書を焼いた罰なのでしょう。</p>
+        <p>夜になると星の光りや、浪の音や、虫の声や、風の葉ずれや、木の実の落ちる音が、一ツ一ツに聖書の言葉を<ruby><rb>咡</rb><rt>ささ</rt></ruby>やきながら、私たち二人を取り巻いて、一歩一歩と近づいて来るように思われるのでした。そうして身動き一つ出来ず、<ruby><rb>微睡</rb><rt>まどろ</rt></ruby>むことも出来ないままに、離れ離れになって<ruby><rb>悶</rb><rt>もだ</rt></ruby>えている私たち二人の心を、<ruby><rb>窺視</rb><rt>うかがい</rt></ruby>に来るかのように物怖ろしいのでした。</p>
+        <p>こうして長い長い夜が明けますと、今度は同じように長い長い昼が来ます。そうするとこの島の中に照る太陽も、唄う<ruby><rb>鸚鵡</rb><rt>おうむ</rt></ruby>も、舞う極楽鳥も、玉虫も、蛾も、ヤシも、パイナプルも、花の色も、草の<ruby><rb>芳香</rb><rt>かおり</rt></ruby>も、海も、雲も、風も、虹も、みんな<persName ref="#ayako">アヤ子</persName>の、まぶしい姿や、息苦しい肌の<ruby><rb>香</rb><rt>か</rt></ruby>とゴッチャになって、グルグルグルグルと渦巻き輝やきながら、四方八方から私を包み殺そうとして、襲いかかって来るように思われるのです。その中から、私とおんなじ苦しみに<ruby><rb>囚</rb><rt>とら</rt></ruby>われている<persName ref="#ayako">アヤ子</persName>の、なやましい<ruby><rb>瞳</rb><rt>め</rt></ruby>が、神様のような悲しみと悪魔のようなホホエミとを別々に<ruby><rb>籠</rb><rt>こ</rt></ruby>めて、いつまでもいつまでも私を、ジイッと見つめているのです。</p>
+        <p>＊</p>
+        <p>鉛筆が無くなりかけていますから、もうあまり長く書かれません。</p>
+        <p>私は、これだけの<ruby><rb>虐遇</rb><rt>なやみ</rt></ruby>と<ruby><rb>迫害</rb><rt>くるしみ</rt></ruby>に会いながら、なおも神様の<ruby><rb>禁責</rb><rt>いましめ</rt></ruby>を恐れている私たちのまごころを、この瓶に封じこめて、海に投げ込もうと思っているのです。</p>
+        <p><ruby><rb>明日</rb><rt>あした</rt></ruby>にも悪魔の<ruby><rb>誘惑</rb><rt>いざない</rt></ruby>に負けるような事がありませぬうちに…………。</p>
+        <p>せめて二人の<ruby><rb>肉体</rb><rt>からだ</rt></ruby>だけでも<ruby><rb>清浄</rb><rt>きよらか</rt></ruby>でおりますうちに……。</p>
+        <p>＊</p>
+        <p>ああ神様…………私たち二人は、こんな<ruby><rb>苛責</rb><rt>くるしみ</rt></ruby>に会いながら、病気一つせずに、日に<ruby><rb>増</rb><rt>ま</rt></ruby>し丸々と肥って、<ruby><rb>康強</rb><rt>すこやか</rt></ruby>に、美しく<ruby><rb>長</rb><rt>そだ</rt></ruby>って行くのです、この島の清らかな風と、水と、<ruby><rb>豊穣</rb><rt>ゆたか</rt></ruby>な<ruby><rb>食物</rb><rt>かて</rt></ruby>と、美しい、楽しい、花と鳥とに護られて…………。</p>
+        <p>ああ。何という恐ろしい責め苦でしょう。この美しい、楽しい島はもうスッカリ<placeName ref="#jigoku">地獄</placeName>です。</p>
+        <p>神様、神様。あなたはなぜ私たち二人を、一思いに<ruby><rb>屠殺</rb><rt>ころ</rt></ruby>して下さらないのですか…………。</p>
+        <p>――<persName ref="#taro">太郎</persName>記す………</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>◇第三の瓶の内容</head>
+        <p>オ父サマ。オ母サマ。ボクタチ兄ダイハ、ナカヨク、タッシャニ、コノシマニ、クラシテイマス。ハヤク、タスケニ、キテクダサイ。</p>
+        <p><persName ref="#taro">市川　太郎</persName></p>
+        <p><persName ref="#ayako">イチカワ　アヤコ</persName></p>
+      </div>
+    </body>
+  </text>
+</TEI>
