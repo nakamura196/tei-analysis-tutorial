@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>純情小曲集 01 珍らしいものをかくしてゐる人への序文</title>
+        <author>室生犀星</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>純情小曲集 01 珍らしいものをかくしてゐる人への序文</title><author>室生犀星</author>
+          <note>青空文庫。底本：「萩原朔太郎全集　第二卷」筑摩書房。1976（昭和51）年3月25日初版発行。底本の親本：「純情小曲集」新潮社。1925（大正14）年8月12日発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/001579/card59472.html">https://www.aozora.gr.jp/cards/001579/card59472.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="hagiwara">
+        <persName>萩原</persName>
+        <note>萩原朔太郎(1886-1942)。詩人。詩集『純情小曲集』(1925年、新潮社)の著者。本篇は室生犀星がその巻頭に寄せた序文で、萩原の詩業と人がらについて記す</note>
+      </person>
+      <person xml:id="saisei">
+        <persName>犀星生</persName>
+        <note>室生犀星(1889-1962)。本篇の筆者。文末の署名に「犀星生」とある(底本の注記に「初出時の署名は「犀星生」です」)</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="dozaka">
+        <placeName>本郷動坂</placeName>
+        <location><geo>35.7288 139.7592</geo></location>
+        <note>動坂。現在の東京都文京区千駄木〜本駒込の間の坂(旧・本郷区域)。萩原朔太郎が当時住んでいた二階家からの眺望として言及。概値</note>
+      </place>
+      <place xml:id="shina">
+        <placeName>支那</placeName>
+        <location><geo>35.8617 104.1954</geo></location>
+        <note>中国。「支那風な旗」として言及。国名・概値(旧称であるが、底本の表記どおり)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>純情小曲集 01 珍らしいものをかくしてゐる人への序文</head>
+        <p><persName ref="#hagiwara">萩原</persName>の今ゐる二階家から<placeName ref="#dozaka">本郷動坂</placeName>あたりの町家の屋根が見え、木立を透いて赤い色の三角形の<placeName ref="#shina">支那</placeName>風な旗が、いつも行くごとに閃めいて見えた。このごろ木立の若葉が茂り合つたので風でも吹いて樹や莖が動かないとその赤色の旗が見られなかつた。</p>
+        <p>「惜しいことをしたね。」</p>
+        <p>しかし<persName ref="#hagiwara">萩原</persName>はわたしのこの言葉にも例によつて無關心な顏貌をした。</p>
+        <p>或る朝、<persName ref="#hagiwara">萩原</persName>は一帖の原稿紙をわたしに見せてくれた。いまから十三四年前に始めてわたしが<persName ref="#hagiwara">萩原</persName>の詩をよんだときの、その原稿の綴りであつた。わたしは讀み終へてから何か言はうとしたが、それよりもわたしが受けた感銘はかなりに纖く鋭どかつたので、もう一度默つて原稿を繰りかへして讀んで見た。そしてやはり頭につうんと來る感銘が深かつた。いいフイルムを見たときにつうんとくる涙つぽい種類の快よさであつた。わたしはすぐ自分のむかしの詩を思ひ返して、<persName ref="#hagiwara">萩原</persName>もいい詩をかいて永い間世に出さなかつたものだと、無關心で、無頓着げなかれの性分の中に或る奧床しさをかんじた。かれは何か絶えずもの珍らしいものを祕かにしまつてゐるやうな人がらである。</p>
+        <p><date when="--05-21">五月二十一日</date>朝<persName ref="#saisei">犀星生</persName></p>
+      </div>
+    </body>
+  </text>
+</TEI>

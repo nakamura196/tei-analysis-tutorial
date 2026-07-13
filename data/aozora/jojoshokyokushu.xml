@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>抒情小曲集</title>
+        <author>室生犀星</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>抒情小曲集</title><author>室生犀星</author>
+          <note>青空文庫。底本：「抒情小曲集・愛の詩集」講談社文芸文庫、講談社。1995（平成7）年11月10日第1刷発行。底本の親本：「抒情小曲集」感情詩社。1918（大正7）年9月。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/001579/card53241.html">https://www.aozora.gr.jp/cards/001579/card53241.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="saisei">
+        <persName>室生犀星</persName>
+        <note>本詩集の著者(1889-1962)。金沢出身の詩人・小説家。自序に署名し、詩篇「室生犀星氏」では自身を三人称で歌う。序文中では「室生君」「室生」とも呼ばれる</note>
+      </person>
+      <person xml:id="hakushu">
+        <persName>北原白秋</persName>
+        <note>詩人(1885-1942)。巻頭の序「いとけなかりし日のおもひでに」の筆者。覚書では「友白秋」、萩原朔太郎の序では「北原兄」と言及される</note>
+      </person>
+      <person xml:id="sakutaro">
+        <persName>萩原朔太郎</persName>
+        <note>詩人(1886-1942)。序を寄せる。覚書では犀星の「畏友萩原」「友萩原」として、前橋・金石での交遊が語られる</note>
+      </person>
+      <person xml:id="tanabe-koji">
+        <persName>田辺孝次</persName>
+        <note>犀星の幼少期からの友人(1890-1945、工芸史家)。「君の第三の著作『抒情小曲集』が…」に始まる序の筆者</note>
+      </person>
+      <person xml:id="bertrand">
+        <persName>ルイ・ベルトラン</persName>
+        <note>フランスの詩人アロイジウス・ベルトラン(Louis "Aloysius" Bertrand, 1807-1841)。扉銘として一節が引かれる</note>
+      </person>
+      <person xml:id="dostoevsky">
+        <persName>ドストイエフスキイ</persName>
+        <note>ロシアの作家ドストエフスキー(1821-1881)。自序で「少年は神より人間より最つと別な神聖な生物だ。」の言葉が引かれる</note>
+      </person>
+      <person xml:id="tolstoy">
+        <persName>トルストイ</persName>
+        <note>ロシアの作家トルストイ(1828-1910)。自序で「小児に就て人に接することを学べ…」の言葉が引かれる</note>
+      </person>
+      <person xml:id="zeniya-gohei">
+        <persName>銭屋五兵衛</persName>
+        <note>加賀の海商(1774-1852)。覚書「海浜」で、金石の釈迦堂に墓碑があると記される</note>
+      </person>
+      <person xml:id="yaso">
+        <persName>耶蘇</persName>
+        <note>イエス・キリスト。詩篇「合掌」その二に登場する</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="odawara">
+        <placeName>小田原</placeName>
+        <location><geo>35.2646 139.1521</geo></location>
+        <note>神奈川県小田原市。北原白秋の序の署名地(当時白秋は小田原に居住)。概値</note>
+      </place>
+      <place xml:id="haarlem">
+        <placeName>ハレルム</placeName>
+        <note>ルイ・ベルトランの扉銘にいう「都ハレルム」。オランダのハールレム(Haarlem)を指すと解されるが、確定できないため座標を付けない</note>
+      </place>
+      <place xml:id="tabata">
+        <placeName>田端</placeName>
+        <location><geo>35.7381 139.7607</geo></location>
+        <note>東京・田端(現在の北区田端)。自序の署名地「郊外田端にて」。概値</note>
+      </place>
+      <place xml:id="kanazawa">
+        <placeName>金沢</placeName>
+        <location><geo>36.5613 136.6562</geo></location>
+        <note>石川県金沢市。犀星の郷里。市街中心部の概値</note>
+      </place>
+      <place xml:id="sennichimachi">
+        <placeName>千日町</placeName>
+        <location><geo>36.5583 136.65</geo></location>
+        <note>金沢市千日町。犀星が育った雨宝院の所在地。概値</note>
+      </place>
+      <place xml:id="uhoin">
+        <placeName>雨宝院</placeName>
+        <location><geo>36.558 136.6497</geo></location>
+        <note>金沢市千日町の真言宗寺院。犀星の養家。本文では「雨宝院といへる金比羅神社」と記され、同じ場所を指す。概値</note>
+      </place>
+      <place xml:id="saigawa">
+        <placeName>犀川</placeName>
+        <location><geo>36.5545 136.645</geo></location>
+        <note>金沢市を流れる犀川。詩篇「犀川」の舞台で、「犀の川」とも表記される。犀川大橋付近の概値</note>
+      </place>
+      <place xml:id="hamaguribaka">
+        <placeName>蛤坂新道</placeName>
+        <location><geo>36.555 136.644</geo></location>
+        <note>金沢市の蛤坂(現在の寺町・野町の境の坂道)に通じた新道。概値</note>
+      </place>
+      <place xml:id="iozan">
+        <placeName>医王</placeName>
+        <location><geo>36.5175 136.7897</geo></location>
+        <note>金沢市と富山県南砺市の境の医王山。本文では「医王、戸室の山」。山域の概値</note>
+      </place>
+      <place xml:id="tomuroyama">
+        <placeName>戸室</placeName>
+        <location><geo>36.5544 136.7272</geo></location>
+        <note>金沢市東部の戸室山。本文では「医王、戸室の山」。概値</note>
+      </place>
+      <place xml:id="hida">
+        <placeName>飛騨</placeName>
+        <location><geo>36.2 137.2</geo></location>
+        <note>飛騨地方(岐阜県北部)。「遠く飛騨の連峯」として望まれる。地域名・概値</note>
+      </place>
+      <place xml:id="kenrokuen">
+        <placeName>兼六公園</placeName>
+        <location><geo>36.562 136.6626</geo></location>
+        <note>金沢市の兼六園。詩篇「秋思」の作歌地と覚書に記される。概値</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都市。旅行先。概値</note>
+      </place>
+      <place xml:id="joshu">
+        <placeName>上州</placeName>
+        <location><geo>36.39 139.06</geo></location>
+        <note>上野国(現在の群馬県)。旧国名・概値</note>
+      </place>
+      <place xml:id="maebashi">
+        <placeName>前橋</placeName>
+        <location><geo>36.3895 139.0634</geo></location>
+        <note>群馬県前橋市。萩原朔太郎を訪ねて三度旅した地。概値</note>
+      </place>
+      <place xml:id="asuwagawa">
+        <placeName>足羽川</placeName>
+        <location><geo>36.0619 136.2211</geo></location>
+        <note>福井市を流れる足羽川。詩篇「足羽川」の舞台。本文では「足羽の川」とも記される。福井市中心部付近の概値</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前</placeName>
+        <location><geo>36.0 136.2</geo></location>
+        <note>越前国(現在の福井県嶺北)。旧国名・概値</note>
+      </place>
+      <place xml:id="fukui">
+        <placeName>福井</placeName>
+        <location><geo>36.0641 136.2196</geo></location>
+        <note>福井県福井市。京都からの帰途に約一ヶ月滞在した街。概値</note>
+      </place>
+      <place xml:id="tonegawa">
+        <placeName>利根</placeName>
+        <location><geo>36.3925 139.0561</geo></location>
+        <note>利根川。前橋近郊の河畔・砂山として詩に歌われる。前橋市付近の概値</note>
+      </place>
+      <place xml:id="koide-kawara">
+        <placeName>小出磧</placeName>
+        <location><geo>36.4056 139.0664</geo></location>
+        <note>前橋市小出(上小出町・下小出町付近)の利根川の磧(河原)。正確な地点は特定できないため前橋市小出付近の概値</note>
+      </place>
+      <place xml:id="akagi">
+        <placeName>赤城山</placeName>
+        <location><geo>36.5599 139.193</geo></location>
+        <note>群馬県の赤城山。「赤城おろし」の名でも歌われる。山頂付近の概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京。第三部「暗黒時代」の創作地。概値</note>
+      </place>
+      <place xml:id="asakusa">
+        <placeName>浅草</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+        <note>東京都台東区浅草。概値</note>
+      </place>
+      <place xml:id="hongo">
+        <placeName>本郷</placeName>
+        <location><geo>35.7078 139.7597</geo></location>
+        <note>東京都文京区本郷。概値</note>
+      </place>
+      <place xml:id="nezu">
+        <placeName>根津</placeName>
+        <location><geo>35.7207 139.7648</geo></location>
+        <note>東京都文京区根津。旅籠に滞在したと覚書にある。概値</note>
+      </place>
+      <place xml:id="yanaka">
+        <placeName>谷中</placeName>
+        <location><geo>35.7267 139.7686</geo></location>
+        <note>東京都台東区谷中。概値</note>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.6918 139.7669</geo></location>
+        <note>東京都千代田区神田。概値</note>
+      </place>
+      <place xml:id="hakusan-jinja">
+        <placeName>白山神社</placeName>
+        <location><geo>35.7218 139.7452</geo></location>
+        <note>東京都文京区白山の白山神社。概値</note>
+      </place>
+      <place xml:id="ueno">
+        <placeName>上野</placeName>
+        <location><geo>35.7138 139.777</geo></location>
+        <note>東京・上野(上野公園・上野駅一帯)。概値</note>
+      </place>
+      <place xml:id="kaneiji">
+        <placeName>寛永寺</placeName>
+        <location><geo>35.7222 139.7736</geo></location>
+        <note>上野の寛永寺。「上野寛永寺の鐘」として詩篇「坂」に現れる。概値</note>
+      </place>
+      <place xml:id="shakado">
+        <placeName>釈迦堂</placeName>
+        <note>金石にあった僧院。犀星が一年余り転地療養した。現在地を特定できないため座標を付けない</note>
+      </place>
+      <place xml:id="kanaiwa">
+        <placeName>金石</placeName>
+        <location><geo>36.6069 136.591</geo></location>
+        <note>金沢市金石。海の詩篇の作歌地。概値</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後</placeName>
+        <location><geo>37.5 138.9</geo></location>
+        <note>越後国(現在の新潟県)。「越後の山」として望まれる。旧国名・概値</note>
+      </place>
+      <place xml:id="kamogawa">
+        <placeName>加茂川</placeName>
+        <location><geo>35.0037 135.7712</geo></location>
+        <note>京都市を流れる鴨川(加茂川)。祇園付近の概値</note>
+      </place>
+      <place xml:id="gion">
+        <placeName>祇園</placeName>
+        <location><geo>35.0037 135.7752</geo></location>
+        <note>京都市東山区の祇園。概値</note>
+      </place>
+      <place xml:id="kaga">
+        <placeName>加賀</placeName>
+        <location><geo>36.5 136.7</geo></location>
+        <note>加賀国(現在の石川県南部)。旧国名・概値</note>
+      </place>
+      <place xml:id="katamachi">
+        <placeName>片町</placeName>
+        <location><geo>36.5619 136.6537</geo></location>
+        <note>金沢市片町。本文では「かたかは町」とも表記される。概値</note>
+      </place>
+      <place xml:id="namikicho">
+        <placeName>並木町</placeName>
+        <note>詩篇「並木町」の町名。東京・下谷区並木町(現在の台東区雷門付近)を指すと解されるが、確定できないため座標を付けない</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>日本。萩原朔太郎の序で「日本唯一の美しい抒情小曲集」と言及される。国名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>序曲</head>
+        <p>芽がつつ立つ</p>
+        <p>ナイフのやうな芽が</p>
+        <p>たつた一本</p>
+        <p>すつきりと蒼空につつ立つ</p>
+        <p>抒情詩の精神には音楽が有つ微妙な恍惚と情熱とがこもつてゐて人心に囁く。よい音楽をきいたあとの何者にも経験されない優和と嘆賞との瞬間。ただちに自己を善良なる人間の特質に導くところの愛。誰もみな善い美しいものを見たときに自分もまた善くならなければならないと考へる貴重な反省。最も秀れた精神に根ざしたものは人心の内奥から涙を誘ひ洗ひ清めるのである。</p>
+        <p>いとけなかりし日のおもひでに</p>
+        <p><persName ref="#saisei">室生</persName>君。</p>
+        <p>時は過ぎた。『抒情小曲集』出版の通知を受取つて、私は、今更ながら過ぎ去つた日の若い君の姿が思ひ出される。初めて会つた頃の君は寂しさうであつた、苦しさうであつた、悲しさうであつた。初めて君の詩に接した時、私はその声の<ruby><rb>清清</rb><rt>すがすが</rt></ruby>しさに、初めて湧きいでた同じ泉の水の鮮かさと歓ばしさとを痛切に感じた。君はまた自然の儘で、稚い、それでも銀の<ruby><rb>柔毛</rb><rt>にこげ</rt></ruby>を持つた栗の若葉のやうに真純な、<ruby><rb>感傷家</rb><rt>センチメンタリスト</rt></ruby>であつた。それは強い特殊の真実と自信と正確さを持つた若葉だ。その栗の木は日を追うて完全な樹木の姿となつた。日を追うて君自身本然の愛と啼泣と情念の発露とが激しくなつた。かう云つては悪いかも知れぬが、私は『愛の詩集』よりも此の『抒情小曲集』に、より深い純正を感じ愛着を感じ、追憶の快味をも感ずる。而して君の是等の小曲を初めて発見して少からぬ驚異にうたれた既往の私自身の姿さへ思ひ出す。君も私も既に華華しかつた青春は過ぎて了つた。憶ふと今昔の感に堪へぬ。</p>
+        <p>改めて云ふ。今度の小曲集こそ私の待ちに待つたものであつた。私は真に君の歓びを自分の歓びとして一日も早くその上梓の日を鶴首して待つ。</p>
+        <p>願くばわが<persName ref="#saisei">室生犀星</persName>に再び光栄あれ。</p>
+        <p><date when="--08-14">八月十四日</date><placeName ref="#odawara">小田原</placeName>にて</p>
+        <p><persName ref="#hakushu">北原白秋</persName></p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>抒情詩信条</head>
+        <p>（１）　汝の瞳孔いま微かなる運動を為す。空現はれたり。瞳孔全く開きつくしたる時汝は甚しく羽ばたきを為す。</p>
+        <p>（２）　汝は多くの人間の期待せるときに生れたることを信ず。願くば汝の上に真摯なるものの数個の批評をもつて汝の精神の糧をおくられむことを祈れ。</p>
+        <p>（３）　過ぎし日の愛人をおもふこと真に雪の下の若草を思ふに似たりとつげよ。</p>
+        <p>（４）　詩はわれにとつて永遠の宗教なり。</p>
+        <p>（５）　われ登らんとするとき崖より血しほ流れたり。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>抒情詩信条</head>
+        <p>（１）　詩より詩作の<ruby><rb>瞬間</rb><rt>モメント</rt></ruby>を愛す。</p>
+        <p>（２）　祈れば樹の上の果実かつと鳴りて落つ。祈れば青きもの紅くなり形無きもの顕はる。</p>
+        <p>（３）　瞳と瞳とを合掌す。</p>
+        <p>（４）　山は静止す。そのさまざまなるものに富み胎めるかを見よ。真に生けるものの静けさを聴けよ。</p>
+        <p>（５）　爾のわれの接吻をうける時つねにつねに爾の輝くを見たり。</p>
+        <p>私にとつて限りなくなつかしく思はれるは、この集にをさめられた<persName ref="#saisei">室生</persName>の抒情小曲である。彼の過去に発表したすべての詩篇の中で、此等の抒情詩ほど、正直ないぢらしい感情にみちてゐるものはない。それは実に透明な青味を帯びた、美しい貝のやうな詩である。そしてそのリズムは、過去に現はれた日本語の抒情詩の、どれにも発見することのできない珍しい鋭どさをもつて居る。そしてこの詩集は、<persName ref="#hakushu">北原</persName>兄の『思ひ出』以後における<placeName ref="#nihon">日本</placeName>唯一の美しい抒情小曲集である。かういふ種類の芸術では、これ以上のすぐれたものを求めることは、今後とも容易にあるまいと思つてゐる。</p>
+        <p><persName ref="#sakutaro">萩原朔太郎</persName></p>
+        <p>人間の手の五本の指は都<placeName ref="#haarlem">ハレルム</placeName>の花壇にかつて咲いた珍らしい五弁の匂ひ阿羅世伊止宇</p>
+        <p><persName ref="#bertrand">ルイ・ベルトラン</persName></p>
+        <p>君の第三の著作『抒情小曲集』が、上梓されるに就て、子供の時からの友達としての僕は、奈何なる言葉でこの喜びを表したらよいか、実にその術をしらない。ことに今度集められた小曲はみな其当時にとつてお互に感銘の深いものばかりだ。君の詩のよいところは、敏感な美しい繊細な感情が概念的でなく、全くリズム的に本当と力とにあらはれてゐる所にあるのだらう。これを読んだ人人に本当に美しいよい感情を移植する所が一番貴いところではあるまいか……。</p>
+        <p><date when="--07-17">七月十七日</date></p>
+        <p><persName ref="#tanabe-koji">田辺孝次</persName></p>
+        <p>雪のしたより燃ゆるもの</p>
+        <p>かぜに乗り来て</p>
+        <p>いつしらずひかりゆく</p>
+        <p>春秋ふかめ燃ゆるもの</p>
+        <p>自分は<date when="--05">五月</date>ころから原稿をまとめ初めて<date when="--07-12">七月十二日</date>の大颱風が都の空をおそうた夕方に総ての仕事を終つた。二百篇あまりあつた中から抜いてあとは棄ててしまつた。古い雑誌や小さい紙片や破れた原稿紙の綴りから掘り出すやうにして集めて見て胸の高まる気がした。ちやうどその時連日連夜の暴風が恐ろしい颱風となつて郊外に荒れ狂うた。小さい庭のダリーヤ・日まはり・菊などを微塵にしようとした。一丈余も伸びた日まはりの葉は裂けて穴だらけになつた。けれども倒れずに最後までしつかりと大地の底にしがみついてゐた。自分はこの日原稿を綴ぢあげて作曲家にてがみを書いた。そしてこの本を街に出したり友人の机上に置かれることを考へて酷く緊張した。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>自序</head>
+        <p>私は本集に輯めた詩を自分ながら初初しい作品であること、少年の日の交り気ないあどけない<ruby><rb>真心</rb><rt>まごころ</rt></ruby>をもつて書かれたこととを合せて、いくたびか感心をして朗読したりした。ほんとに此詩集にある小品な詩は、恰も『小学読本』を朗読するやうに、卒直な心で読み味つてもらへれば、たいへん心うれしく感じる。このやうな幼ない「抒情詩時代」が再び私にやつて来るものでもなく、また、それを再び求めることも出来ないことを知つてゐる。人間にはきつと此「美しい抒情詩」を愛する時代があるやうに、だれしも通る道であるやうに、ほんとにこれらの詩をあつめて置きたいと思つたのも、みなここにあるのだ。</p>
+        <p>この本をとくに年すくない人人にも読んでもらひたい。私と同じい少年時代の悩ましい人懐こい苛苛しい情念や、美しい希望や、つみなき悪事や、限りない嘆賞や哀憐やの諸諸について、よく考へたり解つてもらひたいやうな気がする。少年時代の心は少年時代のものでなければわからない。おなじい内容は私のこれらの詩と相合してそして、初めて理解され得るやうに思ふ。みながみなで感じる悩ましさや<ruby><rb>望</rb><rt>のぞみ</rt></ruby>を追ふ心は、きつと此中でぶつかり合ふやうに思ふ。</p>
+        <p>誰でも云ふ「<ruby><rb>少年時代</rb><rt>こどものとき</rt></ruby>は楽しかつた」と。「<ruby><rb>少年</rb><rt>こども</rt></ruby>は神より人間より最つと別な神聖な生物だ。」と<persName ref="#dostoevsky">ドストイエフスキイ</persName>も云つてゐる。若若しい木のやうに伸びゆく<ruby><rb>力</rb><rt>ちから</rt></ruby>は、ほんとにあの時代に限つて横溢してゐる。頭のよい「頭のいちばん幸福な」時代だ。いちど見たり感じたりしたら、それにすぐ根が生え、植ゑ込まれる時代だ。</p>
+        <p>私はいまでも感じる。</p>
+        <p>少年時代に感じた季節の<ruby><rb>変移</rb><rt>うつりかはり</rt></ruby>の鋭い記臆とその感覚の敏活とは、ほんとに何にたとへて言つていいか解らない。まるで「<ruby><rb>触</rb><rt>さは</rt></ruby>り<ruby><rb>角</rb><rt>つの</rt></ruby>」のある虫のやうに、いつもひりひりとさとり深い魂を有つてゐるものだ。それはまだ<ruby><rb>小児</rb><rt>こども</rt></ruby>の<ruby><rb>時代</rb><rt>とき</rt></ruby>の純潔や叡智がそのまま温和にふとり育つて、それが正確に保存されてゐるからである。「小児に就て人に接することを学べ小児は未だ汚されず、小児にとつては人みな同じ」と<persName ref="#tolstoy">トルストイ</persName>も言つてゐる。</p>
+        <p>私は雪の深い北国に育つた。<date when="--11">十一月初旬</date>のしぐれは日を追うて霙となつてそして美しい雪となり山や野や街や家家を包んだ。町の人人は家家の北に面した窓や戸口を藁や蓆をもつて覆うた。</p>
+        <p>道のふた側に積まれた雪は、屋根とおなじい高さにまでなつて、夜は窓や戸口の雪の、中から燈灯が漏れてゐた。戸外運動といふものが雪の為めに自然なくされてゐた小供の私らは、いつも室に座つたり暖炉にあたつたりして、恐ろしい吹雪の夜を送つてゐた。そのころ私は俳句をかいたりコマ絵をかいたりして、自然にたいする心をだんだんに開いてゆくやうになつてゐた。極度に人懐こい、もの恋しげな心を不断に有つてゐた私は、また一面に於ては烈しい一人ぽつちが好であつた。本をよんだり物を考へたりしたあと、よく自分で自分が作つた甘美な哀愁にひたりながら、雪あかりのする窓際で「小供らしくない」事を考へてゐた。それが私だち少年のいつも隠れてする心の隠れ家みたいに楽しく又悲しいものであつた。</p>
+        <p><date when="--04">四月</date>まで続く降雪を我慢しきれないやうに、雪の下では春の浮動するものが生き初めるころは、わけても悩ましい<ruby><rb>力</rb><rt>ちから</rt></ruby>がからだに湧いてくるのであつた。私だち少年らは、おたがひに女の子のやうな深い情愛をかんじ合つて、かく詩や俳句の対象はいつもそれらの友に於て選んだ。美しい少年の友だちらは、ある時は、詩のことを話したりして、熱い握手や接吻をしたり、蒼い日暮の飽くことをしらない散歩をしたりしてゐた。</p>
+        <p>私どもは、そこここの散歩や、草場のあたりでいろいろな詩をうたつた。風のやうにうたひながら自分でつい感心してしまつて、ほろりとするといふやうなこともあつた。見るものが悲しくひしひしと迫つてくるのであつた。あの何物にもたとへることの出来ない、弱弱しい美しいセンチメンタルな瞬間に、私どもは、自分が其処に生きることを幸福に考へ、また必然さうあるべきことが自分らの若い使命のやうに、この全世界でいちばん偉い詩人ででもあるやうに考へてゐた。謙譲やはにかみもなかつた。傲慢と自愛とにたえず圧倒されてゐて、それを当り前のやうに思つてゐた。それほど、世間の本をよまない仲間にたいしては遠慮がなかつた。</p>
+        <p>私は抒情詩を愛する。わけても自分の踏み来つた郷土や、愛や感傷やを愛する。「くちばし青き小鳥」の囀りは可愛い。それを讃へたい。人間にたつた一度より外ない時代を紀念したい。それをそのまま次ぎに味ひつつある若い人人らの胸にたたみ込んで置きたいと思つてゐる。</p>
+        <p>もとより詩のよいわるいはすききらひより外の感情で評価できないものだ。これらの詩がどれほどハアトの奥の奥に深徹してゐるかについて、今私は何もいへないけれど、人人はきつとよき微笑と親密とを心に用意して読んでくれるだらうと思ふ。むづかしい批評や議論ぬきの「優しい心」で味つてくれるだらうと思ふ。それでこそ私がこの本を世に送り出した甲斐のあることを感じるのだ。</p>
+        <p><date when="--01">一月</date>に『愛の詩集』を出してからもう一年に近くなる。『愛の詩集』まで歩んだ自分を知るにはどうしても此の「抒情詩時代」の自分をも知つてほしくおもふ。自分にもなほ美しい恋を恋したり、甘美な女性的なリズムを愛したりした時代のあつたことを物語りたいのである。ほんとはこの『抒情小曲集』は『愛の詩集』と併せて読んで、僕の心持のたてとよことに<ruby><rb>縒</rb><rt>よ</rt></ruby>れ込んだリズムをほぐして見てほしいのだ。よく読んでくれる人人は、この小曲集の終りのペエジに近づいてゆくごとに、だんだんに人間の感情がひびれたり、優しく荒れて行つたりしてゐることを考へてくれるだらう。風にいためられた生活の花と実とを今まとめて見ることを嬉しく悲しく思ふ。</p>
+        <p><date when="1918-07-13">千九百十八年七月十三日</date></p>
+        <p>郊外<placeName ref="#tabata">田端</placeName>にて</p>
+        <p><persName ref="#saisei">室生犀星</persName></p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>『抒情小曲集』覚書</head>
+        <p>年譜</p>
+        <p>二十歳頃より二十四歳位までの作にして、就中「小景異情」最も古く、「合掌」最も新しきものなり。時折折の心持ちによりて五年間の春秋の季節の詩は入り乱れたるも、出来得る限り年譜は正しく編しぬ。</p>
+        <p>創作地</p>
+        <p>郷里<placeName ref="#kanazawa">金沢</placeName>市<placeName ref="#sennichimachi">千日町</placeName><placeName ref="#uhoin">雨宝院</placeName>といへる<placeName ref="#uhoin">金比羅神社</placeName>、寂しき栂、榎の大樹に寺領の四方はとりかこまれ、昼なほ暗き前庭のほとり極めて幽遠なり。その奥の間よりは直ちに<placeName ref="#saigawa">犀川</placeName>をのぞむ。美しき清流寺院の岸を灑ひて夏といへども涼しきことかぎりなし。川を隔てて<placeName ref="#iozan">医王</placeName>、<placeName ref="#tomuroyama">戸室</placeName>の山さては遠く<placeName ref="#hida">飛騨</placeName>の連峯をも望むことを得。</p>
+        <p>野及び散歩の地として</p>
+        <p>最も好みしは<placeName ref="#saigawa">犀川</placeName>べりなる<placeName ref="#hamaguribaka">蛤坂新道</placeName>、下つては<placeName ref="#saigawa">犀川</placeName>鉄橋のほとり等。これらの地は絶えず予の若き其頃の胸裡を去来して、シーズンの移り変り目ごとには高き鼓動を覚えたるものなり。「秋思」は有名なる<placeName ref="#kenrokuen">兼六公園</placeName>にての作にして、園の入口なる青く柔かき芝生の生えし様、其の色いまも忘れがたきものの一つなり。</p>
+        <p>旅行</p>
+        <p><placeName ref="#kyoto">京都</placeName>、<placeName ref="#joshu">上州</placeName><placeName ref="#maebashi">前橋</placeName>市近郊に旅せし時の作、及び「足羽川」の一篇等なり。<placeName ref="#asuwagawa">足羽川</placeName>は<placeName ref="#echizen">越前</placeName><placeName ref="#fukui">福井</placeName>市を流るる川なり。<placeName ref="#kyoto">京都</placeName>よりの帰るさにここ<placeName ref="#fukui">福井</placeName>の街に約一ヶ月ばかり滞在せし事のあり、その時になれる詩にして、美しき<placeName ref="#asuwagawa">足羽</placeName>の川の土手の<ruby><rb>上</rb><rt>へ</rt></ruby>の、若き桜樹はいまも尚春くる毎に花咲けりときく。なつかしき事のきはみ。旅行は凡て予が幼き日の我儘なる事より、慈愛あつき父母にそむきての事なりき。今ははや父もみまかりて世に空し。哀感極まりなし。</p>
+        <p><placeName ref="#joshu">上州</placeName><placeName ref="#maebashi">前橋</placeName>には三度ゆけり。ここにて予が畏友<persName ref="#sakutaro">萩原</persName>を知る。<placeName ref="#koide-kawara">小出磧</placeName>といへる<placeName ref="#tonegawa">利根</placeName>の河畔、小さき砂山、櫟の若き林、牧牛、<placeName ref="#akagi">赤城山</placeName>、公園等、皆予が心に今もなほ生けり。旅はおもしろけれどもはかなく哀し。利根の砂山、氷の扉、さくらと雲雀、土筆、前橋公園の五篇を得たり。（外になほ数多けれども収録せず）</p>
+        <p>海浜</p>
+        <p>海の詩はすべて<placeName ref="#kanazawa">金沢</placeName>市より二里を隔つる<placeName ref="#kanaiwa"><ruby><rb>金石</rb><rt>かないは</rt></ruby></placeName>といへる所にて作る。ここは二千戸を数へ人心すべて質純なり。町より五丁程を隔てられて<placeName ref="#shakado">釈迦堂</placeName>といへる僧院あり。静かなる院にして有名なる<persName ref="#zeniya-gohei">銭屋五兵衛</persName>の墓碑あり。静かなる院にしてここのとある一室に一年有余転地療養せしことあり。院は砂丘の蔭、涼しき松林のはづれにありて、お花畑よりいでて町に通ず。予ここにてはじめて「屋上庭園」を友<persName ref="#hakushu">白秋</persName>より送らる。此頃より予が詩の心やうやく動き且つ固められたり、かへりみればもはや十一年を閲しぬ。世にも静かにして、優しく、美しき尼僧らによりて、病気の予は毎日新しき野菜と、親切にして充分なる静養を与へられたり。友<persName ref="#sakutaro">萩原</persName>もまた、遠く<placeName ref="#maebashi">前橋</placeName>市より来りてこの寂しき僧院を訪づれぬ。時は<date when="1915-05">大正四年五月</date>のことなりし。ここにてはかもめ、海浜独唱、砂山の雨、魚とその哀歓、松林の中に座す、砂丘の上、静かなる空、水すまし等を得たり。</p>
+        <p>降雪</p>
+        <p><date when="--10">十月下旬</date>より時雨となり、<date when="--11">十一月</date>終りは冷たき霙となる。霙となりて永き冬に入れば漸て霰となり、雪となる。二三尺も積るは例年の事にして、時に丈余にもなる事ありて、犬等は皆屋根の上にて遊び戯る。雪降れば却つて温く、人人は夜炬燵を囲みて団欒す。雪降れど霰凍れども故郷の冬は忘れがたかり。</p>
+        <p>暗黒時代</p>
+        <p>小曲集第三部は主として<placeName ref="#tokyo">東京</placeName>に於て作らる。<placeName ref="#hongo">本郷</placeName>の谷間なる<placeName ref="#nezu">根津</placeName>の湿潤したる旅籠にて「蝉頃」の啼く蝉のしいいといへるを聞きて、いくそたび蹉跌と悪酒と放蕩との夏を迎へしことぞ。銀製の乞食、坂、それらは皆予の前面を圧する暗黒時代の作なり。幾月も昼間外出せずして終夜なる巷にゆき、悪酒にひたりぬ。その悔新しくしてなほ深くふけりてゆきぬ。今も尚思ひ見て予の額を汗するものはこれなり。或る時は<placeName ref="#hakusan-jinja">白山神社</placeName>の松にかなかなの啼くをきき、<placeName ref="#ueno">上野</placeName>に夜明けの鐘をききては帰りぬ。合掌のあとさきはじつに病気ともたたかひし時代なりしなり。</p>
+        <p>発表について</p>
+        <p>これらの抒情詩は曾つて雑誌『感情』第二号第三号にまとめて発表したるが、その以前雑誌ザムボア・スバル・詩歌・創作等にのせたるものなり。</p>
+        <p>（これらは<date when="1918-06-18">一九一八年六月十八日</date>の覚書なり）</p>
+        <p>われら少年の日の友とみないまは</p>
+        <p>寂しくかたるべし</p>
+        <p>小曲集箴言</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>小景異情</head>
+        <p>その一</p>
+        <p>白魚はさびしや</p>
+        <p>そのくろき瞳はなんといふ</p>
+        <p>なんといふしほらしさぞよ</p>
+        <p>そとにひる<ruby><rb>餉</rb><rt>げ</rt></ruby>をしたたむる</p>
+        <p>わがよそよそしさと</p>
+        <p>かなしさと</p>
+        <p>ききともなやな雀しば啼けり</p>
+        <p>その二</p>
+        <p>ふるさとは遠きにありて思ふもの</p>
+        <p>そして悲しくうたふもの</p>
+        <p>よしや</p>
+        <p>うらぶれて異土の<ruby><rb>乞食</rb><rt>かたゐ</rt></ruby>となるとても</p>
+        <p>帰るところにあるまじや</p>
+        <p>ひとり都のゆふぐれに</p>
+        <p>ふるさとおもひ涙ぐむ</p>
+        <p>そのこころもて</p>
+        <p>遠きみやこにかへらばや</p>
+        <p>遠きみやこにかへらばや</p>
+        <p>その三</p>
+        <p>銀の時計をうしなへる</p>
+        <p>こころかなしや</p>
+        <p>ちよろちよろ川の橋の上</p>
+        <p>橋にもたれて泣いてをり</p>
+        <p>その四</p>
+        <p>わが霊のなかより</p>
+        <p>緑もえいで</p>
+        <p>なにごとしなけれど</p>
+        <p>懺悔の涙せきあぐる</p>
+        <p>しづかに土を掘りいでて</p>
+        <p>ざんげの涙せきあぐる</p>
+        <p>その五</p>
+        <p>なににこがれて書くうたぞ</p>
+        <p>一時にひらくうめすもも</p>
+        <p>すももの蒼さ身にあびて</p>
+        <p>田舎暮しのやすらかさ</p>
+        <p>けふも母ぢやに叱られて</p>
+        <p>すもものしたに身をよせぬ</p>
+        <p>その六</p>
+        <p>あんずよ</p>
+        <p>花着け</p>
+        <p>地ぞ早やに輝やけ</p>
+        <p>あんずよ花着け</p>
+        <p>あんずよ燃えよ</p>
+        <p>ああ　あんずよ花着け</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>旅途</head>
+        <p>旅にいづることにより</p>
+        <p>ひとみあかるくひらかれ</p>
+        <p>手に青き洋紙は提げられたり</p>
+        <p>ふるさとにあれど</p>
+        <p>安きを得ず</p>
+        <p>ながるるごとく旅に出づ</p>
+        <p>麦は雪のなかより萌え出で</p>
+        <p>そのみどりは磨げるがごとし</p>
+        <p>窓よりうれしげにさしのべし</p>
+        <p>わが魚のごとき手に雪はしたしや</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>京都にて</head>
+        <p>にほやかに恋ひぬれど</p>
+        <p>さめゆくものはつめたかり</p>
+        <p>わが心は哀憐にみちわたり</p>
+        <p>もののそよぎに泪おちむとす</p>
+        <p>雪の青きを手にとれば</p>
+        <p>雪は哀しくなじみまつはる</p>
+        <p>かばかりふかき哀憐のもよほしに</p>
+        <p>いまぞ涙ことごとく流れもいでよ</p>
+      </div>
+      <div type="chapter" xml:id="sec09" n="9">
+        <head>流離</head>
+        <p>わが朝のすずしきこころに</p>
+        <p>あざやかなる芽生のうすみどり</p>
+        <p>にがかれど</p>
+        <p>うれしや沁みきたる</p>
+        <p>こよなきいそしみをもて</p>
+        <p>青くしつかなる洋紙をこそのべにけれ</p>
+        <p>そは巡礼のうたごゑをきくごとき</p>
+        <p>わがきさらぎの哀調にして</p>
+        <p>わかれむとするふるき都に</p>
+        <p>とどまりもえぬ心なり</p>
+        <p>ああ　よく晴れあがりし空のもと</p>
+        <p>わが旅のをはりにや</p>
+        <p>小鳥すくみごゑして消えもゆくなり</p>
+      </div>
+      <div type="chapter" xml:id="sec10" n="10">
+        <head>木の芽</head>
+        <p>麦のみどりをついと出て</p>
+        <p>ついともどれば雪がふり</p>
+        <p>冬のながさの草雲雀</p>
+        <p>あくびをすれば</p>
+        <p>木の芽吹く</p>
+      </div>
+      <div type="chapter" xml:id="sec11" n="11">
+        <head>祇園</head>
+        <p><placeName ref="#gion">祇園</placeName>の夜のともしびに</p>
+        <p>青き魚さへ泳ぎ出づ</p>
+        <p>青き魚さへをどるにや</p>
+        <p><placeName ref="#kamogawa">加茂川</placeName>べりのあたたかさ</p>
+        <p><ruby><rb>飯</rb><rt>いひ</rt></ruby>もたべずにわがうたふ</p>
+      </div>
+      <div type="chapter" xml:id="sec12" n="12">
+        <head>夏の朝</head>
+        <p>なにといふ虫かしらねど</p>
+        <p>時計の玻璃のつめたきに這ひのぼり</p>
+        <p>つうつうと啼く</p>
+        <p>ものいへぬむしけらものの悲しさに</p>
+      </div>
+      <div type="chapter" xml:id="sec13" n="13">
+        <head>寺の庭</head>
+        <p>つち澄みうるほひ</p>
+        <p><ruby><rb>石蕗</rb><rt>つは</rt></ruby>の花咲き</p>
+        <p>あはれ知るわが育ちに</p>
+        <p>鐘の鳴る寺の庭</p>
+      </div>
+      <div type="chapter" xml:id="sec14" n="14">
+        <head>旅上</head>
+        <p>旅にいづらば</p>
+        <p>はろばろと心うれしきもの</p>
+        <p>旅にいづらば</p>
+        <p>都のつかれ、めざめ行かむと</p>
+        <p>緑を見つむるごとく唯信ず</p>
+        <p>よしや<ruby><rb>趁</rb><rt>お</rt></ruby>はれて旅すこころなりとも</p>
+        <p>知らぬ地上に印す</p>
+        <p>あらたなる草木とゆめと唯信ず</p>
+        <p>神とけものと</p>
+        <p>人間の道かぎりなければ</p>
+        <p>ただ深く信じていそぐなりけり</p>
+      </div>
+      <div type="chapter" xml:id="sec15" n="15">
+        <head>三月</head>
+        <p>うすければ青くぎんいろに</p>
+        <p>さくらも紅く咲くなみに</p>
+        <p><date when="--03">三月</date>こな雪ふりしきる</p>
+        <p>雪かきよせて手にとれば</p>
+        <p>手にとるひまに消えにけり</p>
+        <p>なにを哀しと言ひうるものぞ</p>
+        <p>君が朱なるてぶくろに</p>
+        <p>雪もうすらにとけゆけり</p>
+      </div>
+      <div type="chapter" xml:id="sec16" n="16">
+        <head>足羽川</head>
+        <p>あひ逢はずよとせとなり</p>
+        <p>あすは川みどりこよなく濃ゆし</p>
+        <p>をさなかりし桜ものびあがり</p>
+        <p>うれしやわが手にそひきたる</p>
+        <p>わがそのかみに踏みも見し</p>
+        <p>この土手の芝とうすみどり</p>
+        <p>いまふゆ枯れはてていろ哀しかり</p>
+        <p>われながき旅よりかへり</p>
+        <p>いま<placeName ref="#asuwagawa">足羽川</placeName>のほとりに立つことの</p>
+        <p>なにぞやおろかにも涙ぐまるは</p>
+      </div>
+      <div type="chapter" xml:id="sec17" n="17">
+        <head>ふるさと</head>
+        <p>雪あたたかくとけにけり</p>
+        <p>しとしとしとと融けゆけり</p>
+        <p>ひとりつつしみふかく</p>
+        <p>やはらかく</p>
+        <p>木の芽に息をふきかけり</p>
+        <p>もえよ</p>
+        <p>木の芽のうすみどり</p>
+        <p>もえよ</p>
+        <p>木の芽のうすみどり</p>
+      </div>
+      <div type="chapter" xml:id="sec18" n="18">
+        <head>犀川</head>
+        <p>うつくしき川は流れたり</p>
+        <p>そのほとりに我は住みぬ</p>
+        <p>春は春、なつはなつの</p>
+        <p>花つける堤に座りて</p>
+        <p>こまやけき本のなさけと愛とを知りぬ</p>
+        <p>いまもその川ながれ</p>
+        <p>美しき微風ととも</p>
+        <p>蒼き波たたへたり</p>
+      </div>
+      <div type="chapter" xml:id="sec19" n="19">
+        <head>みやこへ</head>
+        <p>こひしや<placeName ref="#tokyo">東京</placeName><placeName ref="#asakusa">浅草</placeName>夜のあかり</p>
+        <p>けさから飯もたべずに</p>
+        <p>青い顔してわがうたふ</p>
+        <p>わがうたごゑの消えゆけば</p>
+        <p>うたひつかれて死にしもの</p>
+        <p>けふは浜べもうすぐもり</p>
+        <p>ぴよろかもめの啼きいづる</p>
+      </div>
+      <div type="chapter" xml:id="sec20" n="20">
+        <head>寂しき春</head>
+        <p>したたり止まぬ日のひかり</p>
+        <p>うつうつまはる水ぐるま</p>
+        <p>あをぞらに</p>
+        <p><placeName ref="#echigo">越後</placeName>の山も見ゆるぞ</p>
+        <p>さびしいぞ</p>
+        <p><ruby><rb>一日</rb><rt>いちにち</rt></ruby>もの言はず</p>
+        <p>野にいでてあゆめば</p>
+        <p>菜種のはなは波をつくりて</p>
+        <p>いまははや</p>
+        <p>しんにさびしいぞ</p>
+      </div>
+      <div type="chapter" xml:id="sec21" n="21">
+        <head>利根の砂山</head>
+        <p>風吹きいでてうちけむる</p>
+        <p><placeName ref="#tonegawa">利根</placeName>の砂山、<placeName ref="#tonegawa">利根</placeName>の砂山</p>
+        <p><placeName ref="#akagi">赤城</placeName>おろしはひゆうひゆうたり</p>
+        <p>ひゆうたる風のなかなれば</p>
+        <p>土筆は土の中に伸ぶ</p>
+        <p>なにに哀しみ立てる<placeName ref="#tonegawa">利根</placeName>の砂山</p>
+        <p>よしや、すてツきをもて</p>
+        <p>君が名をつづるとも</p>
+        <p><placeName ref="#akagi">赤城</placeName>おろしはひゆうとして</p>
+        <p>たちまちにして消しゆきぬ</p>
+      </div>
+      <div type="chapter" xml:id="sec22" n="22">
+        <head>氷の扉</head>
+        <p>たちまちに雪光る山なれ</p>
+        <p>たちまち鳴りてはくもる山なれ</p>
+        <p><ruby><rb>四方</rb><rt>よも</rt></ruby>の氷の扉ひらかれ</p>
+        <p>いつさいは萌えむとす</p>
+        <p>この国の草草のなよらかならむことの</p>
+        <p>けふはしきりに祈らる</p>
+        <p>この国の草草と</p>
+        <p>人人の心ごころに</p>
+        <p>よきめぐみのあらむことの</p>
+        <p>ああ　しきりにけふは祈らる</p>
+      </div>
+      <div type="chapter" xml:id="sec23" n="23">
+        <head>桜と雲雀</head>
+        <p>雲雀ひねもす</p>
+        <p>うつらうつらと啼けり</p>
+        <p>うららかに声は桜にむすびつき</p>
+        <p>桜すんすん伸びゆけり</p>
+        <p>桜よ</p>
+        <p><ruby><rb>我</rb><rt>わ</rt></ruby>がしんじつを感ぜよ</p>
+        <p>らんまんとそそぐ日光にひろがれ</p>
+        <p>あたたかく楽しき春の</p>
+        <p>春の世界にひろがれ</p>
+      </div>
+      <div type="chapter" xml:id="sec24" n="24">
+        <head>土筆</head>
+        <p>旅人なればこそ</p>
+        <p>小柴がくれに茜さす</p>
+        <p>いとしき嫁菜つくつくし</p>
+        <p>摘まんとしつつ</p>
+        <p>吐息つく</p>
+        <p>まだ春浅くして</p>
+        <p>あたま哀しきつくつくし</p>
+        <p>指はいためど　一心に土を掘る</p>
+      </div>
+      <div type="chapter" xml:id="sec25" n="25">
+        <head>前橋公園</head>
+        <p>すゐすゐたる桜なり</p>
+        <p>伸びて<date when="--04">四月</date>をゆめむ桜なり</p>
+        <p>すべては水のひびきなり</p>
+        <p>四阿屋の枯れ芝は哀しかれども</p>
+        <p>花園になんの種子なりしぞ</p>
+        <p>しきりに芽吹き</p>
+        <p>きそよりもなほ萌えづるげ</p>
+        <p>街のをとめの素足光らし</p>
+        <p>風に砥がれて光るさくらなり</p>
+      </div>
+      <div type="chapter" xml:id="sec26" n="26">
+        <head>かもめ</head>
+        <p>かもめかもめ</p>
+        <p>去りゆくかもめ</p>
+        <p>かくもさみしく口ずさみ</p>
+        <p>渚はてなくつたひゆく</p>
+        <p>かもめかもめ</p>
+        <p>入日のかたにぬれそぼち</p>
+        <p>ぴよろとなくはかもめどり</p>
+        <p>あはれみやこをのがれきて</p>
+        <p>海のなぎさをつたひゆく</p>
+      </div>
+      <div type="chapter" xml:id="sec27" n="27">
+        <head>海浜独唱</head>
+        <p>ひとりあつき涙をたれ</p>
+        <p>海のなぎさにうづくまる</p>
+        <p>なにゆゑの涙ぞ青き波のむれ</p>
+        <p>よせきたりわが額をぬらす</p>
+        <p>みよや濡れたる砂にうつり出づ</p>
+        <p>わがみじめなる影をいだき去り</p>
+        <p>抱きさる波、波、哀しき波</p>
+        <p>このながき渚にあるはわれひとり</p>
+        <p>ああわれのみひとり</p>
+        <p>海の青きに流れ入るごとし</p>
+      </div>
+      <div type="chapter" xml:id="sec28" n="28">
+        <head>蛇</head>
+        <p>蛇をながむるこころ蛇になる</p>
+        <p>ぎんいろの鋭き蛇になる</p>
+        <p>どくだみの花あをじろく</p>
+        <p>くされたる噴井の匂ひ蛇になる</p>
+        <p>君をおもへば君がゆび</p>
+        <p>するするすると蛇になる</p>
+      </div>
+      <div type="chapter" xml:id="sec29" n="29">
+        <head>新曲</head>
+        <p>あめつちの垂りぬ　垂り穂は</p>
+      </div>
+      <div type="chapter" xml:id="sec30" n="30">
+        <head>砂山の雨</head>
+        <p>砂山に雨の消えゆく音</p>
+        <p>草もしんしん</p>
+        <p>海もしんしん</p>
+        <p>こまやかなる夏のおもひも</p>
+        <p>わが<ruby><rb>身</rb><rt>みな</rt></ruby>うちにかすかなり</p>
+        <p>草にふるれば草はまさをに</p>
+        <p>雨にふるれば雨もまさをなり</p>
+        <p>砂山に埋め去るものは君が名か</p>
+        <p>かひなく過ぐる夏のおもひか</p>
+        <p>いそ草むらはうれひの巣</p>
+        <p>かもめのたまご孵らずして</p>
+        <p>あかるき中にくさりけり</p>
+      </div>
+      <div type="chapter" xml:id="sec31" n="31">
+        <head>魚とその哀歓</head>
+        <p>うかびくるはかの蒼き魚</p>
+        <p>しづかなる燐光とその哀歓との</p>
+        <p>かくてもわがこころを去りえず</p>
+        <p>やはらかく伸びむとする梢には</p>
+        <p>わが魚はまた泳ぎそめたり</p>
+        <p>その肌に指ふれむとすれば</p>
+        <p>指はこころよく</p>
+        <p>小さき魚のごとし</p>
+      </div>
+      <div type="chapter" xml:id="sec32" n="32">
+        <head>赤櫨</head>
+        <p>金縞の蜂のひとつは</p>
+        <p>針のにぶりを磨げりしが</p>
+        <p>草を痛めて去りゆけり</p>
+        <p>金のラインを空とほく引ずりて</p>
+      </div>
+      <div type="chapter" xml:id="sec33" n="33">
+        <head>時無草</head>
+        <p>秋のひかりにみどりぐむ</p>
+        <p>ときなし草は摘みもたまふな</p>
+        <p>やさしく日南にのびてゆくみどり</p>
+        <p>そのゆめもつめたく</p>
+        <p>ひかりは水のほとりにしづみたり</p>
+        <p>ともよ　ひそかにみどりぐむ</p>
+        <p>ときなし草はあはれ深ければ</p>
+        <p>そのしろき指もふれたまふな</p>
+      </div>
+      <div type="chapter" xml:id="sec34" n="34">
+        <head>永日</head>
+        <p>野にあるときもわれひとり</p>
+        <p>ひとり、たましひふかく抱きしめ</p>
+        <p>こごゑにいのり燃えたちぬ</p>
+        <p>けふのはげしき身のふるへ</p>
+        <p>麦もみどりを震はせおそるるか</p>
+        <p>われはやさしくありぬれど</p>
+        <p>わがこしかたのくらさより</p>
+        <p>さいはひどもの遁がれゆく</p>
+        <p>のがるるものを<ruby><rb>趁</rb><rt>お</rt></ruby>ふなかれ</p>
+        <p>ひたひを割られ</p>
+        <p>血みどろにをののけど</p>
+        <p>たふとや、われの生けること</p>
+        <p>なみだしんしん涌くごとし</p>
+      </div>
+      <div type="chapter" xml:id="sec35" n="35">
+        <head>秋の日</head>
+        <p>つかの間に消え去りし</p>
+        <p>つかの間に消え去りしは</p>
+        <p>あきつのかげにあらざるか</p>
+        <p>ぐらすのごとき秋の日に</p>
+        <p>かげうち過ぐるもの</p>
+        <p>わが君のかげにあらざるか</p>
+        <p>とほき床屋のぎん鋏</p>
+        <p>波を越えくるかげなるか</p>
+        <p>あらずおんみのひとみより</p>
+        <p>わが眼うれひてかげを見る</p>
+      </div>
+      <div type="chapter" xml:id="sec36" n="36">
+        <head>小曲</head>
+        <p>逢へぬこのごろ</p>
+        <p>秋はバツタのほねに沁みにけむ</p>
+        <p>手にとりみればちからなく</p>
+        <p>銀の片脛折らしたり</p>
+      </div>
+      <div type="chapter" xml:id="sec37" n="37">
+        <head>小曲</head>
+        <p><ruby><rb>眼</rb><rt>まなこ</rt></ruby>つむりてすみやかに</p>
+        <p>君をねんじて十字をきれば</p>
+        <p>熱きもの</p>
+        <p>ひとすぢのけぶりとなりて</p>
+        <p>真青の竹をのぼりゆく</p>
+      </div>
+      <div type="chapter" xml:id="sec38" n="38">
+        <head>月草</head>
+        <p>秋はしづかに手をあげ</p>
+        <p>秋はしづかに歩みくる</p>
+        <p>かれんなる月草の藍をうち分け</p>
+        <p>つめたきものをふりそそぐ</p>
+        <p>われは青草に座りて</p>
+        <p>かなたに白き君を見る</p>
+      </div>
+      <div type="chapter" xml:id="sec39" n="39">
+        <head>しら雲</head>
+        <p>かのしら雲を呼ばむとするもの</p>
+        <p>まことにかぞふるべからず</p>
+        <p>飛べるものは石となりしか</p>
+        <p>さびしさに啼き立つる</p>
+        <p>ゆふぐれの鳥となりしか</p>
+      </div>
+      <div type="chapter" xml:id="sec40" n="40">
+        <head>十一月初旬</head>
+        <p>あはあはしきしぐれなるかな</p>
+        <p><placeName ref="#katamachi">かたかは町</placeName>の坂みちのぼり</p>
+        <p>あかるみし空はとながむれば</p>
+        <p>はやも<placeName ref="#katamachi">片町</placeName>あたり</p>
+        <p>しぐれけぶりぬ</p>
+      </div>
+      <div type="chapter" xml:id="sec41" n="41">
+        <head>十一月初旬</head>
+        <p>なめくぢは樹に凍え</p>
+        <p>樹は二つに裂けぬ</p>
+        <p>はや冬のこしなり</p>
+        <p>海なりは空を行く</p>
+      </div>
+      <div type="chapter" xml:id="sec42" n="42">
+        <head>くらげ</head>
+        <p>秋なれば</p>
+        <p>くらげ渚に</p>
+        <p>うちあげられ</p>
+        <p>玻璃のごとくなりて死す</p>
+      </div>
+      <div type="chapter" xml:id="sec43" n="43">
+        <head>霜</head>
+        <p>総て枯るるものは枯れたり</p>
+        <p>うつくしく</p>
+        <p>まはだかに</p>
+        <p>やがて霜に祈らん</p>
+      </div>
+      <div type="chapter" xml:id="sec44" n="44">
+        <head>樹をのぼる蛇</head>
+        <p>われは見たり</p>
+        <p>木をよぢのぼりゆく蛇を見たり</p>
+        <p>世にさびしき姿を見たり</p>
+        <p>空にかもいたらんとする蛇なるか</p>
+        <p>木は微かにうごき</p>
+        <p>風もなき白昼</p>
+      </div>
+      <div type="chapter" xml:id="sec45" n="45">
+        <head>あらし来る前</head>
+        <p>さらさらと秋はながれゆく</p>
+        <p>草の<ruby><rb>上</rb><rt>へ</rt></ruby>に　水の<ruby><rb>上</rb><rt>へ</rt></ruby>に</p>
+        <p>ええてるは銀の羽虫となり</p>
+        <p>きららめきつつ</p>
+        <p>飛びかよふ</p>
+        <p>震へる木ぬれを眺むれば</p>
+        <p>あらしは今遠方にありて</p>
+        <p>次第に近よらむとするごとし</p>
+        <p>くさむらのあたり</p>
+        <p>あらしの前のそよ風起り</p>
+        <p>空すこしく</p>
+        <p>やや動く</p>
+      </div>
+      <div type="chapter" xml:id="sec46" n="46">
+        <head>磧</head>
+        <p>ここの柴草なみに</p>
+        <p>もみづる　もみづる</p>
+        <p>あきつを染め</p>
+        <p>空とぶあきつのむれを染め</p>
+        <p>山山のみねの上</p>
+        <p>ちらちら雪を染め</p>
+        <p>かなし秋を終らしぬ</p>
+      </div>
+      <div type="chapter" xml:id="sec47" n="47">
+        <head>松林のなかに座す</head>
+        <p>海のしづかはしら羽どり</p>
+        <p>秋のしづかはしら羽どり</p>
+        <p>しらはのとりのきえゆけば</p>
+        <p>松の林にうづくまり</p>
+        <p>松のみどりをかきむしりなじみたり</p>
+        <p>砂丘とほくつらなり</p>
+        <p>そのあひまより海の青い瞳は来る</p>
+        <p>海にかよひしはいつかわかねど</p>
+        <p>海におびえしたまをあづけあり</p>
+      </div>
+      <div type="chapter" xml:id="sec48" n="48">
+        <head>砂丘の上</head>
+        <p>渚には蒼き波のむれ</p>
+        <p>かもめのごとくひるがへる</p>
+        <p>過ぎし日はうすあをく</p>
+        <p>海のかなたに死にうかぶ</p>
+        <p>おともなく砂丘の上にうづくまり</p>
+        <p>海のかなたを恋ひぬれて</p>
+        <p>ひとりただひとり</p>
+        <p>はるかにおもひつかれたり</p>
+      </div>
+      <div type="chapter" xml:id="sec49" n="49">
+        <head>静かなる空</head>
+        <p>秋の日のかたむくかたに</p>
+        <p>土はおとなくしめり</p>
+        <p>たえまなく空とひたひに</p>
+        <p>なやみてつづく</p>
+        <p>ただながれもあへぬ秋の中</p>
+        <p>あをき梢はかわきゆき</p>
+        <p>われはおとなく</p>
+        <p>ねむりゆく</p>
+        <p>しづかなる空と土の上に</p>
+      </div>
+      <div type="chapter" xml:id="sec50" n="50">
+        <head>水すまし</head>
+        <p>水すまし</p>
+        <p>水をすましてきえにけり</p>
+        <p>きえしまにあらはれ</p>
+        <p>わがたそがれをさびしうす</p>
+        <p>みなそこになにのちからぞ</p>
+        <p>ゆらぎてむせぶ水すまし</p>
+        <p>をすとめすとは離れずかさなりて</p>
+        <p>なさけもふかに過ぎもゆく</p>
+        <p>をすとめすとはかさなりて</p>
+      </div>
+      <div type="chapter" xml:id="sec51" n="51">
+        <head>秋思</head>
+        <p>わがこのごろのうれひは</p>
+        <p>ふるさとの公園のくれがたを歩む</p>
+        <p>芝草はあつきびろうど</p>
+        <p>いろふかぶかと空もまがへり</p>
+        <p>われこの芝草に坐すときは</p>
+        <p>ひとの上のことをおもはず</p>
+        <p>まれに時計をこぬれにうちかけて</p>
+        <p>すいすい伸ぶる芝草に</p>
+        <p>ひとりごとしつつ秋をまつなり</p>
+      </div>
+      <div type="chapter" xml:id="sec52" n="52">
+        <head>しぐれ</head>
+        <p>さむざむと大根畑に雨がふつてゐる</p>
+        <p>しぐれのあめが</p>
+        <p>ぬらしてゆく</p>
+        <p>そめてゆく遠くまで</p>
+        <p>みぞ萩たでの</p>
+        <p>草草にいたるまで</p>
+        <p>さむざむとしぐれに濡れる</p>
+        <p>微かなる音をたてて</p>
+        <p>寂しき<date when="--10">十月</date></p>
+      </div>
+      <div type="chapter" xml:id="sec53" n="53">
+        <head>哀章</head>
+        <p>抱き交しつつ</p>
+        <p>叫びつつ</p>
+        <p>日ごとに繁き光をはらむ</p>
+        <p>いや深く抱き交しつつ</p>
+      </div>
+      <div type="chapter" xml:id="sec54" n="54">
+        <head>わかれ</head>
+        <p>芝生に霜の降りたり</p>
+        <p>そらは海なりをみなぎらす</p>
+        <p>もはや別れなり</p>
+        <p>くらくして寒い冬がくるぞよ</p>
+      </div>
+      <div type="chapter" xml:id="sec55" n="55">
+        <head>雪くる前</head>
+        <p>凍みて痛めるごとく</p>
+        <p>はてしなく</p>
+        <p>こころ輝き</p>
+        <p>枯木のうへにひびきを起す</p>
+        <p>わが君とわかれて歩めば</p>
+        <p>あらはるとなく</p>
+        <p>消ゆるとなく</p>
+        <p>ふりつむ我が手の雪を</p>
+        <p>ああ　君は掻く</p>
+      </div>
+      <div type="chapter" xml:id="sec56" n="56">
+        <head>朱き葉</head>
+        <p>枯木をゆすりその朱き葉を落す</p>
+        <p>そのもとにわれはさりえず</p>
+        <p>なみ立てる枯木は肌にしみてうつり</p>
+        <p>肌は青くも冷えたり</p>
+        <p>今しづかにしほらしき心立ち戻り</p>
+        <p>朱き葉をふどころに去らむとすれば</p>
+        <p>朱き葉はわが肌になじみえず</p>
+      </div>
+      <div type="chapter" xml:id="sec57" n="57">
+        <head>山にゆきて</head>
+        <p>ふくらみて青める山</p>
+        <p>ひかり寂しき明眸の</p>
+        <p>山にもひそみ</p>
+        <p>こがれ、こがれわたるか</p>
+        <p>樹はみな<ruby><rb>精神</rb><rt>こころ</rt></ruby>にあつまり</p>
+        <p>あをき姿になじむ</p>
+        <p>ああ　ゆめにはあらず</p>
+        <p>ありありと光さびしき明眸の</p>
+        <p>此処にしてなほ我をとらふる</p>
+      </div>
+      <div type="chapter" xml:id="sec58" n="58">
+        <head>すて石に書きたる詩</head>
+        <p>神よ</p>
+        <p>彼女おもひあがりて</p>
+        <p>め鳩のごとく</p>
+        <p>小さき胸をいためてあらば</p>
+        <p>はや　逢ふときをすすめたまへ</p>
+        <p>その通ひくる路のべに</p>
+        <p>さく花あらば</p>
+        <p>つつがなく暖かき光のなかに</p>
+        <p>はれやかに咲かしめたまへ</p>
+        <p>ああ　血もて血をしたたむごとく</p>
+      </div>
+      <div type="chapter" xml:id="sec59" n="59">
+        <head>秋の終り</head>
+        <p>君はいつも無口のつぐみどり</p>
+        <p>わかきそなたはつぐみどり</p>
+        <p>われひとりのみに</p>
+        <p>もの思はせて</p>
+        <p>いまごろはやすみいりしか</p>
+        <p>夜夜冷えまさり啼くむしは</p>
+        <p>わが身のあたり水を噴く</p>
+        <p>ああ　その水さへも凍りて</p>
+        <p>ふたつに割れし石の音</p>
+        <p>あをあをと磧のあなたに起る</p>
+        <p>幾日逢はぬかしらねど</p>
+        <p>なんといふ恋ひしさぞ</p>
+      </div>
+      <div type="chapter" xml:id="sec60" n="60">
+        <head>煙れる冬木</head>
+        <p>もみづる山に朱き日は入る</p>
+        <p>しづかなることわが眼はひとりかがやけり</p>
+        <p>手に触るれど冬木の幹は青からず</p>
+        <p>その指はただに冷えたり</p>
+        <p>さしのぼる煙のなか</p>
+        <p>消えむとするみじめなるわれなるか</p>
+        <p>はりがねのごとき草の鳴る中</p>
+        <p>そのうちにわれの消えゆく音あり</p>
+      </div>
+      <div type="chapter" xml:id="sec61" n="61">
+        <head>大乗寺山にて</head>
+        <p>寂しきいのちまもれば</p>
+        <p>あはれうたごゑきこゆ</p>
+        <p>ここの山べの</p>
+      </div>
+      <div type="chapter" xml:id="sec62" n="62">
+        <head>都に帰り来て</head>
+        <p>眠ることなかれ</p>
+        <p>つねに冴えたる瞳をもて</p>
+        <p>都会のはてをうち眺め</p>
+        <p>どよみの中に投げ入れよ</p>
+        <p>つつしみ深く流れ行け</p>
+        <p>みなぎる渾身の力をもて</p>
+        <p>あなたに現れ</p>
+        <p>あらぬ方に輝きつつ</p>
+        <p>輝ける街路のかたに</p>
+        <p>眼もくらやみ並木にすがり</p>
+        <p>みやこの海をわたり行け</p>
+      </div>
+      <div type="chapter" xml:id="sec63" n="63">
+        <head>はつなつ</head>
+        <p>いよいよ青き<ruby><rb>世界</rb><rt>よ</rt></ruby>となり</p>
+        <p>われものを<ruby><rb>食</rb><rt>は</rt></ruby>まず終日は</p>
+        <p>みやこの街をさまよひぬ</p>
+        <p>みやこの街はかぎりなく</p>
+        <p>いよいよ悲し<ruby><rb>世界</rb><rt>よ</rt></ruby>となり</p>
+        <p>いよいよ青き<ruby><rb>世界</rb><rt>よ</rt></ruby>となり</p>
+        <p>なつはみどりのきぬ着けて</p>
+        <p>君のころもにきぬ着けて</p>
+        <p>いよいよ青き<ruby><rb>世界</rb><rt>よ</rt></ruby>となり</p>
+      </div>
+      <div type="chapter" xml:id="sec64" n="64">
+        <head>蝉頃</head>
+        <p>いづことしなく</p>
+        <p>しいいとせみの啼きけり</p>
+        <p>はや蝉頃となりしか</p>
+        <p>せみの子をとらへむとして</p>
+        <p>熱き夏の砂地をふみし子は</p>
+        <p>けふ　いづこにありや</p>
+        <p>なつのあはれに</p>
+        <p>いのちみじかく</p>
+        <p>みやこの街の遠くより</p>
+        <p>空と屋根とのあなたより</p>
+        <p>しいいとせみのなきけり</p>
+      </div>
+      <div type="chapter" xml:id="sec65" n="65">
+        <head>並木町</head>
+        <p>茫として</p>
+        <p>うつつを綴る</p>
+        <p>夜霧の<placeName ref="#namikicho">並木町</placeName></p>
+        <p>ぬれて歩めば</p>
+        <p>ひややかに身は浮きあがる</p>
+        <p>輝ける巷のそらに</p>
+        <p>夜の並木に</p>
+        <p>ああ都にかへり来て</p>
+        <p>再びさまよひ疲れんとするか</p>
+        <p>燃えつつそそぐ</p>
+        <p><date when="--09">九月</date>はじめの夜の霧</p>
+      </div>
+      <div type="chapter" xml:id="sec66" n="66">
+        <head>銀製の乞食</head>
+        <p>坂を下りゆかむとするは銀製の乞食なり</p>
+        <p>乞食の手にいちめんに苔が生え</p>
+        <p>乞食の手にソオルは躍る</p>
+        <p>乞食の眼に触るるの林檎パインアツプルの類</p>
+        <p>もしくばカステイラ・ワツプルのたぐひ</p>
+        <p>それらは総て味覚を失ひ</p>
+        <p>ワツプルのごときは実に甚だしく憔悴す</p>
+        <p>乞食は祈り</p>
+        <p>乞食は求め</p>
+        <p>遠方へ遠方へ去る</p>
+      </div>
+      <div type="chapter" xml:id="sec67" n="67">
+        <head>天の虫</head>
+        <p>松はしんたり</p>
+        <p>松のしん葉しんたり</p>
+        <p>すがたを見せぬ日ぐらしの</p>
+        <p>こゑを求めば</p>
+        <p>あらぬ方より</p>
+        <p>かなかなかなと寂しきものを</p>
+        <p>松のむら立つ</p>
+        <p>寺の松</p>
+        <p>梢をながめかなかなを求むれば</p>
+        <p>かなかなむしは天の虫</p>
+        <p>啼くとし見れば天上に</p>
+        <p>かなかなかなと寂しきものを</p>
+      </div>
+      <div type="chapter" xml:id="sec68" n="68">
+        <head>上野ステエシヨン</head>
+        <p>トツプトツプと汽車は出てゆく</p>
+        <p>汽車はつくつく</p>
+        <p>あかり点くころ</p>
+        <p><ruby><rb>北国</rb><rt>きたぐに</rt></ruby>の雪をつもらせ</p>
+        <p>つかれて熱い息をつく汽車である</p>
+        <p>みやこやちまたに</p>
+        <p>遠い雪国の心をうつす</p>
+        <p>私はふみきりの橋のうへから</p>
+        <p>ゆきの匂ひをかいでゐる</p>
+        <p><placeName ref="#asakusa">浅草</placeName>のあかりもみえる橋の上</p>
+      </div>
+      <div type="chapter" xml:id="sec69" n="69">
+        <head>苗</head>
+        <p>なたまめの苗、きうりの苗</p>
+        <p>いんげん、さやまめの苗</p>
+        <p>わが友よ</p>
+        <p>あのあはれ深い呼びやうをして</p>
+        <p>ことし又た苗売りがやつて来た</p>
+        <p>あのこゑをきき</p>
+        <p>あの季節のかはり目を感じることは</p>
+        <p>なんといふ微妙な気になることだらう</p>
+      </div>
+      <div type="chapter" xml:id="sec70" n="70">
+        <head>植物園にて</head>
+        <p>とらへがたきザボンの輝き</p>
+        <p>玻璃のうちより</p>
+        <p>匂はしき霧を吹きあぐる</p>
+        <p>ザボンよ</p>
+        <p>あをき梢にむすべ</p>
+        <p>はなるることはなく</p>
+        <p>ふかくしんじつに</p>
+        <p>なみだもて</p>
+        <p>葉の上に梢にむすべ</p>
+        <p>しかして真にかがやけ</p>
+      </div>
+      <div type="chapter" xml:id="sec71" n="71">
+        <head>郊外にて</head>
+        <p>寂しい心を抱いて</p>
+        <p>ある日郊外の田甫路をあるけり</p>
+        <p>涼しい蔭つくる木のしたに</p>
+        <p>旅人のやうに憩ひ</p>
+        <p>旅人のやうに街の方を眺めて居たり</p>
+        <p>もはや暮れ方に近く</p>
+        <p>煙のぼるを見れば悲し</p>
+        <p>ここの都にそはぬ心を</p>
+        <p>つくづく思ひしづめり</p>
+      </div>
+      <div type="chapter" xml:id="sec72" n="72">
+        <head>室生犀星氏</head>
+        <p>みやこのはてはかぎりなけれど</p>
+        <p>わがゆくみちはいんいんたり</p>
+        <p>やつれてひたひあをかれど</p>
+        <p>われはかの<persName ref="#saisei">室生犀星</persName>なり</p>
+        <p>脳はくさりてときならぬ牡丹をつづり</p>
+        <p>あしもとはさだかならねど</p>
+        <p>みやこの午前</p>
+        <p>すてつきをもて生けるとしはなく</p>
+        <p>ねむりぐすりのねざめより</p>
+        <p>眼のゆくあなた緑けぶりぬと</p>
+        <p>午前をうれしみ辿り</p>
+        <p>うつとりとうつくしく</p>
+        <p>たとへばひとなみの生活をおくらむと</p>
+        <p>なみかぜ荒きかなたを歩むなり</p>
+        <p>されどもすでにああ<date when="--04">四月</date>となり</p>
+        <p>さくらしんじつに燃えれうらんたれど</p>
+        <p>れうらんの賑ひに交はらず</p>
+        <p>賑ひを怨ずることはなく唯うつとりと</p>
+        <p>すてつきをもて</p>
+        <p>つねにつねにただひとり</p>
+        <p>謹慎無二の坂の上</p>
+        <p>くだらむとするわれなり</p>
+        <p>ときにあしたより</p>
+        <p>とほくみやこのはてをさまよひ</p>
+        <p>ただひとりうつとりと</p>
+        <p>いき絶えむことを専念す</p>
+        <p>ああ<date when="--04">四月</date>となれど</p>
+        <p>桜を痛めまれなれどげにうすゆき降る</p>
+        <p>哀しみ深甚にして座られず</p>
+        <p>たちまちにしてかんげきす</p>
+      </div>
+      <div type="chapter" xml:id="sec73" n="73">
+        <head>ある日</head>
+        <p>屋根裏より</p>
+        <p>手をさしのべてあはれコオヒイを呼ぶ</p>
+      </div>
+      <div type="chapter" xml:id="sec74" n="74">
+        <head>坂</head>
+        <p>街かどにかかりしとき</p>
+        <p>坂の上にらんらんと日は落ちつつあり</p>
+        <p>円形のリズムはさかんなる廻転にうちつれ</p>
+        <p>樹は炎となる</p>
+        <p>つねにつねにカンヷスを破り</p>
+        <p>つねにつねに悪酒に浸れるわが友は</p>
+        <p>わが熱したる身をかき抱き</p>
+        <p>ともに夕陽のリズムに聴きとらんとはせり</p>
+        <p>しんに夕の麺麭をもとめんに</p>
+        <p>もはや絶えてよしなければ</p>
+        <p>ただ総身はガラスのごとく透きとほり</p>
+        <p>らんらんとして落ちむとする日のなかに</p>
+        <p>喜びいさみつつ踊る</p>
+        <p>わが友よ</p>
+        <p>ただ聞け<placeName ref="#ueno">上野</placeName><placeName ref="#kaneiji">寛永寺</placeName>の鐘のひびきも</p>
+        <p>いんいんたる炎なり</p>
+        <p>立ちて為すすべしなければ</p>
+        <p>ただ踊りつつ涙ぐむ炎なり</p>
+        <p>おろかなる再生を思慕することはなく</p>
+        <p>君はブラツシユをもて踊れ</p>
+        <p>われまづしき詩篇に火を放ち</p>
+        <p>踊り狂ひて死にゆかむ</p>
+        <p>さらにみよ</p>
+        <p>坂の上に転ろびつつ日はしづむ</p>
+        <p>そのごとく踊りつつ転ろびつつ</p>
+        <p>坂を上らむとするにあらずや</p>
+      </div>
+      <div type="chapter" xml:id="sec75" n="75">
+        <head>坂</head>
+        <p>この坂をのぼらざるべからず</p>
+        <p>踊りつつ攀らざるべからず</p>
+        <p>すでに桜はしんじつを感じて</p>
+        <p>坂のふた側に佇ちつくせども</p>
+        <p>ひざんなる室ぬちにかへらねばならず</p>
+        <p>日としてわが霊</p>
+        <p>しほらしからざりしことはなけれど</p>
+        <p>ただ坂の上をおそる</p>
+        <p>いまわが室は寂として</p>
+        <p>かへらむとするわが前に</p>
+        <p>鼠を這はしめんとするか</p>
+        <p>ああわがみじめなる詩篇を携ち</p>
+        <p>悄として</p>
+        <p>されど踊りつつ坂をのぼらざるべからず</p>
+        <p>坂は<placeName ref="#yanaka">谷中</placeName>より<placeName ref="#nezu">根津</placeName>に通じ</p>
+        <p><placeName ref="#hongo">本郷</placeName>より<placeName ref="#kanda">神田</placeName>に及ぶ</p>
+        <p>さんとして</p>
+        <p>眼くらやむなかに坂はあり</p>
+      </div>
+      <div type="chapter" xml:id="sec76" n="76">
+        <head>断章</head>
+        <p>さかづきを挙ぐれども</p>
+        <p>なんぞ寂しやみやこやちまたに</p>
+      </div>
+      <div type="chapter" xml:id="sec77" n="77">
+        <head>道</head>
+        <p>パンを求めゆくの道なり</p>
+        <p>狂気にもなる道だ</p>
+        <p>電車と自働車とに埋るるの道なり</p>
+        <p>道は正直なり</p>
+        <p>人間が人間の</p>
+        <p>たましひの踏み潰されるところだ</p>
+        <p>太陽と月光との道であり</p>
+        <p>われと君との道であり</p>
+        <p>むしけらの道でもある</p>
+        <p>ときにふるさとの愛</p>
+        <p>あきらかに夏は</p>
+        <p>その道の上に落ちる</p>
+        <p>母と父と</p>
+        <p>愛の湧くところの道だ</p>
+      </div>
+      <div type="chapter" xml:id="sec78" n="78">
+        <head>酒場</head>
+        <p>酒場にゆけば月が出る</p>
+        <p>犬のやうに悲しげに吼えてのむ</p>
+        <p>酒場にゆけば月が出る</p>
+        <p>酒にただれて魂もころげ出す</p>
+      </div>
+      <div type="chapter" xml:id="sec79" n="79">
+        <head>街にて</head>
+        <p>引き摺られ</p>
+        <p>息窒まりつつ</p>
+        <p>きんきんと叫びを立て</p>
+        <p>さうらうとしてわれ歩ゆむ</p>
+        <p>しめやかに雨ふる街を眺め昂ぶり</p>
+        <p>凍みたる手を温めんとして</p>
+        <p>さうらうとしてわれ歩ゆむ</p>
+        <p>わが天鵞絨の服は泥をもて汚され</p>
+        <p>わが靴はかなしげに鳴り</p>
+        <p>れいらくの汚なき姿をうつす</p>
+        <p>雨そそぐ都の街の上を</p>
+        <p>髪むしりつつ</p>
+        <p>血みどろに惨として我あゆむ</p>
+      </div>
+      <div type="chapter" xml:id="sec80" n="80">
+        <head>夏の国</head>
+        <p>夏は真蒼だ</p>
+        <p>まだ見もしらぬ国国の</p>
+        <p>夏はしんから真蒼だ</p>
+        <p>わが生れ</p>
+        <p>わが育てられたるの国</p>
+        <p><placeName ref="#kaga">加賀</placeName>のくに<placeName ref="#kanazawa">金沢</placeName>の<ruby><rb>市街</rb><rt>まち</rt></ruby></p>
+        <p>ゆうゆうと流るる<placeName ref="#saigawa">犀の川</placeName></p>
+        <p>川なみなみに充ち</p>
+        <p>するどく魚ははしる</p>
+        <p>ああ　その岸辺に</p>
+        <p>をみなごの友もゐる</p>
+        <p>けふ<placeName ref="#tokyo">東京</placeName>は雨</p>
+        <p>いちにち座してこひしさに</p>
+        <p>みどりの国のこひしさに</p>
+      </div>
+      <div type="chapter" xml:id="sec81" n="81">
+        <head>二つの瞳孔</head>
+        <p>われ生きて佇てる地の上</p>
+        <p>われとともに伸びる遠き瞳孔</p>
+        <p>しんとして</p>
+        <p>輝きわたる瞳孔</p>
+        <p>はるかなり唯とほくして</p>
+        <p>消えむとする二つの瞳孔</p>
+        <p>悲しみ窒息し</p>
+        <p>ぼうとして</p>
+        <p>葱のごとき苦きものに築きあげられ</p>
+        <p>輝やける二つの瞳孔</p>
+      </div>
+      <div type="chapter" xml:id="sec82" n="82">
+        <head>あさぞら</head>
+        <p>並木は蒼し</p>
+        <p>あはれあしたのミルク手にとれば</p>
+        <p>いのちは光る</p>
+        <p>きよみわたりし朝の空</p>
+      </div>
+      <div type="chapter" xml:id="sec83" n="83">
+        <head>郊外にて</head>
+        <p>畑について</p>
+        <p>のろのろと汽車はあるいてゐる</p>
+        <p>麦となたねのだんだん畑</p>
+        <p>汽車はのろのろあるいてゐる</p>
+        <p>のんきな汽車である</p>
+      </div>
+      <div type="chapter" xml:id="sec84" n="84">
+        <head>寂しき椅子</head>
+        <p>いつも来て座る椅子にもたれ</p>
+        <p>沈んで考へることが好だ</p>
+        <p>日がくれる</p>
+        <p>わたしは訪れてゆく</p>
+        <p>寂しきその椅子のあるところに</p>
+        <p>波うつ杯をしたひて</p>
+        <p>永き夜をかくては送る</p>
+        <p>いつはてるとなき</p>
+        <p>深きいたみに</p>
+      </div>
+      <div type="chapter" xml:id="sec85" n="85">
+        <head>十月のノオト</head>
+        <p>時計は銀にあらざれば光らず、帆は布をもて金色を胎ましめざるべからず</p>
+        <p>頭の垂がるやうな詩、深き精神のそこひより掻きのぼれ</p>
+        <p>こひしさにけぶりこもりて畑土に</p>
+        <p>ゆめのやうに雪はきえた</p>
+        <p>わたしは君のてがみを食べてしまつた</p>
+        <p>わたしは胃を悪くした</p>
+        <p>われは海光を浴びたり</p>
+        <p>もう雪が来た、どの山みても燻し銀</p>
+        <p>沖にむかひ永く佇む</p>
+        <p>沖より来る響、暗然として湧く力</p>
+        <p>くもり日の光やすらふほとり朱き葉は走る<placeName ref="#ueno">上野</placeName>の<ruby><rb>公園</rb><rt>そのふ</rt></ruby></p>
+        <p>霊魂は珠根を深く庭園に埋めた、いつかは咲くだらう</p>
+        <p>ああ　総ての人間に涙あれ</p>
+      </div>
+      <div type="chapter" xml:id="sec86" n="86">
+        <head>合掌</head>
+        <p>その一</p>
+        <p>坂はびろうど夕日炎炎</p>
+        <p>坂はみどりの下り坂、夕は祈りの鐘が鳴る</p>
+        <p>その二</p>
+        <p><persName ref="#yaso">耶蘇</persName>は畑中ゆふぐれに</p>
+        <p>われもゆふぐれ畑中に</p>
+        <p>葱はおとろゆ</p>
+        <p>夏の日に</p>
+        <p><persName ref="#yaso">耶蘇</persName>はものいふ</p>
+        <p>われもいふ</p>
+        <p>畑はひかりて麦を吐き</p>
+        <p><persName ref="#yaso">耶蘇</persName>はゆふぐれ畑中に</p>
+        <p>われもゆふぐれ畑中に</p>
+        <p>その三</p>
+        <p>かうべ垂れ</p>
+        <p>いまは緑を合掌す</p>
+        <p>きびしき心となり</p>
+        <p>みづからを責むる心となり</p>
+        <p>主よ山のふもとにわれ住みて</p>
+        <p>すこし衰ろへ</p>
+        <p>いまは緑の木木に</p>
+        <p>その高きあたひに</p>
+        <p>かうべ垂れ合掌す</p>
+        <p>その四</p>
+        <p>むしけらのごとき</p>
+        <p>ひとみのけがれ</p>
+        <p>けがれしまま</p>
+        <p>けふは知る</p>
+        <p>深きざんげのあたひを知る</p>
+        <p>その五</p>
+        <p>みやこに住めど</p>
+        <p>心に繁る深き田舎の夏ぞ</p>
+        <p>日を追ひては深む</p>
+        <p>いつくしみある地の夏ぞ</p>
+        <p>その六</p>
+        <p>ながれに向ひ釣を垂る</p>
+        <p>みなそこふかく</p>
+        <p>ひそめるものに触れむとし</p>
+        <p>祈るがごとく釣を垂る</p>
+        <p>崖よりいまはなみだ垂れ</p>
+        <p>魚介のあなた</p>
+        <p>ながれに感ず</p>
+        <p>波のおもみはきたる肩の上に</p>
+        <p>祈るがごとく釣を垂る</p>
+      </div>
+    </body>
+  </text>
+</TEI>
