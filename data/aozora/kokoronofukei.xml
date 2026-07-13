@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ある心の風景</title>
+        <author>梶井基次郎</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>ある心の風景</title><author>梶井基次郎</author>
+          <note>青空文庫。底本：「檸檬・ある心の風景　他二十編」旺文社文庫、旺文社。1972（昭和47）年12月10日初版発行。1974（昭和49）年第4刷発行。初出：「青空」青空社。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000074/card413.html">https://www.aozora.gr.jp/cards/000074/card413.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="takashi">
+        <persName>喬</persName>
+        <note>本作の主人公。京都に住む青年。悪い病気を得て眠れず、夜ごと窓辺から深夜の町を眺める</note>
+      </person>
+      <person xml:id="s">
+        <persName>Ｓ―</persName>
+        <note>喬の知人の男。名を伏せて「Ｓ―」と記される。廓の醜い女についての話を喬に語る</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="france">
+        <placeName>仏蘭西</placeName>
+        <location><geo>46.2276 2.2137</geo></location>
+        <note>フランス。「仏蘭西の蝸牛（エスカルゴ）の匂い」として言及。国名・概値</note>
+      </place>
+      <place xml:id="shijodori">
+        <placeName>四条通</placeName>
+        <location><geo>35.0037 135.7683</geo></location>
+        <note>京都市中心部の東西の通り。四条河原町付近の概値</note>
+      </place>
+      <place xml:id="yasaka">
+        <placeName>八坂神社</placeName>
+        <location><geo>35.0036 135.7785</geo></location>
+        <note>京都市東山区の八坂神社。火の見から「赤い門」が見える。概値</note>
+      </place>
+      <place xml:id="maruyama">
+        <placeName>円山</placeName>
+        <location><geo>35.0038 135.7817</geo></location>
+        <note>京都市東山区の円山（円山公園一帯）。概値</note>
+      </place>
+      <place xml:id="higashiyama">
+        <placeName>東山</placeName>
+        <location><geo>35.0 135.785</geo></location>
+        <note>京都市街の東に連なる東山（山地）。範囲があるため概値</note>
+      </place>
+      <place xml:id="hakata">
+        <placeName>博多</placeName>
+        <location><geo>33.5902 130.4187</geo></location>
+        <note>福岡市博多区一帯。廓の女の出身地として言及。概値</note>
+      </place>
+      <place xml:id="marutamachi">
+        <placeName>丸太町</placeName>
+        <location><geo>35.0189 135.7715</geo></location>
+        <note>「丸太町の橋」＝鴨川に架かる丸太町橋。概値</note>
+      </place>
+      <place xml:id="kamogawara">
+        <placeName>加茂磧</placeName>
+        <location><geo>35.0212 135.7712</geo></location>
+        <note>鴨川の河原（丸太町橋から荒神橋のあたり）。四章の舞台。概値</note>
+      </place>
+      <place xml:id="kamonomori">
+        <placeName>加茂の森</placeName>
+        <location><geo>35.0389 135.7729</geo></location>
+        <note>下鴨神社（賀茂御祖神社）の糺の森。「赤い鳥居を点じていた」。概値</note>
+      </place>
+      <place xml:id="kojinbashi">
+        <placeName>荒神橋</placeName>
+        <location><geo>35.0243 135.7714</geo></location>
+        <note>鴨川に架かる荒神橋。概値</note>
+      </place>
+      <place xml:id="hieizan">
+        <placeName>比叡山</placeName>
+        <location><geo>35.0725 135.8331</geo></location>
+        <note>京都市と大津市の境の比叡山。山頂付近の概値</note>
+      </place>
+      <place xml:id="shinkyogoku">
+        <placeName>新京極</placeName>
+        <location><geo>35.006 135.7667</geo></location>
+        <note>京都の繁華街・新京極通。概値</note>
+      </place>
+      <place xml:id="okazaki">
+        <placeName>岡崎公園</placeName>
+        <location><geo>35.0132 135.7823</geo></location>
+        <note>京都市左京区の岡崎公園。博覧会の会場として言及。概値</note>
+      </place>
+      <place xml:id="chosenkan">
+        <placeName>朝鮮館</placeName>
+        <note>岡崎公園で開かれた博覧会の朝鮮館（仮設の展示館）。園内の正確な位置を特定できないため座標なし</note>
+      </place>
+      <place xml:id="chosen">
+        <placeName>朝鮮</placeName>
+        <location><geo>38.0 127.2</geo></location>
+        <note>朝鮮半島。「朝鮮の小さい鈴」として言及。地域名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>一</head>
+        <p><persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は彼の部屋の窓から寝静まった通りに<ruby><rb>凝視</rb><rt>みい</rt></ruby>っていた。起きている窓はなく、深夜の静けさは<ruby><rb>暈</rb><rt>かさ</rt></ruby>となって街燈のぐるりに集まっていた。固い音が時どきするのは突き当っていく<ruby><rb>黄金虫</rb><rt>ぶんぶん</rt></ruby>の音でもあるらしかった。</p>
+        <p>そこは入り込んだ町で、昼間でも人通りは少なく、魚の<ruby><rb>腹綿</rb><rt>はらわた</rt></ruby>や鼠の死骸は幾日も位置を動かなかった。両側の家々はなにか荒廃していた。自然力の風化して行くあとが見えた。<ruby><rb>紅殻</rb><rt>べにがら</rt></ruby>が古びてい、荒壁の<ruby><rb>塀</rb><rt>へい</rt></ruby>は崩れ、人びとはそのなかで古手拭のように無気力な生活をしているように思われた。<persName ref="#takashi">喬</persName>の部屋はそんな通りの、<ruby><rb>卓子</rb><rt>テーブル</rt></ruby>で言うなら主人役の位置に窓を開いていた。</p>
+        <p>時どき柱時計の振子の音が戸の隙間から洩れてきこえて来た。遠くの樹に風が黒く渡る。と、やがて眼近い<ruby><rb>夾竹桃</rb><rt>きょうちくとう</rt></ruby>は深い夜のなかで揺れはじめるのであった。<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>はただ<ruby><rb>凝視</rb><rt>みい</rt></ruby>っている。――<ruby><rb>暗</rb><rt>やみ</rt></ruby>のなかに<ruby><rb>仄</rb><rt>ほの</rt></ruby>白く浮かんだ家の<ruby><rb>額</rb><rt>ひたい</rt></ruby>は、そうした彼の視野のなかで、消えてゆき現われて来、<persName ref="#takashi">喬</persName>は心の裡に定かならぬ想念のまた過ぎてゆくのを感じた。<ruby><rb>蟋蟀</rb><rt>こおろぎ</rt></ruby>が鳴いていた。そのあたりから――と思われた――<ruby><rb>微</rb><rt>かす</rt></ruby>かな植物の朽ちてゆく匂いが漂って来た。</p>
+        <p>「君の部屋は<placeName ref="#france"><ruby><rb>仏蘭西</rb><rt>フランス</rt></ruby></placeName>の<ruby><rb>蝸牛</rb><rt>エスカルゴ</rt></ruby>の匂いがするね」</p>
+        <p><persName ref="#takashi">喬</persName>のところへやって来たある友人はそんなことを言った。またある一人は</p>
+        <p>「君はどこに住んでも直ぐその部屋を陰鬱にしてしまうんだな」と言った。</p>
+        <p>いつも紅茶の<ruby><rb>滓</rb><rt>かす</rt></ruby>が溜っているピクニック用の湯沸器。<ruby><rb>帙</rb><rt>ちつ</rt></ruby>と離ればなれに<ruby><rb>転</rb><rt>ころが</rt></ruby>っている本の類。紙切れ。そしてそんなものを押しわけて敷かれている蒲団。<persName ref="#takashi">喬</persName>はそんななかで<ruby><rb>青鷺</rb><rt>あおさぎ</rt></ruby>のように昼は寝ていた。眼が覚めては遠くに学校の鐘を聞いた。そして夜、人びとが寝静まった頃この窓へ来てそとを眺めるのだった。</p>
+        <p>深い霧のなかを影法師のように過ぎてゆく想念がだんだん分明になって来る。</p>
+        <p>彼の視野のなかで消散したり<ruby><rb>凝聚</rb><rt>ぎょうしゅう</rt></ruby>したりしていた風景は、ある瞬間それが実に親しい風景だったかのように、またある瞬間は全く未知の風景のように見えはじめる。そしてある瞬間が過ぎた。――<persName ref="#takashi">喬</persName>にはもう、どこまでが彼の想念であり、どこからが深夜の町であるのか、わからなかった。暗のなかの夾竹桃はそのまま彼の憂鬱であった。物陰の電燈に写し出されている土塀、暗と一つになっているその陰影。観念もまたそこで立体的な形をとっていた。</p>
+        <p><persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は彼の心の風景をそこに指呼することができる、と思った。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>二</head>
+        <p>どうして<persName ref="#takashi">喬</persName>がそんなに夜更けて窓に起きているか、それは彼がそんな時刻まで寝られないからでもあった。寝るには余り暗い考えが彼を苦しめるからでもあった。彼は悪い病気を女から得て来ていた。</p>
+        <p>ずっと以前彼はこんな夢を見たことがあった。</p>
+        <p>――足が<ruby><rb>地脹</rb><rt>じば</rt></ruby>れをしている。その上に、<ruby><rb>噛</rb><rt>か</rt></ruby>んだ歯がたのようなものが<ruby><rb>二列</rb><rt>ふたなら</rt></ruby>びついている。脹れはだんだんひどくなって行った。それにつれてその<ruby><rb>痕</rb><rt>あと</rt></ruby>はだんだん深く、まわりが大きくなって来た。</p>
+        <p>あるものはネエヴルの尻のようである。盛りあがった気味悪い肉が内部から<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いていた。またある痕は、細長く深く切れ込み、古い本が<ruby><rb>紙魚</rb><rt>しみ</rt></ruby>に食い<ruby><rb>貫</rb><rt>ぬ</rt></ruby>かれたあとのようになっている。</p>
+        <p>変な感じで、足を見ているうちにも青く脹れてゆく。痛くもなんともなかった。<ruby><rb>腫物</rb><rt>はれもの</rt></ruby>は紅い、サボテンの花のようである。</p>
+        <p>母がいる。</p>
+        <p>「あああ。こんなになった」</p>
+        <p>彼は母に当てつけの口調だった。</p>
+        <p>「知らないじゃないか」</p>
+        <p>「だって、あなたが爪でかたをつけたのじゃありませんか」</p>
+        <p>母が爪で圧したのだ、と彼は信じている。しかしそう言ったとき<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>に、ひょっとしてあれじゃないだろうか、という考えが<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>いた。</p>
+        <p>でも<ruby><rb>真逆</rb><rt>まさか</rt></ruby>、母は知ってはいないだろう、と気強く思い返して、夢のなかの<persName ref="#takashi">喬</persName>は</p>
+        <p>「ね！　お母さん！」と母を責めた。</p>
+        <p>母は弱らされていた。が、しばらくしてとうとう</p>
+        <p>「そいじゃ、<ruby><rb>癒</rb><rt>なお</rt></ruby>してあげよう」と言った。</p>
+        <p>二列の<ruby><rb>腫物</rb><rt>はれもの</rt></ruby>はいつの間にか胸から腹へかけて移っていた。どうするのかと彼が見ていると、母は胸の皮を引張って来て（それはいつの間にか、<ruby><rb>萎</rb><rt>しぼ</rt></ruby>んだ乳房のようにたるんでいた）一方の腫物を一方の腫物のなかへ、ちょうど<ruby><rb>釦</rb><rt>ボタン</rt></ruby>を<ruby><rb>嵌</rb><rt>は</rt></ruby>めるようにして嵌め込んでいった。夢のなかの<persName ref="#takashi">喬</persName>はそれを不足そうな顔で、黙って見ている。</p>
+        <p>一<ruby><rb>対</rb><rt>つい</rt></ruby>ずつ一対ずつ一列の腫物は他の一列へそういうふうにしてみな嵌まってしまった。</p>
+        <p>「これは××博士の法だよ」と母が言った。釦の多いフロックコートを着たようである。しかし、少し動いてもすぐ<ruby><rb>脱</rb><rt>はず</rt></ruby>れそうで不安であった。――</p>
+        <p>何よりも母に、自分の方のことは包み隠して、気強く突きかかって行った。そのことが、夢のなかのことながら、彼には<ruby><rb>応</rb><rt>こた</rt></ruby>えた。</p>
+        <p>女を買うということが、こんなにも暗く彼の生活へ、夢に出るまで、<ruby><rb>浸</rb><rt>し</rt></ruby>み込んで来たのかと<persName ref="#takashi">喬</persName>は思った。現実の生活にあっても、彼が女の児の相手になっている。そしてその児が意地の悪いことをしたりする。そんなときふと<ruby><rb>邪慳</rb><rt>じゃけん</rt></ruby>な娼婦は心に浮かび、<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は<ruby><rb>堪</rb><rt>たま</rt></ruby>らない自己<ruby><rb>嫌厭</rb><rt>けんお</rt></ruby>に<ruby><rb>堕</rb><rt>お</rt></ruby>ちるのだった。生活に打ち込まれた一本の<ruby><rb>楔</rb><rt>くさび</rt></ruby>がどんなところにまで<ruby><rb>歪</rb><rt>ひずみ</rt></ruby>を及ぼして行っているか、彼はそれに行き当るたびに、内面的に汚れている自分を<ruby><rb>識</rb><rt>し</rt></ruby>ってゆくのだった。</p>
+        <p>そしてまた一本の楔、悪い病気の疑いが彼に打ち込まれた。以前見た夢の一部が本当になったのである。</p>
+        <p>彼は往来で医者の看板に気をつける自分を見出すようになった。新聞の広告をなにげなく読む自分を見出すようになった。それはこれまでの彼が一度も意識してした事のないことであった。美しいものを見る、そして愉快になる。ふと心のなかに喜ばないものがあるのを感じて、それを追ってゆき、彼の突きあたるものは、やはり病気のことであった。そんなとき<persName ref="#takashi">喬</persName>は暗いものに到るところ待ち伏せされているような自分を感じないではいられなかった。</p>
+        <p>時どき彼は、病める部分を取出して眺めた。それはなにか一匹の悲しんでいる生き物の表情で、彼に訴えるのだった。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>三</head>
+        <p><persName ref="#takashi">喬</persName>はたびたびその不幸な夜のことを思い出した。――</p>
+        <p>彼は酔っ払った<ruby><rb>嫖客</rb><rt>ひょうきゃく</rt></ruby>や、嫖客を呼びとめる女の声の聞こえて来る、往来に面した部屋に一人坐っていた。勢いづいた三味線や太鼓の音が近所から、彼の一人の心に響いて来た。</p>
+        <p>「この空気！」と<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は思い、耳を<ruby><rb>欹</rb><rt>そばだ</rt></ruby>てるのであった。ゾロゾロと<ruby><rb>履物</rb><rt>はきもの</rt></ruby>の音。間を縫って利休が鳴っている。――物音はみな、あるもののために鳴っているように思えた。アイスクリーム屋の声も、歌をうたう声も、なにからなにまで。</p>
+        <p><ruby><rb>小婢</rb><rt>こおんな</rt></ruby>の利休の音も、すぐ表ての<placeName ref="#shijodori">四条通</placeName>ではこんなふうには響かなかった。</p>
+        <p><persName ref="#takashi">喬</persName>は<placeName ref="#shijodori">四条通</placeName>を歩いていた何分か前の自分、――そこでは自由に物を考えていた自分、――と同じ自分をこの部屋のなかで感じていた。</p>
+        <p>「とうとうやって来た」と思った。</p>
+        <p>小婢が上って来て、部屋には便利炭の<ruby><rb>蝋</rb><rt>ろう</rt></ruby>が匂った。<persName ref="#takashi">喬</persName>は満足に物が言えず、小婢の降りて行ったあとで、そんなすぐに手の裏返したようになれるかい、と思うのだった。</p>
+        <p>女はなかなか来なかった。<persName ref="#takashi">喬</persName>は屈託した気持で、思いついたまま、勝手を知ったこの家の火の見へ上って行こうと思った。</p>
+        <p>朽ちかけた<ruby><rb>梯子</rb><rt>はしご</rt></ruby>をあがろうとして、眼の前の小部屋の障子が開いていた。なかには蒲団が敷いてあり、人の眼がこちらを<ruby><rb>睨</rb><rt>にら</rt></ruby>んでいた。知らぬふりであがって行きながら<persName ref="#takashi">喬</persName>は、こんな場所での気強さ、と思った。</p>
+        <p>火の見へあがると、この<ruby><rb>界隈</rb><rt>かいわい</rt></ruby>を覆っているのは暗い<ruby><rb>甍</rb><rt>いらか</rt></ruby>であった。そんな間から所どころ、電燈をつけた座敷が<ruby><rb>簾</rb><rt>すだれ</rt></ruby>越しに見えていた。レストランの高い建物が、思わぬところから頭を出していた。<placeName ref="#shijodori">四条通</placeName>はあすこかと思った。<placeName ref="#yasaka">八坂神社</placeName>の赤い門。電燈の反射をうけて<ruby><rb>仄</rb><rt>ほの</rt></ruby>かに姿を見せている森。そんなものが<ruby><rb>甍</rb><rt>いらか</rt></ruby>越しに見えた。夜の靄が遠くはぼかしていた。<placeName ref="#maruyama">円山</placeName>、それから<placeName ref="#higashiyama"><ruby><rb>東山</rb><rt>ひがしやま</rt></ruby></placeName>。天の川がそのあたりから流れていた。</p>
+        <p><persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は自分が解放されるのを感じた。そして、</p>
+        <p>「いつもここへは登ることに極めよう」と思った。</p>
+        <p>五位が鳴いて通った。<ruby><rb>煤</rb><rt>すす</rt></ruby>黒い猫が屋根を歩いていた。<persName ref="#takashi">喬</persName>は足もとに<ruby><rb>闌</rb><rt>すが</rt></ruby>れた秋草の鉢を見た。</p>
+        <p>女は<placeName ref="#hakata">博多</placeName>から来たのだと言った。その京都言葉に変な訛りがあった。<ruby><rb>身嗜</rb><rt>みだしな</rt></ruby>みが奇麗で、<persName ref="#takashi">喬</persName>は女にそう言った。そんなことから、女の口はほぐれて、自分がまだ出て<ruby><rb>匇々</rb><rt>そうそう</rt></ruby>だのに、先月はお花を何千本売って、この<ruby><rb>廓</rb><rt>くるわ</rt></ruby>で四番目なのだと言った。またそれは一番から順に検番に張り出され、何番かまではお金が出る由言った。女の小ざっぱりしているのはそんな彼女におかあはんというのが気をつけてやるのであった。</p>
+        <p>「そんなわけやでうちも一生懸命にやってるの。こないだからもな、風邪ひいとるんやけど、しんどうてな、おかあはんは休めというけど、うちは休まんのや」</p>
+        <p>「薬は飲んでるのか」</p>
+        <p>「うちでくれたけど、一服五銭でな、……あんなものなんぼ飲んでもきかせん」</p>
+        <p><persName ref="#takashi">喬</persName>はそんな話を聞きながら、頭では<persName ref="#s">Ｓ―</persName>という男の話にきいたある女の事を<ruby><rb>憶</rb><rt>おも</rt></ruby>い浮かべていた。</p>
+        <p>それは醜い女で、その女を呼んでくれと名を言うときは、いくら酔っていても<ruby><rb>羞</rb><rt>はずか</rt></ruby>しい思いがすると、<persName ref="#s">Ｓ―</persName>は言っていた。そして着ている寝間着の<ruby><rb>汚</rb><rt>きたな</rt></ruby>いこと、それは話にならないよと言った。</p>
+        <p><persName ref="#s">Ｓ―</persName>は最初、ふとした偶然からその女に当り、その時、よもやと思っていたような異様な経験をしたのであった。その後<persName ref="#s">Ｓ―</persName>はひどく酔ったときなどは、気持にはどんな我慢をさせてもという気になってついその女を呼ぶ、心が荒くなってその女でないと満足できないようなものが、酒を飲むと起こるのだと言った。</p>
+        <p><persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>はその話を聞いたとき、女自身に病的な<ruby><rb>嗜好</rb><rt>しこう</rt></ruby>があるのなればとにかくだがと思い、<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>廓での生存競争が、醜いその女にそのような特殊なことをさせるのだと、考えは暗いそこへ落ちた。</p>
+        <p>その女は<ruby><rb>瘂</rb><rt>おし</rt></ruby>のように口をきかぬと<persName ref="#s">Ｓ―</persName>は言った。もっとも話をする気にはならないよと、また言った。いったい、やはり瘂の、何人位の客をその女は持っているのだろうと、その時<persName ref="#takashi">喬</persName>は思った。</p>
+        <p><persName ref="#takashi">喬</persName>はその醜い女とこの女とを思い比べながら、耳は女のお<ruby><rb>喋</rb><rt>しゃべ</rt></ruby>りに任せていた。</p>
+        <p>「あんたは<ruby><rb>温柔</rb><rt>おとな</rt></ruby>しいな」と女は言った。</p>
+        <p>女の肌は熱かった。新しいところへ触れて行くたびに「これは熱い」と思われた。――</p>
+        <p>「またこれから行かんならん」と言って女は帰る仕度をはじめた。</p>
+        <p>「あんたも帰るのやろ」</p>
+        <p>「うむ」</p>
+        <p><persName ref="#takashi">喬</persName>は寝ながら、女がこちらを向いて、着物を着ておるのを見ていた。見ながら彼は「さ、どうだ。これだ」と自分で確めていた。それはこんな気持であった。――平常自分が女、女、と想っている、そしてこのような場所へ来て女を買うが、女が部屋へ入って来る、それまではまだいい、女が着物を脱ぐ、それまでもまだいい、それからそれ以上は、何が平常から想っていた女だろう。「さ、これが女の腕だ」と自分自身で確める。しかしそれはまさしく女の腕であって、それだけだ。そして女が帰り仕度をはじめた今頃、それはまた女の姿をあらわして来るのだ。</p>
+        <p>「電車はまだあるか知らん」</p>
+        <p>「さあ、どうやろ」</p>
+        <p><persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は心の中でもう電車がなくなっていてくれればいいと思った。階下のおかみは</p>
+        <p>「帰るのがお<ruby><rb>厭</rb><rt>いや</rt></ruby>どしたら、朝まで寝とおいやしても、うちはかましまへん」と言うかも知れない。それより「誰ぞをお呼びやおへんのどしたら、帰っとくれやす」と言われる方が、と<persName ref="#takashi">喬</persName>は思うのだった。</p>
+        <p>「あんた一緒に帰らへんのか」</p>
+        <p>女は身じまいはしたが、まだ愚図ついていた。「まあ」と思い、彼は汗づいた<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>だけは脱ぎにかかった。</p>
+        <p>女は帰って、すぐ彼は「ビール」と<ruby><rb>小婢</rb><rt>こおんな</rt></ruby>に言いつけた。</p>
+        <p>ジュ、ジュクと雀の<ruby><rb>啼声</rb><rt>なきごえ</rt></ruby>が<ruby><rb>樋</rb><rt>とゆ</rt></ruby>にしていた。<persName ref="#takashi">喬</persName>は<ruby><rb>朝靄</rb><rt>あさもや</rt></ruby>のなかに明けて行く水みずしい外面を、半分覚めた頭に描いていた。頭を挙げると朝の空気のなかに光の薄れた電燈が、睡っている女の顔を照していた。</p>
+        <p>花売りの声が戸口に聞こえたときも彼は眼を覚ました。新鮮な声、と思った。<ruby><rb>榊</rb><rt>さかき</rt></ruby>の葉やいろいろの花にこぼれている朝陽の色が、見えるように思われた。</p>
+        <p>やがて、家々の戸が勢いよく開いて、学校へ行く子供の声が路に聞こえはじめた。女はまだ深く睡っていた。</p>
+        <p>「帰って、風呂へ行って」と女は<ruby><rb>欠伸</rb><rt>あくび</rt></ruby>まじりに言い、束髪の上へ載せる丸く編んだ毛を掌に載せ、「帰らしてもらいまっさ」と言って出て行った。<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>はそのまままた寝入った。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>四</head>
+        <p><persName ref="#takashi">喬</persName>は<placeName ref="#marutamachi">丸太町</placeName>の橋の<ruby><rb>袂</rb><rt>たもと</rt></ruby>から<placeName ref="#kamogawara">加茂<ruby><rb>磧</rb><rt>かわら</rt></ruby></placeName>へ下りて行った。磧に面した家々が、そこに午後の日蔭を作っていた。</p>
+        <p>護岸工事に使う小石が積んであった。それは秋日の下で一種の強い匂いをたてていた。<placeName ref="#kojinbashi">荒神橋</placeName>の方に遠心乾燥器が草原に転っていた。そのあたりで測量の巻尺が光っていた。</p>
+        <p>川水は<placeName ref="#kojinbashi">荒神橋</placeName>の下手で<ruby><rb>簾</rb><rt>すだれ</rt></ruby>のようになって落ちている。夏草の茂った<ruby><rb>中洲</rb><rt>なかす</rt></ruby>の<ruby><rb>彼方</rb><rt>かなた</rt></ruby>で、浅瀬は輝きながらサラサラ鳴っていた。<ruby><rb>鶺鴒</rb><rt>せきれい</rt></ruby>が飛んでいた。</p>
+        <p>背を刺すような<ruby><rb>日表</rb><rt>ひなた</rt></ruby>は、蔭となるとさすが秋の冷たさが<ruby><rb>跼</rb><rt>くぐま</rt></ruby>っていた。<persName ref="#takashi">喬</persName>はそこに腰を下した。</p>
+        <p>「人が通る、車が通る」と思った。また</p>
+        <p>「街では自分は苦しい」と思った。</p>
+        <p>川向うの道を徒歩や車が通っていた。川添の公設市場。タールの<ruby><rb>樽</rb><rt>たる</rt></ruby>が積んである小屋。空地では家を建てるのか人びとが働いていた。</p>
+        <p>川上からは時どき風が吹いて来た。カサコソと彼の坐っている前を、<ruby><rb>皺</rb><rt>しわ</rt></ruby>になった新聞紙が押されて行った。小石に<ruby><rb>阻</rb><rt>はば</rt></ruby>まれ、一しきり風に堪えていたが、ガックリ一つ転ると、また運ばれて行った。</p>
+        <p>二人の子供に一匹の犬が川上の方へ歩いて行く。犬は戻って、ちょっとその新聞紙を<ruby><rb>嗅</rb><rt>か</rt></ruby>いで見、また子供のあとへついて行った。</p>
+        <p>川のこちら岸には高い<ruby><rb>欅</rb><rt>けやき</rt></ruby>の樹が葉を茂らせている。<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は風に<ruby><rb>戦</rb><rt>そよ</rt></ruby>いでいるその高い<ruby><rb>梢</rb><rt>こずえ</rt></ruby>に心は<ruby><rb>惹</rb><rt>ひ</rt></ruby>かれた。ややしばらく<ruby><rb>凝視</rb><rt>みい</rt></ruby>っているうちに、彼の心の裡のなにかがその梢に<ruby><rb>棲</rb><rt>とま</rt></ruby>り、高い気流のなかで小さい葉と共に揺れ青い枝と共に<ruby><rb>撓</rb><rt>たわ</rt></ruby>んでいるのが感じられた。</p>
+        <p>「ああこの気持」と<persName ref="#takashi">喬</persName>は思った。「<ruby><rb>視</rb><rt>み</rt></ruby>ること、それはもうなにかなのだ。自分の魂の一部分あるいは全部がそれに乗り移ることなのだ」</p>
+        <p><persName ref="#takashi">喬</persName>はそんなことを思った。毎夜のように彼の坐る窓辺、その誘惑――病鬱や生活の苦渋が鎮められ、ある<ruby><rb>距</rb><rt>へだた</rt></ruby>りをおいて眺められるものとなる心の不思議が、ここの高い欅の梢にも感じられるのだった。</p>
+        <p>「街では自分は苦しい」</p>
+        <p>北には<placeName ref="#kamonomori">加茂の森</placeName>が赤い鳥居を点じていた。その上に遠い山々は<ruby><rb>累</rb><rt>かさな</rt></ruby>って見える。<placeName ref="#hieizan">比叡山</placeName>――それを背景にして、紡績工場の煙突が煙を立登らせていた。赤<ruby><rb>煉瓦</rb><rt>れんが</rt></ruby>の建物。ポスト。<placeName ref="#kojinbashi">荒神橋</placeName>には自転車が通り、パラソルや<ruby><rb>馬力</rb><rt>ばりき</rt></ruby>が動いていた。日蔭は磧に伸び、物売りのラッパが鳴っていた。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>五</head>
+        <p><persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は夜更けまで街をほっつき歩くことがあった。</p>
+        <p>人通りの絶えた<placeName ref="#shijodori">四条通</placeName>は<ruby><rb>稀</rb><rt>まれ</rt></ruby>に酔っ払いが通るくらいのもので、夜霧はアスファルトの上までおりて来ている。両側の店はゴミ箱を舗道に出して戸を<ruby><rb>鎖</rb><rt>とざ</rt></ruby>してしまっている。所どころに<ruby><rb>嘔吐</rb><rt>へど</rt></ruby>がはいてあったり、ゴミ箱が倒されていたりした。<persName ref="#takashi">喬</persName>は自分も酒に酔ったときの経験は頭に上り、今は静かに歩くのだった。</p>
+        <p><placeName ref="#shinkyogoku">新京極</placeName>に折れると、たてた戸の間から<ruby><rb>金盥</rb><rt>かなだらい</rt></ruby>を持って風呂へ出かけてゆく女の下駄が鳴り、ローラースケートを持ち出す小店員、うどんの出前を運ぶ男、往来の真中で棒押しをしている若者などが、異様な盛り場の夜更けを見せている。昼間は<ruby><rb>雑閙</rb><rt>ざっとう</rt></ruby>のなかに埋れていたこの人びとはこの時刻になって存在を現わして来るのだと思えた。</p>
+        <p><placeName ref="#shinkyogoku">新京極</placeName>を抜けると町はほんとうの夜更けになっている。昼間は気のつかない自分の下駄の音が変に耳につく。そしてあたりの静寂は、なにか自分が変なたくらみを持って町を歩いているような感じを起こさせる。</p>
+        <p><persName ref="#takashi">喬</persName>は腰に<placeName ref="#chosen">朝鮮</placeName>の小さい鈴を<ruby><rb>提</rb><rt>さ</rt></ruby>げて、そんな夜更け歩いた。それは<placeName ref="#okazaki">岡崎公園</placeName>にあった博覧会の<placeName ref="#chosenkan">朝鮮館</placeName>で友人が買って来たものだった。銀の地に青や赤の七宝がおいてあり、美しい枯れた音がした。人びとのなかでは聞こえなくなり、夜更けの道で鳴り出すそれは、彼の心の象徴のように思えた。</p>
+        <p>ここでも町は、窓辺から見る風景のように、歩いている彼に<ruby><rb>展</rb><rt>ひら</rt></ruby>けてゆくのであった。</p>
+        <p>生まれてからまだ一度も踏まなかった道。そして同時に、実に親しい思いを起こさせる道。――それはもう彼が限られた回数通り過ぎたことのあるいつもの道ではなかった。いつの頃から歩いているのか、<persName ref="#takashi"><ruby><rb>喬</rb><rt>たかし</rt></ruby></persName>は自分がとことわの過ぎてゆく者であるのを今は感じた。</p>
+        <p>そんな時<placeName ref="#chosen">朝鮮</placeName>の鈴は、<persName ref="#takashi">喬</persName>の心を<ruby><rb>顫</rb><rt>ふる</rt></ruby>わせて鳴った。ある時は、<persName ref="#takashi">喬</persName>の<ruby><rb>現身</rb><rt>うつせみ</rt></ruby>は道の上に失われ鈴の音だけが町を過るかと思われた。またある時それは腰のあたりに<ruby><rb>湧</rb><rt>わ</rt></ruby>き出して、彼の身体の内部へ流れ入る澄み透った溪流のように思えた。それは身体を流れめぐって、病気に汚れた彼の血を、洗い清めてくれるのだ。</p>
+        <p>「俺はだんだん<ruby><rb>癒</rb><rt>なお</rt></ruby>ってゆくぞ」</p>
+        <p>コロコロ、コロコロ、彼の小さな希望は深夜の空気を清らかに顫わせた。</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>六</head>
+        <p>窓からの風景はいつの夜も<ruby><rb>渝</rb><rt>かわ</rt></ruby>らなかった。<persName ref="#takashi">喬</persName>にはどの夜もみな一つに思える。</p>
+        <p>しかしある夜、<persName ref="#takashi">喬</persName>は<ruby><rb>暗</rb><rt>やみ</rt></ruby>のなかの木に、一点の<ruby><rb>蒼白</rb><rt>あおじろ</rt></ruby>い光を見出した。いずれなにかの虫には違いないと思えた。次の夜も、次の夜も、<persName ref="#takashi">喬</persName>はその光を見た。</p>
+        <p>そして彼が窓辺を去って、寝床の上に横になるとき、彼は部屋のなかの暗にも一点の<ruby><rb>燐光</rb><rt>りんこう</rt></ruby>を感じた。</p>
+        <p>「私の病んでいる生き物。私は暗闇のなかにやがて消えてしまう。しかしお前は睡らないでひとりおきているように思える。そとの虫のように……青い燐光を<ruby><rb>燃</rb><rt>もや</rt></ruby>しながら……」</p>
+      </div>
+    </body>
+  </text>
+</TEI>

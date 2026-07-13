@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>青銅の基督</title>
+        <author>長与善郎</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>青銅の基督</title><author>長与善郎</author>
+          <note>青空文庫。底本：「青銅の基督」岩波文庫、岩波書店。1927（昭和2）年12月5日第1刷発行。1950（昭和25）年11月5日第5刷改版発行。1971（昭和46）年7月16日第26刷改版発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/001521/card51826.html">https://www.aozora.gr.jp/cards/001521/card51826.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="yusa">
+        <persName>萩原裕佐</persName>
+        <note>主人公。長崎古川町の南蛮鋳物師。踏み絵の聖像を作り、その出来映えのゆえに切支丹と誤られて二十七歳で処刑される。表層形「萩原裕佐」「萩原」「裕佐」を統合</note>
+      </person>
+      <person xml:id="magoshiro">
+        <persName>富井孫四郎</persName>
+        <note>長崎きっての版画師。偽悪的な皮肉屋で、裕佐にフェレラを引き合わせる。最後は裕佐の処刑を諷刺画に描く。表層形「孫四郎」「富井」を統合</note>
+      </person>
+      <person xml:id="sawa">
+        <persName>佐和</persName>
+        <note>孫四郎の妻。冒頭で孫四郎が「おい。お佐和。」と名を呼ぶ。以後は「細君」と呼ばれるため、固有名としての出現は 1 件</note>
+      </person>
+      <person xml:id="kimika">
+        <persName>君香</persName>
+        <note>丸山の遊女。天草の出身。裕佐にコンタスを与えて聖像制作のきっかけを作り、踏み絵を踏めずに捕らえられ絶食して死ぬ</note>
+      </person>
+      <person xml:id="monica">
+        <persName>モニカ</persName>
+        <note>切支丹信徒の娘。吉三郎の姉で裕佐のかつての恋人。踏み絵を踏まずに聖像を拝み、捕らえられて殉教する</note>
+      </person>
+      <person xml:id="kichisaburo">
+        <persName>藤田吉三郎</persName>
+        <note>モニカの弟。造花を売る若い信徒で、裕佐を降誕祭に誘う。表層形「吉三郎」「藤田」を統合</note>
+      </person>
+      <person xml:id="ferreira">
+        <persName>沢野忠庵</persName>
+        <note>キリシトファ・フェレラ(クリストヴァン・フェレイラ)。拷問に屈して転んだばてれんで、奉行に仕えて踏み絵を案出した。表層形「沢野忠庵」「沢野」「フェレラ」「キリシトファ・フェレラ」を統合</note>
+      </person>
+      <person xml:id="rubino">
+        <persName>アントニオ・ルビノ</persName>
+        <note>天草に八年潜伏したのち長崎に脱出した長老(ばてれん)。降誕祭の集会で捕らえられ、裕佐とともに処刑される。作中の役割語「長老」は固有名でないためタグ付けしない</note>
+      </person>
+      <person xml:id="iemitsu">
+        <persName>家光</persName>
+        <note>徳川三代将軍・徳川家光。切支丹弾圧を苛烈に進めた人物として冒頭に描かれる</note>
+      </person>
+      <person xml:id="ietsuna">
+        <persName>家綱</persName>
+        <note>徳川家綱。家光の死後に四代将軍となった。作品の時代設定の基準として言及される</note>
+      </person>
+      <person xml:id="hidetada">
+        <persName>秀忠</persName>
+        <note>徳川二代将軍・徳川秀忠。家光の父として言及される</note>
+      </person>
+      <person xml:id="ieyasu">
+        <persName>家康</persName>
+        <note>徳川家康。切支丹をきらい、オランダ人の讒言を受けた人物として言及される</note>
+      </person>
+      <person xml:id="hideyoshi">
+        <persName>秀吉</persName>
+        <note>豊臣秀吉。二十六聖人の殉教を招いた「猿英雄」として言及される</note>
+      </person>
+      <person xml:id="nobunaga">
+        <persName>信長</persName>
+        <note>織田信長。本能寺で討たれた当時に切支丹が隆盛だったとして言及される</note>
+      </person>
+      <person xml:id="masamune">
+        <persName>伊達政宗</persName>
+        <note>奥羽の勢力家。三代将軍就職の際の切支丹処刑を見て態度を変えたと語られる</note>
+      </person>
+      <person xml:id="mitsunari">
+        <persName>石田三成</persName>
+        <note>切支丹の有力な擁護者として、関が原で滅びた人物の一人に挙げられる</note>
+      </person>
+      <person xml:id="yukinaga">
+        <persName>小西行長</persName>
+        <note>切支丹大名。関が原で滅びた切支丹の擁護者の一人として挙げられる</note>
+      </person>
+      <person xml:id="yukitaka">
+        <persName>黒田行孝</persName>
+        <note>切支丹の擁護者の一人として挙げられる(本文の表記のまま。史実の黒田孝高=如水に当たるとみられる)</note>
+      </person>
+      <person xml:id="xavier">
+        <persName>フランシスコ・ザヴェリオ</persName>
+        <note>フランシスコ・ザビエル。日本布教の始祖として言及される</note>
+      </person>
+      <person xml:id="sesshu">
+        <persName>雪舟</persName>
+        <note>室町の画僧。孫四郎が「熊公八公には拝めぬ」高尚な画家の例として挙げる</note>
+      </person>
+      <person xml:id="motonobu">
+        <persName>元信</persName>
+        <note>狩野元信。雪舟と並べて挙げられる画家</note>
+      </person>
+      <person xml:id="matabei">
+        <persName>又兵衛</persName>
+        <note>岩佐又兵衛。裕佐の人物画を孫四郎が「又兵衛ばり」と評する</note>
+      </person>
+      <person xml:id="nagamasa">
+        <persName>山田長政</persName>
+        <note>シャムに渡った日本人。孫四郎の版画の画題として二度言及される</note>
+      </person>
+      <person xml:id="jesus">
+        <persName>きりしと</persName>
+        <note>イエス・キリスト。表層形「きりしと」「キリスト」「ゼズス」「ヤソ」を統合(religion を指す「キリスト教」「ヤソ教」は skip で抑止した)</note>
+      </person>
+      <person xml:id="deus">
+        <persName>天主</persName>
+        <note>天主(デウス)。父なる神。本文は「天主」「デウス」のほか、降誕祭の紙片に「アーメン・ゼウス」の表記でも現れる(ギリシャ神ゼウスではなく Deus の写しと解して統合した)</note>
+      </person>
+      <person xml:id="mary">
+        <persName>まるや</persName>
+        <note>聖母マリア(びるぜん・さんた・まるや)。表層形「まるや」「マルヤ」「マリヤ」「マリア」「まりあ」「聖母」「びるぜん」「さんた・まるや」「びるぜん、さんた、まるや」を統合。「まりあ」は『まりあ』にあわれみを乞う祈祷歌(サルベンジナ)の 1 件のみが該当し、「つまりあの聖像は」の誤マッチは skip で抑止した</note>
+      </person>
+      <person xml:id="magdalene">
+        <persName>まるや・まつだれな</persName>
+        <note>マグダラのマリア。悔い改めて救われた女として君香との対話に現れる。表層形「まるや・まつだれな」「まりや・まつだれな」を統合</note>
+      </person>
+      <person xml:id="michael">
+        <persName>みける</persName>
+        <note>大天使ミカエル。裕佐の父が持ち帰った浮き彫り「竜とたたかえる大天使ミケル」の主題。表層形「みける」「ミケル」を統合</note>
+      </person>
+      <person xml:id="judas">
+        <persName>ユダ</persName>
+        <note>イスカリオテのユダ。転びばてれんフェレラを罵る語として用いられる</note>
+      </person>
+      <person xml:id="eve">
+        <persName>エワ</persName>
+        <note>エバ(イブ)。サルベンジナの歌詞「流人となるエワの子供ら」に現れる</note>
+      </person>
+      <person xml:id="johnev">
+        <persName>さん・じゅわん・えわんぜりした</persName>
+        <note>福音記者聖ヨハネ。君香が師走八日をその命日として挙げる</note>
+      </person>
+      <person xml:id="daikoku">
+        <persName>大黒</persName>
+        <note>大黒天。伯母が幸運の訪れをたとえる「大黒さんが来たよう」</note>
+      </person>
+      <person xml:id="gigeiten">
+        <persName>伎芸天</persName>
+        <note>伎芸天。裕佐が「道場」に祀り、「以テ技芸天ヲ為ス我ガ妻ト」と襖に書いた技芸の女神。表層形「伎芸天」「技芸天」を統合</note>
+      </person>
+      <person xml:id="weidinger">
+        <persName>ワイディンガー</persName>
+        <note>後記に登場する一高教師のドイツ人。無断で本作を独訳しライプチヒで出版した。表層形「ワイディンガー」「ワ氏」を統合</note>
+      </person>
+      <person xml:id="katayama">
+        <persName>片山敏彦</persName>
+        <note>後記に登場する一高教師。作者がワイディンガーとの交渉の仲介を頼んだ</note>
+      </person>
+      <person xml:id="iwanami">
+        <persName>岩波茂雄</persName>
+        <note>後記に登場する岩波書店の創業者。その部屋で作者は独訳版を見た</note>
+      </person>
+      <person xml:id="yamadakiku">
+        <persName>山田キク</persName>
+        <note>後記に登場する訳者。本作を仏訳するために作者を訪ねた</note>
+      </person>
+      <person xml:id="obase">
+        <persName>小場瀬</persName>
+        <note>後記に登場する人物。山田キクとともに仏訳の相談に訪れた</note>
+      </person>
+      <person xml:id="nagami">
+        <persName>永見</persName>
+        <note>永見徳太郎とみられる長崎の人。付記で作品のヒントを与えた人物として謝辞が述べられる</note>
+      </person>
+      <person xml:id="ono">
+        <persName>小野</persName>
+        <note>付記で参考文献「切支丹の殉教者」の著者として挙げられる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="nagasaki">
+        <placeName>長崎</placeName>
+        <location><geo>32.7503 129.8779</geo></location>
+        <note>長崎。物語の舞台。近世の長崎の町・概値。書名(「幕府時代の長崎」「長崎年表」)の中の言及も同じ場所を指すものとしてタグ付けした</note>
+      </place>
+      <place xml:id="nagasaki-ken">
+        <placeName>長崎県</placeName>
+        <location><geo>32.7448 129.8737</geo></location>
+        <note>長崎県。後記で作者の郷里「長崎県大村」として言及される現代の県。県域代表点(県庁所在地)・概値</note>
+      </place>
+      <place xml:id="furukawamachi">
+        <placeName>古川町</placeName>
+        <location><geo>32.744 129.883</geo></location>
+        <note>長崎の古川町。裕佐の住む町。長崎市古川町付近・概値</note>
+      </place>
+      <place xml:id="maruyama">
+        <placeName>丸山</placeName>
+        <location><geo>32.7397 129.8797</geo></location>
+        <note>丸山。長崎の遊郭で君香のいる町。現在の長崎市丸山町・概値。「丸山連」は丸山の遊女の一行を指す</note>
+      </place>
+      <place xml:id="dejima">
+        <placeName>出島</placeName>
+        <location><geo>32.744 129.8735</geo></location>
+        <note>出島。異国人の居留を許された扇形の埋立地・概値</note>
+      </place>
+      <place xml:id="oranda-yashiki">
+        <placeName>オランダ屋敷</placeName>
+        <location><geo>32.744 129.8735</geo></location>
+        <note>出島の蘭館(オランダ商館)。遊女が毎夜送り込まれた紅毛人の館。表層形「オランダ屋敷」「おらんだ屋敷」「蘭館」を統合・概値</note>
+      </place>
+      <place xml:id="suwa-jinja">
+        <placeName>諏訪神社</placeName>
+        <location><geo>32.7522 129.883</geo></location>
+        <note>諏訪神社。長崎の鎮守。虎の見世物が出た縁日の舞台・概値</note>
+      </place>
+      <place xml:id="suwayama">
+        <placeName>諏訪山</placeName>
+        <location><geo>32.748 129.877</geo></location>
+        <note>諏訪山。諏訪神社の背後の丘。立山を望む位置として言及される・概値</note>
+      </place>
+      <place xml:id="hikosan">
+        <placeName>彦山</placeName>
+        <location><geo>32.769 129.905</geo></location>
+        <note>彦山。長崎の東にそびえる山。その中腹に裕佐の家がある・概値</note>
+      </place>
+      <place xml:id="inasadake">
+        <placeName>稲佐嶽</placeName>
+        <location><geo>32.75 129.86</geo></location>
+        <note>稲佐嶽(稲佐山)。長崎港をはさんで西に対する山。日が隠れる先として言及される・概値</note>
+      </place>
+      <place xml:id="oohato">
+        <placeName>大波止</placeName>
+        <location><geo>32.744 129.869</geo></location>
+        <note>大波止。長崎港の波止場。裕佐が出島を望んで腰かける海岸・概値</note>
+      </place>
+      <place xml:id="douzamachi">
+        <placeName>銅座町</placeName>
+        <location><geo>32.743 129.877</geo></location>
+        <note>銅座町。裕佐が漢書を売る古道具屋のある町・概値</note>
+      </place>
+      <place xml:id="tateyama">
+        <placeName>立山</placeName>
+        <location><geo>32.7546 129.8815</geo></location>
+        <note>立山。作中の長崎の刑場で、二十六人の磔刑と裕佐・モニカらの処刑の地。長崎市立山付近・概値(史実の二十六聖人殉教地は西坂だが、本作は立山とする)</note>
+      </place>
+      <place xml:id="mogi">
+        <placeName>茂木</placeName>
+        <location><geo>32.7086 129.9231</geo></location>
+        <note>茂木。役人が切支丹の密会所と見当をつけた長崎南東の浦。長崎市茂木町・概値</note>
+      </place>
+      <place xml:id="oura">
+        <placeName>大浦</placeName>
+        <location><geo>32.734 129.87</geo></location>
+        <note>大浦。二人の女が役人をまくために曲がった方角。長崎市大浦町付近・概値</note>
+      </place>
+      <place xml:id="urakami">
+        <placeName>浦上</placeName>
+        <location><geo>32.775 129.865</geo></location>
+        <note>浦上。裕佐と君香が逃げようとした方角。長崎市浦上・概値</note>
+      </place>
+      <place xml:id="amakusa">
+        <placeName>天草</placeName>
+        <location><geo>32.459 130.193</geo></location>
+        <note>天草。長老が八年潜伏した島々で、君香の故郷。天草諸島・概値</note>
+      </place>
+      <place xml:id="shimabara">
+        <placeName>島原</placeName>
+        <location><geo>32.787 130.37</geo></location>
+        <note>島原。島原の乱の地で、温泉嶽を擁する半島・概値</note>
+      </place>
+      <place xml:id="unzendake">
+        <placeName>温泉嶽</placeName>
+        <location><geo>32.761 130.299</geo></location>
+        <note>温泉嶽(雲仙岳)。熱湯による拷問の行われた山・概値</note>
+      </place>
+      <place xml:id="chijiwanada">
+        <placeName>千々岩灘</placeName>
+        <location><geo>32.75 130.1</geo></location>
+        <note>千々岩灘(千々石灘・橘湾)。峠から見おろす海。海域の代表点・概値</note>
+      </place>
+      <place xml:id="omura">
+        <placeName>大村</placeName>
+        <location><geo>32.9 129.958</geo></location>
+        <note>大村。後記で作者の郷里として挙げられる長崎県大村・概値</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6852 139.7528</geo></location>
+        <note>江戸。伊達政宗が三代将軍承職に当たって上った地・概値</note>
+      </place>
+      <place xml:id="suzugamori">
+        <placeName>鈴が森</placeName>
+        <location><geo>35.589 139.737</geo></location>
+        <note>鈴が森。江戸の刑場。五十人の切支丹が斬られた地。東京都品川区南大井付近・概値</note>
+      </place>
+      <place xml:id="honnoji">
+        <placeName>本能寺</placeName>
+        <location><geo>35.008 135.766</geo></location>
+        <note>本能寺。信長の討たれた寺。現在の京都市中京区の移転後の所在地・概値</note>
+      </place>
+      <place xml:id="sekigahara">
+        <placeName>関が原</placeName>
+        <location><geo>35.371 136.464</geo></location>
+        <note>関が原。切支丹の運命にとって致命的であった決戦の地。岐阜県関ケ原町・概値</note>
+      </place>
+      <place xml:id="ouu">
+        <placeName>奥羽</placeName>
+        <location><geo>38.5 140.5</geo></location>
+        <note>奥羽。伊達政宗の勢力圏。地域名・概値</note>
+      </place>
+      <place xml:id="saigoku">
+        <placeName>西国</placeName>
+        <location><geo>33.5 131.0</geo></location>
+        <note>西国。切支丹に厚意を持っていた諸侯の国々。地域名・概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>日本。国名・概値。「日本人」「日本語」「日本国民」「日本文壇」「日本歴史」「日本一」のような複合語の中の出現は skip で抑止した</note>
+      </place>
+      <place xml:id="chosen">
+        <placeName>朝鮮</placeName>
+        <location><geo>37.5665 126.978</geo></location>
+        <note>朝鮮。秀吉が侵略した国。国名・概値</note>
+      </place>
+      <place xml:id="shina">
+        <placeName>シナ</placeName>
+        <location><geo>35.0 105.0</geo></location>
+        <note>中国。本文では当時の呼称「シナ」で言及される。国名・概値。複合語「シナ人」「シナ店」の中の出現は skip で抑止した</note>
+      </place>
+      <place xml:id="siam">
+        <placeName>シャム</placeName>
+        <location><geo>13.7563 100.5018</geo></location>
+        <note>シャム(現在のタイ)。山田長政が渡った国。国名・概値</note>
+      </place>
+      <place xml:id="europe">
+        <placeName>ヨーロッパ</placeName>
+        <location><geo>50.0 10.0</geo></location>
+        <note>ヨーロッパ。裕佐の父が南蛮鋳物の術を学びに派遣された地。地域名・概値(広域のため代表点)</note>
+      </place>
+      <place xml:id="spain">
+        <placeName>スペイン</placeName>
+        <location><geo>40.4637 -3.7492</geo></location>
+        <note>スペイン。ポルトガルと商権を争った国。国名・概値</note>
+      </place>
+      <place xml:id="portugal">
+        <placeName>ポルトガル</placeName>
+        <location><geo>39.3999 -8.2245</geo></location>
+        <note>ポルトガル。日本の貿易と布教を占めていた国。国名・概値。複合語「ポルトガル人」「ポルトガル語」の中の出現は skip で抑止した</note>
+      </place>
+      <place xml:id="netherlands">
+        <placeName>オランダ</placeName>
+        <location><geo>52.1326 5.2913</geo></location>
+        <note>オランダ。新教国として家康に取り入った国。国名・概値。「オランダ屋敷」は別の場所として立て、「オランダ人」は skip で抑止した</note>
+      </place>
+      <place xml:id="leipzig">
+        <placeName>ライプチヒ</placeName>
+        <location><geo>51.3397 12.3731</geo></location>
+        <note>ライプチヒ。後記で独訳が出版された都市・概値</note>
+      </place>
+      <place xml:id="brazil">
+        <placeName>ブラジル</placeName>
+        <location><geo>-14.235 -51.9253</geo></location>
+        <note>ブラジル。後記で本作の翻訳が贈られた国。国名・概値</note>
+      </place>
+      <place xml:id="golgotha">
+        <placeName>ゴルゴタ</placeName>
+        <location><geo>31.7784 35.2296</geo></location>
+        <note>ゴルゴタ(カルバリオの丘)。青年が立山になぞらえる処刑の地。エルサレムの聖墳墓教会付近とされる・伝承地。表層形「ゴルゴタ」「カルバル山」を統合</note>
+      </place>
+      <place xml:id="fujisan">
+        <placeName>富士山</placeName>
+        <location><geo>35.3606 138.7274</geo></location>
+        <note>富士山。裕佐が番人をからかって「富士山でも君の首でもつくる」と言う・概値</note>
+      </place>
+      <place xml:id="tengoku">
+        <placeName>天国</placeName>
+        <note>天国(パライゾ)。キリスト教的世界観上の場所のため座標なし。表層形「天国」「パライゾ」を統合</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>地獄。宗教的世界観上の場所のため座標なし</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>はしがき</head>
+        <p>父<persName ref="#hidetada"><ruby><rb>秀忠</rb><rt>ひでただ</rt></ruby></persName>と祖父<persName ref="#ieyasu"><ruby><rb>家康</rb><rt>いえやす</rt></ruby></persName>の素志を継いで、一つにはまだ<ruby><rb>徳川</rb><rt>とくがわ</rt></ruby>の天下が<ruby><rb>織田</rb><rt>おだ</rt></ruby>や<ruby><rb>豊臣</rb><rt>とよとみ</rt></ruby>のように栄枯盛衰の例にもれず、一時的で、三代目あたりからそろそろくずれ出すのではないかという諸侯の肝を冷やすために、また自分自らも内心実はその危険を少なからず感じていたところから、さしあたり<ruby><rb>切支丹</rb><rt>キリシタン</rt></ruby>を<ruby><rb>槍玉</rb><rt>やりだま</rt></ruby>にあげて、およそ残虐の限りを尽くした<persName ref="#iemitsu"><ruby><rb>家光</rb><rt>いえみつ</rt></ruby></persName>が死んで<persName ref="#ietsuna"><ruby><rb>家綱</rb><rt>いえつな</rt></ruby></persName>が四代将軍となっていたころのことである。</p>
+        <p>実際、無抵抗な切支丹は、いわゆる柔剛そのよろしきを得て、<ruby><rb>齢</rb><rt>とし</rt></ruby>に似合わずパキパキと英明ぶりを発揮して、早くも「明君」といわれた<persName ref="#iemitsu">家光</persName>が、一方「<ruby><rb>国是</rb><rt>こくぜ</rt></ruby>に合わぬ」ことはどこまでも厳酷に懲罰して仮借するところがないという「恐ろしさ」を諸侯に示すには得やすからざる好材料であった。「なんといってもまだあの青二才で」とたかをくくって見ているらしく思われた諸侯たちを、就職のとっ始めから度肝を抜いてくれようと思っていた若将軍の切支丹に対する処置の酷烈さと、その<ruby><rb>詮索</rb><rt>せんさく</rt></ruby>し方のすさまじい周到さとは、たしかに「あわよくばまた頭をもたげる時機も」と思っていた諸侯の心事を脅かし、その野望を断念せしめて行くにはきき目は著しかった。<placeName ref="#ouu"><ruby><rb>奥羽</rb><rt>おうう</rt></ruby></placeName>きっての勢力家で、小心で、大の野心家であった<persName ref="#masamune"><ruby><rb>伊達政宗</rb><rt>だてまさむね</rt></ruby></persName>さえ、この年少気鋭な三代将軍の承職に当たって<placeName ref="#edo">江戸</placeName>に上った際、五十人の切支丹の首が<placeName ref="#suzugamori"><ruby><rb>鈴</rb><rt>すず</rt></ruby>が<ruby><rb>森</rb><rt>もり</rt></ruby></placeName>ではねられるのを<ruby><rb>眼</rb><rt>ま</rt></ruby>のあたり見て、そのヤソ教に対する態度をガラリと変えたほどであった。</p>
+        <p>かくてなんでも徳川の基礎を万代に固めることが自家一代の使命であると心得ていた<persName ref="#iemitsu">家光</persName>は、諸侯と直接<ruby><rb>刃</rb><rt>やいば</rt></ruby>をまじえて圧迫するようなまずい手段によらずに、諸侯がともかくも同意しないわけに行かぬ理由と名義のもとに、この<placeName ref="#nihon">日本</placeName>の神を否定し、国法を無視し、羊のような柔和な顔をして、その実国土侵略の目的を<ruby><rb>腸</rb><rt>はら</rt></ruby>に持っている「<ruby><rb>狼</rb><rt>おおかみ</rt></ruby>」の群れをみな殺しにすることによって、間接に徳川の威勢を天下に示し、同時に自分のそれの反照を<ruby><rb>眼</rb><rt>ま</rt></ruby>のあたり見ることができることをこの上もなくおもしろがり、喜んだ。なんとなく気味のわるかった<ruby><rb>姻戚</rb><rt>いんせき</rt></ruby>の<persName ref="#masamune">伊達政宗</persName>までが思いがけない<placeName ref="#ouu">奥羽</placeName>での切支丹迫害の報告書を奉った時、彼は自分がもうそれほどまでにおそれられているのかという得意のために、まだどこか子供子供したおもかげのぬけきらぬ顔をあかくし、パタパタとその書面をたたきながらそれを奥方に見せに座をけって立ったほどであった。</p>
+        <p>しかし切支丹が神の道と救いの教を説くと称して実は<placeName ref="#nihon">日本</placeName>侵略が目的であるということはただ彼の<ruby><rb>称</rb><rt>とな</rt></ruby>えた口実ではなかった。実際彼はそう信じていたので、それはまたそのはずであった。朝廷に最も勢力のあった神道主義者と仏僧とのヤソ教に対するあらゆる反対<ruby><rb>讒訴</rb><rt>ざんそ</rt></ruby><ruby><rb>姑息</rb><rt>こそく</rt></ruby>な陰謀は<persName ref="#hideyoshi"><ruby><rb>秀吉</rb><rt>ひでよし</rt></ruby></persName>時代からの古いことであったが、まだそのほかに商業上の利害の反目から<persName ref="#xavier">フランシスコ・ザヴェリオ</persName>以来<placeName ref="#nihon">日本</placeName>の貿易と布教とを一手に占めていたポルトガル人をおとしいれようとして、元来<placeName ref="#spain">スペイン</placeName>の広大な領土は<ruby><rb>宣教師</rb><rt>ばてれん</rt></ruby>を手先に使って侵略したものだと、まことしやかに述べ立てるスペイン人があり、また<persName ref="#ieyasu">家康</persName>の時にはさらに<placeName ref="#spain">スペイン</placeName>と<placeName ref="#portugal">ポルトガル</placeName>とを商敵とする新教国のオランダ人が現われて<persName ref="#ieyasu">家康</persName>の前に世界地図をひろげ、ヤソ教国の君主すら<ruby><rb>宣教師</rb><rt>ばてれん</rt></ruby>を危険視して、国外に放逐しているくらいであるなぞといって、目の前で十字架をへし折り、<persName ref="#mary">聖母</persName>の画像を踏みつけて見せたこともあった。のみならず捕獲した<placeName ref="#portugal">ポルトガル</placeName>の商船から発見したものだと称して偽造の密書――いわゆる「<placeName ref="#netherlands">オランダ</placeName>のご忠節」をもったいらしく<ruby><rb>捧呈</rb><rt>ほうてい</rt></ruby>したりしたのである。</p>
+        <p>さなきだに切支丹には誤解される点が実に多かった。罪を犯して悔い悲しむ者は、罪を犯さぬつもりでいる<ruby><rb>過</rb><rt>あやま</rt></ruby>ちのない<ruby><rb>傲慢</rb><rt>ごうまん</rt></ruby>な者より救われやすいという意味が、罪その物を肯定する教と見なされたことも当然なことであったが、また霊魂の救われることのために肉体の死苦を甘んじるということがやがて死の賛美に思われ、そしてその死に民衆を「そそのかす」ばてれんたちはまた国民を<ruby><rb>亡</rb><rt>ほろ</rt></ruby>ぼして行く者と見なされたことなぞもすべてもっともなことには相違なかった。</p>
+        <p>かつ<date when="1596"><ruby><rb>慶長</rb><rt>けいちょう</rt></ruby>の初め</date>には<ruby><rb>疫病</rb><rt>えやみ</rt></ruby>がはやり、<ruby><rb>天変地異</rb><rt>てんぺんちい</rt></ruby>がつづいた。こんなことを仏僧や神官が神仏の怒りとして持ち出さずにはおくわけはなかった。<persName ref="#hideyoshi">秀吉</persName>はそれには耳をかさなかったが、切支丹の一婦人に<ruby><rb>懸想</rb><rt>けそう</rt></ruby>してその婦人を<ruby><rb>妾</rb><rt>めかけ</rt></ruby>にすることができなかった時、始めてほんとうに切支丹の強情を憎いと思った。彼はその女を裸にして竹槍で突き殺させたあとで、今日われわれが子供の時から耳にタコができるほど学校で聞かされた<ruby><rb>常套語</rb><rt>じょうとうご</rt></ruby>の元祖を放った。</p>
+        <p>「外国の土によくかなうからといって、その木をすぐ<placeName ref="#nihon">日本</placeName>へ持って来て植えるということは間違っている。<placeName ref="#nihon">日本</placeName>には<placeName ref="#nihon">日本</placeName>の桜がある。」</p>
+        <p>そして自ら<placeName ref="#chosen">朝鮮</placeName>を侵略して行ったこの<ruby><rb>猿</rb><rt>さる</rt></ruby>英雄は一度でそれが懲らしうるつもりで、まず二十六人の「侵略者」を<placeName ref="#nagasaki">長崎</placeName>の<placeName ref="#tateyama"><ruby><rb>立山</rb><rt>たてやま</rt></ruby></placeName>で<ruby><rb>磔刑</rb><rt>はりつけ</rt></ruby>にし、虐殺の<ruby><rb>先鞭</rb><rt>せんべん</rt></ruby>をつけた。</p>
+        <p><persName ref="#ieyasu">家康</persName>は<persName ref="#hideyoshi">秀吉</persName>よりもいっそう切支丹を最初からきらっていた。徳川の運命と同じく、切支丹の運命にとって致命的であった<placeName ref="#sekigahara"><ruby><rb>関</rb><rt>せき</rt></ruby>が<ruby><rb>原</rb><rt>はら</rt></ruby></placeName>の決戦が済み、切支丹の最も有力な擁護者であった<persName ref="#mitsunari"><ruby><rb>石田三成</rb><rt>いしだみつなり</rt></ruby></persName>、<persName ref="#yukinaga"><ruby><rb>小西行長</rb><rt>こにしゆきなが</rt></ruby></persName>、<persName ref="#yukitaka"><ruby><rb>黒田行孝</rb><rt>くろだゆきたか</rt></ruby></persName>らが滅びうせて後は、<date when="1622"><ruby><rb>元和</rb><rt>げんな</rt></ruby>八年</date>の五十五人虐殺を筆頭に、露骨な切支丹迫害が始められた。かくてそれまでは自ら洗礼をうけ、あるいは切支丹に厚意を持っていた<placeName ref="#saigoku">西国</placeName>の諸侯は、幕府の<ruby><rb>嫌疑</rb><rt>けんぎ</rt></ruby>をおそれるがゆえに改宗し、あるいは切支丹の討伐にかかった。そして<ruby><rb>爾後</rb><rt>じご</rt></ruby>切支丹の根たやしは徳川家代々の方針となった。</p>
+        <p><date when="1638-01"><ruby><rb>寛永</rb><rt>かんえい</rt></ruby>十五年正月</date>、<placeName ref="#shimabara"><ruby><rb>島原</rb><rt>しまばら</rt></ruby></placeName>の<ruby><rb>乱</rb><rt>らん</rt></ruby>が片づき、つづいて南蛮鎖国令が出て後、<date when="1549"><ruby><rb>天文</rb><rt>てんもん</rt></ruby>十八年</date>以来百余年の長きにわたり、二千人以上の殉教者と三万数千人の被刑者とを出してなお<ruby><rb>執</rb><rt>しゅう</rt></ruby>ねく余炎をあげていた切支丹騒動なるものは一段落ついたように見えた。</p>
+        <p>「<ruby><rb>一時</rb><rt>いっとき</rt></ruby>はほんに<placeName ref="#nihon">日本</placeName>全国上下をあげてなびいたくらいえらい勢いじゃったもんじゃ。<persName ref="#nobunaga"><ruby><rb>信長</rb><rt>のぶなが</rt></ruby></persName>が<placeName ref="#honnoji">本能寺</placeName>で討たれたころにゃ三十万からの<ruby><rb>生粋</rb><rt>きっすい</rt></ruby>の信者がおったそうな。それがこの通り消え細るまでにゃお上の仕打ちもずいぶんと思い切ってむごいにはむごかったが、片っ方も、また<ruby><rb>執</rb><rt>しつ</rt></ruby>っこいとも執っこいもんじゃった。が、こうなってみりゃこの国に切支丹がいれられなかったというなあ、それが結局<persName ref="#deus"><ruby><rb>天主</rb><rt>でうす</rt></ruby></persName>のご所存じゃったのかもしれんてな。」</p>
+        <p>こんな疑念がひそかに切支丹に厚意を持つ人々の念頭にもきざしかけていたそのころのことである。それでもなお全国市町の要所要所には</p>
+        <p>定</p>
+        <p>切支丹宗門は累年ご禁制たり、自然不審なるもの<ruby><rb>之有者</rb><rt>これあらば</rt></ruby>申し<ruby><rb>出</rb><rt>い</rt></ruby>づべし、ご<ruby><rb>褒美</rb><rt>ほうび</rt></ruby>として</p>
+        <p>ばてれんの訴人　　　　　　銀三百枚</p>
+        <p>いるまんの訴人　　　　　　銀二百枚</p>
+        <p>立ちかえり者の訴人　　　　同断</p>
+        <p>宗門の訴人　　　　　　　　銀百枚</p>
+        <p>同宿並びにかくし置き他より<ruby><rb>顕</rb><rt>あら</rt></ruby>わるるにおいてはそこの<ruby><rb>名主</rb><rt>なぬし</rt></ruby>並びに五人組まで一類共可レ処二厳科一也、仍下知如レ件</p>
+        <p>奉行</p>
+        <p>としたためた檜の高札がいかめしくたてられていたころのことである。</p>
+        <p><placeName ref="#nagasaki">長崎</placeName>の<placeName ref="#furukawamachi">古川町</placeName>に<persName ref="#yusa"><ruby><rb>萩原裕佐</rb><rt>はぎわらゆうさ</rt></ruby></persName>という南蛮<ruby><rb>鋳物師</rb><rt>いものし</rt></ruby>がいた。</p>
+      </div>
+      <div type="chapter" xml:id="sec02" n="2">
+        <head>一</head>
+        <p>「おい。お<persName ref="#sawa"><ruby><rb>佐和</rb><rt>さわ</rt></ruby></persName>。この間のあの『<ruby><rb>虎</rb><rt>とら</rt></ruby>』をどこへやったんだ。」</p>
+        <p>「よくもこう珍なものを集めたものだ」とつい人がおかしくなるほど<ruby><rb>煤</rb><rt>すす</rt></ruby>ぼけた珍品<ruby><rb>古什</rb><rt>こじゅう</rt></ruby>の類をところ狭く散らかした六畳の<ruby><rb>室</rb><rt>へや</rt></ruby>の中を、<persName ref="#magoshiro"><ruby><rb>孫四郎</rb><rt>まごしろう</rt></ruby></persName>は易者然たる<ruby><rb>鼈甲</rb><rt>べっこう</rt></ruby>の<ruby><rb>眼鏡</rb><rt>めがね</rt></ruby>をかけて積んである絵本をまたぎ茶盆をまたぎして、先刻から机の上、床の間、押し入れの中としきりに引っくり返して何かさがしていたが、こう荒々しく声をかけた。</p>
+        <p>「ぬしはまた売っちまったんだろうが。え？　おれにかくして。」</p>
+        <p><persName ref="#magoshiro">孫四郎</persName>の調子にはもうやや<ruby><rb>刺</rb><rt>とげ</rt></ruby>があった。その刺にさされて、隣の四畳で針仕事をしていた細君はやぶれた<ruby><rb>襖</rb><rt>ふすま</rt></ruby>をあけた。</p>
+        <p>「まあ、『また』なんてだれがいつそんなことをしましたろうか。」</p>
+        <p>やや上気した<ruby><rb>頬</rb><rt>ほほ</rt></ruby>のあか味のために<ruby><rb>剃</rb><rt>そ</rt></ruby>った<ruby><rb>眉</rb><rt>まゆ</rt></ruby>のあとがことに<ruby><rb>蒼</rb><rt>あお</rt></ruby>く見える細君はこういいながら、はじらいげにほほえんだ会釈を客の<persName ref="#yusa">裕佐</persName>の方へなげ、</p>
+        <p>「まあ、この散らかし方！　まるで<ruby><rb>屑屋</rb><rt>くずや</rt></ruby>さんのようですわ。」</p>
+        <p>と<ruby><rb>尻</rb><rt>しり</rt></ruby>あがりの調子でいって、ちょっと突っ立った。</p>
+        <p>「貴様、さがして見い、ありゃせん。」</p>
+        <p><persName ref="#magoshiro">孫四郎</persName>は<ruby><rb>邪慳</rb><rt>じゃけん</rt></ruby>にこういい捨てて敷けばかえって冷たそうな板のように重い座ぶとんをドサリとわきへほうりなげ、<ruby><rb>長煙管</rb><rt>ながぎせる</rt></ruby>の<ruby><rb>雁首</rb><rt>がんくび</rt></ruby>で、鉄に銀の<ruby><rb>象嵌</rb><rt>ぞうがん</rt></ruby>をした<placeName ref="#chosen">朝鮮</placeName>の<ruby><rb>煙草箱</rb><rt>たばこばこ</rt></ruby>を引き寄せながらその長い<ruby><rb>膝</rb><rt>ひざ</rt></ruby>をグッと突き出してすわった。</p>
+        <p>「そりゃこんなもんよりゃずっと傑作じゃ。この間の縁日の虎をさっそくやって見たんじゃがな。」</p>
+        <p>彼はこういってひょろ長いからだの居ずまいを直し、<persName ref="#yusa">裕佐</persName>が縁近く持ち出してあぐらをかいて見ていた一枚の絵を煙管でさした。それは<persName ref="#nagamasa"><ruby><rb>山田長政</rb><rt>やまだながまさ</rt></ruby></persName>が象に乗って<placeName ref="#siam">シャム</placeName>の国王のところに婿入りをする図で、版画にする原画であった。</p>
+        <p>「ほうら。ありましたがな、こんなところに。やはりあなたご自分でおしまいになったんですわ。」</p>
+        <p>細君はうれしさのあまり長い白い<ruby><rb>脛</rb><rt>すね</rt></ruby>をちょっとあらわして、束になってくずれている<ruby><rb>錦絵</rb><rt>にしきえ</rt></ruby>をまたぎ、安心とうらめしさとがいっしょになって堅くなった表情を向けながら一枚の絵を<ruby><rb>夫</rb><rt>おっと</rt></ruby>に渡した。そして「いつだってこうなんですの。」とややとげとげしくいって、そのとげとげしさにぽっとあからんだ<ruby><rb>笑顔</rb><rt>えがお</rt></ruby>を<persName ref="#yusa">裕佐</persName>に見せ、チラリとまた夫を顧みて、次の間へ立ち去った。</p>
+        <p>「あったか。」<persName ref="#magoshiro">孫四郎</persName>は受け取りながら一言こういって、大事そうにフッと一息かけ、</p>
+        <p>「ここへ来てごらん。ここの方がまだ明るい。」</p>
+        <p>といいながらその絵をサラリと敷居の上へなげ、飲み残しの冷たい茶をゴクリと一息にのむと今度は眼鏡の<ruby><rb>球</rb><rt>たま</rt></ruby>を<ruby><rb>袖口</rb><rt>そでぐち</rt></ruby>でこすりながらのぞき込むようにじろりじろりと<persName ref="#yusa">裕佐</persName>の顔を<ruby><rb>視入</rb><rt>みい</rt></ruby>るのだった。</p>
+        <p><placeName ref="#suwa-jinja"><ruby><rb>諏訪</rb><rt>すわ</rt></ruby>神社</placeName>の縁日に虎の見世物が出て、非常な人気を博したことはついその十日ほど前のことであった。<persName ref="#magoshiro">孫四郎</persName>の絵ではその虎の<ruby><rb>檻</rb><rt>おり</rt></ruby>が街頭に引き出されている。「<placeName ref="#chosen">朝鮮</placeName>大虎」「大入り大入り」「<ruby><rb>大人</rb><rt>おとな</rt></ruby>一<ruby><rb>文</rb><rt>もん</rt></ruby>小児半文」と書いた札を背にしてしきりに客を呼んでいる男が一方にいる。かと思うと張り子のような虎が檻いっぱいに突っ立っていかめしくにらんでいるその檻の前には、「おらんだ人」と肩書きのある<ruby><rb>紅毛碧眼</rb><rt>こうもうへきがん</rt></ruby>の異国人が<ruby><rb>蝙蝠傘</rb><rt>こうもりがさ</rt></ruby>をさした<placeName ref="#nihon">日本</placeName>の遊女と腕を組んで、<ruby><rb>悠長</rb><rt>ゆうちょう</rt></ruby>にそれを見物している。ステッキをついて<ruby><rb>猩々</rb><rt>しょうじょう</rt></ruby>のように<ruby><rb>髯</rb><rt>ひげ</rt></ruby>をはやしたばかに鼻の高い「おろしゃ人」が虎よりは見物人の方を見ながらのどかにパイプをふかしている。大小をさしたちょんまげの侍のわきには<placeName ref="#nihon">日本</placeName>の子供と<placeName ref="#shina">シナ</placeName>の子供とが遊んでいる。</p>
+        <p>「ふうむ。――」<persName ref="#yusa">裕佐</persName>は思わずその絵のユーモアにほほえまされた。「なるほどこりゃおもしろい。」</p>
+        <p>「近来の傑作じゃろうがな。ヘッヘッヘッ。」</p>
+        <p>むしろ好んで皮肉をてらうようなそのゆがんだ口もとに深いしわを寄せながら、にやにやとほこりがに<persName ref="#yusa">裕佐</persName>の顔を見ていた<persName ref="#magoshiro">孫四郎</persName>はこういって高く笑い出した。</p>
+        <p>「傑作ですね。版にしたらまたひとしおおもしろいでしょう。」</p>
+        <p>その笑い声の下品さにいや<ruby><rb>気</rb><rt>け</rt></ruby>をもよおしながらも<persName ref="#yusa">裕佐</persName>はこうほめざるを得なかった。</p>
+        <p>「あの虎はあなたがかくとおもしろかろうと僕も思っていたんです。」</p>
+        <p>「へ、へ。なかなか見のがしゃせぬよ。」</p>
+        <p>と<persName ref="#magoshiro">孫四郎</persName>はまた雁首に煙草をつめながら</p>
+        <p>「往来にさらしてある見世物に「大入り」はおかしいが、そこがこういう<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>じゃでな。」</p>
+        <p>こういってまた笑った。たしかに<ruby><rb>齢</rb><rt>とし</rt></ruby>よりは十ぐらい<ruby><rb>老</rb><rt>ふ</rt></ruby>けて見えるがその実ようやく四十になったばかりのこの絵師は、当時<placeName ref="#nagasaki">長崎</placeName>きっての版画師であった。</p>
+        <p>実のところ<persName ref="#yusa">裕佐</persName>は口に出してほめた以上に内心感服――むしろ驚いていたのであった。「実際変なやつだ」と彼は思うのだった。人間としてはもとよりのこと、画家としての<persName ref="#magoshiro">孫四郎</persName>にも彼は決して飽き足りてはいなかった。<persName ref="#magoshiro">孫四郎</persName>のかくものが現におもしろいことは否定できないにしろ、ただ「おもしろい」というだけにすぎぬ芸術は<ruby><rb>所詮</rb><rt>しょせん</rt></ruby>三流以上のものではあり得ないと<persName ref="#yusa">裕佐</persName>は思っていた。しかしその一流の境を求める自分はまだそのおもかげのうかがわれる仕事すらしておらぬのに、<persName ref="#magoshiro">孫四郎</persName>はともかくその「おもしろい」自家の一道をすでにつかまえている。「<persName ref="#nagamasa">山田長政</persName>」や「虎」の絵にはその「つかんだ」という感じが顕著に出ている。彼はその狭い道の上でわき目もふらずにめきめきと進みつつある。<persName ref="#magoshiro">孫四郎</persName>の到底了解しあたわぬていの傑作にも広く共鳴を感じうる自分は、まだその<ruby><rb>広汎</rb><rt>こうはん</rt></ruby>な理解と燃えたぎる深い内心の欲求とを寸分も生かしておらぬのに、<persName ref="#magoshiro">孫四郎</persName>はともかくその卑俗な趣味の偏狭に徹底して、それを自家の製作のうえに生かし、<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>自適している。かくて<persName ref="#yusa">裕佐</persName>はその先輩にある反感を<ruby><rb>抱</rb><rt>いだ</rt></ruby>きながらも一方うらやましく思い、その「おもしろさ」さえもない自己の仕事を顧みてさびしく感ぜずにはいられなかった。</p>
+        <p>「どうも僕は少しいろんなものにひかれすぎるのかな。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は思わずこう嘆息をもらして破れ<ruby><rb>芭蕉</rb><rt>ばしょう</rt></ruby>の乱れている三坪ばかりの庭の方を向いた。</p>
+        <p>「いろんなものにひかれるのは結構じゃないか。つまりそれだけ、おぬしはあたまが広いのだからな。」</p>
+        <p>そう出られれば「もちろん」と<persName ref="#yusa">裕佐</persName>はいいたくなるのだった。しかし自分のうちにはたしかに<persName ref="#magoshiro">孫四郎</persName>なぞのうかがいも得ぬ何かがあると自信してはいるもののまだその現の証拠を実現したわけではない。実現して<ruby><rb>眼</rb><rt>ま</rt></ruby>のあたり見た上でない以上やはり内心不安であり、空虚である。<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>だれにでもある単なるうぬぼれ、架空の幻影ではないかと疑う。自分で疑うくらいなら人が見くびることに文句はいえない。</p>
+        <p>「とにかく僕は何か一つの道に徹底したいよ。さしあたり僕はそのことを願わずにはおられない。自分が結局どの道にも徹底できない<ruby><rb>質</rb><rt>たち</rt></ruby>なのでないかという気がどうもしてな。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はまたおとなしくこういってかかえた<ruby><rb>膝</rb><rt>ひざ</rt></ruby>をゆすぶった。</p>
+        <p>「ふむ、徹底するといったって、こんな一文や二文のおもちゃ仕事に徹底したんじゃおぬしは満足はできなかろう。もっとえらい仕事でなけりゃな。――わしの仕事なぞは貧乏人の子供<ruby><rb>対手</rb><rt>あいて</rt></ruby>だ。これでずいぶん<ruby><rb>丹精</rb><rt>たんせい</rt></ruby>はして造る。こんなあほらしいような<ruby><rb>絵草紙</rb><rt>えぞうし</rt></ruby>一枚だって見かけよりゃ骨を折っとるんだ。しかしいくら骨を折ったって結局子供だましの<ruby><rb>乞食</rb><rt>こじき</rt></ruby>仕事だ。でもこんなのらくらの遊び人の絵をともかくも一文や二文で買ってくれ手があるから不思議なもんさな！　どうで<persName ref="#sesshu"><ruby><rb>雪舟</rb><rt>せっしゅう</rt></ruby></persName>も<persName ref="#motonobu">元信</persName>も拝むことのできぬ<ruby><rb>肴屋</rb><rt>さかなや</rt></ruby>や<ruby><rb>八百屋</rb><rt>やおや</rt></ruby>の<ruby><rb>熊公</rb><rt>くまこう</rt></ruby>八公がわたしのご上客だ。殿様だ。それがわしには相応しとるて。ヘッヘッヘ。やつらにゃまたわしのような乞食絵師が相当しとるんだ。だからわしのような者もなけりゃならんのさ。<ruby><rb>雲上人</rb><rt>うんじょうびと</rt></ruby>相手の<ruby><rb>白拍子</rb><rt>しらびょうし</rt></ruby>ばかりじゃ世の中は足らん。熊公八公相手の<ruby><rb>夜鷹</rb><rt>よたか</rt></ruby>もなけりゃな。どうだ。おぬし徹底して夜鷹になるか。」</p>
+        <p><persName ref="#magoshiro">孫四郎</persName>はこういって<ruby><rb>煙脂</rb><rt>やに</rt></ruby>だらけの黒い口をあいて笑った。</p>
+        <p><persName ref="#yusa">裕佐</persName>がこの版画家に対して何よりもいやに思い、それがために友に飢えていながらもそうしげしげと<ruby><rb>訪</rb><rt>たず</rt></ruby>ねて深くつき合う気にどうもなれなかったのは、実にこの男のひがみから来る一種の偽悪趣味であった。</p>
+        <p>人の心持ちをなんでも下等にいやしく解釈して見抜いたような薄笑いを浮かべ、人がそれに腹を立てて何かヘコますようなことをいえば、「まあさ、そうどならんでも」とごまかして笑う。笑えば必ず故意の冷笑である。いかなる場合にも冷笑することが人生で最も優越なことであると思うことにしているらしいこの男は、人情として笑うことが不可能である場合にも必ず意識してヘラヘラと笑う。何がそんなにおかしいのかときけば「何もかもおかしいのだ。自分自身もおかしいのだ」と答えてまた笑う。むろん決してほんとうにおかしいのではない。ただおかしがることが好きなのである。おかしがっていたいのである。そしてまたおかしがりたいためにすべて人生一般の対照物をその<ruby><rb>冷嘲</rb><rt>れいちょう</rt></ruby>の<ruby><rb>的</rb><rt>まと</rt></ruby>となりうる<ruby><rb>下賤</rb><rt>げせん</rt></ruby>な階級まで引きずり降ろさずにおかないのだから、相手が不快がるのは無理はない。そして相手がいらだてばいらだつほど彼はますますその<ruby><rb>犬儒</rb><rt>けんじゅ</rt></ruby>主義を享楽するうえに満足を感じて、なんで相手がそんなにいらだつのか合点が行かぬような顔をして冷静にかまえるのみである。それが彼の「勝利」なのだ。</p>
+        <p>しかし、今彼のくだくだしい毒舌を聞いた者は、表面氷のごとく見える彼の自己冷嘲の奥にいらだたしい<ruby><rb>刺</rb><rt>とげ</rt></ruby>があり、ひねくれた者の弱い火があることを容易に見抜き得たであろう。その火は彼の意志を裏ぎって<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめた頬をぽっとあかくしていた。</p>
+        <p>「しかしとにかく君は画家ですよ。僕は画家ではない。」</p>
+        <p>「夜鷹」というような言葉をつかう<persName ref="#magoshiro">孫四郎</persName>の興味に例のいや気をもよおしながらも、その上気した顔を見るとなんとなく気の毒なような気がして、<persName ref="#yusa">裕佐</persName>はこういった。</p>
+        <p>「低いなりにもな。ハ、ハ。どうでわしはこれだけの絵職人さ。なんといったって。しかしおぬしなぞは生まれからいってもわしなぞとは仕事のわけがちがわなけりゃならん。それにまだ若いし、――あせることはないさ。すこしも。」</p>
+        <p>なんの親切気もない調子でこういうと、彼は長い立て膝をかかえながら、</p>
+        <p>「この間の<persName ref="#matabei"><ruby><rb>又兵衛</rb><rt>またべえ</rt></ruby></persName>ばりの人物画はどうした。おもしろく行きそうだったが。」</p>
+        <p>「だめだ。失敗だった。」</p>
+        <p>ただ「人物画」とはいわずに「<persName ref="#matabei">又兵衛</persName>ばり」のとちょっといやがらせを付け加えずにはおかない彼の癖に、<persName ref="#yusa">裕佐</persName>がこうぶっきら棒に応じたのを、<persName ref="#magoshiro">孫四郎</persName>はなお平然としてきいた。</p>
+        <p>「君、<ruby><rb>鋳物</rb><rt>いもの</rt></ruby>をやる気はないんかね。お<ruby><rb>父</rb><rt>とっ</rt></ruby>さんの伝でやって行きゃ、たちまち日本一だが。」</p>
+        <p>「ふむ、だれもまだあの術を知っているものはほかにないからな。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は<persName ref="#magoshiro">孫四郎</persName>の言葉の気持ちを自分の方からいった。</p>
+        <p>「あれでもその道のコツをのみ込みさえしたら案外おもしろい仕事ができるもんじゃないかとわしは思うがなあ。」</p>
+        <p>おれがやったらという顔つきで、<persName ref="#magoshiro">孫四郎</persName>はまたこういいながら<ruby><rb>蒼</rb><rt>あお</rt></ruby>い<ruby><rb>頤</rb><rt>おとがい</rt></ruby>をなでた。</p>
+        <p>「そうも思えるが、どうも僕にゃ……」</p>
+        <p>「物足らんか。望みが太いでな。はは。」</p>
+        <p>こういって形だけのあくびをしたところへ、</p>
+        <p>「ねえさん。ちょっと出てみなされ。またお通りですよ。」</p>
+        <p>と上がり口の<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>をガラリとあけて、こう娘の声が聞こえた。</p>
+        <p>「あら、そう。もうそんな時刻でしょうか。」</p>
+        <p>といって細君は<ruby><rb>襖</rb><rt>ふすま</rt></ruby>をあけて現われ「<persName ref="#yusa">萩原</persName>さん。ちょっと出てごらんなさらない。おいや？」と口についた糸を指で取って丸めながら、<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の方を向いていった。</p>
+        <p>「なんです。」<persName ref="#yusa">裕佐</persName>がこういうのを、</p>
+        <p>「<placeName ref="#maruyama"><ruby><rb>丸山</rb><rt>まるやま</rt></ruby></placeName>連さ。」と<persName ref="#magoshiro">孫四郎</persName>は「いわずと知れた」といわぬばかり、「おいやなこともなかろう、<ruby><rb>切支丹</rb><rt>キリシタン</rt></ruby>じゃなし。なア？」と<persName ref="#yusa">裕佐</persName>の顔を流し目に冷やかしながら立ち上がった。</p>
+        <p>異国に対して厳酷であるとともに<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>であった幕府は、当時<placeName ref="#nagasaki">長崎</placeName>在留の異国人の住居を<placeName ref="#dejima"><ruby><rb>出島</rb><rt>でじま</rt></ruby></placeName>の<ruby><rb>郭</rb><rt>くるわ</rt></ruby>内に禁制するとともに、一方<placeName ref="#maruyama">丸山</placeName>の遊女を毎夜そこにつかわし、<ruby><rb>侍</rb><rt>はべ</rt></ruby>らしめて、紅毛人の歓心を買うことにこれつとめていた。</p>
+        <p>雨の日も、風の日も、灯ともしころになれば、三十人、四十人の遊女が、さわればぽろぽろとはげて落ちそうな粉飾に<ruby><rb>綺羅</rb><rt>きら</rt></ruby>を尽くし、交代に順番に応じて、<ruby><rb>奉行</rb><rt>ぶぎょう</rt></ruby>から差遣の同心に駆られ、ひき立てられて、<placeName ref="#maruyama">丸山</placeName>から<placeName ref="#dejima">出島</placeName>へと練って行くのであった。その<ruby><rb>翌暁</rb><rt>よくあさ</rt></ruby>には前夜のそれとは見まごうばかりの<ruby><rb>落剥</rb><rt>らくはく</rt></ruby>した灰色の姿に変わって、三々五々<ruby><rb>蕭条</rb><rt>しょうじょう</rt></ruby>とまた<placeName ref="#maruyama">丸山</placeName>へ戻って行くのであった。</p>
+        <p>「さあ、こっちもそろそろお出かけなさるか。今夜こそ一ちょあれをかいてやらんにゃ。」</p>
+        <p>「何を。」と<persName ref="#yusa">裕佐</persName>は「もうここへは決して二度と来まい」と心につぶやきながらいってたち上がった。</p>
+        <p>「<placeName ref="#oranda-yashiki">おらんだ屋敷</placeName>さ。『<ruby><rb>紅毛</rb><rt>おらんだ</rt></ruby>人遊興の図』だ。」</p>
+        <p><persName ref="#magoshiro">孫四郎</persName>はこういいながら半紙をとじた帳面をふところに入れ、矢立ての墨をあらためて腰にさすと、変に興奮したていで衣紋掛けの<ruby><rb>羽織</rb><rt>はおり</rt></ruby>をとって引っかけた。</p>
+        <p>「まあ、またお出かけ。<persName ref="#yusa">萩原</persName>さん誘惑されないように用心なさいよ。」</p>
+        <p>出て来た夫のいで立ちを見ると細君は光る目で<persName ref="#yusa">裕佐</persName>の方を見ながらこうほほえんだ。</p>
+        <p>「へ、へ、誘惑されちゃいけませんは皮肉だな。」<persName ref="#magoshiro">孫四郎</persName>はのび上がって行列の方を見ながら、「どうだ。いっしょに行くか。童貞の青年。」</p>
+        <p>「いや、僕はここで失敬します、ではまた。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は細君の方に向かってこういうと、薄暗い人ごみの中にすぐ姿をかくしてしまった。</p>
+      </div>
+      <div type="chapter" xml:id="sec03" n="3">
+        <head>二</head>
+        <p>「おれは弱すぎる。なぜこう人を求めるのか。あとで必ず後悔することがわかっているくせに。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はなんべんも自分にこういった。そして時々後ろを振り向いた。背の高い<persName ref="#magoshiro">孫四郎</persName>が群衆の上にのび上がって、その<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめた小さな皮肉な顔で笑いながらどこまでも自分の跡を見送っているような気がしてならなかった。彼はその視線を背中に感じてムズムズするようにからだをふるわした。「行列を盗み見ているあの目のあやしさを見ろ。わしが誘惑するもないもんだ。へ、あの<ruby><rb>猫</rb><rt>ねこ</rt></ruby>かぶりめ。」こんなことを何もかも見抜いたような調子で細君にいっている<persName ref="#magoshiro">孫四郎</persName>を後ろに想像すると、彼はたまらない<ruby><rb>悪感</rb><rt>おかん</rt></ruby>を感じながらも、不思議にその予言に支配されるような気がしてならなかった。</p>
+        <p>しかし<ruby><rb>大股</rb><rt>おおまた</rt></ruby>に急ぐ彼の歩調はいつのまにかのろくなりがちだった。眠くてたまらぬ者が気がついては目を無理に開きながらもつい居ねむりをするようなものであった。なんともいえぬさびしさが重い黒雲のように上から彼の頭をおさえつけていた。自分を信じない者がただ<persName ref="#magoshiro">孫四郎</persName>に止まるなら「あんなやつにおれの何がわかってたまるものか」と平気でいられる。しかし<persName ref="#magoshiro">孫四郎</persName>の冷たい表情の裏には同じ<ruby><rb>相好</rb><rt>そうごう</rt></ruby>の運命の顔があるような気がした。それを自分のばからしい気のせいであるといかに思い、その不快な幻影を払いのけようと頭を打ち振りながらも脳裏にこびりついた<persName ref="#magoshiro">孫四郎</persName>の顔はただ<persName ref="#magoshiro">孫四郎</persName>の顔とは思えず、その皮肉はただ<persName ref="#magoshiro">孫四郎</persName>の皮肉とばかりは思えなかった。こちらが力なく反抗すれば向こうはさらに恐ろしい声で「あいつに何ができるか、ヘッヘッ！」と反響しそうに思われた。</p>
+        <p>彼はステッキで堅い地をたたき、<ruby><rb>咳</rb><rt>せき</rt></ruby>ばらいとも、叫びともつかぬ声をしぼり出して空を仰ぎ、そして歩いた。通りでは遊女の列にからかう男の下等な笑い声や、かん高い気違いじみた女の声が聞こえた。一種の本能で<persName ref="#yusa">裕佐</persName>はその行列を見るのはいやだった。それで<ruby><rb>小路</rb><rt>こうじ</rt></ruby>にはいった。しかしどちらへ向かって？　彼は自分の家の方へは行かなかった。<placeName ref="#hikosan"><ruby><rb>彦山</rb><rt>ひこさん</rt></ruby></placeName>の中腹を少しおりたところに父の建てた自分の古家。六十になる出戻りの<ruby><rb>伯母</rb><rt>おば</rt></ruby>と二人で彼が住んでいるその家には朝日はよく照るのだった。日が照っている間そこは彼にとって真に落ちつける唯一の<ruby><rb>温</rb><rt>あたた</rt></ruby>かい<ruby><rb>自家</rb><rt>うち</rt></ruby>であり、「道場」であった。彼はそこに<ruby><rb>祀</rb><rt>まつ</rt></ruby>ってある「<persName ref="#gigeiten"><ruby><rb>伎芸天</rb><rt>ぎげいてん</rt></ruby></persName>」とともに暮らして少しもさびしくなかった。しかしそこは昼の家である。日が向かいの<placeName ref="#inasadake"><ruby><rb>稲佐嶽</rb><rt>いなさがだけ</rt></ruby></placeName>に隠れて、眼下の町々にちらほら<ruby><rb>灯</rb><rt>あかり</rt></ruby>がまたたき始め、さらさらという<ruby><rb>夕</rb><rt>ゆうべ</rt></ruby>の<ruby><rb>肌</rb><rt>はだ</rt></ruby>寒い風が<ruby><rb>障子</rb><rt>しょうじ</rt></ruby>の穴から忍び込むがいなや、彼にまったく新しい第二の一日と世界とが始まり、彼は落ちつきを失うのだった。天上に二三の星が何かを招くようにきらめき、地上にぽつぽつと明りが光りそめることは、朝<ruby><rb>赤児</rb><rt>あかご</rt></ruby>が目をあくのと同じ新鮮な感じで彼をおののかすのであった。かくて夜の世界の不安と、<ruby><rb>寂寥</rb><rt>せきりょう</rt></ruby>と、<ruby><rb>戦慄</rb><rt>せんりつ</rt></ruby>と、魅力とが魔のごとく彼を襲い、捕えた。魔に捕えられることは恐るべき苦痛であり、また寒い喜びであった。何かが抵抗すべからざる力で若い彼の心臓をわき立たせ、真昼の端正な「<persName ref="#gigeiten">伎芸天</persName>」までが<ruby><rb>妖艶</rb><rt>ようえん</rt></ruby>、<ruby><rb>婀娜</rb><rt>あだ</rt></ruby>な姿に変じて燃える目で彼を内から外へ誘い駆りたてるのであった。</p>
+        <p>その家に今これから帰ることは思っただけでも苦痛なことであった。それが苦痛でなくなるまで彼は外で、夜の世界で、疲れ切らなければならなかった。</p>
+        <p>彼は<placeName ref="#oohato"><ruby><rb>大波止</rb><rt>おおはと</rt></ruby></placeName>の海岸の方へ向かって、浜から来る<ruby><rb>汐</rb><rt>しお</rt></ruby>臭い秋風にふるえながら歩いた。いつもそこを通るごとに癖のように引きずられて立ち寄るシナ店の前をも彼は今気がつかずに通り越していた。</p>
+        <p>彼は海岸へ出た。蕭条たる<date when="--11">十一月</date>の浜べには人影一つなく、黒い上げ汐の上をペラペラとなで来る冷風のみが<ruby><rb>灯</rb><rt>あかり</rt></ruby>をつけた幾十の<ruby><rb>苫舟</rb><rt>とまぶね</rt></ruby>をおもちゃのように<ruby><rb>翻弄</rb><rt>ほんろう</rt></ruby>していた。岸に沿って<ruby><rb>彎曲</rb><rt>わんきょく</rt></ruby>している防波堤の石に腰かけて<ruby><rb>杖</rb><rt>つえ</rt></ruby>をたらせばその先の一、二寸はらくに海水にひたる。ひしひしと上げくる秋の汐は<ruby><rb>廂</rb><rt>ひさし</rt></ruby>のない屋根舟を木の葉のように軽くあおって往来と同じ水準にまでもたげている――彼はそこに腰をかけた。</p>
+        <p>海に突き出して一つの城郭のように<ruby><rb>館</rb><rt>やかた</rt></ruby>が右手に見える。点々たる星の空の下にクッキリと四角に浮き出すその家の広間の中は、<ruby><rb>煌々</rb><rt>こうこう</rt></ruby>としてどのくらい明るいのかとおもわれる。たしかに白昼より明るいにちがいない。しかもなんという物々しい、無気味な明るさであろう。そこには人の家らしい落ちつきや、幸福はみじんもない。島を囲む黒い<ruby><rb>漣</rb><rt>さざなみ</rt></ruby>がぴたぴたとその<ruby><rb>礎</rb><rt>いしずえ</rt></ruby>を洗うごとくに、夜よりも暗い無数の<ruby><rb>房々</rb><rt>ふさぶさ</rt></ruby>がその明るい大広間を取り巻いている。そこからは<ruby><rb>落寞</rb><rt>らくばく</rt></ruby>たる歓楽の<ruby><rb>絃歌</rb><rt>げんか</rt></ruby>が聞こえ、干からびた寂しい笑い声がにぎやかにもれて来る。――それは普通<placeName ref="#oranda-yashiki">オランダ屋敷</placeName>と呼ばれている「<placeName ref="#dejima">出島</placeName>の<placeName ref="#oranda-yashiki"><ruby><rb>蘭館</rb><rt>らんかん</rt></ruby></placeName>」である。</p>
+        <p><persName ref="#yusa">裕佐</persName>はその異様な家の方に向かって歩き出した。そして歩きながら彼はキョロキョロとあたりを物色した。<persName ref="#magoshiro">孫四郎</persName>を彼はさがしていたのである。<placeName ref="#dejima">出島</placeName>へ渡るためには<ruby><rb>艀</rb><rt>はしけ</rt></ruby>に乗らなければならない。艀の渡し<ruby><rb>守</rb><rt>もり</rt></ruby>は奉行から<ruby><rb>遣</rb><rt>つか</rt></ruby>わされている侍である。異国人と、遊女と、奉行所の監札を持った者のほかそこへ行くことの許されぬ<ruby><rb>禁錮</rb><rt>きんこ</rt></ruby>の島へ<persName ref="#magoshiro">孫四郎</persName>の行くわけはない。「どうせうそにきまっている。あの道楽者が今さららしくこんなところへ絵なぞかきに来るものか。」と彼は思った。しかしそう思って振り返った瞬間、彼は大きな、白い、首の長い一つの顔を見たような気がしてギョッとした。彼は身ぶるいし、そしてこわい物見たさのようにもう一度それを見た。それは番小屋の後ろから高く首のように突き出た新しい白木の高札であった。</p>
+        <p>ばてれんの訴人　　　　　　銀三百枚</p>
+        <p>いるまんの訴人　　　　　　銀二百枚</p>
+        <p>立ちかえり者の訴人　　　　同断</p>
+        <p>同宿並びにかくし置き、他より<ruby><rb>顕</rb><rt>あら</rt></ruby>わるるにおいては――<ruby><rb>云々</rb><rt>うんぬん</rt></ruby></p>
+        <p>の文句が威脅するように墨黒々とそれに書かれている。それは人間の書いた字でなく、鬼の書いた字のように思われた。「ばてれん」とは教父、宣教師のことであり、「いるまん」とは法の<ruby><rb>兄弟</rb><rt>きょうだい</rt></ruby>すなわち準宣教師のことであり、「立ちかえり者」とはいったん宗門を<ruby><rb>転</rb><rt>ころ</rt></ruby>んで再び<ruby><rb>切支丹</rb><rt>キリシタン</rt></ruby>に帰った者のことである。</p>
+        <p>「だれだ。」歩いていた侍は寒そうに腕をこすりながらきいた。</p>
+        <p><persName ref="#yusa">裕佐</persName>は返事をしなかった。</p>
+        <p>「何者だ。」</p>
+        <p>「鋳物師だ。」</p>
+        <p>「鋳物師とはなんだ。」</p>
+        <p>「銅を鋳る工匠だ。」</p>
+        <p>「銅を鋳る？　そして何をつくる。」</p>
+        <p>「なんでも、<placeName ref="#fujisan">富士山</placeName>でも、君の首でもつくる。」<persName ref="#yusa">裕佐</persName>はちょっとからかいたい気持ちになった。</p>
+        <p>「貴様よく来るな。島へ行きたいのか。」</p>
+        <p>「ある女を見たいんだ。だけど行っちゃあげないよ。」</p>
+        <p>そして彼が去ろうとした時、目の前にあって手に取るようにみだらな高声の聞こえて来る<placeName ref="#oranda-yashiki">オランダ屋敷</placeName>の二階に女の叫び声が聞こえて、けたたましい足音と同時に大きな菊の<ruby><rb>鉢</rb><rt>はち</rt></ruby>が窓から落ちた。そして石に砕ける音がした。一時しんとした後、猫を抱いた<placeName ref="#nihon">日本</placeName>の女の小さい顔と、その上にのしかかった恐ろしく<ruby><rb>巨</rb><rt>おお</rt></ruby>きな毛むくじゃらの男の顔とが現われ、そして彼らは何かいがみ合いながら笑って、赤いカーテンをおろした。</p>
+      </div>
+      <div type="chapter" xml:id="sec04" n="4">
+        <head>三</head>
+        <p>「あなた、もしや――これではなくって？」</p>
+        <p>女はふっくらした人差し指で<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の上に十字を描いた。</p>
+        <p>「なんだ、それは。」男は目を<ruby><rb>円</rb><rt>まる</rt></ruby>くして女の顔を凝視した。</p>
+        <p>「これよ。」と女はまた書いた。「わかってらっしゃるくせに。」</p>
+        <p>「切支丹か？」</p>
+        <p>「しっ！　そんな大きな声で……」</p>
+        <p>女はあわてて制しながら<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を寄せて、あたりの気配をうかがってからまっすぐに彼の目を見て、うなずいた。</p>
+        <p>「僕が？　なぜ。」</p>
+        <p>「ただ、そんな気がしたのよ。そうじゃなくって？」</p>
+        <p>「そうじゃない。あれらからいえば、僕は異端邪宗の徒だ。」</p>
+        <p>「だれでもわるいことをしようとしてる時は神聖なもののことをいったり、考えたりしたくないもんよ。でなくちゃのん気に楽しめませんものね。」</p>
+        <p>「ところが僕はあいにくそんな神聖なものを信じちゃいないよ。」</p>
+        <p>「そうお。なぜ？」</p>
+        <p>女はまた彼の目をじっとほほえんで<ruby><rb>視入</rb><rt>みい</rt></ruby>りながら追及した。</p>
+        <p>「なぜったって僕は切支丹はきらいだからさ。」と男は声を低めもせずにいった。「やつらはやつらの仲間でない者は人間じゃないと思っていやがる。心の腐った者だと思っていやがる。ふむ、羊の皮をかぶったやつらの<ruby><rb>謙遜</rb><rt>けんそん</rt></ruby>ぶった<ruby><rb>傲慢</rb><rt>ごうまん</rt></ruby>さくらい<ruby><rb>胸</rb><rt>むな</rt></ruby>くそのわるいものはないよ。」</p>
+        <p>「それはまったくね。今時の信者ったらほんとうになってないわ。虫がよくって、不信実で、<ruby><rb>卑怯</rb><rt>ひきょう</rt></ruby>で、あとでおきまりの<ruby><rb>痛悔</rb><rt>こんちりさん</rt></ruby>の<ruby><rb>祷</rb><rt>がらつさ</rt></ruby>を唱えさえすればどんなひどい罪でもキレイにつぐなわれると思い込んでいるのですものね。始めからゆるされることを当てにして、<persName ref="#jesus">きりしと</persName>様のお像でもなんでも踏めといわれれば平気で踏むのですものね。あんなことで救われるもんなら、救われることくらいお安いことはありゃしませんわ。」</p>
+        <p>「そうでない者だってまだいるにはいるが。」と男はちょっと横を向いた。「とにかくお上というやつがあんまりめちゃないじめ方をしやがるから、みんながいじけて曲がっちゃったんだ。人間が<ruby><rb>堪</rb><rt>こら</rt></ruby>える力にも限りがあるからな。」</p>
+        <p>「それはそう。無理はないにはないわ。」と女はしめやかにいった。「人間はずるく<ruby><rb>悧巧</rb><rt>りこう</rt></ruby>にならないでは生きていられないのですものね。誠だの、正直だの、熱情だのなんて、そんなものは今時の人はみんな捨てちまわなくっちゃならないんですものね。――おお、だけど寒いわね。」</p>
+        <p>女は障子をキチンとしめに<ruby><rb>褄</rb><rt>つま</rt></ruby>を乱してたった。</p>
+        <p>「あら、花火」と彼女は縁の欄干に手を突いていった。「寂しい花火だこと。」そしてまた右を向き、「今晩は。おばかさん。」といって、手を振った。</p>
+        <p>「こちらへはいれよ。寒い。」と男は火鉢を抱いたまま動かずにいった。</p>
+        <p>「人に顔を見られるのがいやだから？　こそこそ泥棒さん。」と女は男の方を向いて白い歯を見せた。</p>
+        <p>「なんだかおぬしのお客はわしの知ってる<ruby><rb>仁</rb><rt>ひと</rt></ruby>のような気がするがな。へ、へ。」とあちらで男の声がした。その声を聞くと客はぞっとしたようにからだをふるわせた。「あなたのお連れのような人じゃなくってよ。もう少し取りえのある人らしいわ。見にいらっしゃい。」</p>
+        <p>こういいながら女は障子をピシンとしめてはいって来た。そして男の手を両手で取って「おお冷たい。」といいながら眉を寄せ、<ruby><rb>紅</rb><rt>あか</rt></ruby>い下くちびるをむいて見せた。</p>
+        <p><ruby><rb>二人</rb><rt>ふたり</rt></ruby>はしばしじっと顔を見合わせながらすわっていた。</p>
+        <p>「君こそ、あれだろう。」やがて男がいった。</p>
+        <p>「あたしが？　あれ？　へえ、これはおもしろい！　何か<ruby><rb>敵討</rb><rt>かたきう</rt></ruby>ちにいおうと思っていうことがないもんだからあんなことを。」</p>
+        <p>「かくしたってわかっているよ。少なくとも以前はそうだったろう。え？」</p>
+        <p>ぶっと女はふき出した。「あたしよくそういわれるのよ。あたし異人と会うおかげであの方のことはくわしいから。今日は<date when="--12-08"><ruby><rb>師走</rb><rt>しわす</rt></ruby>の、八日</date>だわね。ていうと、<persName ref="#johnev">さん・じゅわん・えわんぜりした</persName>様のご命日だわ。おおもうじき降誕祭が来るわね。それからお正月――あああ。――」</p>
+        <p>「そうだよ。君はあれだ。僕は探偵だから一目でわかる。」</p>
+        <p>「あははははは！」女は高笑いをした。</p>
+        <p>「信者がこんな商売をしていると思って？」</p>
+        <p>「なんだ。じゃ、君は、僕があれであることは<ruby><rb>金輪際</rb><rt>こんりんざい</rt></ruby>許されないことだと思うのかい。」</p>
+        <p>「さあ、許されないことはないでしょうよ。あなた<ruby><rb>善</rb><rt>い</rt></ruby>い人じゃありませんか。」</p>
+        <p>「ところが君にそんな商売をさせているのはだれだ。僕のような『善い人』じゃないか。」</p>
+        <p>「だって、どんな善い人だって魔がさすってことはあるわ。」</p>
+        <p>「じゃ、君は魔がさしたんだな。もとは熱心なあれだったのが。」</p>
+        <p>「よしてちょうだいよ！　あたしそんな女に見えて？　はばかりながらあたしこれでも一度そうとなったら死んだって<ruby><rb>転</rb><rt>ころ</rt></ruby>ぶような女じゃなくってよ。」</p>
+        <p>「そうかい。ところが僕はまた、不幸な境遇でいやな商売をしいられたためにあれでいられないような宗門なら、そんな宗門をのろってやるよ。」</p>
+        <p>「お志、ありがとう。ところがあたしはまたあたしのような堕落した女がそうやすやすはいることが許されるような宗門ならちっともありがたいとは思わないの。それどころか<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>してよ。あたしはあたしのようなものに堅く門を閉じて、決してうけ入れないようなきびしい宗門をこそあがめますわ。」と女は強くそういった。</p>
+        <p>「すると、『<persName ref="#magdalene">まりや・まつだれな</persName>』は救われてはならなかったのかね。」</p>
+        <p>「冗談じゃないわ！」と女はうつような手つきをしていった。「あの人は始めっから救われるような方だったんじゃありませんか。そしてほんとうに心の底から悔恨なすったんじゃないの！　だからどんなことをなすったにしろ、救われなすったのよ！　あたしなんぞ、始めっから泥沼の中で満足するように生まれていて、悔い改めたことなんぞ<ruby><rb>爪</rb><rt>つめ</rt></ruby>の<ruby><rb>垢</rb><rt>あか</rt></ruby>ほどだってありゃしない。大違いよ！　そんな比較をされちゃあたしは腹が立つわ。だからあたし、自分が救われようなんぞとは夢にも望んでいなくってよ。このままで<placeName ref="#jigoku">地獄</placeName>におちて行けばちょうど本望なんですもの。」</p>
+        <p>「そんなら、僕も<placeName ref="#jigoku">地獄</placeName>に行くさ！　喜んで、お前といっしょに！」</p>
+        <p>「へん。いらっしゃい。」</p>
+        <p>女は<ruby><rb>素</rb><rt>そ</rt></ruby>っ<ruby><rb>気</rb><rt>け</rt></ruby>ない調子で低くこういうと、<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめた顔に、かすかな小じわをよせて冷ややかに笑った。そして「まあごちそうのおそいこと。どうしたんだろう。」とひとり言をいって、ポンポンと手を打った。</p>
+        <p>「お前はおれを信じないのかね。おれの誠を。」やや気勢をくじかれた男は燃えるような哀れな目で女を見つめながらいった。そうしてこういう商売の女に向かって一番陳腐な愚劣なことをきいたもんだと気がついて、顔をあかくした。</p>
+        <p>「さあ。どうだか知らないけど、あなた若いようで<ruby><rb>齢</rb><rt>とし</rt></ruby>取っているのね。なんだかあなたが興奮しておっしゃることはおじいさんが若者の言葉をつかっているようだわ。どこか不自然な、<ruby><rb>虚偽</rb><rt>うそ</rt></ruby>なところがあるみたいだわ。」</p>
+        <p>「うそ。おれが。ふむ。そう思えるかね。」</p>
+        <p>男は一度あかくなったあとで<ruby><rb>苦々</rb><rt>にがにが</rt></ruby>しくこういって、ごろんと仰向けに横になった。そして女の心底を逆に読もうとするようにけわしく女の顔をにらみ見た。</p>
+        <p>「そう思えてよ。あたしにはもうあなたはわかった。」</p>
+        <p>先刻の熱し方にひきかえて、どこまでも女は冷然と答えた。「あなた、だれかあたしに似たいい人でもあるんじゃなくって？」</p>
+        <p>「え？――」男はギックリとして<ruby><rb>耳根</rb><rt>みみもと</rt></ruby>まであかくなった。</p>
+        <p>「ホラ？――あかくなった！　あかくなった！　あてられたでしょ？」</p>
+        <p>女は男とともにサッと上気したような顔をあかくして<ruby><rb>膝</rb><rt>ひざ</rt></ruby>をたたいた。そしてとげとげしく笑った。「サア、神妙に白状しておしまいなさい。あなたはどうせあたしの眼力をくらませはしないわ。あたしちっともおこりゃしなくってよ。ゆるしてあげるわ。どうせあたし、あなたにほれてるわけじゃないんだから。」</p>
+        <p>「ゆるしてくれ。だが……」と男はいった。「おれが君に対して不実だといえばそれこそうそだ。君が信じないのはあたりまえだが、君はもうおれにとっちゃアそんな借り着のもんじゃない。決して。」</p>
+        <p>「よくってよ。そんな苦しい弁解をしないでも。あなたまだ坊っちゃんね。」と女は笑った。「失恋した男の人はよくその恋人に似た<ruby><rb>似而非</rb><rt>えせ</rt></ruby>女をあさるものだわ。そしてその恋人の幻をその似而非女の<ruby><rb>形骸</rb><rt>けいがい</rt></ruby>でまやかしていることに自分で気がつかないんだわ。女こそいい<ruby><rb>面</rb><rt>つら</rt></ruby>の皮だわね。そのくせ厚かましく<ruby><rb>実</rb><rt>じつ</rt></ruby>があるなんぞと思わせようとするんですもの。自分を不実な男と思うのが自分でいやだもんだから！　だけどそれでいいのよ。今式でいいのよ。ねえ、その人はやっぱりあれ？」</p>
+        <p>「うむ。そういう家の娘だ。」</p>
+        <p>「まあ、かわいそうに。それであなたは断わられたのね。なぜそんな偏狭なことをするんでしょうね。あなたのようなかわいい人に、あたしにできることなら、一<ruby><rb>肌</rb><rt>はだ</rt></ruby>ぬいであげるんだのに。そんな顔するのはおよしなさいよ。あたしちっともあなたにいや味をいってるんじゃないわ。あたし、あなたがあたしなんぞに実があってくださることを冗談にも望んじゃいなくってよ。ほんとうに！　あなたの深い実は何かもっとほかの尊いものにささげられていりゃいいのよ。<placeName ref="#tengoku">天国</placeName>にあるその恋人の神聖な幻にでもね。こんな、<ruby><rb>漆喰</rb><rt>しっくい</rt></ruby>の人形のような女のむくろなんぞにささげられべき<ruby><rb>質</rb><rt>たち</rt></ruby>のものではないわ。あたしちゃんと知っててよ。そしてあなたもご自分でちゃんとそのことを知ってなさるのだわ。だからあなたのやさしい燃えるような言葉にはどこか<ruby><rb>空</rb><rt>うつ</rt></ruby>ろな響きがあるのはあたりまえすぎるわ。いくらあなたがそれをご自分では不満足でもね。」</p>
+        <p>そして女はたち上がり、沈んだらしく黙り込んでいる男のわきへ近づくと、<ruby><rb>長煙管</rb><rt>ながぎせる</rt></ruby>の煙をフッとその顔へ吐きかけた。</p>
+        <p>「あなた、おこった？」</p>
+        <p>男は飛び上がり、しびれるほどの力で女の手くびをぎゅっとつかんで引き寄せると、その白い濃厚なかおりのする胸にかむごとく<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>した。と、女の肌に<ruby><rb>頸</rb><rt>くび</rt></ruby>からつるしてあった細い<ruby><rb>黒檀</rb><rt>こくたん</rt></ruby>の<ruby><rb>珠数</rb><rt>じゅず</rt></ruby>とその先にぶら下がっている銅貨のようなものがちらりと見えた。</p>
+        <p>「や、なんだ。これや。メダイか！」</p>
+        <p>「<ruby><rb>念珠</rb><rt>コンタス</rt></ruby>よ！　それでも。」</p>
+        <p>ムキに男に抵抗してしゃにむに鎖を引きちぎられた時、女は投げ出すようにこういって男をにらんだ。それは古い南蛮渡りのコンタスであった。</p>
+        <p>「お前、こんなものを持っているのか。」</p>
+        <p>と男は夢中でそれを<ruby><rb>灯</rb><rt>あかり</rt></ruby>の下へ持って行きながらきいた。</p>
+      </div>
+      <div type="chapter" xml:id="sec05" n="5">
+        <head>四</head>
+        <p>「異人さんからもらったのよ。引っさらって来たのよ。」と女はいった。「<ruby><rb>一昨日</rb><rt>おととい</rt></ruby>の晩だったかしら。<placeName ref="#oranda-yashiki">オランダ屋敷</placeName>で。あそこにはそれはほしいものがうんとあってよ。あいつらは<ruby><rb>狒々</rb><rt>ひひ</rt></ruby>だから、あたしたちがほしいといえば<ruby><rb>垢</rb><rt>あか</rt></ruby>だらけの<ruby><rb>襦袢</rb><rt>じゅばん</rt></ruby>とだって、なんでも交換してくれるわ。この指輪だってそうよ。」女はこういって、<ruby><rb>琥珀</rb><rt>こはく</rt></ruby>と<ruby><rb>群青石</rb><rt>ぐんじょうせき</rt></ruby>の指輪を一つずつはめた両手を<ruby><rb>餉台</rb><rt>ちゃぶだい</rt></ruby>の上に並べて見せた。</p>
+        <p>「ほう。なんといういい<ruby><rb>色配</rb><rt>いろあい</rt></ruby>だ。肌の味だ。」男はもう女の言葉も耳にはいらぬらしくこういって、そのコンタスに見とれながらなんべんもそれをなでていた。</p>
+        <p>「あたしの肌のあぶらがついたからよ。」</p>
+        <p>「そしてこの彫り物もすてきだ。<persName ref="#mary">さんた・まるや</persName>かな。」</p>
+        <p>「<persName ref="#mary">びるぜん</persName>様ではないわ。<persName ref="#magdalene">まるや・まつだれな</persName>様だわ。」と女はいった。「あなた、『<persName ref="#mary">びるぜん</persName>』て横文字でどう書くか知ってる？　知らないでしょ？　ほほ、あたし、<ruby><rb>教</rb><rt>おそ</rt></ruby>わったから知っているわ。」</p>
+        <p>女は<ruby><rb>餉台</rb><rt>ちゃぶだい</rt></ruby>の上に飲みかけの茶をこぼし、その水を人さし指の先につけてあやしく Virginis と書いた。そして自分で怪しむらしく小くびをかしげかしげ終わりの is を消しては書き、消しては書きした。</p>
+        <p>「それ見ろ、お前はやっぱりあれにちがいないよ。まさに。どうしても。」</p>
+        <p>「そう。じゃ、勝手にそう思うがいいわ。あたし、そんなら大事にしておこう。あなたにあげるのよして。」</p>
+        <p><ruby><rb>不貞腐</rb><rt>ふてくさ</rt></ruby>ってこういいながら女はそっと男に近寄り、急にそのコンタスを引ったくった。そしてあわてて<ruby><rb>袂</rb><rt>たもと</rt></ruby>の中にそれをかくしながら「しっ！」と目で制してにらみ、何くわぬ顔ですました。</p>
+        <p>その時、<ruby><rb>襖</rb><rt>ふすま</rt></ruby>があき、酒と<ruby><rb>肴</rb><rt>さかな</rt></ruby>とが運ばれた。</p>
+        <p>「さあ、お前さんも。」と彼女はいった。「一つおあがり。口をあいて。口をよ。」</p>
+        <p>そうして彼女は<ruby><rb>杉箸</rb><rt>すぎばし</rt></ruby>を裂き、一切れの<ruby><rb>寿司</rb><rt>すし</rt></ruby>をつまむと、</p>
+        <p>「口をおあきってばさ！」と男がさし出した手のひらをぴしゃりとうっていった。男はいやしく笑いながらあんぐりと黒い口を開いた。</p>
+        <p>「ばかな、犬さん。さあ、お帰り。これはおあずけよ。」</p>
+        <p>彼女は大きな飯の<ruby><rb>塊</rb><rt>かたまり</rt></ruby>を無理に男の口に押し込み、そのぶざまに<ruby><rb>頬</rb><rt>ほお</rt></ruby>ばった口つきを見てあはあはと高く笑いながら、もう一片の<ruby><rb>海苔巻</rb><rt>のりま</rt></ruby>きをつまんでその男の手のひらの上へポイと投げた。</p>
+        <p>「ワンワン、これはどうも、えらいごちそうさま。ヘッヘッ。」</p>
+        <p>いやしくこう笑ってピシリと<ruby><rb>膝節</rb><rt>ひざぶし</rt></ruby>の音を立てながらたち上がった時、そのつるりとした男の顔は無気味なあか味をさしていた。そしてその細い目がこんなに大きく開くのかと驚かれるほど大きく目をむいてギョロリと女をにらむと、再び目を細くして声もなく口をいっぱいに開き、そして去った。</p>
+        <p>「あれは犬なのよ。ほんとうの犬なのよ。」と女はちょっとの間、気配をうかがったあとでいった。「お上から回されてこんなところにまで化けてはいりこんでいるのよ。」</p>
+        <p>「あれをかぎ出しにか。」</p>
+        <p>「ええ。だからあたし犬扱いにしてわざとお客の前で足の指をなめさせてやったりするわ。するとあの犬ほんとうになめてよ。」</p>
+        <p>「お前を恨んで、疑っちゃいないのか。」</p>
+        <p>「疑ってるでしょ、むろん。あたしはまたわざと<ruby><rb>疑</rb><rt>うたぐ</rt></ruby>らせてやるのよ。このコンタスだってこちらから見せてやったことがあるわ。あんまりしつこく<ruby><rb>神棚</rb><rt>かみだな</rt></ruby>の奥をのぞいたりなんかするから。」</p>
+        <p>「そんな無茶なことをしてつかまったらどうするんだ。」</p>
+        <p>「つかまったってたかが殺されるだけじゃないの。あたし、殺されることなんかこわかないから、あなたみたいに<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>じゃないわ。」</p>
+        <p>そして彼女はからかうようにちょっと男の顔を見、にこりと笑って酒を飲んだ。</p>
+        <p>「そりゃそうと、あなたは彫り物師さんね。じゃなかった、<ruby><rb>鋳物師</rb><rt>いものし</rt></ruby>さんね。」と彼女はつまんでぶら下げたコンタスをながめながらまた急に元気な調子でいい出した。「あなた、これほしい？　ほしけりゃあげるわ。その代わりあなた、これをお手本にして一つあたしを彫ってくれない？　きれいに。<ruby><rb>上手</rb><rt>じょうず</rt></ruby>に。え？　そしたらあたしこんなうれしいことないわ。このあたしが<persName ref="#mary">聖母</persName>様に似ようってわけだから！」</p>
+        <p>「なんのことだ。」</p>
+        <p>「まあわからないの？　あなたはあたしを造るつもりで実はあなたの胸の中に生きている恋人の像を造るのよ。そしてそれがあなたの胸の中の恋人に似れば似るほどそれはきっと<persName ref="#mary">まるや</persName>様のように<ruby><rb>神々</rb><rt>こうごう</rt></ruby>しく美しくなるんだわ。そしてそれがまたどこかあたしにも似るのよ！　ねえ？」</p>
+        <p>「よろしい！」男はうなるようにいった。「おれはそれを造るよ。きっと。それを見たらお前はおれがどんな人間か始めて少しわかるだろう！」</p>
+        <p>「ええ、どんな<ruby><rb>実</rb><rt>じつ</rt></ruby>のある人か、それを見たらね。あたしにではなくってよ。だけど、そうしたらあたし、あなたの奥さんになるわ。」</p>
+        <p>そうして女はまた男の目をにらみ、高らかに笑った。</p>
+        <p>通りを流す哀れなちゃるめらの音の中に秋の夜はふけて行った。</p>
+      </div>
+      <div type="chapter" xml:id="sec06" n="6">
+        <head>五</head>
+        <p>朝日の照り返しに目がチラチラとしみるような石だたみの道を、<persName ref="#yusa">裕佐</persName>はおのずと<ruby><rb>滅入</rb><rt>めい</rt></ruby>り込んで行く胸の暗さを抱いて<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>と自分の家の方へ歩いていた。おれは芸術家だ。坊主でもなければ切支丹でもない。だから自由でいいんだ、という意識と、本能的な<ruby><rb>苛責</rb><rt>かしゃく</rt></ruby>の念とが彼の頭の中で格闘していた。しかしそうして滅入りながらも彼はまだ酔っていた。むせ返るような前夜の幻に酔っていた。けわしくにらんでいるその奥で見る者の心をぎゅっと捕え、底知れぬ<ruby><rb>闇</rb><rt>やみ</rt></ruby>の世へ引っさらって行くような<ruby><rb>奇</rb><rt>く</rt></ruby>しくも甘い目つき。おどかすよりは、むしろそそのかすように八の字を寄せるその狭い額。その淡紅な薄いくちびる。むせ返るようなみずみずしい黒髪のあぶらと、化粧した<ruby><rb>肌</rb><rt>はだ</rt></ruby>のにおい、――その女が、さんざんいやがらせを毒づいたあとで「あなた、おこった？」といって、上から彼の顔に煙を吐きかけた時の<ruby><rb>笑顔</rb><rt>えがお</rt></ruby>。その顔が彼の脳裏に刻み込まれて離れなかった。</p>
+        <p>彼がその女、――名は<persName ref="#kimika"><ruby><rb>君香</rb><rt>きみか</rt></ruby></persName>といった――にあったのは昨夜が二度目であった。最初彼女が<placeName ref="#oranda-yashiki">オランダ屋敷</placeName>へおもむく列の中にいたのをちらと通りで見た時、彼は実に撃たれたように驚いたのであった。</p>
+        <p>「なんという世にもそっくりな似方であろう！」そして彼は自分の胸の<ruby><rb>動悸</rb><rt>どうき</rt></ruby>を自ら聞けるほどに喜んだのであった。「おれはあの女を買うことができる。そしてあの女によって恐らく、あの人に触れ得ぬもだえをまやかすことができる。」と第一に彼は思った。「そして同時におれの一方のかねての野望をも充分満たすことができる。おれはその口実を得た。」次に彼はこう思った。と、急に胸が押しつぶされるように苦しくなり出して、頭を振り、またうなだれ、そして<ruby><rb>自家</rb><rt>うち</rt></ruby>へ帰るとその夜っぴて不眠に悩みあかすのであった。</p>
+        <p>しかし夜が明けるやいなや、まっさおな顔をした彼は<ruby><rb>鼠</rb><rt>ねずみ</rt></ruby>色の沖から吹き来る浜風に身をふるわせながら<placeName ref="#dejima">出島</placeName>の渡しのわきにたたずみ、一舟一舟、七、八人ずつ組みになって<ruby><rb>蕭条</rb><rt>しょうじょう</rt></ruby>と戻り来る遊女の群れを充血した目で見守っているのであった。五番目の舟に<persName ref="#kimika">君香</persName>はそのやつれた小さい顔を茶色のおこそ<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>につつんで乗っていた。そして<ruby><rb>館</rb><rt>やかた</rt></ruby>の二階の窓に寝間着姿の半身を乗り出して、にやにやとぼんやり彼女らを見送っている二三の外人に向かってつばを吐き、「ばか。」といって、後ろ向きに腰をかけると、頭痛がするらしくその<ruby><rb>蒼</rb><rt>あお</rt></ruby>い米かみを押えていた。</p>
+        <p><persName ref="#yusa">裕佐</persName>は彼女の跡をつけた。そしてその<ruby><rb>妓楼</rb><rt>いえ</rt></ruby>を見届けると、<ruby><rb>自家</rb><rt>うち</rt></ruby>へ帰って<ruby><rb>午</rb><rt>ひる</rt></ruby>まで寝た。彼が<ruby><rb>妓楼</rb><rt>ぎろう</rt></ruby>というものに始めて上がったのはその夕であった。</p>
+        <p>彼は今も<persName ref="#kimika">君香</persName>の事をおもうと、その幻が、彼の久しい恋人であった信者の娘、<persName ref="#monica">モニカ</persName>の幻とごっちゃになり、一つになり、そして<persName ref="#monica">モニカ</persName>の幻は前者のそれの後ろにしだいに消えて行くような気がした。いな、後ろに消えて行くというよりは、それより高く、上に、暁の星のごとくうすれて行くごとく思われた。その二つの幻が混同することは彼にはまぎらしようのない苦痛な事実であった。彼が二年の間一すじに焦がれに焦がれ、その焦がれが崇拝になり、ついにそれが絶望と<ruby><rb>定</rb><rt>き</rt></ruby>まった時、しだいに熱情的な占有の欲望が静かなあきらめの祈りと変わり、宗教的あこがれと変じ、一方天高くはるかに仰ぎ見るごとき<ruby><rb>額</rb><rt>ぬか</rt></ruby>ずいた心でいながら、しかもその人が世にも不幸なはかない者に思われて、慈悲の目で、陰から見守ってやりたくなる。そのひめやかな宗教的記念。その記念ゆえに今までともかくも身のあやまちを免れて来られたのに。その記念に対する美しい欲望の実相は、実にこの遊女によってみたしたところのものであったのかと思わざるを得ないことは彼の心を止めどなく傷つけ、暗くせずにはおかなかった。それにもかかわらず、彼はその遊女のことをおもうと、幸福にみたされずにはいられないのであった。</p>
+        <p>「なんだかあなたの興奮しておっしゃることは不自然で、虚偽なところがあるみたいだわ。」とあいつはいったっけな。そして「自分を不実な男だと自分で思うのがいやなもんだから、しいて人に自分を<ruby><rb>実</rb><rt>じつ</rt></ruby>のある者と思わせようとする。厚かましくも。」ともいったっけな。彼はほほえみながらひとり<ruby><rb>語</rb><rt>ご</rt></ruby>った。「あいつはからかっているんじゃない。実際ほんとうのことをいったのだ。しかし見ていろ。その不実者が何をするか――おおそうだ！」と彼は何かに思い当たったごとく、ステッキを打ち振っていった。「おれは、あいつを身うけすることができるのだ。おれは身うけしてやるだろう！　きっと！　そうしておれは今の世間の<ruby><rb>小狐</rb><rt>こぎつね</rt></ruby>どもから遊女にうまうま釣られた、あの間抜けが。と笑われてみたい。それはおれからいっそう緊張した力を引き出すであろう、すてきだ！　あいつはおれをきらってはいないな。たしかにうぬぼれではない。」</p>
+        <p>彼はその時の幸福を想像して、おどり上がるほどの若々しい力を内に感じながら荒々しく<ruby><rb>自家</rb><rt>うち</rt></ruby>の<ruby><rb>格子戸</rb><rt>こうしど</rt></ruby>をあけた。一夜を<ruby><rb>妓楼</rb><rt>ぎろう</rt></ruby>に明かした彼は<ruby><rb>伯母</rb><rt>おば</rt></ruby>への手前、そういう場合にすぐそれと<ruby><rb>気取</rb><rt>けど</rt></ruby>られるような<ruby><rb>憔悴</rb><rt>しょうすい</rt></ruby>した後ろ暗いさまを見せまいとして、わざとこちらから伯母を圧倒するような態度に出ようとその瞬間に思ったのである。</p>
+        <p>「<ruby><rb>夜前</rb><rt>やぜん</rt></ruby>この<ruby><rb>御仁</rb><rt>おひと</rt></ruby>がお見えになってな。」伯母は不安な調子でいった。「お前になんぞご用があるといってじゃった。」</p>
+        <p>そして彼女は大きく切った<ruby><rb>檀紙</rb><rt>だんし</rt></ruby>に<persName ref="#ferreira"><ruby><rb>沢野忠庵</rb><rt>さわのちゅうあん</rt></ruby></persName>としたためた名札を渡しながら<persName ref="#yusa">裕佐</persName>の顔色をうかがった。</p>
+        <p>「<persName ref="#ferreira">沢野忠庵</persName>」と<persName ref="#yusa">裕佐</persName>はその名札を持って立ったまま、いぶかしげに首をひねった。「聞いたことのある名だが、どんな人ですね。」</p>
+        <p>「日本人じゃないのよ。異人さんでな。それもお前、まあ<ruby><rb>二目</rb><rt>ふため</rt></ruby>とは見られぬ恐ろしい顔のな。それがまた和服で、しかもお役人らしい羽織<ruby><rb>袴</rb><rt>はかま</rt></ruby>を着けてじゃ。」こういって伯母はため息をついた。</p>
+        <p>「そうですか。はは。」と<persName ref="#yusa">裕佐</persName>はなんだか笑いたくなって笑った。「なんとか<ruby><rb>言</rb><rt>こと</rt></ruby>づけていましたか。」</p>
+        <p>「また来るといってじゃった。――お前。」と伯母は声を低めていった。「あれは、ばてれんじゃなかろうか。」</p>
+        <p>「さあ。近ごろのばてれんと来たら非人にでも、おんぼうにでも平気で化けるから、あるいはそうかもしれないが。」<persName ref="#yusa">裕佐</persName>はもっともらしく<ruby><rb>頸</rb><rt>くび</rt></ruby>をかしげていった。「しかしそれにしても変ですね。僕に用があるなんて。ことによると<ruby><rb>天狗</rb><rt>てんぐ</rt></ruby>かな。」</p>
+        <p>天狗とは当時迷信家たちの間に悪魔とか、<placeName ref="#shina">シナ</placeName>でいう「鬼」とかいう意味に使われていた。</p>
+        <p>「そうよ！　ほんに！」伯母は思わず恐怖のまじめさをもっていった。「ああなんといういやなものが舞い込んだもんじゃろうか。あたしはもう恐ろしゅうて。恐ろしゅうて。あの仁がばてれんの化けた者じゃとしても、お上のお役人じゃとしても、どっちにしてもお前の身によいことはない気がするでな。ほんに天狗よ。」</p>
+        <p>「これをごらんなさい。何しろ僕はこんな物を持っているのですからね。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はそういいながら、ふところから例の<ruby><rb>念珠</rb><rt>コンタス</rt></ruby>を出して見せた。</p>
+        <p>「まあ、お前、それは！」</p>
+        <p>伯母は、内心恐れきっていたものを面と見せられたように目を<ruby><rb>円</rb><rt>まる</rt></ruby>くし、たまげたように<persName ref="#yusa">裕佐</persName>の顔とコンタスとを見比べたなり、小じわだらけの耳の根まであかくして、歯のない口をモグモグと動かした。</p>
+        <p>「は、は、は！」と<persName ref="#yusa">裕佐</persName>は大声で笑った。「僕は鋳物師ですからね。どんな物だって参考に入り用なのですよ。まあ、見てごらんなさい。おもしろいものでしょう。」</p>
+        <p>遊女<persName ref="#kimika">君香</persName>をいよいよ身うけする段になった時伯母が必ず、強制的に反対しないまでも、必ず喜ばないであろうことをおもうと、彼は今からちょっとこの伯母にいけずをしたくなるのだった。そして彼は恐ろしい<ruby><rb>疑惧</rb><rt>ぎく</rt></ruby>と、絶望の<ruby><rb>淵</rb><rt>ふち</rt></ruby>に沈んでいる伯母を残したなり、口笛を吹きながら自分の「道場」へと立ち去った。</p>
+        <p>「おお<ruby><rb>桑原</rb><rt>くわばら</rt></ruby>。あれは悪魔に見込まれたのじゃ。切支丹じゃ。そしてあたしもそれでつかまってともに殺されるんじゃ。」</p>
+        <p>彼は伯母があとでこうつぶやいて身も世もあらず<ruby><rb>滅入</rb><rt>めい</rt></ruby>り込んでいるさまを想像して、心から気の毒に思いながらも、おかしくなってひとり笑っていた。そして例のコンタスに幾度も<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>しつづけながら、<ruby><rb>室</rb><rt>へや</rt></ruby>の中を歩き回っていた。</p>
+      </div>
+      <div type="chapter" xml:id="sec07" n="7">
+        <head>六</head>
+        <p><persName ref="#yusa">裕佐</persName>はその日の日暮れ近くまで客を待っていた。しかしだれも来なかった。で、彼は先刻から<ruby><rb>選</rb><rt>よ</rt></ruby>りそろえておいた七、八冊のさし絵入りの漢書――それは皆彼の父が<ruby><rb>丹精</rb><rt>たんせい</rt></ruby>して手に入れたものであった――を<ruby><rb>風呂敷</rb><rt>ふろしき</rt></ruby>に包み、また、彼の父が始めて南蛮<ruby><rb>鋳物</rb><rt>いもの</rt></ruby>の術を習いに幕府から<placeName ref="#europe">ヨーロッパ</placeName>へ派遣させられた時のみやげである小さい浮き彫りの鋳物をふところに入れると包みを<ruby><rb>抱</rb><rt>かか</rt></ruby>えてふらりと表へ出た。</p>
+        <p>古書と古道具の一切を売買する<placeName ref="#douzamachi">銅座町</placeName>のある店で彼はその漢書を売り、またその浮き彫りを見せた。それは「<ruby><rb>大天使</rb><rt>アルカンジョ</rt></ruby><persName ref="#michael">みける</persName>」が竜とたたかっている黙示録の中の一図で、むろんキリスト教に関係のある物ではあるが、直接<persName ref="#jesus">ヤソ</persName>の生涯を題材にしたものではないので、単なる異国の美術品として、門外漢に見せてもすぐさま<ruby><rb>疑</rb><rt>うたぐ</rt></ruby>られるおそれのある品ではなかった。</p>
+        <p>「結構なもんですなア。なんですか、これも譲っていただけましょうか。」</p>
+        <p><ruby><rb>狡猾</rb><rt>こうかつ</rt></ruby>そうな主人はよだれを流さんばかりの表情を隠し得ずにこういいながら彼の顔色をうかがった。</p>
+        <p>「いや、それは売るんじゃないんです。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は思わずこう答えた。彼はそれを売るつもりで持って来たのであったが、それを主人に見せると同時に急に惜しくなったばかりでなく、なぜかそれは自分にとって売ってはならぬ意味のある物のようににわかに思われてきたのであった。そうしてそう答えたのにホッと安心した一息をもらして、漢書の金を受け取ると、またその鋳物をふところにして<ruby><rb>愴惶</rb><rt>そうこう</rt></ruby>と店を出た。</p>
+        <p>「これでおれはまた、二度や三度はあの女にあう事ができるのだ。確実に。」</p>
+        <p>こう思うと彼はもう胸がぞくぞくとおどるように身をふるわせた。そして興奮した足どりで、北風に逆らいながら坂道を上って行った時、</p>
+        <p>「<persName ref="#yusa">萩原</persName>さん」と後ろから思いがけない声がした。</p>
+        <p>彼は振り返った。そして<ruby><rb>一人</rb><rt>ひとり</rt></ruby>の青年が小走りに彼を追って来るのを見た。</p>
+        <p>「<persName ref="#kichisaburo"><ruby><rb>藤田</rb><rt>ふじた</rt></ruby></persName>君？」</p>
+        <p>と<persName ref="#yusa">裕佐</persName>はいった。そしてサッと顔をあからめながらも何か思いがけぬ喜びに出あったように、にこにこして逆戻りにそちらへ近づいて行った。</p>
+        <p>「しばらく。どうもあなたじゃないかと思った。」</p>
+        <p>と青年は寒気の中を急いだためにその健康な色の<ruby><rb>頬</rb><rt>ほほ</rt></ruby>をなおりんごのように<ruby><rb>紅</rb><rt>あか</rt></ruby>くし、汗ばんだその額を一ぬぐいして、息を吐きながらいった。</p>
+        <p>「ほんとうにしばらく。すっかりごぶさたしてしまって。」<persName ref="#yusa">裕佐</persName>は少しもじもじしていった。「皆さん、お変わりないの。」</p>
+        <p>そうして彼は頬をあかくした。「皆さん」という言葉がすぐある人をさしての意味にこの青年に取られることをおもいながら、しかもその意味に取ってもらいたいために。「え、ありがとう。皆丈夫です。」と青年は何か工合わるげに下を向いて答えた。「こちらこそごぶさたしています。」と口ごもるようにいったあとで、「これからどちらへ？」ときいた。</p>
+        <p>「別にどちらへというわけでも――」</p>
+        <p>「そう。じゃ、よかったら少しいっしょに歩きませんか。久しぶりに……」</p>
+        <p>美しい青年はそのぱっちりした大きな黒いひとみに、弟の兄に対するような親しみをこめて<persName ref="#yusa">裕佐</persName>の顔をのぞいた。彼は一つの包みを持ち、<ruby><rb>紺飛白</rb><rt>かすり</rt></ruby>の着物に羽織も着ず、<ruby><rb>足袋</rb><rt>たび</rt></ruby>もはかずに、ヒビの切れた足にほお<ruby><rb>歯</rb><rt>ば</rt></ruby>の<ruby><rb>下駄</rb><rt>げた</rt></ruby>をはいていた。</p>
+        <p>「え、歩きましょう。」と<persName ref="#yusa">裕佐</persName>はいった。「どこへ行ったんです？」</p>
+        <p>「何、ちょっと町へ。売り物があって――」</p>
+        <p>「売り物？」</p>
+        <p>「ええ、」青年は少しはずかしそうにいった。「造花を売りに。」</p>
+        <p>「造花、造り花をですか。」</p>
+        <p>「ええ、ちょっと必要があって。」そして彼は包みの中から一つの白ゆりの造花を出して見せた。「こんな<ruby><rb>無細工</rb><rt>ぶざいく</rt></ruby>なものだからどうせ少ししか売れやしませんが。」</p>
+        <p>「君が造ったんですか。」</p>
+        <p>「いいえ、みんなで造ったんです。僕の母や姉や近所の人たちで。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はうつむいて、黙り込んだ。</p>
+        <p>「このごろでは始終造花を売っておられるんですか。」彼は<ruby><rb>突拍子</rb><rt>とっぴょうし</rt></ruby>もなくこんなことをきいた。</p>
+        <p>「いいえ。――今日だけです。今夜は――」と青年は声を低めて「<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>ですから。」</p>
+        <p>「<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>。――今夜がですか。」</p>
+        <p>「ほんとうは今夜ではありません。明後日です。」彼はあたりを見ながらいった。「――けれどもほんとうの当日には<ruby><rb>詮索</rb><rt>せんさく</rt></ruby>がきびしいからかりに今夜ひそかな<ruby><rb>御祝祭</rb><rt>おいわい</rt></ruby>をするんです――よかったら来てごらんなさいませんか。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はあかくなった。偶然にも<persName ref="#kichisaburo">吉三郎</persName>というこの青年も自分もともに町へ売り物に行き、そしてともに若干の金をふところにしている。「しかし自分のは女を買わんがための金であり、<persName ref="#kichisaburo">吉三郎</persName>のは聖なる人の誕生を祝し、それを記念せんためのひめやかな集まりを飾ろうとしての<ruby><rb>金子</rb><rt>きんす</rt></ruby>である。むろんおれには切支丹とならない立派な理由があるのだ。そしておれがあの女を『買う』というのも、それにはいやでも応でも金銭が必要とされる不快な事情からで、決していわゆる<ruby><rb>遊蕩</rb><rt>ゆうとう</rt></ruby>ではない。なんで恥じるにあたるものか。」少しでもまじめな心あるすべての遊蕩者が初めに必ずするごとく彼は心の中にこう弁解した。</p>
+        <p>しかしそうは思いつつも彼はこの青年と並んで歩きながらなんとなく自分を汚れたものに感じないわけにはゆかなかった。<persName ref="#kichisaburo">吉三郎</persName>は自分より三つしか<ruby><rb>齢下</rb><rt>としした</rt></ruby>ではない。しかもいつまでも童顔の失われぬ、あふるる日光のうちにのびのびと育つ若木のようなそのまっすぐな善良さ。顔の明るさ、星のごとく澄んでみじんも濁りの見えぬ子供のそれのようなきれいなひとみ。そのみずみずしい健康なからだの全体に現われているふっくらとしたやわらかみ。それらはこの世の意地わるを知らず、皮肉を知らず、<ruby><rb>淫欲</rb><rt>いんよく</rt></ruby>の<ruby><rb>妄想</rb><rt>もうぞう</rt></ruby>に苦しめられる不眠の夜な夜なを知らぬ者のごとき顔である。単純な信仰者にのみ見られる平和の顔である。その人と今並んで歩く自分の顔のいかに不健全に病人のごとく<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめ、<ruby><rb>頽廃</rb><rt>たいはい</rt></ruby>して見えることであろう。彼は自分のぞべぞべした絹の着物と青年の粗末な着物の対照からも、ついこう意識せずにはいられなかった。</p>
+        <p>「こいつは単純なんだ。羊や<ruby><rb>兎</rb><rt>うさぎ</rt></ruby>のように。しかしその単純がなんだ。」</p>
+        <p>彼はこう思ってのん気に<persName ref="#kichisaburo">吉三郎</persName>を子供扱いしようと思いながらも、どこかに引け目を感じずにはいられないのが自分で不快であった。「よかったら来てごらんなさいませんか。」と<persName ref="#kichisaburo">吉三郎</persName>にいわれて、「いや、僕はある遊女の所に行かなければなりませんから。」とはいえるものではない。</p>
+        <p>「僕がですか？」<persName ref="#yusa">裕佐</persName>は口を切った。「しかし僕は信者ではありませんからね。」</p>
+        <p>「かまやしません。来てくださればうれしいのです。」と青年はいった。「もっとも万一のことがあってはご迷惑ですから、無理におすすめもしませんが。」</p>
+        <p>「発覚ですか？　そんなことは平気ですが。――あなたのお家で僕が行ってはご迷惑でしょう。」こういって<persName ref="#yusa">裕佐</persName>は自分の言葉の<ruby><rb>刺</rb><rt>とげ</rt></ruby>に顔をあかくした。</p>
+        <p>「そんなことあるもんですか。」と青年は苦しそうに打ち消した。「それに僕の家でやるんではないです。わきでやるんです。おそく夜中に。」</p>
+        <p>「しかしいずれあなたのお家の方もいらっしゃるんでしょう。」</p>
+        <p>「ええ。父は病気で来られませんが、母と姉とは行きます。あなたがいらっしゃれば姉は喜ぶでしょう。」</p>
+        <p>この一言を聞くと<persName ref="#yusa">裕佐</persName>は耳の根までをサッと赤くした。彼はさわってもらいたくない、そのくせまったくさわられなかったらまた不満である傷口にさわられたのである。それは<ruby><rb>永</rb><rt>なが</rt></ruby>い涙の忍従と苦い苦い血とによってようよう皮をかぶせたばかりの深い<ruby><rb>傷手</rb><rt>いたで</rt></ruby>であった。しかも再び皮を引きはがされた傷口からは、皮のできる前よりはさらに<ruby><rb>治</rb><rt>なお</rt></ruby>しがたいほどの痛みをもってだくだくと血が流れ出さずにはいなかった。彼はほえたい口を封じられたように全身をふるわせた。</p>
+        <p>「よしましょう。――お気の毒だから。あなたの方にも僕自身にも。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は青年の同情ある慰め<ruby><rb>言</rb><rt>ごと</rt></ruby>にかえって立腹したかのように、顔を火のごとくほてらせて<ruby><rb>苦々</rb><rt>にがにが</rt></ruby>しくこういった。</p>
+        <p><persName ref="#kichisaburo">吉三郎</persName>は苦しそうに口をつぐんだ。</p>
+        <p>「あなたはご自分を切支丹と認めないだけのために、何かこうご自分のうちの宗教的な性質をまで否認しようとしていらっしゃるんじゃないでしょうか。」<ruby><rb>褐紫色</rb><rt>かっししょく</rt></ruby>の桜のわくら<ruby><rb>葉</rb><rt>ば</rt></ruby>を下駄の歯でかき寄せながら<persName ref="#kichisaburo">吉三郎</persName>は口を切った。「そうしてしいてその方の門をご自分でとざそうとしていらっしゃるんじゃないでしょうか。いったい良心の鋭い、理性的な人に限ってそうなる傾きがあるのはまったくなげかわしいばかばかしいことだと思いますね。」青年はつづけた。「僕にいわせると、そういう人たちは皆あまりにキリスト教にとらわれているのです。なぜといえば今時ほんとうに良心と理性との目ざめた精神的要求の豊かな人が、自分を無良心だと思わずに、その門にまったく<ruby><rb>無頓着</rb><rt>むとんちゃく</rt></ruby>であることは不可能なことだからです。もっとも中には自分が信者になれないのは発覚して殺されることがこわいからだと人から思われたり、自分でも思うことが業腹なので、ただ自分のむなしい勇気を示したいだけのために洗礼をうけたりしたものもありますが、そういうばかばかしい『潔さ』に負けないだけの強さとひがみを持った人はまた無理に悪魔主義になって、その尊い生命を持ちくずし、やけに棒に振ってしまったりするのです。――あなたが苦しまれたことは私はよく知っていますよ。」</p>
+        <p>「まったくもし芸術がなかったなら僕は破滅したでしょう。」<persName ref="#yusa">裕佐</persName>はさえぎった。「――しかし今では僕はまるでちがった考えを持っています。僕が異端なのは決して自暴自棄からではありません。ただ天性そう生まれついているからなのです。僕は悪魔主義者でもなければ神主義者でもない。いわば一種の自然主義者です。そしてそのことにすこしも良心の<ruby><rb>苛責</rb><rt>かしゃく</rt></ruby>を感じてはいません。実際のところ僕はもう宗教には冷淡です。僕は信仰の素質があろうとなかろうと、それを君がきめることは勝手ですが、僕にはどっちでもいいことなのですよ。」</p>
+        <p>「そうです。結局どっちでもいいという放任した気持ちにまでならなくてはだめです。それは自暴自棄に似ていて、およそ反対なものです。つまり御心のままにならせたまえという一番<ruby><rb>敬虔</rb><rt>けいけん</rt></ruby>な気持ちと同じわけですからね。」</p>
+        <p>「ふむ。その意味とはちがうのですが。」<persName ref="#yusa">裕佐</persName>は冷ややかに苦笑した。「しかし君の親切な厚意から出る故意の誤解を僕は拒もうとは思いません。僕の方からいわせれば、君こそ単に<persName ref="#jesus">キリスト</persName>のお<ruby><rb>弟子</rb><rt>でし</rt></ruby>としてのみ一生をおわることは惜しい気がするのですが。しかし僕は、君が自由思想家になることを君に勧めようとも思いません。それは人間として<ruby><rb>僭越</rb><rt>せんえつ</rt></ruby>なことですからね。だから君も僕をこのままに打っちゃっといてくれたまえ。」</p>
+        <p>彼はその「人間として僭越」という言葉に皮肉な力を入れていった。</p>
+        <p>「そうです。人は要するにめいめいその課せられた道によって神に近づくよりないのですからね。」青年はあきらめたようにさびしそうにいった。「ただ僕は今<placeName ref="#nihon">日本</placeName>で<persName ref="#jesus">キリスト</persName>の<ruby><rb>像</rb><rt>ビルド</rt></ruby>を真に生けるがごとく写すことのできる人がいるとしたら、それはあなただけということを知っています。お世辞ではありません。だから僕は安心してあなたを信じていますよ。」</p>
+        <p>「ふむ。恐縮ですね。」と<persName ref="#yusa">裕佐</persName>はいった。「ともかくそのゆりの花を一つ買わせてもらいたいものですね。いけませんか。」</p>
+        <p>「どうぞ買ってください。――しかしちょっとここで休んで行きましょうか。」</p>
+        <p>「ここでもいいが、あの神社の中はどうですか。あそこにはもう少しキレイな茶店があります。」</p>
+        <p>「神社仏閣は僕らに少し鬼門なのですよ。ただの参拝者のようなふうをしてそれとなく礼拝しない者を探りに来ているお役人がよくいますからね。」</p>
+        <p>「うるさい狂犬たちですね。じゃまあここにしましょう。」</p>
+        <p>そして<ruby><rb>二人</rb><rt>ふたり</rt></ruby>はある見晴らしの縁台に腰をかけた。</p>
+      </div>
+      <div type="chapter" xml:id="sec08" n="8">
+        <head>七</head>
+        <p>眼下に一目に見渡される町々の家にはもう明りがついていた。</p>
+        <p>「きれいですね。なんというたくさんの明りでしょう。あれを一々みんな人がつけているのですね。」青年はまじめにこういった。</p>
+        <p>「天には星が光り、地上には人が明りをつける。僕はここでよく夕方この<ruby><rb>景色</rb><rt>けしき</rt></ruby>に見とれてしまいます。人が明りをつけるということは実際神秘な感じのものですね。ただ<ruby><rb>闇</rb><rt>くら</rt></ruby>くなると明りをつけるという以外に、深い意味を持っています。なんだか涙ぐみたいような、かわいいような、ありがたいような感じではありませんか。」</p>
+        <p>「ほんとうに、いかにも地上らしいいい感じですね。」<persName ref="#yusa">裕佐</persName>もこういった。</p>
+        <p>「地上らしい、実際です。だから愛さずにはいられません。祈りたい心にならずにはいられません。同じ明りでもあの星のいやに落ちついた冷ややかな無限の明りとの感じの違いをごらんなさい。なんというはかない、いじらしい感じでしょう。<ruby><rb>泡</rb><rt>あわ</rt></ruby>のように生じてはすぐ消えて行くこのはかない人間というもののいかにもつけそうな明りではありませんか。人間はほんとうにかわいそうなものですね。」</p>
+        <p>そんなことをいわれると<persName ref="#yusa">裕佐</persName>は泣きながら笑いたいような気持ちにもなるのだった。この青年の姉に失恋した彼は幾度ここへ来てぼんやり腰をおろし、深いため息をついては、こみあげて来るその涙を羽織の裏に隠したことか知れなかった。</p>
+        <p>「僕もここへはよく来たものですよ。」</p>
+        <p>「そうですかね。――僕はここへ来てこの景色を見るといつもなんだか<ruby><rb>悲愴</rb><rt>ひそう</rt></ruby>な厳粛な気持ちになって祝福したい心にみたされるんですよ。この町は実に苦しんだのですからね。恐らくこれほど精神的に苦しんだ土地は<placeName ref="#nihon">日本</placeName>国じゅうほかにはないでしょう。そして今でもなおです。変な言い草のようですが、僕はこの町その物がなんだかかわいそうで仕方がないのです。」そういって青年はちょっと黙ったが、「あの<placeName ref="#tateyama">立山</placeName>を見ると僕は実際<placeName ref="#golgotha">ゴルゴタ</placeName>の<placeName ref="#golgotha">カルバル山</placeName>を見るような敬虔な気持ちになって、心が引きしまらずにはいられません。僕らもいずれはあすこへ引っぱられて行く時が来るのでしょうが。――」</p>
+        <p>右手に半ば<placeName ref="#suwayama"><ruby><rb>諏訪</rb><rt>すわ</rt></ruby>山</placeName>にかくれて<ruby><rb>兀鷹</rb><rt>はげたか</rt></ruby>の頭のように見えるまっ黒な丘をさしてこうつぶやくと、うつむきながらそこへ寄ってきた<ruby><rb>野良犬</rb><rt>のらいぬ</rt></ruby>の背をなでていた。</p>
+        <p><persName ref="#yusa">裕佐</persName>は言葉もなく黙っていた。そして魔物を見るようにその黒い丘をちらりと見るとからだをふるわせた。</p>
+        <p>彼は昔その丘に一度は<ruby><rb>伯父</rb><rt>おじ</rt></ruby>に連れられ、一度は母に連れられて、切支丹の虐殺を見に行ったことがあった。</p>
+        <p>八つの時伯父に抱きあげられて黒山のような人の<ruby><rb>垣</rb><rt>かき</rt></ruby>の頭越しにその刑場を見た時、十幾本かの十字架を遠巻きにいぶし立てているその<ruby><rb>薪</rb><rt>まき</rt></ruby>の火がその十字架に燃えうつり、燃えうつった火に肉にくい込むほどくくりつけてある<ruby><rb>荒縄</rb><rt>あらなわ</rt></ruby>がぷつりぷつりと切れて、自分と同じくらいの小さい子がその十字架から落ちて倒れ、煙の中を小走りに走って、隣の十字架に素裸のままで縛りつけられて、くちびるをかみ、目をきっと天に向けているその母親のところに駆け寄って、泣き叫びながらその胸にひしと抱きついた――それをちらりと見た時、彼は泣きも得ずただ足をばたばたもがき、なお終わりまでそれを見つづけようとする伯父の頭髪をめったやたらにむしった。伯父は上気して顔をまっかにし、彼がグッといって一時息がつけなかったほど荒々しく地べたにほうりなげ、そして周囲の人を見ながら「うるさいやつじゃ！」とどなってとげとげしく笑った。ほうり出された彼はころげながら伯父の足を力いっぱいピシャピシャとうった。そして腹の底からの<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>と<ruby><rb>憎悪</rb><rt>ぞうお</rt></ruby>とをもって伯父をにらみつけながら「帰ろうよ！　帰ろうよ！」と火のごとく叫んできかなかった。</p>
+        <p>「この弱虫めが！　だから来るなといったに！」伯父はこういってにくにくしげに少年をにらみながらも彼を引きつれて帰った。</p>
+        <p>少年は生長し、武士道によって教育された。「気が弱い」「<ruby><rb>意気地</rb><rt>いくじ</rt></ruby>なし」ということは彼にはこの上ない恥辱に思われて来た。彼はまた熱心な忠君愛国主義者になった。そして<placeName ref="#nihon">日本</placeName>の国土をねらう<ruby><rb>夷狄</rb><rt>いてき</rt></ruby>の悪魔につかれた者、国賊が虐殺されることは当然な正しい制裁だと考えるようになった。彼は十字架を作ってはそれをぶちこわす遊戯に快感を感じ、切支丹と指をさされる者には石をぶっつけた。そして、彼が十六の秋、ちょうど父が外国へ行って留守であったので、無理にいやがる母の手を引いてまた虐殺を見に行った。</p>
+        <p>その時の虐殺ぶりは、彼らがそこへの途中脳貧血を起こして頭をかかえながら戻り来る何人かに行きあったほどまたいっそう残虐をきわめたものであった。しかしそれはなお彼の病的な好奇心を<ruby><rb>戦慄</rb><rt>せんりつ</rt></ruby>させ、刺激した。「<ruby><rb>今日</rb><rt>きょう</rt></ruby>こそは見てやるぞ。参ってはやるまい。」彼は心の中で幾度もこう自分を励ました。</p>
+        <p>もうもうと煙が立ちのぼっている刑場に近づくと、火葬場の煙のごとき異臭が風に送られて来る。掃き清められた広い刑場の奥手には白衣を着た女たちがずらりと髪の毛を木の<ruby><rb>釘</rb><rt>くぎ</rt></ruby>にくくりつけられたままだらんとぶらさげられている。彼らはからだの重みのはなはだしい苦痛のために閉じた目がつるし上がり、顔は<ruby><rb>蒼</rb><rt>あお</rt></ruby>い土色をし、そしてその引きつった髪の<ruby><rb>毛根</rb><rt>ねもと</rt></ruby>からは血がしたたっている。中には自分の重みの上になおその子供を帯にくくりつけ、たれ下げられている。そしてそれを遠巻きに<ruby><rb>焚木</rb><rt>たきぎ</rt></ruby>の煙がじりじりといぶしている。</p>
+        <p>彼らと向き合いにその夫と、父と、兄弟と、外人のばてれんたちとが並んですわらせられている。ある者は竹の<ruby><rb>鋸</rb><rt>のこぎり</rt></ruby>で少しずつ徐々とそのさし延べた背くびをひかれている。ばてれんの前にはまた<ruby><rb>釜</rb><rt>かま</rt></ruby>が置かれ、ぐらぐら煮つめられているその<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>の毒気は、すべてその男の口に当たるように鼻はふさがれている。男はむせることも、<ruby><rb>咳</rb><rt>せき</rt></ruby>することもできず、<ruby><rb>苦悶</rb><rt>くもん</rt></ruby>したまま顔は見る見るまっ黄色になり、どす黒い土色になり、そしてカサカサになった皮膚がはげ落ちて行くように見える。</p>
+        <p>すべてそれらは拷問である。刑者にとって<ruby><rb>殺戮</rb><rt>さつりく</rt></ruby>は欲するところではない。被刑者がもしその苦痛に<ruby><rb>堪</rb><rt>た</rt></ruby>えず宗門を「<ruby><rb>転</rb><rt>ころ</rt></ruby>ぶ」と一言いうならば彼らはすぐその場に刑をとかれるのである。しかし、信徒の強情が不退転であればあるだけ拷問の残虐は工夫を進めたのである。しかもいかなる死苦の中にも彼らは「舌をかみ切って自ら死ぬるような創造者に対する罪」は許されていないのである。</p>
+        <p>「<persName ref="#jesus">ゼズス</persName>・<persName ref="#mary">マリヤ</persName>！　<persName ref="#jesus">ゼズス</persName>・<persName ref="#mary">マリヤ</persName>！」</p>
+        <p>「キリエ・レンゾ！　キリエ・レンゾ！」</p>
+        <p>「アベ・<persName ref="#mary">マリア</persName>・アーメン・<persName ref="#deus">デウス</persName>！」</p>
+        <p>女たちは無理にむき開いた目で天を仰ぎながら唱えた。</p>
+        <p>「<placeName ref="#tengoku">パライゾ</placeName>は確かだ。光栄な<ruby><rb>一時</rb><rt>いっとき</rt></ruby>を忍べ！」</p>
+        <p>「身を殺して霊を殺すことのできぬ者をおそれるな。アーメン！」</p>
+        <p>信者たちはあるいは自らを、あるいは他を励ましてこう叫んだ。そして拷問の中に一人一人その地上の生命を「神の御手に<ruby><rb>還</rb><rt>かえ</rt></ruby>して」行った。</p>
+        <p><persName ref="#yusa">裕佐</persName>は、しかしその<ruby><rb>鋸</rb><rt>のこぎり</rt></ruby>びきを見たわけではなかった。役人がその大きな竹の鋸を持って現われた時、彼はもうすでにひどい脳貧血を起こしていた。彼はそれでも幾度か空を見たり、霜枯れの草を見たり、またそっぽの丘の樹木や家に目を向けて心をまぎらし、気を確かに持とうと努めた。「国賊だ。いい気味なんだ。」彼はまたしいてこうつぶやいても見た。そして事実みずみずしい女の肉体に対する残酷な<ruby><rb>苛</rb><rt>さいな</rt></ruby>み方は彼の性欲に異様な苦しい挑発を促していたのであった。彼はそのことに驚きはじながらも一方その残忍な肉感――それは決して快感ではない――を自ら誇張し、<ruby><rb>煽動</rb><rt>せんどう</rt></ruby>しようと努力していた。しかしある女の腰ひもにその<ruby><rb>肥</rb><rt>ふと</rt></ruby>った<ruby><rb>乳呑児</rb><rt>ちのみご</rt></ruby>があばれながらくくりつけられるのを見た時、彼はついにわれを忘れて叫び、そして後ろにいる男に倒れかかったことを自ら知らなかった。――そして彼は家へ帰っても寝かされていた。</p>
+        <p>その時以来彼は<ruby><rb>陰鬱</rb><rt>いんうつ</rt></ruby>な「黙りん坊」と呼ばれる青年になった。</p>
+        <p>彼は人間の精神というものの力を<ruby><rb>眼</rb><rt>ま</rt></ruby>のあたり見た。人間の思想、信仰、救われようとする願望、それのいかにおそるべく強く、動かしがたいものであるかを見た。人が肉体によって生きているのでなく、実に魂によって生きているものであること、精神は生死よりも強いものであることを現実に見た。肉体としては到底<ruby><rb>堪</rb><rt>た</rt></ruby>えられようはずのないことを、人は精神のゆえに敢然と堪えるのみでなく、かえってそれを望み、喜んでうけるのである。「精神一到何事か成らざらん」ということを彼は小さい時から聞かされもし、信じてもいた。しかしそれがかくまで実際におそるべきものであるとは彼は決して想像もできなかったのであった。――彼はほんとうにそれまで知らずにいたある世界の前に驚き、打ちのめされたのであった。――そしてそのことは彼に勇気と深い悲しみとを与えた。</p>
+        <p>かくまで人をおそるべく強きものにする力ある宗門には何か自分のまったく知らないある非常な物があるにちがいないと彼は疑い出した。人々が「国賊」と呼ぶ「彼ら」が事実それにちがいないとしても、それだからといって憎み排斥しきることのできぬ何かしら尊い威力を彼らの中に彼は感じないわけには行かなくなった。いったいそのような不純な野心からあれほどの決心と威力とが<ruby><rb>出</rb><rt>い</rt></ruby>でうるものであろうか？　どちらが正しいのか？　それはともかくとしても彼はなんだかその「彼ら」に好意と一種の尊敬を感じないではいられなくなった。そして自分がいかにも空虚なつまらぬ者に思われて来た。</p>
+        <p>しかし一方彼はまたそこに他の疑念をも<ruby><rb>抱</rb><rt>いだ</rt></ruby>かざるを得なかった。なぜあれほどまでの残虐を忍んでも宗門を<ruby><rb>転</rb><rt>ころ</rt></ruby>んではならないのか。人間の魂が救われるということのためにはそれほどの肉体の犠牲がどうしても必要なのであろうか。天地はもっと<ruby><rb>悠々</rb><rt>ゆうゆう</rt></ruby>としたものである。その天地の中に人間が生かされているところにはもっと自由と、ゆるしとがあっていいわけである気がする。そうでないとすれば人間にその犠牲にすべき肉体をわざわざ与えた者はあまりに無慈悲である。「一方が不正なためだ。キリスト教が残酷なのではない。」と彼は考えた。しかしそう考えてもなんだか<persName ref="#jesus">キリスト</persName>は厳酷にすぎる人のように思われた。その宗門はあまりに窮屈な、<ruby><rb>苛酷</rb><rt>かこく</rt></ruby>なものに思われた。この世にはもっとこの世に調和した自由な宗教があっていいわけではないのか――。そんな気がした。</p>
+        <p>彼は生長し、キリスト教に対する自分の誤解をさとり、そして良心が苦しんでいた時、この青年の姉に恋をした。</p>
+        <p>「あなたは<persName ref="#deus">天主</persName>様とその子の<persName ref="#jesus">きりしと</persName>様をお信じなさるか。」</p>
+        <p>と恋人の父はきいた。</p>
+        <p>「信じません。――まだ。」</p>
+        <p>「それでは……」と父は宣言した。「不信徒の方との婚約は許されていませんから。」</p>
+        <p>そして彼は失恋した。</p>
+        <p>彼は失恋し、そして芸術を得た。「以テ二<persName ref="#gigeiten">技芸天</persName>ヲ一為ス二我ガ妻ト一」彼は自分の室の<ruby><rb>襖</rb><rt>ふすま</rt></ruby>にこう太く書いた。</p>
+      </div>
+      <div type="chapter" xml:id="sec09" n="9">
+        <head>八</head>
+        <p>「ここにも高札がたっていますね。あれを見て平気ですか。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はこの切支丹とのひそひそ話をだれかに見られて疑われはしないかと、つい何度もあたりを見回しては心にはじるのであった。それゆえ彼は石段の上り口に突っ立てられている禁制の高札を<ruby><rb>指</rb><rt>さ</rt></ruby>してわざとこうきいた。</p>
+        <p>「平気ですよ。もう慣れていますから。」</p>
+        <p>と青年はほほえんで答えた。そして彼の意を察したものか、「しかしおそくなりましたね。僕はもう帰らなくってはなりませんが。」</p>
+        <p>こういって彼はつと立ち上がると改めて注意深く周囲を見回した。</p>
+        <p>「実は先刻あなたをお招きしてみたのは、今夜は少し特別なわけがあるからなんです。あなたにも一度見せたい人がいるのです。」</p>
+        <p>「僕に見せたい人ですって。」</p>
+        <p>「ええ。ある長老です。八年ぶりで<placeName ref="#amakusa"><ruby><rb>天草</rb><rt>あまくさ</rt></ruby></placeName>から脱走して来られたんです。それは立派な人ですよ。」</p>
+        <p>「もしかしたら行くかもしれませんが。――いつ、どこでですか。」</p>
+        <p>青年は彼の耳にあることをささやき、そして去った。</p>
+        <p>「だれが行くものか。」<persName ref="#yusa">裕佐</persName>はその後ろ姿を見送りながら暗い心につぶやいた。彼は青年の自分に対する熱い厚意と同情に感じないではいられなかった。<persName ref="#kichisaburo">吉三郎</persName>はたしかに彼の失恋に同情して、彼が自暴自棄に陥ることをおそれ、しいて彼に希望を持たせようとして、彼としては珍しくいろいろな「慰め<ruby><rb>言</rb><rt>ごと</rt></ruby>」をいったのであることも<persName ref="#yusa">裕佐</persName>にはわかっていた。しかし<persName ref="#yusa">裕佐</persName>が何よりも彼から聞くことを求めているただ一つのこと、「私の姉はあなたを愛しています。そしてあなた方の結婚を私はきっとまとめるでしょう。」そのことを青年はいわなかったのである。その一言が聞けない以上、青年の千百の慰め<ruby><rb>言</rb><rt>ごと</rt></ruby>や、勇気づけの感想は、彼にとってただに<ruby><rb>煩</rb><rt>わずら</rt></ruby>わしいむだ口であるにとどまらず、さらに彼の忘れかけている傷口を新しくかき破るだけのことである。</p>
+        <p>「善良なる簡単坊主。長老がおれにとってなんだ。」</p>
+        <p>彼はその愛する青年のことをこういって、ゆりの花をたたき捨てようとして捨て得ず、手のひらに握りつぶし、そして歩きだした。</p>
+        <p>「忘れよう！　が、あすこへ行きゃいいんだ。」</p>
+        <p>彼は頭を打ち振りながらこうつぶやいて石段の降り口の方に向かった時、後ろから青年と行き違いに来る男の声を聞いた。</p>
+        <p>「なんでもな、男には皆『ノ』の字が付くんじゃ。ジワンノ。カラノ。ミギリノ。などというふうにな。女子じゃったらジワンナ。カラナ。イザベリナ。というように『ナ』が付くんじゃ。」</p>
+        <p>それは聞いたことのある声だった。<persName ref="#yusa">裕佐</persName>ははっとして、思わず立ち止まった。その瞬間その男は<persName ref="#yusa">裕佐</persName>に追いつきながら、</p>
+        <p>「おや、<persName ref="#yusa">萩原</persName>じゃないか。」と声をかけた。</p>
+        <p>「そうだ。<persName ref="#yusa">萩原</persName>だ。君は……」</p>
+        <p>「わしじゃ。わからんかね。<persName ref="#magoshiro"><ruby><rb>富井</rb><rt>とみい</rt></ruby></persName>じゃよ。」</p>
+        <p>「わかってるくせに、とぼけるな」というように男はいった。そして<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>を取った。</p>
+        <p>「わしは今な、おぬしの家へ行ったのじゃよ。おぬしは近ごろ毎日のように家を明かすといって伯母さんはこぼしてじゃったぜ。」<persName ref="#magoshiro">孫四郎</persName>は歯の抜けた口を開いて声もなく笑いながらいった。「ご心配なさるな。あの仁は堅いでと、わしはいって来たじゃ。はっは。」</p>
+        <p>「だが変なところであったな。どこへ。今ごろ。」</p>
+        <p><persName ref="#magoshiro">孫四郎</persName>はまたこういいながら、<persName ref="#yusa">裕佐</persName>の身なりをわざとらしくじろじろとみつめて付け足した。「どうしたね。えろう<ruby><rb>伊達</rb><rt>だて</rt></ruby>ななりをしてござるじゃないか。わしのところへ見える時とは別人のなりじゃ。」</p>
+        <p>そして彼はまた意味ありげに前の方を<ruby><rb>頤</rb><rt>あご</rt></ruby>でしゃくって見せた。その<ruby><rb>小路</rb><rt>こうじ</rt></ruby>を行けば<placeName ref="#maruyama">丸山</placeName>へ出るということを<ruby><rb>諷</rb><rt>ふう</rt></ruby>するように。</p>
+        <p>「<placeName ref="#maruyama">丸山</placeName>へ行くのさ。」と<persName ref="#yusa">裕佐</persName>はいった。「僕が<placeName ref="#maruyama">丸山</placeName>へ行くということが君はそんなに興味があるのかね。」</p>
+        <p>「そうさね、清廉高潔な君子然たる仁がびくびくものでこっそり悪所通いをやっているところを見つけちまうなぞは、とかく人のおもしろがるこっちゃてな。へ、へ、さもしいもんで。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は一言もいわず、すぐその場でこの男と別れようかと思った。<persName ref="#magoshiro">孫四郎</persName>が自分を偽善者と思い、うそつきと思っていることは彼にはわかりすぎていた。しかし<persName ref="#magoshiro">孫四郎</persName>の前で、まただれの前でも「おれは遊ばない。女にふれたことはない」とは彼は一度もいったことはないのである。「おれは遊ばない」ときれいに口をぬぐって陰でこっそり遊ぶのは偽善であろう。しかし、恥を知らぬ自堕落な連中が、どこまでもただ道楽を道楽として<ruby><rb>臆面</rb><rt>おくめん</rt></ruby>もなく下等にばか話を<ruby><rb>吹聴</rb><rt>ふいちょう</rt></ruby>し合っている時、<ruby><rb>一人</rb><rt>ひとり</rt></ruby>沈黙を守るのは<ruby><rb>偽瞞</rb><rt>ぎまん</rt></ruby>でもなければ<ruby><rb>衒</rb><rt>ぶ</rt></ruby>ることでもない。<ruby><rb>懺悔</rb><rt>ざんげ</rt></ruby>や告白はひそかに自分の神の前においてのみ神妙になすべきことであって、人前で、ことに<persName ref="#magoshiro">孫四郎</persName>ごとき者の前で軽々しく<ruby><rb>喋々</rb><rt>ちょうちょう</rt></ruby>すべき事柄ではない。少なくとも打ち明けるべき場合に打ちあけるべき相手になら自分は決して<ruby><rb>陰日向</rb><rt>かげひなた</rt></ruby>を好む男ではない。――と<persName ref="#yusa">裕佐</persName>は思っていた。その心持ちがみじんもわからずに「こんな何食わぬ顔をしていて……」と簡単にこそこそ者ときめている<persName ref="#magoshiro">孫四郎</persName>の心事が彼にはこの上もなく不愉快だったのである。「そりゃそうと、わしは今ちょっとそのことでおぬしを<ruby><rb>訪</rb><rt>たず</rt></ruby>ねたのだがな。」と<persName ref="#magoshiro">孫四郎</persName>は急にわざとらしく調子を改めていい出した。「おぬしのところに先夜<persName ref="#ferreira">沢野</persName>という仁が行きゃせなんだか。」</p>
+        <p>「<persName ref="#ferreira">沢野</persName>。ああ、来たそうだけれど、おれはあわなんだ。」</p>
+        <p>「そうか。おぬしあの仁知らんかな、もと<persName ref="#ferreira">キリシトファ・フェレラ</persName>といっていた<placeName ref="#tengoku">天国</placeName>の門番さんじゃが。」</p>
+        <p>「そうして今では<placeName ref="#jigoku">地獄</placeName>の番犬になり下がった男じゃないか。」</p>
+        <p>「はは。まあそんなところかもしれぬ。あの踏み絵を発明したのはあの男じゃからな。」</p>
+        <p>「あの発明も最初はえらいきき目のあったもんじゃが。」と連れの男がいった。「もうこのごろじゃ信者たちは皆こすうなりおったで。なかなかあんなことくらいじゃ手におえんて。」</p>
+        <p>「いや、それでもな、まんざら役に立たぬでもないさ。何せ、今までんのは紙じゃからな。おおぜいが踏んで踏んづけて、<ruby><rb>汚</rb><rt>きた</rt></ruby>ないボロボロになっちまうと、もう<persName ref="#jesus">ゼズス</persName>も<persName ref="#mary">マルヤ</persName>もあったもんじゃないわ。何が<ruby><rb>画</rb><rt>か</rt></ruby>いてあるか、てんでわかりゃせんのだから。それを踏んだかてそうひどく気がとがめもせんのじゃ。ただの<ruby><rb>反古紙</rb><rt>ほごがみ</rt></ruby>を踏むと思えばな。」</p>
+        <p>「ほんとうにえらい発明だ。」<persName ref="#yusa">裕佐</persName>はいった。「そしてそのえらい発明家を僕に紹介してくれたのは君なんだね。」</p>
+        <p>「まあ紹介というわけでもないが、何せそういうわけで、今までの紙の踏み絵じゃ一向役に立たぬで、何か彫り物で、いつまでもそのありがたいお像がはっきり残るような物を作る工人はなかろうかとあの男がわしのところへたずねに来たもんじゃ。」</p>
+        <p>「それで僕に思い当たってくれたわけか。」</p>
+        <p>「そうじゃ。わしの知っている彫り物師はほかにもあるが、そこが親友の間がらじゃ。へへ。おぬしの専門は南蛮鋳物じゃが、金物なら木彫りよりはなお<ruby><rb>磨滅</rb><rt>まめつ</rt></ruby>するうれいもなしな。わしがそういって話すとあの<ruby><rb>唐人</rb><rt>とうじん</rt></ruby>先生、<placeName ref="#nihon">日本</placeName>にそういう鋳物師があるとは知らなんだ、鋳物でできるならもとよりそれに越したことはないという大喜びさ。どうじゃ。一つやって見んかね。もうけもんじゃぜ。」</p>
+        <p>「ふむ。そしてそれを君や世間の<ruby><rb>有象</rb><rt>うぞう</rt></ruby>無象に踏んづけさせてくれようというんだね。――ありがとう。まあ、ご免こうむろうよ。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はそういって、<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>もせずふいに横道へ曲がった。</p>
+        <p>しかし<ruby><rb>一人</rb><rt>ひとり</rt></ruby>になるがいなや、どうしてこんな乱暴な別れ方をしたのかと彼は悔やむのであった。なぜか彼は、つねづね厚意を持っていた<persName ref="#magoshiro">孫四郎</persName>の細君の姿をふと考えた。そして彼ら夫婦の仲と、寂しい愛とを思った時急に哀れな気がして来た。もし自分の憤りが単にひねくれた邪推にすぎなかったとしたらほんとうに気の毒なことをした、あまりに<ruby><rb>大人気</rb><rt>おとなげ</rt></ruby>なかったと思った。しかし彼はなお憤りをしずめることはできなかった。「そんなことはない。あいつはそのくらいのいたずらをしたがるやつだ。もうあいつとはいよいよ絶交だ。」彼はしいて自分にこういいながら<ruby><rb>蒼</rb><rt>あお</rt></ruby>い顔をして<ruby><rb>妓楼</rb><rt>ぎろう</rt></ruby>ののれんをくぐった。</p>
+      </div>
+      <div type="chapter" xml:id="sec10" n="10">
+        <head>九</head>
+        <p>女はすぐ出ては来なかった。物悲しいほどの寂しさに<ruby><rb>滅入</rb><rt>めい</rt></ruby>っていた<persName ref="#yusa">裕佐</persName>は、しかしその女の<ruby><rb>室</rb><rt>へや</rt></ruby>にはいって、見慣れたいろいろのものを見ると、しだいに心持ちが甘く明るく変わって行くのであった。彼はごろんと<ruby><rb>肱枕</rb><rt>ひじまくら</rt></ruby>をつき、何げなく欄間の額を見ていた。だれが書いたものか南画風な淡彩で、白髪なシナ人とあから顔の遊女とが「枕引き」をして遊んでいる図である。絵は<ruby><rb>飄逸</rb><rt>ひょういつ</rt></ruby>をねらってやや俗になっているが、<ruby><rb>下手</rb><rt>へた</rt></ruby>ではない。それに「木まくらの<ruby><rb>角</rb><rt>かど</rt></ruby>は<placeName ref="#maruyama">丸山</placeName>たおやめに心ひかるるみつうちの髪」という狂歌の<ruby><rb>讃</rb><rt>さん</rt></ruby>がしてある。</p>
+        <p>「のん気なやつだな。」彼は思った。しかし今の彼にはそれが少しもいやではなく、かえってそんなものを見ていることでくさくさした気持ちがのんびりと柔らげられて行くことが快かった。</p>
+        <p>しかしそのとたん、突然<ruby><rb>襖</rb><rt>ふすま</rt></ruby>があき、いつにもまして<ruby><rb>絢爛</rb><rt>けんらん</rt></ruby>な装いをした<persName ref="#kimika"><ruby><rb>君香</rb><rt>きみか</rt></ruby></persName>がはいって来るがいなや、</p>
+        <p>「あなたおしらべよ。」</p>
+        <p>と低く鋭くいった。</p>
+        <p><persName ref="#yusa">裕佐</persName>はちょっとぎくりとした。先刻変に大胆な心持ちで<persName ref="#magoshiro">孫四郎</persName>の連れの前でいろいろなことを口走った事をおもい出したのであった。しかし彼は横になったまま自分の前に生き人形のごとく突っ立っている女をながめながらいった。「なんだ。冗談だろう。」</p>
+        <p>「うそだと思うならこれをごらんなさいよ！」と女は真剣にいった。「あなたを<ruby><rb>探訪</rb><rt>たず</rt></ruby>ねて来たのよ。」そして彼女は<ruby><rb>奉行所</rb><rt>ぶぎょうしょ</rt></ruby>の役人だけが持っている大きな名札を見せた。</p>
+        <p>「はは。驚かしやがるな、犬め。」それを見ると<persName ref="#yusa">裕佐</persName>は笑った。「だがどうしてやつ、おれがここにいることをかぎつけやがったのかな。」</p>
+        <p>「それが犬だからよ。」と女はやや安心したらしくいった。「あなたこの犬を知ってるの？」</p>
+        <p>「いや、まだあったことはない。」</p>
+        <p>「あなた、大変な者と関係ができちゃったのね。これはあなた、あの仲間から<persName ref="#judas">ユダ</persName>といわれている<ruby><rb>転</rb><rt>ころ</rt></ruby>びばてれんだわ。――それともあたしをしらべに来たのかしら。」</p>
+        <p>「そうかもしれぬ。とにかくあってやるからここへ通せよ。」</p>
+        <p>「あたしのことだったら平気よ。ああきっとそうよ。<ruby><rb>自楼</rb><rt>うち</rt></ruby>の犬が犬同士密告したんだわ。ほっほ。おもしろい！　あたし、からかってやろう。」そして女は<ruby><rb>裾</rb><rt>すそ</rt></ruby>をけってたって行った。</p>
+        <p>再び襖があき、二人の男がはいって来た。一人は七尺の<ruby><rb>鴨居</rb><rt>かもい</rt></ruby>を頭を下げてくぐるほどの大男の異国人であり、一人はずんぐりとしたその供の下役であった。大男は不器用に和服の羽織<ruby><rb>袴</rb><rt>はかま</rt></ruby>をはき、あたりを圧するほどの<ruby><rb>悠揚</rb><rt>ゆうよう</rt></ruby>さでギゴチなくそこにすわると軽く頭を下げた。</p>
+        <p>「ご遊興のお邪魔をしてすみません。」と下役は礼をしながらいかつい調子でいった。「この<persName ref="#ferreira">沢野</persName>さんは日本語にはもうカナリ<ruby><rb>堪能</rb><rt>たんのう</rt></ruby>なんですが、しかし万一の不便があってはというんで、私がいくぶん通訳の意味でお伴に上がったわけです。」</p>
+        <p>「先夜は宅へおいでくだすったそうで失礼しました。」<persName ref="#yusa">裕佐</persName>は赤面しながらも落ちついていった。彼は自分がこういう場所へ来ている時、それをねらってわざわざ冷やかしのように<ruby><rb>訪</rb><rt>たず</rt></ruby>ねて来るこの役人の心に不愉快を感じていた。しかしそういう反抗的な気持ちでこの男にあうがいなや、彼の気持ちはぐらりと変わって、落ちついている以上にこの異国人に対してなんとなく一種の<ruby><rb>不愍</rb><rt>ふびん</rt></ruby>さを直覚的に感じたのであった。</p>
+        <p>実際この巨大な異国人の感じは一種異様な驚くべきものであった。室にはいって来るところを一目見た時、彼は<ruby><rb>癩病人</rb><rt>らいびょうにん</rt></ruby>にあったごとくハッとして、思わず顔をそむけたほど無気味であった。<ruby><rb>頬</rb><rt>ほほ</rt></ruby>のこけた<ruby><rb>蒼白</rb><rt>そうはく</rt></ruby>の顔の上部、両の<ruby><rb>鬢</rb><rt>びん</rt></ruby>と額とは<ruby><rb>大火傷</rb><rt>おおやけど</rt></ruby>のあとのごとくあか黒く光って、ひっつれている。そして<ruby><rb>眉間</rb><rt>みけん</rt></ruby>と、左右の米かみのところに焼け<ruby><rb>火箸</rb><rt>ひばし</rt></ruby>で突いたほどの<ruby><rb>孔</rb><rt>あな</rt></ruby>のあとが残っているのである。それが何を語るものか<persName ref="#yusa">裕佐</persName>にはたちまちさとられるのであった。</p>
+        <p>切支丹の拷問に「囚徒」を<ruby><rb>逆吊</rb><rt>さかづ</rt></ruby>りにして、その頭の<ruby><rb>鬱血</rb><rt>うっけつ</rt></ruby>と、胸を<ruby><rb>臓腑</rb><rt>ぞうふ</rt></ruby>が圧迫することのために、口からはもとより、ついには目と鼻とからまで出血して、たいてい七、八時間の「早さ」で往生するのを防ぐために、眉間と米かみとに小さい穴をほがし、そこから鬱血をしたたらすことによって死を長びかす仕方のあることを彼は聞いていた。このばてれんの<persName ref="#ferreira">フェレラ</persName>はかつてその拷問には堪えたのである。しかしさらにいっそう残酷な拷問、――<placeName ref="#unzendake"><ruby><rb>温泉嶽</rb><rt>うんぜんがたけ</rt></ruby></placeName>の沸騰する熱湯の中に逆吊りに浸された時、彼はついに夢中で転宗を叫んだのであった。転宗を一度叫んだ以上彼はもう「<placeName ref="#tengoku">天国</placeName>とは縁が切れた」のである。しかもなおそのきびしい監視と、堪えがたい迫害とはつづくのである。かくて彼は思い切って自己に対する<ruby><rb>自棄</rb><rt>やけ</rt></ruby>な反逆から、奉行に身を売り、切支丹さがしの犬となり、踏み絵の法を案出して、奉行の歓心を得ようとした。「どうせ<placeName ref="#tengoku">天国</placeName>に<ruby><rb>叛</rb><rt>そむ</rt></ruby>いたうえは<placeName ref="#jigoku">地獄</placeName>の鬼となれ。」彼はそういう捨て<ruby><rb>鉢</rb><rt>ばち</rt></ruby>な気持ちになったのであった。</p>
+        <p>「<persName ref="#magoshiro">富井</persName>さんからもうお聞きになったかもしれませんが……」</p>
+        <p><persName ref="#ferreira">フェレラ</persName>はその<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>の灰のような色をした<ruby><rb>頤</rb><rt>あご</rt></ruby>ひげを逆になで上げながら横を向いてこうボツボツいった。「あなたに一つお頼みしたいことがありまして。」</p>
+        <p>人の顔をジロジロとぬすみ見はするが、決してまともには見ず、人に顔を見られることを臆したようなふうで口ごもるごとく丁寧な言葉をつかうこの男のさまを見ると、たとえそれがこの男の「手」かと疑っても<persName ref="#yusa">裕佐</persName>は苦しいほど気の毒になるのだった。</p>
+        <p>「ええ、わかっています。聞きました。」<persName ref="#yusa">裕佐</persName>は急いでいった。「踏み絵のことでしょう。」</p>
+        <p>「そうです。そのことです。」<persName ref="#ferreira">フェレラ</persName>は始めてほほえみを見せていった。「お願いできますでしょうか。」</p>
+        <p>その時<persName ref="#kimika">君香</persName>が自分で茶を持ってそこへはいって来た。そして二人を見て、「いらっしゃい。今晩は。」と、にっこりほほえみながらいって茶を<ruby><rb>注</rb><rt>つ</rt></ruby>いだ。</p>
+        <p>「実は少し急がれていますんで……」と下役が口を切った。「というのは、ご存じのとおり、踏み絵のしらべは毎年<date when="--01">正月の末</date>に行なわれることに<ruby><rb>定</rb><rt>き</rt></ruby>まっているんで、なるべくならば来年のそれに間に合わせたいと思うんです。それであなたがもし幸いにそれを承諾してくださるとすると、一刻も早くお願いしておく方がいいと考えたんで、実はこんなお席へまでお邪魔をしたくはなかったんですが――」</p>
+        <p>「へえ。そう？」<persName ref="#kimika">君香</persName>は茶化したような調子で横からいい出した。「だけど、どうしてこの人があたしのお客だってことがあなた方におわかりになったんですの？　この人はまだそりゃこそこそ坊っちゃんであたしのところへなんぞ忍んで来ることを、どんな親友にだって打ちあけられる人じゃないんですのにね。」</p>
+        <p>「私たちは今そこで偶然<persName ref="#magoshiro">富井</persName>さんに行きあったのです。そしてずいぶんそこらの<ruby><rb>楼</rb><rt>うち</rt></ruby>を<ruby><rb>訪</rb><rt>たず</rt></ruby>ねたのです。」と<persName ref="#ferreira">フェレラ</persName>はいった。</p>
+        <p>「<persName ref="#magoshiro">富井</persName>さん？　ああ、あのいやなやつ。」と女はいった。そして<persName ref="#ferreira">フェレラ</persName>の顔をじっと見入りながらつづけた。「異人さん。あなた、いいお声ね。説教でもなすったらさぞよく通るでしょうね。だけど――あなた、ずいぶん苦労なすったでしょ？　一通りならない苦労をなすったでしょ？　今でもまだあなたのお顔にはちゃんとそう書いてあるわ。いいえあたし、苦労人が好きなんです。のん気人はきらいよ。」</p>
+        <p>「ふむ。そう見えるはずです。この顔ですから。」と<persName ref="#ferreira">フェレラ</persName>は冷やかされたと取ったらしく苦笑した。</p>
+        <p>「私こわいでしょう。」</p>
+        <p>「ええ、子供は泣くでしょうね。ほほ、だけどおよそこわいのとは反対よ。あなた、昔はさぞ立派だったでしょうね。ほんとにどんなに立派だったでしょう。今だってあなたがそこにすわっていらっしゃると、なんだかほかの人たちが貧弱で、見すぼらしくって気の毒なようですわ。だけど、」と<persName ref="#kimika">君香</persName>は小くびをかしげた。「あなたのお顔には何か肝心なもの――なんといったらいいかしら――まあ命の水気――光といったようなものがすっかり<ruby><rb>失</rb><rt>う</rt></ruby>せてしまったわね。その立派なお鼻から両方の口もとへかけての深いしわなんぞは昔はなかったもんにちがいないわ。きっとあとでできたものだわ。そうでしょう？　あたしこれでも人の心を見抜くことは名人なのよ。だけどただ一人、どうしても気心の知れない人があるの。それはこの人！」彼女はこういって<persName ref="#yusa">裕佐</persName>を指さした。</p>
+        <p>「ふむ。」<persName ref="#yusa">裕佐</persName>は赤面し<ruby><rb>苦々</rb><rt>にがにが</rt></ruby>しくこういって横を向いた。</p>
+        <p>「ふむ、ですってさ。困って。あの口端をちょっと引っ<ruby><rb>吊</rb><rt>つ</rt></ruby>ったところを見てくださいよ。『ふむ』くらいで人をごまかそうたってごまかされるようなあたしじゃないわ。あたしこういうずるい人はきらい。」</p>
+        <p>そうして彼女はその<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を上げ、下目をつかうようにして<ruby><rb>頤</rb><rt>あご</rt></ruby>を出した。</p>
+        <p>「<persName ref="#ferreira">沢野</persName>さん、これから時々あたしのところに来てくださらない？　おいや？　もうあなた、自由なんでしょ？　こんな<ruby><rb>街</rb><rt>まち</rt></ruby>をうろついていて、<persName ref="#magoshiro">富井</persName>さんにあうくらいなんだから。あたしあなたのさびしい気の引けたようなところを見ると、なんだかお気の毒で涙ぐみそうになってよ。あなたまたからだがばかに<ruby><rb>巨</rb><rt>おお</rt></ruby>きいからなおその寂しさが目につくんですわ。ちょうど不幸な人の住んでいる家が大きくて立派であればあるほど哀れな感じが深いようなもんだわ。あなたがいくら威張ってすごい目つきをして歩いたってだめよ。後ろから見るとまるで死刑囚のようよ。どうしてでしょう。あなたは今までなめて来た苦しみだけでも尊敬されていい資格があるのにね。だけど、そうね。あたしが占うところによると――」彼女は顔を横にねせて下から見るようにしていった。「あなたはきっと終わりのよくない方だわね。ともかく病気じゃ死なない方だわね。」</p>
+        <p>「殺されますか。」異国人はのん気らしく苦笑した。</p>
+        <p>「殺されやしないわ。もう殺されるはずないじゃありませんか。けど、自分でね――」彼女はだらんと下がるまねをした。</p>
+        <p>「そう思いますか。」</p>
+        <p><persName ref="#ferreira">フェレラ</persName>はその蒼白な頬に異様なあか味をさし、濁った目に無気味な光をたたえて女を見た。</p>
+        <p>「おお美しい顔！」と女は思わずいった。「あらもう消えちまった。暗い空の中にひらめく<ruby><rb>稲妻</rb><rt>いなずま</rt></ruby>のようだったわ。」そして彼女は立ち上がりながらやや乱れている<ruby><rb>褄</rb><rt>つま</rt></ruby>をそろえた。「あたし、今のあなたの顔にほれちまったわ。ほんとに。夢の中で見たことのある<ruby><rb>悪魔</rb><rt>ルシヘル</rt></ruby>の顔にどこか似ているわ。それよりも弱々しかったけれど。あなたほんとうに来てちょうだいね。あたし全身の愛で夢中にかわいそうがることのできる人に飢えているんですの。あたし自分が愛されようなんて気はもうまるでみじんもなくなってよ。だけどあたし心からかわいそうだという気にならなくっちゃほんとうに愛することはできないんですもの。だからこういう――」と<persName ref="#yusa">裕佐</persName>を<ruby><rb>指</rb><rt>さ</rt></ruby>しながら「おとなしそうでいて<ruby><rb>心底</rb><rt>しんそこ</rt></ruby>の骨の強い人にはあたし決してほれることはできないの。この人はこんな人のよさそうな顔していて、<ruby><rb>心</rb><rt>しん</rt></ruby>はそれは氷のようにきついんですからね。ほほ、どうもおやかましゅう。」</p>
+        <p>そして女は去った。</p>
+        <p>「どうでしょう。今の話は。」</p>
+        <p>間の抜けたような沈黙を破って、下役は目で笑いながらこういった。</p>
+        <p>「せっかくですが――たぶんお断わりすることになるでしょう。」</p>
+        <p>むっつりしていた<persName ref="#yusa">裕佐</persName>は下役の冷やかすような顔をぽかんと見ていたあとで、思い出したようにこういった。</p>
+        <p>「どうしてですか。」</p>
+        <p>「第一に材料が今の僕の気持ちにまるで向かないからです。それに自分の作物を人の<ruby><rb>下駄</rb><rt>げた</rt></ruby>にする気にもなれませんからね。」</p>
+        <p>「下駄。はは、しかし鋳物でしたら、同じ物がいくつも作れるんじゃないですか。だからその中のいくつかは踏み絵につかわれても他の別のを残しておけるでしょう。」</p>
+        <p>「しかしいくつ作ったところでどれも自分の子であることに変わりはありませんよ。それにまたたとえ作りたい気があったにしたところで、僕にはろくなものを造れる自信もないのですよ。」</p>
+        <p>「何も作品としてそう非常な傑作でなくともいいのです。ただほんとうの信者がいくら自分をごまかそうと思ってもつい気がとがめてそれを踏みにくくなるだけの一種の神聖さ、――信者にとっての犯しがたい威厳といったようなものがそこに現われてさえいればよいので、その程度に作っていただければお礼は奉行から相当に差し上げられることになっているのです。」</p>
+        <p>「私たちは。」と<persName ref="#ferreira">フェレラ</persName>がいった。「むやみに人を疑ってばかりいる役人のように思われていますが、そしてまた信者たちからはそう思われるのが当然ですが、あなた方にまでそんな疑いのなぞをかける者では決してないのです。その点は安心してください。」</p>
+        <p>「考えてはみましょう。しかし作る気がしないものはなんとも仕方がありませんからね。」</p>
+        <p>役人たちは十中の九まであきらめることになって帰って行った。</p>
+      </div>
+      <div type="chapter" xml:id="sec11" n="11">
+        <head>一〇</head>
+        <p><persName ref="#yusa">裕佐</persName>がその夜<ruby><rb>妓楼</rb><rt>ぎろう</rt></ruby>を出たのは<ruby><rb>子</rb><rt>ね</rt></ruby>の刻に近かった。頭はズキズキと痛んでほてり、からだは疲れていた。雪もよいの<ruby><rb>闇空</rb><rt>やみぞら</rt></ruby>から吹く新鮮な冷風が<ruby><rb>心地</rb><rt>ここち</rt></ruby>よく<ruby><rb>鬢</rb><rt>びん</rt></ruby>や顔に当たっても枯れ果てた心の重苦しさはなおらなかった。自分は一生結局これというなんの仕事もせず、いたずらに生の悪夢にひたって平凡に死んで行く運命の者ではなかろうか。しかしそのことは案外このごろの彼には簡単にあきらめられることのような気もしていたのだった。仕事が結局なんだ。事業本位であくせくとあぶら汗を流して生き、かつ死ぬことが、与えられた<ruby><rb>束</rb><rt>つか</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>の生のうちに次から次と美しき幻を追い、<ruby><rb>刹那</rb><rt>せつな</rt></ruby>刹那を充実して酔いながら死ぬる享楽本位の生活よりも、果たしてどれだけ人生本来の意義にかなったことか、それからして第一疑問である。事業、それも<ruby><rb>畢竟</rb><rt>ひっきょう</rt></ruby>ある享楽を目的とするものにすぎぬとすれば、直接その結局の目的のために生きることが、現世において<ruby><rb>軽蔑</rb><rt>けいべつ</rt></ruby>され、手段たる事業のために生きることが尊敬されようと、それが死という絶対者の前にどれだけの根本的差別をなすものであろう。畢竟ただ「自分の気のまぎらし方の区別」に過ぎなくはないか？　そんな気が近ごろの彼にはしばしばまじめに起きるのであった。が、自分にとって享楽が享楽となっていたのは<persName ref="#kimika">君香</persName>が自分を愛していると思っていたからのことで、その実彼女の厚意は畢竟遊び<ruby><rb>女</rb><rt>め</rt></ruby>のお<ruby><rb>愛想</rb><rt>あいそ</rt></ruby>にすぎず、それを金さえあればきっと身うけができるものとのん気にきめていた自分はやはりおめでたい坊っちゃんに過ぎないのかもしれない、とふと考えると、また気が暗くなった。</p>
+        <p><persName ref="#kimika">君香</persName>が始めわるくいっていた<persName ref="#ferreira">フェレラ</persName>を一目見るがいなや急に態度が変わり、<ruby><rb>哀憐</rb><rt>あいれん</rt></ruby>の情を起こしたらしいその心理は彼には合点も行き、気持ちよくも思えたのであった。しかも<persName ref="#kimika">君香</persName>が冗談のように皮肉のようにしゃべった言葉の中には、とてもただ笑っては聞き流せない実感らしいものが多くあったことを彼は疑えなかった。彼女のいったことはどこまでが真実でどこまでが<ruby><rb>嘲弄</rb><rt>ちょうろう</rt></ruby>なのか、彼には見当がつかなかった。<persName ref="#ferreira">フェレラ</persName>は彼女の昔の情人にでも似ていて、それを「夢に見たことのある<ruby><rb>悪魔</rb><rt>ルシヘル</rt></ruby>」なぞとごまかしたのではなかろうか。それは自分の好きなものをわざとそしり、内心きらいなものをことさらにほめる遊び女らしい一つの技巧に過ぎなかったであろうか。</p>
+        <p>「疑ってもいないくせに疑ったような顔して<ruby><rb>実</rb><rt>じつ</rt></ruby>のあるところを見せようったってその手はくわなくってよ。」と彼女はあとでいった。「むろんよ。あたし、あなたを思う存分苦しめてあげたいわ。あなたはもっと苦しまされる必要があるのよ。だけどあたし甘いからそれができないのよ。あああたしあなたをほんとに苦しめてやりたい。それはあなたを愛するからよ。あなたのためを思うからよ。」彼女はまたこんなことをいった。</p>
+        <p>彼はそれらのことをおもい出して、笑いわめきたいような気がした。が、ふと<persName ref="#kichisaburo">吉三郎</persName>の明るい顔を思い出した。そして「あいつは幸福だな。」とつぶやいた。</p>
+      </div>
+      <div type="chapter" xml:id="sec12" n="12">
+        <head>一一</head>
+        <p>「オイ、やけに寒いと思ったらそのはずだ。雪だぜ。」と<ruby><rb>一人</rb><rt>ひとり</rt></ruby>の<ruby><rb>鍬</rb><rt>くわ</rt></ruby>のようなものをかついだ男がいった。「この土地に<ruby><rb>歳暮</rb><rt>くれ</rt></ruby>のうちに雪が降るなんて、陽気のやつ、気が違いやがったな。」</p>
+        <p>「ほんとにおらア霜だとばっかり思ったに。」と、もう一人の男がいった。「なに、じき上がっちまわあな、ちったア積もるめえよ。」</p>
+        <p>「なるほど雪だ。」トボトボと暗い坂道を上っていた<persName ref="#yusa">裕佐</persName>は始めて気がついたようにこうつぶやいて、墨のような重い空を見上げた。チラチラと大きな雪の片々が顔や肩にふりかかるのが彼には快かった。</p>
+        <p>「お前、<ruby><rb>金鎚</rb><rt>かなづち</rt></ruby>を持って来たか。」また一方の男がきいた。</p>
+        <p>「そんなもの持って来るもんかな、ばかくせえ。」ともう一人が答えた。</p>
+        <p>「だがまア、行くだけは行くだ。行って見てだれも来てなかったら帰るのよ。掘ってみましたが何、やっぱり犬の<ruby><rb>死骸</rb><rt>しがい</rt></ruby>でしたっていやアすむんだからな。」</p>
+        <p>「ほんとに悪いいたずらをしやがるな。十字架をおっ立っといて<ruby><rb>猫</rb><rt>ねこ</rt></ruby>の死骸をほじくらせやがる。それってえも役人どもが死んじまった者の<ruby><rb>棺桶</rb><rt>かんおけ</rt></ruby>をほじくり返してまでしらべるようなしつっこいマネをしやがるからだ。」</p>
+        <p>「何も死んだ者をしらべるわけじゃねえ。それであとに生き残ってる<ruby><rb>自家</rb><rt>うち</rt></ruby>の者をしらべるんさ。だけどまた片っ方も片っ方だ。死骸の頭へ<ruby><rb>頭陀袋</rb><rt>ずだぶくろ</rt></ruby>ぐらい掛けられたからってご苦労さんに土ん中の棺桶の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>をひっぺがしてまではずさなくったってよさそうなもんじゃねえか。頭陀袋一つで<ruby><rb>亡者</rb><rt>もうじゃ</rt></ruby>が浮かばれねえってわけでもあるめえに。」</p>
+        <p>「両方が意地の張りっくらをしてけつかるんだ。おかげでこちとらまでこんな雪ふりの夜ふけにこき使わせやがって、だが来たからにゃただじゃ帰らねえて。」</p>
+        <p>こんなことを彼らはブツブツいいながらやや千鳥足で<persName ref="#yusa">裕佐</persName>の前を歩いて行った。<persName ref="#yusa">裕佐</persName>は<ruby><rb>自家</rb><rt>うち</rt></ruby>へ帰る気はなくなっていた。彼は今何よりも眠りを求めていた。一切を忘却の川に流し捨て、翌朝の日光とともに自己を生まれ変わったごとく新鮮な、生き生きした者にしてくれる眠りの「救い」を求めていた。それが得られそうに思えるならすぐにも彼は飛んで帰りたかった。しかし帰ったところでその救いは到底得られそうもないのみか、ただ果てしない<ruby><rb>覚醒</rb><rt>かくせい</rt></ruby>の闇になおも身を任しつづけるよりないことは目に見えていた。その時<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の人足の会話が計らずも彼の好奇心と、望みとをひしと捕えたのであった。</p>
+        <p>「よし、あいつらについて行って見よう。」</p>
+        <p>そして彼は何かを予感するごとく、彼らのあとに黙然と従った。</p>
+        <p>「オイ、道を間違えやしねえか。墓地はこっちじゃねえぜ。」</p>
+        <p>「薄のろめ。もうあそこに墓が見えてるじゃねえか。<ruby><rb>袈裟</rb><rt>けさ</rt></ruby>を着た坊主がしゃがんでるような格好をしてよ。」</p>
+        <p>「なるほど、近道をしたんだな。――ヤ、人がいるぞ。何か白いものが動いてるじゃねえか。」</p>
+        <p>「ぼけちゃいけねえぜ。オイ、<ruby><rb>手前</rb><rt>てめえ</rt></ruby>さっきの酒ですっかりぼけちまやがったな。ありゃ杉の木に雪がつもったのが風で揺れるんじゃねえか。」</p>
+        <p>「そうじゃねえよ。や、<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>かな。はは。なるほどあそこに新しい<ruby><rb>塚</rb><rt>つか</rt></ruby>があらア。あれだな。うめえ。うめえ。」</p>
+        <p>「なんだ、手前掘るつもりなんか。」</p>
+        <p>「わけはねえや。どうせ泥をぶっかけてあるばかりなんだからな。それに棺桶だってすぐ蓋アあけられるように<ruby><rb>釘</rb><rt>くぎ</rt></ruby>を外へ打ち抜いてあるんだからひっぺがすなア造作はねえや。」</p>
+        <p>「ふむ。そりゃ<ruby><rb>自家</rb><rt>うち</rt></ruby>の者が頭陀袋を取りはずすためのことだ。もう今ごろ行ったってちゃんと本式に釘づけにしちまってあらアな。見ろ。<ruby><rb>梟</rb><rt>ふくろう</rt></ruby>めがホウホウと笑ってけつから。」</p>
+        <p>「釘づけだろうが<ruby><rb>粕</rb><rt>かす</rt></ruby>づけだろうが、かもうこたアねえて。そいつをぶっこわしゃ銀の十字架かメダイが取れようってもんだ。そうすりゃそいつをつぶして銭にした上に<ruby><rb>褒美</rb><rt>ほうび</rt></ruby>の<ruby><rb>酒手</rb><rt>さかて</rt></ruby>がもらえるってわけだ。」</p>
+        <p>しかし<persName ref="#yusa">裕佐</persName>は自分の後ろに、半丁ほど離れて、二人の婦人らしい人影がついて来るのを見た。彼はちょっと立ちどまり、そして彼らがその墓地へ、その新塚へ行く者であるかどうかを見届けようとした。しかし二人の婦人はその墓地の手前で立ち止まり、何かをささやくらしく左手の道を指さし、そして非常な早足でそちらへ曲がって行った。</p>
+        <p>「きっと<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>へ行く連中かもしれない。」と<persName ref="#yusa">裕佐</persName>は思った。「だがなんであんなに急ぐんだ。まだそんな時刻でもないに。」と、二人の去ったあとをちょうどまた半丁ほどの距離で、さらに二つの黒い影が忍びやかにつけて来るのを彼は見た。<ruby><rb>闇目</rb><rt>やみめ</rt></ruby>でよくはわからないがその一方は非常に背高く、そして二人は黒いマントのようなものを頭からかぶり、一言も口をきかずしばらく立ち止まってじっとこちらを見ている様子であったが、また二人の婦人の跡をつけて左手へ曲がって行った。</p>
+        <p>「なんだろう。」<persName ref="#yusa">裕佐</persName>はやや不安の気に襲われていぶかり始めた。「ことによったら、あの一人は<persName ref="#ferreira">フェレラ</persName>ではなかろうか。もしそうとすれば……」と彼は考えた。「やつらはもう今夜<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>のあることに感づいて、それを探りに行くんではなかろうか。」</p>
+        <p>そう思うと彼は一種不安の緊張のために身をふるわした。「よし。あいつらのあとをおれがまたつけて行ってやろう。」そしてそちらへ向かって彼は<ruby><rb>大股</rb><rt>おおまた</rt></ruby>に歩き出した。「降誕祭へはおれは行くまい。」と彼はまたひとり<ruby><rb>言</rb><rt>ご</rt></ruby>った。「あの人にあうことは恐ろしい。そしてこのけがれたからだのおれが行くことはその神聖な祭りの清浄をけがすものだ。おれはただ窓から中を盗み見てやろう。ただ一目！　そして外で見張りをしてやるんだ。」</p>
+        <p>彼は急いであとへ引き返し、曲がり<ruby><rb>角</rb><rt>かど</rt></ruby>を左へ折れると、坂の頂上にちらりと明りが見えた。その灯の赤さによって、「<ruby><rb>焚火</rb><rt>たきび</rt></ruby>をしているな。」と彼は思った。「ありがたい。そしてあの茶屋へ行ったら多分様子が知れるだろう。」</p>
+        <p>彼がその茶屋でありまた一<ruby><rb>膳</rb><rt>ぜん</rt></ruby><ruby><rb>飯屋</rb><rt>めしや</rt></ruby>でもある家にはいって行くと、二人の男は後ろ向きに土間の炉縁に腰をかけ焚火にあたっていた。</p>
+        <p>「じゃ卵酒でもつけますか。<ruby><rb>温</rb><rt>あたた</rt></ruby>まりまするで。」</p>
+        <p>五十前後の歯を黒く染めた主婦ははいって来た<persName ref="#yusa">裕佐</persName>ににっこりとお辞儀をしながら「お寒う、おあたり。」といったあとで、また二人にこうきいた。</p>
+        <p>「いや、肉類も卵も禁止だ。今はちょっと、<ruby><rb>精進物</rb><rt>しょうじんもの</rt></ruby>のほかはやってならん折りなんでな。」一人の男は頭から足の先までギョロリと<persName ref="#yusa">裕佐</persName>を見たあとでこういった。「ただ<ruby><rb>熱燗</rb><rt>あつかん</rt></ruby>に<ruby><rb>漬</rb><rt>つ</rt></ruby>け物でも添えてもらえりゃ結構だ。」</p>
+        <p>「この犬どもめ。」と<persName ref="#yusa">裕佐</persName>は思った。「<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>と悲しみの節とを間違えて<ruby><rb>下手</rb><rt>へた</rt></ruby>な化け方をしてやがるな。」彼はこう心に苦笑しながらわざとそのマントのような物を着た大男の前に回って「ごめん」といいながら、<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>に火をつけた。大男は<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>を<ruby><rb>眼深</rb><rt>まぶか</rt></ruby>にかぶり、黒い毛織りの<ruby><rb>襟巻</rb><rt>えりま</rt></ruby>きを鼻の頭が隠れるまでぐるぐると<ruby><rb>頤</rb><rt>あご</rt></ruby>にまきつけてうつむきながら、その恐ろしく大きなやせた両手を火にかざしていたが、ゆっくり顔をもたげるとハッと驚いたように、</p>
+        <p>「や、<persName ref="#yusa">萩原</persName>さんじゃありませんか！――これは意外なところでお目にかかるもんですね。」底光りのする目で<ruby><rb>愛想</rb><rt>あいそ</rt></ruby>よくお辞儀をしながらいった。「先刻はどうも失礼しました。」</p>
+        <p>「まったく意外なところでね。」<persName ref="#yusa">裕佐</persName>も会釈して答えた。「今ごろこんなところに何かお勤めですか。」</p>
+        <p>「なに、勤めってほどでもありませんが、ただこの墓地に時々怪しいことがあるというもんですから。」</p>
+        <p>「ご苦労さんですね。化け物でも出るんですか。」</p>
+        <p>「十字架を下げた化け物がね。へ、へ。」と連れの<ruby><rb>与力</rb><rt>よりき</rt></ruby>が引き取った。「で、あなたは？――雪見のご散歩ですか。」</p>
+        <p>「ええ、ちょっと風流でね。――が、そういえば先刻、そこで<ruby><rb>塚掘</rb><rt>つかほ</rt></ruby>りたちにあったんですが、その塚掘りたちが変なことをいっているのを聞きましたよ。」</p>
+        <p>「変なこと、ってなんです。」</p>
+        <p>「いや、なんでも近ごろはお役人が物好きになって、死んだ人間の宗旨までしらべに墓をほじくらせる。これじゃア化け物も出るよ、ってね。」</p>
+        <p>「しかしあなたはその化け物を見にいらっしったんですか。」<persName ref="#ferreira">フェレラ</persName>は笑った。「しかしあなたは今夜その化け物よりももっと珍しいものを見られるでしょう。――それは多分先刻お願いしたあなたの仕事にいい材料になりますよ。」</p>
+        <p>「なんです。それは。」</p>
+        <p>「<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>です。<persName ref="#jesus">ゼズス</persName>の誕生を信者たちが祝う祭りです。それは美しいもんです。」</p>
+        <p>「そうでしょうね。そしてあなた方はそれを捕縛しに来ていられるってわけですか。」</p>
+        <p>「いや、ところがやつらだってなかなかそうたやすく<ruby><rb>捕</rb><rt>つか</rt></ruby>まるような間抜けはしませんよ。もう心得ていますからね。」と与力がいった。「第一今夜はその祭りの当夜ではないんです。だからやつらは用心深く先回りをしてこんな晩にやるんです。こっそりと。それもどこでやるんだかまるで見当がつきません。」</p>
+        <p>「なるほど、それであなた方はここの<ruby><rb>内儀</rb><rt>かみ</rt></ruby>さんからその場所をかぎ出そうと思って、あの仲間らしく思わせようとしたんですね。」</p>
+        <p>「ふむ。あなたはたいそう鼻がきくんですね。まるで切支丹のように。」与力は相棒と顔を見合わせてにやりとしていった。「しかし今、あなたはそこで二人の女づれを見かけやしませんでしたか。」</p>
+        <p>「ええ、あなた方の一足先にね、<placeName ref="#oura"><ruby><rb>大浦</rb><rt>おおうら</rt></ruby></placeName>の方へ行ったようでしたね。」</p>
+        <p>「なに<placeName ref="#mogi"><ruby><rb>茂木</rb><rt>もぎ</rt></ruby></placeName>の方へ行きかけていたのを、私たちがつけてると思うもんで、わざと<placeName ref="#oura">大浦</placeName>の方へ曲がったんです。ヘッヘ。」</p>
+        <p>「じゃ、そのナタラというのは<placeName ref="#mogi">茂木</placeName>であるんですね？」</p>
+        <p>「それがよくわからないんですが、おおよそわかってはいます。」と<persName ref="#ferreira">フェレラ</persName>はいった。「どうせすぐ近所に<ruby><rb>祈祷</rb><rt>きとう</rt></ruby>がもれ聞こえるような人里の中で彼らは集まりはしませんからね。いつもたいてい<placeName ref="#mogi">茂木</placeName>のはずれにある<ruby><rb>醤油屋</rb><rt>しょうゆや</rt></ruby>の庫を彼らは密会所にしています。行ってごらんなさい。もうそろそろ始めている時分です。」</p>
+        <p>「私たちは今夜は捕縛なんぞはしませんよ。ごらんのとおりのしたくですからね。ただちょっと様子を見るだけです。何しろ向こうは多勢ですからな。」と与力が口をそえた。「え、道ですか？　<placeName ref="#mogi">茂木</placeName>の入り口のところで右に細い<ruby><rb>田圃道</rb><rt>たんぼみち</rt></ruby>がありますがね。なんでも人通りの少ないはずのところに足跡が多かったらそこを行きゃいいんです。時ならぬものが降ってくれたおかげで足跡を見つけるにゃちょうどいい都合でさ。」</p>
+        <p>そして二人は顔を見合わせてまたにやりと笑った。</p>
+        <p>「<placeName ref="#mogi">茂木</placeName>までは少し大変だな。それに風も出て来た。」<persName ref="#yusa">裕佐</persName>はつぶやくようにこういってちょっと外をのぞいたが、主婦のところへ行って茶代を払うふりをしながらそっとその手に銀貨を握らせた。そして今夜この近くに切支丹の集まりがあるのを知らないかと低くおごそかにたずねた。主婦は目を<ruby><rb>円</rb><rt>まる</rt></ruby>くし、銀貨と彼の顔を見比べていたが実際何も知らない様子であった。</p>
+        <p><persName ref="#yusa">裕佐</persName>は外へ出た。</p>
+      </div>
+      <div type="chapter" xml:id="sec13" n="13">
+        <head>一二</head>
+        <p>雪はもうやんでいた。そしてサラサラと淡雪をふり落とす松の<ruby><rb>梢</rb><rt>こずえ</rt></ruby>の上に高く、二三の星が<ruby><rb>深淵</rb><rt>しんえん</rt></ruby>の底に光る金剛石のように寒くまたたいていた。</p>
+        <p>彼は急ぐというよりむしろ走っていた。そして発作的になんべんも後ろを振り返った。彼らが自分の跡をつけて来ないということは彼にはいっそう無気味なことであった。彼らはいやに余裕<ruby><rb>綽々</rb><rt>しゃくしゃく</rt></ruby>としている。そしてすべてを見抜いているらしい。信徒の集会所は<placeName ref="#mogi">茂木</placeName>であると彼らはいっているが果たしてほんとうにそう思っているのであろうか。しかしもし今夜の集会所を彼らが知っているとするならば、彼らはなんであんな空とぼけてまでそれを探ろうとするのであろう。そう思うと「やっぱり知ってはいないのだ。」と彼は安心もした。しかしなぜ自分に、この何者であるかわからぬ自分に、彼らは軽々しくその秘密な知識を打ちあけるのであろう？　彼は自分の去ったあとで彼らがカラカラと笑っているのを目に見るような気がした。</p>
+        <p>「なんでもいい。早く知らせなくてはならない。」</p>
+        <p>彼がそう思って目あての家の方へ道を曲がろうとした時道ばたの<ruby><rb>納屋</rb><rt>なや</rt></ruby>の後ろから突然ぬっと<ruby><rb>一人</rb><rt>ひとり</rt></ruby>の男が現われた。</p>
+        <p>「待っていました。<persName ref="#yusa">萩原</persName>さん。」とその男は青年らしい声でいった。「あなたがこの道を通られはしないかと思って来ていたんです。ここを通ってはいけません。雪に足跡がつきますから。」</p>
+        <p>「だがぐずぐずしてはいられませんよ。もうそこの茶屋には与力が来ているんですから。」</p>
+        <p>「もう？」<persName ref="#kichisaburo">吉三郎</persName>はさすがに驚いたようにいった。「しかし大丈夫です。やつらはあの場所を知っているはずはありません。さアここを飛ぶんです。よござんすか。」</p>
+        <p>そして彼は三尺ほどの<ruby><rb>溝</rb><rt>みぞ</rt></ruby>を飛び越え、<ruby><rb>熊笹</rb><rt>くまざさ</rt></ruby>の茂っている一<ruby><rb>間</rb><rt>けん</rt></ruby>あまりの<ruby><rb>崖</rb><rt>がけ</rt></ruby>をよじ登ると上から手を差しのべた。<persName ref="#yusa">裕佐</persName>がそのあとに続いた時、その草むらの中からは<ruby><rb>藪鶯</rb><rt>やぶうぐいす</rt></ruby>がチチ、キキ、とないて飛び散った。崖の上は桑畑であった。</p>
+        <p>「えらいところへ案内してすみませんでしたね。」青年は元気よく<ruby><rb>太息</rb><rt>といき</rt></ruby>をつきながら笑った。「だがほんとうによく来てくださいましたね。その代わり今夜のはほんとうに今までにない立派な降誕祭です。」</p>
+        <p>「長老は来られましたか。」</p>
+        <p>「ええ、実はもう七日ほど前から私のところにおかくまいしてあったんです。私はぜひあなたに一度あの長老を見せたかったんです。」</p>
+        <p>「しかしよく<placeName ref="#amakusa">天草</placeName>から無事に渡ってくることができましたね。」</p>
+        <p>「熱心な信者の船頭がうまく隠してお連れして来たんです。何しろもう七十近い<ruby><rb>齢</rb><rt>とし</rt></ruby>で八年の間あの<placeName ref="#amakusa">天草</placeName>のまるで無人島同様な所に<ruby><rb>乞食</rb><rt>こじき</rt></ruby>のような生活をして、わずかな信者を作りながらかくれておられたのですからね。しかしその<ruby><rb>矍鑠</rb><rt>かくしゃく</rt></ruby>とした気力と、つやつやしい顔の輝きとの少しも変わらないのにはまったく驚きますよ。」</p>
+        <p>風と<ruby><rb>闇</rb><rt>やみ</rt></ruby>とに抵抗して<ruby><rb>二人</rb><rt>ふたり</rt></ruby>は道らしい道へ出ていた。そこは峠の絶頂で目の下に底知れぬ闇のごとく黒くひろがっている<placeName ref="#chijiwanada"><ruby><rb>千々岩灘</rb><rt>ちぢいわなだ</rt></ruby></placeName>が一目に見え、左手にはさながら生ける巨獣の頭のごとく<ruby><rb>尨大</rb><rt>ぼうだい</rt></ruby>に見える<placeName ref="#shimabara">島原</placeName>の<placeName ref="#unzendake">温泉嶽</placeName>が<ruby><rb>蜿々</rb><rt>えんえん</rt></ruby>と突き出ている。ごうごうとたけって彼らに吹きあたる風の音は、そのすでに幾十の人命を<ruby><rb>呑</rb><rt>の</rt></ruby>み食らってなお飽きたらぬ巨獣のほえるごとく思われた。と、またはるかに――<ruby><rb>縹渺</rb><rt>ひょうびょう</rt></ruby>のかなたには海上としては高過ぎ、天空としては星の光とも見えぬ、海とも空ともつかぬあたりに<placeName ref="#amakusa">天草</placeName>のいさり火が吹きすさぶ<ruby><rb>凩</rb><rt>こがらし</rt></ruby>に明滅するごとくかすかにまたたいているのであった。</p>
+        <p>「ごらんなさい。ここへ来るともうこんなにたくさんの足跡が見えるでしょう。あそこに<ruby><rb>箒</rb><rt>ほうき</rt></ruby>のように風で曲がっている森が見えますね。」と<persName ref="#kichisaburo">吉三郎</persName>はグッと<ruby><rb>襟</rb><rt>えり</rt></ruby>を押えてかき合わせながらいった。「あの森の下にその家はあるんです。どうです。まるで見えないでしょう。昼間なら家根は見えるんですが。」</p>
+        <p>「しかし万一発見された場合には、逃げ道はあるんですか。」</p>
+        <p>「ええ、むろんです。しかしどうせ私が外で見張り番をしていますから、踏み込まれるような心配はありませんよ。」</p>
+        <p>まったくその家はすぐそばまで行ってもそれと知らずにはちょっと気がつかないほど闇の中にあって闇にとけ込んで見える不思議な一軒<ruby><rb>家</rb><rt>や</rt></ruby>であった。</p>
+        <p>「さあ、裏から回りましょう。そうすればこのまっ暗に見える『天の岩戸』の中にどれほどの光がたたえられてあるか、あなたはびっくりなさるでしょう。」</p>
+        <p>しかしその「岩戸」の中の光景は「裏から回って」はいって見ずともその一分の光ももれぬ壁に耳をあてればカナリ充分に想像はできるのであった。その厚い壁を通して、そこからは<persName ref="#yusa">裕佐</persName>がかつて夢想にも聞くことのできなかった世にも美しい合唱がもれ聞こえて来るのだった。</p>
+        <p>「あわれみの御母天つ御みくらに輝ききらめける<ruby><rb>皇妃</rb><rt>きさき</rt></ruby>にて<ruby><rb>在</rb><rt>ましま</rt></ruby>す</p>
+        <p>御身に御礼をなし奉る。</p>
+        <p><ruby><rb>流人</rb><rt>るにん</rt></ruby>となる<persName ref="#eve">エワ</persName>の子供ら</p>
+        <p>御身に叫びをなし奉る</p>
+        <p>この涙の谷にてうめき泣きて御身に願をかけ奉る――」</p>
+        <p>「聞こえますか。あれはサルベンジナといって、『<persName ref="#mary">まりあ</persName>』にあわれみを<ruby><rb>乞</rb><rt>こ</rt></ruby>うお<ruby><rb>祷</rb><rt>いの</rt></ruby>りの歌です。今夜はほとんど一晩じゅう祈り歌い明かすので、降誕の祝いの歌のほかにああいうのも歌うんです。」</p>
+        <p>歌はなおつづいた。</p>
+        <p>「あわれみのお目をわれらにたれたまえ</p>
+        <p><ruby><rb>慈</rb><rt>いつく</rt></ruby>しき御手の御執り成しによりてこの悩みのさすらいの後に</p>
+        <p>御胎内の尊きにて<ruby><rb>在</rb><rt>ましま</rt></ruby>すひりおの若君をわれらに<ruby><rb>見</rb><rt>あら</rt></ruby>わしたまえ</p>
+        <p>深く御柔軟、深く御哀憐すぐれて<ruby><rb>在</rb><rt>ましま</rt></ruby>す</p>
+        <p><persName ref="#mary">びるぜん、さんた、まるや</persName>の御母</p>
+        <p>おうらおうらのびす。おうらおうらのびす。」</p>
+        <p>「ここがはいり口です。牛小屋ですがね。」<persName ref="#kichisaburo">吉三郎</persName>はこういいながら納屋のように見える裏口の戸をあけた。「ごらんなさい。あなた始めてですか。これも毎年やる儀式なんです。」</p>
+        <p>炉にあかあかとたかれた火の<ruby><rb>余燼</rb><rt>よじん</rt></ruby>がきれいに掃き清められた小屋の中をほんのりと<ruby><rb>温</rb><rt>あたた</rt></ruby>かく照らした。<ruby><rb>一隅</rb><rt>いちぐう</rt></ruby>には一匹の黒白の<ruby><rb>斑</rb><rt>まだら</rt></ruby>の牛が新しい<ruby><rb>藁</rb><rt>わら</rt></ruby>をタップリと敷いて静かに口を動かしながら<ruby><rb>心地</rb><rt>ここち</rt></ruby>よげに<ruby><rb>臥</rb><rt>ふ</rt></ruby>していた。牛の前には赤飯を盛った盆が供えられ、そのわきになみなみと「産ぶ湯」の水をたたえた<ruby><rb>飼桶</rb><rt>かいおけ</rt></ruby>が置いてあり、その水に<ruby><rb>灯</rb><rt>ほ</rt></ruby>かげがあかく映っていた。もちろん、火がたいてあるのは「御子」が凍えぬようにとの意味である。</p>
+        <p><persName ref="#kichisaburo">吉三郎</persName>は指でコツコツと合図をするように<ruby><rb>扉</rb><rt>とびら</rt></ruby>をたたいた。と、ぱっと扉が開き、あふるるばかりの光――<persName ref="#yusa">裕佐</persName>にはそう感じられた――が滝のようにそこからほとばしり出るのであった。</p>
+        <p>「<persName ref="#kichisaburo">吉三郎</persName>さん？――お一人？」</p>
+        <p><ruby><rb>扉口</rb><rt>とぐち</rt></ruby>に立った女はこう張りのある声をかけて扉に片手をもたせながら、胸にかけた小さい金の十字架がぶらと前にたれるほど頭をかがめて薄暗い小屋の中の方をのぞくように見た。</p>
+        <p>「いや。いっしょ。ちょうどうまくお会いできたんでね？」<persName ref="#kichisaburo">吉三郎</persName>は元気よくいって、まぶしそうに目をしばだたきながら<ruby><rb>呆然</rb><rt>ぼうぜん</rt></ruby>とかたわらに突っ立っている<persName ref="#yusa">裕佐</persName>の方を顧みた。</p>
+        <p>「あら、そう。――」女は一歩退いてちょっと目を伏せた。「あたし、ずいぶん、心配していたのよ。」</p>
+        <p>「だろうと思っていました。さあ、<persName ref="#yusa">萩原</persName>さん。上がってください。」</p>
+        <p>「いいんですか。」<persName ref="#yusa">裕佐</persName>は<ruby><rb>畏</rb><rt>おそ</rt></ruby>れるようにモジモジと口ごもった。「僕は上がるつもりではなかったんですが。」</p>
+        <p>「いいどころではありませんよ。むろん。」</p>
+        <p><persName ref="#kichisaburo">吉三郎</persName>はこういって自ら上がりながら、この「よくやって来た珍客」に何か歓迎のお<ruby><rb>愛想</rb><rt>あいそ</rt></ruby>をいわないかと促すように姉を見た。</p>
+        <p>「ほんとうにようこそ。――ずいぶん大変でございましたでしょう？　こんな山ん中で。――」</p>
+        <p>むしろ努めた感じでこれだけのことをいった<persName ref="#monica">モニカ</persName>の調子は、もはや心に思う半分もいい現わし得ぬ、はじらい深い娘の口調ではなかった。ましてそこにチャーミングな余情を含ませんがためのわざとらしいあまい「舌足らずさ」ではない。かといって、それはまた善良な教養のある人妻にのみ見られる一種の世故慣れた母らしい落ちつきの声でもない。決して無愛想な調子ではないが、気のきいた世俗的な感じではさらにない。冷たいというにしては奥底に「心」がありすぎる。しかしただ温かく、柔和なというのともちがう。それでいて<ruby><rb>角立</rb><rt>かどだ</rt></ruby>たしい気持ちがあるのではみじんもない。</p>
+        <p>「ずいぶんしばらくでございましたね。」</p>
+        <p>むしろ弟の方にからだを向けながら彼女はまたこういって<persName ref="#yusa">裕佐</persName>の前に高島田に結った頭を下げ、軽く手を突いた。そして「しばらく。」とどもるようにようやくいってあわててそこにすわり、べこんと頭を下げた<persName ref="#yusa">裕佐</persName>のあかくのぼせた顔をちらりと見ると、かすかに苦しげな微笑をたたえながらまた弟に顔を向けた。が、その時彼女の<ruby><rb>頬</rb><rt>ほほ</rt></ruby>にひらめくごとくさしたあか味は、四尺とは離れていなかった弟の目にもとまらないらしかった。</p>
+        <p>彼女が島田に結っているところを見るとまだ人妻でないことはすぐ知れることであったが、その<ruby><rb>縹緻</rb><rt>きりょう</rt></ruby>と、年輩とをもっていまだに独身でいるのはなぜかという<ruby><rb>怪訝</rb><rt>けげん</rt></ruby>も同時にだれにも起こるはずである。一度ならず二度までも信者からの縁談を彼女が断わった真の理由を知っているものはただ弟の<persName ref="#kichisaburo">吉三郎</persName>のみであった。</p>
+        <p>「あの姉はね、母になることをおそれているんですよ。自分の運命が『畳の上で』息を引き取る者とは違うことをなんとなく迷信的に自覚しているのですよ。僕はそう思っています。」<persName ref="#kichisaburo">吉三郎</persName>はかつて<persName ref="#yusa">裕佐</persName>にこういったことがあった。</p>
+        <p>「ああ、そう。」たちかけた彼女はまた何か弟にささやかれて無雑作に低くいった。「あのつまらない花をあなた、買ってくださいましたのですってね。おかげさまでこれだけでも飾りができましたんですのよ。」</p>
+        <p>外見は廃家のように見えるその五十畳ばかりの家の中央には枝葉をしげらせた大きな松と竹とがたてられ、その枝にさした幾十の紅白の<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>があかあかとともっていた。そこにまた一々「アーメン・<persName ref="#deus">ゼウス</persName>、ぺてろ何某」「同じく、よはんな、何某」などとしたためられた五色の紙切れと、造花の白ゆりとが無数に結びたれ下げられてあった。正面には高くふたつの<ruby><rb>燭台</rb><rt>しょくだい</rt></ruby>の間に聖像がかけられ、そのわきの壇上にはばてれんらしい黒衣の老人が腰をかけて、一人の男と何か熱心に話していた。そしてその前には<ruby><rb>白襟</rb><rt>しろえり</rt></ruby>に黒の礼服を着た多くの女たちと、男とが並んで、頭をたれながらその話に耳を傾けていた。</p>
+        <p>「あちらにいらっしゃいませんか。およろしかったら。」<persName ref="#monica">モニカ</persName>はささやくようにいった。「今長老様のお話が始まっているところですの。」</p>
+        <p>「どうぞはいっておききください。僕はまた見張りに行かなくちゃなりませんが。」</p>
+        <p><persName ref="#kichisaburo">吉三郎</persName>もそういった。</p>
+        <p>「いや、僕はただ、お顔を見に来たんです。」だれの顔ともあいまいに<persName ref="#yusa">裕佐</persName>はつぶやいて、</p>
+        <p>「お話はあなたがきかなくちゃ意味がない。見張りは僕がひきうけますよ。」</p>
+        <p>早口に強くこういうと、<persName ref="#kichisaburo">吉三郎</persName>を広間の中に押しこむように扉を閉じてしまった。</p>
+        <p>そうしてそこに落ちていた<persName ref="#kichisaburo">吉三郎</persName>の黒い<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>をすぽりとかぶると、<persName ref="#yusa">裕佐</persName>は再び風の吹きしきる表へ飛び出して行った。</p>
+        <p>ある勇気とも興味ともつかない気持ちが<ruby><rb>心地</rb><rt>ここち</rt></ruby>よく<persName ref="#yusa">裕佐</persName>を身ぶるいさせていた。彼は太い棒切れを握り身をこごめ気味にしてその家の周囲をすみずみまで探り探り<ruby><rb>二回</rb><rt>ふたまわ</rt></ruby>りすると、<ruby><rb>藁束</rb><rt>わらたば</rt></ruby>の上に身をひそめに腰をかけた。もう大丈夫だ。ここなら見つかりっこない、と彼は思った。かつ二人の密偵が見当ちがいの場所をいかにも「犬」らしく捜し回って<ruby><rb>疳癪</rb><rt>かんしゃく</rt></ruby>を起こしているさまを想像すると彼はおかしかった。が、ふと星明りに人の形のように思えば思えるものを納屋のわきに認めたような気がした。彼が石を拾ってそれにぶつけると、コンという音がした。それは重ねた<ruby><rb>空</rb><rt>あ</rt></ruby>き<ruby><rb>樽</rb><rt>だる</rt></ruby>だった。</p>
+        <p>彼はハッとして、しまったと思ったが、あとはまた静かになり、風だけが時々サワサワと聞こえた。かなりの時間が無事に過ぎた。彼は少し退屈になったので再び上がり口の方に戻ってくると、細目に扉をあけた。</p>
+        <p>「しかしながら皆さん。」長老の説教はまだおわっていなかった。「私たちの尊い先輩が造り、今またこのわたしたちが現に造りつつある<placeName ref="#nihon">日本</placeName>の切支丹の<ruby><rb>事蹟</rb><rt>じせき</rt></ruby>は、決して単に<placeName ref="#nihon">日本</placeName>一国の史上においてのみの異彩のある光ではありません。永久に神の国とその<ruby><rb>義</rb><rt>ただ</rt></ruby>しきとを求めるすべての熱烈な生命の<ruby><rb>鑑</rb><rt>かがみ</rt></ruby>となるでしょう。日本人はその美しい真心と、生命へのあこがれとを強く持つ上において、他のいかなる民族にも決して劣る者でないことを切支丹によってほど力強く示したことはかつてないのです。この事実は永久に日本国民の深い希望となり、誇りとなるでしょう。わたしははるばる遠い国からこの心を求めて、この心にふれたくてあなた方のところに来た。<persName ref="#jesus">キリスト</persName>という大なる星の導きと、その光の暗示とによって、はるかに離れている二つの小さい星がまたたき合うように、私という一つの心が、あなた方という心を尋ねて、はるかに暗い長い海上を、荒い波や風と戦ってここまでたどり来た。そこには<ruby><rb>暗礁</rb><rt>あんしょう</rt></ruby>があり、そして岸に着いている私を<ruby><rb>岡</rb><rt>おか</rt></ruby>へ上げなかった。私たちはお互いに岸の上と岩の上から呼び合った。叫び合った。八年の間。しかもついにあなた方の真心が一つの強大な引力に結晶して私をその暗礁から引きずり上げここへ連れて来たのです。私の心は今あなた方のゆりのようにやさしい清らかな愛と、燃えるごとき真心とのさなかに抱かれ、ひたって、今死んでも悔やむところもないほどの<ruby><rb>法悦</rb><rt>ほうえつ</rt></ruby>に酔っています。私の期待はそむかれなかった。ああこの地上においてかくのごとき深い喜びが、神から恵まれるのでなしにどこにあり得ましょう！　ああこのひそかな魂の抱擁。かくも人目を忍んでなされなければならないきびしい悪の<ruby><rb>縛</rb><rt>いまし</rt></ruby>めと、脅迫と、悩みとの中におけるこの<ruby><rb>悦</rb><rt>よろこ</rt></ruby>び！　この<ruby><rb>凱歌</rb><rt>がいか</rt></ruby>！　いやしくも神から与えられるのでなしにこの不思議な事実がどこにあり得ましょう！　われわれをして<persName ref="#jesus">キリスト</persName>によって示された真理と、神との名においてますます団結を固くせしめよ。われらをしてなお強くこの聖なる団結を増さしむる神への愛をいや増さしめよ。アーメン。」</p>
+        <p>長老がこういい終わるがいなや群がる男女たちは<ruby><rb>各</rb><rt>おのおの</rt></ruby>のその胸に十字架をかき、長老のかたわらに集まりひざまずいてその衣のひだに<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>した。</p>
+        <p>「アーメン・<persName ref="#jesus">ゼズス</persName>！　アーメン・<persName ref="#jesus">ゼズス</persName>！」</p>
+        <p>しかし彼らが口々にこうつぶやいたちょうどその時であった。長老のま後ろにあった「非常口」の扉が突然カタリと音がして一寸ほどあいた。サッとそこから風が吹き込んで聖像の両側にある<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の灯がゆらゆらとなった。<ruby><rb>忽然</rb><rt>こつぜん</rt></ruby>としてわれを忘れたこの世ならぬ歓喜と陶酔との絶頂にあった一同の顔はいっせいに化石したごとく<ruby><rb>蒼</rb><rt>あお</rt></ruby>く<ruby><rb>硬</rb><rt>こわ</rt></ruby>ばり、そして彼らはハッと一時に息をひそめて、見開いた視線をその方に向けた。</p>
+        <p>そこにはまっ暗やみの中に燭火の反射によって二つの目が光っているのが見えた。一同は棒のように立ち上がった。</p>
+        <p>「静かに！」と長老は制した。「あわててはいけない。私にお任せなさい。」</p>
+        <p>そして彼は静かに後ろに振り向いた。</p>
+      </div>
+      <div type="chapter" xml:id="sec14" n="14">
+        <head>一三</head>
+        <p><persName ref="#kichisaburo">吉三郎</persName>は長老の身を守ろうとしていち早くそのわきに来て立っていた。しかし彼がその「二つの目」と長老との間に立ちふさがったように<persName ref="#kichisaburo">吉三郎</persName>とその二つの目との間に<persName ref="#yusa">裕佐</persName>は割り込んだ。</p>
+        <p>「君たちは黙っていらっしゃい。」と<persName ref="#yusa">裕佐</persName>は低く鋭く<persName ref="#kichisaburo">吉三郎</persName>にいった。「そしてだれもつかまる必要はない。さあ、早く、あっちから！」と裏口をさした。そして彼はその<ruby><rb>扉口</rb><rt>とぐち</rt></ruby>をガラリとあけた。</p>
+        <p>「はあ！　あなたはやっぱり『見に来て』いましたね。」</p>
+        <p>その<ruby><rb>闇</rb><rt>やみ</rt></ruby>の中の男はいった。</p>
+        <p>「さあ外で話をしよう！　外で！」<persName ref="#yusa">裕佐</persName>は自分で外へ飛び出しながらいった。「犬は人間の座敷に足を踏みこむ資格はない！」</p>
+        <p>そして彼は扉をしめようとした。しかし扉は何かを間にはさまれたように動かなかった。</p>
+        <p>二つの目は<ruby><rb>蛇</rb><rt>へび</rt></ruby>のように動かずじっと長老を見つめていたが、</p>
+        <p>「おお。<persName ref="#rubino">アントニオ・ルビノ</persName>！　<persName ref="#rubino">ルビノ</persName>！」</p>
+        <p>と低くふるえるように叫んだ。その声を聞くと長老はやや<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>としたらしく反響するように重くこたえた。</p>
+        <p>「おお、<ruby><rb>汝</rb><rt>なんじ</rt></ruby>は<persName ref="#ferreira">キリシトファ・フェレラ</persName>！　<persName ref="#ferreira">フェレラ</persName>！」</p>
+        <p>「<persName ref="#ferreira">フェレラ</persName>」という語を聞くと家の中の一同はまたわき立つようにざわめいた。「<persName ref="#judas">ユダ</persName>！　<persName ref="#judas">ユダ</persName>！」という声が聞こえた。そして一、二の侍は隠し持っていた刀や、<ruby><rb>匕首</rb><rt>あいくち</rt></ruby>に手をかけた。</p>
+        <p>その時呼び笛の声が高く響き、もう一人の男が闇から現われて、その<ruby><rb>閾</rb><rt>しきい</rt></ruby>に足をかけた。<persName ref="#yusa">裕佐</persName>は<ruby><rb>縄</rb><rt>なわ</rt></ruby>を持っているその手くびをつかんだ。</p>
+        <p>「なんだ貴様は！」その男はおさえられた手を強く振りながらわめいた。「仲間か！」</p>
+        <p>「そうだ。おれはこの仲間の<ruby><rb>頭</rb><rt>かしら</rt></ruby>だ！　つかまえるならおれをつかまえろ！」</p>
+        <p>「おお長老様！　早く早くお<ruby><rb>逃</rb><rt>のが</rt></ruby>れになって！」</p>
+        <p><persName ref="#monica">モニカ</persName>はこう叫んで、長老の<ruby><rb>膝</rb><rt>ひざ</rt></ruby>にすがりついた。</p>
+        <p>「わたしはいい。海神はわたしが所望の宝なんだ。わたしを投げれば海はしずまる。」</p>
+        <p>長老は自若としておごそかにいった。しかし<persName ref="#monica">モニカ</persName>は聞かなかった。</p>
+        <p>「いいえ、役人はあなた様のいらっしゃることを知ってはいなかったのです。どうしてあなた様をここに残してあたくしたちは逃れられましょう！」</p>
+        <p>「わたしのいうことを聞きなさい！」長老はやや激したごとく顔をあかくして命令するようにいい放った。「わたしはもうすでに身を隠しすぎたのだ。時を待ちすぎたのだ。しかしそれはなんのためだ。あなた方真に生きねばならぬ人たちを守らんがためではなかったか！　さあ、早く！」</p>
+        <p>そして彼は鋭く裏の戸口を指さすと、また後ろに向いて<ruby><rb>捕手</rb><rt>とりて</rt></ruby>の方に一歩近づいた。</p>
+        <p>「さあ、わたしを<ruby><rb>捕</rb><rt>つか</rt></ruby>まえなさい。昔の親友よ！　あまりに大なる神はきっと君の大罪をもゆるしたもうだろう。」</p>
+        <p>長老はおごそかにこういいながら、自分の裏に一同をかばうごとくその大きな両手をひろげた。そして一目<persName ref="#ferreira">フェレラ</persName>の目をきっと<ruby><rb>視</rb><rt>み</rt></ruby>ると目を閉じた。</p>
+        <p><persName ref="#ferreira">フェレラ</persName>は水のようにまっさおになり、無言のまま静かに縄を取り出した。しかし彼が<ruby><rb>閾</rb><rt>しきい</rt></ruby>の上に立ち上がるやいなや、彼はフラフラとしてよろめき、そしてもう一人の男の足もとに倒れた。</p>
+      </div>
+      <div type="chapter" xml:id="sec15" n="15">
+        <head>一四</head>
+        <p>半時間ほどを経て後、<persName ref="#yusa">裕佐</persName>は一人道もない峠の上を歩いていた。いばらや<ruby><rb>萱</rb><rt>かや</rt></ruby>のために傷ついた足や手から血を流していることも知らぬらしく、夢中によろよろと歩いている彼の姿はさながら夢遊病者のようであった。そしてとある草原へ来た時彼はそこが雪でぬれていることも考えず、おのずと倒れるようにそこに身をころばした。</p>
+        <p>なんという一夜であったのであろう。ガンガンと鳴り響く<ruby><rb>混沌</rb><rt>こんとん</rt></ruby>たる彼の頭の中には最前からのいっさいの光景、人物の顔――夢のような墓場の景から茶屋の中での<persName ref="#ferreira">フェレラ</persName>との異様な<ruby><rb>邂逅</rb><rt>かいこう</rt></ruby>、青年の顔、昼の花園のごとき光と色とにあふれた祭りの光景とその歌、<persName ref="#monica">モニカ</persName>の顔、長老の顔、そして最後の突然蛇のような目を持った密偵者の襲撃が一座の<ruby><rb>有頂天</rb><rt>うちょうてん</rt></ruby>を破った時「おお長老様。早く早くお<ruby><rb>逃</rb><rt>のが</rt></ruby>れになって！」と叫んで、その<ruby><rb>膝</rb><rt>ひざ</rt></ruby>もとに身を投げた時の<persName ref="#monica">モニカ</persName>と、それに対して厳然と答えた時の長老の姿、<persName ref="#ferreira">フェレラ</persName>の<ruby><rb>昏倒</rb><rt>こんとう</rt></ruby>。</p>
+        <p>それらが一時に彼の頭の中にグルグルと渦のごとくとめ度なく回転し、そしてその一つ一つの印象がくっついたり、離れたりした。すべてがまったく夢としか思われなかった。</p>
+        <p>「そうだ。おれはこの仲間の<ruby><rb>頭</rb><rt>かしら</rt></ruby>だ！　<ruby><rb>捕</rb><rt>つか</rt></ruby>まえるならおれをつかまえろ！」おれはあんなことをいったのだ。――ふとこう思って彼はゾッと身をふるわせた。しかし「おれにはやはり勇気があるんだな。真心から出る勇気が。」と思う子供らしい意識が彼の顔に満足げな微笑を浮かべさしていた。</p>
+        <p>実際彼は指揮官<persName ref="#ferreira">フェレラ</persName>の実に思いがけない昏倒のために、捕縛が「その場だけとしては」ともかく不成功におわったことを思うと、もうそのあとを「どうなったか」と追窮して考える気にはなれなかったほど満足な自意識に酔っていた。そして自意識がそのように満足した時にのみ人の心に<ruby><rb>湧然</rb><rt>ゆうぜん</rt></ruby>と起こって来る一種の愛情――すべての悲劇的運命の中に生死を<ruby><rb>賭</rb><rt>と</rt></ruby>して真剣に生きている人々、その緊張した一々の顔――に対するなまなましい<ruby><rb>哀憐</rb><rt>あいれん</rt></ruby>が彼の胸のうちに苦しく痛ましく起こって来るのであった。そしてその「悲劇的な運命」の人々の顔が、抽象的に人類全体の一つの不幸な姿に見えて来た時、彼の目に熱い涙が浮かんで来た。</p>
+        <p>彼がもういつのまにか去ってかすかに遠雷のように聞こえる<ruby><rb>嵐</rb><rt>あらし</rt></ruby>の音に耳を傾けながら、降るごとく一面に星の現われた空をぽかんと仰向いて見上げていた時、突然何か驚くべきものを見るように彼は「アッ」といった。彼が驚いたのは当然であった。彼が何心なくぽかんと<ruby><rb>視入</rb><rt>みい</rt></ruby>っていた大空の一角には、実にことさらに星をその形に並べてちりばめたとしか思われぬ巨大な十字形の一星座がぼうっと見えるのであった。それは彼の目が涙にうるんでいた加減であったかもしれなかったが、<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>として思わず彼が半身を起こし、そしてその恐ろしい巨大な十字架に相応するだけの<persName ref="#jesus">キリスト</persName>のすがたをふと心に描いた時、突然稲妻のように、ある天啓が彼の頭にひらめいたのであった。</p>
+        <p>彼の目の前に、再び現実のそれよりはなお一層高き神秘なる美と権威とにおいて、長老と、<persName ref="#monica">モニカ</persName>の結合体が<ruby><rb>髣髴</rb><rt>ほうふつ</rt></ruby>と現われた。その結合体が星座の大十字の中に<ruby><rb>燦然</rb><rt>さんぜん</rt></ruby>として見えた時、彼はその前にひれ伏した。が、次の瞬間彼は「オオ！」と叫んで飛び上がった。</p>
+        <p>「オオ、これだ！　これだ！」彼は<ruby><rb>拳</rb><rt>こぶし</rt></ruby>を空に打ち振ってわめいた。「オオ、今こそ、おれはあの聖像――ピエタを造ろう！　ああ、もうおれには造れる！　造れる！　ありがたい！」</p>
+      </div>
+      <div type="chapter" xml:id="sec16" n="16">
+        <head>一五</head>
+        <p>その翌日、彼が<ruby><rb>伯母</rb><rt>おば</rt></ruby>に揺り起こされた時にはもう<ruby><rb>午</rb><rt>ひる</rt></ruby>を過ぎたうららかな日がま上から<placeName ref="#nagasaki">長崎</placeName>の町を照らしているころだった。くまなく晴れあがった<ruby><rb>紺青</rb><rt>こんじょう</rt></ruby>の冬の空の下に、雪にぬれた家々の<ruby><rb>甍</rb><rt>いらか</rt></ruby>から<ruby><rb>陽炎</rb><rt>かげろう</rt></ruby>のように水蒸気がゆらゆらとのどかに立ち上っていた。</p>
+        <p>伯母は彼の<ruby><rb>枕</rb><rt>まくら</rt></ruby>もとで役人が来た事を知らせていた。</p>
+        <p>「え？　役人？」</p>
+        <p><persName ref="#yusa">裕佐</persName>はドキリとして思わず身を起こした。「つかまえに来たのか？」彼は昨夜<ruby><rb>捕手</rb><rt>とりて</rt></ruby>に向かって夢中にいい放った自分の乱暴な言葉を不意に思い出した。</p>
+        <p>しかし彼はその瞬間さっと顔色を変えたが、案外すぐ落ちついた気持ちに返った。そしてちょっと黙って考えたあとで決然と玄関へ立って行った。</p>
+        <p>「なんです。」彼は突っ立ったままきいた。</p>
+        <p>しかし<persName ref="#ferreira">フェレラ</persName>はいなかった。</p>
+        <p>「いや、別に、新しい用事で上がったわけではありませんが。――昨夜は失礼しました。」</p>
+        <p>役人は頭を下げた。それは<persName ref="#ferreira">フェレラ</persName>とともに彼を<ruby><rb>妓楼</rb><rt>ぎろう</rt></ruby>に<ruby><rb>訪</rb><rt>たず</rt></ruby>ねた「通訳の伴」であった。</p>
+        <p>「昨夜お願いしたことですが、――実は早くはっきりしたご返事を伺いたいので。――やはりどうしてもお願いできますまいか。」</p>
+        <p>「いや。」と<persName ref="#yusa">裕佐</persName>は急に安心と、喜びのために勇んでいった。「やりますよ、お引き受けしましょう。」彼はそして付け足した。「実はそのことを<ruby><rb>今日</rb><rt>きょう</rt></ruby>あなた方の方へいいに上がろうと思っていたのでした。」</p>
+        <p>「え？　承諾してくださる。そうですか。それなら願ったりかなったりです。」役人は<ruby><rb>安堵</rb><rt>あんど</rt></ruby>したほほえみをもらしながらいった。「どうぞ<ruby><rb>精々</rb><rt>せいぜい</rt></ruby>よく作ってください。おできばえがよければよいだけお礼の高もふえるのですから。はは。」</p>
+        <p>「それではほんとうによくできればできるほどつまりお礼はふえるわけですね。」<persName ref="#yusa">裕佐</persName>はちょっとこういいたくなった。しかしそれより彼はもうそのうれしい仕事の想像に気を取られていた。そしてただ「承知しました。」と答えた。</p>
+        <p>役人は時々様子を見に来させてくれといいおいて帰って行った。</p>
+        <p>「どうです。こういう<ruby><rb>天狗</rb><rt>てんぐ</rt></ruby>ならいつでも来てもらいたいでしょう。」と彼は元気よく伯母にいった。</p>
+        <p>「<persName ref="#daikoku"><ruby><rb>大黒</rb><rt>だいこく</rt></ruby></persName>さんが来たようにうれしいでしょう。」</p>
+        <p>「ほんにあたしはもうこんなうれしい事はないよ。いよいよお前にも運が向いて来たのだね。」伯母は<ruby><rb>袖</rb><rt>そで</rt></ruby>で目をふきながらいった。</p>
+        <p>「はは、ほんとうにそうですよ。」</p>
+        <p><persName ref="#yusa">裕佐</persName>はこういったが、なんだか胸がくすぐったいような気がした。「さア、この金でおれはあいつを身うけすることができるというもんだ。一石二鳥というやつだ。もしそれができることなら！」彼はこう考えていた。そして晴ればれしていた彼の顔はにわかに曇って来た。</p>
+        <p>しかしその時伯母が彼の顔をのぞきながらいった。</p>
+        <p>「だけど、お金はとれても惜しいもんじゃね。そのお前が<ruby><rb>丹精</rb><rt>たんせい</rt></ruby>して造ったものが人の足に踏まれるんじゃと思うとな。」</p>
+        <p>「ふむ。心にもないことを、人の気を察したつもりで。」と<persName ref="#yusa">裕佐</persName>は<ruby><rb>苦々</rb><rt>にがにが</rt></ruby>しく思った。「もし察したつもりでいうならば、それを踏むことをしいられ、踏まねば殺される切支丹の方のことを思うがいい。」</p>
+        <p>しかしそう思った時、<persName ref="#yusa">裕佐</persName>はさらにある恐ろしい不安にドシンと胸を打たれたのであった。「おれが作るその踏み絵をあの人も、そしてあの弟、――立派な思想と信仰とを抱いたあの美しい有為な青年も踏むことをしいられることになるのだ。彼らはそれをよう踏むであろうか？　踏んでくれるならばありがたい。それは自分の神聖な作品であっても、もしあの人の<ruby><rb>浄</rb><rt>きよ</rt></ruby>い足がそれを踏むならばおれはいやではない！　いな、むしろそれを本望とするであろう！　だが、あの人、あの熱心な信女はそれをなしうるであろうか？」</p>
+        <p>彼はそこにいられなくなって、自分の<ruby><rb>室</rb><rt>へや</rt></ruby>にはいり、まだ<ruby><rb>畳</rb><rt>たた</rt></ruby>んでない床の上に寝ころびながら考えつづけた。「もしおれがそれを作ったために、そしてそれがよくできていることのために、それを踏むあの人の良心がなおいっそう鋭く苦しみを増し、それをなしあたわないことにでもなるとするならば、おれはあの人を、恋人を自ら殺すことになる！　まだそううぬぼれるのは早すぎるかもしれないがな。」</p>
+        <p>そして彼はもだえ、一刻前のすべての輝ける希望と、喜びとはたちまち絶望と<ruby><rb>懊悩</rb><rt>おうのう</rt></ruby>とに変わった。</p>
+        <p>「もっとも！」彼はまた考えた。「あの人は今まで幾度となくあの踏み絵の試煉を経て来たのだ。仮病をつかって役人を欺くことはほとんど不可能なことである。やはりいや応なしに苦しい<ruby><rb>痛恨祷</rb><rt>コンチリサン</rt></ruby>をたよりに踏んで来たものにちがいない。たとえそれはしわくちゃな、なんの<ruby><rb>反古</rb><rt>ほご</rt></ruby>かしれないほどの紙であろうと、あの人はとにかくそれに<ruby><rb>堪</rb><rt>た</rt></ruby>えてきたのだ。」それは彼には実に意外なことに思われたが、またうれしい意外のことであった。「そうだ。なんの画像か読めぬほどの紙くずであろうと、判然たる<ruby><rb>鋳物</rb><rt>いもの</rt></ruby>であろうと、それが聖像であるという意識において変わりはないはずである。それならば人は今まで幾度かそれをなし得たごとく、今度のおれの聖像においてもそれをなしうるであろう。」</p>
+        <p>彼はまた彼女のかたわらに賢い弟の<persName ref="#kichisaburo">吉三郎</persName>がついていることと、昨夜の長老の説教とを思い出した。「いや、あの人は軽々しく偶像のために、それこそ神から与えられた<ruby><rb>生身</rb><rt>なまみ</rt></ruby>をむなしく犠牲にするような愚かなまねはしないであろう。――そして、そうだ。おれはまたその試煉の時の前にはあの人たちを<ruby><rb>訪</rb><rt>たず</rt></ruby>ねてぜひそれを――宗教的意味においては単なる物質の破片にすぎぬ鋳像を、おれのために踏んでくれるように頼んでおくこともできるのだ。」</p>
+        <p>そして彼はまた希望を取り戻した。</p>
+      </div>
+      <div type="chapter" xml:id="sec17" n="17">
+        <head>一六</head>
+        <p>その日の夕方、彼はもう仕事にとりかかっていた。</p>
+        <p>「踏み絵にするといなとはとにかくとして、おれはあれをとにかく作ろう。作らずにはおけない。ただ作ることそれ自身のために。」</p>
+        <p>そして彼はもう安心して、その仕事に没頭していた。</p>
+        <p>彼はもう「あの人」のことも考えなかった。<persName ref="#kimika"><ruby><rb>君香</rb><rt>きみか</rt></ruby></persName>のことも忘れた。そして長い間寂しい<ruby><rb>闇</rb><rt>やみ</rt></ruby>の野中へ行き暮れ、不安にさ迷っていた者が、一道の光明――人家の明りをふと見つけて、ただもうひた走りにそこへ行きつくことのほかには何も考えない時のごとく、机にかかりきって、幾枚かの下図を引いた。</p>
+        <p>一歩も外出せず、不眠の夜をつづけた余念ない三日の没頭の後に下図はまず望みどおりできあがった。そして下図ができあがるやいなや彼は粘土のこね上げに取りかかった。そしてそのこね上げがすむと彼は青銅の<ruby><rb>鎔炉</rb><rt>ようろ</rt></ruby>にかかっていた。</p>
+        <p>自分のどこからこんな無限な精力が出て来るのかと彼は自分でおどろいた。</p>
+        <p>彼の仕事が進むにつれて彼のところにそれを「拝見」に来る者が多くなった。それは彼の伯母が「お上からの仰せつけで」自分の<ruby><rb>甥</rb><rt>おい</rt></ruby>が名誉ある仕事を「お引きうけ申し」ている事を近所にふれ回したからであった。むろん昼間はだれも彼の仕事<ruby><rb>部屋</rb><rt>べや</rt></ruby>にはいることは厳禁されていた。が、中にはただの物好きな見物人のような顔をして「拝み」に来る信徒の女もいた。</p>
+        <p>「まあ、なんという結構な。――ありがたい。こんなありがたいお像を拝んだことはほんにあたし始めてでござんすわ。」</p>
+        <p>その女はうっかりこう口をすべらして自分の信徒であることを明かしていた。しかし芸術なぞのわかりようのないこういう普通の人の心でも打つ何物かが自分の作に宿っていると思うことは<persName ref="#yusa">裕佐</persName>にはうれしかった。</p>
+        <p>「<persName ref="#yusa">萩原</persName>さん。おごらんけりゃいかんぜ。あんた、にわかに大福長者になれるんじゃ。」</p>
+        <p>「あんた方の仕事はええなア。当たり出したら大したもんじゃ。」</p>
+        <p>こんなことをいう男たちも少なくなかった。</p>
+        <p>年は改まって<persName ref="#yusa">裕佐</persName>は二十七になった。</p>
+        <p><date when="--01-01">元日</date>の朝彼は窓に立ってのぼる太陽を拝んだ。「わが仕事に祝福をたれたまえ。願わくはそれをわが意のごとく成さしめたまえ。<ruby><rb>生命</rb><rt>いのち</rt></ruby>の主よ。」彼はこう口の中に祈った。</p>
+        <p>彼の仕事は着々というほどにははかどらなかったが、比較的早く進んだ。</p>
+        <p>「じゃ、月末の踏み絵式までにはなんとか間に合いますな。」見に来た役人はいった。</p>
+        <p>「それ見い。やって見れば、お<ruby><rb>主</rb><rt>ぬし</rt></ruby>にはこれだけの腕はあるんじゃ。だからわしが<ruby><rb>鋳物</rb><rt>いもの</rt></ruby>をやれとあんなにすすめたんじゃに。――」と<persName ref="#magoshiro">孫四郎</persName>はある晩来て見ていった。「ようできとるよ。ちと西洋式なにおいは多いが、まあ西洋の材料じゃからな。このひだのつけ方などはこの<ruby><rb>大天使</rb><rt>アルカンジョ</rt></ruby><persName ref="#michael">ミケル</persName>のひだにそっくりじゃ。が、決して劣っとりゃせん。」</p>
+        <p>彼はわざと「竜とたたかえる<ruby><rb>大天使</rb><rt>アルカンジョ</rt></ruby><persName ref="#michael">ミケル</persName>」の浮き彫りと、<persName ref="#yusa">裕佐</persName>の作とを手にとって見比べながらこういった。が、<persName ref="#yusa">裕佐</persName>はもうこの男の「ケチをつける癖」には腹も立たなかった。何物もただほめるだけではすまさないこの男がこれだけのことでもいうのはよほど感心したことを意味するのが<persName ref="#yusa">裕佐</persName>にはわかっていた。</p>
+        <p>ある晩<persName ref="#yusa">裕佐</persName>は<persName ref="#kimika">君香</persName>に手紙を書いた。</p>
+        <p>新年おめでとう。お変わりはないか。おれが久しく君のところにごぶさたしているのは君が想像するように、君のからかいに憤慨してのことじゃない。たしかにおれは「坊っちゃん」だが、巨人の坊っちゃんだ。だからあんなことなど気にしてはいない。おれは今ある仕事のために生まれて始めての「急がしさ」に追われきっている。それは君がいつかおれに「参考品」としてあのコンタスをくれて、これを手本にしてあたしの像を作ってくださいね。といった、まあ、そのような仕事だ。まったくあのコンタスは今やまるで別物のような生きた力で、おれの役に立ったことをお礼する。おかげでおれは今度、もしかしたら、始めていい仕事をしたという自分の満足を買えるうえに、大分金もうけをするかもしれない。少なくとも女一人を身うけすることができるくらいの金は優に得られる予定だ。だがおれは「不実」だから君を身うけしようなんぞとはもとより思っていない！　ちょっとそんなことを考えたこともあるが、まあ君の身はあの「<ruby><rb>紅毛</rb><rt>オランダ</rt></ruby>の犬」に任せることにしよう。</p>
+        <p>もっとも今夜あたり、おれはちょっと君を<ruby><rb>訪</rb><rt>たず</rt></ruby>ねたくはある。しかしつつしむことにした。おれの仕事は多分明日あたりできあがるのだ。仕事の神は<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby>深く、おまけに君のようにいたずら<ruby><rb>気</rb><rt>ぎ</rt></ruby>に富んでいるから、おれはもう一日というところでその神にたたられることをおそれる。もう一息というところでその神は、とにかくそんないたずらをやりたがるのだ。今夜もし君のところへ行ったら、おれの仕事はきっとのろわれてめちゃめちゃな失敗におわるだろう。だからおれは行くことを控える。それはたしかに「悪所通い」だからね！</p>
+        <p>しかしこの「関所」を通り越したら行くよ。毎晩。いくら君がいやでも！</p>
+        <p>しかしまあ君の健在を祈ろう。おれのからだはひょろひょろだが、元気は大したものだ。まだ君をいやがらせるくらいの力は十二分に持っているよ。</p>
+        <p>不実な男より</p>
+        <p><persName ref="#kimika">君香</persName>殿</p>
+        <p>翌日の朝、彼の仕事はできあがった。<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>から二十五日目であった。</p>
+        <p>三人の役人がそれをうけ取りに来た。</p>
+        <p><persName ref="#yusa">裕佐</persName>は綿で包んだ青銅のピエタを見せた。</p>
+        <p>「ハア、これですか！」</p>
+        <p>三人の役人は威儀を正してそれを見るとハッとしたように顔の色をかすかに変えた。そしてその<ruby><rb>聖像</rb><rt>ピエタ</rt></ruby>と<persName ref="#yusa">裕佐</persName>の顔とをかわるがわる見比べたあとで、役人同士また互いに顔を見合わせた。</p>
+        <p>「見事にできあがりましたな。」</p>
+        <p><ruby><rb>二人</rb><rt>ふたり</rt></ruby>の役人は同じようなことをいっせいにいった。</p>
+        <p>「これを今日いただいて行けるのですね。」もう<ruby><rb>一人</rb><rt>ひとり</rt></ruby>はいった。</p>
+        <p>「まだそれ一つしかできていないのですから。」と<persName ref="#yusa">裕佐</persName>は答えた。「あなたの方に上げるのは同じ物をもう一つ二つ型に取ってからにしてください。」</p>
+        <p>「しかし、とりあえず奉行にごらんに入れたいのですが。奉行もずいぶん楽しみに待っておられますんで、とにかく一両日でも拝借して行くことはできますまいか。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は断わるわけには行かなかった。そして「どうか大事にしてください。」と惜しそうにいった。</p>
+        <p>三人の役人は<ruby><rb>鄭重</rb><rt>ていちょう</rt></ruby>にその<ruby><rb>聖像</rb><rt>ピエタ</rt></ruby>を<ruby><rb>抱</rb><rt>かか</rt></ruby>えて引きとって行った。</p>
+      </div>
+      <div type="chapter" xml:id="sec18" n="18">
+        <head>一七</head>
+        <p>奉行からはその後なんの<ruby><rb>便</rb><rt>たよ</rt></ruby>りもなかった。そしてその<ruby><rb>聖像</rb><rt>ピエタ</rt></ruby>は四日たっても帰っては来なかった。<persName ref="#yusa">裕佐</persName>はいらだって来た。彼はできあがったばかりの自分の作をもっと自分のそばにおいてゆっくりながめたかった。それに即しきった苦しい製作者の立場から、鑑賞者の自由に離れた立場に移って、心ゆく限りながめて楽しみたかった。人にも見せたかった。ことにだれよりも早く<persName ref="#kichisaburo">吉三郎</persName>姉弟に見せたかった。</p>
+        <p>「あの豚どもめに見せるべき真珠ではないんだ。もったいない！」彼はこう奉行の冷淡と破約とに腹を立てて取りかえしに行こうとさえ思った。</p>
+        <p>しかしその晩であった。</p>
+        <p>彼は例のごとくおそく床にはいって、仕事以来いっそう癖になった不眠に悩んでいた。外には冬らしい風がさらさらと吹いている様子であったが、家の中はしんとして一間隔てた六畳から伯母のかすかないびきが聞こえていた。</p>
+        <p>その時彼の室の窓を何かコツコツとたたく者があった。ようやくまどろみかけていた彼はハッと目を見開き、そして黙って耳を澄ましていた。風で折れた木の枯れ枝が窓の戸に当たるのかなと思った。しかしまたコツコツとたたく音が聞こえた。たしかにそれは人の指がたたく音である。「もし人とすればだれだろう。」こう思うと、彼はにわかにいろいろの想像の興奮のために顔があかく輝いた。彼の頭の中に恐ろしい想像と、うれしい想像とが一時に混乱した。しかし恐ろしい想像の方が強くなった。「きっと<persName ref="#kichisaburo">吉三郎</persName>だ。これはろくなことではない。」彼はもはやこう決め込みながら、寝間着の<ruby><rb>襟</rb><rt>えり</rt></ruby>をかき合わせて立ち上がった。そして、二歩ばかり歩いてその窓の<ruby><rb>雨戸</rb><rt>あまど</rt></ruby>をあけた。</p>
+        <p>「だれです。」</p>
+        <p>彼はいって<ruby><rb>闇</rb><rt>やみ</rt></ruby>の中をにらんだ。</p>
+        <p>「あたしよ！」</p>
+        <p>そこに立っていた一人の女性は<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>を取った。</p>
+        <p>「<persName ref="#kimika">君香</persName>か！」彼はギョッとして思わず叫んだ。「ど、どうしたんだ！」彼は目をこすった。</p>
+        <p>「しっ！　静かに！」<persName ref="#kimika">君香</persName>はあたりをすばやく見回しながらいった。「ちょっと出ていらっしゃい！　大変なことなのよ！」</p>
+        <p>「なんだ！」</p>
+        <p><persName ref="#yusa">裕佐</persName>はヒラリと窓を飛びこえて外へ出た。そして戸をしめた。</p>
+        <p>「あなた、大変よ！」<persName ref="#kimika">君香</persName>は鋭くいった。「あなたぐずぐずしていると明日にもつかまるのよ！　だからさア、早くあたしといっしょに逃げなさい！」</p>
+        <p>「いったい、なんのことなんだ！　どうしたわけなんだ！」</p>
+        <p>「あなたの作った聖像がいま奉行所で問題になっているのよ。そしてあなたは切支丹ということになったらしいのよ！」</p>
+        <p><persName ref="#yusa">裕佐</persName>にはなんのことかさっぱりわけがわからなかった。</p>
+        <p>「あなたにわからないのはあたりまえよ、だけど、つまりあの聖像はあんまりよくできすぎたのよ。むろんあたしは見たわけじゃないけれど、お役人たちはたしかにあなたのお作の神聖な力に打たれたのよ。それであんな物を切支丹に見せたらそれを踏む気はしなくなって、かえってなおありがたがるだろうっていうのよ。」</p>
+        <p>「そんならいいじゃないか。踏み絵の目的に成功したわけじゃないか？」</p>
+        <p>「成功しすぎたのよ。それであんな<ruby><rb>神々</rb><rt>こうごう</rt></ruby>しいものを作ることのできるあなた自身もやっぱり切支丹にちがいない。それもよっぽどの深い信心にちがいないってことになったのよ。」</p>
+        <p>「ヘッ！　ばかな！　なんのこった！」<persName ref="#yusa">裕佐</persName>は<ruby><rb>呆然</rb><rt>ぼうぜん</rt></ruby>となりながらも吐き出すように怒鳴った。「いったいどこから、いつ、だれがそんなことをいうのをお前聞いたんだ！」</p>
+        <p>「あの赤毛の犬から聞いたのよ。今夜、たったさっき……」</p>
+        <p>「赤毛の犬？　<persName ref="#ferreira">フェレラ</persName>から？」</p>
+        <p>「そうよ。あの犬、近ごろ少し気が変になって、まるであたしのところに入りびたりなのよ。そうしてむこうはむこうであなたに<ruby><rb>妬</rb><rt>や</rt></ruby>いてるのよ。」</p>
+        <p>「何、おれに妬いてる？　犬のくせに……」</p>
+        <p>「おまけに悪いことには、あいつ、あなたをてっきり信者だと思いこんでるらしいのよ。」</p>
+        <p>「そうか。」<persName ref="#yusa">裕佐</persName>はどきんと思いあたる顔でうなずいた。「それは不思議もないが、……じゃ、それでやつ……」</p>
+        <p>「もっともあいつが計らったことだとも思えないわ。どうとも知れないけど、あいつ、あたしを<ruby><rb>憤</rb><rt>おこ</rt></ruby>らせることをこわがっているから。そんなことをしたら、あたし、あいつを殺しちまうから。」<persName ref="#kimika">君香</persName>はちょっと言葉を切った。「でもあたしに振られたら、きっとあなたを告発するにきまっているから、あたしだってたいていじゃアなかったわよ。あの犬になめさしとくには。そうしてうまく安心さして、さんざんあなたの悪口をいいながら、とうとうばらさしてやったのよ。今度のことを！」</p>
+        <p>「悪かった！　おれがばかだったよ。ゆるしてくれ！」<persName ref="#yusa">裕佐</persName>は強く握りしめた女の手に<ruby><rb>接吻</rb><rt>せっぷん</rt></ruby>していった。「しかし、いくらやつが意趣がえしにどんなに<ruby><rb>讒訴</rb><rt>ざんそ</rt></ruby>をしたって、こっちがそうでないことを明らかにすれアなんでもないじゃないか！」</p>
+        <p>「まあ、どうしてそんなことができる？　どんな方法でよ！　そんな誓いぐらいで疑いの晴れるものなら、あたしだってこんな心配してあげはしないわ。あなた自分の心と胸を断ち割ってお役人に見せることができて？」</p>
+        <p>「よし！　そんなら逃げるばかりだ！」しばらく無言で考えたあとで彼は決然とつぶやいた。「おもしろい！　君といっしょならどんな無人島へでも行くぞ！　だがちょっと待ってくれ！」</p>
+        <p>「何か取って来るの？　そんな暇はなくってよ！」と女はいった。「お金はあたしが少しは持っていてよ！　さアお逃げなさい。すぐ！」</p>
+        <p>「だが、どこへ！」</p>
+        <p>「<placeName ref="#amakusa">天草</placeName>へ行くのよ！　あたしの<ruby><rb>故郷</rb><rt>おくに</rt></ruby>へ！　あそこは無数の島があって昔から奉行の手が届かないただ一つの隠れ場所なのよ。そしてあたしの家にいらっしゃい！　そしてしばらく様子を見ているのよ。それはあたしが知らせてあげるわ！」</p>
+        <p>「なんだ。お前は行かないのか！」</p>
+        <p>「あたしは行くことはできないのよ！　行きたいんだけれど。今夜あたしが飛び出たんでもうあたしのあとには追っ手がついているのよ。今ごろはきっともう大騒ぎをしてさがしていてよ。そしてあたしがつかまればあなたもつかまってしまうわ！」</p>
+        <p>「だれが一人で行くものか！　おれはそんなところで寂しさと憤慨のために死んじまうだろう。お前がつかまればおれもつかまってやるばかりだ！」</p>
+        <p>「よくってよ。とにかくそこまでいっしょに行くわ！　さアこのあたしの<ruby><rb>丹前</rb><rt>たんぜん</rt></ruby>におくるまりなさい。」</p>
+        <p>二人は<ruby><rb>闇</rb><rt>やみ</rt></ruby>と風の中を<placeName ref="#urakami"><ruby><rb>浦上</rb><rt>うらかみ</rt></ruby></placeName>の方へ向かって走り出した。</p>
+        <p><persName ref="#yusa">裕佐</persName>には運命の実相はどうしても信じられないのだった。それは本気で信じられるにはあまりに<ruby><rb>唐突</rb><rt>とうとつ</rt></ruby>なばかばかしい話に思われた。しかし身うけしたいと願っていた女と夜逃げをするということが彼の若い心に浪漫的な興味をいくらか燃やしていた。そしてその興味が、それでもなお一方に起きる恐怖ともつれ合って彼をおののかせていた。しかし峠の茶屋にさしかかった時彼女はいった。</p>
+        <p>「お待ちなさい！　ことによったらもうここに来ているかもしれなくってよ。あたし見てやるわ。あなたいっしょに来ちゃいけなくてよ！」</p>
+        <p>そして彼女は一人で進んで行き、中をちょっとのぞくと彼を手招ぎした。</p>
+        <p>「いったいなんということになったのであろう！　もしこれがほんとうに冗談でないとすると！　そしてだれが、なんの権利があって、人をこんな目にあわせるのだ！」</p>
+        <p>と思うと、<persName ref="#yusa">裕佐</persName>はむらむらと殺伐な怒りに燃えたつのであった。そして彼女のあとについて、その茶屋へはいって行こうとした時彼女の叫び声が聞こえた。</p>
+        <p>彼女は早くも彼らを見つけて、隠れていた二人の男に手を押えられてもだえていた。</p>
+        <p>「お離しってば！　つかまってやるから！」そして彼女は男の手にかみついた。</p>
+        <p>「ふむ。お前だけのことならいくらでも離してやるさ！」男は軽く女の頭を突きのけながらいった。</p>
+        <p>「だがほかにだれかいるだろう。お前がわざわざこの夜半にかけつけて駆け落ちを誘った色男がよ！」</p>
+        <p>「ここにいる！」</p>
+        <p><persName ref="#yusa">裕佐</persName>はそこへ出て突っ立ちながらいった。「それがどうしたんだ！」</p>
+        <p>二人の男はうれしそうににやりと笑った。そして女の手を離した。</p>
+        <p>「へ、案の<ruby><rb>定</rb><rt>じょう</rt></ruby>おいでなすったな。色男。用事は馬にあるんじゃない。この<ruby><rb>牝馬</rb><rt>めすうま</rt></ruby>に乗っている貴様にあるんさ。」</p>
+        <p>そういった男は<ruby><rb>降誕祭</rb><rt>ナタラ</rt></ruby>の晩に<persName ref="#yusa">裕佐</persName>がその手くびを握った与力であった。</p>
+        <p>「貴様は切支丹だとあの時いったっけな。」</p>
+        <p>「皆を助けてやりたいためにだ！　だがおれが切支丹だったところでそれがなんだ！　貴様になんの関係があるんだ！」</p>
+        <p>「あたりまえよ。あってたまるもんかな！　だが国家にはあるんだそうだ。」</p>
+        <p>「お前さんたちこの人を切支丹だと思っているのかい！　<ruby><rb>藪</rb><rt>やぶ</rt></ruby>にらみの当てずっぽにもほどがあるよ！」</p>
+        <p>と<persName ref="#kimika">君香</persName>はつんざくようにあざ笑った。「もしこの人がほんとにそうだったらなんで自分の仲間を殺すような踏み絵なんぞを作るだろう！　それだけでわからないってまあなんてばかな役人だろうね！」</p>
+        <p>「役人がばかだろうとおれたちの知ったこっちゃねえや。とにかくいっしょに来りゃいいんだ。さあ。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は無念そうに黙って考えていたが、キョトキョトした娘の持って来た熱い茶を飲んだ。</p>
+        <p>「よし、行くだけは行ってやってもいい。そしておれを切支丹だと疑うならおれはあの踏み絵を自分で踏んでやろう。そうすりゃいいわけだナ！」</p>
+        <p>彼は茶を飲む事によって考えたことをいった。</p>
+        <p>「ところがあの踏み絵を作った者の罪は、それを踏まない者の罪よりは重いんだそうだ。」<ruby><rb>復讐心</rb><rt>ふくしゅうしん</rt></ruby>に燃えた目を横に向けながら与力はいった。</p>
+        <p>「まあなんですって？」<persName ref="#yusa">裕佐</persName>よりも早く<persName ref="#kimika">君香</persName>は叫んだ。「それならいったい踏み絵というものの意味はどこにあるんだろう！　そんなことならわざわざ面倒な踏み絵なんぞを踏ませなくったって疑った者をただ片っぱしから殺して行きゃいいわけじゃないか。その方がよっぽどお前さんたちらしいわ！」</p>
+        <p>「まったくさな！　たしかに理屈はあらア。」と与力はいった。「奉行の前でそういって見ろよ！　そのとおり！　そうしたら多分ご放免にあずかるだろうて！」</p>
+        <p>「さア。貴様はおとなしく<ruby><rb>楼</rb><rt>うち</rt></ruby>へ帰れ。な。親方は心配してら。大事な玉がにげちゃったって。」</p>
+        <p>ともう一人の男が<persName ref="#kimika">君香</persName>の手を柔らかく取っていった。「多分明日の晩あたりはまたおめでたくこの色男にあえるだろうよ。そしてお祝いの<ruby><rb>酒盛</rb><rt>さかも</rt></ruby>りでもやるがいいやな。」</p>
+        <p>「もうどうせにげたってだめだよ。お前のために網の目のような非常線を張られてあるんだからな。」与力はまた<persName ref="#yusa">裕佐</persName>に向かっていった。「神妙について来るのが一番<ruby><rb>悧巧</rb><rt>りこう</rt></ruby>だよ。」</p>
+        <p>そして四人は茶屋を出た。</p>
+      </div>
+      <div type="chapter" xml:id="sec19" n="19">
+        <head>一八</head>
+        <p><persName ref="#yusa">裕佐</persName>は奉行の前の訊問において態度が「尊大で皮肉」であったのが非常な損であった。そして彼に「手くびをつかまれて動けなかった」与力の<ruby><rb>復讐心</rb><rt>ふくしゅうしん</rt></ruby>がその損をなお大きくした。</p>
+        <p>「とにかく踏み絵を踏まない者は処刑をうけるのが<ruby><rb>掟</rb><rt>おきて</rt></ruby>だ。なぜうけるかというと国法にそむく切支丹、つまり国賊ということになるからだ。それはわかっているな。そして貴様はあの時自分でわざわざその国賊であることを与力に宣言してくれたそうだからな。」と代官はいった。</p>
+        <p>「しかし君たちが僕を<ruby><rb>疑</rb><rt>うたぐ</rt></ruby>り出したのは君たちに頼まれたので僕が作ったあの踏み絵からではないのか。」と<persName ref="#yusa">裕佐</persName>はいった。「だから僕はそれを踏んでやろう。なんならそれをここでぶちこわして見せてやろう。君たちの目の前で。」</p>
+        <p>彼は<persName ref="#kimika">君香</persName>が与力にいった言葉を繰り返した。</p>
+        <p>「いや、わしはあの像が傑作であることは認めるんじゃ。」奉行は穏やかに口を開いた。「あの傑作はわしの方で大事に所蔵するだろう。信者の心をほんとうに<ruby><rb>試</rb><rt>た</rt></ruby>めすにはあれくらいの傑作でなくちゃ役に立たぬでな。その点君の功労は<ruby><rb>永</rb><rt>なが</rt></ruby>く記念しておくだろう。しかし」奉行はさすがにややいい渋りながらいった。「はなはだ奇怪な行きがかりになったわけではあるが、あの作に現われている君の信仰、――それはたしかに普通一般の信者のそれよりは力強く、深く、おそるべきものであるが、ここにいるすべての同僚が等しくそれを認めるがゆえに、われらは君を……」</p>
+        <p>「ま、待ってください！」<persName ref="#yusa">裕佐</persName>はどもりながらやっとさえぎった。「その、ここにいるすべての同僚とおっしゃるのは、実はただ一人の紅毛人のことじゃないんですか。その紅毛人の<ruby><rb>讒訴</rb><rt>ざんそ</rt></ruby>のためじゃないんですか。」</p>
+        <p><persName ref="#yusa">裕佐</persName>は<persName ref="#ferreira">フェレラ</persName>を見回したが、<persName ref="#ferreira">フェレラ</persName>の大きな姿はなぜかその広い法廷内には見当たらなかった。「君とその紅毛人とどんな関係があるか知らぬが、その紅毛人とこの法廷とはなんの関係もない。」奉行は冷ややかに答えた。「紅毛人は<placeName ref="#nihon">日本</placeName>の国法を裁く権利を持っていない。それでわれらは国法によって、君が刑に値することを宣告しなければならない。それはすなわち君が信徒として、また一種の伝道者として、ばてれん同様重んぜらるべき者であると認めるからじゃ。」</p>
+        <p>「刑！　刑とはどんな刑だ。」</p>
+        <p>「ばてれんと同じだ……。」</p>
+        <p>「ばてれんと同じ……。死刑か⁉」</p>
+        <p>そう叫ぶと<persName ref="#yusa">裕佐</persName>はまっさおになり、<ruby><rb>土気色</rb><rt>つちけいろ</rt></ruby>になり、そしてふらふらと倒れそうになった。</p>
+        <p>「さよう。はなはだ遺憾ではあるが――」と奉行は語調を柔らげて宣告した。「しかし、それだけでは、いな、それだけでも充分処刑の理由にはなっているのじゃが、さらに万全を期していうならば、それだけの理由をもって君を処刑することはまだいくぶん審議不足の推量による処分であるとの非難をうけても仕方がないといえる。われらは法官としてどこまでも想像の推量を排し、現実の証拠を尊重する。われらは決して判決を急ぐ者ではない。じゃからして、その証拠を見ようではないか。今度の踏み絵の調査においてじゃ、君の傑作がもしわれわれの不吉な想像を裏切らなかったら、君は自分の仕事の成功の証明に免じて<ruby><rb>瞑</rb><rt>めい</rt></ruby>してくれなければならぬ。が、反対にもしわれわれの想像を裏切ったとしたらじゃ。君は生命の無事を大いに祝すべきじゃ。」</p>
+        <p>「そ、それはひどい！　あまりむちゃくちゃだ！　そんなばかな、無法な……」</p>
+        <p><persName ref="#yusa">裕佐</persName>は<ruby><rb>地団太</rb><rt>じだんだ</rt></ruby>を踏んだ。しかしその時はすでに<ruby><rb>訊問者</rb><rt>じんもんしゃ</rt></ruby>は席をたち、数人の男が彼の両腕を押えてひき立てていた。</p>
+        <p>かくて、審問は終わった。</p>
+        <p>その晩<placeName ref="#nagasaki">長崎</placeName>の町には、踏み絵の鋳造者<persName ref="#yusa">萩原裕佐</persName>が「特別なお<ruby><rb>慈</rb><rt>なさ</rt></ruby>けをもって」ひそかに<ruby><rb>斬罪</rb><rt>ざんざい</rt></ruby>に処せられるそうだといううわさがひろまった。</p>
+      </div>
+      <div type="chapter" xml:id="sec20" n="20">
+        <head>一九</head>
+        <p><date when="--01-28">正月の二十八日</date>から<date when="--01-31">三十一日</date>まで、四日間にわたって踏み絵の儀式は奉行所において荘重に行なわれた。そしてその儀式には<persName ref="#yusa">裕佐</persName>の作「青銅のピエタ」がつかわれた。</p>
+        <p>三日間のうちに十五名の踏み得ざりし者が現われた。かかることは前例のないことであった。</p>
+        <p>最後の日、さらに四人の者がそれを踏まないことのために早朝から捕えられ、「<ruby><rb>検</rb><rt>しら</rt></ruby>べ」のために残された後、<persName ref="#monica">モニカ</persName>は<ruby><rb>白無垢</rb><rt>しろむく</rt></ruby>の装束を着け、したたるごとき黒髪を一ところ<ruby><rb>元結</rb><rt>もとゆい</rt></ruby>で結び、下げ髪にしてしずしずと現われた。</p>
+        <p>水を打ったごとき式場の中央に<ruby><rb>藁莚</rb><rt>わらむしろ</rt></ruby>を敷き、その上に低い台を置き、さらにその上に踏み絵は置かれてあった。そしてその左右には与力が向かい合いに<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>に腰をおろし、一々の者の「踏み方」をきっとにらみ見ていた。</p>
+        <p><persName ref="#monica">モニカ</persName>は神色自若としてその前に進み、ひざまずき、まずその像を手にとってじっと打ちながめた。</p>
+        <p>「あああなたは、やはり信心を持っていらっしったのですね、ありがとう。」</p>
+        <p>役人にも聞こえぬほどの低い声で彼女はこうつぶやいた。そして急にそれを抱きかかえるごとくひしと胸に押しあて、接吻し、またそれをうやうやしく台の上におくと手を合わせて拝んだ。もちろん彼女はその場に引き立てられた。</p>
+        <p><persName ref="#monica">モニカ</persName>のしらべは朝の五ツ半時ごろであったが、二千人以上の「踏み方」がおわって、<placeName ref="#maruyama">丸山</placeName>連の番になったころにはもう日暮れに近かった。</p>
+        <p>その<placeName ref="#maruyama">丸山</placeName>連の中に<persName ref="#kimika">君香</persName>がいたことはいうまでもなかった。彼女は<persName ref="#monica">モニカ</persName>と同じことをし、そして自分をつかまえた役人にいった。</p>
+        <p>「あたしは信者ではないのよ。それはほんと。だけどあたしにはこのお像を踏むことはできないわ！　人間としてそんなことはできないわ。さあ<ruby><rb>縄</rb><rt>なわ</rt></ruby>をおかけなさい。<placeName ref="#jigoku">地獄</placeName>の犬殺しさんたち。」</p>
+        <p>そして彼女はひき立てられながらいった。「ああうれしい！　あたしは今日の日をどんなに長く待っていただろう！」</p>
+        <p>すべては<persName ref="#yusa">裕佐</persName>の仕事の<ruby><rb>勝閧</rb><rt>かちどき</rt></ruby>を宣すると同時に、はしなくもその運命の不利を動かすべからざるものとする結果になったのであった。</p>
+        <p>翌日の夕方、<placeName ref="#tateyama">立山</placeName>の刑場には二十一の新しい十字架がたてられていた。しかしそこにひき立てられた者は二十一人ではなかった。二十一人がその十字架にくくりつけられた後、さらに二人の男囚が意外なところからひき立てられて来た。それは長老<persName ref="#rubino">アントニオ・ルビノ</persName>と<persName ref="#yusa">萩原裕佐</persName>とであった。</p>
+        <p>この二人の面被がはがされた時、二人の女が十字架の上で叫び声をあげ、そしてその一人はその場に気絶をしたまま息を引きとった。それは<persName ref="#kimika">君香</persName>であった。彼女はその一週間前からまったく絶食していたのであった。</p>
+        <p>長老は一同に最後の言葉をかけることができないように、その口を布でふさがれていた。</p>
+        <p>「ああ長老様！　もう何もおっしゃることはございません。あたしたちは勝ちました。<placeName ref="#tengoku">天国</placeName>はあたしたちの物でございます！」</p>
+        <p>「おおなんという光栄な喜び！」<persName ref="#monica">モニカ</persName>は煙の中でもう一度こう叫んだ。</p>
+        <p><persName ref="#yusa">裕佐</persName>は刀を持って自分の方に進んで来る男を見ると、だしぬけにその胸をけ飛ばした。そしてまっしぐらに竹矢来の方に向かって走りながら「助けてくれ！　だれか！　だれか！　<persName ref="#kichisaburo">吉三郎</persName>！」と叫んだ。</p>
+        <p>血走った彼の目は狂うごとくこの友をさがしていた。あたかもその友の救いに最後の望みをかけていたように。しかし彼の縛された手には<ruby><rb>縄</rb><rt>なわ</rt></ruby>がついていた。その縄で彼は後ろに引き倒された。彼は起き上がり、そして自分を捕えに来た者を再び<ruby><rb>蹴</rb><rt>け</rt></ruby>ろうと足を上げた時、</p>
+        <p>「助けてやろう、おなさけだ！」</p>
+        <p>という声が後ろにして、白刃が背中から彼の胸を突き抜いた。彼は足を宙に上げたままたおれた。</p>
+        <p>かくして奇怪なる運命のあやつりによって生涯としては二十七を最期に、仕事としては「ただ一つの<ruby><rb>聖像</rb><rt>ピエタ</rt></ruby>」をこの世への供物として、彼はあえなく死んだ。</p>
+        <p>その時その刑場で一人の版画師が「二人の女と南蛮鋳物師の死」という<ruby><rb>諷刺画</rb><rt>ふうしが</rt></ruby>を描いていた。</p>
+        <p>「ああおかげでわしにもまた傑作ができたわ。」</p>
+        <p>その男は、矢立てを帯に突っ込むとこういって、そのなまなましい残忍な画を役人たちの前で一同に見せながらトゲトゲしく大きな口をあいて笑った。いうまでもなくそれは<persName ref="#magoshiro">孫四郎</persName>であった。</p>
+        <p>しかし「あなたはやはり信心を持っていらっしったのですわね！」と<persName ref="#monica">モニカ</persName>がいったことは誤りであった。</p>
+        <p><persName ref="#yusa">萩原裕佐</persName>は最後まで決して切支丹ではなかったのである！　彼はただ一介の南蛮鋳物師にすぎなかったのである！</p>
+        <p>――<date when="1922-11-29">大正十一年十一月二十九日</date>――</p>
+        <p>――<date when="1939">昭和十四年</date>改訂――</p>
+        <p>付記　　<date when="1661">寛文</date>のころ<placeName ref="#nagasaki">長崎</placeName><placeName ref="#furukawamachi">古川町</placeName>に<persName ref="#yusa">萩原</persName>という南蛮鋳物師がいたこと、そしてその踏み絵の<ruby><rb>神々</rb><rt>こうごう</rt></ruby>しくできすぎたため信者と誤られて殺されたことは事実である、また拷問の仕方や、始めの歴史叙説はむろん、<persName ref="#ferreira">沢野忠庵</persName>という<ruby><rb>転</rb><rt>ころ</rt></ruby>び<ruby><rb>伴天連</rb><rt>ばてれん</rt></ruby>が踏み絵を発明したことも事実であり、<persName ref="#rubino">アントニオ・ルビノ</persName>というばてれんが、殺されたことも事実である。ただしそれらが同時代であったかどうかは自分は知らぬ。この作の生まれるヒントを与えてくれた<placeName ref="#nagasaki">長崎</placeName><persName ref="#nagami">永見</persName>氏にここで記念としてお礼を述べておく。なお参考として<persName ref="#ono">小野</persName>氏著「切支丹の殉教者」及び「<placeName ref="#nihon">日本</placeName>における公教会の復活」「幕府時代の<placeName ref="#nagasaki">長崎</placeName>」「<placeName ref="#nagasaki">長崎</placeName>年表」を見たことを記しておく。またこの作にはことさらに多少の時代錯誤をあえて許しておいた。たとえば<date when="1661">寛文</date>時代に浮世絵の版画が<placeName ref="#nagasaki">長崎</placeName>にあった事などは歴史的には錯誤であるが、元来純然たる歴史小説ではなく、史材にヒントを得た余の創作であるから、史的事実は歴史に<ruby><rb>拠</rb><rt>よ</rt></ruby>ってもらうまでのことである。</p>
+      </div>
+      <div type="chapter" xml:id="sec21" n="21">
+        <head>後記</head>
+        <p>この作の主人公<persName ref="#yusa">萩原裕佐</persName>を小説や脚本に書いた人は、自分のほかにも二三いる。いずれもこの作より後に発表されたもので、自分は読んでいないが、この史料に接した作家はだれしもその感動すべき数奇な悲劇的運命に創作の感興をそそられたのであろう。自分は当時、<date when="1923">大正十二年</date>「改造」新年号にこれを発表するため、筆を急ぎ、また枚数なども雑誌のおのずからな制限につい縛られ、終わりの方は、ほとんど<ruby><rb>梗概</rb><rt>こうがい</rt></ruby>風な書き方になってしまった。そのためストーリーの運びの切り盛りと密度との上に均衡がとれず、書き出しの調子の緩慢なのに比して、あとへ行くほど駆け足の急調になり、しかも無理にぎゅうぎゅう押しこんだようなはなはだ不体裁なものとなってしまった。急いだことが悪かった上に、もともと読み切りとして雑誌に発表することが――ことに自分のような書き方をする者にとって――無理だったのである。</p>
+        <p>その後単行本や文庫なぞに入れるに際して多少手を入れはしたが、病中であったりしたため十分な添削ができず、不満なまま版を重ねたりした。ところが<date when="1935">昭和十年</date>ごろであったか、一高教師であった<persName ref="#weidinger">ワイディンガー</persName>というドイツ人がある時突然手紙をよこし、この小説をドイツ文に翻訳したこと、すでに翻訳は完了していて、近日帰国の上<placeName ref="#leipzig">ライプチヒ</placeName>で<ruby><rb>上梓</rb><rt>じょうし</rt></ruby>する運びとなっているから、今さら訂正等のことはいい出してくれないようにとの申し込みに接した。自分は驚き、それは<ruby><rb>一言</rb><rt>ひとこと</rt></ruby>前にいってくれなければ困る。実はあの原作にははなはだ不満があり、その手入れをしたものが自分の所にあるから、作者の意思もくんで、面倒ではあろうが、翻訳はそれによって改訂のように直してもらいたいと請求した。改訂のものが手もとにあることはもちろん事実であった。しかし<persName ref="#weidinger">ワ氏</persName>は<ruby><rb>頑</rb><rt>がん</rt></ruby>として<ruby><rb>肯</rb><rt>き</rt></ruby>かず、それはもはや間に合わぬ。また作者の後日の改訂が必ずしも作を良くするとは限らないゆえ、断じて応じ難い。もししいてというなら、当方には弁護士もいるから、場合によってはどうのこうのとまるで<ruby><rb>脅嚇</rb><rt>きょうかく</rt></ruby>であった。</p>
+        <p>自分はせっかくのことで、また日本文壇のいくらか名誉不名誉にも関することだからと考え、<ruby><rb>慍</rb><rt>いきどお</rt></ruby>りを<ruby><rb>怺</rb><rt>こら</rt></ruby>えて、氏を家に招いて懇談し、また同じ一高教師であった<persName ref="#katayama">片山敏彦</persName>君からも説得してもらうように頼んだが何もかも無効で、<persName ref="#weidinger">ワ氏</persName>はそのままプイと帰国してしまった。何か月かの後、自分は<persName ref="#iwanami">岩波茂雄</persName>氏の<ruby><rb>部屋</rb><rt>へや</rt></ruby>で偶然そこに届いていた<placeName ref="#leipzig">ライプチヒ</placeName>版の独訳「青銅の基督」を見、一部をもらって帰ったが、<persName ref="#weidinger">ワ氏</persName>から自分の所へはもとより贈っても来ず、ことに<persName ref="#weidinger">ワ氏</persName>が牧師であると聞いているだけ、その人柄の下等さに自分はあきれるばかりであった。</p>
+        <p>そんなわけで岩波文庫の版は絶版にしてもらったが、その後一、二年の後、さらに今度は国際文化協会からの話で、この作を<placeName ref="#brazil">ブラジル</placeName>へ贈るにつきポルトガル語に訳すに当たり、まず仏文に訳したいからといって<persName ref="#yamadakiku">山田キク</persName>女史が<persName ref="#obase">小場瀬</persName>氏と二人で見えた。それで今度こそは間違いないように改訂のものを渡してたのみ、これはもちろんまだ手をつけた仕事でなかったので、その通りになった。その仏文の訳が<ruby><rb>原</rb><rt>もと</rt></ruby>になって、その後さらにイタリー文にも訳され、かの地の新聞に連載され、何千リラ（<placeName ref="#nihon">日本</placeName>の金で二、三百円のものだった）を受け取ったりした。むろん材料の関係ではあるが、自分の作品中でこんなに他国語に訳されたものはほかに一つもない。</p>
+        <p>岩波の文庫のものはその絶版のままになっていたが、その後（<date when="1943">昭和十八年</date>）聖紀書房という<ruby><rb>書肆</rb><rt>しょし</rt></ruby>から歴史物集として<ruby><rb>上梓</rb><rt>じょうし</rt></ruby>されたのがこの改訂版の最初であった。それは最初のものから見ると、原稿にして十枚以上も長くなっており、よほど荒筋じみた所は少なくなったが、それでも最初の構図の徹底的改訂というわけには行かず、やはりあとから見ればまだまだ<ruby><rb>梗概的</rb><rt>こうがいてき</rt></ruby>性格は抜けず、また筋の運びの上にもこうすればもっとおもしろくなったのにと残念に思う点は、方々に見いだされてくる。しかし二十何年も前に書いたものを一々そういって現在満足の行くように書き改めていてはキリがなく、また不備にして拙劣のように思える所があっても、若い時の作にはその時ならでは書けぬ一種の美点もないではない。それでまあまあこの作はこれだけのものとして我慢し、放免することにした。</p>
+        <p>「<persName ref="#yusa">萩原裕佐</persName>は最後まで決して切支丹ではなかったのである！　彼はただ一介の南蛮鋳物師にすぎなかったのである！」</p>
+        <p>という結末の文句なぞは<ruby><rb>蛇足</rb><rt>だそく</rt></ruby>で、あんな説明はなくともすでに充分わかっているといってくれた人もあり、その通りと同感しながらも、それも削らず、ほうっておくことにした。</p>
+        <p>最後に一言しておきたいことは、普通ならばこういう切支丹ものを扱うに当たっては、ことにここではその舞台である<placeName ref="#nagasaki">長崎</placeName>の情緒をもっと浮かび出させるために、長崎弁を人物に使わせたり、いわゆるエキゾチックのにおいを出すことに努めたり、要するにどこまでも趣味的あそび気分を出ないものに終わっているのが常である。自分はそれがいやであった。切支丹の史実というものは実に日本歴史の中でもある意味で最も日本国民の頼もしい美点を発揮した事柄であり、また世界史の一端として見ても重大なポイントをなす尊い史料である。それを――今日はともかくとし、――<date when="1912">大正時代</date>のころまでは文壇詩壇の人々がまったくただディレッタント式に道楽半分の気分で取り扱うにすぎないことが自分にははなはだ物足りず、むしろ真剣な悲劇的史実に対する不謹慎な<ruby><rb>冒瀆的</rb><rt>ぼうとくてき</rt></ruby>態度として不愉快に思われた。それで自分はわざとその反対な正面的書き方をした。作中の会話を長崎弁にするくらいのことは、自分の郷里も<placeName ref="#nagasaki-ken">長崎県</placeName><placeName ref="#omura"><ruby><rb>大村</rb><rt>おおむら</rt></ruby></placeName>で、知人もいくらもいるので、それに見せて直すことはなんでもなかったのである。</p>
+        <p>先日この作はラジオ・ドラマのため脚色され、放送された。そして自分はそれを聞きながらやはり今でも涙ぐんだ。一つは若い時の制作の情熱に打たれ、一つはその物語そのものに打たれて。といってももちろん半分以上作りものではあるが、自分はやはりこの作には特別な愛を感じている。欠点はいろいろあってもやはり自分でなければ書けないものが出ているからである。</p>
+        <p>――<date when="1950-07">一九五〇・七</date>――</p>
+        <p>長与善郎</p>
+      </div>
+    </body>
+  </text>
+</TEI>

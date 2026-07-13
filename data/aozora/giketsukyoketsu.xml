@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>義血侠血</title>
+        <author>泉鏡花</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>義血侠血</title><author>泉鏡花</author>
+          <note>青空文庫。底本：「高野聖」角川文庫、角川書店。1971（昭和46）年4月20日改版初版発行。1999（平成11）年2月10日改版40版発行。初出：「読売新聞」。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000050/card363.html">https://www.aozora.gr.jp/cards/000050/card363.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="shiraito">
+        <persName>滝の白糸</persName>
+        <note>水芸の太夫。本名は水島友(みずしまとも)。越後新潟の生まれ。馭者の村越欣弥に惚れ込み、東京遊学の学資を仕送りする。強盗に金を奪われ、金策のため六勝亭の夫婦を殺害して死刑を宣告される。「白糸」「水島友」「村越友」「お友」とも(底本の誤植『自糸』1件も同一人物として同じ id に束ねた)</note>
+      </person>
+      <person xml:id="kinya">
+        <persName>村越欣弥</persName>
+        <note>高岡片原町の生まれ。金沢の士族。乗り合い馬車の馭者から、白糸の仕送りで東京に遊学し、金沢地方裁判所の検事代理となる。白糸を殺人犯として起訴し、宣告の夕べに自殺する。「金さん」「欣さん」「欣様」「金公」とも</note>
+      </person>
+      <person xml:id="kirita">
+        <persName>桐田</persName>
+        <note>兼六園内の席貸し「六勝亭」の主翁。金満家の隠居。夫婦ともに白糸に殺害される</note>
+      </person>
+      <person xml:id="kichiko">
+        <persName>吉公</persName>
+        <note>高岡石動間の乗り合い馬車の客引きの小僧。馭者の欣弥から「吉公」と呼ばれる</note>
+      </person>
+      <person xml:id="chomatsu">
+        <persName>長松</persName>
+        <note>猿芝居の猿の名。年増の女に連れられ金沢から福井へ発つ(名を持つ動物)</note>
+      </person>
+      <person xml:id="chiyoko">
+        <persName>千代公</persName>
+        <note>長松と同じ猿芝居の一座の連れの呼び名。金沢は二度目という。長松(猿)のもう一匹の相方とも一座の人とも取れるが、本文からは断定できない</note>
+      </person>
+      <person xml:id="shin">
+        <persName>新</persName>
+        <note>白糸の一座の囃子方の男。天神橋で眠る欣弥を、白糸が一度「新」と見誤る</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="etchu">
+        <placeName>越中</placeName>
+        <location><geo>36.7 137.1</geo></location>
+        <note>旧国名(富山県)・概値</note>
+      </place>
+      <place xml:id="takaoka">
+        <placeName>高岡</placeName>
+        <location><geo>36.7541 137.0255</geo></location>
+        <note>越中高岡(現富山県高岡市)・概値。馬車の起点で欣弥の家がある</note>
+      </place>
+      <place xml:id="kurikara">
+        <placeName>倶利伽羅</placeName>
+        <location><geo>36.65 136.77</geo></location>
+        <note>倶利伽羅峠(越中・加賀国境)・概値。本文は「倶利伽羅下の建場」</note>
+      </place>
+      <place xml:id="isurugi">
+        <placeName>石動</placeName>
+        <location><geo>36.6752 136.8687</geo></location>
+        <note>越中石動(現富山県小矢部市)・概値。乗り合い馬車の終点</note>
+      </place>
+      <place xml:id="tateno">
+        <placeName>立野</placeName>
+        <location><geo>36.718 136.966</geo></location>
+        <note>越中立野(現高岡市立野、旧北陸道の建場)・概値。比定に幅があるため概値</note>
+      </place>
+      <place xml:id="fukuoka">
+        <placeName>福岡</placeName>
+        <location><geo>36.7009 136.9077</geo></location>
+        <note>越中福岡(現高岡市福岡町)・概値。馬車の休憩所がある建場</note>
+      </place>
+      <place xml:id="kanazawa">
+        <placeName>金沢</placeName>
+        <location><geo>36.5613 136.6562</geo></location>
+        <note>加賀金沢(現石川県金沢市)・概値。物語の主舞台</note>
+      </place>
+      <place xml:id="asanogawa">
+        <placeName>浅野川</placeName>
+        <location><geo>36.5747 136.66</geo></location>
+        <note>金沢市街を流れる浅野川(浅野川大橋付近)・概値。磧に見世物小屋が並ぶ</note>
+      </place>
+      <place xml:id="tenjinbashi">
+        <placeName>天神橋</placeName>
+        <location><geo>36.5757 136.6707</geo></location>
+        <note>浅野川に架かる天神橋(金沢市)・概値。白糸と欣弥が再会し盟約を交わす場</note>
+      </place>
+      <place xml:id="kataharamachi">
+        <placeName>片原町</placeName>
+        <location><geo>36.7452 137.02</geo></location>
+        <note>高岡片原町(現高岡市片原町)・概値。欣弥の在所</note>
+      </place>
+      <place xml:id="fushiki">
+        <placeName>伏木</placeName>
+        <location><geo>36.7906 137.0556</geo></location>
+        <note>越中伏木(現高岡市伏木、伏木港)・概値。上京の汽船便が出る港</note>
+      </place>
+      <place xml:id="echigo">
+        <placeName>越後</placeName>
+        <location><geo>37.5 138.8</geo></location>
+        <note>旧国名(新潟県)・概値</note>
+      </place>
+      <place xml:id="naoetsu">
+        <placeName>直江津</placeName>
+        <location><geo>37.1806 138.2394</geo></location>
+        <note>越後直江津(現新潟県上越市)・概値。伏木からの汽船便の着く港</note>
+      </place>
+      <place xml:id="niigata">
+        <placeName>新潟</placeName>
+        <location><geo>37.9161 139.0364</geo></location>
+        <note>越後新潟(現新潟市)・概値。白糸の生地</note>
+      </place>
+      <place xml:id="toyama">
+        <placeName>富山</placeName>
+        <location><geo>36.6959 137.2137</geo></location>
+        <note>越中富山(現富山市)・概値。白糸の巡業先</note>
+      </place>
+      <place xml:id="daishoji">
+        <placeName>大聖寺</placeName>
+        <location><geo>36.3053 136.307</geo></location>
+        <note>加賀大聖寺(現石川県加賀市大聖寺)・概値。白糸の巡業先</note>
+      </place>
+      <place xml:id="fukui">
+        <placeName>福井</placeName>
+        <location><geo>36.0641 136.2196</geo></location>
+        <note>越前福井(現福井市)・概値。白糸を雇う金主のいる地</note>
+      </place>
+      <place xml:id="echizen">
+        <placeName>越前</placeName>
+        <location><geo>36.0 136.2</geo></location>
+        <note>旧国名(福井県北部)・概値</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>東京・概値。欣弥が法律を修めるために遊学する地</note>
+      </place>
+      <place xml:id="hokkoku">
+        <placeName>北国</placeName>
+        <location><geo>36.5 136.8</geo></location>
+        <note>地域名(北陸)・概値。「北国の雪世界」</note>
+      </place>
+      <place xml:id="kenrokuen">
+        <placeName>兼六園</placeName>
+        <location><geo>36.562 136.6626</geo></location>
+        <note>金沢の兼六園(百万石の庭)・概値。見世物小屋の立つ公園で、強盗と殺人の舞台</note>
+      </place>
+      <place xml:id="kasumigaike">
+        <placeName>霞が池</placeName>
+        <location><geo>36.5619 136.6624</geo></location>
+        <note>兼六園内の霞ヶ池・概値。白糸が襲われ、入水を思い止まる汀</note>
+      </place>
+      <place xml:id="rokushotei">
+        <placeName>六勝亭</placeName>
+        <note>兼六園内にあるという席貸し(作中の設定)。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="hashiba">
+        <placeName>橋場</placeName>
+        <location><geo>36.5699 136.6636</geo></location>
+        <note>金沢市橋場町(浅野川大橋南詰付近)・概値。出刃打ちが捕らえられた交番のある地</note>
+      </place>
+      <place xml:id="kanazawa-saibansho">
+        <placeName>金沢地方裁判所</placeName>
+        <location><geo>36.5627 136.657</geo></location>
+        <note>金沢地方裁判所(現在地=金沢市丸の内)・概値。公判の場。「金沢裁判所」とも</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>義血侠血</head>
+        <p>一</p>
+        <p><placeName ref="#etchu">越中</placeName><placeName ref="#takaoka"><ruby><rb>高岡</rb><rt>たかおか</rt></ruby></placeName>より<ruby><rb><placeName ref="#kurikara">倶利伽羅</placeName>下</rb><rt>くりからじた</rt></ruby>の<ruby><rb>建場</rb><rt>たてば</rt></ruby>なる<placeName ref="#isurugi"><ruby><rb>石動</rb><rt>いするぎ</rt></ruby></placeName>まで、四里八町が間を定時発の乗り合い馬車あり。</p>
+        <p>賃銭の<ruby><rb>廉</rb><rt>やす</rt></ruby>きがゆえに、旅客はおおかた人力車を捨ててこれに<ruby><rb>便</rb><rt>たよ</rt></ruby>りぬ。車夫はその不景気を馬車会社に<ruby><rb>怨</rb><rt>うら</rt></ruby>みて、人と馬との<ruby><rb>軋轢</rb><rt>あつれき</rt></ruby>ようやくはなはだしきも、わずかに顔役の調和によりて、営業上<ruby><rb>相干</rb><rt>あいおか</rt></ruby>さざるを装えども、折に触れては紛乱を生ずることしばしばなりき。</p>
+        <p><date when="--07-08">七月八日</date>の朝、一番発の馬車は乗り合いを<ruby><rb>揃</rb><rt>そろ</rt></ruby>えんとて、<ruby><rb>奴</rb><rt>やっこ</rt></ruby>はその門前に鈴を打ち振りつつ、</p>
+        <p>「馬車はいかがです。むちゃに廉くって、<ruby><rb>腕車</rb><rt>くるま</rt></ruby>よりお<ruby><rb>疾</rb><rt>はよ</rt></ruby>うござい。さあお乗んなさい。すぐに出ますよ」</p>
+        <p><ruby><rb>甲走</rb><rt>かんばし</rt></ruby>る声は鈴の<ruby><rb>音</rb><rt>ね</rt></ruby>よりも高く、静かなる朝の<ruby><rb>街</rb><rt>まち</rt></ruby>に響き渡れり。通りすがりの<ruby><rb>婀娜者</rb><rt>あだもの</rt></ruby>は歩みを<ruby><rb>停</rb><rt>とど</rt></ruby>めて、</p>
+        <p>「ちょいと小僧さん、<placeName ref="#isurugi">石動</placeName>までいくら？　なに十銭だとえ。ふう、廉いね。その代わりおそいだろう」</p>
+        <p><ruby><rb>沢庵</rb><rt>たくあん</rt></ruby>を洗い立てたるように色揚げしたる<ruby><rb>編片</rb><rt>アンペラ</rt></ruby>の古帽子の下より、<ruby><rb>奴</rb><rt>やっこ</rt></ruby>は<ruby><rb>猿眼</rb><rt>さるまなこ</rt></ruby>を<ruby><rb>晃</rb><rt>きらめ</rt></ruby>かして、</p>
+        <p>「ものは<ruby><rb>可試</rb><rt>ためし</rt></ruby>だ。まあお召しなすってください。腕車よりおそかったら代は<ruby><rb>戴</rb><rt>いただ</rt></ruby>きません」</p>
+        <p>かく言ううちも<ruby><rb>渠</rb><rt>かれ</rt></ruby>の手なる鈴は絶えず<ruby><rb>噪</rb><rt>さわ</rt></ruby>ぎぬ。</p>
+        <p>「そんなりっぱなことを言って、きっとだね」</p>
+        <p>奴は<ruby><rb>昂然</rb><rt>こうぜん</rt></ruby>として、</p>
+        <p>「<ruby><rb>虚言</rb><rt>うそ</rt></ruby>と坊主の<ruby><rb>髪</rb><rt>あたま</rt></ruby>は、いったことはありません」</p>
+        <p>「なんだね、しゃらくさい」</p>
+        <p><ruby><rb>微笑</rb><rt>ほおえ</rt></ruby>みつつ<ruby><rb>女子</rb><rt>おんな</rt></ruby>はかく言い捨てて乗り込みたり。</p>
+        <p>その<ruby><rb>年紀</rb><rt>としごろ</rt></ruby>は二十三、四、姿はしいて満開の花の色を洗いて、<ruby><rb>清楚</rb><rt>せいそ</rt></ruby>たる葉桜の緑浅し。色白く、鼻筋通り、<ruby><rb>眉</rb><rt>まゆ</rt></ruby>に力みありて、<ruby><rb>眼色</rb><rt>めざし</rt></ruby>にいくぶんのすごみを帯び、見るだに涼しき美人なり。</p>
+        <p>これはたして何者なるか。髪は<ruby><rb>櫛巻</rb><rt>くしま</rt></ruby>きに<ruby><rb>束</rb><rt>つか</rt></ruby>ねて、素顔を自慢に<ruby><rb>胭脂</rb><rt>べに</rt></ruby>のみを<ruby><rb>点</rb><rt>さ</rt></ruby>したり。<ruby><rb>服装</rb><rt>いでたち</rt></ruby>は、<ruby><rb>将棊</rb><rt>しょうぎ</rt></ruby>の<ruby><rb>駒</rb><rt>こま</rt></ruby>を大形に散らしたる紺縮みの<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>に、<ruby><rb>唐繻子</rb><rt>とうじゅす</rt></ruby>と<ruby><rb>繻珍</rb><rt>しゅちん</rt></ruby>の昼夜帯をばゆるく引っ掛けに結びて、空色<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の<ruby><rb>蹴出</rb><rt>けだ</rt></ruby>しを<ruby><rb>微露</rb><rt>ほのめか</rt></ruby>し、素足に<ruby><rb>吾妻下駄</rb><rt>あずまげた</rt></ruby>、絹張りの<ruby><rb>日傘</rb><rt>ひがさ</rt></ruby>に<ruby><rb>更紗</rb><rt>さらさ</rt></ruby>の小包みを持ち添えたり。</p>
+        <p><ruby><rb>挙止</rb><rt>とりなり</rt></ruby><ruby><rb>侠</rb><rt>きゃん</rt></ruby>にして、人を<ruby><rb>怯</rb><rt>おそ</rt></ruby>れざる<ruby><rb>気色</rb><rt>けしき</rt></ruby>は、<ruby><rb>世磨</rb><rt>よず</rt></ruby>れ、場慣れて、<ruby><rb>一条縄</rb><rt>ひとすじなわ</rt></ruby>の<ruby><rb>繋</rb><rt>つな</rt></ruby>ぐべからざる魂を表わせり。<ruby><rb>想</rb><rt>おも</rt></ruby>うに<ruby><rb>渠</rb><rt>かれ</rt></ruby>が雪のごとき<ruby><rb>膚</rb><rt>はだ</rt></ruby>には、<ruby><rb>剳青淋漓</rb><rt>さっせいりんり</rt></ruby>として、<ruby><rb>悪竜</rb><rt>あくりょう</rt></ruby><ruby><rb>焔</rb><rt>ほのお</rt></ruby>を吐くにあらざれば、<ruby><rb>寡</rb><rt>すく</rt></ruby>なくも、その左の<ruby><rb>腕</rb><rt>かいな</rt></ruby>には、<ruby><rb>双枕</rb><rt>ふたつまくら</rt></ruby>に<ruby><rb>偕老</rb><rt>かいろう</rt></ruby>の名や刻みたるべし。</p>
+        <p>馬車はこの怪しき美人をもって満員となれり。発車の号令は割るるばかりにしばらく響けり。<ruby><rb>向者</rb><rt>さき</rt></ruby>より待合所の縁に<ruby><rb>倚</rb><rt>よ</rt></ruby>りて、一<ruby><rb>篇</rb><rt>ぺん</rt></ruby>の書を<ruby><rb>繙</rb><rt>ひもと</rt></ruby>ける二十四、五の<ruby><rb>壮佼</rb><rt>わかもの</rt></ruby>あり。<ruby><rb>盲縞</rb><rt>めくらじま</rt></ruby>の腹掛け、<ruby><rb>股引</rb><rt>ももひ</rt></ruby>きに<ruby><rb>汚</rb><rt>よご</rt></ruby>れたる白小倉の背広を着て、ゴムの<ruby><rb>解</rb><rt>ほつ</rt></ruby>れたる<ruby><rb>深靴</rb><rt>ふかぐつ</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>き、<ruby><rb>鍔広</rb><rt>つばびろ</rt></ruby>なる<ruby><rb>麦稈</rb><rt>むぎわら</rt></ruby>帽子を<ruby><rb>阿弥陀</rb><rt>あみだ</rt></ruby>に<ruby><rb>被</rb><rt>かぶ</rt></ruby>りて、踏ん<ruby><rb>跨</rb><rt>また</rt></ruby>ぎたる<ruby><rb>膝</rb><rt>ひざ</rt></ruby>の間に、<ruby><rb>茶褐色</rb><rt>ちゃかっしょく</rt></ruby>なる<ruby><rb>渦毛</rb><rt>うずげ</rt></ruby>の犬の太くたくましきを<ruby><rb>容</rb><rt>い</rt></ruby>れて、その頭を<ruby><rb>撫</rb><rt>な</rt></ruby>でつつ、専念に書見したりしが、このとき鈴の<ruby><rb>音</rb><rt>ね</rt></ruby>を聞くと<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく身を起こして、ひらりと御者台に乗り移れり。</p>
+        <p>渠の<ruby><rb>形躯</rb><rt>かたち</rt></ruby>は貴公子のごとく<ruby><rb>華車</rb><rt>きゃしゃ</rt></ruby>に、態度は<ruby><rb>森厳</rb><rt>しんげん</rt></ruby>にして、そのうちおのずから<ruby><rb>活溌</rb><rt>かっぱつ</rt></ruby>の気を含めり。<ruby><rb>陋</rb><rt>いや</rt></ruby>しげに日に<ruby><rb>黧</rb><rt>くろ</rt></ruby>みたる<ruby><rb>面</rb><rt>おもて</rt></ruby>も<ruby><rb>熟視</rb><rt>よくみ</rt></ruby>れば、<ruby><rb>清矑明眉</rb><rt>せいろめいび</rt></ruby>、<ruby><rb>相貌</rb><rt>そうぼう</rt></ruby><ruby><rb>秀</rb><rt>ひい</rt></ruby>でて<ruby><rb>尋常</rb><rt>よのつね</rt></ruby>ならず。とかくは<ruby><rb>馬蹄</rb><rt>ばてい</rt></ruby>の<ruby><rb>塵</rb><rt>ちり</rt></ruby>に<ruby><rb>塗</rb><rt>まみ</rt></ruby>れて<ruby><rb>鞭</rb><rt>べん</rt></ruby>を<ruby><rb>揚</rb><rt>あ</rt></ruby>ぐるの<ruby><rb>輩</rb><rt>はい</rt></ruby>にあらざるなり。</p>
+        <p>御者は書巻を腹掛けの<ruby><rb>衣兜</rb><rt>かくし</rt></ruby>に収め、<ruby><rb>革紐</rb><rt>かわひも</rt></ruby>を<ruby><rb>附</rb><rt>つ</rt></ruby>けたる竹根の<ruby><rb>鞭</rb><rt>むち</rt></ruby>を<ruby><rb>執</rb><rt>と</rt></ruby>りて、<ruby><rb>徐</rb><rt>しず</rt></ruby>かに手綱を<ruby><rb>捌</rb><rt>さば</rt></ruby>きつつ身構うるとき、一<ruby><rb>輛</rb><rt>りょう</rt></ruby>の人力車ありて南より来たり、疾風のごとく馬車のかたわらを<ruby><rb>掠</rb><rt>かす</rt></ruby>めて、<ruby><rb>瞬</rb><rt>またた</rt></ruby>く<ruby><rb>間</rb><rt>ひま</rt></ruby>に一点の黒影となり<ruby><rb>畢</rb><rt>おわ</rt></ruby>んぬ。</p>
+        <p>美人はこれを望みて、</p>
+        <p>「おい小僧さん、<ruby><rb>腕車</rb><rt>くるま</rt></ruby>よりおそいじゃないか」</p>
+        <p>奴のいまだ答えざるに先だちて、御者はきと面を<ruby><rb>抗</rb><rt>あ</rt></ruby>げ、かすかになれる車の影を見送りて、</p>
+        <p>「<persName ref="#kichiko">吉公</persName>、てめえまた腕車より<ruby><rb>疾</rb><rt>はえ</rt></ruby>えといったな」</p>
+        <p>奴は<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>よく頭を<ruby><rb>掻</rb><rt>か</rt></ruby>きて、</p>
+        <p>「ああ、言った。でもそう言わねえと乗らねえもの」</p>
+        <p>御者は黙して<ruby><rb>頷</rb><rt>うなず</rt></ruby>きぬ。たちまち鞭の鳴るとともに、二頭の馬は高く<ruby><rb>嘶</rb><rt>いなな</rt></ruby>きて一文字に<ruby><rb>跳</rb><rt>は</rt></ruby>ね<ruby><rb>出</rb><rt>い</rt></ruby>だせり。不意を<ruby><rb>吃</rb><rt>くら</rt></ruby>いたる乗り合いは、座に<ruby><rb>堪</rb><rt>たま</rt></ruby>らずしてほとんど<ruby><rb>転</rb><rt>まろ</rt></ruby>び<ruby><rb>墜</rb><rt>お</rt></ruby>ちなんとせり。<ruby><rb>奔馬</rb><rt>ほんば</rt></ruby>は<ruby><rb>中</rb><rt>ちゅう</rt></ruby>を<ruby><rb>駈</rb><rt>か</rt></ruby>けて、見る見る腕車を乗っ越したり。御者はやがて馬の<ruby><rb>足掻</rb><rt>あが</rt></ruby>きを<ruby><rb>緩</rb><rt>ゆる</rt></ruby>め、渠に先を越させぬまでに徐々として進行しつ。</p>
+        <p>車夫は必死となりて、やわか<ruby><rb>後</rb><rt>おく</rt></ruby>れじと<ruby><rb>焦</rb><rt>あせ</rt></ruby>れども、馬車はさながら月を負いたる<ruby><rb>自家</rb><rt>おのれ</rt></ruby>の影のごとく、一歩を進むるごとに一歩を進めて、追えども追えども先んじがたく、ようよう力衰え、息<ruby><rb>逼</rb><rt>せま</rt></ruby>りて、今や<ruby><rb>殪</rb><rt>たお</rt></ruby>れぬべく覚ゆるころ、<placeName ref="#takaoka">高岡</placeName>より一里を隔つる<placeName ref="#tateno"><ruby><rb>立野</rb><rt>たての</rt></ruby></placeName>の駅に来たりぬ。</p>
+        <p>この<ruby><rb>街道</rb><rt>かいどう</rt></ruby>の車夫は組合を設けて、建場建場に連絡を通ずるがゆえに、今この車夫が馬車に<ruby><rb>後</rb><rt>おく</rt></ruby>れて、<ruby><rb>喘</rb><rt>あえ</rt></ruby>ぎ喘ぎ走るを見るより、そこに客待ちせる<ruby><rb>夥間</rb><rt>なかま</rt></ruby>の一人は、手に<ruby><rb>唾</rb><rt>つば</rt></ruby>して<ruby><rb>躍</rb><rt>おど</rt></ruby>り出で、</p>
+        <p>「おい、<ruby><rb>兄弟</rb><rt>きょうでえ</rt></ruby>しっかりしなよ。馬車の畜生どうしてくりょう」</p>
+        <p>やにわに<ruby><rb>対曳</rb><rt>さしび</rt></ruby>きの綱を<ruby><rb>梶棒</rb><rt>かじぼう</rt></ruby>に投げ<ruby><rb>懸</rb><rt>か</rt></ruby>くれば、疲れたる車夫は勢いを得て、</p>
+        <p>「ありがてえ！　頼むよ」</p>
+        <p>「<ruby><rb>合点</rb><rt>がってん</rt></ruby>だい！」</p>
+        <p>それと言うまま<ruby><rb>挽</rb><rt>ひ</rt></ruby>き出だせり。二人の車夫は勇ましく相呼び<ruby><rb>相応</rb><rt>あいこた</rt></ruby>えつつ、にわかに驚くべき速力をもて走りぬ。やがて町はずれの狭く急なる曲がりかどを争うと見えたりしが、<ruby><rb>人力車</rb><rt>くるま</rt></ruby>は無二無三に突進して、ついに一歩を<ruby><rb>抽</rb><rt>ぬ</rt></ruby>きけり。</p>
+        <p>車夫は<ruby><rb>諸声</rb><rt>いっせい</rt></ruby>に<ruby><rb>凱歌</rb><rt>かちどき</rt></ruby>を揚げ、勢いに乗じて二歩を抽き、三歩を抽き、ますます<ruby><rb>馳</rb><rt>は</rt></ruby>せて、軽迅<ruby><rb>丸</rb><rt>たま</rt></ruby>の<ruby><rb>跳</rb><rt>おど</rt></ruby>るがごとく二、三間を先んじたり。</p>
+        <p><ruby><rb>向者</rb><rt>さきのほど</rt></ruby>は腕車を<ruby><rb>流眄</rb><rt>しりめ</rt></ruby>に見て、いとも揚々たりし乗り合いの<ruby><rb>一人</rb><rt>いちにん</rt></ruby>は、</p>
+        <p>「さあ、やられた！」と身を<ruby><rb>悶</rb><rt>もだ</rt></ruby>えて騒げば、車中いずれも同感の色を動かして、<ruby><rb>力瘤</rb><rt>ちからこぶ</rt></ruby>を握るものあり、<ruby><rb>地蹈韛</rb><rt>じだたら</rt></ruby>を踏むもあり、奴を<ruby><rb>叱</rb><rt>しっ</rt></ruby>してしきりに<ruby><rb>喇叭</rb><rt>らっぱ</rt></ruby>を吹かしむるもあり。御者は縦横に鞭を<ruby><rb>揮</rb><rt>ふる</rt></ruby>いて、激しく手綱を<ruby><rb>掻</rb><rt>か</rt></ruby>い繰れば、馬背の流汗<ruby><rb>滂沱</rb><rt>ぼうだ</rt></ruby>として<ruby><rb>掬</rb><rt>きく</rt></ruby>すべく、<ruby><rb>轡頭</rb><rt>くつわづら</rt></ruby>に<ruby><rb>噛</rb><rt>は</rt></ruby>み<ruby><rb>出</rb><rt>い</rt></ruby>だしたる<ruby><rb>白泡</rb><rt>しろあわ</rt></ruby>は<ruby><rb>木綿</rb><rt>きわた</rt></ruby>の一袋もありぬべし。</p>
+        <p>かかるほどに車体は一上一下と動揺して、あるいは<ruby><rb>頓挫</rb><rt>とんざ</rt></ruby>し、あるいは傾斜し、ただこれ風の落ち葉を<ruby><rb>捲</rb><rt>ま</rt></ruby>き、早瀬の浮き木を<ruby><rb>弄</rb><rt>もてあそ</rt></ruby>ぶに異ならず。乗り合いは前後に<ruby><rb>俯仰</rb><rt>ふぎょう</rt></ruby>し、左右に<ruby><rb>頽</rb><rt>なだ</rt></ruby>れて、<ruby><rb>片時</rb><rt>へんじ</rt></ruby>も安き心はなく、今にもこの車<ruby><rb>顛覆</rb><rt>くつがえ</rt></ruby>るか、ただしはその身投げ落とさるるか。いずれも<ruby><rb>怪我</rb><rt>けが</rt></ruby>は<ruby><rb>免</rb><rt>のが</rt></ruby>れぬところと、老いたるは震い<ruby><rb>慄</rb><rt>おのの</rt></ruby>き、若きは<ruby><rb>凝瞳</rb><rt>すえまなこ</rt></ruby>になりて、ただ一秒ののちを危ぶめり。</p>
+        <p>七、八町を競争して、幸いに別条なく、馬車は辛くも人力車を追い抽きぬ。乗り合いは思わず手を<ruby><rb>拍</rb><rt>う</rt></ruby>ちて、車も<ruby><rb>憾</rb><rt>うご</rt></ruby>くばかりに<ruby><rb>喝采</rb><rt>かっさい</rt></ruby>せり。奴は<ruby><rb>凱歌</rb><rt>かちどき</rt></ruby>の喇叭を吹き鳴らして、<ruby><rb>後</rb><rt>おく</rt></ruby>れたる人力車を<ruby><rb>麾</rb><rt>さしまね</rt></ruby>きつつ、踏み段の上に躍れり。ひとり御者のみは喜ぶ<ruby><rb>気色</rb><rt>けしき</rt></ruby>もなく、<ruby><rb>意</rb><rt>こころ</rt></ruby>を注ぎて馬を<ruby><rb>労</rb><rt>いたわ</rt></ruby>り<ruby><rb>駈</rb><rt>か</rt></ruby>けさせたり。</p>
+        <p>怪しき美人は満面に<ruby><rb>笑</rb><rt>え</rt></ruby>みを含みて、起伏常ならざる席に安んずるを、隣たる老人は感に堪えて、</p>
+        <p>「おまえさんどうもお強い。よく血の道が<ruby><rb>発</rb><rt>おこ</rt></ruby>りませんね。平気なものだ、<ruby><rb>女丈夫</rb><rt>おとこまさり</rt></ruby>だ。<ruby><rb>私</rb><rt>わたし</rt></ruby>なんぞはからきし<ruby><rb>意気地</rb><rt>いくじ</rt></ruby>はない。それもそのはずかい、もう五十八だもの」</p>
+        <p>その<ruby><rb>言</rb><rt>ことば</rt></ruby>の<ruby><rb>訖</rb><rt>お</rt></ruby>わらざるに、車は<ruby><rb>凸凹路</rb><rt>でこぼこみち</rt></ruby>を踏みて、がたくりんと<ruby><rb>跌</rb><rt>つまず</rt></ruby>きぬ。<ruby><rb>老夫</rb><rt>おやじ</rt></ruby>は横様に<ruby><rb>薙仆</rb><rt>なぎたお</rt></ruby>されて、半ば<ruby><rb>禿</rb><rt>は</rt></ruby>げたる<ruby><rb>法然頭</rb><rt>ほうねんあたま</rt></ruby>はどっさりと美人の膝に<ruby><rb>枕</rb><rt>まくら</rt></ruby>せり。</p>
+        <p>「あれ、あぶない！」</p>
+        <p>と美人はその肩をしかと<ruby><rb>抱</rb><rt>いだ</rt></ruby>きぬ。</p>
+        <p>老夫はむくむく身を<ruby><rb>擡</rb><rt>もた</rt></ruby>げて、</p>
+        <p>「へいこれは、これはどうもはばかり様。さぞお痛うございましたろう。御免なすってくださいましよ。いやはや、意気地はありません。これさ<ruby><rb>馬丁</rb><rt>べっとう</rt></ruby>さんや、もし若い<ruby><rb>衆</rb><rt>しゅ</rt></ruby>さん、なんと<ruby><rb>顛覆</rb><rt>ひっくりかえ</rt></ruby>るようなことはなかろうの」</p>
+        <p>御者は見も返らず、勢<ruby><rb>籠</rb><rt>こ</rt></ruby>めたる一<ruby><rb>鞭</rb><rt>べん</rt></ruby>を加えて、</p>
+        <p>「わかりません。馬が跌きゃそれまででさ」</p>
+        <p>老夫は<ruby><rb>眼</rb><rt>め</rt></ruby>を<ruby><rb>円</rb><rt>まる</rt></ruby>くして<ruby><rb>狼狽</rb><rt>うろた</rt></ruby>えぬ。</p>
+        <p>「いやさ、<ruby><rb>転</rb><rt>ころ</rt></ruby>ばぬ<ruby><rb>前</rb><rt>さき</rt></ruby>の<ruby><rb>杖</rb><rt>つえ</rt></ruby>だよ。ほんにお願いだ、気を着けておくれ。若い人と違って<ruby><rb>年老</rb><rt>としより</rt></ruby>のことだ、<ruby><rb>放</rb><rt>ほう</rt></ruby>り出されたらそれまでだよ。もういいかげんにして、<ruby><rb>徐々</rb><rt>やわやわ</rt></ruby>とやってもらおうじゃないか。なんと皆さんどうでございます」</p>
+        <p>「船に乗れば船頭任せ。この馬車にお乗んなすった以上は、わたしに任せたものとして、安心しなければなりません」</p>
+        <p>「ええ途方もない。どうして安心がなるものか」</p>
+        <p><ruby><rb>呆</rb><rt>あき</rt></ruby>れはてて老夫は<ruby><rb>呟</rb><rt>つぶや</rt></ruby>けば、御者ははじめて顧みつ。</p>
+        <p>「それで安心ができなけりゃ、御自分の<ruby><rb>脚</rb><rt>あし</rt></ruby>で歩くです」</p>
+        <p>「はいはい。それは御深切に」</p>
+        <p>老夫は腹だたしげに御者の<ruby><rb>面</rb><rt>かお</rt></ruby>を<ruby><rb>偸視</rb><rt>とうし</rt></ruby>せり。</p>
+        <p>後れたる人力車は次の建場にてまた一人を増して、<ruby><rb>後押</rb><rt>あとお</rt></ruby>しを加えたれども、なおいまだ<ruby><rb>逮</rb><rt>およ</rt></ruby>ばざるより、車夫らはますます発憤して、<ruby><rb>悶</rb><rt>もだ</rt></ruby>ゆる折から松並み木の中ほどにて、<ruby><rb>前面</rb><rt>むかい</rt></ruby>より<ruby><rb>空車</rb><rt>からぐるま</rt></ruby>を<ruby><rb>挽</rb><rt>ひ</rt></ruby>き来たる二人の車夫に出会いぬ。行き違いさまに、<ruby><rb>綱曳</rb><rt>つなひ</rt></ruby>きは<ruby><rb>血声</rb><rt>ちごえ</rt></ruby>を振り立て、</p>
+        <p>「後生だい、手を<ruby><rb>仮</rb><rt>か</rt></ruby>してくんねえか。あの<ruby><rb>瓦多</rb><rt>がた</rt></ruby>馬車の畜生、乗っ越さねえじゃ」</p>
+        <p>「こっとらの顔が立たねえんだ」と他の<ruby><rb>一箇</rb><rt>ひとり</rt></ruby>は叫べり。</p>
+        <p>血気事を好む<ruby><rb>徒</rb><rt>てあい</rt></ruby>は、応と言うがままにその車を道ばたに<ruby><rb>棄</rb><rt>す</rt></ruby>てて、総勢五人の車夫は<ruby><rb>揉</rb><rt>も</rt></ruby>みに揉んで駈けたりければ、二、三町ならずして敵に<ruby><rb>逐</rb><rt>お</rt></ruby>い着き、しばらくは相並びて互いに一歩を争いぬ。</p>
+        <p>そのとき車夫はいっせいに<ruby><rb>吶喊</rb><rt>とっかん</rt></ruby>して馬を<ruby><rb>駭</rb><rt>おど</rt></ruby>ろかせり。馬は<ruby><rb>懾</rb><rt>おび</rt></ruby>えて躍り狂いぬ。車はこれがために傾斜して、まさに乗り合いを振り落とさんとせり。</p>
+        <p>恐怖、叫喚、<ruby><rb>騒擾</rb><rt>そうじょう</rt></ruby>、地震における惨状は馬車の<ruby><rb>中</rb><rt>うち</rt></ruby>に<ruby><rb>顕</rb><rt>あら</rt></ruby>われたり。冷々然たるはひとりかの怪しき美人のみ。</p>
+        <p>一身をわれに任せよと言いし御者は、風波に<ruby><rb>掀翻</rb><rt>きんぽん</rt></ruby>せらるる汽船の、やがて<ruby><rb>千尋</rb><rt>ちひろ</rt></ruby>の底に<ruby><rb>汨没</rb><rt>こつぼつ</rt></ruby>せんずる危急に際して、蒸気機関はなお<ruby><rb>漾</rb><rt>よう</rt></ruby>々たる穏波を<ruby><rb>截</rb><rt>き</rt></ruby>ると異ならざる精神をもって、その職を<ruby><rb>竭</rb><rt>つ</rt></ruby>くすがごとく、<ruby><rb>従容</rb><rt>しょうよう</rt></ruby>として手綱を操り、競争者に<ruby><rb>後</rb><rt>おく</rt></ruby>れず<ruby><rb>前</rb><rt>すす</rt></ruby>まず、<ruby><rb>隙</rb><rt>ひま</rt></ruby>だにあらば一躍して乗っ越さんと、<ruby><rb>睨</rb><rt>にら</rt></ruby>み合いつつ推し行くさまは、この道<ruby><rb>堪能</rb><rt>かんのう</rt></ruby>の達者と覚しく、いと頼もしく見えたりき。</p>
+        <p>されども危急の際この頼もしさを見たりしは、わずかにくだんの美人あるのみなり。他はみな見苦しくも<ruby><rb>慌</rb><rt>あわ</rt></ruby>て<ruby><rb>忙</rb><rt>ふため</rt></ruby>きて、あまたの神と仏とは心々に<ruby><rb>祷</rb><rt>いの</rt></ruby>られき。なおかの美人はこの騒擾の間、終始御者の様子を打ち<ruby><rb>瞶</rb><rt>まも</rt></ruby>りたり。</p>
+        <p>かくて<ruby><rb>六箇</rb><rt>むつ</rt></ruby>の車輪はあたかも<ruby><rb>同一</rb><rt>ひとつ</rt></ruby>の軸にありて転ずるごとく、両々相並びて<placeName ref="#fukuoka"><ruby><rb>福岡</rb><rt>ふくおか</rt></ruby></placeName>というに着けり。ここに馬車の休憩所ありて、馬に<ruby><rb>飲</rb><rt>みずか</rt></ruby>い、客に茶を売るを例とすれども、<ruby><rb>今日</rb><rt>きょう</rt></ruby>ばかりは素通りなるべし、と乗り合いは心々に<ruby><rb>想</rb><rt>おも</rt></ruby>いぬ。</p>
+        <p>御者はこの<ruby><rb>店頭</rb><rt>みせさき</rt></ruby>に馬を<ruby><rb>駐</rb><rt>とど</rt></ruby>めてけり。わが物得つと、車夫はにわかに勢いを増して、手を<ruby><rb>揮</rb><rt>ふ</rt></ruby>り、声を<ruby><rb>揚</rb><rt>あ</rt></ruby>げ、思うままに侮辱して駈け去りぬ。</p>
+        <p>乗り合いは<ruby><rb>切歯</rb><rt>はがみ</rt></ruby>をしつつ見送りたりしに、車は遠く一団の<ruby><rb>砂煙</rb><rt>すなけぶり</rt></ruby>に<ruby><rb>裹</rb><rt>つつ</rt></ruby>まれて、ついに眼界のほかに失われき。</p>
+        <p><ruby><rb>旅商人体</rb><rt>たびあきゅうどてい</rt></ruby>の男は最も<ruby><rb>苛</rb><rt>いらだ</rt></ruby>ちて、</p>
+        <p>「なんと皆さん、<ruby><rb>業肚</rb><rt>ごうはら</rt></ruby>じゃございませんか。おとなげのないわけだけれど、こういう行き懸かりになってみると、どうも負けるのは残念だ。おい、<ruby><rb>馬丁</rb><rt>べっとう</rt></ruby>さん、早く<ruby><rb>行</rb><rt>や</rt></ruby>ってくれたまえな」</p>
+        <p>「それもそうですけれどもな、<ruby><rb>老者</rb><rt>おやじ</rt></ruby>はまことにはやどうも。第一この<ruby><rb>疝</rb><rt>せん</rt></ruby>に<ruby><rb>障</rb><rt>さわ</rt></ruby>りますのでな」</p>
+        <p>と遠慮がちに訴うるは、美人の膝枕せし<ruby><rb>老夫</rb><rt>おやじ</rt></ruby>なり。馬は群がる<ruby><rb>蠅</rb><rt>はえ</rt></ruby>と<ruby><rb>虻</rb><rt>あぶ</rt></ruby>との中に優々と水飲み、奴は<ruby><rb>木蔭</rb><rt>こかげ</rt></ruby>の<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>に大の字なりに<ruby><rb>僵</rb><rt>たお</rt></ruby>れて、むしゃむしゃと菓子を<ruby><rb>吃</rb><rt>く</rt></ruby>らえり。御者は<ruby><rb>框</rb><rt>かまち</rt></ruby>に<ruby><rb>息</rb><rt>いこ</rt></ruby>いて巻き<ruby><rb>莨</rb><rt>たばこ</rt></ruby>を<ruby><rb>燻</rb><rt>くゆら</rt></ruby>しつつ茶店の<ruby><rb>嚊</rb><rt>かか</rt></ruby>と<ruby><rb>語</rb><rt>ものがた</rt></ruby>りぬ。</p>
+        <p>「こりゃ急に出そうもない」と一人が<ruby><rb>呟</rb><rt>つぶや</rt></ruby>けば、<ruby><rb>田舎</rb><rt>いなか</rt></ruby>女房と見えたるがその<ruby><rb>前面</rb><rt>むかい</rt></ruby>にいて、</p>
+        <p>「憎々しく落ち着いてるじゃありませんかね」</p>
+        <p>最初の<ruby><rb>発言者</rb><rt>はつごんしゃ</rt></ruby>はますます堪えかねて、</p>
+        <p>「ときに皆さん、あのとおり御者も骨を折りましたんですから、お互い様にいくらか酒手を<ruby><rb>奮</rb><rt>はず</rt></ruby>みまして、もう一骨折ってもらおうじゃございませんか。なにとぞ御賛成を願います」</p>
+        <p>渠は直ちに<ruby><rb>帯佩</rb><rt>おびさ</rt></ruby>げの<ruby><rb>蟇口</rb><rt>がまぐち</rt></ruby>を取り出して、中なる銭を<ruby><rb>撈</rb><rt>さぐ</rt></ruby>りつつ、</p>
+        <p>「ねえあなた、ここでああ<ruby><rb>惰</rb><rt>なま</rt></ruby>けられてしまった日には、仏造って魂入れずでさ、冗談じゃない」</p>
+        <p>やがて銅貨三銭をもって<ruby><rb>隗</rb><rt>かい</rt></ruby>より始めつ。帽子を脱ぎてその中に入れたるを、<ruby><rb>衆人</rb><rt>ひとびと</rt></ruby>の前に差し出して、渠はあまねく<ruby><rb>義捐</rb><rt>ぎえん</rt></ruby>を募れり。</p>
+        <p>あるいは勇んで躍り込みたる白銅あり。あるいはしぶしぶ捨てられたる五厘もあり。ここの一銭、かしこの二銭、積もりて十六銭五厘とぞなりにける。</p>
+        <p>美人は片すみにありて、応募の最終なりき。隗の帽子は巡回して渠の前に着せるとき、世話人は<ruby><rb>辞</rb><rt>ことば</rt></ruby>を<ruby><rb>卑</rb><rt>ひく</rt></ruby>うして<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>せり。</p>
+        <p>「とんだお<ruby><rb>附</rb><rt>つ</rt></ruby>き合いで、どうもおきのどく様でございます」</p>
+        <p>美人は<ruby><rb>軽</rb><rt>かろ</rt></ruby>く会釈するとともに、その手は帯の間に入りぬ。小菊にて上包みせる<ruby><rb>緋塩瀬</rb><rt>ひしおぜ</rt></ruby>の紙入れを開きて、渠はむぞうさに半円銀貨を投げ出だせり。</p>
+        <p><ruby><rb>余所目</rb><rt>よそめ</rt></ruby>に<ruby><rb>瞥</rb><rt>み</rt></ruby>たる老夫はいたく驚きて<ruby><rb>面</rb><rt>かお</rt></ruby>を<ruby><rb>背</rb><rt>そむ</rt></ruby>けぬ、世話人は頭を<ruby><rb>掻</rb><rt>か</rt></ruby>きて、</p>
+        <p>「いや、これは<ruby><rb>剰銭</rb><rt>おつり</rt></ruby>が足りない。私もあいにく<ruby><rb>小</rb><rt>こま</rt></ruby>かいのが……」</p>
+        <p>と腰なる蟇口に手を掛くれば、</p>
+        <p>「いいえ、いいんですよ」</p>
+        <p>世話人は<ruby><rb>呆</rb><rt>あき</rt></ruby>れて叫びぬ。</p>
+        <p>「これだけ？　五十銭！」</p>
+        <p>これを聞ける乗り合いは、さなきだに、何者なるか、怪しき別品と目を着けたりしに、今この<ruby><rb>散財</rb><rt>きれはなれ</rt></ruby>の<ruby><rb>婦女子</rb><rt>おんな</rt></ruby>に似気なきより、いよいよ底気味悪く<ruby><rb>訝</rb><rt>いぶか</rt></ruby>れり。</p>
+        <p>世話人は帽子を揺り動かして銭を鳴らしつつ、</p>
+        <p>「<ruby><rb>〆</rb><rt>しめ</rt></ruby>て金六十六銭と五厘！　たいしたことになりました。これなら馬は駈けますぜ」</p>
+        <p>御者はすでに着席して出発の用意せり。世話人は酒手を紙に包みて持ち行きつ。</p>
+        <p>「おい、若い衆さん、これは皆さんからの酒手だよ。六十六銭と五厘あるのだ。なにぶんひとつ奮発してね。頼むよ」</p>
+        <p>渠は気軽に御者の肩を<ruby><rb>拊</rb><rt>たた</rt></ruby>きて、</p>
+        <p>「隊長、一晩遊べるぜ」</p>
+        <p>御者は<ruby><rb>流眄</rb><rt>ながしめ</rt></ruby>に紙包みを<ruby><rb>見遣</rb><rt>みや</rt></ruby>りて<ruby><rb>空嘯</rb><rt>そらうそぶ</rt></ruby>きぬ。</p>
+        <p>「酒手で馬は動きません」</p>
+        <p>わずかに五銭六厘を<ruby><rb>懐</rb><rt>ふところ</rt></ruby>にせる奴は驚きかつ惜しみて、<ruby><rb>有意的</rb><rt>こころありげ</rt></ruby>に御者の<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>眺</rb><rt>なが</rt></ruby>めたり。好意を無にせられたる世話人は腹立ちて、</p>
+        <p>「せっかく皆さんが下さるというのに、それじゃいらないんだね」</p>
+        <p>車は徐々として進行せり。</p>
+        <p>「<ruby><rb>戴</rb><rt>いただ</rt></ruby>く因縁がありませんから」</p>
+        <p>「そんな生意気なことを言うもんじゃない。骨折り賃だ。まあ野暮を言わずに取っときたまえてことさ」</p>
+        <p>六十六銭五厘はまさに御者のポケットに<ruby><rb>闖入</rb><rt>ちんにゅう</rt></ruby>せんとせり。渠は<ruby><rb>固</rb><rt>かた</rt></ruby>く<ruby><rb>拒</rb><rt>こば</rt></ruby>みて、</p>
+        <p>「思し召しはありがとうございますが、<ruby><rb>規定</rb><rt>きめ</rt></ruby>の賃銭のほかに骨折り賃を戴く<ruby><rb>理由</rb><rt>わけ</rt></ruby>がございません」</p>
+        <p>世話人は推し返されたる紙包みを持て扱いつつ、</p>
+        <p>「<ruby><rb>理由</rb><rt>わけ</rt></ruby>も<ruby><rb>糸瓜</rb><rt>へちま</rt></ruby>もあるものかな。お客が<ruby><rb>与</rb><rt>くれ</rt></ruby>るというんだから、取っといたらいいじゃないか。こういうものを<ruby><rb>貰</rb><rt>もら</rt></ruby>って済まないと思ったら、一骨折って今の<ruby><rb>腕車</rb><rt>くるま</rt></ruby>を<ruby><rb>抽</rb><rt>ぬ</rt></ruby>いてくれたまえな」</p>
+        <p>「酒手なんぞは戴かなくっても、十分骨は折ってるです」</p>
+        <p>世話人は<ruby><rb>冷笑</rb><rt>あざわら</rt></ruby>いぬ。</p>
+        <p>「そんなりっぱな口を<ruby><rb>呭</rb><rt>き</rt></ruby>いたって、約束が違や世話はねえ」</p>
+        <p>御者はきと振り<ruby><rb>顧</rb><rt>かえ</rt></ruby>りて、</p>
+        <p>「なんですと？」</p>
+        <p>「この馬車は腕車より<ruby><rb>迅</rb><rt>はや</rt></ruby>いという約束だぜ」</p>
+        <p><ruby><rb>儼然</rb><rt>げんぜん</rt></ruby>として御者は答えぬ。</p>
+        <p>「そんなお約束はしません」</p>
+        <p>「おっと、そうは言わせない。なるほど私たちにはしなかったが、この<ruby><rb>姉</rb><rt>ねえ</rt></ruby>さんにはどうだい。六十六銭五厘のうち、一人で五十銭の酒手をお出しなすったのはこのかただよ。あの腕車より迅く行ってもらおうと思やこそ、こうして<ruby><rb>莫大</rb><rt>ばくだい</rt></ruby>な酒手も<ruby><rb>奮</rb><rt>はず</rt></ruby>もうというのだ。どうだ、先生、恐れ入ったか」</p>
+        <p>鼻<ruby><rb>蠢</rb><rt>うごめ</rt></ruby>かして世話人は御者の<ruby><rb>背</rb><rt>そびら</rt></ruby>を指もて<ruby><rb>撞</rb><rt>つ</rt></ruby>きぬ。渠は<ruby><rb>一言</rb><rt>いちごん</rt></ruby>を発せず、世話人はすこぶる得意なりき。美人は戯るるがごとくに<ruby><rb>詰</rb><rt>なじ</rt></ruby>れり。</p>
+        <p>「馬丁さん、ほんとに約束だよ、どうしたってんだね」</p>
+        <p>なお渠は<ruby><rb>緘黙</rb><rt>かんもく</rt></ruby>せり。その<ruby><rb>脣</rb><rt>くちびる</rt></ruby>を鼓動すべき力は、渠の両腕に奮いて、<ruby><rb>馬蹄</rb><rt>ばてい</rt></ruby>たちまち高く<ruby><rb>挙</rb><rt>あ</rt></ruby>ぐれば、車輪はその<ruby><rb>輻</rb><rt>やぼね</rt></ruby>の見るべからざるまでに快転せり。乗り合いは再び地上の<ruby><rb>瀾</rb><rt>なみ</rt></ruby>に<ruby><rb>盪</rb><rt>ゆ</rt></ruby>られて、浮沈の<ruby><rb>憂</rb><rt>う</rt></ruby>き目に<ruby><rb>遭</rb><rt>あ</rt></ruby>いぬ。</p>
+        <p><ruby><rb>縦騁</rb><rt>しょうてい</rt></ruby>五分間ののち、前途はるかに競争者の影を認め得たり。しかれども時遅れたれば、容易に追迫すべくもあらざりき。しこうして到着地なる<placeName ref="#isurugi"><ruby><rb>石動</rb><rt>いするぎ</rt></ruby></placeName>はもはや間近になれり。今にして一躍のもとに乗り越さずんば、ついに<ruby><rb>失敗</rb><rt>おくれ</rt></ruby>を取らざるを得ざるべきなり。<ruby><rb>憐</rb><rt>あわ</rt></ruby>れむべし過度の<ruby><rb>馳騖</rb><rt>ちぶ</rt></ruby>に疲れ果てたる馬は、力なげに<ruby><rb>俛</rb><rt>た</rt></ruby>れたる首を<ruby><rb>聯</rb><rt>なら</rt></ruby>べて、<ruby><rb>策</rb><rt>う</rt></ruby>てども走れども、足は重りて地を離れかねたりき。</p>
+        <p>何思いけん、御者は地上に下り立ちたり。乗り合いはこはそもいかにと見る間に、渠は手早く、一頭の馬を解き放ちて、</p>
+        <p>「姉さん済みませんが、ちょっと下りてください」</p>
+        <p>乗り合いは顔を見合わせて、この<ruby><rb>謎</rb><rt>なぞ</rt></ruby>を解くに苦しめり。美人は渠の言うがままに車を下れば、</p>
+        <p>「どうかこちらへ」と御者はおのれの立てる馬のそばに招きぬ。美人はますますその意を得ざれども、なお渠の言うがままに進み寄りぬ。御者はものをも言わず美人を引っ抱えて、ひらりと馬に<ruby><rb>跨</rb><rt>またが</rt></ruby>りたり。</p>
+        <p><ruby><rb>魂消</rb><rt>たまげ</rt></ruby>たるは乗り合いなり。乗り合いは実に魂消たるなり。渠らは千体仏のごとく<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>鳩</rb><rt>あつ</rt></ruby>め、あけらかんと<ruby><rb>頤</rb><rt>おとがい</rt></ruby>を垂れて、おそらくは<ruby><rb>画</rb><rt>え</rt></ruby>にも<ruby><rb>観</rb><rt>み</rt></ruby>るべからざるこの不思議の<ruby><rb>為体</rb><rt>ていたらく</rt></ruby>に<ruby><rb>眼</rb><rt>め</rt></ruby>を奪われたりしに、その馬は奇怪なる御者と、奇怪なる美人と、奇怪なる<ruby><rb>挙動</rb><rt>ふるまい</rt></ruby>とを載せてましぐらに<ruby><rb>馳</rb><rt>は</rt></ruby>せ去りぬ。車上の見物はようやくわれに<ruby><rb>復</rb><rt>かえ</rt></ruby>りて<ruby><rb>響動</rb><rt>どよ</rt></ruby>めり。</p>
+        <p>「いったいどうしたんでしょう」</p>
+        <p>「まず乗せ逃げとでもいうんでしょう」</p>
+        <p>「へえ、なんでございます」</p>
+        <p>「客の逃げたのが乗り逃げ。御者のほうで逃げたのだから乗せ逃げでしょう」</p>
+        <p>例の老夫は頭を<ruby><rb>悼</rb><rt>ふ</rt></ruby>り悼り<ruby><rb>呟</rb><rt>つぶや</rt></ruby>けり。</p>
+        <p>「いや<ruby><rb>洒落</rb><rt>しゃれ</rt></ruby>どころか。こりゃ、まあどうしてくれるつもりだ」</p>
+        <p>不審の<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を<ruby><rb>攅</rb><rt>あつ</rt></ruby>めたる<ruby><rb>前</rb><rt>さき</rt></ruby>の世話人は、腕を<ruby><rb>拱</rb><rt>こまぬ</rt></ruby>きつつ座中を<ruby><rb>眗</rb><rt>みまわ</rt></ruby>して、</p>
+        <p>「皆さん、なんと思し召す？　こりゃ<ruby><rb>尋常事</rb><rt>ただごと</rt></ruby>じゃありませんぜ。ばかを見たのはわれわれですよ。全く<ruby><rb>駈</rb><rt>か</rt></ruby>け落ちですな。どうもあの女がさ、<ruby><rb>尋常</rb><rt>ただ</rt></ruby>の<ruby><rb>鼠</rb><rt>ねずみ</rt></ruby>じゃあんめえと<ruby><rb>睨</rb><rt>にら</rt></ruby>んでおきましたが、こりゃあまさにそうだった。しかしいい女だ」</p>
+        <p>「私は急ぎの用を<ruby><rb>抱</rb><rt>かか</rt></ruby>えている<ruby><rb>身</rb><rt>からだ</rt></ruby>だから、こうして<ruby><rb>安閑</rb><rt>あんかん</rt></ruby>としてはいられない。なんとこの小僧に頼んで、一匹の馬で<ruby><rb>遣</rb><rt>や</rt></ruby>ってもらおうじゃございませんか。ばかばかしい、銭を出して、あの<ruby><rb>醜態</rb><rt>ざま</rt></ruby>を見せられて、置き去りを<ruby><rb>吃</rb><rt>く</rt></ruby>うやつもないものだ」</p>
+        <p>「全くそうでごさいますよ。ほんとに<ruby><rb>巫山戯</rb><rt>ふざけ</rt></ruby>た<ruby><rb>真似</rb><rt>まね</rt></ruby>をする野郎だ。小僧早く遣ってくんな」</p>
+        <p><ruby><rb>奴</rb><rt>やっこ</rt></ruby>は途方に暮れて、<ruby><rb>曩</rb><rt>さき</rt></ruby>より車の前後に出没したりしが、</p>
+        <p>「どうもおきのどく様です」</p>
+        <p>「おきのどく様は知れてらあ。いつまでこうしておくんだ。早く遣ってくれ、遣ってくれ！」</p>
+        <p>「私にはまだよく馬が動きません」</p>
+        <p>「<ruby><rb>活</rb><rt>い</rt></ruby>きてるものの動かないという法があるものか」</p>
+        <p>「<ruby><rb>臀部</rb><rt>けつっぺた</rt></ruby>を<ruby><rb>引</rb><rt>ひ</rt></ruby>っ<ruby><rb>撲</rb><rt>ぱた</rt></ruby>け引っ撲け」</p>
+        <p>奴は苦笑いしつつ、</p>
+        <p>「そんなことを言ったっていけません。二頭<ruby><rb>曳</rb><rt>び</rt></ruby>きの車ですから、馬が一匹じゃ遣り切れません」</p>
+        <p>「そんならここで下りるから銭を返してくれ」</p>
+        <p>腹立つ者、無理言う者、呟く者、<ruby><rb>罵</rb><rt>ののし</rt></ruby>る者、迷惑せる者、乗り合いの不平は奴の一身に<ruby><rb>湊</rb><rt>あつ</rt></ruby>まれり。渠はさんざんに<ruby><rb>苛</rb><rt>さいな</rt></ruby>まれてついに涙ぐみ、身の<ruby><rb>措</rb><rt>お</rt></ruby>き所に窮して、辛くも車の<ruby><rb>後</rb><rt>あと</rt></ruby>に<ruby><rb>竦</rb><rt>すく</rt></ruby>みたりき。乗り合いはますます<ruby><rb>躁</rb><rt>さわ</rt></ruby>ぎて、<ruby><rb>敵手</rb><rt>あいて</rt></ruby>なき<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>に狂いぬ。</p>
+        <p>御者は真一文字に馬を飛ばして、雲を<ruby><rb>霞</rb><rt>かすみ</rt></ruby>と走りければ、美人は魂身に添わず、目を閉じ、息を凝らし、五体を縮めて、力の限り渠の腰に<ruby><rb>縋</rb><rt>すが</rt></ruby>りつ。風は<ruby><rb>颼々</rb><rt>しゅうしゅう</rt></ruby>と<ruby><rb>両腋</rb><rt>りょうえき</rt></ruby>に起こりて毛髪<ruby><rb>竪</rb><rt>た</rt></ruby>ち、道はさながら<ruby><rb>河</rb><rt>かわ</rt></ruby>のごとく、濁流脚下に<ruby><rb>奔注</rb><rt>ほんちゅう</rt></ruby>して、身はこれ虚空を<ruby><rb>転</rb><rt>まろ</rt></ruby>ぶに似たり。</p>
+        <p>渠は実に死すべしと<ruby><rb>念</rb><rt>おも</rt></ruby>いぬ。しだいに風<ruby><rb>歇</rb><rt>や</rt></ruby>み、馬<ruby><rb>駐</rb><rt>とど</rt></ruby>まると覚えて、直ちに<ruby><rb>昏倒</rb><rt>こんとう</rt></ruby>して<ruby><rb>正気</rb><rt>しょうき</rt></ruby>を失いぬ。これ御者が静かに馬より<ruby><rb>扶</rb><rt>たす</rt></ruby>け下ろして、茶店の座敷に<ruby><rb>舁</rb><rt>か</rt></ruby>き入れたりしときなり。渠はこの介抱を<ruby><rb>主</rb><rt>あるじ</rt></ruby>の<ruby><rb>嫗</rb><rt>おうな</rt></ruby>に<ruby><rb>嘱</rb><rt>たの</rt></ruby>みて、その身は息をも<ruby><rb>継</rb><rt>つ</rt></ruby>かず再び<ruby><rb>羸馬</rb><rt>るいば</rt></ruby>に<ruby><rb>策</rb><rt>むちう</rt></ruby>ちて、もと来し<ruby><rb>路</rb><rt>みち</rt></ruby>を急ぎけり。</p>
+        <p>ほどなく美人は<ruby><rb>醒</rb><rt>さ</rt></ruby>めて、こは<placeName ref="#isurugi">石動</placeName>の<ruby><rb>棒端</rb><rt>ぼうばな</rt></ruby>なるを<ruby><rb>覚</rb><rt>さと</rt></ruby>りぬ。御者はすでにあらず。渠はその名を嫗に<ruby><rb>訊</rb><rt>たず</rt></ruby>ねて、<persName ref="#kinya">金さん</persName>なるを知りぬ。その<ruby><rb>為人</rb><rt>ひととなり</rt></ruby>を問えば、方正謹厳、その行ないを<ruby><rb>質</rb><rt>ただ</rt></ruby>せば学問好き。</p>
+        <p>二</p>
+        <p><placeName ref="#kanazawa">金沢</placeName>なる<placeName ref="#asanogawa">浅野川</placeName>の<ruby><rb>磧</rb><rt>かわら</rt></ruby>は、宵々ごとに納涼の人出のために熱了せられぬ。この節を機として、諸国より入り込みたる野師らは、磧も狭しと見世物小屋を掛け<ruby><rb>聯</rb><rt>つら</rt></ruby>ねて、<ruby><rb>猿芝居</rb><rt>さるしばい</rt></ruby>、娘<ruby><rb>軽業</rb><rt>かるわざ</rt></ruby>、<ruby><rb>山雀</rb><rt>やまがら</rt></ruby>の芸当、剣の刃渡り、<ruby><rb>活</rb><rt>い</rt></ruby>き人形、名所の<ruby><rb>覗</rb><rt>のぞ</rt></ruby>き<ruby><rb>機関</rb><rt>からくり</rt></ruby>、電気手品、<ruby><rb>盲人相撲</rb><rt>めくらずもう</rt></ruby>、評判の<ruby><rb>大蛇</rb><rt>だいじゃ</rt></ruby>、<ruby><rb>天狗</rb><rt>てんぐ</rt></ruby>の<ruby><rb>骸骨</rb><rt>がいこつ</rt></ruby>、手なし娘、子供の玉乗りなどいちいち数うるに<ruby><rb>遑</rb><rt>いとま</rt></ruby>あらず。</p>
+        <p>なかんずく大評判、大当たりは、<persName ref="#shiraito">滝の白糸</persName>が<ruby><rb>水芸</rb><rt>みずげい</rt></ruby>なり。<ruby><rb>太夫</rb><rt>たゆう</rt></ruby><persName ref="#shiraito">滝の白糸</persName>は妙齢一八、九の別品にて、その技芸は容色と<ruby><rb>相称</rb><rt>あいかな</rt></ruby>いて、市中の人気山のごとし。されば他はみな晩景の開場なるにかかわらず、これのみひとり昼夜二回の興行ともに、その大入りは<ruby><rb>永当</rb><rt>えいとう</rt></ruby>たり。</p>
+        <p>時まさに午後一時、<ruby><rb>撃柝</rb><rt>げきたく</rt></ruby>一声、<ruby><rb>囃子</rb><rt>はやし</rt></ruby>は鳴りを<ruby><rb>鎮</rb><rt>しず</rt></ruby>むるとき、口上は<ruby><rb>渠</rb><rt>かれ</rt></ruby>がいわゆる不弁舌なる弁を<ruby><rb>揮</rb><rt>ふる</rt></ruby>いて前口上を<ruby><rb>陳</rb><rt>の</rt></ruby>べ<ruby><rb>了</rb><rt>お</rt></ruby>われば、たちまち起こる<ruby><rb>緩絃</rb><rt>かんげん</rt></ruby>朗笛の<ruby><rb>節</rb><rt>せつ</rt></ruby>を<ruby><rb>履</rb><rt>ふ</rt></ruby>みて、静々歩み出でたるは、当座の太夫元<persName ref="#shiraito">滝の白糸</persName>、高島田に<ruby><rb>奴元結</rb><rt>やっこもとゆ</rt></ruby>い掛けて、脂粉こまやかに桃花の<ruby><rb>媚</rb><rt>こ</rt></ruby>びを<ruby><rb>粧</rb><rt>よそお</rt></ruby>い、<ruby><rb>朱鷺</rb><rt>とき</rt></ruby>色<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の<ruby><rb>単衣</rb><rt>ひとえ</rt></ruby>に、銀糸の<ruby><rb>浪</rb><rt>なみ</rt></ruby>の<ruby><rb>刺繍</rb><rt>ぬい</rt></ruby>ある水色<ruby><rb>絽</rb><rt>ろ</rt></ruby>の<ruby><rb>𧘕𧘔</rb><rt>かみしも</rt></ruby>を着けたり。渠はしとやかに舞台よき所に進みて、一礼を施せば、待ち構えたりし見物は声々に<ruby><rb>喚</rb><rt>わめ</rt></ruby>きぬ。</p>
+        <p>「いよう、待ってました<ruby><rb>大明神</rb><rt>だいみょうじん</rt></ruby>様！」</p>
+        <p>「あでやかあでやか」</p>
+        <p>「ようよう<placeName ref="#kanazawa">金沢</placeName><ruby><rb>暴</rb><rt>あら</rt></ruby>し！」</p>
+        <p>「ここな命取り！」</p>
+        <p><ruby><rb>喝采</rb><rt>やんや</rt></ruby>の声のうちに渠は<ruby><rb>徐</rb><rt>しず</rt></ruby>かに<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>擡</rb><rt>もた</rt></ruby>げて、情を含みて浅笑せり。口上は扇を<ruby><rb>挙</rb><rt>あ</rt></ruby>げて<ruby><rb>一咳</rb><rt>いちがい</rt></ruby>し、</p>
+        <p>「東西！　お目通りに控えさせましたるは、当座の太夫元<persName ref="#shiraito">滝の白糸</persName>にござりまする。お目見え相済みますれば、さっそくながら本芸に取り掛からせまする。最初<ruby><rb>腕調</rb><rt>こてしら</rt></ruby>べとして御覧に入れまするは、露に<ruby><rb>蝶</rb><rt>ちょう</rt></ruby>の狂いを<ruby><rb>象</rb><rt>かたど</rt></ruby>りまして、（花野の<ruby><rb>曙</rb><rt>あけぼの</rt></ruby>）。ありゃ来た、よいよいよいさて」</p>
+        <p>さて太夫はなみなみ水を盛りたるコップを<ruby><rb>左手</rb><rt>ゆんで</rt></ruby>に<ruby><rb>把</rb><rt>と</rt></ruby>りて、<ruby><rb>右手</rb><rt>めて</rt></ruby>には<ruby><rb>黄白</rb><rt>こうはく</rt></ruby>二面の扇子を開き、やと声<ruby><rb>発</rb><rt>か</rt></ruby>けて<ruby><rb>交互</rb><rt>いれちがい</rt></ruby>に投げ上ぐれば、露を争う蝶<ruby><rb>一双</rb><rt>ひとつ</rt></ruby>、縦横上下に<ruby><rb>逐</rb><rt>お</rt></ruby>いつ、逐われつ、<ruby><rb>雫</rb><rt>しずく</rt></ruby>も<ruby><rb>滴</rb><rt>こぼ</rt></ruby>さず翼も<ruby><rb>息</rb><rt>やす</rt></ruby>めず、太夫の手にも<ruby><rb>住</rb><rt>とど</rt></ruby>まらで、空に<ruby><rb>文</rb><rt>あや</rt></ruby>織る<ruby><rb>練磨</rb><rt>れんま</rt></ruby>の手術、今じゃ今じゃと、木戸番は<ruby><rb>濁声</rb><rt>だみごえ</rt></ruby>高く<ruby><rb>喚</rb><rt>よば</rt></ruby>わりつつ、<ruby><rb>外面</rb><rt>おもて</rt></ruby>の幕を引き<ruby><rb>揚</rb><rt>あ</rt></ruby>げたるとき、演芸中の太夫はふと<ruby><rb>外</rb><rt>と</rt></ruby>の<ruby><rb>方</rb><rt>かた</rt></ruby>に眼を<ruby><rb>遣</rb><rt>や</rt></ruby>りたりしに、何にか心を奪われけん、はたとコップを取り落とせり。</p>
+        <p>口上は<ruby><rb>狼狽</rb><rt>ろうばい</rt></ruby>して走り寄りぬ。見物はその<ruby><rb>為損</rb><rt>しそん</rt></ruby>じをどっと<ruby><rb>囃</rb><rt>はや</rt></ruby>しぬ。太夫は受け<ruby><rb>住</rb><rt>と</rt></ruby>めたる扇を手にしたるまま、その<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>をなお外の方に凝らしつつ、つかつかと土間に下りたり。</p>
+        <p>口上はいよいよ狼狽して、<ruby><rb>為</rb><rt>せ</rt></ruby>ん方を知らざりき。見物は<ruby><rb>呆</rb><rt>あき</rt></ruby>れ果てて息を<ruby><rb>斂</rb><rt>おさ</rt></ruby>め、満場<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく<ruby><rb>頭</rb><rt>こうべ</rt></ruby>を<ruby><rb>回</rb><rt>めぐ</rt></ruby>らして太夫の<ruby><rb>挙動</rb><rt>ふるまい</rt></ruby>を打ち<ruby><rb>瞶</rb><rt>まも</rt></ruby>れり。</p>
+        <p><persName ref="#shiraito">白糸</persName>は群れいる客を推し<ruby><rb>排</rb><rt>わ</rt></ruby>け、<ruby><rb>掻</rb><rt>か</rt></ruby>き排け、</p>
+        <p>「御免あそばせ、ちょいと御免あそばせ」</p>
+        <p>あわただしく木戸口に走り出で、<ruby><rb>項</rb><rt>うなじ</rt></ruby>を延べて目送せり。その視線中に御者体の<ruby><rb>壮佼</rb><rt>わかもの</rt></ruby>あり。</p>
+        <p>何事や起こりたると、見物は<persName ref="#shiraito">白糸</persName>の<ruby><rb>踵</rb><rt>あと</rt></ruby>より、どろどろと乱れ出ずる<ruby><rb>喧擾</rb><rt>ひしめき</rt></ruby>に、くだんの男は振り返りぬ。<persName ref="#shiraito">白糸</persName>ははじめてその<ruby><rb>面</rb><rt>おもて</rt></ruby>を見るを得たり。渠は色白く<ruby><rb>瀟洒</rb><rt>いなせ</rt></ruby>なりき。</p>
+        <p>「おや、違ってた！」</p>
+        <p>かく<ruby><rb>独語</rb><rt>ひとりご</rt></ruby>ちて、太夫はすごすご木戸を入りぬ。</p>
+        <p>三</p>
+        <p><ruby><rb>夜</rb><rt>よ</rt></ruby>はすでに十一時に近づきぬ。<ruby><rb>磧</rb><rt>かわら</rt></ruby>は<ruby><rb>凄涼</rb><rt>せいりょう</rt></ruby>として<ruby><rb>一箇</rb><rt>ひとり</rt></ruby>の<ruby><rb>人影</rb><rt>じんえい</rt></ruby>を見ず、天高く、<ruby><rb>露気</rb><rt>ろき</rt></ruby>ひややかに、月のみぞひとり澄めりける。</p>
+        <p><ruby><rb>熱鬧</rb><rt>ねっとう</rt></ruby>を<ruby><rb>極</rb><rt>きわ</rt></ruby>めたりし露店はことごとく形を<ruby><rb>斂</rb><rt>おさ</rt></ruby>めて、ただここかしこに見世物小屋の板囲いを<ruby><rb>洩</rb><rt>も</rt></ruby>るる<ruby><rb>燈火</rb><rt>ともしび</rt></ruby>は、かすかに宵のほどの<ruby><rb>名残</rb><rt>なごり</rt></ruby>を<ruby><rb>留</rb><rt>とど</rt></ruby>めつ。<ruby><rb>河</rb><rt>かわ</rt></ruby>は長く流れて、<ruby><rb>向山</rb><rt>むこうやま</rt></ruby>の松風静かに<ruby><rb>度</rb><rt>わた</rt></ruby>る<ruby><rb>処</rb><rt>ところ</rt></ruby>、<placeName ref="#tenjinbashi">天神橋</placeName>の欄干に<ruby><rb>靠</rb><rt>もた</rt></ruby>れて、うとうとと<ruby><rb>交睫</rb><rt>まどろ</rt></ruby>む<ruby><rb>漢子</rb><rt>おのこ</rt></ruby>あり。</p>
+        <p><ruby><rb>渠</rb><rt>かれ</rt></ruby>は山に<ruby><rb>倚</rb><rt>よ</rt></ruby>り、水に臨み、清風を<ruby><rb>担</rb><rt>にな</rt></ruby>い、明月を<ruby><rb>戴</rb><rt>いただ</rt></ruby>き、了然たる一身、<ruby><rb>蕭然</rb><rt>しょうぜん</rt></ruby>たる四境、自然の清福を占領して、いと<ruby><rb>心地</rb><rt>ここち</rt></ruby>よげに見えたりき。</p>
+        <p>折から磧の小屋より<ruby><rb>顕</rb><rt>あら</rt></ruby>われたる<ruby><rb>婀娜者</rb><rt>あだもの</rt></ruby>あり。紺絞りの首抜きの<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>を着て、赤<ruby><rb>毛布</rb><rt>ゲット</rt></ruby>を引き<ruby><rb>絡</rb><rt>まと</rt></ruby>い、身を持て余したるがごとくに歩みを運び、<ruby><rb>下駄</rb><rt>げた</rt></ruby>の<ruby><rb>爪頭</rb><rt>つまさき</rt></ruby>に<ruby><rb>戞々</rb><rt>かつかつ</rt></ruby>と<ruby><rb>礫</rb><rt>こいし</rt></ruby>を<ruby><rb>蹴遣</rb><rt>けや</rt></ruby>りつつ、流れに沿いて<ruby><rb>逍遥</rb><rt>さまよ</rt></ruby>いたりしが、<ruby><rb>瑠璃</rb><rt>るり</rt></ruby>色に澄み渡れる空を打ち仰ぎて、</p>
+        <p>「ああ、いいお月夜だ。寝るには惜しい」</p>
+        <p>川風はさっと渠の<ruby><rb>鬢</rb><rt>びん</rt></ruby>を吹き乱せり。</p>
+        <p>「ああ、薄ら寒くなってきた」</p>
+        <p>しかと<ruby><rb>毛布</rb><rt>ケット</rt></ruby>を<ruby><rb>絡</rb><rt>まと</rt></ruby>いて、渠はあたりを<ruby><rb>眗</rb><rt>みまわ</rt></ruby>しぬ。</p>
+        <p>「人っ子一人いやしない。なんだ、ほんとに、暑いときはわあわあ騒いで、涼しくなる時分には寝てしまうのか。ふふ、人間というものはいこじなもんだ。涼むんならこういうときじゃないか。どれ、橋の上へでも行ってみようか。人さえいなけりゃ、どこでもいい<ruby><rb>景色</rb><rt>けしき</rt></ruby>なもんだ」</p>
+        <p>渠は再び徐々として歩を移せり。</p>
+        <p>この女は<persName ref="#shiraito">滝の白糸</persName>なり。渠らの仲間は便宜上<ruby><rb>旅籠</rb><rt>はたご</rt></ruby>を取らずして、小屋を家とせるもの<ruby><rb>寡</rb><rt>すく</rt></ruby>なからず。<persName ref="#shiraito">白糸</persName>も<ruby><rb>然</rb><rt>さ</rt></ruby>なり。</p>
+        <p>やがて渠は橋に来りぬ。<ruby><rb>吾妻下駄</rb><rt>あずまげた</rt></ruby>の音は天地の<ruby><rb>寂黙</rb><rt>せきもく</rt></ruby>を破りて、からんころんと月に響けり。渠はその音の<ruby><rb>可愛</rb><rt>おかし</rt></ruby>さに、なおしいて響かせつつ、橋の<ruby><rb>央</rb><rt>なかば</rt></ruby>近く来たれるとき、やにわに<ruby><rb>左手</rb><rt>ゆんで</rt></ruby>を<ruby><rb>抗</rb><rt>あ</rt></ruby>げてその<ruby><rb>高髷</rb><rt>たかまげ</rt></ruby>を<ruby><rb>攫</rb><rt>つか</rt></ruby>み、</p>
+        <p>「ええもう重っ苦しい。ちょっうるせえ！」</p>
+        <p><ruby><rb>暴々</rb><rt>あらあら</rt></ruby>しく引き<ruby><rb>解</rb><rt>ほど</rt></ruby>きて、手早くぐるぐる巻きにせり。</p>
+        <p>「ああこれで清々した。二十四にもなって高島田に厚化粧でもあるまい」</p>
+        <p>かくて<persName ref="#shiraito">白糸</persName>は水を<ruby><rb>聴</rb><rt>き</rt></ruby>き、月を望み、夜色の幽静を賞して、ようやく橋の半ばを過ぎぬ。渠はたちまちのんきなる人の姿を認めぬ。何者かこれ、天地を<ruby><rb>枕衾</rb><rt>ちんきん</rt></ruby>として露下月前に快眠せる<ruby><rb>漢子</rb><rt>おのこ</rt></ruby>は、数歩のうちにありて<ruby><rb>齁</rb><rt>いびき</rt></ruby>を立てつ。</p>
+        <p>「おや！　いい気なものだよ。だれだい、<persName ref="#shin">新</persName>じゃないか」</p>
+        <p><ruby><rb>囃子方</rb><rt>はやしかた</rt></ruby>に<persName ref="#shin">新</persName>という者あり。宵より<ruby><rb>出</rb><rt>い</rt></ruby>でていまだ小屋に<ruby><rb>還</rb><rt>かえ</rt></ruby>らざれば、それかと<persName ref="#shiraito">白糸</persName>は間近に寄りて、男の寝顔を<ruby><rb>覰</rb><rt>のぞ</rt></ruby>きたり。</p>
+        <p><persName ref="#shin">新</persName>はいまだかくのごとくのんきならざるなり。渠ははたして<persName ref="#shin">新</persName>にはあらざりき。<persName ref="#shin">新</persName>の<ruby><rb>相貌</rb><rt>そうぼう</rt></ruby>はかくのごとく威儀あるものにあらざるなり。渠は千の<persName ref="#shin">新</persName>を合わせて、なおかつ<ruby><rb>勝</rb><rt>まさ</rt></ruby>ること千の<persName ref="#shin">新</persName>なるべき異常の<ruby><rb>面魂</rb><rt>つらだましい</rt></ruby>なりき。</p>
+        <p>その<ruby><rb>眉</rb><rt>まゆ</rt></ruby>は長くこまやかに、<ruby><rb>睡</rb><rt>ねむ</rt></ruby>れる<ruby><rb>眸子</rb><rt>まなじり</rt></ruby>も<ruby><rb>凛如</rb><rt>りんじょ</rt></ruby>として、正しく結びたる<ruby><rb>脣</rb><rt>くちびる</rt></ruby>は、夢中も放心せざる渠が意気の<ruby><rb>俊爽</rb><rt>しゅんそう</rt></ruby>なるを語れり。漆のごとき髪はやや<ruby><rb>生</rb><rt>お</rt></ruby>いて、広き<ruby><rb>額</rb><rt>ひたい</rt></ruby>に垂れたるが、吹き揚ぐる川風に絶えず<ruby><rb>戦</rb><rt>そよ</rt></ruby>げり。</p>
+        <p>つくづく<ruby><rb>視</rb><rt>なが</rt></ruby>めたりし<persName ref="#shiraito">白糸</persName>はたちまち色を<ruby><rb>作</rb><rt>な</rt></ruby>して叫びぬ。</p>
+        <p>「あら、まあ！　<persName ref="#kinya">金さん</persName>だよ」</p>
+        <p>欄干に眠れるはこれ余人ならず、例の乗り合い馬車の<ruby><rb>馭者</rb><rt>ぎょしゃ</rt></ruby>なり。</p>
+        <p>「どうして今時分こんなところにねえ」</p>
+        <p>渠は<ruby><rb>跫音</rb><rt>あしおと</rt></ruby>を忍びて、再び男に寄り添いつつ、</p>
+        <p>「ほんとに罪のない顔をして寝ているよ」</p>
+        <p><ruby><rb>恍惚</rb><rt>こうこつ</rt></ruby>として<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>を凝らしたりしが、にわかにおのれが<ruby><rb>絡</rb><rt>まと</rt></ruby>いし<ruby><rb>毛布</rb><rt>ケット</rt></ruby>を脱ぎて<ruby><rb>被</rb><rt>き</rt></ruby>せ<ruby><rb>懸</rb><rt>か</rt></ruby>けたれども、馭者は夢にも知らで<ruby><rb>熟睡</rb><rt>うまいね</rt></ruby>せり。</p>
+        <p><persName ref="#shiraito">白糸</persName>は欄干に腰を<ruby><rb>憩</rb><rt>やす</rt></ruby>めて、しばらくなすこともあらざりしが、突然声を揚げて、</p>
+        <p>「ええひどい蚊だ」<ruby><rb>膝</rb><rt>ひざ</rt></ruby>のあたりをはたと<ruby><rb>拊</rb><rt>う</rt></ruby>てり。この音にや驚きけん、馭者は<ruby><rb>眼覚</rb><rt>めさ</rt></ruby>まして、<ruby><rb>叭</rb><rt>あくび</rt></ruby>まじりに、</p>
+        <p>「ああ、寝た。もう<ruby><rb>何時</rb><rt>なんどき</rt></ruby>か知らん」</p>
+        <p>思い寄らざりしわがかたわらに<ruby><rb>媚</rb><rt>なま</rt></ruby>めける声ありて、</p>
+        <p>「もうかれこれ一時ですよ」</p>
+        <p>馭者は<ruby><rb>愕然</rb><rt>がくぜん</rt></ruby>として顧みれば、わが肩に見覚えぬ<ruby><rb>毛布</rb><rt>ケット</rt></ruby>ありて、深夜の寒を<ruby><rb>護</rb><rt>まも</rt></ruby>れり。</p>
+        <p>「や、毛布を着せてくだすったのは！　あなた？　でございますか」</p>
+        <p><persName ref="#shiraito">白糸</persName>は<ruby><rb>微笑</rb><rt>えみ</rt></ruby>を含みて、<ruby><rb>呆</rb><rt>あき</rt></ruby>れたる馭者の<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>視</rb><rt>み</rt></ruby>つつ、</p>
+        <p>「夜露に打たれると<ruby><rb>体</rb><rt>からだ</rt></ruby>の毒ですよ」</p>
+        <p>馭者は黙して一礼せり。<persName ref="#shiraito">白糸</persName>はうれしげに身を進めて、</p>
+        <p>「あなた、その後は<ruby><rb>御機嫌</rb><rt>ごきげん</rt></ruby>よう」</p>
+        <p>いよいよ<ruby><rb>呆</rb><rt>あき</rt></ruby>れたる馭者は少しく身を<ruby><rb>退</rb><rt>すさ</rt></ruby>りて、<ruby><rb>仮初</rb><rt>かりそめ</rt></ruby>ながら、<ruby><rb>狐狸変化</rb><rt>こりへんげ</rt></ruby>のものにはあらずやと心ひそかに疑えり。月を浴びてものすごきまで美しき女の顔を、無遠慮に打ち<ruby><rb>眺</rb><rt>なが</rt></ruby>めたる渠の<ruby><rb>眼色</rb><rt>めざし</rt></ruby>は、<ruby><rb>顰</rb><rt>ひそ</rt></ruby>める眉の下より異彩を放てり。</p>
+        <p>「どなたでしたか、いっこう存じません」</p>
+        <p><persName ref="#shiraito">白糸</persName>は<ruby><rb>片頬笑</rb><rt>かたほえ</rt></ruby>みて、</p>
+        <p>「あれ、情なしだねえ。私は忘れやしないよ」</p>
+        <p>「はてな」と馭者は<ruby><rb>首</rb><rt>こうべ</rt></ruby>を傾けたり。</p>
+        <p>「<persName ref="#kinya">金さん</persName>」と女はなれなれしく呼びかけぬ。</p>
+        <p>馭者はいたく驚けり。月下の美人<ruby><rb>生面</rb><rt>せいめん</rt></ruby>にしてわが名を<ruby><rb>識</rb><rt>し</rt></ruby>る。馭者たる者だれか驚かざらんや。渠は実にいまだかつて信ぜざりし<ruby><rb>狐狸</rb><rt>こり</rt></ruby>の類にはあらずや、と心はじめて惑いぬ。</p>
+        <p>「おまえさんはよっぽど情なしだよ。自分の抱いた女を忘れるなんということがあるものかね」</p>
+        <p>「抱いた？　私が？」</p>
+        <p>「ああ、お前さんに抱かれたのさ」</p>
+        <p>「どこで？」</p>
+        <p>「いい<ruby><rb>所</rb><rt>とこ</rt></ruby>で！」</p>
+        <p><ruby><rb>袖</rb><rt>そで</rt></ruby>を<ruby><rb>掩</rb><rt>おお</rt></ruby>いて<persName ref="#shiraito">白糸</persName>は<ruby><rb>嫣然</rb><rt>えんぜん</rt></ruby>一笑せり。</p>
+        <p>馭者は深く思案に暮れたりしが、ようよう傾けし<ruby><rb>首</rb><rt>こうべ</rt></ruby>を正して言えり。</p>
+        <p>「抱いた<ruby><rb>記憶</rb><rt>おぼえ</rt></ruby>はないが、なるほどどこかで見たようだ」</p>
+        <p>「見たようだもないもんだ。<placeName ref="#takaoka">高岡</placeName>から馬車に乗ったとき、人力車と<ruby><rb>競走</rb><rt>かけっくら</rt></ruby>をして、<placeName ref="#isurugi"><ruby><rb>石動</rb><rt>いするぎ</rt></ruby></placeName>手前からおまえさんに抱かれて、<ruby><rb>馬上</rb><rt>うま</rt></ruby>の合い乗りをした女さ」</p>
+        <p>「おお！　そうだ」<ruby><rb>横手</rb><rt>よこで</rt></ruby>を<ruby><rb>拍</rb><rt>う</rt></ruby>ちて、馭者は<ruby><rb>大声</rb><rt>たいせい</rt></ruby>を発せり、<persName ref="#shiraito">白糸</persName>はその声に驚かされて、</p>
+        <p>「ええびっくりした。ねえおまえさん、覚えておいでだろう」</p>
+        <p>「うむ、覚えとる。そうだった、そうだった」</p>
+        <p>馭者は<ruby><rb>脣辺</rb><rt>しんぺん</rt></ruby>に微笑を浮かべて、再び横手を拍てり。</p>
+        <p>「でも言われるまで<ruby><rb>憶</rb><rt>おも</rt></ruby>い出さないなんざあ、あんまり不実すぎるのねえ」</p>
+        <p>「いや、不実というわけではないけれど、毎日何十人という客の顔を、いちいち覚えていられるものではない」</p>
+        <p>「それはごもっともさ。そうだけれども、<ruby><rb>馬上</rb><rt>うま</rt></ruby>の合い乗りをするお客は毎日はありますまい」</p>
+        <p>「あんなことが毎日あられてたまるものか」</p>
+        <p>二人は相見て笑いぬ。ときに<ruby><rb>数杵</rb><rt>すうしょ</rt></ruby>の鐘声遠く響きて、月はますます白く、空はますます澄めり。</p>
+        <p><persName ref="#shiraito">白糸</persName>はあらためて馭者に向かい、</p>
+        <p>「おまえさん、<placeName ref="#kanazawa">金沢</placeName>へは<ruby><rb>何日</rb><rt>いつ</rt></ruby>、どうしてお出でなすったの？」</p>
+        <p><ruby><rb>四顧寥廓</rb><rt>しこりょうかく</rt></ruby>として、ただ山水と明月とあるのみ。<ruby><rb>飂戻</rb><rt>りょうれい</rt></ruby>たる<ruby><rb>天風</rb><rt>てんぷう</rt></ruby>はおもむろに馭者の<ruby><rb>毛布</rb><rt>ケット</rt></ruby>を<ruby><rb>飄</rb><rt>ひるがえ</rt></ruby>せり。</p>
+        <p>「実はあっちを浪人してね……」</p>
+        <p>「おやまあ、どうして？」</p>
+        <p>「これも君ゆえさ」と笑えば、</p>
+        <p>「御冗談もんだよ」と<persName ref="#shiraito">白糸</persName>は<ruby><rb>流眄</rb><rt>ながしめ</rt></ruby>に<ruby><rb>見遣</rb><rt>みや</rt></ruby>りぬ。</p>
+        <p>「いや、それはともかくも、<ruby><rb>話説</rb><rt>はなし</rt></ruby>をせんけりゃ<ruby><rb>解</rb><rt>わか</rt></ruby>らん」</p>
+        <p>馭者は<ruby><rb>懐裡</rb><rt>ふところ</rt></ruby>を<ruby><rb>捜</rb><rt>さぐ</rt></ruby>りて、油紙の<ruby><rb>蒲簀莨入</rb><rt>かますたばこい</rt></ruby>れを取り出だし、いそがわしく一服を喫して、直ちに物語の端を<ruby><rb>発</rb><rt>ひら</rt></ruby>かんとせり。<persName ref="#shiraito">白糸</persName>は渠が吸い殻を<ruby><rb>撃</rb><rt>はた</rt></ruby>くを待ちて、</p>
+        <p>「済みませんが、一服貸してくださいな」</p>
+        <p>馭者は<ruby><rb>言下</rb><rt>ごんか</rt></ruby>に莨入れとマッチとを手渡して、</p>
+        <p>「煙管が<ruby><rb>壅</rb><rt>つま</rt></ruby>ってます」</p>
+        <p>「いいえ、結構」</p>
+        <p><persName ref="#shiraito">白糸</persName>は<ruby><rb>一吃</rb><rt>いっきつ</rt></ruby>を試みぬ。はたしてその<ruby><rb>言</rb><rt>ことば</rt></ruby>のごとく、煙管は<ruby><rb>不快</rb><rt>こころわろ</rt></ruby>き<ruby><rb>脂</rb><rt>やに</rt></ruby>の音のみして、<ruby><rb>煙</rb><rt>けむり</rt></ruby>の通うこと<ruby><rb>縷</rb><rt>いとすじ</rt></ruby>よりわずかなり。</p>
+        <p>「なるほどこれは<ruby><rb>壅</rb><rt>つま</rt></ruby>ってる」</p>
+        <p>「それで吸うにはよっぽど力が<ruby><rb>要</rb><rt>い</rt></ruby>るのだ」</p>
+        <p>「ばかにしないねえ」</p>
+        <p>美人は<ruby><rb>紙縷</rb><rt>こより</rt></ruby>を<ruby><rb>撚</rb><rt>ひね</rt></ruby>りて、煙管を通し、<ruby><rb>溝泥</rb><rt>どぶどろ</rt></ruby>のごとき脂に<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>皺</rb><rt>しわ</rt></ruby>めて、</p>
+        <p>「こら！　御覧な、<ruby><rb>無性</rb><rt>ぶしょう</rt></ruby>だねえ。おまえさん<ruby><rb>寡夫</rb><rt>やもめ</rt></ruby>かい」</p>
+        <p>「もちろん」</p>
+        <p>「おや、もちろんとは<ruby><rb>御挨拶</rb><rt>あいさつ</rt></ruby>だ。でも、<ruby><rb>情婦</rb><rt>いろ</rt></ruby>の一人や<ruby><rb>半分</rb><rt>はんぶん</rt></ruby>はありましょう」</p>
+        <p>「ばかな！」と馭者は<ruby><rb>一喝</rb><rt>いっかつ</rt></ruby>せり。</p>
+        <p>「じゃないの？」</p>
+        <p>「知れたこと」</p>
+        <p>「ほんとに？」</p>
+        <p>「くどいなあ」</p>
+        <p>渠はこの問答を忌まわしげに<ruby><rb>空嘯</rb><rt>そらうそぶ</rt></ruby>きぬ。</p>
+        <p>「おまえさんの<ruby><rb>壮年</rb><rt>とし</rt></ruby>で、<ruby><rb>独身</rb><rt>ひとりみ</rt></ruby>で、情婦がないなんて、ほんとに<ruby><rb>男子</rb><rt>おとこ</rt></ruby>の<ruby><rb>恥辱</rb><rt>はじ</rt></ruby>だよ。私が似合わしいのを一人世話してあげようか」</p>
+        <p>馭者は<ruby><rb>傲然</rb><rt>ごうぜん</rt></ruby>として、</p>
+        <p>「そんなものは<ruby><rb>要</rb><rt>い</rt></ruby>らんよ」</p>
+        <p>「おや、ご免なさいまし。さあ、お<ruby><rb>掃除</rb><rt>そうじ</rt></ruby>ができたから、一服<ruby><rb>戴</rb><rt>いただ</rt></ruby>こう」</p>
+        <p><persName ref="#shiraito">白糸</persName>はまず二服を<ruby><rb>吃</rb><rt>きっ</rt></ruby>して、三服目を馭者に、</p>
+        <p>「あい、上げましょう」</p>
+        <p>「これはありがとう。ああよく通ったね」</p>
+        <p>「また<ruby><rb>壅</rb><rt>つま</rt></ruby>ったときは、いつでも持ってお出でなさい」</p>
+        <p>大口<ruby><rb>開</rb><rt>あ</rt></ruby>いて馭者は<ruby><rb>心快</rb><rt>こころよ</rt></ruby>げに笑えり。<persName ref="#shiraito">白糸</persName>は再び煙管を<ruby><rb>仮</rb><rt>か</rt></ruby>りて、のどかに<ruby><rb>烟</rb><rt>けぶり</rt></ruby>を吹きつつ、</p>
+        <p>「今の<ruby><rb>顛末</rb><rt>はなし</rt></ruby>というのを聞かしてくださいな」</p>
+        <p>馭者は<ruby><rb>頷</rb><rt>うなず</rt></ruby>きて、立てりし<ruby><rb>態</rb><rt>すがた</rt></ruby>を変えて、斜めに欄干に<ruby><rb>倚</rb><rt>よ</rt></ruby>り、</p>
+        <p>「あのとき、あんな乱暴を<ruby><rb>行</rb><rt>や</rt></ruby>って、とうとう人力車を乗っ越したのはよかったが、きゃつらはあれを非常に<ruby><rb>口惜</rb><rt>くや</rt></ruby>しがってね、会社へむずかしい掛け合いを始めたのだ」</p>
+        <p>美人は<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を<ruby><rb>昂</rb><rt>あ</rt></ruby>げて、</p>
+        <p>「なんだってまた？」</p>
+        <p>「何もかにも<ruby><rb>理窟</rb><rt>りくつ</rt></ruby>なんぞはありゃせん。あの一件を根に持って、<ruby><rb>喧嘩</rb><rt>けんか</rt></ruby>を仕掛けに来たのさね」</p>
+        <p>「うむ、生意気な！　どうしたい？」</p>
+        <p>「相手になると、事がめんどうになって、実は双方とも商売のじゃまになるのだ。そこで、会社のほうでは<ruby><rb>穏便</rb><rt>おんびん</rt></ruby>がいいというので、むろん片手落ちの裁判だけれど、私が因果を含められて、雇を解かれたのさ」</p>
+        <p><persName ref="#shiraito">白糸</persName>は身に<ruby><rb>沁</rb><rt>し</rt></ruby>む夜風にわれとわが身を<ruby><rb>抱</rb><rt>いだ</rt></ruby>きて、</p>
+        <p>「まあ、おきのどくだったねえ」</p>
+        <p>渠は慰むる<ruby><rb>語</rb><rt>ことば</rt></ruby>なきがごとき<ruby><rb>面色</rb><rt>おももち</rt></ruby>なりき。馭者は<ruby><rb>冷笑</rb><rt>あざわら</rt></ruby>いて、</p>
+        <p>「なあに、高が馬方だ」</p>
+        <p>「けれどもさ、まことにおきのどくなことをしたねえ、いわば私のためだもの」</p>
+        <p>美人は愁然として腕を<ruby><rb>拱</rb><rt>こまぬ</rt></ruby>きぬ。馭者はまじめに、</p>
+        <p>「その代わり煙管の掃除をしてもらった」</p>
+        <p>「あら、冗談じゃないよ、この人は。そうしておまえさんこれからどうするつもりなの？」</p>
+        <p>「どうといって、やっぱり食う算段さ。<placeName ref="#takaoka">高岡</placeName>に<ruby><rb>彷徨</rb><rt>ぶらつ</rt></ruby>いていたって始まらんので、<placeName ref="#kanazawa">金沢</placeName>には士官がいるから、<ruby><rb>馬丁</rb><rt>べっとう</rt></ruby>の口でもあるだろうと思って、<ruby><rb>探</rb><rt>さが</rt></ruby>しに出て来た。<ruby><rb>今日</rb><rt>きょう</rt></ruby>も朝から一日<ruby><rb>奔走</rb><rt>かけある</rt></ruby>いたので、すっかり<ruby><rb>憊</rb><rt>くたび</rt></ruby>れてしまって、晩方<ruby><rb>一風呂</rb><rt>ひとっぷろ</rt></ruby><ruby><rb>入</rb><rt>はい</rt></ruby>ったところが、暑くて寝られんから、ぶらぶら<ruby><rb>納涼</rb><rt>すずみ</rt></ruby>に出掛けて、ここで月を<ruby><rb>観</rb><rt>み</rt></ruby>ていたうちに、いい<ruby><rb>心地</rb><rt>こころもち</rt></ruby>になって<ruby><rb>睡</rb><rt>ね</rt></ruby>こんでしまった」</p>
+        <p>「おや、そう。そうして口はありましたか」</p>
+        <p>「ない！」と馭者は<ruby><rb>頭</rb><rt>かしら</rt></ruby>を<ruby><rb>掉</rb><rt>ふ</rt></ruby>りぬ。</p>
+        <p><persName ref="#shiraito">白糸</persName>はしばらく沈吟したりしが、</p>
+        <p>「あなた、こんなことを申しちゃ生意気だけれど、お見受け申したところが、馬丁なんぞをなさるような御人体じゃないね」</p>
+        <p>馭者は長嘆せり。</p>
+        <p>「<ruby><rb>生得</rb><rt>うまれ</rt></ruby>からの馬丁でもないさ」</p>
+        <p>美人は黙して<ruby><rb>頷</rb><rt>うなず</rt></ruby>きぬ。</p>
+        <p>「<ruby><rb>愚痴</rb><rt>ぐち</rt></ruby>じゃあるが、聞いてくれるか」</p>
+        <p>わびしげなる男の顔をつくづく<ruby><rb>視</rb><rt>なが</rt></ruby>めて、<persName ref="#shiraito">白糸</persName>は渠の物語るを待てり。</p>
+        <p>「私は<placeName ref="#kanazawa">金沢</placeName>の士族だが、少し<ruby><rb>仔細</rb><rt>しさい</rt></ruby>があって、<ruby><rb>幼少</rb><rt>ちいさい</rt></ruby>ころに<ruby><rb>家</rb><rt>うち</rt></ruby>は<placeName ref="#takaoka">高岡</placeName>へ引っ越したのだ。そののち私一人<placeName ref="#kanazawa">金沢</placeName>へ出て来て、ある学校へ入っているうち、<ruby><rb>阿爺</rb><rt>おやじ</rt></ruby>に<ruby><rb>亡</rb><rt>な</rt></ruby>くなられて、ちょうど三年前だね、余儀なく中途で学問は<ruby><rb>廃止</rb><rt>やめ</rt></ruby>さ。それから<placeName ref="#takaoka">高岡</placeName>へ<ruby><rb>還</rb><rt>かえ</rt></ruby>ってみると、その日から<ruby><rb>稼</rb><rt>かせ</rt></ruby>ぎ人というものがないのだ。私が母親を過ごさにゃならんのだ。何を言うにも、まだ書生中の<ruby><rb>体</rb><rt>からだ</rt></ruby>だろう、食うほどの芸はなし、実は弱ったね。<ruby><rb>亡父</rb><rt>おやじ</rt></ruby>は馬の家じゃなかったけれど、大の<ruby><rb>所好</rb><rt>すき</rt></ruby>で、馬術では藩で鳴らしたものだそうだ。それだから、私も<ruby><rb>小児</rb><rt>こども</rt></ruby>の時分<ruby><rb>稽古</rb><rt>けいこ</rt></ruby>をして、少しは<ruby><rb>所得</rb><rt>おぼえ</rt></ruby>があるので、馬車会社へ住み込んで、馭者となった。それでまず<ruby><rb>活計</rb><rt>くらし</rt></ruby>を立てているという、まことに<ruby><rb>愧</rb><rt>は</rt></ruby>ずかしい次第さ。しかし、私だってまさか馬方で果てる<ruby><rb>了簡</rb><rt>りょうけん</rt></ruby>でもない、目的も<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>もあるのだけれど、ままにならぬが浮き世かね」</p>
+        <p>渠は<ruby><rb>茫々</rb><rt>ぼうぼう</rt></ruby>たる天を仰ぎて、しばらく<ruby><rb>悵然</rb><rt>ちょうぜん</rt></ruby>たりき。その<ruby><rb>面上</rb><rt>おもて</rt></ruby>にはいうべからざる悲憤の色を見たり。<persName ref="#shiraito">白糸</persName>は情に<ruby><rb>勝</rb><rt>た</rt></ruby>えざる<ruby><rb>声音</rb><rt>こわね</rt></ruby>にて、</p>
+        <p>「そりゃあ、もうだれしも浮き世ですよ」</p>
+        <p>「うむ、まあ、浮き世とあきらめておくのだ」</p>
+        <p>「今おまえさんのおっしゃった<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>というのは、私たちには聞いても<ruby><rb>解</rb><rt>わか</rt></ruby>りはしますまいけれど、なんぞ、その、学問のことでしょうね？」</p>
+        <p>「そう、法律という学問の修行さ」</p>
+        <p>「学問をするなら、<placeName ref="#kanazawa">金沢</placeName>なんぞより<placeName ref="#tokyo">東京</placeName>のほうがいいというじゃありませんか」</p>
+        <p>馭者は苦笑いして、</p>
+        <p>「そうとも」</p>
+        <p>「それじゃいっそ<placeName ref="#tokyo">東京</placeName>へお出でなさればいいのにねえ」</p>
+        <p>「行けりゃ行くさ。そこが浮き世じゃないか」</p>
+        <p><persName ref="#shiraito">白糸</persName>は<ruby><rb>軽</rb><rt>かろ</rt></ruby>く小<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を<ruby><rb>拊</rb><rt>う</rt></ruby>ちて、</p>
+        <p>「<ruby><rb>黄金</rb><rt>かね</rt></ruby>の世の中ですか」</p>
+        <p>「地獄の<ruby><rb>沙汰</rb><rt>さた</rt></ruby>さえ、なあ」</p>
+        <p>再び馭者は苦笑いせり。</p>
+        <p><persName ref="#shiraito">白糸</persName>は事もなげに、</p>
+        <p>「じゃあなた、お<ruby><rb>出</rb><rt>い</rt></ruby>でなさいな、ねえ、<placeName ref="#tokyo">東京</placeName>へさ。もし、腹を立っちゃいけませんよ、失礼だが、私が仕送ってあげようじゃありませんか」</p>
+        <p>深沈なる馭者の魂も、このとき<ruby><rb>跳</rb><rt>おど</rt></ruby>るばかりに<ruby><rb>動</rb><rt>ゆらめ</rt></ruby>きぬ。渠は驚くよりむしろ呆れたり。呆るるよりむしろ<ruby><rb>慄</rb><rt>おのの</rt></ruby>きたるなり。渠は色を変えて、この美しき<ruby><rb>魔性</rb><rt>ましょう</rt></ruby>のものを<ruby><rb>睨</rb><rt>ね</rt></ruby>めたりけり。さきに半円の<ruby><rb>酒銭</rb><rt>さかて</rt></ruby>を投じて、他の一銭よりも<ruby><rb>吝</rb><rt>お</rt></ruby>しまざりしこの美人の<ruby><rb>胆</rb><rt>たん</rt></ruby>は、拾人の乗り合いをしてそぞろに寒心せしめたりき。銀貨一片に<ruby><rb>瞪目</rb><rt>とうもく</rt></ruby>せし乗り合いよ、君らをして今夜<placeName ref="#tenjinbashi">天神橋</placeName>上の壮語を聞かしめなば、肝胆たちまち破れて、血は耳に<ruby><rb>迸出</rb><rt>ほとばし</rt></ruby>らん。花顔柳腰の人、そもそもなんじは<ruby><rb>狐狸</rb><rt>こり</rt></ruby>か、<ruby><rb>変化</rb><rt>へんげ</rt></ruby>か、魔性か。おそらくは<ruby><rb>胭脂</rb><rt>えんし</rt></ruby>の怪物なるべし。またこれ一種の魔性たる馭者だも驚きかつ慄けり。</p>
+        <p>馭者は美人の<ruby><rb>意</rb><rt>こころ</rt></ruby>をその<ruby><rb>面</rb><rt>おもて</rt></ruby>に読まんとしたりしが、<ruby><rb>能</rb><rt>あた</rt></ruby>わずしてついに<ruby><rb>呻</rb><rt>うめ</rt></ruby>き出だせり。</p>
+        <p>「なんだって？」</p>
+        <p>美人も<ruby><rb>希有</rb><rt>けう</rt></ruby>なる<ruby><rb>面色</rb><rt>おももち</rt></ruby>にて反問せり。</p>
+        <p>「なんだってとは？」</p>
+        <p>「どういうわけで」</p>
+        <p>「わけも何もありはしない、ただおまえさんに仕送りがしてみたいのさ」</p>
+        <p>「酔興な！」と馭者はその愚に<ruby><rb>唾</rb><rt>つば</rt></ruby>するがごとく<ruby><rb>独語</rb><rt>ひとりご</rt></ruby>ちぬ。</p>
+        <p>「酔興さ。私も酔興だから、おまえさんも酔興に<ruby><rb>一番</rb><rt>ひとつ</rt></ruby>私の志を受けてみる気はなしかい。ええ、<persName ref="#kinya">金さん</persName>、どうだね」</p>
+        <p>馭者はしきりに打ち案じて、とこうの分別に迷いぬ。</p>
+        <p>「そんなに<ruby><rb>慮</rb><rt>かんが</rt></ruby>えることはないじゃないか」</p>
+        <p>「しかし、縁も<ruby><rb>由縁</rb><rt>ゆかり</rt></ruby>もないものに……」</p>
+        <p>「縁というものも始めは他人どうし。ここでおまえさんが私の志を受けてくだされば、それがつまり縁になるんだろうじゃありませんかね」</p>
+        <p>「恩を受ければ<ruby><rb>報</rb><rt>かえ</rt></ruby>さんければならぬ義務がある。その責任が重いから……」</p>
+        <p>「それで断わるとお言いのかい。なんだねえ、<ruby><rb>報恩</rb><rt>おんがえし</rt></ruby>ができるの、できないのと、そんなことを苦にするおまえさんでもなかろうじゃないか。私だって泥坊に<ruby><rb>伯父</rb><rt>おじ</rt></ruby>さんがあるのじゃなし、知りもしない人を<ruby><rb>捉</rb><rt>つかま</rt></ruby>えて、やたらにお金を<ruby><rb>貢</rb><rt>みつ</rt></ruby>いでたまるものかね。私はおまえさんだから貢いでみたいのさ。いくらいやだとお言いでも、私は貢ぐよ。<ruby><rb>後生</rb><rt>ごしょう</rt></ruby>だから貢がしてくださいよ。ねえ、いいでしょう、いいよう！　うんとお言いよ。構うものかね、遠慮も何も<ruby><rb>要</rb><rt>い</rt></ruby>るものじゃない。私はおまえさんの<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>というのが<ruby><rb>愜</rb><rt>かな</rt></ruby>いさえすれば、それでいいのだ。それが私への<ruby><rb>報恩</rb><rt>おんがえし</rt></ruby>さ、いいじゃないか。私はおまえさんはきっとりっぱな<ruby><rb>人物</rb><rt>ひと</rt></ruby>になれると<ruby><rb>想</rb><rt>おも</rt></ruby>うから、ぜひりっぱな人物にしてみたくってたまらないんだもの。後生だから早く勉強して、りっぱな人物になってくださいよう」</p>
+        <p>その<ruby><rb>音</rb><rt>おん</rt></ruby><ruby><rb>柔媚</rb><rt>じゅうび</rt></ruby>なれども言々風霜を<ruby><rb>挟</rb><rt>さしはさ</rt></ruby>みて、<ruby><rb>凛</rb><rt>りん</rt></ruby>たり、烈たり。馭者は感奮して、両眼に熱涙を浮かべ、</p>
+        <p>「うん、せっかくのお志だ。ご恩に預かりましょう」</p>
+        <p>渠は<ruby><rb>襟</rb><rt>きん</rt></ruby>を正して、うやうやしく<persName ref="#shiraito">白糸</persName>の前に<ruby><rb>頭</rb><rt>かしら</rt></ruby>を下げたり。</p>
+        <p>「なんですねえ、いやに改まってさ。そう、そんなら私の志を受けてくださるの？」</p>
+        <p>美人は喜色満面に<ruby><rb>溢</rb><rt>あふ</rt></ruby>るるばかりなり。</p>
+        <p>「お世話になります」</p>
+        <p>「いやだよ、もう<persName ref="#kinya">金さん</persName>、そんなていねいな<ruby><rb>語</rb><rt>ことば</rt></ruby>を<ruby><rb>遣</rb><rt>つか</rt></ruby>われると、私は気が<ruby><rb>逼</rb><rt>つま</rt></ruby>るから、やっぱり書生言葉を遣ってくださいよ。ほんとに<ruby><rb>凛々</rb><rt>りり</rt></ruby>しくって、私は書生言葉は大好きさ」</p>
+        <p>「恩人に向かって済まんけれども、それじゃぞんざいな言葉を遣おう」</p>
+        <p>「ああ、それがいいんですよ」</p>
+        <p>「しかしね、ここに一つ<ruby><rb>窮</rb><rt>こま</rt></ruby>ったのは、私が<placeName ref="#tokyo">東京</placeName>へ行ってしまうと、母親がひとりで……」</p>
+        <p>「それは御心配なく。及ばずながら私がね……」</p>
+        <p>馭者は夢みる<ruby><rb>心地</rb><rt>ここち</rt></ruby>しつつ耳を傾けたり。<persName ref="#shiraito">白糸</persName>は誠を<ruby><rb>面</rb><rt>おもて</rt></ruby>に<ruby><rb>露</rb><rt>あら</rt></ruby>わして、</p>
+        <p>「きっとお世話をしますから」</p>
+        <p>「いや、どうも重ね重ね、それでは実に済まん。私もこの<ruby><rb>報恩</rb><rt>おんがえし</rt></ruby>には、おまえさんのために力の及ぶだけのことはしなければならんが、何かお<ruby><rb>所望</rb><rt>のぞみ</rt></ruby>はありませんか」</p>
+        <p>「だからさ、私の所望はおまえさんの希望が<ruby><rb>愜</rb><rt>かな</rt></ruby>いさえすれば……」</p>
+        <p>「それはいかん！　自分の<ruby><rb>所望</rb><rt>のぞみ</rt></ruby>を遂げるために恩を受けて、その望みを果たしたで、<ruby><rb>報恩</rb><rt>おんがえし</rt></ruby>になるものではない。それはただ恩に対するところのわが身だけの義務というもので、けっして恩人に対する義務ではない」</p>
+        <p>「でも私が承知ならいいじゃありませんかね」</p>
+        <p>「いくらおまえさんが承知でも、私が不承知だ」</p>
+        <p>「おや、まあ、いやにむずかしいのね」</p>
+        <p>かく言いつつ美人は<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>みぬ。</p>
+        <p>「いや、<ruby><rb>理屈</rb><rt>りくつ</rt></ruby>を言うわけではないがね、目的を達するのを<ruby><rb>報恩</rb><rt>おんがえし</rt></ruby>といえば、<ruby><rb>乞食</rb><rt>こじき</rt></ruby>も同然だ。乞食が銭をもらう、それで食っていく、渠らの目的は食うのだ。食っていけるからそれが方々で銭を<ruby><rb>乞</rb><rt>もら</rt></ruby>った<ruby><rb>報恩</rb><rt>おんがえし</rt></ruby>になるとはいわれまい。私は馬方こそするが、まだ乞食はしたくない。もとよりお志は受けたいのは山々だ。どうか、ねえ、受けられるようにして受けさしてください。すれば、私は喜んで受ける。さもなければ、せっかくだけれどお断わり申そう」</p>
+        <p>とみには返す<ruby><rb>語</rb><rt>ことば</rt></ruby>もなくて、<persName ref="#shiraito">白糸</persName>は<ruby><rb>頭</rb><rt>かしら</rt></ruby>を<ruby><rb>低</rb><rt>た</rt></ruby>れたりしが、やがて馭者の<ruby><rb>面</rb><rt>おもて</rt></ruby>を見るがごとく見ざるがごとく<ruby><rb>覰</rb><rt>うかが</rt></ruby>いつつ、</p>
+        <p>「じゃ言いましょうか」</p>
+        <p>「うん、承ろう」と男はやや<ruby><rb>容</rb><rt>かたち</rt></ruby>を正せり。</p>
+        <p>「ちっと<ruby><rb>羞</rb><rt>は</rt></ruby>ずかしいことさ」</p>
+        <p>「なんなりとも」</p>
+        <p>「<ruby><rb>諾</rb><rt>き</rt></ruby>いてくださるか。いずれおまえさんの身に<ruby><rb>適</rb><rt>かな</rt></ruby>ったことじゃあるけれども」</p>
+        <p>「一応<ruby><rb>聴</rb><rt>き</rt></ruby>いた上でなければ、返事はできんけれど、身に適ったことなら、ずいぶん諾くさ」</p>
+        <p><persName ref="#shiraito">白糸</persName>は<ruby><rb>鬢</rb><rt>びん</rt></ruby>の<ruby><rb>乱</rb><rt>おく</rt></ruby>れを<ruby><rb>掻</rb><rt>か</rt></ruby>き上げて、いくぶんの<ruby><rb>赧羞</rb><rt>はずか</rt></ruby>しさを紛らわさんとせり。馭者は月に向かえる美人の姿の輝くばかりなるを打ち<ruby><rb>瞶</rb><rt>まも</rt></ruby>りつつ、<ruby><rb>固唾</rb><rt>かたず</rt></ruby>を<ruby><rb>嚥</rb><rt>の</rt></ruby>みてその語るを待てり。<persName ref="#shiraito">白糸</persName>は始めに<ruby><rb>口籠</rb><rt>くちご</rt></ruby>もりたりしが、直ちに心を定めたる<ruby><rb>気色</rb><rt>けしき</rt></ruby>にて、</p>
+        <p>「<ruby><rb>処女</rb><rt>きむすめ</rt></ruby>のように<ruby><rb>羞</rb><rt>は</rt></ruby>ずかしがることもない、いい<ruby><rb>婆</rb><rt>ばばあ</rt></ruby>のくせにさ。私の<ruby><rb>所望</rb><rt>のぞみ</rt></ruby>というのはね、おまえさんにかわいがってもらいたいの」</p>
+        <p>「ええ！」と馭者は鋭く叫びぬ。</p>
+        <p>「あれ、そんなこわい顔をしなくったっていいじゃありませんか。何も<ruby><rb>内君</rb><rt>おかみさん</rt></ruby>にしてくれと言うんじゃなし。ただ他人らしくなく、<ruby><rb>生涯</rb><rt>しょうがい</rt></ruby>親類のようにして暮らしたいと言うんでさね」</p>
+        <p>馭者は遅疑せず、渠の語るを追いて潔く答えぬ。</p>
+        <p>「よろしい。けっしてもう他人ではない」</p>
+        <p>涼しき<ruby><rb>眼</rb><rt>め</rt></ruby>と凛々しき眼とは、無量の意を含みて相合えり。渠らは無言の数秒の間に、不能語、不可説なる至微至妙の霊語を交えたりき。渠らが十年語りて尽くすべからざる心底の<ruby><rb>磅礴</rb><rt>ほうはく</rt></ruby>は、実にこの瞬息において神会黙契されけるなり。ややありて、まず馭者は口を開きぬ。</p>
+        <p>「私は<placeName ref="#takaoka">高岡</placeName>の<placeName ref="#kataharamachi"><ruby><rb>片原町</rb><rt>かたはらまち</rt></ruby></placeName>で、<persName ref="#kinya"><ruby><rb>村越欣弥</rb><rt>むらこしきんや</rt></ruby></persName>という者だ」</p>
+        <p>「私は<persName ref="#shiraito">水島友</persName>といいます」</p>
+        <p>「<persName ref="#shiraito">水島友</persName>？　そうしてお宅は？」</p>
+        <p><persName ref="#shiraito">白糸</persName>ははたと<ruby><rb>語</rb><rt>ことば</rt></ruby>に<ruby><rb>塞</rb><rt>つま</rt></ruby>りぬ。渠は定まれる家のあらざればなり。</p>
+        <p>「お宅はちっと<ruby><rb>窮</rb><rt>こま</rt></ruby>ったねえ」</p>
+        <p>「だって、<ruby><rb>家</rb><rt>うち</rt></ruby>のないものがあるものか」</p>
+        <p>「それがないのだからさ」</p>
+        <p>天下に家なきは何者ぞ。<ruby><rb>乞食</rb><rt>こつじき</rt></ruby>の徒といえども、なおかつ雨露を<ruby><rb>凌</rb><rt>しの</rt></ruby>ぐべき<ruby><rb>蔭</rb><rt>かげ</rt></ruby>に眠らずや。世上の<ruby><rb>例</rb><rt>ならい</rt></ruby>をもってせば、この人まさに金屋に入り、<ruby><rb>瑶輿</rb><rt>たまのこし</rt></ruby>に乗るべきなり。しかるを渠は<ruby><rb>無宿</rb><rt>やどなし</rt></ruby>と言う。その行ないすでに奇にして、その心また奇なりといえども、いまだこの言の奇なるには<ruby><rb>如</rb><rt>し</rt></ruby>かず、と馭者は思えり。</p>
+        <p>「それじゃどこにいるのだ」</p>
+        <p>「あすこさ」と美人は<ruby><rb>磧</rb><rt>かわら</rt></ruby>の小屋を指させり。</p>
+        <p>馭者はそなたを望みて、</p>
+        <p>「あすことは？」</p>
+        <p>「見世物小屋さ」と<persName ref="#shiraito">白糸</persName>は異様の<ruby><rb>微笑</rb><rt>えみ</rt></ruby>を含みぬ。</p>
+        <p>「ははあ、見世物小屋とは<ruby><rb>異</rb><rt>かわ</rt></ruby>っている」</p>
+        <p>馭者は心ひそかに驚きたるなり。渠はもとよりこの女をもって良家の女子とは思い<ruby><rb>懸</rb><rt>か</rt></ruby>けざりき、<ruby><rb>寡</rb><rt>すく</rt></ruby>なくとも、海に山に五百年の怪物たるを看破したりけれども、見世物小屋に起き臥しせる乞食芸人の徒ならんとは、実に意表に出でたりしなり。とはいえども渠はさあらぬ体に答えたりき。<persName ref="#shiraito">白糸</persName>は渠の心を<ruby><rb>酌</rb><rt>く</rt></ruby>みておのれを<ruby><rb>嘲</rb><rt>あざけ</rt></ruby>りぬ。</p>
+        <p>「あんまり<ruby><rb>異</rb><rt>かわ</rt></ruby>りすぎてるわね」</p>
+        <p>「見世物の<ruby><rb>三味線</rb><rt>しゃみせん</rt></ruby>でも<ruby><rb>弾</rb><rt>ひ</rt></ruby>いているのかい」</p>
+        <p>「これでも<ruby><rb>太夫元</rb><rt>たゆうもと</rt></ruby>さ。太夫だけになお悪いかもしれない」</p>
+        <p>馭者は<ruby><rb>軽侮</rb><rt>けいぶ</rt></ruby>の色をも<ruby><rb>露</rb><rt>あら</rt></ruby>わさず、</p>
+        <p>「はあ、太夫！　なんの太夫？」</p>
+        <p>「無官の太夫じゃない、水芸の太夫さ。あんまり聞いておくれでないよ、<ruby><rb>面目</rb><rt>きまり</rt></ruby>が悪いからさ」</p>
+        <p>馭者はますますまじめにて、</p>
+        <p>「水芸の太夫？　ははあ、それじゃこのごろ評判の……」</p>
+        <p>かく言いつつ珍しげに女の<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>覰</rb><rt>のぞ</rt></ruby>きぬ。<persName ref="#shiraito">白糸</persName>はさっと<ruby><rb>赧</rb><rt>あから</rt></ruby>む顔を<ruby><rb>背</rb><rt>そむ</rt></ruby>けつつ、</p>
+        <p>「ああもうたくさん、<ruby><rb>堪忍</rb><rt>かに</rt></ruby>しておくれよ」</p>
+        <p>「<persName ref="#shiraito">滝の白糸</persName>というのはおまえさんか」</p>
+        <p><persName ref="#shiraito">白糸</persName>は渠の<ruby><rb>語</rb><rt>ことば</rt></ruby>を手もて制しつ。</p>
+        <p>「もういいってばさ！」</p>
+        <p>「うん、なるほど！」と心の問うところに答え得たる<ruby><rb>風情</rb><rt>ふぜい</rt></ruby>にて、<persName ref="#kinya">欣弥</persName>は<ruby><rb>頷</rb><rt>うなず</rt></ruby>けり。<persName ref="#shiraito">白糸</persName>はいよいよ羞じらいて、</p>
+        <p>「いやだよ、もう。何がなるほどなんだね」</p>
+        <p>「非常にいい女だと聞いていたが、なるほど……」</p>
+        <p>「もういいってばさ」</p>
+        <p>つと身を寄せて、<persName ref="#shiraito">白糸</persName>はやにわに<persName ref="#kinya">欣弥</persName>を<ruby><rb>撞</rb><rt>つ</rt></ruby>きたり。</p>
+        <p>「ええあぶねえ！　いい女だからいいと言うのに、撞き飛ばすことはないじゃないか」</p>
+        <p>「人をばかにするからさ」</p>
+        <p>「ばかにするものか。実に美しい、<ruby><rb>何歳</rb><rt>いくつ</rt></ruby>になるのだ」</p>
+        <p>「おまえさん<ruby><rb>何歳</rb><rt>いくつ</rt></ruby>になるの？」</p>
+        <p>「私は二十六だ」</p>
+        <p>「おや六なの？　まだ若いねえ。私なんぞはもう<ruby><rb>婆</rb><rt>ばばあ</rt></ruby>だね」</p>
+        <p>「<ruby><rb>何歳</rb><rt>いくつ</rt></ruby>さ」</p>
+        <p>「言うと愛想を尽かされるからいや」</p>
+        <p>「ばかな！　ほんとに何歳だよ」</p>
+        <p>「もう婆だってば。四さ」</p>
+        <p>「二十四か！　若いね。<ruby><rb>二十歳</rb><rt>はたち</rt></ruby>ぐらいかと<ruby><rb>想</rb><rt>おも</rt></ruby>った」</p>
+        <p>「何か<ruby><rb>奢</rb><rt>おご</rt></ruby>りましょうよ」</p>
+        <p><persName ref="#shiraito">白糸</persName>は帯の間より白<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の<ruby><rb>袱紗</rb><rt>ふくさ</rt></ruby>包みを取り出だせり。<ruby><rb>解</rb><rt>ひら</rt></ruby>けば一束の紙幣を紙包みにしたるなり。</p>
+        <p>「これに三十円あります。まあこれだけ<ruby><rb>進</rb><rt>あ</rt></ruby>げておきますから、<ruby><rb>家</rb><rt>うち</rt></ruby>の<ruby><rb>処置</rb><rt>かた</rt></ruby>をつけて、一日も早く<placeName ref="#tokyo">東京</placeName>へおいでなさいな」</p>
+        <p>「<ruby><rb>家</rb><rt>うち</rt></ruby>の処置といって、別に<ruby><rb>金円</rb><rt>かね</rt></ruby>の<ruby><rb>要</rb><rt>い</rt></ruby>るようなことはなし、そんなには要らない」</p>
+        <p>「いいからお持ちなさいよ」</p>
+        <p>「<ruby><rb>全額</rb><rt>みんな</rt></ruby>もらったらおまえさんが<ruby><rb>窮</rb><rt>こま</rt></ruby>るだろう」</p>
+        <p>「私はまた<ruby><rb>明日</rb><rt>あす</rt></ruby><ruby><rb>入</rb><rt>はい</rt></ruby>る口があるからさ」</p>
+        <p>「どうも済まんなあ」</p>
+        <p><persName ref="#kinya">欣弥</persName>は受け取りたる紙幣を<ruby><rb>軽</rb><rt>かろ</rt></ruby>く<ruby><rb>戴</rb><rt>いただ</rt></ruby>きて<ruby><rb>懐</rb><rt>ふところ</rt></ruby>にせり。時に通り懸かりたる夜稼ぎの車夫は、怪しむべき月下の密会を<ruby><rb>一瞥</rb><rt>いちべつ</rt></ruby>して、</p>
+        <p>「お合い乗り、都合で、いかがで」</p>
+        <p>渠は<ruby><rb>愚弄</rb><rt>ぐろう</rt></ruby>の態度を示して、<ruby><rb>両箇</rb><rt>ふたり</rt></ruby>のかたわらに立ち<ruby><rb>住</rb><rt>ど</rt></ruby>まりぬ。<persName ref="#shiraito">白糸</persName>はわずかに<ruby><rb>顧眄</rb><rt>みかえ</rt></ruby>りて、<ruby><rb>棄</rb><rt>す</rt></ruby>つるがごとく言い放てり。</p>
+        <p>「要らないよ」</p>
+        <p>「そうおっしゃらずにお召しなすって。へへへへへ」</p>
+        <p>「なんだね、人をばかにして。<ruby><rb>一人</rb><rt>いちにん</rt></ruby>乗りに<ruby><rb>同乗</rb><rt>あいのり</rt></ruby>ができるかい」</p>
+        <p>「そこはまたお話合いで、よろしいようにしてお乗んなすってください」</p>
+        <p>おもしろ半分に<ruby><rb>夤</rb><rt>まつわ</rt></ruby>るを、<persName ref="#shiraito">白糸</persName>は鼻の<ruby><rb>端</rb><rt>さき</rt></ruby>に<ruby><rb>遇</rb><rt>あしら</rt></ruby>いて、</p>
+        <p>「おまえもとんだ苦労性だよ。<ruby><rb>他</rb><rt>ひと</rt></ruby>のことよりは、早く<ruby><rb>還</rb><rt>かえ</rt></ruby>って、<ruby><rb>内君</rb><rt>うちの</rt></ruby>でも<ruby><rb>悦</rb><rt>よろこ</rt></ruby>ばしておやんな」</p>
+        <p>さすがに車夫もこの姉御の<ruby><rb>与</rb><rt>くみ</rt></ruby>しやすからざるを知りぬ。</p>
+        <p>「へい、これははばかり様。まああなたもお楽しみなさいまし」</p>
+        <p>渠は直ちに<ruby><rb>踵</rb><rt>きびす</rt></ruby>を<ruby><rb>回</rb><rt>めぐ</rt></ruby>らして、<ruby><rb>鼻唄</rb><rt>はなうた</rt></ruby>まじりに行き過ぎぬ。<persName ref="#kinya">欣弥</persName>は何思いけん、</p>
+        <p>「おい、<ruby><rb>車夫</rb><rt>くるまや</rt></ruby>！」とにわかに呼び<ruby><rb>住</rb><rt>と</rt></ruby>めたり。</p>
+        <p><ruby><rb>車夫</rb><rt>しゃふ</rt></ruby>は<ruby><rb>頭</rb><rt>かしら</rt></ruby>を振り向けて、</p>
+        <p>「へえ、やっぱりお合い乗りですかね」</p>
+        <p>「ばか言え！　<placeName ref="#fushiki"><ruby><rb>伏木</rb><rt>ふしき</rt></ruby></placeName>まで行くか」</p>
+        <p>渠の答うるに先だちて、<persName ref="#shiraito">白糸</persName>は驚きかつ怪しみて問えり。</p>
+        <p>「<placeName ref="#fushiki">伏木</placeName>……あの、<placeName ref="#fushiki">伏木</placeName>まで？」</p>
+        <p><placeName ref="#fushiki">伏木</placeName>はけだし<ruby><rb>上都</rb><rt>じょうと</rt></ruby>の道、<ruby><rb><placeName ref="#echigo">越後</placeName><placeName ref="#naoetsu">直江津</placeName></rb><rt>えちごなおえつ</rt></ruby>まで汽船便ある港なり。<persName ref="#kinya">欣弥</persName>は平然として、</p>
+        <p>「これからすぐに<ruby><rb>発</rb><rt>た</rt></ruby>とうと思う」</p>
+        <p>「これから⁈」と<persName ref="#shiraito">白糸</persName>はさすがに<ruby><rb>心</rb><rt>むね</rt></ruby>を<ruby><rb>轟</rb><rt>とどろ</rt></ruby>かせり。</p>
+        <p><persName ref="#kinya">欣弥</persName>は頷きたりし<ruby><rb>頭</rb><rt>かしら</rt></ruby>をそのまま<ruby><rb>低</rb><rt>た</rt></ruby>れて、見るべき物もあらぬ橋の上に<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>を凝らしつつ、その胸中は二途の分別を追うに忙しかりき。</p>
+        <p>「これからとはあんまり早急じゃありませんか。まだお話したいこともあるのだから、今夜はともかくも、ねえ」</p>
+        <p>一面は<persName ref="#kinya">欣弥</persName>を説き、一面は車夫に向かい、</p>
+        <p>「若い<ruby><rb>衆</rb><rt>しゅ</rt></ruby>さん、済まないけれど、これを持って行っとくれよ」</p>
+        <p>渠が紙入れを<ruby><rb>捜</rb><rt>さぐ</rt></ruby>るとき、<persName ref="#kinya">欣弥</persName>はあわただしく、</p>
+        <p>「<ruby><rb>車夫</rb><rt>くるまや</rt></ruby>、待っとれ。行っちゃいかんぜ」</p>
+        <p>「あれさ、いいやね。さあ、若い衆さんこれを持って行っとくれよ」</p>
+        <p>五銭の白銅を<ruby><rb>把</rb><rt>と</rt></ruby>りて、まさに渡さんとせり。<persName ref="#kinya">欣弥</persName>はその<ruby><rb>間</rb><rt>なか</rt></ruby>に分け入りて、</p>
+        <p>「少し都合があるのだから、これから<ruby><rb>遣</rb><rt>や</rt></ruby>ってくれ」</p>
+        <p>渠は十分に決心の色を露わせり。<persName ref="#shiraito">白糸</persName>はとうていその動かす能わざるを<ruby><rb>覚</rb><rt>さと</rt></ruby>りて、潔く未練を<ruby><rb>棄</rb><rt>す</rt></ruby>てぬ。</p>
+        <p>「そう。それじゃ無理に留めないけれども……」</p>
+        <p>このとき<ruby><rb>両箇</rb><rt>ふたり</rt></ruby>の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>は期せずして合えり。</p>
+        <p>「そうしてお<ruby><rb>母</rb><rt>かあ</rt></ruby>さんには？」</p>
+        <p>「道で寄って<ruby><rb>暇乞</rb><rt>いとまご</rt></ruby>いをする、ぜひ<placeName ref="#takaoka">高岡</placeName>を通るのだから」</p>
+        <p>「じゃ町はずれまで送りましょう。若衆さん、もう一台ないかねえ」</p>
+        <p>「四、五町行きゃいくらもありまさあ。そこまでだからいっしょに召していらっしゃい」</p>
+        <p>「お<ruby><rb>巫山戯</rb><rt>ふざけ</rt></ruby>でないよ」</p>
+        <p><persName ref="#kinya">欣弥</persName>はすでに車上にありて、</p>
+        <p>「<ruby><rb>車夫</rb><rt>くるまや</rt></ruby>、どうだろう。二人乗ったら<ruby><rb>毀</rb><rt>こわ</rt></ruby>れるかなあ、この車は？」</p>
+        <p>「なあにだいじょうぶ。<ruby><rb>姉</rb><rt>ねえ</rt></ruby>さんほんとにお召しなさいよ」</p>
+        <p>「構うことはない。早く乗った乗った」</p>
+        <p><persName ref="#kinya">欣弥</persName>は手招けば、<persName ref="#shiraito">白糸</persName>は<ruby><rb>微笑</rb><rt>ほおえ</rt></ruby>む。その肩を車夫はとんと<ruby><rb>拊</rb><rt>う</rt></ruby>ちて、</p>
+        <p>「とうとう<ruby><rb>異</rb><rt>おつ</rt></ruby>な寸法になりましたぜ」</p>
+        <p>「いやだよ、<persName ref="#kinya">欣さん</persName>」</p>
+        <p>「いいさ、いいさ！」と<persName ref="#kinya">欣弥</persName>は一笑せり。</p>
+        <p>月はようやく傾きて、鶏声ほのかに白し。</p>
+        <p>四</p>
+        <p><persName ref="#shiraito">滝の白糸</persName>は<placeName ref="#echigo">越後</placeName>の国<placeName ref="#niigata"><ruby><rb>新潟</rb><rt>にいがた</rt></ruby></placeName>の産にして、その地特有の麗質を備えたるが上に、その手練の水芸は、ほとんど人間<ruby><rb>業</rb><rt>わざ</rt></ruby>を離れて、すこぶる驚くべきものなりき。さればいたるところ大入り<ruby><rb>叶</rb><rt>かな</rt></ruby>わざるなきがゆえに、四方の<ruby><rb>金主</rb><rt>きんす</rt></ruby>は<ruby><rb>渠</rb><rt>かれ</rt></ruby>を争いて、ついに<ruby><rb>例</rb><rt>ためし</rt></ruby>なき<ruby><rb>莫大</rb><rt>ばくだい</rt></ruby>の給金を払うに<ruby><rb>到</rb><rt>いた</rt></ruby>れり。</p>
+        <p>渠は親もあらず、<ruby><rb>同胞</rb><rt>はらから</rt></ruby>もあらず、<ruby><rb>情夫</rb><rt>つきもの</rt></ruby>とてもあらざれば、<ruby><rb>一切</rb><rt>いっさい</rt></ruby>の収入はことごとくこれをわが身ひとつに費やすべく、加うるに、<ruby><rb>豁達豪放</rb><rt>かったつごうほう</rt></ruby>の気は、この余裕あるがためにますます<ruby><rb>膨張</rb><rt>ぼうちょう</rt></ruby>して、<ruby><rb>十金</rb><rt>じっきん</rt></ruby>を<ruby><rb>獲</rb><rt>う</rt></ruby>れば<ruby><rb>二十金</rb><rt>にじっきん</rt></ruby>を散ずべき勢いをもって、得るままに<ruby><rb>撒</rb><rt>ま</rt></ruby>き散らせり。これ一つには、金銭を獲るの<ruby><rb>難</rb><rt>かた</rt></ruby>きを渠は知らざりしゆえなり。</p>
+        <p>渠はまた貴族的生活を喜ばず、好みて下等社会の境遇を甘んじ、衣食の美と辺幅の修飾とを求めざりき。渠のあまりに平民的なる、その度を<ruby><rb>放越</rb><rt>ほうえつ</rt></ruby>して<ruby><rb>鉄拐</rb><rt>てっか</rt></ruby>となりぬ。往々見るところの女流の鉄拐は、すべて汚行と、罪業と、悪徳との養成にあらざるなし。<persName ref="#shiraito">白糸</persName>の鉄拐はこれを天真に発して、きわめて純潔清浄なるものなり。</p>
+        <p>渠は思うままにこの鉄拐を振り舞わして、天高く、地広く、この<ruby><rb>幾歳</rb><rt>いくとせ</rt></ruby>をのどかに過ごしたりけるが、いまやすなわちしからざるなり。<persName ref="#kinya">村越欣弥</persName>は渠が然諾を信じて<placeName ref="#tokyo">東京</placeName>に遊学せり。<placeName ref="#takaoka">高岡</placeName>に住めるその母は、<ruby><rb>箸</rb><rt>はし</rt></ruby>を控えて渠が<ruby><rb>饋餉</rb><rt>きしょう</rt></ruby>を待てり。<persName ref="#shiraito">白糸</persName>は月々渠らを扶持すべき責任ある世帯持ちの身となれり。</p>
+        <p>従来の<persName ref="#shiraito">滝の白糸</persName>は、まさにその放逸を縛し、その奇骨を<ruby><rb>挫</rb><rt>ひし</rt></ruby>ぎて、世話女房のお<persName ref="#shiraito">友</persName>とならざるを得ざるべきなり。渠はついにその責任のために石を巻き、鉄を<ruby><rb>捩</rb><rt>ね</rt></ruby>じ、屈すべからざる節を屈して、勤倹小心の婦人となりぬ。その行ないにおいてはなおかつ<persName ref="#shiraito">滝の白糸</persName>たる活気をば<ruby><rb>有</rb><rt>たも</rt></ruby>ちつつ、その精神は全く<persName ref="#shiraito">村越友</persName>として経営苦労しつ。その間は実に<ruby><rb>三年</rb><rt>みとせ</rt></ruby>の長きに<ruby><rb>亙</rb><rt>わた</rt></ruby>れり。</p>
+        <p>あるいは<placeName ref="#toyama"><ruby><rb>富山</rb><rt>とやま</rt></ruby></placeName>に<ruby><rb>赴</rb><rt>い</rt></ruby>き、<placeName ref="#takaoka">高岡</placeName>に買われ、はた<placeName ref="#daishoji"><ruby><rb>大聖寺</rb><rt>だいしょうじ</rt></ruby></placeName><placeName ref="#fukui">福井</placeName>に行き、遠くは故郷の<placeName ref="#niigata">新潟</placeName>に興行し、身を<ruby><rb>厭</rb><rt>いと</rt></ruby>わず八方に<ruby><rb>稼</rb><rt>かせ</rt></ruby>ぎ<ruby><rb>廻</rb><rt>まわ</rt></ruby>りて、幸いにいずくも<ruby><rb>外</rb><rt>はず</rt></ruby>さざりければ、あるいは血をも<ruby><rb>濺</rb><rt>そそ</rt></ruby>がざるべからざる<ruby><rb>至重</rb><rt>しちょう</rt></ruby>の責任も、その収入によりて難なく果たされき。</p>
+        <p>されども見世物の<ruby><rb>類</rb><rt>たぐい</rt></ruby>は春夏の二季を黄金期とせり。秋は<ruby><rb>漸</rb><rt>ようや</rt></ruby>く寂しく、冬は霜枯れの哀れむべきを免れざるなり。いわんや<placeName ref="#hokkoku">北国</placeName>の<ruby><rb>雪</rb><rt>せつ</rt></ruby>世界はほとんど一年の三分の一を白き物の中に<ruby><rb>蟄居</rb><rt>ちっきょ</rt></ruby>せざるべからざるや。ことに時候を論ぜざる見世物と異なりて、渠の演芸はおのずから夏炉冬扇のきらいあり。その<ruby><rb>喝采</rb><rt>やんや</rt></ruby>は全く暑中にありて、冬季は坐食す。</p>
+        <p>よし渠は<ruby><rb>糊口</rb><rt>ここう</rt></ruby>に窮せざるも、月々十数円の<ruby><rb>工面</rb><rt>くめん</rt></ruby>は尋常手段の及ぶべきにあらざるなり。渠はいかにしてかなき<ruby><rb>袖</rb><rt>そで</rt></ruby>を振りける？　魚は木に<ruby><rb>縁</rb><rt>よ</rt></ruby>りて求むべからず、渠は他日の興行を質入れして前借りしたりしなり。</p>
+        <p>その一年、その二年は、とにもかくにもかくのごとき算段によりて過ごしぬ。その三年ののちは、さすがに八方<ruby><rb>塞</rb><rt>ふさ</rt></ruby>がりて、融通の道も絶えなむとせり。</p>
+        <p>翌年の初夏<placeName ref="#kanazawa">金沢</placeName>の招魂祭を当て込みて、<persName ref="#shiraito">白糸</persName>の水芸は興行せられたりき。渠は例の美しき姿と妙なる<ruby><rb>技</rb><rt>わざ</rt></ruby>とをもって、<ruby><rb>希有</rb><rt>けう</rt></ruby>の人気を取りたりしかば、即座に<placeName ref="#echizen">越前</placeName><placeName ref="#fukui">福井</placeName>なるなにがしという金主<ruby><rb>附</rb><rt>つ</rt></ruby>きて、<placeName ref="#kanazawa">金沢</placeName>を打ち揚げしだい、二箇月間三百円にて雇わんとの相談は<ruby><rb>調</rb><rt>ととの</rt></ruby>いき。</p>
+        <p><persName ref="#shiraito">白糸</persName>は諸方に負債ある旨を打ち明けて、その三分の二を前借りし、不義理なる借金を払いて、手もとに百余円を<ruby><rb>剰</rb><rt>あま</rt></ruby>してけり。これをもってせば<persName ref="#kinya">欣弥</persName><ruby><rb>母子</rb><rt>おやこ</rt></ruby>が半年の扶持に足るべしとて、渠は<ruby><rb>顰</rb><rt>ひそ</rt></ruby>みたりし<ruby><rb>愁眉</rb><rt>しゅうび</rt></ruby>を開けり。</p>
+        <p>されども<persName ref="#kinya">欣弥</persName>は実際半年間の仕送りを要せざるなり。</p>
+        <p>渠の<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>はすでに手の<ruby><rb>達</rb><rt>とど</rt></ruby>くばかりに近づきて、わずかにここ二、三箇月を<ruby><rb>支</rb><rt>ささ</rt></ruby>うるを得ば足れり。<ruby><rb>無頓着</rb><rt>むとんじゃく</rt></ruby>なる<persName ref="#shiraito">白糸</persName>はただその健康を尋ぬるのみに安んじて、あえてその成業の期を問わず、<persName ref="#kinya">欣弥</persName>もまたあながちこれを告げんとは<ruby><rb>為</rb><rt>な</rt></ruby>さざりき。その約に<ruby><rb>負</rb><rt>そむ</rt></ruby>かざらんことを<ruby><rb>虞</rb><rt>おそ</rt></ruby>るる者と、恩中に恩を顧みざる者とは、おのおのその務むべきところを務むるに<ruby><rb>専</rb><rt>もっぱら</rt></ruby>なりき。</p>
+        <p>かくて翌日まさに<placeName ref="#fukui">福井</placeName>に向かいて発足すべき三日目の夜の興行を<ruby><rb>闋</rb><rt>お</rt></ruby>わりたりしは、一時に<ruby><rb>垂</rb><rt>なんな</rt></ruby>んとするころなりき。<ruby><rb>白昼</rb><rt>ひるま</rt></ruby>を欺くばかりなりし公園内の<ruby><rb>万燈</rb><rt>まんどう</rt></ruby>は全く消えて、<ruby><rb>雨催</rb><rt>あまもよい</rt></ruby>の<ruby><rb>天</rb><rt>そら</rt></ruby>に月はあれども、四面<ruby><rb>滃浡</rb><rt>おうぼつ</rt></ruby>として<ruby><rb>煙</rb><rt>けぶり</rt></ruby>の<ruby><rb>布</rb><rt>し</rt></ruby>くがごとく、<ruby><rb>淡墨</rb><rt>うすずみ</rt></ruby>を流せる森のかなたに、たちまち<ruby><rb>跫音</rb><rt>あしおと</rt></ruby>の響きて、がやがやと<ruby><rb>罵</rb><rt>ののし</rt></ruby>る声せるは、見世物師らが打ち連れ立ちて公園を引き払うにぞありける。この一群れの<ruby><rb>迹</rb><rt>あと</rt></ruby>に残りて<ruby><rb>語合</rb><rt>かたら</rt></ruby>う女あり。</p>
+        <p>「ちょいと、お隣の<persName ref="#chomatsu"><ruby><rb>長松</rb><rt>ちょうまつ</rt></ruby></persName>さんや、<ruby><rb>明日</rb><rt>あした</rt></ruby>はどこへ行きなさる？」</p>
+        <p><ruby><rb>年増</rb><rt>としま</rt></ruby>の<ruby><rb>抱</rb><rt>いだ</rt></ruby>ける<ruby><rb>猿</rb><rt>さる</rt></ruby>の頭を<ruby><rb>撫</rb><rt>な</rt></ruby>でて、かく<ruby><rb>訊</rb><rt>たず</rt></ruby>ねしは、猿芝居と小屋を並べし<ruby><rb>轆轤首</rb><rt>ろくろくび</rt></ruby>の因果娘なり。</p>
+        <p>「はい、明日は<placeName ref="#fukui">福井</placeName>まで参じます」</p>
+        <p>年増は猿に代わりて答えぬ。轆轤首は愛相よく、</p>
+        <p>「おおおお、それはまあ遠い所へ」</p>
+        <p>「はい、ちと遠方でございますと言いなよ。これ、<persName ref="#chomatsu">長松</persName>、ここがの、<placeName ref="#kanazawa">金沢</placeName>の<placeName ref="#kenrokuen">兼六園</placeName>といって、百万石のお庭だよ。<persName ref="#chiyoko"><ruby><rb>千代公</rb><rt>ちょんこ</rt></ruby></persName>のほうは二度目だけれど、おまえははじめてだ。さあよく見物しなよ」</p>
+        <p>渠は<ruby><rb>抱</rb><rt>いだ</rt></ruby>きし猿を放ち<ruby><rb>遣</rb><rt>や</rt></ruby>りぬ。</p>
+        <p>折からあなたの池のあたりに、マッチの火のぱっと燃えたる影に、<ruby><rb>頬被</rb><rt>ほおかぶ</rt></ruby>りせる男の顔は赤く<ruby><rb>顕</rb><rt>あら</rt></ruby>われぬ。黒き影法師も<ruby><rb>両三箇</rb><rt>ふたつみつ</rt></ruby>そのかたわらに見えたりき。因果娘は<ruby><rb>偸視</rb><rt>すかしみ</rt></ruby>て、</p>
+        <p>「おや、出刃打ちの連中があすこに<ruby><rb>憩</rb><rt>やす</rt></ruby>んでいなさるようだ」</p>
+        <p>「どれどれ」と見向く年増の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に声ありて、</p>
+        <p>「おい、そろそろ出掛けようぜ」</p>
+        <p>旅装束したる四、五人の男は二人のそばに立ち<ruby><rb>住</rb><rt>ど</rt></ruby>まりぬ。年増は直ちに猿を抱き取りて、</p>
+        <p>「そんなら、<ruby><rb>姉</rb><rt>ねえ</rt></ruby>さん」</p>
+        <p>「参りましょうかね」</p>
+        <p><ruby><rb>両箇</rb><rt>ふたり</rt></ruby>の女は渠らとともに行きぬ。続きて一団また一団、<ruby><rb>大蛇</rb><rt>だいじゃ</rt></ruby>を<ruby><rb>籠</rb><rt>かご</rt></ruby>に入れて<ruby><rb>荷</rb><rt>にな</rt></ruby>う者と、馬に<ruby><rb>跨</rb><rt>またが</rt></ruby>りて行く曲馬芝居の<ruby><rb>座頭</rb><rt>ざがしら</rt></ruby>とを先に立てて、さまざまの動物と異形の人類が、<ruby><rb>絡繹</rb><rt>らくえき</rt></ruby>として<ruby><rb>森蔭</rb><rt>もりかげ</rt></ruby>に列を成せるその<ruby><rb>状</rb><rt>さま</rt></ruby>は、げに百鬼夜行一幅の<ruby><rb>活図</rb><rt>かっと</rt></ruby>なり。</p>
+        <p>ややありて渠らはみな行き尽くせり。公園は<ruby><rb>森邃</rb><rt>しんすい</rt></ruby>として月色ますます<ruby><rb>昏</rb><rt>くら</rt></ruby>く、夜はいまや全くその死寂に眠れるとき、<ruby><rb>谽谺</rb><rt>こだま</rt></ruby>に響き、水に鳴りて、<ruby><rb>魂消</rb><rt>たまぎ</rt></ruby>る<ruby><rb>一声</rb><rt>ひとこえ</rt></ruby>、</p>
+        <p>「あれえ！」</p>
+        <p>五</p>
+        <p>水は沈濁して油のごとき<placeName ref="#kasumigaike"><ruby><rb>霞</rb><rt>かすみ</rt></ruby>が<ruby><rb>池</rb><rt>いけ</rt></ruby></placeName>の<ruby><rb>汀</rb><rt>みぎわ</rt></ruby>に、生死も分かず<ruby><rb>仆</rb><rt>たお</rt></ruby>れたる婦人あり。四<ruby><rb>肢</rb><rt>し</rt></ruby>を<ruby><rb>弛</rb><rt>ゆる</rt></ruby>めて<ruby><rb>地</rb><rt>つち</rt></ruby>に<ruby><rb>領伏</rb><rt>ひれふ</rt></ruby>し、身動きもせでしばらく横たわりたりしが、ようよう<ruby><rb>枕</rb><rt>まくら</rt></ruby>を返して、がっくりと<ruby><rb>頭</rb><rt>かしら</rt></ruby>を<ruby><rb>俛</rb><rt>た</rt></ruby>れ、やがて草の根を力におぼつかなくも立ち<ruby><rb>起</rb><rt>あ</rt></ruby>がりて、<ruby><rb>踽</rb><rt>よろめ</rt></ruby>く<ruby><rb>体</rb><rt>たい</rt></ruby>をかたわらなる<ruby><rb>露根松</rb><rt>ねあがりまつ</rt></ruby>に<ruby><rb>辛</rb><rt>から</rt></ruby>くも<ruby><rb>支</rb><rt>ささ</rt></ruby>えたり。</p>
+        <p>その<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>は所々引き裂け、帯は半ば<ruby><rb>解</rb><rt>ほど</rt></ruby>けて<ruby><rb>脛</rb><rt>はぎ</rt></ruby>を<ruby><rb>露</rb><rt>あら</rt></ruby>わし、高島田は面影を<ruby><rb>留</rb><rt>とど</rt></ruby>めぬまでに打ち<ruby><rb>頽</rb><rt>くず</rt></ruby>れたり。こはこれ、盗難に<ruby><rb>遇</rb><rt>あ</rt></ruby>えりし<persName ref="#shiraito">滝の白糸</persName>が姿なり。</p>
+        <p>渠はこの夜の演芸を<ruby><rb>闋</rb><rt>お</rt></ruby>わりしのち、連日の疲労一時に発して、楽屋の涼しき所に<ruby><rb>交睫</rb><rt>まどろ</rt></ruby>みたりき。一座の連中は早くも荷物を取<ruby><rb>纏</rb><rt>まと</rt></ruby>めて、いざ引き払わんと、<ruby><rb>太夫</rb><rt>たゆう</rt></ruby>の夢を<ruby><rb>喚</rb><rt>よ</rt></ruby>びたりしに、渠は快眠を惜しみて、一足先に行けと<ruby><rb>現</rb><rt>うつつ</rt></ruby>に言い放ちて、再び熟睡せり。渠らは豪放なる太夫の<ruby><rb>平常</rb><rt>へいぜい</rt></ruby>を<ruby><rb>識</rb><rt>し</rt></ruby>りければ、その言うままに捨て置きて立ち去りけるなり。</p>
+        <p><ruby><rb>程</rb><rt>ほど</rt></ruby>経て<persName ref="#shiraito">白糸</persName>は<ruby><rb>目覚</rb><rt>めざ</rt></ruby>ましぬ。この<ruby><rb>空小屋</rb><rt>あきごや</rt></ruby>のうちに<ruby><rb>仮寝</rb><rt>うたたね</rt></ruby>せし渠の<ruby><rb>懐</rb><rt>ふところ</rt></ruby>には、<persName ref="#kinya">欣弥</persName>が半年の学資を<ruby><rb>蔵</rb><rt>おさ</rt></ruby>めたるなり。されども渠は危うかりしとも思わず、昼の暑さに引き替えて、涼しき真夜中の<ruby><rb>幽静</rb><rt>しずか</rt></ruby>なるを喜びつつ、<placeName ref="#fukui">福井</placeName>の金主が待てる旅宿に<ruby><rb>赴</rb><rt>おもむ</rt></ruby>かんとて、そこまで来たりけるに、ばらばらと小蔭より<ruby><rb>躍</rb><rt>おど</rt></ruby>り出ずる<ruby><rb>人数</rb><rt>にんず</rt></ruby>あり。</p>
+        <p>みなこれ<ruby><rb>屈竟</rb><rt>くっきょう</rt></ruby>の<ruby><rb>大男</rb><rt>おおおのこ</rt></ruby>、いずれも<ruby><rb>手拭</rb><rt>てぬぐ</rt></ruby>いに<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>覆</rb><rt>つつ</rt></ruby>みたるが五人ばかり、手に手に<ruby><rb>研</rb><rt>と</rt></ruby>ぎ澄ましたる<ruby><rb>出刃庖丁</rb><rt>でばぼうちょう</rt></ruby>を<ruby><rb>提</rb><rt>ひさ</rt></ruby>げて、<persName ref="#shiraito">白糸</persName>を追っ取り巻きぬ。</p>
+        <p><ruby><rb>心剛</rb><rt>こころたしか</rt></ruby>なる女なれども、渠はさすがに驚きて<ruby><rb>佇</rb><rt>たたず</rt></ruby>めり。<ruby><rb>狼藉者</rb><rt>ろうぜきもの</rt></ruby>の<ruby><rb>一個</rb><rt>ひとり</rt></ruby>は<ruby><rb>濁声</rb><rt>だみごえ</rt></ruby>を潜めて、</p>
+        <p>「おう、<ruby><rb>姉</rb><rt>ねえ</rt></ruby>さん、<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>のものを出しねえ」</p>
+        <p>「じたばたすると、これだよ、これだよ」</p>
+        <p>かく言いつつ他の<ruby><rb>一個</rb><rt>ひとり</rt></ruby>はその庖丁を<persName ref="#shiraito">白糸</persName>の前に<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>かせば、四<ruby><rb>挺</rb><rt>ちょう</rt></ruby>の出刃もいっせいに<ruby><rb>晃</rb><rt>きらめ</rt></ruby>きて、女の<ruby><rb>眼</rb><rt>め</rt></ruby>を脅かせり。</p>
+        <p><persName ref="#shiraito">白糸</persName>はすでにその身は<ruby><rb>釜中</rb><rt>ふちゅう</rt></ruby>の魚たることを覚悟せり。心はいささかも屈せざれども、力の及ぶべからざるをいかにせん。進みて敵すべからず、退きては<ruby><rb>遁</rb><rt>のが</rt></ruby>るること<ruby><rb>難</rb><rt>かた</rt></ruby>し。</p>
+        <p>渠はその<ruby><rb>平生</rb><rt>へいぜい</rt></ruby>においてかつ百金を<ruby><rb>吝</rb><rt>お</rt></ruby>しまざるなり。されども今夜<ruby><rb>懐</rb><rt>ふところ</rt></ruby>にせる百金は、尋常一様の千万金に<ruby><rb>直</rb><rt>あたい</rt></ruby>するものにして、渠が半身の精血とも<ruby><rb>謂</rb><rt>い</rt></ruby>っつべきなり。渠は換えがたく吝しめり。今ここにこれを失わんか、渠はほとんど再びこれを<ruby><rb>獲</rb><rt>う</rt></ruby>るの道あらざるなり。されども渠はついに失わざるべからざるか、豪放<ruby><rb>豁達</rb><rt>かったつ</rt></ruby>の女丈夫も途方に暮れたりき。</p>
+        <p>「何をぐずぐずしてやがるんで！　サッサと出せ、出せ」</p>
+        <p><persName ref="#shiraito">白糸</persName>は死守せんものと決心せり。渠の<ruby><rb>脣</rb><rt>くちびる</rt></ruby>は黒くなりぬ。渠の声はいたく震いぬ。</p>
+        <p>「これは<ruby><rb>与</rb><rt>や</rt></ruby>られないよ」</p>
+        <p>「<ruby><rb>与</rb><rt>く</rt></ruby>れなけりゃ、ふんだくるばかりだ」</p>
+        <p>「<ruby><rb>遣</rb><rt>や</rt></ruby>っつけろ、遣っつけろ！」</p>
+        <p>その声を聞くとひとしく、<persName ref="#shiraito">白糸</persName>は<ruby><rb>背後</rb><rt>うしろ</rt></ruby>より組み付かれぬ。振り払わんとする間もあらで、胸も<ruby><rb>挫</rb><rt>ひし</rt></ruby>ぐるばかりの<ruby><rb>翼緊</rb><rt>はがいじ</rt></ruby>めに<ruby><rb>遭</rb><rt>あ</rt></ruby>えり。たちまち<ruby><rb>暴</rb><rt>あら</rt></ruby>くれたる<ruby><rb>四隻</rb><rt>よつ</rt></ruby>の手は、乱雑に渠の帯の間と内懐とを<ruby><rb>撈</rb><rt>かきさが</rt></ruby>せり。</p>
+        <p>「あれえ！」と叫びて<ruby><rb>援</rb><rt>すく</rt></ruby>いを求めたりしは、このときの血声なりき。</p>
+        <p>「あった、あった」と<ruby><rb>一個</rb><rt>ひとり</rt></ruby>の賊は呼びぬ。</p>
+        <p>「あったか、あったか」と両三人の声は<ruby><rb>譍</rb><rt>こた</rt></ruby>えぬ。</p>
+        <p><persName ref="#shiraito">白糸</persName>は<ruby><rb>猿轡</rb><rt>さるぐつわ</rt></ruby>を<ruby><rb>吃</rb><rt>はま</rt></ruby>されて、手取り足取り地上に推し伏せられつ。されども渠は絶えず身を<ruby><rb>悶</rb><rt>もだ</rt></ruby>えて、<ruby><rb>跋</rb><rt>は</rt></ruby>ね<ruby><rb>覆</rb><rt>か</rt></ruby>えさんとしたりしなり。にわかに渠らの力は<ruby><rb>弛</rb><rt>ゆる</rt></ruby>みぬ。<ruby><rb>虚</rb><rt>すか</rt></ruby>さず<persName ref="#shiraito">白糸</persName>は起き<ruby><rb>復</rb><rt>かえ</rt></ruby>るところを、はたと<ruby><rb>踢仆</rb><rt>けたお</rt></ruby>されたり。賊はその<ruby><rb>隙</rb><rt>ひま</rt></ruby>に逃げ<ruby><rb>失</rb><rt>う</rt></ruby>せて行くえを知らず。</p>
+        <p>惜しみても、惜しみてもなお余りある百金は、ついに<ruby><rb>還</rb><rt>かえ</rt></ruby>らざるものとなりぬ。<persName ref="#shiraito">白糸</persName>の胸中は沸くがごとく、<ruby><rb>焚</rb><rt>も</rt></ruby>ゆるがごとく、万感の<ruby><rb>心</rb><rt>むね</rt></ruby>を<ruby><rb>衝</rb><rt>つ</rt></ruby>くに任せて、無念<ruby><rb>已</rb><rt>や</rt></ruby>む<ruby><rb>方</rb><rt>かた</rt></ruby>なき松の<ruby><rb>下蔭</rb><rt>したかげ</rt></ruby>に立ち尽くして、夜の<ruby><rb>更</rb><rt>ふ</rt></ruby>くるをも知らざりき。</p>
+        <p>「ああ、しかたがない、何も約束だと<ruby><rb>断念</rb><rt>あきら</rt></ruby>めるのだ。なんの百ぐらい！　惜しくはないけれど、<persName ref="#kinya">欣さん</persName>に済まない。さぞ<persName ref="#kinya">欣さん</persName>が困るだろうねえ。ええ、どうしよう、どうしたらよかろう⁈」</p>
+        <p>渠はひしとわが身を<ruby><rb>抱</rb><rt>いだ</rt></ruby>きて、松の幹に打ち当てつ。ふとかたわらを見れば、<ruby><rb>漾々</rb><rt>ようよう</rt></ruby>たる<placeName ref="#kasumigaike">霞が池</placeName>は、霜の置きたるように<ruby><rb>微黯</rb><rt>ほのぐら</rt></ruby>き月影を宿せり。</p>
+        <p><persName ref="#shiraito">白糸</persName>の<ruby><rb>眼色</rb><rt>めざし</rt></ruby>はその精神の全力を<ruby><rb>鍾</rb><rt>あつ</rt></ruby>めたるかと覚しきばかりの光を帯びて、病めるに似たる水の<ruby><rb>面</rb><rt>おも</rt></ruby>を<ruby><rb>屹</rb><rt>き</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>たり。</p>
+        <p>「ええ、もうなんともかとも<ruby><rb>謂</rb><rt>い</rt></ruby>えないいやな<ruby><rb>心地</rb><rt>こころもち</rt></ruby>だ。この水を飲んだら、さぞ胸が清々するだろう！　ああ死にたい。こんな思いをするくらいなら死んだほうがましだ。死のう！　死のう！」</p>
+        <p>渠は胸中の劇熱を消さんがために、この<ruby><rb>万斛</rb><rt>ばんこく</rt></ruby>の水をば飲み尽くさんと覚悟せるなり。渠はすでに前後を忘じて、一心死を急ぎつつ、<ruby><rb>蹌踉</rb><rt>よろよろ</rt></ruby>と<ruby><rb>汀</rb><rt>みぎわ</rt></ruby>に寄れば、<ruby><rb>足下</rb><rt>あしもと</rt></ruby>に物ありて<ruby><rb>晃</rb><rt>きらめ</rt></ruby>きぬ。思わず渠の目はこれに<ruby><rb>住</rb><rt>とど</rt></ruby>まりぬ。出刃庖丁なり！</p>
+        <p>これ悪漢が持てりし<ruby><rb>兇器</rb><rt>きょうき</rt></ruby>なるが、渠らは<persName ref="#shiraito">白糸</persName>を<ruby><rb>手籠</rb><rt>てご</rt></ruby>めにせしとき、かれこれ<ruby><rb>悶着</rb><rt>もんちゃく</rt></ruby>の間に取り<ruby><rb>遺</rb><rt>おと</rt></ruby>せしを、忘れて捨て行きたるなり。</p>
+        <p><persName ref="#shiraito">白糸</persName>はたちまち<ruby><rb>慄然</rb><rt>りつぜん</rt></ruby>として寒さを<ruby><rb>感</rb><rt>おぼ</rt></ruby>えたりしが、やがて拾い取りて月に<ruby><rb>翳</rb><rt>かざ</rt></ruby>しつつ、</p>
+        <p>「これを証拠に訴えれば手掛かりがあるだろう。そのうちにはまたなんとか都合もできよう。……これは今死ぬのは。……」</p>
+        <p>この証拠物件を<ruby><rb>獲</rb><rt>え</rt></ruby>たるがために、渠はその死を思い<ruby><rb>遏</rb><rt>とどま</rt></ruby>りて、いちはやく警察署に赴かんと、心変わればいまさら忌まわしきこの<ruby><rb>汀</rb><rt>みぎわ</rt></ruby>を離れて、渠は推し<ruby><rb>仆</rb><rt>たお</rt></ruby>されたりしあたりを過ぎぬ。無念の情は<ruby><rb>勃然</rb><rt>ぼつぜん</rt></ruby>として起これり。<ruby><rb>繊弱</rb><rt>かよわ</rt></ruby>き<ruby><rb>女子</rb><rt>おんな</rt></ruby>の身なりしことの<ruby><rb>口惜</rb><rt>くちお</rt></ruby>しさ！　　<ruby><rb>男子</rb><rt>おとこ</rt></ruby>にてあらましかばなど、言い<ruby><rb>効</rb><rt>がい</rt></ruby>もなき<ruby><rb>意気地</rb><rt>いくじ</rt></ruby>なさを<ruby><rb>憶</rb><rt>おも</rt></ruby>い出でて、しばしはその恨めしき地を去るに忍びざりき。</p>
+        <p>渠は再び草の上に<ruby><rb>一物</rb><rt>あるもの</rt></ruby>を見出だせり。近づきてとくと視れば、<ruby><rb>浅葱地</rb><rt>あさぎじ</rt></ruby>に白く七宝<ruby><rb>繋</rb><rt>つな</rt></ruby>ぎの洗い<ruby><rb>晒</rb><rt>ざら</rt></ruby>したる<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>の<ruby><rb>片袖</rb><rt>かたそで</rt></ruby>にぞありける。</p>
+        <p>またこれ賊の遺物なるを<persName ref="#shiraito">白糸</persName>は<ruby><rb>暁</rb><rt>さと</rt></ruby>りぬ。けだし渠が<ruby><rb>狼藉</rb><rt>ろうぜき</rt></ruby>を<ruby><rb>禦</rb><rt>ふせ</rt></ruby>ぎし折に、引き<ruby><rb>断</rb><rt>ちぎ</rt></ruby>りたる賊の<ruby><rb>衣</rb><rt>きぬ</rt></ruby>の一片なるべし。渠はこれをも拾い取り、出刃を<ruby><rb>裹</rb><rt>つつ</rt></ruby>みて<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>に推し入れたり。</p>
+        <p>夜はますます<ruby><rb>闌</rb><rt>た</rt></ruby>けて、<ruby><rb>霄</rb><rt>そら</rt></ruby>はいよいよ曇りぬ。湿りたる空気は重く沈みて、柳の葉末も動かざりき。歩むにつれて、<ruby><rb>足下</rb><rt>あしもと</rt></ruby>の<ruby><rb>叢</rb><rt>くさむら</rt></ruby>より池に<ruby><rb>跋</rb><rt>は</rt></ruby>ね込む<ruby><rb>蛙</rb><rt>かわず</rt></ruby>は、<ruby><rb>礫</rb><rt>つぶて</rt></ruby>を打つがごとく水を鳴らせり。</p>
+        <p>行く行く<ruby><rb>項</rb><rt>うなじ</rt></ruby>を<ruby><rb>低</rb><rt>た</rt></ruby>れて、渠は深くも思い悩みぬ。</p>
+        <p>「だが、警察署へ訴えたところで、じきにあいつらが<ruby><rb>捕</rb><rt>つかま</rt></ruby>ろうか。捕ったところで、うまく<ruby><rb>金子</rb><rt>かね</rt></ruby>が戻るだろうか。あぶないものだ。そんなことを<ruby><rb>期</rb><rt>あて</rt></ruby>にしてぐずぐずしているうちには、<persName ref="#kinya">欣さん</persName>が食うに<ruby><rb>窮</rb><rt>こま</rt></ruby>ってくる。私の仕送りを頼みにしている身の上なのだから、お金が<ruby><rb>到</rb><rt>い</rt></ruby>かなかった日には、どんなに窮るだろう。はてなあ！　<placeName ref="#fukui">福井</placeName>の金主のほうは、三百円のうち二百円前借りをしたのだから、まだ百円というものはあるのだ。貸すだろうか、貸すまい。貸さない、貸さない、とても貸さない！　二百円のときでもあんなに渋ったのだ。けれども、こういう<ruby><rb>事情</rb><rt>わけ</rt></ruby>だとすっかり打ち明けて、ひとつ泣き付いてみようかしらん。だめなことだ、あの<ruby><rb>老爺</rb><rt>おやじ</rt></ruby>だもの。のべつに<ruby><rb>小癪</rb><rt>こしゃく</rt></ruby>に<ruby><rb>障</rb><rt>さわ</rt></ruby>ることばっかり<ruby><rb>陳</rb><rt>なら</rt></ruby>べやがって、もうもうほんとに顔を見るのもいやなんだ。そのくせまた持ってるのだ！　どうしたもんだろうなあ。ああ、窮った、窮った。やっぱり死ぬのか。死ぬのはいいが、それじゃどうも<persName ref="#kinya">欣さん</persName>に義理が立たない。それが何より<ruby><rb>愁</rb><rt>つら</rt></ruby>い！　といって才覚のしようもなし。……」</p>
+        <p>陰々として鐘声の<ruby><rb>度</rb><rt>わた</rt></ruby>るを聞けり。</p>
+        <p>「もう二時だ。はてなあ！」</p>
+        <p><persName ref="#shiraito">白糸</persName>は思案に余って、歩むべき力も失せつ。われにもあらで身を<ruby><rb>靠</rb><rt>もた</rt></ruby>せたるは、<ruby><rb>未央柳</rb><rt>びおうりゅう</rt></ruby>の長く<ruby><rb>垂</rb><rt>た</rt></ruby>れたる<ruby><rb>檜</rb><rt>ひのき</rt></ruby>の<ruby><rb>板塀</rb><rt>いたべい</rt></ruby>のもとなりき。</p>
+        <p>こはこれ、公園地内に<placeName ref="#rokushotei"><ruby><rb>六勝亭</rb><rt>ろくしょうてい</rt></ruby></placeName>と呼べる<ruby><rb>席貸</rb><rt>せきが</rt></ruby>しにて、<ruby><rb>主翁</rb><rt>あるじ</rt></ruby>は富裕の隠居なれば、けっこう<ruby><rb>数寄</rb><rt>すき</rt></ruby>を尽くして、営業のかたわらその老いを楽しむところなり。</p>
+        <p><persName ref="#shiraito">白糸</persName>が<ruby><rb>佇</rb><rt>たたず</rt></ruby>みたるは、その裏口の<ruby><rb>枝折</rb><rt>しおり</rt></ruby>門の前なるが、いかにして忘れたりけむ、戸を<ruby><rb>鎖</rb><rt>さ</rt></ruby>さでありければ、渠が<ruby><rb>靠</rb><rt>もた</rt></ruby>るるとともに戸はおのずから内に<ruby><rb>啓</rb><rt>ひら</rt></ruby>きて、吸い込むがごとく<persName ref="#shiraito">白糸</persName>を庭の内にぞ引き入れたる。</p>
+        <p>渠はしばらく<ruby><rb>惘然</rb><rt>ぼうぜん</rt></ruby>として佇みぬ。その心には何を思うともなく、きょろきょろとあたりを<ruby><rb>眗</rb><rt>みまわ</rt></ruby>せり。幽寂に造られたる平庭を前に、縁の雨戸は長く続きて、家内は全く<ruby><rb>寝鎮</rb><rt>ねしず</rt></ruby>まりたる<ruby><rb>気勢</rb><rt>けはい</rt></ruby>なり。<persName ref="#shiraito">白糸</persName>は一歩を進め、二歩を進めて、いつしか「寂然の<ruby><rb>森</rb><rt>しげり</rt></ruby>」を出でて、「井戸囲い」のほとりに<ruby><rb>抵</rb><rt>いた</rt></ruby>りぬ。</p>
+        <p>このとき渠は始めて心着きて驚けり。かかる深夜に人目を<ruby><rb>窃</rb><rt>ぬす</rt></ruby>みて他の門内に侵入するは賊の<ruby><rb>挙動</rb><rt>ふるまい</rt></ruby>なり。われははからずも賊の挙動をしたるなりけり。</p>
+        <p>ここに思い<ruby><rb>到</rb><rt>いた</rt></ruby>りて、<persName ref="#shiraito">白糸</persName>はいまだかつて念頭に浮かばざりし<ruby><rb>盗</rb><rt>とう</rt></ruby>というなる金策の手段あるを心着きぬ。ついで懐なる兇器に心着きぬ。これ<ruby><rb>某</rb><rt>なにがし</rt></ruby>らがこの手段に用いたりし<ruby><rb>記念</rb><rt>かたみ</rt></ruby>なり。<persName ref="#shiraito">白糸</persName>は懐に手を差し入れつつ、<ruby><rb>頭</rb><rt>かしら</rt></ruby>を傾けたり。</p>
+        <p>良心は<ruby><rb>疾呼</rb><rt>しっこ</rt></ruby>して渠を責めぬ。悪意は<ruby><rb>踴躍</rb><rt>ゆうやく</rt></ruby>して渠を励ませり。渠は疾呼の<ruby><rb>譴責</rb><rt>けんせき</rt></ruby>に<ruby><rb>遭</rb><rt>あ</rt></ruby>いては<ruby><rb>慚悔</rb><rt>ざんかい</rt></ruby>し、また踴躍の教峻を受けては然諾せり。良心と悪意とは<persName ref="#shiraito">白糸</persName>の<ruby><rb>恃</rb><rt>たの</rt></ruby>むべからざるを知りて、ついに<ruby><rb>迭</rb><rt>たが</rt></ruby>いに<ruby><rb>闘</rb><rt>たたか</rt></ruby>いたりき。</p>
+        <p>「道ならないことだ。そんな<ruby><rb>真似</rb><rt>まね</rt></ruby>をした日には、二度と再び世の中に顔向けができない。ああ、恐ろしいことだ、……けれども才覚ができなければ、死ぬよりほかはない。この世に生きていないつもりなら、<ruby><rb>羞汚</rb><rt>はじ</rt></ruby>も顔向けもありはしない。大それたことだけれども、金は<ruby><rb>盗</rb><rt>と</rt></ruby>ろう。盗ってそうして死のう死のう！」</p>
+        <p>かく思い定めたれども、渠の良心はけっしてこれを<ruby><rb>可</rb><rt>ゆる</rt></ruby>さざりき。渠の心は激動して、渠の身は波に<ruby><rb>盪</rb><rt>ゆら</rt></ruby>るる<ruby><rb>小舟</rb><rt>おぶね</rt></ruby>のごとく、安んじかねて行きつ、<ruby><rb>還</rb><rt>もど</rt></ruby>りつ、塀ぎわに<ruby><rb>低徊</rb><rt>ていかい</rt></ruby>せり。ややありて渠は<ruby><rb>鉢前</rb><rt>はちまえ</rt></ruby>近く忍び寄りぬ。されどもあえて<ruby><rb>曲事</rb><rt>くせごと</rt></ruby>を行なわんとはせざりしなり。<ruby><rb>渠</rb><rt>かれ</rt></ruby>は再び沈吟せり。</p>
+        <p>良心に<ruby><rb>逐</rb><rt>お</rt></ruby>われて<ruby><rb>恐惶</rb><rt>きょうこう</rt></ruby>せる盗人は、発覚を予防すべき用意に<ruby><rb>遑</rb><rt>いとま</rt></ruby>あらざりき。渠が塀ぎわに<ruby><rb>徘徊</rb><rt>はいかい</rt></ruby>せしとき、<ruby><rb>手水口</rb><rt>ちょうずぐち</rt></ruby>を<ruby><rb>啓</rb><rt>ひら</rt></ruby>きて、家内の<ruby><rb>一個</rb><rt>ひとり</rt></ruby>は早くすでに<persName ref="#shiraito">白糸</persName>の姿を認めしに、渠は<ruby><rb>鈍</rb><rt>おそ</rt></ruby>くも知らざりけり。</p>
+        <p>鉢前の雨戸は不意に啓きて、人は<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>露</rb><rt>あら</rt></ruby>わせり。<persName ref="#shiraito">白糸</persName>あなやと飛び<ruby><rb>退</rb><rt>すさ</rt></ruby>る<ruby><rb>遑</rb><rt>ひま</rt></ruby>もなく、</p>
+        <p>「<ruby><rb>偸児</rb><rt>どろぼう</rt></ruby>！」と男の声は<ruby><rb>号</rb><rt>さけ</rt></ruby>びぬ。</p>
+        <p><persName ref="#shiraito">白糸</persName>の耳には百雷の一時に落ちたるごとく<ruby><rb>轟</rb><rt>とどろ</rt></ruby>けり。精神錯乱したるその瞬息に、懐なりし出刃は渠の<ruby><rb>右手</rb><rt>めて</rt></ruby>に<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>きて、縁に立てる男の胸をば、<ruby><rb>柄</rb><rt>つか</rt></ruby>も<ruby><rb>透</rb><rt>とお</rt></ruby>れと貫きたり。</p>
+        <p>戸を<ruby><rb>犇</rb><rt>ひしめ</rt></ruby>かして、男は打ち<ruby><rb>僵</rb><rt>たお</rt></ruby>れぬ。<ruby><rb>朱</rb><rt>あけ</rt></ruby>に染みたるわが手を見つつ、<ruby><rb>重傷</rb><rt>いたで</rt></ruby>に<ruby><rb>唸</rb><rt>うめ</rt></ruby>く声を聞ける<persName ref="#shiraito">白糸</persName>は、戸口に立ち<ruby><rb>竦</rb><rt>すく</rt></ruby>みて、わなわなと<ruby><rb>顫</rb><rt>ふる</rt></ruby>いぬ。</p>
+        <p>渠はもとより一点の害心だにあらざりしなり。われはそもそもいかにしてかかる不敵の<ruby><rb>振舞</rb><rt>ふるまい</rt></ruby>をなせしかを疑いぬ。見れば、わが手は確かに出刃を握れり。その出刃は確かに男の胸を刺しけるなり。胸を刺せしによりて、男は<ruby><rb>殪</rb><rt>たお</rt></ruby>れたるなり。されば人を殺せしはわれなり、わが手なりと思いぬ。されども<persName ref="#shiraito">白糸</persName>はわが心に、わが手に、人を殺せしを覚えざりしなり。渠は夢かと疑えり。</p>
+        <p>「全く殺したのだ。こりゃ、まあ大変なことをした！　どういう気で私はこんなことをしたろう？」</p>
+        <p><persName ref="#shiraito">白糸</persName>は心乱れて、ほとんどその身を忘れたる<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に、</p>
+        <p>「あなた、どうなすった？」</p>
+        <p>と聞こゆるは<ruby><rb>寝惚</rb><rt>ねぼ</rt></ruby>れたる女の声なり。<persName ref="#shiraito">白糸</persName>は出刃を隠して、きっとそなたを<ruby><rb>見遣</rb><rt>みや</rt></ruby>りぬ。</p>
+        <p><ruby><rb>灯影</rb><rt>ひかげ</rt></ruby>は縁を照らして、<ruby><rb>跫音</rb><rt>あしおと</rt></ruby>は近づけり。<persName ref="#shiraito">白糸</persName>はひたと雨戸に身を寄せて、何者か来たると<ruby><rb>覰</rb><rt>うかが</rt></ruby>いぬ。この家の内儀なるべし。五十ばかりの女は<ruby><rb>寝衣姿</rb><rt>ねまきすがた</rt></ruby>のしどけなく、<ruby><rb>真鍮</rb><rt>しんちゅう</rt></ruby>の<ruby><rb>手燭</rb><rt>てしょく</rt></ruby>を<ruby><rb>翳</rb><rt>かざ</rt></ruby>して、覚めやらぬ眼を<ruby><rb>睜</rb><rt>みひら</rt></ruby>かんと<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>顰</rb><rt>ひそ</rt></ruby>めつつ、よたよたと縁を伝いて来たりぬ。<ruby><rb>死骸</rb><rt>しがい</rt></ruby>に近づきて、それとも知らず、</p>
+        <p>「あなた、そんな<ruby><rb>所</rb><rt>とこ</rt></ruby>に寝て……どうなすっ。……」</p>
+        <p><ruby><rb>燈</rb><rt>あかし</rt></ruby>を差し向けて、いまだその血に驚く<ruby><rb>遑</rb><rt>いとま</rt></ruby>あらざるに、</p>
+        <p>「静かに！」と<persName ref="#shiraito">白糸</persName>は身を露わして、庖丁を<ruby><rb>衝</rb><rt>つ</rt></ruby>き付けたり。</p>
+        <p>内儀は賊の姿を見るより、ペったりと<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を折り敷き、その場に打ち<ruby><rb>俯</rb><rt>ふ</rt></ruby>して、がたがたと<ruby><rb>慄</rb><rt>ふる</rt></ruby>いぬ。<persName ref="#shiraito">白糸</persName>の度胸はすでに十分定まりたり。</p>
+        <p>「おい、<ruby><rb>内君</rb><rt>おかみさん</rt></ruby>、金を出しな。これさ、金を出せというのに」</p>
+        <p>俯して<ruby><rb>答</rb><rt>いら</rt></ruby>えなき内儀の<ruby><rb>項</rb><rt>うなじ</rt></ruby>を、出刃にてぺたぺたと<ruby><rb>拍</rb><rt>たた</rt></ruby>けり。内儀は<ruby><rb>魂魄</rb><rt>たましい</rt></ruby>も身に添わず、</p>
+        <p>「は、は、はい、はい、は、はい」</p>
+        <p>「さあ、早くしておくれ。たんとは<ruby><rb>要</rb><rt>い</rt></ruby>らないんだ。百円あればいい」</p>
+        <p>内儀はせつなき<ruby><rb>呼吸</rb><rt>いき</rt></ruby>の下より、</p>
+        <p>「<ruby><rb>金子</rb><rt>かね</rt></ruby>はあちらにありますから。……」</p>
+        <p>「あっちにあるならいっしょに行こう。声を立てると、おいこれだよ」</p>
+        <p>出刃庖丁は内儀の<ruby><rb>頬</rb><rt>ほお</rt></ruby>を見舞えり。渠はますます恐怖して立つ<ruby><rb>能</rb><rt>あた</rt></ruby>わざりき。</p>
+        <p>「さあ早くしないかい」</p>
+        <p>「た、た、た、ただ……いま」</p>
+        <p>渠は立たんとすれども、その腰は<ruby><rb>挙</rb><rt>あ</rt></ruby>がらざりき。されども渠はなお立たんと<ruby><rb>焦</rb><rt>あせ</rt></ruby>りぬ。腰はいよいよ挙がらず。立たざればついに殺されんと、渠はいとど<ruby><rb>慌</rb><rt>あわ</rt></ruby>てつ、<ruby><rb>悶</rb><rt>もだ</rt></ruby>えつ、辛くも立ち起がりて導けり。<ruby><rb>二間</rb><rt>ふたま</rt></ruby>を隔つる奥に伴いて、内儀は賊の<ruby><rb>需</rb><rt>もと</rt></ruby>むる百円を出だせり。<persName ref="#shiraito">白糸</persName>はまずこれを収めて、</p>
+        <p>「内君、いろいろなことを言ってきのどくだけれど、私の出たあとで声を立てるといけないから、少しの間だ、<ruby><rb>猿轡</rb><rt>さるぐつわ</rt></ruby>を<ruby><rb>箝</rb><rt>は</rt></ruby>めてておくれ」</p>
+        <p>渠は内儀を<ruby><rb>縛</rb><rt>いまし</rt></ruby>めんとて、その細帯を解かんとせり。ほとんど<ruby><rb>人心地</rb><rt>ひとごこち</rt></ruby>あらざるまでに恐怖したりし<ruby><rb>主婦</rb><rt>あるじ</rt></ruby>は、このときようよう渠の害心あらざるを知るより、いくぶんか心落ちいつつ、はじめて賊の姿をば認め得たりしなり。こはそもいかに！　賊は<ruby><rb>暴</rb><rt>あら</rt></ruby>くれたる大の<ruby><rb>男</rb><rt>おのこ</rt></ruby>にはあらで、<ruby><rb>軆度</rb><rt>とりなり</rt></ruby>優しき<ruby><rb>女子</rb><rt>おんな</rt></ruby>ならんとは、渠は今その正体を見て、<ruby><rb>与</rb><rt>くみ</rt></ruby>しやすしと思えば、</p>
+        <p>「<ruby><rb>偸児</rb><rt>どろぼう</rt></ruby>！」と呼び<ruby><rb>懸</rb><rt>か</rt></ruby>けて<persName ref="#shiraito">白糸</persName>に飛び<ruby><rb>蒐</rb><rt>かか</rt></ruby>りつ。</p>
+        <p><persName ref="#shiraito">自糸</persName>は不意を撃たれて驚きしが、すかさず庖丁の<ruby><rb>柄</rb><rt>え</rt></ruby>を返して、力任せに渠の頭を撃てり。渠は屈せず、賊の懐に手を<ruby><rb>捻</rb><rt>ね</rt></ruby>じ込みて、かの百円を奪い返さんとせり。<persName ref="#shiraito">白糸</persName>はその手に<ruby><rb>咬</rb><rt>か</rt></ruby>み着き、片手には庖丁振り<ruby><rb>抗</rb><rt>あ</rt></ruby>げて、再び柄をもて渠の<ruby><rb>脾腹</rb><rt>ひばら</rt></ruby>を<ruby><rb>吃</rb><rt>くら</rt></ruby>わしぬ。</p>
+        <p>「偸児！　人殺し！」と<ruby><rb>地蹈鞴</rb><rt>じだたら</rt></ruby>を踏みて、内儀はなお<ruby><rb>暴</rb><rt>あら</rt></ruby>らかに、なおけたたましく、</p>
+        <p>「人殺し！　人殺しだ！」と血声を絞りぬ。</p>
+        <p>これまでなりと観念したる<persName ref="#shiraito">白糸</persName>は、持ちたる出刃を取り直し、躍り狂う内儀の<ruby><rb>吭</rb><rt>のんど</rt></ruby>を<ruby><rb>目懸</rb><rt>めが</rt></ruby>けてただ一突きと突きたりしに、<ruby><rb>覘</rb><rt>ねら</rt></ruby>いを<ruby><rb>外</rb><rt>はず</rt></ruby>して<ruby><rb>肩頭</rb><rt>かたさき</rt></ruby>を<ruby><rb>刎</rb><rt>は</rt></ruby>ね<ruby><rb>斫</rb><rt>き</rt></ruby>りたり。</p>
+        <p>内儀は<persName ref="#shiraito">白糸</persName>の懐に出刃を<ruby><rb>裹</rb><rt>つつ</rt></ruby>みし片袖を<ruby><rb>撈</rb><rt>さぐ</rt></ruby>り<ruby><rb>得</rb><rt>あ</rt></ruby>てて、引っ<ruby><rb>掴</rb><rt>つか</rt></ruby>みたるまま<ruby><rb>遁</rb><rt>のが</rt></ruby>れんとするを、畳み懸けてその<ruby><rb>頭</rb><rt>かしら</rt></ruby>に<ruby><rb>斫</rb><rt>き</rt></ruby>り着けたり。渠はますます狂いて再び<ruby><rb>喚</rb><rt>わめ</rt></ruby>かんとしたりしかば、<persName ref="#shiraito">白糸</persName>は<ruby><rb>触</rb><rt>あた</rt></ruby>るを幸いめった<ruby><rb>斫</rb><rt>ぎ</rt></ruby>りにして、弱るところを乳の下深く突き込みぬ。これ実に最後の一撃なりけるなり。<persName ref="#shiraito">白糸</persName>は生まれてよりいまだかばかりおびただしき<ruby><rb>血汐</rb><rt>ちしお</rt></ruby>を見ざりき。一坪の畳は全く<ruby><rb>朱</rb><rt>あけ</rt></ruby>に染みて、あるいは散り、あるいは<ruby><rb>迸</rb><rt>ほとばし</rt></ruby>り、あるいはぽたぽたと<ruby><rb>滴</rb><rt>したた</rt></ruby>りたる、その<ruby><rb>痕</rb><rt>あと</rt></ruby>は八畳の一間にあまねく、<ruby><rb>行潦</rb><rt>にわたずみ</rt></ruby>のごとき<ruby><rb>唐紅</rb><rt>からくれない</rt></ruby>の中に、数箇所の傷を負いたる内儀の、<ruby><rb>拳</rb><rt>こぶし</rt></ruby>を握り、歯を<ruby><rb>噛</rb><rt>く</rt></ruby>い<ruby><rb>緊</rb><rt>し</rt></ruby>めてのけざまに<ruby><rb>顛覆</rb><rt>うちかえ</rt></ruby>りたるが、<ruby><rb>血塗</rb><rt>ちまぶ</rt></ruby>れの<ruby><rb>額越</rb><rt>ひたいご</rt></ruby>しに、半ば閉じたる<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を<ruby><rb>睨</rb><rt>にら</rt></ruby>むがごとく<ruby><rb>凝</rb><rt>す</rt></ruby>えて、折もあらばむくと立たんずる勢いなり。</p>
+        <p><persName ref="#shiraito">白糸</persName>は生まれてより、いまだかかる<ruby><rb>最期</rb><rt>さいご</rt></ruby>の<ruby><rb>愴惻</rb><rt>あさましき</rt></ruby>を見ざりしなり。かばかりおびただしき血汐！　かかるあさましき最期！　こはこれ何者の<ruby><rb>為業</rb><rt>しわざ</rt></ruby>なるぞ。ここに立てるわが身のなせし業なり。われながら恐ろしきわが身かな、と<persName ref="#shiraito">白糸</persName>は<ruby><rb>念</rb><rt>おも</rt></ruby>えり。渠の心は再び<ruby><rb>得堪</rb><rt>えた</rt></ruby>うまじく激動して、その身のいまや殺されんとするを<ruby><rb>免</rb><rt>のが</rt></ruby>れんよりも、なお幾層の危うき、恐ろしき<ruby><rb>想</rb><rt>おも</rt></ruby>いして、一秒もここにあるにあられず、出刃を投げ<ruby><rb>棄</rb><rt>す</rt></ruby>つるより早く、あとをも見ずしていっさんに走り出ずれば、<ruby><rb>心急</rb><rt>こころせ</rt></ruby>くまま手水口の縁に横たわる<ruby><rb>躯</rb><rt>むくろ</rt></ruby>のひややかなる<ruby><rb>脚</rb><rt>あし</rt></ruby>に<ruby><rb>跌</rb><rt>つまず</rt></ruby>きて、ずでんどうと<ruby><rb>庭前</rb><rt>にわさき</rt></ruby>に<ruby><rb>転</rb><rt>まろ</rt></ruby>び<ruby><rb>墜</rb><rt>お</rt></ruby>ちぬ。渠は男の<ruby><rb>甦</rb><rt>よみがえ</rt></ruby>りたるかと想いて、心も消え消えに枝折門まで走れり。</p>
+        <p>風やや起こりて庭の<ruby><rb>木末</rb><rt>こずえ</rt></ruby>を鳴らし、雨はぽっつりと<persName ref="#shiraito">白糸</persName>の<ruby><rb>面</rb><rt>おもて</rt></ruby>を打てり。</p>
+        <p>六</p>
+        <p><placeName ref="#takaoka">高岡</placeName><placeName ref="#isurugi"><ruby><rb>石動</rb><rt>いするぎ</rt></ruby></placeName>間の乗り合い馬車は今ぞ<placeName ref="#tateno"><ruby><rb>立野</rb><rt>たての</rt></ruby></placeName>より<placeName ref="#fukuoka">福岡</placeName>までの途中にありて走れる。乗客の<ruby><rb>一個</rb><rt>ひとり</rt></ruby>は<ruby><rb>煙草火</rb><rt>たばこび</rt></ruby>を<ruby><rb>乞</rb><rt>か</rt></ruby>りし人に向かいて、雑談の口を開きぬ。</p>
+        <p>「あなたはどちらまで？　へい、<placeName ref="#kanazawa">金沢</placeName>へ、なるほど、御同様に共進会でございますか」</p>
+        <p>「さようさ、共進会も見ようと思いますが、ほかに少し。……」</p>
+        <p><ruby><rb>渠</rb><rt>かれ</rt></ruby>は話好きと覚しく、</p>
+        <p>「へへ、何か<ruby><rb>公務</rb><rt>おつとめむき</rt></ruby>の御用で」</p>
+        <p>その人は<ruby><rb>髭</rb><rt>ひげ</rt></ruby>を<ruby><rb>貯</rb><rt>たくわ</rt></ruby>えて、洋服を着けたるより、<ruby><rb>渠</rb><rt>かれ</rt></ruby>はかく言いしなるべし。官吏？は吸い<ruby><rb>窮</rb><rt>つ</rt></ruby>めたる巻煙草を車の外に投げ<ruby><rb>棄</rb><rt>す</rt></ruby>て、次いで<ruby><rb>忙</rb><rt>いそが</rt></ruby>わしく<ruby><rb>唾</rb><rt>つば</rt></ruby>吐きぬ。</p>
+        <p>「実は<ruby><rb>明日</rb><rt>あす</rt></ruby>か、<ruby><rb>明後日</rb><rt>あさって</rt></ruby>あたり開くはずの公判を<ruby><rb>聴</rb><rt>き</rt></ruby>こうと思いましてね」</p>
+        <p>「へへえ、なるほど、へえ」</p>
+        <p>渠はその公判のなんたるを知らざるがごとし。かたわらにいたる<ruby><rb>旅商人</rb><rt>たびあきゅうど</rt></ruby>は、卒然<ruby><rb>我</rb><rt>われ</rt></ruby>は<ruby><rb>顔</rb><rt>がお</rt></ruby>に<ruby><rb>喙</rb><rt>くちばし</rt></ruby>を<ruby><rb>容</rb><rt>い</rt></ruby>れたり。</p>
+        <p>「ああ、なんでございますか。この夏公園で人殺しをした強盗の一件？」</p>
+        <p>髭ある人は<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を「我は顔」に転じて、</p>
+        <p>「そう。知っておいでですか」</p>
+        <p>「話には聞いておりますが、<ruby><rb>詳細事</rb><rt>くわしいこと</rt></ruby>は存じませんで。じゃあの賊は<ruby><rb>逮捕</rb><rt>つかま</rt></ruby>りましてすか」</p>
+        <p>話を奪われたりし前の男も、思い<ruby><rb>中</rb><rt>あた</rt></ruby>る節やありけん、</p>
+        <p>「あ、あ、あ、ひとしきりそんな<ruby><rb>風説</rb><rt>うわさ</rt></ruby>がございましたっけ。<ruby><rb>有福</rb><rt>かねもち</rt></ruby>の夫婦を<ruby><rb>斬</rb><rt>き</rt></ruby>り殺したとかいう……その裁判があるのでございますか」</p>
+        <p>髭は再びこなたを振り向きて、</p>
+        <p>「そう、ちょっとおもしろい裁判でな」</p>
+        <p>渠は<ruby><rb>話児</rb><rt>はなし</rt></ruby>を釣るべき器械なる、渠が特有の「へへえ」と「なるほど」とを用いて、しきりにその<ruby><rb>顛末</rb><rt>てんまつ</rt></ruby>を聞かんとせり。<ruby><rb>乙者</rb><rt>おつ</rt></ruby>も劣らず水を向けたりき。髭ある人の<ruby><rb>舌本</rb><rt>ぜっぽん</rt></ruby>はようやく<ruby><rb>軟</rb><rt>やわら</rt></ruby>ぎぬ。</p>
+        <p>「賊はじきにその晩<ruby><rb>捕</rb><rt>や</rt></ruby>られた」</p>
+        <p>「こわいものだ！」と<ruby><rb>甲者</rb><rt>こう</rt></ruby>は身を<ruby><rb>反</rb><rt>そ</rt></ruby>らして<ruby><rb>頭</rb><rt>かしら</rt></ruby>を<ruby><rb>掉</rb><rt>ふ</rt></ruby>りぬ。</p>
+        <p>「あの、それ、<ruby><rb>南京</rb><rt>ナンキン</rt></ruby>出刃打ちという見世物な、あの連中の仕事だというのだがね」</p>
+        <p><ruby><rb>乙者</rb><rt>おつ</rt></ruby>は直ちにこれに応ぜり。</p>
+        <p>「南京出刃打ち？　いかさま、見たことがございました。あいつらが？　ふうむ。ずいぶん<ruby><rb>遣</rb><rt>や</rt></ruby>りかねますまいよ」</p>
+        <p>「その晩<placeName ref="#hashiba">橋場</placeName>の交番の前を怪しい風体のやつが通ったので、巡査が<ruby><rb>咎</rb><rt>とが</rt></ruby>めるとこそこそ<ruby><rb>遁</rb><rt>に</rt></ruby>げ出したから、こいつ<ruby><rb>胡散</rb><rt>うさん</rt></ruby>だと引っ<ruby><rb>捉</rb><rt>とら</rt></ruby>えて見ると、着ている<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>の<ruby><rb>片袖</rb><rt>かたそで</rt></ruby>がない」</p>
+        <p>談ここに<ruby><rb>到</rb><rt>いた</rt></ruby>りて、甲と乙とは、思わず同音に<ruby><rb>嗟</rb><rt>うめ</rt></ruby>きぬ。乗り合いは弁者の顔を<ruby><rb>覰</rb><rt>うかが</rt></ruby>いて、その後段を渇望せり。</p>
+        <p>甲者は重ねて感嘆の声を発して、</p>
+        <p>「おもしろい！　なるほど。浴衣の片袖がない！　天も……なんとやらで、なんとかして漏らさず……ですな」</p>
+        <p>弁者はこの<ruby><rb>訛言</rb><rt>かたごと</rt></ruby>をおかしがりて、</p>
+        <p>「<ruby><rb>天網恢々</rb><rt>てんもうかいかい</rt></ruby>疎にして漏らさずかい」</p>
+        <p>甲者は聞くより手を<ruby><rb>抗</rb><rt>あ</rt></ruby>げて、</p>
+        <p>「それそれ、恢々、恢々、へえ、恢々でした」</p>
+        <p>乗り合いの<ruby><rb>過半</rb><rt>おおく</rt></ruby>はこの恢々に笑えり。</p>
+        <p>「そこで、こいつを拘引して調べると、これが出刃打ちの連中だ。ところがね、ちょうどその晩<placeName ref="#kenrokuen">兼六園</placeName>の席貸しな、<placeName ref="#rokushotei">六勝亭</placeName>、あれの<ruby><rb>主翁</rb><rt>あるじ</rt></ruby>は<persName ref="#kirita"><ruby><rb>桐田</rb><rt>きりた</rt></ruby></persName>という金満家の隠居だ。この夫婦とも、何者の<ruby><rb>仕業</rb><rt>しわざ</rt></ruby>だか、いや、それは、実に残酷に<ruby><rb>害</rb><rt>や</rt></ruby>られたというね。亭主は<ruby><rb>鳩尾</rb><rt>みぞおち</rt></ruby>のところを突き<ruby><rb>洞</rb><rt>とお</rt></ruby>される、女房は<ruby><rb>頭部</rb><rt>あたま</rt></ruby>に三箇所、肩に一箇所、左の乳の下を<ruby><rb>刳</rb><rt>えぐ</rt></ruby>られて、<ruby><rb>僵</rb><rt>たお</rt></ruby>れていたその手に、男の片袖を<ruby><rb>掴</rb><rt>つか</rt></ruby>んでいたのだ」</p>
+        <p>車中声なく、人は<ruby><rb>固唾</rb><rt>かたず</rt></ruby>を<ruby><rb>嚥</rb><rt>の</rt></ruby>みて、その心を寒うせり。まさにこれ弁者得意の時。</p>
+        <p>「証拠になろうという物はそればかりではない。<ruby><rb>死骸</rb><rt>しがい</rt></ruby>のかたわらに<ruby><rb>出刃庖丁</rb><rt>でばぼうちょう</rt></ruby>が捨ててあった。<ruby><rb>柄</rb><rt>え</rt></ruby>の所に<ruby><rb>片仮名</rb><rt>かたかな</rt></ruby>のテの字の焼き印のある、これを調べると、出刃打ちの<ruby><rb>用</rb><rt>つか</rt></ruby>っていた道具だ。それに今の片袖がそいつの浴衣に<ruby><rb>差違</rb><rt>ちがい</rt></ruby>ないので、まず犯罪人はこいつとだれも目を着けたさ」</p>
+        <p>旅商人は<ruby><rb>膝</rb><rt>ひざ</rt></ruby>を進めつ。</p>
+        <p>「へえ、それじゃそいつじゃないんでございますかい」</p>
+        <p>弁者はたちまち手を<ruby><rb>抗</rb><rt>あ</rt></ruby>げてこれを<ruby><rb>抑</rb><rt>おさ</rt></ruby>えぬ。</p>
+        <p>「まあお聞きなさい。ところで出刃打ちの白状には、いかにも賊を働きました。賊は働いたが、けっして人殺しをした覚えはございません。<ruby><rb>奪</rb><rt>と</rt></ruby>りましたのは水芸の<persName ref="#shiraito">滝の白糸</persName>という者の金で、<persName ref="#kirita">桐田</persName>の<ruby><rb>門</rb><rt>かど</rt></ruby>は<ruby><rb>通過</rb><rt>とおり</rt></ruby>もしませんっ」</p>
+        <p>「はて、ねえ」と甲者は<ruby><rb>眉</rb><rt>まゆ</rt></ruby>を動かして、弁者を<ruby><rb>凝視</rb><rt>みつ</rt></ruby>めたり、乙者は黙して考えぬ。ますますその後段を渇望せる乗り合いは、順繰りに席を進めて、弁者に近づかんとせり。渠はそのとき<ruby><rb>巻莨</rb><rt>まきたばこ</rt></ruby>を取り出だして、<ruby><rb>脣</rb><rt>くちびる</rt></ruby>に湿しつつ、</p>
+        <p>「話はこれからだ」</p>
+        <p><ruby><rb>左側</rb><rt>さそく</rt></ruby>の席の<ruby><rb>前端</rb><rt>まえはし</rt></ruby>に並びたる、威儀ある紳士とその老母とは、顔を見合わせて<ruby><rb>迭</rb><rt>たが</rt></ruby>いに色を動かせり。渠は質素なる黒の紋着きの羽織に、<ruby><rb>節仙台</rb><rt>ふしせんだい</rt></ruby>の<ruby><rb>袴</rb><rt>はかま</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>きて、その髭は弁者より麗しきものなりき。渠は紳士というべき<ruby><rb>服装</rb><rt>いでたち</rt></ruby>にはあらざるなり。されどもその<ruby><rb>相貌</rb><rt>そうぼう</rt></ruby>とその髭とは、多く<ruby><rb>得</rb><rt>う</rt></ruby>べからざる紳士の<ruby><rb>風采</rb><rt>ふうさい</rt></ruby>を備えたり。</p>
+        <p>弁者は<ruby><rb>仔細</rb><rt>しさい</rt></ruby>らしく煙を吹きて、</p>
+        <p>「<persName ref="#shiraito">滝の白糸</persName>というのはご存じでしょうな」</p>
+        <p>乙者は<ruby><rb>頷</rb><rt>うなず</rt></ruby>き頷き、</p>
+        <p>「知っとります段か、<placeName ref="#toyama">富山</placeName>で見ました大評判の<ruby><rb>美艶</rb><rt>うつくしい</rt></ruby>ので」</p>
+        <p>「さよう。そこでそのころ<placeName ref="#fukui">福井</placeName>の方で興行中のかの女を喚び出して対審に及んだところが、出刃打ちの申し立てには、その片袖は、<persName ref="#shiraito">白糸</persName>の金を<ruby><rb>奪</rb><rt>と</rt></ruby>るときに、おおかた<ruby><rb>断</rb><rt>ちぎ</rt></ruby>られたのであろうが、自分は知らずに<ruby><rb>遁</rb><rt>に</rt></ruby>げたので、出刃庖丁とてもそのとおり、女を<ruby><rb>脅</rb><rt>おど</rt></ruby>すために持っていたのを、<ruby><rb>慌</rb><rt>あわ</rt></ruby>てて忘れて来たのであるから、たといその二品が<persName ref="#kirita">桐田</persName>の家にあろうとも、こっちの知ったことではないと、<ruby><rb>理窟</rb><rt>りくつ</rt></ruby>には合わんけれど、やつはまずそう言い張るのだ。そこで女が、そのとおりだと言えば、人殺しは出刃打ちじゃなくって、ほかにあるとなるのだ」</p>
+        <p>甲者は<ruby><rb>頬杖</rb><rt>ほおづえ</rt></ruby><ruby><rb>拄</rb><rt>つ</rt></ruby>きたりし<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>外</rb><rt>はず</rt></ruby>して、弁者の前に差し寄せつつ、</p>
+        <p>「へえへえ、そうして女はなんと申しました」</p>
+        <p>「ぜひおまえさんに逢いたいと言ったね」</p>
+        <p>思いも寄らぬ弁者の<ruby><rb>好謔</rb><rt>こうぎゃく</rt></ruby>は、大いに一場の笑いを博せり。渠もやむなく打ち笑いぬ。</p>
+        <p>「ところが<ruby><rb>金子</rb><rt>かね</rt></ruby>を奪られた覚えなどはない、と女は言うのだ。出刃打ちは、なんでも奪ったという。<ruby><rb>偸児</rb><rt>どろぼう</rt></ruby>のほうから奪ったというのに、奪られたほうでは奪られないと言い張る。なんだか<ruby><rb>大岡</rb><rt>おおおか</rt></ruby>政談にでもありそうな話さ」</p>
+        <p>「これにはだいぶ<ruby><rb>事情</rb><rt>わけ</rt></ruby>がありそうです」</p>
+        <p>乙者は首を<ruby><rb>捻</rb><rt>ひね</rt></ruby>りつつ腕を<ruby><rb>拱</rb><rt>こまぬ</rt></ruby>けり。例の「なるほど」は、<ruby><rb>談</rb><rt>はなし</rt></ruby>のますます佳境に入るを楽しめる<ruby><rb>気色</rb><rt>けしき</rt></ruby>にて、</p>
+        <p>「なるほど、これだから裁判はむずかしい！　へえ、それからどう<ruby><rb>致</rb><rt>いた</rt></ruby>しました」</p>
+        <p>傍聴者は声を<ruby><rb>斂</rb><rt>おさ</rt></ruby>めていよいよ耳を傾けぬ。威儀ある紳士とその老母とは最も粛然として死黙せり。</p>
+        <p>弁者はなおも<ruby><rb>語</rb><rt>ことば</rt></ruby>を継ぎぬ。</p>
+        <p>「実にこれは水掛け論さ。しかしとどのつまり出刃打ちが殺したになって、予審は終結した。今度開くのが公判だ。予審が済んでからこの公判までにはだいぶ<ruby><rb>間</rb><rt>ひま</rt></ruby>があったのだ。この<ruby><rb>間</rb><rt>あいだ</rt></ruby>に出刃打ちの弁護士は非常な苦心で、十分弁護の方法を考えておいて、いざ公判という日には、一番腕を<ruby><rb>揮</rb><rt>ふる</rt></ruby>って、ぜひとも出刃打ちを助けようと、<ruby><rb>手薬煉</rb><rt>てぐすね</rt></ruby>を引いているそうだから、これは裁判官もなかなか骨の折れる事件さ」</p>
+        <p>甲者は例の「なるほど」を言わずして、不平の色を<ruby><rb>作</rb><rt>な</rt></ruby>せり。</p>
+        <p>「へえ、そのなんでございますか、<ruby><rb>旦那</rb><rt>だんな</rt></ruby>、その弁護士というやつは出刃打ちの肩を持って、人殺しの罪を女に<ruby><rb>誣</rb><rt>なす</rt></ruby>ろうという<ruby><rb>姦計</rb><rt>たくみ</rt></ruby>なんでございますか」</p>
+        <p>弁者は渠の<ruby><rb>没分暁</rb><rt>ぼつぶんぎょう</rt></ruby>を笑いて、</p>
+        <p>「何も<ruby><rb>姦計</rb><rt>たくみ</rt></ruby>だの、肩を持つの、というわけではない。弁護を引き受ける以上は、その者の罪を軽くするように尽力するのが弁護士の職分だ」</p>
+        <p>甲者はますます不平に堪えざりき。渠は弁者を<ruby><rb>睨</rb><rt>げい</rt></ruby>して、</p>
+        <p>「職分だって、あなた、出刃打ちなんぞの肩を持つてえことがあるもんですか。<ruby><rb>敵手</rb><rt>あいて</rt></ruby>は女じゃありませんか。かわいそうに。私なら弁護を頼まれたってなんだって<ruby><rb>管</rb><rt>かま</rt></ruby>やしません。おまえが悪い、ありていに白状しな、と出刃打ちの野郎を<ruby><rb>極</rb><rt>き</rt></ruby>め付けてやりまさあ」</p>
+        <p>渠の鼻息はすこぶる<ruby><rb>暴</rb><rt>あら</rt></ruby>らかなりき。</p>
+        <p>「そんな弁護士をだれが頼むものか」</p>
+        <p>と弁者は仰ぎて笑えり。乗り合いは、威儀ある紳士とその老母を除きて、ことごとく大笑せり。笑い<ruby><rb>寝</rb><rt>や</rt></ruby>むころ馬車は<placeName ref="#isurugi">石動</placeName>に着きぬ。車を下らんとて弁者は席を<ruby><rb>起</rb><rt>た</rt></ruby>てり。甲と乙とは渠に向かいて<ruby><rb>慇懃</rb><rt>いんぎん</rt></ruby>に<ruby><rb>一揖</rb><rt>いちゆう</rt></ruby>して、</p>
+        <p>「おかげでおもしろうございました」</p>
+        <p>「どうも<ruby><rb>旦那</rb><rt>だんな</rt></ruby>ありがとう存じました」</p>
+        <p>弁者は得々として、</p>
+        <p>「おまえさんがたも<ruby><rb>間</rb><rt>ひま</rt></ruby>があったら、公判を行ってごらんなさい」</p>
+        <p>「こりゃ芝居よりおもしろいでございましょう」</p>
+        <p>乗客は<ruby><rb>忙々</rb><rt>いそがわしく</rt></ruby>下車して、思い思いに別れぬ。最後に威儀ある紳士はその母の手を執りて<ruby><rb>扶</rb><rt>たす</rt></ruby>け下ろしつつ、</p>
+        <p>「あぶのうございますよ。はい、これからは<ruby><rb>腕車</rb><rt>くるま</rt></ruby>でございます」</p>
+        <p>渠らの入りたる建場の茶屋の入り口に、馬車会社の老いたる役員は<ruby><rb>佇</rb><rt>たたず</rt></ruby>めり。渠は何気なく紳士の顔を見たりしが、にわかにわれを忘れてその<ruby><rb>瞳</rb><rt>ひとみ</rt></ruby>を凝らせり。</p>
+        <p>たちまち進み来たれる紳士は帽を脱して、ボタンの二所<ruby><rb>失</rb><rt>と</rt></ruby>れたる<ruby><rb>茶羅紗</rb><rt>ちゃらしゃ</rt></ruby>のチョッキに、水晶の<ruby><rb>小印</rb><rt>こいん</rt></ruby>を<ruby><rb>垂下</rb><rt>ぶらさ</rt></ruby>げたるニッケル<ruby><rb>鍍</rb><rt>めっき</rt></ruby>の<ruby><rb>鏁</rb><rt>くさり</rt></ruby>を<ruby><rb>繋</rb><rt>か</rt></ruby>けて、柱に<ruby><rb>靠</rb><rt>もた</rt></ruby>れたる役員の前に<ruby><rb>頭</rb><rt>かしら</rt></ruby>を下げぬ。</p>
+        <p>「その後は<ruby><rb>御機嫌</rb><rt>ごきげん</rt></ruby>よろしゅう。あいかわらずお達者で……」</p>
+        <p>役員は<ruby><rb>狼狽</rb><rt>ろうばい</rt></ruby>して身を正し、奪うがごとくその<ruby><rb>味噌漉</rb><rt>みそこ</rt></ruby>し帽子を脱げり。</p>
+        <p>「やあこれは！　<persName ref="#kinya">欣様</persName>だったねえ。どうもさっきから<ruby><rb>肖</rb><rt>に</rt></ruby>ているとは思ったけれど、えらくりっぱになったもんだから。……しかしおまえさんも無事で、そうしてまありっぱになんなすって結構だ。あれからじきに<placeName ref="#tokyo">東京</placeName>へ行って、勉強しているということは聞いていたっけが、ああ、見上げたもんだ。そうして勉強してきたのは、法律かい。法律はいいね。おまえさんは好きだった。好きこそものの<ruby><rb>上手</rb><rt>じょうず</rt></ruby>なりけれ、うん、それはよかった。ああ、なるほど、<placeName ref="#kanazawa">金沢</placeName>の裁判所に……うむ、検事代理というのかい」</p>
+        <p>老いたる役員はわが子の出世を<ruby><rb>看</rb><rt>み</rt></ruby>るがごとく<ruby><rb>懽</rb><rt>よろこ</rt></ruby>べり。</p>
+        <p><ruby><rb>当時</rb><rt>むかし</rt></ruby><ruby><rb>盲縞</rb><rt>めくらじま</rt></ruby>の腹掛けは今日黒の三つ紋の羽織となりぬ。<placeName ref="#kanazawa-saibansho">金沢裁判所</placeName>新任検事代理<persName ref="#kinya">村越欣弥</persName>氏は、実に三年前の馭者台上の<persName ref="#kinya">金公</persName>なり。</p>
+        <p>七</p>
+        <p>公判は予定の日において<placeName ref="#kanazawa-saibansho">金沢地方裁判所</placeName>に開かれたり。傍聴席は人の山を成して、被告および関係者<persName ref="#shiraito">水島友</persName>は弁護士、<ruby><rb>押丁</rb><rt>おうてい</rt></ruby>らとともに差し控えて、判官の着席を待てり。ほどなく正面の戸をさっと<ruby><rb>排</rb><rt>ひら</rt></ruby>きて、<ruby><rb>躯高</rb><rt>たけたか</rt></ruby>き裁判長は入り来たりぬ。二名の陪席判事と一名の書記とはこれに続けり。</p>
+        <p>満廷粛として水を打ちたるごとくなれば、その<ruby><rb>靴音</rb><rt>くつおと</rt></ruby>は四壁に響き、天井に<ruby><rb>譍</rb><rt>こた</rt></ruby>えて、一種の恐ろしき音を<ruby><rb>生</rb><rt>な</rt></ruby>して、傍聴人の胸に<ruby><rb>轟</rb><rt>とどろ</rt></ruby>きぬ。</p>
+        <p>威儀おごそかに<ruby><rb>渠</rb><rt>かれ</rt></ruby>らの着席せるとき、正面の戸は再び<ruby><rb>啓</rb><rt>ひら</rt></ruby>きて、<ruby><rb>高爽</rb><rt>こうそう</rt></ruby>の気を帯び、明秀の<ruby><rb>容</rb><rt>かたち</rt></ruby>を<ruby><rb>具</rb><rt>そな</rt></ruby>えたる法官は<ruby><rb>顕</rb><rt>あら</rt></ruby>われたり。渠はその麗しき<ruby><rb>髭</rb><rt>ひげ</rt></ruby>を<ruby><rb>捻</rb><rt>ひね</rt></ruby>りつつ、<ruby><rb>従容</rb><rt>しょうよう</rt></ruby>として検事の席に着きたり。</p>
+        <p>謹慎なる聴衆を<ruby><rb>容</rb><rt>い</rt></ruby>れたる法廷は、室内の空気<ruby><rb>些</rb><rt>さ</rt></ruby>も熱せずして、渠らは幽谷の木立ちのごとく群がりたり。制服を<ruby><rb>絡</rb><rt>まと</rt></ruby>いたる判事、検事は、赤と青とカバーを異にせるテーブルを別ちて、一段高き所に居並びつ。</p>
+        <p>はじめ判事らが出廷せしとき、<persName ref="#shiraito">白糸</persName>は<ruby><rb>徐</rb><rt>しず</rt></ruby>かに<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>挙</rb><rt>あ</rt></ruby>げて渠らを<ruby><rb>見遣</rb><rt>みや</rt></ruby>りつつ、<ruby><rb>臆</rb><rt>おく</rt></ruby>せる<ruby><rb>気色</rb><rt>けしき</rt></ruby>もあらざりしが、最後に顕われたりし検事代理を見るやいなや、渠は色<ruby><rb>蒼白</rb><rt>あおざ</rt></ruby>めて<ruby><rb>戦</rb><rt>おのの</rt></ruby>きぬ。この俊爽なる法官は実に渠が<ruby><rb>三年</rb><rt>みとせ</rt></ruby>の間<ruby><rb>夢寐</rb><rt>むび</rt></ruby>も忘れざりし<persName ref="#kinya">欣さん</persName>ならずや。渠はその学識とその地位とによりて、かつて<ruby><rb>馭者</rb><rt>ぎょしゃ</rt></ruby>たりし日の<ruby><rb>垢塵</rb><rt>こうじん</rt></ruby>を洗い去りて、いまやその<ruby><rb>面</rb><rt>おもて</rt></ruby>はいと清らに、その眉はひときわ<ruby><rb>秀</rb><rt>ひい</rt></ruby>でて、驚くばかりに見違えたれど、<ruby><rb>紛</rb><rt>まが</rt></ruby>うべくもあらず、渠は<persName ref="#kinya">村越欣弥</persName>なり。<persName ref="#shiraito">白糸</persName>は始め不意の面会に<ruby><rb>駭</rb><rt>おどろ</rt></ruby>きたりしが、再び渠を熟視するに及びておのれを忘れ、三たび渠を見て、愁然として首を<ruby><rb>低</rb><rt>た</rt></ruby>れたり。</p>
+        <p><persName ref="#shiraito">白糸</persName>はありうべからざるまでに意外の<ruby><rb>想</rb><rt>おも</rt></ruby>いをなしたりき。</p>
+        <p>渠はこのときまで、<ruby><rb>一箇</rb><rt>ひとり</rt></ruby>の頼もしき<ruby><rb>馬丁</rb><rt>べっとう</rt></ruby>としてその意中に渠を遇せしなり。いまだかくのごとく畏敬すべき者ならんとは知らざりき。ある点においては渠を支配しうべしと思いしなり。されども今この検事代理なる<persName ref="#kinya">村越欣弥</persName>に対しては、その一髪をだに動かすべき力のわれにあらざるを覚えき。ああ、<ruby><rb>濶達</rb><rt>かったつ</rt></ruby>豪放なる<persName ref="#shiraito">滝の白糸</persName>！　渠はこのときまで、おのれは人に対してかくまで<ruby><rb>意気地</rb><rt>いくじ</rt></ruby>なきものとは想わざりしなり。</p>
+        <p>渠はこの憤りと喜びと悲しみとに<ruby><rb>摧</rb><rt>くじ</rt></ruby>かれて、残柳の露に<ruby><rb>俯</rb><rt>ふ</rt></ruby>したるごとく、哀れに<ruby><rb>萎</rb><rt>しお</rt></ruby>れてぞ見えたる。</p>
+        <p><persName ref="#kinya">欣弥</persName>の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>は<ruby><rb>陰</rb><rt>ひそか</rt></ruby>に始終恩人の姿に注げり。渠ははたして<ruby><rb>三年</rb><rt>みとせ</rt></ruby>の昔<placeName ref="#tenjinbashi">天神橋</placeName>上<ruby><rb>月明</rb><rt>げつめい</rt></ruby>のもとに、<ruby><rb>臂</rb><rt>ひじ</rt></ruby>を<ruby><rb>把</rb><rt>と</rt></ruby>りて壮語し、気を吐くこと<ruby><rb>虹</rb><rt>にじ</rt></ruby>のごとくなりし女丈夫なるか。その面影もあらず、いたくも渠は衰えたるかな。</p>
+        <p>恩人の顔は<ruby><rb>蒼白</rb><rt>あおざ</rt></ruby>めたり。その<ruby><rb>頬</rb><rt>ほお</rt></ruby>は<ruby><rb>削</rb><rt>こ</rt></ruby>けたり。その髪は乱れたり。乱れたる髪！　その夕べの乱れたる髪は<ruby><rb>活溌溌</rb><rt>かつはつはつ</rt></ruby>の<ruby><rb>鉄拐</rb><rt>てっか</rt></ruby>を表わせしに、今はその<ruby><rb>憔悴</rb><rt>しょうすい</rt></ruby>を増すのみなりけり。</p>
+        <p>渠は想えり。濶達豪放の女丈夫！　渠は垂死の<ruby><rb>病蓐</rb><rt>びょうじょく</rt></ruby>に横たわらんとも、けっしてかくのごとき衰容をなさざるべきなり。烈々たる渠が心中の活火はすでに<ruby><rb>燼</rb><rt>き</rt></ruby>えたるか。なんぞ渠のはなはだしく冷灰に似たるや。</p>
+        <p><persName ref="#kinya">欣弥</persName>はこの<ruby><rb>体</rb><rt>てい</rt></ruby>を見るより、すずろ<ruby><rb>憐愍</rb><rt>あわれ</rt></ruby>を催して、胸も張り裂くばかりなりき。同時に渠はおのれの職務に心着きぬ。私をもって公に代えがたしと、渠は<ruby><rb>拳</rb><rt>こぶし</rt></ruby>を握りて<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を閉じぬ。</p>
+        <p>やがて裁判長は被告に向かいて二、三の訊問ありけるのち、弁護士は渠の<ruby><rb>冤</rb><rt>えん</rt></ruby>を<ruby><rb>雪</rb><rt>すす</rt></ruby>がんために、<ruby><rb>滔々</rb><rt>とうとう</rt></ruby>数千言を<ruby><rb>陳</rb><rt>つら</rt></ruby>ねて、ほとんど余すところあらざりき。裁判長は事実を<ruby><rb>隠蔽</rb><rt>いんぺい</rt></ruby>せざらんように<persName ref="#shiraito">白糸</persName>を<ruby><rb>諭</rb><rt>さと</rt></ruby>せり。渠はあくまで盗難に<ruby><rb>遭</rb><rt>あ</rt></ruby>いし覚えのあらざる旨を答えて、黒白は容易に弁ずべくもあらざりけり。</p>
+        <p>検事代理はようやく閉じたりし<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を開くとともに、<ruby><rb>悄然</rb><rt>しょうぜん</rt></ruby>として<ruby><rb>項</rb><rt>うなじ</rt></ruby>を<ruby><rb>垂</rb><rt>た</rt></ruby>るる<persName ref="#shiraito">白糸</persName>を見たり。渠はそのとき声を励まして、</p>
+        <p>「<persName ref="#shiraito">水島友</persName>、<persName ref="#kinya">村越欣弥</persName>が……本官があらためて訊問するが、<ruby><rb>裹</rb><rt>つつ</rt></ruby>まず事実を申せ」</p>
+        <p><persName ref="#shiraito">友</persName>はわずかに<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>擡</rb><rt>あ</rt></ruby>げて、<ruby><rb>額越</rb><rt>ひたいご</rt></ruby>しに検事代理の色を<ruby><rb>候</rb><rt>うかが</rt></ruby>いぬ。渠は<ruby><rb>峻酷</rb><rt>しゅんこく</rt></ruby>なる法官の威容をもて、</p>
+        <p>「そのほうは全く<ruby><rb>金子</rb><rt>きんす</rt></ruby>を<ruby><rb>奪</rb><rt>と</rt></ruby>られた覚えはないのか。<ruby><rb>虚偽</rb><rt>いつわり</rt></ruby>を申すな。たとい虚偽をもって一時を<ruby><rb>免</rb><rt>のが</rt></ruby>るるとも、天知る、地知る、我知るで、いつがいつまで知れずにはおらんぞ。しかし知れるの、知れぬのとそんなことは通常の人に言うことだ。そのほうも<persName ref="#shiraito">滝の白糸</persName>といわれては、ずいぶん<ruby><rb>名代</rb><rt>なだい</rt></ruby>の芸人ではないか。それが、かりそめにも<ruby><rb>虚偽</rb><rt>いつわり</rt></ruby>などを申しては、その名に対しても実に<ruby><rb>愧</rb><rt>は</rt></ruby>ずべきことだ。人は一代、名は末代だぞ。またそのほうのような名代の芸人になれば、ずいぶん<ruby><rb>多数</rb><rt>おおく</rt></ruby>の<ruby><rb>贔屓</rb><rt>ひいき</rt></ruby>もあろう、その贔屓が、裁判所においてそのほうが虚偽に申し立てて、それがために罪なき者に罪を負わせたと聞いたならば、ああ、<persName ref="#shiraito">白糸</persName>はあっぱれな心掛けだと言って<ruby><rb>誉</rb><rt>ほ</rt></ruby>めるか、喜ぶかな。もし本官がそのほうの贔屓であったなら、<ruby><rb>今日</rb><rt>きょう</rt></ruby>限り<ruby><rb>愛想</rb><rt>あいそ</rt></ruby>を尽かして、以来は道で<ruby><rb>遭</rb><rt>あ</rt></ruby>おうとも<ruby><rb>唾</rb><rt>つば</rt></ruby>もしかけんな。しかし長年の贔屓であってみれば、まず愛想を尽かす前に十分勧告をして、<ruby><rb>卑怯</rb><rt>ひきょう</rt></ruby>千万な虚偽の申し立てなどは、命に換えてもさせんつもりだ」</p>
+        <p>かく<ruby><rb>諭</rb><rt>さと</rt></ruby>したりし<persName ref="#kinya">欣弥</persName>の<ruby><rb>声音</rb><rt>こわね</rt></ruby>は、ただにその平生を<ruby><rb>識</rb><rt>し</rt></ruby>れる、傍聴席なる渠の母のみにあらずして、法官も聴衆もおのずからその異常なるを聞き得たりしなり。<persName ref="#shiraito">白糸</persName>の<ruby><rb>愁</rb><rt>うれ</rt></ruby>わしかりし<ruby><rb>眼</rb><rt>まなこ</rt></ruby>はにわかに清く輝きて、</p>
+        <p>「そんなら<ruby><rb>事実</rb><rt>ほんとう</rt></ruby>を申しましょうか」</p>
+        <p>裁判長はしとやかに、</p>
+        <p>「うむ、隠さずに申せ」</p>
+        <p>「実は<ruby><rb>奪</rb><rt>と</rt></ruby>られました」</p>
+        <p>ついに<persName ref="#shiraito">白糸</persName>は自白せり。法の一貫目は情の一匁なるかな、渠はそのなつかしき検事代理のために喜びて自白せるなり。</p>
+        <p>「なに？　<ruby><rb>盗</rb><rt>と</rt></ruby>られたと申すか」</p>
+        <p>裁判長は<ruby><rb>軽</rb><rt>かろ</rt></ruby>く<ruby><rb>卓</rb><rt>たく</rt></ruby>を<ruby><rb>拍</rb><rt>う</rt></ruby>ちて、きと<persName ref="#shiraito">白糸</persName>を<ruby><rb>視</rb><rt>み</rt></ruby>たり。</p>
+        <p>「はい、出刃打ちの連中でしょう、四、五人の男が<ruby><rb>手籠</rb><rt>てご</rt></ruby>めにして、私の懐中の百円を奪りました」</p>
+        <p>「しかとさようか」</p>
+        <p>「相違ござりません」</p>
+        <p>これに次ぎて<persName ref="#shiraito">白糸</persName>はむぞうさにその重罪をも白状したりき。裁判長は直ちに訊問を中止して、即刻この日の公判を終われり。</p>
+        <p>検事代理<persName ref="#kinya">村越欣弥</persName>は私情の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を<ruby><rb>掩</rb><rt>おお</rt></ruby>いてつぶさに<persName ref="#shiraito">白糸</persName>の罪状を取り調べ、大恩の上に大恩を<ruby><rb>累</rb><rt>かさ</rt></ruby>ねたる至大の恩人をば、殺人犯として起訴したりしなり。さるほどに予審終わり、公判開きて、裁判長は検事代理の請求は<ruby><rb>是</rb><rt>ぜ</rt></ruby>なりとして、渠に死刑を宣告せり。</p>
+        <p>一生他人たるまじと契りたる<persName ref="#kinya">村越欣弥</persName>は、ついに幽明を隔てて、<ruby><rb>永</rb><rt>なが</rt></ruby>く恩人と相見るべからざるを憂いて、宣告の夕べ<ruby><rb>寓居</rb><rt>ぐうきょ</rt></ruby>の二階に自殺してけり。</p>
+        <p>（<date when="1894">明治二十七年</date>十一月一日―三十日「読売新聞」）</p>
+      </div>
+    </body>
+  </text>
+</TEI>

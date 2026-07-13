@@ -1,0 +1,15 @@
+{
+  "slug": "sakuranoki",
+  "url": "https://www.aozora.gr.jp/cards/000074/files/427_19793.html",
+  "card": "https://www.aozora.gr.jp/cards/000074/card427.html",
+  "title": "桜の樹の下には",
+  "author": "梶井基次郎",
+  "fixes": {},
+  "persons": {
+    "aphrodite": ["アフロディット", "ギリシア神話の愛と美の女神アプロディーテー。海の泡から生まれたという伝承にちなみ、水しぶきから薄羽かげろうが生まれる情景の比喩に用いられる"]
+  },
+  "places": {},
+  "tags": [
+    ["pers", "アフロディット", "aphrodite"]
+  ]
+}

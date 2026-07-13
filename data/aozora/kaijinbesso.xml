@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>海神別荘</title>
+        <author>泉鏡花</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>海神別荘</title><author>泉鏡花</author>
+          <note>青空文庫。底本：「泉鏡花集成7」ちくま文庫、筑摩書房。1995（平成7）年12月4日第1刷発行。底本の親本：「鏡花全集　第二十六卷」岩波書店。1942（昭和17）年10月15日発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000050/card3244.html">https://www.aozora.gr.jp/cards/000050/card3244.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="okinosozu">
+        <persName>沖の僧都</persName>
+        <note>海底の琅玕殿に仕える年老いた海坊主。公子の傅役。話者標示の「僧都」は僧位に由来する役割語のため不採用で、名のりの「沖の僧都」のみをタグ付けする</note>
+      </person>
+      <person xml:id="otohime">
+        <persName>乙姫</persName>
+        <note>公子の姉。「御姉君、乙姫様」。竜宮の乙姫。伝説上の存在。「姉上」「姫様」「姉姫様」は親族呼称・敬称のため不採用</note>
+      </person>
+      <person xml:id="tatsutahime">
+        <persName>竜田姫</persName>
+        <note>秋の紅葉を織るとされる日本の女神。伝説上の存在への言及</note>
+      </person>
+      <person xml:id="naou">
+        <persName>奈翁</persName>
+        <note>ナポレオン・ボナパルト(1769-1821)。「仏国の大帝奈翁」。実在人物への言及</note>
+      </person>
+      <person xml:id="barbier">
+        <persName>バルビール</persName>
+        <note>アントワーヌ=アレクサンドル・バルビエ(1765-1825)。ナポレオンの図書館長。実在人物への言及</note>
+      </person>
+      <person xml:id="daikyoji-isharu">
+        <persName>大経師以春</persName>
+        <note>近松門左衛門『大経師昔暦』(および井原西鶴『好色五人女』)の大経師。おさんの夫。「大経師」は職名のため単独では不採用</note>
+      </person>
+      <person xml:id="osan">
+        <persName>おさん</persName>
+        <note>『大経師昔暦』のおさん。大経師以春の女房で、茂右衛門との不義により引廻し・磔となる</note>
+      </person>
+      <person xml:id="moemon">
+        <persName>茂右衛門</persName>
+        <note>『大経師昔暦』の手代茂右衛門。おさんの相手</note>
+      </person>
+      <person xml:id="oshichi">
+        <persName>お七</persName>
+        <note>八百屋お七。井原西鶴『好色五人女』などに描かれ、鈴ヶ森で火刑に処せられたと語られる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="rokandono">
+        <placeName>琅玕殿</placeName>
+        <note>海底にある公子の宮殿。作中の架空の場所のため座標なし。宝石名としての「琅玕」単独は地名でないためタグ付けしない</note>
+      </place>
+      <place xml:id="tokaido">
+        <placeName>東海道</placeName>
+        <note>江戸-京都間の街道。侍女五が唄う道中唄の舞台。広域にわたるため座標なし</note>
+      </place>
+      <place xml:id="shinagawa">
+        <placeName>品川</placeName>
+        <location><geo>35.6092 139.73</geo></location>
+        <note>東海道一の宿・品川宿(現東京都品川区)・概値</note>
+      </place>
+      <place xml:id="kawasaki">
+        <placeName>川崎</placeName>
+        <location><geo>35.5308 139.7029</geo></location>
+        <note>東海道二の宿・川崎宿(現神奈川県川崎市)・概値</note>
+      </place>
+      <place xml:id="kanagawa">
+        <placeName>神奈川</placeName>
+        <location><geo>35.4757 139.628</geo></location>
+        <note>東海道三の宿・神奈川宿(現横浜市神奈川区)・概値。本文には「神奈川」「かな川」の2形</note>
+      </place>
+      <place xml:id="hodogaya">
+        <placeName>程ヶ谷</placeName>
+        <location><geo>35.4553 139.5975</geo></location>
+        <note>東海道四の宿・保土ヶ谷宿(現横浜市保土ケ谷区)・概値</note>
+      </place>
+      <place xml:id="totsuka">
+        <placeName>戸塚</placeName>
+        <location><geo>35.3958 139.5342</geo></location>
+        <note>東海道五の宿・戸塚宿(現横浜市戸塚区)・概値</note>
+      </place>
+      <place xml:id="fujisawa">
+        <placeName>藤沢</placeName>
+        <location><geo>35.3389 139.4886</geo></location>
+        <note>東海道六の宿・藤沢宿(現神奈川県藤沢市)・概値</note>
+      </place>
+      <place xml:id="hiratsuka">
+        <placeName>平塚</placeName>
+        <location><geo>35.3275 139.3494</geo></location>
+        <note>東海道七の宿・平塚宿(現神奈川県平塚市)・概値</note>
+      </place>
+      <place xml:id="oiso">
+        <placeName>大磯</placeName>
+        <location><geo>35.3078 139.3128</geo></location>
+        <note>東海道八の宿・大磯宿(現神奈川県大磯町)・概値</note>
+      </place>
+      <place xml:id="odawara">
+        <placeName>小田原</placeName>
+        <location><geo>35.2646 139.1521</geo></location>
+        <note>東海道九の宿・小田原宿(現神奈川県小田原市)・概値</note>
+      </place>
+      <place xml:id="hakone">
+        <placeName>箱根</placeName>
+        <location><geo>35.1889 139.0269</geo></location>
+        <note>東海道十の宿・箱根宿および箱根関(現神奈川県箱根町)・概値</note>
+      </place>
+      <place xml:id="izu">
+        <placeName>伊豆</placeName>
+        <location><geo>34.9 138.95</geo></location>
+        <note>旧国名(現静岡県伊豆半島)・概値。「箱根を越えて伊豆の海」</note>
+      </place>
+      <place xml:id="mishima">
+        <placeName>三島</placeName>
+        <location><geo>35.1264 138.9186</geo></location>
+        <note>東海道十一の宿・三島宿および三嶋大社(現静岡県三島市)・概値。「三島の里の神垣」</note>
+      </place>
+      <place xml:id="tenryugawa">
+        <placeName>天竜川</placeName>
+        <location><geo>34.7 137.79</geo></location>
+        <note>遠江・天竜川(現静岡県浜松市・磐田市境)・概値。道中双六の目として言及</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6852 139.7528</geo></location>
+        <note>江戸(現東京)・概値。色名「江戸紫」の1件は skip で除外</note>
+      </place>
+      <place xml:id="kyoto">
+        <placeName>京都</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京都・概値。道中双六の上り</note>
+      </place>
+      <place xml:id="naniwa">
+        <placeName>浪華</placeName>
+        <location><geo>34.6863 135.52</geo></location>
+        <note>難波・浪華(現大阪市)・概値。本文には「浪花津」(古今集仮名序の難波津の歌)「大日本浪華」の2形</note>
+      </place>
+      <place xml:id="asakayama">
+        <placeName>浅香山</placeName>
+        <location><geo>37.4586 140.3672</geo></location>
+        <note>安積山(現福島県郡山市日和田町)・歌枕の伝承地・概値。難波津の歌と対をなす「安積山の歌」への言及</note>
+      </place>
+      <place xml:id="suzugamori">
+        <placeName>鈴ヶ森</placeName>
+        <location><geo>35.5896 139.7383</geo></location>
+        <note>鈴ヶ森刑場跡(現東京都品川区南大井)・概値。お七が火刑に処せられたと語られる場所</note>
+      </place>
+      <place xml:id="kanda">
+        <placeName>神田</placeName>
+        <location><geo>35.6918 139.771</geo></location>
+        <note>江戸・神田(現東京都千代田区)・概値</note>
+      </place>
+      <place xml:id="kuzurebashi">
+        <placeName>くずれ橋</placeName>
+        <note>「神田のくずれ橋」。西鶴の引用文中の江戸の橋。所在に諸説あり座標なし</note>
+      </place>
+      <place xml:id="yotsuya">
+        <placeName>四谷</placeName>
+        <location><geo>35.6862 139.7203</geo></location>
+        <note>江戸・四谷(現東京都新宿区)・概値</note>
+      </place>
+      <place xml:id="shiba">
+        <placeName>芝</placeName>
+        <location><geo>35.648 139.748</geo></location>
+        <note>江戸・芝(現東京都港区)・概値。「道芝」の1件は skip で除外</note>
+      </place>
+      <place xml:id="asakusa">
+        <placeName>浅草</placeName>
+        <location><geo>35.7148 139.7967</geo></location>
+        <note>江戸・浅草(現東京都台東区)・概値</note>
+      </place>
+      <place xml:id="nihonbashi">
+        <placeName>日本橋</placeName>
+        <location><geo>35.6838 139.7744</geo></location>
+        <note>江戸・日本橋(現東京都中央区)・概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.2048 138.2529</geo></location>
+        <note>国名・概値。本文の表記は「大日本」(大日本浪華)</note>
+      </place>
+      <place xml:id="sarashina">
+        <placeName>更科</placeName>
+        <location><geo>36.5217 138.125</geo></location>
+        <note>信濃・更級(現長野県千曲市、姨捨の月の名所)・歌枕の伝承地・概値</note>
+      </place>
+      <place xml:id="kiso">
+        <placeName>木曾</placeName>
+        <location><geo>35.84 137.69</geo></location>
+        <note>信濃・木曽(現長野県木曽郡)・概値</note>
+      </place>
+      <place xml:id="france">
+        <placeName>仏国</placeName>
+        <location><geo>46.6 2.5</geo></location>
+        <note>フランス・国名・概値</note>
+      </place>
+      <place xml:id="spain">
+        <placeName>西班牙</placeName>
+        <location><geo>40.0 -4.0</geo></location>
+        <note>スペイン・国名・概値</note>
+      </place>
+      <place xml:id="kikenjo">
+        <placeName>喜見城</placeName>
+        <note>帝釈天の居城とされる忉利天の宮城。仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="gekkyuden">
+        <placeName>月宮殿</placeName>
+        <note>月に在るとされる宮殿。神話的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="gokuraku">
+        <placeName>極楽</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="meido">
+        <placeName>冥土</placeName>
+        <note>仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="shidenoyama">
+        <placeName>死出の山</placeName>
+        <note>冥途にあるとされる山。『大経師昔暦』道行の引用中「越ゆる我身の死出の山」。仏教的世界観上の場所(座標なし)</note>
+      </place>
+      <place xml:id="jigoku">
+        <placeName>地獄</placeName>
+        <note>仏教的世界観上の場所(座標なし)。「紅蓮の井戸堀、焦熱の、地獄のかま塗」</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>海神別荘</head>
+        <p>時。</p>
+        <p>現代。</p>
+        <p>場所。</p>
+        <p>海底の<placeName ref="#rokandono">琅玕殿</placeName>。</p>
+        <p>人物。</p>
+        <p>公子。<persName ref="#okinosozu">沖の僧都</persName>。（年老いたる海坊主）美女。博士。</p>
+        <p>女房。侍女。（七人）黒潮騎士。（多数）</p>
+        <p><ruby><rb>森厳藍碧</rb><rt>しんげんらんぺき</rt></ruby>なる<ruby><rb><placeName ref="#rokandono">琅玕殿</placeName>裡</rb><rt>ろうかんでんり</rt></ruby>。<ruby><rb>黒影</rb><rt>こくえい</rt></ruby>あり。――<persName ref="#okinosozu">沖の<ruby><rb>僧都</rb><rt>そうず</rt></ruby></persName>。</p>
+        <p>僧都　お腰元衆。</p>
+        <p>侍女一　（薄色の洋装したるが<ruby><rb>扉</rb><rt>ドア</rt></ruby>より<ruby><rb>出</rb><rt>い</rt></ruby>づ）はい、はい。これは<ruby><rb>御僧</rb><rt>おそう</rt></ruby>。</p>
+        <p>僧都　や、目覚しく、美しい、<ruby><rb>異</rb><rt>かわ</rt></ruby>った<ruby><rb>扮装</rb><rt>いでたち</rt></ruby>でおいでなさる。</p>
+        <p>侍女一　<ruby><rb>御挨拶</rb><rt>ごあいさつ</rt></ruby>でございます。美しいかどうかは存じませんけれど、異った支度には違いないのでございます。若様、かねてのお望みが<ruby><rb>叶</rb><rt>かな</rt></ruby>いまして、今夜お<ruby><rb>輿入</rb><rt>こしいれ</rt></ruby>のございます。若奥様が、島田のお<ruby><rb>髪</rb><rt>ぐし</rt></ruby>、お振袖と承りましたから、<ruby><rb>私</rb><rt>わたくし</rt></ruby>どもは、余計そのお姿のお目立ち遊ばすように、皆して、かように申合せましたのでございます。</p>
+        <p>僧都　はあ、さてもお似合いなされたが、いずこの浦の風俗じゃろうな。</p>
+        <p>侍女一　度々海の上へお出でなさいますもの、よく御存じでおあんなさいましょうのに。</p>
+        <p>僧都　いや、荒海を切って影を<ruby><rb>顕</rb><rt>あらわ</rt></ruby>すのは<ruby><rb>暴風雨</rb><rt>あらし</rt></ruby>の折から。<ruby><rb>如法</rb><rt>にょほう</rt></ruby>たいてい<ruby><rb>暗夜</rb><rt>やみ</rt></ruby>じゃに因って、見えるのは墓の船に、<ruby><rb>死骸</rb><rt>しがい</rt></ruby>の<ruby><rb>蠢</rb><rt>うごめ</rt></ruby>く<ruby><rb>裸体</rb><rt>はだか</rt></ruby>ばかり。色ある<ruby><rb>女性</rb><rt>にょしょう</rt></ruby>の<ruby><rb>衣</rb><rt>きぬ</rt></ruby>などは<ruby><rb>睫毛</rb><rt>まつげ</rt></ruby>にも<ruby><rb>掛</rb><rt>かか</rt></ruby>りませぬ。さりとも小僧のみぎりはの、<ruby><rb>蒼</rb><rt>あお</rt></ruby>い炎の息を吹いても、<ruby><rb>素奴</rb><rt>しゃつ</rt></ruby>色の白いはないか、袖の<ruby><rb>紅</rb><rt>あか</rt></ruby>いはないか、と胴の<ruby><rb>間</rb><rt>ま</rt></ruby>、<ruby><rb>狭間</rb><rt>はざま</rt></ruby>、帆柱の根、<ruby><rb>錨綱</rb><rt>いかりづな</rt></ruby>の下までも、あなぐり探いたものなれども、<ruby><rb>孫子</rb><rt>まごこ</rt></ruby>は<ruby><rb>措</rb><rt>お</rt></ruby>け、僧都においては、久しく心にも掛けませいで、一向に不案内じゃ。</p>
+        <p>侍女一　（笑う）お<ruby><rb>精進</rb><rt>しょうじん</rt></ruby>でおいで遊ばします。もし、これは、桜貝、<ruby><rb>蘇芳貝</rb><rt>すおうがい</rt></ruby>、いろいろの貝を<ruby><rb>蕊</rb><rt>しべ</rt></ruby>にして、花の波が白く咲きます、その<ruby><rb>渚</rb><rt>なぎさ</rt></ruby>を、青い山、緑の小松に包まれて、大陸の<ruby><rb>婦</rb><rt>おんな</rt></ruby>たちが、夏の頃、百合、<ruby><rb>桔梗</rb><rt>ききょう</rt></ruby>、月見草、夕顔の雪の<ruby><rb>装</rb><rt>よそおい</rt></ruby>などして、<ruby><rb>旭</rb><rt>あさひ</rt></ruby>の光、月影に、<ruby><rb>遥</rb><rt>はるか</rt></ruby>に（<ruby><rb>高濶</rb><rt>こうかつ</rt></ruby>なる<ruby><rb>碧瑠璃</rb><rt>へきるり</rt></ruby>の天井を、髪<ruby><rb>艶</rb><rt>つや</rt></ruby>やかに打仰ぐ）姿を映します。ああ、風情な。美しいと<ruby><rb>視</rb><rt>なが</rt></ruby>めましたものでございますから、<ruby><rb>私</rb><rt>わたくし</rt></ruby>ども皆が、今夜はこの<ruby><rb>服装</rb><rt>なり</rt></ruby>に揃えました。</p>
+        <p>僧都　一段とお見事じゃ。が、朝ほど御機嫌伺いに出ました節は、<ruby><rb>御殿</rb><rt>ごてん</rt></ruby>、お腰元衆、いずれも不断の<ruby><rb>服装</rb><rt>なり</rt></ruby>でおいでなされた。その節は、今宵、あの美女がこれへ輿入の儀はまだ<ruby><rb>極</rb><rt>きま</rt></ruby>らなんだ。じたい人間は決断が遅いに因ってな。……それじゃに、かねてのお<ruby><rb>心掛</rb><rt>こころがけ</rt></ruby>か。<ruby><rb>弥</rb><rt>いや</rt></ruby><ruby><rb>疾</rb><rt>と</rt></ruby>く<ruby><rb>装</rb><rt>なり</rt></ruby>が間に合うたもののう。</p>
+        <p>侍女一　まあ、<ruby><rb>貴老</rb><rt>あなた</rt></ruby>は。<ruby><rb>私</rb><rt>わたくし</rt></ruby>たちこの玉のような<ruby><rb>皆</rb><rt>みんな</rt></ruby>の<ruby><rb>膚</rb><rt>はだ</rt></ruby>は、白い尾花の穂を散らした、山々の秋の<ruby><rb>錦</rb><rt>にしき</rt></ruby>が水に映ると<ruby><rb>同</rb><rt>おんな</rt></ruby>じに、こうと思えば、ついそれなりに、思うまま、身の<ruby><rb>装</rb><rt>よそおい</rt></ruby>の出来ます体でおりますものを。貴老はお忘れなさいましたか。</p>
+        <p>貴老は。……貴老だとて違いはしません。<ruby><rb>緋</rb><rt>ひ</rt></ruby>の<ruby><rb>法衣</rb><rt>ころも</rt></ruby>を召そうと思えば、お思いなさいます、と右左、峯に、<ruby><rb>一本</rb><rt>ひともと</rt></ruby>燃立つような。</p>
+        <p>僧都　ま、ま、分った。（腰を<ruby><rb>屈</rb><rt>かが</rt></ruby>めつつ、<ruby><rb>圧</rb><rt>おさ</rt></ruby>うるがごとく<ruby><rb>掌</rb><rt>たなそこ</rt></ruby>を挙げて制す）何とも相済まぬ儀じゃ。海の<ruby><rb>住居</rb><rt>すまい</rt></ruby>の<ruby><rb>難有</rb><rt>ありがた</rt></ruby>さに<ruby><rb>馴</rb><rt>な</rt></ruby>れて、<ruby><rb>蔭日向</rb><rt>かげひなた</rt></ruby>、雲の<ruby><rb>往来</rb><rt>ゆきき</rt></ruby>に、<ruby><rb>潮</rb><rt>うしお</rt></ruby>の色の変ると同様。<ruby><rb>如意自在</rb><rt>にょいじざい</rt></ruby>心のまま、たちどころに身の<ruby><rb>装</rb><rt>よそおい</rt></ruby>の成る事を忘れていました。</p>
+        <p>なれども、僧都が身は、こうした墨染の<ruby><rb>暗夜</rb><rt>やみ</rt></ruby>こそ<ruby><rb>可</rb><rt>よ</rt></ruby>けれ、なまじ緋の<ruby><rb>法衣</rb><rt>ころも</rt></ruby>など<ruby><rb>絡</rb><rt>まと</rt></ruby>おうなら、ずぶ<ruby><rb>濡</rb><rt>ぬれ</rt></ruby>の<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby>じゃ、<ruby><rb>戸惑</rb><rt>とまどい</rt></ruby>をした<ruby><rb>鱏</rb><rt>えい</rt></ruby>の<ruby><rb>魚</rb><rt>うお</rt></ruby>じゃなどと申そう。<ruby><rb>圧</rb><rt>おし</rt></ruby>も石も利く事ではない。（細く丈長き<ruby><rb>鉄</rb><rt>くろがね</rt></ruby>の<ruby><rb>錨</rb><rt>いかり</rt></ruby>を<ruby><rb>倒</rb><rt>さかしま</rt></ruby>にして携えたる<ruby><rb>杖</rb><rt>つえ</rt></ruby>を、<ruby><rb>軽</rb><rt>かろ</rt></ruby>く突直す。）</p>
+        <p>いや、また忘れてはならぬ。忘れぬ<ruby><rb>前</rb><rt>さき</rt></ruby>に申上げたい儀で<ruby><rb>罷出</rb><rt>まかりで</rt></ruby>た。若様へお取次を頼みましょ。</p>
+        <p>侍女一　<ruby><rb>畏</rb><rt>かしこま</rt></ruby>りました。<ruby><rb>唯今</rb><rt>ただいま</rt></ruby>。……あの、ちょうど<ruby><rb>可</rb><rt>い</rt></ruby>い折に存じます。</p>
+        <p>右の<ruby><rb>方</rb><rt>かた</rt></ruby><ruby><rb>闥</rb><rt>ドア</rt></ruby>を排して<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。</p>
+        <p>僧都　（謹みたる<ruby><rb>体</rb><rt>てい</rt></ruby>にて室内を<ruby><rb>眗</rb><rt>みまわ</rt></ruby>す。）</p>
+        <p>はあ、争われぬ。<ruby><rb>法衣</rb><rt>ころも</rt></ruby>の袖に春がそよぐ。</p>
+        <p>（錨の杖を<ruby><rb>抱</rb><rt>いだ</rt></ruby>きて<ruby><rb>彳</rb><rt>たたず</rt></ruby>む。）</p>
+        <p>公子　（<ruby><rb>衝</rb><rt>つ</rt></ruby>と押す、<ruby><rb>闥</rb><rt>ドア</rt></ruby>を<ruby><rb>排</rb><rt>ひら</rt></ruby>きて、性急に登場す。<ruby><rb>面</rb><rt>おも</rt></ruby>玉のごとく<ruby><rb>﨟</rb><rt>ろう</rt></ruby><ruby><rb>丈</rb><rt>た</rt></ruby>けたり。黒髪を背に<ruby><rb>捌</rb><rt>さば</rt></ruby>く。青地錦の<ruby><rb>直垂</rb><rt>ひたたれ</rt></ruby>、<ruby><rb>黄金</rb><rt>こがね</rt></ruby>づくりの<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>を<ruby><rb>佩</rb><rt>は</rt></ruby>く。上段、一階高き床の端に、端然として立つ。）</p>
+        <p><ruby><rb>爺</rb><rt>じ</rt></ruby>い、見えたか。</p>
+        <p>侍女五人、以前の一人を<ruby><rb>真先</rb><rt>まっさき</rt></ruby>に、すらすらと従い出づ。いずれも洋装。第五の侍女、年最も<ruby><rb>少</rb><rt>わか</rt></ruby>し。二人は床の上、<ruby><rb>公子</rb><rt>こうし</rt></ruby>の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に。二人は床を下りて僧都の前に。第一の侍女はその<ruby><rb>背</rb><rt>うしろ</rt></ruby>に立つ。</p>
+        <p>僧都　は。（<ruby><rb>大床</rb><rt>おおゆか</rt></ruby>に<ruby><rb>跪</rb><rt>ひざまず</rt></ruby>く。控えたる侍女一、<ruby><rb>件</rb><rt>くだん</rt></ruby>の錨の杖を預る）これはこれは、御休息の処を恐入りましてござります。</p>
+        <p>公子　（親しげに）爺い、用か。</p>
+        <p>僧都　<ruby><rb>紺青</rb><rt>こんじょう</rt></ruby>、<ruby><rb>群青</rb><rt>ぐんじょう</rt></ruby>、<ruby><rb>白群</rb><rt>びゃくぐん</rt></ruby>、朱、<ruby><rb>碧</rb><rt>へき</rt></ruby>の御蔵の中より、この度の儀に就きまして、先方へお遣わしになりました、品々の<ruby><rb>類</rb><rt>たぐい</rt></ruby>と、数々を、念のために申上げとうござりまして。</p>
+        <p>公子　（立ちたるまま）おお、あの女の父親に<ruby><rb>遣</rb><rt>や</rt></ruby>った、陸で<ruby><rb>結納</rb><rt>ゆいのう</rt></ruby>とか云うものの事か。</p>
+        <p>僧都　はあ、いや、御聡明なる若様。若様にはお<ruby><rb>覚違</rb><rt>おぼえちが</rt></ruby>いでござります。彼等<ruby><rb>夥間</rb><rt>なかま</rt></ruby>に結納と申すは、親々が縁を結び、<ruby><rb>媒妁人</rb><rt>なこうど</rt></ruby>の手をもち、婚約の祝儀、目録を贈りますでござります。しかるにこの度は、先方の父親が、若様の御支配遊ばす、わたつみの財宝に<ruby><rb>望</rb><rt>のぞみ</rt></ruby>を掛け、もしこの念願の届くにおいては、<ruby><rb>眉目容色</rb><rt>みめきりょう</rt></ruby>、世に<ruby><rb>類</rb><rt>たぐい</rt></ruby>なき一人の娘を、海底へ捧げ奉る段、しかと誓いました。すなわち、彼が望みの宝をお<ruby><rb>遣</rb><rt>つかわ</rt></ruby>しになりましたに因って、是非に及ばず、<ruby><rb>誓言</rb><rt>せいごん</rt></ruby>の通り、娘を波に沈めましたのでござります。されば、お送り遊ばされた数の宝は、彼等が結納と申そうより、俗に女の<ruby><rb>身代</rb><rt>みのしろ</rt></ruby>と云うものにござりますので。</p>
+        <p>公子　（軽く<ruby><rb>頷</rb><rt>うなず</rt></ruby>く）<ruby><rb>可</rb><rt>よし</rt></ruby>、何にしろすこしばかりの事を、別に知らせるには及ばんのに。</p>
+        <p>僧都　いやいや、<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>一枚、<ruby><rb>一草</rb><rt>ひとくさ</rt></ruby>の<ruby><rb>空貝</rb><rt>うつせがい</rt></ruby>とは申せ、僧都が承りました上は、活達なる若様、かような事はお<ruby><rb>気煩</rb><rt>きむず</rt></ruby>かしゅうおいでなさりましょうなれども、<ruby><rb>老</rb><rt>おい</rt></ruby>のしょうがに、お耳に入れねばなりませぬ。お腰元衆もお<ruby><rb>執成</rb><rt>とりなし</rt></ruby>。（五人の侍女に<ruby><rb>目遣</rb><rt>めづかい</rt></ruby>す）<ruby><rb>平</rb><rt>ひら</rt></ruby>にお聞取りを願わしゅう。</p>
+        <p>侍女三　若様、お座へ。</p>
+        <p>公子　（顧みて）<ruby><rb>椅子</rb><rt>いす</rt></ruby>をこちらへ。</p>
+        <p>侍女三、四、両人して白き<ruby><rb>枝珊瑚</rb><rt>えださんご</rt></ruby>の椅子を捧げ、床の<ruby><rb>端近</rb><rt>はしぢか</rt></ruby>に据う。大<ruby><rb>隋円形</rb><rt>だえんけい</rt></ruby>の白き<ruby><rb>琅玕</rb><rt>ろうかん</rt></ruby>の、沈みたる光沢を帯べる<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>、上段の中央にあり。枝のままなる見事なる珊瑚の椅子、紅白二脚、<ruby><rb>紅</rb><rt>あか</rt></ruby>きは花のごとく、白きは霞のごときを、相対して置く。侍女等が<ruby><rb>捧出</rb><rt>ささげい</rt></ruby>でて位置を変えて据えたるは、その白き<ruby><rb>方</rb><rt>かた</rt></ruby>一脚なり。</p>
+        <p>僧都　<ruby><rb>真鯛</rb><rt>まだい</rt></ruby>大小八千枚。<ruby><rb>鰤</rb><rt>ぶり</rt></ruby>、<ruby><rb>鮪</rb><rt>まぐろ</rt></ruby>、ともに二万<ruby><rb>疋</rb><rt>びき</rt></ruby>。<ruby><rb>鰹</rb><rt>かつお</rt></ruby>、<ruby><rb>真那鰹</rb><rt>まながつお</rt></ruby>、<ruby><rb>各</rb><rt>おのおの</rt></ruby>一万本。<ruby><rb>大比目魚</rb><rt>おおひらめ</rt></ruby>五千枚。<ruby><rb>鱚</rb><rt>きす</rt></ruby>、<ruby><rb>魴鮄</rb><rt>ほうぼう</rt></ruby>、<ruby><rb>鯒</rb><rt>こち</rt></ruby>、<ruby><rb>鰷身魚</rb><rt>あいなめ</rt></ruby>、<ruby><rb>目張魚</rb><rt>めばる</rt></ruby>、<ruby><rb>藻魚</rb><rt>もうお</rt></ruby>、合せて七百<ruby><rb>籠</rb><rt>かご</rt></ruby>。<ruby><rb>若布</rb><rt>わかめ</rt></ruby>のその幅六丈、長さ十五<ruby><rb>尋</rb><rt>ひろ</rt></ruby>のもの、百枚<ruby><rb>一巻</rb><rt>ひとまき</rt></ruby>九千連。<ruby><rb>鮟鱇</rb><rt>あんこう</rt></ruby>五十袋。<ruby><rb>虎河豚</rb><rt>とらふぐ</rt></ruby>一頭。大の<ruby><rb>鮹</rb><rt>たこ</rt></ruby><ruby><rb>一番</rb><rt>ひとつがい</rt></ruby>。さて、別にまた、月の<ruby><rb>灘</rb><rt>なだ</rt></ruby>の桃色の枝珊瑚一株、丈八尺。（この分、手にて仕方す）<ruby><rb>周囲</rb><rt>まわり</rt></ruby><ruby><rb>三抱</rb><rt>みかかえ</rt></ruby>の分にござりまして。ええ、月の真珠、花の真珠、雪の真珠、いずれも一寸の<ruby><rb>珠</rb><rt>たま</rt></ruby>三十三<ruby><rb>粒</rb><rt>りゅう</rt></ruby>、八分の珠百五粒、紅宝玉三十<ruby><rb>顆</rb><rt>か</rt></ruby>、<ruby><rb>大</rb><rt>おおき</rt></ruby>さ鶴の卵、粒を揃えて、これは<ruby><rb>碧瑪瑙</rb><rt>あおめのう</rt></ruby>の盆に<ruby><rb>装</rb><rt>かざ</rt></ruby>り、緑宝玉、三百顆、<ruby><rb>孔雀</rb><rt>くじゃく</rt></ruby>の尾の渦巻の数に合せ、紫の<ruby><rb>瑠璃</rb><rt>るり</rt></ruby>の台、五色に透いて輝きまする<ruby><rb>鰐</rb><rt>わに</rt></ruby>の皮三十六枚、<ruby><rb>沙金</rb><rt>さきん</rt></ruby>の<ruby><rb>包</rb><rt>つつみ</rt></ruby>七十<ruby><rb>袋</rb><rt>たい</rt></ruby>。<ruby><rb>量目</rb><rt>はかりめ</rt></ruby>約百万両。<ruby><rb>閻浮檀金</rb><rt>えんぶだごん</rt></ruby>十斤也。<ruby><rb>緞子</rb><rt>どんす</rt></ruby>、<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>、<ruby><rb>綾</rb><rt>あや</rt></ruby>、<ruby><rb>錦</rb><rt>にしき</rt></ruby>、<ruby><rb>牡丹</rb><rt>ぼたん</rt></ruby>、<ruby><rb>芍薬</rb><rt>しゃくやく</rt></ruby>、菊の花、<ruby><rb>黄金色</rb><rt>こんじき</rt></ruby>の<ruby><rb>董</rb><rt>すみれ</rt></ruby>、<ruby><rb>銀覆輪</rb><rt>ぎんぷくりん</rt></ruby>の、月草、露草。</p>
+        <p>侍女一　もしもし、<ruby><rb>唯今</rb><rt>ただいま</rt></ruby>のそれは、あの、残らず、そのお<ruby><rb>娘御</rb><rt>むすめご</rt></ruby>の身の<ruby><rb>代</rb><rt>しろ</rt></ruby>とかにお遣わしの分なのでございますか。</p>
+        <p>僧都　残らず身の代と？……はあ、いかさまな。（心付く）<ruby><rb>不重宝</rb><rt>ぶちょうほう</rt></ruby>。これはこれは<ruby><rb>海松</rb><rt>みる</rt></ruby>ふさの袖に記して覚えのまま、<ruby><rb>潮</rb><rt>うしお</rt></ruby>に乗って、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と読流しました。はて、何から申した事やら、品目の多い処へ、数々ゆえに。ええええ、真鯛大小八千枚。</p>
+        <p>侍女一　鰤、鮪ともに二万疋。鰹、真那鰹<ruby><rb>各</rb><rt>おのおの</rt></ruby>一万本。</p>
+        <p>侍女二　（僧都の前にあり）大比目魚五千枚。鱚、魴鮄、鯒、あいなめ、目ばる、藻魚の類合せて七百籠。</p>
+        <p>侍女三　（公子の背後にあり）若布のその幅六丈、長さ十五尋のもの百枚<ruby><rb>一巻</rb><rt>ひとまき</rt></ruby>九千連。</p>
+        <p>侍女四　（同じく公子の背後に）鮟鱇五十袋、虎河豚一頭、大の鮹<ruby><rb>一番</rb><rt>ひとつがい</rt></ruby>。まあ……（笑う。侍女皆笑う。）</p>
+        <p>僧都　（額の汗を<ruby><rb>拭</rb><rt>ふ</rt></ruby>く）それそれさよう、さよう。</p>
+        <p>公子　（微笑しつつ）笑うな、老人は<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>でいる。</p>
+        <p>侍女五　（最も<ruby><rb>少</rb><rt>わか</rt></ruby>し。<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく公子の背後に附添う。派手に<ruby><rb>美</rb><rt>うるわ</rt></ruby>しき声す）月の灘の桃色の枝珊瑚樹、<ruby><rb>対</rb><rt>つい</rt></ruby>の一株、丈八尺、<ruby><rb>周囲</rb><rt>まわり</rt></ruby><ruby><rb>三抱</rb><rt>みかかえ</rt></ruby>の分。一寸の玉三十三粒……雪の真珠、花の真珠。</p>
+        <p>侍女一　月の真珠。</p>
+        <p>僧都　しばらく。までじゃまでじゃ、までにござる。……桃色の枝珊瑚樹、丈八尺、周囲三抱の分までにござった。（公子に）鶴の卵ほどの紅宝玉、孔雀の渦巻の緑宝玉、青瑪瑙の盆、紫の瑠璃の台。この分は、天なる（仰いで礼拝す）<placeName ref="#gekkyuden">月宮殿</placeName>に<ruby><rb>貢</rb><rt>みつぎ</rt></ruby>のものにござりました。</p>
+        <p>公子　私もそうらしく思って聞いた。僧都、それから後に言われた、その董、露草などは、金銀宝玉の類は云うまでもない、魚類ほどにも、人間が珍重しないものと聞く。が、同じく、あの<ruby><rb>方</rb><rt>かた</rt></ruby>へ遣わしたものか。</p>
+        <p>僧都　綾、錦、牡丹、芍薬、<ruby><rb>縺</rb><rt>もつ</rt></ruby>れも散りもいたしませぬを、老人の<ruby><rb>申条</rb><rt>もうしじょう</rt></ruby>、はや、また<ruby><rb>海松</rb><rt>みる</rt></ruby>のように乱れました。ええええ、その董、露草は、若様、この度の御旅行につき、<ruby><rb>白雪</rb><rt>はくせつ</rt></ruby>の<ruby><rb>竜馬</rb><rt>りゅうめ</rt></ruby>にめされ、<ruby><rb>渚</rb><rt>なぎさ</rt></ruby>を掛けて浦づたい、朝夕の、<ruby><rb>茜</rb><rt>あかね</rt></ruby>、紫、雲の上を山の峰へお<ruby><rb>潜</rb><rt>しの</rt></ruby>びにてお出ましの節、珍しくお手に<ruby><rb>入</rb><rt>い</rt></ruby>りましたを、<ruby><rb>御姉君</rb><rt>おんあねぎみ</rt></ruby>、<persName ref="#otohime"><ruby><rb>乙姫</rb><rt>おとひめ</rt></ruby></persName>様へ御進物の分でござりました。</p>
+        <p>侍女一　姫様は、<ruby><rb>閻浮檀金</rb><rt>えんぶだごん</rt></ruby>の<ruby><rb>一輪挿</rb><rt>いちりんざし</rt></ruby>に、真珠の露でお<ruby><rb>活</rb><rt>い</rt></ruby>け遊ばし、お<ruby><rb>手許</rb><rt>てもと</rt></ruby>をお離しなさいませぬそうにございます。</p>
+        <p>公子　度々は手に入らない。私も大方、姉上に<ruby><rb>進</rb><rt>あ</rt></ruby>げたその事であろうと思った。</p>
+        <p>僧都　御意。娘の親へ遣わしましたは、真鯛より数えまして、珊瑚一対……までに<ruby><rb>止</rb><rt>とど</rt></ruby>まりました。</p>
+        <p>侍女二　海では何ほどの事でもございませんが、受取ります<ruby><rb>陸</rb><rt>おか</rt></ruby>の人には、鯛も比目魚も千と万、少ない数ではございますまいに、<ruby><rb>僅</rb><rt>わずか</rt></ruby>な日の間に、ようお手廻し、お遣わしになりましてございます。</p>
+        <p>僧都　さればその事。一国、一島、津や浦の<ruby><rb>果</rb><rt>はて</rt></ruby>から果を<ruby><rb>一網</rb><rt>ひとあみ</rt></ruby>にもせい、人間<ruby><rb>夥間</rb><rt>なかま</rt></ruby>が、<ruby><rb>大海原</rb><rt>おおうなばら</rt></ruby>から取入れます<ruby><rb>獲</rb><rt>え</rt></ruby>ものというは、貝に<ruby><rb>溜</rb><rt>たま</rt></ruby>った<ruby><rb>雫</rb><rt>しずく</rt></ruby>ほどにいささかなものでござっての、お腰元衆など思うてもみられまい、<ruby><rb>鉤</rb><rt>はり</rt></ruby>の<ruby><rb>尖</rb><rt>さき</rt></ruby>に虫を附けて<ruby><rb>雑魚</rb><rt>ざこ</rt></ruby>一筋を釣るという<ruby><rb>仙人業</rb><rt>せんにんわざ</rt></ruby>をしまするよ。この度の娘の父は、さまでにもなけれども、小船一つで網を打つが、<ruby><rb>海月</rb><rt>くらげ</rt></ruby>ほどにしょぼりと拡げて、泡にも足らぬ小魚を<ruby><rb>掬</rb><rt>しゃく</rt></ruby>う。<ruby><rb>入</rb><rt>いれ</rt></ruby>ものが小さき故に、それが<ruby><rb>希望</rb><rt>のぞみ</rt></ruby>を満しますに、手間の<ruby><rb>入</rb><rt>い</rt></ruby>ること、何ともまだるい。<ruby><rb>鰯</rb><rt>いわし</rt></ruby>を育てて鯨にするより<ruby><rb>歯痒</rb><rt>はがゆ</rt></ruby>い段の<ruby><rb>行止</rb><rt>ゆきどま</rt></ruby>り。（公子に向う）若様は御性急じゃ。早く彼が<ruby><rb>願</rb><rt>ねがい</rt></ruby>を満たいて、<ruby><rb>誓</rb><rt>ちかい</rt></ruby>の美女を取れ、と御意ある。よって、黒潮、赤潮の御手兵をちとばかり動かしましたわ。赤潮の<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>は、炎の稲妻、黒潮の黒い旗は、黒雲の峰を<ruby><rb>築</rb><rt>つ</rt></ruby>いて、沖から<ruby><rb>摚</rb><rt>どう</rt></ruby>と浴びせたほどに、<ruby><rb>一浦</rb><rt>ひとうら</rt></ruby>の津波となって、田畑も家も山へ流いた。片隅の美女の家へ、<ruby><rb>門背戸</rb><rt>かどせど</rt></ruby>かけて、畳天井、<ruby><rb>一斉</rb><rt>いちどき</rt></ruby>に、屋根の上の丘の腹まで運込みました儀でござったよ。</p>
+        <p>侍女三　まあ、お勇ましい。</p>
+        <p>公子　（少し<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>く）勇ましいではない。家畑を押流して、浦のもの等は迷惑をしはしないか。</p>
+        <p>僧都　いや、いや、黒潮と赤潮が、<ruby><rb>密</rb><rt>そ</rt></ruby>と<ruby><rb>爪弾</rb><rt>つまはじ</rt></ruby>きしましたばかり。人命を断つほどではござりませなんだ。もっとも迷惑をせば、いたせ、娘の親が人間同士の<ruby><rb>間</rb><rt>なか</rt></ruby>でさえ、自分ばかりは、思い懸けない海の幸を、<ruby><rb>黄金</rb><rt>こがね</rt></ruby>の山ほど<ruby><rb>掴</rb><rt>つか</rt></ruby>みましたに因って、他の人々の難渋ごときはいささか気にも留めませぬに、海のお<ruby><rb>世子</rb><rt>よとり</rt></ruby>であらせられます若様。人間界の迷惑など、お心に掛けさせますには毛頭当りませぬ儀でございます。</p>
+        <p>公子　（<ruby><rb>頷</rb><rt>うなず</rt></ruby>く）そんなら<ruby><rb>可</rb><rt>よし</rt></ruby>――僧都。</p>
+        <p>僧都　はは。（<ruby><rb>更</rb><rt>あらた</rt></ruby>めて手を<ruby><rb>支</rb><rt>つ</rt></ruby>く。）</p>
+        <p>公子　あれの親は、こちらから遣わした、娘の身の<ruby><rb>代</rb><rt>しろ</rt></ruby>とかいうものに満足をしたであろうか。</p>
+        <p>僧都　御意、満足いたしましたればこそ、当御殿、お求めに従い、美女を沈めました儀にござります。もっとも、真鯛、鰹、真那鰹、その金銀の魚類のみでは、満足をしませなんだが、続いて、三抱え一対の枝珊瑚を、夜の渚に差置きますると、山の<ruby><rb>端</rb><rt>は</rt></ruby>出づる月の光に、真紫に輝きまするを夢のように抱きました時、あれの父親は白砂に<ruby><rb>領伏</rb><rt>ひれふ</rt></ruby>し、波の<ruby><rb>裙</rb><rt>すそ</rt></ruby>を吸いました。あわれ竜神、一命も捧げ奉ると、御恩のほどを<ruby><rb>難有</rb><rt>ありがた</rt></ruby>がりましたのでござります。</p>
+        <p>公子　（微笑す）<ruby><rb>親仁</rb><rt>おやじ</rt></ruby>の命などは御免だな。そんな魂を引取ると、<ruby><rb>海月</rb><rt>くらげ</rt></ruby>が<ruby><rb>殖</rb><rt>ふ</rt></ruby>えて、迷惑をするよ。</p>
+        <p>侍女五　あんな事をおっしゃいます。</p>
+        <p>一同笑う。</p>
+        <p>公子　けれども僧都、そんな事で満足した、人間の<ruby><rb>慾</rb><rt>よく</rt></ruby>は浅いものだね。</p>
+        <p>僧都　まだまだ、あれは深い方でござります。一人娘の身に代えて、海の宝を望みましたは、慾念の<ruby><rb>逞</rb><rt>たくまし</rt></ruby>い故でござりまして。……たかだかは人間同士、<ruby><rb>夥間</rb><rt>なかま</rt></ruby>うちで、白い<ruby><rb>柔</rb><rt>やわらか</rt></ruby>な<ruby><rb>膩身</rb><rt>あぶらみ</rt></ruby>を、炎の燃立つ絹に包んで蒸しながら売り渡すのが、峠の関所かと心得ます。</p>
+        <p>公子　馬鹿だな。（珊瑚の椅子をすッと立つ）恋しい女よ。望めば<ruby><rb>生命</rb><rt>いのち</rt></ruby>でも<ruby><rb>遣</rb><rt>や</rt></ruby>ろうものを。……はは、はは。</p>
+        <p>微笑す。</p>
+        <p>侍女四　お思われ遊ばした娘御は、<ruby><rb>天地</rb><rt>あめつち</rt></ruby>かけて、波かけて、お仕合せでおいで遊ばします。</p>
+        <p>侍女一　早くお着き<ruby><rb>遊</rb><rt>あそば</rt></ruby>せば<ruby><rb>可</rb><rt>よ</rt></ruby>うございます。<ruby><rb>私</rb><rt>わたくし</rt></ruby>どももお<ruby><rb>待遠</rb><rt>まちどお</rt></ruby>に存じ上げます。</p>
+        <p>公子　道中の様子を見よう、旅の様子を見よう。（<ruby><rb>闥</rb><rt>ドア</rt></ruby>の外に向って呼ぶ）おいおい、居間の鏡を<ruby><rb>寄越</rb><rt>よこ</rt></ruby>せ。（闥開く。侍女六、七、二人、赤地の錦の<ruby><rb>蔽</rb><rt>おおい</rt></ruby>を掛けたる大なる姿見を捧げ出づ。）</p>
+        <p>僧都も御覧。</p>
+        <p>僧都　失礼ながら。（<ruby><rb>膝行</rb><rt>しっこう</rt></ruby>して進む。侍女等、姿見を<ruby><rb>卓子</rb><rt>テエプル</rt></ruby>の上に据え、錦の蔽を<ruby><rb>展</rb><rt>ひら</rt></ruby>く。侍女等、卓子の端の一方に集る。）</p>
+        <p>公子　（姿見の<ruby><rb>面</rb><rt>おも</rt></ruby>を<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>し、僧都を見返る）あれだ、あれだ。あの一点の光がそれだ。お前たちも見ないか。</p>
+        <p>舞台転ず。しばし暗黒、<ruby><rb>寂寞</rb><rt>せきばく</rt></ruby>として<ruby><rb>波濤</rb><rt>はとう</rt></ruby>の音聞ゆ。やがて<ruby><rb>一個</rb><rt>ひとつ</rt></ruby>、花白く葉の青き<ruby><rb>蓮華燈籠</rb><rt>れんげどうろう</rt></ruby>、漂々として波に<ruby><rb>漾</rb><rt>ただよ</rt></ruby>えるがごとく<ruby><rb>顕</rb><rt>あらわ</rt></ruby>る。続いて花の赤き同じ燈籠、<ruby><rb>中空</rb><rt>なかぞら</rt></ruby>のごとき高処に出づ。また出づ、やや低し。なお見ゆ、少しく高し。その数<ruby><rb>五個</rb><rt>いつつ</rt></ruby>になる時、累々たる波の舞台を<ruby><rb>露</rb><rt>あらわ</rt></ruby>す。美女。<ruby><rb>毛巻島田</rb><rt>けまきしまだ</rt></ruby>に結う。白の振袖、<ruby><rb>綾</rb><rt>あや</rt></ruby>の帯、<ruby><rb>紅</rb><rt>くれない</rt></ruby>の<ruby><rb>長襦袢</rb><rt>ながじゅばん</rt></ruby>、胸に水晶の<ruby><rb>数珠</rb><rt>じゅず</rt></ruby>をかけ、襟に両袖を占めて、波の上に、雪のごとき<ruby><rb>竜馬</rb><rt>りゅうめ</rt></ruby>に乗せらる。およそ手綱の丈を隔てて、一人<ruby><rb>下髪</rb><rt>さげがみ</rt></ruby>の女房。<ruby><rb>旅扮装</rb><rt>たびいでたち</rt></ruby>。素足、<ruby><rb>小袿</rb><rt>こうちぎ</rt></ruby>に<ruby><rb>褄</rb><rt>つま</rt></ruby>端折りて、片手に<ruby><rb>市女笠</rb><rt>いちめがさ</rt></ruby>を携え、片手に蓮華燈籠を提ぐ。第一点の<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の影はこれなり。<ruby><rb>黒潮騎士</rb><rt>こくちょうきし</rt></ruby>、美女の白竜馬をひしひしと囲んで両側二列を造る。およそ十人。皆<ruby><rb>崑崙奴</rb><rt>くろんぼ</rt></ruby>の形相。手に手に、すくすくと<ruby><rb>槍</rb><rt>やり</rt></ruby>を立つ。穂先白く<ruby><rb>晃々</rb><rt>きらきら</rt></ruby>として、<ruby><rb>氷柱</rb><rt>つらら</rt></ruby><ruby><rb>倒</rb><rt>さかしま</rt></ruby>に黒髪を縫う。あるものは燈籠を槍に結ぶ、<ruby><rb>灯</rb><rt>ともしび</rt></ruby>の高きはこれなり。あるものは手にし、あるものは腰にす。</p>
+        <p>女房　<ruby><rb>貴女</rb><rt>あなた</rt></ruby>、お<ruby><rb>草臥</rb><rt>くたびれ</rt></ruby>でございましょう。一息、お<ruby><rb>休息</rb><rt>やすみ</rt></ruby>なさいますか。</p>
+        <p>美女　（夢見るようにその瞳を<ruby><rb>睜</rb><rt>みひら</rt></ruby>く）ああ、（歎息す）もし、<ruby><rb>誰方</rb><rt>どなた</rt></ruby>ですか。……私の<ruby><rb>身体</rb><rt>からだ</rt></ruby>は足を空に、（馬の背に<ruby><rb>裳</rb><rt>もすそ</rt></ruby>を<ruby><rb>掻緊</rb><rt>かいし</rt></ruby>む）<ruby><rb>倒</rb><rt>さかさま</rt></ruby>に落ちて落ちて、波に沈んでいるのでしょうか。</p>
+        <p>女房　いいえ、お美しいお<ruby><rb>髪</rb><rt>ぐし</rt></ruby>一筋、風にも波にもお<ruby><rb>縺</rb><rt>もつ</rt></ruby>れはなさいません。何でお<ruby><rb>身体</rb><rt>からだ</rt></ruby>が倒などと、そんな事がございましょう。</p>
+        <p>美女　いつか、いつですか、<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>か、今夜か、<ruby><rb>前</rb><rt>さき</rt></ruby>の世ですか。私が一人、<ruby><rb>楫</rb><rt>かじ</rt></ruby>も<ruby><rb>櫓</rb><rt>ろ</rt></ruby>もない、舟に、<ruby><rb>筵</rb><rt>むしろ</rt></ruby>に乗せられて、波に流されました時、父親の約束で、海の中へ捕られて<ruby><rb>行</rb><rt>ゆ</rt></ruby>く、私へ供養のためだと云って、船の左右へ、<ruby><rb>前後</rb><rt>あとさき</rt></ruby>に、波のまにまに散って浮く……蓮華燈籠が流れました。</p>
+        <p>女房　水に目のお<ruby><rb>馴</rb><rt>な</rt></ruby>れなさいません、貴女には道しるべ、また土産にもと存じまして、これが、（手に<ruby><rb>翳</rb><rt>かざ</rt></ruby>す）その燈籠でございます。</p>
+        <p>美女　まあ、<ruby><rb>灯</rb><rt>あかり</rt></ruby>も消えずに……</p>
+        <p>女房　燃えた火の消えますのは、油の尽きる、風の吹く、<ruby><rb>陸</rb><rt>おか</rt></ruby>ばかりの事でございます。一度、この国へ受取りますと、ここには風が吹きません。ただ花の香の、ほんのりと通うばかりでございます。紙の細工も<ruby><rb>珠</rb><rt>たま</rt></ruby>に替って、葉の青いのは、<ruby><rb>翡翠</rb><rt>ひすい</rt></ruby>の<ruby><rb>琅玕</rb><rt>ろうかん</rt></ruby>、<ruby><rb>花片</rb><rt>はなびら</rt></ruby>の紅白は、<ruby><rb>真玉</rb><rt>まだま</rt></ruby>、<ruby><rb>白珠</rb><rt>しらたま</rt></ruby>、紅宝玉。燃ゆる<ruby><rb>灯</rb><rt>ひ</rt></ruby>も、またたきながら消えない星でございます。御覧遊ばせ、貴女。お召ものが濡れましたか。お<ruby><rb>髪</rb><rt>ぐし</rt></ruby>も乱れはしますまい。何で、お<ruby><rb>身体</rb><rt>からだ</rt></ruby>が<ruby><rb>倒</rb><rt>さかさま</rt></ruby>でございましょう。</p>
+        <p>美女　最後に<ruby><rb>一目</rb><rt>ひとめ</rt></ruby>、<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>の浦の近い峰に、月を見たと思いました。それぎり、底へ引くように船が沈んで、私は波に落ちたのです。ただ幻に、その燈籠の様な<ruby><rb>蒼</rb><rt>あお</rt></ruby>い影を見て、胸を離れて遠くへ<ruby><rb>行</rb><rt>ゆ</rt></ruby>く、自分の身の魂か、導く鬼火かと思いましたが、ふと見ますと、<ruby><rb>前途</rb><rt>ゆくて</rt></ruby>にも、あれあれ、<ruby><rb>遥</rb><rt>はるか</rt></ruby>の下と思う処に、月が一輪、おなじ光で見えますもの。</p>
+        <p>女房　ああ、（望む）あの光は。いえ。月影ではございません。</p>
+        <p>美女　でも、<ruby><rb>貴方</rb><rt>あなた</rt></ruby>、雲が見えます、雪のような、空が見えます、<ruby><rb>瑠璃色</rb><rt>るりいろ</rt></ruby>の。そして、<ruby><rb>真白</rb><rt>まっしろ</rt></ruby>な絹糸のような光が<ruby><rb>射</rb><rt>さ</rt></ruby>します。</p>
+        <p>女房　その雲は波、空は水。一輪の月と見えますのは、これから貴女がお<ruby><rb>出</rb><rt>いで</rt></ruby>遊ばす、海の御殿でございます。あれへ、お迎え申すのです。</p>
+        <p>美女　そして。参って、私の<ruby><rb>身体</rb><rt>からだ</rt></ruby>は、どうなるのでございましょうねえ。</p>
+        <p>女房　ほほほ、（笑う）何事も申しますまい。ただお嬉しい事なのです。おめでとう存じます。</p>
+        <p>美女　あの、<ruby><rb>捨小舟</rb><rt>すておぶね</rt></ruby>に流されて、海の<ruby><rb>贄</rb><rt>にえ</rt></ruby>に取られて<ruby><rb>行</rb><rt>ゆ</rt></ruby>く、あの、（<ruby><rb>眗</rb><rt>みまわ</rt></ruby>す）これが、嬉しい事なのでしょうか。めでたい事なのでしょうかねえ。</p>
+        <p>女房　（再び笑う）お国ではいかがでございましょうか。私たちが<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>では、もうこの上ない嬉しい、めでたい事なのでございますもの。</p>
+        <p>美女　あすこまで、<ruby><rb>道程</rb><rt>みちのり</rt></ruby>は？</p>
+        <p>女房　お国でたとえは<ruby><rb>煩</rb><rt>むず</rt></ruby>かしい。……おお、五十三次と承ります、<placeName ref="#tokaido">東海道</placeName>を<ruby><rb>十度</rb><rt>とたび</rt></ruby>ずつ、三百度、<ruby><rb>往還</rb><rt>ゆきかえ</rt></ruby>りを繰返して、三千度いたしますほどでございましょう。</p>
+        <p>美女　ええ、そんなに。</p>
+        <p>女房　めした竜馬は風よりも早し、お道筋は<ruby><rb>黄金</rb><rt>こがね</rt></ruby>の欄干、白銀の波のお廊下、ただ花の香りの中を、やがてお着きなさいます。</p>
+        <p>美女　潮風、<ruby><rb>磯</rb><rt>いそ</rt></ruby>の香、<ruby><rb>海松</rb><rt>みる</rt></ruby>、<ruby><rb>海藻</rb><rt>かじめ</rt></ruby>の、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>を刺す<ruby><rb>硫黄</rb><rt>いおう</rt></ruby>の<ruby><rb>臭気</rb><rt>におい</rt></ruby>と思いのほか、ほんに、<ruby><rb>清</rb><rt>すず</rt></ruby>しい、<ruby><rb>佳</rb><rt>い</rt></ruby>い<ruby><rb>薫</rb><rt>かおり</rt></ruby>、（<ruby><rb>柔</rb><rt>やわらか</rt></ruby>に袖を動かす）……ですが、時々、<ruby><rb>悚然</rb><rt>ぞっと</rt></ruby>する、<ruby><rb>腥</rb><rt>なまぐさ</rt></ruby>い香のしますのは？……</p>
+        <p>女房　人間の魂が、貴女を慕うのでございます。<ruby><rb>海月</rb><rt>くらげ</rt></ruby>が寄るのでございます。</p>
+        <p>美女　人の魂が、海月と云って？</p>
+        <p>女房　海に参ります醜い人間の魂は、<ruby><rb>皆</rb><rt>みんな</rt></ruby>、海月になって、ふわふわさまようて<ruby><rb>歩行</rb><rt>ある</rt></ruby>きますのでございます。</p>
+        <p>黒潮騎士　（口々に）――<ruby><rb>煩</rb><rt>うるさ</rt></ruby>い。しっしっ。――（と、ものなき竜馬の周囲を<ruby><rb>呵</rb><rt>か</rt></ruby>す。）</p>
+        <p>美女　まあ、<ruby><rb>情</rb><rt>なさけ</rt></ruby>ない、お<ruby><rb>恥</rb><rt>はずか</rt></ruby>しい。（袖をもって<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>蔽</rb><rt>おお</rt></ruby>う。）</p>
+        <p>女房　いえ、貴女は、あの御殿の若様の、<ruby><rb>新夫人</rb><rt>にいおくさま</rt></ruby>でいらっしゃいます、もはや人間ではありません。</p>
+        <p>美女　ええ。（袖を落す。――舞台転ず。<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>になる。）――</p>
+        <p>女房　（声のみして）急ぎましょう。美しい方を見ると、<ruby><rb>黒鰐</rb><rt>くろわに</rt></ruby>、<ruby><rb>赤鮫</rb><rt>あかざめ</rt></ruby>が襲います。騎馬が前後を守護しました。お<ruby><rb>憂慮</rb><rt>きづかい</rt></ruby>はありませんが、いぎ参ると、<ruby><rb>斬合</rb><rt>きりあ</rt></ruby>い<ruby><rb>攻合</rb><rt>せめあ</rt></ruby>う、修羅の<ruby><rb>巷</rb><rt>ちまた</rt></ruby>をお目に懸けねばなりません。――騎馬の方々、急いで下さい。</p>
+        <p>燈籠一つ<ruby><rb>行</rb><rt>ゆ</rt></ruby>き、続いて一つ行く。<ruby><rb>漂蕩</rb><rt>ひょうとう</rt></ruby>する趣して、高く低く奥の<ruby><rb>方</rb><rt>かた</rt></ruby>深く行く。</p>
+        <p>舞台<ruby><rb>燦然</rb><rt>さんぜん</rt></ruby>として明るし、<ruby><rb>前</rb><rt>ぜん</rt></ruby>の<placeName ref="#rokandono">琅玕殿</placeName><ruby><rb>顕</rb><rt>あらわ</rt></ruby>る。</p>
+        <p>公子、椅子の位置を<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>に正しく直して掛けて、姿見の<ruby><rb>傍</rb><rt>かたわら</rt></ruby>にあり。向って右の<ruby><rb>上座</rb><rt>かみざ</rt></ruby>。左の<ruby><rb>方</rb><rt>かた</rt></ruby>に赤き<ruby><rb>枝珊瑚</rb><rt>えださんご</rt></ruby>の椅子、人なくしてただ据えらる。その椅子を<ruby><rb>斜</rb><rt>ななめ</rt></ruby>に<ruby><rb>下</rb><rt>さが</rt></ruby>りて、<persName ref="#okinosozu">沖の僧都</persName>、この度は腰掛けてあり。黒き珊瑚、小形なる椅子を用いる。おなじ小形の椅子に、向って正面に一人、ほぼ唐代の儒の服装したる、<ruby><rb>髯</rb><rt>ひげ</rt></ruby>黒き一<ruby><rb>人</rb><rt>にん</rt></ruby>あり。<ruby><rb>博士</rb><rt>はかせ</rt></ruby>なり。</p>
+        <p>侍女七人、花のごとくその間を装い立つ。</p>
+        <p>公子　博士、お<ruby><rb>呼立</rb><rt>よびたて</rt></ruby>をしました。</p>
+        <p>博士　（敬礼す。）</p>
+        <p>公子　これを御覧なさい。（姿見の<ruby><rb>面</rb><rt>おもて</rt></ruby>を示す。）</p>
+        <p><ruby><rb>千仭</rb><rt>せんじん</rt></ruby>の<ruby><rb>崕</rb><rt>がけ</rt></ruby>を<ruby><rb>累</rb><rt>かさ</rt></ruby>ねた、漆のような波の間を、<ruby><rb>幽</rb><rt>かすか</rt></ruby>に<ruby><rb>蒼</rb><rt>あお</rt></ruby>い<ruby><rb>灯</rb><rt>ともしび</rt></ruby>に照らされて、白馬の背に<ruby><rb>手綱</rb><rt>たづな</rt></ruby>したは、この度迎え取るおもいものなんです。陸に<ruby><rb>獅子</rb><rt>しし</rt></ruby>、虎の狙うと<ruby><rb>同一</rb><rt>おなじ</rt></ruby>に、<ruby><rb>入道鰐</rb><rt>にゅうどうわに</rt></ruby>、<ruby><rb>坊主鮫</rb><rt>ぼうずざめ</rt></ruby>の一類が、美女と見れば、途中に<ruby><rb>襲撃</rb><rt>おそいう</rt></ruby>って、黒髪を吸い、白き乳を裂き、美しい血を<ruby><rb>呑</rb><rt>の</rt></ruby>もうとするから、守備のために旅行さきで、手にあり合せただけ、少数の黒潮騎士を附添わせた。<ruby><rb>渠等</rb><rt>かれら</rt></ruby>は<ruby><rb>白刃</rb><rt>しらは</rt></ruby>を揃えている。</p>
+        <p>博士　<ruby><rb>至極</rb><rt>しごく</rt></ruby>のお<ruby><rb>計</rb><rt>はから</rt></ruby>いに心得まするが。</p>
+        <p>公子　ところが、敵に備うるここの守備を出払わしたから不用心じゃ、危険であろう、と僧都が言われる。……それは恐れん、私が居れば<ruby><rb>仔細</rb><rt>しさい</rt></ruby>ない。けれども、また、僧都の言われるには、<ruby><rb>白衣</rb><rt>びゃくえ</rt></ruby>に<ruby><rb>緋</rb><rt>ひ</rt></ruby>の<ruby><rb>襲</rb><rt>かさね</rt></ruby>した<ruby><rb>女子</rb><rt>おなご</rt></ruby>を馬に乗せて、黒髪を<ruby><rb>槍尖</rb><rt>やりさき</rt></ruby>で縫ったのは、かの国で引廻しとか<ruby><rb>称</rb><rt>とな</rt></ruby>えた罪人の姿に似ている、私の<ruby><rb>手許</rb><rt>てもと</rt></ruby>に迎入るるものを、<ruby><rb>不祥</rb><rt>ふしょう</rt></ruby>じゃ、<ruby><rb>忌</rb><rt>いま</rt></ruby>わしいと言うのです。</p>
+        <p>事実不祥なれば、途中の保護は他にいくらも手段があります。それは構わないが、私はいささかも不祥と思わん、忌わしいと思わない。</p>
+        <p>これを見ないか。私の領分に入った女の顔は、白い玉が月の光に包まれたと<ruby><rb>同一</rb><rt>おなじ</rt></ruby>に、いよいよ清い。眉は美しく、瞳は澄み、唇の紅は<ruby><rb>冴</rb><rt>さ</rt></ruby>えて、いささかも<ruby><rb>窶</rb><rt>やつ</rt></ruby>れない。憂えておらん。清らかな<ruby><rb>衣</rb><rt>きもの</rt></ruby>を着、<ruby><rb>新</rb><rt>あらた</rt></ruby>に<ruby><rb>梳</rb><rt>くしけず</rt></ruby>って、花に露の<ruby><rb>点滴</rb><rt>したた</rt></ruby>る<ruby><rb>装</rb><rt>よそおい</rt></ruby>して、馬に騎した姿は、かの国の花野の<ruby><rb>丈</rb><rt>たけ</rt></ruby>を、錦の山の懐に<ruby><rb>抽</rb><rt>ぬ</rt></ruby>く……<ruby><rb>歩行</rb><rt>あるく</rt></ruby>より、車より、<ruby><rb>駕籠</rb><rt>かご</rt></ruby>に乗ったより、一層<ruby><rb>鮮麗</rb><rt>あざやか</rt></ruby>なものだと思う。その上、選抜した<ruby><rb>慓悍</rb><rt>ひょうかん</rt></ruby>な黒潮騎士の精鋭<ruby><rb>等</rb><rt>ども</rt></ruby>に、長槍をもって<ruby><rb>四辺</rb><rt>あたり</rt></ruby>を払わせて通るのです。得意思うべしではないのですか。</p>
+        <p>僧都　（<ruby><rb>頻</rb><rt>しきり</rt></ruby>に<ruby><rb>頭</rb><rt>つむり</rt></ruby>を傾く。）</p>
+        <p>公子　引廻しと聞けば、恥を見せるのでしょう、苦痛を与えるのであろう。槍で囲み、旗を立て、淡く清く装った得意の人を馬に乗せて<ruby><rb>市</rb><rt>いち</rt></ruby>を練って、やがて刑場に送って殺した処で、――殺されるものは平凡に<ruby><rb>疾病</rb><rt>やまい</rt></ruby>で死するより愉快でしょう。――それが何の刑罰になるのですか。陸と海と、国が違い、人情が違っても、まさか、そんな刑罰はあるまいと想う。僧都は、うろ覚えながら<ruby><rb>確</rb><rt>たしか</rt></ruby>に記憶に残ると言われる。……<ruby><rb>貴下</rb><rt>あなた</rt></ruby>をお呼立した次第です。ちょっとお<ruby><rb>験</rb><rt>しら</rt></ruby>べを願いましょうか。</p>
+        <p>博士　<ruby><rb>仰聞</rb><rt>おおせき</rt></ruby>けの記憶は<ruby><rb>私</rb><rt>わたくし</rt></ruby>にもありますで。しかし、念のために験べまするで。ええ、陸上一切の刑法の記録でありましょうか、それとも。</p>
+        <p>公子　面倒です、あとはどうでも<ruby><rb>可</rb><rt>い</rt></ruby>い。ただ<ruby><rb>女子</rb><rt>おなご</rt></ruby>を馬に乗せ、槍を立てて引廻したという、そんな事があったかという、それだけです。</p>
+        <p>博士　正史でなく、小説、<ruby><rb>浄瑠璃</rb><rt>じょうるり</rt></ruby>の中を見ましょうで。時の人情と風俗とは、史書よりもむしろこの方が適当でありますので。（金光<ruby><rb>燦爛</rb><rt>さんらん</rt></ruby>たる<ruby><rb>洋綴</rb><rt>ようとじ</rt></ruby>の書を<ruby><rb>展</rb><rt>ひら</rt></ruby>く。）</p>
+        <p>公子　（<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>に腰を掛く）たいそう気の利いた書物ですね。</p>
+        <p>博士　これは、<placeName ref="#france">仏国</placeName>の大帝<persName ref="#naou"><ruby><rb>奈翁</rb><rt>ナポレオン</rt></ruby></persName>が、<date when="1808">西暦千八百八年</date>、<placeName ref="#spain"><ruby><rb>西班牙</rb><rt>スペイン</rt></ruby></placeName>遠征の途に上りました時、かねて世界有数の読書家。必要によって当時の図書館長<persName ref="#barbier">バルビール</persName>に命じて<ruby><rb>製</rb><rt>つく</rt></ruby>らせました、<ruby><rb>函入</rb><rt>はこいり</rt></ruby>新装の、一千巻、<ruby><rb>一架</rb><rt>ひとたな</rt></ruby>の内容は、宗教四十巻、叙事詩四十巻、戯曲四十巻、その他の詩篇六十巻。歴史六十巻、小説百巻、と申しまするデュオデシモ<ruby><rb>形</rb><rt>がた</rt></ruby>と申す有名な版本の事を……お聞及びなさいまして、<ruby><rb>御姉君</rb><rt>おあねぎみ</rt></ruby>、<persName ref="#otohime">乙姫</persName>様が御工夫を遊ばしました。<ruby><rb>蓮</rb><rt>はす</rt></ruby>の糸、一筋を、およそ枚数千頁に薄く織拡げて、一万枚が<ruby><rb>一折</rb><rt>ひとおり</rt></ruby>、一百二十折を合せて一冊に<ruby><rb>綴</rb><rt>と</rt></ruby>じましたものでありまして、この国の微妙なる光に<ruby><rb>展</rb><rt>ひら</rt></ruby>きますると、<ruby><rb>森羅万象</rb><rt>しんらばんしょう</rt></ruby>、人類をはじめ、動植物、鉱物、一切の元素が、<ruby><rb>一々</rb><rt>ひとつ</rt></ruby>ずつ微細なる活字となって、しかも、<ruby><rb>各々</rb><rt>おのおの</rt></ruby>五色の<ruby><rb>輝</rb><rt>かがやき</rt></ruby>を放ち、名詞、代名詞、動詞、助動詞、主客、<ruby><rb>句読</rb><rt>くとう</rt></ruby>、いずれも個々別々、七彩に照って、かく開きました<ruby><rb>真白</rb><rt>まっしろ</rt></ruby>な<ruby><rb>枚</rb><rt>ペエジ</rt></ruby>の上へ、自然と、染め出さるるのでありまして。</p>
+        <p>公子　<ruby><rb>姉上</rb><rt>あねうえ</rt></ruby>が、それを。――さぞ、御秘蔵のものでしょう。</p>
+        <p>博士　御秘蔵ながら、若様の御書物蔵へも、<ruby><rb>整然</rb><rt>ちゃん</rt></ruby>と姫様がお備えつけでありますので。</p>
+        <p>公子　では、私の所有ですか。</p>
+        <p>博士　若様はこの冊子と同じものを、<ruby><rb>瑪瑙</rb><rt>めのう</rt></ruby>に青貝の<ruby><rb>蒔絵</rb><rt>まきえ</rt></ruby>の書棚、五百<ruby><rb>架</rb><rt>たな</rt></ruby>、御所有でいらせられまする次第であります。</p>
+        <p>公子　姉があって<ruby><rb>幸福</rb><rt>しあわせ</rt></ruby>です。どれ、（取って<ruby><rb>披</rb><rt>ひら</rt></ruby>く）これは……ただ白紙だね。</p>
+        <p>博士　は、恐れながら、それぞれの予備の知識がありませんでは、自然のその色彩ある活字は、ペエジの上には写り兼ねるのでございます。</p>
+        <p>公子　恥入るね。</p>
+        <p>博士　いやいや、若様は御勇武でいらせられます。<ruby><rb>入道鰐</rb><rt>にゅうどうわに</rt></ruby>、<ruby><rb>黒鮫</rb><rt>くろざめ</rt></ruby>の襲いまする節は、御訓練の黒潮、赤潮騎士、御手の<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>でのうては御退けになりまする次第には参らぬのでありまして。けれども、姉姫様の御心づくし、節々は<ruby><rb>御閲読</rb><rt>ごえつどく</rt></ruby>の儀をお勧め申まするので。</p>
+        <p>僧都　もろともに、お勧め申上げますでござります。</p>
+        <p>公子　（<ruby><rb>頷</rb><rt>うなず</rt></ruby>く）まあ、今の引廻しの事を見て下さい。</p>
+        <p>博士　<ruby><rb>確</rb><rt>たしか</rt></ruby>に。（書を披く）手近に浄瑠璃にありました。ああ、これにあります。……若様、これは<placeName ref="#nihon">大日本</placeName><placeName ref="#naniwa"><ruby><rb>浪華</rb><rt>なにわ</rt></ruby></placeName>の町人、<persName ref="#daikyoji-isharu"><ruby><rb>大経師以春</rb><rt>だいきょうじいしゅん</rt></ruby></persName>の年若き女房、名だたる美女の<persName ref="#osan">おさん</persName>。<ruby><rb>手代</rb><rt>てだい</rt></ruby><persName ref="#moemon"><ruby><rb>茂右衛門</rb><rt>もえもん</rt></ruby></persName>と不義<ruby><rb>顕</rb><rt>あらわ</rt></ruby>れ、すなわち引廻し<ruby><rb>礫</rb><rt>はりつけ</rt></ruby>になりまする処を、記したのでありまして。</p>
+        <p>公子　お読み。</p>
+        <p>博士　（朗読す）――<ruby><rb>紅蓮</rb><rt>ぐれん</rt></ruby>の井戸堀、<ruby><rb>焦熱</rb><rt>しょうねつ</rt></ruby>の、<placeName ref="#jigoku">地獄</placeName>のかま<ruby><rb>塗</rb><rt>ぬり</rt></ruby>よしなやと、急がぬ道をいつのまに、越ゆる我身の<placeName ref="#shidenoyama">死出の山</placeName>、死出の<ruby><rb>田長</rb><rt>たおさ</rt></ruby>の田がりよし、<ruby><rb>野辺</rb><rt>のべ</rt></ruby>より先を見渡せば、過ぎし<ruby><rb>冬至</rb><rt>とうじ</rt></ruby>の冬枯の、<ruby><rb>木</rb><rt>こ</rt></ruby>の<ruby><rb>間</rb><rt>ま</rt></ruby>木の間にちらちらと、ぬき身の<ruby><rb>槍</rb><rt>やり</rt></ruby>の恐しや、――</p>
+        <p>公子　（姿見を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>きつつ、且つ聴きつつ）ああ、いくらか似ている。</p>
+        <p>博士　――また<ruby><rb>冷返</rb><rt>ひえかえ</rt></ruby>る夕嵐、雪の松原、この世から、かかる<ruby><rb>苦患</rb><rt>くげん</rt></ruby>におう<ruby><rb>亡日</rb><rt>もうにち</rt></ruby>、島田乱れてはらはらはら、顔にはいつもはんげしょう、縛られし手の冷たさは、我身一つの寒の<ruby><rb>入</rb><rt>いり</rt></ruby>、涙ぞ指の爪とりよし、袖に氷を結びけり。……</p>
+        <p>侍女等、傾聴す。</p>
+        <p>公子　ただ、いい姿です、美しい形です。世間はそれでその女の罪を責めたと思うのだろうか。</p>
+        <p>博士　まず、ト見えまするので。</p>
+        <p>僧都　さようでございます。</p>
+        <p>公子　馬に<ruby><rb>騎</rb><rt>の</rt></ruby>った女は、殺されても恋が<ruby><rb>叶</rb><rt>かな</rt></ruby>い、思いが届いて、さぞ本望であろうがね。</p>
+        <p>僧都　――袖に氷を結びけり。涙などと、歎き悲しんだようにござります。</p>
+        <p>公子　それは、その引廻しを見る、見物の心ではないのか。私には分らん。（<ruby><rb>頭</rb><rt>かぶり</rt></ruby>を<ruby><rb>掉</rb><rt>ふ</rt></ruby>る。）博士――まだ他に例があるのですか。</p>
+        <p>博士　（朗読す）……世の<ruby><rb>哀</rb><rt>あわれ</rt></ruby>とぞなりにける。今日は<placeName ref="#kanda">神田</placeName>の<placeName ref="#kuzurebashi">くずれ橋</placeName>に恥をさらし、または<placeName ref="#yotsuya">四谷</placeName>、<placeName ref="#shiba">芝</placeName>、<placeName ref="#asakusa">浅草</placeName>、<placeName ref="#nihonbashi">日本橋</placeName>に人こぞりて、見るに<ruby><rb>惜</rb><rt>おし</rt></ruby>まぬはなし。これを思うに、かりにも人は<ruby><rb>悪</rb><rt>あし</rt></ruby>き事をせまじきものなり。天これを許したまわぬなり。……</p>
+        <p>公子　（眉を<ruby><rb>顰</rb><rt>ひそ</rt></ruby>む。――侍女等<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく不審の<ruby><rb>面色</rb><rt>おももち</rt></ruby>す。）</p>
+        <p>博士　……この女思込みし事なれば、身の<ruby><rb>窶</rb><rt>やつ</rt></ruby>るる事なくて、毎日ありし昔のごとく、黒髪を結わせて<ruby><rb>美</rb><rt>うる</rt></ruby>わしき風情。……</p>
+        <p>公子　（色解く。侍女等、眉をひらく。）</p>
+        <p>博士　中略をいたします。……聞く人一しおいたわしく、その姿を見おくりけるに、<ruby><rb>限</rb><rt>かぎり</rt></ruby>ある命のうち、<ruby><rb>入相</rb><rt>いりあい</rt></ruby>の鐘つくころ、<ruby><rb>品</rb><rt>しな</rt></ruby>かわりたる道芝の<ruby><rb>辺</rb><rt>ほとり</rt></ruby>にして、その身は憂き煙となりぬ。人皆いずれの道にも煙はのがれず、殊に不便はこれにぞありける。――これで、<placeName ref="#suzugamori">鈴ヶ森</placeName>で<ruby><rb>火刑</rb><rt>ひあぶり</rt></ruby>に処せられまするまでを、確か<placeName ref="#edo">江戸</placeName>中<ruby><rb>棄札</rb><rt>すてふだ</rt></ruby>に<ruby><rb>槍</rb><rt>やり</rt></ruby>を立てて引廻した<ruby><rb>筈</rb><rt>はず</rt></ruby>と心得まするので。</p>
+        <p>公子　分りました。それは<persName ref="#oshichi">お七</persName>という娘でしょう。私は大すきな女なんです。御覧なさい。どこに当人が歎き<ruby><rb>悲</rb><rt>かなし</rt></ruby>みなぞしたのですか。人に<ruby><rb>惜</rb><rt>おし</rt></ruby>まれ<ruby><rb>可哀</rb><rt>あわれ</rt></ruby>がられて、女それ自身は大満足で、<ruby><rb>自若</rb><rt>じじゃく</rt></ruby>として火に焼かれた。得意想うべしではないのですか。なぜそれが刑罰なんだね。もし刑罰とすれば、<ruby><rb>恵</rb><rt>めぐみ</rt></ruby>の<ruby><rb>杖</rb><rt>しもと</rt></ruby>、<ruby><rb>情</rb><rt>なさけ</rt></ruby>の<ruby><rb>鞭</rb><rt>むち</rt></ruby>だ。実際その罪を罰しようとするには、そのまま無事に置いて、平凡に<ruby><rb>愚図愚図</rb><rt>ぐずぐず</rt></ruby>に<ruby><rb>生存</rb><rt>いきなが</rt></ruby>らえさせて、<ruby><rb>皺</rb><rt>しわ</rt></ruby>だらけの<ruby><rb>婆</rb><rt>ばば</rt></ruby>にして、その娘を終らせるが<ruby><rb>可</rb><rt>い</rt></ruby>いと、私は思う。……分けて、現在、殊にその<persName ref="#oshichi">お七</persName>のごときは、姉上が海へお引取りになった。刑場の<placeName ref="#suzugamori">鈴ヶ森</placeName>は自然海に近かった。姉上は御覧になった。鉄の鎖は手足を<ruby><rb>繋</rb><rt>つな</rt></ruby>いだ、<ruby><rb>燃草</rb><rt>もえぐさ</rt></ruby>は夕霜を置残してその肩を包んだ。煙は雪の振袖をふすべた。炎は<ruby><rb>緋鹿子</rb><rt>ひがのこ</rt></ruby>を燃え抜いた。緋の<ruby><rb>牡丹</rb><rt>ぼたん</rt></ruby>が崩れるより、<ruby><rb>虹</rb><rt>にじ</rt></ruby>が燃えるより美しかった。恋の火の白熱は、<ruby><rb>凝</rb><rt>こ</rt></ruby>って<ruby><rb>白玉</rb><rt>はくぎょく</rt></ruby>となる、その<ruby><rb>膚</rb><rt>はだえ</rt></ruby>を、氷った<ruby><rb>雛芥子</rb><rt>ひなげし</rt></ruby>の花に包んだ。姉の手の甘露が沖を曇らして注いだのだった。そのまま海の底へお引取りになって、現に、姉上の宮殿に、今も十七で、<ruby><rb>紅</rb><rt>くれない</rt></ruby>の珊瑚の中に、<ruby><rb>結綿</rb><rt>ゆいわた</rt></ruby>の花を咲かせているのではないか。</p>
+        <p>男は死ななかった。<ruby><rb>存命</rb><rt>ながら</rt></ruby>えて坊主になって老い朽ちた。娘のために、姉上はそれさえお引取りになった。けれども、その魂は、途中で<ruby><rb>牡</rb><rt>おす</rt></ruby>の<ruby><rb>海月</rb><rt>くらげ</rt></ruby>になった。――時々未練に娘を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて、赤潮に追払われて、醜く、ふらふらと<ruby><rb>生白</rb><rt>なまじろ</rt></ruby>く<ruby><rb>漾</rb><rt>ただよ</rt></ruby>うて<ruby><rb>失</rb><rt>う</rt></ruby>する。あわれなものだ。</p>
+        <p>娘は<ruby><rb>幸福</rb><rt>しあわせ</rt></ruby>ではないのですか。火も水も、火は虹となり、水は滝となって、彼の生命を飾ったのです。<ruby><rb>抜身</rb><rt>ぬきみ</rt></ruby>の槍の刑罰が馬の左右に、その<ruby><rb>誉</rb><rt>ほまれ</rt></ruby>を輝かすと<ruby><rb>同一</rb><rt>おんなじ</rt></ruby>に。――博士いかがですか、僧都。</p>
+        <p>博士　しかし、しかし若様、<ruby><rb>私</rb><rt>わたくし</rt></ruby>は慎重にお答えをいたしまする。身はこの職にありながら、事実、人間界の心も情も、まだいささかも分らぬのでありまして。若様、<ruby><rb>唯今</rb><rt>ただいま</rt></ruby>の<ruby><rb>仰</rb><rt>おお</rt></ruby>せは、それは、すべて海の中にのみ<ruby><rb>留</rb><rt>とど</rt></ruby>まりまするが。</p>
+        <p>公子　（穏和に<ruby><rb>頷</rb><rt>うなず</rt></ruby>く）姉上も、以前お分りにならぬと言われた。その上、<ruby><rb>貴下</rb><rt>あなた</rt></ruby>がお分りにならなければこれは誰にも分らないのです。私にも分らない。しかし事情も違う。彼を迎える、道中のこの（また姿見を<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>す）馬上の姿は、別に不祥ではあるまいと思う。</p>
+        <p>僧都　唯今、<ruby><rb>仰</rb><rt>おお</rt></ruby>せ聞けられ承りまする内に、<ruby><rb>条理</rb><rt>すじみち</rt></ruby>は<ruby><rb>弁</rb><rt>わきま</rt></ruby>えず、僧都にも分らぬことのみではござりますが、ただ、黒潮の<ruby><rb>抜身</rb><rt>ぬきみ</rt></ruby>で囲みました段は、別に忌わしい事ではござりませんように、老人にも、その合点参りましてござります。</p>
+        <p>公子　<ruby><rb>可</rb><rt>よし</rt></ruby>、しかし僧都、ここに蓮華燈籠の意味も分った。が、一つ<ruby><rb>見馴</rb><rt>みな</rt></ruby>れないものが見えるぞ。女が、黒髪と、あの雪の襟との間に――胸に珠を掛けた、あれは何かね。</p>
+        <p>僧都　はあ。（<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>に伸上る）はは、いかさま、いや、若様。あれは水晶の<ruby><rb>数珠</rb><rt>じゆず</rt></ruby>にございます。海に沈みまする覚悟につき、<placeName ref="#meido"><ruby><rb>冥土</rb><rt>めいど</rt></ruby></placeName>に参る心得のため、<ruby><rb>檀那寺</rb><rt>だんなでら</rt></ruby>の<ruby><rb>和尚</rb><rt>おしょう</rt></ruby>が授けましたのでござります。</p>
+        <p>公子　<placeName ref="#meido">冥土</placeName>とは？……それこそ<ruby><rb>不埒</rb><rt>ふらち</rt></ruby>だ。そして<ruby><rb>仇光</rb><rt>あだびか</rt></ruby>りがする、あれは……水晶か。</p>
+        <p>博士　水晶とは申す条、近頃は専ら<ruby><rb>硝子</rb><rt>ビイドロ</rt></ruby>を用いますので。</p>
+        <p>公子　（一笑す）私の恋人ともあろうものが、無ければ<ruby><rb>可</rb><rt>い</rt></ruby>い。が、<ruby><rb>硝子</rb><rt>ビイドロ</rt></ruby>とは何事ですか。金剛石、また真珠の揃うたのが可い。……博士、贈ってしかるべき<ruby><rb>頸飾</rb><rt>えりかざり</rt></ruby>をお<ruby><rb>検</rb><rt>しら</rt></ruby>べ下さい。</p>
+        <p>博士　<ruby><rb>畏</rb><rt>かしこま</rt></ruby>りました。</p>
+        <p>公子　そして<ruby><rb>指環</rb><rt>ゆびわ</rt></ruby>の珠の色も怪しい、お前たちどう見たか。</p>
+        <p>侍女一　近頃は、かんてらの灯の<ruby><rb>露店</rb><rt>ほしみせ</rt></ruby>に、<ruby><rb>紅宝玉</rb><rt>ルビイ</rt></ruby>、<ruby><rb>緑宝玉</rb><rt>エメラルド</rt></ruby>と申して、貝を<ruby><rb>鬻</rb><rt>ひさ</rt></ruby>ぐと承ります。</p>
+        <p>公子　お前たちの化粧の泡が、波に流れて<ruby><rb>渚</rb><rt>なぎさ</rt></ruby>に散った、あの貝が宝石か。</p>
+        <p>侍女二　<ruby><rb>錦襴</rb><rt>きんらん</rt></ruby>の服を着けて、青い<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby>を<ruby><rb>被</rb><rt>かぶ</rt></ruby>りました、立派な<ruby><rb>玉商人</rb><rt>たまあきんど</rt></ruby>の売りますものも、<ruby><rb>擬</rb><rt>にせ</rt></ruby>が多いそうにございます。</p>
+        <p>公子　博士、ついでに指環を贈ろう。僧都、すぐに出向うて、遠路であるが、途中、早速、<ruby><rb>硝子</rb><rt>ビイドロ</rt></ruby>とその<ruby><rb>擬</rb><rt>まが</rt></ruby>い<ruby><rb>珠</rb><rt>たま</rt></ruby>を取棄てさして下さい。お<ruby><rb>老寄</rb><rt>としより</rt></ruby>に、御苦労ながら。</p>
+        <p>僧都　（苦笑す）若様には、<ruby><rb>新夫人</rb><rt>にいおくさま</rt></ruby>の、まだ、海にお<ruby><rb>馴</rb><rt>な</rt></ruby>れなさらず、御到着の遅いばかり気になされて、老人が、ここに形を消せば、瞬く間ものう、お姿見の中の御馬の前に映りまする<ruby><rb>神通</rb><rt>じんずう</rt></ruby>を、お忘れなされて、老寄に苦労などと、心外な御意を蒙りまするわ。</p>
+        <p>公子　ははは、（無邪気に笑う）失礼をしました。</p>
+        <p>博士、僧都、<ruby><rb>一揖</rb><rt>いちゆう</rt></ruby>して廻廊より退場す。侍女等<ruby><rb>慇懃</rb><rt>いんぎん</rt></ruby>に見送る。</p>
+        <p>少し窮屈であったげな。</p>
+        <p>侍女等親しげに皆その前後に<ruby><rb>斉眉</rb><rt>かしず</rt></ruby>き寄る。</p>
+        <p>性急な私だ。――女を待つ<ruby><rb>間</rb><rt>ま</rt></ruby>の<ruby><rb>心遣</rb><rt>こころやり</rt></ruby>にしたい。誰か、あの国の歌を知っておらんか。</p>
+        <p>侍女三　存じております。<placeName ref="#naniwa"><ruby><rb>浪花津</rb><rt>なにわづ</rt></ruby></placeName>に咲くやこの花<ruby><rb>冬籠</rb><rt>ふゆごもり</rt></ruby>、今を春へと咲くやこの花。</p>
+        <p>侍女四　若様、<ruby><rb>私</rb><rt>わたくし</rt></ruby>も存じております。<placeName ref="#asakayama">浅香山</placeName>を。</p>
+        <p>公子　いや、そんなのではない。（博士がおきたる書を<ruby><rb>披</rb><rt>ひら</rt></ruby>きつつ）女の国の<placeName ref="#tokaido">東海道</placeName>、道中の唄だ。何とか云うのだった。この書はいくらか覚えがないと、文字が見えないのだそうだ。（<ruby><rb>呟</rb><rt>つぶや</rt></ruby>く）姉上は貴重な、しかし、少しあてっこすりの書をお<ruby><rb>拵</rb><rt>こしら</rt></ruby>えになったよ。ああ、何とか云った、<placeName ref="#tokaido">東海道</placeName>の。</p>
+        <p>侍女五　五十三次のでございましょう、<ruby><rb>私</rb><rt>わたくし</rt></ruby>が少し存じております。</p>
+        <p>公子　歌うてみないか。</p>
+        <p>侍女五　はい。（朗かに優しくあわれに唄う。）</p>
+        <p>都路は<ruby><rb>五十路</rb><rt>いそじ</rt></ruby>あまりの三つの宿、……</p>
+        <p>公子　おお、それだ、字書のように、江戸紫で、都路と<ruby><rb>標目</rb><rt>みだし</rt></ruby>が出た。（<ruby><rb>展</rb><rt>ひら</rt></ruby>く）あとを。</p>
+        <p>侍女五　……時得て咲くや<placeName ref="#edo">江戸</placeName>の花、浪<ruby><rb>静</rb><rt>しずか</rt></ruby>なる<placeName ref="#shinagawa">品川</placeName>や、やがて<ruby><rb>越来</rb><rt>こえく</rt></ruby>る<placeName ref="#kawasaki">川崎</placeName>の、<ruby><rb>軒端</rb><rt>のきば</rt></ruby>ならぶる<placeName ref="#kanagawa">神奈川</placeName>は、早や<placeName ref="#hodogaya">程ヶ谷</placeName>に程もなく、暮れて<placeName ref="#totsuka">戸塚</placeName>に宿るらむ。紫<ruby><rb>匂</rb><rt>にお</rt></ruby>う<placeName ref="#fujisawa">藤沢</placeName>の、<ruby><rb>野面</rb><rt>のおも</rt></ruby>に続く<placeName ref="#hiratsuka">平塚</placeName>も、もとのあわれは<placeName ref="#oiso"><ruby><rb>大磯</rb><rt>おおいそ</rt></ruby></placeName>か。<ruby><rb>蛙</rb><rt>かわず</rt></ruby>鳴くなる<placeName ref="#odawara">小田原</placeName>は。……（<ruby><rb>極悪</rb><rt>きまりわる</rt></ruby>げに）……もうあとは忘れました。</p>
+        <p>公子　<ruby><rb>可</rb><rt>よし</rt></ruby>、ここに緑の活字が、白い雲の<ruby><rb>枚</rb><rt>ペエジ</rt></ruby>に出た。――<placeName ref="#hakone">箱根</placeName>を越えて<placeName ref="#izu">伊豆</placeName>の海、<placeName ref="#mishima">三島</placeName>の里の神垣や――さあ、忘れた所は教えてやろう。この歌で、五十三次の宿を覚えて、お前たち、あの<ruby><rb>道中双六</rb><rt>どうちゅうすごろく</rt></ruby>というものを遊んでみないか。<ruby><rb>上</rb><rt>あが</rt></ruby>りは<placeName ref="#kyoto">京都</placeName>だ。姉の御殿に近い。誰か一人上って、双六の済む時分、ちょうど、この女は（姿見を見つつ）着くであろう。一番上りのものには、<ruby><rb>瑪瑙</rb><rt>めのう</rt></ruby>の<ruby><rb>莢</rb><rt>さや</rt></ruby>に、紅宝玉の実を<ruby><rb>装</rb><rt>かざ</rt></ruby>った、あの造りものの<ruby><rb>吉祥果</rb><rt>きっしょうか</rt></ruby>を<ruby><rb>遣</rb><rt>や</rt></ruby>る。絵は直ぐに間に合ぬ。この<ruby><rb>室</rb><rt>へや</rt></ruby>を五十三に割って双六の目に合せて、一人ずつ<ruby><rb>身体</rb><rt>からだ</rt></ruby>を進めるが<ruby><rb>可</rb><rt>よ</rt></ruby>かろう。……<ruby><rb>賽</rb><rt>さい</rt></ruby>が要る、持って来い。</p>
+        <p>（侍女六七、うつむいてともに微笑す）――どうした。</p>
+        <p>侍女六　姿見をお取寄せ遊ばしました時。</p>
+        <p>侍女七　二人して盤の双六をしておりましたので、賽は持っておりますのでございます。</p>
+        <p>公子　おもしろい。向うの廻廊の端へ集まれ。そして順になって始めるが<ruby><rb>可</rb><rt>い</rt></ruby>い。</p>
+        <p>侍女七　床へ振りましょうでございますか。</p>
+        <p>公子　心あって招かないのに来た、賽にも魂がある、<ruby><rb>寄越</rb><rt>よこ</rt></ruby>せ。（受取る）<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>の上へ私が投げよう。お前たち一から七まで、目に従うて順に動くが<ruby><rb>可</rb><rt>い</rt></ruby>い。さあ、<ruby><rb>集</rb><rt>あつま</rt></ruby>れ。</p>
+        <p>（侍女七人、いそいそと、続いて廻廊のはずれに集り、<ruby><rb>貴女</rb><rt>あなた</rt></ruby>は一。私は二。こう口々に楽しげに<ruby><rb>取定</rb><rt>とりき</rt></ruby>め、勇みて賽を待つ。）</p>
+        <p><ruby><rb>可</rb><rt>い</rt></ruby>いか、（片手に書を持ち、片手に賽を投ぐ）――一は三、<placeName ref="#kanagawa">かな川</placeName>へ。（侍女一人進む）二は一、<placeName ref="#shinagawa">品川</placeName>まで。（侍女一人また進む）三は五だ、<placeName ref="#totsuka">戸塚</placeName>へ<ruby><rb>行</rb><rt>ゆ</rt></ruby>け。</p>
+        <p>（かくして順々に繰返し次第に進む。第五の侍女、年最も少きが一人衆を離れて賽の目に乗り、正面突当りなる窓際に進み、他と、<ruby><rb>間</rb><rt>あわい</rt></ruby>隔る。公子。これより<ruby><rb>前</rb><rt>さき</rt></ruby>、姿見を見詰めて、賽の目と宿の数を<ruby><rb>算</rb><rt>かぞ</rt></ruby>え<ruby><rb>淀</rb><rt>よど</rt></ruby>む。……この時、うかとしたる<ruby><rb>体</rb><rt>てい</rt></ruby>に書を落す。）</p>
+        <p>まだ、誰も上らないか。</p>
+        <p>侍女一　やっと一人<placeName ref="#tenryugawa">天竜川</placeName>まで参りました。</p>
+        <p>公子　ああ、まだるっこい。賽を二つ一所に振ろうか。（手にしながら姿見に見入る。侍女等、<ruby><rb>等</rb><rt>ひとし</rt></ruby>く<ruby><rb>其方</rb><rt>そなた</rt></ruby>を凝視す。）</p>
+        <p>侍女五　きゃっ。（叫ぶ。<ruby><rb>隙</rb><rt>ひま</rt></ruby>なし。その姿、窓の外へ<ruby><rb>裳</rb><rt>もすそ</rt></ruby>を引いて<ruby><rb>颯</rb><rt>さっ</rt></ruby>と消ゆ）ああれえ。</p>
+        <p>侍女等、口々に、あれ、あれ、<ruby><rb>鮫</rb><rt>さめ</rt></ruby>が、鮫が、入道鮫が、と立乱れ騒ぎ狂う。</p>
+        <p>公子　入道鮫が、何、（窓に<ruby><rb>衝</rb><rt>つ</rt></ruby>と寄る。）</p>
+        <p>侍女一　ああ、黒鮫が三百ばかり。</p>
+        <p>侍女二　取巻いて、群りかかって。</p>
+        <p>侍女三　あれ、入道が口に<ruby><rb>銜</rb><rt>くわ</rt></ruby>えた。</p>
+        <p>公子　<ruby><rb>外道</rb><rt>げどう</rt></ruby>、外道、その女を返せ、外道。（<ruby><rb>叱咜</rb><rt>しった</rt></ruby>しつつ、窓より出でんとす。）</p>
+        <p>侍女等<ruby><rb>縋</rb><rt>すが</rt></ruby>り<ruby><rb>留</rb><rt>とど</rt></ruby>む。</p>
+        <p>侍女四　軽々しい、若様。</p>
+        <p>公子　放せ。あれ見い。外道の口の間から、女の髪が<ruby><rb>溢</rb><rt>こぼ</rt></ruby>れて落ちる。やあ、胸へ、乳へ、<ruby><rb>牙</rb><rt>きば</rt></ruby>が喰入る。ええ、油断した。……骨も筋も<ruby><rb>断</rb><rt>き</rt></ruby>れような。ああ、手を<ruby><rb>悶</rb><rt>もだ</rt></ruby>える、<ruby><rb>裳</rb><rt>もすそ</rt></ruby>を<ruby><rb>煽</rb><rt>あお</rt></ruby>る。</p>
+        <p>侍女六　いいえ、若様、私たち御殿の女は、<ruby><rb>身</rb><rt>からだ</rt></ruby>は綿よりも柔かです。</p>
+        <p>侍女七　<ruby><rb>蓮</rb><rt>はす</rt></ruby>の糸を<ruby><rb>束</rb><rt>つか</rt></ruby>ねましたようですから、<ruby><rb>鰐</rb><rt>わに</rt></ruby>の牙が、脊筋と<ruby><rb>鳩尾</rb><rt>みずおち</rt></ruby>へ<ruby><rb>噛合</rb><rt>かみあ</rt></ruby>いましても、薄紙<ruby><rb>一重</rb><rt>ひとえ</rt></ruby>透きます内は、血にも肉にも障りません。</p>
+        <p>侍女三　入道も、一類も、色を<ruby><rb>漁</rb><rt>あさ</rt></ruby>るのでございます。<ruby><rb>生命</rb><rt>いのち</rt></ruby>はしばらく助りましょう。</p>
+        <p>侍女四　その<ruby><rb>中</rb><rt>うち</rt></ruby>に、その中に。まあ、お静まり遊ばして。</p>
+        <p>公子　いや、俺の力は弱いもののためだ。<ruby><rb>生命</rb><rt>いのち</rt></ruby>に掛けて取返す。――<ruby><rb>鎧</rb><rt>よろい</rt></ruby>を寄越せ。</p>
+        <p>侍女二人<ruby><rb>衝</rb><rt>つ</rt></ruby>と出で、引返して、二人して、一領の鎧を捧げ、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>より<ruby><rb>颯</rb><rt>さっ</rt></ruby>と肩に投掛く。</p>
+        <p>公子、上へ引いて、<ruby><rb>頸</rb><rt>うなじ</rt></ruby>よりつらなりたる<ruby><rb>兜</rb><rt>かぶと</rt></ruby>を頂く。<ruby><rb>角</rb><rt>つの</rt></ruby>ある毒竜、<ruby><rb>凄</rb><rt>すさま</rt></ruby>じき<ruby><rb>頭</rb><rt>かしら</rt></ruby>となる。その頭を頂く時に、侍女等、鎧の<ruby><rb>裾</rb><rt>すそ</rt></ruby>を<ruby><rb>捌</rb><rt>さば</rt></ruby>く。<ruby><rb>外套</rb><rt>がいとう</rt></ruby>のごとく背より垂れて、紫の<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>、<ruby><rb>金色</rb><rt>こんじき</rt></ruby>の斑点連り輝く。</p>
+        <p>公子、また袖を取って肩よりして自ら<ruby><rb>喉</rb><rt>のど</rt></ruby>に結ぶ、この結びめ、左右一双の毒竜の爪なり。迅速に一縮す。立直るや否や、<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>を抜いて、頭上に<ruby><rb>翳</rb><rt>かざ</rt></ruby>し、ハタと窓外を<ruby><rb>睨</rb><rt>にら</rt></ruby>む。</p>
+        <p>侍女六人、<ruby><rb>斉</rb><rt>ひと</rt></ruby>しくその左右に折敷き、手に手に<ruby><rb>匕首</rb><rt>あいくち</rt></ruby>を抜連れて<ruby><rb>晃々</rb><rt>きらきら</rt></ruby>と敵に構う。</p>
+        <p>外道、<ruby><rb>退</rb><rt>ひ</rt></ruby>くな。（<ruby><rb>凝</rb><rt>じつ</rt></ruby>と<ruby><rb>視</rb><rt>み</rt></ruby>て、剣の刃を下に引く）<ruby><rb>虜</rb><rt>とりこ</rt></ruby>を離した。受取れ。</p>
+        <p>侍女一　鎧をめしたばっかりで、御威徳を恐れて引きました。</p>
+        <p>侍女二　長う太く、<ruby><rb>数百</rb><rt>すひゃく</rt></ruby>の鮫のかさなって、<ruby><rb>蜈蚣</rb><rt>むかで</rt></ruby>のように見えたのが、ああ、ちりぢりに、ちりぢりに。</p>
+        <p>侍女三　めだかのように<ruby><rb>遁</rb><rt>に</rt></ruby>げて<ruby><rb>行</rb><rt>ゆ</rt></ruby>きます。</p>
+        <p>公子　おお、ちょうど黒潮等が帰って来た、帰った。</p>
+        <p>侍女四　ほんに、おつかい帰りの姉さんが、とりこを抱取って下すった。</p>
+        <p>公子　介抱してやれ。お前たちは出迎え。</p>
+        <p>侍女三人ずつ、一方は<ruby><rb>闥</rb><rt>とびら</rt></ruby>のうちへ。一方は廻廊に退場。</p>
+        <p>公子、<ruby><rb>真中</rb><rt>まんなか</rt></ruby>に、すっくと立ち、静かに<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>を納めて、<ruby><rb>右手</rb><rt>めて</rt></ruby>なる<ruby><rb>白珊瑚</rb><rt>しろさんご</rt></ruby>の椅子に<ruby><rb>凭</rb><rt>よ</rt></ruby>る。騎士五人廻廊まで登場。</p>
+        <p>騎士一同　（<ruby><rb>槍</rb><rt>やり</rt></ruby>を伏せて、<ruby><rb>裾</rb><rt>うずくま</rt></ruby>り、同音に呼ぶ）若様。</p>
+        <p>公子　おお、帰ったか。</p>
+        <p>騎士一　もっての外な、今ほどは。</p>
+        <p>公子　何でもない、私は無事だ、皆御苦労だったな。</p>
+        <p>騎士一同　はッ。</p>
+        <p>公子　途中まで出向ったろう、僧都はどうしたか。</p>
+        <p>騎士一　あとの我ら<ruby><rb>夥間</rb><rt>なかま</rt></ruby>を率いて、入道鮫を追掛けて参りました。</p>
+        <p>公子　よい相手だ、戦闘は<ruby><rb>観</rb><rt>み</rt></ruby>ものであろう。――皆は休むが<ruby><rb>可</rb><rt>い</rt></ruby>い。</p>
+        <p>騎士　槍は<ruby><rb>鞘</rb><rt>さや</rt></ruby>に納めますまい、このまま御門を堅めまするわ。</p>
+        <p>公子　さまでにせずとも大事ない、休め。</p>
+        <p>騎士等、礼拝して退場。侍女一、登場。</p>
+        <p>侍女一　御安心遊ばしまし、<ruby><rb>疵</rb><rt>きず</rt></ruby>を受けましたほどでもございません。ただ、<ruby><rb>酷</rb><rt>ひど</rt></ruby>く驚きまして。</p>
+        <p>公子　<ruby><rb>可愛相</rb><rt>かわいそう</rt></ruby>に、よく介抱してやれ。</p>
+        <p>侍女一　二人が附添っております、（廻廊を見込む）ああ、もう御廊下まで。（公子のさしずにより、姿見に錦の<ruby><rb>蔽</rb><rt>おおい</rt></ruby>を掛け、<ruby><rb>闥</rb><rt>とびら</rt></ruby>に<ruby><rb>入</rb><rt>い</rt></ruby>る。）</p>
+        <p>美女。<ruby><rb>先達</rb><rt>せんだつ</rt></ruby>の女房に、片手、手を<ruby><rb>曳</rb><rt>ひ</rt></ruby>かれて登場。姿を<ruby><rb>粛</rb><rt>しずか</rt></ruby>に、深く<ruby><rb>差俯向</rb><rt>さしうつむ</rt></ruby>き、面影やややつれたれども、さまで<ruby><rb>悪怯</rb><rt>わるび</rt></ruby>れざる態度、<ruby><rb>徐</rb><rt>おもむろ</rt></ruby>に廻廊を進みて、床を上段に昇る。昇る時も、<ruby><rb>裾捌</rb><rt>すそさば</rt></ruby>き<ruby><rb>静</rb><rt>しずか</rt></ruby>なり。</p>
+        <p>侍女三人、燈籠<ruby><rb>二個</rb><rt>ふたつ</rt></ruby>ずつ二人、一つを一人、<ruby><rb>五個</rb><rt>いつつ</rt></ruby>を提げて附添い出で、一人々々、廻廊の<ruby><rb>廂</rb><rt>ひさし</rt></ruby>に<ruby><rb>架</rb><rt>か</rt></ruby>け、そのまま引返す。燈籠を侍女等の差置き果つるまでに、女房は、美女をその上段、<ruby><rb>紅</rb><rt>あか</rt></ruby>き枝珊瑚の椅子まで導く順にてありたし。女房、謹んで公子に礼して、美女に椅子を教う。</p>
+        <p>女房　お掛け遊ばしまし。</p>
+        <p>美女、据置かるる<ruby><rb>状</rb><rt>さま</rt></ruby>に椅子に掛く。女房はその<ruby><rb>裳</rb><rt>もすそ</rt></ruby>に<ruby><rb>跪居</rb><rt>ついい</rt></ruby>る。</p>
+        <p>美女、うつむきたるまましばし、皆無言。やがて顔を上げて、正しく公子と見向ふ。瞳を据えて<ruby><rb>瞬</rb><rt>まばた</rt></ruby>きせず。――<ruby><rb>間</rb><rt>ま</rt></ruby>。</p>
+        <p>公子　よく見えた。（無造作に、座を立って、<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>の<ruby><rb>周囲</rb><rt>まわり</rt></ruby>に近づき、手を取らんと<ruby><rb>衝</rb><rt>つ</rt></ruby>と<ruby><rb>腕</rb><rt>かいな</rt></ruby>を伸ばす。美女、崩るるがごとくに椅子をはずれ、床に伏す。）</p>
+        <p>女房　どうなさいました、<ruby><rb>貴女</rb><rt>あなた</rt></ruby>、どうなさいました。</p>
+        <p>美女　（声細く、されども判然）はい、……覚悟しては来ましたけれど、余りと言えば、<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しゅうございますもの。</p>
+        <p>女房　（心付く）おお、若様。その<ruby><rb>鎧</rb><rt>よろい</rt></ruby>をお解き遊ばせ。お驚きなさいますのもごもっともでございます。</p>
+        <p>公子　解いても<ruby><rb>可</rb><rt>い</rt></ruby>い、（結び目に手を掛け、思慮す）が、解かんでも<ruby><rb>可</rb><rt>よ</rt></ruby>かろう。……最初に見た目はどこまでも<ruby><rb>附絡</rb><rt>つきまと</rt></ruby>う。（美女に）<ruby><rb>貴女</rb><rt>あなた</rt></ruby>、おい、貴女、これを恐れては<ruby><rb>不可</rb><rt>いか</rt></ruby>ん、私はこれあるがために、強い。これあるがために力があり威がある。今も既にこれに因って、めしつかう女の、入道鮫に<ruby><rb>噛</rb><rt>か</rt></ruby>まれたのを助けたのです。</p>
+        <p>美女　（やや<ruby><rb>面</rb><rt>おもて</rt></ruby>を上ぐ）お召使が鮫の口に、やっぱり、そんな<ruby><rb>可恐</rb><rt>おそろし</rt></ruby>い処なんでございますか。</p>
+        <p>公子　はははは、（笑う）貴女、敵のない国が、世界のどこにあるんですか。<ruby><rb>仇</rb><rt>あだ</rt></ruby>は至る処に満ちている――ただ<ruby><rb>一人</rb><rt>いちにん</rt></ruby>の娘を捧ぐ、……海の幸を賜われ――貴女の親は、既に貴女の仇なのではないか。ただその敵に勝てば<ruby><rb>可</rb><rt>い</rt></ruby>いのだ。私は、この強さ、力、威あるがために勝つ。<ruby><rb>閨</rb><rt>ねや</rt></ruby>にただ二人ある時でも私はこれを脱ぐまいと思う。私の心は貴女を愛して、私の鎧は、敵から、仇から、世界から貴女を守護する。弱いもののために強いんです。毒竜の<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>は<ruby><rb>絡</rb><rt>まと</rt></ruby>い、爪は<ruby><rb>抱</rb><rt>いだ</rt></ruby>き、<ruby><rb>角</rb><rt>つの</rt></ruby>は枕してもいささかも貴女の身は<ruby><rb>傷</rb><rt>きずつ</rt></ruby>けない。ともにこの鎧に包まるる内は、貴女は海の女王なんだ。放縦に大胆に、<ruby><rb>不羈</rb><rt>ふき</rt></ruby>、<ruby><rb>専横</rb><rt>せんおう</rt></ruby>に、心のままにして差支えない。鱗に、爪に、角に、一糸掛けない<ruby><rb>白身</rb><rt>はくしん</rt></ruby>を<ruby><rb>抱</rb><rt>いだ</rt></ruby>かれ包まれて、<ruby><rb>渡津海</rb><rt>わたつみ</rt></ruby>の広さを散歩しても、あえて世に<ruby><rb>憚</rb><rt>はばか</rt></ruby>る事はない。誰の目にも触れない。人は<ruby><rb>指</rb><rt>ゆびさし</rt></ruby>をせん。時として見るものは、沖のその影を、真珠の光と見る。<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>すものは、<placeName ref="#kikenjo"><ruby><rb>喜見城</rb><rt>きけんじょう</rt></ruby></placeName>の<ruby><rb>幻景</rb><rt>まぼろし</rt></ruby>に迷うのです。</p>
+        <p>女の身として、優しいもの、<ruby><rb>媚</rb><rt>こび</rt></ruby>あるもの、従うものに慕われて、それが何の本懐です。私は鱗をもって、角をもって、爪をもって愛するんだ。……鎧は脱ぐまい、と思う。（<ruby><rb>従容</rb><rt>しょうよう</rt></ruby>として椅子に戻る。）</p>
+        <p>美女　（起直り、会釈す）……父へ、海の幸をお授け下さいました、津波のお強さ、船を覆して、ここへ、遠い海の中をお連れなすった、お力。道すがらはまたお<ruby><rb>使者</rb><rt>つかい</rt></ruby>で、金剛石のこの<ruby><rb>襟飾</rb><rt>えりかざり</rt></ruby>、宝玉のこの指環、（嬉しげに見ゆ）<ruby><rb>貴方</rb><rt>あなた</rt></ruby>の御威徳はよく分りましたのでございます。</p>
+        <p>公子　津波<ruby><rb>位</rb><rt>しき</rt></ruby>、家来どもが<ruby><rb>些細</rb><rt>ささい</rt></ruby>な事を。さあ、そこへお掛け。</p>
+        <p>女房、介抱して、美女、椅子に直る。</p>
+        <p><ruby><rb>頸飾</rb><rt>くびかざり</rt></ruby>なんぞ、珠なんぞ。貴女の腰掛けている、それは珊瑚だ。</p>
+        <p>美女　まあ、父に下さいました枝よりは、幾倍とも。</p>
+        <p>公子　あれは草です。<ruby><rb>較</rb><rt>くら</rt></ruby>ぶればここのは大樹だ。椅子の丈は<ruby><rb>陸</rb><rt>くが</rt></ruby>の山よりも高い。そうしている貴女の姿は、夕日影の峰に、雪の消残ったようであろう。少しく離れた私の<ruby><rb>兜</rb><rt>かぶと</rt></ruby>の<ruby><rb>竜頭</rb><rt>たつがしら</rt></ruby>は、城の天守の棟に飾った黄金の<ruby><rb>鯱</rb><rt>しやち</rt></ruby>ほどに見えようと思う。</p>
+        <p>美女　あの、人の目に、それが、貴方？</p>
+        <p>公子　<ruby><rb>譬喩</rb><rt>たとえ</rt></ruby>です、人間の目には何にも見えん。</p>
+        <p>美女　ああ、見えはいたしますまい。お恥かしい、人間の小さな心には、ここに、見ますれば私が<ruby><rb>裳</rb><rt>すそ</rt></ruby>を<ruby><rb>曳</rb><rt>ひ</rt></ruby>きます床も、<ruby><rb>琅玕</rb><rt>ろうかん</rt></ruby>の一枚石。こうした御殿のある事は、夢にも知らないのでございますもの、<ruby><rb>情</rb><rt>なさけ</rt></ruby>のう存じます。</p>
+        <p>公子　いや、そんなに謙遜をするには当らん。<ruby><rb>陸</rb><rt>くが</rt></ruby>には名山、<ruby><rb>佳水</rb><rt>かすい</rt></ruby>がある。<ruby><rb>峻岳</rb><rt>しゅんがく</rt></ruby>、大河がある。</p>
+        <p>美女　でも、こんな御殿はないのです。</p>
+        <p>公子　あるのを知らないのです。海底の琅玕の宮殿に、宝蔵の珠玉金銀が、<ruby><rb>虹</rb><rt>にじ</rt></ruby>に透いて見えるのに、<placeName ref="#sarashina"><ruby><rb>更科</rb><rt>さらしな</rt></ruby></placeName>の秋の月、<ruby><rb>錦</rb><rt>にしき</rt></ruby>を染めた<placeName ref="#kiso">木曾</placeName>の山々は劣りはしない。……峰には、その<ruby><rb>錦葉</rb><rt>もみじ</rt></ruby>を織る<persName ref="#tatsutahime"><ruby><rb>竜田姫</rb><rt>たつたひめ</rt></ruby></persName>がおいでなんだ。人間は知らんのか、知っても知らないふりをするのだろう。知らない<ruby><rb>振</rb><rt>ふり</rt></ruby>をして見ないんだろう。――<ruby><rb>陸</rb><rt>くが</rt></ruby>は尊い、景色は得難い。今も、<ruby><rb>道中双六</rb><rt>どうちゅうすごろく</rt></ruby>をして遊ぶのに、五十三次の一枚絵さえ<ruby><rb>手許</rb><rt>てもと</rt></ruby>にはなかったのだ。絵も<ruby><rb>貴</rb><rt>とうと</rt></ruby>い。</p>
+        <p>美女　あんな事をおっしゃって、絵には<ruby><rb>活</rb><rt>い</rt></ruby>きたものは住んでおりませんではありませんか。</p>
+        <p>公子　いや、<ruby><rb>住居</rb><rt>すまい</rt></ruby>をしている。色彩は皆活きて動く。けれども、人は知らないのだ。人は見ないのだ。見ても見ない<ruby><rb>振</rb><rt>ふり</rt></ruby>をしているんだから、決して人間の<ruby><rb>凡</rb><rt>すべ</rt></ruby>てを貴いとは言わない、<ruby><rb>美</rb><rt>うつくし</rt></ruby>いとは言わない。ただ<ruby><rb>陸</rb><rt>くが</rt></ruby>は貴い。けれども、我が海は、この水は、一<ruby><rb>畝</rb><rt>うね</rt></ruby>りの波を起して、その陸を浸す事が出来るんだ。ただ貴く、<ruby><rb>美</rb><rt>うつくし</rt></ruby>いものは<ruby><rb>亡</rb><rt>ほろ</rt></ruby>びない。……中にも貴女は美しい。だから、陸の<ruby><rb>一浦</rb><rt>ひとうら</rt></ruby>を<ruby><rb>亡</rb><rt>ほろ</rt></ruby>ぼして、ここへ迎え取ったのです。亡ぼす力のあるものが、亡びないものを迎え入れて、且つ愛し且つ守護するのです。貴女は、<ruby><rb>喜</rb><rt>よろこ</rt></ruby>ばねば<ruby><rb>不可</rb><rt>いけな</rt></ruby>い、嬉しがらなければならない、悲しんではなりません。</p>
+        <p>女房　貴女、おっしゃる通りでございます。途中でも<ruby><rb>私</rb><rt>わたくし</rt></ruby>が、お喜ばしい、おめでたい儀と申しました。決してお<ruby><rb>歎</rb><rt>なげ</rt></ruby>きなさいます事はありません。</p>
+        <p>美女　いいえ、歎きはいたしません。悲しみはいたしません。ただ歎きますもの、悲しみますものに、私の、この<ruby><rb>容子</rb><rt>ようす</rt></ruby>を見せてやりたいと思うのです。</p>
+        <p>女房　人間の目には見えません。</p>
+        <p>美女　<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>の人たちには。</p>
+        <p>公子　見えるものか。</p>
+        <p>美女　（やや意気ぐむ）あの、私の親には。</p>
+        <p>公子　貴女は見えると思うのか。</p>
+        <p>美女　こうして、<ruby><rb>活</rb><rt>い</rt></ruby>きておりますもの。</p>
+        <p>公子　（<ruby><rb>屹</rb><rt>きっ</rt></ruby>としたる音調）無論、活きている。しかし、船から沈む時、ここへ来るにどういう決心をしたのですか。</p>
+        <p>美女　それは死ぬ事と思いました。<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>の人も皆そう思って、分けて親は歎き悲しみました。</p>
+        <p>公子　貴女の親は悲しむ事は少しもなかろう。はじめからそのつもりで、約束の財を得た。しかも満足だと云った。その代りに娘を波に沈めるのに、少しも歎くことはないではないか。</p>
+        <p>美女　けれども、<ruby><rb>父娘</rb><rt>おやこ</rt></ruby>の情愛でございます。</p>
+        <p>公子　勝手な情愛だね。人間の、そんな情愛は私には分らん。（<ruby><rb>頭</rb><rt>かぶり</rt></ruby>を<ruby><rb>掉</rb><rt>ふ</rt></ruby>る）が、まあ、情愛としておく、それで。</p>
+        <p>美女　父は涙にくれました。小船が波に放たれます時、<ruby><rb>渚</rb><rt>なぎさ</rt></ruby>の砂に、父の<ruby><rb>倒伏</rb><rt>たおれふ</rt></ruby>しました処は、あの、ちょうど夕月に紫の枝珊瑚を抱きました処なのです。そして、<ruby><rb>後</rb><rt>あと</rt></ruby>の<ruby><rb>歎</rb><rt>なげき</rt></ruby>は、前の喜びにくらべまして、幾十層倍だったでございましょう。</p>
+        <p>公子　じゃ、その枝珊瑚を波に返して、約束を戻せば<ruby><rb>可</rb><rt>よ</rt></ruby>かった。</p>
+        <p>美女　いいえ、ですが、もう、海の幸も、枝珊瑚も、金銀に代り、<ruby><rb>家蔵</rb><rt>いえくら</rt></ruby>に代っていたのでございます。</p>
+        <p>公子　<ruby><rb>可</rb><rt>よし</rt></ruby>、その金銀を散らし、施し、棄て、蔵を<ruby><rb>毀</rb><rt>こぼ</rt></ruby>ち、家を焼いて、もとの<ruby><rb>破蓑</rb><rt>やれみの</rt></ruby>一領、網一具の漁民となって、娘の<ruby><rb>命乞</rb><rt>いのちごい</rt></ruby>をすれば可かった。</p>
+        <p>美女　それでも、約束の女を寄越せと、海坊主のような黒い人が、夜ごと夜ごと天井を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>き、<ruby><rb>屏風</rb><rt>びょうぶ</rt></ruby>を見越し、壁<ruby><rb>襖</rb><rt>ふすま</rt></ruby>に立って、責めわたり、催促をなさいます。今更、家蔵に替えましたッて、とそう思ったのでございます。</p>
+        <p>公子　貴女の父は、もとの貧民になり下るから娘を許して下さい、と、その海坊主に<ruby><rb>掛合</rb><rt>かけあ</rt></ruby>ってみたのですか。みはしなかろう。そして、貴女を船に送出す時、<ruby><rb>磯</rb><rt>いそ</rt></ruby>に倒れて悲しもうが、新しい白壁、<ruby><rb>艶</rb><rt>つや</rt></ruby>ある<ruby><rb>甍</rb><rt>いらか</rt></ruby>を、山際の月に照らさして、<ruby><rb>夥多</rb><rt>あまた</rt></ruby>の<ruby><rb>奴婢</rb><rt>ぬひ</rt></ruby>に取巻かせて、近頃呼入れた、若い<ruby><rb>妾</rb><rt>めかけ</rt></ruby>に介抱されていたではないのか。なぜ、それが情愛なんです。</p>
+        <p>美女　はい。……（恥じて<ruby><rb>首低</rb><rt>うなだ</rt></ruby>る。）</p>
+        <p>公子　貴女を<ruby><rb>責</rb><rt>せむ</rt></ruby>るのではない。よしそれが人間の情愛なれば情愛で<ruby><rb>可</rb><rt>よ</rt></ruby>い、私とは何の係わりもないから。ちっとも構わん。が、私の愛する、この宮殿にある貴女が、そんな<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>を思うて、歎いては<ruby><rb>不可</rb><rt>いか</rt></ruby>ん。悲しんでは不可んと云うのです。</p>
+        <p>美女　貴方。（向直る。声に力を帯ぶ）私は始めから、決して歎いてはいないのです。父は悲しみました。<ruby><rb>浦人</rb><rt>うらびと</rt></ruby>は<ruby><rb>可哀</rb><rt>あわれ</rt></ruby>がりました。ですが私は――約束に応じて宝を与え、その約束を責めて女を取る、――それが夢なれば、船に乗っても沈みはしまい。もし事実として、浪に引入るるものがあれば、それは<ruby><rb>生</rb><rt>しょう</rt></ruby>あるもの、形あるもの、云うまでもありません、心あり魂あり、声あるものに違いない。その上、威があり力があり、<ruby><rb>栄</rb><rt>さかえ</rt></ruby>と光とあるものに違いないと思いました。ですから、人はそうして歎いても、私は小船で流されますのを、さまで、<ruby><rb>慌騒</rb><rt>あわてさわ</rt></ruby>ぎも、泣悲しみも、落着過ぎもしなかったんです。もしか、船が沈まなければ無事なんです。<ruby><rb>生命</rb><rt>いのち</rt></ruby>はあるんですもの。覆す手があれば、それは<ruby><rb>活</rb><rt>い</rt></ruby>きている手なんです。その手に<ruby><rb>縋</rb><rt>すが</rt></ruby>って、海の中に活きられると思ったのです。</p>
+        <p>公子　（聞きつつ<ruby><rb>莞爾</rb><rt>かんじ</rt></ruby>とす）やあ、（女房に）……この女は<ruby><rb>豪</rb><rt>えら</rt></ruby>いぞ！　はじめから歎いておらん、慰め<ruby><rb>賺</rb><rt>すか</rt></ruby>す要はない。私はしおらしい。あわれな花を<ruby><rb>手活</rb><rt>ていけ</rt></ruby>にしてながめようと思った。違う！　これは<ruby><rb>楽</rb><rt>たのし</rt></ruby>く歌う鳥だ、面白い。それも愉快だ。おい、酒を寄越せ。</p>
+        <p>手を挙ぐ。たちまち<ruby><rb>闥</rb><rt>ドア</rt></ruby>開けて、三人の侍女、<ruby><rb>二罎</rb><rt>ふたびん</rt></ruby>の酒と、白金の皿に一対の<ruby><rb>玉盞</rb><rt>たまのさかずき</rt></ruby>を捧げて出づ。女房盞を取って、公子と美女の前に置く。侍女退場す。女房酒を両方に<ruby><rb>注</rb><rt>つ</rt></ruby>ぐ。</p>
+        <p>女房　めし上りまし。</p>
+        <p>美女　（<ruby><rb>辞宜</rb><rt>じぎ</rt></ruby>す）私は、ちっとも。</p>
+        <p>公子　（品よく盞を含みながら）貴女、少しも辛うない。</p>
+        <p>女房　貴女の<ruby><rb>薄紅</rb><rt>うすべに</rt></ruby>なは桃の露、あちらは菊花の<ruby><rb>雫</rb><rt>しずく</rt></ruby>です。お国では御存じありませんか。海には最上の<ruby><rb>飲料</rb><rt>のみしろ</rt></ruby>です。お気が<ruby><rb>清</rb><rt>すず</rt></ruby>しくなります、召あがれ。</p>
+        <p>美女　あの、桃の露、（見物席の方へ、半ば片袖を<ruby><rb>蔽</rb><rt>おお</rt></ruby>うて、うつむき飲む）は。（と<ruby><rb>小</rb><rt>ちいさ</rt></ruby>き<ruby><rb>呼吸</rb><rt>いき</rt></ruby>す）何という涼しい、<ruby><rb>爽</rb><rt>さわ</rt></ruby>やいだ――<ruby><rb>蘇生</rb><rt>よみがえ</rt></ruby>ったような気がします。</p>
+        <p>公子　蘇生ったのではないでしょう。更に新しい<ruby><rb>生命</rb><rt>いのち</rt></ruby>を得たんだ。</p>
+        <p>美女　嬉しい、嬉しい、嬉しい、貴方。私がこうして<ruby><rb>活</rb><rt>い</rt></ruby>きていますのを、見せてやりとう存じます。</p>
+        <p>公子　別に見せる要はありますまい。</p>
+        <p>美女　でも、人は私が死んだと思っております。</p>
+        <p>公子　勝手に思わせておいて<ruby><rb>可</rb><rt>い</rt></ruby>いではないか。</p>
+        <p>美女　ですけれども、ですけれども。</p>
+        <p>公子　その情愛、とかで、貴女の親に見せたいのか。</p>
+        <p>美女　ええ、父をはじめ、浦のもの、それから<ruby><rb>皆</rb><rt>みんな</rt></ruby>に知らせなければ残念です。</p>
+        <p>公子　（<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>に胸を<ruby><rb>凭出</rb><rt>よせいだ</rt></ruby>す）帰りたいか、故郷へ。</p>
+        <p>美女　いいえ、この宮殿、この宝玉、この指環、この酒、この栄華、私は故郷へなぞ帰りたくはないのです。</p>
+        <p>公子　では、何が知らせたいのです。</p>
+        <p>美女　だって、貴方、人に知られないで活きているのは、活きているのじゃないんですもの。</p>
+        <p>公子　（色はじめて<ruby><rb>鬱</rb><rt>うつ</rt></ruby>す）むむ。</p>
+        <p>美女　（微酔の<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>花やかに）誰も知らない命は、<ruby><rb>生命</rb><rt>いのち</rt></ruby>ではありません。この宝玉も、この指環も、人が見ないでは、ちっとも<ruby><rb>価値</rb><rt>ねうち</rt></ruby>がないのです。</p>
+        <p>公子　それは<ruby><rb>不可</rb><rt>いか</rt></ruby>ん。（<ruby><rb>卓子</rb><rt>テエブル</rt></ruby>を軽く打って立つ）貴女は<ruby><rb>栄燿</rb><rt>えよう</rt></ruby>が見せびらかしたいんだな。そりゃ不可ん。人は自己、自分で満足をせねばならん。人に<ruby><rb>価値</rb><rt>ねうち</rt></ruby>をつけさせて、それに従うべきものじゃない。（近寄る）人は自分で活きれば<ruby><rb>可</rb><rt>い</rt></ruby>い、<ruby><rb>生命</rb><rt>いのち</rt></ruby>を保てば可い。しかも愛するものとともに活きれば、少しも不足はなかろうと思う。宝玉とてもその通り、手箱にこれを蔵すれば、宝玉そのものだけの価値を保つ。人に与うる時、十倍の光を放つ。ただ、人に見せびらかす時、その艶は黒くなり、その質は醜くなる。</p>
+        <p>美女　ええ、ですから……来るお庭にも敷詰めてありました、あの宝玉一つも、この上お許し下さいますなら、きっと慈善に施して参ります。</p>
+        <p>公子　ここに、用意の宝蔵がある。皆、貴女のものです。施すは<ruby><rb>可</rb><rt>い</rt></ruby>い。が、人知れずでなければ出来ない、貴女の名を<ruby><rb>顕</rb><rt>あらわ</rt></ruby>し、姿を見せては施すことはならないんです。</p>
+        <p>美女　それでは何にもなりません。何の<ruby><rb>効</rb><rt>かい</rt></ruby>もありません。</p>
+        <p>公子　（色やや<ruby><rb>嶮</rb><rt>けわ</rt></ruby>し）随分、勝手を云う。が、貴女の美しさに免じて許す。歌う鳥が<ruby><rb>囀</rb><rt>さえず</rt></ruby>るんだ、<ruby><rb>雲雀</rb><rt>ひばり</rt></ruby>は星を<ruby><rb>凌</rb><rt>しの</rt></ruby>ぐ。星は<ruby><rb>蹴落</rb><rt>けおと</rt></ruby>さない。声が可愛らしいからなんです。（女房に）おい、<ruby><rb>注</rb><rt>つ</rt></ruby>げ。</p>
+        <p>女房酌す。</p>
+        <p>美女　（<ruby><rb>怯</rb><rt>おく</rt></ruby>れたる<ruby><rb>内端</rb><rt>うちわ</rt></ruby>な態度）もうもう、決して、<ruby><rb>虚飾</rb><rt>みえ</rt></ruby>、<ruby><rb>栄燿</rb><rt>えよう</rt></ruby>を見せようとは思いません。あの、ただ活きている事だけを知らせとう存じます。</p>
+        <p>公子　（<ruby><rb>冷</rb><rt>ひやや</rt></ruby>かに）<ruby><rb>止</rb><rt>よ</rt></ruby>したが<ruby><rb>可</rb><rt>よ</rt></ruby>かろう。</p>
+        <p>美女　いいえ、<ruby><rb>唯今</rb><rt>ただいま</rt></ruby>も申します通り、<ruby><rb>故郷</rb><rt>くに</rt></ruby>へ帰って、そこに<ruby><rb>留</rb><rt>とど</rt></ruby>まります気は露ほどもないのです。ちょっとお許しを受けまして<ruby><rb>生命</rb><rt>いのち</rt></ruby>のあります事だけを。</p>
+        <p>公子、無言にして<ruby><rb>頭</rb><rt>かぶり</rt></ruby><ruby><rb>掉</rb><rt>ふ</rt></ruby>る。美女、<ruby><rb>縋</rb><rt>すが</rt></ruby>るがごとくす。</p>
+        <p>あの、お許しは下さいませんか。ちっとの<ruby><rb>外出</rb><rt>そとで</rt></ruby>もなりませんか。</p>
+        <p>公子　（<ruby><rb>爽</rb><rt>さわやか</rt></ruby>に）獄屋ではない、大自由、大自在な領分だ。歎くもの悲しむものは無論の事、<ruby><rb>僅少</rb><rt>きんしょう</rt></ruby>の<ruby><rb>憂</rb><rt>うれい</rt></ruby>あり、不平あるものさえ一日も<ruby><rb>一個</rb><rt>ひとり</rt></ruby>たりとも国に置かない。が、貴女には既に心を許して、秘蔵の酒を飲ませた。海の<ruby><rb>果</rb><rt>はて</rt></ruby>、陸の<ruby><rb>終</rb><rt>おわり</rt></ruby>、思って<ruby><rb>行</rb><rt>ゆ</rt></ruby>かれない処はない。<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>ごときはただ<ruby><rb>一飛</rb><rt>ひととび</rt></ruby>、<ruby><rb>瞬</rb><rt>まばた</rt></ruby>きをする<ruby><rb>間</rb><rt>ま</rt></ruby>に<ruby><rb>行</rb><rt>ゆ</rt></ruby>かれる。（<ruby><rb>愍</rb><rt>あわれ</rt></ruby>むごとくしみじみと顔を<ruby><rb>視</rb><rt>み</rt></ruby>る）が、気の毒です。</p>
+        <p>貴女にその<ruby><rb>驕</rb><rt>おごり</rt></ruby>と、<ruby><rb>虚飾</rb><rt>みえ</rt></ruby>の心さえなかったら、一生聞かなくとも済む、また聞かせたくない事だった。貴女、これ。</p>
+        <p>（美女顔を上ぐ。その肩に手を掛く）ここに来た、貴女はもう人間ではない。</p>
+        <p>美女　ええ。（驚く。）</p>
+        <p>公子　蛇身になった、美しい<ruby><rb>蛇</rb><rt>へび</rt></ruby>になったんだ。</p>
+        <p>美女、瞳を<ruby><rb>睜</rb><rt>みは</rt></ruby>る。</p>
+        <p>その貴女の身に輝く、宝玉も、指環も、<ruby><rb>紅</rb><rt>べに</rt></ruby>、紫の<ruby><rb>鱗</rb><rt>うろこ</rt></ruby>の光と、人間の目に輝くのみです。</p>
+        <p>美女　あれ。（椅子を落つ。侍女の膝にて、袖を見、背を見、手を見つつ、わななき震う。雪の<ruby><rb>指尖</rb><rt>ゆびさき</rt></ruby>、思わず<ruby><rb>鬢</rb><rt>びん</rt></ruby>を取って<ruby><rb>衝</rb><rt>つ</rt></ruby>と立ちつつ）いいえ、いいえ、いいえ。どこも蛇にはなりません。<ruby><rb>一</rb><rt>い</rt></ruby>、一枚も鱗はない。</p>
+        <p>公子　一枚も鱗はない、無論どこも<ruby><rb>蛇</rb><rt>へび</rt></ruby>にはならない。貴女は美しい女です。けれども、人間の<ruby><rb>眼</rb><rt>まなこ</rt></ruby>だ。人の見る目だ。故郷に姿を<ruby><rb>顕</rb><rt>あらわ</rt></ruby>す時、貴女の父、貴女の友、貴女の村、浦、貴女の全国の、貴女を見る目は、誰も残らず大蛇と見る。ものを云う声はただ、炎の舌が<ruby><rb>閃</rb><rt>ひらめ</rt></ruby>く。<ruby><rb>吐</rb><rt>つ</rt></ruby>く息は煙を渦巻く。悲歎の涙は、<ruby><rb>硫黄</rb><rt>ゆおう</rt></ruby>を流して草を<ruby><rb>爛</rb><rt>ただ</rt></ruby>らす。長い袖は、<ruby><rb>腥</rb><rt>なまぐさ</rt></ruby>い風を起して樹を枯らす。<ruby><rb>悶</rb><rt>もだ</rt></ruby>ゆる<ruby><rb>膚</rb><rt>はだ</rt></ruby>は鱗を<ruby><rb>鳴</rb><rt>なら</rt></ruby>してのたうち<ruby><rb>蜿</rb><rt>うね</rt></ruby>る。ふと、肉身のものの目に、その丈より長い黒髪の、三筋、五筋、筋を<ruby><rb>透</rb><rt>すか</rt></ruby>して、大蛇の背に黒く引くのを見る、それがなごりと思うが<ruby><rb>可</rb><rt>い</rt></ruby>い。</p>
+        <p>美女　（髪みだるるまでかぶりを<ruby><rb>掉</rb><rt>ふ</rt></ruby>る）嘘です、嘘です。人を<ruby><rb>呪</rb><rt>のろ</rt></ruby>って、人を<ruby><rb>詛</rb><rt>のろ</rt></ruby>って、貴方こそ、その毒蛇です。親のために沈んだ身が蛇体になろう<ruby><rb>筈</rb><rt>はず</rt></ruby>がない。<ruby><rb>遣</rb><rt>や</rt></ruby>って下さい。<ruby><rb>故郷</rb><rt>くに</rt></ruby>へ帰して下さい。親の、人の、友だちの目を借りて、尾のない鱗のない私の身が<ruby><rb>験</rb><rt>ため</rt></ruby>したい。遣って下さい。<ruby><rb>故郷</rb><rt>くに</rt></ruby>へ帰して下さい。</p>
+        <p>公子　大自在の国だ。勝手に<ruby><rb>行</rb><rt>ゆ</rt></ruby>くが<ruby><rb>可</rb><rt>い</rt></ruby>い、そして試すが<ruby><rb>可</rb><rt>よ</rt></ruby>かろう。</p>
+        <p>美女　どこに、<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>の浦は……どこに。</p>
+        <p>女房　あれあすこに。（廻廊の燈籠を<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>す。）</p>
+        <p>美女　おお、（<ruby><rb>身震</rb><rt>みぶるい</rt></ruby>す）船の沈んだ浦が見える。（<ruby><rb>飜然</rb><rt>ひらり</rt></ruby>と飛ぶ。……乱るる<ruby><rb>紅</rb><rt>くれない</rt></ruby>、炎のごとく、トンと床を下りるや、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と廻廊を<ruby><rb>突切</rb><rt>つッき</rt></ruby>る。途端に、五個の燈籠<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく消ゆ。廻廊暗し。美女、その暗中に消ゆ一舞台の上段のみ、やや<ruby><rb>明</rb><rt>あかる</rt></ruby>く残る。）</p>
+        <p>公子　おい、その姿見の<ruby><rb>蔽</rb><rt>おおい</rt></ruby>を取れ。<ruby><rb>陸</rb><rt>くが</rt></ruby>を見よう。</p>
+        <p>女房　困った御婦人です。しかしお可哀相なものでございます。（立つ。舞台暗くなる。――やがて<ruby><rb>明</rb><rt>あかる</rt></ruby>くなる時、花やかに侍女皆あり。）</p>
+        <p>公子。椅子に<ruby><rb>凭</rb><rt>よ</rt></ruby>る。――その<ruby><rb>足許</rb><rt>あしもと</rt></ruby>に、美女倒れ伏す――<ruby><rb>疾</rb><rt>と</rt></ruby>く既に帰り<ruby><rb>来</rb><rt>きた</rt></ruby>れる趣。髪すべて乱れ、<ruby><rb>袂</rb><rt>たもと</rt></ruby>裂け帯崩る。</p>
+        <p>公子　（<ruby><rb>玉盞</rb><rt>ぎょくさん</rt></ruby>を含みつつ悠然として）故郷はどうでした。……どうした、私が云った<ruby><rb>通</rb><rt>とおり</rt></ruby>だろう。貴女の父の<ruby><rb>少</rb><rt>わか</rt></ruby>い<ruby><rb>妾</rb><rt>めかけ</rt></ruby>は、貴女のその恐しい蛇の姿を見て気絶した。貴女の父は、下男とともに、鉄砲をもってその蛇を狙ったではありませんか。<ruby><rb>渠等</rb><rt>かれら</rt></ruby>は第一、私を見てさえ蛇体だと思う。人間の目はそういうものだ。そんな処に用はあるまい。泣いていては<ruby><rb>不可</rb><rt>いか</rt></ruby>ん。</p>
+        <p>美女<ruby><rb>悲泣</rb><rt>ひきゅう</rt></ruby>す。</p>
+        <p>不可ん、おい、泣くのは不可ん。（眉を<ruby><rb>顰</rb><rt>ひそ</rt></ruby>む。）</p>
+        <p>女房　（背を<ruby><rb>擦</rb><rt>さす</rt></ruby>る）若様は、<ruby><rb>歎悲</rb><rt>かなし</rt></ruby>むのがお<ruby><rb>嫌</rb><rt>きらい</rt></ruby>です。御性急でいらっしゃいますから、御機嫌に障ると悪い。ここは、楽しむ処、歌う処、舞う処、喜び、遊ぶ処ですよ。</p>
+        <p>美女　ええ、貴女方は<ruby><rb>楽</rb><rt>たのし</rt></ruby>いでしょう、嬉しいでしょう、お舞いなさい、お唄いなさい、私、私は<ruby><rb>泣死</rb><rt>なきじに</rt></ruby>に死ぬんです。</p>
+        <p>公子　死ぬまで泣かれて<ruby><rb>堪</rb><rt>たま</rt></ruby>るものか。あんな<ruby><rb>故郷</rb><rt>くに</rt></ruby>に何の未練がある。さあ、機嫌を直せ。ここには悲哀のあることを許さんぞ。</p>
+        <p>美女　お許しなくば、どうなりと。ええ、<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>の事も、私の<ruby><rb>身体</rb><rt>からだ</rt></ruby>も、<ruby><rb>皆</rb><rt>みんな</rt></ruby>、貴方の魔法です。</p>
+        <p>公子　どこまで疑う。（<ruby><rb>忿怒</rb><rt>ふんぬ</rt></ruby>の形相）お前を蛇体と思うのは、人間の目だと云うに。<ruby><rb>俺</rb><rt>おれ</rt></ruby>の……魔……法。許さんぞ。女、悲しむものは殺す。</p>
+        <p>美女　ええ、ええ、お殺しなさいまし。<ruby><rb>活</rb><rt>い</rt></ruby>きられる<ruby><rb>身体</rb><rt>からだ</rt></ruby>ではないのです。</p>
+        <p>公子　（憤然として立つ）黒潮等は<ruby><rb>居</rb><rt>お</rt></ruby>らんか。この女を処置しろ。</p>
+        <p>言下に、床板を跳ね、その穴より<ruby><rb>黒潮騎士</rb><rt>こくちょうきし</rt></ruby>、<ruby><rb>大錨</rb><rt>おおいかり</rt></ruby>をかついで<ruby><rb>顕</rb><rt>あらわ</rt></ruby>る。騎士二三、続いて飛出づ。美女を引立て、一の騎士が<ruby><rb>倒</rb><rt>さかしま</rt></ruby>に押立てたる錨に<ruby><rb>縛</rb><rt>いまし</rt></ruby>む。錨の<ruby><rb>刃越</rb><rt>はごし</rt></ruby>に、黒髪の乱るるを<ruby><rb>掻掴</rb><rt>かいつか</rt></ruby>んで、<ruby><rb>押仰向</rb><rt>おしあおむ</rt></ruby>かす。<ruby><rb>長槍</rb><rt>ながやり</rt></ruby>の刃、鋭くその<ruby><rb>頤</rb><rt>あぎと</rt></ruby>に臨む。</p>
+        <p>女房　ああ、若様。</p>
+        <p>公子　止めるのか。</p>
+        <p>女房　お床が血に汚れはいたしませんか。</p>
+        <p>公子　美しい女だ。花を<ruby><rb>挘</rb><rt>むし</rt></ruby>るも同じ事よ、<ruby><rb>花片</rb><rt>はなびら</rt></ruby>と<ruby><rb>蕊</rb><rt>しべ</rt></ruby>と、ばらばらに分れるばかりだ。あとは手箱に<ruby><rb>蔵</rb><rt>しま</rt></ruby>っておこう。――殺せ。（騎士、槍を取直す。）</p>
+        <p>美女　貴方、こんな悪魚の<ruby><rb>牙</rb><rt>きば</rt></ruby>は<ruby><rb>可厭</rb><rt>いや</rt></ruby>です。<ruby><rb>御卑怯</rb><rt>おひきょう</rt></ruby>な。見ていないで、御自分でお殺しなさいまし。</p>
+        <p>（公子、<ruby><rb>頷</rb><rt>うなず</rt></ruby>き、無言にてつかつかと寄り、<ruby><rb>猶予</rb><rt>ためら</rt></ruby>わず<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>を抜き、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と目に<ruby><rb>翳</rb><rt>かざ</rt></ruby>し、<ruby><rb>衝</rb><rt>つ</rt></ruby>と引いて<ruby><rb>斜</rb><rt>ななめ</rt></ruby>に構う。<ruby><rb>面</rb><rt>おもて</rt></ruby>を見合す。）</p>
+        <p>ああ、貴方。私を<ruby><rb>斬</rb><rt>き</rt></ruby>る、私を殺す、その、顔のお綺麗さ、気高さ、美しさ、目の<ruby><rb>清</rb><rt>すず</rt></ruby>しさ、眉の勇ましさ。はじめて見ました、位の高さ、品の<ruby><rb>可</rb><rt>よ</rt></ruby>さ。もう、故郷も何も忘れました。早く殺して。ああ、嬉しい。（<ruby><rb>莞爾</rb><rt>にっこり</rt></ruby>する。）</p>
+        <p>公子　解け。</p>
+        <p>騎士等、美女を助けて、片隅に<ruby><rb>退</rb><rt>の</rt></ruby>く。公子、<ruby><rb>剣</rb><rt>つるぎ</rt></ruby>を<ruby><rb>提</rb><rt>ひっさ</rt></ruby>げたるまま、</p>
+        <p>こちらへおいで。（美女、手を<ruby><rb>曳</rb><rt>ひ</rt></ruby>かる。ともに床に<ruby><rb>上</rb><rt>のぼ</rt></ruby>る。公子剣を軽く取る。）終生を<ruby><rb>盟</rb><rt>ちか</rt></ruby>おう。手を出せ。（手首を取って刃を<ruby><rb>腕</rb><rt>かいな</rt></ruby>に引く、一線の<ruby><rb>紅血</rb><rt>こうけつ</rt></ruby>、<ruby><rb>玉盞</rb><rt>ぎょくさん</rt></ruby>に滴る。公子返す<ruby><rb>切尖</rb><rt>きっさき</rt></ruby>に自から腕を引く、紫の血、玉盞に滴る。）飲め、呑もう。</p>
+        <p><ruby><rb>盞</rb><rt>さかずき</rt></ruby>をかわして、仰いで飲む。廻廊の燈籠一斉に<ruby><rb>点</rb><rt>とも</rt></ruby>り輝く。</p>
+        <p>あれ見い、血を取かわして飲んだと思うと、お前の<ruby><rb>故郷</rb><rt>くに</rt></ruby>の、浦の<ruby><rb>磯</rb><rt>いそ</rt></ruby>に、岩に、紫と<ruby><rb>紅</rb><rt>あか</rt></ruby>の花が咲いた。それとも、星か。</p>
+        <p>（一同打見る。）</p>
+        <p>あれは何だ。</p>
+        <p>美女　見覚えました花ですが、私はもう忘れました。</p>
+        <p>公子　（書を見つつ）博士、博士。</p>
+        <p>博士　（登場）……お召。</p>
+        <p>公子　（<ruby><rb>指</rb><rt>ゆびさ</rt></ruby>す）あの花は何ですか。（書を渡さんとす。）</p>
+        <p>博士　存じております。<ruby><rb>竜胆</rb><rt>りんどう</rt></ruby>と<ruby><rb>撫子</rb><rt>とこなつ</rt></ruby>でございます。<ruby><rb>新夫人</rb><rt>にいおくさま</rt></ruby>の、お心が通いまして、折からの霜に、一際色が<ruby><rb>冴</rb><rt>さ</rt></ruby>えました。若様と奥様の血の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>でございます。</p>
+        <p>公子　人間にそれが分るか。</p>
+        <p>博士　心ないものには知れますまい。詩人、画家が、しかし認めますでございましょう。</p>
+        <p>公子　お前、私の悪意ある<ruby><rb>呪詛</rb><rt>のろい</rt></ruby>でないのが知れたろう。</p>
+        <p>美女　（うなだる）お<ruby><rb>見棄</rb><rt>みすて</rt></ruby>のう、幾久しく。</p>
+        <p>一同　――万歳を申上げます。――</p>
+        <p>公子　皆、休息をなさい。（一同退場。）</p>
+        <p>公子、美女と手を携えて一歩す。美しき花降る。二歩す、フト<ruby><rb>立停</rb><rt>たちど</rt></ruby>まる。三歩を動かす時、音楽聞ゆ。</p>
+        <p>美女　<ruby><rb>一歩</rb><rt>ひとあし</rt></ruby>に花が降り、<ruby><rb>二歩</rb><rt>ふたあし</rt></ruby>には微妙の<ruby><rb>薫</rb><rt>かおり</rt></ruby>、いま三あしめに、ひとりでに、楽しい音楽の聞えます。ここは<placeName ref="#gokuraku">極楽</placeName>でございますか。</p>
+        <p>公子　ははは、そんな処と一所にされて<ruby><rb>堪</rb><rt>たま</rt></ruby>るものか。おい、女の<ruby><rb>行</rb><rt>ゆ</rt></ruby>く<placeName ref="#gokuraku">極楽</placeName>に男は居らんぞ。（<ruby><rb>鎧</rb><rt>よろい</rt></ruby>の<ruby><rb>結目</rb><rt>むすびめ</rt></ruby>を解きかけて、音楽につれて<ruby><rb>徐</rb><rt>おもむ</rt></ruby>ろに、やや、ななめに立ちつつ、その竜の爪を美女の背にかく。雪の振袖、紫の鱗の端に<ruby><rb>仄</rb><rt>ほのか</rt></ruby>に見ゆ）男の行く<placeName ref="#gokuraku">極楽</placeName>に女は居ない。</p>
+        <p>――幕――</p>
+        <p><date when="1913-12">大正二（一九一三）年十二月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>

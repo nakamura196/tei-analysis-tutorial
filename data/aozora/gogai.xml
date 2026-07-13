@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>号外</title>
+        <author>国木田独歩</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>号外</title><author>国木田独歩</author>
+          <note>青空文庫。底本：「号外・少年の悲哀　他六編」岩波文庫、岩波書店。1939（昭和14）年4月17日第1刷発行。1960（昭和35）年1月25日第14刷改版発行。1981（昭和56）年4月10日第34刷発行。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000038/card1055.html">https://www.aozora.gr.jp/cards/000038/card1055.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="kato">
+        <persName>加藤</persName>
+        <note>加藤男爵。ぼろ洋服の常連客で本作の主人公格。日露戦争の号外に生きがいを見いだし、講和後に虚脱する。「加と男」「加と公」「加藤号外君」は同一人物の愛称</note>
+      </person>
+      <person xml:id="nakakura">
+        <persName>中倉</persName>
+        <note>彫刻家の老人。「中倉先生」「中倉翁」とも。加藤の「号外」と題する胸像を彫ることになる</note>
+      </person>
+      <person xml:id="mitsutani">
+        <persName>満谷</persName>
+        <note>語り手の「自分」。正宗ホールの常連</note>
+      </person>
+      <person xml:id="watanuki">
+        <persName>綿貫</persName>
+        <note>綿貫博士。正宗ホールの常連の一人</note>
+      </person>
+      <person xml:id="songoku">
+        <persName>孫悟空</persName>
+        <note>『西遊記』の主人公。伝説上の存在。酒を自在に飲む比喩に登場</note>
+      </person>
+      <person xml:id="carnegie">
+        <persName>カーネーギー</persName>
+        <note>アンドリュー・カーネギー(1835–1919)。米国の実業家。「富豪」の代名詞として言及</note>
+      </person>
+      <person xml:id="voltaire">
+        <persName>ボルテーヤ</persName>
+        <note>ヴォルテール(1694–1778)。フランスの啓蒙思想家。実在人物への言及</note>
+      </person>
+      <person xml:id="rousseau">
+        <persName>ルーソー</persName>
+        <note>ジャン=ジャック・ルソー(1712–1778)。フランスの思想家。実在人物への言及</note>
+      </person>
+      <person xml:id="raphael">
+        <persName>ラファエル</persName>
+        <note>ラファエロ・サンツィオ(1483–1520)。イタリアの画家。実在人物への言及</note>
+      </person>
+      <person xml:id="macaulay">
+        <persName>マコーレー</persName>
+        <note>トマス・バビントン・マコーリー(1800–1859)。英国の歴史家・評論家。実在人物への言及</note>
+      </person>
+      <person xml:id="carlyle">
+        <persName>カーライル</persName>
+        <note>トマス・カーライル(1795–1881)。英国の思想家。語り手が自らをなぞらえる</note>
+      </person>
+      <person xml:id="zola">
+        <persName>ゾラ</persName>
+        <note>エミール・ゾラ(1840–1902)。フランスの小説家。ホールの一人をなぞらえる</note>
+      </person>
+      <person xml:id="kusunoki-masashige">
+        <persName>楠公</persName>
+        <note>楠木正成(1294?–1336)。南北朝期の武将。「楠公の社」は神戸の湊川神社を指す</note>
+      </person>
+      <person xml:id="hirose-takeo">
+        <persName>広瀬</persName>
+        <note>広瀬武夫中佐(1868–1904)。日露戦争の旅順口閉塞作戦で福井丸に乗り戦死。号外の公報中に登場</note>
+      </person>
+      <person xml:id="sugino-magoshichi">
+        <persName>杉野</persName>
+        <note>杉野孫七上等兵曹(1867–1904)。福井丸で行方不明となり戦死。本文表記は「杉野兵曹長」。号外の公報中に登場</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="ginza">
+        <placeName>銀座</placeName>
+        <location><geo>35.6717 139.765</geo></location>
+        <note>東京市京橋区銀座(現・中央区銀座)・概値</note>
+      </place>
+      <place xml:id="masamune-hall">
+        <placeName>正宗ホール</placeName>
+        <note>銀座の路地にあった酒場。本文は「銀座何丁目」としか記さず番地を特定できないため座標なし</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6812 139.7671</geo></location>
+        <note>概値</note>
+      </place>
+      <place xml:id="portsmouth">
+        <placeName>ポーツマウス</placeName>
+        <location><geo>43.0718 -70.7626</geo></location>
+        <note>米国ニューハンプシャー州ポーツマス。1905年の日露講和会議(ポーツマス条約)の地・概値</note>
+      </place>
+      <place xml:id="kobe">
+        <placeName>神戸</placeName>
+        <location><geo>34.6901 135.1955</geo></location>
+        <note>兵庫県神戸市・概値</note>
+      </place>
+      <place xml:id="yalu">
+        <placeName>鴨緑江</placeName>
+        <location><geo>40.1 124.39</geo></location>
+        <note>朝鮮と清国の境を流れる川。日露戦争の鴨緑江会戦の地・概値(下流域)</note>
+      </place>
+      <place xml:id="ai-river">
+        <placeName>靉河</placeName>
+        <location><geo>40.16 124.42</geo></location>
+        <note>鴨緑江の支流・靉河(あいが)。九連城付近の合流点・概値</note>
+      </place>
+      <place xml:id="jiuliancheng">
+        <placeName>九連城</placeName>
+        <location><geo>40.1667 124.4667</geo></location>
+        <note>清国安東県の城砦(現・遼寧省丹東市付近)・概値</note>
+      </place>
+      <place xml:id="kurito">
+        <placeName>九里島</placeName>
+        <note>鴨緑江中の島。号外の公報に見えるが現在地の比定に確証がないため座標なし</note>
+      </place>
+      <place xml:id="russia">
+        <placeName>ロシヤ</placeName>
+        <location><geo>55.7558 37.6173</geo></location>
+        <note>国名(ロシア帝国)・概値(モスクワ)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>号外</head>
+        <p>ぼろ洋服を着た男爵<persName ref="#kato"><ruby><rb>加藤</rb><rt>かとう</rt></ruby></persName>が、今夜もホールに現われている。彼は多少キじるしだとの評がホールの仲間にあるけれども、おそらくホールの御連中にキ的傾向を持っていないかたはあるまいと思われる。かく言う自分もさよう、同類と信じているのである。</p>
+        <p>ここに言うホールとは、<placeName ref="#ginza">銀座</placeName>何丁目の狭い、窮屈な路地にある<placeName ref="#masamune-hall"><ruby><rb>正宗</rb><rt>まさむね</rt></ruby>ホール</placeName>の事である。</p>
+        <p><ruby><rb>生一本</rb><rt>きいっぽん</rt></ruby>の酒を飲むことの自由自在、<persName ref="#songoku"><ruby><rb>孫悟空</rb><rt>そんごくう</rt></ruby></persName>が雲に乗り霧を起こすがごとき、<ruby><rb>通力</rb><rt>つうりき</rt></ruby>を持っていたもう「富豪」「成功の人」「<persName ref="#carnegie">カーネーギー</persName>」「なんとかフェラー」、「実業雑誌の<ruby><rb>食</rb><rt>く</rt></ruby>い物」の諸君にありてはなんでもないでしょう、が、われわれごときにありては、でない、さようでない。<placeName ref="#masamune-hall">正宗ホール</placeName>でなければ飲めません。</p>
+        <p>感心にうまい酒を飲ませます。混成酒ばかり飲みます、この不愉快な<placeName ref="#tokyo">東京</placeName>にいなければならぬ<ruby><rb>不幸</rb><rt>ふしあわせ</rt></ruby>な運命のおたがいに取りては、ホールほどうれしい所はないのである。</p>
+        <p>男爵<persName ref="#kato">加藤</persName>が、いつもどなる、なんと言うてどなる「モー一本」と言うてどなる。</p>
+        <p>彫刻家の<persName ref="#nakakura">中倉</persName>の翁が、なんと言うて、その太い指を出す、「一本」</p>
+        <p>ことごとく飲み仲間だ。ことごとく結構！</p>
+        <p>今夜も「<persName ref="#kato"><ruby><rb>加</rb><rt>か</rt></ruby>と<ruby><rb>男</rb><rt>だん</rt></ruby></persName>」がノッソリ御出張になりました。「<persName ref="#kato">加と男</persName>」とは「<persName ref="#kato">加藤</persName>男爵」の略称、御出張とは、特に男爵閣下にわれわれ平民ないし、<ruby><rb>平</rb><rt>ひら</rt></ruby>ザムライどもが申し上げ奉る、言葉である。けれどもが、さし向かえば、<ruby><rb>些</rb><rt>さ</rt></ruby>の尊敬をするわけでもない、自他平等、<ruby><rb>海藻</rb><rt>のり</rt></ruby>のつくだ煮の品評に余念もありません。</p>
+        <p>「<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>がないと生きている張り合いがない、ああツマラない、困った事だ、なんとか<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>を始めるくふうはないものかしら。」</p>
+        <p><persName ref="#kato">加藤</persName>君が例のごとく始めました。「<ruby><rb>男</rb><rt>だん</rt></ruby>」はこれが近ごろの癖なのである。近ごろとは、<placeName ref="#portsmouth">ポーツマウス</placeName>の平和以後の冬の初めのころを指さす。</p>
+        <p><persName ref="#nakakura">中倉</persName>先生は大の反対論者で、こういう奇抜な事を言った事がある。</p>
+        <p>「モシできる事なら、大理石の<ruby><rb>塊</rb><rt>かたまり</rt></ruby>のまん中に、半人半獣の二人がかみ合っているところを彫ってみたい、塊の<ruby><rb>外面</rb><rt>そと</rt></ruby>にそのからみ合った手を現わして。という次第は、彼ら争闘を続けている限りは、その自由をうる時がない、すなわち幽閉である。封じかつ縛せられているのである。人類相争う限り、彼らはまだ、その真の自由を得ていないという意味を示してみたいものである。」</p>
+        <p>「お示しなさいな。御勝手に」「<ruby><rb>男</rb><rt>だん</rt></ruby>」は冷ややかに答えた事がある。</p>
+        <p>そこで「<persName ref="#kato">加と男</persName>」の癖が今夜も始まったけれど、<persName ref="#nakakura">中倉</persName>翁、もはや、しいて相手になりたくもないふうであった。</p>
+        <p>「大理石の<ruby><rb>塊</rb><rt>かたまり</rt></ruby>で彫ってもらいたいものがある、なんだと思われます、わが党の老美術家」、<persName ref="#kato">加藤</persName>はまず当たりました。</p>
+        <p>「大砲だろう」と、<persName ref="#nakakura">中倉</persName>先生もなかなかこれで負けないのである。</p>
+        <p>「大違いです。」</p>
+        <p>「それならなんだ、わかったわかった」</p>
+        <p>「なんだ」と今度は「<ruby><rb>男</rb><rt>だん</rt></ruby>」が問うている。</p>
+        <p>二人の問答を聞いているのもおもしろいが、見ているのも妙だ、一人は三十前後の<ruby><rb>痩</rb><rt>や</rt></ruby>せがたの、背の高い、きたならしい男、けれどもどこかに野人ならざる<ruby><rb>風貌</rb><rt>ふうぼう</rt></ruby>を備えている、しかしなんという乱暴な<ruby><rb>衣装</rb><rt>みなり</rt></ruby>だろう、古ぼけた洋服、ねずみ色のカラー、くしを入れない<ruby><rb>乱髪</rb><rt>らんぱつ</rt></ruby>！　一人は四十幾歳、てっぺんがはげている。比ぶればいくらか<ruby><rb>服装</rb><rt>なり</rt></ruby>はまさっているが、似たり寄ったり、なぜ二人とも洋服を着ているか、むしろ安物でもよいから小ザッぱりした和服のほうがよさそうに思われるけれども、あいにくと二人とも一度は洋行なるものをして、二人とも横文字が読めて、一方は<persName ref="#voltaire">ボルテーヤ</persName>とか、<persName ref="#rousseau">ルーソー</persName>とか、一方は<persName ref="#raphael">ラファエル</persName>とかなんとか、もし新聞記者なら<persName ref="#macaulay">マコーレー</persName>をお題目としたことのある連中であるから、無理もない。かく申す自分が<persName ref="#carlyle">カーライル</persName>！　すみのほうににやりにやり笑いながら、グビついている<persName ref="#zola">ゾラ</persName>もあり。</p>
+        <p><persName ref="#watanuki"><ruby><rb>綿貫</rb><rt>わたぬき</rt></ruby></persName><ruby><rb>博士</rb><rt>はかせ</rt></ruby>がそばで皮肉を言わないだけがまだしも、先生がいると問答がことさらにこみ入る。</p>
+        <p>「わかったとも、大わかりだ、」と<persName ref="#kusunoki-masashige"><ruby><rb>楠公</rb><rt>なんこう</rt></ruby></persName>の<ruby><rb>社</rb><rt>やしろ</rt></ruby>に建てられて、<placeName ref="#portsmouth">ポーツマウス</placeName>一件のために<placeName ref="#kobe"><ruby><rb>神戸</rb><rt>こうべ</rt></ruby></placeName>市中をひきずられたという<ruby><rb>何侯爵</rb><rt>なんのこうしゃく</rt></ruby>の銅像を作った名誉の彫刻家が、子供のようにわめいた。</p>
+        <p>「イヤとてもわかるものか、わたしが言いましょうか、」と<persName ref="#kato"><ruby><rb>加</rb><rt>か</rt></ruby>と<ruby><rb>男</rb><rt>だん</rt></ruby></persName>。</p>
+        <p>「言うてみなさい」と今度はまた彫刻家のほうから聞く。</p>
+        <p>「僕が言うて見せる」とついに自分が口を入れてお仲間にはいった。</p>
+        <p>「なんです」<ruby><rb>男</rb><rt>だん</rt></ruby>が意味のない得意の声をいだした。</p>
+        <p>「<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>の神を彫ってくれろと言うのでしょう」</p>
+        <p>「大ちがい！」</p>
+        <p>「すなわち男爵閣下の御肖像を彫ってくれろと言うのでしょう」</p>
+        <p>「ヒヤヒヤ、それだそれだ、大いに僕の意を得たりだ、<persName ref="#nakakura">中倉</persName>さん、全く僕の像を彫ってもらいたいのです、かく申す『<persName ref="#kato">加と男</persName>』その人の像を。思うにこれは決して困難なる<ruby><rb>業</rb><rt>ぎょう</rt></ruby>でない。このごとくほとんど毎晩お目にかかっているのだから、<persName ref="#nakakura">中倉</persName>君の眼底には、歴然と映刻せられておるだろうと思う。」</p>
+        <p>「そして題して戦争論者とするがよかろう。」と自分が言う。</p>
+        <p>「<ruby><rb>敗</rb><rt>ま</rt></ruby>け<ruby><rb>戦</rb><rt>いくさ</rt></ruby>の神と言うほうが適当だろう」と<persName ref="#nakakura">中倉</persName>先生はまた、自分が言わんと欲して言うあたわざる事を言う。</p>
+        <p>「題は僕自身がつける、あえて諸君の討論をわずらわさんやだ、僕には僕の題がある。なにしろ御承諾を願いたいものだ。」</p>
+        <p>「やりましょうとも。王侯貴人の像をイジくるよりか、それはわが党の『<persName ref="#kato">加と男</persName>』のために、じゃアない、ためにじゃアない、「<persName ref="#kato">加と男</persName>」をだ、……をだをだ、……。だから承知しましたよ。承知の<ruby><rb>助</rb><rt>すけ</rt></ruby>だ。<persName ref="#kato">加と公</persName>の半身像なんぞ、目をつぶってもできる。これは<ruby><rb>面黒</rb><rt>おもくろ</rt></ruby>い。ぜひやってみましょう、だが。」先生、この時、チョイと目を転じて、メートルグラスの番人を見た、これはおかわりの合図。</p>
+        <p>「だが、……コーツト、（老人は老人らしい、接続詞をつかう。）題はなんといたしましょう、男的閣下。題は、題は。」</p>
+        <p>「だから言うじゃアないか、題はおれが、おれが考えがあるから<ruby><rb>可</rb><rt>エー</rt></ruby>と言うに。」</p>
+        <p>「エーと仰せられましても、エーでごわせんだ。……めんどうくせえ、モーやめた。やめた、……<persName ref="#kato">加と男</persName>の肖像をつくること、やめた！　ねえ、そうじゃアないか<persName ref="#mitsutani"><ruby><rb>満谷</rb><rt>みつたに</rt></ruby></persName>の大将」と<persName ref="#nakakura">中倉</persName>先生の気炎少しくあがる。自分が<persName ref="#mitsutani">満谷</persName>である。</p>
+        <p>「今晩は」と柄にない声を出して、同じく洋服の先生がはいって来て、も一ツの卓に着いて、われわれに黙礼した。これは、すぐ近所の新聞社の二の面の（三の面の人は概して、飲みそうで飲まない）豪傑兼<ruby><rb>愛嬌者</rb><rt>あいきょうもの</rt></ruby>である。けれども連中、だれも黙礼すら返さない、これが常例である。</p>
+        <p>「そうですとも、考えがあるなら言ったがいいじゃアないか、<persName ref="#kato">加藤</persName>さん早く言いたまえ、<persName ref="#nakakura">中倉</persName>先生の<ruby><rb>御意</rb><rt>ぎょい</rt></ruby>に逆ろうては万事休すだ。」と<persName ref="#mitsutani">満谷</persName>なる自分がオダテた。ケシかけた。</p>
+        <p>「号外という題だ。号外、号外！　号外に限る、僕の生命は号外にある。僕自身が号外である。しかりしこうして僕の生命が号外である。号外が出なくなって、僕死せりだ。僕は、これから何をするんだ。」男の顔には例の惨痛の色が現われた。</p>
+        <p>げにしかり、わが<persName ref="#kato">加藤</persName>男爵は何を今後になすべきや。彼はともかくも、衣食において窮するところなし。彼には男爵中の最も貧しき財産ながらも、なおかつ財はこれあり、狂的男爵の露命をつなぐ上において、なんのコマルところはないのであるが、彼は何事もしていない。</p>
+        <p>「<placeName ref="#russia">ロシヤ</placeName>征伐」において初めて彼は生活の意味を得た。と言わんよりもむしろ、国家の大難に当たりてこれを挙国一致で喜憂する事においてその生活の題目を得た。<placeName ref="#portsmouth">ポーツマウス</placeName>以後、それがなくなった。</p>
+        <p>かれ男爵、ただ酒を飲み、白眼にして世上を見てばかりいた<persName ref="#kato">加藤</persName>の<ruby><rb>御前</rb><rt>ごぜん</rt></ruby>は、がっかりしてしまった。世上の人はことごとく、彼ら自身の問題に走り、そがために喜憂すること、戦争以前のそれのごとくに立ち返った。けれども、<ruby><rb>男</rb><rt>だん</rt></ruby>は喜憂目的物を失った。すなわち生活の<ruby><rb>対手</rb><rt>たいしゅ</rt></ruby>、もしくはまと、あるいは生活の扇動者を失った。</p>
+        <p>がっかりしたのも無理はない。彼の戦争論者たるも無理はない。</p>
+        <p>「号外」、なるほど<persName ref="#kato">加藤</persName>男の彫像に題するには何よりの題目だろう、……男爵は例のごとくそのポケットから幾多の新聞の号外を取り出して、</p>
+        <p>「号外と僕に題するにおいて何かあらんだ。ねえ、<persName ref="#nakakura">中倉</persName>さん、ぜひ、その題で僕を、一ツ作ってもらいたい。……こんなふうに読んでいるところならなおさらにうれしい、」と朗読をはじめる。</p>
+        <p>第三報、<date when="1904-04-28">四月二十八日</date>午後三時五分発、同月同日午後九時二十五分着。敵は<placeName ref="#ai-river"><ruby><rb>靉河</rb><rt>あいか</rt></ruby></placeName>右岸に沿い<placeName ref="#jiuliancheng">九連城</placeName>以北に工事を継続しつつあり、<date when="1904-04-28">二十八日</date>も時々砲撃しつつあり、<date when="1904-04-26">二十六日</date><placeName ref="#kurito"><ruby><rb>九里島</rb><rt>きゅうりとう</rt></ruby></placeName>対岸においてたおれたる敵の<ruby><rb>馬匹</rb><rt>ばひつ</rt></ruby>九十五頭、ほかに生馬六頭を得たり――</p>
+        <p>「どうです、<ruby><rb><placeName ref="#yalu">鴨緑江</placeName>大捷</rb><rt>おうりょっこうたいしょう</rt></ruby>の前触れだ、うれしかったねえ、あの時分は。胸がどきどきしたものだ」と、さらに他の号外に移る。</p>
+        <p>――戦死者中福井丸の<persName ref="#hirose-takeo">広瀬</persName>中佐および<persName ref="#sugino-magoshichi"><ruby><rb>杉野</rb><rt>すぎの</rt></ruby></persName><ruby><rb>兵曹長</rb><rt>へいそうちょう</rt></ruby>の最後はすこぶる壮烈にして、同船の<ruby><rb>投錨</rb><rt>とうびょう</rt></ruby>せんとするや、<persName ref="#sugino-magoshichi">杉野</persName>兵曹長は爆発薬を点火するため<ruby><rb>船艙</rb><rt>せんそう</rt></ruby>におりし時、敵の魚形水雷命中したるをもって、ついに戦死せるもののごとく、<persName ref="#hirose-takeo">広瀬</persName>中佐は乗員をボートに乗り移らしめ、<persName ref="#sugino-magoshichi">杉野</persName>兵曹長の見当たらざるため自ら三たび船内を捜索したるも、船体<ruby><rb>漸次</rb><rt>ぜんじ</rt></ruby>に沈没、海水<ruby><rb>甲板</rb><rt>かんぱん</rt></ruby>に達せるをもって、やむを得ずボートにおり、本船を離れ敵弾の<ruby><rb>下</rb><rt>もと</rt></ruby>を退却せる際、一巨弾中佐の頭部をうち、中佐の<ruby><rb>体</rb><rt>たい</rt></ruby>は一片の肉塊を艇内に残して海中に墜落したるものなり――</p>
+        <p>「どうです、聞いていますか」と<persName ref="#kato">加藤</persName>男爵は問えど、いつものことゆえ、聞いている者もあり、相手にせぬ者もある。けれども御当人は例によって夢中である。</p>
+        <p>「どうです、一片の肉塊を艇内に残して海中に墜落したるものなり――なんという悲壮な最後だろう、僕は何度読んでも涙がこぼれる」</p>
+        <p><ruby><rb>酔</rb><rt>え</rt></ruby>いが回って来たのか、それとも感慨に堪えぬのか、目を閉じてうつらうつらとして、<ruby><rb>体</rb><rt>たい</rt></ruby>をゆすぶっている。おそらくこの時が彼の最も楽しい時で、また生きている気持ちのする時であろう。しかし、まもなく目をあけて、</p>
+        <p>「けれども、だめだ、もうだめだ、もう<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>はやんじゃった、古い号外を読むと、なんだか急に年をとってしまって、<ruby><rb>生涯</rb><rt>しょうがい</rt></ruby>がおしまいになったような気がする、……」</p>
+        <p>「妙、妙、そこを彫るのだ、そこだ、なるほど号外の題はおもしろい、なるほど<persName ref="#kato">加藤</persName>君は号外だ、人間の号外だ、号外を読む人間の号外だ」と<persName ref="#nakakura">中倉</persName>翁は感心した声を出す。</p>
+        <p>「そこと言うのは」<persName ref="#kato">加藤</persName>男が聞く。</p>
+        <p>「そことは君が号外を前へ置いてひどくがっかりしているところだ」</p>
+        <p>「それはいけない、そんな気のきかないところは御免をこうむる。――」と<ruby><rb>彼</rb><rt>か</rt></ruby>の暗記しおる公報の一つ、常に朗読というより朗吟する一つを始めた、「敵艦見ゆとの警報に接し、連合艦隊は直ちに出動これを撃滅せんとす、本日天候晴朗なれども波高し――ここを願います、僕はこの号外を読むとたまらなくうれしくなるのだから――ぜひここをやってくださいな。」</p>
+        <p><persName ref="#nakakura">中倉</persName>先生微笑を含んでしばし黙っていたが、</p>
+        <p>「それじゃア、君に限った事はない。だれでも今の公報を読めば愉快だ、それを読んで愉快な気持ちになっておるところなら平凡な事で、別にこの大先生を煩わすに及ぶまいハヽヽヽヽ」</p>
+        <p>「なぜだ、これはおかしい、なぜです。」と<persName ref="#kato">加藤</persName>号外君、せきこんで詰問に及んだ。</p>
+        <p>「号外から縁がなくなって、君ががっかりしておるところが君の君たるところじゃアないか。」</p>
+        <p>「大いにしかりだ」と自分は賛成する。</p>
+        <p>「それじゃア諸君は少しもがっかりしないのか」と<persName ref="#kato">加藤</persName>君大いに不平なり。</p>
+        <p>「どうだろう？　<persName ref="#mitsutani"><ruby><rb>満谷</rb><rt>みつたに</rt></ruby></persName>君、」と<persName ref="#nakakura">中倉</persName>先生も少しこの問いには困ったらしい。自分も即答はしかねたが、<persName ref="#kato">加藤</persName>男爵の事についてかねていくらか考えてみた事のあるので、</p>
+        <p>「そうですねえ、まるきりがっかりしないでもないだろうと思う、というわけは、<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>最中はお互いにだれでも国家の大事だから、朝夕これを念頭に置いて喜憂したのが、それがおやめになったのだから、気抜けの<ruby><rb>体</rb><rt>てい</rt></ruby>にちょっとだれもなったに相違ない、それをがっかりと言えばがっかりでしょう。」</p>
+        <p>「そら見たまえ、僕ばかりじゃアない、決してない、だから、喜んでいるところを彫るのが平凡ならばだ、がっかりしているところだって平凡だろう、どうですね、<persName ref="#nakakura">中倉</persName>の大先生、」と「<persName ref="#kato">加と男</persName>」やや得意なり。</p>
+        <p>「だって君のようなのもない、君は号外が出ないと生きている張り合いがないという次第じゃアないか。」と<persName ref="#nakakura">中倉</persName>翁の答えすこぶるよし。</p>
+        <p>「じゃア僕ががっかりの総代というのか」と<persName ref="#kato">加藤</persName>男また奇抜なことをいう。</p>
+        <p>「だから君はわれわれの号外だ。」と<persName ref="#nakakura">中倉</persName>翁の言、さらに妙。<persName ref="#kato">加藤</persName>君この時、<ruby><rb>椅子</rb><rt>いす</rt></ruby>から飛び上がって、</p>
+        <p>「さすが、<persName ref="#nakakura">中倉</persName>大先生様だ、大いによかろう、がっかりしたところ、大いによかろう、ぜひ願います、題して号外、妙、妙、」と大満足なり。</p>
+        <p>それから一時間ばかり、さらに談じかつ飲み、<persName ref="#nakakura">中倉</persName>翁は<ruby><rb>一足</rb><rt>ひとあし</rt></ruby>お先に、「<persName ref="#kato">加と男</persName>」閣下はグウグウ卓にもたれて寝てしまったので、自分はホールを出た。</p>
+        <p><placeName ref="#ginza">銀座</placeName>は<placeName ref="#ginza">銀座</placeName>に違いないが、なるほどわが「号外」君も無理はない、市街までがっかりしているようにも見える。<date when="1904">三十七年</date>から<date when="1905">八年</date>の中ごろまでは、通りがかりの赤の他人にさえ言葉をかけてみたいようであったのが、今ではまたもとの赤の他人どうしの往来になってしまった。</p>
+        <p>そこで自分は<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>でなく、ほかに何か、<ruby><rb>戦争</rb><rt>いくさ</rt></ruby>の時のような心持ちにみんながなって暮らす方法はないものかしらんと考えた。考えながら歩いた。（完）</p>
+      </div>
+    </body>
+  </text>
+</TEI>
