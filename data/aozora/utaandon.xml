@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>歌行燈</title>
+        <author>泉鏡花</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>歌行燈</title><author>泉鏡花</author>
+          <note>青空文庫。底本：「泉鏡花集成6」ちくま文庫、筑摩書房。1996（平成8）年3月21日第1刷発行。底本の親本：「鏡花全集」岩波書店。1942（昭和17）年7月刊行開始。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000050/card3587.html">https://www.aozora.gr.jp/cards/000050/card3587.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="genzaburo">
+        <persName>恩地源三郎</persName>
+        <note>能楽師。当流第一の老手で喜多八の叔父(伯父)。六十二三歳。伊勢参宮の道中を『膝栗毛』になぞらえ、自ら「弥次郎兵衛」と称する</note>
+      </person>
+      <person xml:id="kitahachi">
+        <persName>恩地喜多八</persName>
+        <note>源三郎の甥(養子)。能楽界の逸材だったが、按摩の宗山を辱め屈死させたため勘当され、門附(かどづけ)に身を落とす。作中の語り手の一人</note>
+      </person>
+      <person xml:id="sesso">
+        <persName>辺見雪叟</persName>
+        <note>本名 辺見秀之進。七十八歳の小鼓の名人で、孫に代を譲って隠居。源三郎の道連れ。作中では戯れに「捻平」と呼ばれる</note>
+      </person>
+      <person xml:id="soyama">
+        <persName>宗山</persName>
+        <note>伊勢山田・古市の按摩鍼。本名 惣市。謡の名人を自任する高慢な盲人で、喜多八に芸で辱められ、その夜のうちに屈死する</note>
+      </person>
+      <person xml:id="omie">
+        <persName>お三重</persName>
+        <note>桑名・島屋の新妓。伊勢の生まれで宗山の遺児。鳥羽の廓を経て桑名へ売られ、門附の喜多八に舞を仕込まれる</note>
+      </person>
+      <person xml:id="osen">
+        <persName>お千</persName>
+        <note>湊屋の座敷に出る芸妓。三味線を弾き、お三重をかばう年増の姉さん</note>
+      </person>
+      <person xml:id="kino">
+        <persName>喜野</persName>
+        <note>湊屋の小女(こおんな)。座敷の使い走りをする</note>
+      </person>
+      <person xml:id="osode">
+        <persName>お袖</persName>
+        <note>宗山の娘。喜多八が宗山の家で見かけた島田髷の娘。宗山は「袖や」と呼ぶ(お三重との同一性は本文中で明示されない)</note>
+      </person>
+      <person xml:id="otohime">
+        <persName>乙姫</persName>
+        <note>竜宮の乙姫。伝説上の存在としての言及</note>
+      </person>
+      <person xml:id="kannon">
+        <persName>観音薩埵</persName>
+        <note>観世音菩薩。謡曲『海人』の詞章「南無や志渡寺の観音薩埵」中の言及</note>
+      </person>
+      <person xml:id="tadamichi">
+        <persName>法性寺入道前の関白太政大臣</persName>
+        <note>藤原忠通(1097-1164)。小倉百人一首の歌人名義。車夫の長口上のなかで実在人物への言及として現れる</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="kuwana">
+        <placeName>桑名</placeName>
+        <location><geo>35.0648 136.6836</geo></location>
+        <note>伊勢桑名(現三重県桑名市)・概値。物語の主舞台</note>
+      </place>
+      <place xml:id="kawaguchi-minatoya">
+        <placeName>湊屋</placeName>
+        <note>桑名・川口の上旅籠屋(作中の宿)。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="shimaya">
+        <placeName>島屋</placeName>
+        <note>桑名の芸妓屋(「島家」とも表記)。お三重の抱え主。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="masuya">
+        <placeName>升屋</placeName>
+        <note>桑名の商家(屋号)。饂飩屋が掛取りを待つ相手。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="ise">
+        <placeName>伊勢</placeName>
+        <location><geo>34.4879 136.7093</geo></location>
+        <note>伊勢国・伊勢神宮を含む地域名(現三重県伊勢市周辺)・概値</note>
+      </place>
+      <place xml:id="yamada">
+        <placeName>山田</placeName>
+        <location><geo>34.487 136.7093</geo></location>
+        <note>伊勢山田(現伊勢市中心部)・概値</note>
+      </place>
+      <place xml:id="furuichi">
+        <placeName>古市</placeName>
+        <location><geo>34.4756 136.735</geo></location>
+        <note>伊勢古市(現伊勢市古市町)。旧遊廓・芝居町・概値</note>
+      </place>
+      <place xml:id="onoemachi">
+        <placeName>尾上町</placeName>
+        <note>伊勢山田の町名。藤屋のあった町。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="shinmachi">
+        <placeName>新町</placeName>
+        <note>伊勢山田の町名。お三重の前の稼ぎ先。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="fujiya">
+        <placeName>藤屋</placeName>
+        <note>伊勢山田・尾上町の旅籠屋(作中の宿)。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="gojikan">
+        <placeName>五二館</placeName>
+        <note>伊勢参宮の際に泊まった旅館(作中の宿)。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="asahikan">
+        <placeName>朝日館</placeName>
+        <note>二見の旅館(作中の宿)。実在を確認できないため座標なし</note>
+      </place>
+      <place xml:id="naiku">
+        <placeName>内宮</placeName>
+        <location><geo>34.4549 136.7256</geo></location>
+        <note>伊勢神宮内宮(皇大神宮)・概値</note>
+      </place>
+      <place xml:id="ujibashi">
+        <placeName>宇治橋</placeName>
+        <location><geo>34.4576 136.725</geo></location>
+        <note>伊勢神宮内宮の宇治橋・概値</note>
+      </place>
+      <place xml:id="isuzugawa">
+        <placeName>五十鈴川</placeName>
+        <location><geo>34.46 136.725</geo></location>
+        <note>内宮を流れる五十鈴川・概値</note>
+      </place>
+      <place xml:id="kamijiyama">
+        <placeName>神路山</placeName>
+        <location><geo>34.44 136.73</geo></location>
+        <note>内宮の背後の神路山・概値</note>
+      </place>
+      <place xml:id="ainoyama">
+        <placeName>相の山</placeName>
+        <location><geo>34.474 136.729</geo></location>
+        <note>伊勢古市の坂「間の山(あいのやま)」・概値</note>
+      </place>
+      <place xml:id="asamayama">
+        <placeName>浅熊山</placeName>
+        <location><geo>34.4525 136.7853</geo></location>
+        <note>朝熊山(朝熊ヶ岳、555m)。本文の表記は「浅熊山」・概値</note>
+      </place>
+      <place xml:id="tsuzumigatake">
+        <placeName>鼓ヶ嶽</placeName>
+        <note>伊勢古市の近くにあるという山。比定に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="futami">
+        <placeName>二見</placeName>
+        <location><geo>34.4977 136.7861</geo></location>
+        <note>伊勢二見(現伊勢市二見町)。二見ヶ浦を含む・概値</note>
+      </place>
+      <place xml:id="sakaibashi">
+        <placeName>堺橋</placeName>
+        <note>二見から鳥羽への道中の橋。所在を特定できないため座標なし</note>
+      </place>
+      <place xml:id="ikenoura">
+        <placeName>池の浦</placeName>
+        <location><geo>34.493 136.813</geo></location>
+        <note>伊勢市二見町池の浦・概値</note>
+      </place>
+      <place xml:id="okinoshima">
+        <placeName>沖の島</placeName>
+        <note>二見・鳥羽間の海上の島とみられる。比定に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="kamigori">
+        <placeName>上郡</placeName>
+        <note>二見から志摩へ向かう道中の地名。比定に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="hiyoriyama">
+        <placeName>日和山</placeName>
+        <location><geo>34.482 136.84</geo></location>
+        <note>鳥羽の日和山・概値</note>
+      </place>
+      <place xml:id="toba">
+        <placeName>鳥羽</placeName>
+        <location><geo>34.4813 136.8434</geo></location>
+        <note>志摩鳥羽(現三重県鳥羽市)・概値。お三重が身を沈めた廓のあった地</note>
+      </place>
+      <place xml:id="shima">
+        <placeName>志摩</placeName>
+        <location><geo>34.33 136.83</geo></location>
+        <note>旧国名(志摩・現三重県東部)・概値</note>
+      </place>
+      <place xml:id="mie">
+        <placeName>三重県</placeName>
+        <location><geo>34.7303 136.5086</geo></location>
+        <note>三重県(県庁所在地付近)・概値</note>
+      </place>
+      <place xml:id="shichiri">
+        <placeName>七里のわたし</placeName>
+        <location><geo>35.063 136.689</geo></location>
+        <note>七里の渡し(宮〜桑名の海路)の桑名側渡船場・概値</note>
+      </place>
+      <place xml:id="atsuta">
+        <placeName>熱田</placeName>
+        <location><geo>35.1275 136.9086</geo></location>
+        <note>熱田神宮(現名古屋市熱田区)・概値。本文の「熱田の神」</note>
+      </place>
+      <place xml:id="ibigawa">
+        <placeName>揖斐川</placeName>
+        <location><geo>35.05 136.69</geo></location>
+        <note>揖斐川(桑名の河口付近)・概値</note>
+      </place>
+      <place xml:id="nagoya">
+        <placeName>名古屋</placeName>
+        <location><geo>35.1815 136.9066</geo></location>
+        <note>現名古屋市・概値</note>
+      </place>
+      <place xml:id="osu">
+        <placeName>大須</placeName>
+        <location><geo>35.1596 136.8991</geo></location>
+        <note>名古屋の大須(大須観音周辺)・概値</note>
+      </place>
+      <place xml:id="yokkaichi">
+        <placeName>四日市</placeName>
+        <location><geo>34.965 136.6244</geo></location>
+        <note>現三重県四日市市・概値</note>
+      </place>
+      <place xml:id="kameyama">
+        <placeName>亀山</placeName>
+        <location><geo>34.8556 136.4514</geo></location>
+        <note>現三重県亀山市・概値</note>
+      </place>
+      <place xml:id="tomida">
+        <placeName>富田</placeName>
+        <location><geo>34.9976 136.6357</geo></location>
+        <note>伊勢富田(現四日市市富田)・概値</note>
+      </place>
+      <place xml:id="tadosan">
+        <placeName>多度山</placeName>
+        <location><geo>35.12 136.61</geo></location>
+        <note>多度山(403m、現桑名市多度町)・概値</note>
+      </place>
+      <place xml:id="gozaisho">
+        <placeName>御在所ヶ嶽</placeName>
+        <location><geo>35.02 136.42</geo></location>
+        <note>鈴鹿山脈の御在所岳(1212m)・概値</note>
+      </place>
+      <place xml:id="kamagatake">
+        <placeName>鎌ヶ嶽</placeName>
+        <location><geo>34.995 136.427</geo></location>
+        <note>鈴鹿山脈の鎌ヶ岳(1161m)・概値</note>
+      </place>
+      <place xml:id="kanmurigatake">
+        <placeName>冠ヶ嶽</placeName>
+        <note>鈴鹿山脈の峰と解されるが、比定に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="oizumihara">
+        <placeName>大泉原</placeName>
+        <location><geo>35.15 136.56</geo></location>
+        <note>伊勢大泉原(現三重県いなべ市大泉)・概値</note>
+      </place>
+      <place xml:id="inabe">
+        <placeName>員弁</placeName>
+        <location><geo>35.12 136.55</geo></location>
+        <note>員弁郡(現三重県いなべ市)・概値</note>
+      </place>
+      <place xml:id="ageki">
+        <placeName>阿下岐</placeName>
+        <location><geo>35.178 136.525</geo></location>
+        <note>阿下喜(現三重県いなべ市北勢町阿下喜)。本文の表記は「阿下岐」・概値</note>
+      </place>
+      <place xml:id="ogaki">
+        <placeName>大垣</placeName>
+        <location><geo>35.36 136.617</geo></location>
+        <note>美濃大垣(現岐阜県大垣市)・概値。本文は「大垣街道」</note>
+      </place>
+      <place xml:id="gifu">
+        <placeName>岐阜</placeName>
+        <location><geo>35.4232 136.7607</geo></location>
+        <note>現岐阜市・概値</note>
+      </place>
+      <place xml:id="hida">
+        <placeName>飛騨</placeName>
+        <location><geo>36.2 137.2</geo></location>
+        <note>旧国名(岐阜県北部)・概値。本文は「飛騨越」</note>
+      </place>
+      <place xml:id="hokkoku">
+        <placeName>北国</placeName>
+        <location><geo>36.5 136.8</geo></location>
+        <note>北国筋(北陸地方)・地域名・概値</note>
+      </place>
+      <place xml:id="matsusaka">
+        <placeName>松坂</placeName>
+        <location><geo>34.5779 136.5275</geo></location>
+        <note>伊勢松坂(現三重県松阪市)・概値。本文の表記は「松坂」</note>
+      </place>
+      <place xml:id="irako">
+        <placeName>伊良子ヶ崎</placeName>
+        <location><geo>34.5806 137.0086</geo></location>
+        <note>伊良湖岬(現愛知県田原市)・概値。本文の表記は「伊良子ヶ崎」「伊良子崎」</note>
+      </place>
+      <place xml:id="yajima">
+        <placeName>弥島</placeName>
+        <note>鳥羽近海の島とみられるが、比定に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="imagire">
+        <placeName>今切</placeName>
+        <location><geo>34.682 137.585</geo></location>
+        <note>今切の渡し(遠江・新居〜舞坂)・概値</note>
+      </place>
+      <place xml:id="hakone">
+        <placeName>箱根</placeName>
+        <location><geo>35.2324 139.1069</geo></location>
+        <note>箱根(現神奈川県箱根町)・概値</note>
+      </place>
+      <place xml:id="sumidagawa">
+        <placeName>隅田川</placeName>
+        <location><geo>35.71 139.8</geo></location>
+        <note>隅田川(現東京都)・概値</note>
+      </place>
+      <place xml:id="kamigata">
+        <placeName>上方</placeName>
+        <location><geo>34.7 135.5</geo></location>
+        <note>上方(京・大坂を中心とする関西)・地域名・概値。本文は「上方筋」</note>
+      </place>
+      <place xml:id="shikoku">
+        <placeName>四国</placeName>
+        <location><geo>33.75 133.5</geo></location>
+        <note>四国・地域名・概値。「四国の果にも」という慣用的言及</note>
+      </place>
+      <place xml:id="tokaido">
+        <placeName>東海道</placeName>
+        <note>旧東海道(街道名)。広域にわたるため座標なし</note>
+      </place>
+      <place xml:id="edo">
+        <placeName>江戸</placeName>
+        <location><geo>35.6852 139.7528</geo></location>
+        <note>江戸(現東京)・概値。能の宗家の所在として言及</note>
+      </place>
+      <place xml:id="tokyo">
+        <placeName>東京</placeName>
+        <location><geo>35.6804 139.769</geo></location>
+        <note>東京・概値</note>
+      </place>
+      <place xml:id="shinshu">
+        <placeName>信州</placeName>
+        <location><geo>36.1 138.0</geo></location>
+        <note>旧国名(信濃・現長野県)・概値</note>
+      </place>
+      <place xml:id="kyo">
+        <placeName>京</placeName>
+        <location><geo>35.0116 135.7681</geo></location>
+        <note>京(京都)・概値。本文は「京大阪と経めぐって」</note>
+      </place>
+      <place xml:id="osaka">
+        <placeName>大阪</placeName>
+        <location><geo>34.6937 135.5023</geo></location>
+        <note>大阪・概値</note>
+      </place>
+      <place xml:id="hakata">
+        <placeName>博多</placeName>
+        <location><geo>33.59 130.42</geo></location>
+        <note>筑前博多(現福岡市博多区)・概値</note>
+      </place>
+      <place xml:id="chikuzen">
+        <placeName>筑前</placeName>
+        <location><geo>33.6 130.4</geo></location>
+        <note>旧国名(福岡県西部)・概値。博多節の詞章に現れる「筑前の沖」</note>
+      </place>
+      <place xml:id="yanagimachi">
+        <placeName>柳町</placeName>
+        <note>博多節の詞章中の地名(博多の旧遊里)。所在に確証が持てないため座標なし</note>
+      </place>
+      <place xml:id="shidoji">
+        <placeName>志渡寺</placeName>
+        <location><geo>34.3222 134.1783</geo></location>
+        <note>讃岐の志度寺(現香川県さぬき市)・概値。謡曲『海人』の詞章中の言及</note>
+      </place>
+      <place xml:id="ryugu">
+        <placeName>竜宮</placeName>
+        <note>伝説上の海底の宮(座標なし)。謡曲『海人』の詞章および比喩として現れる</note>
+      </place>
+      <place xml:id="tatsutagawa">
+        <placeName>立田川</placeName>
+        <location><geo>34.6 135.7</geo></location>
+        <note>竜田川(現奈良県生駒郡)。紅葉の歌枕。小鼓の紅い調緒の比喩として現れる。本文の表記は「立田川」・概値</note>
+      </place>
+      <place xml:id="nihon">
+        <placeName>日本</placeName>
+        <location><geo>36.0 138.0</geo></location>
+        <note>国名・概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>歌行燈</head>
+        <p>一</p>
+        <p><ruby><rb>宮重</rb><rt>みやしげ</rt></ruby>大根のふとしく立てし宮柱は、ふろふきの<placeName ref="#atsuta">熱田</placeName>の神のみそなわす、<placeName ref="#shichiri">七里のわたし</placeName><ruby><rb>浪</rb><rt>なみ</rt></ruby>ゆたかにして、来往の渡船難なく<placeName ref="#kuwana">桑名</placeName>につきたる<ruby><rb>悦</rb><rt>よろこ</rt></ruby>びのあまり……</p>
+        <p>と<ruby><rb>口誦</rb><rt>くちずさ</rt></ruby>むように<ruby><rb>独言</rb><rt>ひとりごと</rt></ruby>の、<ruby><rb>膝栗毛</rb><rt>ひざくりげ</rt></ruby>五編の上の読初め、<date when="--11">霜月十日あまり</date>の初夜。<ruby><rb>中空</rb><rt>なかぞら</rt></ruby>は<ruby><rb>冴切</rb><rt>さえき</rt></ruby>って、星が<ruby><rb>水垢離</rb><rt>みずごり</rt></ruby>取りそうな<ruby><rb>月明</rb><rt>つきあかり</rt></ruby>に、踏切の桟橋を渡る影高く、<ruby><rb>灯</rb><rt>ともしび</rt></ruby>ちらちらと目の下に、<ruby><rb>遠近</rb><rt>おちこち</rt></ruby>の<ruby><rb>樹立</rb><rt>こだち</rt></ruby>の骨ばかりなのを<ruby><rb>視</rb><rt>なが</rt></ruby>めながら、<placeName ref="#kuwana">桑名</placeName>の<ruby><rb>停車場</rb><rt>ステエション</rt></ruby>へ下りた旅客がある。</p>
+        <p>月の影には<ruby><rb>相応</rb><rt>ふさわ</rt></ruby>しい、<ruby><rb>真黒</rb><rt>まっくろ</rt></ruby>な<ruby><rb>外套</rb><rt>がいとう</rt></ruby>の、<ruby><rb>痩</rb><rt>や</rt></ruby>せた<ruby><rb>身体</rb><rt>からだ</rt></ruby>にちと広過ぎるを緩く着て、焦茶色の中折帽、真新しいはさて<ruby><rb>可</rb><rt>い</rt></ruby>いが、<ruby><rb>馴</rb><rt>な</rt></ruby>れない<ruby><rb>天窓</rb><rt>あたま</rt></ruby>に山を立てて、<ruby><rb>鍔</rb><rt>つば</rt></ruby>をしっくりと耳へ<ruby><rb>被</rb><rt>かぶ</rt></ruby>さるばかり深く<ruby><rb>嵌</rb><rt>は</rt></ruby>めた、あまつさえ、風に取られまいための<ruby><rb>留紐</rb><rt>とめひも</rt></ruby>を、ぶらりと<ruby><rb>皺</rb><rt>しな</rt></ruby>びた頬へ下げた<ruby><rb>工合</rb><rt>ぐあい</rt></ruby>が、<ruby><rb>時世</rb><rt>ときよ</rt></ruby>なれば、道中、笠も<ruby><rb>載</rb><rt>の</rt></ruby>せられず、と<ruby><rb>断念</rb><rt>あきら</rt></ruby>めた風に見える。年配六十二三の、気ばかり若い<persName ref="#genzaburo"><ruby><rb>弥次郎兵衛</rb><rt>やじろべえ</rt></ruby></persName>。</p>
+        <p>さまで重荷ではないそうで、唐草模様の<ruby><rb>天鵝絨</rb><rt>びろうど</rt></ruby>の<ruby><rb>革鞄</rb><rt>かばん</rt></ruby>に信玄袋を<ruby><rb>引搦</rb><rt>ひきから</rt></ruby>めて、こいつを片手。片手に<ruby><rb>蝙蝠傘</rb><rt>こうもりがさ</rt></ruby>を<ruby><rb>支</rb><rt>つ</rt></ruby>きながら、</p>
+        <p>「さて……悦びのあまり名物の<ruby><rb>焼蛤</rb><rt>やきはまぐり</rt></ruby>に酒<ruby><rb>汲</rb><rt>く</rt></ruby>みかわして、……と<ruby><rb>本文</rb><rt>ほんもん</rt></ruby>にある<ruby><rb>処</rb><rt>ところ</rt></ruby>さ、<ruby><rb>旅籠屋</rb><rt>はたごや</rt></ruby>へ<ruby><rb>着</rb><rt>ちゃく</rt></ruby>の前に、停車場前の茶店か何かで、一本傾けて参ろうかな。（どうだ、<ruby><rb>喜多八</rb><rt>きだはち</rt></ruby>。）と行きたいが、<ruby><rb>其許</rb><rt>そのもと</rt></ruby>は年上で、ちとそりが合わぬ。だがね、家元の弥次郎兵衛どの事も、<placeName ref="#ise">伊勢</placeName>路では、これ、<ruby><rb>同伴</rb><rt>つれ</rt></ruby>の喜多八にはぐれて、一人旅のとぼとぼと、棚からぶら下った宿屋を尋ねあぐんで、泣きそうになったとあるです。ところで其許は、道中松並木で出来た道づれの格だ。その道づれと、<ruby><rb>何</rb><rt>な</rt></ruby>んと一口<ruby><rb>遣</rb><rt>や</rt></ruby>ろうではないか、ええ、<persName ref="#sesso"><ruby><rb>捻平</rb><rt>ねじべい</rt></ruby></persName>さん。」</p>
+        <p>「また、言うわ。」</p>
+        <p>と苦い顔を渋くした、<ruby><rb>同伴</rb><rt>つれ</rt></ruby>の老人は、まだ、その上を四つ五つで、やがて<ruby><rb>七十</rb><rt>ななそじ</rt></ruby>なるべし。<ruby><rb>臘虎</rb><rt>らっこ</rt></ruby>皮の<ruby><rb>鍔</rb><rt>つば</rt></ruby>なし古帽子を、白い<ruby><rb>眉尖</rb><rt>まゆさき</rt></ruby>深々と<ruby><rb>被</rb><rt>かぶ</rt></ruby>って、鼠の<ruby><rb>羅紗</rb><rt>らしゃ</rt></ruby>の<ruby><rb>道行</rb><rt>みちゆき</rt></ruby>着た、<ruby><rb>股引</rb><rt>ももひき</rt></ruby>を太く白足袋の<ruby><rb>雪駄穿</rb><rt>せったばき</rt></ruby>。色<ruby><rb>褪</rb><rt>あ</rt></ruby>せた<ruby><rb>鬱金</rb><rt>うこん</rt></ruby>の風呂敷、<ruby><rb>真中</rb><rt>まんなか</rt></ruby>を紐で<ruby><rb>結</rb><rt>ゆわ</rt></ruby>えた包を、<ruby><rb>西行背負</rb><rt>さいぎょうじょい</rt></ruby>に胸で結んで、これも信玄袋を手に一つ。片手に<ruby><rb>杖</rb><rt>つえ</rt></ruby>は<ruby><rb>支</rb><rt>つ</rt></ruby>いたけれども、足腰はしゃんとした、人柄の<ruby><rb>可</rb><rt>い</rt></ruby>いお<ruby><rb>爺様</rb><rt>じいさま</rt></ruby>。</p>
+        <p>「その<persName ref="#sesso">捻平</persName>は<ruby><rb>止</rb><rt>よ</rt></ruby>しにさっしゃい、人聞きが悪うてならん。道づれは<ruby><rb>可</rb><rt>よ</rt></ruby>けれども、道中松並木で出来たと言うで、何とやら、その、<ruby><rb>私</rb><rt>わし</rt></ruby>が<ruby><rb>護摩</rb><rt>ごま</rt></ruby>の灰ででもあるように聞えるじゃ。」と杖を一つとんと支くと、<ruby><rb>後</rb><rt>あと</rt></ruby>の<ruby><rb>雁</rb><rt>がん</rt></ruby>が<ruby><rb>前</rb><rt>さき</rt></ruby>になって、改札口を<ruby><rb>早々</rb><rt>さっさ</rt></ruby>と出る。</p>
+        <p>わざと一足<ruby><rb>後</rb><rt>うしろ</rt></ruby>へ開いて、隠居が意見に急ぐような、<ruby><rb>連</rb><rt>つれ</rt></ruby>の後姿をじろりと見ながら、</p>
+        <p>「それ、そこがそれ<persName ref="#sesso">捻平</persName>さね。松並木で出来たと云って、何もごまのはいには限るまい。もっとも若い内は遣ったかも知れんてな。ははは、」</p>
+        <p>人も無げに笑う手から、<ruby><rb>引手繰</rb><rt>ひったく</rt></ruby>るように切符を取られて、はっと駅夫の顔を見て、きょとんと<ruby><rb>生真面目</rb><rt>きまじめ</rt></ruby>。</p>
+        <p>成程、この<ruby><rb>小父者</rb><rt>おじご</rt></ruby>が改札口を出た<ruby><rb>殿</rb><rt>しんがり</rt></ruby>で、何をふらふら道草したか、汽車はもう遠くの方で、名物焼蛤の白い煙を、夢のように月下に吐いて、<ruby><rb>真蒼</rb><rt>まっさお</rt></ruby>な野路を光って通る。……</p>
+        <p>「やがてここを<ruby><rb>立出</rb><rt>たちい</rt></ruby>で<ruby><rb>辿</rb><rt>たど</rt></ruby>り<ruby><rb>行</rb><rt>ゆ</rt></ruby>くほどに、旅人の唄うを聞けば、」</p>
+        <p>と小父者、出た処で、けろりとしてまた<ruby><rb>口誦</rb><rt>くちずさ</rt></ruby>んで、</p>
+        <p>「<persName ref="#sesso">捻平</persName>さん、<ruby><rb>可</rb><rt>い</rt></ruby>い文句だ、これさ。……</p>
+        <p><ruby><rb>時雨蛤</rb><rt>しぐれはまぐり</rt></ruby>みやげにさんせ</p>
+        <p><ruby><rb>宮</rb><rt>みや</rt></ruby>のおかめが、……ヤレコリャ、よオしよし。」</p>
+        <p>「<ruby><rb>旦那</rb><rt>だんな</rt></ruby>、お供はどうで、」</p>
+        <p>と<ruby><rb>停車場</rb><rt>ステエション</rt></ruby>前の夜の<ruby><rb>隈</rb><rt>くま</rt></ruby>に、四五台<ruby><rb>朦朧</rb><rt>もうろう</rt></ruby>と寂しく並んだ車の中から、車夫が一人、腕組みをして、のっそり出る。</p>
+        <p>これを聞くと<persName ref="#genzaburo">弥次郎兵衛</persName>、口を<ruby><rb>捻</rb><rt>ね</rt></ruby>じて<ruby><rb>片頬笑</rb><rt>かたほえ</rt></ruby>み、</p>
+        <p>「<ruby><rb>有難</rb><rt>ありがて</rt></ruby>え、図星という処へ出て来たぜ。が、同じ事を、これ、（旦那衆戻り馬乗らんせんか、）となぜ言わぬ。」</p>
+        <p>「へい、」と言ったが、車夫は変哲もない<ruby><rb>顔色</rb><rt>がんしょく</rt></ruby>で、そのまま棒立。</p>
+        <p>二</p>
+        <p><ruby><rb>小父者</rb><rt>おじご</rt></ruby>は外套の袖をふらふらと、酔ったような<ruby><rb>風附</rb><rt>ふうつき</rt></ruby>で、</p>
+        <p>「<ruby><rb>遣</rb><rt>や</rt></ruby>れよ、さあ、（戻馬乗らんせんか、）と、<ruby><rb>後生</rb><rt>ごしょう</rt></ruby>だから一つ気取ってくれ。」</p>
+        <p>「へい、（戻馬乗らせんか、）と言うでございますかね、戻馬乗らんせんか。」</p>
+        <p>と早口で車夫は<ruby><rb>実体</rb><rt>じってい</rt></ruby>。</p>
+        <p>「はははは、<persName ref="#tadamichi"><ruby><rb>法性寺入道前</rb><rt>ほうしょうじのにゅうどうさき</rt></ruby>の<ruby><rb>関白</rb><rt>かんぱく</rt></ruby><ruby><rb>太政大臣</rb><rt>だじょうだいじん</rt></ruby></persName>と言ったら腹を立ちやった、<persName ref="#tadamichi">法性寺入道前の関白太政大臣</persName>様と来ている。」とまたアハハと笑う。</p>
+        <p>「さあ、もし召して下さい。」</p>
+        <p>と話は<ruby><rb>極</rb><rt>きま</rt></ruby>った<ruby><rb>筈</rb><rt>はず</rt></ruby>にして、委細構わず、車夫は<ruby><rb>取着</rb><rt>とッつ</rt></ruby>いて<ruby><rb>梶棒</rb><rt>かじぼう</rt></ruby>を差向ける。</p>
+        <p>小父者、目を据えてわざと見て、</p>
+        <p>「ヤレコリャ車なんぞ、よオしよし。」</p>
+        <p>「いや、よしではない。」</p>
+        <p>とそこに一人つくねんと、<ruby><rb>添竹</rb><rt>そえだけ</rt></ruby>に、その<ruby><rb>枯菊</rb><rt>かれぎく</rt></ruby>の<ruby><rb>縋</rb><rt>すが</rt></ruby>った、霜の<ruby><rb>翁</rb><rt>おきな</rt></ruby>は、旅のあわれを、月空に知った姿で、</p>
+        <p>「早く車を雇わっしゃれ。手荷物はあり、勝手知れぬ町の中を、何を<ruby><rb>当</rb><rt>あて</rt></ruby>にぶらつこうで。」と<ruby><rb>口叱言</rb><rt>くちこごと</rt></ruby>で半ば<ruby><rb>呟</rb><rt>つぶや</rt></ruby>く。</p>
+        <p>「いや、まず一つ、（よヲしよし、）と切出さんと、本文に合わぬてさ。処へ喜多八が口を出して、（しょうろく<ruby><rb>四銭</rb><rt>しもん</rt></ruby>で乗るべいか。）<ruby><rb>馬士</rb><rt>うまかた</rt></ruby>が、（そんなら、ようせよせ。）と言いやす、馬がヒインヒインと<ruby><rb>嘶</rb><rt>いば</rt></ruby>う。」</p>
+        <p>「若いもの、その人に構うまい。車を早く。川口の<placeName ref="#kawaguchi-minatoya"><ruby><rb>湊屋</rb><rt>みなとや</rt></ruby></placeName>と言う<ruby><rb>旅籠屋</rb><rt>はたごや</rt></ruby>へ<ruby><rb>行</rb><rt>ゆ</rt></ruby>くのじゃ。」</p>
+        <p>「ええ、二台でござりますね。」</p>
+        <p>「何んでも構わぬ、<ruby><rb>私</rb><rt>わし</rt></ruby>は急ぐに……」と<ruby><rb>後向</rb><rt>うしろむ</rt></ruby>きに<ruby><rb>掴</rb><rt>つか</rt></ruby>まって、乗った雪駄を<ruby><rb>爪立</rb><rt>つまだ</rt></ruby>てながら、<ruby><rb>蹴込</rb><rt>けこ</rt></ruby>みへ入れた革鞄を<ruby><rb>跨</rb><rt>また</rt></ruby>ぎ、首に掛けた風呂敷包みを外ずしもしないで<ruby><rb>揺</rb><rt>ゆす</rt></ruby>っておく。</p>
+        <p>「<ruby><rb>一蓮託生</rb><rt>いちれんたくしょう</rt></ruby>、死なば諸共、<persName ref="#sesso">捻平</persName>待ちやれ。」と、くすくす笑って、小父者も車にしゃんと乗る。……</p>
+        <p>「<placeName ref="#kawaguchi-minatoya">湊屋</placeName>だえ、」</p>
+        <p>「おいよ。」</p>
+        <p>で、二台、月に<ruby><rb>提灯</rb><rt>かんばん</rt></ruby>の<ruby><rb>灯</rb><rt>あかり</rt></ruby>黄色に、<ruby><rb>広場</rb><rt>ひろっぱ</rt></ruby>の端へ<ruby><rb>駈込</rb><rt>かけこ</rt></ruby>むと……<ruby><rb>石高路</rb><rt>いしたかみち</rt></ruby>をがたがたしながら、板塀の小路、土塀の辻、<ruby><rb>径路</rb><rt>ちかみち</rt></ruby>を縫うと見えて、寂しい処幾曲り。やがて二階屋が建続き、町幅が糸のよう、月の光を<ruby><rb>廂</rb><rt>ひさし</rt></ruby>で<ruby><rb>覆</rb><rt>おお</rt></ruby>うて、両側の暗い軒に、<ruby><rb>掛行燈</rb><rt>かけあんどん</rt></ruby>が<ruby><rb>疎</rb><rt>まばら</rt></ruby>に白く、枯柳に星が乱れて、壁の<ruby><rb>蒼</rb><rt>あお</rt></ruby>いのが処々。長い通りの突当りには、火の見の<ruby><rb>階子</rb><rt>はしご</rt></ruby>が、<ruby><rb>遠山</rb><rt>とおやま</rt></ruby>の霧を破って、<ruby><rb>半鐘</rb><rt>はんしょう</rt></ruby>の形<ruby><rb>活</rb><rt>い</rt></ruby>けるがごとし。……火の用心さっさりやしょう、<ruby><rb>金棒</rb><rt>かなぼう</rt></ruby>の音に夜更けの景色。霜枯時の事ながら、月は格子にあるものを、<placeName ref="#kuwana">桑名</placeName>の<ruby><rb>妓</rb><rt>こ</rt></ruby>達は宵寝と見える、寂しい<ruby><rb>新地</rb><rt>くるわ</rt></ruby>へ<ruby><rb>差掛</rb><rt>さしかか</rt></ruby>った。</p>
+        <p><ruby><rb>輻</rb><rt>やぼね</rt></ruby>の下に流るる道は、細き水銀の川のごとく、柱の黒い家の<ruby><rb>状</rb><rt>さま</rt></ruby>、あたかも<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>が<ruby><rb>祭礼</rb><rt>まつり</rt></ruby>をして、<ruby><rb>白張</rb><rt>しらはり</rt></ruby>の<ruby><rb>地口行燈</rb><rt>じぐちあんどん</rt></ruby>を掛連ねた、鉄橋を渡るようである。</p>
+        <p>爺様の乗った前の車が、はたと<ruby><rb>留</rb><rt>とま</rt></ruby>った。</p>
+        <p>あれ聞け……<ruby><rb>寂寞</rb><rt>ひっそり</rt></ruby>とした<ruby><rb>一条廓</rb><rt>ひとすじくるわ</rt></ruby>の、<ruby><rb>棟瓦</rb><rt>むねがわら</rt></ruby>にも響き転げる、<ruby><rb>轍</rb><rt>わだち</rt></ruby>の音も留まるばかり、<ruby><rb>灘</rb><rt>なだ</rt></ruby>の浪を川に寄せて、千里の<ruby><rb>果</rb><rt>はて</rt></ruby>も同じ水に、<placeName ref="#chikuzen">筑前</placeName>の沖の月影を、<ruby><rb>白銀</rb><rt>しろがね</rt></ruby>の糸で手繰ったように、星に<ruby><rb>晃</rb><rt>きら</rt></ruby>めく唄の声。</p>
+        <p><ruby><rb>博多帯</rb><rt>はかたおび</rt></ruby>しめ、<ruby><rb>筑前絞</rb><rt>ちくぜんしぼり</rt></ruby>、</p>
+        <p>田舎の人とは思われぬ、</p>
+        <p><ruby><rb>歩行</rb><rt>ある</rt></ruby>く姿が、<placeName ref="#yanagimachi">柳町</placeName>、</p>
+        <p>と博多節を流している。……つい目の<ruby><rb>前</rb><rt>さき</rt></ruby>の軒陰に。……白地の<ruby><rb>手拭</rb><rt>てぬぐい</rt></ruby>、<ruby><rb>頬被</rb><rt>ほおかむり</rt></ruby>、すらりと<ruby><rb>痩</rb><rt>やせ</rt></ruby>ぎすな男の姿の、軒のその、うどんと<ruby><rb>紅</rb><rt>べに</rt></ruby>で書いた看板の前に、横顔ながら<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて、ただ影法師のように<ruby><rb>彳</rb><rt>たたず</rt></ruby>むのがあった。</p>
+        <p><persName ref="#sesso">捻平</persName>はフト車の上から、<ruby><rb>頸</rb><rt>うなじ</rt></ruby>の風呂敷包のまま振向いて、何か<ruby><rb>背後</rb><rt>うしろ</rt></ruby>へ声を掛けた。……と同時に<persName ref="#genzaburo">弥次郎兵衛</persName>の車も、ちょうどその唄う声を、町の中で<ruby><rb>引挟</rb><rt>ひっぱさ</rt></ruby>んで、がっきと留まった。が、話の意味は通ぜずに、そのまま<persName ref="#sesso">捻平</persName>のがまた<ruby><rb>曳出</rb><rt>ひきだ</rt></ruby>す……<ruby><rb>後</rb><rt>あと</rt></ruby>の車も続いて<ruby><rb>駈</rb><rt>か</rt></ruby>け出す。と二台がちょっと<ruby><rb>摺</rb><rt>す</rt></ruby>れ摺れになって、すぐ<ruby><rb>旧</rb><rt>もと</rt></ruby>の通り<ruby><rb>前後</rb><rt>あとさき</rt></ruby>に、流るるような月夜の車。</p>
+        <p>三</p>
+        <p>お月様がちょいと出て松の影、</p>
+        <p>アラ、ドッコイショ、</p>
+        <p>と沖の浪の月の中へ、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と、<ruby><rb>撥</rb><rt>ばち</rt></ruby>を投げたように、霜を切って、唄い<ruby><rb>棄</rb><rt>す</rt></ruby>てた。……<ruby><rb>饂飩屋</rb><rt>うどんや</rt></ruby>の<ruby><rb>門</rb><rt>かど</rt></ruby>に博多節を弾いたのは、<ruby><rb>転進</rb><rt>てんじん</rt></ruby>をやや縦に、<ruby><rb>三味線</rb><rt>さみせん</rt></ruby>の手を緩めると、撥を<ruby><rb>逆手</rb><rt>さかて</rt></ruby>に、その柄で<ruby><rb>弾</rb><rt>はじ</rt></ruby>くようにして、<ruby><rb>仄</rb><rt>ほん</rt></ruby>のりと、薄赤い、<ruby><rb>其屋</rb><rt>そこ</rt></ruby>の板障子をすらりと開けた。</p>
+        <p>「ご免なさいよ。」</p>
+        <p><ruby><rb>頬被</rb><rt>ほおかむ</rt></ruby>りの中の<ruby><rb>清</rb><rt>すず</rt></ruby>しい目が、<ruby><rb>釜</rb><rt>かま</rt></ruby>から吹出す湯気の<ruby><rb>裏</rb><rt>うち</rt></ruby>へすっきりと、出たのを一目、驚いた顔をしたのは、帳場の端に土間を<ruby><rb>跨</rb><rt>また</rt></ruby>いで、腰掛けながら、うっかり<ruby><rb>聞惚</rb><rt>ききと</rt></ruby>れていた亭主で、紺の筒袖にめくら<ruby><rb>縞</rb><rt>じま</rt></ruby>の<ruby><rb>前垂</rb><rt>まえだれ</rt></ruby>がけ、草色の<ruby><rb>股引</rb><rt>ももひき</rt></ruby>で、尻からげの<ruby><rb>形</rb><rt>なり</rt></ruby>、にょいと立って、</p>
+        <p>「出ないぜえ。」</p>
+        <p>は、ずるいな。……案ずるに我が家の<ruby><rb>門附</rb><rt>かどづけ</rt></ruby>を<ruby><rb>聞徳</rb><rt>ききどく</rt></ruby>に、いざ、その段になった処で、<ruby><rb>件</rb><rt>くだん</rt></ruby>の（出ないぜ。）を<ruby><rb>極</rb><rt>き</rt></ruby>めてこまそ心積りを、<ruby><rb>唐突</rb><rt>だしぬけ</rt></ruby>に頬被を<ruby><rb>突込</rb><rt>つッこ</rt></ruby>まれて、大分<ruby><rb>狼狽</rb><rt>うろた</rt></ruby>えたものらしい。もっとも居合わした客はなかった。</p>
+        <p>門附は、澄まして、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>じめに戸を<ruby><rb>閉</rb><rt>た</rt></ruby>てながら、三味線を<ruby><rb>斜</rb><rt>はす</rt></ruby>にずっと入って、</p>
+        <p>「あい、親方は出ずとも<ruby><rb>可</rb><rt>い</rt></ruby>いのさ。私の方で入るのだから。……ねえ、<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、そんなものじゃありませんかね。」</p>
+        <p>とちと笑声が交って聞えた。</p>
+        <p>女房は、これも<ruby><rb>現下</rb><rt>いま</rt></ruby>の博多節に、うっかり気を取られて、釜前の湯気に<ruby><rb>朦</rb><rt>もう</rt></ruby>として立っていた。……<ruby><rb>浅葱</rb><rt>あさぎ</rt></ruby>の<ruby><rb>襷</rb><rt>たすき</rt></ruby>、白い腕を、部厚な釜の<ruby><rb>蓋</rb><rt>ふた</rt></ruby>にちょっと<ruby><rb>載</rb><rt>の</rt></ruby>せたが、<ruby><rb>丸髷</rb><rt>まるまげ</rt></ruby>をがっくりさした、色の白い、歯を染めた<ruby><rb>中年増</rb><rt>ちゅうどしま</rt></ruby>。この途端に<ruby><rb>颯</rb><rt>さっ</rt></ruby>と<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>を赤うしたが、<ruby><rb>竈</rb><rt>へッつい</rt></ruby>の前を横ッちょに、かたかたと下駄の音で、亭主の膝を<ruby><rb>斜交</rb><rt>はすっか</rt></ruby>いに、帳場の<ruby><rb>銭箱</rb><rt>ぜにばこ</rt></ruby>へがっちりと手を入れる。</p>
+        <p>「ああ、御心配には及びません。」</p>
+        <p>と門附は物優しく、</p>
+        <p>「<ruby><rb>串戯</rb><rt>じょうだん</rt></ruby>だ、<ruby><rb>強請</rb><rt>ゆする</rt></ruby>んじゃありません。こっちが客だよ、客なんですよ。」</p>
+        <p>細長い土間の一方は、薄汚れた縦に六畳ばかりの市松畳、そこへ上れば坐れるのを、釜に近い、<ruby><rb>床几</rb><rt>しょうぎい</rt></ruby>の上に、ト足を伸ばして、</p>
+        <p>「どうもね、寒くって<ruby><rb>堪</rb><rt>たま</rt></ruby>らないから、一杯<ruby><rb>御馳走</rb><rt>ごちそう</rt></ruby>になろうと思って。ええ、親方、決してその御迷惑を掛けるもんじゃありません。」</p>
+        <p>で、<ruby><rb>優柔</rb><rt>おとな</rt></ruby>しく頬被りを取った顔を、と見ると迷惑どころかい、目鼻立ちのきりりとした、<ruby><rb>細面</rb><rt>ほそおもて</rt></ruby>の、<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>に<ruby><rb>窶</rb><rt>やつれ</rt></ruby>は見えるけれども、目の清らかな、眉の濃い、二十八九の<ruby><rb>人品</rb><rt>ひとがら</rt></ruby>な<ruby><rb>兄哥</rb><rt>あにい</rt></ruby>である。</p>
+        <p>「へへへへ、いや、どうもな、」</p>
+        <p>と亭主は前へ出て、<ruby><rb>揉手</rb><rt>もみで</rt></ruby>をしながら、</p>
+        <p>「しかし、このお天気続きで、まず結構でござりやすよ。」と何もない、<ruby><rb>煤</rb><rt>すす</rt></ruby>けた天井を仰ぎ仰ぎ、帳場の上の神棚へ目を<ruby><rb>外</rb><rt>そ</rt></ruby>らす。</p>
+        <p>「お師匠さん、」</p>
+        <p>女房前垂をちょっと<ruby><rb>撫</rb><rt>な</rt></ruby>でて、</p>
+        <p>「お<ruby><rb>銚子</rb><rt>ちょうし</rt></ruby>でございますかい。」と<ruby><rb>莞爾</rb><rt>にっこり</rt></ruby>する。</p>
+        <p>門附は手拭の上へ<ruby><rb>撥</rb><rt>ばち</rt></ruby>を置いて、腰へ三味線を<ruby><rb>小取廻</rb><rt>ことりまわ</rt></ruby>し、<ruby><rb>内端</rb><rt>うちわ</rt></ruby>に片膝を上げながら、床几の上に素足の<ruby><rb>胡坐</rb><rt>あぐら</rt></ruby>。</p>
+        <p>ト<ruby><rb>裾</rb><rt>すそ</rt></ruby>を一つ<ruby><rb>掻込</rb><rt>かいこ</rt></ruby>んで、</p>
+        <p>「早速一合、酒は良いのを。」</p>
+        <p>「ええ、もう飛切りのをおつけ申しますよ。」と女房は土間を<ruby><rb>横歩行</rb><rt>よこある</rt></ruby>き。左側の畳に据えた火鉢の中を、邪険に<ruby><rb>火箸</rb><rt>ひばし</rt></ruby>で<ruby><rb>掻</rb><rt>か</rt></ruby>い<ruby><rb>掘</rb><rt>ほじ</rt></ruby>って、<ruby><rb>赫</rb><rt>かっ</rt></ruby>と赤くなった処を、床几の門附へずいと寄せ、</p>
+        <p>「さあ、まあ、お当りなさりまし。」</p>
+        <p>「<ruby><rb>難有</rb><rt>ありがて</rt></ruby>え、」</p>
+        <p>と<ruby><rb>鉄拐</rb><rt>てっか</rt></ruby>に<ruby><rb>褄</rb><rt>つま</rt></ruby>へ<ruby><rb>引挟</rb><rt>ひッぱさ</rt></ruby>んで、ほうと<ruby><rb>呼吸</rb><rt>いき</rt></ruby>を一つ長く<ruby><rb>吐</rb><rt>つ</rt></ruby>いた。</p>
+        <p>「世の中にゃ、こんな炭火があると思うと、里心が付いてなお寒い。<ruby><rb>堪</rb><rt>たま</rt></ruby>らねえ。<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、銚子をどうかね、ヤケという<ruby><rb>熱燗</rb><rt>あつかん</rt></ruby>にしておくんなさい。ちっと飲んで、うんと酔おうという、卑劣な癖が付いてるんだ、お察しものですぜ、ええ、親方。」</p>
+        <p>「へへへ、お<ruby><rb>方</rb><rt>かた</rt></ruby>、それ<ruby><rb>極熱</rb><rt>ごくあつ</rt></ruby>じゃ。」</p>
+        <p>女房は染めた前歯を美しく、</p>
+        <p>「あいあい。」</p>
+        <p>四</p>
+        <p>「時に何かね、今<ruby><rb>此家</rb><rt>ここ</rt></ruby>の前を車が二台、旅の人を乗せて<ruby><rb>駈抜</rb><rt>かけぬ</rt></ruby>けたっけ、この町を、……」</p>
+        <p>と干した<ruby><rb>猪口</rb><rt>ちょく</rt></ruby>で<ruby><rb>門</rb><rt>かど</rt></ruby>を指して、</p>
+        <p>「二三町行った処で、左側の、屋根の大きそうな家へ着けたのが、<ruby><rb>蒼</rb><rt>あお</rt></ruby>く月明りに見えたがね、……あすこは何かい、<ruby><rb>旅籠屋</rb><rt>はたごや</rt></ruby>ですか。」</p>
+        <p>「<placeName ref="#kawaguchi-minatoya"><ruby><rb>湊屋</rb><rt>みなとや</rt></ruby></placeName>でございまさ、なあ、」と女房が、釜の前から亭主を見向く。</p>
+        <p>「<placeName ref="#kawaguchi-minatoya">湊屋</placeName>、<placeName ref="#kawaguchi-minatoya">湊屋</placeName>、<placeName ref="#kawaguchi-minatoya">湊屋</placeName>。この土地じゃ、まああすこ一軒でござりますよ。古い家じゃが<ruby><rb>名代</rb><rt>なだい</rt></ruby>で。<ruby><rb>前</rb><rt>せん</rt></ruby>には大きな女郎屋じゃったのが、旅籠屋になったがな、部屋々々も昔風そのままな<ruby><rb>家</rb><rt>うち</rt></ruby>じゃに、奥座敷の<ruby><rb>欄干</rb><rt>てすり</rt></ruby>の外が、海と一所の、<ruby><rb>大</rb><rt>いか</rt></ruby>い<placeName ref="#ibigawa"><ruby><rb>揖斐</rb><rt>いび</rt></ruby></placeName>の<ruby><rb>川口</rb><rt>かわぐち</rt></ruby>じゃ。白帆の船も通りますわ。<ruby><rb>鱸</rb><rt>すずき</rt></ruby>は<ruby><rb>刎</rb><rt>は</rt></ruby>ねる、<ruby><rb>鯔</rb><rt>ぼら</rt></ruby>は飛ぶ。とんと類のない<ruby><rb>趣</rb><rt>おもむき</rt></ruby>のある家じゃ。ところが、時々崖裏の石垣から、<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>が<ruby><rb>這込</rb><rt>はいこ</rt></ruby>んで、板廊下や<ruby><rb>厠</rb><rt>かわや</rt></ruby>に<ruby><rb>点</rb><rt>つ</rt></ruby>いた<ruby><rb>燈</rb><rt>あかり</rt></ruby>を消して、<ruby><rb>悪戯</rb><rt>いたずら</rt></ruby>をするげに言います。が、別に<ruby><rb>可恐</rb><rt>おそろし</rt></ruby>い化方はしませぬで。こんな月の良い晩には、庭で<ruby><rb>鉢叩</rb><rt>はちたた</rt></ruby>きをして見せる。……<ruby><rb>時雨</rb><rt>しぐ</rt></ruby>れた夜さりは、<ruby><rb>天保銭</rb><rt>てんぽうせん</rt></ruby>一つ使賃で、豆腐を買いに<ruby><rb>行</rb><rt>ゆ</rt></ruby>くと言う。それも旅の衆の<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>じゃ言うて、<ruby><rb>豪</rb><rt>えら</rt></ruby>い評判の<ruby><rb>好</rb><rt>い</rt></ruby>い旅籠屋ですがな、……お前様、この土地はまだ何も知りなさらんかい。」</p>
+        <p>「あい、<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>初めてこっちへ流込んで来たばかりさ。一向方角も何も分らない。月夜も<ruby><rb>闇</rb><rt>やみ</rt></ruby>の烏さね。」</p>
+        <p>と<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて、一口。</p>
+        <p>「どれ延びない内、底を一つ温めよう、<ruby><rb>遣</rb><rt>や</rt></ruby>ったり！　ほっ、」</p>
+        <p>と言って、目を<ruby><rb>擦</rb><rt>こす</rt></ruby>って<ruby><rb>面</rb><rt>おもて</rt></ruby>を背けた。</p>
+        <p>「利く、利く。……恐しい利く唐辛子だ。こう、親方の前だがね、ついこないだもこの手を食ったよ、<ruby><rb>料簡</rb><rt>りょうけん</rt></ruby>が悪いのさ。何、<placeName ref="#kamigata">上方</placeName>筋の唐辛子だ、<ruby><rb>鬼灯</rb><rt>ほおづき</rt></ruby>の皮が精々だろう。利くものか、と高を<ruby><rb>括</rb><rt>くく</rt></ruby>って、お<ruby><rb>銭</rb><rt>あし</rt></ruby>は要らない薬味なり、どしこと丼へぶちまけて、<placeName ref="#matsusaka">松坂</placeName>で飛上った。……また遣ったさ、色気は無えね、涙と<ruby><rb>涎</rb><rt>よだれ</rt></ruby>が<ruby><rb>一時</rb><rt>いっとき</rt></ruby>だ。」と手の甲で<ruby><rb>引擦</rb><rt>ひっこす</rt></ruby>る。</p>
+        <p>女房が銚子のかわり目を、ト<ruby><rb>掌</rb><rt>てのひら</rt></ruby>で<ruby><rb>燗</rb><rt>かん</rt></ruby>を当った。</p>
+        <p>「お師匠さん、あんたは東の<ruby><rb>方</rb><rt>かた</rt></ruby>ですなあ。」</p>
+        <p>「そうさ、<ruby><rb>生</rb><rt>うまれ</rt></ruby>は東だが、<ruby><rb>身上</rb><rt>しんしょう</rt></ruby>は北山さね。」と言う時、徳利の底を振って、<ruby><rb>垂々</rb><rt>たらたら</rt></ruby>と<ruby><rb>猪口</rb><rt>ちょく</rt></ruby>へしたむ。</p>
+        <p>「で、お前様、<placeName ref="#kawaguchi-minatoya">湊屋</placeName>へ泊んなさろうと言うのかな。」</p>
+        <p>それだ、と門口で断らりょう、と亭主はその段含ませたそうな気の<ruby><rb>可</rb><rt>い</rt></ruby>い<ruby><rb>顔色</rb><rt>かおつき</rt></ruby>。</p>
+        <p>「<ruby><rb>御串戯</rb><rt>ごじょうだん</rt></ruby>もんですぜ、泊りは<ruby><rb>木賃</rb><rt>きちん</rt></ruby>と<ruby><rb>極</rb><rt>きま</rt></ruby>っていまさ。<ruby><rb>茣蓙</rb><rt>ござ</rt></ruby>と<ruby><rb>笠</rb><rt>かさ</rt></ruby>と<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>が留守居。壁の破れた処から、鼠が首を長くして、私の帰るのを待っている。四五日はこの<placeName ref="#kuwana">桑名</placeName>へ御厄介になろうと思う。……<ruby><rb>上旅籠</rb><rt>じょうはたご</rt></ruby>の<placeName ref="#kawaguchi-minatoya">湊屋</placeName>で泊めてくれそうな御人品なら、御当家へ、一夜の御無心申したいね、どんなもんです、<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん。」</p>
+        <p>「こんなでよくば、泊めますわ。」</p>
+        <p>と身軽に銚子を運んで寄る。と亭主驚いた眉を動かし、</p>
+        <p>「滅相な。」と帳場を<ruby><rb>背負</rb><rt>しょ</rt></ruby>って、<ruby><rb>立塞</rb><rt>たちふさ</rt></ruby>がる<ruby><rb>体</rb><rt>てい</rt></ruby>に腰を掛けた。いや、この時まで、紺の<ruby><rb>鯉口</rb><rt>こいぐち</rt></ruby>に手首を<ruby><rb>縮</rb><rt>すく</rt></ruby>めて、<ruby><rb>案山子</rb><rt>かかし</rt></ruby>のごとく立ったりける。</p>
+        <p>「はははは、お言葉には及びません、饂飩屋さんで泊めるものは、<ruby><rb>醤油</rb><rt>おしたじ</rt></ruby>の雨宿りか、<ruby><rb>鰹節</rb><rt>かつおぶし</rt></ruby>の行者だろう。」</p>
+        <p>と<ruby><rb>呵々</rb><rt>からから</rt></ruby>と一人で笑った。</p>
+        <p>「お師匠さん、一つお酌さしておくんなさいまし。」と女房は市松の畳の端から、薄く腰を掛込んで、土間を切って、差向いに銚子を取った。</p>
+        <p>「飛んでもない事、お忙しいに。」</p>
+        <p>「いえな、内じゃ<ruby><rb>芸妓屋</rb><rt>げいこや</rt></ruby>さんへ出前ばかりが<ruby><rb>主</rb><rt>おも</rt></ruby>ですから、ごらんの通りゆっくりじゃえな。ほんにお師匠さん<ruby><rb>佳</rb><rt>い</rt></ruby>いお声ですな。なあ、<ruby><rb>良人</rb><rt>あんた</rt></ruby>。」と、横顔で亭主を<ruby><rb>流眄</rb><rt>ながしめ</rt></ruby>。</p>
+        <p>「さよじゃ。」</p>
+        <p>とばかりで、<ruby><rb>煙草</rb><rt>たばこ</rt></ruby>を、ぱっぱっ。</p>
+        <p>「なあ、今お聞かせやした、あの博多節を聞いたればな、……私ゃ、ほんに、身に染みて、ぶるぶると震えました。」</p>
+        <p>五</p>
+        <p>「そう<ruby><rb>讃</rb><rt>ほ</rt></ruby>められちゃお座が<ruby><rb>醒</rb><rt>さ</rt></ruby>める、酔も醒めそうで<ruby><rb>遣瀬</rb><rt>やるせ</rt></ruby>がない。たかが大道芸人さ。」</p>
+        <p>と<ruby><rb>兄哥</rb><rt>あにい</rt></ruby>は照れた風で腕組みした。</p>
+        <p>「私がお世辞を言うものですかな、<ruby><rb>真実</rb><rt>まったく</rt></ruby>ですえ。あの、その、なあ、<ruby><rb>悚然</rb><rt>ぞっ</rt></ruby>とするような、<ruby><rb>恍惚</rb><rt>うっとり</rt></ruby>するような、<ruby><rb>緊</rb><rt>し</rt></ruby>めたような、投げたような、緩めたような、まあ、<ruby><rb>何</rb><rt>な</rt></ruby>んと言うて<ruby><rb>可</rb><rt>よ</rt></ruby>かろうやら。海の中に柳があったら、お月様の影の中へ、身を投げて死にたいような、……何んとも言いようのない心持になったのですえ。」</p>
+        <p>と、脊筋を<ruby><rb>曲</rb><rt>くね</rt></ruby>って、肩を入れる。</p>
+        <p>「お<ruby><rb>方</rb><rt>かた</rt></ruby>、お方。」</p>
+        <p>と<ruby><rb>急込</rb><rt>せきこ</rt></ruby>んで、訳もない事に不機嫌な<ruby><rb>御亭</rb><rt>ごてい</rt></ruby>が呼ばわる。</p>
+        <p>「何じゃいし。」と振向くと、……亭主いつの間にか、神棚の<ruby><rb>下</rb><rt>もと</rt></ruby>に、<ruby><rb>斜</rb><rt>しゃ</rt></ruby>と構えて、帳面を<ruby><rb>引繰</rb><rt>ひっく</rt></ruby>って、苦く<ruby><rb>睨</rb><rt>にら</rt></ruby>み、</p>
+        <p>「<placeName ref="#masuya"><ruby><rb>升屋</rb><rt>ますや</rt></ruby></placeName>が<ruby><rb>懸</rb><rt>かけ</rt></ruby>はまだ寄越さんかい。」</p>
+        <p>と<ruby><rb>算盤</rb><rt>そろばん</rt></ruby>を、ぱちりぱちり。</p>
+        <p>「今時どうしたえ、<ruby><rb>三十日</rb><rt>みそか</rt></ruby>でもありもせんに。……お師匠さん。」</p>
+        <p>「師匠じゃないわ、<placeName ref="#masuya">升屋</placeName>が懸じゃい。」</p>
+        <p>「そないに急に気になるなら、<ruby><rb>良人</rb><rt>あんた</rt></ruby>、ちゃと行って取って<ruby><rb>来</rb><rt>き</rt></ruby>い。」</p>
+        <p>と下唇の<ruby><rb>刎調子</rb><rt>はねぢょうし</rt></ruby>。亭主ぎゃふんと参った<ruby><rb>体</rb><rt>てい</rt></ruby>で、</p>
+        <p>「二進が一進、二進が一進、<ruby><rb>二一</rb><rt>にいち</rt></ruby>天作の<ruby><rb>五</rb><rt>ご</rt></ruby>、<ruby><rb>五一三六七八九</rb><rt>ぐいちさぶろくななやあここの</rt></ruby>。」と、饂飩の帳の<ruby><rb>伸縮</rb><rt>のびちぢ</rt></ruby>みは、<ruby><rb>加減</rb><rt>さしひき</rt></ruby>だけで済むものを、<ruby><rb>醤油</rb><rt>したじ</rt></ruby>に水を割算段。</p>
+        <p>と釜の湯気の白けた処へ、星の<ruby><rb>凍</rb><rt>い</rt></ruby>てそうな<ruby><rb>按摩</rb><rt>あんま</rt></ruby>の笛。<ruby><rb>月天心</rb><rt>つきてんしん</rt></ruby>の冬の町に、あたかもこれ<ruby><rb>凩</rb><rt>こがらし</rt></ruby>を吹込む声す。</p>
+        <p>門附の<ruby><rb>兄哥</rb><rt>あにい</rt></ruby>は、ふと<ruby><rb>痩</rb><rt>や</rt></ruby>せた肩を抱いて、</p>
+        <p>「ああ、霜に響く。」……と言った声が、物語を読むように、<ruby><rb>朗</rb><rt>ほがらか</rt></ruby>に<ruby><rb>冴</rb><rt>さ</rt></ruby>えて、且つ、鋭く聞えた。</p>
+        <p>「按摩が通る……<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、」</p>
+        <p>「ええ、笛を吹いてですな。」</p>
+        <p>「畜生、<ruby><rb>怪</rb><rt>け</rt></ruby>しからず身に染みる、<ruby><rb>堪</rb><rt>たま</rt></ruby>らなく寒いものだ。」</p>
+        <p>と割膝に<ruby><rb>跪坐</rb><rt>かしこま</rt></ruby>って、飲みさしの茶の冷えたのを、茶碗に傾け、ざぶりと土間へ、</p>
+        <p>「一ツこいつへ<ruby><rb>注</rb><rt>つ</rt></ruby>いでおくんな、その方がお前さんも手数が要らない。」</p>
+        <p>「何んの、私はちっとも構うことないのですえ。」</p>
+        <p>「いや、御深切は<ruby><rb>難有</rb><rt>ありがた</rt></ruby>いが、<ruby><rb>薬罐</rb><rt>やかん</rt></ruby>の底へ<ruby><rb>消炭</rb><rt>けしずみ</rt></ruby>で、<ruby><rb>湧</rb><rt>わ</rt></ruby>くあとから<ruby><rb>醒</rb><rt>さ</rt></ruby>める処へ、氷で<ruby><rb>咽喉</rb><rt>のど</rt></ruby>を<ruby><rb>抉</rb><rt>えぐ</rt></ruby>られそうな、あのピイピイを聞かされちゃ、<ruby><rb>身体</rb><rt>からだ</rt></ruby>にひびっ<ruby><rb>裂</rb><rt>たけ</rt></ruby>がはいりそうだ。……持って来な。」</p>
+        <p>と手を振るばかりに、一息にぐっと<ruby><rb>呷</rb><rt>あお</rt></ruby>った。</p>
+        <p>「あれ、お見事。」</p>
+        <p>と目を<ruby><rb>睜</rb><rt>みは</rt></ruby>って、</p>
+        <p>「まあな、だけれどな、無理酒おしいなえ。<ruby><rb>沢山</rb><rt>たんと</rt></ruby>、あの、心配する方があるのですやろ。」</p>
+        <p>「お方、八百屋の勘定は。」</p>
+        <p>と亭主<ruby><rb>瞬</rb><rt>まばた</rt></ruby>きして<ruby><rb>頤</rb><rt>あご</rt></ruby>を出す。女房は面白半分、見返りもしないで、</p>
+        <p>「取りに来たらお払いやすな。」</p>
+        <p>「ええ……と三百は三銭かい。」</p>
+        <p>で、算盤を空に<ruby><rb>弾</rb><rt>はじ</rt></ruby>く。</p>
+        <p>「<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん。」</p>
+        <p>と呼んだ門附の声が沈んだ。</p>
+        <p>「何んです。」</p>
+        <p>「立続けにもう一つ。そして<ruby><rb>後</rb><rt>あと</rt></ruby>を直ぐ、<ruby><rb>合点</rb><rt>がってん</rt></ruby>かね。」</p>
+        <p>「あい。合点でございますが、あんた、<ruby><rb>豪</rb><rt>えら</rt></ruby>い<ruby><rb>大酒</rb><rt>たいしゅ</rt></ruby>ですな。」</p>
+        <p>「せめて酒でも参らずば。」</p>
+        <p>と陽気な声を出しかけたが、つと<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>いて<ruby><rb>眦</rb><rt>まなじり</rt></ruby>を上げた。</p>
+        <p>「あれ、また来たぜ、按摩の笛が、北の方の辻から聞える。……ヤ、そんなにまだ夜は更けまいのに、屋根<ruby><rb>越</rb><rt>ごし</rt></ruby>の町一つ、こう……<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>の<ruby><rb>畔</rb><rt>あぜ</rt></ruby>かとも思う処でも吹いていら。」</p>
+        <p>と<ruby><rb>身忙</rb><rt>みぜわ</rt></ruby>しそうに片膝立てて、<ruby><rb>当所</rb><rt>あてど</rt></ruby>なく<ruby><rb>睜</rb><rt>みまわ</rt></ruby>しながら、</p>
+        <p>「<ruby><rb>音</rb><rt>おと</rt></ruby>は同じだが<ruby><rb>音</rb><rt>ね</rt></ruby>が違う……<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、どれが、どんな<ruby><rb>顔</rb><rt>つら</rt></ruby>の按摩だね。」</p>
+        <p>と聞く。……その時、<ruby><rb>白眼</rb><rt>しろまなこ</rt></ruby>の座頭の首が、月に<ruby><rb>蒼</rb><rt>あお</rt></ruby>ざめて<ruby><rb>覗</rb><rt>のぞ</rt></ruby>きそうに、屋の棟を高く見た……目が鋭い。</p>
+        <p>「あれ、あんた、鹿の<ruby><rb>雌雄</rb><rt>めすおす</rt></ruby>ではあるまいし、笛の音で按摩の<ruby><rb>容子</rb><rt>ようす</rt></ruby>は分りませぬもの。」</p>
+        <p>「まったくだ。」</p>
+        <p>と寂しく笑った、なみなみ<ruby><rb>注</rb><rt>つ</rt></ruby>いだる茶碗の酒を、<ruby><rb>屹</rb><rt>きっ</rt></ruby>と見ながら、</p>
+        <p>「杯の月を<ruby><rb>酌</rb><rt>く</rt></ruby>もうよ、座頭殿。」と<ruby><rb>差俯</rb><rt>さしうつむ</rt></ruby>いて<ruby><rb>独言</rb><rt>ひとりごと</rt></ruby>した。……が博多節の文句か、知らず、陰々として物寂しい、表の障子も裏透くばかり、霜の月の影冴えて、辻に、町に、按摩の笛、そのあるものは波に響く。</p>
+        <p>六</p>
+        <p>「や、按摩どのか。何んだ、<ruby><rb>唐突</rb><rt>だしぬけ</rt></ruby>に驚かせる。……要らんよ。要りませぬ。」</p>
+        <p>と<persName ref="#genzaburo">弥次郎兵衛</persName>。<placeName ref="#kawaguchi-minatoya">湊屋</placeName>の奥座敷、これが上段の間とも見える、次に六畳の附いた<ruby><rb>中古</rb><rt>ちゅうぶる</rt></ruby>の十畳。障子の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>は直ぐに縁、<ruby><rb>欄干</rb><rt>てすり</rt></ruby>にずらりと<ruby><rb>硝子戸</rb><rt>がらすど</rt></ruby>の外は、<ruby><rb>水煙渺</rb><rt>みずけむりびょう</rt></ruby>として、曇らぬ空に雲かと見る、<ruby><rb>長洲</rb><rt>ながす</rt></ruby>の端に星一つ、水に近く<ruby><rb>晃</rb><rt>き</rt></ruby>らめいた、<placeName ref="#ibigawa">揖斐川</placeName>の流れの<ruby><rb>裾</rb><rt>すそ</rt></ruby>は、<ruby><rb>潮</rb><rt>うしお</rt></ruby>を<ruby><rb>籠</rb><rt>こ</rt></ruby>めた霧白く、月にも<ruby><rb>苫</rb><rt>とま</rt></ruby>を伏せ、<ruby><rb>蓑</rb><rt>みの</rt></ruby>を<ruby><rb>乾</rb><rt>ほ</rt></ruby>す、<ruby><rb>繋船</rb><rt>かかりぶね</rt></ruby>の帆柱がすくすくと垣根に近い。そこに燭台を<ruby><rb>傍</rb><rt>かたわら</rt></ruby>にして、<ruby><rb>火桶</rb><rt>ひおけ</rt></ruby>に手を懸け、<ruby><rb>怪訝</rb><rt>けげん</rt></ruby>な顔して、</p>
+        <p>「はて、お早いお着きお<ruby><rb>草臥</rb><rt>くたび</rt></ruby>れ様で、と茶を一ツ持って出て、<ruby><rb>年増</rb><rt>としま</rt></ruby>の女中が、<ruby><rb>唯今</rb><rt>ただいま</rt></ruby><ruby><rb>引込</rb><rt>ひっこ</rt></ruby>んだばかりの処。これから膳にもしよう、酒にもしようと思うちょっとの隙間へ、のそりと出した、あの<ruby><rb>面</rb><rt>つら</rt></ruby>はえ？……</p>
+        <p>この方、あの年増めを見送って、<ruby><rb>入交</rb><rt>いりかわ</rt></ruby>って来るは若いのか、と前髪の正面でも見ようと思えば、霜げた<ruby><rb>冬瓜</rb><rt>とうがん</rt></ruby>に<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>を<ruby><rb>打着</rb><rt>ぶちつ</rt></ruby>けた、という異体な<ruby><rb>面</rb><rt>つら</rt></ruby>を、<ruby><rb>襖</rb><rt>ふすま</rt></ruby>の影から<ruby><rb>斜</rb><rt>はす</rt></ruby>に出して、</p>
+        <p>（按摩でやす。）とまた、悪く<ruby><rb>抜衣紋</rb><rt>ぬきえもん</rt></ruby>で、胸を折って、横坐りに、<ruby><rb>蝋燭火</rb><rt>ろうそくび</rt></ruby>へ<ruby><rb>紙火屋</rb><rt>かみぼや</rt></ruby>のかかった<ruby><rb>灯</rb><rt>あかり</rt></ruby>の向うへ、ぬいと半身で出た工合が、<ruby><rb>見越入道</rb><rt>みこしにゅうどう</rt></ruby>の<ruby><rb>御館</rb><rt>おやかた</rt></ruby>へ、<ruby><rb>目見得</rb><rt>めみえ</rt></ruby>の雪女郎を連れて出た、<ruby><rb>化</rb><rt>ばけ</rt></ruby>の慶庵と言う<ruby><rb>体</rb><rt>てい</rt></ruby>だ。</p>
+        <p>要らぬと言えば、<ruby><rb>黙然</rb><rt>だんまり</rt></ruby>で、腰から<ruby><rb>前</rb><rt>さき</rt></ruby>へ、板廊下の暗い方へ、スーと消えたり……<ruby><rb>怨敵</rb><rt>おんてき</rt></ruby>、<ruby><rb>退散</rb><rt>たいさん</rt></ruby>。」</p>
+        <p>と苦笑いして、……床の正面に火桶を抱えた、<ruby><rb>法然天窓</rb><rt>ほうねんあたま</rt></ruby>の、<ruby><rb>連</rb><rt>つれ</rt></ruby>の、その爺様を見遣って、</p>
+        <p>「<persName ref="#sesso">捻平</persName>さん、お互に年は取りたくないてね。ちと<ruby><rb>三絃</rb><rt>ぺんぺん</rt></ruby>でも、とあるべき処を、お膳の前に按摩が出ますよ。……見くびったものではないか。」</p>
+        <p>「とかく、その<ruby><rb>年効</rb><rt>としが</rt></ruby>いもなく、旅籠屋の式台口から、何んと、事も<ruby><rb>慇懃</rb><rt>いんぎん</rt></ruby>に出迎えた、<ruby><rb>家</rb><rt>うち</rt></ruby>の隠居らしい切髪の<ruby><rb>婆様</rb><rt>ばあさま</rt></ruby>をじろりと見て、</p>
+        <p>（ヤヤ、<ruby><rb>難有</rb><rt>ありがた</rt></ruby>い、仏壇の中に<ruby><rb>美婦</rb><rt>たぼ</rt></ruby>が見えるわ、<ruby><rb>簀</rb><rt>す</rt></ruby>の子の天井から落ち<ruby><rb>度</rb><rt>た</rt></ruby>い。）などと、膝栗毛の書抜きを遣らっしゃるで魔が<ruby><rb>魅</rb><rt>さ</rt></ruby>すのじゃ、屋台は古いわ、造りも広大。」</p>
+        <p>と丸木の床柱を下から見上げた。</p>
+        <p>「千年の桑かの。川の底も<ruby><rb>料</rb><rt>はか</rt></ruby>られぬ。<ruby><rb>燈</rb><rt>あかり</rt></ruby>も暗いわ、<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>も出ようず。ちと<ruby><rb>懲</rb><rt>こ</rt></ruby>りさっしゃるが<ruby><rb>可</rb><rt>い</rt></ruby>い。」</p>
+        <p>「さん<ruby><rb>候</rb><rt>ぞうろう</rt></ruby>、これに懲りぬ事なし。」</p>
+        <p>と奥歯のあたりを膨らまして<ruby><rb>微笑</rb><rt>ほほえ</rt></ruby>みながら、両手を懐に、胸を拡く、<ruby><rb>襖</rb><rt>ふすま</rt></ruby>の上なる額を読む。題して<ruby><rb>曰</rb><rt>いわ</rt></ruby>く、<ruby><rb>臨風榜可小楼</rb><rt>りんぷうぼうかしょうろう</rt></ruby>。</p>
+        <p>「……とある、いかさまな。」</p>
+        <p>「床に<ruby><rb>活</rb><rt>い</rt></ruby>けたは、白の小菊じゃ、<ruby><rb>一束</rb><rt>ひとたば</rt></ruby>にして<ruby><rb>掴</rb><rt>つか</rt></ruby>みざし、<ruby><rb>喝采</rb><rt>おお</rt></ruby>。」と<ruby><rb>讃</rb><rt>ほ</rt></ruby>める。</p>
+        <p>「いや、<ruby><rb>翁寂</rb><rt>おきなさ</rt></ruby>びた事を言うわ。」</p>
+        <p>「それそれ、たったいま懲りると言うた口の下から、何んじゃ、それは。やあ、見やれ、<ruby><rb>其許</rb><rt>そこ</rt></ruby>の袖口から、茶色の手の、もそもそとした<ruby><rb>奴</rb><rt>やつ</rt></ruby>が、ぶらりと出たわ、<placeName ref="#ibigawa">揖斐川</placeName>の<ruby><rb>獺</rb><rt>かわうそ</rt></ruby>の。」</p>
+        <p>「ほい、」</p>
+        <p>と<ruby><rb>視</rb><rt>なが</rt></ruby>めて、</p>
+        <p>「<ruby><rb>南無三宝</rb><rt>なむさんぼう</rt></ruby>。」と<ruby><rb>慌</rb><rt>あわただ</rt></ruby>しく<ruby><rb>引込</rb><rt>ひッこ</rt></ruby>める。</p>
+        <p>「何んじゃそれは。」</p>
+        <p>「ははははは、拙者うまれつき<ruby><rb>粗忽</rb><rt>そこつ</rt></ruby>にいたして、よくものを落す処から、内の<ruby><rb>婆</rb><rt>ばばあ</rt></ruby>どのが計略で、手袋を、ソレ、ト左右糸で<ruby><rb>繋</rb><rt>つな</rt></ruby>いだものさね。袖から胸へ<ruby><rb>潜</rb><rt>くぐ</rt></ruby>らして、ずいと<ruby><rb>引張</rb><rt>ひっぱ</rt></ruby>って両手へ<ruby><rb>嵌</rb><rt>は</rt></ruby>めるだ。何んと恐しかろう。<persName ref="#sesso">捻平</persName>さん、かくまで<ruby><rb>身上</rb><rt>しんしょう</rt></ruby>を思うてくれる婆どのに対しても、無駄な祝儀は出せませんな。ああ、<ruby><rb>南無阿弥陀仏</rb><rt>なむあみだぶつ</rt></ruby>。」</p>
+        <p>「<ruby><rb>狸</rb><rt>たぬき</rt></ruby>めが。」</p>
+        <p>と背を円くして横を向く。</p>
+        <p>「それ、年増が来る。秘すべし、秘すべし。」</p>
+        <p>で、手袋をたくし込む。</p>
+        <p>処へ女中が手を<ruby><rb>支</rb><rt>つ</rt></ruby>いて、</p>
+        <p>「御支度をなさりますか。」</p>
+        <p>「いや、やっと、今<ruby><rb>草鞋</rb><rt>わらじ</rt></ruby>を解いたばかりだ。泊めてもらうから、支度はしません。」と真面目に言う。</p>
+        <p>色は浅黒いが<ruby><rb>容子</rb><rt>ようす</rt></ruby>の<ruby><rb>可</rb><rt>い</rt></ruby>い、その年増の女中が、これには妙な顔をして、</p>
+        <p>「へい、御飯は召あがりますか。」</p>
+        <p>「まず酒から飲みます。」</p>
+        <p>「あの、めしあがりますものは？」</p>
+        <p>「姉さん、ここは約束通り、<ruby><rb>焼蛤</rb><rt>やきはまぐり</rt></ruby>が名物だの。」</p>
+        <p>七</p>
+        <p>「そのな、焼蛤は、今も町はずれの<ruby><rb>葦簀張</rb><rt>よしずばり</rt></ruby>なんぞでいたします。やっぱり<ruby><rb>松毬</rb><rt>まつかさ</rt></ruby>で焼きませぬと<ruby><rb>美味</rb><rt>おいし</rt></ruby>うござりませんで、<ruby><rb>当家</rb><rt>うち</rt></ruby>では蒸したのを差上げます、<ruby><rb>味淋</rb><rt>みりん</rt></ruby>入れて<ruby><rb>味美</rb><rt>あじよ</rt></ruby>う蒸します。」</p>
+        <p>「ははあ、<ruby><rb>栄螺</rb><rt>さざえ</rt></ruby>の<ruby><rb>壺焼</rb><rt>つぼやき</rt></ruby>といった形、大道店で遣りますな。……松並木を向うに見て、松毬のちょろちょろ火、蛤の煙がこの月夜に立とうなら、とんと<placeName ref="#ryugu">竜宮</placeName>の<ruby><rb>田楽</rb><rt>でんがく</rt></ruby>で、<ruby><rb><persName ref="#otohime">乙姫</persName>様</rb><rt>おとひめさま</rt></ruby>が<ruby><rb>洒落</rb><rt>しゃれ</rt></ruby>に<ruby><rb>姉</rb><rt>あね</rt></ruby>さんかぶりを遊ばそうという処、また一段の<ruby><rb>趣</rb><rt>おもむき</rt></ruby>だろうが、わざとそれがために忍んでも出られまい。……<ruby><rb>当家</rb><rt>ここ</rt></ruby>の味淋蒸、それが<ruby><rb>好</rb><rt>よ</rt></ruby>かろう。」</p>
+        <p>と<ruby><rb>小父者</rb><rt>おじご</rt></ruby>納得した顔して<ruby><rb>頷</rb><rt>うなず</rt></ruby>く。</p>
+        <p>「では、蛤でめしあがりますか。」</p>
+        <p>「何？」と、わざとらしく耳を出す。</p>
+        <p>「あのな、蛤であがりますか。」</p>
+        <p>「いや、<ruby><rb>箸</rb><rt>はし</rt></ruby>で食いやしょう、はははは。」</p>
+        <p>と<ruby><rb>独</rb><rt>ひとり</rt></ruby>で笑って、懐中から膝栗毛の五編を一冊、ポンと出して、</p>
+        <p>「<ruby><rb>難有</rb><rt>ありがた</rt></ruby>い。」と額を叩く。</p>
+        <p>女中も思わず<ruby><rb>噴飯</rb><rt>ふきだ</rt></ruby>して、</p>
+        <p>「あれ、あなたは<persName ref="#genzaburo">弥次郎兵衛</persName>様でございますな。」</p>
+        <p>「その通り。……この度の参宮には、都合あって<placeName ref="#gojikan">五二館</placeName>と云うのへ泊ったが、<ruby><rb><placeName ref="#naiku">内宮</placeName>様</rb><rt>ないぐうさま</rt></ruby>へ参る途中、<placeName ref="#furuichi"><ruby><rb>古市</rb><rt>ふるいち</rt></ruby></placeName>の旅籠屋、<placeName ref="#fujiya">藤屋</placeName>の前を通った時は、前度いかい世話になった気で、薄暗いまで奥深いあの<ruby><rb>店頭</rb><rt>みせさき</rt></ruby>に、<ruby><rb>真鍮</rb><rt>しんちゅう</rt></ruby>の<ruby><rb>獅噛火鉢</rb><rt>しかみひばち</rt></ruby>がぴかぴかとあるのを見て、略儀ながら、車の上から、帽子を脱いでお辞儀をして来た。が、町が狭いので、向う側の茶店の<ruby><rb>新姐</rb><rt>しんぞ</rt></ruby>に、この<ruby><rb>小兀</rb><rt>すこはげ</rt></ruby>を見せるのが辛かったよ。」</p>
+        <p>と<ruby><rb>燈</rb><rt>あかり</rt></ruby>に向けて、てらりと光らす。</p>
+        <p>「ほほ、ほほ。」</p>
+        <p>「あはは。」</p>
+        <p>で<persName ref="#sesso">捻平</persName>も打笑うと、……この機会に誘われたか、――<ruby><rb>先刻</rb><rt>さっき</rt></ruby>二人が着いた頃には、三味線太鼓で、トトン、ジャカジャカじゃじゃじゃんと沸返るばかりだった――ちょうど八ツ橋形に<ruby><rb>歩行</rb><rt>あゆみ</rt></ruby>板が<ruby><rb>架</rb><rt>かか</rt></ruby>って、土間を隔てた隣の座敷に、およそ十四五人の同勢で、女交りに騒いだのが、今しがた按摩が影を見せた時分から、<ruby><rb>大河</rb><rt>おおかわ</rt></ruby>の<ruby><rb>汐</rb><rt>しお</rt></ruby>に引かれたらしく、ひとしきり<ruby><rb>人気勢</rb><rt>ひとけはい</rt></ruby>が、遠くへ裾拡がりに<ruby><rb>茫</rb><rt>ぼう</rt></ruby>と<ruby><rb>退</rb><rt>の</rt></ruby>いて、<ruby><rb>寂</rb><rt>しん</rt></ruby>とした。ただだだっ広い中を、猿が鳴きながら走廻るように、キャキャとする<ruby><rb>雛妓</rb><rt>おしゃく</rt></ruby>の<ruby><rb>甲走</rb><rt>かんばし</rt></ruby>った声が聞えて、重く、ずっしりと、<ruby><rb>覆</rb><rt>おっ</rt></ruby>かぶさる風に、何を話すともなく<ruby><rb>多人数</rb><rt>たにんず</rt></ruby>の物音のしていたのが、この時、<ruby><rb>洞穴</rb><rt>ほらあな</rt></ruby>から風が抜けたように<ruby><rb>哄</rb><rt>どっ</rt></ruby>と<ruby><rb>動揺</rb><rt>どよ</rt></ruby>めく。</p>
+        <p>女中も笑い引きに、すっと立つ。</p>
+        <p>「いや、この方は陰々としている。」</p>
+        <p>「その方が無事で可いの。」</p>
+        <p>と<persName ref="#sesso">捻平</persName>は火桶の上へ脊くぐまって、そこへ投出した膝栗毛を<ruby><rb>差覗</rb><rt>さしのぞ</rt></ruby>き、</p>
+        <p>「しかし思いつきじゃ、<ruby><rb>私</rb><rt>わし</rt></ruby>はどうもこの寝つきが悪いで、今夜は一つ<ruby><rb>枕許</rb><rt>まくらもと</rt></ruby>の<ruby><rb>行燈</rb><rt>あんどん</rt></ruby>で読んでみましょう。」</p>
+        <p>「<ruby><rb>止</rb><rt>よ</rt></ruby>しなさい、これを読むと胸が<ruby><rb>切</rb><rt>せま</rt></ruby>って、なお目が冴えて寝られなくなります。」</p>
+        <p>「何を言わっしゃる、<ruby><rb>当事</rb><rt>あてごと</rt></ruby>もない、膝栗毛を見て泣くものがあろうかい。<ruby><rb>私</rb><rt>わし</rt></ruby>が事を言わっしゃる、<ruby><rb>其許</rb><rt>そこ</rt></ruby>がよっぽど<persName ref="#sesso">捻平</persName>じゃ。」</p>
+        <p>と言う処へ、以前の年増に、<ruby><rb>小女</rb><rt>こおんな</rt></ruby>がついて出て、膳と銚子を揃えて運んだ。</p>
+        <p>「蛤は<ruby><rb>直</rb><rt>じ</rt></ruby>きに出来ます。」</p>
+        <p>「<ruby><rb>可</rb><rt>よし</rt></ruby>、可。」</p>
+        <p>「何よりも酒の事。」</p>
+        <p><persName ref="#sesso">捻平</persName>も、<ruby><rb>猪口</rb><rt>ちょこ</rt></ruby>を急ぐ。</p>
+        <p>「さて<ruby><rb>汝</rb><rt>てめえ</rt></ruby>にも一つ遣ろう。<ruby><rb>燗</rb><rt>かん</rt></ruby>の可い処を一杯遣らっし。」と、<persName ref="#genzaburo">弥次郎兵衛</persName>、酒飲みの癖で、ちとぶるぶるする手に一杯傾けた<ruby><rb>猪口</rb><rt>ちょこ</rt></ruby>を、膳の外へ、その膝栗毛の本の<ruby><rb>傍</rb><rt>わき</rt></ruby>へ、畳の上にちゃんと置いて、</p>
+        <p>「姉さん、一つ<ruby><rb>酌</rb><rt>つ</rt></ruby>いでやってくれ。」</p>
+        <p>と真顔で言う。</p>
+        <p>小女が、きょとんとした顔を見ると、<persName ref="#sesso">捻平</persName>に追っかけの酌をしていた年増が見向いて、</p>
+        <p>「<persName ref="#kino"><ruby><rb>喜野</rb><rt>きの</rt></ruby></persName>、お酌ぎ……その旦那はな、<persName ref="#genzaburo">弥次郎兵衛</persName>様じゃで、喜多八さんにお杯を上げなさるんや。」</p>
+        <p>と早や心得たものである。</p>
+        <p>八</p>
+        <p><ruby><rb>小父者</rb><rt>おじご</rt></ruby>はなぜか調子を沈めて、</p>
+        <p>「ああ、よく言った。<ruby><rb>俺</rb><rt>おれ</rt></ruby>を<persName ref="#genzaburo">弥次郎兵衛</persName>は<ruby><rb>難有</rb><rt>ありがた</rt></ruby>い。<ruby><rb>居心</rb><rt>いごころ</rt></ruby>は<ruby><rb>可</rb><rt>よし</rt></ruby>、酒は可。これで<persName ref="#kitahachi">喜多八</persName>さえ一所だったら、膝栗毛を<ruby><rb>正</rb><rt>しょう</rt></ruby>のもので、太平の民となる処を、さて、杯をさしたばかりで、こう<ruby><rb>酌</rb><rt>つ</rt></ruby>いだ酒へ、<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>の<ruby><rb>灯</rb><rt>ひ</rt></ruby>のちらちらと映る処は、どうやら餓鬼に<ruby><rb>手向</rb><rt>たむ</rt></ruby>けたようだ。あのまた馬鹿野郎はどうしている――」と膝に手を<ruby><rb>支</rb><rt>つ</rt></ruby>き、畳の杯を<ruby><rb>凝</rb><rt>じっ</rt></ruby>と見て、陰気な顔する。</p>
+        <p><persName ref="#sesso">捻平</persName>も、ふと、この時横を向いて腕組した。</p>
+        <p>「旦那、その喜多八さんを何んでお連れなさりませんね。」</p>
+        <p>と<ruby><rb>愛嬌造</rb><rt>あいきょうづく</rt></ruby>って女中は笑う。<persName ref="#genzaburo">弥次郎</persName><ruby><rb>寂</rb><rt>さみ</rt></ruby>しく打笑み、</p>
+        <p>「むむ、そりゃ何よ、その本の本文にある通り、<placeName ref="#ise">伊勢</placeName>の<placeName ref="#yamada">山田</placeName>ではぐれた奴さ。いい年をして<ruby><rb>娑婆気</rb><rt>しゃばっけ</rt></ruby>な、酒も飲めば<ruby><rb>巫山戯</rb><rt>ふざけ</rt></ruby>もするが、世の中は道中同然。暖いにつけ、寒いにつけ、<ruby><rb>杖</rb><rt>つえ</rt></ruby>柱とも思う<ruby><rb>同伴</rb><rt>つれ</rt></ruby>の若いものに別れると、六十の<ruby><rb>迷児</rb><rt>まいご</rt></ruby>になって、もし、この辺に棚からぶら下がったような宿屋はござりませんかと、<ruby><rb>賑</rb><rt>にぎや</rt></ruby>かな町の中を独りとぼとぼと尋ね<ruby><rb>飽倦</rb><rt>あぐ</rt></ruby>んで、もう<ruby><rb>落胆</rb><rt>がっかり</rt></ruby>しやした、と云ってな、どっかり知らぬ<ruby><rb>家</rb><rt>うち</rt></ruby>の<ruby><rb>店頭</rb><rt>みせさき</rt></ruby>へ腰を<ruby><rb>落込</rb><rt>おとしこ</rt></ruby>んで、一服無心をした処……あすこを読むと<ruby><rb>串戯</rb><rt>じょうだん</rt></ruby>ではない。……<persName ref="#sesso">捻平</persName>さん、真からもって涙が出ます。」</p>
+        <p>と言う、<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>に映って、蝋燭の火がちらちらとする。</p>
+        <p>「姉や、<ruby><rb>心</rb><rt>しん</rt></ruby>を切ったり。」</p>
+        <p>「はい。」</p>
+        <p>と女中が向うを向く時、<persName ref="#sesso">捻平</persName>も目をしばたたいたが、</p>
+        <p>「ヤ、あの騒ぎわい。」</p>
+        <p>と鼻の下を長くして、土間<ruby><rb>越</rb><rt>ごし</rt></ruby>の<ruby><rb>隣室</rb><rt>となり</rt></ruby>へ傾き、</p>
+        <p>「<ruby><rb>豪</rb><rt>えら</rt></ruby>いぞ、<ruby><rb>金盥</rb><rt>かなだらい</rt></ruby>まで持ち出いたわ、人間は皆裾が天井へ宙乗りして、畳を皿小鉢が躍るそうな。おおおお、三味線太鼓が<ruby><rb>鎬</rb><rt>しのぎ</rt></ruby>を削って打合う様子じゃ。」</p>
+        <p>「もし、お騒がしゅうござりましょう、お気の毒でござります。ちょうど<date when="--11">霜月</date>でな、今年度の新兵さんが入営なさりますで、その送別会じゃ言うて、あっちこっち、皆、この景気でござります。でもな、お<ruby><rb>寝</rb><rt>よ</rt></ruby>ります時分には時間になるで静まりましょう。どうぞ御辛抱なさいまして。」</p>
+        <p>「いやいや、それには及ばぬ、それには及ばぬ。」</p>
+        <p>と小父者、二人の女中の顔へ、等分に手を<ruby><rb>掉</rb><rt>ふ</rt></ruby>って、</p>
+        <p>「かえって賑かで大きに可い。悪く<ruby><rb>寂寞</rb><rt>ひっそり</rt></ruby>して、また<ruby><rb>唐突</rb><rt>だしぬけ</rt></ruby>に按摩に出られては弱るからな。」</p>
+        <p>「へい、按摩がな。」と何か知らず、女中も読めぬ顔して聞返す。</p>
+        <p><persName ref="#sesso">捻平</persName>この話を、打消すように<ruby><rb>咳</rb><rt>しわぶき</rt></ruby>して、</p>
+        <p>「さ、<ruby><rb>一献</rb><rt>いっこん</rt></ruby>参ろう。どうじゃ、こちらへも酌人をちと頼んで、……ええ、それ何んとか言うの。……<placeName ref="#kuwana">桑名</placeName>の殿様<ruby><rb>時雨</rb><rt>しぐれ</rt></ruby>でお茶漬……とか言う、土地の唄でも聞こうではないかの。陽気にな、かっと一つ。旅の恥は<ruby><rb>掻棄</rb><rt>かきす</rt></ruby>てじゃ。<ruby><rb>主</rb><rt>ぬし</rt></ruby>はソレ<ruby><rb>叱言</rb><rt>こごと</rt></ruby>のような勧進帳でも遣らっしゃい。</p>
+        <p>染めようにも<ruby><rb>髯</rb><rt>ひげ</rt></ruby>は無いで、<ruby><rb>私</rb><rt>わし</rt></ruby>はこれ、手拭でも畳んで<ruby><rb>法然天窓</rb><rt>ほうねんあたま</rt></ruby>へ<ruby><rb>載</rb><rt>の</rt></ruby>せようでの。」と<persName ref="#sesso">捻平</persName>が坐りながら腰を<ruby><rb>伸</rb><rt>の</rt></ruby>して高く居直る。と<persName ref="#genzaburo">弥次郎</persName><ruby><rb>眼</rb><rt>まなこ</rt></ruby>を<ruby><rb>睜</rb><rt>みは</rt></ruby>って、</p>
+        <p>「や、平家以来の<ruby><rb>謀叛</rb><rt>むほん</rt></ruby>、<ruby><rb>其許</rb><rt>そこ</rt></ruby>の発議は珍らしい、<ruby><rb>二方荒神鞍</rb><rt>にほうこうじんくら</rt></ruby>なしで、<ruby><rb>真中</rb><rt>まんなか</rt></ruby>へ乗りやしょう。」</p>
+        <p>と<ruby><rb>夥</rb><rt>おびただ</rt></ruby>しく景気を直して、</p>
+        <p>「<ruby><rb>姉</rb><rt>あんね</rt></ruby>え、何んでも構わん、四五人<ruby><rb>木遣</rb><rt>きやり</rt></ruby>で<ruby><rb>曳</rb><rt>ひ</rt></ruby>いて来い。」</p>
+        <p>と肩を張って大きに力む。</p>
+        <p>女中酌の手を差控えて、銚子を、膝に、と<ruby><rb>真直</rb><rt>まっすぐ</rt></ruby>に立てながら、</p>
+        <p>「さあ、今あっちの座敷で、もう一人二人言うて、お掛けやしたが、<persName ref="#kino">喜野</persName>、<ruby><rb>芸妓</rb><rt>げいこ</rt></ruby>さんはあったかな。」</p>
+        <p>小女が<ruby><rb>猪首</rb><rt>いくび</rt></ruby>で<ruby><rb>頷</rb><rt>うなず</rt></ruby>き、</p>
+        <p>「誰も居やはらぬ言うてでやんした。」</p>
+        <p>「かいな、旦那さん、お気の毒さまでござります。狭い土地に、数のない芸妓やによって、こうして会なんぞ<ruby><rb>立込</rb><rt>たてこ</rt></ruby>みますと、<ruby><rb>目星</rb><rt>めぼし</rt></ruby>い<ruby><rb>妓</rb><rt>こ</rt></ruby>たちは、ちゃっとの間に<ruby><rb>皆</rb><rt>みんな</rt></ruby>出払います。そうか言うて、<placeName ref="#tokyo">東京</placeName>のお客様に、あんまりな人も見せられはしませずな、<ruby><rb>容色</rb><rt>きりょう</rt></ruby>が<ruby><rb>好</rb><rt>い</rt></ruby>いとか、芸がたぎったとかいうのでござりませぬとなあ……」</p>
+        <p>「いや、こうなっては、宿賃を払わずに、こちとら<ruby><rb>夜遁</rb><rt>よにげ</rt></ruby>をするまでも、三味線を聞かなきゃ納まらない。<ruby><rb>眇</rb><rt>めっかち</rt></ruby>、いぐちでない以上は、古道具屋からでも呼んでくれ。」</p>
+        <p>「待ちなさりまし。おお、あの<placeName ref="#shimaya">島屋</placeName>の<ruby><rb>新妓</rb><rt>しんこ</rt></ruby>さんならきっと居るやろ。聞いて見や。<persName ref="#kino">喜野</persName>、ソレお急ぎじゃ、廊下走って、電話へ<ruby><rb>掛</rb><rt>かか</rt></ruby>れや。」</p>
+        <p>九</p>
+        <p>「持って来い、さあ、何んだ<ruby><rb>風車</rb><rt>かざぐるま</rt></ruby>。」</p>
+        <p>急に<ruby><rb>勢</rb><rt>いきおい</rt></ruby>の<ruby><rb>可</rb><rt>い</rt></ruby>い声を出した、饂飩屋に飲む博多節の<ruby><rb>兄哥</rb><rt>あにい</rt></ruby>は、霜の上の<ruby><rb>燗酒</rb><rt>かんざけ</rt></ruby>で、月あかりに直ぐ<ruby><rb>醒</rb><rt>さ</rt></ruby>める、色の白いのもそのままであったが、二三杯、<ruby><rb>呷切</rb><rt>あおっきり</rt></ruby>の茶碗酒で、目の<ruby><rb>縁</rb><rt>ふち</rt></ruby>へ、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と<ruby><rb>酔</rb><rt>よい</rt></ruby>が出た。</p>
+        <p>「勝手にピイピイ吹いておれ、でんでん太鼓に<ruby><rb>笙</rb><rt>しょう</rt></ruby>の笛、こっちあ<ruby><rb>小児</rb><rt>こども</rt></ruby>だ、なあ、<ruby><rb>阿媽</rb><rt>おっか</rt></ruby>。……いや、<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、それにしても何かね、御当処は、この<placeName ref="#kuwana">桑名</placeName>と云う所は、按摩の多い所かね。」と笛の音に瞳がちらつく。</p>
+        <p>「あんたもな、按摩の目は<ruby><rb>蠣</rb><rt>かき</rt></ruby>や云います。名物は<ruby><rb>蛤</rb><rt>はまぐり</rt></ruby>じゃもの、別に何も、多い訳はないけれど、ここは<ruby><rb>新地</rb><rt>しんち</rt></ruby>なり、旅籠屋のある町やに因って、つい、あの<ruby><rb>衆</rb><rt>しゅ</rt></ruby>が、あちこちから稼ぎに来るわな。」</p>
+        <p>「そうだ、成程<ruby><rb>新地</rb><rt>くるわ</rt></ruby>だった。」となぜか一人で納得して、気の抜けたような片手を<ruby><rb>支</rb><rt>つ</rt></ruby>く。</p>
+        <p>「お師匠さん、あんた、これからその<ruby><rb>音声</rb><rt>のど</rt></ruby>を<ruby><rb>芸妓屋</rb><rt>げいこや</rt></ruby>の<ruby><rb>門</rb><rt>かど</rt></ruby>で聞かしてお見やす。ほんに、<ruby><rb>人死</rb><rt>ひとじに</rt></ruby>が出来ようも知れぬぜな。」と襟の処で、塗盆をくるりと廻す。</p>
+        <p>「飛んだ合せかがみだね、人死が出来て<ruby><rb>堪</rb><rt>たま</rt></ruby>るものか。第一、<ruby><rb>芸妓屋</rb><rt>げいしゃや</rt></ruby>の前へは、うっかり立てねえ。」</p>
+        <p>「なぜえ。」</p>
+        <p>「悪くすると<ruby><rb>敵</rb><rt>かたき</rt></ruby>に<ruby><rb>出会</rb><rt>でっくわ</rt></ruby>す。」と<ruby><rb>投首</rb><rt>なげくび</rt></ruby>する。</p>
+        <p>「あれ、芸が身を助けると言う、……お師匠さん、あんた、<ruby><rb>芸妓</rb><rt>げいこ</rt></ruby>ゆえの、お身の上かえ。……ほんにな、<ruby><rb>仇</rb><rt>かたき</rt></ruby>だすな。」</p>
+        <p>「違った！　芸者の方で、私が敵さ。」</p>
+        <p>「あれ、のけのけと、あんな憎いこと言いなさんす。」と言う処へ、月は片明りの向う側。狭い町の、ものの<ruby><rb>気勢</rb><rt>けはい</rt></ruby>にも暗い軒下を、からころ、からころ、<ruby><rb>駒下駄</rb><rt>こまげた</rt></ruby>の音が、土間に<ruby><rb>浸込</rb><rt>しみこ</rt></ruby>むように響いて来る。……と直ぐその<ruby><rb>足許</rb><rt>あしもと</rt></ruby>を<ruby><rb>潜</rb><rt>くぐ</rt></ruby>るように、按摩の笛が寂しく聞える。</p>
+        <p>門附は<ruby><rb>屹</rb><rt>きっ</rt></ruby>と見た。</p>
+        <p>「噂をすれば、<ruby><rb>芸妓</rb><rt>げいこ</rt></ruby>はんが通りまっせ。あんた、見たいなら障子を開けやす……そのかわり、敵打たりょうと思うてな。」</p>
+        <p>「ああ、いつでも打たれてやら。ちょッ、<ruby><rb>可厭</rb><rt>いや</rt></ruby>に<ruby><rb>煩</rb><rt>うるさ</rt></ruby>く笛を吹くない。」</p>
+        <p>かたりと<ruby><rb>門</rb><rt>かど</rt></ruby>の戸を外から開ける。</p>
+        <p>「ええ、<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>すら。」</p>
+        <p>「今晩は、――饂飩六ツ急いでな。」と<ruby><rb>草履穿</rb><rt>ぞうりば</rt></ruby>きの<ruby><rb>半纏着</rb><rt>はんてんぎ</rt></ruby>、背中へ白く月を浴びて、赤い鼻をぬいと出す。</p>
+        <p>「へい。」と筒抜けの高調子で、亭主帳場へ棒に<ruby><rb>突立</rb><rt>つッた</rt></ruby>ち、</p>
+        <p>「お方、そりゃ早うせぬかい。」</p>
+        <p>女房は澄ましたもので、</p>
+        <p>「美しい<ruby><rb>跫音</rb><rt>あしおと</rt></ruby>やな、どこの？」と聞く。</p>
+        <p>「こないだ<placeName ref="#yamada">山田</placeName>の<placeName ref="#shinmachi">新町</placeName>から住替えた、こんの<placeName ref="#shimaya">島家</placeName>の<ruby><rb>新妓</rb><rt>しんこ</rt></ruby>じゃ。」と言いながら、鼻赤の若い衆は、<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いた顔を外に曲げる。</p>
+        <p>と門附は、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>の壁へ胸を反らして、ちょっと伸上るようにして、戸に立つ男の肩越しに、<ruby><rb>皎</rb><rt>こう</rt></ruby>とした月の<ruby><rb>廓</rb><rt>くるわ</rt></ruby>の、細い<ruby><rb>通</rb><rt>とおり</rt></ruby>を見透かした。</p>
+        <p>駒下駄はちと音低く、まだ、からころと響いたのである。</p>
+        <p>「<ruby><rb>沢山</rb><rt>たんと</rt></ruby>出なさるかな。」</p>
+        <p>「まあ、こんの饂飩のようには行かぬで。」</p>
+        <p>「その気で、すぐに届けますえ。」</p>
+        <p>「はい頼んます。」と、男は返る。</p>
+        <p>亭主帳場から<ruby><rb>背後</rb><rt>うしろ</rt></ruby>向きに、<ruby><rb>日和下駄</rb><rt>ひよりげた</rt></ruby>を探って下り、がたりびしりと手当り強く、そこへ<ruby><rb>広蓋</rb><rt>ひろぶた</rt></ruby>を<ruby><rb>出掛</rb><rt>だしか</rt></ruby>ける。ははあ、夫婦二人のこの店、気の毒千万、御亭が出前持を兼ねると見えたり。</p>
+        <p>「裏表とも気を<ruby><rb>注</rb><rt>つ</rt></ruby>けるじゃ、<ruby><rb>可</rb><rt>え</rt></ruby>いか、可いか。ちょっと道寄りをして来るで、可いか、お方。」</p>
+        <p>とそこいらじろじろと<ruby><rb>睨廻</rb><rt>ねめまわ</rt></ruby>して、新地の月に<ruby><rb>提灯</rb><rt>ちょうちん</rt></ruby><ruby><rb>入</rb><rt>い</rt></ruby>らず、片手懐にしたなりで、亭主が出前、ヤケにがっと戸を開けた。<ruby><rb>後</rb><rt>あと</rt></ruby>を閉めないで、ひょこひょこ出て<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。</p>
+        <p>釜の湯気が<ruby><rb>颯</rb><rt>さっ</rt></ruby>と分れて、門附の頬に影がさした。</p>
+        <p>女房横合から来て、</p>
+        <p>「いつまで、うっかり見送ってじゃ、そんなに<ruby><rb>敵</rb><rt>かたき</rt></ruby>が打たれたいの。」</p>
+        <p>「<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、<placeName ref="#kuwana">桑名</placeName>じゃあ……芸者の箱屋は按摩かい。」と<ruby><rb>悚気</rb><rt>ぞっ</rt></ruby>としたように肩を細く、この時やっと居直って、女房を見た、色が悪い。</p>
+        <p>十</p>
+        <p>「そうさ、いかに<placeName ref="#ise">伊勢</placeName>の<ruby><rb>浜荻</rb><rt>はまおぎ</rt></ruby>だって、按摩の箱屋というのはなかろう。私もなかろうと思うが、今向う側を何んとか屋の<ruby><rb>新妓</rb><rt>しんこ</rt></ruby>とか云うのが、からんころんと通るのを、何心なく見送ると、あの、一軒おき二軒おきの、<ruby><rb>軒行燈</rb><rt>のきあんどん</rt></ruby>では<ruby><rb>浅葱</rb><rt>あさぎ</rt></ruby>になり、月影では青くなって、薄い紫の座敷着で、<ruby><rb>褄</rb><rt>つま</rt></ruby>を<ruby><rb>蹴出</rb><rt>けだ</rt></ruby>さず、ひっそりと、白い襟を<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて、足の運びも進まないように何んとなく<ruby><rb>悄</rb><rt>しお</rt></ruby>れて行く。……その<ruby><rb>後</rb><rt>あと</rt></ruby>から、鼠色の影法師。女の影なら月に<ruby><rb>地</rb><rt>つち</rt></ruby>を<ruby><rb>這</rb><rt>は</rt></ruby>う<ruby><rb>筈</rb><rt>はず</rt></ruby>だに、寒い<ruby><rb>道陸神</rb><rt>どうろくじん</rt></ruby>が、のそのそと四五尺離れた処を、ずっと<ruby><rb>前方</rb><rt>むこう</rt></ruby>まで附添ったんだ。腰附、肩附、<ruby><rb>歩行</rb><rt>ある</rt></ruby>く<ruby><rb>振</rb><rt>ふり</rt></ruby>、<ruby><rb>捏</rb><rt>で</rt></ruby>っちて<ruby><rb>附着</rb><rt>くッつ</rt></ruby>けたような<ruby><rb>不恰好</rb><rt>ぶかっこう</rt></ruby>な<ruby><rb>天窓</rb><rt>あたま</rt></ruby>の工合、どう見ても按摩だね、<ruby><rb>盲人</rb><rt>めくら</rt></ruby>らしい、めんない千鳥よ。……私あ何んだ、だから、按摩が箱屋をすると云っちゃ<ruby><rb>可笑</rb><rt>おかし</rt></ruby>い、<ruby><rb>盲目</rb><rt>めくら</rt></ruby>になった箱屋かも知れないぜ。」</p>
+        <p>「どんな風の、どれな。」</p>
+        <p>と<ruby><rb>門</rb><rt>かど</rt></ruby>へ出そうにする。</p>
+        <p>「いや、もう見えない。呼ばれた<ruby><rb>家</rb><rt>うち</rt></ruby>へ入ったらしい。二人とも、ずっと<ruby><rb>前方</rb><rt>さき</rt></ruby>で居なくなった。そうか。ああ、盲目の箱屋は居ねえのか。アまた<ruby><rb>殖</rb><rt>ふ</rt></ruby>えたぜ……影がさす、笛の音に影がさす、按摩の笛が降るようだ。この寒い月に<ruby><rb>積</rb><rt>つも</rt></ruby>ったら、<placeName ref="#kuwana">桑名</placeName>の町は針の山になるだろう、<ruby><rb>堪</rb><rt>たま</rt></ruby>らねえ。」</p>
+        <p>とぐいと<ruby><rb>呷</rb><rt>あお</rt></ruby>って、</p>
+        <p>「ええ、ヤケに飲め、一杯どうだ、<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん附合いねえ。御亭主は留守だが、<ruby><rb>明放</rb><rt>あけっぱな</rt></ruby>しよ、……構うものか。それ向う三軒の屋根越に、雪坊主のような山の影が<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いてら。」</p>
+        <p>と門を振向き、あ、と叫んで、</p>
+        <p>「来た、来た、来た、来やあがった、来やあがった、按摩々々、按摩。」</p>
+        <p>と<ruby><rb>呼吸</rb><rt>いき</rt></ruby>も<ruby><rb>吐</rb><rt>つ</rt></ruby>かず、続けざまに<ruby><rb>急込</rb><rt>せきこ</rt></ruby>んだ、自分の声に、町の中に、ぬい、と立って、杖を<ruby><rb>脚許</rb><rt>あしもと</rt></ruby>へ<ruby><rb>斜交</rb><rt>はすっか</rt></ruby>いに<ruby><rb>突張</rb><rt>つッぱ</rt></ruby>りながら、目を白く<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>いて、月に小鼻を照らされた流しの按摩が、呼ばれたものと心得て、そのまま<ruby><rb>凍附</rb><rt>いてつ</rt></ruby>くように立留まったのも、門附はよく分らぬ<ruby><rb>状</rb><rt>さま</rt></ruby>で、</p>
+        <p>「影か、影か、<ruby><rb>阿媽</rb><rt>おっかあ</rt></ruby>、ほんとの按摩か、影法師か。」</p>
+        <p>と激しく聞く。</p>
+        <p>「ほんとなら、どうおしる。<ruby><rb>貴下</rb><rt>あんた</rt></ruby>、そんなに按摩さんが恋しいかな。」</p>
+        <p>「恋しいよ！　ああ、」</p>
+        <p>と<ruby><rb>呼吸</rb><rt>いき</rt></ruby>を<ruby><rb>吐</rb><rt>つ</rt></ruby>いて、見直して、眉を<ruby><rb>顰</rb><rt>ひそ</rt></ruby>めながら、<ruby><rb>声高</rb><rt>こわだか</rt></ruby>に笑った。</p>
+        <p>「ははははは、按摩にこがれてこの<ruby><rb>体</rb><rt>てい</rt></ruby>さ。おお、按摩さん、按摩さん、さあ入ってくんねえ。」</p>
+        <p>門附は、<ruby><rb>撥</rb><rt>ばち</rt></ruby>を<ruby><rb>除</rb><rt>の</rt></ruby>けて、<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>を叩いて、</p>
+        <p>「一つ頼もう。<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、済まないがちょいと借りるぜ。」</p>
+        <p>「この畳へ来て横におなりな。按摩さん、お客だす、あとを閉めておくんなさい。」</p>
+        <p>「へい。」</p>
+        <p>コトコトと杖の音。</p>
+        <p>「ええ……とんと早や、影法師も同然なもので。」と<ruby><rb>掠</rb><rt>かす</rt></ruby>れ声を白く出して、黒いけんちゅう<ruby><rb>羊羹色</rb><rt>ようかんいろ</rt></ruby>の<ruby><rb>被布</rb><rt>ひふ</rt></ruby>を着た、<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の影は、赤くその<ruby><rb>皺</rb><rt>しわ</rt></ruby>の中へさし込んだが、日和下駄から消えても<ruby><rb>失</rb><rt>う</rt></ruby>せず、片手を泳ぎ、片手で酒の香を<ruby><rb>嗅分</rb><rt>かぎわ</rt></ruby>けるように入った。</p>
+        <p>「聞えたか。」</p>
+        <p>とこの門附は、権のあるものいいで、五六本銚子の並んだ、膳をまた<ruby><rb>傍</rb><rt>わき</rt></ruby>へずらす。</p>
+        <p>「へへへ」とちょっと鼻をすすって、ふん、とけなりそうに<ruby><rb>香</rb><rt>におい</rt></ruby>を<ruby><rb>嗅</rb><rt>か</rt></ruby>ぐ。</p>
+        <p>「待ちこがれたもんだから、<ruby><rb>戸外</rb><rt>そと</rt></ruby>を犬が走っても、按摩さんに見えたのさ。こう、悪く言うんじゃないぜ……そこへぬっくりと<ruby><rb>顕</rb><rt>あらわ</rt></ruby>れたろう、酔っている、幻かと思った。」</p>
+        <p>「ほんに待兼ねていなさったえ。あの、笛の音ばかり気にしなさるので、私もどうやら<ruby><rb>解</rb><rt>よ</rt></ruby>めなんだが、やっと分ったわな、何んともお待遠でござんしたの。」</p>
+        <p>「これは、おかみさま、<ruby><rb>御繁昌</rb><rt>ごはんじょう</rt></ruby>。」</p>
+        <p>「お客はお一人じゃ、ゆっくり療治してあげておくれ。それなりにお<ruby><rb>寝</rb><rt>よ</rt></ruby>ったら、お泊め申そう。」</p>
+        <p>と言う。</p>
+        <p>按摩どの、けろりとして、</p>
+        <p>「ええ、その気で、念入りに一ツ、<ruby><rb>掴</rb><rt>つかま</rt></ruby>りましょうで。」と我が手を握って、<ruby><rb>拉</rb><rt>ひし</rt></ruby>ぐように、ぐいと<ruby><rb>揉</rb><rt>も</rt></ruby>んだ。</p>
+        <p>「へい、旦那。」</p>
+        <p>「旦那じゃねえ。ものもらいだ。」とまた<ruby><rb>呷</rb><rt>あお</rt></ruby>る。</p>
+        <p>女房が<ruby><rb>竊</rb><rt>そっ</rt></ruby>と<ruby><rb>睨</rb><rt>にら</rt></ruby>んで、</p>
+        <p>「滅相な、あの、言いなさる。」</p>
+        <p>十一</p>
+        <p>「いや、横になるどころじゃない、沢山だ、ここで沢山だよ。……第一背中へ<ruby><rb>掴</rb><rt>つか</rt></ruby>まられて、<ruby><rb>一呼吸</rb><rt>ひといき</rt></ruby>でも<ruby><rb>応</rb><rt>こた</rt></ruby>えられるかどうだか、実はそれさえ<ruby><rb>覚束</rb><rt>おぼつか</rt></ruby>ない。悪くすると、そのまま目を<ruby><rb>眩</rb><rt>まわ</rt></ruby>して<ruby><rb>打倒</rb><rt>ぶったお</rt></ruby>れようも知れんのさ。<ruby><rb>体</rb><rt>てい</rt></ruby>よく按摩さんに掴み殺されるといった形だ。」</p>
+        <p>と真顔で言う。</p>
+        <p>「飛んだ事をおっしゃりませ、田舎でも、これでも、長年年期を入れました杉山流のものでござります。<ruby><rb>鳩尾</rb><rt>きゅうび</rt></ruby>に<ruby><rb>鍼</rb><rt>はり</rt></ruby>をお打たせになりましても、決して間違いのあるようなものではござりませぬ。」と<ruby><rb>呆</rb><rt>あき</rt></ruby>れたように、按摩の<ruby><rb>剥</rb><rt>む</rt></ruby>く目は<ruby><rb>蒼</rb><rt>あお</rt></ruby>かりけり。</p>
+        <p>「うまい、まずいを言うのじゃない。いつの<ruby><rb>幾日</rb><rt>いくか</rt></ruby>にも<ruby><rb>何時</rb><rt>なんどき</rt></ruby>にも、<ruby><rb>洒落</rb><rt>しゃれ</rt></ruby>にもな、生れてからまだ一度も按摩さんの味を知らないんだよ。」</p>
+        <p>「まあ、あんなにあんた、こがれなさった癖に。」</p>
+        <p>「そりゃ、張って張って仕様がないから、目にちらつくほど待ったがね、いざ……となると<ruby><rb>初産</rb><rt>ういざん</rt></ruby>です、<ruby><rb>灸</rb><rt>きゅう</rt></ruby>の皮切も同じ事さ。どうにも勝手が分らない。痛いんだか、<ruby><rb>痒</rb><rt>かゆ</rt></ruby>いんだか、<ruby><rb>風説</rb><rt>うわさ</rt></ruby>に因ると<ruby><rb>擽</rb><rt>くすぐ</rt></ruby>ったいとね。多分私も擽ったかろうと思う。……ところがあいにく、<ruby><rb>母親</rb><rt>おふくろ</rt></ruby>が操正しく、これでも<ruby><rb>密夫</rb><rt>まおとこ</rt></ruby>の<ruby><rb>児</rb><rt>こ</rt></ruby>じゃないそうで、その擽ったがりようこの上なし。……あれ、あんなあの、<ruby><rb>握飯</rb><rt>にぎりめし</rt></ruby>を<ruby><rb>拵</rb><rt>こさ</rt></ruby>えるような手附をされる、とその手で揉まれるかと思ったばかりで、もう<ruby><rb>堪</rb><rt>たま</rt></ruby>らなく擽ったい。どうも、ああ、こりゃ<ruby><rb>不可</rb><rt>いけね</rt></ruby>え。」</p>
+        <p>と脇腹へ<ruby><rb>両肱</rb><rt>りょうひじ</rt></ruby>を、しっかりついて、<ruby><rb>掻竦</rb><rt>かいすく</rt></ruby>むように脊筋を<ruby><rb>捻</rb><rt>よ</rt></ruby>る。</p>
+        <p>「ははははは、これはどうも。」と按摩は手持不沙汰な風。</p>
+        <p>女房<ruby><rb>更</rb><rt>あらた</rt></ruby>めて顔を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いて、</p>
+        <p>「何んと、まあ、可愛らしい。」</p>
+        <p>「同じ事を、<ruby><rb>可哀想</rb><rt>かわいそう</rt></ruby>だ、と言ってくんねえ。……そうかと言って、こう張っちゃ、身も皮も石になって<ruby><rb>固</rb><rt>かたま</rt></ruby>りそうな、<ruby><rb>背</rb><rt>せなか</rt></ruby>が<ruby><rb>詰</rb><rt>つま</rt></ruby>って胸は裂ける……揉んでもらわなくては<ruby><rb>遣切</rb><rt>やりき</rt></ruby>れない。遣れ、構わない。」</p>
+        <p>と激しい声して、片膝を<ruby><rb>屹</rb><rt>きっ</rt></ruby>と立て、</p>
+        <p>「殺す気で<ruby><rb>蒐</rb><rt>かか</rt></ruby>れ。こっちは覚悟だ、さあ。ときに<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん、<ruby><rb>袖摺</rb><rt>そです</rt></ruby>り合うのも<ruby><rb>他生</rb><rt>たしょう</rt></ruby>の縁ッさ。旅空掛けてこうしたお世話を受けるのも<ruby><rb>前</rb><rt>さき</rt></ruby>の世の何かだろう、何んだか、おなごりが<ruby><rb>惜</rb><rt>おし</rt></ruby>いんです。<ruby><rb>掴殺</rb><rt>つかみころ</rt></ruby>されりゃそれきりだ、も一つ<ruby><rb>憚</rb><rt>はばか</rt></ruby>りだがついでおくれ、別れの杯になろうも知れん。」</p>
+        <p>と<ruby><rb>雫</rb><rt>しずく</rt></ruby>を切って、ついと出すと、他愛なさもあんまりな、目の色の変りよう、<ruby><rb>眦</rb><rt>まなじり</rt></ruby>も<ruby><rb>屹</rb><rt>きっ</rt></ruby>となったれば、女房は気を打たれ、<ruby><rb>黙然</rb><rt>だんまり</rt></ruby>でただ目を<ruby><rb>睜</rb><rt>みは</rt></ruby>る。</p>
+        <p>「さあ按摩さん。」</p>
+        <p>「ええ、」</p>
+        <p>「<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん<ruby><rb>酌</rb><rt>つ</rt></ruby>いどくれよ！」</p>
+        <p>「はあ、」と酌をする手がちと震えた。</p>
+        <p>この茶碗を、一息に仰ぎ干すと、按摩が手を掛けたのと一緒であった。</p>
+        <p>がたがたと身震いしたが、<ruby><rb>面</rb><rt>おもて</rt></ruby>は<ruby><rb>幸</rb><rt>さいわい</rt></ruby>に紅潮して、</p>
+        <p>「ああ、<ruby><rb>腸</rb><rt>はらわた</rt></ruby>へ<ruby><rb>沁透</rb><rt>しみとお</rt></ruby>る！」</p>
+        <p>「何かその、何事か存じませぬが、按摩は大丈夫でござります。」と、これもおどつく。</p>
+        <p>「まず、」</p>
+        <p>と<ruby><rb>突張</rb><rt>つッぱ</rt></ruby>った手をぐたりと緩めて、</p>
+        <p>「<ruby><rb>生命</rb><rt>いのち</rt></ruby>に別条は無さそうだ、しかし、しかし<ruby><rb>応</rb><rt>こた</rt></ruby>える。」</p>
+        <p>とがっくり<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いたのが、ふらふらした。</p>
+        <p>「月は寒し、炎のようなその指が、火水となって骨に響く。胸は冷い、耳は熱い。<ruby><rb>肉</rb><rt>み</rt></ruby>は燃える、血は冷える。あっ、」と言って、両手を落した。</p>
+        <p><ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>して按摩が手を引く、その<ruby><rb>嘴</rb><rt>くちばし</rt></ruby>や<ruby><rb>鮹</rb><rt>たこ</rt></ruby>に似たり。</p>
+        <p><ruby><rb>兄哥</rb><rt>あにい</rt></ruby>は、しっかり起直って、</p>
+        <p>「いや、手をやすめず遣ってくれ、あわれと思って<ruby><rb>静</rb><rt>しずか</rt></ruby>に……よしんば<ruby><rb>徐</rb><rt>そっ</rt></ruby>と揉まれた処で、私は五体が砕ける思いだ。</p>
+        <p>その思いをするのが<ruby><rb>可厭</rb><rt>いや</rt></ruby>さに、いろいろに悩んだんだが、<ruby><rb>避</rb><rt>よ</rt></ruby>ければ<ruby><rb>摺着</rb><rt>すりつ</rt></ruby>く、過ぎれば<ruby><rb>引張</rb><rt>ひっぱ</rt></ruby>る、逃げれば追う。形が無ければ声がする……ピイピイ笛は<ruby><rb>攻太鼓</rb><rt>せめだいこ</rt></ruby>だ。こうひしひしと<ruby><rb>寄着</rb><rt>よッつ</rt></ruby>かれちゃ、弱いものには我慢が出来ない。<ruby><rb>淵</rb><rt>ふち</rt></ruby>に臨んで、<ruby><rb>崕</rb><rt>がけ</rt></ruby>の上に<ruby><rb>瞰下</rb><rt>みお</rt></ruby>ろして<ruby><rb>踏留</rb><rt>ふみとど</rt></ruby>まる<ruby><rb>胆玉</rb><rt>きもだま</rt></ruby>のないものは、いっその思い、<ruby><rb>真逆</rb><rt>まっさかさま</rt></ruby>に飛込みます。破れかぶれよ、按摩さん、<ruby><rb>従兄弟</rb><rt>いとこ</rt></ruby><ruby><rb>再従兄弟</rb><rt>はとこ</rt></ruby>か、<ruby><rb>伯父甥</rb><rt>おじおい</rt></ruby>か、親類なら、さあ、<ruby><rb>敵</rb><rt>かたき</rt></ruby>を取れ。私はね、……お仲間の按摩を一人殺しているんだ。」</p>
+        <p>十二</p>
+        <p>「今からちょうど三年前。……その年は、この月から一月<ruby><rb>後</rb><rt>おくれ</rt></ruby>の<date when="--12"><ruby><rb>師走</rb><rt>しわす</rt></ruby></date>の末に、<placeName ref="#nagoya">名古屋</placeName>へ用があって来た。ついでと言っては悪いけれど、<ruby><rb>稼</rb><rt>かせぎ</rt></ruby>の繰廻しがどうにか附いて、参宮が出来るというのも、お<placeName ref="#ise">伊勢</placeName>様の<ruby><rb>思召</rb><rt>おぼしめし</rt></ruby>、<ruby><rb>冥加</rb><rt>みょうが</rt></ruby>のほど<ruby><rb>難有</rb><rt>ありがた</rt></ruby>い。ゆっくり<placeName ref="#furuichi"><ruby><rb>古市</rb><rt>ふるいち</rt></ruby></placeName>に<ruby><rb>逗留</rb><rt>とうりゅう</rt></ruby>して、それこそついでに、……<placeName ref="#asamayama"><ruby><rb>浅熊山</rb><rt>あさまやま</rt></ruby></placeName>の雲も見よう、<placeName ref="#tsuzumigatake">鼓ヶ<ruby><rb>嶽</rb><rt>たけ</rt></ruby></placeName>の<ruby><rb>調</rb><rt>しらべ</rt></ruby>も聞こう。<placeName ref="#futami"><ruby><rb>二見</rb><rt>ふたみ</rt></ruby></placeName>じゃ初日を拝んで、<placeName ref="#sakaibashi">堺橋</placeName>から、<placeName ref="#ikenoura">池の浦</placeName>、<placeName ref="#okinoshima">沖の島</placeName>で空が別れる、<placeName ref="#kamigori"><ruby><rb>上郡</rb><rt>かみごおり</rt></ruby></placeName>から<placeName ref="#shima">志摩</placeName>へ入って、<placeName ref="#hiyoriyama"><ruby><rb>日和山</rb><rt>ひよりやま</rt></ruby></placeName>を見物する。……海が<ruby><rb>凪</rb><rt>な</rt></ruby>いだら船を出して、<placeName ref="#irako"><ruby><rb>伊良子</rb><rt>いらこ</rt></ruby>ヶ崎</placeName>の<ruby><rb>海鼠</rb><rt>なまこ</rt></ruby>で飲もう、何でも五日六日は逗留というつもりで。……<placeName ref="#yamada">山田</placeName>では<placeName ref="#onoemachi">尾上町</placeName>の<placeName ref="#fujiya">藤屋</placeName>へ泊った。驚くべからず――まさかその時は私だって、浴衣に<ruby><rb>袷</rb><rt>あわせ</rt></ruby>じゃ居やしない。</p>
+        <p>着換えに<ruby><rb>紋付</rb><rt>もんつき</rt></ruby>の一枚も持った、<ruby><rb>縞</rb><rt>しま</rt></ruby>で<ruby><rb>襲衣</rb><rt>かさね</rt></ruby>の若旦那さ。……ま、こう、雲助が<ruby><rb>傾城買</rb><rt>けいせいがい</rt></ruby>の昔を語る……<ruby><rb>負惜</rb><rt>まけおし</rt></ruby>みを言うのじゃないよ。何も自分の働きでそうした訳じゃないのだから。――聞きねえ、親なり、叔父なり、師匠なり、恩人なりという、……私が稼業じゃ<placeName ref="#edo">江戸</placeName>で一番、<placeName ref="#nihon">日本</placeName>中の家元の大黒柱と云う、<ruby><rb>少兀</rb><rt>すこはげ</rt></ruby>の苦い<ruby><rb>面</rb><rt>つら</rt></ruby>した<ruby><rb>阿父</rb><rt>おやじ</rt></ruby>がある。</p>
+        <p>いや、その<ruby><rb>顔色</rb><rt>がんしょく</rt></ruby>に似合わない、気さくに<ruby><rb>巫山戯</rb><rt>ふざけ</rt></ruby>た<ruby><rb>江戸児</rb><rt>えどッこ</rt></ruby>でね。<ruby><rb>行年</rb><rt>ぎょうねん</rt></ruby>その時六十歳を、三つと刻んだはおかしいが、数え年のサバを<ruby><rb>算</rb><rt>よ</rt></ruby>んで、私が代理に宿帳をつける時は、天地人とか何んとか言って、<ruby><rb>禅</rb><rt>ぜん</rt></ruby>の問答をするように、指を三本、ひょいと出してギロリと<ruby><rb>睨</rb><rt>にら</rt></ruby>む……五十七歳とかけと云うのさ。<ruby><rb>可</rb><rt>い</rt></ruby>いかね、その気だもの……旅籠屋の女中が出てお給仕をする前では、<ruby><rb>阿父</rb><rt>おとっ</rt></ruby>さんが大の禁句さ。……与一兵衛じゃあるめえし、<ruby><rb>汝</rb><rt>てめえ</rt></ruby>、<ruby><rb>定九郎</rb><rt>さだくろう</rt></ruby>のように呼ぶなえ、と唇を<ruby><rb>捻曲</rb><rt>ねじま</rt></ruby>げて、叔父さんとも言わせねえ、兄さんと呼べ、との御意だね。</p>
+        <p>この叔父さんのお供だろう。道中の面白さ。酒はよし、景色はよし、日和は続く。どこへ行っても女はふらない。<date when="--12">師走</date>の山路に、嫁菜が盛りで、しかも<ruby><rb>大輪</rb><rt>おおりん</rt></ruby>が咲いていた。</p>
+        <p>とこの<placeName ref="#kuwana">桑名</placeName>、<placeName ref="#yokkaichi">四日市</placeName>、<placeName ref="#kameyama">亀山</placeName>と、<placeName ref="#ise">伊勢</placeName>路へ<ruby><rb>掛</rb><rt>かか</rt></ruby>った汽車の中から、おなじ切符のたれかれが――その<ruby><rb>催</rb><rt>もよおし</rt></ruby>について<placeName ref="#nagoya">名古屋</placeName>へ行った、私たちの、まあ……興行か……その興行の<ruby><rb>風説</rb><rt>うわさ</rt></ruby>をする。嘘にもどうやら、私の評判も<ruby><rb>可</rb><rt>よ</rt></ruby>さそうな。叔父はもとより。……何事も言うには及ばん。――私が口で<ruby><rb>饒舌</rb><rt>しゃべ</rt></ruby>っては、流儀の恥になろうから、まあ、<ruby><rb>何某</rb><rt>なにがし</rt></ruby>と言ったばかりで、世間は承知すると思って、聞きねえ。</p>
+        <p>ところがね、その私たちの事を言うついでに、この<placeName ref="#ise">伊勢</placeName>へ入ってから、きっと一所に出る、人の名がある。可いかい、<placeName ref="#yamada">山田</placeName>の<placeName ref="#furuichi">古市</placeName>に<persName ref="#soyama"><ruby><rb>惣市</rb><rt>そういち</rt></ruby></persName>と云う<ruby><rb>按摩鍼</rb><rt>あんまはり</rt></ruby>だ。」</p>
+        <p>門附はその名を言う時、うっとりと瞳を据えた。<ruby><rb>背</rb><rt>せなか</rt></ruby>を<ruby><rb>抱</rb><rt>いだ</rt></ruby>くように<ruby><rb>背後</rb><rt>うしろ</rt></ruby>に立った按摩にも、<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>に近く裾を投げて、向うに腰を掛けた女房にも、目もくれず、<ruby><rb>凝</rb><rt>じっ</rt></ruby>と天井を仰ぎながら、<ruby><rb>胸前</rb><rt>むなさき</rt></ruby>にかかる湯気を忘れたように手で<ruby><rb>捌</rb><rt>さば</rt></ruby>いて、</p>
+        <p>「按摩だ、がその按摩が、<ruby><rb>旧</rb><rt>もと</rt></ruby>はさる大名に仕えた士族の<ruby><rb>果</rb><rt>はて</rt></ruby>で、聞きねえ。私等が流儀と、<ruby><rb>同</rb><rt>おんな</rt></ruby>じその道の芸の上手。<placeName ref="#edo">江戸</placeName>の宗家も、本山も、当国<placeName ref="#furuichi">古市</placeName>において、一人で兼ねたり、という<ruby><rb>勢</rb><rt>いきおい</rt></ruby>で、自ら<persName ref="#soyama"><ruby><rb>宗山</rb><rt>そうざん</rt></ruby></persName>と<ruby><rb>名告</rb><rt>なの</rt></ruby>る<ruby><rb>天狗</rb><rt>てんぐ</rt></ruby>。高慢も高慢だが、また出来る事も出来る。……<placeName ref="#tokyo">東京</placeName>の本場から、誰も来て<ruby><rb>怯</rb><rt>おびや</rt></ruby>かされた。<ruby><rb>某</rb><rt>それがし</rt></ruby>も参って<ruby><rb>拉</rb><rt>ひし</rt></ruby>がれた。あれで一眼でも有ろうなら、<placeName ref="#mie">三重県</placeName>に居る<ruby><rb>代物</rb><rt>しろもの</rt></ruby>ではない。今度<placeName ref="#nagoya">名古屋</placeName>へ来た連中もそうじゃ、<ruby><rb>贋物</rb><rt>にせもの</rt></ruby>ではなかろうから、何も<persName ref="#soyama">宗山</persName>に稽古をしてもらえとは言わぬけれど、<ruby><rb>鰻</rb><rt>うなぎ</rt></ruby>の<ruby><rb>他</rb><rt>ほか</rt></ruby>に、<ruby><rb>鯛</rb><rt>たい</rt></ruby>がある、味を知って帰れば可いに。――と<ruby><rb>才発</rb><rt>さいはじ</rt></ruby>けた<ruby><rb>商人</rb><rt>あきんど</rt></ruby>風のと、でっぷりした金の入歯の、土地の物持とも思われる奴の話したのが、<ruby><rb>風説</rb><rt>うわさ</rt></ruby>の中でも耳に付いた。</p>
+        <p>叔父はこくこく<ruby><rb>坐睡</rb><rt>いねむり</rt></ruby>をしていたっけ。<ruby><rb>私</rb><rt>わっし</rt></ruby>あ若気だ、襟巻で顔を隠して、<ruby><rb>睨</rb><rt>にら</rt></ruby>むように二人を見たのよ、ね。</p>
+        <p>宿の<placeName ref="#fujiya">藤屋</placeName>へ着いてからも、わざと、叔父を一人で湯へ遣り……女中にもちょっと聞く。……<ruby><rb>挨拶</rb><rt>あいさつ</rt></ruby>に出た番頭にも、按摩の<persName ref="#soyama">惣市</persName>、<persName ref="#soyama">宗山</persName>と云う、これこれした芸人が居るか、と聞くと、誰の返事も同じ事。思ったよりは高名で、現に、この頃も<placeName ref="#fujiya">藤屋</placeName>に泊った、<ruby><rb>何某侯</rb><rt>なにがしこう</rt></ruby>の御隠居の御召に因って、<ruby><rb>上下</rb><rt>かみしも</rt></ruby>で座敷を<ruby><rb>勤</rb><rt>し</rt></ruby>た時、（さてもな、<placeName ref="#tsuzumigatake">鼓ヶ嶽</placeName>が近いせいか、これほどの松風は、<placeName ref="#tokyo">東京</placeName>でも聞けぬ、）と御賞美。</p>
+        <p>（<ruby><rb>的等</rb><rt>てきら</rt></ruby>にも聞かせたい。）と<persName ref="#soyama">宗山</persName>が言われます、とちょろりと<ruby><rb>饒舌</rb><rt>しゃべ</rt></ruby>った。<ruby><rb>私</rb><rt>わっし</rt></ruby>が<ruby><rb>夥間</rb><rt>なかま</rt></ruby>を――（的等。）と言う。</p>
+        <p>的等の<ruby><rb>一人</rb><rt>いちにん</rt></ruby>、かく言う私だ……」</p>
+        <p>十三</p>
+        <p>「なお聞けば、<placeName ref="#furuichi">古市</placeName>のはずれに、その<persName ref="#soyama">惣市</persName>、小料理屋の店をして、<ruby><rb>妾</rb><rt>めかけ</rt></ruby>の三人もある、大した<ruby><rb>勢</rb><rt>いきおい</rt></ruby>だ、と言うだろう。――何を！……按摩の分際で、宗家の、宗の字、この道の、本山が<ruby><rb>凄</rb><rt>すさま</rt></ruby>じい。</p>
+        <p>こう、按摩さん、舞台の<ruby><rb>差</rb><rt>さし</rt></ruby>は<ruby><rb>堪忍</rb><rt>かに</rt></ruby>してくんな。」</p>
+        <p>と、<ruby><rb>竊</rb><rt>そっ</rt></ruby>と痛そうに胸を<ruby><rb>圧</rb><rt>おさ</rt></ruby>えた。</p>
+        <p>「後で、よく気がつけば、<placeName ref="#shinshu">信州</placeName>のお百姓は、<placeName ref="#tokyo">東京</placeName>の芝居なんぞ、ほんとの<ruby><rb>猪</rb><rt>しし</rt></ruby>はないとて威張る。……な、宮重大根が<placeName ref="#nihon">日本</placeName>一なら、<ruby><rb>蕪</rb><rt>かぶ</rt></ruby>の千枚漬も皇国無双で、早く言えば、この<placeName ref="#kuwana">桑名</placeName>の、焼蛤も三都無類さ。</p>
+        <p>その気で居れば可いものを、二十四の前厄なり、若気の<ruby><rb>一図</rb><rt>いちず</rt></ruby>に<ruby><rb>苛々</rb><rt>いらいら</rt></ruby>して、第一その<persName ref="#soyama">宗山</persName>が気に入らない。（的等。）もぐっと<ruby><rb>癪</rb><rt>しゃく</rt></ruby>に障れば、妾三人で<ruby><rb>赫</rb><rt>かっ</rt></ruby>とした。</p>
+        <p>維新以来の世がわりに、……<ruby><rb>一時</rb><rt>ひとしきり</rt></ruby>私等の稼業がすたれて、<ruby><rb>夥間</rb><rt>なかま</rt></ruby>が食うに困ったと思え。弓矢取っては一万石、大名株の芸人が、イヤ<ruby><rb>楊枝</rb><rt>ようじ</rt></ruby>を削る、かるめら焼を露店で売る。……<ruby><rb>蕎麦屋</rb><rt>そばや</rt></ruby>の出前持になるのもあり、現在私がその<ruby><rb>小父者</rb><rt>おじご</rt></ruby>などは、田舎の役場に小使いをして、濁り酒のかすに酔って、<ruby><rb>田圃</rb><rt>たんぼ</rt></ruby>の<ruby><rb>畝</rb><rt>あぜ</rt></ruby>に寝たもんです。……</p>
+        <p>その妹だね、可いかい、私の<ruby><rb>阿母</rb><rt>おふくろ</rt></ruby>が、振袖の年頃を、困る処へ附込んで、<ruby><rb>小金</rb><rt>こがね</rt></ruby>を溜めた按摩めが、ちとばかりの貸を<ruby><rb>枷</rb><rt>かせ</rt></ruby>に、妾にしよう、と追い廻わす。――<ruby><rb>危</rb><rt>あぶな</rt></ruby>く駒下駄を踏返して、<ruby><rb>駕籠</rb><rt>かご</rt></ruby>でなくっちゃ見なかった<placeName ref="#sumidagawa">隅田川</placeName>へ落ちようとしたっさ。――その話にでも嫌いな按摩が。</p>
+        <p>ええ。</p>
+        <p>待て、見えない両眼で、<ruby><rb>汝</rb><rt>うぬ</rt></ruby>が身の程を<ruby><rb>明</rb><rt>あかる</rt></ruby>く見るよう、療治を一つしてくりょう。</p>
+        <p>で、<ruby><rb>翌日</rb><rt>あくるひ</rt></ruby>は謹んで、参拝した。</p>
+        <p>その尊さに、その晩ばかりはちっとの酒で宵寝をした、叔父の夜具の裾を叩いて、<ruby><rb>枕許</rb><rt>まくらもと</rt></ruby>へ水を置き、</p>
+        <p>（女中、そこいらへ見物に、）</p>
+        <p>と言った心は、穴を<ruby><rb>圧</rb><rt>おさ</rt></ruby>えて、<persName ref="#soyama">宗山</persName>を退治る<ruby><rb>料簡</rb><rt>りょうけん</rt></ruby>。</p>
+        <p>と出た、風が荒い。荒いがこの風、<placeName ref="#isuzugawa"><ruby><rb>五十鈴川</rb><rt>いすずがわ</rt></ruby></placeName>で<ruby><rb>劃</rb><rt>かぎ</rt></ruby>られて、<placeName ref="#ujibashi">宇治橋</placeName>の向うまでは吹くまいが、<placeName ref="#ainoyama">相の山</placeName>の長坂を下から<ruby><rb>哄</rb><rt>どっ</rt></ruby>と吹上げる……これが悪く<ruby><rb>生温</rb><rt>なまぬる</rt></ruby>くって、<ruby><rb>灯</rb><rt>あかり</rt></ruby>の前じゃ砂が黄色い。月は雲の底に<ruby><rb>淀</rb><rt>どんよ</rt></ruby>りしている。<placeName ref="#kamijiyama"><ruby><rb>神路山</rb><rt>かみじやま</rt></ruby></placeName>の樹は<ruby><rb>蒼</rb><rt>あお</rt></ruby>くても、<placeName ref="#futami">二見</placeName>の波は白かろう。<ruby><rb>酷</rb><rt>ひど</rt></ruby>い<ruby><rb>勢</rb><rt>いきおい</rt></ruby>、ぱっと吹くので、たじたじとなる。帽子が飛ぶから、そのまま、<placeName ref="#fujiya">藤屋</placeName>が店へ投返した……と脊筋へ<ruby><rb>孕</rb><rt>はら</rt></ruby>んで、坊さんが忍ぶように羽織の袖が<ruby><rb>飜々</rb><rt>ひらひら</rt></ruby>する。着換えるのも面倒で、昼間のなりで、<ruby><rb>神詣</rb><rt>かみもう</rt></ruby>での紋付さ。――袖畳みに<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>へ<ruby><rb>捻込</rb><rt>ねじこ</rt></ruby>んで、何の<ruby><rb>洒落</rb><rt>しゃれ</rt></ruby>にか、手拭で頬被りをしたもんです。</p>
+        <p>門附になる前兆さ、<ruby><rb>状</rb><rt>ざま</rt></ruby>を見やがれ。」と片手を袖へ、二の腕深く<ruby><rb>突込</rb><rt>つッこ</rt></ruby>んだ。片手で<ruby><rb>狙</rb><rt>ねら</rt></ruby>うように茶碗を<ruby><rb>圧</rb><rt>おさ</rt></ruby>えて、</p>
+        <p>「ね、<placeName ref="#furuichi">古市</placeName>へ行くと、まだ宵だのに<ruby><rb>寂然</rb><rt>ひっそり</rt></ruby>している。……軒が、がたぴしと鳴って、<ruby><rb>軒行燈</rb><rt>のきあんどん</rt></ruby>がばッばッ揺れる。<ruby><rb>三味線</rb><rt>さみせん</rt></ruby>の音もしたけれど、<ruby><rb>吹</rb><rt>ふき</rt></ruby>さらわれて大屋根へ猫の姿でけし飛ぶようさ。何の事はない、今夜のこの寂しい新地へ、風を持って来て、<ruby><rb>打着</rb><rt>ぶッつ</rt></ruby>けたと思えば可い。</p>
+        <p>一軒、<ruby><rb>地</rb><rt>つち</rt></ruby>のちと<ruby><rb>窪</rb><rt>くぼ</rt></ruby>んだ処に、<ruby><rb>溝板</rb><rt>どぶいた</rt></ruby>から直ぐに竹の<ruby><rb>欄干</rb><rt>てすり</rt></ruby>になって、<ruby><rb>毛氈</rb><rt>もうせん</rt></ruby>の端は<ruby><rb>刎上</rb><rt>はねあが</rt></ruby>り、畳に赤い島が出来て、<ruby><rb>洋燈</rb><rt>ランプ</rt></ruby>は油煙に<ruby><rb>燻</rb><rt>くすぶ</rt></ruby>ったが、<ruby><rb>真白</rb><rt>まっしろ</rt></ruby>に塗った姉さんが一人居る、空気銃、吹矢の店へ、ひょろりとして<ruby><rb>引掛</rb><rt>ひっかか</rt></ruby>ったね。</p>
+        <p><ruby><rb>取着</rb><rt>とッつ</rt></ruby>きに、<ruby><rb>肱</rb><rt>ひじ</rt></ruby>を<ruby><rb>支</rb><rt>つ</rt></ruby>いて、怪しく正面に<ruby><rb>眼</rb><rt>まなこ</rt></ruby>の光る、悟った顔の<ruby><rb>達磨様</rb><rt>だるまさま</rt></ruby>と、女の顔とを、七分三分に狙いながら、</p>
+        <p>（この辺に<persName ref="#soyama">宗山</persName>ッて按摩は居るかい。）とここで実は様子を聞く気さ。押懸けて<ruby><rb>行</rb><rt>ゆ</rt></ruby>こうたってちっとも勝手が知れないから。</p>
+        <p>（先生様かね、いらっしゃります。）と何と、（的等。）の一人に、先生を、しかも、様づけに呼ぶだろう。</p>
+        <p>（実は、その人の何を、一つ、聞きたくって来たんだが、誰が行っても頼まれてくれるだろうか。）と尋ねると、<ruby><rb>大熨斗</rb><rt>おおのし</rt></ruby>を書いた幕の影から、色の<ruby><rb>蒼</rb><rt>あお</rt></ruby>い、<ruby><rb>鬢</rb><rt>びん</rt></ruby>の乱れた、<ruby><rb>痩</rb><rt>や</rt></ruby>せた<ruby><rb>中年増</rb><rt>ちゅうどしま</rt></ruby>が顔を出して、（<ruby><rb>知己</rb><rt>ちかづき</rt></ruby>のない、旅の方にはどうか知らぬ、お<ruby><rb>望</rb><rt>のぞみ</rt></ruby>なら、内から案内して上げましょうか。）と言う。</p>
+        <p>茶代を<ruby><rb>奮発</rb><rt>はず</rt></ruby>んで、頼むと言った。</p>
+        <p>（案内して上げなはれ、<ruby><rb>可</rb><rt>い</rt></ruby>い旦那や、気を付けて、）と<ruby><rb>目配</rb><rt>めくばせ</rt></ruby>をする、……と雑作はない、その塗ったのが、いきなり、欄干を<ruby><rb>跨</rb><rt>また</rt></ruby>いで出る奴さ。」</p>
+        <p>十四</p>
+        <p>「両袖で口を<ruby><rb>塞</rb><rt>ふさ</rt></ruby>いで、風の中を<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて<ruby><rb>行</rb><rt>ゆ</rt></ruby>く。……その女の案内で、つい向う路地を入ると、どこも吹附けるから、戸を<ruby><rb>鎖</rb><rt>さ</rt></ruby>したが、怪しげな<ruby><rb>行燈</rb><rt>あんどん</rt></ruby>の<ruby><rb>煽</rb><rt>あお</rt></ruby>って見える、ごたごたした両側の長屋の中に、<ruby><rb>溝板</rb><rt>どぶいた</rt></ruby>の広い、格子戸造りで、この一軒だけ二階屋。</p>
+        <p>軒に、御手軽<ruby><rb>御料理</rb><rt>おんりょうり</rt></ruby>としたのが、<persName ref="#soyama">宗山</persName>先生の<ruby><rb>住居</rb><rt>すまい</rt></ruby>だった。</p>
+        <p>（お客様。）と云う女の送りで、ずッと入る。直ぐそこの長火鉢を取巻いて、三人ばかり、変な女が、立膝やら、横坐りやら、猫板に頬杖やら、料理の方は<ruby><rb>隙</rb><rt>ひま</rt></ruby>らしい。……<ruby><rb>上框</rb><rt>あがりかまち</rt></ruby>の正面が、<ruby><rb>取着</rb><rt>とッつ</rt></ruby>きの狭い<ruby><rb>階子段</rb><rt>はしごだん</rt></ruby>です。</p>
+        <p>（座敷は二階かい、）と<ruby><rb>突然</rb><rt>いきなり</rt></ruby><ruby><rb>頬被</rb><rt>ほおかむり</rt></ruby>を取って上ろうとすると、風立つので<ruby><rb>燈</rb><rt>あかり</rt></ruby>を置かない。<ruby><rb>真暗</rb><rt>まっくら</rt></ruby>だからちょっと待って、と色めいてざわつき出す。とその拍子に風のなぐれで、奴等の上の<ruby><rb>釣洋燈</rb><rt>つりランプ</rt></ruby>がぱっと消えた。</p>
+        <p>そこへ、<ruby><rb>中仕切</rb><rt>なかじきり</rt></ruby>の障子が、次の<ruby><rb>室</rb><rt>ま</rt></ruby>の<ruby><rb>燈</rb><rt>あかり</rt></ruby>にほのめいて、二枚見えた。<ruby><rb>真中</rb><rt>まんなか</rt></ruby>へ、ぱっと映ったのが、大坊主の額の出た、唇の<ruby><rb>大</rb><rt>おおき</rt></ruby>い影法師。む、<persName ref="#soyama">宗山</persName>め、居るな、と思うと、憎い事には……影法師の、その背中に<ruby><rb>掴</rb><rt>つか</rt></ruby>まって、坊主を<ruby><rb>揉</rb><rt>も</rt></ruby>んでるのが<ruby><rb>華奢</rb><rt>きゃしゃ</rt></ruby>らしい島田<ruby><rb>髷</rb><rt>まげ</rt></ruby>で、この影は、濃く映った。</p>
+        <p><ruby><rb>火燧</rb><rt>マッチ</rt></ruby>々々、と女どもが云う内に、</p>
+        <p>（えへん）と<ruby><rb>咳</rb><rt>せきばらい</rt></ruby>を太くして、<ruby><rb>大</rb><rt>おおき</rt></ruby>な手で、灰吹を持上げたのが見えて、離れて<ruby><rb>煙管</rb><rt>きせる</rt></ruby>が映る。――もう一倍、その時図体が拡がったのは、袖を開いたらしい。<ruby><rb>此奴</rb><rt>こいつ</rt></ruby>、<ruby><rb>寝</rb><rt>ね</rt></ruby>ん<ruby><rb>寝子</rb><rt>ねこ</rt></ruby>の<ruby><rb>広袖</rb><rt>どてら</rt></ruby>を着ている。</p>
+        <p>やっと台洋燈を<ruby><rb>点</rb><rt>つ</rt></ruby>けて、</p>
+        <p>（お待遠でした、さあ、）</p>
+        <p>って二階へ。吹矢の店から送って来た女はと、中段からちょっと見ると、両膝をずしりと、そこに居た奴の<ruby><rb>背後</rb><rt>うしろ</rt></ruby>へ火鉢を離れて、<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて坐った。</p>
+        <p>（あの<ruby><rb>娘</rb><rt>こ</rt></ruby>で<ruby><rb>可</rb><rt>い</rt></ruby>いのかな、<ruby><rb>他</rb><rt>ほか</rt></ruby>にもござりますよって。）</p>
+        <p>と六畳の表座敷で低声で言うんだ。――ははあ、商売も<ruby><rb>大略</rb><rt>あらまし</rt></ruby>分った、と思うと、<ruby><rb>其奴</rb><rt>そいつ</rt></ruby>が</p>
+        <p>（お<ruby><rb>誂</rb><rt>あつらえ</rt></ruby>は。）</p>
+        <p>と<ruby><rb>大</rb><rt>おおき</rt></ruby>な声。</p>
+        <p>（あっさりしたものでちょっと一口。そこで……）</p>
+        <p>実は……御主人の按摩さんの、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>が一つ聞きたいのだ、と話した。</p>
+        <p>（咽喉？）……と其奴がね、<ruby><rb>異</rb><rt>おつ</rt></ruby>に<ruby><rb>蔑</rb><rt>さげす</rt></ruby>んだ笑い方をしたものです。</p>
+        <p>（先生様の……でござりますか、早速そう申しましょう。）</p>
+        <p>で、地獄の<ruby><rb>手曳</rb><rt>てびき</rt></ruby>め、急に<ruby><rb>衣紋繕</rb><rt>えもんづくろ</rt></ruby>いをして下りる。しばらくして上って来た<ruby><rb>年紀</rb><rt>とし</rt></ruby>の<ruby><rb>少</rb><rt>わか</rt></ruby>い十六七が、……こりゃどうした、よく言う口だが<ruby><rb>芥溜</rb><rt>はきだめ</rt></ruby>に水仙です、鶴です。帯も襟も<ruby><rb>唐縮緬</rb><rt>とうちりめん</rt></ruby>じゃあるが、もみじのように美しい。<ruby><rb>結綿</rb><rt>いいわた</rt></ruby>のふっくりしたのに、<ruby><rb>浅葱</rb><rt>あさぎ</rt></ruby><ruby><rb>鹿</rb><rt>か</rt></ruby>の子の<ruby><rb>絞高</rb><rt>しぼだか</rt></ruby>な手柄を掛けた。やあ、三人あると云う、妾の一人か。おおん神の、お<ruby><rb>膝許</rb><rt>ひざもと</rt></ruby>で沙汰の限りな！　<persName ref="#soyama">宗山</persName>坊主の背中を揉んでた島田髷の影らしい。惜しや、<placeName ref="#isuzugawa">五十鈴川</placeName>の星と澄んだその目許も、<ruby><rb>鯰</rb><rt>なまず</rt></ruby>の<ruby><rb>鰭</rb><rt>ひれ</rt></ruby>で濁ろう、と<ruby><rb>可哀</rb><rt>あわれ</rt></ruby>に思う。この娘が紫の<ruby><rb>袱紗</rb><rt>ふくさ</rt></ruby>に<ruby><rb>載</rb><rt>の</rt></ruby>せて、薄茶を持って来たんです。</p>
+        <p>いや、御本山の御見識、その<ruby><rb>咽喉</rb><rt>のど</rt></ruby>を聞きに来たとなると……客にまず<ruby><rb>袴</rb><rt>はかま</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>かせる<ruby><rb>仕向</rb><rt>しむけ</rt></ruby>をするな、真剣勝負面白い。で、こっちも<ruby><rb>勢</rb><rt>いきおい</rt></ruby>、<ruby><rb>懐中</rb><rt>ふところ</rt></ruby>から羽織を出して着直したんだね。</p>
+        <p>やがて、また持出した、<ruby><rb>杯</rb><rt>さかずき</rt></ruby>というのが、朱塗に<placeName ref="#futami">二見ヶ浦</placeName>を<ruby><rb>金蒔絵</rb><rt>きんまきえ</rt></ruby>した、杯台に構えたのは<ruby><rb>凄</rb><rt>すご</rt></ruby>かろう。</p>
+        <p>（まず一ツ上って、こっちへ。）</p>
+        <p>と按摩の方から、この杯の指図をする。その工合が、謹んで聞け、といった、<ruby><rb>頗</rb><rt>すこぶ</rt></ruby>る権高なものさ。どかりとそこへ構え込んだ。その<ruby><rb>容子</rb><rt>ようす</rt></ruby>が膝も腹もずんぐりして、<ruby><rb>胴中</rb><rt>どうなか</rt></ruby>ほど<ruby><rb>咽喉</rb><rt>のど</rt></ruby>が太い。耳の<ruby><rb>傍</rb><rt>わき</rt></ruby>から<ruby><rb>眉間</rb><rt>みけん</rt></ruby>へ掛けて、小蛇のように筋が<ruby><rb>畝</rb><rt>うね</rt></ruby>くる。眉が薄く、鼻がひしゃげて、ソレその唇の厚い事、おまけに頬骨がギシと出て、歯を<ruby><rb>噛</rb><rt>か</rt></ruby>むとガチガチと鳴りそう。左の一眼べとりと<ruby><rb>盲</rb><rt>し</rt></ruby>い、右が<ruby><rb>白眼</rb><rt>しろまなこ</rt></ruby>で、ぐるりと<ruby><rb>飜</rb><rt>かえ</rt></ruby>った、しかも一面、念入の<ruby><rb>黒痘瘡</rb><rt>くろあばた</rt></ruby>だ。</p>
+        <p>が、争われないのは、<ruby><rb>不具者</rb><rt>かたわ</rt></ruby>の<ruby><rb>相格</rb><rt>そうごう</rt></ruby>、肩つきばかりは、みじめらしくしょんぼりして、<ruby><rb>猪</rb><rt>い</rt></ruby>の熊入道もがっくり投首の<ruby><rb>抜衣紋</rb><rt>ぬきえもん</rt></ruby>で居たんだよ。」</p>
+        <p>十五</p>
+        <p>「いえな、何も私が意地悪を言うわけではないえ。」</p>
+        <p>と<placeName ref="#kawaguchi-minatoya">湊屋</placeName>の女中、前垂の膝を堅くして――<ruby><rb>傍</rb><rt>かたわら</rt></ruby>に柔かな髪の<ruby><rb>房</rb><rt>ふっさ</rt></ruby>りした島田の<ruby><rb>鬢</rb><rt>びん</rt></ruby>を重そうに<ruby><rb>差俯向</rb><rt>さしうつむ</rt></ruby>く……襟足白く冷たそうに、<ruby><rb>水紅色</rb><rt>ときいろ</rt></ruby>の<ruby><rb>羽二重</rb><rt>はぶたえ</rt></ruby>の、無地の<ruby><rb>長襦袢</rb><rt>ながじゅばん</rt></ruby>の肩が<ruby><rb>辷</rb><rt>すべ</rt></ruby>って、寒げに脊筋の抜けるまで、<ruby><rb>嫋</rb><rt>なよ</rt></ruby>やかに、<ruby><rb>打悄</rb><rt>うちしお</rt></ruby>れた、残んの<ruby><rb>嫁菜花</rb><rt>よめな</rt></ruby>の薄紫、<ruby><rb>浅葱</rb><rt>あさぎ</rt></ruby>のように目に淡い、藤色<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>の二枚着で、姿の寂しい、<ruby><rb>二十</rb><rt>はたち</rt></ruby>ばかりの若い芸者を<ruby><rb>流盻</rb><rt>しりめ</rt></ruby>に掛けつつ、</p>
+        <p>「このお座敷は<ruby><rb>貰</rb><rt>もろ</rt></ruby>うて上げるから、なあ<ruby><rb>和女</rb><rt>あんた</rt></ruby>、もうちゃっと内へお<ruby><rb>去</rb><rt>い</rt></ruby>にや。……<placeName ref="#shimaya">島家</placeName>の、あの<persName ref="#omie"><ruby><rb>三重</rb><rt>みえ</rt></ruby></persName>さんやな、和女、<persName ref="#omie">お三重</persName>さん、お帰り！」</p>
+        <p>と<ruby><rb>屹</rb><rt>きっ</rt></ruby>と言う。</p>
+        <p>「お前さんがおいでやで、ようお客さんの御機嫌を取ってくれるであろうと、<ruby><rb>小女</rb><rt>こおんな</rt></ruby>ばかり附けておいて、私が勝手へ立違うている<ruby><rb>中</rb><rt>うち</rt></ruby>や、……勿体ない、お客たちの、お年寄なが気に入らぬか、近頃<placeName ref="#yamada">山田</placeName>から来た言うて、こちの私の<ruby><rb>許</rb><rt>とこ</rt></ruby>を見くびったか、酌をせい、と<ruby><rb>仰有</rb><rt>おっしゃ</rt></ruby>っても、<ruby><rb>浮々</rb><rt>うきうき</rt></ruby>とした顔はせず……<ruby><rb>三味線</rb><rt>さみせん</rt></ruby>聞こうとおっしゃれば、鼻の<ruby><rb>頭</rb><rt>さき</rt></ruby>で笑うたげな。<ruby><rb>傍</rb><rt>そば</rt></ruby>に居た<persName ref="#kino">喜野</persName>が見かねて、私の袖を引きに来た。</p>
+        <p><ruby><rb>先刻</rb><rt>さっき</rt></ruby>から、ああ、こうと、口の酸くなるまで、機嫌を取るようにして、私が和女の調子を取って、よしこの一つ上方唄でも、どうぞ三味線の<ruby><rb>音</rb><rt>ね</rt></ruby>をさしておくれ。お客様がお寂しげな、座敷が浮かぬ、お見やんせ、<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>の灯も白けると、頼むようにして聞かいても、知らぬ、知らぬ、と言通す。三味線は和女、禁物か。下手や言うて、知らぬ云うて、<ruby><rb>曲</rb><rt>まがり</rt></ruby>なりにもお座つき一つ弾けぬ<ruby><rb>芸妓</rb><rt>げいこ</rt></ruby>がどこにある。</p>
+        <p>よう、思うてもお見。平の座敷か、そでないか。<ruby><rb>貴客</rb><rt>あなた</rt></ruby>がたのお人柄を見りゃ分るに、何で和女、勤める気や。私が済まぬ。さ、お立ち。ええ、私が箱を下げてやるから。」</p>
+        <p>と優しいのがツンと立って、<ruby><rb>襖際</rb><rt>ふすまぎわ</rt></ruby>に横にした三味線を邪険に取って、<ruby><rb>衝</rb><rt>つ</rt></ruby>と<ruby><rb>縦様</rb><rt>たてざま</rt></ruby>に引立てる。</p>
+        <p>「ああれ。」</p>
+        <p>はっと<ruby><rb>裳</rb><rt>もすそ</rt></ruby>を<ruby><rb>摺</rb><rt>す</rt></ruby>らして、<ruby><rb>取縋</rb><rt>とりすが</rt></ruby>るように、女中の膝を<ruby><rb>竊</rb><rt>そっ</rt></ruby>と抱き、袖を引き、三味線を引留めた。<persName ref="#omie">お三重</persName>の姿は崩るるごとく、<ruby><rb>芍薬</rb><rt>しゃくやく</rt></ruby>の花の散るに似て、</p>
+        <p>「堪忍して下さいまし、堪忍して、堪忍して、」と、<ruby><rb>呼吸</rb><rt>いき</rt></ruby>の切れる声が<ruby><rb>湿</rb><rt>うる</rt></ruby>んで、</p>
+        <p>「お客様にも、このお内へも、な、何で私が失礼しましょう。ほんとに、あの、ほんとに三味線は出来ませんもの、姉さん、」</p>
+        <p>と<ruby><rb>言</rb><rt>ことば</rt></ruby>が途絶えた。……</p>
+        <p>「今しがたも、な、<ruby><rb>他家</rb><rt>よそ</rt></ruby>のお座敷、隅の方に坐っていました。不断ではない、兵隊さんの送別会、大陽気に騒ぐのに、芸のないものは置かん、<ruby><rb>衣服</rb><rt>きもの</rt></ruby>を脱いで踊るんなら<ruby><rb>可</rb><rt>よし</rt></ruby>、<ruby><rb>可厭</rb><rt>いや</rt></ruby>なら下げると……私一人帰されて、主人の<ruby><rb>家</rb><rt>うち</rt></ruby>へ戻りますと、直ぐに<ruby><rb>酷</rb><rt>ひど</rt></ruby>いめに逢いました、え。</p>
+        <p>三味線も弾けず、踊りも出来ぬ、座敷で<ruby><rb>衣物</rb><rt>きもの</rt></ruby>が脱げないなら、内で脱げ、<ruby><rb>引剥</rb><rt>ひっぱ</rt></ruby>ぐと、な、帯も何も取られた上、台所で<ruby><rb>突伏</rb><rt>つッぷ</rt></ruby>せられて、引窓をわざと開けた、寒いお月様のさす影で、恥かしいなあ、<ruby><rb>柄杓</rb><rt>ひしゃく</rt></ruby>で水を立続けて乳へも胸へもかけられましたの。</p>
+        <p>こちらから、あの、お座敷を掛けて下さいますと、どうでしょう、<ruby><rb>炬燵</rb><rt>こたつ</rt></ruby>で<ruby><rb>温</rb><rt>あたた</rt></ruby>めた<ruby><rb>襦袢</rb><rt>じゅばん</rt></ruby>を着せて、<placeName ref="#tokyo">東京</placeName>のお客じゃそうなと、な、取って置きの着物を出して、よう勤めて帰れや言うて、御主人が手で、駒下駄まで出すんです。</p>
+        <p>勤めるたって、どうしましょう……踊は立って<ruby><rb>歩行</rb><rt>ある</rt></ruby>くことも出来ませんし、三味線は、それが姉さん、手を当てれば誰にだって、音のせぬ事はないけれど、弾いて聞かせとおっしゃるもの、どうして私唄えます。……</p>
+        <p><ruby><rb>不具</rb><rt>かたわ</rt></ruby>でもないに<ruby><rb>情</rb><rt>なさけ</rt></ruby>ない。調子が自分で出来ません。何をどうして、お座敷へ置いて頂けようと思いますと、気が<ruby><rb>怯</rb><rt>ひ</rt></ruby>けて気が怯けて、口も満足利けませんから、何が気に入らないで、失礼な顔をすると、お思い遊ばすのも無理はない、なあ。……</p>
+        <p>このお家へは、お台所で、洗い物のお手伝をいたします。姉さん、え、姉さん。」</p>
+        <p>と袖を<ruby><rb>擦</rb><rt>さす</rt></ruby>って、一生懸命、うるんだ<ruby><rb>目許</rb><rt>めもと</rt></ruby>を見得もなく、<ruby><rb>仰向</rb><rt>あおむ</rt></ruby>けになって女中の顔。……色が見る見る<ruby><rb>柔</rb><rt>やわら</rt></ruby>いで、突いて立った三味線の<ruby><rb>棹</rb><rt>さお</rt></ruby>も<ruby><rb>撓</rb><rt>たわ</rt></ruby>みそうになった、と見ると、二人の客へ、向直った、ふっくりとある<ruby><rb>綾</rb><rt>あや</rt></ruby>の帯の<ruby><rb>結目</rb><rt>むすびめ</rt></ruby>で、なおその女中の<ruby><rb>袂</rb><rt>たもと</rt></ruby>を<ruby><rb>圧</rb><rt>おさ</rt></ruby>えて。……</p>
+        <p>十六</p>
+        <p><persName ref="#omie">お三重</persName>は、そして、<ruby><rb>更</rb><rt>あらた</rt></ruby>めて<ruby><rb>二箇</rb><rt>ふたり</rt></ruby>の老人に手を<ruby><rb>支</rb><rt>つ</rt></ruby>いた。</p>
+        <p>「芸者でお呼び遊ばした、と思いますと……お役に立たず、<ruby><rb>極</rb><rt>きま</rt></ruby>りが悪うございまして、お<ruby><rb>銚子</rb><rt>ちょうし</rt></ruby>を持ちますにも手が震えてなりません。<ruby><rb>下婢</rb><rt>おさん</rt></ruby>をお<ruby><rb>傍</rb><rt>そば</rt></ruby>へお置き遊ばしたとお思いなさいまして、お休みになりますまでお使いなすって下さいまし。お背中を<ruby><rb>敲</rb><rt>たた</rt></ruby>きましょう、な、どうぞな、お肩を<ruby><rb>揉</rb><rt>も</rt></ruby>まして下さいまし。それなら一生懸命にきっと精を出します。」</p>
+        <p>と<ruby><rb>惜気</rb><rt>おしげ</rt></ruby>もなく、前髪を畳につくまで<ruby><rb>平伏</rb><rt>ひれふ</rt></ruby>した。三指づきの折かがみが、こんな中でも、打上る。</p>
+        <p>本を開いて、道中の絵をじろじろと黙って見ていた<persName ref="#sesso">捻平</persName>が、重くるしい口を開けて、</p>
+        <p>「子孫末代よい意見じゃ、旅で芸者を呼ぶなぞは、のう、お互に以後謹もう……」と火箸に手を置く。</p>
+        <p>所在なさそうに半眼で、<ruby><rb>正面</rb><rt>まとも</rt></ruby>に<ruby><rb>臨風榜可小楼</rb><rt>りんぷうぼうかしょうろう</rt></ruby>を仰ぎながら、程を忘れた<ruby><rb>巻莨</rb><rt>まきたばこ</rt></ruby>、この時、口許へ火を吸って、慌てて灰へ<ruby><rb>抛</rb><rt>ほう</rt></ruby>って、<persName ref="#genzaburo">弥次郎兵衛</persName>は一つ<ruby><rb>咽</rb><rt>む</rt></ruby>せた。</p>
+        <p>「ええ、いや、女中、……追って祝儀はする。ここでと思うが、その<ruby><rb>娘</rb><rt>こ</rt></ruby>が気が<ruby><rb>詰</rb><rt>つま</rt></ruby>ろうから、どこか小座敷へ休まして<ruby><rb>皆</rb><rt>みんな</rt></ruby>で饂飩でも食べてくれ。私が<ruby><rb>驕</rb><rt>おご</rt></ruby>る。で、何か面白い話をして遊ばして、やがて<ruby><rb>可</rb><rt>い</rt></ruby>い時分に帰すが可い。」と冷くなった<ruby><rb>猪口</rb><rt>ちょこ</rt></ruby>を取って、寂しそうに<ruby><rb>衝</rb><rt>つ</rt></ruby>と飲んだ。</p>
+        <p>女中は、これよりさき、<ruby><rb>支</rb><rt>つ</rt></ruby>いて<ruby><rb>突立</rb><rt>つッた</rt></ruby>ったその三味線を、次の<ruby><rb>室</rb><rt>ま</rt></ruby>の暗い方へ<ruby><rb>密</rb><rt>そっ</rt></ruby>と<ruby><rb>押遣</rb><rt>おしや</rt></ruby>って、がっくりと筋が<ruby><rb>萎</rb><rt>な</rt></ruby>えた風に、折重なるまで<ruby><rb>摺寄</rb><rt>すりよ</rt></ruby>りながら、<ruby><rb>黙然</rb><rt>だんま</rt></ruby>りで、<ruby><rb>燈</rb><rt>ともしび</rt></ruby>の影に水のごとく<ruby><rb>打揺</rb><rt>うちゆら</rt></ruby>ぐ、<persName ref="#omie">お三重</persName>の背中を<ruby><rb>擦</rb><rt>さす</rt></ruby>っていた。</p>
+        <p>「<placeName ref="#shimaya">島屋</placeName>の亭が、そんな<ruby><rb>酷</rb><rt>ひど</rt></ruby>い事をしおるかえ。可いわ、内の御隠居にそう言うて、沙汰をして上げよう。心安う思うておいで、ほんにまあ、よう<ruby><rb>和女</rb><rt>あんた</rt></ruby>、顔へ<ruby><rb>疵</rb><rt>きず</rt></ruby>もつけんの。」</p>
+        <p>と、かよわい<ruby><rb>腕</rb><rt>かいな</rt></ruby>を<ruby><rb>撫下</rb><rt>なでお</rt></ruby>ろす。</p>
+        <p>「ああ、それも売物じゃいうだけの<ruby><rb>斟酌</rb><rt>しんしゃく</rt></ruby>に違いないな。……お客様に礼言いや。さ、そして、何かを話しがてら、御隠居の<ruby><rb>炬燵</rb><rt>こたつ</rt></ruby>へおいで。<ruby><rb>切下髪</rb><rt>きりさげがみ</rt></ruby>に<ruby><rb>頭巾</rb><rt>ずきん</rt></ruby><ruby><rb>被</rb><rt>かぶ</rt></ruby>って、ちょうどな、<ruby><rb>羊羹</rb><rt>ようかん</rt></ruby>切って、茶を食べてや。</p>
+        <p>けども、」</p>
+        <p>と<persName ref="#omie">お三重</persName>の、その清らかな<ruby><rb>襟許</rb><rt>えりもと</rt></ruby>から、優しい<ruby><rb>鬢毛</rb><rt>びんのけ</rt></ruby>を<ruby><rb>差覗</rb><rt>さしのぞ</rt></ruby>くように、<ruby><rb>右瞻左瞻</rb><rt>とみこうみ</rt></ruby>て、</p>
+        <p>「<ruby><rb>和女</rb><rt>あんた</rt></ruby>、因果やな、ほんとに、三味線は弾けぬかい。ペンともシャンとも。」</p>
+        <p>で、わざと慰めるように<ruby><rb>吻々</rb><rt>ほほ</rt></ruby>と笑った。</p>
+        <p>人の<ruby><rb>情</rb><rt>なさけ</rt></ruby>に溶けたと見える……氷る涙の玉を散らして、はっと泣いた声の下で、</p>
+        <p>「はい、願掛けをしましても、塩断ちまでしましたけれど、どうしても分りません、調子が一つ出来ません。<ruby><rb>性来</rb><rt>うまれつき</rt></ruby>でござんしょう。」</p>
+        <p><date when="--12">師走</date>の<ruby><rb>闇夜</rb><rt>やみよ</rt></ruby>に<ruby><rb>白梅</rb><rt>しらうめ</rt></ruby>の、<ruby><rb>面</rb><rt>おもて</rt></ruby>を<ruby><rb>蝋</rb><rt>ろう</rt></ruby>に照らされる。</p>
+        <p>「踊もかい。」</p>
+        <p>「は……い、」</p>
+        <p>「泣くな、弱虫、さあ一つ飲まんか！　元気をつけて。向後どこへか呼ばれた時は、<ruby><rb>怯</rb><rt>おび</rt></ruby>えるなよ。気の持ちようでどうにもなる。ジャカジャカと引鳴らせ、<ruby><rb>糸瓜</rb><rt>へちま</rt></ruby>の皮で掻廻すだ。<ruby><rb>琴</rb><rt>こと</rt></ruby>も<ruby><rb>胡弓</rb><rt>こきゅう</rt></ruby>も用はない。<ruby><rb>銅鑼鐃鈸</rb><rt>どらにょうはち</rt></ruby>を叩けさ。<ruby><rb>簫</rb><rt>しょう</rt></ruby>の笛をピイと遣れ、上手下手は誰にも分らぬ。それなら芸なしとは言われまい。踊が出来ずば体操だ。一、」</p>
+        <p>と左右へ、羽織の紐の<ruby><rb>断</rb><rt>き</rt></ruby>れるばかり大手を拡げ、<ruby><rb>寛濶</rb><rt>かんかつ</rt></ruby>な胸を反らすと、</p>
+        <p>「二よ。」と、庄屋殿が鉄砲二つ、ぬいと前へ突出いて、励ますごとく<ruby><rb>呵々</rb><rt>からから</rt></ruby>と<persName ref="#genzaburo">弥次郎兵衛</persName>、</p>
+        <p>「これ、その位な事は出来よう。いや、それも度胸だな。見た処、そのように気が弱くては、いかな事も<ruby><rb>遣</rb><rt>やっ</rt></ruby>つけられまい、可哀相に。」と声が<ruby><rb>掠</rb><rt>かす</rt></ruby>れる。</p>
+        <p>「あの……私が、自分から、言います事は出来ません、お<ruby><rb>恥</rb><rt>はずか</rt></ruby>しいのでございますが、舞の<ruby><rb>真似</rb><rt>まね</rt></ruby>が少しばかり立てますの、それもただ一ツだけ。」</p>
+        <p>と云う顔を<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いて、恥かしそうにまた手を<ruby><rb>支</rb><rt>つ</rt></ruby>く。</p>
+        <p>「舞えるかえ、舞えるのかえ。」</p>
+        <p>と女中は嬉しそうな声をして、</p>
+        <p>「おお、踊や言うで明かんのじゃ。舞えるのなら立っておくれ。このお座敷、遠慮は<ruby><rb>入</rb><rt>い</rt></ruby>らん。待ちなはれ、地が要ろう。これ<persName ref="#kino">喜野</persName>、あすこの広間へ行ってな、内の千がそう言うたて、誰でも弾けるのを借りて来やよ。」</p>
+        <p>とぽんとしていた小女の<persName ref="#kino">喜野</persName>が立とうとする、と、<ruby><rb>名告</rb><rt>なの</rt></ruby>った<persName ref="#osen">お千</persName>が、打傾いて、優しく口許をちょいと曲げて傾いて、</p>
+        <p>「待って、待って、」</p>
+        <p>十七</p>
+        <p>「いつもと違う。……一度軍隊へ行きなさると、日曜でのうては出られぬ、……お国のためやで、<ruby><rb>馴</rb><rt>な</rt></ruby>れぬ苦労もしなさんす。新兵さんの送別会や。女衆が大勢居ても、一人抜けてもお座敷が寂しくなるもの。</p>
+        <p>可いわ、旅の恥は掻棄てを<ruby><rb>反対</rb><rt>あべこべ</rt></ruby>なが、一泊りのお客さんの前、私が三味線を掻廻そう。<persName ref="#omie">お三重</persName>さん、立つのは何？　有るものか、無いものか言うも行過ぎた……有るものとて無いけれど、どうにか間に合わせたいものではある。」</p>
+        <p>「あら、姉さん。」</p>
+        <p>と、三味線取りに立とうとした、<persName ref="#osen">お千</persName>の膝を、袖で<ruby><rb>圧</rb><rt>おさ</rt></ruby>えて、ちとはなじろんだ、<persName ref="#omie">お三重</persName>の<ruby><rb>愛嬌</rb><rt>あいきょう</rt></ruby>。</p>
+        <p>「糸に合うなら踊ります。あのな、私のはな、お能の舞の真似なんです。」と、言いも果てず、<persName ref="#osen">お千</persName>の膝に顔を隠して、<ruby><rb>小父者</rb><rt>おじご</rt></ruby>と<persName ref="#sesso">捻平</persName>に<ruby><rb>背向</rb><rt>そがい</rt></ruby>になった初々しさ。包ましやかな姿ながら、身を<ruby><rb>揉</rb><rt>も</rt></ruby>む姿の着崩れして、袖を離れて畳に長い、襦袢の袖は<ruby><rb>媚</rb><rt>なまめ</rt></ruby>かしい。</p>
+        <p>「何、その舞を舞うのかい。」と<persName ref="#genzaburo">弥次郎兵衛</persName>は一言云う。</p>
+        <p><persName ref="#sesso">捻平</persName>膝の本をばったり伏せて、</p>
+        <p>「さて、飲もう。手酌でよし。ここで舞なぞは願い下げじゃ。せめてお題目の太鼓にさっしゃい。ふあはははは、」となぜか<ruby><rb>皺枯</rb><rt>しわが</rt></ruby>れた高笑い、この時ばかり天井に<ruby><rb>哄</rb><rt>どっ</rt></ruby>と響いた。</p>
+        <p>「<persName ref="#sesso">捻平</persName>さん、<persName ref="#sesso">捻さん</persName>。」</p>
+        <p>「おお。」</p>
+        <p>と<ruby><rb>不性</rb><rt>ぶしょう</rt></ruby>げにやっと<ruby><rb>応</rb><rt>こた</rt></ruby>える。</p>
+        <p>「何も道中の話の種じゃ、ちょっと見物をしようと思うね。」</p>
+        <p>「まず、ご免じゃ。」</p>
+        <p>「さらば、<ruby><rb>其許</rb><rt>そのもと</rt></ruby>は目を<ruby><rb>瞑</rb><rt>ねむ</rt></ruby>るだ。」</p>
+        <p>「ええ、縁起の悪い事を言わさる。……明日にも<placeName ref="#edo">江戸</placeName>へ帰って、可愛い孫娘の顔を見るまでは、死んでもなかなか目は<ruby><rb>瞑</rb><rt>ねむ</rt></ruby>らぬ。」</p>
+        <p>「さてさて<ruby><rb>捻</rb><rt>ねじ</rt></ruby>るわ、ソレそこが<persName ref="#sesso">捻平</persName>さね。勝手になされ。さあ、あの<ruby><rb>娘</rb><rt>こ</rt></ruby>立ったり、この<ruby><rb>爺様</rb><rt>じいさま</rt></ruby>に遠慮は入らぬぞ。それ、何にも芸がないと云うて肩腰をさすろうと卑下をする。どんな真似でも一つ遣れば、立派な芸者の<ruby><rb>面目</rb><rt>めんぼく</rt></ruby>が立つ。祝儀取るにも心持が<ruby><rb>可</rb><rt>よ</rt></ruby>かろうから、是非見たい。が、しかし心のままにしなよ、決して<ruby><rb>勤</rb><rt>つとめ</rt></ruby>を強いるじゃないぞ。」</p>
+        <p>「あんなに<ruby><rb>仰有</rb><rt>おっしゃ</rt></ruby>って下さるもの。さあ、どんな事するのや知らんが、まずうても大事ない、大事ない、それ、支度は入らぬかい。」</p>
+        <p>「あい、」</p>
+        <p>とわずかに身を起すと、紫の襟を<ruby><rb>噛</rb><rt>か</rt></ruby>むように――ふっくりしたのが、あわれに<ruby><rb>窶</rb><rt>やつ</rt></ruby>れた――<ruby><rb>頤</rb><rt>おとがい</rt></ruby>深く、恥かしそうに、<ruby><rb>内懐</rb><rt>うちぶところ</rt></ruby>を<ruby><rb>覗</rb><rt>のぞ</rt></ruby>いたが、<ruby><rb>膚身</rb><rt>はだみ</rt></ruby>に着けたと思わるる、……胸やや白き<ruby><rb>衣紋</rb><rt>えもん</rt></ruby>を透かして、濃い紫の細い包、<ruby><rb>袱紗</rb><rt>ふくさ</rt></ruby>の<ruby><rb>縮緬</rb><rt>ちりめん</rt></ruby>が<ruby><rb>飜然</rb><rt>ひらり</rt></ruby>と<ruby><rb>飜</rb><rt>かえ</rt></ruby>ると、燭台に照って、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と輝く、銀の地の、ああ、<ruby><rb>白魚</rb><rt>しらうお</rt></ruby>の指に重そうな、一本の舞扇。</p>
+        <p><ruby><rb>晃然</rb><rt>きらり</rt></ruby>とあるのを押頂くよう、前髪を掛けて、扇をその、<ruby><rb>玉簪</rb><rt>ぎょくさん</rt></ruby>のごとく額に当てたを、そのまま折目高にきりきりと、月の<ruby><rb>出汐</rb><rt>でしお</rt></ruby>の波の影、<ruby><rb>静</rb><rt>しずか</rt></ruby>に<ruby><rb>照々</rb><rt>てらてら</rt></ruby>と開くとともに、顔を隠して、反らした指のみ、両方親骨にちらりと白い。</p>
+        <p>また川口の<ruby><rb>汐加減</rb><rt>しおかげん</rt></ruby>、隣の広間の<ruby><rb>人動揺</rb><rt>ひとどよ</rt></ruby>めきが颯と<ruby><rb>退</rb><rt>ひ</rt></ruby>く。</p>
+        <p>と見れば<ruby><rb>皎然</rb><rt>こうぜん</rt></ruby>たる銀の地に、黄金の雲を散らして、<ruby><rb>紺青</rb><rt>こんじょう</rt></ruby>の月、ただ一輪を描いたる、扇の影に声澄みて、</p>
+        <p>「――その時あま人<ruby><rb>申様</rb><rt>もうすよう</rt></ruby>、もしこのたまを取得たらば、この<ruby><rb>御子</rb><rt>みこ</rt></ruby>を世継の<ruby><rb>御位</rb><rt>みくらい</rt></ruby>になしたまえと<ruby><rb>申</rb><rt>もうし</rt></ruby>しかば、<ruby><rb>子細</rb><rt>しさい</rt></ruby>あらじと領承したもう、さて我子ゆえに捨ん命、露ほども<ruby><rb>惜</rb><rt>おし</rt></ruby>からじと、<ruby><rb>千尋</rb><rt>ちひろ</rt></ruby>のなわを腰につけ、もしこの玉をとり得たらば、このなわを動かすべし、その時人々ちからをそえ――」</p>
+        <p>と調子が<ruby><rb>緊</rb><rt>しま</rt></ruby>って、</p>
+        <p>「……ひきあげたまえと約束し、<ruby><rb>一</rb><rt>ひとつ</rt></ruby>の利剣を抜持って、」</p>
+        <p>と扇をきりりと袖を直す、と<ruby><rb>手練</rb><rt>てだれ</rt></ruby>ぞ見ゆる、<ruby><rb>自</rb><rt>おのず</rt></ruby>から、衣紋の位に年<ruby><rb>長</rb><rt>た</rt></ruby>けて、瞳を定めたその<ruby><rb>顔</rb><rt>かんばせ</rt></ruby>。<ruby><rb>硝子</rb><rt>がらす</rt></ruby>戸越に月さして、霜の川浪<ruby><rb>照添</rb><rt>てりそ</rt></ruby>う<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>。膝<ruby><rb>立据</rb><rt>たてす</rt></ruby>えた畳にも、<ruby><rb>燭台</rb><rt>しょくだい</rt></ruby>の花颯と流るる。</p>
+        <p>「ああ、待てい。」</p>
+        <p>と<persName ref="#sesso">捻平</persName>、力の<ruby><rb>籠</rb><rt>こも</rt></ruby>った声を掛けた。</p>
+        <p>十八</p>
+        <p>で、火鉢をずっと<ruby><rb>傍</rb><rt>そば</rt></ruby>へ引いて、</p>
+        <p>「女中、もちっとこれへ火をおくれ。いや、立つに及ばん。その、鉄瓶をはずせば<ruby><rb>可</rb><rt>よ</rt></ruby>し。」と<persName ref="#sesso">捻平</persName>がいいつける。</p>
+        <p>この場合なり、何となく、<persName ref="#osen">お千</persName>も<ruby><rb>起居</rb><rt>たちい</rt></ruby>に<ruby><rb>身体</rb><rt>からだ</rt></ruby>が<ruby><rb>緊</rb><rt>しま</rt></ruby>った。</p>
+        <p><ruby><rb>静</rb><rt>しずか</rt></ruby>に炭火を移させながら、<persName ref="#sesso">捻平</persName>は膝をずらすと、<ruby><rb>革鞄</rb><rt>かばん</rt></ruby>などは次の<ruby><rb>室</rb><rt>ま</rt></ruby>へ……それだけ床の間に差置いた……車の上でも<ruby><rb>頸</rb><rt>うなじ</rt></ruby>に掛けた風呂敷包を、重いもののように両手で<ruby><rb>柔</rb><rt>やわら</rt></ruby>かに取って、膝の上へ据えながら、<persName ref="#osen">お千</persName>の顔を<ruby><rb>除</rb><rt>よ</rt></ruby>けて、火鉢の上へ片手を裏表かざしつつ、</p>
+        <p>「ああ、これ、<persName ref="#omie">お三重</persName>さんとか言うの、そのお<ruby><rb>娘</rb><rt>こ</rt></ruby>、手を上げられい。さ、手を上げて、」</p>
+        <p>と言う。……<persName ref="#omie">お三重</persName>は利剣で立とうとしたのを、<ruby><rb>慌</rb><rt>あわただ</rt></ruby>しく<persName ref="#sesso">捻平</persName>に留められたので、この時まで、差開いたその舞扇が、唇の花に霞むまで、<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>いた顔をひたと額につけて、片手を畳に<ruby><rb>支</rb><rt>つ</rt></ruby>いていた。こう<persName ref="#sesso">捻平</persName>に声懸けられて、わずかに顔を振上げながら、きりきりと一まず閉じると、その扇を畳むに連れて、今まで、<ruby><rb>濶</rb><rt>かっ</rt></ruby>と瞳を張って見据えていた<ruby><rb>眼</rb><rt>まなこ</rt></ruby>を、次第に<ruby><rb>塞</rb><rt>ふさ</rt></ruby>いだ<persName ref="#genzaburo">弥次郎兵衛</persName>は、ものも言わず、火鉢のふちに、ぶるぶると震う指を、と支えた<ruby><rb>態</rb><rt>なり</rt></ruby>の、<ruby><rb>巻莨</rb><rt>まきたばこ</rt></ruby>から、音もしないで、ほろほろと灰がこぼれる。</p>
+        <p><persName ref="#sesso">捻平</persName><ruby><rb>座蒲団</rb><rt>さぶとん</rt></ruby>を<ruby><rb>一膝</rb><rt>ひとひざ</rt></ruby>出て、</p>
+        <p>「いや、<ruby><rb>更</rb><rt>あらた</rt></ruby>めて、<ruby><rb>熟</rb><rt>とく</rt></ruby>と、見せてもらおうじゃが、まずこっちへ寄らしゃれ。ええ、今の<ruby><rb>謡</rb><rt>うたい</rt></ruby>の、気組みと、その<ruby><rb>形</rb><rt>かた</rt></ruby>。教えも教えた、さて、習いも習うたの。</p>
+        <p>こうまでこれを教うるものは、<placeName ref="#shikoku">四国</placeName>の<ruby><rb>果</rb><rt>はて</rt></ruby>にも<ruby><rb>他</rb><rt>ほか</rt></ruby>にはあるまい。あらかた人は分ったが、それとなく<ruby><rb>音信</rb><rt>たより</rt></ruby>も聞きたい。の、<ruby><rb>其許</rb><rt>そこ</rt></ruby>も黙って聞かっしゃい。」</p>
+        <p>と<persName ref="#genzaburo">弥次</persName>が<ruby><rb>方</rb><rt>かた</rt></ruby>に、<persName ref="#sesso">捻平</persName><ruby><rb>目遣</rb><rt>めづか</rt></ruby>いを一つして、</p>
+        <p>「まず、どうして、誰から、<ruby><rb>御身</rb><rt>おみ</rt></ruby>は習うたの。」</p>
+        <p>「はい、」</p>
+        <p>と弱々と返事した。<persName ref="#omie">お三重</persName>はもう、<ruby><rb>他愛</rb><rt>たわい</rt></ruby>なく娘になって、ほろりとして、</p>
+        <p>「あの、<ruby><rb>前刻</rb><rt>さっき</rt></ruby>も申しましたように、不器用も通越した、調子はずれ、その上覚えが悪うござんして、長唄の宵や待ちの<ruby><rb>三味線</rb><rt>さみせん</rt></ruby>のテンもツンも分りません。この間まで<ruby><rb>居</rb><rt>お</rt></ruby>りました、<placeName ref="#yamada">山田</placeName>の<placeName ref="#shinmachi">新町</placeName>の姉さんが、朝と昼と、<ruby><rb>手隙</rb><rt>てすき</rt></ruby>な時は晩方も、日に三度ずつも、あの<ruby><rb>噛</rb><rt>か</rt></ruby>んで含めて、胸を割って刻込むように教えて下すったんでございますけれど、自分でも悲しい。……暁の、とだけ十日かかって、やっと真似だけ弾けますと、夢になってもう手が違い、心では思いながら、三の手が一へ<ruby><rb>滑</rb><rt>すべ</rt></ruby>って、とぼけたような<ruby><rb>音</rb><rt>ね</rt></ruby>がします。</p>
+        <p><ruby><rb>撥</rb><rt>ばち</rt></ruby>で<ruby><rb>咽喉</rb><rt>のど</rt></ruby>を引裂かれ、<ruby><rb>煙管</rb><rt>きせる</rt></ruby>で胸を打たれたのも、糸を切った数より多い。</p>
+        <p>それも何も、邪険でするのではないのです。……私が、な、まだその前に、<placeName ref="#toba"><ruby><rb>鳥羽</rb><rt>とば</rt></ruby></placeName>の<ruby><rb>廓</rb><rt>くるわ</rt></ruby>に居ました時、……」</p>
+        <p>「ああ、お前さんは、<placeName ref="#toba">鳥羽</placeName>のものかい、<placeName ref="#shima">志摩</placeName>だな。」</p>
+        <p>と<persName ref="#genzaburo">弥次郎兵衛</persName>がフト聞入れた。</p>
+        <p>「いえ、私はな、やっぱりお<placeName ref="#ise">伊勢</placeName>なんですけれど、<ruby><rb>父</rb><rt>おとっ</rt></ruby>さんが<ruby><rb>死</rb><rt>な</rt></ruby>くなりましてから、<ruby><rb>継母</rb><rt>ままはは</rt></ruby>に売られて行きましたの。はじめに聞いた奉公とは嘘のように違います。――お客の言うことを聞かぬ言うて、<ruby><rb>陸</rb><rt>おか</rt></ruby>で悪くば海で稼げって、<ruby><rb>崕</rb><rt>がけ</rt></ruby>の下の<ruby><rb>船着</rb><rt>ふなつき</rt></ruby>から、夜になると、男衆に<ruby><rb>捉</rb><rt>つかま</rt></ruby>えられて、小船に積まれて海へ出て、月があっても、島の蔭の暗い処を、危いなあ、ひやひやする、木の葉のように浮いて<ruby><rb>歩行</rb><rt>ある</rt></ruby>いて、<ruby><rb>寂</rb><rt>しん</rt></ruby>とした海の上で……悲しい唄を唄います。そしてお客の取れぬ時は、船頭衆の胸に響いて、女が恋しゅうなる<ruby><rb>禁厭</rb><rt>まじない</rt></ruby>じゃ、お<ruby><rb>茶挽</rb><rt>ちゃひ</rt></ruby>いた罰、と云って、船から海へ、びしゃびしゃと追下ろして、<ruby><rb>汐</rb><rt>しお</rt></ruby>の干た<ruby><rb>巌</rb><rt>いわ</rt></ruby>へ上げて、巌の裂目へ<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>けに口をつけさして、（こいし、こいし。）と呼ばせます。若い衆は<ruby><rb>舳</rb><rt>へさき</rt></ruby>に待ってて、声が切れると、<ruby><rb>栄螺</rb><rt>さざえ</rt></ruby>の殻をぴしぴしと<ruby><rb>打着</rb><rt>ぶッつ</rt></ruby>けますの。汐風が濡れて吹く、夏の夜でも寒いもの。……私のそれは、<date when="--12">師走</date>から、寒の<ruby><rb>中</rb><rt>うち</rt></ruby>で、八百<ruby><rb>八島</rb><rt>やしま</rt></ruby>あると言う、どの島も皆白い。霜風が凍りついた、巌の角は針のような、あの、その上で、（こいし、こいし。）って、唇の、しびれるばかり泣いている。<ruby><rb>咽喉</rb><rt>のど</rt></ruby>は裂け、舌は凍って、<ruby><rb>潮</rb><rt>しお</rt></ruby>を浴びた<ruby><rb>裙</rb><rt>すそ</rt></ruby>から冷え通って、正体がなくなる処を、貝殻で<ruby><rb>引掻</rb><rt>ひっか</rt></ruby>かれて、やっと船で正気が付くのは、<ruby><rb>灯</rb><rt>あかり</rt></ruby>もない、何の船やら、あの、まあ、鬼の<ruby><rb>支</rb><rt>つ</rt></ruby>いた棒見るような帆柱の下から、皮の<ruby><rb>硬</rb><rt>こわ</rt></ruby>い<ruby><rb>大</rb><rt>おおき</rt></ruby>な手が出て、<ruby><rb>引掴</rb><rt>ひッつか</rt></ruby>んで抱込みます。</p>
+        <p>空には<ruby><rb>蒼</rb><rt>あお</rt></ruby>い星ばかり、海の水は皆黒い。<ruby><rb>暗</rb><rt>やみ</rt></ruby>の夜の血の池に落ちたようで、ああ、生きているか……千鳥も鳴く、私も泣く。……お恥かしゅうござんす。」</p>
+        <p>と<ruby><rb>翳</rb><rt>かざ</rt></ruby>す扇の利剣に添えて、水のような袖をあて、顔を隠したその風情。人は声なくして、ただ、ちりちりと、<ruby><rb>蝋燭</rb><rt>ろうそく</rt></ruby>の<ruby><rb>涙</rb><rt>なんだ</rt></ruby>白く散る。</p>
+        <p>この物語を聞く人々、いかに<placeName ref="#hiyoriyama">日和山</placeName>の頂より、<placeName ref="#shima">志摩</placeName>の島々、海の<ruby><rb>凪</rb><rt>なぎ</rt></ruby>、霞の池に鶴の舞う、あの、<ruby><rb>麗朗</rb><rt>うららか</rt></ruby>なる景色を見たるか。</p>
+        <p>十九</p>
+        <p>「泣いてばかりいますから、気の荒いお船頭が、こんな泣虫を買うほどなら、<placeName ref="#irako">伊良子崎</placeName>の<ruby><rb>海鼠</rb><rt>なまこ</rt></ruby>を<ruby><rb>蒲団</rb><rt>ふとん</rt></ruby>で、<placeName ref="#yajima"><ruby><rb>弥島</rb><rt>やしま</rt></ruby></placeName>の<ruby><rb>烏賊</rb><rt>いか</rt></ruby>を遊ぶって、どの船からも投出される。</p>
+        <p>また、あの<ruby><rb>巌</rb><rt>いわ</rt></ruby>に追上げられて、霜風の<ruby><rb>間々</rb><rt>あいあい</rt></ruby>に、（こいし、こいし。）と泣くのでござんす。</p>
+        <p>手足は凍って貝になっても、（こいし）と泣くのが本望な。巌の裂目を沖へ通って、海の<ruby><rb>果</rb><rt>はて</rt></ruby>まで響いて欲しい。もう船も<ruby><rb>去</rb><rt>い</rt></ruby>ね、潮も来い。……そのままで石になってしまいたいと思うほど、お客様、私は、あの、」</p>
+        <p>と乱れた襦袢の袖を<ruby><rb>銜</rb><rt>くわ</rt></ruby>えた、<ruby><rb>水紅色</rb><rt>ときいろ</rt></ruby>映る<ruby><rb>瞼</rb><rt>まぶた</rt></ruby>のあたり、ほんのりと薄くして、</p>
+        <p>「心でばかり長い事、思っておりまする人があって。……芸も<ruby><rb>容色</rb><rt>きりょう</rt></ruby>もないものが、生意気を云うようですが、……たとい殺されても、死んでもと、心願掛けておりました。</p>
+        <p>ある晩も、やっぱり<ruby><rb>蒼</rb><rt>あお</rt></ruby>い灯の船に買われて、その船頭衆の言う事を<ruby><rb>肯</rb><rt>き</rt></ruby>かなかったので、こっちの船へ突返されると、<ruby><rb>艫</rb><rt>とも</rt></ruby>の処に<ruby><rb>行火</rb><rt>あんか</rt></ruby>を<ruby><rb>跨</rb><rt>また</rt></ruby>いで、どぶろくを飲んでいた、私を送りの若い<ruby><rb>衆</rb><rt>しゅ</rt></ruby>がな、<ruby><rb>玉代</rb><rt>ぎょくだい</rt></ruby>だけ損をしやはれ、<ruby><rb>此方衆</rb><rt>こなたしゅう</rt></ruby>の見る前で、この女を、<ruby><rb>海士</rb><rt>あま</rt></ruby>にして慰もうと、月の良い晩でした。</p>
+        <p>胴の間で着物を脱がして、<ruby><rb>膚</rb><rt>はだ</rt></ruby>の紐へなわを付けて、<ruby><rb>倒</rb><rt>さかさま</rt></ruby>に海の深みへ沈めます。ずんずんずんと沈んでな、もう奈落かと思う時、<ruby><rb>釣瓶</rb><rt>つるべ</rt></ruby>のようにきりきりと、<ruby><rb>身体</rb><rt>からだ</rt></ruby>を車に引上げて、髪の<ruby><rb>雫</rb><rt>しずく</rt></ruby>も切らせずに、また海へ<ruby><rb>突込</rb><rt>つッこ</rt></ruby>みました。</p>
+        <p>この時な、その<ruby><rb>繋</rb><rt>かか</rt></ruby>り船に、長崎辺の伯父が一人乗込んでいると云うて、お<ruby><rb>小遣</rb><rt>こづかい</rt></ruby>の無心に来て、泊込んでおりました、<placeName ref="#futami">二見</placeName>から<placeName ref="#toba">鳥羽</placeName>がよいの馬車に、<ruby><rb>馭者</rb><rt>ぎょしゃ</rt></ruby>をします、寒中、<ruby><rb>襯衣</rb><rt>しゃつ</rt></ruby>一枚に<ruby><rb>袴服</rb><rt>ずぼん</rt></ruby>を<ruby><rb>穿</rb><rt>は</rt></ruby>いた若い人が、私のそんなにされるのが、あんまり可哀相な、とそう云うて、<placeName ref="#ise">伊勢</placeName>へ帰って、その話をしましたので、今、あの申しました。……</p>
+        <p>この間までおりました、<placeName ref="#furuichi">古市</placeName>の<ruby><rb>新地</rb><rt>しんまち</rt></ruby>の姉さんが、随分なお<ruby><rb>金子</rb><rt>かね</rt></ruby>を出して、私を連れ出してくれましたの。</p>
+        <p>それでな、<placeName ref="#toba">鳥羽</placeName>の鬼へも<ruby><rb>面当</rb><rt>つらあて</rt></ruby>に、芸をよく覚えて、立派な芸子になれやッて、姉さんが、そうやって、目に涙を一杯ためて、ぴしぴし<ruby><rb>撥</rb><rt>ばち</rt></ruby>で<ruby><rb>打</rb><rt>ぶ</rt></ruby>ちながら、三味線を教えてくれるんですが、どうした因果か、ちっとも覚えられません。</p>
+        <p>人さしと、中指と、ちょっとの間を、一日に三度ずつ、一週間も鳴らしますから、近所隣も迷惑して、御飯もまずいと言うのですえ。</p>
+        <p>また月の良い晩でした。ああ、今の御主人が、親切なだけなお辛い。……何の、<ruby><rb>身体</rb><rt>からだ</rt></ruby>の切ない、苦しいだけは、<ruby><rb>生命</rb><rt>いのち</rt></ruby>が絶えればそれで済む。いっそまた<placeName ref="#toba">鳥羽</placeName>へ行って、あの<ruby><rb>巌</rb><rt>いわ</rt></ruby>に<ruby><rb>掴</rb><rt>つか</rt></ruby>まって、（こいし、こいし、）と泣こうか知らぬ、膚の紐になわつけて、海へ入れられるが気安いような、と島も海も目に見えて、ふらふらと月の中を、千鳥が、<ruby><rb>冥土</rb><rt>めいど</rt></ruby>の使いに来て、連れて行かれそうに思いました。……格子<ruby><rb>前</rb><rt>さき</rt></ruby>へ流しが来ました。</p>
+        <p><placeName ref="#shinmachi">新町</placeName>の月影に、露の垂りそうな、あの、ちらちら光る<ruby><rb>撥音</rb><rt>ばちおと</rt></ruby>で、</p>
+        <p>……博多帯しめ、筑前絞り――</p>
+        <p>と、何とも言えぬ<ruby><rb>好</rb><rt>い</rt></ruby>い声で。</p>
+        <p>（へい、不調法、お<ruby><rb>喧</rb><rt>やかま</rt></ruby>しゅう、）って、そのまま<ruby><rb>行</rb><rt>ゆ</rt></ruby>きそうにしたのです。</p>
+        <p>（ああ、<ruby><rb>身震</rb><rt>みぶるい</rt></ruby>がするほど<ruby><rb>上手</rb><rt>うま</rt></ruby>い、あやかるように拝んで来な、それ、お<ruby><rb>賽銭</rb><rt>さいせん</rt></ruby>をあげる気で。）</p>
+        <p>と<ruby><rb>滝縞</rb><rt>たきじま</rt></ruby>お<ruby><rb>召</rb><rt>めし</rt></ruby>の<ruby><rb>半纏</rb><rt>はんてん</rt></ruby>着て、灰に袖のつくほどに、しんみり聞いてやった姉さんが、長火鉢の<ruby><rb>抽斗</rb><rt>ひきだし</rt></ruby>からお宝を出して、キイと、あの<ruby><rb>繻子</rb><rt>しゅす</rt></ruby>が鳴る、帯へ<ruby><rb>挿</rb><rt>はさ</rt></ruby>んだ懐紙に<ruby><rb>捻</rb><rt>ひね</rt></ruby>って、私に持たせなすったのを、盆に乗せて、戸を開けると、もう一二<ruby><rb>間</rb><rt>けん</rt></ruby>行きなさいます。二人の間にある月をな、影で<ruby><rb>繋</rb><rt>つな</rt></ruby>いで、ちゃっと行って、</p>
+        <p>（<ruby><rb>是喃</rb><rt>こいし</rt></ruby>。）と呼んで、出した盆を、振向いてお取りでした。私や、思わずその手に<ruby><rb>縋</rb><rt>すが</rt></ruby>って、涙がひとりでに出ましたえ。男で居ながら、こんなにも上手な方があるものを、<ruby><rb>切</rb><rt>せ</rt></ruby>めてその指一本でも、私の<ruby><rb>身体</rb><rt>からだ</rt></ruby>についたらばと、つい、おろおろと泣いたのです。</p>
+        <p><ruby><rb>頬被</rb><rt>ほおかむり</rt></ruby>をしていなすった。あのその、私の手を取ったまま――黙って、少し脇の方へ<ruby><rb>退</rb><rt>の</rt></ruby>いた処で、（何を泣く、）って優しい声で、その門附が聞いてくれます。もう恥も何も忘れてな、その、あの、どうしても三味線の覚えられぬ事を話しました。」</p>
+        <p>二十</p>
+        <p>「よく聞いて、しばらく<ruby><rb>熟</rb><rt>じっ</rt></ruby>と顔を見ていなさいました。</p>
+        <p>（芸事の出来るように、神へ<ruby><rb>願懸</rb><rt>がんがけ</rt></ruby>をすると云って、夜の明けぬ内、外へ出ろ。<placeName ref="#tsuzumigatake">鼓ヶ嶽</placeName>の裾にある、雑樹林の中へ来い。三日とも思うけれど、主人には、七日と頼んで。すぐ、今夜の明方から。……分ったか。若い女の途中が<ruby><rb>危</rb><rt>あぶな</rt></ruby>い、この入口まで来て待ってやる、<ruby><rb>化</rb><rt>ばか</rt></ruby>されると思うな、夢ではない。……）</p>
+        <p>とお言いのなり、三味線を胸に<ruby><rb>附着</rb><rt>くッつ</rt></ruby>けて、フイと暗がりへ附着いて、黒塀を<ruby><rb>去</rb><rt>い</rt></ruby>きなさいます。……</p>
+        <p>その事は言わぬけれど、明方の三時から、夜の白むまで<ruby><rb>垢離</rb><rt>こり</rt></ruby>取って、願懸けすると頼んだら、姉さんは、喜んで、承知してくれました。</p>
+        <p>殺されたら死ぬ気でな、――大恩のある御主人の、この格子戸も見納めか、と思うようで、軒下へ出て振返って、<ruby><rb>門</rb><rt>かど</rt></ruby>を<ruby><rb>視</rb><rt>なが</rt></ruby>めて、立っているとな。</p>
+        <p>（おいで、）</p>
+        <p>と云って、<ruby><rb>突然</rb><rt>いきなり</rt></ruby>、<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から手を取りなすった、門附のそのお方。</p>
+        <p>私はな、よう覚悟はしていたが、天狗様に<ruby><rb>攫</rb><rt>さら</rt></ruby>われるかと思いましたえ。</p>
+        <p>あとは夢やら<ruby><rb>現</rb><rt>うつつ</rt></ruby>やら。明方内へ帰ってからも、その<ruby><rb>後</rb><rt>あと</rt></ruby>は二日も三日もただ<ruby><rb>茫</rb><rt>ぼう</rt></ruby>としておりましたの。……<placeName ref="#tsuzumigatake">鼓ヶ嶽</placeName>の松風と、<placeName ref="#isuzugawa">五十鈴川</placeName>の<ruby><rb>流</rb><rt>ながれ</rt></ruby>の音と聞えます、雑木の森の暗い中で、その方に教わりました。……舞も、あの、さす手も、ひく手も、ただ<ruby><rb>背後</rb><rt>うしろ</rt></ruby>から背中を抱いて下さいますと、私の<ruby><rb>身体</rb><rt>からだ</rt></ruby>が、舞いました。それだけより存じません。</p>
+        <p>もっとも、私が、あの、<placeName ref="#toba">鳥羽</placeName>の海へ投入れられた、その身の上も話しました。その方は不思議な事で、私とは<ruby><rb>敵</rb><rt>かたき</rt></ruby>のような中だ事も、いろいろ入組んではおりますけれど、<placeName ref="#tsuzumigatake">鼓ヶ嶽</placeName>の裾の話は、誰にも言うな、と口留めをされました。何んにも話がなりません。</p>
+        <p>五日目に、もう可いから、これを舞って座敷をせい。芸なし、とは言うまい、ッて、お<ruby><rb>記念</rb><rt>かたみ</rt></ruby>なり、しるしなりに、この舞扇を下さいました。」</p>
+        <p>と袖で胸へしっかと抱いて、ぶるぶると肩を震わした、<ruby><rb>後毛</rb><rt>おくれげ</rt></ruby>がはらりとなる。</p>
+        <p><persName ref="#sesso">捻平</persName><ruby><rb>溜息</rb><rt>ためいき</rt></ruby>をして<ruby><rb>頷</rb><rt>うなず</rt></ruby>き、</p>
+        <p>「いや、よく分った。教え方も、習い方も、話されずとよく分った。時に、<placeName ref="#yamada">山田</placeName>に居て、どうじゃな、その舞だけでは勤まらなんだか。」</p>
+        <p>「はい、はじめて<ruby><rb>謡</rb><rt>うた</rt></ruby>いました時は、<ruby><rb>皆</rb><rt>みんな</rt></ruby>が、わっと笑うやら、中には<ruby><rb>恐</rb><rt>おそろし</rt></ruby>い<ruby><rb>怖</rb><rt>こわ</rt></ruby>いと云う人もござんす。なぜ言うと、五日ばかり、あの私がな、天狗様に誘い出された、と<ruby><rb>風説</rb><rt>うわさ</rt></ruby>したのでござんすから。」</p>
+        <p>「は、いかにも師匠が魔でなくては、その立方は習われぬわ。むむ、で、何かの、<placeName ref="#ise">伊勢</placeName>にも<ruby><rb>謡</rb><rt>うたい</rt></ruby>うたうものの、五人七人はあろうと思うが、その連中には見せなんだか。」</p>
+        <p>「ええ、<ruby><rb>物好</rb><rt>ものずき</rt></ruby>に試すって、呼んだ方もありましたが、地をお謡いなさる方が、何じゃやら、ちっとも、ものにならぬと言って、すぐにお<ruby><rb>留</rb><rt>や</rt></ruby>めなさいましたの。」</p>
+        <p>「ははあ、いや、その足拍子を入れられては、やわな<ruby><rb>謡</rb><rt>うたい</rt></ruby>は<ruby><rb>断</rb><rt>ちぎ</rt></ruby>れて飛ぶじゃよ。ははははは、<ruby><rb>唸</rb><rt>うな</rt></ruby>る連中<ruby><rb>粉灰</rb><rt>こっぱい</rt></ruby>じゃて。かたがたこの<placeName ref="#kuwana">桑名</placeName>へ、住替えとやらしたのかの。」</p>
+        <p>「狐狸や、いや、あの、<ruby><rb>吠</rb><rt>ほ</rt></ruby>えて飛ぶ処は、<ruby><rb>梟</rb><rt>ふくろ</rt></ruby>の<ruby><rb>憑物</rb><rt>つきもの</rt></ruby>がしよった、と皆<ruby><rb>気違</rb><rt>きちがい</rt></ruby>にしなさいます。姉さんも、手放すのは可哀相や言って下さいましたけれど、……<ruby><rb>周囲</rb><rt>まわり</rt></ruby>の人が承知しませず、……この<placeName ref="#kuwana">桑名</placeName>の<placeName ref="#shimaya">島屋</placeName>とは、<ruby><rb>行</rb><rt>ゆき</rt></ruby>かいはせぬ遠い中でも、姉さんの縁続きでござんすから、預けるつもりで<ruby><rb>寄越</rb><rt>よこ</rt></ruby>されましたの。」</p>
+        <p>「おお、そこで、また辛い<ruby><rb>思</rb><rt>おもい</rt></ruby>をさせられるか。まずまず、それは後でゆっくり聞こう。……そのお<ruby><rb>娘</rb><rt>こ</rt></ruby>、<ruby><rb>私</rb><rt>わし</rt></ruby>も<ruby><rb>同一</rb><rt>おんなじ</rt></ruby>じゃ。天魔でなくて、若い女が、<ruby><rb>術</rb><rt>わざ</rt></ruby>をするわと、仰天したので、手を留めて済まなんだ。さあ、立直して舞うて下さい。大儀じゃろうが一さし頼む。<ruby><rb>私</rb><rt>わし</rt></ruby>も<ruby><rb>久</rb><rt>ひさし</rt></ruby>ぶりで<ruby><rb>可懐</rb><rt>なつか</rt></ruby>しい、<ruby><rb>御身</rb><rt>おんみ</rt></ruby>の姿で、若師匠の御意を得よう。」</p>
+        <p>と<ruby><rb>言</rb><rt>ことば</rt></ruby>の<ruby><rb>中</rb><rt>うち</rt></ruby>に、膝で解く、その風呂敷の中を見よ。土佐の名手が<ruby><rb>画</rb><rt>えが</rt></ruby>いたような、<ruby><rb>紅</rb><rt>あか</rt></ruby>い<ruby><rb>調</rb><rt>しらべ</rt></ruby>は<placeName ref="#tatsutagawa"><ruby><rb>立田川</rb><rt>たつたがわ</rt></ruby></placeName>、月の裏皮、表皮。玉の<ruby><rb>砧</rb><rt>きぬた</rt></ruby>を、打つや、うつつに、天人も聞けかしとて、雲井、と<ruby><rb>銘</rb><rt>めい</rt></ruby>ある秘蔵の<ruby><rb>塗胴</rb><rt>ぬりどう</rt></ruby>。<ruby><rb>老</rb><rt>おい</rt></ruby>の<ruby><rb>手捌</rb><rt>てさば</rt></ruby>き美しく、<ruby><rb>錦</rb><rt>にしき</rt></ruby>に<ruby><rb>梭</rb><rt>ひ</rt></ruby>を、投ぐるよう、さらさらと緒を<ruby><rb>緊</rb><rt>し</rt></ruby>めて、火鉢の火に高く<ruby><rb>翳</rb><rt>かざ</rt></ruby>す、と……<ruby><rb>呼吸</rb><rt>いき</rt></ruby>をのんで驚いたように見ていた<persName ref="#osen">お千</persName>は、思わず、はっと両手を<ruby><rb>支</rb><rt>つ</rt></ruby>いた。</p>
+        <p>芸の威厳は争われず、この<persName ref="#sesso">捻平</persName>を誰とかする、七十八歳の<ruby><rb>翁</rb><rt>おきな</rt></ruby>、<persName ref="#sesso">辺見秀之進</persName>。近頃孫に<ruby><rb>代</rb><rt>よ</rt></ruby>を譲って、<persName ref="#sesso"><ruby><rb>雪叟</rb><rt>せっそう</rt></ruby></persName>とて隠居した、小鼓取って、本朝無双の名人である。</p>
+        <p>いざや、<ruby><rb>小父者</rb><rt>おじご</rt></ruby>は能役者、当流第一の老手、<persName ref="#genzaburo">恩地源三郎</persName>、すなわちこれ。</p>
+        <p>この二人は、<ruby><rb>侯爵</rb><rt>こうしゃく</rt></ruby>津の<ruby><rb>守</rb><rt>かみ</rt></ruby>が、参宮の、仮の<ruby><rb>館</rb><rt>やかた</rt></ruby>に催された、一調の番組を勤め済まして、あとを膝栗毛で帰る途中であった。</p>
+        <p>二十一</p>
+        <p>さて、<ruby><rb>饂飩屋</rb><rt>うどんや</rt></ruby>では門附の<ruby><rb>兄哥</rb><rt>あにい</rt></ruby>が語り次ぐ。</p>
+        <p>「いや、それから、いろいろ勿体つける所作があって、やがて大坊主が<ruby><rb>謡出</rb><rt>うたいだ</rt></ruby>した。</p>
+        <p>聞くと、どうして、思ったより出来ている、按摩<ruby><rb>鍼</rb><rt>はり</rt></ruby>の芸ではない。……<ruby><rb>戸外</rb><rt>おもて</rt></ruby>をどッどと吹く風の中へ、この声を<ruby><rb>打撒</rb><rt>ぶちま</rt></ruby>けたら、あのピイピイ笛ぐらいに<ruby><rb>纏</rb><rt>まと</rt></ruby>まろうというもんです。成程、随分<ruby><rb>夥間</rb><rt>なかま</rt></ruby>には、<ruby><rb>此奴</rb><rt>こいつ</rt></ruby>に（的等。）扱いにされようというのが少くない。</p>
+        <p>が、私に取っちゃ<ruby><rb>小敵</rb><rt>しょうてき</rt></ruby>だった。けれども芸は大事です、<ruby><rb>侮</rb><rt>あなど</rt></ruby>るまい、と気を<ruby><rb>緊</rb><rt>し</rt></ruby>めて、そこで、膝を。」</p>
+        <p>と<ruby><rb>坐直</rb><rt>すわりなお</rt></ruby>ると、肩の按摩が上へ浮いて、門附の<ruby><rb>衣紋</rb><rt>えもん</rt></ruby>が<ruby><rb>緊</rb><rt>しま</rt></ruby>る。</p>
+        <p>「……この膝を<ruby><rb>丁</rb><rt>ちょう</rt></ruby>と叩いて、黙って二ツ三ツ拍子を取ると、この拍子が<ruby><rb>尋常</rb><rt>ただ</rt></ruby>んじゃない。……親なり師匠の叔父きの膝に、<ruby><rb>小児</rb><rt>こども</rt></ruby>の時から、抱かれて習った相伝だ。<ruby><rb>対手</rb><rt>あいて</rt></ruby>の節の隙間を切って、<ruby><rb>伸縮</rb><rt>のびちぢ</rt></ruby>みを<ruby><rb>緊</rb><rt>し</rt></ruby>めつ、緩めつ、声の重味を<ruby><rb>刎上</rb><rt>はねあ</rt></ruby>げて、<ruby><rb>咽喉</rb><rt>のど</rt></ruby>の呼吸を突崩す。寸法を知らず、間拍子の分らない、まんざらの素人は、<ruby><rb>盲目聾</rb><rt>めくらつんぼ</rt></ruby>で気にはしないが、ちと商売人の端くれで、いささか心得のある<ruby><rb>対手</rb><rt>あいて</rt></ruby>だと、トンと一つ打たれただけで、もう声が<ruby><rb>引掛</rb><rt>ひっかか</rt></ruby>って、節が<ruby><rb>不状</rb><rt>ぶざま</rt></ruby>に<ruby><rb>蹴躓</rb><rt>けつまず</rt></ruby>く。三味線の<ruby><rb>間</rb><rt>あい</rt></ruby>も<ruby><rb>同一</rb><rt>おんなじ</rt></ruby>だ。どうです、意気なお方に釣合わぬ……ン、と一ツ<ruby><rb>刎</rb><rt>は</rt></ruby>ねないと、野暮な矢の字が、とうふにかすがい、<ruby><rb>糠</rb><rt>ぬか</rt></ruby>に釘でぐしゃりとならあね。</p>
+        <p>さすがに心得のある奴だけ、商売人にぴたりと一ツ、拍子で声を<ruby><rb>押伏</rb><rt>おっぷ</rt></ruby>せられると、張った調子が直ぐにたるんだ。思えば余計な若気の<ruby><rb>過失</rb><rt>あやまち</rt></ruby>、こっちは畜生の<ruby><rb>浅猿</rb><rt>あさま</rt></ruby>しさだが、<ruby><rb>対手</rb><rt>あいて</rt></ruby>は素人の悲しさだ。</p>
+        <p>あわれや<persName ref="#soyama">宗山</persName>。見る内に、額にたらたらと<ruby><rb>衝</rb><rt>つ</rt></ruby>と汗を流し、<ruby><rb>死声</rb><rt>しにごえ</rt></ruby>を振絞ると、<ruby><rb>頤</rb><rt>あご</rt></ruby>から胸へ<ruby><rb>膏</rb><rt>あぶら</rt></ruby>を絞った……あのその大きな唇が<ruby><rb>海鼠</rb><rt>なまこ</rt></ruby>を干したように乾いて来て、舌が<ruby><rb>硬</rb><rt>こわ</rt></ruby>って<ruby><rb>呼吸</rb><rt>いき</rt></ruby>が<ruby><rb>発奮</rb><rt>はず</rt></ruby>む。わなわなと震える手で、畳を<ruby><rb>掴</rb><rt>つか</rt></ruby>むように、うたいながら<ruby><rb>猪口</rb><rt>ちょこ</rt></ruby>を拾おうとする処、ものの本をまだ一枚とうたわぬ<ruby><rb>前</rb><rt>さき</rt></ruby>、ピシリとそこへ高拍子を打込んだのが、<ruby><rb>下腹</rb><rt>したっぱら</rt></ruby>へ響いて、ドン底から節が抜けたものらしい。</p>
+        <p>はっと火のような<ruby><rb>呼吸</rb><rt>いき</rt></ruby>を吐く、トタンに<ruby><rb>真俯向</rb><rt>まうつむ</rt></ruby>けに<ruby><rb>突伏</rb><rt>つッぷ</rt></ruby>す時、長々と舌を吐いて、犬のように畳を<ruby><rb>嘗</rb><rt>な</rt></ruby>めた。</p>
+        <p>（先生、御病気か。）</p>
+        <p>って私あ<ruby><rb>莞爾</rb><rt>にっこり</rt></ruby>したんだ。</p>
+        <p>（是非聞きたい、平にどうか。<persName ref="#soyama">宗山</persName>、この上に<ruby><rb>聾</rb><rt>つんぼ</rt></ruby>になっても、<ruby><rb>貴下</rb><rt>あなた</rt></ruby>のを一番、聞かずには死なれぬ。）</p>
+        <p>と<ruby><rb>拳</rb><rt>こぶし</rt></ruby>を握って、せいせい言ってる。</p>
+        <p>（按摩さん。）</p>
+        <p>と私は呼んで、</p>
+        <p>（<placeName ref="#onoemachi">尾上町</placeName>の<placeName ref="#fujiya">藤屋</placeName>まで、どのくらい離れている。）</p>
+        <p>（何んで、）</p>
+        <p>と聞く。</p>
+        <p>（間によっては声が響く。内証で来たんだ。……<placeName ref="#fujiya">藤屋</placeName>には私の声が聞かしたくない、叔父が一人寝てござるんだ。勇士は霜の<ruby><rb>気勢</rb><rt>けはい</rt></ruby>を知るとさ――たださえ<ruby><rb>目敏</rb><rt>めざと</rt></ruby>い<ruby><rb>老人</rb><rt>としより</rt></ruby>が、この風だから寝苦しがって、フト起きてでもいるとならない、祝儀は置いた。帰るぜ。）</p>
+        <p>ト<persName ref="#soyama">宗山</persName>が、<ruby><rb>凝</rb><rt>じっ</rt></ruby>と<ruby><rb>塞</rb><rt>ふさ</rt></ruby>いだ目を、ぐるぐると動かして、</p>
+        <p>（<ruby><rb>暫</rb><rt>しばら</rt></ruby>く、今の拍子を打ちなされ……<placeName ref="#furuichi">古市</placeName>から<placeName ref="#onoemachi">尾上町</placeName>まで声が聞えようか、と言いなされる、御大言、年のお<ruby><rb>少</rb><rt>わか</rt></ruby>さ。まだ<ruby><rb>一度</rb><rt>ひとたび</rt></ruby>も声は聞かず、顔はもとより見た事もなけれども……当流の大師匠、<persName ref="#genzaburo">恩地源三郎</persName>どの養子と聞く……同じ<persName ref="#kitahachi">喜多八</persName>氏の外にはあるまい。さようでござろう、<persName ref="#kitahachi">恩地</persName>、）</p>
+        <p>と私の名をちゃんと言う。</p>
+        <p>ああ、酔った、」</p>
+        <p>と杯をばたりと落した。</p>
+        <p>「<ruby><rb>饒舌</rb><rt>しゃべ</rt></ruby>って悪い私の名じゃない。叔父に済まない。二人とも、誰にも言うな。……」</p>
+        <p>と<ruby><rb>鷹揚</rb><rt>おうよう</rt></ruby>で、按摩と女房に目をあしらい。</p>
+        <p>「私は羽織の裾を払って、</p>
+        <p>（違ったような、当ったようだ、が、何しろ、<placeName ref="#tokyo">東京</placeName>の的等の一人だ。宗家の宗、本山の山、<persName ref="#soyama">宗山</persName>か。<ruby><rb>若布</rb><rt>わかめ</rt></ruby>の附焼でも土産に持って、<placeName ref="#tokaido">東海道</placeName>を<ruby><rb>這</rb><rt>は</rt></ruby>い上れ。恩地の台所から<ruby><rb>音信</rb><rt>おとず</rt></ruby>れたら、叔父には内証で、居候の腕白が、<ruby><rb>独楽</rb><rt>こま</rt></ruby>を廻す片手間に、この浦船でも教えてやろう。）</p>
+        <p>とずっと立つ。</p>
+        <p>二十二</p>
+        <p>「<ruby><rb>痘瘡</rb><rt>あばた</rt></ruby>の中に<ruby><rb>白眼</rb><rt>しろまなこ</rt></ruby>を<ruby><rb>剥</rb><rt>む</rt></ruby>いて、よたよたと立上って、<ruby><rb>憤</rb><rt>いきどお</rt></ruby>った声ながら、</p>
+        <p>（<ruby><rb>可懐</rb><rt>なつかし</rt></ruby>いわ、若旦那、盲人の悲しさ顔は見えぬ。触らせて下され、つかまらせて下され、<ruby><rb>一撫</rb><rt>ひとな</rt></ruby>で、撫でさせて下され。）</p>
+        <p>と言う。</p>
+        <p>いや、撫られて<ruby><rb>堪</rb><rt>たま</rt></ruby>りますか。</p>
+        <p><ruby><rb>摺抜</rb><rt>すりぬ</rt></ruby>けようとするんだがね、六畳の狭い座敷、<ruby><rb>盲目</rb><rt>めくら</rt></ruby>でも自分の<ruby><rb>家</rb><rt>うち</rt></ruby>だ。</p>
+        <p>素早く、<ruby><rb>階子段</rb><rt>はしごだん</rt></ruby>の降口を<ruby><rb>塞</rb><rt>ふさ</rt></ruby>いで、むずと、大手を拡げたろう。……影が天井へ<ruby><rb>懸</rb><rt>かか</rt></ruby>って、<ruby><rb>充満</rb><rt>いっぱい</rt></ruby>の黒坊主が、<ruby><rb>汗膏</rb><rt>あせあぶら</rt></ruby>を流して撫じょうとする。</p>
+        <p>いや、その<ruby><rb>嫉妬</rb><rt>しっと</rt></ruby><ruby><rb>執着</rb><rt>しゅうぢゃく</rt></ruby>の、険な不思議の形相が、今もって忘れられない。</p>
+        <p>（<ruby><rb>可厭</rb><rt>いや</rt></ruby>だ、可厭だ、可厭だ。）と、こっちは夢中に出ようとする、よける、留める、行違うで、やわな、かぐら堂の二階中みしみしと鳴る。風は<ruby><rb>轟々</rb><rt>ごうごう</rt></ruby>と当る。ただ黒雲に<ruby><rb>捲</rb><rt>ま</rt></ruby>かれたようで、<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しくなった、<ruby><rb>凄</rb><rt>すご</rt></ruby>さは凄し。</p>
+        <p><ruby><rb>衝</rb><rt>つ</rt></ruby>と、<ruby><rb>引潜</rb><rt>ひっくぐ</rt></ruby>って、ドンと飛び摺りに、どどどと<ruby><rb>駈</rb><rt>か</rt></ruby>け下りると、ね。</p>
+        <p>（<persName ref="#osode"><ruby><rb>袖</rb><rt>そで</rt></ruby>や</persName>、止めませい。）</p>
+        <p>と<persName ref="#soyama">宗山</persName>が二階で<ruby><rb>喚</rb><rt>わめ</rt></ruby>いた。<ruby><rb>皺枯声</rb><rt>しわがれごえ</rt></ruby>が、風でぱっと耳に当ると、三四人立騒ぐ女の中から、すっと美しく姿を抜いて、格子を開けた<ruby><rb>門口</rb><rt>かどぐち</rt></ruby>で、しっかり<ruby><rb>掴</rb><rt>つか</rt></ruby>まる。吹きつけて<ruby><rb>揉</rb><rt>も</rt></ruby>む風で、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と<ruby><rb>紅</rb><rt>あか</rt></ruby>い<ruby><rb>褄</rb><rt>つま</rt></ruby>が<ruby><rb>搦</rb><rt>から</rt></ruby>むように、私に<ruby><rb>縋</rb><rt>すが</rt></ruby>ったのが、<ruby><rb>結綿</rb><rt>ゆいわた</rt></ruby>の、その娘です。</p>
+        <p>背中を揉んでた、薄茶を出した、あの影法師の<ruby><rb>妾</rb><rt>めかけ</rt></ruby>だろう。</p>
+        <p>ものを言う<ruby><rb>清</rb><rt>すずし</rt></ruby>い、<ruby><rb>張</rb><rt>はり</rt></ruby>のある目を上から見込んで、構うものか、行きがけだ。</p>
+        <p>（可愛い人だな、おい、殺されても死んでも、人の<ruby><rb>玩弄物</rb><rt>おもちゃ</rt></ruby>にされるな。）</p>
+        <p>と言捨てに<ruby><rb>突放</rb><rt>つッぱな</rt></ruby>す。</p>
+        <p>（あれ。）と云う声がうしろへ、ぱっと吹飛ばされる風に向って、<ruby><rb>砂塵</rb><rt>しゃじん</rt></ruby>の中へ、や、躍込むようにして一散に<ruby><rb>駈</rb><rt>か</rt></ruby>けて返った。</p>
+        <p><ruby><rb>後</rb><rt>のち</rt></ruby>に知った、が、妾じゃない。<persName ref="#osode">お袖</persName>と云うその可愛いのは、<persName ref="#soyama">宗山</persName>の娘だったね。それを娘と知っていたら、いや、その時だって気が付いたら、按摩が親の<ruby><rb>仇敵</rb><rt>かたき</rt></ruby>でも、<ruby><rb>私</rb><rt>わっし</rt></ruby>あ退治るんじゃなかったんだ。」</p>
+        <p>と不意にがッくりと胸を折って<ruby><rb>俯向</rb><rt>うつむ</rt></ruby>くと、按摩の手が、肩を<ruby><rb>辷</rb><rt>すべ</rt></ruby>って、ぬいと越す。……その袖の陰で、取るともなく、落した杯を探りながら、</p>
+        <p>「もしか、按摩が尋ねて来たら、堅く<ruby><rb>居</rb><rt>お</rt></ruby>らん、と言え、と宿のものへ<ruby><rb>吩附</rb><rt>いいつ</rt></ruby>けた。叔父のすやすやは、上首尾で、並べて取った床の中へ、すっぽり入って、<ruby><rb>引被</rb><rt>ひっかぶ</rt></ruby>って、<ruby><rb>可</rb><rt>いい</rt></ruby>心持に寝たんだが。</p>
+        <p>ああ、寝心の<ruby><rb>好</rb><rt>い</rt></ruby>い思いをしたのは、その晩きりさ。</p>
+        <p>なぜッて、<persName ref="#soyama">宗山</persName>がその夜の<ruby><rb>中</rb><rt>うち</rt></ruby>に、私に<ruby><rb>辱</rb><rt>はずかし</rt></ruby>められたのを<ruby><rb>口惜</rb><rt>くや</rt></ruby>しがって、<ruby><rb>傲慢</rb><rt>ごうまん</rt></ruby>な奴だけに、ぴしりと、もろい折方、憤死してしまったんだ。七代まで流儀に<ruby><rb>祟</rb><rt>たた</rt></ruby>る、と手探りでにじり<ruby><rb>書</rb><rt>がき</rt></ruby>した<ruby><rb>遺書</rb><rt>かきおき</rt></ruby>を残してな。死んだのは<placeName ref="#tsuzumigatake">鼓ヶ嶽</placeName>の裾だった。あの<ruby><rb>広場</rb><rt>ひろっぱ</rt></ruby>の雑樹へ<ruby><rb>下</rb><rt>さが</rt></ruby>って、<ruby><rb>夜</rb><rt>よ</rt></ruby>が明けて、やッと<ruby><rb>小止</rb><rt>こやみ</rt></ruby>になった風に、ふらふらとまだ動いていたとさ。</p>
+        <p>こっちは何にも知らなかろう、風は<ruby><rb>凪</rb><rt>な</rt></ruby>ぐ、天気は<ruby><rb>可</rb><rt>よし</rt></ruby>。叔父は一段の上機嫌。……<placeName ref="#furuichi">古市</placeName>を立って<placeName ref="#futami">二見</placeName>へ行った。朝の<ruby><rb>中</rb><rt>うち</rt></ruby>、<placeName ref="#asahikan">朝日館</placeName>と云うのへ入って、いずれ泊る、……先へ<placeName ref="#toba">鳥羽</placeName>へ行って、ゆっくりしようと、直ぐに車で、上の山から、日の出の下、<placeName ref="#futami">二見</placeName>の浦の上を通って、<placeName ref="#hiyoriyama">日和山</placeName>を<ruby><rb>桟敷</rb><rt>さじき</rt></ruby>に、山の上に、海を<ruby><rb>青畳</rb><rt>あおだたみ</rt></ruby>にして二人で半日。やがて<placeName ref="#asahikan">朝日館</placeName>へ帰る、……とどうだ。</p>
+        <p><ruby><rb>旅籠</rb><rt>はたご</rt></ruby>の表は黒山の人だかりで、内の廊下もごった返す。<ruby><rb>大袈裟</rb><rt>おおげさ</rt></ruby>な事を言うんじゃない。<placeName ref="#ise">伊勢</placeName>から私たちに逢いに来たのだ。按摩の変事と<ruby><rb>遺書</rb><rt>かきおき</rt></ruby>とで、その日の内に国中へ知れ渡った。別にその事について文句は申さぬ。芸事で<persName ref="#soyama">宗山</persName>の<ruby><rb>留</rb><rt>とどめ</rt></ruby>を刺したほどの<ruby><rb>豪</rb><rt>えら</rt></ruby>い方々、是非に一日、<placeName ref="#yamada">山田</placeName>で<ruby><rb>謡</rb><rt>うたい</rt></ruby>が聞かして欲しい、と<ruby><rb>羽織袴</rb><rt>はおりはかま</rt></ruby>、フロックで押寄せたろう。</p>
+        <p>いや、叔父が怒るまいか。<placeName ref="#nihon">日本</placeName>一の不所存もの、<persName ref="#genzaburo">恩地源三郎</persName>が申渡す、向後<ruby><rb>一切</rb><rt>いっせつ</rt></ruby>、謡を口にすること<ruby><rb>罷成</rb><rt>まかりな</rt></ruby>らん。<ruby><rb>立処</rb><rt>たちどころ</rt></ruby>に勘当だ。さて<persName ref="#soyama">宗山</persName>とか云う盲人、<ruby><rb>己</rb><rt>おの</rt></ruby>が<ruby><rb>不束</rb><rt>ふつつか</rt></ruby>なを知って屈死した心、かくのごときは芸の上の<ruby><rb>鬼神</rb><rt>おにがみ</rt></ruby>なれば、自分は、<ruby><rb>葬式</rb><rt>とむらい</rt></ruby>の<ruby><rb>送迎</rb><rt>おくりむかい</rt></ruby>、墓に謡を手向きょう、と人々と約束して、私はその場から追出された。</p>
+        <p>あとの事は何も知らず、その時から、津々浦々をさすらい<ruby><rb>歩行</rb><rt>ある</rt></ruby>く、門附の<ruby><rb>果敢</rb><rt>はかな</rt></ruby>い身の上。」</p>
+        <p>二十三</p>
+        <p>「<placeName ref="#nagoya">名古屋</placeName>の<placeName ref="#osu">大須</placeName>の観音の裏町で、これも浮世に別れたらしい、三味線一<ruby><rb>挺</rb><rt>ちょう</rt></ruby>、古道具屋の店にあったを<ruby><rb>工面</rb><rt>くめん</rt></ruby>したのがはじまりで、一銭二銭、三銭じゃ木賃で泊めぬ<ruby><rb>夜</rb><rt>よ</rt></ruby>も多し、日数をつもると野宿も半分、<placeName ref="#kyo">京</placeName><placeName ref="#osaka">大阪</placeName>と<ruby><rb>経</rb><rt>へ</rt></ruby>めぐって、西は<placeName ref="#hakata">博多</placeName>まで行ったっけ。</p>
+        <p>何んだか<placeName ref="#ise">伊勢</placeName>が気になって、妙に急いで、逆戻りにまた来た。……</p>
+        <p>私が言ったただ<ruby><rb>一言</rb><rt>ひとこと</rt></ruby>、（人のおもちゃになるな。）と言ったを、<ruby><rb>生命</rb><rt>いのち</rt></ruby>がけで守っている。……可愛い娘に逢ったのが一生の<ruby><rb>思出</rb><rt>おもいで</rt></ruby>だ。</p>
+        <p>どうなるものでもないんだから、早く影をくらましたが、<placeName ref="#yokkaichi">四日市</placeName>で煩って、<ruby><rb>女房</rb><rt>おかみ</rt></ruby>さん。」</p>
+        <p>と呼びかけた。</p>
+        <p>「お前さんじゃないけれど、深切な人があった。やっと足腰が立ったと思いねえ。<placeName ref="#kamigata">上方</placeName>筋は何でもない、間違って謡を聞いても、お百姓が、（風呂が沸いた）で<ruby><rb>竹法螺</rb><rt>たけぼら</rt></ruby>吹くも同然だが、<ruby><rb>東</rb><rt>あずま</rt></ruby>へ上って、<placeName ref="#hakone">箱根</placeName>の山のどてっぱらへ手が<ruby><rb>掛</rb><rt>かか</rt></ruby>ると、もう、な、<placeName ref="#edo">江戸</placeName>の鼓が響くから、どう我慢がなるものか！　うっかり謡をうたいそうで危くってならないからね、<placeName ref="#imagire"><ruby><rb>今切</rb><rt>いまぎれ</rt></ruby></placeName>は越せません。これから<placeName ref="#oizumihara"><ruby><rb>大泉原</rb><rt>おおいずみはら</rt></ruby></placeName>、<placeName ref="#inabe"><ruby><rb>員弁</rb><rt>いなべ</rt></ruby></placeName>、<placeName ref="#ageki"><ruby><rb>阿下岐</rb><rt>あげき</rt></ruby></placeName>をかけて、<placeName ref="#ogaki">大垣</placeName>街道。<placeName ref="#gifu">岐阜</placeName>へ出たら<ruby><rb><placeName ref="#hida">飛騨</placeName>越</rb><rt>ひだごえ</rt></ruby>で、<placeName ref="#hokkoku"><ruby><rb>北国</rb><rt>ほっこく</rt></ruby></placeName>筋へも廻ろうかしら、と<placeName ref="#tomida">富田</placeName>近所を三日稼いで、<placeName ref="#kuwana">桑名</placeName>へ来たのが<ruby><rb>昨日</rb><rt>きのう</rt></ruby>だった。</p>
+        <p>その今夜はどうだ。不思議な人を二人見て、遣切れなくなってこの<ruby><rb>家</rb><rt>うち</rt></ruby>へ飛込んだ。が、<ruby><rb>流</rb><rt>ながし</rt></ruby>の笛が<ruby><rb>身体</rb><rt>からだ</rt></ruby>に<ruby><rb>刺</rb><rt>ささ</rt></ruby>る。いつもよりはなお激しい。そこへまた影を見た。美しい影も見れば、<ruby><rb>可恐</rb><rt>おそろ</rt></ruby>しい影も見た。ここで按摩が殺す気だろう。構うもんか、勝手にしろ、似たものを<ruby><rb>引</rb><rt>ひき</rt></ruby>つけて、とそう覚悟して按摩さん、背中へ<ruby><rb>掴</rb><rt>つかま</rt></ruby>ってもらったんだ。</p>
+        <p>が、筋を抜かれる、身を<ruby><rb>挘</rb><rt>むし</rt></ruby>られる、私が五体は裂けるようだ。」</p>
+        <p>とまた<ruby><rb>差俯向</rb><rt>さしうつむ</rt></ruby>く肩を越して、按摩の手が、それも物に震えながら、はたはたと<ruby><rb>戦</rb><rt>おのの</rt></ruby>きながら、背中に<ruby><rb>獅噛</rb><rt>しが</rt></ruby>んだ<ruby><rb>面</rb><rt>つら</rt></ruby>の<ruby><rb>附着</rb><rt>くッつ</rt></ruby>く……門附の<ruby><rb>袷</rb><rt>あわせ</rt></ruby>の<ruby><rb>褪</rb><rt>あ</rt></ruby>せた色は、<ruby><rb>膚薄</rb><rt>はだうす</rt></ruby>な胸を透かして、<ruby><rb>動悸</rb><rt>どうき</rt></ruby>が筋に映るよう、あわれ、博多の柳の姿に、<ruby><rb>土蜘蛛</rb><rt>つちぐも</rt></ruby>一つ<ruby><rb>搦</rb><rt>から</rt></ruby>みついたように<ruby><rb>凄</rb><rt>すご</rt></ruby>く見える。</p>
+        <p>「誰や！」</p>
+        <p>と、不意に<ruby><rb>吃驚</rb><rt>びっくり</rt></ruby>したような女房の声、うしろ見られる神棚の<ruby><rb>灯</rb><rt>ともし</rt></ruby>も暗くなる端に、べろべろと紙が濡れて、<ruby><rb>門</rb><rt>かど</rt></ruby>の腰障子に穴があいた。それを<ruby><rb>見咎</rb><rt>みとが</rt></ruby>めて一つ<ruby><rb>喚</rb><rt>わめ</rt></ruby>く、とがたがたと、<ruby><rb>跫音</rb><rt>あしおと</rt></ruby>高く、<ruby><rb>駈</rb><rt>か</rt></ruby>け<ruby><rb>退</rb><rt>の</rt></ruby>いたのは御亭どの。</p>
+        <p>いや、困った<ruby><rb>親仁</rb><rt>おやじ</rt></ruby>が、一人でない、<ruby><rb>薪雑棒</rb><rt>まきざっぽう</rt></ruby>、<ruby><rb>棒千切</rb><rt>ぼうちぎ</rt></ruby>れで、二人ばかり、若いものを連れていた。</p>
+        <p>「御老体、」</p>
+        <p><persName ref="#sesso">雪叟</persName>が小鼓を<ruby><rb>緊</rb><rt>し</rt></ruby>めたのを見て……こう言って、<persName ref="#genzaburo">恩地源三郎</persName>が<ruby><rb>儼然</rb><rt>げんぜん</rt></ruby>として顧みて、</p>
+        <p>「破格のお附合い、<ruby><rb>恐</rb><rt>おそれ</rt></ruby>多いな。」</p>
+        <p>と膝に扇を取って会釈をする。</p>
+        <p>「相変らず未熟でござる。」</p>
+        <p>と<persName ref="#sesso">雪叟</persName>が礼を返して、そのまま座を下へおりんとした。</p>
+        <p>「平に、それは。」</p>
+        <p>「いや、蒲団の上では、お流儀に失礼じゃ。」</p>
+        <p>「は、その<ruby><rb>娘</rb><rt>こ</rt></ruby>の舞が、<ruby><rb>甥</rb><rt>おい</rt></ruby>の奴の<ruby><rb>俤</rb><rt>おもかげ</rt></ruby>ゆえに、遠慮した、では私も、」</p>
+        <p>と言った時、左右へ、敷物を<ruby><rb>斉</rb><rt>ひと</rt></ruby>しく<ruby><rb>刎</rb><rt>は</rt></ruby>ねた。</p>
+        <p>「嫁女、嫁女、」</p>
+        <p>と<persName ref="#genzaburo">源三郎</persName>、二声呼んで、</p>
+        <p>「<persName ref="#omie">お三重</persName>さんか、私は嫁と思うぞ。<persName ref="#kitahachi">喜多八</persName>の叔父<persName ref="#genzaburo">源三郎</persName>じゃ、<ruby><rb>更</rb><rt>あらた</rt></ruby>めて一さし舞え。」</p>
+        <p>二人の名家が<ruby><rb>屹</rb><rt>きっ</rt></ruby>と居直る。</p>
+        <p>瞳の動かぬ気高い顔して、<ruby><rb>恍惚</rb><rt>うっとり</rt></ruby>と見詰めながら、よろよろと<ruby><rb>引退</rb><rt>ひきさが</rt></ruby>る、と黒髪うつる藤紫、肩も<ruby><rb>腕</rb><rt>かいな</rt></ruby>も<ruby><rb>嬌娜</rb><rt>なよやか</rt></ruby>ながら、袖に構えた扇の利剣、霜夜に声も<ruby><rb>凜々</rb><rt>りんりん</rt></ruby>と、</p>
+        <p>「……引上げたまえと約束し、一つの利剣を抜持って……」</p>
+        <p>肩に<ruby><rb>綾</rb><rt>あや</rt></ruby>なす鼓の手影、雲井の胴に光さし、<ruby><rb>艶</rb><rt>つや</rt></ruby>が添って、名誉が<ruby><rb>籠</rb><rt>こ</rt></ruby>めた心の花に、<ruby><rb>調</rb><rt>しらべ</rt></ruby>の緒の色、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と燃え、ヤオ、と一つ声が<ruby><rb>懸</rb><rt>かか</rt></ruby>る。</p>
+        <p>「あっ、」</p>
+        <p>とばかり、<ruby><rb>屹</rb><rt>きっ</rt></ruby>と見据えた――能楽界の鶴なりしを、雲隠れつ、と<ruby><rb>惜</rb><rt>おし</rt></ruby>まれた――<persName ref="#kitahachi">恩地喜多八</persName>、饂飩屋の<ruby><rb>床几</rb><rt>しょうぎ</rt></ruby>から、<ruby><rb>衝</rb><rt>つ</rt></ruby>と片足を土間に落して、</p>
+        <p>「<persName ref="#sesso">雪叟</persName>が鼓を打つ！　鼓を打つ！」と身を<ruby><rb>揉</rb><rt>も</rt></ruby>んだ、胸を<ruby><rb>切</rb><rt>せ</rt></ruby>めて、<ruby><rb>慌</rb><rt>あわただ</rt></ruby>しく取って<ruby><rb>蔽</rb><rt>おお</rt></ruby>うた、手拭に、かっと血を吐いたが、かなぐり棄てると、<ruby><rb>右手</rb><rt>めて</rt></ruby>を<ruby><rb>掴</rb><rt>つか</rt></ruby>んで、按摩の手をしっかと取った。</p>
+        <p>「<ruby><rb>祟</rb><rt>たた</rt></ruby>らば、祟れ、さあ、按摩。<placeName ref="#kawaguchi-minatoya">湊屋</placeName>の<ruby><rb>門</rb><rt>かど</rt></ruby>まで来い。もう一度、若旦那が聞かしてやろう。」</p>
+        <p>と、<ruby><rb>引立</rb><rt>ひった</rt></ruby>てて、ずいと出た。</p>
+        <p>「（<persName ref="#genzaburo">源三郎</persName>）……かくて<placeName ref="#ryugu">竜宮</placeName>に至りて宮中を見れば、その高さ三十丈の玉塔に、かの玉をこめ<ruby><rb>置</rb><rt>おき</rt></ruby>、<ruby><rb>香花</rb><rt>こうげ</rt></ruby>を備え、守護神は八竜<ruby><rb>並居</rb><rt>なみい</rt></ruby>たり、その外悪魚<ruby><rb>鰐</rb><rt>わに</rt></ruby>の口、<ruby><rb>遁</rb><rt>のが</rt></ruby>れがたしや<ruby><rb>我</rb><rt>わが</rt></ruby>命、さすが恩愛の<ruby><rb>故郷</rb><rt>ふるさと</rt></ruby>のかたぞ恋しき、あの浪のあなたにぞ……」</p>
+        <p>その時、<ruby><rb>漲</rb><rt>みなぎ</rt></ruby>る心の<ruby><rb>張</rb><rt>はり</rt></ruby>に、島田の<ruby><rb>元結</rb><rt>もとゆい</rt></ruby>ふッつと切れ、肩に崩るる緑の黒髪。水に乱れて、灯に<ruby><rb>揺</rb><rt>ゆら</rt></ruby>めき、畳の海は<ruby><rb>裳</rb><rt>もすそ</rt></ruby>に澄んで、<ruby><rb>塵</rb><rt>ちり</rt></ruby>も<ruby><rb>留</rb><rt>とど</rt></ruby>めぬ<ruby><rb>舞振</rb><rt>まいぶり</rt></ruby>かな。</p>
+        <p>「（<persName ref="#genzaburo">源三郎</persName>）……<ruby><rb>我子</rb><rt>わがこ</rt></ruby>は<ruby><rb>有</rb><rt>あ</rt></ruby>らん、父大臣もおわすらむ……」</p>
+        <p>と声が<ruby><rb>幽</rb><rt>かす</rt></ruby>んで、<persName ref="#genzaburo">源三郎</persName>の<ruby><rb>地</rb><rt>じ</rt></ruby>謡う節が、フト途絶えようとした時であった。</p>
+        <p>この<placeName ref="#kawaguchi-minatoya">湊屋</placeName>の門口で、<ruby><rb>爽</rb><rt>さわやか</rt></ruby>に調子を合わした。……その声、白き<ruby><rb>虹</rb><rt>にじ</rt></ruby>のごとく、<ruby><rb>衝</rb><rt>つ</rt></ruby>と来て、<persName ref="#omie">お三重</persName>の姿に<ruby><rb>射</rb><rt>さ</rt></ruby>した。</p>
+        <p>「（<persName ref="#kitahachi">喜多八</persName>）……さるにてもこのままに別れ<ruby><rb>果</rb><rt>はて</rt></ruby>なんかなしさよと、涙ぐみて立ちしが……」</p>
+        <p>「やあ、大事な処、倒れるな。」</p>
+        <p>と<persName ref="#genzaburo">源三郎</persName>すっと座を立ち、よろめく<persName ref="#omie">三重</persName>の<ruby><rb>背</rb><rt>せな</rt></ruby>を支えた、<ruby><rb>老</rb><rt>おい</rt></ruby>の<ruby><rb>腕</rb><rt>かいな</rt></ruby>に<ruby><rb>女浪</rb><rt>めなみ</rt></ruby>の袖、この後見の大磐石に、みるの緑の黒髪かけて、<ruby><rb>颯</rb><rt>さっ</rt></ruby>と<ruby><rb>翳</rb><rt>かざ</rt></ruby>すや舞扇は、銀地に、その、雲も恋人の影も立添う、光を放って、<ruby><rb>灯</rb><rt>ともしび</rt></ruby>を<ruby><rb>白</rb><rt>しら</rt></ruby>めて舞うのである。</p>
+        <p>舞いも舞うた、謡いも謡う。はた<persName ref="#sesso">雪叟</persName>が自得の秘曲に、<placeName ref="#kuwana">桑名</placeName>の海も、トトと<ruby><rb>大鼓</rb><rt>おおかわ</rt></ruby>の拍子を添え、川浪近くタタと鳴って、太鼓の<ruby><rb>響</rb><rt>ひびき</rt></ruby>に<ruby><rb>汀</rb><rt>みぎわ</rt></ruby>を打てば、<placeName ref="#tadosan"><ruby><rb>多度山</rb><rt>たどさん</rt></ruby></placeName>の霜の頂、月の<placeName ref="#gozaisho">御在所ヶ<ruby><rb>嶽</rb><rt>たけ</rt></ruby></placeName>の影、<placeName ref="#kamagatake">鎌ヶ嶽</placeName>、<placeName ref="#kanmurigatake"><ruby><rb>冠</rb><rt>かむり</rt></ruby>ヶ嶽</placeName>も冠着て、客座に並ぶ<ruby><rb>気勢</rb><rt>けはい</rt></ruby>あり。</p>
+        <p><ruby><rb>小夜</rb><rt>さよ</rt></ruby>更けぬ。町<ruby><rb>凍</rb><rt>い</rt></ruby>てぬ。どことしもなく<ruby><rb>虚空</rb><rt>おおぞら</rt></ruby>に笛の聞えた時、<persName ref="#kitahachi">恩地喜多八</persName>はただ一人、<placeName ref="#kawaguchi-minatoya">湊屋</placeName>の軒の蔭に、姿<ruby><rb>蒼</rb><rt>あお</rt></ruby>く、影を濃く立って謡うと、月が棟高く<ruby><rb>廂</rb><rt>ひさし</rt></ruby>を照らして、<ruby><rb>渠</rb><rt>かれ</rt></ruby>の<ruby><rb>面</rb><rt>おもて</rt></ruby>に、扇のような光を投げた。舞の扇と、うら表に、そこでぴたりと合うのである。</p>
+        <p>「（<persName ref="#kitahachi">喜多八</persName>）……また思切って手を合せ、<ruby><rb>南無</rb><rt>なむ</rt></ruby>や<placeName ref="#shidoji"><ruby><rb>志渡寺</rb><rt>しどじ</rt></ruby></placeName>の<persName ref="#kannon">観音<ruby><rb>薩埵</rb><rt>さった</rt></ruby></persName>の力をあわせてたびたまえとて、大悲の利剣を額にあて、<placeName ref="#ryugu">竜宮</placeName>に飛び入れば、左右へはっとぞ<ruby><rb>退</rb><rt>の</rt></ruby>いたりける、」</p>
+        <p>と謡い澄ましつつ、</p>
+        <p>「<ruby><rb>背</rb><rt>せな</rt></ruby>を貸せ、<persName ref="#soyama">宗山</persName>。」と言うとともに、<persName ref="#kitahachi">恩地喜多八</persName>は疲れた<ruby><rb>状</rb><rt>さま</rt></ruby>して、<ruby><rb>先刻</rb><rt>さっき</rt></ruby>からその裾に、大きく何やら<ruby><rb>踞</rb><rt>うずく</rt></ruby>まった、形のない、ものの影を、腰掛くるよう、取って<ruby><rb>引敷</rb><rt>ひっし</rt></ruby>くがごとくにした。</p>
+        <p>路一筋白くして、<ruby><rb>掛行燈</rb><rt>かけあんどん</rt></ruby>の更けたかなたこなた、杖を<ruby><rb>支</rb><rt>つ</rt></ruby>いた按摩も交って、ちらちらと人立ちする。</p>
+        <p><date when="1910-01">明治四十三（一九一〇）年一月</date></p>
+      </div>
+    </body>
+  </text>
+</TEI>

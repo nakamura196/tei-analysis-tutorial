@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>走ラヌ名馬</title>
+        <author>太宰治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>走ラヌ名馬</title><author>太宰治</author>
+          <note>青空文庫。底本：「もの思う葦」新潮文庫、新潮社。1980（昭和55）年9月25日発行。1998（平成10）年7月20日第38刷発行。入力：田中陽介。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000035/card1059.html">https://www.aozora.gr.jp/cards/000035/card1059.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="akutagawa-ryunosuke">
+        <persName>芥川龍之介</persName>
+        <note>小説家(1892–1927)。芸術のために命まで賭した先人として言及される。作中表記は「芥川龍之介先生」</note>
+      </person>
+      <person xml:id="baudelaire">
+        <persName>ボオドレエル</persName>
+        <note>フランスの詩人シャルル・ボードレール(1821–1867)。芸術に投資した先人の一人として列挙される。作中表記は「ボオドレエル」</note>
+      </person>
+      <person xml:id="verlaine">
+        <persName>ヴェルレエヌ</persName>
+        <note>フランスの詩人ポール・ヴェルレーヌ(1844–1896)。芸術に投資した先人の一人として列挙される。作中表記は「ヴェルレエヌ」</note>
+      </person>
+      <person xml:id="goethe">
+        <persName>ゲエテ</persName>
+        <note>ドイツの詩人ヨハン・ヴォルフガング・フォン・ゲーテ(1749–1832)。作中表記は「アノ狡イ爺サンゲエテ閣下」</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="greece">
+        <placeName>ギリシャ</placeName>
+        <location><geo>39.0742 21.8243</geo></location>
+        <note>国名・概値(国土の代表点)。「ギリシャ詩人タチ」として、芸術に投資した古代の詩人たちの出自を示す形で言及</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>走ラヌ名馬</head>
+        <p>何ヲ書コウトイウ、アテ無クシテ、イワバオ<ruby><rb>稲荷</rb><rt>イナリ</rt></ruby>サンノ境内ニポカント立ッテイテ、面白クモナイ絵馬眺メナガラ、ドウシヨウカナア、ト心定マラズ、定マラヌママニ、フラフラ歩キ出シテ、腐リカケタル杉ノ大木、根株ニマツワリ、ヘバリツイテイル枯レタ<ruby><rb>蔦</rb><rt>ツタ</rt></ruby>一スジヲ、ステッキデパリパリ<ruby><rb>剥</rb><rt>ハ</rt></ruby>ギトリ、ベツダン深キ意味ナク、ツギニハ、エイット大声、狐ノ石像ニ打ッテカカッテ、コレマタ、ベツダン高イ思念ノ故デナイ。ユライ芸術トハ、コンナモノサ、<ruby><rb>譬噺</rb><rt>タトエバナシ</rt></ruby>デモナシ、修養ノ糧デモナシ、キザナ、メメシイ、売名ノ徒ノ仕事ニチガイナイノダ、ト言ワレテ、カエス言葉ナシ、素直ニ首肯、ソット爪サキ立チ、夕焼ノ雲ヲ見ツメル。</p>
+        <p>アナタノ小説、友人ヨリ雑誌借リテ読ミマシタガ、アレハ、ツマリ、一言モッテ覆エバ、ドンナコトニナルカ、ト詰問サレルコト再三、ソノタビゴトニ悲シク、一言デ言エルコトナラ、一言デ言イマス、アレハアレダケノモノデ、ホカニ言イ様ゴザイマセヌ、以後、ボクノ文章読マナイデ下サイ。</p>
+        <p>千代紙<ruby><rb>貼</rb><rt>ハ</rt></ruby>リマゼ、キレイナ小箱、コレ、何スルノ？　ナンニモシナイ、コレダケノモノ、キレイデショ？</p>
+        <p>花火一パツ、千円以上、ワザワザ川デ打チアゲテ何スルノ？</p>
+        <p>着物、ハダカヲ包メバ、ソレデイイ、柄モ、布地モ、色合イモ、ミンナ意味ナイ、二十五歳ノ男児、一夜、真紅ノ花模様、シカモチリメンノ<ruby><rb>袷</rb><rt>アワセ</rt></ruby>着テ、スベテ着物ニカワリナシ、何ガオカシイ。</p>
+        <p>アワレ美事！　ト屋根ヤブレルホドノ大<ruby><rb>喝采</rb><rt>カッサイ</rt></ruby>、ソレモ一瞬ノチニハ跡ナク消エル喝采、ソレガ、ホシクテ、ホシクテ、一万円、二万円、モットタクサン投資シタ。昔、昔、<placeName ref="#greece">ギリシャ</placeName>詩人タチ、ソレカラ、<persName ref="#baudelaire">ボオドレエル</persName>、<persName ref="#verlaine">ヴェルレエヌ</persName>、アノ<ruby><rb>狡</rb><rt>ズル</rt></ruby>イ爺サン<persName ref="#goethe">ゲエテ</persName>閣下モ、アア、忘レルモノカ<persName ref="#akutagawa-ryunosuke">芥川龍之介</persName>先生ハ、イノチ<ruby><rb>迄</rb><rt>マデ</rt></ruby>。</p>
+        <p>ケレドモ、<ruby><rb>所詮</rb><rt>ショセン</rt></ruby>、有閑ノ文字、無用ノ長物タルコト保証スル、飽食暖衣ノアゲクノ果ニ咲イタ花、コノ花ビラハ煮テモ食エナイ、飛バナイ飛行機、走ラヌ名馬、毛並ミツヤツヤ、丸々フトリ、イツモ狸寝、<ruby><rb>傍</rb><rt>ソバ</rt></ruby>ニハ一冊ノ参考書モナケレバ、辞書ノカゲサエナイヨウダ、コレガ御自慢、ペン一本ダケ、ソレカラ特製華麗ノ原稿用紙、ソロソロ、オ約束ノ三枚、三枚、ナンノ意味モナイ、ズイブンスグレタ文章ナノニ、ワカラヌ奴ニハ、死ヌマデワカラヌ。シカタノナイコト。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

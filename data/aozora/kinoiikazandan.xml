@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>気のいい火山弾</title>
+        <author>宮沢賢治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>気のいい火山弾</title><author>宮沢賢治</author>
+          <note>青空文庫。底本：「注文の多い料理店」新潮文庫、新潮社。1990（平成2）年5月25日発行。1995（平成7）年5月30日11刷。入力：蒋龍。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000081/card46606.html">https://www.aozora.gr.jp/cards/000081/card46606.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="bego">
+        <persName>ベゴ</persName>
+        <note>主人公の火山弾(黒い大きな丸い石)。稜のある石どもが「ベゴ」(南部方言で牛)というあだ名をつけた。「ほかに、立派な、本とうの名前もあった」とされるが作中では示されない。何を言われても怒らず、最後は学者たちに「実にいい標本」「火山弾の典型」と評価され、東京帝国大学校地質学教室へ運ばれる。苔たちが囃す蔑称「ベゴ黒助」「黒助」も同一人物(同一存在)を指すため同じ id に束ねた</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="daiei-hakubutsukan">
+        <placeName>大英博物館</placeName>
+        <location><geo>51.5194 -0.1269</geo></location>
+        <note>概値(ロンドン、グレート・ラッセル街)。学者の一人が「こんな立派な火山弾は、大英博物館にだってないぜ」と言及する実在の博物館</note>
+      </place>
+      <place xml:id="tokyo-teikoku-daigaku-chishitsugaku-kyoshitsu">
+        <placeName>東京帝国大学校地質学教室</placeName>
+        <location><geo>35.7127 139.762</geo></location>
+        <note>概値(東京大学本郷キャンパス)。ベゴ石(火山弾)の送り先として荷札に書かれる。作中表記は「東京帝国大学校」(「校」入り)</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>気のいい火山弾</head>
+        <p>ある死火山のすそ野のかしわの木のかげに、「<persName ref="#bego">ベゴ</persName>」というあだ名の大きな黒い石が、永いことじぃっと<ruby><rb>座</rb><rt>すわ</rt></ruby>っていました。</p>
+        <p>「<persName ref="#bego">ベゴ</persName>」と<ruby><rb>云</rb><rt>い</rt></ruby>う名は、その辺の草の中にあちこち散らばった、<ruby><rb>稜</rb><rt>かど</rt></ruby>のあるあまり大きくない黒い石どもが、つけたのでした。ほかに、立派な、本とうの名前もあったのでしたが、「<persName ref="#bego">ベゴ</persName>」石もそれを知りませんでした。</p>
+        <p><persName ref="#bego">ベゴ石</persName>は、稜がなくて、丁度卵の両はじを、少しひらたくのばしたような形でした。そして、ななめに二本の石の帯のようなものが、からだを巻いてありました。非常に、たちがよくて、一ぺんも<ruby><rb>怒</rb><rt>おこ</rt></ruby>ったことがないのでした。</p>
+        <p>それですから、深い<ruby><rb>霧</rb><rt>きり</rt></ruby>がこめて、空も山も向うの野原もなんにも見えず退くつな日は、稜のある石どもは、みんな、<persName ref="#bego">ベゴ石</persName>をからかって遊びました。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。<ruby><rb>今日</rb><rt>こんち</rt></ruby>は。おなかの痛いのは、なおったかい。」</p>
+        <p>「ありがとう。<ruby><rb>僕</rb><rt>ぼく</rt></ruby>は、おなかが痛くなかったよ。」と<persName ref="#bego">ベゴ石</persName>は、霧の中でしずかに云いました。</p>
+        <p>「アァハハハハ。アァハハハハハ。」稜のある石は、みんな一度に笑いました。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。こんちは。ゆうべは、ふくろうがお前さんに、とうがらしを持って来てやったかい。」</p>
+        <p>「いいや。ふくろうは、<ruby><rb>昨夜</rb><rt>ゆうべ</rt></ruby>、こっちへ来なかったようだよ。」</p>
+        <p>「アァハハハハ。アァハハハハハ。」稜のある石は、もう大笑いです。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。今日は。<ruby><rb>昨日</rb><rt>きのう</rt></ruby>の夕方、霧の中で、野馬がお前さんに小便をかけたろう。気の毒だったね。」</p>
+        <p>「ありがとう。おかげで、そんな目には、あわなかったよ。」</p>
+        <p>「アァハハハハ。アァハハハハハ。」みんな大笑いです。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。今日は。今度新らしい法律が出てね、まるいものや、まるいようなものは、みんな卵のように、パチンと割ってしまうそうだよ。お前さんも早く逃げたらどうだい。」</p>
+        <p>「ありがとう。僕は、まんまる大将のお日さんと一しょに、パチンと割られるよ。」</p>
+        <p>「アァハハハハ。アァハハハハハ。どうも馬鹿で手がつけられない。」</p>
+        <p>丁度その時、霧が晴れて、お日様の光がきん色に<ruby><rb>射</rb><rt>さ</rt></ruby>し、青ぞらがいっぱいにあらわれましたので、稜のある石どもは、みんな雨のお酒のことや、雪の団子のことを考えはじめました。そこで<persName ref="#bego">ベゴ石</persName>も、しずかに、まんまる大将の、お日さまと青ぞらとを見あげました。</p>
+        <p>その次の日、<ruby><rb>又</rb><rt>また</rt></ruby>、霧がかかりましたので、稜石どもは、又<persName ref="#bego">ベゴ石</persName>をからかいはじめました。実は、ただからかったつもりだっただけです。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。おれたちは、みんな、稜がしっかりしているのに、お前さんばかり、なぜそんなにくるくるしてるだろうね。<ruby><rb>一緒</rb><rt>いっしょ</rt></ruby>に<ruby><rb>噴火</rb><rt>ふんか</rt></ruby>のとき、落ちて来たのにね。」</p>
+        <p>「僕は、生れてまだまっかに燃えて空をのぼるとき、くるくるくるくる、からだがまわったからね。」</p>
+        <p>「ははあ、僕たちは、空へのぼるときも、のぼる位のぼって、<ruby><rb>一寸</rb><rt>ちょっと</rt></ruby>とまった時も、それから落ちて来るときも、いつも、じっとしていたのに、お前さんだけは、なぜそんなに、くるくるまわったろうね。」</p>
+        <p>その<ruby><rb>癖</rb><rt>くせ</rt></ruby>、こいつらは、噴火で<ruby><rb>砕</rb><rt>くだ</rt></ruby>けて、まっくろな<ruby><rb>煙</rb><rt>けむり</rt></ruby>と一緒に、空へのぼった時は、みんな気絶していたのです。</p>
+        <p>「さあ、僕は一向まわろうとも思わなかったが、ひとりでからだがまわって仕方なかったよ。」</p>
+        <p>「ははあ、何かこわいことがあると、ひとりでからだがふるえるからね。お前さんも、ことによったら、<ruby><rb>臆病</rb><rt>おくびょう</rt></ruby>のためかも知れないよ。」</p>
+        <p>「そうだ。臆病のためだったかも知れないね。じっさい、あの時の、音や光は大へんだったからね。」</p>
+        <p>「そうだろう。やっぱり、臆病のためだろう。ハッハハハハッハ、ハハハハハ。」</p>
+        <p><ruby><rb>稜</rb><rt>かど</rt></ruby>のある石は、一しょに大声でわらいました。その時、霧がはれましたので、<ruby><rb>角</rb><rt>かど</rt></ruby>のある石は、空を向いて、てんでに勝手なことを考えはじめました。</p>
+        <p><persName ref="#bego">ベゴ石</persName>も、だまって、<ruby><rb>柏</rb><rt>かしわ</rt></ruby>の葉のひらめきをながめました。</p>
+        <p>それから何べんも、雪がふったり、草が生えたりしました。かしわは、何べんも古い葉を落して、新らしい葉をつけました。</p>
+        <p>ある日、かしわが云いました。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。僕とあなたが、お<ruby><rb>隣</rb><rt>とな</rt></ruby>りになってから、もうずいぶん久しいもんですね。」</p>
+        <p>「ええ。そうです。あなたは、ずいぶん大きくなりましたね。」</p>
+        <p>「いいえ。しかし僕なんか、前はまるで小さくて、あなたのことを、黒い<ruby><rb>途方</rb><rt>とほう</rt></ruby>もない山だと思っていたんです。」</p>
+        <p>「はあ、そうでしょうね。今はあなたは、もう僕の五倍もせいが高いでしょう。」</p>
+        <p>「そう云えばまあそうですね。」</p>
+        <p>かしわは、すっかり、うぬぼれて、<ruby><rb>枝</rb><rt>えだ</rt></ruby>をピクピクさせました。</p>
+        <p>はじめは仲間の石どもだけでしたがあんまり<persName ref="#bego">ベゴ石</persName>が気がいいのでだんだんみんな馬鹿にし出しました。おみなえしが、<ruby><rb>斯</rb><rt>こ</rt></ruby>う云いました。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。僕は、とうとう、<ruby><rb>黄金</rb><rt>きん</rt></ruby>のかんむりをかぶりましたよ。」</p>
+        <p>「おめでとう。おみなえしさん。」</p>
+        <p>「あなたは、いつ、かぶるのですか。」</p>
+        <p>「さあ、まあ私はかぶりませんね。」</p>
+        <p>「そうですか。お気の毒ですね。しかし。いや。はてな。あなたも、もうかんむりをかぶってるではありませんか。」</p>
+        <p>おみなえしは、<persName ref="#bego">ベゴ石</persName>の上に、このごろ生えた小さな<ruby><rb>苔</rb><rt>こけ</rt></ruby>を見て、云いました。</p>
+        <p><persName ref="#bego">ベゴ石</persName>は笑って、</p>
+        <p>「いやこれは苔ですよ。」</p>
+        <p>「そうですか。あんまり見ばえがしませんね。」</p>
+        <p>それから十日ばかりたちました。おみなえしはびっくりしたように叫びました。</p>
+        <p>「<persName ref="#bego">ベゴさん</persName>。とうとう、あなたも、かんむりをかぶりましたよ。つまり、あなたの上の苔がみな赤ずきんをかぶりました。おめでとう。」</p>
+        <p><persName ref="#bego">ベゴ石</persName>は、にが笑いをしながら、なにげなく云いました。</p>
+        <p>「ありがとう。しかしその<ruby><rb>赤頭巾</rb><rt>あかずきん</rt></ruby>は、苔のかんむりでしょう。私のではありません。私の<ruby><rb>冠</rb><rt>かんむり</rt></ruby>は、今に野原いちめん、銀色にやって来ます。」</p>
+        <p>このことばが、もうおみなえしのきもを、つぶしてしまいました。</p>
+        <p>「それは雪でしょう。大へんだ。大へんだ。」</p>
+        <p><persName ref="#bego">ベゴ石</persName>も気がついて、おどろいておみなえしをなぐさめました。</p>
+        <p>「おみなえしさん。ごめんなさい。雪が来て、あなたはいやでしょうが、毎年のことで仕方もないのです。その代り、来年雪が消えたら、きっとすぐ又いらっしゃい。」</p>
+        <p>おみなえしは、もう、へんじをしませんでした。又その次の日のことでした。<ruby><rb>蚊</rb><rt>か</rt></ruby>が一<ruby><rb>疋</rb><rt>ぴき</rt></ruby>くうんくうんとうなってやって来ました。</p>
+        <p>「どうも、この野原には、むだなものが<ruby><rb>沢山</rb><rt>たくさん</rt></ruby>あっていかんな。たとえば、この<persName ref="#bego">ベゴ石</persName>のようなものだ。<persName ref="#bego">ベゴ石</persName>のごときは、何のやくにもたたない。むぐらのようにつちをほって、空気をしんせんにするということもしない。草っぱのように<ruby><rb>露</rb><rt>つゆ</rt></ruby>をきらめかして、われわれの目の病をなおすということもない。くううん。くううん。」と云いながら、又向うへ飛んで行きました。</p>
+        <p><persName ref="#bego">ベゴ石</persName>の上の苔は、前からいろいろ悪口を聞いていましたが、ことに、今の蚊の悪口を聞いて、いよいよ<persName ref="#bego">ベゴ石</persName>を、馬鹿にしはじめました。</p>
+        <p>そして、赤い小さな頭巾をかぶったまま、<ruby><rb>踊</rb><rt>おど</rt></ruby>りはじめました。</p>
+        <p>「<persName ref="#bego">ベゴ黒助</persName>、<persName ref="#bego">ベゴ黒助</persName>、</p>
+        <p><persName ref="#bego">黒助</persName>どんどん、</p>
+        <p>あめがふっても<persName ref="#bego">黒助</persName>、どんどん、</p>
+        <p>日が照っても、<persName ref="#bego">黒助</persName>どんどん。</p>
+        <p><persName ref="#bego">ベゴ黒助</persName>、<persName ref="#bego">ベゴ黒助</persName>、</p>
+        <p><persName ref="#bego">黒助</persName>どんどん、</p>
+        <p>千年たっても、<persName ref="#bego">黒助</persName>どんどん、</p>
+        <p>万年たっても、<persName ref="#bego">黒助</persName>どんどん。」</p>
+        <p><persName ref="#bego">ベゴ石</persName>は笑いながら、</p>
+        <p>「うまいよ。なかなかうまいよ。しかしその歌は、僕はかまわないけれど、お前たちには、よくないことになるかも知れないよ。僕が一つ作ってやろう。これからは、そっちをおやり。ね、そら、</p>
+        <p>お空。お空。お空のちちは、</p>
+        <p>つめたい雨の　ザァザザザ、</p>
+        <p>かしわのしずくトンテントン、</p>
+        <p>まっしろきりのポッシャントン。</p>
+        <p>お空。お空。お空のひかり、</p>
+        <p>おてんとさまは、カンカンカン、</p>
+        <p>月のあかりは、ツンツンツン、</p>
+        <p>ほしのひかりの、ピッカリコ。」</p>
+        <p>「そんなものだめだ。<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>くもなんともないや。」</p>
+        <p>「そうか。僕は、こんなこと、まずいからね。」</p>
+        <p><persName ref="#bego">ベゴ石</persName>は、しずかに口をつぐみました。</p>
+        <p>そこで、野原中のものは、みんな口をそろえて、<persName ref="#bego">ベゴ石</persName>をあざけりました。</p>
+        <p>「なんだ。あんな、ちっぽけな赤頭巾に、<persName ref="#bego">ベゴ石</persName>め、へこまされてるんだ。もうおいらは、あいつとは絶交だ。みっともない。<persName ref="#bego">黒助</persName>め。<persName ref="#bego">黒助</persName>、どんどん。<persName ref="#bego">ベゴ</persName>どんどん。」</p>
+        <p>その時、向うから、<ruby><rb>眼</rb><rt>め</rt></ruby>がねをかけた、せいの高い立派な四人の人たちが、いろいろなピカピカする器械をもって、野原をよこぎって来ました。その中の一人が、ふと<persName ref="#bego">ベゴ石</persName>を見て云いました。</p>
+        <p>「あ、あった、あった。すてきだ。実にいい標本だね。火山弾の典型だ。こんなととのったのは、はじめて見たぜ。あの帯の、きちんとしてることね。もうこれだけでも今度の旅行は沢山だよ。」</p>
+        <p>「うん。実によくととのってるね。こんな立派な火山弾は、<placeName ref="#daiei-hakubutsukan">大英博物館</placeName>にだってないぜ。」</p>
+        <p>みんなは器械を草の上に置いて、<persName ref="#bego">ベゴ石</persName>をまわってさすったりなでたりしました。</p>
+        <p>「どこの標本でも、この帯の完全なのはないよ。どうだい。空でぐるぐるやった時の<ruby><rb>工合</rb><rt>ぐあい</rt></ruby>が、実によくわかるじゃないか。すてき、すてき。今日すぐ持って行こう。」</p>
+        <p>みんなは、又、向うの方へ行きました。<ruby><rb>稜</rb><rt>かど</rt></ruby>のある石は、だまってため息ばかりついています。そして気のいい火山弾は、だまってわらって<ruby><rb>居</rb><rt>お</rt></ruby>りました。</p>
+        <p>ひるすぎ、野原の向うから、又キラキラめがねや器械が光って、さっきの四人の学者と、村の人たちと、一台の荷馬車がやって参りました。</p>
+        <p>そして、<ruby><rb>柏</rb><rt>かしわ</rt></ruby>の木の下にとまりました。</p>
+        <p>「さあ、大切な標本だから、こわさないようにして<ruby><rb>呉</rb><rt>く</rt></ruby>れ<ruby><rb>給</rb><rt>たま</rt></ruby>え。よく包んで呉れ給え。<ruby><rb>苔</rb><rt>こけ</rt></ruby>なんかむしってしまおう。」</p>
+        <p>苔は、むしられて泣きました。火山弾はからだを、ていねいに、きれいな<ruby><rb>藁</rb><rt>わら</rt></ruby>や、むしろに包まれながら、云いました。</p>
+        <p>「みなさん。ながながお世話でした。苔さん。さよなら。さっきの歌を、あとで一ぺんでも、うたって下さい。私の行くところは、ここのように明るい楽しいところではありません。けれども、私共は、みんな、自分でできることをしなければなりません。さよなら。みなさん。」</p>
+        <p>「<placeName ref="#tokyo-teikoku-daigaku-chishitsugaku-kyoshitsu">東京帝国大学校地質学教室</placeName>行、」と書いた大きな<ruby><rb>札</rb><rt>ふだ</rt></ruby>がつけられました。</p>
+        <p>そして、みんなは、「よいしょ。よいしょ。」と云いながら包みを、荷馬車へのせました。</p>
+        <p>「さあ、よし、行こう。」</p>
+        <p>馬はプルルルと鼻を一つ鳴らして、青い青い向うの野原の方へ、歩き出しました。</p>
+      </div>
+    </body>
+  </text>
+</TEI>

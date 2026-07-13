@@ -1,0 +1,24 @@
+{
+  "slug": "kinoiikazandan",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/46606_30108.html",
+  "card": "https://www.aozora.gr.jp/cards/000081/card46606.html",
+  "title": "気のいい火山弾",
+  "author": "宮沢賢治",
+  "fixes": {},
+  "persons": {
+    "bego": ["ベゴ", "主人公の火山弾(黒い大きな丸い石)。稜のある石どもが「ベゴ」(南部方言で牛)というあだ名をつけた。「ほかに、立派な、本とうの名前もあった」とされるが作中では示されない。何を言われても怒らず、最後は学者たちに「実にいい標本」「火山弾の典型」と評価され、東京帝国大学校地質学教室へ運ばれる。苔たちが囃す蔑称「ベゴ黒助」「黒助」も同一人物(同一存在)を指すため同じ id に束ねた"]
+  },
+  "places": {
+    "daiei-hakubutsukan": ["大英博物館", 51.5194, -0.1269, "概値(ロンドン、グレート・ラッセル街)。学者の一人が「こんな立派な火山弾は、大英博物館にだってないぜ」と言及する実在の博物館"],
+    "tokyo-teikoku-daigaku-chishitsugaku-kyoshitsu": ["東京帝国大学校地質学教室", 35.7127, 139.762, "概値(東京大学本郷キャンパス)。ベゴ石(火山弾)の送り先として荷札に書かれる。作中表記は「東京帝国大学校」(「校」入り)"]
+  },
+  "tags": [
+    ["pers", "ベゴ黒助", "bego"],
+    ["pers", "ベゴさん", "bego"],
+    ["pers", "ベゴ石", "bego"],
+    ["pers", "ベゴ", "bego"],
+    ["pers", "黒助", "bego"],
+    ["place", "東京帝国大学校地質学教室", "tokyo-teikoku-daigaku-chishitsugaku-kyoshitsu"],
+    ["place", "大英博物館", "daiei-hakubutsukan"]
+  ]
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>黄金風景</title>
+        <author>太宰治</author>
+        <editor>中村覚（教材用マークアップ）</editor>
+        <respStmt>
+          <resp>固有表現アノテーション（AI 支援・編者確認）</resp>
+          <name>Claude (Anthropic) / 中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>デジタル人文学セミナー教材版（2026年7月）</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>デジタル人文学セミナー「データ分析と可視化入門」</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2026-07-12">2026年7月12日</date>
+        <availability status="free">
+          <licence>本文はパブリックドメイン（著作権保護期間満了）。マークアップ・台帳等の付加部分は CC0 1.0 で提供する。</licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>人名・地名・日付の固有表現アノテーションは教材用に付与したもの。地名台帳（standOff/listPlace）の座標は概値であり、架空・宗教的世界観上の場所には座標を付けない。</note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>黄金風景</title><author>太宰治</author>
+          <note>青空文庫。底本：「きりぎりす」新潮文庫、新潮社。1974（昭和49）年9月30日発行。1988（昭和63）年3月15日29刷改版。1996（平成8）年9月25日46刷。ルビ・注記は省略し、外字は Unicode 実字に置換した。<ref target="https://www.aozora.gr.jp/cards/000035/card2257.html">https://www.aozora.gr.jp/cards/000035/card2257.html</ref></note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-12">青空文庫版から教材用 TEI を生成し、固有表現アノテーションを付与</change>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listPerson>
+      <person xml:id="okei">
+        <persName>お慶</persName>
+        <note>「私」が子供のころ、生家で女中をしていた女性。のろくさいと言っては「私」にいびられた。二十年後、巡査の妻・三児の母として再会する。作中表記は「お慶」のほか、聞き返しの場面で「おけい」とも書かれる(同一人物)</note>
+      </person>
+      <person xml:id="pushkin">
+        <persName>プウシキン</persName>
+        <note>アレクサンドル・プーシキン(1799–1837)。冒頭に掲げられた題辞(『ルスラーンとリュドミーラ』序詞)の作者として名が示される</note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="k-mura">
+        <placeName>Ｋ</placeName>
+        <note>「私の生れた村の名前」として頭文字のみで示される村。お巡りがかつて馬車屋をしていた地。本文からは特定できないため座標なし</note>
+      </place>
+      <place xml:id="chiba">
+        <placeName>千葉県</placeName>
+        <location><geo>35.6073 140.1063</geo></location>
+        <note>県名。概値は県庁所在地(千葉市)</note>
+      </place>
+      <place xml:id="funabashi">
+        <placeName>船橋町</placeName>
+        <location><geo>35.6947 139.9826</geo></location>
+        <note>千葉県東葛飾郡船橋町(現・船橋市)。家を追われ病を得た「私」が一夏を過ごした転地保養先。概値</note>
+      </place>
+    </listPlace>
+  </standOff>
+  <text>
+    <body>
+      <div type="chapter" xml:id="sec01" n="1">
+        <head>黄金風景</head>
+        <p>海の岸辺に緑なす<ruby><rb>樫</rb><rt>かし</rt></ruby>の木、その樫の木に黄金の細き鎖のむすばれて　　　―<persName ref="#pushkin">プウシキン</persName>―</p>
+        <p>私は子供のときには、余り<ruby><rb>質</rb><rt>たち</rt></ruby>のいい方ではなかった。女中をいじめた。私は、のろくさいことは<ruby><rb>嫌</rb><rt>きら</rt></ruby>いで、それゆえ、のろくさい女中を<ruby><rb>殊</rb><rt>こと</rt></ruby>にもいじめた。<persName ref="#okei">お慶</persName>は、のろくさい女中である。<ruby><rb>林檎</rb><rt>りんご</rt></ruby>の皮をむかせても、むきながら何を考えているのか、二度も三度も手を休めて、おい、とその度毎にきびしく声を掛けてやらないと、片手に林檎、片手にナイフを持ったまま、いつまでも、ぼんやりしているのだ。足りないのではないか、と思われた。台所で、何もせずに、ただのっそりつっ立っている姿を、私はよく見かけたものであるが、子供心にも、うすみっともなく、妙に<ruby><rb>疳</rb><rt>かん</rt></ruby>にさわって、おい、<persName ref="#okei">お慶</persName>、日は短いのだぞ、などと大人びた、いま思っても<ruby><rb>脊筋</rb><rt>せすじ</rt></ruby>の寒くなるような非道の言葉を投げつけて、それで足りずに一度は<persName ref="#okei">お慶</persName>をよびつけ、私の絵本の観兵式の何百人となくうようよしている兵隊、馬に乗っている者もあり、旗持っている者もあり、銃<ruby><rb>担</rb><rt>にな</rt></ruby>っている者もあり、そのひとりひとりの兵隊の形を<ruby><rb>鋏</rb><rt>はさみ</rt></ruby>でもって切り抜かせ、不器用な<persName ref="#okei">お慶</persName>は、朝から昼飯も食わず日暮頃までかかって、やっと三十人くらい、それも大将の<ruby><rb>鬚</rb><rt>ひげ</rt></ruby>を片方切り落したり、銃持つ兵隊の手を、<ruby><rb>熊</rb><rt>くま</rt></ruby>の手みたいに恐ろしく大きく切り抜いたり、そうしていちいち私に怒鳴られ、夏のころであった、<persName ref="#okei">お慶</persName>は汗かきなので、切り抜かれた兵隊たちはみんな、<persName ref="#okei">お慶</persName>の手の汗で、びしょびしょ<ruby><rb>濡</rb><rt>ぬ</rt></ruby>れて、私は<ruby><rb>遂</rb><rt>つい</rt></ruby>に<ruby><rb>癇癪</rb><rt>かんしゃく</rt></ruby>をおこし、<persName ref="#okei">お慶</persName>を<ruby><rb>蹴</rb><rt>け</rt></ruby>った。たしかに肩を蹴った<ruby><rb>筈</rb><rt>はず</rt></ruby>なのに、<persName ref="#okei">お慶</persName>は右の<ruby><rb>頬</rb><rt>ほお</rt></ruby>をおさえ、がばと泣き伏し、泣き泣きいった。「親にさえ顔を踏まれたことはない。一生おぼえております」うめくような口調で、とぎれ、とぎれそういったので、私は、<ruby><rb>流石</rb><rt>さすが</rt></ruby>にいやな気がした。そのほかにも、私はほとんどそれが天命でもあるかのように、<persName ref="#okei">お慶</persName>をいびった。いまでも、多少はそうであるが、私には無智な<ruby><rb>魯鈍</rb><rt>ろどん</rt></ruby>の者は、とても<ruby><rb>堪忍</rb><rt>かんにん</rt></ruby>できぬのだ。</p>
+        <p>一昨年、私は家を追われ、一夜のうちに窮迫し、<ruby><rb>巷</rb><rt>ちまた</rt></ruby>をさまよい、諸所に泣きつき、その日その日のいのち<ruby><rb>繋</rb><rt>つな</rt></ruby>ぎ、やや文筆でもって、自活できるあてがつきはじめたと思ったとたん、病を得た。ひとびとの情で一夏、<placeName ref="#chiba">千葉県</placeName><placeName ref="#funabashi">船橋町</placeName>、<ruby><rb>泥</rb><rt>どろ</rt></ruby>の海のすぐ近くに小さい家を借り、自炊の保養をすることができ、毎夜毎夜、寝巻をしぼる程の寝汗とたたかい、それでも仕事はしなければならず、毎朝々々のつめたい一合の牛乳だけが、ただそれだけが、奇妙に生きているよろこびとして感じられ、庭の<ruby><rb>隅</rb><rt>すみ</rt></ruby>の<ruby><rb>夾竹桃</rb><rt>きょうちくとう</rt></ruby>の花が咲いたのを、めらめら火が燃えているようにしか感じられなかったほど、私の頭もほとほと痛み疲れていた。</p>
+        <p>そのころのこと、戸籍調べの四十に近い、<ruby><rb>痩</rb><rt>や</rt></ruby>せて小柄のお<ruby><rb>巡</rb><rt>まわ</rt></ruby>りが玄関で、帳簿の私の名前と、それから<ruby><rb>無精髯</rb><rt>ぶしょうひげ</rt></ruby>のばし放題の私の顔とを、つくづく見比べ、おや、あなたは……のお坊ちゃんじゃございませんか？　そう言うお巡りのことばには、強い故郷の<ruby><rb>訛</rb><rt>なまり</rt></ruby>があったので、「そうです」私はふてぶてしく答えた。「あなたは？」</p>
+        <p>お巡りは痩せた顔にくるしいばかりにいっぱいの笑をたたえて、</p>
+        <p>「やあ。やはりそうでしたか。お忘れかもしれないけれど、かれこれ二十年ちかくまえ、私は<placeName ref="#k-mura">Ｋ</placeName>で馬車やをしていました」</p>
+        <p><placeName ref="#k-mura">Ｋ</placeName>とは、私の生れた村の名前である。</p>
+        <p>「ごらんの通り」私は、にこりともせずに応じた。「私も、いまは落ちぶれました」</p>
+        <p>「とんでもない」お巡りは、なおも楽しげに笑いながら、「小説をお書きなさるんだったら、それはなかなか出世です」</p>
+        <p>私は苦笑した。</p>
+        <p>「ところで」とお巡りは少し声をひくめ、「<persName ref="#okei">お慶</persName>がいつもあなたのお<ruby><rb>噂</rb><rt>うわさ</rt></ruby>をしています」</p>
+        <p>「<persName ref="#okei">おけい</persName>？」すぐには<ruby><rb>呑</rb><rt>の</rt></ruby>みこめなかった。</p>
+        <p>「<persName ref="#okei">お慶</persName>ですよ。お忘れでしょう。お宅の女中をしていた――」</p>
+        <p>思い出した。ああ、と思わずうめいて、私は玄関の式台にしゃがんだまま、頭をたれて、その二十年まえ、のろくさかったひとりの女中に対しての私の悪行が、ひとつひとつ、はっきり思い出され、ほとんど座に耐えかねた。</p>
+        <p>「幸福ですか？」ふと顔をあげてそんな突拍子ない質問を発する私のかおは、たしかに罪人、被告、卑屈な笑いをさえ浮べていたと記憶する。</p>
+        <p>「ええ、もう、どうやら」くったくなく、そうほがらかに答えて、お巡りはハンケチで額の汗をぬぐって、「かまいませんでしょうか。こんどあれを連れて、いちどゆっくりお礼にあがりましょう」</p>
+        <p>私は飛び上るほど、ぎょっとした。いいえ、もう、それには、とはげしく拒否して、私は言い知れぬ屈辱感に<ruby><rb>身悶</rb><rt>みもだ</rt></ruby>えしていた。</p>
+        <p>けれども、お巡りは、朗かだった。</p>
+        <p>「子供がねえ、あなた、ここの駅につとめるようになりましてな、それが長男です。それから男、女、女、その末のが八つでことし小学校にあがりました。もう一安心。<persName ref="#okei">お慶</persName>も苦労いたしました。なんというか、まあ、お宅のような大家にあがって行儀見習いした者は、やはりどこか、ちがいましてな」すこし顔を赤くして笑い、「おかげさまでした。<persName ref="#okei">お慶</persName>も、あなたのお噂、しじゅうして<ruby><rb>居</rb><rt>お</rt></ruby>ります。こんどの公休には、きっと一緒にお礼にあがります」急に<ruby><rb>真面目</rb><rt>まじめ</rt></ruby>な顔になって、「それじゃ、きょうは失礼いたします。お大事に」</p>
+        <p>それから、三日たって、私が仕事のことよりも、金銭のことで思い悩み、うちにじっとして居れなくて、竹のステッキ持って、海へ出ようと、玄関の戸をがらがらあけたら、外に三人、<ruby><rb>浴衣</rb><rt>ゆかた</rt></ruby>着た父と母と、赤い洋服着た女の子と、絵のように美しく並んで立っていた。<persName ref="#okei">お慶</persName>の家族である。</p>
+        <p>私は自分でも意外なほどの、おそろしく大きな怒声を発した。</p>
+        <p>「来たのですか。きょう、私これから用事があって出かけなければなりません。お気の毒ですが、またの日においで下さい」</p>
+        <p><persName ref="#okei">お慶</persName>は、品のいい中年の奥さんになっていた。八つの子は、女中のころの<persName ref="#okei">お慶</persName>によく似た顔をしていて、うすのろらしい濁った眼でぼんやり私を見上げていた。私はかなしく、<persName ref="#okei">お慶</persName>がまだひとことも言い出さぬうち、逃げるように、海浜へ飛び出した。竹のステッキで、海浜の雑草を<ruby><rb>薙</rb><rt>な</rt></ruby>ぎ払い薙ぎ払い、いちどもあとを振りかえらず、一歩、一歩、地団駄踏むような<ruby><rb>荒</rb><rt>すさ</rt></ruby>んだ歩きかたで、とにかく海岸伝いに町の方へ、まっすぐに歩いた。私は町で何をしていたろう。ただ意味もなく、活動小屋の絵看板見あげたり、呉服屋の飾窓を見つめたり、ちえっちえっと舌打ちしては、心のどこかの隅で、負けた、負けた、と<ruby><rb>囁</rb><rt>ささや</rt></ruby>く声が聞えて、これはならぬと<ruby><rb>烈</rb><rt>はげ</rt></ruby>しくからだをゆすぶっては、また歩き、三十分ほどそうしていたろうか、私はふたたび私の家へとって返した。</p>
+        <p>うみぎしに出て、私は立止った。見よ、前方に平和の図がある。<persName ref="#okei">お慶</persName>親子三人、のどかに海に石の投げっこしては笑い興じている。声がここまで聞えて来る。</p>
+        <p>「なかなか」お巡りは、うんと力こめて石をほうって、「頭のよさそうな方じゃないか。あのひとは、いまに偉くなるぞ」</p>
+        <p>「そうですとも、そうですとも」<persName ref="#okei">お慶</persName>の誇らしげな高い声である。「あのかたは、お小さいときからひとり変って居られた。目下のものにもそれは親切に、目をかけて下すった」</p>
+        <p>私は立ったまま泣いていた。けわしい興奮が、涙で、まるで気持よく溶け去ってしまうのだ。</p>
+        <p>負けた。これは、いいことだ。そうなければ、いけないのだ。かれらの勝利は、また私のあすの出発にも、光を与える。</p>
+      </div>
+    </body>
+  </text>
+</TEI>
